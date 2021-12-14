@@ -24,7 +24,7 @@ To enable the Volume Activation Management Tool (VAMT) to function correctly, ce
 
 Organizations where the VAMT will be widely used may benefit from making these changes inside the master image for Windows.
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > This procedure only applies to clients running Windows Vista or later. For clients running Windows XP Service Pack 1, see [Connecting Through Windows Firewall](/windows/win32/wmisdk/connecting-to-wmi-remotely-with-vbscript).
 
 ## Configuring the Windows Firewall to allow VAMT access
@@ -38,8 +38,8 @@ Enable the VAMT to access client computers using the **Windows Firewall** Contro
 5. Select the **Windows Management Instrumentation (WMI)** checkbox.
 6. Click **OK**.
 
- **Warning**  
- By default, Windows Firewall Exceptions only apply to traffic originating on the local subnet. To expand the exception to apply to multiple subnets, you need to change the exception settings in the Windows Firewall with Advanced Security, as described below.
+> [!WARNING]
+> By default, Windows Firewall Exceptions only apply to traffic originating on the local subnet. To expand the exception to apply to multiple subnets, you need to change the exception settings in the Windows Firewall with Advanced Security, as described below.
 
 ## Configure Windows Firewall to allow VAMT access across multiple subnets
 
@@ -69,7 +69,7 @@ Enable the VAMT to access client computers across multiple subnets using the **W
 
 ## Create a registry value for the VAMT to access workgroup-joined computer
 
-> [WARNING]  
+> [!WARNING]  
 > This section contains information about how to modify the registry. Make sure to back up the registry before you modify it; in addition, ensure that you know how to restore the registry, if a problem occurs. For more information about how to back up, restore, and modify the registry, see [Windows registry information for advanced users](/troubleshoot/windows-server/performance/windows-registry-advanced-users).
 
 On the client computer, create the following registry key using regedit.exe.
@@ -81,7 +81,7 @@ On the client computer, create the following registry key using regedit.exe.
    - **Type: DWORD**
    - **Value Data: 1**
 
-   > [NOTE]
+   > [!NOTE]
    > To discover VAMT-manageable Windows computers in workgroups, you must enable network discovery on each client.
 
 ## Deployment options
