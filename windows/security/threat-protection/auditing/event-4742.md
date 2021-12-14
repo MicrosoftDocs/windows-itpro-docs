@@ -16,10 +16,9 @@ ms.technology: windows-sec
 
 # 4742(S): A computer account was changed.
 
+:::image type="content" source="images/event-4742.png" alt-text="Event 4742 illustration":::
 
-<img src="images/event-4742.png" alt="Event 4742 illustration" width="449" height="781" hspace="10" align="left" />
-
-***Subcategory:***&nbsp;[Audit Computer Account Management](audit-computer-account-management.md)
+***Subcategory:*** [Audit Computer Account Management](audit-computer-account-management.md)
 
 ***Event Description:***
 
@@ -33,16 +32,19 @@ For each change, a separate 4742 event will be generated.
 
 Some changes do not invoke a 4742 event, for example, changes made using Active Directory Users and Computers management console in **Managed By** tab in computer account properties.
 
-You might see this event without any changes inside, that is, where all **Changed Attributes** appear as “-“. This usually happens when a change is made to an attribute that is not listed in the event. In this case there is no way to determine which attribute was changed. For example, this would happen if you change the **Description** of a group object using the Active Directory Users and Computers administrative console. Also, if the [discretionary access control list](/windows/win32/secauthz/access-control-lists) (DACL) is changed, a 4742 event will generate, but all attributes will be “-“.
+You might see this event without any changes inside, that is, where all **Changed Attributes** appear as `-`. This usually happens when a change is made to an attribute that is not listed in the event. In this case there is no way to determine which attribute was changed. For example, this would happen if you change the **Description** of a group object using the Active Directory Users and Computers administrative console. Also, if the [discretionary access control list](/windows/win32/secauthz/access-control-lists) (DACL) is changed, a 4742 event will generate, but all attributes will be `-`.
 
-***Important*:** If you manually change any user-related setting or attribute, for example if you set the SMARTCARD\_REQUIRED flag in **userAccountControl** for the computer account, then the **sAMAccountType** of the computer account will be changed to NORMAL\_USER\_ACCOUNT and you will get “[4738](event-4738.md): A user account was changed” instead of 4742 for this computer account. Essentially, the computer account will “become” a user account. For NORMAL\_USER\_ACCOUNT you will always get events from [Audit User Account Management](audit-user-account-management.md) subcategory. We strongly recommend that you avoid changing any user-related settings manually for computer objects.
-
-> **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
+> [!IMPORTANT]
+> 
+> - If you manually change any user-related setting or attribute, for example if you set the SMARTCARD\_REQUIRED flag in **userAccountControl** for the computer account, then the **sAMAccountType** of the computer account will be changed to NORMAL\_USER\_ACCOUNT and you will get “[4738](event-4738.md): A user account was changed” instead of 4742 for this computer account. Essentially, the computer account will “become” a user account. For NORMAL\_USER\_ACCOUNT you will always get events from [Audit User Account Management](audit-user-account-management.md) subcategory. We strongly recommend that you avoid changing any user-related settings manually for computer objects.
+> 
+> - For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
 <br clear="all">
 
 ***Event XML:***
-```
+
+```xml
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
  <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
@@ -106,7 +108,8 @@ You might see this event without any changes inside, that is, where all **Change
 
 -   **Security ID** \[Type = SID\]**:** SID of account that requested the “change Computer object” operation. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID cannot be resolved, you will see the source data in the event.
 
-> **Note**&nbsp;&nbsp;A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
+  > [!NOTE]
+  > A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
 
 -   **Account Name** \[Type = UnicodeString\]**:** the name of the account that requested the “change Computer object” operation.
 
@@ -138,7 +141,8 @@ You might see this event without any changes inside, that is, where all **Change
 
 **Changed Attributes:**
 
-> **Note**&nbsp;&nbsp;If attribute was not changed it will have “-“ value.
+> [!NOTE]
+> If attribute was not changed it will have `-` value.
 
 -   **SAM Account Name** \[Type = UnicodeString\]: logon name for account used to support clients and servers from previous versions of Windows (pre-Windows 2000 logon name). If the value of **sAMAccountName** attribute of computer object was changed, you will see the new value here. For example: WIN8$.
 
@@ -148,7 +152,7 @@ You might see this event without any changes inside, that is, where all **Change
 
 -   **Home Directory** \[Type = UnicodeString\]: user's home directory. If **homeDrive** attribute is set and specifies a drive letter, **homeDirectory** should be a UNC path. The path must be a network UNC of the form \\\\Server\\Share\\Directory. If the value of **homeDirectory** attribute of computer object was changed, you will see the new value here. For computer objects, it is optional, and typically is not set. You can change this attribute by using Active Directory Users and Computers, or through a script, for example.
 
--   **Home Drive** \[Type = UnicodeString\]**:** specifies the drive letter to which to map the UNC path specified by **homeDirectory** account’s attribute. The drive letter must be specified in the form “DRIVE\_LETTER:”. For example – “H:”. If the value of **homeDrive** attribute of computer object was changed, you will see the new value here. For computer objects, it is optional, and typically is not set. You can change this attribute by using Active Directory Users and Computers, or through a script, for example.
+-   **Home Drive** \[Type = UnicodeString\]**:** specifies the drive letter to which to map the UNC path specified by **homeDirectory** account’s attribute. The drive letter must be specified in the form `DRIVE\_LETTER:`. For example – `H:`. If the value of **homeDrive** attribute of computer object was changed, you will see the new value here. For computer objects, it is optional, and typically is not set. You can change this attribute by using Active Directory Users and Computers, or through a script, for example.
 
 -   **Script Path** \[Type = UnicodeString\]**:** specifies the path of the account’s logon script. If the value of **scriptPath** attribute of computer object was changed, you will see the new value here. For computer objects, it is optional, and typically is not set. You can change this attribute by using Active Directory Users and Computers, or through a script, for example.
 
@@ -162,7 +166,8 @@ You might see this event without any changes inside, that is, where all **Change
 
 -   **Primary Group ID** \[Type = UnicodeString\]: Relative Identifier (RID) of computer’s object primary group.
 
-> **Note**&nbsp;&nbsp;**Relative identifier (RID)** is a variable length number that is assigned to objects at creation and becomes part of the object's Security Identifier (SID) that uniquely identifies an account or group within a domain.
+  > [!NOTE]
+  > **Relative identifier (RID)** is a variable length number that is assigned to objects at creation and becomes part of the object's Security Identifier (SID) that uniquely identifies an account or group within a domain.
 
 This field will contain some value if computer’s object primary group was changed. You can change computer’s primary group using Active Directory Users and Computers management console in the **Member Of** tab of computer object properties. You will see a RID of new primary group as a field value. For example, 515 (Domain Computers) for workstations, is a default primary group.
 
@@ -174,7 +179,7 @@ Typical **Primary Group** values for computer accounts:
 
 -   515 (Domain Computers) – servers and workstations.
 
-    See this article </windows/security/identity-protection/access-control/security-identifiers> for more information. If the value of **primaryGroupID** attribute of computer object was changed, you will see the new value here.
+    See the [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers) for more information. If the value of **primaryGroupID** attribute of computer object was changed, you will see the new value here.
 
 <!-- -->
 
@@ -186,9 +191,10 @@ Typical **Primary Group** values for computer accounts:
 
         If the value of **msDS-AllowedToDelegateTo** attribute of computer object was changed, you will see the new value here.
 
-        The value can be **&lt;value not set&gt;**, for example, if delegation was disabled.
+        The value can be `<value not set>`, for example, if delegation was disabled.
 
-> **Note**&nbsp;&nbsp;**Service Principal Name (SPN)** is the name by which a client uniquely identifies an instance of a service. If you install multiple instances of a service on computers throughout a forest, each instance must have its own SPN. A given service instance can have multiple SPNs if there are multiple names that clients might use for authentication. For example, an SPN always includes the name of the host computer on which the service instance is running, so a service instance might register an SPN for each name or alias of its host.
+  > [!NOTE]
+  > **Service Principal Name (SPN)** is the name by which a client uniquely identifies an instance of a service. If you install multiple instances of a service on computers throughout a forest, each instance must have its own SPN. A given service instance can have multiple SPNs if there are multiple names that clients might use for authentication. For example, an SPN always includes the name of the host computer on which the service instance is running, so a service instance might register an SPN for each name or alias of its host.
 
 -   **Old UAC Value** \[Type = UnicodeString\]: specifies flags that control password, lockout, disable/enable, script, and other behavior for the user or computer account. This parameter contains the previous value of **userAccountControl** attribute of computer object.
 
@@ -228,7 +234,7 @@ So this UAC flags value decodes to: LOCKOUT and SCRIPT
 
 <!-- -->
 
--   **User Parameters** \[Type = UnicodeString\]: if you change any setting using Active Directory Users and Computers management console in Dial-in tab of computer’s account properties, then you will see **&lt;value changed, but not displayed&gt;** in this field.
+-   **User Parameters** \[Type = UnicodeString\]: if you change any setting using Active Directory Users and Computers management console in Dial-in tab of computer’s account properties, then you will see `<value changed, but not displayed>` in this field.
 
 -   **SID History** \[Type = UnicodeString\]: contains previous SIDs used for the object if the object was moved from another domain. Whenever an object is moved from one domain to another, a new SID is created and becomes the objectSID. The previous SID is added to the **sIDHistory** property. If the value of **sIDHistory** attribute of computer object was changed, you will see the new value here.
 
@@ -254,13 +260,14 @@ TERMSRV/Win81.contoso.local
 
 **Additional Information:**
 
--   **Privileges** \[Type = UnicodeString\]: the list of user privileges which were used during the operation, for example, SeBackupPrivilege. This parameter might not be captured in the event, and in that case appears as “-”. See full list of user privileges in “Table 8. User Privileges.”.
+-   **Privileges** \[Type = UnicodeString\]: the list of user privileges which were used during the operation, for example, SeBackupPrivilege. This parameter might not be captured in the event, and in that case appears as `-`. See full list of user privileges in “Table 8. User Privileges.”.
 
 ## Security Monitoring Recommendations
 
 For 4742(S): A computer account was changed.
 
-> **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
+> [!IMPORTANT]
+> For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If you have critical domain computer accounts (database servers, domain controllers, administration workstations, and so on) for which you need to monitor each change, monitor this event with the **“Computer Account That Was Changed\\Security ID”** that corresponds to the high-value account or accounts.
 
@@ -268,28 +275,28 @@ For 4742(S): A computer account was changed.
 
 -   Consider whether to track the following fields and values:
 
-| **Field and value to track**                                                                                                                                                                                                                                                                                                       | **Reason to track**                                                                                                                                                                                                                                                              |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Display Name** is not -<br>**User Principal Name** is not -<br>**Home Directory** is not -<br>**Home Drive** is not -<br>**Script Path** is not -<br>**Profile Path** is not -<br>**User Workstations** is not -<br>**Account Expires** is not -<br>**Logon Hours** is not **-** | Typically these fields are **-** for computer accounts. Other values might indicate an anomaly and should be monitored.                                                                                                                                                          |
-| **Password Last Set** changes occur more often than usual                                                                                                                                                                                                                                                                          | Changes that are more frequent than the default (typically once a month) might indicate an anomaly or attack.                                                                                                                                                                    |
-| **Primary Group ID** is not 516, 521, or 515                                                                                                                                                                                                                                                                                       | Typically, the **Primary Group ID** value is one of the following:<br>**516** for domain controllers<br>**521** for read only domain controllers (RODCs)<br>**515** for servers and workstations (domain computers)<br>Other values should be monitored. |
-| For computer accounts for which the services list (on the **Delegation** tab) should not be empty: **AllowedToDelegateTo** is marked **&lt;value not set&gt;**                                                                                                                                                                    | If **AllowedToDelegateTo** is marked **&lt;value not set&gt;** on computers that previously had a services list (on the **Delegation** tab), it means the list was cleared.                                                                                                      |
-| **SID History** is not -                                                                                                                                                                                                                                                                                                           | This field will always be set to - unless the account was migrated from another domain.                                                                                                                                                                                          |
+  | **Field and value to track**  | **Reason to track**  |
+  |---|---|
+  | **Display Name** is not -<br>**User Principal Name** is not -<br>**Home Directory** is not -<br>**Home Drive** is not -<br>**Script Path** is not -<br>**Profile Path** is not -<br>**User Workstations** is not -<br>**Account Expires** is not -<br>**Logon Hours** is not - | Typically these fields are `-` for computer accounts. Other values might indicate an anomaly and should be monitored. |
+  | **Password Last Set** changes occur more often than usual  | Changes that are more frequent than the default (typically once a month) might indicate an anomaly or attack.  |
+  | **Primary Group ID** is not 516, 521, or 515  | Typically, the **Primary Group ID** value is one of the following:<br>**516** for domain controllers<br>**521** for read only domain controllers (RODCs)<br>**515** for servers and workstations (domain computers)<br>Other values should be monitored. |
+  | For computer accounts for which the services list (on the **Delegation** tab) should not be empty: **AllowedToDelegateTo** is marked `<value not set>`  | If **AllowedToDelegateTo** is marked `<value not set>` on computers that previously had a services list (on the **Delegation** tab), it means the list was cleared.  |
+  | **SID History** is not - | This field will always be set to `-` unless the account was migrated from another domain.  |
 
 -   Consider whether to track the following account control flags:
 
-| **User account control flag to track**                  | **Information about the flag**                                                                                                                                                                                                                                                                                                                                                                |
-|---------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **'Password Not Required'** – Enabled                   | Should not be set for computer accounts. Computer accounts typically require a password by default, except manually created computer objects.                                                                                                                                                                                                                                                 |
-| **'Encrypted Text Password Allowed'** – Enabled         | Should not be set for computer accounts. By default, it will not be set, and it cannot be set in the account properties in Active Directory Users and Computers.                                                                                                                                                                                                                              |
-| **'Server Trust Account'** – Enabled                    | Should be enabled **only** for domain controllers.                                                                                                                                                                                                                                                                                                                                            |
-| **'Server Trust Account'** – Disabled                   | Should **not** be disabled for domain controllers.                                                                                                                                                                                                                                                                                                                                            |
-| **'Don't Expire Password'** – Enabled                   | Should not be enabled for computer accounts, because the password automatically changes every 30 days by default. For computer accounts, this flag cannot be set in the account properties in Active Directory Users and Computers.                                                                                                                                                           |
-| **'Smartcard Required'** – Enabled                      | Should not be enabled for computer accounts.                                                                                                                                                                                                                                                                                                                                                  |
-| **'Trusted For Delegation'** – Enabled                  | Means that Kerberos Constraint or Unconstraint delegation was enabled for the computer account. We recommend monitoring this to discover whether it is an approved action (done by an administrator), a mistake, or a malicious action.                                                                                                                                                       |
-| **'Trusted For Delegation'** – Disabled                 | Means that Kerberos Constraint or Unconstraint delegation was disabled for the computer account. We recommend monitoring this to discover whether it is an approved action (done by an administrator), a mistake, or a malicious action.<br>Also, if you have a list of computer accounts for which delegation is critical and should not be disabled, monitor this for those accounts. |
-| **'Trusted To Authenticate For Delegation'** – Enabled  | Means that Protocol Transition delegation was enabled for the computer account. We recommend monitoring this to discover whether it is an approved action (done by an administrator), a mistake, or a malicious action.                                                                                                                                                                       |
-| **'Trusted To Authenticate For Delegation'** – Disabled | Means that Protocol Transition delegation was disabled for the computer account. We recommend monitoring this to discover whether it is an approved action (done by an administrator), a mistake, or a malicious action.<br>Also, if you have a list of computer accounts for which delegation is critical and should not be disabled, monitor this for those accounts.                 |
-| **'Not Delegated'** – Enabled                           | Means that **Account is sensitive and cannot be delegated** was selected for the computer account. For computer accounts, this flag cannot be set using the graphical interface. We recommend monitoring this to discover whether it is an approved action (done by an administrator), a mistake, or a malicious action.                                                                      |
-| **'Use DES Key Only'** – Enabled                        | Should not be enabled for computer accounts. For computer accounts, it cannot be set in the account properties in Active Directory Users and Computers.                                                                                                                                                                                                                                       |
-| **'Don't Require Preauth'** - Enabled                   | Should not be enabled for computer accounts. For computer accounts, it cannot be set in the account properties in Active Directory Users and Computers.                                                                                                                                                                                                                                       |
+  | **User account control flag to track**  | **Information about the flag**  |
+  |---|---|
+  | **'Password Not Required'** – Enabled  | Should not be set for computer accounts. Computer accounts typically require a password by default, except manually created computer objects. |
+  | **'Encrypted Text Password Allowed'** – Enabled  | Should not be set for computer accounts. By default, it will not be set, and it cannot be set in the account properties in Active Directory Users and Computers.  |
+  | **'Server Trust Account'** – Enabled  | Should be enabled **only** for domain controllers.  |
+  | **'Server Trust Account'** – Disabled  | Should **not** be disabled for domain controllers.  |
+  | **'Don't Expire Password'** – Enabled  | Should not be enabled for computer accounts, because the password automatically changes every 30 days by default. For computer accounts, this flag cannot be set in the account properties in Active Directory Users and Computers.  |
+  | **'Smartcard Required'** – Enabled  | Should not be enabled for computer accounts.  |
+  | **'Trusted For Delegation'** – Enabled  | Means that Kerberos Constraint or Unconstraint delegation was enabled for the computer account. We recommend monitoring this to discover whether it is an approved action (done by an administrator), a mistake, or a malicious action.  |
+  | **'Trusted For Delegation'** – Disabled  | Means that Kerberos Constraint or Unconstraint delegation was disabled for the computer account. We recommend monitoring this to discover whether it is an approved action (done by an administrator), a mistake, or a malicious action.<br>Also, if you have a list of computer accounts for which delegation is critical and should not be disabled, monitor this for those accounts. |
+  | **'Trusted To Authenticate For Delegation'** – Enabled  | Means that Protocol Transition delegation was enabled for the computer account. We recommend monitoring this to discover whether it is an approved action (done by an administrator), a mistake, or a malicious action.  |
+  | **'Trusted To Authenticate For Delegation'** – Disabled | Means that Protocol Transition delegation was disabled for the computer account. We recommend monitoring this to discover whether it is an approved action (done by an administrator), a mistake, or a malicious action.<br>Also, if you have a list of computer accounts for which delegation is critical and should not be disabled, monitor this for those accounts.  |
+  | **'Not Delegated'** – Enabled  | Means that **Account is sensitive and cannot be delegated** was selected for the computer account. For computer accounts, this flag cannot be set using the graphical interface. We recommend monitoring this to discover whether it is an approved action (done by an administrator), a mistake, or a malicious action. |
+  | **'Use DES Key Only'** – Enabled  | Should not be enabled for computer accounts. For computer accounts, it cannot be set in the account properties in Active Directory Users and Computers.  |
+  | **'Don't Require Preauth'** - Enabled | Should not be enabled for computer accounts. For computer accounts, it cannot be set in the account properties in Active Directory Users and Computers.  |
