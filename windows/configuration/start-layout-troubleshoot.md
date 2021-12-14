@@ -295,7 +295,7 @@ Additionally, users may see blank tiles if sign-in was attempted without network
 
 - Open a command prompt, and run the following command:
 
-```
+```console
 C:\Windows\System32\tdlrecover.exe -reregister -resetlayout -resetcache
 ```
 

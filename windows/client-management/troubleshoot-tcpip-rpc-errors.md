@@ -110,13 +110,13 @@ If you would like to do a deep dive as to how it works, see [RPC over IT/Pro](ht
 
 The best thing to always troubleshoot RPC issues before even getting in to traces is by making use of tools like **PortQry**. You can quickly determine if you are able to make a connection by running the command:
 
-```cmd
+```console
 Portqry.exe -n <ServerIP> -e 135
 ``` 
  
 This would give you a lot of output to look for, but you should be looking for <em>*ip_tcp</em>- and the port number in the brackets, which tells whether you were successfully able to get a dynamic port from EPM and also make a connection to it. If the above fails, you can typically start collecting simultaneous network traces. Something like this from the output of “PortQry”:
 
-```cmd 
+```console
 Portqry.exe -n 169.254.0.2 -e 135
 ```
 Partial output below:
@@ -141,17 +141,20 @@ The one in bold is the ephemeral port number that you made a connection to succe
 You can run the commands below to leverage Windows inbuilt netsh captures, to collect a simultaneous trace. Remember to execute the below on an “Admin CMD”, it requires elevation.
  
 - On the client
-  ```cmd
+
+  ```console
   Netsh trace start scenario=netconnection capture=yes tracefile=c:\client_nettrace.etl maxsize=512 overwrite=yes report=yes
   ```
  
 - On the Server
-  ```cmd
+
+  ```console
   Netsh trace start scenario=netconnection capture=yes tracefile=c:\server_nettrace.etl maxsize=512 overwrite=yes report=yes
   ```
 
 Now try to reproduce your issue from the client machine and as soon as you feel the issue has been reproduced, go ahead and stop the traces using the command
-```cmd
+
+```console
 Netsh trace stop
 ```
 

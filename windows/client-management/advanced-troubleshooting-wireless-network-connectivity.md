@@ -60,7 +60,7 @@ Make sure that you install the latest Windows updates, cumulative updates, and r
 
 1. Network Capture with ETW. Enter the following at an elevated command prompt:
 
-    ```cmd
+    ```console
     netsh trace start wireless_dbg capture=yes overwrite=yes maxsize=4096 tracefile=c:\tmp\wireless.etl
     ```
 2. Reproduce the issue.
@@ -70,12 +70,12 @@ Make sure that you install the latest Windows updates, cumulative updates, and r
     - If intermittent connection drops trigger stop command on a script (ping or test network constantly until fail, then netsh trace stop).
 3. Stop the trace by entering the following command: 
 
-    ```cmd
+    ```console
     netsh trace stop
     ```
 4. To convert the output file to text format: 
 
-    ```cmd
+    ```console
     netsh trace convert c:\tmp\wireless.etl
     ```
 
@@ -119,25 +119,25 @@ Use the **FSM transition** trace filter to see the connection state machine. You
 
 The following is an example of a good connection setup:
 
-<pre>
+```console
 44676 [2]0F24.1020::‎2018‎-‎09‎-‎17 10:22:14.658 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: Disconnected to State: Reset
 45473 [1]0F24.1020::‎2018‎-‎09‎-‎17 10:22:14.667 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: Reset to State: Ihv_Configuring
 45597 [3]0F24.1020::‎2018‎-‎09‎-‎17 10:22:14.708 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: Ihv_Configuring to State: Configuring
 46085 [2]0F24.17E0::‎2018‎-‎09‎-‎17 10:22:14.710 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: Configuring to State: Associating
 47393 [1]0F24.1020::‎2018‎-‎09‎-‎17 10:22:14.879 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: Associating to State: Authenticating
 49465 [2]0F24.17E0::‎2018‎-‎09‎-‎17 10:22:14.990 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: Authenticating to State: Connected
-</pre>
+```
 
 The following is an example of a failed connection setup:
 
-<pre>
+```console
 44676 [2]0F24.1020::‎2018‎-‎09‎-‎17 10:22:14.658 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: Disconnected to State: Reset
 45473 [1]0F24.1020::‎2018‎-‎09‎-‎17 10:22:14.667 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: Reset to State: Ihv_Configuring
 45597 [3]0F24.1020::‎2018‎-‎09‎-‎17 10:22:14.708 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: Ihv_Configuring to State: Configuring
 46085 [2]0F24.17E0::‎2018‎-‎09‎-‎17 10:22:14.710 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: Configuring to State: Associating
 47393 [1]0F24.1020::‎2018‎-‎09‎-‎17 10:22:14.879 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: Associating to State: Authenticating
 49465 [2]0F24.17E0::‎2018‎-‎09‎-‎17 10:22:14.990 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: Authenticating to State: Roaming
-</pre>
+```
 
 By identifying the state at which the connection fails, one can focus more specifically in the trace on logs just prior to the last known good state. 
 
@@ -155,7 +155,7 @@ Enable the **FSM transition, SecMgr Transition,** and **AuthMgr Transition** fil
 
 Continuing with the example above, the combined filters look like this:
 
-<pre>
+```console
 [2] 0C34.2FF0::08/28/17-13:24:28.693 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: 
 Reset to State: Ihv_Configuring
 [2] 0C34.2FF0::08/28/17-13:24:28.693 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: 
@@ -173,7 +173,7 @@ Associating to State: Authenticating
 [2] 0C34.2FF0::08/28/17-13:24:29.7512788 [Microsoft-Windows-WLAN-AutoConfig]Port[13] Peer 8A:15:14:B6:25:10 SecMgr Transition DEACTIVATE (11) --> INACTIVE (1)
 [2] 0C34.2FF0::08/28/17-13:24:29.7513404 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: 
 Authenticating to State: Roaming
-</pre>
+```
 
 > [!NOTE]
 > In the next to last line the SecMgr transition is suddenly deactivating:<br>
@@ -182,7 +182,7 @@ Authenticating to State: Roaming
 
 Enabling the **Microsoft-Windows-WLAN-AutoConfig** filter will show more detail leading to the DEACTIVATE transition:
 
-<pre>
+```console
 [3] 0C34.2FE8::08/28/17-13:24:28.902 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: 
 Associating to State: Authenticating
 [1] 0C34.275C::08/28/17-13:24:28.960 [Microsoft-Windows-WLAN-AutoConfig]Port[13] Peer 8A:15:14:B6:25:10 SecMgr Transition START AUTH (3) --> WAIT FOR AUTH SUCCESS (4)
@@ -196,7 +196,7 @@ Associating to State: Authenticating
  [2] 0C34.2FF0::08/28/17-13:24:29.7512788 [Microsoft-Windows-WLAN-AutoConfig]Port[13] Peer 8A:15:14:B6:25:10 SecMgr Transition DEACTIVATE (11) --> INACTIVE (1)
 [2] 0C34.2FF0::08/28/17-13:24:29.7513404 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: 
 Authenticating to State: Roaming
-</pre>
+```
 
 The trail backwards reveals a **Port Down** notification:
 
@@ -208,7 +208,7 @@ Below, the MSM is the native wifi stack. These are Windows native wifi drivers w
 
 Enable trace filter for **[Microsoft-Windows-NWifi]:**
 
-<pre>
+```console
 [3] 0C34.2FE8::08/28/17-13:24:28.902 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: 
 Associating to State: Authenticating
 [1] 0C34.275C::08/28/17-13:24:28.960 [Microsoft-Windows-WLAN-AutoConfig]Port[13] Peer 8A:15:14:B6:25:10 SecMgr Transition START AUTH (3) --> WAIT FOR AUTH SUCCESS (4)
@@ -222,12 +222,14 @@ Associating to State: Authenticating
 [2] 0C34.2FF0::08/28/17-13:24:29.751 [Microsoft-Windows-WLAN-AutoConfig]Port[13] Peer 8A:15:14:B6:25:10 SecMgr Transition WAIT FOR AUTH SUCCESS (7) --> DEACTIVATE (11)
  [2] 0C34.2FF0::08/28/17-13:24:29.7512788 [Microsoft-Windows-WLAN-AutoConfig]Port[13] Peer 8A:15:14:B6:25:10 SecMgr Transition DEACTIVATE (11) --> INACTIVE (1)
 [2] 0C34.2FF0::08/28/17-13:24:29.7513404 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: 
-Authenticating to State: Roaming</pre>
+Authenticating to State: Roaming
+```
 
 In the trace above, we see the line:
 
-<pre>
-[0]0000.0000::‎08/28/17-13:24:29.127 [Microsoft-Windows-NWiFi]DisAssoc: 0x8A1514B62510 Reason: 0x4</pre>
+```console
+[0]0000.0000::‎08/28/17-13:24:29.127 [Microsoft-Windows-NWiFi]DisAssoc: 0x8A1514B62510 Reason: 0x4
+```
 
 This is followed by **PHY_STATE_CHANGE** and **PORT_DOWN** events due to a disassociate coming from the Access Point (AP), as an indication to deny the connection. This could be due to invalid credentials, connection parameters, loss of signal/roaming, and various other reasons for aborting a connection. The action here would be to examine the reason for the disassociate sent from the indicated AP MAC (8A:15:14:B6:25:10). This would be done by examining internal logging/tracing from the AP.
 
@@ -238,7 +240,7 @@ This is followed by **PHY_STATE_CHANGE** and **PORT_DOWN** events due to a disas
 
 ## Example ETW capture
 
-<pre>
+```console
 C:\tmp>netsh trace start wireless_dbg capture=yes overwrite=yes maxsize=4096 tracefile=c:\tmp\wireless.etl
 
 Trace configuration:
@@ -279,7 +281,7 @@ C:\tmp>dir
 01/09/2019  02:59 PM         2,786,540 wireless.txt
                3 File(s)     10,395,004 bytes
                2 Dir(s)  46,648,332,288 bytes free
-</pre>
+```
 
 ## Wifi filter file
 
