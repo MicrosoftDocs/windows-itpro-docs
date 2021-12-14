@@ -45,11 +45,11 @@ Follow these steps on a device running the Remote Server Administration Tools or
 
 1. Start Group Policy Management Console (gpmc.msc).
 
-2. Expand **Forest > Domains > *\<your domain\>**.
+2. Expand **Forest > Domains > *\<your domain\>*.
 
 3. Right-click *\<your domain>* and select **Create a GPO in this domain and link it here**.
 
-4. In the **New GPO** dialog box, enter *Windows Update for Business - Group 1* as the name of the new Group Policy Object.
+4. In the **New GPO** dialog box, enter **Windows Update for Business - Group 1** as the name of the new Group Policy Object.
 
 5. Right-click the **"Windows Update for Business - Group 1"** object, and then select **Edit**.
 
