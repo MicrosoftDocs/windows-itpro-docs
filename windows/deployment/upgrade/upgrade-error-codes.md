@@ -22,6 +22,7 @@ ms.collection: highpri
 
 >[!NOTE]
 >This is a 400 level topic (advanced).
+>
 >See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.
 
 If the upgrade process is not successful, Windows Setup will return two codes:
@@ -147,4 +148,4 @@ For example: An extend code of **0x4000D**, represents a problem during phase 4 
 [Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)  
 [Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications)  
 [Microsoft Windows Q & A](/answers/products/windows)  
-[Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)
+[Fix Windows Update errors by using the DISM or System Update Readiness tool](/troubleshoot/windows-server/deployment/fix-windows-update-errors)
