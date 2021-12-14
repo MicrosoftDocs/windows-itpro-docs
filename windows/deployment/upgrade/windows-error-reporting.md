@@ -32,7 +32,7 @@ To use Windows PowerShell, type the following commands from an elevated Windows 
 > [!IMPORTANT]
 > The following source will be available only if you have updated from a previous version of Windows 10 to a new version. If you installed the current version and have not updated, the source named **WinSetupDiag02** will be unavailable.
 
-```Powershell
+```powershell
 $events = Get-WinEvent -FilterHashtable @{LogName="Application";ID="1001";Data="WinSetupDiag02"}
 $event = [xml]$events[0].ToXml()
 $event.Event.EventData.Data

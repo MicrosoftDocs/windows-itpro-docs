@@ -86,14 +86,20 @@ The system drive is the drive that contains the [system partition](/windows-hard
 To check and repair errors on the system drive:
 
 1. Click **Start**.
-2. Type **command**.
-3. Right-click **Command Prompt** and then left-click **Run as administrator**.
-4. If you are prompted by UAC, click **Yes**.
-5. Type **chkdsk /F** and press ENTER.
-6. When you are prompted to schedule a check the next time the system restarts, type **Y**.
-7. See the following example
 
-    ```
+2. Type **command**.
+
+3. Right-click **Command Prompt** and then left-click **Run as administrator**.
+
+4. If you are prompted by UAC, click **Yes**.
+
+5. Type **chkdsk /F** and press ENTER.
+
+6. When you are prompted to schedule a check the next time the system restarts, type **Y**.
+
+7. See the following example.
+
+    ```console
     C:\WINDOWS\system32>chkdsk /F
     The type of the file system is NTFS.
     Cannot lock current drive.
@@ -128,12 +134,16 @@ This fix is also described in detail at [answers.microsoft.com](https://answers.
 To check and repair system files:
 
 1. Click **Start**.
+
 2. Type **command**.
+
 3. Right-click **Command Prompt** and then left-click **Run as administrator**.
+
 4. If you are prompted by UAC, click **Yes**.
+
 5. Type **sfc /scannow** and press ENTER. See the following example:
 
-    ```
+    ```console
     C:\>sfc /scannow
 
     Beginning system scan.  This process will take some time.
@@ -145,7 +155,7 @@ To check and repair system files:
     ```
 6. If you are running Windows 8.1 or later, type **DISM.exe /Online /Cleanup-image /Restorehealth** and press ENTER (the DISM command options are not available for Windows 7). See the following example:
 
-    ```
+    ```console
     C:\>DISM.exe /Online /Cleanup-image /Restorehealth
 
     Deployment Image Servicing and Management tool
