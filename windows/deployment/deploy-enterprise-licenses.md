@@ -1,7 +1,6 @@
 ---
 title: Deploy Windows 10/11 Enterprise licenses
-ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.audience: itpro
 ms.author: greglin
 description: Steps to deploy Windows 10 Enterprise or Windows 11 Enterprise licenses for Windows 10/11 Enterprise E3 or E5 Subscription Activation, or for Windows 10/11 Enterprise E3 in CSP
@@ -14,6 +13,7 @@ ms.pagetype: mdt
 audience: itpro
 author: greg-lindsay
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Deploy Windows 10/11 Enterprise licenses

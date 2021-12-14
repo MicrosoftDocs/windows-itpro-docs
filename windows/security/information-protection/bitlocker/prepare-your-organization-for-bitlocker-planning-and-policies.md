@@ -3,7 +3,7 @@ title: Prepare your organization for BitLocker Planning and policies (Windows 10
 description: This topic for the IT professional explains how can you plan your BitLocker deployment.
 ms.assetid: 6e3593b5-4e8a-40ac-808a-3fdbc948059d
 ms.reviewer: 
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
@@ -12,7 +12,9 @@ author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+  - M365-security-compliance
+  - highpri
 ms.topic: conceptual
 ms.date: 04/24/2019
 ms.custom: bitlocker

@@ -2,7 +2,7 @@
 description: Use this article to learn more about what Windows diagnostic data is gathered at the basic level.
 title: Windows 10, version 1709 basic diagnostic events and fields (Windows 10)
 keywords: privacy, telemetry
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ ms.topic: article
 audience: ITPro
 ms.date: 
 ms.reviewer:
+ms.technology: privacy
 ---
 
 

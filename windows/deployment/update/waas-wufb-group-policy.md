@@ -6,8 +6,10 @@ ms.mktglfcycl: manage
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.collection: m365initiative-coredeploy
-manager: laurawi
+ms.collection:
+  - m365initiative-coredeploy
+  - highpri
+manager: dougeby
 ms.topic: article
 ---
 
@@ -16,7 +18,7 @@ ms.topic: article
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 - Windows 11
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 

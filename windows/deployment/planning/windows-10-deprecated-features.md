@@ -1,5 +1,5 @@
 ---
-title: Windows 10 features we’re no longer developing
+title: Windows 10 features we're no longer developing
 description: Review the list of features that are no longer being developed in Windows 10
 ms.prod: w10
 ms.mktglfcycl: plan
@@ -10,8 +10,10 @@ author: greg-lindsay
 ms.author: greglin
 manager: dougeby
 ms.topic: article
+ms.collection: highpri
 ---
-# Windows 10 features we’re no longer developing
+
+# Windows 10 features we're no longer developing
 
 > Applies to: Windows 10
 
