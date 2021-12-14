@@ -16,7 +16,7 @@ ms.collection:
   - M365-security-compliance
   - highpri
 ms.topic: article
-ms.date: 12/10/2021
+ms.date: 12/14/2021
 ms.technology: privacy
 ---
 
@@ -1725,7 +1725,7 @@ In Group Policy, configure:
 
 ### <a href="" id="bkmk-spotlight"></a>25. Personalized Experiences
 
-Personalized experiences provide features such as different background images and text on the lock screen, suggested apps, Microsoft account notifications, and Windows tips. Example features include Windows Spotlight and Start Suggestions. You can control them by using the Group Policy.
+Personalized experiences provides features such as different background images and text on the lock screen, suggested apps, Microsoft account notifications, and Windows tips. Example features include Windows Spotlight and Start Suggestions. You can control them by using the Group Policy.
 
 > [!NOTE]
 > This excludes how individual experiences (e.g., Windows Spotlight) can be controlled by users in Windows Settings.
