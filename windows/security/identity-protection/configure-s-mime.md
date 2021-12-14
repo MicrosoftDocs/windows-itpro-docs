@@ -4,7 +4,7 @@ description: S/MIME lets users encrypt outgoing messages and attachments so that
 ms.assetid: 7F9C2A99-42EB-4BCC-BB53-41C04FBBBF05
 ms.reviewer: 
 keywords: encrypt, digital signature
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

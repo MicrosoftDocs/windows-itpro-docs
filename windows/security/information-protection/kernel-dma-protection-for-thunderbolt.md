@@ -1,7 +1,7 @@
 ---
 title: Kernel DMA Protection (Windows)
 description: Kernel DMA Protection protects PCs against drive-by Direct Memory Access (DMA) attacks using PCI hot plug devices connected to Thunderbolt™ 3 ports.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -9,16 +9,17 @@ author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+  - M365-security-compliance
+  - highpri
 ms.topic: conceptual
 ms.date: 03/26/2019
-ms.reviewer: 
 ---
 
-# Kernel DMA Protection 
+# Kernel DMA Protection
 
 **Applies to**
--   Windows 10
+-   Windows 10
 -   Windows 11
 
 In Windows 10 version 1803, Microsoft introduced a new feature called Kernel DMA Protection to protect PCs against drive-by Direct Memory Access (DMA) attacks using PCI hot plug devices connected to externally accessible PCIe ports (for example, Thunderbolt™ 3 ports and CFexpress). In Windows 10 version 1903, Microsoft expanded the Kernel DMA Protection support to cover internal PCIe ports (for example, M.2 slots)
@@ -53,7 +54,7 @@ By default, peripherals with DMA Remapping incompatible drivers will be blocked 
 
 ## User experience
 
-![Kernel DMA protection user experience.](images/kernel-dma-protection-user-experience.png)
+![Kernel DMA protection user experience](images/kernel-dma-protection-user-experience.png)
 
 By default, peripherals with DMA remapping compatible device drivers will be automatically enumerated and started. Peripherals with DMA Remapping incompatible drivers will be blocked from starting if the peripheral was plugged in before an authorized user logs in, or while the screen is locked. Once the system is unlocked, the peripheral driver will be started by the OS, and the peripheral will continue to function normally until the system is rebooted, or the peripheral is unplugged. 
 The peripheral will continue to function normally if the user locks the screen or logs out of the system.
@@ -113,11 +114,11 @@ No, Kernel DMA Protection only protects against drive-by DMA attacks after the O
 DMA-remapping is supported for specific device drivers, and is not universally supported by all devices and drivers on a platform. To check if a specific driver is opted into DMA-remapping, check the values corresponding to the DMA Remapping Policy property in the Details tab of a device in Device Manager*. A value of 0 or 1 means that the device driver does not support DMA-remapping. A value of two means that the device driver supports DMA-remapping. If the property is not available, then the policy is not set by the device driver (that is, the device driver does not support DMA-remapping).
 Check the driver instance for the device you are testing. Some drivers may have varying values depending on the location of the device (internal vs. external).
 
-![Kernel DMA protection user experience.](images/device_details_tab_1903.png)
+![A user's experience about Kernel DMA protection](images/device_details_tab_1903.png)
 
 *For Windows 10 versions 1803 and 1809, the property field in Device Manager uses a GUID, as highlighted in the following image. 
 
-![Kernel DMA protection user experience.](images/device-details-tab.png)
+![Experience of a user about Kernel DMA protection](images/device-details-tab.png)
 
 ### When the drivers for PCI or Thunderbolt™ 3 peripherals do not support DMA-remapping?
 

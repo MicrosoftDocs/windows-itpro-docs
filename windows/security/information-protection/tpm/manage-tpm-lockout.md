@@ -4,7 +4,7 @@ description: This topic for the IT professional describes how to manage the lock
 ms.assetid: bf27adbe-404c-4691-a644-29ec722a3f7b
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

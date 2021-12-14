@@ -12,7 +12,9 @@ metadata:
   ms.service: subservice #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice # Optional; Remove if no subservice is used.
   ms.topic: hub-page # Required
-  ms.collection: windows-10 # Optional; Remove if no collection is used.
+  ms.collection:
+    - windows-10
+    - highpri
   author: dougeby #Required; your GitHub user alias, with correct capitalization.
   ms.author: dougeby #Required; microsoft alias of author; optional team alias.
   ms.date: 10/01/2021 #Required; mm/dd/yyyy format.
@@ -177,9 +179,6 @@ conceptualContent:
         - url: /windows/security/index    
           itemType: overview
           text: Windows Enterprise Security
-        - url: /windows/privacy/index
-          itemType: overview
-          text: Windows Privacy
         - url: /windows/security/hardware
           itemType: overview
           text: Hardware security
@@ -191,10 +190,13 @@ conceptualContent:
           text: Application security
         - url: /windows/security/identity
           itemType: overview
-          text: User and identity security
+          text: Identity and privacy
         - url: /windows/security/cloud
           itemType: overview
           text: Cloud services
+        - url: /windows/privacy/index
+          itemType: overview
+          text: Windows Privacy
 
 # additionalContent section (optional)
 # Card with summary style

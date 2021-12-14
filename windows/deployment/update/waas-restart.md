@@ -6,11 +6,11 @@ ms.mktglfcycl: deploy
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.topic: article
 ms.custom:
 - seo-marvel-apr2020
+ms.collection: highpri
 ---
 
 # Manage device restarts after updates
@@ -18,7 +18,7 @@ ms.custom:
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
