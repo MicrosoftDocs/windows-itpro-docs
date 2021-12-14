@@ -43,7 +43,8 @@ To use Event Viewer:
 2. Click **Find**, and then search for **winsetupdiag02**.
 3. Double-click the event that is highlighted.
 
-Note: For legacy operating systems, the Event Name was WinSetupDiag01. 
+> [!NOTE]
+> For legacy operating systems, the Event Name was WinSetupDiag01. 
 
 Ten parameters are listed in the event:
 
