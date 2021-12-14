@@ -37,9 +37,8 @@ It is important to understand the different Wi-Fi components involved, their exp
 The intention of this troubleshooter is to show how to find a starting point in the verbosity of wireless_dbg ETW and home in on the responsible components that are causing the connection problem.
 
 ### Known Issues and fixes
-** **
 
-| **OS version** | **Fixed in** |
+| OS version | Fixed in |
 | --- | --- |
 | **Windows 10, version 1803** | [KB4284848](https://support.microsoft.com/help/4284848) |
 | **Windows 10, version 1709** | [KB4284822](https://support.microsoft.com/help/4284822) |

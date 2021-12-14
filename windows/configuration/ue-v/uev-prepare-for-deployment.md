@@ -92,7 +92,7 @@ For downloadable UE-V templates, see:
 
 When you enable the UE-V service on user devices, it registers a default group of settings location templates that capture settings values for these common Microsoft applications.
 
-| **Application category**    | **Description**   |
+| Application category | Description |
 |-----------------------------|-------------------|
 | Microsoft Office 2016 applications<br>[Download a list of all settings synced](https://gallery.technet.microsoft.com/Authored-Office-2016-32-0dc05cd8) | Microsoft Access 2016<br>Microsoft Lync 2016<br>Microsoft Excel 2016<br>Microsoft OneNote 2016<br>Microsoft Outlook 2016<br>Microsoft PowerPoint 2016<br>Microsoft Project 2016<br>Microsoft Publisher 2016<br>Microsoft SharePoint Designer 2013 (not updated for 2016)<br>Microsoft Visio 2016<br>Microsoft Word 2016<br>Microsoft Office Upload Manager<br>Microsoft Infopath has been removed (deprecated) from the Office 2016 suite |
 | Microsoft Office 2013 applications<br>[Download a list of all settings synced](https://www.microsoft.com/download/details.aspx?id=46367) | Microsoft Word 2013<br>Microsoft Excel 2013<br>Microsoft Outlook 2013<br>Microsoft Access 2013<br>Microsoft Project 2013<br>Microsoft PowerPoint 2013<br>Microsoft Publisher 2013<br>Microsoft Visio 2013<br>Microsoft InfoPath 2013<br>Microsoft Lync 2013<br>Microsoft OneNote 2013<br>Microsoft SharePoint Designer 2013<br>Microsoft Office 2013 Upload Center<br>Microsoft OneDrive for Business 2013
@@ -109,7 +109,7 @@ UE-V does not synchronize settings between the Microsoft Calculator in Windows 1
 
 UE-V includes settings location templates that capture settings values for these Windows settings.
 
-| **Windows settings** | **Description** | **Apply on** | **Export on** | **Default state** |
+| Windows settings | Description | Apply on | Export on | Default state |
 |----------------------|-----------------|--------------|---------------|-------------------|
 | Desktop background   | Currently active desktop background or wallpaper | Log on, unlock, remote connect, Scheduled Task events | Log off, lock, remote disconnect, or scheduled task interval | Enabled           |
 | Ease of Access       | Accessibility and input settings, Microsoft Magnifier, Narrator, and on-Screen Keyboard | Log on only | Log off or scheduled task interval | Enabled           |
@@ -118,7 +118,7 @@ UE-V includes settings location templates that capture settings values for these
 > [!IMPORTANT]
 > UE-V roams taskbar settings between Windows 10 devices. However, UE-V does not synchronize taskbar settings between Windows 10 devices and devices running previous operating systems versions.
 
-| **Settings group**       | **Category**   | **Capture**    | **Apply**    |
+| Settings group | Category | Capture | Apply |
 |--------------------------|----------------|----------------|--------------|
 | **Application Settings** | Windows applications   | Close application<br>Windows application settings change event | Start the UE-V App Monitor at startup<br>Open app<br>Windows application settings change event<br>Arrival of a settings package     |
 |           | Desktop applications   | Application closes | Application opens and closes        |
@@ -169,7 +169,7 @@ In general, you can synchronize settings that meet the following criteria:
 
 If you’ve decided that you need to synchronize settings for custom applications, use this checklist to determine which applications you’ll include.
 
-| &nbsp;   | **Description**  |
+| &nbsp;   | Description |
 |-------|--------------------------|
 | ![Checklist box.](images/uev-checklist-box.gif) | Does this application contain settings that the user can customize? |
 | ![Checklist box.](images/uev-checklist-box.gif) | Is it important for the user that these settings are synchronized? |
@@ -333,7 +333,7 @@ Computers that run the UE-V service must use a time server to maintain a consist
 
 Before you proceed, ensure that your environment meets these requirements for using UE-V.
 
-| **Operating system**     | **Edition**   | **Service pack** | **System architecture** | **Windows PowerShell**   | **Microsoft .NET Framework**   |
+| Operating system | Edition | Service pack | System architecture | Windows PowerShell | Microsoft .NET Framework |
 |--------------------------|---------------|------------------|-------------------------|--------------------------|--------------------------------|
 | Windows 10, version 1607 | Windows 10 for Enterprise  | NA  | 32-bit or 64-bit        | Windows PowerShell 3.0 or higher | .NET Framework 4.5 or higher |
 | Windows 8 and Windows 8.1         | Enterprise or Pro | None | 32-bit or 64-bit        | Windows PowerShell 3.0 or higher | .NET Framework 4.5 or higher   |
