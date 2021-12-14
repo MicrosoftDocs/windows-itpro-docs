@@ -2,7 +2,7 @@
 title: Dynamic lock
 description: Learn how to set Dynamic lock on Windows 10 and Windows 11 devices, by configuring group policies. This feature locks a device when a Bluetooth signal falls below a set value.
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, cert-trust, device, registration, unlock, conditional access
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile

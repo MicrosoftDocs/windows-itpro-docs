@@ -135,6 +135,7 @@ Downgrading from any edition of Windows 10 to Windows 7, 8, or 8.1 by entering a
 ### Scenario example
 
 Downgrading from Enterprise
+
 - Original edition: **Professional OEM**
 - Upgrade edition: **Enterprise**
 - Valid downgrade paths: **Pro, Pro for Workstations, Pro Education, Education**
@@ -143,102 +144,24 @@ You can move directly from Enterprise to any valid destination edition. In this 
 
 ### Supported Windows 10 downgrade paths
 
-✔ = Supported downgrade path<br>
-&nbsp;S&nbsp; = Supported; Not considered a downgrade or an upgrade<br>
-[blank] = Not supported or not a downgrade<br>
+✔ = Supported downgrade path
 
-<br>
-<table border="0" cellpadding="1">
-    <tr>
-        <th colspan="10" align="center">Destination edition</th>
-    </tr>
-    <tr>
-        <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-        <th>&nbsp;</th>
-        <th>Home</th>
-        <th>Pro</th>
-        <th>Pro for Workstations</th>
-        <th>Pro Education</th>
-        <th>Education</th>
-        <th>Enterprise LTSC</th>
-        <th>Enterprise</th>
-    </tr>
-    <tr>
-        <th rowspan="9" valign="middle">Starting edition</th>
-    </tr>
-    <tr>
-        <td>Home</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Pro</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Pro for Workstations</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Pro Education</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Education</td>
-        <td></td>
-        <td align="center">✔</td>
-        <td align="center">✔</td>
-        <td align="center">✔</td>
-        <td></td>
-        <td></td>
-        <td>S</td>
-    </tr>
-    <tr>
-        <td>Enterprise LTSC</td>
-        <td></td>
-        <td align="center"></td>
-        <td align="center"></td>
-        <td align="center"></td>
-        <td align="center"></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Enterprise</td>
-        <td></td>
-        <td align="center">✔</td>
-        <td align="center">✔</td>
-        <td align="center">✔</td>
-        <td align="center">S</td>
-        <td></td>
-        <td></td>
-    </tr>
-</table>
+S = Supported; Not considered a downgrade or an upgrade
 
-> 
+[blank] = Not supported or not a downgrade
+
+**Destination Edition: (Starting)**
+
+|Edition|Home|Pro|Pro for Workstations|Pro Education|Education|Enterprise LTSC|Enterprise|
+|--- |--- |--- |--- |--- |--- |--- |--- |
+|Home||||||||
+|Pro||||||||
+|Pro for Workstations||||||||
+|Pro Education||||||||
+|Education||✔|✔|✔|||S|
+|Enterprise LTSC||||||||
+|Enterprise||✔|✔|✔|S|||
+
 > **Windows N/KN**: Windows "N" and "KN" SKUs follow the same rules shown above.
 
 Some slightly more complex scenarios are not represented by the table above. For example, you can perform an upgrade from Pro to Pro for Workstation on a computer with an embedded Pro key using a Pro for Workstation license key, and then later downgrade this computer back to Pro with the firmware-embedded key. The downgrade is allowed but only because the pre-installed OS is Pro.

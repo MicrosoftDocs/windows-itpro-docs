@@ -2,7 +2,7 @@
 title: Hybrid Azure AD joined Windows Hello for Business Trust New Installation (Windows Hello for Business)
 description: Learn about new installations for Windows Hello for Business certificate trust and the various technologies hybrid certificate trust deployments rely on.
 keywords: identity, PIN, biometric, Hello, passport, WHFB
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile

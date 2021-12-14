@@ -5,7 +5,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
@@ -57,6 +57,9 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#textinput-allowlinguisticdatacollection">TextInput/AllowLinguisticDataCollection</a>
+  </dd>
+  <dd>
+    <a href="#textinput-allowtextinputsuggestionupdate">TextInput/AllowTextInputSuggestionUpdate</a>
   </dd>
   <dd>
     <a href="#textinput-configurejapaneseimeversion">TextInput/ConfigureJapaneseIMEVersion</a>
@@ -610,6 +613,51 @@ ADMX Info:
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 This setting supports a range of values between 0 and 1.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="textinput-allowtextinputsuggestionupdate"></a>**TextInput/AllowTextInputSuggestionUpdate**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Allows the user to turn on or off the automatic downloading of newer versions of the Expressive Input UI.
+When downloading is not allowed the Expressive Input panel will always display the initial UI included with the base Windows image.
+
+Most restricted value is 0.
+
+Default: Enabled
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 1 (Enabled) - The newer UX is downloaded from Microsoft service.
+- 0 (Disabled) - The UX remains unchanged with what the operating system installs.
 
 <!--/SupportedValues-->
 <!--/Policy-->

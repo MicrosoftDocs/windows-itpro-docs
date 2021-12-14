@@ -5,7 +5,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 11/29/2021
 ms.reviewer: 
@@ -1222,7 +1222,6 @@ Enable IT admin to configure feature update uninstall period. Values range 2 - 6
 
 <!--/Scope-->
 <!--Description-->
-Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
 
 Defers Feature Updates for the specified number of days.
 
@@ -1394,8 +1393,6 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
->
 > Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use DeferUpgradePeriod for Windows 10, version 1511 devices.
 
 
@@ -1929,8 +1926,6 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
 
 Allows IT Admins to exclude Windows Update (WU) drivers during updates.
 
@@ -2049,7 +2044,7 @@ The following list shows the supported values:
 To validate this policy:
 
 1.  Enable the policy and ensure the device is on a cellular network.
-2.  Run the scheduled task on your device to check for app updates in the background. For example, on a mobile device, run the following commands in TShell: 
+2.  Run the scheduled task on your device to check for app updates in the background. For example, on a device, run the following commands in TShell: 
     ```TShell
        exec-device schtasks.exe -arguments '/run /tn "\Microsoft\Windows\WindowsUpdate\Automatic App Update" /I'
     ```
@@ -2102,7 +2097,7 @@ The following list shows the supported values:
 To validate this policy:
 
 1.  Enable the policy and ensure the device is on a cellular network.
-2.  Run the scheduled task on your device to check for app updates in the background. For example, on a mobile device, run the following commands in TShell: 
+2.  Run the scheduled task on your device to check for app updates in the background. For example, on a device, run the following commands in TShell: 
     ```TShell
        exec-device schtasks.exe -arguments '/run /tn "\Microsoft\Windows\WindowsUpdate\Automatic App Update" /I'
     ```
@@ -2244,8 +2239,6 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
-
 
 Allows IT Admins to pause feature updates for up to 35 days. We recomment that you use the *Update/PauseFeatureUpdatesStartTime* policy if you are running Windows 10, version 1703 or later.
 
@@ -2422,38 +2415,14 @@ This policy is deprecated. Use [Update/RequireUpdateApproval](#update-requireupd
 <a href="" id="update-productversion"></a>**Update/ProductVersion**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2578,7 +2547,7 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is *only* recommended for managing mobile devices. If you previously used the **Update/PhoneUpdateRestrictions** policy in previous versions of Windows, it has been deprecated. Please use this policy instead. 
+> If you previously used the **Update/PhoneUpdateRestrictions** policy in previous versions of Windows, it has been deprecated. Please use this policy instead. 
 
 
 Allows the IT admin to restrict the updates that are installed on a device to only those on an update approval list. It enables IT to accept the End User License Agreement (EULA) associated with the approved update on behalf of the end-user. EULAs are approved once an update is approved.

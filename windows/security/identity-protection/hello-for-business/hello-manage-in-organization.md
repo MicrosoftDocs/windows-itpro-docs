@@ -3,7 +3,7 @@ title: Manage Windows Hello in your organization (Windows)
 description: You can create a Group Policy or mobile device management (MDM) policy that will implement Windows Hello for Business on devices running Windows 10.
 ms.assetid: 47B55221-24BE-482D-BD31-C78B22AC06D8
 keywords: identity, PIN, biometric, Hello
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -41,151 +41,32 @@ The following table lists the Group Policy settings that you can configure for W
 > [!NOTE]
 > Starting with Windows 10, version 1709, the location of the PIN complexity section of the Group Policy is: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **PIN Complexity**.
 
-<table>
-<tr>
-<th colspan="2">Policy</th>
-<th>Scope</th>
-<th>Options</th>
-</tr>
-<tr>
-<td>Use Windows Hello for Business</td>
-<td></td>
-<td>Computer or user</td>
-<td>
-<p><b>Not configured</b>: Device does not provision Windows Hello for Business for any user.</p>
-<p><b>Enabled</b>: Device provisions Windows Hello for Business using keys or certificates for all users.</p>
-<p><b>Disabled</b>: Device does not provision Windows Hello for Business for any user.</p>
-</td>
-</tr>
-<tr>
-<td>Use a hardware security device</td>
-<td></td>
-<td>Computer</td>
-<td>
-<p><b>Not configured</b>: Windows Hello for Business will be provisioned using TPM if available, and will be provisioned using software if TPM is not available.</p>
-<p><b>Enabled</b>: Windows Hello for Business will only be provisioned using TPM. This feature will provision Windows Hello for Business using TPM 1.2 unless the option to exclude them is explicitly set.</p>
-<p><b>Disabled</b>: Windows Hello for Business will be provisioned using TPM if available, and will be provisioned using software if TPM is not available.</p>
-</td>
-</tr>
-<tr>
-<td>Use certificate for on-premises authentication</td>
-<td></td>
-<td>Computer or user</td>
-<td>
-<p><b>Not configured</b>: Windows Hello for Business enrolls a key that is used for on-premises authentication.</p>
-<p><b>Enabled</b>: Windows Hello for Business enrolls a sign-in certificate using ADFS that is used for on-premises authentication.</p>
-<p><b>Disabled</b>: Windows Hello for Business enrolls a key that is used for on-premises authentication.</p>
-</td>
-</tr>
-<td>Use PIN recovery</td>
-<td></td>
-<td>Computer</td>
-<td>
-<p>Added in Windows 10, version 1703</p>
-<p><b>Not configured</b>: Windows Hello for Business does not create or store a PIN recovery secret. PIN reset does not use the Azure-based PIN recovery service.</p>
-<p><b>Enabled</b>: Windows Hello for Business uses the Azure-based PIN recovery service for PIN reset.</p>
-<p><b>Disabled</b>: Windows Hello for Business does not create or store a PIN recovery secret. PIN reset does not use the Azure-based PIN recovery service.</p>
-<p>
+|Policy|Scope|Options|
+|--- |--- |--- |
+|Use Windows Hello for Business|Computer or user|<p><b>Not configured</b>: Device does not provision Windows Hello for Business for any user.<p><b>Enabled</b>: Device provisions Windows Hello for Business using keys or certificates for all users.<p><b>Disabled</b>: Device does not provision Windows Hello for Business for any user.|
+|Use a hardware security device|Computer|<p><b>Not configured</b>: Windows Hello for Business will be provisioned using TPM if available, and will be provisioned using software if TPM is not available.<p><b>Enabled</b>: Windows Hello for Business will only be provisioned using TPM. This feature will provision Windows Hello for Business using TPM 1.2 unless the option to exclude them is explicitly set.<p><b>Disabled</b>: Windows Hello for Business will be provisioned using TPM if available, and will be provisioned using software if TPM is not available.|
+|Use certificate for on-premises authentication|Computer or user|<p><b>Not configured</b>: Windows Hello for Business enrolls a key that is used for on-premises authentication.<p><b>Enabled</b>: Windows Hello for Business enrolls a sign-in certificate using ADFS that is used for on-premises authentication.<p><b>Disabled</b>: Windows Hello for Business enrolls a key that is used for on-premises authentication.|
+|Use PIN recovery|Computer|<p>Added in Windows 10, version 1703<p><b>Not configured</b>: Windows Hello for Business does not create or store a PIN recovery secret. PIN reset does not use the Azure-based PIN recovery service<p><b>Enabled</b>: Windows Hello for Business uses the Azure-based PIN recovery service for PIN reset<p><b>Disabled</b>: Windows Hello for Business does not create or store a PIN recovery secret. PIN reset does not use the Azure-based PIN recovery service.<p>For more information about using the PIN recovery service for PIN reset see [Windows Hello for Business PIN Reset](hello-feature-pin-reset.md).|
+|Use biometrics|Computer|<p><b>Not configured</b>: Biometrics can be used as a gesture in place of a PIN<p><b>Enabled</b>: Biometrics can be used as a gesture in place of a PIN.<p><b>Disabled</b>: Only a PIN can be used as a gesture.|
 
-For more information about using the PIN recovery service for PIN reset see [Windows Hello for Business PIN Reset](hello-feature-pin-reset.md).
-</p>
-</td>
-</tr>
-<tr>
-<td>Use biometrics</td>
-<td></td>
-<td>Computer</td>
-<td>
-<p><b>Not configured</b>: Biometrics can be used as a gesture in place of a PIN.</p>
-<p><b>Enabled</b>: Biometrics can be used as a gesture in place of a PIN.</p>
-<p><b>Disabled</b>: Only a PIN can be used as a gesture.</p>
-</td>
-</tr>
-<tr>
-<td rowspan="8">PIN Complexity</td>
-<td>Require digits</td>
-<td>Computer</td>
-<td>
-<p><b>Not configured</b>: Users must include a digit in their PIN.</p>
-<p><b>Enabled</b>: Users must include a digit in their PIN.</p>
-<p><b>Disabled</b>: Users cannot use digits in their PIN.</p>
-</td>
-</tr>
-<tr>
-<td>Require lowercase letters</td>
-<td>Computer</td>
-<td>
-<p><b>Not configured</b>: Users cannot use lowercase letters in their PIN.</p>
-<p><b>Enabled</b>: Users must include at least one lowercase letter in their PIN.</p>
-<p><b>Disabled</b>: Users cannot use lowercase letters in their PIN.</p>
-</td>
-</tr>
-<tr>
-<td>Maximum PIN length</td>
-<td>Computer</td>
-<td>
-<p><b>Not configured</b>: PIN length must be less than or equal to 127.</p>
-<p><b>Enabled</b>: PIN length must be less than or equal to the number you specify.</p>
-<p><b>Disabled</b>: PIN length must be less than or equal to 127.</p>
-</td>
-</tr>
-<tr>
-<td>Minimum PIN length</td>
-<td>Computer</td>
-<td>
-<p><b>Not configured</b>: PIN length must be greater  than or equal to 4.</p>
-<p><b>Enabled</b>: PIN length must be greater than or equal to the number you specify.</p>
-<p><b>Disabled</b>: PIN length must be greater  than or equal to 4.</p>
-</td>
-</tr>
-<tr>
-<td>Expiration</td>
-<td>Computer</td>
-<td>
-<p><b>Not configured</b>: PIN does not expire.</p>
-<p><b>Enabled</b>: PIN can be set to expire after any number of days between 1 and 730, or PIN can be set to never expire by setting policy to 0.</p>
-<p><b>Disabled</b>: PIN does not expire.</p>
-</td>
-</tr>
-<tr>
-<td>History</td>
-<td>Computer</td>
-<td>
-<p><b>Not configured</b>: Previous PINs are not stored.</p>
-<p><b>Enabled</b>: Specify the number of previous PINs that can be associated to a user account that can&#39;t be reused.</p>
-<p><b>Disabled</b>: Previous PINs are not stored.</p>
-<div class="alert"><b>Note</b>  Current PIN is included in PIN history.</div>
-<div> </div>
-</td>
-</tr>
-<tr>
-<td>Require special characters</td>
-<td>Computer</td>
-<td>
-<p><b>Not configured</b>: Users cannot include a special character in their PIN.</p>
-<p><b>Enabled</b>: Users must include at least one special character in their PIN.</p>
-<p><b>Disabled</b>: Users cannot include a special character in their PIN.</p>
-</td>
-</tr>
-<tr>
-<td>Require uppercase letters</td>
-<td>Computer</td>
-<td>
-<p><b>Not configured</b>: Users cannot include an uppercase letter in their PIN.</p>
-<p><b>Enabled</b>: Users must include at least one uppercase letter in their PIN.</p>
-<p><b>Disabled</b>: Users cannot include an uppercase letter in their PIN.</p>
-</td>
-</tr>
-<tr>
-<td>Phone Sign-in</td>
-<td>Use Phone Sign-in</td>
-<td>Computer</td>
-</td>
-<td>
-<p>Not currently supported.</p>
-</td>
-</tr>
-</table>
+### PIN Complexity
+
+|Policy|Scope|Options|
+|--- |--- |--- |
+|Require digits|Computer|<p><b>Not configured</b>: Users must include a digit in their PIN.<p><b>Enabled</b>: Users must include a digit in their PIN.<p><b>Disabled</b>: Users cannot use digits in their PIN.|
+|Require lowercase letters|Computer|<p><b>Not configured</b>: Users cannot use lowercase letters in their PIN<p><b>Enabled</b>: Users must include at least one lowercase letter in their PIN.<p><b>Disabled</b>: Users cannot use lowercase letters in their PIN.|
+|Maximum PIN length|Computer|<p><b>Not configured</b>: PIN length must be less than or equal to 127.<p><b>Enabled</b>: PIN length must be less than or equal to the number you specify.<p><b>Disabled</b>: PIN length must be less than or equal to 127.|
+|Minimum PIN length|Computer|<p><b>Not configured</b>: PIN length must be greater  than or equal to 4.<p><b>Enabled</b>: PIN length must be greater than or equal to the number you specify.<p><b>Disabled</b>: PIN length must be greater  than or equal to 4.|
+|Expiration|Computer|<p><b>Not configured</b>: PIN does not expire.<p><b>Enabled</b>: PIN can be set to expire after any number of days between 1 and 730, or PIN can be set to never expire by setting policy to 0.<p><b>Disabled</b>: PIN does not expire.|
+|History|Computer|<p><b>Not configured</b>: Previous PINs are not stored.<p><b>Enabled</b>: Specify the number of previous PINs that can be associated to a user account that can&#39;t be reused.<p><b>Disabled</b>: Previous PINs are not stored.<div class="alert"><b>Note</b>  Current PIN is included in PIN history.</div>|
+|Require special characters|Computer|<p><b>Not configured</b>: Windows allows, but does not require, special characters in the PIN.<p><b>Enabled</b>: Windows requires the user to include at least one special character in their PIN.<p><b>Disabled</b>: Windows does not allow the user to include special characters in their PIN.|
+|Require uppercase letters|Computer|<p><b>Not configured</b>: Users cannot include an uppercase letter in their PIN.<p><b>Enabled</b>: Users must include at least one uppercase letter in their PIN.<p><b>Disabled</b>: Users cannot include an uppercase letter in their PIN.|
+
+### Phone Sign-in
+
+|Policy|Scope|Options|
+|--- |--- |--- |
+|Use Phone Sign-in|Computer|Not currently supported.|
 
 ## MDM policy settings for Windows Hello for Business
 
@@ -194,175 +75,38 @@ The following table lists the MDM policy settings that you can configure for Win
 >[!IMPORTANT]
 >Starting in Windows 10, version 1607, all devices only have one PIN associated with Windows Hello for Business. This means that any PIN on a device will be subject to the policies specified in the PassportForWork CSP. The values specified take precedence over any complexity rules set via Exchange ActiveSync (EAS) or the DeviceLock CSP.
 
-<table>
-<tr>
-<th colspan="2">Policy</th>
-<th>Scope</th>
-<th>Default</th>
-<th>Options</th>
-</tr>
-<tr>
-<td>UsePassportForWork</td>
-<td></td>
-<td>Device or user</td>
-<td>True</td>
-<td>
-<p>True: Windows Hello for Business will be provisioned for all users on the device.</p>
-<p>False: Users will not be able to provision Windows Hello for Business. </p>
-<div class="alert"><b>Note</b>  If Windows Hello for Business is enabled, and then the policy is changed to False, users who previously set up Windows Hello for Business can continue to use it, but will not be able to set up Windows Hello for Business on other devices.</div>
-<div> </div>
-</td>
-</tr>
-<tr>
-<td>RequireSecurityDevice</td>
-<td></td>
-<td>Device or user</td>
-<td>False</td>
-<td>
-<p>True: Windows Hello for Business will only be provisioned using TPM.</p>
-<p>False: Windows Hello for Business will be provisioned using TPM if available, and will be provisioned using software if TPM is not available.</p>
-</td>
-</tr>
-<tr>
-<td>ExcludeSecurityDevice</td>
-<td>TPM12</td>
-<td>Device</td>
-<td>False</td>
-<td>
-<p>Added in Windows 10, version 1703</p>
-<p>True: TPM revision 1.2 modules will be disallowed from being used with Windows Hello for Business.</p>
-<p>False: TPM revision 1.2 modules will be allowed to be used with Windows Hello for Business.</p>
-</td>
-</tr>
-<tr>
-<td>EnablePinRecovery</td>
-<td></td>
-<td>Device or user</td>
-<td>False</td>
-<td>
-<p>Added in Windows 10, version 1703</p>
-<p>True: Windows Hello for Business uses the Azure-based PIN recovery service for PIN reset.</p>
-<p>False: Windows Hello for Business does not create or store a PIN recovery secret. PIN reset does not use the Azure-based PIN recovery service.</p>
-<p>
+|Policy|Scope|Default|Options|
+|--- |--- |--- |--- |
+|UsePassportForWork|Device or user|True|<p>True: Windows Hello for Business will be provisioned for all users on the device.<p>False: Users will not be able to provision Windows Hello for Business. <div class="alert"> **Note:** If Windows Hello for Business is enabled, and then the policy is changed to False, users who previously set up Windows Hello for Business can continue to use it, but will not be able to set up Windows Hello for Business on other devices</div>|
+|RequireSecurityDevice|Device or user|False|<p>True: Windows Hello for Business will only be provisioned using TPM.<p>False: Windows Hello for Business will be provisioned using TPM if available, and will be provisioned using software if TPM is not available.|
+|ExcludeSecurityDevice<p>TPM12|Device|False|Added in Windows 10, version 1703<p>True: TPM revision 1.2 modules will be disallowed from being used with Windows Hello for Business.<p>False: TPM revision 1.2 modules will be allowed to be used with Windows Hello for Business.|
+|EnablePinRecovery|Device or use|False|<p>Added in Windows 10, version 1703<p>True: Windows Hello for Business uses the Azure-based PIN recovery service for PIN reset.<p>False: Windows Hello for Business does not create or store a PIN recovery secret. PIN reset does not use the Azure-based PIN recovery service.For more information about using the PIN recovery service for PIN reset see [Windows Hello for Business PIN Reset](hello-feature-pin-reset.md).|
 
-For more information about using the PIN recovery service for PIN reset see [Windows Hello for Business PIN Reset](hello-feature-pin-reset.md).
-</p>
-</td>
-</tr>
-<tr>
-<td rowspan="2">Biometrics</td>
-<td>
-<p>UseBiometrics</p>
-</td>
-<td>Device </td>
-<td>False</td>
-<td>
-<p>True: Biometrics can be used as a gesture in place of a PIN for domain sign-in.</p>
-<p>False: Only a PIN can be used as a gesture for domain sign-in.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>FacialFeaturesUser</p>
-<p>EnhancedAntiSpoofing</p>
-</td>
-<td>Device</td>
-<td>Not configured</td>
-<td>
-<p>Not configured: users can choose whether to turn on enhanced anti-spoofing.</p>
-<p>True: Enhanced anti-spoofing is required on devices which support it.</p>
-<p>False: Users cannot turn on enhanced anti-spoofing.</p>
-</td>
-</tr>
-<tr>
-<td rowspan="9">PINComplexity</td>
-</tr>
-<tr>
-<td>Digits </td>
-<td>Device or user</td>
-<td>1 </td>
-<td>
-<p>0: Digits are allowed. </p>
-<p>1: At least one digit is required.</p>
-<p>2: Digits are not allowed. </p>
-</td>
-</tr>
-<tr>
-<td>Lowercase letters </td>
-<td>Device or user</td>
-<td>2</td>
-<td>
-<p>0: Lowercase letters are allowed. </p>
-<p>1: At least one lowercase letter is required.</p>
-<p>2: Lowercase letters are not allowed. </p>
-</td>
-</tr>
-<tr>
-<td>Special characters</td>
-<td>Device or user</td>
-<td>2</td>
-<td>
-<p>0: Special characters are allowed. </p>
-<p>1: At least one special character is required. </p>
-<p>2: Special characters are not allowed.</p>
-</td>
-</tr>
-<tr>
-<td>Uppercase letters</td>
-<td>Device or user</td>
-<td>2</td>
-<td>
-<p>0: Uppercase letters are allowed. </p>
-<p>1: At least one uppercase letter is required.</p>
-<p>2: Uppercase letters are not allowed. </p>
-</td>
-</tr>
-<tr>
-<td>Maximum PIN length </td>
-<td>Device or user</td>
-<td>127 </td>
-<td>
-<p>Maximum length that can be set is 127. Maximum length cannot be less than minimum setting.</p>
-</td>
-</tr>
-<tr>
-<td>Minimum PIN length</td>
-<td>Device or user</td>
-<td>4</td>
-<td>
-<p>Minimum length that can be set is 4. Minimum length cannot be greater than maximum setting.</p>
-</td>
-</tr>
-<tr>
-<td>Expiration </td>
-<td>Device or user</td>
-<td>0</td>
-<td>
-<p>Integer value specifies the period of time (in days) that a PIN can be used before the system requires the user to change it. The largest number you can configure for this policy setting is 730. The lowest number you can configure for this policy setting is 0. If this policy is set to 0, then the user's PIN will never expire.
-</p>
-</td>
-</tr>
-<tr>
-<td>History</td>
-<td>Device or user</td>
-<td>0</td>
-<td>
-<p>Integer value that specifies the number of past PINs that can be associated to a user account that can't be reused. The largest number you can configure for this policy setting is 50. The lowest number you can configure for this policy setting is 0. If this policy is set to 0, then storage of previous PINs is not required.
-</p>
-</td>
-</tr>
-<tr>
-<td>Remote</td>
-<td>
-<p>UseRemotePassport</p>
-</td>
-<td>Device or user</td>
-<td>False</td>
-<td>
-<p>Not currently supported.</p>
-</td>
-</tr>
-</table>
+### Biometrics
+
+|Policy|Scope|Default|Options|
+|--- |--- |--- |--- |
+|UseBiometrics|Device |False|<p>True: Biometrics can be used as a gesture in place of a PIN for domain sign-in.<p>False: Only a PIN can be used as a gesture for domain sign-in.|
+|<p>FacialFeaturesUser<p>EnhancedAntiSpoofing|Device|Not configured|<p>Not configured: users can choose whether to turn on enhanced anti-spoofing.<p>True: Enhanced anti-spoofing is required on devices which support it.<p>False: Users cannot turn on enhanced anti-spoofing.|
+
+### PINComplexity
+
+|Policy|Scope|Default|Options|
+|--- |--- |--- |--- |
+|Digits |Device or user|1 |<p>0: Digits are allowed. <p>1: At least one digit is required.<p>2: Digits are not allowed.|
+|Lowercase letters |Device or user|2|<p>0: Lowercase letters are allowed. <p>1: At least one lowercase letter is required.<p>2: Lowercase letters are not allowed.|
+|Special characters|Device or user|2|<p>0: Special characters are allowed. <p>1: At least one special character is required. <p>2: Special characters are not allowed.|
+|Uppercase letters|Device or user|2|<p>0: Uppercase letters are allowed. <p>1: At least one uppercase letter is required.<p>2: Uppercase letters are not allowed.|
+|Maximum PIN length |Device or user|127 |<p>Maximum length that can be set is 127. Maximum length cannot be less than minimum setting.|
+|Minimum PIN length|Device or user|4|<p>Minimum length that can be set is 4. Minimum length cannot be greater than maximum setting.|
+|Expiration |Device or user|0|<p>Integer value specifies the period of time (in days) that a PIN can be used before the system requires the user to change it. The largest number you can configure for this policy setting is 730. The lowest number you can configure for this policy setting is 0. If this policy is set to 0, then the user's PIN will never expire.|
+|History|Device or user|0|<p>Integer value that specifies the number of past PINs that can be associated to a user account that can't be reused. The largest number you can configure for this policy setting is 50. The lowest number you can configure for this policy setting is 0. If this policy is set to 0, then storage of previous PINs is not required.|
+
+### Remote
+
+|Policy|Scope|Default|Options|
+|--- |--- |--- |--- |
+|UseRemotePassport|Device or user|False|Not currently supported.|
 
 >[!NOTE]
 > In Windows 10, version 1709 and later, if policy is not configured to explicitly require letters or special characters, users can optionally set an alphanumeric PIN. Prior to version 1709 the user is required to set a numeric PIN.
@@ -379,7 +123,7 @@ All PIN complexity policies, are grouped separately from feature enablement and 
 
 >[!NOTE]
 > Windows Hello for Business policy conflict resolution logic does not respect the ControlPolicyConflict/MDMWinsOverGP policy in the Policy CSP.
-
+>
 ><b>Examples</b>
 >
 >The following are configured using computer Group Policy:

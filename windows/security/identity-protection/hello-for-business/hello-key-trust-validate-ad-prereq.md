@@ -2,7 +2,7 @@
 title: Key registration for on-premises deployment of Windows Hello for Business
 description: How to Validate Active Directory prerequisites for Windows Hello for Business when deploying with the key trust model.
 keywords: identity, PIN, biometric, Hello, passport
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile

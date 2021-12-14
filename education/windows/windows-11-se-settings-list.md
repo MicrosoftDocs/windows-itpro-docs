@@ -62,6 +62,45 @@ The following settings can't be changed.
 | Administrative tools  | Administrative tools, such as the command prompt and Windows PowerShell, can't be opened. Windows PowerShell scripts deployed using Microsoft Endpoint Manager can run. |
 | Apps  | Only certain apps are allowed to run on Windows 11 SE. For more info on what apps can run on Windows 11 SE, see [Windows 11 SE for Education overview](windows-11-se-overview.md).  |
 
+## What's available in the Settings app
+
+On Windows 11 SE devices, the Settings app shows the following setting pages. Depending on the hardware, some setting pages might not be shown.
+
+- Accessibility
+
+- Accounts
+  - Email & accounts
+
+- Apps
+
+- Bluetooth & devices
+  - Bluetooth
+  - Printers & scanners
+  - Mouse
+  - Touchpad
+  - Typing
+  - Pen
+  - AutoPlay
+
+- Network & internet
+  - WiFi
+  - VPN
+
+- Personalization
+  - Taskbar
+
+- Privacy & security
+
+- System
+  - Display
+  - Notifications
+  - Tablet mode
+  - Multitasking
+  - Projecting to this PC
+
+- Time & Language
+  - Language & region
+
 ## Next steps
 
 [Windows 11 SE for Education overview](windows-11-se-overview.md)

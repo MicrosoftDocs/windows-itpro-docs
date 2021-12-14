@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 06/25/2018
 ms.collection: highpri
 ---
@@ -36,12 +36,12 @@ To help diagnose enrollment or device management issues in Windows 10 devices m
 You can also collect the MDM Diagnostic Information logs using the following command:
 
 ```xml
-mdmdiagnosticstool.exe -area DeviceEnrollment;DeviceProvisioning;Autopilot -cab c:\users\public\documents\MDMDiagReport.cab
+mdmdiagnosticstool.exe -area DeviceEnrollment;DeviceProvisioning;Autopilot -zip c:\users\public\documents\MDMDiagReport.zip
 ```
 -   In File Explorer, navigate to c:\Users\Public\Documents\MDMDiagnostics to see the report.
 
-### Understanding cab structure
-The cab file will have logs according to the areas that were used in the command. This explanation is based on DeviceEnrollment, DeviceProvisioning and Autopilot areas. It applies to the cab files collected via command line or Feedback Hub
+### Understanding zip structure
+The zip file will have logs according to the areas that were used in the command. This explanation is based on DeviceEnrollment, DeviceProvisioning and Autopilot areas. It applies to the zip files collected via command line or Feedback Hub
 
 -   DiagnosticLogCSP_Collector_Autopilot_*: Autopilot etls
 -   DiagnosticLogCSP_Collector_DeviceProvisioning_*: Provisioning etls (Microsoft-Windows-Provisioning-Diagnostics-Provider)

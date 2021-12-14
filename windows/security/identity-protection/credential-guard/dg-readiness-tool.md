@@ -1,7 +1,7 @@
 ---
 title: Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool
 description: Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool script
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
