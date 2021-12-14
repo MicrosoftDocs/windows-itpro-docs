@@ -43,7 +43,7 @@ When troubleshooting basic Start issues (and for the most part, all other Window
   - `get-AppXPackage -Name Microsoft.Windows.ShellExperienceHost`
   - `get-AppXPackage -Name Microsoft.Windows.Cortana`
 
-    ![Example of output from cmdlets.](images/start-ts-1.png)
+     :::image type="content" alt-text="Example of output from cmdlets." source="images/start-ts-1.png" lightbox="images/start-ts-1.png":::
 
     Failure messages will appear if they aren't installed
 
@@ -189,7 +189,7 @@ Events for both PDC and Background Tasks Infrastructure Service will be recorded
 
 ### Symptom: Application tiles like Alarm, Calculator, and Edge are missing from Start menu and the Settings app fails to open on Windows 10, version 1709 when a local user profile is deleted
 
-![Screenshots that show download icons on app tiles and missing app tiles.](images/start-ts-2.png)
+:::image type="content" alt-text="Screenshots that show download icons on app tiles and missing app tiles." source="images/start-ts-2.png" lightbox="images/start-ts-2.png":::
 
 **Cause**: This issue is known. The first-time sign-in experience is not detected and does not trigger the install of some apps.
 
@@ -280,7 +280,7 @@ Additionally, users may see blank tiles if sign-in was attempted without network
 
 ### Symptom: Start Menu issues with Tile Data Layer corruption 
 
-**Cause**: Windows 10, version 1507 through the release of version 1607 uses a database for the Tile image information. This is called the Tile Data Layer database. (The feature was deprecated in [Windows 10 1703](https://support.microsoft.com/help/4014193/features-that-are-removed-or-deprecated-in-windows-10-creators-update).) 
+**Cause**: Windows 10, version 1507 through the release of version 1607 uses a database for the Tile image information. This is called the Tile Data Layer database. (The feature was deprecated in [Windows 10 1703](/windows/deployment/planning/windows-10-removed-features).) 
 
 **Resolution** There are steps you can take to fix the icons, first is to confirm that is the issue that needs to be addressed.
 
@@ -293,9 +293,9 @@ Additionally, users may see blank tiles if sign-in was attempted without network
 >[!Note]
 >Corruption recovery removes any manual pins from Start. Apps should still be visible, but you’ll need to re-pin any secondary tiles and/or pin app tiles to the main Start view. Aps that you have installed that are completely missing from “all apps” is unexpected, however. That implies the re-registration didn’t work.
 
-- Open a command prompt, and run the following command:
+Open a command prompt, and run the following command:
 
-```
+```console
 C:\Windows\System32\tdlrecover.exe -reregister -resetlayout -resetcache
 ```
 
