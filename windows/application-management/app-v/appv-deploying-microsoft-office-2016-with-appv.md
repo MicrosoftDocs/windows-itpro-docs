@@ -63,7 +63,7 @@ The computer on which you are installing the Office Deployment Tool must have th
 
 | Prerequisite     | Description    |
 |----------------------|--------------------|
-| Prerequisite software    | .Net Framework 4    |
+| Prerequisite software    | .NET Framework 4    |
 | Supported operating systems | 64-bit version of Windows 10/11<br>64-bit version of Windows 8 or 8.1<br>64-bit version of Windows 7 |
 
 >[!NOTE]
