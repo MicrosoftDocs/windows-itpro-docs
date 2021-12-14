@@ -3,7 +3,7 @@ title: Windows Hello for Business Deployment Known Issues
 description: A Troubleshooting Guide for Known Windows Hello for Business Deployment Issues
 keywords: identity, PIN, biometric, Hello, passport
 params: siblings_only
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile

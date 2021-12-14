@@ -2,7 +2,7 @@
 title: MICROSOFT WINDOWS DIAGNOSTIC DATA FOR POWERSHELL
 description: MICROSOFT SOFTWARE LICENSE TERMS
 keywords: privacy, license, terms
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +13,10 @@ ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 11/16/2018
+ms.date: 11/29/2021
 ms.reviewer: 
 robots: noindex,nofollow
+ms.technology: privacy
 ---
 
 # Microsoft Windows diagnostic data for PowerShell license terms
@@ -24,13 +25,13 @@ MICROSOFT SOFTWARE LICENSE TERMS
 
 MICROSOFT WINDOWS DIAGNOSTIC DATA FOR POWERSHELL
 
-These license terms are an agreement between you and Microsoft Corporation (or one of its affiliates). They apply to the software named above and any Microsoft services or software updates (except to the extent such services or updates are accompanied by new or additional terms, in which case those different terms apply prospectively and do not alter your or Microsoft’s rights relating to pre-updated software or services). IF YOU COMPLY WITH THESE LICENSE TERMS, YOU HAVE THE RIGHTS BELOW. BY USING THE SOFTWARE, YOU ACCEPT THESE TERMS.
+These license terms are an agreement between you and Microsoft Corporation (or one of its affiliates). They apply to the software named above and any Microsoft services or software updates (except to the extent such services or updates are accompanied by new or another terms, in which case those different terms apply prospectively and don't alter your or Microsoft’s rights relating to pre-updated software or services). IF YOU COMPLY WITH THESE LICENSE TERMS, YOU HAVE THE RIGHTS BELOW. BY USING THE SOFTWARE, YOU ACCEPT THESE TERMS.
 
 1. INSTALLATION AND USE RIGHTS.
 
 a) General. You may install and use any number of copies of the software.
 
-b) Third Party Software. The software may include third party applications that Microsoft, not the third party, licenses to you under this agreement. Any included notices for third party applications are for your information only.
+b) Third-Party Software. The software may include third-party applications that Microsoft, not the third party, licenses to you under this agreement. Any included notices for third-party applications are for your information only.
 
 2. DATA COLLECTION. The software may collect information about you and your use of the software and send that to Microsoft. Microsoft may use this information to provide services and improve Microsoft’s products and services. Your opt-out rights, if any, are described in the product documentation. Some features in the software may enable collection of data from users of your applications that access or use the software. If you use these features to enable data collection in your applications, you must comply with applicable law, including getting any required user consent, and maintain a prominent privacy policy that accurately informs users about how you use, collect, and share their data. You can learn more about Microsoft’s data collection and use in the product documentation and the Microsoft Privacy Statement at https://go.microsoft.com/fwlink/?LinkId=512132. You agree to comply with all applicable provisions of the Microsoft Privacy Statement.
 
@@ -38,7 +39,7 @@ b) Third Party Software. The software may include third party applications that 
 
 a) work around any technical limitations in the software that only allow you to use it in certain ways;
 
-b) reverse engineer, decompile or disassemble the software;
+b) reverse engineer, decompile, or disassemble the software;
 
 c) remove, minimize, block, or modify any notices of Microsoft or its suppliers in the software;
 
@@ -46,7 +47,9 @@ d) use the software in any way that is against the law or to create or propagate
 
 e) share, publish, distribute, or lend the software, provide the software as a stand-alone hosted solution for others to use, or transfer the software or this agreement to any third party.
 
-4. EXPORT RESTRICTIONS. You must comply with all domestic and international export laws and regulations that apply to the software, which include restrictions on destinations, end users, and end use. For further information on export restrictions, visit https://aka.ms/exporting.
+4. EXPORT RESTRICTIONS. You must comply with all domestic and international export laws and regulations that apply to the software, which include restrictions on destinations, end users, and end use. 
+
+     For further information on export restrictions, visit https://aka.ms/exporting.
 
 5. SUPPORT SERVICES. Microsoft is not obligated under this agreement to provide any support services for the software. Any support provided is “as is”, “with all faults”, and without warranty of any kind.
 
@@ -58,13 +61,13 @@ e) share, publish, distribute, or lend the software, provide the software as a s
 
 a) Australia. You have statutory guarantees under the Australian Consumer Law and nothing in this agreement is intended to affect those rights.
 
-b) Canada. If you acquired this software in Canada, you may stop receiving updates by turning off the automatic update feature, disconnecting your device from the Internet (if and when you re-connect to the Internet, however, the software will resume checking for and installing updates), or uninstalling the software. The product documentation, if any, may also specify how to turn off updates for your specific device or software.
+b) Canada. If you acquired this software in Canada, you may stop receiving updates by turning off the automatic update feature, disconnecting your device from the Internet (if and when you reconnect to the Internet, however, the software will resume checking for and installing updates), or uninstalling the software. The product documentation, if any, may also specify how to turn off updates for your specific device or software.
 
 c) Germany and Austria.
 
 i. Warranty. The properly licensed software will perform substantially as described in any Microsoft materials that accompany the software. However, Microsoft gives no contractual guarantee in relation to the licensed software.
 
-ii. Limitation of Liability. In case of intentional conduct, gross negligence, claims based on the Product Liability Act, as well as, in case of death or personal or physical injury, Microsoft is liable according to the statutory law.
+ii. Limitation of Liability. In case of intentional conduct, gross negligence, claims based on the Product Liability Act, and, in case of death or personal or physical injury, Microsoft is liable according to the statutory law.
 
 Subject to the foregoing clause ii., Microsoft will only be liable for slight negligence if Microsoft is in breach of such material contractual obligations, the fulfillment of which facilitate the due performance of this agreement, the breach of which would endanger the purpose of this agreement and the compliance with which a party may constantly trust in (so-called "cardinal obligations"). In other cases of slight negligence, Microsoft will not be liable for slight negligence.
 
@@ -72,13 +75,13 @@ Subject to the foregoing clause ii., Microsoft will only be liable for slight ne
 
 10. LIMITATION ON AND EXCLUSION OF DAMAGES. IF YOU HAVE ANY BASIS FOR RECOVERING DAMAGES DESPITE THE PRECEDING DISCLAIMER OF WARRANTY, YOU CAN RECOVER FROM MICROSOFT AND ITS SUPPLIERS ONLY DIRECT DAMAGES UP TO U.S. $5.00. YOU CANNOT RECOVER ANY OTHER DAMAGES, INCLUDING CONSEQUENTIAL, LOST PROFITS, SPECIAL, INDIRECT OR INCIDENTAL DAMAGES.
 
-This limitation applies to (a) anything related to the software, services, content (including code) on third party Internet sites, or third party applications; and (b) claims for breach of contract, warranty, guarantee, or condition; strict liability, negligence, or other tort; or any other claim; in each case to the extent permitted by applicable law.
+This limitation applies to (a) anything related to the software, services, content (including code) on third-party Internet sites, or third-party applications; and (b) claims for breach of contract, warranty, guarantee, or condition; strict liability, negligence, or other tort; or any other claim; in each case to the extent permitted by applicable law.
 
 It also applies even if Microsoft knew or should have known about the possibility of the damages. The above limitation or exclusion may not apply to you because your state, province, or country may not allow the exclusion or limitation of incidental, consequential, or other damages.
 
 
 
-Please note: As this software is distributed in Canada, some of the clauses in this agreement are provided below in French.
+Note that as this software is distributed in Canada, some of the clauses in this agreement are provided below in French.
 
 Remarque: Ce logiciel étant distribué au Canada, certaines des clauses dans ce contrat sont fournies ci-dessous en français.
 

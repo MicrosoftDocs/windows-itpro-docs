@@ -4,7 +4,7 @@ description: Learn how to minimize connections from Windows to Microsoft service
 ms.assetid: ACCEB0DD-BC6F-41B1-B359-140B242183D9
 ms.reviewer:
 keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2016
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
@@ -12,9 +12,12 @@ audience: ITPro
 author: tomlayson
 ms.author: tomlayson
 manager: riche
-ms.collection: M365-security-compliance
+ms.collection:
+  - M365-security-compliance
+  - highpri
 ms.topic: article
-ms.date: 5/21/2021
+ms.date: 11/29/2021
+ms.technology: privacy
 ---
 
 # Manage connections from Windows 10 and Windows 11 operating system components to Microsoft services
@@ -28,7 +31,7 @@ ms.date: 5/21/2021
 
 This article describes the network connections that Windows 10 and Windows 11 components make to Microsoft and the Windows Settings, Group Policies and registry settings available to IT Professionals to help manage the data shared with Microsoft. If you want to minimize connections from Windows to Microsoft services, or configure privacy settings, there are a number of settings for consideration. For example, you can configure diagnostic data to the lowest level for your edition of Windows and evaluate other connections Windows makes to Microsoft services you want to turn off using the instructions in this article. While it is possible to minimize network connections to Microsoft, there are many reasons why these communications are enabled by default, such as updating malware definitions and maintaining current certificate revocation lists. This data helps us deliver a secure, reliable, and up-to-date experience.
 
-Microsoft provides a [Windows Restricted Traffic Limited Functionality Baseline](https://go.microsoft.com/fwlink/?linkid=828887) package that will allow your organization to quickly configure the settings covered in this document to restrict connections from Windows 10 and Windows 11 to Microsoft. The Windows Restricted Traffic Limited Baseline is based on [Group Policy Administrative Template](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra) functionality and the package you download contains further instructions on how to deploy to devices in your organization. Since some of the settings can reduce the functionality and security configuration of your device, **before deploying Windows Restricted Traffic Limited Functionality Baseline** make sure you **choose the right settings configuration for your environment** and **ensure that Windows and Microsoft Defender Antivirus are fully up to date**. Failure to do so may result in errors or unexpected behavior. You should not extract this package to the windows\system32 folder because it will not apply correctly.
+Microsoft provides a [Windows Restricted Traffic Limited Functionality Baseline](https://go.microsoft.com/fwlink/?linkid=828887) package that will allow your organization to quickly configure the settings covered in this document to restrict connections from Windows 10 and Windows 11 to Microsoft. The Windows Restricted Traffic Limited Baseline is based on [Group Policy Administrative Template](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) functionality and the package you download contains further instructions on how to deploy to devices in your organization. Since some of the settings can reduce the functionality and security configuration of your device, **before deploying Windows Restricted Traffic Limited Functionality Baseline** make sure you **choose the right settings configuration for your environment** and **ensure that Windows and Microsoft Defender Antivirus are fully up to date**. Failure to do so may result in errors or unexpected behavior. You should not extract this package to the windows\system32 folder because it will not apply correctly.
 
 > [!IMPORTANT]
 > - The downloadable Windows 10, version 1903 scripts/settings can be used on Windows 10, version 1909 devices.
@@ -420,7 +423,7 @@ To turn off Insider Preview builds for Windows 10 and Windows 11:
 ### <a href="" id="bkmk-ie"></a>8. Internet Explorer
 
 > [!NOTE]
-> When attempting to use Internet Explorer on any edition of Windows Server be aware there are restrictions enforced by [Enhanced Security Configuration (ESC)](https://support.microsoft.com/help/815141/ie-enhanced-security-configuration-changes-browsing-experience). The following Group Policies and Registry Keys are for user interactive scenarios rather than the typical idle traffic scenario. Find the Internet Explorer Group Policy objects under **Computer Configuration > Administrative Templates > Windows Components > Internet Explorer** and make these settings:
+> When attempting to use Internet Explorer on any edition of Windows Server be aware there are restrictions enforced by [Enhanced Security Configuration (ESC)](/troubleshoot/browsers/enhanced-security-configuration-faq). The following Group Policies and Registry Keys are for user interactive scenarios rather than the typical idle traffic scenario. Find the Internet Explorer Group Policy objects under **Computer Configuration > Administrative Templates > Windows Components > Internet Explorer** and make these settings:
 
 | Policy                                               | Description                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|

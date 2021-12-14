@@ -13,6 +13,7 @@ ms.date: 09/14/2021
 ms.reviewer: 
 manager: dansimp
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Connect to remote Azure Active Directory-joined PC
@@ -20,7 +21,7 @@ ms.topic: article
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 - Windows 11
 
 
@@ -72,7 +73,7 @@ Ensure [Remote Credential Guard](/windows/access-protection/remote-credential-gu
          > When you connect to the remote PC, enter your account name in this format: AzureAD\yourloginid@domain.com.
 
          > [!NOTE]
-         > If you cannot connect using Remote Desktop Connection 6.0, you must turn off the new features of RDP 6.0 and revert back to RDP 5.0 by making a few changes in the RDP file. See the details in this [support article](https://support.microsoft.com/help/941641/remote-desktop-connection-6-0-prompts-you-for-credentials-before-you-e).
+         > If you cannot connect using Remote Desktop Connection 6.0, you must turn off the new features of RDP 6.0 and revert back to RDP 5.0 by making a few changes in the RDP file. See the details in this [support article](/troubleshoot/windows-server/remote/remote-desktop-connection-6-prompts-credentials).
 
 ## Supported configurations
 

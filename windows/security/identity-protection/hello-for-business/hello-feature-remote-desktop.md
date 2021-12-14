@@ -2,7 +2,7 @@
 title: Remote Desktop
 description: Learn how Windows Hello for Business supports using biometrics with remote desktop
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, cert-trust, device, registration, unlock, remote desktop, RDP
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile

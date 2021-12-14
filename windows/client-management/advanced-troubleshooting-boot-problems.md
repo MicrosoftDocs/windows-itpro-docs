@@ -10,6 +10,7 @@ ms.date: 11/16/2018
 ms.reviewer: 
 manager: dansimp
 ms.topic: troubleshooting
+ms.collection: highpri
 ---
 
 # Advanced troubleshooting for Windows boot problems
@@ -230,7 +231,7 @@ If Windows cannot load the system registry hive into memory, you must restore th
 If the problem persists, you may want to restore the system state backup to an alternative location, and then retrieve the registry hives to be replaced.
 
 > [!NOTE]
-> Starting in Windows 10, version 1803, Windows no longer automatically backs up the system registry to the RegBack folder.This change is by design, and is intended to help reduce the overall disk footprint size of Windows. To recover a system with a corrupt registry hive, Microsoft recommends that you use a system restore point. For more details, check [this article](https://support.microsoft.com/en-us/help/4509719/the-system-registry-is-no-longer-backed-up-to-the-regback-folder-start).
+> Starting in Windows 10, version 1803, Windows no longer automatically backs up the system registry to the RegBack folder.This change is by design, and is intended to help reduce the overall disk footprint size of Windows. To recover a system with a corrupt registry hive, Microsoft recommends that you use a system restore point. For more details, check [this article](/troubleshoot/windows-client/deployment/system-registry-no-backed-up-regback-folder)
 
 ## Kernel Phase
 
@@ -413,4 +414,4 @@ If the dump file shows an error that is related to a driver (for example, window
         5. Copy all the hives from the Regback folder, paste them in the Config folder, and then try to start the computer in Normal mode.
 
 > [!NOTE]
-> Starting in Windows 10, version 1803, Windows no longer automatically backs up the system registry to the RegBack folder.This change is by design, and is intended to help reduce the overall disk footprint size of Windows. To recover a system with a corrupt registry hive, Microsoft recommends that you use a system restore point. For more details, check [this article](https://support.microsoft.com/en-us/help/4509719/the-system-registry-is-no-longer-backed-up-to-the-regback-folder-start).
+> Starting in Windows 10, version 1803, Windows no longer automatically backs up the system registry to the RegBack folder.This change is by design, and is intended to help reduce the overall disk footprint size of Windows. To recover a system with a corrupt registry hive, Microsoft recommends that you use a system restore point. For more details, check [this article](/troubleshoot/windows-client/deployment/system-registry-no-backed-up-regback-folder).

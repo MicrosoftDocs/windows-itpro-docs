@@ -8,9 +8,10 @@ itproauthor: jaimeo
 ms.audience: itpro
 author: jaimeo
 ms.reviewer: kaushika
-manager: laurawi
+manager: dougeby
 ms.topic: troubleshooting
 ms.custom: seo-marvel-apr2020
+ms.collection: highpri
 ---
 
 # Windows Update common errors and mitigation
@@ -98,7 +99,7 @@ The following table provides information about common errors you might run into 
 
 | Message | Description | Mitigation |
 |---------|-------------|------------|
-| WU_E_SETUP_SKIP_UPDATE | An update to the Windows Update Agent was skipped due to a directive in the Wuident.cab file. | You might encounter this error when WSUS is not sending the self-update to the clients.<br><br>Review [KB920659](https://support.microsoft.com/help/920659/the-microsoft-windows-server-update-services-wsus-selfupdate-service-d) for instructions to resolve the issue. |
+| WU_E_SETUP_SKIP_UPDATE | An update to the Windows Update Agent was skipped due to a directive in the Wuident.cab file. | You might encounter this error when WSUS is not sending the self-update to the clients.<br><br>Review [KB920659](/troubleshoot/windows-server/deployment/wsus-selfupdate-not-send-automatic-updates) for instructions to resolve the issue. |
 
 ## 0x80244007
 
