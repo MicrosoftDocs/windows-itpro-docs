@@ -43,7 +43,7 @@ When troubleshooting basic Start issues (and for the most part, all other Window
   - `get-AppXPackage -Name Microsoft.Windows.ShellExperienceHost`
   - `get-AppXPackage -Name Microsoft.Windows.Cortana`
 
-    ![Example of output from cmdlets.](images/start-ts-1.png)
+     :::image type="content" alt-text="Example of output from cmdlets." source="images/start-ts-1.png" lightbox="images/start-ts-1.png":::
 
     Failure messages will appear if they aren't installed
 
@@ -189,7 +189,7 @@ Events for both PDC and Background Tasks Infrastructure Service will be recorded
 
 ### Symptom: Application tiles like Alarm, Calculator, and Edge are missing from Start menu and the Settings app fails to open on Windows 10, version 1709 when a local user profile is deleted
 
-![Screenshots that show download icons on app tiles and missing app tiles.](images/start-ts-2.png)
+:::image type="content" alt-text="Screenshots that show download icons on app tiles and missing app tiles." source="images/start-ts-2.png" lightbox="images/start-ts-2.png":::
 
 **Cause**: This issue is known. The first-time sign-in experience is not detected and does not trigger the install of some apps.
 

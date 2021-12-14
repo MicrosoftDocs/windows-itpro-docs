@@ -44,7 +44,7 @@ If you want to use UE-V to synchronize user-defined settings for custom applicat
 
 The workflow diagram below illustrates a typical UE-V deployment and the decisions you need to be prepared to make.
 
-![UE-V deployment preparation.](images/uev-deployment-preparation.png)
+:::image type="content" alt-text="UE-V deployment preparation." source="images/uev-deployment-preparation.png":::
 
 <!-- PRESERVING ^ORIGINAL IMAGE CODING JUST IN CASE
 <img src="media/image1.png" width="446" height="362" />

@@ -38,7 +38,7 @@ Before getting in to troubleshooting the <em>*RPC server unavailable</em>- error
 
 Client A wants to execute some functions or wants to make use of a service running on the remote server, will first establish the connection with the Remote Server by doing a three-way handshake.  
 
-![Diagram illustrating connection to remote server.](images/rpc-flow.png)
+:::image type="content" alt-text="Diagram illustrating connection to remote server." source="images/rpc-flow.png" lightbox="images/rpc-flow.png":::
 
 RPC ports can be given from a specific range as well.
 ### Configure RPC dynamic port allocation
@@ -163,13 +163,13 @@ Open the traces in [Microsoft Network Monitor 3.4](troubleshoot-tcpip-netmon.md)
 
 - Now check if you are getting a response from the server. If you get a response, note the dynamic port number that you have been allocated to use.
 
-    ![Screenshot of Network Monitor with dynamic port highlighted.](images/tcp-ts-23.png)
+  :::image type="content" alt-text="Screenshot of Network Monitor with dynamic port highlighted." source="images/tcp-ts-23.png" lightbox="images/tcp-ts-23.png":::
 
 - Check if we are connecting successfully to this Dynamic port successfully.
 
 - The filter should be something like this: `tcp.port==<dynamic-port-allocated>` and `ipv4.address==<server-ip>` 
 
-    ![Screenshot of Network Monitor with filter applied.](images/tcp-ts-24.png)
+  :::image type="content" alt-text="Screenshot of Network Monitor with filter applied." source="images/tcp-ts-24.png" lightbox="images/tcp-ts-24.png":::
 
 This should help you verify the connectivity and isolate if any network issues are seen.
 
@@ -178,7 +178,7 @@ This should help you verify the connectivity and isolate if any network issues a
 
 The most common reason why we would see the RPC server unavailable is when the dynamic port that the client tries to connect is not reachable. The client side trace would then show TCP SYN retransmits for the dynamic port.
  
-![Screenshot of Network Monitor with TCP SYN retransmits.](images/tcp-ts-25.png)
+:::image type="content" alt-text="Screenshot of Network Monitor with TCP SYN retransmits." source="images/tcp-ts-25.png" lightbox="images/tcp-ts-25.png":::
  
 The port cannot be reachable due to one of the following reasons:
 
