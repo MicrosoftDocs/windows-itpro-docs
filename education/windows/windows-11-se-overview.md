@@ -20,7 +20,7 @@ ms.topic: article
 - Windows 11 SE
 - Microsoft Intune for Education
 
-Windows 11 SE is a new edition of Windows that's designed for education. It runs on web-first devices that use essential education apps. Microsoft Office 365 is preinstalled.
+Windows 11 SE is a new edition of Windows that's designed for education. It runs on web-first devices that use essential education apps. Microsoft Office 365 is preinstalled (subscription sold separately).
 
 For education customers seeking cost-effective devices, Microsoft Windows 11 SE is a great choice. Windows 11 SE includes the following benefits:
 

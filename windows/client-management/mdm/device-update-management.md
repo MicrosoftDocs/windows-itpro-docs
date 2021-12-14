@@ -9,7 +9,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 11/15/2017
 ms.collection: highpri
 ---

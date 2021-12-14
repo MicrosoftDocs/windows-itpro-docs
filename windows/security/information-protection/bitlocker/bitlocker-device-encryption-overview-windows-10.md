@@ -1,7 +1,7 @@
 ---
 title: Overview of BitLocker Device Encryption in Windows
 description: This topic provides an overview of how BitLocker Device Encryption can help protect data on devices running Windows.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
@@ -142,6 +142,6 @@ Part of the Microsoft Desktop Optimization Pack, MBAM makes it easier to manage 
 * Enforces the BitLocker encryption policy options that you set for your enterprise.
 * Integrates with existing management tools, such as Microsoft Endpoint Configuration Manager.
 * Offers an IT-customizable recovery user experience.
-* Supports Windows 11 and Windows 10.
+* Supports Windows 10.
 
 For more information about MBAM, including how to obtain it, see [Microsoft BitLocker Administration and Monitoring](/microsoft-desktop-optimization-pack/) on the MDOP TechCenter.
