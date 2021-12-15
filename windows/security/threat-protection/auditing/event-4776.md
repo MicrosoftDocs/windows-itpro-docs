@@ -86,7 +86,7 @@ This event does *not* generate when a domain account logs on locally to a domain
 
 > **Note**&nbsp;&nbsp;**Authentication package** is a DLL that encapsulates the authentication logic used to determine whether to permit a user to log on. [Local Security Authority](/windows/win32/secgloss/l-gly#_security_local_security_authority_gly) (LSA) authenticates a user logon by sending the request to an authentication package. The authentication package then examines the logon information and either authenticates or rejects the user logon attempt.
 
--   **Logon Account** \[Type = UnicodeString\]: the name of the account that had its credentials validated by the **Authentication Package**. Can be user name, computer account name or [well-known security principal](https://support.microsoft.com/kb/243330) account name. Examples:
+-   **Logon Account** \[Type = UnicodeString\]: the name of the account that had its credentials validated by the **Authentication Package**. Can be user name, computer account name or [well-known security principal](/windows/security/identity-protection/access-control/security-identifiers) account name. Examples:
 
     -   User example: dadmin
 

@@ -154,7 +154,7 @@ Go to Services.msc and ensure that Windows Firewall Service is enabled. Stopping
 ## Issues arising from configuration of conflicting policies 
 Windows Update provides a wide range configuration policy to control the behavior of the Windows Update service in a managed environment. While these policies let you configure the settings at a granular level, misconfiguration or setting conflicting policies may lead to unexpected behaviors. 
  
-For more information, see [How to configure automatic updates by using Group Policy or registry settings](https://support.microsoft.com/help/328010/how-to-configure-automatic-updates-by-using-group-policy-or-registry-s) for more information.
+For more information, see [How to configure automatic updates by using Group Policy or registry settings](/windows/deployment/update/waas-wu-settings) for more information.
 
 ## Device cannot access update files
 
