@@ -74,7 +74,7 @@ This following list provides info about the most common problems you might encou
   - **Workaround**: Migrate to use another file synchronization method, such as Work Folders or OneDrive for Business.
 
     > [!NOTE]
-    > For more info about Work Folders and Offline Files, see the [Work Folders and Offline Files support for Windows Information Protection blog](https://blogs.technet.microsoft.com/filecab/2016/08/29/work-folders-and-offline-files-support-for-windows-information-protection/)". If you're having trouble opening files offline while using Offline Files and WIP, see [Can't open files offline when you use Offline Files and Windows Information Protection](/troubleshoot/windows-client/networking/error-open-files-offline-offline-files-wip).
+    > For more info about Work Folders and Offline Files, see the [Work Folders and Offline Files support for Windows Information Protection blog](https://blogs.technet.microsoft.com/filecab/2016/08/29/work-folders-and-offline-files-support-for-windows-information-protection/). If you're having trouble opening files offline while using Offline Files and WIP, see [Can't open files offline when you use Offline Files and Windows Information Protection](/troubleshoot/windows-client/networking/error-open-files-offline-offline-files-wip).
 
 - **Limitation**: An unmanaged device can use Remote Desktop Protocol (RDP) to connect to a WIP-managed device.
   - **How it appears**: 
@@ -117,7 +117,7 @@ This following list provides info about the most common problems you might encou
   <br/>
 
   - **How it appears**: WIP isn’t turned on for employees in your organization. Error code 0x807c0008 will result if WIP is deployed by using Microsoft Endpoint Configuration Manager.
-  - **Workaround**: Don’t set the **MakeFolderAvailableOfflineDisabled** option to **False** for any of the specified folders.  You can configure this parameter, as described [here](/windows-server/storage/folder-redirection/disable-offline-files-on-folders)".
+  - **Workaround**: Don’t set the **MakeFolderAvailableOfflineDisabled** option to **False** for any of the specified folders.  You can configure this parameter, as described [Disable Offline Files on individual redirected folders](/windows-server/storage/folder-redirection/disable-offline-files-on-folders).
 
     If you currently use redirected folders, we recommend that you migrate to a file synchronization solution that supports WIP, such as Work Folders or OneDrive for Business. Additionally, if you apply redirected folders after WIP is already in place, you might be unable to open your files offline.
 
