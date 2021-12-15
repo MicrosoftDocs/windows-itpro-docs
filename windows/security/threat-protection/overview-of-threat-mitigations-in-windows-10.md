@@ -168,7 +168,7 @@ One of the most common techniques used to gain access to a system is to find a v
 
 Address Space Layout Randomization (ASLR) makes that type of attack much more difficult because it randomizes how and where important data is stored in memory. With ASLR, it is more difficult for malware to find the specific location it needs to attack. Figure 3 illustrates how ASLR works by showing how the locations of different critical Windows components can change in memory between restarts.
 
-![ASLR at work.](images/security-fig4-aslr.png)
+:::image type="content" alt-text="ASLR at work." source="images/security-fig4-aslr.png" lightbox="images/security-fig4-aslr.png":::
 
 **Figure 3.&nbsp;&nbsp;ASLR at work**
 
