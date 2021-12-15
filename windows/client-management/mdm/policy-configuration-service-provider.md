@@ -8871,6 +8871,14 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### WindowsAutoPilot policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-windowsautopilot.md#windowsautopilot-enableagilitypostenrollment" id="windowsautopilot-enableagilitypostenrollment">WindowsAutoPilot/EnableAgilityPostEnrollment</a>
+  </dd>
+</dl>
+
 ### WindowsConnectionManager policies
 
 <dl>
