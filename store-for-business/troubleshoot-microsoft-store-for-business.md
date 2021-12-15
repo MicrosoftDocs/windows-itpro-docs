@@ -56,7 +56,7 @@ The private store for your organization is a page in Microsoft Store app that co
 
 ## Troubleshooting Microsoft Store for Business integration with Microsoft Endpoint Configuration Manager
 
-If you encounter any problems when integrating Microsoft Store for Business with Configuration Manager, use the [troubleshooting guide](https://support.microsoft.com/help/4010214/understand-and-troubleshoot-microsoft-store-for-business-integration-w).
+If you encounter any problems when integrating Microsoft Store for Business with Configuration Manager, use the [troubleshooting guide](/troubleshoot/mem/configmgr/troubleshoot-microsoft-store-for-business-integration).
 
 ## Still having trouble?
 

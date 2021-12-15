@@ -831,8 +831,12 @@ items:
               href: policy-csp-update.md
             - name: UserRights
               href: policy-csp-userrights.md
+            - name: VirtualizationBasedTechnology
+              href: policy-csp-virtualizationbasedtechnology.md
             - name: Wifi
               href: policy-csp-wifi.md
+            - name: WindowsAutoPilot
+              href: policy-csp-windowsautopilot.md
             - name: WindowsConnectionManager
               href: policy-csp-windowsconnectionmanager.md
             - name: WindowsDefenderSecurityCenter

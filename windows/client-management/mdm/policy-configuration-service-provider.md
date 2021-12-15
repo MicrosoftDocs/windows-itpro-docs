@@ -8360,6 +8360,12 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-system.md#system-feedbackhubalwayssavediagnosticslocally" id="system-feedbackhubalwayssavediagnosticslocally">System/FeedbackHubAlwaysSaveDiagnosticsLocally</a>
   </dd>
   <dd>
+    <a href="./policy-csp-system.md#system-limitdiagnosticlogcollection" id="system-limitdiagnosticlogcollection">System/LimitDiagnosticLogCollection</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-system.md#system-limitdumpcollection" id="system-limitdumpcollection">System/LimitDumpCollection</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-system.md#system-limitenhanceddiagnosticdatawindowsanalytics" id="system-limitenhanceddiagnosticdatawindowsanalytics">System/LimitEnhancedDiagnosticDataWindowsAnalytics</a>
   </dd>
   <dd>
@@ -8449,6 +8455,9 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-textinput.md#textinput-allowlinguisticdatacollection" id="textinput-allowlinguisticdatacollection">TextInput/AllowLinguisticDataCollection</a>
   </dd>
   <dd>
+    <a href="./policy-csp-textinput.md#textinput-allowtextinputsuggestionupdate"id="textinput-allowtextinputsuggestionupdate">TextInput/AllowTextInputSuggestionUpdate</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-textinput.md#textinput-configurejapaneseimeversion"id="textinput-configurejapaneseimeversion">TextInput/ConfigureJapaneseIMEVersion</a>
   </dd>
   <dd>
@@ -8499,7 +8508,16 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 
 <dl>
   <dd>
+    <a href="./policy-csp-timelanguagesettings.md#timelanguagesettings-blockcleanupofunusedpreinstalledlangpacks" id="timelanguagesettings-blockcleanupofunusedpreinstalledlangpacks">TimeLanguageSettings/BlockCleanupOfUnusedPreinstalledLangPacks</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-timelanguagesettings.md#timelanguagesettings-configuretimezone" id="timelanguagesettings-configuretimezone">TimeLanguageSettings/ConfigureTimeZone</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-timelanguagesettings.md#timelanguagesettings-machineuilanguageoverwrite" id="timelanguagesettings-machineuilanguageoverwrite">TimeLanguageSettings/MachineUILanguageOverwrite</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-timelanguagesettings.md#timelanguagesettings-restrictlanguagepacksandfeaturesinstall" id="timelanguagesettings-restrictlanguagepacksandfeaturesinstall">TimeLanguageSettings/RestrictLanguagePacksAndFeaturesInstall</a>
   </dd>
 </dl>
 
@@ -8566,6 +8584,9 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-update.md#update-configuredeadlinegraceperiod" id="update-configuredeadlinegraceperiod">Update/ConfigureDeadlineGracePeriod</a>
   </dd>
   <dd>
+    <a href="./policy-csp-update.md#update-configuredeadlinegraceperiodforfeatureupdates" id="update-configuredeadlinegraceperiodforfeatureupdates">Update/ConfigureDeadlineGracePeriodForFeatureUpdates</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-update.md#update-configuredeadlinenoautoreboot" id="update-configuredeadlinenoautoreboot">Update/ConfigureDeadlineNoAutoReboot</a>
   </dd>
   <dd>
@@ -8591,6 +8612,9 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-update.md#update-disablewufbsafeguards" id="update-disablewufbsafeguards">Update/DisableWUfBSafeguards</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-donotenforceenterprisetlscertpinningforupdatedetection" id="update-donotenforceenterprisetlscertpinningforupdatedetection">Update/DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection</a>
   </dd>
   <dd>
     <a href="./policy-csp-update.md#update-engagedrestartdeadline" id="update-engagedrestartdeadline">Update/EngagedRestartDeadline</a>
@@ -8687,6 +8711,18 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-update.md#update-setedurestart" id="update-setedurestart">Update/SetEDURestart</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourcefordriver" id="update-setpolicydrivenupdatesourcefordriver">Update/SetPolicyDrivenUpdateSourceForDriver</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourceforfeature" id="update-setpolicydrivenupdatesourceforfeature">Update/SetPolicyDrivenUpdateSourceForFeature</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourceforother" id="update-setpolicydrivenupdatesourceforother">Update/SetPolicyDrivenUpdateSourceForOther</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourceforquality" id="update-setpolicydrivenupdatesourceforquality">Update/SetPolicyDrivenUpdateSourceForQuality</a>
   </dd>
   <dd> 
     <a href="./policy-csp-update.md#update-setproxybehaviorforupdatedetection"id="update-setproxybehaviorforupdatedetection">Update/SetProxyBehaviorForUpdateDetection</a> 
@@ -8798,6 +8834,17 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### VirtualizationBasedTechnology policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-virtualizationbasedtechnology.md#virtualizationbasedtechnology-hypervisorenforcedcodeintegrity" id="virtualizationbasedtechnology-hypervisorenforcedcodeintegrity">VirtualizationBasedTechnology/HypervisorEnforcedCodeIntegrity</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-virtualizationbasedtechnology.md#virtualizationbasedtechnology-requireuefimemoryattributestable" id="virtualizationbasedtechnology-requireuefimemoryattributestable">VirtualizationBasedTechnology/RequireUEFIMemoryAttributesTable</a>
+  </dd>
+</dl>
+
 ### Wifi policies
 
 <dl>
@@ -8821,6 +8868,14 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-wifi.md#wifi-wlanscanmode" id="wifi-wlanscanmode">Wifi/WLANScanMode</a>
+  </dd>
+</dl>
+
+### WindowsAutoPilot policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-windowsautopilot.md#windowsautopilot-enableagilitypostenrollment" id="windowsautopilot-enableagilitypostenrollment">WindowsAutoPilot/EnableAgilityPostEnrollment</a>
   </dd>
 </dl>
 
@@ -8979,6 +9034,9 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-wirelessdisplay.md#wirelessdisplay-allowmdnsdiscovery" id="wirelessdisplay-allowmdnsdiscovery">WirelessDisplay/AllowMdnsDiscovery</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-wirelessdisplay.md#wirelessdisplay-allowmovementdetectiononinfrastructure" id="wirelessdisplay-allowmovementdetectiononinfrastructure">WirelessDisplay/AllowMovementDetectionOnInfrastructure</a>
   </dd>
   <dd>
     <a href="./policy-csp-wirelessdisplay.md#wirelessdisplay-allowprojectionfrompc" id="wirelessdisplay-allowprojectionfrompc">WirelessDisplay/AllowProjectionFromPC</a>
