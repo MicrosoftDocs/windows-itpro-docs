@@ -571,6 +571,9 @@ The following list shows the supported values:
 <!--/SupportedValues-->
 <!--/Policy-->
 
+> [!IMPORTANT]
+> AllowOnAccessProtection is officially being deprecated.
+
 <hr/>
 
 <!--Policy-->
