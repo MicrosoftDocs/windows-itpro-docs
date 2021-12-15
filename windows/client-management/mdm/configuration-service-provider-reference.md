@@ -35,9 +35,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|No|No|No|No|No|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|No|No|No|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -47,9 +47,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|Yes|Yes|Yes|Yes|No|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -59,9 +59,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -71,9 +71,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|No|No|No|No|No|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|No|No|No|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -83,9 +83,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -95,9 +95,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -107,9 +107,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -119,9 +119,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|Yes|Yes|Yes|Yes|No|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -131,9 +131,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -143,9 +143,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -155,9 +155,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|No|No|No|No|No|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|No|No|No|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -167,9 +167,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -179,9 +179,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|No|No|No|No|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|No|No|No|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -191,9 +191,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -203,9 +203,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -215,9 +215,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -227,9 +227,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -239,9 +239,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|No|Yes|Yes|Yes|No|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|No|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -251,9 +251,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -263,9 +263,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|No|No|No|No|No|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|No|No|No|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -275,9 +275,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -287,9 +287,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -299,9 +299,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|No|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -311,9 +311,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -323,9 +323,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -335,9 +335,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|No|No|No|No|No|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|No|No|No|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -347,9 +347,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|No|No|No|No|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|No|No|No|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -359,9 +359,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|No|No|No|No|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|No|No|No|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -371,9 +371,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -383,9 +383,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -395,9 +395,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -407,9 +407,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|No|No|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|No|No|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -419,9 +419,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -431,9 +431,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|No|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -443,9 +443,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -455,9 +455,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|No|No|No|No|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|No|No|No|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -467,9 +467,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|No|No|Yes|Yes|No|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|No|No|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -479,9 +479,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|No|No|No|No|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|No|No|No|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -491,9 +491,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes<br> [Only for mobile application management (MAM)](/windows/client-management/mdm/implement-server-side-mobile-application-management#integration-with-windows-information-protection)|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes<br> [Only for mobile application management (MAM)](/windows/client-management/mdm/implement-server-side-mobile-application-management#integration-with-windows-information-protection)|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -503,9 +503,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|Yes|Yes|Yes|Yes|No|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -515,10 +515,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|No|No|No|No|Yes|
-
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|No|No|No|No|
 <!--EndSKU-->
 <!--EndCSP-->
 
@@ -527,9 +526,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|No|No|No|No|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|No|No|No|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -539,9 +538,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -551,9 +550,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -563,9 +562,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|No|No|No|No|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|No|No|No|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -575,9 +574,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|Yes|Yes|Yes|Yes|No|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -587,9 +586,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -599,9 +598,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -611,9 +610,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|Mobile Enterprise|
-|--- |--- |--- |--- |--- |--- |--- |
-|Yes|Yes|No|Yes|Yes|No|No|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|No|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -622,9 +621,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|No|No|No|No|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|No|No|No|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -634,9 +633,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|No|No|No|No|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|No|No|No|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -646,9 +645,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -658,9 +657,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -670,9 +669,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -682,9 +681,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -694,9 +693,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -706,9 +705,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -718,9 +717,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|Yes|Yes|Yes|Yes|No|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -730,9 +729,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -742,9 +741,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -754,9 +753,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -766,9 +765,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|No|No|Yes|Yes|No|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|No|No|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -778,9 +777,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -790,9 +789,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|No|No|No|No|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|No|No|No|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -802,9 +801,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -814,9 +813,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -826,9 +825,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|No|No|No|No|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|No|No|No|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -838,9 +837,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -850,9 +849,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|No|No|No|No|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|No|No|No|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -862,9 +861,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|No|No|No|No|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|No|No|No|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -874,9 +873,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -886,9 +885,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -898,9 +897,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -910,9 +909,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -922,9 +921,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|Yes|Yes|Yes|Yes|No|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -934,9 +933,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -946,9 +945,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|Yes|Yes|Yes|Yes|No|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -958,9 +957,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -970,9 +969,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|||||||
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+||||||
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -982,9 +981,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|Yes|Yes|Yes|Yes|No|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -994,9 +993,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1006,9 +1005,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|Yes|Yes|Yes|Yes|No|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1018,9 +1017,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|No|Yes|Yes|Yes|No|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|No|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1030,9 +1029,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1042,9 +1041,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|No|No|No|No|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|No|No|No|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1054,9 +1053,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1066,9 +1065,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-||||||Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+||||||
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1078,9 +1077,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1090,9 +1089,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|Yes|Yes|Yes|Yes|No|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1102,9 +1101,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|Yes|Yes|Yes|Yes|No|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1114,9 +1113,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|Yes|Yes|Yes|Yes|No|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1126,9 +1125,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|Yes|Yes|Yes|Yes|No|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1139,9 +1138,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1151,9 +1150,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|No|No|No|No|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|No|No|No|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1163,9 +1162,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|Yes|Yes|Yes|Yes|Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1175,9 +1174,9 @@ Additional lists:
 
 <!--StartSKU-->
 
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-||||||Yes|
+|Home|Pro|Business|Enterprise|Education|
+|--- |--- |--- |--- |--- |
+||||||
 
 <!--EndSKU-->
 <!--EndCSP-->

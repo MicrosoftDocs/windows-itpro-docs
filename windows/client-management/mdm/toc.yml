@@ -257,20 +257,11 @@ items:
           items: 
             - name: EnterpriseAPN DDF
               href: enterpriseapn-ddf.md
-        - name: EnterpriseAppManagement CSP
-          href: enterpriseappmanagement-csp.md
         - name: EnterpriseAppVManagement CSP
           href: enterpriseappvmanagement-csp.md
           items: 
             - name: EnterpriseAppVManagement DDF file
               href: enterpriseappvmanagement-ddf.md
-        - name: EnterpriseAssignedAccess CSP
-          href: enterpriseassignedaccess-csp.md
-          items: 
-            - name: EnterpriseAssignedAccess DDF file
-              href: enterpriseassignedaccess-ddf.md
-            - name: EnterpriseAssignedAccess XSD
-              href: enterpriseassignedaccess-xsd.md
         - name: EnterpriseDataProtection CSP
           href: enterprisedataprotection-csp.md
           items: 
@@ -283,16 +274,6 @@ items:
               href: enterprisedesktopappmanagement-ddf-file.md
             - name: EnterpriseDesktopAppManagement XSD
               href: enterprisedesktopappmanagement2-xsd.md
-        - name: EnterpriseExt CSP
-          href: enterpriseext-csp.md
-          items: 
-            - name: EnterpriseExt DDF file
-              href: enterpriseext-ddf.md
-        - name: EnterpriseExtFileSystem CSP
-          href: enterpriseextfilessystem-csp.md
-          items: 
-            - name: EnterpriseExtFileSystem DDF file
-              href: enterpriseextfilesystem-ddf.md
         - name: EnterpriseModernAppManagement CSP
           href: enterprisemodernappmanagement-csp.md
           items: 
@@ -305,8 +286,6 @@ items:
           items: 
             - name: eUICCs DDF file
               href: euiccs-ddf-file.md
-        - name: FileSystem CSP
-          href: filesystem-csp.md
         - name: Firewall CSP
           href: firewall-csp.md
           items: 
@@ -317,13 +296,6 @@ items:
           items: 
             - name: HealthAttestation DDF
               href: healthattestation-ddf.md
-        - name: HotSpot CSP
-          href: hotspot-csp.md
-        - name: Maps CSP
-          href: maps-csp.md
-          items: 
-            - name: Maps DDF
-              href: maps-ddf-file.md
         - name: Messaging CSP
           href: messaging-csp.md
           items: 

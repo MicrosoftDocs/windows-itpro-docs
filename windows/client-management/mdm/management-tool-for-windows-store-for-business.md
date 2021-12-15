@@ -26,7 +26,7 @@ Here's the list of the available capabilities:
 -   License reclaim and re-use – Enables an enterprise to retain value in their purchases by allowing the ability to un-assign access to an application, and then reassign the application to another user. In Microsoft Store today, when a user with a Microsoft account leaves the organization he retains ownership of the application.
 -   Flexible distribution models for Microsoft Store apps – Allows the enterprise to integrate with an organization's infrastructure the processes to distribute applications to devices that are connected to Store for Business services and to devices without connectivity to the Store for Business services.
 -   Custom Line of Business app support –Enables management and distribution of enterprise applications through the Store for Business.
--   Support for Windows desktop and mobile devices - The Store for Business supports both desktop and mobile devices.
+-   Support for Windows client devices - The Store for Business supports client devices.
 
 For additional information about Store for Business, see the TechNet topics in [Microsoft Store for Business](/microsoft-store/).
 
