@@ -100,7 +100,7 @@ This is the Bring Your Own Device (BYOD) method--your device will receive Olympi
     
 3. Click **Connect**, then click **Join this device to Azure Active Directory**.
 
-    ![Joining device to Azure AD.]](images/2-3.png)
+    ![Joining device to Azure AD.](images/2-3.png)
 
 4. Enter your **Olympia corporate account** (e.g., username@olympia.windows.com). Click **Next**.
 
