@@ -74,6 +74,9 @@ ms.collection: highpri
     <a href="#update-configuredeadlinegraceperiod">Update/ConfigureDeadlineGracePeriod</a>
   </dd>
   <dd>
+    <a href="#update-configuredeadlinegraceperiodforfeatureupdates">Update/ConfigureDeadlineGracePeriodForFeatureUpdates</a>
+  </dd>
+  <dd>
     <a href="#update-configuredeadlinenoautoreboot">Update/ConfigureDeadlineNoAutoReboot</a>
   </dd>
   <dd>
@@ -99,6 +102,9 @@ ms.collection: highpri
   </dd>
   <dd>
     <a href="#update-disablewufbsafeguards">Update/DisableWUfBSafeguards</a>
+  </dd>
+  <dd>
+    <a href="#update-donotenforceenterprisetlscertpinningforupdatedetection">Update/DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection</a>
   </dd>
   <dd>
     <a href="#update-engagedrestartdeadline">Update/EngagedRestartDeadline</a>
@@ -195,6 +201,18 @@ ms.collection: highpri
   </dd>
   <dd>
     <a href="#update-setedurestart">Update/SetEDURestart</a>
+  </dd>
+  <dd>
+    <a href="#update-setpolicydrivenupdatesourcefordriver">Update/SetPolicyDrivenUpdateSourceForDriver</a>
+  </dd>
+  <dd>
+    <a href="#update-setpolicydrivenupdatesourceforfeature">Update/SetPolicyDrivenUpdateSourceForFeature</a>
+  </dd>
+  <dd>
+    <a href="#update-setpolicydrivenupdatesourceforother">Update/SetPolicyDrivenUpdateSourceForOther</a>
+  </dd>
+  <dd>
+    <a href="#update-setpolicydrivenupdatesourceforquality">Update/SetPolicyDrivenUpdateSourceForQuality</a>
   </dd>
   <dd>
     <a href="#update-setproxybehaviorforupdatedetection">Update/SetProxyBehaviorForUpdateDetection</a>
@@ -1109,6 +1127,53 @@ Default value is 2.
 <hr/>
 
 <!--Policy-->
+<a href="" id="update-configuredeadlinegraceperiodforfeatureupdates"></a>**Update/ConfigureDeadlineGracePeriodForFeatureUpdates**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Allows IT admins to set different grace periods for both Quality Updates and Feature Updates. Specifically, when used with used with [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates).
+
+IT Admins will be able to specify a minimum number of days until restarts occur automatically for Featur Updates. Setting the grace period may extend the effective deadline set by the deadline policies specifically for Feature Updates.
+
+<!--/Description-->
+
+<!--SupportedValues-->
+Supports a numeric value from 0 - 7, which indicates the minimum number of days.
+
+Default value is 2.
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="update-configuredeadlinenoautoreboot"></a>**Update/ConfigureDeadlineNoAutoReboot**  
 
 <!--SupportedSKUs-->
@@ -1567,6 +1632,56 @@ The following list shows the supported values:
 
 - 0 (default) - Safeguards are enabled and devices may be blocked for upgrades until the safeguard is cleared.
 - 1 - Safeguards are not enabled and upgrades will be deployed without blocking on safeguards.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-donotenforceenterprisetlscertpinningforupdatedetection"></a>**Update/DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+To ensure the highest levels of security, we recommended leveraging WSUS TLS certificate pinning on all devices. 
+
+By default, certificate pinning for Windows Update client is not enforced. 
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *Allow user proxy to be used as a fallback if detection using system proxy fails*
+-   GP name: *Allow user proxy to be used as a fallback if detection using system proxy fails*
+-   GP path: *Windows Update\SpecifyintranetMicrosoftupdateserviceLocation*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0 (default) -Do not enforce certificate pinning
+- 1 - Do not enforce certificate pinning
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -3190,6 +3305,229 @@ The following list shows the supported values:
 
 <hr/>
 
+<!--Policy-->
+<a href="" id="update-setpolicydrivenupdatesourcefordriver"></a>**Update/SetPolicyDrivenUpdateSourceForDriver**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Configure this policy to specify whether to receive Windows Driver Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
+
+If you configure this policy, please also configure the scan source policies for other update types:
+- SetPolicyDrivenUpdateSourceForFeature
+- SetPolicyDrivenUpdateSourceForQuality
+- SetPolicyDrivenUpdateSourceForOther
+
+>[!NOTE]
+>If you have not properly configured Update/UpdateServiceUrl correctly to point to your WSUS server, this policy will have no effect. 
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *Specify source service for specific classes of Windows Updates*
+-   GP name: *SetPolicyDrivenUpdateSourceForDriver*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0: (Default) Detect, download and deploy Driver from Windows Update 
+- 1: Enabled, Detect, download and deploy Driver from Windows Server Update Server (WSUS) 
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-setpolicydrivenupdatesourceforfeature"></a>**Update/SetPolicyDrivenUpdateSourceForFeature**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Configure this policy to specify whether to receive Windows Driver Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
+
+If you configure this policy, please also configure the scan source policies for other update types:
+- SetPolicyDrivenUpdateSourceForQuality
+- SetPolicyDrivenUpdateSourceForDriver
+- SetPolicyDrivenUpdateSourceForOther
+
+>[!NOTE]
+>If you have not properly configured Update/UpdateServiceUrl correctly to point to your WSUS server, this policy will have no effect. 
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *Specify source service for specific classes of Windows Updates*
+-   GP name: *SetPolicyDrivenUpdateSourceForFeature*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0: (Default) Detect, download and deploy Feature from Windows Update 
+- 1: Enabled, Detect, download and deploy Feature from Windows Server Update Server (WSUS) 
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-setpolicydrivenupdatesourceforother"></a>**Update/SetPolicyDrivenUpdateSourceForOther**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Configure this policy to specify whether to receive Windows Driver Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
+
+If you configure this policy, please also configure the scan source policies for other update types:
+- SetPolicyDrivenUpdateSourceForFeature
+- SetPolicyDrivenUpdateSourceForQuality
+- SetPolicyDrivenUpdateSourceForDriver
+
+>[!NOTE]
+>If you have not properly configured Update/UpdateServiceUrl correctly to point to your WSUS server, this policy will have no effect. 
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *Specify source service for specific classes of Windows Updates*
+-   GP name: *SetPolicyDrivenUpdateSourceForOther*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0: (Default) Detect, download and deploy Other from Windows Update 
+- 1: Enabled, Detect, download and deploy Other from Windows Server Update Server (WSUS) 
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-setpolicydrivenupdatesourceforquality"></a>**Update/SetPolicyDrivenUpdateSourceForQuality**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Configure this policy to specify whether to receive Windows Driver Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
+
+If you configure this policy, please also configure the scan source policies for other update types:
+- SetPolicyDrivenUpdateSourceForFeature
+- SetPolicyDrivenUpdateSourceForDriver
+- SetPolicyDrivenUpdateSourceForOther
+
+>[!NOTE]
+>If you have not properly configured Update/UpdateServiceUrl correctly to point to your WSUS server, this policy will have no effect. 
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *Specify source service for specific classes of Windows Updates*
+-   GP name: *SetPolicyDrivenUpdateSourceForQuality*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0: (Default) Detect, download and deploy Quality from Windows Update 
+- 1: Enabled, Detect, download and deploy Quality from Windows Server Update Server (WSUS) 
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
 
 <!--Policy-->
 <a href="" id="update-setproxybehaviorforupdatedetection"></a>**Update/SetProxyBehaviorForUpdateDetection**  

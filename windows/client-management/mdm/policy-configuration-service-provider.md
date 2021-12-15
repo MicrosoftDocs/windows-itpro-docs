@@ -8584,6 +8584,9 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-update.md#update-configuredeadlinegraceperiod" id="update-configuredeadlinegraceperiod">Update/ConfigureDeadlineGracePeriod</a>
   </dd>
   <dd>
+    <a href="./policy-csp-update.md#update-configuredeadlinegraceperiodforfeatureupdates" id="update-configuredeadlinegraceperiodforfeatureupdates">Update/ConfigureDeadlineGracePeriodForFeatureUpdates</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-update.md#update-configuredeadlinenoautoreboot" id="update-configuredeadlinenoautoreboot">Update/ConfigureDeadlineNoAutoReboot</a>
   </dd>
   <dd>
@@ -8609,6 +8612,9 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-update.md#update-disablewufbsafeguards" id="update-disablewufbsafeguards">Update/DisableWUfBSafeguards</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-donotenforceenterprisetlscertpinningforupdatedetection" id="update-donotenforceenterprisetlscertpinningforupdatedetection">Update/DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection</a>
   </dd>
   <dd>
     <a href="./policy-csp-update.md#update-engagedrestartdeadline" id="update-engagedrestartdeadline">Update/EngagedRestartDeadline</a>
@@ -8705,6 +8711,18 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-update.md#update-setedurestart" id="update-setedurestart">Update/SetEDURestart</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourcefordriver" id="update-setpolicydrivenupdatesourcefordriver">Update/SetPolicyDrivenUpdateSourceForDriver</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourceforfeature" id="update-setpolicydrivenupdatesourceforfeature">Update/SetPolicyDrivenUpdateSourceForFeature</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourceforother" id="update-setpolicydrivenupdatesourceforother">Update/SetPolicyDrivenUpdateSourceForOther</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourceforquality" id="update-setpolicydrivenupdatesourceforquality">Update/SetPolicyDrivenUpdateSourceForQuality</a>
   </dd>
   <dd> 
     <a href="./policy-csp-update.md#update-setproxybehaviorforupdatedetection"id="update-setproxybehaviorforupdatedetection">Update/SetProxyBehaviorForUpdateDetection</a> 
