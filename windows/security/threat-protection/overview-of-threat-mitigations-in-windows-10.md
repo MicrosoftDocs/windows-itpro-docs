@@ -168,7 +168,7 @@ One of the most common techniques used to gain access to a system is to find a v
 
 Address Space Layout Randomization (ASLR) makes that type of attack much more difficult because it randomizes how and where important data is stored in memory. With ASLR, it is more difficult for malware to find the specific location it needs to attack. Figure 3 illustrates how ASLR works by showing how the locations of different critical Windows components can change in memory between restarts.
 
-![ASLR at work.](images/security-fig4-aslr.png)
+:::image type="content" alt-text="ASLR at work." source="images/security-fig4-aslr.png" lightbox="images/security-fig4-aslr.png":::
 
 **Figure 3.&nbsp;&nbsp;ASLR at work**
 
@@ -300,7 +300,7 @@ Some of the protections available in Windows 10 are provided through functions t
 
 ## Understanding Windows 10 in relation to the Enhanced Mitigation Experience Toolkit 
 
-You might already be familiar with the [Enhanced Mitigation Experience Toolkit (EMET)](https://support.microsoft.com/kb/2458544), which has since 2009 offered various exploit mitigations, and an interface for configuring those mitigations. You can use this section to understand how EMET mitigations relate to those mitigations in Windows 10. Many of EMET's mitigations have been built into Windows 10, some with extra improvements. However, some EMET mitigations carry high-performance cost, or appear to be relatively ineffective against modern threats, and therefore have not been brought into Windows 10.
+You might already be familiar with the [Enhanced Mitigation Experience Toolkit (EMET)](https://support.microsoft.com/topic/emet-mitigations-guidelines-b529d543-2a81-7b5a-d529-84b30e1ecee0), which has since 2009 offered various exploit mitigations, and an interface for configuring those mitigations. You can use this section to understand how EMET mitigations relate to those mitigations in Windows 10. Many of EMET's mitigations have been built into Windows 10, some with extra improvements. However, some EMET mitigations carry high-performance cost, or appear to be relatively ineffective against modern threats, and therefore have not been brought into Windows 10.
 
 Because many of EMET's mitigations and security mechanisms already exist in Windows 10 and have been improved, particularly the ones assessed to have high effectiveness at mitigating known bypasses, version 5.5*x* has been announced as the final major version release for EMET (see [Enhanced Mitigation Experience Toolkit](https://web.archive.org/web/20170928073955/https://technet.microsoft.com/en-US/security/jj653751)).
 
