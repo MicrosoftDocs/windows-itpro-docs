@@ -47,8 +47,6 @@ manager: dansimp
 |Pro|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-|Mobile|Yes|Yes|
-|Mobile Enterprise|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -94,8 +92,6 @@ The following list shows the supported values:
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-|Mobile|Yes|Yes|
-|Mobile Enterprise|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -138,8 +134,6 @@ The following list shows the supported values:
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-|Mobile|Yes|Yes|
-|Mobile Enterprise|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
