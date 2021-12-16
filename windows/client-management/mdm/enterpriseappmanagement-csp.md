@@ -18,8 +18,7 @@ ms.date: 06/26/2017
 The EnterpriseAppManagement enterprise configuration service provider is used to handle enterprise application management tasks such as installing an enterprise application token, the first auto-downloadable app link, querying installed enterprise applications (name and version), auto updating already installed enterprise applications, and removing all installed enterprise apps (including the enterprise app token) during unenrollment.
 
 > [!NOTE]
-> The EnterpriseAppManagement CSP is only supported in Windows 10 Mobile.
-
+> The EnterpriseAppManagement CSP is only supported in Windows 10 IoT Core.
  
 
 The following shows the EnterpriseAppManagement configuration service provider in tree format.
