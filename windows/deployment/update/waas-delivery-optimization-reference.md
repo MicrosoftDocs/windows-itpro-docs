@@ -120,8 +120,8 @@ Download mode dictates which download sources clients are allowed to use when do
 > [!NOTE]
 > Starting in Windows 11, the Bypass option of Download Mode is no longer used.
 
->[!NOTE]
->When you use AAD tenant, AD Site, or AD Domain as source of group IDs, that the association of devices participating in the group should not be relied on for an authentication of identity of those devices.
+> [!NOTE]
+> When you use AAD tenant, AD Site, or AD Domain as the source of group IDs, the association of devices participating in the group should not be relied on for an authentication of identity of those devices.
 
 ### Group ID
 
