@@ -19283,9 +19283,14 @@
   
     }, 
     {
-  "source_path": "windows/client-management/mdm/policy-csp-admx-skydrive.md",
-  "redirect_url": "/windows/client-management/mdm/policy-csp-admx-shellcommandpromptregedittools",
-  "redirect_document_id": true
+     "source_path": "windows/client-management/mdm/policy-csp-admx-skydrive.md",
+     "redirect_url": "/windows/client-management/mdm/policy-csp-admx-shellcommandpromptregedittools",
+     "redirect_document_id": true
+    },
+    {
+     "source_path": "windows/privacy/license-terms-windows-diagnostic-data-for-powershell.md",
+     "redirect_url": "/legal/windows/license-terms-windows-diagnostic-data-for-powershell",
+     "redirect_document_id": false
     }
 
 	]
