@@ -866,21 +866,11 @@ items:
           items: 
             - name: Reboot DDF file
               href: reboot-ddf-file.md
-        - name: Registry CSP
-          href: registry-csp.md
-          items: 
-            - name: Registry DDF file
-              href: registry-ddf-file.md
         - name: RemoteFind CSP
           href: remotefind-csp.md
           items: 
             - name: RemoteFind DDF file
               href: remotefind-ddf-file.md
-        - name: RemoteLock CSP
-          href: remotelock-csp.md
-          items: 
-            - name: RemoteLock DDF file
-              href: remotelock-ddf-file.md
         - name: RemoteRing CSP
           href: remotering-csp.md
           items: 
@@ -1001,11 +991,6 @@ items:
           items: 
             - name: WindowsLicensing DDF file
               href: windowslicensing-ddf-file.md
-        - name: WindowsSecurityAuditing CSP
-          href: windowssecurityauditing-csp.md
-          items: 
-            - name: WindowsSecurityAuditing DDF file
-              href: windowssecurityauditing-ddf-file.md
         - name: WiredNetwork CSP
           href: wirednetwork-csp.md
           items: 

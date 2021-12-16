@@ -152,7 +152,7 @@ manager: dansimp
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions.
 
 
 Specifies the maximum size in GB of Delivery Optimization cache. This policy overrides the DOMaxCacheSize policy. The value 0 (zero) means "unlimited" cache. Delivery Optimization will clear the cache when the device is running low on disk space.
@@ -201,7 +201,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions.
 
 
 Specifies whether the device is allowed to participate in Peer Caching while connected via VPN to the domain network. This means the device can download from or upload to other domain network devices, either on VPN or on the corporate domain network.
@@ -585,7 +585,7 @@ The following list shows the supported values as number of seconds:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions.
 
 
 Specifies the download method that Delivery Optimization can use in downloads of Windows Updates, Apps and App updates.
@@ -607,8 +607,8 @@ The following list shows the supported values:
 -   1 (default) – HTTP blended with peering behind the same NAT.
 -   2 – HTTP blended with peering across a private group. Peering occurs on devices in the same Active Directory Site (if it exists) or the same domain by default. When this option is selected, peering will cross NATs. To create a custom group use Group ID in combination with Mode 2.
 -   3 – HTTP blended with Internet peering.
--   99 - Simple download mode with no peering. Delivery Optimization downloads using HTTP only and does not attempt to contact the Delivery Optimization cloud services. Added in Windows 10, version 1607.
--   100 - Bypass mode. Do not use Delivery Optimization and use BITS instead. Added in Windows 10, version 1607. Note that this value is deprecated and will be removed in a future release.
+-   99 - Simple download mode with no peering. Delivery Optimization downloads using HTTP only and does not attempt to contact the Delivery Optimization cloud services. Added in Windows 10, version 1607.
+-   100 - Bypass mode. Do not use Delivery Optimization and use BITS instead. Added in Windows 10, version 1607. Note that this value is deprecated and will be removed in a future release.
 <!--/SupportedValues-->
 <!--/Policy-->
 
@@ -642,13 +642,13 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions.
 
 
 This Policy specifies an arbitrary group ID that the device belongs to. Use this if you need to create a single group for Local Network Peering for branches that are on different domains or are not on the same LAN. Note that this is a best effort optimization and should not be relied on for an authentication of identity.
 
 > [!NOTE]
-> You must use a GUID as the group ID.
+> You must use a GUID as the group ID.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -799,10 +799,10 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions.
 
 
-Specifies the maximum time in seconds that each file is held in the Delivery Optimization cache after downloading successfully. The value 0 (zero) means "unlimited"; Delivery Optimization will hold the files in the cache longer and make the files available for uploads to other devices, as long as the cache size has not exceeded. The value 0 is new in Windows 10, version 1607.
+Specifies the maximum time in seconds that each file is held in the Delivery Optimization cache after downloading successfully. The value 0 (zero) means "unlimited"; Delivery Optimization will hold the files in the cache longer and make the files available for uploads to other devices, as long as the cache size has not exceeded. The value 0 is new in Windows 10, version 1607.
 
 The default value is 259200 seconds (3 days).
 
@@ -848,7 +848,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions.
 
  
 Specifies the maximum cache size that Delivery Optimization can utilize, as a percentage of disk size (1-100).
@@ -984,7 +984,7 @@ This policy is deprecated because it only applies to uploads to Internet peers (
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions.
 
 
 Specifies the minimum download QoS (Quality of Service or speed) in KiloBytes/sec for background downloads. This policy affects the blending of peer and HTTP sources. Delivery Optimization complements the download from the HTTP source to achieve the minimum QoS value set.
@@ -1033,7 +1033,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is only enforced in Windows 10 Pro, Business, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> This policy is only enforced in Windows 10 Pro, Business, Enterprise, and Education editions.
 
 Specifies any value between 1 and 100 (in percentage) to allow the device to upload data to LAN and Group peers while on battery power. Uploads will automatically pause when the battery level drops below the set minimum battery level. The recommended value to set is 40 (for 40%) if you allow uploads on battery.
 
@@ -1081,7 +1081,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is only enforced in Windows 10 Pro, Business, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> This policy is only enforced in Windows 10 Pro, Business, Enterprise, and Education editions.
 
 
 Specifies the required minimum disk size (capacity in GB) for the device to use Peer Caching. Recommended values: 64 GB to 256 GB.
@@ -1133,7 +1133,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is only enforced in Windows 10 Pro, Business, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> This policy is only enforced in Windows 10 Pro, Business, Enterprise, and Education editions.
 
 
 Specifies the minimum content file size in MB enabled to use Peer Caching. Recommended values: 1 MB to 100,000 MB.
@@ -1182,7 +1182,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is only enforced in Windows 10 Pro, Business, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> This policy is only enforced in Windows 10 Pro, Business, Enterprise, and Education editions.
 
 
 Specifies the minimum RAM size in GB required to use Peer Caching. For example, if the minimum set is 1 GB, then devices with 1 GB or higher available RAM will be allowed to use Peer caching. Recommended values: 1 GB to 4 GB.
@@ -1231,7 +1231,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions.
 
 
 Specifies the drive that Delivery Optimization should use for its cache. The drive location can be specified using environment variables, drive letter or using a full path.
@@ -1280,7 +1280,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
+> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions.
 
 
 Specifies the maximum total bytes in GB that Delivery Optimization is allowed to upload to Internet peers in each calendar month.

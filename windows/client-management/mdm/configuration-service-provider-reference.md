@@ -822,18 +822,6 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[Registry CSP](registry-csp.md)
-
-<!--StartSKU-->
-
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|No|No|No|No|Yes|
-
-<!--EndSKU-->
-<!--EndCSP-->
-
-<!--StartCSP-->
 [RemoteFind CSP](remotefind-csp.md)
 
 <!--StartSKU-->
@@ -841,18 +829,6 @@ Additional lists:
 |Home|Pro|Business|Enterprise|Education|Mobile|
 |--- |--- |--- |--- |--- |--- |
 |No|Yes|Yes|Yes|Yes|Yes|
-
-<!--EndSKU-->
-<!--EndCSP-->
-
-<!--StartCSP-->
-[RemoteLock](remotelock-csp.md)
-
-<!--StartSKU-->
-
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|No|No|No|No|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1062,7 +1038,7 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[W4 APPLICATION CSP](w4-application-csp.md)
+[W4 Application CSP](w4-application-csp.md)
 
 <!--StartSKU-->
 
@@ -1147,18 +1123,6 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[WindowsSecurityAuditing CSP](windowssecurityauditing-csp.md)
-
-<!--StartSKU-->
-
-|Home|Pro|Business|Enterprise|Education|Mobile|
-|--- |--- |--- |--- |--- |--- |
-|No|No|No|No|No|Yes|
-
-<!--EndSKU-->
-<!--EndCSP-->
-
-<!--StartCSP-->
 [WiredNetwork CSP](wirednetwork-csp.md)
 
 <!--StartSKU-->
@@ -1171,7 +1135,7 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[w7 APPLICATION CSP](w7-application-csp.md)
+[w7 Application CSP](w7-application-csp.md)
 
 <!--StartSKU-->
 

@@ -608,9 +608,6 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
-
 
 Forces the start screen size.
 
@@ -658,7 +655,7 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy requires reboot to take effect.
+> This policy requires reboot to take effect.
 
 Allows IT Admins to configure Start by collapsing or removing the all apps list.
 
@@ -762,7 +759,7 @@ To validate on Desktop, do the following:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy requires reboot to take effect.
+> This policy requires reboot to take effect.
 
 Allows IT Admins to configure Start by hiding most used apps.
 
@@ -819,7 +816,7 @@ Allows IT Admins to configure Start by hiding "Hibernate" from appearing in the 
 
 
 > [!NOTE]
-> This policy can only be verified on laptops as "Hibernate" does not appear on regular PC's.
+> This policy can only be verified on laptops as "Hibernate" does not appear on regular PC's.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -964,7 +961,7 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy requires reboot to take effect.
+> This policy requires reboot to take effect.
 
 Allows IT Admins to configure Start by hiding the Power button from appearing.
 
@@ -1014,7 +1011,7 @@ To validate on Desktop, do the following:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy requires reboot to take effect.
+> This policy requires reboot to take effect.
 
 Allows IT Admins to configure Start by hiding recently opened items in the jump lists from appearing.
 
@@ -1072,7 +1069,7 @@ To validate on Desktop, do the following:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy requires reboot to take effect.
+> This policy requires reboot to take effect.
 
 Allows IT Admins to configure Start by hiding recently added apps.
 
@@ -1369,7 +1366,7 @@ To validate on Desktop, do the following:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy requires reboot to take effect.
+> This policy requires reboot to take effect.
 
 Allows IT Admins to configure Start by hiding the user tile.
 
@@ -1420,7 +1417,7 @@ To validate on Desktop, do the following:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy requires reboot to take effect.
+> This policy requires reboot to take effect.
 
 Here is additional SKU support information:
 
@@ -1433,7 +1430,7 @@ Here is additional SKU support information:
 This policy imports Edge assets (e.g. .png/.jpg files) for secondary tiles into its local app data path which allows the StartLayout policy to pin Edge secondary tiles as weblink that tie to the image asset files.
 
 > [!IMPORTANT]
-> Please note that the import happens only when StartLayout policy is changed. So it is better to always change ImportEdgeAssets policy at the same time as StartLayout policy whenever there are Edge secondary tiles to be pinned from StartLayout policy.
+> Please note that the import happens only when StartLayout policy is changed. So it is better to always change ImportEdgeAssets policy at the same time as StartLayout policy whenever there are Edge secondary tiles to be pinned from StartLayout policy.
 
 The value set for this policy is an XML string containing Edge assets.  For an example XML string, see [Add image for secondary Microsoft Edge tiles](/windows/configuration/start-secondary-tiles).
 
