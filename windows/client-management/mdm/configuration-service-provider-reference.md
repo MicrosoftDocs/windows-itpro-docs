@@ -79,7 +79,7 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[APPLICATION CSP](application-csp.md)
+[Application CSP](application-csp.md)
 
 <!--StartSKU-->
 
@@ -127,7 +127,7 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[BOOTSTRAP CSP](bootstrap-csp.md)
+[Bootstrap CSP](bootstrap-csp.md)
 
 <!--StartSKU-->
 
@@ -415,7 +415,7 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[EMAIL2 CSP](email2-csp.md)
+[EMail2 CSP](email2-csp.md)
 
 <!--StartSKU-->
 
@@ -464,8 +464,6 @@ Additional lists:
 
 <!--StartCSP-->
 [EnterpriseAppVManagement CSP](enterpriseappvmanagement-csp.md)
-
-<!--StartSKU-->
 
 |Home|Pro|Business|Enterprise|Education|
 |--- |--- |--- |--- |--- |
@@ -655,7 +653,7 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[PROXY CSP](proxy-csp.md)
+[Proxy CSP](proxy-csp.md)
 
 <!--StartSKU-->
 
@@ -667,7 +665,7 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[PXLOGICAL CSP](pxlogical-csp.md)
+[PXLogical CSP](pxlogical-csp.md)
 
 <!--StartSKU-->
 
@@ -991,7 +989,7 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[W4 APPLICATION CSP](w4-application-csp.md)
+[W4 Application CSP](w4-application-csp.md)
 
 <!--StartSKU-->
 
@@ -1100,7 +1098,7 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[w7 APPLICATION CSP](w7-application-csp.md)
+[w7 Application CSP](w7-application-csp.md)
 
 <!--StartSKU-->
 
@@ -1171,7 +1169,7 @@ The following list shows the CSPs supported in HoloLens devices:
     > [!NOTE]
     > Support in Surface Hub is limited to **Domain\ComputerName**.
 -   [AccountManagement CSP](accountmanagement-csp.md)
--   [APPLICATION CSP](application-csp.md)
+-   [Application CSP](application-csp.md)
 -   [CertificateStore CSP](certificatestore-csp.md)
 -   [ClientCertificateInstall CSP](clientcertificateinstall-csp.md)
 -   [Defender CSP](defender-csp.md)
@@ -1203,7 +1201,7 @@ The following list shows the CSPs supported in HoloLens devices:
 ## <a href="" id="iotcoresupport"></a>CSPs supported in Windows 10 IoT Core
 
 - [AllJoynManagement CSP](alljoynmanagement-csp.md)
-- [APPLICATION CSP](application-csp.md)
+- [Application CSP](application-csp.md)
 - [CertificateStore CSP](certificatestore-csp.md)
 - [ClientCertificateInstall CSP](clientcertificateinstall-csp.md)
 - [CustomDeviceUI CSP](customdeviceui-csp.md)
