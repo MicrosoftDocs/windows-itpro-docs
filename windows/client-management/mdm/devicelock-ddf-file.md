@@ -14,6 +14,9 @@ ms.date: 06/26/2017
 
 # DeviceLock DDF file
 
+This policy is deprecated. Use [Policy CSP](policy-configuration-service-provider.md) instead.
+
+<!-- 12.16.2021 mandia: Commenting out, as this CSP is specific to Windows Phone 8.1.
 
 This topic shows the OMA DM device description framework (DDF) for the **DeviceLock** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
@@ -496,18 +499,10 @@ This topic shows the OMA DM device description framework (DDF) for the **DeviceL
     </Node>
 </MgmtTree>
 ```
+-->
 
 ## Related topics
 
+[Policy CSP](policy-configuration-service-provider.md)
 
 [DeviceLock configuration service provider](devicelock-csp.md)
-
- 
-
- 
-
-
-
-
-
-
