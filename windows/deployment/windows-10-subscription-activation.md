@@ -215,6 +215,8 @@ When you have the required Azure AD subscription, group-based licensing is the p
 
 If you are running Windows 10, version 1803 or later, Subscription Activation will automatically pull the firmware-embedded Windows 10 activation key and activate the underlying Pro License. The license will then step-up to Windows 10/11 Enterprise using Subscription Activation. This automatically migrates your devices from KMS or MAK activated Enterprise to Subscription activated Enterprise.
 
+Subscription Activation doesn’t remove the need to activate the underlying operating system, this is still a requirement for running a genuine installation of Windows.
+
 > [!CAUTION]
 > Firmware-embedded Windows 10 activation happens automatically only when we go through OOBE (Out Of Box Experience).
 
