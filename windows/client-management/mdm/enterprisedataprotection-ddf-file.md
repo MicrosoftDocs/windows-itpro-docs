@@ -142,29 +142,6 @@ The XML below is the current version for this CSP.
             </DFProperties>
           </Node>
           <Node>
-            <NodeName>RequireProtectionUnderLockConfig</NodeName>
-            <DFProperties>
-              <AccessType>
-                <Get />
-                <Add />
-                <Delete />
-                <Replace />
-              </AccessType>
-              <DFFormat>
-                <int />
-              </DFFormat>
-              <Occurrence>
-                <One />
-              </Occurrence>
-              <Scope>
-                <Dynamic />
-              </Scope>
-              <DFType>
-                <MIME>text/plain</MIME>
-              </DFType>
-            </DFProperties>
-          </Node>
-          <Node>
             <NodeName>DataRecoveryCertificate</NodeName>
             <DFProperties>
               <AccessType>
