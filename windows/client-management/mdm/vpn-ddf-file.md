@@ -14,6 +14,9 @@ ms.date: 06/26/2017
 
 # VPN DDF file
 
+The VPN CSP is deprecated. Use [VPNv2 CSP](vpnv2-csp.md) instead.
+
+<!-- 12.16.2021 mandia: Commenting out, as this CSP is specific to Windows 10 Mobile.
 
 This topic shows the OMA DM device description framework (DDF) for the **VPN** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
@@ -1383,17 +1386,12 @@ This topic shows the OMA DM device description framework (DDF) for the **VPN** c
 </MgmtTree>
 ```
 
+-->
+
 ## Related topics
 
+[VPNv2 CSP](vpnv2-csp.md)
 
-[VPN configuration service provider](vpn-csp.md)
+[VPN configuration service provider (deprecated)](vpn-csp.md)
 
- 
-
- 
-
-
-
-
-
-
+[Configuration service provider reference](configuration-service-provider-reference.md)
