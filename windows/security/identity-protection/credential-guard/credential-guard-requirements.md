@@ -14,7 +14,7 @@ ms.collection:
   - M365-identity-device-management
   - highpri
 ms.topic: article
-ms.date: 09/30/2020
+ms.date: 12/16/2021
 ---
 
 # Windows Defender Credential Guard: Requirements
