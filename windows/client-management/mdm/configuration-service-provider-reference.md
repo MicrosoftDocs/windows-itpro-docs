@@ -475,18 +475,6 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[EnterpriseAssignedAccess CSP](enterpriseassignedaccess-csp.md)
-
-<!--StartSKU-->
-
-|Home|Pro|Business|Enterprise|Education|
-|--- |--- |--- |--- |--- |
-|No|No|No|No|No|
-
-<!--EndSKU-->
-<!--EndCSP-->
-
-<!--StartCSP-->
 [EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)
 
 <!--StartSKU-->
@@ -506,29 +494,6 @@ Additional lists:
 |Home|Pro|Business|Enterprise|Education|
 |--- |--- |--- |--- |--- |
 |No|Yes|Yes|Yes|Yes|
-
-<!--EndSKU-->
-<!--EndCSP-->
-
-<!--StartCSP-->
-[EnterpriseExt CSP](enterpriseext-csp.md)
-
-<!--StartSKU-->
-
-|Home|Pro|Business|Enterprise|Education|
-|--- |--- |--- |--- |--- |
-|No|No|No|No|No|
-<!--EndSKU-->
-<!--EndCSP-->
-
-<!--StartCSP-->
-[EnterpriseExtFileSystem CSP](enterpriseextfilessystem-csp.md)
-
-<!--StartSKU-->
-
-|Home|Pro|Business|Enterprise|Education|
-|--- |--- |--- |--- |--- |
-|No|No|No|No|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -558,18 +523,6 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[FileSystem CSP](filesystem-csp.md)
-
-<!--StartSKU-->
-
-|Home|Pro|Business|Enterprise|Education|
-|--- |--- |--- |--- |--- |
-|No|No|No|No|No|
-
-<!--EndSKU-->
-<!--EndCSP-->
-
-<!--StartCSP-->
 [Firewall CSP](firewall-csp.md)
 
 <!--StartSKU-->
@@ -594,18 +547,6 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[HotSpot CSP](hotspot-csp.md)
-
-<!--StartSKU-->
-
-|Home|Pro|Business|Enterprise|Education|
-|--- |--- |--- |--- |--- |
-|No|Yes|Yes|Yes|Yes|
-
-<!--EndSKU-->
-<!--EndCSP-->
-
-<!--StartCSP-->
 [LanguagePackManagement CSP](language-pack-management-csp.md)
 
 <!--StartSKU-->
@@ -613,17 +554,6 @@ Additional lists:
 |Home|Pro|Business|Enterprise|Education|
 |--- |--- |--- |--- |--- |
 |Yes|Yes|No|Yes|Yes|
-
-<!--EndSKU-->
-<!--EndCSP-->
-<!--StartCSP-->
-[Maps CSP](maps-csp.md)
-
-<!--StartSKU-->
-
-|Home|Pro|Business|Enterprise|Education|
-|--- |--- |--- |--- |--- |
-|No|No|No|No|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
