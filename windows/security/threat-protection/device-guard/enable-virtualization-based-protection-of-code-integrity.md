@@ -10,7 +10,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 07/30/2021
+ms.date: 12/16/2021
 ms.reviewer: 
 ms.technology: windows-sec
 ---
