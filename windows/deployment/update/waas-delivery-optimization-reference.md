@@ -178,6 +178,9 @@ This setting specifies the minimum content file size in MB enabled to use Peer C
 
 This setting specifies the maximum download bandwidth that can be used across all concurrent Delivery Optimization downloads in kilobytes per second (KB/s). A default value of "0" means that Delivery Optimization will dynamically adjust and optimize the maximum bandwidth used.
 
+> [!NOTE]
+> This is the best option for low bandwidth environments.
+
 ### Maximum Foreground Download Bandwidth
 
 Starting in Windows 10, version 1803, specifies the maximum foreground download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth. The default value of "0" means that Delivery Optimization dynamically adjusts to use the available bandwidth for foreground downloads. However, downloads from LAN peers are not throttled even when this policy is set.
@@ -189,6 +192,9 @@ Starting in Windows 10, version 1803, specifies the maximum background download 
 ### Percentage of Maximum Download Bandwidth
 
 This setting specifies the maximum download bandwidth that Delivery Optimization can use across all concurrent download activities as a percentage of available download bandwidth. The default value 0 means that Delivery Optimization dynamically adjusts to use the available bandwidth for downloads.
+
+> [!NOTE]
+> It is recommended to use the absolute value download option 'Maximum Download Bandwidth', rather than percentage-based options, for low bandwidth environments.
 
 ### Max Upload Bandwidth
 
