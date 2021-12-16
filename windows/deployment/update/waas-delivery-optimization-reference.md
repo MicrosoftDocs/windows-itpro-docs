@@ -118,7 +118,7 @@ Download mode dictates which download sources clients are allowed to use when do
 |Bypass (100) |	Bypass Delivery Optimization and use BITS, instead. You should only select this mode if you use WSUS and prefer to use BranchCache. You do not need to set this option if you are using Configuration Manager. If you want to disable peer-to-peer functionality, it's best to set **DownloadMode** to **0** or **99**. |
 
 > [!NOTE]
-> Starting with Windows 10, version 2006 (and in Windows 11), the Bypass option of Download Mode is no longer used.
+> Starting in Windows 11, the Bypass option of Download Mode is no longer used.
 
 >[!NOTE]
 >When you use AAD tenant, AD Site, or AD Domain as source of group IDs, that the association of devices participating in the group should not be relied on for an authentication of identity of those devices.
