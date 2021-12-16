@@ -1,8 +1,8 @@
 ---
 description: Use this article to learn more about what required Windows diagnostic data is gathered.
-title: Windows 10, version 21H1, Windows 10, version 20H2 and Windows 10, version 2004 required diagnostic events and fields (Windows 10)
+title: Windows 10, version 21H2, Windows 10, version 21H1, Windows 10, version 20H2 and Windows 10, version 2004 required diagnostic events and fields (Windows 10)
 keywords: privacy, telemetry
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -10,14 +10,17 @@ localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection:
+  - M365-security-compliance
+  - highpri
 ms.topic: article
 audience: ITPro
-ms.date: 10/04/2021
+ms.date: 
+ms.technology: privacy
 ---
 
 
-# Windows 10, version 20H2 and Windows 10, version 2004 required Windows diagnostic events and fields
+# Windows 10, version 21H2, Windows 10, version 21H1, Windows 10, version 20H2 and Windows 10, version 2004 required Windows diagnostic events and fields
 
 
 > [!IMPORTANT]  
@@ -26,9 +29,11 @@ ms.date: 10/04/2021
 
  **Applies to**
 
+- Windows 10, version 21H2
 - Windows 10, version 21H1
 - Windows 10, version 20H2
 - Windows 10, version 2004
+
 
 Required diagnostic data gathers a limited set of information that is critical for understanding the device and its configuration including: basic device information, quality-related information, app compatibility, and Microsoft Store.
 
@@ -63,6 +68,8 @@ The following fields are available:
 - **DatasourceApplicationFile_20H1Setup**  The total number of objects of this type present on this device.
 - **DatasourceApplicationFile_21H1**  The total number of objects of this type present on this device.
 - **DatasourceApplicationFile_21H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_21H2**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_21H2Setup**  The total number of objects of this type present on this device.
 - **DatasourceApplicationFile_RS1**  The total number of objects of this type present on this device.
 - **DatasourceApplicationFile_RS2**  The total number of objects of this type present on this device.
 - **DatasourceApplicationFile_RS3**  The total number of objects of this type present on this device.
@@ -76,6 +83,8 @@ The following fields are available:
 - **DatasourceDevicePnp_20H1Setup**  The total number of objects of this type present on this device.
 - **DatasourceDevicePnp_21H1**  The total number of objects of this type present on this device.
 - **DatasourceDevicePnp_21H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_21H2**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_21H2Setup**  The total number of objects of this type present on this device.
 - **DatasourceDevicePnp_RS1**  The total number of objects of this type present on this device.
 - **DatasourceDevicePnp_RS2**  The total number of objects of this type present on this device.
 - **DatasourceDevicePnp_RS3**  The total number of objects of this type present on this device.
@@ -91,6 +100,8 @@ The following fields are available:
 - **DatasourceDriverPackage_20H1Setup**  The total number of objects of this type present on this device.
 - **DatasourceDriverPackage_21H1**  The total number of objects of this type present on this device.
 - **DatasourceDriverPackage_21H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_21H2**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_21H2Setup**  The total number of objects of this type present on this device.
 - **DatasourceDriverPackage_RS1**  The total number of objects of this type present on this device.
 - **DatasourceDriverPackage_RS2**  The total number of objects of this type present on this device.
 - **DatasourceDriverPackage_RS3**  The total number of objects of this type present on this device.
@@ -106,6 +117,8 @@ The following fields are available:
 - **DataSourceMatchingInfoBlock_20H1Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoBlock_21H1**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoBlock_21H1Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_21H2**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_21H2Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoBlock_RS1**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoBlock_RS2**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoBlock_RS3**  The total number of objects of this type present on this device.
@@ -119,6 +132,8 @@ The following fields are available:
 - **DataSourceMatchingInfoPassive_20H1Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPassive_21H1**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPassive_21H1Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_21H2**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_21H2Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPassive_RS1**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPassive_RS2**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPassive_RS3**  The total number of objects of this type present on this device.
@@ -132,6 +147,8 @@ The following fields are available:
 - **DataSourceMatchingInfoPostUpgrade_20H1Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_21H1**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_21H1Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_21H2**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_21H2Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_RS1**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_RS2**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_RS3**  The total number of objects of this type present on this device.
@@ -145,6 +162,8 @@ The following fields are available:
 - **DatasourceSystemBios_20H1Setup**  The total number of objects of this type present on this device.
 - **DatasourceSystemBios_21H1**  The total number of objects of this type present on this device.
 - **DatasourceSystemBios_21H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_21H2**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_21H2Setup**  The total number of objects of this type present on this device.
 - **DatasourceSystemBios_RS1**  The total number of objects of this type present on this device.
 - **DatasourceSystemBios_RS2**  The total number of objects of this type present on this device.
 - **DatasourceSystemBios_RS3**  The total number of objects of this type present on this device.
@@ -160,6 +179,8 @@ The following fields are available:
 - **DecisionApplicationFile_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionApplicationFile_21H1**  The total number of objects of this type present on this device.
 - **DecisionApplicationFile_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_21H2**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionApplicationFile_RS1**  The total number of objects of this type present on this device.
 - **DecisionApplicationFile_RS2**  The total number of objects of this type present on this device.
 - **DecisionApplicationFile_RS3**  The total number of objects of this type present on this device.
@@ -173,6 +194,8 @@ The following fields are available:
 - **DecisionDevicePnp_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionDevicePnp_21H1**  The total number of objects of this type present on this device.
 - **DecisionDevicePnp_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_21H2**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionDevicePnp_RS1**  The total number of objects of this type present on this device.
 - **DecisionDevicePnp_RS2**  The total number of objects of this type present on this device.
 - **DecisionDevicePnp_RS3**  The total number of objects of this type present on this device.
@@ -188,6 +211,8 @@ The following fields are available:
 - **DecisionDriverPackage_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionDriverPackage_21H1**  The total number of objects of this type present on this device.
 - **DecisionDriverPackage_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_21H2**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionDriverPackage_RS1**  The total number of objects of this type present on this device.
 - **DecisionDriverPackage_RS2**  The total number of objects of this type present on this device.
 - **DecisionDriverPackage_RS3**  The total number of objects of this type present on this device.
@@ -203,6 +228,8 @@ The following fields are available:
 - **DecisionMatchingInfoBlock_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoBlock_21H1**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoBlock_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_21H2**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoBlock_RS1**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoBlock_RS2**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoBlock_RS3**  The total number of objects of this type present on this device.
@@ -216,6 +243,8 @@ The following fields are available:
 - **DecisionMatchingInfoPassive_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPassive_21H1**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPassive_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_21H2**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPassive_RS1**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPassive_RS2**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPassive_RS3**  The total number of objects of this type present on this device.
@@ -229,6 +258,8 @@ The following fields are available:
 - **DecisionMatchingInfoPostUpgrade_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPostUpgrade_21H1**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPostUpgrade_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_21H2**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPostUpgrade_RS1**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPostUpgrade_RS2**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPostUpgrade_RS3**  The total number of objects of this type present on this device.
@@ -242,6 +273,8 @@ The following fields are available:
 - **DecisionMediaCenter_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionMediaCenter_21H1**  The total number of objects of this type present on this device.
 - **DecisionMediaCenter_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_21H2**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionMediaCenter_RS1**  The total number of objects of this type present on this device.
 - **DecisionMediaCenter_RS2**  The total number of objects of this type present on this device.
 - **DecisionMediaCenter_RS3**  The total number of objects of this type present on this device.
@@ -254,6 +287,8 @@ The following fields are available:
 - **DecisionSModeState_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionSModeState_21H1**  The total number of objects of this type present on this device.
 - **DecisionSModeState_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionSModeState_21H2**  The total number of objects of this type present on this device.
+- **DecisionSModeState_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSModeState_RS1**  The total number of objects of this type present on this device.
 - **DecisionSModeState_RS2**  The total number of objects of this type present on this device.
 - **DecisionSModeState_RS3**  The total number of objects of this type present on this device.
@@ -267,6 +302,8 @@ The following fields are available:
 - **DecisionSystemBios_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_21H1**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_21H2**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_RS1**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_RS2**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_RS3**  The total number of objects of this type present on this device.
@@ -281,6 +318,8 @@ The following fields are available:
 - **DecisionSystemDiskSize_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemDiskSize_21H1**  The total number of objects of this type present on this device.
 - **DecisionSystemDiskSize_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemDiskSize_21H2**  The total number of objects of this type present on this device.
+- **DecisionSystemDiskSize_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemDiskSize_RS1**  The total number of objects of this type present on this device.
 - **DecisionSystemDiskSize_RS2**  The total number of objects of this type present on this device.
 - **DecisionSystemDiskSize_RS3**  The total number of objects of this type present on this device.
@@ -293,6 +332,8 @@ The following fields are available:
 - **DecisionSystemMemory_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemMemory_21H1**  The total number of objects of this type present on this device.
 - **DecisionSystemMemory_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemMemory_21H2**  The total number of objects of this type present on this device.
+- **DecisionSystemMemory_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemMemory_RS1**  The total number of objects of this type present on this device.
 - **DecisionSystemMemory_RS2**  The total number of objects of this type present on this device.
 - **DecisionSystemMemory_RS3**  The total number of objects of this type present on this device.
@@ -305,6 +346,8 @@ The following fields are available:
 - **DecisionSystemProcessorCpuCores_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuCores_21H1**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuCores_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuCores_21H2**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuCores_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuCores_RS1**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuCores_RS2**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuCores_RS3**  The total number of objects of this type present on this device.
@@ -317,6 +360,7 @@ The following fields are available:
 - **DecisionSystemProcessorCpuModel_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuModel_21H1**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuModel_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuModel_21H2**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuModel_RS1**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuModel_RS2**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuModel_RS3**  The total number of objects of this type present on this device.
@@ -329,6 +373,8 @@ The following fields are available:
 - **DecisionSystemProcessorCpuSpeed_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuSpeed_21H1**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuSpeed_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuSpeed_21H2**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuSpeed_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuSpeed_RS1**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuSpeed_RS2**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuSpeed_RS3**  The total number of objects of this type present on this device.
@@ -341,6 +387,8 @@ The following fields are available:
 - **DecisionTest_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionTest_21H1**  The total number of objects of this type present on this device.
 - **DecisionTest_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionTest_21H2**  The total number of objects of this type present on this device.
+- **DecisionTest_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionTest_RS1**  The total number of objects of this type present on this device.
 - **DecisionTest_RS2**  The total number of objects of this type present on this device.
 - **DecisionTest_RS3**  The total number of objects of this type present on this device.
@@ -353,6 +401,8 @@ The following fields are available:
 - **DecisionTpmVersion_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionTpmVersion_21H1**  The total number of objects of this type present on this device.
 - **DecisionTpmVersion_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionTpmVersion_21H2**  The total number of objects of this type present on this device.
+- **DecisionTpmVersion_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionTpmVersion_RS1**  The total number of objects of this type present on this device.
 - **DecisionTpmVersion_RS2**  The total number of objects of this type present on this device.
 - **DecisionTpmVersion_RS3**  The total number of objects of this type present on this device.
@@ -365,6 +415,8 @@ The following fields are available:
 - **DecisionUefiSecureBoot_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionUefiSecureBoot_21H1**  The total number of objects of this type present on this device.
 - **DecisionUefiSecureBoot_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionUefiSecureBoot_21H2**  The total number of objects of this type present on this device.
+- **DecisionUefiSecureBoot_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionUefiSecureBoot_RS1**  The total number of objects of this type present on this device.
 - **DecisionUefiSecureBoot_RS2**  The total number of objects of this type present on this device.
 - **DecisionUefiSecureBoot_RS3**  The total number of objects of this type present on this device.
@@ -395,6 +447,8 @@ The following fields are available:
 - **Wmdrm_20H1Setup**  The total number of objects of this type present on this device.
 - **Wmdrm_21H1**  The total number of objects of this type present on this device.
 - **Wmdrm_21H1Setup**  The total number of objects of this type present on this device.
+- **Wmdrm_21H2**  The total number of objects of this type present on this device.
+- **Wmdrm_21H2Setup**  The total number of objects of this type present on this device.
 - **Wmdrm_RS1**  The total number of objects of this type present on this device.
 - **Wmdrm_RS2**  The total number of objects of this type present on this device.
 - **Wmdrm_RS3**  The total number of objects of this type present on this device.
@@ -2446,6 +2500,7 @@ The following fields are available:
 - **objectType**  Indicates the object type that the event applies to.
 - **syncId**  A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
 
+
 ## Component-based servicing events
 
 ### CbsServicingProvider.CbsCapabilityEnumeration
@@ -2978,6 +3033,7 @@ The following fields are available:
 - **DriverInfSectionName**  Name of the DDInstall section within the driver INF file.
 - **DriverPackageId**  The ID of the driver package that is staged to the driver store.
 - **DriverProvider**  The driver manufacturer or provider.
+- **DriverShimIds**  List of driver shim IDs.
 - **DriverUpdated**  Indicates whether the driver is replacing an old driver.
 - **DriverVersion**  The version of the driver file.
 - **EndTime**  The time the installation completed.
@@ -4375,7 +4431,7 @@ The following fields are available:
 - **device_sample_rate**  A number representing how often the device sends telemetry, expressed as a percentage. Low values indicate that device sends more events and high values indicate that device sends fewer events. The value is rounded to 5 significant figures for privacy reasons and if an error is hit in getting the device sample number value from the registry then this will be -1; and if client is not on a UTC-enabled platform, then this value will not be set.
 - **Etag**  Etag is an identifier representing all service applied configurations and experiments for the current browser session. This field is left empty when Windows diagnostic level is set to Basic or lower or when consent for diagnostic data has been denied.
 - **EventInfo.Level**  The minimum Windows diagnostic data level required for the event where 1 is basic, 2 is enhanced, and 3 is full.
-- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy.  See [Microsoft Edge - Policies](/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol) for more details on this policy.
+- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See [Microsoft Edge - Policies](/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol) for more details on this policy.
 - **install_date**  The date and time of the most recent installation in seconds since midnight on January 1, 1970 UTC, rounded down to the nearest hour.
 - **installSource**  An enumeration representing the source of this installation: source was not retrieved (0), unspecified source (1), website installer (2), enterprise MSI (3), Windows update (4), Edge updater (5), scheduled or timed task (6, 7), uninstall (8), Edge about page (9), self-repair (10), other install command line (11), reserved (12), unknown source (13).
 - **installSourceName**  A string representation of the installation source.
@@ -4618,195 +4674,16 @@ The following fields are available:
 - **totalRunDuration**  Total running/evaluation time from last time.
 - **totalRuns**  Total number of running/evaluation from last time.
 
+## Settings events
 
-## Other events
+### Microsoft.Windows.Shell.SystemSettings.SettingsAppActivity.ProtocolActivation
 
-### Microsoft.Surface.Battery.Prod.BatteryInfoEvent
-
-This event includes the hardware level data about battery performance. The data collected with this event is used to help keep Windows products and services performing properly.
-
-The following fields are available:
-
-- **batteryData**  Battery Performance data.
-- **batteryData.data()**  Battery performance data.
-- **BatteryDataSize:**  Size of the battery performance data.
-- **batteryInfo.data()**  Battery performance data.
-- **BatteryInfoSize:**  Size of the battery performance data.
-- **pszBatteryDataXml**  Battery performance data.
-- **szBatteryInfo**  Battery performance data.
-
-
-### Microsoft.Surface.Battery.Prod.BatteryInfoEventV2_BPM
-
-This event includes the hardware level data about battery performance. The data The data collected with this event is used to keep Windows performing properly.
+This event tracks protocol launching for Setting's URIs. The data collected with this event is used to help keep Windows up to date.
 
 The following fields are available:
 
-- **BPMCurrentlyEngaged**  Instantaneous snapshot if BPM is engaged on device.
-- **BPMExitCriteria**  What is the BPM exit criteria - 20%SOC or 50%SOC?
-- **BPMHvtCountA**  Current HVT count for BPM counter A.
-- **BPMHvtCountB**  Current HVT count for BPM counter B.
-- **bpmOptOutLifetimeCount**  BPM OptOut Lifetime Count.
-- **BPMRsocBucketsHighTemp_Values**  Time in temperature range 46°C -60°C and in the following true RSOC ranges: 0%-49%; 50%-79%; 80%-89%; 90%-94%; 95%-100%.
-- **BPMRsocBucketsLowTemp_Values**  Time in temperature range 0°C -20°C and in the following true RSOC ranges: 0%-49%; 50%-79%; 80%-89%; 90%-94%; 95%-100%.
-- **BPMRsocBucketsMediumHighTemp_Values**  Time in temperature range 36°C -45°C and in the following true RSOC ranges: 0%-49%; 50%-79%; 80%-89%; 90%-94%; 95%-100%.
-- **BPMRsocBucketsMediumLowTemp_Values**  Time in temperature range 21°C-35°C and in the following true RSOC ranges: 0%-49%; 50%-79%; 80%-89%; 90%-94%; 95%-100%.
-- **BPMTotalEngagedMinutes**  Total time that BPM was engaged.
-- **BPMTotalEntryEvents**  Total number of times entering BPM.
-- **ComponentId**  Component ID.
-- **FwVersion**  FW version that created this log.
-- **LogClass**  Log Class.
-- **LogInstance**  Log instance within class (1..n).
-- **LogVersion**  Log MGR version.
-- **MCUInstance**  Instance id used to identify multiple MCU's in a product.
-- **ProductId**  Product ID.
-- **SeqNum**  Sequence Number.
-- **TimeStamp**  UTC seconds when log was created.
-- **Ver**  Schema version.
-
-
-### Microsoft.Surface.Battery.Prod.BatteryInfoEventV2_GG
-
-This event includes the hardware level data about battery performance. The data The data collected with this event is used to keep Windows performing properly.
-
-The following fields are available:
-
-- **cbTimeCell_Values**  cb time for different cells.
-- **ComponentId**  Component ID.
-- **cycleCount**  Cycle Count.
-- **deltaVoltage**  Delta voltage.
-- **eocChargeVoltage_Values**  EOC Charge voltage values.
-- **fullChargeCapacity**  Full Charge Capacity.
-- **FwVersion**  FW version that created this log.
-- **lastCovEvent**  Last Cov event.
-- **lastCuvEvent**  Last Cuv event.
-- **LogClass**  LOG_CLASS.
-- **LogInstance**  Log instance within class (1..n).
-- **LogVersion**  LOG_MGR_VERSION.
-- **manufacturerName**  Manufacturer name.
-- **maxChargeCurrent**  Max charge current.
-- **maxDeltaCellVoltage**  Max delta cell voltage.
-- **maxDischargeCurrent**  Max discharge current.
-- **maxTempCell**  Max temp cell.
-- **maxVoltage_Values**  Max voltage values.
-- **MCUInstance**  Instance id used to identify multiple MCU's in a product.
-- **minTempCell**  Min temp cell.
-- **minVoltage_Values**  Min voltage values.
-- **numberOfCovEvents**  Number of Cov events.
-- **numberOfCuvEvents**  Number of Cuv events.
-- **numberOfOCD1Events**  Number of OCD1 events.
-- **numberOfOCD2Events**  Number of OCD2 events.
-- **numberOfQmaxUpdates**  Number of Qmax updates.
-- **numberOfRaUpdates**  Number of Ra updates.
-- **numberOfShutdowns**  Number of shutdowns.
-- **pfStatus_Values**  pf status values.
-- **ProductId**  Product ID.
-- **qmax_Values**  Qmax values for different cells.
-- **SeqNum**  Sequence Number.
-- **TimeStamp**  UTC seconds when log was created.
-- **Ver**  Schema version.
-
-
-### Microsoft.Surface.Battery.Prod.BatteryInfoEventV2_GGExt
-
-This event includes the hardware level data about battery performance. The data The data collected with this event is used to keep Windows performing properly.
-
-The following fields are available:
-
-- **avgCurrLastRun**  Average current last run.
-- **avgPowLastRun**  Average power last run.
-- **batteryMSPN**  BatteryMSPN
-- **batteryMSSN**  BatteryMSSN.
-- **cell0Ra3**  Cell0Ra3.
-- **cell1Ra3**  Cell1Ra3.
-- **cell2Ra3**  Cell2Ra3.
-- **cell3Ra3**  Cell3Ra3.
-- **ComponentId**  Component ID.
-- **currentAtEoc**  Current at Eoc.
-- **firstPFstatusA**  First PF status-A.
-- **firstPFstatusB**  First PF status-B.
-- **firstPFstatusC**  First PF status-C.
-- **firstPFstatusD**  First PF status-D.
-- **FwVersion**  FW version that created this log.
-- **lastQmaxUpdate**  Last Qmax update.
-- **lastRaDisable**  Last Ra disable.
-- **lastRaUpdate**  Last Ra update.
-- **lastValidChargeTerm**  Last valid charge term.
-- **LogClass**  LOG CLASS.
-- **LogInstance**  Log instance within class (1..n).
-- **LogVersion**  LOG MGR VERSION.
-- **maxAvgCurrLastRun**  Max average current last run.
-- **maxAvgPowLastRun**  Max average power last run.
-- **MCUInstance**  Instance id used to identify multiple MCU's in a product.
-- **mfgInfoBlockB01**  MFG info Block B01.
-- **mfgInfoBlockB02**  MFG info Block B02.
-- **mfgInfoBlockB03**  MFG info Block B03.
-- **mfgInfoBlockB04**  MFG info Block B04.
-- **numOfRaDisable**  Number of Ra disable.
-- **numOfValidChargeTerm**  Number of valid charge term.
-- **ProductId**  Product ID.
-- **qmaxCycleCount**  Qmax cycle count.
-- **SeqNum**  Sequence Number.
-- **stateOfHealthEnergy**  State of health energy.
-- **stateOfHealthFcc**  State of health Fcc.
-- **stateOfHealthPercent**  State of health percent.
-- **TimeStamp**  UTC seconds when log was created.
-- **totalFwRuntime**  Total FW runtime.
-- **updateStatus**  Update status.
-- **Ver**  Schema version.
-
-
-### Microsoft.Surface.SystemReset.Prod.ResetCauseEventV2
-
-This event sends reason for SAM, PCH and SoC reset. The data collected with this event is used to keep Windows performing properly.
-
-The following fields are available:
-
-- **HostResetCause**  Host reset cause.
-- **PchResetCause**  PCH reset cause.
-- **SamResetCause**  SAM reset cause.
-
-
-### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantDeviceInformation
-
-This event provides basic information about the device where update assistant was run. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **CV**  The correlation vector.
-- **GlobalEventCounter**  The global event counter for all telemetry on the device.
-- **UpdateAssistantAppFilePath**  Path to Update Assistant app.
-- **UpdateAssistantDeviceId**  Device Id of the Update Assistant Candidate Device.
-- **UpdateAssistantExeName**  Exe name running as Update Assistant.
-- **UpdateAssistantExternalId**  External Id of the Update Assistant Candidate Device.
-- **UpdateAssistantIsDeviceCloverTrail**  True/False is the device clovertrail.
-- **UpdateAssistantIsPushing**  True if the update is pushing to the device.
-- **UpdateAssistantMachineId**  Machine Id of the Update Assistant Candidate Device.
-- **UpdateAssistantOsVersion**  Update Assistant OS Version.
-- **UpdateAssistantPartnerId**  Partner Id for Assistant application.
-- **UpdateAssistantReportPath**  Path to report for Update Assistant.
-- **UpdateAssistantStartTime**  Start time for UpdateAssistant.
-- **UpdateAssistantUiType**  The type of UI whether default or OOBE.
-- **UpdateAssistantVersion**  Current package version of UpdateAssistant.
-- **UpdateAssistantVersionInfo**  Information about Update Assistant application.
-
-
-### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantStartState
-
-This event marks the start of an Update Assistant State. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **CV**  The correlation vector.
-- **GlobalEventCounter**  The global event counter for all telemetry on the device.
-- **UpdateAssistantStateAcceptEULA**  True at the start of AcceptEULA.
-- **UpdateAssistantStateCheckingCompat**  True at the start of Checking Compat
-- **UpdateAssistantStateCheckingUpgrade**  True at the start of CheckingUpgrade.
-- **UpdateAssistantStateDownloading**  True at the start Downloading.
-- **UpdateAssistantStateInitializingApplication**  True at the start of the state InitializingApplication.
-- **UpdateAssistantStateInitializingStates**  True at the start of InitializingStates.
-- **UpdateAssistantStateInstalling**  True at the start of Installing.
-- **UpdateAssistantVersion**  Current package version of UpdateAssistant.
+- **activationSource**  Where activation is initiated.
+- **uriString**  URI of the launching protocol.
 
 
 ## Privacy consent logging events
@@ -5411,6 +5288,182 @@ The following fields are available:
 - **healthLogSize**  4KB.
 - **productId**  Identifier for product model.
 
+### Microsoft.Surface.Battery.Prod.BatteryInfoEvent
+
+This event includes the hardware level data about battery performance. The data collected with this event is used to help keep Windows products and services performing properly.
+
+The following fields are available:
+
+- **batteryData**  Battery Performance data.
+- **batteryData.data()**  Battery performance data.
+- **BatteryDataSize:**  Size of the battery performance data.
+- **batteryInfo.data()**  Battery performance data.
+- **BatteryInfoSize:**  Size of the battery performance data.
+- **pszBatteryDataXml**  Battery performance data.
+- **szBatteryInfo**  Battery performance data.
+
+
+### Microsoft.Surface.Battery.Prod.BatteryInfoEventV2_BPM
+
+This event includes the hardware level data about battery performance. The data The data collected with this event is used to keep Windows performing properly.
+
+The following fields are available:
+
+- **BPMCurrentlyEngaged**  Instantaneous snapshot if BPM is engaged on device.
+- **BPMExitCriteria**  What is the BPM exit criteria - 20%SOC or 50%SOC?
+- **BPMHvtCountA**  Current HVT count for BPM counter A.
+- **BPMHvtCountB**  Current HVT count for BPM counter B.
+- **bpmOptOutLifetimeCount**  BPM OptOut Lifetime Count.
+- **BPMRsocBucketsHighTemp_Values**  Time in temperature range 46°C -60°C and in the following true RSOC ranges: 0%-49%; 50%-79%; 80%-89%; 90%-94%; 95%-100%.
+- **BPMRsocBucketsLowTemp_Values**  Time in temperature range 0°C -20°C and in the following true RSOC ranges: 0%-49%; 50%-79%; 80%-89%; 90%-94%; 95%-100%.
+- **BPMRsocBucketsMediumHighTemp_Values**  Time in temperature range 36°C -45°C and in the following true RSOC ranges: 0%-49%; 50%-79%; 80%-89%; 90%-94%; 95%-100%.
+- **BPMRsocBucketsMediumLowTemp_Values**  Time in temperature range 21°C-35°C and in the following true RSOC ranges: 0%-49%; 50%-79%; 80%-89%; 90%-94%; 95%-100%.
+- **BPMTotalEngagedMinutes**  Total time that BPM was engaged.
+- **BPMTotalEntryEvents**  Total number of times entering BPM.
+- **ComponentId**  Component ID.
+- **FwVersion**  FW version that created this log.
+- **LogClass**  Log Class.
+- **LogInstance**  Log instance within class (1..n).
+- **LogVersion**  Log MGR version.
+- **MCUInstance**  Instance id used to identify multiple MCU's in a product.
+- **ProductId**  Product ID.
+- **SeqNum**  Sequence Number.
+- **TimeStamp**  UTC seconds when log was created.
+- **Ver**  Schema version.
+
+
+### Microsoft.Surface.Battery.Prod.BatteryInfoEventV2_CTT
+
+This event includes the hardware level data about battery performance. The data The data collected with this event is used to keep Windows performing properly.
+
+The following fields are available:
+
+- **BPMKioskModeStartDateInSeconds**  First time Battery Limit was turned on.
+- **BPMKioskModeTotalEngagedMinutes**  Total time Battery Limit was on (SOC value at 50%).
+- **ComponentId**  Component ID.
+- **CTTEqvTimeat35C**  Poll time every minute. Add to lifetime counter based on temperature. Only count time above 80% SOC.
+- **CTTEqvTimeat35CinBPM**  Poll time every minute. Add to lifetime counter based on temperature. Only count time above 55% SOC and when device is in BPM. Round up.
+- **CTTMinSOC1day**  Rolling 1 day minimum SOC. Value set to 0 initially.
+- **CTTMinSOC28day**  Rolling 28 day minimum SOC. Value set to 0 initially.
+- **CTTMinSOC3day**  Rolling 3 day minimum SOC. Value set to 0 initially.
+- **CTTMinSOC7day**  Rolling 7 day minimum SOC. Value set to 0 initially.
+- **CTTStartDateInSeconds**  Start date from when device was starting to be used.
+- **currentAuthenticationState**  Current Authentication State.
+- **FwVersion**  FW version that created this log.
+- **LogClass**  Log Class.
+- **LogInstance**  Log instance within class (1..n).
+- **LogVersion**  Log MGR version.
+- **MCUInstance**  Instance id used to identify multiple MCU's in a product.
+- **newSnFruUpdateCount**  New Sn FRU Update Count.
+- **newSnUpdateCount**  New Sn Update Count.
+- **ProductId**  Product ID.
+- **ProtectionPolicy**  Battery limit engaged. True (0 False).
+- **SeqNum**  Sequence Number.
+- **TimeStamp**  UTC seconds when log was created.
+- **Ver**  Schema version.
+- **VoltageOptimization**  Current CTT reduction in mV.
+
+
+### Microsoft.Surface.Battery.Prod.BatteryInfoEventV2_GG
+
+This event includes the hardware level data about battery performance. The data The data collected with this event is used to keep Windows performing properly.
+
+The following fields are available:
+
+- **cbTimeCell_Values**  cb time for different cells.
+- **ComponentId**  Component ID.
+- **cycleCount**  Cycle Count.
+- **deltaVoltage**  Delta voltage.
+- **eocChargeVoltage_Values**  EOC Charge voltage values.
+- **fullChargeCapacity**  Full Charge Capacity.
+- **FwVersion**  FW version that created this log.
+- **lastCovEvent**  Last Cov event.
+- **lastCuvEvent**  Last Cuv event.
+- **LogClass**  LOG_CLASS.
+- **LogInstance**  Log instance within class (1..n).
+- **LogVersion**  LOG_MGR_VERSION.
+- **manufacturerName**  Manufacturer name.
+- **maxChargeCurrent**  Max charge current.
+- **maxDeltaCellVoltage**  Max delta cell voltage.
+- **maxDischargeCurrent**  Max discharge current.
+- **maxTempCell**  Max temp cell.
+- **maxVoltage_Values**  Max voltage values.
+- **MCUInstance**  Instance id used to identify multiple MCU's in a product.
+- **minTempCell**  Min temp cell.
+- **minVoltage_Values**  Min voltage values.
+- **numberOfCovEvents**  Number of Cov events.
+- **numberOfCuvEvents**  Number of Cuv events.
+- **numberOfOCD1Events**  Number of OCD1 events.
+- **numberOfOCD2Events**  Number of OCD2 events.
+- **numberOfQmaxUpdates**  Number of Qmax updates.
+- **numberOfRaUpdates**  Number of Ra updates.
+- **numberOfShutdowns**  Number of shutdowns.
+- **pfStatus_Values**  pf status values.
+- **ProductId**  Product ID.
+- **qmax_Values**  Qmax values for different cells.
+- **SeqNum**  Sequence Number.
+- **TimeStamp**  UTC seconds when log was created.
+- **Ver**  Schema version.
+
+
+### Microsoft.Surface.Battery.Prod.BatteryInfoEventV2_GGExt
+
+This event includes the hardware level data about battery performance. The data The data collected with this event is used to keep Windows performing properly.
+
+The following fields are available:
+
+- **avgCurrLastRun**  Average current last run.
+- **avgPowLastRun**  Average power last run.
+- **batteryMSPN**  BatteryMSPN
+- **batteryMSSN**  BatteryMSSN.
+- **cell0Ra3**  Cell0Ra3.
+- **cell1Ra3**  Cell1Ra3.
+- **cell2Ra3**  Cell2Ra3.
+- **cell3Ra3**  Cell3Ra3.
+- **ComponentId**  Component ID.
+- **currentAtEoc**  Current at Eoc.
+- **firstPFstatusA**  First PF status-A.
+- **firstPFstatusB**  First PF status-B.
+- **firstPFstatusC**  First PF status-C.
+- **firstPFstatusD**  First PF status-D.
+- **FwVersion**  FW version that created this log.
+- **lastQmaxUpdate**  Last Qmax update.
+- **lastRaDisable**  Last Ra disable.
+- **lastRaUpdate**  Last Ra update.
+- **lastValidChargeTerm**  Last valid charge term.
+- **LogClass**  LOG CLASS.
+- **LogInstance**  Log instance within class (1..n).
+- **LogVersion**  LOG MGR VERSION.
+- **maxAvgCurrLastRun**  Max average current last run.
+- **maxAvgPowLastRun**  Max average power last run.
+- **MCUInstance**  Instance id used to identify multiple MCU's in a product.
+- **mfgInfoBlockB01**  MFG info Block B01.
+- **mfgInfoBlockB02**  MFG info Block B02.
+- **mfgInfoBlockB03**  MFG info Block B03.
+- **mfgInfoBlockB04**  MFG info Block B04.
+- **numOfRaDisable**  Number of Ra disable.
+- **numOfValidChargeTerm**  Number of valid charge term.
+- **ProductId**  Product ID.
+- **qmaxCycleCount**  Qmax cycle count.
+- **SeqNum**  Sequence Number.
+- **stateOfHealthEnergy**  State of health energy.
+- **stateOfHealthFcc**  State of health Fcc.
+- **stateOfHealthPercent**  State of health percent.
+- **TimeStamp**  UTC seconds when log was created.
+- **totalFwRuntime**  Total FW runtime.
+- **updateStatus**  Update status.
+- **Ver**  Schema version.
+
+
+### Microsoft.Surface.SystemReset.Prod.ResetCauseEventV2
+
+This event sends reason for SAM, PCH and SoC reset. The data collected with this event is used to keep Windows performing properly.
+
+The following fields are available:
+
+- **HostResetCause**  Host reset cause.
+- **PchResetCause**  PCH reset cause.
+- **SamResetCause**  SAM reset cause.
 
 ## Update Assistant events
 
@@ -5888,6 +5941,90 @@ The following fields are available:
 - **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
 - **PackageVersion**  Current package version of remediation.
 
+### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantCompatCheckResult
+
+This event provides the result of running the compatibility check for update assistant. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **CV**  The correlation vector.
+- **GlobalEventCounter**  The global event counter for all telemetry on the device.
+- **UpdateAssistantCompatCheckResultOutput**  Output of compatibility check for update assistant.
+- **UpdateAssistantVersion**  Current package version of UpdateAssistant.
+
+
+### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantDeviceInformation
+
+This event provides basic information about the device where update assistant was run. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **CV**  The correlation vector.
+- **GlobalEventCounter**  The global event counter for all telemetry on the device.
+- **UpdateAssistantAppFilePath**  Path to Update Assistant app.
+- **UpdateAssistantDeviceId**  Device Id of the Update Assistant Candidate Device.
+- **UpdateAssistantExeName**  Exe name running as Update Assistant.
+- **UpdateAssistantExternalId**  External Id of the Update Assistant Candidate Device.
+- **UpdateAssistantIsDeviceCloverTrail**  True/False is the device clovertrail.
+- **UpdateAssistantIsPushing**  True if the update is pushing to the device.
+- **UpdateAssistantMachineId**  Machine Id of the Update Assistant Candidate Device.
+- **UpdateAssistantOsVersion**  Update Assistant OS Version.
+- **UpdateAssistantPartnerId**  Partner Id for Assistant application.
+- **UpdateAssistantReportPath**  Path to report for Update Assistant.
+- **UpdateAssistantStartTime**  Start time for UpdateAssistant.
+- **UpdateAssistantTargetOSVersion**  Update Assistant Target OS Version.
+- **UpdateAssistantUiType**  The type of UI whether default or OOBE.
+- **UpdateAssistantVersion**  Current package version of UpdateAssistant.
+- **UpdateAssistantVersionInfo**  Information about Update Assistant application.
+
+
+### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantEULAProperty
+
+This event is set to true at the start of AcceptEULA. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **CV**  The correlation vector.
+- **GlobalEventCounter**  The global event counter for all telemetry on the device.
+- **UpdateAssistantEULAPropertyGeoId**  Geo Id used to show EULA.
+- **UpdateAssistantEULAPropertyRegion**  Region used to show EULA.
+- **UpdateAssistantVersion**  Current package version of UpdateAssistant.
+
+
+### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantStartState
+
+This event marks the start of an Update Assistant State. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **CV**  The correlation vector.
+- **GlobalEventCounter**  The global event counter for all telemetry on the device.
+- **UpdateAssistantStateAcceptEULA**  True at the start of AcceptEULA.
+- **UpdateAssistantStateCheckingCompat**  True at the start of Checking Compat
+- **UpdateAssistantStateCheckingUpgrade**  True at the start of CheckingUpgrade.
+- **UpdateAssistantStateDownloading**  True at the start Downloading.
+- **UpdateAssistantStateInitializingApplication**  True at the start of the state InitializingApplication.
+- **UpdateAssistantStateInitializingStates**  True at the start of InitializingStates.
+- **UpdateAssistantStateInstalling**  True at the start of Installing.
+- **UpdateAssistantStatePerformRestart**  True at the start of PerformRestart.
+- **UpdateAssistantStatePostInstall**  True at the start of PostInstall.
+- **UpdateAssistantStateShowingUpdate**  True at the start of Showing Update.
+- **UpdateAssistantStateWelcomeToNewOS**  True at the start of WelcomeToNewOS.
+- **UpdateAssistantVersion**  Current package version of UpdateAssistant.
+
+
+### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantUserActionDetails
+
+This event provides details about user action. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **CV**  The correlation vector.
+- **GlobalEventCounter**  The global event counter for all telemetry on the device.
+- **UpdateAssistantUserActionExitingState**  Exiting state name user performed action on.
+- **UpdateAssistantUserActionHResult**  HRESULT of user action.
+- **UpdateAssistantUserActionState**  State name user performed action on.
+- **UpdateAssistantVersion**  Current package version of UpdateAssistant.
 
 ## Update events
 

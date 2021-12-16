@@ -8,8 +8,8 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
-ms.date: 09/27/2019
+author: dansimp
+ms.date: 11/19/2021
 ---
 
 # EnterpriseModernAppManagement CSP
@@ -68,7 +68,7 @@ EnterpriseModernAppManagement
 For user context, use **./User/Vendor/MSFT** path and for device context, use **./Device/Vendor/MSFT** path.
 
 > [!Note]
-> Windows Holographic and Windows 10 Mobile only support per-user configuration of the EnterpriseModernAppManagement CSP.
+> Windows Holographic only supports per-user configuration of the EnterpriseModernAppManagement CSP.
 
 <a href="" id="appmanagement"></a>**AppManagement**  
 Required. Used for inventory and app management (post-install).
@@ -120,7 +120,7 @@ Query parameters:
     -   Bundle - returns installed bundle packages.
     -   Framework - returns installed framework packages.
     -   Resource - returns installed resources packages. Resources are either language, scale, or DirectX resources. They are parts of a bundle.
-    -   XAP - returns XAP package types. This filter is not supported on devices other than Windows Mobile. 
+    -   XAP - returns XAP package types. This filter is only supported on Windows Mobile.
     -   All - returns all package types.
 
     If no value is specified, the combination of Main, Bundle, and Framework are returned.
@@ -181,7 +181,7 @@ The following example removes a package for all users:
       </Target>
       <Meta><Format xmlns="syncml:metinf">xml</Format></Meta>
       <Data>
-          <Package Name="{PackageFullName}" RemoveForAllUsers=1 />
+          <Package Name="{PackageFullName}" RemoveForAllUsers="1" />
       </Data>
    </Item>
 </Exec>

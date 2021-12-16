@@ -6,11 +6,11 @@ ms.mktglfcycl:
 audience: itpro
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.reviewer:
-manager: laurawi
+manager: dougeby
 ms.topic: article
 ms.author: jaimeo
 author: jaimeo
+ms.collection: highpri
 ---
 
 # Windows Update - additional resources
@@ -30,13 +30,13 @@ The following resources provide additional information about using Windows Updat
 
 ## WSUS Troubleshooting
 
-[Troubleshooting issues with WSUS client agents](https://support.microsoft.com/help/10132/)
+[Troubleshooting issues with WSUS client agents](/troubleshoot/mem/configmgr/troubleshoot-issues-with-wsus-client-agents)
 
-[How to troubleshoot WSUS](https://support.microsoft.com/help/4025764/)
+[How to troubleshoot WSUS](/troubleshoot/mem/configmgr/troubleshoot-wsus-connection-failures)
 
-[Error 80244007 when WSUS client scans for updates](https://support.microsoft.com/help/4096317/)
+[Error 80244007 when WSUS client scans for updates](/troubleshoot/mem/configmgr/error-80244007-when-wsus-client-scans-updates)
 
-[Updates may not be installed with Fast Startup in Windows 10](https://support.microsoft.com/help/4011287/)
+[Updates may not be installed with Fast Startup in Windows 10](/troubleshoot/windows-client/deployment/updates-not-install-with-fast-startup)
 
 ## How do I reset Windows Update components?
 

@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 06/25/2021
 ---
 
@@ -246,10 +246,10 @@ Added in Windows, version 1607. Integer that specifies the status of the antisp
 
 Valid values:
 
--  0 - The status of the security provider category is good and does not need user attention.
--  1 - The status of the security provider category is not monitored by Windows Security Center (WSC).
--  2 - The status of the security provider category is poor and the computer may be at risk.
--  3 - The security provider category is in snooze state. Snooze indicates that WSC is not actively protecting the computer.
+- 0 - The status of the security provider category is good and does not need user attention.
+- 1 - The status of the security provider category is not monitored by Windows Security.
+- 2 - The status of the security provider category is poor and the computer may be at risk.
+- 3 - The security provider category is in snooze state. Snooze indicates that the Windows Security Service is not actively protecting the computer.
 
 Supported operation is Get.
 

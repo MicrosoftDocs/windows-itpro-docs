@@ -21,9 +21,9 @@ Use to configure settings for cellular connections.
 
 ## Applies to
 
-| Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| All settings | ✔️ |    |  |  |  |
+| Setting groups | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| All settings | ✔️ |  |  |  |
 
 ## PerDevice
 

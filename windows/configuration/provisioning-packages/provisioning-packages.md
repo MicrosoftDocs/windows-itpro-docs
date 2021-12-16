@@ -11,7 +11,7 @@ author: greg-lindsay
 ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
-
+ms.collection: highpri
 ---
 
 # Provisioning packages for Windows
@@ -86,18 +86,6 @@ The following table describes settings that you can configure using the wizards 
 | Configure kiosk common settings | Set tablet mode, configure welcome and shutdown screens, turn off timeout settings | ❌ | ✔️ | ❌ |
 | Developer Setup | Enable Developer Mode  | ❌ | ❌ | ✔️ |
 
-
-<!-- <table><tr><td align="left"><strong>Step</strong></td><td align="left"><strong>Description</strong></td><td><strong>Desktop wizard</strong></td><td align="center"><strong>Mobile wizard</strong></td><td><strong>Kiosk wizard</strong></td><td><strong>HoloLens wizard</strong></td></tr> -->
-<!-- <tr><td valign="top">Set up device</td><td valign="top">Assign device name,</br>enter product key to upgrade Windows,</br>configure shared used,</br>remove pre-installed software</td><td align="center" valign="top"><img src="../images/checkmark.png" alt="yes"/></td><td align="center" valign="top"><img src="../images/checkmark.png" alt="yes"/></br>(Only device name and upgrade key)</td><td align="center" valign="top"><img src="../images/checkmark.png" alt="yes"/></td><td align="center" valign="top"><img src="../images/checkmark.png" alt="yes"/></td></tr> -->
-<!-- <tr><td valign="top">Set up network</td><td valign="top">Connect to a Wi-Fi network</td><td align="center" valign="top"><img src="../images/checkmark.png" alt="yes"/></td><td align="center" valign="top"><img src="../images/checkmark.png" alt="yes"/></td><td align="center" valign="top"><img src="../images/checkmark.png" alt="yes"/></td><td align="center" valign="top"><img src="../images/checkmark.png" alt="yes"/></td></tr> -->
-<!-- <tr><td valign="top">Account management</td><td valign="top">Enroll device in Active Directory,</br>enroll device in Azure Active Directory,</br>or create a local administrator account</td><td align="center" valign="top"><img src="../images/checkmark.png" alt="yes"/></td><td align="center" valign="top"><img src="../images/crossmark.png" alt="no33"/></td><td align="center" valign="top"><img src="../images/checkmark.png" alt="yes"/></td><td align="center" valign="top"><img src="../images/checkmark.png" alt="yes"/></td></tr> -->
-<!-- <tr><td valign="top">Bulk Enrollment in Azure AD</td><td valign="top">Enroll device in Azure Active Directory</br></br>Before you use a Windows Configuration Designer wizard to configure bulk Azure AD enrollment, <a href="/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](/azure/active-directory/active-directory-azureadjoin-setup)">set up Azure AD join in your organization</a>.</td><td align="center" valign="top"><img src="../images/crossmark.png" alt="no44"/></td><td align="center" valign="top"><img src="../images/checkmark.png" alt="yes"/></td><td align="center" valign="top"><img src="../images/crossmark.png" alt="no66"/></td><td align="center" valign="top"><img src="../images/crossmark.png" alt="no55"/></td></tr> -->
-<!-- <tr><td valign="top">Add applications</td><td valign="top">Install applications using the provisioning package.</td><td align="center" valign="top"><img src="../images/checkmark.png" alt="yes"/></td><td align="center" valign="top"><img src="../images/crossmark.png" alt="no77"/></td><td align="center" valign="top"><img src="../images/checkmark.png" alt="yes"/></td><td align="center" valign="top"><img src="../images/crossmark.png" alt="no88"/></td></tr> -->
-<!-- <tr><td valign="top">Add certificates</td><td valign="top">Include a certificate file in the provisioning package.</td><td align="center" valign="top"><img src="../images/checkmark.png" alt="yes"/></td><td align="center" valign="top"><img src="../images/crossmark.png" alt="no99"/></td><td align="center" valign="top"><img src="../images/checkmark.png" alt="yes"/></td><td align="center" valign="top"><img src="../images/checkmark.png" alt="yes"/></td></tr> -->
-<!-- <tr><td valign="top">Configure kiosk account and app</td><td valign="top">Create local account to run the kiosk mode app,</br>specify the app to run in kiosk mode</td><td align="center" valign="top"><img src="../images/crossmark.png" alt="no00"/></td><td align="center" valign="top"><img src="../images/crossmark.png" alt="no111"/></td><td align="center" valign="top"><img src="../images/checkmark.png" alt="yes"/></td><td align="center" valign="top"><img src="../images/crossmark.png" alt="no222"/></td></tr> -->
-<!-- <tr><td valign="top">Configure kiosk common settings</td><td valign="top">Set tablet mode,</br>configure welcome and shutdown screens,</br>turn off timeout settings</td><td align="center" valign="top"><img src="../images/crossmark.png" alt="no333"/></td><td align="center" valign="top"><img src="../images/crossmark.png" alt="no555"/></td><td align="center" valign="top"><img src="../images/checkmark.png" alt="yes"/></td><td align="center" valign="top"><img src="../images/crossmark.png" alt="no666"/></td></tr> -->
-<!-- <tr><td valign="top">Developer Setup</td><td valign="top">Enable Developer Mode.</td><td align="center" valign="top"><img src="../images/crossmark.png" alt="n777o"/></td><td align="center" valign="top"><img src="../images/crossmark.png" alt="no444"/></td><td align="center" valign="top"><img src="../images/crossmark.png" alt="no888"/></td><td align="center" valign="top"><img src="../images/checkmark.png" alt="yes"/></td></tr></table> -->
-
 - [Instructions for the desktop wizard](provision-pcs-for-initial-deployment.md)
 - [Instructions for the kiosk wizard](../kiosk-single-app.md#wizard)
 - [Instructions for the HoloLens wizard](/hololens/hololens-provisioning#wizard)
@@ -138,7 +126,7 @@ WCD supports the following scenarios for IT administrators:
 
 * **Simple provisioning** – Enables IT administrators to define a desired configuration in WCD and then apply that configuration on target devices. The simple provisioning wizard makes the entire process quick and easy by guiding an IT administrator through common configuration settings in a step-by-step manner. 
 
-[Learn how to use simple provisioning to configure Windows computers.](provision-pcs-for-initial-deployment.md)
+  [Learn how to use simple provisioning to configure Windows computers.](provision-pcs-for-initial-deployment.md)
 
 * **Advanced provisioning (deployment of classic (Win32) and Universal Windows Platform (UWP) apps, and certificates)** – Allows an IT administrator to use WCD to open provisioning packages in the advanced settings editor and include apps for deployment on end-user devices. 
 

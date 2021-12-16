@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 06/26/2017
 ---
 
@@ -29,7 +29,7 @@ Each policy entry identifies one or more applications in combination with a host
 
 The following shows the CMPolicy configuration service provider management object in tree format as used by both Open Mobile Alliance (OMA) Client Provisioning and OMA Device Management.
 
-```
+```console
 ./Vendor/MSFT
 CMPolicy
 ----PolicyName
@@ -42,6 +42,7 @@ CMPolicy
 ----------------ConnectionID
 ----------------Type
 ```
+
 <a href="" id="policyname"></a>***policyName***  
 Defines the name of the policy.
 
@@ -83,154 +84,44 @@ For `CMST_CONNECTION_NAME`, specify the connection name. For example, if you hav
 
 For `CMST_CONNECTION_TYPE`, specify the GUID for the desired connection type. The curly brackets {} around the GUID are required. The following connection types are available:
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="80%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Connection type</th>
-<th>GUID</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>GSM</p></td>
-<td><p>{A05DC613-E393-40ad-AA89-CCCE04277CD9}</p></td>
-</tr>
-<tr class="even">
-<td><p>CDMA</p></td>
-<td><p>{274AD55A-4A70-4E35-93B3-AE2D2E6727FC}</p></td>
-</tr>
-<tr class="odd">
-<td><p>Legacy 3GPP</p></td>
-<td><p>{6DE4C04B-B74E-47FA-99E5-8F2097C06A92}</p></td>
-</tr>
-<tr class="even">
-<td><p>LTE</p></td>
-<td><p>{2378E547-8312-46A5-905E-5C581E92693B}</p></td>
-</tr>
-<tr class="odd">
-<td><p>Wi-Fi</p></td>
-<td><p>{8568B401-858E-4B7B-B3DF-0FD4927F131B}</p></td>
-</tr>
-<tr class="even">
-<td><p>Wi-Fi hotspot</p></td>
-<td><p>{072FC7DC-1D93-40D1-9BB0-2114D7D73434}</p></td>
-</tr>
-</tbody>
-</table>
+|Connection type|GUID|
+|--- |--- |
+|GSM|{A05DC613-E393-40ad-AA89-CCCE04277CD9}|
+|CDMA|{274AD55A-4A70-4E35-93B3-AE2D2E6727FC}|
+|Legacy 3GPP|{6DE4C04B-B74E-47FA-99E5-8F2097C06A92}|
+|LTE|{2378E547-8312-46A5-905E-5C581E92693B}|
+|Wi-Fi|{8568B401-858E-4B7B-B3DF-0FD4927F131B}|
+|Wi-Fi hotspot|{072FC7DC-1D93-40D1-9BB0-2114D7D73434}|
 
- 
 
 For `CMST_CONNECTION_NETWORK_TYPE`, specify the GUID for the desired network type. The curly brackets {} around the GUID are required. The following network types are available:
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="80%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Network type</th>
-<th>GUID</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>GPRS</p></td>
-<td><p>{AFB7D659-FC1F-4EA5-BDD0-0FDA62676D96}</p></td>
-</tr>
-<tr class="even">
-<td><p>1XRTT</p></td>
-<td><p>{B1E700AE-A62F-49FF-9BBE-B880C995F27D}</p></td>
-</tr>
-<tr class="odd">
-<td><p>EDGE</p></td>
-<td><p>{C347F8EC-7095-423D-B838-7C7A7F38CD03}</p></td>
-</tr>
-<tr class="even">
-<td><p>WCDMA UMTS</p></td>
-<td><p>{A72F04C6-9BE6-4151-B5EF-15A53E12C482}</p></td>
-</tr>
-<tr class="odd">
-<td><p>WCDMA FOMA</p></td>
-<td><p>{B8326098-F845-42F3-804E-8CC3FF7B50B4}</p></td>
-</tr>
-<tr class="even">
-<td><p>1XEVDO</p></td>
-<td><p>{DD42DF39-EBDF-407C-8146-1685416401B2}</p></td>
-</tr>
-<tr class="odd">
-<td><p>1XEVDV</p></td>
-<td><p>{61BF1BFD-5218-4CD4-949C-241CA3F326F6}</p></td>
-</tr>
-<tr class="even">
-<td><p>HSPA HSDPA</p></td>
-<td><p>{047F7282-BABD-4893-AA77-B8B312657F8C}</p></td>
-</tr>
-<tr class="odd">
-<td><p>HSPA HSUPA</p></td>
-<td><p>{1536A1C6-A4AF-423C-8884-6BDDA3656F84}</p></td>
-</tr>
-<tr class="even">
-<td><p>LTE</p></td>
-<td><p>{B41CBF43-6994-46FF-9C2F-D6CA6D45889B}</p></td>
-</tr>
-<tr class="odd">
-<td><p>EHRPD</p></td>
-<td><p>{7CFA04A5-0F3F-445C-88A4-C86ED2AD94EA}</p></td>
-</tr>
-<tr class="even">
-<td><p>Ethernet 10 Mbps</p></td>
-<td><p>{97D3D1B3-854A-4C32-BD1C-C13069078370}</p></td>
-</tr>
-<tr class="odd">
-<td><p>Ethernet 100 Mbps</p></td>
-<td><p>{A8F4FE66-8D04-43F5-9DD2-2A85BD21029B}</p></td>
-</tr>
-<tr class="even">
-<td><p>Ethernet Gbps</p></td>
-<td><p>{556C1E6B-B8D4-448E-836D-9451BA4CCE75}</p></td>
-</tr>
-</tbody>
-</table>
-
+|Network type|GUID|
+|--- |--- |
+|GPRS|{AFB7D659-FC1F-4EA5-BDD0-0FDA62676D96}|
+|1XRTT|{B1E700AE-A62F-49FF-9BBE-B880C995F27D}|
+|EDGE|{C347F8EC-7095-423D-B838-7C7A7F38CD03}|
+|WCDMA UMTS|{A72F04C6-9BE6-4151-B5EF-15A53E12C482}|
+|WCDMA FOMA|{B8326098-F845-42F3-804E-8CC3FF7B50B4}|
+|1XEVDO|{DD42DF39-EBDF-407C-8146-1685416401B2}|
+|1XEVDV|{61BF1BFD-5218-4CD4-949C-241CA3F326F6}|
+|HSPA HSDPA|{047F7282-BABD-4893-AA77-B8B312657F8C}|
+|HSPA HSUPA|{1536A1C6-A4AF-423C-8884-6BDDA3656F84}|
+|LTE|{B41CBF43-6994-46FF-9C2F-D6CA6D45889B}|
+|EHRPD|{7CFA04A5-0F3F-445C-88A4-C86ED2AD94EA}|
+|Ethernet 10 Mbps|{97D3D1B3-854A-4C32-BD1C-C13069078370}|
+|Ethernet 100 Mbps|{A8F4FE66-8D04-43F5-9DD2-2A85BD21029B}|
+|Ethernet Gbps|{556C1E6B-B8D4-448E-836D-9451BA4CCE75}|
  
 
 For `CMST_CONNECTION_DEVICE_TYPE`, specify the GUID for the desired device type. The curly brackets {} around the GUID are required. The following device types are available:
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="80%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Device type</th>
-<th>GUID</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Cellular device</p></td>
-<td><p>{F9A53167-4016-4198-9B41-86D9522DC019}</p></td>
-</tr>
-<tr class="even">
-<td><p>Ethernet</p></td>
-<td><p>{97844272-00C7-4572-B20A-D8D861C095F2}</p></td>
-</tr>
-<tr class="odd">
-<td><p>Bluetooth</p></td>
-<td><p>{1D793123-701A-4fd0-B6AE-9C3C57E99C2C}</p></td>
-</tr>
-<tr class="even">
-<td><p>Virtual</p></td>
-<td><p>{EAA02CE5-9C70-4E87-97FE-55C9DEC847D4}</p></td>
-</tr>
-</tbody>
-</table>
+|Device type|GUID|
+|--- |--- |
+|Cellular device|{F9A53167-4016-4198-9B41-86D9522DC019}|
+|Ethernet|{97844272-00C7-4572-B20A-D8D861C095F2}|
+|Bluetooth|{1D793123-701A-4fd0-B6AE-9C3C57E99C2C}|
+|Virtual|{EAA02CE5-9C70-4E87-97FE-55C9DEC847D4}|
 
  
 
@@ -479,36 +370,11 @@ Adding a host-based mapping policy:
 ## Microsoft Custom Elements
 
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Available</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>parm-query</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td><p>uncharacteristic</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="odd">
-<td><p>characteristic-query</p></td>
-<td><p>Yes</p>
-<p>Recursive query: Yes</p>
-<p>Top-level query: Yes</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Element|Available|
+|--- |--- |
+|parm-query|Yes|
+|uncharacteristic|Yes|
+|characteristic-query|Yes<br> <br>Recursive query: Yes<br> <br>Top-level query: Yes|
 
 ## Related topics
 

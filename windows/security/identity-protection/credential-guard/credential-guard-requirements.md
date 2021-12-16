@@ -1,7 +1,7 @@
 ---
 title: Windows Defender Credential Guard Requirements (Windows)
 description: Windows Defender Credential Guard baseline hardware, firmware, and software requirements, and additional protections for improved security.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
@@ -10,20 +10,21 @@ audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-ms.collection: M365-identity-device-management
+ms.collection:
+  - M365-identity-device-management
+  - highpri
 ms.topic: article
-ms.date: 09/30/2020
-ms.reviewer: 
+ms.date: 12/16/2021
 ---
 
 # Windows Defender Credential Guard: Requirements
 
 ## Applies to
 
-- Windows 10
-- Windows 11
-- Windows Server 2016
+- Windows 11 Professional and Enterprise
+- Windows 10 Professional and Enterprise
 - Windows Server 2019
+- Windows Server 2016
 
 For Windows Defender Credential Guard to provide protection, the computers you are protecting must meet certain baseline hardware, firmware, and software requirements, which we will refer to as [Hardware and software requirements](#hardware-and-software-requirements). Additionally, Windows Defender Credential Guard blocks specific authentication capabilities, so applications that require such capabilities will break. We will refer to these requirements as [Application requirements](#application-requirements). Beyond these requirements, computers can meet additional hardware and firmware qualifications, and receive additional protections. Those computers will be more hardened against certain threats. For detailed information on baseline protections, plus protections for improved security that are associated with hardware and firmware options available in 2015, 2016, and 2017, refer to the tables in [Security Considerations](#security-considerations).
 

@@ -1,6 +1,6 @@
 ---
-title: Whats new in Microsoft Store for Business and Education
-description: Learn about newest features in Microsoft Store for Business and Microsoft Store for Education.
+title: Microsoft Store for Business and Education release history
+description: Know the release history of Microsoft Store for Business and Microsoft Store for Education.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -18,7 +18,7 @@ manager: dansimp
 > [!IMPORTANT]
 > Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
 
-Microsoft Store for Business and Education regularly releases new and improved features. Here's a summary of new or updated features in previous releases. 
+Microsoft Store for Business and Education regularly releases new and improved features. Here's a summary of new or updated features in previous releases.
 
 Looking for info on the latest release? Check out [What's new in Microsoft Store for Business and Education](whats-new-microsoft-store-business-education.md) 
 

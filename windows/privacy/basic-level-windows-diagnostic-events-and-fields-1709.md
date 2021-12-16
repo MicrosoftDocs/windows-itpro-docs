@@ -2,7 +2,7 @@
 description: Use this article to learn more about what Windows diagnostic data is gathered at the basic level.
 title: Windows 10, version 1709 basic diagnostic events and fields (Windows 10)
 keywords: privacy, telemetry
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 09/08/2021
+ms.date: 
 ms.reviewer:
+ms.technology: privacy
 ---
 
 
@@ -34,7 +35,7 @@ Use this article to learn about diagnostic events, grouped by event area, and th
 You can learn more about Windows functional and diagnostic data through these articles:
 
 - [Required Windows 11 diagnostic events and fields](required-windows-11-diagnostic-events-and-fields.md)
-- [Windows 10, version 20H2 and Windows 10, version 2004 basic diagnostic events and fields](required-windows-diagnostic-data-events-and-fields-2004.md)
+- [Windows 10, version 21H2, Windows 10, version 21H1, Windows 10, version 20H2 and Windows 10, version 2004 required Windows diagnostic events and fields](required-windows-diagnostic-data-events-and-fields-2004.md)
 - [Windows 10, version 1903 and Windows 10, version 1909 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1903.md)
 - [Windows 10, version 1809 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1809.md)
 - [Windows 10, version 1803 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1803.md)
@@ -3028,22 +3029,6 @@ This event determines the error code that was returned when verifying Internet c
 The following fields are available:
 
 - **winInetError**  The HResult of the operation.
-
-
-## Other events
-
-### Microsoft.ServerManagementExperience.Gateway.Service.ManagedNodeProperties
-
-This is a periodic rundown event that contains more detailed information about the nodes added to this Windows Admin Center gateway for management.
-
-The following fields are available:
-
-- **nodeId**  The nodeTypeId concatenated with the hostname or IP address that gateway uses to connect to this node.
-- **nodeOperatingSystem**  A user friendly description of the node's OS version.
-- **nodeOSVersion**  A major or minor build version string for the node's OS.
-- **nodeTypeId**  A string that distinguishes between a connection target, whether it is a client, server, cluster or a hyper-converged cluster.
-- **otherProperties**  Contains a JSON object with variable content and may contain: "nodes": a list of host names or IP addresses of the servers belonging to a cluster, "aliases": the alias if it is set for this connection, "lastUpdatedTime": the number of milliseconds since Unix epoch when this connection was last updated, "ncUri", "caption", "version", "productType", "networkName", "operatingSystem", "computerManufacturer", "computerModel", "isS2dEnabled". This JSON object is formatted as an quotes-escaped string.
-
 
 ## Privacy logging notification events
 

@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: dansimp
-ms.date: 06/26/2017
+ms.date: 10/25/2021
 ---
 
 # BrowserFavorite CSP
@@ -17,14 +17,15 @@ ms.date: 06/26/2017
 
 The BrowserFavorite configuration service provider is used to add and remove URLs from the favorites list on a device.
 
-> **Note**  BrowserFavorite CSP is only supported in Windows Phone 8.1.
+> [!Note]
+> BrowserFavorite CSP is only supported in Windows Phone 8.1.
 
  
 
 The BrowserFavorite configuration service provider manages only the favorites at the root favorite folder level. It does not manage subfolders under the root favorite folder nor does it manage favorites under a subfolder.
 
-> **Note**  
-This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_INTERNET\_EXPLORER\_FAVORITES capabilities to be accessed from a network configuration application.
+> [!Note]
+> This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_INTERNET\_EXPLORER\_FAVORITES capabilities to be accessed from a network configuration application.
 
  
 
@@ -39,7 +40,8 @@ favorite name
 <a href="" id="favorite-name-------------"></a>***favorite name***   
 Required. Specifies the user-friendly name of the favorite URL that is displayed in the Favorites list of Internet Explorer.
 
-> **Note**  The *favorite name* should contain only characters that are valid in the Windows file system. The invalid characters are: \\ / : \* ? " < > |
+> [!Note]
+> The *favorite name* should contain only characters that are valid in the Windows file system. The invalid characters are: \\ / : \* ? " < > |
 
  
 
@@ -69,40 +71,12 @@ Adding a new browser favorite.
 
 The following table shows the Microsoft custom elements that this configuration service provider supports for OMA Client Provisioning.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elements</th>
-<th>Available</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Parm-query</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td><p>Noparm</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="odd">
-<td><p>Nocharacteristic</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td><p>Characteristic-query</p></td>
-<td><p>Yes</p>
-<p>Recursive query: Yes</p>
-<p>Top-level query: Yes</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Elements|Available|
+|--- |--- |
+|Parm-query|Yes|
+|Noparm|Yes|
+|Nocharacteristic|Yes|
+|Characteristic-query|Yes<br> <br>Recursive query: Yes<br> <br>Top-level query: Yes|
 
 ## Related topics
 

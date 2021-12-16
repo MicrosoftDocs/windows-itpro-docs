@@ -1,7 +1,6 @@
 ---
 title: Demonstrate Autopilot deployment
-ms.reviewer:
-manager: laurawi
+manager: dougeby
 description: In this article, find step-by-step instructions on how to set up a Virtual Machine with a Windows Autopilot deployment.
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune, upgrade
 ms.prod: w10
@@ -11,7 +10,9 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
 ms.author: greglin
-ms.collection: M365-modern-desktop
+ms.collection:
+  - M365-modern-desktop
+  - highpri
 ms.topic: article
 ms.custom: 
  - autopilot
@@ -23,7 +24,7 @@ ms.custom:
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 
 To get started with Windows Autopilot, you should try it out with a virtual machine (VM) or you can use a physical device that will be wiped and then have a fresh install of Windows 10.
 
@@ -47,7 +48,7 @@ These are the things you'll need to complete this lab:
 
 |    | Description |
 |:---|:---|
-|**Windows 10 installation media**|Windows 10 Professional or Enterprise (ISO file) for a supported version of Windows 10, semi-annual channel. If you don't already have an ISO to use, a link is provided to download an <a href="https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise" data-raw-source="[evaluation version of Windows 10 Enterprise](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)">evaluation version of Windows 10 Enterprise</a>.|
+|**Windows 10 installation media**|Windows 10 Professional or Enterprise (ISO file) for a supported version of Windows 10, General Availability Channel. If you don't already have an ISO to use, a link is provided to download an <a href="https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise" data-raw-source="[evaluation version of Windows 10 Enterprise](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)">evaluation version of Windows 10 Enterprise</a>.|
 |**Internet access**|If you're behind a firewall, see the detailed <a href="/mem/autopilot/software-requirements#networking-requirements" data-raw-source="[networking requirements](/mem/autopilot/software-requirements#networking-requirements)">networking requirements</a>. Otherwise, just ensure that you have a connection to the internet.|
 |**Hyper-V or a physical device running Windows 10**|The guide assumes that you'll use a Hyper-V VM, and provides instructions to install and configure Hyper-V if needed. To use a physical device, skip the steps to install and configure Hyper-V.|
 |**An account with Azure Active Directory (AD) Premium license**|This guide will describe how to obtain a free 30-day trial Azure AD Premium subscription that can be used to complete the lab.|

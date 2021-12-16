@@ -104,7 +104,7 @@ This event generates on domain controllers, member servers, and workstations.
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -143,7 +143,7 @@ This event generates on domain controllers, member servers, and workstations.
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -182,7 +182,7 @@ This event generates on domain controllers, member servers, and workstations.
     | 0x0                     | Status OK.  |
 
 > [!NOTE]
-> To see the meaning of other status or substatus codes, you might also check for status code in the Window header file ntstatus.h in Windows SDK.
+> To see the meaning of other status or substatus codes, you might also check for status code in the Windows header file ntstatus.h in Windows SDK.
 
 More information: <https://dev.windows.com/en-us/downloads>
 

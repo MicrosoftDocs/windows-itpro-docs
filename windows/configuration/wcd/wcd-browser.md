@@ -19,13 +19,13 @@ Use to configure browser settings that should only be set by OEMs who are part o
 
 ## Applies to
 
-| Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [AllowPrelaunch](#allowprelaunch) |  |    | ✔️ |  |  |
-| [FavoriteBarItems](#favoritebaritems) | ✔️ |    |  |  |  |
-| [Favorites](#favorites) |  |  ✔️  |  |  |  |
-| [PartnerSearchCode](#partnersearchcode)  | ✔️ | ✔️ | ✔️ |  |  |
-| [SearchProviders](#searchproviders) |   |  ✔️  |  |  |  |
+| Setting groups | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| [AllowPrelaunch](#allowprelaunch) |  | ✔️ |  |  |
+| [FavoriteBarItems](#favoritebaritems) | ✔️ |  |  |  |
+| [Favorites](#favorites) |  |  |  |  |
+| [PartnerSearchCode](#partnersearchcode)  | ✔️ | ✔️ |  |  |
+| [SearchProviders](#searchproviders) |   |   |  |  |
 
 
 ## AllowPrelaunch

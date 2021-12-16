@@ -37,9 +37,8 @@ It is important to understand the different Wi-Fi components involved, their exp
 The intention of this troubleshooter is to show how to find a starting point in the verbosity of wireless_dbg ETW and home in on the responsible components that are causing the connection problem.
 
 ### Known Issues and fixes
-** **
 
-| **OS version** | **Fixed in** |
+| OS version | Fixed in |
 | --- | --- |
 | **Windows 10, version 1803** | [KB4284848](https://support.microsoft.com/help/4284848) |
 | **Windows 10, version 1709** | [KB4284822](https://support.microsoft.com/help/4284822) |
@@ -54,13 +53,13 @@ Make sure that you install the latest Windows updates, cumulative updates, and r
 - [Windows 10 version 1511](https://support.microsoft.com/help/4000824)
 - [Windows 8.1 and Windows Server 2012 R2](https://support.microsoft.com/help/4009470)
 - [Windows Server 2012](https://support.microsoft.com/help/4009471)
-- [Windows 7 SP1 and Windows Server 2008 R2 SP1](https://support.microsoft.com/help/40009469)
+- [Windows 7 SP1 and Windows Server 2008 R2 SP1](https://support.microsoft.com/help/4009469)
 
 ## Data Collection
 
 1. Network Capture with ETW. Enter the following at an elevated command prompt:
 
-    ```
+    ```console
     netsh trace start wireless_dbg capture=yes overwrite=yes maxsize=4096 tracefile=c:\tmp\wireless.etl
     ```
 2. Reproduce the issue.
@@ -70,12 +69,12 @@ Make sure that you install the latest Windows updates, cumulative updates, and r
     - If intermittent connection drops trigger stop command on a script (ping or test network constantly until fail, then netsh trace stop).
 3. Stop the trace by entering the following command: 
 
-    ```
+    ```console
     netsh trace stop
     ```
 4. To convert the output file to text format: 
 
-    ```
+    ```console
     netsh trace convert c:\tmp\wireless.etl
     ```
 
@@ -85,17 +84,13 @@ See the [example ETW capture](#example-etw-capture) at the bottom of this articl
 
 The following is a high-level view of the main wifi components in Windows.
 
-<table>
-<tr><td><img src="images/wcm.png" alt="Windows Connection Manager"></td><td>The <b>Windows Connection Manager</b> (Wcmsvc) is closely associated with the UI controls (taskbar icon) to connect to various networks, including wireless networks. It accepts and processes input from the user and feeds it to the core wireless service. </td></tr>
-<tr><td><img src="images/wlan.png" alt="WLAN Autoconfig Service"></td><td>The <b>WLAN Autoconfig Service</b> (WlanSvc) handles the following core functions of wireless networks in windows:
-
-- Scanning for wireless networks in range
-- Managing connectivity of wireless networks</td></tr>
-<tr><td><img src="images/msm.png" alt="Media Specific Module"></td><td>The <b>Media Specific Module</b> (MSM) handles security aspects of connection being established.</td></tr>
-<tr><td><img src="images/wifi-stack.png" alt="Native WiFi stack"></td><td>The <b>Native WiFi stack</b> consists of drivers and wireless APIs to interact with wireless miniports and the supporting user-mode Wlansvc.</td></tr>
-<tr><td><img src="images/miniport.png" alt="Wireless miniport"></td><td>Third-party <b>wireless miniport</b> drivers interface with the upper wireless stack to provide notifications to and receive commands from Windows.</td></tr>
-</table>
-
+|Wi-fi Components|Description|
+|--- |--- |
+|![Windows Connection Manager](images/wcm.png)|The Windows Connection Manager (Wcmsvc) is closely associated with the UI controls (taskbar icon) to connect to various networks, including wireless networks. It accepts and processes input from the user and feeds it to the core wireless service.|
+|![WLAN Autoconfig Service](images/wlan.png)|The WLAN Autoconfig Service (WlanSvc) handles the following core functions of wireless networks in windows:<li> Scanning for wireless networks in range<li>Managing connectivity of wireless networks|
+|![Media Specific Module](images/msm.png)|The Media Specific Module (MSM) handles security aspects of connection being established.|
+|![Native WiFi stack](images/wifi-stack.png)|The Native WiFi stack consists of drivers and wireless APIs to interact with wireless miniports and the supporting user-mode Wlansvc.|
+|![Wireless miniport](images/miniport.png)|Third-party wireless miniport drivers interface with the upper wireless stack to provide notifications to and receive commands from Windows.|
 
 The wifi connection state machine has the following states:
 - Reset
@@ -109,39 +104,39 @@ The wifi connection state machine has the following states:
 
 Standard wifi connections tend to transition between states such as:
 
-**Connecting**
+- Connecting
 
-Reset --> Ihv_Configuring --> Configuring --> Associating --> Authenticating --> Connected
+  Reset --> Ihv_Configuring --> Configuring --> Associating --> Authenticating --> Connected
 
-**Disconnecting**
+- Disconnecting
 
-Connected --> Roaming --> Wait_For_Disconnected --> Disconnected --> Reset
+  Connected --> Roaming --> Wait_For_Disconnected --> Disconnected --> Reset
 
->Filtering the ETW trace with the [TextAnalysisTool](https://github.com/TextAnalysisTool/Releases) (TAT) is an easy first step to determine where a failed connection setup is breaking down.  A useful [wifi filter file](#wifi-filter-file) is included at the bottom of this article.
+Filtering the ETW trace with the [TextAnalysisTool](https://github.com/TextAnalysisTool/Releases) (TAT) is an easy first step to determine where a failed connection setup is breaking down.  A useful [wifi filter file](#wifi-filter-file) is included at the bottom of this article.
 
 Use the **FSM transition** trace filter to see the connection state machine. You can see [an example](#textanalysistool-example) of this filter applied in the TAT at the bottom of this page.
 
 The following is an example of a good connection setup:
 
-<pre>
+```console
 44676 [2]0F24.1020::‎2018‎-‎09‎-‎17 10:22:14.658 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: Disconnected to State: Reset
 45473 [1]0F24.1020::‎2018‎-‎09‎-‎17 10:22:14.667 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: Reset to State: Ihv_Configuring
 45597 [3]0F24.1020::‎2018‎-‎09‎-‎17 10:22:14.708 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: Ihv_Configuring to State: Configuring
 46085 [2]0F24.17E0::‎2018‎-‎09‎-‎17 10:22:14.710 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: Configuring to State: Associating
 47393 [1]0F24.1020::‎2018‎-‎09‎-‎17 10:22:14.879 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: Associating to State: Authenticating
 49465 [2]0F24.17E0::‎2018‎-‎09‎-‎17 10:22:14.990 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: Authenticating to State: Connected
-</pre>
+```
 
 The following is an example of a failed connection setup:
 
-<pre>
+```console
 44676 [2]0F24.1020::‎2018‎-‎09‎-‎17 10:22:14.658 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: Disconnected to State: Reset
 45473 [1]0F24.1020::‎2018‎-‎09‎-‎17 10:22:14.667 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: Reset to State: Ihv_Configuring
 45597 [3]0F24.1020::‎2018‎-‎09‎-‎17 10:22:14.708 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: Ihv_Configuring to State: Configuring
 46085 [2]0F24.17E0::‎2018‎-‎09‎-‎17 10:22:14.710 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: Configuring to State: Associating
 47393 [1]0F24.1020::‎2018‎-‎09‎-‎17 10:22:14.879 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: Associating to State: Authenticating
 49465 [2]0F24.17E0::‎2018‎-‎09‎-‎17 10:22:14.990 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: Authenticating to State: Roaming
-</pre>
+```
 
 By identifying the state at which the connection fails, one can focus more specifically in the trace on logs just prior to the last known good state. 
 
@@ -159,7 +154,7 @@ Enable the **FSM transition, SecMgr Transition,** and **AuthMgr Transition** fil
 
 Continuing with the example above, the combined filters look like this:
 
-<pre>
+```console
 [2] 0C34.2FF0::08/28/17-13:24:28.693 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: 
 Reset to State: Ihv_Configuring
 [2] 0C34.2FF0::08/28/17-13:24:28.693 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: 
@@ -177,7 +172,7 @@ Associating to State: Authenticating
 [2] 0C34.2FF0::08/28/17-13:24:29.7512788 [Microsoft-Windows-WLAN-AutoConfig]Port[13] Peer 8A:15:14:B6:25:10 SecMgr Transition DEACTIVATE (11) --> INACTIVE (1)
 [2] 0C34.2FF0::08/28/17-13:24:29.7513404 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: 
 Authenticating to State: Roaming
-</pre>
+```
 
 > [!NOTE]
 > In the next to last line the SecMgr transition is suddenly deactivating:<br>
@@ -186,7 +181,7 @@ Authenticating to State: Roaming
 
 Enabling the **Microsoft-Windows-WLAN-AutoConfig** filter will show more detail leading to the DEACTIVATE transition:
 
-<pre>
+```console
 [3] 0C34.2FE8::08/28/17-13:24:28.902 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: 
 Associating to State: Authenticating
 [1] 0C34.275C::08/28/17-13:24:28.960 [Microsoft-Windows-WLAN-AutoConfig]Port[13] Peer 8A:15:14:B6:25:10 SecMgr Transition START AUTH (3) --> WAIT FOR AUTH SUCCESS (4)
@@ -200,7 +195,7 @@ Associating to State: Authenticating
  [2] 0C34.2FF0::08/28/17-13:24:29.7512788 [Microsoft-Windows-WLAN-AutoConfig]Port[13] Peer 8A:15:14:B6:25:10 SecMgr Transition DEACTIVATE (11) --> INACTIVE (1)
 [2] 0C34.2FF0::08/28/17-13:24:29.7513404 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: 
 Authenticating to State: Roaming
-</pre>
+```
 
 The trail backwards reveals a **Port Down** notification:
 
@@ -212,7 +207,7 @@ Below, the MSM is the native wifi stack. These are Windows native wifi drivers w
 
 Enable trace filter for **[Microsoft-Windows-NWifi]:**
 
-<pre>
+```console
 [3] 0C34.2FE8::08/28/17-13:24:28.902 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: 
 Associating to State: Authenticating
 [1] 0C34.275C::08/28/17-13:24:28.960 [Microsoft-Windows-WLAN-AutoConfig]Port[13] Peer 8A:15:14:B6:25:10 SecMgr Transition START AUTH (3) --> WAIT FOR AUTH SUCCESS (4)
@@ -226,12 +221,14 @@ Associating to State: Authenticating
 [2] 0C34.2FF0::08/28/17-13:24:29.751 [Microsoft-Windows-WLAN-AutoConfig]Port[13] Peer 8A:15:14:B6:25:10 SecMgr Transition WAIT FOR AUTH SUCCESS (7) --> DEACTIVATE (11)
  [2] 0C34.2FF0::08/28/17-13:24:29.7512788 [Microsoft-Windows-WLAN-AutoConfig]Port[13] Peer 8A:15:14:B6:25:10 SecMgr Transition DEACTIVATE (11) --> INACTIVE (1)
 [2] 0C34.2FF0::08/28/17-13:24:29.7513404 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: 
-Authenticating to State: Roaming</pre>
+Authenticating to State: Roaming
+```
 
 In the trace above, we see the line:
 
-<pre>
-[0]0000.0000::‎08/28/17-13:24:29.127 [Microsoft-Windows-NWiFi]DisAssoc: 0x8A1514B62510 Reason: 0x4</pre>
+```console
+[0]0000.0000::‎08/28/17-13:24:29.127 [Microsoft-Windows-NWiFi]DisAssoc: 0x8A1514B62510 Reason: 0x4
+```
 
 This is followed by **PHY_STATE_CHANGE** and **PORT_DOWN** events due to a disassociate coming from the Access Point (AP), as an indication to deny the connection. This could be due to invalid credentials, connection parameters, loss of signal/roaming, and various other reasons for aborting a connection. The action here would be to examine the reason for the disassociate sent from the indicated AP MAC (8A:15:14:B6:25:10). This would be done by examining internal logging/tracing from the AP.
 
@@ -242,7 +239,7 @@ This is followed by **PHY_STATE_CHANGE** and **PORT_DOWN** events due to a disas
 
 ## Example ETW capture
 
-<pre>
+```console
 C:\tmp>netsh trace start wireless_dbg capture=yes overwrite=yes maxsize=4096 tracefile=c:\tmp\wireless.etl
 
 Trace configuration:
@@ -283,13 +280,13 @@ C:\tmp>dir
 01/09/2019  02:59 PM         2,786,540 wireless.txt
                3 File(s)     10,395,004 bytes
                2 Dir(s)  46,648,332,288 bytes free
-</pre>
+```
 
 ## Wifi filter file
 
 Copy and paste all the lines below and save them into a text file named "wifi.tat." Load the filter file into the TextAnalysisTool by clicking **File > Load Filters**.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <TextAnalysisTool.NET version="2018-01-03" showOnlyFilteredLines="False">
   <filters>
