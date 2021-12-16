@@ -52,7 +52,7 @@ Common elements are used by other OMA DM element types. The following table list
 |MsgID|Specifies a unique identifier for an OMA DM session message.|
 |MsgRef|Specifies the ID of the corresponding request message. This element takes the value of the request message MsgID element.|
 |RespURI|Specifies the URI that the recipient must use when sending a response to this message.|
-|SessionID|Specifies the identifier of the OMA DM session associated with the containing message.<div class="alert">**Note**<br>  If the server does not notify the device that it supports a new version (through SyncApplicationVersion node in the DMClient CSP), the desktop client returns the SessionID in integer in decimal format and the mobile device client returns 2 bytes as a string. If the server supports DM session sync version 2.0, which is used in Windows 10, the desktop and mobile device client returns 2 bytes.</div>|
+|SessionID|Specifies the identifier of the OMA DM session associated with the containing message.<div class="alert">**Note**<br>  If the server does not notify the device that it supports a new version (through SyncApplicationVersion node in the DMClient CSP), the client returns the SessionID in integer in decimal format. If the server supports DM session sync version 2.0, which is used in Windows 10, the device client returns 2 bytes.</div>|
 |Source|Specifies the message source address.|
 |SourceRef|Specifies the source of the corresponding request message. This element takes the value of the request message Source element and is returned in the Status or Results element.|
 |Target|Specifies the address of the node, in the DM Tree, that is the target of the OMA DM command.|
