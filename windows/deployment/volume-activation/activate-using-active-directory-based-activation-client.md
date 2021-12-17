@@ -21,7 +21,7 @@ ms.collection: highpri
 # Activate using Active Directory-based activation
 
 > Applies to
->
+>- Windows 11
 >- Windows 10
 >- Windows 8.1
 >- Windows 8
@@ -29,9 +29,10 @@ ms.collection: highpri
 >- Windows Server 2012
 >- Windows Server 2016
 >- Windows Server 2019
->- Office 2013*
->- Office 2016*
+>- Office 2021*
 >- Office 2019*
+>- Office 2016*
+>- Office 2013*
 
 **Looking for retail activation?**
 
@@ -117,6 +118,8 @@ When a reactivation event occurs, the client queries AD DS for the activation o
     > - [Office 2016 VL pack](https://www.microsoft.com/download/details.aspx?id=49164)
     >
     > - [Office 2019 VL pack](https://www.microsoft.com/download/details.aspx?id=57342)
+    >
+    > - [Office 2021 VL pack](https://www.microsoft.com/download/details.aspx?id=103446)
 
 8. After activating the key, click **Commit**, and then click **Close**.
 
