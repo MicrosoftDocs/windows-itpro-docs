@@ -18,7 +18,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## NetworkListManager policies  
+## NetworkListManager policies 
 
 <dl>
   <dd>
