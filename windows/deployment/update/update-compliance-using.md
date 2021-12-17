@@ -26,7 +26,7 @@ ms.custom: seo-marvel-apr2020
 In this section you'll learn how to use Update Compliance to monitor your device's Windows updates and Microsoft Defender Antivirus status. To configure your environment for use with Update Compliance, refer to [Get started with Update Compliance](update-compliance-get-started.md).
 
 
-Update Compliance: 
+Update Compliance:
 - Provides detailed deployment monitoring for Windows client feature and quality updates.
 - Reports when devices need attention due to issues related to update deployment.
 - Shows bandwidth usage and savings for devices that are configured to use [Delivery Optimization](waas-delivery-optimization.md).
