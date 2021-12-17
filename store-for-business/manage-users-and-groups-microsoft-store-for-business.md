@@ -44,5 +44,5 @@ If you created a new Azure AD directory when you signed up for Store for Busines
 You can use the [Office 365 admin dashboard](https://portal.office.com/adminportal) or [Azure management portal](https://go.microsoft.com/fwlink/p/?LinkId=691086) to add user accounts to your Azure AD directory. If you'll be using Azure management portal, you'll need an active subscription to [Azure management portal](https://go.microsoft.com/fwlink/p/?LinkId=708617).
 
 For more information, see:
-- [Add user accounts using Office 365 admin dashboard](https://support.office.com/en-us/article/add-users-individually-or-in-bulk-to-office-365-admin-help-1970f7d6-03b5-442f-b385-5880b9c256ec)
+- [Add user accounts using Office 365 admin dashboard](/microsoft-365/admin/add-users)
 - [Add user accounts using Azure management portal](/azure/active-directory/fundamentals/add-users-azure-active-directory)

@@ -61,7 +61,7 @@ Some key considerations about OOB releases include:
 
 ## More information
 
-For additional details about the different types of Windows updates like critical, security, drivers, service packs, and more, please see the [Description of the standard terminology used to describe Microsoft software updates](https://support.microsoft.com/help/824684) and [Introducing a new deployment service for driver and firmware updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-a-new-deployment-service-for-driver-and-firmware/ba-p/2176942). 
+For additional details about the different types of Windows updates like critical, security, drivers, service packs, and more, please see the [Description of the standard terminology used to describe Microsoft software updates](/troubleshoot/windows-client/deployment/standard-terminology-software-updates) and [Introducing a new deployment service for driver and firmware updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-a-new-deployment-service-for-driver-and-firmware/ba-p/2176942). 
 
 ## Related topics
 

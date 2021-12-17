@@ -10,7 +10,9 @@ metadata:
   ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice
   ms.topic: landing-page # Required
-  ms.collection: windows-10
+  ms.collection: 
+    - windows-10
+    - highpri
   author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
   ms.author: greglin #Required; microsoft alias of author; optional team alias.
   ms.date: 08/24/2021 #Required; mm/dd/yyyy format.

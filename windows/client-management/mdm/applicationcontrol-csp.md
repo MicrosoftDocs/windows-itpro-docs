@@ -6,7 +6,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: ManikaDhiman
+author: dansimp
 ms.reviewer: jsuther1974
 ms.date: 09/10/2020
 ---

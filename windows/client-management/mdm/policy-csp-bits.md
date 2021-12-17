@@ -5,7 +5,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
@@ -55,38 +55,14 @@ If BITS/BandwidthThrottlingStartTime or BITS/BandwidthThrottlingEndTime are NOT 
 <a href="" id="bits-bandwidththrottlingendtime"></a>**BITS/BandwidthThrottlingEndTime**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 
 <!--/SupportedSKUs-->
@@ -146,38 +122,14 @@ ADMX Info:
 <a href="" id="bits-bandwidththrottlingstarttime"></a>**BITS/BandwidthThrottlingStartTime**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -236,38 +188,14 @@ ADMX Info:
 <a href="" id="bits-bandwidththrottlingtransferrate"></a>**BITS/BandwidthThrottlingTransferRate**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -326,38 +254,14 @@ ADMX Info:
 <a href="" id="bits-costednetworkbehaviorbackgroundpriority"></a>**BITS/CostedNetworkBehaviorBackgroundPriority**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -410,38 +314,14 @@ ADMX Info:
 <a href="" id="bits-costednetworkbehaviorforegroundpriority"></a>**BITS/CostedNetworkBehaviorForegroundPriority**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -494,38 +374,14 @@ ADMX Info:
 <a href="" id="bits-jobinactivitytimeout"></a>**BITS/JobInactivityTimeout**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>

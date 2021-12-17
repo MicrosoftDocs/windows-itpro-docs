@@ -52,6 +52,8 @@
                   href: create-wdac-policy-for-fully-managed-devices.md
                 - name: Create a WDAC policy for fixed-workload devices
                   href: create-initial-default-policy.md
+                - name: Create a WDAC deny list policy
+                  href: create-wdac-deny-policy.md
                 - name: Microsoft recommended block rules
                   href: microsoft-recommended-block-rules.md
                 - name: Microsoft recommended driver block rules
