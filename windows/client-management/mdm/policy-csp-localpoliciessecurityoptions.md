@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 09/29/2021
+ms.date: 12/16/2021
 ms.reviewer: 
 manager: dansimp
 ---
@@ -22,6 +22,9 @@ manager: dansimp
 <dl>
   <dd>
     <a href="#localpoliciessecurityoptions-accounts-blockmicrosoftaccounts">LocalPoliciesSecurityOptions/Accounts_BlockMicrosoftAccounts</a>
+  </dd>
+  <dd>
+    <a href="#localpoliciessecurityoptions-accounts-enableadministratoraccountstatus">LocalPoliciesSecurityOptions/Accounts_EnableAdministratorAccountStatus</a>
   </dd>
   <dd>
     <a href="#localpoliciessecurityoptions-accounts-limitlocalaccountuseofblankpasswordstoconsolelogononly">LocalPoliciesSecurityOptions/Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly</a>
@@ -216,6 +219,54 @@ The following list shows the supported values:
 
 -   0 - disabled (users will be able to use Microsoft accounts with Windows).
 -   1 - enabled (users cannot add Microsoft accounts).
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="localpoliciessecurityoptions-accounts-enableadministratoraccountstatus"></a>**LocalPoliciesSecurityOptions/Accounts_EnableAdministratorAccountStatus**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This setting allows the administrator to enable the local Administrator account.
+
+Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+
+<!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP Friendly name: *Accounts: Enable Administrator Account Status*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 - disabled (local Administrator account is disabled).
+-   1 - enabled (local Administrator account is enabled).
 
 <!--/SupportedValues-->
 <!--/Policy-->
