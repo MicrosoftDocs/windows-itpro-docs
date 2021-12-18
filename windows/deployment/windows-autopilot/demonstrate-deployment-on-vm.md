@@ -349,7 +349,7 @@ Follow these steps to run the PowerShell script:
 With the hardware ID captured in a file, prepare your Virtual Machine for Windows Autopilot deployment by resetting it back to OOBE.
 
 On the Virtual Machine, go to **Settings > Update & Security > Recovery** and select **Get started** under **Reset this PC**.
-Select **Remove everything** and **Just remove my files**. If you're asked **How would you like to reinstall Windows**, select Local reinstall. Finally, select **Reset**.
+Select **Remove everything**, then, on the **How would you like to reinstall Windows**, select Local reinstall. Finally, select **Reset**.
 
 ![Reset this PC final prompt.](images/autopilot-reset-prompt.jpg)
 
