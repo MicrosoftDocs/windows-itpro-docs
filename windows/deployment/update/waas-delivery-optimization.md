@@ -90,7 +90,7 @@ For more information, see "Download mode" in [Delivery optimization reference](w
 
 ## Set up Delivery Optimization
 
-See [Set up Delivery Optimization](waas-delivery-optimization-setup.md) for suggested values for a number of common scenarios.
+See [Set up Delivery Optimization](waas-delivery-optimization-setup.md) for suggested values for many common scenarios.
 
 You can use Group Policy or an MDM solution like Intune to configure Delivery Optimization. 
 
@@ -109,7 +109,7 @@ For complete list of every possible Delivery Optimization setting, see [Delivery
 ## How Microsoft uses Delivery Optimization
 At Microsoft, to help ensure that ongoing deployments weren't affecting our network and taking away bandwidth for other services, Microsoft IT used a couple of different bandwidth management strategies. Delivery Optimization, peer-to-peer caching enabled through Group Policy, was piloted and then deployed to all managed devices using Group Policy. Based on recommendations from the Delivery Optimization team, we used the "group" configuration to limit sharing of content to only the devices that are members of the same Active Directory domain. The content is cached for 24 hours. More than 76 percent of content came from peer devices versus the Internet.
 
-For more details, check out the [Adopting Windows as a Service at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft) technical case study.
+For more information, check out the [Adopting Windows as a Service at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft) technical case study.
 
 
 
