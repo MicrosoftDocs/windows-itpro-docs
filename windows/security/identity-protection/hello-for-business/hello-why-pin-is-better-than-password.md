@@ -49,7 +49,7 @@ When the PIN is created, it establishes a trusted relationship with the identity
  
 ## PIN is backed by hardware
 
-The Hello PIN is backed by a Trusted Platform Module (TPM) chip, which is a secure crypto-processor that is designed to carry out cryptographic operations. The chip includes multiple physical security mechanisms to make it tamper resistant, and malicious software is unable to tamper with the security functions of the TPM. All Windows 10 Mobile phones and many modern laptops have TPM.
+The Hello PIN is backed by a Trusted Platform Module (TPM) chip, which is a secure crypto-processor that is designed to carry out cryptographic operations. The chip includes multiple physical security mechanisms to make it tamper resistant, and malicious software is unable to tamper with the security functions of the TPM. Many modern devices have TPM.
 
 User key material is generated and available within the Trusted Platform Module (TPM) of the user device, which protects it from attackers who want to capture the key material and reuse it. Because Hello uses asymmetric key pairs, users credentials can't be stolen in cases where the identity provider or websites the user accesses have been compromised.
 
@@ -64,7 +64,7 @@ The Windows Hello for Business PIN is subject to the same set of IT management p
 To compromise a Windows Hello credential that TPM protects, an attacker must have access to the physical device, and then must find a way to spoof the user's biometrics or guess his or her PIN—and all of this must be done before [TPM anti-hammering](/windows/device-security/tpm/tpm-fundamentals#anti-hammering) protection locks the device.
 You can provide additional protection for laptops that don't have TPM by enabling BitLocker and setting a policy to limit failed sign-ins.
 
-**Configure BitLocker without TPM**
+### Configure BitLocker without TPM
 
 1.  Use the Local Group Policy Editor (gpedit.msc) to enable the following policy:
 
@@ -72,7 +72,9 @@ You can provide additional protection for laptops that don't have TPM by enablin
     
 2.  In the policy option, select **Allow BitLocker without a compatible TPM**, and then click **OK.**
 3.  Go to Control Panel > **System and Security > BitLocker Drive Encryption** and select the operating system drive to protect.
-**Set account lockout threshold**
+
+### Set account lockout threshold
+
 1.  Use the Local Group Policy Editor (gpedit.msc) to enable the following policy:
 
     **Computer Configuration > Windows Settings > Security Settings > Account Policies > Account Lockout Policy > Account lockout threshold**
