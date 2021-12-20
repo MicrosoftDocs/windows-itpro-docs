@@ -2217,7 +2217,7 @@ This event sends basic metadata about the starting point of uninstalling a featu
 
 ### Microsoft.Windows.HangReporting.AppHangEvent
 
-This event sends data about hangs for both native and managed applications, to help keep Windows up to date. It does not contain any Watson bucketing information. The bucketing information is recorded in a Windows Error Reporting (WER) event that is generated when the WER client reports the hang to the Watson service, and the WER event will contain the same ReportID (see field 13 of hang event, field 19 of WER event) as the hang event for the hang being reported. AppHang is reported only on PC devices. It handles classic Win32 hangs and is emitted only once per report. Some behaviors that may be perceived by a user as a hang are reported by app managers (e.g. PLM/RM/EM) as Watson Generics and will not produce AppHang events.
+This event sends data about hangs for both native and managed applications, to help keep Windows up to date. It does not contain any Watson bucketing information. The bucketing information is recorded in a Windows Error Reporting (WER) event that is generated when the WER client reports the hang to the Watson service, and the WER event will contain the same ReportID (see field 13 of hang event, field 19 of WER event) as the hang event for the hang being reported. AppHang is reported only on client devices. It handles classic Win32 hangs and is emitted only once per report. Some behaviors that may be perceived by a user as a hang are reported by app managers (e.g. PLM/RM/EM) as Watson Generics and will not produce AppHang events.
 
 The following fields are available:
 
@@ -4358,7 +4358,7 @@ The following fields are available:
 
 ### Update360Telemetry.UpdateAgent_FellBackToCanonical
 
-This event collects information when Express could not be used, and the update had to fall back to “canonical” during the new UUP (Unified Update Platform) update scenario; which is leveraged by both Mobile and Desktop. The data collected with this event is used to help keep Windows secure and up to date.
+This event collects information when Express could not be used, and the update had to fall back to “canonical” during the new UUP (Unified Update Platform) update scenario. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
@@ -4456,7 +4456,7 @@ The following fields are available:
 
 ### Update360Telemetry.UpdateAgentCommit
 
-This event collects information regarding the commit phase of the new Unified Update Platform (UUP) update scenario, which is leveraged by both Mobile and Desktop. The data collected with this event is used to help keep Windows secure and up to date.
+This event collects information regarding the commit phase of the new Unified Update Platform (UUP) update scenario. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
@@ -4472,7 +4472,7 @@ The following fields are available:
 
 ### Update360Telemetry.UpdateAgentDownloadRequest
 
-This event sends data for the download request phase of updating Windows via the new Unified Update Platform (UUP) scenario. Applicable to PC and Mobile. The data collected with this event is used to help keep Windows secure and up to date.
+This event sends data for the download request phase of updating Windows via the new Unified Update Platform (UUP) scenario. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
@@ -4504,7 +4504,7 @@ The following fields are available:
 
 ### Update360Telemetry.UpdateAgentExpand
 
-This event collects information regarding the expansion phase of the new Unified Update Platform (UUP) update scenario, which is leveraged by both Mobile and Desktop. The data collected with this event is used to help keep Windows secure and up to date.
+This event collects information regarding the expansion phase of the new Unified Update Platform (UUP) update scenario. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
@@ -4524,7 +4524,7 @@ The following fields are available:
 
 ### Update360Telemetry.UpdateAgentFellBackToCanonical
 
-This event collects information when express could not be used and we fall back to canonical during the new Unified Update Platform (UUP) update scenario, which is leveraged by both Mobile and Desktop. The data collected with this event is used to help keep Windows secure and up to date.
+This event collects information when express could not be used and we fall back to canonical during the new Unified Update Platform (UUP) update scenario. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
@@ -4540,7 +4540,7 @@ The following fields are available:
 
 ### Update360Telemetry.UpdateAgentInitialize
 
-This event sends data for the initialize phase of updating Windows via the new Unified Update Platform (UUP) scenario, which is applicable to both PCs and Mobile. The data collected with this event is used to help keep Windows secure and up to date.
+This event sends data for the initialize phase of updating Windows via the new Unified Update Platform (UUP) scenario. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
@@ -4636,7 +4636,7 @@ The following fields are available:
 
 ### Update360Telemetry.UpdateAgentModeStart
 
-This event sends data for the start of each mode during the process of updating Windows via the new Unified Update Platform (UUP) scenario. Applicable to both PCs and Mobile. The data collected with this event is used to help keep Windows secure and up to date.
+This event sends data for the start of each mode during the process of updating Windows via the new Unified Update Platform (UUP) scenario. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
@@ -4652,7 +4652,7 @@ The following fields are available:
 
 ### Update360Telemetry.UpdateAgentOneSettings
 
-This event collects information regarding the post reboot phase of the new UUP (Unified Update Platform) update scenario; which is leveraged by both Mobile and Desktop. The data collected with this event is used to help keep Windows secure and up to date.
+This event collects information regarding the post reboot phase of the new UUP (Unified Update Platform) update scenario. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
@@ -4670,7 +4670,7 @@ The following fields are available:
 
 ### Update360Telemetry.UpdateAgentPostRebootResult
 
-This event collects information for both Mobile and Desktop regarding the post reboot phase of the new Unified Update Platform (UUP) update scenario. The data collected with this event is used to help keep Windows secure and up to date.
+This event collects information regarding the post reboot phase of the new Unified Update Platform (UUP) update scenario. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
@@ -4687,7 +4687,7 @@ The following fields are available:
 
 ### Update360Telemetry.UpdateAgentSetupBoxLaunch
 
-The UpdateAgent_SetupBoxLaunch event sends data for the launching of the setup box when updating Windows via the new Unified Update Platform (UUP) scenario. This event is only applicable to PCs. The data collected with this event is used to help keep Windows secure and up to date.
+The UpdateAgent_SetupBoxLaunch event sends data for the launching of the setup box when updating Windows via the new Unified Update Platform (UUP) scenario. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
@@ -5061,7 +5061,7 @@ This event sends a summary of all the setup mitigations available for this updat
 
 ### Setup360Telemetry.Setup360OneSettings
 
-This event collects information regarding the post reboot phase of the new UUP (Unified Update Platform) update scenario; which is leveraged by both Mobile and Desktop. The data collected with this event is used to help keep Windows secure and up to date.
+This event collects information regarding the post reboot phase of the new UUP (Unified Update Platform) update scenario. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 

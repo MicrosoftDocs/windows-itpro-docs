@@ -95,17 +95,29 @@ This type of data includes software installation and update information on the d
 
 ## Browsing History data
 
-This type of data includes details about web browsing in the Microsoft browsers.
+**Microsoft browser data**: This type of data includes details about web browsing, the address bar, and search box performance on the device in the Microsoft browsers, such as:
 
-| Category Name | Description and Examples |
-| - | - |
-| Microsoft browser data | Information about Address bar and search box performance on the device such as:<ul><li>Text typed in address bar and search box</li><li>Text selected for Ask Cortana search</li><li>Service response time </li><li>Autocompleted text if there was an autocomplete</li><li>Navigation suggestions provided based on local history and favorites</li><li>Browser ID</li><li>URLs (which may include search terms)</li><li>Page title</li></ul>|
-
+- Text typed in address bar and search box
+- Text selected for Ask Cortana search
+- Service response time
+- Autocompleted text if there was an autocomplete
+- Navigation suggestions provided based on local history and favorites
+- Browser ID
+- URLs (which may include search terms)
+- Page title
 
 ## Inking Typing and Speech Utterance data
 
-This type of data gathers details about the voice, inking, and typing input features on the device.
+**Voice, inking, and typing**: This type of data gathers details about the voice, inking, and typing input features on the device, such as:
 
-| Category Name | Description and Examples |
-| - | - |
-| Voice, inking, and typing | Information about voice, inking, and typing features such as:<br><ul><li>Type of pen used (highlighter, ball point, pencil), pen color, stroke height and width, and how long it is used</li><li>Pen gestures (click, double-click, pan, zoom, rotate)</li><li>Palm Touch x,y coordinates</li><li>Input latency, missed pen signals, number of frames, strokes, first frame commit time, sample rate</li><li>Ink strokes written, text before and after the ink insertion point, recognized text entered, Input language - processed to remove identifiers, sequencing information, and other data (such as email addresses and numeric values) which could be used to reconstruct the original content or associate the input to the user.</li><li>Text input from Windows Mobile on-screen keyboards except from password fields and private sessions - processed to remove identifiers, sequencing information, and other data (such as email addresses, and numeric values) which could be used to reconstruct the original content or associate the input to the user.</li><li>Text of speech recognition results - result codes and recognized text</li><li>Language and model of the recognizer, System Speech language</li><li>App ID using speech features</li><li>Whether user is known to be a child</li><li>Confidence and Success/Failure of speech recognition</li></ul> |
+- Type of pen used (highlighter, ball point, pencil), pen color, stroke height and width, and how long it is used
+- Pen gestures (click, double-click, pan, zoom, rotate)
+- Palm Touch x,y coordinates
+- Input latency, missed pen signals, number of frames, strokes, first frame commit time, sample rate
+- Ink strokes written, text before and after the ink insertion point, recognized text entered, Input language - processed to remove identifiers, sequencing information, and other data (such as email addresses and numeric values) which could be used to reconstruct the original content or associate the input to the user.
+- Text input from Windows on-screen keyboards except from password fields and private sessions - processed to remove identifiers, sequencing information, and other data (such as email addresses, and numeric values) which could be used to reconstruct the original content or associate the input to the user.
+- Text of speech recognition results - result codes and recognized text
+- Language and model of the recognizer, System Speech language
+- App ID using speech features
+- Whether user is known to be a child
+- Confidence and Success/Failure of speech recognition
