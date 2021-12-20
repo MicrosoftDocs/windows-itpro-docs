@@ -96,7 +96,7 @@ The easiest way to verify that the onPremisesDistingushedNamne attribute is sync
 > [!NOTE]
 > To successfully query the Graph API, adequate [permissions](/graph/api/user-get?view=graph-rest-1.0&tabs=http#permissions) must be granted.
 
-3. Select **Modify permissions (Preview)**. Scroll down and locate **User.Read.All** (or any other required permission) and click **Consent**. You will now be prompted for delegated permissions consent.
+3. Select **Modify permissions (Preview)**. Scroll down and locate **User.Read.All** (or any other required permission) and select **Consent**. You will now be prompted for delegated permissions consent.
 
 4. In the Graph Explorer URL, type https://graph.microsoft.com/v1.0/users/[userid]?$select=displayName,userPrincipalName,onPremisesDistinguishedName, where **[userid]** is the user principal name of a user in the Azure Active Directory.  Click **Run query**
 
