@@ -299,7 +299,7 @@ You can also apply the Group Policies using the following registry keys:
 > [!IMPORTANT]
 > Using the Group Policy editor these steps are required for all supported versions of Windows 10 and Windows 11, however they are not required for devices running Windows 10, version 1607 or Windows Server 2016.
 
-1. Expand **Computer Configuration** > **Windows Settings** > **Security Settings** > **Windows Defender Firewall with Advanced Security** > **Windows Defender Firewall with Advanced Security - <LDAP name>**, and then click **Outbound Rules**.
+1. Expand **Computer Configuration** > **Windows Settings** > **Security Settings** > **Windows Defender Firewall with Advanced Security** > **Windows Defender Firewall with Advanced Security - `LDAP name`**, and then click **Outbound Rules**.
 
 2. Right-click **Outbound Rules**, and then click **New Rule**. The **New Outbound Rule Wizard** starts.
 

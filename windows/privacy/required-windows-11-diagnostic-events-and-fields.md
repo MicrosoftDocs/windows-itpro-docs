@@ -1,5 +1,5 @@
 ---
-description: Use this article to learn more about what Windows diagnostic data is gathered at the basic level.
+description: Learn more about the Windows 11 diagnostic data gathered at the basic level.
 title: Required Windows 11 diagnostic events and fields
 keywords: privacy, telemetry
 ms.prod: m365-security
