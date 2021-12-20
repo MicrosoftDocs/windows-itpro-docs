@@ -89,7 +89,7 @@ Sign-in to computer running Azure AD Connect with access equivalent to _local ad
 
 The easiest way to verify that the onPremisesDistingushedNamne attribute is synchronized is to use the Graph Explorer for Microsoft Graph.
 
-1. Open a web browser and navigate to https://developer.microsoft.com/en-us/graph/graph-explorer
+1. Open a web browser and navigate to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 2. Click **Sign in to Graph Explorer** and provide Azure credentials
 
