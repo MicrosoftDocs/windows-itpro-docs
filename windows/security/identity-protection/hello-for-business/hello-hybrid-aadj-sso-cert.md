@@ -91,7 +91,7 @@ The easiest way to verify that the onPremisesDistingushedNamne attribute is sync
 
 1. Open a web browser and navigate to [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
-2. Click **Sign in to Graph Explorer** and provide Azure credentials
+2. Select **Sign in to Graph Explorer** and provide Azure credentials.
 
 > [!NOTE]
 > To successfully query the Graph API, adequate [permissions](/graph/api/user-get?view=graph-rest-1.0&tabs=http#permissions) must be granted.
