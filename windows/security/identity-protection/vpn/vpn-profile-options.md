@@ -30,32 +30,32 @@ The following table lists the VPN settings and whether the setting can be config
 
 | Profile setting | Can be configured in Intune and Configuration Manager | 
 | --- | --- | 
-| Connection type | yes | 
-| Routing: split-tunnel routes | yes, except exclusion routes |
-| Routing: forced-tunnel | yes |
-| Authentication (EAP) | yes, if connection type is built-in |
-| Conditional access | yes |
-| Name resolution: NRPT | yes |
-| Name resolution: DNS suffix | no |
-| Name resolution: persistent | no |
-| Auto-trigger: app trigger | yes |
-| Auto-trigger: name trigger | yes |
-| Auto-trigger: Always On | yes |
-| Auto-trigger: trusted network detection | no |
-| LockDown | no |
-| Windows Information Protection (WIP) | yes |
-| Traffic filters | yes |
-| Proxy settings | yes, by PAC/WPAD file or server and port |
+| Connection type | Yes | 
+| Routing: split-tunnel routes | Yes, except exclusion routes |
+| Routing: forced-tunnel | Yes |
+| Authentication (EAP) | Yes, if connection type is built in |
+| Conditional access | Yes |
+| Name resolution: NRPT | Yes |
+| Name resolution: DNS suffix | No |
+| Name resolution: persistent | No |
+| Auto-trigger: app trigger | Yes |
+| Auto-trigger: name trigger | Yes |
+| Auto-trigger: Always On | Yes |
+| Auto-trigger: trusted network detection | No |
+| LockDown | No |
+| Windows Information Protection (WIP) | Yes |
+| Traffic filters | Yes |
+| Proxy settings | Yes, by PAC/WPAD file or server and port |
 
 > [!NOTE] 
 > VPN proxy settings are only used on Force Tunnel Connections. On Split Tunnel Connections, the general proxy settings are used.
 
-The ProfileXML node was added to the VPNv2 CSP to allow users to deploy VPN profile as a single blob. This is particularly useful for deploying profiles with features that are not yet supported by MDMs. You can get additional examples in the [ProfileXML XSD](/windows/client-management/mdm/vpnv2-profile-xsd) topic.
+The ProfileXML node was added to the VPNv2 CSP to allow users to deploy VPN profile as a single blob. This node is useful for deploying profiles with features that are not yet supported by MDMs. You can get more examples in the [ProfileXML XSD](/windows/client-management/mdm/vpnv2-profile-xsd) article.
 
 
 ## Sample Native VPN profile
 
-The following is a sample Native VPN profile. This blob would fall under the ProfileXML node. 
+The following sample is a sample Native VPN profile. This blob would fall under the ProfileXML node. 
 
 ```xml
 <VPNProfile>  
@@ -221,7 +221,7 @@ The following is a sample Native VPN profile. This blob would fall under the Pro
 
 ## Sample plug-in VPN profile
 
-The following is a sample plug-in VPN profile. This blob would fall under the ProfileXML node. 
+The following sample is a sample plug-in VPN profile. This blob would fall under the ProfileXML node. 
 
 ```xml
 <VPNProfile>
@@ -331,7 +331,7 @@ After you configure the settings that you want using ProfileXML, you can create 
 - [VPNv2 configuration service provider (CSP) reference](/windows/client-management/mdm/vpnv2-csp)
 - [How to Create VPN Profiles in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/dn261200(v=technet.10))
 
-## Related topics
+## Related articles
 
 - [VPN technical guide](vpn-guide.md)
 - [VPN connection types](vpn-connection-type.md)
