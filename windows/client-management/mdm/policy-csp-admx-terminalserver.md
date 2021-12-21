@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: dansimp
-ms.date: 09/23/2020
+ms.date: 12/21/2021
 ms.reviewer: 
 manager: dansimp
 ---
@@ -78,7 +78,7 @@ Time zone redirection is possible only when connecting to at least a Microsoft W
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP Friendly name: *Allow time zone redirection*
--   GP name: *TS_GATEWAY_POLICY_ENABLE*
+-   GP name: *TS_TIME_ZONE*
 -   GP path: *Windows Components\Remote Desktop Services\Remote Desktop Session Host\Device and Resource Redirection*
 -   GP ADMX file name: *TerminalServer.admx*
 
