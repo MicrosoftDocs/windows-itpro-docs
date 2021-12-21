@@ -1,6 +1,6 @@
 ---
 title: Windows Hello errors during PIN creation (Windows)
-description: When you set up Windows Hello in Windows 10, you may get an error during the Create a work PIN step.
+description: When you set up Windows Hello in Windows 10/11, you may get an error during the Create a work PIN step.
 ms.assetid: DFEFE22C-4FEF-4FD9-BFC4-9B419C339502
 keywords: PIN, error, create a work PIN
 ms.prod: m365-security
@@ -26,7 +26,7 @@ ms.date: 05/05/2018
 - Windows 10
 - Windows 11
 
-When you set up Windows Hello in Windows 10, you may get an error during the **Create a PIN** step. This topic lists some of the error codes with recommendations for mitigating the problem. If you get an error code that is not listed here, contact Microsoft Support.
+When you set up Windows Hello in Windows client, you may get an error during the **Create a PIN** step. This topic lists some of the error codes with recommendations for mitigating the problem. If you get an error code that is not listed here, contact Microsoft Support.
 
 ## Where is the error code?
 
@@ -37,11 +37,12 @@ The following image shows an example of an error during **Create a PIN**.
 ## Error mitigations
 
 When a user encounters an error when creating the work PIN, advise the user to try the following steps. Many errors can be mitigated by one of these steps.
-1.  Try to create the PIN again. Some errors are transient and resolve themselves.
-2.  Sign out, sign in, and try to create the PIN again.
-3.  Reboot the device and then try to create the PIN again.
-4.  Unjoin the device from Azure Active Directory (Azure AD), rejoin, and then try to create the PIN again. To unjoin a desktop PC, go to **Settings** &gt; **System** &gt; **About** and select **Disconnect from organization**. To unjoin a device running Windows 10 Mobile, you must [reset the device](/windows/client-management/reset-a-windows-10-mobile-device).
-5.  On mobile devices, if you are unable to setup a PIN after multiple attempts, reset your device and start over. For help on how to reset your phone go to [Reset my phone](/windows/client-management/reset-a-windows-10-mobile-device).
+
+1. Try to create the PIN again. Some errors are transient and resolve themselves.
+2. Sign out, sign in, and try to create the PIN again.
+3. Reboot the device and then try to create the PIN again.
+4. Unjoin the device from Azure Active Directory (Azure AD), rejoin, and then try to create the PIN again. To unjoin a device, go to **Settings** > **System** > **About** > select **Disconnect from organization**.
+
 If the error occurs again, check the error code against the following table to see if there is another mitigation for that error. When no mitigation is listed in the table, contact Microsoft Support for assistance.
 
 | Hex        | Cause                                                              | Mitigation                                  |
