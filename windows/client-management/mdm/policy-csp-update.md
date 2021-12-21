@@ -1488,7 +1488,7 @@ Default value is 7.
 
 <!--/Scope-->
 <!--Description-->
-When used with [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates),allows the admin to specify a minimum number of days until restarts occur automatically for quality updates. Setting the grace period might extend the effective deadline set by the deadline policy. If [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)) is configured but this policy is not, then the default value of 2 will be used.
+When used with [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates),allows the admin to specify a minimum number of days until restarts occur automatically for quality updates. Setting the grace period might extend the effective deadline set by the deadline policy. If [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates) is configured but this policy is not, then the default value of 2 will be used.
 
 <!--/Description-->
 <!--ADMXMapped-->
