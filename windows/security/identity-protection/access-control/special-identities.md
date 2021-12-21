@@ -234,7 +234,7 @@ Membership is controlled by the operating system.
 |Default Location in Active Directory |cn=WellKnown Security Principals, cn=Configuration, dc=\<forestRootDomain\>|
 |Default User Rights| [Access this computer from the network](/windows/device-security/security-policy-settings/access-this-computer-from-the-network): SeNetworkLogonRight</br> [Act as part of the operating system](/windows/device-security/security-policy-settings/act-as-part-of-the-operating-system): SeTcbPrivilege</br> [Bypass traverse checking](/windows/device-security/security-policy-settings/bypass-traverse-checking): SeChangeNotifyPrivilege|
 
-## Fresh public key identity
+## Fresh Public Key Identity
 
 
 A SID that means the client's identity is asserted by an authentication authority based on proof of current possession of client public key credentials.
