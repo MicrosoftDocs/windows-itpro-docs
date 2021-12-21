@@ -54,6 +54,8 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 
 ### Types of download content supported by Delivery Optimization
 
+#### Windows Client
+
 | Windows Client | Minimum Windows version | HTTP Downloader | Peer to Peer | Microsoft Connected Cache (MCC)
 |------------------|---------------|----------------|----------|----------------|
 | Windows Update (feature updates quality updates, language packs, drivers) | Win 10 1511, Win 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
@@ -70,10 +72,14 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 | Windows Package Manager| Win 10 1809, Win 11 | :heavy_check_mark: |  |  |
 | MSIX | Win 10 2004, Win 11 | :heavy_check_mark: |  |  |
 
+#### Windows Server
+
 | Windows Server | Minimum Windows version | HTTP Downloader | Peer to Peer | Microsoft Connected Cache (MCC)
 |----------------|--------------------------|----------------|----------|----------------|
 | Windows Update | Windows Server 2019 (1809) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Edge Browser Updates | Windows Server 2019 (1809) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+
+#### Linux (Public Preview)
 
 | Linux ([Public Preview](https://github.com/microsoft/do-client)) | Linux versions | HTTP Downloader | Peer to Peer | Microsoft Connected Cache (MCC)
 |------------------------|----------------|-----------------|--------------|---------------|
