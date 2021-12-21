@@ -166,7 +166,7 @@ The following table lists the universal well-known SIDs.
 | S-1-5 | NT Authority | A SID that represents an identifier authority. |
 | S-1-5-80-0 | All Services | A group that includes all service processes configured on the system. Membership is controlled by the operating system.|
 
-The following table lists the predefined identifier authority constants. The first four values are used with universal well-known SIDs, and the rest values are used with well-known SIDs in Windows operating systems designated in the **Applies To** list.
+The following table lists the predefined identifier authority constants. The first four values are used with universal well-known SIDs, and the rest of the values are used with well-known SIDs in Windows operating systems designated in the **Applies To** list.
 
 | Identifier Authority | Value | SID String Prefix |
 | - | - | - |
