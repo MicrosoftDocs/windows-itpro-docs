@@ -261,7 +261,7 @@ Any user who is logged on to the local system has the Interactive identity. This
 ## IUSR
 
 
-Internet Information Services (IIS) use this account by default whenever anonymous authentication is enabled.
+Internet Information Services (IIS) uses this account by default whenever anonymous authentication is enabled.
 
 | Attribute | Value |
 |  :--: | :--: | 
