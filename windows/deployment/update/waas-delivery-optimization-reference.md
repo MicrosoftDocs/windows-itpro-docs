@@ -24,7 +24,7 @@ ms.custom: seo-marvel-apr2020
 
 > **Looking for more Group Policy settings?** See the master spreadsheet available at the [Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=103506).
 
-There are a great many details you can set in Delivery Optimization to customize it to do just what you need it to. This topic summarizes them for your reference. If you just need an overview of Delivery Optimization, see [Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md). If you need information about setting up Delivery Optimization, including tips for the best settings in different scenarios, see [Set up Delivery Optimization for Windows 10 updates](waas-delivery-optimization-setup.md).
+There are a great many details you can set in Delivery Optimization to customize it to do just what you need it to. This topic summarizes them for your reference. If you just need an overview of Delivery Optimization, see [Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md). If you need information about setting up Delivery Optimization, including tips for the best settings in different scenarios, see [Set up Delivery Optimization for Windows client updates](waas-delivery-optimization-setup.md).
 
 ## Delivery Optimization options
 
