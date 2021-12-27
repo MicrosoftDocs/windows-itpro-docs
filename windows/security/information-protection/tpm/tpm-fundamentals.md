@@ -15,7 +15,7 @@ ms.collection:
   - M365-security-compliance
   - highpri
 ms.topic: conceptual
-ms.date: 09/06/2021
+ms.date: 12/27/2021
 ---
 
 # TPM fundamentals
@@ -23,7 +23,7 @@ ms.date: 09/06/2021
 **Applies to**
 -   Windows 10
 -   Windows 11
--   Windows Server 2016 and above
+-   Windows Server 2016 and later
 
 This article for the IT professional provides a description of the components of the Trusted Platform Module (TPM 1.2 and TPM 2.0) and explains how they are used to mitigate dictionary attacks.
 
