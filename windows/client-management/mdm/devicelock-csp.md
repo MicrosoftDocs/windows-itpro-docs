@@ -14,6 +14,9 @@ ms.date: 06/26/2017
 
 # DeviceLock CSP
 
+This policy is deprecated. Use [Policy CSP](policy-configuration-service-provider.md) instead.
+
+<!-- 12.16.2021 mandia: Commenting out, as this CSP is specific to Windows Phone 8.1.
 
 The DeviceLock configuration service provider is used by the enterprise management server to configure device lock related policies. This configuration service provider is supported by an enterprise management server.
 
@@ -304,7 +307,10 @@ All node values under the **ProviderID** interior node represent the policy valu
 
 The value applied to the device can be queried via the nodes under the **DeviceValue** interior node.
 
+-->
+
 ## Related articles
 
+[Policy CSP](policy-configuration-service-provider.md)
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
