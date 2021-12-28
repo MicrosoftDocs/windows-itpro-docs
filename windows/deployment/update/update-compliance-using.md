@@ -51,7 +51,7 @@ When you select this tile, you will be redirected to the Update Compliance works
 
 ### Overview blade
 
-![The Overview blade.](images/UC_workspace_overview_blade.png)
+![The Overview blade.](images/uc-workspace-overview-blade.png)
 
 Update Compliance's overview blade summarizes all the data Update Compliance provides. It functions as a hub from which you can navigate to different sections. The total number of devices detected by Update Compliance is reported in the title of this blade. What follows is a distribution for all devices as to whether they are up to date on the following items:
 * Security updates: A device is up to date on quality updates whenever it has the latest applicable quality update installed. Quality updates are monthly cumulative updates that are specific to a version of Windows client.
