@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 01/08/2020
+ms.date: 12/29/2021
 ms.reviewer: 
 manager: dansimp
 ms.collection: highpri
@@ -570,6 +570,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--/Policy-->
+
+> [!IMPORTANT]
+> AllowOnAccessProtection is officially being deprecated.
 
 <hr/>
 
