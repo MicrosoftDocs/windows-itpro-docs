@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 10/04/2021
+ms.date: 12/13/2021
 search.appverid: met150
 ms.technology: windows-sec
 ---
@@ -48,6 +48,8 @@ Malicious software is an application or code that compromises user security. Mal
 Microsoft classifies most malicious software into one of the following categories:
 
 * **Backdoor:** A type of malware that gives malicious hackers remote access to and control of your device.
+
+* **Command and Control:** A type of malware that infects your device and establishes communication with the hackers’ command-and-control server to receive instructions. Once communication is established, hackers can send commands that can steal data, shut down and reboot the device, and disrupt web services.
 
 * **Downloader:** A type of malware that downloads other malware onto your device. It must connect to the internet to download files.
 

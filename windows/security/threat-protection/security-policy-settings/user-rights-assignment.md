@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 12/16/2021
 ms.technology: windows-sec
 ---
 
@@ -22,6 +22,7 @@ ms.technology: windows-sec
 
 **Applies to**
 -   Windows 10
+-   Windows 11
 
 Provides an overview and links to information about the User Rights Assignment security policy settings user rights that are available in Windows.
 User rights govern the methods by which a user can log on to a system. User rights are applied at the local device level, and they allow users to perform tasks on a device or in a domain. User rights include logon rights and permissions. Logon rights control who is authorized to log on to a device and how they can log on. User rights permissions control access to computer and domain resources, and they can override permissions that have been set on specific objects. User rights are managed in Group Policy under the **User Rights Assignment** item.

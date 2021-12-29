@@ -150,11 +150,11 @@ This event generates every time a new process starts.
 
 -   **Token Elevation Type** \[Type = UnicodeString\]**:**
 
-    -   **TokenElevationTypeDefault (1):** Type 1 is a full token with no privileges removed or groups disabled. A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account (for which UAC disabled by default), service account or local system account.
+    -   **%%1936:** Type 1 is a full token with no privileges removed or groups disabled. A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account (for which UAC is disabled by default), service account, or local system account.
 
-    -   **TokenElevationTypeFull (2):** Type 2 is an elevated token with no privileges removed or groups disabled. An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator. An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+    -   **%%1937:** Type 2 is an elevated token with no privileges removed or groups disabled. An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator. An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
 
-    -   **TokenElevationTypeLimited (3):** Type 3 is a limited token with administrative privileges removed and administrative groups disabled. The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.
+    -   **%%1938:** Type 3 is a limited token with administrative privileges removed and administrative groups disabled. The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.
 
 -   **Mandatory Label** \[Version 2\] \[Type = SID\]**:** SID of [integrity label](/windows/win32/secauthz/mandatory-integrity-control) which was assigned to the new process. Can have one of the following values:
 
@@ -203,10 +203,10 @@ For 4688(S): A new process has been created.
 
 - It can be unusual for a process to run using a local account in either **Creator Subject\\Security ID** or in **Target** **Subject\\Security ID**.
 
-- Monitor for **Token Elevation Type** with value **TokenElevationTypeDefault (1)** when **Subject\\Security ID** lists a real user account, for example when **Account Name** doesn't contain the $ symbol. Typically this means that UAC is disabled for this account for some reason.
+- Monitor for **Token Elevation Type** with value **%%1936** when **Subject\\Security ID** lists a real user account, for example when **Account Name** doesn't contain the $ symbol. Typically this means that UAC is disabled for this account for some reason.
 
-- Monitor for **Token Elevation Type** with value **TokenElevationTypeDefault (2)** on standard workstations, when **Subject\\Security ID** lists a real user account, for example when **Account Name** doesn't contain the $ symbol. This means that a user ran a program using administrative privileges.
+- Monitor for **Token Elevation Type** with value **%%1937** on standard workstations, when **Subject\\Security ID** lists a real user account, for example when **Account Name** doesn't contain the $ symbol. This means that a user ran a program using administrative privileges.
 
-- You can also monitor for **Token Elevation Type** with value **TokenElevationTypeDefault (2)** on standard workstations, when a computer object was used to run the process, but that computer object is not the same computer where the event occurs.
+- You can also monitor for **Token Elevation Type** with value **%%1937** on standard workstations, when a computer object was used to run the process, but that computer object is not the same computer where the event occurs.
 
 - If you need to monitor all new processes with a specific Mandatory Label, for example S-1-16-20480 (Protected process), check the "**Mandatory Label**" in this event.
