@@ -20,18 +20,11 @@ ms.collection: highpri
 
 # Activate using Active Directory-based activation
 
-> Applies to
->
->- Windows 10
->- Windows 8.1
->- Windows 8
->- Windows Server 2012 R2
->- Windows Server 2012
->- Windows Server 2016
->- Windows Server 2019
->- Office 2013*
->- Office 2016*
->- Office 2019*
+**Applies to**
+-   Windows 8.1 or later
+-   Windows Server 2012 or later
+-   Microsoft Office 2013 or later
+
 
 **Looking for retail activation?**
 
@@ -109,7 +102,7 @@ When a reactivation event occurs, the client queries AD DS for the activation o
     **Figure 15**. Choosing how to activate your product
 
     > [!NOTE]
-    > To activate a KMS Host Key (CSVLK) for Microsoft Office, you need to install the version-specific Office Volume License Pack on the server where the Volume Activation Server Role is installed.
+    > To activate a KMS Host Key (CSVLK) for Microsoft Office, you need to install the version-specific Office Volume License Pack on the server where the Volume Activation Server Role is installed. For more details see [Activate volume licensed versions of Office by using Active Directory](/deployoffice/vlactivation/activate-office-by-using-active-directory)
     > 
     > 
     > - [Office 2013 VL pack](https://www.microsoft.com/download/details.aspx?id=35584)
@@ -117,6 +110,8 @@ When a reactivation event occurs, the client queries AD DS for the activation o
     > - [Office 2016 VL pack](https://www.microsoft.com/download/details.aspx?id=49164)
     >
     > - [Office 2019 VL pack](https://www.microsoft.com/download/details.aspx?id=57342)
+    >
+    > - [Office LTSC 2021 VL pack](https://www.microsoft.com/en-us/download/details.aspx?id=103446)
 
 8. After activating the key, click **Commit**, and then click **Close**.
 
