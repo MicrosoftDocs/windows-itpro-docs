@@ -101,7 +101,8 @@ When a reactivation event occurs, the client queries AD DS for the activation o
     **Figure 15**. Choosing how to activate your product
 
     > [!NOTE]
-    > To activate a KMS Host Key (CSVLK) for Microsoft Office, you need to install the version-specific Office Volume License Pack on the server where the Volume Activation Server Role is installed. For more details see [Activate volume licensed versions of Office by using Active Directory](/deployoffice/vlactivation/activate-office-by-using-active-directory)
+    > To activate a KMS Host Key (CSVLK) for Microsoft Office, you need to install the version-specific Office Volume License Pack on the server where the Volume Activation Server Role is installed. For more details, see [Activate volume licensed versions of Office by using Active Directory](/deployoffice/vlactivation/activate-office-by-using-active-directory).
+
     > 
     > 
     > - [Office 2013 VL pack](https://www.microsoft.com/download/details.aspx?id=35584)
