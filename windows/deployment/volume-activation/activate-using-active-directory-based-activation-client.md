@@ -111,7 +111,8 @@ When a reactivation event occurs, the client queries AD DS for the activation o
     >
     > - [Office 2019 VL pack](https://www.microsoft.com/download/details.aspx?id=57342)
     >
-    > - [Office LTSC 2021 VL pack](https://www.microsoft.com/en-us/download/details.aspx?id=103446)
+    > - [Office LTSC 2021 VL pack](https://www.microsoft.com/download/details.aspx?id=103446)
+
 
 8. After activating the key, click **Commit**, and then click **Close**.
 
