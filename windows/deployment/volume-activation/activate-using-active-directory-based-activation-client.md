@@ -25,7 +25,6 @@ ms.collection: highpri
 -   Windows Server 2012 or later
 -   Microsoft Office 2013 or later
 
-
 **Looking for retail activation?**
 
 - [Get Help Activating Microsoft Windows 7 or Windows 8.1](https://support.microsoft.com/help/15083/windows-activate-windows-7-or-8-1)
