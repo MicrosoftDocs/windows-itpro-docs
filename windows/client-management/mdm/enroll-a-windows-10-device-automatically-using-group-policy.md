@@ -50,7 +50,7 @@ For this policy to work, you must verify that the MDM service provider allows th
 To ensure that the auto-enrollment feature is working as expected, you must verify that various requirements and settings are configured correctly.
 The following steps demonstrate required settings using the Intune service:
 
-1. Verify that the user who is going to enroll the device has a valid Endpoint Portection Manager license.
+1. Verify that the user who is going to enroll the device has a valid Endpoint Protection Manager license.
 
    :::image type="content" alt-text="Intune license verification." source="images/auto-enrollment-intune-license-verification.png" lightbox="images/auto-enrollment-intune-license-verification.png":::
 
