@@ -198,7 +198,7 @@ Enter a SSID, click **Add**, and then configure the following settings for the S
 
 | Settings | Description |
 | --- |  --- |
-| ProxyServerPort |  (Optional) Specify the configuration of the network proxy as **host:port**. A proxy server host and port can be specified per connection for Windows 10 for mobile devices. The host can be server name, FQDN, or SLN or IPv4 or IPv6 address. This proxy configuration is only supported in Windows 10 for mobile devices. Using this configuration in Windows 10 for desktop editions will result in failure.   |
+| ProxyServerPort |  (Optional) Don't use. Using this configuration in Windows 10 client editions will result in failure.   |
 | AutoConnect |  (Optional) Select **True** or **false** to specify whether to automatically connect to WLAN.     |
 | HiddenNetwork |  (Optional) Select **True** or **false** to specify whether the network is hidden.    |
 | SecurityType |  Choose between **Open**, **WEP**, and **WPA2-Personal**. </br></br>If you select **WEP** or **WPA2-Personal**, enter the **SecurityKey** required by the WLAN.    |

@@ -199,38 +199,14 @@ ms.localizationpriority: medium
 <a href="" id="browser-allowaddressbardropdown"></a>**Browser/AllowAddressBarDropdown**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -277,38 +253,14 @@ Most restricted value: 0
 <a href="" id="browser-allowautofill"></a>**Browser/AllowAutofill**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -363,38 +315,14 @@ To verify AllowAutofill is set to 0 (not allowed):
 <a href="" id="browser-allowconfigurationupdateforbookslibrary"></a>**Browser/AllowConfigurationUpdateForBooksLibrary**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -439,38 +367,14 @@ Supported values:
 <a href="" id="browser-allowcookies"></a>**Browser/AllowCookies**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -511,7 +415,7 @@ Most restricted value: 0
 <!--Validation-->
 To verify AllowCookies is set to 0 (not allowed):
 
-1.  Open Microsoft Edge or Microsoft Edge for Windows 10 Mobile.
+1.  Open Microsoft Edge.
 2.  In the upper-right corner of the browser, click **…**.
 3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
 4.  Verify the setting **Cookies** is disabled.
@@ -525,38 +429,14 @@ To verify AllowCookies is set to 0 (not allowed):
 <a href="" id="browser-allowdevelopertools"></a>**Browser/AllowDeveloperTools**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -573,8 +453,6 @@ To verify AllowCookies is set to 0 (not allowed):
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows for desktop and not supported in Windows Mobile.
 
 [!INCLUDE [allow-developer-tools-shortdesc](../includes/allow-developer-tools-shortdesc.md)]
 
@@ -603,38 +481,14 @@ Most restricted value: 0
 <a href="" id="browser-allowdonottrack"></a>**Browser/AllowDoNotTrack**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -674,7 +528,7 @@ Most restricted value: 1
 <!--Validation-->
 To verify AllowDoNotTrack is set to 0 (not allowed):
 
-1.  Open Microsoft Edge or Microsoft Edge for Windows 10 Mobile.
+1.  Open Microsoft Edge.
 2.  In the upper-right corner of the browser, click **…**.
 3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
 4.  Verify the setting **Send Do Not Track requests** is grayed out.
@@ -688,38 +542,14 @@ To verify AllowDoNotTrack is set to 0 (not allowed):
 <a href="" id="browser-allowextensions"></a>**Browser/AllowExtensions**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -764,38 +594,14 @@ Supported values:
 <a href="" id="browser-allowflash"></a>**Browser/AllowFlash**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -840,38 +646,14 @@ Supported values:
 <a href="" id="browser-allowflashclicktorun"></a>**Browser/AllowFlashClickToRun**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -919,38 +701,14 @@ Most restricted value: 1
 <a href="" id="browser-allowfullscreenmode"></a>**Browser/AllowFullScreenMode**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -1003,38 +761,14 @@ Most restricted value: 0
 <a href="" id="browser-allowinprivate"></a>**Browser/AllowInPrivate**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -1079,38 +813,14 @@ Most restricted value:  0
 <a href="" id="browser-allowmicrosoftcompatibilitylist"></a>**Browser/AllowMicrosoftCompatibilityList**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -1159,38 +869,14 @@ Most restricted value:  0
 <a href="" id="browser-allowpasswordmanager"></a>**Browser/AllowPasswordManager**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -1244,38 +930,14 @@ To verify AllowPasswordManager is set to 0 (not allowed):
 <a href="" id="browser-allowpopups"></a>**Browser/AllowPopups**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -1329,38 +991,14 @@ To verify AllowPopups is set to 0 (not allowed):
 <a href="" id="browser-allowprelaunch"></a>**Browser/AllowPrelaunch**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -1414,38 +1052,14 @@ Most restricted value: 0
 <a href="" id="browser-allowprinting"></a>**Browser/AllowPrinting**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -1498,38 +1112,14 @@ Most restricted value: 0
 <a href="" id="browser-allowsavinghistory"></a>**Browser/AllowSavingHistory**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -1582,38 +1172,14 @@ Most restricted value: 0
 <a href="" id="browser-allowsearchenginecustomization"></a>**Browser/AllowSearchEngineCustomization**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -1664,38 +1230,14 @@ Most restricted value: 0
 <a href="" id="browser-allowsearchsuggestionsinaddressbar"></a>**Browser/AllowSearchSuggestionsinAddressBar**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -1741,38 +1283,14 @@ Most restricted value: 0
 <a href="" id="browser-allowsideloadingofextensions"></a>**Browser/AllowSideloadingOfExtensions**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -1825,38 +1343,14 @@ Most restricted value: 0
 <a href="" id="browser-allowsmartscreen"></a>**Browser/AllowSmartScreen**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -1909,38 +1403,14 @@ To verify AllowSmartScreen is set to 0 (not allowed):
 <a href="" id="browser-allowtabpreloading"></a>**Browser/AllowTabPreloading**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -1992,38 +1462,14 @@ Most restricted value: 1
 <a href="" id="browser-allowwebcontentonnewtabpage"></a>**Browser/AllowWebContentOnNewTabPage**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -2075,38 +1521,14 @@ Supported values:
 <a href="" id="browser-alwaysenablebookslibrary"></a>**Browser/AlwaysEnableBooksLibrary**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -2154,38 +1576,14 @@ Most restricted value: 0
 <a href="" id="browser-clearbrowsingdataonexit"></a>**Browser/ClearBrowsingDataOnExit**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -2241,38 +1639,14 @@ To verify that browsing data is cleared on exit (ClearBrowsingDataOnExit is set 
 <a href="" id="browser-configureadditionalsearchengines"></a>**Browser/ConfigureAdditionalSearchEngines**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -2323,38 +1697,14 @@ Most restricted value: 0
 <a href="" id="browser-configurefavoritesbar"></a>**Browser/ConfigureFavoritesBar**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -2407,38 +1757,14 @@ Supported values:
 <a href="" id="browser-configurehomebutton"></a>**Browser/ConfigureHomeButton**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -2495,38 +1821,14 @@ Supported values:
 <a href="" id="browser-configurekioskmode"></a>**Browser/ConfigureKioskMode**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -2586,38 +1888,14 @@ Supported values:
 <a href="" id="browser-configurekioskresetafteridletimeout"></a>**Browser/ConfigureKioskResetAfterIdleTimeout**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -2672,38 +1950,14 @@ Supported values:
 <a href="" id="browser-configureopenmicrosoftedgewith"></a>**Browser/ConfigureOpenMicrosoftEdgeWith**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -2768,38 +2022,14 @@ Supported values:
 <a href="" id="browser-configuretelemetryformicrosoft365analytics"></a>**Browser/ConfigureTelemetryForMicrosoft365Analytics**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -2853,38 +2083,14 @@ Most restricted value: 0
 <a href="" id="browser-disablelockdownofstartpages"></a>**Browser/DisableLockdownOfStartPages**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -2936,38 +2142,14 @@ Most restricted value: 0
 <a href="" id="browser-enableextendedbookstelemetry"></a>**Browser/EnableExtendedBooksTelemetry**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -3012,38 +2194,14 @@ Most restricted value: 0
 <a href="" id="browser-enterprisemodesitelist"></a>**Browser/EnterpriseModeSiteList**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -3062,11 +2220,6 @@ Most restricted value: 0
 <!--Description-->
 
 [!INCLUDE [configure-enterprise-mode-site-list-shortdesc](../includes/configure-enterprise-mode-site-list-shortdesc.md)]
-
-> [!NOTE]
-> This policy is only enforced in Windows for desktop and not supported in Windows Mobile.
-
- 
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -3094,38 +2247,14 @@ Supported values:
 <a href="" id="browser-enterprisesitelistserviceurl"></a>**Browser/EnterpriseSiteListServiceUrl**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -3154,38 +2283,14 @@ Supported values:
 <a href="" id="browser-homepages"></a>**Browser/HomePages**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -3202,9 +2307,6 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> This policy is only available for Windows for desktop and not supported in Windows Mobile.
-
 
 [!INCLUDE [configure-start-pages-shortdesc](../includes/configure-start-pages-shortdesc.md)]
 
@@ -3246,38 +2348,14 @@ Supported values:
 <a href="" id="browser-lockdownfavorites"></a>**Browser/LockdownFavorites**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -3324,38 +2402,14 @@ Most restricted value: 1
 <a href="" id="browser-preventaccesstoaboutflagsinmicrosoftedge"></a>**Browser/PreventAccessToAboutFlagsInMicrosoftEdge**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -3400,38 +2454,14 @@ Most restricted value: 1
 <a href="" id="browser-preventcerterroroverrides"></a>**Browser/PreventCertErrorOverrides**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -3482,38 +2512,14 @@ Most restricted value: 1
 <a href="" id="browser-preventfirstrunpage"></a>**Browser/PreventFirstRunPage**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -3559,38 +2565,14 @@ Most restricted value: 1
 <a href="" id="browser-preventlivetiledatacollection"></a>**Browser/PreventLiveTileDataCollection**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -3636,38 +2618,14 @@ Most restricted value: 1
 <a href="" id="browser-preventsmartscreenpromptoverride"></a>**Browser/PreventSmartScreenPromptOverride**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -3711,38 +2669,14 @@ Most restricted value: 1
 <a href="" id="browser-preventsmartscreenpromptoverrideforfiles"></a>**Browser/PreventSmartScreenPromptOverrideForFiles**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -3787,38 +2721,14 @@ Most restricted value: 1
 <a href="" id="browser-preventturningoffrequiredextensions"></a>**Browser/PreventTurningOffRequiredExtensions**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -3869,38 +2779,14 @@ Supported values:
 <a href="" id="browser-preventusinglocalhostipaddressforwebrtc"></a>**Browser/PreventUsingLocalHostIPAddressForWebRTC**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -3917,8 +2803,6 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows for desktop and not supported in Windows Mobile.
 
 [!INCLUDE [prevent-using-localhost-ip-address-for-webrtc-shortdesc](../includes/prevent-using-localhost-ip-address-for-webrtc-shortdesc.md)]
 
@@ -3947,38 +2831,14 @@ Most restricted value: 1
 <a href="" id="browser-provisionfavorites"></a>**Browser/ProvisionFavorites**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -4032,38 +2892,14 @@ ADMX Info:
 <a href="" id="browser-sendintranettraffictointernetexplorer"></a>**Browser/SendIntranetTraffictoInternetExplorer**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -4082,10 +2918,6 @@ ADMX Info:
 <!--Description-->
 
 [!INCLUDE [send-all-intranet-sites-to-ie-shortdesc](../includes/send-all-intranet-sites-to-ie-shortdesc.md)]
-
-> [!NOTE]
-> This policy is only enforced in Windows for desktop and not supported in Windows Mobile.
-
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -4113,38 +2945,14 @@ Most restricted value: 0
 <a href="" id="browser-setdefaultsearchengine"></a>**Browser/SetDefaultSearchEngine**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -4198,38 +3006,14 @@ Most restricted value: 1
 <a href="" id="browser-sethomebuttonurl"></a>**Browser/SetHomeButtonURL**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -4280,38 +3064,14 @@ Supported values:
 <a href="" id="browser-setnewtabpageurl"></a>**Browser/SetNewTabPageURL**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -4361,38 +3121,14 @@ Supported values:
 <a href="" id="browser-showmessagewhenopeningsitesininternetexplorer"></a>**Browser/ShowMessageWhenOpeningSitesInInternetExplorer**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -4410,10 +3146,6 @@ Supported values:
 <!--/Scope-->
 <!--Description-->
 [!INCLUDE [show-message-when-opening-sites-in-ie-shortdesc](../includes/show-message-when-opening-sites-in-ie-shortdesc.md)]
-
-
-> [!NOTE]
-> This policy is only enforced in Windows for desktop and not supported in Windows Mobile.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -4441,38 +3173,14 @@ Most restricted value: 0
 <a href="" id="browser-suppressedgedeprecationnotification"></a>**Browser/SuppressEdgeDeprecationNotification**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -4492,9 +3200,6 @@ Most restricted value: 0
 This policy allows Enterprise Admins to turn off the notification for company devices that the Edge Legacy browser is no longer supported after 3/9/2021 to avoid confusion for their enterprise users and reduce help desk calls. 
 By default, a notification will be presented to the user informing them of this upon application startup.
 With this policy, you can either allow (default) or suppress this notification.
-
-> [!NOTE]
-> This policy is only enforced in Windows for desktop and not supported in Windows Mobile.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -4516,38 +3221,14 @@ Supported values:
 <a href="" id="browser-syncfavoritesbetweenieandmicrosoftedge"></a><b>Browser/SyncFavoritesBetweenIEAndMicrosoftEdge</b>
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -4568,9 +3249,6 @@ Supported values:
  
 
 [!INCLUDE [keep-favorites-in-sync-between-ie-and-edge-shortdesc](../includes/keep-favorites-in-sync-between-ie-and-edge-shortdesc.md)]
-
-> [!NOTE]
-> This policy is only enforced in Windows for desktop and not supported in Windows Mobile.  
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -4606,38 +3284,14 @@ To verify that favorites are in synchronized between Internet Explorer and Micro
 <a href="" id="browser-unlockhomebutton"></a>**Browser/UnlockHomeButton**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -4688,38 +3342,14 @@ Supported values:
 <a href="" id="browser-usesharedfolderforbooks"></a>**Browser/UseSharedFolderForBooks**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>No</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
