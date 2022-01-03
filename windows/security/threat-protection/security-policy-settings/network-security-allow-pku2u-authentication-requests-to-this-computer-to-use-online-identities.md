@@ -49,7 +49,7 @@ This policy isn't configured by default on domain-joined devices. This would dis
 
 ### Best practices
 
-Within a domain, domain accounts should be used for authentication. Set this policy to **Disabled** or don't configure this policy to exclude online identities from being used to authenticate for on-premises only environments. Set this policy to **Enabled** for hybrid and Azure AD joined environments.
+Within a domain, domain accounts should be used for authentication. Set this policy to **Disabled** or don't configure this policy to exclude online identities from being used to authenticate for on-premises only environments. Set this policy to **Enabled** for hybrid and Azure AD-joined environments.
 
 ### Location
 
