@@ -3693,7 +3693,7 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to define the number of days that must pass before spyware security intelligence is considered out of date. If security intelligence is determined to be out of date, this state may trigger several additional actions, including falling back to an alternative update source or displaying a warning icon in the user interface. By default, this value is set to 14 days.
 
-We do not recommend setting the value below two days to avoid machines going out of date.
+We do not recommend setting the value to less than 2 days to prevent machines from going out of date.
 
 If you enable this setting, spyware security intelligence will be considered out of date after the number of days specified have passed without an update.
 
