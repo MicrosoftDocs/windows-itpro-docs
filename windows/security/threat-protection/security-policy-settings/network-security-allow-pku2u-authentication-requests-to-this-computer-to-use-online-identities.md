@@ -67,7 +67,7 @@ The following table lists the effective default values for this policy. Default 
 | Domain controller effective default settings | Disabled| 
 | Member server effective default settings | Disabled| 
 | Effective GPO default settings on client computers prior to Windows 10 1607 | Disabled| 
-| Effective GPO default settings on client computers Windows 10 1607 and newer | Enabled| 
+| Effective GPO default settings on client computers Windows 10, Version 1607 and later| Enabled| 
  
 ## Security considerations
 
