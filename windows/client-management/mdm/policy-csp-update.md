@@ -1582,6 +1582,7 @@ ADMX Info:
 Supports a numeric value from 0-7, which indicates the minimum number of days a device will wait before it restarts automatically after installing a required feature update.
 Default value is 2.
 
+
 <!--/SupportedValues-->
 <!--Example-->
 
