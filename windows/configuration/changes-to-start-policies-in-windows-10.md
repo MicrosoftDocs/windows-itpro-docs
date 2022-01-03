@@ -29,85 +29,24 @@ Windows 10 has a brand new Start experience. As a result, there are changes to 
 
 These policy settings are available in **Administrative Templates\\Start Menu and Taskbar** under **User Configuration**.
 
-<table>
-
-<thead>
-<tr class="header">
-<th align="left">Policy</th>
-<th align="left">Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Clear history of recently opened documents on exit</td>
-<td align="left">Documents that the user opens are tracked during the session. When the user signs off, the history of opened documents is deleted.</td>
-</tr>
-<tr class="even">
-<td align="left">Do not allow pinning items in Jump Lists</td>
-<td align="left">Jump Lists are lists of recently opened items, such as files, folders, or websites, organized by the program that you use to open them. This policy prevents users from pinning items to any Jump List.</td>
-</tr>
-<tr class="odd">
-<td align="left">Do not display or track items in Jump Lists from remote locations</td>
-<td align="left">When this policy is applied, only items local on the computer are shown in Jump Lists.</td>
-</tr>
-<tr class="even">
-<td align="left">Do not keep history of recently opened documents</td>
-<td align="left">Documents that the user opens are not tracked during the session.</td>
-</tr>
-<tr class="odd">
-<td align="left">Prevent changes to Taskbar and Start Menu Settings</td>
-<td align="left">In Windows 10, this disables all of the settings in <strong>Settings</strong> &gt; <strong>Personalization</strong> &gt; <strong>Start</strong> as well as the options in dialog available via right-click Taskbar &gt; <strong>Properties</strong></td>
-</tr>
-<tr class="even">
-<td align="left">Prevent users from customizing their Start Screen</td>
-<td align="left"><p>Use this policy in conjunction with a <a href="windows-10-start-layout-options-and-policies.md" data-raw-source="[customized Start layout](windows-10-start-layout-options-and-policies.md)">customized Start layout</a> to prevent users from changing it</p></td>
-</tr>
-<tr class="odd">
-<td align="left">Prevent users from uninstalling applications from Start</td>
-<td align="left">In Windows 10, this removes the uninstall button in the context menu. It does not prevent users from uninstalling the app through other entry points (e.g. PowerShell)</td>
-</tr>
-<tr class="even">
-<td align="left">Remove All Programs list from the Start menu</td>
-<td align="left">In Windows 10, this removes the <strong>All apps</strong> button.</td>
-</tr>
-<tr class="odd">
-<td align="left">Remove and prevent access to the Shut Down, Restart, Sleep, and Hibernate commands</td>
-<td align="left">This removes the Shut Down, Restart, Sleep, and Hibernate commands from the Start Menu, Start Menu power button, CTRL+ALT+DEL screen, and Alt+F4 Shut Down Windows menu.</td>
-</tr>
-<tr class="even">
-<td align="left">Remove common program groups from Start Menu</td>
-<td align="left">As in earlier versions of Windows, this removes apps specified in the All Users profile from Start</td>
-</tr>
-<tr class="odd">
-<td align="left">Remove frequent programs list from the Start Menu</td>
-<td align="left">In Windows 10, this removes the top left <strong>Most used</strong> group of apps.</td>
-</tr>
-<tr class="even">
-<td align="left">Remove Logoff on the Start Menu</td>
-<td align="left"><strong>Logoff</strong> has been changed to <strong>Sign Out</strong> in the user interface, however the functionality is the same.</td>
-</tr>
-<tr class="odd">
-<td align="left">Remove pinned programs list from the Start Menu</td>
-<td align="left">In Windows 10, this removes the bottom left group of apps (by default, only File Explorer and Settings are pinned).</td>
-</tr>
-<tr class="even">
-<td align="left">Show &quot;Run as different user&quot; command on Start</td>
-<td align="left">This enables the <strong>Run as different user</strong> option in the right-click menu for apps.</td>
-</tr>
-<tr class="odd">
-<td align="left">Start Layout</td>
-<td align="left"><p>This applies a specific Start layout, and it also prevents users from changing the layout. This policy can be configured in <strong>User Configuration</strong> or <strong>Computer Configuration</strong>.</p>
-<div>
- 
-</div></td>
-</tr>
-<tr class="even">
-<td align="left">Force Start to be either full screen size or menu size</td>
-<td align="left">This applies a specific size for Start.</td>
-</tr>
-</tbody>
-</table>
-
+|Policy|Notes|
+|--- |--- |
+|Clear history of recently opened documents on exit|Documents that the user opens are tracked during the session. When the user signs off, the history of opened documents is deleted.|
+|Do not allow pinning items in Jump Lists|Jump Lists are lists of recently opened items, such as files, folders, or websites, organized by the program that you use to open them. This policy prevents users from pinning items to any Jump List.|
+|Do not display or track items in Jump Lists from remote locations|When this policy is applied, only items local on the computer are shown in Jump Lists.|
+|Do not keep history of recently opened documents|Documents that the user opens are not tracked during the session.|
+|Prevent changes to Taskbar and Start Menu Settings|In Windows 10, this disables all of the settings in **Settings** > **Personalization** > **Start** as well as the options in dialog available via right-click Taskbar > **Properties**|
+|Prevent users from customizing their Start Screen|Use this policy in conjunction with a [customized Start layout](windows-10-start-layout-options-and-policies.md) to prevent users from changing it|
+|Prevent users from uninstalling applications from Start|In Windows 10, this removes the uninstall button in the context menu. It does not prevent users from uninstalling the app through other entry points (e.g. PowerShell)|
+|Remove All Programs list from the Start menu|In Windows 10, this removes the **All apps** button.|
+|Remove and prevent access to the Shut Down, Restart, Sleep, and Hibernate commands|This removes the Shut Down, Restart, Sleep, and Hibernate commands from the Start Menu, Start Menu power button, CTRL+ALT+DEL screen, and Alt+F4 Shut Down Windows menu.|
+|Remove common program groups from Start Menu|As in earlier versions of Windows, this removes apps specified in the All Users profile from Start|
+|Remove frequent programs list from the Start Menu|In Windows 10, this removes the top left **Most used** group of apps.|
+|Remove Logoff on the Start Menu|**Logoff** has been changed to **Sign Out** in the user interface, however the functionality is the same.|
+|Remove pinned programs list from the Start Menu|In Windows 10, this removes the bottom left group of apps (by default, only File Explorer and Settings are pinned).|
+|Show "Run as different user" command on Start|This enables the **Run as different user** option in the right-click menu for apps.|
+|Start Layout|This applies a specific Start layout, and it also prevents users from changing the layout. This policy can be configured in **User Configuration** or **Computer Configuration**.|
+|Force Start to be either full screen size or menu size|This applies a specific size for Start.|
  
 
 ## <a href="" id="deprecated-group-policy-settings-for-start-"></a>Deprecated Group Policy settings for Start

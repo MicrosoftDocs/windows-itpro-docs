@@ -11,6 +11,7 @@ ms.author: mandia
 author: MandiOhlinger
 ms.localizationpriority: medium
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Overview of apps on Windows client devices
