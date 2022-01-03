@@ -34,7 +34,7 @@ When devices are configured to accept authentication requests by using online ID
 > [!NOTE]
 > Linking online IDs can be performed by anyone who has an account that has standard user’s credentials through Credential Manager.
  
-This policy isn't configured by default on domain-joined devices. This would disallow the online identities to authenticate to domain-joined computers in Windows 7 up to Windows 10 1607. This policy is enabled by default on Windows 10 1607 and newer.
+This policy isn't configured by default on domain-joined devices. This would disallow the online identities to authenticate to domain-joined computers from Windows 7 up to Windows 10, Version 1607. This policy is enabled by default in Windows 10, Version 1607, and later.
 
 ### Possible values
 
