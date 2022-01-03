@@ -2,7 +2,7 @@
 title: Connection endpoints for Windows 10, version 1803
 description: Explains what Windows 10 endpoints are used for, how to turn off traffic to them, and the impact. Specific to Windows 10 Enterprise, version 1803.
 keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2016
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
@@ -12,8 +12,9 @@ ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 6/26/2018
-ms.reviewer: 
+ms.date: 11/29/2021
+ms.reviewer:
+ms.technology: privacy 
 ---
 # Manage connection endpoints for Windows 10 Enterprise, version 1803
 
@@ -31,16 +32,16 @@ Some Windows components, app, and related services transfer data to Microsoft ne
 
 This article lists different endpoints that are available on a clean installation of Windows 10, version 1709 and later.
 Details about the different ways to control traffic to these endpoints are covered in [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md). 
-Where applicable, each endpoint covered in this topic includes a link to specific details about how to control traffic to it. 
+Where applicable, each endpoint covered in this article includes a link to specific details about how to control traffic to it. 
 
 We used the following methodology to derive these network endpoints:
 
 1. Set up the latest version of Windows 10 on a test virtual machine using the default settings. 
-2. Leave the devices running idle for a week (that is, a user is not interacting with the system/device).
+2. Leave the devices running idle for a week (that is, a user isn't interacting with the system/device).
 3. Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.  
 4. Compile reports on traffic going to public IP addresses.
-5.  The test virtual machine was logged in using a local account and was not joined to a domain or Azure Active Directory.
-6.  All traffic was captured in our lab using a IPV4 network.  Therefore no IPV6 traffic is reported here. 
+5.  The test virtual machine was logged in using a local account and wasn't joined to a domain or Azure Active Directory.
+6.  All traffic was captured in our lab using a IPV4 network.  As such no IPV6 traffic is reported here. 
 
 > [!NOTE]
 > Microsoft uses global load balancers that can appear in network trace-routes. For example, an endpoint for *.akadns.net might be used to load balance requests to an Azure datacenter, which can change over time.
@@ -60,7 +61,7 @@ If you [turn off traffic to this endpoint](manage-connections-from-windows-opera
 The following endpoint is used for OneNote Live Tile. 
 To turn off traffic for this endpoint, either uninstall OneNote or [disable the Microsoft Store](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-windowsstore). 
 If you disable the Microsoft store, other Store apps cannot be installed or updated. 
-Additionally, the Microsoft Store won't be able to revoke malicious Store apps and users will still be able to open them.
+Additionally, the Microsoft Store can't revoke malicious Store apps and users will can still open them.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
@@ -69,7 +70,7 @@ Additionally, the Microsoft Store won't be able to revoke malicious Store apps a
 The following endpoints are used for Twitter updates. 
 To turn off traffic for these endpoints, either uninstall Twitter or [disable the Microsoft Store](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-windowsstore). 
 If you disable the Microsoft store, other Store apps cannot be installed or updated. 
-Additionally, the Microsoft Store won't be able to revoke malicious Store apps and users will still be able to open them.
+Additionally, the Microsoft Store can't revoke malicious Store apps and users will can still open them.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
@@ -79,7 +80,7 @@ Additionally, the Microsoft Store won't be able to revoke malicious Store apps a
 The following endpoint is used for Facebook updates. 
 To turn off traffic for this endpoint, either uninstall Facebook or [disable the Microsoft Store](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-windowsstore). 
 If you disable the Microsoft store, other Store apps cannot be installed or updated. 
-Additionally, the Microsoft Store won't be able to revoke malicious Store apps and users will still be able to open them.
+Additionally, the Microsoft Store can't revoke malicious Store apps and users will can still open them.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
@@ -88,7 +89,7 @@ Additionally, the Microsoft Store won't be able to revoke malicious Store apps a
 The following endpoint is used by the Photos app to download configuration files, and to connect to the Microsoft 365 admin center's shared infrastructure, including Office. 
 To turn off traffic for this endpoint, either uninstall the Photos app or [disable the Microsoft Store](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-windowsstore). 
 If you disable the Microsoft store, other Store apps cannot be installed or updated. 
-Additionally, the Microsoft Store won't be able to revoke malicious Store apps and users will still be able to open them.
+Additionally, the Microsoft Store can't revoke malicious Store apps and users can still open them.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
@@ -97,7 +98,7 @@ Additionally, the Microsoft Store won't be able to revoke malicious Store apps a
 The following endpoint is used for Candy Crush Saga updates. 
 To turn off traffic for this endpoint, either uninstall Candy Crush Saga or [disable the Microsoft Store](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-windowsstore). 
 If you disable the Microsoft store, other Store apps cannot be installed or updated. 
-Additionally, the Microsoft Store won't be able to revoke malicious Store apps and users will still be able to open them.
+Additionally, the Microsoft Store can't revoke malicious Store apps and users can still open them.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
@@ -106,14 +107,14 @@ Additionally, the Microsoft Store won't be able to revoke malicious Store apps a
 The following endpoint is used for by the Microsoft Wallet app. 
 To turn off traffic for this endpoint, either uninstall the Wallet app or [disable the Microsoft Store](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-windowsstore). 
 If you disable the Microsoft store, other Store apps cannot be installed or updated. 
-Additionally, the Microsoft Store won't be able to revoke malicious Store apps and users will still be able to open them.
+Additionally, the Microsoft Store can't revoke malicious Store apps and users can still open them.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
 | system32\AppHostRegistrationVerifier.exe | HTTPS | wallet.microsoft.com |
 
 The following endpoint is used by the Groove Music app for update HTTP handler status. 
-If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-apps-for-websites), apps for websites won't work and customers who visit websites (such as mediaredirect.microsoft.com) that are registered with their associated app (such as Groove Music) will stay at the website and won't be able to directly launch the app.
+If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-apps-for-websites), apps for websites won't work and customers who visit websites (such as mediaredirect.microsoft.com) that are registered with their associated app (such as Groove Music) will stay at the website and can't directly launch the app.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
@@ -122,28 +123,28 @@ If you [turn off traffic for this endpoint](manage-connections-from-windows-oper
 ## Cortana and Search
 
 The following endpoint is used to get images that are used for Microsoft Store suggestions.
-If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-cortana), you will block images that are used for Microsoft Store suggestions.
+If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-cortana), you'll block images that are used for Microsoft Store suggestions.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
 | searchui        | HTTPS |store-images.s-microsoft.com  |
 
 The following endpoint is used to update Cortana greetings, tips, and Live Tiles.
-If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-cortana), you will block updates to Cortana greetings, tips, and Live Tiles.
+If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-cortana), you'll block updates to Cortana greetings, tips, and Live Tiles.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
 | backgroundtaskhost  | HTTPS   | www.bing.com/client |
 
 The following endpoint is used to configure parameters, such as how often the Live Tile is updated. It's also used to activate experiments. 
-If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-cortana), parameters would not be updated and the device would no longer participate in experiments.
+If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-cortana), parameters wouldn't be updated and the device would no longer participate in experiments.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
 | backgroundtaskhost  | HTTPS   | www.bing.com/proactive |
 
 The following endpoint is used by Cortana to report diagnostic and diagnostic data information.
-If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-cortana), Microsoft won't be aware of issues with Cortana and won't be able to fix them.
+If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-cortana), Microsoft won't be aware of issues with Cortana and can't fix them.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
@@ -151,11 +152,11 @@ If you [turn off traffic for this endpoint](manage-connections-from-windows-oper
 
 ## Certificates
 
-The following endpoint is used by the Automatic Root Certificates Update component to automatically check the list of trusted authorities on Windows Update to see if an update is available. It is possible to [turn off traffic to this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#automatic-root-certificates-update), but that is not recommended because when root certificates are updated over time, applications and websites may stop working because they did not receive an updated root certificate the application uses.
+The following endpoint is used by the Automatic Root Certificates Update component to automatically check the list of trusted authorities on Windows Update to see if an update is available. It's possible to [turn off traffic to this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#automatic-root-certificates-update), but that isn't recommended because when root certificates are updated over time, applications and websites may stop working because they didn't receive an updated root certificate the application uses.
 
-Additionally, it is used to download certificates that are publicly known to be fraudulent.
+Additionally, it's used to download certificates that are publicly known to be fraudulent.
 These settings are critical for both Windows security and the overall security of the Internet. 
-We do not recommend blocking this endpoint.
+We don't recommend blocking this endpoint.
 If traffic to this endpoint is turned off, Windows no longer automatically downloads certificates known to be fraudulent, which increases the attack vector on the device.
 
 | Source process | Protocol | Destination |
@@ -165,7 +166,7 @@ If traffic to this endpoint is turned off, Windows no longer automatically downl
 ## Device authentication
 
 The following endpoint is used to authenticate a device.
-If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-feedback), the device will not be authenticated.
+If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-feedback), the device won't be authenticated.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
@@ -174,7 +175,7 @@ If you [turn off traffic for this endpoint](manage-connections-from-windows-oper
 ## Device metadata
 
 The following endpoint is used to retrieve device metadata.
-If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-devinst), metadata will not be updated for the device.
+If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-devinst), metadata won't be updated for the device.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
@@ -184,7 +185,7 @@ If you [turn off traffic for this endpoint](manage-connections-from-windows-oper
 ## Diagnostic Data
 
 The following endpoint is used by the Connected User Experiences and Telemetry component and connects to the Microsoft Data Management service.
-If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-feedback), diagnostic and usage information, which helps Microsoft find and fix problems and improve our products and services, will not be sent back to Microsoft.
+If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-feedback), diagnostic and usage information, which helps Microsoft find and fix problems and improve our products and services, won't be sent back to Microsoft.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
@@ -297,7 +298,7 @@ If you [turn off traffic for this endpoint](manage-connections-from-windows-oper
 
 ## Office
 
-The following endpoints are used to connect to the Microsoft 365 admin center's shared infrastructure, including Office. For more info, see [Office 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US#BKMK_Portal-identity). 
+The following endpoints are used to connect to the Microsoft 365 admin center's shared infrastructure, including Office. For more info, see [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges). 
 You can turn this off by removing all Microsoft Office apps and the Mail and Calendar apps.
 If you turn off traffic for these endpoints, users won't be able to save documents to the cloud or see their recently used documents.
 
@@ -309,7 +310,7 @@ If you turn off traffic for these endpoints, users won't be able to save documen
 |   |    | *.s-msedge.net  |
 |   | HTTPS | ocos-office365-s2s.msedge.net |
 
-The following endpoint is used to connect to the Microsoft 365 admin center's shared infrastructure, including Office. For more info, see [Office 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US#BKMK_Portal-identity). 
+The following endpoint is used to connect to the Microsoft 365 admin center's shared infrastructure, including Office. For more info, see [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges). 
 You can turn this off by removing all Microsoft Office apps and the Mail and Calendar apps.
 If you turn off traffic for these endpoints, users won't be able to save documents to the cloud or see their recently used documents.
 
@@ -332,7 +333,7 @@ If you [turn off traffic for this endpoint](manage-connections-from-windows-oper
 |----------------|----------|------------|
 | onedrive | HTTP \ HTTPS   | g.live.com/1rewlive5skydrive/ODSUProduction |
 
-The following endpoint is used by OneDrive for Business to download and verify app updates. For more info, see [Office 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US).
+The following endpoint is used by OneDrive for Business to download and verify app updates. For more info, see [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges).
 To turn off traffic for this endpoint, uninstall OneDrive for Business. In this case, your device will not able to get OneDrive for Business app updates.
 
 | Source process | Protocol | Destination |
@@ -460,5 +461,5 @@ To view endpoints for non-Enterprise Windows 10 editions, see:
 
 ## Related links
 
-- [Office 365 URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US)
+- [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges)
 - [Network infrastructure requirements for Microsoft Intune](/mem/intune/fundamentals/intune-endpoints)

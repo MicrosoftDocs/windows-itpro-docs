@@ -8,12 +8,15 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 04/02/2017
 ---
 
 # VPN CSP
 
+The VPN CSP is deprecated. Use [VPNv2 CSP](vpnv2-csp.md) instead.
+
+<!-- 12.16.2021 mandia: Commenting out, as this CSP is specific to Windows 10 Mobile.
 
 The VPN configuration service provider allows the MDM server to configure the VPN profile of the device. Windows 10 supports both IKEv2 VPN and SSL VPN profiles. For information about IKEv2, see [Configure IKEv2-based Remote Access](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff687731(v=ws.10)).
 
@@ -339,11 +342,10 @@ Value type is chr.
 
 An example is corp.contoso.com.
 
+-->
+
 ## Related topics
 
+[VPNv2 CSP](vpnv2-csp.md)
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-
- 
