@@ -2,7 +2,7 @@
 title: Hybrid Azure AD joined Key trust Windows Hello for Business Prerequisites (Windows Hello for Business)
 description: Learn about the prerequisites for hybrid Windows Hello for Business deployments using key trust and what the next steps are in the deployment process.
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, key-trust
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
@@ -66,7 +66,7 @@ The Windows Hello for Business deployment depends on an enterprise public key in
 
 Key trust deployments do not need client issued certificates for on-premises authentication.  Active Directory user accounts are automatically configured for public key mapping by Azure AD Connect synchronizing the public key of the registered Windows Hello for Business credential to an attribute on the user's Active Directory object.
 
-The minimum required Enterprise certificate authority that can be used with Windows Hello for Business is Windows Server 2012, but you can also use a third-party Enterprise certification authority. The requirements for the domain controller certificate are shown below. For more details, see [Requirements for domain controller certificates from a third-party CA](https://support.microsoft.com/help/291010/requirements-for-domain-controller-certificates-from-a-third-party-ca).
+The minimum required Enterprise certificate authority that can be used with Windows Hello for Business is Windows Server 2012, but you can also use a third-party Enterprise certification authority. The requirements for the domain controller certificate are shown below. For more details, see [Requirements for domain controller certificates from a third-party CA](/troubleshoot/windows-server/windows-security/requirements-domain-controller).
 
 * The certificate must have a Certificate Revocation List (CRL) distribution point extension that points to a valid CRL, or an Authority Information Access (AIA) extension that points to an Online Certificate Status Protocol (OCSP) responder.
 * The certificate Subject section should contain the directory path of the server object (the distinguished name).

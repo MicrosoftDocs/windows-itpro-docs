@@ -63,7 +63,7 @@ The computer on which you are installing the Office Deployment Tool must have th
 
 | Prerequisite     | Description    |
 |----------------------|--------------------|
-| Prerequisite software    | .Net Framework 4    |
+| Prerequisite software    | .NET Framework 4    |
 | Supported operating systems | 64-bit version of Windows 10/11<br>64-bit version of Windows 8 or 8.1<br>64-bit version of Windows 7 |
 
 >[!NOTE]
@@ -120,7 +120,7 @@ The XML file included in the Office Deployment Tool specifies the product detail
       |--------------|----------------------------|----------------|
       | Add element  | Specifies which products and languages the package will include.     | N/A     |
       | **OfficeClientEdition** (attribute of **Add** element) | Specifies whether Office 2016 32-bit or 64-bit edition will be used. **OfficeClientEdition**  must be set to a valid value for the operation to succeed.     | `OfficeClientEdition="32"`<br>`OfficeClientEdition="64"`  |
-      | Product element   | Specifies the application. Project 2016 and Visio 2016 must be specified here as added products to include them in the applications.<br>For more information about Product IDs, see [Product IDs that are supported by the Office Deployment Tool for Click-to-Run](https://support.microsoft.com/kb/2842297).   | `Product ID ="O365ProPlusRetail"`<br>`Product ID ="VisioProRetail"`<br>`Product ID ="ProjectProRetail"` |
+      | Product element   | Specifies the application. Project 2016 and Visio 2016 must be specified here as added products to include them in the applications.<br>For more information about Product IDs, see [Product IDs that are supported by the Office Deployment Tool for Click-to-Run](/office365/troubleshoot/installation).   | `Product ID ="O365ProPlusRetail"`<br>`Product ID ="VisioProRetail"`<br>`Product ID ="ProjectProRetail"` |
       | Language element     | Specifies which language the applications support.    | `Language ID="en-us"`   |
       | Version (attribute of **Add** element) | Optional. Specifies which build the package will use.<br>Defaults to latest advertised build (as defined in v32.CAB at the Office source).   | `16.1.2.3`    |
       | SourcePath (attribute of **Add** element)   | Specifies the location the applications will be saved to.    | `Sourcepath = "\\Server\Office2016"`     |

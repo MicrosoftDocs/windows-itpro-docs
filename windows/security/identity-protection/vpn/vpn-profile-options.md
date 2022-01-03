@@ -4,7 +4,7 @@ description: Windows adds Virtual Private Network (VPN) profile options to help 
 ms.assetid: E3F99DF9-863D-4E28-BAED-5C1B1B913523
 ms.reviewer: 
 manager: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, networking

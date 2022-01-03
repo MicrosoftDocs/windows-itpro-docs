@@ -2,17 +2,18 @@
 title: Connection endpoints for Windows 10 Enterprise, version 2004
 description: Explains what Windows 10 endpoints are used for, how to turn off traffic to them, and the impact. Specific to Windows 10 Enterprise, version 2004.
 keywords: privacy, manage connections to Microsoft, Windows 10
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
 audience: ITPro
 author: linque1
-ms.author: robsize
-manager: robsize
+ms.author: siosulli
+manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 10/22/2020
+ms.date: 11/29/2021
+ms.technology: privacy
 ---
 # Manage connection endpoints for Windows 10 Enterprise, version 2004
 
