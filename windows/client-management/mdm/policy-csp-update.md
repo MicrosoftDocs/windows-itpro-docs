@@ -1203,7 +1203,7 @@ Default value is 2.
 
 <!--/Scope-->
 <!--Description-->
-When used with [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates) or [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)), devices will delay automatically restarting until both the deadline and grace period have expired, even if applicable updates are already installed and pending a restart.
+When used with [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates) or [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates), devices will delay automatically restarting until both the deadline and grace period have expired, even if applicable updates are already installed and pending a restart.
 
 When disabled, if the device has installed updates and is outside of active hours, it might attempt an automatic restart before the deadline.
 
