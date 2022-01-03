@@ -31,6 +31,9 @@ manager: dansimp
   <dd>
     <a href="#notifications-disallowtilenotification">Notifications/DisallowTileNotification</a>
   </dd>
+  <dd>
+    <a href="#notifications-wnsendpoint">Notifications/WnsEndpoint</a>
+  </dd>
 </dl>
 
 
@@ -205,6 +208,78 @@ Validation:
 3. Ensure that all tiles are default (no live tile content showing, like no weather forecast on the Weather tile)
 
 <!--/Validation-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="notifications-wnsendpoint"></a>**Notifications/WnsEndpoint**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Machine
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting determines which Windows Notification Service endpoint will be used to connect for Windows Push Notifications. 
+
+If you disable or do not configure this setting, the push notifications will connect to the default endpoint of client.wns.windows.com.
+
+Note: Ensure the proper WNS FQDNs, VIPs, IPs and Ports are also whitelisted from your firewall settings.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *Required for Airgap servers that may have a unique FQDN that is different from the public endpoint*
+-   GP name: *WnsEndpoint*
+-   GP path: *Start Menu and Taskbar/Notifications*
+-   GP ADMX file name: *WPN.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+If the policy is not specified, we will default our connection to client.wns.windows.com.
+
+<!--/SupportedValues-->
 <!--/Policy-->
 <hr/>
 

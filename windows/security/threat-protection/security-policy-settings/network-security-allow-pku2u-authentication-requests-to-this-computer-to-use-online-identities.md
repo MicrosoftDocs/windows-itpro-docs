@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 01/03/2022
 ms.technology: windows-sec
 ---
 
@@ -34,14 +34,14 @@ When devices are configured to accept authentication requests by using online ID
 > [!NOTE]
 > Linking online IDs can be performed by anyone who has an account that has standard user’s credentials through Credential Manager.
  
-This policy isn't configured by default on domain-joined devices. This would disallow the online identities to authenticate to domain-joined computers in Windows 7 and later.
+This policy isn't configured by default on domain-joined devices. This would disallow the online identities to authenticate to domain-joined computers from Windows 7 up to Windows 10, Version 1607. This policy is enabled by default in Windows 10, Version 1607, and later.
 
 ### Possible values
 
 -   **Enabled**: This setting allows authentication to successfully complete between the two (or more) computers that have established a peer relationship through the use of online IDs. The PKU2U SSP obtains a local certificate and exchanges the policy between the peer devices. When validated on the peer computer, the certificate within the metadata is sent to the logon peer for validation. It associates the user's certificate to a security token, and then the logon process completes.
 
     > [!NOTE]
-    > KU2U is disabled by default on Windows Server. Remote Desktop connections from a hybrid Azure AD-joined server to an Azure AD-joined Windows 10 device or a Hybrid Azure AD-joined domain member Windows 10 device fail. To resolve this, enable PKU2U on the server and the client.
+    > PKU2U is disabled by default on Windows Server. If PKU2U is disabled, Remote Desktop connections from a hybrid Azure AD-joined server to an Azure AD-joined Windows 10 device or a Hybrid Azure AD-joined domain member Windows 10 device fail. To resolve this, enable PKU2U on the server and the client.
 
 -   **Disabled**: This setting prevents online IDs from being used to authenticate the user to another computer in a peer-to-peer relationship.
 
@@ -49,7 +49,7 @@ This policy isn't configured by default on domain-joined devices. This would dis
 
 ### Best practices
 
-Within a domain, domain accounts should be used for authentication. Set this policy to **Disabled** or don't configure this policy to exclude online identities from being used to authenticate.
+Within a domain, domain accounts should be used for authentication. Set this policy to **Disabled** or don't configure this policy to exclude online identities from being used to authenticate for on-premises only environments. Set this policy to **Enabled** for hybrid and Azure AD-joined environments.
 
 ### Location
 
@@ -66,7 +66,8 @@ The following table lists the effective default values for this policy. Default 
 | Stand-alone server default settings | Not defined| 
 | Domain controller effective default settings | Disabled| 
 | Member server effective default settings | Disabled| 
-| Effective GPO default settings on client computers | Disabled| 
+| Effective GPO default settings on client computers prior to Windows 10, Version 1607 | Disabled| 
+| Effective GPO default settings on client computers Windows 10, Version 1607 and later| Enabled| 
  
 ## Security considerations
 
