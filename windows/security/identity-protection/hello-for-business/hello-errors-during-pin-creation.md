@@ -47,6 +47,7 @@ If the error occurs again, check the error code against the following table to s
 
 | Hex        | Cause                                                              | Mitigation                                  |
 | :--------- | :----------------------------------------------------------------- | :------------------------------------------ |
+| 0x800706D9 | The Microsoft Passport Container service (ngcctnrsvc) is disabled. | Change the startup type for the Microsoft Passport Container service (ngcctnrsvc) to manual. |
 | 0x80090005 | NTE\_BAD\_DATA                                                     | Unjoin the device from Azure AD and rejoin. |
 | 0x8009000F | The container or key already exists.                               | Unjoin the device from Azure AD and rejoin. |
 | 0x80090011 | The container or key was not found.                                | Unjoin the device from Azure AD and rejoin. |
