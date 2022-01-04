@@ -415,7 +415,7 @@ Most restricted value: 0
 <!--Validation-->
 To verify AllowCookies is set to 0 (not allowed):
 
-1.  Open Microsoft Edge or Microsoft Edge for Windows 10 Mobile.
+1.  Open Microsoft Edge.
 2.  In the upper-right corner of the browser, click **…**.
 3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
 4.  Verify the setting **Cookies** is disabled.
@@ -453,8 +453,6 @@ To verify AllowCookies is set to 0 (not allowed):
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows for desktop and not supported in Windows Mobile.
 
 [!INCLUDE [allow-developer-tools-shortdesc](../includes/allow-developer-tools-shortdesc.md)]
 
@@ -530,7 +528,7 @@ Most restricted value: 1
 <!--Validation-->
 To verify AllowDoNotTrack is set to 0 (not allowed):
 
-1.  Open Microsoft Edge or Microsoft Edge for Windows 10 Mobile.
+1.  Open Microsoft Edge.
 2.  In the upper-right corner of the browser, click **…**.
 3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
 4.  Verify the setting **Send Do Not Track requests** is grayed out.
@@ -2223,11 +2221,6 @@ Most restricted value: 0
 
 [!INCLUDE [configure-enterprise-mode-site-list-shortdesc](../includes/configure-enterprise-mode-site-list-shortdesc.md)]
 
-> [!NOTE]
-> This policy is only enforced in Windows for desktop and not supported in Windows Mobile.
-
- 
-
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -2314,9 +2307,6 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> This policy is only available for Windows for desktop and not supported in Windows Mobile.
-
 
 [!INCLUDE [configure-start-pages-shortdesc](../includes/configure-start-pages-shortdesc.md)]
 
@@ -2813,8 +2803,6 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows for desktop and not supported in Windows Mobile.
 
 [!INCLUDE [prevent-using-localhost-ip-address-for-webrtc-shortdesc](../includes/prevent-using-localhost-ip-address-for-webrtc-shortdesc.md)]
 
@@ -2930,10 +2918,6 @@ ADMX Info:
 <!--Description-->
 
 [!INCLUDE [send-all-intranet-sites-to-ie-shortdesc](../includes/send-all-intranet-sites-to-ie-shortdesc.md)]
-
-> [!NOTE]
-> This policy is only enforced in Windows for desktop and not supported in Windows Mobile.
-
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -3163,10 +3147,6 @@ Supported values:
 <!--Description-->
 [!INCLUDE [show-message-when-opening-sites-in-ie-shortdesc](../includes/show-message-when-opening-sites-in-ie-shortdesc.md)]
 
-
-> [!NOTE]
-> This policy is only enforced in Windows for desktop and not supported in Windows Mobile.
-
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -3221,9 +3201,6 @@ This policy allows Enterprise Admins to turn off the notification for company de
 By default, a notification will be presented to the user informing them of this upon application startup.
 With this policy, you can either allow (default) or suppress this notification.
 
-> [!NOTE]
-> This policy is only enforced in Windows for desktop and not supported in Windows Mobile.
-
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -3272,9 +3249,6 @@ Supported values:
  
 
 [!INCLUDE [keep-favorites-in-sync-between-ie-and-edge-shortdesc](../includes/keep-favorites-in-sync-between-ie-and-edge-shortdesc.md)]
-
-> [!NOTE]
-> This policy is only enforced in Windows for desktop and not supported in Windows Mobile.  
 
 <!--/Description-->
 <!--ADMXMapped-->

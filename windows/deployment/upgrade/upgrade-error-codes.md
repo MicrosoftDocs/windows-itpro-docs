@@ -21,9 +21,9 @@ ms.collection: highpri
 -   Windows 10
 
 >[!NOTE]
->This is a 400 level topic (advanced).<br>
+>This is a 400 level topic (advanced).
+>
 >See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.
-
 
 If the upgrade process is not successful, Windows Setup will return two codes:
 
@@ -39,7 +39,7 @@ Note: If only a result code is returned, this can be because a tool is being use
 
 ## Result codes
 
-A result code of **0xC1900101** is generic and indicates that a rollback occurred. In most cases, the cause is a driver compatibility issue. <br>To troubleshoot a failed upgrade that has returned a result code of 0xC1900101, analyze the extend code to determine the Windows Setup phase, and see the [Resolution procedures](resolution-procedures.md) section later in this article.
+A result code of **0xC1900101** is generic and indicates that a rollback occurred. In most cases, the cause is a driver compatibility issue. To troubleshoot a failed upgrade that has returned a result code of 0xC1900101, analyze the extend code to determine the Windows Setup phase, and see the [Resolution procedures](resolution-procedures.md) section later in this article.
 
 The following set of result codes are associated with [Windows Setup](/windows-hardware/manufacture/desktop/windows-setup-command-line-options) compatibility warnings:
 
@@ -88,74 +88,64 @@ Extend codes can be matched to the phase and operation when an error occurred. T
 
 The following tables provide the corresponding phase and operation for values of an extend code:
 
-<br>
+### Extend code: phase
 
-<table cellspacing="0" cellpadding="0">
-<tr><td colspan="2" align="center" valign="top" BGCOLOR="#a0e4fa"><font color="#000000"><b>Extend code: phase</b></td>
-<tr><td><b>Hex</b><td><b>Phase</b>
-<tr><td>0<td>SP_EXECUTION_UNKNOWN
-<tr><td>1<td>SP_EXECUTION_DOWNLEVEL
-<tr><td>2<td>SP_EXECUTION_SAFE_OS
-<tr><td>3<td>SP_EXECUTION_FIRST_BOOT
-<tr><td>4<td>SP_EXECUTION_OOBE_BOOT
-<tr><td>5<td>SP_EXECUTION_UNINSTALL
-</table>
+|Hex|Phase|
+|--- |--- |
+|0|SP_EXECUTION_UNKNOWN|
+|1|SP_EXECUTION_DOWNLEVEL|
+|2|SP_EXECUTION_SAFE_OS|
+|3|SP_EXECUTION_FIRST_BOOT|
+|4|SP_EXECUTION_OOBE_BOOT|
+|5|SP_EXECUTION_UNINSTALL|
 
+### Extend code: Operation
 
-<table border="0" style='border-collapse:collapse;border:none'>
-<tr><td colspan="2" align="center" valign="top" BGCOLOR="#a0e4fa"><font color="#000000"><B>Extend code: operation</B></td>
-<tr><td align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
-<table>
-<tr><td><b>Hex</b><td><span style='padding:0in 5.4pt 0in 5.4pt;'><b>Operation</b>
-<tr><td><span>0<td><span>SP_EXECUTION_OP_UNKNOWN
-<tr><td><span>1<td><span>SP_EXECUTION_OP_COPY_PAYLOAD
-<tr><td><span>2<td><span>SP_EXECUTION_OP_DOWNLOAD_UPDATES
-<tr><td><span>3<td><span>SP_EXECUTION_OP_INSTALL_UPDATES
-<tr><td><span>4<td><span>SP_EXECUTION_OP_INSTALL_RECOVERY_ENVIRONMENT
-<tr><td><span>5<td><span>SP_EXECUTION_OP_INSTALL_RECOVERY_IMAGE
-<tr><td><span>6<td><span>SP_EXECUTION_OP_REPLICATE_OC
-<tr><td><span>7<td><span>SP_EXECUTION_OP_INSTALL_DRVIERS
-<tr><td><span>8<td><span>SP_EXECUTION_OP_PREPARE_SAFE_OS
-<tr><td><span>9<td><span>SP_EXECUTION_OP_PREPARE_ROLLBACK
-<tr><td><span>A<td><span>SP_EXECUTION_OP_PREPARE_FIRST_BOOT
-<tr><td><span>B<td><span>SP_EXECUTION_OP_PREPARE_OOBE_BOOT
-<tr><td><span>C<td><span>SP_EXECUTION_OP_APPLY_IMAGE
-<tr><td><span>D<td><span>SP_EXECUTION_OP_MIGRATE_DATA
-<tr><td><span>E<td><span>SP_EXECUTION_OP_SET_PRODUCT_KEY
-<tr><td><span>F<td><span>SP_EXECUTION_OP_ADD_UNATTEND
-</table>
-</td>
-<td align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
-<table>
-<tr><td><b>Hex</b><td><b>Operation</b>
-<tr><td><span>10<td><span>SP_EXECUTION_OP_ADD_DRIVER
-<tr><td><span>11<td><span>SP_EXECUTION_OP_ENABLE_FEATURE
-<tr><td><span>12<td><span>SP_EXECUTION_OP_DISABLE_FEATURE
-<tr><td><span>13<td><span>SP_EXECUTION_OP_REGISTER_ASYNC_PROCESS
-<tr><td><span>14<td><span>SP_EXECUTION_OP_REGISTER_SYNC_PROCESS
-<tr><td><span>15<td><span>SP_EXECUTION_OP_CREATE_FILE
-<tr><td><span>16<td><span>SP_EXECUTION_OP_CREATE_REGISTRY
-<tr><td><span>17<td><span>SP_EXECUTION_OP_BOOT
-<tr><td><span>18<td><span>SP_EXECUTION_OP_SYSPREP
-<tr><td><span>19<td><span>SP_EXECUTION_OP_OOBE
-<tr><td><span>1A<td><span>SP_EXECUTION_OP_BEGIN_FIRST_BOOT
-<tr><td><span>1B<td><span>SP_EXECUTION_OP_END_FIRST_BOOT
-<tr><td><span>1C<td><span>SP_EXECUTION_OP_BEGIN_OOBE_BOOT
-<tr><td><span>1D<td><span>SP_EXECUTION_OP_END_OOBE_BOOT
-<tr><td><span>1E<td><span>SP_EXECUTION_OP_PRE_OOBE
-<tr><td><span>1F<td><span>SP_EXECUTION_OP_POST_OOBE
-<tr><td><span>20<td><span>SP_EXECUTION_OP_ADD_PROVISIONING_PACKAGE
-</table>
-</td>
-</tr>
-</table>
+|Hex|Operation|
+|--- |--- |
+|0|SP_EXECUTION_OP_UNKNOWN|
+|1|SP_EXECUTION_OP_COPY_PAYLOAD|
+|2|SP_EXECUTION_OP_DOWNLOAD_UPDATES|
+|3|SP_EXECUTION_OP_INSTALL_UPDATES|
+|4|SP_EXECUTION_OP_INSTALL_RECOVERY_ENVIRONMENT|
+|5|SP_EXECUTION_OP_INSTALL_RECOVERY_IMAGE|
+|6|SP_EXECUTION_OP_REPLICATE_OC|
+|7|SP_EXECUTION_OP_INSTALL_DRIVERS|
+|8|SP_EXECUTION_OP_PREPARE_SAFE_OS|
+|9|SP_EXECUTION_OP_PREPARE_ROLLBACK|
+|A|SP_EXECUTION_OP_PREPARE_FIRST_BOOT|
+|B|SP_EXECUTION_OP_PREPARE_OOBE_BOOT|
+|C|SP_EXECUTION_OP_APPLY_IMAGE|
+|D|SP_EXECUTION_OP_MIGRATE_DATA|
+|E|SP_EXECUTION_OP_SET_PRODUCT_KEY|
+|F|SP_EXECUTION_OP_ADD_UNATTEND|
+
+|Hex|Operation|
+|--- |--- |
+|10|SP_EXECUTION_OP_ADD_DRIVER|
+|11|SP_EXECUTION_OP_ENABLE_FEATURE|
+|12|SP_EXECUTION_OP_DISABLE_FEATURE|
+|13|SP_EXECUTION_OP_REGISTER_ASYNC_PROCESS|
+|14|SP_EXECUTION_OP_REGISTER_SYNC_PROCESS|
+|15|SP_EXECUTION_OP_CREATE_FILE|
+|16|SP_EXECUTION_OP_CREATE_REGISTRY|
+|17|SP_EXECUTION_OP_BOOT|
+|18|SP_EXECUTION_OP_SYSPREP|
+|19|SP_EXECUTION_OP_OOBE|
+|1A|SP_EXECUTION_OP_BEGIN_FIRST_BOOT|
+|1B|SP_EXECUTION_OP_END_FIRST_BOOT|
+|1C|SP_EXECUTION_OP_BEGIN_OOBE_BOOT|
+|1D|SP_EXECUTION_OP_END_OOBE_BOOT|
+|1E|SP_EXECUTION_OP_PRE_OOBE|
+|1F|SP_EXECUTION_OP_POST_OOBE|
+|20|SP_EXECUTION_OP_ADD_PROVISIONING_PACKAGE|
 
 For example: An extend code of **0x4000D**, represents a problem during phase 4 (**0x4**) with data migration (**000D**).
 
 ## Related topics
 
-[Windows 10 FAQ for IT professionals](../planning/windows-10-enterprise-faq-itpro.yml)
-<br>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)
-<br>[Windows 10 Specifications](https://www.microsoft.com/windows/Windows-/ifications)
-<br>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)
-<br>[Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)
+[Windows 10 FAQ for IT professionals](../planning/windows-10-enterprise-faq-itpro.yml)  
+[Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)  
+[Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications)  
+[Microsoft Windows Q & A](/answers/products/windows)  
+[Fix Windows Update errors by using the DISM or System Update Readiness tool](/troubleshoot/windows-server/deployment/fix-windows-update-errors)

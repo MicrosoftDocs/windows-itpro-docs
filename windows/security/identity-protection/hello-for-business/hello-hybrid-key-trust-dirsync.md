@@ -2,7 +2,7 @@
 title: Configure Directory Synchronization for Hybrid Azure AD joined key trust Windows Hello for Business
 description: Azure Directory Synchronization for Hybrid Certificate Key Deployment (Windows Hello for Business)
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, key-trust, directory, synchronization, AADConnect
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile

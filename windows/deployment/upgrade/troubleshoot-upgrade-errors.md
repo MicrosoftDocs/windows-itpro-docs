@@ -85,7 +85,7 @@ When performing an operating system upgrade, Windows Setup uses phases described
 
 **Figure 1**: Phases of a successful Windows 10 upgrade (uninstall is not shown):
 
-![Upgrade process.](../images/upgrade-process.png)
+:::image type="content" alt-text="Upgrade process." source="../images/upgrade-process.png" lightbox="../images/upgrade-process.png":::
 
 DU = Driver/device updates.<br>
 OOBE = Out of box experience.<br>
@@ -97,4 +97,4 @@ WIM = Windows image (Microsoft)
 <br>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)
 <br>[Windows 10 Specifications](https://www.microsoft.com/windows/Windows-/ifications)
 <br>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)
-<br>[Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)
+<br>[Fix Windows Update errors by using the DISM or System Update Readiness tool](/troubleshoot/windows-server/deployment/fix-windows-update-errors)

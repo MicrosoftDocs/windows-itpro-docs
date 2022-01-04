@@ -1,7 +1,7 @@
 ---
 title: Active Directory Accounts (Windows 10)
 description: Active Directory Accounts
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -392,13 +392,13 @@ The following procedure describes how to block Internet access by creating a Gro
 
 5.  Right-click the new OU, and &gt; **Create a GPO in this domain, and Link it here**.
 
-    ![Active Directory local accounts 2](images/adlocalaccounts-proc1-sample2.png)
+    ![Active Directory's local accounts](images/adlocalaccounts-proc1-sample2.png)
 
 6.  Name the GPO, and &gt; **OK**.
 
 7.  Expand the GPO, right-click the new GPO, and &gt; **Edit**.
 
-    ![Active Directory local accounts 3](images/adlocalaccounts-proc1-sample3.png)
+    ![Active Directory (AD) local accounts](images/adlocalaccounts-proc1-sample3.png)
 
 8.  Configure which members of accounts can log on locally to these administrative workstations as follows:
 
@@ -417,7 +417,7 @@ The following procedure describes how to block Internet access by creating a Gro
 
     5.  Click **Add User or Group**, type **Administrators**, and &gt; **OK**.
 
-        ![Active Directory local accounts 4](images/adlocalaccounts-proc1-sample4.png)
+        ![AD local accounts](images/adlocalaccounts-proc1-sample4.png)
 
 9.  Configure the proxy configuration:
 
@@ -425,7 +425,7 @@ The following procedure describes how to block Internet access by creating a Gro
 
     2.  Double-click **Proxy Settings**, select the **Enable proxy settings** check box, type **127.0.0.1** (the network Loopback IP address) as the proxy address, and &gt; **OK**.
 
-        ![Active Directory local accounts 5](images/adlocalaccounts-proc1-sample5.png)
+        ![AD's local accounts](images/adlocalaccounts-proc1-sample5.png)
 
 10. Configure the loopback processing mode to enable the user Group Policy proxy setting to apply to all users on the computer as follows:
 
@@ -458,11 +458,11 @@ The following procedure describes how to block Internet access by creating a Gro
 
     1.  Right-click **Windows Firewall with Advanced Security LDAP://path**, and &gt; **Properties**.
 
-        ![Active Directory local accounts 6](images/adlocalaccounts-proc1-sample6.png)
+        ![Local accounts for Active Directory](images/adlocalaccounts-proc1-sample6.png)
 
     2.  On each profile, ensure that the firewall is enabled and that inbound connections are set to **Block all connections**.
 
-        ![Active Directory local accounts 7](images/adlocalaccounts-proc1-sample7.png)
+        ![Local accounts for an AD](images/adlocalaccounts-proc1-sample7.png)
 
     3.  Click **OK** to complete the configuration.
 
@@ -500,11 +500,11 @@ Restrict logon access to lower-trust servers and workstations by using the follo
 
 3.  Right-click **Group Policy Objects**, and &gt; **New**.
 
-    ![Active Directory local accounts 8](images/adlocalaccounts-proc2-sample1.png)
+    ![Local account's representation - Active Directory](images/adlocalaccounts-proc2-sample1.png)
 
 4.  In the **New GPO** dialog box, name the GPO that restricts administrators from signing in to workstations, and &gt; **OK**.
 
-    ![Active Directory local accounts 9](images/adlocalaccounts-proc2-sample2.png)
+    ![Local account's representation - AD](images/adlocalaccounts-proc2-sample2.png)
 
 5.  Right-click **New GPO**, and &gt; **Edit**.
 
@@ -518,7 +518,7 @@ Restrict logon access to lower-trust servers and workstations by using the follo
 
     3.  Click **Add User or Group**, click **Browse**, type **Domain Admins**, and &gt; **OK**.
 
-        ![Active Directory local accounts 10](images/adlocalaccounts-proc2-sample3.png)
+        ![An Active Directory's local accounts](images/adlocalaccounts-proc2-sample3.png)
 
         > [!NOTE]
         > You can optionally add any groups that contain server administrators who you want to restrict from signing in to workstations.
@@ -540,7 +540,7 @@ Restrict logon access to lower-trust servers and workstations by using the follo
 
     3.  Click **Add User or Group** &gt; **Browse**, type **Domain Admins**, and &gt; **OK**.
 
-        ![Active Directory local accounts 11](images/adlocalaccounts-proc2-sample4.png)
+        ![An AD's local accounts](images/adlocalaccounts-proc2-sample4.png)
 
         > [!NOTE]
         > You can optionally add any groups that contain server administrators who you want to restrict from signing in to workstations.
@@ -553,7 +553,7 @@ Restrict logon access to lower-trust servers and workstations by using the follo
 
     6.  Click **Add User or Group** &gt; **Browse**, type **Domain Admins**, and &gt; **OK**.
 
-        ![Active Directory local accounts 12](images/adlocalaccounts-proc2-sample5.png)
+        ![Local accounts for AD](images/adlocalaccounts-proc2-sample5.png)
 
         > [!NOTE]
         > You can optionally add any groups that contain server administrators who you want to restrict from signing in to workstations.
@@ -566,6 +566,12 @@ Restrict logon access to lower-trust servers and workstations by using the follo
 
     1.  Right-click the workstation OU, and then &gt; **Link an Existing GPO**.
 
+        ![Local accounts representation for an Active Directory](images/adlocalaccounts-proc2-sample6.png)
+
+    2.  Select the GPO that you just created, and &gt; **OK**.
+
+        ![Active Directory's local accounts' presentation](images/adlocalaccounts-proc2-sample7.png)
+=======
         ![Active Directory local accounts 13](images/adlocalaccounts-proc2-sample6.png)
 
     2.  Select the GPO that you just created, and &gt; **OK**.
@@ -593,7 +599,7 @@ It is a best practice to configure the user objects for all sensitive accounts i
 
 As with any configuration change, test this enabled setting fully to ensure that it performs correctly before you implement it.
 
-![Active Directory local accounts 15](images/adlocalaccounts-proc3-sample1.png)
+![An Active Directory local accounts' presentation](images/adlocalaccounts-proc3-sample1.png)
 
 ## <a href="" id="sec-secure-manage-dcs"></a>Secure and manage domain controllers
 

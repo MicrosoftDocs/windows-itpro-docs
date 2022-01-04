@@ -53,7 +53,7 @@ Choose one of the following two enrollment options:
 
 This is the Bring Your Own Device (BYOD) method--your device will receive Olympia policies and features, but a new account will not be created. See [Set up Azure Active Directory registered Windows 10 devices](/azure/active-directory/device-management-azuread-registered-devices-windows10-setup) for additional information.
 
-1. Go to **Start > Settings > Accounts > Access work or school**. To see this setting, you need to have administrator rights to your device (see [local administrator](https://support.microsoft.com/instantanswers/5de907f1-f8ba-4fd9-a89d-efd23fee918c/create-a-local-user-or-administrator-account-in-windows-10)).
+1. Go to **Start > Settings > Accounts > Access work or school**. To see this setting, you need to have administrator rights to your device (see [local administrator](https://support.microsoft.com/windows/create-a-local-user-or-administrator-account-in-windows-20de74e0-ac7f-3502-a866-32915af2a34d)).
 
     ![Settings -> Accounts.](images/1-1.png)
 
@@ -92,7 +92,7 @@ This is the Bring Your Own Device (BYOD) method--your device will receive Olympi
     > [!NOTE]
     > Make sure that you save your Pro license key before upgrading to the Enterprise edition. If the device gets disconnected from Olympia, you can use the Pro key to reactivate the license manually in the unlikely event that the license fails to downgrade back to Pro automatically. To reactivate manually, see [Upgrade by manually entering a product key](../../upgrade/windows-10-edition-upgrades.md#upgrade-by-manually-entering-a-product-key).
 
-1. Go to **Start > Settings > Accounts > Access work or school**. To see this setting, you need to have administrator rights to your device (see [local administrator](https://support.microsoft.com/instantanswers/5de907f1-f8ba-4fd9-a89d-efd23fee918c/create-a-local-user-or-administrator-account-in-windows-10)).
+1. Go to **Start > Settings > Accounts > Access work or school**. To see this setting, you need to have administrator rights to your device (see [local administrator](https://support.microsoft.com/windows/create-a-local-user-or-administrator-account-in-windows-20de74e0-ac7f-3502-a866-32915af2a34d)).
 
     ![Settings -> Accounts.](images/1-1.png)
 
@@ -100,7 +100,7 @@ This is the Bring Your Own Device (BYOD) method--your device will receive Olympi
     
 3. Click **Connect**, then click **Join this device to Azure Active Directory**.
 
-    ![Joining device to Azure AD.]](images/2-3.png)
+    ![Joining device to Azure AD.](images/2-3.png)
 
 4. Enter your **Olympia corporate account** (e.g., username@olympia.windows.com). Click **Next**.
 

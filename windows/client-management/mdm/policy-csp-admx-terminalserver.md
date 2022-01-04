@@ -6,8 +6,8 @@ ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nimishasatapathy
-ms.date: 11/22/2021
+author: dansimp
+ms.date: 12/21/2021
 ms.reviewer: 
 manager: dansimp
 ---

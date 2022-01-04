@@ -8,7 +8,7 @@ ms.date: 09/27/2019
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
 ---
 
