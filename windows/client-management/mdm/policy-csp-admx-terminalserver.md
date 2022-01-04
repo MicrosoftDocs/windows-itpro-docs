@@ -2766,7 +2766,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 
-This policy determines whether the RPC protocol messagese used by VSS for SMB2 File Shares feature is enabled. VSS for SMB2 File Shares feature enables VSS aware backup applications to perform application consistent backup and restore of VSS aware applications storing data on SMB2 File Shares. By default, the RPC protocol message between File Server VSS provider and File Server VSS Agent is signed but not encrypted.  
+This policy determines whether the RPC protocol messages used by VSS for SMB2 File Shares feature is enabled. VSS for SMB2 File Shares feature enables VSS aware backup applications to perform application consistent backup and restore of VSS aware applications storing data on SMB2 File Shares. By default, the RPC protocol message between File Server VSS provider and File Server VSS Agent is signed but not encrypted.  
 
 To make changes to this setting effective, you must restart Volume Shadow Copy (VSS) Service.
 
@@ -2812,7 +2812,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 
-This policy determines whether the RPC protocol messagese used by VSS for SMB2 File Shares feature is enabled. VSS for SMB2 File Shares feature enables VSS aware backup applications to perform application consistent backup and restore of VSS aware applications storing data on SMB2 File Shares. By default, the RPC protocol message between File Server VSS provider and File Server VSS Agent is signed but not encrypted.  
+This policy determines whether the RPC protocol messages used by VSS for SMB2 File Shares feature is enabled. VSS for SMB2 File Shares feature enables VSS aware backup applications to perform application consistent backup and restore of VSS aware applications storing data on SMB2 File Shares. By default, the RPC protocol message between File Server VSS provider and File Server VSS Agent is signed but not encrypted.  
 
 To make changes to this setting effective, you must restart Volume Shadow Copy (VSS) Service.
 
@@ -2915,9 +2915,10 @@ Therefore, you must use the same farm name for all RD Session Host servers in th
 
 - If you disable or do not configure this policy setting, the farm name is not specified at the Group Policy level.  
 
->[!NOTES]
->    1. This policy setting is not effective unless both the Join RD Connection Broker and the Configure RD Connection Broker server name policy settings are enabled and configured by using Group Policy.  
->    2. For Windows Server 2008, this policy setting is supported on at least Windows Server 2008 Standard.
+> [!NOTE]
+> This policy setting is not effective unless both the Join RD Connection Broker and the Configure RD Connection Broker server name policy settings are enabled and configured by using Group Policy.
+
+For Windows Server 2008, this policy setting is supported on at least Windows Server 2008 Standard.
 
 <!--/Description-->
 
@@ -2966,7 +2967,7 @@ This policy setting allows you to specify the redirection method to use when a c
 
 If you do not configure this policy setting, the Use IP address redirection policy setting is not enforced at the group Group policy Policy level and the default will be used. This setting is enabled by default.  
 
->[!NOTES]
+> [!NOTE]
 > For Windows Server 2008, this policy setting is supported on at least Windows Server 2008 Standard.
 
 <!--/Description-->
@@ -3014,12 +3015,13 @@ The specified server must be running the Remote Desktop Connection Broker servic
 - If you enable this policy setting, you must specify the RD Connection Broker server by using its fully qualified domain name (FQDN). In Windows Server 2012, for a high availability setup with multiple RD Connection Broker servers, you must provide a semi-colon separated list of the FQDNs of all the RD Connection Broker servers.  
 
 - If you disable or do not configure this policy setting, the policy setting is not specified at the Group Policy level.
-  
 
->[!NOTES]
->     1. For Windows Server 2008, this policy setting is supported on at least Windows Server 2008 Standard.  
->    2. This policy setting is not effective unless the Join RD Connection Broker policy setting is enabled.  
->    3. To be an active member of an RD Session Host server farm, the computer account for each RD Session Host server in the farm must be a member of one of the following local groups on the RD Connection Broker server: Session Directory Computers, Session Broker Computers, or RDS Endpoint Servers.
+
+> [!NOTE]
+> For Windows Server 2008, this policy setting is supported on at least Windows Server 2008 Standard.
+> This policy setting is not effective unless the Join RD Connection Broker policy setting is enabled.
+> To be an active member of an RD Session Host server farm, the computer account for each RD Session Host server in the farm must be a member of one of the following local groups on the RD Connection Broker server: Session Directory Computers, Session Broker Computers, or RDS Endpoint Servers.
+
 
 <!--/Description-->
 
@@ -3067,11 +3069,11 @@ This policy setting specifies whether to require the use of a specific security 
 
 The following security methods are available:  
 
-1. * Negotiate: The Negotiate method enforces the most secure method that is supported by the client. If Transport Layer Security (TLS) version 1.0 is supported, it is used to authenticate the RD Session Host server. If TLS is not supported, native Remote Desktop Protocol (RDP) encryption is used to secure communications, but the RD Session Host server is not authenticated. Native RDP encryption (as opposed to SSL encryption) is not recommended.  
-2. * RDP: The RDP method uses native RDP encryption to secure communications between the client and RD Session Host server. If you select this setting, the RD Session Host server is not authenticated. Native RDP encryption (as opposed to SSL encryption) is not recommended.  
-3. * SSL (TLS 1.0): The SSL method requires the use of TLS 1.0 to authenticate the RD Session Host server. If TLS is not supported, the connection fails. This is the recommended setting for this policy.  
+- **Negotiate**: The Negotiate method enforces the most secure method that is supported by the client. If Transport Layer Security (TLS) version 1.0 is supported, it is used to authenticate the RD Session Host server. If TLS is not supported, native Remote Desktop Protocol (RDP) encryption is used to secure communications, but the RD Session Host server is not authenticated. Native RDP encryption (as opposed to SSL encryption) is not recommended.  
+- **RDP**: The RDP method uses native RDP encryption to secure communications between the client and RD Session Host server. If you select this setting, the RD Session Host server is not authenticated. Native RDP encryption (as opposed to SSL encryption) is not recommended.  
+- **SSL (TLS 1.0)**: The SSL method requires the use of TLS 1.0 to authenticate the RD Session Host server. If TLS is not supported, the connection fails. This is the recommended setting for this policy.  
 
-- If you disable or do not configure this policy setting, the security method to be used for remote connections to RD Session Host servers is not specified at the Group Policy level.
+If you disable or do not configure this policy setting, the security method to be used for remote connections to RD Session Host servers is not specified at the Group Policy level.
 
 <!--/Description-->
 
@@ -3560,7 +3562,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 
-This policy setting allows the administrator to configure the RemoteFX experience for Remote Desktop Session Host or Remote Desktop Virtualization Host servers. By default, the system will choose the best experience based on available nework bandwidth.  
+This policy setting allows the administrator to configure the RemoteFX experience for Remote Desktop Session Host or Remote Desktop Virtualization Host servers. By default, the system will choose the best experience based on available network bandwidth.  
 
 If you enable this policy setting, the RemoteFX experience could be set to one of the following options:  
 1. Let the system choose the experience for the network condition  
