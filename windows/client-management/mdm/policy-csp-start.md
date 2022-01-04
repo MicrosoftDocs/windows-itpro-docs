@@ -779,32 +779,26 @@ The following list shows the supported values:
 <table>
 <tr>
     <th>Edition</th>
-    <th>Windows 10</th>
     <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
     <td>No</td>
-    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td>Yes</td>
     <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td>Yes</td>
     <td>Yes</td>
 </tr>
 </table>
@@ -823,12 +817,12 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy will allow admins to push a new list of pinned apps to override the default/current list of pinned apps in the SV start menu experience.
+This policy will allow admins to push a new list of pinned apps to override the default/current list of pinned apps in the Windows 11 start menu experience.
 
->[!NOTE]
-> TFS information describes feature area owners and policy handling work, but the work to implement the policy itself is being completed by OS\WDX\DASH\Cloud-powered Windows Devices\Project Hailey --> Deliverable 32179178.
+It contains details on how to configure the start menu on Windows 11, see https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/customize-the-windows-11-start-menu
 
 <!--/Description-->
+
 <!--SupportedValues-->
 
 This string policy will take a JSON file (expected name LayoutModification.json), which enumerates the items to pin and their relative order.
@@ -2322,7 +2316,6 @@ To validate on Desktop, do the following:
 
 <!--/Scope-->
 <!--Description-->
-This supports a key Enterprise manageability request targeted for Iron.
 
 <!--/Description-->
 <!--SupportedValues-->
