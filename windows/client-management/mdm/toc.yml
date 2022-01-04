@@ -721,6 +721,8 @@ items:
               href: policy-csp-games.md
             - name: Handwriting
               href: policy-csp-handwriting.md
+            - name: HumanPresence
+              href: policy-csp-humanpresence.md
             - name: InternetExplorer
               href: policy-csp-internetexplorer.md
             - name: Kerberos
