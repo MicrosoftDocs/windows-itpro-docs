@@ -100,7 +100,7 @@ sections:
           
           [Windows Hello for Business forgotten PIN user experience](hello-videos.md#windows-hello-for-business-forgotten-pin-user-experience)
           
-          For on-premises deployments, devices must be well-connected to their on-premises network (domain controllers and/or certificate authority) to reset their PINs. Hybrid customers can on-board their Azure tenant to use the Windows Hello for Business PIN reset service to reset their PINs without access to their corporate network.
+          For on-premises deployments, devices must be well-connected to their on-premises network (domain controllers and/or certificate authority) to reset their PINs. Hybrid customers can on-board their Azure tenant to use the Windows Hello for Business PIN reset service to reset their PINs. Non-destructive PIN reset works without access to corporate network. Destructive PIN reset requires access to corporate network. More details about destructive and non-destructive PIN reset can be found [here](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-feature-pin-reset).
           
       - question: What URLs do I need to allow for a hybrid deployment?
         answer: |
