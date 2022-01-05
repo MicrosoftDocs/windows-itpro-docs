@@ -55,7 +55,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="printers-approvedusbprintdevicess"></a>**Printers/ApprovedUsbPrintDevices**  
+<a href="" id="printers-approvedusbprintdevices"></a>**Printers/ApprovedUsbPrintDevices**  
 
 <!--SupportedSKUs-->
 <table>
