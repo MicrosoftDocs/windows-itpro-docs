@@ -30,7 +30,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="eap-allowtls1_3"></a>**EAP/AllowTLS1_3<**  
+<a href="" id="eap-allowtls1_3"></a>**EAP/AllowTLS1_3**  
 
 <!--SupportedSKUs-->
 
