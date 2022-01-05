@@ -95,8 +95,8 @@ The following list shows the supported values:
 |Home|No|No|
 |Pro|No|No|
 |Business|No|No|
-|Enterprise|No|No|
-|Education|No|No|
+|Enterprise|No|Yes|
+|Education|No|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -144,8 +144,8 @@ The following list shows the supported values:
 |Home|No|No|
 |Pro|No|No|
 |Business|No|No|
-|Enterprise|No|No|
-|Education|No|No|
+|Enterprise|No|Yes|
+|Education|No|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
