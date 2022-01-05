@@ -11,7 +11,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 12/16/2021
+ms.date: 01/05/2021
 ms.technology: windows-sec
 ---
 
