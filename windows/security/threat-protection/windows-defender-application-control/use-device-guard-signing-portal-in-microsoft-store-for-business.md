@@ -26,6 +26,9 @@ ms.technology: windows-sec
 - Windows 11
 - Windows Server 2016 and above
 
+> [!IMPORTANT]
+> The existing web-based mechanism for the Device Guard Signing service v1 will be retired on June 9, 2021. Please transition to the PowerShell based version of the service [(DGSS v2)](https://docs.microsoft.com/en-us/microsoft-store/device-guard-signing-portal). More details can be found [here](https://docs.microsoft.com/en-us/windows/msix/package/signing-package-device-guard-signing) and [here](https://docs.microsoft.com/en-us/microsoft-store/device-guard-signing-portal).
+
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
