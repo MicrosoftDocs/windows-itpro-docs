@@ -103,7 +103,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="power-allowshibernate"></a>**Power/AllowHibernate**  
+<a href="" id="power-allowhibernate"></a>**Power/AllowHibernate**  
 
 <!--SupportedSKUs-->
 <table>
