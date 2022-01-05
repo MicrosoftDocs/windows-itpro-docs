@@ -152,15 +152,14 @@ Specifies whether PINs or passwords such as "1111" or "1234" are allowed. For th
 > This policy must be wrapped in an Atomic command.
 
 
-
 For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
 
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+-   0 (default) – Blocked
+-   1 – Allowed
 
 <!--/SupportedValues-->
 <!--/Policy-->
