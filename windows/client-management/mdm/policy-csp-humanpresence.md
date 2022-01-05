@@ -46,8 +46,8 @@ manager: dansimp
 |Home|No|No|
 |Pro|No|No|
 |Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+|Enterprise|No|Yes|
+|Education|No|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
