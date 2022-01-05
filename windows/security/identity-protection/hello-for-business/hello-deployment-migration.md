@@ -1,6 +1,6 @@
 ---
-title: Windows Hello for Business Deployment Known Issues
-description: A Troubleshooting Guide for Known Windows Hello for Business Deployment Issues
+title: Migrating Between Windows Hello For Business Deployment Types
+description: A guide outlining the different Windows Hello deployment types, which migrations are supported, and how to migrate
 keywords: identity, PIN, biometric, Hello, passport
 params: siblings_only
 ms.prod: m365-security
@@ -17,7 +17,7 @@ localizationpriority: medium
 ms.date: 05/03/2021
 ms.reviewer: 
 ---
-# Windows Hello for Business Known Deployment Issues
+# TBD
 
 TBD
 
