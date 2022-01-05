@@ -14,11 +14,10 @@ manager: dansimp
 
 # Policy CSP - Power
 
-
-
 <hr/>
 
 <!--Policies-->
+
 ## Power policies  
 
 <dl>
