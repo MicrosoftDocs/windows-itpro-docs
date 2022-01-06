@@ -57,8 +57,8 @@ This guide assumes most enterprises have an existing public key infrastructure. 
 
 For more details about configuring a Windows enterprise public key infrastructure and installing Active Directory Certificate Services, see [Follow the Windows Hello for Business hybrid key trust deployment guide](/windows/security/identity-protection/hello-for-business/hello-hybrid-key-whfb-settings-pki#follow-the-windows-hello-for-business-hybrid-key-trust-deployment-guide) and [Install the Certification Authority](/windows-server/networking/core-network-guide/cncg/server-certs/install-the-certification-authority).
 
->[!NOTE]
->Never install a certificate authority on a domain controller in a production environment.
+> [!NOTE]
+> Never install a certificate authority on a domain controller in a production environment.
 
 ### Lab-based public key infrastructure
 
