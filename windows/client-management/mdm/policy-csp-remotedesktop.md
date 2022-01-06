@@ -80,7 +80,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="remoteassistance-sessionlogging"></a>**RemoteAssistance/SessionLogging**  
+<a href="" id="remotedesktop-loadaadcredkeyfromprofile"></a>**RemoteDesktop/LoadAadCredKeyFromProfile**  
 
 <!--SupportedSKUs-->
 
