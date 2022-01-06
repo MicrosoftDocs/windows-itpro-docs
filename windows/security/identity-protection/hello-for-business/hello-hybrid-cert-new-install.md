@@ -55,7 +55,7 @@ Windows Hello for Business must have a public key infrastructure regardless of t
 
 This guide assumes most enterprises have an existing public key infrastructure.  Windows Hello for Business depends on a Windows enterprise public key infrastructure running the Active Directory Certificate Services role from Windows Server 2012 or later.
 
-More details about configuring a Windows enterprise public key infrastructure and installing Active Directory Certificate Services can be found [here](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-key-whfb-settings-pki#follow-the-windows-hello-for-business-hybrid-key-trust-deployment-guide) and [here](https://docs.microsoft.com/en-us/windows-server/networking/core-network-guide/cncg/server-certs/install-the-certification-authority).
+For more details about configuring a Windows enterprise public key infrastructure and installing Active Directory Certificate Services, see [Follow the Windows Hello for Business hybrid key trust deployment guide](/windows/security/identity-protection/hello-for-business/hello-hybrid-key-whfb-settings-pki#follow-the-windows-hello-for-business-hybrid-key-trust-deployment-guide) and [Install the Certification Authority](/windows-server/networking/core-network-guide/cncg/server-certs/install-the-certification-authority).
 
 >[!NOTE]
 >Never install a certificate authority on a domain controller in a production environment.
