@@ -191,6 +191,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
+This policy allows the cortana opt-in page during windows setup out of the box experience.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -207,54 +208,8 @@ ADMX Info:
 This is a simple boolean value, default false, that can be set by MDM policy to allow the Cortana Page in OOBE when logged in with an AAD account.
 
 <!--/SupportedValues-->
+
 <!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
 
 <hr/>
 
