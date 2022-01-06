@@ -19,7 +19,7 @@ ms.reviewer:
 
 **Applies to:**
 
--   Windows 10, version 1607 and later
+-   Windows 10, version 1607 and later
 
 Microsoft Intune has an easy way to create and deploy a Windows Information Protection (WIP) policy. You can choose which apps to protect, the level of protection, and how to find enterprise data on the network. The devices can be fully managed by Mobile Device Management (MDM), or managed by Mobile Application Management (MAM), where Intune manages only the apps on a user's personal device.
 
@@ -100,15 +100,15 @@ Select **Store apps**, type the app product name and publisher, and click **OK**
 
 ![Add Store app.](images/add-a-protected-store-app.png)
 
-To add multiple Store apps, click the ellipsis **…**. 
+To add multiple Store apps, click the ellipsis `…`.
 
 If you don't know the Store app publisher or product name, you can find them by following these steps.
 
 1. Go to the [Microsoft Store for Business](https://go.microsoft.com/fwlink/p/?LinkID=722910) website, and find your app. For example, *Power BI Mobile App*.
 
-2. Copy the ID value from the app URL. For example, the Power BI Mobile App ID URL is https://www.microsoft.com/store/p/microsoft-power-bi/9nblgggzlxn1, and you'd copy the ID value, `9nblgggzlxn1`.
+2. Copy the ID value from the app URL. For example, the Power BI Mobile App ID URL is `https://www.microsoft.com/store/p/microsoft-power-bi/9nblgggzlxn1`, and you'd copy the ID value, `9nblgggzlxn1`.
 
-3. In a browser, run the Store for Business portal web API, to return a JavaScript Object Notation (JSON) file that includes the publisher and product name values. For example, run https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9nblgggzlxn1/applockerdata, where `9nblgggzlxn1` is replaced with your ID value.
+3. In a browser, run the Store for Business portal web API, to return a JavaScript Object Notation (JSON) file that includes the publisher and product name values. For example, run `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9nblgggzlxn1/applockerdata`, where `9nblgggzlxn1` is replaced with your ID value.
     
     The API runs and opens a text editor with the app details.
 
@@ -131,6 +131,7 @@ If you don't know the Store app publisher or product name, you can find them by 
 	>     "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
 	> }
 
+<!-- 01.06.2022 mandia: Commenting out, as these events are specific to Windows Phone.
 
 > [!NOTE]
 > Your PC and phone must be on the same wireless network.
@@ -158,6 +159,8 @@ If you don't know the Store app publisher or product name, you can find them by 
 	> {
 	>     "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
 	> }
+
+-->
 
 ### Add Desktop apps
 

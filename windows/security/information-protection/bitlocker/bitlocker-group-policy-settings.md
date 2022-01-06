@@ -614,7 +614,7 @@ This policy setting is used to control the encryption method and cipher strength
 |**Policy path**|Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption|
 |**Conflicts**|None|
 |**When enabled**|You can choose an encryption algorithm and key cipher strength for BitLocker to use to encrypt drives.|
-|**When disabled or not configured**|Beginning with Windows 10, version 1511, or Windows 11,  BitLocker uses the default encryption method of XTS-AES 128-bit or the encryption method that is specified by the setup script. Windows Phone does not support XTS; it uses AES-CBC 128-bit by default and supports AES-CBC 256-bit by policy.|
+|**When disabled or not configured**|Beginning with Windows 10, version 1511, or Windows 11,  BitLocker uses the default encryption method of XTS-AES 128-bit or the encryption method that is specified by the setup script. 
 
 **Reference**
 

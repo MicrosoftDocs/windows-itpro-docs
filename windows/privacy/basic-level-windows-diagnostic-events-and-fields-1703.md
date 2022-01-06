@@ -5076,7 +5076,7 @@ The following fields are available:
 - **TargetAppId**  The target app ID.
 - **TargetAppVer**  The target app version.
 
-
+<!-- 01.06.2022 mandia: Commenting out, as these events are specific to Windows Phone.
 ## Windows Phone events
 
 ### Microsoft.Windows.Phone.Telemetry.OnBoot.RebootReason
@@ -5088,7 +5088,7 @@ The following fields are available:
 - **BootId**  The system boot ID.
 - **BoottimeSinceLastShutdown**  The boot time since the last shutdown.
 - **RebootReason**  Reason for the reboot.
-
+-->
 
 ## Windows Store events
 
