@@ -103,6 +103,9 @@ Currently, neither the AppLocker policy creation UI in GPO Editor nor the PowerS
         <ThresholdExtensions>
           <Services EnforcementMode="Enabled" />
         </ThresholdExtensions>
+        <RedstoneExtensions>
+          <SystemApps Allow="Enabled"/>
+        </RedstoneExtensions>
       </RuleCollectionExtensions>
     </RuleCollection>
     <RuleCollection Type="Exe" EnforcementMode="AuditOnly">
@@ -115,6 +118,9 @@ Currently, neither the AppLocker policy creation UI in GPO Editor nor the PowerS
         <ThresholdExtensions>
           <Services EnforcementMode="Enabled" />
         </ThresholdExtensions>
+        <RedstoneExtensions>
+          <SystemApps Allow="Enabled"/>
+        </RedstoneExtensions>
       </RuleCollectionExtensions>
     </RuleCollection>
     ```
@@ -133,6 +139,9 @@ Currently, neither the AppLocker policy creation UI in GPO Editor nor the PowerS
           <ThresholdExtensions>
             <Services EnforcementMode="Enabled" />
           </ThresholdExtensions>
+          <RedstoneExtensions>
+            <SystemApps Allow="Enabled"/>
+          </RedstoneExtensions>
         </RuleCollectionExtensions>
       </RuleCollection>
       <RuleCollection Type="Exe" EnforcementMode="AuditOnly">
@@ -145,6 +154,9 @@ Currently, neither the AppLocker policy creation UI in GPO Editor nor the PowerS
           <ThresholdExtensions>
             <Services EnforcementMode="Enabled" />
           </ThresholdExtensions>
+          <RedstoneExtensions>
+            <SystemApps Allow="Enabled"/>
+          </RedstoneExtensions>
         </RuleCollectionExtensions>
       </RuleCollection>
       <RuleCollection Type="ManagedInstaller" EnforcementMode="AuditOnly">

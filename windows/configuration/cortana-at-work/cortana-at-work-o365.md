@@ -20,7 +20,7 @@ Your employees can use Cortana to help manage their day and be more productive b
 
 **See also:**
 
-[Known issues for Windows Desktop Search and Cortana in Windows 10](https://support.microsoft.com/help/3206883/known-issues-for-windows-desktop-search-and-cortana-in-windows-10).
+[Known issues for Windows Desktop Search and Cortana in Windows 10](/troubleshoot/windows-client/shell-experience/windows-desktop-search-and-cortana-issues).
 
 ### Before you begin
 There are a few things to be aware of before you start using Cortana in Windows 10, versions 1909 and earlier.

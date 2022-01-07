@@ -46,86 +46,15 @@ Document the following items for each business group or organizational unit:
 
 The following table details sample data for documenting rule type and rule condition findings. In addition, you should now consider whether to allow an app to run or deny permission for it to run. For info about these settings, see [Understanding AppLocker allow and deny actions on rules](understanding-applocker-allow-and-deny-actions-on-rules.md).
 
-<table>
-<colgroup>
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Business group</th>
-<th align="left">Organizational unit</th>
-<th align="left">Implement AppLocker?</th>
-<th align="left">Applications</th>
-<th align="left">Installation path</th>
-<th align="left">Use default rule or define new rule condition</th>
-<th align="left">Allow or deny</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Bank Tellers</p></td>
-<td align="left"><p>Teller-East and Teller-West</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Teller Software</p></td>
-<td align="left"><p>C:\Program Files\Woodgrove\Teller.exe</p></td>
-<td align="left"><p>File is signed; create a publisher condition</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Windows files</p></td>
-<td align="left"><p>C:\Windows</p></td>
-<td align="left"><p>Create a path exception to the default rule to exclude \Windows\Temp</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Human Resources</p></td>
-<td align="left"><p>HR-All</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Check Payout</p></td>
-<td align="left"><p>C:\Program Files\Woodgrove\HR\Checkcut.exe</p></td>
-<td align="left"><p>File is signed; create a publisher condition</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Time Sheet Organizer</p></td>
-<td align="left"><p>C:\Program Files\Woodgrove\HR\Timesheet.exe</p></td>
-<td align="left"><p>File is not signed; create a file hash condition</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Internet Explorer 7</p></td>
-<td align="left"><p>C:\Program Files\Internet Explorer&lt;/p&gt;</td>
-<td align="left"><p>File is signed; create a publisher condition</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Windows files</p></td>
-<td align="left"><p>C:\Windows</p></td>
-<td align="left"><p>Use the default rule for the Windows path</p></td>
-<td align="left"><p></p></td>
-</tr>
-</tbody>
-</table>
+|Business group|Organizational unit|Implement AppLocker?|Applications|Installation path|Use default rule or define new rule condition|Allow or deny|
+|--- |--- |--- |--- |--- |--- |--- |
+|Bank Tellers|Teller-East and Teller-West|Yes|Teller Software|C:\Program Files\Woodgrove\Teller.exe|File is signed; create a publisher condition||
+||||Windows files|C:\Windows|Create a path exception to the default rule to exclude \Windows\Temp||
+|Human Resources|HR-All|Yes|Check Payout|C:\Program Files\Woodgrove\HR\Checkcut.exe|File is signed; create a publisher condition||
+||||Time Sheet Organizer|C:\Program Files\Woodgrove\HR\Timesheet.exe|File is not signed; create a file hash condition||
+||||Internet Explorer 7|C:\Program Files\Internet Explorer</p>|File is signed; create a publisher condition||
+||||Windows files|C:\Windows|Use the default rule for the Windows path||
  
-
 ## Next steps
 
 For each rule, determine whether to use the allow or deny option, and then complete the following tasks:

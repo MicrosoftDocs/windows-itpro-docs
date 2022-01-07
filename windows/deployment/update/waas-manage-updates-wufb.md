@@ -1,7 +1,6 @@
 ---
 title: Windows Update for Business
-ms.reviewer: 
-manager: laurawi
+manager: dougeby
 description: Learn how Windows Update for Business lets you manage when devices receive updates from Windows Update.
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -10,6 +9,7 @@ ms.localizationpriority: medium
 ms.author: jaimeo
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.collection: highpri
 ---
 
 # What is Windows Update for Business?
@@ -17,7 +17,7 @@ ms.custom: seo-marvel-apr2020
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 - Windows 11
 
 

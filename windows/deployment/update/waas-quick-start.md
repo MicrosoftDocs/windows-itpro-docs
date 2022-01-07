@@ -7,9 +7,9 @@ ms.mktglfcycl: manage
 author: jaimeo
 ms.localizationpriority: high
 ms.author: jaimeo
-ms.reviewer: 
 manager: dougeby
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Quick guide to Windows as a service
@@ -17,7 +17,7 @@ ms.topic: article
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 - Windows 11
 
 Here is a quick guide to the most important concepts in Windows as a service. For more information, see the [extensive set of documentation](index.md).

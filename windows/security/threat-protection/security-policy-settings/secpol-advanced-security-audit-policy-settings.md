@@ -18,7 +18,7 @@ ms.date: 04/19/2017
 ms.technology: windows-sec
 ---
 
-# Advanced security audit policy settings
+# Advanced security audit policy settings for Windows 10
 
 **Applies to**
 -   Windows 10
