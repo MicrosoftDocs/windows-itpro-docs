@@ -15,7 +15,8 @@ ms.localizationpriority: medium
 # Policy CSP - Browser
 
 > [!NOTE]
-> These settings are for the previous version of Microsoft Edge and are deprecated. These settings will be removed in a future Windows release. Microsoft recommends updating your version of Microsoft Edge and use the appropriate CSPs for the Chromium version of the Microsoft Edge browser. Learn more about how to [Configure Microsoft Edge using Mobile Device Management](https://docs.microsoft.com/deployedge/configure-edge-with-mdm).
+> These settings are for the previous version of Microsoft Edge (version 45 and earlier) and are deprecated. These settings will be removed in a future Windows release. Microsoft recommends updating your version of Microsoft Edge to version 77 or later and use the ADMX Ingestion function for management. Learn more about how to [Configure Microsoft Edge using Mobile Device Management](https://docs.microsoft.com/deployedge/configure-edge-with-mdm).
+
 
 <!--Policies-->
 ## Browser policies  
