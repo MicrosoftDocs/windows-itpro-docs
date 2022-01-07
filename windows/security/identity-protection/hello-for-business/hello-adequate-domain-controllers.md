@@ -2,7 +2,7 @@
 title: Having enough Domain Controllers for Windows Hello for Business deployments
 description: Guide for planning to have an adequate number of Windows Server 2016 or later Domain Controllers for Windows Hello for Business deployments
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, key-trust
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile

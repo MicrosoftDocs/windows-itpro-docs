@@ -10,6 +10,7 @@ ms.date: 11/16/2018
 ms.reviewer: 
 manager: dansimp
 ms.topic: troubleshooting
+ms.collection: highpri
 ---
 
 # Advanced troubleshooting for Windows boot problems
@@ -149,49 +150,19 @@ If you receive BCD-related errors, follow these steps:
 
 2. Restart the computer to check whether the problem is fixed.
 
-3. If the problem is not fixed, run the following command:
-
-    ```console
-    Bootrec /rebuildbcd
-    ```
-
-4. You might receive one of the following outputs:
-
-    ```console
-    Scanning all disks for Windows installations. Please wait, since this may take a while ...
-    Successfully scanned Windows installations. Total identified Windows installations: 0
-    The operation completed successfully.
-    ```
-
-    ```console
-    Scanning all disks for Windows installations. Please wait, since this may take a while ...
-    Successfully scanned Windows installations. Total identified Windows installations: 1
-    D:\Windows  
-    Add installation to boot list? Yes/No/All:
-    ```
-
-    If the output shows **windows installation: 0**, run the following commands:
+3. If the problem is not fixed, run the following commands:
     
     ```console
     bcdedit /export c:\bcdbackup
     
-    attrib c:\\boot\\bcd -r –s -h
+    attrib c:\boot\bcd -r -s -h
     
-    ren c:\\boot\\bcd bcd.old
+    ren c:\boot\bcd bcd.old
     
     bootrec /rebuildbcd
     ```
-    
-    After you run the command, you receive the following output:
-    
-    ```console
-    Scanning all disks for Windows installations. Please wait, since this may take a while ...
-    Successfully scanned Windows installations. Total identified Windows installations: 1
-    {D}:\Windows
-    Add installation to boot list? Yes/No/All: Y
-    ```
 
-5. Try restarting the system.
+4. Restart the system.
 
 ### Method 4: Replace Bootmgr
 
@@ -205,7 +176,7 @@ If methods 1, 2 and 3 do not fix the problem, replace the Bootmgr file from driv
     attrib -r -s -h
     ```
 
-3. Run the same **attrib** command on the Windows (system drive):
+3. Navigate to the system drive and run the same command:
 
     ```console
     attrib -r -s -h
@@ -230,7 +201,7 @@ If Windows cannot load the system registry hive into memory, you must restore th
 If the problem persists, you may want to restore the system state backup to an alternative location, and then retrieve the registry hives to be replaced.
 
 > [!NOTE]
-> Starting in Windows 10, version 1803, Windows no longer automatically backs up the system registry to the RegBack folder.This change is by design, and is intended to help reduce the overall disk footprint size of Windows. To recover a system with a corrupt registry hive, Microsoft recommends that you use a system restore point. For more details, check [this article](https://support.microsoft.com/en-us/help/4509719/the-system-registry-is-no-longer-backed-up-to-the-regback-folder-start).
+> Starting in Windows 10, version 1803, Windows no longer automatically backs up the system registry to the RegBack folder.This change is by design, and is intended to help reduce the overall disk footprint size of Windows. To recover a system with a corrupt registry hive, Microsoft recommends that you use a system restore point. For more details, check [this article](/troubleshoot/windows-client/deployment/system-registry-no-backed-up-regback-folder)
 
 ## Kernel Phase
 
@@ -393,7 +364,7 @@ If the dump file shows an error that is related to a driver (for example, window
     - To do this, open WinRE, open a command prompt, and then run the following command:
 
         ```console
-        SFC /Scannow /OffBootDir=C:\ /OffWinDir=E:\Windows
+        SFC /Scannow /OffBootDir=C:\ /OffWinDir=C:\Windows
         ```
 
         For more information, see [Using System File Checker (SFC) To Fix  Issues](/archive/blogs/askcore/using-system-file-checker-sfc-to-fix-issues)
@@ -413,4 +384,4 @@ If the dump file shows an error that is related to a driver (for example, window
         5. Copy all the hives from the Regback folder, paste them in the Config folder, and then try to start the computer in Normal mode.
 
 > [!NOTE]
-> Starting in Windows 10, version 1803, Windows no longer automatically backs up the system registry to the RegBack folder.This change is by design, and is intended to help reduce the overall disk footprint size of Windows. To recover a system with a corrupt registry hive, Microsoft recommends that you use a system restore point. For more details, check [this article](https://support.microsoft.com/en-us/help/4509719/the-system-registry-is-no-longer-backed-up-to-the-regback-folder-start).
+> Starting in Windows 10, version 1803, Windows no longer automatically backs up the system registry to the RegBack folder.This change is by design, and is intended to help reduce the overall disk footprint size of Windows. To recover a system with a corrupt registry hive, Microsoft recommends that you use a system restore point. For more details, check [this article](/troubleshoot/windows-client/deployment/system-registry-no-backed-up-regback-folder).

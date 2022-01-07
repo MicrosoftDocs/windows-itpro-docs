@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 03/27/2020
 ---
 
@@ -77,7 +77,7 @@ For Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), it r
 Supported operation is Get.
 
 <a href="" id="swv"></a>**SwV**  
-Required. Returns the Windows 10 OS software version in the format MajorVersion.MinorVersion.BuildNumber.QFEnumber. Currently the BuildNumber returns the build number on the desktop and mobile build number on the phone. In the future, the build numbers may converge.
+Required. Returns the Windows 10 OS software version in the format MajorVersion.MinorVersion.BuildNumber.QFEnumber. Currently the BuildNumber returns the build number on the client device. In the future, the build numbers may converge.
 
 Supported operation is Get.
 
@@ -114,12 +114,16 @@ Supported operation is Get.
 
 This value is the largest number of characters that the device can support in a single URI segment. The default value zero (0) indicates that the device supports URI segment of unlimited length.
 
+<!-- 12.15.2021 (mandia): Based on the description, I'm assuming this ID is specific to Windows 10 Mobile. Commented out as Windows 10 Mobile is past EoL.
+
 <a href="" id="ext-microsoft-mobileid"></a>**Ext/Microsoft/MobileID**  
 Required. Returns the mobile device ID associated with the cellular network. Returns 404 for devices that don't have a cellular network support.
 
 Supported operation is Get.
 
 The IMSI value is returned for GSM and UMTS networks. CDMA and worldwide phones will return a 404 Not Found status code error if queried for this element.
+
+-->
 
 <a href="" id="ext-microsoft-radioswv"></a>**Ext/Microsoft/RadioSwV**  
 Required. Returns the radio stack software version number.

@@ -11,6 +11,7 @@ ms.author: greglin
 ms.topic: article
 ms.reviewer: sybruckm
 manager: dansimp
+ms.collection: highpri
 ---
 
 # Guidelines for choosing an app for assigned access (kiosk mode)
