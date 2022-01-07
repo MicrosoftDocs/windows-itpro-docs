@@ -21,12 +21,12 @@ ms.date: 02/26/2019
 # General guidance and best practices for Windows Information Protection (WIP)
 **Applies to:**
 
-- Windows 10, version 1607 and later
-- Windows 10 Mobile, version 1607 and later
+- Windows 10, version 1607 and later
 
 This section includes info about the enlightened Microsoft apps, including how to add them to your allowed apps list in Microsoft Intune. It also includes some testing scenarios that we recommend running through with Windows Information Protection (WIP).
 
 ## In this section
+
 |Topic |Description |
 |------|------------|
 |[Enlightened apps for use with Windows Information Protection (WIP)](enlightened-microsoft-apps-and-wip.md) |Learn the difference between enlightened and unenlightened apps, and then review the list of enlightened apps provided by Microsoft along with the text you will need to use to add them to your allowed apps list. | 
