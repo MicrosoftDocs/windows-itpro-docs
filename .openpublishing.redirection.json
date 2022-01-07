@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path": "windows/security/threat-protection/windows-10-mobile-security-guide.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/security/identity-protection/installing-digital-certificates-on-windows-10-mobile.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },
+    {
       "source_path": "windows/client-management/mdm/windowssecurityauditing-ddf-file.md",
       "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
       "redirect_document_id": false  
@@ -5157,7 +5167,7 @@
     },
     {
       "source_path": "windows/device-security/windows-10-mobile-security-guide.md",
-      "redirect_url": "/windows/security/threat-protection/windows-10-mobile-security-guide",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
       "redirect_document_id": false
     },
     {
@@ -5462,7 +5472,7 @@
     },
     {
       "source_path": "windows/access-protection/installing-digital-certificates-on-windows-10-mobile.md",
-      "redirect_url": "/windows/security/identity-protection/installing-digital-certificates-on-windows-10-mobile",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
       "redirect_document_id": false
     },
     {
@@ -12072,7 +12082,7 @@
     },
     {
       "source_path": "windows/keep-secure/installing-digital-certificates-on-windows-10-mobile.md",
-      "redirect_url": "/windows/access-protection/installing-digital-certificates-on-windows-10-mobile",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
       "redirect_document_id": false
     },
     {
@@ -13562,7 +13572,7 @@
     },
     {
       "source_path": "windows/keep-secure/windows-10-mobile-security-guide.md",
-      "redirect_url": "/windows/device-security/windows-10-mobile-security-guide",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
       "redirect_document_id": false
     },
     {
