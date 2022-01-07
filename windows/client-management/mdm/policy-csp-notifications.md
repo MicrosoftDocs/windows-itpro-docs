@@ -265,7 +265,7 @@ This policy setting determines which Windows Notification Service endpoint will 
 
 If you disable or do not configure this setting, the push notifications will connect to the default endpoint of client.wns.windows.com.
 
-Note: Ensure the proper WNS FQDNs, VIPs, IPs and Ports are also whitelisted from your firewall settings.
+Note: Ensure the proper WNS FQDNs, VIPs, IPs and Ports are also allowlisted from your firewall settings.
 
 <!--/Description-->
 <!--ADMXMapped-->
