@@ -701,6 +701,8 @@ items:
               href: policy-csp-display.md
             - name: DmaGuard
               href: policy-csp-dmaguard.md
+            - name: EAP
+              href: policy-csp-eap.md
             - name: Education
               href: policy-csp-education.md
             - name: EnterpriseCloudPrint
