@@ -6636,6 +6636,20 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### HumanPresence policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-humanpresence.md#humanpresence-forceinstantlock" id="humanpresence-forceinstantlock">HumanPresence/ForceInstantLock</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-humanpresence.md#humanpresence-forceinstantwake" id="humanpresence-forceinstantwake">HumanPresence/ForceInstantWake</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-humanpresence.md#humanpresence-forcelocktimeout" id="humanpresence-forcelocktimeout">HumanPresence/ForceLockTimeout</a>
+  </dd>
+</dl>
+
 ### InternetExplorer policies
 
 <dl>
