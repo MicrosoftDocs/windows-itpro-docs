@@ -610,6 +610,8 @@ This policy will do the enforcement over the following protocols which are used 
 - Media Transfer Protocol (MTP) over USB, IP, and Bluetooth
 - Mass Storage Class (MSC) over USB
 
+To enable this policy, the minimum OS requirement is Windows 10, version 1809 and [KB5003217 (OS Build 17763.1971)](https://support.microsoft.com/en-us/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46).
+
 If enabled, this policy will block end-user from Read access on any Windows Portal devices, e.g. mobile/iOS/Android.
 
 >[!NOTE]
@@ -669,6 +671,8 @@ This policy will do the enforcement over the following protocols which are used 
 - Picture Transfer Protocol (PTP) over USB, IP, and Bluetooth
 - Media Transfer Protocol (MTP) over USB, IP, and Bluetooth
 - Mass Storage Class (MSC) over USB
+
+To enable this policy, the minimum OS requirement is Windows 10, version 1809 and [KB5003217 (OS Build 17763.1971)](https://support.microsoft.com/en-us/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46).
 
 If enabled, this policy will block end-user from Read access on any Windows Portal devices, e.g. mobile/iOS/Android.
 
@@ -730,6 +734,8 @@ This policy will do the enforcement over the following protocols which are used 
 - Media Transfer Protocol (MTP) over USB, IP, and Bluetooth
 - Mass Storage Class (MSC) over USB
 
+To enable this policy, the minimum OS requirement is Windows 10, version 1809 and [KB5003217 (OS Build 17763.1971)](https://support.microsoft.com/en-us/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46).
+
 If enabled, this will block end-user from Write access on any Windows Portal devices, e.g. mobile/iOS/Android.
 
 >[!NOTE]
@@ -789,6 +795,8 @@ This policy will do the enforcement over the following protocols which are used 
 - Picture Transfer Protocol (PTP) over USB, IP, and Bluetooth
 - Media Transfer Protocol (MTP) over USB, IP, and Bluetooth
 - Mass Storage Class (MSC) over USB
+
+To enable this policy, the minimum OS requirement is Windows 10, version 1809 and [KB5003217 (OS Build 17763.1971)](https://support.microsoft.com/en-us/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46).
 
 If enabled, this will block end-user from Write access on any Windows Portal devices, e.g. mobile/iOS/Android.
 
