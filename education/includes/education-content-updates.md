@@ -2,6 +2,15 @@
 
 
 
+## Week of December 13, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 12/13/2021 | [What is Windows 11 SE](/education/windows/windows-11-se-overview) | modified |
+| 12/13/2021 | [Windows 11 SE settings list](/education/windows/windows-11-se-settings-list) | modified |
+
+
 ## Week of November 29, 2021
 
 
