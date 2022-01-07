@@ -6438,6 +6438,14 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### EAP policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-eap.md#eap-allowtls1_3" id="eap-allowtls1_3">EAP/AllowTLS1_3</a>
+  </dd>
+</dl>
+
 ### Education policies
 
 <dl>
