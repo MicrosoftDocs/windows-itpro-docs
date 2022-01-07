@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 # Policy CSP - Browser
 
 > [!NOTE]
-> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](/DeployEdge/).
+> These settings are for the previous version of Microsoft Edge and are deprecated. These settings will be removed in a future Windows release. Microsoft recommends updating your version of Microsoft Edge and use the appropriate CSPs for the Chromium version of the Microsoft Edge browser. Learn more about how to [Configure Microsoft Edge using Mobile Device Management](https://docs.microsoft.com/deployedge/configure-edge-with-mdm).
 
 <!--Policies-->
 ## Browser policies  
