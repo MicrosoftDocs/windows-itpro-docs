@@ -6438,6 +6438,14 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### EAP policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-eap.md#eap-allowtls1_3" id="eap-allowtls1_3">EAP/AllowTLS1_3</a>
+  </dd>
+</dl>
+
 ### Education policies
 
 <dl>
@@ -6625,6 +6633,20 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 <dl>
   <dd>
     <a href="./policy-csp-handwriting.md#handwriting-paneldefaultmodedocked" id="handwriting-paneldefaultmodedocked">Handwriting/PanelDefaultModeDocked</a>
+  </dd>
+</dl>
+
+### HumanPresence policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-humanpresence.md#humanpresence-forceinstantlock" id="humanpresence-forceinstantlock">HumanPresence/ForceInstantLock</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-humanpresence.md#humanpresence-forceinstantwake" id="humanpresence-forceinstantwake">HumanPresence/ForceInstantWake</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-humanpresence.md#humanpresence-forcelocktimeout" id="humanpresence-forcelocktimeout">HumanPresence/ForceLockTimeout</a>
   </dd>
 </dl>
 
