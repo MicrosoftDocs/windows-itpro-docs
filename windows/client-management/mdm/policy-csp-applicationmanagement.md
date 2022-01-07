@@ -21,6 +21,9 @@ manager: dansimp
 
 <dl>
   <dd>
+    <a href="#applicationmanagement-allowautomaticapparchiving">ApplicationManagement/AllowAutomaticAppArchiving</a>
+  </dd>
+  <dd>
     <a href="#applicationmanagement-allowalltrustedapps">ApplicationManagement/AllowAllTrustedApps</a>
   </dd>
   <dd>
@@ -64,6 +67,62 @@ manager: dansimp
   </dd>
 </dl>
 
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="applicationmanagement-allowautomaticapparchiving"></a>**ApplicationManagement/AllowAutomaticAppArchiving**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting controls whether the system can archive infrequently used apps.
+
+- If you enable this policy setting, then the system will periodically check for and archive infrequently used apps.
+
+- If you disable this policy setting, then the system will not archive any apps.
+
+If you do not configure this policy setting (default), then the system will follow default behavior, which is to periodically check for and archive infrequently used apps, and the user will be able to configure this setting themselves.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *Allow all trusted apps to install*
+-   GP name: *AllowAutomaticAppArchiving*
+-   GP path: *Windows Components/App Package Deployment*
+-   GP ADMX file name: *AppxPackageManager.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 - Explicit disable.
+-   1 - Explicit enable.
+-   65535 (default) - Not configured.
+
+<!--/SupportedValues-->
+<!--/Policy-->
 
 <hr/>
 
