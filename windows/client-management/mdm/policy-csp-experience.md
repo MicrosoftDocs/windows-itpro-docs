@@ -1,11 +1,11 @@
 ---
 title: Policy CSP - Experience
-description: Learn how to use the Policy CSP - Experience setting to allow history of clipboard items to be stored in memory.
+description: Learn how to use the Policy CSP - Experience setting to allow history of clipboard items to be stored in memory.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 11/02/2020
 ms.reviewer: 
@@ -332,7 +332,7 @@ The following list shows the supported values:
 Specifies whether to allow the user to delete the workplace account using the workplace control panel. If the device is Azure Active Directory joined and MDM enrolled (e.g., auto-enrolled), then disabling the MDM unenrollment has no effect.
 
 > [!NOTE]
-> The MDM server can always remotely delete the account.
+> The MDM server can always remotely delete the account.
 
 
 Most restricted value is 0.
@@ -439,8 +439,6 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 This policy allows you to prevent Windows from using diagnostic data to provide customized experiences to the user. If you enable this policy setting, Windows will not use diagnostic data from this device to customize content shown on the lock screen, Windows tips, Microsoft consumer features, or other related features. If these features are enabled, users will still see recommendations, tips and offers, but they may be less relevant. If you disable or do not configure this policy setting, Microsoft will use diagnostic data to provide personalized recommendations, tips, and offers to tailor Windows for the user's needs and make it work better for them.
 
@@ -498,7 +496,7 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is only available for Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education.
+> This policy is only available for Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education.
 
 
 Specifies whether to allow app and content suggestions from third-party software publishers in Windows spotlight features like lock screen spotlight, suggested apps in the Start menu, and Windows tips. Users may still see suggestions for Microsoft features, apps, and services.
@@ -550,8 +548,7 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
-> Prior to Windows 10, version 1803, this policy had User scope.
+> Prior to Windows 10, version 1803, this policy had User scope.
 
 
 This policy allows IT admins to turn on experiences that are typically for consumers only, such as Start suggestions, Membership notifications, Post-OOBE app install and redirect tiles.
@@ -605,7 +602,7 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is only available for Windows 10 Enterprise and Windows 10 Education.
+> This policy is only available for Windows 10 Enterprise and Windows 10 Education.
 
 
 Specifies whether to turn off all Windows spotlight features at once. If you enable this policy setting, Windows spotlight on lock screen, Windows Tips, Microsoft consumer features and other related features will be turned off. You should enable this policy setting if your goal is to minimize network traffic from target devices. If you disable or do not configure this policy setting, Windows spotlight features are allowed and may be controlled individually using their corresponding policy settings.
@@ -658,8 +655,6 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 This policy allows administrators to prevent Windows spotlight notifications from being displayed in the Action Center. If you enable this policy, Windows spotlight notifications will no longer be displayed in the Action Center. If you disable or do not configure this policy, Microsoft may display notifications in the Action Center that will suggest apps or features to help users be more productive on Windows.
 
@@ -763,8 +758,6 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
 This policy setting lets you turn off the Windows spotlight Windows welcome experience feature.
 The Windows welcome experience feature introduces onboard users to Windows; for example, launching Microsoft Edge with a webpage that highlights new features. If you enable this policy, the Windows welcome experience will no longer be displayed when there are updates and changes to Windows and its apps. If you disable or do not configure this policy, the Windows welcome experience will be launched to inform onboard users about what's new, changed, and suggested.
@@ -909,7 +902,7 @@ The values for this policy are 0, 1, 2, and 3. This policy defaults to 0 if not 
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is only available for Windows 10 Enterprise and Windows 10 Education.
+> This policy is only available for Windows 10 Enterprise and Windows 10 Education.
 
 
 Allows IT admins to specify whether spotlight should be used on the user's lock screen. If your organization does not have an Enterprise spotlight content service, then this policy will behave the same as a setting of 1.

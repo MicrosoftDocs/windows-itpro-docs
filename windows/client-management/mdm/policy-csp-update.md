@@ -5,7 +5,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 11/29/2021
 ms.reviewer: 
@@ -74,6 +74,9 @@ ms.collection: highpri
     <a href="#update-configuredeadlinegraceperiod">Update/ConfigureDeadlineGracePeriod</a>
   </dd>
   <dd>
+    <a href="#update-configuredeadlinegraceperiodforfeatureupdates">Update/ConfigureDeadlineGracePeriodForFeatureUpdates</a>
+  </dd>
+  <dd>
     <a href="#update-configuredeadlinenoautoreboot">Update/ConfigureDeadlineNoAutoReboot</a>
   </dd>
   <dd>
@@ -99,6 +102,9 @@ ms.collection: highpri
   </dd>
   <dd>
     <a href="#update-disablewufbsafeguards">Update/DisableWUfBSafeguards</a>
+  </dd>
+  <dd>
+    <a href="#update-donotenforceenterprisetlscertpinningforupdatedetection">Update/DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection</a>
   </dd>
   <dd>
     <a href="#update-engagedrestartdeadline">Update/EngagedRestartDeadline</a>
@@ -197,6 +203,18 @@ ms.collection: highpri
     <a href="#update-setedurestart">Update/SetEDURestart</a>
   </dd>
   <dd>
+    <a href="#update-setpolicydrivenupdatesourcefordriver">Update/SetPolicyDrivenUpdateSourceForDriver</a>
+  </dd>
+  <dd>
+    <a href="#update-setpolicydrivenupdatesourceforfeature">Update/SetPolicyDrivenUpdateSourceForFeature</a>
+  </dd>
+  <dd>
+    <a href="#update-setpolicydrivenupdatesourceforother">Update/SetPolicyDrivenUpdateSourceForOther</a>
+  </dd>
+  <dd>
+    <a href="#update-setpolicydrivenupdatesourceforquality">Update/SetPolicyDrivenUpdateSourceForQuality</a>
+  </dd>
+  <dd>
     <a href="#update-setproxybehaviorforupdatedetection">Update/SetProxyBehaviorForUpdateDetection</a>
   </dd>
   <dd> 
@@ -245,7 +263,7 @@ ms.collection: highpri
 
 <!--/Scope-->
 <!--Description-->
-Allows the IT admin (when used with **Update/ActiveHoursStart**) to manage a range of active hours where update reboots are not scheduled. This value sets the end time. There is a 12 hour maximum from start time.
+Allows the IT admin (when used with **Update/ActiveHoursStart**) to manage a range of active hours where update reboots are not scheduled. This value sets the end time. There is a 12-hour maximum from start time.
 
 > [!NOTE]
 > The default maximum difference from start time has been increased to 18 in Windows 10, version 1703. In this version of Windows 10, the maximum range of active hours can now be configured.  See **Update/ActiveHoursMaxRange** below for more information.
@@ -340,7 +358,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Allows the IT admin (when used with **Update/ActiveHoursEnd**) to manage a range of hours where update reboots are not scheduled. This value sets the start time. There is a 12 hour maximum from end time.
+Allows the IT admin (when used with **Update/ActiveHoursEnd**) to manage a range of hours where update reboots are not scheduled. This value sets the start time. There is a 12-hour maximum from end time.
 
 > [!NOTE]
 > The default maximum difference from end time has been increased to 18 in Windows 10, version 1703. In this version of Windows 10, the maximum range of active hours can now be configured.  See **Update/ActiveHoursMaxRange** above for more information.
@@ -408,8 +426,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Notify the user before downloading the update. This policy is used by the enterprise who wants to enable the end-users to manage data usage. With this option users are notified when there are updates that apply to the device and are ready for download. Users can download and install the updates from the Windows Update control panel.
--   1 – Auto install the update and then notify the user to schedule a device restart. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device is not in use and is not running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates immediately. If the installation requires a restart, the end-user is prompted to schedule the restart time. The end-user has up to seven days to schedule the restart and after that, a restart of the device is forced. Enabling the end-user to control the start time reduces the risk of accidental data loss caused by applications that do not shutdown properly on restart.
+-   0 – Notify the user before downloading the update. This policy is used by the enterprise who wants to enable the end users to manage data usage. With these option users are notified when there are updates that apply to the device and are ready for download. Users can download and install the updates from the Windows Update control panel.
+-   1 – Auto install the update and then notify the user to schedule a device restart. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device is not in use and is not running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates immediately. If the installation requires a restart, the end user is prompted to schedule the restart time. The end user has up to seven days to schedule the restart and after that, a restart of the device is forced. Enabling the end Enabling the end user to control the start time reduces the risk of accidental data loss caused by applications that do not shut down properly on restart.user to control the start time reduces the risk of accidental data loss caused by applications that do not shutdown properly on restart.
 -   2 (default) – Auto install and restart. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device is not in use and is not running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates right away. If a restart is required, then the device is automatically restarted when the device is not actively being used. This is the default behavior for unmanaged devices. Devices are updated quickly, but it increases the risk of accidental data loss caused by an application that does not shutdown properly on restart.
 -   3 – Auto install and restart at a specified time. The IT specifies the installation day and time. If no day and time are specified, the default is 3 AM daily. Automatic installation happens at this time and device restart happens after a 15-minute countdown. If the user is logged in when Windows is ready to restart, the user can interrupt the 15-minute countdown to delay the restart.
 -   4 – Auto install and restart without end-user control. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device is not in use and is not running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates right away. If a restart is required, then the device is automatically restarted when the device is not actively being used. This setting option also sets the end-user control panel to read-only.
@@ -974,8 +992,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-
-Allows IT admins to specify the number of days a user has before feature updates are installed on their devices automatically. Updates and restarts will occur regardless of active hours and the user will not be able to reschedule.
+Allows admins to specify the number of days before feature updates are installed on the device automatically. Before the deadline, restarts can be scheduled by users or automatically scheduled outside of active hours, according to [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot). After the deadline passes, restarts will occur regardless of active hours and users will not be able to reschedule.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -987,7 +1004,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Supports a numeric value from 2 - 30, which indicates the number of days a device will wait until performing an aggressive installation of a required feature update.
+Supports a numeric value from 0-30 (2-30 in Windows 10, versions 1803 and 1709), which indicates the number of days a device will wait until performing an aggressive installation of a required feature update. Note that when set to 0, the update will download and install immediately upon offering, but might not finish within the day due to device availability and network connectivity.
 
 Default value is 7.
 <!--/SupportedValues-->
@@ -1027,8 +1044,7 @@ Default value is 7.
 
 <!--/Scope-->
 <!--Description-->
-
-Allows IT admins to specify the number of days a user has before quality updates are installed on their devices automatically. Updates and restarts will occur regardless of active hours and the user will not be able to reschedule.
+Allows admins to specify the number of days before quality updates are installed on a device automatically. Before the deadline, restarts can be scheduled by users or automatically scheduled outside of active hours, according to [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot). After deadline passes, restarts will occur regardless of active hours and users will not be able to reschedule.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -1040,7 +1056,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Supports a numeric value from 2 - 30, which indicates the number of days a device will wait until performing an aggressive installation of a required quality update.
+Supports a numeric value from 0-30 (2-30 in Windows 10, versions 1803 and 1709), which indicates the number of days a device will wait until performing an aggressive installation of a required feature update. Note that when set to 0, the update will download and install immediately upon offering, but might not finish within the day due to device availability and network connectivity.
 
 Default value is 7.
 <!--/SupportedValues-->
@@ -1080,8 +1096,7 @@ Default value is 7.
 
 <!--/Scope-->
 <!--Description-->
-
-Allows the IT admin (when used with [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates) or [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)) to specify a minimum number of days until restarts occur automatically. Setting the grace period may extend the effective deadline set by the deadline policies.
+When used with [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates),allows the admin to specify a minimum number of days until restarts occur automatically for quality updates. Setting the grace period might extend the effective deadline set by the deadline policy. If [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates) is configured but this policy is not, then the default value of 2 will be used.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1094,7 +1109,61 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Supports a numeric value from 0 - 7, which indicates the minimum number of days a device will wait until performing an aggressive installation of a required update once deadline has been reached.
+Supports a numeric value from 0-7, which indicates the minimum number of days a device will wait before it restarts automatically after installing a required quality update.
+
+Default value is 2.
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-configuredeadlinegraceperiodforfeatureupdates"></a>**Update/ConfigureDeadlineGracePeriodForFeatureUpdates**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+When used with [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates), allows the admin to specify a minimum number of days until restarts occur automatically for feature updates. Setting the grace period may extend the effective deadline set by the deadline policy. If [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates) is configured but this policy is not, then the value from  [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod) will be used; if that policy is also not configured, then the default value of 2 will be used.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *Specify deadlines for automatic updates and restarts*
+-   GP name: *ConfigureDeadlineGracePeriodForFeatureUpdates*
+-   GP element: *ConfigureDeadlineGracePeriodForFeatureUpdates*
+-   GP path: *Administrative Templates\Windows Components\WindowsUpdate*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Supports a numeric value from 0-7, which indicates the minimum number of days a device will wait before it restarts automatically after installing a required feature update.
 
 Default value is 2.
 <!--/SupportedValues-->
@@ -1134,10 +1203,11 @@ Default value is 2.
 
 <!--/Scope-->
 <!--Description-->
+When used with [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates) or [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates), devices will delay automatically restarting until both the deadline and grace period have expired, even if applicable updates are already installed and pending a restart.
 
-If enabled (when used with [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates) or [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)), devices will not automatically restart outside of active hours until the deadline is reached, even if applicable updates are already installed and pending a restart.
+When disabled, if the device has installed updates and is outside of active hours, it might attempt an automatic restart before the deadline.
 
-When disabled, if the device has installed the required updates and is outside of active hours, it may attempt an automatic restart before the deadline.
+<same ADMX info and rest of description>
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -1222,7 +1292,6 @@ Enable IT admin to configure feature update uninstall period. Values range 2 - 6
 
 <!--/Scope-->
 <!--Description-->
-Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
 
 Defers Feature Updates for the specified number of days.
 
@@ -1394,8 +1463,6 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
->
 > Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use DeferUpgradePeriod for Windows 10, version 1511 devices.
 
 
@@ -1570,6 +1637,56 @@ The following list shows the supported values:
 
 - 0 (default) - Safeguards are enabled and devices may be blocked for upgrades until the safeguard is cleared.
 - 1 - Safeguards are not enabled and upgrades will be deployed without blocking on safeguards.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-donotenforceenterprisetlscertpinningforupdatedetection"></a>**Update/DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+To ensure the highest levels of security, we recommended leveraging WSUS TLS certificate pinning on all devices. 
+
+By default, certificate pinning for Windows Update client is not enforced. 
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *Allow user proxy to be used as a fallback if detection using system proxy fails*
+-   GP name: *Allow user proxy to be used as a fallback if detection using system proxy fails*
+-   GP path: *Windows Update\SpecifyintranetMicrosoftupdateserviceLocation*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0 (default) -Do not enforce certificate pinning
+- 1 - Do not enforce certificate pinning
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1929,8 +2046,6 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
 
 Allows IT Admins to exclude Windows Update (WU) drivers during updates.
 
@@ -2049,7 +2164,7 @@ The following list shows the supported values:
 To validate this policy:
 
 1.  Enable the policy and ensure the device is on a cellular network.
-2.  Run the scheduled task on your device to check for app updates in the background. For example, on a mobile device, run the following commands in TShell: 
+2.  Run the scheduled task on your device to check for app updates in the background. For example, on a device, run the following commands in TShell: 
     ```TShell
        exec-device schtasks.exe -arguments '/run /tn "\Microsoft\Windows\WindowsUpdate\Automatic App Update" /I'
     ```
@@ -2102,7 +2217,7 @@ The following list shows the supported values:
 To validate this policy:
 
 1.  Enable the policy and ensure the device is on a cellular network.
-2.  Run the scheduled task on your device to check for app updates in the background. For example, on a mobile device, run the following commands in TShell: 
+2.  Run the scheduled task on your device to check for app updates in the background. For example, on a device, run the following commands in TShell: 
     ```TShell
        exec-device schtasks.exe -arguments '/run /tn "\Microsoft\Windows\WindowsUpdate\Automatic App Update" /I'
     ```
@@ -2244,8 +2359,6 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
-
 
 Allows IT Admins to pause feature updates for up to 35 days. We recomment that you use the *Update/PauseFeatureUpdatesStartTime* policy if you are running Windows 10, version 1703 or later.
 
@@ -2422,38 +2535,14 @@ This policy is deprecated. Use [Update/RequireUpdateApproval](#update-requireupd
 <a href="" id="update-productversion"></a>**Update/ProductVersion**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2578,7 +2667,7 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is *only* recommended for managing mobile devices. If you previously used the **Update/PhoneUpdateRestrictions** policy in previous versions of Windows, it has been deprecated. Please use this policy instead. 
+> If you previously used the **Update/PhoneUpdateRestrictions** policy in previous versions of Windows, it has been deprecated. Please use this policy instead. 
 
 
 Allows the IT admin to restrict the updates that are installed on a device to only those on an update approval list. It enables IT to accept the End User License Agreement (EULA) associated with the approved update on behalf of the end-user. EULAs are approved once an update is approved.
@@ -3221,6 +3310,229 @@ The following list shows the supported values:
 
 <hr/>
 
+<!--Policy-->
+<a href="" id="update-setpolicydrivenupdatesourcefordriver"></a>**Update/SetPolicyDrivenUpdateSourceForDriver**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Configure this policy to specify whether to receive Windows Driver Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
+
+If you configure this policy, please also configure the scan source policies for other update types:
+- SetPolicyDrivenUpdateSourceForFeature
+- SetPolicyDrivenUpdateSourceForQuality
+- SetPolicyDrivenUpdateSourceForOther
+
+>[!NOTE]
+>If you have not properly configured Update/UpdateServiceUrl correctly to point to your WSUS server, this policy will have no effect. 
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *Specify source service for specific classes of Windows Updates*
+-   GP name: *SetPolicyDrivenUpdateSourceForDriver*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0: (Default) Detect, download and deploy Driver from Windows Update 
+- 1: Enabled, Detect, download and deploy Driver from Windows Server Update Server (WSUS) 
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-setpolicydrivenupdatesourceforfeature"></a>**Update/SetPolicyDrivenUpdateSourceForFeature**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Configure this policy to specify whether to receive Windows Driver Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
+
+If you configure this policy, please also configure the scan source policies for other update types:
+- SetPolicyDrivenUpdateSourceForQuality
+- SetPolicyDrivenUpdateSourceForDriver
+- SetPolicyDrivenUpdateSourceForOther
+
+>[!NOTE]
+>If you have not properly configured Update/UpdateServiceUrl correctly to point to your WSUS server, this policy will have no effect. 
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *Specify source service for specific classes of Windows Updates*
+-   GP name: *SetPolicyDrivenUpdateSourceForFeature*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0: (Default) Detect, download and deploy Feature from Windows Update 
+- 1: Enabled, Detect, download and deploy Feature from Windows Server Update Server (WSUS) 
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-setpolicydrivenupdatesourceforother"></a>**Update/SetPolicyDrivenUpdateSourceForOther**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Configure this policy to specify whether to receive Windows Driver Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
+
+If you configure this policy, please also configure the scan source policies for other update types:
+- SetPolicyDrivenUpdateSourceForFeature
+- SetPolicyDrivenUpdateSourceForQuality
+- SetPolicyDrivenUpdateSourceForDriver
+
+>[!NOTE]
+>If you have not properly configured Update/UpdateServiceUrl correctly to point to your WSUS server, this policy will have no effect. 
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *Specify source service for specific classes of Windows Updates*
+-   GP name: *SetPolicyDrivenUpdateSourceForOther*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0: (Default) Detect, download and deploy Other from Windows Update 
+- 1: Enabled, Detect, download and deploy Other from Windows Server Update Server (WSUS) 
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-setpolicydrivenupdatesourceforquality"></a>**Update/SetPolicyDrivenUpdateSourceForQuality**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Configure this policy to specify whether to receive Windows Driver Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
+
+If you configure this policy, please also configure the scan source policies for other update types:
+- SetPolicyDrivenUpdateSourceForFeature
+- SetPolicyDrivenUpdateSourceForDriver
+- SetPolicyDrivenUpdateSourceForOther
+
+>[!NOTE]
+>If you have not properly configured Update/UpdateServiceUrl correctly to point to your WSUS server, this policy will have no effect. 
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *Specify source service for specific classes of Windows Updates*
+-   GP name: *SetPolicyDrivenUpdateSourceForQuality*
+-   GP path: *Windows Components/Windows Update*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0: (Default) Detect, download and deploy Quality from Windows Update 
+- 1: Enabled, Detect, download and deploy Quality from Windows Server Update Server (WSUS) 
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
 
 <!--Policy-->
 <a href="" id="update-setproxybehaviorforupdatedetection"></a>**Update/SetProxyBehaviorForUpdateDetection**  

@@ -1,7 +1,7 @@
 ---
 title: Create a Windows Information Protection (WIP) policy with MDM using the Azure portal for Microsoft Intune (Windows 10)
 description: Learn how to use the Azure portal for Microsoft Intune to create and deploy your Windows Information Protection (WIP) policy to protect data on your network.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
@@ -20,7 +20,6 @@ ms.reviewer:
 **Applies to:**
 
 -   Windows 10, version 1607 and later
--   Windows 10 Mobile, version 1607 and later (except Microsoft Azure Rights Management, which is only available on the desktop)
 
 Microsoft Intune has an easy way to create and deploy a Windows Information Protection (WIP) policy. You can choose which apps to protect, the level of protection, and how to find enterprise data on the network. The devices can be fully managed by Mobile Device Management (MDM), or managed by Mobile Application Management (MAM), where Intune manages only the apps on a user's personal device.
 
@@ -164,40 +163,15 @@ If you don't know the Store app publisher or product name, you can find them by 
 
 To add **Desktop apps**, complete the following fields, based on what results you want returned.
 
-<table>
-    <tr>
-        <th>Field</th>
-        <th>Manages</th>
-    </tr>
-    <tr>
-        <td>All fields marked as “*”</td>
-        <td>All files signed by any publisher. (Not recommended and may not work)</td>
-    </tr>
-    <tr>
-        <td>Publisher only</td>
-        <td>If you only fill out this field, you’ll get all files signed by the named publisher.<br><br>This might be useful if your company is the publisher and signer of internal line-of-business apps.</td>
-    </tr>
-    <tr>
-        <td>Publisher and Name only</td>
-            <td>If you only fill out these fields, you’ll get all files for the specified product, signed by the named publisher.</td>
-    </tr>
-    <tr>
-        <td>Publisher, Name, and File only</td>
-        <td>If you only fill out these fields, you’ll get any version of the named file or package for the specified product, signed by the named publisher.</td>
-    </tr>
-    <tr>
-        <td>Publisher, Name, File, and Min version only</td>
-        <td>If you only fill out these fields, you’ll get the specified version or newer releases of the named file or package for the specified product, signed by the named publisher.<br><br>This option is recommended for enlightened apps that weren't previously enlightened.</td>
-    </tr>
-    <tr>
-        <td>Publisher, Name, File, and Max version only</td>
-        <td>If you only fill out these fields, you’ll get the specified version or older releases of the named file or package for the specified product, signed by the named publisher.</td>
-    </tr>
-    <tr>
-        <td>All fields completed</td>
-        <td>If you fill out all fields, you’ll get the specified version of the named file or package for the specified product, signed by the named publisher.</td>
-    </tr>
-</table>
+|Field|Manages|
+|--- |--- |
+|All fields marked as “*”|All files signed by any publisher. (Not recommended and may not work)|
+|Publisher only|If you only fill out this field, you’ll get all files signed by the named publisher.This might be useful if your company is the publisher and signer of internal line-of-business apps.|
+|Publisher and Name only|If you only fill out these fields, you’ll get all files for the specified product, signed by the named publisher.|
+|Publisher, Name, and File only|If you only fill out these fields, you’ll get any version of the named file or package for the specified product, signed by the named publisher.|
+|Publisher, Name, File, and Min version only|If you only fill out these fields, you’ll get the specified version or newer releases of the named file or package for the specified product, signed by the named publisher.This option is recommended for enlightened apps that weren't previously enlightened.|
+|Publisher, Name, File, and Max version only|If you only fill out these fields, you’ll get the specified version or older releases of the named file or package for the specified product, signed by the named publisher.|
+|All fields completed|If you fill out all fields, you’ll get the specified version of the named file or package for the specified product, signed by the named publisher.|
 
 To add another Desktop app, click the ellipsis **…**. After you’ve entered the info into the fields, click **OK**.
 

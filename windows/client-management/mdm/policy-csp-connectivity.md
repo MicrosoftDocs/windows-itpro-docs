@@ -5,7 +5,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer:
@@ -105,7 +105,7 @@ manager: dansimp
 Allows the user to enable Bluetooth or restrict access.
 
 > [!NOTE]
->  This value is not supported in Windows Phone 8.1 MDM and EAS, Windows 10 for desktop, or Windows 10 Mobile.
+>  This value is not supported in Windows 10.
 
 If this is not set or it is deleted, the default value of 2 (Allow) is used.
 
@@ -217,7 +217,7 @@ The following list shows the supported values:
 <!--Validation-->
 To validate, the enterprise can confirm by observing the roaming enable switch in the UX. It will be inactive if the roaming policy is being enforced by the enterprise policy.
 
-To validate on mobile devices, do the following:
+To validate on devices, do the following:
 
 1.  Go to Cellular & SIM.
 2.  Click on the SIM (next to the signal strength icon) and select **Properties**.

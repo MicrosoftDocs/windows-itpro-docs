@@ -5,7 +5,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
@@ -28,6 +28,9 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#settings-allowdatetime">Settings/AllowDateTime</a>
+  </dd>
+  <dd>
+    <a href="#settings-alloweditdevicename">Settings/AllowEditDeviceName</a>
   </dd>
   <dd>
     <a href="#settings-allowlanguage">Settings/AllowLanguage</a>
@@ -90,14 +93,11 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
-
 
 Allows the user to change Auto Play settings.
 
 > [!NOTE]
-> Setting this policy to 0 (Not allowed) does not affect the autoplay dialog box that appears when a device is connected.
+> Setting this policy to 0 (Not allowed) does not affect the autoplay dialog box that appears when a device is connected.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -140,7 +140,7 @@ The following list shows the supported values:
 Allows the user to change Data Sense settings.
 
 > [!NOTE]
-> The **AllowDataSense** policy is not supported on Windows 10, version 2004 and later.
+> The **AllowDataSense** policy is not supported on Windows 10, version 2004 and later.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -195,6 +195,68 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
+<a href="" id="settings-alloweditdevicename"></a>**Settings/AllowEditDeviceName**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy disables edit device name option on Settings.
+
+<!--/Description-->
+<!--SupportedValues-->
+
+Describes what value are supported in by this policy and meaning of each value, default value.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="settings-allowlanguage"></a>**Settings/AllowLanguage**  
 
 <!--SupportedSKUs-->
@@ -220,9 +282,6 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
-
 
 Allows the user to change the language settings.
 
@@ -266,7 +325,7 @@ The following list shows the supported values:
 <!--Description-->
 Enables or disables the retrieval of online tips and help for the Settings app.
 
-If disabled, Settings will not contact Microsoft content services to retrieve tips and help content.
+If disabled, Settings won't contact Microsoft content services to retrieve tips and help content.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -308,9 +367,6 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
-
 
 Allows the user to change power and sleep settings.
 
@@ -352,9 +408,6 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
-
 
 Allows the user to change the region settings.
 
@@ -396,11 +449,8 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
-
-Allows the user to change sign-in options.
+Allows the user to change sign in options.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -480,9 +530,6 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
-
 
 Allows user to change workplace settings.
 
@@ -564,7 +611,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Allows IT Admins to configure the default setting for showing additional calendars (besides the default calendar for the locale) in the taskbar clock and calendar flyout.  In this version of Windows 10, supported additional calendars are: Simplified or Traditional Chinese lunar calendar. Turning on one of these calendars will display Chinese lunar dates below the default calendar for the locale.  Select "Don't show additional calendars" to prevent showing other calendars besides the default calendar for the locale.
+Allows IT Admins to configure the default setting for showing more calendars (besides the default calendar for the locale) in the taskbar clock and calendar flyout. Other supported calendars are: Simplified or Traditional Chinese lunar calendar. Turning on one of these calendars will display Chinese lunar dates below the default calendar for the locale.  Select "Don't show additional calendars" to prevent showing other calendars besides the default calendar for the locale.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -615,31 +662,41 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Allows IT Admins to either prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified.  The mode will be specified by the policy string beginning with either the string "showonly:" or "hide:".  Pages are identified by a shortened version of their already published URIs, which is the URI minus the "ms-settings:" prefix. For example, if the URI for a settings page is "ms-settings:bluetooth", the page identifier used in the policy will be just "bluetooth".  Multiple page identifiers are separated by semicolons. For additional information on the URI reference scheme used for the various pages of the System Settings app, see [ms-settings: URI scheme reference](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference).
+Allows IT Admins to either:
 
-The following example illustrates a policy that would allow access only to the about and bluetooth pages, which have URI "ms-settings:about" and "ms-settings:bluetooth" respectively:
+- Prevent specific pages in the System Settings app from being visible or accessible
 
-showonly:about;bluetooth
+  OR
 
-If the policy is not specified, the behavior will be that no pages are affected. If the policy string is formatted incorrectly, it will be ignored entirely (that is, treated as not set) to prevent the machine from becoming unserviceable if data corruption occurs. Note that if a page is already hidden for another reason, then it will remain hidden even if it is in a "showonly:" list.
+- To do so for all pages except the pages you enter
+
+The mode will be specified by the policy string beginning with either the string `showonly:` or `hide:`. Pages are identified by a shortened version of their already published URIs, which is the URI minus the "ms-settings:" prefix.
+
+For example, if the URI for a settings page is "ms-settings:bluetooth", the page identifier used in the policy will be just "bluetooth".  Multiple page identifiers are separated by semicolons. For more information on the URI reference scheme used for the various pages of the System Settings app, see [ms-settings: URI scheme reference](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference).
+
+The following example shows a policy that allows access only to the **about** and **bluetooth** pages, which have URI "ms-settings:about" and "ms-settings:bluetooth" respectively:
+
+`showonly:about;bluetooth`
+
+If the policy isn't specified, then the behavior is that no pages are affected. If the policy string is formatted incorrectly, then it's ignored (that is, treated as not set). It's ignored to prevent the machine from becoming unserviceable if data corruption occurs. If a page is already hidden for another reason, then it stays hidden, even if the page is in a `showonly:` list.
 
 The format of the PageVisibilityList value is as follows:
 
 - The value is a unicode string up to 10,000 characters long, which will be used without case sensitivity.
 - There are two variants: one that shows only the given pages and one that hides the given pages.
-- The first variant starts with the string "showonly:" and the second with the string "hide:".
+- The first variant starts with the string `showonly:` and the second with the string "hide:".
 - Following the variant identifier is a semicolon-delimited list of page identifiers, which must not have any extra whitespace.
-- Each page identifier is the ms-settings:xyz URI for the page, minus the ms-settings: prefix, so the identifier for the page with URI "ms-settings:network-wifi" would be just "network-wifi".
+- Each page identifier is the `ms-settings:xyz` URI for the page, minus the `ms-settings:` prefix. So the identifier for the page with the `ms-settings:network-wifi` URI would be `network-wifi`.
 
 The default value for this setting is an empty string, which is interpreted as show everything.
 
-Example 1, specifies that only the wifi and bluetooth pages should be shown (they have URIs ms-settings:network-wifi and ms-settings:bluetooth). All other pages (and the categories they're in) will be hidden:
+**Example 1**: Only the wifi and bluetooth pages should be shown. They have URIs `ms-settings:network-wifi` and `ms-settings:bluetooth`. All other pages (and the categories they're in) will be hidden:
 
-showonly:network-wifi;bluetooth
+`showonly:network-wifi;bluetooth`
 
-Example 2, specifies that the wifi page should not be shown:
+**Example 2**: The wifi page shouldn't be shown:
 
-hide:network-wifi
+`hide:network-wifi`
 
 <!--/Description-->
 <!--ADMXMapped-->

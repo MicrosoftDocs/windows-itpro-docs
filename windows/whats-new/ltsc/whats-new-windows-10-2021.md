@@ -237,7 +237,7 @@ Microsoft Edge kiosk mode offers two lockdown experiences of the browser so orga
 
 ## Windows Subsystem for Linux
 
-Windows Subsystem for Linux (WSL) is be available in-box.
+Windows Subsystem for Linux (WSL) is available in-box.
 
 ## Networking
 

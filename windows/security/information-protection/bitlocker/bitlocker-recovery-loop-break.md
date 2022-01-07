@@ -2,7 +2,7 @@
 title: Breaking out of a Bitlocker recovery loop
 description: This topic  for IT professionals describes how to break out of a Bitlocker recovery loop.
 ms.assetid: #c40f87ac-17d3-47b2-afc6-6c641f72ecee
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security

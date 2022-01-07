@@ -8,17 +8,18 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 06/26/2017
 ---
 
 # Reporting CSP
 
 
-The Reporting configuration service provider is used to retrieve Windows Information Protection (formerly known as Enterprise Data Protection) and security auditing logs. This CSP was added in Windows 10, version 1511.
+The Reporting configuration service provider is used to retrieve Windows Information Protection (formerly known as Enterprise Data Protection) and security auditing logs. This CSP was added in Windows 10, version 1511.
 
 The following DDF format shows the Reporting configuration service provider in tree format.
-```
+
+```console
 ./Vendor/MSFT
 Reporting
 ----EnterpriseDataProtection
@@ -33,14 +34,18 @@ Reporting
 ------------StartTime
 ------------Type
 ```
+
 <a href="" id="reporting"></a>**Reporting**  
 Root node.
 
 <a href="" id="reporting-enterprisedataprotection"></a>**Reporting/EnterpriseDataProtection**  
 Interior node for retrieving the Windows Information Protection (formerly known as Enterprise Data Protection) logs.
 
+<!-- 12.16.2021 mandia: Commenting out, as this CSP is specific to Windows 10 Mobile.
+
 <a href="" id="reporting-securityauditing--for-mobile-only-"></a>**Reporting/SecurityAuditing** (for mobile only)  
 Interior node for retrieving the security auditing logs. This node is only for mobile devices.
+-->
 
 <a href="" id="retrievebytimerange"></a>**RetrieveByTimeRange**  
 Returns the logs that exist within the StartTime and StopTime. The StartTime and StopTime are expressed in ISO 8601 format. If the StartTime and StopTime are not specified, then the values are interpreted as either first existing or last existing time.
@@ -89,7 +94,7 @@ Value type is int.
 
 Supported operations are Get and Replace.
 
-## Examples
+## Example
 
 Retrieve all available Windows Information Protection (formerly known as Enterprise Data Protection) logs starting from the specified StartTime.
 
@@ -113,6 +118,8 @@ Retrieve all available Windows Information Protection (formerly known as Enterpr
     </SyncBody>
 </SyncML>
 ```
+
+<!-- 12.16.2021 mandia: Commenting out, as this CSP example is specific to Windows 10 Mobile.
 
 Retrieve a specified number of security auditing logs starting from the specified StartTime.
 
@@ -163,13 +170,4 @@ Retrieve a specified number of security auditing logs starting from the specifie
   </SyncBody>
 </SyncML>
 ```
-
- 
-
- 
-
-
-
-
-
-
+-->

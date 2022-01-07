@@ -1,7 +1,7 @@
 ---
 title: BitLocker deployment comparison (Windows 10)
 description: This article shows the BitLocker deployment comparison chart.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security

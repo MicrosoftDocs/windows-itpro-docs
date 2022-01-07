@@ -1,17 +1,17 @@
 ---
 title: Data structures for Microsoft Store for Business
+description: Learn about the various data structures for Microsoft Store for Business.
 MS-HAID:
 - 'p\_phdevicemgmt.business\_store\_data\_structures'
 - 'p\_phDeviceMgmt.data\_structures\_windows\_store\_for\_business'
 ms.assetid: ABE44EC8-CBE5-4775-BA8A-4564CB73531B
 ms.reviewer: 
 manager: dansimp
-description: Learn about data structures for Microsoft Store for Business.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 09/18/2017
 ---
 
@@ -105,7 +105,7 @@ Specifies the properties of the alternate identifier.
 |lastModified|dateTime|Specifies the last modified date for an application. Modifications for an application include updated product details, updates to an application, and updates to the quantity of an application.|
 |licenseType|[LicenseType](#licensetype)|Indicates whether the set of seats for a given application supports online or offline licensing.|
 |distributionPolicy|[InventoryDistributionPolicy](#inventorydistributionpolicy)||
-|Status|[InventoryStatus](#inventorystatus)||
+|status|[InventoryStatus](#inventorystatus)||
 
 ## InventoryResultSet
 
@@ -191,20 +191,19 @@ Specifies the properties of the localized product.
 |packageFamilyName|String||
 |supportedPlatforms|Collection of [ProductPlatform](#productplatform)||
 
-
 ## ProductImage
 
 Specifies the properties of the product image.
 
 |Name|Type|Description|
 |--- |--- |--- |
-|Location|URI|Location of the download image.|
-|Purpose|String|Tag for the purpose of the image, for example "screenshot" or "logo".|
-|Height|String|Height of the image in pixels.|
-|Width|String|Width of the image in pixels.|
-|Caption|String|Unlimited length.|
-|backgroundColor|String|Format "#RRGGBB"|
-|foregroundColor|String|Format "#RRGGBB"|
+|location|URI|Location of the download image.|
+|purpose|string|Tag for the image, for example "screenshot" or "logo".|
+|height|string|Height of the image in pixels.|
+|width|string|Width of the image in pixels.|
+|caption|string|Unlimited length.|
+|backgroundColor|string|Format "#RRGGBB"|
+|foregroundColor|string|Format "#RRGGBB"|
 |fileSize|integer-64|Size of the file.|
 
 ## ProductKey

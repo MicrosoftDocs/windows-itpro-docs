@@ -3,7 +3,7 @@ title: Protect your enterprise data using Windows Information Protection (WIP) (
 description: Learn how to prevent accidental enterprise data leaks through apps and services, such as email, social media, and the public cloud.
 ms.assetid: 6cca0119-5954-4757-b2bc-e0ea4d2c7032
 keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, DLP, data loss prevention, data leakage protection
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
@@ -23,7 +23,6 @@ ms.date: 03/05/2019
 **Applies to:**
 
 - Windows 10, version 1607 and later
-- Windows 10 Mobile, version 1607 and later
 
 >Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/WindowsForBusiness/Compare).
 

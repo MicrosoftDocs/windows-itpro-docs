@@ -1,7 +1,7 @@
 ---
 title: VPN connection types (Windows 10 and Windows 11)
 description: Learn about Windows VPN platform clients and the VPN connection-type features that can be configured.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, networking
@@ -56,7 +56,7 @@ There are many options for VPN clients. In Windows 10 and Windows 11, the built-
  
 ## Universal Windows Platform VPN plug-in
 
-The Universal Windows Platform (UWP) VPN plug-ins were introduced in Windows 10 and Windows 11, although there were originally separate versions available for the Windows 8.1 Mobile and Windows 8.1 PC platforms. Using the UWP platform, third-party VPN providers can create app-containerized plug-ins using WinRT APIs, eliminating the complexity and problems often associated with writing to system-level drivers.  
+The Universal Windows Platform (UWP) VPN plug-ins were introduced in Windows 10 and Windows 11, although there was originally separate version available for the Windows 8.1 PC platform. Using the UWP platform, third-party VPN providers can create app-containerized plug-ins using WinRT APIs, eliminating the complexity and problems often associated with writing to system-level drivers.  
 
 There are a number of Universal Windows Platform VPN applications, such as Pulse Secure, Cisco AnyConnect, F5 Access, Sonicwall Mobile Connect, and Check Point Capsule. If you want to use a UWP VPN plug-in, work with your vendor for any custom settings needed to configure your VPN solution.
 
