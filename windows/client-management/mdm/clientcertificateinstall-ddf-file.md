@@ -556,21 +556,22 @@ Supported operations are Get, Add, Delete, Replace.</Description>
                             </AccessType>
                             <DefaultValue>3</DefaultValue>
                             <Description>Optional. Specify where to keep the private key. Note that even it is protected by TPM, it is not guarded with TPM PIN. 
-SCEP enrolled cert doesn’t support TPM PIN protection. 
-Supported values: 
+
+SCEP enrolled cert doesn’t support TPM PIN protection. Supported values: 
+
 1 – private key protected by TPM, 
 
 2 – private key protected by phone TPM if the device supports TPM. 
-All Windows Phone 8.1 devices support TPM and will treat value 2 as 1 
 
 3 (default) – private key saved in software KSP 
 
-4 – private key protected by NGC. If this option is specified, container name should be specifed, if not enrollment will fail
+4 – private key protected by NGC. If this option is specified, container name should be specified, if not enrollment will fail.
 
 
 Format is int. 
 
 Supported operations are Get, Add, Delete, Replace 
+
 </Description>
                             <DFFormat>
                                 <int />
