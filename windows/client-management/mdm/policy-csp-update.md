@@ -536,8 +536,17 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed or not configured.
+-   0 – Not configured.
 -   1 – Allowed. Accepts updates received through Microsoft Update.
+
+> [!NOTE]
+> Setting this policy back to 0 or "Not configured" does not revert the configuration to receive updates from Microsoft Update automatically.
+> In order to revert this we can run the PowerShell commands below to remove the Microsoft Update service:
+
+```
+$MUSM = New-Object -ComObject "Microsoft.Update.ServiceManager"
+$MUSM.RemoveService("7971f918-a847-4430-9279-4a52d1efe18d")
+```
 
 <!--/SupportedValues-->
 <!--/Policy-->
