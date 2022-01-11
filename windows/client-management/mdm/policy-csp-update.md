@@ -2012,9 +2012,9 @@ Supported value range: 2-30.
 If you disable or do not configure this policy, the default behaviors will be used.
 
 If any of the following policies are configured, this policy has no effect:
-1. No auto-restart with logged on users for scheduled automatic updates installations
+1. No autorestart with logged on users for scheduled automatic updates installations
 2. Always automatically restart at scheduled time
-3. Specify deadline before auto-restart for update installation
+3. Specify deadline before autorestart for update installation
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2317,7 +2317,7 @@ The following list shows the supported values:
 > Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use PauseDeferrals for Windows 10, version 1511 devices.
 
 
-Allows IT Admins to pause updates and upgrades for up to 5 weeks. Paused deferrals will be reset after 5 weeks.
+Allows IT Admins to pause updates and upgrades for up to five weeks. Paused deferrals will be reset after five weeks.
 
 
 If the "Specify intranet Microsoft update service location" policy is enabled, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
@@ -2680,7 +2680,7 @@ The following list shows the supported values:
 > If you previously used the **Update/PhoneUpdateRestrictions** policy in previous versions of Windows, it has been deprecated. Please use this policy instead. 
 
 
-Allows the IT admin to restrict the updates that are installed on a device to only those on an update approval list. It enables IT to accept the End User License Agreement (EULA) associated with the approved update on behalf of the end-user. EULAs are approved once an update is approved.
+Allows the IT admin to restrict the updates that are installed on a device to only those on an update approval list. It enables IT to accept the End User License Agreement (EULA) associated with the approved update on behalf of the end user. EULAs are approved once an update is approved.
 
 Supported operations are Get and Replace.
 
@@ -2722,7 +2722,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Allows the IT Admin to specify the period for auto-restart imminent warning notifications.
+Allows the IT Admin to specify the period for autorestart imminent warning notifications.
 
 The default value is 15 (minutes).
 
@@ -2774,7 +2774,7 @@ Supported values are 15, 30, or 60 (minutes).
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
 
 
-Allows the IT Admin to specify the period for auto-restart warning reminder notifications.
+Allows the IT Admin to specify the period for autorestart warning reminder notifications.
 
 The default value is 4 (hours).
 
@@ -2824,7 +2824,7 @@ Supported values are 2, 4, 8, 12, or 24 (hours).
 <!--Description-->
 Enables the IT admin to schedule the day of the update installation.
 
-The data type is a integer.
+The data type is an integer.
 
 Supported operations are Add, Delete, Get, and Replace.
 
@@ -2881,7 +2881,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Enables the IT admin to schedule the update installation on the every week. Value type is integer. Supported values:
+Enables the IT admin to schedule the update installation on every week. Value type is integer. Supported values:
 <ul>
 <li>0 - no update in the schedule</li>
 <li>1 - update is scheduled every week</li>
@@ -3117,7 +3117,7 @@ ADMX Info:
 
 Enables the IT admin to schedule the time of the update installation.
 
-The data type is a integer.
+The data type is an integer.
 
 Supported operations are Add, Delete, Get, and Replace.
 
@@ -3165,7 +3165,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Allows the IT Admin to disable auto-restart notifications for update installations.
+Allows the IT Admin to disable autorestart notifications for update installations.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -3348,7 +3348,7 @@ The following list shows the supported values:
 <!--Description-->
 Configure this policy to specify whether to receive Windows Driver Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
 
-If you configure this policy, please also configure the scan source policies for other update types:
+If you configure this policy, also configure the scan source policies for other update types:
 - SetPolicyDrivenUpdateSourceForFeature
 - SetPolicyDrivenUpdateSourceForQuality
 - SetPolicyDrivenUpdateSourceForOther
@@ -3368,8 +3368,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0: (Default) Detect, download and deploy Driver from Windows Update 
-- 1: Enabled, Detect, download and deploy Driver from Windows Server Update Server (WSUS) 
+- 0: (Default) Detect, download, and deploy Driver from Windows Update 
+- 1: Enabled, Detect, download, and deploy Driver from Windows Server Update Server (WSUS) 
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -3404,7 +3404,7 @@ The following list shows the supported values:
 <!--Description-->
 Configure this policy to specify whether to receive Windows Driver Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
 
-If you configure this policy, please also configure the scan source policies for other update types:
+If you configure this policy, also configure the scan source policies for other update types:
 - SetPolicyDrivenUpdateSourceForQuality
 - SetPolicyDrivenUpdateSourceForDriver
 - SetPolicyDrivenUpdateSourceForOther
@@ -3424,8 +3424,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0: (Default) Detect, download and deploy Feature from Windows Update 
-- 1: Enabled, Detect, download and deploy Feature from Windows Server Update Server (WSUS) 
+- 0: (Default) Detect, download, and deploy Feature from Windows Update 
+- 1: Enabled, Detect, download, and deploy Feature from Windows Server Update Server (WSUS) 
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -3460,7 +3460,7 @@ The following list shows the supported values:
 <!--Description-->
 Configure this policy to specify whether to receive Windows Driver Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
 
-If you configure this policy, please also configure the scan source policies for other update types:
+If you configure this policy, also configure the scan source policies for other update types:
 - SetPolicyDrivenUpdateSourceForFeature
 - SetPolicyDrivenUpdateSourceForQuality
 - SetPolicyDrivenUpdateSourceForDriver
@@ -3480,8 +3480,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0: (Default) Detect, download and deploy Other from Windows Update 
-- 1: Enabled, Detect, download and deploy Other from Windows Server Update Server (WSUS) 
+- 0: (Default) Detect, download, and deploy Other from Windows Update 
+- 1: Enabled, Detect, download, and deploy Other from Windows Server Update Server (WSUS) 
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -3516,7 +3516,7 @@ The following list shows the supported values:
 <!--Description-->
 Configure this policy to specify whether to receive Windows Driver Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
 
-If you configure this policy, please also configure the scan source policies for other update types:
+If you configure this policy, also configure the scan source policies for other update types:
 - SetPolicyDrivenUpdateSourceForFeature
 - SetPolicyDrivenUpdateSourceForDriver
 - SetPolicyDrivenUpdateSourceForOther
@@ -3536,8 +3536,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0: (Default) Detect, download and deploy Quality from Windows Update 
-- 1: Enabled, Detect, download and deploy Quality from Windows Server Update Server (WSUS) 
+- 0: (Default) Detect, download, and deploy Quality from Windows Update 
+- 1: Enabled, Detect, download, and deploy Quality from Windows Server Update Server (WSUS) 
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -3570,9 +3570,9 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10, version 1607 and later. By default, HTTP WSUS servers scan only if system proxy is configured. This policy setting allows you to configure user proxy as a fallback for detecting updates while using an HTTP based intranet server despite the vulnerabilities it presents.
+Available in Windows 10, version 1607 and later. By default, HTTP WSUS servers scan only if system proxy is configured. This policy setting allows you to configure user proxy as a fallback for detecting updates while using an HTTP-based intranet server despite the vulnerabilities it presents.
 
-This policy setting does not impact those customers who have, per Microsoft recommendation, secured their WSUS server with TLS/SSL protocol, thereby using HTTPS based intranet servers to keep systems secure. That said, if a proxy is required, we recommend configuring a system proxy to ensure the highest level of security.
+This policy setting does not impact those customers who have, per Microsoft recommendation, secured their WSUS server with TLS/SSL protocol, thereby using HTTPS-based intranet servers to keep systems secure. That said, if a proxy is required, we recommend configuring a system proxy to ensure the highest level of security.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -3735,7 +3735,7 @@ ADMX Info:
 > [!IMPORTANT]
 > Starting in Windows 10, version 1703 this policy is not supported in IoT Mobile.
 
-Allows the device to check for updates from a WSUS server instead of Microsoft Update. This is useful for on-premises MDMs that need to update devices that cannot connect to the Internet.
+Allows the device to check for updates from a WSUS server instead of Microsoft Update. This setting is useful for on-premises MDMs that need to update devices that cannot connect to the Internet.
 
 Supported operations are Get and Replace.
 
