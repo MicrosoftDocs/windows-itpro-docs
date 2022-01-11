@@ -35,7 +35,7 @@ The initial settings for Wi-Fi Sense are determined by the options you chose whe
 Wi-Fi Sense connects your employees to open Wi-Fi networks. Typically, these are the open (no password required) Wi-Fi hotspots you see when you’re out and about.
 
 ## How to manage Wi-Fi Sense in your company
-In a company environment, you will most likely deploy Windows 10 to your employees devices using your preferred deployment method and then manage their settings globally. With that in mind, you have a few options for managing how your employees will use Wi-Fi Sense.
+In a company environment, you will most likely deploy Windows 10 to your employees' devices using your preferred deployment method and then manage their settings globally. With that in mind, you have a few options for managing how your employees will use Wi-Fi Sense.
 
 > [!IMPORTANT]
 > Turning off Wi-Fi Sense stops employees from connecting automatically to open hotspots.
