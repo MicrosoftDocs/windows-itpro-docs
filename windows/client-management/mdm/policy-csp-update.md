@@ -1844,7 +1844,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-For Quality Updates, this policy specifies the number of days a user can snooze Engaged restart reminder notifications. The snooze period can be set between 1 and 3 days.
+For Quality Updates, this policy specifies the number of days a user can snooze Engaged restart reminder notifications. The snooze period can be set between 1-3 days.
 
 Value type is integer. Default is three days.
 
