@@ -3163,7 +3163,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Allows the IT Admin to disable autoSrestart notifications for update installations.
+Allows the IT Admin to disable autorestart notifications for update installations.
 
 <!--/Description-->
 <!--ADMXMapped-->
