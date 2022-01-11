@@ -149,8 +149,6 @@ items:
           items: 
             - name: BitLocker DDF file
               href: bitlocker-ddf-file.md
-        - name: BrowserFavorite CSP
-          href: browserfavorite-csp.md
         - name: CellularSettings CSP
           href: cellularsettings-csp.md
         - name: CertificateStore CSP
