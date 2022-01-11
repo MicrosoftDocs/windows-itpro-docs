@@ -29,6 +29,9 @@ manager: dansimp
     <a href="#devicelock-allowsimpledevicepassword">DeviceLock/AllowSimpleDevicePassword</a>
   </dd>
   <dd>
+    <a href="#devicelock-allowscreentimeoutwhilelockeduserconfig">DeviceLock/AllowScreenTimeoutWhileLockedUserConfig</a>
+  </dd>
+  <dd>
     <a href="#devicelock-alphanumericdevicepasswordrequired">DeviceLock/AlphanumericDevicePasswordRequired</a>
   </dd>
   <dd>
@@ -149,8 +152,48 @@ Specifies whether PINs or passwords such as "1111" or "1234" are allowed. For th
 > This policy must be wrapped in an Atomic command.
 
 
-
 For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – Blocked
+-   1 – Allowed
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="devicelock-allowscreentimeoutwhilelockeduserconfig"></a>**DeviceLock/AllowScreenTimeoutWhileLockedUserConfig**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
 
 <!--/Description-->
 <!--SupportedValues-->
