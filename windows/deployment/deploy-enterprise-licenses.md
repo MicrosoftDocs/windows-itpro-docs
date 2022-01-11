@@ -258,7 +258,5 @@ If a device is running a version of Windows 10 Pro prior to version 1703 (for ex
 
 ### Delay in the activation of Enterprise License of Windows 10 
 
-This is by design. Windows 10 has a built-in cache to help with the volume of calls coming to determine the upgrades of Windows 10 devices.  
-
-This cache stores three-day values, including responses that indicate that the device is not eligible for an upgrade. When a device makes the call to check for upgrade eligibility on behalf of the signed user with a qualifying license, it can take three days and the delay for the subscription purchase to go through OMS into the system that masters Windows 10 licenses.
+This is by design. Windows 10 and Windows 11 has a built-in cache that is used when determining upgrade eligibility, including responses that indicate that the device is not eligible for an upgrade. It can take up to four days after a qualifying purchase before the upgrade eligibility is enabled and the cache expires.
 
