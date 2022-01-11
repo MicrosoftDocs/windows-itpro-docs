@@ -109,9 +109,9 @@ In environments that are running the RDS Client or that have multiple concurrent
 **Workaround**: Have users log out and then log back in.
 
 ## Error message is erroneously displayed when the connection group is published only to the user
-When you run Repair-AppvClientConnectionGroup, the following error is displayed, even when the connection group is published only to the user: “Internal App-V Integration error: Package not integrated for the user. Please ensure that the package is added to the machine and published to the user.”
+When you run Repair-AppvClientConnectionGroup, the following error is displayed, even when the connection group is published only to the user: “Internal App-V Integration error: Package not integrated for the user. Ensure that the package is added to the machine and published to the user.”
 
-**Workaround**: Do one of the following:
+**Workaround**: Execute one of the following tasks:
 
 -   Publish all packages in a connection group.
 
@@ -119,7 +119,7 @@ When you run Repair-AppvClientConnectionGroup, the following error is displayed,
 
 -   Repair packages individually using the Repair-AppvClientPackage command rather than the Repair-AppvClientConnectionGroup command.
 
-    Determine which packages are available to users and then run the **Repair-AppvClientPackage** command once for each package. Use Windows PowerShell cmdlets to do the following:
+    Determine which packages are available to users and then run the **Repair-AppvClientPackage** command once for each package. Use Windows PowerShell cmdlets to execute the following tasks:
 
     1.  Get all the packages in a connection group.
 
@@ -128,7 +128,7 @@ When you run Repair-AppvClientConnectionGroup, the following error is displayed,
     3.  If the package is currently published, run **Repair-AppvClientPackage** on that package.
 
 ## Icons not displayed properly in Sequencer
-Icons in the Shortcuts and File Type Associations tab are not displayed correctly when modifying a package in the App-V Sequencer. This problem occurs when the size of the icons are not 16x16 or 32x32.
+Icons in the Shortcuts and File Type Associations tab are not displayed correctly when modifying a package in the App-V Sequencer. This problem occurs when the size of the icons is not 16x16 or 32x32.
 
 **Workaround**: Only use icons that are 16x16 or 32x32.
 
