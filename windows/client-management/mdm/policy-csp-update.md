@@ -1522,7 +1522,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Specifies the scan frequency from every 1 - 22 hours with a random variant of 0 - 4 hours. Default is 22 hours. This policy should only be enabled when Update/UpdateServiceUrl is configured to point the device at a WSUS server rather than Microsoft Update. 
+Specifies the scan frequency from every 1 - 22 hours with a random variant of 0 - 4 hours. Default is 22 hours. This policy should be enabled only when Update/UpdateServiceUrl is configured to point the device at a WSUS server rather than Microsoft Update. 
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1568,7 +1568,7 @@ Do not allow update deferral policies to cause scans against Windows Update. If 
 
 For more information about dual scan, see [Demystifying "Dual Scan"](/archive/blogs/wsus/demystifying-dual-scan) and [Improving Dual Scan on 1607](/archive/blogs/wsus/improving-dual-scan-on-1607).
 
-This is the same as the Group Policy in Windows Components > Windows Update "Do not allow update deferral policies to cause scans against Windows Update."
+This setting is the same as the Group Policy in **Windows Components** > **Windows Update**: "Do not allow update deferral policies to cause scans against Windows Update."
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
@@ -1729,7 +1729,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-For Quality Updates, this policy specifies the deadline in days before automatically scheduling and executing a pending restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Autorestart to Engaged restart (pending user schedule) to be executed automatically , within the specified period.
+For Quality Updates, this policy specifies the deadline in days before automatically scheduling and executing a pending restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Autorestart to Engaged restart (pending user schedule) to be executed automatically, within the specified period.
 
 The system will reboot on or after the specified deadline. The reboot is prioritized over any configured Active Hours and any existing system and user busy checks.
 
@@ -1789,11 +1789,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-For Feature Updates, this policy specifies the deadline in days before automatically scheduling and executing a pending restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to be executed automatically , within the specified period.
+For Feature Updates, this policy specifies the deadline in days before automatically scheduling and executing a pending restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to be executed automatically, within the specified period.
 
 Value type is integer. Default is 14.
 
-Supported value range: 2 - 30.
+Supported value range: 2-30.
 
 If no deadline is specified or deadline is set to 0, the restart will not be automatically executed and will remain Engaged restart (for example, pending user scheduling).
 
