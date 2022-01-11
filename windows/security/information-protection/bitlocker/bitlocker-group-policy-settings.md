@@ -1000,7 +1000,7 @@ This policy controls how BitLocker-enabled system volumes are handled with the S
 |**Introduced**|Windows Server 2012 and Windows 8|
 |**Drive type**|All drives|
 |**Policy path**|Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption\Operating System Drives|
-|**Conflicts**|If you enable **Allow Secure Boot for integrity validation**, make sure the **Configure TPM platform validation profile for native UEFI firmware configurations** Group Policy setting isn't enabled or include PCR 7 to allow BitLocker to use Secure Boot for platform or BCD integrity validation. <P> For more information about PCR 7, see [Platform Configuration Register (PCR)](#bkmk-pcr) in this cc.|
+|**Conflicts**|If you enable **Allow Secure Boot for integrity validation**, make sure the **Configure TPM platform validation profile for native UEFI firmware configurations** Group Policy setting isn't enabled or include PCR 7 to allow BitLocker to use Secure Boot for platform or BCD integrity validation. <P> For more information about PCR 7, see [Platform Configuration Register (PCR)](#bkmk-pcr) in this article.|
 |**When enabled or not configured**|BitLocker uses Secure Boot for platform integrity if the platform is capable of Secure Boot-based integrity validation.|
 |**When disabled**|BitLocker uses legacy platform integrity validation, even on systems that are capable of Secure Boot-based integrity validation.|
 

@@ -1218,7 +1218,7 @@ The following fields are available:
 - **RunAppraiser**  Indicates if Appraiser was set to run at all. If this if false, it is understood that data events will not be received from this device.
 - **RunDate**  The date that the diagnostic data run was stated, expressed as a filetime.
 - **RunGeneralTel**  Indicates if the generaltel.dll component was run. Generaltel collects additional diagnostic data on an infrequent schedule and only from machines at diagnostic data levels higher than Basic.
-- **RunOnline**  Indicates if appraiser was able to connect to Windows Update and theefore is making decisions using up-to-date driver coverage information.
+- **RunOnline**  Indicates if appraiser was able to connect to Windows Update and therefore is making decisions using up-to-date driver coverage information.
 - **RunResult**  The hresult of the Appraiser diagnostic data run.
 - **SendingUtc**  Indicates whether the Appraiser client is sending events during the current diagnostic data run.
 - **StoreHandleIsNotNull**  Obsolete, always set to false
@@ -4043,7 +4043,7 @@ The following fields are available:
 - **DriverExclusionPolicy**  Indicates if the policy for not including drivers with Windows Update is enabled.
 - **DriverSyncPassPerformed**  Were drivers scanned this time?
 - **EventInstanceID**  A globally unique identifier for event instance.
-- **EventScenario**  Indicates the purpose of sending this event - whether because the software distribution just started checking for content, or whether it was cancelled, succeeded, or failed.
+- **EventScenario**  Indicates the purpose of sending this event - whether because the software distribution just started checking for content, or whether it was canceled, succeeded, or failed.
 - **ExtendedMetadataCabUrl**  Hostname that is used to download an update.
 - **ExtendedStatusCode**  Secondary error code for certain scenarios where StatusCode wasn't specific enough.
 - **FailedUpdateGuids**  The GUIDs for the updates that failed to be evaluated during the scan.
@@ -4160,7 +4160,7 @@ The following fields are available:
 - **Edition**  Identifies the edition of Windows currently running on the device.
 - **EventInstanceID**  A globally unique identifier for event instance.
 - **EventNamespaceID**  The ID of the test events environment.
-- **EventScenario**  Indicates the purpose for sending this event: whether because the software distribution just started downloading content; or whether it was cancelled, succeeded, or failed.
+- **EventScenario**  Indicates the purpose for sending this event: whether because the software distribution just started downloading content; or whether it was canceled, succeeded, or failed.
 - **EventType**  Identifies the type of the event (Child, Bundle, or Driver).
 - **ExtendedStatusCode**  Secondary error code for certain scenarios where StatusCode wasn't specific enough.
 - **FeatureUpdatePause**  Indicates whether feature OS updates are paused on the device.
@@ -4217,7 +4217,7 @@ The following fields are available:
 
 - **CallerApplicationName**  The name provided by the caller who initiated API calls into the software distribution client
 - **ClientVersion**  The version number of the software distribution client
-- **EventScenario**  Indicates the purpose of sending this event - whether because the software distribution just started checking for content, or whether it was cancelled, succeeded, or failed
+- **EventScenario**  Indicates the purpose of sending this event - whether because the software distribution just started checking for content, or whether it was canceled, succeeded, or failed
 - **EventType**  Possible values are "Child", "Bundle", "Release" or "Driver"
 - **ExtendedStatusCode**  Secondary error code for certain scenarios where StatusCode wasn't specific enough
 - **FileId**  A hash that uniquely identifies a file
@@ -4285,8 +4285,8 @@ The following fields are available:
 - **DriverPingBack**  Contains information about the previous driver and system state.
 - **Edition**  Indicates the edition of Windows being used.
 - **EventInstanceID**  A globally unique identifier for event instance.
-- **EventNamespaceID**  Indicates whether the event succeeded or failed. Has the format EventType+Event where Event is Succeeded, Cancelled, Failed, etc.
-- **EventScenario**  Indicates the purpose of sending this event - whether because the software distribution just started installing content, or whether it was cancelled, succeeded, or failed.
+- **EventNamespaceID**  Indicates whether the event succeeded or failed. Has the format EventType+Event where Event is Succeeded, Canceled, Failed, etc.
+- **EventScenario**  Indicates the purpose of sending this event - whether because the software distribution just started installing content, or whether it was canceled, succeeded, or failed.
 - **EventType**  Possible values are Child, Bundle, or Driver.
 - **ExtendedErrorCode**  The extended error code.
 - **ExtendedStatusCode**  Secondary error code for certain scenarios where StatusCode wasn't specific enough.
@@ -4342,7 +4342,7 @@ This event sends data about the ability of Windows to discover the location of a
 
 The following fields are available:
 
-- **EventScenario**  Indicates the purpose of sending this event - whether because the software distribution just started checking for content, or whether it was cancelled, succeeded, or failed
+- **EventScenario**  Indicates the purpose of sending this event - whether because the software distribution just started checking for content, or whether it was canceled, succeeded, or failed
 - **HResult**  Indicates the result code of the event (success, cancellation, failure code HResult)
 - **IsBackground**  Indicates whether the SLS discovery event took place in the foreground or background
 - **NextExpirationTime**  Indicates when the SLS cab expires
@@ -4536,7 +4536,7 @@ The following fields are available:
 - **FlightMetadata**  Contains the FlightId and the build being flighted.
 - **ObjectId**  Unique value for each Update Agent mode.
 - **RelatedCV**  Correlation vector value generated from the latest USO scan.
-- **Result**  Result of the initialize phase of update. 0 = Succeeded, 1 = Failed, 2 = Cancelled, 3 = Blocked, 4 = BlockCancelled
+- **Result**  Result of the initialize phase of update. 0 = Succeeded, 1 = Failed, 2 = Canceled, 3 = Blocked, 4 = BlockCanceled
 - **ScenarioId**  The scenario ID. Example: MobileUpdate, DesktopLanguagePack, DesktopFeatureOnDemand, or DesktopDriverUpdate
 - **SessionData**  Contains instructions to update agent for processing FODs and DUICs (Null for other scenarios).
 - **SessionId**  Unique value for each Update Agent mode attempt .
@@ -4553,7 +4553,7 @@ The following fields are available:
 - **FlightId**  Unique ID for each flight.
 - **ObjectId**  Unique value for each Update Agent mode.
 - **RelatedCV**  Correlation vector value generated from the latest scan.
-- **Result**  Result of the install phase of update. 0 = Succeeded 1 = Failed, 2 = Cancelled, 3 = Blocked, 4 = BlockCancelled
+- **Result**  Result of the install phase of update. 0 = Succeeded 1 = Failed, 2 = Canceled, 3 = Blocked, 4 = BlockCanceled
 - **ScenarioId**  The scenario ID. Example: MobileUpdate, DesktopLanguagePack, DesktopFeatureOnDemand, or DesktopDriverUpdate
 - **SessionId**  Unique value for each Update Agent mode attempt.
 - **UpdateId**  Unique ID for each update.
@@ -4819,7 +4819,7 @@ The following fields are available:
 - **Setup360Result**  The result of Setup360 (HRESULT used to diagnose errors).
 - **Setup360Scenario**  The Setup360 flow type (for example, Boot, Media, Update, MCT).
 - **SetupVersionBuildNumber**  The build number of Setup360 (build number of the target OS).
-- **State**  Exit state of given Setup360 run. Example: succeeded, failed, blocked, cancelled.
+- **State**  Exit state of given Setup360 run. Example: succeeded, failed, blocked, canceled.
 - **TestId**  An ID that uniquely identifies a group of events.
 - **WuId**  This is the Windows Update Client ID. In the Windows Update scenario, this is the same as the clientId.
 
@@ -4840,7 +4840,7 @@ The following fields are available:
 - **Setup360Result**  The result of Setup360. This is an HRESULT error code that is used to diagnose errors.
 - **Setup360Scenario**  The Setup360 flow type. Example: Boot, Media, Update, MCT.
 - **SetupVersionBuildNumber**  The build number of Setup360 (build number of target OS).
-- **State**  The exit state of a Setup360 run. Example: succeeded, failed, blocked, cancelled.
+- **State**  The exit state of a Setup360 run. Example: succeeded, failed, blocked, canceled.
 - **TestId**  ID that uniquely identifies a group of events.
 - **WuId**  This is the Windows Update Client ID. With Windows Update, this is the same as the clientId.
 
@@ -4861,7 +4861,7 @@ The following fields are available:
 - **Setup360Result**  The result of Setup360. This is an HRESULT error code that is used to diagnose errors.
 - **Setup360Scenario**  The Setup360 flow type. Example: Boot, Media, Update, MCT
 - **SetupVersionBuildNumber**  The build number of Setup360 (build number of target OS).
-- **State**  Exit state of a Setup360 run. Example: succeeded, failed, blocked, cancelled.
+- **State**  Exit state of a Setup360 run. Example: succeeded, failed, blocked, canceled.
 - **TestId**  ID that uniquely identifies a group of events.
 - **WuId**  Windows Update client ID.
 
@@ -4882,7 +4882,7 @@ The following fields are available:
 - **Setup360Result**  The result of Setup360. This is an HRESULT error code that's used to diagnose errors.
 - **Setup360Scenario**  The Setup360 flow type. Example: Boot, Media, Update, MCT
 - **SetupVersionBuildNumber**  The build number of Setup360 (build number of target OS).
-- **State**  The exit state of a Setup360 run. Example: succeeded, failed, blocked, cancelled
+- **State**  The exit state of a Setup360 run. Example: succeeded, failed, blocked, canceled
 - **TestId**  A string to uniquely identify a group of events.
 - **WuId**  This is the Windows Update Client ID. With Windows Update, this is the same as ClientId.
 
@@ -4903,7 +4903,7 @@ The following fields are available:
 - **Setup360Result**  The result of Setup360. This is an HRESULT error code that is used to diagnose errors.
 - **Setup360Scenario**  The Setup360 flow type. Example: Boot, Media, Update, MCT.
 - **SetupVersionBuildNumber**  The build number of Setup360 (build number of target OS).
-- **State**  The exit state of a Setup360 run. Example: succeeded, failed, blocked, cancelled.
+- **State**  The exit state of a Setup360 run. Example: succeeded, failed, blocked, canceled.
 - **TestId**  ID that uniquely identifies a group of events.
 - **WuId**  This is the Windows Update Client ID. Using Windows Update, this is the same as the clientId.
 
@@ -4924,7 +4924,7 @@ The following fields are available:
 - **Setup360Result**  The result of Setup360. This is an HRESULT error code that can be used to diagnose errors.
 - **Setup360Scenario**  The Setup360 flow type. Example: Boot, Media, Update, MCT.
 - **SetupVersionBuildNumber**  The build number of Setup360 (build number of the target OS).
-- **State**  The exit state of the Setup360 run. Example: succeeded, failed, blocked, cancelled.
+- **State**  The exit state of the Setup360 run. Example: succeeded, failed, blocked, canceled.
 - **TestId**  ID that uniquely identifies a group of events.
 - **WuId**  Windows Update client ID.
 
@@ -4945,7 +4945,7 @@ The following fields are available:
 - **Setup360Result**  The result of Setup360. This is an HRESULT error code that can be used to diagnose errors.
 - **Setup360Scenario**  Setup360 flow type (Boot, Media, Update, MCT).
 - **SetupVersionBuildNumber**  The build number of Setup360 (build number of target OS).
-- **State**  The exit state of a Setup360 run. Example: succeeded, failed, blocked, cancelled.
+- **State**  The exit state of a Setup360 run. Example: succeeded, failed, blocked, canceled.
 - **TestId**  A string to uniquely identify a group of events.
 - **WuId**  This is the Windows Update Client ID. With Windows Update, this is the same as the clientId.
 
@@ -4966,7 +4966,7 @@ The following fields are available:
 - **Setup360Result**  The result of Setup360. This is an HRESULT error code that is used to diagnose errors.
 - **Setup360Scenario**  The Setup360 flow type, Example: Boot, Media, Update, MCT.
 - **SetupVersionBuildNumber**  The build number of Setup360 (build number of target OS).
-- **State**  The exit state of a Setup360 run. Example: succeeded, failed, blocked, cancelled.
+- **State**  The exit state of a Setup360 run. Example: succeeded, failed, blocked, canceled.
 - **TestId**  A string to uniquely identify a group of events.
 - **WuId**  Windows Update client ID.
 
@@ -5026,7 +5026,7 @@ The following fields are available:
 - **Setup360Result**  The result of Setup360. This is an HRESULT error code that can be used used to diagnose errors.
 - **Setup360Scenario**  The Setup360 flow type. Example: Boot, Media, Update, MCT.
 - **SetupVersionBuildNumber**  The build number of Setup360 (build number of target OS).
-- **State**  The exit state of a Setup360 run. Example: succeeded, failed, blocked, cancelled.
+- **State**  The exit state of a Setup360 run. Example: succeeded, failed, blocked, canceled.
 - **TestId**  A string to uniquely identify a group of events.
 - **WuId**  This is the Windows Update Client ID. With Windows Update, this is the same as the clientId.
 
@@ -5111,12 +5111,12 @@ The following fields are available:
 
 ### Microsoft.Windows.StoreAgent.Telemetry.AbortedInstallation
 
-This event is sent when an installation or update is cancelled by a user or the system and is used to help keep Windows Apps up to date and secure.
+This event is sent when an installation or update is canceled by a user or the system and is used to help keep Windows Apps up to date and secure.
 
 The following fields are available:
 
 - **AggregatedPackageFullNames**  The names of all packages to be downloaded and installed.
-- **AttemptNumber**  Number of retry attempts before it was cancelled.
+- **AttemptNumber**  Number of retry attempts before it was canceled.
 - **BundleId**  The Item Bundle ID.
 - **CategoryId**  The Item Category ID.
 - **ClientAppId**  The identity of the app that initiated this operation.
@@ -5131,9 +5131,9 @@ The following fields are available:
 - **ParentBundleId**  The product ID of the parent (if this product is part of a bundle).
 - **PFN**  The product family name of the product being installed.
 - **ProductId**  The identity of the package or packages being installed.
-- **SystemAttemptNumber**  The total number of automatic attempts at installation before it was cancelled.
+- **SystemAttemptNumber**  The total number of automatic attempts at installation before it was canceled.
 - **UpdateId**  Update ID (if this is an update)
-- **UserAttemptNumber**  The total number of user attempts at installation before it was cancelled.
+- **UserAttemptNumber**  The total number of user attempts at installation before it was canceled.
 - **WUContentId**  The Windows Update content ID.
 
 
@@ -5151,7 +5151,7 @@ This event is sent when the Store Agent cache is refreshed with any available pa
 
 ### Microsoft.Windows.StoreAgent.Telemetry.CancelInstallation
 
-This event is sent when an app update or installation is cancelled while in interactive mode. This can be cancelled by the user or the system. It's used to help keep Windows up-to-date and secure.
+This event is sent when an app update or installation is canceled while in interactive mode. This can be canceled by the user or the system. It's used to help keep Windows up-to-date and secure.
 
 The following fields are available:
 
@@ -5170,11 +5170,11 @@ The following fields are available:
 - **ParentBundleId**  The product ID of the parent (if this product is part of a bundle).
 - **PFN**  The name of all packages to be downloaded and installed.
 - **PreviousHResult**  The previous HResult code.
-- **PreviousInstallState**  Previous installation state before it was cancelled.
+- **PreviousInstallState**  Previous installation state before it was canceled.
 - **ProductId**  The name of the package or packages requested for installation.
 - **RelatedCV**  Correlation Vector of a previous performed action on this product.
-- **SystemAttemptNumber**  Total number of automatic attempts to install before it was cancelled.
-- **UserAttemptNumber**  Total number of user attempts to install before it was cancelled.
+- **SystemAttemptNumber**  Total number of automatic attempts to install before it was canceled.
+- **UserAttemptNumber**  Total number of user attempts to install before it was canceled.
 - **WUContentId**  The Windows Update content ID.
 
 
@@ -5229,7 +5229,7 @@ This event is sent after an app is downloaded to help keep Windows up-to-date an
 The following fields are available:
 
 - **AggregatedPackageFullNames**  The name of all packages to be downloaded and installed.
-- **AttemptNumber**  Number of retry attempts before it was cancelled.
+- **AttemptNumber**  Number of retry attempts before it was canceled.
 - **BundleId**  The identity of the Windows Insider build associated with this product.
 - **CategoryId**  The identity of the package or packages being installed.
 - **ClientAppId**  The identity of the app that initiated this operation.
@@ -5278,7 +5278,7 @@ This event is sent after a product has been installed to help keep Windows up-to
 The following fields are available:
 
 - **AggregatedPackageFullNames**  The names of all packages to be downloaded and installed.
-- **AttemptNumber**  The number of retry attempts before it was cancelled.
+- **AttemptNumber**  The number of retry attempts before it was canceled.
 - **BundleId**  The identity of the build associated with this product.
 - **CategoryId**  The identity of the package or packages being installed.
 - **ClientAppId**  The identity of the app that initiated this operation.
@@ -5321,7 +5321,7 @@ This event is sent after searching for update packages to install. It is used to
 The following fields are available:
 
 - **AggregatedPackageFullNames**  The names of all packages to be downloaded and installed.
-- **AttemptNumber**  The total number of retry attempts before it was cancelled.
+- **AttemptNumber**  The total number of retry attempts before it was canceled.
 - **BundleId**  The identity of the build associated with this product.
 - **CategoryId**  The identity of the package or packages being installed.
 - **ClientAppId**  The identity of the app that initiated this operation.
@@ -5350,7 +5350,7 @@ This event is sent after restoring user data (if any) that needs to be restored 
 The following fields are available:
 
 - **AggregatedPackageFullNames**  The name of all packages to be downloaded and installed.
-- **AttemptNumber**  The total number of retry attempts before it was cancelled.
+- **AttemptNumber**  The total number of retry attempts before it was canceled.
 - **BundleId**  The identity of the build associated with this product.
 - **CategoryId**  The identity of the package or packages being installed.
 - **ClientAppId**  The identity of the app that initiated this operation.
@@ -5421,7 +5421,7 @@ This event is sent when a product install or update is paused (either by a user 
 The following fields are available:
 
 - **AggregatedPackageFullNames**  The names of all packages to be downloaded and installed.
-- **AttemptNumber**  The total number of retry attempts before it was cancelled.
+- **AttemptNumber**  The total number of retry attempts before it was canceled.
 - **BundleId**  The identity of the build associated with this product.
 - **CategoryId**  The identity of the package or packages being installed.
 - **ClientAppId**  The identity of the app that initiated this operation.
@@ -5450,7 +5450,7 @@ This event is sent when a product install or update is resumed (either by a user
 The following fields are available:
 
 - **AggregatedPackageFullNames**  The names of all packages to be downloaded and installed.
-- **AttemptNumber**  The number of retry attempts before it was cancelled.
+- **AttemptNumber**  The number of retry attempts before it was canceled.
 - **BundleId**  The identity of the build associated with this product.
 - **CategoryId**  The identity of the package or packages being installed.
 - **ClientAppId**  The identity of the app that initiated this operation.
@@ -5505,9 +5505,9 @@ The following fields are available:
 
 ## Windows Update Delivery Optimization events
 
-### Microsoft.OSG.DU.DeliveryOptClient.Downloadcancelled
+### Microsoft.OSG.DU.DeliveryOptClient.Downloadcanceled
 
-This event describes when a download was cancelled with Delivery Optimization. It's used to understand and address problems regarding downloads. The data collected with this event is used to help keep Windows up to date.
+This event describes when a download was canceled with Delivery Optimization. It's used to understand and address problems regarding downloads. The data collected with this event is used to help keep Windows up to date.
 
 The following fields are available:
 
@@ -5871,7 +5871,7 @@ The following fields are available:
 - **detectionBlockreason**  The reason detection did not complete.
 - **detectionDeferreason**  A log of deferral reasons for every update state.
 - **errorCode**  The error code returned for the current process.
-- **eventScenario**  End-to-end update session ID, or indicates the purpose of sending this event - whether because the software distribution just started installing content, or whether it was cancelled, succeeded, or failed.
+- **eventScenario**  End-to-end update session ID, or indicates the purpose of sending this event - whether because the software distribution just started installing content, or whether it was canceled, succeeded, or failed.
 - **flightID**  The unique identifier for the flight (Windows Insider pre-release build) should be delivered to the device, if applicable.
 - **interactive**  Indicates whether the user initiated the session.
 - **revisionNumber**  The Update revision number.
