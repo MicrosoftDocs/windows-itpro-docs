@@ -1289,10 +1289,10 @@ This event sends type and capacity data about the battery on the device, as well
 The following fields are available:
 
 - **InternalBatteryCapablities**  Represents information about what the battery is capable of doing.
-- **InternalBatteryCapacityCurrent**  Represents the battery's current fully charged capacity in mWh (or relative). Compare this value to DesignedCapacity  to estimate the battery's wear.
+- **InternalBatteryCapacityCurrent**  Represents the battery's current fully charged capacity in mWh (or relative). Compare this value to DesignedCapacity to estimate the battery's wear.
 - **InternalBatteryCapacityDesign**  Represents the theoretical capacity of the battery when new, in mWh.
 - **InternalBatteryNumberOfCharges**  Provides the number of battery charges. This is used when creating new products and validating that existing products meets targeted functionality performance.
-- **IsAlwaysOnAlwaysConnectedCapable**  Represents whether the battery enables the device to be AlwaysOnAlwaysConnected . Boolean value.
+- **IsAlwaysOnAlwaysConnectedCapable**  Represents whether the battery enables the device to be AlwaysOnAlwaysConnected. Boolean value.
 
 
 ### Census.Enterprise
@@ -1304,10 +1304,10 @@ The following fields are available:
 - **AzureOSIDPresent**  Represents the field used to identify an Azure machine.
 - **AzureVMType**  Represents whether the instance is Azure VM PAAS, Azure VM IAAS or any other VMs.
 - **CDJType**  Represents the type of cloud domain joined for the machine.
-- **CommercialId**  Represents the GUID for the commercial entity which the device is a member of.  Will be used to reflect insights back to customers.
+- **CommercialId**  Represents the GUID for the commercial entity which the device is a member of. Will be used to reflect insights back to customers.
 - **ContainerType**  The type of container, such as process or virtual machine hosted.
 - **HashedDomain**  The hashed representation of the user domain used for login.
-- **IsCloudDomainJoined**  Is this device joined to an Azure Active Directory (AAD) tenant? true/false
+- **IsCloudDomainJoined**  Is this device joined to an Azure Active Directory (Azure AD) tenant? true/false
 - **IsDERequirementMet**  Represents if the device can do device encryption.
 - **IsDeviceProtected**  Represents if Device protected by BitLocker/Device Encryption
 - **IsDomainJoined**  Indicates whether a machine is joined to a domain.
@@ -1315,7 +1315,7 @@ The following fields are available:
 - **IsMDMEnrolled**  Whether the device has been MDM Enrolled or not.
 - **MPNId**  Returns the Partner ID/MPN ID from Regkey. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\DeployID
 - **SCCMClientId**  This ID correlate systems that send data to Compat Analytics (OMS) and other OMS based systems with systems in an Enterprise System Center Configuration Manager (SCCM) environment.
-- **ServerFeatures**  Represents the features installed on a Windows   Server. This can be used by developers and administrators who need to automate the process of determining the features installed on a set of server computers.
+- **ServerFeatures**  Represents the features installed on a Windows Server. This can be used by developers and administrators who need to automate the process of determining the features installed on a set of server computers.
 - **SystemCenterID**  The SCCM ID is an anonymized one-way hash of the Active Directory Organization identifier.
 
 
@@ -1437,7 +1437,7 @@ The following fields are available:
 - **OA3xOriginalProductKey**  Retrieves the License key stamped by the OEM to the machine.
 - **OSEdition**  Retrieves the version of the current OS.
 - **OSInstallDateTime**  Retrieves the date the OS was installed using ISO 8601 (Date part) == yyyy-mm-dd
-- **OSInstallType**  Retrieves a numeric description of what install was used on the device i.e. clean, upgrade, refresh, reset, etc
+- **OSInstallType**  Retrieves a numeric description of what install was used on the device i.e. clean, upgrade, refresh, reset, etc.
 - **OSOOBEDateTime**  Retrieves Out of Box Experience (OOBE) Date in Coordinated Universal Time (UTC).
 - **OSSKU**  Retrieves the Friendly Name of OS Edition.
 - **OSSubscriptionStatus**  Represents the existing status for enterprise subscription feature for PRO machines.
@@ -1491,7 +1491,7 @@ The following fields are available:
 - **HolographicSpeechInputDisabledRemote**  Indicates if a remote policy has disabled speech functionalities for the HMD devices.
 - **KWSEnabled**  Cortana setting that represents if a user has enabled the "Hey Cortana" keyword spotter (KWS).
 - **MDMAllowInputPersonalization**  Indicates if an MDM policy has enabled speech functionalities.
-- **RemotelyManaged**  Indicates if the device is being controlled by a remote admininistrator (MDM or Group Policy) in the context of speech functionalities.
+- **RemotelyManaged**  Indicates if the device is being controlled by a remote administrator (MDM or Group Policy) in the context of speech functionalities.
 - **SpeakerIdEnabled**  Cortana setting that represents if keyword detection has been trained to try to respond to a single user's voice.
 - **SpeechServicesEnabled**  Windows setting that represents whether a user is opted-in for speech services on the device.
 
@@ -1823,7 +1823,7 @@ The following fields are available:
 
 - **creativeId**  A serialized string containing the ID of the offer being rendered, the ID of the current rotation period, the ID of the surface/ring/market combination, the offer index in the current branch, the ID of the batch, the rotation period length, and the expiration timestamp.
 - **eventToken**  In there are multiple item offers, such as Start tiles, this indicates which tile the event corresponds to.
-- **eventType**  A code that indicates the type of creative event, such a impression, click, positive feedback, negative feedback, etc..
+- **eventType**  A code that indicates the type of creative event, such a impression, click, positive feedback, negative feedback, etc.
 - **placementId**  Name of surface, such as LockScreen or Start.
 
 
@@ -2139,7 +2139,7 @@ This event sends data about hangs for both native and managed applications, to h
 The following fields are available:
 
 - **AppName**  The name of the app that has hung.
-- **AppSessionGuid**  GUID made up of process id used as a correlation vector for process instances in the telemetry backend.
+- **AppSessionGuid**  GUID made up of process ID used as a correlation vector for process instances in the telemetry backend.
 - **AppVersion**  The version of the app that has hung.
 - **PackageFullName**  Store application identity.
 - **PackageRelativeAppId**  Store application identity.
@@ -2154,7 +2154,7 @@ The following fields are available:
 - **WaitingOnAppName**  If this is a cross process hang waiting for an application, this has the name of the application.
 - **WaitingOnAppVersion**  If this is a cross process hang, this has the version of the application for which it is waiting.
 - **WaitingOnPackageFullName**  If this is a cross process hang waiting for a package, this has the full name of the package for which it is waiting.
-- **WaitingOnPackageRelativeAppId**  If this is a cross process hang waiting for a package, this has the relative application id of the package.
+- **WaitingOnPackageRelativeAppId**  If this is a cross process hang waiting for a package, this has the relative applicationIDof the package.
 
 
 ## Inventory events
@@ -2845,8 +2845,8 @@ The following fields are available:
 - **BatteryCapacity**  Maximum battery capacity in mWh
 - **BatteryCharge**  Current battery charge as a percentage of total capacity
 - **BatteryDischarging**  Flag indicating whether the battery is discharging or charging
-- **BootId**  Monotonically increasing boot id, reset on upgrades.
-- **BootTimeUTC**  Boot time in UTC  file time.
+- **BootId**  Monotonically increasing boot ID, reset on upgrades.
+- **BootTimeUTC**  Boot time in UTC file time.
 - **EventSequence**  Monotonically increasing event number for OsStateChange events logged during this boot.
 - **LastStateTransition**  The previous state transition on the device.
 - **LastStateTransitionSub**  The previous state subtransition on the device.
@@ -3238,7 +3238,7 @@ The following fields are available:
 - **RemediationWindowsTotalSystemDiskSize**  The total storage capacity of the System Disk Drive, measured in Megabytes.
 - **Result**  The HRESULT for Detection or Perform Action phases of the plug-in.
 - **RunResult**  The HRESULT for Detection or Perform Action phases of the plug-in.
-- **ServiceHealthPlugin**  The nae of the Service Health plug-in.
+- **ServiceHealthPlugin**  The name of the Service Health plug-in.
 - **StartComponentCleanupTask**  TRUE if the Component Cleanup task started successfully.
 - **TotalSizeofOrphanedInstallerFilesInMegabytes**  The size of any orphaned Windows Installer files, measured in Megabytes.
 - **TotalSizeofStoreCacheAfterCleanupInMegabytes**  The size of the Microsoft Store cache after cleanup, measured in Megabytes.
@@ -3882,7 +3882,7 @@ This event sends basic metadata about the SetupPlatform update installation proc
 
 The following fields are available:
 
-- **ActivityId**  Provides a unique Id to correlate events that occur between a activity start event, and a stop event
+- **ActivityId**  Provides a uniqueIDto correlate events that occur between a activity start event, and a stop event
 - **ActivityName**  Provides a friendly name of the package type that belongs to the ActivityId (Setup, LanguagePack, GDR, Driver, etc.)
 - **FieldName**  Retrieves the event name/data point. Examples: InstallStartTime, InstallEndtime, OverallResult etc.
 - **GroupName**  Retrieves the groupname the event belongs to. Example: Install Information, DU Information, Disk Space Information etc.
@@ -3924,7 +3924,7 @@ Activity for deletion of a user account for devices set up for Shared PC mode as
 
 The following fields are available:
 
-- **accountType**  The type of account that was deleted. Example: AD, AAD, or Local
+- **accountType**  The type of account that was deleted. Example: AD, Azure AD, or Local
 - **userSid**  The security identifier of the account.
 - **wilActivity**  Windows Error Reporting data collected when there is a failure in deleting a user account with the Transient Account Manager. See [wilActivity](#wilactivity).
 
@@ -4114,7 +4114,7 @@ The following fields are available:
 - **EventInstanceID**  A globally unique identifier for event instance.
 - **EventScenario**  State of call
 - **EventType**  Possible values are "Child", "Bundle", or "Driver".
-- **FlightId**  The specific id of the flight the device is getting
+- **FlightId**  The specificIDof the flight the device is getting
 - **HandlerType**  Indicates the kind of content (app, driver, windows patch, etc.)
 - **RevisionNumber**  Unique revision number of Update
 - **ServerId**  Identifier for the service to which the software distribution client is connecting, such as Windows Update and Microsoft Store.
@@ -4166,7 +4166,7 @@ The following fields are available:
 - **FeatureUpdatePause**  Indicates whether feature OS updates are paused on the device.
 - **FlightBranch**  The branch that a device is on if participating in flighting (pre-release builds).
 - **FlightBuildNumber**  If this download was for a flight (pre-release build), this indicates the build number of that flight.
-- **FlightId**  The specific id of the flight (pre-release build) the device is getting.
+- **FlightId**  The specificIDof the flight (pre-release build) the device is getting.
 - **FlightRing**  The ring (speed of getting builds) that a device is on if participating in flighting (pre-release builds).
 - **HandlerType**  Indicates what kind of content is being downloaded (app, driver, windows patch, etc.).
 - **HardwareId**  If this download was for a driver targeted to a particular device model, this ID indicates the model of the device.
@@ -4188,7 +4188,7 @@ The following fields are available:
 - **RelatedCV**  The Correlation Vector that was used before the most recent change to a new Correlation Vector.
 - **RepeatFailFlag**  Indicates whether this specific piece of content had previously failed to download.
 - **RevisionNumber**  The revision number of the specified piece of content.
-- **ServiceGuid**  A unique identifier for the service that the software distribution client is installing content for (Windows Update, Microsoft Store, etc).
+- **ServiceGuid**  A unique identifier for the service that the software distribution client is installing content for (Windows Update, Microsoft Store, etc.).
 - **Setup360Phase**  Identifies the active phase of the upgrade download if the current download is for an Operating System upgrade.
 - **ShippingMobileOperator**  The mobile operator linked to the device when the device shipped.
 - **StatusCode**  Indicates the result of a Download event (success, cancellation, failure code HResult).
@@ -4218,7 +4218,7 @@ The following fields are available:
 - **CallerApplicationName**  The name provided by the caller who initiated API calls into the software distribution client
 - **ClientVersion**  The version number of the software distribution client
 - **EventScenario**  Indicates the purpose of sending this event - whether because the software distribution just started checking for content, or whether it was cancelled, succeeded, or failed
-- **EventType**  Possible values are "Child", "Bundle", "Relase" or "Driver"
+- **EventType**  Possible values are "Child", "Bundle", "Release" or "Driver"
 - **ExtendedStatusCode**  Secondary error code for certain scenarios where StatusCode wasn't specific enough
 - **FileId**  A hash that uniquely identifies a file
 - **FileName**  Name of the downloaded file
@@ -4247,10 +4247,10 @@ The following fields are available:
 - **IsNetworkMetered**  Indicates whether Windows considered the current network to be ?metered"
 - **MOAppDownloadLimit**  Mobile operator cap on size of application downloads, if any
 - **MOUpdateDownloadLimit**  Mobile operator cap on size of operating system update downloads, if any
-- **PowerState**  Indicates the power state of the device at the time of heartbeart (DC, AC, Battery Saver, or Connected Standby)
+- **PowerState**  Indicates the power state of the device at the time of heartbeat (DC, AC, Battery Saver, or Connected Standby)
 - **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one
 - **ResumeCount**  Number of times this active download has resumed from a suspended state
-- **ServiceID**  Identifier for the service to which the software distribution client is connecting (Windows Update, Microsoft Store, etc)
+- **ServiceID**  Identifier for the service to which the software distribution client is connecting (Windows Update, Microsoft Store, etc.)
 - **SuspendCount**  Number of times this active download has entered a suspended state
 - **SuspendReason**  Last reason for why this active download entered a suspended state
 
@@ -4903,7 +4903,7 @@ The following fields are available:
 - **Setup360Result**  The result of Setup360. This is an HRESULT error code that is used to diagnose errors.
 - **Setup360Scenario**  The Setup360 flow type. Example: Boot, Media, Update, MCT.
 - **SetupVersionBuildNumber**  The build number of Setup360 (build number of target OS).
-- **State**  The exit state of a Setup360 run. Example: succeeded, failed, blocked, canceled.
+- **State**  The exit state of a Setup360 run. Example: succeeded, failed, blocked, cancelled.
 - **TestId**  ID that uniquely identifies a group of events.
 - **WuId**  This is the Windows Update Client ID. Using Windows Update, this is the same as the clientId.
 
@@ -5035,7 +5035,7 @@ The following fields are available:
 
 ### Microsoft.Windows.WERVertical.OSCrash
 
-This event sends binary data from the collected dump file wheneveer a bug check occurs, to help keep Windows up to date. The is the OneCore version of this event.
+This event sends binary data from the collected dump file whenever a bug check occurs, to help keep Windows up to date. The is the OneCore version of this event.
 
 The following fields are available:
 
@@ -5048,7 +5048,7 @@ The following fields are available:
 - **DumpFileAttributes**  Codes that identify the type of data contained in the dump file
 - **DumpFileSize**  Size of the dump file
 - **IsValidDumpFile**  True if the dump file is valid for the debugger, false otherwise
-- **ReportId**  WER Report Id associated with this bug check (used for finding the corresponding report archive in Watson).
+- **ReportId**  WER Report ID associated with this bug check (used for finding the corresponding report archive in Watson).
 
 
 ### WerTraceloggingProvider.AppCrashEvent
@@ -5111,12 +5111,12 @@ The following fields are available:
 
 ### Microsoft.Windows.StoreAgent.Telemetry.AbortedInstallation
 
-This event is sent when an installation or update is canceled by a user or the system and is used to help keep Windows Apps up to date and secure.
+This event is sent when an installation or update is cancelled by a user or the system and is used to help keep Windows Apps up to date and secure.
 
 The following fields are available:
 
 - **AggregatedPackageFullNames**  The names of all packages to be downloaded and installed.
-- **AttemptNumber**  Number of retry attempts before it was canceled.
+- **AttemptNumber**  Number of retry attempts before it was cancelled.
 - **BundleId**  The Item Bundle ID.
 - **CategoryId**  The Item Category ID.
 - **ClientAppId**  The identity of the app that initiated this operation.
@@ -5131,9 +5131,9 @@ The following fields are available:
 - **ParentBundleId**  The product ID of the parent (if this product is part of a bundle).
 - **PFN**  The product family name of the product being installed.
 - **ProductId**  The identity of the package or packages being installed.
-- **SystemAttemptNumber**  The total number of automatic attempts at installation before it was canceled.
+- **SystemAttemptNumber**  The total number of automatic attempts at installation before it was cancelled.
 - **UpdateId**  Update ID (if this is an update)
-- **UserAttemptNumber**  The total number of user attempts at installation before it was canceled.
+- **UserAttemptNumber**  The total number of user attempts at installation before it was cancelled.
 - **WUContentId**  The Windows Update content ID.
 
 
@@ -5151,7 +5151,7 @@ This event is sent when the Store Agent cache is refreshed with any available pa
 
 ### Microsoft.Windows.StoreAgent.Telemetry.CancelInstallation
 
-This event is sent when an app update or installation is canceled while in interactive mode. This can be canceled by the user or the system. It's used to help keep Windows up-to-date and secure.
+This event is sent when an app update or installation is cancelled while in interactive mode. This can be cancelled by the user or the system. It's used to help keep Windows up-to-date and secure.
 
 The following fields are available:
 
@@ -5170,11 +5170,11 @@ The following fields are available:
 - **ParentBundleId**  The product ID of the parent (if this product is part of a bundle).
 - **PFN**  The name of all packages to be downloaded and installed.
 - **PreviousHResult**  The previous HResult code.
-- **PreviousInstallState**  Previous installation state before it was canceled.
+- **PreviousInstallState**  Previous installation state before it was cancelled.
 - **ProductId**  The name of the package or packages requested for installation.
 - **RelatedCV**  Correlation Vector of a previous performed action on this product.
-- **SystemAttemptNumber**  Total number of automatic attempts to install before it was canceled.
-- **UserAttemptNumber**  Total number of user attempts to install before it was canceled.
+- **SystemAttemptNumber**  Total number of automatic attempts to install before it was cancelled.
+- **UserAttemptNumber**  Total number of user attempts to install before it was cancelled.
 - **WUContentId**  The Windows Update content ID.
 
 
@@ -5229,7 +5229,7 @@ This event is sent after an app is downloaded to help keep Windows up-to-date an
 The following fields are available:
 
 - **AggregatedPackageFullNames**  The name of all packages to be downloaded and installed.
-- **AttemptNumber**  Number of retry attempts before it was canceled.
+- **AttemptNumber**  Number of retry attempts before it was cancelled.
 - **BundleId**  The identity of the Windows Insider build associated with this product.
 - **CategoryId**  The identity of the package or packages being installed.
 - **ClientAppId**  The identity of the app that initiated this operation.
@@ -5278,7 +5278,7 @@ This event is sent after a product has been installed to help keep Windows up-to
 The following fields are available:
 
 - **AggregatedPackageFullNames**  The names of all packages to be downloaded and installed.
-- **AttemptNumber**  The number of retry attempts before it was canceled.
+- **AttemptNumber**  The number of retry attempts before it was cancelled.
 - **BundleId**  The identity of the build associated with this product.
 - **CategoryId**  The identity of the package or packages being installed.
 - **ClientAppId**  The identity of the app that initiated this operation.
@@ -5321,7 +5321,7 @@ This event is sent after searching for update packages to install. It is used to
 The following fields are available:
 
 - **AggregatedPackageFullNames**  The names of all packages to be downloaded and installed.
-- **AttemptNumber**  The total number of retry attempts before it was canceled.
+- **AttemptNumber**  The total number of retry attempts before it was cancelled.
 - **BundleId**  The identity of the build associated with this product.
 - **CategoryId**  The identity of the package or packages being installed.
 - **ClientAppId**  The identity of the app that initiated this operation.
@@ -5350,7 +5350,7 @@ This event is sent after restoring user data (if any) that needs to be restored 
 The following fields are available:
 
 - **AggregatedPackageFullNames**  The name of all packages to be downloaded and installed.
-- **AttemptNumber**  The total number of retry attempts before it was canceled.
+- **AttemptNumber**  The total number of retry attempts before it was cancelled.
 - **BundleId**  The identity of the build associated with this product.
 - **CategoryId**  The identity of the package or packages being installed.
 - **ClientAppId**  The identity of the app that initiated this operation.
@@ -5421,7 +5421,7 @@ This event is sent when a product install or update is paused (either by a user 
 The following fields are available:
 
 - **AggregatedPackageFullNames**  The names of all packages to be downloaded and installed.
-- **AttemptNumber**  The total number of retry attempts before it was canceled.
+- **AttemptNumber**  The total number of retry attempts before it was cancelled.
 - **BundleId**  The identity of the build associated with this product.
 - **CategoryId**  The identity of the package or packages being installed.
 - **ClientAppId**  The identity of the app that initiated this operation.
@@ -5450,7 +5450,7 @@ This event is sent when a product install or update is resumed (either by a user
 The following fields are available:
 
 - **AggregatedPackageFullNames**  The names of all packages to be downloaded and installed.
-- **AttemptNumber**  The number of retry attempts before it was canceled.
+- **AttemptNumber**  The number of retry attempts before it was cancelled.
 - **BundleId**  The identity of the build associated with this product.
 - **CategoryId**  The identity of the package or packages being installed.
 - **ClientAppId**  The identity of the app that initiated this operation.
@@ -5491,7 +5491,7 @@ The following fields are available:
 
 - **CatalogId**  The Store Catalog ID for the product being installed.
 - **ProductId**  The Store Product ID for the product being installed.
-- **SkuId**  Specfic edition of the app being updated.
+- **SkuId**  Specific edition of the app being updated.
 
 
 ### Microsoft.Windows.StoreAgent.Telemetry.UpdateAppOperationRequest
@@ -5505,9 +5505,9 @@ The following fields are available:
 
 ## Windows Update Delivery Optimization events
 
-### Microsoft.OSG.DU.DeliveryOptClient.DownloadCanceled
+### Microsoft.OSG.DU.DeliveryOptClient.Downloadcancelled
 
-This event describes when a download was canceled with Delivery Optimization. It's used to understand and address problems regarding downloads. The data collected with this event is used to help keep Windows up to date.
+This event describes when a download was cancelled with Delivery Optimization. It's used to understand and address problems regarding downloads. The data collected with this event is used to help keep Windows up to date.
 
 The following fields are available:
 
@@ -5938,7 +5938,7 @@ The following fields are available:
 
 - **batteryLevel**  Current battery capacity in mWh or percentage left.
 - **deferReason**  Reason for install not completing.
-- **errorCode**  The error code reppresented by a hexadecimal value.
+- **errorCode**  The error code represented by a hexadecimal value.
 - **eventScenario**  End-to-end update session ID.
 - **flightID**  The ID of the Windows Insider build the device is getting.
 - **flightUpdate**  Indicates whether the update is a Windows Insider build.
