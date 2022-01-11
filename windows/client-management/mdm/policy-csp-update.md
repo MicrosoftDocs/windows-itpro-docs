@@ -1217,7 +1217,7 @@ When used with [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredead
 
 When disabled, if the device has installed updates and is outside of active hours, it might attempt an automatic restart before the deadline.
 
-<same ADMX info and rest of description>
+<!---same ADMX info and rest of description>
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
