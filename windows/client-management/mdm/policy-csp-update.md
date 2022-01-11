@@ -540,9 +540,7 @@ The following list shows the supported values:
 - 1 – Allowed. Accepts updates received through Microsoft Update.
 
 > [!NOTE]
-> Setting this policy back to **0** or **Not configured** does not revert the configuration to receive updates from Microsoft Update automatically. In order to revert the configuration, you can run the PowerShell commands listed below to remove the Microsoft Update service.
-
-To remove the Microsoft Update service, run the following PowerShell commands:
+> Setting this policy back to **0** or **Not configured** does not revert the configuration to receive updates from Microsoft Update automatically. In order to revert the configuration, you can run the PowerShell commands that are listed below to remove the Microsoft Update service:.
 
 ```
 $MUSM = New-Object -ComObject "Microsoft.Update.ServiceManager"
