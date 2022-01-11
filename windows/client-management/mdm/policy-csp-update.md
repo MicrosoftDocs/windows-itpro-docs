@@ -687,14 +687,14 @@ Value type is integer. Default is 7 days.
 
 Supported values range: 2-30.
 
-Note that the PC must restart for certain updates to take effect.
+The PC must restart for certain updates to take effect.
 
 If you enable this policy, a restart will automatically occur the specified number of days after the restart was scheduled.
 
 If you disable or do not configure this policy, the PC will restart according to the default schedule.
 
 If any of the following two policies are enabled, this policy has no effect:
-1. No auto-restart with logged on users for scheduled automatic updates installations.
+1. No autorestart with logged on users for scheduled automatic updates installations.
 2. Always automatically restart at scheduled time.
 
 <!--/Description-->
@@ -752,7 +752,7 @@ If you enable this policy, a restart will automatically occur the specified numb
 If you disable or do not configure this policy, the PC will restart according to the default schedule.
 
 If any of the following two policies are enabled, this policy has no effect:
-1. No auto-restart with logged on users for scheduled automatic updates installations.
+1. No autorestart with logged on users for scheduled automatic updates installations.
 2. Always automatically restart at scheduled time.
 
 <!--/Description-->
@@ -795,7 +795,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Allows the IT Admin to specify the period for auto-restart reminder notifications.
+Allows the IT Admin to specify the period for autorestart reminder notifications.
 
 The default value is 15 (minutes).
 
@@ -843,7 +843,7 @@ Supported values are 15, 30, 60, 120, and 240 (minutes).
 
 <!--/Scope-->
 <!--Description-->
-Allows the IT Admin to specify the method by which the auto-restart required notification is dismissed.
+Allows the IT Admin to specify the method by which the autorestart required notification is dismissed.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -897,7 +897,7 @@ This policy setting allows you to configure if Automatic Maintenance should make
 > [!Note]
 > If the OS power wake policy is explicitly disabled, then this setting has no effect.
 
-If you enable this policy setting, Automatic Maintenance attempts to set OS wake policy and make a wake request for the daily scheduled time, if required.
+If you enable this policy setting, Automatic Maintenance attempts to set OS wake policy and make a wake request for the daily scheduled time, if necessary.
 
 If you disable or do not configure this policy setting, the wake setting as specified in Security and Maintenance/Automatic Maintenance Control Panel applies.
 <!--/Description-->
@@ -1014,7 +1014,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Supports a numeric value from 0-30 (2-30 in Windows 10, versions 1803 and 1709), which indicates the number of days a device will wait until performing an aggressive installation of a required feature update. Note that when set to 0, the update will download and install immediately upon offering, but might not finish within the day due to device availability and network connectivity.
+Supports a numeric value from 0-30 (2-30 in Windows 10, versions 1803 and 1709), which indicates the number of days a device will wait until performing an aggressive installation of a required feature update. When set to 0, the update will download and install immediately upon offering, but might not finish within the day due to device availability and network connectivity.
 
 Default value is 7.
 <!--/SupportedValues-->
@@ -1066,7 +1066,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Supports a numeric value from 0-30 (2-30 in Windows 10, versions 1803 and 1709), which indicates the number of days a device will wait until performing an aggressive installation of a required feature update. Note that when set to 0, the update will download and install immediately upon offering, but might not finish within the day due to device availability and network connectivity.
+Supports a numeric value from 0-30 (2-30 in Windows 10, versions 1803 and 1709), which indicates the number of days a device will wait until performing an aggressive installation of a required feature update. When set to 0, the update will download and install immediately upon offering, but might not finish within the day due to device availability and network connectivity.
 
 Default value is 7.
 <!--/SupportedValues-->
@@ -1398,7 +1398,7 @@ ADMX Info:
 > Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use DeferUpdatePeriod for Windows 10, version 1511 devices.
 
 
-Allows IT Admins to specify update delays for up to 4 weeks.
+Allows IT Admins to specify update delays for up to four weeks.
 
 Supported values are 0-4, which refers to the number of weeks to defer updates.
 
@@ -1407,14 +1407,14 @@ If the "Specify intranet Microsoft update service location" policy is enabled, t
 If the Allow Telemetry policy is enabled and the Options value is set to 0, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
 
 OS upgrade:
-- Maximum deferral: 8 months
-- Deferral increment: 1 month
+- Maximum deferral: Eight months
+- Deferral increment: One month
 - Update type/notes:
   - Upgrade - 3689BDC8-B205-4AF4-8D4A-A63924C5E9D5
 
 Update:
-- Maximum deferral: 1 month
-- Deferral increment: 1 week
+- Maximum deferral: One month
+- Deferral increment: One week
 - Update type/notes: If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic:
   
   - Security Update - 0FA1201D-4330-4FA8-8AE9-B877473B6441
@@ -1476,7 +1476,7 @@ ADMX Info:
 > Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use DeferUpgradePeriod for Windows 10, version 1511 devices.
 
 
-Allows IT Admins to specify additional upgrade delays for up to 8 months.
+Allows IT Admins to specify other upgrade delays for up to eight months.
 
 Supported values are 0-8, which refers to the number of months to defer upgrades.
 
@@ -1679,7 +1679,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-To ensure the highest levels of security, we recommended leveraging WSUS TLS certificate pinning on all devices. 
+To ensure the highest levels of security, we recommended using WSUS TLS certificate pinning on all devices. 
 
 By default, certificate pinning for Windows Update client is not enforced. 
 
@@ -1729,7 +1729,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-For Quality Updates, this policy specifies the deadline in days before automatically scheduling and executing a pending restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period.
+For Quality Updates, this policy specifies the deadline in days before automatically scheduling and executing a pending restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Autorestart to Engaged restart (pending user schedule) to be executed automatically , within the specified period.
 
 The system will reboot on or after the specified deadline. The reboot is prioritized over any configured Active Hours and any existing system and user busy checks.
 
@@ -1740,14 +1740,14 @@ Value type is integer. Default is 14.
 
 Supported value range: 2 - 30.
 
-If no deadline is specified or deadline is set to 0, the restart will not be automatically executed and will remain Engaged restart (e.g. pending user scheduling).
+If no deadline is specified or deadline is set to 0, the restart will not be automatically executed and will remain Engaged restart (for example, pending user scheduling).
 
 If you disable or do not configure this policy, the default behaviors will be used.
 
 If any of the following policies are configured, this policy has no effect:
-1. No auto-restart with logged on users for scheduled automatic updates installations
+1. No autorestart with logged on users for scheduled automatic updates installations
 2. Always automatically restart at scheduled time
-3. Specify deadline before auto-restart for update installation
+3. Specify deadline before autorestart for update installation
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1789,20 +1789,20 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-For Feature Updates, this policy specifies the deadline in days before automatically scheduling and executing a pending restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period.
+For Feature Updates, this policy specifies the deadline in days before automatically scheduling and executing a pending restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to be executed automatically , within the specified period.
 
 Value type is integer. Default is 14.
 
 Supported value range: 2 - 30.
 
-If no deadline is specified or deadline is set to 0, the restart will not be automatically executed and will remain Engaged restart (e.g. pending user scheduling).
+If no deadline is specified or deadline is set to 0, the restart will not be automatically executed and will remain Engaged restart (for example, pending user scheduling).
 
 If you disable or do not configure this policy, the default behaviors will be used.
 
 If any of the following policies are configured, this policy has no effect:
-1. No auto-restart with logged on users for scheduled automatic updates installations
+1. No autorestart with logged on users for scheduled automatic updates installations
 2. Always automatically restart at scheduled time
-3. Specify deadline before auto-restart for update installation
+3. Specify deadline before autorestart for update installation
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1846,16 +1846,16 @@ ADMX Info:
 <!--Description-->
 For Quality Updates, this policy specifies the number of days a user can snooze Engaged restart reminder notifications. The snooze period can be set between 1 and 3 days.
 
-Value type is integer. Default is 3 days.
+Value type is integer. Default is three days.
 
-Supported value range: 1 - 3.
+Supported value range: 1-3.
 
 If you disable or do not configure this policy, the default behaviors will be used.
 
 If any of the following policies are configured, this policy has no effect:
-1. No auto-restart with logged on users for scheduled automatic updates installations
+1. No autorestart with logged on users for scheduled automatic updates installations
 2. Always automatically restart at scheduled time
-3. Specify deadline before auto-restart for update installation
+3. Specify deadline before autorestart for update installation
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1897,18 +1897,18 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-For Feature Updates, this policy specifies the number of days a user can snooze Engaged restart reminder notifications. The snooze period can be set between 1 and 3 days.
+For Feature Updates, this policy specifies the number of days a user can snooze Engaged restart reminder notifications. The snooze period can be set between 1-3 days.
 
-Value type is integer. Default is 3 days.
+Value type is integer. Default is three days.
 
-Supported value range: 1 - 3.
+Supported value range: 1-3.
 
 If you disable or do not configure this policy, the default behaviors will be used.
 
 If any of the following policies are configured, this policy has no effect:
-1. No auto-restart with logged on users for scheduled automatic updates installations
+1. No autorestart with logged on users for scheduled automatic updates installations
 2. Always automatically restart at scheduled time
-3. Specify deadline before auto-restart for update installation
+3. Specify deadline before autorestart for update installation
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1959,9 +1959,9 @@ Supported value range: 2 - 30.
 If you disable or do not configure this policy, the default behaviors will be used.
 
 If any of the following policies are configured, this policy has no effect:
-1. No auto-restart with logged on users for scheduled automatic updates installations
+1. No autorestart with logged on users for scheduled automatic updates installations
 2. Always automatically restart at scheduled time
-3. Specify deadline before auto-restart for update installation
+3. Specify deadline before autorestart for update installation
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2005,9 +2005,9 @@ ADMX Info:
 <!--Description-->
 For Feature Updates, this policy specifies the timing before transitioning from Auto restarts scheduled_outside of active hours to Engaged restart, which requires the user to schedule. The period can be set between 2 and 30 days from the time the restart becomes pending.
 
-Value type is integer. Default value is 7 days.
+Value type is integer. Default value is seven days.
 
-Supported value range: 2 - 30.
+Supported value range: 2-30.
 
 If you disable or do not configure this policy, the default behaviors will be used.
 
