@@ -25,6 +25,9 @@ manager: dansimp
     <a href="#search-allowcloudsearch">Search/AllowCloudSearch</a>
   </dd>
   <dd>
+    <a href="#search-allowcortanainaad">Search/AllowCortanaInAAD</a>
+  </dd>
+  <dd>
     <a href="#search-allowfindmyfiles">Search/AllowFindMyFiles</a>
   </dd>
   <dd>
@@ -115,6 +118,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
+<a href="" id="search-allowcortanainaad"></a>**Search/AllowCortanaInAAD**  
 
 <!--SupportedSKUs-->
 
@@ -134,6 +138,30 @@ The following list shows the supported values:
 
 > [!div class = "checklist"]
 > * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy allows the cortana opt-in page during windows setup out of the box experience.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow Cloud Search*
+-   GP name: *AllowCortanaInAAD*
+-   GP element: *AllowCloudSearch_Dropdown*
+-   GP path: *Windows Components/Search*
+-   GP ADMX file name: *Search.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+This is a simple boolean value, default false, that can be set by MDM policy to allow the Cortana Page in OOBE when logged in with an AAD account.
+
+<!--/SupportedValues-->
+
+<!--/Policy-->
 
 <hr/>
 
