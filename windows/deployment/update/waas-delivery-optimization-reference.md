@@ -118,10 +118,10 @@ Download mode dictates which download sources clients are allowed to use when do
 |Bypass (100) |	Bypass Delivery Optimization and use BITS, instead. You should only select this mode if you use WSUS and prefer to use BranchCache. You do not need to set this option if you are using Configuration Manager. If you want to disable peer-to-peer functionality, it's best to set **DownloadMode** to **0** or **99**. |
 
 > [!NOTE]
-> Starting with Windows 10, version 2006 (and in Windows 11), the Bypass option of Download Mode is no longer used.
+> Starting in Windows 11, the Bypass option of Download Mode is no longer used.
 
->[!NOTE]
->When you use AAD tenant, AD Site, or AD Domain as source of group IDs, that the association of devices participating in the group should not be relied on for an authentication of identity of those devices.
+> [!NOTE]
+> When you use AAD tenant, AD Site, or AD Domain as the source of group IDs, the association of devices participating in the group should not be relied on for an authentication of identity of those devices.
 
 ### Group ID
 
@@ -178,6 +178,9 @@ This setting specifies the minimum content file size in MB enabled to use Peer C
 
 This setting specifies the maximum download bandwidth that can be used across all concurrent Delivery Optimization downloads in kilobytes per second (KB/s). A default value of "0" means that Delivery Optimization will dynamically adjust and optimize the maximum bandwidth used.
 
+> [!NOTE]
+> This is the best option for low bandwidth environments.
+
 ### Maximum Foreground Download Bandwidth
 
 Starting in Windows 10, version 1803, specifies the maximum foreground download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth. The default value of "0" means that Delivery Optimization dynamically adjusts to use the available bandwidth for foreground downloads. However, downloads from LAN peers are not throttled even when this policy is set.
@@ -189,6 +192,9 @@ Starting in Windows 10, version 1803, specifies the maximum background download 
 ### Percentage of Maximum Download Bandwidth
 
 This setting specifies the maximum download bandwidth that Delivery Optimization can use across all concurrent download activities as a percentage of available download bandwidth. The default value 0 means that Delivery Optimization dynamically adjusts to use the available bandwidth for downloads.
+
+> [!NOTE]
+> It is recommended to use the absolute value download option 'Maximum Download Bandwidth', rather than percentage-based options, for low bandwidth environments.
 
 ### Max Upload Bandwidth
 
@@ -204,6 +210,8 @@ Starting in Windows 10, version 1803, specifies the maximum foreground download 
 Starting in Windows 10, version 1803, set this policy to restrict peer selection via selected option. Currently the available options include: 0 = NAT, 1 = Subnet mask, and 2 = Local Peer Discovery. The subnet mask option applies to both Download Modes LAN (1) and Group (2).
 
 If Group mode is set, Delivery Optimization will connect to locally discovered peers that are also part of the same Group (have the same Group ID).
+
+The Local Peer Discovery (DNS-SD) option can only be set via MDM delivered policies on Windows 11 builds. This feature can be enabled in supported Windows 10 builds by setting the `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization\DORestrictPeerSelectionBy` value to **2**.
 
 ### Delay background download from http (in secs)
 Starting in Windows 10, version 1803, this allows you to delay the use of an HTTP source in a background download that is allowed to use peer-to-peer.
