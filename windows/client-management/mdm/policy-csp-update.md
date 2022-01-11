@@ -683,7 +683,7 @@ For Quality Updates, this policy specifies the deadline in days before automatic
 
 The system will reboot on or after the specified deadline. The reboot is prioritized over any configured Active Hours and any existing system and user busy checks.
 
-Value type is integer. Default is 7 days. 
+Value type is integer. Default is seven days. 
 
 Supported values range: 2-30.
 
