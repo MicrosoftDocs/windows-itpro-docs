@@ -65,8 +65,8 @@ In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimiz
 | [Delay foreground download from http (in secs)](#delay-foreground-download-from-http-in-secs) | DODelayForegroundDownloadFromHttp | 1803 |
 | [Delay foreground download cache server fallback (in secs)](#delay-foreground-download-cache-server-fallback-in-secs) | DelayCacheServerFallbackForeground | 1903 |
 | [Delay background download cache server fallback (in secs)](#delay-background-download-cache-server-fallback-in-secs) | DelayCacheServerFallbackBackground | 1903 |
-| [Cache Server Hostname](#cache-server-hostname) | DOCacheHost | 2004  |
-| [Cache Server Hostname Source](#cache-server-hostname-source) | DOCacheHostSource | 2004  |
+| [Cache Server Hostname](#cache-server-hostname) | DOCacheHost | 1809  |
+| [Cache Server Hostname Source](#cache-server-hostname-source) | DOCacheHostSource | 1809  |
 | [Maximum Foreground Download Bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs)         | DOMaxForegroundDownloadBandwidth | 2004 |
 | [Maximum Background Download Bandwidth (in KB/s)](#maximum-background-download-bandwidth-in-kbs) | DOMaxBackgroundDownloadBandwidth | 2004 |
 
