@@ -104,7 +104,7 @@ The XML below is for Windows 10, version 1809.
             <AccessType>
               <Get />
             </AccessType>
-            <Description>Returns a value that maps to the Windows 10 edition running on desktop or mobile devices. Take the value, convert it into its hexadecimal equivalent and search the GetProductInfo function page on MSDN for edition information.</Description>
+            <Description>Returns a value that maps to the Windows 10 edition running on devices. Take the value, convert it into its hexadecimal equivalent and search the GetProductInfo function page on MSDN for edition information.</Description>
             <DFFormat>
               <int />
             </DFFormat>
@@ -128,7 +128,7 @@ The XML below is for Windows 10, version 1809.
             <AccessType>
               <Get />
             </AccessType>
-            <Description>Returns the status of an edition upgrade on Windows 10 desktop and mobile devices.	 Status: 0 = Failed, 1 = Pending, 2 = In progress, 3 = Completed, 4 = Unknown</Description>
+            <Description>Returns the status of an edition upgrade on Windows 10 client devices.	 Status: 0 = Failed, 1 = Pending, 2 = In progress, 3 = Completed, 4 = Unknown</Description>
             <DFFormat>
               <int />
             </DFFormat>

@@ -1,6 +1,6 @@
 ---
 title: New policies for Windows 10 (Windows 10)
-description: Learn how Windows 10 includes new policies for management, like Group Policy settings for the Windows system and components.
+description: Learn how Windows 10 includes new policies for management, like Group Policy settings for the Windows system and components.
 ms.assetid: 1F24ABD8-A57A-45EA-BA54-2DA2238C573D
 ms.reviewer: 
 manager: dansimp
@@ -20,8 +20,8 @@ ms.topic: reference
 
 **Applies to**
 
-- Windows 10
-- Windows 11
+- Windows 10
+- Windows 11
 
 As of September 2020 This page will no longer be updated. To find the Group Polices that ship in each version of Windows,  refer to the Group Policy Settings Reference Spreadsheet. You can always locate the most recent version of the Spreadsheet by searching the Internet for "Windows Version + Group Policy Settings Reference".
 
@@ -57,7 +57,7 @@ The following Group Policy settings were added in Windows 10, version 1903:
 - Windows Components\Remote Desktop Services\Remote Desktop Session Host\Remote Session Environment\Use WDDM graphics display driver for Remote Desktop Connections
 - Windows Components\Windows Logon Options\Configure the mode of automatically signing in and locking last interactive user after a restart or cold boot
 
-## New Group Policy settings in Windows 10, version 1809
+## New Group Policy settings in Windows 10, version 1809
 
 The following Group Policy settings were added in Windows 10, version 1809:
 
@@ -242,7 +242,7 @@ The following Group Policy settings were added in Windows 10, version 1809:
 - Network\Windows Connection Manager\Enable Windows to soft-disconnect a computer from a network
 
 
-## New Group Policy settings in Windows 10, version 1803
+## New Group Policy settings in Windows 10, version 1803
 
 The following Group Policy settings were added in Windows 10, version 1803:
 
@@ -282,7 +282,7 @@ The following Group Policy settings were added in Windows 10, version 1803:
 - Windows Components\Windows Defender Security Center\Virus and threat protection\Hide the Ransomware data recovery area
 
 
-## New Group Policy settings in Windows 10, version 1709
+## New Group Policy settings in Windows 10, version 1709
 
 The following Group Policy settings were added in Windows 10, version 1709:
 
@@ -351,7 +351,7 @@ The following Group Policy settings were added in Windows 10, version 1709:
 - Windows Components\Windows Update\Do not allow update deferral policies to cause scans against Windows Update
 
 
-## New Group Policy settings in Windows 10, version 1703
+## New Group Policy settings in Windows 10, version 1703
 
 The following Group Policy settings were added in Windows 10, version 1703:
 
@@ -481,10 +481,9 @@ For a spreadsheet of Group Policy settings included in Windows 10 and Windows Se
 
 ## New MDM policies
 
+Mobile device management (MDM) for Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education include previous Windows Phone settings, and new or enhanced settings for Windows 10, such as:
 
-Mobile device management (MDM) for Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education includes settings from Windows Phone 8.1, plus new or enhanced settings for Windows 10, such as:
-
--   Defender (Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education only)
+-   Defender (Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education only)
 
 -   Enhanced Bluetooth policies
 
@@ -508,7 +507,7 @@ Mobile device management (MDM) for Windows 10 Pro, Windows 10 Enterprise, and 
 
 Windows 10, version 1703, adds a number of [ADMX-backed policies to MDM](./mdm/policy-configuration-service-provider.md).
 
-If you use Microsoft Intune for MDM, you can [configure custom policies](https://go.microsoft.com/fwlink/p/?LinkId=616316) to deploy Open Mobile Alliance Uniform Resource Identifier (OMA-URI) settings that can be used to control features on Windows 10. For a list of OMA-URI settings, see [Custom URI settings for Windows 10 devices](https://go.microsoft.com/fwlink/p/?LinkId=616317).
+If you use Microsoft Intune for MDM, you can [configure custom policies](https://go.microsoft.com/fwlink/p/?LinkId=616316) to deploy Open Mobile Alliance Uniform Resource Identifier (OMA-URI) settings that can be used to control features on Windows 10. For a list of OMA-URI settings, see [Custom URI settings for Windows 10 devices](https://go.microsoft.com/fwlink/p/?LinkId=616317).
 
 No new [Exchange ActiveSync policies](/exchange/mobile-device-mailbox-policies-exchange-2013-help). For more information, see the [ActiveSync configuration service provider](./mdm/activesync-csp.md) technical reference.
 
@@ -519,7 +518,3 @@ No new [Exchange ActiveSync policies](/exchange/mobile-device-mailbox-policies-e
 [Manage corporate devices](manage-corporate-devices.md)
 
 [Changes to Group Policy settings for Start in Windows 10](/windows/configuration/changes-to-start-policies-in-windows-10)
-
-
-
- 

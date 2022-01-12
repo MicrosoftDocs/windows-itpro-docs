@@ -29,7 +29,7 @@ Describes the best practices, location, values, and security considerations for 
 
 This policy setting allows you to set the encryption types that the Kerberos protocol is allowed to use. If it isn't selected, the encryption type won't be allowed. This setting might affect compatibility with client computers or services and applications. Multiple selections are permitted.
 
-For more information, see [article 977321](https://support.microsoft.com/kb/977321) in the Microsoft Knowledge Base.
+For more information, see [article 977321](/troubleshoot/windows-server/windows-security/kdc-event-16-27-des-encryption-disabled) in the Microsoft Knowledge Base.
 
 The following table lists and explains the allowed encryption types.
 
