@@ -3,9 +3,15 @@ author: dansimp
 ms.author: dansimp
 ms.date:  10/02/2018
 ms.reviewer: 
-audience: itpromanager: dansimp
+audience: itpro
+manager: dansimp
 ms.prod: edge
 ms.topic: include
 ---
 
-Configure how Microsoft Edge behaves when it’s running in kiosk mode with assigned access, either as a single-app or as one of many apps running on the kiosk device. You can control whether Microsoft Edge runs InPrivate full screen, InPrivate multi-tab with a tailored experience for kiosks, or normal browsing in Microsoft Edge.
+For the Microsoft Edge browser, configure a behavior that is to be exhibited in kiosk mode with assigned access. This behavior configuration is for Microsoft Edge as a single-app or as one of many apps running on the kiosk device.
+
+You can facilitate the following functionalities in the Microsoft Edge browser:
+- Execution of InPrivate full screen
+- Execution of InPrivate multi-tab with a tailored experience for kiosks
+- Provision for normal browsing

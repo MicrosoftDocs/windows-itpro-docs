@@ -3,9 +3,10 @@ author: dansimp
 ms.author: dansimp
 ms.date:  10/02/2018
 ms.reviewer: 
-audience: itpromanager: dansimp
+audience: itpro
+manager: dansimp
 ms.prod: edge
 ms.topic: include
 ---
 
-Microsoft Edge allows users to uninstall extensions by default. Enabling this policy prevents users from uninstalling extensions but lets them configure options for extensions defined in this policy, such as allowing InPrivate browsing. Any additional permissions requested by future updates of the extension gets granted automatically. If you enabled this policy and now you want to disable it, the list of extension package family names (PFNs) defined in this policy get ignored after disabling this policy.
+The Microsoft Edge browser allows users to uninstall extensions, by default. When the users work with extensions that come under a policy that is enabled, they can configure options for extensions defined in this policy, such as allowing InPrivate browsing. Any extra permissions requested by future updates of the extension get granted automatically. If - at this stage - you disable the policy, the list of extension package family names (PFNs) defined in this policy get ignored.
