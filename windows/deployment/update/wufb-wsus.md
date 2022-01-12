@@ -48,7 +48,7 @@ To help you better understand the scan source policy, see the default scan behav
 - If no policies are configured: All of your updates will come from Windows Update.
 - If you configure only the WSUS server policy:
 
-  - On Windows 10: All of your updates will come from WSUS;
+  - On Windows 10: All of your updates will come from WSUS.
   - On Windows 11: All of your updates will still come from Windows Update unless you configure the specify scan source policy.
 
 - If you configure a WSUS server and deferral policies: All of your updates will come from Windows Update unless you specify the scan source policy.
