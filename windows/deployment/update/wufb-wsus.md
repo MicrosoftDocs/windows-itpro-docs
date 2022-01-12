@@ -1,6 +1,6 @@
 ---
 title: Use Windows Update for Business (WUfB) and Windows Server Update Services (WSUS) together
-description:  Learn how to use Windows Update for Business and WSUS together.
+description:  Learn how to use Windows Update for Business and WSUS together using the new scan source policy.
 ms.prod: w10
 ms.mktglfcycl: manage
 author: arcarley
@@ -67,7 +67,7 @@ The policy can be configured using the following two methods:
 
    :::image type="content" source="media/specify-update-type-sources.png" alt-text="Screenshot of the Group Policy for specifiying sources for update types":::
 
-1. Configuration Service Provider (CSP) Policies: **SetPolicyDrivenUpdateSourceFor[]**:
+2. Configuration Service Provider (CSP) Policies: **SetPolicyDrivenUpdateSourceFor[]**:
 
 > [!NOTE]
 > You should configure **all** of these policies if you are using CSPs.
