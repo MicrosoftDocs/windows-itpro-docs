@@ -28,5 +28,5 @@ Use Start settings to apply a customized Start screen to devices.
 
 ## StartLayout
 
-Use StartLayout to select the `LayoutModification.xml` file that applies a customized Start screen to a mobile device.
+Use StartLayout to select the `LayoutModification.xml` file that applies a customized Start screen.
 

@@ -13,6 +13,7 @@ ms.localizationpriority: medium
 audience: itpro
 ms.topic: article
 ms.collection: highpri
+ms.custom: intro-overview
 ---
 
 # What's new in Windows 11
