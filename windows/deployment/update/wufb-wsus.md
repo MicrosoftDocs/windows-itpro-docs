@@ -72,7 +72,7 @@ The policy can be configured using the following two methods:
 > [!NOTE]
 > You should configure **all** of these policies if you are using CSPs.
 
-- [Update/SetPolicyDrivenUpdateSourceForDriverUpdates](../../client-management/mdm/policy-csp-update.md#update-setpolicydrivenupdatesourcefordriverupdates)
-- [Update/SetPolicyDrivenUpdateSourceForFeatureUpdates](../../client-management/mdm/policy-csp-update.md#update-setpolicydrivenupdatesourceforfeatureupdates)
-- [Update/SetPolicyDrivenUpdateSourceForOtherUpdates](../../client-management/mdm/policy-csp-update.md#update-setpolicydrivenupdatesourceforotherupdates)
-- [Update/SetPolicyDrivenUpdateSourceForQualityUpdates](../../client-management/mdm/policy-csp-update.md#update-setpolicydrivenupdatesourceforqualityupdates)
+- [Update/SetPolicyDrivenUpdateSourceForDriverUpdates](/windows/client-management/mdm/policy-csp-update#update-setpolicydrivenupdatesourcefordriver)
+- [Update/SetPolicyDrivenUpdateSourceForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-setpolicydrivenupdatesourceforfeature)
+- [Update/SetPolicyDrivenUpdateSourceForOtherUpdates](/windows/client-management/mdm/policy-csp-update#update-setpolicydrivenupdatesourceforother)
+- [Update/SetPolicyDrivenUpdateSourceForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-setpolicydrivenupdatesourceforquality)
