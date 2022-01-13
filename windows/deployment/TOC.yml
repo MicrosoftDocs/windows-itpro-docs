@@ -167,6 +167,8 @@
               href: update/waas-manage-updates-wufb.md
             - name: Configure Windows Update for Business
               href: update/waas-configure-wufb.md
+            - name: Use Windows Update for Business and WSUS
+              href: update/wufb-wsus.md    
             - name: Windows Update for Business deployment service
               href: update/deployment-service-overview.md
               items:
