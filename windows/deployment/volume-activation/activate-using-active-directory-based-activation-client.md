@@ -13,7 +13,7 @@ ms.pagetype: activation
 audience: itpro
 author: greg-lindsay
 ms.localizationpriority: medium
-ms.date: 07/27/2017
+ms.date: 01/13/2022
 ms.topic: article
 ms.collection: highpri
 ---
@@ -21,9 +21,19 @@ ms.collection: highpri
 # Activate using Active Directory-based activation
 
 **Applies to**
--   Windows 8.1 or later
--   Windows Server 2012 or later
--   Microsoft Office 2013 or later
+
+Windows 11
+Windows 10
+Windows 8.1
+Windows 8
+Windows Server 2012 R2
+Windows Server 2012
+Windows Server 2016
+Windows Server 2019
+Office 2021*
+Office 2019*
+Office 2016*
+Office 2013*
 
 **Looking for retail activation?**
 
@@ -112,7 +122,6 @@ When a reactivation event occurs, the client queries AD DS for the activation o
     > - [Office 2019 VL pack](https://www.microsoft.com/download/details.aspx?id=57342)
     >
     > - [Office LTSC 2021 VL pack](https://www.microsoft.com/download/details.aspx?id=103446)
-
 
 8. After activating the key, click **Commit**, and then click **Close**.
 
