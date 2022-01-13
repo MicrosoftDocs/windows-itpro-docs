@@ -63,11 +63,11 @@ The policy can be configured using the following two methods:
 
 1. Group Policy: Specify source service for specific classes of Windows Updates
 
-- Path: Computer Configuration\Administrative Templates\Windows Components\Windows Update\Manage updates offered from Windows Server Update Service\
+   - Path: Computer Configuration\Administrative Templates\Windows Components\Windows Update\Manage updates offered from Windows Server Update Service\
 
    :::image type="content" source="media/specify-update-type-sources.png" alt-text="Screenshot of the Group Policy for specifiying sources for update types":::
 
-2. Configuration Service Provider (CSP) Policies: **SetPolicyDrivenUpdateSourceFor[]**:
+2. Configuration Service Provider (CSP) Policies: **SetPolicyDrivenUpdateSourceFor&lt;Update Type>**:
 
 > [!NOTE]
 > You should configure **all** of these policies if you are using CSPs.
