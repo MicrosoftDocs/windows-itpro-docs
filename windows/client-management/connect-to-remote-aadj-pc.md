@@ -1,7 +1,7 @@
 ---
 title: Connect to remote Azure Active Directory-joined PC (Windows)
 description: You can use Remote Desktop Connection to connect to an Azure AD-joined PC.
-keywords: ["MDM", "device management", "RDP", "AADJ"]
+keywords: "MDM", "device management", "RDP", "AADJ"
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.pagetype: devices
 author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
-ms.date: 09/14/2021
+ms.date: 01/14/2022
 ms.reviewer: 
 manager: dansimp
 ms.topic: article
@@ -55,8 +55,7 @@ Ensure [Remote Credential Guard](/windows/access-protection/remote-credential-gu
         ```
         where *the-UPN-attribute-of-your-user* is the name of the user profile in C:\Users\, which is created based on the DisplayName attribute in Azure AD.
 
-        In order to execute this PowerShell command you need to already be added local Administrators group.
-        Otherwise this command throws the below error. For example:
+        In order to execute this PowerShell command you be a member of the local Administrators group. Otherwise, you'll get an error like this example:
         - for cloud only user: "There is no such global user or group : *name*"
         - for synced user: "There is no such global user or group : *name*" </br>
 
