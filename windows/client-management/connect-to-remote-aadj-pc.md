@@ -55,7 +55,7 @@ Ensure [Remote Credential Guard](/windows/access-protection/remote-credential-gu
         ```
         where *the-UPN-attribute-of-your-user* is the name of the user profile in C:\Users\, which is created based on the DisplayName attribute in Azure AD.
 
-        This command only works for AADJ device users already added to any of the local groups (administrators).
+        In order to execute this PowerShell command you need to already be added local Administrators group.
         Otherwise this command throws the below error. For example:
         - for cloud only user: "There is no such global user or group : *name*"
         - for synced user: "There is no such global user or group : *name*" </br>
