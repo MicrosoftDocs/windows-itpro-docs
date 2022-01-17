@@ -78,6 +78,8 @@ manager: dansimp
 <!--/Scope-->
 <!--Description-->
 
+This policy allows the user with an option to show the network folder when restricted.
+
 <!--/Description-->
 
 <!--SupportedValues-->
@@ -126,6 +128,8 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
+
+This policy allows the user with an option to show this PC location when restricted.
 
 <!--/Description-->
 
@@ -260,6 +264,8 @@ ADMX Info:
 
 <!--Description-->
 
+This policy allows to configure folders that the user can enumerate and access in the File Explorer.
+
 <!--/Description-->
 
 <!--SupportedValues-->
@@ -312,6 +318,8 @@ ADMX Info:
 <!--/Scope-->
 
 <!--Description-->
+
+This policy allows to configure folders that the user can enumerate and access in the File Explorer.
 
 <!--/Description-->
 
