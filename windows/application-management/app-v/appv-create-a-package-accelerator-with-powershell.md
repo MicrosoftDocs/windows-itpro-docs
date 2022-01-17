@@ -22,17 +22,17 @@ App-V Package Accelerators automatically sequence large, complex applications. A
 
 1. Install the App-V sequencer. For more information about installing the sequencer, see [How to install the sequencer](appv-install-the-sequencer.md).
 2. To open a Windows PowerShell console, select **Start** and enter **PowerShell**. Right-click **Windows PowerShell** and select **Run as Administrator**.
-3. Make sure that you have the .appv package to create an accelerator from the installation media or installation files. You can also optionally use a readme file for the accelerator's users to reference.
+3. Ensure you have the .Apps package to create an accelerator from the installation media or installation files. You can also optionally use a readme file for the accelerator's users to reference.
 4. Enter the **New-AppvPackageAccelerator** cmdlet.
 
     The following parameters are required to use the package accelerator cmdlet:
 
    - *InstalledFilesPath* specifies the application installation path.
    - *Installer* specifies the path to the application installer media.
-   - *InputPackagePath* specifies the path to the .appv package.
+   - *InputPackagePath* specifies the path to the.appv package.
    - *Path* specifies the output directory for the package.
 
-     The following example cmdlet shows how you can create a package accelerator with an .appv package and the installation media:
+     The following example cmdlet shows how you can create a package accelerator with .app package and the installation media:
 
      ```PowerShell
      New-AppvPackageAccelerator -InputPackagePath <path to the .appv file> -Installer <path to the installer executable> -Path <directory of the output path>
@@ -46,6 +46,6 @@ App-V Package Accelerators automatically sequence large, complex applications. A
 
 
 
-## Related topics
+## Related articles
 
 - [Administering App-V by using Windows PowerShell](appv-administering-appv-with-powershell.md)
