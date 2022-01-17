@@ -58,8 +58,8 @@ manager: dansimp
 
 |Windows Edition|Supported|
 |--- |--- |
-|HoloLens (1st gen) Development Edition|No|
-|HoloLens (1st gen) Commercial Suite|No|
+|HoloLens (first gen) Development Edition|No|
+|HoloLens (first gen) Commercial Suite|No|
 |HoloLens 2|Yes|
 
 Steps to use this policy correctly:
@@ -71,7 +71,7 @@ Steps to use this policy correctly:
 1. Enroll HoloLens devices and verify both configurations get applied to the device.
 1. Let Azure AD user 1 sign-in when internet is available. Once the user signs-in and Azure AD group membership is confirmed successfully, cache will be created.
 1. Now Azure AD user 1 can take HoloLens offline and use it for kiosk mode as long as policy value allows for X number of days.
-1. Steps 4 and 5 can be repeated for any other Azure AD user N. The key point is that any Azure AD user must sign in to device using Internet at least once. Then we can determine that they are member of Azure AD group to which Kiosk configuration is targeted.
+1. Steps 4 and 5 can be repeated for any other Azure AD user N. The key point is that any Azure AD user must sign-in to device using Internet at least once. Then we can determine that they are member of Azure AD group to which Kiosk configuration is targeted.
 
 > [!NOTE]
 > Until step 4 is performed for a Azure AD user will experience failure behavior mentioned similar to “disconnected” environments.
@@ -86,14 +86,14 @@ Steps to use this policy correctly:
 
 |Windows Edition|Supported|
 |--- |--- |
-|HoloLens (1st gen) Development Edition|No|
-|HoloLens (1st gen) Commercial Suite|No|
+|HoloLens (first gen) Development Edition|No|
+|HoloLens (first gen) Commercial Suite|No|
 |HoloLens 2|Yes|
 
 <!--/Description-->
 This new AutoLogonUser policy controls whether a user will be automatically logged on. Some customers want to set up devices that are tied to an identity but don't want any sign in experience. Imagine picking up a device and using remote assist immediately. Or have a benefit of being able to rapidly  distribute HoloLens devices and enable their end users to speed up login.
 
-When the policy is set to a non-empty value, it specifies the email address of the auto log on user. The specified user must logon to the device at least once to enable autologon.
+When the policy is set to a non-empty value, it specifies the email address of the auto log-on user. The specified user must logon to the device at least once to enable autologon.
 
 The OMA-URI of new policy `./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoLogonUser`
 
@@ -101,7 +101,7 @@ The OMA-URI of new policy `./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoL
 String value
 - User with the same email address will have autologon enabled.
 
-On a device where this policy is configured, the user specified in the policy will need to log on at least once. Subsequent reboots of the device after the first logon will have the specified user automatically logged on. Only a single autologon user is supported. Once enabled, the automatically logged on user will not be able to log out manually. To log on as a different user, the policy must first be disabled.
+On a device where this policy is configured, the user specified in the policy will need to log-on at least once. Subsequent reboots of the device after the first logon will have the specified user automatically logged on. Only a single autologon user is supported. Once enabled, the automatically logged on user will not be able to log out manually. To log-on as a different user, the policy must first be disabled.
 
 > [!NOTE]
 >
@@ -142,8 +142,8 @@ Supported values are 0-60. The default value is 0 (day) and maximum value is 60 
 
 |Windows Edition|Supported|
 |--- |--- |
-|HoloLens (1st gen) Development Edition|No|
-|HoloLens (1st gen) Commercial Suite|No|
+|HoloLens (first gen) Development Edition|No|
+|HoloLens (first gen) Commercial Suite|No|
 |HoloLens 2|Yes|
 
 <!--/SupportedSKUs-->
@@ -183,8 +183,8 @@ The following list shows the supported values:
 
 |Windows Edition|Supported|
 |--- |--- |
-|HoloLens (1st gen) Development Edition|No|
-|HoloLens (1st gen) Commercial Suite|No|
+|HoloLens (first gen) Development Edition|No|
+|HoloLens (first gen) Commercial Suite|No|
 |HoloLens 2|Yes|
 
 <!--/SupportedSKUs-->
@@ -211,8 +211,8 @@ This policy controls the behavior of moving platform feature on Hololens 2, that
 Integer
 
 - 0 (Default) - Last set user's preference. Initial state is OFF and after that user's preference is persisted across reboots and is used to initialize the system.
-- 1 Force off - Moving platform is disabled and can not be changed by user.
-- 2 Force on - Moving platform is enabled and can not be changed by user.
+- 1 Force off - Moving platform is disabled and cannot be changed by user.
+- 2 Force on - Moving platform is enabled and cannot be changed by user.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -225,8 +225,8 @@ Integer
 
 |Windows Edition|Supported|
 |--- |--- |
-|HoloLens (1st gen) Development Edition|No|
-|HoloLens (1st gen) Commercial Suite|No|
+|HoloLens (first gen) Development Edition|No|
+|HoloLens (first gen) Commercial Suite|No|
 |HoloLens 2|Yes|
 
 <!--/SupportedSKUs-->
@@ -267,8 +267,8 @@ The following list shows the supported values:
 
 |Windows Edition|Supported|
 |--- |--- |
-|HoloLens (1st gen) Development Edition|No|
-|HoloLens (1st gen) Commercial Suite|No|
+|HoloLens (first gen) Development Edition|No|
+|HoloLens (first gen) Commercial Suite|No|
 |HoloLens 2|Yes|
 
 <!--/SupportedSKUs-->
@@ -294,7 +294,7 @@ This policy configures behavior of HUP to determine, which algorithm to use for 
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 - Feature – Default feature based / SLAM based tracker (Default)
+- 0 - Feature – Default feature based / SLAM-based tracker (Default)
 - 1 - Constellation – LR constellation based tracker
 
 <!--/SupportedValues-->
@@ -308,8 +308,8 @@ The following list shows the supported values:
 
 |Windows Edition|Supported|
 |--- |--- |
-|HoloLens (1st gen) Development Edition|No|
-|HoloLens (1st gen) Commercial Suite|No|
+|HoloLens (first gen) Development Edition|No|
+|HoloLens (first gen) Commercial Suite|No|
 |HoloLens 2|Yes|
 
 <!--/SupportedSKUs-->
@@ -349,8 +349,8 @@ The following list shows the supported values:
 
 |Windows Edition|Supported|
 |--- |--- |
-|HoloLens (1st gen) Development Edition|No|
-|HoloLens (1st gen) Commercial Suite|No|
+|HoloLens (first gen) Development Edition|No|
+|HoloLens (first gen) Commercial Suite|No|
 |HoloLens 2|Yes|
 
 <!--/SupportedSKUs-->
@@ -390,8 +390,8 @@ The following list shows the supported values:
 
 |Windows Edition|Supported|
 |--- |--- |
-|HoloLens (1st gen) Development Edition|No|
-|HoloLens (1st gen) Commercial Suite|No|
+|HoloLens (first gen) Development Edition|No|
+|HoloLens (first gen) Commercial Suite|No|
 |HoloLens 2|Yes|
 
 <!--/SupportedSKUs-->
