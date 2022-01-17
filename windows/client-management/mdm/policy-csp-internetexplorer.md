@@ -210,7 +210,10 @@ manager: dansimp
     <a href="#internetexplorer-donotblockoutdatedactivexcontrols">InternetExplorer/DoNotBlockOutdatedActiveXControls</a>
   </dd>
   <dd>
-    <a href="#internetexplorer-donotblockoutdatedactivexcontrolsondonotblockoutdatedactivexcontrolsonspecificdomainsspecificdomains">InternetExplorer/DoNotBlockOutdatedActiveXControlsOnSpecificDomains</a>
+    <a href="#internetexplorer-donotblockoutdatedactivexcontrolsonspecificdomains">InternetExplorer/DoNotBlockOutdatedActiveXControlsOnSpecificDomains</a>
+  </dd>
+  <dd>
+    <a href="#internetexplorer-enableextendediemodehotkeys">InternetExplorer/EnableExtendedIEModeHotkeys</a>
   </dd>
   <dd>
     <a href="#internetexplorer-includealllocalsites">InternetExplorer/IncludeAllLocalSites</a>
