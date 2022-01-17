@@ -19,11 +19,12 @@ Use an **APPLICATION** configuration service provider that has an APPID of w4 to
 
 The default security roles are defined in the root characteristic, and map to each subnode unless specific permission is granted to the subnode. The default security roles are Manager, Operator, and Operator – TPS.
 
-> **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_CSP\_W4\_APPLICATION capabilities to be accessed from a network configuration application.
+> [!NOTE]
+> This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_CSP\_W4\_APPLICATION capabilities to be accessed from a network configuration application.
 
 The following shows the configuration service provider in tree format as used by OMA Client Provisioning.
 
-```console
+```cmd
 APPLICATION
 ----APPID
 ----NAME
@@ -45,11 +46,10 @@ This parameter takes a string value. The possible values to configure the NAME p
 
 -   no value specified
 
-> **Note**  MDM servers should resend APPLICATION/NAME to DMAcc after an upgrade because this value is displayed in the UI but not saved in Windows Phone 8.1 and cannot be migrated to Windows 10.
+> [!NOTE]
+> The APPLICATION/NAME value is displayed in the UI. The APPLICATION/NAME value might not be saved on the device. So after an upgrade, the MDM servers should resend APPLICATION/NAME to DMAcc.
 
- 
-
-If no value is specified, the registry location will default to &lt;unnamed&gt;.
+If no value is specified, the registry location will default to `<unnamed>`.
 
 If `Name` is greater than 40 characters, it will be truncated to 40 characters.
 
@@ -77,13 +77,3 @@ Optional. The maximum authorized size, in KB, for multimedia content. This param
 
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-
- 
-
-
-
-
-
-

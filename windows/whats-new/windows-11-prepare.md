@@ -18,6 +18,7 @@ ms.collection: highpri
 **Applies to**
 
 -   Windows 11
+-   Windows 10
 
 Windows 10 and Windows 11 are designed to coexist, so that you can use the same familiar tools and process to manage both operating systems. Using a single management infrastructure that supports common applications across both Windows 10 and Windows 11 helps to simplify the migration process. You can analyze endpoints, determine application compatibility, and manage Windows 11 deployments in the same way that you do with Windows 10.
 
