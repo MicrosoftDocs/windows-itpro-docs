@@ -8179,6 +8179,17 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### RemoteDesktop policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-remotedesktop.md#remotedesktop-autosubscription" id="remotedesktop-autosubscription">RemoteDesktop/AutoSubscription</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-remotedesktop.md#remotedesktop-loadaadcredkeyfromprofile" id="remotedesktop-loadaadcredkeyfromprofile">RemoteDesktop/LoadAadCredKeyFromProfile</a>
+  </dd>
+</dl>
+
 ### RemoteDesktopServices policies
 
 <dl>

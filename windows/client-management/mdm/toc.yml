@@ -765,6 +765,8 @@ items:
               href: policy-csp-privacy.md
             - name: RemoteAssistance
               href: policy-csp-remoteassistance.md
+            - name: RemoteDesktop
+              href: policy-csp-remotedesktop.md
             - name: RemoteDesktopServices
               href: policy-csp-remotedesktopservices.md
             - name: RemoteManagement
