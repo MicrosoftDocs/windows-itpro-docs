@@ -4,7 +4,7 @@ description: How to access the WIP Learning report to monitor and apply Windows 
 ms.assetid: 53db29d2-d99d-4db6-b494-90e2b4872ca2
 ms.reviewer: 
 keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, WIP Learning
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl:
 ms.sitesec: library
 ms.pagetype: security
@@ -21,8 +21,7 @@ ms.date: 02/26/2019
 # Fine-tune Windows Information Protection (WIP) with WIP Learning
 **Applies to:**
 
-- Windows 10, version 1703 and later
-- Windows 10 Mobile, version 1703 and later
+- Windows 10, version 1703 and later
 
 With WIP Learning, you can intelligently tune which apps and websites are included in your WIP policy to help reduce disruptive prompts and keep it accurate and relevant. WIP Learning generates two reports: The **App learning report** and the **Website learning report**. Both reports can be accessed from Microsoft Azure Intune.
 
@@ -32,11 +31,9 @@ In the **Website learning report**, you can view a summary of the devices that h
 
 ## Access the WIP Learning reports
 
-1. Open the [Azure portal](https://portal.azure.com/). 
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-1. Click **All services**, type **Intune** in the text box filter, and click the star to add it to **Favorites**.
-
-1. Click **Intune** > **Client apps** > **App protection status** > **Reports**.
+1. Click **Client apps** > **App protection status** > **Reports**.
 
    ![Image showing the UI path to the WIP report.](images/access-wip-learning-report.png) 
 

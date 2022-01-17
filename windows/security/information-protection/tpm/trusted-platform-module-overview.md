@@ -3,7 +3,7 @@ title: Trusted Platform Module Technology Overview (Windows)
 description: This topic for the IT professional describes the Trusted Platform Module (TPM) and how Windows uses it for access control and authentication.
 ms.assetid: face8932-b034-4319-86ac-db1163d46538
 ms.reviewer: 
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,7 +12,9 @@ author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+  - M365-security-compliance
+  - highpri
 ms.topic: conceptual
 ---
 
@@ -32,7 +34,7 @@ This topic for the IT professional describes the Trusted Platform Module (TPM) a
 
 - Generate, store, and limit the use of cryptographic keys.
 
-- Use TPM technology for platform device authentication by using the TPM’s unique RSA key, which is burned into itself.
+- Use TPM technology for platform device authentication by using the TPM’s unique RSA key, which is burned into it.
 
 - Help ensure platform integrity by taking and storing security measurements.
 

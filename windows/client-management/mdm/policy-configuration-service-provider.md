@@ -8,9 +8,10 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 07/18/2019
+ms.collection: highpri
 ---
 
 # Policy CSP
@@ -4068,11 +4069,268 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 
 <dl>
   <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_auto_reconnect" id="admx-terminalserver-ts_auto_reconnect">ADMX_TerminalServer/TS_AUTO_RECONNECT</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_camera_redirection" id="admx-terminalserver-ts_camera_redirection">ADMX_TerminalServer/TS_CAMERA_REDIRECTION</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_certificate_template_policy" id="admx-terminalserver-ts_certificate_template_policy">ADMX_TerminalServer/TS_CERTIFICATE_TEMPLATE_POLICY</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_allow_signed_files_1" id="admx-terminalserver-ts_client_allow_signed_files_1">ADMX_TerminalServer/TS_CLIENT_ALLOW_SIGNED_FILES_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_allow_signed_files_2" id="admx-terminalserver-ts_client_allow_signed_files_2">ADMX_TerminalServer/TS_CLIENT_ALLOW_SIGNED_FILES_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_allow_unsigned_files_1" id="admx-terminalserver-ts_client_allow_unsigned_files_1">ADMX_TerminalServer/TS_CLIENT_ALLOW_UNSIGNED_FILES_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_allow_unsigned_files_2" id="admx-terminalserver-ts_client_allow_unsigned_files_2">ADMX_TerminalServer/TS_CLIENT_ALLOW_UNSIGNED_FILES_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_audio" id="admx-terminalserver-ts_client_audio">ADMX_TerminalServer/TS_CLIENT_AUDIO</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_audio_capture" id="admx-terminalserver-ts_client_audio_capture">ADMX_TerminalServer/TS_CLIENT_AUDIO_CAPTURE</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_audio_quality" id="admx-terminalserver-ts_client_audio_quality">ADMX_TerminalServer/TS_CLIENT_AUDIO_QUALITY</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_clipboard" id="admx-terminalserver-ts_client_clipboard">ADMX_TerminalServer/TS_CLIENT_CLIPBOARD</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_com" id="admx-terminalserver-ts_client_com">ADMX_TerminalServer/TS_CLIENT_COM</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_default_m" id="admx-terminalserver-ts_client_default_m">ADMX_TerminalServer/TS_CLIENT_DEFAULT_M</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_disable_hardware_mode" id="admx-terminalserver-ts_client_disable_hardware_mode">ADMX_TerminalServer/TS_CLIENT_DISABLE_HARDWARE_MODE</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_disable_password_saving_1" id="admx-terminalserver-ts_client_disable_password_saving_1">ADMX_TerminalServer/TS_CLIENT_DISABLE_PASSWORD_SAVING_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_lpt" id="admx-terminalserver-ts_client_lpt">ADMX_TerminalServer/TS_CLIENT_LPT</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_pnp" id="admx-terminalserver-ts_client_pnp">ADMX_TerminalServer/TS_CLIENT_PNP</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_printer" id="admx-terminalserver-ts_client_printer">ADMX_TerminalServer/TS_CLIENT_PRINTER</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_trusted_certificate_thumbprints_1" id="admx-terminalserver-ts_client_trusted_certificate_thumbprints_1">ADMX_TerminalServer/TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_trusted_certificate_thumbprints_2" id="admx-terminalserver-ts_client_trusted_certificate_thumbprints_2">ADMX_TerminalServer/TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_turn_off_udp" id="admx-terminalserver-ts_client_turn_off_udp">ADMX_TerminalServer/TS_CLIENT_TURN_OFF_UDP</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_colordepth" id="admx-terminalserver-ts_colordepth">ADMX_TerminalServer/TS_COLORDEPTH</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_delete_roaming_user_profiles" id="admx-terminalserver-ts_delete_roaming_user_profiles">ADMX_TerminalServer/TS_DELETE_ROAMING_USER_PROFILES</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_disable_remote_desktop_wallpaper" id="admx-terminalserver-ts_disable_remote_desktop_wallpaper">ADMX_TerminalServer/TS_DISABLE_REMOTE_DESKTOP_WALLPAPER</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_dx_use_full_hwgpu" id="admx-terminalserver-ts_dx_use_full_hwgpu">ADMX_TerminalServer/TS_DX_USE_FULL_HWGPU</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_easy_print" id="admx-terminalserver-ts_easy_print">ADMX_TerminalServer/TS_EASY_PRINT</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_easy_print_user" id="admx-terminalserver-ts_easy_print_user">ADMX_TerminalServer/TS_EASY_PRINT_User</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_enablevirtualgraphics" id="admx-terminalserver-ts_enablevirtualgraphics">ADMX_TerminalServer/TS_EnableVirtualGraphics</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_fallbackprintdrivertype" id="admx-terminalserver-ts_fallbackprintdrivertype">ADMX_TerminalServer/TS_FALLBACKPRINTDRIVERTYPE</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_forcible_logoff" id="admx-terminalserver-ts_forcible_logoff">ADMX_TerminalServer/TS_FORCIBLE_LOGOFF</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_gateway_policy_enable" id="admx-terminalserver-ts_gateway_policy_enable">ADMX_TerminalServer/TS_GATEWAY_POLICY_ENABLE</a>
   </dd>
   <dd>
     <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_gateway_policy_auth_method" id="admx-terminalserver-ts_gateway_policy_auth_method">ADMX_TerminalServer/TS_GATEWAY_POLICY_AUTH_METHOD</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_gateway_policy_server" id="admx-terminalserver-ts_gateway_policy_server">ADMX_TerminalServer/TS_GATEWAY_POLICY_SERVER</a>
   </dd> 
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_join_session_directory" id="admx-terminalserver-ts_join_session_directory">ADMX_TerminalServer/TS_JOIN_SESSION_DIRECTORY</a>
+  </dd> 
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_keep_alive" id="admx-terminalserver-ts_keep_alive">ADMX_TerminalServer/TS_KEEP_ALIVE</a>
+  </dd> 
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_license_secgroup" id="admx-terminalserver-ts_license_secgroup">ADMX_TerminalServer/TS_LICENSE_SECGROUP</a>
+  </dd> 
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_license_servers" id="admx-terminalserver-ts_license_servers">ADMX_TerminalServer/TS_LICENSE_SERVERS</a>
+  </dd> 
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_license_tooltip" id="admx-terminalserver-ts_license_tooltip">ADMX_TerminalServer/TS_LICENSE_TOOLTIP</a>
+  </dd> 
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_licensing_mode" id="admx-terminalserver-ts_licensing_mode">ADMX_TerminalServer/TS_LICENSING_MODE</a>
+  </dd> 
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_max_con_policy" id="admx-terminalserver-ts_max_con_policy">ADMX_TerminalServer/TS_MAX_CON_POLICY</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_maxdisplayres" id="admx-terminalserver-ts_maxdisplayres">ADMX_TerminalServer/TS_MAXDISPLAYRES</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_maxmonitor" id="admx-terminalserver-ts_maxmonitor">ADMX_TerminalServer/TS_MAXMONITOR</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_nodisconnectmenu" id="admx-terminalserver-ts_nodisconnectmenu">ADMX_TerminalServer/TS_NoDisconnectMenu</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_nosecuritymenu" id="admx-terminalserver-ts_nosecuritymenu">ADMX_TerminalServer/TS_NoSecurityMenu</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_preventlicenseupgrade" id="admx-terminalserver-ts_preventlicenseupgrade">ADMX_TerminalServer/TS_PreventLicenseUpgrade</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_promt_creds_client_comp" id="admx-terminalserver-ts_promt_creds_client_comp">ADMX_TerminalServer/TS_PROMT_CREDS_CLIENT_COMP</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_radc_defaultconnection" id="admx-terminalserver-ts_radc_defaultconnection">ADMX_TerminalServer/TS_RADC_DefaultConnection</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_rdsappx_waitforregistration" id="admx-terminalserver-ts_rdsappx_waitforregistration">ADMX_TerminalServer/TS_RDSAppX_WaitForRegistration</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_remotecontrol_1" id="admx-terminalserver-ts_remotecontrol_1">ADMX_TerminalServer/TS_RemoteControl_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_remotecontrol_2" id="admx-terminalserver-ts_remotecontrol_2">ADMX_TerminalServer/TS_RemoteControl_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_remotedesktopvirtualgraphics" id="admx-terminalserver-ts_remotedesktopvirtualgraphics">ADMX_TerminalServer/TS_RemoteDesktopVirtualGraphics</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_sd_clustname" id="admx-terminalserver-ts_sd_clustname">ADMX_TerminalServer/TS_SD_ClustName</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_sd_expose_address" id="admx-terminalserver-ts_sd_expose_address">ADMX_TerminalServer/TS_SD_EXPOSE_ADDRESS</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_sd_loc" id="admx-terminalserver-ts_sd_loc">ADMX_TerminalServer/TS_SD_Loc</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_security_layer_policy" id="admx-terminalserver-ts_security_layer_policy">ADMX_TerminalServer/TS_SECURITY_LAYER_POLICY</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_select_network_detect" id="admx-terminalserver-ts_select_network_detect">ADMX_TerminalServer/TS_SELECT_NETWORK_DETECT</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_select_transport" id="admx-terminalserver-ts_select_transport">ADMX_TerminalServer/TS_SELECT_TRANSPORT</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server_advanced_remotefx_remoteapp" id="admx-terminalserver-ts_server_advanced_remotefx_remoteapp">ADMX_TerminalServer/TS_SERVER_ADVANCED_REMOTEFX_REMOTEAPP</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server_auth" id="admx-terminalserver-ts_server_auth">ADMX_TerminalServer/TS_SERVER_AUTH</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server_avc_hw_encode_preferred" id="admx-terminalserver-ts_server_avc_hw_encode_preferred">ADMX_TerminalServer/TS_SERVER_AVC_HW_ENCODE_PREFERRED</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server_avc444_mode_preferred" id="admx-terminalserver-ts_server_avc444_mode_preferred">ADMX_TerminalServer/TS_SERVER_AVC444_MODE_PREFERRED</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server_compressor" id="admx-terminalserver-ts_server_compressor">ADMX_TerminalServer/TS_SERVER_COMPRESSOR</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server_image_quality" id="admx-terminalserver-ts_server_image_quality">ADMX_TerminalServer/TS_SERVER_IMAGE_QUALITY</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server_legacy_rfx" id="admx-terminalserver-ts_server_legacy_rfx">ADMX_TerminalServer/TS_SERVER_LEGACY_RFX</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server_profile" id="admx-terminalserver-ts_server_profile">ADMX_TerminalServer/TS_SERVER_PROFILE</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server_visexp" id="admx-terminalserver-ts_server_visexp">ADMX_TerminalServer/TS_SERVER_VISEXP</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server_wddm_graphics_driver" id="admx-terminalserver-ts_server_wddm_graphics_driver">ADMX_TerminalServer/TS_SERVER_WDDM_GRAPHICS_DRIVER</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_session_end_on_limit_1" id="admx-terminalserver-ts_session_end_on_limit_1">ADMX_TerminalServer/TS_Session_End_On_Limit_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_session_end_on_limit_2" id="admx-terminalserver-ts_session_end_on_limit_2">ADMX_TerminalServer/TS_Session_End_On_Limit_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_sessions_disconnected_timeout_1" id="admx-terminalserver-ts_sessions_disconnected_timeout_1">ADMX_TerminalServer/TS_SESSIONS_Disconnected_Timeout_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_sessions_disconnected_timeout_2" id="admx-terminalserver-ts_sessions_disconnected_timeout_2">ADMX_TerminalServer/TS_SESSIONS_Disconnected_Timeout_2</a>
+  </dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_sessions_idle_limit_1" id="admx-terminalserver-ts_sessions_idle_limit_1">ADMX_TerminalServer/TS_SESSIONS_Idle_Limit_1</a>
+  </dd>  
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_sessions_idle_limit_2" id="admx-terminalserver-ts_sessions_idle_limit_2">ADMX_TerminalServer/TS_SESSIONS_Idle_Limit_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_single_session" id="admx-terminalserver-ts_single_session">ADMX_TerminalServer/TS_SINGLE_SESSION</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_smart_card" id="admx-terminalserver-ts_smart_card">ADMX_TerminalServer/TS_SMART_CARD</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_start_program_1" id="admx-terminalserver-ts_start_program_1">ADMX_TerminalServer/TS_START_PROGRAM_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_start_program_2" id="admx-terminalserver-ts_start_program_2">ADMX_TerminalServer/TS_START_PROGRAM_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_temp_delete" id="admx-terminalserver-ts_temp_delete">ADMX_TerminalServer/TS_TEMP_DELETE</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_temp_per_session" id="admx-terminalserver-ts_temp_per_session">ADMX_TerminalServer/TS_TEMP_PER_SESSION</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_time_zone" id="admx-terminalserver-ts_time_zone">ADMX_TerminalServer/TS_TIME_ZONE</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_tscc_permissions_policy" id="admx-terminalserver-ts_tscc_permissions_policy">ADMX_TerminalServer/TS_TSCC_PERMISSIONS_POLICY</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_turnoff_singleapp" id="admx-terminalserver-ts_turnoff_singleapp">ADMX_TerminalServer/TS_TURNOFF_SINGLEAPP</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_uia" id="admx-terminalserver-ts_uia">ADMX_TerminalServer/TS_UIA</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_usb_redirection_disable" id="admx-terminalserver-ts_usb_redirection_disable">ADMX_TerminalServer/TS_USB_REDIRECTION_DISABLE</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_user_authentication_policy" id="admx-terminalserver-ts_user_authentication_policy">ADMX_TerminalServer/TS_USER_AUTHENTICATION_POLICY</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_user_home" id="admx-terminalserver-ts_user_home">ADMX_TerminalServer/TS_USER_HOME</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_user_mandatory_profiles" id="admx-terminalserver-ts_user_mandatory_profiles">ADMX_TerminalServer/TS_USER_MANDATORY_PROFILES</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_user_profiles" id="admx-terminalserver-ts_user_profiles">ADMX_TerminalServer/TS_USER_PROFILES</a>
+  </dd>  
 <dl>
 
 ### ADMX_Thumbnails policies  
@@ -6180,6 +6438,14 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### EAP policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-eap.md#eap-allowtls1_3" id="eap-allowtls1_3">EAP/AllowTLS1_3</a>
+  </dd>
+</dl>
+
 ### Education policies
 
 <dl>
@@ -6367,6 +6633,20 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 <dl>
   <dd>
     <a href="./policy-csp-handwriting.md#handwriting-paneldefaultmodedocked" id="handwriting-paneldefaultmodedocked">Handwriting/PanelDefaultModeDocked</a>
+  </dd>
+</dl>
+
+### HumanPresence policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-humanpresence.md#humanpresence-forceinstantlock" id="humanpresence-forceinstantlock">HumanPresence/ForceInstantLock</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-humanpresence.md#humanpresence-forceinstantwake" id="humanpresence-forceinstantwake">HumanPresence/ForceInstantWake</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-humanpresence.md#humanpresence-forcelocktimeout" id="humanpresence-forcelocktimeout">HumanPresence/ForceLockTimeout</a>
   </dd>
 </dl>
 
@@ -8293,6 +8573,18 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   <dd>
     <a href="./policy-csp-storage.md#storage-removablediskdenywriteaccess" id="storage-removablediskdenywriteaccess">Storage/RemovableDiskDenyWriteAccess</a>
   </dd>
+  <dd>
+    <a href="./policy-csp-storage.md#storage-wpddevicesdenyreadaccessperdevice" id="storage-wpddevicesdenyreadaccessperdevice">Storage/WPDDevicesDenyReadAccessPerDevice</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-storage.md#storage-wpddevicesdenyreadaccessperuser" id="storage-wpddevicesdenyreadaccessperuser">Storage/WPDDevicesDenyReadAccessPerUser</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-storage.md#storage-wpddevicesdenywriteaccessperdevice" id="storage-wpddevicesdenywriteaccessperdevice">Storage/WPDDevicesDenyWriteAccessPerDevice</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-storage.md#storage-wpddevicesdenywriteaccessperuser" id="storage-wpddevicesdenywriteaccessperuser">Storage/WPDDevicesDenyWriteAccessPerUser</a>
+  </dd>
 </dl>
 
 ### System policies
@@ -8357,6 +8649,12 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-system.md#system-feedbackhubalwayssavediagnosticslocally" id="system-feedbackhubalwayssavediagnosticslocally">System/FeedbackHubAlwaysSaveDiagnosticsLocally</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-system.md#system-limitdiagnosticlogcollection" id="system-limitdiagnosticlogcollection">System/LimitDiagnosticLogCollection</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-system.md#system-limitdumpcollection" id="system-limitdumpcollection">System/LimitDumpCollection</a>
   </dd>
   <dd>
     <a href="./policy-csp-system.md#system-limitenhanceddiagnosticdatawindowsanalytics" id="system-limitenhanceddiagnosticdatawindowsanalytics">System/LimitEnhancedDiagnosticDataWindowsAnalytics</a>
@@ -8448,6 +8746,9 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-textinput.md#textinput-allowlinguisticdatacollection" id="textinput-allowlinguisticdatacollection">TextInput/AllowLinguisticDataCollection</a>
   </dd>
   <dd>
+    <a href="./policy-csp-textinput.md#textinput-allowtextinputsuggestionupdate"id="textinput-allowtextinputsuggestionupdate">TextInput/AllowTextInputSuggestionUpdate</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-textinput.md#textinput-configurejapaneseimeversion"id="textinput-configurejapaneseimeversion">TextInput/ConfigureJapaneseIMEVersion</a>
   </dd>
   <dd>
@@ -8498,7 +8799,16 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 
 <dl>
   <dd>
+    <a href="./policy-csp-timelanguagesettings.md#timelanguagesettings-blockcleanupofunusedpreinstalledlangpacks" id="timelanguagesettings-blockcleanupofunusedpreinstalledlangpacks">TimeLanguageSettings/BlockCleanupOfUnusedPreinstalledLangPacks</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-timelanguagesettings.md#timelanguagesettings-configuretimezone" id="timelanguagesettings-configuretimezone">TimeLanguageSettings/ConfigureTimeZone</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-timelanguagesettings.md#timelanguagesettings-machineuilanguageoverwrite" id="timelanguagesettings-machineuilanguageoverwrite">TimeLanguageSettings/MachineUILanguageOverwrite</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-timelanguagesettings.md#timelanguagesettings-restrictlanguagepacksandfeaturesinstall" id="timelanguagesettings-restrictlanguagepacksandfeaturesinstall">TimeLanguageSettings/RestrictLanguagePacksAndFeaturesInstall</a>
   </dd>
 </dl>
 
@@ -8565,6 +8875,9 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-update.md#update-configuredeadlinegraceperiod" id="update-configuredeadlinegraceperiod">Update/ConfigureDeadlineGracePeriod</a>
   </dd>
   <dd>
+    <a href="./policy-csp-update.md#update-configuredeadlinegraceperiodforfeatureupdates" id="update-configuredeadlinegraceperiodforfeatureupdates">Update/ConfigureDeadlineGracePeriodForFeatureUpdates</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-update.md#update-configuredeadlinenoautoreboot" id="update-configuredeadlinenoautoreboot">Update/ConfigureDeadlineNoAutoReboot</a>
   </dd>
   <dd>
@@ -8590,6 +8903,9 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-update.md#update-disablewufbsafeguards" id="update-disablewufbsafeguards">Update/DisableWUfBSafeguards</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-donotenforceenterprisetlscertpinningforupdatedetection" id="update-donotenforceenterprisetlscertpinningforupdatedetection">Update/DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection</a>
   </dd>
   <dd>
     <a href="./policy-csp-update.md#update-engagedrestartdeadline" id="update-engagedrestartdeadline">Update/EngagedRestartDeadline</a>
@@ -8686,6 +9002,18 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-update.md#update-setedurestart" id="update-setedurestart">Update/SetEDURestart</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourcefordriver" id="update-setpolicydrivenupdatesourcefordriver">Update/SetPolicyDrivenUpdateSourceForDriver</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourceforfeature" id="update-setpolicydrivenupdatesourceforfeature">Update/SetPolicyDrivenUpdateSourceForFeature</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourceforother" id="update-setpolicydrivenupdatesourceforother">Update/SetPolicyDrivenUpdateSourceForOther</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourceforquality" id="update-setpolicydrivenupdatesourceforquality">Update/SetPolicyDrivenUpdateSourceForQuality</a>
   </dd>
   <dd> 
     <a href="./policy-csp-update.md#update-setproxybehaviorforupdatedetection"id="update-setproxybehaviorforupdatedetection">Update/SetProxyBehaviorForUpdateDetection</a> 
@@ -8797,6 +9125,17 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### VirtualizationBasedTechnology policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-virtualizationbasedtechnology.md#virtualizationbasedtechnology-hypervisorenforcedcodeintegrity" id="virtualizationbasedtechnology-hypervisorenforcedcodeintegrity">VirtualizationBasedTechnology/HypervisorEnforcedCodeIntegrity</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-virtualizationbasedtechnology.md#virtualizationbasedtechnology-requireuefimemoryattributestable" id="virtualizationbasedtechnology-requireuefimemoryattributestable">VirtualizationBasedTechnology/RequireUEFIMemoryAttributesTable</a>
+  </dd>
+</dl>
+
 ### Wifi policies
 
 <dl>
@@ -8820,6 +9159,14 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-wifi.md#wifi-wlanscanmode" id="wifi-wlanscanmode">Wifi/WLANScanMode</a>
+  </dd>
+</dl>
+
+### WindowsAutoPilot policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-windowsautopilot.md#windowsautopilot-enableagilitypostenrollment" id="windowsautopilot-enableagilitypostenrollment">WindowsAutoPilot/EnableAgilityPostEnrollment</a>
   </dd>
 </dl>
 
@@ -8978,6 +9325,9 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-wirelessdisplay.md#wirelessdisplay-allowmdnsdiscovery" id="wirelessdisplay-allowmdnsdiscovery">WirelessDisplay/AllowMdnsDiscovery</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-wirelessdisplay.md#wirelessdisplay-allowmovementdetectiononinfrastructure" id="wirelessdisplay-allowmovementdetectiononinfrastructure">WirelessDisplay/AllowMovementDetectionOnInfrastructure</a>
   </dd>
   <dd>
     <a href="./policy-csp-wirelessdisplay.md#wirelessdisplay-allowprojectionfrompc" id="wirelessdisplay-allowprojectionfrompc">WirelessDisplay/AllowProjectionFromPC</a>

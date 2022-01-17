@@ -3,7 +3,7 @@ title: Microsoft recommended driver block rules (Windows)
 description: View a list of recommended block rules to block vulnerable third-party drivers discovered by Microsoft and the security research community.  
 keywords:  security, malware, kernel mode, driver
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -46,14 +46,14 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <SiPolicy xmlns="urn:schemas-microsoft-com:sipolicy">
-  <VersionEx>10.0.19565.0</VersionEx>
+  <VersionEx>10.0.22493.0</VersionEx>
   <PolicyTypeID>{D2BDA982-CCF6-4344-AC5B-0B44427B6816}</PolicyTypeID>
   <PlatformID>{2E07F7E4-194C-4D20-B7C9-6F44A6C5A234}</PlatformID>
   <Rules>
     <Rule>
       <Option>Enabled:Unsigned System Integrity Policy</Option>
     </Rule>
-    <Rule>
+	<Rule>
       <Option>Enabled:Audit Mode</Option>
     </Rule>
     <Rule>
@@ -173,6 +173,10 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     <Deny ID="ID_DENY_SEMAV6MSR64_SHA256" FriendlyName="semav6msr64.sys Hash Sha256" Hash="EB71A8ECEF692E74AE356E8CB734029B233185EE5C2CCB6CC87CC6B36BEA65CF" />
     <Deny ID="ID_DENY_SEMAV6MSR64_SHA1_PAGE" FriendlyName="semav6msr64.sys Hash Page Sha1" Hash="F3821EC0AEF270F749DF9F44FBA91AFA5C8C38E8" />
     <Deny ID="ID_DENY_SEMAV6MSR64_SHA256_PAGE" FriendlyName="semav6msr64.sys Hash Page Sha256" Hash="4F12EE563E7496E7105D67BF64AF6B436902BE4332033AF0B5A242B206372CB7" />
+    <Deny ID="ID_DENY_WINRING0_SHA1" FriendlyName="WinRing0.sys Hash Sha1" Hash="12EB825418A932B1E4C6697DC7647E89AE52CF3F" />
+    <Deny ID="ID_DENY_WINRING0_SHA256" FriendlyName="WinRing0.sys Hash Sha256" Hash="4582ADB2E67EEBAFF755AE740C1F24BC3AF78E0F28E8E8DECB99F86BF155AB23" />
+    <Deny ID="ID_DENY_WINRING0_SHA1_PAGE" FriendlyName="WinRing0.sys Hash Page Sha1" Hash="497AFEB0D5B97D4B863704A2F77FFEF31220402D" />
+    <Deny ID="ID_DENY_WINRING0_SHA256_PAGE" FriendlyName="WinRing0.sys Hash Page Sha256" Hash="8D8A5696BDF11D2427016F91F9726AFF4F0C80FADBC3E6033662FA11C8B282BD" />
     <Deny ID="ID_DENY_RETLIFTEN_SHA1_1" FriendlyName="80.sys Hash Sha1" Hash="BC2F3850C7B858340D7ED27B90E63B036881FD6C"/>
     <Deny ID="ID_DENY_RETLIFTEN_SHA1_2" FriendlyName="netfilterdrv.sys Hash Sha1" Hash="E74B6DDA8BC53BC687FC21218BD34062A78D8467"/>
     <Deny ID="ID_DENY_RETLIFTEN_SHA1_3" FriendlyName="netfilterdrv.sys Hash Sha1" Hash="2C27ABBBBCF10DFB75AD79557E30ACE5ED314DF8"/>
@@ -242,6 +246,9 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     <Deny ID="ID_DENY_RETLIFTEN_SHA1_67" FriendlyName="c.sys Hash Sha1" Hash="3C20BB896FD16B5C698185FB176E820A448997B3"/>
     <Deny ID="ID_DENY_RETLIFTEN_SHA1_68" FriendlyName="gameink.sys Hash Sha1" Hash="6A784D45517142C11D5CCA3FF9956B2ED6EAF4C9"/>
     <Deny ID="ID_DENY_RETLIFTEN_SHA1_69" FriendlyName="gameink.sys Hash Sha1" Hash="4E5E719362CD48BB323803C1D00AFDE11D4B9D4C"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA1_70" FriendlyName="b.sys Hash Sha1" Hash="FD8A340CD071BC98E6EEAC9BBD4AC8A78688BC17"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA1_71" FriendlyName="nt4.sys Hash Sha1" Hash="EC7947AD1919C8F60BC973B96DA4132A1EA396E0"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA1_72" FriendlyName="d3.sys Hash Sha1" Hash="560D8869D48A71E59601B76240E9A6CFFB068C9C"/>
     <Deny ID="ID_DENY_RETLIFTEN_SHA256_1" FriendlyName="80.sys Hash Sha256" Hash="F08EBDDC11AEFCB46082C239F8D97CEEA247D846E22C4BCDD72AF75C1CBC6B0B"/>
     <Deny ID="ID_DENY_RETLIFTEN_SHA256_2" FriendlyName="netfilterdrv.sys Hash Sha256" Hash="12A636449A491EF3DC8688C5D25BE9EBF785874F9C4573667EEFD42139201AA4"/>
     <Deny ID="ID_DENY_RETLIFTEN_SHA256_3" FriendlyName="netfilterdrv.sys Hash Sha256" Hash="7F1772BDF7DD81CB00D30159D19D4EB9160B54D7609B36F781D08CA3AFBD29A7"/>
@@ -311,10 +318,16 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     <Deny ID="ID_DENY_RETLIFTEN_SHA256_67" FriendlyName="c.sys Hash Sha256" Hash="CC383AD11E9D06047A1558ED343F389492DA3AC2B84B71462AEE502A2FA616C8"/>
     <Deny ID="ID_DENY_RETLIFTEN_SHA256_68" FriendlyName="gameink.sys Hash Sha256" Hash="E94E8A87459DB56837D1C58F9854794AA99F36566A9DED9B398BE9D4D3A2C2AF"/>
     <Deny ID="ID_DENY_RETLIFTEN_SHA256_69" FriendlyName="gameink.sys Hash Sha256" Hash="44A0599DEFEA351314663582DBC61069B3A095A4DDAD571BB17DD0D8B21E7FF2"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA256_70" FriendlyName="b.sys Hash Sha256" Hash="84DF20B1D9D87E305C92E5FFAE21B10B325609D59D835A954DBD8750EF5DABF4"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA256_71" FriendlyName="nt4.sys Hash Sha256" Hash="D7BC7306CB489FE4C285BBEDDC6D1A09E814EF55CF30BD5B8DAF87A52396F102"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA256_72" FriendlyName="d3.sys Hash Sha256" Hash="36875562E747136313EC5DB58174E5FAB870997A054CA8D3987D181599C7DB6A"/>
     <Deny ID="ID_DENY_PROCESSHACKER" FriendlyName="kprocesshacker.sys FileRule" FileName="kprocesshacker.sys" />
     <Deny ID="ID_DENY_AMP" FriendlyName="System Mechanic CVE-2018-5701" FileName="amp.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="5.4.11.1" />
     <Deny ID="ID_DENY_ASMMAP" FriendlyName="Asus Memory Mapping Driver" FileName="asmmap.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_ASMMAP_64" FriendlyName="Asus Memory Mapping Driver" FileName="asmmap64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <Deny ID="ID_DENY_PHYMEMX_64" FriendlyName="Phymemx64 Memory Mapping Driver" FileName="phymemx64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <Deny ID="ID_DENY_DBK_32" FriendlyName="Cheat Engine Driver" FileName="dbk32.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <Deny ID="ID_DENY_DBK_64" FriendlyName="Cheat Engine Driver" FileName="dbk64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_CPUZ_DRIVER" FriendlyName="" FileName="cpuz.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.4.3" />
     <FileAttrib ID="ID_FILEATTRIB_ELBY_DRIVER" FriendlyName="" FileName="ElbyCDIO.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="6.0.3.2" />
     <FileAttrib ID="ID_FILEATTRIB_LIBNICM_DRIVER" FriendlyName="" FileName="libnicm.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.12.0" />
@@ -335,14 +348,19 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     <FileAttrib ID="ID_FILEATTRIB_TREND_MICRO" FriendlyName="TmComm.sys" FileName="TmComm.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="8.0.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_VIRAGT" FriendlyName="viragt.sys 32-bit" FileName="viragt.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.80.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_VIRAGT64" FriendlyName="viragt64.sys" FileName="viragt64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.0.11" />
+    <FileAttrib ID="ID_FILEATTRIB_HPPORTIOX64" FriendlyName="HpPortIox64.sys" FileName="HpPortIox64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.2.0.9" />
+    <FileAttrib ID="ID_FILEATTRIB_WINRING0" FriendlyName="WinRing0.sys" FileName="WinRing0.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="2.0.0.0" />
   </FileRules>
   <!--Signers-->
   <Signers>
-    <Signer ID="ID_SIGNER_F_1" Name="VeriSign Class 3 Code Signing 2010 CA">
+    <Signer ID="ID_SIGNER_VERISIGN_2010" Name="VeriSign Class 3 Code Signing 2010 CA">
       <CertRoot Type="TBS" Value="4843A82ED3B1F2BFBEE9671960E1940C942F688D" />
-      <CertPublisher Value="CPUID" />
       <FileAttribRef RuleID="ID_FILEATTRIB_CPUZ_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_TREND_MICRO" />
+    </Signer>
+  <Signer ID="ID_SIGNER_CHEAT_ENGINE" Name="Microsoft Windows Third Party Component CA 2014 Cheat Engine OPUS">
+      <CertRoot Type="TBS" Value="D8BE9E4D9074088EF818BC6F6FB64955E90378B2754155126FEEBBBD969CF0AE" />
+      <CertOemID Value="Cheat Engine"/>
     </Signer>
     <Signer ID="ID_SIGNER_CPUZ" Name="DigiCert EV Code Signing CA (SHA2)">
       <CertRoot Type="TBS" Value="EEC58131DC11CD7F512501B15FDBC6074C603B68CA91F7162D5A042054EDB0CF" />
@@ -405,6 +423,8 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
       <CertPublisher Value="Microsoft Windows Hardware Compatibility Publisher" />
       <FileAttribRef RuleID="ID_FILEATTRIB_AMD_RYZEN" />
       <FileAttribRef RuleID="ID_FILEATTRIB_TREND_MICRO" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_HPPORTIOX64" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_WINRING0" />
     </Signer>
     <Signer ID="ID_SIGNER_WINDOWS_3RD_PARTY_2014" Name="Microsoft Windows Third Party Component CA 2014">
       <CertRoot Type="TBS" Value="D8BE9E4D9074088EF818BC6F6FB64955E90378B2754155126FEEBBBD969CF0AE" />
@@ -414,6 +434,12 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
       <FileAttribRef RuleID="ID_FILEATTRIB_BS_HWMIO64" />
       <FileAttribRef RuleID="ID_FILEATTRIB_VIRAGT" />
       <FileAttribRef RuleID="ID_FILEATTRIB_VIRAGT64" />
+    </Signer>
+   <Signer ID="ID_SIGNER_WINDOWS_3RD_PARTY_2010" Name="Microsoft Third Party Component Windows PCA 2010">
+      <CertRoot Type="TBS" Value="90C9669670E75989159E6EEF69625EB6AD17CBA6209ED56F5665D55450A05212" />
+      <CertPublisher Value="Microsoft Windows Hardware Compatibility Publisher" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_HPPORTIOX64" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_WINRING0" />
     </Signer>
     <Signer ID="ID_SIGNER_VERISIGN_2004" Name="VeriSign Class 3 Code Signing 2004 CA">
       <CertRoot Type="TBS" Value="C7FC1727F5B75A6421A1F95C73BBDB23580C48E5" />
@@ -452,7 +478,6 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     </Signer>
     <Signer ID="ID_SIGNER_SYMANTEC_CLASS_3" Name="Symantec Class 3 SHA256 Code Signing CA">
       <CertRoot Type="TBS" Value="A08E79C386083D875014C409C13D144E0A24386132980DF11FF59737C8489EB1" />
-      <CertPublisher Value="Advanced Micro Devices INC." />
       <FileAttribRef RuleID="ID_FILEATTRIB_AMD_RYZEN" />
       <FileAttribRef RuleID="ID_FILEATTRIB_TREND_MICRO" />
     </Signer>
@@ -467,6 +492,12 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
       <CertPublisher Value="TG Soft di Tonello Gianfranco ed Enrico S.r.l." />
       <FileAttribRef RuleID="ID_FILEATTRIB_VIRAGT" />
       <FileAttribRef RuleID="ID_FILEATTRIB_VIRAGT64" />
+    </Signer>
+    <Signer ID="ID_SIGNER_HP" Name="DigiCert SHA2 Assured ID Code Signing CA">
+      <CertRoot Type="TBS" Value="E767799478F64A34B3F53FF3BB9057FE1768F4AB178041B0DCC0FF1E210CBA65" />
+      <CertPublisher Value="HP Inc." />
+      <FileAttribRef RuleID="ID_FILEATTRIB_HPPORTIOX64" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_WINRING0" />
     </Signer>
     <Signer ID="ID_SIGNER_GEOTRUST_SRL_2009" Name="HT Srl Digital ID Class 3 - Microsoft Software Validation v2">
       <CertRoot Type="TBS" Value="d70edfa009a76bd8250d74e9ee92eb9ead7d4cb3" />
@@ -486,6 +517,9 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     <Signer ID="ID_SIGNER_JEROMIN_CODY_ERIC" Name="Jeromin Cody Eric">
       <CertRoot Type="TBS" Value="dfa6171201b51a2ec174310e8fb9f4c0fde2d365235e589ded0213c5279bea6e" />
     </Signer>
+	<Signer ID="ID_SIGNER_SAASAME" Name="SaaSaMe Ltd.">
+      <CertRoot Type="TBS" Value="A86DE66D8198E4272859881476A6F9936034A482" />
+    </Signer>
   </Signers>
   <!--Driver Signing Scenarios-->
   <SigningScenarios>
@@ -501,10 +535,12 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
           <DeniedSigner SignerId="ID_SIGNER_VBOX" />
           <DeniedSigner SignerId="ID_SIGNER_CPUZ" />
           <DeniedSigner SignerId="ID_SIGNER_ELBY" />
-          <DeniedSigner SignerId="ID_SIGNER_F_1" />
+          <DeniedSigner SignerId="ID_SIGNER_VERISIGN_2010" />
+          <DeniedSigner SignerId="ID_SIGNER_HP" />
           <DeniedSigner SignerId="ID_SIGNER_REALTEK" />
           <DeniedSigner SignerId="ID_SIGNER_REALTEK_2" />
           <DeniedSigner SignerId="ID_SIGNER_VERISIGN_2004" />
+          <DeniedSigner SignerId="ID_SIGNER_WINDOWS_3RD_PARTY_2010" />
           <DeniedSigner SignerId="ID_SIGNER_WINDOWS_3RD_PARTY_2012" />
           <DeniedSigner SignerId="ID_SIGNER_WINDOWS_3RD_PARTY_2014" />
           <DeniedSigner SignerId="ID_SIGNER_VERISIGN_2009" />
@@ -522,8 +558,10 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
           <DeniedSigner SignerId="ID_SIGNER_NANJING" />
           <DeniedSigner SignerId="ID_SIGNER_TRUST_ASIA" />
           <DeniedSigner SignerId="ID_SIGNER_JEROMIN_CODY_ERIC" />
+          <DeniedSigner SignerId="ID_SIGNER_CHEAT_ENGINE" />
+		  <DeniedSigner SignerId="ID_SIGNER_SAASAME" />
         </DeniedSigners>
-        <FileRulesRef>        
+        <FileRulesRef>
           <FileRuleRef RuleID="ID_DENY_ASIO_32_SHA1" />
           <FileRuleRef RuleID="ID_DENY_ASIO_32_SHA256" />
           <FileRuleRef RuleID="ID_DENY_ASIO_32_SHA1_PAGE" />
@@ -633,6 +671,10 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
           <FileRuleRef RuleID="ID_DENY_SEMAV6MSR64_SHA256" />
           <FileRuleRef RuleID="ID_DENY_SEMAV6MSR64_SHA1_PAGE" />
           <FileRuleRef RuleID="ID_DENY_SEMAV6MSR64_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_WINRING0_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_WINRING0_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_WINRING0_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_WINRING0_SHA256_PAGE" />
           <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_1" />
           <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_2" />
           <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_3" />
@@ -702,6 +744,9 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
           <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_67"/>
           <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_68"/>
           <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_69"/>
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_70"/>
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_71"/>
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_72"/>
           <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_1" />
           <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_2" />
           <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_3" />
@@ -771,11 +816,17 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
           <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_67"/>
           <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_68"/>
           <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_69"/>
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_70"/>
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_71"/>
+          <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_72"/>
           <FileRuleRef RuleID="ID_DENY_PROCESSHACKER"/>
           <FileRuleRef RuleID="ID_DENY_AMP"/>
           <FileRuleRef RuleID="ID_DENY_ASMMAP"/>
-          <FileRuleRef RuleID="ID_DENY_ASMMAP_64"/>
-        </FileRulesRef>
+          <FileRuleRef RuleID="ID_DENY_ASMMAP_64"/> 
+          <FileRuleRef RuleID="ID_DENY_PHYMEMX_64"/>
+          <FileRuleRef RuleID="ID_DENY_DBK_32"/>
+          <FileRuleRef RuleID="ID_DENY_DBK_64"/>
+		  </FileRulesRef>
       </ProductSigners>
     </SigningScenario>
     <SigningScenario Value="12" ID="ID_SIGNINGSCENARIO_WINDOWS" FriendlyName="">
@@ -794,7 +845,7 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     </Setting>
     <Setting Provider="PolicyInfo" Key="Information" ValueName="Id">
       <Value>
-        <String>10.0.22417.0</String>
+        <String>10.0.22493.0</String>
       </Value>
     </Setting>
   </Settings>

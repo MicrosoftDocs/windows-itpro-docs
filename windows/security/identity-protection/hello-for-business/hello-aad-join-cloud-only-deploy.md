@@ -2,7 +2,7 @@
 title: Azure Active Directory join cloud only deployment
 description: Use this deployment guide to successfully use Azure Active Directory to join a Windows 10 or Windows 11 device. 
 keywords: identity, Hello, Active Directory, cloud, 
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
@@ -51,40 +51,36 @@ If you use this Supports MFA switch with value **True**, you must verify that yo
 
 ## Use Intune to disable Windows Hello for Business enrollment
 
-We recommend that you disable or manage Windows Hello for Business provisioning behavior through an Intune policy using the steps in [Integrate Windows Hello for Business with Microsoft Intune](/mem/intune/protect/windows-hello).
+We recommend that you disable or manage Windows Hello for Business provisioning behavior through an Intune policy. For more specific information, see [Integrate Windows Hello for Business with Microsoft Intune](/mem/intune/protect/windows-hello).
 
-However, not everyone uses Intune. The following method explains how to disable Windows Hello for Business enrollment without Intune, or through a third-party mobile device management (MDM). If you aren't using Intune in your organization, you can disable Windows Hello for Business via the registry. We have provided the underlying registry subkeys for disabling Windows Hello for Business.
+### Disable Windows Hello for Business using Intune Enrollment policy
 
-## Disable Windows Hello for Business using Intune Enrollment policy
+The following method explains how to disable Windows Hello for Business enrollment without Intune.
 
 1. Sign into the [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) admin center.
 2. Go to **Devices** > **Enrollment** > **Enroll devices** > **Windows enrollment** > **Windows Hello for Business**. The Windows Hello for Business pane opens.
 3. If you don't want to enable Windows Hello for Business during device enrollment, select **Disabled** for **Configure Windows Hello for Business**.
 
-   When disabled, users cannot provision Windows Hello for Business. When set to Disabled, you can still configure the subsequent settings for Windows Hello for Business even though this policy won't enable Windows Hello for Business.
+    When disabled, users cannot provision Windows Hello for Business. When set to Disabled, you can still configure the subsequent settings for Windows Hello for Business even though this policy won't enable Windows Hello for Business.
 
 > [!NOTE]
 > This policy is only applied during new device enrollments. For currently enrolled devices, you can [set the same settings in a device configuration policy](hello-manage-in-organization.md).
 
 ## Disable Windows Hello for Business enrollment without Intune
 
-The information below can be pushed out to the devices through a third-party MDM, or some other method that you use to manage these devices, if you don't manage them with Intune. This push can also be set manually on the specific device(s).
+If you don't use Intune in your organization, then you can disable Windows Hello for Business using the registry. You can use a third-party MDM, or some other method that you use to manage these devices. Because these systems are Azure AD Joined only, and not domain joined, these settings can also be made manually in the registry.
 
-Because these systems are Azure AD Joined only, and not domain joined, these settings could be made in the registry on the device(s) when Intune isn't used.
-
-Here are the registry settings an Intune policy would set.
-
-Intune Device Policy: **`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Policies\PassportForWork\<Tenant-ID>\Device\Policies`**
+Intune uses the following registry keys: **`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Policies\PassportForWork\<Tenant-ID>\Device\Policies`**
 
 To look up your Tenant ID, see [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant)
 
-These registry settings are pushed from Intune for user policies for your reference.
+These registry settings are pushed from Intune for user policies:
 
 - Intune User Policy: **`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Policies\PassportForWork\<Tenant-ID>\UserSid\Policies`**
 - DWORD: **UsePassportForWork**
 - Value = **0** for Disable, or Value = **1** for Enable
 
-For your reference, these registry settings can be applied from Local or Group Policies.
+These registry settings can be applied from Local or Group Policies:
 
 - Local/GPO User Policy: **`HKEY_USERS\UserSID\SOFTWARE\Policies\Microsoft\PassportForWork`**
 - Local/GPO Device Policy: **`HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\PassportForWork`**

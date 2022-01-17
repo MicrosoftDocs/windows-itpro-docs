@@ -1,6 +1,6 @@
 ---
 title: Delivery Optimization for Windows client updates
-manager: laurawi
+manager: dougeby
 description: This article provides information about Delivery Optimization, a peer-to-peer distribution method in Windows 10.
 keywords: oms, operations management suite, wdav, updates, downloads, log analytics
 ms.prod: w10
@@ -12,6 +12,7 @@ ms.author: jaimeo
 ms.collection:
 - M365-modern-desktop
 - m365initiative-coredeploy
+- highpri
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
@@ -39,6 +40,10 @@ For information about setting up Delivery Optimization, including tips for the b
 
 - New peer selection options: Currently the available options include: 0 = NAT, 1 = Subnet mask, and 2 = Local Peer Discovery. The subnet mask option applies to both Download Modes LAN (1) and Group (2). If Group mode is set, Delivery Optimization will connect to locally discovered peers that are also part of the same Group (have the same Group ID)."
 - Local Peer Discovery: a new option for **Restrict Peer Selection By** (in Group Policy) or **DORestrictPeerSelectionBy** (in MDM). This option restricts the discovery of local peers using the DNS-SD protocol. When you set Option 2, Delivery Optimization will restrict peer selection to peers that are locally discovered (using DNS-SD). If you also enabled Group mode, Delivery Optimization will connect to locally discovered peers that are also part of the same group (that is, those which have the same Group ID).
+
+> [!NOTE]
+> The Local Peer Discovery (DNS-SD) option can only be set via MDM delivered policies on Windows 11 builds. This feature can be enabled in supported Windows 10 builds by setting the `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization\DORestrictPeerSelectionBy` value to **2**. For more information, see [Delivery Optimization reference](/windows/deployment/update/waas-delivery-optimization-reference).
+
 - Starting with Windows 10, version 2006 (and in Windows 11), the Bypass option of [Download Mode](waas-delivery-optimization-reference.md#download-mode) is no longer used.
 
 ## Requirements
@@ -117,7 +122,7 @@ Delivery Optimization also communicates with its cloud service by using HTTP/HTT
 
 
 #### What are the requirements if I use a proxy?
-For Delivery Optimization to successfully use the proxy, you should set up the proxy by using Windows proxy settings or Internet Explorer proxy settings. For details see [Using a proxy with Delivery Optimization](./delivery-optimization-proxy.md). Most content downloaded with Delivery Optimization uses byte range requests. Make sure your proxy allows byte range requests. For more information, see [Proxy requirements for Windows Update](https://support.microsoft.com/help/3175743/proxy-requirements-for-windows-update).
+For Delivery Optimization to successfully use the proxy, you should set up the proxy by using Windows proxy settings or Internet Explorer proxy settings. For details see [Using a proxy with Delivery Optimization](./delivery-optimization-proxy.md). Most content downloaded with Delivery Optimization uses byte range requests. Make sure your proxy allows byte range requests. For more information, see [Proxy requirements for Windows Update](/windows/deployment/update/windows-update-troubleshooting).
 
 #### What hostnames should I allow through my firewall to support Delivery Optimization?
 

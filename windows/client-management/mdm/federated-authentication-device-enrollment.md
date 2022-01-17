@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 07/28/2017
 ---
 
@@ -16,9 +16,9 @@ ms.date: 07/28/2017
 
 This section provides an example of the mobile device enrollment protocol using federated authentication policy. When the authentication policy is set to Federated, the web authentication broker is leveraged by the enrollment client to get a security token. The enrollment client calls the web authentication broker API within the response message to start the process. The server should build the web authentication broker pages to fit the device screen and should be consistent with the existing enrollment UI. The opaque security token that is returned from the broker as an end page is used by the enrollment client as the device security secret during the client certificate request call.
 
-The &lt;AuthenticationServiceURL&gt; element the discovery response message specifies web authentication broker page start URL.
+The `<AuthenticationServiceURL>` element the discovery response message specifies web authentication broker page start URL.
 
-For details about the Microsoft mobile device enrollment protocol for Windows 10, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](/openspecs/windows_protocols/ms-mde2/4d7eadd5-3951-4f1c-8159-c39e07cbe692).
+For details about the Microsoft mobile device enrollment protocol for Windows 10, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](/openspecs/windows_protocols/ms-mde2/4d7eadd5-3951-4f1c-8159-c39e07cbe692).
 
 ## In this topic
 
@@ -26,7 +26,7 @@ For details about the Microsoft mobile device enrollment protocol for Windows 1
 [Enrollment policy web service](#enrollment-policy-web-service)  
 [Enrollment web service](#enrollment-web-service)  
 
-For the list of enrollment scenarios not supported in Windows 10, see [Enrollment scenarios not supported](mobile-device-enrollment.md#enrollment-scenarios-not-supported).
+For the list of enrollment scenarios not supported in Windows 10, see [Enrollment scenarios not supported](mobile-device-enrollment.md#enrollment-scenarios-not-supported).
 
 ## Discovery service
 
@@ -35,7 +35,7 @@ The discovery web service provides the configuration information necessary for a
 > [!NOTE]
 > The administrator of the discovery service must create a host with the address enterpriseenrollment.*domain\_name*.com.
 
-The automatic discovery flow of the device uses the domain name of the email address that was submitted to the Workplace settings screen during sign in. The automatic discovery system constructs a URI that uses this hostname by appending the subdomain “enterpriseenrollment” to the domain of the email address, and by appending the path “/EnrollmentServer/Discovery.svc”. For example, if the email address is “sample@contoso.com”, the resulting URI for first Get request would be: http:<span></span>//enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc
+The automatic discovery flow of the device uses the domain name of the email address that was submitted to the Workplace settings screen during sign in. The automatic discovery system constructs a URI that uses this hostname by appending the subdomain “enterpriseenrollment” to the domain of the email address, and by appending the path “/EnrollmentServer/Discovery.svc”. For example, if the email address is “sample@contoso.com”, the resulting URI for first Get request would be: `http://enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc`.
 
 The first request is a standard HTTP GET request.
 
@@ -146,9 +146,9 @@ A new XML tag, AuthenticationServiceUrl, is introduced in the DiscoveryResponse 
 
 The following are the explicit requirements for the server.
 
--   The &lt;DiscoveryResponse&gt;&lt;AuthenticationServiceUrl&gt; element must support HTTPS.
+-   The `<DiscoveryResponse>``<AuthenticationServiceUrl>` element must support HTTPS.
 -   The authentication server must use a device trusted root certificate. Otherwise, the WAP call will fail.
--   WP doesn’t support Window Integrated Authentication (WIA) for ADFS during WAB authentication. ADFS 2012 R2 if used needs to be configured to not attempt WIA for Windows device.
+-   WP doesn’t support Windows Integrated Authentication (WIA) for ADFS during WAB authentication. ADFS 2012 R2 if used needs to be configured to not attempt WIA for Windows device.
 
 The enrollment client issues an HTTPS request as follows:
 
@@ -156,8 +156,8 @@ The enrollment client issues an HTTPS request as follows:
 AuthenticationServiceUrl?appru=<appid>&amp;login_hint=<User Principal Name>
 ```
 
-- &lt;appid&gt; is of the form ms-app://string
-- &lt;User Principal Name&gt; is the name of the enrolling user, for example, user@constoso.com as input by the user in an enrollment sign in page. The value of this attribute serves as a hint that can be used by the authentication server as part of the authentication.
+- `<appid>` is of the form ms-app://string
+- `<User Principal Name>` is the name of the enrolling user, for example, user@constoso.com as input by the user in an enrollment sign in page. The value of this attribute serves as a hint that can be used by the authentication server as part of the authentication.
 
 After authentication is complete, the auth server should return an HTML form document with a POST method action of appid identified in the query string parameter.
 
@@ -191,7 +191,7 @@ Content-Length: 556
 </html>
 ```
 
-The server has to send a POST to a redirect URL of the form ms-app://string (the URL scheme is ms-app) as indicated in the POST method action. The security token value is the base64-encoded string "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\#base64binary" contained in the &lt;wsse:BinarySecurityToken&gt; EncodingType attribute. Windows does the binary encode when it sends it back to enrollment server, in the form it is just HTML encoded. This string is opaque to the enrollment client; the client does not interpret the string.
+The server has to send a POST to a redirect URL of the form ms-app://string (the URL scheme is ms-app) as indicated in the POST method action. The security token value is the base64-encoded string `http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\#base64binary` contained in the `<wsse:BinarySecurityToken>` EncodingType attribute. Windows does the binary encode when it sends it back to enrollment server, in the form it is just HTML encoded. This string is opaque to the enrollment client; the client does not interpret the string.
 
 The following example shows a response received from the discovery web service which requires authentication via WAB.
 
@@ -235,18 +235,18 @@ Policy service is optional. By default, if no policies are specified, the minimu
 
 This web service implements the X.509 Certificate Enrollment Policy Protocol (MS-XCEP) specification that allows customizing certificate enrollment to match different security needs of enterprises at different times (cryptographic agility). The service processes the GetPolicies message from the client, authenticates the client, and returns matching enrollment policies in the GetPoliciesResponse message.
 
-For Federated authentication policy, the security token credential is provided in a request message using the &lt;wsse:BinarySecurityToken&gt; element \[WSS\]. The security token is retrieved as described in the discovery response section. The authentication information is as follows:
+For Federated authentication policy, the security token credential is provided in a request message using the `<wsse:BinarySecurityToken>` element \[WSS\]. The security token is retrieved as described in the discovery response section. The authentication information is as follows:
 
--   wsse:Security: The enrollment client implements the &lt;wsse:Security&gt; element defined in \[WSS\] section 5. The &lt;wsse:Security&gt; element must be a child of the &lt;s:Header&gt; element.
--   wsse:BinarySecurityToken: The enrollment client implements the &lt;wsse:BinarySecurityToken&gt; element defined in \[WSS\] section 6.3. The &lt;wsse:BinarySecurityToken&gt; element must be included as a child of the &lt;wsse:Security&gt; element in the SOAP header.
+-   wsse:Security: The enrollment client implements the `<wsse:Security>` element defined in \[WSS\] section 5. The `<wsse:Security>` element must be a child of the `<s:Header>` element.
+-   wsse:BinarySecurityToken: The enrollment client implements the `<wsse:BinarySecurityToken>` element defined in \[WSS\] section 6.3. The `<wsse:BinarySecurityToken>` element must be included as a child of the `<wsse:Security>` element in the SOAP header.
 
-As was described in the discovery response section, the inclusion of the &lt;wsse:BinarySecurityToken&gt; element is opaque to the enrollment client, and the client does not interpret the string, and the inclusion of the element is agreed upon by the security token authentication server (as identified in the &lt;AuthenticationServiceUrl&gt; element of &lt;DiscoveryResponse&gt; and the enterprise server.
+As was described in the discovery response section, the inclusion of the `<wsse:BinarySecurityToken>` element is opaque to the enrollment client, and the client does not interpret the string, and the inclusion of the element is agreed upon by the security token authentication server (as identified in the `<AuthenticationServiceUrl>` element of `<DiscoveryResponse>` and the enterprise server.
 
-The &lt;wsse:BinarySecurityToken&gt; element contains a base64-encoded string. The enrollment client uses the security token received from the authentication server and base64-encodes the token to populate the &lt;wsse:BinarySecurityToken&gt; element. 
+The `<wsse:BinarySecurityToken>` element contains a base64-encoded string. The enrollment client uses the security token received from the authentication server and base64-encodes the token to populate the `<wsse:BinarySecurityToken>` element. 
 
-- wsse:BinarySecurityToken/attributes/ValueType: The `<wsse:BinarySecurityToken>` ValueType attribute must be "http:<span></span>//schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentUserToken".
+- wsse:BinarySecurityToken/attributes/ValueType: The `<wsse:BinarySecurityToken>` ValueType attribute must be `http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentUserToken`.
 
-- wsse:BinarySecurityToken/attributes/EncodingType: The `<wsse:BinarySecurityToken>` EncodingType attribute must be "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\#base64binary".
+- wsse:BinarySecurityToken/attributes/EncodingType: The `<wsse:BinarySecurityToken>` EncodingType attribute must be `http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\#base64binary`.
 
 The following is an enrollment policy request example with a received security token as client credential.
 
@@ -478,7 +478,7 @@ After validating the request, the web service looks up the assigned certificate 
 > [!Note]
 > The HTTP server response must not set Transfer-Encoding to Chunked; it must be sent as one message.
 
-Similar to the TokenType in the RST, the RSTR will use a custom ValueType in the BinarySecurityToken (http:<span></span>//schemas.microsoft.com/ConfigurationManager/Enrollment/DeviceEnrollmentProvisionDoc), because the token is more than an X.509 v3 certificate.
+Similar to the TokenType in the RST, the RSTR will use a custom ValueType in the BinarySecurityToken (`http://schemas.microsoft.com/ConfigurationManager/Enrollment/DeviceEnrollmentProvisionDoc`), because the token is more than an X.509 v3 certificate.
 
 The provisioning XML contains:
 
@@ -616,7 +616,7 @@ The following code shows sample provisioning XML (presented in the preceding pac
 
 > [!NOTE]
 > 
-> -   &lt;Parm name&gt; and &lt;characteristic type=&gt; elements in the w7 APPLICATION CSP XML are case sensitive and must be all uppercase.
+> -   `<Parm name>` and `<characteristic type=>` elements in the w7 APPLICATION CSP XML are case sensitive and must be all uppercase.
 > 
 > -   In w7 APPLICATION characteristic, both CLIENT and APPSRV credentials should be provided in XML.
 > 
