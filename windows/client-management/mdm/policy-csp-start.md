@@ -819,7 +819,7 @@ The following list shows the supported values:
 <!--Description-->
 This policy will allow admins to push a new list of pinned apps to override the default/current list of pinned apps in the Windows 11 start menu experience.
 
-It contains details on how to configure the start menu on Windows 11, see [/windows-hardware/customize/desktop/customize-the-windows-11-start-menu](https://docs.microsoft.com/windows-hardware/customize/desktop/customize-the-windows-11-start-menu)
+It contains details on how to configure the start menu on Windows 11, see [/windows-hardware/customize/desktop/customize-the-windows-11-start-menu](/windows-hardware/customize/desktop/customize-the-windows-11-start-menu)
 
 <!--/Description-->
 
