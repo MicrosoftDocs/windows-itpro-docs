@@ -7659,6 +7659,17 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### MemoryDump policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-memorydump.md#memorydump-allowcrashdump" id="memorydump-allowcrashdump">MemoryDump/AllowCrashDump</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-memorydump.md#memorydump-allowlivedump" id="memorydump-allowlivedump">MemoryDump/AllowLiveDump<</a>
+  </dd>
+</dl>
+
 ### Messaging policies
 
 <dl>
