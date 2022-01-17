@@ -755,6 +755,8 @@ items:
               href: policy-csp-networkisolation.md
             - name: NetworkListManager
               href: policy-csp-networklistmanager.md
+            - name: NewsAndInterests
+              href: policy-csp-newsandinterests.md
             - name: Notifications
               href: policy-csp-notifications.md
             - name: Power

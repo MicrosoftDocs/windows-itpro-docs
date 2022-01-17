@@ -7776,6 +7776,14 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   <dd>
 </dl>
 
+### NewsAndInterests policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-newsandinterests.md#newsandinterests-allownewsandinterests" id="newsandinterests-allownewsandinterests">NewsAndInterests/AllowNewsAndInterests</a>
+  </dd>
+</dl>
+
 ### Notifications policies
 
 <dl>
