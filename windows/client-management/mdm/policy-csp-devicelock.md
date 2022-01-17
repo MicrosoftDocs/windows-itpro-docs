@@ -580,7 +580,7 @@ For additional information about this policy, see [Exchange ActiveSync Policy En
 The following list shows the supported values:
 
 -   An integer X where 0 &lt;= X &lt;= 999.
--   0 (default) - No timeout is defined. The default of "0" is Windows Phone 7.5 parity and is interpreted by as "No timeout is defined."
+-   0 (default) - No timeout is defined.
 
 <!--/SupportedValues-->
 <!--/Policy-->

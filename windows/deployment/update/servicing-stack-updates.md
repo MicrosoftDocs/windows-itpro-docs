@@ -6,7 +6,7 @@ ms.mktglfcycl: manage
 audience: itpro
 itproauthor: jaimeo
 author: jaimeo
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.author: jaimeo
 manager: dougeby
 ms.collection:
