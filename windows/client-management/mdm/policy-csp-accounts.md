@@ -69,16 +69,6 @@ manager: dansimp
     <td>Yes</td>
     <td>Yes</td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -99,7 +89,7 @@ Specifies whether user is allowed to add non-MSA email accounts.
 Most restricted value is 0.
 
 > [!NOTE]
-> This policy will only block UI/UX-based methods for adding non-Microsoft accounts. Even if this policy is enforced, you can still provision non-MSA accounts using the [EMAIL2 CSP](email2-csp.md).
+> This policy will only block UI/UX-based methods for adding non-Microsoft accounts. 
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -145,16 +135,6 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
     <td>Yes</td>
     <td>Yes</td>
 </tr>
@@ -224,16 +204,6 @@ The following list shows the supported values:
     <td>Yes</td>
     <td>Yes</td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -296,16 +266,6 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
     <td>Yes</td>
     <td>Yes</td>
 </tr>
