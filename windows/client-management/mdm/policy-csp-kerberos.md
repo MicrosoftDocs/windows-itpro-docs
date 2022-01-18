@@ -25,6 +25,9 @@ manager: dansimp
     <a href="#kerberos-allowforestsearchorder">Kerberos/AllowForestSearchOrder</a>
   </dd>
   <dd>
+    <a href="#kerberos-cloudkerberosticketretrievalenabled">Kerberos/CloudKerberosTicketRetrievalEnabled</a>
+  </dd>
+  <dd>
     <a href="#kerberos-kerberosclientsupportsclaimscompoundarmor">Kerberos/KerberosClientSupportsClaimsCompoundArmor</a>
   </dd>
   <dd>
@@ -92,6 +95,58 @@ If you disable or do not configure this policy setting, the Kerberos client does
 ADMX Info:  
 -   GP Friendly name: *Use forest search order*
 -   GP name: *ForestSearch*
+-   GP path: *System/Kerberos*
+-   GP ADMX file name: *Kerberos.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="kerberos-cloudkerberosticketretrievalenabled"></a>**Kerberos/CloudKerberosTicketRetrievalEnabled**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy allows retrieving the cloud Kerberos ticket during the logon.
+
+- If you disable (0) or do not configure this policy setting, the cloud Kerberos ticket is not retrieved during the logon.
+
+- If you enable (1) this policy, the cloud Kerberos ticket is retrieved during the logon.
+<!--/Description-->
+
+<!--SupportedValues-->
+Valid values:  
+0 (default) - Disabled. 
+1 - Enabled. 
+
+<!--/SupportedValues-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Allow retrieving the cloud Kerberos ticket during the logon*
+-   GP name: *CloudKerberosTicketRetrievalEnabled*
 -   GP path: *System/Kerberos*
 -   GP ADMX file name: *Kerberos.admx*
 
