@@ -200,7 +200,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy controls the behavior of moving platform feature on Hololens 2, that is, whether it is turned off / on or it can be toggled by a user. It should only be used by customers who intend to use Hololens 2 in moving environments with low dynamic motion. For background information, see [HoloLens 2 Moving Platform Mode | Microsoft Docs](https://docs.microsoft.com/hololens/hololens2-moving-platform#:~:text=Why%20Moving%20Platform%20Mode%20is%20Necessary%20HoloLens%20needs%2csimilar%20pieces%20of%20information%20from%20two%20separate%20sources:).
+This policy controls the behavior of moving platform feature on Hololens 2, that is, whether it is turned off / on or it can be toggled by a user. It should only be used by customers who intend to use Hololens 2 in moving environments with low dynamic motion. For background information, see [HoloLens 2 Moving Platform Mode | Microsoft Docs](/hololens/hololens2-moving-platform#:~:text=Why%20Moving%20Platform%20Mode%20is%20Necessary%20HoloLens%20needs%2csimilar%20pieces%20of%20information%20from%20two%20separate%20sources:).
 
 <!--/Description-->
 
