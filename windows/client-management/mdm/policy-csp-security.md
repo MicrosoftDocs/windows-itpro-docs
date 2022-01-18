@@ -190,7 +190,7 @@ Admin access is required. The prompt will appear on first admin logon after a re
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure the system to clear the TPM if it is not in a ready state.*
+-   GP Friendly name: *Configure the system to clear the TPM if it is not in a ready state.*
 -   GP name: *ClearTPMIfNotReady_Name*
 -   GP path: *System/Trusted Platform Module Services*
 -   GP ADMX file name: *TPM.admx*

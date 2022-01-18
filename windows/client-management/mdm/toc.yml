@@ -149,8 +149,6 @@ items:
           items: 
             - name: BitLocker DDF file
               href: bitlocker-ddf-file.md
-        - name: BrowserFavorite CSP
-          href: browserfavorite-csp.md
         - name: CellularSettings CSP
           href: cellularsettings-csp.md
         - name: CertificateStore CSP
@@ -701,6 +699,8 @@ items:
               href: policy-csp-display.md
             - name: DmaGuard
               href: policy-csp-dmaguard.md
+            - name: EAP
+              href: policy-csp-eap.md
             - name: Education
               href: policy-csp-education.md
             - name: EnterpriseCloudPrint
@@ -721,6 +721,8 @@ items:
               href: policy-csp-games.md
             - name: Handwriting
               href: policy-csp-handwriting.md
+            - name: HumanPresence
+              href: policy-csp-humanpresence.md
             - name: InternetExplorer
               href: policy-csp-internetexplorer.md
             - name: Kerberos
@@ -753,6 +755,8 @@ items:
               href: policy-csp-networkisolation.md
             - name: NetworkListManager
               href: policy-csp-networklistmanager.md
+            - name: NewsAndInterests
+              href: policy-csp-newsandinterests.md
             - name: Notifications
               href: policy-csp-notifications.md
             - name: Power
@@ -763,6 +767,8 @@ items:
               href: policy-csp-privacy.md
             - name: RemoteAssistance
               href: policy-csp-remoteassistance.md
+            - name: RemoteDesktop
+              href: policy-csp-remotedesktop.md
             - name: RemoteDesktopServices
               href: policy-csp-remotedesktopservices.md
             - name: RemoteManagement

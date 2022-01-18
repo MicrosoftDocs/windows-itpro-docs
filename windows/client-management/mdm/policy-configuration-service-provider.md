@@ -6438,6 +6438,14 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### EAP policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-eap.md#eap-allowtls1_3" id="eap-allowtls1_3">EAP/AllowTLS1_3</a>
+  </dd>
+</dl>
+
 ### Education policies
 
 <dl>
@@ -6625,6 +6633,20 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 <dl>
   <dd>
     <a href="./policy-csp-handwriting.md#handwriting-paneldefaultmodedocked" id="handwriting-paneldefaultmodedocked">Handwriting/PanelDefaultModeDocked</a>
+  </dd>
+</dl>
+
+### HumanPresence policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-humanpresence.md#humanpresence-forceinstantlock" id="humanpresence-forceinstantlock">HumanPresence/ForceInstantLock</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-humanpresence.md#humanpresence-forceinstantwake" id="humanpresence-forceinstantwake">HumanPresence/ForceInstantWake</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-humanpresence.md#humanpresence-forcelocktimeout" id="humanpresence-forcelocktimeout">HumanPresence/ForceLockTimeout</a>
   </dd>
 </dl>
 
@@ -7754,6 +7776,14 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   <dd>
 </dl>
 
+### NewsAndInterests policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-newsandinterests.md#newsandinterests-allownewsandinterests" id="newsandinterests-allownewsandinterests">NewsAndInterests/AllowNewsAndInterests</a>
+  </dd>
+</dl>
+
 ### Notifications policies
 
 <dl>
@@ -8154,6 +8184,17 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-remoteassistance.md#remoteassistance-unsolicitedremoteassistance" id="remoteassistance-unsolicitedremoteassistance">RemoteAssistance/UnsolicitedRemoteAssistance</a>
+  </dd>
+</dl>
+
+### RemoteDesktop policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-remotedesktop.md#remotedesktop-autosubscription" id="remotedesktop-autosubscription">RemoteDesktop/AutoSubscription</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-remotedesktop.md#remotedesktop-loadaadcredkeyfromprofile" id="remotedesktop-loadaadcredkeyfromprofile">RemoteDesktop/LoadAadCredKeyFromProfile</a>
   </dd>
 </dl>
 
