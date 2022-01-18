@@ -7666,7 +7666,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-memorydump.md#memorydump-allowcrashdump" id="memorydump-allowcrashdump">MemoryDump/AllowCrashDump</a>
   </dd>
   <dd>
-    <a href="./policy-csp-memorydump.md#memorydump-allowlivedump" id="memorydump-allowlivedump">MemoryDump/AllowLiveDump<</a>
+    <a href="./policy-csp-memorydump.md#memorydump-allowlivedump" id="memorydump-allowlivedump">MemoryDump/AllowLiveDump</a>
   </dd>
 </dl>
 
