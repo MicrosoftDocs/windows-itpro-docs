@@ -89,7 +89,7 @@ If you set this policy to ‘disabled’, new remote shell connections are rejec
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow Remote Shell Access*
+-   GP Friendly name: *Allow Remote Shell Access*
 -   GP name: *AllowRemoteShellAccess*
 -   GP path: *Windows Components/Windows Remote Shell*
 -   GP ADMX file name: *WindowsRemoteShell.admx*
@@ -137,7 +137,7 @@ If you disable or do not configure this policy setting, the default number is fi
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *MaxConcurrentUsers*
+-   GP Friendly name: *MaxConcurrentUsers*
 -   GP name: *MaxConcurrentUsers*
 -   GP path: *Windows Components/Windows Remote Shell*
 -   GP ADMX file name: *WindowsRemoteShell.admx*
@@ -185,7 +185,7 @@ If you do not configure or disable this policy setting, the default value of 900
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify idle Timeout*
+-   GP Friendly name: *Specify idle Timeout*
 -   GP name: *IdleTimeout*
 -   GP path: *Windows Components/Windows Remote Shell*
 -   GP ADMX file name: *WindowsRemoteShell.admx*
@@ -233,7 +233,7 @@ If you disable or do not configure this policy setting, the value 150 is used by
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify maximum amount of memory in MB per Shell*
+-   GP Friendly name: *Specify maximum amount of memory in MB per Shell*
 -   GP name: *MaxMemoryPerShellMB*
 -   GP path: *Windows Components/Windows Remote Shell*
 -   GP ADMX file name: *WindowsRemoteShell.admx*
@@ -279,7 +279,7 @@ If you disable or do not configure this policy setting,  the limit is five proce
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify maximum number of processes per Shell*
+-   GP Friendly name: *Specify maximum number of processes per Shell*
 -   GP name: *MaxProcessesPerShell*
 -   GP path: *Windows Components/Windows Remote Shell*
 -   GP ADMX file name: *WindowsRemoteShell.admx*
@@ -327,7 +327,7 @@ If you disable or do not configure this policy setting, by default the limit is 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify maximum number of remote shells per user*
+-   GP Friendly name: *Specify maximum number of remote shells per user*
 -   GP name: *MaxShellsPerUser*
 -   GP path: *Windows Components/Windows Remote Shell*
 -   GP ADMX file name: *WindowsRemoteShell.admx*
@@ -369,7 +369,7 @@ This policy setting is deprecated and has no effect when set to any state: Enabl
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify Shell Timeout*
+-   GP Friendly name: *Specify Shell Timeout*
 -   GP name: *ShellTimeOut*
 -   GP path: *Windows Components/Windows Remote Shell*
 -   GP ADMX file name: *WindowsRemoteShell.admx*

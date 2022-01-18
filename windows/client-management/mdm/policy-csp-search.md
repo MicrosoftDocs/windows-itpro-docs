@@ -99,7 +99,7 @@ Allow search and Cortana to search cloud sources like OneDrive and SharePoint. T
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Cloud Search*
+-   GP Friendly name: *Allow Cloud Search*
 -   GP name: *AllowCloudSearch*
 -   GP element: *AllowCloudSearch_Dropdown*
 -   GP path: *Windows Components/Search*
@@ -148,7 +148,7 @@ This policy allows the cortana opt-in page during windows setup out of the box e
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Cloud Search*
+-   GP Friendly name: *Allow Cloud Search*
 -   GP name: *AllowCortanaInAAD*
 -   GP element: *AllowCloudSearch_Dropdown*
 -   GP path: *Windows Components/Search*
@@ -196,7 +196,7 @@ Controls if the user can configure search to Find My Files mode, which searches 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Find My Files*
+-   GP Friendly name: *Allow Find My Files*
 -   GP name: *AllowFindMyFiles*
 -   GP path: *Computer Configuration/Administrative Templates/Windows Components/Search*
 -   GP ADMX file name: *Search.admx*
@@ -256,7 +256,7 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow indexing of encrypted files*
+-   GP Friendly name: *Allow indexing of encrypted files*
 -   GP name: *AllowIndexingEncryptedStoresOrItems*
 -   GP path: *Windows Components/Search*
 -   GP ADMX file name: *Search.admx*
@@ -306,7 +306,7 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow search and Cortana to use location*
+-   GP Friendly name: *Allow search and Cortana to use location*
 -   GP name: *AllowSearchToUseLocation*
 -   GP path: *Windows Components/Search*
 -   GP ADMX file name: *Search.admx*
@@ -368,7 +368,7 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow use of diacritics*
+-   GP Friendly name: *Allow use of diacritics*
 -   GP name: *AllowUsingDiacritics*
 -   GP path: *Windows Components/Search*
 -   GP ADMX file name: *Search.admx*
@@ -452,7 +452,7 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Always use automatic language detection when indexing content and properties*
+-   GP Friendly name: *Always use automatic language detection when indexing content and properties*
 -   GP name: *AlwaysUseAutoLangDetection*
 -   GP path: *Windows Components/Search*
 -   GP ADMX file name: *Search.admx*
@@ -500,7 +500,7 @@ If enabled, the search indexer backoff feature will be disabled. Indexing will c
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Disable indexer backoff*
+-   GP Friendly name: *Disable indexer backoff*
 -   GP name: *DisableBackoff*
 -   GP path: *Windows Components/Search*
 -   GP ADMX file name: *Search.admx*
@@ -552,7 +552,7 @@ If you disable or do not configure this policy setting, locations on removable d
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Do not allow locations on removable drives to be added to libraries*
+-   GP Friendly name: *Do not allow locations on removable drives to be added to libraries*
 -   GP name: *DisableRemovableDriveIndexing*
 -   GP path: *Windows Components/Search*
 -   GP ADMX file name: *Search.admx*
@@ -605,7 +605,7 @@ If you disable this policy setting, queries will be performed on the web and web
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Don't search the web or display web results in Search*
+-   GP Friendly name: *Don't search the web or display web results in Search*
 -   GP name: *DoNotUseWebResults*
 -   GP path: *Windows Components/Search*
 -   GP ADMX file name: *Search.admx*
@@ -657,7 +657,7 @@ When this policy is disabled or not configured, Windows Desktop Search automatic
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Stop indexing in the event of limited hard drive space*
+-   GP Friendly name: *Stop indexing in the event of limited hard drive space*
 -   GP name: *StopIndexingOnLimitedHardDriveSpace*
 -   GP path: *Windows Components/Search*
 -   GP ADMX file name: *Search.admx*
@@ -705,7 +705,7 @@ If enabled, clients will be unable to query this computer's index remotely. Thus
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Prevent clients from querying the index remotely*
+-   GP Friendly name: *Prevent clients from querying the index remotely*
 -   GP name: *PreventRemoteQueries*
 -   GP path: *Windows Components/Search*
 -   GP ADMX file name: *Search.admx*
