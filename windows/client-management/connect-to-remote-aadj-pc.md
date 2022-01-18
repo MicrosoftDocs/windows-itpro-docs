@@ -9,10 +9,11 @@ ms.pagetype: devices
 author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
-ms.date: 09/14/2021
+ms.date: 01/18/2022
 ms.reviewer: 
 manager: dansimp
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Connect to remote Azure Active Directory-joined PC
@@ -20,7 +21,7 @@ ms.topic: article
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 - Windows 11
 
 
@@ -54,8 +55,7 @@ Ensure [Remote Credential Guard](/windows/access-protection/remote-credential-gu
         ```
         where *the-UPN-attribute-of-your-user* is the name of the user profile in C:\Users\, which is created based on the DisplayName attribute in Azure AD.
 
-        This command only works for AADJ device users already added to any of the local groups (administrators).
-        Otherwise this command throws the below error. For example:
+        In order to execute this PowerShell command you be a member of the local Administrators group. Otherwise, you'll get an error like this example:
         - for cloud only user: "There is no such global user or group : *name*"
         - for synced user: "There is no such global user or group : *name*" </br>
 
@@ -66,13 +66,13 @@ Ensure [Remote Credential Guard](/windows/access-protection/remote-credential-gu
 
       - Adding users using policy
      
-         Starting in Windows 10, version 2004, you can add users or Azure AD groups to the Remote Desktop Users using MDM policies as described in [How to manage the local administrators group on Azure AD joined devices](/azure/active-directory/devices/assign-local-admin#manage-administrator-privileges-using-azure-ad-groups-preview).
+         Starting in Windows 10, version 2004, you can add users to the Remote Desktop Users using MDM policies as described in [How to manage the local administrators group on Azure AD joined devices](/azure/active-directory/devices/assign-local-admin#manage-administrator-privileges-using-azure-ad-groups-preview).
 
          > [!TIP]
          > When you connect to the remote PC, enter your account name in this format: AzureAD\yourloginid@domain.com.
 
          > [!NOTE]
-         > If you cannot connect using Remote Desktop Connection 6.0, you must turn off the new features of RDP 6.0 and revert back to RDP 5.0 by making a few changes in the RDP file. See the details in this [support article](https://support.microsoft.com/help/941641/remote-desktop-connection-6-0-prompts-you-for-credentials-before-you-e).
+         > If you cannot connect using Remote Desktop Connection 6.0, you must turn off the new features of RDP 6.0 and revert back to RDP 5.0 by making a few changes in the RDP file. See the details in this [support article](/troubleshoot/windows-server/remote/remote-desktop-connection-6-prompts-credentials).
 
 ## Supported configurations
 

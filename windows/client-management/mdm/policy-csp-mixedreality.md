@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 10/12/2021
 ms.reviewer: 
 manager: dansimp
@@ -46,24 +46,12 @@ manager: dansimp
 <a href="" id="mixedreality-aadgroupmembershipcachevalidityindays"></a>**MixedReality/AADGroupMembershipCacheValidityInDays**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>HoloLens (1st gen) Development Edition</td>
-    <td>❌</td>
-</tr>
-<tr>
-    <td>HoloLens (1st gen) Commercial Suite</td>
-    <td>❌</td>
-</tr>
-<tr>
-    <td>HoloLens 2</td>
-    <td>✔️</td>
-</tr>
-</table>
+
+|Windows Edition|Supported|
+|--- |--- |
+|HoloLens (1st gen) Development Edition|No|
+|HoloLens (1st gen) Commercial Suite|No|
+|HoloLens 2|Yes|
 
 Steps to use this policy correctly:
 
@@ -86,24 +74,12 @@ Steps to use this policy correctly:
 <a href="" id="mixedreality-autologonuser"></a>**MixedReality/AutoLogonUser**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>HoloLens (1st gen) Development Edition</td>
-    <td>❌</td>
-</tr>
-<tr>
-    <td>HoloLens (1st gen) Commercial Suite</td>
-    <td>❌</td>
-</tr>
-<tr>
-    <td>HoloLens 2</td>
-    <td>✔️</td>
-</tr>
-</table>
+
+|Windows Edition|Supported|
+|--- |--- |
+|HoloLens (1st gen) Development Edition|No|
+|HoloLens (1st gen) Commercial Suite|No|
+|HoloLens 2|Yes|
 
 <!--/Description-->
 This new AutoLogonUser policy controls whether a user will be automatically logged on. Some customers want to set up devices that are tied to an identity but don't want any sign in experience. Imagine picking up a device and using remote assist immediately. Or have a benefit of being able to rapidly  distribute HoloLens devices and enable their end users to speed up login.
@@ -154,24 +130,12 @@ Supported values are 0-60. The default value is 0 (day) and maximum value is 60 
 <a href="" id="mixedreality-brightnessbuttondisabled"></a>**MixedReality/BrightnessButtonDisabled**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>HoloLens (1st gen) Development Edition</td>
-    <td>❌</td>
-</tr>
-<tr>
-    <td>HoloLens (1st gen) Commercial Suite</td>
-    <td>❌</td>
-</tr>
-<tr>
-    <td>HoloLens 2</td>
-    <td>✔️</td>
-</tr>
-</table>
+
+|Windows Edition|Supported|
+|--- |--- |
+|HoloLens (1st gen) Development Edition|No|
+|HoloLens (1st gen) Commercial Suite|No|
+|HoloLens 2|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -207,24 +171,12 @@ The following list shows the supported values:
 <a href="" id="mixedreality-fallbackdiagnostics"></a>**MixedReality/FallbackDiagnostics**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>HoloLens (1st gen) Development Edition</td>
-    <td>❌</td>
-</tr>
-<tr>
-    <td>HoloLens (1st gen) Commercial Suite</td>
-    <td>❌</td>
-</tr>
-<tr>
-    <td>HoloLens 2</td>
-    <td>✔️</td>
-</tr>
-</table>
+
+|Windows Edition|Supported|
+|--- |--- |
+|HoloLens (1st gen) Development Edition|No|
+|HoloLens (1st gen) Commercial Suite|No|
+|HoloLens 2|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -261,24 +213,12 @@ The following list shows the supported values:
 <a href="" id="mixedreality-microphonedisabled"></a>**MixedReality/MicrophoneDisabled**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>HoloLens (1st gen) Development Edition</td>
-    <td>❌</td>
-</tr>
-<tr>
-    <td>HoloLens (1st gen) Commercial Suite</td>
-    <td>❌</td>
-</tr>
-<tr>
-    <td>HoloLens 2</td>
-    <td>✔️</td>
-</tr>
-</table>
+
+|Windows Edition|Supported|
+|--- |--- |
+|HoloLens (1st gen) Development Edition|No|
+|HoloLens (1st gen) Commercial Suite|No|
+|HoloLens 2|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -314,24 +254,12 @@ The following list shows the supported values:
 <a href="" id="mixedreality-volumebuttondisabled"></a>**MixedReality/VolumeButtonDisabled**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>HoloLens (1st gen) Development Edition</td>
-    <td>❌</td>
-</tr>
-<tr>
-    <td>HoloLens (1st gen) Commercial Suite</td>
-    <td>❌</td>
-</tr>
-<tr>
-    <td>HoloLens 2</td>
-    <td>✔️</td>
-</tr>
-</table>
+
+|Windows Edition|Supported|
+|--- |--- |
+|HoloLens (1st gen) Development Edition|No|
+|HoloLens (1st gen) Commercial Suite|No|
+|HoloLens 2|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>

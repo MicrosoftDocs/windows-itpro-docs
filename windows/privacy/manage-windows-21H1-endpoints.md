@@ -2,17 +2,18 @@
 title: Connection endpoints for Windows 10 Enterprise, version 21H1
 description: Explains what Windows 10 endpoints are used for, how to turn off traffic to them, and the impact. Specific to Windows 10 Enterprise, version 21H1.
 keywords: privacy, manage connections to Microsoft, Windows 10
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
 audience: ITPro
 author: gental-giant
 ms.author: v-hakima
-manager: robsize
+manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 10/04/2021
+ms.date: 11/29/2021
+ms.technology: privacy
 ---
 
 # Manage connection endpoints for Windows 10 Enterprise, version 21H1
@@ -153,5 +154,5 @@ To view endpoints for non-Enterprise Windows 10 editions, see:
 
 ## Related links
 
-- [Office 365 URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US)
+- [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges)
 - [Network infrastructure requirements for Microsoft Intune](/mem/intune/fundamentals/intune-endpoints)

@@ -8,12 +8,15 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 12/05/2017
 ---
 
 # Storage DDF file
 
+Storage CSP is deprecated. Use System/AllowStorageCard in [Policy CSP](policy-configuration-service-provider.md) instead.
+
+<!-- 12.16.2021 mandia: Commenting out, as this CSP is specific to Windows 10 Mobile.
 
 This topic shows the OMA DM device description framework (DDF) for the **Storage** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
@@ -77,12 +80,12 @@ The XML below is the current version for this CSP.
 </MgmtTree>
 ```
 
- 
+-->
 
- 
+## Related topics
 
+System/AllowStorageCard in [Policy CSP](policy-configuration-service-provider.md)
 
+[Storage CSP (deprecated)](storage-csp.md)
 
-
-
-
+[Configuration service provider reference](configuration-service-provider-reference.md)

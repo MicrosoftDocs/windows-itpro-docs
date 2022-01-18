@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 07/19/2019
 ---
 
@@ -96,7 +96,7 @@ Node for defining the Windows Hello for Business policy settings.
 <a href="" id="tenantid-policies-usepassportforwork"></a>***TenantId*/Policies/UsePassportForWork**  
 Boolean value that sets Windows Hello for Business as a method for signing into Windows.
 
-Default value is true. If you set this policy to false, the user cannot provision Windows Hello for Business except on Azure Active Directory joined mobile phones where provisioning is required.
+Default value is true. If you set this policy to false, the user cannot provision Windows Hello for Business.
 
 Supported operations are Add, Get, Delete, and Replace.
 

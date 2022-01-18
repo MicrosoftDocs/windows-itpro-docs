@@ -1,7 +1,6 @@
 ---
 title: Demonstrate Autopilot deployment
-ms.reviewer:
-manager: laurawi
+manager: dougeby
 description: In this article, find step-by-step instructions on how to set up a Virtual Machine with a Windows Autopilot deployment.
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune, upgrade
 ms.prod: w10
@@ -11,7 +10,9 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
 ms.author: greglin
-ms.collection: M365-modern-desktop
+ms.collection:
+  - M365-modern-desktop
+  - highpri
 ms.topic: article
 ms.custom: 
  - autopilot
@@ -23,7 +24,7 @@ ms.custom:
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 
 To get started with Windows Autopilot, you should try it out with a virtual machine (VM) or you can use a physical device that will be wiped and then have a fresh install of Windows 10.
 
@@ -161,7 +162,7 @@ After you download this file, the name will be extremely long (ex: 19042.508.200
 The **Get-NetAdaper** cmdlet is used to automatically find the network adapter that's most likely to be the one you use to connect to the internet. You should test this command first by running the following at an elevated Windows PowerShell prompt:
 
 ```powershell
-(Get-NetAdapter |?{$_.Status -eq "Up" -and !$_.Virtual}).Name
+(Get-NetAdapter | Where-Object {$_.Status -eq "Up" -and !$_.Virtual}).Name
 ```
 
 The output of this command should be the name of the network interface you use to connect to the internet. Verify that this is the correct interface name. If it isn't the correct interface name, you'll need to edit the first command below to use your network interface name.
@@ -177,10 +178,10 @@ All VM data will be created under the current path in your PowerShell prompt. Co
 >
 >- If you previously enabled Hyper-V and your internet-connected network interface is already bound to a VM switch, then the PowerShell commands below will fail. In this case, you can either delete the existing VM switch (so that the commands below can create one), or you can reuse this VM switch by skipping the first command below and either modifying the second command to replace the switch name **AutopilotExternal** with the name of your switch, or by renaming your existing switch to "AutopilotExternal."
 >- If you have never created an external VM switch before, then just run the commands below.
->- If you're not sure if you already have an External VM switch, enter **get-vmswitch** at a Windows PowerShell prompt to display a currently list of the VM switches that are provisioned in Hyper-V. If one of them is of SwitchType **External**, then you already have a VM switch configured on the server that's used to connect to the internet. In this case, you need to skip the first command below and modify the others to use the name of your VM switch instead of the name "AutopilotExternal" (or change the name of your switch).
+>- If you're not sure if you already have an External VM switch, enter **get-vmswitch** at a Windows PowerShell prompt to display a current list of the VM switches that are provisioned in Hyper-V. If one of them is of SwitchType **External**, then you already have a VM switch configured on the server that's used to connect to the internet. In this case, you need to skip the first command below and modify the others to use the name of your VM switch instead of the name "AutopilotExternal" (or change the name of your switch).
 
 ```powershell
-New-VMSwitch -Name AutopilotExternal -AllowManagementOS $true -NetAdapterName (Get-NetAdapter |?{$_.Status -eq "Up" -and !$_.Virtual}).Name
+New-VMSwitch -Name AutopilotExternal -AllowManagementOS $true -NetAdapterName (Get-NetAdapter | Where-Object {$_.Status -eq "Up" -and !$_.Virtual}).Name
 New-VM -Name WindowsAutopilot -MemoryStartupBytes 2GB -BootDevice VHD -NewVHDPath .\VMs\WindowsAutopilot.vhdx -Path .\VMData -NewVHDSizeBytes 80GB -Generation 2 -Switch AutopilotExternal
 Add-VMDvdDrive -Path c:\iso\win10-eval.iso -VMName WindowsAutopilot
 Start-VM -VMName WindowsAutopilot
@@ -237,7 +238,6 @@ PS C:\autopilot&gt;
 
 Make sure that the VM booted from the installation ISO, select **Next**, select **Install now**, and then complete the Windows installation process. See the following examples:
 
-
    ![Windows setup example 1](images/winsetup1.png)
 
    ![Windows setup example 2](images/winsetup2.png)
@@ -249,7 +249,6 @@ Make sure that the VM booted from the installation ISO, select **Next**, select 
    ![Windows setup example 5](images/winsetup5.png)
 
    ![Windows setup example 6](images/winsetup6.png)
-
 
 After the VM restarts, during OOBE, it's fine to select **Set up for personal use** or **Domain join instead** and then choose an offline account on the **Sign in** screen.  This offers the fastest way to the desktop. For example:
 
@@ -278,12 +277,12 @@ Follow these steps to run the PowerShell script:
 1. **On the client VM**: Open an elevated Windows PowerShell prompt and run the following commands. These commands are the same whether you're using a VM or a physical device:
 
     ```powershell
-    md c:\HWID
-    Set-Location c:\HWID
-    Set-ExecutionPolicy -Scope Process -ExecutionPolicy Unrestricted -Force
+    New-Item -Type Directory -Path "C:\HWID"
+    Set-Location C:\HWID
+    Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
     Install-Script -Name Get-WindowsAutopilotInfo -Force
     $env:Path += ";C:\Program Files\WindowsPowerShell\Scripts"
-    Get-WindowsAutopilotInfo.ps1 -OutputFile AutopilotHWID.csv
+    Get-WindowsAutopilotInfo -OutputFile AutopilotHWID.csv
     ```
 
 1. When you're prompted to install the NuGet package, choose **Yes**.
@@ -348,7 +347,7 @@ Follow these steps to run the PowerShell script:
 With the hardware ID captured in a file, prepare your Virtual Machine for Windows Autopilot deployment by resetting it back to OOBE.
 
 On the Virtual Machine, go to **Settings > Update & Security > Recovery** and select **Get started** under **Reset this PC**.
-Select **Remove everything** and **Just remove my files**. If you're asked **How would you like to reinstall Windows**, select Local reinstall. Finally, select **Reset**.
+Select **Remove everything**, then, on **How would you like to reinstall Windows**, select **Local reinstall**. Finally, select **Reset**.
 
 ![Reset this PC final prompt.](images/autopilot-reset-prompt.jpg)
 
@@ -615,7 +614,7 @@ To use the device (or VM) for other purposes after completion of this lab, you n
 
 ### Delete (deregister) Autopilot device
 
-You need to delete (or retire, or factory reset) the device from Intune before deregistering the device from Autopilot. To delete the device from Intune (not Azure AD), log into the MEM admin center, then go to **Intune > Devices > All Devices**.  Select the device you want to delete, then select the **Delete** button along the top menu.
+You need to delete (or retire, or factory reset) the device from Intune before deregistering the device from Autopilot. To delete the device from Intune (not Azure AD), log into the MEM admin center, then go to **Intune > Devices > All Devices**. Select the device you want to delete, then select the **Delete** button along the top menu.
 
 > [!div class="mx-imgBorder"]
 > ![Delete device step 1.](images/delete-device1.png)

@@ -4,7 +4,7 @@ description: Learn how to minimize connections from Windows to Microsoft service
 ms.assetid: ACCEB0DD-BC6F-41B1-B359-140B242183D9
 ms.reviewer:
 keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2016
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
@@ -12,9 +12,12 @@ audience: ITPro
 author: tomlayson
 ms.author: tomlayson
 manager: riche
-ms.collection: M365-security-compliance
+ms.collection:
+  - M365-security-compliance
+  - highpri
 ms.topic: article
-ms.date: 5/21/2021
+ms.date: 12/14/2021
+ms.technology: privacy
 ---
 
 # Manage connections from Windows 10 and Windows 11 operating system components to Microsoft services
@@ -28,7 +31,7 @@ ms.date: 5/21/2021
 
 This article describes the network connections that Windows 10 and Windows 11 components make to Microsoft and the Windows Settings, Group Policies and registry settings available to IT Professionals to help manage the data shared with Microsoft. If you want to minimize connections from Windows to Microsoft services, or configure privacy settings, there are a number of settings for consideration. For example, you can configure diagnostic data to the lowest level for your edition of Windows and evaluate other connections Windows makes to Microsoft services you want to turn off using the instructions in this article. While it is possible to minimize network connections to Microsoft, there are many reasons why these communications are enabled by default, such as updating malware definitions and maintaining current certificate revocation lists. This data helps us deliver a secure, reliable, and up-to-date experience.
 
-Microsoft provides a [Windows Restricted Traffic Limited Functionality Baseline](https://go.microsoft.com/fwlink/?linkid=828887) package that will allow your organization to quickly configure the settings covered in this document to restrict connections from Windows 10 and Windows 11 to Microsoft. The Windows Restricted Traffic Limited Baseline is based on [Group Policy Administrative Template](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra) functionality and the package you download contains further instructions on how to deploy to devices in your organization. Since some of the settings can reduce the functionality and security configuration of your device, **before deploying Windows Restricted Traffic Limited Functionality Baseline** make sure you **choose the right settings configuration for your environment** and **ensure that Windows and Microsoft Defender Antivirus are fully up to date**. Failure to do so may result in errors or unexpected behavior. You should not extract this package to the windows\system32 folder because it will not apply correctly.
+Microsoft provides a [Windows Restricted Traffic Limited Functionality Baseline](https://download.microsoft.com/download/D/9/0/D905766D-FEDA-43E5-86ED-8987CEBD8D89/WindowsRTLFB.zip) package that will allow your organization to quickly configure the settings covered in this document to restrict connections from Windows 10 and Windows 11 to Microsoft. The Windows Restricted Traffic Limited Baseline is based on [Group Policy Administrative Template](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) functionality and the package you download contains further instructions on how to deploy to devices in your organization. Since some of the settings can reduce the functionality and security configuration of your device, **before deploying Windows Restricted Traffic Limited Functionality Baseline** make sure you **choose the right settings configuration for your environment** and **ensure that Windows and Microsoft Defender Antivirus are fully up to date**. Failure to do so may result in errors or unexpected behavior. You should not extract this package to the windows\system32 folder because it will not apply correctly.
 
 > [!IMPORTANT]
 > - The downloadable Windows 10, version 1903 scripts/settings can be used on Windows 10, version 1909 devices.
@@ -274,7 +277,7 @@ Use Group Policies to manage settings for Cortana. For more info, see [Cortana, 
 
 ### <a href="" id="bkmk-cortana-gp"></a>2.1 Cortana and Search Group Policies
 
-Find the Cortana Group Policy objects under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Search**.
+Find the Cortana Group Policy objects under **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Search**.
 
 | Policy                                               | Description                                                                           |
 |------------------------------------------------------|---------------------------------------------------------------------------------------|
@@ -296,7 +299,7 @@ You can also apply the Group Policies using the following registry keys:
 > [!IMPORTANT]
 > Using the Group Policy editor these steps are required for all supported versions of Windows 10 and Windows 11, however they are not required for devices running Windows 10, version 1607 or Windows Server 2016.
 
-1. Expand **Computer Configuration** &gt; **Windows Settings** &gt; **Security Settings** &gt; **Windows Defender Firewall with Advanced Security** &gt; **Windows Defender Firewall with Advanced Security - &lt;LDAP name&gt;**, and then click **Outbound Rules**.
+1. Expand **Computer Configuration** > **Windows Settings** > **Security Settings** > **Windows Defender Firewall with Advanced Security** > **Windows Defender Firewall with Advanced Security - `LDAP name`**, and then click **Outbound Rules**.
 
 2. Right-click **Outbound Rules**, and then click **New Rule**. The **New Outbound Rule Wizard** starts.
 
@@ -331,7 +334,7 @@ If your organization tests network traffic, do not use a network proxy as Window
 
 You can prevent Windows from setting the time automatically.
 
-- To turn off the feature in the UI: **Settings** &gt; **Time & language** &gt; **Date & time** &gt; **Set time automatically**
+- To turn off the feature in the UI: **Settings** > **Time & language** > **Date & time** > **Set time automatically**
 
   -or-
 
@@ -339,7 +342,7 @@ You can prevent Windows from setting the time automatically.
 
 After that, configure the following:
 
-- **Disable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Windows Time Service** &gt; **Time Providers** &gt; **Enable Windows NTP Client**
+- **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **Windows Time Service** > **Time Providers** > **Enable Windows NTP Client**
 
   -or-
 
@@ -350,7 +353,7 @@ After that, configure the following:
 
 To prevent Windows from retrieving device metadata from the Internet:
 
-- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Device Installation** &gt; **Prevent device metadata retrieval from the Internet**.
+- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **Device Installation** > **Prevent device metadata retrieval from the Internet**.
 
   -or -
 
@@ -399,7 +402,7 @@ Windows Insider Preview builds only apply to Windows 10 and Windows 11 and are n
 
 To turn off Insider Preview builds for a released version of Windows 10 or Windows 11:
 
-- **Disable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Data Collection and Preview Builds** &gt; **Toggle user control over Insider builds**.
+- **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds** > **Toggle user control over Insider builds**.
 
 To turn off Insider Preview builds for Windows 10 and Windows 11:
 
@@ -410,7 +413,7 @@ To turn off Insider Preview builds for Windows 10 and Windows 11:
 
   -or-
 
-- **Enable** the Group Policy **Toggle user control over Insider builds** under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Data Collection and Preview Builds**
+- **Enable** the Group Policy **Toggle user control over Insider builds** under **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds**
 
   -or-
 
@@ -420,13 +423,13 @@ To turn off Insider Preview builds for Windows 10 and Windows 11:
 ### <a href="" id="bkmk-ie"></a>8. Internet Explorer
 
 > [!NOTE]
-> When attempting to use Internet Explorer on any edition of Windows Server be aware there are restrictions enforced by [Enhanced Security Configuration (ESC)](https://support.microsoft.com/help/815141/ie-enhanced-security-configuration-changes-browsing-experience). The following Group Policies and Registry Keys are for user interactive scenarios rather than the typical idle traffic scenario. Find the Internet Explorer Group Policy objects under **Computer Configuration > Administrative Templates > Windows Components > Internet Explorer** and make these settings:
+> When attempting to use Internet Explorer on any edition of Windows Server be aware there are restrictions enforced by [Enhanced Security Configuration (ESC)](/troubleshoot/browsers/enhanced-security-configuration-faq). The following Group Policies and Registry Keys are for user interactive scenarios rather than the typical idle traffic scenario. Find the Internet Explorer Group Policy objects under **Computer Configuration > Administrative Templates > Windows Components > Internet Explorer** and make these settings:
 
 | Policy                                               | Description                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Turn on Suggested Sites| Choose whether an employee can configure Suggested Sites. <br /> **Set Value to: Disabled** <br /> You can also turn this off in the UI by clearing the **Internet Options** &gt; **Advanced** &gt; **Enable Suggested Sites** check box.|
+| Turn on Suggested Sites| Choose whether an employee can configure Suggested Sites. <br /> **Set Value to: Disabled** <br /> You can also turn this off in the UI by clearing the **Internet Options** > **Advanced** > **Enable Suggested Sites** check box.|
 | Allow Microsoft services to provide enhanced suggestions as the user types in the Address Bar | Choose whether an employee can configure enhanced suggestions, which are presented to the employee as they type in the Address Bar. <br /> **Set Value to: Disabled**|
-| Turn off the auto-complete feature for web addresses | Choose whether auto-complete suggests possible matches when employees are typing web address in the Address Bar. <br /> **Set Value to: Enabled** </br> You can also turn this off in the UI by clearing the <strong>Internet Options</strong> &gt; **Advanced** &gt; **Use inline AutoComplete in the Internet Explorer Address Bar and Open Dialog** check box.|
+| Turn off the auto-complete feature for web addresses | Choose whether auto-complete suggests possible matches when employees are typing web address in the Address Bar. <br /> **Set Value to: Enabled** </br> You can also turn this off in the UI by clearing the <strong>Internet Options</strong> > **Advanced** > **Use inline AutoComplete in the Internet Explorer Address Bar and Open Dialog** check box.|
 | Turn off browser geolocation | Choose whether websites can request location data from Internet Explorer. <br /> **Set Value to: Enabled**|
 | Prevent managing Microsoft Defender SmartScreen | Choose whether employees can manage the Microsoft Defender SmartScreen in Internet Explorer. <br /> **Set Value to: Enabled** and then set **Select Windows Defender SmartScreen mode** to **Off**.|
 
@@ -530,13 +533,11 @@ To turn off Live Tiles:
 
 - Create a REG_DWORD registry setting named **NoCloudApplicationNotification** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CurrentVersion\\PushNotifications** with a **value of 1 (one)**
 
-In Windows 10 or Windows 11 Mobile, you must also unpin all tiles that are pinned to Start.
-
 ### <a href="" id="bkmk-mailsync"></a>11. Mail synchronization
 
 To turn off mail synchronization for Microsoft Accounts that are configured on a device:
 
-- In **Settings** &gt; **Accounts** &gt; **Your email and accounts**, remove any connected Microsoft Accounts.
+- In **Settings** > **Accounts** > **Your email and accounts**, remove any connected Microsoft Accounts.
 
   -or-
 
@@ -564,7 +565,7 @@ For a complete list of the Microsoft Edge policies, see [Group Policy and Mobile
 
 ### <a href="" id="bkmk-edgegp"></a>13.1 Microsoft Edge Group Policies
 
-Find the Microsoft Edge Group Policy objects under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Edge**.
+Find the Microsoft Edge Group Policy objects under **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Edge**.
 
 | Policy                                               | Description                                                                                         |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -633,7 +634,7 @@ In versions of Windows 10 prior to version 1607 and Windows Server 2016, the URL
 
 You can turn off NCSI by doing one of the following:
 
-- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Internet Communication Management** &gt; **Internet Communication Settings** &gt; **Turn off Windows Network Connectivity Status Indicator active tests**
+- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **Internet Communication Management** > **Internet Communication Settings** > **Turn off Windows Network Connectivity Status Indicator active tests**
 
   > [!NOTE]
   > After you apply this policy, you must restart the device for the policy setting to take effect.
@@ -650,7 +651,7 @@ You can turn off the ability to download and update offline maps.
 
   -or-
 
-- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Maps** &gt; **Turn off Automatic Download and Update of Map Data**
+- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Maps** > **Turn off Automatic Download and Update of Map Data**
 
   -or-
 
@@ -668,7 +669,7 @@ You can turn off the ability to download and update offline maps.
 
 To turn off OneDrive in your organization:
 
-- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **OneDrive** &gt; **Prevent the usage of OneDrive for file storage**
+- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **OneDrive** > **Prevent the usage of OneDrive for file storage**
 
   -or-
 
@@ -676,7 +677,7 @@ To turn off OneDrive in your organization:
 
   -and-
 
-- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **OneDrive** &gt; **Prevent OneDrive from generating network traffic until the user signs in to OneDrive (Enable)**
+- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **OneDrive** > **Prevent OneDrive from generating network traffic until the user signs in to OneDrive (Enable)**
 
     -or-
 
@@ -806,9 +807,9 @@ To remove the Sticky notes app:
 
 - Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.MicrosoftStickyNotes | Remove-AppxPackage**
 
-### <a href="" id="bkmk-settingssection"></a>18. Settings &gt; Privacy & security
+### <a href="" id="bkmk-settingssection"></a>18. Settings > Privacy & security
 
-Use Settings &gt; Privacy & security to configure some settings that may be important to your organization. Except for the Feedback & Diagnostics page, these settings must be configured for every user account that signs into the PC.
+Use Settings > Privacy & security to configure some settings that may be important to your organization. Except for the Feedback & Diagnostics page, these settings must be configured for every user account that signs into the PC.
 
 - [18.1 General](#bkmk-general)
 
@@ -871,7 +872,7 @@ To turn off **Let apps use advertising ID to make ads more interesting to you ba
 
   -or-
 
-- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **User Profiles** &gt; **Turn off the advertising ID**.
+- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **User Profiles** > **Turn off the advertising ID**.
 
   -or-
 
@@ -908,7 +909,7 @@ To turn off **Let apps use my advertising ID for experiences across apps (turnin
 
   -or-
 
-- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **User Profiles** &gt; **Turn off the advertising ID**.
+- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **User Profiles** > **Turn off the advertising ID**.
 
  -or-
 
@@ -947,7 +948,7 @@ To turn off **Let apps on my other devices open apps and continue experiences on
 
   -or-
 
-- Disable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Group Policy** &gt; **Continue experiences on this device**.
+- Disable the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **Group Policy** > **Continue experiences on this device**.
 
   -or-
 
@@ -967,7 +968,7 @@ To turn off **Location for this device**:
 
   -or-
 
-- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Location and Sensors** &gt; **Turn off location**.
+- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Location and Sensors** > **Turn off location**.
 
   -or-
 
@@ -979,7 +980,7 @@ To turn off **Allow apps to access your location**:
 
    -or-
 
-- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access location** and set the **Select a setting** box to **Force Deny**.
+- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access location** and set the **Select a setting** box to **Force Deny**.
 
   -or-
 
@@ -1004,7 +1005,7 @@ To turn off **Let apps use my camera**:
 
   -or-
 
-- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access the camera**
+- Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access the camera**
 
   - Set the **Select a setting** box to **Force Deny**.
 
@@ -1027,7 +1028,7 @@ To turn off **Let apps use my microphone**:
 
   -or-
 
-- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access the microphone**
+- Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access the microphone**
 
   - Set the **Select a setting** box to **Force Deny**.
 
@@ -1102,7 +1103,7 @@ To turn off **Let apps access my name, picture, and other account info**:
 
   -or-
 
-- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access account information**
+- Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access account information**
 
   - Set the **Select a setting** box to **Force Deny**.
 
@@ -1125,7 +1126,7 @@ To turn off **Choose apps that can access contacts**:
 
   -or-
 
-- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access contacts**
+- Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access contacts**
 
   - Set the **Select a setting** box to **Force Deny**.
 
@@ -1143,7 +1144,7 @@ To turn off **Let apps access my calendar**:
 
   -or-
 
-- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access the calendar**. Set the **Select a setting** box to **Force Deny**.
+- Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access the calendar**. Set the **Select a setting** box to **Force Deny**.
 
   -or-
 
@@ -1163,7 +1164,7 @@ To turn off **Let apps access my call history**:
 
   -or-
 
-- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access call history**
+- Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access call history**
 
   - Set the **Select a setting** box to **Force Deny**.
 
@@ -1181,7 +1182,7 @@ To turn off **Let apps access and send email**:
 
   -or-
 
-- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access email**
+- Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access email**
 
   - Set the **Select a setting** box to **Force Deny**.
 
@@ -1199,7 +1200,7 @@ To turn off **Let apps read or send messages (text or MMS)**:
 
   -or-
 
-- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access messaging**
+- Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access messaging**
 
   - Set the **Select a setting** box to **Force Deny**.
 
@@ -1217,7 +1218,7 @@ To turn off **Choose apps that can read or send messages**:
 
     -or-
 
-- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Messaging**
+- Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Messaging**
 
     - Set the **Allow Message Service Cloud Sync** to **Disable**.
 
@@ -1231,7 +1232,7 @@ To turn off **Let apps make phone calls**:
 
   -or-
 
-- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps make phone calls** and set the **Select a setting** box to **Force Deny**.
+- Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps make phone calls** and set the **Select a setting** box to **Force Deny**.
 
   -or-
 
@@ -1252,7 +1253,7 @@ To turn off **Let apps control radios**:
 
   -or-
 
-- Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps control radios** and set the **Select a setting** box to **Force Deny**.
+- Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps control radios** and set the **Select a setting** box to **Force Deny**.
 
   -or-
 
@@ -1273,7 +1274,7 @@ To turn off **Let apps automatically share and sync info with wireless devices t
 
   -or-
 
-- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps communicate with unpaired devices** and set the **Select a setting** box to **Force Deny**.
+- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps communicate with unpaired devices** and set the **Select a setting** box to **Force Deny**.
 
   -or-
 
@@ -1285,7 +1286,7 @@ To turn off **Let your apps use your trusted devices (hardware you've already co
 
   -or-
 
-- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps access trusted devices** and set the **Select a setting** box to **Force Deny**.
+- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access trusted devices** and set the **Select a setting** box to **Force Deny**.
 
   -or-
 
@@ -1305,7 +1306,7 @@ To change how frequently **Windows should ask for my feedback**:
 
   -or-
 
-- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Data Collection and Preview Builds** &gt; **Do not show feedback notifications**
+- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds** > **Do not show feedback notifications**
 
   -or-
 
@@ -1530,7 +1531,7 @@ Enterprise customers can manage their Windows activation status with volume lice
 
 **For Windows 10 and Windows 11:**
 
-- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Software Protection Platform** &gt; **Turn off KMS Client Online AVS Validation**
+- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Software Protection Platform** > **Turn off KMS Client Online AVS Validation**
 
   -or-
 
@@ -1538,7 +1539,7 @@ Enterprise customers can manage their Windows activation status with volume lice
 
 **For Windows Server 2019 or later:**
 
-- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Software Protection Platform** &gt; **Turn off KMS Client Online AVS Validation**
+- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Software Protection Platform** > **Turn off KMS Client Online AVS Validation**
 
   -or-
 
@@ -1557,7 +1558,7 @@ Enterprise customers can manage their Windows activation status with volume lice
 Enterprise customers can manage updates to the Disk Failure Prediction Model.
 
 For Windows 10 and Windows 11:
-- **Disable** this Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Storage Health** &gt; **Allow downloading updates to the Disk Failure Prediction Model**
+- **Disable** this Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **Storage Health** > **Allow downloading updates to the Disk Failure Prediction Model**
 
   -or-
 
@@ -1567,11 +1568,11 @@ For Windows 10 and Windows 11:
 
 You can control if your settings are synchronized:
 
-- In the UI: **Settings** &gt; **Accounts** &gt; **Sync your settings**
+- In the UI: **Settings** > **Accounts** > **Sync your settings**
 
   -or-
 
-- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Sync your settings** &gt; **Do not sync**. Leave the "Allow users to turn syncing on" checkbox **unchecked**.
+- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Sync your settings** > **Do not sync**. Leave the "Allow users to turn syncing on" checkbox **unchecked**.
 
   -or-
 
@@ -1591,7 +1592,7 @@ You can disable Teredo by using Group Policy or by using the netsh.exe command. 
 > [!NOTE]
 > If you disable Teredo, some XBOX gaming features and Delivery Optimization (with Group or Internet peering) will not work.
 
-- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Network** &gt; **TCPIP Settings** &gt; **IPv6 Transition Technologies** &gt; **Set Teredo State** and set it to **Disabled State**.
+- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Network** > **TCPIP Settings** > **IPv6 Transition Technologies** > **Set Teredo State** and set it to **Disabled State**.
 
   -or-
 
@@ -1611,7 +1612,7 @@ To turn off **Connect to suggested open hotspots** and **Connect to networks sha
 
   -or-
 
-- **Disable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Network** &gt; **WLAN Service** &gt; **WLAN Settings** &gt; **Allow Windows to automatically connect to suggested open hotspots, to networks shared by contacts, and to hotspots offering paid services**.
+- **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Network** > **WLAN Service** > **WLAN Settings** > **Allow Windows to automatically connect to suggested open hotspots, to networks shared by contacts, and to hotspots offering paid services**.
 
   -or-
 
@@ -1629,7 +1630,7 @@ You can disconnect from the Microsoft Antimalware Protection Service.
 > 1. Ensure Windows and Microsoft Defender Antivirus are fully up to date.
 > 2. Search the Start menu for "Tamper Protection" by clicking on the search icon next to the Windows Start button. Then scroll down to the Tamper Protection toggle and turn it **Off**. This will allow you to modify the Registry key and allow the Group Policy to make the setting. Alternatively, you can go to **Windows Security Settings -> Virus & threat protection, click on Manage Settings** link and then scroll down to the Tamper Protection toggle to set it to **Off**.
 
-- **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Defender Antivirus** &gt; **MAPS** &gt; **Join Microsoft MAPS** and then select **Disabled** from the drop-down box named **Join Microsoft MAPS**
+- **Enable** the Group Policy **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **MAPS** > **Join Microsoft MAPS** and then select **Disabled** from the drop-down box named **Join Microsoft MAPS**
 
 -OR-
 
@@ -1642,7 +1643,7 @@ You can disconnect from the Microsoft Antimalware Protection Service.
 
 You can stop sending file samples back to Microsoft.
 
-- **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Defender Antivirus** &gt; **MAPS** &gt; **Send file samples when further analysis is required** to **Never Send**.
+- **Enable** the Group Policy **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **MAPS** > **Send file samples when further analysis is required** to **Never Send**.
 
   -or-
 
@@ -1652,14 +1653,14 @@ You can stop sending file samples back to Microsoft.
 You can stop downloading **Definition Updates**:
 
 > [!NOTE]
-> The Group Policy path for 1809 and earlier builds is **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Defender Antivirus** &gt; **Signature Updates**
+> The Group Policy path for 1809 and earlier builds is **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Signature Updates**
 
 
-- **Enable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Defender Antivirus** &gt; **Security Intelligence Updates** &gt; **Define the order of sources for downloading definition updates** and set it to **FileShares**.
+- **Enable** the Group Policy **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Security Intelligence Updates** > **Define the order of sources for downloading definition updates** and set it to **FileShares**.
 
   -and-
 
-- **Disable** the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Defender Antivirus** &gt; **Security Intelligence Updates** &gt; **Define file shares for downloading definition updates** and set it to **Nothing**.
+- **Disable** the Group Policy **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Security Intelligence Updates** > **Define file shares for downloading definition updates** and set it to **Nothing**.
 
   -or-
 
@@ -1684,7 +1685,7 @@ You can turn off **Enhanced Notifications** as follows:
 
   -or-
 
-- **Enable** the Group Policy **Turn off enhanced notifications** under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Microsoft Defender Antivirus** &gt; **Reporting**.
+- **Enable** the Group Policy **Turn off enhanced notifications** under **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Reporting**.
 
   -or-
 
@@ -1720,91 +1721,34 @@ In Group Policy, configure:
 - Create a SZ registry setting named **ConfigureAppInstallControl** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\SmartScreen** with a value of **Anywhere**.
 
 
-### <a href="" id="bkmk-spotlight"></a>25. Windows Spotlight
+### <a href="" id="bkmk-spotlight"></a>25. Personalized Experiences
 
-Windows Spotlight provides features such as different background images and text on the lock screen, suggested apps, Microsoft account notifications, and Windows tips. You can control it by using the user interface or Group Policy.
+Personalized experiences provides features such as different background images and text on the lock screen, suggested apps, Microsoft account notifications, and Windows tips. Example features include Windows Spotlight and Start Suggestions. You can control them by using the Group Policy.
+
+> [!NOTE]
+> This excludes how individual experiences (e.g., Windows Spotlight) can be controlled by users in Windows Settings.
 
 If you're running Windows 10, version 1607 or later, or Windows 11, you need to:
 
 - **Enable** the following Group Policy **User Configuration** > **Administrative Templates** > **Windows Components** > **Cloud Content** > **Turn off all Windows spotlight features**
 
-    > [!NOTE]
-    > This must be done within 15 minutes after Windows 10 or Windows 11 is installed. Alternatively, you can create an image with this setting.
+    -or-
 
-   -or-
-
-- Create a new REG_DWORD registry setting named **DisableWindowsSpotlightFeatures** in **HKEY_CURRENT_USER\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent** with a value of 1 (one).
+- Create a new REG_DWORD registry setting named **DisableWindowsSpotlightFeatures** in **HKEY_CURRENT_USER\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent** with a **value of 1 (one)**.
 
 
 -AND-
 
 
-- Enable the following Group Policy **Computer Configuration** > **Administrative Templates** > **Control Panel** > **Personalization** > **Do not display the Lock Screen**
+- Enable the following Group Policy **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Cloud Content** > **Turn off cloud optimized content**
 
    -or-
 
-- Create a new REG_DWORD registry setting named **NoLockScreen** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization** with a **value of 1 (one)**
+- Create a new REG_DWORD registry setting named **DisableCloudOptimizedContent** in **HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\CloudContent** with a **value of 1 (one)**.
 
+  > [!NOTE]
+  > This must be done within 15 minutes after Windows 10 or Windows 11 is installed. Alternatively, you can create an image with this setting.
 
--AND-
-
-
-- Configure the following in **Settings** UI:
-
-  - **Personalization** > **Lock screen** > **Background** > **Windows spotlight**, select a different background, and turn off **Get fun facts, tips, tricks and more on your lock screen**
-
-  - **Personalization** &gt; **Start** &gt; **Occasionally show suggestions in Start**
-
-  - **System** &gt; **Notifications & actions** &gt; **Show me tips about Windows**
-
-   -or-
-
-- Apply the Group Policies:
-
-  - **Enable** the **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** &gt; **Force a specific default lock screen image and logon image** Group Policy.
-     - Add **C:\\windows\\web\\screen\\lockscreen.jpg** as the location in the **Path to local lock screen image** box.
-
-     - Check the **Turn off fun facts, tips, tricks, and more on lock screen** check box.
-
-       > [!NOTE]
-       > This will only take effect if the policy is applied before the first logon.
-       > If you cannot apply the **Force a specific default lock screen image** policy before the first logon to the device,
-       > you can **Enable** the **Do not display the lock screen** policy under **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization**
-       >
-       > Alternatively, you can create a new REG_SZ registry setting named **LockScreenImage** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization**
-       > with a value of **C:\\windows\\web\\screen\\lockscreen.jpg** and create a new REG_DWORD registry setting named **LockScreenOverlaysDisabled** in
-       > **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization** with a value of **1 (one)**.
-       >
-       > The Group Policy for the **LockScreenOverlaysDisabled** registry key is **Force a specific default lock screen and logon image** that is under **Control Panel** **Personalization**.
-
-
-  \-AND-
-
-
-  - Set the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Cloud Content** &gt; **Do not show Windows tips** to **Enabled**
-
-    -or-
-
-  - Create a new REG_DWORD registry setting named **DisableSoftLanding** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent** with a **value of 1 (one)**
-
-
-  \-AND-
-
-
-  - Set the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Cloud Content** &gt; **Turn off Microsoft consumer experiences** to **Enabled**
-
-    -or-
-
-  - Create a new REG_DWORD registry setting named **DisableWindowsConsumerFeatures** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent** with a **value of 1 (one)**
-
-This policy setting controls whether the lock screen appears for users. The Do not display the lock screen Group Policy should be set to Enable to prevent the lock screen from being displayed. The Group Computer Configuration\Administrative templates\Control Panel\Personalization!Do not display the lock screen.   
-
-If you enable this policy setting, users that are not required to press CTRL + ALT + DEL before signing in will see their selected tile after locking their PC.
-
-If you disable or do not configure this policy setting, users that are not required to press CTRL + ALT + DEL before signing in will see a lock screen after locking their PC. They must dismiss the lock screen using touch, the keyboard, or by dragging it with the mouse.
-
-
-For more info, see [Windows Spotlight on the lock screen](/windows/configuration/windows-spotlight).
 
 ### <a href="" id="bkmk-windowsstore"></a>26. Microsoft Store
 
@@ -1813,7 +1757,7 @@ This will also turn off automatic app updates, and the Microsoft Store will be d
 In addition, new email accounts cannot be created by clicking **Settings** > **Accounts** > **Email & app accounts** > **Add an account**.
 On Windows Server 2016, this will block Microsoft Store calls from Universal Windows Apps.
 
-- **Disable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Store** &gt; **Disable all apps from Microsoft Store**.
+- **Disable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Store** > **Disable all apps from Microsoft Store**.
 
   -or-
 
@@ -1821,7 +1765,7 @@ On Windows Server 2016, this will block Microsoft Store calls from Universal Win
 
 -AND-
 
-- **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Store** &gt; **Turn off Automatic Download and Install of updates**.
+- **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Store** > **Turn off Automatic Download and Install of updates**.
 
   -or-
 
@@ -1847,15 +1791,15 @@ Use the UI, Group Policy, or Registry Keys to set up Delivery Optimization.
 
 In Windows 10, version 1607 and above, and Windows 11 you can stop network traffic related to Delivery Optimization Cloud Service by setting **Download Mode** to  **Simple Mode** (99), as described below.
 
-### <a href="" id="bkmk-wudo-ui"></a>28.1 Settings &gt; Update & security
+### <a href="" id="bkmk-wudo-ui"></a>28.1 Settings > Update & security
 
 You can set up Delivery Optimization Peer-to-Peer from the **Settings** UI.
 
-- Go to **Settings** &gt; **Update & security** &gt; **Windows Update** &gt; **Advanced options** &gt; **Choose how updates are delivered**.
+- Go to **Settings** > **Update & security** > **Windows Update** > **Advanced options** > **Choose how updates are delivered**.
 
 ### <a href="" id="bkmk-wudo-gp"></a>28.2 Delivery Optimization Group Policies
 
-You can find the Delivery Optimization Group Policy objects under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Delivery Optimization**.
+You can find the Delivery Optimization Group Policy objects under **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Delivery Optimization**.
 
 | Policy                    | Description                                                                                         |
 |---------------------------|-----------------------------------------------------------------------------------------------------|
@@ -1870,7 +1814,7 @@ For a comprehensive list of Delivery Optimization Policies, see [Delivery Optimi
 
 ### <a href="" id="bkmk-wudo-mdm"></a>28.3 Delivery Optimization
 
-- **Enable** the **Download Mode** Group Policy under **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Delivery Optimization** and set the **Download Mode** to **"Simple Mode (99)"** to prevent traffic between peers as well as traffic back to the Delivery Optimization Cloud Service.
+- **Enable** the **Download Mode** Group Policy under **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Delivery Optimization** and set the **Download Mode** to **"Simple Mode (99)"** to prevent traffic between peers as well as traffic back to the Delivery Optimization Cloud Service.
 
 -or-
 
@@ -1908,19 +1852,19 @@ You can turn off Windows Update by setting the following registry entries:
 
 -OR-
 
-- Set the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Update** &gt; **Do not connect to any Windows Update Internet locations** to **Enabled**
+- Set the Group Policy **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Do not connect to any Windows Update Internet locations** to **Enabled**
 
   -and-
 
-- Set the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Internet Communication Management** &gt; **Internet Communication Settings** &gt; **Turn off access to all Windows Update features** to **Enabled**
+- Set the Group Policy **Computer Configuration** > **Administrative Templates** > **System** > **Internet Communication Management** > **Internet Communication Settings** > **Turn off access to all Windows Update features** to **Enabled**
 
   -and-
 
-- Set the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Update** &gt; **Specify intranet Microsoft update service location** to **Enabled** and ensure all Option settings (Intranet Update Service, Intranet Statistics Server, Alternate Download Server) are set to **" "**
+- Set the Group Policy **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Specify intranet Microsoft update service location** to **Enabled** and ensure all Option settings (Intranet Update Service, Intranet Statistics Server, Alternate Download Server) are set to **" "**
 
   -and-
 
-- Set the Group Policy **User Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Update** &gt; **Remove access to use all Windows Update features** to **Enabled** and then set **Computer Configurations** to **0 (zero)**.
+- Set the Group Policy **User Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Remove access to use all Windows Update features** to **Enabled** and then set **Computer Configurations** to **0 (zero)**.
 
 
 You can turn off automatic updates by doing the following. This is not recommended.

@@ -41,181 +41,28 @@ The following requirements must be met or addressed before you deploy your AppLo
 
 An AppLocker policy deployment plan is the result of investigating which applications are required and necessary in your organization, which apps are optional, and which apps are forbidden. To develop this plan, see [AppLocker Design Guide](applocker-policies-design-guide.md). The following table is an example of the data you need to collect and the decisions you need to make to successfully deploy AppLocker policies on the supported operating systems (as listed in [Requirements to use AppLocker](requirements-to-use-applocker.md)).
 
-<table>
-<colgroup>
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Business group</th>
-<th align="left">Organizational unit</th>
-<th align="left">Implement AppLocker?</th>
-<th align="left">Apps</th>
-<th align="left">Installation path</th>
-<th align="left">Use default rule or define new rule condition</th>
-<th align="left">Allow or deny</th>
-<th align="left">GPO name</th>
-<th align="left">Support policy</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Bank Tellers</p></td>
-<td align="left"><p>Teller-East and Teller-West</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Teller software</p></td>
-<td align="left"><p>C:\Program Files\Woodgrove\Teller.exe</p></td>
-<td align="left"><p>File is signed; create a publisher condition</p></td>
-<td align="left"><p>Allow</p></td>
-<td align="left"><p>Tellers</p></td>
-<td align="left"><p>Web help</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Windows files</p>
-<p></p></td>
-<td align="left"><p>C:\Windows</p></td>
-<td align="left"><p>Create a path exception to the default rule to exclude \Windows\Temp</p></td>
-<td align="left"><p>Allow</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Help Desk</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Time Sheet Organizer</p></td>
-<td align="left"><p>C:\Program Files\Woodgrove\HR\Timesheet.exe</p></td>
-<td align="left"><p>File is not signed; create a file hash condition</p></td>
-<td align="left"><p>Allow</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Web help</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Human Resources</p></td>
-<td align="left"><p>HR-All</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Check Payout</p></td>
-<td align="left"><p>C:\Program Files\Woodgrove\HR\Checkcut.exe</p></td>
-<td align="left"><p>File is signed; create a publisher condition</p></td>
-<td align="left"><p>Allow</p></td>
-<td align="left"><p>HR</p></td>
-<td align="left"><p>Web help</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Internet Explorer 7</p></td>
-<td align="left"><p>C:\Program Files\Internet Explorer&lt;/p&gt;</td>
-<td align="left"><p>File is signed; create a publisher condition</p></td>
-<td align="left"><p>Deny</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Help Desk</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Windows files</p></td>
-<td align="left"><p>C:\Windows</p></td>
-<td align="left"><p>Use the default rule for the Windows path</p></td>
-<td align="left"><p>Allow</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Help Desk</p></td>
-</tr>
-</tbody>
-</table>
+|Business group|Organizational unit|Implement AppLocker?|Apps|Installation path|Use default rule or define new rule condition|Allow or deny|GPO name|Support policy|
+|--- |--- |--- |--- |--- |--- |--- |--- |--- |
+|Bank Tellers|Teller-East and Teller-West|Yes|Teller software|C:\Program Files\Woodgrove\Teller.exe|File is signed; create a publisher condition|Allow|Tellers|Web help|
+||||Windows files|C:\Windows|Create a path exception to the default rule to exclude \Windows\Temp|Allow||Help Desk|
+||||Time Sheet Organizer|C:\Program Files\Woodgrove\HR\Timesheet.exe|File is not signed; create a file hash condition|Allow||Web help|
+|Human Resources|HR-All|Yes|Check Payout|C:\Program Files\Woodgrove\HR\Checkcut.exe|File is signed; create a publisher condition|Allow|HR|Web help|
+||||Internet Explorer 7|C:\Program Files\Internet Explorer</p>|File is signed; create a publisher condition|Deny||Help Desk|
+||||Windows files|C:\Windows|Use the default rule for the Windows path|Allow||Help Desk|
  
 <b>Event processing policy</b>
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Business group</th>
-<th align="left">AppLocker event collection location</th>
-<th align="left">Archival policy</th>
-<th align="left">Analyzed?</th>
-<th align="left">Security policy</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Bank Tellers</p></td>
-<td align="left"><p>Forwarded to: srvBT093</p></td>
-<td align="left"><p>Standard</p></td>
-<td align="left"><p>None</p></td>
-<td align="left"><p>Standard</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Human Resources</p></td>
-<td align="left"><p>Do not forward</p>
-<p></p></td>
-<td align="left"><p>60 months</p></td>
-<td align="left"><p>Yes; summary reports monthly to managers</p></td>
-<td align="left"><p>Standard</p></td>
-</tr>
-</tbody>
-</table>
+|Business group|AppLocker event collection location|Archival policy|Analyzed?|Security policy|
+|--- |--- |--- |--- |--- |
+|Bank Tellers|Forwarded to: srvBT093|Standard|None|Standard|
+|Human Resources|Do not forward|60 months|Yes; summary reports monthly to managers|Standard|
  
 <b>Policy maintenance policy</b>
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Business group</th>
-<th align="left">Rule update policy</th>
-<th align="left">App decommission policy</th>
-<th align="left">App version policy</th>
-<th align="left">App deployment policy</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Bank Tellers</p></td>
-<td align="left"><p>Planned: Monthly through business office triage</p>
-<p>Emergency: Request through Help Desk</p></td>
-<td align="left"><p>Through business office triage; 30-day notice required</p></td>
-<td align="left"><p>General policy: Keep past versions for 12 months</p>
-<p>List policies for each application</p></td>
-<td align="left"><p>Coordinated through business office; 30-day notice required</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Human Resources</p></td>
-<td align="left"><p>Planned: Through HR triage</p>
-<p>Emergency: Request through Help Desk</p></td>
-<td align="left"><p>Through HR triage; 30-day notice required</p>
-<p></p></td>
-<td align="left"><p>General policy: Keep past versions for 60 months</p>
-<p>List policies for each application</p></td>
-<td align="left"><p>Coordinated through HR; 30-day notice required</p></td>
-</tr>
-</tbody>
-</table>
+|Business group|Rule update policy|App decommission policy|App version policy|App deployment policy|
+|--- |--- |--- |--- |--- |
+|Bank Tellers|Planned: Monthly through business office triage<p>Emergency: Request through Help Desk|Through business office triage; 30-day notice required|General policy: Keep past versions for 12 months<p>List policies for each application|Coordinated through business office; 30-day notice required|
+|Human Resources|Planned: Through HR triage<p>Emergency: Request through Help Desk|Through HR triage; 30-day notice required|General policy: Keep past versions for 60 months<p>List policies for each application|Coordinated through HR; 30-day notice required|
  
 ### <a href="" id="bkmk-reqsupportedos"></a>Supported operating systems
 

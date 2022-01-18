@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 12/05/2017
 ---
 
@@ -57,7 +57,7 @@ The XML below is the current version for this CSP.
               <Add />
               <Delete />
             </AccessType>
-            <Description>Group settings per DM server. Each group of settings is distinguished by the server's Provider ID. It should be the same DM server PROVIDER-ID value that was supplied through the w7 APPLICATION configuration service provider XML during the enrollment process. In Windows Phone 8, only one enterprise management server is supported. That is, there should be only one ProviderID node under NodeCache.</Description>
+            <Description>Group settings per DM server. Each group of settings is distinguished by the server's Provider ID. It should be the same DM server PROVIDER-ID value that was supplied through the w7 APPLICATION configuration service provider XML during the enrollment process.</Description>
             <DFFormat>
               <node />
             </DFFormat>
@@ -282,7 +282,7 @@ The XML below is the current version for this CSP.
               <Add />
               <Delete />
             </AccessType>
-            <Description>Group settings per DM server. Each group of settings is distinguished by the server's Provider ID. It should be the same DM server PROVIDER-ID value that was supplied through the w7 APPLICATION configuration service provider XML during the enrollment process. In Windows Phone 8, only one enterprise management server is supported. That is, there should be only one ProviderID node under NodeCache.</Description>
+            <Description>Group settings per DM server. Each group of settings is distinguished by the server's Provider ID. It should be the same DM server PROVIDER-ID value that was supplied through the w7 APPLICATION configuration service provider XML during the enrollment process.</Description>
             <DFFormat>
               <node />
             </DFFormat>
