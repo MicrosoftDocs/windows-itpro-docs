@@ -50,29 +50,44 @@ For information about setting up Delivery Optimization, including tips for the b
 
 The following table lists the minimum Windows 10 version that supports Delivery Optimization:
 
-| Device type | Minimum Windows version |
+| Device type | Minimum Windows version 
 |------------------|---------------|
-| Computers running Windows 10 | 1511 |
-| Computers running Server Core installations of Windows Server | 1709 |
-| IoT devices | 1803 |
+| Computers running Windows 10 | Win 10 1511 |
+| Computers running Server Core installations of Windows Server | Windows Server 2019 |
+| Windows IoT devices | Win 10 1803 |
 
-**Types of download packages supported by Delivery Optimization**
+### Types of download content supported by Delivery Optimization
 
-| Download package | Minimum Windows version |
-|------------------|---------------|
-| Windows client updates (feature updates and quality updates) | 1511 |
-| Windows client drivers | 1511 |
-| Windows Store files | 1511 |
-| Windows Store for Business files | 1511 |
-| Windows Defender definition updates | 1511 |
-| Microsoft 365 Apps and updates | 1709 (for more information, see [Delivery Optimization and Microsoft 365 Apps](/deployoffice/delivery-optimization)) |
-| Win32 apps for Intune | 1709 |
-| Xbox game pass games | 2004 |
-| MSIX apps (HTTP downloads only) | 2004 |
-| Configuration Manager Express updates | 1709 + Configuration Manager version 1711 |
-| Edge browser installs and updates | 1809 |
-| [Dynamic updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/the-benefits-of-windows-10-dynamic-update/ba-p/467847) | 1903 |
+#### Windows Client
 
+| Windows Client | Minimum Windows version | HTTP Downloader | Peer to Peer | Microsoft Connected Cache (MCC)
+|------------------|---------------|----------------|----------|----------------|
+| Windows Update (feature updates quality updates, language packs, drivers) | Win 10 1511, Win 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Windows 10 Store files | Win 10 1511, Win 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Windows 10 Store for Business files | Win 10 1511, Win 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Windows Defender definition updates | Win 10 1511, Win 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Intune Win32 apps| Win 10 1709, Win 11 | :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark: |
+| Microsoft 365 Apps and updates | Win 10 1709, Win 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Edge Browser Updates | Win 10 1809, Win 11 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Configuration Manager Express updates| Win 10 1709 + Configuration Manager version Win 10 1711, Win 11 | :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark: |
+| Dynamic updates| Win 10 1903, Win 11 | :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark: |
+| MDM Agent | Win 11 | :heavy_check_mark: | :heavy_check_mark:  | :heavy_check_mark: |
+| Xbox Game Pass (PC) | Win 10 1809, Win 11 | :heavy_check_mark: |  | :heavy_check_mark: |
+| Windows Package Manager| Win 10 1809, Win 11 | :heavy_check_mark: |  |  |
+| MSIX | Win 10 2004, Win 11 | :heavy_check_mark: |  |  |
+
+#### Windows Server
+
+| Windows Server | Minimum Windows version | HTTP Downloader | Peer to Peer | Microsoft Connected Cache (MCC)
+|----------------|--------------------------|----------------|----------|----------------|
+| Windows Update | Windows Server 2019 (1809) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Edge Browser Updates | Windows Server 2019 (1809) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+
+#### Linux (Public Preview)
+
+| Linux ([Public Preview](https://github.com/microsoft/do-client)) | Linux versions | HTTP Downloader | Peer to Peer | Microsoft Connected Cache (MCC)
+|------------------------|----------------|-----------------|--------------|---------------|
+| Device Update for IoT Hub | Ubuntu 18.04, 20.04 / Debian 9, 10 | :heavy_check_mark: |  | :heavy_check_mark: |
 > [!NOTE]
 > Starting with Configuration Manager version 1910, you can use Delivery Optimization for the distribution of all Windows update content for clients running Windows 10 version 1709 or newer, not just express installation files. For more, see [Delivery Optimization starting in version 1910](/mem/configmgr/sum/deploy-use/optimize-windows-10-update-delivery#bkmk_DO-1910).
 
@@ -85,7 +100,7 @@ For more information, see "Download mode" in [Delivery optimization reference](w
 
 ## Set up Delivery Optimization
 
-See [Set up Delivery Optimization](waas-delivery-optimization-setup.md) for suggested values for a number of common scenarios.
+See [Set up Delivery Optimization](waas-delivery-optimization-setup.md) for suggested values for many common scenarios.
 
 You can use Group Policy or an MDM solution like Intune to configure Delivery Optimization. 
 
@@ -104,7 +119,7 @@ For complete list of every possible Delivery Optimization setting, see [Delivery
 ## How Microsoft uses Delivery Optimization
 At Microsoft, to help ensure that ongoing deployments weren't affecting our network and taking away bandwidth for other services, Microsoft IT used a couple of different bandwidth management strategies. Delivery Optimization, peer-to-peer caching enabled through Group Policy, was piloted and then deployed to all managed devices using Group Policy. Based on recommendations from the Delivery Optimization team, we used the "group" configuration to limit sharing of content to only the devices that are members of the same Active Directory domain. The content is cached for 24 hours. More than 76 percent of content came from peer devices versus the Internet.
 
-For more details, check out the [Adopting Windows as a Service at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft) technical case study.
+For more information, check out the [Adopting Windows as a Service at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft) technical case study.
 
 
 
