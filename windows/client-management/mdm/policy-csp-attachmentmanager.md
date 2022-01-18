@@ -183,7 +183,7 @@ If you do not configure this policy setting, Windows does not call the registere
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Notify antivirus programs when opening attachments*
+-   GP Friendly name: *Notify antivirus programs when opening attachments*
 -   GP name: *AM_CallIOfficeAntiVirus*
 -   GP path: *Windows Components/Attachment Manager*
 -   GP ADMX file name: *AttachmentManager.admx*
