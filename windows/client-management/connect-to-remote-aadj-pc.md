@@ -9,7 +9,7 @@ ms.pagetype: devices
 author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
-ms.date: 01/14/2022
+ms.date: 01/18/2022
 ms.reviewer: 
 manager: dansimp
 ms.topic: article
