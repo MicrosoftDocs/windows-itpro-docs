@@ -40,6 +40,9 @@ manager: dansimp
     <a href="#authentication-configurewebsigninallowedurls">Authentication/ConfigureWebSignInAllowedUrls</a>
   </dd>
   <dd>
+    <a href="#authentication-configurewebcamaccessdomainnames">Authentication/ConfigureWebcamAccessDomainNames</a>
+  </dd>
+  <dd>
     <a href="#authentication-enablefastfirstsignin">Authentication/EnableFastFirstSignIn</a>
   </dd>
   <dd>
@@ -306,6 +309,55 @@ The following list shows the supported values:
 Specifies the list of domains that are allowed to be navigated to in AAD PIN reset and Web Sign-in Windows device scenarios where authentication is handled by AD FS or a third-party federated identity provider. Note this policy is required in federated environments as a mitigation to the vulnerability described in [CVE-2021-27092](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-27092).
 
 **Example**: If your organization's PIN reset or Web Sign-in authentication flow is expected to navigate to two domains, accounts.contoso.com and signin.contoso.com, the policy value should be "accounts.contoso.com;signin.contoso.com".
+
+<!--/Description-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="authentication-configurewebcamaccessdomainnames"></a>**Authentication/ConfigureWebcamAccessDomainNames**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+Specifies the list of domain names that are allowed to access the webcam in Web Sign-in Windows device sign-in scenarios.
+
+Web Sign-in is only supported on Azure AD Joined PCs.
+
+**Example**: If your organization federates to "Contoso IDP" and your Web Sign-in portal at "signinportal.contoso.com" requires webcam access, the policy value should be "contoso.com".
+
 
 <!--/Description-->
 <!--SupportedValues-->

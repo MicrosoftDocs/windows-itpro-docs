@@ -113,7 +113,7 @@ If you disable or do not configure this policy setting, the user may choose to s
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Block user from showing account details on sign-in*
+-   GP Friendly name: *Block user from showing account details on sign-in*
 -   GP name: *BlockUserFromShowingAccountDetailsOnSignin*
 -   GP path: *System\Logon*
 -   GP ADMX file name: *Logon.admx*
@@ -159,7 +159,7 @@ If you disable or do not configure this policy, the logon background image adopt
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Show clear logon background*
+-   GP Friendly name: *Show clear logon background*
 -   GP name: *DisableAcrylicBackgroundOnLogon*
 -   GP path: *System\Logon*
 -   GP ADMX file name: *Logon.admx*
@@ -208,7 +208,7 @@ This policy setting appears in the Computer Configuration and User Configuration
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not process the legacy run list*
+-   GP Friendly name: *Do not process the legacy run list*
 -   GP name: *DisableExplorerRunLegacy_1*
 -   GP path: *System\Logon*
 -   GP ADMX file name: *Logon.admx*
@@ -257,7 +257,7 @@ This policy setting appears in the Computer Configuration and User Configuration
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not process the legacy run list*
+-   GP Friendly name: *Do not process the legacy run list*
 -   GP name: *DisableExplorerRunLegacy_2*
 -   GP path: *System\Logon*
 -   GP ADMX file name: *Logon.admx*
@@ -310,7 +310,7 @@ This policy setting appears in the Computer Configuration and User Configuration
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not process the run once list*
+-   GP Friendly name: *Do not process the run once list*
 -   GP name: *DisableExplorerRunOnceLegacy_1*
 -   GP path: *System\Logon*
 -   GP ADMX file name: *Logon.admx*
@@ -363,7 +363,7 @@ This policy setting appears in the Computer Configuration and User Configuration
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not process the run once list*
+-   GP Friendly name: *Do not process the run once list*
 -   GP name: *DisableExplorerRunOnceLegacy_2*
 -   GP path: *System\Logon*
 -   GP ADMX file name: *Logon.admx*
@@ -409,7 +409,7 @@ If you disable or do not configure this policy setting, the system displays the 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove Boot / Shutdown / Logon / Logoff status messages*
+-   GP Friendly name: *Remove Boot / Shutdown / Logon / Logoff status messages*
 -   GP name: *DisableStatusMessages*
 -   GP path: *System*
 -   GP ADMX file name: *Logon.admx*
@@ -455,7 +455,7 @@ If you disable or do not configure this policy setting, connected users will be 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not enumerate connected users on domain-joined computers*
+-   GP Friendly name: *Do not enumerate connected users on domain-joined computers*
 -   GP name: *DontEnumerateConnectedUsers*
 -   GP path: *System\Logon*
 -   GP ADMX file name: *Logon.admx*
@@ -511,7 +511,7 @@ This setting applies only to Windows. It does not affect the "Configure Your Ser
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not display the Getting Started welcome screen at logon*
+-   GP Friendly name: *Do not display the Getting Started welcome screen at logon*
 -   GP name: *NoWelcomeTips_1*
 -   GP path: *System*
 -   GP ADMX file name: *Logon.admx*
@@ -566,7 +566,7 @@ If you disable or do not configure this policy, the welcome screen is displayed 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not display the Getting Started welcome screen at logon*
+-   GP Friendly name: *Do not display the Getting Started welcome screen at logon*
 -   GP name: *NoWelcomeTips_2*
 -   GP path: *System\Logon*
 -   GP ADMX file name: *Logon.admx*
@@ -619,7 +619,7 @@ Also, see the "Do not process the legacy run list" and the "Do not process the r
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Run these programs at user logon*
+-   GP Friendly name: *Run these programs at user logon*
 -   GP name: *Run_1*
 -   GP path: *System\Logon*
 -   GP ADMX file name: *Logon.admx*
@@ -673,7 +673,7 @@ Also, see the "Do not process the legacy run list" and the "Do not process the r
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Run these programs at user logon*
+-   GP Friendly name: *Run these programs at user logon*
 -   GP name: *Run_2*
 -   GP path: *System\Logon*
 -   GP ADMX file name: *Logon.admx*
@@ -737,7 +737,7 @@ If you disable or do not configure this policy setting and users log on to a cli
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Always wait for the network at computer startup and logon*
+-   GP Friendly name: *Always wait for the network at computer startup and logon*
 -   GP name: *SyncForegroundPolicy*
 -   GP path: *System\Logon*
 -   GP ADMX file name: *Logon.admx*
@@ -783,7 +783,7 @@ If you disable or do not configure this policy setting, Windows uses the default
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Always use custom logon background*
+-   GP Friendly name: *Always use custom logon background*
 -   GP name: *UseOEMBackground*
 -   GP path: *System\Logon*
 -   GP ADMX file name: *Logon.admx*
@@ -834,7 +834,7 @@ If you disable or do not configure this policy setting, only the default status 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Display highly detailed status messages*
+-   GP Friendly name: *Display highly detailed status messages*
 -   GP name: *VerboseStatus*
 -   GP path: *System*
 -   GP ADMX file name: *Logon.admx*
