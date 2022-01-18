@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 12/03/2021
+ms.date: 01/18/2022
 ---
 
 # Change the TPM owner password
