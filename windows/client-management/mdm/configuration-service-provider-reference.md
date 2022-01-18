@@ -1135,6 +1135,7 @@ The following list shows the CSPs supported in HoloLens devices:
 -   [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)
 -   [Firewall-CSP](firewall-csp.md) 
 -   [HealthAttestation CSP](healthattestation-csp.md)
+-   [NetworkProxy CSP](networkproxy-csp.md)
 -   [NetworkQoSPolicy CSP](networkqospolicy-csp.md)
 -   [NodeCache CSP](nodecache-csp.md)
 -   [PassportForWork CSP](passportforwork-csp.md)
