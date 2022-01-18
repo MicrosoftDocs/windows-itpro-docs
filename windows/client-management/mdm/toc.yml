@@ -741,6 +741,8 @@ items:
               href: policy-csp-lockdown.md
             - name: Maps
               href: policy-csp-maps.md
+            - name: MemoryDump
+              href: policy-csp-memorydump.md
             - name: Messaging
               href: policy-csp-messaging.md
             - name: MixedReality
