@@ -36,7 +36,7 @@ See [Support Tip: Ingesting Office ADMX policies using Microsoft Intune](https:/
 > See [Understanding ADMX policies in Policy CSP](./understanding-admx-backed-policies.md).
 
 1.  Find the policy from the list [ADMX policies](./policies-in-policy-csp-admx-backed.md). You need the following information listed in the policy description.  
-    - GP English name
+    - GP Friendly name
     - GP name
     - GP ADMX file name
     - GP path
