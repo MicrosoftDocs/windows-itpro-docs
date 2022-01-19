@@ -16,7 +16,7 @@ ms.topic: article
 
 # Hard-Link Migration Store
 
-A *hard-link migration store* enables you to perform an in-place migration where all user state is maintained on the computer while the old operating system is removed and the new operating system is installed; this is why it is best suited for the computer-refresh scenario. Use of a hard-link migration store for a computer-refresh scenario drastically improves migration performance and significantly reduces hard-disk utilization, reduces deployment costs, and enables entirely new migration scenarios.
+A *hard-link migration store* enables you to perform an in-place migration where all user state is maintained on the computer while the old operating system is removed and the new operating system is installed; this functionality is what makes *hard-link migration store* best suited for the computer-refresh scenario. Use of a hard-link migration store for a computer-refresh scenario drastically improves migration performance and significantly reduces hard-disk utilization, reduces deployment costs, and enables entirely new migration scenarios.
 
 ## In this topic
 
@@ -50,7 +50,7 @@ You can use a hard-link migration store when your planned migration meets both o
 
 -   You are upgrading the operating system on the same volume of the computer.
 
-You cannot use a hard-link migration store if your planned migration includes any of the following:
+You cannot use a hard-link migration store if your planned migration includes any of the following tasks:
 
 -   You are migrating data from one computer to a second computer.
 
@@ -62,7 +62,7 @@ You cannot use a hard-link migration store if your planned migration includes an
 
 The hard-link migration store is created using the command-line option, **/hardlink**, and is equivalent to other migration-store types. However, it differs in that hard links are utilized to keep files stored on the source computer during the migration. Keeping the files in place on the source computer eliminates the redundant work of duplicating files. It also enables the performance benefits and reduction in disk utilization that define this scenario.
 
-When you create a hard link, you give an existing file an additional path. For instance, you could create a hard link to c:\\file1.txt called c:\\hard link\\myFile.txt. These are two paths to the same file. If you open c:\\file1.txt, make changes, and save the file, you will see those changes when you open c:\\hard link\\myFile.txt. If you delete c:\\file1.txt, the file still exists on your computer as c:\\hardlink\\myFile.txt. You must delete both references to the file in order to delete the file.
+When you create a hard link, you give an existing file one more path. For instance, you could create a hard link to c:\\file1.txt called c:\\hard link\\myFile.txt. These two paths relate to the same file. If you open c:\\file1.txt, make changes, and save the file, you will see those changes when you open c:\\hard link\\myFile.txt. If you delete c:\\file1.txt, the file still exists on your computer as c:\\hardlink\\myFile.txt. You must delete both references to the file in order to delete the file.
 
 > [!NOTE]
 > A hard link can only be created for a file on the same volume. If you copy a hard-link migration store to another drive or external device, the files, and not the links, are copied, as in a non-compressed migration-store scenario.
@@ -76,11 +76,11 @@ As a best practice, we recommend that you delete the hard-link migration store a
 > [!IMPORTANT]
 > Using the **/c** option will force the Loadstate tool to continue applying files when non-fatal errors occur. If you use the **/c** option, you should verify that no errors are reported in the logs before deleting the hard-link migration store in order to avoid data loss.
 
-Keeping the hard-link migration store can result in additional disk space being consumed or problems with some applications for the following reasons:
+Keeping the hard-link migration store can result in extra disk space being consumed or problems with some applications for the following reasons:
 
 -   Applications reporting file-system statistics, for example, space used and free space, might incorrectly report these statistics while the hard-link migration store is present. The file may be reported twice because of the two paths that reference that file.
 
--   A hard link may lose its connection to the original file. Some applications save changes to a file by creating a temporary file and then renaming the original to a backup filename. The path that was not used to open the file in this application will continue to refer to the unmodified file. The unmodified file that is not in use is taking up additional disk space. You should create the hard-link migration store just before you perform the migration, and not use applications once the store is created, in order to make sure you are migrating the latest versions of all files.
+-   A hard link may lose its connection to the original file. Some applications save changes to a file by creating a temporary file and then renaming the original to a backup filename. The path that was not used to open the file in this application will continue to refer to the unmodified file. The unmodified file that is not in use is taking up more disk space. You should create the hard-link migration store just before you perform the migration, and not use applications once the store is created, in order to make sure you are migrating the latest versions of all files.
 
 -   Editing the file by using different paths simultaneously may result in data corruption.
 
@@ -131,7 +131,7 @@ The drive you specify on the command line for the hard-link migration store is i
 
 ### <a href="" id="bkmk-locationmodify"></a>Location Modifications
 
-Location modifications that redirect migrated content from one volume to a different volume have an adverse impact on the performance of a hard-link migration. This is because the migrating data that must cross system volumes cannot remain in the hard-link migration store, and must be copied across the system volumes.
+Location modifications that redirect migrated content from one volume to a different volume have an adverse impact on the performance of a hard-link migration. This impact is because the migrating data that must cross system volumes cannot remain in the hard-link migration store, and must be copied across the system volumes.
 
 ### <a href="" id="bkmk-efs"></a>Migrating Encrypting File System (EFS) Certificates and Files
 

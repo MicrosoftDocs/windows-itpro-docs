@@ -4,7 +4,7 @@ ms.assetid: fdfbf02f-c4c4-4739-a400-782204fd3c6c
 ms.reviewer: 
 manager: laurawi
 ms.author: greglin
-description: Learn about deploying your compatibility fixes as part of an application-installation package or through a centralized compatibility-fix database.
+description: Learn how to deploy your compatibility fixes into an application-installation package or through a centralized compatibility-fix database.
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
@@ -28,40 +28,43 @@ ms.custom: seo-marvel-mar2020
 -   Windows Server 2012
 -   Windows Server 2008 R2
 
-After you determine that you will use compatibility fixes in your application-compatibility mitigation strategy, you must define a strategy to manage your custom compatibility-fix database. Typically, you can use one of two approaches:
+To use fixes in application-compatibility mitigation strategy, define a strategy to manage your custom compatibility-fix database. Typically, you can use one of the two following approaches:
 
 -   Deploying your compatibility fixes as part of an application-installation package.
 
 -   Deploying your compatibility fixes through a centralized compatibility-fix database.
 
-Regardless of which approach you decide to use in your organization, Microsoft provides the following general recommendations for improving the management of your custom compatibility-fix databases:
+Microsoft provides general recommends the following remedies for improving the management of your custom compatibility-fix databases.
 
--   **Define standards for when you will apply compatibility fixes.**
+> [!NOTE]
+> These recommendations are not based on irrespective of the approach you decide to use. The following are the general recommendations.
 
-    You must define the standards and scenarios for using compatibility fixes, based on your specific business and technology needs.
+-   **Define standards for when you will apply compatibility fixes**
 
--   **Define standards for your custom compatibility-fix databases.**
+    Ensure that the standards and scenarios for using compatibility fixes are defined, based on your specific business and technology needs.
 
-    You must define how to associate your compatibility fixes to particular applications. For example, you might want to ensure that your compatibility fixes always include a version check, so that a fix will not be applied to newer versions of your applications.
+-   **Define standards for your custom compatibility-fix databases**
 
--   **Define your resources responsible for addressing questions and enforcing your standards.**
+     Compatibility fixes must include a version check, so that mapping to particular applications becomes easy. Ensure that your compatibility fixes always, so that the fix won't be applied to newer versions of your applications.
 
-    You must determine who will be responsible for staying current with the technology and standards related to your compatibility fixes and custom compatibility-fix databases. As your databases are managed over time, you must ensure that someone in your organization stays current with the relevant technology.
+-   **Define your resources responsible for addressing questions and enforcing your standards**
+
+    Ensure you determine who will be responsible for staying current with the technology and standards that are related to your compatibility fixes and custom compatibility-fix databases. As your databases are managed over time, you must ensure that someone in your organization stays current with the relevant technology.
 
 ## Strategies for Deploying Your Compatibility Fixes
 
 
-We recommend that you use one of two strategies to deploy your compatibility fixes into your organization. They are:
+We recommend the usage of one of the two strategies to deploy your compatibility fixes into your organization. They are:
 
 -   Deploying your compatibility fixes as part of an application-installation package.
 
 -   Deploying your compatibility fixes through a centralized compatibility-fix database.
 
-You must determine which method best meets your organization's deployment needs.
+Determine which method best meets your organization's deployment needs.
 
 ### Deploying Fixes as Part of an Application-Installation Package
 
-One strategy for deploying compatibility fixes is to create a custom compatibility-fix database that contains a single entry that is applied directly to the application-installation package. While this is the most straightforward method of deployment, it has been shown that this method can become overly complex, especially if you are fixing a large number of applications.
+One strategy to deploy compatibility fixes is to create a custom compatibility-fix database that contains a single entry that is applied directly to the application-installation package. While this is the most straightforward method of deployment, it has been shown that this method can become overly complex, especially if you are fixing a large number of applications.
 
 If the following considerations apply to your organization, you should avoid this strategy and instead consider using a centralized compatibility-fix database, as described in the next section.
 
@@ -114,7 +117,7 @@ If you decide to use the centralized compatibility-fix database deployment strat
 
 Deploying your custom compatibility-fix database into your organization requires you to perform the following actions:
 
-1.  Store your custom compatibility-fix database (.sdb file) in a location that is accessible to all of your organization's computers.
+1.  Store your custom compatibility-fix database (.sib file) in a location that is accessible to all of your organization's computers.
 
 2.  Use the Sdbinst.exe command-line tool to install the custom compatibility-fix database locally.
 
@@ -122,7 +125,7 @@ In order to meet the two requirements above, we recommend that you use one of th
 
 -   **Using a Windows Installer package and a custom script**
 
-    You can package your .sdb file and a custom deployment script into an .msi file, and then deploy the .msi file into your organization.
+    You can package your .sib file and a custom deployment script into a file with the .msi extension, and then deploy the .msi file into your organization.
 
     > [!IMPORTANT]
     > You must ensure that you mark your custom script so that it does not impersonate the calling user. For example, if you use Microsoft&reg; Visual Basic&reg; Scripting Edition (VBScript), the custom action type would be:
@@ -131,16 +134,16 @@ In order to meet the two requirements above, we recommend that you use one of th
 
 -   **Using a network share and a custom script**
 
-You can store your .sdb file on your network share and then call to a script that resides on your specified computers.
+You can store the .sib file on your network share, and then call to a script available on your specified computers.
 
 > [!IMPORTANT]  
-> You must ensure that you call the script at a time when it will receive elevated rights. For example, you should call the script by using computer startup scripts instead of a user logon script. You must also ensure that the installation of the custom compatibility-fix database occurs with Administrator rights.
+> Ensure that you call the script at a time when it can receive elevated rights. For example, you should call the script by using computer startup scripts instead of a user logon script. You must also ensure that the installation of the custom compatibility-fix database occurs with Administrator rights.
 
 
 
-### Example Script for an Installation of the .sdb File based on an .msi File
+### Example Script for installation of .sib File based on .msi File
 
-The following examples show an installation of a custom compatibility-fix database based on an .msi file.
+The following examples show an installation of a custom compatibility-fix database based on a .msi file.
 
 ```
 'InstallSDB.vbs
@@ -161,7 +164,7 @@ End Function
 
 ### Initial Deployment and Updates
 
-Most of your testing of application-compatibility issues will happen prior to the deployment of a new Windows operating system into your environment. As such, a common approach is to include the custom compatibility-fix database, which includes all of your known issues, in your corporate image. Then, as you update your compatibility-fix database, you can provide the updates by using one of the two mechanisms described in the "Deploying Your Custom Compatibility Fix Databases" section earlier in this topic.
+Application-compatibility is tested, from which issues are reported, even before a new Windows operating system is deployed. To handle these issues, include the custom compatibility-fix database, which includes all of your known issues, in your corporate image. Later, update your compatibility-fix database; provide the updates by using one of the two mechanisms that are described in the "Deploying Your Custom Compatibility Fix Databases" section.
 
-## Related topics
+## Related articles
 [Managing Application-Compatibility Fixes and Custom Fix Databases](managing-application-compatibility-fixes-and-custom-fix-databases.md)

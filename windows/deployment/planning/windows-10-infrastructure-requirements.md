@@ -1,6 +1,6 @@
 ---
 title: Windows 10 infrastructure requirements (Windows 10)
-description: Review the specific infrastructure requirements to deploy and manage Windows 10,  prior to significant Windows 10 deployments within your organization.
+description: Review the infrastructure requirements for deployment and management of Windows 10,  prior to significant Windows 10 deployments within your organization.
 ms.assetid: B0FA27D9-A206-4E35-9AE6-74E70748BE64
 ms.reviewer: 
 manager: laurawi
@@ -22,11 +22,11 @@ ms.topic: article
 
 -   Windows 10
 
-There are specific infrastructure requirements to deploy and manage Windows 10 that should be in place prior to significant Windows 10 deployments within your organization.
+There are specific infrastructure requirements that should be in place for the deployment and management of Windows 10. Fulfill these requirements before any Windows 10-related deployments take place.
 
 ## High-level requirements
 
-For initial Windows 10 deployments, as well as subsequent Windows 10 upgrades, ensure that sufficient disk space is available for distribution of the Windows 10 installation files (about 3 GB for Windows 10 x64 images, slightly smaller for x86). Also, be sure to take into account the network impact of moving these large images to each PC; you may need to leverage local server storage.
+For initial Windows 10 deployments, and for subsequent Windows 10 upgrades, ensure that sufficient disk space is available for distribution of the Windows 10 installation files (about 3 GB for Windows 10 x64 images, slightly smaller for x86). Also, be sure to take into account the network impact of moving these large images to each PC; you may need to leverage local server storage.
 
 For persistent VDI environments, carefully consider the I/O impact from upgrading large numbers of PCs in a short period of time. Ensure that upgrades are performed in smaller numbers, or during off-peak time periods. (For pooled VDI environments, a better approach is to replace the base image with a new version.)
 
@@ -72,7 +72,10 @@ Windows Server Update Services (WSUS) requires some additional configuration to 
 
 WSUS product list with Windows 10 choices
 
-Because Windows 10 updates are cumulative in nature, each month’s new update will supersede the previous month's. Consider leveraging “express installation” packages to reduce the size of the payload that needs to be sent to each PC each month; see [Express installation files](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd939908(v=ws.10)) for more information. (Note that this will increase the amount of disk storage needed by WSUS, and impacts all operating systems being managed with WSUS.)
+Because Windows 10 updates are cumulative in nature, each month’s new update will supersede the previous month's update. Consider using “express installation” packages to reduce the size of the payload that needs to be sent to each PC each month; see [Express installation files](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd939908(v=ws.10)) for more information.
+
+> [!NOTE]
+> The usage of "express installation" packages will increase the amount of disk storage needed by WSUS, and impacts all operating systems being managed with WSUS.
 
 ## Activation
 
@@ -93,9 +96,9 @@ Additionally, new product keys will be needed for all types of volume license ac
 -   For KMS keys, click **Licenses** and then select **Relationship Summary**. Click the appropriate active license ID, and then select **Product Keys** near the right side of the page. For KMS running on Windows Server, find the **Windows Srv 2012R2 DataCtr/Std KMS for Windows 10** product key; for KMS running on client operating systems, find the **Windows 10** product key.
 -   For MAK keys, click **Downloads and Keys**, and then filter the list by using **Windows 10** as a product. Click the **Key** link next to an appropriate list entry (for example, **Windows 10 Enterprise** or **Windows 10 Enterprise LTSB**) to view the available MAK keys. (You can also find keys for KMS running on Windows 10 in this list. These keys will not work on Windows servers running KMS.)
 
-Note that Windows 10 Enterprise and Windows 10 Enterprise LTSC installations use different MAK keys. But you can use the same KMS server or Active Directory-based activation environment for both; the KMS keys obtained from the Volume Licensing Service Center will work with both.
+Windows 10 Enterprise and Windows 10 Enterprise LTSC installations use different MAK keys. But you can use the same KMS server or Active Directory-based activation environment for both; the KMS keys obtained from the Volume Licensing Service Center will work with both.
 
-## Related topics
+## Related articles
 
 [Windows 10 servicing options](../update/waas-servicing-strategy-windows-10-updates.md)<br>
 [Windows 10 deployment considerations](windows-10-deployment-considerations.md)<br>

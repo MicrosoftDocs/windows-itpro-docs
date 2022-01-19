@@ -49,7 +49,7 @@ When you activate a computer running Windows 10, the following information is s
 -   Volume serial number (hashed) of the hard disk drive
 -   The result of the activation check
 
-    This includes error codes and the following information about any activation exploits and related malicious or unauthorized software that was found or disabled:
+    This result includes error codes and the following information about any activation exploits and related malicious or unauthorized software that was found or disabled:
     
     -   The activation exploit’s identifier
     -   The activation exploit’s current state, such as cleaned or quarantined
@@ -63,7 +63,7 @@ Standard computer information is also sent, but your computer’s IP address is 
 ## Use of information
 
 Microsoft uses the information to confirm that you have a licensed copy of the software. Microsoft does not use the information to contact individual consumers.
-For additional details, see [Windows 10 Privacy Statement](https://go.microsoft.com/fwlink/p/?LinkId=619879).
+For more information, see [Windows 10 Privacy Statement](https://go.microsoft.com/fwlink/p/?LinkId=619879).
 
 ## See also
 

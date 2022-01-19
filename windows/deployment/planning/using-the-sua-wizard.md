@@ -42,7 +42,7 @@ The following flowchart shows the process of using the SUA Wizard.
 
 **To test an application by using the SUA Wizard**
 
-1.  On the computer where the SUA Wizard is installed, log on by using a non-administrator account.
+1.  On the computer where the SUA Wizard is installed, sign in by using a non-administrator account.
 
 2.  Run the Standard User Analyzer Wizard.
 
@@ -76,9 +76,9 @@ The following flowchart shows the process of using the SUA Wizard.
 
     The SUA Wizard closes the issue as resolved on the local computer.
 
-    If the remedies do not fix the issue with the application, click **No** again, and the wizard may offer additional remedies. If the additional remedies do not fix the issue, the wizard informs you that there are no more remedies available. For information about how to run the SUA tool for additional investigation, see [Using the SUA Tool](using-the-sua-tool.md).
+    If the remedies do not fix the issue with the application, click **No** again, and the wizard may offer another remedies. If the other remedies do not fix the issue, the wizard informs you that there are no more remedies available. For information about how to run the SUA tool for additional investigation, see [Using the SUA Tool](using-the-sua-tool.md).
 
-## Related topics
+## Related articles
 [SUA User's Guide](sua-users-guide.md)
 
  

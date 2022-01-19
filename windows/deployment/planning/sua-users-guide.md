@@ -32,7 +32,7 @@ You can use Standard User Analyzer (SUA) to test your applications and monitor A
 
 You can use SUA in either of the following ways:
 
--   **Standard User Analyzer Wizard.** A wizard that guides you through a step-by-step process to locate and fix issues, without options for additional analysis.
+-   **Standard User Analyzer Wizard.** A wizard that guides you through a step-by-step process to locate and fix issues, without options for more analysis.
 
 -   **Standard User Analyzer Tool.** A full-function tool in which you can perform in-depth analysis and fix issues.
 

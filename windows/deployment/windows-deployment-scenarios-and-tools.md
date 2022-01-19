@@ -18,16 +18,16 @@ ms.collection: highpri
 # Windows 10 deployment scenarios and tools
 
 
-To successfully deploy the Windows 10 operating system and applications for your organization, it is essential that you know about the available tools to help with the process. In this topic, you will learn about the most commonly used tools for Windows 10 deployment.
+To successfully deploy the Windows 10 operating system and applications for your organization, you must know about the available tools to help with the process. In this article, you will learn about the most commonly used tools for Windows 10 deployment.
 
-Microsoft provides many tools, services, and solutions. These tools include Windows Deployment Services (WDS), the Volume Activation Management Tool (VAMT), the User State Migration Tool (USMT), Windows System Image Manager (Windows SIM), Windows Preinstallation Environment (Windows PE), and Windows Recovery Environment (Windows RE). Keep in mind that these are just tools and not a complete solution on their own. It’s when you combine these tools with solutions like [Microsoft Deployment Toolkit (MDT)](./deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md) or [Configuration Manager](deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md) that you get the complete deployment solution.
+Microsoft provides many tools, services, and solutions. These tools include Windows Deployment Services (WDS), the Volume Activation Management Tool (VAMT), the User State Migration Tool (USMT), Windows System Image Manager (Windows SIM), Windows Preinstallation Environment (Windows PE), and Windows Recovery Environment (Windows RE). Keep in mind that these tools are not a complete solution on their own. It’s when you combine these tools with solutions like [Microsoft Deployment Toolkit (MDT)](./deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md) or [Configuration Manager](deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md) that you get the complete deployment solution.
 
-In this topic, you also learn about different types of reference images that you can build, and why reference images are beneficial for most organizations
+In this article, you also learn about different types of reference images that you can build, and why reference images are beneficial for most organizations
 
 ## Windows Assessment and Deployment Kit
 
 
-Windows ADK contains core assessment and deployment tools and technologies, including Deployment Image Servicing and Management (DISM), Windows Imaging and Configuration Designer (Windows ICD), Windows System Image Manager (Windows SIM), User State Migration Tool (USMT), Volume Activation Management Tool (VAMT), Windows Preinstallation Environment (Windows PE), Windows Assessment Services, Windows Performance Toolkit (WPT), Application Compatibility Toolkit (ACT), and Microsoft SQL Server 2012 Express. For more details, see [Windows ADK for Windows 10](/windows-hardware/get-started/adk-install) or [Windows ADK for Windows 10 scenarios for IT Pros](windows-adk-scenarios-for-it-pros.md).
+Windows ADK contains core assessment and deployment tools and technologies, including Deployment Image Servicing and Management (DISM), Windows Imaging and Configuration Designer (Windows ICD), Windows System Image Manager (Windows SIM), User State Migration Tool (USMT), Volume Activation Management Tool (VAMT), Windows Preinstallation Environment (Windows PE), Windows Assessment Services, Windows Performance Toolkit (WPT), Application Compatibility Toolkit (ACT), and Microsoft SQL Server 2012 Express. For more information, see [Windows ADK for Windows 10](/windows-hardware/get-started/adk-install) or [Windows ADK for Windows 10 scenarios for IT Pros](windows-adk-scenarios-for-it-pros.md).
 
 ![figure 1.](images/win-10-adk-select.png)
 
@@ -43,7 +43,7 @@ DISM services online and offline images. For example, with DISM you can install 
 Dism.exe /Online /Enable-Feature /FeatureName:NetFX3 /All /Source:D:\Sources\SxS /LimitAccess
 ```
 
-In Windows 10, you can use Windows PowerShell for many of the functions performed by DISM.exe. The equivalent command in Windows 10 using PowerShell is:
+In Windows 10, you can use Windows PowerShell for many of the functions done by DISM.exe. The equivalent command in Windows 10 using PowerShell is:
 
 ``` syntax
 Enable-WindowsOptionalFeature -Online -FeatureName NetFx3 -All 
@@ -67,9 +67,9 @@ Occasionally, we find that customers are wary of USMT because they believe it re
 
 USMT includes several command-line tools, the most important of which are ScanState and LoadState:
 
--   **ScanState.exe.** This performs the user-state backup.
--   **LoadState.exe.** This performs the user-state restore.
--   **UsmtUtils.exe.** This supplements the functionality in ScanState.exe and LoadState.exe.
+-   **ScanState.exe.** This tool performs the user-state backup.
+-   **LoadState.exe.** This tool performs the user-state restore.
+-   **UsmtUtils.exe.** This tool supplements the functionality in ScanState.exe and LoadState.exe.
 
 In addition to these tools, there are also XML templates that manage which data is migrated. You can customize the templates, or create new ones, to manage the backup process at a high level of detail. USMT uses the following terms for its templates:
 
@@ -85,20 +85,20 @@ USMT supports capturing data and settings from Windows Vista and later, and rest
 
 By default USMT migrates many settings, most of which are related to the user profile but also to Control Panel configurations, file types, and more. The default templates that are used in Windows 10 deployments are MigUser.xml and MigApp.xml. These two default templates migrate the following data and settings:
 
--   Folders from each profile, including those from user profiles as well as shared and public profiles. For example, the My Documents, My Video, My Music, My Pictures, desktop files, Start menu, Quick Launch settings, and Favorites folders are migrated.
--   Specific file types. USMT templates migrate the following file types: .accdb, .ch3, .csv, .dif, .doc\*, .dot\*, .dqy, .iqy, .mcw, .mdb\*, .mpp, .one\*, .oqy, .or6, .pot\*, .ppa, .pps\*, .ppt\*, .pre, .pst, .pub, .qdf, .qel, .qph, .qsd, .rqy, .rtf, .scd, .sh3, .slk, .txt, .vl\*, .vsd, .wk\*, .wpd, .wps, .wq1, .wri, .xl\*, .xla, .xlb, .xls\*.
+-   Folders from each profile, including those folders from user profiles, and shared and public profiles. For example, the My Documents, My Video, My Music, My Pictures, desktop files, Start menu, Quick Launch settings, and Favorites folders are migrated.
+-   Specific file types. USMT templates migrate the following file types: .accdb, .ch3, .csv,dif, .doc\*, .dot\*, .dqy, .iqy, .mcw, .mdb\*, .mpp, .one\*, .oqy, .or6, .pot\*, .ppa, .pps\*, .ppt\*, .pre, .pst, .pub, .qdf, .qel, .qph, .qsd, .rqy, .rtf, .scd, .sh3, .slk, .txt, .vl\*, .vsd, .wk\*, .wpd, .wps, .wq1, .wri, .xl\*, .xla, .xlb, .xls\*.
 
-    **Note**  
-    The OpenDocument extensions (\*.odt, \*.odp, \*.ods, etc.) that Microsoft Office applications can use are not migrated by default.
+    > [!NOTE]
+    > The OpenDocument extensions (\*.odt, \*.odp, \*.ods, etc.) that Microsoft Office applications can use are not migrated by default.
 
 -   Operating system component settings
 -   Application settings
 
-These are the settings migrated by the default MigUser.xml and MigApp.xml templates. For more details on what USMT migrates, see [What does USMT migrate?](./usmt/usmt-what-does-usmt-migrate.md) For more information on the USMT overall, see the [USMT technical reference](./usmt/usmt-reference.md).
+These settings are the ones migrated by the default MigUser.xml and MigApp.xml templates. For more information on what USMT migrates, see [What does USMT migrate?](./usmt/usmt-what-does-usmt-migrate.md) For more information on the USMT overall, see the [USMT technical reference](./usmt/usmt-reference.md).
 
 ### Windows Imaging and Configuration Designer
 
-Windows Imaging and Configuration Designer (Windows ICD) is a tool designed to assist with the creation of provisioning packages that can be used to dynamically configure a Windows device (PCs, tablets, and phones). This is particularly useful for setting up new devices, without the need for re-imaging the device with a custom image.
+Windows Imaging and Configuration Designer (Windows ICD) is a tool designed to assist with the creation of provisioning packages that can be used to dynamically configure a Windows device (PCs, tablets, and phones). This tool is useful for setting up new devices, without the need for re-imaging the device with a custom image.
 
 ![figure 4.](images/windows-icd.png)
 
@@ -108,7 +108,7 @@ For more information, see [Windows Imaging and Configuration Designer](/windows/
 
 ### Windows System Image Manager (Windows SIM)
 
-Windows SIM is an authoring tool for Unattend.xml files. When using MDT and/or Configuration Manager, you don’t need Windows SIM very often because those systems automatically update the Unattend.xml file during the deployment, greatly simplifying the process overall.
+Windows SIM is an authoring tool for Unattend.xml files. When using MDT and/or Configuration Manager, you don’t need Windows SIM often because those systems automatically update the Unattend.xml file during the deployment, greatly simplifying the process overall.
 
 ![figure 7.](images/mdt-11-fig07.png)
 
@@ -168,7 +168,7 @@ In Windows Server 2012 R2, [Windows Deployment Services](/previous-versions/wind
 
 ### Trivial File Transfer Protocol (TFTP) configuration
 
-In some cases, you need to modify TFTP Maximum Block Size settings for performance tuning reasons, especially when PXE traffic travels through routers and such. In the previous version of WDS, it was possible to change that, but the method of do so—editing the registry—was not user friendly. In Windows Server 2012, this has become much easier to do as it can be configured as a setting.
+In some cases, you need to modify TFTP Maximum Block Size settings for performance tuning reasons, especially when PXE traffic travels through routers and such. In the previous version of WDS, it was possible to change that, but the method of do so — editing the registry — was not user friendly. In Windows Server 2012, this modification in settings has become much easier to do as it can be configured as a setting.
 
 Also, there are a few new features related to TFTP performance:
 
@@ -210,7 +210,7 @@ The SCM console showing a baseline configuration for a fictional client's comput
 ## Microsoft Desktop Optimization Pack
 
 
-MDOP is a suite of technologies available to Software Assurance customers through an additional subscription.
+MDOP is a suite of technologies available to Software Assurance customers through another subscription.
 
 The following components are included in the MDOP suite:
 
@@ -267,29 +267,29 @@ With UEFI, you can benefit from:
 -   **Faster boot time.** UEFI does not use INT 13, and that improves boot time, especially when it comes to resuming from hibernate.
 -   **Multicast deployment.** UEFI firmware can use multicast directly when it boots up. In WDS, MDT, and Configuration Manager scenarios, you need to first boot up a normal Windows PE in unicast and then switch into multicast. With UEFI, you can run multicast from the start.
 -   **Compatibility with earlier BIOS.** Most of the UEFI implementations include a compatibility support module (CSM) that emulates BIOS.
--   **CPU-independent architecture.** Even if BIOS can run both 32- and 64-bit versions of firmware, all firmware device drivers on BIOS systems must also be 16-bit, and this affects performance. One of the reasons is the limitation in addressable memory, which is only 64 KB with BIOS.
+-   **CPU-independent architecture.** Even if BIOS can run both 32-bit and 64-bit versions of firmware, all firmware device drivers on BIOS systems must also be 16-bit, and this affects performance. One of the reasons is the limitation in addressable memory, which is only 64 KB with BIOS.
 -   **CPU-independent drivers.** On BIOS systems, PCI add-on cards must include a ROM that contains a separate driver for all supported CPU architectures. That is not needed for UEFI because UEFI has the ability to use EFI Byte Code (EBC) images, which allow for a processor-independent device driver environment.
 -   **Flexible pre-operating system environment.** UEFI can perform many functions for you. You just need an UEFI application, and you can perform diagnostics and automatic repairs, and call home to report errors.
 -   **Secure boot.** Windows 8 and later can use the UEFI firmware validation process, called secure boot, which is defined in UEFI 2.3.1. Using this process, you can ensure that UEFI launches only a verified operating system loader and that malware cannot switch the boot loader.
 
 ### Versions
 
-UEFI Version 2.3.1B is the version required for Windows 8 and later logo compliance. Later versions have been released to address issues; a small number of machines may need to upgrade their firmware to fully support the UEFI implementation in Windows 8 and later.
+UEFI Version 2.3.1B is the version required for Windows 8 and later logo compliance. Later versions have been released to address issues; a few machines may need to upgrade their firmware to fully support the UEFI implementation in Windows 8 and later.
 
 ### Hardware support for UEFI
 
 In regard to UEFI, hardware is divided into four device classes:
 
--   **Class 0 devices.** This is the UEFI definition for a BIOS, or non-UEFI, device.
--   **Class 1 devices.** These devices behave like a standard BIOS machine, but they run EFI internally. They should be treated as normal BIOS-based machines. Class 1 devices use a CSM to emulate BIOS. These older devices are no longer manufactured.
--   **Class 2 devices.** These devices have the capability to behave as a BIOS- or a UEFI-based machine, and the boot process or the configuration in the firmware/BIOS determines the mode. Class 2 devices use a CSM to emulate BIOS. These are the most common type of devices currently available.
--   **Class 3 devices.** These are UEFI-only devices, which means you must run an operating system that supports only UEFI. Those operating systems include Windows 8, Windows 8.1, Windows Server 2012, and Windows Server 2012 R2. Windows 7 is not supported on these class 3 devices. Class 3 devices do not have a CSM to emulate BIOS.
+-   **Class 0 devices.** The device of this class is the UEFI definition for a BIOS, or non-UEFI, device.
+-   **Class 1 devices.** The devices of this class behave like a standard BIOS machine, but they run EFI internally. They should be treated as normal BIOS-based machines. Class 1 devices use a CSM to emulate BIOS. These older devices are no longer manufactured.
+-   **Class 2 devices.** The devices of this class have the capability to behave as a BIOS- or a UEFI-based machine, and the boot process or the configuration in the firmware/BIOS determines the mode. Class 2 devices use a CSM to emulate BIOS. These are the most common type of devices currently available.
+-   **Class 3 devices.** The devices of this class are UEFI-only devices, which means you must run an operating system that supports only UEFI. Those operating systems include Windows 8, Windows 8.1, Windows Server 2012, and Windows Server 2012 R2. Windows 7 is not supported on these class 3 devices. Class 3 devices do not have a CSM to emulate BIOS.
 
 ### Windows support for UEFI
 
 Microsoft started with support for EFI 1.10 on servers and then added support for UEFI on both clients and servers.
 
-With UEFI 2.3.1, there are both x86 and x64 versions of UEFI. Windows 10 supports both. However, UEFI does not support cross-platform boot. This means that a computer that has UEFI x64 can run only a 64-bit operating system, and a computer that has UEFI x86 can run only a 32-bit operating system.
+With UEFI 2.3.1, there are both x86 and x64 versions of UEFI. Windows 10 supports both. However, UEFI does not support cross-platform boot. This limitation means that a computer that has UEFI x64 can run only a 64-bit operating system, and a computer that has UEFI x86 can run only a 32-bit operating system.
 
 ### How UEFI is changing operating system deployment
 
@@ -297,12 +297,12 @@ There are many things that affect operating system deployment as soon as you run
 
 -   Switching from BIOS to UEFI in the hardware is easy, but you also need to reinstall the operating system because you need to switch from MBR/NTFS to GPT/FAT32 and NTFS.
 -   When you deploy to a Class 2 device, make sure the boot option you select matches the setting you want to have. It is common for old machines to have several boot options for BIOS but only a few for UEFI, or vice versa.
--   When deploying from media, remember the media has to be FAT32 for UEFI, and FAT32 has a file-size limitation of 4GB.
+-   When deploying from media, remember the media has to be FAT32 for UEFI, and FAT32 has a file-size limitation of 4 GB.
 -   UEFI does not support cross-platform booting; therefore, you need to have the correct boot media (32- or 64-bit).
 
 For more information on UEFI, see the [UEFI firmware](/previous-versions/windows/it-pro/windows-8.1-and-8/hh824898(v=win.10)) overview and related resources.
 
-## Related topics
+## Related articles
 
 [Sideload apps in Windows 10](/windows/application-management/sideload-apps-in-windows-10)<br>
 [Windows ADK for Windows 10 scenarios for IT pros](windows-adk-scenarios-for-it-pros.md)

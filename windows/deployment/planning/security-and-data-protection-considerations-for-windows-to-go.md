@@ -53,20 +53,20 @@ If you are using a host computer running Windows 7 that has BitLocker enabled, 
 
 We recommend that you use the **NoDefaultDriveLetter** attribute when provisioning the USB drive to help prevent accidental data leakage. **NoDefaultDriveLetter** will prevent the host operating system from assigning a drive letter if a user inserts it into a running computer. This means the drive will not appear in Windows Explorer and an Auto-Play prompt will not be displayed to the user. This reduces the likelihood that an end user will access the offline Windows To Go disk directly from another computer. If you use the Windows To Go Creator to provision a workspace, this attribute will automatically be set for you.
 
-To prevent accidental data leakage between Windows To Go and the host system Windows 8 has a new SAN policy—OFFLINE\_INTERNAL - “4” to prevent the operating system from automatically bringing online any internally connected disk. The default configuration for Windows To Go has this policy enabled. It is strongly recommended you do not change this policy to allow mounting of internal hard drives when booted into the Windows To Go workspace. If the internal drive contains a hibernated Windows 8 operating system, mounting the drive will lead to loss of hibernation state and, therefore, user state or any unsaved user data when the host operating system is booted. If the internal drive contains a hibernated Windows 7 or earlier operating system, mounting the drive will lead to corruption when the host operating system is booted.
+To prevent accidental data leakage between Windows To Go and the host system Windows 8 has a new SAN policy—OFFLINE\_INTERNAL - “4” to prevent the operating system from automatically bringing online any internally connected disk. The default configuration for Windows To Go has this policy enabled. It is recommended you do not change this policy to allow mounting of internal hard drives when booted into the Windows To Go workspace. If the internal drive contains a hibernated Windows 8 operating system, mounting the drive will lead to loss of hibernation state and, therefore, user state or any unsaved user data when the host operating system is booted. If the internal drive contains a hibernated Windows 7 or earlier operating system, mounting the drive will lead to corruption when the host operating system is booted.
 
 For more information, see [How to Configure Storage Area Network (SAN) Policy in Windows PE](/previous-versions/windows/it-pro/windows-8.1-and-8/hh825063(v=win.10)).
 
 ## Security certifications for Windows To Go
 
 
-Windows to Go is a core capability of Windows when it is deployed on the drive and is configured following the guidance for the applicable security certification. Solutions built using Windows To Go can be submitted for more certifications by the solution provider that cover the solution provider’s specific hardware environment. For more information about Windows security certifications, see the following topics.
+Windows to Go is a core capability of Windows when it is deployed on the drive and is configured following the guidance for the applicable security certification. Solutions built using Windows To Go can be submitted for more certifications by the solution provider that cover the solution provider’s specific hardware environment. For more information about Windows security certifications, see the following articles.
 
 -   [Windows Platform Common Criteria Certification](/windows/security/threat-protection/windows-platform-common-criteria)
 
 -   [FIPS 140 Evaluation](/windows/security/threat-protection/fips-140-validation)
 
-## Related topics
+## Related articles
 
 
 [Windows To Go: feature overview](windows-to-go-overview.md)

@@ -28,7 +28,7 @@ ms.topic: article
 -   Windows Server 2012
 -   Windows Server 2008 R2
 
-You must deploy your customized database (.sdb) files to other computers in your organization. That is, before your compatibility fixes, compatibility modes, and AppHelp messages are applied. You can deploy your customized database files in several ways. By using a logon script, by using Group Policy, or by performing file copy operations.
+Deploy your customized database (.sdb) files to other computers in your organization. That is, before your compatibility fixes, compatibility modes, and AppHelp messages are applied. You can deploy your customized database files in several ways. By using a logon script, by using Group Policy, or by performing file copy operations.
 
 After you deploy and store the customized databases on each of your local computers, you must register the database files.
 Until you register the database files, the operating system is unable to identify the available compatibility fixes when starting an application. 
@@ -69,6 +69,6 @@ The following table describes the available command-line options.
 |-g *GUID*|Specifies the customized database to uninstall by a globally unique identifier (GUID).<p>For example,<br>`sdbinst.exe -g 6586cd8f-edc9-4ea8-ad94-afabea7f62e3`|
 |-n *"name"*|Specifies the customized database to uninstall by file name.<p>For example,<br>`sdbinst.exe -n "My_Database"`|
 
-## Related topics
+## Related articles
 
 [Compatibility Administrator User's Guide](compatibility-administrator-users-guide.md)

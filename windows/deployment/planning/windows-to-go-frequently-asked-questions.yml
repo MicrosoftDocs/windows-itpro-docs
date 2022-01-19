@@ -56,7 +56,7 @@ summary: |
   
   -   [Why can't I enable BitLocker from Windows To Go Creator?](#why-can-t-i-enable-bitlocker-from-windows-to-go-creator-)
   
-  -   [What power states does Windows To Go support?](#what-power-states-does-windows-to-go-support-)
+  -   [What power states do Windows To Go support?](#what-power-states-does-windows-to-go-support-)
   
   -   [Why is hibernation disabled in Windows To Go?](#why-is-hibernation-disabled-in-windows-to-go-)
   
@@ -120,7 +120,7 @@ sections:
       - question: |
           Does Windows To Go rely on virtualization?
         answer: |
-          No. Windows To Go is a native instance of Windows 10 that runs from a USB device. It is just like a laptop hard drive with Windows 8 that has been put into a USB enclosure.
+          No. Windows To Go is a native instance of Windows 10 that runs from a USB device. It's just like a laptop hard drive with Windows 8 that has been put into a USB enclosure.
 
       - question: |
           Who should use Windows To Go?
