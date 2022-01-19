@@ -75,7 +75,7 @@ If you disable or do not configure this policy setting, the stricter security se
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Enable svchost.exe mitigation options*
+-   GP Friendly name: *Enable svchost.exe mitigation options*
 -   GP name: *SvchostProcessMitigationEnable*
 -   GP path: *System/Service Control Manager Settings/Security Settings*
 -   GP ADMX file name: *ServiceControlManager.admx*

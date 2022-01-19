@@ -93,7 +93,7 @@ You can limit the number of users who can connect simultaneously by configuring 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow users to connect remotely by using Remote Desktop Services*
+-   GP Friendly name: *Allow users to connect remotely by using Remote Desktop Services*
 -   GP name: *TS_DISABLE_CONNECTIONS*
 -   GP path: *Windows Components/Remote Desktop Services/Remote Desktop Session Host/Connections*
 -   GP ADMX file name: *terminalserver.admx*
@@ -149,7 +149,7 @@ FIPS compliance can be configured through the System cryptography. Use FIPS comp
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set client connection encryption level*
+-   GP Friendly name: *Set client connection encryption level*
 -   GP name: *TS_ENCRYPTION_POLICY*
 -   GP path: *Windows Components/Remote Desktop Services/Remote Desktop Session Host/Security*
 -   GP ADMX file name: *terminalserver.admx*
@@ -199,7 +199,7 @@ If you do not configure this policy setting, client drive redirection and Clipbo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not allow drive redirection*
+-   GP Friendly name: *Do not allow drive redirection*
 -   GP name: *TS_CLIENT_DRIVE_M*
 -   GP path: *Windows Components/Remote Desktop Services/Remote Desktop Session Host/Device and Resource Redirection*
 -   GP ADMX file name: *terminalserver.admx*
@@ -245,7 +245,7 @@ If you disable this setting or leave it not configured, the user will be able to
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not allow passwords to be saved*
+-   GP Friendly name: *Do not allow passwords to be saved*
 -   GP name: *TS_CLIENT_DISABLE_PASSWORD_SAVING_2*
 -   GP path: *Windows Components/Remote Desktop Services/Remote Desktop Connection Client*
 -   GP ADMX file name: *terminalserver.admx*
@@ -297,7 +297,7 @@ If you do not configure this policy setting, automatic logon is not specified at
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Always prompt for password upon connection*
+-   GP Friendly name: *Always prompt for password upon connection*
 -   GP name: *TS_PASSWORD*
 -   GP path: *Windows Components/Remote Desktop Services/Remote Desktop Session Host/Security*
 -   GP ADMX file name: *terminalserver.admx*
@@ -349,7 +349,7 @@ Note: The RPC interface is used for administering and configuring Remote Desktop
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Require secure RPC communication*
+-   GP Friendly name: *Require secure RPC communication*
 -   GP name: *TS_RPC_ENCRYPTION*
 -   GP path: *Windows Components/Remote Desktop Services/Remote Desktop Session Host/Security*
 -   GP ADMX file name: *terminalserver.admx*

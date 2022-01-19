@@ -52,6 +52,9 @@ manager: dansimp
     <a href="#start-allowpinnedfoldervideos">Start/AllowPinnedFolderVideos</a>
   </dd>
   <dd>
+    <a href="#start-configurestartpins">Start/ConfigureStartPins</a>
+  </dd>
+  <dd>
     <a href="#start-disablecontextmenus">Start/DisableContextMenus</a>
   </dd>
   <dd>
@@ -107,6 +110,9 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#start-nopinningtotaskbar">Start/NoPinningToTaskbar</a>
+  </dd>
+  <dd>
+    <a href="#start-showorhidemostusedapps">Start/ShowOrHideMostUsedApps</a>
   </dd>
   <dd>
     <a href="#start-startlayout">Start/StartLayout</a>
@@ -525,6 +531,67 @@ The following list shows the supported values:
 <!--/Policy-->
 
 <hr/>
+
+<!--Policy-->
+<a href="" id="start-configurestartpins"></a>**Start/ConfigureStartPins**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy will allow admins to push a new list of pinned apps to override the default/current list of pinned apps in the Windows 11 start menu experience.
+
+It contains details on how to configure the start menu on Windows 11, see [/windows-hardware/customize/desktop/customize-the-windows-11-start-menu](/windows-hardware/customize/desktop/customize-the-windows-11-start-menu)
+
+<!--/Description-->
+
+<!--SupportedValues-->
+
+This string policy will take a JSON file (expected name LayoutModification.json), which enumerates the items to pin and their relative order.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
 
 <!--Policy-->
 <a href="" id="start-disablecontextmenus"></a>**Start/DisableContextMenus**  
@@ -1494,6 +1561,75 @@ To validate on Desktop, do the following:
 5.   Verify that More->Pin to taskbar menu does not show.
 
 <!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+
+<!--Policy-->
+<a href="" id="start-showorhidemostusedapps"></a>**Start/ShowOrHideMostUsedApps**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 1 - Force showing of Most Used Apps in Start Menu, user cannot change in Settings
+- 0 - Force hiding of Most Used Apps in Start Menu, user cannot change in Settings
+- Not set - User can use Settings to hide or show Most Used Apps in Start Menu
+
+On clean install, the user setting defaults to "hide".
+
+<!--/SupportedValues-->
+
 <!--/Policy-->
 
 <hr/>
