@@ -120,7 +120,7 @@ If you want to disable this policy, use the following SyncML:
 ```
 
 > [!NOTE]
-> Currently only used space encryption is supported when using this CSP. 
+> Currently only full disk encryption is supported when using this CSP. 
 
 <!--/Policy-->
 <!--Policy-->
