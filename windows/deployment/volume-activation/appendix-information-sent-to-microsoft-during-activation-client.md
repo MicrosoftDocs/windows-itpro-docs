@@ -1,5 +1,6 @@
 ---
 title: Appendix Information sent to Microsoft during activation (Windows 10)
+description: Learn about the information sent to Microsoft during activation.
 ms.assetid: 4bfff495-07d0-4385-86e3-7a077cbd64b8
 ms.reviewer: 
 manager: laurawi

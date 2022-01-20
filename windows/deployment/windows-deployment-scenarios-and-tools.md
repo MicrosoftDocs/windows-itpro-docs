@@ -138,7 +138,7 @@ Windows PE is a “Lite” version of Windows 10 and was created to act as a dep
 
 The key thing to know about Windows PE is that, like the operating system, it needs drivers for at least network and storage devices in each PC. Luckily Windows PE includes the same drivers as the full Windows 10 operating system, which means much of your hardware will work out of the box.
 
-![figure 7.](images/mdt-11-fig09.png)
+![Figure no. 7.](images/mdt-11-fig09.png)
 
 A machine booted with the Windows ADK default Windows PE boot image.
 
