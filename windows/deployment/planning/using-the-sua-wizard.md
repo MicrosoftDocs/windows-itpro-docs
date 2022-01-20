@@ -34,7 +34,7 @@ For information about the SUA tool, see [Using the SUA Tool](using-the-sua-tool.
 ## Testing an Application by Using the SUA Wizard
 
 
-You must install Application Verifier before you can use the SUA Wizard. If Application Verifier is not installed on the computer that is running the SUA Wizard, the SUA Wizard notifies you. You must also install the Microsoft® .NET Framework 3.5 or later before you can use the SUA Wizard.
+Install Application Verifier before you can use the SUA Wizard. If Application Verifier is not installed on the computer that is running the SUA Wizard, the SUA Wizard notifies you. In addition, install the Microsoft® .NET Framework 3.5 or later before you can use the SUA Wizard.
 
 The following flowchart shows the process of using the SUA Wizard.
 
@@ -76,7 +76,7 @@ The following flowchart shows the process of using the SUA Wizard.
 
     The SUA Wizard closes the issue as resolved on the local computer.
 
-    If the remedies do not fix the issue with the application, click **No** again, and the wizard may offer another remedies. If the other remedies do not fix the issue, the wizard informs you that there are no more remedies available. For information about how to run the SUA tool for additional investigation, see [Using the SUA Tool](using-the-sua-tool.md).
+    If the remedies do not fix the issue with the application, click **No** again, and the wizard may offer another remedies. If the other remedies do not fix the issue, the wizard informs you that there are no more remedies available. For information about how to run the SUA tool for more investigation, see [Using the SUA Tool](using-the-sua-tool.md).
 
 ## Related articles
 [SUA User's Guide](sua-users-guide.md)
