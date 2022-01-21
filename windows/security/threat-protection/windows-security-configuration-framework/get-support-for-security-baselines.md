@@ -1,6 +1,6 @@
 ---
-title: Get support for Windows security baselines
-description: Find answers to frequently asked question on how to get support for Windows baselines, the Security Compliance Toolkit (SCT), and related topics.
+title: Get support for security baselines
+description: Find answers to frequently asked question on how to get support for baselines, the Security Compliance Toolkit (SCT), and related topics.
 keywords: virtualization, security, malware
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -95,9 +95,6 @@ Windows Server 2008 R2 |[SP1](/previous-versions/tn-archive/gg236605(v=technet.1
 | Microsoft Office 2007 SP2 |                                                [Technet](/previous-versions/tn-archive/cc500475(v=technet.10))                                                 | [SCM 4.0](/previous-versions/tn-archive/cc936627(v=technet.10)) |
 
 <br />
-
-> [!NOTE]
-> Browser baselines are built-in to new OS versions starting with Windows 10
 
 ## See also
 
