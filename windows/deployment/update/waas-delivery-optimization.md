@@ -164,7 +164,7 @@ Delivery Optimization attempts to identify VPNs by checking the network adapter 
 
 If the connection is identified as a VPN, Delivery Optimization will suspend uploads to other peers. However, you can allow uploads over a VPN by using the [Enable Peer Caching while the device connects via VPN](waas-delivery-optimization-reference.md#enable-peer-caching-while-the-device-connects-via-vpn) policy.
 
-If you have defined a boundary group in Configuration Manager for VPN IP ranges, you can set the DownloadMode policy to 0 for that boundary group to ensure that there will be no peer-to-peer activity over the VPN. When the device is not connected using a VPN, it can still use peer-to-peer with the default of LAN.
+If you have defined a boundary group in Configuration Manager for VPN IP ranges, you can set the [DownloadMode](//waas-delivery-optimization-reference#download-mode) policy to 0 for that boundary group to ensure that there will be no peer-to-peer activity over the VPN. When the device is not connected using a VPN, it can still use peer-to-peer with the default of LAN.
 
 With split tunneling, make sure to allow direct access to these endpoints:
 
@@ -211,8 +211,8 @@ If you don't see any bytes coming from peers the cause might be one of the follo
 Try these steps:
 
 1. Start a download of an app that is larger than 50 MB from the Store (for example "Candy Crush Saga").
-2. Run `Get-DeliveryOptimizationStatus` from an elevated PowerShell window and observe the DownloadMode setting. For peering to work, DownloadMode should be 1, 2, or 3.
-3. If **DownloadMode** is 99, it could indicate your device is unable to reach the Delivery Optimization cloud services. Ensure that the Delivery Optimization host names are allowed access: most importantly **\*.do.dsp.mp.microsoft.com**.
+2. Run `Get-DeliveryOptimizationStatus` from an elevated PowerShell window and observe the [DownloadMode](//waas-delivery-optimization-reference#download-mode) setting. For peering to work, DownloadMode should be 1, 2, or 3.
+3. If DownloadMode is 99, it could indicate your device is unable to reach the Delivery Optimization cloud services. Ensure that the Delivery Optimization host names are allowed access: most importantly **\*.do.dsp.mp.microsoft.com**.
 
 
 ### The cloud service doesn't see other peers on the network.
@@ -220,9 +220,9 @@ Try these steps:
 Try these steps:
 
 1. Download the same app on two different devices on the same network, waiting 10 – 15 minutes between downloads.
-2. Run `Get-DeliveryOptimizationStatus` from an elevated PowerShell window and ensure that **[DownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#download-mode)** is 1 or 2 on both devices.
+2. Run `Get-DeliveryOptimizationStatus` from an elevated PowerShell window and ensure that **[DownloadMode](//waas-delivery-optimization-reference#download-mode)** is 1 or 2 on both devices.
 3. Run `Get-DeliveryOptimizationPerfSnap` from an elevated PowerShell window on the second device. The **NumberOfPeers** field should be non-zero.
-4. If the number of peers is zero and **[DownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#download-mode)** = 1, ensure that both devices are using the same public IP address to reach the internet (you can easily do this by opening a browser window and do a search for “what is my IP”). In the case where devices are not reporting to the same public IP address, configure **[DownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#download-mode)** = 2 (Group) and a custom **[GroupID (Guid)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#group-id)** to fix this.
+4. If the number of peers is zero and **[DownloadMode](//waas-delivery-optimization-reference#download-mode)** is 1, ensure that both devices are using the same public IP address to reach the internet (you can easily do this by opening a browser window and do a search for “what is my IP”). In the case where devices are not reporting to the same public IP address, configure **[DownloadMode](//waas-delivery-optimization-reference#download-mode)** is 2 (Group) and a custom **[GroupID (Guid)](//waas-delivery-optimization-reference#group-id)** to fix this.
 
 > [!NOTE]
 > Starting in Windows 10, version 2004, `Get-DeliveryOptimizationStatus` has a new option `-PeerInfo` which returns a real-time list of the connected peers.
