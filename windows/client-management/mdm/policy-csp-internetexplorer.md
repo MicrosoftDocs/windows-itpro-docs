@@ -213,6 +213,9 @@ manager: dansimp
     <a href="#internetexplorer-donotblockoutdatedactivexcontrolsonspecificdomains">InternetExplorer/DoNotBlockOutdatedActiveXControlsOnSpecificDomains</a>
   </dd>
   <dd>
+    <a href="#internetexplorer-enableextendediemodehotkeys">InternetExplorer/EnableExtendedIEModeHotkeys</a>
+  </dd>
+  <dd>
     <a href="#internetexplorer-includealllocalsites">InternetExplorer/IncludeAllLocalSites</a>
   </dd>
   <dd>
@@ -4270,6 +4273,58 @@ ADMX Info:
 
 <hr/>
 
+<!--Policy-->
+<a href="" id="internetexplorer-enableextendediemodehotkeys"></a>**InternetExplorer/EnableExtendedIEModeHotkeys**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting lets admins enable extended Microsoft Edge Internet Explorer mode hotkeys, such as "Ctrl+S" to have "Save as" functionality.
+
+- If you enable this policy, extended hotkey functionality is enabled in Internet Explorer mode and work the same as Internet Explorer.
+
+- If you disable, or don't configure this policy, extended hotkeys will not work in Internet Explorer mode.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) - Disabled.
+-   1 - Enabled.
+
+<!--/SupportedValues-->
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Allows enterprises to provide their users with a single-browser experience*
+-   GP name: *EnableExtendedIEModeHotkeys*
+-   GP path: *Windows Components/Internet Explorer/Security Features/Add-on Management*
+-   GP ADMX file name: *inetres.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
 <!--Policy-->
 <a href="" id="internetexplorer-includealllocalsites"></a>**InternetExplorer/IncludeAllLocalSites**  
 
