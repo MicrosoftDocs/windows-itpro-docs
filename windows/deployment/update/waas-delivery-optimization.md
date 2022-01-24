@@ -32,14 +32,13 @@ Delivery Optimization is a cloud-managed solution. Access to the Delivery Optimi
 
 For information about setting up Delivery Optimization, including tips for the best settings in different scenarios, see [Set up Delivery Optimization](waas-delivery-optimization-setup.md). For a comprehensive list of all Delivery Optimization settings, see [Delivery Optimization reference](waas-delivery-optimization-reference.md).
 
-
 >[!NOTE]
 >WSUS can also use [BranchCache](waas-branchcache.md) for content sharing and caching. If Delivery Optimization is enabled on devices that use BranchCache, Delivery Optimization will be used instead. 
 
 ## New in Windows 10, version 20H2 and Windows 11
 
 - New peer selection options: Currently the available options include: 0 = None, 1 = Subnet mask, and 2 = Local Peer Discovery. The subnet mask option applies to both Download Modes LAN (1) and Group (2). If Group mode is set, Delivery Optimization will connect to locally discovered peers that are also part of the same Group (have the same Group ID)."
-- Local Peer Discovery: a new option for **Restrict Peer Selection By** (in Group Policy) or **DORestrictPeerSelectionBy** (in MDM). This option restricts the discovery of local peers using the DNS-SD protocol. When you set Option 2, Delivery Optimization will restrict peer selection to peers that are locally discovered (using DNS-SD). If you also enabled Group mode, Delivery Optimization will connect to locally discovered peers that are also part of the same group (that is, those which have the same Group ID).
+- Local Peer Discovery: a new option for **[Restrict Peer Selection By](/waas-delivery-optimization-reference#select-a-method-to-restrict-peer-selection)** (in Group Policy) or **DORestrictPeerSelectionBy** (in MDM). This option restricts the discovery of local peers using the DNS-SD protocol. When you set Option 2, Delivery Optimization will restrict peer selection to peers that are locally discovered (using DNS-SD). If you also enabled Group mode, Delivery Optimization will connect to locally discovered peers that are also part of the same group (that is, those which have the same Group ID).
 
 > [!NOTE]
 > The Local Peer Discovery (DNS-SD, [RFC 6763](https://datatracker.ietf.org/doc/html/rfc6763)) option can only be set via MDM delivered policies on Windows 11 builds. This feature can be enabled in supported Windows 10 builds by setting the `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization\DORestrictPeerSelectionBy` value to **2**. For more information, see [Delivery Optimization reference](/windows/deployment/update/waas-delivery-optimization-reference).
@@ -91,12 +90,9 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 > [!NOTE]
 > Starting with Configuration Manager version 1910, you can use Delivery Optimization for the distribution of all Windows update content for clients running Windows 10 version 1709 or newer, not just express installation files. For more, see [Delivery Optimization starting in version 1910](/mem/configmgr/sum/deploy-use/optimize-windows-10-update-delivery#bkmk_DO-1910).
 
-
-
 In Windows client Enterprise, Professional, and Education editions, Delivery Optimization is enabled by default for peer-to-peer sharing on the local network (NAT). Specifically, all of the devices must be behind the same NAT (which includes either Ethernet or WiFi), but you can configure it differently in Group Policy and mobile device management (MDM) solutions such as Microsoft Intune.
 
 For more information, see "Download mode" in [Delivery optimization reference](waas-delivery-optimization-reference.md).
-
 
 ## Set up Delivery Optimization
 
@@ -115,13 +111,10 @@ Starting with Microsoft Intune version 1902, you can set many Delivery Optimizat
 
 For complete list of every possible Delivery Optimization setting, see [Delivery Optimization reference](waas-delivery-optimization-reference.md).
 
-
 ## How Microsoft uses Delivery Optimization
 At Microsoft, to help ensure that ongoing deployments weren't affecting our network and taking away bandwidth for other services, Microsoft IT used a couple of different bandwidth management strategies. Delivery Optimization, peer-to-peer caching enabled through Group Policy, was piloted and then deployed to all managed devices using Group Policy. Based on recommendations from the Delivery Optimization team, we used the "group" configuration to limit sharing of content to only the devices that are members of the same Active Directory domain. The content is cached for 24 hours. More than 76 percent of content came from peer devices versus the Internet.
 
 For more information, check out the [Adopting Windows as a Service at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft) technical case study.
-
-
 
 ## Frequently asked questions
 
@@ -134,7 +127,6 @@ Delivery Optimization listens on port 7680 for requests from other peers by usin
 If you set up Delivery Optimization to create peer groups that include devices across NATs (or any form of internal subnet that uses gateways or firewalls between subnets), it will use Teredo. For this to work, you must allow inbound TCP/IP traffic over port 3544. Look for a "NAT traversal" setting in your firewall to set this up.
 
 Delivery Optimization also communicates with its cloud service by using HTTP/HTTPS over port 80.
-
 
 #### What are the requirements if I use a proxy?
 For Delivery Optimization to successfully use the proxy, you should set up the proxy by using Windows proxy settings or Internet Explorer proxy settings. For details see [Using a proxy with Delivery Optimization](./delivery-optimization-proxy.md). Most content downloaded with Delivery Optimization uses byte range requests. Make sure your proxy allows byte range requests. For more information, see [Proxy requirements for Windows Update](/windows/deployment/update/windows-update-troubleshooting).
@@ -205,7 +197,6 @@ If you don't see any bytes coming from peers the cause might be one of the follo
 - Clients aren’t able to connect to peers that are offered back from the cloud service.
 - None of the computers on the network are getting updates from peers.
 
-
 ### Clients aren't able to reach the Delivery Optimization cloud services.
 
 Try these steps:
@@ -213,7 +204,6 @@ Try these steps:
 1. Start a download of an app that is larger than 50 MB from the Store (for example "Candy Crush Saga").
 2. Run `Get-DeliveryOptimizationStatus` from an elevated PowerShell window and observe the [DownloadMode](//waas-delivery-optimization-reference#download-mode) setting. For peering to work, DownloadMode should be 1, 2, or 3.
 3. If DownloadMode is 99, it could indicate your device is unable to reach the Delivery Optimization cloud services. Ensure that the Delivery Optimization host names are allowed access: most importantly **\*.do.dsp.mp.microsoft.com**.
-
 
 ### The cloud service doesn't see other peers on the network.
 
@@ -246,4 +236,3 @@ Check Delivery Optimization settings that could limit participation in peer cach
 - Minimum disk size allowed to use peer caching
 - Enable peer caching while the device connects using VPN.
 - Allow uploads when the device is on battery while under the set battery level
-
