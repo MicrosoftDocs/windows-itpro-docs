@@ -222,7 +222,7 @@ Try these steps:
 1. Download the same app on two different devices on the same network, waiting 10 – 15 minutes between downloads.
 2. Run `Get-DeliveryOptimizationStatus` from an elevated PowerShell window and ensure that **[DownloadMode](//waas-delivery-optimization-reference#download-mode)** is 1 or 2 on both devices.
 3. Run `Get-DeliveryOptimizationPerfSnap` from an elevated PowerShell window on the second device. The **NumberOfPeers** field should be non-zero.
-4. If the number of peers is zero and **[DownloadMode](//waas-delivery-optimization-reference#download-mode)** is 1, ensure that both devices are using the same public IP address to reach the internet (you can easily do this by opening a browser window and do a search for “what is my IP”). In the case where devices are not reporting to the same public IP address, configure **[DownloadMode](//waas-delivery-optimization-reference#download-mode)** is 2 (Group) and a custom **[GroupID (Guid)](//waas-delivery-optimization-reference#group-id)** to fix this.
+4. If the number of peers is zero and **[DownloadMode](//waas-delivery-optimization-reference#download-mode)** is 1, ensure that both devices are using the same public IP address to reach the internet (you can easily do this by opening a browser window and do a search for “what is my IP”). In the case where devices are not reporting the same public IP address, configure **[DownloadMode](//waas-delivery-optimization-reference#download-mode)** to 2 (Group) and use a custom **[GroupID (Guid)](//waas-delivery-optimization-reference#group-id)**, to fix this.
 
 > [!NOTE]
 > Starting in Windows 10, version 2004, `Get-DeliveryOptimizationStatus` has a new option `-PeerInfo` which returns a real-time list of the connected peers.
