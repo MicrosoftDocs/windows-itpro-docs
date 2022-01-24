@@ -12,7 +12,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/24/2022
-ms.reviewer: 
+ms.reviewer: jmunck
 ms.technology: windows-sec
 ---
 
