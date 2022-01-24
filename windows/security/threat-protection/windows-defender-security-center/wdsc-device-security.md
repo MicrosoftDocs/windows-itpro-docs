@@ -33,10 +33,8 @@ You can choose to hide the entire section by using Group Policy. The section wil
 
 This can only be done in Group Policy.
 
->[!IMPORTANT]
->### Requirements
->
->You must have Windows 10, version 1803 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
+> [!IMPORTANT]
+> You must have Windows 10, version 1803 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -56,10 +54,8 @@ This can only be done in Group Policy.
 ## Disable the Clear TPM button
 If you don't want users to be able to click the **Clear TPM** button in the Windows Security app, you can disable it.
 
->[!IMPORTANT]
->### Requirements
->
->You must have Windows 10, version 1809 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
+> [!IMPORTANT]
+> You must have Windows 10, version 1809 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
 
 1.  On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -86,6 +82,8 @@ If you don't want users to see the recommendation to update TPM firmware, you ca
 
 ## Disable Memory integrity switch
 If you don't want users to be able to change the Hypervisor Control Integrity (HVCI), or memory integrity, setting on their computers, you can disable the **Memory integrity** switch.
+> [!IMPORTANT]
+> You must have Windows 10, version 1803 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
 
 1.  On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
 
