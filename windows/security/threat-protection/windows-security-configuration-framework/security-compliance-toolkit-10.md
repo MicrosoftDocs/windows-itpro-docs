@@ -52,8 +52,10 @@ The Security Compliance Toolkit consists of:
     -   Edge Browser Version 97
 
 -   Tools
-    -   Policy Analyzer tool
-    -   Local Group Policy Object (LGPO) tool
+    -   Policy Analyzer
+    -   Local Group Policy Object (LGPO)
+    -   Set Object Security
+    -   GPO to Policy Rules
 
 
 You can [download the tools](https://www.microsoft.com/download/details.aspx?id=55319) along with the baselines for the relevant Windows versions. For more details about security baseline recommendations, see the [Microsoft Security Guidance blog](/archive/blogs/secguide/).
