@@ -225,7 +225,7 @@ This article lists new and updated articles for the Mobile Device Management (MD
 |New or updated article|Description|
 |--- |--- |
 |[WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)|Added the following node in Windows 10, version 1803:<li>Settings/AllowVirtualGPU<li>Settings/SaveFilesToHost|
-|[NetworkProxy CSP](\networkproxy--csp.md)|Added the following node in Windows 10, version 1803:<li>ProxySettingsPerUser|
+|[NetworkProxy CSP](networkproxy-csp.md)|Added the following node in Windows 10, version 1803:<li>ProxySettingsPerUser|
 |[Accounts CSP](accounts-csp.md)|Added a new CSP in Windows 10, version 1803.|
 |[MDM Migration Analysis Tool (MMAT)](https://aka.ms/mmat)|Updated version available. MMAT is a tool you can use to determine which Group Policies are set on a target user/computer and cross-reference them against the list of supported MDM policies.|
 |[CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download)|Added the DDF download of Windows 10, version 1803 configuration service providers.|

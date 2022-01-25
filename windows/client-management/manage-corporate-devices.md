@@ -49,13 +49,7 @@ You can use the same management tools to manage all device types running Windows
 
 [Azure AD Join on Windows 10 (and Windows 11) devices](https://go.microsoft.com/fwlink/p/?LinkId=616791)
 
-[Azure AD support for Windows 10 (and Windows 11)](https://go.microsoft.com/fwlink/p/?LinkID=615765)
-
 [Windows 10 (and Windows 11) and Azure Active Directory: Embracing the Cloud](https://go.microsoft.com/fwlink/p/?LinkId=615768)
-
-[How to manage Windows 10 (and Windows 11) devices using Intune](https://go.microsoft.com/fwlink/p/?LinkId=613620)
-
-[Using Intune alone and with Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=613207)
 
 Microsoft Virtual Academy course: [System Center 2012 R2 Configuration Manager & Windows Intune](/learn/)
 
