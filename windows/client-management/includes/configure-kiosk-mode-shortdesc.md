@@ -9,7 +9,7 @@ ms.prod: edge
 ms.topic: include
 ---
 
-For the Microsoft Edge browser, configure a behavior that is to be exhibited in kiosk mode with assigned access. This behavior configuration is for Microsoft Edge as a single-app or as one of many apps running on the kiosk device.
+Configure a behavior to be displayed by the Microsoft Edge browser in kiosk mode with assigned access. This behavior configuration is for Microsoft Edge as a single-app or as one of many apps running on the kiosk device.
 
 You can facilitate the following functionalities in the Microsoft Edge browser:
 - Execution of InPrivate full screen

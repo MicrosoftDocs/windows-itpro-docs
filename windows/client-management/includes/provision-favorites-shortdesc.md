@@ -9,11 +9,11 @@ ms.prod: edge
 ms.topic: include
 ---
 
-By default, you can customize the Favorites list in the Microsoft Edge browser. Whatever you customize becomes the standard list.
+You can customize the Favorites list in the Microsoft Edge browser. Whatever you customize becomes the standard list.
 
 > [!NOTE]
 > The standard list of favorites can include folders.
 
 The favorites that you add also become part of this standard list.
 
-Once your customized Favorites list appears in the Microsoft Edge browser, you cannot customize it again, such as adding folders for organizing, and adding or removing any of the favorites configured.
+Once your customized Favorites list appears in the Microsoft Edge browser, you can't customize it again, such as adding folders for organizing, and adding or removing any of the favorites configured.
