@@ -98,7 +98,7 @@ Arrange the desired cipher suites in the edit box, one cipher suite per line, in
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Cipher suite order*
+-   GP Friendly name: *Cipher suite order*
 -   GP name: *Pol_CipherSuiteOrder*
 -   GP path: *Network\Lanman Workstation*
 -   GP ADMX file name: *LanmanWorkstation.admx*
@@ -147,7 +147,7 @@ If you disable or do not configure this policy setting, Windows will prevent use
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Handle Caching on Continuous Availability Shares*
+-   GP Friendly name: *Handle Caching on Continuous Availability Shares*
 -   GP name: *Pol_EnableHandleCachingForCAFiles*
 -   GP path: *Network\Lanman Workstation*
 -   GP ADMX file name: *LanmanWorkstation.admx*
@@ -196,7 +196,7 @@ If you disable or do not configure this policy setting, Windows will prevent use
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Offline Files Availability on Continuous Availability Shares*
+-   GP Friendly name: *Offline Files Availability on Continuous Availability Shares*
 -   GP name: *Pol_EnableOfflineFilesforCAShares*
 -   GP path: *Network\Lanman Workstation*
 -   GP ADMX file name: *LanmanWorkstation.admx*

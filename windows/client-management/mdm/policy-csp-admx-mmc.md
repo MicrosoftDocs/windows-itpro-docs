@@ -93,7 +93,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *ActiveX Control*
+-   GP Friendly name: *ActiveX Control*
 -   GP name: *MMC_ActiveXControl*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMC.admx*
@@ -149,7 +149,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Extended View (Web View)*
+-   GP Friendly name: *Extended View (Web View)*
 -   GP name: *MMC_ExtendView*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMC.admx*
@@ -205,7 +205,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Link to Web Address*
+-   GP Friendly name: *Link to Web Address*
 -   GP name: *MMC_LinkToWeb*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMC.admx*
@@ -255,7 +255,7 @@ If you disable this setting or do not configure it, users can enter author mode 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Restrict the user from entering author mode*
+-   GP Friendly name: *Restrict the user from entering author mode*
 -   GP name: *MMC_Restrict_Author*
 -   GP path: *Windows Components\Microsoft Management Console*
 -   GP ADMX file name: *MMC.admx*
@@ -310,7 +310,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Restrict users to the explicitly permitted list of snap-ins*
+-   GP Friendly name: *Restrict users to the explicitly permitted list of snap-ins*
 -   GP name: *MMC_Restrict_To_Permitted_Snapins*
 -   GP path: *Windows Components\Microsoft Management Console*
 -   GP ADMX file name: *MMC.admx*
