@@ -12,7 +12,7 @@ ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
-ms.date: 01/24/2022
+ms.date: 01/26/2022
 ms.reviewer: 
 ---
 
