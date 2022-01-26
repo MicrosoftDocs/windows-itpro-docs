@@ -31,7 +31,7 @@ ms.technology: windows-sec
 
 Windows Defender Application Control (WDAC) can control what runs on Windows 10 and Windows 11, by setting policies that specify whether a driver or application is trusted. A policy includes *policy rules* that control options such as audit mode, and *file rules* (or *file rule levels*) that specify how applications are identified and trusted.
 
-Windows Defender Application Control (WDAC) is used to restrict devices to run only approved apps, while the OS is hardened against kernel memory attacks using [hypervisor-protected code integrity (HVCI)](https://docs.microsoft.com/en-us/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control).
+WDAC is used to restrict devices to run only approved apps, while the operating system is hardened against kernel memory attacks using [hypervisor-protected code integrity (HVCI)](/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control).
 
 ## Windows Defender Application Control policy rules
 
