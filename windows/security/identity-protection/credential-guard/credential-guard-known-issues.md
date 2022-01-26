@@ -12,7 +12,7 @@ ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
-ms.date: 01/24/2022
+ms.date: 01/26/2022
 ms.reviewer: 
 ---
 
@@ -33,7 +33,7 @@ The following known issue has been fixed in the [Cumulative Security Update for 
    Failure occurred in ‘LogonUserExEx’. <br>
    User Action: Ensure the credentials for the task are correctly specified. <br>
    Additional Data: Error Value: 2147943726. 2147943726: ERROR\_LOGON\_FAILURE (The user name or password is incorrect)."
--  When enabling NTLM audit on the domain controller, an Event ID 8004 with an indecipherable username format is logged. You also get a similar user name in a user logon failure event 4525 with error 0xC0000064 on the machine itself. For example:
+-  When enabling NTLM audit on the domain controller, an Event ID 8004 with an indecipherable username format is logged. You also get a similar user name in a user logon failure event 4625 with error 0xC0000064 on the machine itself. For example:
    > Log Name: Microsoft-Windows-NTLM/Operational  
     Source: Microsoft-Windows-Security-Netlogon  
     Event ID: 8004  

@@ -11,7 +11,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 01/24/2022
+ms.date: 01/26/2022
 ms.reviewer: jmunck
 ms.technology: windows-sec
 ---
@@ -63,9 +63,9 @@ There are several ways to get and use security baselines:
 
 1. You can download the security baselines from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55319). This download page is for the Security Compliance Toolkit (SCT), which comprises tools that can assist admins in managing  baselines in addition to the security baselines. The security baselines are included in the [Security Compliance Toolkit (SCT)](security-compliance-toolkit-10.md), which can be downloaded from the Microsoft Download Center. The SCT also includes tools to help admins manage the security baselines. You can also [Get Support for the security baselines](get-support-for-security-baselines.md) 
 
-2. [MDM (Mobile Device Management) security baselines](/windows/client-management/mdm/#mdm-security-baseline.md) function like the Microsoft group policy-based security baselines and can easily integrate this into an existing MDM management tool. 
+2. [MDM (Mobile Device Management) security baselines](/windows/client-management/mdm/#mdm-security-baseline) function like the Microsoft group policy-based security baselines and can easily integrate this into an existing MDM management tool. 
 
-3. MDM Security baselines can easily be configures in Microsoft Endpoint Manager on devices that run Windows 10 and 11. The following article provides the detail steps: [Windows MDM (Mobile Device Management) baselines](/mem/intune/protect/security-baseline-settings-mdm-all.md).
+3. MDM Security baselines can easily be configures in Microsoft Endpoint Manager on devices that run Windows 10 and 11. The following article provides the detail steps: [Windows MDM (Mobile Device Management) baselines](/mem/intune/protect/security-baseline-settings-mdm-all).
 
 ## Community
 
