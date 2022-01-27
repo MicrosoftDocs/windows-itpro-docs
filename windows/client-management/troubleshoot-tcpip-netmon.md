@@ -7,7 +7,7 @@ ms.topic: troubleshooting
 author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
-ms.date: 12/06/2018
+ms.date: 01/27/2022
 ms.reviewer: 
 manager: dansimp
 ms.collection: highpri
@@ -15,7 +15,7 @@ ms.collection: highpri
 
 # Collect data using Network Monitor
 
-In this topic, you will learn how to use Microsoft Network Monitor 3.4, which is a tool for capturing network traffic.
+In this article, you will learn how to use Microsoft Network Monitor 3.4, which is a tool for capturing network traffic.
 
 > [!NOTE]
 > Network Monitor is the archived protocol analyzer and is no longer under development. Also, Microsoft Message Analyzer (MMA) was retired and its download packages removed from microsoft.com sites on November 25 2019.  There is currently no Microsoft replacement for Microsoft Message Analyzer in development at this time.  For similar functionality, please consider using a 3rd party network protocol analyzer tool. For more details, see [Microsoft Message Analyzer Operating Guide](/message-analyzer/microsoft-message-analyzer-operating-guide).
