@@ -74,7 +74,7 @@ If the following considerations apply to your organization, you should avoid thi
 
 -   **Will you be able to track which applications are installed on which computer?**
 
-    You might determine that your initial set of compatibility fixes is not comprehensive, and that you must deploy an updated version of the compatibility-fix database to resolve the other issues. If you deployed the initial set by using the application-installation package, you will be required to locate each client computer that is running the application and replace the compatibility fix.
+    You might determine that your initial set of compatibility fixes isn't comprehensive, and that you must deploy an updated version of the compatibility-fix database to resolve the other issues. If you deployed the initial set by using the application-installation package, you'll be required to locate each client computer that is running the application and replace the compatibility fix.
 
 ### Deploying Fixes Through a Centralized Compatibility-Fix Database
 
@@ -88,7 +88,7 @@ This approach tends to work best for organizations that have a well-developed de
 
 -   Do you have centralized resources that can manage and update the centralized compatibility-fix database?
 
-    Ensure that you have identified the appropriate owners for the deployment process, for the applications, and for the database updates, in addition to determining the process by which compatibility issues can be deployed to specific computers.
+    Ensure that you've identified the appropriate owners for the deployment process, for the applications, and for the database updates, in addition to determining the process by which compatibility issues can be deployed to specific computers.
 
 ### Merging Centralized Compatibility-Fix Databases
 
@@ -98,7 +98,7 @@ If you decide to use the centralized compatibility-fix database deployment strat
 
 1.  Verify that your application-compatibility testers are performing their tests on computers with the latest version of your compatibility-fix database. For example, Custom DB1.
 
-2.  If the tester determines that an application requires an extra compatibility fix that is not a part of the original compatibility-fix database, the tester must create a new custom compatibility database with all of the required information for that single fix, for example, Custom DB2.
+2.  If the tester determines that an application requires an extra compatibility fix that isn't a part of the original compatibility-fix database, the tester must create a new custom compatibility database with all of the required information for that single fix, for example, Custom DB2.
 
 3.  The tester applies the new Custom DB2 information to the application and then tests for both the functionality and integration, to ensure that the compatibility issues are addressed.
 
