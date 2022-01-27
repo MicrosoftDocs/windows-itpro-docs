@@ -23,7 +23,7 @@ You can import data or export data during the following scenarios:
 -   Export data to perform proxy activations.
 
 **Warning**  
-Editing a .cilx file through an application other than VAMT can corrupt the .cilx file; and this method is not supported.
+Editing a .cilx file through an application other than VAMT can corrupt the .cilx file; and this method isn't supported.
 
 ## Import VAMT Data
 
@@ -44,7 +44,7 @@ Exporting VAMT data from a non-Internet-connected VAMT host computer is the firs
     -   Export products and product keys
     -   Export products only
     -   Export proxy activation data only. Selecting this option ensures that the export contains only the licensing information required for the proxy web service to obtain CIDs from Microsoft. No Personally Identifiable Information (PII) is contained in the exported .cilx file when this selection is checked.
-6.  If you have selected products to export, select the **Export selected product rows only** check box.
+6.  If you've selected products to export, select the **Export selected product rows only** check box.
 7.  Click **Save**. VAMT displays a progress message while the data is being exported. Click **OK** when a message appears and confirms that the export has completed successfully.
 
 ## Related articles

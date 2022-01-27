@@ -33,13 +33,13 @@ ms.topic: article
 
 When you activate a computer running Windows 10, the following information is sent to Microsoft:
 
--   The Microsoft product code (a five-digit code that identifies the Windows product you are activating)
+-   The Microsoft product code (a five-digit code that identifies the Windows product you're activating)
 -   A channel ID or site code that identifies how the Windows product was originally obtained
 
     For example, a channel ID or site code identifies whether the product was originally purchased from a retail store, obtained as an evaluation copy, obtained through a volume licensing program, or preinstalled by a computer manufacturer.
     
 -   The date of installation and whether the installation was successful
--   Information that helps confirm that your Windows product key has not been altered
+-   Information that helps confirm that your Windows product key hasn't been altered
 -   Computer make and model
 -   Version information for the operating system and software
 -   Region and language settings
@@ -51,18 +51,18 @@ When you activate a computer running Windows 10, the following information is s
 
     This result includes error codes and the following information about any activation exploits and related malicious or unauthorized software that was found or disabled:
     
-    -   The activation exploit’s identifier
-    -   The activation exploit’s current state, such as cleaned or quarantined
+    -   The activation exploits’ identifier
+    -   The activation exploits’ current state, such as cleaned or quarantined
     -   Computer manufacturer’s identification
-    -   The activation exploit’s file name and hash in addition to a hash of related software components that may indicate the presence of an activation exploit
+    -   The activation exploits’ file name and hash apart from a hash of related software components that may indicate the presence of an activation exploit
 -   The name and a hash of the contents of your computer’s startup instructions file
 -   If your Windows license is on a subscription basis, information about how your subscription works
 
-Standard computer information is also sent, but your computer’s IP address is only retained temporarily.
+Standard computer information is also sent, but your computer’s IP address is only kept temporarily.
 
 ## Use of information
 
-Microsoft uses the information to confirm that you have a licensed copy of the software. Microsoft does not use the information to contact individual consumers.
+Microsoft uses the information to confirm that you have a licensed copy of the software. Microsoft doesn't use the information to contact individual consumers.
 For more information, see [Windows 10 Privacy Statement](https://go.microsoft.com/fwlink/p/?LinkId=619879).
 
 ## See also
