@@ -18,7 +18,7 @@ ms.collection: highpri
 In this topic, you will learn how to use Microsoft Network Monitor 3.4, which is a tool for capturing network traffic.
 
 > [!NOTE]
-> Network Monitor is the archived protocol analyzer and is no longer under development. **Microsoft Message Analyzer** is the replacement for Network Monitor. For more details, see [Microsoft Message Analyzer Operating Guide](/message-analyzer/microsoft-message-analyzer-operating-guide).
+> Network Monitor is the archived protocol analyzer and is no longer under development. Also, Microsoft Message Analyzer (MMA) was retired and its download packages removed from microsoft.com sites on November 25 2019.  There is currently no Microsoft replacement for Microsoft Message Analyzer in development at this time.  For similar functionality, please consider using a 3rd party network protocol analyzer tool. For more details, see [Microsoft Message Analyzer Operating Guide](/message-analyzer/microsoft-message-analyzer-operating-guide).
 
 To get started, [download Network Monitor tool](https://www.microsoft.com/download/details.aspx?id=4865). When you install Network Monitor, it installs its driver and hooks it to all the network adapters installed on the device. You can see the same on the adapter properties, as shown in the following image:
 
