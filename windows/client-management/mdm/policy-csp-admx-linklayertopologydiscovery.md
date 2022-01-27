@@ -76,7 +76,7 @@ If you disable or do not configure this policy setting, the default behavior of 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on Mapper I/O (LLTDIO) driver*
+-   GP Friendly name: *Turn on Mapper I/O (LLTDIO) driver*
 -   GP name: *LLTD_EnableLLTDIO*
 -   GP path: *Network/Link-Layer Topology Discovery*
 -   GP ADMX file name: *LinkLayerTopologyDiscovery.admx*
@@ -124,7 +124,7 @@ If you disable or do not configure this policy setting, the default behavior for
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on Responder (RSPNDR) driver*
+-   GP Friendly name: *Turn on Responder (RSPNDR) driver*
 -   GP name: *LLTD_EnableRspndr*
 -   GP path: *Network/Link-Layer Topology Discovery*
 -   GP ADMX file name: *LinkLayerTopologyDiscovery.admx*

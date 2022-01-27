@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 01/08/2020
+ms.date: 12/29/2021
 ms.reviewer: 
 manager: dansimp
 ms.collection: highpri
@@ -127,6 +127,9 @@ ms.collection: highpri
   </dd>
   <dd>
     <a href="#defender-schedulescantime">Defender/ScheduleScanTime</a>
+  </dd>
+  <dd>
+    <a href="#defender-securityintelligencelocation">Defender/SecurityIntelligenceLocation</a>
   </dd>
   <dd>
     <a href="#defender-signatureupdatefallbackorder">Defender/SignatureUpdateFallbackOrder</a>
@@ -570,6 +573,9 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--/Policy-->
+
+> [!IMPORTANT]
+> AllowOnAccessProtection is officially being deprecated.
 
 <hr/>
 
@@ -2054,6 +2060,57 @@ ADMX Info:
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 Valid values: 0–1380.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="defender-securityintelligencelocation"></a>**Defender/SecurityIntelligenceLocation**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting allows you to define the security intelligence location for VDI-configured computers. 
+
+​If you disable or do not configure this setting, security intelligence will be referred from the default local source.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *Define security intelligence location for VDI clients*
+-   GP name: *SecurityIntelligenceLocation*
+-   GP element: *SecurityIntelligenceLocation*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Security Intelligence Updates*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+- Empty string - no policy is set
+- Non-empty string - the policy is set and security intelligence is gathered from the location
 
 <!--/SupportedValues-->
 <!--/Policy-->

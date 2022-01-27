@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 09/07/2021
+ms.date: 01/24/2022
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -25,7 +25,8 @@ ms.technology: windows-sec
 
 This event generates every time a new process starts.
 
-> **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
+> [Note]
+> For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
 <br clear="all">
 
@@ -96,7 +97,8 @@ This event generates every time a new process starts.
 
 -   **Security ID** \[Type = SID\]**:** SID of account that requested the "create process" operation. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID cannot be resolved, you will see the source data in the event.
 
-> **Note**&nbsp;&nbsp;A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
+> [Note]
+> A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
 
 -   **Account Name** \[Type = UnicodeString\]**:** the name of the account that requested the "create process" operation.
 
@@ -116,11 +118,13 @@ This event generates every time a new process starts.
 
 **Target Subject** \[Version 2\]**:**
 
-> **Note**&nbsp;&nbsp;This event includes the principal of the process creator, but this is not always sufficient if the target context is different from the creator context. In that situation, the subject specified in the process termination event does not match the subject in the process creation event even though both events refer to the same process ID. Therefore, in addition to including the creator of the process, we will also include the target principal when the creator and target do not share the same logon.
+> [Note]
+> This event includes the principal of the process creator, but this is not always sufficient if the target context is different from the creator context. In that situation, the subject specified in the process termination event does not match the subject in the process creation event even though both events refer to the same process ID. Therefore, in addition to including the creator of the process, we will also include the target principal when the creator and target do not share the same logon.
 
 -   **Security ID** \[Type = SID\] \[Version 2\]**:** SID of target account. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID cannot be resolved, you will see the source data in the event.
 
-> **Note**&nbsp;&nbsp;A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
+> [Note]
+> A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
 
 -   **Account Name** \[Type = UnicodeString\] \[Version 2\]**:** the name of the target account.
 
@@ -150,11 +154,11 @@ This event generates every time a new process starts.
 
 -   **Token Elevation Type** \[Type = UnicodeString\]**:**
 
-    -   **TokenElevationTypeDefault (1):** Type 1 is a full token with no privileges removed or groups disabled. A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account (for which UAC disabled by default), service account or local system account.
+    -   **%%1936:** Type 1 is a full token with no privileges removed or groups disabled. A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account (for which UAC is disabled by default), service account, or local system account.
 
-    -   **TokenElevationTypeFull (2):** Type 2 is an elevated token with no privileges removed or groups disabled. An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator. An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+    -   **%%1937:** Type 2 is an elevated token with no privileges removed or groups disabled. An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator. An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
 
-    -   **TokenElevationTypeLimited (3):** Type 3 is a limited token with administrative privileges removed and administrative groups disabled. The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.
+    -   **%%1938:** Type 3 is a limited token with administrative privileges removed and administrative groups disabled. The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.
 
 -   **Mandatory Label** \[Version 2\] \[Type = SID\]**:** SID of [integrity label](/windows/win32/secauthz/mandatory-integrity-control) which was assigned to the new process. Can have one of the following values:
 
@@ -203,10 +207,10 @@ For 4688(S): A new process has been created.
 
 - It can be unusual for a process to run using a local account in either **Creator Subject\\Security ID** or in **Target** **Subject\\Security ID**.
 
-- Monitor for **Token Elevation Type** with value **TokenElevationTypeDefault (1)** when **Subject\\Security ID** lists a real user account, for example when **Account Name** doesn't contain the $ symbol. Typically this means that UAC is disabled for this account for some reason.
+- Monitor for **Token Elevation Type** with value **%%1936** when **Subject\\Security ID** lists a real user account, for example when **Account Name** doesn't contain the $ symbol. Typically this means that UAC is disabled for this account for some reason.
 
-- Monitor for **Token Elevation Type** with value **TokenElevationTypeDefault (2)** on standard workstations, when **Subject\\Security ID** lists a real user account, for example when **Account Name** doesn't contain the $ symbol. This means that a user ran a program using administrative privileges.
+- Monitor for **Token Elevation Type** with value **%%1937** on standard workstations, when **Subject\\Security ID** lists a real user account, for example when **Account Name** doesn't contain the $ symbol. This means that a user ran a program using administrative privileges.
 
-- You can also monitor for **Token Elevation Type** with value **TokenElevationTypeDefault (2)** on standard workstations, when a computer object was used to run the process, but that computer object is not the same computer where the event occurs.
+- You can also monitor for **Token Elevation Type** with value **%%1937** on standard workstations, when a computer object was used to run the process, but that computer object is not the same computer where the event occurs.
 
 - If you need to monitor all new processes with a specific Mandatory Label, for example S-1-16-20480 (Protected process), check the "**Mandatory Label**" in this event.
