@@ -1,7 +1,7 @@
 ---
 title: Monthly quality updates (Windows 10/11)
 description: Learn about Windows monthly quality updates to stay productive and protected.
-keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, tools
+keywords: updates, servicing, current, deployment, General Availability Channel, feature, quality, rings, insider, tools
 ms.prod: w10
 ms.mktglfcycl: manage
 author: greg-lindsay
