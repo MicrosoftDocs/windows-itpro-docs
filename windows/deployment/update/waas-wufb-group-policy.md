@@ -6,8 +6,10 @@ ms.mktglfcycl: manage
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.collection: m365initiative-coredeploy
-manager: laurawi
+ms.collection:
+  - m365initiative-coredeploy
+  - highpri
+manager: dougeby
 ms.topic: article
 ---
 
@@ -16,7 +18,7 @@ ms.topic: article
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 - Windows 11
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
@@ -31,7 +33,7 @@ To manage updates with Windows Update for Business as described in this article,
 
 - Create Active Directory security groups that align with the deployment rings you use to phase deployment of updates.
 - Allow access to the Windows Update service.
-- Download and install ADMX templates appropriate to your Windows 10 version. For more information, see [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](https://support.microsoft.com/help/3087759) and [Step-By-Step: Managing Windows 10 with Administrative templates](/archive/blogs/canitpro/step-by-step-managing-windows-10-with-administrative-templates).
+- Download and install ADMX templates appropriate to your Windows 10 version. For more information, see [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) and [Step-By-Step: Managing Windows 10 with Administrative templates](/archive/blogs/canitpro/step-by-step-managing-windows-10-with-administrative-templates).
 
 ## Set up Windows Update for Business
 
@@ -42,10 +44,15 @@ Follow these steps on a device running the Remote Server Administration Tools or
 ### Set up a ring
 
 1. Start Group Policy Management Console (gpmc.msc).
-2. Expand **Forest > Domains > *\<your domain\>**.
+
+2. Expand **Forest > Domains > *\<your domain\>*.
+
 3. Right-click *\<your domain>* and select **Create a GPO in this domain and link it here**.
-4. In the **New GPO** dialog box, enter *Windows Update for Business - Group 1* as the name of the new Group Policy Object.
+
+4. In the **New GPO** dialog box, enter **Windows Update for Business - Group 1** as the name of the new Group Policy Object.
+
 5. Right-click the **"Windows Update for Business - Group 1"** object, and then select **Edit**.
+
 6. In the Group Policy Management Editor, go to **Computer Configuration > Policies > Administrative Templates > Windows Components > Windows Update**. You are now ready to start assigning policies to this ring (group) of devices.
 
 
@@ -68,8 +75,11 @@ Drivers are automatically enabled because they are beneficial to device systems.
 #### I want to receive pre-release versions of the next feature update
 
 1. Ensure that you are enrolled in the Windows Insider Program for Business. This is a completely free program available to commercial customers to aid them in their validation of feature updates before they are released. Joining the program enables you to receive updates prior to their release as well as receive emails and content related to what is coming in the next updates. 
+
 2. Use Group Policy Management Console to go to: **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Windows Update for Business > Manage preview builds** and set the policy to **Enable preview builds** for any of test devices you want to install pre-release builds.
+
 3. Use Group Policy Management Console to go to **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Windows Update for Business > Select when Preview Builds and feature updates are received**. In the **Options** pane, use the pulldown menu to select one of the preview builds. We recomment **Windows Insider Program Slow** for commercial customers using pre-release builds for validation.
+
 4. Select **OK**. 
 
 #### I want to manage which released feature update my devices receive
@@ -83,19 +93,19 @@ A Windows Update for Business administrator can defer or pause updates. You can 
 
 In this example, there are three rings for quality updates. The first ring ("pilot") has a deferral period of 0 days. The second ring ("fast") has a deferral of five days. The third ring ("slow") has a deferral of ten days.
 
-![illustration of devices divided into three rings.](images/waas-wufb-3-rings.png)
+:::image type="content" alt-text="illustration of devices divided into three rings." source="images/waas-wufb-3-rings.png" lightbox="images/waas-wufb-3-rings.png":::
 
 When the quality update is released, it is offered to devices in the pilot ring the next time they scan for updates.
 
 ##### Five days later
 The devices in the fast ring are offered the quality update the next time they scan for updates.
 
-![illustration of devices with fast ring deployed.](images/waas-wufb-fast-ring.png)
+:::image type="content" alt-text="illustration of devices with fast ring deployed." source="images/waas-wufb-fast-ring.png" lightbox="images/waas-wufb-fast-ring.png":::
 
 ##### Ten days later
 Ten days after the quality update is released, it is offered to the devices in the slow ring the next time they scan for updates.
 
-![illustration of devices with slow ring deployed.](images/waas-wufb-slow-ring.png)
+:::image type="content" alt-text="illustration of devices with slow ring deployed." source="images/waas-wufb-slow-ring.png" lightbox="images/waas-wufb-slow-ring.png":::
 
 If no problems occur, all of the devices that scan for updates will be offered the quality update within ten days of its release, in three waves.
 
@@ -103,11 +113,11 @@ If no problems occur, all of the devices that scan for updates will be offered t
 
 In this example, some problem is discovered during the deployment of the update to the "pilot" ring.
 
-![illustration of devices divided with pilot ring experiencing a problem.](images/waas-wufb-pilot-problem.png)
+:::image type="content" alt-text="illustration of devices divided with pilot ring experiencing a problem." source="images/waas-wufb-pilot-problem.png" lightbox="images/waas-wufb-pilot-problem.png":::
 
 At this point, the IT administrator can set a policy to pause the update. In this example, the admin selects the **Pause quality updates** check box.
 
-![illustration of rings with pause quality update check box selected.](images/waas-wufb-pause.png)
+:::image type="content" alt-text="illustration of rings with pause quality update check box selected." source="images/waas-wufb-pause.png" lightbox="images/waas-wufb-pause.png":::
 
 Now all devices are paused from updating for 35 days. When the pause is removed, they will be offered the *next* quality update, which ideally will not have the same issue. If there is still an issue, the IT admin can pause updates again.
 

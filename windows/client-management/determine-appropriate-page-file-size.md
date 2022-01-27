@@ -10,6 +10,7 @@ ms.author: delhan
 ms.date: 8/28/2019
 ms.reviewer: dcscontentpm
 manager: dansimp
+ms.collection: highpri
 ---
 
 # How to determine the appropriate page file size for 64-bit versions of Windows
@@ -66,7 +67,7 @@ Kernel memory crash dumps require enough page file space or dedicated dump file 
 
 Computers that are running Microsoft Windows or Microsoft Windows Server usually must have a page file to support a system crash dump. System administrators now have the option to create a dedicated dump file instead.
 
-A dedicated dump file is a page file that is not used for paging. Instead, it is “dedicated” to back a system crash dump file (Memory.dmp) when a system crash occurs. Dedicated dump files can be put on any disk volume that can support a page file. We recommend that you use a dedicated dump file if you want a system crash dump but you do not want a page file.
+A dedicated dump file is a page file that is not used for paging. Instead, it is “dedicated” to back a system crash dump file (Memory.dmp) when a system crash occurs. Dedicated dump files can be put on any disk volume that can support a page file. We recommend that you use a dedicated dump file if you want a system crash dump but you do not want a page file. To learn how to create it, see [Overview of memory dump file options for Windows](/troubleshoot/windows-server/performance/memory-dump-file-options).
 
 ## System-managed page files
 

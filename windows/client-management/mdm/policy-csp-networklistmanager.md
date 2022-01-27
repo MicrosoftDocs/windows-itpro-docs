@@ -1,13 +1,13 @@
 ---
 title: Policy CSP - NetworkListManager
-description: The Policy CSP - NetworkListManager setting creates a new MDM policy that allows admins to configure a list of URIs of HTTPS endpoints that are considered secure.
+description: Policy CSP - NetworkListManager is a setting creates a new MDM policy. This setting allows admins to configure a list of URIs of HTTPS endpoints that are considered secure.
 ms.author: v-nsatapathy
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nimishasatapathy
 ms.localizationpriority: medium
-ms.date: 7/10/2021
+ms.date: 12/16/2021
 ms.reviewer: 
 manager: dansimp
 ---
@@ -18,7 +18,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## NetworkListManager policies  
+## NetworkListManager policies 
 
 <dl>
   <dd>
@@ -36,38 +36,14 @@ manager: dansimp
 <a href="" id="networklistmanager-allowedtlsauthenticationendpoints"></a>**NetworkListManager/AllowedTlsAuthenticationEndpoints**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -82,9 +58,19 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting provides the list of URLs (separated by Unicode character 0xF000) to endpoints accessible only within an enterprise's network. If any of the URLs can be resolved over HTTPS, the network would be considered authenticated.
+This policy setting provides the list of URLs (separated by Unicode character 0xF000) to endpoints accessible only within an enterprise's network. If any of the URLs can be resolved over HTTPS, the network would be considered authenticated.  
 
-<hr/>
+When entering a list of TLS endpoints in Microsoft Endpoint Manager, you must follow this format, even in the UI:  
+
+`<![CDATA[https://nls.corp.contoso.com&#xF000;https://nls.corp.fabricam.com]]>`
+
+- The HTTPS endpoint must not have any more authentication checks, such as login or multi-factor authentication.
+
+- The HTTPS endpoint must be an internal address not accessible from outside the corporate network.
+
+- The client must trust the server certificate. So the CA certificate that the HTTPS server certificate chains to must be present in the client machine's root certificate store.
+
+- A certificate should not be a public certificate.
 
 
 <hr/>
@@ -93,38 +79,14 @@ This policy setting provides the list of URLs (separated by Unicode character 0x
 <a href="" id="networklistmanager-configuredtlsauthenticationnetworkname"></a>**NetworkListManager/ConfiguredTLSAuthenticationNetworkName**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -139,7 +101,7 @@ This policy setting provides the list of URLs (separated by Unicode character 0x
 
 <!--/Scope-->
 <!--Description-->
-This policy setting provides the string to be used to name the network authenticated against one of the endpoints listed in NetworkListManager/AllowedTlsAuthenticationEndpoints policy.
+This policy setting provides the string that is to be used to name a network. That network is authenticated against one of the endpoints that are listed in NetworkListManager/AllowedTlsAuthenticationEndpoints policy. If this setting is used for Trusted Network Detection in an _Always On_ VPN profile, it must be the DNS suffix that is configured in the TrustedNetworkDetection attribute.
 
 <hr/>
 

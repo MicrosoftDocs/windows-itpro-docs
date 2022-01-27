@@ -1075,7 +1075,7 @@ If a device is expected to use a third-party antivirus program, ignore the repor
 
 If a device is expected to use Windows Defender and ELAMDriverLoaded = 1 (True), then allow access.
 
-If a device is expected to use Windows Defender and ELAMDriverLoaded = 0 (False), then take one of the following actions that align with your enterprise policies, also accounting for whether it is a desktop or mobile device:
+If a device is expected to use Windows Defender and ELAMDriverLoaded = 0 (False), then take one of the following actions that align with your enterprise policies:
 
 -   Disallow all access
 -   Disallow access to HBI assets

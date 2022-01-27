@@ -59,26 +59,26 @@ Windows 10 mitigations that you can configure are listed in the following two ta
 |---|---|
 | **Windows Defender SmartScreen**<br> helps prevent<br>malicious applications<br>from being downloaded | Windows Defender SmartScreen can check the reputation of a downloaded application by using a service that Microsoft maintains. The first time a user runs an app that originates from the Internet (even if the user copied it from another PC), SmartScreen checks to see if the app lacks a reputation or is known to be malicious, and responds accordingly.<br><br>**More information**: [Windows Defender SmartScreen](#windows-defender-smartscreen), later in this topic |
 | **Credential Guard**<br> helps keep attackers<br>from gaining access through<br>Pass-the-Hash or<br>Pass-the-Ticket attacks | Credential Guard uses virtualization-based security to isolate secrets, such as NTLM password hashes and Kerberos Ticket Granting Tickets, so that only privileged system software can access them.<br>Credential Guard is included in Windows 10 Enterprise and Windows Server 2016.<br><br>**More information**: [Protect derived domain credentials with Credential Guard](/windows/access-protection/credential-guard/credential-guard) |
-| **Enterprise certificate pinning**<br> helps prevent <br>man-in-the-middle attacks<br>that leverage PKI | Enterprise certificate pinning enables you to protect your internal domain names from chaining to unwanted certificates or to fraudulently issued certificates. With enterprise certificate pinning, you can "pin" (associate) an X.509 certificate and its public key to its Certification Authority, either root or leaf. <br><br>**More information**: [Enterprise Certificate Pinning](/windows/access-protection/enterprise-certificate-pinning) |
-| **Device Guard**<br> helps keep a device<br>from running malware or<br>other untrusted apps | Device Guard includes a Code Integrity policy that you create; an allowlist of trusted apps—the only apps allowed to run in your organization. Device Guard also includes a powerful system mitigation called hypervisor-protected code integrity (HVCI), which leverages virtualization-based security (VBS) to protect Windows' kernel-mode code integrity validation process. HVCI has specific hardware requirements, and works with Code Integrity policies to help stop attacks even if they gain access to the kernel.<br>Device Guard is included in Windows 10 Enterprise and Windows Server 2016.<br><br>**More information**: [Introduction to Device Guard](/windows/device-security/device-guard/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies) |
-| **Microsoft Defender Antivirus**,<br>which helps keep devices<br>free of viruses and other<br>malware | Windows 10 includes Microsoft Defender Antivirus, a robust inbox antimalware solution. Microsoft Defender Antivirus has been significantly improved since it was introduced in Windows 8.<br><br>**More information**: [Microsoft Defender Antivirus](#microsoft-defender-antivirus), later in this topic |
+| **Enterprise certificate pinning**<br> helps prevent <br>man-in-the-middle attacks<br>that use PKI | Enterprise certificate pinning enables you to protect your internal domain names from chaining to unwanted certificates or to fraudulently issued certificates. With enterprise certificate pinning, you can "pin" (associate) an X.509 certificate and its public key to its Certification Authority, either root or leaf. <br><br>**More information**: [Enterprise Certificate Pinning](/windows/access-protection/enterprise-certificate-pinning) |
+| **Device Guard**<br> helps keep a device<br>from running malware or<br>other untrusted apps | Device Guard includes a Code Integrity policy that you create; an allowlist of trusted apps—the only apps allowed to run in your organization. Device Guard also includes a powerful system mitigation called hypervisor-protected code integrity (HVCI), which uses virtualization-based security (VBS) to protect Windows' kernel-mode code integrity validation process. HVCI has specific hardware requirements, and works with Code Integrity policies to help stop attacks even if they gain access to the kernel.<br>Device Guard is included in Windows 10 Enterprise and Windows Server 2016.<br><br>**More information**: [Introduction to Device Guard](/windows/device-security/device-guard/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies) |
+| **Microsoft Defender Antivirus**,<br>which helps keep devices<br>free of viruses and other<br>malware | Windows 10 includes Microsoft Defender Antivirus, a robust inbox anti-malware solution. Microsoft Defender Antivirus has been improved to a considerable extent since it was introduced in Windows 8.<br><br>**More information**: [Microsoft Defender Antivirus](#microsoft-defender-antivirus), later in this topic |
 | **Blocking of untrusted fonts**<br> helps prevent fonts<br>from being used in<br>elevation-of-privilege attacks | Block Untrusted Fonts is a setting that allows you to prevent users from loading fonts that are "untrusted" onto your network, which can mitigate elevation-of-privilege attacks associated with the parsing of font files. However, as of Windows 10, version 1703, this mitigation is less important, because font parsing is isolated in an [AppContainer sandbox](/windows/win32/secauthz/appcontainer-isolation) (for a list describing this and other kernel pool protections, see [Kernel pool protections](#kernel-pool-protections), later in this topic).<br><br>**More information**: [Block untrusted fonts in an enterprise](/windows/threat-protection/block-untrusted-fonts-in-enterprise) |
 | **Memory protections**<br> help prevent malware<br>from using memory manipulation<br>techniques such as buffer<br>overruns | These mitigations, listed in [Table 2](#table-2), help to protect against memory-based attacks, where malware or other code manipulates memory to gain control of a system (for example, malware that attempts to use buffer overruns to inject malicious executable code into memory. Note:<br>A subset of apps will not be able to run if some of these mitigations are set to their most restrictive settings. Testing can help you maximize protection while still allowing these apps to run.<br><br>**More information**: [Table 2](#table-2), later in this topic |
 | **UEFI Secure Boot**<br> helps protect<br>the platform from<br>boot kits and rootkits | Unified Extensible Firmware Interface (UEFI) Secure Boot is a security standard for firmware built in to PCs by manufacturers beginning with Windows 8. It helps to protect the boot process and firmware against tampering, such as from a physically present attacker or from forms of malware that run early in the boot process or in kernel after startup.<br><br>**More information**: [UEFI and Secure Boot](/windows/device-security/bitlocker/bitlocker-countermeasures#uefi-and-secure-boot)</a> |
-| **Early Launch Antimalware (ELAM)**<br> helps protect<br>the platform from<br>rootkits disguised as drivers | Early Launch Antimalware (ELAM) is designed to enable the antimalware solution to start before all non-Microsoft drivers and apps. If malware modifies a boot-related driver, ELAM will detect the change, and Windows will prevent the driver from starting, thus blocking driver-based rootkits.<br><br>**More information**: [Early Launch Antimalware](/windows/device-security/bitlocker/bitlocker-countermeasures#protection-during-startup) |
+| **Early Launch Antimalware (ELAM)**<br> helps protect<br>the platform from<br>rootkits disguised as drivers | Early Launch Antimalware (ELAM) is designed to enable the anti-malware solution to start before all non-Microsoft drivers and apps. If malware modifies a boot-related driver, ELAM will detect the change, and Windows will prevent the driver from starting, thus blocking driver-based rootkits.<br><br>**More information**: [Early Launch Antimalware](/windows/device-security/bitlocker/bitlocker-countermeasures#protection-during-startup) |
 | **Device Health Attestation**<br> helps prevent<br>compromised devices from<br>accessing an organization's<br>assets | Device Health Attestation (DHA) provides a way to confirm that devices attempting to connect to an organization's network are in a healthy state, not compromised with malware. When DHA has been configured, a device's actual boot data measurements can be checked against the expected "healthy" boot data. If the check indicates a device is unhealthy, the device can be prevented from accessing the network.<br><br>**More information**: [Control the health of Windows 10-based devices](/windows/device-security/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices) and [Device Health Attestation](/windows-server/security/device-health-attestation) |
 
 Configurable Windows 10 mitigations designed to help protect against memory manipulation require in-depth understanding of these threats and mitigations and knowledge about how the operating system and applications handle memory. The standard process for maximizing these types of mitigations is to work in a test lab to discover whether a given setting interferes with any applications that you use so that you can deploy settings that maximize protection while still allowing apps to run correctly.
 
-As an IT professional, you can ask application developers and software vendors to deliver applications that include an additional protection called Control Flow Guard (CFG). No configuration is needed in the operating system—the protection is compiled into applications. More information can be found in [Control Flow Guard](#control-flow-guard).
+As an IT professional, you can ask application developers and software vendors to deliver applications that include an extra protection called Control Flow Guard (CFG). No configuration is needed in the operating system—the protection is compiled into applications. More information can be found in [Control Flow Guard](#control-flow-guard).
 
 ### <span id="table-2" class="anchor"></span>Table 2&nbsp;&nbsp;Configurable Windows 10 mitigations designed to help protect against memory exploits
 
 | Mitigation and corresponding threat | Description |
 |---|---|
-| **Data Execution Prevention (DEP)**<br> helps prevent<br>exploitation of buffer overruns | **Data Execution Prevention (DEP)** is a system-level memory protection feature available in Windows operating systems. DEP enables the operating system to mark one or more pages of memory as non-executable, which prevents code from being run from that region of memory, to help prevent exploitation of buffer overruns.<br>DEP helps prevent code from being run from data pages such as the default heap, stacks, and memory pools. Although some applications have compatibility problems with DEP, the vast majority of applications do not.<br>**More information**: [Data Execution Prevention](#data-execution-prevention), later in this topic.<br><br>**Group Policy settings**: DEP is on by default for 64-bit applications, but you can configure additional DEP protections by using the Group Policy settings described in [Override Process Mitigation Options to help enforce app-related security policies](override-mitigation-options-for-app-related-security-policies.md). |
-| **SEHOP**<br> helps prevent<br>overwrites of the<br>Structured Exception Handler | **Structured Exception Handling Overwrite Protection (SEHOP)** is designed to help block exploits that use the Structured Exception Handler (SEH) overwrite technique. Because this protection mechanism is provided at run-time, it helps to protect apps regardless of whether they have been compiled with the latest improvements. A few applications have compatibility problems with SEHOP, so be sure to test for your environment.<br>**More information**: [Structured Exception Handling Overwrite Protection](#structured-exception-handling-overwrite-protection), later in this topic.<br><br>**Group Policy setting**: SEHOP is on by default for 64-bit applications, but you can configure additional SEHOP protections by using the Group Policy setting described in [Override Process Mitigation Options to help enforce app-related security policies](override-mitigation-options-for-app-related-security-policies.md). |
-| **ASLR**<br> helps mitigate malware<br>attacks based on<br>expected memory locations | **Address Space Layout Randomization (ASLR)** loads DLLs into random memory addresses at boot time. This helps mitigate malware that's designed to attack specific memory locations, where specific DLLs are expected to be loaded.<br>**More information**: [Address Space Layout Randomization](#address-space-layout-randomization), later in this topic.<br><br>**Group Policy settings**: ASLR is on by default for 64-bit applications, but you can configure additional ASLR protections by using the Group Policy settings described in [Override Process Mitigation Options to help enforce app-related security policies](override-mitigation-options-for-app-related-security-policies.md). |
+| **Data Execution Prevention (DEP)**<br> helps prevent<br>exploitation of buffer overruns | **Data Execution Prevention (DEP)** is a system-level memory protection feature available in Windows operating systems. DEP enables the operating system to mark one or more pages of memory as non-executable, which prevents code from being run from that region of memory, to help prevent exploitation of buffer overruns.<br>DEP helps prevent code from being run from data pages such as the default heap, stacks, and memory pools. Although some applications have compatibility problems with DEP, most applications do not.<br>**More information**: [Data Execution Prevention](#data-execution-prevention), later in this topic.<br><br>**Group Policy settings**: DEP is on by default for 64-bit applications, but you can configure more DEP protections by using the Group Policy settings described in [Override Process Mitigation Options to help enforce app-related security policies](override-mitigation-options-for-app-related-security-policies.md). |
+| **SEHOP**<br> helps prevent<br>overwrites of the<br>Structured Exception Handler | **Structured Exception Handling Overwrite Protection (SEHOP)** is designed to help block exploits that use the Structured Exception Handler (SEH) overwrite technique. Because this protection mechanism is provided at run-time, it helps to protect apps regardless of whether they have been compiled with the latest improvements. A few applications have compatibility problems with SEHOP, so be sure to test for your environment.<br>**More information**: [Structured Exception Handling Overwrite Protection](#structured-exception-handling-overwrite-protection), later in this topic.<br><br>**Group Policy setting**: SEHOP is on by default for 64-bit applications, but you can configure more SEHOP protections by using the Group Policy setting described in [Override Process Mitigation Options to help enforce app-related security policies](override-mitigation-options-for-app-related-security-policies.md). |
+| **ASLR**<br> helps mitigate malware<br>attacks based on<br>expected memory locations | **Address Space Layout Randomization (ASLR)** loads DLLs into random memory addresses at boot time. This loading - of specific DLLs -helps mitigate malware that's designed to attack specific memory locations.<br>**More information**: [Address Space Layout Randomization](#address-space-layout-randomization), later in this topic.<br><br>**Group Policy settings**: ASLR is on by default for 64-bit applications, but you can configure more ASLR protections by using the Group Policy settings described in [Override Process Mitigation Options to help enforce app-related security policies](override-mitigation-options-for-app-related-security-policies.md). |
 
 ### Windows Defender SmartScreen
 
@@ -90,17 +90,17 @@ For more information, see [Microsoft Defender SmartScreen overview](microsoft-de
 
 ### Microsoft Defender Antivirus
 
-Microsoft Defender Antivirus in Windows 10 uses a multi-pronged approach to improve antimalware:
+Microsoft Defender Antivirus in Windows 10 uses a multi-pronged approach to improve anti-malware:
 
 - **Cloud-delivered protection** helps detect and block new malware within seconds, even if the malware has never been seen before. The service, available as of Windows 10, version 1703, uses distributed resources and machine learning to deliver protection to endpoints at a rate that is far faster than traditional signature updates.
 
 - **Rich local context** improves how malware is identified. Windows 10 informs Microsoft Defender Antivirus not only about content like files and processes but also where the content came from, where it has been stored, and more. The information about source and history enables Microsoft Defender Antivirus to apply different levels of scrutiny to different content.
 
-- **Extensive global sensors** help keep Microsoft Defender Antivirus current and aware of even the newest malware. This is accomplished in two ways: by collecting the rich local context data from end points and by centrally analyzing that data.
+- **Extensive global sensors** help keep Microsoft Defender Antivirus current and aware of even the newest malware. This up-to-date status is accomplished in two ways: by collecting the rich local context data from end points and by centrally analyzing that data.
 
 - **Tamper proofing** helps guard Microsoft Defender Antivirus itself against malware attacks. For example, Microsoft Defender Antivirus uses Protected Processes, which prevents untrusted processes from attempting to tamper with Microsoft Defender Antivirus components, its registry keys, and so on. ([Protected Processes](#protected-processes) is described later in this topic.)
 
-- **Enterprise-level features** give IT pros the tools and configuration options necessary to make Microsoft Defender Antivirus an enterprise-class antimalware solution.
+- **Enterprise-level features** give IT pros the tools and configuration options necessary to make Microsoft Defender Antivirus an enterprise-class anti-malware solution.
 
 <!-- Watch the link text for the following links - try to keep it in sync with the actual topic. -->
 
@@ -112,7 +112,7 @@ For information about Microsoft Defender for Endpoint, a service that helps ente
 
 Malware depends on its ability to insert a malicious payload into memory with the hope that it will be executed later. Wouldn't it be great if you could prevent malware from running if it wrote to an area that has been allocated solely for the storage of information?
 
-Data Execution Prevention (DEP) does exactly that, by substantially reducing the range of memory that malicious code can use for its benefit. DEP uses the No eXecute bit on modern CPUs to mark blocks of memory as read-only so that those blocks can't be used to execute malicious code that may be inserted by means of a vulnerability exploit.
+Data Execution Prevention (DEP) does exactly that, by substantially reducing the range of memory that malicious code can use for its benefit. DEP uses the No eXecute bit on modern CPUs to mark blocks of memory as read-only so that those blocks can't be used to execute malicious code that may be inserted through a vulnerability exploit.
 
 **To use Task Manager to see apps that use DEP**
 
@@ -164,11 +164,11 @@ You can use the Group Policy setting called **Process Mitigation Options** to co
 
 ### Address Space Layout Randomization
 
-One of the most common techniques used to gain access to a system is to find a vulnerability in a privileged process that is already running, guess or find a location in memory where important system code and data have been placed, and then overwrite that information with a malicious payload. Any malware that could write directly to the system memory could simply overwrite it in well-known and predictable locations.
+One of the most common techniques used to gain access to a system is to find a vulnerability in a privileged process that is already running, guess or find a location in memory where important system code and data have been placed, and then overwrite that information with a malicious payload. Any malware that could write directly to the system memory could overwrite it in well-known and predictable locations.
 
 Address Space Layout Randomization (ASLR) makes that type of attack much more difficult because it randomizes how and where important data is stored in memory. With ASLR, it is more difficult for malware to find the specific location it needs to attack. Figure 3 illustrates how ASLR works by showing how the locations of different critical Windows components can change in memory between restarts.
 
-![ASLR at work.](images/security-fig4-aslr.png)
+:::image type="content" alt-text="ASLR at work." source="images/security-fig4-aslr.png" lightbox="images/security-fig4-aslr.png":::
 
 **Figure 3.&nbsp;&nbsp;ASLR at work**
 
@@ -180,23 +180,23 @@ You can use the Group Policy setting called **Process Mitigation Options** to co
 
 Windows 10 provides many threat mitigations to protect against exploits that are built into the operating system and need no configuration within the operating system. The table that follows describes some of these mitigations.
 
-Control Flow Guard (CFG) is a mitigation that does not need configuration within the operating system, but does require that an application developer configure the mitigation into the application when it's compiled. CFG is built into Microsoft Edge, IE11, and other areas in Windows 10, and can be built into many other applications when they are compiled.
+Control Flow Guard (CFG) is a mitigation that does not need configuration within the operating system, but does require an application developer to configure the mitigation into the application when it's compiled. CFG is built into Microsoft Edge, IE11, and other areas in Windows 10, and can be built into many other applications when they are compiled.
 
 ### Table 3   Windows 10 mitigations to protect against memory exploits – no configuration needed
 
 | Mitigation and corresponding threat | Description |
 |---|---|
 | **SMB hardening for SYSVOL and NETLOGON shares**<br>helps mitigate<br>man-in-the-middle attacks | Client connections to the Active Directory Domain Services default SYSVOL and NETLOGON shares on domain controllers now require SMB signing and mutual authentication (such as Kerberos).<br><br>**More information**: [SMB hardening improvements for SYSVOL and NETLOGON shares](#smb-hardening-improvements-for-sysvol-and-netlogon-shares), later in this topic. |
-| **Protected Processes**<br>help prevent one process<br>from tampering with another<br>process | With the Protected Processes feature, Windows 10 prevents untrusted processes from interacting or tampering with those that have been specially signed.<br><br>**More information**: [Protected Processes](#protected-processes), later in this topic. |
+| **Protected Processes**<br>help prevent one process<br>from tampering with another<br>process | With the Protected Processes feature, Windows 10 prevents untrusted processes from interacting or tampering with those processes that have been specially signed.<br><br>**More information**: [Protected Processes](#protected-processes), later in this topic. |
 | **Universal Windows apps protections**<br>screen downloadable<br>apps and run them in<br>an AppContainer sandbox | Universal Windows apps are carefully screened before being made available, and they run in an AppContainer sandbox with limited privileges and capabilities.<br><br>**More information**: [Universal Windows apps protections](#universal-windows-apps-protections), later in this topic. |
-| **Heap protections**<br>help prevent<br>exploitation of the heap | Windows 10 includes protections for the heap, such as the use of internal data structures which help protect against corruption of memory used by the heap.<br><br>**More information**: [Windows heap protections](#windows-heap-protections), later in this topic. |
+| **Heap protections**<br>help prevent<br>exploitation of the heap | Windows 10 includes protections for the heap, such as the use of internal data structures that help protect against corruption of memory used by the heap.<br><br>**More information**: [Windows heap protections](#windows-heap-protections), later in this topic. |
 | **Kernel pool protections**<br>help prevent<br>exploitation of pool memory<br>used by the kernel | Windows 10 includes protections for the pool of memory used by the kernel. For example, safe unlinking protects against pool overruns that are combined with unlinking operations that can be used to create an attack.<br><br>**More information**: [Kernel pool protections](#kernel-pool-protections), later in this topic. |
-| **Control Flow Guard**<br>helps mitigate exploits<br>that are based on<br>flow between code locations<br>in memory | Control Flow Guard (CFG) is a mitigation that requires no configuration within the operating system, but instead is built into software when it's compiled. It is built into Microsoft Edge, IE11, and other areas in Windows 10. CFG can be built into applications written in C or C++, or applications compiled using Visual Studio 2015.<br>For such an application, CFG can detect an attacker's attempt to change the intended flow of code. If this occurs, CFG terminates the application. You can request software vendors to deliver Windows applications compiled with CFG enabled.<br><br>**More information**: [Control Flow Guard](#control-flow-guard), later in this topic. |
+| **Control Flow Guard**<br>helps mitigate exploits<br>based on<br>flow between code locations<br>in memory | Control Flow Guard (CFG) is a mitigation that requires no configuration within the operating system, but instead is built into software when it's compiled. It is built into Microsoft Edge, IE11, and other areas in Windows 10. CFG can be built into applications written in C or C++, or applications compiled using Visual Studio 2015.<br>For such an application, CFG can detect an attacker's attempt to change the intended flow of code. If this attempt occurs, CFG terminates the application. You can request software vendors to deliver Windows applications compiled with CFG enabled.<br><br>**More information**: [Control Flow Guard](#control-flow-guard), later in this topic. |
 | **Protections built into Microsoft Edge** (the browser)<br>helps mitigate multiple<br>threats | Windows 10 includes an entirely new browser, Microsoft Edge, designed with multiple security improvements.<br><br>**More information**: [Microsoft Edge and Internet Explorer 11](#microsoft-edge-and-internet-explorer11), later in this topic. |
 
 ### SMB hardening improvements for SYSVOL and NETLOGON shares
 
-In Windows 10 and Windows Server 2016, client connections to the Active Directory Domain Services default SYSVOL and NETLOGON shares on domain controllers require Server Message Block (SMB) signing and mutual authentication (such as Kerberos). This reduces the likelihood of man-in-the-middle attacks. If SMB signing and mutual authentication are unavailable, a computer running Windows 10 or Windows Server 2016 won't process domain-based Group Policy and scripts.
+In Windows 10 and Windows Server 2016, client connections to the Active Directory Domain Services default SYSVOL and NETLOGON shares on domain controllers require Server Message Block (SMB) signing and mutual authentication (such as Kerberos). This requirement reduces the likelihood of man-in-the-middle attacks. If SMB signing and mutual authentication are unavailable, a computer running Windows 10 or Windows Server 2016 won't process domain-based Group Policy and scripts.
 
 > [!NOTE]
 > The registry values for these settings aren't present by default, but the hardening rules still apply until overridden by Group Policy or other registry values. For more information on these security improvements, (also referred to as UNC hardening), see  [Microsoft Knowledge Base article 3000483](https://support.microsoft.com/help/3000483/ms15-011-vulnerability-in-group-policy-could-allow-remote-code-execution-february-10,-2015) and [MS15-011 & MS15-014: Hardening Group Policy](https://msrc-blog.microsoft.com/2015/02/10/ms15-011-ms15-014-hardening-group-policy/).
@@ -205,7 +205,7 @@ In Windows 10 and Windows Server 2016, client connections to the Active Director
 
 Most security controls are designed to prevent the initial infection point. However, despite all the best preventative controls, malware might eventually find a way to infect the system. So, some protections are built to place limits on malware that gets on the device. Protected Processes creates limits of this type.
 
-With Protected Processes, Windows 10 prevents untrusted processes from interacting or tampering with those that have been specially signed. Protected Processes defines levels of trust for processes. Less trusted processes are prevented from interacting with and therefore attacking more trusted processes. Windows 10 uses Protected Processes more broadly across the operating system, and as in Windows 8.1, implements them in a way that can be used by 3rd party anti-malware vendors, as described in [Protecting Anti-Malware Services](/windows/win32/services/protecting-anti-malware-services-). This helps make the system and antimalware solutions less susceptible to tampering by malware that does manage to get on the system.
+With Protected Processes, Windows 10 prevents untrusted processes from interacting or tampering with those processes that have been specially signed. Protected Processes defines levels of trust for processes. Less trusted processes are prevented from interacting with and therefore attacking more trusted processes. Windows 10 uses Protected Processes more broadly across the operating system, and, as in Windows 8.1, implements them in a way that can be used by third-party anti-malware vendors, as described in [Protecting Anti-Malware Services](/windows/win32/services/protecting-anti-malware-services-). This ease in use helps make the system and anti-malware solutions less susceptible to tampering by malware that does manage to get on the system.
 
 ### Universal Windows apps protections
 
@@ -223,13 +223,13 @@ Windows 10 has several important improvements to the security of the heap:
 
 - **Heap metadata hardening** for internal data structures that the heap uses, to improve protections against memory corruption.
 
-- **Heap allocation randomization**, that is, the use of randomized locations and sizes for heap memory allocations, which makes it more difficult for an attacker to predict the location of critical memory to overwrite. Specifically, Windows 10 adds a random offset to the address of a newly allocated heap, which makes the allocation much less predictable.
+- **Heap allocation randomization**, that is, the use of randomized locations and sizes for heap memory allocations, making it more difficult for an attacker to predict the location of critical memory to overwrite. Specifically, Windows 10 adds a random offset to the address of a newly allocated heap, which makes the allocation much less predictable.
 
 - **Heap guard pages** before and after blocks of memory, which work as trip wires. If an attacker attempts to write past a block of memory (a common technique known as a buffer overflow), the attacker will have to overwrite a guard page. Any attempt to modify a guard page is considered a memory corruption, and Windows 10 responds by instantly terminating the app.
 
 ### Kernel pool protections
 
-The operating system kernel in Windows sets aside two pools of memory, one which remains in physical memory ("nonpaged pool") and one which can be paged in and out of physical memory ("paged pool"). There are many mitigations that have been added over time, such as process quota pointer encoding; lookaside, delay free, and pool page cookies; and PoolIndex bounds checks. Windows 10 adds multiple "pool hardening" protections, such as integrity checks, that help protect the kernel pool against more advanced attacks.
+The operating system kernel in Windows sets aside two pools of memory, one which remains in physical memory ("nonpaged pool") and one that can be paged in and out of physical memory ("paged pool"). There are many mitigations that have been added over time, such as process quota pointer encoding; lookaside, delay free, and pool page cookies; and PoolIndex bounds checks. Windows 10 adds multiple "pool hardening" protections, such as integrity checks, that help protect the kernel pool against more advanced attacks.
 
 In addition to pool hardening, Windows 10 includes other kernel hardening features:
 
@@ -239,27 +239,27 @@ In addition to pool hardening, Windows 10 includes other kernel hardening featur
 
 - **Disabling of NT Virtual DOS Machine (NTVDM)**: The old NTVDM kernel module (for running 16-bit applications) is disabled by default, which neutralizes the associated vulnerabilities. (Enabling NTVDM decreases protection against Null dereference and other exploits.)
 
-- **Supervisor Mode Execution Prevention (SMEP)**: Helps prevent the kernel (the "supervisor") from executing code in user pages, a common technique used by attackers for local kernel elevation of privilege (EOP). This requires processor support found in Intel Ivy Bridge or later processors, or ARM with PXN support.
+- **Supervisor Mode Execution Prevention (SMEP)**: Helps prevent the kernel (the "supervisor") from executing code in user pages, a common technique used by attackers for local kernel elevation of privilege (EOP). This configuration requires processor support found in Intel Ivy Bridge or later processors, or ARM with PXN support.
 
 - **Safe unlinking:** Helps protect against pool overruns that are combined with unlinking operations to create an attack. Windows 10 includes global safe unlinking, which extends heap and kernel pool safe unlinking to all usage of LIST\_ENTRY and includes the "FastFail" mechanism to enable rapid and safe process termination.
 
-- **Memory reservations**: The lowest 64 KB of process memory is reserved for the system. Apps are not allowed to allocate that portion of the memory. This makes it more difficult for malware to use techniques such as "NULL dereference" to overwrite critical system data structures in memory.
+- **Memory reservations**: The lowest 64 KB of process memory is reserved for the system. Apps are not allowed to allocate that portion of the memory. This allocation for the system makes it more difficult for malware to use techniques such as "NULL dereference" to overwrite critical system data structures in memory.
 
 ### Control Flow Guard
 
-When applications are loaded into memory, they are allocated space based on the size of the code, requested memory, and other factors. When an application begins to execute code, it calls additional code located in other memory addresses. The relationships between the code locations are well known—they are written in the code itself—but previous to Windows 10, the flow between these locations was not enforced, which gave attackers the opportunity to change the flow to meet their needs.
+When applications are loaded into memory, they are allocated space based on the size of the code, requested memory, and other factors. When an application begins to execute code, it calls the other code located in other memory addresses. The relationships between the code locations are well known—they are written in the code itself—but previous to Windows 10, the flow between these locations was not enforced, which gave attackers the opportunity to change the flow to meet their needs.
 
 This kind of threat is mitigated in Windows 10 through the Control Flow Guard (CFG) feature. When a trusted application that was compiled to use CFG calls code, CFG verifies that the code location called is trusted for execution. If the location is not trusted, the application is immediately terminated as a potential security risk.
 
 An administrator cannot configure CFG; rather, an application developer can take advantage of CFG by configuring it when the application is compiled. Consider asking application developers and software vendors to deliver trustworthy Windows applications compiled with CFG enabled. For example, it can be enabled for applications written in C or C++, or applications compiled using Visual Studio 2015. For information about enabling CFG for a Visual Studio 2015 project, see [Control Flow Guard](/windows/win32/secbp/control-flow-guard).
 
-Of course, browsers are a key entry point for attacks, so Microsoft Edge, IE, and other Windows features take full advantage of CFG.
+Browsers are a key entry point for attacks, so Microsoft Edge, IE, and other Windows features take full advantage of CFG.
 
 ### Microsoft Edge and Internet Explorer 11
 
-Browser security is a critical component of any security strategy, and for good reason: the browser is the user's interface to the Internet, an environment with many malicious sites and content waiting to attack. Most users cannot perform at least part of their job without a browser, and many users are completely reliant on one. This reality has made the browser the common pathway from which malicious hackers initiate their attacks.
+Browser security is a critical component of any security strategy, and for good reason: the browser is the user's interface to the Internet, an environment with many malicious sites and content waiting to attack. Most users cannot perform at least part of their job without a browser, and many users are reliant on one. This reality has made the browser the common pathway from which malicious hackers initiate their attacks.
 
-All browsers enable some amount of extensibility to do things beyond the original scope of the browser. Two common examples of this are Flash and Java extensions that enable their respective applications to run inside a browser. Keeping Windows 10 secure for web browsing and applications, especially for these two content types, is a priority.
+All browsers enable some amount of extensibility to do things beyond the original scope of the browser. Two common examples are Flash and Java extensions that enable their respective applications to run inside a browser. Keeping Windows 10 secure for web browsing and applications, especially for these two content types, is a priority.
 
 Windows 10 includes an entirely new browser, Microsoft Edge. Microsoft Edge is more secure in multiple ways, especially:
 
@@ -267,15 +267,15 @@ Windows 10 includes an entirely new browser, Microsoft Edge. Microsoft Edge is m
 
 - **Runs 64-bit processes.** A 64-bit PC running an older version of Windows often runs in 32-bit compatibility mode to support older and less secure extensions. When Microsoft Edge runs on a 64-bit PC, it runs only 64-bit processes, which are much more secure against exploits.
 
-- **Includes Memory Garbage Collection (MemGC)**. This helps protect against use-after-free (UAF) issues.
+- **Includes Memory Garbage Collection (MemGC)**. This feature helps protect against use-after-free (UAF) issues.
 
 - **Designed as a Universal Windows app.** Microsoft Edge is inherently compartmentalized and runs in an AppContainer that sandboxes the browser from the system, data, and other apps. IE11 on Windows 10 can also take advantage of the same AppContainer technology through Enhanced Protect Mode. However, because IE11 can run ActiveX and BHOs, the browser and sandbox are susceptible to a much broader range of attacks than Microsoft Edge.
 
-- **Simplifies security configuration tasks.** Because Microsoft Edge uses a simplified application structure and a single sandbox configuration, there are fewer required security settings. In addition, Microsoft Edge default settings align with security best practices, which makes it more secure by default.
+- **Simplifies security configuration tasks.** Because Microsoft Edge uses a simplified application structure and a single sandbox configuration, there are fewer required security settings. In addition, Microsoft Edge default settings align with security best practices, making it more secure by default.
 
-In addition to Microsoft Edge, Microsoft includes IE11 in Windows 10, primarily for backwards-compatibility with websites and with binary extensions that do not work with Microsoft Edge. It should not be configured as the primary browser but rather as an optional or automatic switchover. We recommend using Microsoft Edge as the primary web browser because it provides compatibility with the modern web and the best possible security.
+In addition to Microsoft Edge, Microsoft includes IE11 in Windows 10, primarily for backwards-compatibility with websites and with binary extensions that do not work with Microsoft Edge. You cannot configure it as the primary browser but rather as an optional or automatic switchover. We recommend using Microsoft Edge as the primary web browser because it provides compatibility with the modern web and the best possible security.
 
-For sites that require IE11 compatibility, including those that require binary extensions and plug-ins, enable Enterprise mode and use the Enterprise Mode Site List to define which sites have the dependency. With this configuration, when Microsoft Edge identifies a site that requires IE11, users will automatically be switched to IE11.
+For sites that require IE11 compatibility, including those sites that require binary extensions and plug-ins, enable Enterprise mode and use the Enterprise Mode Site List to define which sites have the dependency. With this configuration, when Microsoft Edge identifies a site that requires IE11, users will automatically be switched to IE11.
 
 ### Functions that software vendors can use to build mitigations into apps
 
@@ -293,73 +293,28 @@ Some of the protections available in Windows 10 are provided through functions t
 | Child Process Restriction to restrict the ability to create child processes      | [UpdateProcThreadAttribute function](/windows/win32/api/processthreadsapi/nf-processthreadsapi-updateprocthreadattribute)<br>\[PROC\_THREAD\_ATTRIBUTE\_CHILD\_PROCESS\_POLICY\] |
 | Code Integrity Restriction to restrict image loading                             | [SetProcessMitigationPolicy function](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setprocessmitigationpolicy)<br>\[ProcessSignaturePolicy\] |
 | Win32k System Call Disable Restriction to restrict ability to use NTUser and GDI | [SetProcessMitigationPolicy function](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setprocessmitigationpolicy)<br>\[ProcessSystemCallDisablePolicy\] |
-| High Entropy ASLR for up to 1TB of variance in memory allocations                | [UpdateProcThreadAttribute function](/windows/win32/api/processthreadsapi/nf-processthreadsapi-updateprocthreadattribute)<br>\[PROCESS\_CREATION\_MITIGATION\_POLICY\_HIGH\_ENTROPY\_ASLR\_ALWAYS\_ON\] |
+| High Entropy ASLR for up to 1 TB of variance in memory allocations                | [UpdateProcThreadAttribute function](/windows/win32/api/processthreadsapi/nf-processthreadsapi-updateprocthreadattribute)<br>\[PROCESS\_CREATION\_MITIGATION\_POLICY\_HIGH\_ENTROPY\_ASLR\_ALWAYS\_ON\] |
 | Strict handle checks to raise immediate exception upon bad handle reference      | [UpdateProcThreadAttribute function](/windows/win32/api/processthreadsapi/nf-processthreadsapi-updateprocthreadattribute)<br>\[PROCESS\_CREATION\_MITIGATION\_POLICY\_STRICT\_HANDLE\_CHECKS\_ALWAYS\_ON\]    |
 | Extension point disable to block the use of certain third-party extension points | [UpdateProcThreadAttribute function](/windows/win32/api/processthreadsapi/nf-processthreadsapi-updateprocthreadattribute)<br>\[PROCESS\_CREATION\_MITIGATION\_POLICY\_EXTENSION\_POINT\_DISABLE\_ALWAYS\_ON\] |
 | Heap terminate on corruption to protect the system against a corrupted heap      | [UpdateProcThreadAttribute function](/windows/win32/api/processthreadsapi/nf-processthreadsapi-updateprocthreadattribute)<br>\[PROCESS\_CREATION\_MITIGATION\_POLICY\_HEAP\_TERMINATE\_ALWAYS\_ON\]  |
 
 ## Understanding Windows 10 in relation to the Enhanced Mitigation Experience Toolkit 
 
-You might already be familiar with the [Enhanced Mitigation Experience Toolkit (EMET)](https://support.microsoft.com/kb/2458544), which has since 2009 offered a variety of exploit mitigations, and an interface for configuring those mitigations. You can use this section to understand how EMET mitigations relate to those in Windows 10. Many of EMET's mitigations have been built into Windows 10, some with additional improvements. However, some EMET mitigations carry high performance cost, or appear to be relatively ineffective against modern threats, and therefore have not been brought into Windows 10.
+You might already be familiar with the [Enhanced Mitigation Experience Toolkit (EMET)](https://support.microsoft.com/topic/emet-mitigations-guidelines-b529d543-2a81-7b5a-d529-84b30e1ecee0), which has since 2009 offered various exploit mitigations, and an interface for configuring those mitigations. You can use this section to understand how EMET mitigations relate to those mitigations in Windows 10. Many of EMET's mitigations have been built into Windows 10, some with extra improvements. However, some EMET mitigations carry high-performance cost, or appear to be relatively ineffective against modern threats, and therefore have not been brought into Windows 10.
 
-Because many of EMET's mitigations and security mechanisms already exist in Windows 10 and have been improved, particularly those assessed to have high effectiveness at mitigating known bypasses, version 5.5*x* has been announced as the final major version release for EMET (see [Enhanced Mitigation Experience Toolkit](https://web.archive.org/web/20170928073955/https://technet.microsoft.com/en-US/security/jj653751)).
+Because many of EMET's mitigations and security mechanisms already exist in Windows 10 and have been improved, particularly the ones assessed to have high effectiveness at mitigating known bypasses, version 5.5*x* has been announced as the final major version release for EMET (see [Enhanced Mitigation Experience Toolkit](https://web.archive.org/web/20170928073955/https://technet.microsoft.com/en-US/security/jj653751)).
 
 The following table lists EMET features in relation to Windows 10 features.
 
 ### Table 5   EMET features in relation to Windows 10 features
 
-<table>
-<thead>
-<tr class="header">
-<th>Specific EMET features</th>
-<th>How these EMET features map<br />
-to Windows 10 features</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>DEP</p></li>
-<li><p>SEHOP</p></li>
-<li><p>ASLR (Force ASLR, Bottom-up ASLR)</p></li>
-</ul></td>
-<td><p>DEP, SEHOP and ASLR are included in Windows 10 as configurable features. See <a href="#table-2">Table 2</a>, earlier in this topic.</p>
-<p>You can install the ProcessMitigations PowerShell module to convert your EMET settings for these features into policies that you can apply to Windows 10.</p></td>
-</tr>
-<tr class="even">
-<td><ul>
-<li><p>Load Library Check (LoadLib)</p></li>
-<li><p>Memory Protection Check (MemProt)</p></li>
-</ul></td>
-<td>LoadLib and MemProt are supported in Windows 10, for all applications that are written to use these functions. See <a href="#functions-that-software-vendors-can-use-to-build-mitigations-into-apps">Table 4</a>, earlier in this topic.</td>
-</tr>
-<tr class="odd">
-<td><ul>
-<li><p>Null Page</p></li>
-</ul></td>
-<td>Mitigations for this threat are built into Windows 10, as described in the "Memory reservations" item in <a href="#kernel-pool-protections">Kernel pool protections</a>, earlier in this topic.</td>
-</tr>
-<tr class="even">
-<td><ul>
-<li><p>Heap Spray</p></li>
-<li><p>EAF</p></li>
-<li><p>EAF+</p></li>
-</ul></td>
-<td>Windows 10 does not include mitigations that map specifically to these EMET features because they have low impact in the current threat landscape, and do not significantly increase the difficulty of exploiting vulnerabilities. Microsoft remains committed to monitoring the security environment as new exploits appear and taking steps to harden the operating system against them.</td>
-</tr>
-<tr class="odd">
-<td><ul>
-<li><p>Caller Check</p></li>
-<li><p>Simulate Execution Flow</p></li>
-<li><p>Stack Pivot</p></li>
-<li><p>Deep Hooks (an ROP "Advanced Mitigation")</p></li>
-<li><p>Anti Detours (an ROP "Advanced Mitigation")</p></li>
-<li><p>Banned Functions (an ROP "Advanced Mitigation")</p></li>
-</ul></td>
-<td>Mitigated in Windows 10 with applications compiled with Control Flow Guard, as described in <a href="#control-flow-guard">Control Flow Guard</a>, earlier in this topic.</td>
-</tr>
-</tbody>
-</table>
+|Specific EMET features|How these EMET features map to Windows 10 features|
+|--- |--- |
+|<li>DEP<li>SEHOP<li>ASLR (Force ASLR, Bottom-up ASLR)|DEP, SEHOP, and ASLR are included in Windows 10 as configurable features. See [Table 2](#table-2), earlier in this topic.You can install the ProcessMitigations PowerShell module to convert your EMET settings for these features into policies that you can apply to Windows 10.|
+|<li>Load Library Check (LoadLib)<li>Memory Protection Check (MemProt)|LoadLib and MemProt are supported in Windows 10, for all applications that are written to use these functions. See [Table 4](#functions-that-software-vendors-can-use-to-build-mitigations-into-apps), earlier in this topic.|
+|Null Page|Mitigations for this threat are built into Windows 10, as described in the "Memory reservations" item in [Kernel pool protections](#kernel-pool-protections), earlier in this topic.|
+|<li>Heap Spray<li>EAF<li>EAF+|Windows 10 does not include mitigations that map specifically to these EMET features because they have low impact in the current threat landscape, and do not significantly increase the difficulty of exploiting vulnerabilities. Microsoft remains committed to monitoring the security environment as new exploits appear and taking steps to harden the operating system against them.|
+|<li>Caller Check<li>Simulate Execution Flow<li>Stack Pivot<li>Deep Hooks (an ROP "Advanced Mitigation")<li>Anti Detours (an ROP "Advanced Mitigation")<li>Banned Functions (an ROP "Advanced Mitigation")|Mitigated in Windows 10 with applications compiled with Control Flow Guard, as described in [Control Flow Guard](#control-flow-guard), earlier in this topic.|
 
 ### Converting an EMET XML settings file into Windows 10 mitigation policies
 
@@ -429,13 +384,13 @@ Examples:
     ConvertTo-ProcessMitigationPolicy -EMETFilePath policy.xml -OutputFilePath result.xml
     ```
 
-- **Audit and modify the converted settings (the output file)**: Additional cmdlets let you apply, enumerate, enable, disable, and save settings in the output file. For example, this cmdlet enables SEHOP and disables MandatoryASLR and DEPATL registry settings for Notepad:
+- **Audit and modify the converted settings (the output file)**: More cmdlets let you apply, enumerate, enable, disable, and save settings in the output file. For example, this cmdlet enables SEHOP and disables MandatoryASLR and DEPATL registry settings for Notepad:
 
     ```powershell
     Set-ProcessMitigation -Name notepad.exe -Enable SEHOP -Disable MandatoryASLR,DEPATL
     ```
 
-- **Convert Attack surface reduction (ASR) settings to a Code Integrity policy file**: If the input file contains any settings for EMET's Attack surface reduction (ASR) mitigation, the converter will also create a Code Integrity policy file. In this case, you can complete the merging, auditing, and deployment process for the Code Integrity policy, as described in [Deploy Device Guard: deploy code integrity policies](/windows/device-security/device-guard/deploy-windows-defender-application-control). This will enable protections on Windows 10 equivalent to EMET's ASR protections.
+- **Convert Attack surface reduction (ASR) settings to a Code Integrity policy file**: If the input file contains any settings for EMET's Attack surface reduction (ASR) mitigation, the converter will also create a Code Integrity policy file. In this case, you can complete the merging, auditing, and deployment process for the Code Integrity policy, as described in [Deploy Device Guard: deploy code integrity policies](/windows/device-security/device-guard/deploy-windows-defender-application-control). This completion will enable protections on Windows 10 equivalent to EMET's ASR protections.
 
 - **Convert Certificate Trust settings to enterprise certificate pinning rules**: If you have an EMET "Certificate Trust" XML file (pinning rules file), you can also use ConvertTo-ProcessMitigationPolicy to convert the pinning rules file into an enterprise certificate pinning rules file. Then you can finish enabling that file as described in [Enterprise Certificate Pinning](/windows/access-protection/enterprise-certificate-pinning). For example:
 

@@ -31,7 +31,7 @@ landingContent:
           - text: Use Enterprise Mode to improve compatibility
             url: /microsoft-edge/deploy/emie-to-improve-compatibility
           - text: Lifecycle FAQ - Internet Explorer
-            url: https://support.microsoft.com/help/17454/lifecycle-faq-internet-explorer
+            url: /lifecycle/faq/internet-explorer-microsoft-edge
       - linkListType: download
         links:
           - text: Download IE11 with Windows 10
@@ -123,7 +123,7 @@ landingContent:
           - text: Group Policy preferences for IE11
             url: ./ie11-deploy-guide/group-policy-preferences-and-ie11.md
           - text: Configure Group Policy preferences
-            url: https://support.microsoft.com/help/2898604/how-to-configure-group-policy-preference-settings-for-internet-explorer-11-in-windows-8.1-or-windows-server-2012-r2
+            url: /troubleshoot/browsers/how-to-configure-group-policy-preference-settings
           - text: Blocked out-of-date ActiveX controls
             url: ./ie11-deploy-guide/blocked-out-of-date-activex-controls.md
           - text: Out-of-date ActiveX control blocking

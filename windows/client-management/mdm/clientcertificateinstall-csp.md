@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 07/30/2021
 ---
 
@@ -227,11 +227,11 @@ Optional. Specifies where to keep the private key.
 
 The data type is an integer corresponding to one of the following values:  
 
-| Value | Description                                                                                                                                                                                           |
-|-------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1     | Private key protected by TPM.                                                                                                                                                                         |
-| 2     | Private key protected by phone TPM if the device supports TPM. All Windows Phone 8.1 devices support TPM and will treat value 2 as 1.                                                                 |
-| 3     | (Default) Private key saved in software KSP.                                                                                                                                                          |
+| Value | Description  |
+|---|---|
+| 1     | Private key protected by TPM. |
+| 2     | Private key protected by phone TPM if the device supports TPM.  |
+| 3     | (Default) Private key saved in software KSP.  |
 | 4     | Private key protected by Windows Hello for Business (formerly known as Microsoft Passport for Work). If this option is specified, the ContainerName must be specified, otherwise enrollment will fail. |
 
 Supported operations are Add, Get, Delete, and Replace.
@@ -361,7 +361,7 @@ The date type format is Null, meaning this node doesn’t contain a value.
 The only supported operation is Execute.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-aadkeyidentifierlist"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/AADKeyIdentifierList**  
-Optional. Specify the AAD Key Identifier List as a list of semicolon separated values. On Enroll, the values in this list are validated against the AAD Key present on the device. If no match is found, enrollment will fail.
+Optional. Specify the Azure AD Key Identifier List as a list of semicolon separated values. On Enroll, the values in this list are validated against the Azure AD Key present on the device. If no match is found, enrollment will fail.
 
 Data type is string.
 

@@ -12,6 +12,7 @@ ms.sitesec: library
 author: greg-lindsay
 ms.localizationpriority: medium
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Set up a single-app kiosk on Windows 10/11
@@ -19,7 +20,7 @@ ms.topic: article
 
 **Applies to**
 
-- Windows 10 Pro, Enterprise, and Education
+- Windows 10 Pro, Enterprise, and Education
 - Windows 11
 
 A single-app kiosk uses the Assigned Access feature to run a single app above the lock screen. When the kiosk account signs in, the app is launched automatically. The person using the kiosk cannot do anything on the device outside of the kiosk app.
@@ -204,7 +205,7 @@ Clear-AssignedAccess
 
 
 >[!IMPORTANT]
->When Exchange Active Sync (EAS) password restrictions are active on the device, the autologon feature does not work. This behavior is by design. For more informations, see [How to turn on automatic logon in Windows](https://support.microsoft.com/help/324737/how-to-turn-on-automatic-logon-in-windows).
+>When Exchange Active Sync (EAS) password restrictions are active on the device, the autologon feature does not work. This behavior is by design. For more informations, see [How to turn on automatic logon in Windows](/troubleshoot/windows-server/user-profiles-and-logon/turn-on-automatic-logon).
 
 When you use the **Provision kiosk devices** wizard in Windows Configuration Designer, you can configure the kiosk to run either a Universal Windows app or a Windows desktop application.
 

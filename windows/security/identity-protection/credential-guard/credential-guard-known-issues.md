@@ -1,7 +1,7 @@
 ---
 title: Windows Defender Credential Guard - Known issues (Windows)
 description: Windows Defender Credential Guard - Known issues in Windows Enterprise
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
@@ -12,7 +12,7 @@ ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
-ms.date: 08/17/2017
+ms.date: 01/26/2022
 ms.reviewer: 
 ---
 
@@ -24,16 +24,16 @@ ms.reviewer:
 - Windows Server 2016
 - Windows Server 2019
  
-Windows Defender Credential Guard has certain application requirements. Windows Defender Credential Guard blocks specific authentication capabilities. Therefore applications that require such capabilities will not function when it is enabled. For further information, see [Application requirements](/windows/access-protection/credential-guard/credential-guard-requirements#application-requirements). 
+Windows Defender Credential Guard has certain application requirements. Windows Defender Credential Guard blocks specific authentication capabilities. So applications that require such capabilities won't function when it's enabled. For more information, see [Application requirements](/windows/access-protection/credential-guard/credential-guard-requirements#application-requirements). 
 
 The following known issue has been fixed in the [Cumulative Security Update for November 2017](https://support.microsoft.com/help/4051033):
 
--  Scheduled tasks with domain user stored credentials fail to run when Credential Guard is enabled. The task fails and reports Event ID 104 with the following message: <br>
+-  Scheduled tasks with domain user-stored credentials fail to run when Credential Guard is enabled. The task fails and reports Event ID 104 with the following message: <br>
    "Task Scheduler failed to log on ‘\Test’. <br>
    Failure occurred in ‘LogonUserExEx’. <br>
    User Action: Ensure the credentials for the task are correctly specified. <br>
    Additional Data: Error Value: 2147943726. 2147943726: ERROR\_LOGON\_FAILURE (The user name or password is incorrect)."
--  When enabling NTLM audit on the domain controller, an Event ID 8004 with an indecipherable username format is logged. For example:
+-  When enabling NTLM audit on the domain controller, an Event ID 8004 with an indecipherable username format is logged. You also get a similar user name in a user logon failure event 4625 with error 0xC0000064 on the machine itself. For example:
    > Log Name: Microsoft-Windows-NTLM/Operational  
     Source: Microsoft-Windows-Security-Netlogon  
     Event ID: 8004  
@@ -70,9 +70,9 @@ The following known issues have been fixed by servicing releases made available 
 
 The following issue affects the Java GSS API. See the following Oracle bug database article: 
 
-- [JDK-8161921: Windows Defender Credential Guard does not allow sharing of TGT with Java](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=8161921)
+- [JDK-8161921: Windows Defender Credential Guard doesn't allow sharing of TGT with Java](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=8161921)
 
-When Windows Defender Credential Guard is enabled on Windows, the Java GSS API will not authenticate. This is expected behavior because Windows Defender Credential Guard blocks specific application authentication capabilities and will not provide the TGT session key to applications regardless of registry key settings. For further information see [Application requirements](/windows/access-protection/credential-guard/credential-guard-requirements#application-requirements).
+When Windows Defender Credential Guard is enabled on Windows, the Java GSS API won't authenticate. This is expected behavior because Windows Defender Credential Guard blocks specific application authentication capabilities and won't provide the TGT session key to applications regardless of registry key settings. For further information, see [Application requirements](/windows/access-protection/credential-guard/credential-guard-requirements#application-requirements).
 
 The following issue affects Cisco AnyConnect Secure Mobility Client:
 
@@ -85,15 +85,15 @@ The following issue affects McAfee Application and Change Control (MACC):
    
 
 The following issue affects AppSense Environment Manager.
-  For further information, see the following Knowledge Base article:
+  For more information, see the following Knowledge Base article:
 - [Installing AppSense Environment Manager on Windows machines causes LSAISO.exe to exhibit high CPU usage when Windows Defender Credential Guard is enabled](http://www.appsense.com/kb/160525073917945) <sup>[1]</sup> \**
 
 The following issue affects Citrix applications:
 - Windows machines exhibit high CPU usage with Citrix applications installed when Windows Defender Credential Guard is enabled. <sup>[1]</sup>
 
-<sup>[1]</sup> Products that connect to Virtualization Based Security (VBS) protected processes can cause Windows Defender Credential Guard-enabled Windows 10, Windows 11, Windows Server 2016 or Windows Server 2019 machines to exhibit high CPU usage. For technical and troubleshooting information, see the following Microsoft Knowledge Base article:
+<sup>[1]</sup> Products that connect to Virtualization Based Security (VBS) protected processes can cause Windows Defender Credential Guard-enabled Windows 10, Windows 11, Windows Server 2016, or Windows Server 2019 machines to exhibit high CPU usage. For technical and troubleshooting information, see the following Microsoft Knowledge Base article:
 
-- [KB4032786 High CPU usage in the LSAISO process on Windows](https://support.microsoft.com/help/4032786)
+- [KB4032786 High CPU usage in the LSAISO process on Windows](/troubleshoot/windows-client/performance/lsaiso-process-high-cpu-usage)
     
 For further technical information on LSAISO.exe, see the MSDN article: [Isolated User Mode (IUM) Processes](/windows/win32/procthread/isolated-user-mode--ium--processes)
     

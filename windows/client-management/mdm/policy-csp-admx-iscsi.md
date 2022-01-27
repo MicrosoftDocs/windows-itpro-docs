@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 12/17/2020
 ms.reviewer: 
 manager: dansimp
@@ -76,7 +76,7 @@ If disabled then new iSNS servers may be added and thus new targets discovered v
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not allow manual configuration of iSNS servers*
+-   GP Friendly name: *Do not allow manual configuration of iSNS servers*
 -   GP name: *iSCSIGeneral_RestrictAdditionalLogins*
 -   GP path: *System\iSCSI\iSCSI Target Discovery*
 -   GP ADMX file name: *iSCSI.admx*
@@ -119,7 +119,7 @@ If disabled then new target portals may be added and thus new targets discovered
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not allow manual configuration of target portals*
+-   GP Friendly name: *Do not allow manual configuration of target portals*
 -   GP name: *iSCSIGeneral_ChangeIQNName*
 -   GP path: *System\iSCSI\iSCSI Target Discovery*
 -   GP ADMX file name: *iSCSI.admx*
@@ -163,7 +163,7 @@ If disabled then the initiator CHAP secret may be changed.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not allow changes to initiator CHAP secret*
+-   GP Friendly name: *Do not allow changes to initiator CHAP secret*
 -   GP name: *iSCSISecurity_ChangeCHAPSecret*
 -   GP path: *System\iSCSI\iSCSI Security*
 -   GP ADMX file name: *iSCSI.admx*

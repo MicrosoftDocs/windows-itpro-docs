@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 08/13/2020
 ms.reviewer: 
 manager: dansimp
@@ -4774,7 +4774,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Security Settings*
+-   GP Friendly name: *Security Settings*
 -   GP name: *MMC_SecuritySettings_1*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
@@ -4828,7 +4828,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Security Settings*
+-   GP Friendly name: *Security Settings*
 -   GP name: *MMC_SecuritySettings_2*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Resultant Set of Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
@@ -4882,7 +4882,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Security Templates*
+-   GP Friendly name: *Security Templates*
 -   GP name: *MMC_SecurityTemplates*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
@@ -4936,7 +4936,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Send Console Message*
+-   GP Friendly name: *Send Console Message*
 -   GP name: *MMC_SendConsoleMessage*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
@@ -4990,7 +4990,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Server Manager*
+-   GP Friendly name: *Server Manager*
 -   GP name: *MMC_ServerManager*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
@@ -5044,7 +5044,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Service Dependencies*
+-   GP Friendly name: *Service Dependencies*
 -   GP name: *MMC_ServiceDependencies*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
@@ -5098,7 +5098,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Services*
+-   GP Friendly name: *Services*
 -   GP name: *MMC_Services*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
@@ -5152,7 +5152,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Shared Folders*
+-   GP Friendly name: *Shared Folders*
 -   GP name: *MMC_SharedFolders*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
@@ -5206,7 +5206,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Shared Folders Ext*
+-   GP Friendly name: *Shared Folders Ext*
 -   GP name: *MMC_SharedFolders_Ext*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
@@ -5260,7 +5260,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Software Installation (Computers)*
+-   GP Friendly name: *Software Installation (Computers)*
 -   GP name: *MMC_SoftwareInstalationComputers_1*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
@@ -5314,7 +5314,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Software Installation (Computers)*
+-   GP Friendly name: *Software Installation (Computers)*
 -   GP name: *MMC_SoftwareInstalationComputers_2*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Resultant Set of Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
@@ -5368,7 +5368,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Software Installation (Users)*
+-   GP Friendly name: *Software Installation (Users)*
 -   GP name: *MMC_SoftwareInstallationUsers_1*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
@@ -5422,7 +5422,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Software Installation (Users)*
+-   GP Friendly name: *Software Installation (Users)*
 -   GP name: *MMC_SoftwareInstallationUsers_2*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Resultant Set of Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
@@ -5476,7 +5476,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *System Information*
+-   GP Friendly name: *System Information*
 -   GP name: *MMC_SysInfo*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
@@ -5530,7 +5530,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *System Properties*
+-   GP Friendly name: *System Properties*
 -   GP name: *MMC_SysProp*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Extension snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
@@ -5584,7 +5584,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *TPM Management*
+-   GP Friendly name: *TPM Management*
 -   GP name: *MMC_TPMManagement*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
@@ -5638,7 +5638,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Telephony*
+-   GP Friendly name: *Telephony*
 -   GP name: *MMC_Telephony*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
@@ -5692,7 +5692,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remote Desktop Services Configuration*
+-   GP Friendly name: *Remote Desktop Services Configuration*
 -   GP name: *MMC_TerminalServices*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
@@ -5746,7 +5746,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *WMI Control*
+-   GP Friendly name: *WMI Control*
 -   GP name: *MMC_WMI*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
@@ -5800,7 +5800,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Windows Firewall with Advanced Security*
+-   GP Friendly name: *Windows Firewall with Advanced Security*
 -   GP name: *MMC_WindowsFirewall*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
@@ -5854,7 +5854,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Windows Firewall with Advanced Security*
+-   GP Friendly name: *Windows Firewall with Advanced Security*
 -   GP name: *MMC_WindowsFirewall_GP*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
@@ -5908,7 +5908,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Wired Network (IEEE 802.3) Policies*
+-   GP Friendly name: *Wired Network (IEEE 802.3) Policies*
 -   GP name: *MMC_WiredNetworkPolicy*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
@@ -5962,7 +5962,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Wireless Monitor*
+-   GP Friendly name: *Wireless Monitor*
 -   GP name: *MMC_WirelessMon*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins*
 -   GP ADMX file name: *MMCSnapins.admx*
@@ -6016,7 +6016,7 @@ When a snap-in is prohibited, it does not appear in the Add/Remove Snap-in windo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Wireless Network (IEEE 802.11) Policies*
+-   GP Friendly name: *Wireless Network (IEEE 802.11) Policies*
 -   GP name: *MMC_WirelessNetworkPolicy*
 -   GP path: *Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\Group Policy\Group Policy snap-in extensions*
 -   GP ADMX file name: *MMCSnapins.admx*
