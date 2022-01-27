@@ -1,5 +1,5 @@
 ---
-title: Understanding WDAC secure settings.
+title: Understanding Windows Defender Application Control (WDAC) secure settings
 description: Learn about secure settings in Windows Defender Application Control.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
