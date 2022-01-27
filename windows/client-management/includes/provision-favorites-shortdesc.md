@@ -18,4 +18,4 @@ You can customize the Favorites list in the Microsoft Edge browser. Customizatio
 
 This customized favorite is the final version. 
 
-You can't add folders again for organizing, and adding or removing any of the favorites configured.
+
