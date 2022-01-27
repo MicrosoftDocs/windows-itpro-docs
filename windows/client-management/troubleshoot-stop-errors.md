@@ -129,7 +129,7 @@ More information on how to use Dumpchk.exe to check your dump files:
 
 ### Pagefile Settings
 
-- [Introduction of page file in Long-Term Servicing Channel and Semi-Annual Channel of Windows](/windows/client-management/introduction-page-file) 
+- [Introduction of page file in Long-Term Servicing Channel and General Availability Channel of Windows](/windows/client-management/introduction-page-file) 
 - [How to determine the appropriate page file size for 64-bit versions of Windows](/windows/client-management/determine-appropriate-page-file-size) 
 - [How to generate a kernel or a complete memory dump file in Windows Server 2008 and Windows Server 2008 R2](/windows/client-management/generate-kernel-or-complete-crash-dump)
 
