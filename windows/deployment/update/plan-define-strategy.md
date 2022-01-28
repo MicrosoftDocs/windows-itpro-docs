@@ -1,7 +1,7 @@
 ---
 title: Define update strategy
 description: Two examples of a calendar-based approach to consistent update installation
-keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, tools
+keywords: updates, servicing, current, deployment, General Availability Channel, feature, quality, rings, tools
 ms.prod: w10
 ms.mktglfcycl: manage
 author: jaimeo

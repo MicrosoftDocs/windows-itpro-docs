@@ -1,7 +1,7 @@
 ---
 title: Windows Updates using forward and reverse differentials
 description: A technique to produce compact software updates optimized for any origin and destination revision pair
-keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, tools
+keywords: updates, servicing, current, deployment, General Availability Channel, feature, quality, rings, insider, tools
 ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro
