@@ -9,7 +9,7 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 3/20/2019
+ms.date: 1/14/2022
 ms.reviewer: 
 ms.technology: windows-sec
 ---
@@ -21,6 +21,14 @@ Microsoft is committed to optimizing the security of its products and services. 
 ## Certified Products
 
 The product releases below are currently certified against the cited Protection Profile, as listed on the [Common Criteria Portal](https://www.commoncriteriaportal.org/products/).  The Security Target describes the product edition(s) in scope, the security functionality in the product, and the assurance measures from the Protection Profile used as part of the evaluation.  The Administrative Guide provides guidance on configuring the product to match the evaluated configuration.  The Certification Report or Validation Report documents the results of the evaluation by the validation team, with the Assurance Activity Report providing details on the evaluator's actions.
+
+### Microsoft Windows 10, Windows Server version 2004 (May 2020 Update); Microsoft Windows Server Core Datacenter (Azure Frabic Controller); Microsoft Windows Server Core Datacenter (Azure Stack)
+Certified against the Protection Profile for General Purpose Operating Systems, including the Extended Package for Wireless Local Area Network Clients and the Module for Virtual Private Network Clients.
+
+- [Security Target](https://download.microsoft.com/download/a/5/6/a5650848-e86a-4554-bb13-1ad6ff2d45d2/Windows%2010%202004%20GP%20OS%20Security%20Target.pdf)
+- [Administrative Guide](https://download.microsoft.com/download/4/a/6/4a66a459-3c73-4c34-84bb-92cb20301206/Windows%2010%202004%20GP%20OS%20Administrative%20Guide.pdf)
+- [Validation Report](https://download.microsoft.com/download/1/c/b/1cb65e32-f87d-41dd-bc29-88dc943fad9d/Windows%2010%202004%20GP%20OS%20Validation%20Reports.pdf)
+- [Assurance Activity Report](https://download.microsoft.com/download/3/2/4/324562b6-0917-4708-8f9d-8d2d12859839/Windows%2010%202004%20GP%20OS%20Assurance%20Activity%20Report-Public%20.pdf)
 
 ### Microsoft Windows Server, Windows 10 version 1909 (November 2019 Update), Microsoft Windows Server 2019 (version 1809) Hyper-V
 Certified against the Protection Profile for Virtualization, including the Extended Package for Server Virtualization.

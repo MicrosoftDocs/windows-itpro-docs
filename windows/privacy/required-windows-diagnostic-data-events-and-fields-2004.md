@@ -7269,7 +7269,7 @@ The following fields are available:
 - **oSVersion**  Build number of the device.
 - **paused**  Indicates whether the device is paused.
 - **rebootRequestSucceeded**  Reboot Configuration Service Provider (CSP) call success status.
-- **sacDevice**  Device in the semi-annual channel.
+- **sacDevice**  Device in the General Availability Channel.
 - **wUfBConnected**  Result of WUfB connection check.
 
 
