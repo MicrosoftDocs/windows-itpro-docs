@@ -16,9 +16,9 @@ ms.topic: article
 # What's new in Windows 10 Enterprise LTSC 2019
 
 **Applies to**
--   Windows 10 Enterprise LTSC 2019
+-   Windows 10 Enterprise LTSC 2019
 
-This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2019, compared to Windows 10 Enterprise LTSC 2016 (LTSB). For a brief description of the LTSC servicing channel and associated support, see [Windows 10 Enterprise LTSC](index.md).
+This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2019, compared to Windows 10 Enterprise LTSC 2016 (LTSB). For a brief description of the LTSC servicing channel and associated support, see [Windows 10 Enterprise LTSC](index.md).
 
 >[!NOTE]
 >Features in Windows 10 Enterprise LTSC 2019 are equivalent to Windows 10, version 1809. 
@@ -32,7 +32,7 @@ Windows 10 Enterprise LTSC 2019 builds on Windows 10 Pro, version 1809 adding pr
 The Windows 10 Enterprise LTSC 2019 release is an important release for LTSC users because it includes the cumulative enhancements provided in Windows 10 versions 1703, 1709, 1803, and 1809. Details about these enhancements are provided below. 
 
 >[!IMPORTANT]
->The LTSC release is [intended for special use devices](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/LTSC-What-is-it-and-when-should-it-be-used/ba-p/293181). Support for LTSC by apps and tools that are designed for the semi-annual channel release of Windows 10 might be limited.
+>The LTSC release is [intended for special use devices](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/LTSC-What-is-it-and-when-should-it-be-used/ba-p/293181). Support for LTSC by apps and tools that are designed for the General Availability Channel release of Windows 10 might be limited.
 
 ## Microsoft Intune
 
@@ -200,8 +200,6 @@ New features in [Windows Hello for Business](/windows/security/identity-protecti
 
 - You can now reset a forgotten PIN without deleting company managed data or apps on devices managed by [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune).
 
-- For Windows Phone devices, an administrator is able to initiate a remote PIN reset through the Intune portal.
-
 - For Windows desktops, users are able to reset a forgotten PIN through **Settings > Accounts > Sign-in options**. For more details, check out [What if I forget my PIN?](/windows/security/identity-protection/hello-for-business/hello-features#pin-reset).
 
 [Windows Hello](/windows/security/identity-protection/hello-for-business/hello-features) now supports FIDO 2.0 authentication for Azure AD Joined Windows 10 devices and has enhanced support for shared devices, as described in [Kiosk configuration](#kiosk-configuration). 
@@ -210,13 +208,13 @@ New features in [Windows Hello for Business](/windows/security/identity-protecti
 
 - Support for S/MIME with Windows Hello for Business and APIs for non-Microsoft identity lifecycle management solutions.
 
-- Windows Hello is part of the account protection pillar in Windows Defender Security Center. Account Protection will encourage password users to set up Windows Hello Face, Fingerprint or PIN for faster sign in, and will notify Dynamic lock users if Dynamic lock has stopped working because their phone or device Bluetooth is off.
+- Windows Hello is part of the account protection pillar in Windows Defender Security Center. Account Protection will encourage password users to set up Windows Hello Face, Fingerprint or PIN for faster sign in, and will notify Dynamic lock users if Dynamic lock has stopped working because their device Bluetooth is off.
 
 - You can set up Windows Hello from lock screen for MSA accounts. We’ve made it easier for Microsoft account users to set up Windows Hello on their devices for faster and more secure sign-in. Previously, you had to navigate deep into Settings to find Windows Hello. Now, you can set up Windows Hello Face, Fingerprint or PIN straight from your lock screen by clicking the Windows Hello tile under Sign-in options.
 
 - New [public API](/uwp/api/windows.security.authentication.web.core.webauthenticationcoremanager.findallaccountsasync#Windows_Security_Authentication_Web_Core_WebAuthenticationCoreManager_FindAllAccountsAsync_Windows_Security_Credentials_WebAccountProvider_) for secondary account SSO for a particular identity provider.
 
-- It is easier to set up Dynamic lock, and WD SC actionable alerts have been added when Dynamic lock stops working (ex: phone Bluetooth is off).
+- It is easier to set up Dynamic lock, and WD SC actionable alerts have been added when Dynamic lock stops working (ex: device Bluetooth is off).
  
 For more information, see: [Windows Hello and FIDO2 Security Keys enable secure and easy authentication for shared devices](https://blogs.windows.com/business/2018/04/17/windows-hello-fido2-security-keys/#OdKBg3pwJQcEKCbJ.97)
 
@@ -348,7 +346,7 @@ If you have shared devices deployed in your work place, **Fast sign-in** enables
 
 **To enable fast sign-in:**
 
-1. Set up a shared or guest device with Windows 10, version 1809 or Windows 10 Enterprise LTSC 2019.
+1. Set up a shared or guest device with Windows 10, version 1809 or Windows 10 Enterprise LTSC 2019.
 
 2. Set the Policy CSP, and the **Authentication** and **EnableFastFirstSignIn** policies to enable fast sign-in.
 
@@ -376,7 +374,7 @@ Until now, Windows logon only supported the use of identities federated to ADFS 
 ### Upgrade Readiness
 
 >[!IMPORTANT]
->Upgrade Readiness will not allow you to assess an upgrade to an LTSC release (LTSC builds are not available as target versions). However, you can enroll devices running LTSC to plan for an upgrade to a semi-annual channel release.
+>Upgrade Readiness will not allow you to assess an upgrade to an LTSC release (LTSC builds are not available as target versions). However, you can enroll devices running LTSC to plan for an upgrade to a General Availability Channel release.
 
 Upgrade Readiness helps you ensure that applications and drivers are ready for a Windows 10 upgrade. The solution provides up-to-date application and driver inventory, information about known issues, troubleshooting guidance, and per-device readiness and tracking details. The Upgrade Readiness tool moved from public preview to general availability on March 2, 2017.
 
@@ -586,11 +584,11 @@ Users attempt to connect to a Miracast receiver as they did previously. When the
 
 If you have a device that has been updated to Windows 10 Enterprise LTSC 2019, then you automatically have this new feature. To take advantage of it in your environment, you need to ensure the following is true within your deployment:
 
-- The device (PC, phone, or Surface Hub) needs to be running Windows 10, version 1703, Windows 10 Enterprise LTSC 2019, or a later OS.
+- The device (PC or Surface Hub) needs to be running Windows 10, version 1703, Windows 10 Enterprise LTSC 2019, or a later OS.
 
-- A Windows PC or Surface Hub can act as a Miracast over Infrastructure *receiver*. A Windows PC or phone can act as a Miracast over Infrastructure *source*.
+- A Windows PC or Surface Hub can act as a Miracast over Infrastructure *receiver*. A Windows device can act as a Miracast over Infrastructure *source*.
     - As a Miracast receiver, the PC or Surface Hub must be connected to your enterprise network via either Ethernet or a secure Wi-Fi connection (e.g. using either WPA2-PSK or WPA2-Enterprise security). If the Hub is connected to an open Wi-Fi connection, Miracast over Infrastructure will disable itself.
-    - As a Miracast source, the  PC or phone must be connected to the same enterprise network via Ethernet or a secure Wi-Fi connection.
+    - As a Miracast source, the device must be connected to the same enterprise network via Ethernet or a secure Wi-Fi connection.
 
 - The DNS Hostname (device name) of the device needs to be resolvable via your DNS servers. You can achieve this by either allowing your device to register automatically via Dynamic DNS, or by manually creating an A or AAAA record for the device's hostname.
 

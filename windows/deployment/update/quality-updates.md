@@ -1,7 +1,7 @@
 ---
 title: Monthly quality updates (Windows 10/11)
 description: Learn about Windows monthly quality updates to stay productive and protected.
-keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, tools
+keywords: updates, servicing, current, deployment, General Availability Channel, feature, quality, rings, insider, tools
 ms.prod: w10
 ms.mktglfcycl: manage
 author: greg-lindsay
@@ -61,7 +61,7 @@ Some key considerations about OOB releases include:
 
 ## More information
 
-For additional details about the different types of Windows updates like critical, security, drivers, service packs, and more, please see the [Description of the standard terminology used to describe Microsoft software updates](https://support.microsoft.com/help/824684) and [Introducing a new deployment service for driver and firmware updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-a-new-deployment-service-for-driver-and-firmware/ba-p/2176942). 
+For additional details about the different types of Windows updates like critical, security, drivers, service packs, and more, please see the [Description of the standard terminology used to describe Microsoft software updates](/troubleshoot/windows-client/deployment/standard-terminology-software-updates) and [Introducing a new deployment service for driver and firmware updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-a-new-deployment-service-for-driver-and-firmware/ba-p/2176942). 
 
 ## Related topics
 

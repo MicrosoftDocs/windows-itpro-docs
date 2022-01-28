@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: dansimp
-ms.date: 12/03/2021
+ms.date: 01/03/2022
 ms.reviewer:
 manager: dansimp
 ms.collection: highpri
@@ -49,11 +49,12 @@ For this policy to work, you must verify that the MDM service provider allows th
 ## Verify auto-enrollment requirements and settings
 To ensure that the auto-enrollment feature is working as expected, you must verify that various requirements and settings are configured correctly.
 The following steps demonstrate required settings using the Intune service:
-1. Verify that the user who is going to enroll the device has a valid Intune license.
 
-    ![Intune license verification.](images/auto-enrollment-intune-license-verification.png)
+1. Verify that the user who is going to enroll the device has a valid Endpoint Protection Manager license.
 
-2. Verify that auto-enrollment is activated for those users who are going to enroll the devices into Intune. For additional details, see [Azure AD and Microsoft Intune: Automatic MDM enrollment in the new Portal](./azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal.md).
+   :::image type="content" alt-text="Intune license verification." source="images/auto-enrollment-intune-license-verification.png" lightbox="images/auto-enrollment-intune-license-verification.png":::
+
+2. Verify that auto-enrollment is activated for those users who are going to enroll the devices into Mobile Device Management (MDM). For additional details, see [Azure AD and Microsoft Intune: Automatic MDM enrollment in the new Portal](./azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal.md).
 
     ![Auto-enrollment activation verification.](images/auto-enrollment-activation-verification.png)
 
@@ -83,7 +84,7 @@ The following steps demonstrate required settings using the Intune service:
 
 6. Some tenants might have both **Microsoft Intune** and **Microsoft Intune Enrollment** under **Mobility**. Make sure that your auto-enrollment settings are configured under **Microsoft Intune** instead of **Microsoft Intune Enrollment**.
 
-    ![Mobility setting MDM intune.](images/auto-enrollment-microsoft-intune-setting.png)
+   :::image type="content" alt-text="Mobility setting MDM intune." source="images/auto-enrollment-microsoft-intune-setting.png" lightbox="images/auto-enrollment-microsoft-intune-setting.png":::
 
 7. Verify that the *Enable Automatic MDM enrollment using default Azure AD credentials* group policy (**Local Group Policy Editor > Computer Configuration > Policies > Administrative Templates > Windows Components > MDM**) is properly deployed to all devices which should be enrolled into Intune.
 You may contact your domain administrators to verify if the group policy has been deployed successfully.
@@ -92,7 +93,7 @@ You may contact your domain administrators to verify if the group policy has bee
 
 9. Verify that Microsoft Intune should allow enrollment of Windows devices.
 
-    ![Enrollment of Windows devices.](images/auto-enrollment-enrollment-of-windows-devices.png)
+   :::image type="content" alt-text="Enrollment of Windows devices." source="images/auto-enrollment-enrollment-of-windows-devices.png" lightbox="images/auto-enrollment-enrollment-of-windows-devices.png":::
 
 ## Configure the auto-enrollment Group Policy for a single PC
 
@@ -113,12 +114,11 @@ Requirements:
 
 3. In **Local Computer Policy**, click **Administrative Templates** > **Windows Components** > **MDM**.
 
-    > [!div class="mx-imgBorder"]
-    > ![MDM policies.](images/autoenrollment-mdm-policies.png)
+   :::image type="content" alt-text="MDM policies." source="images/autoenrollment-mdm-policies.png" lightbox="images/autoenrollment-mdm-policies.png":::
 
 4. Double-click **Enable automatic MDM enrollment using default Azure AD credentials** (previously called **Auto MDM Enrollment with AAD Token** in Windows 10, version 1709). For ADMX files in Windows 10, version 1903 and later, select **User Credential** as the Selected Credential Type to use.
 
-   ![MDM autoenrollment policy.](images/autoenrollment-policy.png)
+   :::image type="content" alt-text="MDM autoenrollment policy." source="images/autoenrollment-policy.png" lightbox="images/autoenrollment-policy.png":::
 
 5. Click **Enable**, and select **User Credential** from the dropdown **Select Credential Type to Use**, then click **OK**.
 
@@ -159,7 +159,7 @@ Requirements:
 
 3. In **Task Scheduler Library**, open **Microsoft > Windows** , then click **EnterpriseMgmt**.
 
-    ![Auto-enrollment scheduled task.](images/autoenrollment-scheduled-task.png)
+   :::image type="content" alt-text="Auto-enrollment scheduled task." source="images/autoenrollment-scheduled-task.png" lightbox="images/autoenrollment-scheduled-task.png":::
 
     To see the result of the task, move the scroll bar to the right to see the **Last Run Result**. Note that **0x80180026** is a failure message (MENROLL\_E_DEVICE\_MANAGEMENT_BLOCKED). You can see the logs in the **History** tab.
 
@@ -222,7 +222,7 @@ Requirements:
 
 5. Copy PolicyDefinitions folder to **\\SYSVOL\contoso.com\policies\PolicyDefinitions**.
 
-   If this folder does not exist, then be aware that you will be switching to a [central policy store](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra) for your entire domain.
+   If this folder does not exist, then be aware that you will be switching to a [central policy store](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) for your entire domain.
 
 6. Wait for the SYSVOL DFSR replication to be completed for the policy to be available.
 
@@ -249,21 +249,21 @@ To collect Event Viewer logs:
 
 3. Search for event ID 75, which represents a successful auto-enrollment. Here is an example screenshot that shows the auto-enrollment completed successfully:
 
-    ![Event ID 75.](images/auto-enrollment-troubleshooting-event-id-75.png)
+   :::image type="content" alt-text="Event ID 75." source="images/auto-enrollment-troubleshooting-event-id-75.png"  lightbox="images/auto-enrollment-troubleshooting-event-id-75.png":::
 
     If you cannot find event ID 75 in the logs, it indicates that the auto-enrollment failed. This can happen because of the following reasons:
 
     - The enrollment failed with error. In this case, search for event ID 76, which represents failed auto-enrollment. Here is an example screenshot that shows that the auto-enrollment failed:
 
-      ![Event ID 76.](images/auto-enrollment-troubleshooting-event-id-76.png)
+      :::image type="content" alt-text="Event ID 76." source="images/auto-enrollment-troubleshooting-event-id-76.png" lightbox="images/auto-enrollment-troubleshooting-event-id-76.png":::
 
-      To troubleshoot, check the error code that appears in the event. See [Troubleshooting Windows device enrollment problems in Microsoft Intune](https://support.microsoft.com/en-ph/help/4469913/troubleshooting-windows-device-enrollment-problems-in-microsoft-intune) for more information.
+      To troubleshoot, check the error code that appears in the event. See [Troubleshooting Windows device enrollment problems in Microsoft Intune](/troubleshoot/mem/intune/troubleshoot-windows-enrollment-errors) for more information.
 
     - The auto-enrollment did not trigger at all. In this case, you will not find either event ID 75 or event ID 76. To know the reason, you must understand the internal mechanisms happening on the device as described in the following section.
 
       The auto-enrollment process is triggered by a task (**Microsoft > Windows > EnterpriseMgmt**) within the task-scheduler. This task appears if the *Enable automatic MDM enrollment using default Azure AD credentials* group policy (**Computer Configuration > Policies > Administrative Templates > Windows Components > MDM**) is successfully deployed to the target machine as shown in the following screenshot:
 
-      ![Task scheduler.](images/auto-enrollment-task-scheduler.png)
+      :::image type="content" alt-text="Task scheduler." source="images/auto-enrollment-task-scheduler.png" lightbox="images/auto-enrollment-task-scheduler.png":::
 
     > [!Note]
     > This task isn't visible to standard users - run Scheduled Tasks with administrative credentials to find the task.
@@ -272,24 +272,24 @@ To collect Event Viewer logs:
     **Applications and Services Logs > Microsoft > Windows > Task Scheduler > Operational**.
     Look for an entry where the task scheduler created by enrollment client for automatically enrolling in MDM from AAD is triggered by event ID 107.
 
-    ![Event ID 107.](images/auto-enrollment-event-id-107.png)
+    :::image type="content" alt-text="Event ID 107." source="images/auto-enrollment-event-id-107.png" lightbox="images/auto-enrollment-event-id-107.png":::
 
     When the task is completed, a new event ID 102 is logged.
 
-    ![Event ID 102.](images/auto-enrollment-event-id-102.png)
+    :::image type="content" alt-text="Event ID 102." source="images/auto-enrollment-event-id-102.png" lightbox="images/auto-enrollment-event-id-102.png":::
 
     Note that the task scheduler log displays event ID 102 (task completed) regardless of the auto-enrollment success or failure. This means that the task scheduler log is only useful to confirm if the auto-enrollment task is triggered or not. It does not indicate the success or failure of auto-enrollment.
 
     If you cannot see from the log that task Schedule created by enrollment client for automatically enrolling in MDM from AAD is initiated, there is possibly issue with the group policy. Immediately run the command `gpupdate /force` in command prompt to get the GPO applied. If this still does not help, further troubleshooting on the Active Directory is required.
     One frequently seen error is related to some outdated enrollment entries in the registry on the target client device (**HKLM > Software > Microsoft > Enrollments**). If a device has been enrolled (can be any MDM solution and not only Intune), some enrollment information added into the registry is seen:
 
-    ![Outdated enrollment entries.](images/auto-enrollment-outdated-enrollment-entries.png)
+    :::image type="content" alt-text="Outdated enrollment entries." source="images/auto-enrollment-outdated-enrollment-entries.png" lightbox="images/auto-enrollment-outdated-enrollment-entries.png":::
 
     By default, these entries are removed when the device is un-enrolled, but occasionally the registry key remains even after un-enrollment. In this case, `gpupdate /force` fails to initiate the auto-enrollment task and error code 2149056522 is displayed in the **Applications and Services Logs > Microsoft > Windows > Task Scheduler > Operational** event log file under event ID 7016.
 
     A resolution to this issue is to remove the registry key manually. If you do not know which registry key to remove, go for the key which displays most entries as the screenshot above. All other keys will display fewer entries as shown in the following screenshot:
 
-    ![Manually deleted entries.](images/auto-enrollment-activation-verification-less-entries.png)
+    :::image type="content" alt-text="Manually deleted entries." source="images/auto-enrollment-activation-verification-less-entries.png" lightbox="images/auto-enrollment-activation-verification-less-entries.png":::
 
 ### Related topics
 
@@ -298,7 +298,7 @@ To collect Event Viewer logs:
 - [Link a Group Policy Object](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732979(v=ws.11))
 - [Filter Using Security Groups](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc752992(v=ws.11))
 - [Enforce a Group Policy Object Link](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753909(v=ws.11))
-- [Group Policy Central Store](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)
+- [Group Policy Central Store](/troubleshoot/windows-client/group-policy/create-and-manage-central-store)
 - [Getting started with Cloud Native Windows Endpoints](/mem/cloud-native-windows-endpoints)
 - [A Framework for Windows endpoint management transformation](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/a-framework-for-windows-endpoint-management-transformation/ba-p/2460684)
 - [Success with remote Windows Autopilot and Hybrid Azure Active Director join](https://techcommunity.microsoft.com/t5/intune-customer-success/success-with-remote-windows-autopilot-and-hybrid-azure-active/ba-p/2749353)

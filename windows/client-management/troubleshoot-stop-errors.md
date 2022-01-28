@@ -85,7 +85,7 @@ To troubleshoot Stop error messages, follow these general steps:
      >
      >To do this, see [How to perform a clean boot in Windows](https://support.microsoft.com/help/929135).
      >
-     >You can disable a driver by following the steps in [How to temporarily deactivate the kernel mode filter driver in Windows](https://support.microsoft.com/help/816071).
+     >You can disable a driver by following the steps in [How to temporarily deactivate the kernel mode filter driver in Windows](/troubleshoot/windows-server/performance/deactivate-kernel-mode-filter-driver).
      >
      >You may also want to consider the option of rolling back changes or reverting to the last-known working state. For more information, see [Roll Back a Device Driver to a Previous Version](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732648(v=ws.11)).
 
@@ -129,9 +129,9 @@ More information on how to use Dumpchk.exe to check your dump files:
 
 ### Pagefile Settings
 
-- [Introduction of page file in Long-Term Servicing Channel and Semi-Annual Channel of Windows](https://support.microsoft.com/help/4133658) 
-- [How to determine the appropriate page file size for 64-bit versions of Windows](https://support.microsoft.com/help/2860880) 
-- [How to generate a kernel or a complete memory dump file in Windows Server 2008 and Windows Server 2008 R2](https://support.microsoft.com/help/969028)
+- [Introduction of page file in Long-Term Servicing Channel and General Availability Channel of Windows](/windows/client-management/introduction-page-file) 
+- [How to determine the appropriate page file size for 64-bit versions of Windows](/windows/client-management/determine-appropriate-page-file-size) 
+- [How to generate a kernel or a complete memory dump file in Windows Server 2008 and Windows Server 2008 R2](/windows/client-management/generate-kernel-or-complete-crash-dump)
 
 ### Memory dump analysis
 
@@ -169,13 +169,13 @@ You can use the tools such as Windows Software Development KIT (SDK) and Symbols
 
 6. Click on **Open Crash Dump**, and then open the memory.dmp file that you copied. See the example below.
 
-    ![WinDbg img.](images/windbg.png)
+   :::image type="content" alt-text="WinDbg img." source="images/windbg.png" lightbox="images/windbg.png":::
 
 7. There should be a link that says **!analyze -v** under **Bugcheck Analysis**. Click that link. This will enter the command !analyze -v in the prompt at the bottom of the page.
 
 8. A detailed bugcheck analysis will appear. See the example below.
 
-    ![Bugcheck analysis.](images/bugcheck-analysis.png)
+    :::image type="content" alt-text="Bugcheck analysis." source="images/bugcheck-analysis.png" lightbox="images/bugcheck-analysis.png":::
 
 9. Scroll down to the section where it says **STACK_TEXT**. There will be rows of numbers with each row followed by a colon and some text. That text should tell you what DLL is causing the crash and if applicable what service is crashing the DLL.
 

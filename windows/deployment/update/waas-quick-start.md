@@ -1,7 +1,7 @@
 ---
 title: Quick guide to Windows as a service (Windows 10)
 description: In Windows 10, Microsoft has streamlined servicing to make operating system updates simpler to test, manage, and deploy.
-keywords: updates, servicing, current, deployment, General Availability Channel, semi-annual channel, feature, quality, rings, insider, tools
+keywords: updates, servicing, current, deployment, General Availability Channel, General Availability Channel, feature, quality, rings, insider, tools
 ms.prod: w10
 ms.mktglfcycl: manage
 author: jaimeo

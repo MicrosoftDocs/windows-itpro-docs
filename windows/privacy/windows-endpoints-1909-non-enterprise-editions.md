@@ -2,7 +2,7 @@
 title: Windows 10, version 1909, connection endpoints for non-Enterprise editions
 description: Explains what Windows 10 endpoints are used in non-Enterprise editions. Specific to Windows 10, version 1909.
 keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2016
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
@@ -12,7 +12,8 @@ ms.author: v-hakima
 manager: obezeajo
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 08/18/2020
+ms.date: 12/01/2021
+ms.technology: privacy
 ---
 # Windows 10, version 1909, connection endpoints for non-Enterprise editions
 
@@ -147,7 +148,8 @@ The following methodology was used to derive the network endpoints:
 |ris.api.iris.microsoft.com|TLS v1.2|Windows Spotlight
 |settings-win.data.microsoft.com|HTTPS/TLS v1.2|Used for Windows apps to dynamically update their configuration
 |spo-ring.msedge.net|TLSv1.2|Cortana and Live Tiles
-|telecommand.telemetry.microsoft.com|TLS v1.2|Used by Windows Error Reporting ||tile-service.weather.microsoft.com|HTTP|Used for the Weather app
+|telecommand.telemetry.microsoft.com|TLS v1.2|Used by Windows Error Reporting 
+|tile-service.weather.microsoft.com|HTTP|Used for the Weather app
 |tsfe.trafficshaping.dsp.mp.microsoft.com|HTTPS|Used for content regulation
 |v10.events.data.microsoft.com/onecollector/1.0/|HTTPS/TLS v1.2|Diagnostic Data
 |v10.events.data.microsoft.com|HTTPS/TLS v1.2|Used by the Connected User Experiences and Telemetry component and connects to the Microsoft Data Management service
