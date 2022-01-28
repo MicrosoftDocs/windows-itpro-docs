@@ -11,7 +11,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 01/24/2022
+ms.date: 01/28/2022
 ms.reviewer: 
 ms.technology: windows-sec
 ---
@@ -57,7 +57,7 @@ No. SCM supported only SCAP 1.0, which was not updated as SCAP evolved. The new 
 
 | Name | Build | Baseline Release Date | Security Tools |
 | ---- | ----- | --------------------- | -------------- |
-| Windows 11 | [](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/windows-11-security-baseline/ba-p/2810772) <br> | October 2021<br>|[SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319) |
+| Windows 11 | [Windows 11](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/windows-11-security-baseline/ba-p/2810772) <br> | October 2021<br>|[SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319) |
 | Windows 10 | [21H2](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-windows-10-version-21h2/ba-p/3042703) <br> [21H1](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-final-for-windows-10-version-21h1/ba-p/2362353) <br> [20H2](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-final-for-windows-10-and-windows-server/ba-p/1999393) <br> [1909](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-final-for-windows-10-v1909-and-windows-server/ba-p/1023093) <br> [1809](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-final-for-windows-10-v1809-and-windows-server/ba-p/701082) <br> [1607](/archive/blogs/secguide/security-baseline-for-windows-10-v1607-anniversary-edition-and-windows-server-2016) <br>[1507](/archive/blogs/secguide/security-baseline-for-windows-10-v1507-build-10240-th1-ltsb-update)| December 2021<br>May 2021<br>December 2020<br>November 2019<br>October 2018<br>October 2016 <br>January 2016 |[SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319) |
 Windows 8.1 |[9600 (April Update)](/archive/blogs/secguide/security-baselines-for-windows-8-1-windows-server-2012-r2-and-internet-explorer-11-final)| October 2013| [SCM 4.0](/previous-versions/tn-archive/cc936627(v=technet.10)) |
 
