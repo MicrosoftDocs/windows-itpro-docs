@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
 audience: ITPro
-author: siosulli
+author: RyanHechtMSFT
 ms.author: dansimp
 manager: dansimp
 ms.date: 11/29/2021
@@ -177,3 +177,12 @@ For Windows 10 and Windows 11, the following MDM policies are available in the [
 |r.manage.microsoft.com|
 |tile-service.weather.microsoft.com|
 |settings-win.data.microsoft.com|
+|msedge.api.cdp.microsoft.com|
+|msedge.f.tlu.dl.delivery.mp.microsoft.com|
+|msedge.f.dl.delivery.mp.microsoft.com|
+|msedge.b.tlu.dl.delivery.mp.microsoft.com|
+|msedge.b.dl.delivery.mp.microsoft.com|
+|msedge.sf.tlu.dl.delivery.mp.microsoft.com|
+|msedge.sf.dl.delivery.mp.microsoft.com|
+|msedge.sb.tlu.dl.delivery.mp.microsoft.com|
+|msedge.sb.dl.delivery.mp.microsoft.com|
