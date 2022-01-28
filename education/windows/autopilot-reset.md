@@ -19,7 +19,12 @@ manager: dansimp
 
 -   Windows 10, version 1709 
 
-IT admins or technical teachers can use Autopilot Reset to quickly remove personal files, apps, and settings, and reset Windows 10 devices from the lock screen any time and apply original settings and management enrollment (Azure Active Directory and device management) so the devices are ready to use. With Autopilot Reset, devices are returned to a fully configured or known IT-approved state.
+IT admins or technical teachers can use Autopilot Reset to:
+  - Quickly remove personal files, apps, and settings,
+  - Reset Windows 10 devices from the lock screen anytime, and
+  - Apply original settings and management enrollment (Azure Active Directory and device management) so the devices are ready to use. 
+    
+With Autopilot Reset, devices are returned to a fully configured or known IT-approved state.
 
 To enable Autopilot Reset in Windows 10, version 1709 (Fall Creators Update), you must:
 
@@ -30,7 +35,7 @@ To enable Autopilot Reset in Windows 10, version 1709 (Fall Creators Update), yo
 
 To use Autopilot Reset, [Windows Recovery Environment (WinRE) must be enabled on the device](#winre).
 
-**DisableAutomaticReDeploymentCredentials** is a policy that enables or disables the visibility of the credentials for Autopilot Reset. It is a policy node in the [Policy CSP](/windows/client-management/mdm/policy-csp-credentialproviders), **CredentialProviders/DisableAutomaticReDeploymentCredentials**. By default, this policy is set to 1 (Disable). This ensures that Autopilot Reset isn't triggered by accident.
+**DisableAutomaticReDeploymentCredentials** is a policy that enables or disables the visibility of the credentials for Autopilot Reset. It's a policy node in the [Policy CSP](/windows/client-management/mdm/policy-csp-credentialproviders), **CredentialProviders/DisableAutomaticReDeploymentCredentials**. By default, this policy is set to 1 (Disable). This ensures that Autopilot Reset isn't triggered by accident.
 
 You can set the policy using one of these methods:
 
@@ -49,11 +54,11 @@ You can set the policy using one of these methods:
 
 - Set up School PCs app
 
-  Autopilot Reset in the Set up School PCs app is available in the latest release of the app. Make sure you are running Windows 10, version 1709 on the student PCs if you want to use Autopilot Reset through the Set up School PCs app. You can check the version several ways:
+  Autopilot Reset in the Set up School PCs app is available in the latest release of the app. Ensure you're running Windows 10, version 1709 on the student PCs if you want to use Autopilot Reset through the Set up School PCs app. You can check the version several ways:
 
   - Reach out to your device manufacturer.
 
-  - If you manage your PCs using Intune or Intune for Education, you can check the OS version by checking the **OS version** info for the device. If  you are using another MDM provider, check the documentation for the MDM provider to confirm the OS version.
+  - If you manage your PCs using Intune or Intune for Education, you can check the OS version by checking the **OS version** info for the device. If  you're using another MDM provider, check the documentation for the MDM provider to confirm the OS version.
 
   - Log into the PCs, go to the **Settings > System > About** page, look in the **Windows specifications** section and confirm **Version** is set to 1709.
 
@@ -72,9 +77,9 @@ Autopilot Reset is a two-step process: trigger it and then authenticate. Once yo
 
    ![Enter CTRL+Windows key+R on the Windows lockscreen.](images/autopilot-reset-lockscreen.png)
 
-   This will open up a custom login screen for Autopilot Reset. The screen serves two purposes:
+   This will open up a custom sign-in screen for Autopilot Reset. The screen serves two purposes:
 
-   1. Confirm/verify that the end user has the right to trigger Autopilot Reset
+   1. Confirm/verify that the end user has the right to trigger Autopilot Reset.
 
    2. Notify the user in case a provisioning package, created using Windows Configuration Designer or Set up School PCs, will be used as part of the process.
 
@@ -93,7 +98,7 @@ Autopilot Reset is a two-step process: trigger it and then authenticate. Once yo
 
    - Connects to Wi-Fi.
 
-   - If you provided a provisioning package when Autopilot Reset is triggered, the system will apply this new provisioning package. Otherwise, the system will re-apply the original provisioning package on the device. 
+   - If you provided a provisioning package when Autopilot Reset is triggered, the system will apply this new provisioning package. Otherwise, the system will reapply the original provisioning package on the device. 
 
    - Is returned to a known good managed state, connected to Azure AD and MDM.
 
@@ -105,7 +110,7 @@ Autopilot Reset is a two-step process: trigger it and then authenticate. Once yo
 
 ## Troubleshoot Autopilot Reset
 
-Autopilot Reset will fail when the [Windows Recovery Environment (WinRE)](/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference) is not enabled on the device. You will see `Error code: ERROR_NOT_SUPPORTED (0x80070032)`.
+Autopilot Reset will fail when the [Windows Recovery Environment (WinRE)](/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference) isn't enabled on the device. You'll see `Error code: ERROR_NOT_SUPPORTED (0x80070032)`.
 
 To make sure WinRE is enabled, use the [REAgentC.exe tool](/windows-hardware/manufacture/desktop/reagentc-command-line-options) to run the following command:
 
@@ -113,7 +118,7 @@ To make sure WinRE is enabled, use the [REAgentC.exe tool](/windows-hardware/man
 reagentc /enable
 ```
 
-If Autopilot Reset fails after enabling WinRE, or if you are unable to enable WinRE, please contact [Microsoft Support](https://support.microsoft.com) for assistance.
+If Autopilot Reset fails after enabling WinRE, or if you're unable to enable WinRE, please contact [Microsoft Support](https://support.microsoft.com) for assistance.
 
 ## Related topics
 
