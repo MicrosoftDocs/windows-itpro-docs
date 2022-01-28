@@ -948,7 +948,7 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
-Allows the IT admin to set which branch a device receives their updates from. As of 1903, the branch readiness levels of Semi-Annual Channel (Targeted) and Semi-Annual Channel have been combined into one Semi-Annual Channel set with a value of 16. For devices on 1903 and later releases, the value of 32 is not a supported value.
+Allows the IT admin to set which branch a device receives their updates from. As of 1903, the branch readiness levels of General Availability Channel (Targeted) and General Availability Channel have been combined into one General Availability Channel set with a value of 16. For devices on 1903 and later releases, the value of 32 is not a supported value.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -966,8 +966,8 @@ The following list shows the supported values:
 -  2  {0x2}  - Windows Insider build - Fast (added in Windows 10, version 1709)
 -  4  {0x4}  - Windows Insider build - Slow (added in Windows 10, version 1709)
 -  8  {0x8}  - Release Windows Insider build (added in Windows 10, version 1709)
--  16 {0x10} - (default) Semi-annual Channel (Targeted). Device gets all applicable feature updates from Semi-annual Channel (Targeted). 
--  32 {0x20} - Semi-annual Channel. Device gets feature updates from Semi-annual Channel. (*Only applicable to releases prior to 1903, for all releases 1903 and after the Semi-annual Channel and Semi-annual Channel (Targeted) into a single Semi-annual Channel with a value of 16)
+-  16 {0x10} - (default) General Availability Channel (Targeted). Device gets all applicable feature updates from General Availability Channel (Targeted). 
+-  32 {0x20} - General Availability Channel. Device gets feature updates from General Availability Channel. (*Only applicable to releases prior to 1903, for all releases 1903 and after the General Availability Channel and General Availability Channel (Targeted) into a single General Availability Channel with a value of 16)
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -2627,7 +2627,7 @@ By using this Windows Update for Business policy to upgrade devices to a new pro
 > Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use RequireDeferUpgrade for Windows 10, version 1511 devices.
 
 
-Allows the IT admin to set a device to Semi-Annual Channel train.
+Allows the IT admin to set a device to General Availability Channel train.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2640,8 +2640,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 (default) – User gets upgrades from Semi-Annual Channel (Targeted).
-- 1 – User gets upgrades from Semi-Annual Channel.
+- 0 (default) – User gets upgrades from General Availability Channel (Targeted).
+- 1 – User gets upgrades from General Availability Channel.
 
 <!--/SupportedValues-->
 <!--/Policy-->
