@@ -78,7 +78,7 @@ Note: This policy will not be applied until the system is rebooted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Enable RPC Endpoint Mapper Client Authentication*
+-   GP Friendly name: *Enable RPC Endpoint Mapper Client Authentication*
 -   GP name: *RpcEnableAuthEpResolution*
 -   GP path: *System/Remote Procedure Call*
 -   GP ADMX file name: *rpc.admx*
@@ -137,7 +137,7 @@ If you enable this policy setting, it directs the RPC server runtime to restrict
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Restrict Unauthenticated RPC clients*
+-   GP Friendly name: *Restrict Unauthenticated RPC clients*
 -   GP name: *RpcRestrictRemoteClients*
 -   GP path: *System/Remote Procedure Call*
 -   GP ADMX file name: *rpc.admx*

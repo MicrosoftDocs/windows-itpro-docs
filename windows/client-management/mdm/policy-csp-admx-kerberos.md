@@ -95,7 +95,7 @@ If you disable or do not configure this policy setting and the resource domain r
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Always send compound authentication first*
+-   GP Friendly name: *Always send compound authentication first*
 -   GP name: *AlwaysSendCompoundId*
 -   GP path: *System\Kerberos*
 -   GP ADMX file name: *Kerberos.admx*
@@ -148,7 +148,7 @@ If you do not configure this policy setting, Automatic will be used.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Support device authentication using certificate*
+-   GP Friendly name: *Support device authentication using certificate*
 -   GP name: *DevicePKInitEnabled*
 -   GP path: *System\Kerberos*
 -   GP ADMX file name: *Kerberos.admx*
@@ -196,7 +196,7 @@ If you do not configure this policy setting, the system uses the host name-to-Ke
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Define host name-to-Kerberos realm mappings*
+-   GP Friendly name: *Define host name-to-Kerberos realm mappings*
 -   GP name: *HostToRealm*
 -   GP path: *System\Kerberos*
 -   GP ADMX file name: *Kerberos.admx*
@@ -243,7 +243,7 @@ If you disable or do not configure this policy setting, the Kerberos client enfo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Disable revocation checking for the SSL certificate of KDC proxy servers*
+-   GP Friendly name: *Disable revocation checking for the SSL certificate of KDC proxy servers*
 -   GP name: *KdcProxyDisableServerRevocationCheck*
 -   GP path: *System\Kerberos*
 -   GP ADMX file name: *Kerberos.admx*
@@ -289,7 +289,7 @@ If you disable or do not configure this policy setting, the Kerberos client does
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify KDC proxy servers for Kerberos clients*
+-   GP Friendly name: *Specify KDC proxy servers for Kerberos clients*
 -   GP name: *KdcProxyServer*
 -   GP path: *System\Kerberos*
 -   GP ADMX file name: *Kerberos.admx*
@@ -337,7 +337,7 @@ If you do not configure this policy setting, the system uses the interoperable K
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Define interoperable Kerberos V5 realm settings*
+-   GP Friendly name: *Define interoperable Kerberos V5 realm settings*
 -   GP name: *MitRealms*
 -   GP path: *System\Kerberos*
 -   GP ADMX file name: *Kerberos.admx*
@@ -391,7 +391,7 @@ If you do not configure this policy setting, Automatic will be used.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Support compound authentication*
+-   GP Friendly name: *Support compound authentication*
 -   GP name: *ServerAcceptsCompound*
 -   GP path: *System\Kerberos*
 -   GP ADMX file name: *Kerberos.admx*
@@ -437,7 +437,7 @@ If you disable or do not configure this policy setting, any service is allowed t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Require strict target SPN match on remote procedure calls*
+-   GP Friendly name: *Require strict target SPN match on remote procedure calls*
 -   GP name: *StrictTarget*
 -   GP path: *System\Kerberos*
 -   GP ADMX file name: *Kerberos.admx*
