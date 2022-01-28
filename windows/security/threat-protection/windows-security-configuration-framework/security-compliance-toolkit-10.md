@@ -11,7 +11,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 01/24/2022
+ms.date: 01/28/2022
 ms.reviewer: rmunck
 ms.technology: windows-sec
 ---
@@ -52,8 +52,10 @@ The Security Compliance Toolkit consists of:
     -   Edge Browser Version 97
 
 -   Tools
-    -   Policy Analyzer tool
-    -   Local Group Policy Object (LGPO) tool
+    -   Policy Analyzer
+    -   Local Group Policy Object (LGPO)
+    -   Set Object Security
+    -   GPO to Policy Rules
 
 
 You can [download the tools](https://www.microsoft.com/download/details.aspx?id=55319) along with the baselines for the relevant Windows versions. For more details about security baseline recommendations, see the [Microsoft Security Guidance blog](/archive/blogs/secguide/).

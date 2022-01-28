@@ -204,7 +204,7 @@ Added in Windows 10, version 1803. Roll Back Latest Feature Update, if the machi
 - Condition 4: Machine should be within the uninstall period
 
 > [!NOTE]
-> This only works for Semi-Annual Channel Targeted devices.
+> This only works for General Availability Channel Targeted devices.
 
 If the conditions are not true, the device will not Roll Back the Latest Feature Update.
 
