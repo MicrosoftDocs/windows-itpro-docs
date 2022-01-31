@@ -98,6 +98,14 @@ At Microsoft, to help ensure that ongoing deployments weren't affecting our netw
 
 For more information, check out the [Adopting Windows as a Service at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft) technical case study.
 
-## Reference
+## Using a proxy with Delivery Optimization
+
+If a proxy is being used in your environment, see [Using a proxy with Delivery Optimization](delivery-optimization-proxy.md) to understand the proxy settings needed to properly using Delivery Optimization.
+
+## Delivery Optimization client-service communication explained
+
+To gain a deeper understanding of the Delivery Optimization client-service communication workflow, see [Delivery Optimization client-service communication explained](delivery-optimization-workflow.md)
+
+## Delivery Optimization reference
 
 For a complete list of Delivery Optimization settings, see [Delivery Optimization reference](waas-delivery-optimization-reference.md).
