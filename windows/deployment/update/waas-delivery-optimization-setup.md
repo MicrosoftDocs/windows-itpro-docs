@@ -1,29 +1,39 @@
 ---
 title: Set up Delivery Optimization
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 description: In this article, learn how to set up Delivery Optimization.
 keywords: oms, operations management suite, wdav, updates, downloads, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
 audience: itpro
-author: jaimeo
+author: carmenf
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: carmenf
 ms.collection: M365-modern-desktop
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
 
-# Set up Delivery Optimization for Windows client updates
+# Set up Delivery Optimization for Windows
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 - Windows 11
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
+## Set up Delivery Optimization
+
+You can use Group Policy or an MDM solution like Intune to configure Delivery Optimization.
+
+You will find the Delivery Optimization settings in Group Policy under **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization**.
+In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimization/**.
+
+Starting with Microsoft Intune version 1902, you can set many Delivery Optimization policies as a profile, which you can then apply to groups of devices. For more information, see [Delivery Optimization settings in Microsoft Intune](/intune/delivery-optimization-windows))
+
+**Starting with Windows 10, version 1903,** you can use the Azure Active Directory (Azure AD) Tenant ID as a means to define groups. To do this set the value for DOGroupIdSource to its new maximum value of 5.
 
 ## Recommended Delivery Optimization settings
 
@@ -37,7 +47,7 @@ Delivery Optimization offers a great many settings to fine-tune its behavior (se
 
 > [!NOTE]
 > These scenarios (and the recommended settings for each) are not mutually exclusive. It's possible that your deployment might involve more than one of these scenarios, in which case you can employ the related settings in any combination as needed. In all cases, however, "download mode" is the most important one to set.
-
+>
 > [!NOTE]
 > Microsoft Intune includes a profile to make it easier to set Delivery Optimization policies. For details, see [Delivery Optimization settings for Intune](/mem/intune/configuration/delivery-optimization-settings).
 
@@ -97,7 +107,6 @@ To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** 
 
 [//]: # (material about "preferred" devices; remove MinQos/MaxCacheAge; table format?)
 
-
 ## Monitor Delivery Optimization
 
 [//]: # (How to tell if it's working? What values are reasonable; which are not? If not, which way to adjust and how? -- check PercentPeerCaching for files > minimum >= 50%)
@@ -126,22 +135,21 @@ To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** 
 | ExpireOn | The target expiration date and time for the file. |
 | Pinned | A yes/no value indicating whether an item has been "pinned" in the cache (see `setDeliveryOptmizationStatus`). |
 
-
 `Get-DeliveryOptimizationPerfSnap` returns a list of key performance data:
 
-- Number of files downloaded 
-- Number of files uploaded 
-- Total bytes downloaded 
-- Total bytes uploaded 
-- Average transfer size (download); that is, the number bytes downloaded divided by the number of files 
+- Number of files downloaded
+- Number of files uploaded
+- Total bytes downloaded
+- Total bytes uploaded
+- Average transfer size (download); that is, the number bytes downloaded divided by the number of files
 - Average transfer size (upload); the number of bytes uploaded divided by the number of files
 - Peer efficiency; same as PercentPeerCaching
 
 Using the `-Verbose` option returns additional information:
 
-- Bytes from peers (per type) 
+- Bytes from peers (per type)
 - Bytes from CDN (the number of bytes received over HTTP)
-- Average number of peer connections per download 
+- Average number of peer connections per download
 
 **Starting in Windows 10, version 2004**, `Get-DeliveryOptimizationStatus` has a new option `-PeerInfo` which returns a real-time list of the connected peers.
 
@@ -212,6 +220,59 @@ Log entries are written to the PowerShell pipeline as objects. To dump logs to a
 
 Update Compliance provides you with information about your Delivery Optimization configuration, including the observed bandwidth savings across all devices that used peer-to-peer distribution over the past 28 days.
 
-[ ![DO status.](images/UC_workspace_DO_status.png) ](images/UC_workspace_DO_status.png#lightbox)
+[[DO status](images/UC_workspace_DO_status.png)](images/UC_workspace_DO_status.png#lightbox)
 
 For details, see [Delivery Optimization in Update Compliance](update-compliance-delivery-optimization.md).
+
+## Troubleshooting
+
+This section summarizes common problems and some solutions to try.
+
+### If you don't see any bytes from peers
+
+If you don't see any bytes coming from peers the cause might be one of the following issues:
+
+- Clients aren’t able to reach the Delivery Optimization cloud services.
+- The cloud service doesn’t see other peers on the network.
+- Clients aren’t able to connect to peers that are offered back from the cloud service.
+- None of the computers on the network are getting updates from peers.
+
+### Clients aren't able to reach the Delivery Optimization cloud services
+
+Try these steps:
+
+1. Start a download of an app that is larger than 50 MB from the Store (for example "Candy Crush Saga").
+2. Run `Get-DeliveryOptimizationStatus` from an elevated PowerShell window and observe the [DownloadMode](waas-delivery-optimization-reference.md#download-mode) setting. For peering to work, DownloadMode should be 1, 2, or 3.
+3. If DownloadMode is 99, it could indicate your device is unable to reach the Delivery Optimization cloud services. Ensure that the Delivery Optimization host names are allowed access: most importantly **\*.do.dsp.mp.microsoft.com**.
+
+### The cloud service doesn't see other peers on the network
+
+Try these steps:
+
+1. Download the same app on two different devices on the same network, waiting 10 – 15 minutes between downloads.
+2. Run `Get-DeliveryOptimizationStatus` from an elevated PowerShell window and ensure that **[DownloadMode](waas-delivery-optimization-reference.md#download-mode)** is 1 or 2 on both devices.
+3. Run `Get-DeliveryOptimizationPerfSnap` from an elevated PowerShell window on the second device. The **NumberOfPeers** field should be non-zero.
+4. If the number of peers is zero and **[DownloadMode](waas-delivery-optimization-reference.md#download-mode)** is 1, ensure that both devices are using the same public IP address to reach the internet (you can easily do this by opening a browser window and do a search for “what is my IP”). In the case where devices are not reporting the same public IP address, configure **[DownloadMode](waas-delivery-optimization-reference.md#download-mode)** to 2 (Group) and use a custom **[GroupID (Guid)](waas-delivery-optimization-reference.md#group-id)**, to fix this.
+
+> [!NOTE]
+> Starting in Windows 10, version 2004, `Get-DeliveryOptimizationStatus` has a new option `-PeerInfo` which returns a real-time list of the connected peers.
+
+### Clients aren't able to connect to peers offered by the cloud service
+
+Try a Telnet test between two devices on the network to ensure they can connect using port 7680. Follow these steps:
+
+1. Install Telnet by running `dism /online /Enable-Feature /FeatureName:TelnetClient` from an elevated command prompt.
+2. Run the test. For example, if you are on device with IP 192.168.8.12 and you are trying to test the connection to 192.168.9.17 run `telnet 192.168.9.17 7680` (the syntax is *telnet [destination IP] [port]*. You will either see a connection error or a blinking cursor like this /_. The blinking cursor means success.
+
+> [!NOTE]
+> You can also use [Test-NetConnection](/powershell/module/nettcpip/test-netconnection) instead of Telnet to run the test.
+> **Test-NetConnection -ComputerName 192.168.9.17 -Port 7680**
+
+### None of the computers on the network are getting updates from peers
+
+Check Delivery Optimization settings that could limit participation in peer caching. Check whether the following settings in assigned group policies, local group policies, or MDM policies are too restrictive:
+
+- Minimum RAM (inclusive) allowed to use peer caching
+- Minimum disk size allowed to use peer caching
+- Enable peer caching while the device connects using VPN.
+- Allow uploads when the device is on battery while under the set battery level
