@@ -28,8 +28,7 @@ ms.custom: seo-marvel-apr2020
 
 You can use Group Policy or an MDM solution like Intune to configure Delivery Optimization.
 
-You will find the Delivery Optimization settings in Group Policy under **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization**.
-In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimization/**.
+You will find the Delivery Optimization settings in Group Policy under **Computer Configuration\Administrative Templates\Windows Components\Delivery Optimization**.
 
 Starting with Microsoft Intune version 1902, you can set many Delivery Optimization policies as a profile, which you can then apply to groups of devices. For more information, see [Delivery Optimization settings in Microsoft Intune](/intune/delivery-optimization-windows))
 
@@ -64,7 +63,7 @@ Quick-reference table:
 
 For this scenario, grouping devices by domain allows devices to be included in peer downloads and uploads across VLANs. **Set Download Mode to 2 - Group**. The default group is the authenticated domain or Active Directory site. If your domain-based group is too wide, or your Active Directory sites aren't aligned with your site network topology, then you should consider additional options for dynamically creating groups, for example by using the GroupIDSrc parameter.
 
-To do this in Group Policy go to **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization** and set **Download mode** to **2**.
+To do this in Group Policy go to **Computer Configuration\Administrative Templates\Windows Components\Delivery Optimization** and set **Download mode** to **2**.
 
 To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** and set DODownloadMode to 1 or 2.
 
@@ -72,7 +71,7 @@ To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** 
 
 The default download mode setting is **1**; this means all devices breaking out to the internet using the same public IP will be considered as a single peer group. To prevent peer-to-peer activity across groups, you should set the download mode to **2**. If you have already defined Active Directory sites per hub or branch office, then you don't need to do anything else. If you're not using Active Directory sites, you should set *RestrictPeerSelectionBy* policies to restrict the activity to the subnet or set a different source for Groups by using the GroupIDSrc parameter. See [Select a method to restrict peer selection](waas-delivery-optimization-reference.md#select-a-method-to-restrict-peer-selection).
 
-To do this in Group Policy go to **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization** and set **Download mode** to **2**.
+To do this in Group Policy go to ****Computer Configuration\Administrative Templates\Windows Components\Delivery Optimization** and set **Download mode** to **2**.
 
 To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** and set **DODownloadMode** to **2**.
 
@@ -83,7 +82,7 @@ To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** 
 
 If you have a mobile workforce with a great many mobile devices, set Delivery Optimization to allow uploads on battery power, while limiting the use to prevent battery drain. A setting for **DOMinBatteryPercentageAllowedToUpload** of 60% is a good starting point, though you might want to adjust it later.
 
-To do this in Group Policy, go to **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization** and set **Allow uploads while the device is on battery while under set Battery level** to 60.
+To do this in Group Policy, go to **Computer Configuration\Administrative Templates\Windows Components\Delivery Optimization** and set **Allow uploads while the device is on battery while under set Battery level** to 60.
 
 To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** and set **DOMinBatteryPercentageAllowedToUpload** to 60.
 
@@ -93,7 +92,7 @@ Many devices now come with large internal drives. You can set Delivery Optimizat
 
 [//]: # (default of 50 aimed at consumer)
 
-To do this in Group Policy, go to **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization** and set **Minimum Peer Caching Content File Size** to 10 (if you have more than 30 devices) or 1 (if you have more than 100 devices).
+To do this in Group Policy, go to **Computer Configuration\Administrative Templates\Windows Components\Delivery Optimization** and set **Minimum Peer Caching Content File Size** to 10 (if you have more than 30 devices) or 1 (if you have more than 100 devices).
 
 To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** and set **DOMinFileSizeToCache** to 100 (if you have more than 30 devices) or 1 (if you have more than 100 devices).
 
@@ -101,7 +100,7 @@ To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** 
 
 In a lab situation, you typically have a large number of devices that are plugged in and have a lot of free disk space. By increasing the content expiration interval, you can take advantage of these devices, using them as excellent upload sources in order to upload much more content over a longer period.
 
-To do this in Group Policy, go to **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization** and set **Max Cache Age** to **604800** (7 days) or more (up to 30 days).
+To do this in Group Policy, go to **Computer Configuration\Administrative Templates\Windows Components\Delivery Optimization** and set **Max Cache Age** to **604800** (7 days) or more (up to 30 days).
 
 To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** and set DOMaxCacheAge to 7 or more (up to 30 days).
 
