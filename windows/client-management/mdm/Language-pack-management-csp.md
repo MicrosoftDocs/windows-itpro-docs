@@ -40,29 +40,32 @@ The Language Pack Management CSP allows a direct way to provision language packs
     - LocaleData = 0x40
     - SupplementFonts = 0x80
 
-2. Install language pack and features with the EXECUTE command on the **StartInstall** node of the language.
+2. Install language pack and features with the EXECUTE command on the **StartInstallation** node of the language.
 
-    - Admins can optionally set the language as the System Preferred UI Language immediately after installation by using the REPLACE command on the "CopyToDeviceInternationalSettings" node of the language. 0 (default) will take no action; 1 will set the language as System PreferredUILanguage. 
+    > [!NOTE]
+    > If not previously set, installation will set the policy to block cleanup of unused language packs and features on the device to prevent unexpected deletion.
+
+    - Admins can optionally set the language as the System Preferred UI Language immediately after installation by using the REPLACE command on the "CopyToDeviceInternationalSettings" node of the language. 0 (default) will take no action; 1 will set the following international settings to reflect the newly installed language:
+        - System Preferred UI Language
+        - System Locale
+        - Default settings for new users, such as Input Method (keyboard), Locale, Speech Recognizer, User Preferred Language List
     - Admins can optionally configure whether they want to install all available language features during installation using the REPLACE command on the "EnableLanguageFeatureInstallations" node of the language. 0 will install only required features; 1 (default) will install all available features.
 
-    Here are the sample commands to install French language with required features and set as the System Preferred UI Language:
+    Here are the sample commands to install French language with required features and copy to the devices international settings:
 
     1. **ADD ./Device/Vendor/MSFT/LanguagePackManagement/Install/fr-FR/**
-    2. **REPLACE ./Device/Vendor/MSFT/LanguagePackManagement/Install/fr-FR/CopyToDeviceInternationalSettings(1) (optional)**
-    3. **REPLACE ./Device/Vendor/MSFT/LanguagePackManagement/Install/fr-FR/EnableLanguageFeatureInstallations (0) (optional)**
+    2. **REPLACE ./Device/Vendor/MSFT/LanguagePackManagement/Install/fr-FR/CopyToDeviceInternationalSettings(1)**
+    3. **REPLACE ./Device/Vendor/MSFT/LanguagePackManagement/Install/fr-FR/EnableLanguageFeatureInstallations (0)**
     4. **EXECUTE ./Device/Vendor/MSFT/LanguagePackManagement/Install/fr-FR/StartInstallation**
 
-    The installation is an asynchronous operation. You can query the **Status** node by using the following commands:
+    The installation is an asynchronous operation. You can query the **Status** or **ErrorCode** nodes by using the following commands:
 
     **GET./Device/Vendor/MSFT/LanguagePackManagement/Install/fr-FR/Status**
     **GET./Device/Vendor/MSFT/LanguagePackManagement/Install/fr-FR/ErrorCode**
 
     Status: 0 – not started; 1 – in process; 2 – succeeded; 3 – failed; 4 - partial success (A partial success indicates features may have gotten installed but there was an error installing the language pack or vice versa). ErrorCode is an HRESULT that could help diagnosis if the installation failed.
 
-    > [!NOTE]
-    > These commands will set the policy to block cleanup of unused language packs and features on the device rather than fail.
-
-3. Delete installed Language with the DELETE command on the installed language tag. The delete command is a fire and forget operation. The deletion will run in background. IT admin can query the installed language later and resend the command if needed.Below is a sample command to delete the zh-CN language.
+3. Delete installed Language with the DELETE command on the installed language tag. The delete command is a fire and forget operation. The deletion will run in background. IT admin can query the installed language later and resend the command if needed. Below is a sample command to delete the zh-CN language.
 
    **DELETE./Device/Vendor/MSFT/LanguagePackManagement/InstalledLanguages/zh-CN**
 
