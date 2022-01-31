@@ -106,6 +106,10 @@ If a proxy is being used in your environment, see [Using a proxy with Delivery O
 
 To gain a deeper understanding of the Delivery Optimization client-service communication workflow, see [Delivery Optimization client-service communication explained](delivery-optimization-workflow.md)
 
+## Set up Delivery Optimization for Windows
+
+[Learn more](waas-delivery-optimization-setup.md) about the Delivery Optimization settings to ensure proper set up in your environment.
+
 ## Delivery Optimization reference
 
 For a complete list of Delivery Optimization settings, see [Delivery Optimization reference](waas-delivery-optimization-reference.md).
