@@ -39,7 +39,7 @@ To deploy a functional Microsoft Connected Cache to your device, you must obtain
   
 Figure 1 below describes the architecture of Microsoft Connected Cache built using IoT Edge.
   
-For more details information on Azure IoT Edge, please see the Azure IoT Edge [documentation](https://docs.microsoft.com/en-us/azure/iot-edge/about-iot-edge).
+For more details information on Azure IoT Edge, please see the Azure IoT Edge [documentation](https://docs.microsoft.com/azure/iot-edge/about-iot-edge).
 
 ## How Microsoft Connected Cache Works  
 

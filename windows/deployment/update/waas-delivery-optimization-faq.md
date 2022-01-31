@@ -2,9 +2,9 @@
 title: Delivery Optimization Frequently Asked Questions
 ms.reviewer: 
 manager: dougeby
-description: 
+description: The following is a list of frequently asked questions for Delivery Optimization.
 keywords: oms, operations management suite, wdav, updates, downloads, log analytics
-ms.prod: w10, w11
+ms.prod: w10
 ms.mktglfcycl: deploy
 audience: itpro
 author: carmenf
@@ -28,9 +28,9 @@ Yes. Devices will obtain the update payloads from the WSUS server, but must also
 
 ## Which ports does Delivery Optimization use?
 
-Delivery Optimization listens on port 7680 for requests from other peers by using TCP/IP. The service will register and open this port on the device, but you might need to set this port to accept inbound traffic through your firewall yourself. If you don't allow inbound traffic over port 7680, you can't use the peer-to-peer functionality of Delivery Optimization. However, devices can still successfully download by using HTTP or HTTPS traffic over port 80 (such as for default Windows Update data).
+Delivery Optimization listens on port 7680 for requests from other peers by using TCP/IP. The service will register and open this port on the device. The port must be set to accept inbound traffic through your firewall. If you don't allow inbound traffic over port 7680, you can't use the peer-to-peer functionality of Delivery Optimization. However, devices can still successfully download by using HTTP or HTTPS traffic over port 80 (such as for default Windows Update data).
 
-If you set up Delivery Optimization to create peer groups that include devices across NATs (or any form of internal subnet that uses gateways or firewalls between subnets), it will use Teredo. For this to work, you must allow inbound TCP/IP traffic over port 3544. Look for a "NAT traversal" setting in your firewall to set this up.
+Delivery Optimization will use Teredo to create peer groups, which include devices across NATs (or any form of internal subnet that uses gateways or firewalls between subnets). For this to work, you must allow inbound TCP/IP traffic over port 3544. Look for a "NAT traversal" setting in your firewall to set this up.
 
 Delivery Optimization also communicates with its cloud service by using HTTP/HTTPS over port 80.
 
@@ -58,15 +58,15 @@ No. It relies on the cloud service for peer discovery, resulting in a list of pe
 
 ## How does Delivery Optimization deal with congestion on the router from peer-to-peer activity on the LAN?
 
-Starting in Windows 10, version 1903, Delivery Optimization uses LEDBAT to relieve such congestion. For more details, see this post on the [Networking Blog](https://techcommunity.microsoft.com/t5/Networking-Blog/Windows-Transport-converges-on-two-Congestion-Providers-Cubic/ba-p/339819).
+Starting in Windows 10, version 1903, Delivery Optimization uses LEDBAT to relieve such congestion. For more information, see this post on the [Networking Blog](https://techcommunity.microsoft.com/t5/Networking-Blog/Windows-Transport-converges-on-two-Congestion-Providers-Cubic/ba-p/339819).
 
 ## How does Delivery Optimization handle VPNs?
 
-Delivery Optimization attempts to identify VPNs by checking the network adapter type and details and will treat the connection as a VPN if the adapter description contains certain keywords, such as "VPN" or "secure."
+Delivery Optimization attempts to identify VPNs by checking the network adapter type and details. A connection will be treated as a VPN if the adapter description contains certain keywords, such as "VPN" or "secure."
 
 If the connection is identified as a VPN, Delivery Optimization will suspend uploads to other peers. However, you can allow uploads over a VPN by using the [Enable Peer Caching while the device connects via VPN](waas-delivery-optimization-reference.md#enable-peer-caching-while-the-device-connects-via-vpn) policy.
 
-If you have defined a boundary group in Configuration Manager for VPN IP ranges, you can set the [DownloadMode](waas-delivery-optimization-reference.md#download-mode) policy to 0 for that boundary group to ensure that there will be no peer-to-peer activity over the VPN. When the device is not connected using a VPN, it can still use peer-to-peer with the default of LAN.
+If you have defined a boundary group in Configuration Manager for VPN IP ranges, you can set the [DownloadMode](waas-delivery-optimization-reference.md#download-mode) policy to 0 for that boundary group, to ensure that there will be no peer-to-peer activity over the VPN. When the device is not connected using a VPN, it can still use peer-to-peer with the default of LAN.
 
 With split tunneling, make sure to allow direct access to these endpoints:
 
