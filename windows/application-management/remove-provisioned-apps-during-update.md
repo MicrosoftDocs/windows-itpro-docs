@@ -12,7 +12,7 @@ manager: dansimp
 ---
 # How to keep apps removed from Windows 10 from returning during an update
 
->Applies to: Windows 10 (Semi-Annual Channel)
+> Applies to: Windows 10 (General Availability Channel)
 
 When you update a computer running Windows 10, version 1703 or 1709, you might see provisioned apps that you previously removed return post-update. This can happen if the computer was offline when you removed the apps. This issue was fixed in Windows 10, version 1803.
 
