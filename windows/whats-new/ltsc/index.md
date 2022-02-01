@@ -30,7 +30,7 @@ This topic provides links to articles with information about what's new in each 
 
 ## The Long-Term Servicing Channel (LTSC)
 
-The following table summarizes equivalent feature update versions of Windows 10 LTSC and semi-annual channel (SAC) releases.
+The following table summarizes equivalent feature update versions of Windows 10 LTSC and General Availability Channel (SAC) releases.
 
 | LTSC release | Equivalent SAC release | Availability date |
 | --- | --- | --- |
