@@ -33,9 +33,9 @@ For details about Microsoft mobile device management protocols for Windows 10 a
 
 ## Breaking changes and known issues
 
-### Get command inside an atomic command is not supported
+### Get command inside an atomic command isn’t supported
 
-In Windows 10 and Windows 11, a Get command inside an atomic command is not supported. 
+In Windows 10 and Windows 11, a Get command inside an atomic command isn't supported. 
 
 ### Apps installed using WMI classes are not removed
 
