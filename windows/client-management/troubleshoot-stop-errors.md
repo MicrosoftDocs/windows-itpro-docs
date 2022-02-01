@@ -93,17 +93,17 @@ To troubleshoot Stop error messages, follow these general steps:
 
 To configure the system for memory dump files, follow these steps:
 
-1. [Download DumpConfigurator tool](https://codeplexarchive.blob.core.windows.net/archive/projects/WinPlatTools/WinPlatTools.zip).
+1. Click Taskbar search box and type **Advanced system settings** and then press **Enter**.
 
-2. Extract the .zip file and navigate to **Source Code** folder.
+2. On the **Advanced** tab on the System Properties box, click the **Settings** button that appears in the section namely **Startup and Recovery**.
 
-3. Run the tool DumpConfigurator.hta, and then select **Elevate this HTA**.
+3. In the new window, click the drop-down below the option **Write debugging information**.
 
-4. Select **Auto Config Kernel**.
+4. Choose **Automatic memory dump**.
 
-5. Restart the computer for the setting to take effect. 
+5. Click **OK**. 
 
-6. Stop and disable Automatic System Restart Services (ASR) to prevent dump files from being written. 
+6. Restart the computer for the setting to take effect. 
 
 7. If the server is virtualized, disable auto reboot after the memory dump file is created. This lets you take a snapshot of the server in-state and also if the problem recurs.
 
@@ -114,9 +114,9 @@ The memory dump file is saved at the following locations:
 |(none) | %SystemRoot%\MEMORY.DMP (inactive, or grayed out) |
 |Small memory dump file (256 kb) | %SystemRoot%\Minidump |
 |Kernel memory dump file | %SystemRoot%\MEMORY.DMP |
-| Complete memory dump file | %SystemRoot%\MEMORY.DMP |
-| Automatic memory dump file | %SystemRoot%\MEMORY.DMP |
-| Active memory dump file | %SystemRoot%\MEMORY.DMP |
+|Complete memory dump file | %SystemRoot%\MEMORY.DMP |
+|Automatic memory dump file | %SystemRoot%\MEMORY.DMP |
+|Active memory dump file | %SystemRoot%\MEMORY.DMP |
 
 You can use the Microsoft DumpChk (Crash Dump File Checker) tool to verify that the memory dump files are not corrupted or invalid. For more information, see the following video:<br/><br/>
 
@@ -129,9 +129,9 @@ More information on how to use Dumpchk.exe to check your dump files:
 
 ### Pagefile Settings
 
-- [Introduction of page file in Long-Term Servicing Channel and General Availability Channel of Windows](/windows/client-management/introduction-page-file) 
-- [How to determine the appropriate page file size for 64-bit versions of Windows](/windows/client-management/determine-appropriate-page-file-size) 
-- [How to generate a kernel or a complete memory dump file in Windows Server 2008 and Windows Server 2008 R2](/windows/client-management/generate-kernel-or-complete-crash-dump)
+- [Introduction to the page file](/windows/client-management/introduction-page-file) 
+- [Determine appropriate page file size](/windows/client-management/determine-appropriate-page-file-size) 
+- [Generate a kernel or complete crash dump](/windows/client-management/generate-kernel-or-complete-crash-dump)
 
 ### Memory dump analysis
 
