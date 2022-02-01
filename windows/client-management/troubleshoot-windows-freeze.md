@@ -279,10 +279,9 @@ You can use VMware Snapshots or suspend state and extract a memory dump file equ
 
 The memory dump process occurs by pressing the RIGHT CTRL + SCROLL LOCK + SCROLL LOCK keyboard combination that's described in Method 1 and on [the Citrix site](http://support.citrix.com/article/ctx123177).   
 
-## Space limitations on the system drive in Windows Server 2008 
+## Space limitations on the system drive in Windows Server 
 
-On Windows Server 2008, you may not have enough free disk space to generate a complete memory dump file on the system volume. There's a [hotfix](https://support.microsoft.com/help/957517) that allows for the data collection even though there isn't sufficient space on the system drive to store the memory dump file.   
+On a Windows Server, you may not have enough free disk space to generate a complete memory dump file on the system volume.   
+There's a second option if the system drive doesn't have sufficient space. Namely, you can use the DedicatedDumpFile registry entry. To learn how to use the registry entry, see [Configure the destination path for a memory dump](/windows-server/administration/server-core/server-core-memory-dump#step-2-configure-the-destination-path-for-a-memory-dump).   
 
-Additionally, on Windows Server 2008 Service Pack (SP2), there's a second option if the system drive doesn't have sufficient space. Namely, you can use the DedicatedDumpFile registry entry. To learn how to use the registry entry, see [New behavior in Windows Vista and Windows Server 2008](/windows/client-management/generate-kernel-or-complete-crash-dump).   
-
-For more information, see [How to use the DedicatedDumpFile registry value to overcome space limitations on the system drive](https://blogs.msdn.com/b/ntdebugging/archive/2010/04/02/how-to-use-the-dedicateddumpfile-registry-value-to-overcome-space-limitations-on-the-system-drive-when-capturing-a-system-memory-dump.aspx).
+For more information, see [How to use the DedicatedDumpFile registry value to overcome space limitations on the system drive](https://docs.microsoft.com/archive/blogs/ntdebugging/how-to-use-the-dedicateddumpfile-registry-value-to-overcome-space-limitations-on-the-system-drive-when-capturing-a-system-memory-dump).
