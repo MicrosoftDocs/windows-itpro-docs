@@ -22,8 +22,6 @@
               href: understand-windows-defender-application-control-policy-design-decisions.md
             - name: Understand WDAC policy rules and file rules
               href: select-types-of-rules-to-create.md
-            - name: Understand WDAC policy settings
-              href: understanding-wdac-policy-settings.md
               items: 
                 - name: Allow apps installed by a managed installer
                   href: configure-authorized-apps-deployed-with-a-managed-installer.md
@@ -37,6 +35,8 @@
                   href: manage-packaged-apps-with-windows-defender-application-control.md
                 - name: Use WDAC to control specific plug-ins, add-ins, and modules
                   href: use-windows-defender-application-control-policy-to-control-specific-plug-ins-add-ins-and-modules.md
+                - name: Understand WDAC policy settings
+                  href: understanding-wdac-policy-settings.md
             - name: Use multiple WDAC policies
               href: deploy-multiple-windows-defender-application-control-policies.md
         - name: Create your WDAC policy
