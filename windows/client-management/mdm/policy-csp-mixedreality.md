@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: dansimp
-ms.date: 10/12/2021
+ms.date: 1/31/2022
 ms.reviewer: 
 manager: dansimp
 ---
@@ -99,6 +99,7 @@ The OMA-URI of new policy `./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoL
 
 <!--SupportedValues-->
 String value
+
 - User with the same email address will have autologon enabled.
 
 On a device where this policy is configured, the user specified in the policy will need to log-on at least once. Subsequent reboots of the device after the first logon will have the specified user automatically logged on. Only a single autologon user is supported. Once enabled, the automatically logged on user will not be able to log out manually. To log-on as a different user, the policy must first be disabled.
@@ -129,6 +130,8 @@ This policy setting controls for how many days Azure AD group membership cache i
 <!--/ADMXBacked-->
 
 <!--SupportedValues-->
+- Integer value
+
 Supported values are 0-60. The default value is 0 (day) and maximum value is 60 (days).
 
 <!--/SupportedValues-->
@@ -167,6 +170,8 @@ This policy setting controls if pressing the brightness button changes the brigh
 <!--/ADMXBacked-->
 
 <!--SupportedValues-->
+- Boolean value
+
 The following list shows the supported values:
 
 - 0 - False (Default)
@@ -208,7 +213,7 @@ This policy controls the behavior of moving platform feature on Hololens 2, that
 <!--/ADMXBacked-->
 
 <!--SupportedValues-->
-Integer
+- Integer value
 
 - 0 (Default) - Last set user's preference. Initial state is OFF and after that user's preference is persisted across reboots and is used to initialize the system.
 - 1 Force off - Moving platform is disabled and cannot be changed by user.
@@ -250,6 +255,8 @@ This policy setting controls when and if diagnostic logs can be collected using 
 <!--/ADMXBacked-->
 
 <!--SupportedValues-->
+- Integer value
+
 The following list shows the supported values:
 
 - 0 - Disabled
@@ -292,6 +299,8 @@ This policy configures behavior of HUP to determine, which algorithm to use for 
 <!--/ADMXBacked-->
 
 <!--SupportedValues-->
+- Boolean value
+
 The following list shows the supported values:
 
 - 0 - Feature – Default feature based / SLAM-based tracker (Default)
@@ -333,6 +342,8 @@ This policy setting controls whether microphone on HoloLens 2 is disabled or not
 <!--/ADMXBacked-->
 
 <!--SupportedValues-->
+- Boolean value
+
 The following list shows the supported values:
 
 - 0 - False (Default)
@@ -374,6 +385,8 @@ This policy setting controls if pressing the volume button changes the volume or
 <!--/ADMXBacked-->
 
 <!--SupportedValues-->
+- Boolean value
+
 The following list shows the supported values:
 
 - 0 - False (Default)
@@ -415,6 +428,8 @@ This policy controls whether a visitor user will be automatically logged in. Vis
 <!--/ADMXBacked-->
 
 <!--SupportedValues-->
+- Boolean value
+
 The following list shows the supported values:
 
 - 0 Disabled (Default)

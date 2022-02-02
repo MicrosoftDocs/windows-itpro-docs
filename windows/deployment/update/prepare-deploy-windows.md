@@ -1,7 +1,7 @@
 ---
 title: Prepare to deploy Windows
 description: Final steps to get ready to deploy Windows, including preparing infrastructure, environment, applications, devices, network, capability, and users
-keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, tools
+keywords: updates, servicing, current, deployment, General Availability Channel, feature, quality, rings, insider, tools
 ms.prod: w10
 ms.mktglfcycl: manage
 author: jaimeo
