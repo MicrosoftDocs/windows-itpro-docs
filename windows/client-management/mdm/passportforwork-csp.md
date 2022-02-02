@@ -88,7 +88,7 @@ PassportForWork
 Root node for PassportForWork configuration service provider.
 
 <a href="" id="tenantid"></a>***TenantId***  
-A globally unique identifier (GUID), without curly braces ( { , } ), that is used as part of Windows Hello for Business provisioning and management. To get a GUID, use the PowerShell cmdlet [Get-AzureAccount](/powershell/module/servicemanagement/azure.service/get-azureaccount). For more information see [Get Windows Azure Active Directory Tenant ID in Windows PowerShell](https://devblogs.microsoft.com/scripting/get-windows-azure-active-directory-tenant-id-in-windows-powershell).
+A globally unique identifier (GUID), without curly braces ( { , } ), that is used as part of Windows Hello for Business provisioning and management. To get a GUID, use the PowerShell cmdlet [Get-AzureAccount](/powershell/module/servicemanagement/azure.service/get-azureaccount). For more information, see [Get Windows Azure Active Directory Tenant ID in Windows PowerShell](https://devblogs.microsoft.com/scripting/get-windows-azure-active-directory-tenant-id-in-windows-powershell).
 
 <a href="" id="tenantid-policies"></a>***TenantId*/Policies**  
 Node for defining the Windows Hello for Business policy settings.
@@ -103,7 +103,7 @@ Supported operations are Add, Get, Delete, and Replace.
 <a href="" id="tenantid-policies-requiresecuritydevice"></a>***TenantId*/Policies/RequireSecurityDevice**  
 Boolean value that requires a Trusted Platform Module (TPM) for Windows Hello for Business. TPM provides an additional security benefit over software so that data stored in it cannot be used on other devices.
 
-Default value is false. If you set this policy to true, only devices with a usable TPM can provision Windows Hello for Business. If you set this policy to false, all devices can provision Windows Hello for Business using software even if there is not a usable TPM. If you do not configure this setting, all devices can provision Windows Hello for Business using software if the TPM is non-functional or unavailable.
+Default value is false. If you set this policy to true, only devices with a usable TPM can provision Windows Hello for Business. If you set this policy to false, all devices can provision Windows Hello for Business using software even if there isn't a usable TPM. If you don’t configure this setting, all devices can provision Windows Hello for Business using software if the TPM is non-functional or unavailable.
 
 Supported operations are Add, Get, Delete, and Replace.
 
@@ -126,7 +126,7 @@ This cloud service encrypts a recovery secret, which is stored locally on the cl
 
 Default value is false. If you enable this policy setting, the PIN recovery secret will be stored on the device and the user can change their PIN if needed.
 
-If you disable or do not configure this policy setting, the PIN recovery secret will not be created or stored. If the user's PIN is forgotten, the only way to get a new PIN is by deleting the existing PIN and creating a new one, which will require the user to re-register with any services the old PIN provided access to.
+If you disable or don't configure this policy setting, the PIN recovery secret won't be created or stored. If the user's PIN is forgotten, the only way to get a new PIN is by deleting the existing PIN and creating a new one, which will require the user to re-register with any services the old PIN provided access to.
 
 Supported operations are Add, Get, Delete, and Replace.
 
