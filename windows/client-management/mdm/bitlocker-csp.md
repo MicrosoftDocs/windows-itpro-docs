@@ -120,7 +120,7 @@ If you want to disable this policy, use the following SyncML:
 ```
 
 > [!NOTE]
-> Currently only used space encryption is supported when using this CSP. 
+> Currently full disk encryption is supported when using this CSP for silent encryption. For non-silent encryption, encryption type will depend on SystemDrivesEncryptionType and FixedDrivesEncryptionType configured on the device.
 
 <!--/Policy-->
 <!--Policy-->
