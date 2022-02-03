@@ -46,7 +46,7 @@ Azure Active Directory joined devices authenticate to Azure during sign-in and c
 |D | The Cloud AP provider receives the encrypted PRT with session key.  Using the device's private transport key, the Cloud AP provider decrypt the session key and protects the session key using the device's TPM.|
 |E | The Cloud AP provider returns a successful authentication response to lsass. Lsass caches the PRT, and informs winlogon of the success authentication.  Winlogon creates a logon session, loads the user's profile, and starts explorer.exe.|
 
-## Azure AD join authentication to Active Directory using Azure AD Kerberos
+## Azure AD join authentication to Active Directory using Azure AD Kerberos (Cloud Trust)
 
 ![Azure AD join authentication to Azure Active Directory.](images/howitworks/auth-aadj-cloudtrust-kerb.png)
 
@@ -81,7 +81,7 @@ Azure Active Directory joined devices authenticate to Azure during sign-in and c
 > [!NOTE]
 > You may have an on-premises domain federated with Azure AD. Once you have successfully provisioned Windows Hello for Business PIN/Bio on, any future login of Windows Hello for Business (PIN/Bio) sign-in will directly authenticate against Azure AD to get PRT, as well as authenticate against your DC (if LOS to DC is available) to get Kerberos as mentioned previously. AD FS federation is used only when Enterprise PRT calls are placed from the client. You need to have device write-back enabled to get "Enterprise PRT" from your federation.  
 
-## Hybrid Azure AD join authentication using Azure AD Kerberos
+## Hybrid Azure AD join authentication using Azure AD Kerberos (Cloud Trust)
 
 ![Hybrid Azure AD join authentication using Azure AD Kerberos](images/howitworks/auth-haadj-cloudtrust.png)
 
