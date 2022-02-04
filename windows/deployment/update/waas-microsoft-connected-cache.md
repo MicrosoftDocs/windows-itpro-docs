@@ -30,25 +30,25 @@ Microsoft Connected Cache is a Hybrid (mix of on-prem and cloud resources) SaaS 
 
 Even though your Microsoft Connected Cache scenario is not related to IoT, Azure IoT Edge is used as a more generic Linux container deployment and management infrastructure. The Azure IoT Edge runtime sits on your designated MCC device and performs management and communication operations. The runtime performs several functions important to manage Microsoft Connected Cache on your edge device:
 
-1.Installs and updates Microsoft Connected Cache on your edge device.
-2.Maintains Azure IoT Edge security standards on your edge device.
-3.Ensures that Microsoft Connected Cache is always running.
-4.Reports Microsoft Connected Cache health and usage to the cloud for remote monitoring.
+1. Installs and updates Microsoft Connected Cache on your edge device.
+2. Maintains Azure IoT Edge security standards on your edge device.
+3. Ensures that Microsoft Connected Cache is always running.
+4. Reports Microsoft Connected Cache health and usage to the cloud for remote monitoring.
   
 To deploy a functional Microsoft Connected Cache to your device, you must obtain the necessary keys that will provision the Connected Cache instance to communicate with Delivery Optimization services and enable the device to cache and deliver content.
   
-Figure 1 below describes the architecture of Microsoft Connected Cache built using IoT Edge.
+The architecture of Microsoft Connected Cache is described below.
   
-For more details information on Azure IoT Edge, please see the Azure IoT Edge [documentation](https://docs.microsoft.com/azure/iot-edge/about-iot-edge).
+For more details information on Azure IoT Edge, please see the Azure IoT Edge [documentation](/azure/iot-edge/about-iot-edge).
 
 ## How Microsoft Connected Cache Works  
 
-1.The Azure Management Portal used to create the Microsoft Connected Cache nodes.
-2.The Microsoft Connected Cache container deployed and provisioned to the server using the installer provided in the portal.
-3.Set the client policy in your management solution to point to the IP Address/FQDN of the cache server.
-4.Microsoft end-user devices make the range requests for content from the Microsoft Connected Cache node.
-5.Microsoft Connected Cache node pulls content from the CDN, seeds its local cache stored on disk and delivers the content to the client.
-6.Subsequent requests from end-user devices for content will now come from cache.
-7.If the Microsoft Connected Cache node is unavailable, the client will pull content from CDN to ensure uninterrupted service for your subscribers.
+1. The Azure Management Portal used to create the Microsoft Connected Cache nodes.
+2. The Microsoft Connected Cache container deployed and provisioned to the server using the installer provided in the portal.
+3. Set the client policy in your management solution to point to the IP Address/FQDN of the cache server.
+4. Microsoft end-user devices make the range requests for content from the Microsoft Connected Cache node.
+5. Microsoft Connected Cache node pulls content from the CDN, seeds its local cache stored on disk and delivers the content to the client.
+6. Subsequent requests from end-user devices for content will now come from cache.
+7. If the Microsoft Connected Cache node is unavailable, the client will pull content from CDN to ensure uninterrupted service for your subscribers.
 
-[[Figure 1: Microsoft Connected Cache Overview](images/waas-mcc-diag-overview.png)](images/waas-mcc-diag-overview.png#lightbox)
+![Microsoft Connected Cache Overview](images/waas-mcc-diag-overview.png#lightbox)
