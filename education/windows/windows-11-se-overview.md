@@ -57,7 +57,6 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 |NextUp Talker                          |1.0.49          |NextUp Technologies  |
 |NonVisual Desktop Access               |2021.3.1        |NV Access            |
 |NWEA Secure Testing Browser            |5.4.300.0       |NEWA                 |
-|Proctorio                              |1               |Proctorio            |
 |Secure Browser                         |4.8.3.376       |Questar, Inc         |
 |Read&Write for Windows (US English)    |12.0.60.0       |Texthelp Ltd.        |
 |Respondus Lockdown Browser             |2.0.8.03        |Respondus            |
