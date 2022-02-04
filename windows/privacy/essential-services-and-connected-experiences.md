@@ -106,12 +106,11 @@ To view endpoints for Windows Enterprise, see:
 
 - [Manage connection endpoints for Windows 11](manage-windows-11-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 21H1](manage-windows-21H1-endpoints.md)
+- [Manage connection endpoints for Windows 10, version 21H2](manage-windows-21H2-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 20H2](manage-windows-20h2-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 1909](manage-windows-1909-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 1903](manage-windows-1903-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 1809](manage-windows-1809-endpoints.md)
-- [Manage connection endpoints for Windows 10, version 1803](manage-windows-1803-endpoints.md)
-- [Manage connection endpoints for Windows 10, version 1709](manage-windows-1709-endpoints.md)
 
 To view endpoints for non-Enterprise Windows editions, see:
 
