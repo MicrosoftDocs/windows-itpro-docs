@@ -438,7 +438,7 @@ If you [turn off traffic for this endpoint](manage-connections-from-windows-oper
 
 The following endpoint is used by the Microsoft forward link redirection service (FWLink) to redirect permanent web links to their actual, sometimes transitory, URL. FWlinks are similar to URL shorteners, just longer.
 
-If you disable this endpoint, Windows Defender won't be able to update its malware definitions; links from Windows and other Microsoft products to the Web won't work; and PowerShell updateable Help won't update. To disable the traffic, instead disable the traffic that's getting forwarded.
+If you disable this endpoint, Windows Defender won't be able to update its malware definitions; links from Windows and other Microsoft products to the Web won't work; and PowerShell updatable Help won't update. To disable the traffic, instead disable the traffic that's getting forwarded.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
@@ -447,12 +447,13 @@ If you disable this endpoint, Windows Defender won't be able to update its malwa
 ## Other Windows 10 versions and editions
 
 To view endpoints for other versions of Windows 10 enterprise, see:
+
 - [Manage connection endpoints for Windows 10, version 1803](manage-windows-1803-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 1809](manage-windows-1809-endpoints.md)
 
 To view endpoints for non-Enterprise Windows 10 editions, see:
-- [Windows 10, version 1709, connection endpoints for non-Enterprise editions](windows-endpoints-1709-non-enterprise-editions.md)
-- [Windows 10, version 1803, connection endpoints for non-Enterprise editions](windows-endpoints-1803-non-enterprise-editions.md)
+
+- [Windows 10, version 21H1, connection endpoints for non-Enterprise editions](windows-endpoints-21H1-non-enterprise-editions.md)
 
 ## Related links
 
