@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
-title: Windows client deployment resources and documentation # < 60 chars
-summary: Learn about deploying and keeping Windows client devices up to date.  # < 160 chars
+title: Delivery Optimization for Windows client # < 60 chars
+summary: Learn about using peer to peer downloads on Windows clients along with Microsoft Connected Cache.  # < 160 chars
 
 metadata:
-  title: Windows client deployment resources and documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn about deploying Windows 10 and keeping it up to date in your organization. # Required; article description that is displayed in search results. < 160 chars.
+  title: Delivery Optimization # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about using peer to peer downloads on Windows clients along with Microsoft Connected Cache. # Required; article description that is displayed in search results. < 160 chars.
   services: windows-10
   ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice
@@ -15,7 +15,7 @@ metadata:
     - highpri
   author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
   ms.author: greglin #Required; microsoft alias of author; optional team alias.
-  ms.date: 06/24/2021 #Required; mm/dd/yyyy format.
+  ms.date: 02/04/2022 #Required; mm/dd/yyyy format.
   localization_priority: medium
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -24,7 +24,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Plan
+  - title: Overview
     linkLists:
       - linkListType: overview
         links:
@@ -38,7 +38,7 @@ landingContent:
             url:  update/plan-define-strategy.md
 
   # Card (optional)
-  - title: Prepare
+  - title: Configure Delivery Optimization on Windows clients
     linkLists:
       - linkListType: how-to-guide
         links:
@@ -50,9 +50,9 @@ landingContent:
             url: deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md
 
   # Card (optional)
-  - title: Deploy
+  - title: Configure Delivery Optimization on Microsoft Endpoint Manager
     linkLists:
-      - linkListType: deploy
+      - linkListType: how-to-guide
         links:
           - text: Deploy Windows 10 with Autopilot
             url: /mem/autopilot
@@ -62,9 +62,9 @@ landingContent:
             url: update/deploy-updates-configmgr.md
  
   # Card
-  - title: Overview
+  - title: Microsoft Connected Cache for Enterprises (Private Preview)
     linkLists:
-      - linkListType: overview
+      - linkListType: concept
         links:
           - text: What's new in Windows deployment
             url: deploy-whats-new.md
@@ -78,7 +78,7 @@ landingContent:
             url:  /mem/autopilot/windows-autopilot
 
   # Card
-  - title: Support remote work
+  - title: Microsoft Connected Cache for ISPs (Private Preview)
     linkLists:
       - linkListType: concept
         links:
@@ -92,7 +92,7 @@ landingContent:
             url: /microsoftteams/faq-support-remote-workforce
 
   # Card (optional)
-  - title: Microsoft Learn
+  - title: Resources
     linkLists:
       - linkListType: learn
         links:
