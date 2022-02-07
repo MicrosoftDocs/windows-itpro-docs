@@ -4,7 +4,7 @@ description: Learn how the WindowsLicensing configuration service provider (CSP)
 ms.assetid: E6BC6B0D-1F16-48A5-9AC4-76D69A7EDDA6
 ms.reviewer: 
 manager: dansimp
-ms.author: nimishasatapathy
+ms.author: v-nsatapathy
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
