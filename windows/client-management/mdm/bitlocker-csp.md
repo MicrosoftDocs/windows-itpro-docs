@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 04/16/2020
+ms.date: 02/04/2022
 ms.reviewer: 
 manager: dansimp
 ms.collection: highpri
@@ -21,7 +21,7 @@ The BitLocker configuration service provider (CSP) is used by the enterprise to 
 > 
 > You must send all the settings together in a single SyncML to be effective.
 
-A Get operation on any of the settings, except for RequireDeviceEncryption and RequireStorageCardEncryption, returns
+A `Get` operation on any of the settings, except for `RequireDeviceEncryption` and `RequireStorageCardEncryption`, returns
 the setting configured by the admin.
 
 For RequireDeviceEncryption and RequireStorageCardEncryption, the Get operation returns the actual status of enforcement to the admin, such as if Trusted Platform Module (TPM) protection is required and if encryption is required. And if the device has BitLocker enabled but with password protector, the status reported is 0. A Get operation on RequireDeviceEncryption does not verify that a minimum PIN length is enforced (SystemDrivesMinimumPINLength).
@@ -120,7 +120,7 @@ If you want to disable this policy, use the following SyncML:
 ```
 
 > [!NOTE]
-> Currently only used space encryption is supported when using this CSP. 
+> Currently full disk encryption is supported when using this CSP for silent encryption. For non-silent encryption, encryption type will depend on `SystemDrivesEncryptionType` and `FixedDrivesEncryptionType` configured on the device.
 
 <!--/Policy-->
 <!--Policy-->
