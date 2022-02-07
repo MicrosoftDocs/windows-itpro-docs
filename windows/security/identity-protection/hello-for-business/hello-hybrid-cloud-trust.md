@@ -95,7 +95,7 @@ You can configure the Enable Windows Hello for Business Group Policy setting for
 Cloud trust requires setting a dedicated policy for it to be enabled. This policy is only available as a computer configuration.
 
 > [!NOTE]
-> If you deployed Windows Hello for Business configuration using both Group Policy and Microsoft Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about deploying Windows Hello for Business configuration using Microsoft Intune, see [Windows device settings to enable Windows Hello for Business in Intune](/mem/intune/protect/identity-protection-windows-settings) and [PassportForWork CSP](/windows/client-management/mdm/passportforwork-csp.md). For more information about policy conflicts, see [Policy conflicts from multiple policy sources](./hello-manage-in-organization#policy-conflicts-from-multiple-policy-sources)
+> If you deployed Windows Hello for Business configuration using both Group Policy and Microsoft Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about deploying Windows Hello for Business configuration using Microsoft Intune, see [Windows device settings to enable Windows Hello for Business in Intune](/mem/intune/protect/identity-protection-windows-settings) and [PassportForWork CSP](/windows/client-management/mdm/passportforwork-csp.md). For more information about policy conflicts, see [Policy conflicts from multiple policy sources](hello-manage-in-organization.md#policy-conflicts-from-multiple-policy-sources)
 
 ##### Update Group Policy Objects
 
@@ -155,7 +155,7 @@ You can also follow these steps to create a device configuration policy instead 
 1. For Profile Type, select **Templates** and select the **Identity Protection** Template.
 1. Name the profile with a familiar name. For example, "Windows Hello for Business".
 1. In **Configurations settings**, set the **Configure Windows Hello for Business** option to **Enable**.
-1. After setting Configure Windows Hello for Business to Enable, multiple policy options become available. These policies are optional to configure. More information on these policies is available in our documentation on managing [Windows Hello for Business in your organization](hello-manage-in-organization#mdm-policy-settings-for-windows-hello-for-business). We recommend setting **Use a Trusted Platform Module (TPM)** to **Enable**.
+1. After setting Configure Windows Hello for Business to Enable, multiple policy options become available. These policies are optional to configure. More information on these policies is available in our documentation on managing [Windows Hello for Business in your organization](hello-manage-in-organization.md#mdm-policy-settings-for-windows-hello-for-business). We recommend setting **Use a Trusted Platform Module (TPM)** to **Enable**.
 
     ![Intune custom device configuration policy creation](./images/hello-intune-enable.png)
 
