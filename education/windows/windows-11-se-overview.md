@@ -50,6 +50,7 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 |GoGuardian                             |1.4.4           |GoGuardian           |
 |Google Chrome                          |97.0.4692.71    |Google               |
 |Jaws for Windows                       |2022.2112.24 ILM|Freedom Scientific   |
+|Kite Student Portal                    | 8.0.1          | Dynamic Learning Maps|
 |Kortext                                |2.3.418.0       |Kortext              |
 |LanSchool                              |9.1.0.46        |Stoneware            |
 |Lightspeed Smart Agent                 |1.9.1           |Lightspeed Systems   |
@@ -57,13 +58,16 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 |NextUp Talker                          |1.0.49          |NextUp Technologies  |
 |NonVisual Desktop Access               |2021.3.1        |NV Access            |
 |NWEA Secure Testing Browser            |5.4.300.0       |NEWA                 |
-|Secure Browser                         |4.8.3.376       |Questar, Inc         |
 |Read&Write for Windows (US English)    |12.0.60.0       |Texthelp Ltd.        |
+|Safe Exam Broswer                      |3.3.1           |Safe Exam Broswer    |
+|Secure Browser                         |4.8.3.376       |Questar, Inc         |
+|SuperNova Magnifier & Screen Reader    | 20.03          | Dolphin Computer Access |
+|SuperNova Magnifier & Speech           | 20.03          | Dolphin Computer Access |
 |Respondus Lockdown Browser             |2.0.8.03        |Respondus            |
 |TestNav                                |1.10.2.0        |Pearson Education Inc|
 |SecureBrowser                          |14.0.0          |Cambium Development  |
 |Zoom                                   |5.9.1 (2581)    |Zoom                 |
-
+|ZoomText Magnifier/Reader              |2022.2109.25ILM | AI Squared          |
 ---
 
 ### Enabled apps
