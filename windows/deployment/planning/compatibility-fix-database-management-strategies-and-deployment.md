@@ -98,7 +98,7 @@ If you decide to use the centralized compatibility-fix database deployment strat
 
 1.  Verify that your application-compatibility testers are performing their tests on computers with the latest version of your compatibility-fix database. For example, Custom DB1.
 
-2.  If the tester determines that an application requires an extra compatibility fix that isn'9t a part of the original compatibility-fix database, the tester must create a new custom compatibility database with all of the required information for that single fix, for example, Custom DB2.
+2.  If the tester determines that an application requires an extra compatibility fix that isn't a part of the original compatibility-fix database, the tester must create a new custom compatibility database with all of the required information for that single fix, for example, Custom DB2.
 
 3.  The tester applies the new Custom DB2 information to the application and then tests for both the functionality and integration, to ensure that the compatibility issues are addressed.
 

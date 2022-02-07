@@ -20,24 +20,24 @@ manager: dansimp
 -   Windows 10
 
 
-Privacy is important to us, we want to provide you with ways to customize the OS diagnostic data, consumer experiences, Cortana, search, as well as some of the preinstalled apps, for usage with [education editions of Windows 10](windows-editions-for-education-customers.md) in education environments. These features work on all Windows 10 editions, but education editions of Windows 10 have the settings preconfigured. We recommend that all Windows 10 devices in an education setting be configured with **[SetEduPolicies](#setedupolicies)** enabled. For more information, see the following table. To learn more about Microsoft's commitment to privacy, see [Windows 10 and privacy](https://go.microsoft.com/fwlink/?LinkId=809305).
+Privacy is important to us, we want to provide you with ways to customize the OS diagnostic data, consumer experiences, Cortana, search, as well as some of the preinstalled apps, for usage with [education editions of Windows 10](windows-editions-for-education-customers.md) in education environments. These features work on all Windows 10 editions, but education editions of Windows 10 have the settings preconfigured. We recommend that all Windows 10 devices in an education setting be configured with **[SetEduPolicies](#setedupolicies)** enabled. See the following table for more information. To learn more about Microsoft's commitment to privacy, see [Windows 10 and privacy](https://go.microsoft.com/fwlink/?LinkId=809305).
 
 We want all students to have the chance to use the apps they need for success in the classroom and all school personnel to have apps they need for their job. Students and school personnel who use assistive technology apps not available in the Microsoft Store for Education, and use devices running Windows 10 S, will be able to configure the device at no additional charge to Windows 10 Pro Education. To learn more about the steps to configure this, see [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md).
 
-In Windows 10, version 1703 (Creators Update), it's straightforward to configure Windows to be education ready.
+In Windows 10, version 1703 (Creators Update), it is straightforward to configure Windows to be education ready.
 
 | Area | How to configure | What this does | Windows 10 Education | Windows 10 Pro Education | Windows 10 S | 
 | --- | --- | --- | --- | --- | --- |
 | **Diagnostic Data** | **AllowTelemetry** | Sets Diagnostic Data to [Basic](/windows/configuration/configure-windows-telemetry-in-your-organization) | This is already set | This is already set | The policy must be set |
 | **Microsoft consumer experiences** | **SetEduPolicies** | Disables suggested content from Windows such as app recommendations | This is already set | This is already set | The policy must be set |
-| **Cortana** | **AllowCortana** | Disables Cortana </br></br> * Cortana is enabled by default on all editions in Windows 10, version 1703 | If using Windows 10 Education, upgrading from Windows 10, version 1607 to Windows 10, version 1703 will enable Cortana. </br></br> See the [Recommended configuration](#recommended-configuration) section for recommended Cortana settings. | If using Windows 10 Pro Education, upgrading from Windows 10, version 1607 to Windows 10, version 1703 will enable Cortana. </br></br> See the [Recommended configuration](#recommended-configuration) section for recommended Cortana settings. | See the [Recommended configuration](#recommended-configuration) section for recommended Cortana settings. |
+| **Cortana** | **AllowCortana** | Disables Cortana </br></br> * Cortana is enabled by default on all editions in Windows 10, version 1703 | If using Windows 10 Education, upgrading from Windows 10, version 1607 to Windows 10, version 1703 will enable Cortana. </br></br> See the [Recommended configuration](#recommended-configuration) section below for recommended Cortana settings. | If using Windows 10 Pro Education, upgrading from Windows 10, version 1607 to Windows 10, version 1703 will enable Cortana. </br></br> See the [Recommended configuration](#recommended-configuration) section below for recommended Cortana settings. | See the [Recommended configuration](#recommended-configuration) section below for recommended Cortana settings. |
 | **Safe search** | **SetEduPolicies** | Locks Bing safe search to Strict in Microsoft Edge | This is already set | This is already set | The policy must be set |
 | **Bing search advertising** | Ad free search with Bing | Disables ads when searching the internet with Bing in Microsoft Edge. See [Ad-free search with Bing](#ad-free-search-with-bing | View configuration instructions as detailed in [Ad-free search with Bing](#ad-free-search-with-bing) | View configuration instructions as detailed in [Ad-free search with Bing](#ad-free-search-with-bing) | View configuration instructions as detailed in [Ad-free search with Bing](#ad-free-search-with-bing) |
-| **Apps** | **SetEduPolicies** | Preinstalled apps like Microsoft Edge, Movies & TV, Groove, and Skype become education ready </br></br> * Any app can detect Windows is running in an education-ready configuration through [IsEducationEnvironment](/uwp/api/windows.system.profile.educationsettings) | This is already set | This is already set | The policy must be set |
+| **Apps** | **SetEduPolicies** | Preinstalled apps like Microsoft Edge, Movies & TV, Groove, and Skype become education ready </br></br> * Any app can detect Windows is running in an education ready configuration through [IsEducationEnvironment](/uwp/api/windows.system.profile.educationsettings) | This is already set | This is already set | The policy must be set |
 
 
 ## Recommended configuration
-It's easy to be education ready when using Microsoft products. We recommend the following configuration:
+It is easy to be education ready when using Microsoft products. We recommend the following configuration:
 
 1. Use an Office 365 Education tenant. 
 
@@ -55,9 +55,9 @@ It's easy to be education ready when using Microsoft products. We recommend the 
       * Use Set up School PCs or Windows Configuration Designer to bulk enroll to Azure AD.
       * Manually Azure AD join the PC during the Windows device setup experience.
    3. Enroll the PCs in MDM.
-      * If you've activated Intune for Education in your Azure AD tenant, enrollment will happen automatically when the PC is joined to Azure AD. Intune for Education will automatically set **SetEduPolicies** to True and **AllowCortana** to False.
+      * If you have activated Intune for Education in your Azure AD tenant, enrollment will happen automatically when the PC is joined to Azure AD. Intune for Education will automatically set **SetEduPolicies** to True and **AllowCortana** to False.
    4. Ensure that needed assistive technology apps can be used.
-      * If you have students or school personnel who rely on assistive technology apps that aren't available in the Microsoft Store for Education, and who are using a Windows 10 S device, configure their device to Windows 10 Pro Education to allow the download and use of non-Microsoft Store assistive technology apps. See [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md) for more info.
+      * If you have students or school personnel who rely on assistive technology apps that are not available in the Microsoft Store for Education, and who are using a Windows 10 S device, configure their device to Windows 10 Pro Education to allow the download and use of non-Microsoft Store assistive technology apps. See [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md) for more info.
 
 4. Distribute the PCs to students.
 
@@ -77,7 +77,7 @@ You can set all the education compliance areas through both provisioning and man
 - [Intune for Education](/intune-education/available-settings)
 
 ## AllowCortana
-**AllowCortana** is a policy that enables or disables Cortana. It's a policy node in the Policy configuration service provider, [AllowCortana](/windows/client-management/mdm/policy-configuration-service-provider#experience-allowcortana). 
+**AllowCortana** is a policy that enables or disables Cortana. It is a policy node in the Policy configuration service provider, [AllowCortana](/windows/client-management/mdm/policy-configuration-service-provider#experience-allowcortana). 
 
 > [!NOTE]
 > See the [Recommended configuration](#recommended-configuration) section for recommended Cortana settings.
@@ -109,7 +109,7 @@ Set **Computer Configuration > Administrative Templates > Windows Components > S
         ![Set AllowCortana to No in Windows Configuration Designer.](images/allowcortana_wcd.png)
 
 ## SetEduPolicies
-**SetEduPolicies** is a policy that applies a set of configuration behaviors to Windows. It's a policy node in the [SharedPC configuration service provider](/windows/client-management/mdm/sharedpc-csp).
+**SetEduPolicies** is a policy that applies a set of configuration behaviors to Windows. It is a policy node in the [SharedPC configuration service provider](/windows/client-management/mdm/sharedpc-csp).
 
 Use one of these methods to set this policy. 
 
@@ -126,11 +126,11 @@ Use one of these methods to set this policy.
       ![Create an OMA URI for SetEduPolices.](images/setedupolicies_omauri.png)
 
 ### Group Policy
-**SetEduPolicies** isn't natively supported in Group Policy. Instead, use the [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal) to set the policy in [MDM SharedPC](/windows/win32/dmwmibridgeprov/mdm-sharedpc). 
+**SetEduPolicies** is not natively supported in Group Policy. Instead, use the [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal) to set the policy in [MDM SharedPC](/windows/win32/dmwmibridgeprov/mdm-sharedpc). 
 
 For example:
 
-- Open PowerShell as an administrator and enter the following command:
+- Open PowerShell as an administrator and enter the following:
 
     ```
     $sharedPC = Get-CimInstance -Namespace "root\cimv2\mdm\dmmap" -ClassName "MDM_SharedPC"

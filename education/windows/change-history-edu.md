@@ -85,14 +85,14 @@ New or changed topic | Description
 
 | New or changed topic | Description |
 | --- | ---- |
-| [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md) | New. If you have an education tenant and use devices Windows 10 Pro or Windows 10 S in your schools, find out how you can opt in to a free switch to Windows 10 Pro Education. |
+| [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md) | New. If you have an education tenant and use devices Windows 10 Pro or Windows 10 S in your schools, find out how you can opt-in to a free switch to Windows 10 Pro Education. |
 | [Use the Set up School PCs app](use-set-up-school-pcs-app.md) | Updated. Now includes network tips and updated step-by-step instructions that show the latest updates to the app such as Wi-Fi setup. |
 
 ## RELEASE: Windows 10, version 1703 (Creators Update)
 
 | New or changed topic | Description|
 | --- | --- |
-| [Get started: Deploy and manage a full cloud IT solution with Microsoft Education](/microsoft-365/education/deploy/) | New. Learn how you can quickly and easily use the new Microsoft Education system to implement a full IT cloud solution for your school. |
+| [Get started: Deploy and manage a full cloud IT solution with Microsoft Education](/microsoft-365/education/deploy/) | New. Learn how you can you can quickly and easily use the new Microsoft Education system to implement a full IT cloud solution for your school. |
 | [Microsoft Education documentation and resources](/education) | New. Find links to more content for IT admins, teachers, students, and education app developers. |
 | [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md)  | New. Provides guidance on ways to configure the OS diagnostic data, consumer experiences, Cortana, search, as well as some of the preinstalled apps, so that Windows is ready for your school. |
 | [Deployment recommendations for school IT administrators](edu-deployment-recommendations.md)  | Updated the screenshots and related instructions to reflect the current UI and experience.  |
@@ -111,7 +111,7 @@ New or changed topic | Description
 
 | New or changed topic | Description |
 | --- | --- |
-| [Upgrade Windows 10 Pro to Pro Education from Microsoft Store for Business] | New. Learn how to opt in to a free upgrade to Windows 10 Pro Education. As of May 2017, this topic has been replaced with [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md). |
+| [Upgrade Windows 10 Pro to Pro Education from Microsoft Store for Business] | New. Learn how to opt-in to a free upgrade to Windows 10 Pro Education. As of May 2017, this topic has been replaced with [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md). |
 
 ## November 2016
 
