@@ -1,6 +1,6 @@
 ---
 title: WindowsAutoPilot DDF file
-description: learn about the OMA DM device description framework (DDF) for the WindowsDefenderApplicationGuard DDF file configuration service provider (CSP).
+description: Learn how without the ability to mark a device as remediation required, the device will remain in a broken state, for the WindowsAutoPilot DDF file configuration service provider (CSP) .
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
