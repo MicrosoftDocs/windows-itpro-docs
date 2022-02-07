@@ -148,7 +148,7 @@ If you do not configure this policy setting, the administrator can use the Probl
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Windows Customer Experience Improvement Program*
+-   GP Friendly name: *Turn off Windows Customer Experience Improvement Program*
 -   GP name: *CEIPEnable*
 -   GP path: *System\Internet Communication Management\Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
@@ -196,7 +196,7 @@ If you disable or do not configure this policy setting, your computer will conta
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Automatic Root Certificates Update*
+-   GP Friendly name: *Turn off Automatic Root Certificates Update*
 -   GP name: *CertMgr_DisableAutoRootUpdates*
 -   GP path: *System\Internet Communication Management\Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
@@ -247,7 +247,7 @@ If you disable or do not configure this policy setting, users can choose to prin
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off printing over HTTP*
+-   GP  Friendly name: *Turn off printing over HTTP*
 -   GP name: *DisableHTTPPrinting_1*
 -   GP path: *System\Internet Communication Management\Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
@@ -300,7 +300,7 @@ If you disable or do not configure this policy setting, users can download print
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off downloading of print drivers over HTTP*
+-   GP Friendly name: *Turn off downloading of print drivers over HTTP*
 -   GP name: *DisableWebPnPDownload_1*
 -   GP path: *System\Internet Communication Management\Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
@@ -353,7 +353,7 @@ Also see "Turn off Windows Update device driver search prompt" in "Administrativ
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Windows Update device driver searching*
+-   GP Friendly name: *Turn off Windows Update device driver searching*
 -   GP name: *DriverSearchPlaces_DontSearchWindowsUpdate*
 -   GP path: *System\Internet Communication Management\Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
@@ -403,7 +403,7 @@ Also, see "Events.asp URL", "Events.asp program", and "Events.asp Program Comman
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Event Viewer "Events.asp" links*
+-   GP Friendly name: *Turn off Event Viewer "Events.asp" links*
 -   GP name: *EventViewer_DisableLinks*
 -   GP path: *System\Internet Communication Management\Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
@@ -453,7 +453,7 @@ You might want to enable this policy setting for users who do not have Internet 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Help and Support Center "Did you know?" content*
+-   GP Friendly name: *Turn off Help and Support Center "Did you know?" content*
 -   GP name: *HSS_HeadlinesPolicy*
 -   GP path: *System\Internet Communication Management\Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
@@ -501,7 +501,7 @@ If you disable or do not configure this policy setting, the Knowledge Base is se
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Help and Support Center Microsoft Knowledge Base search*
+-   GP Friendly name: *Turn off Help and Support Center Microsoft Knowledge Base search*
 -   GP name: *HSS_KBSearchPolicy*
 -   GP path: *System\Internet Communication Management\Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
@@ -549,7 +549,7 @@ If you do not configure this policy setting, all of the the policy settings in t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Restrict Internet communication*
+-   GP Friendly name: *Restrict Internet communication*
 -   GP name: *InternetManagement_RestrictCommunication_1*
 -   GP path: *System\Internet Communication Management*
 -   GP ADMX file name: *ICM.admx*
@@ -596,7 +596,7 @@ If you do not configure this policy setting, all of the the policy settings in t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Restrict Internet communication*
+-   GP Friendly name: *Restrict Internet communication*
 -   GP name: *InternetManagement_RestrictCommunication_2*
 -   GP path: *System\Internet Communication Management*
 -   GP ADMX file name: *ICM.admx*
@@ -642,7 +642,7 @@ If you disable or do not configure this policy setting, users can connect to Mic
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Internet Connection Wizard if URL connection is referring to Microsoft.com*
+-   GP Friendly name: *Turn off Internet Connection Wizard if URL connection is referring to Microsoft.com*
 -   GP name: *NC_ExitOnISP*
 -   GP path: *System\Internet Communication Management\Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
@@ -690,7 +690,7 @@ Note that registration is optional and involves submitting some personal informa
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Registration if URL connection is referring to Microsoft.com*
+-   GP Friendly name: *Turn off Registration if URL connection is referring to Microsoft.com*
 -   GP name: *NC_NoRegistration*
 -   GP path: *System\Internet Communication Management\Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
@@ -742,7 +742,7 @@ Also see the "Configure Error Reporting", "Display Error Notification" and "Disa
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Windows Error Reporting*
+-   GP Friendly name: *Turn off Windows Error Reporting*
 -   GP name: *PCH_DoNotReport*
 -   GP path: *System\Internet Communication Management\Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
@@ -791,7 +791,7 @@ If you disable or do not configure this policy setting, users can access the Win
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off access to all Windows Update features*
+-   GP Friendly name: *Turn off access to all Windows Update features*
 -   GP name: *RemoveWindowsUpdate_ICM*
 -   GP path: *System\Internet Communication Management\Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
@@ -842,7 +842,7 @@ If you disable or do not configure this policy setting, Search Companion downloa
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Search Companion content file updates*
+-   GP Friendly name: *Turn off Search Companion content file updates*
 -   GP name: *SearchCompanion_DisableFileUpdates*
 -   GP path: *System\Internet Communication Management\Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
@@ -890,7 +890,7 @@ If you disable or do not configure this policy setting, the user is allowed to u
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Internet File Association service*
+-   GP Friendly name: *Turn off Internet File Association service*
 -   GP name: *ShellNoUseInternetOpenWith_1*
 -   GP path: *System\Internet Communication Management\Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
@@ -938,7 +938,7 @@ If you disable or do not configure this policy setting, the user is allowed to u
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Internet File Association service*
+-   GP Friendly name: *Turn off Internet File Association service*
 -   GP name: *ShellNoUseInternetOpenWith_2*
 -   GP path: *System\Internet Communication Management\Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
@@ -986,7 +986,7 @@ If you disable or do not configure this policy setting, the user is allowed to u
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off access to the Store*
+-   GP Friendly name: *Turn off access to the Store*
 -   GP name: *ShellNoUseStoreOpenWith_1*
 -   GP path: *System\Internet Communication Management\Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
@@ -1034,7 +1034,7 @@ If you disable or do not configure this policy setting, the user is allowed to u
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off access to the Store*
+-   GP Friendly name: *Turn off access to the Store*
 -   GP name: *ShellNoUseStoreOpenWith_2*
 -   GP path: *System\Internet Communication Management\Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
@@ -1082,7 +1082,7 @@ See the documentation for the web publishing and online ordering wizards for mor
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Internet download for Web publishing and online ordering wizards*
+-   GP Friendly name: *Turn off Internet download for Web publishing and online ordering wizards*
 -   GP name: *ShellPreventWPWDownload_1*
 -   GP path: *System\Internet Communication Management\Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
@@ -1128,7 +1128,7 @@ If you disable or do not configure this policy setting, the task is displayed.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off the "Order Prints" picture task*
+-   GP Friendly name: *Turn off the "Order Prints" picture task*
 -   GP name: *ShellRemoveOrderPrints_1*
 -   GP path: *System\Internet Communication Management\Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
@@ -1176,7 +1176,7 @@ If you disable or do not configure this policy setting, the task is displayed.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off the "Order Prints" picture task*
+-   GP Friendly name: *Turn off the "Order Prints" picture task*
 -   GP name: *ShellRemoveOrderPrints_2*
 -   GP path: *System\Internet Communication Management\Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
@@ -1222,7 +1222,7 @@ If you enable this policy setting, these tasks are removed from the File and Fol
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off the "Publish to Web" task for files and folders*
+-   GP Friendly name: *Turn off the "Publish to Web" task for files and folders*
 -   GP name: *ShellRemovePublishToWeb_1*
 -   GP path: *System\Internet Communication Management\Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
@@ -1270,7 +1270,7 @@ If you disable or do not configure this policy setting, the tasks are shown.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off the "Publish to Web" task for files and folders*
+-   GP Friendly name: *Turn off the "Publish to Web" task for files and folders*
 -   GP name: *ShellRemovePublishToWeb_2*
 -   GP path: *System\Internet Communication Management\Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
@@ -1320,7 +1320,7 @@ If you disable this policy setting, Windows Messenger collects anonymous usage i
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off the Windows Messenger Customer Experience Improvement Program*
+-   GP Friendly name: *Turn off the Windows Messenger Customer Experience Improvement Program*
 -   GP name: *WinMSG_NoInstrumentation_1*
 -   GP path: *System\Internet Communication Management\Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
@@ -1372,7 +1372,7 @@ If you do not configure this policy setting, users have the choice to opt in and
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off the Windows Messenger Customer Experience Improvement Program*
+-   GP Friendly name: *Turn off the Windows Messenger Customer Experience Improvement Program*
 -   GP name: *WinMSG_NoInstrumentation_2*
 -   GP path: *System\Internet Communication Management\Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*

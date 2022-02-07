@@ -41,7 +41,13 @@ manager: dansimp
     <a href="#experience-allowsaveasofofficefiles">Experience/AllowSaveAsOfOfficeFiles</a>
   </dd>
   <dd>
+    <a href="#experience-allowscreencapture">Experience/AllowScreenCapture</a>
+  </dd>
+  <dd>
     <a href="#experience-allowsharingofofficefiles">Experience/AllowSharingOfOfficeFiles</a>
+  </dd>
+  <dd>
+    <a href="#experience-allowsimerrordialogpromptwhennosim">Experience/AllowSIMErrorDialogPromptWhenNoSIM</a>
   </dd>
   <dd>
     <a href="#experience-allowsyncmysettings">Experience/AllowSyncMySettings</a>
@@ -363,12 +369,83 @@ This policy is deprecated.
 <hr/>
 
 <!--Policy-->
+<a href="" id="experience-allowscreencapture"></a>**Experience/AllowScreenCapture**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+
+<!--/Description-->
+<!--SupportedValues-->
+Describe what value are supported in by this policy and meaning of each value is default value.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="experience-allowsharingofofficefiles"></a>**Experience/AllowSharingOfOfficeFiles**  
 
 <!--Description-->
 This policy is deprecated.
 
 <!--/Description-->
+<!--/Policy-->
+
+<!--Policy-->
+<a href="" id="experience-allowsimerrordialogpromptwhennosim"></a>**Experience/AllowSIMErrorDialogPromptWhenNoSIM**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+<!--/Description-->
+<!--SupportedValues-->
+Describes what value are supported in by this policy and meaning of each value is default value.
+
+<!--/SupportedValues-->
 <!--/Policy-->
 
 <hr/>

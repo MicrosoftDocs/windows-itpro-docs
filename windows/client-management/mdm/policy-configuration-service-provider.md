@@ -7659,6 +7659,17 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### MemoryDump policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-memorydump.md#memorydump-allowcrashdump" id="memorydump-allowcrashdump">MemoryDump/AllowCrashDump</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-memorydump.md#memorydump-allowlivedump" id="memorydump-allowlivedump">MemoryDump/AllowLiveDump</a>
+  </dd>
+</dl>
+
 ### Messaging policies
 
 <dl>
@@ -7774,6 +7785,14 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-networklistmanager.md#networklistmanager-configuredtlsauthenticationnetworkname" id="networklistmanager-configuredtlsauthenticationnetworkname">NetworkListManager/ConfiguredTLSAuthenticationNetworkName</a>
   </dd>
   <dd>
+</dl>
+
+### NewsAndInterests policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-newsandinterests.md#newsandinterests-allownewsandinterests" id="newsandinterests-allownewsandinterests">NewsAndInterests/AllowNewsAndInterests</a>
+  </dd>
 </dl>
 
 ### Notifications policies
@@ -8176,6 +8195,17 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-remoteassistance.md#remoteassistance-unsolicitedremoteassistance" id="remoteassistance-unsolicitedremoteassistance">RemoteAssistance/UnsolicitedRemoteAssistance</a>
+  </dd>
+</dl>
+
+### RemoteDesktop policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-remotedesktop.md#remotedesktop-autosubscription" id="remotedesktop-autosubscription">RemoteDesktop/AutoSubscription</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-remotedesktop.md#remotedesktop-loadaadcredkeyfromprofile" id="remotedesktop-loadaadcredkeyfromprofile">RemoteDesktop/LoadAadCredKeyFromProfile</a>
   </dd>
 </dl>
 
