@@ -24,7 +24,7 @@ There are two types of ports:
  
 Clients when connecting to an application or service will make use of an ephemeral port from its machine to connect to a well-known port defined for that application or service. A browser on a client machine will use an ephemeral port to connect to https://www.microsoft.com on port 443.
  
-In a scenario where the same browser is creating a lot of connections to multiple website, for any new connection that the browser is attempting, an ephemeral port is used. After some time, you will notice that the connections will start to fail and one high possibility for this would be because the browser has used all the available ports to make connections outside and any new attempt to establish a connection will fail as there are no more ports available. When all the ports are on a machine are used, we term it as *port exhaustion*. 
+In a scenario where the same browser is creating a lot of connections to multiple website, for any new connection that the browser is attempting, an ephemeral port is used. After some time, you will notice that the connections will start to fail and one high possibility for this would be because the browser has used all the available ports to make connections outside and any new attempt to establish a connection will fail as there are no more ports available. When all the ports on a machine are used, we term it as *port exhaustion*. 
  
 ## Default dynamic port range for TCP/IP
  
@@ -95,7 +95,7 @@ If you suspect that the machine is in a state of port exhaustion:
 
     ![Screenshot of netstate command output.](images/tcp-ts-20.png)
 
-    After a graceful closure or an abrupt closure of a session, after a period of 4 minutes (default), the port used the process or application would be released back to the available pool. During this 4 minutes, the TCP connection state will be TIME_WAIT state. In a situation where you suspect port exhaustion, an application or process will not be able to release all the ports that it has consumed and will remain in the TIME_WAIT state.
+    After a graceful closure or an abrupt closure of a session, after a period of 4 minutes (default), the port used by the process or application would be released back to the available pool. During this 4 minutes, the TCP connection state will be TIME_WAIT state. In a situation where you suspect port exhaustion, an application or process will not be able to release all the ports that it has consumed and will remain in the TIME_WAIT state.
      
     You may also see CLOSE_WAIT state connections in the same output, however CLOSE_WAIT state is a state when one side of the TCP peer has no more data to send (FIN sent) but is able to receive data from the other end. This state does not necessarily indicate port exhaustion.
      
