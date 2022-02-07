@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 1/05/2022
+ms.date: 2/07/2022
 ms.reviewer: 
 ---
 # Hybrid Cloud Trust Deployment
@@ -53,39 +53,36 @@ More details on how Azure AD Kerberos enables access to on-premises resources ar
 | --- | --- |
 | Multi-factor Authentication | This requirement can be met using [Azure AD Multi-Factor Authentication](/azure/active-directory/authentication/howto-mfa-getstarted.md), multi-factor authentication provided through AD FS, or a comparable solution. |
 | Windows 10 version 21H2 or Windows 11 and later | There is no Windows version support difference between Azure AD joined and Hybrid Azure AD joined devices. |
-| Windows Server 2016 or later Domain Controllers | Domain controllers should be fully patched to support updates needed for Azure AD Kerberos. If you are using Windows Server 2016 make sure [KB3534307](https://support.microsoft.com/en-us/topic/january-23-2020-kb4534307-os-build-14393-3474-b181594e-2c6a-14ea-e75b-678efea9d27e) is installed. If you are using Server 2019 make sure [KB4534321](https://support.microsoft.com/en-us/topic/january-23-2020-kb4534321-os-build-17763-1012-023e84c3-f9aa-3b55-8aff-d512911c459f) is installed. |
-| Azure AD Connect version 1.4.32.0 or later | This version packages the tools for setting up Azure AD Kerberos. Alternatively the required tools can be installed from powershell gallery. |
-| Device management | Windows Hello for Business cloud trust can be managed with group policy or through Microsoft Intune. |
+| Fully patched Windows Server 2016 or later Domain Controllers | Domain controllers should be fully patched to support updates needed for Azure AD Kerberos. If you are using Windows Server 2016 make sure [KB3534307](https://support.microsoft.com/en-us/topic/january-23-2020-kb4534307-os-build-14393-3474-b181594e-2c6a-14ea-e75b-678efea9d27e) must be installed. If you are using Server 2019 [KB4534321](https://support.microsoft.com/en-us/topic/january-23-2020-kb4534321-os-build-17763-1012-023e84c3-f9aa-3b55-8aff-d512911c459f) must be installed. |
+| Azure AD Kerberos Powershell module | This module is used for enabling and managing Azure AD Kerberos. It is available through the [Powershell Gallery](https://www.powershellgallery.com/packages/AzureADHybridAuthenticationManagement).|
+| Device management | Windows Hello for Business cloud trust can be managed with group policy or through mobile device management (MDM) policy. This feature is disabled by default and must be enabled using policy. |
 
 ### Unsupported Scenarios
 
 The following scenarios are not supported using Windows Hello for Business cloud trust.
 
 - On-premises only deployments
-- RDP using supplied credentials
+- RDP/VDI scenarios using supplied credentials
 - Scenarios that require a certificate for authentication
 - Using cloud trust for "Run as"
+- If you haven't used cloud trust to sign in to a Hybrid Azure AD joined device with DC connectivity, you can't use it to sign in or unlock offline.
 
 ## Deployment Instructions
 
 Deploying Windows Hello for Business cloud trust consists of two steps:
 
-1. Azure AD Kerberos in your hybrid environment.
-1. Configure Windows Hello for Business policy and deploy it to devices you wish to use Windows Hello for Business.
+1. Set up Azure AD Kerberos in your hybrid environment.
+1. Configure Windows Hello for Business policy and deploy it to devices.
 
 ### Deploy Azure AD Kerberos
 
-NEEDS UPDATES
-If you have already deployed [on-premises SSO for passwordless security key sign-in](/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises), then you have already deployed Azure AD Kerberos in your hybrid environment. You do not need to re-deploy or change your existing Azure AD Kerberos deployment to support Windows Hello for Business and you can skip this section.
+If you have already deployed on-premises SSO for passwordless security key sign-in, then you have already deployed Azure AD Kerberos in your hybrid environment. You do not need to re-deploy or change your existing Azure AD Kerberos deployment to support Windows Hello for Business and you can skip this section.
 
-If you have not deployed [on]
+If you have not deployed Azure AD Kerberos, follow the instructions in the [Enable passwordless security key sign-in to on-premises resources by using Azure AD](/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises#install-the-azure-ad-kerberos-powershell-module.md) documentation to get it set up. This page includes information on how to install the Azure AD Kerberos Powershell module and how to use it to create and manage the Azure AD Kerberos Server object.
 
-### Configure Windows Hello for Business
+### Configure Windows Hello for Business Policy
 
-Windows Hello for business cloud trust must be enabled using policy. By default, cloud trust will not be used by Hybrid Azure AD joined or Azure AD joined devices.
-
-- [Enable using Group Policy](####Configure-Using-Group-Policy)
-- [Enable using Intune](####Configure-using-intune)
+After setting up the Azure AD Kerberos Object, Windows Hello for business cloud trust must be enabled using policy. By default, cloud trust will not be used by Hybrid Azure AD joined or Azure AD joined devices.
 
 #### Configure Using Group Policy
 
@@ -93,7 +90,7 @@ Hybrid Azure AD joined organizations can use the Windows Hello for Business Grou
 
 The Enable Windows Hello for Business Group Policy setting is the configuration needed for Windows to determine if a user should attempt to enroll for Windows Hello for Business. A user will only attempt enrollment if this policy setting is configured to enabled.  
 
-You can configure the Enable Windows Hello for Business Group Policy setting for computer or users. Deploying this policy setting to computers results in all users that sign-in that computer to attempt a Windows Hello for Business enrollment. Deploying this policy setting to a user results in only that user attempting a Windows Hello for Business enrollment. Additionally, you can deploy the policy setting to a group of users so only those users attempt a Windows Hello for Business enrollment. If both user and computer policy settings are deployed, the user policy setting has precedence.
+You can configure the Enable Windows Hello for Business Group Policy setting for computers or users. Deploying this policy setting to computers results in all users that sign-in that computer to attempt a Windows Hello for Business enrollment. Deploying this policy setting to a user results in only that user attempting a Windows Hello for Business enrollment. Additionally, you can deploy the policy setting to a group of users so only those users attempt a Windows Hello for Business enrollment. If both user and computer policy settings are deployed, the user policy setting has precedence.
 
 Cloud trust requires setting a dedicated policy for it to be enabled. This policy is only available as a computer configuration.
 
@@ -121,15 +118,16 @@ Sign-in a domain controller or management workstations with *Domain Admin* equiv
 1. In the content pane, double-click **Use cloud trust for on-premises authentication**. Click **Enable** and click **OK**.
 1. *Optional but recommended*: In the content pane, double-click **Use a hardware security device**. Click **Enable** and click **OK**.
 
-This group policy should be targeted at the computer group that you have created for that you want to use Windows Hello for Business. 
+This group policy should be targeted at the computer group that you have created for that you want to use Windows Hello for Business.
 
-If the Use certificate for on-premises authentication is enabled, we will always enforce certificate trust on the client. Please make sure that any machines that you want to use Windows Hello for Business cloud trust have this policy not configured or disabled.
+> [!Important]
+> If the Use certificate for on-premises authentication policy is enabled, we will enforce certificate trust instead of cloud trust on the client. Please make sure that any machines that you want to use Windows Hello for Business cloud trust have this policy not configured or disabled.
 
 #### Configure Using Intune
 
-Windows Hello for Business can be enabled using device enrollment policy or device configuration policy. Device enrollment policy is only applied at device enrollment time and any modifications to the configuration in Intune will not apply to already enrolled devices. Device configuration policy is applied after device enrollment and changes made in Intune will be applied to devices that are already enrolled.
+Windows Hello for Business can be enabled using device enrollment policy or device configuration policy. Device enrollment policy is only applied at device enrollment time and any modifications to the configuration in Intune will not apply to already enrolled devices. Device configuration policy is applied after device enrollment and changes made in Intune are applied to devices that are already enrolled.
 
-The cloud trust policy needs to be configured using a custom template and must be configured separately from enabling Windows Hello from Business.
+The cloud trust policy needs to be configured using a custom template and is configured separately from enabling Windows Hello from Business.
 
 ##### Create a user Group that will be targeted for Windows Hello for Business
 
@@ -147,7 +145,7 @@ You can also create a group through the Azure portal instead of using the Micros
 
 ##### Enable Windows Hello for Business
 
-If you have already enabled Windows Hello for Business for a target set of users or devices, you can skip below to configuring the cloud trust policy. Otherwise, follow the instructions at [Integrate Windows Hello for Business with Microsoft Intune](mem/intune/protect/windows-hello) to create a Windows Hello for Business device enrollment policy.
+If you have already enabled Windows Hello for Business for a target set of users or devices, you can skip below to configuring the cloud trust policy. Otherwise, follow the instructions at [Integrate Windows Hello for Business with Microsoft Intune](/mem/intune/protect/windows-hello.md) to create a Windows Hello for Business device enrollment policy.
 
 To create a device configuration policy instead of a device enrollment policy, you can follow these steps:
 
@@ -157,7 +155,7 @@ To create a device configuration policy instead of a device enrollment policy, y
 1. For Profile Type, select **Templates** and select the **Identity Protection** Template.
 1. Name the profile with a familiar name. For example, "Windows Hello for Business".
 1. In **Configurations settings** set the **Configure Windows Hello for Business** option to **Enable**.
-1. After setting Configure Windows Hello for Business to Enable, multiple policy options become available. These policies are optional to configure. More information on these policies are available in our documentation on managing [Windows Hello for Business in your organization](./hello-manage-in-organization#MDM-policy-settings-for-Windows-Hello-for-Business). We recommend setting **Use a Trusted Platform Module (TPM)** to **Enable**.
+1. After setting Configure Windows Hello for Business to Enable, multiple policy options become available. These policies are optional to configure. More information on these policies are available in our documentation on managing [Windows Hello for Business in your organization](./hello-manage-in-organization#MDM-policy-settings-for-Windows-Hello-for-Business.md). We recommend setting **Use a Trusted Platform Module (TPM)** to **Enable**.
 
     ![Intune custom device configuration policy creation](./images/hello-intune-enable.png)
 
@@ -198,6 +196,60 @@ To configure the cloud trust policy, follow the steps below:
 1. Select Next to move to the Applicability Rules.
 1. Select Next again to move to the **Review + create** tab and select the option to create the policy.
 
-## Windows Hello Provisioning
+> [!Important]
+> If the Use certificate for on-premises authentication policy is enabled, we will enforce certificate trust instead of cloud trust on the client. Please make sure that any machines that you want to use Windows Hello for Business cloud trust have this policy not configured or disabled.
 
-DSREG CMD and Event logs
+## Provisioning
+
+The Windows Hello for Business provisioning process begins immediately after a user has signed in if certain prerequisite checks are passed. Windows Hello for Business cloud trust adds a prerequisite check for Hybrid Azure AD joined devices when cloud trust is enabled by policy.
+
+You can determine the status of the prerequisite check by viewing the **User Device Registration** admin log under **Applications and Services Logs\Microsoft\Windows**. This information is also available using the [**dsregcmd /status**](/azure/active-directory/devices/troubleshoot-device-dsregcmd.md) command from a console.  
+
+  ![Cloud trust prerequisite check in the user device registration log](./images/cloud-trust-prereq-check.png)
+
+The cloud trust prerequisite check detects whether the user has a partial TGT before allowing provisioning to start. The purpose of this check is to validate whether Azure AD Kerberos is setup for the user's domain and tenant. If Azure AD Kerberos is setup, the user will receive a partial TGT during sign-in with one of their other unlock methods. This check has three states: Yes, No, and Not Tested. The Not Tested state will be reported if cloud trust is not being enforced by policy or if the device is Azure AD joined.
+
+This prerequisite check is not done for provisioning on Azure AD joined devices. If Azure AD Kerberos is not provisioned, a user on an Azure AD joined device will still be able to sign in.
+
+### PIN Set up
+
+When Windows Hello for Business provisioning begins, the user will see a full screen page with the title **Setup a PIN** and button with the same name.  The user clicks **Setup a PIN**.
+
+![Setup a PIN Provisioning.](images/setupapin.png)
+
+The provisioning flow proceeds to the Multi-Factor authentication portion of the enrollment.  Provisioning informs the user that it is actively attempting to contact the user through their configured form of MFA.  The provisioning process does not proceed until authentication succeeds, fails or times out. A failed or timeout MFA results in an error and asks the user to retry.
+  
+![MFA prompt during provisioning.](images/mfa.png)
+
+After a successful MFA, the provisioning flow asks the user to create and validate a PIN.  This PIN must observe any PIN complexity requirements that you deployed to the environment.
+
+![Create a PIN during provisioning.](images/createPin.png)
+
+### Sign in
+
+Once a user has setup a PIN with cloud trust it can be used immediately for sign in. On a Hybrid Azure AD join device, the first use of the PIN requires line of sight to a DC. Once the user has signed in or unlocked with the DC, cached logon can be used for subsequent unlocks without line of sight or network connectivity.
+
+## Troubleshooting
+
+If you encounter issues or want to share feedback about Windows Hello for Business cloud trust, share via the Windows Feedback Hub app by doing the following:
+
+1. Open **Feedback Hub**, and make sure that you're signed in.
+1. Submit feedback by selecting the following categories:
+    - Category: Security and Privacy
+    - Subcategory: Windows Hello PIN
+
+## Frequently Asked Questions
+
+### Does Windows Hello for Business cloud trust work in my on-premises environment?
+
+This feature does not work in a pure on-premises AD domain services environment.
+
+### Does Windows Hello for Business cloud trust work in a Windows login with RODC present in the hybrid environment?
+
+Windows Hello for Business cloud trust looks for a writeable DC to exchange the partial TGT. As long as you have at least one writeable DC per site, login with cloud trust will work.
+
+### Do I need line of sight to a domain controller to use Windows Hello for Business cloud trust?
+
+Windows Hello for Business cloud trust requires line of sight to a domain controller for some scenarios:
+    - The first sign in or unlock with Windows Hello for Business after provisioning on a Hybrid Azure AD joined device.
+    - When attempting to access an on-premises resource from an Azure AD joined device.
