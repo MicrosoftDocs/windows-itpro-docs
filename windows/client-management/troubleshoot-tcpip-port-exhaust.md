@@ -24,7 +24,7 @@ There are two types of ports:
  
 Clients when connecting to an application or service will make use of an ephemeral port from its machine to connect to a well-known port defined for that application or service. A browser on a client machine will use an ephemeral port to connect to https://www.microsoft.com on port 443.
  
-In a scenario where the same browser is creating a lot of connections to multiple website, for any new connection that the browser is attempting, an ephemeral port is used. After some time, you will notice that the connections will start to fail and one high possibility for this would be because the browser has used all the available ports to make connections outside and any new attempt to establish a connection will fail as there are no more ports available. When all the ports on a machine are used, we term it as *port exhaustion*. 
+In a scenario where the same browser is creating a lot of connections to multiple websites, for any new connection that the browser is attempting, an ephemeral port is used. After some time, you will notice that the connections will start to fail and one high possibility for this would be because the browser has used all the available ports to make connections outside and any new attempt to establish a connection will fail as there are no more ports available. When all the ports on a machine are used, we term it as *port exhaustion*. 
  
 ## Default dynamic port range for TCP/IP
  
