@@ -1,6 +1,6 @@
 ---
 title: WindowsAutoPilot CSP
-description: Learn how the WindowsLicensing configuration service provider (CSP) is designed for licensing related management scenarios.
+description: Learn how without the ability to mark a device as remediation required, the device will remain in a broken state, which results in security and privacy concerns in Autopilot.
 ms.assetid: E6BC6B0D-1F16-48A5-9AC4-76D69A7EDDA6
 ms.reviewer: 
 manager: dansimp
