@@ -963,6 +963,11 @@ items:
           items: 
             - name: WindowsAdvancedThreatProtection DDF file
               href: windowsadvancedthreatprotection-ddf.md
+        - name: WindowsAutoPilot CSP
+          href: windowsautopilot-csp.md
+          items: 
+            - name: WindowsAutoPilot DDF file
+              href: windowsautopilot-ddf.md
         - name: WindowsDefenderApplicationGuard CSP
           href: windowsdefenderapplicationguard-csp.md
           items: 
