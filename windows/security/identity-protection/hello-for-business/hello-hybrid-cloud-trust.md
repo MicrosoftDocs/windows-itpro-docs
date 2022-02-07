@@ -51,7 +51,7 @@ More details on how Azure AD Kerberos enables access to on-premises resources ar
 
 | Requirement | Notes |
 | --- | --- |
-| Multi-factor Authentication | This requirement can be met using [Azure AD multi-factor authentication](/azure/active-directory/authentication/howto-mfa-getstarted.md), multi-factor authentication provided through AD FS, or a comparable solution. |
+| Multi-factor Authentication | This requirement can be met using [Azure AD multi-factor authentication](/azure/active-directory/authentication/howto-mfa-getstarted), multi-factor authentication provided through AD FS, or a comparable solution. |
 | Windows 10 version 21H2 or Windows 11 and later | There's no Windows version support difference between Azure AD joined and Hybrid Azure AD joined devices. |
 | Fully patched Windows Server 2016 or later Domain Controllers | Domain controllers should be fully patched to support updates needed for Azure AD Kerberos. If you're using Windows Server 2016, [KB3534307](https://support.microsoft.com/en-us/topic/january-23-2020-kb4534307-os-build-14393-3474-b181594e-2c6a-14ea-e75b-678efea9d27e) must be installed. If you're using Server 2019, [KB4534321](https://support.microsoft.com/en-us/topic/january-23-2020-kb4534321-os-build-17763-1012-023e84c3-f9aa-3b55-8aff-d512911c459f) must be installed. |
 | Azure AD Kerberos PowerShell module | This module is used for enabling and managing Azure AD Kerberos. It's available through the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureADHybridAuthenticationManagement).|
@@ -78,7 +78,7 @@ Deploying Windows Hello for Business cloud trust consists of two steps:
 
 If you've already deployed on-premises SSO for passwordless security key sign-in, then you've already deployed Azure AD Kerberos in your hybrid environment. You don't need to redeploy or change your existing Azure AD Kerberos deployment to support Windows Hello for Business and you can skip this section.
 
-If you haven't deployed Azure AD Kerberos, follow the instructions in the [Enable passwordless security key sign-in to on-premises resources by using Azure AD](/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises#install-the-azure-ad-kerberos-powershell-module.md) documentation. This page includes information on how to install and use the Azure AD Kerberos Powershell module. Use the module to create an Azure AD Kerberos Server object for the domains where you want to use Windows Hello for Business cloud trust.
+If you haven't deployed Azure AD Kerberos, follow the instructions in the [Enable passwordless security key sign-in to on-premises resources by using Azure AD](/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises#install-the-azure-ad-kerberos-powershell-module) documentation. This page includes information on how to install and use the Azure AD Kerberos Powershell module. Use the module to create an Azure AD Kerberos Server object for the domains where you want to use Windows Hello for Business cloud trust.
 
 ### Configure Windows Hello for Business Policy
 
@@ -95,7 +95,7 @@ You can configure the Enable Windows Hello for Business Group Policy setting for
 Cloud trust requires setting a dedicated policy for it to be enabled. This policy is only available as a computer configuration.
 
 > [!NOTE]
-> If you deployed Windows Hello for Business configuration using both Group Policy and Microsoft Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about deploying Windows Hello for Business configuration using Microsoft Intune, see [Windows device settings to enable Windows Hello for Business in Intune](/mem/intune/protect/identity-protection-windows-settings) and [PassportForWork CSP](/windows/client-management/mdm/passportforwork-csp). For more information about policy conflicts, see [Policy conflicts from multiple policy sources](./hello-manage-in-organization.md#policy-conflicts-from-multiple-policy-sources)
+> If you deployed Windows Hello for Business configuration using both Group Policy and Microsoft Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about deploying Windows Hello for Business configuration using Microsoft Intune, see [Windows device settings to enable Windows Hello for Business in Intune](/mem/intune/protect/identity-protection-windows-settings) and [PassportForWork CSP](/windows/client-management/mdm/passportforwork-csp.md). For more information about policy conflicts, see [Policy conflicts from multiple policy sources](./hello-manage-in-organization#policy-conflicts-from-multiple-policy-sources)
 
 ##### Update Group Policy Objects
 
@@ -145,7 +145,7 @@ You can also create a group through the Azure portal instead of using the Micros
 
 ##### Enable Windows Hello for Business
 
-If you already enabled Windows Hello for Business for a target set of users or devices, you can skip below to configuring the cloud trust policy. Otherwise, follow the instructions at [Integrate Windows Hello for Business with Microsoft Intune](/mem/intune/protect/windows-hello.md) to create a Windows Hello for Business device enrollment policy.
+If you already enabled Windows Hello for Business for a target set of users or devices, you can skip below to configuring the cloud trust policy. Otherwise, follow the instructions at [Integrate Windows Hello for Business with Microsoft Intune](/mem/intune/protect/windows-hello) to create a Windows Hello for Business device enrollment policy.
 
 You can also follow these steps to create a device configuration policy instead of a device enrollment policy:
 
@@ -155,7 +155,7 @@ You can also follow these steps to create a device configuration policy instead 
 1. For Profile Type, select **Templates** and select the **Identity Protection** Template.
 1. Name the profile with a familiar name. For example, "Windows Hello for Business".
 1. In **Configurations settings**, set the **Configure Windows Hello for Business** option to **Enable**.
-1. After setting Configure Windows Hello for Business to Enable, multiple policy options become available. These policies are optional to configure. More information on these policies is available in our documentation on managing [Windows Hello for Business in your organization](./hello-manage-in-organization#MDM-policy-settings-for-Windows-Hello-for-Business.md). We recommend setting **Use a Trusted Platform Module (TPM)** to **Enable**.
+1. After setting Configure Windows Hello for Business to Enable, multiple policy options become available. These policies are optional to configure. More information on these policies is available in our documentation on managing [Windows Hello for Business in your organization](hello-manage-in-organization#mdm-policy-settings-for-windows-hello-for-business). We recommend setting **Use a Trusted Platform Module (TPM)** to **Enable**.
 
     ![Intune custom device configuration policy creation](./images/hello-intune-enable.png)
 
@@ -183,7 +183,7 @@ To configure the cloud trust policy, follow the steps below:
     - OMA-URI: ./Device/Vendor/MSFT/PassportForWork/*tenant ID*/Policies/UseCloudTrustForOnPremAuth
 
         >[!IMPORTANT]
-        >*Tenant ID* in the OMA-URI must be replaced with the tenant ID for your Azure AD tenant. See [How to find your Azure AD tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant.md) for instructions on looking up your tenant ID.
+        >*Tenant ID* in the OMA-URI must be replaced with the tenant ID for your Azure AD tenant. See [How to find your Azure AD tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant) for instructions on looking up your tenant ID.
 
     - Data type: Boolean
     - Value: True
@@ -203,7 +203,7 @@ To configure the cloud trust policy, follow the steps below:
 
 The Windows Hello for Business provisioning process begins immediately after a user has signed in if certain prerequisite checks are passed. Windows Hello for Business cloud trust adds a prerequisite check for Hybrid Azure AD joined devices when cloud trust is enabled by policy.
 
-You can determine the status of the prerequisite check by viewing the **User Device Registration** admin log under **Applications and Services Logs\Microsoft\Windows**. This information is also available using the [**dsregcmd /status**](/azure/active-directory/devices/troubleshoot-device-dsregcmd.md) command from a console.  
+You can determine the status of the prerequisite check by viewing the **User Device Registration** admin log under **Applications and Services Logs\Microsoft\Windows**. This information is also available using the [**dsregcmd /status**](/azure/active-directory/devices/troubleshoot-device-dsregcmd) command from a console.  
 
   ![Cloud trust prerequisite check in the user device registration log](./images/cloud-trust-prereq-check.png)
 
