@@ -36,6 +36,37 @@ How Microsoft Connected Cache Works
 5. Microsoft Connected Cache node pulls content from the CDN, seeds its local cache stored on disk and delivers the content to the client.
 6. Subsequent requests from end-user devices for content will now come from cache.
 7. If the Microsoft Connected Cache node is unavailable, the client will pull content from CDN to ensure uninterrupted service for your subscribers.
+
+![eMCC emg01](emages/emcc01.png)
+![eMCC emg02](emages/emcc02.png)
+![eMCC emg03](emages/emcc03.png)
+![eMCC emg04](emages/emcc04.png)
+![eMCC emg05](emages/emcc05.png)
+![eMCC emg06](emages/emcc06.png)
+![eMCC emg07](emages/emcc07.png)
+![eMCC emg08](emages/emcc08.png)
+![eMCC emg09](emages/emcc09.png)
+![eMCC emg10](emages/emcc10.png)
+![eMCC emg11](emages/emcc11.png)
+![eMCC emg12](emages/emcc12.png)
+![eMCC emg13](emages/emcc13.png)
+![eMCC emg14](emages/emcc14.png)
+![eMCC emg15](emages/emcc15.png)
+![eMCC emg16](emages/emcc16.png)
+![eMCC emg17](emages/emcc17.png)
+![eMCC emg18](emages/emcc18.png)
+![eMCC emg19](emages/emcc19.png)
+![eMCC emg20](emages/emcc20.png)
+![eMCC emg21](emages/emcc21.png)
+![eMCC emg22](emages/emcc22.png)
+![eMCC emg23](emages/emcc23.png)
+![eMCC emg24](emages/emcc24.png)
+![eMCC emg25](emages/emcc25.png)
+![eMCC emg26](emages/emcc26.png)
+![eMCC emg27](emages/emcc27.png)
+![eMCC emg28](emages/emcc28.png)
+![eMCC emg29](emages/emcc29.png)
+
 Figure 1: Each number in the diagram corresponds to the steps above
 Enterprise Requirements for Microsoft Connected Cache
 1. Azure subscription – Microsoft Connected Cache management portal is hosted within Azure and is used to create the Connected Cache Azure resource and IoT Hub resource – both are free services.
