@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Delivery Optimization for Windows client # < 60 chars
-summary: Learn about using peer to peer downloads on Windows clients along with Microsoft Connected Cache.  # < 160 chars
+summary: Set up peer to peer downloads on Windows clients and learn about Microsoft Connected Cache.  # < 160 chars
 
 metadata:
   title: Delivery Optimization # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn about using peer to peer downloads on Windows clients along with Microsoft Connected Cache. # Required; article description that is displayed in search results. < 160 chars.
+  description: Learn about using peer to peer downloads on Windows clients and learn about Microsoft Connected Cache. # Required; article description that is displayed in search results. < 160 chars.
   services: windows-10
   ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice
@@ -30,7 +30,6 @@ landingContent:
         links:
           - text: What is Delivery Optimization?
             url: waas-delivery-optimization.md
-
           - text: What's new in Delivery Optimization
             url: waas-delivery-optimization.md#new-in-windows-10-version-20h2-and-windows-11
           - text: What is Microsoft Connected Cache?
@@ -65,18 +64,22 @@ landingContent:
   # Card
   - title: Microsoft Connected Cache (MCC) for Enterprises
     linkLists:
-      - linkListType: concept
+      - linkListType: deploy
         links:
           - text: MCC for Entreprises (Private Preview)
             url: mcc-enterprise.md
+          - text: Sign up
+            url: https://aka.ms/MSConnectedCacheSignup 
 
   # Card
   - title: Microsoft Connected Cache (MCC) for Internet Service Providers (ISPs)
     linkLists:
-      - linkListType: concept
+      - linkListType: deploy
         links:
           - text: MCC for ISPs (Private Preview)
             url: mcc-isp.md
+          - text: Sign up
+            url: https://aka.ms/MSConnectedCacheSignup 
 
   # Card (optional)
   - title: Resources
