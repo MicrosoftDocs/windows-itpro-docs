@@ -28,11 +28,11 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Delivery Optimization?
+          - text: What is Delivery Optimization
             url: waas-delivery-optimization.md
           - text: What's new in Delivery Optimization
             url: waas-delivery-optimization.md#new-in-windows-10-version-20h2-and-windows-11
-          - text: What is Microsoft Connected Cache?
+          - text: What is Microsoft Connected Cache
             url: waas-microsoft-connected-cache.md
 
 

@@ -3,11 +3,11 @@
   items: 
     - name: Get started
       items: 
-        - name: What is Delivery Optimization?
+        - name: What is Delivery Optimization
           href: waas-delivery-optimization.md
-        - name: What's new?
+        - name: What's new
           href: waas-delivery-optimization.md#new-in-windows-10-version-20h2-and-windows-11
-        - name: What is Microsoft Connected Cache?
+        - name: What is Microsoft Connected Cache
           href: waas-microsoft-connected-cache.md
 
      
