@@ -50,34 +50,43 @@ For more details information on Azure IoT Edge, please see the [Azure IoT Edge d
 
 ![eMCC emg01](images/emcc01.png)
 
-
 Figure 1: Each number in the diagram corresponds to the steps above
 
 ## Enterprise Requirements for Microsoft Connected Cache
 
 1. **Azure subscription** – Microsoft Connected Cache management portal is hosted within Azure and is used to create the Connected Cache [Azure resource](/azure/cloud-adoption-framework/govern/resource-consistency/resource-access-management.md) and IoT Hub resource – both are free services.
 
-We will use your Azure subscription ID to take care of some provisioning with our services, first, to give you access to the preview. The Microsoft Connected Cache server requirement for an Azure subscription will cost you nothing. If you do not have an Azure subscription already, you can create an Azure Pay-As-You-Go account which requires a credit card for verification purposes. Please visit Azure Free Account FAQ | Microsoft Azure for more information.
-Again, the resources used for the preview and in the future when this product is ready for production will be completely free to you, like other caching solutions.
+We will use your Azure subscription ID to take care of some provisioning with our services, first, to give you access to the preview. The Microsoft Connected Cache server requirement for an Azure subscription will cost you nothing. If you do not have an Azure subscription already, you can create an Azure [Pay-As-You-Go](https://azure.microsoft.com/offers/ms-azr-0003p/) account which requires a credit card for verification purposes. For more information, see the [Azure Free Account FAQ](https://azure.microsoft.com/free/free-account-faq/).
+
+The resources used for the preview and in the future when this product is ready for production will be completely free to you, like other caching solutions.
 2. **Hardware to host MCC** - The recommended configuration will serve approximately 35,000 managed devices downloading a 2GB payload in 24-hour timeframe at a sustained rate of 6.5 Gbps.
 
 **EFLOW Requires Hyper-V support**
 - On Windows 10, enable Hyper-V
 - On Windows Server, install the Hyper-V role and create a default network switch
 
-Some notes on the disk requirements:
-• Using an SSD is recommended as cache read speed of SSD is superior to HDD.
-Some notes on the NIC requirements:
-• Multiple NICs on a single MCC instance are not supported.
-• 1 Gbps NIC is the minimum speed recommended but any NIC is supported.
-• For best performance, NIC and BIOS should support SR-IOV
-Networking support
-• External virtual switch to support outbound and inbound network communication (we will create this during the installation process)
-Branch Office / Small Enterprise Large Enterprise OS • Windows Server 2019*/2022 • Windows 10*/11 (Pro or Enterprise), Hyper-V Support * Windows 10 and Windows Server 2019 minimum build 17763 NIC 1 Gbps 5 Gbps Disk • SSD • 1 drive • 50 GB each minimum
-• SSD • 1 drive • 200 GB minimum
-Memory 4 GB 8 GB or more Cores 4 8 or more
-Steps to Set Up Microsoft Connected Cache
-Below is the summary of steps required to deploy Microsoft Connected Cache to your server.
+Disk recommendations:
+- Using an SSD is recommended as cache read speed of SSD is superior to HDD
+
+NIC requirements:
+- Multiple NICs on a single MCC instance are not supported.
+- 1 Gbps NIC is the minimum speed recommended but any NIC is supported.
+- For best performance, NIC and BIOS should support SR-IOV
+
+Networking support:
+- External virtual switch to support outbound and inbound network communication (we will create this during the installation process)
+
+| Minimum requirement  | Branch Office / Small Enterprise | Large Enterprise |
+| -- | --- | --- |
+| OS|  Windows Server 2019*/2022 <br> Windows 10*/11 (Pro or Enterprise) with Hyper-V Support <br><br>* Windows 10 and Windows Server 2019 build 17763 or later | Same |
+|NIC | 1 Gbps | 5 Gbps |
+|Disk | SSD <br>1 drive <br>50GB each  |SSD <br>1 drive <br>200GB each  |
+|Memory | 4GB | 8GB |
+|Cores | 4 | 8  |
+
+## Steps to Set Up Microsoft Connected Cache
+
+Summary of steps required to deploy Microsoft Connected Cache to your server:
 1. Provide Microsoft with the Azure subscription you will use for Microsoft Connected Cache
 2. Create the Microsoft Connected Cache Resource in Azure
 3. Create a Microsoft Connected Cache Node
@@ -85,6 +94,7 @@ Below is the summary of steps required to deploy Microsoft Connected Cache to yo
 5. Install Microsoft Connected Cache on a Server or VM
 6. Verify Proper Functioning Microsoft Connected Cache Server
 7. Common Issues
+
 For any questions regarding these instructions contact: msconnectedcache@microsoft.com
 Provide Microsoft with the Azure Subscription ID
 As part of the Microsoft Connected Cache preview onboarding process the Azure subscription ID will have been provided to Microsoft. Instructions to create a subscription id are here: https://aka.ms/MCC-Azure-Subscription

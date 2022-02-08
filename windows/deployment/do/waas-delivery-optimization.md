@@ -32,8 +32,8 @@ Access to the Delivery Optimization cloud services and the Internet, are both re
 
 For information about setting up Delivery Optimization, including tips for the best settings in different scenarios, see [Set up Delivery Optimization](waas-delivery-optimization-setup.md). For a comprehensive list of all Delivery Optimization settings, see [Delivery Optimization reference](waas-delivery-optimization-reference.md).
 
->[!NOTE]
->WSUS can also use [BranchCache](waas-branchcache.md) for content sharing and caching. If Delivery Optimization is enabled on devices that use BranchCache, Delivery Optimization will be used instead.
+> [!NOTE]
+> WSUS can also use [BranchCache](../update/waas-branchcache.md) for content sharing and caching. If Delivery Optimization is enabled on devices that use BranchCache, Delivery Optimization will be used instead.
 
 ## New in Windows 10, version 20H2 and Windows 11
 
@@ -41,7 +41,7 @@ For information about setting up Delivery Optimization, including tips for the b
 - Local Peer Discovery: a new option for **[Restrict Peer Selection By](waas-delivery-optimization-reference.md#select-a-method-to-restrict-peer-selection)** (in Group Policy) or **DORestrictPeerSelectionBy** (in MDM). This option restricts the discovery of local peers using the DNS-SD protocol. When you set Option 2, Delivery Optimization will restrict peer selection to peers that are locally discovered (using DNS-SD). If Group mode is enabled, Delivery Optimization will connect to locally discovered peers that are also part of the same group, for those devices with the same Group ID).
 
 > [!NOTE]
-> The Local Peer Discovery (DNS-SD, [RFC 6763](https://datatracker.ietf.org/doc/html/rfc6763)) option can only be set via MDM delivered policies on Windows 11 builds. This feature can be enabled in supported Windows 10 builds by setting the `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization\DORestrictPeerSelectionBy` value to **2**. For more information, see [Delivery Optimization reference](/windows/deployment/update/waas-delivery-optimization-reference.md).
+> The Local Peer Discovery (DNS-SD, [RFC 6763](https://datatracker.ietf.org/doc/html/rfc6763)) option can only be set via MDM delivered policies on Windows 11 builds. This feature can be enabled in supported Windows 10 builds by setting the `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization\DORestrictPeerSelectionBy` value to **2**. For more information, see [Delivery Optimization reference](waas-delivery-optimization-reference.md).
 
 - Starting with Windows 11, the Bypass option of [Download Mode](waas-delivery-optimization-reference.md#download-mode) is no longer used.
 

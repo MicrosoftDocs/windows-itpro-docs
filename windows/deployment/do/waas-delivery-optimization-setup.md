@@ -221,7 +221,7 @@ Update Compliance provides you with information about your Delivery Optimization
 
 [[DO status](images/UC_workspace_DO_status.png)](images/UC_workspace_DO_status.png#lightbox)
 
-For details, see [Delivery Optimization in Update Compliance](update-compliance-delivery-optimization.md).
+For details, see [Delivery Optimization in Update Compliance](../update/update-compliance-delivery-optimization.md).
 
 ## Troubleshooting
 
