@@ -34,8 +34,8 @@ Microsoft Connected Cache is a Hybrid (mix of on-prem and cloud resources) solut
 2. The Microsoft Connected Cache container deployed and provisioned to the server.
 3. The Azure Management Portal used to configure Microsoft Delivery Optimization Services to route traffic to the Microsoft Connected Cache server by providing two pieces of information:
   a. The publicly accessible IPv4 address of the server hosting the Microsoft Connected Cache container.
-  b. The CIDR blocks that represent the client Ip address space, which should be routed to the Microsoft Connected Cache node.
-4. Microsoft end-user devices periodically connect with Microsoft Delivery Optimization Services, and the services match the Ip address of the client with the Ip address of the corresponding Microsoft Connected Cache node.
+  b. The CIDR blocks that represent the client IP address space, which should be routed to the Microsoft Connected Cache node.
+4. Microsoft end-user devices periodically connect with Microsoft Delivery Optimization Services, and the services match the IP address of the client with the IP address of the corresponding Microsoft Connected Cache node.
 5. Microsoft end-user devices make the range requests for content from the Microsoft Connected Cache node.
 6. Microsoft Connected Cache node pulls content from the CDN, seeds its local cache stored on disk and delivers the content to the client.
 7. Subsequent requests from end-user devices for content will now come from cache.
@@ -69,21 +69,27 @@ Below is the summary of steps required to deploy Microsoft Connected Cache to yo
 1. Provide Microsoft with the Azure subscription you will use for Microsoft Connected Cache
 2. Create the Microsoft Connected Cache Resource in Azure
 3. Create a Microsoft Connected Cache Node
-a. Ip Space Approval Information
+  -  IP space approval information
 4. Edit Cache Node Information
 5. Set up a server with Ubuntu 20.04 or an Ubuntu VM running on Windows Server 2019
 6. Install Microsoft Connected Cache on a Server or VM
 7. Verify Proper Functioning Microsoft Connected Cache Server
 8. View the Microsoft Connected Cache Summary Report
 9. Common Issues
-For any questions regarding these instructions contact: msconnectedcache@microsoft.com
+
+For questions regarding these instructions contact: **msconnectedcache@microsoft.com**
 
 ## Provide Microsoft with the Azure Subscription ID
 
 As part of the Microsoft Connected Cache preview onboarding process the Azure subscription ID will have been provided to Microsoft. Please contact Microsoft and provide this information if you have not already.
-Create the Microsoft Connected Cache Resource in Azure
+
+
+## Create the Microsoft Connected Cache Resource in Azure
+
 Link to video instructions: https://aka.ms/MCC-ISP-PortalDemo
+
 The Microsoft Connected Cache Azure management portal is used to create and manage Microsoft Connected Cache nodes. An Azure Subscription ID is used to grant access to the preview and to create the Microsoft Connected Cache resource in Azure and Cache nodes.
+
 Use the following link and log in to Azure https://portal.azure.com/?microsoft_azure_marketplace_ItemHideKey=Microsoft_ConnectedCacheHidden
 • Choose Create a resource
 
@@ -165,12 +171,12 @@ Description
 Cache Node Name
 Alphanumeric name that includes no spaces.
 The name of the cache node. You may choose names based on location like Seattle-1. This name must be unique cannot be changed later.
-Server Ip Address
-Ipv4 Address
-Ip address of your Microsoft Connected Cache server. Used to route end-user
+Server IP Address
+IPv4 Address
+IP address of your Microsoft Connected Cache server. Used to route end-user
 devices in your network to the server for Microsoft content downloads. Please note: IP address must be publicly accessible.
 Address Range/CIDR Blocks
-Ipv4 CIDR notation
+IPv4 CIDR notation
 IP Address Range/CIDR blocks that should be routed to the Microsoft Connected Cache server as a comma separated list. For example: 2.21.234.0/24 , 3.22.235.0/24 , 4.23.236.0/24
 Enable Cache Node
 Enable/Disable Radio Button
@@ -179,7 +185,7 @@ Hovering on the info next to each field will populate the details of that field.
 There are two other read-only fields on this page that are populated after the cache node is created.
 Field Name
 Description
-Ip Space
+IP Space
 Number of Ips addresses that will be routed to your cache server.
 Activation Keys
 Set of keys to activate your cache node with the Microsoft Connected Cache services. Copy the keys for use during install. The CustomerID is your Azure subscripiton ID.
@@ -187,26 +193,26 @@ Set of keys to activate your cache node with the Microsoft Connected Cache servi
 If there are errors the form will provide guidance on how to correct the errors. For example:
 • The cache node name is in use in the resource or is an incorrect format.
 • If the CIDR block notation or list is incorrect.
-• The server Ip or CIDR block are already in use.
+• The server IP or CIDR block are already in use.
 In the screenshot below all information is provided.
 Once the Microsoft Connected Cache Node has been created, the installer instructions will be exposed. More details on the installer instructions will be addressed later in this doc can be found at the Install Connected Cache section.
-Ip Space Approval Information
-There are three states for Ip space (screenshot below) that are explained in the table below. The preview will require approval from Microsoft CIDR block ranges that contain more than 50,000 Ip addresses. In the future Microsoft Connected Cache configuration will support BGP and will therefore have automatic routing capabilities.
-Ip Space Status
+IP Space Approval Information
+There are three states for IP space (screenshot below) that are explained in the table below. The preview will require approval from Microsoft CIDR block ranges that contain more than 50,000 IP addresses. In the future Microsoft Connected Cache configuration will support BGP and will therefore have automatic routing capabilities.
+IP Space Status
 Description
 Valid
-The Ip space is below the 50,000 Ip space threshold and the space does not overlap with existing cache nodes.
+The IP space is below the 50,000 IP space threshold and the space does not overlap with existing cache nodes.
 In Review
-The Ip space exceeds the 50,000 Ip space and is under review with Microsoft to ensure valid Ip space.
+The IP space exceeds the 50,000 IP space and is under review with Microsoft to ensure valid IP space.
 Attention Required
-The Ip space has been reviewed and an issue was discovered. Some examples include:
-• Ip space overlap with existing cache node belonging to another customer.
-• Ip space was exceedingly large.
-Contact Microsoft for more information if your Ip space has this status.
+The IP space has been reviewed and an issue was discovered. Some examples include:
+• IP space overlap with existing cache node belonging to another customer.
+• IP space was exceedingly large.
+Contact Microsoft for more information if your IP space has this status.
 Edit Cache Node Information
-Ip address or CIDR information can be modified for existing Microsoft Connected Cache nodes in the portal.
-To edit Ip address or CIDR information click on the Cache Node Name which will open the Cache Node Configuration page. Cache nodes can be deleted here by clicking the check box to the left of a Cache Node Name and then clicking the delete toolbar item. Be aware that if a cache node is deleted, there is no way to recover the cache node or any of the information related to the cache node.
-The Server Ip Address, Address Range/CIDR Blocks, and Enable Cache Node are all editable as show in the screenshot below.
+IP address or CIDR information can be modified for existing Microsoft Connected Cache nodes in the portal.
+To edit IP address or CIDR information click on the Cache Node Name which will open the Cache Node Configuration page. Cache nodes can be deleted here by clicking the check box to the left of a Cache Node Name and then clicking the delete toolbar item. Be aware that if a cache node is deleted, there is no way to recover the cache node or any of the information related to the cache node.
+The Server IP Address, Address Range/CIDR Blocks, and Enable Cache Node are all editable as show in the screenshot below.
 Set up a server with SR or an Ubuntu VM running on Windows Server
 The Microsoft Connected Cache module is optimized for Ubuntu 20.04 LTS. Install Ubuntu 20.04 LTS on bare metal or VM of your choice. As discussed earlier, the recommended configuration (details below) will serve approximately 35,000 consumer devices downloading a 2GB payload in 24-hour timeframe at a sustained rate of 6.5 Gbps. Minimum Recommended Server Ubuntu 20.04 LTS VM or Physical Server Ubuntu 20.04 LTS VM or Physical Server (Preferred) NIC 10 Gbps 10 Gbps Disk • SSD • 1 – 2 drives minimum • 2 TB each minimum
 • SSD • 2 – 4 drives minimum • 2 TB each minimum

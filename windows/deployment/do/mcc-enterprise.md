@@ -95,7 +95,7 @@ Summary of steps required to deploy Microsoft Connected Cache to your server:
 6. Verify Proper Functioning Microsoft Connected Cache Server
 7. Common Issues
 
-For any questions regarding these instructions contact: msconnectedcache@microsoft.com
+For questions regarding these instructions contact: **msconnectedcache@microsoft.com**
 Provide Microsoft with the Azure Subscription ID
 As part of the Microsoft Connected Cache preview onboarding process the Azure subscription ID will have been provided to Microsoft. Instructions to create a subscription id are here: https://aka.ms/MCC-Azure-Subscription
 NOTE:
