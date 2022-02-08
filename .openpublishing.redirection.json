@@ -15271,26 +15271,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "windows/privacy/windows-endpoints-1709-non-enterprise-editions.md",
-      "redirect_url": "/windows/privacy/windows-endpoints-21h1-non-enterprise-editions",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/privacy/windows-endpoints-1803-non-enterprise-editions.md",
-      "redirect_url": "/windows/privacy/windows-endpoints-21h1-non-enterprise-editions",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/privacy/manage-windows-1709-endpoints.md",
-      "redirect_url": "/windows/privacy/manage-windows-21h2-endpoints",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/privacy/manage-windows-1803-endpoints.md",
-      "redirect_url": "/windows/privacy/manage-windows-21h2-endpoints",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "windows/security/threat-protection/windows-defender-atp/exposed-apis-create-app-nativeapp.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp",
       "redirect_document_id": false
@@ -19326,6 +19306,26 @@
      "source_path": "windows/privacy/license-terms-windows-diagnostic-data-for-powershell.md",
      "redirect_url": "/legal/windows/license-terms-windows-diagnostic-data-for-powershell",
      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/privacy/windows-endpoints-1709-non-enterprise-editions.md",
+      "redirect_url": "/windows/privacy/windows-endpoints-21h1-non-enterprise-editions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/privacy/windows-endpoints-1803-non-enterprise-editions.md",
+      "redirect_url": "/windows/privacy/windows-endpoints-21h1-non-enterprise-editions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/privacy/manage-windows-1709-endpoints.md",
+      "redirect_url": "/windows/privacy/manage-windows-21h2-endpoints",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/privacy/manage-windows-1803-endpoints.md",
+      "redirect_url": "/windows/privacy/manage-windows-21h2-endpoints",
+      "redirect_document_id": true
     }
   ]
 }
