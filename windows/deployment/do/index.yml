@@ -28,77 +28,63 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Create a deployment plan
-            url: update/create-deployment-plan.md
-          - text: Define readiness criteria
-            url: update/plan-define-readiness.md
-          - text: Evaluate infrastructure and tools
-            url: update/eval-infra-tools.md
-          - text: Define your servicing strategy
-            url:  update/plan-define-strategy.md
+          - text: What is Delivery Optimization?
+            url: waas-delivery-optimization.md
+
+          - text: What's new in Delivery Optimization
+            url: waas-delivery-optimization.md#new-in-windows-10-version-20h2-and-windows-11
+          - text: What is Microsoft Connected Cache?
+            url: waas-microsoft-connected-cache.md
+          - text: Introducing Microsoft Connected Cache
+            url: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-microsoft-connected-cache-microsoft-s-cloud-managed/ba-p/963898
 
   # Card (optional)
   - title: Configure Delivery Optimization on Windows clients
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Prepare to deploy Windows updates
+          - text: Delivery Optimization settings
             url: update/prepare-deploy-windows.md
-          - text: Prepare updates using Windows Update for Business
+          - text: Windows PowerShell for Delivery Optimization
             url: update/waas-manage-updates-wufb.md
-          - text: Prepare for Zero Touch Installation of Windows 10 with Configuration Manager
+          - text: Troubleshooting Delivery Optimization
             url: deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md
+          - text: Submit feedback
+            url: update/waas-manage-updates-wufb.md
 
   # Card (optional)
   - title: Configure Delivery Optimization on Microsoft Endpoint Manager
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Deploy Windows 10 with Autopilot
-            url: /mem/autopilot
-          - text: Assign devices to servicing channels
-            url: update/waas-servicing-channels-windows-10-updates.md
-          - text: Deploy Windows updates with Configuration Manager
-            url: update/deploy-updates-configmgr.md
+          - text: Optimize Windows 10 or later update delivery with Configuration Manager
+            url: /mem/configmgr/sum/deploy-use/optimize-windows-10-update-delivery#windows-delivery-optimization
  
   # Card
-  - title: Microsoft Connected Cache for Enterprises (Private Preview)
+  - title: Microsoft Connected Cache (MCC) for Enterprises
     linkLists:
       - linkListType: concept
         links:
-          - text: What's new in Windows deployment
-            url: deploy-whats-new.md
-          - text: Windows 11 overview
-            url: /windows/whats-new/windows-11
-          - text: Windows client deployment scenarios
-            url: windows-10-deployment-scenarios.md
-          - text: Basics of Windows updates, channels, and tools
-            url:  update/get-started-updates-channels-tools.md
-          - text: Overview of Windows Autopilot
-            url:  /mem/autopilot/windows-autopilot
+          - text: MCC for Entreprises (Private Preview)
+            url: mcc-enterprise.md
+
 
   # Card
-  - title: Microsoft Connected Cache for ISPs (Private Preview)
+  - title: Microsoft Connected Cache (MCC) for Internet Service Providers (ISPs)
     linkLists:
       - linkListType: concept
         links:
-          - text: Deploy Windows 10 for a remote world
-            url: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/deploying-a-new-version-of-windows-10-in-a-remote-world/ba-p/1419846
-          - text: Empower remote workers with Microsoft 365
-            url: /microsoft-365/solutions/empower-people-to-work-remotely
-          - text: Top 12 tasks for security teams to support working from home
-            url: /microsoft-365/security/top-security-tasks-for-remote-work
-          - text: Support your remote workforce
-            url: /microsoftteams/faq-support-remote-workforce
+          - text: MCC for ISPs (Private Preview)
+            url: mcc-isp.md
 
   # Card (optional)
   - title: Resources
     linkLists:
       - linkListType: learn
         links:
-          - text: Plan to deploy updates for Windows 10 and Microsoft 365 Apps
-            url: /learn/modules/windows-plan
-          - text: Prepare to deploy updates for Windows 10 and Microsoft 365 Apps
-            url: /learn/modules/windows-prepare/
-          - text: Deploy updates for Windows 10 and Microsoft 365 Apps
-            url: /learn/modules/windows-deploy
+          - text: Delivery Optimization reference
+            url: waas-delivery-optimization-reference.md
+          - text: Delivery Optimization client-service communication
+            url: delivery-optimization-workflow.md
+          - text: Using a proxy with Delivery Optimization
+            url: delivery-optimization-proxy.md
