@@ -29,7 +29,7 @@ Update Compliance enables organizations to:
 
 * Monitor security, quality, and feature updates for Windows 10 or Windows 11 Professional, Education, and Enterprise editions.
 * View a report of device and update issues related to compliance that need attention.
-* Check bandwidth savings incurred across multiple content types by using [Delivery Optimization](waas-delivery-optimization.md).
+* Check bandwidth savings incurred across multiple content types by using [Delivery Optimization](do/waas-delivery-optimization.md).
 
 Update Compliance is offered through the Azure portal, and is included as part of Windows 10 or Windows 11 licenses listed in the [prerequisites](update-compliance-get-started.md#update-compliance-prerequisites). Azure Log Analytics ingestion and retention charges are not incurred on your Azure subscription for Update Compliance data.
 

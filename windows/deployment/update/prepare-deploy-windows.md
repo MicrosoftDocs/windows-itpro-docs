@@ -123,7 +123,7 @@ The specific endpoints can vary between Windows versions. See, for example, [Win
 
 
 ### Optimize download bandwidth
-Set up [Delivery Optimization](waas-delivery-optimization.md) for peer network sharing or Microsoft Connected Cache.
+Set up [Delivery Optimization](do/waas-delivery-optimization.md) for peer network sharing or Microsoft Connected Cache.
 
 ### Address unhealthy devices
 

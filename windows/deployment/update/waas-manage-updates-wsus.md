@@ -336,7 +336,7 @@ Now that you have the **All Windows 10 Upgrades** view, complete the following s
 | ![done.](images/checklistdone.png) | [Prepare servicing strategy for Windows client updates](waas-servicing-strategy-windows-10-updates.md) |
 | ![done.](images/checklistdone.png) | [Build deployment rings for Windows client updates](waas-deployment-rings-windows-10-updates.md) |
 | ![done.](images/checklistdone.png) | [Assign devices to servicing channels for Windows client updates](waas-servicing-channels-windows-10-updates.md) |
-| ![done.](images/checklistdone.png) | [Optimize update delivery for Windows client updates](waas-optimize-windows-10-updates.md) |
+| ![done.](images/checklistdone.png) | [Optimize update delivery for Windows client updates](do/waas-optimize-windows-10-updates.md) |
 | ![done.](images/checklistdone.png) | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)</br>or Deploy Windows client updates using Windows Server Update Services (this topic)</br>or [Deploy Windows client updates using Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service) |
 
 
