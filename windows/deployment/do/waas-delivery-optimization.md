@@ -28,7 +28,7 @@ ms.custom: seo-marvel-apr2020
 
 Windows updates, upgrades, and applications can contain packages with large files. Downloading and distributing updates can consume quite a bit of network resources on the devices receiving them. You can use Delivery Optimization to reduce bandwidth consumption by sharing the work of downloading these packages among multiple devices in your deployment. Delivery Optimization is a cloud-managed solution that allows clients to download those packages from alternate sources (such as other peers on the network) in addition to the traditional Internet-based servers. You can use Delivery Optimization with Windows Update, Windows Server Update Services (WSUS), Windows Update for Business, or Microsoft Endpoint Manager (when installation of Express Updates is enabled).  
 
- Access to the Delivery Optimization cloud services and the Internet, are both requirements for using the peer-to-peer functionality of Delivery Optimization.
+Access to the Delivery Optimization cloud services and the Internet, are both requirements for using the peer-to-peer functionality of Delivery Optimization.
 
 For information about setting up Delivery Optimization, including tips for the best settings in different scenarios, see [Set up Delivery Optimization](waas-delivery-optimization-setup.md). For a comprehensive list of all Delivery Optimization settings, see [Delivery Optimization reference](waas-delivery-optimization-reference.md).
 
