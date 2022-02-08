@@ -164,7 +164,7 @@ Steps to use Process explorer:
  
 Finally, if the above methods did not help you isolate the process, we suggest you collect a complete memory dump of the machine in the issue state. The dump will tell you which process has the maximum handles.
  
-As a workaround, rebooting the computer will get the it back in normal state and would help you resolve the issue for the time being. However, when a reboot is impractical, you can also consider increasing the number of ports on the machine using the below commands:
+As a workaround, rebooting the computer will get it back in normal state and would help you resolve the issue for the time being. However, when a reboot is impractical, you can also consider increasing the number of ports on the machine using the below commands:
 
 ```console
 netsh int ipv4 set dynamicport tcp start=10000 num=1000
