@@ -45,7 +45,7 @@ landingContent:
             url: waas-delivery-optimization-setup.md#recommended-delivery-optimization-settings
           - text: Windows PowerShell for Delivery Optimization
             url: waas-delivery-optimization-setup.md#windows-powershell-cmdlets
-          - text: Troubleshooting Delivery Optimization
+          - text: Troubleshoot Delivery Optimization
             url: waas-delivery-optimization-setup.md#troubleshooting
           - text: Submit feedback
             url: https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app

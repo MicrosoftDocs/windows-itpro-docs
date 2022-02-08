@@ -25,13 +25,9 @@
     - name: Microsoft Connected Cache
       items:
         - name: Microsoft Connected Cache for Enterprises
-          items:
-            - name: Windows Delivery Optimization settings
-              href: /windows/whats-new/windows-11-plan
+          href: mcc-enterprise.md
         - name: Microsoft Connected Cache for ISPs
-          items:
-            - name: Configuration Manager settings
-              href: /windows/whats-new/windows-11-plan
+          href: mcc-isp.md
 
     - name: Resources
       items:
