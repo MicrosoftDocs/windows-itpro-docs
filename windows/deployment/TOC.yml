@@ -83,7 +83,7 @@
         - name: Update Baseline
           href: update/update-baseline.md
         - name: Set up Delivery Optimization for Windows client updates
-          href: update/waas-delivery-optimization-setup.md
+          href: do/index.yml
         - name: Configure BranchCache for Windows client updates
           href: update/waas-branchcache.md
         - name: Prepare your deployment tools
