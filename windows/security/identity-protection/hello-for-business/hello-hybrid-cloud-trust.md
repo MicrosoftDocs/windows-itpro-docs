@@ -62,7 +62,7 @@ More details on how Azure AD Kerberos enables access to on-premises resources ar
 The following scenarios aren't supported using Windows Hello for Business cloud trust.
 
 - On-premises only deployments
-- RDP/VDI scenarios using supplied credentials
+- RDP/VDI scenarios using supplied credentials (RDP/VDI can be used with Remote Credential Guard or if a certificate is enrolled into the Windows Hello for Business container)
 - Scenarios that require a certificate for authentication
 - Using cloud trust for "Run as"
 - Signing in with cloud trust on a Hybrid Azure AD joined device without previously signing in with DC connectivity
@@ -253,3 +253,7 @@ Windows Hello for Business cloud trust looks for a writeable DC to exchange the 
 Windows Hello for Business cloud trust requires line of sight to a domain controller for some scenarios:
     - The first sign-in or unlock with Windows Hello for Business after provisioning on a Hybrid Azure AD joined device.
     - When attempting to access an on-premises resource from an Azure AD joined device.
+
+### Can I use RDP/VDI with Windows Hello for Business cloud trust?
+
+Windows Hello for Business cloud trust cannot be used as a supplied credential with RDP/VDI. Similar to key trust, cloud trust can be used for RDP with [remote credential guard](/windows/security/identity-protection/remote-credential-guard.md) or if a [certificate is enrolled into Windows Hello for Business](hello-deployment-rdp-certs.md) for this purpose.
