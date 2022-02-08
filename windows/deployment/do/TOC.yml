@@ -4,24 +4,23 @@
     - name: Get started
       items: 
         - name: What is Delivery Optimization?
-          href: deploy-whats-new.md
-        - name: What is Microsoft Connected Cache?
-          href: windows-10-deployment-scenarios.md
+          href: waas-delivery-optimization.md
         - name: What's new?
-          href: update/waas-quick-start.md
-        - name: 4
-          href: update/waas-overview.md
+          href: waas-delivery-optimization.md#new-in-windows-10-version-20h2-and-windows-11
+        - name: What is Microsoft Connected Cache?
+          href: waas-microsoft-connected-cache.md
+
      
     - name: Configure Delivery Optimization
       items:
         - name: Configure Windows Clients
           items:
             - name: Windows Delivery Optimization settings
-              href: /windows/whats-new/windows-11-plan
+              href: waas-delivery-optimization-setup.md#recommended-delivery-optimization-settings
         - name: Configure Microsoft Endpoint Manager
           items:
-            - name: Configuration Manager settings
-              href: /windows/whats-new/windows-11-plan
+            - name: Delivery Optimization settings in Microsoft Intune
+              href: /mem/intune/configuration/delivery-optimization-windows
      
     - name: Microsoft Connected Cache
       items:
@@ -36,7 +35,11 @@
 
     - name: Resources
       items:
-        - name: Blog1
-          href: /windows/whats-new/windows-11-plan
-        - name: Blog2
-          href: /windows/whats-new/windows-11-plan
+        - name: Introducing Microsoft Connected Cache
+          href: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-microsoft-connected-cache-microsoft-s-cloud-managed/ba-p/963898
+        - name: Delivery Optimization reference
+          href: waas-delivery-optimization-reference.md
+        - name: Delivery Optimization client-service communication
+          href: delivery-optimization-workflow.md       
+        - name: Using a proxy with Delivery Optimization
+          href: delivery-optimization-proxy.md

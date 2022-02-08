@@ -48,14 +48,14 @@ For more details information on Azure IoT Edge, please see the [Azure IoT Edge d
 6. Subsequent requests from end-user devices for content will now come from cache.
 7. If the Microsoft Connected Cache node is unavailable, the client will pull content from CDN to ensure uninterrupted service for your subscribers.
 
-![eMCC emg01](emages/emcc01.png)
+![eMCC emg01](images/emcc01.png)
 
 
 Figure 1: Each number in the diagram corresponds to the steps above
 
 ## Enterprise Requirements for Microsoft Connected Cache
 
-1. **Azure subscription** – Microsoft Connected Cache management portal is hosted within Azure and is used to create the [Connected Cache Azure resource](/azure/cloud-adoption-framework/govern/resource-consistency/resource-access-management.md) and IoT Hub resource – both are free services.
+1. **Azure subscription** – Microsoft Connected Cache management portal is hosted within Azure and is used to create the Connected Cache [Azure resource](/azure/cloud-adoption-framework/govern/resource-consistency/resource-access-management.md) and IoT Hub resource – both are free services.
 
 We will use your Azure subscription ID to take care of some provisioning with our services, first, to give you access to the preview. The Microsoft Connected Cache server requirement for an Azure subscription will cost you nothing. If you do not have an Azure subscription already, you can create an Azure Pay-As-You-Go account which requires a credit card for verification purposes. Please visit Azure Free Account FAQ | Microsoft Azure for more information.
 Again, the resources used for the preview and in the future when this product is ready for production will be completely free to you, like other caching solutions.
@@ -95,34 +95,34 @@ The Microsoft Connected Cache Azure management portal is used to create and mana
 Use the following link and log in to Azure
 https://portal.azure.com/?microsoft_azure_marketplace_ItemHideKey=Microsoft_ConnectedCache_EntHidden
 
-![eMCC emg02](emages/emcc02.png)
-![eMCC emg03](emages/emcc03.png)
-![eMCC emg04](emages/emcc04.png)
-![eMCC emg05](emages/emcc05.png)
-![eMCC emg06](emages/emcc06.png)
-![eMCC emg07](emages/emcc07.png)
-![eMCC emg08](emages/emcc08.png)
-![eMCC emg09](emages/emcc09.png)
-![eMCC emg10](emages/emcc10.png)
-![eMCC emg11](emages/emcc11.png)
-![eMCC emg12](emages/emcc12.png)
-![eMCC emg13](emages/emcc13.png)
-![eMCC emg14](emages/emcc14.png)
-![eMCC emg15](emages/emcc15.png)
-![eMCC emg16](emages/emcc16.png)
-![eMCC emg17](emages/emcc17.png)
-![eMCC emg18](emages/emcc18.png)
-![eMCC emg19](emages/emcc19.png)
-![eMCC emg20](emages/emcc20.png)
-![eMCC emg21](emages/emcc21.png)
-![eMCC emg22](emages/emcc22.png)
-![eMCC emg23](emages/emcc23.png)
-![eMCC emg24](emages/emcc24.png)
-![eMCC emg25](emages/emcc25.png)
-![eMCC emg26](emages/emcc26.png)
-![eMCC emg27](emages/emcc27.png)
-![eMCC emg28](emages/emcc28.png)
-![eMCC emg29](emages/emcc29.png)
+![eMCC emg02](images/emcc02.png)
+![eMCC emg03](images/emcc03.png)
+![eMCC emg04](images/emcc04.png)
+![eMCC emg05](images/emcc05.png)
+![eMCC emg06](images/emcc06.png)
+![eMCC emg07](images/emcc07.png)
+![eMCC emg08](images/emcc08.png)
+![eMCC emg09](images/emcc09.png)
+![eMCC emg10](images/emcc10.png)
+![eMCC emg11](images/emcc11.png)
+![eMCC emg12](images/emcc12.png)
+![eMCC emg13](images/emcc13.png)
+![eMCC emg14](images/emcc14.png)
+![eMCC emg15](images/emcc15.png)
+![eMCC emg16](images/emcc16.png)
+![eMCC emg17](images/emcc17.png)
+![eMCC emg18](images/emcc18.png)
+![eMCC emg19](images/emcc19.png)
+![eMCC emg20](images/emcc20.png)
+![eMCC emg21](images/emcc21.png)
+![eMCC emg22](images/emcc22.png)
+![eMCC emg23](images/emcc23.png)
+![eMCC emg24](images/emcc24.png)
+![eMCC emg25](images/emcc25.png)
+![eMCC emg26](images/emcc26.png)
+![eMCC emg27](images/emcc27.png)
+![eMCC emg28](images/emcc28.png)
+![eMCC emg29](images/emcc29.png)
 
 
 
@@ -287,7 +287,7 @@ This script will remove the following:
 7. Moby Engine
 To delete MCC, go to Control Panel > Uninstall a program > Select Azure IoT Edge LTS > Uninstall
 Appendix
-IoT Edge runtime The Azure IoT Edge runtime enables custom and cloud logic on IoT Edge devices. The runtime sits on the IoT Edge device, and performs management and communication operations. The runtime performs several functions: • Installs and update workloads (Docker containers) on the device. • Maintains Azure IoT Edge security standards on the device. • Ensures that IoT Edge modules (Docker containers) are always running. • Reports module (Docker containers) health to the cloud for remote monitoring. • Manages communication between an IoT Edge device and the cloud. For more information on Azure IoT Edge, please see the Azure IoT Edge documentation https://docs.microsoft.com/en-us/azure/iot-edge/about-iot-edge.
+IoT Edge runtime The Azure IoT Edge runtime enables custom and cloud logic on IoT Edge devices. The runtime sits on the IoT Edge device, and performs management and communication operations. The runtime performs several functions: • Installs and update workloads (Docker containers) on the device. • Maintains Azure IoT Edge security standards on the device. • Ensures that IoT Edge modules (Docker containers) are always running. • Reports module (Docker containers) health to the cloud for remote monitoring. • Manages communication between an IoT Edge device and the cloud. For more information on Azure IoT Edge, please see the Azure IoT Edge documentation https://docs.microsoft.com/azure/iot-edge/about-iot-edge.
 EFLOW
 What is Azure IoT Edge for Linux on Windows | Microsoft Docs
 Install Azure IoT Edge for Linux on Windows | Microsoft Docs

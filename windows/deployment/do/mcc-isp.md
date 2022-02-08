@@ -41,7 +41,7 @@ Microsoft Connected Cache is a Hybrid (mix of on-prem and cloud resources) solut
 7. Subsequent requests from end-user devices for content will now come from cache.
 8. If the Microsoft Connected Cache node is unavailable, the client will pull content from CDN to ensure uninterrupted service for your subscribers.
 
-![MCC overview 1](images/mcc01.png)
+![MCC overview 1](images/imcc01.png)
 
 ## ISP Requirements for Microsoft Connected Cache
 
@@ -247,7 +247,7 @@ Specifying any of the directories mentioned above will corrupt the VM and you wi
 10. If this is your first Microsoft Connected Cache deployment, select “n” when prompted for an IoT Hub. If this is not your first MCC deployment, you can use an existing IoT hub from your previous MCC installation. After selecting “Y”, we will display your existing IoT Hubs, you can copy and paste the resulting IoT Hub name to continue.
 11. If there are no errors go to the next step.
 • If there are errors, inspect the installer logs which are under /etc/mccresourcecreation/.
-• If there were follow the instructions to trouble shoot IoT edge https://docs.microsoft.com/en-us/azure/iot-edge/troubleshoot
+• If there were follow the instructions to trouble shoot IoT edge https://docs.microsoft.com/azure/iot-edge/troubleshoot
 Verify Proper Functioning Microsoft Connected Cache Server
 Verify Client Side
 Log into to the Connected Cache server or ssh and run this command from a terminal to see the running modules (containers).
@@ -338,7 +338,7 @@ b. Download Ubuntu Server
 13. Important: When prompted with the option to upgrade, decline.
 14.
 Your Ubuntu VM should now be ready for the next step: Install Microsoft Connected Cache on Your Server or VM
-IoT Edge runtime The Azure IoT Edge runtime enables custom and cloud logic on IoT Edge devices. The runtime sits on the IoT Edge device, and performs management and communication operations. The runtime performs several functions: • Installs and update workloads (Docker containers) on the device. • Maintains Azure IoT Edge security standards on the device. • Ensures that IoT Edge modules (Docker containers) are always running. • Reports module (Docker containers) health to the cloud for remote monitoring. • Manages communication between an IoT Edge device and the cloud. For more information on Azure IoT Edge, please see the Azure IoT Edge documentation https://docs.microsoft.com/en-us/azure/iot-edge/about-iot-edge.
+IoT Edge runtime The Azure IoT Edge runtime enables custom and cloud logic on IoT Edge devices. The runtime sits on the IoT Edge device, and performs management and communication operations. The runtime performs several functions: • Installs and update workloads (Docker containers) on the device. • Maintains Azure IoT Edge security standards on the device. • Ensures that IoT Edge modules (Docker containers) are always running. • Reports module (Docker containers) health to the cloud for remote monitoring. • Manages communication between an IoT Edge device and the cloud. For more information on Azure IoT Edge, please see the Azure IoT Edge documentation https://docs.microsoft.com/azure/iot-edge/about-iot-edge.
 
 
 
