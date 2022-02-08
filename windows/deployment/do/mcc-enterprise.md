@@ -22,13 +22,24 @@ ms.topic: article
 
 ## Overview
 
-Microsoft Connected Cache (MCC) preview is a software-only caching solution that delivers Microsoft content within Enterprise networks. MCC can be deployed to as many bare-metal servers or VMs as needed and is managed from a cloud portal. Cache nodes are created in the cloud portal and are configured by applying the client policy using your management tool (e.g. Intune).
+Microsoft Connected Cache (MCC) preview is a software-only caching solution that delivers Microsoft content within Enterprise networks. MCC can be deployed to as many bare-metal servers or VMs as needed and is managed from a cloud portal. Cache nodes are created in the cloud portal and are configured by applying the [client policy](/mem/intune/configuration/delivery-optimization-settings.md#local-server-caching) using your management tool, such as Intune.
+
 Microsoft Connected Cache is a Hybrid (mix of on-prem and cloud resources) SaaS solution built as an Azure IoT Edge module, a Docker compatible Linux container, that is deployed to your Windows devices. The Delivery Optimization team chose IoT Edge for Linux on Windows (EFLOW) as a secure, reliable container management infrastructure. EFLOW is a Linux virtual machine, based on Microsoft's first party CBL-Mariner operating system. It’s built with the IoT Edge runtime and validated as a tier 1 supported environment for IoT Edge workloads. Microsoft Connected Cache will be a Linux IoT Edge module running on the Windows Host OS.
-Even though your Microsoft Connected Cache scenario is not related to IoT, Azure IoT Edge is used as a more generic Linux container deployment and management infrastructure. The Azure IoT Edge runtime sits on your designated MCC device and performs management and communication operations. The runtime performs several functions important to manage Microsoft Connected Cache on your edge device: 1. Installs and updates Microsoft Connected Cache on your edge device. 2. Maintains Azure IoT Edge security standards on your edge device. 3. Ensures that Microsoft Connected Cache is always running. 4. Reports Microsoft Connected Cache health and usage to the cloud for remote monitoring.
+
+Even though your Microsoft Connected Cache scenario is not related to IoT, Azure IoT Edge is used as a more generic Linux container deployment and management infrastructure. The Azure IoT Edge runtime sits on your designated MCC device and performs management and communication operations. The runtime performs several functions important to manage Microsoft Connected Cache on your edge device: 
+
+1. Installs and updates Microsoft Connected Cache on your edge device. 
+2. Maintains Azure IoT Edge security standards on your edge device. 
+3. Ensures that Microsoft Connected Cache is always running. 
+4. Reports Microsoft Connected Cache health and usage to the cloud for remote monitoring.
+
 To deploy a functional Microsoft Connected Cache to your device, you must obtain the necessary keys that will provision the Connected Cache instance to communicate with Delivery Optimization services and enable the device to cache and deliver content.
 Figure 1 below describes the architecture of Microsoft Connected Cache built using IoT Edge.
-For more details information on Azure IoT Edge, please see the Azure IoT Edge documentation https://docs.microsoft.com/en-us/azure/iot-edge/about-iot-edge.
-How Microsoft Connected Cache Works
+
+For more details information on Azure IoT Edge, please see the [Azure IoT Edge documentation](/azure/iot-edge/about-iot-edge).
+
+## How Microsoft Connected Cache Works
+
 1. The Azure Management Portal used to create the Microsoft Connected Cache nodes.
 2. The Microsoft Connected Cache container deployed and provisioned to the server using the installer provided in the portal.
 3. Set the client policy in your management solution to point to the IP Address/FQDN of the cache server
@@ -38,44 +49,22 @@ How Microsoft Connected Cache Works
 7. If the Microsoft Connected Cache node is unavailable, the client will pull content from CDN to ensure uninterrupted service for your subscribers.
 
 ![eMCC emg01](emages/emcc01.png)
-![eMCC emg02](emages/emcc02.png)
-![eMCC emg03](emages/emcc03.png)
-![eMCC emg04](emages/emcc04.png)
-![eMCC emg05](emages/emcc05.png)
-![eMCC emg06](emages/emcc06.png)
-![eMCC emg07](emages/emcc07.png)
-![eMCC emg08](emages/emcc08.png)
-![eMCC emg09](emages/emcc09.png)
-![eMCC emg10](emages/emcc10.png)
-![eMCC emg11](emages/emcc11.png)
-![eMCC emg12](emages/emcc12.png)
-![eMCC emg13](emages/emcc13.png)
-![eMCC emg14](emages/emcc14.png)
-![eMCC emg15](emages/emcc15.png)
-![eMCC emg16](emages/emcc16.png)
-![eMCC emg17](emages/emcc17.png)
-![eMCC emg18](emages/emcc18.png)
-![eMCC emg19](emages/emcc19.png)
-![eMCC emg20](emages/emcc20.png)
-![eMCC emg21](emages/emcc21.png)
-![eMCC emg22](emages/emcc22.png)
-![eMCC emg23](emages/emcc23.png)
-![eMCC emg24](emages/emcc24.png)
-![eMCC emg25](emages/emcc25.png)
-![eMCC emg26](emages/emcc26.png)
-![eMCC emg27](emages/emcc27.png)
-![eMCC emg28](emages/emcc28.png)
-![eMCC emg29](emages/emcc29.png)
+
 
 Figure 1: Each number in the diagram corresponds to the steps above
-Enterprise Requirements for Microsoft Connected Cache
-1. Azure subscription – Microsoft Connected Cache management portal is hosted within Azure and is used to create the Connected Cache Azure resource and IoT Hub resource – both are free services.
+
+## Enterprise Requirements for Microsoft Connected Cache
+
+1. **Azure subscription** – Microsoft Connected Cache management portal is hosted within Azure and is used to create the [Connected Cache Azure resource](/azure/cloud-adoption-framework/govern/resource-consistency/resource-access-management.md) and IoT Hub resource – both are free services.
+
 We will use your Azure subscription ID to take care of some provisioning with our services, first, to give you access to the preview. The Microsoft Connected Cache server requirement for an Azure subscription will cost you nothing. If you do not have an Azure subscription already, you can create an Azure Pay-As-You-Go account which requires a credit card for verification purposes. Please visit Azure Free Account FAQ | Microsoft Azure for more information.
 Again, the resources used for the preview and in the future when this product is ready for production will be completely free to you, like other caching solutions.
-2. Hardware to host MCC - The recommended configuration will serve approximately 35,000 managed devices downloading a 2GB payload in 24-hour timeframe at a sustained rate of 6.5 Gbps.
-EFLOW Requires Hyper-V support
-• On Windows 10, enable Hyper-V
-• On Windows Server, install the Hyper-V role and create a default network switch
+2. **Hardware to host MCC** - The recommended configuration will serve approximately 35,000 managed devices downloading a 2GB payload in 24-hour timeframe at a sustained rate of 6.5 Gbps.
+
+**EFLOW Requires Hyper-V support**
+- On Windows 10, enable Hyper-V
+- On Windows Server, install the Hyper-V role and create a default network switch
+
 Some notes on the disk requirements:
 • Using an SSD is recommended as cache read speed of SSD is superior to HDD.
 Some notes on the NIC requirements:
@@ -105,6 +94,38 @@ Create the Microsoft Connected Cache Resource in Azure
 The Microsoft Connected Cache Azure management portal is used to create and manage Microsoft Connected Cache nodes. An Azure Subscription ID is used to grant access to the preview and to create the Microsoft Connected Cache resource in Azure and Cache nodes.
 Use the following link and log in to Azure
 https://portal.azure.com/?microsoft_azure_marketplace_ItemHideKey=Microsoft_ConnectedCache_EntHidden
+
+![eMCC emg02](emages/emcc02.png)
+![eMCC emg03](emages/emcc03.png)
+![eMCC emg04](emages/emcc04.png)
+![eMCC emg05](emages/emcc05.png)
+![eMCC emg06](emages/emcc06.png)
+![eMCC emg07](emages/emcc07.png)
+![eMCC emg08](emages/emcc08.png)
+![eMCC emg09](emages/emcc09.png)
+![eMCC emg10](emages/emcc10.png)
+![eMCC emg11](emages/emcc11.png)
+![eMCC emg12](emages/emcc12.png)
+![eMCC emg13](emages/emcc13.png)
+![eMCC emg14](emages/emcc14.png)
+![eMCC emg15](emages/emcc15.png)
+![eMCC emg16](emages/emcc16.png)
+![eMCC emg17](emages/emcc17.png)
+![eMCC emg18](emages/emcc18.png)
+![eMCC emg19](emages/emcc19.png)
+![eMCC emg20](emages/emcc20.png)
+![eMCC emg21](emages/emcc21.png)
+![eMCC emg22](emages/emcc22.png)
+![eMCC emg23](emages/emcc23.png)
+![eMCC emg24](emages/emcc24.png)
+![eMCC emg25](emages/emcc25.png)
+![eMCC emg26](emages/emcc26.png)
+![eMCC emg27](emages/emcc27.png)
+![eMCC emg28](emages/emcc28.png)
+![eMCC emg29](emages/emcc29.png)
+
+
+
 1. On the Azure Portal home page, Choose Create a resource
 2. Type "Microsoft Connected Cache" into the search box and be sure to hit the Enter key to show search results.
 NOTE:

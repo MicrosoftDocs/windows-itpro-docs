@@ -35,8 +35,7 @@ landingContent:
             url: waas-delivery-optimization.md#new-in-windows-10-version-20h2-and-windows-11
           - text: What is Microsoft Connected Cache?
             url: waas-microsoft-connected-cache.md
-          - text: Introducing Microsoft Connected Cache
-            url: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-microsoft-connected-cache-microsoft-s-cloud-managed/ba-p/963898
+
 
   # Card (optional)
   - title: Configure Delivery Optimization on Windows clients
@@ -68,7 +67,6 @@ landingContent:
           - text: MCC for Entreprises (Private Preview)
             url: mcc-enterprise.md
 
-
   # Card
   - title: Microsoft Connected Cache (MCC) for Internet Service Providers (ISPs)
     linkLists:
@@ -82,6 +80,8 @@ landingContent:
     linkLists:
       - linkListType: learn
         links:
+          - text: Introducing Microsoft Connected Cache
+            url: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-microsoft-connected-cache-microsoft-s-cloud-managed/ba-p/963898
           - text: Delivery Optimization reference
             url: waas-delivery-optimization-reference.md
           - text: Delivery Optimization client-service communication
