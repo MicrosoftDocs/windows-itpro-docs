@@ -82,7 +82,7 @@ Restart on Idle Time | Specify when Kiosk Browser should restart in a fresh stat
 > 
 > 1. Create the provisioning package. When ready to export, close the project in Windows Configuration Designer.
 > 2. Open the customizations.xml file in the project folder (e.g C:\Users\name\Documents\Windows Imaging and Configuration Designer (WICD)\Project_18). 
-> 3. Insert the null character string in between each URL (e.g www.bing.com`&#xF000;`www.contoso.com). 
+> 3. Insert the null character string in between each URL (e.g www.bing.com`&#xF000; www.contoso.com)`. 
 > 4. Save the XML file.
 > 5. Open the project again in Windows Configuration Designer.
 > 6. Export the package. Ensure you do not revisit the created policies under Kiosk Browser or else the null character will be removed.
@@ -120,8 +120,8 @@ The following table describes the results for different combinations of blocked 
 
 Blocked URL rule |  Block URL exception rule | Result
 --- | --- | ---
-`*` | `contoso.com`<br>`fabrikam.com` | All requests are blocked unless it is to contoso.com, fabrikam.com, or any of their subdomains.
-`contoso.com` | `mail.contoso.com`<br>`.contoso.com`<br>`.www.contoso.com` | Block all requests to contoso.com, except for the main page and its mail subdomain.
+`*` | `contoso.com`<br>`fabrikam.com` | All requests are blocked unless it is to `contoso.com, fabrikam.com,` or any of their subdomains.
+`contoso.com` | `mail.contoso.com`<br>`.contoso.com`<br>`.www.contoso.com` | Block all requests to `contoso.com,` except for the main page and its mail subdomain.
 `youtube.com` | `youtube.com/watch?v=v1`<br>`youtube.com/watch?v=v2` | Blocks all access to youtube.com except for the specified videos (v1 and v2).
 
 The following table gives examples for blocked URLs. 
@@ -129,11 +129,11 @@ The following table gives examples for blocked URLs.
 
 |          Entry           |                                    Result                                     |
 |--------------------------|-------------------------------------------------------------------------------|
-|      `contoso.com`       | Blocks all requests to contoso.com, www.contoso.com, and sub.www.contoso.com  |
+|      `contoso.com`       | Blocks all requests to contoso.com, `www.contoso.com,` and sub.www.contoso.com  |
 |       `https://*`        |                   Blocks all HTTPS requests to any domain.                    |
-|    `mail.contoso.com`    | Blocks requests to mail.contoso.com but not to www.contoso.com or contoso.com |
+|    `mail.contoso.com`    | Blocks requests to mail.contoso.com but not to `www.contoso.com` or contoso.com |
 |      `.contoso.com`      |    Blocks contoso.com but not its subdomains, like subdomain.contoso.com.     |
-|    `.www.contoso.com`    |                Blocks www.contoso.com but not its subdomains.                 |
+|    `.www.contoso.com`    |                Blocks `www.contoso.com` but not its subdomains.                 |
 |           `*`            |    Blocks all requests except for URLs in the Blocked URL Exceptions list.    |
 |         `*:8080`         |                       Blocks all requests to port 8080.                       |
 |   `contoso.com/stuff`    |         Blocks all requests to contoso.com/stuff and its subdomains.          |

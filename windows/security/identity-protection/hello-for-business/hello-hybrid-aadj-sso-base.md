@@ -193,7 +193,7 @@ The web server is ready to host the CRL distribution point.  Now, configure the 
 1. On the issuing certificate authority, sign-in as a local administrator.  Start the **Certificate Authority** console from **Administrative Tools**. 
 2. In the navigation pane, right-click the name of the certificate authority and click **Properties**
 3. Click **Extensions**.  On the **Extensions** tab, select **CRL Distribution Point (CDP)** from the **Select extension** list.
-4. On the **Extensions** tab, click **Add**. Type <b>http://crl.[domainname]/cdp/</b> in **location**.  For example, *<http://crl.corp.contoso.com/cdp/>* or *<http://crl.contoso.com/cdp/>* (do not forget the trailing forward slash). 
+4. On the **Extensions** tab, click **Add**. Type <b>http://crl.[domainname]/cdp/</b> in **location**.  For example, `<http://crl.corp.contoso.com/cdp/> or <http://crl.contoso.com/cdp/> (do not forget the trailing forward slash). `
    ![CDP New Location dialog box.](images/aadj/cdp-extension-new-location.png)
 5. Select **\<CaName>** from the **Variable** list and click **Insert**.  Select **\<CRLNameSuffix>** from the **Variable** list and click **Insert**.  Select **\<DeltaCRLAllowed>** from the **Variable** list and click **Insert**.
 6. Type **.crl** at the end of the text in **Location**. Click **OK**.

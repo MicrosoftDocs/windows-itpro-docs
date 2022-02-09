@@ -27,4 +27,4 @@ Set to **True** or **False**.
 
 ## Related topics
 
-- [AllJoyn](https://developer.microsoft.com/windows/iot/docs/alljoyn)
+- For more information, see [AllJoyn – Wikipedia](https://wikipedia.org/wiki/AllJoyn).
