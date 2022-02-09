@@ -30,12 +30,12 @@ To configure a dedicated test account on multiple PCs, select any of the followi
 - [Configuration in Intune for Education](#set-up-a-test-account-in-intune-for-education)
 - [Mobile device management (MDM) or Microsoft Endpoint Configuration Manager](#set-up-a-test-account-in-mdm-or-configuration-manager)
 - [Provisioning package created through Windows Configuration Designer](#set-up-a-test-account-through-windows-configuration-designer)
-- [Group Policy to deploy a scheduled task that runs a Powershell script](#create-a-scheduled-task-in-group-policy) 
+- [Group Policy to deploy a scheduled task that runs a PowerShell script](#create-a-scheduled-task-in-group-policy) 
 
 ### Set up a test account in the Set up School PCs app 
 If you want to set up a test account using the Set up School PCs app, configure the settings in the **Set up the Take a Test app** page in the Set up School PCs app. Follow the instructions in [Use the Set up School PCs app](use-set-up-school-pcs-app.md) to configure the test-taking account and create a provisioning package. 
 
-If you set up Take a Test, this adds a **Take a Test** button on the student PC's sign-in screen. Windows will also lock down the student PC so that students can't access anything else while taking the test.
+If you set up Take a Test, the **Take a Test** button is added on the student PC's sign-in screen. Windows will also lock down the student PC so that students can't access anything else while taking the test.
 
 **Figure 1** - Configure Take a Test in the Set up School PCs app
 
@@ -62,7 +62,7 @@ You can set up a test-taking account in Intune for Education. To do this, follow
 
       ![Add information about the test profile.](images/i4e_takeatestprofile_newtestaccount.png)
 
-      After you save the test profile, you will see a summary of the settings that you configured for Take a Test. Next, you'll need to assign the test profile to a group that will be using the test account.
+      After you save the test profile, you'll see a summary of the settings that you configured for Take a Test. Next, you'll need to assign the test profile to a group that will be using the test account.
     
 4. In the test account page, click **Groups**.
 
@@ -130,7 +130,7 @@ To set up a test account through Windows Configuration Designer, follow these st
 
 1. [Install Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd).
 2. Create a provisioning package by following the steps in [Provision PCs with common settings for initial deployment (desktop wizard)](/windows/configuration/provisioning-packages/provision-pcs-for-initial-deployment). However, make a note of these other settings to customize the test account.
-   1. After you're done with the wizard, do not click **Create**. Instead, click the **Switch to advanced editor** to switch the project to the advanced editor to see all the available **Runtime settings**.
+   1. After you're done with the wizard, don't click **Create**. Instead, click the **Switch to advanced editor** to switch the project to the advanced editor to see all the available **Runtime settings**.
    2. Under **Runtime settings**, go to **AssignedAccess > AssignedAccessSettings**.
    3. Enter **{"Account":"*redmond\\kioskuser*","AUMID":” Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App "}**, using the account that you want to set up.
 
@@ -150,13 +150,13 @@ To set up a test account through Windows Configuration Designer, follow these st
 
 3. Follow the steps to [build a package](/windows/configuration/provisioning-packages/provisioning-create-package#build-package). 
 
-   - You will see the file path for your provisioning package. By default, this is set to %windir%\Users\*your_username<em>\Windows Imaging and Configuration Designer (WICD)\*Project name</em>). 
+   - You'll see the file path for your provisioning package. By default, this is set to %windir%\Users\*your_username<em>\Windows Imaging and Configuration Designer (WICD)\*Project name</em>). 
    - Copy the provisioning package to a USB drive.
 
 4. Follow the steps in [Apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-apply-package) to apply the package that you created.
 
 ### Set up a tester account in Group Policy
-To set up a tester account using Group Policy, first create a Powershell script that configures the tester account and assessment URL, and then create a scheduled task to run the script.
+To set up a tester account using Group Policy, first create a PowerShell script that configures the tester account and assessment URL, and then create a scheduled task to run the script.
 
 #### Create a PowerShell script
 This sample PowerShell script configures the tester account and the assessment URL. Edit the sample to:
@@ -209,9 +209,9 @@ Anything hosted on the web can be presented in a locked down manner, not just as
 1. Create the link to the test using schema activation.
    - Create a link using a web UI
 
-     For this option, you can just copy the assessment URL, select the options you want to allow during the test, and click a button to create the link. We recommend this for option for teachers.
+     For this option, you can just copy the assessment URL, select the options you want to allow during the test, and click a button to create the link. We recommend this option for teachers.
 
-     To get started, go here: [Create a link using a web UI](https://aka.ms/create-a-take-a-test-link).
+     To get started, navigate to: [Create a link using a web UI](https://aka.ms/create-a-take-a-test-link).
 
    - Create a link using schema activation
 
@@ -245,17 +245,17 @@ One of the ways you can present content in a locked down manner is by embedding 
 
    If you exclude these parameters, the default behavior is disabled.
 
-   For tests that utilizes the Windows lockdown API, which checks for running processes before locking down, remove `enforceLockdown`. Removing `enforceLockdown` will result in the app not locking down immediately, which allows you to close apps that are not allowed to run during lockdown. The test web application may lock down the device once you have closed the apps.
+   For tests that utilize the Windows lockdown API, which checks for running processes before locking down, remove `enforceLockdown`. Removing `enforceLockdown` will result in the app not locking down immediately, which allows you to close apps that aren't allowed to run during lockdown. The test web application may lock down the device once you've closed the apps.
 
     > [!NOTE] 
     > The Windows 10, version 1607 legacy configuration, `ms-edu-secureassessment:<URL>!enforcelockdown` is still supported, but not in combination with the new parameters.
 
-3. To enable permissive mode, do not include `enforceLockdown` in the schema parameters.
+3. To enable permissive mode, don't include `enforceLockdown` in the schema parameters.
 
    See [Permissive mode](take-a-test-app-technical.md#permissive-mode) and [Secure Browser API Specification](https://github.com/SmarterApp/SB_BIRT/blob/master/irp/doc/req/SecureBrowserAPIspecification.md) for more info.
 
 ### Create a shortcut for the test link
-You can also distribute the test link by creating a shortcut. To do this, create the link to the test by either using the [web UI](https://aka.ms/create-a-take-a-test-link) or using [schema activation](#create-a-link-using-schema-activation). After you have the link, follow these steps:
+You can also distribute the test link by creating a shortcut. To create the shortcut, create the link to the test by either using the [web UI](https://aka.ms/create-a-take-a-test-link) or using [schema activation](#create-a-link-using-schema-activation). After you have the link, follow these steps:
 
 1. On a device running Windows, right-click on the desktop and then select **New > Shortcut**.
 2. In the **Create Shortcut** window, paste the assessment URL in the field under **Type the location of the item**.

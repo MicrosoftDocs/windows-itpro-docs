@@ -1,6 +1,6 @@
 ---
 title: Deployment recommendations for school IT administrators
-description: Provides guidance on ways to customize the OS privacy settings, as well as some of the apps, for Windows-based devices used in schools so that you can choose what information is shared with Microsoft.
+description: Provides guidance on ways to customize the OS privacy settings, and some of the apps, for Windows-based devices used in schools so that you can choose what information is shared with Microsoft.
 keywords: Windows 10 deployment, recommendations, privacy settings, school
 ms.mktglfcycl: plan
 ms.sitesec: library
@@ -19,9 +19,9 @@ ms.prod: w10
 -   Windows 10
 
 
-Your privacy is important to us, so we want to provide you with ways to customize the OS privacy settings, as well as some of the apps, so that you can choose what information is shared with Microsoft. To learn more about Microsoft’s commitment to privacy, see [Windows 10 and privacy](https://go.microsoft.com/fwlink/?LinkId=809305). The following sections provide some best practices and specific privacy settings we’d like you to be aware of. Also see [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md) for more information about ways to customize the OS diagnostic data, consumer experiences, Cortana, and search.
+Your privacy is important to us, so we want to provide you with ways to customize the OS privacy settings, and some of the apps, so that you can choose what information is shared with Microsoft. To learn more about Microsoft’s commitment to privacy, see [Windows 10 and privacy](https://go.microsoft.com/fwlink/?LinkId=809305). The following sections provide some best practices and specific privacy settings we’d like you to be aware of. For more information about ways to customize the OS diagnostic data, consumer experiences, Cortana, and search, see [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md).
 
-We want all students to have the chance to use the apps they need for success in the classroom and all school personnel to have apps they need for their job. Students and school personnel who use assistive technology apps not available in the Microsoft Store for Education, and use devices running Windows 10 S, will be able to configure the device at no additional charge to Windows 10 Pro Education. To learn more about the steps to configure this, see [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md).
+We want all students to have the chance to use the apps they need for success in the classroom and all school personnel to have apps they need for their job. Students and school personnel who use assistive technology apps not available in the Microsoft Store for Education, and use devices running Windows 10 S, will be able to configure the device at no extra charge to Windows 10 Pro Education. To learn more about the steps to configure this device, see [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md).
 
 ## Deployment best practices
 
@@ -33,7 +33,7 @@ Keep these best practices in mind when deploying any edition of Windows 10 in sc
 
 * IT administrators, school officials, and teachers should also consider ratings when picking apps from the Microsoft Store.
 
-* If you have students or school personnel who rely on assistive technology apps that are not available in the Microsoft Store for Education, and who are using a Windows 10 S device, configure their device to Windows 10 Pro Education to allow the download and use of non-Microsoft Store assistive technology apps. See [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md) for more info.
+* If you've students or school personnel who rely on assistive technology apps that aren't available in the Microsoft Store for Education, and who are using a Windows 10 S device, configure their device to Windows 10 Pro Education to allow the download and use of non-Microsoft Store assistive technology apps. See [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](change-to-pro-education.md) for more info.
 
 ## Windows 10 Contacts privacy settings
 
@@ -63,7 +63,7 @@ To turn off access to contacts for all apps on individual Windows devices:
 
 3. Turn off **Let apps access my contacts**.
 
-For IT-managed Windows devices, you can use a Group Policy to turn off the setting. To do this:
+For IT-managed Windows devices, you can use a Group Policy to turn off the setting. To turn off the setting:
 
 1. Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access contacts**.
 
@@ -75,7 +75,7 @@ If you want to allow only certain apps to have access to contacts, you can use t
 
 ![Choose apps with access to contacts.](images/win10_settings_privacy_contacts_apps.png)
 
-The list of apps on the Windows-based device may vary from the above example. The list depends on what apps you have installed and which of these apps access contacts.
+The list of apps on the Windows-based device may vary from the above example. The list depends on what apps you've installed and which of these apps access contacts.
 
 To allow only certain apps to have access to contacts, you can:
 
@@ -94,7 +94,7 @@ The Skype app replaces the integration of Skype features into Skype video and Me
 
 With the Xbox app, students can use their Xbox profiles to play and make progress on their games using their Windows-based device. They can also unlock achievements and show off to their friends with game clips and screenshots. The Xbox app requires a Microsoft account, which is a personal account.
 
-Both Skype and Xbox include searchable directories that let students find other people to connect to. The online privacy and security settings for Skype and Xbox are not manageable through Group Policy so we recommend that school IT administrators and school officials let parents and students know about these searchable directories.
+Both Skype and Xbox include searchable directories that let students find other people to connect to. The online privacy and security settings for Skype and Xbox aren't manageable through Group Policy so we recommend that school IT administrators and school officials let parents and students know about these searchable directories.
 
 If the school allows the use of personal or Microsoft account in addition to organization accounts, we also recommend that IT administrators inform parents and students that they can optionally remove any identifying information from the directories by:
 
@@ -123,13 +123,13 @@ To manage and edit your profile in the Skype UWP app, follow these steps:
 
 4. Review the information in each section and click **Edit profile** in either or both the **Personal information** and **Contact details** sections to change the information being shared. You can also remove the checks in the **Profile settings** section to change settings on discoverability, notifications, and staying in touch.
 
-5. If you do not wish the name to be included, edit the fields and replace the fields with **XXX**.
+5. If you don't wish the name to be included, edit the fields and replace the fields with **XXX**.
 
 6. To change the profile picture, go to the Skype app and click on the current profile picture or avatar. The **Manage Profile Picture** window pops up.
 
    ![Skype profile icon.](images/skype_uwp_manageprofilepic.png)
 
-   * To take a new picture, click the camera icon in the pop up window. To upload a new picture, click the three dots (**...**).
+   * To take a new picture, click the camera icon in the pop-up window. To upload a new picture, click the three dots (**...**).
 
    * You can also change the visibility of the profile picture between public (everyone) or for contacts only. To change the profile picture visibility, select the dropdown under **Profile picture** and choose between **Show to everyone** or **Show to contacts only**.
 
@@ -148,7 +148,7 @@ If you want to delete either (or both) the Skype and the Xbox accounts, here’s
 
 To delete a Skype account, you can follow the instructions here: [How do I close my Skype account?](https://go.microsoft.com/fwlink/?LinkId=816515)
 
-If you need help deleting the account, you can contact Skype customer service by going to the [Skype support request page](https://go.microsoft.com/fwlink/?LinkId=816519). You may need to sign in and specify a Skype account. Once you’ve signed in, you can:
+If you need help with deleting the account, you can contact Skype customer service by going to the [Skype support request page](https://go.microsoft.com/fwlink/?LinkId=816519). You may need to sign in and specify a Skype account. Once you’ve signed in, you can:
 
 1. Select a help topic (**Account and Password**)
 2. Select a related problem (**Deleting an account**)

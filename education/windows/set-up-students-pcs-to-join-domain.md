@@ -29,12 +29,12 @@ Follow the steps in [Provision PCs with common settings for initial deployment (
 1. In the **Account Management** step:
 
     > [!WARNING] 
-    > If you don't create a local administrator account and the device fails to enroll in Active Directory for any reason, you will have to reimage the device and start over. As a best practice, we recommend:
+    > If you don't create a local administrator account and the device fails to enroll in Active Directory for any reason, you'll have to reimage the device and start over. As a best practice, we recommend:
     >   - Use a least-privileged domain account to join the device to the domain.
     >   - Create a temporary administrator account to use for debugging or reprovisioning if the device fails to enroll successfully.
     >   - [Use Group Policy to delete the temporary administrator account](/archive/blogs/canitpro/group-policy-creating-a-standard-local-admin-account) after the device is enrolled in Active Directory.
 
-2. After you're done with the wizard, do not click **Create**. Instead, click the **Switch to advanced editor** to switch the project to the advanced editor to see all the available **Runtine settings**.
+2. After you're done with the wizard, don't click **Create**. Instead, click the **Switch to advanced editor** to switch the project to the advanced editor to see all the available **Runtime settings**.
 3. Find the **SharedPC** settings group.
     - Set **EnableSharedPCMode** to **TRUE** to configure the PC for shared use.
 4. (Optional) To configure the PC for secure testing, follow these steps.
@@ -58,7 +58,7 @@ Follow the steps in [Provision PCs with common settings for initial deployment (
 5. To configure other settings to make Windows education ready, see [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md) and follow the guidance on what settings you can set using Windows Configuration Designer.
 
 6. Follow the steps to [build a package](/windows/configuration/provisioning-packages/provisioning-create-package#build-package). 
-   - You will see the file path for your provisioning package. By default, this is set to %windir%\Users\*your_username<em>\Windows Imaging and Configuration Designer (WICD)\*Project name</em>). 
+   - You'll see the file path for your provisioning package. By default, this path is set to %windir%\Users\*your_username<em>\Windows Imaging and Configuration Designer (WICD)\*Project name</em>). 
    - Copy the provisioning package to a USB drive.
 
      > [!IMPORTANT]

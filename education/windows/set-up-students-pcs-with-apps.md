@@ -223,5 +223,5 @@ On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work ac
 
 -   Watch the video: [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
 
--   Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
+-   Watch the video: [Windows 10 for Mobile Devices: Provisioning Isn't Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
  
