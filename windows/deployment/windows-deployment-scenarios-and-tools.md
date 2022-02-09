@@ -18,7 +18,7 @@ ms.collection: highpri
 # Windows 10 deployment scenarios and tools
 
 
-To successfully deploy the Windows 10 operating system and applications for your organization, it is essential that you know about the available tools to help with the process. In this topic, you'll learn about the most commonly used tools for Windows 10 deployment.
+To successfully deploy the Windows 10 operating system and applications for your organization, it's essential that you know about the available tools to help with the process. In this topic, you'll learn about the most commonly used tools for Windows 10 deployment.
 
 Microsoft provides many tools, services, and solutions. These tools include Windows Deployment Services (WDS), the Volume Activation Management Tool (VAMT), the User State Migration Tool (USMT), Windows System Image Manager (Windows SIM), Windows Preinstallation Environment (Windows PE), and Windows Recovery Environment (Windows RE). Keep in mind that these are just tools and not a complete solution on their own. It’s when you combine these tools with solutions like [Microsoft Deployment Toolkit (MDT)](./deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md) or [Configuration Manager](deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md) that you get the complete deployment solution.
 
@@ -94,7 +94,7 @@ By default USMT migrates many settings, most of which are related to the user pr
 -   Operating system component settings
 -   Application settings
 
-These are the settings migrated by the default MigUser.xml and MigApp.xml templates. For more details on what USMT migrates, see [What does USMT migrate?](./usmt/usmt-what-does-usmt-migrate.md) For more information on the USMT overall, see the [USMT technical reference](./usmt/usmt-reference.md).
+These are the settings migrated by the default MigUser.xml and MigApp.xml templates. For more information on what USMT migrates, see [What does USMT migrate?](./usmt/usmt-what-does-usmt-migrate.md) For more information on the USMT overall, see the [USMT technical reference](./usmt/usmt-reference.md).
 
 ### Windows Imaging and Configuration Designer
 
@@ -110,7 +110,7 @@ For more information, see [Windows Imaging and Configuration Designer](/windows/
 
 Windows SIM is an authoring tool for Unattend.xml files. When using MDT and/or Configuration Manager, you don’t need Windows SIM often because those systems automatically update the Unattend.xml file during the deployment, greatly simplifying the process overall.
 
-![figure 7.](images/mdt-11-fig07.png)
+![figure 5.](images/mdt-11-fig07.png)
 
 Windows answer file opened in Windows SIM.
 
@@ -248,7 +248,7 @@ For more information on WSUS, see the [Windows Server Update Services Overview](
 ## Unified Extensible Firmware Interface
 
 
-For many years BIOS has been the industry standard for booting a PC. BIOS has served us well, but it is time to replace it with something better. **UEFI** is the replacement for BIOS, so it is important to understand the differences between BIOS and UEFI. In this section, you learn the major differences between the two and how they affect operating system deployment.
+For many years BIOS has been the industry standard for booting a PC. BIOS has served us well, but it's time to replace it with something better. **UEFI** is the replacement for BIOS, so it's important to understand the differences between BIOS and UEFI. In this section, you learn the major differences between the two and how they affect operating system deployment.
 
 ### Introduction to UEFI
 
@@ -267,7 +267,7 @@ With UEFI, you can benefit from:
 -   **Faster boot time.** UEFI doesn't use INT 13, and that improves boot time, especially when it comes to resuming from hibernate.
 -   **Multicast deployment.** UEFI firmware can use multicast directly when it boots up. In WDS, MDT, and Configuration Manager scenarios, you need to first boot up a normal Windows PE in unicast and then switch into multicast. With UEFI, you can run multicast from the start.
 -   **Compatibility with earlier BIOS.** Most of the UEFI implementations include a compatibility support module (CSM) that emulates BIOS.
--   **CPU-independent architecture.** Even if BIOS can run both 32- and 64-bit versions of firmware, all firmware device drivers on BIOS systems must also be 16-bit, and this affects performance. One of the reasons is the limitation in addressable memory, which is only 64 KB with BIOS.
+-   **CPU-independent architecture.** Even if BIOS can run both 32-bit and 64-bit versions of firmware, all firmware device drivers on BIOS systems must also be 16-bit, and this affects performance. One of the reasons is the limitation in addressable memory, which is only 64 KB with BIOS.
 -   **CPU-independent drivers.** On BIOS systems, PCI add-on cards must include a ROM that contains a separate driver for all supported CPU architectures. That isn't needed for UEFI because UEFI has the ability to use EFI Byte Code (EBC) images, which allow for a processor-independent device driver environment.
 -   **Flexible pre-operating system environment.** UEFI can perform many functions for you. You just need an UEFI application, and you can perform diagnostics and automatic repairs, and call home to report errors.
 -   **Secure boot.** Windows 8 and later can use the UEFI firmware validation process, called secure boot, which is defined in UEFI 2.3.1. Using this process, you can ensure that UEFI launches only a verified operating system loader and that malware can't switch the boot loader.
