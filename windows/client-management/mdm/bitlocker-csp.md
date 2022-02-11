@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 04/16/2020
+ms.date: 02/04/2022
 ms.reviewer: 
 manager: dansimp
 ms.collection: highpri
@@ -21,7 +21,7 @@ The BitLocker configuration service provider (CSP) is used by the enterprise to 
 > 
 > You must send all the settings together in a single SyncML to be effective.
 
-A Get operation on any of the settings, except for RequireDeviceEncryption and RequireStorageCardEncryption, returns
+A `Get` operation on any of the settings, except for `RequireDeviceEncryption` and `RequireStorageCardEncryption`, returns
 the setting configured by the admin.
 
 For RequireDeviceEncryption and RequireStorageCardEncryption, the Get operation returns the actual status of enforcement to the admin, such as if Trusted Platform Module (TPM) protection is required and if encryption is required. And if the device has BitLocker enabled but with password protector, the status reported is 0. A Get operation on RequireDeviceEncryption does not verify that a minimum PIN length is enforced (SystemDrivesMinimumPINLength).
@@ -120,7 +120,7 @@ If you want to disable this policy, use the following SyncML:
 ```
 
 > [!NOTE]
-> Currently only used space encryption is supported when using this CSP. 
+> Currently full disk encryption is supported when using this CSP for silent encryption. For non-silent encryption, encryption type will depend on `SystemDrivesEncryptionType` and `FixedDrivesEncryptionType` configured on the device.
 
 <!--/Policy-->
 <!--Policy-->
@@ -142,7 +142,7 @@ Allows you to set the default encryption method for each of the different drive 
 <!--ADMXMapped-->
 ADMX Info:
 <ul>
-<li>GP English name: <em>Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later)</em></li>
+<li>GP Friendly name: <em>Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later)</em></li>
 <li>GP name: <em>EncryptionMethodWithXts_Name</em></li>
 <li>GP path: <em>Windows Components/BitLocker Drive Encryption</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
@@ -216,7 +216,7 @@ Allows you to associate unique organizational identifiers to a new drive that is
 <!--ADMXMapped-->
 ADMX Info:
 <ul>
-<li>GP English name: <em>Provide the unique identifiers for your organization </em></li>
+<li>GP Friendly name: <em>Provide the unique identifiers for your organization </em></li>
 <li>GP name: <em>IdentificationField_Name</em></li>
 <li>GP path: <em>Windows Components/BitLocker Drive Encryption</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
@@ -276,7 +276,7 @@ Allows users on devices that are compliant with InstantGo or the Microsoft Hardw
 <!--ADMXMapped-->
 ADMX Info:
 <ul>
-<li>GP English name: <em>Allow devices compliant with InstantGo or HSTI to opt out of pre-boot PIN</em></li>
+<li>GP Friendly name: <em>Allow devices compliant with InstantGo or HSTI to opt out of pre-boot PIN</em></li>
 <li>GP name: <em>EnablePreBootPinExceptionOnDECapableDevice_Name</em></li>
 <li>GP path: <em>Windows Components/BitLocker Drive Encryption/Operating System Drives</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
@@ -318,7 +318,7 @@ Allows users to configure whether or not enhanced startup PINs are used with Bit
 <!--ADMXMapped-->
 ADMX Info:
 <ul>
-<li>GP English name: <em>Allow enhanced PINs for startup</em></li>
+<li>GP Friendly name: <em>Allow enhanced PINs for startup</em></li>
 <li>GP name: <em>EnhancedPIN_Name</em></li>
 <li>GP path: <em>Windows Components/BitLocker Drive Encryption/Operating System Drives</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
@@ -363,7 +363,7 @@ Allows you to configure whether standard users are allowed to change BitLocker P
 <!--ADMXMapped-->
 ADMX Info:
 <ul>
-<li>GP English name: <em>Disallow standard users from changing the PIN or password</em></li>
+<li>GP Friendly name: <em>Disallow standard users from changing the PIN or password</em></li>
 <li>GP name: <em>DisallowStandardUsersCanChangePIN_Name</em></li>
 <li>GP path: <em>Windows Components/BitLocker Drive Encryption/Operating System Drives</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
@@ -408,7 +408,7 @@ Allows users to enable authentication options that require user input from the p
 <!--ADMXMapped-->
 ADMX Info:
 <ul>
-<li>GP English name: <em>Enable use of BitLocker authentication requiring preboot keyboard input on slates</em></li>
+<li>GP Friendly name: <em>Enable use of BitLocker authentication requiring preboot keyboard input on slates</em></li>
 <li>GP name: <em>EnablePrebootInputProtectorsOnSlates_Name</em></li>
 <li>GP path: <em>Windows Components/BitLocker Drive Encryption/Operating System Drives</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
@@ -459,7 +459,7 @@ Allows you to configure the encryption type that is used by BitLocker.
 <!--ADMXMapped-->
 ADMX Info:
 <ul>
-<li>GP English name: <em>Enforce drive encryption type on operating system drives</em></li>
+<li>GP Friendly name: <em>Enforce drive encryption type on operating system drives</em></li>
 <li>GP name: <em>OSEncryptionType_Name</em></li>
 <li>GP path: <em>Windows Components/BitLocker Drive Encryption/Operating System Drives</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
@@ -507,7 +507,7 @@ This setting is a direct mapping to the BitLocker Group Policy "Require addition
 <!--ADMXMapped-->
 ADMX Info:
 <ul>
-<li>GP English name: <em>Require additional authentication at startup</em></li>
+<li>GP Friendly name: <em>Require additional authentication at startup</em></li>
 <li>GP name: <em>ConfigureAdvancedStartup_Name</em></li>
 <li>GP path: <em>Windows Components/BitLocker Drive Encryption/Operating System Drives</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
@@ -604,7 +604,7 @@ This setting is a direct mapping to the BitLocker Group Policy "Configure minimu
 <!--ADMXMapped-->
 ADMX Info:
 <ul>
-<li>GP English name:<em>Configure minimum PIN length for startup</em></li>
+<li>GP Friendly name:<em>Configure minimum PIN length for startup</em></li>
 <li>GP name: <em>MinimumPINLength_Name</em></li>
 <li>GP path: <em>Windows Components/BitLocker Drive Encryption/Operating System Drives</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
@@ -670,7 +670,7 @@ This setting is a direct mapping to the BitLocker Group Policy "Configure pre-bo
 <!--ADMXMapped-->
 ADMX Info:
 <ul>
-<li>GP English name: <em>Configure pre-boot recovery message and URL</em></li>
+<li>GP Friendly name: <em>Configure pre-boot recovery message and URL</em></li>
 <li>GP name: <em>PrebootRecoveryInfo_Name</em></li>
 <li>GP path: <em>Windows Components/BitLocker Drive Encryption/Operating System Drives</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
@@ -748,7 +748,7 @@ This setting is a direct mapping to the BitLocker Group Policy "Choose how BitLo
 <!--ADMXMapped-->
 ADMX Info:
 <ul>
-<li>GP English name: <em>Choose how BitLocker-protected operating system drives can be recovered</em></li>
+<li>GP Friendly name: <em>Choose how BitLocker-protected operating system drives can be recovered</em></li>
 <li>GP name: <em>OSRecoveryUsage_Name</em></li>
 <li>GP path: <em>Windows Components/BitLocker Drive Encryption/Operating System Drives</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
@@ -834,7 +834,7 @@ This setting is a direct mapping to the BitLocker Group Policy "Choose how BitLo
 <!--ADMXMapped-->
 ADMX Info:
 <ul>
-<li>GP English name: <em>Choose how BitLocker-protected fixed drives can be recovered</em></li>
+<li>GP Friendly name: <em>Choose how BitLocker-protected fixed drives can be recovered</em></li>
 <li>GP name: <em>FDVRecoveryUsage_Name</em></li>
 <li>GP path: <em>Windows Components/BitLocker Drive Encryption/Fixed Drives</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
@@ -929,7 +929,7 @@ This setting is a direct mapping to the BitLocker Group Policy "Deny write acces
 <!--ADMXMapped-->
 ADMX Info:
 <ul>
-<li>GP English name: <em>Deny write access to fixed drives not protected by BitLocker</em></li>
+<li>GP Friendly name: <em>Deny write access to fixed drives not protected by BitLocker</em></li>
 <li>GP name: <em>FDVDenyWriteAccess_Name</em></li>
 <li>GP path: <em>Windows Components/BitLocker Drive Encryption/Fixed Drives</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
@@ -987,7 +987,7 @@ Allows you to configure the encryption type on fixed data drives that is used by
 <!--ADMXMapped-->
 ADMX Info:
 <ul>
-<li>GP English name: <em>Enforce drive encryption type on fixed data drives</em></li>
+<li>GP Friendly name: <em>Enforce drive encryption type on fixed data drives</em></li>
 <li>GP name: <em>FDVEncryptionType_Name</em></li>
 <li>GP path: <em>Windows Components/BitLocker Drive Encryption/Fixed Data Drives</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
@@ -1037,7 +1037,7 @@ This setting is a direct mapping to the BitLocker Group Policy "Deny write acces
 <!--ADMXMapped-->
 ADMX Info:
 <ul>
-<li>GP English name: <em>Deny write access to removable drives not protected by BitLocker</em></li>
+<li>GP Friendly name: <em>Deny write access to removable drives not protected by BitLocker</em></li>
 <li>GP name: <em>RDVDenyWriteAccess_Name</em></li>
 <li>GP path: <em>Windows Components/BitLocker Drive Encryption/Removeable Drives</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
@@ -1106,7 +1106,7 @@ Allows you to configure the encryption type that is used by BitLocker.
 <!--ADMXMapped-->
 ADMX Info:
 <ul>
-<li>GP English name: <em>Enforce drive encryption type on removable data drives</em></li>
+<li>GP Friendly name: <em>Enforce drive encryption type on removable data drives</em></li>
 <li>GP name: <em>RDVEncryptionType_Name</em></li>
 <li>GP path: <em>Windows Components/BitLocker Drive Encryption/Removable Data Drives</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
@@ -1150,7 +1150,7 @@ Allows you to control the use of BitLocker on removable data drives.
 <!--ADMXMapped-->
 ADMX Info:
 <ul>
-<li>GP English name: <em>Control use of BitLocker on removable drives</em></li>
+<li>GP Friendly name: <em>Control use of BitLocker on removable drives</em></li>
 <li>GP name: <em>RDVConfigureBDE_Name</em></li>
 <li>GP path: <em>Windows Components/BitLocker Drive Encryption/Removable Data Drives</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
