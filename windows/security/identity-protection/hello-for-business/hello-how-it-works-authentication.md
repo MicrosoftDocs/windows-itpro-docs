@@ -12,7 +12,7 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 01/25/2022
+ms.date: 02/11/2022
 ms.reviewer: 
 ---
 # Windows Hello for Business and Authentication
@@ -38,6 +38,9 @@ Azure Active Directory joined devices authenticate to Azure during sign-in and c
 
 ![Azure AD join authentication to Azure Active Directory.](images/howitworks/auth-aadj-cloud.png)
 
+> [!NOTE]
+> All Azure AD joined devices authenticate with Windows Hello for Business to Azure AD the same way. The Windows Hello for Business trust type only impacts how the device authenticates to on-premises AD.
+
 | Phase  | Description  |
 | :----: | :----------- |
 |A | Authentication begins when the user dismisses the lock screen, which triggers winlogon to show the Windows Hello for Business credential provider.  The user provides their Windows Hello gesture (PIN or biometrics).  The credential provider packages these credentials and returns them to winlogon.  Winlogon passes the collected credentials to lsass. Lsass passes the collected credentials to the Cloud Authentication security support provider, referred to as the Cloud AP provider.| 
@@ -46,7 +49,7 @@ Azure Active Directory joined devices authenticate to Azure during sign-in and c
 |D | The Cloud AP provider receives the encrypted PRT with session key.  Using the device's private transport key, the Cloud AP provider decrypt the session key and protects the session key using the device's TPM.|
 |E | The Cloud AP provider returns a successful authentication response to lsass. Lsass caches the PRT, and informs winlogon of the success authentication.  Winlogon creates a logon session, loads the user's profile, and starts explorer.exe.|
 
-## Azure AD join authentication to Active Directory using Azure AD Kerberos (Cloud Trust)
+## Azure AD join authentication to Active Directory using Azure AD Kerberos (cloud trust preview)
 
 ![Azure AD join authentication to Azure Active Directory.](images/howitworks/auth-aadj-cloudtrust-kerb.png)
 
@@ -55,7 +58,7 @@ Azure Active Directory joined devices authenticate to Azure during sign-in and c
 |A | Authentication to Active Directory from an Azure AD joined device begins with the user first attempts to use a resource that needs Kerberos authentication.  The Kerberos security support provider, hosted in lsass, uses metadata from the Windows Hello for Business key to get a hint of the user's domain.  Using the hint, the provider uses the DClocator service to locate a 2016 domain controller.
 |B | After locating an active 2016 domain controller, the Kerberos provider sends a partial TGT that it received from Azure AD from a previous Azure AD authentication to the domain controller. The partial TGT contains only the user SID and is signed by Azure AD Kerberos. The domain controller will verify that the partial TGT is valid. On success, the KDC returns a TGT to the client.|
 
-## Azure AD join authentication to Active Directory using a Key
+## Azure AD join authentication to Active Directory using a key
 
 ![Azure AD join authentication to Active Directory using a Key.](images/howitworks/auth-aadj-keytrust-kerb.png)
 
@@ -68,7 +71,7 @@ Azure Active Directory joined devices authenticate to Azure during sign-in and c
 > [!NOTE]
 > You might have an on-premises domain federated with Azure AD. Once you have successfully provisioned Windows Hello for Business PIN/Bio on the Azure AD joined device, any future login of Windows Hello for Business (PIN/Bio) sign-in will directly authenticate against Azure AD to get PRT and trigger authenticate against your DC (if LOS to DC is available) to get Kerberos. It no longer uses AD FS to authenticate for Windows Hello for Business sign-ins.
 
-## Azure AD join authentication to Active Directory using a Certificate
+## Azure AD join authentication to Active Directory using a certificate
 
 ![Azure AD join authentication to Active Directory using a Certificate.](images/howitworks/auth-aadj-certtrust-kerb.png)
 
@@ -81,7 +84,7 @@ Azure Active Directory joined devices authenticate to Azure during sign-in and c
 > [!NOTE]
 > You may have an on-premises domain federated with Azure AD. Once you have successfully provisioned Windows Hello for Business PIN/Bio on, any future login of Windows Hello for Business (PIN/Bio) sign-in will directly authenticate against Azure AD to get PRT, as well as authenticate against your DC (if LOS to DC is available) to get Kerberos as mentioned previously. AD FS federation is used only when Enterprise PRT calls are placed from the client. You need to have device write-back enabled to get "Enterprise PRT" from your federation.  
 
-## Hybrid Azure AD join authentication using Azure AD Kerberos (Cloud Trust)
+## Hybrid Azure AD join authentication using Azure AD Kerberos (cloud trust preview)
 
 ![Hybrid Azure AD join authentication using Azure AD Kerberos](images/howitworks/auth-haadj-cloudtrust.png)
 
@@ -93,9 +96,9 @@ Azure Active Directory joined devices authenticate to Azure during sign-in and c
 |D | Cloud AP  receives the encrypted PRT with session key. Using the device's private transport key, Cloud AP decrypts the session key and protects the session key using the device's TPM (if available). Cloud AP returns a successful authentication response to lsass. Lsass caches the PRT and the Partial TGT.
 |E | The Kerberos security support provider, hosted in lsass, uses metadata from the Windows Hello for Business key to get a hint of the user's domain.  Using the hint, the provider uses the DClocator service to locate a 2016 domain controller. After locating an active 2016 domain controller, the Kerberos provider sends the partial TGT that it received from Azure AD to the domain controller. The partial TGT contains only the user SID and is signed by Azure AD Kerberos. The domain controller will verify that the partial TGT is valid. On success, the KDC returns a TGT to the client. Kerberos will return the TGT to lsass, where it is cached and used for subsequent service ticket requests. Lsass informs winlogon of the success authentication. Winlogon creates a logon session, loads the user's profile, and starts explorer.exe.|
 
-## Hybrid Azure AD join authentication using a Key
+## Hybrid Azure AD join authentication using a key
 
-![Hybrid Azure AD join authentication using a Key.](images/howitworks/auth-haadj-keytrust.png)
+![Hybrid Azure AD join authentication using a key.](images/howitworks/auth-haadj-keytrust.png)
 
 | Phase  | Description  |
 | :----: | :----------- |
@@ -110,7 +113,7 @@ Azure Active Directory joined devices authenticate to Azure during sign-in and c
 > [!IMPORTANT]
 > In the above deployment model, a newly provisioned user will not be able to sign in using Windows Hello for Business until (a) Azure AD Connect successfully synchronizes the public key to the on-premises Active Directory and (b) device has line of sight to the domain controller for the first time.
 
-## Hybrid Azure AD join authentication using a Certificate
+## Hybrid Azure AD join authentication using a certificate
 
 ![Hybrid Azure AD join authentication using a Certificate.](images/howitworks/auth-haadj-certtrust.png)
 

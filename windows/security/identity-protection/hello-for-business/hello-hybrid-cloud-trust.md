@@ -16,7 +16,7 @@ localizationpriority: medium
 ms.date: 2/07/2022
 ms.reviewer: 
 ---
-# Hybrid Cloud Trust Deployment
+# Hybrid Cloud Trust Deployment (Preview)
 
 Applies to
 
@@ -35,7 +35,8 @@ Windows Hello for Business cloud trust uses Azure Active Directory (AD) Kerberos
 - Cloud trust doesn't require syncing of public keys between Azure AD and on-premises domain controllers (DCs) for users to access on-premises resources and applications. This change means there isn't a delay between the user provisioning and being able to authenticate.
 - Deploying Windows Hello for Business cloud trust enables you to also deploy passwordless security keys with minimal extra setup.
 
-Windows Hello for Business cloud trust is recommended instead of key trust if you meet the prerequisites to deploy cloud trust. Cloud trust is the preferred deployment model if you do not need to support certificate authentication scenarios.
+> [!NOTE]
+> Windows Hello for Business cloud trust is recommended instead of key trust if you meet the prerequisites to deploy cloud trust. Cloud trust is the preferred deployment model if you do not need to support certificate authentication scenarios.
 
 ## Azure Active Directory Kerberos and Cloud Trust Authentication
 
