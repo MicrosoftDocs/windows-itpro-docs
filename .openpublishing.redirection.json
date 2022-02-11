@@ -19326,6 +19326,11 @@
       "source_path": "windows/privacy/manage-windows-1803-endpoints.md",
       "redirect_url": "/windows/privacy/manage-windows-21h2-endpoints",
       "redirect_document_id": false
+    },
+    { 
+     "source_path": "windows/whats-new/windows-11-whats-new.md",
+     "redirect_url": "/windows/whats-new/windows-11-overview",
+     "redirect_document_id": false
     }
   ]
 }
