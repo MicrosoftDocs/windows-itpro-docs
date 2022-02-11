@@ -127,7 +127,7 @@ To manage and edit your profile in the Skype UWP app, follow these steps:
 
 6. To change the profile picture, go to the Skype app and click on the current profile picture or avatar. The **Manage Profile Picture** window pops up.
 
-   ![Skype profile icon.](images/skype_uwp_manageprofilepic.png)
+   ![The icon for Skype profile.](images/skype_uwp_manageprofilepic.png)
 
    * To take a new picture, click the camera icon in the pop-up window. To upload a new picture, click the three dots (**...**).
 
