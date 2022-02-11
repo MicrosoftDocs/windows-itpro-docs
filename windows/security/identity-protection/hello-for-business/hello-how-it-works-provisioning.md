@@ -12,7 +12,7 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 08/19/2018
+ms.date: 2/15/2022
 ms.reviewer: 
 ---
 # Windows Hello for Business Provisioning
@@ -30,21 +30,21 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 
 List of provisioning flows:
 
-- [Azure AD joined provisioning in a Managed environment](#azure-ad-joined-provisioning-in-a-managed-environment)
-- [Azure AD joined provisioning in a Federated environment](#azure-ad-joined-provisioning-in-a-federated-environment)
-- [Hybrid Azure AD joined provisioning in a Cloud Trust deployment in a Managed environment](#hybrid-azure-ad-joined-provisioning-in-a-cloud-trust-deployment-in-a-managed-environment)
-- [Hybrid Azure AD joined provisioning in a Key Trust deployment in a Managed environment](#hybrid-azure-ad-joined-provisioning-in-a-key-trust-deployment-in-a-managed-environment)
-- [Hybrid Azure AD joined provisioning in a synchronous Certificate Trust deployment in a Federated environment](#hybrid-azure-ad-joined-provisioning-in-a-synchronous-certificate-trust-deployment-in-a-federated-environment)
-- [Domain joined provisioning in an On-premises Key Trust deployment](#domain-joined-provisioning-in-an-on-premises-key-trust-deployment)
-- [Domain joined provisioning in an On-premises Certificate Trust deployment](#domain-joined-provisioning-in-an-on-premises-certificate-trust-deployment)
+- [Azure AD joined provisioning in a managed environment](#azure-ad-joined-provisioning-in-a-managed-environment)
+- [Azure AD joined provisioning in a federated environment](#azure-ad-joined-provisioning-in-a-federated-environment)
+- [Hybrid Azure AD joined provisioning in a cloud trust (preview) deployment in a managed environment](#hybrid-azure-ad-joined-provisioning-in-a-cloud-trust-preview-deployment-in-a-managed-environment)
+- [Hybrid Azure AD joined provisioning in a key trust deployment in a managed environment](#hybrid-azure-ad-joined-provisioning-in-a-key-trust-deployment-in-a-managed-environment)
+- [Hybrid Azure AD joined provisioning in a synchronous certificate trust deployment in a federated environment](#hybrid-azure-ad-joined-provisioning-in-a-synchronous-certificate-trust-deployment-in-a-federated-environment)
+- [Domain joined provisioning in an On-premises key trust deployment](#domain-joined-provisioning-in-an-on-premises-key-trust-deployment)
+- [Domain joined provisioning in an On-premises certificate trust deployment](#domain-joined-provisioning-in-an-on-premises-certificate-trust-deployment)
 
 > [!NOTE]
 > The flows in this section are not exhaustive for every possible scenario. For example, Federated Key Trust is also a supported configuration.
 
 
-## Azure AD joined provisioning in a Managed environment
+## Azure AD joined provisioning in a managed environment
 
-![Azure AD joined provisioning in a Managed environment.](images/howitworks/prov-aadj-managed.png)
+![Azure AD joined provisioning in a managed environment.](images/howitworks/prov-aadj-managed.png)
 [Full size image](images/howitworks/prov-aadj-managed.png)
 
 | Phase  | Description  |
@@ -56,9 +56,9 @@ List of provisioning flows:
 
 [Return to top](#windows-hello-for-business-provisioning)
 
-## Azure AD joined provisioning in a Federated environment
+## Azure AD joined provisioning in a federated environment
 
-![Azure AD joined provisioning in Managed environment.](images/howitworks/prov-aadj-federated.png)
+![Azure AD joined provisioning in federated environment.](images/howitworks/prov-aadj-federated.png)
 [Full size image](images/howitworks/prov-aadj-federated.png)
 
 | Phase  | Description  |
@@ -69,9 +69,9 @@ List of provisioning flows:
 
 [Return to top](#windows-hello-for-business-provisioning)
 
-## Hybrid Azure AD joined provisioning in a Cloud Trust deployment in a Managed environment
+## Hybrid Azure AD joined provisioning in a cloud trust (preview) deployment in a managed environment
 
-![Hybrid Azure AD joined provisioning in a Cloud Trust deployment in a Managed environment.](images/howitworks/prov-haadj-cloudtrust-managed.png)
+![Hybrid Azure AD joined provisioning in a cloud trust deployment in a Managed environment.](images/howitworks/prov-haadj-cloudtrust-managed.png)
 [Full size image](images/howitworks/prov-haadj-cloudtrust-managed.png)
 
 | Phase | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
@@ -85,9 +85,9 @@ List of provisioning flows:
 
 [Return to top](#windows-hello-for-business-provisioning)
 
-## Hybrid Azure AD joined provisioning in a Key Trust deployment in a Managed environment
+## Hybrid Azure AD joined provisioning in a key yrust deployment in a managed environment
 
-![Hybrid Azure AD joined provisioning in a Key Trust deployment in a Managed environment.](images/howitworks/prov-haadj-keytrust-managed.png)
+![Hybrid Azure AD joined provisioning in a key trust deployment in a managed environment.](images/howitworks/prov-haadj-keytrust-managed.png)
 [Full size image](images/howitworks/prov-haadj-keytrust-managed.png)
 
 | Phase | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
@@ -102,9 +102,9 @@ List of provisioning flows:
 
 [Return to top](#windows-hello-for-business-provisioning)
 
-## Hybrid Azure AD joined provisioning in a synchronous Certificate Trust deployment in a Federated environment
+## Hybrid Azure AD joined provisioning in a synchronous certificate trust deployment in a federated environment
 
-![Hybrid Azure AD joined provisioning in a synchronous Certificate Trust deployment in a Federated environment.](images/howitworks/prov-haadj-instant-certtrust-federated.png)
+![Hybrid Azure AD joined provisioning in a synchronous Certificate trust deployment in a federated environment.](images/howitworks/prov-haadj-instant-certtrust-federated.png)
 [Full size image](images/howitworks/prov-haadj-instant-certtrust-federated.png)
 
 | Phase | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |

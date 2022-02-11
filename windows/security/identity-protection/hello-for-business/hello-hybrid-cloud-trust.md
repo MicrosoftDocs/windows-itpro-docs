@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 2/07/2022
+ms.date: 2/15/2022
 ms.reviewer: 
 ---
 # Hybrid Cloud Trust Deployment (Preview)
@@ -46,7 +46,7 @@ With Azure AD Kerberos, Azure AD can issue TGTs for one or more of your AD domai
 
 When you enable Azure AD Kerberos in a domain, an Azure AD Kerberos Server object is created in your on-premises AD. This object will appear as a Read Only Domain Controller (RODC) object but isn't associated with any physical servers. This resource is only used by Azure Active Directory to generate TGTs for your Active Directory Domain. The same rules and restrictions used for RODCs apply to the Azure AD Kerberos Server object.
 
-More details on how Azure AD Kerberos enables access to on-premises resources are available in our documentation on [enabling passwordless security key sign-in to on-premises resources](/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). There's more information on how Azure AD Kerberos works with Windows Hello for Business cloud trust in the [Windows Hello for Business authentication technical deep dive](hello-how-it-works-authentication.md#hybrid-azure-ad-join-authentication-using-azure-ad-kerberos-cloud-trust).
+More details on how Azure AD Kerberos enables access to on-premises resources are available in our documentation on [enabling passwordless security key sign-in to on-premises resources](/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). There's more information on how Azure AD Kerberos works with Windows Hello for Business cloud trust in the [Windows Hello for Business authentication technical deep dive](hello-how-it-works-authentication.md#hybrid-azure-ad-join-authentication-using-azure-ad-kerberos-cloud-trust-preview).
 
 ## Prerequisites
 
