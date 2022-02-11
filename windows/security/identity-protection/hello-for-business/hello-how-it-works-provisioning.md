@@ -85,7 +85,7 @@ List of provisioning flows:
 
 [Return to top](#windows-hello-for-business-provisioning)
 
-## Hybrid Azure AD joined provisioning in a key yrust deployment in a managed environment
+## Hybrid Azure AD joined provisioning in a key trust deployment in a managed environment
 
 ![Hybrid Azure AD joined provisioning in a key trust deployment in a managed environment.](images/howitworks/prov-haadj-keytrust-managed.png)
 [Full size image](images/howitworks/prov-haadj-keytrust-managed.png)
