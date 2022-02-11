@@ -19306,6 +19306,11 @@
      "source_path": "windows/privacy/license-terms-windows-diagnostic-data-for-powershell.md",
      "redirect_url": "/legal/windows/license-terms-windows-diagnostic-data-for-powershell",
      "redirect_document_id": false
+    },
+    {
+     "source_path": "windows/whats-new/windows-11-whats-new.md",
+     "redirect_url": "/windows/whats-new/windows-11-overview",
+     "redirect_document_id": false
     }
   ]
 }
