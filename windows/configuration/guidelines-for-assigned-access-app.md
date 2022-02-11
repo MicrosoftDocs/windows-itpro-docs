@@ -131,7 +131,7 @@ The following table gives examples for blocked URLs.
 |--------------------------|-------------------------------------------------------------------------------|
 |      `contoso.com`       | Blocks all requests to contoso.com, `www.contoso.com,` and sub.www.contoso.com  |
 |       `https://*`        |                   Blocks all HTTPS requests to any domain.                    |
-|    `mail.contoso.com`    | Blocks requests to mail.contoso.com but not to `www.contoso.com` or contoso.com |
+|    `mail.contoso.com`    | Blocks requests to mail.contoso.com but not to `www.contoso.com` or `contoso.com` |
 |      `.contoso.com`      |    Blocks contoso.com but not its subdomains, like subdomain.contoso.com.     |
 |    `.www.contoso.com`    |                Blocks `www.contoso.com` but not its subdomains.                 |
 |           `*`            |    Blocks all requests except for URLs in the Blocked URL Exceptions list.    |
