@@ -59,7 +59,7 @@ Complete the following steps to create an Office 2013 package for App-V or later
 
 ### Review prerequisites for using the Office Deployment Tool
 
-Before you start, make sure that the computer on which you are installing the Office Deployment Tool has the following:
+Before you start, ensure that the computer on which you're installing the Office Deployment Tool has the following prerequisites fulfilled:
 
 |Prerequisite|Description|
 |---|---|
@@ -95,7 +95,7 @@ The XML file included in the Office Deployment Tool specifies the product detail
 
     1. Open the sample XML file in Notepad or your favorite text editor.
 
-    2. With the sample configuration.xml file open and ready for editing, you can specify products, languages, and the path to which you save the Office 2013 applications. The following is a basic example of the configuration.xml file:
+    2. With the sample configuration.xml file open and ready for editing, you can specify products, languages, and the path to which you save the Office 2013 applications. The following example denotes a configuration.xml file:
 
         ```XML
         <Configuration>
@@ -113,30 +113,30 @@ The XML file included in the Office Deployment Tool specifies the product detail
        > [!NOTE]
         >The configuration XML is a sample XML file. This file includes lines that are commented out. You can “uncomment” these lines to customize additional settings with the file.
 
-        The previous example of an XML configuration file specifies that Office 2013 ProPlus 32-bit edition, including Visio ProPlus, will be downloaded in English to the \\\\server\\Office 2013, which is the location where Office applications will be saved to. Note that the Product ID of the applications will not affect the final licensing of Office. Office 2013 App-V packages with various licensing can be created from the same applications by specifying licensing in a later stage. For more information, see [Customizable attributes and elements of the XML file](#customizable-attributes-and-elements-of-the-xml-file), later in this topic.
+        The previous example of an XML configuration file specifies that Office 2013 ProPlus 32-bit edition, including Visio ProPlus, will be downloaded in English to the \\\\server\\Office 2013, which is the location where Office applications will be saved to. The Product ID of the applications won't affect the final licensing of Office. Office 2013 App-V packages with various licensing can be created from the same applications by specifying licensing in a later stage. For more information, see [Customizable attributes and elements of the XML file](#customizable-attributes-and-elements-of-the-xml-file), later in this topic.
 
-        After editing the configuration.xml file to specify the desired product, languages, and also the location which the Office 2013 applications will be saved onto, you can save the configuration file, for example, as Customconfig.xml.
-2. **Download the applications into the specified location:** Use an elevated command prompt and a 64-bit operating system to download the Office 2013 applications that will later be converted into an App-V package. The following is an example command:
+        After editing the configuration.xml file to specify the desired product, languages, and also the location that the Office 2013 applications will be saved onto, you can save the configuration file, for example, as Customconfig.xml.
+2. **Download the applications into the specified location:** Use an elevated command prompt and a 64-bit operating system to download the Office 2013 applications that will later be converted into an App-V package. An example command is:
 
     ```PowerShell
     \\server\Office2013\setup.exe /download \\server\Office2013\Customconfig.xml
     ```
 
-    The following is a table that describes each element of the command:
+    The following table describes each element of the command:
 
     |Element|Description|
     |---|---|
-    |```\\server\Office2013```|This is the network share location that contains the Office Deployment Tool and the custom Configuration.xml file, **Customconfig.xml**.|
-    |```setup.exe```|This is the Office Deployment Tool.|
-    |```/download```|This downloads the Office 2013 applications that you specify in the **Customconfig.xml** file. These bits can be later converted in an Office 2013 App-V package with Volume Licensing.|
-    |```\\server\Office2013\Customconfig.xml```|This passes the XML configuration file required to complete the download process. In this example, the file used is **Customconfig.xml**. After using the download command, Office applications should be found in the location specified in the XML configuration file, which in this example is ```\\Server\Office2013```.|
+    |```\\server\Office2013```|This network share location is the one that contains the Office Deployment Tool and the custom Configuration.xml file, **Customconfig.xml**.|
+    |```setup.exe```|This element is the Office Deployment Tool.|
+    |```/download```|This element downloads the Office 2013 applications that you specify in the **Customconfig.xml** file. These bits can be later converted in an Office 2013 App-V package with Volume Licensing.|
+    |```\\server\Office2013\Customconfig.xml```|This element passes the XML configuration file required to complete the download process. In this example, the file used is **Customconfig.xml**. After the download command is used, Office applications should be found in the location specified in the XML configuration file, which in this example is ```\\Server\Office2013```.|
 
 #### Customizable attributes and elements of the XML file
 
 |Input and description|Example|
 |---|---|
 |Add element:<br>Specifies the products and languages to include in the package.|N/A|
-|OfficeClientEdition (attribute of Add element):<br>Specifies the edition of Office 2013 product to use: 32-bit or 64-bit. The operation fails if **OfficeClientEdition** is not set to a valid value.|```OfficeClientEdition="32"```<br>```OfficeClientEdition="64"```|
+|OfficeClientEdition (attribute of Add element):<br>Specifies the edition of Office 2013 product to use: 32-bit or 64-bit. The operation fails if **OfficeClientEdition** isn't set to a valid value.|```OfficeClientEdition="32"```<br>```OfficeClientEdition="64"```|
 |Product element:<br>Specifies the application. Project 2013 and Visio 2013 must be specified here as an added product to be included in the applications.|```Product ID="O365ProPlusRetail"```<br>```Product ID="VisioProRetail"```<br>```Product ID="ProjectProRetail"```<br>```Product ID="ProPlusVolume"```<br>```Product ID="ProjectProVolume"```|
 |Language element:<br>Specifies the language supported in the applications.|```Language ID="en-us"```|
 |Version (attribute of Add element):<br>Optional. Specifies a build to use for the package. Defaults to latest advertised build (as defined in v32.CAB at the Office source).|```15.1.2.3```|
@@ -220,11 +220,11 @@ After you download the Office 2013 applications through the Office Deployment To
 
     |Element|Description|
     |---|---|
-    |```\\server\Office2013```|This is the network share location that contains the Office Deployment Tool and the custom Configuration.xml file, which in this example is named **Customconfig.xml**.|
-    |```setup.exe```|This is the Office Deployment Tool.|
-    |```/packager```|This creates the Office 2013 App-V package with Volume Licensing as specified in the **Customconfig.xml** file.|
-    |```\\server\Office2013\Customconfig.xml```|This passes the configuration XML file, which in this example is named "Customconfig," that has been prepared for the packaging stage.|
-    |```\\server\share\Office2013AppV```|This specifies the location of the newly created Office App-V package.|
+    |```\\server\Office2013```|This network share location is the one that contains the Office Deployment Tool and the custom Configuration.xml file, which in this example is named **Customconfig.xml**.|
+    |```setup.exe```|This element is the Office Deployment Tool.|
+    |```/packager```|This element creates the Office 2013 App-V package with Volume Licensing as specified in the **Customconfig.xml** file.|
+    |```\\server\Office2013\Customconfig.xml```|This element passes the configuration XML file, which in this example is named "Customconfig," that has been prepared for the packaging stage.|
+    |```\\server\share\Office2013AppV```|This element specifies the location of the newly created Office App-V package.|
 
     After you run the **/packager** command, the following folders will appear in the directory where you specified the package should be saved:
 
@@ -303,7 +303,7 @@ Use the steps in this section to enable Office plug-ins with your Office package
 
 ### Disabling Office 2013 applications
 
-You may want to disable specific applications in your Office App-V package. For instance, you can disable Access, but leave all other Office application main available. When you disable an application, the end user will no longer see the shortcut for that application. You do not have to re-sequence the application. When you change the Deployment Configuration File after the Office 2013 App-V package has been published, you will save the changes, add the Office 2013 App-V package, then republish it with the new Deployment Configuration File to apply the new settings to Office 2013 App-V Package applications.
+You may want to disable specific applications in your Office App-V package. For instance, you can disable Access, but leave all other Office application main available. When you disable an application, the end user will no longer see the shortcut for that application. You don't have to re-sequence the application. When you change the Deployment Configuration File after the Office 2013 App-V package has been published, you'll save the changes, add the Office 2013 App-V package, then republish it with the new Deployment Configuration File to apply the new settings to Office 2013 App-V Package applications.
 
 >[!NOTE]
 >To exclude specific Office applications (for example, Access and InfoPath) when you create the App-V package with the Office Deployment Tool, use the **ExcludeApp** setting. For more information, see [Reference for Click-to-Run configuration.xml file](/DeployOffice/configuration-options-for-the-office-2016-deployment-tool#excludeapp-element).
@@ -371,7 +371,7 @@ You may want to disable shortcuts for certain Office applications instead of unp
 3. Save the Deployment Configuration File.
 4. Republish Office 2013 App-V Package with new Deployment Configuration File.
 
-Many additional settings can be changed through modifying the Deployment Configuration for App-V packages, for example, file type associations, Virtual File System, and more. For additional information on how to use Deployment Configuration Files to change App-V package settings, refer to the additional resources section at the end of this document.
+Many more settings can be changed through modifying the Deployment Configuration for App-V packages, for example, file type associations, Virtual File System, and more. For additional information on how to use Deployment Configuration Files to change App-V package settings, refer to the additional resources section at the end of this document.
 
 ### Managing Office 2013 package upgrades
 
