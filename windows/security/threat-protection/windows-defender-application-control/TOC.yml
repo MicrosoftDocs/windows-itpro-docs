@@ -35,6 +35,8 @@
                   href: manage-packaged-apps-with-windows-defender-application-control.md
                 - name: Use WDAC to control specific plug-ins, add-ins, and modules
                   href: use-windows-defender-application-control-policy-to-control-specific-plug-ins-add-ins-and-modules.md
+                - name: Understand WDAC policy settings
+                  href: understanding-wdac-policy-settings.md
             - name: Use multiple WDAC policies
               href: deploy-multiple-windows-defender-application-control-policies.md
         - name: Create your WDAC policy
