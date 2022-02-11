@@ -44,10 +44,10 @@ productDirectory:
   summary: Learn more about what's new, what's updated, and what you get in Windows 11 # < 160 chars (optional)
   items:
   # Card
-    - title: What's new in Windows 11
+    - title: Windows 11 overview
       imageSrc: /windows/resources/images/winlogo.svg
       summary: Get more information about features and improvements that are important to admins
-      url: /windows/whats-new/windows-11-whats-new
+      url: /windows/whats-new/windows-11-overview
     - title: Windows 11 requirements
       imageSrc: /windows/resources/images/winlogo.svg
       summary: See the system requirements for Windows 11, including running Windows 11 on a virtual machine
