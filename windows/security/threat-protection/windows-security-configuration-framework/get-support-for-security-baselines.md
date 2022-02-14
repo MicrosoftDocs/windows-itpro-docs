@@ -80,7 +80,7 @@ Windows 8.1 |[9600 (April Update)](/archive/blogs/secguide/security-baselines-fo
 |           Name            |                                                                            Details                                                                            |                               Security Tools                                |
 |---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
 |   Microsoft 365 Apps for enterprise, version 2112    | [SecGuide](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-365-apps-for-enterprise-v2112/ba-p/3038172) |     [SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319)     |
-|   Microsoft Edge, version 97    | [SecGuide](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-v97/ba-p/3062252) |     [SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319)     |
+|   Microsoft Edge, version 98    | [SecGuide](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-v98/ba-p/3165443) |     [SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319)     |
 
 <br />
 
