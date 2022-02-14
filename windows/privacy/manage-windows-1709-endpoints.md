@@ -133,21 +133,21 @@ If you [turn off traffic for this endpoint](manage-connections-from-windows-oper
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
-| backgroundtaskhost  | HTTPS   | www.bing.com/client |
+| backgroundtaskhost  | HTTPS   | `www.bing.com/client` |
 
 The following endpoint is used to configure parameters, such as how often the Live Tile is updated. It's also used to activate experiments. 
 If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-cortana), parameters wouldn't be updated and the device would no longer participate in experiments.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
-| backgroundtaskhost  | HTTPS   | www.bing.com/proactive |
+| backgroundtaskhost  | HTTPS   | `www.bing.com/proactive` |
 
 The following endpoint is used by Cortana to report diagnostic and diagnostic data information.
 If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-cortana), Microsoft won't be aware of issues with Cortana and can't fix them.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
-| searchui <br> backgroundtaskhost | HTTPS   | www.bing.com/threshold/xls.aspx |
+| searchui <br> backgroundtaskhost | HTTPS   | `www.bing.com/threshold/xls.aspx` |
 
 ## Certificates
 
@@ -290,7 +290,7 @@ If you [turn off traffic for this endpoint](manage-connections-from-windows-oper
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
-|  | HTTP   | www.msftconnecttest.com/connecttest.txt |
+|  | HTTP   | `www.msftconnecttest.com/connecttest.txt` |
 
 ## Office
 
