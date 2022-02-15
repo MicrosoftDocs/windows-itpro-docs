@@ -30,8 +30,8 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: What's new
-            url:  windows-11-whats-new.md
+          - text: Windows 11 overview
+            url:  windows-11-overview.md
           - text: Windows 11 requirements
             url: windows-11-requirements.md
           - text: Plan for Windows 11 
