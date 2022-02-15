@@ -53,7 +53,7 @@ More details on how Azure AD Kerberos enables access to on-premises resources ar
 | Requirement | Notes |
 | --- | --- |
 | Multi-factor Authentication | This requirement can be met using [Azure AD multi-factor authentication](/azure/active-directory/authentication/howto-mfa-getstarted), multi-factor authentication provided through AD FS, or a comparable solution. |
-| Windows 10 version 21H2 or Windows 11 and later | There's no Windows version support difference between Azure AD joined and Hybrid Azure AD joined devices. |
+| Patched Windows 10 version 21H2 or patched Windows 11 and later | If you're using Windows 10 21H2, KB5010415 must be installed. If you're using Windows 11 21H2, KB5010414 must be installed. There's no Windows version support difference between Azure AD joined and Hybrid Azure AD joined devices. |
 | Fully patched Windows Server 2016 or later Domain Controllers | Domain controllers should be fully patched to support updates needed for Azure AD Kerberos. If you're using Windows Server 2016, [KB3534307](https://support.microsoft.com/en-us/topic/january-23-2020-kb4534307-os-build-14393-3474-b181594e-2c6a-14ea-e75b-678efea9d27e) must be installed. If you're using Server 2019, [KB4534321](https://support.microsoft.com/en-us/topic/january-23-2020-kb4534321-os-build-17763-1012-023e84c3-f9aa-3b55-8aff-d512911c459f) must be installed. |
 | Azure AD Kerberos PowerShell module | This module is used for enabling and managing Azure AD Kerberos. It's available through the [PowerShell Gallery](https://www.powershellgallery.com/packages/AzureADHybridAuthenticationManagement).|
 | Device management | Windows Hello for Business cloud trust can be managed with group policy or through mobile device management (MDM) policy. This feature is disabled by default and must be enabled using policy. |
@@ -96,7 +96,7 @@ You can configure the Enable Windows Hello for Business Group Policy setting for
 Cloud trust requires setting a dedicated policy for it to be enabled. This policy is only available as a computer configuration.
 
 > [!NOTE]
-> If you deployed Windows Hello for Business configuration using both Group Policy and Microsoft Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about deploying Windows Hello for Business configuration using Microsoft Intune, see [Windows device settings to enable Windows Hello for Business in Intune](/mem/intune/protect/identity-protection-windows-settings) and [PassportForWork CSP](/windows/client-management/mdm/passportforwork-csp.md). For more information about policy conflicts, see [Policy conflicts from multiple policy sources](hello-manage-in-organization.md#policy-conflicts-from-multiple-policy-sources)
+> If you deployed Windows Hello for Business configuration using both Group Policy and Microsoft Intune, Group Policy settings will take precedence and Intune settings will be ignored. For more information about deploying Windows Hello for Business configuration using Microsoft Intune, see [Windows device settings to enable Windows Hello for Business in Intune](/mem/intune/protect/identity-protection-windows-settings) and [PassportForWork CSP](/windows/client-management/mdm/passportforwork-csp). For more information about policy conflicts, see [Policy conflicts from multiple policy sources](hello-manage-in-organization.md#policy-conflicts-from-multiple-policy-sources)
 
 ##### Update Group Policy Objects
 
@@ -108,7 +108,7 @@ You can also create a Group Policy Central Store and copy them their respective 
 
 Sign-in a domain controller or management workstations with *Domain Admin* equivalent credentials.
 
-1. Start the **Group Policy Management Console** (gpmc.msc)
+1. Start the **Group Policy Management Console** (gpmc.msc).
 1. Expand the domain and select the **Group Policy Object** node in the navigation pane.
 1. Right-click **Group Policy object** and select **New**.
 1. Type *Enable Windows Hello for Business* in the name box and click **OK**.
@@ -135,7 +135,7 @@ The cloud trust policy needs to be configured using a custom template and is con
 If you have an existing group you want to target with Windows Hello for Business cloud trust policy, you can skip this step.
 
 1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/).
-1. Browse to **Groups** and select **New group**
+1. Browse to **Groups** and select **New group**.
 1. Configure the following group settings:
     1. Group type: "Security"
     1. Group name: "WHFBCloudTrustUsers" or a group name of your choosing
@@ -158,7 +158,7 @@ You can also follow these steps to create a device configuration policy instead 
 1. In **Configurations settings**, set the **Configure Windows Hello for Business** option to **Enable**.
 1. After setting Configure Windows Hello for Business to Enable, multiple policy options become available. These policies are optional to configure. More information on these policies is available in our documentation on managing [Windows Hello for Business in your organization](hello-manage-in-organization.md#mdm-policy-settings-for-windows-hello-for-business). We recommend setting **Use a Trusted Platform Module (TPM)** to **Enable**.
 
-    ![Intune custom device configuration policy creation](./images/hello-intune-enable.png)
+    [![Intune custom device configuration policy creation](./images/hello-intune-enable.png)](./images/hello-intune-enable-large.png#lightbox)
 
 1. Select Next to move to **Assignments**.
 1. Under Included groups, select **Add groups**.
@@ -189,7 +189,7 @@ To configure the cloud trust policy, follow the steps below:
     - Data type: Boolean
     - Value: True
 
-    ![Intune custom device configuration policy creation](./images/hello-cloud-trust-intune.png)
+    [![Intune custom device configuration policy creation](./images/hello-cloud-trust-intune.png)](./images/hello-cloud-trust-intune-large.png#lightbox)
 
 1. Select Next to navigate to **Assignments**.
 1. Under Included groups, select **Add groups**.
@@ -257,4 +257,4 @@ Windows Hello for Business cloud trust requires line of sight to a domain contro
 
 ### Can I use RDP/VDI with Windows Hello for Business cloud trust?
 
-Windows Hello for Business cloud trust cannot be used as a supplied credential with RDP/VDI. Similar to key trust, cloud trust can be used for RDP with [remote credential guard](/windows/security/identity-protection/remote-credential-guard.md) or if a [certificate is enrolled into Windows Hello for Business](hello-deployment-rdp-certs.md) for this purpose.
+Windows Hello for Business cloud trust cannot be used as a supplied credential with RDP/VDI. Similar to key trust, cloud trust can be used for RDP with [remote credential guard](/windows/security/identity-protection/remote-credential-guard) or if a [certificate is enrolled into Windows Hello for Business](hello-deployment-rdp-certs.md) for this purpose.
