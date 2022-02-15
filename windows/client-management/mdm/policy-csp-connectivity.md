@@ -107,7 +107,7 @@ Allows the user to enable Bluetooth or restrict access.
 > [!NOTE]
 >  This value is not supported in Windows 10.
 
-If this is not set or it is deleted, the default value of 2 (Allow) is used.
+If this isn't set or it's deleted, the default value of 2 (Allow) is used.
 
 Most restricted value is 0.
 
@@ -115,7 +115,7 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Disallow Bluetooth. If this is set to 0, the radio in the Bluetooth control panel will be grayed out and the user will not be able to turn Bluetooth on.
+-   0 – Disallow Bluetooth. If this is set to 0, the radio in the Bluetooth control panel will be grayed out and the user won't be able to turn Bluetooth on.
 -   1 – Reserved. If this is set to 1, the radio in the Bluetooth control panel will be functional and the user will be able to turn Bluetooth on.
 -   2 (default) – Allow Bluetooth. If this is set to 2, the radio in the Bluetooth control panel will be functional and the user will be able to turn Bluetooth on.
 
@@ -151,15 +151,15 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Allows the cellular data channel on the device. Device reboot is not required to enforce the policy.
+Allows the cellular data channel on the device. Device reboot isn't required to enforce the policy.
 
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Do not allow the cellular data channel. The user cannot turn it on. This value is not supported in Windows 10, version 1511.
+-   0 – Don't allow the cellular data channel. The user can’t turn it on. This value isn't supported in Windows 10, version 1511.
 -   1 (default) – Allow the cellular data channel. The user can turn it off.
--   2 - Allow the cellular data channel. The user cannot turn it off.
+-   2 - Allow the cellular data channel. The user can’t turn it off.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -193,7 +193,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Allows or disallows cellular data roaming on the device. Device reboot is not required to enforce the policy.
+Allows or disallows cellular data roaming on the device. Device reboot isn't required to enforce the policy.
 
 Most restricted value is 0.
 
@@ -209,9 +209,9 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Do not allow cellular data roaming. The user cannot turn it on. This value is not supported in Windows 10, version 1511.
+-   0 – Don't allow cellular data roaming. The user can’t turn it on. This value isn't supported in Windows 10, version 1511.
 -   1 (default) – Allow cellular data roaming.
--   2 - Allow cellular data roaming on. The user cannot turn it off.
+-   2 - Allow cellular data roaming on. The user can’t turn it off.
 
 <!--/SupportedValues-->
 <!--Validation-->
@@ -301,8 +301,8 @@ The following list shows the supported values:
 <!--Description-->
 This policy allows IT admins to turn off the ability to Link a Phone with a PC to continue tasks, such as reading, email, and other tasks that require linking between Phone and PC.
 
-If you enable this policy setting, the Windows device will be able to enroll in Phone-PC linking functionality and participate in 'Continue on PC experiences'. If you disable this policy setting, the Windows device is not allowed to be linked to phones, will remove itself from the device list of any linked Phones, and cannot participate in 'Continue on PC experiences'.
-If you do not configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
+If you enable this policy setting, the Windows device will be able to enroll in Phone-PC linking functionality and participate in 'Continue on PC experiences'. If you disable this policy setting, the Windows device isn't allowed to be linked to phones, will remove itself from the device list of any linked Phones, and can’t participate in 'Continue on PC experiences'.
+If you don't configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -314,7 +314,7 @@ ADMX Info:
 <!--SupportedValues-->
 This setting supports a range of values between 0 and 1.
 
-- 0 - Do not link
+- 0 - Don't link
 - 1 (default) - Allow phone-PC linking
 
 <!--/SupportedValues-->
