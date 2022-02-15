@@ -16,7 +16,7 @@ ms.collection:
   - highpri
 ms.topic: article
 localizationpriority: medium
-ms.date: 1/22/2021
+ms.date: 2/15/2022
 ---
 
 # Windows Hello for Business Deployment Prerequisite Overview
@@ -36,9 +36,9 @@ This article lists the infrastructure requirements for the different deployment 
 
 The table shows the minimum requirements for each deployment. For key trust in a multi-domain/multi-forest deployment, the following requirements are applicable for each domain/forest that hosts Windows Hello for business components or is involved in the Kerberos referral process.
 
-| Requirement | Cloud trust<br/>Group Policy or Modern managed | Key trust<br/>Group Policy or Modern managed | Certificate trust<br/>Mixed managed | Certificate trust<br/>Modern managed | 
+| Requirement | Cloud trust (Preview)<br/>Group Policy or Modern managed | Key trust<br/>Group Policy or Modern managed | Certificate trust<br/>Mixed managed | Certificate trust<br/>Modern managed | 
 | --- | --- | --- | --- | --- |
-| **Windows Version** | Windows 10, version 21H2 or later | Windows 10, version 1511 or later| **Hybrid Azure AD Joined:**<br>  *Minimum:* Windows 10, version 1703<br>  *Best experience:* Windows 10, version 1709 or later (supports synchronous certificate enrollment).<br/>**Azure AD Joined:**<br>  Windows 10, version 1511 or later| Windows 10, version 1511 or later |
+| **Windows Version** | Windows 10, version 21H2 with KB5010415; Windows 11 with KB5010414; or later | Windows 10, version 1511 or later| **Hybrid Azure AD Joined:**<br>  *Minimum:* Windows 10, version 1703<br>  *Best experience:* Windows 10, version 1709 or later (supports synchronous certificate enrollment).<br/>**Azure AD Joined:**<br>  Windows 10, version 1511 or later| Windows 10, version 1511 or later |
 | **Schema Version** | No specific Schema requirement | Windows Server 2016 or later Schema | Windows Server 2016 or later Schema | Windows Server 2016 or later Schema |
 | **Domain and Forest Functional Level** | Windows Server 2008 R2 Domain/Forest functional level | Windows Server 2008 R2 Domain/Forest functional level | Windows Server 2008 R2 Domain/Forest functional level |Windows Server 2008 R2 Domain/Forest functional level |
 | **Domain Controller Version** | Windows Server 2016 or later | Windows Server 2016 or later | Windows Server 2008 R2 or later | Windows Server 2008 R2 or later  |
