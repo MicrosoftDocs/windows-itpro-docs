@@ -69,7 +69,7 @@ There are several ways to get and use security baselines:
 
 ## Community
 
-[![Microsoft Security Guidance Blog.](./../images/community.png)](/archive/blogs/secguide/) 
+[![Microsoft Security Guidance Blog.](./../images/community.png)](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines)
 
 ## Related Videos
 

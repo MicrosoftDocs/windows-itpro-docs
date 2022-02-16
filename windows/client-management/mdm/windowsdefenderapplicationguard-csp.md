@@ -67,7 +67,7 @@ The following list shows the supported values:
 
 <!--ADMXMapped-->
 ADMX Info:  
-- GP English name: *Configure Microsoft Defender Application Guard clipboard settings*
+- GP Friendly name: *Configure Microsoft Defender Application Guard clipboard settings*
 - GP name: *AppHVSIClipboardFileType*
 - GP path: *Windows Components/Microsoft Defender Application Guard*
 - GP ADMX file name: *AppHVSI.admx*
@@ -91,7 +91,7 @@ The following list shows the supported values:
 
 <!--ADMXMapped-->
 ADMX Info:  
-- GP English name: *Configure Microsoft Defender Application Guard clipboard settings*
+- GP Friendly name: *Configure Microsoft Defender Application Guard clipboard settings*
 - GP name: *AppHVSIClipboardSettings*
 - GP path: *Windows Components/Microsoft Defender Application Guard*
 - GP ADMX file name: *AppHVSI.admx*
@@ -124,7 +124,7 @@ The following list shows the supported values:
 
 <!--ADMXMapped-->
 ADMX Info:  
-- GP English name: *Configure Microsoft Defender Application Guard print settings*
+- GP Friendly name: *Configure Microsoft Defender Application Guard print settings*
 - GP name: *AppHVSIPrintingSettings*
 - GP path: *Windows Components/Microsoft Defender Application Guard*
 - GP ADMX file name: *AppHVSI.admx*
@@ -146,7 +146,7 @@ The following list shows the supported values:
 
 <!--ADMXMapped-->
 ADMX Info:  
-- GP English name: *Prevent enterprise websites from loading non-enterprise content in Microsoft Edge and Internet Explorer*
+- GP Friendly name: *Prevent enterprise websites from loading non-enterprise content in Microsoft Edge and Internet Explorer*
 - GP name: *BlockNonEnterpriseContent*
 - GP path: *Windows Components/Microsoft Defender Application Guard*
 - GP ADMX file name: *AppHVSI.admx*
@@ -165,7 +165,7 @@ The following list shows the supported values:
 
 <!--ADMXMapped-->
 ADMX Info:  
-- GP English name: *Allow data persistence for Microsoft Defender Application Guard*
+- GP Friendly name: *Allow data persistence for Microsoft Defender Application Guard*
 - GP name: *AllowPersistence*
 - GP path: *Windows Components/Microsoft Defender Application Guard*
 - GP ADMX file name: *AppHVSI.admx*
@@ -189,7 +189,7 @@ The following list shows the supported values:
 
 <!--ADMXMapped-->
 ADMX Info:  
-- GP English name: *Allow hardware-accelerated rendering for Microsoft Defender Application Guard*
+- GP Friendly name: *Allow hardware-accelerated rendering for Microsoft Defender Application Guard*
 - GP name: *AllowVirtualGPU*
 - GP path: *Windows Components/Microsoft Defender Application Guard*
 - GP ADMX file name: *AppHVSI.admx*
@@ -208,7 +208,7 @@ The following list shows the supported values:
 
 <!--ADMXMapped-->
 ADMX Info:  
-- GP English name: *Allow files to download and save to the host operating system from Microsoft Defender Application Guard*
+- GP Friendly name: *Allow files to download and save to the host operating system from Microsoft Defender Application Guard*
 - GP name: *SaveFilesToHost*
 - GP path: *Windows Components/Microsoft Defender Application Guard*
 - GP ADMX file name: *AppHVSI.admx*
@@ -230,7 +230,7 @@ If you disable or don’t configure this setting, certificates are not shared wi
 
 <!--ADMXMapped-->
 ADMX Info:  
-- GP English name: *Allow Microsoft Defender Application Guard to use Root Certificate Authorities from the user's device*
+- GP Friendly name: *Allow Microsoft Defender Application Guard to use Root Certificate Authorities from the user's device*
 - GP name: *CertificateThumbprints*
 - GP path: *Windows Components/Microsoft Defender Application Guard*
 - GP ADMX file name: *AppHVSI.admx*
@@ -259,7 +259,7 @@ The following list shows the supported values:
 
 <!--ADMXMapped-->
 ADMX Info:  
-- GP English name: *Allow camera and microphone access in Microsoft Defender Application Guard*
+- GP Friendly name: *Allow camera and microphone access in Microsoft Defender Application Guard*
 - GP name: *AllowCameraMicrophoneRedirection*
 - GP path: *Windows Components/Microsoft Defender Application Guard*
 - GP ADMX file name: *AppHVSI.admx*
@@ -317,7 +317,7 @@ The following list shows the supported values:
 
 <!--ADMXMapped-->
 ADMX Info:  
-- GP English name: *Allow auditing events in Microsoft Defender Application Guard*
+- GP Friendly name: *Allow auditing events in Microsoft Defender Application Guard*
 - GP name: *AuditApplicationGuard*
 - GP path: *Windows Components/Microsoft Defender Application Guard*
 - GP ADMX file name: *AppHVSI.admx*
