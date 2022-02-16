@@ -1884,7 +1884,7 @@ Most restricted value is 0.
 
 ADMX Info:
 
-- GP English name: Allow Clipboard synchronization across devices<br>
+- GP Friendly name: Allow Clipboard synchronization across devices<br>
 - GP name: AllowCrossDeviceClipboard<br>
 - GP path: System/OS Policies<br>
 - GP ADMX file name: OSPolicy.admx<br>
