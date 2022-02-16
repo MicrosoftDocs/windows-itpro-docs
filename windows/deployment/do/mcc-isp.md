@@ -1,208 +1,88 @@
-Table of Contents
+---
+title: Microsoft Connected Cache for Internet Service Providers
+manager: dougeby
+description: Details on Microsoft Connected Cache (MCC) for Internet Service Providers (ISPs).
+keywords: updates, downloads, network, bandwidth
+ms.prod: w10
+ms.mktglfcycl: deploy
+audience: itpro
+author: carmenf
+ms.localizationpriority: medium
+ms.author: carmenf
+ms.collection: M365-modern-desktop
+ms.topic: article
+---
 
-[Overview of Microsoft Connected Cache
-Preview](#overview-of-microsoft-connected-cache-preview)
+# Microsoft Connected Cache for Internet Service Providers
 
-[How Microsoft Connected Cache Works](#how-microsoft-connected-cache-works)
+**Applies to**
 
-[ISP Requirements for Microsoft Connected
-Cache](#isp-requirements-for-microsoft-connected-cache)
+- Windows 10
+- Windows 11
 
-[Steps to Set Up Microsoft Connected
-Cache](#steps-to-set-up-microsoft-connected-cache)
+## Overview
 
-[Provide Microsoft with the Azure Subscription ID](#_Toc92966086)
-
-[Create the Microsoft Connected Cache Resource in Azure](#_Toc92966087)
-
-[Create a Microsoft Connected Cache Node](#_Toc92966088)
-
-[Ip Space Approval Information](#_Toc92966089)
-
-[Edit Cache Node Information](#_Toc92966090)
-
-[Set up a server with SR or an Ubuntu VM running on Windows
-Server](#set-up-a-server-with-sr-or-an-ubuntu-vm-running-on-windows-server)
-
-[Install Microsoft Connected Cache on a Server or VM](#_Toc92966092)
-
-[Verify Proper Functioning Microsoft Connected Cache Server](#_Toc92966093)
-
-[Common Issues](#_Toc92966094)
-
-[DNS Needs to be Configured](#dns-needs-to-be-configured)
-
-[Diagnostics Script](#diagnostics-script)
-
-[Updating your MCC](#updating-your-mcc)
-
-[Uninstalling MCC](#uninstalling-mcc)
-
-[Appendix](#appendix)
-
-[Setting up a VM on Windows Server](#setting-up-a-vm-on-windows-server)
-
-[IoT Edge runtime](#_Toc92966101)
-
-# Overview of Microsoft Connected Cache Preview
-
-Microsoft Connected Cache (MCC) preview is a software-only caching solution that
-delivers Microsoft content within ISP networks. MCC can be deployed to as many
-bare-metal servers or VMs as needed and is managed from a cloud portal.
-Microsoft cloud services handle routing of consumer devices to the cache server
-for content downloads.
-
-Microsoft Connected Cache is a Hybrid (mix of on-prem and cloud resources)
-solution composed of a Docker compatible Linux container deployed to your server
-and a cloud management portal. Microsoft chose Azure IoT Edge (more information
-on [IoT Edge in the appendix](#iot-edge-runtime)) as a secure and reliable
-control plane, and even though your scenario is not related to IoT, Azure IoT
-Edge is our secure Linux container deployment and management infrastructure.
-Azure IoT Edge consists of three components that the Microsoft Connected Cache
-infrastructure will utilize:
-
-1.  A cloud-based interface that enables secure, remote installation,
-    monitoring, and management of Microsoft Connected Cache nodes.
-
-2.  A runtime that securely manages the modules deployed to each device.
-
-3.  Modules/containers that run the Microsoft Connected Cache functionality on
-    your device.
+Microsoft Connected Cache (MCC) preview is a software-only caching solution that delivers Microsoft content within ISP networks. MCC can be deployed to as many bare-metal servers or VMs as needed and is managed from a cloud portal. Microsoft cloud services handle routing of consumer devices to the cache server for content downloads.
+Microsoft Connected Cache is a Hybrid (mix of on-prem and cloud resources) solution composed of a Docker compatible Linux container deployed to your server and a cloud management portal. Microsoft chose Azure IoT Edge (more information on IoT Edge in the appendix) as a secure and reliable control plane, and even though your scenario is not related to IoT, Azure IoT Edge is our secure Linux container deployment and management infrastructure. Azure IoT Edge consists of three components that the Microsoft Connected Cache infrastructure will utilize:
+1. A cloud-based interface that enables secure, remote installation, monitoring, and management of Microsoft Connected Cache nodes.
+2. A runtime that securely manages the modules deployed to each device.
+3. Modules/containers that run the Microsoft Connected Cache functionality on your device.
 
 ## How Microsoft Connected Cache Works
 
-1.  The Azure Management Portal used to create and manage Microsoft Connected
-    Cache nodes.
+1. The Azure Management Portal used to create and manage Microsoft Connected Cache nodes.
+2. The Microsoft Connected Cache container deployed and provisioned to the server.
+3. The Azure Management Portal used to configure Microsoft Delivery Optimization Services to route traffic to the Microsoft Connected Cache server by providing two pieces of information:
+  a. The publicly accessible IPv4 address of the server hosting the Microsoft Connected Cache container.
+  b. The CIDR blocks that represent the client IP address space, which should be routed to the Microsoft Connected Cache node.
+4. Microsoft end-user devices periodically connect with Microsoft Delivery Optimization Services, and the services match the IP address of the client with the IP address of the corresponding Microsoft Connected Cache node.
+5. Microsoft end-user devices make the range requests for content from the Microsoft Connected Cache node.
+6. Microsoft Connected Cache node pulls content from the CDN, seeds its local cache stored on disk and delivers the content to the client.
+7. Subsequent requests from end-user devices for content will now come from cache.
+8. If the Microsoft Connected Cache node is unavailable, the client will pull content from CDN to ensure uninterrupted service for your subscribers.
 
-2.  The Microsoft Connected Cache container deployed and provisioned to the
-    server.
+![MCC overview 1](images/imcc01.png)
 
-3.  The Azure Management Portal used to configure Microsoft [Delivery
-    Optimization](https://docs.microsoft.com/en-us/windows/deployment/update/waas-delivery-optimization-reference)
-    Services to route traffic to the Microsoft Connected Cache server by
-    providing two pieces of information:
+## ISP Requirements for Microsoft Connected Cache
 
-    1.  The publicly accessible IPv4 address of the server hosting the Microsoft
-        Connected Cache container.
+1. Azure subscription – Microsoft Connected Cache management portal is hosted within Azure and is used to create the Connected Cache Azure resource and IoT Hub resource – both are free services.
+We will use your Azure subscription ID to take care of some provisioning with our services, first, to give you access to the preview. The Microsoft Connected Cache server requirement for an Azure subscription will cost you nothing. If you do not have an Azure subscription already, you can create an Azure Pay-As-You-Go account which requires a credit card for verification purposes. Please visit Azure Free Account FAQ | Microsoft Azure for more information.
+Again, the resources used for the preview and in the future when this product is ready for production will be completely free to you, like other caching solutions.
+Please note: If you request Exchange or Public peering in the future, business emails must be used to register ASN's as Microsoft does not accept gmail or other non-business emails.
+2. Hardware to host MCC - The recommended configuration will serve approximately 35,000 consumer devices downloading a 2GB payload in 24-hour timeframe at a sustained rate of 6.5 Gbps.
+Some notes on the disk requirements:
+• Using SSDs is recommended as cache read speed of SSD is superior to HDD.
+• Using multiple disks is recommended to improve cache performance.
+• RAID disk configurations are discouraged as cache performance will be impacted. If using RAID disk configurations ensure striping.
+• Maximum number of disks supported is 10.
+Some notes on the NIC requirements:
+• Multiple NICs on a single MCC instance are not supported.
+• 10Gbps NIC is the minimum speed recommended but any NIC is supported.
 
-    2.  The CIDR blocks that represent the client Ip address space, which should
-        be routed to the Microsoft Connected Cache node.
+Minimum Recommended Server Ubuntu 20.04 LTS VM or Physical Server Ubuntu 20.04 LTS VM or Physical Server (Preferred) NIC 10 Gbps > = 10 Gbps Disk • SSD • 1 – 2 drives minimum • 2 TB each minimum
+• SSD • 2 – 4 drives minimum. Max 10 drives. • 2 TB each minimum
+Memory 8 GB 32 GB or more Cores 4 8 or more
 
-4.  Microsoft end-user devices periodically connect with Microsoft [Delivery
-    Optimization](https://docs.microsoft.com/en-us/windows/deployment/update/waas-delivery-optimization-reference)
-    Services, and the services match the Ip address of the client with the Ip
-    address of the corresponding Microsoft Connected Cache node.
+## Steps to Set Up Microsoft Connected Cache
 
-5.  Microsoft end-user devices make the range requests for content from the
-    Microsoft Connected Cache node.
+Below is the summary of steps required to deploy Microsoft Connected Cache to your server. If you prefer following video instructions along with this document, here are part 1 (portal demo) and part 2 (installer demo).
+1. Provide Microsoft with the Azure subscription you will use for Microsoft Connected Cache
+2. Create the Microsoft Connected Cache Resource in Azure
+3. Create a Microsoft Connected Cache Node
+  -  IP space approval information
+4. Edit Cache Node Information
+5. Set up a server with Ubuntu 20.04 or an Ubuntu VM running on Windows Server 2019
+6. Install Microsoft Connected Cache on a Server or VM
+7. Verify Proper Functioning Microsoft Connected Cache Server
+8. View the Microsoft Connected Cache Summary Report
+9. Common Issues
 
-6.  Microsoft Connected Cache node pulls content from the CDN, seeds its local
-    cache stored on disk and delivers the content to the client.
-
-7.  Subsequent requests from end-user devices for content will now come from
-    cache.
-
-8.  If the Microsoft Connected Cache node is unavailable, the client will pull
-    content from CDN to ensure uninterrupted service for your subscribers.
-
-![](media/fbb9f6eeafecb4576bd73d9b9cdc89a7.png)
-
-# ISP Requirements for Microsoft Connected Cache
-
-1.  **Azure subscription** – Microsoft Connected Cache management portal is
-    hosted within Azure and is used to create the Connected Cache [Azure
-    resource](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/govern/resource-consistency/resource-access-management)
-    and IoT Hub resource – both are free services.
-
-    We will use your *Azure subscription ID* to take care of some provisioning
-    with our services, first, to give you access to the preview. The Microsoft
-    Connected Cache server requirement for an Azure subscription will cost you
-    *nothing*. If you do not have an Azure subscription already, you can create
-    an Azure
-    [Pay-As-You-Go](https://azure.microsoft.com/en-us/offers/ms-azr-0003p/)
-    account which requires a credit card for verification purposes. Please visit
-    [Azure Free Account FAQ \| Microsoft
-    Azure](https://azure.microsoft.com/en-us/free/free-account-faq/) for more
-    information.
-
-    Again, the resources used for the preview and in the future when this
-    product is ready for production will be completely free to you, like other
-    caching solutions.
-
-    **Please note:** If you request Exchange or Public peering in the future,
-    business emails must be used to register ASN's as Microsoft does not accept
-    gmail or other non-business emails.
-
-2.  **Hardware to host MCC** - The recommended configuration will serve
-    approximately 35,000 consumer devices downloading a 2GB payload in 24-hour
-    timeframe at a sustained rate of 6.5 Gbps.   
-    
-    Some notes on the disk requirements:
-
--   Using SSDs is recommended as cache read speed of SSD is superior to HDD.
-
--   Using multiple disks is recommended to improve cache performance.
-
--   RAID disk configurations are discouraged as cache performance will be
-    impacted. If using RAID disk configurations ensure striping.
-
--   Maximum number of disks supported is 10.
-
-    Some notes on the NIC requirements:
-
--   Multiple NICs on a single MCC instance are not supported.
-
--   10Gbps NIC is the minimum speed recommended but any NIC is supported.
-
-|             | **Minimum**                                 | **Recommended**                                             |
-|-------------|---------------------------------------------|-------------------------------------------------------------|
-| **Server**  | Ubuntu 20.04 LTS VM or Physical Server      | Ubuntu 20.04 LTS VM or Physical Server (Preferred)          |
-| **NIC**     | 10 Gbps                                     | \> = 10 Gbps                                                |
-| **Disk**    | SSD 1 – 2 drives minimum 2 TB each minimum  | SSD 2 – 4 drives minimum. Max 10 drives. 2 TB each minimum  |
-| **Memory**  | 8 GB                                        | 32 GB or more                                               |
-| **Cores**   | 4                                           | 8 or more                                                   |
-
-# Steps to Set Up Microsoft Connected Cache
-
-Below is the summary of steps required to deploy Microsoft Connected Cache to
-your server. If you prefer following video instructions along with this
-document, here are [part 1](https://aka.ms/MCC-ISP-PortalDemo) (portal demo) and
-[part 2](https://aka.ms/MCC-ISP-InstallerDemo) (installer demo).
-
-1.  [Provide Microsoft with the Azure subscription you will use for Microsoft
-    Connected Cache](#provide-microsoft-with-the-azure-subscription-id)
-
-2.  [Create the Microsoft Connected Cache Resource in
-    Azure](#create-the-microsoft-connected-cache-resource-in-azure)
-
-3.  [Create a Microsoft Connected Cache
-    Node](#create-a-microsoft-connected-cache-node)
-
-    1.  [Ip Space Approval Information](#_Ip_Space_Approval)
-
-4.  [Edit Cache Node Information](#edit-cache-node-information)
-
-5.  [Set up a server with Ubuntu 20.04 or an Ubuntu VM running on Windows Server
-    2019](#ip-space-approval-information)
-
-6.  [Install Microsoft Connected Cache on a Server or
-    VM](#install-microsoft-connected-cache-on-a-server-or-vm)
-
-7.  [Verify Proper Functioning Microsoft Connected Cache
-    Server](#verify-proper-functioning-microsoft-connected-cache-server)
-
-8.  [View the Microsoft Connected Cache Summary Report](#_View_the_Microsoft)
-
-9.  [Common Issues](#common-issues)
-
-For any questions regarding these instructions contact:
-[msconnectedcache@microsoft.com](mailto:msconnectedcache@microsoft.com)
+For questions regarding these instructions contact: **msconnectedcache@microsoft.com**
 
 ## Provide Microsoft with the Azure Subscription ID
 
-As part of the Microsoft Connected Cache preview onboarding process the Azure
-subscription ID will have been provided to Microsoft. **Please contact Microsoft
-and provide this information if you have not already.**
+As part of the Microsoft Connected Cache preview onboarding process the Azure subscription ID will have been provided to Microsoft. Please contact Microsoft and provide this information if you have not already.
+
 
 ## Create the Microsoft Connected Cache Resource in Azure
 
