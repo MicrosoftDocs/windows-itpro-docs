@@ -105,7 +105,7 @@ Summary of steps required to deploy Microsoft Connected Cache to your server:
 6.  [Verify Proper Functioning Microsoft Connected Cache
     Server](#verify-proper-functioning-microsoft-connected-cache-server)
 
-7.  Review [common Issues](#_Common_Issues) if needed.
+7.  Review [common Issues](#common-issues) if needed.
 
 For any questions regarding these instructions contact:
 [msconnectedcache@microsoft.com](mailto:msconnectedcache@microsoft.com)
