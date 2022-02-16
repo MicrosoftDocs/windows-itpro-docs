@@ -967,7 +967,7 @@ items:
           href: windowsautopilot-csp.md
           items: 
             - name: WindowsAutoPilot DDF file
-              href: windowsautopilot-ddf.md
+              href: windowsautopilot-ddf-file.md
         - name: WindowsDefenderApplicationGuard CSP
           href: windowsdefenderapplicationguard-csp.md
           items: 
