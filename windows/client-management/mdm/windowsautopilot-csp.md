@@ -19,3 +19,10 @@ ms.date: 02/07/2022
 
 The WindowsAutopilot CSP collects hardware information about a device and formats it into a BLOB. This BLOB is used as input for calling Windows Autopilot Service to mark a device as remediation required if the device underwent a hardware change that affects its ability to use Windows Autopilot.
 
+**./Vendor/MSFT/WindowsAutopilot**
+
+Root node. Supported operation is Get.
+
+**HardwareMismatchRemediationData**
+
+Interior node. Supported operation is Get. Collects hardware information about a device and returns it as an encoded string. This string is used as input for calling Windows Autopilot Service to remediate a device if the device underwent a hardware change that affects its ability to use Windows Autopilot.

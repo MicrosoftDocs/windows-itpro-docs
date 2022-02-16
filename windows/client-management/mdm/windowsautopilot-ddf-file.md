@@ -16,3 +16,61 @@ manager: dansimp
 > [!WARNING]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
+This topic shows the device description framework (DDF) for the **WindowsAutoPilot** configuration service provider. 
+
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+
+```xml
+<NodeName>WindowsAutopilot</NodeName>
+        <Path>./Vendor/MSFT</Path>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <Description>These settings enable configuration of Windows Autopilot</Description>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <MIME>com.microsoft/1.0/MDM/WindowsAutopilot</MIME>
+          </DFType>
+          <Applicability>
+            <OsBuildVersion>99.9.99999, 10.0.19041.1202, 10.0.19042.1202, 10.0.19043.1202</OsBuildVersion>
+            <CspVersion>1.0</CspVersion>
+          </Applicability>
+          <ExposedTo>
+            <Mdm />
+          </ExposedTo>
+        </DFProperties>
+        <Node>
+          <NodeName>HardwareMismatchRemediationData</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>This data is used to remediate Autopilot hardware mismatches.</Description>
+            <DFFormat>
+              <chr />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+      </Node>
+    </MgmtTree>
+  </cspDefinition>
+</identity>
+```
