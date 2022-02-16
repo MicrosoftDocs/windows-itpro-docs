@@ -295,10 +295,10 @@ straightforward process. A PowerShell script performs the following tasks:
 > Ensure that Hyper-V is enabled on your device.
 
 **Windows 10:** [Enable Hyper-V on Windows 10 \| Microsoft
-Docs](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
+Docs](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
 
 **Windows Server:** [Install the Hyper-V role on Windows Server \| Microsoft
-Docs](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server)
+Docs](https://docs.microsoft.com/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server)
 
 **DO NOT** use PowerShell ISE, PowerShell 6.x, or PowerShell 7.x. Only Windows
 PowerShell version 5.x is supported.
@@ -432,7 +432,7 @@ Set -VMProcessor -VMName **\<"VM name"\>** -ExposeVirtualizationExtensions
 
         [Delivery Optimization settings for Windows 10 in Microsoft Intune \|
         Microsoft
-        Docs](https://docs.microsoft.com/en-us/mem/intune/configuration/delivery-optimization-windows)
+        Docs](https://docs.microsoft.com/mem/intune/configuration/delivery-optimization-windows)
 
     3.  If you had errors during your deployment, visit the Troubleshooting
         section in this document
@@ -498,7 +498,7 @@ Example of setting the cache host policy to the MCC’s IP address / FQDN:
 
 ![eMCC emg23](images/emcc23.png)
 
-# Common Issues
+## Common Issues
 
 ##### PowerShell Issues
 
@@ -513,10 +513,10 @@ recognized as the name of a cmdlet, function, script file, or operable program.�
 3.  Ensure you have Hyper-V enabled:
 
     **Windows 10:** [Enable Hyper-V on Windows 10 \| Microsoft
-    Docs](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
+    Docs](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
 
     **Windows Server:** [Install the Hyper-V role on Windows Server \| Microsoft
-    Docs](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server)
+    Docs](https://docs.microsoft.com/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server)
 
 ##### Verify Running Microsoft Connected Cache Container
 
@@ -547,11 +547,11 @@ sudo journalctl -u iotedge –f
 
 Please note: You should consult the IoT Edge troubleshooting guide ([Common
 issues and resolutions for Azure IoT
-Edge](https://docs.microsoft.com/en-us/azure/iot-edge/troubleshoot)) for any
+Edge](https://docs.microsoft.com/azure/iot-edge/troubleshoot)) for any
 issues you may encounter configuring IoT Edge, but we have listed a few issues
 below that we hit during our internal validation.
 
-# Diagnostics Script
+## Diagnostics Script
 
 If you are having issues with your MCC, we included a diagnostics script which
 will collect all your logs and zip them into a single file. You can then send us
@@ -580,7 +580,7 @@ To run this script:
     along with any other warnings you saw will be helpful during out debugging
     process.
 
-# Updating Microsoft Connected Cache
+## Updating Microsoft Connected Cache
 
 Throughout the private preview phase, we will send you security and feature
 updates for MCC. Please follow these steps to perform the update.
@@ -595,7 +595,7 @@ For example:
 ```
 # .\updatemcc.ps1 version="msconnectedcacheprod.azurecr.io/mcc/linux/iot/mcc-ubuntu-iot-amd64:1.2.1.659" tenantid="72f988bf-86f1-41af-91ab-2d7cd011db47" customerid="99d897gg-86f1-41af-91ab-4jau6ske0sdf" cachenodeid=" cd01sdfh-435n-0das-56gh90dfrt67 " customerkey="h90d234f-vbnm-lk43-0742khsd45hj”
 ```
-# Uninstalling Microsoft Connected Cache
+## Uninstalling Microsoft Connected Cache
 
 Please contact the MCC Team before uninstalling to let us know if you are facing
 issues.
@@ -613,7 +613,7 @@ This script will remove the following:
 To delete MCC, go to Control Panel \> Uninstall a program \> Select Azure IoT
 Edge LTS \> Uninstall
 
-# Appendix
+## Appendix
 
 ## IoT Edge runtime
 
@@ -628,18 +628,18 @@ communication operations. The runtime performs several functions:
 -   Manages communication between an IoT Edge device and the cloud.
 
 For more information on Azure IoT Edge, please see the Azure IoT Edge
-documentation <https://docs.microsoft.com/en-us/azure/iot-edge/about-iot-edge>.
+documentation <https://docs.microsoft.com/azure/iot-edge/about-iot-edge>.
 
 ## EFLOW
 
 [What is Azure IoT Edge for Linux on Windows \| Microsoft
-Docs](https://docs.microsoft.com/en-us/azure/iot-edge/iot-edge-for-linux-on-windows?view=iotedge-2018-06&preserve-view=true)
+Docs](https://docs.microsoft.com/azure/iot-edge/iot-edge-for-linux-on-windows?view=iotedge-2018-06&preserve-view=true)
 
 [Install Azure IoT Edge for Linux on Windows \| Microsoft
-Docs](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-provision-single-device-linux-on-windows-symmetric?view=iotedge-2018-06&tabs=azure-portal%2Cpowershell#install-iot-edge)
+Docs](https://docs.microsoft.com/azure/iot-edge/how-to-provision-single-device-linux-on-windows-symmetric?view=iotedge-2018-06&tabs=azure-portal%2Cpowershell#install-iot-edge)
 
 [PowerShell functions for Azure IoT Edge for Linux on Windows \| Microsoft
-Docs](https://docs.microsoft.com/en-us/azure/iot-edge/reference-iot-edge-for-linux-on-windows-functions?view=iotedge-2018-06)
+Docs](https://docs.microsoft.com/azure/iot-edge/reference-iot-edge-for-linux-on-windows-functions?view=iotedge-2018-06)
 
 EFLOW FAQ and Support: [Support · Azure/iotedge-eflow Wiki
 (github.com)](https://github.com/Azure/iotedge-eflow/wiki/Support#how-can-i-apply-updates-to-eflow)
