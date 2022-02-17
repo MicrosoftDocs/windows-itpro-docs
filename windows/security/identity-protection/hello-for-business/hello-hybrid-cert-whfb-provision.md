@@ -19,19 +19,19 @@ ms.reviewer:
 # Hybrid Azure AD joined Windows Hello for Business Certificate Trust Provisioning
 
 **Applies to**
--   Windows 10, version 1703 or later
--   Windows 11
--   Hybrid deployment
--   Certificate trust
 
+- Windows 10, version 1703 or later
+- Windows 11
+- Hybrid deployment
+- Certificate trust
 
 ## Provisioning
+
 The Windows Hello for Business provisioning begins immediately after the user has signed in, after the user profile is loaded, but before the user receives their desktop.  Windows only launches the provisioning experience if all the prerequisite checks pass. You can determine the status of the prerequisite checks by viewing the **User Device Registration** in the **Event Viewer** under **Applications and Services Logs\Microsoft\Windows**.
 
 ![Event358 from User Device Registration log showing Windows Hello for Business prerequisite check result.](images/Event358.png)
 
 The first thing to validate is the computer has processed device registration. You can view this from the User device registration logs where the check **Device is AAD joined (AADJ or DJ++): Yes** appears.  Additionally, you can validate this using the **dsregcmd /status** command from a console prompt where the value for **AzureADJoined** reads **Yes**.
-
 
 Windows Hello for Business provisioning begins with a full screen page with the title **Setup a PIN** and button with the same name.  The user clicks **Setup a PIN**.
 
@@ -46,10 +46,11 @@ After a successful MFA, the provisioning flow asks the user to create and valida
 ![Create a PIN during provisioning.](images/createPin.png)
 
 The provisioning flow has all the information it needs to complete the Windows Hello for Business enrollment.
-* A successful single factor authentication (username and password at sign-in)
-* A device that has successfully completed device registration
-* A fresh, successful multi-factor authentication
-* A validated PIN that meets the PIN complexity requirements
+
+- A successful single factor authentication (username and password at sign-in)
+- A device that has successfully completed device registration
+- A fresh, successful multi-factor authentication
+- A validated PIN that meets the PIN complexity requirements
 
 The remainder of the provisioning includes Windows Hello for Business requesting an asymmetric key pair for the user, preferably from the TPM (or required if explicitly set through policy). Once the key pair is acquired, Windows communicates with Azure Active Directory to register the public key.  AAD Connect synchronizes the user's key to the on-premises Active Directory.
 
@@ -77,6 +78,7 @@ The certificate authority validates the certificate was signed by the registrati
 <hr>
 
 ## Follow the Windows Hello for Business hybrid certificate trust deployment guide
+
 1. [Overview](hello-hybrid-cert-trust.md)
 2. [Prerequisites](hello-hybrid-cert-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
