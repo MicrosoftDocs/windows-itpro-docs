@@ -109,7 +109,7 @@ sections:
       - question: What happens when a PIN policy is changed?
         answer: |
           Once a new policy is applied to the user's device, the user will be asked to change their PIN once they have typed in the current PIN.
-          If more than one policy is applied, the most restrictive setting will win.
+          If more than one policy is applied, the most restrictive setting will apply.
           
       - question: What URLs do I need to allow for a hybrid deployment?
         answer: |
