@@ -1068,7 +1068,7 @@ If this policy setting is disabled or not configured, then the consent level def
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Default consent*
+-   GP Friendly name: *Configure Default consent*
 -   GP name: *WerDefaultConsent_1*
 -   GP path: *Windows Components\Windows Error Reporting\Consent*
 -   GP ADMX file name: *ErrorReporting.admx*
@@ -1166,7 +1166,7 @@ If you disable or do not configure this policy setting, the Turn off Windows Err
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Disable Windows Error Reporting*
+-   GP Friendly name: *Disable Windows Error Reporting*
 -   GP name: *WerDisable_1*
 -   GP path: *Windows Components\Windows Error Reporting*
 -   GP ADMX file name: *ErrorReporting.admx*
