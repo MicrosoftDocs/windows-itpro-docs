@@ -48,7 +48,7 @@ sections:
 
       - question: Can I deploy Windows Hello for Business by using Microsoft Endpoint Manager Intune?
         answer: |
-          Windows Hello for Business deployments using Intune allows for a great deal of flexibility in deployment. For more information, see [Integrate Windows Hello for Business with Microsoft Intune](/mem/intune/protect/windows-hello).
+          Windows Hello for Business deployments using Intune allow for a great deal of flexibility in deployment. For more information, see [Integrate Windows Hello for Business with Microsoft Intune](/mem/intune/protect/windows-hello).
           
       - question: How many users can enroll for Windows Hello for Business on a single Windows 10 computer?
         answer: |
