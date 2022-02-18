@@ -50,7 +50,7 @@ You can install the App-V Management server on a server running Windows Server 2
 ### Management server hardware requirements
 
 * A 64-bit (x64) processor that runs at 1.4 GHz or faster.
-* 1 GB RAM (64-bit).
+* 1-GB RAM (64-bit).
 * 200 MB of available hard disk space, not including the content directory.
 
 ### Management server database requirements
@@ -74,10 +74,10 @@ The App-V Publishing server can be installed on a server that runs Windows Serve
 
 ### Publishing server hardware requirements
 
-App-V adds no additional requirements beyond those of Windows Server.
+App-V adds requires nothing beyond the requirements of Windows Server.
 
 * A 64-bit (x64) processor that runs at 1.4 GHz or faster.
-* 2 GB RAM (64-bit).
+* 2-GB RAM (64-bit).
 * 200 MB of available hard disk space, not including the content directory.
 
 ### Reporting server operating system requirements
@@ -86,10 +86,10 @@ You can install the App-V Reporting server on a server running Windows Server 20
 
 ### Reporting server hardware requirements
 
-App-V adds no additional requirements beyond those of Windows Server.
+App-V adds no other requirements beyond those requirements of Windows Server.
 
 * A 64-bit (x64) processor that runs at 1.4 GHz or faster.
-* 2 GB RAM (64-bit).
+* 2-GB RAM (64-bit).
 * 200 MB of available hard disk space, not including the content directory.
 
 ### Reporting server database requirements

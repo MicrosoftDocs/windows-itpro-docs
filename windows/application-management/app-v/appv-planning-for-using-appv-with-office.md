@@ -30,7 +30,7 @@ You can use the App-V Sequencer to create plug-in packages for language packs, l
 For a list of supported Office products, see [Microsoft Office Product IDs that App-V supports](https://support.microsoft.com/help/2842297/product-ids-that-are-supported-by-the-office-deployment-tool-for-click).
 
 >[!NOTE]
->You must use the Office Deployment Tool instead of the App-V Sequencer to create App-V packages for Microsoft 365 Apps for enterprise. App-V does not support package creation for volume-licensed versions of Office Professional Plus or Office Standard. Support for the [Office 2013 version of Office 365 ended in February 2017](https://support.microsoft.com/kb/3199744).
+>You must use the Office Deployment Tool instead of the App-V Sequencer to create App-V packages for Microsoft 365 Apps for enterprise. App-V doesn't support package creation for volume-licensed versions of Office Professional Plus or Office Standard. Support for the [Office 2013 version of Office 365 ended in February 2017](https://support.microsoft.com/kb/3199744).
 
 ## Using App-V with coexisting versions of Office
 
@@ -40,7 +40,7 @@ Microsoft’s recommended best practice is to avoid Office coexistence completel
 
 ### Before you implement Office coexistence
 
-Before implementing Office coexistence, review the information in the following table that corresponds to the newest version of Office that you will use in coexistence. The documentation linked here will guide you in implementing coexistence for Windows Installer-based (MSI) and Click-to-Run installations of Office.
+Before implementing Office coexistence, review the information in the following table that corresponds to the newest version of Office that you'll use in coexistence. The documentation linked here will guide you in implementing coexistence for Windows Installer-based (MSI) and Click-to-Run installations of Office.
 
 |Office version|Relevant how-to guides|
 |---|---|
@@ -52,10 +52,10 @@ Once you've reviewed the relevant guide, this topic will supplement what you've 
 
 ### Supported Office coexistence scenarios
 
-The following tables summarize supported coexistence scenarios. They are organized according to the version and deployment method you’re starting with and the version and deployment method you are migrating to. Be sure to fully test all coexistence solutions before deploying them to a production audience.
+The following tables summarize supported coexistence scenarios. They're organized according to the version and deployment method you’re starting with and the version and deployment method you're migrating to. Be sure to fully test all coexistence solutions before deploying them to a production audience.
 
 >[!NOTE]
->Microsoft does not support the use of multiple versions of Office in Windows Server environments that have the Remote Desktop Session Host role service enabled. To run Office coexistence scenarios, you must disable this role service.
+>Microsoft doesn't support the use of multiple versions of Office in Windows Server environments that have the Remote Desktop Session Host role service enabled. To run Office coexistence scenarios, you must disable this role service.
 
 ### Windows integrations and Office coexistence
 
@@ -65,10 +65,10 @@ The following table describes the integration level of each version of Office, a
 
 |Office version|The modes App-V can sequence this version of Office with|
 |---|---|
-|Office 2007|Always non-integrated. App-V does not offer any operating system integrations with a virtualized version of Office 2007.|
+|Office 2007|Always non-integrated. App-V doesn't offer any operating system integrations with a virtualized version of Office 2007.|
 |Office 2010|Integrated and non-integrated mode.|
-|Office 2013|Always integrated. Windows operating system integrations cannot be disabled.|
-|Office 2016|Always integrated. Windows operating system integrations cannot be disabled.|
+|Office 2013|Always integrated. Windows operating system integrations can't be disabled.|
+|Office 2016|Always integrated. Windows operating system integrations can't be disabled.|
 
 Microsoft recommends deploying Office coexistence with only one integrated Office instance. For example, if you’re using App-V to deploy Office 2010 and Office 2013, you should sequence Office 2010 in non-integrated mode. For more information about sequencing Office in non-integration (isolated) mode, see [How to sequence Microsoft Office 2010 in Microsoft Application Virtualization 5.0](https://support.microsoft.com/kb/2830069).
 
@@ -83,12 +83,12 @@ Limitations can occur when you install the following versions of Office on the s
 * Office 2010 with the Windows Installer-based version
 * Office 2013 or Office 2016 with App-V
 
-Publishing Office 2013 or Office 2016 with App-V at the same time as an earlier version of the Windows Installer-based Office 2010 might cause the Windows Installer to start. This is because either the Windows Installer-based or Click-to-Run version of Office 2010 is trying to automatically register itself to the computer.
+Publishing Office 2013 or Office 2016 with App-V at the same time as an earlier version of the Windows Installer-based Office 2010 might cause the Windows Installer to start. This scenario is because either the Windows Installer-based or Click-to-Run version of Office 2010 is trying to automatically register itself to the computer.
 
 To bypass the auto-registration operation for native Word 2010, follow these steps:
 
 1. Exit Word 2010.
-2. Start the Registry Editor by doing the following:
+2. Start the Registry Editor by doing the following tasks:
 
    * In Windows 7k, select **Start**, type **regedit** in the Start Search box, then select the Enter key.
 
