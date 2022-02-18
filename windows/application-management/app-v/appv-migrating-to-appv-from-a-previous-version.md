@@ -28,7 +28,7 @@ You can also use the `–OSDsToIncludeInPackage` parameter with the `ConvertFrom
 
 |New in App-V for Windows client|Prior to App-V for Windows 10|
 |--- |--- |
-|New .xml files are created corresponding to the .osd files associated with a package; these files include the following information:<li>environment variables<li>shortcuts<li>file type associations<li>registry information<li>scripts<br> <br>You can now choose to add information from a subset of the .osd files in the source directory to the package using the -OSDsToIncludeInPackage parameter.|Registry information and scripts included in .osd files associated with a package were not included in package converter output.<br> <br>The package converter would populate the new package with information from all of the .osd files in the source directory.|
+|New .xml files are created corresponding to the .osd files associated with a package; these files include the following information:<li>environment variables<li>shortcuts<li>file type associations<li>registry information<li>scripts<br> <br>You can now choose to add information from a subset of the .osd files in the source directory to the package using the -OSDsToIncludeInPackage parameter.|Registry information and scripts included in .osd files associated with a package weren't included in package converter output.<br> <br>The package converter would populate the new package with information from all of the .osd files in the source directory.|
 
 ### Example conversion statement
 
@@ -79,7 +79,7 @@ ConvertFrom-AppvLegacyPackage –SourcePath \\OldPkgStore\ContosoApp\
 |These Source directory files…|…are converted to these Destination directory files…|…and will contain these items|Description|
 |--- |--- |--- |--- |
 |<li>X.osd<li>Y.osd<li>Z.osd|<li>X_Config.xml<li>Y_Config.xml<li>Z_Config.xml|<li>Environment variables:<li>Shortcuts<li>File type associations<li>Registry information<li>Scripts|Each .osd file is converted to a separate, corresponding .xml file that contains the items listed here in App-V deployment configuration format. These items can then be copied from these .xml files and placed in the deployment configuration or user configuration files as desired.<br>In this example, there are three .xml files, corresponding with the three .osd files in the source directory. Each .xml file contains the environment variables, shortcuts, file type associations, registry information, and scripts in its corresponding .osd file.|
-|<li>X.osd<li>Y.osd|<li>ContosoApp.appv <li>ContosoApp_DeploymentConfig.xml  <li>ContosoApp_UserConfig.xml|<li>Environment variables<li>Shortcuts<li>File type associations|The information from the .osd files specified in the -OSDsToIncludeInPackage parameter are converted and placed inside the package. The converter then populates the deployment configuration file and the user configuration file with the contents of the package, just as App-V Sequencer does when sequencing a new package.<br>In this example, environment variables, shortcuts, and file type associations included in X.osd and Y.osd were converted and placed in the App-V package, and some of this information was also included in the deployment configuration and user configuration files. X.osd and Y.osd were used because they were included as arguments to the -OSDsToIncludeInPackage parameter. No information from Z.osd was included in the package, because it was not included as one of these arguments.|
+|<li>X.osd<li>Y.osd|<li>ContosoApp.appv <li>ContosoApp_DeploymentConfig.xml  <li>ContosoApp_UserConfig.xml|<li>Environment variables<li>Shortcuts<li>File type associations|The information from the .osd files specified in the -OSDsToIncludeInPackage parameter is converted and placed inside the package. The converter then populates the deployment configuration file and the user configuration file with the contents of the package, just as App-V Sequencer does when sequencing a new package.<br>In this example, environment variables, shortcuts, and file type associations included in X.osd and Y.osd were converted and placed in the App-V package, and some of this information was also included in the deployment configuration and user configuration files. X.osd and Y.osd were used because they were included as arguments to the -OSDsToIncludeInPackage parameter. No information from Z.osd was included in the package, because it wasn't included as one of these arguments.|
 
 ## Converting packages created using a prior version of App-V
 
@@ -96,23 +96,23 @@ After you convert an existing package you should test the package prior to deplo
 
 |Issue|Workaround|
 |--- |--- |
-|Virtual packages using DSC are not linked after conversion.|Link the packages using connection groups. See [Managing Connection Groups](appv-managing-connection-groups.md).|
+|Virtual packages using DSC aren't linked after conversion.|Link the packages using connection groups. See [Managing Connection Groups](appv-managing-connection-groups.md).|
 |Environment variable conflicts are detected during conversion.|Resolve any conflicts in the associated **.osd** file.|
-|Hard-coded paths are detected during conversion.|Hard-coded paths are difficult to convert correctly. The package converter will detect and return packages with files that contain hard-coded paths. View the file with the hard-coded path, and determine whether the package requires the file. If so, it is recommended to re-sequence the package.|
+|Hard-coded paths are detected during conversion.|Hard-coded paths are difficult to convert correctly. The package converter will detect and return packages with files that contain hard-coded paths. View the file with the hard-coded path, and determine whether the package requires the file. If so, it's recommended to re-sequence the package.|
 
 When converting a package check for failing files or shortcuts, locate the item in App-V 4.6 package. It could possibly be a hard-coded path. Convert the path.
 
 **Note**  
-It is recommended that you use the App-V sequencer for converting critical applications or applications that need to take advantage of features. See [How to Sequence a New Application with App-V](appv-sequence-a-new-application.md).
+It's recommended that you use the App-V sequencer for converting critical applications or applications that need to take advantage of features. See [How to Sequence a New Application with App-V](appv-sequence-a-new-application.md).
 
-If a converted package does not open after you convert it, it is also recommended that you re-sequence the application using the App-V sequencer.
+If a converted package doesn't open after you convert it, it's also recommended that you resequence the application using the App-V sequencer.
 
 [How to Convert a Package Created in a Previous Version of App-V](appv-convert-a-package-created-in-a-previous-version-of-appv.md)
 
 ## Migrating the App-V Server Full Infrastructure
 
 
-There is no direct method to upgrade to a full App-V infrastructure. Use the information in the following section for information about upgrading the App-V server.
+There's no direct method to upgrade to a full App-V infrastructure. Use the information in the following section for information about upgrading the App-V server.
 
 |Task|More Information|
 |--- |--- |

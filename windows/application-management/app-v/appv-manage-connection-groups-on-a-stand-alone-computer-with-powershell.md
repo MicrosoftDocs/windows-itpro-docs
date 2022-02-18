@@ -49,7 +49,7 @@ This topic explains the following procedures:
 
     Enable-AppvClientConnectionGroup –name "Financial Applications"
 
-    When any virtual applications that are in the member packages are run on the target computer, they will run inside the connection group’s virtual environment and will be available to all the virtual applications in the other packages in the connection group.
+    When any virtual applications that are in the member packages are run on the target computer, they'll run inside the connection group’s virtual environment and will be available to all the virtual applications in the other packages in the connection group.
 
 ## To enable or disable a connection group for a specific user
 

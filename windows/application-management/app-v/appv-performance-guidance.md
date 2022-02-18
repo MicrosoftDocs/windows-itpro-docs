@@ -44,15 +44,15 @@ To help determine what information is relevant to your environment, you should r
 
 ## <a href="" id="---------app-v-5-1-in-stateful--non-persistent-deployments"></a> App-V in stateful\* non-persistent deployments
 
-This section provides information about an approach that helps ensure a user will have access to all virtual applications within seconds after logging in. This is achieved by uniquely addressing the often long-running App-V publishing refresh. As you will discover the basis of the approach, the fastest publishing refresh, is one that doesn’t have to actually do anything. Many conditions must be met and steps followed to provide the optimal user experience.
+This section provides information about an approach that helps ensure a user will have access to all virtual applications within seconds after logging in. This access is achieved by uniquely addressing the often long-running App-V publishing refresh. As you'll discover the basis of the approach, the fastest publishing refresh, is one that doesn’t have to actually do anything. Many conditions must be met and steps followed to provide the optimal user experience.
 
 Use the information in the following section for more information:
 
-[Usage Scenarios](#bkmk-us) - As you review the two scenarios, keep in mind that these are the approach extremes. Based on your usage requirements, you may choose to apply these steps to a subset of users and/or virtual applications packages.
+[Usage Scenarios](#bkmk-us) - As you review the two scenarios, keep in mind that these scenarios are the approach extremes. Based on your usage requirements, you may choose to apply these steps to a subset of users and/or virtual applications packages.
 
 -   Optimized for Performance – To provide the optimal experience, you can expect the base image to include some of the App-V virtual application package. This and other requirements are discussed.
 
--   Optimized for Storage – If you are concerned with the storage impact, following this scenario will help address those concerns.
+-   Optimized for Storage – If you're concerned with the storage impact, following this scenario will help address those concerns.
 
 [Preparing your Environment](#bkmk-pe)
 
@@ -62,9 +62,9 @@ Use the information in the following section for more information:
 
 [User Experience Walk-through](#bkmk-uewt)
 
--   Walk-through – This is a step-by-step walk-through of the App-V and UE-V operations and the expectations users should have.
+-   Walk-through – It is a step-by-step walk-through of the App-V and UE-V operations and the expectations users should have.
 
--   Outcome – This describes the expected results.
+-   Outcome – It describes the expected results.
 
 [Impact to Package Lifecycle](#bkmk-plc)
 
@@ -89,13 +89,13 @@ Use the information in the following section for more information:
 
 ### <a href="" id="bkmk-us"></a>Usage Scenarios
 
-As you review the two scenarios, keep in mind that these approach the extremes. Based on your usage requirements, you may choose to apply these steps to a subset of users, virtual application packages, or both.
+As you review the two scenarios, keep in mind that these scenarios represent the extremes. Based on your usage requirements, you may choose to apply these steps to a subset of users, virtual application packages, or both.
 
 - **Performance**: To provide the most optimal user experience, this approach uses the capabilities of a UPM solution and requires extra image preparation and can incur some more image management overhead.
 
   The following describes many performance improvements in stateful non-persistent deployments. For more information, see [Sequencing Steps to Optimize Packages for Publishing Performance](#sequencing-steps-to-optimize-packages-for-publishing-performance) (in this article).
 
-- **Storage**: The general expectations of the previous scenario still apply here. However, keep in mind that VM images are typically stored in costly arrays; a slight alteration has been made to the approach. Do not pre-configure user-targeted virtual application packages in the base image.
+- **Storage**: The general expectations of the previous scenario still apply here. However, keep in mind that VM images are typically stored in costly arrays; a slight alteration has been made to the approach. Don't pre-configure user-targeted virtual application packages in the base image.
 
   The impact of this alteration is detailed in the [User Experience Walk-through](#bkmk-uewt) (in this article).
 
@@ -137,14 +137,14 @@ The following information displays the required steps to prepare the base image 
 
 For critical App-V Client configurations and for a little more context and how-to, review the following configuration settings:
 
-- **Shared Content Store (SCS) Mode**: When running the shared content store only publishing data is maintained on hard disk; other virtual application assets are maintained in memory (RAM). This helps to conserve local storage and minimize disk I/O per second (IOPS).
+- **Shared Content Store (SCS) Mode**: When running the shared content store, only publishing data is maintained on hard disk; other virtual application assets are maintained in memory (RAM). Such a result helps to conserve local storage and minimize disk I/O per second (IOPS).
 
   This setting is recommended when low-latency connections are available between the App-V Client endpoint and the SCS content server, SAN.
 
   - Configurable in Windows PowerShell: `Set-AppvClientConfiguration -SharedContentStoreMode 1`
   - Configurable with Group Policy: See [Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md).
 
-- **PreserveUserIntegrationsOnLogin**: If you have not pre-configured (**Add-AppvClientPackage**) a specific package and this setting is not configured, the App-V Client will de-integrate* the persisted user integrations, then reintegrate*.
+- **PreserveUserIntegrationsOnLogin**: If you have not pre-configured (**Add-AppvClientPackage**) a specific package and this setting isn't configured, the App-V Client will de-integrate* the persisted user integrations, then reintegrate*.
 
   For every package that meets the above conditions, effectively twice the work will be done during publishing/refresh.
   
@@ -158,11 +158,11 @@ For critical App-V Client configurations and for a little more context and how-t
 
   Limiting the number of concurrent publishing refreshes prevents excessive CPU usage that could impact computer performance. This limit is recommended in an RDS environment, where multiple users can log in to the same computer at the same time and perform a publishing refresh sync.
 
-  If the concurrent publishing refresh threshold is reached, the time required to publish new applications and make them available to end users after they log in could take an indeterminate amount of time.
+  If the concurrent publishing refresh threshold is reached, the time required to publish new applications and make them available to end users after they sign in could take an indeterminate amount of time.
 
   - Configure in the Registry under `HKEY_LOCAL_MACHINE\Software\Microsoft\AppV\Client\Publishing`.
   - Create the DWORD value **MaxConcurrentPublishingrefresh** with the desired maximum number of concurrent publishing refreshes.
-  - The App-V client service and computer do not need to be restarted.
+  - The App-V client service and computer don't need to be restarted.
 
 ### Configure UE-V solution for App-V Approach
 
@@ -179,7 +179,7 @@ In essence all that is required is to enable the UE-V service and download the f
 > [!Note]
 > Without performing an additional configuration step, User Environment Virtualization (UE-V) will not be able to synchronize the Start menu shortcuts (.lnk files) on the target computer. The .lnk file type is excluded by default.
 
-UE-V will only support removing the .lnk file type from the exclusion list in the RDS and VDI scenarios, where every user’s device will have the same set of applications installed to the same location and every .lnk file is valid for all the users’ devices. For example, UE-V would not currently support the following two scenarios, because the net result will be that the shortcut will be valid on one but not all devices.
+UE-V will only support removing the .lnk file type from the exclusion list in the RDS and VDI scenarios, where every user’s device will have the same set of applications installed to the same location and every .lnk file is valid for all the users’ devices. For example, UE-V wouldn't currently support the following two scenarios, because the net result will be that the shortcut will be valid on one but not all devices.
 
 -   If a user has an application installed on one device with .lnk files enabled and the same native application installed on another device to a different installation root with .lnk files enabled.
 
@@ -196,11 +196,11 @@ The expectation in a stateful environment is that a UPM solution is implemented 
 
 The requirements for the UPM solution are as follows.
 
-To enable an optimized login experience, for example the App-V approach for the user, the solution must be capable of:
+To enable an optimized sign-in experience, for example the App-V approach for the user, the solution must be capable of:
 
 -   Persisting the below user integrations as part of the user profile/persona.
 
--   Triggering a user profile sync on login (or application start), which can guarantee that all user integrations are applied before publishing/refresh begin, or,
+-   Triggering a user profile sync on sign in (or application start), which can guarantee that all user integrations are applied before publishing/refresh begin, or,
 
 -   Attaching and detaching a user profile disk (UPD) or similar technology that contains the user integrations.
 
@@ -210,9 +210,9 @@ To enable an optimized login experience, for example the App-V approach for the 
   > 
   > App-V packages are not supported when using UPD with selected folders stored in the user profile disk. The Copy on Write driver does not handle UPD selected folders.     
 
--   Capturing changes to the locations, which constitute the user integrations, prior to session logoff.
+-   Capturing changes to the locations, which constitute the user integrations, prior to session sign out.
 
-With App-V when you add a publishing server (**Add-AppvPublishingServer**) you can configure synchronization, for example refresh during log on and/or after a specified refresh interval. In both cases a scheduled task is created.
+With App-V when you add a publishing server (**Add-AppvPublishingServer**) you can configure synchronization, for example refresh during log on and/or after a specified refresh interval. In both cases, a scheduled task is created.
 
 In previous versions of App-V, both scheduled tasks were configured using a VBScript that would initiate the user and global refresh. Starting with Hotfix Package 4 for Application Virtualization 5.0 SP2 the user refresh on log on was initiated by **SyncAppvPublishingServer.exe**. This change was introduced to provide UPM solutions a trigger process. This process delays the publish /refresh to allow the UPM solution to apply the user integrations. It will exit once the publishing/refresh is complete.
 
@@ -248,12 +248,12 @@ Registry – HKEY\_CURRENT\_USER
 
 ### <a href="" id="bkmk-uewt"></a>User Experience Walk-through
 
-This following is a step-by-step walk-through of the App-V and UPM operations and the expectations users should expect.
+This following process is a step-by-step walk-through of the App-V and UPM operations, and the users' expectations.
 
 - **Performance**: After implementing this approach in the VDI/RDSH environment, on first login,
   - (Operation) A user-publishing/refresh is initiated. 
 
-    (Expectation) If this is the first time a user has published virtual applications (e.g. non-persistent), this will take the usual duration of a publishing/refresh.
+    (Expectation) If it's the first time that a user has published virtual applications (for example, non-persistent), this will take the usual duration of a publishing/refresh.
 
 - (Operation) After the publishing/refresh, the UPM solution captures the user integrations.
 
@@ -286,7 +286,7 @@ This following is a step-by-step walk-through of the App-V and UPM operations an
 
     (Expectation):
 
-    - If this is the first time a user has published virtual applications (e.g., non-persistent), this will take the usual duration of a publishing/refresh.
+    - If this is the first time a user has published virtual applications (for example, non-persistent), this will take the usual duration of a publishing/refresh.
     - First and subsequent logins will be impacted by pre-configuring of packages (add/refresh).
  
   - (Operation) After the publishing/refresh, the UPM solution captures the user integrations.
@@ -316,7 +316,7 @@ App-V 5.0 SP2 introduced the concept of pending states. In the past,
 
 -   Now, if a package is in-use the operation will be pended. The un-publish and publish-pend operations will be processed on service restart or if another publish or un-publish command is issued. In the latter case, if the virtual application is in-use otherwise, the virtual application will remain in a pending state. For globally published packages, a restart (or service restart) often needed.
 
-In a non-persistent environment, it is unlikely these pended operations will be processed. The pended operations, for example tasks are captured under **HKEY\_CURRENT\_USER** \\ **Software** \\ **Microsoft** \\ **AppV** \\ **Client** \\ **PendingTasks**. Although this location is persisted by the UPM solution, if it is not applied to the environment prior to log on, it will not be processed.
+In a non-persistent environment, it is unlikely these pended operations will be processed. The pended operations, for example tasks are captured under **HKEY\_CURRENT\_USER** \\ **Software** \\ **Microsoft** \\ **AppV** \\ **Client** \\ **PendingTasks**. Although this location is persisted by the UPM solution, if it isn't applied to the environment prior to log on, it will not be processed.
 
 ### <a href="" id="bkmk-evdi"></a>Enhancing the VDI Experience through Performance Optimization Tuning
 
@@ -374,7 +374,7 @@ Removing FB1 does not require the original application installer. After completi
 
 1.  Complete the sequencing steps up to Customize -&gt; Streaming.
 
-2.  At the Streaming step, do not select **Optimize the package for deployment over slow or unreliable network**.
+2.  At the Streaming step, don't select **Optimize the package for deployment over slow or unreliable network**.
 
 3.  If desired, move on to **Target OS**.
 
@@ -382,7 +382,7 @@ Removing FB1 does not require the original application installer. After completi
 
 1.  Complete the sequencing steps up to Streaming.
 
-2.  Do not select **Optimize the package for deployment over a slow or unreliable network**.
+2.  Don't select **Optimize the package for deployment over a slow or unreliable network**.
 
 3.  Move to **Create Package**.
 
@@ -405,7 +405,7 @@ Removing FB1 does not require the original application installer. After completi
 
 |Step|Considerations|Benefits|Tradeoffs|
 |--- |--- |--- |--- |
-|No SXS Install at Publish (Pre-Install SxS assemblies)|Virtual Application packages do not need to be re-sequenced. SxS Assemblies can remain in the virtual application package.|The SxS Assembly dependencies will not install at publishing time.|SxS Assembly dependencies must be pre-installed.|
+|No SXS Install at Publish (Pre-Install SxS assemblies)|Virtual Application packages don't need to be re-sequenced. SxS Assemblies can remain in the virtual application package.|The SxS Assembly dependencies will not install at publishing time.|SxS Assembly dependencies must be pre-installed.|
 
 
 ### Creating a new virtual application package on the sequencer
@@ -427,7 +427,7 @@ When publishing a virtual application package, the App-V Client will detect if a
 
     **-DynamicDeploymentConfiguration** parameter
 
--   Similarly, when adding new packages using `Add-AppVClientPackage –Path c:\Packages\Apps\MyApp.appv`, do not use the
+-   Similarly, when adding new packages using `Add-AppVClientPackage –Path c:\Packages\Apps\MyApp.appv`, don't use the
 
     **-DynamicDeploymentConfiguration** parameter.
 

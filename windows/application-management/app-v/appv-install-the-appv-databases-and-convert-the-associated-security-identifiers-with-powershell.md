@@ -22,7 +22,7 @@ Use the following Windows PowerShell procedure to convert any number of Active D
 
 Before attempting this procedure, you should read and understand the information and examples displayed in the following list:
 
--   **.INPUTS** – The account or accounts used to convert to SID format. This can be a single account name or an array of account names.
+-   **.INPUTS** – The account or accounts used to convert to SID format. This item can be a single account name or an array of account names.
 
 -   **.OUTPUTS** - A list of account names with the corresponding SID in standard and hexadecimal formats.
 
@@ -129,7 +129,7 @@ Before attempting this procedure, you should read and understand the information
     }
     ```
 
-3.  Run the script you saved in step one of this procedure passing the accounts to convert as arguments.
+3.  Run the script you saved in Step 1 of this procedure passing the accounts to convert as arguments.
 
     For example,
 
