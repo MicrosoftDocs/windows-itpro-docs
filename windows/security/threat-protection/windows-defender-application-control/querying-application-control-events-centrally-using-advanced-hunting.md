@@ -53,6 +53,8 @@ This capability is supported beginning with Windows version 1607.
 
 Learn more about the [Understanding Application Control event IDs (Windows)](event-id-explanations.md)
 
+## Example Advanced Hunting Application Control Queries ##
+Query Example 1: Query the application control action types summarized by type for past seven days
 
 Here's a simple example query that shows all the WDAC events generated in the last seven days from machines being monitored by Microsoft Defender for Endpoint:
 
@@ -71,16 +73,6 @@ The query results can be used for several important functions related to managin
 - Monitoring blocks from policies in enforced mode
   Policies deployed in enforced mode may block executables or scripts that fail to meet any of the included allow rules. Legitimate new applications and updates or potentially unwanted or malicious software could be blocked. In either case, the Advanced hunting queries report the blocks for further investigation.
 
-## Example Advanced Hunting Application Control Queries ##
-Query Example 1: Query the application control action types summarized by type for past seven days
-
-```
-DeviceEvents
-| where Timestamp > ago(7d)
-| where ActionType startswith "AppControl"
-| summarize Count = count() by ActionType
-| order by Count desc
-```
 
 Query Example #2: Query to determine audit blocks in the past seven days
 
