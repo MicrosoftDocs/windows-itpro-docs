@@ -44,11 +44,11 @@ Essential drivers required to start the Windows kernel are loaded and the kernel
 
 **4. Windows NT OS Kernel**
 
-The kernel loads into memory the system registry hive and additional drivers that are marked as BOOT_START.
+The kernel loads into memory the system registry hive and other drivers that are marked as BOOT_START.
 
-The kernel passes control to the session manager process (Smss.exe) which initializes the system session, and loads and starts the devices and drivers that are not marked BOOT_START.
+The kernel passes control to the session manager process (Smss.exe) which initializes the system session, and loads and starts the devices and drivers that aren't marked BOOT_START.
 
-Here is a summary of the boot sequence, what will be seen on the display, and typical boot problems at that point in the sequence. Before starting troubleshooting, you have to understand the outline of the boot process and display status to ensure that the issue is properly identified at the beginning of the engagement.
+Here's a summary of the boot sequence, what will be seen on the display, and typical boot problems at that point in the sequence. Before starting troubleshooting, you have to understand the outline of the boot process and display status to ensure that the issue is properly identified at the beginning of the engagement.
 
 ![thumbnail of boot sequence flowchart.](images/boot-sequence-thumb.png)<br>
 [Click to enlarge](img-boot-sequence.md)<br>
@@ -74,15 +74,15 @@ To determine whether the system has passed the BIOS phase, follow these steps:
 
 1. If there are any external peripherals connected to the computer, disconnect them.
 
-2. Check whether the hard disk drive light on the physical computer is working. If it is not working, this indicates that the startup process is stuck at the BIOS phase.
+2. Check whether the hard disk drive light on the physical computer is working. If it's not working, this dysfunction indicates that the startup process is stuck at the BIOS phase.
 
-3. Press the NumLock key to see whether the indicator light toggles on and off. If it does not, this indicates that the startup process is stuck at BIOS.
+3. Press the NumLock key to see whether the indicator light toggles on and off. If it doesn't toggle, this dysfunction indicates that the startup process is stuck at BIOS.
 
    If the system is stuck at the BIOS phase, there may be a hardware problem.
 
 ## Boot loader phase
 
-If the screen is completely black except for a blinking cursor, or if you receive one of the following error codes, this indicates that the boot process is stuck in the Boot Loader phase:
+If the screen is black except for a blinking cursor, or if you receive one of the following error codes, this status indicates that the boot process is stuck in the Boot Loader phase:
 
 -   Boot Configuration Data (BCD) missing or corrupted
 -   Boot file or MBR corrupted
@@ -98,7 +98,7 @@ To troubleshoot this problem, use Windows installation media to start the comput
 
 The Startup Repair tool automatically fixes many common problems. The tool also lets you quickly diagnose and repair more complex startup problems. When the computer detects a startup problem, the computer starts the Startup Repair tool. When the tool starts, it performs diagnostics. These diagnostics include analyzing startup log files to determine the cause of the problem. When the Startup Repair tool determines the cause, the tool tries to fix the problem automatically.
 
-To do this, follow these steps.
+To do this task of invoking the Startup Repair tool, follow these steps.
 
 > [!NOTE]
 > For additional methods to start WinRE, see [Windows Recovery Environment (Windows RE)](/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference#span-identrypointsintowinrespanspan-identrypointsintowinrespanspan-identrypointsintowinrespanentry-points-into-winre).
@@ -142,7 +142,7 @@ BOOTREC /FIXBOOT
 
 If you receive BCD-related errors, follow these steps:
 
-1. Scan for all the systems that are installed. To do this, run the following command:
+1. Scan for all the systems that are installed. To do this step, run the following command:
 
    ```console
    Bootrec /ScanOS
@@ -150,7 +150,7 @@ If you receive BCD-related errors, follow these steps:
 
 2. Restart the computer to check whether the problem is fixed.
 
-3. If the problem is not fixed, run the following commands:
+3. If the problem isn't fixed, run the following commands:
     
     ```console
     bcdedit /export c:\bcdbackup
@@ -166,7 +166,7 @@ If you receive BCD-related errors, follow these steps:
 
 ### Method 4: Replace Bootmgr
 
-If methods 1, 2 and 3 do not fix the problem, replace the Bootmgr file from drive C to the System Reserved partition. To do this, follow these steps:
+If methods 1, 2 and 3 don't fix the problem, replace the Bootmgr file from drive C to the System Reserved partition. To do this replacement, follow these steps:
 
 1. At a command prompt, change the directory to the System Reserved partition.
 
@@ -196,7 +196,7 @@ If methods 1, 2 and 3 do not fix the problem, replace the Bootmgr file from driv
 
 ### Method 5: Restore System Hive
 
-If Windows cannot load the system registry hive into memory, you must restore the system hive. To do this, use the Windows Recovery Environment or use Emergency Repair Disk (ERD) to copy the files from the C:\Windows\System32\config\RegBack to C:\Windows\System32\config.
+If Windows can't load the system registry hive into memory, you must restore the system hive. To do this step,, use the Windows Recovery Environment or use Emergency Repair Disk (ERD) to copy the files from the C:\Windows\System32\config\RegBack to C:\Windows\System32\config.
 
 If the problem persists, you may want to restore the system state backup to an alternative location, and then retrieve the registry hives to be replaced.
 
@@ -205,7 +205,7 @@ If the problem persists, you may want to restore the system state backup to an a
 
 ## Kernel Phase
 
-If the system gets stuck during the kernel phase, you experience multiple symptoms or receive multiple error messages. These include, but are not limited to, the following:
+If the system gets stuck during the kernel phase, you experience multiple symptoms or receive multiple error messages. These error messages include, but aren't limited to, the following examples:
 
 -   A Stop error appears after the splash screen (Windows Logo screen).
 
@@ -248,7 +248,7 @@ On the **Advanced Boot Options** screen, try to start the computer in **Safe Mod
 ### Clean boot
 
 To troubleshoot problems that affect services, do a clean boot by using System Configuration (msconfig).
-Select **Selective startup** to test the services one at a time to determine which one is causing the problem. If you cannot find the cause, try including system services. However, in most cases, the problematic service is third-party.
+Select **Selective startup** to test the services one at a time to determine which one is causing the problem. If you can't find the cause, try including system services. However, in most cases, the problematic service is third-party.
 
 Disable any service that you find to be faulty, and try to start the computer again by selecting **Normal startup**.
 
@@ -273,7 +273,7 @@ problems can be solved. Modify the registry at your own risk.
 
 To troubleshoot this Stop error, follow these steps to filter the drivers:
 
-1.  Go to Windows Recovery Environment (WinRE) by putting an ISO disk of the system in the disk drive. The ISO should be of same version of Windows or a later version.
+1.  Go to Windows Recovery Environment (WinRE) by putting an ISO disk of the system in the disk drive. The ISO should be of the same version of Windows or a later version.
 
 2.  Open the registry.
 
@@ -289,7 +289,7 @@ To troubleshoot this Stop error, follow these steps to filter the drivers:
 
 7.  Restart the server in Normal mode.
 
-For additional troubleshooting steps, see the following articles:
+For more troubleshooting steps, see the following articles:
 
 - [Advanced troubleshooting for Stop error 7B or Inaccessible_Boot_Device](./troubleshoot-inaccessible-boot-device.md)
 
@@ -314,7 +314,7 @@ To fix problems that occur after you install Windows updates, check for pending 
 
     Try to start the computer.
 
-If the computer does not start, follow these steps:
+If the computer doesn't start, follow these steps:
 
 1.  Open A Command Prompt window in WinRE, and start a text editor, such as Notepad.
 
@@ -346,7 +346,7 @@ If the Stop error occurs late in the startup process, or if the Stop error is st
 
 - [Generate a kernel or complete crash dump](./generate-kernel-or-complete-crash-dump.md) 
 
-For more information about page file problems in Windows 10 or Windows Server 2016, see the following:
+For more information about page file problems in Windows 10 or Windows Server 2016, see the following article:
 - [Introduction to page files](./introduction-page-file.md)
 
 For more information about Stop errors, see the following Knowledge Base article:
@@ -357,7 +357,7 @@ If the dump file shows an error that is related to a driver (for example, window
 
 - Check the functionality that is provided by the driver. If the driver is a third-party boot driver, make sure that you understand what it does.
 
-- If the driver is not important and has no dependencies, load the system hive, and then disable the driver.
+- If the driver isn't important and has no dependencies, load the system hive, and then disable the driver.
 
 - If the stop error indicates system file corruption, run the system file checker in offline mode.
 
@@ -369,7 +369,7 @@ If the dump file shows an error that is related to a driver (for example, window
 
         For more information, see [Using System File Checker (SFC) To Fix  Issues](/archive/blogs/askcore/using-system-file-checker-sfc-to-fix-issues)
 
-    - If there is disk corruption, run the check disk command:
+    - If there's disk corruption, run the check disk command:
 
         ```console
         chkdsk /f /r

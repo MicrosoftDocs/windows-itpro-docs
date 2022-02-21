@@ -42,7 +42,7 @@ Use the following steps to collect wireless and wired logs on Windows and Window
    netsh trace start scenario=lan globallevel=0xff capture=yes maxsize=1024 tracefile=C:\MSLOG\%COMPUTERNAME%_wired_cli.etl
    ```
  
-3. Run the following command to enable CAPI2 logging and increase the size :
+3. Run the following command to enable CAPI2 logging and increase the size:
    ```
    wevtutil.exe sl Microsoft-Windows-CAPI2/Operational /e:true
    wevtutil sl Microsoft-Windows-CAPI2/Operational /ms:104857600
@@ -70,7 +70,7 @@ Use the following steps to collect wireless and wired logs on Windows and Window
    netsh trace start scenario=lan globallevel=0xff capture=yes maxsize=1024 tracefile=C:\MSLOG\%COMPUTERNAME%_wired_nps.etl
    ```
  
-6. Run the following command to enable CAPI2 logging and increase the size :
+6. Run the following command to enable CAPI2 logging and increase the size:
    ```
     wevtutil.exe sl Microsoft-Windows-CAPI2/Operational /e:true
     wevtutil sl Microsoft-Windows-CAPI2/Operational /ms:104857600
@@ -241,7 +241,7 @@ Use the following steps to collect wireless and wired logs on Windows and Window
    wevtutil epl Microsoft-Windows-CertificateServicesClient-CredentialRoaming/Operational c:\MSLOG\%COMPUTERNAME%_CertificateServicesClient-CredentialRoaming_Operational.evtx
    wevtutil epl Microsoft-Windows-CertPoleEng/Operational c:\MSLOG\%COMPUTERNAME%_CertPoleEng_Operational.evtx
    ```
-   - Run the following 3 commands on Windows Server 2012 and later:
+   - Run the following commands on Windows Server 2012 and later:
    
    ```
    wevtutil epl Microsoft-Windows-CertificateServicesClient-Lifecycle-System/Operational c:\MSLOG\%COMPUTERNAME%_CertificateServicesClient-Lifecycle-System_Operational.evtx
@@ -320,7 +320,7 @@ Use the following steps to collect wireless and wired logs on Windows and Window
    wevtutil epl Microsoft-Windows-CertificateServicesClient-CredentialRoaming/Operational c:\MSLOG\%COMPUTERNAME%_CertificateServicesClient-CredentialRoaming_Operational.evtx
    wevtutil epl Microsoft-Windows-CertPoleEng/Operational c:\MSLOG\%COMPUTERNAME%_CertPoleEng_Operational.evtx
    ```
-   - Run the following 3 lines on Windows 2012 and up
+   - Run the following lines on Windows 2012 and up
    
    ```
    wevtutil epl Microsoft-Windows-CertificateServicesClient-Lifecycle-System/Operational c:\MSLOG\%COMPUTERNAME%_CertificateServicesClient-Lifecycle-System_Operational.evtx
@@ -371,9 +371,9 @@ Use the following steps to collect wireless and wired logs on Windows and Window
    reg export HKLM\SOFTWARE\Microsoft\Cryptography c:\MSLOG\%COMPUTERNAME%_Cryptography.txt
    ```
 3. Copy the following files, if exist, to C:\MSLOG: %windir%\CAPolicy.inf
-4. Log on to a domain controller and create C:\MSLOG to store captured logs.
+4. Sign in to a domain controller and create C:\MSLOG to store captured logs.
 5. Launch Windows PowerShell as an administrator.
-6. Run the following PowerShell cmdlets. Replace the domain name in ";.. ,DC=test,DC=local"; with appropriate domain name. The example shows commands for ";test.local"; domain.
+6. Run the following PowerShell cmdlets. Replace the domain name in ";.. ,DC=test,DC=local"; with appropriate domain name. The example shows commands for "; test.local"; domain.
    
    ```powershell
    Import-Module ActiveDirectory
