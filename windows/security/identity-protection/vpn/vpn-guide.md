@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 09/09/2021
+ms.date: 02/21/2022
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -29,7 +29,7 @@ To create a Windows 10 VPN device configuration profile see: [Windows 10 and Win
 
 ## In this guide
 
-| Topic | Description  |
+| Article | Description  |
 | --- | --- |
 | [VPN connection types](vpn-connection-type.md) | Select a VPN client and tunneling protocol |
 | [VPN routing decisions](vpn-routing.md)  | Choose between split tunnel and force tunnel configuration |
