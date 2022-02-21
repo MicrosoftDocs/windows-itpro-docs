@@ -70,7 +70,7 @@ For example, the registry key configuration for BFE is:
 
 ## Memory footprint
 
-Be aware that separating services increases the total number of SvcHost instances, which increases memory utilization. (Service grouping provided a modest reduction to the overall resource footprint of the services involved.) 
+Separating services increases the total number of SvcHost instances, which increases memory utilization. (Service grouping provided a modest reduction to the overall resource footprint of the services involved.) 
 
 Consider the following example:
 
