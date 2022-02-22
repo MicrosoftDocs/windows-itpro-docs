@@ -156,7 +156,7 @@ sections:
 
       - question: Can I wear a mask to enroll or unlock using Windows Hello face authentication?
         answer: |
-          Wearing a mask to enroll is a security concern because other users wearing a similar mask may be able to unlock your device. The product group is aware of this behavior and is investigating this topic further. Remove a mask if you' a're wearing one when you enroll or unlock with Windows Hello face authentication. If your working environment doesn’t allow you to remove a mask temporarily, consider unenrolling from face authentication and only using PIN or fingerprint.
+          Wearing a mask to enroll is a security concern because other users wearing a similar mask may be able to unlock your device. The product group is aware of this behavior and is investigating this topic further. Remove a mask if you're wearing one when you enroll or unlock with Windows Hello face authentication. If your working environment doesn’t allow you to remove a mask temporarily, consider unenrolling from face authentication and only using PIN or fingerprint.
 
       - question: What's the difference between Windows Hello and Windows Hello for Business?
         answer: |
