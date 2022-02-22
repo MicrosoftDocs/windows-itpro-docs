@@ -6,10 +6,10 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: dansimp
+author: GitPrakhar13
 audience: ITPro
-ms.author: GitPrakhar13
-manager: prsriva
+ms.author: prsriva
+manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
