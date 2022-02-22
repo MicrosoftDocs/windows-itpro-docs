@@ -38,11 +38,11 @@ Read [Conditional access in Azure Active Directory](/azure/active-directory/acti
 
 ## Related topics
 
-- [Windows Hello for Business](hello-identity-verification.md)
-- [Manage Windows Hello for Business in your organization](hello-manage-in-organization.md)
-- [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)
-- [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
-- [Windows Hello and password changes](hello-and-password-changes.md)
-- [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
-- [Event ID 300 - Windows Hello successfully created](hello-event-300.md)
-- [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md)
+* [Windows Hello for Business](hello-identity-verification.md)
+* [Manage Windows Hello for Business in your organization](hello-manage-in-organization.md)
+* [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)
+* [Prepare people to use Windows Hello](hello-prepare-people-to-use.md)
+* [Windows Hello and password changes](hello-and-password-changes.md)
+* [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
+* [Event ID 300 - Windows Hello successfully created](hello-event-300.md)
+* [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md)
