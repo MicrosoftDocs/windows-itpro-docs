@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: GitPrakhar13
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -19,13 +19,14 @@ ms.reviewer:
 # Azure AD Join Single Sign-on Deployment
 
 **Applies to**
--   Windows 10
--   Windows 11
--   Azure Active Directory joined
--   Hybrid deployment
+
+- Windows 10
+- Windows 11
+- Azure Active Directory joined
+- Hybrid deployment
 
 Windows Hello for Business combined with Azure Active Directory joined devices makes it easy for users to securely access cloud-based resources using a strong, two-factor credential.  Some resources may remain on-premises as enterprises transition resources to the cloud and Azure AD joined devices may need to access these resources.  With additional configurations to your current hybrid deployment, you can provide single sign-on to your on-premises resources for Azure Active Directory joined devices using Windows Hello for Business, using a key or a certificate.
- 
+
 ## Key vs. Certificate
 
 Enterprises can use either a key or a certificate to provide single-sign on for on-premises resources.  Both types of authentication provide the same security; one is not more secure than the other.  

@@ -8,20 +8,21 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: GitPrakhar13
 manager: dansimp
 ms.collection:
   - M365-identity-device-management
   - highpri
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 1/20/2021
+ms.date: 2/15/2022
 ---
 
 # Manage Windows Hello for Business in your organization
 
 **Applies to**
+
 - Windows 10
 - Windows 11
 

@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: GitPrakhar13
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -18,7 +18,7 @@ ms.reviewer:
 ---
 # How to reset a Microsoft-compatible security key? 
 > [!Warning]
-> Some information relates to pre-released product that may change before it is commercially released.  Microsoft makes no warranties, express or implied, with respect to the information provided here. 
+> Some information relates to pre-released product that may change before it is commercially released.  Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 >[!IMPORTANT]
 >This operation will wipe everything from your security key and reset it to factory defaults.</br> **All data and credentials will be cleared.** 
