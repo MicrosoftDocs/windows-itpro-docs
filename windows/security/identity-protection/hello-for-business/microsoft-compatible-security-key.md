@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -16,9 +16,10 @@ localizationpriority: medium
 ms.date: 11/14/2018
 ms.reviewer: 
 ---
-# What is a Microsoft-compatible security key? 
+# What is a Microsoft-compatible security key?
+
 > [!Warning]
-> Some information relates to pre-released product that may change before it is commercially released.  Microsoft makes no warranties, express or implied, with respect to the information provided here. 
+> Some information relates to pre-released product that may change before it is commercially released.  Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 Microsoft has been aligned with the [FIDO Alliance](https://fidoalliance.org/) with a mission to replace passwords with an easy to use, strong 2FA credential. We have been working with our partners to extensively test and deliver a seamless and secure authentication experience to end users. See [FIDO2 security keys features and providers](/azure/active-directory/authentication/concept-authentication-passwordless#fido2-security-keys).
