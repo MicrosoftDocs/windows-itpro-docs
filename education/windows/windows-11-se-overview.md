@@ -49,7 +49,7 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 |Free NaturalReader                     |16.1.2          |Natural Soft|
 |GoGuardian                             |1.4.4           |GoGuardian|
 |Google Chrome                          |97.0.4692.71    |Google|
-|Jaws for Windows                       |2022.2112.24 ILM|Freedom Scientific|
+|JAWS for Windows                       |2022.2112.24 ILM|Freedom Scientific|
 |Kite Student Portal                    |8.0.1|Dynamic Learning Maps|
 |Kortext                                |2.3.418.0       |Kortext|
 |LanSchool                              |9.1.0.46        |Stoneware|
@@ -67,7 +67,8 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 |TestNav                                |1.10.2.0        |Pearson Education Inc|
 |SecureBrowser                          |14.0.0          |Cambium Development|
 |Zoom                                   |5.9.1 (2581)    |Zoom|
-|ZoomText Magnifier/Reader              |2022.2109.25ILM | AI Squared| 
+|ZoomText Fusion              |2022.2109.10 |Freedom Scientific| 
+|ZoomText Magnifier/Reader              |2022.2109.25 |Freedom Scientific| 
 
 ### Enabled apps
 
