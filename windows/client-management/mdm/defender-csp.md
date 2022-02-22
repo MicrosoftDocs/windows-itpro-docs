@@ -10,7 +10,7 @@ ms.prod: w10
 ms.technology: windows
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 10/04/2021
+ms.date: 02/22/2022
 ---
 
 # Defender CSP
