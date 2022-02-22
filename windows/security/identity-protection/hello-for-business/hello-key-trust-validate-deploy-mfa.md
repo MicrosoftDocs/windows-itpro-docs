@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
 author: GitPrakhar13
-ms.author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -35,6 +35,7 @@ For information on available third-party authentication methods see [Configure A
 Follow the integration and deployment guide for the authentication provider you select to integrate and deploy it to AD FS. Make sure that the authentication provider is selected as a multi-factor authentication option in the AD FS authentication policy. For information on configuring AD FS authentication policies see [Configure Authentication Policies](/windows-server/identity/ad-fs/operations/configure-authentication-policies).
 
 ## Follow the Windows Hello for Business on premises certificate trust deployment guide
+
 1. [Validate Active Directory prerequisites](hello-key-trust-validate-ad-prereq.md)
 2. [Validate and Configure Public Key Infrastructure](hello-key-trust-validate-pki.md)
 3. [Prepare and Deploy Windows Server 2016 Active Directory Federation Services](hello-key-trust-adfs.md)

@@ -9,7 +9,7 @@ ms.pagetype: security, mobile
 author: dansimp
 audience: ITPro
 ms.author: GitPrakhar13
-manager: GitPrakhar13
+manager: prsriva
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
@@ -19,11 +19,11 @@ ms.reviewer:
 # Validate Active Directory prerequisites - Key Trust
 
 **Applies to**
+
 - Windows 10, version 1703 or later
 - Windows 11
 - On-premises deployment
 - Key trust
-
 
 Key trust deployments need an adequate number of 2016 or later domain controllers to ensure successful user authentication with Windows Hello for Business.  To learn more about domain controller planning for key trust deployments, read the [Windows Hello for Business planning guide](hello-planning-guide.md), the [Planning an adequate number of Windows Server 2016 or later Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) section.
 

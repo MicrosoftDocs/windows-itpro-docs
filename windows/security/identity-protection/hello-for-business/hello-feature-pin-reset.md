@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
 author: GitPrakhar13
-ms.author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection:
   - M365-identity-device-management

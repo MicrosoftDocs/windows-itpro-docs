@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
 author: GitPrakhar13
-ms.author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -24,7 +24,6 @@ ms.date: 07/27/2017
 
 - Windows 10
 - Windows 11
-
 
 This event is created when Windows Hello for Business is successfully created and registered with Azure Active Directory (Azure AD). Applications or services can trigger actions on this event. For example, a certificate provisioning service can listen to this event and trigger a certificate request.
 
