@@ -16,7 +16,7 @@ metadata:
     - highpri
   ms.topic: article
   localizationpriority: medium
-  ms.date: 10/15/2021
+  ms.date: 02/21/2022
     
 title: Windows Hello for Business Frequently Asked Questions (FAQ)
 summary: |
@@ -26,6 +26,11 @@ summary: |
 sections:
   - name: Ignored
     questions:
+    
+      - question: What is Windows Hello for Business cloud trust?
+        answer: |
+          Windows Hello for Business cloud trust is a new trust model that is currently in preview. This trust model will enable Windows Hello for Business deployment using the infrastructure introduced for supporting [security key sign-in on Hybrid Azure AD joined devices and on-premises resource access on Azure AD Joined devices](/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). Cloud trust is the preferred deployment model if you do not need to support certificate authentication scenarios. For more information, see [Hybrid Cloud Trust Deployment (Preview)](/windows/security/identity-protection/hello-for-business/hello-hybrid-cloud-trust).
+
       - question: What about virtual smart cards?
         answer: |
           Windows Hello for Business is the modern, two-factor credential for Windows 10. Microsoft will be deprecating virtual smart cards in the future, but no date is set at this time. Customers using Windows 10 and virtual smart cards should move to Windows Hello for Business.  Microsoft will publish the date early to ensure customers have adequate lead time to move to Windows Hello for Business. Microsoft recommends that new Windows 10 deployments use Windows Hello for Business. Virtual smart cards remain supported for Windows 7 and Windows 8.
