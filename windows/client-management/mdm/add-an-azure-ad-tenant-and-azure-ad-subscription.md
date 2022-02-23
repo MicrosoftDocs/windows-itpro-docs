@@ -57,7 +57,7 @@ Here's a step-by-step guide to adding an Azure Active Directory tenant, adding a
 
    ![azure active directory premium payment page.](images/azure-ad-add-tenant8.png)
 
-10. After the purchase is completed, you can log in to your Office 365 Admin Portal and you will see the **Azure AD** option from the Admin drop-down menu along with other services (SharePoint, Exchange, etc....).
+10. After the purchase is completed, you can log on to your Office 365 Admin Portal and you'll see the **Azure AD** option from the Admin drop-down menu along with other services (SharePoint and Exchange).
 
     ![admin center left navigation menu.](images/azure-ad-add-tenant9.png)
 
@@ -75,7 +75,7 @@ If you have paid subscriptions to Office 365, Microsoft Dynamics CRM Online, Ent
 
     ![register in azure-ad.](images/azure-ad-add-tenant11.png)
 
-3.  On the **Admin center** page, hover your mouse over the Admin tools icon on the left and then click **Azure AD**. This will take you to the Azure Active Directory sign-up page and brings up your existing Office 365 organization account information.
+3.  On the **Admin center** page, hover your mouse over the Admin tools icon on the left and then click **Azure AD**. This option will take you to the Azure Active Directory sign-up page and brings up your existing Office 365 organization account information.
 
     ![register azuread](images/azure-ad-add-tenant12.png)
 
@@ -87,7 +87,7 @@ If you have paid subscriptions to Office 365, Microsoft Dynamics CRM Online, Ent
 
     ![registration in azuread.](images/azure-ad-add-tenant14.png)
 
-6.  You will see a welcome page when the process completes.
+6.  You'll see a welcome page when the process completes.
 
     ![register screen of azuread](images/azure-ad-add-tenant15.png)
 

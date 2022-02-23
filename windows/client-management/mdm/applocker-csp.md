@@ -15,9 +15,9 @@ ms.date: 11/19/2019
 # AppLocker CSP
 
 
-The AppLocker configuration service provider is used to specify which applications are allowed or disallowed. There is no user interface shown for apps that are blocked.
+The AppLocker configuration service provider is used to specify which applications are allowed or disallowed. There's no user interface shown for apps that are blocked.
 
-The following shows the AppLocker configuration service provider in tree format.
+The following example shows the AppLocker configuration service provider in tree format.
 
 ```console
 ./Vendor/MSFT
@@ -75,7 +75,7 @@ Defines restrictions for applications.
 > [!NOTE]
 > When you create a list of allowed apps, all [inbox apps](#inboxappsandcomponents) are also blocked, and you must include them in your list of allowed apps. Don't forget to add the inbox apps for Phone, Messaging, Settings, Start, Email and accounts, Work and school, and other apps that you need.
 
-> Delete/unenrollment is not properly supported unless Grouping values are unique across enrollments. If multiple enrollments use the same Grouping value, then unenrollment will not work as expected since there are duplicate URIs that get deleted by the resource manager. To prevent this problem, the Grouping value should include some randomness. The best practice is to use a randomly generated GUID. However, there is no requirement on the exact value of the node.
+> Delete/unenrollment is not properly supported unless Grouping values are unique across enrollments. If multiple enrollments use the same Grouping value, then unenrollment will not work as expected since there are duplicate URIs that get deleted by the resource manager. To prevent this problem, the Grouping value should include some randomness. The best practice is to use a randomly generated GUID. However, there's no requirement on the exact value of the node.
 
 > [!NOTE]
 > The AppLocker CSP will schedule a reboot when a policy is applied or a deletion occurs using the AppLocker/ApplicationLaunchRestrictions/Grouping/CodeIntegrity/Policy URI.
@@ -83,7 +83,7 @@ Defines restrictions for applications.
 Additional information:
 
 <a href="" id="applocker-applicationlaunchrestrictions-grouping"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_**  
-Grouping nodes are dynamic nodes, and there may be any number of them for a given enrollment (or a given context). The actual identifiers are selected by the management endpoint, whose job it is to determine what their purpose is, and to not conflict with other identifiers that they define.
+Grouping nodes are dynamic nodes, and there may be any number of them for a given enrollment (or a given context). The actual identifiers are selected by the management endpoint, whose job it's to determine what their purpose is, and to not conflict with other identifiers that they define.
 Different enrollments and contexts may use the same Authority identifier, even if many such identifiers are active at the same time.
 
 Supported operations are Get, Add, Delete, and Replace.
@@ -101,7 +101,7 @@ Data type is string.
 Supported operations are Get, Add, Delete, and Replace.
 
 <a href="" id="applocker-applicationlaunchrestrictions-grouping-exe-enforcementmode"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/EXE/EnforcementMode**  
-The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
 
 The data type is a string. 
 
@@ -125,7 +125,7 @@ Data type is string.
 Supported operations are Get, Add, Delete, and Replace.
 
 <a href="" id="applocker-applicationlaunchrestrictions-grouping-msi-enforcementmode"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/MSI/EnforcementMode**  
-The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
 
 The data type is a string. 
 
@@ -144,7 +144,7 @@ Data type is string.
 Supported operations are Get, Add, Delete, and Replace.
 
 <a href="" id="applocker-applicationlaunchrestrictions-grouping-script-enforcementmode"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/Script/EnforcementMode**  
-The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
 
 The data type is a string.
 
@@ -163,7 +163,7 @@ Data type is string.
 Supported operations are Get, Add, Delete, and Replace.
 
 <a href="" id="applocker-applicationlaunchrestrictions-grouping-storeapps-enforcementmode"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/StoreApps/EnforcementMode**  
-The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
 
 The data type is a string.
 
@@ -182,7 +182,7 @@ Data type is string.
 Supported operations are Get, Add, Delete, and Replace.
 
 <a href="" id="applocker-applicationlaunchrestrictions-grouping-dll-enforcementmode"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/DLL/EnforcementMode**  
-The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
 
 The data type is a string.
 
@@ -211,7 +211,7 @@ Supported operations are Get, Add, Delete, and Replace.
 <a href="" id="applocker-enterprisedataprotection"></a>**AppLocker/EnterpriseDataProtection**  
 Captures the list of apps that are allowed to handle enterprise data. Should be used in conjunction with the settings in **./Device/Vendor/MSFT/EnterpriseDataProtection** in [EnterpriseDataProtection CSP](enterprisedataprotection-csp.md).
 
-In Windows 10, version 1607 the Windows Information Protection has a concept for allowed and exempt applications. Allowed applications can access enterprise data and the data handled by those applications are protected with encryption. Exempt applications can also access enterprise data, but the data handled by those applications are not protected. This is because some critical enterprise applications may have compatibility problems with encrypted data.
+In Windows 10, version 1607 the Windows Information Protection has a concept for allowed and exempt applications. Allowed applications can access enterprise data and the data handled by those applications are protected with encryption. Exempt applications can also access enterprise data, but the data handled by those applications aren't protected. This is because some critical enterprise applications may have compatibility problems with encrypted data.
 
 You can set the allowed list using the following URI:
 - ./Vendor/MSFT/AppLocker/EnterpriseDataProtection/_Grouping_/EXE/Policy
@@ -227,10 +227,10 @@ Exempt examples:
 
 Additional information:
 
-- [Recommended deny list for Windows Information Protection](#recommended-deny-list-for-windows-information-protection) - example for Windows 10, version 1607 that denies known unenlightened Microsoft apps from accessing enterprise data as an allowed app. This ensures an administrator does not accidentally make these apps Windows Information Protection allowed, and avoid known compatibility issues related to automatic file encryption with these applications.
+- [Recommended blocklist for Windows Information Protection](#recommended-blocklist-for-windows-information-protection) - example for Windows 10, version 1607 that denies known unenlightened Microsoft apps from accessing enterprise data as an allowed app. This prevention ensures an administrator doesn't accidentally make these apps Windows Information Protection allowed, and avoid known compatibility issues related to automatic file encryption with these applications.
 
 <a href="" id="applocker-enterprisedataprotection-grouping"></a>**AppLocker/EnterpriseDataProtection/_Grouping_**  
-Grouping nodes are dynamic nodes, and there may be any number of them for a given enrollment (or a given context). The actual identifiers are selected by the management endpoint, whose job it is to determine what their purpose is, and to not conflict with other identifiers that they define.
+Grouping nodes are dynamic nodes, and there may be any number of them for a given enrollment (or a given context). The actual identifiers are selected by the management endpoint, whose job it's to determine what their purpose is, and to not conflict with other identifiers that they define.
 Different enrollments and contexts may use the same Authority identifier, even if many such identifiers are active at the same time.
 
 Supported operations are Get, Add, Delete, and Replace.
@@ -259,7 +259,7 @@ Data type is string.
 
 Supported operations are Get, Add, Delete, and Replace.
 
-1.  On your phone under **Device discovery**, tap **Pair**. You will get a code (case sensitive).
+1.  On your phone under **Device discovery**, tap **Pair**. You'll get a code (case sensitive).
 2.  On the browser on the **Set up access page**, enter the code (case sensitive) into the text box and click **Submit**.
 
     The **Device Portal** page opens on your browser.
@@ -267,11 +267,11 @@ Supported operations are Get, Add, Delete, and Replace.
     ![device portal screenshot.](images/applocker-screenshot1.png)
 
 3.  On the desktop **Device Portal** page, click **Apps** to open the **App Manager**.
-4.  On the **App Manager** page under **Running apps**, you will see the **Publisher** and **PackageFullName** of apps.
+4.  On the **App Manager** page under **Running apps**, you'll see the **Publisher** and **PackageFullName** of apps.
 
     ![device portal app manager.](images/applocker-screenshot3.png)
 
-5. If you do not see the app that you want, look under **Installed apps**. Using the drop- down menu, click on the application and you get the Version, Publisher, and PackageFullName displayed.
+5. If you don't see the app that you want, look under **Installed apps**. Using the drop- down menu, click on the application and you get the Version, Publisher, and PackageFullName displayed.
 
     ![app manager.](images/applocker-screenshot2.png)
 
@@ -281,9 +281,9 @@ The following table shows the mapping of information to the AppLocker publisher 
 |--- |--- |
 |PackageFullName|ProductName<br><br> The product name is first part of the PackageFullName followed by the version number. In the Windows Camera example, the ProductName is Microsoft.WindowsCamera.|
 |Publisher|Publisher|
-|Version|Version<br> <br>This can be used either in the HighSection or LowSection of the BinaryVersionRange.<br> <br>HighSection defines the highest version number and LowSection defines the lowest version number that should be trusted. You can use a wildcard for both versions to make a version- independent rule. Using a wildcard for one of the values will provide higher than or lower than a specific version semantics.|
+|Version|Version<br> <br>The version can be used either in the HighSection or LowSection of the BinaryVersionRange.<br> <br>HighSection defines the highest version number and LowSection defines the lowest version number that should be trusted. You can use a wildcard for both versions to make a version- independent rule. Using a wildcard for one of the values will provide higher than or lower than a specific version semantics.|
 
-Here is an example AppLocker publisher rule:
+Here's an example AppLocker publisher rule:
 
 ```xml
 <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.Reader" BinaryName="*">
@@ -307,7 +307,7 @@ Request URI:
 https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/{app ID}/applockerdata
 ```
 
-Here is the example for Microsoft OneNote:
+Here's the example for Microsoft OneNote:
 
 Request
 
@@ -330,13 +330,13 @@ Result
 |--- |--- |
 |packageIdentityName|ProductName|
 |publisherCertificateName|Publisher|
-|windowsPhoneLegacyId|Same value maps to the ProductName and Publisher name. <br> <br> This value will only be present if there is a XAP package associated with the app in the Store. <br> <br>If this value is populated then the simple thing to do to cover both the AppX and XAP package would be to create two rules for the app. One rule for AppX using the packageIdentityName and publisherCertificateName value and another one using the windowsPhoneLegacyId value.|
+|windowsPhoneLegacyId|Same value maps to the ProductName and Publisher name. <br> <br> This value will only be present if there's a XAP package associated with the app in the Store. <br> <br>If this value is populated, then the simple thing to do to cover both the AppX and XAP package would be to create two rules for the app. One rule for AppX using the packageIdentityName and publisherCertificateName value and another one using the windowsPhoneLegacyId value.|
 
 
 ## <a href="" id="settingssplashapps"></a>Settings apps that rely on splash apps
 
 
-These apps are blocked unless they are explicitly added to the list of allowed apps. The following table shows the subset of Settings apps that rely on splash apps.
+These apps are blocked unless they're explicitly added to the list of allowed apps. The following table shows the subset of Settings apps that rely on splash apps.
 
 The product name is first part of the PackageFullName followed by the version number.
 
@@ -526,7 +526,7 @@ The following example blocks the usage of the map application.
 </SyncML>
 ```
 
-The following example disables the Mixed Reality Portal. In the example, the **Id** can be any generated GUID and the **Name** can be any name you choose. Note that `BinaryName="*"` allows you to block any app executable in the Mixed Reality Portal package. **Binary/VersionRange**, as shown in the example, will block all versions of the Mixed Reality Portal app.
+The following example disables the Mixed Reality Portal. In the example, the **Id** can be any generated GUID and the **Name** can be any name you choose. `BinaryName="*"` allows you to block any app executable in the Mixed Reality Portal package. **Binary/VersionRange**, as shown in the example, will block all versions of the Mixed Reality Portal app.
 
 ```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
@@ -1022,7 +1022,7 @@ In this example, **MobileGroup0** is the node name. We recommend using a GUID fo
 ```
 
 ## Example for Windows 10 Holographic for Business
-The following example for Windows 10 Holographic for Business denies all apps and allows the minimum set of [inbox apps](#inboxappsandcomponents) to enable a working device, as well as Settings.
+The following example for Windows 10 Holographic for Business denies all apps and allows the minimum set of [inbox apps](#inboxappsandcomponents) to enable a working device, and Settings.
 
 ```xml
 <RuleCollection Type="Appx" EnforcementMode="Enabled">
@@ -1276,8 +1276,8 @@ The following example for Windows 10 Holographic for Business denies all apps an
 </RuleCollection>
 ```
 
-## Recommended deny list for Windows Information Protection
-The following example for Windows 10, version 1607 denies known unenlightened Microsoft apps from accessing enterprise data as an allowed app. (An administrator might still use an exempt rule, instead.) This ensures an administrator does not accidentally make these apps Windows Information Protection allowed, and avoid known compatibility issues related to automatic file encryption with these applications.
+## Recommended blocklist for Windows Information Protection
+The following example for Windows 10, version 1607 denies known unenlightened Microsoft apps from accessing enterprise data as an allowed app. (An administrator might still use an exempt rule, instead.) This prevention ensures an administrator doesn't accidentally make these apps Windows Information Protection allowed, and avoid known compatibility issues related to automatic file encryption with these applications.
 
 In this example, Contoso is the node name. We recommend using a GUID for this node.
 
