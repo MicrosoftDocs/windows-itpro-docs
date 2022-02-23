@@ -19,7 +19,7 @@ The CellularSettings configuration service provider is used to configure cellula
 > [!Note]
 > Starting in Windows 10, version 1703 the CellularSettings CSP is supported in Windows 10 Home, Pro, Enterprise, and Education editions.
 
-The following shows the CellularSettings CSP in tree format as used by Open Mobile Alliance Client Provisioning (OMA CP). The OMA DM protocol is not supported with this configuration service provider.
+The following example shows the CellularSettings CSP in tree format as used by Open Mobile Alliance Client Provisioning (OMA CP). The OMA DM protocol isn't supported with this configuration service provider.
 
 ```console
 ./Vendor/MSFT

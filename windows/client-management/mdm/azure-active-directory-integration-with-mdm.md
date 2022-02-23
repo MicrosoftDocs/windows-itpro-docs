@@ -118,7 +118,7 @@ The MDM application uses keys to request access tokens from Azure AD. These keys
 
 Use the following steps to register a cloud-based MDM application with Azure AD. At this time, you need to work with the Azure AD engineering team to expose this application through the Azure AD app gallery.
 
-1.  Log in to the Azure Management Portal using an admin account in your home tenant.
+1.  Log on to the Azure Management Portal using an admin account in your home tenant.
 
 2.  In the left navigation, select **Active Directory**.
 
@@ -134,7 +134,7 @@ Use the following steps to register a cloud-based MDM application with Azure AD.
 
 7.  Enter a friendly name for the application, such as ContosoMDM, select **Web Application and or Web API**, then select **Next**.
 
-8.  Enter the login URL for your MDM service.
+8.  Enter the logon URL for your MDM service.
 
 9.  For the App ID, enter `https://<your_tenant_name>/ContosoMDM`, then select OK.
 
@@ -168,7 +168,7 @@ The application keys used by your MDM service are a sensitive resource. They sho
 
 For security best practices, see [Windows Azure Security Essentials](https://go.microsoft.com/fwlink/p/?LinkId=613715).
 
-You can rollover the application keys used by a cloud-based MDM service without requiring a customer interaction. There's a single set of keys across all customer tenants that are managed by the MDM vendor in their Azure AD tenant.
+You can roll over the application keys used by a cloud-based MDM service without requiring a customer interaction. There's a single set of keys across all customer tenants that are managed by the MDM vendor in their Azure AD tenant.
 
 For the on-premises MDM, the Azure AD authentication keys are within the customer tenant and must be rolled over by the customer's administrator. To improve security, provide guidance to customers about rolling over and protecting the keys.
 
@@ -326,7 +326,7 @@ The following table shows the error codes.
 |Cause|HTTP status|Error|Description|
 |--- |--- |--- |--- |
 |api-version|302|invalid_request|unsupported version|
-|Tenant or user data are missing or other required prerequisites for device enrollment are not met|302|unauthorized_client|unauthorized user or tenant|
+|Tenant or user data are missing or other required prerequisites for device enrollment aren't met|302|unauthorized_client|unauthorized user or tenant|
 |Azure AD token validation failed|302|unauthorized_client|unauthorized_client|
 |internal service error|302|server_error|internal service error|
 
@@ -358,7 +358,7 @@ With Azure integrated MDM enrollment, there's no discovery phase and the discove
 There are two different MDM enrollment types that integrate with Azure AD, and use Azure AD user and device identities. Depending on the enrollment type, the MDM service may need to manage a single user or multiple users.
 
 <a href="" id="multiple-user-management-for-azure-ad-joined-devices"></a>**Multiple user management for Azure AD joined devices**
-In this scenario the MDM enrollment applies to every Azure AD user who signs in to the Azure AD joined device - call this enrollment type a device enrollment or a multi-user enrollment. The management server can determine the user identity, determine what policies are targeted for this user, and send corresponding policies to the device. To allow management server to identify current user that is logged on to the device, the OMA DM client uses the Azure AD user tokens. Each management session contains an additional HTTP header that contains an Azure AD user token. This information is provided in the DM package sent to the management server. However, in some circumstances Azure AD user token isn't sent over to the management server. One such scenario happens immediately after MDM enrollments completes during Azure AD join process. Until Azure AD join process is finished and Azure AD user signs on to the machine, Azure AD user token isn't available to OMA-DM process. Typically MDM enrollment completes before Azure AD user sign in to machine and the initial management session does not contain an Azure AD user token. The management server should check if the token is missing and only send device policies in such case. Another possible reason for a missing Azure AD token in the OMA-DM payload is when a guest user is logged on to the device.
+In this scenario the MDM enrollment applies to every Azure AD user who signs in to the Azure AD joined device - call this enrollment type a device enrollment or a multi-user enrollment. The management server can determine the user identity, determine what policies are targeted for this user, and send corresponding policies to the device. To allow management server to identify current user that is logged on to the device, the OMA DM client uses the Azure AD user tokens. Each management session contains an extra HTTP header that contains an Azure AD user token. This information is provided in the DM package sent to the management server. However, in some circumstances Azure AD user token isn't sent over to the management server. One such scenario happens immediately after MDM enrollments completes during Azure AD join process. Until Azure AD join process is finished and Azure AD user signs on to the machine, Azure AD user token isn't available to OMA-DM process. Typically, MDM enrollment completes before Azure AD user sign in to machine and the initial management session doesn't contain an Azure AD user token. The management server should check if the token is missing and only send device policies in such case. Another possible reason for a missing Azure AD token in the OMA-DM payload is when a guest user is logged on to the device.
 
 <a href="" id="adding-a-work-account-and-mdm-enrollment-to-a-device"></a>**Adding a work account and MDM enrollment to a device**
 In this scenario, the MDM enrollment applies to a single user who initially added their work account and enrolled the device. In this enrollment type, the management server can ignore Azure AD tokens that may be sent over during management session. Whether Azure AD token is present or missing, the management server sends both user and device policies to the device.
@@ -370,7 +370,7 @@ The Azure AD token is in the HTTP Authorization header in the following format:
 Authorization:Bearer <Azure AD User Token Inserted here>
 ```
 
-Additional claims may be present in the Azure AD token, such as:
+More claims may be present in the Azure AD token, such as:
 
 -   User - user currently logged in
 -   Device compliance - value set the MDM service into Azure
@@ -411,9 +411,9 @@ An alert is sent to the MDM server in DM package\#1.
 
 -   Alert type - com.microsoft/MDM/LoginStatus
 -   Alert format - chr
--   Alert data - provide login status information for the current active logged in user.
-    -   Logged in user who has an Azure AD account - predefined text: user.
-    -   Logged in user without an Azure AD account- predefined text: others.
+-   Alert data - provide sign-in status information for the current active logged in user.
+    -   Signed-in user who has an Azure AD account - predefined text: user.
+    -   Signed-in user without an Azure AD account- predefined text: others.
     -   No active user - predefined text:none
 
 Here's an example.
@@ -477,7 +477,7 @@ Response:
 
 ## Data loss during unenrollment from Azure Active Directory Join
 
-When a user is enrolled into MDM through Azure Active Directory Join and then disconnects the enrollment, there's no warning that the user will lose Windows Information Protection (WIP) data. The disconnection message does not indicate the loss of WIP data.
+When a user is enrolled into MDM through Azure Active Directory Join and then disconnects the enrollment, there's no warning that the user will lose Windows Information Protection (WIP) data. The disconnection message doesn't indicate the loss of WIP data.
 
 ![aadj unenrollment.](images/azure-ad-unenrollment.png)
 
