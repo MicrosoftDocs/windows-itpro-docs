@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -19,19 +19,19 @@ ms.reviewer:
 # Windows Hello for Business Hybrid Azure AD joined Key Trust New Installation
 
 **Applies to**
--   Windows 10, version 1703 or later
--   Windows 11
--   Hybrid deployment
--   Key trust
+
+- Windows 10, version 1703 or later
+- Windows 11
+- Hybrid deployment
+- Key trust
 
 
 Windows Hello for Business involves configuring distributed technologies that may or may not exist in your current infrastructure.  Hybrid key trust deployments of Windows Hello for Business rely on these technologies
 
-* [Active Directory](#active-directory)
-* [Public Key Infrastructure](#public-key-infrastructure)
-* [Azure Active Directory](#azure-active-directory)
-* [Multifactor Authentication Services](#multifactor-authentication-services)
-
+- [Active Directory](#active-directory)
+- [Public Key Infrastructure](#public-key-infrastructure)
+- [Azure Active Directory](#azure-active-directory)
+- [Multifactor Authentication Services](#multifactor-authentication-services)
 
 New installations are considerably more involved than existing implementations because you are building the entire infrastructure.  Microsoft recommends you review the new installation baseline to validate your existing environment has all the needed configurations to support your hybrid certificate trust Windows Hello for Business deployment.  If your environment meets these needs, you can read the [Configure Directory Synchronization](hello-hybrid-key-trust-dirsync.md) section to prepare your Windows Hello for Business deployment by configuring directory synchronization.
 
