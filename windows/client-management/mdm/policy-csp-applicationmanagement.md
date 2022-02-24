@@ -834,6 +834,9 @@ Value type is string.
 <!--/Description-->
 <!--SupportedValues-->
 
+> [!NOTE]
+> The check for recurrence is done in a case sensitive manner. For instance the value needs to be “Daily” instead of “daily”. The wrong case will cause SmartRetry to fail to execute.
+
 <!--/SupportedValues-->
 <!--Example-->
 Sample SyncML:
@@ -853,7 +856,7 @@ Sample SyncML:
         </Meta> 
         <Data> 
           <ForceRestart StartDateTime="2018-03-28T22:21:52Z"  
-                        Recurrence="[none/daily/weekly/monthly]"  
+                        Recurrence="[None/Daily/Weekly/Monthly]"  
                         DayOfWeek=”1”  
                         DayOfMonth=”12”  
                         RunIfTaskIsMissed=”1”/> 
