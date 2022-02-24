@@ -10,7 +10,7 @@ ms.prod: w10
 ms.technology: windows
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 10/04/2021
+ms.date: 02/22/2022
 ---
 
 # Defender CSP
@@ -623,9 +623,9 @@ Valid values are:
 <a href="" id="configuration-hideexclusionsfromlocaladmins"></a>**Configuration/HideExclusionsFromLocalAdmins**<br>
 This policy setting controls whether or not exclusions are visible to Local Admins.  For end users (that are not Local Admins) exclusions are not visible, whether or not this setting is enabled.
 
-If you disable or do not configure this setting, Local Admins will be able to see exclusions in the Windows Security App and via PowerShell.
+If you disable or do not configure this setting, Local Admins will be able to see exclusions in the Windows Security App, in the registry, and via PowerShell.
 
-If you enable this setting, Local Admins will no longer be able to see the exclusion list in the Windows Security app or via PowerShell.
+If you enable this setting, Local Admins will no longer be able to see the exclusion list in the Windows Security app, in the registry, or via PowerShell.
 
 > [!NOTE]
 > Applying this setting will not remove exclusions, it will only prevent them from being visible to Local Admins. This is reflected in **Get-MpPreference**.
