@@ -21,9 +21,9 @@ The DMAcc configuration service provider allows an OMA Device Management (DM) ve
 
  
 
-For the DMAcc CSP, you cannot use the Replace command unless the node already exists.
+For the DMAcc CSP, you can't use the Replace command unless the node already exists.
 
-The following shows the DMAcc configuration service provider management object in tree format as used by OMA Device Management version 1.2. The OMA Client Provisioning protocol is not supported by this configuration service provider.
+The following example shows the DMAcc configuration service provider management object in tree format as used by OMA Device Management version 1.2. The OMA Client Provisioning protocol isn't supported by this configuration service provider.
 
 ```
 ./SyncML
@@ -103,7 +103,7 @@ Required.
 <a href="" id="appaddr-objectname"></a>**AppAddr/**<strong>*ObjectName*</strong>  
 Required. Defines the OMA DM server address. Only one server address can be configured.
 
-When mapping the [w7 APPLICATION configuration service provider](w7-application-csp.md) to the DMAcc Configuration Service Provider, the name of this element is "1". This is the first DM address encountered in the w7 APPLICATION configuration service provider, other DM accounts are ignored.
+When the [w7 APPLICATION configuration service provider](w7-application-csp.md) is being mapped to the DMAcc Configuration Service Provider, the name of this element is "1". This DM address is the first one encountered in the w7 APPLICATION configuration service provider; other DM accounts are ignored.
 
 <a href="" id="objectname-addr"></a>***ObjectName*/Addr**  
 Required. Specifies the address of the OMA DM account. The type of address stored is specified by the AddrType element.
@@ -125,10 +125,10 @@ Optional.
 <a href="" id="port-objectname"></a>**Port/**<strong>*ObjectName*</strong>  
 Required. Only one port number can be configured.
 
-When mapping the [w7 APPLICATION configuration service provider](w7-application-csp.md) to the DMAcc Configuration Service Provider, the name of this element is "1".
+When the [w7 APPLICATION configuration service provider](w7-application-csp.md) is being mapped to the DMAcc Configuration Service Provider, the name of this element is "1".
 
 <a href="" id="objectname-portnbr"></a>***ObjectName*/PortNbr**  
-Required. Specifies the port number of the OMA MD account address. This must be a decimal number that fits within the range of a 16-bit unsigned integer.
+Required. Specifies the port number of the OMA MD account address. This number must be a decimal number that fits within the range of a 16-bit unsigned integer.
 
 Value type is string. Supported operations are Add, Get, and Replace.
 
@@ -137,7 +137,7 @@ Optional. Specifies the application authentication preference.
 
 A value of "BASIC" specifies that the client attempts BASIC authentication. A value of "DIGEST' specifies that the client attempts MD5 authentication.
 
-If this value is empty, the client attempts to use the authentication mechanism negotiated in the previous session if one exists. If the value is empty, no previous session exists, and MD5 credentials exist, clients try MD5 authorization first. If the criteria are not met then the client tries BASIC authorization first.
+If this value is empty, the client attempts to use the authentication mechanism negotiated in the previous session if one exists. If the value is empty, no previous session exists, and MD5 credentials exist, clients try MD5 authorization first. If the criteria aren't met, then the client tries BASIC authorization first.
 
 Value type is string. Supported operations are Add, Get, and Replace.
 
@@ -147,7 +147,7 @@ Optional. Defines authentication settings.
 <a href="" id="appauth-objectname"></a>**AppAuth/**<strong>*ObjectName*</strong>  
 Required. Defines one set of authentication settings.
 
-When mapping the [w7 APPLICATION configuration service provider](w7-application-csp.md) to the DMAcc Configuration Service Provider, the name of this element is same name as the AAuthLevel value ("CLRED" or "SRVCRED").
+When the [w7 APPLICATION configuration service provider](w7-application-csp.md) is being mapped to the DMAcc Configuration Service Provider, the name of this element is same name as the AAuthLevel value ("CLRED" or "SRVCRED").
 
 <a href="" id="objectname-aauthlevel"></a>***ObjectName*/AAuthlevel**  
 Required. Specifies the application authentication level.
@@ -176,7 +176,7 @@ Value type is string. Supported operations are Add and Replace.
 <a href="" id="objectname-aauthdata"></a>***ObjectName*/AAuthData**  
 Optional. Specifies the next nonce used for authentication.
 
-"Nonce" refers to a number used once. It is often a random or pseudo-random number issued in an authentication protocol to ensure that old communications cannot be reused in repeat attacks.
+"Nonce" refers to a number used once. It's often a random or pseudo-random number issued in an authentication protocol to ensure that old communications can't be reused in repeat attacks.
 
 Value type is binary. Supported operations are Add and Replace.
 
@@ -226,16 +226,16 @@ The default value is 86400000.
 Value type is integer. Supported operations are Add, Get, and Replace.
 
 <a href="" id="microsoft-protover"></a>**Microsoft/ProtoVer**  
-Optional. Specifies the OMA DM Protocol version that the server supports. There is no default value.
+Optional. Specifies the OMA DM Protocol version that the server supports. There's no default value.
 
-Valid values are "1.1" and "1.2". The protocol version set by this element will match the protocol version that the DM client reports to the server in SyncHdr in package 1. If this element is not specified when adding a DM server account, the latest DM protocol version that the client supports is used. Windows 10 clients support version 1.2.
+Valid values are "1.1" and "1.2". The protocol version set by this element will match the protocol version that the DM client reports to the server in SyncHdr in package 1. If this element isn't specified when adding a DM server account, the latest DM protocol version that the client supports is used. Windows 10 clients support version 1.2.
 
 Value type is string. Supported operations are Add, Get, and Replace.
 
 <a href="" id="microsoft-role"></a>**Microsoft/Role**  
 Required. Specifies the role mask that the OMA DM session runs with when it communicates with the server.
 
-If this parameter is not present, the DM session is given the role mask of the OMA DM session that the server created. The following list shows the valid security role masks and their values.
+If this parameter isn't present, the DM session is given the role mask of the OMA DM session that the server created. The following list shows the valid security role masks and their values.
 
 -   4 = SECROLE\_OPERATOR
 
@@ -245,7 +245,7 @@ If this parameter is not present, the DM session is given the role mask of the O
 
 -   128 = SECROLE\_OPERATOR\_TPS
 
-The acceptable access roles for this node cannot be more than the roles assigned to the DMAcc object.
+The acceptable access roles for this node can't be more than the roles assigned to the DMAcc object.
 
 Value type is integer. Supported operations are Get and Replace.
 
@@ -267,9 +267,9 @@ Value type is bool. Supported operations are Add, Get, and Replace.
 <a href="" id="microsoft-usenonceresync"></a>**Microsoft/UseNonceResync**  
 Optional. Specifies whether the OMA DM client should use the nonce resynchronization procedure if the server trigger notification fails authentication. The default is "FALSE".
 
-If the authentication fails because the server nonce does not match the server nonce that is stored on the device, then the device can use the backup nonce as the server nonce. For this procedure to be successful, if the device did not authenticate with the preconfigured nonce value, the server must then use the backup nonce when sending the signed server notification message.
+If the authentication fails because the server nonce doesn't match the server nonce that is stored on the device, then the device can use the backup nonce as the server nonce. For this procedure to be successful, if the device didn't authenticate with the preconfigured nonce value, the server must then use the backup nonce when sending the signed server notification message.
 
-The default value of "FALSE" specifies that the client does not try to authenticate the notification with the backup server nonce if authentication to the stored nonce fails. A value of "TRUE" specifies that the client initiates a DM session if the backup server nonce is received after authentication failed.
+The default value of "FALSE" specifies that the client doesn't try to authenticate the notification with the backup server nonce if authentication to the stored nonce fails. A value of "TRUE" specifies that the client initiates a DM session if the backup server nonce is received after authentication failed.
 
 Value type is bool. Supported operations are Add, Get, and Replace.
 
@@ -284,19 +284,19 @@ Optional. Determines whether the OMA DM client should be launched when roaming.
 Value type is bool. Supported operations are Add, Get, and Replace.
 
 <a href="" id="sslclientcertsearchcriteria"></a>**SSLCLIENTCERTSEARCHCRITERIA**  
-Optional. The SSLCLIENTCERTSEARCHCRITERIA parameter is used to specify the client certificate search criteria. This parameter supports search by subject attribute and certificate stores. If any other criteria are provided, it is ignored.
+Optional. The SSLCLIENTCERTSEARCHCRITERIA parameter is used to specify the client certificate search criteria. This parameter supports search by subject attribute and certificate stores. If any other criteria are provided, it's ignored.
 
 The string is a concatenation of name/value pairs, each member of the pair delimited by the "&" character. The name and values are delimited by the "=" character. If there are multiple values, each value is delimited by the Unicode character "U+F000". If the name or value contains characters not in the UNRESERVED set (as specified in RFC2396), then those characters are URI-escaped per the RFC.
 
-The supported names are Subject and Stores; wildcard certificate search is not supported.
+The supported names are Subject and Stores; wildcard certificate search isn't supported.
 
-Stores specifies which certificate stores the DM client will search to find the SSL client certificate. The valid store value is My%5CUser. The store name is not case sensitive.
+Stores specifies which certificate stores the DM client will search to find the SSL client certificate. The valid store value is My%5CUser. The store name isn't case sensitive.
 
 > **Note**   %EF%80%80 is the UTF8-encoded character U+F000.
 
  
 
-Subject specifies the certificate to search for. For example, to specify that you want a certificate with a particular Subject attribute (“CN=Tester,O=Microsoft”), use the following:
+Subject specifies the certificate to search for. For example, to specify that you want a certificate with a particular Subject attribute (“CN=Tester,O=Microsoft”), use the following schema:
 
 ```xml
 <parm name="SSLCLIENTCERTSEARCHCRITERIA" 

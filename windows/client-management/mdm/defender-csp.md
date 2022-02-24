@@ -20,7 +20,7 @@ ms.date: 02/22/2022
 
 The Windows Defender configuration service provider is used to configure various Windows Defender actions across the enterprise.
 
-The following shows the Windows Defender configuration service provider in tree format.
+The following example shows the Windows Defender configuration service provider in tree format.
 ```
 ./Vendor/MSFT
 Defender
@@ -97,7 +97,7 @@ The data type is a string.
 Supported operation is Get.
 
 <a href="" id="detections-threatid-url"></a>**Detections/*ThreatId*/URL**  
-URL link for additional threat information.
+URL link for more threat information.
 
 The data type is a string.
 
@@ -255,9 +255,9 @@ Supported operation is Get.
 
 The Network Protection Service is a network filter that helps to protect you against web-based malicious threats, including phishing and malware. The Network Protection service contacts the SmartScreen URL reputation service to validate the safety of connections to web resources. 
 The acceptable values for this parameter are:
-- 0: Disabled. The Network Protection service will not block navigation to malicious websites, or contact the SmartScreen URL reputation service. It will still send connection metadata to the antimalware engine if behavior monitoring is enabled, to enhance AV Detections.
+- 0: Disabled. The Network Protection service won't block navigation to malicious websites, or contact the SmartScreen URL reputation service. It will still send connection metadata to the antimalware engine if behavior monitoring is enabled, to enhance AV Detections.
 - 1: Enabled. The Network Protection service will block connections to malicious websites based on URL Reputation from the SmartScreen URL reputation service.
-- 2: AuditMode. As above, but the Network Protection service will not block connections to malicious websites, but will instead log the access to the event log. 
+- 2: AuditMode. As above, but the Network Protection service won't block connections to malicious websites, but will instead log the access to the event log. 
 
 Accepted values: Disabled, Enabled, and AuditMode
 Position: Named
@@ -267,7 +267,7 @@ Accept wildcard characters: False
 
 <a href="" id="enablenetworkprotection-allownetworkprotectiondownlevel"></a>**EnableNetworkProtection/AllowNetworkProtectionDownLevel**
 
-By default, network protection is not allowed to be enabled on Windows versions before 1709, regardless of the setting of the EnableNetworkProtection configuration. Set this configuration to "$true" to override that behavior and allow Network Protection to be set to Enabled or Audit Mode. 
+By default, network protection isn't allowed to be enabled on Windows versions before 1709, regardless of the setting of the EnableNetworkProtection configuration. Set this configuration to "$true" to override that behavior and allow Network Protection to be set to Enabled or Audit Mode. 
 - Type: Boolean
 - Position: Named
 - Default value: False
@@ -276,7 +276,7 @@ By default, network protection is not allowed to be enabled on Windows versions 
 
 <a href="" id="enablenetworkprotection-allownetworkprotectiononwinserver"></a>**EnableNetworkProtection/AllowNetworkProtectionOnWinServer**
 
-By default, network protection is not allowed to be enabled on Windows Server, regardless of the setting of the EnableNetworkProtection configuration. Set this configuration to "$true" to override that behavior and allow Network Protection to be set to Enabled or Audit Mode.
+By default, network protection isn't allowed to be enabled on Windows Server, regardless of the setting of the EnableNetworkProtection configuration. Set this configuration to "$true" to override that behavior and allow Network Protection to be set to Enabled or Audit Mode.
 
 - Type: Boolean
 - Position: Named
@@ -306,7 +306,7 @@ Network Protection inspects UDP connections allowing us to find malicious DNS or
 
 <a href="" id="enablenetworkprotection-disableinboundconnectionfiltering"></a>**EnableNetworkProtection/DisableInboundConnectionFiltering**
 
-Network Protection inspects and can block both connections that originate from the host machine, as well as those that originates from outside the machine. To have network connection to inspect only outbound connections, set this configuration to "$true".
+Network Protection inspects and can block both connections that originate from the host machine, and those connections that originate from outside the machine. To have network connection to inspect only outbound connections, set this configuration to "$true".
 
 - Type: Boolean
 - Position: Named
@@ -316,7 +316,7 @@ Network Protection inspects and can block both connections that originate from t
 
 <a href="" id="enablenetworkprotection-enablednssinkhole"></a>**EnableNetworkProtection/EnableDnsSinkhole**
 
-Network Protection can inspect the DNS traffic of a machine and, in conjunction with behavior monitoring, detect and sink hole DNS exfiltration attempts and other DNS based malicious attacks. Set this configuration to "$true" to enable this feature.
+Network Protection can inspect the DNS traffic of a machine and, in conjunction with behavior monitoring, detect and sink hole DNS exfiltration attempts and other DNS-based malicious attacks. Set this configuration to "$true" to enable this feature.
 
 - Type: Boolean
 - Position: Named
@@ -326,7 +326,7 @@ Network Protection can inspect the DNS traffic of a machine and, in conjunction 
 
 <a href="" id="enablenetworkprotection-disablednsovertcpparsing"></a>**EnableNetworkProtection/DisableDnsOverTcpParsing**
 
-Network Protection inspects DNS traffic that occurs over a TCP channel, to provide metadata for Anti-malware Behavior Monitoring or to allow for DNS sink holing if the -EnableDnsSinkhole configuration is set. This can be disabled by setting this value to "$true".
+Network Protection inspects DNS traffic that occurs over a TCP channel, to provide metadata for Anti-malware Behavior Monitoring or to allow for DNS sink holing if the -EnableDnsSinkhole configuration is set. This attribute can be disabled by setting this value to "$true".
 
 - Type: Boolean
 - Position: Named
@@ -336,7 +336,7 @@ Network Protection inspects DNS traffic that occurs over a TCP channel, to provi
 
 <a href="" id="enablenetworkprotection-disablednsparsing"></a>**EnableNetworkProtection/DisableDnsParsing**
 
-Network Protection inspects DNS traffic that occurs over a UDP channel, to provide metadata for Anti-malware Behavior Monitoring or to allow for DNS sink holing if the -EnableDnsSinkhole configuration is set. This can be disabled by setting this value to "$true".
+Network Protection inspects DNS traffic that occurs over a UDP channel, to provide metadata for Anti-malware Behavior Monitoring or to allow for DNS sink holing if the -EnableDnsSinkhole configuration is set. This attribute can be disabled by setting this value to "$true".
 
 - Type: Boolean
 - Position: Named
@@ -390,7 +390,7 @@ An interior node to group information about Windows Defender health status.
 Supported operation is Get.
 
 <a href="" id="health-productstatus"></a>**Health/ProductStatus**  
-Added in Windows 10, version 1809. Provide the current state of the product. This is a bitmask flag value that can represent one or multiple product states from below list.
+Added in Windows 10, version 1809. Provide the current state of the product. This value is a bitmask flag value that can represent one or multiple product states from below list.
 
 The data type is integer. Supported operation is Get.
 
@@ -480,7 +480,7 @@ Supported operation is Get.
 <a href="" id="health-quickscanoverdue"></a>**Health/QuickScanOverdue**  
 Indicates whether a Windows Defender quick scan is overdue for the device.
 
-A Quick scan is overdue when a scheduled Quick scan did not complete successfully for 2 weeks and [catchup Quick scans](./policy-csp-defender.md#defender-disablecatchupquickscan) are disabled (default).
+A Quick scan is overdue when a scheduled Quick scan didn't complete successfully for 2 weeks and [catchup Quick scans](./policy-csp-defender.md#defender-disablecatchupquickscan) are disabled (default).
 
 The data type is a Boolean.
 
@@ -489,7 +489,7 @@ Supported operation is Get.
 <a href="" id="health-fullscanoverdue"></a>**Health/FullScanOverdue**  
 Indicates whether a Windows Defender full scan is overdue for the device.
 
-A Full scan is overdue when a scheduled Full scan did not complete successfully for 2 weeks and [catchup Full scans](./policy-csp-defender.md#defender-disablecatchupfullscan) are disabled (default).
+A Full scan is overdue when a scheduled Full scan didn't complete successfully for 2 weeks and [catchup Full scans](./policy-csp-defender.md#defender-disablecatchupfullscan) are disabled (default).
 
 The data type is a Boolean.
 
@@ -585,30 +585,30 @@ An interior node to group Windows Defender configuration information.
 Supported operation is Get.
 
 <a href="" id="configuration-tamperprotection"></a>**Configuration/TamperProtection**  
-Tamper protection helps protect important security features from unwanted changes and interference.  This includes real-time protection, behavior monitoring, and more. Accepts signed string to turn the feature on or off. Settings are configured with an MDM solution, such as Intune and is available in Windows 10 Enterprise E5 or equivalent subscriptions.
+Tamper protection helps protect important security features from unwanted changes and interference. This protection includes real-time protection, behavior monitoring, and more. Accepts signed string to turn the feature on or off. Settings are configured with an MDM solution, such as Intune and is available in Windows 10 Enterprise E5 or equivalent subscriptions.
 
-Send off blob to device to reset tamper protection state before setting this configuration to "not configured" or "unassigned" in Intune.
+Send off blob to device to reset the tamper protection state before setting this configuration to "not configured" or "unassigned" in Intune.
 
 The data type is a Signed blob.
 
 Supported operations are Add, Delete, Get, Replace.
 
 Intune tamper protection setting UX supports three states:  
-- Not configured (default): Does not have any impact on the default state of the device.
+- Not configured (default): Doesn't have any impact on the default state of the device.
 - Enabled: Enables the tamper protection feature.
 - Disabled: Turns off the tamper protection feature.
 
-When enabled or disabled exists on the client and admin moves the setting to not configured, it will not have any impact on the device state. To change the state to either enabled or disabled would require to be set explicitly.
+When enabled or disabled exists on the client and admin moves the setting to not configured, it won't have any impact on the device state. To change the state to either enabled or disabled would require to be set explicitly.
 
 <a href="" id="configuration-disablelocaladminmerge"></a>**Configuration/DisableLocalAdminMerge**<br>
 This policy setting controls whether or not complex list settings configured by a local administrator are merged with managed settings. This setting applies to lists such as threats and exclusions.
 
-If you disable or do not configure this setting, unique items defined in preference settings configured by the local administrator will be merged into the resulting effective policy. In the case of conflicts, management settings will override preference settings.
+If you disable or don't configure this setting, unique items defined in preference settings configured by the local administrator will be merged into the resulting effective policy. If conflicts occur, management settings will override preference settings.
 
 If you enable this setting, only items defined by management will be used in the resulting effective policy. Managed settings will override preference settings configured by the local administrator.
 
 > [!NOTE]
-> Applying this setting will not remove exclusions from the device registry, it will only prevent them from being applied/used. This is reflected in **Get-MpPreference**.
+> Applying this setting won't remove exclusions from the device registry, it will only prevent them from being applied/used. This is reflected in **Get-MpPreference**.
 
 Supported OS versions:  Windows 10
 
@@ -621,14 +621,14 @@ Valid values are:
 - 0 (default) – Disable.
 
 <a href="" id="configuration-hideexclusionsfromlocaladmins"></a>**Configuration/HideExclusionsFromLocalAdmins**<br>
-This policy setting controls whether or not exclusions are visible to Local Admins.  For end users (that are not Local Admins) exclusions are not visible, whether or not this setting is enabled.
+This policy setting controls whether or not exclusions are visible to Local Admins.  For end users (that aren't Local Admins) exclusions aren't visible, whether or not this setting is enabled.
 
-If you disable or do not configure this setting, Local Admins will be able to see exclusions in the Windows Security App, in the registry, and via PowerShell.
+If you disable or don't configure this setting, Local Admins will be able to see exclusions in the Windows Security App, in the registry, and via PowerShell.
 
 If you enable this setting, Local Admins will no longer be able to see the exclusion list in the Windows Security app, in the registry, or via PowerShell.
 
 > [!NOTE]
-> Applying this setting will not remove exclusions, it will only prevent them from being visible to Local Admins. This is reflected in **Get-MpPreference**.
+> Applying this setting won't remove exclusions, it will only prevent them from being visible to Local Admins. This is reflected in **Get-MpPreference**.
 
 Supported OS versions:  Windows 10
 
@@ -641,7 +641,7 @@ Valid values are:
 - 0 (default) – Disable.
 
 <a href="" id="configuration-disablecputhrottleonidlescans"></a>**Configuration/DisableCpuThrottleOnIdleScans**<br>	
-Indicates whether the CPU will be throttled for scheduled scans while the device is idle.  This feature is enabled by default and will not throttle the CPU for scheduled scans performed when the device is otherwise idle, regardless of what ScanAvgCPULoadFactor is set to. For all other scheduled scans this flag will have no impact and normal throttling will occur.	
+Indicates whether the CPU will be throttled for scheduled scans while the device is idle.  This feature is enabled by default and won't throttle the CPU for scheduled scans performed when the device is otherwise idle, regardless of what ScanAvgCPULoadFactor is set to. For all other scheduled scans, this flag will have no impact and normal throttling will occur.	
 
 The data type is integer.	
 
@@ -682,7 +682,7 @@ Supported operations are Add, Delete, Get, Replace.
 
 <a href="" id="configuration-enablefilehashcomputation"></a>**Configuration/EnableFileHashComputation**  
 Enables or disables file hash computation feature.
-When this feature is enabled Windows Defender will compute hashes for files it scans.
+When this feature is enabled, Windows Defender will compute hashes for files it scans.
 
 The data type is integer.
 
@@ -701,11 +701,11 @@ Supported operations are Add, Delete, Get, Replace.
 
 Intune Support log location setting UX supports three states:  
 
-- Not configured (default) - Does not have any impact on the default state of the device. 
+- Not configured (default) - Doesn't have any impact on the default state of the device. 
 - 1 - Enabled. Enables the Support log location feature. Requires admin to set custom file path.
 - 0 - Disabled. Turns off the Support log location feature. 
 
-When enabled or disabled exists on the client and admin moves the setting to not configured, it will not have any impact on the device state. To change the state to either enabled or disabled would require to be set explicitly.  
+When enabled or disabled exists on the client and admin moves the setting to be configured not , it won't have any impact on the device state. To change the state to either enabled or disabled would require to be set explicitly.  
 
 More details:  
 
@@ -725,7 +725,7 @@ Current Channel (Broad): Devices will be offered updates only after the gradual 
 
 Critical: Devices will be offered updates with a 48-hour delay. Suggested for critical environments only 
 
-If you disable or do not configure this policy, the device will stay up to date automatically during the gradual release cycle. Suitable for most devices.
+If you disable or don't configure this policy, the device will stay up to date automatically during the gradual release cycle. Suitable for most devices.
 
 The data type is integer.
 
@@ -758,7 +758,7 @@ Current Channel (Broad): Devices will be offered updates only after the gradual 
 
 Critical: Devices will be offered updates with a 48-hour delay. Suggested for critical environments only
 
-If you disable or do not configure this policy, the device will stay up to date automatically during the gradual release cycle. Suitable for most devices.
+If you disable or don't configure this policy, the device will stay up to date automatically during the gradual release cycle. Suitable for most devices.
 
 The data type is integer.
 
@@ -784,7 +784,7 @@ Current Channel (Staged): Devices will be offered updates after the release cycl
 
 Current Channel (Broad): Devices will be offered updates only after the gradual release cycle completes. Suggested to apply to a broad set of devices in your production population (~10-100%).
 
-If you disable or do not configure this policy, the device will stay up to date automatically during the daily release cycle. Suitable for most devices.
+If you disable or don't configure this policy, the device will stay up to date automatically during the daily release cycle. Suitable for most devices.
 
 The data type is integer.
 Supported operations are Add, Delete, Get, Replace.
@@ -801,12 +801,12 @@ More details:
 
 <a href="" id="configuration-disablegradualrelease"></a>**Configuration/DisableGradualRelease**
 Enable this policy to disable gradual rollout of monthly and daily Microsoft Defender updates.
-Devices will be offered all Microsoft Defender updates after the gradual release cycle completes. This is best for datacenters that only receive limited updates.
+Devices will be offered all Microsoft Defender updates after the gradual release cycle completes. This facility for devices is best for datacenters that only receive limited updates.
 
 > [!NOTE]
 > This setting applies to both monthly as well as daily Microsoft Defender updates and will override any previously configured channel selections for platform and engine updates.
 
-If you disable or do not configure this policy, the device will remain in Current Channel (Default) unless specified otherwise in specific channels for platform and engine updates. Stay up to date automatically during the gradual release cycle. Suitable for most devices.
+If you disable or don't configure this policy, the device will remain in Current Channel (Default) unless specified otherwise in specific channels for platform and engine updates. Stay up to date automatically during the gradual release cycle. Suitable for most devices.
 
 The data type is integer.
 

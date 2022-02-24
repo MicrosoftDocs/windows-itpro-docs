@@ -23,7 +23,7 @@ The CMPolicy configuration service provider defines rules that the Connection Ma
 
 Each policy entry identifies one or more applications in combination with a host pattern. The policy entry is assigned a list of connection details that Connection Manager uses to satisfy connection requests matching the application and host patterns. CMPolicy configuration service provider can have multiple policies
 
-**Policy Ordering**: There is no explicit ordering of policies. The general rule is that the most concrete or specific policy mappings take a higher precedence.
+**Policy Ordering**: There's no explicit ordering of policies. The general rule is that the most concrete or specific policy mappings take a higher precedence.
 
 **Default Policies**: Policies are applied in order of their scope with the most specific policies considered before the more general policies. The phone’s default behavior applies to all applications and all domains and is only used when no other, more specific policy is available. The default policy is to use any available Wi-Fi network first and then any available APN.
 
@@ -67,12 +67,12 @@ The following list describes the available mapping policy types:
 <a href="" id="host"></a>**Host**  
 Specifies the name of a host pattern. The host name is matched to the connection request to select the right policy to use.
 
-The host pattern can have two wild cards, "\*" and "+". The host pattern is not a URL pattern and there is no concept of transport or paths on the specific host. For example, the host pattern might be "\*.host\_name.com" to match any prefix to the host\_name.com domains. The host pattern will match "www.host\_name.com" and "mail.host\_name.com", but it will not match "host\_name.com".
+The host pattern can have two wild cards, "\*" and "+". The host pattern isn't a URL pattern and there's no concept of transport or paths on the specific host. For example, the host pattern might be "\*.host\_name.com" to match any prefix to the host\_name.com domains. The host pattern will match "www.host\_name.com" and "mail.host\_name.com", but it will not match "host\_name.com".
 
 <a href="" id="orderedconnections"></a>**OrderedConnections**  
 Specifies whether the list of connections is in preference order.
 
-A value of "0" specifies that the connections are not listed in order of preference. A value of "1" indicates that the listed connections are in order of preference.
+A value of "0" specifies that the connections aren't listed in order of preference. A value of "1" indicates that the listed connections are in order of preference.
 
 <a href="" id="connxxx"></a>**Conn**<strong>*XXX*</strong>  
 Enumerates the connections associated with the policy. Element names begin with "Conn" followed by three digits, which increment starting from "000". For example, a policy, which applied to five connections would have element entries named "Conn000", "Conn001", "Conn002", "Conn003", and "Conn004".

@@ -24,7 +24,7 @@ The CMPolicyEnterprise configuration service provider is used by the enterprise 
 
 Each policy entry identifies one or more applications in combination with a host pattern. The policy entry is assigned a list of connection details that Connection Manager uses to satisfy connection requests matching the application and host patterns. CMPolicyEnterprise configuration service provider can have multiple policies
 
-**Policy Ordering**: There is no explicit ordering of policies. The general rule is that the most concrete or specific policy mappings take a higher precedence.
+**Policy Ordering**: There's no explicit ordering of policies. The general rule is that the most concrete or specific policy mappings take a higher precedence.
 
 **Default Policies**: Policies are applied in order of their scope with the most specific policies considered before the more general policies. The phone’s default behavior applies to all applications and all domains and is only used when no other, more specific policy is available. The default policy is to use any available Wi-Fi network first and then any available APN.
 
@@ -67,15 +67,15 @@ The following list describes the available mapping policy types:
 <a href="" id="host"></a>**Host**  
 Specifies the name of a host pattern. The host name is matched to the connection request to select the right policy to use.
 
-The host pattern can have two wild cards, "\*" and "+". The host pattern is not a URL pattern and there is no concept of transport or paths on the specific host. For example, the host pattern might be "\*.host\_name.com" to match any prefix to the host\_name.com domains. The host pattern will match "www.host\_name.com" and "mail.host\_name.com", but it will not match "host\_name.com".
+The host pattern can have two wild cards, "\*" and "+". The host pattern isn't a URL pattern and there's no concept of transport or paths on the specific host. For example, the host pattern might be "\*.host\_name.com" to match any prefix to the host\_name.com domains. The host pattern will match "www.host\_name.com" and "mail.host\_name.com", but it will not match "host\_name.com".
 
 <a href="" id="orderedconnections"></a>**OrderedConnections**  
 Specifies whether the list of connections is in preference order.
 
-A value of "0" specifies that the connections are not listed in order of preference. A value of "1" indicates that the listed connections are in order of preference.
+A value of "0" specifies that the connections aren't listed in order of preference. A value of "1" indicates that the listed connections are in order of preference.
 
 <a href="" id="connxxx"></a>**Conn**<strong>*XXX*</strong>  
-Enumerates the connections associated with the policy. Element names begin with "Conn" followed by three digits which increment starting from "000". For example, a policy which applied to five connections would have element entries named "Conn000", "Conn001", "Conn002", "Conn003", and "Conn004".
+Enumerates the connections associated with the policy. Element names begin with "Conn" followed by three digits that increment starting from "000". For example, a policy applied to five connections would have element entries named "Conn000", "Conn001", "Conn002", "Conn003", and "Conn004".
 
 <a href="" id="connectionid"></a>**ConnectionID**  
 Specifies a unique identifier for a connection within a group of connections. The exact value is based on the Type parameter.
@@ -110,8 +110,8 @@ For `CMST_CONNECTION_NETWORK_TYPE`, specify the GUID for the desired network typ
 |HSPA HSUPA|{1536A1C6-A4AF-423C-8884-6BDDA3656F84}|
 |LTE|{B41CBF43-6994-46FF-9C2F-D6CA6D45889B}|
 |EHRPD|{7CFA04A5-0F3F-445C-88A4-C86ED2AD94EA}|
-|Ethernet 10Mbps|{97D3D1B3-854A-4C32-BD1C-C13069078370}|
-|Ethernet 100Mbps|{A8F4FE66-8D04-43F5-9DD2-2A85BD21029B}|
+|Ethernet 10 Mbps|{97D3D1B3-854A-4C32-BD1C-C13069078370}|
+|Ethernet 100 Mbps|{A8F4FE66-8D04-43F5-9DD2-2A85BD21029B}|
 |Ethernet Gbps|{556C1E6B-B8D4-448E-836D-9451BA4CCE75}|
 
 For `CMST_CONNECTION_DEVICE_TYPE`, specify the GUID for the desired device type. The curly brackets {} around the GUID are required. The following device types are available:

@@ -19,7 +19,7 @@ To help diagnose enrollment or device management issues in Windows 10 devices m
 
 ## Download the MDM Diagnostic Information log from Windows 10 PCs
 
-1. On your managed device go to **Settings** > **Accounts** > **Access work or school**.
+1. On your managed device, go to **Settings** > **Accounts** > **Access work or school**.
 1. Click your work or school account, then click **Info.**  
    ![Access work or school page in Settings.](images/diagnose-mdm-failures15.png)
 
@@ -88,7 +88,7 @@ You can open the log files (.evtx files) in the Event Viewer on a Windows 10 PC
 
 ## Collect logs remotely from Windows 10 PCs
 
-When the PC is already enrolled in MDM, you can remotely collect logs from the PC through the MDM channel if your MDM server supports this. The [DiagnosticLog CSP](diagnosticlog-csp.md) can be used to enable an event viewer channel by full name. Here are the Event Viewer names for the Admin and Debug channels:
+When the PC is already enrolled in MDM, you can remotely collect logs from the PC through the MDM channel if your MDM server supports this facility. The [DiagnosticLog CSP](diagnosticlog-csp.md) can be used to enable an event viewer channel by full name. Here are the Event Viewer names for the Admin and Debug channels:
 
 -   Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider%2FAdmin
 -   Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider%2FDebug
@@ -234,7 +234,7 @@ After the logs are collected on the device, you can retrieve the files through t
 
 ## View logs
 
-For best results, ensure that the PC or VM on which you are viewing logs matches the build of the OS from which the logs were collected.
+For best results, ensure that the PC or VM on which you're viewing logs matches the build of the OS from which the logs were collected.
 
 1.  Open eventvwr.msc.
 2.  Right-click on **Event Viewer(Local)** and select **Open Saved Log**.
@@ -256,7 +256,7 @@ For best results, ensure that the PC or VM on which you are viewing logs matches
 
     ![event filter for Device Management.](images/diagnose-mdm-failures13.png)
 
-7.  Now you are ready to start reviewing the logs.
+7.  Now you're ready to start reviewing the logs.
 
     ![event viewer review logs.](images/diagnose-mdm-failures14.png)
 

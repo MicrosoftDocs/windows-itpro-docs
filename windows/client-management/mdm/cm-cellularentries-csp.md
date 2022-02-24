@@ -18,7 +18,7 @@ The CM\_CellularEntries configuration service provider is used to configure the 
 
 This configuration service provider requires the ID\_CAP\_NETWORKING\_ADMIN capability to be accessed from a network configuration application.
 
-The following shows the CM\_CellularEntries configuration service provider management object in tree format as used by Open Mobile Alliance Client Provisioning (OMA CP). The OMA DM protocol is not supported with this configuration service provider.
+The following example shows the CM\_CellularEntries configuration service provider management object in tree format as used by Open Mobile Alliance Client Provisioning (OMA CP). The OMA DM protocol isn't supported with this configuration service provider.
 
 ```console
 CM_CellularEntries
@@ -56,9 +56,9 @@ CM_CellularEntries
 <a href="" id="alwayson"></a>**AlwaysOn**  
 <p>Type: Int. Specifies if the Connection Manager will automatically attempt to connect to the APN when a connection is available.
 
-<p>A value of &quot;0&quot; specifies that AlwaysOn is not supported, and the Connection Manager will only attempt to connect to the APN when an application requests the connection. This setting is recommended for applications that use a connection occasionally, for example, an APN that only controls MMS.
+<p>A value of &quot;0&quot; specifies that AlwaysOn isn't supported, and the Connection Manager will only attempt to connect to the APN when an application requests the connection. This setting is recommended for applications that use a connection occasionally, for example, an APN that only controls MMS.
 
-<p>A value of &quot;1&quot; specifies that AlwaysOn is supported, and the Connection Manager will automatically attempt to connect to the APN when it is available. This setting is recommended for general purpose Internet APNs.
+<p>A value of &quot;1&quot; specifies that AlwaysOn is supported, and the Connection Manager will automatically attempt to connect to the APN when it's available. This setting is recommended for general purpose Internet APNs.
 
 <p>There must be at least one AlwaysOn Internet connection provisioned for the mobile operator.
 
@@ -112,7 +112,7 @@ CM_CellularEntries
 
 <p> A value of &quot;0&quot; specifies that the connection can be used for any general Internet communications. A value of &quot;1&quot; specifies that the connection is only used if a mapping policy is present.
 
-<p> For example, if the multimedia messaging service (MMS) APN should not have any other traffic except MMS, you can configure a mapping policy that sends MMS traffic to this connection. Then, you set the value of UseRequiresMappingsPolicy to be equal to &quot;1&quot; and Connection Manager will only use the connection for MMS traffic. Without this, Connection Manager will try to use the connection for any general purpose Internet traffic.
+<p> For example, if the multimedia messaging service (MMS) APN shouldn't have any other traffic except MMS, you can configure a mapping policy that sends MMS traffic to this connection. Then, you set the value of UseRequiresMappingsPolicy to be equal to &quot;1&quot; and Connection Manager will only use the connection for MMS traffic. Without this, Connection Manager will try to use the connection for any general purpose Internet traffic.
 
 <a href="" id="version"></a>**Version**  
 <p> Type: Int. Specifies the XML version number and is used to verify that the XML is supported by Connection Manager&#39;s configuration service provider.
@@ -133,13 +133,13 @@ CM_CellularEntries
 -   5 - Roaming only.
 
 <a href="" id="oemconnectionid"></a>**OEMConnectionID**  
-<p> Optional. Type: GUID. Specifies a GUID to use to identify a specific connection in the modem. If a value is not specified, the default value is 00000000-0000-0000-0000-000000000000. This parameter is only used on LTE devices.
+<p> Optional. Type: GUID. Specifies a GUID to use to identify a specific connection in the modem. If a value isn't specified, the default value is 00000000-0000-0000-0000-000000000000. This parameter is only used on LTE devices.
 
 <a href="" id="apnid"></a>**ApnId**  
-<p> Optional. Type: Int. Specifies the purpose of the APN. If a value is not specified, the default value is &quot;0&quot; (none). This parameter is only used on LTE devices.
+<p> Optional. Type: Int. Specifies the purpose of the APN. If a value isn't specified, the default value is &quot;0&quot; (none). This parameter is only used on LTE devices.
 
 <a href="" id="iptype"></a>**IPType**  
-<p> Optional. Type: String. Specifies the network protocol of the connection. Available values are &quot;IPv4&quot;, &quot;IPv6&quot;, &quot;IPv4v6&quot;, and &quot;IPv4v6xlat&quot;. If a value is not specified, the default value is &quot;IPv4&quot;.
+<p> Optional. Type: String. Specifies the network protocol of the connection. Available values are &quot;IPv4&quot;, &quot;IPv6&quot;, &quot;IPv4v6&quot;, and &quot;IPv4v6xlat&quot;. If a value isn't specified, the default value is &quot;IPv4&quot;.
 
 > [!WARNING]
 > Do not use IPv6 or IPv4v6xlat on a device or network that does not support IPv6. Data functionality will not work. In addition, the device will not be able to connect to a roaming network that does not support IPv6 unless you configure roaming connections with an IPType of IPv4v6.
@@ -147,9 +147,9 @@ CM_CellularEntries
  
 
 <a href="" id="exemptfromdisablepolicy"></a>**ExemptFromDisablePolicy**  
-<p> Added back in Windows 10, version 1511. Optional. Type: Int. This should only be specified for special purpose connections whose applications directly manage their disable state (such as MMS). A value of &quot;0&quot; specifies that the connection is subject to the disable policy used by general purpose connections (not exempt). A value of &quot;1&quot; specifies that the connection is exempt. If a value is not specified, the default value is &quot;0&quot; (not exempt).
+<p> Added back in Windows 10, version 1511. Optional. Type: Int. This value should only be specified for special purpose connections whose applications directly manage their disable state (such as MMS). A value of &quot;0&quot; specifies that the connection is subject to the disable policy used by general purpose connections (not exempt). A value of &quot;1&quot; specifies that the connection is exempt. If a value isn't specified, the default value is &quot;0&quot; (not exempt).
 
-<p> To allow MMS when data is set to OFF, set both ExemptFromDisablePolicy and UseRequiresMappingsPolicy to &quot;1&quot;. This indicates that the connection is a dedicated MMS connection and that it should not be disabled when all other connections are disabled. As a result, MMS can be sent and received when data is set to OFF. Note that sending MMS while roaming is still not allowed.
+<p> To allow MMS when data is set to OFF, set both ExemptFromDisablePolicy and UseRequiresMappingsPolicy to &quot;1&quot;. These settings indicates that the connection is a dedicated MMS connection and that it shouldn't be disabled when all other connections are disabled. As a result, MMS can be sent and received when data is set to OFF. Sending MMS while roaming is still not allowed.
 
 > [!IMPORTANT]
 > Do not set ExemptFromDisablePolicy to "1", ExemptFromRoaming to "1", or UseRequiresMappingsPolicy to "1" for general purpose connections.
@@ -162,16 +162,16 @@ CM_CellularEntries
  
 
 <a href="" id="exemptfromroaming"></a>**ExemptFromRoaming**  
-<p> Added back in Windows 10, version 1511. Optional. Type: Int. This should be specified only for special purpose connections whose applications directly manage their roaming state. It should never be used with general purpose connections. A value of &quot;0&quot; specifies that the connection is subject to the roaming policy (not exempt). A value of &quot;1&quot; specifies that the connection is exempt (unaffected by the roaming policy). If a value is not specified, the default value is &quot;0&quot; (not exempt).
+<p> Added back in Windows 10, version 1511. Optional. Type: Int. This value should be specified only for special purpose connections whose applications directly manage their roaming state. It should never be used with general purpose connections. A value of &quot;0&quot; specifies that the connection is subject to the roaming policy (not exempt). A value of &quot;1&quot; specifies that the connection is exempt (unaffected by the roaming policy). If a value isn't specified, the default value is &quot;0&quot; (not exempt).
 
 <a href="" id="tetheringnai"></a>**TetheringNAI**  
-<p> Optional. Type: Int. CDMA only. Specifies if the connection is a tethering connection. A value of &quot;0&quot; specifies that the connection is not a tethering connection. A value of &quot;1&quot; specifies that the connection is a tethering connection. If a value is not specified, the default value is &quot;0&quot;.
+<p> Optional. Type: Int. CDMA only. Specifies if the connection is a tethering connection. A value of &quot;0&quot; specifies that the connection isn't a tethering connection. A value of &quot;1&quot; specifies that the connection is a tethering connection. If a value isn't specified, the default value is &quot;0&quot;.
 
 <a href="" id="idledisconnecttimeout"></a>**IdleDisconnectTimeout**  
 <p> Optional. Type: Int. Specifies how long an on-demand connection can be unused before Connection Manager tears the connection down. This value is specified in seconds. Valid value range is 5 to 60 seconds. If not specified, the default is 30 seconds.
 
 > [!IMPORTANT]
-> <p> You must specify the IdleDisconnectTimeout value when updating an on-demand connection to ensure that the desired value is still configured. If it is not specified, the default value of 30 seconds may be used.
+> <p> You must specify the IdleDisconnectTimeout value when updating an on-demand connection to ensure that the desired value is still configured. If it isn't specified, the default value of 30 seconds may be used.
 
 
 > [!NOTE]
