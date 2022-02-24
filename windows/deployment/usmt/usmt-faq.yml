@@ -12,8 +12,7 @@ metadata:
   audience: itpro
   author: greg-lindsay
   ms.date: 04/19/2017
-  ms.topic: article
-    
+  ms.topic: faq
 title: Frequently Asked Questions
 summary: |
   The following sections provide frequently asked questions and recommended solutions for migrations using User State Migration Tool (USMT) 10.0.
