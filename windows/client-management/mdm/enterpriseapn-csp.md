@@ -19,7 +19,7 @@ The EnterpriseAPN configuration service provider (CSP) is used by the enterprise
 > [!Note]
 > Starting in Windows 10, version 1703 the EnterpriseAPN CSP is supported in Windows 10 Home, Pro, Enterprise, and Education editions.
 
-The following shows the EnterpriseAPN configuration service provider in tree format.
+The following example shows the EnterpriseAPN configuration service provider in tree format.
 ```
 ./Vendor/MSFT
 EnterpriseAPN
@@ -52,7 +52,7 @@ EnterpriseAPN
 <p>Supported operations are Add, Get, Delete, and Replace.</p>
 
 <a href="" id="enterpriseapn-connectionname-iptype"></a>**EnterpriseAPN/*ConnectionName*/IPType**  
-<p>This value can be one of the following:</p>
+<p>This value can be one of the following values:</p>
 
 -   IPv4 - only IPV4 connection type
 -   IPv6 - only IPv6 connection type
@@ -67,12 +67,12 @@ EnterpriseAPN
 <p>Supported operations are Add, Get, Delete, and Replace.</p>
 
 <a href="" id="enterpriseapn-connectionname-classid"></a>**EnterpriseAPN/*ConnectionName*/ClassId**  
-<p>GUID that defines the APN class to the modem. This is the same as the OEMConnectionId in CM_CellularEntries CSP. Normally this setting is not present. It is only required when IsAttachAPN is true and the attach APN is not only used as the Internet APN.</p>
+<p>GUID that defines the APN class to the modem. This GUID is the same as the OEMConnectionId in CM_CellularEntries CSP. Normally this setting isn't present. It's only required when IsAttachAPN is true and the attach APN isn't only used as the Internet APN.</p>
 
 <p>Supported operations are Add, Get, Delete, and Replace.</p>
 
 <a href="" id="enterpriseapn-connectionname-authtype"></a>**EnterpriseAPN/*ConnectionName*/AuthType**  
-<p>Authentication type. This value can be one of the following:</p>
+<p>Authentication type. This value can be one of the following values:</p>
 
 -   None (default)
 -   Auto
@@ -93,7 +93,7 @@ EnterpriseAPN
 <p>Supported operations are Add, Get, Delete, and Replace.</p>
 
 <a href="" id="enterpriseapn-connectionname-iccid"></a>**EnterpriseAPN/*ConnectionName*/IccId**  
-<p>Integrated Circuit Card ID (ICCID) associated with the cellular connection profile. If this node is not present, the connection is created on a single-slot device using the ICCID of the UICC and on a dual-slot device using the ICCID of the UICC that is active for data.</p>
+<p>Integrated Circuit Card ID (ICCID) associated with the cellular connection profile. If this node isn't present, the connection is created on a single-slot device using the ICCID of the UICC and on a dual-slot device using the ICCID of the UICC that is active for data.</p>
 
 <p>Supported operations are Add, Get, Delete, and Replace.</p>
 
