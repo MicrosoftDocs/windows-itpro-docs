@@ -401,7 +401,7 @@ Web Sign-in is only supported on Azure AD Joined PCs.
 <!--/Scope-->
 <!--Description-->
 > [!Warning]
-> The Web Sign-in feature is in private preview mode only and not meant or recommended for production purposes. This setting is not currenlty supported at this time. 
+> The Web Sign-in feature is in private preview mode only and not meant or recommended for production purposes. This setting is not currently supported at this time. 
 
 This policy is intended for use on Shared PCs to enable a quick first sign-in experience for a user. It works by automatically connecting new non-admin Azure Active Directory (Azure AD) accounts to the pre-configured candidate local accounts.
 
@@ -456,7 +456,7 @@ Value type is integer. Supported values:
 <!--/Scope-->
 <!--Description-->
 > [!Warning]
-> The Web Sign-in feature is in private preview mode only and not meant or recommended for production purposes. This setting is not currenlty supported at this time. 
+> The Web Sign-in feature is in private preview mode only and not meant or recommended for production purposes. This setting is not currently supported at this time. 
 
 "Web Sign-in" is a new way of signing into a Windows PC. It enables Windows logon support for new Azure AD credentials, like Temporary Access Pass.
 
