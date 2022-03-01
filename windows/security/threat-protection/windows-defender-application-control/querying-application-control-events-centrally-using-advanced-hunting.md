@@ -14,7 +14,7 @@ author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 12/06/2018
+ms.date: 03/01/2022
 ms.technology: windows-sec
 ---
 
@@ -70,9 +70,9 @@ ActionType startswith "AppControl"
 The query results can be used for several important functions related to managing WDAC including:
 
 - Assessing the impact of deploying policies in audit mode
-  Since applications still run in audit mode, it's an ideal way to see the impact and correctness of the rules included in the policy. Integrating the generated events with advanced hunting makes it much easier to have broad deployments of audit mode policies and see how the included rules would influence those systems in real-world usage. This audit mode data will help streamline the transition to using policies in enforced mode.
+  Since applications still run in audit mode, it's an ideal way to see the impact and correctness of the rules included in the policy. Integrating the generated events with Advanced Hunting makes it much easier to have broad deployments of audit mode policies and see how the included rules would influence those systems in real world usage. This audit mode data will help streamline the transition to using policies in enforced mode.
 - Monitoring blocks from policies in enforced mode
-  Policies deployed in enforced mode may block executables or scripts that fail to meet any of the included allow rules. Legitimate new applications and updates or potentially unwanted or malicious software could be blocked. In either case, the advanced hunting queries report the blocks for further investigation.
+  Policies deployed in enforced mode may block executables or scripts that fail to meet any of the included allow rules. Legitimate new applications and updates or potentially unwanted or malicious software could be blocked. In either case, the Advanced hunting queries report the blocks for further investigation.
 
 
 Query Example #2: Query to determine audit blocks in the past seven days
