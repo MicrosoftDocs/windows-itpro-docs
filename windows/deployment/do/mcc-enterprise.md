@@ -42,7 +42,7 @@ For more details information on Azure IoT Edge, please see the [Azure IoT Edge d
 
 1. The Azure Management Portal used to create the MCC nodes.
 2. The MCC container deployed and provisioned to the server using the installer provided in the portal.
-3. Set the client policy in your management solution to point to the IP Address/FQDN of the cache server
+3. Set the client policy in your management solution to point to the IP address/FQDN of the cache server
 4. Microsoft end-user devices make the range requests for content from the MCC node.
 5. MCC node pulls content from the CDN, seeds its local cache stored on disk and delivers the content to the client.
 6. Subsequent requests from end-user devices for content will now come from cache.
