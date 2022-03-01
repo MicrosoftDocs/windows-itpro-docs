@@ -209,7 +209,7 @@ Creating a MCC node is a multi-step process and the first step is to access the 
 If there are errors, the form will provide guidance on how to correct the
 errors.
 
-Once the MCC node has been created, the installer instructions will be exposed. More details on the installer instructions will be addressed later in this doc can be found at the [Install Connected Cache](#install-microsoft-connected-cache-on-windows) section.
+Once the MCC node has been created, the installer instructions will be exposed. More details on the installer instructions will be addressed later in this doc can be found at the [Install Connected Cache](#install-mcc-on-windows) section.
 
 ![eMCC emg10](images/emcc10.png)
 
@@ -323,11 +323,10 @@ Set -VMProcessor -VMName **\<"VM name"\>** -ExposeVirtualizationExtensions \$tru
 
   ![eMCC emg16](images/emcc16.png)
 
-    **NOTE:**
 
-    Choosing a dynamic IP address will allow your DHCP server to assign the IP address to the MCC. Every time the MCC restarts, there will be a new IP address assigned.
-
-    We recommend using a static IP address so you do not have to change this value in your management solution for every MCC restart.**
+ > [!NOTE]
+ > Choosing a dynamic IP address might assign a different IP address when the MCC restarts.
+ > A static IP address is recommended so you do not have to change this value in your management solution when MCC restarts.
 
 6.  Choose where you would like to download, install, and store the virtual hard disk for EFLOW. You will also be asked how much memory, storage, and cores you would like to allocate for the VM. In this example, we chose the default values for all prompts
 
@@ -343,17 +342,11 @@ Set -VMProcessor -VMName **\<"VM name"\>** -ExposeVirtualizationExtensions \$tru
   ![eMCC emg18](images/emcc18.png)
   ![eMCC emg19](images/emcc19.png)
 
-
-
 9.  Your MCC deployment is now complete
 
     1.  If you do not see any errors, please continue to the next section to validate your MCC deployment
-
-    2.  After validating your MCC is properly functional, please visit your management solution (e.g., Intune) to set the cache host policy to the IP address of your MCC.
-
-        [Delivery Optimization settings for Windows 10 in Microsoft Intune](/mem/intune/configuration/delivery-optimization-windows)
-
-    3.  If you had errors during your deployment, visit the Troubleshooting section in this document
+    2.  After validating your MCC is properly functional, please review your management solution documentation, such as [Intune](/mem/intune/configuration/delivery-optimization-windows), to set the cache host policy to the IP address of your MCC.
+    3.  If you had errors during your deployment, visit the [Troubleshooting](#troubleshooting) section in this document
 
 ## Verify proper functioning MCC server
 
@@ -362,7 +355,6 @@ Set -VMProcessor -VMName **\<"VM name"\>** -ExposeVirtualizationExtensions \$tru
 Let’s connect to the EFLOW VM and check if MCC is properly running
 
 1.  Open PowerShell as an Administrator
-
 2.  Enter the following commands:
 
 ```
@@ -412,16 +404,13 @@ If you are seeing errors similar to this: “The term ‘Get-Something’ is not
 
 1.  Ensure you are running Windows PowerShell version 5.x.
 
-2.  Run \$PSVersionTable and ensure you’re running version 5.x and **NOT**
-    version 6 or 7
+2.  Run \$PSVersionTable and ensure you’re running version 5.x and *not version 6 or 7*.
 
 3.  Ensure you have Hyper-V enabled:
 
-    **Windows 10:** [Enable Hyper-V on Windows 10 \| Microsoft
-    Docs](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
+    **Windows 10:** [Enable Hyper-V on Windows 10](/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
 
-    **Windows Server:** [Install the Hyper-V role on Windows Server \| Microsoft
-    Docs](https://docs.microsoft.com/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server)
+    **Windows Server:** [Install the Hyper-V role on Windows Server](/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server)
 
 ##### Verify Running MCC Container
 
