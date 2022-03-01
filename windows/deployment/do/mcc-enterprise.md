@@ -38,7 +38,7 @@ Figure 1 below describes the architecture of MCC built using IoT Edge.
 
 For more details information on Azure IoT Edge, please see the [Azure IoT Edge documentation](/azure/iot-edge/about-iot-edge).
 
-## How Microsoft Connected Cache Works
+## How MCC works
 
 1. The Azure Management Portal used to create the MCC nodes.
 2. The MCC container deployed and provisioned to the server using the installer provided in the portal.
@@ -52,7 +52,7 @@ For more details information on Azure IoT Edge, please see the [Azure IoT Edge d
 
 Figure 1: Each number in the diagram corresponds to the steps above
 
-## Enterprise Requirements for Microsoft Connected Cache
+## Enterprise requirements for MCC
 
 1. **Azure subscription** – MCC management portal is hosted within Azure and is used to create the Connected Cache [Azure resource](/azure/cloud-adoption-framework/govern/resource-consistency/resource-access-management.md) and IoT Hub resource – both are free services.
 
@@ -84,7 +84,7 @@ Networking support:
 |Memory | 4GB | 8GB |
 |Cores | 4 | 8  |
 
-## Steps to Set Up Microsoft Connected Cache
+## Steps to set up MCC
 
 Summary of steps required to deploy MCC to your server:
 
@@ -124,7 +124,7 @@ Microsoft**](mailto:mccforenterprise@microsoft.com?subject=[MCC%20for%20Enterpri
 **and provide this information if you have not already. You will not be able to
 proceed if you skip this step.**
 
-## Create the Microsoft Connected Cache Resource in Azure
+## Create the MCC resource in Azure
 
 The MCC Azure management portal is used to create and manage MCC nodes. An Azure Subscription ID is used to grant access to the preview and to create the MCC resource in Azure and Cache nodes.
 
@@ -190,7 +190,7 @@ The MCC Azure management portal is used to create and manage MCC nodes. An Azure
     ![eMCC emg07](images/emcc07.png)
 
 
-## Create a Microsoft Connected Cache Node in Azure
+## Create an MCC node in Azure
 
 Creating a MCC node is a multi-step process and the first
 step is to access the MCC private preview management
@@ -233,7 +233,7 @@ Cache](#install-microsoft-connected-cache-on-windows) section.
 
 
 
-### Edit Cache Node Information
+### Edit cache node information
 
 Cache nodes can be deleted here by clicking the check box to the left of a Cache
 Node Name and then clicking the delete toolbar item. Be aware that if a cache
@@ -243,7 +243,7 @@ information related to the cache node.
 
 
 
-## Install Microsoft Connected Cache on Windows
+## Install MCC on Windows
 
 Installing MCC on your Windows machine is a
 straightforward process. A PowerShell script performs the following tasks:
@@ -299,7 +299,7 @@ Docs](https://docs.microsoft.com/windows-server/virtualization/hyper-v/get-start
 **DO NOT** use PowerShell ISE, PowerShell 6.x, or PowerShell 7.x. Only Windows
 PowerShell version 5.x is supported.
 
-### If you are installing MCC on a **local** Virtual Machine:
+### If you are installing MCC on a **local** virtual machine:
 
 1. Enable Nested Virtualization
 
@@ -311,7 +311,7 @@ Set -VMProcessor -VMName **\<"VM name"\>** -ExposeVirtualizationExtensions
   Get-VMNetworkAdapter -VMName **\<"VM name"\>**\| Set-VMNetworkAdapter
 \-MacAddressSpoofing On
 
-  **Virtual Machine should be in the OFF state while enabling Nested Virtualization and Mac Spoofing**
+  **Virtual machine should be in the OFF state while enabling Nested Virtualization and Mac Spoofing**
 
 3.  Set the execution policy
 
@@ -433,9 +433,7 @@ Set -VMProcessor -VMName **\<"VM name"\>** -ExposeVirtualizationExtensions
     3.  If you had errors during your deployment, visit the Troubleshooting
         section in this document
 
-## Verify Proper Functioning Microsoft Connected Cache Server
-
-### 
+## Verify proper functioning MCC server
 
 ### Verify Client Side
 
@@ -458,9 +456,7 @@ You should see MCC, edgeAgent, and edgeHub running. If you see edgeAgent or
 edgeHub but not MCC, please try this command in a few minutes. The MCC container
 can take a few minutes to deploy
 
-### 
-
-### Verify Server Side
+### Verify server side
 
 For a validation of properly functioning MCC, execute the
 following command in the EFLOW VM or any device in the network. Replace
@@ -487,8 +483,6 @@ If the test fails, see the common issues section for more information.
 
 ## Intune (or other management software) configuration for MCC
 
-## 
-
 Example of setting the cache host policy to the MCC’s IP address / FQDN:
 
 
@@ -496,7 +490,7 @@ Example of setting the cache host policy to the MCC’s IP address / FQDN:
 
 ## Common Issues
 
-##### PowerShell Issues
+##### PowerShell issues
 
 If you are seeing errors similar to this: “The term ‘Get-Something’ is not
 recognized as the name of a cmdlet, function, script file, or operable program.”
@@ -514,7 +508,7 @@ recognized as the name of a cmdlet, function, script file, or operable program.�
     **Windows Server:** [Install the Hyper-V role on Windows Server \| Microsoft
     Docs](https://docs.microsoft.com/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server)
 
-##### Verify Running Microsoft Connected Cache Container
+##### Verify Running MCC Container
 
 Connect to the Connected Cache server and check the list of running IoT Edge
 modules using the following commands:
@@ -576,7 +570,7 @@ To run this script:
     along with any other warnings you saw will be helpful during out debugging
     process.
 
-## Updating Microsoft Connected Cache
+## Update MCC
 
 Throughout the private preview phase, we will send you security and feature
 updates for MCC. Please follow these steps to perform the update.
@@ -591,7 +585,7 @@ For example:
 ```
 # .\updatemcc.ps1 version="msconnectedcacheprod.azurecr.io/mcc/linux/iot/mcc-ubuntu-iot-amd64:1.2.1.659" tenantid="72f988bf-86f1-41af-91ab-2d7cd011db47" customerid="99d897gg-86f1-41af-91ab-4jau6ske0sdf" cachenodeid=" cd01sdfh-435n-0das-56gh90dfrt67 " customerkey="h90d234f-vbnm-lk43-0742khsd45hj”
 ```
-## Uninstalling Microsoft Connected Cache
+## Uninstall MCC
 
 Please contact the MCC Team before uninstalling to let us know if you are facing
 issues.
@@ -645,11 +639,11 @@ YouTube](https://www.youtube.com/watch?v=pgqVCg6cxVU&ab_channel=MicrosoftIoTDeve
 
 ## Routing local Windows Clients to an MCC
 
-##### Get the IP address of your Microsoft Connected Cache using ifconfig
+### Get the IP address of your MCC using ifconfig
 
 There are multiple methods that can be used to apply a policy to PCs that should participate in downloading from the MCC.
 
-##### Registry Key
+### Registry Key
 
 You can either set your MCC IP address or FQDN using:
 
