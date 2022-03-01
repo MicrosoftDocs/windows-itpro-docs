@@ -181,14 +181,11 @@ The MCC Azure management portal is used to create and manage MCC nodes. An Azure
 
 ## Create an MCC node in Azure
 
-Creating a MCC node is a multi-step process and the first
-step is to access the MCC private preview management
-portal.
+Creating a MCC node is a multi-step process and the first step is to access the MCC private preview management portal.
 
 1.  After the successful resource creation click on the "Go to resource".
 
-2.  Under Cache Node Management section on the leftmost panel, click on Cache
-    Nodes.
+2.  Under Cache Node Management section on the leftmost panel, click on Cache Nodes.
 
     ![eMCC emg08](images/emcc08.png)
 
@@ -198,8 +195,7 @@ portal.
     ![eMCC emg09](images/emcc09.png)
 
 
-4.  Clicking the Create Cache Node button will open the Create Cache Node page,
-    Cache Node Name is the only field required for cache node creation.
+4.  Clicking the Create Cache Node button will open the Create Cache Node page, Cache Node Name is the only field required for cache node creation.
 
 | **Field Name**      | **Expected Value**                         | **Description**                                                                                                                      |
 |---------------------|--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
@@ -207,30 +203,21 @@ portal.
 
 5.  Enter the information for the Cache Node and click on the Create button.
 
-![eMCC emg10](images/emcc09.5.png)
+![eMCC emg9.5](images/emcc09.5.png)
 
 
 If there are errors, the form will provide guidance on how to correct the
 errors.
 
-Once the MCC node has been created, the installer
-instructions will be exposed. More details on the installer instructions will be
-addressed later in this doc can be found at the [Install Connected
-Cache](#install-microsoft-connected-cache-on-windows) section.
+Once the MCC node has been created, the installer instructions will be exposed. More details on the installer instructions will be addressed later in this doc can be found at the [Install Connected Cache](#install-microsoft-connected-cache-on-windows) section.
 
 ![eMCC emg10](images/emcc10.png)
 
-
-
 ### Edit cache node information
 
-Cache nodes can be deleted here by clicking the check box to the left of a Cache
-Node Name and then clicking the delete toolbar item. Be aware that if a cache
-node is deleted, there is no way to recover the cache node or any of the
-information related to the cache node.
+Cache nodes can be deleted here by clicking the check box to the left of a Cache Node Name and then clicking the delete toolbar item. Be aware that if a cache node is deleted, there is no way to recover the cache node or any of the information related to the cache node.
+
 ![eMCC emg11](images/emcc11.png)
-
-
 
 ## Install MCC on Windows
 
@@ -250,8 +237,7 @@ straightforward process. A PowerShell script performs the following tasks:
 
 ### Run the installer
 
-1.  Download and unzip mccinstaller.zip from the create cache node page or cache
-    node configuration page which contains the necessary installation files
+1.  Download and unzip mccinstaller.zip from the create cache node page or cache node configuration page which contains the necessary installation files
 
   ![eMCC emg12](images/emcc12.png)
 
@@ -303,7 +289,6 @@ Set -VMProcessor -VMName **\<"VM name"\>** -ExposeVirtualizationExtensions \$tru
 
 4.  Copy the command from the portal and run it in Windows PowerShell
 
-
     ![eMCC emg13](images/emcc13.png)
 
     **NOTE:**
@@ -326,17 +311,17 @@ Set -VMProcessor -VMName **\<"VM name"\>** -ExposeVirtualizationExtensions \$tru
     If you restarted your computer after creating a switch, start from Step 2 above and skip step 5.
 
 
-![eMCC emg14](images/emcc14.png)
+  ![eMCC emg14](images/emcc14.png)
 
 4.  Re-run the script after the restart. This time, select “No” when asked to create a new switch. Enter the number corresponding to the switch you previously created.
 
 
-![eMCC emg15](images/emcc15.png)
+  ![eMCC emg15](images/emcc15.png)
 
 5.  Decide whether you would like to use dynamic or static address for the Eflow VM
 
 
-![eMCC emg16](images/emcc16.png)
+  ![eMCC emg16](images/emcc16.png)
 
     **NOTE:**
 
@@ -349,14 +334,14 @@ Set -VMProcessor -VMName **\<"VM name"\>** -ExposeVirtualizationExtensions \$tru
 7.  Follow the Azure Device Login link and sign into the Azure Portal
 
 
-![eMCC emg17](images/emcc17.png)
+  ![eMCC emg17](images/emcc17.png)
 
 8.  If this is your first MCC deployment, please select ‘n’ so that we can create a new IoT Hub. If you have already configured MCC before, we want to group your MCCs in the same IoT Hub, select “y”.
 
     1.  You will be shown a list of existing IoT Hubs in your Azure Subscription, enter the number corresponding to the IoT Hub to select it. (You will likely have only 1 IoT Hub in your subscription, in which case you want to enter “1”)
 
-![eMCC emg18](images/emcc18.png)
-![eMCC emg19](images/emcc19.png)
+  ![eMCC emg18](images/emcc18.png)
+  ![eMCC emg19](images/emcc19.png)
 
 
 
@@ -380,12 +365,11 @@ Let’s connect to the EFLOW VM and check if MCC is properly running
 
 2.  Enter the following commands:
 
-    Connect-EflowVm
-
-    sudo -s
-
-    iotedge list
-
+```
+Connect-EflowVm
+sudo -s
+iotedge list
+```
 
 ![eMCC emg20](images/emcc20.png)
 
@@ -395,8 +379,9 @@ You should see MCC, edgeAgent, and edgeHub running. If you see edgeAgent or edge
 
 For a validation of properly functioning MCC, execute the following command in the EFLOW VM or any device in the network. Replace \<CacheServerIP\> with the IP address of the cache server.
 
-wget
-[http://\<CacheServerIP\>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com]()
+```
+wget [http://\<CacheServerIP\>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com]()
+```
 
 A successful test result will look like this:
 
