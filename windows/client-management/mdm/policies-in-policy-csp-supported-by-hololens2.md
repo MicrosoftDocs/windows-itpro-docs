@@ -9,7 +9,7 @@ ms.prod: w10
 ms.technology: windows
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 10/11/2021
+ms.date: 03/01/2022
 ---
 
 # Policies in Policy CSP supported by HoloLens 2
