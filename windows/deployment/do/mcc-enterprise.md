@@ -1,5 +1,5 @@
 ---
-title: Microsoft Connected Cache for Enterprises
+title: Microsoft Connected Cache for Enterprises (private preview)
 manager: dougeby
 description: Details on Microsoft Connected Cache (MCC) for Enterprises.
 keywords: updates, downloads, network, bandwidth
@@ -13,7 +13,7 @@ ms.collection: M365-modern-desktop
 ms.topic: article
 ---
 
-# Microsoft Connected Cache for Enterprises
+# Microsoft Connected Cache for Enterprises (private preview)
 
 **Applies to**
 
