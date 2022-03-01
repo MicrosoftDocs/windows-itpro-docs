@@ -110,7 +110,7 @@ Specialized systems—such as devices that control medical equipment, point-of-s
 >
 > The Long-term Servicing channel is not intended for deployment on most or all the devices in an organization; it should be used only for special-purpose devices. As a general guideline, a device with Microsoft Office installed is a general-purpose device, typically used by an information worker, and therefore it is better suited for the General Availability channel.
 
-Microsoft never publishes feature updates through Windows Update on devices that run Windows 10 Enterprise LTSC. Instead, it typically offers new LTSC releases every 2–3 years, and organizations can choose to install them as in-place upgrades or even skip releases over a 10-year life cycle.
+Microsoft never publishes feature updates through Windows Update on devices that run Windows 10 Enterprise LTSC. Instead, it typically offers new LTSC releases every 2–3 years, and organizations can choose to install them as in-place upgrades or even skip releases over a the product lifecycle. Always check your individual LTSC release to verify its servicing lifecycle. For more information, see [release information](/windows/release-health/release-information), or perform a search on the [product lifecycle information](/lifecycle/products/) page.
 
 > [!NOTE]
 > LTSC releases will support the currently released processors and chipsets at the time of release of the LTSC. As future CPU generations are released, support will be created through future LTSC releases that customers can deploy for those systems. For more information, see **Supporting the latest processor and chipsets on Windows** in [Lifecycle support policy FAQ - Windows Products](/lifecycle/faq/windows).
