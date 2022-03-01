@@ -53,7 +53,8 @@ This capability is supported beginning with Windows version 1607.
 
 Learn more about the [Understanding Application Control event IDs (Windows)](event-id-explanations.md)
 
-## Example Advanced Hunting Application Control Queries ##
+## Example Advanced Hunting Application Control Queries
+
 Query Example 1: Query the application control action types summarized by type for past seven days
 
 Here's a simple example query that shows all the WDAC events generated in the last seven days from machines being monitored by Microsoft Defender for Endpoint:
@@ -69,9 +70,9 @@ ActionType startswith "AppControl"
 The query results can be used for several important functions related to managing WDAC including:
 
 - Assessing the impact of deploying policies in audit mode
-  Since applications still run in audit mode, it's an ideal way to see the impact and correctness of the rules included in the policy. Integrating the generated events with Advanced Hunting makes it much easier to have broad deployments of audit mode policies and see how the included rules would influence those systems in real world usage. This audit mode data will help streamline the transition to using policies in enforced mode.
+  Since applications still run in audit mode, it's an ideal way to see the impact and correctness of the rules included in the policy. Integrating the generated events with advanced hunting makes it much easier to have broad deployments of audit mode policies and see how the included rules would influence those systems in real-world usage. This audit mode data will help streamline the transition to using policies in enforced mode.
 - Monitoring blocks from policies in enforced mode
-  Policies deployed in enforced mode may block executables or scripts that fail to meet any of the included allow rules. Legitimate new applications and updates or potentially unwanted or malicious software could be blocked. In either case, the Advanced hunting queries report the blocks for further investigation.
+  Policies deployed in enforced mode may block executables or scripts that fail to meet any of the included allow rules. Legitimate new applications and updates or potentially unwanted or malicious software could be blocked. In either case, the advanced hunting queries report the blocks for further investigation.
 
 
 Query Example #2: Query to determine audit blocks in the past seven days
