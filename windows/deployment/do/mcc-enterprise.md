@@ -22,9 +22,12 @@ ms.topic: article
 
 ## Overview
 
-Microsoft Connected Cache (MCC) preview is a software-only caching solution that delivers Microsoft content within Enterprise networks. MCC can be deployed to as many bare-metal servers or VMs as needed and is managed from a cloud portal. Cache nodes are created in the cloud portal and are configured by applying the [client policy](/mem/intune/configuration/delivery-optimization-settings.md#local-server-caching) using your management tool, such as Intune.
+> [!IMPORTANT]
+> Microsoft Connected Cache is currently a private preview feature. During this phase we invite customers to take part in early access for testing purposes. This phase does not include formal support, and should not be used for production workloads. For more information, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
-MCC is a hybrid (mix of on-prem and cloud resources) SaaS solution built as an Azure IoT Edge module. It is a Docker compatible Linux container that is deployed to your Windows devices. The Delivery Optimization team chose IoT Edge for Linux on Windows (EFLOW) as a secure, reliable container management infrastructure. EFLOW is a Linux virtual machine, based on Microsoft's first party CBL-Mariner operating system. It’s built with the IoT Edge runtime and validated as a tier 1 supported environment for IoT Edge workloads. MCC will be a Linux IoT Edge module running on the Windows Host OS.
+Microsoft Connected Cache (MCC) preview is a software-only caching solution that delivers Microsoft content within Enterprise networks. MCC can be deployed to as many physical servers or VMs as needed, and is managed from a cloud portal. Cache nodes are created in the cloud portal and are configured by applying the [client policy](/mem/intune/configuration/delivery-optimization-settings.md#local-server-caching) using your management tool, such as Intune.
+
+MCC is a hybrid (mix of on-prem and cloud resources) SaaS solution built as an Azure IoT Edge module. It is a Docker compatible Linux container that is deployed to your Windows devices. IoT Edge for Linux on Windows (EFLOW) was chosen because it is a secure, reliable container management infrastructure. EFLOW is a Linux virtual machine, based on Microsoft's first party CBL-Mariner operating system. It’s built with the IoT Edge runtime and validated as a tier 1 supported environment for IoT Edge workloads. MCC will be a Linux IoT Edge module running on the Windows Host OS.
 
 Even though your MCC scenario is not related to IoT, Azure IoT Edge is used as a more generic Linux container deployment and management infrastructure. The Azure IoT Edge runtime sits on your designated MCC device and performs management and communication operations. The runtime performs several functions important to manage MCC on your edge device: 
 
@@ -33,36 +36,37 @@ Even though your MCC scenario is not related to IoT, Azure IoT Edge is used as a
 3. Ensures that MCC is always running. 
 4. Reports MCC health and usage to the cloud for remote monitoring.
 
-To deploy a functional MCC to your device, you must obtain the necessary keys that will provision the Connected Cache instance to communicate with Delivery Optimization services and enable the device to cache and deliver content.
-Figure 1 below describes the architecture of MCC built using IoT Edge.
+To deploy a functional MCC to your device, you must obtain the necessary keys that will provision the Connected Cache instance to communicate with Delivery Optimization services and enable the device to cache and deliver content. See figure 1 below for a summary of the architecture of MCC, built using IoT Edge.
 
-For more details information on Azure IoT Edge, please see the [Azure IoT Edge documentation](/azure/iot-edge/about-iot-edge).
+For more information about Azure IoT Edge, see [What is Azure IoT Edge](/azure/iot-edge/about-iot-edge).
 
 ## How MCC works
 
-1. The Azure Management Portal used to create the MCC nodes.
-2. The MCC container deployed and provisioned to the server using the installer provided in the portal.
-3. Set the client policy in your management solution to point to the IP address/FQDN of the cache server
-4. Microsoft end-user devices make the range requests for content from the MCC node.
-5. MCC node pulls content from the CDN, seeds its local cache stored on disk and delivers the content to the client.
-6. Subsequent requests from end-user devices for content will now come from cache.
-7. If the MCC node is unavailable, the client will pull content from CDN to ensure uninterrupted service for your subscribers.
+1. The Azure Management Portal is used to create MCC nodes.
+2. The MCC container is deployed and provisioned to a server using the installer provided in the portal.
+3. Client policy is configured in your management solution to point to the IP address or FQDN of the cache server.
+4. Microsoft end-user devices make range requests for content from the MCC node.
+5. An MCC node pulls content from the CDN, seeds its local cache stored on disk, and delivers content to the client.
+6. Subsequent requests from end-user devices for content come from the cache.
+
+If the MCC node is unavailable, the client will pull content from CDN to ensure uninterrupted service for your subscribers.
 
 ![eMCC emg01](images/emcc01.png)
 
-Figure 1: Each number in the diagram corresponds to the steps above
+Figure 1: Each number in the diagram corresponds to the steps described above.
 
 ## Enterprise requirements for MCC
 
-1. **Azure subscription** – MCC management portal is hosted within Azure and is used to create the Connected Cache [Azure resource](/azure/cloud-adoption-framework/govern/resource-consistency/resource-access-management.md) and IoT Hub resource – both are free services.
+1. **Azure subscription**: MCC management portal is hosted within Azure and is used to create the Connected Cache [Azure resource](/azure/cloud-adoption-framework/govern/resource-consistency/resource-access-management.md) and IoT Hub resource – both are free services.
 
-We will use your Azure subscription ID to take care of some provisioning with our services, first, to give you access to the preview. The MCC server requirement for an Azure subscription will cost you nothing. If you do not have an Azure subscription already, you can create an Azure [Pay-As-You-Go](https://azure.microsoft.com/offers/ms-azr-0003p/) account which requires a credit card for verification purposes. For more information, see the [Azure Free Account FAQ](https://azure.microsoft.com/free/free-account-faq/).
+You Azure subscription ID is first used to provision MCC services, and enable access to the preview. The MCC server requirement for an Azure subscription will cost you nothing. If you do not have an Azure subscription already, you can create an Azure [Pay-As-You-Go](https://azure.microsoft.com/offers/ms-azr-0003p/) account which requires a credit card for verification purposes. For more information, see the [Azure Free Account FAQ](https://azure.microsoft.com/free/free-account-faq/).
 
 The resources used for the preview and in the future when this product is ready for production will be completely free to you, like other caching solutions.
-2. **Hardware to host MCC** - The recommended configuration will serve approximately 35,000 managed devices downloading a 2GB payload in 24-hour timeframe at a sustained rate of 6.5 Gbps.
+
+2. **Hardware to host MCC**: The recommended configuration will serve approximately 35000 managed devices, downloading a 2GB payload in 24-hour timeframe at a sustained rate of 6.5 Gbps.
 
 **EFLOW Requires Hyper-V support**
-- On Windows 10, enable Hyper-V
+- On Windows client, enable the Hyper-V feature
 - On Windows Server, install the Hyper-V role and create a default network switch
 
 Disk recommendations:
@@ -74,7 +78,9 @@ NIC requirements:
 - For best performance, NIC and BIOS should support SR-IOV
 
 Networking support:
-- External virtual switch to support outbound and inbound network communication (we will create this during the installation process)
+- An external virtual switch to support outbound and inbound network communication (created during the installation process)
+
+Hardware and software specifications:
 
 |   | Branch Office / Small Enterprise | Large Enterprise |
 | -- | --- | --- |
@@ -88,47 +94,30 @@ Networking support:
 
 Summary of steps required to deploy MCC to your server:
 
-1.  [Provide Microsoft with the Azure subscription you will use for Microsoft
-    Connected Cache](#provide-microsoft-with-the-azure-subscription-id)
-
-2.  [Create the MCC Resource in
-    Azure](#create-the-microsoft-connected-cache-resource-in-azure)
-
+1.  [Provide Microsoft with the Azure subscription to use for MCC](#provide-microsoft-with-the-azure-subscription-id)
+2.  [Create the MCC Resource in Azure](#create-the-microsoft-connected-cache-resource-in-azure)
 3.  [Create an MCC Node](#create-a-microsoft-connected-cache-node-in-azure)
-
 4.  [Edit Cache Node Information](#edit-cache-node-information)
+5.  [Install MCC on a physical server or VM](#install-microsoft-connected-cache-on-windows)
+6.  [Verify proper functioning MCC server](#verify-proper-functioning-microsoft-connected-cache-server)
+7.  [Review common Issues](#common-issues) if needed.
 
-5.  [Install MCC on a Server or
-    VM](#install-microsoft-connected-cache-on-windows)
-
-6.  [Verify Proper Functioning Microsoft Connected Cache
-    Server](#verify-proper-functioning-microsoft-connected-cache-server)
-
-7.  Review [common Issues](#common-issues) if needed.
-
-For any questions regarding these instructions contact:
-[msconnectedcache@microsoft.com](mailto:msconnectedcache@microsoft.com)
+For questions regarding these instructions contact [msconnectedcache@microsoft.com](mailto:msconnectedcache@microsoft.com)
 
 ## Provide Microsoft with the Azure Subscription ID
 
-As part of the MCC preview onboarding process the Azure
-subscription ID will have been provided to Microsoft. Instructions to create a
-subscription id are here: <https://aka.ms/MCC-Azure-Subscription>
-
+As part of the MCC preview onboarding process, an Azure subscription ID must be provided to Microsoft. 
 
 > [!IMPORTANT]
-> [**contact Microsoft**](mailto:mccforenterprise@microsoft.com?subject=[MCC%20for%20Enterprise]%20Please%20add%20our%20Azure%20subscription%20to%20the%20allow%20list) and provide this information if you have not already. You will not be able to proceed if you skip this step.
+> [contact Microsoft](mailto:mccforenterprise@microsoft.com?subject=[MCC%20for%20Enterprise]%20Please%20add%20our%20Azure%20subscription%20to%20the%20allow%20list) and provide this information if you have not already. You will not be able to proceed if you skip this step.
 
-**Please** [**contact
-Microsoft**](mailto:mccforenterprise@microsoft.com?subject=[MCC%20for%20Enterprise]%20Please%20add%20our%20Azure%20subscription%20to%20the%20allow%20list)
-**and provide this information if you have not already. You will not be able to
-proceed if you skip this step.**
+For information about creating or locating your subscription ID, see [Steps to obtain an Azure Subscription ID](#steps-to-obtain-an-azure-subscription-id).
 
 ## Create the MCC resource in Azure
 
 The MCC Azure management portal is used to create and manage MCC nodes. An Azure Subscription ID is used to grant access to the preview and to create the MCC resource in Azure and Cache nodes.
 
-##### Use the following link and log in to Azure
+### Use the following link and log in to Azure
 
 <https://portal.azure.com/?microsoft_azure_marketplace_ItemHideKey=Microsoft_ConnectedCache_EntHidden>
 
@@ -575,8 +564,7 @@ To run this script:
 Throughout the private preview phase, we will send you security and feature
 updates for MCC. Please follow these steps to perform the update.
 
-Run the following command with the **arguments** we provided in the email to
-update your MCC:
+Run the following command with the **arguments** we provided in the email to update your MCC:
 
 ```
 # .\updatemcc.ps1 version="**\<VERSION\>**" tenantid="**\<TENANTID\>**" customerid="**\<CUSTOMERID\>**" cachenodeid="**\<CACHENODEID\>**" customerkey="**\<CUSTOMERKEY\>**"
@@ -605,7 +593,22 @@ Edge LTS \> Uninstall
 
 ## Appendix
 
-## IoT Edge runtime
+### Steps to obtain an Azure Subscription ID
+
+1. Sign in to https://portal.azure.com/ and navigate to the Azure services section.
+2. Click on **Subscriptions**. If you do not see **Subscriptions**, click on the **More Services** arrow and search for **Subscriptions**. 
+3. If you already have an Azure Subscription, skip to step 5. If you do not have an Azure Subscription, select **+ Add** on the top left. 
+4. Select the **Pay-As-You-Go** subscription. You will be asked to enter credit card information, but you will not be charged for using the MCC service. 
+5. On the **Subscriptions** blade, you will find details about your current subscription. Click on the subscription name. 
+6. After you select the subscription name, you will find the subscription ID in the **Overview** tab. Click on the **Copy to clipboard** icon next to your Subscription ID to copy the value. 
+
+#### Troubleshooting
+
+If you’re not able to sign up for a Microsoft Azure subscription with the error: **Account belongs to a directory that cannot be associated with an Azure subscription. Please sign in with a different account.** See [Can't sign up for a Microsoft Azure subscription](/troubleshoot/azure/general/cannot-sign-up-subscription). 
+
+Also see [Troubleshoot issues when you sign up for a new account in the Azure portal](/azure/cost-management-billing/manage/troubleshoot-azure-sign-up).
+
+### IoT Edge runtime
 
 The Azure IoT Edge runtime enables custom and cloud logic on IoT Edge devices.
 The runtime sits on the IoT Edge device, and performs management and
@@ -617,10 +620,9 @@ communication operations. The runtime performs several functions:
 -   Reports module (Docker containers) health to the cloud for remote monitoring.
 -   Manages communication between an IoT Edge device and the cloud.
 
-For more information on Azure IoT Edge, please see the Azure IoT Edge
-documentation <https://docs.microsoft.com/azure/iot-edge/about-iot-edge>.
+For more information on Azure IoT Edge, please see the [Azure IoT Edge documentation](/azure/iot-edge/about-iot-edge).
 
-## EFLOW
+### EFLOW
 
 [What is Azure IoT Edge for Linux on Windows \| Microsoft
 Docs](https://docs.microsoft.com/azure/iot-edge/iot-edge-for-linux-on-windows?view=iotedge-2018-06&preserve-view=true)
@@ -637,13 +639,13 @@ EFLOW FAQ and Support: [Support · Azure/iotedge-eflow Wiki
 [Now ready for Production: Linux IoT Edge Modules on Windows -
 YouTube](https://www.youtube.com/watch?v=pgqVCg6cxVU&ab_channel=MicrosoftIoTDevelopers)
 
-## Routing local Windows Clients to an MCC
+### Routing local Windows Clients to an MCC
 
-### Get the IP address of your MCC using ifconfig
+#### Get the IP address of your MCC using ifconfig
 
 There are multiple methods that can be used to apply a policy to PCs that should participate in downloading from the MCC.
 
-### Registry Key
+##### Registry Key
 
 You can either set your MCC IP address or FQDN using:
 
@@ -666,8 +668,7 @@ You can either set your MCC IP address or FQDN using:
     Administrative Templates, Windows Components, Delivery Optimization) to the
     IP address of your MCC For example 10.137.187.38.
 
-
-![eMCC emg26](images/emcc26.png)
+  ![eMCC emg26](images/emcc26.png)
 
 **Verify Content using the DO Client**
 
@@ -676,14 +677,15 @@ Connected Cache you can execute the following steps:
 
 1.  Download a game or application from the Microsoft Store.   
 
-![eMCC emg27](images/emcc27.png)
+  ![eMCC emg27](images/emcc27.png)
 
-1.  Verify downloads came from MCC by one of two methods
+2.  Verify downloads came from MCC by one of two methods
 
     1.  Using PowerShell Cmdlet Get-DeliveryOptimizationStatus you should see
         BytesFromCacheServer test  
 
-![eMCC emg28](images/emcc28.png)
+  ![eMCC emg28](images/emcc28.png)
 
-    2.  Looking at the Delivery Optimization Activity Monitor  
-![eMCC emg29](images/emcc29.png)
+    2.  Looking at the Delivery Optimization Activity Monitor
+
+  ![eMCC emg29](images/emcc29.png)
