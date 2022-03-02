@@ -33,7 +33,7 @@ The enrollment process includes the following steps:
 
 ## Enrollment protocol
 
-There are a number of changes made to the enrollment protocol to better support a variety of scenarios across all platforms. For detailed information about the mobile device enrollment protocol, see [\[MS-MDM\]: Mobile Device Management Protocol](/openspecs/windows_protocols/ms-mdm/33769a92-ac31-47ef-ae7b-dc8501f7104f) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347).
+There are many changes made to the enrollment protocol to better support various scenarios across all platforms. For detailed information about the mobile device enrollment protocol, see [\[MS-MDM\]: Mobile Device Management Protocol](/openspecs/windows_protocols/ms-mdm/33769a92-ac31-47ef-ae7b-dc8501f7104f) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347).
 
 The enrollment process involves the following steps:
 
@@ -56,7 +56,7 @@ The following topics describe the end-to-end enrollment process using various au
 -   [On-premise authentication device enrollment](on-premise-authentication-device-enrollment.md)
 
 > [!Note]
-> As a best practice, do not use hardcoded server-side checks on values such as:
+> As a best practice, don't use hardcoded server-side checks on values such as:
 > -   User agent string
 > -   Any fixed URIs that are passed during enrollment
 > -   Specific formatting of any value unless otherwise noted, such as the format of the device ID.
@@ -67,11 +67,11 @@ Devices that are joined to an on-premises Active Directory can enroll into MDM v
 
 ## Disable MDM enrollments
 
-In Windows 10 and Windows 11, IT admin can disable MDM enrollments for domain-joined PCs using Group Policy. Using the GP editor, the path is **Computer configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **MDM** &gt; **Disable MDM Enrollment**.
+In Windows 10 and Windows 11, IT admin can disable MDM enrollments for domain-joined PCs using Group Policy. With the GP editor being used, the path is **Computer configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **MDM** &gt; **Disable MDM Enrollment**.
 
 ![Disable MDM enrollment policy in GP Editor.](images/mdm-enrollment-disable-policy.png)
 
-Here is the corresponding registry key:
+Here's the corresponding registry key:
 
 HKLM\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\MDM
 
@@ -79,10 +79,10 @@ Value: DisableRegistration
 
 ## Enrollment scenarios not supported
 
-The following scenarios do not allow MDM enrollments:
+The following scenarios don't allow MDM enrollments:
 
-- Built-in administrator accounts on Windows desktop cannot enroll into MDM.
-- Standard users cannot enroll in MDM. Only admin users can enroll.
+- Built-in administrator accounts on Windows desktop can't enroll into MDM.
+- Standard users can't enroll in MDM. Only admin users can enroll.
 
 ## Enrollment error messages
 
@@ -128,7 +128,7 @@ The enrollment server can decline enrollment messages using the SOAP Fault forma
 - **Namespace**: `s:`
   - **Subcode**: Authorization
   - **Error**: MENROLL_E_DEVICE_AUTHORIZATION_ERROR
-  - **Description**: The user is not authorized to enroll to Mobile Device Management (MDM). Try again or contact your system administrator.
+  - **Description**: The user isn't authorized to enroll to Mobile Device Management (MDM). Try again or contact your system administrator.
   - **HRESULT**: 80180003
 
 - **Namespace**: `s:`
@@ -155,7 +155,7 @@ The enrollment server can decline enrollment messages using the SOAP Fault forma
   - **Description**: The Mobile Device Management (MDM) server was not able to validate your account. Try again or contact your system administrator.
   - **HRESULT**: 80180007
 
-In Windows 10, version 1507, we added the deviceenrollmentserviceerror element. Here is an example:
+In Windows 10, version 1507, we added the deviceenrollmentserviceerror element. Here's an example:
 
 ```xml
 <s:envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
@@ -224,7 +224,7 @@ In Windows 10, version 1507, we added the deviceenrollmentserviceerror element.
   - **Description**: The Mobile Device Management (MDM) server rejected the enrollment data. The server may not be configured correctly.
   - **HRESULT**: 80180019
 
-TraceID is a freeform text node which is logged. It should identify the server side state for this enrollment attempt. This information may be used by support to look up why the server declined the enrollment.
+TraceID is a freeform text node that is logged. It should identify the server side state for this enrollment attempt. This information may be used by support to look up why the server declined the enrollment.
 
 ## Related topics
 
