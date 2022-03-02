@@ -1,6 +1,6 @@
 ---
 title: Get seats assigned to a user
-description: The Get seats assigned to a user operation retrieves information about assigned seats in the Micosoft Store for Business.
+description: The Get seats assigned to a user operation retrieves information about assigned seats in the Microsoft Store for Business.
 ms.assetid: CB963E44-8C7C-46F9-A979-89BBB376172B
 ms.reviewer: 
 manager: dansimp
@@ -14,7 +14,7 @@ ms.date: 09/18/2017
 
 # Get seats assigned to a user
 
-The **Get seats assigned to a user** operation retrieves information about assigned seats in the Micosoft Store for Business.
+The **Get seats assigned to a user** operation retrieves information about assigned seats in the Microsoft Store for Business.
 
 ## Request
 
@@ -39,7 +39,7 @@ The following parameters may be specified in the request URI.
 
 ### Response body
 
-The response body contain [SeatDetailsResultSet](data-structures-windows-store-for-business.md#seatdetailsresultset).
+The response body contains [SeatDetailsResultSet](data-structures-windows-store-for-business.md#seatdetailsresultset).
 
 |Error code|Description|Retry|Data field|
 |--- |--- |--- |--- |
