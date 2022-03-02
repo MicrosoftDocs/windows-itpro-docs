@@ -64,7 +64,7 @@ ms.date: 07/22/2020
 - [DeliveryOptimization/DOMonthlyUploadDataCap](policy-csp-deliveryoptimization.md#deliveryoptimization-domonthlyuploaddatacap)
 - [DeliveryOptimization/DOPercentageMaxDownloadBandwidth](policy-csp-deliveryoptimization.md#deliveryoptimization-dopercentagemaxdownloadbandwidth)
 - [Desktop/PreventUserRedirectionOfProfileFolders](policy-csp-desktop.md#desktop-preventuserredirectionofprofilefolders)
-- [RestrictedGroups/ConfigureGroupMembership](policy-csp-restrictedgroups.md)
+- [RestrictedGroups/ConfigureGroupMembership](policy-csp-restrictedgroups.md#restrictedgroups-configuregroupmembership)
 - [System/AllowLocation](policy-csp-system.md#system-allowlocation)
 - [System/AllowStorageCard](policy-csp-system.md#system-allowstoragecard)
 - [System/AllowTelemetry](policy-csp-system.md#system-allowtelemetry)
