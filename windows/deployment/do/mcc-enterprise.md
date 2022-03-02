@@ -53,9 +53,12 @@ The following steps describe how MCC is provisioned and used.
 
 If an MCC node is unavailable, the client will pull content from CDN to ensure uninterrupted service for your subscribers.
 
+<a id="fig1">
+
 ![eMCC emg01](images/emcc01.png)
 
-<a id="fig1">Figure 1</a>: MCC processes. Each number in the diagram corresponds to the steps described above.
+</a>Figure 1: **MCC processes**. Each number in the diagram corresponds to the steps described above.
+
 
 ## Enterprise requirements for MCC
 
@@ -94,7 +97,7 @@ If an MCC node is unavailable, the client will pull content from CDN to ensure u
 
 ## Steps to set up MCC
 
-Summary of steps required to deploy MCC to your server:
+To deploy MCC to your server:
 
 1.  [Provide Microsoft with the Azure subscription to use for MCC](#provide-microsoft-with-the-azure-subscription-id)
 2.  [Create the MCC Resource in Azure](#create-the-mcc-resource-in-azure)
