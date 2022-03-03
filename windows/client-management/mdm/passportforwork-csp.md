@@ -14,14 +14,14 @@ ms.date: 07/19/2019
 
 # PassportForWork CSP
 
-The PassportForWork configuration service provider is used to provision Windows Hello for Business (formerly Microsoft Passport for Work). It allows you to login to Windows using your Active Directory or Azure Active Directory account and replace passwords, smartcards, and virtual smart cards.
+The PassportForWork configuration service provider is used to provision Windows Hello for Business (formerly Microsoft Passport for Work). It allows you to sign in to Windows using your Active Directory or Azure Active Directory account and replace passwords, smartcards, and virtual smart cards.
 
 > [!IMPORTANT]
 > Starting with Windows 10, version 1607 all devices only have one PIN associated with Windows Hello for Business. This means that any PIN on a device will be subject to the policies specified in the PassportForWork CSP. The values specified take precedence over any complexity rules set via Exchange ActiveSync (EAS) or the DeviceLock CSP.
  
 ### User configuration diagram
 
-The following shows the PassportForWork configuration service provider in tree format.
+The following example shows the PassportForWork configuration service provider in tree format.
 
 ```console
 ./User/Vendor/MSFT
@@ -44,7 +44,7 @@ PassportForWork
 
 ### Device configuration diagram
 
-The following shows the PassportForWork configuration service provider in tree format.
+The following example shows the PassportForWork configuration service provider in tree format.
 
 ```console
 ./Device/Vendor/MSFT
@@ -88,7 +88,7 @@ PassportForWork
 Root node for PassportForWork configuration service provider.
 
 <a href="" id="tenantid"></a>***TenantId***  
-A globally unique identifier (GUID), without curly braces ( { , } ), that is used as part of Windows Hello for Business provisioning and management. To get a GUID, use the PowerShell cmdlet [Get-AzureAccount](/powershell/module/servicemanagement/azure/get-azureaccount). For more information see [Get Windows Azure Active Directory Tenant ID in Windows PowerShell](https://devblogs.microsoft.com/scripting/get-windows-azure-active-directory-tenant-id-in-windows-powershell).
+A globally unique identifier (GUID), without curly braces ({ , }), that is used as part of Windows Hello for Business provisioning and management. To get a GUID, use the PowerShell cmdlet [Get-AzureAccount](/powershell/module/servicemanagement/azure/get-azureaccount). For more information, see [Get Windows Azure Active Directory Tenant ID in Windows PowerShell](https://devblogs.microsoft.com/scripting/get-windows-azure-active-directory-tenant-id-in-windows-powershell).
 
 <a href="" id="tenantid-policies"></a>***TenantId*/Policies**  
 Node for defining the Windows Hello for Business policy settings.
@@ -96,14 +96,14 @@ Node for defining the Windows Hello for Business policy settings.
 <a href="" id="tenantid-policies-usepassportforwork"></a>***TenantId*/Policies/UsePassportForWork**  
 Boolean value that sets Windows Hello for Business as a method for signing into Windows.
 
-Default value is true. If you set this policy to false, the user cannot provision Windows Hello for Business.
+Default value is true. If you set this policy to false, the user can't provision Windows Hello for Business.
 
 Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="tenantid-policies-requiresecuritydevice"></a>***TenantId*/Policies/RequireSecurityDevice**  
-Boolean value that requires a Trusted Platform Module (TPM) for Windows Hello for Business. TPM provides an additional security benefit over software so that data stored in it cannot be used on other devices.
+Boolean value that requires a Trusted Platform Module (TPM) for Windows Hello for Business. TPM provides an extra security benefit over software so that data stored in it can't be used on other devices.
 
-Default value is false. If you set this policy to true, only devices with a usable TPM can provision Windows Hello for Business. If you set this policy to false, all devices can provision Windows Hello for Business using software even if there is not a usable TPM. If you do not configure this setting, all devices can provision Windows Hello for Business using software if the TPM is non-functional or unavailable.
+Default value is false. If you set this policy to true, only devices with a usable TPM can provision Windows Hello for Business. If you set this policy to false, all devices can provision Windows Hello for Business using software even if there isn't a usable TPM. If you don't configure this setting, all devices can provision Windows Hello for Business using software if the TPM is non-functional or unavailable.
 
 Supported operations are Add, Get, Delete, and Replace.
 
@@ -116,7 +116,7 @@ Added in Windows 10, version 1703. Some Trusted Platform Modules (TPMs) are comp
 
 Default value is false. If you enable this policy setting, TPM revision 1.2 modules will be disallowed from being used with Windows Hello for Business.
 
-If you disable or do not configure this policy setting, TPM revision 1.2 modules will be allowed to be used with Windows Hello for Business.
+If you disable or don't configure this policy setting, TPM revision 1.2 modules will be used with Windows Hello for Business.
 
 Supported operations are Add, Get, Delete, and Replace.
 
@@ -126,7 +126,7 @@ This cloud service encrypts a recovery secret, which is stored locally on the cl
 
 Default value is false. If you enable this policy setting, the PIN recovery secret will be stored on the device and the user can change their PIN if needed.
 
-If you disable or do not configure this policy setting, the PIN recovery secret will not be created or stored. If the user's PIN is forgotten, the only way to get a new PIN is by deleting the existing PIN and creating a new one, which will require the user to re-register with any services the old PIN provided access to.
+If you disable or don't configure this policy setting, the PIN recovery secret won't be created or stored. If the user's PIN is forgotten, the only way to get a new PIN is by deleting the existing PIN and creating a new one, which will require the user to re-register with any services the old PIN provided access to.
 
 Supported operations are Add, Get, Delete, and Replace.
 
@@ -135,7 +135,7 @@ Boolean value that enables Windows Hello for Business to use certificates to aut
 
 If you enable this policy setting, Windows Hello for Business will wait until the device has received a certificate payload from the mobile device management server before provisioning a PIN.
 
-If you disable or do not configure this policy setting, the PIN will be provisioned when the user logs in, without waiting for a certificate payload.
+If you disable or don't configure this policy setting, the PIN will be provisioned when the user logs in, without waiting for a certificate payload.
 
 Supported operations are Add, Get, Delete, and Replace.
 
@@ -145,7 +145,7 @@ Node for defining PIN settings.
 <a href="" id="tenantid-policies-pincomplexity-minimumpinlength"></a>***TenantId*/Policies/PINComplexity/MinimumPINLength**  
 Integer value that sets the minimum number of characters required for the PIN. Default value is 4. The lowest number you can configure for this policy setting is 4. The largest number you can configure must be less than the number configured in the Maximum PIN length policy setting or the number 127, whichever is the lowest.
 
-If you configure this policy setting, the PIN length must be greater than or equal to this number. If you disable or do not configure this policy setting, the PIN length must be greater than or equal to 4.
+If you configure this policy setting, the PIN length must be greater than or equal to this number. If you disable or don't configure this policy setting, the PIN length must be greater than or equal to 4.
 
 > [!NOTE]
 > If the conditions specified above for the minimum PIN length are not met, default values will be used for both the maximum and minimum PIN lengths.
@@ -156,7 +156,7 @@ Value type is int. Supported operations are Add, Get, Delete, and Replace.
 <a href="" id="tenantid-policies-pincomplexity-maximumpinlength"></a>***TenantId*/Policies/PINComplexity/MaximumPINLength**  
 Integer value that sets the maximum number of characters allowed for the PIN. Default value is 127. The largest number you can configure for this policy setting is 127. The lowest number you can configure must be larger than the number configured in the Minimum PIN length policy setting or the number 4, whichever is greater.
 
-If you configure this policy setting, the PIN length must be less than or equal to this number. If you disable or do not configure this policy setting, the PIN length must be less than or equal to 127.
+If you configure this policy setting, the PIN length must be less than or equal to this number. If you disable or don't configure this policy setting, the PIN length must be less than or equal to 127.
 
 > [!NOTE]
 > If the conditions specified above for the maximum PIN length are not met, default values will be used for both the maximum and minimum PIN lengths.
@@ -170,10 +170,10 @@ Integer value that configures the use of uppercase letters in the Windows Hello 
 Valid values:
 
 -   0 - Allows the use of uppercase letters in PIN.
--   1 - Requires the use of at least one uppercase letters in PIN.
--   2 - Does not allow the use of uppercase letters in PIN.
+-   1 - Requires the use of at least one uppercase letter in PIN.
+-   2 - Doesn't allow the use of uppercase letters in PIN.
 
-Default value is 2. Default PIN complexity behavior is that digits are required and all other character sets are not allowed. If all character sets are allowed but none are explicitly required, then the default PIN complexity behavior will apply.
+Default value is 2. Default PIN complexity behavior is that digits are required and all other character sets aren't allowed. If all character sets are allowed but none's explicitly required, then the default PIN complexity behavior will apply.
 
 Supported operations are Add, Get, Delete, and Replace.
 
@@ -183,10 +183,10 @@ Integer value that configures the use of lowercase letters in the Windows Hello 
 Valid values:
 
 -   0 - Allows the use of lowercase letters in PIN.
--   1 - Requires the use of at least one lowercase letters in PIN.
--   2 - Does not allow the use of lowercase letters in PIN.
+-   1 - Requires the use of at least one lowercase letter in PIN.
+-   2 - Doesn't allow the use of lowercase letters in PIN.
 
-Default value is 2. Default PIN complexity behavior is that digits are required and all other character sets are not allowed. If all character sets are allowed but none are explicitly required, then the default PIN complexity behavior will apply.
+Default value is 2. Default PIN complexity behavior is that digits are required and all other character sets aren't allowed. If all character sets are allowed but none's explicitly required, then the default PIN complexity behavior will apply.
 
 Supported operations are Add, Get, Delete, and Replace.
 
@@ -197,9 +197,9 @@ Valid values:
 
 -   0 - Allows the use of special characters in PIN.
 -   1 - Requires the use of at least one special character in PIN.
--   2 - Does not allow the use of special characters in PIN.
+-   2 - Doesn't allow the use of special characters in PIN.
 
-Default value is 2. Default PIN complexity behavior is that digits are required and all other character sets are not allowed. If all character sets are allowed but none are explicitly required, then the default PIN complexity behavior will apply.
+Default value is 2. Default PIN complexity behavior is that digits are required and all other character sets aren't allowed. If all character sets are allowed but none's explicitly required, then the default PIN complexity behavior will apply.
 
 Supported operations are Add, Get, Delete, and Replace.
 
@@ -210,16 +210,16 @@ Valid values:
 
 -   0 - Allows the use of digits in PIN.
 -   1 - Requires the use of at least one digit in PIN.
--   2 - Does not allow the use of digits in PIN.
+-   2 - Doesn't allow the use of digits in PIN.
 
-Default value is 1. Default PIN complexity behavior is that digits are required and all other character sets are not allowed. If all character sets are allowed but none are explicitly required, then the default PIN complexity behavior will apply.
+Default value is 1. Default PIN complexity behavior is that digits are required and all other character sets aren't allowed. If all character sets are allowed but none's explicitly required, then the default PIN complexity behavior will apply.
 
 Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="tenantid-policies-pincomplexity-history"></a>***TenantId*/Policies/PINComplexity/History**  
-Integer value that specifies the number of past PINs that can be associated to a user account that can’t be reused. The largest number you can configure for this policy setting is 50. The lowest number you can configure for this policy setting is 0. If this policy is set to 0, then storage of previous PINs is not required. This node was added in Windows 10, version 1511.
+Integer value that specifies the number of past PINs that can be associated to a user account that can’t be reused. The largest number you can configure for this policy setting is 50. The lowest number you can configure for this policy setting is 0. If this policy is set to 0, then storage of previous PINs isn't required. This node was added in Windows 10, version 1511.
 
-The current PIN of the user is included in the set of PINs associated with the user account. PIN history is not preserved through a PIN reset.
+The current PIN of the user is included in the set of PINs associated with the user account. PIN history isn't preserved through a PIN reset.
 
 Default value is 0.
 
@@ -248,7 +248,7 @@ Supported operations are Add, Get, Delete, and Replace.
 <a href="" id="tenantid-policies-usehellocertificatesassmartcardcertificates"></a>***TenantId*/Policies/UseHelloCertificatesAsSmartCardCertificates** (only for ./Device/Vendor/MSFT)  
 Added in Windows 10, version 1809. If you enable this policy setting, applications use Windows Hello for Business certificates as smart card certificates. Biometric factors are unavailable when a user is asked to authorize the use of the certificate's private key. This policy setting is designed to allow compatibility with applications that rely exclusively on smart card certificates.
 
-If you disable or do not configure this policy setting, applications do not use Windows Hello for Business certificates as smart card certificates, and biometric factors are available when a user is asked to authorize the use of the certificate's private key.
+If you disable or don't configure this policy setting, applications don't use Windows Hello for Business certificates as smart card certificates, and biometric factors are available when a user is asked to authorize the use of the certificate's private key.
 
 Windows requires a user to lock and unlock their session after changing this setting if the user is currently signed in.
 
@@ -262,7 +262,7 @@ Node for defining biometric settings. This node was added in Windows 10, versi
 *Not supported on Windows Holographic and Windows Holographic for Business.*
 
 <a href="" id="biometrics-usebiometrics--only-for---device-vendor-msft-"></a>**Biometrics/UseBiometrics** (only for ./Device/Vendor/MSFT)  
-Boolean value used to enable or disable the use of biometric gestures, such as face and fingerprint, as an alternative to the PIN gesture for Windows Hello for Business. Users must still configure a PIN if they configure biometric gestures to use in case of failures. This node was added in Windows 10, version 1511.
+Boolean value used to enable or disable the use of biometric gestures, such as face and fingerprint, as an alternative to the PIN gesture for Windows Hello for Business. Users must still configure a PIN if they configure biometric gestures to use if there are failures. This node was added in Windows 10, version 1511.
 
 Default value is true, enabling the biometric gestures for use with Windows Hello for Business. If you set this policy to false, biometric gestures are disabled for use with Windows Hello for Business.
 
@@ -277,9 +277,9 @@ Boolean value used to enable or disable enhanced anti-spoofing for facial featur
 
 Default value is false. If you set this policy to false or don't configure this setting, Windows doesn't require enhanced anti-spoofing for Windows Hello face authentication.
 
-If you set this policy to true, Windows requires all users on managed devices to use enhanced anti-spoofing for Windows Hello face authentication. Windows Hello face authentication is disabled on devices that do not support enhanced anti-spoofing.
+If you set this policy to true, Windows requires all users on managed devices to use enhanced anti-spoofing for Windows Hello face authentication. Windows Hello face authentication is disabled on devices that don't support enhanced anti-spoofing.
 
-Note that enhanced anti-spoofing for Windows Hello face authentication is not required on unmanaged devices.
+Enhanced anti-spoofing for Windows Hello face authentication isn't required on unmanaged devices.
 
 Supported operations are Add, Get, Delete, and Replace.
 
@@ -324,7 +324,7 @@ Scope is permanent. Supported operation is Get.
 
 
 <a href="" id="securitykey-usesecuritykeyforsignin"></a>**SecurityKey/UseSecurityKeyForSignin** (only for ./Device/Vendor/MSFT)  
-Added in Windows 10, version 1903. Enables users to sign-in to their device with a [FIDO2 security key](/azure/active-directory/authentication/concept-authentication-passwordless#fido2-security-keys) that is compatible with Microsoft’s implementation.
+Added in Windows 10, version 1903. Enables users to sign in to their device with a [FIDO2 security key](/azure/active-directory/authentication/concept-authentication-passwordless#fido2-security-keys) that is compatible with Microsoft’s implementation.
 
 Scope is dynamic. Supported operations are Add, Get, Replace, and Delete.
 

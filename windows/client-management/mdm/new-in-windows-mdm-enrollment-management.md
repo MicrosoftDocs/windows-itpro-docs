@@ -20,7 +20,7 @@ ms.date: 10/20/2020
 
 This article provides information about what's new in Windows 10 and Windows 11 mobile device management (MDM) enrollment and management experience across all Windows 10 and Windows 11 devices. This article also provides details about the breaking changes and known issues and frequently asked questions.
 
-For details about Microsoft mobile device management protocols for Windows 10 and Windows 11 see [\[MS-MDM\]: Mobile Device Management Protocol](/openspecs/windows_protocols/ms-mdm/33769a92-ac31-47ef-ae7b-dc8501f7104f) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347). 
+For details about Microsoft mobile device management protocols for Windows 10 and Windows 11, see [\[MS-MDM\]: Mobile Device Management Protocol](/openspecs/windows_protocols/ms-mdm/33769a92-ac31-47ef-ae7b-dc8501f7104f) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347). 
 
 
 ## What’s new in MDM for Windows 11, version 21H2
@@ -35,15 +35,15 @@ For details about Microsoft mobile device management protocols for Windows 10 a
 
 ### Get command inside an atomic command is not supported
 
-In Windows 10 and Windows 11, a Get command inside an atomic command is not supported. 
+In Windows 10 and Windows 11, a Get command inside an atomic command isn't supported. 
 
 ### Apps installed using WMI classes are not removed
 
-Applications installed using WMI classes are not removed when the MDM account is removed from device.
+Applications installed using WMI classes aren't removed when the MDM account is removed from device.
 
 ### Passing CDATA in SyncML does not work
 
-Passing CDATA in data in SyncML to ConfigManager and CSPs does not work in Windows 10 and Windows 11.
+Passing CDATA in data in SyncML to ConfigManager and CSPs doesn't work in Windows 10 and Windows 11.
 
 ### SSL settings in IIS server for SCEP must be set to "Ignore"
 
@@ -53,7 +53,7 @@ The certificate setting under "SSL Settings" in the IIS server for SCEP must be 
 
 ### MDM enrollment fails on the Windows device when traffic is going through proxy
 
-When the Windows device is configured to use a proxy that requires authentication, the enrollment will fail. To work around this issue, the user can use a proxy that does not require authentication or remove the proxy setting from the connected network.
+When the Windows device is configured to use a proxy that requires authentication, the enrollment will fail. To work around this issue, the user can use a proxy that doesn't require authentication or remove the proxy setting from the connected network.
 
 ### Server-initiated unenrollment failure
 
@@ -63,26 +63,26 @@ Remote server unenrollment is disabled for mobile devices enrolled via Azure Act
 
 ### Certificates causing issues with Wi-Fi and VPN
 
-In Windows 10 and Windows 11, when using the ClientCertificateInstall to install certificates to the device store and the user store and both certificates are sent to the device in the same MDM payload, the certificate intended for the device store will also get installed in the user store. This may cause issues with Wi-Fi or VPN when choosing the correct certificate to establish a connection. We are working to fix this issue.
+In Windows 10 and Windows 11, when using the ClientCertificateInstall to install certificates to the device store and the user store and both certificates are sent to the device in the same MDM payload, the certificate intended for the device store will also get installed in the user store. This dual installation may cause issues with Wi-Fi or VPN when choosing the correct certificate to establish a connection. We're working to fix this issue.
 
 ### Version information for Windows 11
 
-The software version information from **DevDetail/Ext/Microsoft/OSPlatform** does not match the version in **Settings** under **System/About**.
+The software version information from **DevDetail/Ext/Microsoft/OSPlatform** doesn't match the version in **Settings** under **System/About**.
 
 ### Multiple certificates might cause Wi-Fi connection instabilities in Windows 10 and Windows 11
 
-In your deployment, if you have multiple certificates provisioned on the device and the Wi-Fi profile provisioned does not have a strict filtering criteria, you may see connection failures when connecting to Wi-Fi. The solution is to ensure that the Wi-Fi profile provisioned has strict filtering criteria such that it matches only one certificate.
+In your deployment, if you have multiple certificates provisioned on the device and the Wi-Fi profile provisioned doesn't have a strict filtering criteria, you may see connection failures when connecting to Wi-Fi. The solution is to ensure that the Wi-Fi profile provisioned has strict filtering criteria such that it matches only one certificate.
 
-Enterprises deploying certificate based EAP authentication for VPN/Wi-Fi can face a situation where there are multiple certificates that meet the default criteria for authentication. This can lead to issues such as:
+Enterprises deploying certificate-based EAP authentication for VPN/Wi-Fi can face a situation where there are multiple certificates that meet the default criteria for authentication. This situation can lead to issues such as:
 
 -   The user may be prompted to select the certificate.
 -   The wrong certificate may get auto selected and cause an authentication failure.
 
 A production ready deployment must have the appropriate certificate details as part of the profile being deployed. The following information explains how to create or update an EAP Configuration XML such that the extraneous certificates are filtered out and the appropriate certificate can be used for the authentication.
 
-EAP XML must be updated with relevant information for your environment This can be done either manually by editing the XML sample below, or by using the step by step UI guide. After the EAP XML is updated, refer to instructions from your MDM to deploy the updated configuration as follows:
+EAP XML must be updated with relevant information for your environment. This task can be done either manually by editing the XML sample below, or by using the step by step UI guide. After the EAP XML is updated, refer to instructions from your MDM to deploy the updated configuration as follows:
 
--   For Wi-Fi, look for the &lt;EAPConfig&gt; section of your current WLAN Profile XML (This is what you specify for the WLanXml node in the Wi-Fi CSP). Within these tags you will find the complete EAP configuration. Replace the section under &lt;EAPConfig&gt; with your updated XML and update your Wi-Fi profile. You might need to refer to your MDM’s guidance on how to deploy a new Wi-Fi profile.
+-   For Wi-Fi, look for the &lt;EAPConfig&gt; section of your current WLAN Profile XML (This detail is what you specify for the WLanXml node in the Wi-Fi CSP). Within these tags, you'll find the complete EAP configuration. Replace the section under &lt;EAPConfig&gt; with your updated XML and update your Wi-Fi profile. You might need to refer to your MDM’s guidance on how to deploy a new Wi-Fi profile.
 -   For VPN, EAP Configuration is a separate field in the MDM Configuration. Work with your MDM provider to identify and update the appropriate Field.
 
 For information about EAP Settings, see <https://technet.microsoft.com/library/hh945104.aspx#BKMK_Cfg_cert_Selct>.
@@ -98,14 +98,14 @@ The following list describes the prerequisites for a certificate to be used with
 -   The certificate must have at least one of the following EKU (Extended Key Usage) properties:
 
     -   Client Authentication.
-    -   As defined by RFC 5280, this is a well-defined OID with Value 1.3.6.1.5.5.7.3.2.
+    -   As defined by RFC 5280, this property is a well-defined OID with Value 1.3.6.1.5.5.7.3.2.
     -   Any Purpose.
-    -   An EKU Defined and published by Microsoft, is a well-defined OID with value 1.3.6.1.4.1.311.10.12.1. The inclusion of this OID implies that the certificate can be used for any purpose. The advantage of this EKU over the All Purpose EKU is that additional non-critical or custom EKUs can still be added to the certificate for effective filtering.
+    -   An EKU Defined and published by Microsoft, is a well-defined OID with value 1.3.6.1.4.1.311.10.12.1. The inclusion of this OID implies that the certificate can be used for any purpose. The advantage of this EKU over the All Purpose EKU is that other non-critical or custom EKUs can still be added to the certificate for effective filtering.
     -   All Purpose.
-    -   As defined by RFC 5280, If a CA includes extended key usages to satisfy some application needs, but does not want to restrict usage of the key, the CA can add an Extended Key Usage Value of 0. A certificate with such an EKU can be used for all purposes.
+    -   As defined by RFC 5280, If a CA includes extended key usages to satisfy some application needs, but doesn't want to restrict usage of the key, the CA can add an Extended Key Usage Value of 0. A certificate with such an EKU can be used for all purposes.
 -   The user or the computer certificate on the client chains to a trusted root CA.
--   The user or the computer certificate does not fail any one of the checks that are performed by the CryptoAPI certificate store, and the certificate passes requirements in the remote access policy.
--   The user or the computer certificate does not fail any one of the certificate object identifier checks that are specified in the Internet Authentication Service (IAS)/Radius Server.
+-   The user or the computer certificate doesn't fail any one of the checks that are performed by the CryptoAPI certificate store, and the certificate passes requirements in the remote access policy.
+-   The user or the computer certificate doesn't fail any one of the certificate object identifier checks that are specified in the Internet Authentication Service (IAS)/Radius Server.
 -   The Subject Alternative Name (SubjectAltName) extension in the certificate contains the user principal name (UPN) of the user.
 
 The following XML sample explains the properties for the EAP TLS XML including certificate filtering.
@@ -219,14 +219,14 @@ Alternatively you can use the following procedure to create an EAP Configuration
 
 1.  Follow steps 1 through 7 in [EAP configuration](eap-configuration.md).
 
-2.  In the Microsoft VPN SelfHost Properties dialog box, select **Microsoft : Smart Card or other Certificate** from the drop down (this selects EAP TLS.)
+2.  In the Microsoft VPN SelfHost Properties dialog box, select **Microsoft : Smart Card or other Certificate** from the drop-down menu (this drop-down menu selects EAP TLS.).
 
     :::image type="content" alt-text="vpn selfhost properties window." source="images/certfiltering1.png":::
 
     > [!NOTE]
     > For PEAP or TTLS, select the appropriate method and continue following this procedure.
 
-3.  Click the **Properties** button underneath the drop down menu.
+3.  Click the **Properties** button underneath the drop-down menu.
 
 4.  In the **Smart Card or other Certificate Properties** menu, select the **Advanced** button.
 
@@ -246,17 +246,17 @@ Alternatively you can use the following procedure to create an EAP Configuration
 > You can also set all the other applicable EAP Properties through this UI as well. A guide to what these properties mean can be found in [Extensible Authentication Protocol (EAP) Settings for Network Access](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh945104(v=ws.11)).
 
 
-### MDM client will immediately check-in with the MDM server after client renews WNS channel URI
+### MDM client will immediately check in with the MDM server after client renews WNS channel URI
 
 After the MDM client automatically renews the WNS channel URI, the MDM client will immediately check-in with the MDM server. Henceforth, for every MDM client check-in, the MDM server should send a GET request for "ProviderID/Push/ChannelURI" to retrieve the latest channel URI and compare it with the existing channel URI; then update the channel URI if necessary.
 
 ### User provisioning failure in Azure Active Directory joined Windows 10 and Windows 11 devices
 
-In Azure AD joined Windows 10 and Windows 11, provisioning /.User resources fails when the user is not logged in as an Azure AD user. If you attempt to join Azure AD from **Settings** &gt; **System** &gt; **About** user interface, make sure to log off and log on with Azure AD credentials to get your organizational configuration from your MDM server. This behavior is by design.
+In Azure AD joined Windows 10 and Windows 11, provisioning /.User resources fails when the user isn't logged in as an Azure AD user. If you attempt to join Azure AD from **Settings** &gt; **System** &gt; **About** user interface, ensure to sign out and sign in with Azure AD credentials to get your organizational configuration from your MDM server. This behavior is by design.
 
 ### Requirements to note for VPN certificates also used for Kerberos Authentication
 
-If you want to use the certificate used for VPN authentication also for Kerberos authentication (required if you need access to on-premises resources using NTLM or Kerberos), the user's certificate must meet the requirements for smart card certificate, the Subject field should contain the DNS domain name in the DN or the SAN should contain a fully qualified UPN so that the DC can be located from the DNS registrations. If certificates that do not meet these requirements are used for VPN, users may fail to access resources that require Kerberos authentication. 
+If you want to use the certificate used for VPN authentication also for Kerberos authentication (required if you need access to on-premises resources using NTLM or Kerberos), the user's certificate must meet the requirements for smart card certificate, the Subject field should contain the DNS domain name in the DN or the SAN should contain a fully qualified UPN so that the DC can be located from the DNS registrations. If certificates that don't meet these requirements are used for VPN, users may fail to access resources that require Kerberos authentication. 
 
 ### Device management agent for the push-button reset is not working
 
@@ -270,7 +270,7 @@ The DM agent for [push-button reset](/windows-hardware/manufacture/desktop/push-
 No. Only one MDM is allowed.
 
 ### How do I set the maximum number of Azure Active Directory joined devices per user?
-1.  Login to the portal as tenant admin: https://manage.windowsazure.com.
+1.  Log on to the portal as tenant admin: https://manage.windowsazure.com.
 2.  Click Active Directory on the left pane.
 3.  Choose your tenant.
 4.  Click **Configure**.
@@ -283,9 +283,9 @@ No. Only one MDM is allowed.
 
 Entry | Description
 --------------- | --------------------
-What is dmwappushsvc? | It is a Windows service that ships in Windows 10 and Windows 11 operating system as a part of the windows management platform. It is used internally by the operating system as a queue for categorizing and processing all WAP messages, which include Windows management messages, MMS, NabSync, and Service Indication/Service Loading (SI/SL). The service also initiates and orchestrates management sync sessions with the MDM server. |
-What data is handled by dmwappushsvc? | It is a component handling the internal workings of the management platform and involved in processing messages that have been received by the device remotely for management. The messages in the queue are serviced by another component that is also part of the Windows management stack to process messages. The service also routes and authenticates WAP messages received by the device to internal OS components that process them further: MMS, NabSync, SI/SL. This service does not send telemetry.|
-How do I turn if off? | The service can be stopped from the "Services" console on the device (Start > Run > services.msc). However, since this is a component part of the OS and  required for the proper functioning of the device, we strongly recommend not to do this. Disabling this will cause your management to fail.|
+What is dmwappushsvc? | It's a Windows service that ships in Windows 10 and Windows 11 operating system as a part of the windows management platform. It's used internally by the operating system as a queue for categorizing and processing all WAP messages, which include Windows management messages, MMS, NabSync, and Service Indication/Service Loading (SI/SL). The service also initiates and orchestrates management sync sessions with the MDM server. |
+What data is handled by dmwappushsvc? | It's a component handling the internal workings of the management platform and involved in processing messages that have been received by the device remotely for management. The messages in the queue are serviced by another component that is also part of the Windows management stack to process messages. The service also routes and authenticates WAP messages received by the device to internal OS components that process them further: MMS, NabSync, SI/SL. This service doesn't send telemetry.|
+How do I turn if off? | The service can be stopped from the "Services" console on the device (Start > Run > services.msc). However, since this service is a component part of the OS and  required for the proper functioning of the device, we strongly recommend not to disable the service. Disabling this service will cause your management to fail.|
 
 
 
@@ -337,7 +337,7 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 | [Office CSP](office-csp.md) | Added FinalStatus setting in Windows 10, version 1809. |
 | [PassportForWork CSP](passportforwork-csp.md) | Added new settings in Windows 10, version 1809. |
 | [RemoteWipe CSP](remotewipe-csp.md) | Added new settings in Windows 10, version 1809. |
-| [SUPL CSP](supl-csp.md) | Added 3 new certificate nodes in Windows 10, version 1809. |
+| [SUPL CSP](supl-csp.md) | Added three new certificate nodes in Windows 10, version 1809. |
 | [TenantLockdown CSP](tenantlockdown-csp.md) | Added new CSP in Windows 10, version 1809. |
 | [Wifi CSP](wifi-csp.md) | Added a new node WifiCost in Windows 10, version 1809. |
 | [WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md) | Added new settings in Windows 10, version 1809. |
