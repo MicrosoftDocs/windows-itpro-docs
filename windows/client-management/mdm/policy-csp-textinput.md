@@ -1084,15 +1084,15 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Specifies whether the emoji button is enabled or disabled for the touch keyboard. When this policy is set to disabled, the emoji button on touch keyboard is disabled.
+Specifies whether the emoji, GIF (only in Windows 11), and kaomoji (only in Windows 11) buttons are available or unavailable for the touch keyboard. When this policy is set to disabled, the buttons are hidden and unavailable.
 
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) - The OS determines when it's most appropriate to be available.
--   1 - Emoji button on keyboard is always available.
--   2 - Emoji button on keyboard is always disabled.
+- 0 (default) - The OS determines when buttons are most appropriate to be available.
+- 1 - Emoji, GIF, and Kaomoji buttons on the touch keyboard are always available.
+- 2 - Emoji, GIF, and Kaomoji buttons on the touch keyboard are always unavailable.
 
 <!--/SupportedValues-->
 <!--/Policy-->
