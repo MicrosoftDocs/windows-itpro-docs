@@ -24,6 +24,8 @@
      
     - name: Microsoft Connected Cache
       items:
+        - name: Introducing Microsoft Connected Cache
+          href: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-microsoft-connected-cache-microsoft-s-cloud-managed/ba-p/963898
         - name: Microsoft Connected Cache for Enterprises
           href: mcc-enterprise.md
         - name: Microsoft Connected Cache for ISPs
@@ -31,8 +33,6 @@
 
     - name: Resources
       items:
-        - name: Introducing Microsoft Connected Cache
-          href: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-microsoft-connected-cache-microsoft-s-cloud-managed/ba-p/963898
         - name: Delivery Optimization reference
           href: waas-delivery-optimization-reference.md
         - name: Delivery Optimization client-service communication
