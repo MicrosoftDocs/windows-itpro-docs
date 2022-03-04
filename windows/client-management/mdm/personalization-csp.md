@@ -20,7 +20,7 @@ This CSP was added in Windows 10, version 1703.
 > [!Note]
 > Personalization CSP is supported in Windows 10 Enterprise and Education SKUs. It works in Windows 10 Pro and Windows 10 Pro in S mode if SetEduPolicies in [SharedPC CSP](sharedpc-csp.md) is set.
 
-The following shows the Personalization configuration service provider in tree format.
+The following example shows the Personalization configuration service provider in tree format.
 ```
 ./Vendor/MSFT
 Personalization
@@ -33,7 +33,7 @@ Personalization
 <p>Defines the root node for the Personalization configuration service provider.</p>
 
 <a href="" id="desktopimageurl"></a>**DesktopImageUrl**  
-<p>Specify a jpg, jpeg or png image to be used as Desktop Image. This setting can take a http or https Url to a remote image to be downloaded, a file Url to a local image.</p>
+<p>Specify a jpg, jpeg or png image to be used as Desktop Image. This setting can take an http or https Url to a remote image to be downloaded, a file Url to a local image.</p>
 <p>Value type is string. Supported operations are Add, Get, Delete, and Replace.</p>
 
 <a href="" id="desktopimagestatus"></a>**DesktopImageStatus**  
@@ -53,7 +53,7 @@ Personalization
 > This setting is only used to query status. To set the image, use the DesktopImageUrl setting.
 
 <a href="" id="lockscreenimageurl"></a>**LockScreenImageUrl**  
-<p>Specify a jpg, jpeg or png image to be used as Lock Screen Image. This setting can take a http or https Url to a remote image to be downloaded, a file Url to a local image.</p>
+<p>Specify a jpg, jpeg or png image to be used as Lock Screen Image. This setting can take an http or https Url to a remote image to be downloaded, a file Url to a local image.</p>
 <p>Value type is string. Supported operations are Add, Get, Delete, and Replace.</p>
 
 

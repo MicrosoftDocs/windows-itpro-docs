@@ -1,6 +1,6 @@
 ---
-title: Policies in Policy CSP supported by HoloLens (1st gen) Commercial Suite
-description: Policies in Policy CSP supported by HoloLens (1st gen) Commercial Suite
+title: Policies in Policy CSP supported by HoloLens (first gen) Commercial Suite
+description: Policies in Policy CSP supported by HoloLens (first gen) Commercial Suite
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.date: 09/17/2019
 ---
 
-# Policies in Policy CSP supported by HoloLens (1st gen) Commercial Suite
+# Policies in Policy CSP supported by HoloLens (first gen) Commercial Suite
 
 > [!div class="op_single_selector"]
 >
