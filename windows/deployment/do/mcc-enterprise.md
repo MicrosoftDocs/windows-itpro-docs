@@ -532,12 +532,12 @@ To verify that Delivery Optimization client can download content using Microsoft
 
     ![eMCC emg27](images/emcc27.png)
 
-2. Verify downloads came from MCC by one of two methods
+2. Verify downloads came from MCC by one of two methods:
 
-  1. Using PowerShell Cmdlet Get-DeliveryOptimizationStatus you should see BytesFromCacheServer test  
+    - Using PowerShell Cmdlet Get-DeliveryOptimizationStatus you should see BytesFromCacheServer test  
 
       ![eMCC emg28](images/emcc28.png)
 
-  2. Looking at the Delivery Optimization Activity Monitor
+    - Looking at the Delivery Optimization Activity Monitor
 
-    ![eMCC emg29](images/emcc29.png)
+      ![eMCC emg29](images/emcc29.png)
