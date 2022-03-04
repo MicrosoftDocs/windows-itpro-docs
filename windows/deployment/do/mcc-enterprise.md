@@ -64,28 +64,28 @@ If an MCC node is unavailable, the client will pull content from CDN to ensure u
 
 1. **Azure subscription**: MCC management portal is hosted within Azure and is used to create the Connected Cache [Azure resource](/azure/cloud-adoption-framework/govern/resource-consistency/resource-access-management.md) and IoT Hub resource – both are free services.
 
-  You Azure subscription ID is first used to provision MCC services, and enable access to the preview. The MCC server requirement for an Azure subscription will cost you nothing. If you do not have an Azure subscription already, you can create an Azure [Pay-As-You-Go](https://azure.microsoft.com/offers/ms-azr-0003p/) account which requires a credit card for verification purposes. For more information, see the [Azure Free Account FAQ](https://azure.microsoft.com/free/free-account-faq/).
+    Your Azure subscription ID is first used to provision MCC services, and enable access to the preview. The MCC server requirement for an Azure subscription will cost you nothing. If you do not have an Azure subscription already, you can create an Azure [Pay-As-You-Go](https://azure.microsoft.com/offers/ms-azr-0003p/) account which requires a credit card for verification purposes. For more information, see the [Azure Free Account FAQ](https://azure.microsoft.com/free/free-account-faq/).
 
-  The resources used for the preview and in the future when this product is ready for production will be completely free to you, like other caching solutions.
+    The resources used for the preview and in the future when this product is ready for production will be completely free to you, like other caching solutions.
 
 2. **Hardware to host MCC**: The recommended configuration will serve approximately 35000 managed devices, downloading a 2GB payload in 24-hour timeframe at a sustained rate of 6.5 Gbps.
 
-  **EFLOW Requires Hyper-V support**
- - On Windows client, enable the Hyper-V feature
- - On Windows Server, install the Hyper-V role and create a default network switch
+    **EFLOW Requires Hyper-V support**
+    - On Windows client, enable the Hyper-V feature
+    - On Windows Server, install the Hyper-V role and create a default network switch
 
-  Disk recommendations:
- - Using an SSD is recommended as cache read speed of SSD is superior to HDD
+    Disk recommendations:
+    - Using an SSD is recommended as cache read speed of SSD is superior to HDD
 
-  NIC requirements:
- - Multiple NICs on a single MCC instance are not supported.
- - 1 Gbps NIC is the minimum speed recommended but any NIC is supported.
- - For best performance, NIC and BIOS should support SR-IOV
+    NIC requirements:
+    - Multiple NICs on a single MCC instance are not supported.
+    - 1 Gbps NIC is the minimum speed recommended but any NIC is supported.
+    - For best performance, NIC and BIOS should support SR-IOV
 
-  VM networking:
- -  An external virtual switch to support outbound and inbound network communication (created during the installation process)
+    VM networking:
+    -  An external virtual switch to support outbound and inbound network communication (created during the installation process)
 
-### Requirements summary:
+### Sizing recommendations
 
 |   | Branch Office / Small Enterprise | Large Enterprise |
 | -- | --- | --- |
@@ -95,7 +95,7 @@ If an MCC node is unavailable, the client will pull content from CDN to ensure u
 |Memory | 4GB | 8GB |
 |Cores | 4 | 8  |
 
-## Steps to set up MCC
+## Steps to deploy MCC
 
 To deploy MCC to your server:
 
@@ -109,7 +109,7 @@ To deploy MCC to your server:
 
 For questions regarding these instructions contact [msconnectedcache@microsoft.com](mailto:msconnectedcache@microsoft.com)
 
-## Provide Microsoft with the Azure Subscription ID
+### Provide Microsoft with the Azure Subscription ID
 
 As part of the MCC preview onboarding process, an Azure subscription ID must be provided to Microsoft. 
 
@@ -118,11 +118,11 @@ As part of the MCC preview onboarding process, an Azure subscription ID must be 
 
 For information about creating or locating your subscription ID, see [Steps to obtain an Azure Subscription ID](#steps-to-obtain-an-azure-subscription-id).
 
-## Create the MCC resource in Azure
+### Create the MCC resource in Azure
 
 The MCC Azure management portal is used to create and manage MCC nodes. An Azure Subscription ID is used to grant access to the preview and to create the MCC resource in Azure and Cache nodes.
 
-### Use the following link and log in to Azure
+#### Use the following link and log in to Azure
 
 <https://portal.azure.com/?microsoft_azure_marketplace_ItemHideKey=Microsoft_ConnectedCache_EntHidden>
 
@@ -174,7 +174,7 @@ The MCC Azure management portal is used to create and manage MCC nodes. An Azure
     ![eMCC emg06](images/emcc06.png)
 
 
-### Error: Validation failed
+#### Error: Validation failed
 
 -   If you get a Validation failed error message on your portal, it is likely
     because you selected the Location as US West 2 or another location.
@@ -184,7 +184,7 @@ The MCC Azure management portal is used to create and manage MCC nodes. An Azure
     ![eMCC emg07](images/emcc07.png)
 
 
-## Create an MCC node in Azure
+### Create an MCC node in Azure
 
 Creating a MCC node is a multi-step process and the first step is to access the MCC private preview management portal.
 
@@ -218,13 +218,13 @@ Once the MCC node has been created, the installer instructions will be exposed. 
 
 ![eMCC emg10](images/emcc10.png)
 
-### Edit cache node information
+#### Edit cache node information
 
 Cache nodes can be deleted here by clicking the check box to the left of a Cache Node Name and then clicking the delete toolbar item. Be aware that if a cache node is deleted, there is no way to recover the cache node or any of the information related to the cache node.
 
 ![eMCC emg11](images/emcc11.png)
 
-## Install MCC on Windows
+### Install MCC on Windows
 
 Installing MCC on your Windows machine is a
 straightforward process. A PowerShell script performs the following tasks:
@@ -240,7 +240,7 @@ straightforward process. A PowerShell script performs the following tasks:
 -   Creates the necessary *FREE* Azure resource - IoT Hub/IoT Edge.
 -   Deploys the MCC container to server.
 
-### Run the installer
+#### Run the installer
 
 1.  Download and unzip mccinstaller.zip from the create cache node page or cache node configuration page which contains the necessary installation files
 
@@ -265,7 +265,7 @@ Files contained in the mccinstaller.zip file:
 
 **Windows Server:** [Install the Hyper-V role on Windows Server](/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server)
 
-### If you are installing MCC on a local virtual machine:
+#### If you are installing MCC on a local virtual machine:
 
 1. Enable Nested Virtualization
 
@@ -353,9 +353,9 @@ Set -VMProcessor -VMName **\<"VM name"\>** -ExposeVirtualizationExtensions \$tru
     2.  After validating your MCC is properly functional, please review your management solution documentation, such as [Intune](/mem/intune/configuration/delivery-optimization-windows), to set the cache host policy to the IP address of your MCC.
     3.  If you had errors during your deployment, visit the [Troubleshooting](#troubleshooting) section in this document
 
-## Verify proper functioning MCC server
+### Verify proper functioning MCC server
 
-### Verify Client Side
+#### Verify Client Side
 
 Let’s connect to the EFLOW VM and check if MCC is properly running
 
@@ -372,7 +372,7 @@ iotedge list
 
 You should see MCC, edgeAgent, and edgeHub running. If you see edgeAgent or edgeHub but not MCC, please try this command in a few minutes. The MCC container can take a few minutes to deploy
 
-### Verify server side
+#### Verify server side
 
 For a validation of properly functioning MCC, execute the following command in the EFLOW VM or any device in the network. Replace \<CacheServerIP\> with the IP address of the cache server.
 
@@ -394,16 +394,15 @@ Similarly, enter this URL from a browser in the network:
 
 If the test fails, see the common issues section for more information.
 
-## Intune (or other management software) configuration for MCC
+### Intune (or other management software) configuration for MCC
 
 Example of setting the cache host policy to the MCC’s IP address / FQDN:
 
-
 ![eMCC emg23](images/emcc23.png)
 
-## Common Issues
+### Common Issues
 
-##### PowerShell issues
+#### PowerShell issues
 
 If you are seeing errors similar to this: “The term ‘Get-Something’ is not recognized as the name of a cmdlet, function, script file, or operable program.”
 
@@ -417,7 +416,7 @@ If you are seeing errors similar to this: “The term ‘Get-Something’ is not
 
     **Windows Server:** [Install the Hyper-V role on Windows Server](/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server)
 
-##### Verify Running MCC Container
+#### Verify Running MCC Container
 
 Connect to the Connected Cache server and check the list of running IoT Edge modules using the following commands:
 
@@ -505,7 +504,7 @@ Edge LTS \> Uninstall
 5. On the **Subscriptions** blade, you will find details about your current subscription. Click on the subscription name. 
 6. After you select the subscription name, you will find the subscription ID in the **Overview** tab. Click on the **Copy to clipboard** icon next to your Subscription ID to copy the value. 
 
-#### Troubleshooting
+### Troubleshooting
 
 If you’re not able to sign up for a Microsoft Azure subscription with the error: **Account belongs to a directory that cannot be associated with an Azure subscription. Please sign in with a different account.** See [Can't sign up for a Microsoft Azure subscription](/troubleshoot/azure/general/cannot-sign-up-subscription). 
 
