@@ -1,6 +1,6 @@
 ---
 title: Win32 and Desktop Bridge app ADMX policy Ingestion
-description: Starting in Windows 10, version 1703, you can ingest ADMX files and set those ADMX policies for Win32 and Desktop Bridge apps.
+description: Starting in Windows 10, version 1904, you can ingest ADMX files and set those ADMX policies for Win32 and Desktop Bridge apps.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -25,7 +25,7 @@ manager: dansimp
 
 ## <a href="" id="overview"></a>Overview
 
-Starting in Windows 10, version 1703, you can ingest ADMX files (ADMX ingestion) and set those ADMX policies for Win32 and Desktop Bridge apps by using Windows 10 Mobile Device Management (MDM) on desktop SKUs. The ADMX files that define policy information can be ingested to your device by using the Policy CSP URI, `./Device/Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`. The ingested ADMX file is then processed into MDM policies. 
+Starting in Windows 10, version 1703, you can ingest ADMX files (ADMX ingestion) and set those ADMX policies for Win32 and Desktop Bridge apps by using Windows 10 Mobile Device Management (MDM) on desktop SKUs. The ADMX files that define policy information can be ingested to your device by using the Policy CSP URI, `./Device/Vendor/MSFT/Policy/ConfigOperations/ADMXUnInstall`. The ingested ADMX file is then processed into MDM policies. 
 
 NOTE: Starting from the following Windows 10 version Replace command is supported
 - Windows 10, version 1903 with KB4512941 and KB4517211 installed 
