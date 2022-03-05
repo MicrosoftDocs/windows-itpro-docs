@@ -55,7 +55,7 @@ If an MCC node is unavailable, the client will pull content from CDN to ensure u
 
 <a id="fig1">
 
-![eMCC emg01](images/emcc01.png)
+![eMCC img01](images/emcc01.png)
 
 </a>Figure 1: **MCC processes**. Each number in the diagram corresponds to the steps described above.
 
@@ -111,7 +111,7 @@ For questions regarding these instructions contact [msconnectedcache@microsoft.c
 
 ### Provide Microsoft with the Azure Subscription ID
 
-As part of the MCC preview onboarding process, an Azure subscription ID must be provided to Microsoft. 
+As part of the MCC preview onboarding process an Azure subscription ID must be provided to Microsoft. 
 
 > [!IMPORTANT]
 > [Contact Microsoft](mailto:mccforenterprise@microsoft.com?subject=[MCC%20for%20Enterprise]%20Please%20add%20our%20Azure%20subscription%20to%20the%20allow%20list) and provide this information if you have not already. You will not be able to proceed if you skip this step.
@@ -127,7 +127,7 @@ The MCC Azure management portal is used to create and manage MCC nodes. An Azure
 <https://portal.azure.com/?microsoft_azure_marketplace_ItemHideKey=Microsoft_ConnectedCache_EntHidden>
 
 1.  On the Azure Portal home page, choose **Create a resource**:  
-    ![eMCC emg02](images/emcc02.png)
+    ![eMCC img02](images/emcc02.png)
 
 2.  Type **Microsoft Connected Cache** into the search box, and hit **Enter** to show search results.
 
@@ -136,8 +136,8 @@ The MCC Azure management portal is used to create and manage MCC nodes. An Azure
 
 3.  Select **Microsoft Connected Cache** and choose **Create** on the next screen to start the process of creating the MCC resource.
 
-    ![eMCC emg03](images/emcc03.png)
-    ![eMCC emg04](images/emcc04.png)
+    ![eMCC img03](images/emcc03.png)
+    ![eMCC img04](images/emcc04.png)
 
 4.  Fill in the required fields to create the MCC resource.
 
@@ -153,19 +153,19 @@ The MCC Azure management portal is used to create and manage MCC nodes. An Azure
       > [!NOTE]
       > Your MCC resource must not contain the word **Microsoft** in it.
 
-      ![eMCC emg05](images/emcc05.png)
+      ![eMCC img05](images/emcc05.png)
 
 5.  Once all the information has been entered, click the **Review + Create** button. Once validation is complete, click the **Create** button to start the
     resource creation.
 
-    ![eMCC emg06](images/emcc06.png)
+    ![eMCC img06](images/emcc06.png)
 
 #### Error: Validation failed
 
 -   If you get a Validation failed error message on your portal, it is likely because you selected the **Location** as **US West 2** or some other location that is not **(US) West US**.
 -   To resolve this error, go to the previous step and choose **(US) West US**.
 
-    ![eMCC emg07](images/emcc07.png)
+    ![eMCC img07](images/emcc07.png)
 
 ### Create an MCC node in Azure
 
@@ -174,11 +174,11 @@ Creating a MCC node is a multi-step process and the first step is to access the 
 1.  After the successful resource creation click on the **Go to resource**.
 2.  Under **Cache Node Management** section on the leftmost panel, click on **Cache Nodes**.
 
-    ![eMCC emg08](images/emcc08.png)
+    ![eMCC img08](images/emcc08.png)
 
 3.  On the **Cache Nodes** blade, click on the **Create Cache Node** button.
 
-    ![eMCC emg09](images/emcc09.png)
+    ![eMCC img09](images/emcc09.png)
 
 4.  Clicking the **Create Cache Node** button will open the **Create Cache Node** page; **Cache Node Name** is the only field required for cache node creation.
 
@@ -188,19 +188,19 @@ Creating a MCC node is a multi-step process and the first step is to access the 
 
 5.  Enter the information for the **Cache Node** and click the **Create** button.
 
-![eMCC emg9.5](images/emcc09.5.png)
+![eMCC img9.5](images/emcc09.5.png)
 
 If there are errors, the form will provide guidance on how to correct the errors.
 
 Once the MCC node has been created, the installer instructions will be exposed. More details on the installer instructions will be addressed later in this article, in the [Install Connected Cache](#install-mcc-on-windows) section.
 
-![eMCC emg10](images/emcc10.png)
+![eMCC img10](images/emcc10.png)
 
 #### Edit cache node information
 
 Cache nodes can be deleted here by clicking the check box to the left of a **Cache Node Name** and then clicking the delete toolbar item. Be aware that if a cache node is deleted, there is no way to recover the cache node or any of the information related to the cache node.
 
-![eMCC emg11](images/emcc11.png)
+![eMCC img11](images/emcc11.png)
 
 ### Install MCC on Windows
 
@@ -219,7 +219,7 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
 
 1.  Download and unzip mccinstaller.zip from the create cache node page or cache node configuration page which contains the necessary installation files.
 
-  ![eMCC emg12](images/emcc12.png)
+  ![eMCC img12](images/emcc12.png)
 
 Files contained in the mccinstaller.zip file:
 
@@ -263,7 +263,7 @@ Files contained in the mccinstaller.zip file:
 
 4.  Copy the command from the portal and run it in Windows PowerShell
 
-    ![eMCC emg13](images/emcc13.png)
+    ![eMCC img13](images/emcc13.png)
 
   > [!NOTE]
   > After running the command, and multiple times throughout the installation process, you will receive the following notice. **Please select [R] Run once to proceed**.
@@ -280,15 +280,15 @@ Files contained in the mccinstaller.zip file:
 
   If you restarted your computer after creating a switch, start from Step 2 above and skip step 5.
 
-    ![eMCC emg14](images/emcc14.png)
+    ![eMCC img14](images/emcc14.png)
 
 4.  Re-run the script after the restart. This time, choose **No** when asked to create a new switch. Enter the number corresponding to the switch you previously created.
 
-    ![eMCC emg15](images/emcc15.png)
+    ![eMCC img15](images/emcc15.png)
 
 5.  Decide whether you would like to use dynamic or static address for the Eflow VM
 
-    ![eMCC emg16](images/emcc16.png)
+    ![eMCC img16](images/emcc16.png)
 
   > [!NOTE]
   > Choosing a dynamic IP address might assign a different IP address when the MCC restarts.
@@ -298,14 +298,14 @@ Files contained in the mccinstaller.zip file:
 
 7.  Follow the Azure Device Login link and sign into the Azure Portal.
 
-    ![eMCC emg17](images/emcc17.png)
+    ![eMCC img17](images/emcc17.png)
 
 8.  If this is your first MCC deployment, please select **n** so that a new IoT Hub can be created. If you have already configured MCC before, choose **y** so that your MCCs are grouped in the same IoT Hub.
 
     1.  You will be shown a list of existing IoT Hubs in your Azure Subscription; Enter the number corresponding to the IoT Hub to select it. **You will likely have only 1 IoT Hub in your subscription, in which case you want to enter “1”**
 
-    ![eMCC emg18](images/emcc18.png)
-    ![eMCC emg19](images/emcc19.png)
+    ![eMCC img18](images/emcc18.png)
+    ![eMCC img19](images/emcc19.png)
 
 9.  Your MCC deployment is now complete.
 
@@ -328,7 +328,7 @@ sudo -s
 iotedge list
 ```
 
-![eMCC emg20](images/emcc20.png)
+![eMCC img20](images/emcc20.png)
 
 You should see MCC, edgeAgent, and edgeHub running. If you see edgeAgent or edgeHub but not MCC, please try this command in a few minutes. The MCC container can take a few minutes to deploy
 
@@ -342,11 +342,11 @@ wget [http://\<CacheServerIP\>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.w
 
 A successful test result will look like this:
 
-![eMCC emg21](images/emcc21.png)
+![eMCC img21](images/emcc21.png)
 
 OR
 
-![eMCC emg22](images/emcc22.png)
+![eMCC img22](images/emcc22.png)
 
 Similarly, enter this URL from a browser in the network:
 
@@ -358,7 +358,7 @@ If the test fails, see the common issues section for more information.
 
 Example of setting the cache host policy to the MCC’s IP address / FQDN:
 
-![eMCC emg23](images/emcc23.png)
+![eMCC img23](images/emcc23.png)
 
 ### Common Issues
 
@@ -385,7 +385,7 @@ Connect-EflowVm
 sudo iotedge list​
 ```
 
-![eMCC emg24](images/emcc24.png)
+![eMCC img24](images/emcc24.png)
 
 If edgeAgent and edgeHub containers are listed, but not “MCC”, you may view the status of the IoTEdge security manager using the command:
 
@@ -395,7 +395,7 @@ sudo journalctl -u iotedge -f
 
 For example, this command will provide the current status of the starting, stopping of a container, or the container pull and start as is shown in the sample below:  
 
-![eMCC emg25](images/emcc25.png)
+![eMCC img25](images/emcc25.png)
 
 Use this command to check the IoT Edge Journal
 
@@ -522,7 +522,7 @@ You can either set your MCC IP address or FQDN using:
 
 3. In Windows release version 1809 and later, you can apply the policy via Group Policy Editor. The policy to apply is **DOCacheHost**. To configure the clients to pull content from the MCC using Group Policy, set the Cache Server Hostname (Setting found under Computer Configuration, Administrative Templates, Windows Components, Delivery Optimization) to the IP address of your MCC. For example 10.137.187.38.
 
-    ![eMCC emg26](images/emcc26.png)
+    ![eMCC img26](images/emcc26.png)
 
 **Verify Content using the DO Client**
 
@@ -530,17 +530,17 @@ To verify that Delivery Optimization client can download content using Microsoft
 
 1. Download a game or application from the Microsoft Store.   
 
-    ![eMCC emg27](images/emcc27.png)
+    ![eMCC img27](images/emcc27.png)
 
 2. Verify downloads came from MCC by one of two methods:
 
     - Using PowerShell Cmdlet Get-DeliveryOptimizationStatus you should see BytesFromCacheServer test  
 
-      ![eMCC emg28](images/emcc28.png)
+      ![eMCC img28](images/emcc28.png)
 
     - Looking at the Delivery Optimization Activity Monitor
 
-      ![eMCC emg29](images/emcc29.png)
+      ![eMCC img29](images/emcc29.png)
 
 ## Also see
 

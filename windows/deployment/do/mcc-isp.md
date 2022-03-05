@@ -102,101 +102,84 @@ For questions regarding these instructions contact [msconnectedcache@microsoft.c
 
 ## Provide Microsoft with the Azure Subscription ID
 
-As part of the MCC preview onboarding process the Azure subscription ID will have been provided to Microsoft. Please contact Microsoft and provide this information if you have not already.
+As part of the MCC preview onboarding process an Azure subscription ID must be provided to Microsoft.
+
+> [!IMPORTANT]
+> [Contact Microsoft](mailto:mccforenterprise@microsoft.com?subject=[MCC%20for%20Enterprise]%20Please%20add%20our%20Azure%20subscription%20to%20the%20allow%20list) and provide your Azure subscription ID if you have not already. You will not be able to proceed if you skip this step.
 
 
-## Create the MCC Resource in Azure
+For information about creating or locating your subscription ID, see [Steps to obtain an Azure Subscription ID](#steps-to-obtain-an-azure-subscription-id).
 
-[Link](https://aka.ms/MCC-ISP-PortalDemo) to video instructions:
-<https://aka.ms/MCC-ISP-PortalDemo>
+### Create the MCC resource in Azure
 
-The MCC Azure management portal is used to create and
-manage MCC nodes. An Azure Subscription ID is used to
-grant access to the preview and to create the MCC resource
-in Azure and Cache nodes.
+The MCC Azure management portal is used to create and manage MCC nodes. An Azure Subscription ID is used to grant access to the preview and to create the MCC resource in Azure and Cache nodes.
 
-##### Use the following link and log in to Azure <https://portal.azure.com/?microsoft_azure_marketplace_ItemHideKey=Microsoft_ConnectedCacheHidden>
+Use the following link to sign in to Azure: <https://portal.azure.com/?microsoft_azure_marketplace_ItemHideKey=Microsoft_ConnectedCache_EntHidden>
 
--   Choose Create a resource  
-    ![Graphical user interface, application Description automatically
-    generated](media/a29a93bb4eee0abcb1917c1b4ff23ad0.png)
+1. Choose **Create a resource**  
 
--   Type " MCC" into the search box and be sure to hit the
-    Enter key to show search results.
+    ![eMCC img02](images/imcc02.png)
 
--   Select “MCC” and select “Create” on the next screen to
-    start the process of creating the MCC resource.
+2. Type **Microsoft Connected Cache** into the search box, and hit **Enter** to show search results.
 
-    ![image](media/9f714d147e4c90275f8db945b3532ec5.png)
+3.  Select **Microsoft Connected Cache** and choose **Create** on the next screen to start the process of creating the MCC resource.
 
-    ![](media/ca8bd090d3d37246f99143691fabf3a2.png)
+    ![iMCC img03](images/imcc03.png)
+    ![iMCC img04](images/imcc04.png)
 
--   Fill in the required fields to create the MCC
-    resource.
+4.  Fill in the required fields to create the MCC resource.
 
-    -   Choose the subscription provided to Microsoft.
+    -   Choose the subscription that you provided to Microsoft.
+    -   Azure resource groups are logical groups of resources. Create a new resource group and choose a name for your resource group.
+    -   Choose **(US) West US**” for the location of the resource. This choice will not impact MCC if the physical location is not in the West US, it is just a limitation of the preview.
 
-    -   Azure resource groups are logical groups of resources. Create a new
-        resource group and choose a name for your resource group.
-
-    -   Choose “**US West**” for the location of the resource. This choice will
-        not impact MCC if the physical location is not in
-        the West US, it is just a limitation of the preview.
+       > [!NOTE]
+       > Your MCC resource will not be created properly if you do not select **(US) West US**
 
     -   Choose a name for the MCC resource.
 
-        ![Graphical user interface, text, application, email Description
-        automatically generated](media/0485f6efd6fb9c2ff4ac19a70298e322.png)
+        ![iMCC emg05](images/imcc05.png)
 
--   Once all the information has been entered, click on the “Review + Create”
-    button. Once validation is complete, click the “Create” button to start the
-    resource creation.  
-    ![Text, email Description automatically
-    generated](media/43b78ec34612279e209c137f99b0d699.png)
+5.  Once all the information has been entered, click the **Review + Create** button. Once validation is complete, click the **Create** button to start the
+    resource creation.
 
-##### Error: Validation failed
+    ![iMCC img06](images/imcc06.png)
 
--   If you get a Validation failed error message on your portal, it is likely
-    because you selected the Location as US West 2.
+#### Error: Validation failed
 
--   To bypass this error, navigate to the previous step and choose (US) West US.
+-   If you get a Validation failed error message on your portal, it is likely because you selected the **Location** as **US West 2** or some other location that is not **(US) West US**.
+-   To resolve this error, go to the previous step and choose **(US) West US**.
 
-![Graphical user interface, text, application, email Description automatically
-generated](media/9e14217bda4114f5cacbf3edff81616a.png)
+    ![iMCC img07](images/imcc07.png)
 
-## Create a MCC Node
+### Create an MCC node in Azure
 
-Creating a MCC node is a multi-step process and the first
-step is to access the MCC private preview management
-portal.
+Creating a MCC node is a multi-step process and the first step is to access the MCC private preview management portal.
 
-1.  After the successful resource creation click on the "Go to resource".
+1.  After the successful resource creation click on the **Go to resource**.
+2.  Under **Cache Node Management** section on the leftmost panel, click on **Cache Nodes**.
 
-| Under Cache Node Management section on the leftmost panel, click on Cache Nodes. ![Graphical user interface, text, application Description automatically generated](media/2067264f71c854b7ce281c2f0d0478b2.png) |   |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
+    ![iMCC img08](images/imcc08.png)
 
-1.  On the Cache Nodes blade, click on the Create Cache Node button.
+3.  On the **Cache Nodes** blade, click on the **Create Cache Node** button.
 
-![Graphical user interface, application Description automatically
-generated](media/82874c0364726a752f78793e07e6d477.png)
+    ![iMCC img09](images/imcc09.png)
 
-1.  Clicking the Create Cache Node button will open the Create Cache Node page,
-    Cache Node Name is the only field required for initial cache node creation,
-    but end-user devices will not request content without proper configuration
-    of the other values. The table below describes the information required.
+4.  Clicking the **Create Cache Node** button will open the **Create Cache Node** page; **Cache Node Name** is the only field required for cache node creation.
 
 | **Field Name**                | **Expected Value**                         | **Description**                                                                                                                                                                                         |
 |-------------------------------|--------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Cache Node Name**           | Alphanumeric name that includes no spaces. | The name of the cache node. You may choose names based on location like Seattle-1. This name must be unique cannot be changed later.                                                                    |
-| **Server Ip Address**         | Ipv4 Address                               | Ip address of your MCC server. Used to route end-user devices in your network to the server for Microsoft content downloads. Please note: IP address must be publicly accessible. |
-| **Address Range/CIDR Blocks** | Ipv4 CIDR notation                         | IP Address Range/CIDR blocks that should be routed to the MCC server as a comma separated list. For example: 2.21.234.0/24 , 3.22.235.0/24 , 4.23.236.0/24                        |
-| **Enable Cache Node**         | Enable/Disable Radio Button                | Enable and the cache node will receive content requests. Disable and the cache node will not receive content requests. Cache nodes are enabled by default.                                              |
+| **Server II Address**         | Ipv4 Address                               | IP address of your MCC server. This is used to route end-user devices in your network to the server for Microsoft content downloads. **The IP address must be publicly accessible.** |
+| **Address Range/CIDR Blocks** | IPv4 CIDR notation                         | IP Address range/CIDR blocks that should be routed to the MCC server as a comma separated list. For example: 2.21.234.0/24 , 3.22.235.0/24 , 4.23.236.0/24                        |
+| **Enable Cache Node**         | Enable/Disable Radio Button                | **Enable** permits the cache node to receive content requests. <br>**Disable** prevents the cache node from receiving content requests. <br>Cache nodes are enabled by default.          |
 
-![Graphical user interface, application Description automatically
-generated](media/c27015e77e3e8d14da0ce802a07985b2.png)
+  ![iMCC img10](images/imcc10.png)
 
 Hovering on the info ![](media/1b3a2ef4f5575feb1b68fc14074a1e08.png) next to
 each field will populate the details of that field.
+
+  ![iMCC img11](images/imcc11.png)
 
 ![Graphical user interface, text, application, email Description automatically
 generated](media/5db11e3290c80a5f11ffd8e8b632e866.png)
