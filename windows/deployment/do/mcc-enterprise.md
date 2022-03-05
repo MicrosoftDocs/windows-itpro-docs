@@ -99,7 +99,7 @@ If an MCC node is unavailable, the client will pull content from CDN to ensure u
 
 To deploy MCC to your server:
 
-1.  [Provide Microsoft with the Azure subscription to use for MCC](#provide-microsoft-with-the-azure-subscription-id)
+1.  [Provide Microsoft with the Azure subscription ID](#provide-microsoft-with-the-azure-subscription-id)
 2.  [Create the MCC Resource in Azure](#create-the-mcc-resource-in-azure)
 3.  [Create an MCC Node](#create-an-mcc-node-in-azure)
 4.  [Edit Cache Node Information](#edit-cache-node-information)

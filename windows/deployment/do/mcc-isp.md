@@ -13,7 +13,7 @@ ms.collection: M365-modern-desktop
 ms.topic: article
 ---
 
-# Microsoft Connected Cache for Internet Service Providers
+# MCC for Internet Service Providers
 
 **Applies to**
 
@@ -22,76 +22,97 @@ ms.topic: article
 
 ## Overview
 
-Microsoft Connected Cache (MCC) preview is a software-only caching solution that delivers Microsoft content within ISP networks. MCC can be deployed to as many bare-metal servers or VMs as needed and is managed from a cloud portal. Microsoft cloud services handle routing of consumer devices to the cache server for content downloads.
-Microsoft Connected Cache is a Hybrid (mix of on-prem and cloud resources) solution composed of a Docker compatible Linux container deployed to your server and a cloud management portal. Microsoft chose Azure IoT Edge (more information on IoT Edge in the appendix) as a secure and reliable control plane, and even though your scenario is not related to IoT, Azure IoT Edge is our secure Linux container deployment and management infrastructure. Azure IoT Edge consists of three components that the Microsoft Connected Cache infrastructure will utilize:
-1. A cloud-based interface that enables secure, remote installation, monitoring, and management of Microsoft Connected Cache nodes.
+> [!IMPORTANT]
+> Microsoft Connected Cache is currently a private preview feature. During this phase we invite customers to take part in early access for testing purposes. This phase does not include formal support, and should not be used for production workloads. For more information, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
+
+Microsoft Connected Cache (MCC) preview is a software-only caching solution that delivers Microsoft content within Enterprise networks. MCC can be deployed to as many physical servers or VMs as needed, and is managed from a cloud portal. Microsoft cloud services handle routing of consumer devices to the cache server for content downloads.
+
+MCC is a hybrid (a mix of on-prem and cloud resources) SaaS solution built as an Azure IoT Edge module; it is a Docker compatible Linux container that is deployed to your Windows devices. IoT Edge for Linux on Windows (EFLOW) was chosen because it is a secure, reliable container management infrastructure. EFLOW is a Linux virtual machine, based on Microsoft's first party CBL-Mariner operating system. It’s built with the IoT Edge runtime and validated as a tier 1 supported environment for IoT Edge workloads. MCC will be a Linux IoT Edge module running on the Windows Host OS. Azure IoT Edge consists of three components that the MCC infrastructure will utilize:
+
+1. A cloud-based interface that enables secure, remote installation, monitoring, and management of MCC nodes.
 2. A runtime that securely manages the modules deployed to each device.
-3. Modules/containers that run the Microsoft Connected Cache functionality on your device.
+3. Modules/containers that run the MCC functionality on your device.
 
-## How Microsoft Connected Cache Works
+## How MCC works
 
-1. The Azure Management Portal used to create and manage Microsoft Connected Cache nodes.
-2. The Microsoft Connected Cache container deployed and provisioned to the server.
-3. The Azure Management Portal used to configure Microsoft Delivery Optimization Services to route traffic to the Microsoft Connected Cache server by providing two pieces of information:
-  a. The publicly accessible IPv4 address of the server hosting the Microsoft Connected Cache container.
-  b. The CIDR blocks that represent the client IP address space, which should be routed to the Microsoft Connected Cache node.
-4. Microsoft end-user devices periodically connect with Microsoft Delivery Optimization Services, and the services match the IP address of the client with the IP address of the corresponding Microsoft Connected Cache node.
-5. Microsoft end-user devices make the range requests for content from the Microsoft Connected Cache node.
-6. Microsoft Connected Cache node pulls content from the CDN, seeds its local cache stored on disk and delivers the content to the client.
+The following steps describe how MCC is provisioned and used.
+
+1. The Azure Management Portal used to create and manage MCC nodes.
+2. The MCC container is deployed and provisioned to the server.
+3. The Azure Management Portal is used to configure Microsoft Delivery Optimization Services to route traffic to the MCC server by providing two pieces of information:
+    - The publicly accessible IPv4 address of the server hosting the MCC container.
+    - The CIDR blocks that represent the client IP address space, which should be routed to the MCC node.
+4. Microsoft end-user devices periodically connect with Microsoft Delivery Optimization Services, and the services match the IP address of the client with the IP address of the corresponding MCC node.
+5. Microsoft end-user devices make the range requests for content from the MCC node.
+6. An MCC node pulls content from the CDN, seeds its local cache stored on disk, and delivers the content to the client.
 7. Subsequent requests from end-user devices for content will now come from cache.
-8. If the Microsoft Connected Cache node is unavailable, the client will pull content from CDN to ensure uninterrupted service for your subscribers.
+8. If the MCC node is unavailable, the client will pull content from CDN to ensure uninterrupted service for your subscribers.
 
-![MCC overview 1](images/imcc01.png)
+    ![MCC overview 1](images/imcc01.png)
 
-## ISP Requirements for Microsoft Connected Cache
+## ISP Requirements for MCC
 
-1. Azure subscription – Microsoft Connected Cache management portal is hosted within Azure and is used to create the Connected Cache Azure resource and IoT Hub resource – both are free services.
-We will use your Azure subscription ID to take care of some provisioning with our services, first, to give you access to the preview. The Microsoft Connected Cache server requirement for an Azure subscription will cost you nothing. If you do not have an Azure subscription already, you can create an Azure Pay-As-You-Go account which requires a credit card for verification purposes. Please visit Azure Free Account FAQ | Microsoft Azure for more information.
-Again, the resources used for the preview and in the future when this product is ready for production will be completely free to you, like other caching solutions.
-Please note: If you request Exchange or Public peering in the future, business emails must be used to register ASN's as Microsoft does not accept gmail or other non-business emails.
-2. Hardware to host MCC - The recommended configuration will serve approximately 35,000 consumer devices downloading a 2GB payload in 24-hour timeframe at a sustained rate of 6.5 Gbps.
-Some notes on the disk requirements:
-• Using SSDs is recommended as cache read speed of SSD is superior to HDD.
-• Using multiple disks is recommended to improve cache performance.
-• RAID disk configurations are discouraged as cache performance will be impacted. If using RAID disk configurations ensure striping.
-• Maximum number of disks supported is 10.
-Some notes on the NIC requirements:
-• Multiple NICs on a single MCC instance are not supported.
-• 10Gbps NIC is the minimum speed recommended but any NIC is supported.
+1. **Azure subscription**: The MCC management portal is hosted within Azure, and is used to create the Connected Cache Azure resource and IoT Hub resource. Both are free services.
 
-Minimum Recommended Server Ubuntu 20.04 LTS VM or Physical Server Ubuntu 20.04 LTS VM or Physical Server (Preferred) NIC 10 Gbps > = 10 Gbps Disk • SSD • 1 – 2 drives minimum • 2 TB each minimum
-• SSD • 2 – 4 drives minimum. Max 10 drives. • 2 TB each minimum
-Memory 8 GB 32 GB or more Cores 4 8 or more
+    Your Azure subscription ID is first used to provision MCC services, and enable access to the preview. The MCC server requirement for an Azure subscription will cost you nothing. If you do not have an Azure subscription already, you can create an Azure [Pay-As-You-Go](https://azure.microsoft.com/offers/ms-azr-0003p/) account which requires a credit card for verification purposes. For more information, see the [Azure Free Account FAQ](https://azure.microsoft.com/free/free-account-faq/).
 
-## Steps to Set Up Microsoft Connected Cache
+    The resources used for the preview, and in the future when this product is ready for production, will be completely free to you - like other caching solutions. 
+    
+    > [!NOTE]
+    > If you request Exchange or Public peering in the future, business email addresses must be used to register ASN's, because Microsoft does not accept gmail or other non-business email addresses.
 
-Below is the summary of steps required to deploy Microsoft Connected Cache to your server. If you prefer following video instructions along with this document, here are part 1 (portal demo) and part 2 (installer demo).
-1. Provide Microsoft with the Azure subscription you will use for Microsoft Connected Cache
-2. Create the Microsoft Connected Cache Resource in Azure
-3. Create a Microsoft Connected Cache Node
-  -  IP space approval information
-4. Edit Cache Node Information
-5. Set up a server with Ubuntu 20.04 or an Ubuntu VM running on Windows Server 2019
-6. Install Microsoft Connected Cache on a Server or VM
-7. Verify Proper Functioning Microsoft Connected Cache Server
-8. View the Microsoft Connected Cache Summary Report
-9. Common Issues
+2. **Hardware to host MCC**: The recommended configuration will serve approximately 35,000 consumer devices, downloading a 2GB payload in 24-hour timeframe at a sustained rate of 6.5 Gbps.
 
-For questions regarding these instructions contact: **msconnectedcache@microsoft.com**
+Disk requirements:
+- SSDs are recommended due to improved cache read speeds of SSD, compared to HDD.
+- Using multiple disks is recommended to improve cache performance.
+- RAID disk configurations are discouraged because cache performance will be impacted. If you are using RAID disk configurations, ensure striping.
+- The maximum number of disks supported is 10.
+
+NIC requirements:
+- Multiple NICs on a single MCC instance are not supported.
+- 10Gbps NIC is the minimum speed recommended, but any NIC is supported.
+
+### Sizing recommendations
+
+|   | Minimum | Recommended |
+| -- | --- | --- |
+| OS|  Ubuntu 20.04 LTS VM or physical server | Ubuntu 20.04 LTS VM or physical server (preferred) |
+|NIC | 10 Gbps| at least 10 Gbps |
+|Disk | SSD <br>1 drive <br>2TB each  |SSD <br>2-4 drives <br>at least 2TB each  |
+|Memory | 8GB | 32GB or greater |
+|Cores | 4 | 8 or more  |
+
+## Steps to deploy MCC
+
+To deploy MCC:
+
+1. [Provide Microsoft with the Azure subscription ID](#provide-microsoft-with-the-azure-subscription-id)
+2. [Create the MCC Resource in Azure](#create-the-mcc-resource-in-azure)
+3. [Create an MCC Node](#create-an-mcc-node-in-azure)
+    - IP address space approval information is required 
+4. [Edit Cache Node Information](#edit-cache-node-information)
+5. [Set up your server](#set-up-your-server)
+6. [Install MCC on a physical server or VM](#install-mcc-on-windows)
+7. [Verify proper functioning MCC server](#verify-proper-functioning-mcc-server)
+8. [Review the MCC summary report](#review-the-mcc-summary-report) 
+9. [Review common Issues](#common-issues) if needed.
+
+For questions regarding these instructions contact [msconnectedcache@microsoft.com](mailto:msconnectedcache@microsoft.com)
 
 ## Provide Microsoft with the Azure Subscription ID
 
-As part of the Microsoft Connected Cache preview onboarding process the Azure subscription ID will have been provided to Microsoft. Please contact Microsoft and provide this information if you have not already.
+As part of the MCC preview onboarding process the Azure subscription ID will have been provided to Microsoft. Please contact Microsoft and provide this information if you have not already.
 
 
-## Create the Microsoft Connected Cache Resource in Azure
+## Create the MCC Resource in Azure
 
 [Link](https://aka.ms/MCC-ISP-PortalDemo) to video instructions:
 <https://aka.ms/MCC-ISP-PortalDemo>
 
-The Microsoft Connected Cache Azure management portal is used to create and
-manage Microsoft Connected Cache nodes. An Azure Subscription ID is used to
-grant access to the preview and to create the Microsoft Connected Cache resource
+The MCC Azure management portal is used to create and
+manage MCC nodes. An Azure Subscription ID is used to
+grant access to the preview and to create the MCC resource
 in Azure and Cache nodes.
 
 ##### Use the following link and log in to Azure <https://portal.azure.com/?microsoft_azure_marketplace_ItemHideKey=Microsoft_ConnectedCacheHidden>
@@ -100,17 +121,17 @@ in Azure and Cache nodes.
     ![Graphical user interface, application Description automatically
     generated](media/a29a93bb4eee0abcb1917c1b4ff23ad0.png)
 
--   Type " Microsoft Connected Cache" into the search box and be sure to hit the
+-   Type " MCC" into the search box and be sure to hit the
     Enter key to show search results.
 
--   Select “Microsoft Connected Cache” and select “Create” on the next screen to
-    start the process of creating the Microsoft Connected Cache resource.
+-   Select “MCC” and select “Create” on the next screen to
+    start the process of creating the MCC resource.
 
     ![image](media/9f714d147e4c90275f8db945b3532ec5.png)
 
     ![](media/ca8bd090d3d37246f99143691fabf3a2.png)
 
--   Fill in the required fields to create the Microsoft Connected Cache
+-   Fill in the required fields to create the MCC
     resource.
 
     -   Choose the subscription provided to Microsoft.
@@ -119,10 +140,10 @@ in Azure and Cache nodes.
         resource group and choose a name for your resource group.
 
     -   Choose “**US West**” for the location of the resource. This choice will
-        not impact Microsoft Connected Cache if the physical location is not in
+        not impact MCC if the physical location is not in
         the West US, it is just a limitation of the preview.
 
-    -   Choose a name for the Microsoft Connected Cache resource.
+    -   Choose a name for the MCC resource.
 
         ![Graphical user interface, text, application, email Description
         automatically generated](media/0485f6efd6fb9c2ff4ac19a70298e322.png)
@@ -143,10 +164,10 @@ in Azure and Cache nodes.
 ![Graphical user interface, text, application, email Description automatically
 generated](media/9e14217bda4114f5cacbf3edff81616a.png)
 
-## Create a Microsoft Connected Cache Node
+## Create a MCC Node
 
-Creating a Microsoft Connected Cache node is a multi-step process and the first
-step is to access the Microsoft Connected Cache private preview management
+Creating a MCC node is a multi-step process and the first
+step is to access the MCC private preview management
 portal.
 
 1.  After the successful resource creation click on the "Go to resource".
@@ -167,8 +188,8 @@ generated](media/82874c0364726a752f78793e07e6d477.png)
 | **Field Name**                | **Expected Value**                         | **Description**                                                                                                                                                                                         |
 |-------------------------------|--------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Cache Node Name**           | Alphanumeric name that includes no spaces. | The name of the cache node. You may choose names based on location like Seattle-1. This name must be unique cannot be changed later.                                                                    |
-| **Server Ip Address**         | Ipv4 Address                               | Ip address of your Microsoft Connected Cache server. Used to route end-user devices in your network to the server for Microsoft content downloads. Please note: IP address must be publicly accessible. |
-| **Address Range/CIDR Blocks** | Ipv4 CIDR notation                         | IP Address Range/CIDR blocks that should be routed to the Microsoft Connected Cache server as a comma separated list. For example: 2.21.234.0/24 , 3.22.235.0/24 , 4.23.236.0/24                        |
+| **Server Ip Address**         | Ipv4 Address                               | Ip address of your MCC server. Used to route end-user devices in your network to the server for Microsoft content downloads. Please note: IP address must be publicly accessible. |
+| **Address Range/CIDR Blocks** | Ipv4 CIDR notation                         | IP Address Range/CIDR blocks that should be routed to the MCC server as a comma separated list. For example: 2.21.234.0/24 , 3.22.235.0/24 , 4.23.236.0/24                        |
 | **Enable Cache Node**         | Enable/Disable Radio Button                | Enable and the cache node will receive content requests. Disable and the cache node will not receive content requests. Cache nodes are enabled by default.                                              |
 
 ![Graphical user interface, application Description automatically
@@ -186,7 +207,7 @@ cache node is created.
 | **Field Name**      | **Description**                                                                                                                                                          |
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Ip Space**        | Number of Ips addresses that will be routed to your cache server.                                                                                                        |
-| **Activation Keys** | Set of keys to activate your cache node with the Microsoft Connected Cache services. Copy the keys for use during install. The CustomerID is your Azure subscripiton ID. |
+| **Activation Keys** | Set of keys to activate your cache node with the MCC services. Copy the keys for use during install. The CustomerID is your Azure subscripiton ID. |
 
 1.  Enter the information for the Cache Node and click on the Create button. In
     the screenshot below only the Cache Node Name is provided, but all
@@ -209,7 +230,7 @@ In the screenshot below all information is provided.
 ![Graphical user interface, application, email Description automatically
 generated](media/9b7a25eb285a2c10e7ef78587af8910b.png)
 
-Once the Microsoft Connected Cache Node has been created, the installer
+Once the MCC Node has been created, the installer
 instructions will be exposed. More details on the installer instructions will be
 addressed later in this doc can be found at the [Install Connected
 Cache](#install-microsoft-connected-cache-on-a-server-or-vm) section.
@@ -256,7 +277,7 @@ generated](media/14e6ab80f7d55c4fbcb1d2a3887e442a.png)
 
 ## Set up a server with SR or an Ubuntu VM running on Windows Server
 
-The Microsoft Connected Cache module is optimized for Ubuntu 20.04 LTS. Install
+The MCC module is optimized for Ubuntu 20.04 LTS. Install
 Ubuntu 20.04 LTS on bare metal or VM of your choice. As discussed earlier, the
 recommended configuration (details below) will serve approximately 35,000
 consumer devices downloading a 2GB payload in 24-hour timeframe at a sustained
@@ -270,12 +291,12 @@ rate of 6.5 Gbps.
 | **Memory**  | 8 GB                                        | 32 GB or more                                      |
 | **Cores**   | 4                                           | 8 or more                                          |
 
-## Install Microsoft Connected Cache on a Server or VM
+## Install MCC on a Server or VM
 
 [Link](https://aka.ms/MCC-ISP-InstallerDemo) to video instructions:
 <https://aka.ms/MCC-ISP-InstallerDemo>
 
-Installing Microsoft Connected Cache on your bare metal server or VM is a
+Installing MCC on your bare metal server or VM is a
 straightforward process. A Bash script installer performs the following tasks:
 
 -   Azure IoT Edge relies on an OCI-compatible container runtime. The script
@@ -286,21 +307,21 @@ straightforward process. A Bash script installer performs the following tasks:
 -   Installs SSH to support remote access to the server
 
 -   Enables the firewall and opens ports 80 and 22 for inbound and outbound
-    traffic. Port 80 is used by Microsoft Connected Cache and port 22 is used
+    traffic. Port 80 is used by MCC and port 22 is used
     for SSH communications.
 
 -   Configures Connected Cache tuning settings.
 
 -   Creates the necessary *FREE* Azure resource - IoT Hub/IoT Edge.
 
--   Deploys the Microsoft Connected Cache container to server.
+-   Deploys the MCC container to server.
 
     **Note**
 
     **Please ensure Port 5000 is open so Microsoft can verify proper functioning
     of the cache server**
 
-Steps to install Microsoft Connected Cache
+Steps to install MCC
 
 1.  Download and unzip mccinstaller.zip from the create cache node page or cache
     node configuration page which contains the necessary installation files.
@@ -370,7 +391,7 @@ will need to provision a new one.
 
 ![](media/7b1fbec06b8f03e2e3fdd6987e2e6c8b.jpg)
 
-1.  If this is your first Microsoft Connected Cache deployment, select “n” when
+1.  If this is your first MCC deployment, select “n” when
     prompted for an IoT Hub. If this is **not** your first MCC deployment, you
     can use an existing IoT hub from your previous MCC installation. After
     selecting “Y”, we will display your existing IoT Hubs, you can copy and
@@ -387,7 +408,7 @@ will need to provision a new one.
     -   If there were follow the instructions to trouble shoot IoT edge
         <https://docs.microsoft.com/en-us/azure/iot-edge/troubleshoot>
 
-## Verify Proper Functioning Microsoft Connected Cache Server
+## Verify Proper Functioning MCC Server
 
 #### Verify Client Side
 
@@ -412,7 +433,7 @@ sample below:
 
 It can take a few minutes for the container to deploy.
 
-For a validation of properly functioning Microsoft Connected Cache, execute the
+For a validation of properly functioning MCC, execute the
 following command in the terminal of the cache server or any device in the
 network. Replace \<CacheServerIP\> with the IP address of the cache server.
 
@@ -569,7 +590,7 @@ sudo ./uninstallmcc.sh
 
 # Appendix
 
-Performance of Microsoft Connected Cache in Hypervisor Environments
+Performance of MCC in Hypervisor environments
 
 We have observed in Hypervisor environments the cache server peak egress at
 around 1.1 Gbps. If you wish to maximize the egress in hypervisor environments
