@@ -181,82 +181,56 @@ each field will populate the details of that field.
 
   ![iMCC img11](images/imcc11.png)
 
-![Graphical user interface, text, application, email Description automatically
-generated](media/5db11e3290c80a5f11ffd8e8b632e866.png)
-
-There are two other read-only fields on this page that are populated after the
-cache node is created.
+There are two other read-only fields on this page that are populated after the cache node is created:
 
 | **Field Name**      | **Description**                                                                                                                                                          |
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Ip Space**        | Number of Ips addresses that will be routed to your cache server.                                                                                                        |
+| **IP Space**        | Number of IP addresses that will be routed to your cache server.                                                                                                        |
 | **Activation Keys** | Set of keys to activate your cache node with the MCC services. Copy the keys for use during install. The CustomerID is your Azure subscripiton ID. |
 
-1.  Enter the information for the Cache Node and click on the Create button. In
-    the screenshot below only the Cache Node Name is provided, but all
-    information can be included if desired.
+5.  Enter the information for the Cache Node and click on the Create button. In the screenshot below only the Cache Node Name is provided, but all information can be included if desired.
 
-    ![Graphical user interface, text, application Description automatically
-    generated](media/7c1b563974b76e551d41f869ae3162ca.png)
+    ![iMCC img12](images/imcc12.png)
 
-If there are errors the form will provide guidance on how to correct the errors.
-For example:
+    If there are errors the form will provide guidance on how to correct the errors. For example:
 
--   The cache node name is in use in the resource or is an incorrect format.
+    - The cache node name is in use in the resource or is an incorrect format.
+    - If the CIDR block notation or list is incorrect.
+    - The server IP address or CIDR block are already in use.
 
--   If the CIDR block notation or list is incorrect.
+    See the following example with all information entered:
 
--   The server Ip or CIDR block are already in use.
+    ![iMCC img13](images/imcc13.png)
 
-In the screenshot below all information is provided.
+    Once the MCC Node has been created, the installer instructions will be exposed. More details on the installer instructions will be addressed later in this doc can be found at the [Install Connected Cache](#install-microsoft-connected-cache-on-a-server-or-vm) section.
 
-![Graphical user interface, application, email Description automatically
-generated](media/9b7a25eb285a2c10e7ef78587af8910b.png)
+    ![iMCC img14](images/imcc14.png)
 
-Once the MCC Node has been created, the installer
-instructions will be exposed. More details on the installer instructions will be
-addressed later in this doc can be found at the [Install Connected
-Cache](#install-microsoft-connected-cache-on-a-server-or-vm) section.
+### IP address space approval
 
-![Graphical user interface, text, application, email Description automatically
-generated](media/b1bb099ce8a574f1705e35c09f44bac7.png)
+There are three states for IP address space that are explained in the table below. The preview will require approval from Microsoft CIDR block ranges that contain more than 50,000 IP addresses. In the future, MCC configuration will support BGP and will therefore have automatic routing capabilities.
 
-### Ip Space Approval Information
+| **IP address space status**    | **Description**     |
+|------------------------|------------------------------------|
+| **Valid**              | The IP address space is below the 50,000 IP address space threshold and the space does not overlap with existing cache nodes.    |
+| **In Review**    | The IP address space exceeds the 50,000 IP address space and is under review with Microsoft to ensure valid IP address space.   |
+| **Attention Required** | The IP address space has been reviewed and an issue was discovered. Some examples include: IP address space overlap with existing cache node belonging to another customer. IP address space was exceedingly large.  Contact Microsoft for more information if your IP address space has this status. |
 
-There are three states for Ip space (screenshot below) that are explained in the
-table below. The preview will require approval from Microsoft CIDR block ranges
-that contain more than 50,000 Ip addresses. In the future Microsoft Connected
-Cache configuration will support BGP and will therefore have automatic routing
-capabilities.
+See the following example:
 
-| **Ip Space Status**    | **Description**                                                                                                                                                                                                                                                       |
-|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Valid**              | The Ip space is below the 50,000 Ip space threshold and the space does not overlap with existing cache nodes.                                                                                                                                                         |
-| **In Review**          | The Ip space exceeds the 50,000 Ip space and is under review with Microsoft to ensure valid Ip space.                                                                                                                                                                 |
-| **Attention Required** | The Ip space has been reviewed and an issue was discovered. Some examples include: Ip space overlap with existing cache node belonging to another customer. Ip space was exceedingly large.  Contact Microsoft for more information if your Ip space has this status. |
-
-![Graphical user interface Description automatically
-generated](media/cbfd171017588896b4751b459d46f08b.png)
+![iMCC img15](images/imcc15.png)
 
 ## Edit Cache Node Information
 
-Ip address or CIDR information can be modified for existing Microsoft Connected
-Cache nodes in the portal.
+IP address or CIDR information can be modified for existing MCC nodes in the portal.
 
-To edit Ip address or CIDR information click on the Cache Node Name which will
-open the Cache Node Configuration page. Cache nodes can be deleted here by
-clicking the check box to the left of a Cache Node Name and then clicking the
-delete toolbar item. Be aware that if a cache node is deleted, there is no way
-to recover the cache node or any of the information related to the cache node.
+To edit IP address or CIDR information, click on the Cache Node Name which will open the Cache Node Configuration page. Cache nodes can be deleted here by clicking the check box to the left of a Cache Node Name and then clicking the delete toolbar item. Be aware that if a cache node is deleted, there is no way to recover the cache node or any of the information related to the cache node.
 
-![Graphical user interface, text, application Description automatically
-generated](media/b6929572db97e3812be208a7a10afe10.png)
+![iMCC img16](images/imcc16.png)
 
-The Server Ip Address, Address Range/CIDR Blocks, and Enable Cache Node are all
-editable as show in the screenshot below.
+The Server IP Address, Address Range/CIDR Blocks, and Enable Cache Node are all editable as show below:
 
-![Graphical user interface, text, application, email Description automatically
-generated](media/14e6ab80f7d55c4fbcb1d2a3887e442a.png)
+![iMCC img17](images/imcc17.png)
 
 ## Set up a server with SR or an Ubuntu VM running on Windows Server
 
