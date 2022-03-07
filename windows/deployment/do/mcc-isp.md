@@ -75,13 +75,13 @@ NIC requirements:
 
 ### Sizing recommendations
 
-|   | Minimum | Recommended |
+| Component  | Minimum | Recommended |
 | -- | --- | --- |
-| OS|  Ubuntu 20.04 LTS VM or physical server | Ubuntu 20.04 LTS VM or physical server (preferred) |
-|NIC | 10 Gbps| at least 10 Gbps |
-|Disk | SSD <br>1 drive <br>2TB each  |SSD <br>2-4 drives <br>at least 2TB each  |
-|Memory | 8GB | 32GB or greater |
-|Cores | 4 | 8 or more  |
+| OS |  Ubuntu 20.04 LTS VM or physical server | Ubuntu 20.04 LTS VM or physical server (preferred) |
+| NIC | 10 Gbps| at least 10 Gbps |
+| Disk | SSD <br>1 drive <br>2TB each  |SSD <br>2-4 drives <br>at least 2TB each  |
+| Memory | 8GB | 32GB or greater |
+| Cores | 4 | 8 or more  |
 
 ## Steps to deploy MCC
 
@@ -572,7 +572,7 @@ You can use hardware that will natively run Ubuntu 20.04 LTS, or you can run an 
     ![iMCC img51](images/imcc51.png)
     ![iMCC img52](images/imcc52.png)
 
-Your Ubuntu VM should now be ready for the next step: [*Install Microsoft Connected Cache on Your Server or VM*](#install-mcc-on-a-server-or-vm)
+Your Ubuntu VM should now be ready to [Install MCC](#install-mcc).
 
 ### IoT Edge runtime
 
