@@ -64,6 +64,8 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
   <EKUs />
   <!--File Rules-->
   <FileRules>
+    <Allow ID="ID_ALLOW_ALL_1" FriendlyName="" FileName="*" />
+    <Allow ID="ID_ALLOW_ALL_2" FriendlyName="" FileName="*" />
     <Deny ID="ID_DENY_ASIO_32_SHA1" FriendlyName="ASIO32.sys Hash Sha1" Hash="D569D4BAB86E70EFBCDFDAC9D822139D6F477B7C" />
     <Deny ID="ID_DENY_ASIO_32_SHA256" FriendlyName="ASIO32.sys Hash Sha256" Hash="80599708CE61EC5D6DCFC5977208A2A0BE2252820A88D9BA260D8CDF5DC7FBE4" />
     <Deny ID="ID_DENY_ASIO_32_SHA1_PAGE" FriendlyName="ASIO32.sys Hash Page Sha1" Hash="80FA962BDFB76DFCB9E5D13EFC38BB3D392F2E77" />
