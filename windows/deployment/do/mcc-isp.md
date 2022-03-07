@@ -89,14 +89,13 @@ To deploy MCC:
 
 1. [Provide Microsoft with the Azure subscription ID](#provide-microsoft-with-the-azure-subscription-id)
 2. [Create the MCC Resource in Azure](#create-the-mcc-resource-in-azure)
-3. [Create an MCC Node](#create-an-mcc-node-in-azure)
-    - IP address space approval information is required 
+3. [Create an MCC Node](#create-an-mcc-node-in-azure): IP address space approval information is required for this step. 
 4. [Edit Cache Node Information](#edit-cache-node-information)
-5. [Set up your server](#set-up-your-server)
-6. [Install MCC on a physical server or VM](#install-mcc-on-windows)
+5. [Set up your server](#set-up-a-server-with-sr-or-an-ubuntu)
+6. [Install MCC on a physical server or VM](#install-mcc)
 7. [Verify proper functioning MCC server](#verify-proper-functioning-mcc-server)
-8. [Review the MCC summary report](#review-the-mcc-summary-report) 
-9. [Review common Issues](#common-issues) if needed.
+8. [Review the MCC summary report](#verify-server-side) 
+9. [Review common issues](#common-issues) if needed.
 
 For questions regarding these instructions contact [msconnectedcache@microsoft.com](mailto:msconnectedcache@microsoft.com)
 
@@ -176,8 +175,7 @@ Creating a MCC node is a multi-step process and the first step is to access the 
 
   ![iMCC img10](images/imcc10.png)
 
-Hovering on the info ![](media/1b3a2ef4f5575feb1b68fc14074a1e08.png) next to
-each field will populate the details of that field.
+Hovering your cursor next to each field will populate the details of that field.
 
   ![iMCC img11](images/imcc11.png)
 
@@ -202,7 +200,7 @@ There are two other read-only fields on this page that are populated after the c
 
     ![iMCC img13](images/imcc13.png)
 
-    Once the MCC Node has been created, the installer instructions will be exposed. More details on the installer instructions will be addressed later in this doc can be found at the [Install Connected Cache](#install-microsoft-connected-cache-on-a-server-or-vm) section.
+    Once the MCC Node has been created, the installer instructions will be exposed. More details on the installer instructions will be addressed later in this doc can be found at the [Install Connected Cache](#install-mcc) section.
 
     ![iMCC img14](images/imcc14.png)
 
@@ -244,7 +242,7 @@ The MCC module is optimized for Ubuntu 20.04 LTS. Install Ubuntu 20.04 LTS on a 
 | **Memory**  | 8 GB                                        | 32 GB or more                                      |
 | **Cores**   | 4                                           | 8 or more                                          |
 
-## Install MCC on a Server or VM
+## Install MCC
 
 Installing MCC on your physical server or VM is a straightforward process. A Bash script installer performs the following tasks:
 
@@ -487,10 +485,18 @@ To run the script, enter the following commands:
 sudo chmod +x uninstallmcc.sh
 sudo ./uninstallmcc.sh
 ```
-
 ## Appendix
 
-Performance of MCC in Hypervisor environments
+### Steps to obtain an Azure Subscription ID
+
+1. Sign in to https://portal.azure.com/ and navigate to the Azure services section.
+2. Click on **Subscriptions**. If you do not see **Subscriptions**, click on the **More Services** arrow and search for **Subscriptions**. 
+3. If you already have an Azure Subscription, skip to step 5. If you do not have an Azure Subscription, select **+ Add** on the top left. 
+4. Select the **Pay-As-You-Go** subscription. You will be asked to enter credit card information, but you will not be charged for using the MCC service. 
+5. On the **Subscriptions** blade, you will find details about your current subscription. Click on the subscription name. 
+6. After you select the subscription name, you will find the subscription ID in the **Overview** tab. Click on the **Copy to clipboard** icon next to your Subscription ID to copy the value. 
+
+### Performance of MCC in Hypervisor environments
 
 We have observed in hypervisor environments the cache server peak egress at around 1.1 Gbps. If you wish to maximize the egress in hypervisor environments it is critical to make two settings changes.
 
@@ -498,7 +504,7 @@ We have observed in hypervisor environments the cache server peak egress at arou
 
 2. Enable “high performance” in the BIOS as opposed to energy savings. Microsoft has found this setting nearly doubled egress a Microsoft Hyper-V deployment.
 
-## Setting up a VM on Windows Server
+### Setting up a VM on Windows Server
 
 You can use hardware that will natively run Ubuntu 20.04 LTS, or you can run an Ubuntu VM. The following steps describe how to set up a VM on Hyper-V.
 
@@ -568,7 +574,7 @@ You can use hardware that will natively run Ubuntu 20.04 LTS, or you can run an 
 
 Your Ubuntu VM should now be ready for the next step: [*Install Microsoft Connected Cache on Your Server or VM*](#install-mcc-on-a-server-or-vm)
 
-## IoT Edge runtime
+### IoT Edge runtime
 
 The Azure IoT Edge runtime enables custom and cloud logic on IoT Edge devices. The runtime sits on the IoT Edge device, and performs management and communication operations. The runtime performs several functions:
 
