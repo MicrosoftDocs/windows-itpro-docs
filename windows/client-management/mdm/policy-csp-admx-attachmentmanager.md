@@ -77,13 +77,13 @@ This policy setting allows you to configure the logic that Windows uses to deter
 
 Preferring the file handler instructs Windows to use the file handler data over the file type data. For example, trust notepad.exe, but don't trust .txt files.
 
-Preferring the file type instructs Windows to use the file type data over the file handler data. For example, trust .txt files, regardless of the file handler.  Using both the file handler and type data is the most restrictive option. Windows chooses the more restrictive recommendation which will cause users to see more trust prompts than choosing the other options.
+Preferring the file type instructs Windows to use the file type data over the file handler data. For example, trust .txt files, regardless of the file handler.  Using both the file handler and type data is the most restrictive option. Windows chooses the more restrictive recommendation that will cause users to see more trust prompts than choosing the other options.
 
 If you enable this policy setting, you can choose the order in which Windows processes risk assessment data.
 
 If you disable this policy setting, Windows uses its default trust logic, which prefers the file handler over the file type.
 
-If you do not configure this policy setting, Windows uses its default trust logic, which prefers the file handler over the file type.
+If you don't configure this policy setting, Windows uses its default trust logic, which prefers the file handler over the file type.
 
 <!--/Description-->
 
@@ -130,13 +130,13 @@ High Risk: If the attachment is in the list of high-risk file types and is from 
 
 Moderate Risk: If the attachment is in the list of moderate-risk file types and is from the restricted or Internet zone, Windows prompts the user before accessing the file.
 
-Low Risk: If the attachment is in the list of low-risk file types, Windows will not prompt the user before accessing the file, regardless of the file's zone information.
+Low Risk: If the attachment is in the list of low-risk file types, Windows won't prompt the user before accessing the file, regardless of the file's zone information.
 
 If you enable this policy setting, you can specify the default risk level for file types.
 
 If you disable this policy setting, Windows sets the default risk level to moderate.
 
-If you do not configure this policy setting, Windows sets the default risk level to moderate.
+If you don't configure this policy setting, Windows sets the default risk level to moderate.
 
 <!--/Description-->
 
@@ -183,7 +183,7 @@ If you enable this policy setting, you can create a custom list of high-risk fil
 
 If you disable this policy setting, Windows uses its built-in list of file types that pose a high risk.
 
-If you do not configure this policy setting, Windows uses its built-in list of high-risk file types.
+If you don't configure this policy setting, Windows uses its built-in list of high-risk file types.
 
 <!--/Description-->
 
@@ -224,13 +224,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to configure the list of low-risk file types. If the attachment is in the list of low-risk file types, Windows will not prompt the user before accessing the file, regardless of the file's zone information. This inclusion list overrides the list of high-risk file types built into Windows and has a lower precedence than the high-risk or medium-risk inclusion lists (where an extension is listed in more than one inclusion list).
+This policy setting allows you to configure the list of low-risk file types. If the attachment is in the list of low-risk file types, Windows won't prompt the user before accessing the file, regardless of the file's zone information. This inclusion list overrides the list of high-risk file types built into Windows and has a lower precedence than the high-risk or medium-risk inclusion lists (where an extension is listed in more than one inclusion list).
 
 If you enable this policy setting, you can specify file types that pose a low risk.
 
 If you disable this policy setting, Windows uses its default trust logic.
 
-If you do not configure this policy setting, Windows uses its default trust logic.
+If you don't configure this policy setting, Windows uses its default trust logic.
 
 <!--/Description-->
 
@@ -273,11 +273,11 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to configure the list of moderate-risk file types. If the attachment is in the list of moderate-risk file types and is from the restricted or Internet zone, Windows prompts the user before accessing the file. This inclusion list overrides the list of potentially high-risk file types built into Windows and it takes precedence over the low-risk inclusion list but has a lower precedence than the high-risk inclusion list (where an extension is listed in more than one inclusion list).
 
-If you enable this policy setting, you can specify file types which pose a moderate risk.
+If you enable this policy setting, you can specify file types that pose a moderate risk.
 
 If you disable this policy setting, Windows uses its default trust logic.
 
-If you do not configure this policy setting, Windows uses its default trust logic.
+If you don't configure this policy setting, Windows uses its default trust logic.
 
 <!--/Description-->
 

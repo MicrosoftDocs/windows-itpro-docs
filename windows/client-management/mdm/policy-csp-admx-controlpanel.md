@@ -130,7 +130,7 @@ If this policy setting is enabled, the Control Panel opens to the icon view.
 
 If this policy setting is disabled, the Control Panel opens to the category view.
 
-If this policy setting is not configured, the Control Panel opens to the view used in the last Control Panel session.
+If this policy setting isn't configured, the Control Panel opens to the view used in the last Control Panel session.
 
 > [!NOTE]
 > Icon size is dependent upon what the user has set it to in the previous session.
@@ -177,7 +177,7 @@ ADMX Info:
 <!--Description-->
 Available in the latest Windows 10 Insider Preview Build. Disables all Control Panel programs and the PC settings app.
 
-This setting prevents Control.exe and SystemSettings.exe, the program files for Control Panel and PC settings, from starting. As a result, users cannot start Control Panel or PC settings, or run any of their items.
+This setting prevents Control.exe and SystemSettings.exe, the program files for Control Panel and PC settings, from starting. As a result, users can't start Control Panel or PC settings, or run any of their items.
 
 This setting removes Control Panel from:
 
@@ -233,7 +233,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls which Control Panel items such as Mouse, System, or Personalization, are displayed on the Control Panel window and the Start screen. The only items displayed in Control Panel are those you specify in this setting. This setting affects the Start screen and Control Panel, as well as other ways to access Control Panel items such as shortcuts in Help and Support or command lines that use control.exe. This policy has no effect on items displayed in PC settings.
+This policy setting controls which Control Panel items such as Mouse, System, or Personalization, are displayed on the Control Panel window and the Start screen. The only items displayed in Control Panel are those items you specify in this setting. This setting affects the Start screen and Control Panel, as well as other ways to access Control Panel items such as shortcuts in Help and Support or command lines that use control.exe. This policy has no effect on items displayed in PC settings.
 
 To display a Control Panel item, enable this policy setting and click Show to access the list of allowed Control Panel items. In the Show Contents dialog box in the Value column, enter the Control Panel item's canonical name. For example, enter Microsoft.Mouse, Microsoft.System, or Microsoft.Personalization.
 
