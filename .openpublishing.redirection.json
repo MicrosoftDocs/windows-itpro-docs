@@ -19331,6 +19331,36 @@
      "source_path": "windows/whats-new/windows-11-whats-new.md",
      "redirect_url": "/windows/whats-new/windows-11-overview",
      "redirect_document_id": false
+    },
+    { 
+     "source_path": "windows/deployment/update/waas-delivery-optimization.md",
+     "redirect_url": "/windows/deployment/do/waas-delivery-optimization",
+     "redirect_document_id": false
+     },
+    { 
+     "source_path": "windows/deployment/update/delivery-optimization-proxy.md",
+     "redirect_url": "/windows/deployment/do/delivery-optimization-proxy",
+     "redirect_document_id": false
+     },
+    { 
+     "source_path": "windows/deployment/update/delivery-optimization-workflow.md",
+     "redirect_url": "/windows/deployment/do/delivery-optimization-workflow",
+     "redirect_document_id": false
+     },
+    { 
+     "source_path": "windows/deployment/update/waas-delivery-optimization-reference.md",
+     "redirect_url": "/windows/deployment/do/waas-delivery-optimization-reference",
+     "redirect_document_id": false
+     },
+    { 
+     "source_path": "windows/deployment/update/waas-delivery-optimization-setup.md",
+     "redirect_url": "/windows/deployment/do/waas-delivery-optimization-setup",
+     "redirect_document_id": false
+     },
+    { 
+     "source_path": "windows/deployment/update/waas-optimize-windows-10.md",
+     "redirect_url": "/windows/deployment/do/waas-optimize-windows-10",
+     "redirect_document_id": false
     }
   ]
 }
