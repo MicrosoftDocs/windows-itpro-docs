@@ -232,17 +232,13 @@ The Server IP Address, Address Range/CIDR Blocks, and Enable Cache Node are all 
 
 ![iMCC img17](images/imcc17.png)
 
-## Set up a server with SR or an Ubuntu VM running on Windows Server
+## Set up a server with SR or an Ubuntu 
 
-The MCC module is optimized for Ubuntu 20.04 LTS. Install
-Ubuntu 20.04 LTS on bare metal or VM of your choice. As discussed earlier, the
-recommended configuration (details below) will serve approximately 35,000
-consumer devices downloading a 2GB payload in 24-hour timeframe at a sustained
-rate of 6.5 Gbps.
+The MCC module is optimized for Ubuntu 20.04 LTS. Install Ubuntu 20.04 LTS on a physical server or VM of your choice. As discussed earlier, the recommended configuration (details below) will serve approximately 35,000 consumer devices downloading a 2GB payload in 24-hour timeframe at a sustained rate of 6.5 Gbps.
 
 |             | **Minimum**                                 | **Recommended**                                    |
 |-------------|---------------------------------------------|----------------------------------------------------|
-| **Server**  | Ubuntu 20.04 LTS VM or Physical Server      | Ubuntu 20.04 LTS VM or Physical Server (Preferred) |
+| **Server**  | Ubuntu 20.04 LTS VM or physical server      | Ubuntu 20.04 LTS VM or physical server (preferred) |
 | **NIC**     | 10 Gbps                                     | 10 Gbps                                            |
 | **Disk**    | SSD 1 – 2 drives minimum 2 TB each minimum  | SSD 2 – 4 drives minimum 2 TB each minimum         |
 | **Memory**  | 8 GB                                        | 32 GB or more                                      |
@@ -250,103 +246,71 @@ rate of 6.5 Gbps.
 
 ## Install MCC on a Server or VM
 
-[Link](https://aka.ms/MCC-ISP-InstallerDemo) to video instructions:
-<https://aka.ms/MCC-ISP-InstallerDemo>
-
-Installing MCC on your bare metal server or VM is a
-straightforward process. A Bash script installer performs the following tasks:
+Installing MCC on your physical server or VM is a straightforward process. A Bash script installer performs the following tasks:
 
 -   Azure IoT Edge relies on an OCI-compatible container runtime. The script
     will install the Moby engine and CLI.
-
 -   Installs IoT Edge.
-
 -   Installs SSH to support remote access to the server
-
--   Enables the firewall and opens ports 80 and 22 for inbound and outbound
-    traffic. Port 80 is used by MCC and port 22 is used
-    for SSH communications.
-
+-   Enables the firewall and opens ports 80 and 22 for inbound and outbound traffic. Port 80 is used by MCC and port 22 is used for SSH communications.
 -   Configures Connected Cache tuning settings.
-
 -   Creates the necessary *FREE* Azure resource - IoT Hub/IoT Edge.
-
 -   Deploys the MCC container to server.
 
-    **Note**
+> [!IMPORTANT]
+> Ensure that port 5000 is open so Microsoft can verify proper functioning of the cache server
 
-    **Please ensure Port 5000 is open so Microsoft can verify proper functioning
-    of the cache server**
+### Steps to install MCC
 
-Steps to install MCC
+1.  Download and unzip mccinstaller.zip from the create cache node page or cache node configuration page which contains the necessary installation files.
 
-1.  Download and unzip mccinstaller.zip from the create cache node page or cache
-    node configuration page which contains the necessary installation files.
-
-    ![Graphical user interface, text, application Description automatically
-    generated](media/19c6a67495597b16758878c74be82aab.png)
+    ![iMCC img18](images/imcc18.png)
 
     Files contained in the mccinstaller.zip file:
 
--   installmcc.sh – main installer file.
+    - **installmcc.sh** – main installer file.
+    - **installIotEdge.sh** – Installs the necessary prerequisites like IoT Edge runtime and Docker and makes necessary host OS settings to optimization caching performance.
+    - **resourceDeploymentForConnectedCache.sh** – Creates Azure cloud resources required to support MCC control plane.
+    - **mccdeployment.json** – Deployment manifest used by IoT Edge to deploy the MCC container and configure settings on the container like cache drives location sizes.
 
--   installIotEdge.sh – Installs the necessary prerequisites like IoT Edge
-    runtime and Docker and makes necessary host OS settings to optimization
-    caching performance.
+2.  Copy all 4 installation files to your Linux server (physical or VM)
 
--   resourceDeploymentForConnectedCache.sh – Creates Azure cloud resources
-    required to support MCC control plane.
+3.  Before proceeding, ensure that you have a data drive configured on your server. You will need to specify the location for this cache drive on step 9. Mimimum size for the data drive is 100GB. For instructions to mount a disk on a Linux VM, see [Attach a data disk to a Linux VM](/azure/virtual-machines/linux/attach-disk-portal#find-the-disk)
 
--   mccdeployment.json – Deployment manifest used by IoT Edge to deploy the MCC
-    container and configure settings on the container like cache drive(s)
-    location size(s).
+4.  Open a terminal and change the access permissions to execute on the **installmcc.sh** Bash script file using chmod.
 
-1.  Copy all 4 installation files to your server or Linux VM
-
-2.  Before proceeding any further, ensure that you have a data drive configured
-    on your Linux VM. You will need to specify the location for this cache drive
-    on step 9. For instructions on mounting a disk, follow these steps: [Attach
-    a data disk to a Linux VM \| Microsoft
-    Docs](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/attach-disk-portal#find-the-disk)
-
-3.  Open a terminal and change the access permissions to execute on the
-    installmcc.sh Bash script file using chmod.
-
+    ```
     sudo chmod +x installmcc.sh
+    ```
 
-4.  Copy the Bash script line provided and run the Bash script from the
-    terminal.  
-    ![](media/d8070d8edd589e769a33707b48e33f01.png)
+5.  Copy the Bash script line provided and run the Bash script from the terminal. 
 
-5.  You will be prompted to login to the Azure Portal using a device code.
+    ![iMCC img19](images/imcc19.png)
 
-![](media/20245b159b1f0a1724699e512d7593ba.jpg)
+6.  You will be prompted to sign in to the Azure Portal using a device code.
 
-1.  You will be prompted to enter the Azure Container Registry (ACR) password
-    for access to the MCC container.
+    ![iMCC img20](images/imcc20.png)
 
-    ![](media/b8b711432bb4cf267c30ccece02e2c99.png)
+7.  You will be prompted to enter the Azure Container Registry (ACR) password for access to the MCC container.
 
-2.  You will then be prompted with the number of drives to configure.
+    ![iMCC img21](images/imcc21.png)
 
-![](media/42e10213de01e13490c2c4dd22d99cbb.jpg)
+8.  You will then be prompted with the number of drives to configure.
 
-1.  The script will prompt for location and size of the cache drive(s).
+    ![iMCC img22](images/imcc22.png)
 
-![](media/88f6bd594987cb51df8242071931f183.jpg)
+9.  The script will prompt for location and size of the cache drives.
 
-**WARNING**
+    ![iMCC img23](images/imcc23.png)
 
-The permissions / ownerships on the cache drive location will be changed to
-everyone via chmod 777
-
-**Do not** point the cache drive location to any of the following: “**.**”,
-“**./var**”, “**/**”, “**\<space\>**”
+> [!IMPORTANT]
+> The permissions / ownerships on the cache drive location will be changed to everyone via chmod 777<br>
+> **Do not** point the cache drive location to any of the following: “**.**”, “**./var**”, “**/**”, “**\<space\>**”
 
 Specifying any of the directories mentioned above will corrupt the VM and you
 will need to provision a new one.
 
-![](media/7b1fbec06b8f03e2e3fdd6987e2e6c8b.jpg)
+![iMCC img24](images/imcc24.png)
 
 1.  If this is your first MCC deployment, select “n” when
     prompted for an IoT Hub. If this is **not** your first MCC deployment, you
@@ -354,217 +318,189 @@ will need to provision a new one.
     selecting “Y”, we will display your existing IoT Hubs, you can copy and
     paste the resulting IoT Hub name to continue.
 
-    ![Graphical user interface, text, application Description automatically
-    generated](media/5bb1984f12020e382d6db4606187ac0b.png)
+    ![iMCC img25](images/imcc25.png)
 
 2.  If there are no errors go to the next step.
 
-    -   If there are errors, inspect the installer logs which are under
-        /etc/mccresourcecreation/.
-
-    -   If there were follow the instructions to trouble shoot IoT edge
-        <https://docs.microsoft.com/en-us/azure/iot-edge/troubleshoot>
+    -  If there are errors, inspect the installer logs which are under /etc/mccresourcecreation/.
+    -  If there were follow the instructions to [Troubleshoot your IoT Edge device(/azure/iot-edge/troubleshoot).
 
 ## Verify Proper Functioning MCC Server
 
-#### Verify Client Side
+### Verify client side
 
-Log into to the Connected Cache server or ssh and run this command from a
-terminal to see the running modules (containers).
+Sign in to the Connected Cache server or ssh and run the following command from a terminal to see the running modules (containers):
 
+```
 sudo iotedge list​
+```
 
-![undefined](media/4218dadadf8f67314b7e710688279884.png)
+![iMCC img26](images/imcc26.png)
 
-If edgeAgent and edgeHub containers are listed, but not “MCC”, you may view the
-status of the IoTEdge security manager using the command:
+If **edgeAgent** and **8edgeHub** containers are listed, but not “MCC”, you may view the status of the IoTEdge security manager using the command:
 
+```
 sudo journalctl -u iotedge -f
+```
 
-For example, this command will provide the current status of the starting,
-stopping of a container, or the container pull and start as is shown in the
-sample below:  
-![undefined](media/95241ac0da34a9cd59b8e273c2904b6a.png)
+For example, this command provides the current status of the starting, stopping of a container, or the container pull and start as is shown in the sample below:
 
-#### Verify Server Side
+![iMCC img27](images/imcc27.png)
+
+### Verify server side
 
 It can take a few minutes for the container to deploy.
 
-For a validation of properly functioning MCC, execute the
-following command in the terminal of the cache server or any device in the
-network. Replace \<CacheServerIP\> with the IP address of the cache server.
+For a validation of properly functioning MCC, run the following command in the terminal of the cache server or any device in the network. Replace \<CacheServerIP\> with the IP address of the cache server.
 
-wget
-[http://\<CacheServerIP\>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com]()
+```
+wget http://<CacheServerIP>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com
+```
 
 A successful test result will look like this:
 
-![](media/c60aa10ea89df7a3c73b96952177b6c4.png)
+![iMCC img28](images/imcc28.png)
 
-Similarly, enter this URL from a browser in the network:
+Similarly, enter the following URL into a web browser on the network:
 
-[http://\<CacheServerIP\>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com]()
+```
+http://<CacheServerIP>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com
+```
 
-If the test fails, see the common issues section for more information.
+If the test fails, see the [common issues](#common-issues) section below for more information.
 
-# Common Issues
+## Common Issues
 
-Please note: You should consult the IoT Edge troubleshooting guide ([Common
-issues and resolutions for Azure IoT
-Edge](https://docs.microsoft.com/en-us/azure/iot-edge/troubleshoot)) for any
-issues you may encounter configuring IoT Edge, but we have listed a few issues
-below that we hit during our internal validation.
+> [!NOTE]
+> Consult the [IoT Edge troubleshooting guide](/azure/iot-edge/troubleshoot) for any issues you may encounter configuring IoT Edge. A few common issues are listed below.
 
-Use this command to check the IoT Edge Journal
+Use the following command to check the IoT Edge Journal:
 
+```
 sudo journalctl -u iotedge –f
+```
 
-## DNS Needs to be Configured
+## DNS needs to be nonfigured
 
-If after running the check the IoT Edge setup/install state
+Run the following IoT Edge setup/install state check:
 
+```
 sudo iotedge check --verbose
+```
 
-If you see the following issues with ports 5671, 443, and 8883 - it will
-manifest like the screenshot below, it means your IoT Edge device needs to
-update the DNS for Docker.
+If you see issues with ports 5671, 443, and 8883 similar to the screenshot below, it means that your IoT Edge device needs to update the DNS for Docker.
 
-![undefined](media/a013f02b6b2782c0987a7afe0883be0b.png)
+![iMCC img29](images/imcc29.png)
 
-Follow these steps to configure the device to work with your DNS.
+Follow the steps below to configure the device to work with your DNS:
 
 1.  Use ifconfig to find appropriate NIC adapter name.
 
+    ```
     ifconfig​
-
-2.  Run
-
-    nmcli device show \<network adapter\>
-
-    to show you the DNS name for Ethernet adapter. For example to show DNS
+    ```
+2.  Run nmcli device show \<network adapter\> to show you the DNS name for Ethernet adapter. For example to show DNS
     information for eno1:
 
-    nmcli device show eno1 ​  
-    ![undefined](media/f54e4468720ae884bddd985bc9aa5546.png)
+    ```
+    nmcli device show eno1 
+    ``` 
+
+    ![iMCC img30](images/imcc30.png)
 
 3.  Open/create the Docker configuration file used to configure the DNS server
 
+    ```
     sudo nano /etc/docker/daemon.json​
+    ```
 
-1.  Paste the following into the daemon.json file (In the screenshot above
-    IP4.DNS[1] is used)  
-    
+4.  Paste the following into the daemon.json file (In the example above IP4.DNS[1] is used)  
+
+    ```
     { "dns": ["x.x.x.x"]}
+    ```
+5.  Save the file changes to daemon.json. **Note**: You might need to change permissions on this file. For example:  
 
-2.  Save the file changes to daemon.json  
-    Please note: You may need to change permissions on this file. For example,  
-    
+    ```
     sudo chmod 555 /etc/docker/daemon.json​
+    ```
 
-1.  Restart Docker (to pick up the new DNS) and restart IoTEdge  
+6.  Restart Docker (to pick up the new DNS) and restart IoTEdge  
     
-    sudo systemctl restart dockersudo systemctl daemon-reloadsudo restart
-    IoTEdge
+    ```
+    sudo systemctl restart dockersudo systemctl daemon-reloadsudo restart IoTEdge
+    ```
 
 ## Diagnostics Script
 
-If you are having issues with your MCC, we included a diagnostics script which
-will collect all your logs and zip them into a single file. You can then send us
-these logs via email for the MCC team to debug.
+If you are having issues with your MCC, we included a diagnostics script which will collect all your logs and zip them into a single file. You can then send us these logs via email for the MCC team to debug.
 
 To run this script:
 
 1.  Navigate to the following folder in the MCC installation files:
 
-    mccinstaller \> MccResourceInstall \> Diagnostics
+**mccinstaller** \> **MccResourceInstall** \> **Diagnostics**
 
 2.  Run the following commands:
 
+    ```
     sudo chmod +x collectMccDiagnostics.sh
-
     sudo ./collectMccDiagnostics.sh
+    ```
+3.  The script stores all the debug files into a folder and the creates a tar file. After the script is finished running, it will output the path of the tar file that you can share with the MCC team. The file should be **/etc/mccdiagnostics/support_bundle_\$timestamp.tar.gz**.
 
-3.  The script stores all the debug files into a folder and the creates a tar
-    file. After the script is finished running, it will output the path of the
-    tar file which you can share with the MCC team (should be
-    "/etc/mccdiagnostics/support_bundle_\$timestamp.tar.gz")
+4.  [Email the MCC team](mailto:msconnectedcache@microsoft.com?subject=Debugging%20Support%20Request%20for%20MCC) and attach this tar file, asking for debugging support. Screenshots of the error along with any other warnings you saw will be helpful during out debugging process.
 
-4.  [Email the MCC
-    team](mailto:msconnectedcache@microsoft.com?subject=Debugging%20Support%20Request%20for%20MCC)
-    and attach this file asking for debugging support. Screenshots of the error
-    along with any other warnings you saw will be helpful during out debugging
-    process.
+## Updating your MCC
 
-# Updating your MCC
+Throughout the private preview phase, we will send you security and feature updates for MCC. Please follow these steps to perform the update.
 
-Throughout the private preview phase, we will send you security and feature
-updates for MCC. Please follow these steps to perform the update.
+Run the following commands with the **arguments** we provided in the email to update your MCC:
 
-Run the following commands with the **arguments** we provided in the email to
-update your MCC:
-
+```
 sudo chmod +x updatemcc.sh
-
 sudo chmod +x installIoTEdge.sh
+sudo ./updatemcc.sh version="\<**VERSION**\>" tenantid="\<**TENANTID**\>" customerid="\<**CUSTOMERID**\>" cachenodeid="\<**CACHENODEID**\>" customerkey="\<**CUSTOMERKEY**\>"
+```
 
-sudo ./updatemcc.sh version="\<**VERSION**\>" tenantid="\<**TENANTID**\>"
-customerid="\<**CUSTOMERID**\>" cachenodeid="\<**CACHENODEID**\>"
-customerkey="\<**CUSTOMERKEY**\>"
+For example:
+```
+sudo ./updatemcc.sh version="msconnectedcacheprod.azurecr.io/mcc/linux/iot/mcc-ubuntu-iot-amd64:1.2.1.981" tenantid="72f988bf-86f1-41af-91ab-2d7cd011db47" customerid="99d897gg-86f1-41af-91ab-4jau6ske0sdf" cachenodeid=" cd01sdfh-435n-0das-56gh90dfrt67 " customerkey="h90d234f-vbnm-lk43-0742khsd45hj”
+```
 
-e.g. sudo ./updatemcc.sh
-version="msconnectedcacheprod.azurecr.io/mcc/linux/iot/mcc-ubuntu-iot-amd64:1.2.1.981"
-tenantid="72f988bf-86f1-41af-91ab-2d7cd011db47"
-customerid="99d897gg-86f1-41af-91ab-4jau6ske0sdf" cachenodeid="
-cd01sdfh-435n-0das-56gh90dfrt67 " customerkey="h90d234f-vbnm-lk43-0742khsd45hj”
+## Uninstalling MCC
 
-# Uninstalling MCC
+In the zip file, you will find the file **uninstallmcc.sh** which uninstalls MCC and all the related components. Please contact the MCC Team before running this script and only run this script if you are facing issues with MCC installation. **Exercise caution before running this script as existing IoT workflows in this VM will also be erased.**
 
-In the zip file, you will find *uninstallmcc.sh* which will uninstall MCC and
-all the related components. Please contact the MCC Team before running this
-script and only run this script if you are facing issues with MCC installation.
-**Exercise caution before running this script as existing IoT workflows in this
-VM will also be erased.**
+The **uninstallmcc.sh** script will remove the following:
 
-This script will remove the following:
-
--   IoT Edge
-
--   Edge Agent
-
--   Edge Hub
-
--   MCC
-
--   Moby CLI
-
--   Moby Engine
+- IoT Edge
+- Edge Agent
+- Edge Hub
+- MCC
+- Moby CLI
+- Moby Engine
 
 To run the script, enter the following commands:
 
+```
 sudo chmod +x uninstallmcc.sh
-
 sudo ./uninstallmcc.sh
+```
 
-# Appendix
+## Appendix
 
 Performance of MCC in Hypervisor environments
 
-We have observed in Hypervisor environments the cache server peak egress at
-around 1.1 Gbps. If you wish to maximize the egress in hypervisor environments
-it is critical to make two settings changes.
+We have observed in hypervisor environments the cache server peak egress at around 1.1 Gbps. If you wish to maximize the egress in hypervisor environments it is critical to make two settings changes.
 
-1.  Enable SR-IOV in the BIOS AND enable SR-IOV in the NIC properties, and
-    finally, enable SR-IOV in the hypervisors for the MCC VM. Microsoft has
-    found these settings to double egress within a MSFT hypervisor deployment.
+1. Enable **SR-IOV** in the BIOS AND enable **SR-IOV** in the NIC properties, and finally, enable **SR-IOV** in the hypervisors for the MCC VM. Microsoft has found these settings to double egress when using a Microsoft Hyper-V deployment.
 
-2.  Enable “high performance” in the BIOS as opposed to energy savings.
-    Microsoft has found this setting change nearly doubled egress a MSFT
-    hypervisor deployment.
+2. Enable “high performance” in the BIOS as opposed to energy savings. Microsoft has found this setting nearly doubled egress a Microsoft Hyper-V deployment.
 
 ## Setting up a VM on Windows Server
 
-You may choose to set up hardware that will natively run Ubuntu 20.04 LTS or an
-Ubuntu VM. The steps below detail setting up a VM on Windows.
+You may choose to set up hardware that will natively run Ubuntu 20.04 LTS or an Ubuntu VM. The steps below detail setting up a VM on Windows.
 
 1.  Download the ISO
 
@@ -573,105 +509,86 @@ Ubuntu VM. The steps below detail setting up a VM on Windows.
     2.  [Download Ubuntu
         Server](https://mirror.cs.jmu.edu/pub/ubuntu-iso/20.04.2/ubuntu-20.04.2-live-server-amd64.iso)
 
-2.  Start the new VM wizard the give your VM a name and choose a location for
-    the VM.  
+2.  Start the new VM wizard the give your VM a name and choose a location for the VM.  
     
-    ![undefined](media/8f5f8c9ac4c81e94e46be01715e4fc15.png)  
+    ![iMCC img31](images/imcc31.png)
     
-    ![undefined](media/7a6716e06e37db86ff94dd88148f3fc2.png)
+    ![iMCC img32](images/imcc32.png)
 
-3.  Choose Generation 2 VM and specify the startup memory. Please note: as it
-    states, you cannot change to Generation 2 after you created the VM.  
+3.  Choose Generation 2 VM and specify the startup memory. Please note: as it states, you cannot change to Generation 2 after you created the VM.  
     
-    ![undefined](media/d024ba7064e2d079e0b56b7619df4eee.png)![undefined](media/1366919171dac02be5bf36084eda8dab.png)
+    ![iMCC img33](images/imcc33.png)
+    ![iMCC img34](images/imcc34.png)
 
 4.  Choose the network adapter you wish to use.  
     
-    ![undefined](media/1f2fd8dd7b924c7386974a6f0183830b.png)
+    ![iMCC img35](images/imcc35.png)
 
-5.  Set the virtual hard disk parameters. Please note: you should specify enough
-    space for the OS and the content that will be cached. That sample below
+5.  Set the virtual hard disk parameters. Please note: you should specify enough space for the OS and the content that will be cached. That sample below
     allocates a terabyte.  
     
-    ![undefined](media/8b835d4f5268b64053bea825edebfba2.png)
+    ![iMCC img36](images/imcc36.png)
 
 6.  Install from the ISO for Ubuntu 20.04 LTS that you downloaded.  
     
-    ![undefined](media/8cbfeb974f5dc31add39c4c5337c3826.png)
+    ![iMCC img37](images/imcc37.png)
 
 7.  Finish the creation of the Ubuntu VM.  
     
-    ![undefined](media/4fca6e9966d84d553541b13f99209f2a.png)
+    ![iMCC img38](images/imcc38.png)
 
-8.  Before you start the Ubuntu VM make sure secure boot is **disabled** and
-    that you have allocated multiple cores to the VM. The example below has
-    allocated 12, but your configuration may vary.  
+8.  Before you start the Ubuntu VM make sure secure boot is **disabled** and that you have allocated multiple cores to the VM. The example below has allocated 12, but your configuration may vary.  
     
-    ![undefined](media/8462ffefe6a3bed0b2d5fb9296d8c6db.png)  
-    ![undefined](media/6a66b3e5baf7058d859eccd9cfee0e58.png)  
-    
-    ![undefined](media/af83c15ad7c1dd76b8c17d467d8a6d06.png)
+    ![iMCC img39](images/imcc39.png)
+    ![iMCC img40](images/imcc40.png)
+    ![iMCC img41](images/imcc41.png)
 
-9.  Start the VM and choose the option that will Install Ubuntu. Choose your
-    default language.  
+9.  Start the VM and choose the option that will Install Ubuntu. Choose your default language.  
     
-    ![undefined](media/ee7eb46954a53283d507f04bb54b4355.png)  
-    
-    ![undefined](media/02ee1153b51578416c4b544a3e819ea8.png)
+    ![iMCC img42](images/imcc42.png)
+    ![iMCC img43](images/imcc43.png)
 
-10. Choose the options you wish for installing updates and third party hardware.
-    In the screenshot below, we have chosen to download updates and install
+10. Choose the options you wish for installing updates and third party hardware. In the screenshot below, we have chosen to download updates and install
     third party software drivers.  
     
-    ![undefined](media/43bb146baeb5e18af3ab2fdd046ffc76.png)
+    ![iMCC img44](images/imcc44.png)
 
 11. If you had a previous version of Ubuntu installed, we recommend erasing and
     installing Ubuntu 16.04. Choose your time zone, and keyboard layout.  
     
-    ![undefined](media/579dfc263eb6d39dffdd8d605414b657.png)  
-    
-    ![undefined](media/251543005c68c6250f2331864edeae47.png)  
-    
-    ![undefined](media/ace675f480e7bd900378a85ce6f08d51.png)  
-    
-    ![undefined](media/43bb146baeb5e18af3ab2fdd046ffc76.png)  
-    
-    ![undefined](media/43bb146baeb5e18af3ab2fdd046ffc76.png)
+    ![iMCC img45](images/imcc45.png)
+    ![iMCC img46](images/imcc46.png)
+    ![iMCC img47](images/imcc47.png)
+    ![iMCC img48](images/imcc48.png)
 
 12. Choose your username, a name for your computer and password. Remember,
     everything is case sensitive in Linux. You will be asked to reboot in order
     to complete the installation.  
     
-    ![undefined](media/f40288bb58489090f87c04c77e4b8022.png)  
-    
-    ![undefined](media/b47c5cdec1398b3942af924d9e0f583c.png)
+    ![iMCC img49](images/imcc49.png)
+    ![iMCC img50](images/imcc50.png)
 
 13. Important: When prompted with the option to upgrade, decline.
 
-14. ![undefined](media/3efad9b3284ad91835ce20bc5d221fdb.png)  
-    
-    ![undefined](media/c7734d64afcb99f50a671313893fa5be.png)
+    ![iMCC img51](images/imcc51.png)
+    ![iMCC img52](images/imcc52.png)
 
-Your Ubuntu VM should now be ready for the next step: [*Install Microsoft
-Connected Cache on Your Server or
-VM*](#install-microsoft-connected-cache-on-a-server-or-vm)
+Your Ubuntu VM should now be ready for the next step: [*Install Microsoft Connected Cache on Your Server or VM*](#install-microsoft-connected-cache-on-a-server-or-vm)
 
 ## IoT Edge runtime
 
-The Azure IoT Edge runtime enables custom and cloud logic on IoT Edge devices.
-The runtime sits on the IoT Edge device, and performs management and
-communication operations. The runtime performs several functions:
+The Azure IoT Edge runtime enables custom and cloud logic on IoT Edge devices. The runtime sits on the IoT Edge device, and performs management and communication operations. The runtime performs several functions:
 
 -   Installs and update workloads (Docker containers) on the device.
-
 -   Maintains Azure IoT Edge security standards on the device.
-
 -   Ensures that IoT Edge modules (Docker containers) are always running.
-
 -   Reports module (Docker containers) health to the cloud for remote
     monitoring.
-
 -   Manages communication between an IoT Edge device and the cloud.
 
-For more information on Azure IoT Edge, please see the Azure IoT Edge
-documentation <https://docs.microsoft.com/en-us/azure/iot-edge/about-iot-edge>.
+For more information on Azure IoT Edge, please see the [Azure IoT Edge documentation](/azure/iot-edge/about-iot-edge).
+
+## Also see
+
+[Microsoft Connected Cache for Enterprises](mcc-enterprise.md)<br>
+[Introducing Microsoft Connected Cache](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-microsoft-connected-cache-microsoft-s-cloud-managed/ba-p/963898)
