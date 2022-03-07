@@ -500,32 +500,28 @@ We have observed in hypervisor environments the cache server peak egress at arou
 
 ## Setting up a VM on Windows Server
 
-You may choose to set up hardware that will natively run Ubuntu 20.04 LTS or an Ubuntu VM. The steps below detail setting up a VM on Windows.
+You can use hardware that will natively run Ubuntu 20.04 LTS, or you can run an Ubuntu VM. The following steps describe how to set up a VM on Hyper-V.
 
-1.  Download the ISO
+1.  Download the ISO. You can use either Ubuntu Desktop or Ubuntu Server.
 
     1.  [Download Ubuntu Desktop](https://ubuntu.com/download/desktop)
+    2.  [Download Ubuntu Server](https://mirror.cs.jmu.edu/pub/ubuntu-iso/20.04.2/ubuntu-20.04.2-live-server-amd64.iso)
 
-    2.  [Download Ubuntu
-        Server](https://mirror.cs.jmu.edu/pub/ubuntu-iso/20.04.2/ubuntu-20.04.2-live-server-amd64.iso)
-
-2.  Start the new VM wizard the give your VM a name and choose a location for the VM.  
+2.  Start the **New Virtual Machine Wizard**, give your VM a name, and choose a location.  
     
     ![iMCC img31](images/imcc31.png)
-    
     ![iMCC img32](images/imcc32.png)
 
-3.  Choose Generation 2 VM and specify the startup memory. Please note: as it states, you cannot change to Generation 2 after you created the VM.  
+3.  Choose a **Generation 2** VM, and specify the startup memory. You cannot change the VM generation 2 later.  
     
     ![iMCC img33](images/imcc33.png)
     ![iMCC img34](images/imcc34.png)
 
-4.  Choose the network adapter you wish to use.  
+4.  Choose the network adapter.  
     
     ![iMCC img35](images/imcc35.png)
 
-5.  Set the virtual hard disk parameters. Please note: you should specify enough space for the OS and the content that will be cached. That sample below
-    allocates a terabyte.  
+5.  Set the virtual hard disk parameters. You should specify enough space for the OS and the content that will be cached. That example below allocates one terabyte.  
     
     ![iMCC img36](images/imcc36.png)
 
@@ -548,32 +544,29 @@ You may choose to set up hardware that will natively run Ubuntu 20.04 LTS or an 
     ![iMCC img42](images/imcc42.png)
     ![iMCC img43](images/imcc43.png)
 
-10. Choose the options you wish for installing updates and third party hardware. In the screenshot below, we have chosen to download updates and install
+10. Choose the options you wish for installing updates and third party hardware. In the example below, we have chosen to download updates and install
     third party software drivers.  
     
     ![iMCC img44](images/imcc44.png)
 
-11. If you had a previous version of Ubuntu installed, we recommend erasing and
-    installing Ubuntu 16.04. Choose your time zone, and keyboard layout.  
+11. If you had a previous version of Ubuntu installed, we recommend erasing and installing Ubuntu 16.04. Choose your time zone, and keyboard layout.  
     
     ![iMCC img45](images/imcc45.png)
     ![iMCC img46](images/imcc46.png)
     ![iMCC img47](images/imcc47.png)
     ![iMCC img48](images/imcc48.png)
 
-12. Choose your username, a name for your computer and password. Remember,
-    everything is case sensitive in Linux. You will be asked to reboot in order
-    to complete the installation.  
+12. Choose your username, a name for your computer, and a password. Remember, everything is case sensitive in Linux. You will be asked to reboot in order to complete the installation.  
     
     ![iMCC img49](images/imcc49.png)
     ![iMCC img50](images/imcc50.png)
 
-13. Important: When prompted with the option to upgrade, decline.
+13. **Important**: When prompted with the option to upgrade, decline.
 
     ![iMCC img51](images/imcc51.png)
     ![iMCC img52](images/imcc52.png)
 
-Your Ubuntu VM should now be ready for the next step: [*Install Microsoft Connected Cache on Your Server or VM*](#install-microsoft-connected-cache-on-a-server-or-vm)
+Your Ubuntu VM should now be ready for the next step: [*Install Microsoft Connected Cache on Your Server or VM*](#install-mcc-on-a-server-or-vm)
 
 ## IoT Edge runtime
 
