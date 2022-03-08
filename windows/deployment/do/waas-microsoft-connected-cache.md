@@ -51,7 +51,7 @@ For more details information on Azure IoT Edge, please see the Azure IoT Edge [d
 
 See the following diagram.
 
-!MCC Overview](images/waas-mcc-diag-overview.png#lightbox)
+[!MCC Overview](images/waas-mcc-diag-overview.png#lightbox)
 
 ## Also see
 
