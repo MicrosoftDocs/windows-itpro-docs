@@ -23,7 +23,7 @@
      
     - name: Microsoft Connected Cache
       items:
-        - name: Microsoft Connected Cache overview
+        - name: MCC overview
           href: waas-microsoft-connected-cache.md
         - name: MCC for Enterprise and Education
           href: mcc-enterprise.md

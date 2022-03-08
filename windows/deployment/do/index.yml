@@ -66,7 +66,7 @@ landingContent:
     linkLists:
       - linkListType: deploy
         links:
-          - text: MCC for Entreprise and Education (Private Preview)
+          - text: MCC for Enterprise and Education (Private Preview)
             url: mcc-enterprise.md
           - text: Sign up
             url: https://aka.ms/MSConnectedCacheSignup 
