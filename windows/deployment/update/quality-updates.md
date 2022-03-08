@@ -8,7 +8,7 @@ author: greg-lindsay
 ms.localizationpriority: medium
 ms.author: greglin
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.topic: article
 ---
 

@@ -7,8 +7,7 @@
           href: waas-delivery-optimization.md
         - name: What's new
           href: waas-delivery-optimization.md#new-in-windows-10-version-20h2-and-windows-11
-        - name: What is Microsoft Connected Cache
-          href: waas-microsoft-connected-cache.md
+
 
      
     - name: Configure Delivery Optimization
@@ -24,8 +23,8 @@
      
     - name: Microsoft Connected Cache
       items:
-        - name: Introducing Microsoft Connected Cache
-          href: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-microsoft-connected-cache-microsoft-s-cloud-managed/ba-p/963898
+        - name: Microsoft Connected Cache overview
+          href: waas-microsoft-connected-cache.md
         - name: Microsoft Connected Cache for Enterprises
           href: mcc-enterprise.md
         - name: Microsoft Connected Cache for ISPs

@@ -15,7 +15,7 @@ metadata:
     - highpri
   author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
   ms.author: greglin #Required; microsoft alias of author; optional team alias.
-  ms.date: 02/04/2022 #Required; mm/dd/yyyy format.
+  ms.date: 03/07/2022 #Required; mm/dd/yyyy format.
   localization_priority: medium
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -32,7 +32,7 @@ landingContent:
             url: waas-delivery-optimization.md
           - text: What's new in Delivery Optimization
             url: waas-delivery-optimization.md#new-in-windows-10-version-20h2-and-windows-11
-          - text: What is Microsoft Connected Cache
+          - text: Microsoft Connected Cache (MCC) overview
             url: waas-microsoft-connected-cache.md
 
 
