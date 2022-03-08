@@ -24,6 +24,9 @@ ms.custom: seo-marvel-apr2020
 - Windows 10
 - Windows 11
 
+> [!IMPORTANT]
+> Microsoft Connected Cache is currently a private preview feature. During this phase we invite customers to take part in early access for testing purposes. This phase does not include formal support, and should not be used for production workloads. For more information, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
+
 Microsoft Connected Cache (MCC) preview is a software-only caching solution that delivers Microsoft content within Enterprise networks. MCC can be deployed to as many bare-metal servers or VMs as needed, and is managed from a cloud portal. Cache nodes are created in the cloud portal and are configured by applying the client policy using management tools such as Intune.
 
 MCC is a hybrid (mix of on-prem and cloud resources) SaaS solution built as an Azure IoT Edge module and Docker compatible Linux container deployed to your Windows devices. The Delivery Optimization team chose IoT Edge for Linux on Windows (EFLOW) as a secure, reliable container management infrastructure. EFLOW is a Linux virtual machine, based on Microsoft's first party CBL-Mariner operating system. It’s built with the IoT Edge runtime and validated as a tier 1 supported environment for IoT Edge workloads. MCC will be a Linux IoT Edge module running on the Windows Host OS.  
@@ -51,10 +54,12 @@ For more details information on Azure IoT Edge, please see the Azure IoT Edge [d
 
 See the following diagram.
 
-[!MCC Overview](images/waas-mcc-diag-overview.png#lightbox)
+![MCC Overview](images/waas-mcc-diag-overview.png#lightbox)
+
+For more information about MCC, see the following articles:
+- [Microsoft Connected Cache for Enterprises](mcc-enterprise.md)
+- [Microsoft Connected Cache for ISPs](mcc-isp.md)
 
 ## Also see
 
-[Microsoft Connected Cache for Enterprises](mcc-enterprise.md)<br>
-[Microsoft Connected Cache for ISPs](mcc-isp.md)<br>
 [Introducing Microsoft Connected Cache](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-microsoft-connected-cache-microsoft-s-cloud-managed/ba-p/963898)
