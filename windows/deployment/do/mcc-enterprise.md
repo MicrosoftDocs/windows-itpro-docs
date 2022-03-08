@@ -87,7 +87,7 @@ If an MCC node is unavailable, the client will pull content from CDN to ensure u
 
 ### Sizing recommendations
 
-|   | Branch Office / Small Enterprise | Large Enterprise |
+| Component  | Branch Office / Small Enterprise | Large Enterprise |
 | -- | --- | --- |
 | OS|  Windows Server 2019*/2022 <br> Windows 10*/11 (Pro or Enterprise) with Hyper-V Support <br><br>* Windows 10 and Windows Server 2019 build 17763 or later | Same |
 |NIC | 1 Gbps | 5 Gbps |
@@ -492,7 +492,7 @@ For more information on Azure IoT Edge, please see the [Azure IoT Edge documenta
 
 - [What is Azure IoT Edge for Linux on Windows](/azure/iot-edge/iot-edge-for-linux-on-windows?view=iotedge-2018-06&preserve-view=true)
 - [Install Azure IoT Edge for Linux on Windows](/azure/iot-edge/how-to-provision-single-device-linux-on-windows-symmetric?view=iotedge-2018-06&tabs=azure-portal%2Cpowershell#install-iot-edge)
-- [PowerShell functions for Azure IoT Edge for Linux on Windows](https://docs.microsoft.com/azure/iot-edge/reference-iot-edge-for-linux-on-windows-functions?view=iotedge-2018-06)
+- [PowerShell functions for Azure IoT Edge for Linux on Windows](/azure/iot-edge/reference-iot-edge-for-linux-on-windows-functions?view=iotedge-2018-06)
 - EFLOW FAQ and Support: [Support · Azure/iotedge-eflow Wiki (github.com)](https://github.com/Azure/iotedge-eflow/wiki/Support#how-can-i-apply-updates-to-eflow)
 - [Now ready for Production: Linux IoT Edge Modules on Windows - YouTube](https://www.youtube.com/watch?v=pgqVCg6cxVU&ab_channel=MicrosoftIoTDevelopers)
 
