@@ -378,7 +378,7 @@ Use the following command to check the IoT Edge Journal:
 sudo journalctl -u iotedge –f
 ```
 
-## DNS needs to be nonfigured
+## DNS needs to be configured
 
 Run the following IoT Edge setup/install state check:
 
