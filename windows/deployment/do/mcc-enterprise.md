@@ -27,9 +27,9 @@ ms.topic: article
 
 Microsoft Connected Cache (MCC) preview is a software-only caching solution that delivers Microsoft content within Enterprise networks. MCC can be deployed to as many physical servers or VMs as needed, and is managed from a cloud portal. Cache nodes are created in the cloud portal and are configured by applying a [client policy](/mem/intune/configuration/delivery-optimization-settings.md#local-server-caching) using your management tool, such as Intune.
 
-MCC is a hybrid (a mix of on-prem and cloud resources) SaaS solution built as an Azure IoT Edge module; it is a Docker compatible Linux container that is deployed to your Windows devices. IoT Edge for Linux on Windows (EFLOW) was chosen because it is a secure, reliable container management infrastructure. EFLOW is a Linux virtual machine, based on Microsoft's first party CBL-Mariner operating system. It’s built with the IoT Edge runtime and validated as a tier 1 supported environment for IoT Edge workloads. MCC will be a Linux IoT Edge module running on the Windows Host OS.
+MCC is a hybrid (a mix of on-prem and cloud resources) SaaS solution built as an Azure IoT Edge module; it's a Docker compatible Linux container that is deployed to your Windows devices. IoT Edge for Linux on Windows (EFLOW) was chosen because it's a secure, reliable container management infrastructure. EFLOW is a Linux virtual machine, based on Microsoft's first party CBL-Mariner operating system. It’s built with the IoT Edge runtime and validated as a tier 1 supported environment for IoT Edge workloads. MCC will be a Linux IoT Edge module running on the Windows Host OS.
 
-Even though your MCC scenario is not related to IoT, Azure IoT Edge is used as a more generic Linux container, deployment, and management infrastructure. The Azure IoT Edge runtime sits on your designated MCC device and performs management and communication operations. The runtime performs the following important functionsto manage MCC on your edge device: 
+Even though your MCC scenario isn't related to IoT, Azure IoT Edge is used as a more generic Linux container, deployment, and management infrastructure. The Azure IoT Edge runtime sits on your designated MCC device and performs management and communication operations. The runtime performs the following important functionsto manage MCC on your edge device: 
 
 1. Installs and updates MCC on your edge device. 
 2. Maintains Azure IoT Edge security standards on your edge device. 
@@ -78,7 +78,7 @@ If an MCC node is unavailable, the client will pull content from CDN to ensure u
     - Using an SSD is recommended as cache read speed of SSD is superior to HDD
 
     NIC requirements:
-    - Multiple NICs on a single MCC instance are not supported.
+    - Multiple NICs on a single MCC instance aren't supported.
     - 1 Gbps NIC is the minimum speed recommended but any NIC is supported.
     - For best performance, NIC and BIOS should support SR-IOV
 
@@ -114,7 +114,7 @@ For questions regarding these instructions contact [msconnectedcache@microsoft.c
 As part of the MCC preview onboarding process an Azure subscription ID must be provided to Microsoft. 
 
 > [!IMPORTANT]
-> [Contact Microsoft](mailto:mccforenterprise@microsoft.com?subject=[MCC%20for%20Enterprise]%20Please%20add%20our%20Azure%20subscription%20to%20the%20allow%20list) and provide this information if you have not already. You will not be able to proceed if you skip this step.
+> [Contact Microsoft](mailto:mccforenterprise@microsoft.com?subject=[MCC%20for%20Enterprise]%20Please%20add%20our%20Azure%20subscription%20to%20the%20allow%20list) and provide this information if you have not already. you'll not be able to proceed if you skip this step.
 
 For information about creating or locating your subscription ID, see [Steps to obtain an Azure Subscription ID](#steps-to-obtain-an-azure-subscription-id).
 
@@ -132,7 +132,7 @@ The MCC Azure management portal is used to create and manage MCC nodes. An Azure
 2.  Type **Microsoft Connected Cache** into the search box, and hit **Enter** to show search results.
 
 > [!NOTE]
-> You will not see Microsoft Connected Cache in the drop-down list. You need to type it and press enter to see the result.
+> you'll not see Microsoft Connected Cache in the drop-down list. You need to type it and press enter to see the result.
 
 3.  Select **Microsoft Connected Cache** and choose **Create** on the next screen to start the process of creating the MCC resource.
 
@@ -143,7 +143,7 @@ The MCC Azure management portal is used to create and manage MCC nodes. An Azure
 
     -   Choose the subscription that you provided to Microsoft.
     -   Azure resource groups are logical groups of resources. Create a new resource group and choose a name for your resource group.
-    -   Choose **(US) West US**” for the location of the resource. This choice will not impact MCC if the physical location is not in the West US, it is just a limitation of the preview.
+    -   Choose **(US) West US**” for the location of the resource. This choice will not impact MCC if the physical location isn't in the West US, it's just a limitation of the preview.
 
        > [!NOTE]
        > Your MCC resource will not be created properly if you do not select **(US) West US**
@@ -162,7 +162,7 @@ The MCC Azure management portal is used to create and manage MCC nodes. An Azure
 
 #### Error: Validation failed
 
--   If you get a Validation failed error message on your portal, it is likely because you selected the **Location** as **US West 2** or some other location that is not **(US) West US**.
+-   If you get a Validation failed error message on your portal, it's likely because you selected the **Location** as **US West 2** or some other location that isn't **(US) West US**.
 -   To resolve this error, go to the previous step and choose **(US) West US**.
 
     ![eMCC img07](images/emcc07.png)
@@ -240,7 +240,7 @@ Files contained in the mccinstaller.zip file:
 
   **Windows Server:** [Install the Hyper-V role on Windows Server](/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server)
 
-#### If you are installing MCC on a local virtual machine:
+#### If you're installing MCC on a local virtual machine:
 
 1. Enable Nested Virtualization
 
@@ -259,24 +259,24 @@ Files contained in the mccinstaller.zip file:
   Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
   ```
   > [!NOTE]
-  >  After setting the execution policy, you will see a warning asking if you wish to change the execution policy. Choose **[A] Yes to All**.
+  >  After setting the execution policy, you'll see a warning asking if you wish to change the execution policy. Choose **[A] Yes to All**.
 
 4.  Copy the command from the portal and run it in Windows PowerShell
 
     ![eMCC img13](images/emcc13.png)
 
   > [!NOTE]
-  > After running the command, and multiple times throughout the installation process, you will receive the following notice. **Please select [R] Run once to proceed**.
+  > After running the command, and multiple times throughout the installation process, you'll receive the following notice. **Please select [R] Run once to proceed**.
   > <br>
   > <br>Security warning
   > <br>Run only scripts that you trust. While scripts from the internet can be useful, this script can potentially harm your computer. If you trust this script, use the Unblock-File cmdlet to allow the script to run without this warning message. Do you want to run C:\\Users\\mccinstaller\\Eflow\\installmcc.ps1?
   ><br>
   > <br>[D] Do not run **[R] Run once** [S] Suspend [?] Help (default is "D"):
 
-3.  Choose whether you would like to create a new virtual switch or select an existing one. Name your switch and select the Net Adapter to use for the switch. A computer restart will be required if you are creating a new switch.
+3.  Choose whether you would like to create a new virtual switch or select an existing one. Name your switch and select the Net Adapter to use for the switch. A computer restart will be required if you're creating a new switch.
 
   > [!NOTE]
-  > Restarting your computer after creating a switch is recommended. You will notice network delays during installation if the computer has not been restarted.
+  > Restarting your computer after creating a switch is recommended. you'll notice network delays during installation if the computer has not been restarted.
 
   If you restarted your computer after creating a switch, start from Step 2 above and skip step 5.
 
@@ -294,7 +294,7 @@ Files contained in the mccinstaller.zip file:
   > Choosing a dynamic IP address might assign a different IP address when the MCC restarts.
   > <br>A static IP address is recommended so you do not have to change this value in your management solution when MCC restarts.
 
-6.  Choose where you would like to download, install, and store the virtual hard disk for EFLOW. You will also be asked how much memory, storage, and cores you would like to allocate for the VM. In this example, we chose the default values for all prompts.
+6.  Choose where you would like to download, install, and store the virtual hard disk for EFLOW. you'll also be asked how much memory, storage, and cores you would like to allocate for the VM. In this example, we chose the default values for all prompts.
 
 7.  Follow the Azure Device Login link and sign into the Azure Portal.
 
@@ -302,7 +302,7 @@ Files contained in the mccinstaller.zip file:
 
 8.  If this is your first MCC deployment, please select **n** so that a new IoT Hub can be created. If you have already configured MCC before, choose **y** so that your MCCs are grouped in the same IoT Hub.
 
-    1.  You will be shown a list of existing IoT Hubs in your Azure Subscription; Enter the number corresponding to the IoT Hub to select it. **You will likely have only 1 IoT Hub in your subscription, in which case you want to enter “1”**
+    1.  you'll be shown a list of existing IoT Hubs in your Azure Subscription; Enter the number corresponding to the IoT Hub to select it. **you'll likely have only 1 IoT Hub in your subscription, in which case you want to enter “1”**
 
     ![eMCC img18](images/emcc18.png)
     ![eMCC img19](images/emcc19.png)
@@ -364,9 +364,9 @@ Example of setting the cache host policy to the MCC’s IP address / FQDN:
 
 #### PowerShell issues
 
-If you are seeing errors similar to this: “The term ‘Get-Something’ is not recognized as the name of a cmdlet, function, script file, or operable program.”
+If you're seeing errors similar to this: “The term ‘Get-Something’ isn't recognized as the name of a cmdlet, function, script file, or operable program.”
 
-1.  Ensure you are running Windows PowerShell version 5.x.
+1.  Ensure you're running Windows PowerShell version 5.x.
 
 2.  Run \$PSVersionTable and ensure you’re running version 5.x and *not version 6 or 7*.
 
@@ -407,7 +407,7 @@ Please note: You should consult the IoT Edge troubleshooting guide ([Common issu
 
 ## Diagnostics Script
 
-If you are having issues with your MCC, we included a diagnostics script which will collect all your logs and zip them into a single file. You can then send us these logs via email for the MCC team to debug.
+If you're having issues with your MCC, we included a diagnostics script which will collect all your logs and zip them into a single file. You can then send us these logs via email for the MCC team to debug.
 
 To run this script:
 
@@ -441,7 +441,7 @@ For example:
 ```
 ## Uninstall MCC
 
-Please contact the MCC Team before uninstalling to let us know if you are facing
+Please contact the MCC Team before uninstalling to let us know if you're facing
 issues.
 
 This script will remove the following:
@@ -464,9 +464,9 @@ Edge LTS \> Uninstall
 1. Sign in to https://portal.azure.com/ and navigate to the Azure services section.
 2. Click on **Subscriptions**. If you do not see **Subscriptions**, click on the **More Services** arrow and search for **Subscriptions**. 
 3. If you already have an Azure Subscription, skip to step 5. If you do not have an Azure Subscription, select **+ Add** on the top left. 
-4. Select the **Pay-As-You-Go** subscription. You will be asked to enter credit card information, but you will not be charged for using the MCC service. 
-5. On the **Subscriptions** blade, you will find details about your current subscription. Click on the subscription name. 
-6. After you select the subscription name, you will find the subscription ID in the **Overview** tab. Click on the **Copy to clipboard** icon next to your Subscription ID to copy the value. 
+4. Select the **Pay-As-You-Go** subscription. you'll be asked to enter credit card information, but you'll not be charged for using the MCC service. 
+5. On the **Subscriptions** blade, you'll find details about your current subscription. Click on the subscription name. 
+6. After you select the subscription name, you'll find the subscription ID in the **Overview** tab. Click on the **Copy to clipboard** icon next to your Subscription ID to copy the value. 
 
 ### Troubleshooting
 
@@ -490,8 +490,8 @@ For more information on Azure IoT Edge, please see the [Azure IoT Edge documenta
 
 ### EFLOW
 
-- [What is Azure IoT Edge for Linux on Windows](/azure/iot-edge/iot-edge-for-linux-on-windows?view=iotedge-2018-06&preserve-view=true)
-- [Install Azure IoT Edge for Linux on Windows](/azure/iot-edge/how-to-provision-single-device-linux-on-windows-symmetric?view=iotedge-2018-06&tabs=azure-portal%2Cpowershell#install-iot-edge)
+- [What is Azure IoT Edge for Linux on Windows](/azure/iot-edge/iot-edge-for-linux-on-windows)
+- [Install Azure IoT Edge for Linux on Windows](/azure/iot-edge/how-to-provision-single-device-linux-on-windows-symmetric#install-iot-edge)
 - [PowerShell functions for Azure IoT Edge for Linux on Windows](/azure/iot-edge/reference-iot-edge-for-linux-on-windows-functions?view=iotedge-2018-06)
 - EFLOW FAQ and Support: [Support · Azure/iotedge-eflow Wiki (github.com)](https://github.com/Azure/iotedge-eflow/wiki/Support#how-can-i-apply-updates-to-eflow)
 - [Now ready for Production: Linux IoT Edge Modules on Windows - YouTube](https://www.youtube.com/watch?v=pgqVCg6cxVU&ab_channel=MicrosoftIoTDevelopers)
@@ -513,10 +513,10 @@ You can either set your MCC IP address or FQDN using:
   From an elevated command prompt:
 
   ``` 
-    reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\DeliveryOptimization" /v DOCacheHost /t REG_SZ /d "10.137.187.38" /f
+  reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\DeliveryOptimization" /v DOCacheHost /t REG_SZ /d "10.137.187.38" /f
   ```
 
-1.  MDM Path in 1809 or higher:
+2.  MDM Path in 1809 or higher:
 
   .Vendor/MSFT/Policy/Config/DeliveryOptimization/DOCacheHost
 

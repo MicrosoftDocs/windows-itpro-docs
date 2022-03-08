@@ -54,7 +54,7 @@ The following steps describe how MCC is provisioned and used.
 
 1. **Azure subscription**: The MCC management portal is hosted within Azure, and is used to create the Connected Cache Azure resource and IoT Hub resource. Both are free services.
 
-    Your Azure subscription ID is first used to provision MCC services, and enable access to the preview. The MCC server requirement for an Azure subscription will cost you nothing. If you do not have an Azure subscription already, you can create an Azure [Pay-As-You-Go](https://azure.microsoft.com/offers/ms-azr-0003p/) account which requires a credit card for verification purposes. For more information, see the [Azure Free Account FAQ](https://azure.microsoft.com/free/free-account-faq/).
+    Your Azure subscription ID is first used to provision MCC services, and enable access to the preview. The MCC server requirement for an Azure subscription will cost you nothing. If you don't have an Azure subscription already, you can create an Azure [Pay-As-You-Go](https://azure.microsoft.com/offers/ms-azr-0003p/) account which requires a credit card for verification purposes. For more information, see the [Azure Free Account FAQ](https://azure.microsoft.com/free/free-account-faq/).
 
     The resources used for the preview, and in the future when this product is ready for production, will be completely free to you - like other caching solutions. 
     
@@ -66,7 +66,7 @@ The following steps describe how MCC is provisioned and used.
 Disk requirements:
 - SSDs are recommended due to improved cache read speeds of SSD, compared to HDD.
 - Using multiple disks is recommended to improve cache performance.
-- RAID disk configurations are discouraged because cache performance will be impacted. If you are using RAID disk configurations, ensure striping.
+- RAID disk configurations are discouraged because cache performance will be impacted. If you're using RAID disk configurations, ensure striping.
 - The maximum number of disks supported is 10.
 
 NIC requirements:
@@ -104,7 +104,7 @@ For questions regarding these instructions contact [msconnectedcache@microsoft.c
 As part of the MCC preview onboarding process an Azure subscription ID must be provided to Microsoft.
 
 > [!IMPORTANT]
-> [Contact Microsoft](mailto:mccforenterprise@microsoft.com?subject=[MCC%20for%20Enterprise]%20Please%20add%20our%20Azure%20subscription%20to%20the%20allow%20list) and provide your Azure subscription ID if you have not already. You will not be able to proceed if you skip this step.
+> [Contact Microsoft](mailto:mccforenterprise@microsoft.com?subject=[MCC%20for%20Enterprise]%20Please%20add%20our%20Azure%20subscription%20to%20the%20allow%20list) and provide your Azure subscription ID if you have not already. You'll not be able to proceed if you skip this step.
 
 
 For information about creating or locating your subscription ID, see [Steps to obtain an Azure Subscription ID](#steps-to-obtain-an-azure-subscription-id).
@@ -130,10 +130,10 @@ Use the following link to sign in to Azure: <https://portal.azure.com/?microsoft
 
     -   Choose the subscription that you provided to Microsoft.
     -   Azure resource groups are logical groups of resources. Create a new resource group and choose a name for your resource group.
-    -   Choose **(US) West US**” for the location of the resource. This choice will not impact MCC if the physical location is not in the West US, it is just a limitation of the preview.
+    -   Choose **(US) West US**” for the location of the resource. This choice will not impact MCC if the physical location isn't in the West US, it is just a limitation of the preview.
 
        > [!NOTE]
-       > Your MCC resource will not be created properly if you do not select **(US) West US**
+       > Your MCC resource will not be created properly if you don't select **(US) West US**
 
     -   Choose a name for the MCC resource.
 
@@ -146,7 +146,7 @@ Use the following link to sign in to Azure: <https://portal.azure.com/?microsoft
 
 #### Error: Validation failed
 
--   If you get a Validation failed error message on your portal, it is likely because you selected the **Location** as **US West 2** or some other location that is not **(US) West US**.
+-   If you get a Validation failed error message on your portal, it is likely because you selected the **Location** as **US West 2** or some other location that isn't **(US) West US**.
 -   To resolve this error, go to the previous step and choose **(US) West US**.
 
     ![iMCC img07](images/imcc07.png)
@@ -168,7 +168,7 @@ Creating a MCC node is a multi-step process and the first step is to access the 
 
 | **Field Name**                | **Expected Value**                         | **Description**                                                                                                                                                                                         |
 |-------------------------------|--------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Cache Node Name**           | Alphanumeric name that includes no spaces. | The name of the cache node. You may choose names based on location like Seattle-1. This name must be unique cannot be changed later.                                                                    |
+| **Cache Node Name**           | Alphanumeric name that includes no spaces. | The name of the cache node. You may choose names based on location like Seattle-1. This name must be unique and can't be changed later.                                                                    |
 | **Server II Address**         | Ipv4 Address                               | IP address of your MCC server. This is used to route end-user devices in your network to the server for Microsoft content downloads. **The IP address must be publicly accessible.** |
 | **Address Range/CIDR Blocks** | IPv4 CIDR notation                         | IP Address range/CIDR blocks that should be routed to the MCC server as a comma separated list. For example: 2.21.234.0/24 , 3.22.235.0/24 , 4.23.236.0/24                        |
 | **Enable Cache Node**         | Enable/Disable Radio Button                | **Enable** permits the cache node to receive content requests. <br>**Disable** prevents the cache node from receiving content requests. <br>Cache nodes are enabled by default.          |
@@ -273,7 +273,7 @@ Installing MCC on your physical server or VM is a straightforward process. A Bas
 
 2.  Copy all 4 installation files to your Linux server (physical or VM)
 
-3.  Before proceeding, ensure that you have a data drive configured on your server. You will need to specify the location for this cache drive on step 9. Mimimum size for the data drive is 100GB. For instructions to mount a disk on a Linux VM, see [Attach a data disk to a Linux VM](/azure/virtual-machines/linux/attach-disk-portal#find-the-disk)
+3.  Before proceeding, ensure that you have a data drive configured on your server. You'll need to specify the location for this cache drive on step 9. Mimimum size for the data drive is 100GB. For instructions to mount a disk on a Linux VM, see [Attach a data disk to a Linux VM](/azure/virtual-machines/linux/attach-disk-portal#find-the-disk)
 
 4.  Open a terminal and change the access permissions to execute on the **installmcc.sh** Bash script file using chmod.
 
@@ -285,15 +285,15 @@ Installing MCC on your physical server or VM is a straightforward process. A Bas
 
     ![iMCC img19](images/imcc19.png)
 
-6.  You will be prompted to sign in to the Azure Portal using a device code.
+6.  You'll be prompted to sign in to the Azure Portal using a device code.
 
     ![iMCC img20](images/imcc20.png)
 
-7.  You will be prompted to enter the Azure Container Registry (ACR) password for access to the MCC container.
+7.  You'll be prompted to enter the Azure Container Registry (ACR) password for access to the MCC container.
 
     ![iMCC img21](images/imcc21.png)
 
-8.  You will then be prompted with the number of drives to configure.
+8.  You'll then be prompted with the number of drives to configure.
 
     ![iMCC img22](images/imcc22.png)
 
@@ -303,7 +303,7 @@ Installing MCC on your physical server or VM is a straightforward process. A Bas
 
 > [!IMPORTANT]
 > The permissions / ownerships on the cache drive location will be changed to everyone via chmod 777<br>
-> **Do not** point the cache drive location to any of the following: “**.**”, “**./var**”, “**/**”, “**\<space\>**”
+> **Don't** point the cache drive location to any of the following: “**.**”, “**./var**”, “**/**”, “**\<space\>**”
 
 Specifying any of the directories mentioned above will corrupt the VM and you
 will need to provision a new one.
@@ -431,7 +431,7 @@ Follow the steps below to configure the device to work with your DNS:
 
 ## Diagnostics Script
 
-If you are having issues with your MCC, we included a diagnostics script which will collect all your logs and zip them into a single file. You can then send us these logs via email for the MCC team to debug.
+If you're having issues with your MCC, we included a diagnostics script which will collect all your logs and zip them into a single file. You can then send us these logs via email for the MCC team to debug.
 
 To run this script:
 
@@ -468,7 +468,7 @@ sudo ./updatemcc.sh version="msconnectedcacheprod.azurecr.io/mcc/linux/iot/mcc-u
 
 ## Uninstalling MCC
 
-In the zip file, you will find the file **uninstallmcc.sh** which uninstalls MCC and all the related components. Please contact the MCC Team before running this script and only run this script if you are facing issues with MCC installation. **Exercise caution before running this script as existing IoT workflows in this VM will also be erased.**
+In the zip file, you'll find the file **uninstallmcc.sh** which uninstalls MCC and all the related components. Please contact the MCC Team before running this script and only run this script if you're facing issues with MCC installation. **Exercise caution before running this script as existing IoT workflows in this VM will also be erased.**
 
 The **uninstallmcc.sh** script will remove the following:
 
@@ -490,11 +490,11 @@ sudo ./uninstallmcc.sh
 ### Steps to obtain an Azure Subscription ID
 
 1. Sign in to https://portal.azure.com/ and navigate to the Azure services section.
-2. Click on **Subscriptions**. If you do not see **Subscriptions**, click on the **More Services** arrow and search for **Subscriptions**. 
-3. If you already have an Azure Subscription, skip to step 5. If you do not have an Azure Subscription, select **+ Add** on the top left. 
-4. Select the **Pay-As-You-Go** subscription. You will be asked to enter credit card information, but you will not be charged for using the MCC service. 
-5. On the **Subscriptions** blade, you will find details about your current subscription. Click on the subscription name. 
-6. After you select the subscription name, you will find the subscription ID in the **Overview** tab. Click on the **Copy to clipboard** icon next to your Subscription ID to copy the value. 
+2. Click on **Subscriptions**. If you don't see **Subscriptions**, click on the **More Services** arrow and search for **Subscriptions**. 
+3. If you already have an Azure Subscription, skip to step 5. If you don't have an Azure Subscription, select **+ Add** on the top left. 
+4. Select the **Pay-As-You-Go** subscription. You'll be asked to enter credit card information, but you'll not be charged for using the MCC service. 
+5. On the **Subscriptions** blade, you'll find details about your current subscription. Click on the subscription name. 
+6. After you select the subscription name, you'll find the subscription ID in the **Overview** tab. Click on the **Copy to clipboard** icon next to your Subscription ID to copy the value. 
 
 ### Performance of MCC in Hypervisor environments
 
@@ -518,7 +518,7 @@ You can use hardware that will natively run Ubuntu 20.04 LTS, or you can run an 
     ![iMCC img31](images/imcc31.png)
     ![iMCC img32](images/imcc32.png)
 
-3.  Choose a **Generation 2** VM, and specify the startup memory. You cannot change the VM generation 2 later.  
+3.  Choose a **Generation 2** VM, and specify the startup memory. You can't change the VM generation 2 later.  
     
     ![iMCC img33](images/imcc33.png)
     ![iMCC img34](images/imcc34.png)
@@ -562,7 +562,7 @@ You can use hardware that will natively run Ubuntu 20.04 LTS, or you can run an 
     ![iMCC img47](images/imcc47.png)
     ![iMCC img48](images/imcc48.png)
 
-12. Choose your username, a name for your computer, and a password. Remember, everything is case sensitive in Linux. You will be asked to reboot in order to complete the installation.  
+12. Choose your username, a name for your computer, and a password. Remember, everything is case sensitive in Linux. You'll be asked to reboot in order to complete the installation.  
     
     ![iMCC img49](images/imcc49.png)
     ![iMCC img50](images/imcc50.png)
