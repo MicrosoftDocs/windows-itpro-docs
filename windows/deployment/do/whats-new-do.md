@@ -1,7 +1,7 @@
 ---
 title: What's new in Delivery Optimization
 manager: dougeby
-description: This article provides information about Delivery Optimization, a peer-to-peer distribution method in Windows 10 and Windows 11.
+description: What's new in Delivery Optimization, a peer-to-peer distribution method in Windows 10 and Windows 11.
 keywords: oms, operations management suite, wdav, updates, downloads, log analytics, mcc, do, delivery, connected cache
 ms.prod: w10
 ms.mktglfcycl: deploy
