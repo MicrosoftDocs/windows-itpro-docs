@@ -1,7 +1,7 @@
 ---
-title: Microsoft Connected Cache for Enterprises (private preview)
+title: Microsoft Connected Cache for Enterprise and Education (private preview)
 manager: dougeby
-description: Details on Microsoft Connected Cache (MCC) for Enterprises.
+description: Details on Microsoft Connected Cache (MCC) for Enterprise and Education.
 keywords: updates, downloads, network, bandwidth
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -13,7 +13,7 @@ ms.collection: M365-modern-desktop
 ms.topic: article
 ---
 
-# Microsoft Connected Cache for Enterprises (private preview)
+# Microsoft Connected Cache for Enterprise and Education (private preview)
 
 **Applies to**
 

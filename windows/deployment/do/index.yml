@@ -31,7 +31,7 @@ landingContent:
           - text: What is Delivery Optimization
             url: waas-delivery-optimization.md
           - text: What's new in Delivery Optimization
-            url: waas-delivery-optimization.md#new-in-windows-10-version-20h2-and-windows-11
+            url: whats-new-do.md
           - text: Microsoft Connected Cache (MCC) overview
             url: waas-microsoft-connected-cache.md
 
@@ -62,11 +62,11 @@ landingContent:
             
  
   # Card
-  - title: Microsoft Connected Cache (MCC) for Enterprises
+  - title: Microsoft Connected Cache (MCC) for Enterprise and Education
     linkLists:
       - linkListType: deploy
         links:
-          - text: MCC for Entreprises (Private Preview)
+          - text: MCC for Entreprise and Education (Private Preview)
             url: mcc-enterprise.md
           - text: Sign up
             url: https://aka.ms/MSConnectedCacheSignup 

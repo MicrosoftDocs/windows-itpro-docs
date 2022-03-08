@@ -589,5 +589,5 @@ For more information on Azure IoT Edge, please see the [Azure IoT Edge documenta
 
 ## Also see
 
-[Microsoft Connected Cache for Enterprises](mcc-enterprise.md)<br>
+[Microsoft Connected Cache for Enterprise and Education](mcc-enterprise.md)<br>
 [Introducing Microsoft Connected Cache](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-microsoft-connected-cache-microsoft-s-cloud-managed/ba-p/963898)
