@@ -250,7 +250,7 @@ Installing MCC on your physical server or VM is a straightforward process. A Bas
     will install the Moby engine and CLI.
 -   Installs IoT Edge.
 -   Installs SSH to support remote access to the server
--   Enables the firewall and opens ports 80 and 22 for inbound and outbound traffic. Port 80 is used by MCC and port 22 is used for SSH communications.
+-   Enables the firewall and opens port 80 for inbound and outbound traffic. Port 80 is used by MCC.
 -   Configures Connected Cache tuning settings.
 -   Creates the necessary *FREE* Azure resource - IoT Hub/IoT Edge.
 -   Deploys the MCC container to server.
