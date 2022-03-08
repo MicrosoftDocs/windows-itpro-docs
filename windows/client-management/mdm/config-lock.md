@@ -48,31 +48,31 @@ The steps to turn on Config Lock using Microsoft Endpoint Manager (Microsoft Int
     - **Profile type**: Templates
     - **Template name**: Custom
 
-    :::image type="content" source="images/configlock-mem-createprofile.png" alt-text="create profile":::
+    :::image type="content" source="images/configlock-mem-createprofile.png" alt-text="In Configuration profiles, the Create a profile page is showing, with the Platform set to Windows 10 and later, and a Profile Type of Templates":::
 
 1. Name your profile.
 1. When you reach the Configuration Settings step, select “Add” and add the following information:
     - **OMA-URI**: ./Vendor/MSFT/DMClient/Provider/MS%20DM%20Server/ConfigLock/Lock
     - **Data type**: Integer
     - **Value**: 1 </br>
-    To turn off Config Lock. Change value to 0.
+    To turn off Config Lock, change the value to 0.
 
-    :::image type="content" source="images/configlock-mem-editrow.png" alt-text="edit row":::
+    :::image type="content" source="images/configlock-mem-editrow.png" alt-text="In the Configuration settings step, the Edit Row page is shown with a Name of Config Lock, a Description of Turn on Config Lock and the OMA-URI set as above, along with a Data type of Integer set to a Value of 1":::
 
 1. Select the devices to turn on Config Lock. If you're using a test tenant, you can select “+ Add all devices”.
 1. You'll not need to set any applicability rules for test purposes.
 1. Review the Configuration and select “Create” if everything is correct.
 1. After the device syncs with the Microsoft Intune server, you can confirm if the Config Lock was successfully enabled.
 
-    :::image type="content" source="images/configlock-mem-dev.png" alt-text="status":::
+    :::image type="content" source="images/configlock-mem-dev.png" alt-text="The Profile assignment status dashboard when viewing the Config Lock device configuration profile, showing one device has succeeded in having this profile applied":::
 
-    :::image type="content" source="images/configlock-mem-devstatus.png" alt-text="device status":::
+    :::image type="content" source="images/configlock-mem-devstatus.png" alt-text="The Device Status for the Config Lock Device Configuration Profile, showing one device with a Deployment Status as Succeeded and two with Pending":::
 
-## Disabling
+## Configuring Secured-Core PC features
 
-Config Lock is designed to ensure that a Secured-Core PC isn't unintentionally misconfigured.  IT Admins retain the ability to change (enabled/disable) SCPC features via Group Policies and/or mobile device management (MDM) tools, such as Microsoft Intune.
+Config Lock is designed to ensure that a Secured-Core PC isn't unintentionally misconfigured.  IT Admins retain the ability to change (enable/disable) SCPC features (for example Firmware protection) via Group Policies and/or mobile device management (MDM) tools, such as Microsoft Intune.
 
-:::image type="content" source="images/configlock-mem-firmwareprotect.png" alt-text="firmware protect":::
+:::image type="content" source="images/configlock-mem-firmwareprotect.png" alt-text="The Defender Firmware protection setting, with a description of Windows Defender System Guard protects your device from compromised firmware. The setting is set to Off":::
  
 ## FAQ
 
