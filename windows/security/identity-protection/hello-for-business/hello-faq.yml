@@ -45,11 +45,15 @@ sections:
           
       - question: Can I deploy Windows Hello for Business by using Microsoft Endpoint Configuration Manager?
         answer: |
-          Windows Hello for Business deployments using Configuration Manager should follow the hybrid deployment model that uses Active Directory Federation Services. In Configuration Manager version 1910 and later, certificate-based authentication with Windows Hello for Business settings isn't supported. Key-based authentication is still valid with Configuration Manager. For more information, see [Windows Hello for Business settings in Configuration Manager](/configmgr/protect/deploy-use/windows-hello-for-business-settings).
+          Windows Hello for Business deployments using Configuration Manager should follow the hybrid deployment model that uses Active Directory Federation Services. Starting in Configuration Manager version 1910, certificate-based authentication with Windows Hello for Business settings isn't supported. Key-based authentication is still valid with Configuration Manager. For more information, see [Windows Hello for Business settings in Configuration Manager](/configmgr/protect/deploy-use/windows-hello-for-business-settings).
+
+      - question: Can I deploy Windows Hello for Business by using Microsoft Endpoint Manager Intune?
+        answer: |
+          Windows Hello for Business deployments using Intune allow for a great deal of flexibility in deployment. For more information, see [Integrate Windows Hello for Business with Microsoft Intune](/mem/intune/protect/windows-hello).
           
       - question: How many users can enroll for Windows Hello for Business on a single Windows 10 computer?
         answer: |
-          The maximum number of supported enrollments on a single Windows 10 computer is 10. This limit lets 10 users each enroll their face and up to 10 fingerprints. While we support 10 enrollments, we'll strongly encourage the use of Windows Hello security keys for the shared computer scenario when they become available.
+          The maximum number of supported enrollments on a single Windows 10 computer is 10. This lets 10 users each enroll their face and up to 10 fingerprints. For devices with more than 10 users, we strongly encourage the use of FIDO2 security keys.
 
       - question: How can a PIN be more secure than a password?
         answer: |
@@ -102,6 +106,11 @@ sections:
           [Windows Hello for Business forgotten PIN user experience](hello-videos.md#windows-hello-for-business-forgotten-pin-user-experience)
           
           For on-premises deployments, devices must be well-connected to their on-premises network (domain controllers and/or certificate authority) to reset their PINs. Hybrid customers can on-board their Azure tenant to use the Windows Hello for Business PIN reset service to reset their PINs without access to their corporate network.
+
+      - question: What happens when a PIN policy is changed?
+        answer: |
+          Once a new policy is applied to the user's device, the user will be asked to change their PIN once they have typed in the current PIN.
+          If more than one policy is applied, the most restrictive setting will apply.
           
       - question: What URLs do I need to allow for a hybrid deployment?
         answer: |
