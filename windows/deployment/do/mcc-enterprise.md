@@ -114,7 +114,7 @@ For questions regarding these instructions contact [msconnectedcache@microsoft.c
 As part of the MCC preview onboarding process an Azure subscription ID must be provided to Microsoft. 
 
 > [!IMPORTANT]
-> [Contact Microsoft](mailto:mccforenterprise@microsoft.com?subject=[MCC%20for%20Enterprise]%20Please%20add%20our%20Azure%20subscription%20to%20the%20allow%20list) and provide this information if you have not already. you'll not be able to proceed if you skip this step.
+> [Contact Microsoft](mailto:mccforenterprise@microsoft.com?subject=[MCC%20for%20Enterprise]%20Please%20add%20our%20Azure%20subscription%20to%20the%20allow%20list) and provide this information if you have not already. You'll not be able to proceed if you skip this step.
 
 For information about creating or locating your subscription ID, see [Steps to obtain an Azure Subscription ID](#steps-to-obtain-an-azure-subscription-id).
 
@@ -132,7 +132,7 @@ The MCC Azure management portal is used to create and manage MCC nodes. An Azure
 2.  Type **Microsoft Connected Cache** into the search box, and hit **Enter** to show search results.
 
 > [!NOTE]
-> you'll not see Microsoft Connected Cache in the drop-down list. You need to type it and press enter to see the result.
+> You'll not see Microsoft Connected Cache in the drop-down list. You need to type it and press enter to see the result.
 
 3.  Select **Microsoft Connected Cache** and choose **Create** on the next screen to start the process of creating the MCC resource.
 
@@ -276,7 +276,7 @@ Files contained in the mccinstaller.zip file:
 3.  Choose whether you would like to create a new virtual switch or select an existing one. Name your switch and select the Net Adapter to use for the switch. A computer restart will be required if you're creating a new switch.
 
   > [!NOTE]
-  > Restarting your computer after creating a switch is recommended. you'll notice network delays during installation if the computer has not been restarted.
+  > Restarting your computer after creating a switch is recommended. You'll notice network delays during installation if the computer has not been restarted.
 
   If you restarted your computer after creating a switch, start from Step 2 above and skip step 5.
 
@@ -294,7 +294,7 @@ Files contained in the mccinstaller.zip file:
   > Choosing a dynamic IP address might assign a different IP address when the MCC restarts.
   > <br>A static IP address is recommended so you do not have to change this value in your management solution when MCC restarts.
 
-6.  Choose where you would like to download, install, and store the virtual hard disk for EFLOW. you'll also be asked how much memory, storage, and cores you would like to allocate for the VM. In this example, we chose the default values for all prompts.
+6.  Choose where you would like to download, install, and store the virtual hard disk for EFLOW. You'll also be asked how much memory, storage, and cores you would like to allocate for the VM. In this example, we chose the default values for all prompts.
 
 7.  Follow the Azure Device Login link and sign into the Azure Portal.
 
@@ -302,7 +302,7 @@ Files contained in the mccinstaller.zip file:
 
 8.  If this is your first MCC deployment, please select **n** so that a new IoT Hub can be created. If you have already configured MCC before, choose **y** so that your MCCs are grouped in the same IoT Hub.
 
-    1.  you'll be shown a list of existing IoT Hubs in your Azure Subscription; Enter the number corresponding to the IoT Hub to select it. **you'll likely have only 1 IoT Hub in your subscription, in which case you want to enter “1”**
+    1.  You'll be shown a list of existing IoT Hubs in your Azure Subscription; Enter the number corresponding to the IoT Hub to select it. **You'll likely have only 1 IoT Hub in your subscription, in which case you want to enter “1”**
 
     ![eMCC img18](images/emcc18.png)
     ![eMCC img19](images/emcc19.png)
@@ -464,7 +464,7 @@ Edge LTS \> Uninstall
 1. Sign in to https://portal.azure.com/ and navigate to the Azure services section.
 2. Click on **Subscriptions**. If you do not see **Subscriptions**, click on the **More Services** arrow and search for **Subscriptions**. 
 3. If you already have an Azure Subscription, skip to step 5. If you do not have an Azure Subscription, select **+ Add** on the top left. 
-4. Select the **Pay-As-You-Go** subscription. you'll be asked to enter credit card information, but you'll not be charged for using the MCC service. 
+4. Select the **Pay-As-You-Go** subscription. You'll be asked to enter credit card information, but you'll not be charged for using the MCC service. 
 5. On the **Subscriptions** blade, you'll find details about your current subscription. Click on the subscription name. 
 6. After you select the subscription name, you'll find the subscription ID in the **Overview** tab. Click on the **Copy to clipboard** icon next to your Subscription ID to copy the value. 
 
