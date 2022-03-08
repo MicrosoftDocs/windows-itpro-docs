@@ -143,7 +143,7 @@ The MCC Azure management portal is used to create and manage MCC nodes. An Azure
 
     -   Choose the subscription that you provided to Microsoft.
     -   Azure resource groups are logical groups of resources. Create a new resource group and choose a name for your resource group.
-    -   Choose **(US) West US**” for the location of the resource. This choice will not impact MCC if the physical location isn't in the West US, it's just a limitation of the preview.
+    -   Choose **(US) West US** for the location of the resource. This choice will not impact MCC if the physical location isn't in the West US, it's just a limitation of the preview.
 
        > [!NOTE]
        > Your MCC resource will not be created properly if you do not select **(US) West US**
@@ -207,9 +207,9 @@ Cache nodes can be deleted here by clicking the check box to the left of a **Cac
 Installing MCC on your Windows device is a simple process. A PowerShell script performs the following tasks:
 
   - Installs the Azure CLI
-  - Downloads, Installs, and Deploys EFLOW
+  - Downloads, installs, and deploys EFLOW
   - Enables Microsoft Update so EFLOW can stay up to date
-  - Creates a Virtual Machine
+  - Creates a virtual machine
   - Enables the firewall and opens ports 80 and 22 for inbound and outbound traffic. Port 80 is used by MCC, and port 22 is used for SSH communications.
   - Configures Connected Cache tuning settings.
   - Creates the necessary *FREE* Azure resource - IoT Hub/IoT Edge.
@@ -245,7 +245,7 @@ Files contained in the mccinstaller.zip file:
 1. Enable Nested Virtualization
 
   ```
-  Set -VMProcessor -VMName "VM name" -ExposeVirtualizationExtensions \$true
+  Set -VMProcessor -VMName "VM name" -ExposeVirtualizationExtensions $true
   ```
 2. Enable Mac Spoofing
   ```
@@ -311,7 +311,7 @@ Files contained in the mccinstaller.zip file:
 
     1.  If you do not see any errors, please continue to the next section to validate your MCC deployment.
     2.  After validating your MCC is properly functional, please review your management solution documentation, such as [Intune](/mem/intune/configuration/delivery-optimization-windows), to set the cache host policy to the IP address of your MCC.
-    3.  If you had errors during your deployment, visit the [Troubleshooting](#troubleshooting) section in this article.
+    3.  If you had errors during your deployment, see the [Troubleshooting](#troubleshooting) section in this article.
 
 ### Verify proper functioning MCC server
 
