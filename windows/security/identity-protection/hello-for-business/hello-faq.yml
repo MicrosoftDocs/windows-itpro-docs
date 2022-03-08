@@ -49,7 +49,7 @@ sections:
           
       - question: How many users can enroll for Windows Hello for Business on a single Windows 10 computer?
         answer: |
-          The maximum number of supported enrollments on a single Windows 10 computer is 10. This limit lets 10 users each enroll their face and up to 10 fingerprints. While we support 10 enrollments, we'll strongly encourage the use of Windows Hello security keys for the shared computer scenario when they become available.
+          The maximum number of supported enrollments on a single Windows 10 computer is 10. This lets 10 users each enroll their face and up to 10 fingerprints. For devices with more than 10 users, we strongly encourage the use of FIDO2 security keys.
 
       - question: How can a PIN be more secure than a password?
         answer: |
