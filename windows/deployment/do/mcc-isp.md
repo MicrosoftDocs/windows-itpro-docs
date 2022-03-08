@@ -1,5 +1,5 @@
 ---
-title: Microsoft Connected Cache for Internet Service Providers
+title: Microsoft Connected Cache for Internet Service Providers (ISPs)
 manager: dougeby
 description: Details on Microsoft Connected Cache (MCC) for Internet Service Providers (ISPs).
 keywords: updates, downloads, network, bandwidth
@@ -13,7 +13,7 @@ ms.collection: M365-modern-desktop
 ms.topic: article
 ---
 
-# MCC for Internet Service Providers
+# Microsoft Connected Cached for Internet Service Providers (ISPs)
 
 **Applies to**
 
