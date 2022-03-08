@@ -21,7 +21,7 @@ ms.topic: article
 
 WUDOStatus records provide information, for a single device, on their bandwidth utilization for a specific content type in the event they use [Delivery Optimization](https://support.microsoft.com/help/4468254/windows-update-delivery-optimization-faq), and other information to create more detailed reports and splice on certain common characteristics.
 
-These fields are briefly described in this article, to learn more about Delivery Optimization in general, check out the [Delivery Optimization Reference](do/waas-delivery-optimization-reference.md).
+These fields are briefly described in this article, to learn more about Delivery Optimization in general, check out the [Delivery Optimization Reference](../do/waas-delivery-optimization-reference.md).
 
 |Field |Type |Example |Description |
 |-|-|-|-|
@@ -36,10 +36,10 @@ These fields are briefly described in this article, to learn more about Delivery
 |**BytesFromGroupPeers** |[long](/azure/kusto/query/scalar-data-types/long) |`523132` |Total number of bytes downloaded from Group Peers. |
 |**BytesFromIntPeers** |[long](/azure/kusto/query/scalar-data-types/long) |`328350` |Total number of bytes downloaded from Internet Peers. |
 |**BytesFromPeers** |[long](/azure/kusto/query/scalar-data-types/long) |`43145` |Total number of bytes downloaded from peers. |
-|**ContentDownloadMode** |[int](/azure/kusto/query/scalar-data-types/int) |`0` |Device's Delivery Optimization [Download Mode](do/waas-delivery-optimization-reference.md#download-mode) configuration for this content. |
+|**ContentDownloadMode** |[int](/azure/kusto/query/scalar-data-types/int) |`0` |Device's Delivery Optimization [Download Mode](../do/waas-delivery-optimization-reference.md#download-mode) configuration for this content. |
 |**ContentType** |[int](/azure/kusto/query/scalar-data-types/int) |`Quality Updates` |The type of content being downloaded. |
 |**DOStatusDescription** |[string](/azure/kusto/query/scalar-data-types/string) | |A short description of DO's status, if any. |
-|**DownloadMode** |[string](/azure/kusto/query/scalar-data-types/string) |`HTTP+LAN (1)` |Device's Delivery Optimization [Download Mode](do/waas-delivery-optimization-reference.md#download-mode) configuration for this device. |
+|**DownloadMode** |[string](/azure/kusto/query/scalar-data-types/string) |`HTTP+LAN (1)` |Device's Delivery Optimization [Download Mode](../do/waas-delivery-optimization-reference.md#download-mode) configuration for this device. |
 |**DownloadModeSrc** |[string](/azure/kusto/query/scalar-data-types/string) |`Default` |The source of the DownloadMode configuration. |
 |**GroupID** |[string](/azure/kusto/query/scalar-data-types/string) | |The DO Group ID. |
 |**NoPeersCount** |[long](/azure/kusto/query/scalar-data-types/long) | |The number of peers this device interacted with. |

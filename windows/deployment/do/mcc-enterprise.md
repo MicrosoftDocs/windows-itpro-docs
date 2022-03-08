@@ -280,7 +280,7 @@ Files contained in the mccinstaller.zip file:
 
   If you restarted your computer after creating a switch, start from Step 2 above and skip step 5.
 
-    ![eMCC img14](images/emcc14.png)
+  ![eMCC img14](images/emcc14.png)
 
 4.  Re-run the script after the restart. This time, choose **No** when asked to create a new switch. Enter the number corresponding to the switch you previously created.
 
