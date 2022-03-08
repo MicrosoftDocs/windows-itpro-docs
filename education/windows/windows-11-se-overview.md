@@ -37,27 +37,38 @@ Windows 11 SE is only available preinstalled on devices from OEMs. The OEM insta
 
 Windows 11 SE comes with some preinstalled apps. The following apps can also run on Windows 11 SE, and are deployed using the [Intune for Education portal](https://intuneeducation.portal.azure.com). For more information, see [Manage devices running Windows 11 SE](/intune-education/windows-11-se-overview).
 
----
-| Application | Min version | Vendor |
-| --- | --- | --- |
-| Chrome | 95.0.4638.54 | Google |
-| Dragon Assistant | 3.2.98.061 | Nuance Communications |
-| Dragon Professional Individual | 15.00.100  | Nuance Communications |
-| e-Speaking Voice and Speech recognition | 4.4.0.8 | e-speaking |
-| Free NaturalReader | 16.1.2 | Natural Soft |
-| Jaws for Windows | 2022.2109.84 ILM | Freedom Scientific |
-| Kite Student Portal | 8.0.1 | Dynamic Learning Maps |
-| NextUp Talker | 1.0.49 | NextUp Technologies, LLC. |
-| NonVisual Desktop Access | 2021.2 | NV Access |
-| Read and Write | 12.0.71 | Texthelp Systems Ltd. |
-| SuperNova Magnifier & Screen Reader | 20.03 | Dolphin Computer Access |
-| SuperNova Magnifier & Speech | 20.03 | Dolphin Computer Access |
-| Text Aloud | 4.0.64 | Nextup.com |
-| Zoom | 5.8.3 (1581) | Zoom Inc |
-| Zoomtext Fusion by AiSquared | 2022.2109.10 | ORF Fusion |
-| ZoomText Magnifier/Reader | 2022.2109.25ILM | AI Squared |
 
----
+| Application | Supported version | Vendor |
+| --- | --- | --- |
+|Blub Digital Portoflio                 |0.0.7.0         |bulb|
+|CA Secure Browser                      |14.0.0          |Cambium Development|
+|Cisco Umbrella                         |3.0.110.0       |Cisco|
+|Dragon Professional Individual         |15.00.100       |Nuance Communications|
+|DRC INSIGHT Online Assessments         |12.0.0.0        |DRC|
+|e-Speaking Voice and Speech recognition|4.4.0.8         |e-speaking|
+|Free NaturalReader                     |16.1.2          |Natural Soft|
+|GoGuardian                             |1.4.4           |GoGuardian|
+|Google Chrome                          |97.0.4692.71    |Google|
+|JAWS for Windows                       |2022.2112.24    |Freedom Scientific|
+|Kite Student Portal                    |8.0.1|Dynamic Learning Maps|
+|Kortext                                |2.3.418.0       |Kortext|
+|LanSchool                              |9.1.0.46        |Stoneware|
+|Lightspeed Smart Agent                 |1.9.1           |Lightspeed Systems|
+|Mozilla Firefox                        |96.0.2          |Mozilla|
+|NextUp Talker                          |1.0.49          |NextUp Technologies|
+|NonVisual Desktop Access               |2021.3.1        |NV Access|
+|NWEA Secure Testing Browser            |5.4.300.0       |NEWA|
+|Read&Write for Windows (US English)    |12.0.60.0       |Texthelp Ltd.|
+|Safe Exam Broswer                      |3.3.1           |Safe Exam Broswer|
+|Secure Browser                         |4.8.3.376       |Questar, Inc|
+|SuperNova Magnifier & Screen Reader    | 20.03          |Dolphin Computer Access|
+|SuperNova Magnifier & Speech           | 20.03          |Dolphin Computer Access|
+|Respondus Lockdown Browser             |2.0.8.03        |Respondus|
+|TestNav                                |1.10.2.0        |Pearson Education Inc|
+|SecureBrowser                          |14.0.0          |Cambium Development|
+|Zoom                                   |5.9.1 (2581)    |Zoom|
+|ZoomText Fusion              |2022.2109.10 |Freedom Scientific| 
+|ZoomText Magnifier/Reader              |2022.2109.25 |Freedom Scientific| 
 
 ### Enabled apps
 

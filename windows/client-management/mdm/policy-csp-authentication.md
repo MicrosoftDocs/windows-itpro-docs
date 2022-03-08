@@ -40,6 +40,9 @@ manager: dansimp
     <a href="#authentication-configurewebsigninallowedurls">Authentication/ConfigureWebSignInAllowedUrls</a>
   </dd>
   <dd>
+    <a href="#authentication-configurewebcamaccessdomainnames">Authentication/ConfigureWebcamAccessDomainNames</a>
+  </dd>
+  <dd>
     <a href="#authentication-enablefastfirstsignin">Authentication/EnableFastFirstSignIn</a>
   </dd>
   <dd>
@@ -322,6 +325,55 @@ Specifies the list of domains that are allowed to be navigated to in AAD PIN res
 <hr/>
 
 <!--Policy-->
+<a href="" id="authentication-configurewebcamaccessdomainnames"></a>**Authentication/ConfigureWebcamAccessDomainNames**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+Specifies the list of domain names that are allowed to access the webcam in Web Sign-in Windows device sign-in scenarios.
+
+Web Sign-in is only supported on Azure AD Joined PCs.
+
+**Example**: If your organization federates to "Contoso IDP" and your Web Sign-in portal at "signinportal.contoso.com" requires webcam access, the policy value should be "contoso.com".
+
+
+<!--/Description-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="authentication-enablefastfirstsignin"></a>**Authentication/EnableFastFirstSignIn**  
 
 <!--SupportedSKUs-->
@@ -349,7 +401,7 @@ Specifies the list of domains that are allowed to be navigated to in AAD PIN res
 <!--/Scope-->
 <!--Description-->
 > [!Warning]
-> The Web Sign-in feature is in preview mode only and therefore not meant or recommended for production purposes.
+> The Web Sign-in feature is in private preview mode only and not meant or recommended for production purposes. This setting is not currently supported at this time. 
 
 This policy is intended for use on Shared PCs to enable a quick first sign-in experience for a user. It works by automatically connecting new non-admin Azure Active Directory (Azure AD) accounts to the pre-configured candidate local accounts.
 
@@ -404,7 +456,7 @@ Value type is integer. Supported values:
 <!--/Scope-->
 <!--Description-->
 > [!Warning]
-> The Web Sign-in feature is in preview mode only and therefore not meant or recommended for production purposes.
+> The Web Sign-in feature is in private preview mode only and not meant or recommended for production purposes. This setting is not currently supported at this time. 
 
 "Web Sign-in" is a new way of signing into a Windows PC. It enables Windows logon support for new Azure AD credentials, like Temporary Access Pass.
 

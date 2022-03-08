@@ -1,6 +1,6 @@
 ---
-title: Why a PIN is better than a password (Windows)
-description: Windows Hello in Windows 10 enables users to sign in to their device using a PIN. How is a PIN different from (and better than) a password .
+title: Why a PIN is better than an online password (Windows)
+description: Windows Hello in Windows 10 enables users to sign in to their device using a PIN. How is a PIN different from (and better than) an online password .
 ms.assetid: A6FC0520-01E6-4E90-B53D-6C4C4E780212
 keywords: pin, security, password, hello
 ms.prod: m365-security
@@ -8,8 +8,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection:
   - M365-identity-device-management
@@ -19,41 +19,43 @@ ms.localizationpriority: medium
 ms.date: 10/23/2017
 ---
 
-# Why a PIN is better than a password
+# Why a PIN is better than an online password
 
 **Applies to**
 
--   Windows 10
--   Windows 11
+- Windows 10
+- Windows 11
 
-Windows Hello in Windows 10 enables users to sign in to their device using a PIN. How is a PIN different from (and better than) a password?
-On the surface, a PIN looks much like a password. A PIN can be a set of numbers, but enterprise policy might allow complex PINs that include special characters and letters, both upper-case and lower-case. Something like **t758A!** could be an account password or a complex Hello PIN. It isn't the structure of a PIN (length, complexity) that makes it better than a password, it's how it works.
+Windows Hello in Windows 10 enables users to sign in to their device using a PIN. How is a PIN different from (and better than) a local password?
+On the surface, a PIN looks much like a password. A PIN can be a set of numbers, but enterprise policy might allow complex PINs that include special characters and letters, both upper-case and lower-case. Something like **t758A!** could be an account password or a complex Hello PIN. It isn't the structure of a PIN (length, complexity) that makes it better than an online password, it's how it works. First we need to distinguish between two types of passwords: `local` passwords are validated against the machine's password store, whereas `online` passwords are validated against a server. This article mostly covers the benefits a PIN has over an online password, and also why it can be considered even better than a local password. 
 
-Watch Dana Huang explain why a Windows Hello for Business PIN is more secure than a password.
+Watch Dana Huang explain why a Windows Hello for Business PIN is more secure than an online password.
 
 > [!VIDEO https://www.youtube.com/embed/cC24rPBvdhA]
 
 ## PIN is tied to the device
 
-One important difference between a password and a Hello PIN is that the PIN is tied to the specific device on which it was set up. That PIN is useless to anyone without that specific hardware. Someone who steals your password can sign in to your account from anywhere, but if they steal your PIN, they'd have to steal your physical device too!
+One important difference between an online password and a Hello PIN is that the PIN is tied to the specific device on which it was set up. That PIN is useless to anyone without that specific hardware. Someone who steals your online password can sign in to your account from anywhere, but if they steal your PIN, they'd have to steal your physical device too!
 
 Even you can't use that PIN anywhere except on that specific device. If you want to sign in on multiple devices, you have to set up Hello on each device.
 
 ## PIN is local to the device
 
-A password is transmitted to the server -- it can be intercepted in transmission or stolen from a server. A PIN is local to the device -- it isn't transmitted anywhere and it isn't stored on the server.
+An online password is transmitted to the server -- it can be intercepted in transmission or stolen from a server. A PIN is local to the device -- it isn't transmitted anywhere and it isn't stored on the server.
 When the PIN is created, it establishes a trusted relationship with the identity provider and creates an asymmetric key pair that is used for authentication. When you enter your PIN, it unlocks the authentication key and uses the key to sign the request that is sent to the authenticating server.
+Note, however, that even though local passwords are also local to the device, they are still less secure than a PIN, as described in the next section.
 
 >[!NOTE]
 >For details on how Hello uses asymetric key pairs for authentication, see [Windows Hello for Business](hello-overview.md#benefits-of-windows-hello).
  
 ## PIN is backed by hardware
 
-The Hello PIN is backed by a Trusted Platform Module (TPM) chip, which is a secure crypto-processor that is designed to carry out cryptographic operations. The chip includes multiple physical security mechanisms to make it tamper resistant, and malicious software is unable to tamper with the security functions of the TPM. Many modern devices have TPM.
+The Hello PIN is backed by a Trusted Platform Module (TPM) chip, which is a secure crypto-processor that is designed to carry out cryptographic operations. The chip includes multiple physical security mechanisms to make it tamper resistant, and malicious software is unable to tamper with the security functions of the TPM. Many modern devices have TPM. Windows 10, on the other hand, has a defect of not linking local passwords to TPM. This is the reason why PINs are considered more secure than local passwords.
 
 User key material is generated and available within the Trusted Platform Module (TPM) of the user device, which protects it from attackers who want to capture the key material and reuse it. Because Hello uses asymmetric key pairs, users credentials can't be stolen in cases where the identity provider or websites the user accesses have been compromised.
 
 The TPM protects against a variety of known and potential attacks, including PIN brute-force attacks. After too many incorrect guesses, the device is locked.
+
 
 ## PIN can be complex
 

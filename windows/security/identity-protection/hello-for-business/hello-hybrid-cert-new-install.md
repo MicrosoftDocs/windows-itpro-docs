@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -19,25 +19,25 @@ ms.reviewer:
 # Hybrid Azure AD joined Windows Hello for Business Certificate Trust New Installation
 
 **Applies to**
--   Windows 10, version 1703 or later
--   Windows 11
--   Hybrid deployment
--   Certificate trust
 
+- Windows 10, version 1703 or later
+- Windows 11
+- Hybrid deployment
+- Certificate trust
 
 Windows Hello for Business involves configuring distributed technologies that may or may not exist in your current infrastructure.  Hybrid certificate trust deployments of Windows Hello for Business rely on these technologies
 
-* [Active Directory](#active-directory)
-* [Public Key Infrastructure](#public-key-infrastructure)
-* [Azure Active Directory](#azure-active-directory)
-* [Multifactor Authentication Services](#multifactor-authentication-services)
-
+- [Active Directory](#active-directory)
+- [Public Key Infrastructure](#public-key-infrastructure)
+- [Azure Active Directory](#azure-active-directory)
+- [Multifactor Authentication Services](#multifactor-authentication-services)
 
 New installations are considerably more involved than existing implementations because you are building the entire infrastructure.  Microsoft recommends you review the new installation baseline to validate your existing environment has all the needed configurations to support your hybrid certificate trust Windows Hello for Business deployment.  If your environment meets these needs, you can read the [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md) section to prepare your Windows Hello for Business deployment by configuring Azure device registration.
 
 The new installation baseline begins with a basic Active Directory deployment and enterprise PKI.  This document expects you have Active Directory deployed using Windows Server 2008 R2 or later domain controllers.
 
 ## Active Directory ##   
+
 Production environments should follow Active Directory best practices regarding the number and placement of domain controllers to ensure adequate authentication throughout the organization.
   
 Lab environments and isolated proof of concepts may want to limit the number of domain controllers.  The purpose of these environments is to experiment and learn.  Reducing the number of domain controllers can prevent troubleshooting issue, such as Active Directory replication, which is unrelated to activity's goal.
@@ -55,14 +55,16 @@ Windows Hello for Business must have a public key infrastructure regardless of t
 
 This guide assumes most enterprises have an existing public key infrastructure.  Windows Hello for Business depends on a Windows enterprise public key infrastructure running the Active Directory Certificate Services role from Windows Server 2012 or later.
 
+For more details about configuring a Windows enterprise public key infrastructure and installing Active Directory Certificate Services, see [Follow the Windows Hello for Business hybrid key trust deployment guide](/windows/security/identity-protection/hello-for-business/hello-hybrid-key-whfb-settings-pki#follow-the-windows-hello-for-business-hybrid-key-trust-deployment-guide) and [Install the Certification Authority](/windows-server/networking/core-network-guide/cncg/server-certs/install-the-certification-authority).
+
+> [!NOTE]
+> Never install a certificate authority on a domain controller in a production environment.
+
 ### Lab-based public key infrastructure
 
 The following instructions may be used to deploy simple public key infrastructure that is suitable for a lab environment.
 
 Sign-in using _Enterprise Admin_ equivalent credentials on Windows Server 2012 or later server where you want the certificate authority installed.
-
->[!NOTE]
->Never install a certificate authority on a domain controller in a production environment.
 
 1. Open an elevated Windows PowerShell prompt.
 2. Use the following command to install the Active Directory Certificate Services role.   

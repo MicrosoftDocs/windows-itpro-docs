@@ -173,7 +173,7 @@ For 4673(S, F): A privileged service was called.
 
 > **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
--   Monitor for this event where “**Subject\\Security ID**” is *not* one of these well-known security principals: LOCAL SYSTEM, NETWORK SERVICE, LOCAL SERVICE, and where “**Subject\\Security ID**” is not an administrative account that is expected to have the listed **Privileges**. Especially monitor Failure events.
+-   Monitor for this event where “**Subject\\Security ID**” is *not* one of these well-known security principals: LOCAL SYSTEM, NETWORK SERVICE, LOCAL SERVICE, and where “**Subject\\Security ID**” is not an administrative account that is expected to have the listed **Privileges**. See subcategories [Audit Sensitive Privilege Use](/windows/security/threat-protection/auditing/audit-sensitive-privilege-use) and [Audit Non Sensitive Privilege Use](/windows/security/threat-protection/auditing/audit-non-sensitive-privilege-use) for more details.
 
 -   If you need to monitor events related to specific Windows subsystems (“**Service\\Server**”), for example **NT Local Security Authority / Authentication Service** or **Security Account Manager**, monitor this event for the corresponding “**Service\\Server**.”
 

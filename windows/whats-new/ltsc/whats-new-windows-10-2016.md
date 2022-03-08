@@ -17,9 +17,9 @@ ms.topic: article
 # What's new in Windows 10 Enterprise LTSC 2016
 
 **Applies to**
--   Windows 10 Enterprise LTSC 2016
+-   Windows 10 Enterprise LTSC 2016
 
-This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2016 (LTSB), compared to Windows 10 Enterprise LTSC 2015 (LTSB). For a brief description of the LTSC servicing channel, see [Windows 10 Enterprise LTSC](index.md).
+This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2016 (LTSB), compared to Windows 10 Enterprise LTSC 2015 (LTSB). For a brief description of the LTSC servicing channel, see [Windows 10 Enterprise LTSC](index.md).
 
 >[!NOTE]
 >Features in Windows 10 Enterprise LTSC 2016 are equivalent to Windows 10, version 1607.
@@ -41,7 +41,7 @@ Windows ICD now includes simplified workflows for creating provisioning packages
 ### Windows Upgrade Readiness
 
 >[!IMPORTANT]
->Upgrade Readiness will not allow you to assess an upgrade to an LTSC release (LTSC builds are not available as target versions). However, you can enroll devices running LTSC to plan for an upgrade to a semi-annual channel release.
+>Upgrade Readiness will not allow you to assess an upgrade to an LTSC release (LTSC builds are not available as target versions). However, you can enroll devices running LTSC to plan for an upgrade to a General Availability Channel release.
 
 Microsoft developed Upgrade Readiness in response to demand from enterprise customers looking for additional direction and details about upgrading to Windows 10. Upgrade Readiness was built taking into account multiple channels of customer feedback, testing, and Microsoft’s experience upgrading millions of devices to Windows 10. 
 
@@ -76,7 +76,6 @@ Additional changes for Windows Hello in Windows 10 Enterprise LTSC 2016:
 - Personal (Microsoft account) and corporate (Active Directory or Azure AD) accounts use a single container for keys.
 - Group Policy settings for managing Windows Hello for Business are now available for both **User Configuration** and **Computer Configuration**.
 - Beginning in this version of Windows 10, Windows Hello as a convenience PIN is disabled by default on all domain-joined computers. To enable a convenience PIN, enable the Group Policy setting **Turn on convenience PIN sign-in**. 
-<!--- Users can use Windows Phone with Windows Hello to sign in to a PC, connect to VPN, and sign in to Office 365 in a browser.-->
 
 [Learn more about Windows Hello for Business.](/windows/access-protection/hello-for-business/hello-identity-verification)
 
@@ -88,7 +87,9 @@ Additional changes for Windows Hello in Windows 10 Enterprise LTSC 2016:
   It provides the following benefits:
   - The algorithm is FIPS-compliant.
   - Easy to administer. You can use the BitLocker Wizard, manage-bde, Group Policy, MDM policy, Windows PowerShell, or WMI to manage it on devices in your organization.
-    >**Note:**  Drives encrypted with XTS-AES will not be accessible on older version of Windows. This is only recommended for fixed and operating system drives. Removable drives should continue to use the AES-CBC 128-bit or AES-CBC 256-bit algorithms.
+
+    > [!NOTE]
+    > Drives encrypted with XTS-AES will not be accessible on older version of Windows. This is only recommended for fixed and operating system drives. Removable drives should continue to use the AES-CBC 128-bit or AES-CBC 256-bit algorithms.
 
 ### Security auditing
 
@@ -135,7 +136,7 @@ With the growing threat from more sophisticated targeted attacks, a new security
 - The VPN client can integrate with the Conditional Access Framework, a cloud-based policy engine built into Azure Active Directory, to provide a device compliance option for remote clients.
 - The VPN client can integrate with Windows Information Protection (WIP) policy to provide additional security. [Learn more about Windows Information Protection](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip), previously known as Enterprise Data Protection.
 - New VPNv2 configuration service provider (CSP) adds configuration settings. For details, see [What's new in MDM enrollment and management](/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew_1607)
-- Microsoft Intune: *VPN Profile (Windows 10 Desktop and Mobile and later)* policy template includes support for native VPN plug-ins.
+- Microsoft Intune: *VPN* profile template includes support for native VPN plug-ins. For more information, see [Create VPN profiles to connect to VPN servers in Intune](/mem/intune/configuration/vpn-settings-configure).
 
 ## Management
 
