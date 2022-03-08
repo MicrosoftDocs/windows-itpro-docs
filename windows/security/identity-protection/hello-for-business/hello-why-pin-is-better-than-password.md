@@ -43,7 +43,7 @@ Even you can't use that PIN anywhere except on that specific device. If you want
 
 An online password is transmitted to the server -- it can be intercepted in transmission or stolen from a server. A PIN is local to the device -- it isn't transmitted anywhere and it isn't stored on the server.
 When the PIN is created, it establishes a trusted relationship with the identity provider and creates an asymmetric key pair that is used for authentication. When you enter your PIN, it unlocks the authentication key and uses the key to sign the request that is sent to the authenticating server.
-Note, however, that even though local passwords are also local to the device, they are still less secure than a PIN, as described in the next section.
+However, note that even though local passwords are also local to the device, they are still less secure than a PIN, as described in the next section.
 
 >[!NOTE]
 >For details on how Hello uses asymetric key pairs for authentication, see [Windows Hello for Business](hello-overview.md#benefits-of-windows-hello).
