@@ -144,4 +144,9 @@ Part of the Microsoft Desktop Optimization Pack, MBAM makes it easier to manage 
 * Offers an IT-customizable recovery user experience.
 * Supports Windows 10.
 
-For more information about MBAM, including how to obtain it, see [Microsoft BitLocker Administration and Monitoring](/microsoft-desktop-optimization-pack/) on the MDOP TechCenter.
+> [!IMPORTANT]
+>Enterprises can use Microsoft BitLocker Administration and Monitoring (MBAM) to manage client computers with BitLocker that are domain-joined on-premises until mainstream support ends in July 2019 or they can receive extended support until April 2026
+
+Going forward, the functionality of MBAM will be incorporated into Microsoft Endpoint Manager Config Manager (MEMCM), see [Features in Configuration Manager technical preview version 1909](/mem/configmgr/core/get-started/2019/technical-preview-1909#bkmk_bitlocker)
+
+Customers not using Config Manager can utilize the built-in features of Azure AD and Microsoft Endpoint Manager Microsoft Intune (MEMMI) for administration and monitoring, see [Monitor device encryption with Intune](/mem/intune/protect/encryption-monitor)
