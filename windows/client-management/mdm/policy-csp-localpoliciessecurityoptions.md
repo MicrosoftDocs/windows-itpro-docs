@@ -25,6 +25,8 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#localpoliciessecurityoptions-accounts-enableadministratoraccountstatus">LocalPoliciesSecurityOptions/Accounts_EnableAdministratorAccountStatus</a>
+  </dd>  <dd>
+    <a href="#localpoliciessecurityoptions-accounts-enableguestaccountstatus">LocalPoliciesSecurityOptions/Accounts_EnableGuestAccountStatus</a>
   </dd>
   <dd>
     <a href="#localpoliciessecurityoptions-accounts-limitlocalaccountuseofblankpasswordstoconsolelogononly">LocalPoliciesSecurityOptions/Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly</a>
@@ -272,8 +274,55 @@ The following list shows the supported values:
 <!--/Policy-->
 
 <hr/>
-
 <!--Policy-->
+<a href="" id="localpoliciessecurityoptions-accounts-enableguestaccountstatus"></a>**LocalPoliciesSecurityOptions/Accounts_EnableGuestAccountStatus**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This setting allows the administrator to enable the guest Administrator account.
+
+Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+
+<!--/Description-->
+<!--RegistryMapped-->
+GP Info:  
+-   GP Friendly name: *Accounts: Enable Guest Account Status*
+-   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
+
+<!--/RegistryMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 - disabled (local Administrator account is disabled).
+-   1 - enabled (local Administrator account is enabled).
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+<!--Policy-->
+
 <a href="" id="localpoliciessecurityoptions-accounts-limitlocalaccountuseofblankpasswordstoconsolelogononly"></a>**LocalPoliciesSecurityOptions/Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly**  
 
 <!--SupportedSKUs-->

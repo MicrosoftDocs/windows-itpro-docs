@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 09/07/2021
+ms.date: 01/03/2022
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -23,7 +23,7 @@ ms.technology: windows-sec
 
 ***Event Description:***
 
-This event generates if an account logon attempt failed when the account was already locked out. It also generates for a logon attempt after which the account was locked out.
+This event is logged for any logon failure.
 
 It generates on the computer where logon attempt was made, for example, if logon attempt was made on user’s workstation, then event will be logged on this workstation.
 

@@ -6,8 +6,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -18,6 +18,7 @@ ms.reviewer:
 # Technology and Terms
 
 **Applies to:**
+
 - Windows 10
 - Windows 11
 

@@ -11,8 +11,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 11/26/2018
-ms.reviewer: 
+ms.date: 02/14/2022
+ms.reviewer: rmunck
 ms.technology: windows-sec
 ---
 
@@ -30,31 +30,32 @@ The Security Compliance Toolkit consists of:
 -   Windows 11 security baseline
 
 -   Windows 10 security baselines
-    -   Windows 10 Version 1909 (November 2019 Update)
-    -   Windows 10 Version 1903 (April 2019 Update)
-    -   Windows 10 Version 1809 (October 2018 Update)
-    -   Windows 10 Version 1803 (April 2018 Update)
-    -   Windows 10 Version 1709 (Fall Creators Update)
-    -   Windows 10 Version 1703 (Creators Update)
-    -   Windows 10 Version 1607 (Anniversary Update)
-    -   Windows 10 Version 1511 (November Update)
+    -   Windows 10 Version 21H2
+    -   Windows 10 Version 21H1
+    -   Windows 10 Version 20H2
+    -   Windows 10 Version 1909
+    -   Windows 10 Version 1809
+    -   Windows 10 Version 1607
     -   Windows 10 Version 1507
 
 -   Windows Server security baselines
+    -   Windows Server 2022
     -   Windows Server 2019
     -   Windows Server 2016
     -   Windows Server 2012 R2
 
 -   Microsoft Office security baseline
-    -   Office 365 Pro Plus
+    -   Microsoft 365 Apps for Enterprise Version 2112
     -   Office 2016 
     
 -   Microsoft Edge security baseline
-    -   Edge Browser Version 93
+    -   Edge version 98
 
 -   Tools
-    -   Policy Analyzer tool
-    -   Local Group Policy Object (LGPO) tool
+    -   Policy Analyzer
+    -   Local Group Policy Object (LGPO)
+    -   Set Object Security
+    -   GPO to Policy Rules
 
 
 You can [download the tools](https://www.microsoft.com/download/details.aspx?id=55319) along with the baselines for the relevant Windows versions. For more details about security baseline recommendations, see the [Microsoft Security Guidance blog](/archive/blogs/secguide/).

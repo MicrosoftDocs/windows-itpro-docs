@@ -1,11 +1,11 @@
 ---
-title: Windows 11, what's new and overview for administrators
-description: Learn more about what's new in Windows 11. Read about the features IT professionals and administrators should know about Windows 11, including security, using apps, using Android apps, the new desktop, and deploying and servicing PCs.
+title: Windows 11 overview for administrators
+description: Learn more about Windows 11. Read about the features IT professionals and administrators should know about Windows 11, including security, using apps, using Android apps, the new desktop, and deploying and servicing PCs.
 ms.reviewer: 
 manager: dougeby
 ms.audience: itpro
-author: MandiOhlinger
-ms.author: mandia
+author: greg-lindsay
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,9 +13,10 @@ ms.localizationpriority: medium
 audience: itpro
 ms.topic: article
 ms.collection: highpri
+ms.custom: intro-overview
 ---
 
-# What's new in Windows 11
+# Windows 11 overview
 
 **Applies to**:
 

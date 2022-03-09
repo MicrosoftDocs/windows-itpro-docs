@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: dansimp
-ms.date: 12/03/2021
+ms.date: 03/02/2022
 ms.reviewer:
 manager: dansimp
 ms.collection: highpri
@@ -47,14 +47,15 @@ In Windows 10, version 1709 or later, when the same policy is configured in GP a
 For this policy to work, you must verify that the MDM service provider allows the GP triggered MDM enrollment for domain joined devices.
 
 ## Verify auto-enrollment requirements and settings
+
 To ensure that the auto-enrollment feature is working as expected, you must verify that various requirements and settings are configured correctly.
 The following steps demonstrate required settings using the Intune service:
 
-1. Verify that the user who is going to enroll the device has a valid Intune license.
+1. Verify that the user who is going to enroll the device has a valid [Intune license](/mem/intune/fundamentals/licenses).
 
    :::image type="content" alt-text="Intune license verification." source="images/auto-enrollment-intune-license-verification.png" lightbox="images/auto-enrollment-intune-license-verification.png":::
 
-2. Verify that auto-enrollment is activated for those users who are going to enroll the devices into Intune. For additional details, see [Azure AD and Microsoft Intune: Automatic MDM enrollment in the new Portal](./azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal.md).
+2. Verify that auto-enrollment is activated for those users who are going to enroll the devices into Mobile Device Management (MDM) with Intune. For additional details, see [Azure AD and Microsoft Intune: Automatic MDM enrollment in the new Portal](./azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal.md).
 
     ![Auto-enrollment activation verification.](images/auto-enrollment-activation-verification.png)
 

@@ -240,12 +240,12 @@ Do you have shared devices deployed in your work place? **Fast sign-in** enables
     ![fast sign-in.](images/fastsignin.png "fast sign-in")
 
 >[!NOTE]
->This is a private preview feature and therefore not meant or recommended for production purposes.
+>This is a private preview feature and therefore not meant or recommended for production purposes. This setting is not currently supported at this time.
 
 ## Web sign-in to Windows 10
 
 >[!IMPORTANT]
->This is a private preview feature and therefore not meant or recommended for production purposes.
+>This is a private preview feature and therefore not meant or recommended for production purposes. This setting is not currently supported at this time.
 
 Until now, Windows logon only supported the use of identities federated to ADFS or other providers that support the WS-Fed protocol. We are introducing **web sign-in**, a new way of signing into your Windows PC. Web sign-in enables Windows logon support for credentials not available on Windows. Web sign-in is restricted to only support Azure AD temporary access pass.
 
