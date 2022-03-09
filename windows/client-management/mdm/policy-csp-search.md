@@ -327,7 +327,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="search-allowsearchtousehighlights"></a>**Search/AllowSearchHighlights**  
+<a href="" id="search-allowsearchhighlights"></a>**Search/AllowSearchHighlights**  
 
 <!--SupportedSKUs-->
 
