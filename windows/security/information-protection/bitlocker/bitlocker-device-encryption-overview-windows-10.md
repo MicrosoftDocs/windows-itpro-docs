@@ -14,7 +14,7 @@ ms.collection:
   - M365-security-compliance
   - highpri
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 03/10/2022
 ms.custom: bitlocker
 ---
 
@@ -64,6 +64,7 @@ Microsoft includes instrumentation in Windows 11 and Windows 10 that enable the 
 ## Deploy hard drive encryption
 
 BitLocker is capable of encrypting entire hard drives, including both system and data drives. BitLocker pre-provisioning can drastically reduce the time required to provision new PCs with BitLocker enabled. With Windows 11 and Windows 10, administrators can turn on BitLocker and the TPM from within the Windows Preinstallation Environment before they install Windows or as part of an automated deployment task sequence without any user interaction. Combined with Used Disk Space Only encryption and a mostly empty drive (because Windows is not yet installed), it takes only a few seconds to enable BitLocker.
+
 With earlier versions of Windows, administrators had to enable BitLocker after Windows had been installed. Although this process could be automated, BitLocker would need to encrypt the entire drive, a process that could take anywhere from several hours to more than a day depending on drive size and performance, which significantly delayed deployment. Microsoft has improved this process through multiple features in Windows 11 and Windows 10.
 
 ## BitLocker Device Encryption 
@@ -130,7 +131,7 @@ For more information about how to configure Network Unlock, see [BitLocker: How 
 
 ## Microsoft BitLocker Administration and Monitoring
 
-Part of the Microsoft Desktop Optimization Pack, MBAM makes it easier to manage and support BitLocker and BitLocker To Go. MBAM 2.5 with Service Pack 1, the latest version, has the following key features:
+Part of the Microsoft Desktop Optimization Pack, Microsoft BitLocker Administration and Monitoring (MBAM) makes it easier to manage and support BitLocker and BitLocker To Go. MBAM 2.5 with Service Pack 1, the latest version, has the following key features:
 
 * Enables administrators to automate the process of encrypting volumes on client computers across the enterprise.
 * Enables security officers to quickly determine the compliance state of individual computers or even of the enterprise itself.
@@ -144,4 +145,9 @@ Part of the Microsoft Desktop Optimization Pack, MBAM makes it easier to manage 
 * Offers an IT-customizable recovery user experience.
 * Supports Windows 10.
 
-For more information about MBAM, including how to obtain it, see [Microsoft BitLocker Administration and Monitoring](/microsoft-desktop-optimization-pack/) on the MDOP TechCenter.
+> [!IMPORTANT]
+> Enterprises could use MBAM to manage client computers with BitLocker that are domain-joined on-premises until mainstream support ended in July 2019, or they could receive extended support until April 2026.
+
+Going forward, the functionality of MBAM will be incorporated into Configuration Manager. For more details, see [Features in Configuration Manager technical preview version 1909](/mem/configmgr/core/get-started/2019/technical-preview-1909#bkmk_bitlocker).
+
+Enterprises not using Configuration Manager can use the built-in features of Azure AD and Microsoft Intune in Microsoft Endpoint Manager for administration and monitoring. For more details, see [Monitor device encryption with Intune](/mem/intune/protect/encryption-monitor).
