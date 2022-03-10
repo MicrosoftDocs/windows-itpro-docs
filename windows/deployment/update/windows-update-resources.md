@@ -82,6 +82,10 @@ If all else fails, try resetting the Windows Update Agent by running these comma
    Ren %Systemroot%\SoftwareDistribution\Download Download.bak
    Ren %Systemroot%\System32\catroot2 catroot2.bak
    ```
+
+      > [!IMPORTANT]
+      > The **reset** step below using sc.exe will **overwrite** your existing security ACLs on the BITS and Windows Update service and set them to default.  Skip this step unless the other steps to reset Windows Update components have not resolved the issue.
+
    2. Reset the **BITS service** and the **Windows Update service** to the default security descriptor. To do this, type the following commands at a command prompt. Press ENTER after you type each command.
    ``` console
    sc.exe sdset bits D:(A;CI;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;SY)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWLOCRRC;;;IU)(A;;CCLCSWLOCRRC;;;SU)
