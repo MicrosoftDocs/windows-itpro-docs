@@ -29,6 +29,9 @@ Windows Sandbox has the following properties:
 - **Secure**: Uses hardware-based virtualization for kernel isolation. It relies on the Microsoft hypervisor to run a separate kernel that isolates Windows Sandbox from the host.
 - **Efficient:** Uses the integrated kernel scheduler, smart memory management, and virtual GPU.
 
+   > [!IMPORTANT]
+   > Sandbox has enabled network connection by default. It can be disabled using [Sandbox Configuration file](/windows/security/threat-protection/windows-sandbox/windows-sandbox-configure-using-wsb-file#networking).
+
 The following video provides an overview of Windows Sandbox.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rFAo]
