@@ -30,7 +30,7 @@ Windows Sandbox has the following properties:
 - **Efficient:** Uses the integrated kernel scheduler, smart memory management, and virtual GPU.
 
    > [!IMPORTANT]
-   > Sandbox has enabled network connection by default. It can be disabled using [Sandbox Configuration file](/windows/security/threat-protection/windows-sandbox/windows-sandbox-configure-using-wsb-file#networking).
+   > Windows Sandbox enables network connection by default. It can be disabled using the [Windows Sandbox configuration file](/windows/security/threat-protection/windows-sandbox/windows-sandbox-configure-using-wsb-file#networking).
 
 The following video provides an overview of Windows Sandbox.
 
