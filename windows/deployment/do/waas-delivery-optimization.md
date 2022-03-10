@@ -35,10 +35,6 @@ For information about setting up Delivery Optimization, including tips for the b
 > [!NOTE]
 > WSUS can also use [BranchCache](../update/waas-branchcache.md) for content sharing and caching. If Delivery Optimization is enabled on devices that use BranchCache, Delivery Optimization will be used instead.
 
-## New in Windows 10, version 20H2 and Windows 11
-
-See [What's new in Delivery Optimization](whats-new-do.md)
-
 ## Requirements
 
 The following table lists the minimum Windows 10 version that supports Delivery Optimization:
@@ -107,3 +103,7 @@ To gain a deeper understanding of the Delivery Optimization client-service commu
 ## Delivery Optimization reference
 
 For a complete list of Delivery Optimization settings, see [Delivery Optimization reference](waas-delivery-optimization-reference.md).
+
+## New in Windows 10, version 20H2 and Windows 11
+
+See [What's new in Delivery Optimization](whats-new-do.md)
