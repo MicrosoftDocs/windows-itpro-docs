@@ -147,6 +147,6 @@ Part of the Microsoft Desktop Optimization Pack, MBAM makes it easier to manage 
 > [!IMPORTANT]
 > Enterprises could use MBAM to manage client computers with BitLocker that are domain-joined on-premises until mainstream support ended in July 2019, or they could receive extended support until April 2026.
 
-Going forward, the functionality of MBAM will be incorporated into Microsoft Endpoint Manager Config Manager (MEMCM), see [Features in Configuration Manager technical preview version 1909](/mem/configmgr/core/get-started/2019/technical-preview-1909#bkmk_bitlocker)
+Going forward, the functionality of MBAM will be incorporated into Configuration Manager. For more details, see [Features in Configuration Manager technical preview version 1909](/mem/configmgr/core/get-started/2019/technical-preview-1909#bkmk_bitlocker).
 
 Enterprises not using Configuration Manager can use the built-in features of Azure AD and Microsoft Intune in Microsoft Endpoint Manager for administration and monitoring. For more details, see [Monitor device encryption with Intune](/mem/intune/protect/encryption-monitor).
