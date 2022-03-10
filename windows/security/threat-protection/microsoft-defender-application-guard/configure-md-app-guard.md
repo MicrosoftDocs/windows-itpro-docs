@@ -64,7 +64,7 @@ These settings, located at `Computer Configuration\Administrative Templates\Wind
 |Allow Microsoft Defender Application Guard to use Root Certificate Authorities from a user's device|Windows 10 Enterprise, 1809 or higher<br><br>Windows 10 Pro, 1809 or higher<p>Windows 11|Determines whether Root Certificates are shared with Microsoft Defender Application Guard.|**Enabled.** Certificates matching the specified thumbprint are transferred into the container. Use a comma to separate multiple certificates.<p>**Disabled or not configured.** Certificates are not shared with Microsoft Defender Application Guard.|
 |Allow auditing events in Microsoft Defender Application Guard|Windows 10 Enterprise, 1809 or higher<br><br>Windows 10 Pro, 1809 or higher<p>Windows 11|This policy setting allows you to decide whether auditing events can be collected from Microsoft Defender Application Guard.|**Enabled.** Application Guard inherits auditing policies from your device and logs system events from the Application Guard container to your host.<p>**Disabled or not configured.** event logs aren't collected from your Application Guard container.|
  
-## Application Guard support dialogue settings
+## Application Guard support dialog settings
 
 These settings are located at `Administrative Templates\Windows Components\Windows Security\Enterprise Customization`. If an error is encountered, you are presented with a dialog box. By default, this dialog box only contains the error information and a button for you to report it to Microsoft via the feedback hub. However, it is possible to provide additional information in the dialog box.
 
