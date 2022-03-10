@@ -67,4 +67,5 @@ These settings, located at `Computer Configuration\Administrative Templates\Wind
 ## Application Guard support dialogue settings
 
 These settings are located at `Administrative Templates\Windows Components\Windows Security\Enterprise Customization`. If an error is encountered, you are presented with a dialog box. By default, this dialog box only contains the error information and a button for you to report it to Microsoft via the feedback hub. However, it is possible to provide additional information in the dialog box.
-[Use Group Policy to enable and customize contact information](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-security-center/wdsc-customize-contact-information#use-group-policy-to-enable-and-customize-contact-information).
+
+[Use Group Policy to enable and customize contact information](/windows/security/threat-protection/windows-defender-security-center/wdsc-customize-contact-information#use-group-policy-to-enable-and-customize-contact-information).
