@@ -16,7 +16,7 @@ ms.collection:
   - M365-identity-device-management
   - highpri
 ms.topic: article
-ms.date: 08/17/2017
+ms.date: 03/10/2022
 ---
 
 # Protect derived domain credentials with Windows Defender Credential Guard
