@@ -145,7 +145,7 @@ Part of the Microsoft Desktop Optimization Pack, MBAM makes it easier to manage 
 * Supports Windows 10.
 
 > [!IMPORTANT]
->Enterprises can use Microsoft BitLocker Administration and Monitoring (MBAM) to manage client computers with BitLocker that are domain-joined on-premises until mainstream support ends in July 2019 or they can receive extended support until April 2026
+> Enterprises could use MBAM to manage client computers with BitLocker that are domain-joined on-premises until mainstream support ended in July 2019, or they could receive extended support until April 2026.
 
 Going forward, the functionality of MBAM will be incorporated into Microsoft Endpoint Manager Config Manager (MEMCM), see [Features in Configuration Manager technical preview version 1909](/mem/configmgr/core/get-started/2019/technical-preview-1909#bkmk_bitlocker)
 
