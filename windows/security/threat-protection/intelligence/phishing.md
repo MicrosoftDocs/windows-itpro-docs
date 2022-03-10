@@ -81,11 +81,7 @@ If you feel you've been a victim of a phishing attack:
 
 - **Microsoft Office Outlook**: While in the suspicious message, select **Report message** from the ribbon, and then select **Phishing**.
 
-- **Microsoft**: Create a new, blank email message with the one of the following recipients:
-    - Junk: junk@office365.microsoft.com
-    - Phishing: phish@office365.microsoft.com
-
-    Drag and drop the junk or phishing message into the new message. This will save the junk or phishing message as an attachment in the new message. Don't copy and paste the content of the message or forward the message (we need the original message so we can inspect the message headers). For more information, see [Report messages and files to Microsoft](/microsoft-365/security/office-365-security/report-junk-email-messages-to-microsoft).
+- **Microsoft 365**: Use [Submissions portal in Microsoft 365 Defender](/microsoft-365/security/office-365-security/report-junk-email-messages-to-microsoft) to submit the junk or phishing sample to Microsoft for analysis. For more information, see [Report messages and files to Microsoft](/microsoft-365/security/office-365-security/report-junk-email-messages-to-microsoft).
 
 - **Anti-Phishing Working Group**: phishing-report@us-cert.gov. The group uses reports generated from emails sent to fight phishing scams and hackers. ISPs, security vendors, financial institutions, and law enforcement agencies are involved.
 
