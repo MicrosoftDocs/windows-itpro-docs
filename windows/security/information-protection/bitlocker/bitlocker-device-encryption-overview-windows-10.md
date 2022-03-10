@@ -135,7 +135,7 @@ Part of the Microsoft Desktop Optimization Pack, Microsoft BitLocker Administrat
 
 * Enables administrators to automate the process of encrypting volumes on client computers across the enterprise.
 * Enables security officers to quickly determine the compliance state of individual computers or even of the enterprise itself.
-* Provides centralized reporting and hardware management with Microsoft Microsoft Endpoint Configuration Manager.
+* Provides centralized reporting and hardware management with Microsoft Endpoint Configuration Manager.
 * Reduces the workload on the help desk to assist end users with BitLocker recovery requests.
 * Enables end users to recover encrypted devices independently by using the Self-Service Portal.
 * Enables security officers to easily audit access to recovery key information.
