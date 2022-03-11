@@ -16,12 +16,14 @@ manager: dansimp
 The CleanPC configuration service provider (CSP) allows removal of user-installed and pre-installed applications, with the option to persist user data. This CSP was added in Windows 10, version 1703.
 
 The following shows the CleanPC configuration service provider in tree format.
+
 ```
 ./Device/Vendor/MSFT
 CleanPC
 ----CleanPCWithoutRetainingUserData
 ----CleanPCRetainingUserData
 ```
+
 <a href="" id="--device-vendor-msft-cleanpc"></a>**./Device/Vendor/MSFT/CleanPC**  
 <p>The root node for the CleanPC configuration service provider.</p>
 
