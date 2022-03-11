@@ -244,18 +244,18 @@ Files contained in the mccinstaller.zip file:
 
 1. Enable Nested Virtualization
 
-  ```
+  ```powershell
   Set -VMProcessor -VMName "VM name" -ExposeVirtualizationExtensions $true
   ```
 2. Enable Mac Spoofing
-  ```
+  ```powershell
   Get-VMNetworkAdapter -VMName "VM name" | Set-VMNetworkAdapter -MacAddressSpoofing On
   ```
   **Virtual machine should be in the OFF state while enabling Nested Virtualization and Mac Spoofing**
 
 3.  Set the execution policy
 
-  ```
+  ```powershell
   Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
   ```
   > [!NOTE]
@@ -322,7 +322,7 @@ Connect to the EFLOW VM and check if MCC is properly running:
 1.  Open PowerShell as an Administrator
 2.  Enter the following commands:
 
-```
+```powershell
 Connect-EflowVm
 sudo -s
 iotedge list
@@ -336,7 +336,7 @@ You should see MCC, edgeAgent, and edgeHub running. If you see edgeAgent or edge
 
 For a validation of properly functioning MCC, execute the following command in the EFLOW VM or any device in the network. Replace \<CacheServerIP\> with the IP address of the cache server.
 
-```
+```powershell
 wget [http://\<CacheServerIP\>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com]()
 ```
 
@@ -380,7 +380,7 @@ If you're seeing errors similar to this: “The term ‘Get-Something’ isn't r
 
 Connect to the Connected Cache server and check the list of running IoT Edge modules using the following commands:
 
-```
+```bash
 Connect-EflowVm
 sudo iotedge list​
 ```
@@ -389,7 +389,7 @@ sudo iotedge list​
 
 If edgeAgent and edgeHub containers are listed, but not “MCC”, you may view the status of the IoTEdge security manager using the command:
 
-```
+```bash
 sudo journalctl -u iotedge -f
 ```
 
@@ -399,7 +399,7 @@ For example, this command will provide the current status of the starting, stopp
 
 Use this command to check the IoT Edge Journal
 
-```
+```bash
 sudo journalctl -u iotedge –f
 ```
 
@@ -417,7 +417,7 @@ To run this script:
 
 2.  Run the following commands:
 
-```
+```powershell
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
 .\collectMccDiagnostics.ps1
 ```
@@ -432,11 +432,11 @@ Throughout the private preview phase, we will send you security and feature upda
 
 Run the following command with the **arguments** we provided in the email to update your MCC:
 
-```
+```powershell
 # .\updatemcc.ps1 version="**\<VERSION\>**" tenantid="**\<TENANTID\>**" customerid="**\<CUSTOMERID\>**" cachenodeid="**\<CACHENODEID\>**" customerkey="**\<CUSTOMERKEY\>**"
 ```
 For example:
-```
+```powershell
 # .\updatemcc.ps1 version="msconnectedcacheprod.azurecr.io/mcc/linux/iot/mcc-ubuntu-iot-amd64:1.2.1.659" tenantid="799a999aa-99a1-99aa-99aa-9a9aa099db99" customerid="99a999aa-99a1-99aa-99aa-9aaa9aaa0saa" cachenodeid=" aa99aaaa-999a-9aas-99aa99daaa99 " customerkey="a99d999a-aaaa-aa99-0999aaaa99a”
 ```
 
@@ -513,7 +513,7 @@ You can either set your MCC IP address or FQDN using:
     
   From an elevated command prompt:
 
-  ``` 
+  ```
   reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\DeliveryOptimization" /v DOCacheHost /t REG_SZ /d "10.137.187.38" /f
   ```
 

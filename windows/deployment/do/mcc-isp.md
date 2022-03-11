@@ -277,7 +277,7 @@ Installing MCC on your physical server or VM is a straightforward process. A Bas
 
 4.  Open a terminal and change the access permissions to execute on the **installmcc.sh** Bash script file using chmod.
 
-    ```
+    ```bash
     sudo chmod +x installmcc.sh
     ```
 
@@ -329,7 +329,7 @@ will need to provision a new one.
 
 Sign in to the Connected Cache server or ssh and run the following command from a terminal to see the running modules (containers):
 
-```
+```bash
 sudo iotedge list​
 ```
 
@@ -337,7 +337,7 @@ sudo iotedge list​
 
 If **edgeAgent** and **8edgeHub** containers are listed, but not “MCC”, you may view the status of the IoTEdge security manager using the command:
 
-```
+```bash
 sudo journalctl -u iotedge -f
 ```
 
@@ -351,7 +351,7 @@ It can take a few minutes for the container to deploy.
 
 For a validation of properly functioning MCC, run the following command in the terminal of the cache server or any device in the network. Replace \<CacheServerIP\> with the IP address of the cache server.
 
-```
+```bash
 wget http://<CacheServerIP>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com
 ```
 
@@ -361,7 +361,7 @@ A successful test result will look like this:
 
 Similarly, enter the following URL into a web browser on the network:
 
-```
+```http
 http://<CacheServerIP>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com
 ```
 
@@ -374,7 +374,7 @@ If the test fails, see the [common issues](#common-issues) section below for mor
 
 Use the following command to check the IoT Edge Journal:
 
-```
+```bash
 sudo journalctl -u iotedge –f
 ```
 
@@ -382,7 +382,7 @@ sudo journalctl -u iotedge –f
 
 Run the following IoT Edge setup/install state check:
 
-```
+```bash
 sudo iotedge check --verbose
 ```
 
@@ -394,13 +394,13 @@ Follow the steps below to configure the device to work with your DNS:
 
 1.  Use ifconfig to find appropriate NIC adapter name.
 
-    ```
+    ```bash
     ifconfig​
     ```
 2.  Run nmcli device show \<network adapter\> to show you the DNS name for Ethernet adapter. For example to show DNS
     information for eno1:
 
-    ```
+    ```bash
     nmcli device show eno1 
     ``` 
 
@@ -408,24 +408,24 @@ Follow the steps below to configure the device to work with your DNS:
 
 3.  Open/create the Docker configuration file used to configure the DNS server
 
-    ```
+    ```bash
     sudo nano /etc/docker/daemon.json​
     ```
 
 4.  Paste the following into the daemon.json file (In the example above IP4.DNS[1] is used)  
 
-    ```
+    ```bash
     { "dns": ["x.x.x.x"]}
     ```
 5.  Save the file changes to daemon.json. **Note**: You might need to change permissions on this file. For example:  
 
-    ```
+    ```bash
     sudo chmod 555 /etc/docker/daemon.json​
     ```
 
 6.  Restart Docker (to pick up the new DNS) and restart IoTEdge  
     
-    ```
+    ```bash
     sudo systemctl restart dockersudo systemctl daemon-reloadsudo restart IoTEdge
     ```
 
@@ -441,7 +441,7 @@ To run this script:
 
 2.  Run the following commands:
 
-    ```
+    ```bash
     sudo chmod +x collectMccDiagnostics.sh
     sudo ./collectMccDiagnostics.sh
     ```
@@ -455,14 +455,14 @@ Throughout the private preview phase, we will send you security and feature upda
 
 Run the following commands with the **arguments** we provided in the email to update your MCC:
 
-```
+```bash
 sudo chmod +x updatemcc.sh
 sudo chmod +x installIoTEdge.sh
 sudo ./updatemcc.sh version="\<**VERSION**\>" tenantid="\<**TENANTID**\>" customerid="\<**CUSTOMERID**\>" cachenodeid="\<**CACHENODEID**\>" customerkey="\<**CUSTOMERKEY**\>"
 ```
 
 For example:
-```
+```bash
 sudo ./updatemcc.sh version="msconnectedcacheprod.azurecr.io/mcc/linux/iot/mcc-ubuntu-iot-amd64:1.2.1.981" tenantid="799a999aa-99a1-99aa-99aa-9a9aa099db99" customerid="99a999aa-99a1-99aa-99aa-9aaa9aaa0saa" cachenodeid=" aa99aaaa-999a-9aas-99aa99daaa99 " customerkey="a99d999a-aaaa-aa99-0999aaaa99aa”
 ```
 
@@ -481,7 +481,7 @@ The **uninstallmcc.sh** script will remove the following:
 
 To run the script, enter the following commands:
 
-```
+```bash
 sudo chmod +x uninstallmcc.sh
 sudo ./uninstallmcc.sh
 ```

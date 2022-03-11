@@ -32,6 +32,8 @@
 
     - name: Resources
       items:
+        - name: Set up Delivery Optimization for Windows
+          href: delivery-optimization-setup.md
         - name: Delivery Optimization reference
           href: waas-delivery-optimization-reference.md
         - name: Delivery Optimization client-service communication

@@ -57,7 +57,7 @@ See the following diagram.
 ![MCC Overview](images/waas-mcc-diag-overview.png#lightbox)
 
 For more information about MCC, see the following articles:
-- [Microsoft Connected Cache for Enterprises](mcc-enterprise.md)
+- [Microsoft Connected Cache for Enterprise and Education](mcc-enterprise.md)
 - [Microsoft Connected Cache for ISPs](mcc-isp.md)
 
 ## Also see
