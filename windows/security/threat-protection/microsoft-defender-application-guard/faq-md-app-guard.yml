@@ -220,6 +220,11 @@ sections:
           1. Ensure that the FragmentAware DWORD is set to 1 in this registry setting: `\Registry\Machine\SYSTEM\CurrentControlSet\Services\Winnat`.
 
           2. Reboot the device.
+          
+       - question: |
+          What does the 'Allow users to trust files that open in Microsoft Defender Application Guard'option in the Group policy do?
+        answer: |
+         on Windows 10 Prior to version 2004, this policy was present. It was later removed from newer version of Windows, as this policy doesn't enforce anything either for Edge or Office.
 
 
 additionalContent: |
