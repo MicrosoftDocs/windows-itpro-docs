@@ -32,7 +32,7 @@ You will find the Delivery Optimization settings in Group Policy under **Compute
 
 Starting with Microsoft Intune version 1902, you can set many Delivery Optimization policies as a profile, which you can then apply to groups of devices. For more information, see [Delivery Optimization settings in Microsoft Intune](/intune/delivery-optimization-windows))
 
-**Starting with Windows 10, version 1903,** you can use the Azure Active Directory (Azure AD) Tenant ID as a means to define groups. To do this set the value for DOGroupIdSource to its new maximum value of 5.
+**Starting with Windows 10, version 1903**, you can use the Azure Active Directory (Azure AD) Tenant ID as a means to define groups. To do this set the value for DOGroupIdSource to its new maximum value of 5.
 
 ## Recommended Delivery Optimization settings
 
@@ -221,7 +221,7 @@ Update Compliance provides you with information about your Delivery Optimization
 
 [[DO status](images/UC_workspace_DO_status.png)](images/UC_workspace_DO_status.png#lightbox)
 
-For details, see [Delivery Optimization in Update Compliance](update-compliance-delivery-optimization.md).
+For details, see [Delivery Optimization in Update Compliance](../update/update-compliance-delivery-optimization.md).
 
 ## Troubleshooting
 

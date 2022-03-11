@@ -8,7 +8,7 @@ author: greg-lindsay
 ms.localizationpriority: medium
 ms.author: greglin
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.topic: article
 ---
 
@@ -68,7 +68,7 @@ For additional details about the different types of Windows updates like critica
 - [Overview of Windows as a service](waas-overview.md)
 - [Update Windows 10 in the enterprise](index.md)
 - [Quick guide to Windows as a service](waas-quick-start.md) 
-- [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
+- [Configure Delivery Optimization for Windows 10 updates](../do/waas-delivery-optimization.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
