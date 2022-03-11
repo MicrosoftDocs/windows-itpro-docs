@@ -1586,3 +1586,7 @@ The following example is provided to show proper format and shouldn't be taken a
 ```
 
 <!--/Policy-->
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)

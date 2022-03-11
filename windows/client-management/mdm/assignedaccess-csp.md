@@ -1482,3 +1482,7 @@ This example configures the following apps: Skype, Learning, Feedback Hub, and C
     </Configs>
 </AssignedAccessConfiguration>
 ```
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)

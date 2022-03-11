@@ -36,3 +36,7 @@ CleanPC
 <p>An integer specifying a CleanPC operation with retention of user data. 
 
 <p>The only supported operation is Execute.
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)
