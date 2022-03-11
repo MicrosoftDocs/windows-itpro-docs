@@ -66,7 +66,7 @@ Installation date of the application. Value type is string. Supported operation 
 <a href="" id="msi-productid-downloadinstall"></a>**MSI/*ProductID*/DownloadInstall**
 Executes the download and installation of the application. Value type is string. Supported operations are Execute and Get.
 
-In Windows 10, version 1703 service release, a new tag \<DownloadFromAad\> was added to the \<Enforcement\> section of the XML. The default value is 0 (do not send token). This tag is optional and needs to be set to 1 in case the server wants the download URL to get the AADUserToken.
+In Windows 10, version 1703 service release, a new tag \<DownloadFromAad\> was added to the \<Enforcement\> section of the XML. The default value is 0 (do not send token). This tag is optional and needs to be set to 1 in case the server wants the download URL to get the AADUserToken.\<TimeOut\> 0 will set the timeout to infinite. 
 
 Here is an example:
 
