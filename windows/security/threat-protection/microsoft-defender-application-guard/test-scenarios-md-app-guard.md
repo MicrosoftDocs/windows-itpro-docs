@@ -215,20 +215,6 @@ You have the option to change each of these settings to work with your enterpris
 - Windows 10 Professional edition, version 1809
 - Windows 11
 
-#### File trust options
-
-1. Go to the **Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Application Guard\Allow users to trust files that open in Microsoft Defender Application Guard** setting.
-
-2. Click **Enabled**, set **Options** to **2**, and click **OK**.
-
-    ![Group Policy editor File trust options.](images/appguard-gp-allow-users-to-trust-files-that-open-in-appguard.png)
-
-3. Log out and back on to your device, opening Microsoft Edge in Application Guard again.
-
-4. Open a file in Edge, such an Office 365 file.
-
-5. Check to see that an antivirus scan completed before the file was opened.
-
 #### Camera and microphone options
 
 1. Go to the **Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Application Guard\Allow camera and microphone access in Microsoft Defender Application Guard** setting.
