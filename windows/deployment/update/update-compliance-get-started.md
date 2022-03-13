@@ -61,10 +61,11 @@ To configure this, follow these steps:
    - [Azure Update Management](/azure/automation/automation-intro#update-management) users should use the same workspace for Update Compliance.
 4. After your workspace is configured and selected, select **Create**. You'll receive a notification when the solution has been successfully created.
 
-Once the solution is in place, a user can leverage one of the following Azure roles with Update Compliance:
+Once the solution is in place, you can leverage one of the following Azure roles with Update Compliance:
 
-•	To edit and write queries we recommend the [Log Analytics Contributor ](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#log-analytics-contributor)
-•	To read and only view date we recommend the [Log Analytics Reader](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#log-analytics-reader)
+- To edit and write queries we recommend the [Log Analytics Contributor](/azure/role-based-access-control/built-in-roles#log-analytics-contributor) role.
+
+- To read and only view data we recommend the [Log Analytics Reader](/azure/role-based-access-control/built-in-roles#log-analytics-reader) role.
 
 |Compatible Log Analytics regions |
 | ------------------------------- |
