@@ -51,7 +51,7 @@ Before you begin the process to add Update Compliance to your Azure subscription
 
 ## Add Update Compliance to your Azure subscription
 
-Update Compliance is offered as an Azure Marketplace application which is linked to a new or existing [Azure Log Analytics](/azure/log-analytics/query-language/get-started-analytics-portal) workspace within your Azure subscription. Please note that for the following steps you must have one of the following [Azure roles](https://docs.microsoft.com/en-us/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-roles) at minimum in order to add the solution: Owner or Contributor.
+Update Compliance is offered as an Azure Marketplace application that is linked to a new or existing [Azure Log Analytics](/azure/log-analytics/query-language/get-started-analytics-portal) workspace within your Azure subscription. Note that, for the following steps, you must have either an Owner or Contributor [Azure role](/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-roles) as a minimum in order to add the solution.
 
 To configure this, follow these steps:
 1. Go to the [Update Compliance page in the Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/Microsoft.WaaSUpdateInsights?tab=Overview). You might need to login to your Azure subscription to access this.
