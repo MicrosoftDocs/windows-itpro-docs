@@ -120,11 +120,9 @@ For information about creating or locating your subscription ID, see [Steps to o
 
 ### Create the MCC resource in Azure
 
-The MCC Azure management portal is used to create and manage MCC nodes. An Azure Subscription ID is used to grant access to the preview and to create the MCC resource in Azure and Cache nodes.
+The MCC Azure management portal is used to create and manage MCC nodes. An Azure Subscription ID is used to grant access to the preview and to create the MCC resource in Azure and Cache nodes. 
 
-#### Use the following link and sign in to Azure
-
-<https://portal.azure.com/?microsoft_azure_marketplace_ItemHideKey=Microsoft_ConnectedCache_EntHidden>
+Send email to the MCC team ([mccforenterprise@microsoft.com](mailto:mccforenterprise@microsoft.com)) with your Azure subscription ID to get access to the preview. The team will send you a link to the Azure portal which will allow you to create the resource described below. 
 
 1.  On the Azure Portal home page, choose **Create a resource**:  
     ![eMCC img02](images/emcc02.png)
@@ -527,7 +525,7 @@ You can either set your MCC IP address or FQDN using:
 
 **Verify Content using the DO Client**
 
-To verify that Delivery Optimization client can download content using Microsoft Connected Cache you can execute the following steps:
+To verify that the Delivery Optimization client can download content using MCC, you can use the following steps:
 
 1. Download a game or application from the Microsoft Store.   
 

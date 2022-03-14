@@ -221,7 +221,7 @@ sections:
 
           2. Reboot the device.
           
-       - question: |
+      - question: |
           What does the _Allow users to trust files that open in Microsoft Defender Application Guard_ option in the Group policy do?
         answer: |
          This policy was present in Windows 10 prior to version 2004. It was removed from later versions of Windows as it doesn't enforce anything for either Edge or Office.
