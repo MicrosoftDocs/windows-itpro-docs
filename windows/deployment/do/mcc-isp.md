@@ -113,8 +113,6 @@ For information about creating or locating your subscription ID, see [Steps to o
 
 The MCC Azure management portal is used to create and manage MCC nodes. An Azure Subscription ID is used to grant access to the preview and to create the MCC resource in Azure and Cache nodes.
 
-Use the following link to sign in to Azure: <https://portal.azure.com/?microsoft_azure_marketplace_ItemHideKey=Microsoft_ConnectedCache_EntHidden>
-
 1. Choose **Create a resource**  
 
     ![eMCC img02](images/imcc02.png)
