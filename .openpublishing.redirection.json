@@ -19361,6 +19361,13 @@
      "source_path": "windows/deployment/update/waas-optimize-windows-10.md",
      "redirect_url": "/windows/deployment/do/waas-optimize-windows-10",
      "redirect_document_id": false
+    },
+    { 
+     "source_path": "windows/deployment/update/waas-microsoft-connected-cache.md",
+     "redirect_url": "/windows/deployment/do/waas-microsoft-connected-cache",
+     "redirect_document_id": false
     }
   ]
 }
+
+
