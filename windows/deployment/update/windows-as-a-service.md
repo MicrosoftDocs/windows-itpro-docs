@@ -105,7 +105,7 @@ Secure your organization's deployment investment.
 
 [Configure Windows Update for Business](waas-configure-wufb.md)
 
-[Express update delivery](waas-optimize-windows-10-updates.md#express-update-delivery)
+[Express update delivery](../do/waas-optimize-windows-10-updates.md#express-update-delivery)
 
 [Windows 10 deployment considerations](../planning/windows-10-deployment-considerations.md)
 
