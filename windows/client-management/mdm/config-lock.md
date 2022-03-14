@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: w11
 ms.technology: windows
 author: lovina-saldanha
-ms.date: 10/07/2021
+ms.date: 03/14/2022
 ---
 
 # Secured-Core PC Configuration Lock 
