@@ -29,7 +29,7 @@ In this section you'll learn how to use Update Compliance to monitor your device
 Update Compliance:
 - Provides detailed deployment monitoring for Windows client feature and quality updates.
 - Reports when devices need attention due to issues related to update deployment.
-- Shows bandwidth usage and savings for devices that are configured to use [Delivery Optimization](waas-delivery-optimization.md).
+- Shows bandwidth usage and savings for devices that are configured to use [Delivery Optimization](../do/waas-delivery-optimization.md).
 - Provides all of the above data in [Log Analytics](#using-log-analytics), which affords additional querying and export capabilities.
 
 ## The Update Compliance tile
