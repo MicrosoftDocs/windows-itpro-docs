@@ -352,10 +352,11 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy controls whether search highlights are allowed. 
+This policy controls whether search highlights are shown in the search box or in search home.
 
-- Disabling this setting turns off search highlights. 
-- Enabling or not configuring this setting turns on search highlights.
+- If you enable this policy setting, then this setting turns on search highlights in the search box or in the search home.
+- If you disable this policy setting, then this setting turns off search highlights in the search box or in the search home. 
+
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -367,12 +368,12 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-In Windows 10, the following list shows the supported values:
+The following list shows the supported values in Windows 10:
 - Not Configured/ Enabled (default) – Enabling or not configuring this setting turns on search    highlights in the taskbar search box and in search home.
 
 - Disabled – Disabling this setting turns off search highlights in the taskbar search box and in search home.
 
-In Windows 11, the following list shows the supported values:
+The following list shows the supported values in Windows 11:
 - Not Configured/ Enabled (default) – Enabling or not configuring this setting turns on search highlights in the start menu search box and in search home.
 
 - Disabled – Disabling this setting turns off search highlights in the start menu search box and in search home.
