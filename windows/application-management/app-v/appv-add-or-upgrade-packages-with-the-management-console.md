@@ -1,6 +1,6 @@
 ---
 title: How to Add or Upgrade Packages by Using the Management Console (Windows 10/11)
-description: Add or remove an administrator on the Microsoft Application Virtualization (App-V) server by using the Management Console.
+description: Add or upgrade packages on the Microsoft Application Virtualization (App-V) server by using the Management Console.
 author: aczechowski
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy

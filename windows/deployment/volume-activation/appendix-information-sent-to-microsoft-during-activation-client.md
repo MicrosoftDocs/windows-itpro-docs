@@ -1,17 +1,16 @@
 ---
 title: Appendix Information sent to Microsoft during activation (Windows 10)
-ms.assetid: 4bfff495-07d0-4385-86e3-7a077cbd64b8
+description: Information sent to Microsoft during activation.
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-description: 
+author: aczechowski
 keywords: vamt, volume activation, activation, windows activation
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
 audience: itpro
-author: aczechowski
 ms.localizationpriority: medium
 ms.date: 07/27/2017
 ms.topic: article
@@ -31,7 +30,7 @@ ms.topic: article
 
 -   [Get Help Activating Microsoft Windows](https://go.microsoft.com/fwlink/p/?LinkId=618644)
 
-When you activate a computer running Windows 10, the following information is sent to Microsoft:
+When you activate a computer running Windows 10, the following information is sent to Microsoft:
 
 -   The Microsoft product code (a five-digit code that identifies the Windows product you are activating)
 -   A channel ID or site code that identifies how the Windows product was originally obtained
@@ -51,14 +50,14 @@ When you activate a computer running Windows 10, the following information is s
 
     This includes error codes and the following information about any activation exploits and related malicious or unauthorized software that was found or disabled:
     
-    -   The activation exploit’s identifier
-    -   The activation exploit’s current state, such as cleaned or quarantined
-    -   Computer manufacturer’s identification
-    -   The activation exploit’s file name and hash in addition to a hash of related software components that may indicate the presence of an activation exploit
--   The name and a hash of the contents of your computer’s startup instructions file
+    -   The activation exploit's identifier
+    -   The activation exploit's current state, such as cleaned or quarantined
+    -   Computer manufacturer's identification
+    -   The activation exploit's file name and hash in addition to a hash of related software components that may indicate the presence of an activation exploit
+-   The name and a hash of the contents of your computer's startup instructions file
 -   If your Windows license is on a subscription basis, information about how your subscription works
 
-Standard computer information is also sent, but your computer’s IP address is only retained temporarily.
+Standard computer information is also sent, but your computer's IP address is only retained temporarily.
 
 ## Use of information
 
@@ -68,5 +67,3 @@ For additional details, see [Windows 10 Privacy Statement](https://go.microsoft.
 ## See also
 
 -   [Volume Activation for Windows 10](volume-activation-windows-10.md)
- 
- 

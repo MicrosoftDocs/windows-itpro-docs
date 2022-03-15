@@ -4,7 +4,7 @@ ms.assetid: 264a3e86-c880-4be4-8828-bf4c839dfa26
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-description:
+description: Understand the most common methods to monitor the success of the activation process for a computer running Windows.
 keywords: vamt, volume activation, activation, windows activation
 ms.prod: w10
 ms.mktglfcycl: deploy

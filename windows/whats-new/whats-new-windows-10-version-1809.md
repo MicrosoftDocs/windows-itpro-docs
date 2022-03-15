@@ -293,6 +293,6 @@ To get started, sign into your device using Windows Hello for Business. Bring up
 
 See the following example:
 
-![Enter your credentials.](images/RDPwBioTime.png "Windows Hello")
-![Enter your credentials.](images/RDPwBio2.png "Windows Hello personal")
+![Enter your credentials for Windows Hello.](images/RDPwBioTime.png "Windows Hello")
+![Remote Desktop Connection.](images/RDPwBio2.png "Windows Hello personal")
 ![Microsoft Hyper-V Server 2016.](images/hyper-v.png "Microsoft Hyper-V Server 2016")
