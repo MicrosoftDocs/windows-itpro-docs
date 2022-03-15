@@ -5,7 +5,6 @@ description: Learn how the Need attention! section provides a breakdown of all W
 ms.mktglfcycl: deploy
 ms.pagetype: deploy
 audience: itpro
-itproauthor: aczechowski
 author: aczechowski
 ms.author: aaroncz
 ms.collection: M365-analytics

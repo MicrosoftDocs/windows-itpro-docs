@@ -4,7 +4,6 @@ description: Learn how to deploy feature updates to your mission critical device
 ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro
-itproauthor: aczechowski
 author: SteveDiAcetis
 ms.localizationpriority: medium
 ms.author: aaroncz

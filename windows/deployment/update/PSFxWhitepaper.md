@@ -5,7 +5,6 @@ keywords: updates, servicing, current, deployment, General Availability Channel,
 ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro
-itproauthor: aczechowski
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz

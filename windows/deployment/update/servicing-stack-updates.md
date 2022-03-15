@@ -4,7 +4,6 @@ description: In this article, learn how servicing stack updates improve the code
 ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro
-itproauthor: aczechowski
 author: aczechowski
 ms.localizationpriority: high
 ms.author: aaroncz

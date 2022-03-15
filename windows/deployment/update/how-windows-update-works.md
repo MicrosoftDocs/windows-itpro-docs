@@ -4,7 +4,6 @@ description: In this article, learn about the process Windows Update uses to dow
 ms.prod: w10
 ms.mktglfcycl: 
 audience: itpro
-itproauthor: aczechowski
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
