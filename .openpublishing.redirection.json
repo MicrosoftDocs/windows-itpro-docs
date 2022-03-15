@@ -19289,13 +19289,11 @@
       "source_path": "windows/client-management/mdm/policy-csp-admx-windowsanytimeupgrade.md",
       "redirect_url": "/windows/client-management/mdm/policy-csp-admx-wordwheel",
       "redirect_document_id": true
-        
     }, 
     {
     "source_path": "windows/client-management/mdm/policy-csp-admx-windowsfileprotection.md",
     "redirect_url": "/windows/client-management/mdm/policy-csp-admx-mobilepcpresentationsettings",
     "redirect_document_id": true
-  
     }, 
     {
      "source_path": "windows/client-management/mdm/policy-csp-admx-skydrive.md",
@@ -19369,5 +19367,3 @@
     }
   ]
 }
-
-
