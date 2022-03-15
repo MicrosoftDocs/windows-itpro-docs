@@ -10,7 +10,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: 
 manager: dansimp
-ms.date: 09/09/2021
+ms.date: 03/14/2022
 ms.custom: asr
 ms.technology: windows-sec
 ---
@@ -215,20 +215,6 @@ You have the option to change each of these settings to work with your enterpris
 - Windows 10 Professional edition, version 1809
 - Windows 11
 
-#### File trust options
-
-1. Go to the **Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Application Guard\Allow users to trust files that open in Microsoft Defender Application Guard** setting.
-
-2. Click **Enabled**, set **Options** to **2**, and click **OK**.
-
-    ![Group Policy editor File trust options.](images/appguard-gp-allow-users-to-trust-files-that-open-in-appguard.png)
-
-3. Log out and back on to your device, opening Microsoft Edge in Application Guard again.
-
-4. Open a file in Edge, such an Office 365 file.
-
-5. Check to see that an antivirus scan completed before the file was opened.
-
 #### Camera and microphone options
 
 1. Go to the **Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Application Guard\Allow camera and microphone access in Microsoft Defender Application Guard** setting.
@@ -267,5 +253,5 @@ Once a user has the extension and its companion app installed on their enterpris
 3. Navigate to a non-enterprise, external website site, such as [www.bing.com](https://www.bing.com). The site should be redirected to Microsoft Defender Application Guard Edge.
    ![A non-enterprise website being redirected to an Application Guard container -- the text displayed explains that the page is being opened in Application Guard for Microsoft Edge.](images/app-guard-chrome-extension-launchIng-edge.png)
 
-4. Open a new Application Guard window, by select the Microsoft Defender Application Guard icon, then **New Application Guard Window**
+4. Open a new Application Guard window, by selecting the Microsoft Defender Application Guard icon, then **New Application Guard Window**
    ![The "New Application Guard Window" option is highlighted in red](images/app-guard-chrome-extension-new-app-guard-page.png)
