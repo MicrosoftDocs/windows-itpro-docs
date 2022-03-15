@@ -9,7 +9,7 @@ ms.prod: w10
 ms.technology: windows
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 10/11/2021
+ms.date: 03/01/2022
 ---
 
 # Policies in Policy CSP supported by HoloLens 2
@@ -120,7 +120,6 @@ ms.date: 10/11/2021
 - [Update/ScheduleRestartWarning](policy-csp-update.md#update-schedulerestartwarning) <sup>10</sup>
 - [Update/SetDisablePauseUXAccess](policy-csp-update.md#update-setdisablepauseuxaccess)
 - [Update/UpdateNotificationLevel](policy-csp-update.md#update-updatenotificationlevel) <sup>10</sup>
-- [Update/UpdateServiceUrl](policy-csp-update.md#update-updateserviceurl)
 - [Wifi/AllowManualWiFiConfiguration](policy-csp-wifi.md#wifi-allowmanualwificonfiguration)
 - [Wifi/AllowWiFi](policy-csp-wifi.md#wifi-allowwifi) <sup>8</sup>
 

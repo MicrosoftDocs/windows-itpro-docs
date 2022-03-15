@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -20,11 +20,11 @@ ms.reviewer:
 # Configure Hybrid Azure AD joined Windows Hello for Business- Directory Synchronization
 
 **Applies to**
+
 - Windows 10, version 1703 or later
 - Windows 11
 - Hybrid deployment
 - Certificate Trust
-
 
 ## Directory Synchronization
 
