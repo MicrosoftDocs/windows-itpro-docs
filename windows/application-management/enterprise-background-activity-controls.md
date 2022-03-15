@@ -1,8 +1,8 @@
 ---
-author: greg-lindsay
+author: aczechowski
 title: Remove background task resource restrictions
 description: Allow enterprise background tasks unrestricted access to computer resources.
-ms.author: greglin
+ms.author: aaroncz
 ms.date: 10/03/2017
 ms.reviewer: 
 manager: dansimp

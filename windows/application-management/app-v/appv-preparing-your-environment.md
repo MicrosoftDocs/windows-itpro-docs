@@ -7,9 +7,9 @@ ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
-author: greg-lindsay
+author: aczechowski
 manager: dansimp
-ms.author: greglin
+ms.author: aaroncz
 ms.topic: article
 ---
 # Preparing your environment for App-V

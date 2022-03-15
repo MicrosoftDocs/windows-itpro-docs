@@ -1,7 +1,7 @@
 ---
 title: Apply deployment config file via Windows PowerShell (Windows 10/11)
 description: How to apply the deployment configuration file by using Windows PowerShell for Windows 10/11.
-author: greg-lindsay
+author: aczechowski
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 06/15/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: greglin
+ms.author: aaroncz
 ms.topic: article
 ---
 # How to apply the deployment configuration file by using Windows PowerShell

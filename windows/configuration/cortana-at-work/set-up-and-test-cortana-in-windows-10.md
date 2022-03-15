@@ -6,9 +6,9 @@ description: Cortana includes powerful configuration options specifically to opt
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ---
 
 # Set up and test Cortana in Windows 10, version 2004 and later

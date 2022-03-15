@@ -4,12 +4,12 @@ description: A single-use device such as a digital sign is easy to set up in Win
 ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
 ms.reviewer: sybruckm
 manager: dansimp
-ms.author: greglin
+ms.author: aaroncz
 keywords: ["assigned access", "kiosk", "lockdown", "digital sign", "digital signage", "kiosk browser", "browser"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
 ms.date: 09/20/2021
 ms.topic: article

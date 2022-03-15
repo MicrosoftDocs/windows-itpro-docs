@@ -3,14 +3,14 @@ title: Perform in-place upgrade to Windows 10 via Configuration Manager
 description: Learn how to perform an in-place upgrade to Windows 10 by automating the process with a Microsoft Endpoint Manager task sequence.
 ms.assetid: F8DF6191-0DB0-4EF5-A9B1-6A11D5DE4878
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---

@@ -1,7 +1,7 @@
 ---
 title: What's new in Windows client deployment
 manager: dougeby
-ms.author: greglin
+ms.author: aaroncz
 description: Use this article to learn about new solutions and online content related to deploying Windows in your organization.
 keywords: deployment, automate, tools, configure, news
 ms.mktglfcycl: deploy
@@ -10,7 +10,7 @@ ms.prod: w10
 ms.sitesec: library
 ms.pagetype: deploy
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.collection: highpri

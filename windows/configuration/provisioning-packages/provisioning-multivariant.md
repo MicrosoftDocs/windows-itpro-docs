@@ -4,12 +4,12 @@ description: Create a provisioning package with multivariant settings to customi
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: gkomatsu
 manager: dansimp
-ms.author: greglin
+ms.author: aaroncz
 ---
 
 # Create a provisioning package with multivariant settings

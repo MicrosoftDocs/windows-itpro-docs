@@ -1,7 +1,7 @@
 ---
 title: Install the App-V Sequencer (Windows 10/11)
 description: Learn how to install the App-V Sequencer to convert Win32 applications into virtual packages for deployment to user devices.
-author: greg-lindsay
+author: aczechowski
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: greglin
+ms.author: aaroncz
 ms.topic: article
 ---
 # Install the App-V Sequencer

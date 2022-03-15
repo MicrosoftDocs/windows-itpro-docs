@@ -4,7 +4,7 @@ description: Learn how to create a simple web service that generates computer na
 ms.assetid: 8f47535e-0551-4ccb-8f02-bb97539c6522
 ms.reviewer: 
 manager: dougeby
-ms.author: greglin
+ms.author: aaroncz
 keywords: deploy, web apps
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.pagetype: mdt
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ---
 

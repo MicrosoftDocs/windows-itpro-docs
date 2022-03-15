@@ -1,7 +1,7 @@
 ---
 title: Evaluating App-V (Windows 10/11)
 description: Learn how to evaluate App-V for Windows 10/11 in a lab environment before deploying into a production environment.
-author: greg-lindsay
+author: aczechowski
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
-ms.author: greglin
+ms.author: aaroncz
 ---
 
 

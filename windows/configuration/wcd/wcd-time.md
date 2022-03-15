@@ -4,9 +4,9 @@ description: This section describes the Time settings that you can configure in 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 manager: dansimp
 ms.topic: article
 ---

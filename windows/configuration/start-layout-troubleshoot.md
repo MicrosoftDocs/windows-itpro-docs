@@ -4,8 +4,8 @@ description: Learn how to troubleshoot common Start menu errors in Windows 10. F
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.author: greglin
-author: greg-lindsay
+ms.author: aaroncz
+author: aczechowski
 ms.localizationpriority: medium
 ms.reviewer: 
 manager: dansimp

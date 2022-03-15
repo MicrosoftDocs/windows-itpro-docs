@@ -3,15 +3,15 @@ title: Windows 10 infrastructure requirements (Windows 10)
 description: Review the specific infrastructure requirements to deploy and manage Windows 10,  prior to significant Windows 10 deployments within your organization.
 ms.assetid: B0FA27D9-A206-4E35-9AE6-74E70748BE64
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 keywords: deploy, upgrade, update, hardware
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.localizationpriority: medium
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ---
 

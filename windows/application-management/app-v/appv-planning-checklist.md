@@ -1,7 +1,7 @@
 ---
 title: App-V Planning Checklist (Windows 10/11)
 description: Learn about the recommended steps and items to consider when planning an Application Virtualization (App-V) deployment.
-author: greg-lindsay
+author: aczechowski
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: greglin
+ms.author: aaroncz
 ms.topic: article
 ---
 # App-V Planning Checklist

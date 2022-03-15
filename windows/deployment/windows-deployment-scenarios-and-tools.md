@@ -4,8 +4,8 @@ description: Learn about the tools you can use to deploy Windows 10 and related 
 ms.assetid: 0d6cee1f-14c4-4b69-b29a-43b0b327b877
 manager: dougeby
 ms.audience: itpro
-ms.author: greglin
-author: greg-lindsay
+ms.author: aaroncz
+author: aczechowski
 keywords: deploy, volume activation, BitLocker, recovery, install, installation, VAMT, MDT, USMT, WDS
 ms.prod: w10
 ms.mktglfcycl: deploy
