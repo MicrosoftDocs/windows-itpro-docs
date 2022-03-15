@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.author: aaroncz
 ms.date: 10/05/2017
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # Testing scenarios using Cortana in your business or organization

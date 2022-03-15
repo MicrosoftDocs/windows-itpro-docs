@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 ms.author: aaroncz
 ms.date: 11/16/2018
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ms.topic: troubleshooting
 ms.collection: highpri
 ---

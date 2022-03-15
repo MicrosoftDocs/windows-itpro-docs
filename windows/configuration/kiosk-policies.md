@@ -3,7 +3,7 @@ title: Policies enforced on kiosk devices (Windows 10/11)
 description: Learn about the policies enforced on a device when you configure it as a kiosk.
 ms.assetid: 14DDDC96-88C7-4181-8415-B371F25726C8
 ms.reviewer: sybruckm
-manager: dansimp
+manager: dougeby
 keywords: ["lockdown", "app restrictions", "applocker"]
 ms.prod: w10
 ms.mktglfcycl: manage

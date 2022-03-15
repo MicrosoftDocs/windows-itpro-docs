@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.author: aaroncz
 ms.date: 10/05/2017
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # Set up and test Cortana in Windows 10, versions 1909 and earlier, with Microsoft 365 in your organization

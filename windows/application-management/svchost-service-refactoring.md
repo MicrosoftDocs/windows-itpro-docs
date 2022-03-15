@@ -9,7 +9,7 @@ ms.author: aaroncz
 author: aczechowski
 ms.date: 07/20/2017
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # Changes to Service Host grouping in Windows 10

@@ -8,7 +8,7 @@ ms.author: aaroncz
 author: aczechowski
 ms.date: 05/25/2018
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 # How to keep apps removed from Windows 10 from returning during an update
 

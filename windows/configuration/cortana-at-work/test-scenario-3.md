@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.author: aaroncz
 ms.date: 10/05/2017
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # Test scenario 3 - Set a reminder for a specific location using Cortana at work

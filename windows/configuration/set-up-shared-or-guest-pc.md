@@ -10,7 +10,7 @@ ms.author: aaroncz
 ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: sybruckm
-manager: dansimp
+manager: dougeby
 ms.collection: highpri
 ---
 

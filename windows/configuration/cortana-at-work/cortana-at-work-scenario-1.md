@@ -8,7 +8,7 @@ author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # Test scenario 1 – Sign into Azure AD, enable the wake word, and try a voice query

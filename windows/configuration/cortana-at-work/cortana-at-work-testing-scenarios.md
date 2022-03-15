@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.author: aaroncz
 ms.date: 06/28/2021
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # Cortana at work testing scenarios

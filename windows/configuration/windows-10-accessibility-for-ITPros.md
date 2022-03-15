@@ -10,7 +10,7 @@ author: aczechowski
 ms.localizationpriority: medium
 ms.date: 01/12/2018
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ms.topic: reference
 ---
 

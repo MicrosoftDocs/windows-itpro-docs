@@ -9,7 +9,7 @@ ms.author: aaroncz
 ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: gkomatsu
-manager: dansimp
+manager: dougeby
 ---
 
 # How provisioning works in Windows

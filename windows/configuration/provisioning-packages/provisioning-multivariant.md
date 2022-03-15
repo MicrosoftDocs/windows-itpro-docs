@@ -8,7 +8,7 @@ author: aczechowski
 ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: gkomatsu
-manager: dansimp
+manager: dougeby
 ms.author: aaroncz
 ---
 

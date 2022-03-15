@@ -10,7 +10,7 @@ ms.author: aaroncz
 ms.topic: article
 ms.date: 10/02/2018
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # CellCore (Windows Configuration Designer reference)

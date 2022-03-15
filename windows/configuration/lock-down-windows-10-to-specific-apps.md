@@ -3,7 +3,7 @@ title: Set up a multi-app kiosk on Windows 10 | Microsoft Docs
 description: Learn how to configure a kiosk device running Windows 10 so that users can only run a few specific apps.
 ms.assetid: 14DDDC96-88C7-4181-8415-B371F25726C8
 ms.reviewer: sybruckm
-manager: dansimp
+manager: dougeby
 keywords: ["lockdown", "app restrictions", "applocker"]
 ms.prod: w10
 ms.mktglfcycl: manage

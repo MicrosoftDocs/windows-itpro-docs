@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.author: aaroncz
 ms.topic: article
 ms.reviewer: gkomatsu
-manager: dansimp
+manager: dougeby
 ---
 
 # Provision PCs with apps 

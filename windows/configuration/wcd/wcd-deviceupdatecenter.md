@@ -7,7 +7,7 @@ ms.sitesec: library
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
-manager: dansimp
+manager: dougeby
 ms.topic: article
 ---
 

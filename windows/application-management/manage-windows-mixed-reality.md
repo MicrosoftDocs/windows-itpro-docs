@@ -2,7 +2,7 @@
 title: Enable or block Windows Mixed Reality apps in the enterprise (Windows 10/11)
 description: Learn how to enable Windows Mixed Reality apps in WSUS or block the Windows Mixed Reality portal in enterprises.
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 keyboards: ["mr", "mr portal", "mixed reality portal", "mixed reality"]
 ms.prod: w10
 ms.mktglfcycl: manage

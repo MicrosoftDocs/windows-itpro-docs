@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.prod: w10
 ms.date: 06/08/2018
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ms.author: aaroncz
 ms.topic: article
 ---

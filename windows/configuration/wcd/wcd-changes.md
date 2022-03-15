@@ -1,7 +1,7 @@
 ---
 title: Changes to settings in Windows Configuration Designer (Windows 10)
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 description: This section describes the changes to settings in Windows Configuration Designer in Windows 10, version 1809.
 ms.prod: w10
 ms.mktglfcycl: deploy

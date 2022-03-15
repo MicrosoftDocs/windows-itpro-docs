@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.author: aaroncz
 ms.date: 10/05/2017
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # Test scenario 6 - Review a reminder suggested by Cortana based on what you’ve promised in email

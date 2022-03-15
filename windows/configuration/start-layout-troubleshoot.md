@@ -8,7 +8,7 @@ ms.author: aaroncz
 author: aczechowski
 ms.localizationpriority: medium
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ms.topic: troubleshooting
 ms.collection: highpri
 ---

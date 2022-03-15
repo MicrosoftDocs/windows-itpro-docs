@@ -11,7 +11,7 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/27/2017
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # Provision PCs with apps and certificates for initial deployment (advanced provisioning)

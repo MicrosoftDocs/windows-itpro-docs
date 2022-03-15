@@ -10,7 +10,7 @@ ms.author: aaroncz
 ms.topic: article
 ms.date: 03/30/2018
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # SMISettings (Windows Configuration Designer reference)

@@ -10,7 +10,7 @@ ms.author: aaroncz
 ms.topic: article
 ms.date: 09/21/2017
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # DesktopBackgroundAndColors (Windows Configuration Designer reference)

@@ -10,7 +10,7 @@ ms.author: aaroncz
 ms.topic: article
 ms.date: 04/30/2018
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # Folders (Windows Configuration Designer reference)

@@ -12,7 +12,7 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.date: 09/20/2017
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # Manage Windows 10 and Microsoft Store tips, "fun facts", and suggestions

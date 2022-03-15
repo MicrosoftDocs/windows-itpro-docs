@@ -1,7 +1,7 @@
 ---
 title: Advanced Troubleshooting Wireless Network Connectivity
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 description: Learn how to troubleshoot Wi-Fi connections. Troubleshooting Wi-Fi connections requires understanding the basic flow of the Wi-Fi autoconnect state machine.
 keywords: troubleshooting, wireless network connectivity, wireless, Wi-Fi
 ms.prod: w10
