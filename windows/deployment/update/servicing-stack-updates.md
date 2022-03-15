@@ -4,10 +4,9 @@ description: In this article, learn how servicing stack updates improve the code
 ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro
-itproauthor: jaimeo
-author: jaimeo
+author: aczechowski
 ms.localizationpriority: high
-ms.author: jaimeo
+ms.author: aaroncz
 manager: dougeby
 ms.collection:
   - M365-modern-desktop

@@ -3,12 +3,12 @@ title: Administrative Tools in Windows
 description: Administrative Tools is a folder in Control Panel that contains tools for system administrators and advanced users.
 ms.assetid: FDC63933-C94C-43CB-8373-629795926DC8
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
 ms.date: 09/20/2021
 ms.topic: article

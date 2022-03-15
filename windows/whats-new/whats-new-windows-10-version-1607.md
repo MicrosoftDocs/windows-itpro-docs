@@ -7,9 +7,9 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: 
-author: greg-lindsay
-manager: laurawi
-ms.author: greglin
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
 

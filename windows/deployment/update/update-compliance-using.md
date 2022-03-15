@@ -1,15 +1,15 @@
 ---
 title: Using Update Compliance
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 description: Learn how to use Update Compliance to monitor your device's Windows updates.
 keywords: oms, operations management suite, wdav, updates, upgrades, antivirus, antimalware, signature, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: deploy
 audience: itpro
-author: jaimeo
-ms.author: jaimeo
+author: aczechowski
+ms.author: aaroncz
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
