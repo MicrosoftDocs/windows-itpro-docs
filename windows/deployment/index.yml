@@ -15,7 +15,7 @@ metadata:
     - highpri
   author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
   ms.author: greglin #Required; microsoft alias of author; optional team alias.
-  ms.date: 06/24/2021 #Required; mm/dd/yyyy format.
+  ms.date: 02/08/2022 #Required; mm/dd/yyyy format.
   localization_priority: medium
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -48,6 +48,8 @@ landingContent:
             url: update/waas-manage-updates-wufb.md
           - text: Prepare for Zero Touch Installation of Windows 10 with Configuration Manager
             url: deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md
+          - text: Set up Delivery Optimization for Windows client updates
+            url: do/index.yml
 
   # Card (optional)
   - title: Deploy
