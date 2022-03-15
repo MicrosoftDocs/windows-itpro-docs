@@ -55,6 +55,9 @@ manager: dansimp
     <a href="#search-disableremovabledriveindexing">Search/DisableRemovableDriveIndexing</a>
   </dd>
   <dd>
+    <a href="#search-disablesearch">Search/DisableSearch</a>
+  </dd>
+  <dd>
     <a href="#search-donotusewebresults">Search/DoNotUseWebResults</a>
   </dd>
   <dd>
@@ -568,6 +571,58 @@ The following list shows the supported values:
 <!--/Policy-->
 
 <hr/>
+
+<!--Policy-->
+<a href="" id="search-disablesearch"></a>**Search/DisableSearch**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|Yes|
+|Business|No|Yes|
+|Enterprise|No|Yes|
+|Education|No|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting completely disables Search UI and all its entry points such as keyboard shortcuts and touch-pad gestures.
+
+It removes the Search button from the Taskbar and the corresponding option in the Settings. It also disables type-to-search in the Start menu and removes the Start menu's search box.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+
+-   GP Friendly name: *Fully disable Search UI*
+-   GP name: *DisableSearch*
+-   GP path: *Windows Components/Search*
+-   GP ADMX file name: *Search.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – Do not disable search.
+-   1 – Disable search.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
 
 <!--Policy-->
 <a href="" id="search-donotusewebresults"></a>**Search/DoNotUseWebResults**  

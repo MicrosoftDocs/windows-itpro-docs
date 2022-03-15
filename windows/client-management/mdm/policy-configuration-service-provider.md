@@ -8361,6 +8361,9 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-search.md#search-disableremovabledriveindexing" id="search-disableremovabledriveindexing">Search/DisableRemovableDriveIndexing</a>
   </dd>
   <dd>
+    <a href="./policy-csp-search.md#search-disablesearch" id="search-disablesearch">Search/DisableSearch</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-search.md#search-donotusewebresults" id="search-donotusewebresults">Search/DoNotUseWebResults</a>
   </dd>
   <dd>
