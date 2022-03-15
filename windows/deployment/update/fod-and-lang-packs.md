@@ -4,13 +4,13 @@ description: Learn how to make FoD and language packs available when you're usin
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: article
-ms.author: jaimeo
+ms.author: aaroncz
 audience: itpro
-author: jaimeo
+author: aczechowski
 ms.localizationpriority: medium
 ms.date: 03/13/2019
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---

@@ -1,15 +1,15 @@
 ---
 title: Update Compliance Schema - WaaSInsiderStatus
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 description: WaaSInsiderStatus schema
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: deploy
 audience: itpro
-itproauthor: jaimeo
-author: jaimeo
-ms.author: jaimeo
+itproauthor: aczechowski
+author: aczechowski
+ms.author: aaroncz
 ms.collection: M365-analytics
 ms.topic: article
 ---

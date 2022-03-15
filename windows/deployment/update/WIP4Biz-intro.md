@@ -6,11 +6,11 @@ ms.custom: seo-marvel-apr2020
 ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro
-itproauthor: jaimeo
-author: jaimeo
 ms.audience: itpro
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.reviewer: 
-manager: laurawi
 ms.topic: article
 ---
 

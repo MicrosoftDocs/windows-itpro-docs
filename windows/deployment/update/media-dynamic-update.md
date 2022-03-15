@@ -4,10 +4,10 @@ description: Learn how to deploy feature updates to your mission critical device
 ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro
-itproauthor: jaimeo
+itproauthor: aczechowski
 author: SteveDiAcetis
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: aaroncz
 manager: dougeby
 ms.collection:
   - M365-modern-desktop

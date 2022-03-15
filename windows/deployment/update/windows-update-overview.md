@@ -4,12 +4,11 @@ description: An overview of learning resources for Windows Update, including doc
 ms.prod: w10
 ms.mktglfcycl: 
 audience: itpro
-itproauthor: jaimeo
-author: jaimeo
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.audience: itpro
 ms.date: 09/18/2018
-ms.reviewer: 
-manager: laurawi
 ms.topic: article
 ---
 

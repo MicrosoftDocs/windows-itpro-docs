@@ -4,9 +4,9 @@ description: Learn about troubleshooting Windows Update, issues related to HTTP/
 ms.prod: w10
 ms.mktglfcycl: 
 audience: itpro
-itproauthor: jaimeo
 ms.audience: itpro
-author: jaimeo
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
 ms.topic: article
 ms.custom: seo-marvel-apr2020

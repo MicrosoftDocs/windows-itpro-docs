@@ -3,11 +3,11 @@ title: Optimize Windows update delivery
 description: Two methods of peer-to-peer content distribution are available, Delivery Optimization and BranchCache.
 ms.prod: w10
 ms.mktglfcycl: manage
-author: jaimeo
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: aaroncz
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.topic: article
 ---
 

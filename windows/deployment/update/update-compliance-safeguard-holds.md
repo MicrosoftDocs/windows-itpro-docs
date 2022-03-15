@@ -1,15 +1,15 @@
 ---
 title: Update Compliance - Safeguard Holds report
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 description: Learn how the Safeguard Holds report provides information about safeguard holds in your population.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: deploy
 audience: itpro
-itproauthor: jaimeo
-author: jaimeo
-ms.author: jaimeo
+itproauthor: aczechowski
+author: aczechowski
+ms.author: aaroncz
 ms.collection: M365-analytics
 ms.topic: article
 ms.custom: seo-marvel-apr2020

@@ -4,10 +4,10 @@ description: In this article, learn about the process Windows Update uses to dow
 ms.prod: w10
 ms.mktglfcycl: 
 audience: itpro
-itproauthor: jaimeo
-author: jaimeo
+itproauthor: aczechowski
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: aaroncz
 manager: dougeby
 ms.collection:
   - M365-modern-desktop

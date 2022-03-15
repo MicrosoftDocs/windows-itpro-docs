@@ -4,11 +4,11 @@ description: Keep language resources and Features on Demand during operating sys
 ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro
-itproauthor: jaimeo
-author: jaimeo
+itproauthor: aczechowski
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: jaimeo
-manager: laurawi
+ms.author: aaroncz
+manager: dougeby
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---
