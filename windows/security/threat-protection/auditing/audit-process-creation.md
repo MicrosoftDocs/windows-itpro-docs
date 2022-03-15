@@ -22,7 +22,7 @@ Audit Process Creation determines whether the operating system generates audit e
 
 These audit events can help you track user activity and understand how a computer is being used. Information includes the name of the program or the user that created the process.
 
-**Event volume**: Low to Medium, depending on system usage.
+**Event volume**: Medium to High, depending on the process activity on the computer.
 
 This subcategory allows you to audit events generated when a process is created or starts. The name of the application and user that created the process is also audited.
 
