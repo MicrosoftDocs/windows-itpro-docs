@@ -1,12 +1,13 @@
 ---
 title: Evaluate infrastructure and tools
-manager: laurawi
 description: Steps to make sure your infrastructure is ready to deploy updates
 keywords: updates, servicing, current, deployment, General Availability Channel, feature, quality, rings, insider, tools
 ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro
-author: jaimeo
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.localizationpriority: medium
 ms.audience: itpro
 ms.topic: article

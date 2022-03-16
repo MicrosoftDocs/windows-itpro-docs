@@ -3,11 +3,11 @@ title: Create a deployment plan
 description: Devise the number of deployment rings you need and how you want to populate them
 ms.prod: w10
 ms.mktglfcycl: manage
-author: jaimeo
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: aaroncz
 ms.collection: m365initiative-coredeploy
-manager: laurawi
+manager: dougeby
 ms.topic: article
 ---
 
