@@ -3,10 +3,10 @@ title: Deploy Windows 10 (Windows 10)
 description: Learn about Windows 10 upgrade options for planning, testing, and managing your production deployment.
 ms.assetid: E9E2DED5-DBA7-4300-B411-BA0FD39BE18C
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.audience: itpro
-author: greg-lindsay
-ms.author: greglin
+author: aczechowski
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

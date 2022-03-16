@@ -3,14 +3,14 @@ title: Viewing the Events Screen in Compatibility Administrator (Windows 10)
 description: You can use the Events screen to record and view activities in the Compatibility Administrator tool.
 ms.assetid: f2b2ada4-1b7b-4558-989d-5b52b40454b3
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ---
 

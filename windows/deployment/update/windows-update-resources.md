@@ -8,8 +8,8 @@ ms.localizationpriority: medium
 ms.audience: itpro
 manager: dougeby
 ms.topic: article
-ms.author: jaimeo
-author: jaimeo
+ms.author: aaroncz
+author: aczechowski
 ms.collection: highpri
 ---
 
