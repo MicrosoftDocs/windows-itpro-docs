@@ -595,12 +595,13 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Don't search the web or display web results in Search.
+Don't search the web or display web results in Search, or show search highlights in the search box or in search home.
 
-This policy setting allows you to control whether or not Search can perform queries on the web, and if the web results are displayed in Search.
-If you enable this policy setting, queries won't be performed on the web and web results won't be displayed when a user performs a query in Search.
+This policy setting allows you to control whether or not Search can perform queries on the web, if web results are displayed in Search, and if search highlights are shown in the search box and in search home.
 
-If you disable this policy setting, queries will be performed on the web and web results will be displayed when a user performs a query in Search.
+- If you enable this policy setting, queries won't be performed on the web, web results won't be displayed when a user performs a query in Search, and search highlights will not be shown in the search box and in search home.
+
+- If you disable this policy setting, queries will be performed on the web, web results will be displayed when a user performs a query in Search, and search highlights will be shown in the search box and in search home.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -614,8 +615,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 - Not allowed. Queries won't be performed on the web and web results won't be displayed when a user performs a query in Search.
-- 1 (default) - Allowed. Queries will be performed on the web and web results will be displayed when a user performs a query in Search.
+- 0 - Not allowed. Queries won't be performed on the web, web results won't be displayed when a user performs a query in Search, and search highlights won't be shown in the search box and in search home.
+- 1 (default) - Allowed. Queries will be performed on the web, web results will be displayed when a user performs a query in Search, and search highlights will be shown in the search box and in search home.
 
 <!--/SupportedValues-->
 <!--/Policy-->
