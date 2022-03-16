@@ -19289,13 +19289,11 @@
       "source_path": "windows/client-management/mdm/policy-csp-admx-windowsanytimeupgrade.md",
       "redirect_url": "/windows/client-management/mdm/policy-csp-admx-wordwheel",
       "redirect_document_id": true
-        
     }, 
     {
     "source_path": "windows/client-management/mdm/policy-csp-admx-windowsfileprotection.md",
     "redirect_url": "/windows/client-management/mdm/policy-csp-admx-mobilepcpresentationsettings",
     "redirect_document_id": true
-  
     }, 
     {
      "source_path": "windows/client-management/mdm/policy-csp-admx-skydrive.md",
@@ -19360,6 +19358,11 @@
     { 
      "source_path": "windows/deployment/update/waas-optimize-windows-10.md",
      "redirect_url": "/windows/deployment/do/waas-optimize-windows-10",
+     "redirect_document_id": false
+    },
+    { 
+     "source_path": "windows/deployment/update/waas-microsoft-connected-cache.md",
+     "redirect_url": "/windows/deployment/do/waas-microsoft-connected-cache",
      "redirect_document_id": false
     }
   ]

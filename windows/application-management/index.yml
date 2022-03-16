@@ -13,8 +13,9 @@ metadata:
   ms.collection: 
     - windows-10
     - highpri
-  author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
-  ms.author: greglin #Required; microsoft alias of author; optional team alias.
+  author: aczechowski
+  ms.author: aaroncz
+  manager: dougeby
   ms.date: 08/24/2021 #Required; mm/dd/yyyy format.
   ms.localizationpriority : medium
     

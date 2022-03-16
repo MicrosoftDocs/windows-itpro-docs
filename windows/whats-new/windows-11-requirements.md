@@ -3,8 +3,8 @@ title: Windows 11 requirements
 description: Hardware requirements to deploy Windows 11
 manager: dougeby
 ms.audience: itpro
-author: greg-lindsay
-ms.author: greglin
+author: aczechowski
+ms.author: aaroncz
 ms.prod: w11
 ms.mktglfcycl: deploy
 ms.sitesec: library

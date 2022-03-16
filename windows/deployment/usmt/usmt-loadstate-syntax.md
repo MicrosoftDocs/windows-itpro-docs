@@ -3,13 +3,13 @@ title: LoadState Syntax (Windows 10)
 description: Learn about the syntax and usage of the command-line options available when you use the LoadState command.
 ms.assetid: 53d2143b-cbe9-4cfc-8506-36e9d429f6d4
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.date: 04/19/2017
 ms.topic: article
 ---

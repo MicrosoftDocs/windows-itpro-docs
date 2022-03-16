@@ -3,13 +3,13 @@ title: Reroute Files and Settings (Windows 10)
 description: Learn how to create a custom .xml file and specify this file name on both the ScanState and LoadState commandlines to reroute files and settings.
 ms.assetid: 905e6a24-922c-4549-9732-60fa11862a6c
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.date: 04/19/2017
 ms.topic: article
 ---
