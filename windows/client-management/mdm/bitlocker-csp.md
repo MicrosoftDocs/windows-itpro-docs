@@ -529,23 +529,23 @@ Sample value for this node to enable this policy is:
 
 Data id:
 
-- ConfigureNonTPMStartupKeyUsage_Name = Allow BitLocker without a compatible TPM (requires a password or a startup key on a USB flash drive).</li>
-- ConfigureTPMStartupKeyUsageDropDown_Name = (for computer with TPM) Configure TPM startup key.</li>
-- ConfigurePINUsageDropDown_Name = (for computer with TPM) Configure TPM startup PIN.</li>
-- ConfigureTPMPINKeyUsageDropDown_Name = (for computer with TPM) Configure TPM startup key and PIN.</li>
-- ConfigureTPMUsageDropDown_Name = (for computer with TPM) Configure TPM startup.</li>
+- ConfigureNonTPMStartupKeyUsage_Name = Allow BitLocker without a compatible TPM (requires a password or a startup key on a USB flash drive).
+- ConfigureTPMStartupKeyUsageDropDown_Name = (for computer with TPM) Configure TPM startup key.
+- ConfigurePINUsageDropDown_Name = (for computer with TPM) Configure TPM startup PIN.
+- ConfigureTPMPINKeyUsageDropDown_Name = (for computer with TPM) Configure TPM startup key and PIN.
+- ConfigureTPMUsageDropDown_Name = (for computer with TPM) Configure TPM startup.
 
 <!--SupportedValues-->
 The possible values for 'xx' are:
 
-- true = Explicitly allow</li>
-- false = Policy not set</li>
+- true = Explicitly allow
+- false = Policy not set
 
 The possible values for 'yy' are:
 
-- 2 = Optional</li>
-- 1 = Required</li>
-- 0 = Disallowed</li>
+- 2 = Optional
+- 1 = Required
+- 0 = Disallowed
 
 <!--/SupportedValues-->
 Disabling the policy will let the system choose the default behaviors. If you want to disable this policy, use the following SyncML:
@@ -855,19 +855,19 @@ Sample value for this node to enable this policy is:
 <!--SupportedValues-->
 The possible values for 'xx' are:
 
-- true = Explicitly allow</li>
-- false = Policy not set</li>
+- true = Explicitly allow
+- false = Policy not set
 
 The possible values for 'yy' are:
 
-- 2 = Allowed</li>
-- 1 = Required</li>
-- 0 = Disallowed</li>
+- 2 = Allowed
+- 1 = Required
+- 0 = Disallowed
 
 The possible values for 'zz' are:
 
-- 2 = Store recovery passwords only</li>
-- 1 = Store recovery passwords and key packages</li>
+- 2 = Store recovery passwords only
+- 1 = Store recovery passwords and key packages
 
 <!--/SupportedValues-->
 Disabling the policy will let the system choose the default behaviors. If you want to disable this policy, use the following SyncML:
@@ -1040,8 +1040,8 @@ Sample value for this node to enable this policy is:
 <!--SupportedValues-->
 The possible values for 'xx' are:
 
-- true = Explicitly allow</li>
-- false = Policy not set</li>
+- true = Explicitly allow
+- false = Policy not set
 
 <!--/SupportedValues-->
 Disabling the policy will let the system choose the default behaviors. If you want to disable this policy, use the following SyncML:
