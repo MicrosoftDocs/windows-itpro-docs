@@ -7,10 +7,10 @@ ms.mktglfcycl: plan
 ms.localizationpriority: medium
 ms.date: 10/20/2017
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.audience: itpro
-ms.author: greglin
-author: greg-lindsay
+ms.author: aaroncz
+author: aczechowski
 ms.sitesec: library
 audience: itpro
 ms.topic: article

@@ -4,9 +4,9 @@ manager: dougeby
 description: Learn how Windows Update for Business lets you manage when devices receive updates from Windows Update.
 ms.prod: w10
 ms.mktglfcycl: manage
-author: jaimeo
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: aaroncz
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.collection: highpri
