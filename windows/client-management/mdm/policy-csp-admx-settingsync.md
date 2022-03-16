@@ -86,11 +86,11 @@ manager: dansimp
 <!--Description-->
 Prevent the "AppSync" group from syncing to and from this PC. This turns off and disables the "AppSync" group on the "sync your settings" page in PC settings.
 
-If you enable this policy setting, the "AppSync" group will not be synced.
+If you enable this policy setting, the "AppSync" group won't be synced.
 
 Use the option "Allow users to turn app syncing on" so that syncing it turned off by default but not disabled.
 
-If you do not set or disable this setting, syncing of the "AppSync" group is on by default and configurable by the user.
+If you don't set or disable this setting, syncing of the "AppSync" group is on by default and configurable by the user.
 
 <!--/Description-->
 
@@ -134,11 +134,11 @@ ADMX Info:
 <!--Description-->
 Prevent the "app settings" group from syncing to and from this PC. This turns off and disables the "app settings" group on the "sync your settings" page in PC settings.
 
-If you enable this policy setting, the "app settings" group will not be synced.
+If you enable this policy setting, the "app settings" group won't be synced.
 
 Use the option "Allow users to turn app settings syncing on" so that syncing it turned off by default but not disabled.
 
-If you do not set or disable this setting, syncing of the "app settings" group is on by default and configurable by the user.
+If you don't set or disable this setting, syncing of the "app settings" group is on by default and configurable by the user.
 
 <!--/Description-->
 
@@ -182,11 +182,11 @@ ADMX Info:
 <!--Description-->
 Prevent the "passwords" group from syncing to and from this PC. This turns off and disables the "passwords" group on the "sync your settings" page in PC settings.
 
-If you enable this policy setting, the "passwords" group will not be synced.
+If you enable this policy setting, the "passwords" group won't be synced.
 
 Use the option "Allow users to turn passwords syncing on" so that syncing it turned off by default but not disabled.
 
-If you do not set or disable this setting, syncing of the "passwords" group is on by default and configurable by the user.
+If you don't set or disable this setting, syncing of the "passwords" group is on by default and configurable by the user.
 
 <!--/Description-->
 
@@ -230,11 +230,11 @@ ADMX Info:
 <!--Description-->
 Prevent the "desktop personalization" group from syncing to and from this PC. This turns off and disables the "desktop personalization" group on the "sync your settings" page in PC settings.
 
-If you enable this policy setting, the "desktop personalization" group will not be synced.
+If you enable this policy setting, the "desktop personalization" group won't be synced.
 
 Use the option "Allow users to turn desktop personalization syncing on" so that syncing it turned off by default but not disabled.
 
-If you do not set or disable this setting, syncing of the "desktop personalization" group is on by default and configurable by the user.
+If you don't set or disable this setting, syncing of the "desktop personalization" group is on by default and configurable by the user.
 
 <!--/Description-->
 
@@ -278,11 +278,11 @@ ADMX Info:
 <!--Description-->
 Prevent the "personalize" group from syncing to and from this PC. This turns off and disables the "personalize" group on the "sync your settings" page in PC settings.
 
-If you enable this policy setting, the "personalize" group will not be synced.
+If you enable this policy setting, the "personalize" group won't be synced.
 
 Use the option "Allow users to turn personalize syncing on" so that syncing it turned off by default but not disabled.
 
-If you do not set or disable this setting, syncing of the "personalize" group is on by default and configurable by the user.
+If you don't set or disable this setting, syncing of the "personalize" group is on by default and configurable by the user.
 
 <!--/Description-->
 
@@ -330,7 +330,7 @@ If you enable this policy setting, "sync your settings" will be turned off, and 
 
 Use the option "Allow users to turn syncing on" so that syncing it turned off by default but not disabled.
 
-If you do not set or disable this setting, "sync your settings" is on by default and configurable by the user.
+If you don't set or disable this setting, "sync your settings" is on by default and configurable by the user.
 
 <!--/Description-->
 
@@ -374,11 +374,11 @@ ADMX Info:
 <!--Description-->
 Prevent the "Start layout" group from syncing to and from this PC. This turns off and disables the "Start layout" group on the "sync your settings" page in PC settings.
 
-If you enable this policy setting, the "Start layout" group will not be synced.
+If you enable this policy setting, the "Start layout" group won't be synced.
 
-Use the option "Allow users to turn start syncing on" so that syncing is turned off by default but not disabled.
+Use the option "Allow users to turn on start syncing" so that syncing is turned off by default but not disabled.
 
-If you do not set or disable this setting, syncing of the "Start layout" group is on by default and configurable by the user.
+If you don't set or disable this setting, syncing of the "Start layout" group is on by default and configurable by the user.
 
 <!--/Description-->
 
@@ -424,7 +424,7 @@ Prevent syncing to and from this PC when on metered Internet connections. This t
 
 If you enable this policy setting, syncing on metered connections will be turned off, and no syncing will take place when this PC is on a metered connection.
 
-If you do not set or disable this setting, syncing on metered connections is configurable by the user.
+If you don't set or disable this setting, syncing on metered connections is configurable by the user.
 
 <!--/Description-->
 
@@ -468,11 +468,11 @@ ADMX Info:
 <!--Description-->
 Prevent the "Other Windows settings" group from syncing to and from this PC.  This turns off and disables the "Other Windows settings" group on the "sync your settings" page in PC settings.
 
-If you enable this policy setting, the "Other Windows settings" group will not be synced.
+If you enable this policy setting, the "Other Windows settings" group won't be synced.
 
 Use the option "Allow users to turn other Windows settings syncing on" so that syncing it turned off by default but not disabled.
 
-If you do not set or disable this setting, syncing of the "Other Windows settings" group is on by default and configurable by the user.
+If you don't set or disable this setting, syncing of the "Other Windows settings" group is on by default and configurable by the user.
 
 <!--/Description-->
 
