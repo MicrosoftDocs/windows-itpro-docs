@@ -2,16 +2,16 @@
 title: Monitor activation (Windows 10)
 ms.assetid: 264a3e86-c880-4be4-8828-bf4c839dfa26
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
-description:
+manager: dougeby
+ms.author: aaroncz
+description: Understand the most common methods to monitor the success of the activation process for a computer running Windows.
 keywords: vamt, volume activation, activation, windows activation
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
 ms.topic: article
 ---

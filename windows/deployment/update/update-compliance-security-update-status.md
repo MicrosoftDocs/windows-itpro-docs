@@ -1,13 +1,13 @@
 ---
 title: Update Compliance - Security Update Status report
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 description: Learn how the Security Update Status section provides information about security updates across all devices.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: deploy
-author: jaimeo
-ms.author: jaimeo
+author: aczechowski
+ms.author: aaroncz
 ms.collection: M365-analytics
 ms.topic: article
 ms.custom: seo-marvel-apr2020

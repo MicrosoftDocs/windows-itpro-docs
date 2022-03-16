@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -20,11 +20,11 @@ ms.reviewer:
 # Validate and Configure Public Key Infrastructure - Key Trust
 
 **Applies to**
--   Windows 10, version 1703 or later
--   Windows 11
--   On-premises deployment
--   Key trust
 
+- Windows 10, version 1703 or later
+- Windows 11
+- On-premises deployment
+- Key trust
 
 Windows Hello for Business must have a public key infrastructure regardless of the deployment or trust model.  All trust models depend on the domain controllers having a certificate.  The certificate serves as a root of trust for clients to ensure they are not communicating with a rogue domain controller.  
 
@@ -51,7 +51,7 @@ Sign-in using _Enterprise Admin_ equivalent credentials on Windows Server 2012 o
     ```PowerShell
     Install-AdcsCertificationAuthority
     ```   
-    
+
 ## Configure a Production Public Key Infrastructure
 
 If you do have an existing public key infrastructure, please review [Certification Authority Guidance](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831574(v=ws.11)) from Microsoft TechNet to properly design your infrastructure.   Then, consult the [Test Lab Guide: Deploying an AD CS Two-Tier PKI Hierarchy](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831348(v=ws.11)) for instructions on how to configure your public key infrastructure using the information from your design session.
@@ -176,9 +176,9 @@ Sign-in to the certificate authority or management workstations with an _Enterpr
 
 5. In the **Enable Certificates Templates** window, select the **Domain Controller Authentication (Kerberos)**, and **Internal Web Server** templates you created in the previous steps.  Click **OK** to publish the selected certificate templates to the certificate authority.
 
-6. If you published the Domain Controller Authentication (Kerberos) certificate template, then you should unpublish the certificate templates you included in the superseded templates list.   
+6. If you published the Domain Controller Authentication (Kerberos) certificate template, then you should unpublish the certificate templates you included in the superseded templates list.
 
-    \* To unpublish a certificate template, right-click the certificate template you want to unpublish in the details pane of the Certificate Authority console and select **Delete**. Click **Yes** to confirm the operation.   
+    \* To unpublish a certificate template, right-click the certificate template you want to unpublish in the details pane of the Certificate Authority console and select **Delete**. Click **Yes** to confirm the operation.
 
 7. Close the console.
 
@@ -234,7 +234,6 @@ Look for an event indicating a new certificate enrollment (autoenrollment).  The
 
 Certificates superseded by your new domain controller certificate generate an archive event in the CertificateServices-Lifecycles-System event.  The archive event contains the certificate template name and thumbprint of the certificate that was superseded by the new certificate.
 
-
 #### Certificate Manager
 
 You can use the Certificate Manager console to validate the domain controller has the properly enrolled certificate based on the correct certificate template with the proper EKUs.  Use **certlm.msc** to view certificate in the local computers certificate stores.  Expand the **Personal** store and view the certificates enrolled for the computer.  Archived certificates do not appear in Certificate Manager.
@@ -243,7 +242,7 @@ You can use the Certificate Manager console to validate the domain controller ha
 
 You can use **certutil.exe** to view enrolled certificates in the local computer. Certutil shows enrolled and archived certificates for the local computer.  From an elevated command prompt, run `certutil -q -store my` to view locally enrolled certificates.
 
-To view detailed information about each certificate in the store, use `certutil -q -v -store my` to validate automatic certificate enrollment enrolled the proper certificates. 
+To view detailed information about each certificate in the store, use `certutil -q -v -store my` to validate automatic certificate enrollment enrolled the proper certificates.
 
 #### Troubleshooting
 
@@ -253,8 +252,8 @@ Alternatively, you can forcefully trigger automatic certificate enrollment using
 
 Use the event logs to monitor certificate enrollment and archive.  Review the configuration, such as publishing certificate templates to issuing certificate authority and the allow auto enrollment permissions.
 
-
 ## Follow the Windows Hello for Business on premises key trust deployment guide
+
 1. [Validate Active Directory prerequisites](hello-key-trust-validate-ad-prereq.md)
 2. Validate and Configure Public Key Infrastructure (*You are here*)
 3. [Prepare and Deploy Windows Server 2016 Active Directory Federation Services](hello-key-trust-adfs.md)

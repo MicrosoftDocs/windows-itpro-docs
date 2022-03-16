@@ -31,7 +31,7 @@ SurfaceHub
 --------Email
 --------CalendarSyncEnabled
 --------ErrorContext
---------PasswordRotationPeriod
+--------PasswordRotationEnabled
 ----MaintenanceHoursSimple
 --------Hours
 ------------StartTime

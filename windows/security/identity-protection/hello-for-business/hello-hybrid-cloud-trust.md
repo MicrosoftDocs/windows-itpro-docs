@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -60,7 +60,7 @@ More details on how Azure AD Kerberos enables access to on-premises resources ar
 
 ### Unsupported Scenarios
 
-The following scenarios aren't supported using Windows Hello for Business cloud trust.
+The following scenarios aren't supported using Windows Hello for Business cloud trust:
 
 - On-premises only deployments
 - RDP/VDI scenarios using supplied credentials (RDP/VDI can be used with Remote Credential Guard or if a certificate is enrolled into the Windows Hello for Business container)
@@ -252,8 +252,8 @@ Windows Hello for Business cloud trust looks for a writeable DC to exchange the 
 ### Do I need line of sight to a domain controller to use Windows Hello for Business cloud trust?
 
 Windows Hello for Business cloud trust requires line of sight to a domain controller for some scenarios:
-    - The first sign-in or unlock with Windows Hello for Business after provisioning on a Hybrid Azure AD joined device.
-    - When attempting to access an on-premises resource from an Azure AD joined device.
+- The first sign-in or unlock with Windows Hello for Business after provisioning on a Hybrid Azure AD joined device
+- When attempting to access an on-premises resource from an Azure AD joined device
 
 ### Can I use RDP/VDI with Windows Hello for Business cloud trust?
 

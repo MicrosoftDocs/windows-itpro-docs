@@ -37,6 +37,9 @@ manager: dansimp
     <a href="#search-allowsearchtouselocation">Search/AllowSearchToUseLocation</a>
   </dd>
   <dd>
+    <a href="#search-allowsearchhighlights">Search/AllowSearchHighlights</a>
+  </dd>
+  <dd>
     <a href="#search-allowstoringimagesfromvisionsearch">Search/AllowStoringImagesFromVisionSearch</a>
   </dd>
   <dd>
@@ -317,6 +320,63 @@ The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="search-allowsearchhighlights"></a>**Search/AllowSearchHighlights**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy controls whether search highlights are shown in the search box or in search home.
+
+- If you enable this policy setting, then this setting turns on search highlights in the search box or in the search home.
+- If you disable this policy setting, then this setting turns off search highlights in the search box or in the search home. 
+
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *Allow search and highlights*
+-   GP name: *AllowSearchHighlights*
+-   GP path: *Windows Components/Search*
+-   GP ADMX file name: *Search.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values in Windows 10:
+- Not Configured/ Enabled (default) – Enabling or not configuring this setting turns on search    highlights in the taskbar search box and in search home.
+
+- Disabled – Disabling this setting turns off search highlights in the taskbar search box and in search home.
+
+The following list shows the supported values in Windows 11:
+- Not Configured/ Enabled (default) – Enabling or not configuring this setting turns on search highlights in the start menu search box and in search home.
+
+- Disabled – Disabling this setting turns off search highlights in the start menu search box and in search home.
 
 <!--/SupportedValues-->
 <!--/Policy-->

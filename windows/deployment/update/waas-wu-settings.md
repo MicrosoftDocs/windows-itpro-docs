@@ -6,7 +6,8 @@ ms.mktglfcycl: deploy
 audience: itpro
 ms.localizationpriority: medium
 ms.audience: itpro
-author: jaimeo
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
 ms.topic: article
 ms.custom: seo-marvel-apr2020

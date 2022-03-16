@@ -46,7 +46,7 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <SiPolicy xmlns="urn:schemas-microsoft-com:sipolicy">
-  <VersionEx>10.0.22493.0</VersionEx>
+  <VersionEx>10.0.25070.0</VersionEx>
   <PolicyTypeID>{D2BDA982-CCF6-4344-AC5B-0B44427B6816}</PolicyTypeID>
   <PlatformID>{2E07F7E4-194C-4D20-B7C9-6F44A6C5A234}</PlatformID>
   <Rules>
@@ -64,6 +64,8 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
   <EKUs />
   <!--File Rules-->
   <FileRules>
+    <Allow ID="ID_ALLOW_ALL_1" FriendlyName="" FileName="*" />
+    <Allow ID="ID_ALLOW_ALL_2" FriendlyName="" FileName="*" />
     <Deny ID="ID_DENY_ASIO_32_SHA1" FriendlyName="ASIO32.sys Hash Sha1" Hash="D569D4BAB86E70EFBCDFDAC9D822139D6F477B7C" />
     <Deny ID="ID_DENY_ASIO_32_SHA256" FriendlyName="ASIO32.sys Hash Sha256" Hash="80599708CE61EC5D6DCFC5977208A2A0BE2252820A88D9BA260D8CDF5DC7FBE4" />
     <Deny ID="ID_DENY_ASIO_32_SHA1_PAGE" FriendlyName="ASIO32.sys Hash Page Sha1" Hash="80FA962BDFB76DFCB9E5D13EFC38BB3D392F2E77" />
@@ -108,10 +110,22 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     <Deny ID="ID_DENY_BANDAI_SHA256" FriendlyName="bandai.sys Hash Sha256" Hash="7FD788358585E0B863328475898BB4400ED8D478466D1B7F5CC0252671456CC8" />
     <Deny ID="ID_DENY_BANDAI_SHA1_PAGE" FriendlyName="bandai.sys Hash Page Sha1" Hash="EA360A9F23BB7CF67F08B88E6A185A699F0C5410" />
     <Deny ID="ID_DENY_BANDAI_SHA256_PAGE" FriendlyName="bandai.sys Hash Page Sha256" Hash="BB83738210650E09307CE869ACA9BFA251024D3C47B1006B94FCE2846313F56E" />
+	<Deny ID="ID_DENY_BS_RCIO64_SHA1" FriendlyName="BS_RCIO64 73327429c505d8c5fd690a8ec019ed4fd5a726b607cabe71509111c7bfe9fc7e Hash Sha1" Hash="4BFE9E5A5A25B7CDE6C81EBE31ED4ABEB5147FAF" />
+    <Deny ID="ID_DENY_BS_RCIO64_SHA256" FriendlyName="BS_RCIO64 73327429c505d8c5fd690a8ec019ed4fd5a726b607cabe71509111c7bfe9fc7e Hash Sha256" Hash="0381632CD236CD94FA9E64CCC958516AC50F9437F99092E231A607B1E6BE6CF8" />
+    <Deny ID="ID_DENY_BS_RCIO64_SHA1_PAGE" FriendlyName="BS_RCIO64 5651466512138240\73327429c505d8c5fd690a8ec019ed4fd5a726b607cabe71509111c7bfe9fc7e Hash Page Sha1" Hash="C28B640BECA5E2834D2A373F139869CC309F6631" />
+    <Deny ID="ID_DENY_BS_RCIO64_SHA256_PAGE" FriendlyName="BS_RCIO64 5651466512138240\73327429c505d8c5fd690a8ec019ed4fd5a726b607cabe71509111c7bfe9fc7e Hash Page Sha256" Hash="9378F7DFF94D9409D38FA1A125C52734D6BAEA90913FC3CEE2659FD36AB0DA29" />
     <Deny ID="ID_DENY_CAPCOM_SHA1" FriendlyName="capcom.sys Hash Sha1" Hash="1D1CAFC73C97C6BCD2331F8777D90FDCA57125A3" />
     <Deny ID="ID_DENY_CAPCOM_SHA256" FriendlyName="capcom.sys Hash Sha256" Hash="FAA08CB609A5B7BE6BFDB61F1E4A5E8ADF2F5A1D2492F262483DF7326934F5D4" />
     <Deny ID="ID_DENY_CAPCOM_SHA1_PAGE" FriendlyName="capcom.sys Hash Page Sha1" Hash="69006FBBD1B150FB9404867A5BCDC04FE0FC1BAD" />
     <Deny ID="ID_DENY_CAPCOM_SHA256_PAGE" FriendlyName="capcom.sys Hash Page Sha256" Hash="42589C7CE89941060465096C4661654B43E38C1F9D05D66239825E8FCCF52705" />
+    <Deny ID="ID_DENY_DBUTIL_32_SHA1" FriendlyName="32-bit dell dbutil.sys Hash Sha1" Hash="485C0B9710A196C7177B99EE95E5DDB35B26DDD1" />
+    <Deny ID="ID_DENY_DBUTIL_32_SHA256" FriendlyName="32-bit dell dbutil.sys Hash Sha256" Hash="96EE751F7C38731E97773E07E0F13F4DD361AF9AAA1D30B41652C2E6EFC3FB3E" />
+    <Deny ID="ID_DENY_DBUTIL_32_SHA1_PAGE" FriendlyName="32-bit dell dbutil.sys Hash Page Sha1" Hash="50E2BC41F0186FDCE970B80E2A2CB296353AF586" />
+    <Deny ID="ID_DENY_DBUTIL_32_SHA256_PAGE" FriendlyName="32-bit dell dbutil.sys Hash Page Sha256" Hash="862A262E7AF92599E6B10035B8A3C988078B92BA791A6230A85FD6D1ECEC88C7" />
+    <Deny ID="ID_DENY_DBUTIL_64_SHA1" FriendlyName="64-bit dell dbutil.sys Hash Sha1" Hash="E3C1DD569AA4758552566B0213EE4D1FE6382C4B" />
+    <Deny ID="ID_DENY_DBUTIL_64_SHA256" FriendlyName="64-bit dell dbutil.sys Hash Sha256" Hash="FE4270A61DBED978C28B2915FCC2826D011148DCB7533FA8BD072DDCE5944CEF" />
+    <Deny ID="ID_DENY_DBUTIL_64_SHA1_PAGE" FriendlyName="64-bit dell dbutil.sys Hash Page Sha1" Hash="E09B5E80805B8FE853EA27D8773E31BFF262E3F7" />
+    <Deny ID="ID_DENY_DBUTIL_64_SHA256_PAGE" FriendlyName="64-bit dell dbutil.sys Hash Page Sha256" Hash="7E2AD3D6D76F4FCD4583B865FFC12DE6C44FC16CBCBB81D480CB067F2A860422" />
     <Deny ID="ID_DENY_FIDDRV_SHA1" FriendlyName="fiddrv.sys Hash Sha1" Hash="8CC8974A05E81678E3D28ACFE434E7804ABD019C" />
     <Deny ID="ID_DENY_FIDDRV_SHA256" FriendlyName="fiddrv.sys Hash Sha256" Hash="97B976F7E7E5DF7AF0781BBBB33CB5F3F7A59EFDD07995253B31DE8123352A67" />
     <Deny ID="ID_DENY_FIDDRV_SHA1_PAGE" FriendlyName="fiddrv.sys Hash Page Sha1" Hash="282BB241BDA5C4C1B8EB9BF56D018896649CA0E1" />
@@ -145,7 +159,7 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     <Deny ID="ID_DENY_AMIFLDRV64_SHA256C" FriendlyName="amifldrv64.sys Hash Sha256" Hash="038F39558035292F1D794B7CF49F8E751E8633DAEC31454FE85CCCBEA83BA3FB" />
     <Deny ID="ID_DENY_AMIFLDRV64_SHA1_PAGE" FriendlyName="amifldrv64.sys Hash Page Sha1" Hash="C9CC3779ED67755220DBF9592EC2AC0E1DE363DC" />
     <Deny ID="ID_DENY_AMIFLDRV64_SHA256_PAGE" FriendlyName="amifldrv64.sys Hash Page Sha256" Hash="AA594D977312A944B14351C075634E7C59B42687928FBCDA8E2C4CEA46686DD9" />
-    <Deny ID="ID_DENY_ASUPIO64_SHA1F" FriendlyName="AsUpIO64.sys Hash Sha1" Hash="2A95F882DD9BAFCC57F144A2708A7EC67DD7844C" />
+    <Deny ID="ID_DENY_ASUPIO64_SHA1" FriendlyName="AsUpIO64.sys Hash Sha1" Hash="2A95F882DD9BAFCC57F144A2708A7EC67DD7844C" />
     <Deny ID="ID_DENY_ASUPIO64_SHA256" FriendlyName="AsUpIO64.sys Hash Sha256" Hash="7F75D91844B0C162EEB24D14BCF63B7F230E111DAA7B0A26EAA489EEB22D9057" />
     <Deny ID="ID_DENY_ASUPIO64_SHA1_PAGE" FriendlyName="AsUpIO64.sys Hash Page Sha1" Hash="316E7872A227F0EAD483D244805E9FF4D3569F6F" />
     <Deny ID="ID_DENY_ASUPIO64_SHA256_PAGE" FriendlyName="AsUpIO64.sys Hash Page Sha256" Hash="5958CBE6CF7170C4B66893777BDE66343F5536A98610BD188E10D47DB84BC04C" />
@@ -157,10 +171,60 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     <Deny ID="ID_DENY_BSHWMIO64_SHA256" FriendlyName="BS_HWMIo64.sys Hash Sha256" Hash="3DE51A3102DB7297D96B4DE5B60ACA5F3A07E8577BBBED7F755F1DE9A9C38E75" />
     <Deny ID="ID_DENY_BSHWMIO64_SHA1_PAGE" FriendlyName="BS_HWMIo64.sys Hash Page Sha1" Hash="FC5F231383FE72E298893010A9A3714B205C4110" />
     <Deny ID="ID_DENY_BSHWMIO64_SHA256_PAGE" FriendlyName="BS_HWMIo64.sys Hash Page Sha256" Hash="6AD3624CA1DC38ECEEC75234E50934B1BAD7C72621DC57DEAB09044D0135877D" />
-    <Deny ID="ID_DENY_MSIO64_SHA1" FriendlyName="MsIo64.sys Hash Sha1" Hash="7E732ACB7CFAD9BA043A9350CDEFF25D742BECB8" />
-    <Deny ID="ID_DENY_MSIO64_SHA256" FriendlyName="MsIo64.sys Hash Sha256" Hash="7018D515A6C781EA6097CA71D0F0603AD0D689F7EC99DB27FCACD492A9E86027" />
-    <Deny ID="ID_DENY_MSIO64_SHA1_PAGE" FriendlyName="MsIo64.sys Hash Page Sha1" Hash="CDE1A50E1DF7870F8E4AFD8631E45A847C714C0A" />
-    <Deny ID="ID_DENY_MSIO64_SHA256_PAGE" FriendlyName="MsIo64.sys Hash Page Sha256" Hash="05736AB8B48DF84D81CB2CC0FBDC9D3DA34C22DB67A3E71C6F4B6B3923740DD5" />
+    <Deny ID="ID_DENY_DIRECTIO_12" FriendlyName="PassMark DirectIo.sys Hash Sha1" Hash="E8F7E20061F9CC20583DCAB3B16054D106B8AA83" />
+    <Deny ID="ID_DENY_DIRECTIO_13" FriendlyName="PassMark DirectIo.sys Hash Sha256" Hash="B8BF3BD441EBC5814C5D39D053FDCB263E8E58476CBDEE4B1226903305F547B6" />
+    <Deny ID="ID_DENY_DIRECTIO_14" FriendlyName="PassMark DirectIo.sys Hash Page Sha1" Hash="36875A862D1E762E6CC75595EF37EA7460A1E1DF" />
+    <Deny ID="ID_DENY_DIRECTIO_15" FriendlyName="PassMark DirectIo.sys Hash Page Sha256" Hash="AC706D9ED906B5C879F6AD59FFB56FA6BC5E1395FE9ADF7C60F7EB94D044D018" />
+    <Deny ID="ID_DENY_DIRECTIO_16" FriendlyName="PassMark DirectIo.sys Hash Sha1" Hash="DCDB7BF7E237B9BDA190F60E386A49A7C3494F8D" />
+    <Deny ID="ID_DENY_DIRECTIO_17" FriendlyName="PassMark DirectIo.sys Hash Sha256" Hash="F34C667C0DA3CD813E60F11B67338723252BEB9BD43FC5E0C8C7265F263D2BD9" />
+    <Deny ID="ID_DENY_DIRECTIO_18" FriendlyName="PassMark DirectIo.sys Hash Page Sha1" Hash="179601E33B5AE4E2EA13F34FD084B1FCBD56FBCE" />
+    <Deny ID="ID_DENY_DIRECTIO_19" FriendlyName="PassMark DirectIo.sys Hash Page Sha256" Hash="C7B193F92A943AFBC0EB57B23B5BE5E66F66574051BF838B6735E13733DA1809" />
+    <Deny ID="ID_DENY_DIRECTIO_1A" FriendlyName="PassMark DirectIo.sys Hash Sha1" Hash="8B86E08D610BCC9AB7B7750F036DBB568F733BE0" />
+    <Deny ID="ID_DENY_DIRECTIO_1B" FriendlyName="PassMark DirectIo.sys Hash Sha256" Hash="841F965977F33D621D126412032C47DD6118251623C380E5572F7553B620B0E1" />
+    <Deny ID="ID_DENY_DIRECTIO_1C" FriendlyName="PassMark DirectIo.sys Hash Page Sha1" Hash="6BD3AB2E730561F7D1385DCFEF81C1FA67398C8C" />
+    <Deny ID="ID_DENY_DIRECTIO_1D" FriendlyName="PassMark DirectIo.sys Hash Page Sha256" Hash="D3ECCD41C75046CA9A72AF273C132AEDED1D6572A20D1A64ED08337204B9DA83" />
+    <Deny ID="ID_DENY_DIRECTIO_1E" FriendlyName="PassMark DirectIo.sys Hash Sha1" Hash="02A7E085631ECFE031B76AFA883A266C850ED61B" />
+    <Deny ID="ID_DENY_DIRECTIO_1F" FriendlyName="PassMark DirectIo.sys Hash Sha256" Hash="FB5E65AEC819C5A91EF0CE0FEC0A957826B5E1AC9BAC559A1B4201A3870462A3" />
+    <Deny ID="ID_DENY_DIRECTIO_20" FriendlyName="PassMark DirectIo.sys Hash Page Sha1" Hash="C3596085C90D81C2C51A75558211AD44C853C358" />
+    <Deny ID="ID_DENY_DIRECTIO_21" FriendlyName="PassMark DirectIo.sys Hash Page Sha256" Hash="D402FE9EED2C0A26AAF2CB2311019FFF7004965AA2D22702974203A50A52C9B0" />
+    <Deny ID="ID_DENY_DIRECTIO_22" FriendlyName="PassMark DirectIo.sys Hash Sha1" Hash="66941573DAFD7259CBA113C0FA9EACCD347355FD" />
+    <Deny ID="ID_DENY_DIRECTIO_23" FriendlyName="PassMark DirectIo.sys Hash Sha256" Hash="A520FF5C754A1FB62BA88399A313D0C0FB99145BA2D3D91DBF4282388B77FA84" />
+    <Deny ID="ID_DENY_DIRECTIO_24" FriendlyName="PassMark DirectIo.sys Hash Page Sha1" Hash="588A9F349E520AA5AC5BD650B75345419B28AE85" />
+    <Deny ID="ID_DENY_DIRECTIO_25" FriendlyName="PassMark DirectIo.sys Hash Page Sha256" Hash="2E7B3C52FE1541B51F814B82FCED59513DE249B6834B4B2C94ACD97CA889477C" />
+    <Deny ID="ID_DENY_DIRECTIO_26" FriendlyName="PassMark DirectIo.sys Hash Sha1" Hash="8EC43D1DEF8BB20354AEBA49A9084BACD2C02817" />
+    <Deny ID="ID_DENY_DIRECTIO_27" FriendlyName="PassMark DirectIo.sys Hash Sha256" Hash="AD44CFD9C6262A6FF36EE9D03E59BA4B0524EF87F6B980CE15ABB10A35D39F88" />
+    <Deny ID="ID_DENY_DIRECTIO_28" FriendlyName="PassMark DirectIo.sys Hash Page Sha1" Hash="708EAD1221FB176AA9594F9E0AA7F783704FB962" />
+    <Deny ID="ID_DENY_DIRECTIO_29" FriendlyName="PassMark DirectIo.sys Hash Page Sha256" Hash="80BFD0EAD1EA54219D6A1A454242CAA6C2397FA94AF1B4E10D269B670AFDA898" />
+    <Deny ID="ID_DENY_DIRECTIO_2A" FriendlyName="PassMark DirectIo.sys Hash Sha1" Hash="F1BDD3236F43338A119D74ECA730F0D464DED973" />
+    <Deny ID="ID_DENY_DIRECTIO_2B" FriendlyName="PassMark DirectIo.sys Hash Sha256" Hash="96A5B3CD7C1A6DDA5B6F402E6C35BA535270467F56ADDC7448DBE4AA78428411" />
+    <Deny ID="ID_DENY_DIRECTIO_2C" FriendlyName="PassMark DirectIo.sys Hash Page Sha1" Hash="A14331F63EC907BF3E472F1E0CB8F19DE06EF4E4" />
+    <Deny ID="ID_DENY_DIRECTIO_2D" FriendlyName="PassMark DirectIo.sys Hash Page Sha256" Hash="7F0A28CCF0AB76964D40E063F9D4B88193B77E4BADF66E8C8F87C97127885987" />
+    <Deny ID="ID_DENY_DIRECTIO_2E" FriendlyName="PassMark DirectIo.sys Hash Sha1" Hash="FCA1EE04BE5D7752A1AD717A6AAC9C143C5C8BCD" />
+    <Deny ID="ID_DENY_DIRECTIO_2F" FriendlyName="PassMark DirectIo.sys Hash Sha256" Hash="E219276A4068B1EEA5CE08F83A322845DCE4ECA89E05C71A0C2417065CE48813" />
+    <Deny ID="ID_DENY_DIRECTIO_30" FriendlyName="PassMark DirectIo.sys Hash Page Sha1" Hash="0D1DC447860DC9B9B7FA278FF16120E14064517C" />
+    <Deny ID="ID_DENY_DIRECTIO_31" FriendlyName="PassMark DirectIo.sys Hash Page Sha256" Hash="EBFBFA7C84036A4CF0114BBB0C8017B532F37D846589AEB0004BC8B1F5F4D230" />
+    <Deny ID="ID_DENY_DIRECTIO_32" FriendlyName="PassMark DirectIo.sys Hash Sha1" Hash="EBF8C7DC8292950ACC260A0E473678AE3C56B210" />
+    <Deny ID="ID_DENY_DIRECTIO_33" FriendlyName="PassMark DirectIo.sys Hash Sha256" Hash="43B7715E38449BF82AD0BB6B11D03DA42150C1EE23148C5F396CC4AB1001622D" />
+    <Deny ID="ID_DENY_DIRECTIO_34" FriendlyName="PassMark DirectIo.sys Hash Page Sha1" Hash="05E20D0274A4FCC5368F25C62174003A555917E7" />
+    <Deny ID="ID_DENY_DIRECTIO_35" FriendlyName="PassMark DirectIo.sys Hash Page Sha256" Hash="70344F2494D6B7EE4C5716E886D912447CFFE9695D2286814DC3CE0361727BBA" />
+    <Deny ID="ID_DENY_DIRECTIO_36" FriendlyName="PassMark DirectIo.sys Hash Sha1" Hash="706686F2A1EF4738A1856D01AB10EB730FC7B327" />
+    <Deny ID="ID_DENY_DIRECTIO_37" FriendlyName="PassMark DirectIo.sys Hash Sha256" Hash="B74246C8CB77B0364B7CECE38BFF5F462EEC983C" />
+    <Deny ID="ID_DENY_DIRECTIO_38" FriendlyName="PassMark DirectIo.sys Hash Sha1" Hash="B423CA58603513B5D3A9669736D5E13C353FD6F9" />
+    <Deny ID="ID_DENY_DIRECTIO_39" FriendlyName="PassMark DirectIo.sys Hash Sha1" Hash="2FB5D7E6DB01C9090BBA92ABF580D38993E02CE9357E08FE1F224A9B18056E5A" />
+    <Deny ID="ID_DENY_DIRECTIO_3A" FriendlyName="PassMark DirectIo.sys Hash Sha1" Hash="AE806CA05E141B71664D9C6F20CC2369EF26F996" />
+    <Deny ID="ID_DENY_DIRECTIO_3B" FriendlyName="PassMark DirectIo.sys Hash Sha1" Hash="D0559503988DAA407FCC11E59079560CB456BB84" />
+    <Deny ID="ID_DENY_MSIO_SHA1_1" FriendlyName="MsIo.sys Hash Sha1" Hash="0CB0FD5BEA730E4EAAEC1426B0C15376CCAC6D83" />
+    <Deny ID="ID_DENY_MSIO_SHA256_1" FriendlyName="MsIo.sys Hash Sha256" Hash="0D0962DB9DC6879067270134801AD425C1F3E85B0DC39877C02AAA9C54ACA14E" />
+    <Deny ID="ID_DENY_MSIO_SHA1_PAGE_1" FriendlyName="MsIo.sys Hash Page Sha1" Hash="D4E21C205DE75CDE70CD73C52C646E1E5D333A35" />
+    <Deny ID="ID_DENY_MSIO_SHA256_PAGE_1" FriendlyName="MsIo.sys Hash Page Sha256" Hash="C1D2036235A489FDD8B3970C9EF01567443A87D17B0AD5C2A033D4C471D0ECDE" />
+    <Deny ID="ID_DENY_MSIO_SHA1_2" FriendlyName="MsIo.sys Hash Sha1" Hash="7E732ACB7CFAD9BA043A9350CDEFF25D742BECB8" />
+    <Deny ID="ID_DENY_MSIO_SHA256_2" FriendlyName="MsIo.sys Hash Sha256" Hash="7018D515A6C781EA6097CA71D0F0603AD0D689F7EC99DB27FCACD492A9E86027" />
+    <Deny ID="ID_DENY_MSIO_SHA1_PAGE_2" FriendlyName="MsIo.sys Hash Page Sha1" Hash="CDE1A50E1DF7870F8E4AFD8631E45A847C714C0A" />
+    <Deny ID="ID_DENY_MSIO_SHA256_PAGE_2" FriendlyName="MsIo.sys Hash Page Sha256" Hash="05736AB8B48DF84D81CB2CC0FBDC9D3DA34C22DB67A3E71C6F4B6B3923740DD5" />
+    <Deny ID="ID_DENY_MSIO_SHA1_3" FriendlyName="MsIo.sys Hash Sha1" Hash="07660D1867E20BE0212A96CBA6B5FE6BE7776EAF" />
+    <Deny ID="ID_DENY_MSIO_SHA256_3" FriendlyName="MsIo.sys Hash Sha256" Hash="BE0AF245444321E51F4DD8A90A19A0ABE05A060CBAD93701E23A02DF307957AE" />
+    <Deny ID="ID_DENY_MSIO_SHA1_4" FriendlyName="MsIo.sys Hash Sha1" Hash="B2CD3A63D04EAE427BEDE6C6FE8FACBA91ECECBF" />
+    <Deny ID="ID_DENY_MSIO_SHA256_4" FriendlyName="MsIo.sys Hash Sha256" Hash="D86D6732AC4D1CB41A2DCE40436B839C0DFDCEF9BA306CE5D0F97C0522ABFAC8" />
     <Deny ID="ID_DENY_PIDDRV_SHA1" FriendlyName="piddrv.sys Hash Sha1" Hash="877C6C36A155109888FE1F9797B93CB30B4957EF" />
     <Deny ID="ID_DENY_PIDDRV_SHA256" FriendlyName="piddrv.sys Hash Sha256" Hash="4E19D4CE649C28DD947424483796BEACE3656284FB0379D97DDDD320AA602BBC" />
     <Deny ID="ID_DENY_PIDDRV_SHA1_PAGE" FriendlyName="piddrv.sys Hash Page Sha1" Hash="A7D827A41B2C4B7638495CD1D77926F1BA902978" />
@@ -169,6 +233,10 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     <Deny ID="ID_DENY_PIDDRV64_SHA256" FriendlyName="piddrv64.sys Hash Sha256" Hash="B97F870C501714FA453CF18AE8A30C87D08FF1E6D784AFDBB0121AEA3DA2DC28" />
     <Deny ID="ID_DENY_PIDDRV64_SHA1_PAGE" FriendlyName="piddrv64.sys Hash Page Sha1" Hash="C978063E678233C5EFB8F002FEF000FD479CC632" />
     <Deny ID="ID_DENY_PIDDRV64_SHA256_PAGE" FriendlyName="piddrv64.sys Hash Page Sha256" Hash="1081CCD57FD35998634103AE1E736638D82351092ACD30FE75084EA6A08CA0F7" />
+    <Deny ID="ID_DENY_PHYMEMX64_SHA1" FriendlyName="phymemx64 Hash Sha1" Hash="3C9F40AC72B0202CB40627FDEB7298079187193A" />
+    <Deny ID="ID_DENY_PHYMEMX64_SHA256" FriendlyName="phymemx64 Hash Sha256" Hash="A6AE7364FD188C10D6B5A729A7FF58A3EB11E7FEB0D107D18F9133655C11FB66" />
+    <Deny ID="ID_DENY_PHYMEMX64_SHA1_PAGE" FriendlyName="phymemx64 Hash Page Sha1" Hash="6E7D8ABF7F81A2433F27B052B3952EFC4B9CC0B1" />
+    <Deny ID="ID_DENY_PHYMEMX64_SHA256_PAGE" FriendlyName="phymemx64 Hash Page Sha256" Hash="B7113B9A68E17428E2107B19BA099571AAFFC854B8FB9CBCEB79EF9E3FD1CC62" />
     <Deny ID="ID_DENY_SEMAV6MSR64_SHA1" FriendlyName="semav6msr64.sys Hash Sha1" Hash="E3DBE2AA03847DF621591A4CAD69A5609DE5C237" />
     <Deny ID="ID_DENY_SEMAV6MSR64_SHA256" FriendlyName="semav6msr64.sys Hash Sha256" Hash="EB71A8ECEF692E74AE356E8CB734029B233185EE5C2CCB6CC87CC6B36BEA65CF" />
     <Deny ID="ID_DENY_SEMAV6MSR64_SHA1_PAGE" FriendlyName="semav6msr64.sys Hash Page Sha1" Hash="F3821EC0AEF270F749DF9F44FBA91AFA5C8C38E8" />
@@ -328,64 +396,116 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     <Deny ID="ID_DENY_PHYMEMX_64" FriendlyName="Phymemx64 Memory Mapping Driver" FileName="phymemx64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_DBK_32" FriendlyName="Cheat Engine Driver" FileName="dbk32.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_DBK_64" FriendlyName="Cheat Engine Driver" FileName="dbk64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
-    <FileAttrib ID="ID_FILEATTRIB_CPUZ_DRIVER" FriendlyName="" FileName="cpuz.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.4.3" />
-    <FileAttrib ID="ID_FILEATTRIB_ELBY_DRIVER" FriendlyName="" FileName="ElbyCDIO.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="6.0.3.2" />
-    <FileAttrib ID="ID_FILEATTRIB_LIBNICM_DRIVER" FriendlyName="" FileName="libnicm.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.12.0" />
-    <FileAttrib ID="ID_FILEATTRIB_MTCBSV64" FriendlyName="mtcBSv64.sys FileAttribute" FileName="mtcBSv64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="21.2.0.0" />
-    <FileAttrib ID="ID_FILEATTRIB_NICM_DRIVER" FriendlyName="" FileName="NICM.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.12.0" />
-    <FileAttrib ID="ID_FILEATTRIB_NSCM_DRIVER" FriendlyName="" FileName="nscm.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.12.0" />
-    <FileAttrib ID="ID_FILEATTRIB_SANDRA_DRIVER" FriendlyName="" FileName="sandra.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.12.0.0" />
-    <FileAttrib ID="ID_FILEATTRIB_RTKIO64_DRIVER" FriendlyName="" FileName="rtkio64.sys " MinimumFileVersion="65535.65535.65535.65535" />
-    <FileAttrib ID="ID_FILEATTRIB_RTKIOW10X64_DRIVER" FriendlyName="" FileName="rtkiow10x64.sys " MinimumFileVersion="65535.65535.65535.65535" />
-    <FileAttrib ID="ID_FILEATTRIB_RTKIOW8X64_DRIVER" FriendlyName="" FileName="rtkiow8x64.sys " MinimumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_AMD_RYZEN" FriendlyName="amdryzenmaster.sys" FileName="AMDRyzenMasterDriver.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.5.0.0" />
+    <FileAttrib ID="ID_FILEATTRIB_AMDPP" FriendlyName="AMDPowerProfiler.sys FileAttribute" FileName="AMDPowerProfiler.sys" MinimumFileVersion="6.1.0.0" />
+    <FileAttrib ID="ID_FILEATTRIB_ATSZIO" FriendlyName="ATSZIO.sys FileAttribute" FileName="ATSZIO.sys" MinimumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_BSMI" FriendlyName="" FileName="BSMI.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.0.3" />
     <FileAttrib ID="ID_FILEATTRIB_BS_HWMIO64" FriendlyName="" FileName="BS_HWMIO64_W10.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.1806.2200" />
     <FileAttrib ID="ID_FILEATTRIB_BS_I2CIO" FriendlyName="" FileName="BS_I2cIo.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.1.0.0" />
+	<FileAttrib ID="ID_FILEATTRIB_BS_RCIO" FriendlyName="BS_RCIO.sys FileAttribute" FileName="BS_RCIO64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.0.1" />
     <FileAttrib ID="ID_FILEATTRIB_NTIOLIB" FriendlyName="" FileName="NTIOLib.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.0.0" />
+    <FileAttrib ID="ID_FILEATTRIB_CPUZ_DRIVER" FriendlyName="" FileName="cpuz.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.4.3" />
+    <FileAttrib ID="ID_FILEATTRIB_ELBY_DRIVER" FriendlyName="" FileName="ElbyCDIO.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="6.0.3.2" />
+    <FileAttrib ID="ID_FILEATTRIB_HPPORTIOX64" FriendlyName="HpPortIox64.sys" FileName="HpPortIox64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.2.0.9" />
+    <FileAttrib ID="ID_FILEATTRIB_IQVW64" FriendlyName="IQVW64.sys FileAttribute" FileName="iQVW64.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.4.0.0" />
+    <FileAttrib ID="ID_FILEATTRIB_KEVP64" FriendlyName="kevp64.sys FileAttribute" FileName="kEvP64.sys" MinimumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_LHA" FriendlyName="LHA.sys FileAttribute" FileName="LHA.sys" MinimumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_LIBNICM_DRIVER" FriendlyName="" FileName="libnicm.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.12.0" />
+    <FileAttrib ID="ID_FILEATTRIB_MTCBSV64" FriendlyName="mtcBSv64.sys FileAttribute" FileName="mtcBSv64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="21.2.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_NCHGBIOS2X64" FriendlyName="" FileName="NCHGBIOS2x64.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="4.2.4.0" />
+	<FileAttrib ID="ID_FILEATTRIB_NCPL_DRIVER" FriendlyName="" FileName="NCPL.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.12.0" />
+    <FileAttrib ID="ID_FILEATTRIB_NICM_DRIVER" FriendlyName="" FileName="NICM.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.12.0" />
+    <FileAttrib ID="ID_FILEATTRIB_NSCM_DRIVER" FriendlyName="" FileName="nscm.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.12.0" />
+    <FileAttrib ID="ID_FILEATTRIB_PHYSMEM" FriendlyName="Physmem.sys FileAttribute" FileName="physmem.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_RTKIO_DRIVER" FriendlyName="" FileName="rtkio.sys" MinimumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_RTKIO64_DRIVER" FriendlyName="" FileName="rtkio64.sys" MinimumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_RTKIOW8X64_DRIVER" FriendlyName="" FileName="rtkiow8x64.sys" MinimumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_RTKIOW10X64_DRIVER" FriendlyName="" FileName="rtkiow10x64.sys" MinimumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_RWDRV_DRIVER" FriendlyName="" FileName="RwDrv.sys" MinimumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_SANDRA" FriendlyName="" FileName="SANDRA" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.12.0.0" />
+    <FileAttrib ID="ID_FILEATTRIB_SANDRA_DRIVER" FriendlyName="" FileName="sandra.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.12.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_SEGWINDRVX64" FriendlyName="segwindrvx64.sys FileAttribute" FileName="segwindrvx64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="100.0.7.2" />
-    <FileAttrib ID="ID_FILEATTRIB_AMD_RYZEN" FriendlyName="amdryzenmaster.sys" FileName="AMDRyzenMasterDriver.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.5.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_TREND_MICRO" FriendlyName="TmComm.sys" FileName="TmComm.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="8.0.0.0" />
+	<FileAttrib ID="ID_FILEATTRIB_VBOX" FriendlyName="VBoxDrv.sys FileAttribute" FileName="VBoxDrv.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.0.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_VIRAGT" FriendlyName="viragt.sys 32-bit" FileName="viragt.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.80.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_VIRAGT64" FriendlyName="viragt64.sys" FileName="viragt64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.0.11" />
-    <FileAttrib ID="ID_FILEATTRIB_HPPORTIOX64" FriendlyName="HpPortIox64.sys" FileName="HpPortIox64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.2.0.9" />
+    <FileAttrib ID="ID_FILEATTRIB_VMDRV" FriendlyName="vmdrv.sys FileAttribute" FileName="vmdrv.sys" MinimumFileVersion="10.0.10011.16384" />
     <FileAttrib ID="ID_FILEATTRIB_WINRING0" FriendlyName="WinRing0.sys" FileName="WinRing0.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="2.0.0.0" />
   </FileRules>
   <!--Signers-->
   <Signers>
     <Signer ID="ID_SIGNER_VERISIGN_2010" Name="VeriSign Class 3 Code Signing 2010 CA">
       <CertRoot Type="TBS" Value="4843A82ED3B1F2BFBEE9671960E1940C942F688D" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_AMDPP" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ATSZIO" />
       <FileAttribRef RuleID="ID_FILEATTRIB_CPUZ_DRIVER" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_IQVW64" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_KEVP64" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_LHA" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_MTCBSV64" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TREND_MICRO" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RTKIO_DRIVER" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RTKIO64_DRIVER" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RWDRV_DRIVER" />
+    </Signer>
+    <Signer ID="ID_SIGNER_VERISIGN_2010_2" Name="VeriSign Class 3 Code Signing 2010 CA">
+      <CertRoot Type="TBS" Value="4678C6E4A8787A8E6ED2BCE8792B122F6C08AFD8" />
       <FileAttribRef RuleID="ID_FILEATTRIB_TREND_MICRO" />
     </Signer>
-  <Signer ID="ID_SIGNER_CHEAT_ENGINE" Name="Microsoft Windows Third Party Component CA 2014 Cheat Engine OPUS">
+    <Signer ID="ID_SIGNER_CAPCOM" Name="Symantec Class 3 SHA256 Code Signing CA">
+      <CertRoot Type="TBS" Value="A08E79C386083D875014C409C13D144E0A24386132980DF11FF59737C8489EB1" />
+      <CertPublisher Value="CAPCOM Co.,Ltd." />
+    </Signer>
+    <Signer ID="ID_SIGNER_CHEAT_ENGINE" Name="Microsoft Windows Third Party Component CA 2014 Cheat Engine OPUS">
       <CertRoot Type="TBS" Value="D8BE9E4D9074088EF818BC6F6FB64955E90378B2754155126FEEBBBD969CF0AE" />
       <CertOemID Value="Cheat Engine"/>
     </Signer>
-    <Signer ID="ID_SIGNER_CPUZ" Name="DigiCert EV Code Signing CA (SHA2)">
+    <Signer ID="ID_SIGNER_ENE" Name="Microsoft Windows Third Party Component CA 2014 ENE Tech OPUS">
+      <CertRoot Type="TBS" Value="D8BE9E4D9074088EF818BC6F6FB64955E90378B2754155126FEEBBBD969CF0AE" />
+      <CertOemID Value="ENE Technology Inc." />
+    </Signer>
+    <Signer ID="ID_SIGNER_DIGICERT_EV" Name="DigiCert EV Code Signing CA (SHA2)">
       <CertRoot Type="TBS" Value="EEC58131DC11CD7F512501B15FDBC6074C603B68CA91F7162D5A042054EDB0CF" />
-      <CertPublisher Value="CPUID" />
       <FileAttribRef RuleID="ID_FILEATTRIB_CPUZ_DRIVER" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RTKIO_DRIVER" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RTKIO64_DRIVER" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RTKIOW10X64_DRIVER" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RTKIOW8X64_DRIVER" />
     </Signer>
     <Signer ID="ID_SIGNER_ELBY" Name="GlobalSign Primary Object Publishing CA">
       <CertRoot Type="TBS" Value="041750993D7C9E063F02DFE74699598640911AAB" />
       <CertPublisher Value="Elaborate Bytes AG" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ELBY_DRIVER" />
     </Signer>
-    <Signer ID="ID_SIGNER_NOVELL" Name="VeriSign Class 3 Code Signing 2009-2 CA">
+    <Signer ID="ID_SIGNER_VERISIGN_2009" Name="VeriSign Class 3 Code Signing 2009-2 CA">
       <CertRoot Type="TBS" Value="4CDC38C800761463749C3CBD94A12F32E49877BF" />
-      <CertPublisher Value="Novell, Inc." />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ATSZIO" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_IQVW64" />
       <FileAttribRef RuleID="ID_FILEATTRIB_LIBNICM_DRIVER" />
+	  <FileAttribRef RuleID="ID_FILEATTRIB_NCPL_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_NICM_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_NSCM_DRIVER" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TREND_MICRO" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NCHGBIOS2X64" />
     </Signer>
     <Signer ID="ID_SIGNER_SANDRA" Name="GeoTrust TrustCenter CodeSigning CA I">
       <CertRoot Type="TBS" Value="172F39BCA3DDA7C6D5169C96B34A5FE7E96FF0BD" />
       <CertPublisher Value="SiSoftware Ltd" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_SANDRA" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_SANDRA_DRIVER" />
+    </Signer>
+    <Signer ID="ID_SIGNER_SANDRA_THAWTE" Name="Thawte Code Signing CA">
+      <CertRoot Type="TBS" Value="F6297A00D3B2B4CE4750402B66E7EA018D54F683" />
+      <CertPublisher Value="SiSoftware Ltd" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_SANDRA" />
       <FileAttribRef RuleID="ID_FILEATTRIB_SANDRA_DRIVER" />
     </Signer>
     <Signer ID="ID_SIGNER_MIMIKATZ_KERNEL" Name="GlobalSign CodeSigning CA - G2">
       <CertRoot Type="TBS" Value="589A7D4DF869395601BA7538A65AFAE8C4616385" />
+      <CertPublisher Value="Benjamin Delpy" />
+    </Signer>
+    <Signer ID="ID_SIGNER_MIMIKATZ_KERNEL_SHA2" Name="GlobalSign CodeSigning CA - G2">
+      <CertRoot Type="TBS" Value="F6CAE0B028995EB13B1C2CCE5B5107384AB7C77279AE5560933E345061D99CC0" />
       <CertPublisher Value="Benjamin Delpy" />
     </Signer>
     <Signer ID="ID_SIGNER_MIMIKATZ_USER" Name="Certum Code Signing CA SHA2">
@@ -404,36 +524,59 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
       <CertRoot Type="TBS" Value="041750993D7C9E063F02DFE74699598640911AAB" />
       <CertPublisher Value="innotek GmbH" />
     </Signer>
+	<Signer ID="ID_SIGNER_VBOX_ORCALE" Name="VeriSign Class 3 Code Signing 2010 CA">
+      <CertRoot Type="TBS" Value="4843A82ED3B1F2BFBEE9671960E1940C942F688D" />
+      <CertPublisher Value="Oracle Corporation" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VBOX" />
+    </Signer>
+    <Signer ID="ID_SIGNER_VBOX_SUN" Name="VeriSign Class 3 Code Signing 2004 CA">
+      <CertRoot Type="TBS" Value="C7FC1727F5B75A6421A1F95C73BBDB23580C48E5" />
+      <CertPublisher Value="Sun Microsystems, Inc." />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VBOX" />
+    </Signer>
     <Signer ID="ID_SIGNER_REALTEK" Name="DigiCert EV Code Signing CA">
       <CertRoot Type="TBS" Value="2D54C16A8F8B69CCDEA48D0603C132F547A5CF75" />
       <CertPublisher Value="Realtek Semiconductor Corp." />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RTKIO_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RTKIO64_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RTKIOW10X64_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RTKIOW8X64_DRIVER" />
     </Signer>
-    <Signer ID="ID_SIGNER_REALTEK_2" Name="DigiCert EV Code Signing CA (SHA2)">
-      <CertRoot Type="TBS" Value="EEC58131DC11CD7F512501B15FDBC6074C603B68CA91F7162D5A042054EDB0CF" />
+    <Signer ID="ID_SIGNER_VERISIGN_2009_REALTEK" Name="VeriSign Class 3 Code Signing 2009-2 CA">
+      <CertRoot Type="TBS" Value="4CDC38C800761463749C3CBD94A12F32E49877BF" />
       <CertPublisher Value="Realtek Semiconductor Corp." />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RTKIO_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RTKIO64_DRIVER" />
-      <FileAttribRef RuleID="ID_FILEATTRIB_RTKIOW10X64_DRIVER" />
-      <FileAttribRef RuleID="ID_FILEATTRIB_RTKIOW8X64_DRIVER" />
     </Signer>
     <Signer ID="ID_SIGNER_WINDOWS_3RD_PARTY_2012" Name="Microsoft Windows Third Party Component CA 2012">
       <CertRoot Type="TBS" Value="CEC1AFD0E310C55C1DCC601AB8E172917706AA32FB5EAF826813547FDF02DD46" />
       <CertPublisher Value="Microsoft Windows Hardware Compatibility Publisher" />
       <FileAttribRef RuleID="ID_FILEATTRIB_AMD_RYZEN" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_AMDPP" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_IQVW64" />
       <FileAttribRef RuleID="ID_FILEATTRIB_TREND_MICRO" />
       <FileAttribRef RuleID="ID_FILEATTRIB_HPPORTIOX64" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_MTCBSV64" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RTKIO_DRIVER" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RTKIO64_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_WINRING0" />
     </Signer>
     <Signer ID="ID_SIGNER_WINDOWS_3RD_PARTY_2014" Name="Microsoft Windows Third Party Component CA 2014">
       <CertRoot Type="TBS" Value="D8BE9E4D9074088EF818BC6F6FB64955E90378B2754155126FEEBBBD969CF0AE" />
       <CertPublisher Value="Microsoft Windows Hardware Compatibility Publisher" />
+	  <FileAttribRef RuleID="ID_FILEATTRIB_BS_RCIO" />
       <FileAttribRef RuleID="ID_FILEATTRIB_CPUZ_DRIVER" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_LHA" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_LIBNICM_DRIVER" />
+	  <FileAttribRef RuleID="ID_FILEATTRIB_NCPL_DRIVER" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NICM_DRIVER" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NSCM_DRIVER" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_RTKIO_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_RTKIOW10X64_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_BS_HWMIO64" />
       <FileAttribRef RuleID="ID_FILEATTRIB_VIRAGT" />
       <FileAttribRef RuleID="ID_FILEATTRIB_VIRAGT64" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VMDRV" />
     </Signer>
    <Signer ID="ID_SIGNER_WINDOWS_3RD_PARTY_2010" Name="Microsoft Third Party Component Windows PCA 2010">
       <CertRoot Type="TBS" Value="90C9669670E75989159E6EEF69625EB6AD17CBA6209ED56F5665D55450A05212" />
@@ -443,18 +586,27 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     </Signer>
     <Signer ID="ID_SIGNER_VERISIGN_2004" Name="VeriSign Class 3 Code Signing 2004 CA">
       <CertRoot Type="TBS" Value="C7FC1727F5B75A6421A1F95C73BBDB23580C48E5" />
-      <CertPublisher Value="Mitac Technology Corporation" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CPUZ_DRIVER" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_IQVW64" />
       <FileAttribRef RuleID="ID_FILEATTRIB_MTCBSV64" />
     </Signer>
-    <Signer ID="ID_SIGNER_VERISIGN_2009" Name="VeriSign Class 3 Code Signing 2009-2 CA">
-      <CertRoot Type="TBS" Value="4CDC38C800761463749C3CBD94A12F32E49877BF" />
-      <CertPublisher Value="BIOSTAR MICROTECH INT'L CORP" />
-      <FileAttribRef RuleID="ID_FILEATTRIB_BSMI" />
-    </Signer>
-    <Signer ID="ID_SIGNER_VERISIGN_BIOSTAR" Name="VeriSign Class 3 Code Signing 2004 CA">
+    <Signer ID="ID_SIGNER_VERISIGN_2004_BIOSTAR" Name="VeriSign Class 3 Code Signing 2004 CA">
       <CertRoot Type="TBS" Value="C7FC1727F5B75A6421A1F95C73BBDB23580C48E5" />
       <CertPublisher Value="BIOSTAR MICROTECH INT'L CORP" />
       <FileAttribRef RuleID="ID_FILEATTRIB_BS_I2CIO" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_BSMI" />
+    </Signer>
+    <Signer ID="ID_SIGNER_VERISIGN_2009_BIOSTAR" Name="VeriSign Class 3 Code Signing 2009-2 CA">
+      <CertRoot Type="TBS" Value="4CDC38C800761463749C3CBD94A12F32E49877BF" />
+      <CertPublisher Value="BIOSTAR MICROTECH INT'L CORP" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_BSMI" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_BS_I2CIO" />
+    </Signer>
+    <Signer ID="ID_SIGNER_VERISIGN_2010_BIOSTAR" Name="VeriSign Class 3 Code Signing 2010 CA">
+      <CertRoot Type="TBS" Value="4843A82ED3B1F2BFBEE9671960E1940C942F688D" />
+      <CertPublisher Value="BIOSTAR MICROTECH INT'L CORP" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_BS_I2CIO" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_BSMI" />
     </Signer>
     <Signer ID="ID_SIGNER_GLOBALSIGN_G2_MICROSTAR" Name="GlobalSign CodeSigning CA - G2">
       <CertRoot Type="TBS" Value="589A7D4DF869395601BA7538A65AFAE8C4616385" />
@@ -465,6 +617,14 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
       <CertRoot Type="TBS" Value="4843A82ED3B1F2BFBEE9671960E1940C942F688D" />
       <CertPublisher Value="TOSHIBA CORPORATION" />
       <FileAttribRef RuleID="ID_FILEATTRIB_NCHGBIOS2X64" />
+    </Signer>
+    <Signer ID="ID_SIGNER_VERISIGN_NOVELL" Name="VeriSign Class 3 Code Signing 2010 CA">
+      <CertRoot Type="TBS" Value="4843A82ED3B1F2BFBEE9671960E1940C942F688D" />
+      <CertPublisher Value="Novell, Inc." />
+      <FileAttribRef RuleID="ID_FILEATTRIB_LIBNICM_DRIVER" />
+	  <FileAttribRef RuleID="ID_FILEATTRIB_NCPL_DRIVER" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NICM_DRIVER" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_NSCM_DRIVER" />
     </Signer>
     <Signer ID="ID_SIGNER_GLOBALSIGN_MICROSTAR" Name="GlobalSign Primary Object Publishing CA">
       <CertRoot Type="TBS" Value="041750993D7C9E063F02DFE74699598640911AAB" />
@@ -479,7 +639,13 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     <Signer ID="ID_SIGNER_SYMANTEC_CLASS_3" Name="Symantec Class 3 SHA256 Code Signing CA">
       <CertRoot Type="TBS" Value="A08E79C386083D875014C409C13D144E0A24386132980DF11FF59737C8489EB1" />
       <FileAttribRef RuleID="ID_FILEATTRIB_AMD_RYZEN" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_AMDPP" />
       <FileAttribRef RuleID="ID_FILEATTRIB_TREND_MICRO" />
+    </Signer>
+    <Signer ID="ID_SIGNER_VERISIGN_AMD" Name="VeriSign Class 3 Code Signing 2010 CA">
+      <CertRoot Type="TBS" Value="4843A82ED3B1F2BFBEE9671960E1940C942F688D" />
+      <CertPublisher Value="Advanced Micro Devices, Inc." />
+      <FileAttribRef RuleID="ID_FILEATTRIB_AMD_RYZEN" />
     </Signer>
     <Signer ID="ID_SIGNER_VERISIGN_TG_SOFT" Name="VeriSign Class 3 Code Signing 2010 CA">
       <CertRoot Type="TBS" Value="4843A82ED3B1F2BFBEE9671960E1940C942F688D" />
@@ -498,6 +664,42 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
       <CertPublisher Value="HP Inc." />
       <FileAttribRef RuleID="ID_FILEATTRIB_HPPORTIOX64" />
       <FileAttribRef RuleID="ID_FILEATTRIB_WINRING0" />
+    </Signer>
+    <Signer ID="ID_SIGNER_GETAC" Name="Symantec Class 3 Extended Validation Code Signing CA - G2">
+      <CertRoot Type="TBS" Value="B3C925B4048C3F7C444D248A2B101186B57CBA39596EB5DCE0E17A4EE4B32F19" />
+      <CertPublisher Value="Getac Technology Corp." />
+      <FileAttribRef RuleID="ID_FILEATTRIB_MTCBSV64" />
+    </Signer>
+    <Signer ID="ID_SIGNER_GLOBALSIGN_CHEAT_ENGINE" Name="GlobalSign CA Cheat Engine Publisher">
+      <CertRoot Type="TBS" Value="BD1765C56594221373893EF26D97F88C144FB0E5A0111215B45D7239C3444DF7" />
+      <CertPublisher Value="Cheat Engine" />
+    </Signer>
+    <Signer ID="ID_SIGNER_GLOBALSIGN_G2_CHEAT_ENGINE" Name="GlobalSign CodeSigning CA - G2">
+      <CertRoot Type="TBS" Value="589A7D4DF869395601BA7538A65AFAE8C4616385" />
+      <CertPublisher Value="Cheat Engine" />
+    </Signer>
+    <Signer ID="ID_SIGNER_PHYSMEM" Name="GlobalSign CodeSigning CA - G2">
+      <CertRoot Type="TBS" Value="589A7D4DF869395601BA7538A65AFAE8C4616385" />
+      <CertPublisher Value="Hilscher Gesellschaft fuer Systemautomation mbH" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_PHYSMEM" />
+    </Signer>
+    <Signer ID="ID_SIGNER_VMDRV" Name="DigiCert EV Code Signing CA (SHA2)">
+      <CertRoot Type="TBS" Value="EEC58131DC11CD7F512501B15FDBC6074C603B68CA91F7162D5A042054EDB0CF" />
+      <CertPublisher Value="Voicemod Sociedad Limitada" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_VMDRV" />
+    </Signer>
+    <Signer ID="ID_SIGNER_INTEL_IQVW" Name="Intel External Basic Policy CA">
+      <CertRoot Type="TBS" Value="53B052BA209C525233293274854B264BC0F68B73" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_IQVW64" />
+    </Signer>
+    <Signer ID="ID_SIGNER_COMODO_IQVW" Name="COMODO RSA Certification Authority">
+      <CertRoot Type="TBS" Value="7CE102D63C57CB48F80A65D1A5E9B350A7A618482AA5A36775323CA933DDFCB00DEF83796A6340DEC5EBF7596CFD8E5D" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_IQVW64" />
+    </Signer>
+    <Signer ID="ID_SIGNER_AMDPP" Name="USERTrust RSA Certification Authority">
+      <CertRoot Type="TBS" Value="13BAA039635F1C5292A8C2F36AAE7E1D25C025202E9092F5B0F53F5F752DFA9C71B3D1B8D9A6358FCEE6EC75622FABF9" />
+      <CertPublisher Value="Advanced Micro Devices Inc." />
+      <FileAttribRef RuleID="ID_FILEATTRIB_AMDPP" />
     </Signer>
     <Signer ID="ID_SIGNER_GEOTRUST_SRL_2009" Name="HT Srl Digital ID Class 3 - Microsoft Software Validation v2">
       <CertRoot Type="TBS" Value="d70edfa009a76bd8250d74e9ee92eb9ead7d4cb3" />
@@ -520,48 +722,75 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
 	<Signer ID="ID_SIGNER_SAASAME" Name="SaaSaMe Ltd.">
       <CertRoot Type="TBS" Value="A86DE66D8198E4272859881476A6F9936034A482" />
     </Signer>
+	<Signer ID="ID_SIGNER_NVIDIA_2011" Name="Leaked 2011 NVIDIA Corporation Verisign Class 3 Code Signing 2010 CA">
+      <CertRoot Type="TBS" Value="15C37DBEBE6FCC77108E3D7AD982676D3D5E77F7" />
+    </Signer>
+	<Signer ID="ID_SIGNER_NVIDIA_2015" Name="Leaked 2015 NVIDIA Corporation Verisign Class 3 Code Signing 2010 CA">
+      <CertRoot Type="TBS" Value="F049A238763D4A90B148AB10A500F96EBF1DC436" />
+    </Signer>
   </Signers>
   <!--Driver Signing Scenarios-->
   <SigningScenarios>
     <SigningScenario Value="131" ID="ID_SIGNINGSCENARIO_DENIED_VULN_MAL_SIGNERS" FriendlyName="Signers of known vulnerable or malicious drivers">
       <ProductSigners>
         <DeniedSigners>
-          <DeniedSigner SignerId="ID_SIGNER_MIMIKATZ_KERNEL" />
-          <DeniedSigner SignerId="ID_SIGNER_MIMIKATZ_USER" />
-          <DeniedSigner SignerId="ID_SIGNER_NOVELL" />
-          <DeniedSigner SignerId="ID_SIGNER_RWEVERY" />
-          <DeniedSigner SignerId="ID_SIGNER_SANDRA" />
-          <DeniedSigner SignerId="ID_SIGNER_SPEEDFAN" />
-          <DeniedSigner SignerId="ID_SIGNER_VBOX" />
-          <DeniedSigner SignerId="ID_SIGNER_CPUZ" />
+          <DeniedSigner SignerId="ID_SIGNER_AMDPP" />
+          <DeniedSigner SignerId="ID_SIGNER_CAPCOM" />
+          <DeniedSigner SignerId="ID_SIGNER_CHEAT_ENGINE" /> 
+          <DeniedSigner SignerId="ID_SIGNER_COMODO_IQVW" /> 
           <DeniedSigner SignerId="ID_SIGNER_ELBY" />
-          <DeniedSigner SignerId="ID_SIGNER_VERISIGN_2010" />
-          <DeniedSigner SignerId="ID_SIGNER_HP" />
+          <DeniedSigner SignerId="ID_SIGNER_ENE" />
+          <DeniedSigner SignerId="ID_SIGNER_DIGICERT_EV" />
+          <DeniedSigner SignerId="ID_SIGNER_GEOTRUST_SRL_2009" />
+          <DeniedSigner SignerId="ID_SIGNER_GETAC" />
+          <DeniedSigner SignerId="ID_SIGNER_GLOBALSIGN_CHEAT_ENGINE" />
+          <DeniedSigner SignerId="ID_SIGNER_GLOBALSIGN_G2_CHEAT_ENGINE" />
+          <DeniedSigner SignerId="ID_SIGNER_GLOBALSIGN_G2_MICROSTAR" />
+          <DeniedSigner SignerId="ID_SIGNER_GLOBALSIGN_MICROSTAR" />
+          <DeniedSigner SignerId="ID_SIGNER_GEOTRUST_SRL_2010" />
+          <DeniedSigner SignerId="ID_SIGNER_GLOBALSIGN_TG_SOFT" />
+          <DeniedSigner SignerId="ID_SIGNER_HANDAN" />
+          <DeniedSigner SignerId="ID_SIGNER_HP" /> 
+          <DeniedSigner SignerId="ID_SIGNER_INTEL_IQVW" />
+          <DeniedSigner SignerId="ID_SIGNER_JEROMIN_CODY_ERIC" />
+          <DeniedSigner SignerId="ID_SIGNER_MIMIKATZ_KERNEL" />
+          <DeniedSigner SignerId="ID_SIGNER_MIMIKATZ_KERNEL_SHA2" />
+          <DeniedSigner SignerId="ID_SIGNER_MIMIKATZ_USER" />
+          <DeniedSigner SignerId="ID_SIGNER_NANJING" />
+		  <DeniedSigner SignerId="ID_SIGNER_NVIDIA_2011" />
+		  <DeniedSigner SignerId="ID_SIGNER_NVIDIA_2015" />
+          <DeniedSigner SignerId="ID_SIGNER_PHYSMEM" />
           <DeniedSigner SignerId="ID_SIGNER_REALTEK" />
-          <DeniedSigner SignerId="ID_SIGNER_REALTEK_2" />
+          <DeniedSigner SignerId="ID_SIGNER_RWEVERY" />
+		  <DeniedSigner SignerId="ID_SIGNER_SAASAME" />
+          <DeniedSigner SignerId="ID_SIGNER_SANDRA" />
+          <DeniedSigner SignerId="ID_SIGNER_SANDRA_THAWTE" />
+          <DeniedSigner SignerId="ID_SIGNER_SPEEDFAN" />
+          <DeniedSigner SignerId="ID_SIGNER_SYMANTEC_CLASS_3" />
+          <DeniedSigner SignerId="ID_SIGNER_TRUST_ASIA" />
+          <DeniedSigner SignerId="ID_SIGNER_VBOX" />
+		  <DeniedSigner SignerId="ID_SIGNER_VBOX_ORCALE" />
+		  <DeniedSigner SignerId="ID_SIGNER_VBOX_SUN" />
           <DeniedSigner SignerId="ID_SIGNER_VERISIGN_2004" />
+          <DeniedSigner SignerId="ID_SIGNER_VERISIGN_2004_BIOSTAR" />
+          <DeniedSigner SignerId="ID_SIGNER_VERISIGN_2009" />
+          <DeniedSigner SignerId="ID_SIGNER_VERISIGN_2009_BIOSTAR" />
+          <DeniedSigner SignerId="ID_SIGNER_VERISIGN_2009_REALTEK" /> 
+          <DeniedSigner SignerId="ID_SIGNER_VERISIGN_2010" />
+          <DeniedSigner SignerId="ID_SIGNER_VERISIGN_2010_2" />
+          <DeniedSigner SignerId="ID_SIGNER_VERISIGN_2010_BIOSTAR" />
+          <DeniedSigner SignerId="ID_SIGNER_VERISIGN_AMD" />
+          <DeniedSigner SignerId="ID_SIGNER_VERISIGN_INSYDE" />
+          <DeniedSigner SignerId="ID_SIGNER_VERISIGN_NOVELL" />
+          <DeniedSigner SignerId="ID_SIGNER_VERISIGN_TG_SOFT" />
+          <DeniedSigner SignerId="ID_SIGNER_VERISIGN_TOSHIBA" />
+          <DeniedSigner SignerId="ID_SIGNER_VMDRV" />
           <DeniedSigner SignerId="ID_SIGNER_WINDOWS_3RD_PARTY_2010" />
           <DeniedSigner SignerId="ID_SIGNER_WINDOWS_3RD_PARTY_2012" />
           <DeniedSigner SignerId="ID_SIGNER_WINDOWS_3RD_PARTY_2014" />
-          <DeniedSigner SignerId="ID_SIGNER_VERISIGN_2009" />
-          <DeniedSigner SignerId="ID_SIGNER_VERISIGN_BIOSTAR" />
-          <DeniedSigner SignerId="ID_SIGNER_GLOBALSIGN_G2_MICROSTAR" />
-          <DeniedSigner SignerId="ID_SIGNER_VERISIGN_TOSHIBA" />
-          <DeniedSigner SignerId="ID_SIGNER_GLOBALSIGN_MICROSTAR" />
-          <DeniedSigner SignerId="ID_SIGNER_VERISIGN_INSYDE" />
-          <DeniedSigner SignerId="ID_SIGNER_SYMANTEC_CLASS_3" />
-          <DeniedSigner SignerId="ID_SIGNER_VERISIGN_TG_SOFT" />
-          <DeniedSigner SignerId="ID_SIGNER_GLOBALSIGN_TG_SOFT" />
-          <DeniedSigner SignerId="ID_SIGNER_GEOTRUST_SRL_2009" />
-          <DeniedSigner SignerId="ID_SIGNER_GEOTRUST_SRL_2010" />
-          <DeniedSigner SignerId="ID_SIGNER_HANDAN" />
-          <DeniedSigner SignerId="ID_SIGNER_NANJING" />
-          <DeniedSigner SignerId="ID_SIGNER_TRUST_ASIA" />
-          <DeniedSigner SignerId="ID_SIGNER_JEROMIN_CODY_ERIC" />
-          <DeniedSigner SignerId="ID_SIGNER_CHEAT_ENGINE" />
-		  <DeniedSigner SignerId="ID_SIGNER_SAASAME" />
         </DeniedSigners>
         <FileRulesRef>
+          <FileRuleRef RuleID="ID_ALLOW_ALL_1" />
           <FileRuleRef RuleID="ID_DENY_ASIO_32_SHA1" />
           <FileRuleRef RuleID="ID_DENY_ASIO_32_SHA256" />
           <FileRuleRef RuleID="ID_DENY_ASIO_32_SHA1_PAGE" />
@@ -606,10 +835,22 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
           <FileRuleRef RuleID="ID_DENY_BANDAI_SHA256" />
           <FileRuleRef RuleID="ID_DENY_BANDAI_SHA1_PAGE" />
           <FileRuleRef RuleID="ID_DENY_BANDAI_SHA256_PAGE" />
+		  <FileRuleRef RuleID="ID_DENY_BS_RCIO64_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_BS_RCIO64_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_BS_RCIO64_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_BS_RCIO64_SHA256_PAGE" />
           <FileRuleRef RuleID="ID_DENY_CAPCOM_SHA1" />
           <FileRuleRef RuleID="ID_DENY_CAPCOM_SHA256" />
           <FileRuleRef RuleID="ID_DENY_CAPCOM_SHA1_PAGE" />
           <FileRuleRef RuleID="ID_DENY_CAPCOM_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_DBUTIL_32_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_DBUTIL_32_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_DBUTIL_32_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_DBUTIL_32_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_DBUTIL_64_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_DBUTIL_64_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_DBUTIL_64_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_DBUTIL_64_SHA256_PAGE" />
           <FileRuleRef RuleID="ID_DENY_FIDDRV_SHA1" />
           <FileRuleRef RuleID="ID_DENY_FIDDRV_SHA256" />
           <FileRuleRef RuleID="ID_DENY_FIDDRV_SHA1_PAGE" />
@@ -643,7 +884,7 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
           <FileRuleRef RuleID="ID_DENY_AMIFLDRV64_SHA256C" />
           <FileRuleRef RuleID="ID_DENY_AMIFLDRV64_SHA1_PAGE" />
           <FileRuleRef RuleID="ID_DENY_AMIFLDRV64_SHA256_PAGE" />
-          <FileRuleRef RuleID="ID_DENY_ASUPIO64_SHA1F" />
+          <FileRuleRef RuleID="ID_DENY_ASUPIO64_SHA1" />
           <FileRuleRef RuleID="ID_DENY_ASUPIO64_SHA256" />
           <FileRuleRef RuleID="ID_DENY_ASUPIO64_SHA1_PAGE" />
           <FileRuleRef RuleID="ID_DENY_ASUPIO64_SHA256_PAGE" />
@@ -655,10 +896,60 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
           <FileRuleRef RuleID="ID_DENY_BSHWMIO64_SHA256" />
           <FileRuleRef RuleID="ID_DENY_BSHWMIO64_SHA1_PAGE" />
           <FileRuleRef RuleID="ID_DENY_BSHWMIO64_SHA256_PAGE" />
-          <FileRuleRef RuleID="ID_DENY_MSIO64_SHA1" />
-          <FileRuleRef RuleID="ID_DENY_MSIO64_SHA256" />
-          <FileRuleRef RuleID="ID_DENY_MSIO64_SHA1_PAGE" />
-          <FileRuleRef RuleID="ID_DENY_MSIO64_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_12" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_13" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_14" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_15" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_16" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_17" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_18" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_19" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_1A" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_1B" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_1C" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_1D" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_1E" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_1F" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_20" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_21" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_22" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_23" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_24" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_25" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_26" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_27" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_28" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_29" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_2A" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_2B" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_2C" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_2D" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_2E" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_2F" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_30" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_31" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_32" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_33" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_34" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_35" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_36" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_37" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_38" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_39" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_3A" />
+          <FileRuleRef RuleID="ID_DENY_DIRECTIO_3B" />
+          <FileRuleRef RuleID="ID_DENY_MSIO_SHA1_1" />
+          <FileRuleRef RuleID="ID_DENY_MSIO_SHA256_1" /> 		
+          <FileRuleRef RuleID="ID_DENY_MSIO_SHA1_PAGE_1" /> 	
+          <FileRuleRef RuleID="ID_DENY_MSIO_SHA256_PAGE_1" />	
+          <FileRuleRef RuleID="ID_DENY_MSIO_SHA1_2" />
+          <FileRuleRef RuleID="ID_DENY_MSIO_SHA256_2" />		
+          <FileRuleRef RuleID="ID_DENY_MSIO_SHA1_PAGE_2" /> 	
+          <FileRuleRef RuleID="ID_DENY_MSIO_SHA256_PAGE_2" />	
+          <FileRuleRef RuleID="ID_DENY_MSIO_SHA1_3" />
+          <FileRuleRef RuleID="ID_DENY_MSIO_SHA256_3" />		
+          <FileRuleRef RuleID="ID_DENY_MSIO_SHA1_4" />	
+          <FileRuleRef RuleID="ID_DENY_MSIO_SHA256_4" />		
           <FileRuleRef RuleID="ID_DENY_PIDDRV_SHA1" />
           <FileRuleRef RuleID="ID_DENY_PIDDRV_SHA256" />
           <FileRuleRef RuleID="ID_DENY_PIDDRV_SHA1_PAGE" />
@@ -667,6 +958,10 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
           <FileRuleRef RuleID="ID_DENY_PIDDRV64_SHA256" />
           <FileRuleRef RuleID="ID_DENY_PIDDRV64_SHA1_PAGE" />
           <FileRuleRef RuleID="ID_DENY_PIDDRV64_SHA256_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_PHYMEMX64_SHA1" />
+          <FileRuleRef RuleID="ID_DENY_PHYMEMX64_SHA256" />
+          <FileRuleRef RuleID="ID_DENY_PHYMEMX64_SHA1_PAGE" />
+          <FileRuleRef RuleID="ID_DENY_PHYMEMX64_SHA256_PAGE" />
           <FileRuleRef RuleID="ID_DENY_SEMAV6MSR64_SHA1" />
           <FileRuleRef RuleID="ID_DENY_SEMAV6MSR64_SHA256" />
           <FileRuleRef RuleID="ID_DENY_SEMAV6MSR64_SHA1_PAGE" />
@@ -831,6 +1126,9 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     </SigningScenario>
     <SigningScenario Value="12" ID="ID_SIGNINGSCENARIO_WINDOWS" FriendlyName="">
       <ProductSigners>
+        <FileRulesRef>
+          <FileRuleRef RuleID="ID_ALLOW_ALL_2" />
+        </FileRulesRef>
       </ProductSigners>
     </SigningScenario>
   </SigningScenarios>
@@ -845,7 +1143,7 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     </Setting>
     <Setting Provider="PolicyInfo" Key="Information" ValueName="Id">
       <Value>
-        <String>10.0.22493.0</String>
+        <String>10.0.25070.0</String>
       </Value>
     </Setting>
   </Settings>
