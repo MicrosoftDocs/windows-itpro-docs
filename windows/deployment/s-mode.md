@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: deploy
 manager: dougeby
 ms.audience: itpro
-author: greg-lindsay
-ms.author: greglin
+author: aczechowski
+ms.author: aaroncz
 audience: itpro
 ms.topic: article
 ms.custom: seo-marvel-apr2020

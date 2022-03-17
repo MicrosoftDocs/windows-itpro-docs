@@ -5,11 +5,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
-ms.author: greglin
-author: greg-lindsay
+ms.author: aaroncz
+author: aczechowski
 ms.date: 07/20/2017
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # Changes to Service Host grouping in Windows 10

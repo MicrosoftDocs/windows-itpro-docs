@@ -6,9 +6,9 @@ keywords: updates, downloads, network, bandwidth
 ms.prod: w10
 ms.mktglfcycl: deploy
 audience: itpro
-author: jaimeo
+author: carmenf
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: carmenf
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---

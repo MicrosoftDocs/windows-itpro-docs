@@ -14,20 +14,20 @@ ms.date: 09/18/2018
 
 # AssignedAccess CSP
 
-The AssignedAccess configuration service provider (CSP) is used to set the device to run in kiosk mode. Once the CSP has been executed, then the next user login that is associated with the kiosk mode puts the device into the kiosk mode running the application specified in the CSP configuration.
+The AssignedAccess configuration service provider (CSP) is used to set the device to run in kiosk mode. Once the CSP has been executed, the next user login that is associated with the kiosk mode puts the device into the kiosk mode running the application specified in the CSP configuration.
 
 For a step-by-step guide for setting up devices to run in kiosk mode, see [Set up a kiosk on Windows 10 Pro, Enterprise, or Education.](/windows/configuration/kiosk-single-app)
 
- In Windows 10, version 1709, the AssignedAccess configuration service provider (CSP) has been expanded to make it easy for administrators to create kiosks that run more than one app. You can configure multi-app kiosks using a provisioning package. For a step-by-step guide, see [Create a Windows 10 kiosk that runs multiple apps](/windows/configuration/lock-down-windows-10-to-specific-apps).
+In Windows 10, version 1709, the AssignedAccess configuration service provider (CSP) has been expanded to make it easy for administrators to create kiosks that run more than one app. You can configure multi-app kiosks using a provisioning package. For a step-by-step guide, see [Create a Windows 10 kiosk that runs multiple apps](/windows/configuration/lock-down-windows-10-to-specific-apps).
 
 > [!Warning]
 > You can only assign one single app kiosk profile to an individual user account on a device. The single app profile does not support domain groups.
 
 > [!Note]
-> If the application calls KeyCredentialManager.IsSupportedAsync when it is running in assigned access mode and it returns false on the first run, invoke the settings screen and select a convenience PIN to use with Windows Hello. This is the settings screen that is hidden by the application running in assigned access mode. You can only use Windows Hello if you first leave assigned access mode, select your convenience pin, and then go back into assigned access mode again. 
+> If the application calls KeyCredentialManager.IsSupportedAsync when it is running in assigned access mode and it returns false on the first run, invoke the settings screen and select a appropriate PIN to use with Windows Hello. This is the settings screen that is hidden by the application running in assigned access mode. You can only use Windows Hello if you first leave assigned access mode, select your convenience pin, and then go back into assigned access mode again.
 
 > [!Note]
-> The AssignedAccess CSP is supported in Windows 10 Enterprise and Windows 10 Education. Starting from Windows 10, version 1709 it is also supported in Windows 10 Pro and Windows 10 S. Starting in Windows 10, version 1803, it is also supported in Windows Holographic for Business edition.
+> The AssignedAccess CSP is supported in Windows 10 Enterprise and Windows 10 Education. Starting from Windows 10, version 1709, it is supported in Windows 10 Pro and Windows 10 S. Starting from Windows 10, version 1803, it is also supported in Windows Holographic for Business edition.
 
 The following shows the AssignedAccess configuration service provider in tree format
 
@@ -40,13 +40,14 @@ AssignedAccess
 ----ShellLauncher (Added in Windows 10, version 1803)
 ----StatusConfiguration (Added in Windows 10, version 1803)
 ```
+
 <a href="" id="--vendor-msft-assignedaccess"></a>**./Device/Vendor/MSFT/AssignedAccess**
 Root node for the CSP.
 
 <a href="" id="assignedaccess-kioskmodeapp"></a>**./Device/Vendor/MSFT/AssignedAccess/KioskModeApp**
 A JSON string that contains the user account name and Application User Model ID (AUMID) of the Kiosk mode app. For more information about how to get the AUMID, see [Find the Application User Model ID of an installed app](/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
-For a step-by-step guide for setting up devices to run in kiosk mode, see [Set up a kiosk on Windows 10 Pro, Enterprise, or Education.](/windows/configuration/kiosk-single-app)
+For more information, see [Set up a kiosk on Windows 10 Pro, Enterprise, or Education.](/windows/configuration/kiosk-single-app)
 
 > [!Note]
 > In Windows 10, version 1803 the Configuration node introduces single app kiosk profile to replace KioskModeApp CSP node. KioskModeApp node will be deprecated soon, so you should use the single app kiosk profile in config xml for Configuration node to configure public-facing single app Kiosk.
@@ -66,42 +67,36 @@ Here's an example:
 
 > [!Tip]
 > In this example the double \\\ is required because it's in JSON and JSON escapes \ into \\\\. If an MDM server uses JSON parser\composer, they should ask customers to type only one \\, which will be \\\ in the JSON. If user types \\\\, it'll become \\\\\\\ in JSON, which will cause erroneous results. For the same reason, domain\account used in Configuration xml does not need \\\ but only one \\, because xml does not (need to) escape \\.
-> 
-> This applies to both domain\account, AzureAD\someone@contoso.onmicrosoft.com, i.e. as long as a \ used in JSON string. 
+>
+> This applies to both domain\account, AzureAD\someone@contoso.onmicrosoft.com, i.e. as long as a \ used in JSON string.
 
 When configuring the kiosk mode app, the account name will be used to find the target user. The account name includes domain name and user name.
 
 > [!Note]
-> The domain name can be optional if the user name is unique across the system.
+> The domain name can be optional, if the user name is unique across the system.
 
 For a local account, the domain name should be the device name. When Get is executed on this node, the domain name is always returned in the output.
-
 
 The supported operations are Add, Delete, Get and Replace. When there's no configuration, the Get and Delete methods fail. When there's already a configuration for kiosk mode app, the Add method fails. The data pattern for Add and Replace is the same.
 
 <a href="" id="assignedaccess-configuration"></a>**./Device/Vendor/MSFT/AssignedAccess/Configuration**
 Added in Windows 10, version 1709. Specifies the settings that you can configure in the kiosk or device. This node accepts an AssignedAccessConfiguration xml as input to configure the device experience. For details about the configuration settings in the XML, see [Create a Windows 10 kiosk that runs multiple apps](/windows/configuration/lock-down-windows-10-to-specific-apps). Here is the schema for the [AssignedAccessConfiguration](#assignedaccessconfiguration-xsd).
 
-> [!Note]
-> In Windows 10, version 1803 the Configuration node introduces single app kiosk profile to replace KioskModeApp CSP node. KioskModeApp node will be deprecated soon, so you should use the single app kiosk profile in config xml for Configuration node to configure public-facing single app Kiosk.
->
-> Starting in Windows 10, version 1803 the KioskModeApp node becomes No-Op if Configuration node is configured on the device. That Add/Replace/Delete command on KioskModeApp node always returns SUCCESS to the MDM server if Configuration node is set, but the data of KioskModeApp will not take any effect on the device. Get command on KioskModeApp will return the configured JSON string even it’s not effective.
-
 Enterprises can use this to easily configure and manage the curated lockdown experience.
 
 Supported operations are Add, Get, Delete, and Replace.
 
-Deleting the multi-app configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all the enforced policies back (e.g. Start Layout).
+Deleting the multi-app configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all the enforced policies back (for example, Start Layout).
 
 <a href="" id="assignedaccess-status"></a>**./Device/Vendor/MSFT/AssignedAccess/Status**
 Added in Windows 10, version 1803. This read only polling node allows MDM server to query the current KioskModeAppRuntimeStatus as long as the StatusConfiguration node is set to “On” or “OnWithAlerts”. If the StatusConfiguration is “Off”, a node not found error will be reported to the MDM server. Click [link](#status-example) to see an example SyncML. [Here](#assignedaccessalert-xsd) is the schema for the Status payload.
 
-In Windows 10, version 1803, Assigned Access runtime status only supports monitoring single app kiosk mode. Here are the possible status available for single app kiosk mode.
+In Windows 10, version 1803, Assigned Access runtime status only supports monitoring single app kiosk mode. Here are the possible statuses available for single app kiosk mode.
 
 |Status  |Description  |
 |---------|---------|---------|
 | KioskModeAppRunning | This means the kiosk app is running normally. |
-| KioskModeAppNotFound | This occurs when the kiosk app is not deployed to the machine. |
+| KioskModeAppNotFound | This occurs when the kiosk app isn't deployed to the machine. |
 | KioskModeAppActivationFailure | This happens when the assigned access controller detects the process terminated unexpectedly after exceeding the max retry. |
 
 > [!NOTE]
@@ -113,7 +108,7 @@ In Windows 10, version 1803, Assigned Access runtime status only supports monito
 | 2     | KioskModeAppNotFound          |
 | 3     | KioskModeAppActivationFailure         |
 
-Additionally, the status payload includes a profileId that can be used by the MDM server to correlate which kiosk app caused the error.
+Additionally, the status payload includes a profileId that can be used by the MDM server to correlate as to which kiosk app caused the error.
 
 In Windows 10, version 1809, Assigned Access runtime status supports monitoring single-app kiosk and multi-app modes. Here are the possible status codes.
 
@@ -136,27 +131,27 @@ In Windows 10, version 1809, Assigned Access runtime status supports monitoring 
 
 Additionally, the Status payload includes the following fields:
 
-- profileId: can be used by the MDM server to correlate which account caused the error.
-- OperationList: list of failed operations that occurred while applying the assigned access CSP, if any exist.
+- profileId: It can be used by the MDM server to correlate which account caused the error.
+- OperationList: It gives the list of failed operations that occurred while applying the assigned access CSP, if any exist.
 
 Supported operation is Get.
 
 <a href="" id="assignedaccess-shelllauncher"></a>**./Device/Vendor/MSFT/AssignedAccess/ShellLauncher**
-Added in Windows 10,version 1803. This node accepts a ShellLauncherConfiguration xml as input. Click [link](#shelllauncherconfiguration-xsd) to see the schema. Shell Launcher V2 is introduced in Windows 10, version 1903 to support both UWP and Win32 apps as the custom shell. For more information, see [Shell Launcher](/windows/configuration/kiosk-shelllauncher).
+Added in Windows 10, version 1803. This node accepts a ShellLauncherConfiguration xml as input. Click [link](#shelllauncherconfiguration-xsd) to see the schema. Shell Launcher V2 is introduced in Windows 10, version 1903 to support both UWP and Win32 apps as the custom shell. For more information, see [Shell Launcher](/windows/configuration/kiosk-shelllauncher).
 
 > [!Note]
 > You cannot set both ShellLauncher and KioskModeApp at the same time on the device.
 >
-> Configuring Shell Launcher using the ShellLauncher node automatically enables the Shell Launcher feature if it is available within the SKU. I. Shell Launcher as a feature and the ShellLauncher node both require Windows Enterprise or Windows Education to function.
+> Configuring Shell Launcher using the ShellLauncher node automatically enables the Shell Launcher feature, if it is available within the SKU. I. Shell Launcher as a feature and the ShellLauncher node both require Windows Enterprise or Windows Education to function.
 >
 >The ShellLauncher node is not supported in Windows 10 Pro.
 
 <a href="" id="assignedaccess-statusconfiguration"></a>**./Device/Vendor/MSFT/AssignedAccess/StatusConfiguration**
 Added in Windows 10, version 1803. This node accepts a StatusConfiguration xml as input to configure the Kiosk App Health monitoring. There are three possible values for StatusEnabled node inside StatusConfiguration xml: On, OnWithAlerts, and Off. Click [link](#statusconfiguration-xsd) to see the StatusConfiguration schema.
 
-By default the StatusConfiguration node does not exist, and it implies this feature is off. Once enabled via CSP, Assigned Access will check kiosk app status and wait for MDM server to query the latest status from the Status node.
+By default the StatusConfiguration node doesn't exist, and it implies this feature is off. Once enabled via CSP, Assigned Access will check kiosk app status and wait for MDM server to query the latest status from the Status node.
 
-Optionally, the MDM server can opt-in to the MDM alert so a MDM alert will be generated and sent immediately to the MDM server when the assigned access runtime status is changed. This MDM alert will contain the status payload that is available via the Status node.
+Optionally, the MDM server can opt in to the MDM alert, so that MDM alert will be generated and sent immediately to the MDM server when the assigned access runtime status is changed. This MDM alert will contain the status payload that is available via the Status node.
 
 This MDM alert header is defined as follows:
 
@@ -431,7 +426,8 @@ Below schema is for AssignedAccess Configuration up to Windows 10 1803 release.
 </xs:schema>
 ```
 
-Here is the schema for new features introduced in Windows 10 1809 release
+Here's the schema for new features introduced in Windows 10 1809 release
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema
@@ -506,7 +502,8 @@ Schema for Windows 10 prerelease
 </xs:schema>
 ```
 
-To authorize a compatible configuration XML that includes 1809 or prerelease elements and attributes, always include the namespace of these add-on schemas, and decorate the attributes and elements accordingly with the namespace alias. e.g. to configure auto-launch feature which is added in 1809 release, use below sample, notice an alias r1809 is given to the 201810 namespace for 1809 release, and the alias is tagged on AutoLaunch and AutoLaunchArguments inline.
+To authorize a compatible configuration XML that includes 1809 or prerelease elements and attributes, always include the namespace of these add-on schemas, and decorate the attributes and elements accordingly with the namespace alias. For example, to configure auto-launch feature, which is added in 1809 release, the below can be used to notice that an alias r1809 is given to the 201810 namespace for 1809 release, and the alias is tagged on AutoLaunch and AutoLaunchArguments inline.
+
 ```xml
 <AssignedAccessConfiguration
     xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
@@ -574,11 +571,11 @@ To authorize a compatible configuration XML that includes 1809 or prerelease ele
 
 ## Configuration examples
 
-XML encoding (escaped) and CDATA of the XML in the Data node both ensure that DM client can properly interpret the SyncML and send the configuration xml as string (in original format, unescaped) to AssignedAccess CSP to handle.
+XML encoding (escaped) and CDATA of the XML in the Data node will both ensure that DM client can properly interpret the SyncML and send the configuration xml as string (in original format, unescaped) to AssignedAccess CSP to handle.
 
-Similarly, the StartLayout xml inside the configuration xml is using the same format, xml inside xml as string. In the sample Configuration xml provided above, CDATA is used to embed the StartLayout xml. If you use CDATA to embed configuration xml in SyncML as well, you’ll have nested CDATA so pay attention to how CDATA is used in the provided CDATA sample. With that being said, when the Configuration xml is being constructed, MDM server can either escape start layout xml or put startlayout xml inside CDATA, when MDM server puts configuration xml inside SyncML, MDM server can also either escape it or wrap with CDATA.
+Similarly, the StartLayout xml inside the configuration xml is using the same format, xml inside xml as string. In the sample Configuration xml provided above, CDATA is used to embed the StartLayout xml. If you use CDATA to embed configuration xml in SyncML as well, you’ll have nested CDATA, so pay attention to how CDATA is used in the provided CDATA sample. With that being said, when the Configuration xml is being constructed, MDM server can either escape start layout xml or put startlayout xml inside CDATA, when MDM server puts configuration xml inside SyncML, MDM server can also either escape it or wrap with CDATA.
 
-Escape and CDATA are mechanisms when handling xml in xml. Consider it’s a transportation channel to send the configuration xml as payload from server to client. It’s transparent to both end user who configures the CSP and transparent to our CSP. Both the customer on the server side and our CSP must only see the original configuration XML.
+Escape and CDATA are mechanisms when handling xml in xml. Consider it’s a transportation channel to send the configuration xml as payload from server to client. It’s transparent to both, the end user who configures the CSP and to our CSP. Both the customer on the server side and our CSP must only see the original configuration XML.
 
 This example shows escaped XML of the Data node.
 
@@ -894,8 +891,8 @@ StatusConfiguration Add OnWithAlerts
 </SyncML>
 ```
 
-
 StatusConfiguration Delete
+
 ```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
    <SyncBody>
@@ -962,6 +959,7 @@ StatusConfiguration Replace On
 ## Status example
 
 Status Get
+
 ```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
    <SyncBody>
@@ -1479,3 +1477,7 @@ This example configures the following apps: Skype, Learning, Feedback Hub, and C
     </Configs>
 </AssignedAccessConfiguration>
 ```
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)

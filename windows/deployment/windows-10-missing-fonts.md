@@ -7,10 +7,10 @@ ms.mktglfcycl: plan
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: itpro
-author: greg-lindsay
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.audience: itpro
-ms.reviewer: 
-manager: laurawi
 ms.topic: article
 ---
 # How to install fonts that are missing after upgrading to Windows client

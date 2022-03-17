@@ -66,7 +66,7 @@ The XML below is for Windows 10, version 1803.
 
 Example: {"User":"domain\\user", "AUMID":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"}.
 
-When configuring kiosk mode app, account name will be used to find the target user. Account name includes domain name and user name. Domain name can be optional if user name is unique across the system. For a local account, domain name should be machine name. When "Get" is executed on this node, domain name is always returned in the output.
+When configuring kiosk mode app, account name will be used to find the target user. Account name includes domain name and user name. Domain name can be optional, if user name is unique across the system. For a local account, domain name should be machine name. When "Get" is executed on this node, domain name is always returned in the output.
 
 This node supports Add, Delete, Replace and Get methods. When there's no configuration, "Get" and "Delete" methods fail. When there's already a configuration for kiosk mode app, "Add" method fails. The data pattern for "Add" and "Replace" is the same.</Description>
                 <DFFormat>
@@ -119,7 +119,7 @@ This node supports Add, Delete, Replace and Get methods. When there's no configu
                 <AccessType>
                     <Get />
                 </AccessType>
-                <Description>This read only node contains kiosk health event xml</Description>
+                <Description>This read only node contains kiosk health event in xml</Description>
                 <DFFormat>
                     <chr />
                 </DFFormat>
