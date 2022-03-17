@@ -229,6 +229,14 @@ Information about the execution status of the threat.
 
 The data type is integer.
 
+The following list shows the supported values:
+
+- 0 = Unknown
+- 1 = Blocked
+- 2 = Allowed
+- 3 = Executing
+- 4 = Not executing
+
 Supported operation is Get.
 
 <a href="" id="detections-threatid-initialdetectiontime"></a>**Detections/*ThreatId*/InitialDetectionTime**  
