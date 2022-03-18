@@ -234,8 +234,8 @@ The following list shows the supported values:
 - 0 = Unknown
 - 1 = Blocked
 - 2 = Allowed
-- 3 = Executing
-- 4 = Not executing
+- 3 = Running
+- 4 = Not running
 
 Supported operation is Get.
 
