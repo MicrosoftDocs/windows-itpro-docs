@@ -1693,7 +1693,7 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 (default) -Do not enforce certificate pinning
+- 0 (default) - Enforce certificate pinning
 - 1 - Do not enforce certificate pinning
 
 <!--/SupportedValues-->
