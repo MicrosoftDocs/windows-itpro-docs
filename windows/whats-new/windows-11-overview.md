@@ -4,8 +4,8 @@ description: Learn more about Windows 11. Read about the features IT professiona
 ms.reviewer: 
 manager: dougeby
 ms.audience: itpro
-author: greg-lindsay
-ms.author: greglin
+author: aczechowski
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

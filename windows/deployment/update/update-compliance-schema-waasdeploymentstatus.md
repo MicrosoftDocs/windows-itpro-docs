@@ -1,15 +1,14 @@
 ---
 title: Update Compliance Schema - WaaSDeploymentStatus
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 description: WaaSDeploymentStatus schema
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: deploy
 audience: itpro
-itproauthor: jaimeo
-author: jaimeo
-ms.author: jaimeo
+author: aczechowski
+ms.author: aaroncz
 ms.collection: M365-analytics
 ms.topic: article
 ---

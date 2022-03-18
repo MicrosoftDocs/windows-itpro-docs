@@ -3,14 +3,14 @@ title: Applying Filters to Data in the SUA Tool (Windows 10)
 description: Learn how to apply filters to results from the Standard User Analyzer (SUA) tool while testing your application.
 ms.assetid: 48c39919-3501-405d-bcf5-d2784cbb011f
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.date: 04/19/2017
 ms.topic: article
 ---

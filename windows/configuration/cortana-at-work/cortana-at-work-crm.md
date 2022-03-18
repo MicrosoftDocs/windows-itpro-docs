@@ -4,12 +4,12 @@ description: How to set up Cortana to give salespeople insights on important CRM
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.date: 10/05/2017
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # Set up and test Cortana with Microsoft Dynamics CRM (Preview feature) in your organization

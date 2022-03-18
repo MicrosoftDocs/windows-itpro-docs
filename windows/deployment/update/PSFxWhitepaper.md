@@ -5,12 +5,11 @@ keywords: updates, servicing, current, deployment, General Availability Channel,
 ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro
-itproauthor: jaimeo
-author: jaimeo
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: aaroncz
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---

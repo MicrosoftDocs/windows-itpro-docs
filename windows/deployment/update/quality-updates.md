@@ -4,9 +4,9 @@ description: Learn about Windows monthly quality updates to stay productive an
 keywords: updates, servicing, current, deployment, General Availability Channel, feature, quality, rings, insider, tools
 ms.prod: w10
 ms.mktglfcycl: manage
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.reviewer: 
 manager: dougeby
 ms.topic: article
