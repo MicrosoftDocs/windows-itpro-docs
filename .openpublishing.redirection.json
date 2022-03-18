@@ -19406,11 +19406,6 @@
       "redirect_document_id": false  
     },
     {
-      "source_path": "windows/security/threat-protection/intelligence/coinminer-malware.md",
-      "redirect_url": "/microsoft-365/security/intelligence/coinminer-malware",
-      "redirect_document_id": false  
-    },
-    {
       "source_path": "windows/security/threat-protection/intelligence/malware-naming.md",
       "redirect_url": "/microsoft-365/security/intelligence/malware-naming",
       "redirect_document_id": false  
@@ -19421,18 +19416,8 @@
       "redirect_document_id": false  
     },
     {
-      "source_path": "windows/security/threat-protection/intelligence/coinminer-malware.md",
-      "redirect_url": "/microsoft-365/security/intelligence/coinminer-malware",
-      "redirect_document_id": false  
-    },
-    {
       "source_path": "windows/security/threat-protection/intelligence/phishing.md",
       "redirect_url": "/microsoft-365/security/intelligence/phishing",
-      "redirect_document_id": false  
-    },
-    {
-      "source_path": "windows/security/threat-protection/intelligence/coinminer-malware.md",
-      "redirect_url": "/microsoft-365/security/intelligence/coinminer-malware",
       "redirect_document_id": false  
     },
     {
@@ -19466,11 +19451,6 @@
       "redirect_document_id": false  
     },
     {
-      "source_path": "windows/security/threat-protection/intelligence/prevent-malware-infection.md",
-      "redirect_url": "/microsoft-365/security/intelligence/prevent-malware-infection",
-      "redirect_document_id": false  
-    },
-    {
       "source_path": "windows/security/threat-protection/intelligence/support-scams.md",
       "redirect_url": "/microsoft-365/security/intelligence/support-scams",
       "redirect_document_id": false  
@@ -19483,11 +19463,6 @@
     {
       "source_path": "windows/security/threat-protection/intelligence/understanding-malware.md",
       "redirect_url": "/microsoft-365/security/intelligence/understanding-malware",
-      "redirect_document_id": false  
-    },
-    {
-      "source_path": "windows/security/threat-protection/intelligence/trojans-malware.md",
-      "redirect_url": "/microsoft-365/security/intelligence/trojans-malware",
       "redirect_document_id": false  
     },
     {
