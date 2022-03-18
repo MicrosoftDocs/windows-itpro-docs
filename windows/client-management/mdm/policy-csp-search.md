@@ -816,7 +816,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-If enabled, clients will be unable to query this computer's index remotely. Thus, when they are browsing network shares that are stored on this computer, they will not search them using the index. If disabled, client search requests will use this computer's index..
+If enabled, clients will be unable to query this computer's index remotely. Thus, when they are browsing network shares that are stored on this computer, they will not search them using the index. If disabled, client search requests will use this computer's index.
 
 <!--/Description-->
 <!--ADMXMapped-->
