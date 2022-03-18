@@ -8,9 +8,10 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 ms.date: 09/28/2021
-manager: dougeby
 ms.audience: itpro
-author: greg-lindsay
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 audience: itpro
 ms.collection:
   - M365-modern-desktop

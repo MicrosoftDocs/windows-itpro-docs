@@ -6,13 +6,13 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: devices
-author: greg-lindsay
-ms.author: greglin
+author: aczechowski
+ms.author: aaroncz
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 09/20/2017
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # Manage Windows 10 and Microsoft Store tips, "fun facts", and suggestions

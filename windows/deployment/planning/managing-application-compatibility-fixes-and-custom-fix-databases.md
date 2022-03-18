@@ -3,14 +3,14 @@ title: Managing Application-Compatibility Fixes and Custom Fix Databases (Window
 description: Learn why you should use compatibility fixes, and how to deploy and manage custom-compatibility fix databases.
 ms.assetid: 9c2e9396-908e-4a36-ad67-2e40452ce017
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.date: 04/19/2017
 ms.topic: article
 ---

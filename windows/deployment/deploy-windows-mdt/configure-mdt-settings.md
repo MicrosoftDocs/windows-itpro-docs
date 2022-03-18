@@ -4,7 +4,7 @@ description: One of the most powerful features in Microsoft Deployment Toolkit (
 ms.assetid: d3e1280c-3d1b-4fad-8ac4-b65dc711f122
 ms.reviewer: 
 manager: dougeby
-ms.author: greglin
+ms.author: aaroncz
 keywords: customize, customization, deploy, features, tools
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ---
 

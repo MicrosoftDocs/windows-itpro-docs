@@ -111,9 +111,9 @@ For information about creating or locating your subscription ID, see [Steps to o
 
 ### Create the MCC resource in Azure
 
-The MCC Azure management portal is used to create and manage MCC nodes. An Azure Subscription ID is used to grant access to the preview and to create the MCC resource in Azure and Cache nodes.
+The MCC Azure management portal is used to create and manage MCC nodes. An Azure Subscription ID is used to grant access to the preview and to create the MCC resource in Azure and Cache nodes. 
 
-Use the following link to sign in to Azure: <https://portal.azure.com/?microsoft_azure_marketplace_ItemHideKey=Microsoft_ConnectedCache_EntHidden>
+Send email to the MCC team ([msconnectedcache@microsoft.com](mailto:msconnectedcache@microsoft.com)) with your Azure subscription ID to get access to the preview. The team will send you a link to the Azure portal, which will allow you to create the resource described below.
 
 1. Choose **Create a resource**  
 
