@@ -27,4 +27,4 @@ Set to **True** or **False**.
 
 ## Related topics
 
-- For more information, see [AllJoyn – Wikipedia](https://wikipedia.org/wiki/AllJoyn).
+- [AllJoyn – Wikipedia](https://wikipedia.org/wiki/AllJoyn)
