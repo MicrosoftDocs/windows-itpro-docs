@@ -18,7 +18,7 @@ ms.collection: highpri
 # Windows 10 deployment scenarios and tools
 
 
-To successfully deploy the Windows 10 operating system and applications for your organization, it is essential that you know about the available tools to help with the process. In this topic, you will learn about the most commonly used tools for Windows 10 deployment.
+To successfully deploy the Windows 10 operating system and applications for your organization, it's essential that you know about the available tools to help with the process. In this topic, you'll learn about the most commonly used tools for Windows 10 deployment.
 
 Microsoft provides many tools, services, and solutions. These tools include Windows Deployment Services (WDS), the Volume Activation Management Tool (VAMT), the User State Migration Tool (USMT), Windows System Image Manager (Windows SIM), Windows Preinstallation Environment (Windows PE), and Windows Recovery Environment (Windows RE). Keep in mind that these are just tools and not a complete solution on their own. It's when you combine these tools with solutions like [Microsoft Deployment Toolkit (MDT)](./deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md) or [Configuration Manager](deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md) that you get the complete deployment solution.
 
@@ -61,7 +61,7 @@ For more information on DISM, see [DISM technical reference](/windows-hardware/m
 USMT is a backup and restore tool that allows you to migrate user state, data, and settings from one installation to another. Microsoft Deployment Toolkit (MDT) and System Center 2012 R2 Configuration Manager use USMT as part of the operating system deployment process.
 
 **Note**  
-Occasionally, we find that customers are wary of USMT because they believe it requires significant configuration, but, as you will learn below, using USMT is not difficult. If you use MDT and Lite Touch to deploy your machines, the USMT feature is automatically configured and extended so that it is easy to use. With MDT, you do nothing at all and USMT just works.
+Occasionally, we find that customers are wary of USMT because they believe it requires significant configuration, but, as you'll learn below, using USMT isn't difficult. If you use MDT and Lite Touch to deploy your machines, the USMT feature is automatically configured and extended so that it's easy to use. With MDT, you do nothing at all and USMT just works.
 
  
 
