@@ -18,6 +18,14 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
+    - title: K-12 Education Transformation Journey
+      itemType: get-started
+      url: https://edujourney.microsoft.com/k-12/
+    # Card
+    - title: Higher Education Transformation Journey
+      itemType: get-started
+      url: https://edujourney.microsoft.com/hed/
+    # Card
     - title: For developers
       itemType: concept
       url: developers.yml
