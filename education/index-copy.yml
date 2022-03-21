@@ -19,45 +19,18 @@ productDirectory:
     # Card    
     - title: Phase 1 - Cloud deployment
       imageSrc: ./images/EDU-Deploy.svg
-      links:
-        - url: /microsoft-365/education/deploy/create-your-office-365-tenant
-          text: 1. Create your Office 365 tenant
-        - url: /microsoft-365/education/deploy/secure-and-configure-your-network
-          text: 2. Secure and configure your network
-        - url: /microsoft-365/education/deploy/aad-connect-and-adfs
-          text: 3. Sync your active directory
-        - url: /microsoft-365/education/deploy/school-data-sync
-          text: 4. Sync you SIS using School Data Sync
-        - url: /microsoft-365/education/deploy/license-users
-          text: 5. License users
+      summary: Create your Microsoft 365 tenant, secure and configure your environment, sync your active directry and SIS, and license users.
+      url: /microsoft-365/education/deploy/create-your-office-365-tenant
     # Card
     - title: Phase 2 - Device management
       imageSrc: ./images/EDU-Device-Mgmt.svg
-      links:
-        - url: ./windows/index.md
-          text: 1. Get started with Windows 10 for Education
-        - url: /microsoft-365/education/deploy/set-up-windows-10-education-devices
-          text: 2. Set up Windows 10 devices
-        - url: /microsoft-365/education/deploy/intune-for-education
-          text: 3. Get started with Intune for Education
-        - url: /microsoft-365/education/deploy/use-intune-for-education
-          text: 4. Use Intune to manage groups, apps, and settings
-        - url: /intune/enrollment/enrollment-autopilot
-          text: 5. Enroll devices using Windows Autopilot
+      summary: Get started with Windows for Education, set up and enroll devices in Intune.
+      url: ./windows/index.md?bc=/microsoft-365/education/toc.json&toc=/microsoft/education/toc.json
     # Card    
     - title: Phase 3 - Apps management
       imageSrc: ./images/EDU-Apps-Mgmt.svg
-      links:
-        - url: /microsoft-365/education/deploy/configure-admin-settings
-          text: 1. Configure admin settings
-        - url: /microsoft-365/education/deploy/set-up-teams-for-education
-          text: 2. Set up Teams for Education
-        - url: /microsoft-365/education/deploy/deploy-office-365
-          text: 3. Set up Office 365
-        - url: /microsoft-365/education/deploy/microsoft-store-for-education
-          text: 4. Install apps from Microsoft Store for Education
-        - url: /microsoft-365/education/deploy/minecraft-for-education
-          text: 5. Install Minecraft - Education Edition
+      summary: Configure admin settings, set up Teams for Education, install apps and install Minecraft.
+      url: /microsoft-365/education/deploy/configure-admin-settings
     # Card    
     - title: Complete your deployment
       # imageSrc should be square in ratio with no whitespace
