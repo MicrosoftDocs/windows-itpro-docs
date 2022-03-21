@@ -12,6 +12,20 @@ metadata:
   ms.author: v-lamoyn
   ms.date: 10/24/2019
 
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  items:
+    # Card
+    - title: For developers
+      itemType: concept
+      url: developers.yml
+    # Card
+    - title: For partners
+      itemType: overview
+      url: partners.yml
+
 productDirectory:
   title: For IT admins
   summary: This guide is designed for IT admins looking for the simplest way to move their platform to the cloud. It does not capture all the necessary steps for large scale or complex deployments.
