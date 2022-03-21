@@ -47,7 +47,7 @@ productDirectory:
     - title: Phase 2 - Device management
       imageSrc: ./images/EDU-Device-Mgmt.svg
       summary: Get started with Windows for Education, set up and enroll devices in Intune.
-      url: ./windows/index.md?bc=/microsoft-365/education/toc.json&toc=/microsoft/education/toc.json
+      url: /microsoft-365/education/deploy/set-up-windows-10-education-devices
     # Card    
     - title: Phase 3 - Apps management
       imageSrc: ./images/EDU-Apps-Mgmt.svg
