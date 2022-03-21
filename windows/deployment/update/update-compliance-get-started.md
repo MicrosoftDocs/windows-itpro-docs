@@ -7,8 +7,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: deploy
 audience: itpro
-author: jaimeo
-ms.author: jaimeo
+author: aczechowski
+ms.author: aaroncz
 ms.localizationpriority: medium
 ms.collection:
   - M365-analytics

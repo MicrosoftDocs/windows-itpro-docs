@@ -37,6 +37,9 @@ manager: dansimp
     <a href="#search-allowsearchtouselocation">Search/AllowSearchToUseLocation</a>
   </dd>
   <dd>
+    <a href="#search-allowsearchhighlights">Search/AllowSearchHighlights</a>
+  </dd>
+  <dd>
     <a href="#search-allowstoringimagesfromvisionsearch">Search/AllowStoringImagesFromVisionSearch</a>
   </dd>
   <dd>
@@ -53,6 +56,9 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#search-disableremovabledriveindexing">Search/DisableRemovableDriveIndexing</a>
+  </dd>
+  <dd>
+    <a href="#search-disablesearch">Search/DisableSearch</a>
   </dd>
   <dd>
     <a href="#search-donotusewebresults">Search/DoNotUseWebResults</a>
@@ -324,6 +330,63 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
+<a href="" id="search-allowsearchhighlights"></a>**Search/AllowSearchHighlights**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy controls whether search highlights are shown in the search box or in search home.
+
+- If you enable this policy setting, then this setting turns on search highlights in the search box or in the search home.
+- If you disable this policy setting, then this setting turns off search highlights in the search box or in the search home. 
+
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *Allow search and highlights*
+-   GP name: *AllowSearchHighlights*
+-   GP path: *Windows Components/Search*
+-   GP ADMX file name: *Search.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values in Windows 10:
+- Not Configured/ Enabled (default) – Enabling or not configuring this setting turns on search    highlights in the taskbar search box and in search home.
+
+- Disabled – Disabling this setting turns off search highlights in the taskbar search box and in search home.
+
+The following list shows the supported values in Windows 11:
+- Not Configured/ Enabled (default) – Enabling or not configuring this setting turns on search highlights in the start menu search box and in search home.
+
+- Disabled – Disabling this setting turns off search highlights in the start menu search box and in search home.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="search-allowstoringimagesfromvisionsearch"></a>**Search/AllowStoringImagesFromVisionSearch**  
 
 <!--Description-->
@@ -570,6 +633,58 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
+<a href="" id="search-disablesearch"></a>**Search/DisableSearch**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|Yes|
+|Business|No|Yes|
+|Enterprise|No|Yes|
+|Education|No|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting completely disables Search UI and all its entry points such as keyboard shortcuts and touch-pad gestures.
+
+It removes the Search button from the Taskbar and the corresponding option in the Settings. It also disables type-to-search in the Start menu and removes the Start menu's search box.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+
+-   GP Friendly name: *Fully disable Search UI*
+-   GP name: *DisableSearch*
+-   GP path: *Windows Components/Search*
+-   GP ADMX file name: *Search.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – Do not disable search.
+-   1 – Disable search.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+
+<!--Policy-->
 <a href="" id="search-donotusewebresults"></a>**Search/DoNotUseWebResults**  
 
 <!--SupportedSKUs-->
@@ -595,12 +710,13 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Don't search the web or display web results in Search.
+Don't search the web or display web results in Search, or show search highlights in the search box or in search home.
 
-This policy setting allows you to control whether or not Search can perform queries on the web, and if the web results are displayed in Search.
-If you enable this policy setting, queries won't be performed on the web and web results won't be displayed when a user performs a query in Search.
+This policy setting allows you to control whether or not Search can perform queries on the web, if web results are displayed in Search, and if search highlights are shown in the search box and in search home.
 
-If you disable this policy setting, queries will be performed on the web and web results will be displayed when a user performs a query in Search.
+- If you enable this policy setting, queries won't be performed on the web, web results won't be displayed when a user performs a query in Search, and search highlights will not be shown in the search box and in search home.
+
+- If you disable this policy setting, queries will be performed on the web, web results will be displayed when a user performs a query in Search, and search highlights will be shown in the search box and in search home.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -614,8 +730,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 - Not allowed. Queries won't be performed on the web and web results won't be displayed when a user performs a query in Search.
-- 1 (default) - Allowed. Queries will be performed on the web and web results will be displayed when a user performs a query in Search.
+- 0 - Not allowed. Queries won't be performed on the web, web results won't be displayed when a user performs a query in Search, and search highlights won't be shown in the search box and in search home.
+- 1 (default) - Allowed. Queries will be performed on the web, web results will be displayed when a user performs a query in Search, and search highlights will be shown in the search box and in search home.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -700,7 +816,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-If enabled, clients will be unable to query this computer's index remotely. Thus, when they are browsing network shares that are stored on this computer, they will not search them using the index. If disabled, client search requests will use this computer's index..
+If enabled, clients will be unable to query this computer's index remotely. Thus, when they are browsing network shares that are stored on this computer, they will not search them using the index. If disabled, client search requests will use this computer's index.
 
 <!--/Description-->
 <!--ADMXMapped-->

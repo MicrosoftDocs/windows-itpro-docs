@@ -4,11 +4,11 @@ description: In this article, learn about some common issues you might experienc
 ms.prod: w10
 ms.mktglfcycl: 
 audience: itpro
-itproauthor: jaimeo
 ms.audience: itpro
-author: jaimeo
-ms.reviewer: kaushika
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
+ms.reviewer: kaushika
 ms.topic: troubleshooting
 ms.custom: seo-marvel-apr2020
 ms.collection: highpri

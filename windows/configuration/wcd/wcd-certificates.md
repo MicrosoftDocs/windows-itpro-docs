@@ -4,13 +4,13 @@ description: This section describes the Certificates settings that you can confi
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.topic: article
 ms.date: 09/06/2017
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # Certificates (Windows Configuration Designer reference)
