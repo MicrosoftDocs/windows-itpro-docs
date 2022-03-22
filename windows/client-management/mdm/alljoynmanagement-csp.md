@@ -14,17 +14,14 @@ ms.date: 06/26/2017
 
 # AllJoynManagement CSP
 
-
-The AllJoynManagement configuration service provider (CSP) allows an IT administrator to enumerate the AllJoyn devices that are connected to the AllJoyn bus. The devices must support the Microsoft AllJoyn configuration interface (com.microsoft.alljoynmanagement.config). You can also push configuration files to the same devices. To populate the various nodes when setting new configuration, we recommend that you do a query first, to get the actual values for all the nodes in all the attached devices. You can then use the information from the query to set the node values when pushing the new configuration.
+The AllJoynManagement configuration service provider (CSP) allows an IT administrator to enumerate the AllJoyn devices that are connected to the AllJoyn bus. The devices must support the Microsoft AllJoyn configuration interface (`com.microsoft.alljoynmanagement.config`). You can also push configuration files to the same devices. To populate the various nodes when setting new configuration, we recommend that you do a query first, to get the actual values for all the nodes in all the attached devices. You can then use the information from the query to set the node values when pushing the new configuration.
 
 > [!NOTE]
 > The AllJoynManagement configuration service provider (CSP) is only supported in Windows 10 IoT Core (IoT Core).
 
-This CSP was added in Windows 10, version 1511.
+This CSP was added in Windows 10, version 1511, and later.
 
- 
-
-For the firewall settings, note that PublicProfile and PrivateProfile are mutually exclusive. The Private Profile must be set on the directly on the device itself, and the only supported operation is Get. For PublicProfile, both Add and Get are supported. This CSP is intended to be used in conjunction with the AllJoyn Device System Bridge, and an understanding of the bridge will help when determining when and how to use this CSP. For more information, see [Device System Bridge (DSB) Project](https://go.microsoft.com/fwlink/p/?LinkId=615876) and [AllJoyn Device System Bridge](https://go.microsoft.com/fwlink/p/?LinkId=615877).
+For the firewall settings, note that PublicProfile and PrivateProfile are mutually exclusive. The Private Profile must be set directly on the device itself, and the only supported operation is Get. For PublicProfile, both Add and Get are supported. This CSP is intended to be used in conjunction with the AllJoyn Device System Bridge, and an understanding of the bridge will help when determining when and how to use this CSP. For more information, see [Device System Bridge (DSB) Project](https://go.microsoft.com/fwlink/p/?LinkId=615876) and [AllJoyn Device System Bridge](https://go.microsoft.com/fwlink/p/?LinkId=615877).
 
 The following shows the AllJoynManagement configuration service provider in tree format
 
@@ -64,7 +61,7 @@ The following list describes the characteristics and parameters.
 The root node for the AllJoynManagement configuration service provider.
 
 <a href="" id="services"></a>**Services**
-List of all AllJoyn objects that are discovered on the AllJoyn bus. All AllJoyn objects that expose the "com.microsoft.alljoynmanagement.config" are included.
+List of all AllJoyn objects that are discovered on the AllJoyn bus. All AllJoyn objects that expose the "`com.microsoft.alljoynmanagement.config`" are included.
 
 <a href="" id="services-node-name"></a>**Services/**<strong>*Node name*</strong>
 The unique AllJoyn device ID (a GUID) that hosts one or more configurable objects.
@@ -81,7 +78,7 @@ The set of configurable interfaces that are available on the port of the AllJoyn
 <a href="" id="services-node-name-port-node-name-cfgobject-node-name"></a>**Services/*Node name*/Port/*Node name*/CfgObject/**<strong>*Node name*</strong>
 The remainder of this URI is an escaped path to the configurable AllJoyn object hosted by the parent ServiceID and accessible by the parent PortNum.
 
-For example an AllJoyn Bridge with the Microsoft specific AllJoyn configuration interface "\\FabrikamService\\BridgeConfig" would be specified in the URI as: %2FFabrikamService%2FBridgeConfig.
+For example an AllJoyn Bridge with the Microsoft specific AllJoyn configuration interface "`\\FabrikamService\\BridgeConfig`" would be specified in the URI as: `%2FFabrikamService%2FBridgeConfig`.
 
 <a href="" id="credentials"></a>**Credentials**
 This is the credential store. An administrator can set credentials for each AllJoyn device that requires authentication at this node.
@@ -89,7 +86,7 @@ This is the credential store. An administrator can set credentials for each AllJ
 When a SyncML request arrives in the CSP to replace or query a configuration item on an AllJoyn object that requires authentication, then the CSP uses the credentials stored here during the authentication phase.
 
 <a href="" id="credentials-node-name"></a>**Credentials/**<strong>*Node name*</strong>
-This is the same service ID specified in \\AllJoynManagement\\Services\\ServiceID URI. It is typically implemented as a GUID.
+This is the same service ID specified in `\\AllJoynManagement\\Services\\ServiceID` URI. It is typically implemented as a GUID.
 
 <a href="" id="credentials-node-name-key"></a>**Credentials/*Node name*/Key**
 An alphanumeric key value that conforms to the AllJoyn SRP KEYX authentication standard.
@@ -104,7 +101,6 @@ Boolean value to enable or disable the AllJoyn router service (AJRouter.dll) for
 Boolean value indicating whether AllJoyn router service (AJRouter.dll) is enabled for private network profile.
 
 ## Examples
-
 
 Set adapter configuration
 
@@ -128,7 +124,10 @@ SyncML xmlns="SYNCML:SYNCML1.2">
 </SyncML>
 ```
 
-You should replace \_ALLJOYN\_DEVICE\_ID\_ with an actual device ID. Note that the data is base-64 encoded representation of the configuration file that you are setting.
+You should replace \_ALLJOYN\_DEVICE\_ID\_ with an actual device ID.
+
+>[!Note]
+> The data is base-64 encoded representation of the configuration file that you are setting.
 
 Get PIN data
 
