@@ -114,7 +114,10 @@ The MDM vendor must first register the application in their home tenant and mark
 > [!NOTE]
 > For the MDM provider, if you don't have an existing Azure AD tentant with an Azure AD subscription that you manage, follow the step-by-step guide in [Add an Azure AD tenant and Azure AD subscription](add-an-azure-ad-tenant-and-azure-ad-subscription.md) to set up a tenant, add a subscription, and manage it via the Azure Portal.
 
-The MDM application uses keys to request access tokens from Azure AD. These keys are managed within the tenant of the MDM provider and not visible to individual customers. The same key is used by the multi-tenant MDM application to authenticate itself with Azure AD, whatever the customer tenent the managed device belongs.
+The MDM application uses keys to request access tokens from Azure AD. These keys are managed within the tenant of the MDM provider and not visible to individual customers. The same key is used by the multi-tenant MDM application to authenticate itself with Azure AD, whatever the customer tenant the managed device belongs.
+
+> [!NOTE]
+> All MDM apps must implement AAD V2 tokens before we certify that integration works. Due to changes in AAD app platform, it is a hard requirement. More info is available in [Microsoft identity platform access tokens](https://docs.microsoft.com/en-us/azure/active-directory/develop/access-tokens#token-formats-and-ownership).
 
 Use the following steps to register a cloud-based MDM application with Azure AD. At this time, you need to work with the Azure AD engineering team to expose this application through the Azure AD app gallery.
 
