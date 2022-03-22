@@ -26,7 +26,7 @@ In this article we explain:
 
 1. File Rule Precedence Order
 2. Adding Allow Rules
-3. Singe Policy Considerations
+3. Single Policy Considerations
 4. Multiple Policy Considerations
 5. Best Practices
 6. Tutorial
