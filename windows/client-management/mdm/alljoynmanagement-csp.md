@@ -19,7 +19,7 @@ The AllJoynManagement configuration service provider (CSP) allows an IT administ
 > [!NOTE]
 > The AllJoynManagement configuration service provider (CSP) is only supported in Windows 10 IoT Core (IoT Core).
 
-This CSP was added in Windows 10, version 1511, and later.
+This CSP was added in Windows 10, version 1511.
 
 For the firewall settings, note that PublicProfile and PrivateProfile are mutually exclusive. The Private Profile must be set directly on the device itself, and the only supported operation is Get. For PublicProfile, both Add and Get are supported. This CSP is intended to be used in conjunction with the AllJoyn Device System Bridge, and an understanding of the bridge will help when determining when and how to use this CSP. For more information, see [Device System Bridge (DSB) Project](https://go.microsoft.com/fwlink/p/?LinkId=615876) and [AllJoyn Device System Bridge](https://go.microsoft.com/fwlink/p/?LinkId=615877).
 
