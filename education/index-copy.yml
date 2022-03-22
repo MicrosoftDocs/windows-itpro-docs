@@ -32,18 +32,11 @@ productDirectory:
       summary: Configure admin settings, set up Teams for Education, install apps and install Minecraft.
       url: /microsoft-365/education/deploy/configure-admin-settings
     # Card    
-    - title: Complete your deployment
+    - title: Phase 4 - Complete your deployment
       # imageSrc should be square in ratio with no whitespace
       imageSrc: ./images/EDU-Tasks.svg
-      links:
-        - url: /microsoft-365/education/deploy/deploy-exchange-online
-          text: Deploy Exchange Online
-        - url: /microsoft-365/education/deploy/deploy-sharepoint-online-and-onedrive
-          text: Deploy SharePoint Online and OneDrive
-        - url: /microsoft-365/education/deploy/deploy-exchange-server-hybrid
-          text: Deploy Exchange Server hybrid
-        - url: /microsoft-365/education/deploy/deploy-sharepoint-server-hybrid
-          text: Deploy SharePoint Server Hybrid
+      summary: Configure settings for Exchange and SharePoint.
+      url: /microsoft-365/education/deploy/deploy-exchange-online
     # Card
     - title: Security & compliance
       imageSrc: ./images/EDU-Lockbox.svg
@@ -69,13 +62,17 @@ productDirectory:
         - url: /dynamics365/#pivot=get-started
           text: Dynamics 365
     # Card    
-    - title: Find deployment help
-      imageSrc: ./images/EDU-FindHelp.svg
+    - title: Find deployment help and other support resources
+      imageSrc: ./images/EDU-Teachers.svg
       links:
         - url: /microsoft-365/education/deploy/find-deployment-help
           text: IT admin help
         - url: https://social.technet.microsoft.com/forums/en-us/home
           text: TechNet
+        - url: https://support.office.com/en-us/education
+          text: Education help center
+        - url: https://support.office.com/en-us/article/teacher-training-packs-7a9ee74a-8fe5-43d3-bc23-a55185896921
+          text: Teacher training packs
     # Card    
     - title: Check out our education journey
       imageSrc: ./images/EDU-ITJourney.svg
@@ -84,14 +81,6 @@ productDirectory:
           text: K-12
         - url: https://edujourney.microsoft.com/hed/
           text: Higher education
-    # Card    
-    - title: Additional support resources
-      imageSrc: ./images/EDU-Teachers.svg
-      links:
-        - url: https://support.office.com/en-us/education
-          text: Education help center
-        - url: https://support.office.com/en-us/article/teacher-training-packs-7a9ee74a-8fe5-43d3-bc23-a55185896921
-          text: Teacher training packs
 
 additionalContent:
   sections:
