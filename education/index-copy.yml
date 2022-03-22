@@ -2,6 +2,8 @@
 
 title: Microsoft 365 Education Documentation
 summary: Microsoft 365 Education empowers educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education.
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: m365
 
 metadata:
   title: Microsoft 365 Education Documentation
