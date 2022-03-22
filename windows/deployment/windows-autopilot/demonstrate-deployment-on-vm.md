@@ -814,9 +814,9 @@ At this point, you have completed steps to add a Win32 app to Intune.
 
 For more information on adding apps to Intune, see [Intune Standalone - Win32 app management](/intune/apps-win32-app-management).
 
-### Add Office 365
+### Add Microsoft 365 Apps
 
-#### Create app in Intune
+#### Create app in Microsoft Endpoint Manager
 
 Log in to the Azure portal and select **Intune**.
 
@@ -824,7 +824,7 @@ Go to **Intune > Clients apps > Apps**, and then select the **Add** button to cr
 
 ![Create app step 1.](images/app17.png)
 
-Under **App Type**, select **Office 365 Suite > Windows 10**:
+Under **App Type**, select **Microsoft 365 Apps > Windows 10 and later**:
 
 ![Create app step 2.](images/app18.png)
 
