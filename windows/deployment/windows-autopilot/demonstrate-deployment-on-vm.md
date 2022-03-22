@@ -508,7 +508,7 @@ Select **Next** to continue with the **Out-of-box experience (OOBE)** settings:
 | Privacy Settings | Hide |
 | Hide change account options | Hide |
 | User account type | Standard |
-| Allow White Glove OOBE | No |
+| Allow pre-provisioned deployment | No |
 | Language (Region) | Operating system default |
 | Automatically configure keyboard | Yes |
 | Apply device name template | No |
