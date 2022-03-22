@@ -9,9 +9,9 @@ ms.mktglfcycl:
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: cabailey
-ms.author: cabailey
-manager: laurawi
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
