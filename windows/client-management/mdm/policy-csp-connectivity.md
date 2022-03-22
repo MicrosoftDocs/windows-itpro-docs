@@ -649,7 +649,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to `<http://www.msftconnecttest.com/connecttest.txt>` to determine if the device can communicate with the Internet.  This policy disables the NCSI active probe, preventing network connectivity to www.msftconnecttest.com.
+Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to `<http://www.msftconnecttest.com/connecttest.txt>` to determine if the device can communicate with the Internet.  This policy disables the NCSI active probe, preventing network connectivity to `www.msftconnecttest.com`.
 
 Value type is integer.
 
