@@ -2862,7 +2862,7 @@ If you do not configure this policy setting, no audit event is generated when an
 > [!Note]
 > Only the System Access Control List (SACL) for SAM_SERVER can be modified.
 
-Volume: High on domain controllers. For information about reducing the amount of events generated in this subcategory, see [article 841001 in the Microsoft Knowledge Base](https://go.microsoft.com/fwlink/?LinkId=121698).
+Volume: High on domain controllers.
 
 <!--/Description-->
 <!--DbMapped-->
