@@ -81,7 +81,7 @@ productDirectory:
         - url: /cloud-app-security/getting-started-with-cloud-app-security
           text: Microsoft Defender for Cloud Apps
         - url: /microsoft-365/compliance/create-test-tune-dlp-policy
-          text: Office 365 data loss prevention
+          text: Microsoft Purview data loss prevention
         - url: /microsoft-365/compliance/
           text: Office 365 advanced compliance
         - url: https://social.technet.microsoft.com/wiki/contents/articles/35748.office-365-what-is-customer-lockbox-and-how-to-enable-it.aspx
