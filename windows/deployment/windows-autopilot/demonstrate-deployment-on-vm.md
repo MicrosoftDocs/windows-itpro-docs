@@ -88,7 +88,7 @@ If you already have Hyper-V and a Windows 10 VM, you can skip directly to the [C
     - [Prepare the app for Intune](#prepare-the-app-for-intune)
     - [Create app in Intune](#create-app-in-intune)
     - [Assign the app to your Intune profile](#assign-the-app-to-your-intune-profile)
-  - [Add Office 365](#add-office-365)
+  - [Add Office 365](#add-microsoft-365-apps)
     - [Create app in Intune](#create-app-in-intune)
     - [Assign the app to your Intune profile](#assign-the-app-to-your-intune-profile)
 - [Glossary](#glossary)
