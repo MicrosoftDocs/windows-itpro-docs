@@ -1,5 +1,5 @@
 ---
-title: APPLICATION configuration service provider
+title: APPLICATION CSP
 description: Learn how the APPLICATION configuration service provider is used to configure an application transport using Open Mobile Alliance (OMA) Client Provisioning.
 ms.assetid: 0705b5e9-a1e7-4d70-a73d-7f758ffd8099
 ms.reviewer: 
@@ -12,13 +12,9 @@ author: dansimp
 ms.date: 06/26/2017
 ---
 
-# APPLICATION configuration service provider
+# APPLICATION CSP
 
-The APPLICATION configuration service provider is used to configure an application transport using Open Mobile Alliance (OMA) Client Provisioning.
-
-OMA considers each transport to be an application and requires a corresponding APPLICATION configuration service provider.
-
-The following table shows the applicability of Windows:
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -27,6 +23,10 @@ The following table shows the applicability of Windows:
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
+
+The APPLICATION configuration service provider is used to configure an application transport using Open Mobile Alliance (OMA) Client Provisioning.
+
+OMA considers each transport to be an application and requires a corresponding APPLICATION configuration service provider.
 
 The following list shows the supported transports:
 

@@ -11,8 +11,17 @@ ms.reviewer:
 manager: dansimp
 ---
 
-# Accounts Configuration Service Provider 
+# Accounts CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 The Accounts configuration service provider (CSP) is used by the enterprise (1) to rename a device, (2) to create a new local Windows account and join it to a local user group. This CSP was added in Windows 10, version 1803, and later.
 
@@ -28,16 +37,6 @@ Accounts
 ------------Password
 ------------LocalUserGroup
 ```
-
-The following table shows the applicability of Windows:
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
 
 <a href="" id="accounts"></a>**./Device/Vendor/MSFT/Accounts**  
 Root node.
@@ -72,9 +71,13 @@ This node specifies the username for a new local user account. This setting can 
 <a href="" id="users-username-password"></a>**Users/_UserName_/Password**  
 This node specifies the password for a new local user account. This setting can be managed remotely.
 
-Supported operation is Add. GET operation is not supported. This setting will report as failed when deployed from the Endpoint Manager.
+Supported operation is Add. GET operation isn't supported. This setting will report as failed when deployed from the Endpoint Manager.
 
 <a href="" id="users-username-localusergroup"></a>**Users/_UserName_/LocalUserGroup**  
-This optional node specifies the local user group that a local user account should be joined to. If the node is not set, the new local user account is joined just to the Standard Users group. Set the value to 2 for Administrators group. This setting can be managed remotely.
+This optional node specifies the local user group that a local user account should be joined to. If the node isn't set, the new local user account is joined just to the Standard Users group. Set the value to 2 for Administrators group. This setting can be managed remotely.
 
 Supported operation is Add.
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)

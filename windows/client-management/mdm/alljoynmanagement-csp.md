@@ -21,7 +21,7 @@ The AllJoynManagement configuration service provider (CSP) allows an IT administ
 
 This CSP was added in Windows 10, version 1511.
 
-For the firewall settings, note that PublicProfile and PrivateProfile are mutually exclusive. The Private Profile must be set directly on the device itself, and the only supported operation is Get. For PublicProfile, both Add and Get are supported. This CSP is intended to be used in conjunction with the AllJoyn Device System Bridge, and an understanding of the bridge will help when determining when and how to use this CSP. For more information, see [Device System Bridge (DSB) Project](https://go.microsoft.com/fwlink/p/?LinkId=615876) and [AllJoyn Device System Bridge](https://go.microsoft.com/fwlink/p/?LinkId=615877).
+For the firewall settings, note that PublicProfile and PrivateProfile are mutually exclusive. The Private Profile must be set directly on the device itself, and the only supported operation is Get. For PublicProfile, both Add and Get are supported. This CSP is intended to be used with the AllJoyn Device System Bridge, and an understanding of the bridge will help when determining when and how to use this CSP. For more information, see [Device System Bridge (DSB) Project](https://go.microsoft.com/fwlink/p/?LinkId=615876) and [AllJoyn Device System Bridge](https://go.microsoft.com/fwlink/p/?LinkId=615877).
 
 The following shows the AllJoynManagement configuration service provider in tree format
 
@@ -67,7 +67,7 @@ List of all AllJoyn objects that are discovered on the AllJoyn bus. All AllJoyn 
 The unique AllJoyn device ID (a GUID) that hosts one or more configurable objects.
 
 <a href="" id="services-node-name-port"></a>**Services/*Node name*/Port**
-The set of ports that the AllJoyn object uses to communicate configuration settings. Typically only one port is used for communication, but it is possible to specify additional ports.
+The set of ports that the AllJoyn object uses to communicate configuration settings. Typically only one port is used for communication, but it's possible to specify additional ports.
 
 <a href="" id="services-node-name-port-node-name"></a>**Services/*Node name*/Port/**<strong>*Node name*</strong>
 Port number used for communication. This is specified by the configurable AllJoyn object and reflected here.
@@ -86,7 +86,7 @@ This is the credential store. An administrator can set credentials for each AllJ
 When a SyncML request arrives in the CSP to replace or query a configuration item on an AllJoyn object that requires authentication, then the CSP uses the credentials stored here during the authentication phase.
 
 <a href="" id="credentials-node-name"></a>**Credentials/**<strong>*Node name*</strong>
-This is the same service ID specified in `\\AllJoynManagement\\Services\\ServiceID` URI. It is typically implemented as a GUID.
+This is the same service ID specified in `\\AllJoynManagement\\Services\\ServiceID` URI. It's typically implemented as a GUID.
 
 <a href="" id="credentials-node-name-key"></a>**Credentials/*Node name*/Key**
 An alphanumeric key value that conforms to the AllJoyn SRP KEYX authentication standard.
@@ -166,7 +166,9 @@ Get the firewall PrivateProfile
 </SyncML>
 ```
 
- 
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)
 
  
 

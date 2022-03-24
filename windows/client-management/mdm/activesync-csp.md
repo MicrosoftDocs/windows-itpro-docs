@@ -14,6 +14,16 @@ ms.date: 06/26/2017
 
 # ActiveSync CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 The ActiveSync configuration service provider is used to set up and change settings for Exchange ActiveSync. After an Exchange account has been updated over-the-air by the ActiveSync configuration service provider, the device must be powered off and then powered back on to see sync status.
 
 Configuring Windows Live ActiveSync accounts through this configuration service provider is not supported.
@@ -58,16 +68,6 @@ ActiveSync
 ----------------MaxMailAgeFilter
 
 ```
-
-The following table shows the applicability of Windows:
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
 
 <a href="" id="--user-vendor-msft-activesync"></a>**./User/Vendor/MSFT/ActiveSync**  
 The root node for the ActiveSync configuration service provider.
