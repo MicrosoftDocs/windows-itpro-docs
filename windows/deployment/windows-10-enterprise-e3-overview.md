@@ -132,7 +132,7 @@ Now that the devices have Windows 10/11 Enterprise, you can implement Device Gu
 
 For more information about implementing Device Guard, see:
 
-- [Planning and getting started on the Device Guard deployment process](https://technet.microsoft.com/itpro/windows/keep-secure/planning-and-getting-started-on-the-device-guard-deployment-process)
+- [Windows Defender Application Control and virtualization-based protection of code integrity](/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
 - [Device Guard deployment guide](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)
 
 ### AppLocker management
