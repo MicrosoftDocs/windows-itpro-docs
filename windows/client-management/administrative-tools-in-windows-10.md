@@ -49,7 +49,7 @@ These tools were included in previous versions of Windows. The associated docume
 -   [Registry Editor](/windows/win32/sysinfo/registry)
 -   [Resource Monitor](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd883276(v=ws.10))
 -   [Services](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772408(v=ws.11))
--   [System Configuration](https://go.microsoft.com/fwlink/p/?LinkId=708499)
+-   [System Configuration](/troubleshoot/windows-client/performance/system-configuration-utility-troubleshoot-configuration-errors)
 -   [System Information]( https://go.microsoft.com/fwlink/p/?LinkId=708500)
 -   [Task Scheduler](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc766428(v=ws.11))
 -   [Windows Firewall with Advanced Security](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754274(v=ws.11))
