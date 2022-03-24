@@ -109,7 +109,3 @@ If you do not have a code signing certificate, see [Optional: Create a code sign
 
 > [!NOTE]
 > The device with the signed policy must be rebooted one time with Secure Boot enabled for the UEFI lock to be set. 
-
-## Disable unsigned Windows Defender Application Control policies
-
-For information regarding Event ID 3099 Options, see [Understanding Application Control events](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/event-id-explanations#event-id-3099-options).
