@@ -103,14 +103,13 @@ For a simple solution for converting hex to binary, follow these steps.
 - Click Programmer mode
 - Click HEX  :::image type="content" source="images/hex-icon.png" alt-text="HEX icon example":::
 - Enter your hex code
-- Click BIN  :::image type="content" source="images/bin-icon.png" alt-text="BIN icon example":::
 - Click Bit Toggling Keyboard :::image type="content" source="images/bit-toggling-keyboard-icon.png" alt-text="Bit Toggling Keyboard icon example":::
 
 :::image type="content" source="images/calculator-with-hex-in-binary.png" alt-text="An example of the calculator app in programmer mode, with a hex code converted into binary":::
 
-This view will provide the hex code in binary form, with each bit address shown separately.  The bit addresses start at 0 in the bottom right, and then climb to 63 in the top left.  Each bit address correlates to a specific event policy-rule option.  If the bit address holds a value of 1, it is enabled, if it is a 0, it is disabled.
+This view will provide the hex code in binary form, with each bit address shown separately.  The bit addresses start at 0 in the bottom right.  Each bit address correlates to a specific event policy-rule option.  If the bit address holds a value of 1, the setting is in the policy.
 
-Next, use the bit addresses and their values from the table below to determine the state of each [policy rule-option](/select-types-of-rules-to-create#table-1-windows-defender-application-control-policy---rule-options). For example, if the bit address of 17 holds a value of 1, then the policy of “Disabled:Flight Signing” is activated.
+Next, use the bit addresses and their values from the table below to determine the state of each [policy rule-option](/select-types-of-rules-to-create#table-1-windows-defender-application-control-policy---rule-options). For example, if the bit address of 16 holds a value of 1, then the “Enabled:Audit Mode (Default)” is in the policy meaning the policy is in audit mode.
 
 | Bit Address | Policy Rule Option |
 |-------|------|
