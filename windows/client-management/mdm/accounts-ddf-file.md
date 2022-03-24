@@ -11,8 +11,7 @@ ms.reviewer:
 manager: dansimp
 ---
 
-# Accounts CSP 
-
+# Accounts DDF file
 
 This topic shows the OMA DM device description framework (DDF) for the **Accounts** configuration service provider.
 
