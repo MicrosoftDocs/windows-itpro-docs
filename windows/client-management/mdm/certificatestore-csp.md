@@ -30,7 +30,7 @@ The CertificateStore configuration service provider is used to add secure socket
 > The CertificateStore configuration service provider does not support installing client certificates.
 > The Microsoft protocol version of Open Mobile Alliance (OMA) is case insensitive.
 
-For the CertificateStore CSP, you cannot use the Replace command, unless the node already exists.
+For the CertificateStore CSP, you can't use the Replace command, unless the node already exists.
 
 The following shows the CertificateStore configuration service provider management object in tree format as used by both Open Mobile Alliance Device Management (OMA DM) and OMA Client Provisioning.
 
@@ -131,7 +131,7 @@ Supported operation is Get.
 > CA/System is case sensitive. Please use the RootCATrustedCertificates CSP moving forward for installing CA certificates.
 
 <a href="" id="my-user"></a>**My/User**  
-Defines the certificate store that contains public keys for client certificates. This is only used by enterprise servers to push down the public key of a client certificate. The client certificate is used by the device client to authenticate itself to the enterprise server for device management and downloading enterprise applications.
+Defines the certificate store that contains public keys for client certificates. It is only used by enterprise servers to push down the public key of a client certificate. The client certificate is used by the device client to authenticate itself to the enterprise server for device management and downloading enterprise applications.
 
 Supported operation is Get.
 
@@ -139,7 +139,7 @@ Supported operation is Get.
 > My/User is case sensitive.
 
 <a href="" id="my-system"></a>**My/System**  
-Defines the certificate store that contains public key for client certificate. This is only used by enterprise server to push down the public key of the client cert. The client cert is used by the device to authenticate itself to the enterprise server for device management and enterprise app downloading.
+Defines the certificate store that contains public key for client certificate. It is only used by enterprise server to push down the public key of the client cert. The client cert is used by the device to authenticate itself to the enterprise server for device management and enterprise app downloading.
 
 Supported operation is Get.
 
@@ -371,7 +371,7 @@ Optional. Specifies the URL of certificate renewal server. If this node doesn't 
 Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="my-wstep-renew-renewalperiod"></a>**My/WSTEP/Renew/RenewalPeriod**  
-Optional. specifies the time (in days) to trigger the client to initiate the MDM client certificate renew process before the MDM certificate expires. The MDM server cannot set and update the renewal period. This parameter applies to both manual certificate renewal and request on behalf of (ROBO) certificate renewal. It's recommended that the renew period is set a couple of months before the certificate expires to ensure that the certificate gets renewed successfully with data connectivity.
+Optional. specifies the time (in days) to trigger the client to initiate the MDM client certificate renew process before the MDM certificate expires. The MDM server can't set and update the renewal period. This parameter applies to both manual certificate renewal and request on behalf of (ROBO) certificate renewal. It's recommended that the renew period is set a couple of months before the certificate expires to ensure that the certificate gets renewed successfully with data connectivity.
 
 The default value is 42 and the valid values are 1 – 1000. Value type is an integer.
 

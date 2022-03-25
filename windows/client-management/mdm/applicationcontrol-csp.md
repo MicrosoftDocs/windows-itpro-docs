@@ -23,7 +23,7 @@ The table below shows the applicability of Windows:
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
-Windows Defender Application Control (WDAC) policies can be managed from an MDM server, or locally by using PowerShell via the WMI Bridge through the ApplicationControl configuration service provider (CSP). The ApplicationControl CSP was added in Windows 10, version 1903. This CSP provides expanded diagnostic capabilities and support for [multiple policies](/windows/security/threat-protection/windows-defender-application-control/deploy-multiple-windows-defender-application-control-policies) (introduced in Windows 10, version 1903). It also provides support for rebootless policy deployment (introduced in Windows 10, version 1709). Unlike the [AppLocker CSP](applocker-csp.md), the ApplicationControl CSP correctly detects the presence of no-reboot option and consequently does not schedule a reboot.
+Windows Defender Application Control (WDAC) policies can be managed from an MDM server, or locally by using PowerShell via the WMI Bridge through the ApplicationControl configuration service provider (CSP). The ApplicationControl CSP was added in Windows 10, version 1903. This CSP provides expanded diagnostic capabilities and support for [multiple policies](/windows/security/threat-protection/windows-defender-application-control/deploy-multiple-windows-defender-application-control-policies) (introduced in Windows 10, version 1903). It also provides support for rebootless policy deployment (introduced in Windows 10, version 1709). Unlike the [AppLocker CSP](applocker-csp.md), the ApplicationControl CSP correctly detects the presence of no-reboot option and consequently doesn't schedule a reboot.
 
 Existing WDAC policies deployed using the AppLocker CSP's CodeIntegrity node can now be deployed using the ApplicationControl CSP URI. Although WDAC policy deployment via the AppLocker CSP will continue to be supported, all new feature work will be done in the ApplicationControl CSP only.
 
@@ -92,14 +92,14 @@ Scope is dynamic. Supported operation is Get.
 Value type is char.
 
 <a href="" id="applicationcontrol-policies-policyguid-policyinfo-iseffective"></a>**ApplicationControl/Policies/_Policy GUID_/PolicyInfo/IsEffective**  
-This node specifies whether a policy is actually loaded by the enforcement engine and is in effect on a system.
+This node specifies whether a policy is loaded by the enforcement engine and is in effect on a system.
 
 Scope is dynamic. Supported operation is Get.
 
 Value type is bool. Supported values are as follows:
 
-- True — Indicates that the policy is actually loaded by the enforcement engine and is in effect on a system.
-- False — Indicates that the policy is not loaded by the enforcement engine and is not in effect on a system. This is the default.
+- True—Indicates that the policy is loaded by the enforcement engine and is in effect on a system.
+- False—Indicates that the policy isn't loaded by the enforcement engine and isn't in effect on a system. This is the default.
 
 <a href="" id="applicationcontrol-policies-policyguid-policyinfo-isdeployed"></a>**ApplicationControl/Policies/_Policy GUID_/PolicyInfo/IsDeployed**  
 This node specifies whether a policy is deployed on the system and is present on the physical machine.
@@ -108,18 +108,18 @@ Scope is dynamic. Supported operation is Get.
 
 Value type is bool. Supported values are as follows:
 
-- True — Indicates that the policy is deployed on the system and is present on the physical machine.
-- False — Indicates that the policy is not deployed on the system and is not present on the physical machine. This is the default.
+- True—Indicates that the policy is deployed on the system and is present on the physical machine.
+- False—Indicates that the policy isn't deployed on the system and isn't present on the physical machine. This is the default.
 
 <a href="" id="applicationcontrol-policies-policyguid-policyinfo-isauthorized"></a>**ApplicationControl/Policies/_Policy GUID_/PolicyInfo/IsAuthorized**  
-This node specifies whether the policy is authorized to be loaded by the enforcement engine on the system. If not authorized, a policy cannot take effect on the system.
+This node specifies whether the policy is authorized to be loaded by the enforcement engine on the system. If not authorized, a policy can't take effect on the system.
 
 Scope is dynamic. Supported operation is Get.
 
 Value type is bool. Supported values are as follows:
 
-- True — Indicates that the policy is authorized to be loaded by the enforcement engine on the system.
-- False — Indicates that the policy is not authorized to be loaded by the enforcement engine on the system. This is the default.
+- True—Indicates that the policy is authorized to be loaded by the enforcement engine on the system.
+- False—Indicates that the policy is not authorized to be loaded by the enforcement engine on the system. This is the default.
 
 The following table provides the result of this policy based on different values of IsAuthorized, IsDeployed, and IsEffective nodes:
 
@@ -156,7 +156,7 @@ For customers using Intune standalone or hybrid management with Microsoft Endpoi
 
 ## Generic MDM Server Usage Guidance
 
-In order to leverage the ApplicationControl CSP without using Intune, you must:
+In order to use the ApplicationControl CSP without using Intune, you must:
 
 1. Know a generated policy's GUID, which can be found in the policy xml as `<PolicyID>` or `<PolicyTypeID>` for pre-1903 systems.
 2. Convert the policies to binary format using the `ConvertFrom-CIPolicy` cmdlet in order to be deployed. The binary policy may be signed or unsigned.
@@ -183,7 +183,7 @@ To deploy base policy and supplemental policies:
 1. Perform an ADD on **./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy** using the Base64-encoded policy node as {Data} with the GUID and policy data for the base policy.
 2. Repeat for each base or supplemental policy (with its own GUID and data).
 
-The following example shows the deployment of two base policies and a supplemental policy (which already specifies the base policy supplements and does'nt need to be reflected in the ADD).
+The following example shows the deployment of two base policies and a supplemental policy (which already specifies the base policy supplements and doesn't need to be reflected in the ADD).
 
 #### Example 1: Add first base policy
 
@@ -301,7 +301,7 @@ The following is an example of Delete command:
 
 ## PowerShell and WMI Bridge Usage Guidance
 
-The ApplicationControl CSP can also be managed locally from PowerShell or via Microsoft Endpoint Manager Configuration Manager's (MEMCM, formerly known as SCCM) task sequence scripting by leveraging the [WMI Bridge Provider](./using-powershell-scripting-with-the-wmi-bridge-provider.md).
+The ApplicationControl CSP can also be managed locally from PowerShell or via Microsoft Endpoint Manager Configuration Manager's (MEMCM, formerly known as SCCM) task sequence scripting by using the [WMI Bridge Provider](./using-powershell-scripting-with-the-wmi-bridge-provider.md).
 
 ### Setup for using the WMI Bridge
 
@@ -317,7 +317,7 @@ The ApplicationControl CSP can also be managed locally from PowerShell or via Mi
 
 ### Deploying a policy via WMI Bridge
 
-Run the following command. PolicyID is a GUID which can be found in the policy xml, and should be used here without braces.
+Run the following command. PolicyID is a GUID, which can be found in the policy xml, and should be used here without braces.
 
 ```powershell
 New-CimInstance -Namespace $namespace -ClassName $policyClassName -Property @{ParentID="./Vendor/MSFT/ApplicationControl/Policies";InstanceID="<PolicyID>";Policy=$policyBase64}
