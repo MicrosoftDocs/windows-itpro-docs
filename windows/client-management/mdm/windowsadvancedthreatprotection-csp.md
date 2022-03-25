@@ -14,6 +14,15 @@ ms.date: 11/01/2017
 
 # WindowsAdvancedThreatProtection CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 The Windows Defender Advanced Threat Protection (WDATP) configuration service provider (CSP) allows IT Admins to onboard, determine configuration and health status, and offboard endpoints for WDATP.
 
@@ -40,101 +49,100 @@ WindowsAdvancedThreatProtection
 The following list describes the characteristics and parameters.
 
 <a href="" id="--device-vendor-msft-windowsadvancedthreatprotection"></a>**./Device/Vendor/MSFT/WindowsAdvancedThreatProtection**  
-<p>The root node for the Windows Defender Advanced Threat Protection configuration service provider.
+The root node for the Windows Defender Advanced Threat Protection configuration service provider.
 
-<p>Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="onboarding"></a>**Onboarding**  
-<p>Sets Windows Defender Advanced Threat Protection Onboarding blob and initiates onboarding to Windows Defender Advanced Threat Protection.
+Sets Windows Defender Advanced Threat Protection Onboarding blob and initiates onboarding to Windows Defender Advanced Threat Protection.
 
-<p>The data type is a string.
+The data type is a string.
 
-<p>Supported operations are Get and Replace.
+Supported operations are Get and Replace.
 
 <a href="" id="healthstate"></a>**HealthState**  
-<p>Node that represents the Windows Defender Advanced Threat Protection health state.
+Node that represents the Windows Defender Advanced Threat Protection health state.
 
 <a href="" id="healthstate-lastconnected"></a>**HealthState/LastConnected**  
-<p>Contains the timestamp of the last successful connection.
+Contains the timestamp of the last successful connection.
 
-<p>Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="healthstate-senseisrunning"></a>**HealthState/SenseIsRunning**  
-<p>Boolean value that identifies the Windows Defender Advanced Threat Protection Sense running state.
+Boolean value that identifies the Windows Defender Advanced Threat Protection Sense running state.
 
-<p>The default value is false.
+The default value is false.
 
-<p>Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="healthstate-onboardingstate"></a>**HealthState/OnboardingState**  
-<p>Represents the onboarding state.
+Represents the onboarding state.
 
-<p>Supported operation is Get.
+Supported operation is Get.
 
-<p>The following list shows the supported values:
+The following list shows the supported values:
 
--   0 (default) – Not onboarded.
--   1 – Onboarded
+- 0 (default) – Not onboarded.
+- 1 – Onboarded
 
 <a href="" id="healthstate-orgid"></a>**HealthState/OrgId**  
-<p>String that represents the OrgID.
+String that represents the OrgID.
 
-<p>Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="configuration"></a>**Configuration**  
-<p>Represents Windows Defender Advanced Threat Protection configuration.
+Represents Windows Defender Advanced Threat Protection configuration.
 
 <a href="" id="configuration-samplesharing"></a>**Configuration/SampleSharing**  
-<p>Returns or sets the Windows Defender Advanced Threat Protection Sample Sharing configuration parameter.
+Returns or sets the Windows Defender Advanced Threat Protection Sample Sharing configuration parameter.
 
-<p>The following list shows the supported values:
+The following list shows the supported values:
 
 -   0 – None
 -   1 (default)– All
 
-<p>Supported operations are Get and Replace.
+Supported operations are Get and Replace.
 
 <a href="" id="configuration-telemetryreportingfrequency"></a>**Configuration/TelemetryReportingFrequency**  
-<p>Added in Windows 10, version 1703. Returns or sets the Windows Defender Advanced Threat Protection diagnostic data reporting frequency. 
+Added in Windows 10, version 1703. Returns or sets the Windows Defender Advanced Threat Protection diagnostic data reporting frequency.
 
-<p>The following list shows the supported values:
+The following list shows the supported values:
 
--   1 (default) – Normal
--   2 - Expedite
+- 1 (default) – Normal
+- 2 - Expedite
 
-<p>Supported operations are Get and Replace.
+Supported operations are Get and Replace.
 
 <a href="" id="offboarding"></a>**Offboarding**  
-<p>Sets the Windows Defender Advanced Threat Protection Offboarding blob and initiates offboarding to Windows Defender Advanced Threat Protection.
+Sets the Windows Defender Advanced Threat Protection Offboarding blob and initiates offboarding to Windows Defender Advanced Threat Protection.
 
-<p>The data type is a string.
+The data type is a string.
 
-<p>Supported operations are Get and Replace.
+Supported operations are Get and Replace.
 
 <a href="" id="devicetagging"></a>**DeviceTagging**  
-<p>Added in Windows 10, version 1709. Represents Windows Defender Advanced Threat Protection configuration for managing role based access and device tagging.
+Added in Windows 10, version 1709. Represents Windows Defender Advanced Threat Protection configuration for managing role based access and device tagging.
 
-<p>Supported operations is Get.
+Supported operations is Get.
 
 <a href="" id="group"></a>**DeviceTagging/Group**  
-<p>Added in Windows 10, version 1709. Device group identifiers.
+Added in Windows 10, version 1709. Device group identifiers.
 
-<p>The data type is a string.
+The data type is a string.
 
-<p>Supported operations are Get and Replace.
+Supported operations are Get and Replace.
 
 <a href="" id="criticality"></a>**DeviceTagging/Criticality**  
-<p>Added in Windows 10, version 1709. Asset criticality value. Supported values:  
+Added in Windows 10, version 1709. Asset criticality value. Supported values:  
 
 - 0 - Normal
 - 1 - Critical
 
-<p>The data type is an integer.
+The data type is an integer.
 
-<p>Supported operations are Get and Replace.
+Supported operations are Get and Replace.
 
 ## Examples
-
 
 ```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
@@ -246,15 +254,4 @@ The following list describes the characteristics and parameters.
 
 ## Related topics
 
-
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-
- 
-
-
-
-
-
-

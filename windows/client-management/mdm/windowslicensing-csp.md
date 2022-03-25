@@ -14,6 +14,16 @@ ms.date: 08/15/2018
 
 # WindowsLicensing CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 > [!WARNING]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
@@ -40,6 +50,7 @@ WindowsLicensing
 --------SwitchFromSMode (Added in Windows 10, version 1809)
 --------Status (Added in Windows 10, version 1809)
 ```
+
 <a href="" id="--device-vendor-msft-windowslicensing"></a>**./Device/Vendor/MSFT/WindowsLicensing**  
 This is the root node for the WindowsLicensing configuration service provider.
 
@@ -51,20 +62,16 @@ Enters a product key for an edition upgrade of Windows 10 desktop devices.
 > [!NOTE]
 > This upgrade process requires a system restart.
 
- 
-
 The date type is a chr.
 
 The supported operation is Exec.
 
-When a product key is pushed from an MDM server to a user's device, **changepk.exe** runs using the product key. After it completes, a notification is shown to the user that a new edition of Windows 10 is available. The user can then restart their system manually or, after two hours, the device will restart automatically to complete the upgrade. The user will receive a reminder notification 10 minutes before the automatic restart.
+When a product key is pushed from an MDM server to a user's device, **changepk.exe** runs using the product key. After it completes, a notification is shown to the user that a new edition of Windows 10 is available. The user can then restart their system manually or after two hours, the device will restart automatically to complete the upgrade. The user will receive a reminder notification 10 minutes before the automatic restart.
 
 After the device restarts, the edition upgrade process completes. The user will receive a notification of the successful upgrade.
 
 > [!IMPORTANT]
 > If another policy requires a system reboot that occurs when **changepk.exe** is running, the edition upgrade will fail.
-
- 
 
 If a product key is entered in a provisioning package and the user begins installation of the package, a notification is shown to the user that their system will restart to complete the package installation. Upon explicit consent from the user to proceed, the package continues installation and **changepk.exe** runs using the product key. The user will receive a reminder notification 30 seconds before the automatic restart.
 
@@ -75,24 +82,22 @@ This node can also be used to activate or change a product key on a particular e
 > [!IMPORTANT]
 > The product key entered must be 29 characters (that is, it should include dashes), otherwise the activation, edition upgrade, or product key change on Windows 10 desktop devices will fail. The product key is acquired from Microsoft Volume Licensing Service Center. Your organization must have a Volume Licensing contract with Microsoft to access the portal.
 
- 
-
 The following are valid edition upgrade paths when using this node through an MDM:
 
--   Windows 10 Enterprise to Windows 10 Education
--   Windows 10 Home to Windows 10 Education
--   Windows 10 Pro to Windows 10 Education
--   Windows 10 Pro to Windows 10 Enterprise
+- Windows 10/Windows 11 Enterprise to Windows 10/ Windows 11 Education
+- Windows 10/Windows 11 Home to Windows 10/Windows 11 Education
+- Windows 10/Windows 11 Pro to Windows 10/Windows 11 Education
+- Windows 10/Windows 11 Pro to Windows 10/Windows 11 Enterprise
 
 Activation or changing a product key can be carried out on the following editions:
 
--   Windows 10 Education
--   Windows 10 Enterprise
--   Windows 10 Home
--   Windows 10 Pro
+- Windows 10/Windows 11 Education
+- Windows 10/Windows 11 Enterprise
+- Windows 10/Windows 11 Home
+- Windows 10/Windows 11 Pro
 
 <a href="" id="edition"></a>**Edition**  
-Returns a value that maps to the Windows 10 edition. Take the value, convert it into its hexadecimal equivalent and search the GetProductInfo function page on MSDN for edition information.
+Returns a value that maps to the Windows 10 or Windows 11 edition. Take the value, convert it into its hexadecimal equivalent and search the GetProductInfo function page on MSDN for edition information.
 
 The data type is an Int.
 
@@ -101,11 +106,11 @@ The supported operation is Get.
 <a href="" id="status"></a>**Status**  
 Returns the status of an edition upgrade on Windows devices. The status corresponds to one of the following values:
 
--   0 = Failed
--   1 = Pending
--   2 = In progress
--   3 = Completed
--   4 = Unknown
+- 0 = Failed
+- 1 = Pending
+- 2 = In progress
+- 3 = Completed
+- 4 = Unknown
 
 The data type is an Int.
 
@@ -136,23 +141,23 @@ The following are valid edition upgrade paths when using this node through an MD
 -->
 
 <a href="" id="licensekeytype"></a>**LicenseKeyType**  
-Returns the parameter type used by Windows 10 devices for an edition upgrade, activation, or product key change.
+Returns the parameter type used by Windows 10 or Windows 11 devices for an edition upgrade, activation, or product key change.
 
-- Windows 10 client devices require a product key.
+- Windows 10 or Windows 11 client devices require a product key.
 
 The data type is a chr.
 
 The supported operation is Get.
 
 <a href="" id="checkapplicability"></a>**CheckApplicability**  
-Returns TRUE if the entered product key can be used for an edition upgrade, activation or changing a product key of Windows 10 for desktop devices.
+Returns TRUE if the entered product key can be used for an edition upgrade, activation or changing a product key of Windows 10 or Windows 11 for desktop devices.
 
 The data type is a chr.
 
 The supported operation is Exec.
 
 <a href="" id="changeproductkey"></a>**ChangeProductKey**  
-Added in Windows 10, version 1703. Installs a product key for Windows 10 desktop devices. Does not reboot.
+Added in Windows 10, version 1703. Installs a product key for Windows 10 or Windows 11 desktop devices. Does not reboot.
 
 The data type is a chr.
 
@@ -184,31 +189,36 @@ Interior node for managing S mode.
 <a href="" id="smode-switchingpolicy"></a>**SMode/SwitchingPolicy**  
 Added in Windows 10, version 1809. Determines whether a consumer can switch the device out of S mode. This setting is only applicable to devices available in S mode. For examples, see [Add S mode SwitchingPolicy](#smode-switchingpolicy-add), [Get S mode SwitchingPolicy](#smode-switchingpolicy-get), [Replace S mode SwitchingPolicy](#smode-switchingpolicy-replace) and [Delete S mode SwitchingPolicy](#smode-switchingpolicy-delete)
 
-Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+Value type is integer.
 
-Supported values:  
--  0 - No Restriction: The user is allowed to switch the device out of S mode.
--  1 - User Blocked: The admin has blocked the user from switching their device out of S mode. Only the admin can switch the device out of S mode through the SMode/SwitchFromSMode node.
+Supported operations are Add, Get, Replace, and Delete.
+
+Supported values:
+  
+- 0 - No Restriction: The user is allowed to switch the device out of S mode.
+- 1 - User Blocked: The admin has blocked the user from switching their device out of S mode. Only the admin can switch the device out of S mode through the SMode/SwitchFromSMode node.
 
 <a href="" id="smode-switchfromsmode"></a>**SMode/SwitchFromSMode**  
 Added in Windows 10, version 1809. Switches a device out of S mode if possible. Does not reboot. For an example, see [Execute SwitchFromSMode](#smode-switchfromsmode-execute)
 
 Supported operation is Execute.
 
-<a href="" id="smode-status"></a>**SMode/Status**   
+<a href="" id="smode-status"></a>**SMode/Status**
 Added in Windows 10, version 1809. Returns the status of the latest SwitchFromSMode set request. For an example, see [Get S mode status](#smode-status-example)
 
-Value type is integer. Supported operation is Get.
+Value type is integer. 
+
+Supported operation is Get.
 
 Values:  
--  Request fails with error code 404 - no SwitchFromSMode request has been made.
--  0 - The device successfully switched out of S mode
--  1 - The device is processing the request to switch out of S mode
--  3 - The device was already switched out of S mode
--  4 - The device failed to switch out of S mode
+
+- Request fails with error code 404 - no SwitchFromSMode request has been made.
+- 0 - The device successfully switched out of S mode.
+- 1 - The device is processing the request to switch out of S mode.
+- 3 - The device was already switched out of S mode.
+- 4 - The device failed to switch out of S mode.
 
 ## SyncML examples
-
 
 **CheckApplicability**
 
@@ -234,8 +244,6 @@ Values:
 
 > [!NOTE]
 > `XXXXX-XXXXX-XXXXX-XXXXX-XXXXX` in the **Data** tag should be replaced with your product key.
-
- 
 
 **Edition**
 

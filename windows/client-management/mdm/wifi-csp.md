@@ -14,6 +14,16 @@ ms.date: 06/18/2019
 
 # WiFi CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 > [!WARNING]
 > Some information relates to pre-released products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
@@ -21,12 +31,12 @@ The WiFi configuration service provider provides the functionality to add or del
 
 Programming considerations:
 
--   If the authentication method needs a certificate, for example, EAP-TLS requires client certificates, you must configure it through the CertificateStore configuration service provider. The WiFi configuration service provider does not provide that functionality; instead, the Wi-Fi profile can specify characteristics of the certificate to be used for choosing the right certificate for that network. The server must successfully enroll the certificate first before deploying the Wi-Fi network configuration. For example, for an EAP-TLS profile, the server must successfully configure and enroll the required client certificate before deploying the Wi-Fi profile. Self-signed certificate works for EAP-TLS/PEAP-MSCHAPv2, but it is not supported in EAP-TLS.
--   For WEP, WPA, and WPA2-based networks, include the passkey in the network configuration in plaintext. The passkey is encrypted automatically when it is stored on the device.
--   The SSID of the Wi-Fi network part of the LocURI node must be a valid URI based on RFC 2396. This requires that all non-ASCII characters must be escaped using a %-character. Unicode characters without the necessary escaping are not supported.
--   The \<name>*name\_goes\_here*\</name>\<SSIDConfig> must match \<SSID>\<name> *name\_goes\_here*\</name>\</SSID>.
--   For the WiFi CSP, you cannot use the Replace command unless the node already exists.
--   Using Proxyis in Windows 10 client editions (Home, Pro, Enterprise, and Education) will result in failure.
+- If the authentication method needs a certificate, for example, EAP-TLS requires client certificates, you must configure it through the CertificateStore configuration service provider. The WiFi configuration service provider does not provide that functionality; instead, the Wi-Fi profile can specify characteristics of the certificate to be used for choosing the right certificate for that network. The server must successfully enroll the certificate first before deploying the Wi-Fi network configuration. For example, for an EAP-TLS profile, the server must successfully configure and enroll the required client certificate before deploying the Wi-Fi profile. Self-signed certificate works for EAP-TLS/PEAP-MSCHAPv2, but it is not supported in EAP-TLS.
+- For WEP, WPA, and WPA2-based networks, include the passkey in the network configuration in plaintext. The passkey is encrypted automatically when it is stored on the device.
+- The SSID of the Wi-Fi network part of the LocURI node must be a valid URI based on RFC 2396. This requires that all non-ASCII characters must be escaped using a %-character. Unicode characters without the necessary escaping are not supported.
+- The \<name>*name\_goes\_here*\</name>\<SSIDConfig> must match \<SSID>\<name> *name\_goes\_here*\</name>\</SSID>.
+- For the WiFi CSP, you cannot use the Replace command unless the node already exists.
+- Using Proxyis in Windows 10 or Windows 11 client editions (Home, Pro, Enterprise, and Education) will result in failure.
 
 The following shows the WiFi configuration service provider in tree format.
 
@@ -41,11 +51,10 @@ WiFi
 ---------WiFiCost
 ```
 
-
 The following list shows the characteristics and parameters.
 
 <a href="" id="wifi"></a>**Device or User profile**
-For user profile, use ./User/Vendor/MSFT/Wifi path and for device profile, use ./Device/Vendor/MSFT/Wifi path.
+For user profile, use .`/User/Vendor/MSFT/Wifi` path and for device profile, use `./Device/Vendor/MSFT/Wifi` path.
 
 <a href="" id="profile"></a>**Profile**
 Identifies the Wi-Fi network configuration. Each Wi-Fi network configuration is represented by a profile object. This network profile includes all the information required for the device to connect to that network – for example, the SSID, authentication and encryption methods and passphrase in case of WEP or WPA2 networks.
@@ -94,6 +103,7 @@ Supported operations are Get, Add, Delete, and Replace.
 -->
 
 <a href="" id="disableinternetconnectivitychecks"></a>**DisableInternetConnectivityChecks**
+
 > [!Note]
 > This node has been deprecated since Windows 10, version 1607.
 
@@ -101,8 +111,8 @@ Added in Windows 10, version 1511. Optional. Disable the internet connectivity c
 
 Value type is chr.
 
--   True - internet connectivity check is disabled.
--   False - internet connectivity check is enabled.
+- True - internet connectivity check is disabled.
+- False - internet connectivity check is enabled.
 
 Supported operations are Get, Add, Delete, and Replace.
 
@@ -138,7 +148,6 @@ Supported values:
 Supported operations are Add, Get, Replace and Delete. Value type is integer.
 
 ## Examples
-
 
 These XML examples show how to perform various tasks using OMA DM.
 
@@ -241,8 +250,4 @@ The following example shows how to add PEAP-MSCHAPv2 network with SSID ‘MyNetw
 
 ## Related topics
 
-
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-

@@ -14,12 +14,20 @@ ms.date: 06/26/2017
 
 # CMPolicy CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 The CMPolicy configuration service provider defines rules that the Connection Manager uses to identify the correct connection for a connection request.
 
 > [!NOTE]
 > This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
-
 
 Each policy entry identifies one or more applications in combination with a host pattern. The policy entry is assigned a list of connection details that Connection Manager uses to satisfy connection requests matching the application and host patterns. CMPolicy configuration service provider can have multiple policies
 
@@ -134,7 +142,6 @@ Specifies the type of connection being referenced. The following list describes 
 
 ## OMA client provisioning examples
 
-
 Adding an application-based mapping policy. In this example, the ConnectionId for type CMST\_CONNECTION\_NAME is set to the name of the connection (“GPRSConn1”) that is configured with the CM\_CellularEntries configuration service provider.
 
 ```xml
@@ -180,7 +187,9 @@ Adding an application-based mapping policy. In this example, the ConnectionId fo
 </wap-provisioningdoc>
 ```
 
-Adding a host-based mapping policy. In this example, the ConnectionId for type CMST\_CONNECTION\_NAME is set to the name of the connection (“GPRSConn1”) that is configured with the CM\_CellularEntries configuration service provider.
+Adding a host-based mapping policy:
+
+In this example, the ConnectionId for type CMST\_CONNECTION\_NAME is set to the name of the connection (“GPRSConn1”) that is configured with the CM\_CellularEntries configuration service provider.
 
 ```xml
 <wap-provisioningdoc>
@@ -364,7 +373,6 @@ Adding a host-based mapping policy:
 
 ## Microsoft Custom Elements
 
-
 |Element|Available|
 |--- |--- |
 |parm-query|Yes|
@@ -372,7 +380,6 @@ Adding a host-based mapping policy:
 |characteristic-query|Yes<br> <br>Recursive query: Yes<br> <br>Top-level query: Yes|
 
 ## Related topics
-
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 

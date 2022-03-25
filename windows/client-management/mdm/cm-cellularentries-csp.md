@@ -14,6 +14,16 @@ ms.date: 08/02/2017
 
 # CM\_CellularEntries CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 The CM\_CellularEntries configuration service provider is used to configure the General Packet Radio Service (GPRS) entries on the device. It defines each GSM data access point.
 
 This configuration service provider requires the ID\_CAP\_NETWORKING\_ADMIN capability to be accessed from a network configuration application.
@@ -76,13 +86,13 @@ Optional. Type: String. Specifies the type of connection used for the APN. The f
 |Cdma|Used for CDMA type connections (1XRTT + EVDO).|
 |Lte|Used for LTE type connections (eHRPD + LTE) when the device is registered HOME.|
 |Legacy|Used for GPRS + GSM + EDGE + UMTS connections.|
-|Lte_iwlan|Used for GPRS type connections that may be offloaded over WiFi|
-|Iwlan|Used for connections that are implemented over WiFi offload only|
+|Lte_iwlan|Used for GPRS type connections that may be offloaded over WiFi.|
+|Iwlan|Used for connections that are implemented over WiFi offload only.|
 
 <a href="" id="desc-langid"></a>**Desc.langid**  
 Optional. Specifies the UI display string used by the defined language ID.
 
-A parameter name in the format of Desc.langid will be used as the language-specific identifier for the specified entry. For example, a parameter defined as <code>Desc.0409</code> with a value of <code>"GPRS Connection"</code> will force "GPRS Connection" to be displayed in the UI to represent this connection when the device is set to English language (language ID 0409). Descriptions for multiple languages may be provisioned using this mechanism, and the system will automatically switch among them if the user changes language preferences on the device. If no <strong>Desc</strong> parameter is provisioned for a given language, the system will default to the name used to create the entry.
+A parameter name in the format of Desc.langid will be used as the language-specific identifier for the specified entry. For example, a parameter defined as `Desc.0409` with a value of `"GPRS Connection"` will force "GPRS Connection" to be displayed in the UI to represent this connection when the device is set to English language (language ID 0409). Descriptions for multiple languages may be provisioned using this mechanism, and the system will automatically switch among them if the user changes language preferences on the device. If no **Desc** parameter is provisioned for a given language, the system will default to the name used to create the entry.
 
 <a href="" id="enabled"></a>**Enabled**  
 Specifies if the connection is enabled.
@@ -110,7 +120,7 @@ Optional. Specifies if the connection requires a corresponding mappings policy.
 
 A value of "0" specifies that the connection can be used for any general Internet communications. A value of "1" specifies that the connection is only used if a mapping policy is present.
 
-For example, if the multimedia messaging service (MMS) APN should not have any other traffic except MMS, you can configure a mapping policy that sends MMS traffic to this connection. Then, you set the value of UseRequiresMappingsPolicy to be equal to "1" and Connection Manager will only use the connection for MMS traffic. Without this, Connection Manager will try to use the connection for any general purpose Internet traffic.
+For example, if the multimedia messaging service (MMS) APN does not have any other traffic except MMS, you can configure a mapping policy that sends MMS traffic to this connection. Then, you set the value of UseRequiresMappingsPolicy to be equal to "1" and Connection Manager will only use the connection for MMS traffic. Without this, Connection Manager will try to use the connection for any general purpose Internet traffic.
 
 <a href="" id="version"></a>**Version**  
 Type: Int. Specifies the XML version number and is used to verify that the XML is supported by Connection Manager's configuration service provider.
@@ -131,7 +141,7 @@ Optional. Type: Int. This parameter specifies the roaming conditions under which
 - 5 - Roaming only.
 
 <a href="" id="oemconnectionid"></a>**OEMConnectionID**  
-Optional. Type: GUID. Specifies a GUID to use to identify a specific connection in the modem. If a value isn't specified, the default value is 00000000-0000-0000-0000-000000000000. This parameter is only used on LTE devices.
+Optional. Type: GUID. Specifies a GUID that is used to identify a specific connection in the modem. If a value isn't specified, the default value is 00000000-0000-0000-0000-000000000000. This parameter is only used on LTE devices.
 
 <a href="" id="apnid"></a>**ApnId**  
 Optional. Type: Int. Specifies the purpose of the APN. If a value isn't specified, the default value is "0" (none). This parameter is only used on LTE devices.
@@ -145,7 +155,7 @@ Optional. Type: String. Specifies the network protocol of the connection. Availa
 <a href="" id="exemptfromdisablepolicy"></a>**ExemptFromDisablePolicy**  
 Added back in Windows 10, version 1511.Optional. Type: Int. This should only be specified for special purpose connections whose applications directly manage their disable state (such as MMS). A value of "0" specifies that the connection is subject to the disable policy used by general purpose connections (not exempt). A value of "1" specifies that the connection is exempt. If a value isn't specified, the default value is "0" (not exempt).
 
-To allow MMS when data is set to OFF, set both ExemptFromDisablePolicy and UseRequiresMappingsPolicy to "1". This indicates that the connection is a dedicated MMS connection and that it shouldn't be disabled when all other connections are disabled. As a result, MMS can be sent and received when data is set to OFF. 
+To allow MMS when data is set to OFF, set both ExemptFromDisablePolicy and UseRequiresMappingsPolicy to "1". This indicates that the connection is a dedicated MMS connection, and that it shouldn't be disabled when all other connections are disabled. As a result, MMS can be sent and received when data is set to OFF. 
 
 >[!Note]
 > Sending MMS while roaming is still not allowed.
@@ -174,7 +184,7 @@ Optional. Type: Int. Specifies how long an on-demand connection can be unused be
 > If tear-down/activation requests occur too frequently, this value should be set to greater than 5 seconds.
 
 <a href="" id="simiccid"></a>**SimIccId**  
-For single SIM phones, this parm isOptional. However, it is highly recommended to include this value when creating future updates. For dual SIM phones, this parm is required. Type: String. Specifies the SIM ICCID that services the connection.
+For single SIM phones, this parm is Optional. However, it is highly recommended to include this value when creating future updates. For dual SIM phones, this parm is required. Type: String. Specifies the SIM ICCID that services the connection.
 
 <a href="" id="purposegroups"></a>**PurposeGroups**  
 Required. Type: String. Specifies the purposes of the connection by a comma-separated list of GUIDs representing purpose values. The following purpose values are available:
@@ -271,17 +281,7 @@ The following table shows the Microsoft custom elements that this configuration 
 |Characteristic-query|Yes|
 |Parm-query|Yes|
 
-
 ## Related topics
 
-
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-
- 
-
-
-
-
 
