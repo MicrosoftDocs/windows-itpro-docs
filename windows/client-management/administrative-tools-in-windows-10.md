@@ -35,7 +35,7 @@ Windows Tools (Windows 11) is a folder in Control Panel that contains tools for 
 
 ![Screenshot of Control Panel.](https://user-images.githubusercontent.com/3296790/159910156-954c4835-a4a0-4dd3-8858-8f7796ae8ad9.png)
 
-The tools in the folder might vary depending on which edition of Windows 10 you are using. 
+The tools in the folder might vary depending on which edition of Windows 11 you are using. 
 
 ![Screenshot of folder of windows tools.](https://user-images.githubusercontent.com/3296790/159910178-e6e5144b-e571-4a86-af83-d55f2195839d.png)
 
