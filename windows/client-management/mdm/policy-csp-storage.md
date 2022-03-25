@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 09/27/2019
+ms.date: 03/25/2022
 ms.reviewer: 
 manager: dansimp
 ---
@@ -128,6 +128,8 @@ The following list shows the supported values:
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
+Note: Versions prior to 1903 will not support group policy
+
 <!--/SupportedSKUs-->
 <hr/>
 
@@ -182,6 +184,8 @@ ADMX Info:
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
+
+Note: Versions prior to 1903 will not support group policy
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -241,6 +245,8 @@ ADMX Info:
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
+Note: Versions prior to 1903 will not support group policy
+
 <!--/SupportedSKUs-->
 <hr/>
 
@@ -299,6 +305,8 @@ ADMX Info:
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
+Note: Versions prior to 1903 will not support group policy
+
 <!--/SupportedSKUs-->
 <hr/>
 
@@ -356,6 +364,8 @@ ADMX Info:
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
+
+Note: Versions prior to 1903 will not support group policy
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -420,6 +430,8 @@ ADMX Info:
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
+
+Note: Versions prior to 1903 will not support group policy
 
 <!--/SupportedSKUs-->
 <hr/>
