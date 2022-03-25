@@ -1193,7 +1193,7 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     </Setting>
     <Setting Provider="PolicyInfo" Key="Information" ValueName="Id">
       <Value>
-        <String>10.0.25000.0</String>
+        <String>10.0.25090.0</String>
       </Value>
     </Setting>
   </Settings>
