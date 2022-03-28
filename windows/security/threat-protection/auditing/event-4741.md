@@ -16,8 +16,9 @@ ms.technology: windows-sec
 
 # 4741(S): A computer account was created.
 
+<img src="images/event-4741.png" alt="Event 4741 illustration" width="449" height="837" hspace="10" align="right" />
 
-<img src="images/event-4741.png" alt="Event 4741 illustration" width="449" height="837" hspace="10" align="left" />
+
 
 ***Subcategory:***&nbsp;[Audit Computer Account Management](audit-computer-account-management.md)
 
