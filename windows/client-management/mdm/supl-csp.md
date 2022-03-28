@@ -14,6 +14,14 @@ ms.date: 09/12/2019
 
 # SUPL CSP
 
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 The SUPL configuration service provider is used to configure the location client, as shown in the following table:
 
 - **Location Service**: Connection type
@@ -110,7 +118,6 @@ Optional. Specifies the positioning method that the SUPL client will use for mob
 |4|OTDOA|
 |5|AFLT|
 
- 
 
 The default is 0. The default method in Windows devices provides high-quality assisted GNSS positioning for mobile originated position requests without loading the mobile operator’s network or location services.
 
@@ -118,7 +125,6 @@ The default is 0. The default method in Windows devices provides high-quality as
 > The Mobile Station Assisted, OTDOA, and AFLT positioning methods must only be configured for test purposes.
 
  
-
 For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
 
 <a href="" id="locmasterswitchdependencynii"></a>**LocMasterSwitchDependencyNII**  
@@ -132,7 +138,6 @@ This value manages the settings for both SUPL and v2 UPL. If a device is configu
 |On|1|Yes|
 |Off|0|Yes|
 |Off|1|No (unless privacyOverride is set)|
-
 
 When the location toggle is set to Off and this value is set to 1, the following application requests will fail:
 
@@ -238,7 +243,6 @@ The default is 0. The default method provides high-quality assisted GNSS positio
 > The Mobile Station Assisted and AFLT positioning methods must only be configured for test purposes.
 
  
-
 For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
 
 <a href="" id="locmasterswitchdependencynii"></a>**LocMasterSwitchDependencyNII**  
@@ -282,7 +286,6 @@ Optional. Integer. Defines the minimum interval of time in seconds between mobil
 
 ## Unsupported Nodes
 
-
 The following optional nodes are not supported on Windows devices.
 
 -   ProviderID
@@ -304,7 +307,6 @@ If the configuration application tries to set, delete or query these nodes, a re
 If a mobile operator requires the communication with the H-SLP to take place over a specific connection rather than a default cellular connection, then this must be configured by using the [CM\_CellularEntries configuration service provider](cm-cellularentries-csp.md) and the [CM\_ProxyEntries configuration service provider](cm-proxyentries-csp.md) to map the H-SLP server with the required connection.
 
 ## OMA Client Provisioning examples
-
 
 Adding new configuration information for a H-SLP server for SUPL. Values in italic must be replaced with correct settings for the mobile operator network. A valid binary blob must be included for the root certificate data value.
 
@@ -330,7 +332,7 @@ Adding new configuration information for a H-SLP server for SUPL. Values in ital
 </wap-provisioningdoc>
 ```
 
-Adding a SUPL and a V2 UPL account to the same device. Values in italic must be replaced with correct settings for the mobile operator network. A valid binary blob must be included for the root certificate data value.
+Adding a SUPL and a V2 UPL account to the same device. Values in italic must be replaced with correct settings for the mobile operator network. A valid binary BLOB must be included for the root certificate data value.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -360,7 +362,6 @@ Adding a SUPL and a V2 UPL account to the same device. Values in italic must be 
 ```
 
 ## OMA DM examples
-
 
 Adding a SUPL account to a device. Values in italic must be replaced with correct settings for the mobile operator network. A valid binary blob must be included for the root certificate data value.
 
@@ -435,7 +436,6 @@ Adding a SUPL account to a device. Values in italic must be replaced with correc
 ```
 
 ## Microsoft Custom Elements
-
 
 The following table shows the Microsoft custom elements that this configuration service provider supports for OMA Client Provisioning.
 

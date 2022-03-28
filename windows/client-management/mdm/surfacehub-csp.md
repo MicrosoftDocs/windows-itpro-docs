@@ -14,7 +14,7 @@ ms.date: 07/28/2017
 
 # SurfaceHub CSP
 
-The SurfaceHub configuration service provider (CSP) is used to configure Microsoft Surface Hub settings. This CSP was added in Windows 10, version 1511.
+The SurfaceHub configuration service provider (CSP) is used to configure Microsoft Surface Hub settings. This CSP was added in Windows 10, version 1511, and later.
 
 The following shows the SurfaceHub CSP management objects in tree format.
 ```
@@ -216,7 +216,7 @@ If there is an error calling ValidateAndCommit, there is additional context for 
 | 3 | Populating Exchange server address | Unable to auto-discover your Exchange server address. Try to manually specify the Exchange server address using the ExchangeServer field. |
 | 4 | Validating Exchange server address | Unable to validate the Exchange server address. Ensure that the ExchangeServer field is valid. |
 | 5 | Saving account information | Unable to save account details to the system. |
-| 6 | Validating EAS policies | The device account uses an unsupported EAS policy. Make sure the EAS policy is configured correctly according to the admin guide. |
+| 6 | Validating EAS policies | The device account uses an unsupported EAS policy. Ensure the EAS policy is configured correctly according to the admin guide. |
 
 The data type is integer. Supported operation is Get.
 
@@ -254,7 +254,7 @@ The data type is integer. Supported operation is Get.
 <p>The data type is boolean. Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-welcome-currentbackgroundpath"></a>**InBoxApps/Welcome/CurrentBackgroundPath**
-<p>Download location for image to be used as the background during user sessions and on the welcome screen. To set this, specify an https URL to a 32-bit PNG file (only PNGs are supported for security reasons). If any certificate authorities need to be trusted in order to access the URL, please ensure they are valid and installed on the Hub, otherwise it may not be able to load the image.
+<p>Download location for image to be used as the background during user sessions and on the welcome screen. To set this, specify an https URL to a 32-bit PNG file (only PNGs are supported for security reasons). If any certificate authorities need to be trusted in order to access the URL, ensure they are valid and installed on the Hub, otherwise it may not be able to load the image.
 
 <p>The data type is string. Supported operation is Get and Replace.
 

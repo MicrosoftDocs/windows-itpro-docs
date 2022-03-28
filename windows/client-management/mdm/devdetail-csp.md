@@ -14,6 +14,15 @@ ms.date: 03/27/2020
 
 # DevDetail CSP
 
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+
 The DevDetail configuration service provider handles the management object that provides device-specific parameters to the OMA DM server. These device parameters can be queried by servers using OMA DM commands. They aren't sent from the client to the server automatically.
 
 > [!NOTE]
@@ -210,22 +219,22 @@ Returns the VoLTE service to on or off. This setting is only exposed to mobile o
 Supported operation is Get.
 
 <a href="" id="wlanipv4address"></a>**Ext/WlanIPv4Address**  
-Returns the IPv4 address of the active Wi-Fi connection. This address is only exposed to enterprise OMA DM servers.
+Returns the IPv4 address of the active WiFi connection. This address is only exposed to enterprise OMA DM servers.
 
 Supported operation is Get.
 
 <a href="" id="wlanipv6address"></a>**Ext/WlanIPv6Address**  
-Returns the IPv6 address of the active Wi-Fi connection. This address is only exposed to enterprise OMA-DM servers.
+Returns the IPv6 address of the active WiFi connection. This address is only exposed to enterprise OMA-DM servers.
 
 Supported operation is Get.
 
 <a href="" id="wlandnssuffix"></a>**Ext/WlanDnsSuffix**  
-Returns the DNS suffix of the active Wi-Fi connection. This suffix is only exposed to enterprise OMA-DM servers.
+Returns the DNS suffix of the active WiFi connection. This suffix is only exposed to enterprise OMA-DM servers.
 
 Supported operation is Get.
 
 <a href="" id="wlansubnetmask"></a>**Ext/WlanSubnetMask**  
-Returns the subnet mask for the active Wi-Fi connection. This subnet mask is only exposed to enterprise OMA-DM servers.
+Returns the subnet mask for the active WiFi connection. This subnet mask is only exposed to enterprise OMA-DM servers.
 
 Supported operation is Get.
 

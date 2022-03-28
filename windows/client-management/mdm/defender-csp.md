@@ -15,6 +15,15 @@ ms.date: 10/04/2021
 
 # Defender CSP
 
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+
 > [!WARNING]
 > Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
@@ -177,7 +186,7 @@ The following table describes the supported values:
 | 48    | Policy                      |
 | 49    | EUS (Enterprise Unwanted Software)|
 | 50    | Ransomware                  |
-| 51    | ASR Rule                    |
+| 51    | Azure Site Recovery Rule                    |
 
 Supported operation is Get.
 
@@ -255,9 +264,9 @@ Supported operation is Get.
 
 The Network Protection Service is a network filter that helps to protect you against web-based malicious threats, including phishing and malware. The Network Protection service contacts the SmartScreen URL reputation service to validate the safety of connections to web resources. 
 The acceptable values for this parameter are:
-- 0: Disabled. The Network Protection service will not block navigation to malicious websites, or contact the SmartScreen URL reputation service. It will still send connection metadata to the antimalware engine if behavior monitoring is enabled, to enhance AV Detections.
+- 0: Disabled. The Network Protection service won't block navigation to malicious websites, or contact the SmartScreen URL reputation service. It will still send connection metadata to the antimalware engine if behavior monitoring is enabled, to enhance AV Detections.
 - 1: Enabled. The Network Protection service will block connections to malicious websites based on URL Reputation from the SmartScreen URL reputation service.
-- 2: AuditMode. As above, but the Network Protection service will not block connections to malicious websites, but will instead log the access to the event log. 
+- 2: AuditMode. As above, but the Network Protection service won't block connections to malicious websites, but will instead log the access to the event log. 
 
 Accepted values: Disabled, Enabled, and AuditMode
 Position: Named
@@ -276,7 +285,7 @@ By default, network protection is not allowed to be enabled on Windows versions 
 
 <a href="" id="enablenetworkprotection-allownetworkprotectiononwinserver"></a>**EnableNetworkProtection/AllowNetworkProtectionOnWinServer**
 
-By default, network protection is not allowed to be enabled on Windows Server, regardless of the setting of the EnableNetworkProtection configuration. Set this configuration to "$true" to override that behavior and allow Network Protection to be set to Enabled or Audit Mode.
+By default, network protection isn't allowed to be enabled on Windows Server, regardless of the setting of the EnableNetworkProtection configuration. Set this configuration to "$true" to override that behavior and allow Network Protection to be set to Enabled or Audit Mode.
 
 - Type: Boolean
 - Position: Named
@@ -585,11 +594,11 @@ An interior node to group Windows Defender configuration information.
 Supported operation is Get.
 
 <a href="" id="configuration-tamperprotection"></a>**Configuration/TamperProtection**  
-Tamper protection helps protect important security features from unwanted changes and interference.  This includes real-time protection, behavior monitoring, and more. Accepts signed string to turn the feature on or off. Settings are configured with an MDM solution, such as Intune and is available in Windows 10 Enterprise E5 or equivalent subscriptions.
+Tamper protection helps protect important security features from unwanted changes and interference. This includes real-time protection, behavior monitoring, and more. Accepts signed string to turn the feature on or off. Settings are configured with an MDM solution, such as Intune and is available in Windows 10 Enterprise E5 or equivalent subscriptions.
 
 Send off blob to device to reset tamper protection state before setting this configuration to "not configured" or "unassigned" in Intune.
 
-The data type is a Signed blob.
+The data type is a Signed BLOB.
 
 Supported operations are Add, Delete, Get, Replace.
 
@@ -603,7 +612,7 @@ When enabled or disabled exists on the client and admin moves the setting to not
 <a href="" id="configuration-disablelocaladminmerge"></a>**Configuration/DisableLocalAdminMerge**<br>
 This policy setting controls whether or not complex list settings configured by a local administrator are merged with managed settings. This setting applies to lists such as threats and exclusions.
 
-If you disable or do not configure this setting, unique items defined in preference settings configured by the local administrator will be merged into the resulting effective policy. In the case of conflicts, management settings will override preference settings.
+If you disable or don't configure this setting, unique items defined in preference settings configured by the local administrator will be merged into the resulting effective policy. In the case of conflicts, management settings will override preference settings.
 
 If you enable this setting, only items defined by management will be used in the resulting effective policy. Managed settings will override preference settings configured by the local administrator.
 
@@ -621,31 +630,31 @@ Valid values are:
 - 0 (default) – Disable.
 
 <a href="" id="configuration-hideexclusionsfromlocaladmins"></a>**Configuration/HideExclusionsFromLocalAdmins**<br>
-This policy setting controls whether or not exclusions are visible to Local Admins.  For end users (that are not Local Admins) exclusions are not visible, whether or not this setting is enabled.
+This policy setting controls whether or not exclusions are visible to Local Admins. For end users (that aren't Local Admins) exclusions aren't visible, whether or not this setting is enabled.
 
-If you disable or do not configure this setting, Local Admins will be able to see exclusions in the Windows Security App and via PowerShell.
+- If you enable this setting, Local Admins will no longer be able to see the exclusion list in the Windows Security app or via PowerShell.
 
-If you enable this setting, Local Admins will no longer be able to see the exclusion list in the Windows Security app or via PowerShell.
+- If you disable or don't configure this setting, Local Admins will be able to see exclusions in the Windows Security App and via PowerShell.
 
 > [!NOTE]
 > Applying this setting will not remove exclusions, it will only prevent them from being visible to Local Admins. This is reflected in **Get-MpPreference**.
 
-Supported OS versions:  Windows 10
+Supported OS versions: Windows 10
 
 The data type is integer.
 
-Supported operations are Add, Delete, Get, Replace.
+Supported operations are Add, Delete, Get, and Replace.
 
 Valid values are:  
 - 1 – Enable.
 - 0 (default) – Disable.
 
 <a href="" id="configuration-disablecputhrottleonidlescans"></a>**Configuration/DisableCpuThrottleOnIdleScans**<br>	
-Indicates whether the CPU will be throttled for scheduled scans while the device is idle.  This feature is enabled by default and will not throttle the CPU for scheduled scans performed when the device is otherwise idle, regardless of what ScanAvgCPULoadFactor is set to. For all other scheduled scans this flag will have no impact and normal throttling will occur.	
+Indicates whether the CPU will be throttled for scheduled scans while the device is idle.  This feature is enabled by default and won't throttle the CPU for scheduled scans performed when the device is otherwise idle, regardless of what ScanAvgCPULoadFactor is set to. For all other scheduled scans this flag will have no impact and normal throttling will occur.	
 
 The data type is integer.	
 
-Supported operations are Add, Delete, Get, Replace.	
+Supported operations are Add, Delete, Get, and Replace.	
 
 Valid values are:	
 -	1 (default) – Enable.	
@@ -656,7 +665,7 @@ Allow managed devices to update through metered connections. Data charges may ap
 
 The data type is integer.
 
-Supported operations are Add, Delete, Get, Replace.
+Supported operations are Add, Delete, Get, and Replace.
 
 Valid values are:
 - 1 – Enable.
@@ -667,7 +676,7 @@ This settings controls whether Network Protection is allowed to be configured in
 
 The data type is integer.
 
-Supported operations are Add, Delete, Get, Replace.
+Supported operations are Add, Delete, Get, and Replace.
 
 Valid values are:
 - 1 – Enable.
@@ -678,7 +687,7 @@ Allows an administrator to explicitly disable network packet inspection made by 
 
 The data type is string.
 
-Supported operations are Add, Delete, Get, Replace.
+Supported operations are Add, Delete, Get, and Replace.
 
 <a href="" id="configuration-enablefilehashcomputation"></a>**Configuration/EnableFileHashComputation**  
 Enables or disables file hash computation feature.
@@ -686,7 +695,7 @@ When this feature is enabled Windows Defender will compute hashes for files it s
 
 The data type is integer.
 
-Supported operations are Add, Delete, Get, Replace.
+Supported operations are Add, Delete, Get, and Replace.
 
 Valid values are:  
 - 1 – Enable.
@@ -697,15 +706,15 @@ The support log location setting allows the administrator to specify where the M
 
 Data type is string.
 
-Supported operations are Add, Delete, Get, Replace.
+Supported operations are Add, Delete, Get, and Replace.
 
 Intune Support log location setting UX supports three states:  
 
-- Not configured (default) - Does not have any impact on the default state of the device. 
+- Not configured (default) - Doesn't have any impact on the default state of the device. 
 - 1 - Enabled. Enables the Support log location feature. Requires admin to set custom file path.
 - 0 - Disabled. Turns off the Support log location feature. 
 
-When enabled or disabled exists on the client and admin moves the setting to not configured, it will not have any impact on the device state. To change the state to either enabled or disabled would require to be set explicitly.  
+When enabled or disabled exists on the client and admin moves the setting to not configure, it will not have any impact on the device state. To change the state to either enabled or disabled would require to be set explicitly.  
 
 More details:  
 
@@ -725,11 +734,11 @@ Current Channel (Broad): Devices will be offered updates only after the gradual 
 
 Critical: Devices will be offered updates with a 48-hour delay. Suggested for critical environments only 
 
-If you disable or do not configure this policy, the device will stay up to date automatically during the gradual release cycle. Suitable for most devices.
+If you disable or don't configure this policy, the device will stay up to date automatically during the gradual release cycle. Suitable for most devices.
 
 The data type is integer.
 
-Supported operations are Add, Delete, Get, Replace.
+Supported operations are Add, Delete, Get, and Replace.
 
 Valid values are:
 - 0: Not configured (Default)
@@ -758,11 +767,11 @@ Current Channel (Broad): Devices will be offered updates only after the gradual 
 
 Critical: Devices will be offered updates with a 48-hour delay. Suggested for critical environments only
 
-If you disable or do not configure this policy, the device will stay up to date automatically during the gradual release cycle. Suitable for most devices.
+If you disable or don't configure this policy, the device will stay up to date automatically during the gradual release cycle. Suitable for most devices.
 
 The data type is integer.
 
-Supported operations are Add, Delete, Get, Replace.
+Supported operations are Add, Delete, Get, and Replace.
 
 Valid values are:
 - 0: Not configured (Default)
@@ -784,10 +793,10 @@ Current Channel (Staged): Devices will be offered updates after the release cycl
 
 Current Channel (Broad): Devices will be offered updates only after the gradual release cycle completes. Suggested to apply to a broad set of devices in your production population (~10-100%).
 
-If you disable or do not configure this policy, the device will stay up to date automatically during the daily release cycle. Suitable for most devices.
+If you disable or don't configure this policy, the device will stay up to date automatically during the daily release cycle. Suitable for most devices.
 
 The data type is integer.
-Supported operations are Add, Delete, Get, Replace.
+Supported operations are Add, Delete, Get, and Replace.
 
 Valid Values are:
 - 0: Not configured (Default)
@@ -806,11 +815,11 @@ Devices will be offered all Microsoft Defender updates after the gradual release
 > [!NOTE]
 > This setting applies to both monthly as well as daily Microsoft Defender updates and will override any previously configured channel selections for platform and engine updates.
 
-If you disable or do not configure this policy, the device will remain in Current Channel (Default) unless specified otherwise in specific channels for platform and engine updates. Stay up to date automatically during the gradual release cycle. Suitable for most devices.
+If you disable or don't configure this policy, the device will remain in Current Channel (Default) unless specified otherwise in specific channels for platform and engine updates. Stay up to date automatically during the gradual release cycle. Suitable for most devices.
 
 The data type is integer.
 
-Supported operations are Add, Delete, Get, Replace.
+Supported operations are Add, Delete, Get, and Replace.
 
 Valid values are:
 - 1 – Enabled.
