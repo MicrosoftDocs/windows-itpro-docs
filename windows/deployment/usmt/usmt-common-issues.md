@@ -3,14 +3,14 @@ title: Common Issues (Windows 10)
 description: Learn about common issues that you might see when you run the User State Migration Tool (USMT) 10.0 tools.
 ms.assetid: 5a37e390-8617-4768-9eee-50397fbbb2e1
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.date: 09/19/2017
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ---
 

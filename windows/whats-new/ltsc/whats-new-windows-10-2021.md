@@ -2,13 +2,13 @@
 title: What's new in Windows 10 Enterprise LTSC 2021
 ms.reviewer: 
 manager: dougeby
-ms.author: greglin
+ms.author: aaroncz
 description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2021.
 keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 Enterprise LTSC 2021"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: low
 ms.topic: article
 ---

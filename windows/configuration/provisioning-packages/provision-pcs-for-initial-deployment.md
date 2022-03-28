@@ -3,13 +3,13 @@ title: Provision PCs with common settings (Windows 10/11)
 description: Create a provisioning package to apply common settings to a PC running Windows 10. 
 ms.assetid: 66D14E97-E116-4218-8924-E2A326C9367E
 ms.reviewer: gkomatsu
-manager: dansimp
+manager: dougeby
 keywords: ["runtime provisioning", "provisioning package"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
-ms.author: greglin
+author: aczechowski
+ms.author: aaroncz
 ms.topic: article
 ms.localizationpriority: medium
 ---

@@ -3,15 +3,15 @@ title: Deployment considerations for Windows To Go (Windows 10)
 description: Learn about deployment considerations for Windows To Go, such as the boot experience, deployment methods, and tools that you can use with Windows To Go.
 ms.assetid: dcfc5d96-b96b-44cd-ab65-416b5611c65e
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 keywords: deploy, mobile, device, USB, boot, image, workspace, driver
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: mobility
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
