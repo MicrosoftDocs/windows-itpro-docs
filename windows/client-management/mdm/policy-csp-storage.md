@@ -128,7 +128,7 @@ The following list shows the supported values:
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
-Note: Versions prior to 1903 will not support group policy
+Note: Versions prior to version 1903 do not support group policy.
 
 <!--/SupportedSKUs-->
 <hr/>
