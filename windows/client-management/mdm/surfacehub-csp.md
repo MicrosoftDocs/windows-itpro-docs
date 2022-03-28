@@ -31,7 +31,7 @@ SurfaceHub
 --------Email
 --------CalendarSyncEnabled
 --------ErrorContext
---------PasswordRotationPeriod
+--------PasswordRotationEnabled
 ----MaintenanceHoursSimple
 --------Hours
 ------------StartTime
@@ -56,6 +56,7 @@ SurfaceHub
 ----Properties
 --------FriendlyName
 --------DefaultVolume
+--------DefaultAutomaticFraming
 --------ScreenTimeout
 --------SessionTimeout
 --------SleepTimeout
@@ -196,7 +197,7 @@ SurfaceHub
 <p>The data type is string. Supported operation is Get and Replace.
 
 <a href="" id="deviceaccount-exchangemodernauthenabled"></a>**DeviceAccount/ExchangeModernAuthEnabled**
-<p>Added in <a href="https://support.microsoft.com/en-us/topic/february-2-2021-kb4598291-os-builds-19041-789-and-19042-789-preview-6a766199-a4f1-616e-1f5c-58bdc3ca5e3b" data-raw-source="[KB4598291](https://support.microsoft.com/en-us/topic/february-2-2021-kb4598291-os-builds-19041-789-and-19042-789-preview-6a766199-a4f1-616e-1f5c-58bdc3ca5e3b)">KB4598291</a> for Windows 10, version 20H2. Specifies whether Device Account calendar sync will attempt to use token-based Modern Authentication to connect to the Exchange Server. Default value is True.
+<p>Added in <a href="https://support.microsoft.com/help/4598291" data-raw-source="[KB4598291](https://support.microsoft.com/help/4598291)">KB4598291</a> for Windows 10, version 20H2. Specifies whether Device Account calendar sync will attempt to use token-based Modern Authentication to connect to the Exchange Server. Default value is True.
 
 <p>The data type is boolean. Supported operation is Get and Replace.
 
@@ -336,6 +337,11 @@ The data type is integer. Supported operation is Get.
 
 <p>The data type is integer. Supported operation is Get and Replace.
 
+<a href="" id="properties-defaultautomaticframing"></a>**Properties/DefaultAutomaticFraming**
+<p>Added in <a href="https://support.microsoft.com/help/5010415" data-raw-source="[KB5010415](https://support.microsoft.com/help/5010415)">KB5010415</a> for Windows 10, version 20H2. Specifies whether the Surface Hub 2 Smart Camera feature to automatically zoom and keep users centered in the video is enabled. Default value is True.
+
+<p>The data type is boolean. Supported operation is Get and Replace.
+
 <a href="" id="properties-screentimeout"></a>**Properties/ScreenTimeout**
 <p>Added in Windows 10, version 1703. Specifies the number of minutes until the Hub screen turns off.
 
@@ -424,7 +430,7 @@ The data type is integer. Supported operation is Get.
 <p>The data type is boolean. Supported operation is Get and Replace.
 
 <a href="" id="properties-proxyservers"></a>**Properties/ProxyServers**
-<p>Added in <a href="https://support.microsoft.com/topic/may-28-2019-kb4499162-os-build-15063-1839-ed6780ab-38d6-f590-d789-5ba873b1e142" data-raw-source="[KB4499162](https://support.microsoft.com/topic/may-28-2019-kb4499162-os-build-15063-1839-ed6780ab-38d6-f590-d789-5ba873b1e142)">KB4499162</a> for Windows 10, version 1703. Specifies FQDNs of proxy servers to provide device account credentials to before any user interaction (if AllowAutoProxyAuth is enabled). This is a semi-colon separated list of server names, without any additional prefixes (e.g. https://).
+<p>Added in <a href="https://support.microsoft.com/help/4499162" data-raw-source="[KB4499162](https://support.microsoft.com/help/4499162)">KB4499162</a> for Windows 10, version 1703. Specifies FQDNs of proxy servers to provide device account credentials to before any user interaction (if AllowAutoProxyAuth is enabled). This is a semi-colon separated list of server names, without any additional prefixes (e.g. https://).
 
 <p>The data type is string. Supported operation is Get and Replace.
 

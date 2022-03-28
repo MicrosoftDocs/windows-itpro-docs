@@ -3,13 +3,13 @@ title: Windows Upgrade and Migration Considerations (Windows 10)
 description: Discover the Microsoft tools you can use to move files and settings between installations, as well as special considerations for performing an upgrade or migration.
 ms.assetid: 7f85095c-5922-45e9-b28e-91b1263c7281
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ---
 

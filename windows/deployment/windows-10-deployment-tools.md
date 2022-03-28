@@ -3,10 +3,10 @@ title: Windows 10 deployment tools
 description: Learn how to use Windows 10 deployment tools to successfully deploy Windows 10 to your organization.
 ms.assetid: 5C4B0AE3-B2D0-4628-9E73-606F3FAA17BB
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.audience: itpro
-ms.author: greglin
-author: greg-lindsay
+ms.author: aaroncz
+author: aczechowski
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

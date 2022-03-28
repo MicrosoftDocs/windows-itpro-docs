@@ -6,8 +6,8 @@ ms.mktglfcycl: plan
 ms.localizationpriority: medium
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
-ms.author: greglin
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
 ms.topic: article
 ms.collection: highpri
