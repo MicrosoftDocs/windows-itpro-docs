@@ -1,72 +1,76 @@
 ---
-title: Administrative Tools in Windows 
-description: Administrative Tools is a folder in Control Panel that contains tools for system administrators and advanced users.
-ms.assetid: FDC63933-C94C-43CB-8373-629795926DC8
-ms.reviewer: 
-manager: dougeby
-ms.author: aaroncz
+title: Windows Tools/Administrative Tools
+description: The folders for Windows Tools and Administrative Tools are folders in the Control Panel that contain tools for system administrators and advanced users.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.localizationpriority: medium
-ms.date: 09/20/2021
+ms.date: 03/28/2022
 ms.topic: article
 ms.collection: highpri
 ---
 
-# Windows Tools and Administrative Tools in Windows
-
+# Windows Tools/Administrative Tools
 
 **Applies to**
--  Windows 11
--  Windows 10
 
+- Windows 11
+- Windows 10
 
-Administrative Tools (Windows 10) is a folder in Control Panel that contains tools for system administrators and advanced users. 
+**Windows Tools** is a folder in the Windows 11 Control Panel. **Administrative Tools** is a folder in the Windows 10 Control Panel. These folders contain tools for system administrators and advanced users.
 
-![Screenshot of Control Panel.](images/admin-tools.png)
+## Windows Tools folder (Windows 11)
 
-The tools in the folder might vary depending on which edition of Windows 10 you are using. 
+The following graphic shows the **Windows Tools** folder in Windows 11:
 
-![Screenshot of folder of administrative tools.](images/admin-tools-folder.png)
+:::image type="content" source="media/win11-control-panel-windows-tools.png" alt-text="Screenshot of the Control Panel in Windows 11, highlighting the Administrative Tools folder." lightbox="media/win11-control-panel-windows-tools.png":::
 
-Windows Tools (Windows 11) is a folder in Control Panel that contains tools for system administrators and advanced users. 
+The tools in the folder might vary depending on which edition of Windows you use.
 
-![Screenshot of Control Panel.](https://user-images.githubusercontent.com/3296790/159910156-954c4835-a4a0-4dd3-8858-8f7796ae8ad9.png)
+:::image type="content" source="media/win11-windows-tools.png" alt-text="Screenshot of the contents of the Windows Tools folder in Windows 11." lightbox="media/win11-windows-tools.png":::
 
-The tools in the folder might vary depending on which edition of Windows 11 you are using. 
+## Administrative Tools folder (Windows 10)
 
-![Screenshot of folder of windows tools.](https://user-images.githubusercontent.com/3296790/159910178-e6e5144b-e571-4a86-af83-d55f2195839d.png)
+The following graphic shows the **Administrative Tools** folder in Windows 10:
 
-These tools were included in previous versions of Windows. The associated documentation for each tool should help you use these tools in Windows. The following list provides links to documentation for each tool. The tools are located within the folder C:\Windows\System32\ or its subfolders.
+![Screenshot of the Control Panel in Windows 10, highlighting the Administrative Tools folder.](images/admin-tools.png)
 
- 
+The tools in the folder might vary depending on which edition of Windows you use.
 
--   [Component Services]( https://go.microsoft.com/fwlink/p/?LinkId=708489)
--   [Computer Management](https://support.microsoft.com/kb/308423)
--   [Defragment and Optimize Drives](https://go.microsoft.com/fwlink/p/?LinkId=708488)
--   [Disk Cleanup](https://go.microsoft.com/fwlink/p/?LinkID=698648)
--   [Event Viewer](/previous-versions/windows/it-pro/windows-2000-server/cc938674(v=technet.10))
--   [iSCSI Initiator](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee338476(v=ws.10))
--   [Local Security Policy](/previous-versions/tn-archive/dd277395(v=technet.10))
--   [ODBC Data Sources]( https://go.microsoft.com/fwlink/p/?LinkId=708494)
--   [Performance Monitor](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749115(v=ws.11))
--   [Print Management](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731857(v=ws.11))
--   [Recovery Drive](https://support.microsoft.com/help/4026852/windows-create-a-recovery-drive)
--   [Registry Editor](/windows/win32/sysinfo/registry)
--   [Resource Monitor](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd883276(v=ws.10))
--   [Services](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772408(v=ws.11))
--   [System Configuration](https://go.microsoft.com/fwlink/p/?LinkId=708499)
--   [System Information]( https://go.microsoft.com/fwlink/p/?LinkId=708500)
--   [Task Scheduler](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc766428(v=ws.11))
--   [Windows Firewall with Advanced Security](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754274(v=ws.11))
--   [Windows Memory Diagnostic]( https://go.microsoft.com/fwlink/p/?LinkId=708507)
+![Screenshot of the contents of the Administrative Tools folder in Windows 10.](images/admin-tools-folder.png)
+
+## Tools
+
+The tools are located in the folder `C:\Windows\System32\` or its subfolders.
+
+These tools were included in previous versions of Windows. The associated documentation for each tool can help you use them. The following list provides links to documentation for each tool.
+
+- [Component Services](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731901(v=ws.11))
+- [Computer Management](https://support.microsoft.com/topic/how-to-use-computer-management-in-windows-xp-d5872f93-4498-f4dd-3a34-36d6f569924f)
+- [Defragment and Optimize Drives](https://support.microsoft.com/windows/ways-to-improve-your-computer-s-performance-c6018c78-0edd-a71a-7040-02267d68ea90)
+- [Disk Cleanup](https://support.microsoft.com/windows/disk-cleanup-in-windows-8a96ff42-5751-39ad-23d6-434b4d5b9a68)
+- [Event Viewer](/previous-versions/windows/it-pro/windows-2000-server/cc938674(v=technet.10))
+- [iSCSI Initiator](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee338476(v=ws.10))
+- [Local Security Policy](/previous-versions/tn-archive/dd277395(v=technet.10))
+- [ODBC Data Sources](/sql/odbc/admin/odbc-data-source-administrator)
+- [Performance Monitor](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749115(v=ws.11))
+- [Print Management](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731857(v=ws.11))
+- [Recovery Drive](https://support.microsoft.com/windows/create-a-recovery-drive-abb4691b-5324-6d4a-8766-73fab304c246)
+- [Registry Editor](/windows/win32/sysinfo/registry)
+- [Resource Monitor](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd883276(v=ws.10))
+- [Services](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772408(v=ws.11))
+- [System Configuration](/troubleshoot/windows-client/performance/system-configuration-utility-troubleshoot-configuration-errors)
+- [System Information](/previous-versions/windows/it-pro/windows-2000-server/cc957818(v=technet.10))
+- [Task Scheduler](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc766428(v=ws.11))
+- [Windows Firewall with Advanced Security](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754274(v=ws.11))
+- [Windows Memory Diagnostic](/previous-versions/technet-magazine/cc745953(v=msdn.10))
 
 > [!TIP]
-> If the content that is linked to a tool in the following list doesn't provide the information you need to use that tool, send us a comment by using the **Was this page helpful?** feature on this **Administrative Tools in Windows 10** page. Details about the information you want for a tool will help us plan future content. 
+> If the linked content in this list doesn't provide the information you need to use that tool, send feedback with the **This page** link in the **Feedback** section at the bottom of this article.
 
 ## Related topics
 
-[Diagnostic Data Viewer](/windows/privacy/diagnostic-data-viewer-overview)
-
+[Diagnostic data viewer](/windows/privacy/diagnostic-data-viewer-overview)
