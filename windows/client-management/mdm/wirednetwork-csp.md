@@ -44,12 +44,14 @@ Root node.
 <a href="" id="lanxml"></a>**LanXML**  
 Optional. XML describing the wired network configuration and follows the LAN_profile schemas https://msdn.microsoft.com/library/windows/desktop/aa816366(v=vs.85).aspx.
 
-Supported operations are Add, Get, Replace, and Delete. Value type is string.
+- Supported operations are Add, Get, Replace, and Delete. 
+- Value type is string.
 
 <a href="" id="enableblockperiod"></a>**EnableBlockPeriod**  
  Optional. Enable block period (minutes), used to specify the duration for which automatic authentication attempts will be blocked from occurring after a failed authentication attempt.
 
-Supported operations are Add, Get, Replace, and Delete. Value type is integer.
+- Supported operations are Add, Get, Replace, and Delete. 
+- Value type is integer.
 
 The following example shows how to add a wired network profile:
 ```xml

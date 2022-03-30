@@ -31,13 +31,14 @@ TenantLockdown
 The root node.
 
 <a href="" id="requirenetworkinoobe"></a>**RequireNetworkInOOBE**  
-Specifies whether to require a network connection during the out-of-box experience (OOBE) at first logon.
+Specifies whether a network connection is required during the out-of-box experience (OOBE) at first logon.
 
 When RequireNetworkInOOBE is true, when the device goes through OOBE at first logon or after a reset, the user is required to choose a network before proceeding. There is no "skip for now" option.
 
-Value type is bool. Supported operations are Get and Replace.
+- Value type is bool. 
+- Supported operations are Get and Replace.
 
--  true - Require network in OOBE  
--  false - No network connection requirement in OOBE
+  -  True - Require network in OOBE.  
+  -  False - No network connection requirement in OOBE.
 
 Example scenario:  Henry is the IT admin at Contoso. He deploys 1000 devices successfully with RequireNetworkInOOBE set to true. When users accidentally or intentionally reset their device, they are required to connect to a network before they can proceed. Upon successful connection, users see the Contoso branded sign-in experience where they must use their Azure AD credentials. There is no option to skip the network connection and create a local account.
