@@ -1091,7 +1091,7 @@ The following list shows the CSPs supported in HoloLens devices:
 | [CertificateStore CSP](certificatestore-csp.md)    | Yes | Yes| Yes |
 | [ClientCertificateInstall CSP](clientcertificateinstall-csp.md)  | No | Yes       | Yes |
 | [DevDetail CSP](devdetail-csp.md)   | Yes | Yes       | Yes |
-| [DeveloperSetup CSP](developersetup-csp.md)   | No | Yes    (runtime provisioning via provisioning packages only; no MDM support)| Yes |
+| [DeveloperSetup CSP](developersetup-csp.md)   | No | Yes    (runtime provisioning via provisioning packages only; no MDM support)| Yes (runtime provisioning via provisioning packages only; no MDM support) |
 | [DeviceManageability CSP](devicemanageability-csp.md) | No | No | Yes |
 | [DeviceStatus CSP](devicestatus-csp.md)  | No | Yes  | Yes |
 | [DevInfo CSP](devinfo-csp.md)  | Yes | Yes       | Yes |

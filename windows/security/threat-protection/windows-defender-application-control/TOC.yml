@@ -104,10 +104,10 @@
     - name: Windows Defender Application Control operational guide
       href: windows-defender-application-control-operational-guide.md
       items: 
-        - name: Understanding Application Control event IDs
-          href: event-id-explanations.md
         - name: Understanding Application Control event tags
           href: event-tag-explanations.md
+        - name: Understanding Application Control event IDs
+          href: event-id-explanations.md
         - name: Query WDAC events with Advanced hunting
           href: querying-application-control-events-centrally-using-advanced-hunting.md
         - name: Known Issues

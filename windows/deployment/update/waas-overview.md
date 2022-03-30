@@ -4,9 +4,9 @@ description: Windows as a service is a way to build, deploy, and service Windows
 keywords: updates, servicing, current, deployment, General Availability Channel, General Availability Channel, feature, quality, rings, insider, tools
 ms.prod: w10
 ms.mktglfcycl: manage
-author: jaimeo
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: aaroncz
 manager: dougeby
 ms.topic: article
 ms.collection: highpri
@@ -142,6 +142,6 @@ There are many tools you can use to service Windows as a service. Each option ha
 | Windows Update | Yes (manual) | No | Delivery Optimization | None|
 | Windows Update for Business | Yes | No | Delivery Optimization | Other Group Policy objects |
 | WSUS | Yes | Yes | BranchCache or Delivery Optimization | Upstream/downstream server scalability |
-| Configuration Manager | Yes | Yes | BranchCache, Client Peer Cache, or Delivery Optimization. For the latter, see [peer-to-peer content distribution](/configmgr/sum/deploy-use/optimize-windows-10-update-delivery#peer-to-peer-content-distribution) and [Optimize Windows Update Delivery](./waas-optimize-windows-10-updates.md) | Distribution points, multiple deployment options |
+| Configuration Manager | Yes | Yes | BranchCache, Client Peer Cache, or Delivery Optimization. For the latter, see [peer-to-peer content distribution](/configmgr/sum/deploy-use/optimize-windows-10-update-delivery#peer-to-peer-content-distribution) and [Optimize Windows Update Delivery](../do/waas-optimize-windows-10-updates.md) | Distribution points, multiple deployment options |
 
 
