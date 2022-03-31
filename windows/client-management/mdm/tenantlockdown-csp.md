@@ -28,7 +28,7 @@ TenantLockdown
 ----RequireNetworkInOOBE
 ```
 <a href="" id="tenantlockdown"></a>**./Vendor/MSFT/TenantLockdown**  
-root node.
+The root node for the TenantLockdown configuration service provider.
 
 <a href="" id="requirenetworkinoobe"></a>**RequireNetworkInOOBE**  
 Specifies whether a network connection is required during the out-of-box experience (OOBE) at first logon.

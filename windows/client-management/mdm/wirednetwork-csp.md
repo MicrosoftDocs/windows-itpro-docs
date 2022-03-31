@@ -39,7 +39,7 @@ WiredNetwork
 ----EnableBlockPeriod
 ```
 <a href="" id="wirednetwork"></a>**./Device/Vendor/MSFT/WiredNetwork**  
-Root node.
+The root node for the wirednetwork configuration service provider.
 
 <a href="" id="lanxml"></a>**LanXML**  
 Optional. XML describing the wired network configuration and follows the LAN_profile schemas https://msdn.microsoft.com/library/windows/desktop/aa816366(v=vs.85).aspx.

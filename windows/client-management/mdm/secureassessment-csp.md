@@ -29,7 +29,7 @@ The root node for the SecureAssessment configuration service provider.
 The supported operation is Get.
 
 <a href="" id="launchuri"></a>**LaunchURI**  
-URI Link to an assessment that's automatically loaded when the secure assessment browser is launched.
+URI link to an assessment that's automatically loaded when the secure assessment browser is launched.
 
 The supported operations are Add, Delete, Get, and Replace.
 

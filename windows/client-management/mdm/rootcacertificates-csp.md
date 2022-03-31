@@ -14,13 +14,11 @@ ms.date: 03/06/2018
 
 # RootCATrustedCertificates CSP
 
-
 The RootCATrustedCertificates configuration service provider enables the enterprise to set the Root Certificate Authority (CA) certificates.
 
 > [!Note]
 > The **./User/** configuration is not supported for **RootCATrustedCertificates/Root/**.
 
- 
 The following shows the RootCATrustedCertificates configuration service provider in tree format.
 
 Detailed specification of the principal root nodes:
@@ -61,13 +59,13 @@ RootCATrustedCertificates
 ------------TemplateName
 ```
 <a href="" id="device-or-user"></a>**Device or User**  
-For device certificates, use **./Device/Vendor/MSFT** path and for user certificates use **./User/Vendor/MSFT** path.
+For device certificates, use **./Device/Vendor/MSFT** path, and for user certificates use **./User/Vendor/MSFT** path.
 
 <a href="" id="rootcatrustedcertificates"></a>**RootCATrustedCertificates**  
 The root node for the RootCATrustedCertificates configuration service provider.
 
 <a href="" id="rootcatrustedcertificates-root-"></a>**RootCATrustedCertificates/Root/**  
-Defines the certificate store that contains root, or self-signed certificates, in this case, the computer store.
+Defines the certificate store that contains root or self-signed certificates, in this case, the computer store.
 
 > [!Note]
 > The **./User/** configuration is not supported for **RootCATrustedCertificates/Root/**.
@@ -89,22 +87,22 @@ Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certifi
 
 The following nodes are all common to the **_CertHash_** node:
 
-<a href="" id="-encodedcertificate"></a>**/EncodedCertificate**  
+- <a href="" id="-encodedcertificate"></a>**/EncodedCertificate**  
 Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string value cannot include extra formatting characters such as embedded linefeeds, etc.  The supported operations are Add, Get, and Replace.
 
-<a href="" id="-issuedby"></a>**/IssuedBy**  
+- <a href="" id="-issuedby"></a>**/IssuedBy**  
 Returns the name of the certificate issuer. This is equivalent to the **Issuer** member in the CERT\_INFO data structure.  The only supported operation is Get.
 
-<a href="" id="-issuedto"></a>**/IssuedTo**  
+- <a href="" id="-issuedto"></a>**/IssuedTo**  
 Returns the name of the certificate subject. This is equivalent to the **Subject** member in the CERT\_INFO data structure.  The only supported operation is Get.
 
-<a href="" id="-validfrom"></a>**/ValidFrom**  
+- <a href="" id="-validfrom"></a>**/ValidFrom**  
 Returns the starting date of the certificate's validity. This is equivalent to the **NotBefore** member in the CERT\_INFO data structure.  The only supported operation is Get.
 
-<a href="" id="-validto"></a>**/ValidTo**  
+- <a href="" id="-validto"></a>**/ValidTo**  
 Returns the expiration date of the certificate. This is equivalent to the **NotAfter** member in the CERT\_INFO data structure.  The only supported operation is Get.
 
-<a href="" id="-templatename"></a>**/TemplateName**  
+- <a href="" id="-templatename"></a>**/TemplateName**  
 Returns the certificate template name.  The only supported operation is Get.
 
 ## Related topics

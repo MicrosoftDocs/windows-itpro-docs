@@ -39,7 +39,7 @@ SharedPC
 ----MaxPageFileSizeMB
 ```
 <a href="" id="--vendor-msft-sharedpc"></a>**./Vendor/MSFT/SharedPC**  
-root node.
+The root node for the SharedPC configuration service provider.
 
 The supported operation is Get.
 
