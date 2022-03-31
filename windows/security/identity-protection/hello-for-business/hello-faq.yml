@@ -81,11 +81,11 @@ sections:
 
       - question: Can I use an external Windows Hello compatible camera when my computer has a built in Windows Hello compatible camera?
         answer: |
-          Yes. Starting with Windows 10, version 21H1 an external Windows Hello compatible camera can be used if a device already supports an internal Windows Hello camera. When both cameras are present, the external camera is used for face authentication. For more information, see [IT tools to support Windows 10, version 21H1](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/it-tools-to-support-windows-10-version-21h1/ba-p/2365103).
+          Yes. Starting with Windows 10, version 21H1 an external Windows Hello compatible camera can be used if a device already supports an internal Windows Hello camera. When both cameras are present, the external camera is used for face authentication. For more information, see [IT tools to support Windows 10, version 21H1](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/it-tools-to-support-windows-10-version-21h1/ba-p/2365103). However, using external Hello cameras and accessories is restricted if ESS is enabled, please see [Windows Hello Enhanced Sign-in Security](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security#pluggableperipheral-biometric-sensors).
 
       - question: Can I use an external Windows Hello compatible camera or other Windows Hello compatible accessory when my laptop lid is closed or docked?
         answer: |
-          Some laptops and tablets with keyboards that close may not use an external Windows Hello compatible camera or other Windows Hello compatible accessory when the computer is docked with the lid closed. The issue has been addressed in the latest Windows Insiders builds and will be available in the future version of Windows 11. However, using external Hello cameras and accessories is restricted if ESS is enabled, please see [Windows Hello Enhanced Sign-in Security](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security#pluggableperipheral-biometric-sensors).
+          Some laptops and tablets with keyboards that close may not use an external Windows Hello compatible camera or other Windows Hello compatible accessory when the computer is docked with the lid closed. The issue has been addressed in the latest Windows Insiders builds and will be available in the future version of Windows 11.
 
       - question: Why does authentication fail immediately after provisioning hybrid key trust?
         answer: |
