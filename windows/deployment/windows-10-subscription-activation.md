@@ -125,6 +125,8 @@ If the device is running Windows 10, version 1809 or later:
 
    ![Subscription Activation with MFA example 3.](images/sa-mfa3.png)
 
+Organizations that use Azure Active Directory Conditional Access may want to exclude the Universal Store Service APIs and Web Application, AppID 45a330b1-b1ec-4cc1-9161-9f03992aa49f from their all users all cloud apps MFA policy to avoid this issue.
+
 ### Windows 10/11 Education requirements
 
 - Windows 10 Pro Education, version 1903 or later installed on the devices to be upgraded.
