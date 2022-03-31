@@ -14,7 +14,6 @@ ms.date: 12/05/2017
 
 # Reporting DDF file
 
-
 This topic shows the OMA DM device description framework (DDF) for the Reporting configuration service provider. This CSP was added in Windows 10, version 1511. Support for desktop security auditing was added for the desktop in Windows 10, version 1607.
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
@@ -73,7 +72,7 @@ The XML below is the current version for the desktop CSP.
               <AccessType>
                 <Get />
               </AccessType>
-              <Description>A time range is supported by setting a start and stop time in ISO 8601 format.  If the start/stop value is not preset and a GetValue is called to RetrieveByTimeRange then the missing values will be interpreted as either the first existing or the last existing. For example, not setting a start date and setting an end date will return all known logs that exist before the end date. Setting a start date but not an end date will return all the logs that exist from the start date. Not setting a start and end date will return all logs.</Description>
+              <Description>A time range is supported by setting a start and stop time in ISO 8601 format. If the start/stop value is not preset and a GetValue is called to RetrieveByTimeRange, then the missing values will be interpreted as either the first existing or the last existing. For example, not setting a start date, and setting an end date will return all known logs that exist before the end date. Setting a start date but not an end date will return all the logs that exist from the start date. Not setting a start and end date will return all logs.</Description>
               <DFFormat>
                 <node />
               </DFFormat>
@@ -159,7 +158,7 @@ The XML below is the current version for the desktop CSP.
                   <Replace />
                 </AccessType>
                 <DefaultValue>0</DefaultValue>
-                <Description>Specifies the type of logs to retrieve</Description>
+                <Description>Specifies the type of logs to retrieve.</Description>
                 <DFFormat>
                   <int />
                 </DFFormat>
@@ -181,7 +180,7 @@ The XML below is the current version for the desktop CSP.
               <AccessType>
                 <Get />
               </AccessType>
-              <Description>The count range will return the configured number of logs starting from the StartTime value.  The start time is expressed in ISO8601 formt. The caller will configure the number of desired logs by calling set on the LogCount and StartTime, then retrieve the logs by calling get on Logs node. The call will return the number of desired logs or less if the total number of logs are less than the desired number of logs. The logs are returned from StartTime forward.</Description>
+              <Description>The count range will return the configured number of logs starting from the StartTime value. The start time is expressed in ISO8601 format. The caller will configure the number of desired logs by calling set on the LogCount and StartTime, and then retrieve the logs by calling get on Logs node. The call will return the number of desired logs or less, if the total number of logs are less than the desired number of logs. The logs are returned from StartTime forward.</Description>
               <DFFormat>
                 <node />
               </DFFormat>
@@ -266,7 +265,7 @@ The XML below is the current version for the desktop CSP.
                   <Replace />
                 </AccessType>
                 <DefaultValue>0</DefaultValue>
-                <Description>Specifies the type of logs to retrieve</Description>
+                <Description>Specifies the type of logs to retrieve.</Description>
                 <DFFormat>
                   <int />
                 </DFFormat>

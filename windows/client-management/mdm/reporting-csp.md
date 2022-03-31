@@ -14,7 +14,6 @@ ms.date: 06/26/2017
 
 # Reporting CSP
 
-
 The Reporting configuration service provider is used to retrieve Windows Information Protection (formerly known as Enterprise Data Protection) and security auditing logs. This CSP was added in Windows 10, version 1511.
 
 The following DDF format shows the Reporting configuration service provider in tree format.
@@ -36,7 +35,7 @@ Reporting
 ```
 
 <a href="" id="reporting"></a>**Reporting**  
-Root node.
+The root node for the reporting configuration service provider.
 
 <a href="" id="reporting-enterprisedataprotection"></a>**Reporting/EnterpriseDataProtection**  
 Interior node for retrieving the Windows Information Protection (formerly known as Enterprise Data Protection) logs.
@@ -54,7 +53,7 @@ Here are the other possible scenarios:
 
 -   If the StartTime and StopTime are not specified, then it returns all existing logs.
 -   If the StopTime is specified, but the StartTime is not specified, then all logs that exist before the StopTime are returned.
--   If the StartTime is specified, but the StopTime is not specified, then all that logs that exist from the StartTime are returned.
+-   If the StartTime is specified, but the StopTime is not specified, then all those logs that exist from the StartTime are returned.
 
 <a href="" id="retrievebycount"></a>**RetrieveByCount**  
 Interior node for retrieving a specified number of logs from the StartTime. The StartTime is expressed in ISO 8601 format. You can set the number of logs required by setting LogCount and StartTime. It returns the specified number of logs or less, if the total number of logs is less than LogCount.
@@ -62,37 +61,32 @@ Interior node for retrieving a specified number of logs from the StartTime. The 
 <a href="" id="logs"></a>**Logs**  
 Contains the reporting logs.
 
-Value type is XML.
-
-Supported operations is Get.
+- Value type is XML. 
+- Supported operations is Get.
 
 <a href="" id="starttime"></a>**StartTime**  
 Specifies the starting time for retrieving logs.
 
-Value type is string. Use ISO 8601 format.
-
-Supported operations are Get and Replace.
+- Value type is string. Use ISO 8601 format.
+- Supported operations are Get and Replace.
 
 <a href="" id="stoptime"></a>**StopTime**  
 Specifies the ending time for retrieving logs.
 
-Value type is string. Use ISO 8601 format.
-
-Supported operations are Get and Replace.
+- Value type is string. Use ISO 8601 format.
+- Supported operations are Get and Replace.
 
 <a href="" id="type"></a>**Type**  
 Added in Windows 10, version 1703. Specifies the type of logs to retrieve. You can use this to retrieve the WIP learning logs.
 
-Value type is integer.
-
-Supported operations are Get and Replace.
+- Value type is integer.
+- Supported operations are Get and Replace.
 
 <a href="" id="logcount"></a>**LogCount**  
 Specifies the number of logs to retrieve from the StartTime.
 
-Value type is int.
-
-Supported operations are Get and Replace.
+- Value type is int.
+- Supported operations are Get and Replace.
 
 ## Example
 
