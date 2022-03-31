@@ -176,7 +176,7 @@ The XML below is the DDF for Windows 10, version 1703.
                     <Replace />
                 </AccessType>
                 <DefaultValue>300</DefaultValue>
-                <Description>The amount of time before the PC sleeps, giving in seconds. 0 means the PC never sleeps. Default is 5 minutes. This node is optional. If used, it needs to be set before the action on "EnableSharedPCMode" node is taken.</Description>
+                <Description>The amount of time before the PC sleeps, given in seconds. 0 means the PC never sleeps. Default is 5 minutes. This node is optional. If used, it needs to be set before the action on "EnableSharedPCMode" node is taken.</Description>
                 <DFFormat>
                     <int />
                 </DFFormat>

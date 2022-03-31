@@ -39,7 +39,7 @@ SharedPC
 ----MaxPageFileSizeMB
 ```
 <a href="" id="--vendor-msft-sharedpc"></a>**./Vendor/MSFT/SharedPC**  
-The root node for the SharedPC configuration service provider.
+root node.
 
 The supported operation is Get.
 
@@ -57,7 +57,9 @@ A boolean value that specifies whether the policies for education environment ar
 
 The supported operations are Add, Get, Replace, and Delete.
 
-The default value changed to false in Windows 10, version 1703. The default value is Not Configured and this node needs to be configured independent of EnableSharedPCMode. In Windows 10, version 1607, the value is set to True and the education environment is automatically configured when SharedPC mode is configured.
+The default value changed to false in Windows 10, version 1703. The default value is Not Configured and this node needs to be configured independent of EnableSharedPCMode. 
+
+In Windows 10, version 1607, the value is set to True and the education environment is automatically configured when SharedPC mode is configured.
 
 <a href="" id="setpowerpolicies"></a>**SetPowerPolicies**  
 Optional. A boolean value that specifies that the power policies should be set when configuring SharedPC mode.
@@ -140,9 +142,9 @@ For Windows 10, version 1607, here is the list shows the supported values:
 
 For Windows 10, version 1703, here is the list of supported values:  
 
-- 0 - Delete immediately
-- 1 - Delete at disk space threshold
-- 2 - Delete at disk space threshold and inactive threshold
+- 0 - Delete immediately.
+- 1 - Delete at disk space threshold.
+- 2 - Delete at disk space threshold and inactive threshold.
 
 The default value is Not Configured. Its value in the SharedPC provisioning package is 1 or 2.
 
@@ -181,7 +183,8 @@ The default value is Not Configured and behavior is no such restriction applied.
 <a href="" id="kioskmodeaumid"></a>**KioskModeAUMID**  
 Added in Windows 10, version 1703. Specifies the AUMID of the app to use with assigned access. This node is optional. 
 
-Value type is string. Supported operations are Add, Get, Replace, and Delete.  
+- Value type is string. 
+- Supported operations are Add, Get, Replace, and Delete.  
 
 > [!NOTE]
 > If used, this value must set before the action on the **EnableSharedPCMode** node is taken.
@@ -197,7 +200,9 @@ Value type is string. Supported operations are Add, Get, Replace, and Delete.
 <a href="" id="inactivethreshold"></a>**InactiveThreshold**  
 Added in Windows 10, version 1703. Accounts will start being deleted when they have not been logged on during the specified period, given as number of days.
 
-The default value is Not Configured. Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+- The default value is Not Configured. 
+- Value type is integer. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 The default in the SharedPC provisioning package is 30.
 
@@ -207,7 +212,9 @@ Added in Windows 10, version 1703. Maximum size of the paging file in MB. Applie
 > [!NOTE]
 > If used, this value must set before the action on the **EnableSharedPCMode** node is taken.
 
-Default value is Not Configured. Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+- Default value is Not Configured. 
+- Value type is integer. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 The default in the SharedPC provisioning package is 1024.
 

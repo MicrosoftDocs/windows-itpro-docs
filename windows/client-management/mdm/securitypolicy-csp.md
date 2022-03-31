@@ -14,13 +14,10 @@ ms.date: 06/26/2017
 
 # SecurityPolicy CSP
 
-
 The SecurityPolicy configuration service provider is used to configure security policy settings for WAP push, OMA Client Provisioning, OMA DM, Service Indication (SI), Service Loading (SL), and MMS.
 
 > [!NOTE]
 > This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_DEVICE\_MANAGEMENT\_SECURITY\_POLICIES capabilities to be accessed from a network configuration application.
-
- 
 
 For the SecurityPolicy CSP, you cannot use the Replace command unless the node already exists.
 
