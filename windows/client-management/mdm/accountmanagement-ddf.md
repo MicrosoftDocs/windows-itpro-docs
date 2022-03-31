@@ -13,7 +13,6 @@ manager: dansimp
 
 # AccountManagement DDF file 
 
-
 This topic shows the OMA DM device description framework (DDF) for the **AccountManagement** configuration service provider.
 
 The XML below is for Windows 10, version 1803.
@@ -74,7 +73,7 @@ The XML below is for Windows 10, version 1803.
                 <Replace />
               </AccessType>
               <DefaultValue>false</DefaultValue>
-              <Description>Enable profile lifetime mangement for shared or communal device scenarios.</Description>
+              <Description>Enable profile lifetime management for shared or communal device scenarios.</Description>
               <DFFormat>
                 <bool />
               </DFFormat>
@@ -198,3 +197,7 @@ The XML below is for Windows 10, version 1803.
       </Node>
 </MgmtTree>
 ```
+
+## Related topics
+
+[AccountManagement configuration service provider](accountmanagement-csp.md)

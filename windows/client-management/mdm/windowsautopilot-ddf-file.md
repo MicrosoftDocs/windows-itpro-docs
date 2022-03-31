@@ -14,7 +14,7 @@ manager: dansimp
 # WindowsAutoPilot DDF file
 
 > [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic shows the device description framework (DDF) for the **WindowsAutoPilot** configuration service provider. 
 
@@ -27,7 +27,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
           <AccessType>
             <Get />
           </AccessType>
-          <Description>These settings enable configuration of Windows Autopilot</Description>
+          <Description>These settings enable configuration of Windows Autopilot.</Description>
           <DFFormat>
             <node />
           </DFFormat>
@@ -74,3 +74,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
   </cspDefinition>
 </identity>
 ```
+
+## Related topics
+
+[WindowsAutopilot configuration service provider](windowsautopilot-csp.md)

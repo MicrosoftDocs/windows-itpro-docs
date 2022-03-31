@@ -34,7 +34,7 @@ The XML below is the current version for this CSP.
             <AccessType>
                 <Get />
             </AccessType>
-            <Description>Allow removal of user installed and pre-installed applications, with option to persist user data</Description>
+            <Description>Allow removal of user installed and pre-installed applications, with option to persist user data.</Description>
             <DFFormat>
                 <node />
             </DFFormat>
@@ -54,7 +54,7 @@ The XML below is the current version for this CSP.
                 <AccessType>                    
                     <Exec />
                 </AccessType>
-                <Description>CleanPC operation without any retention of User data</Description>
+                <Description>CleanPC operation without any retention of User data.</Description>
                 <DFFormat>
                     <int />
                 </DFFormat>
@@ -75,7 +75,7 @@ The XML below is the current version for this CSP.
                 <AccessType>
                     <Exec />
                 </AccessType>
-                <Description>CleanPC operation with retention of User data</Description>
+                <Description>CleanPC operation with retention of User data.</Description>
                 <DFFormat>
                     <int />
                 </DFFormat>
@@ -94,12 +94,6 @@ The XML below is the current version for this CSP.
 </MgmtTree>
 ```
 
- 
+## Related topics
 
- 
-
-
-
-
-
-
+[CleanPC configuration service provider](cleanpc-csp.md)

@@ -1,6 +1,6 @@
 ---
 title: ClientCertificateInstall CSP
-description: The ClientCertificateInstall configuration service provider (CSP) enables the enterprise to install client certificates.
+description: Learn how the ClientCertificateInstall configuration service provider (CSP) enables the enterprise to install client certificates.
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
 ms.reviewer: 
 manager: dansimp
@@ -19,7 +19,7 @@ The ClientCertificateInstall configuration service provider enables the enterpri
 For PFX certificate installation and SCEP installation, the SyncML commands must be wrapped in atomic commands to ensure that enrollment execution isn't triggered until all settings are configured. The Enroll command must be the last item in the atomic block.
 
 > [!Note]
-> Currently in Windows 10, version 1511, when using the ClientCertificateInstall to install certificates to the device store and the user store and both certificates are sent to the device in the same MDM payload, the certificate intended for the device store will also get installed in the user store. This may cause issues with Wi-Fi or VPN when choosing the correct certificate to establish a connection. We are working to fix this issue.
+> Currently in Windows 10, version 1511, when using the ClientCertificateInstall to install certificates to the device store and the user store, both certificates are sent to the device in the same MDM payload and the certificate intended for the device store will also get installed in the user store. This may cause issues with Wi-Fi or VPN when choosing the correct certificate to establish a connection. We are working to fix this issue.
 
 You can only set PFXKeyExportable to true if KeyLocation=3. For any other KeyLocation value, the CSP will fail.
 
@@ -99,7 +99,7 @@ The data type is an integer corresponding to one of the following values:
 | 1     | Install to TPM if present, fail if not present.                                                               |
 | 2     | Install to TPM if present. If not present, fall back to software.                                              |
 | 3     | Install to software.                                                                                          |
-| 4     | Install to Windows Hello for Business (formerly known as Microsoft Passport for Work) whose name is specified |
+| 4     | Install to Windows Hello for Business (formerly known as Microsoft Passport for Work) whose name is specified. |
 
 <a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-containername"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/ContainerName**  
 Optional. Specifies the Windows Hello for Business (formerly known as Microsoft Passport for Work) container name (if Windows Hello for Business storage provider (KSP) is chosen for the KeyLocation). If this node isn't specified when Windows Hello for Business KSP is chosen, enrollment will fail.
@@ -119,7 +119,7 @@ If a blob already exists, the Add operation will fail. If Replace is called on t
 
 If Add is called on this node for a new PFX, the certificate will be added. When a certificate doesn't exist, Replace operation on this node will fail.
 
-In other words, using Replace or Add will result in the effect of either overwriting the old certificate or adding a new certificate CRYPT_DATA_BLOB, which can be found in <a href="/previous-versions/windows/desktop/legacy/aa381414(v=vs.85)" data-raw-source="[CRYPT\_INTEGER\_BLOB](/previous-versions/windows/desktop/legacy/aa381414(v=vs.85))">CRYPT_INTEGER_BLOB</a>.
+In other words, using Replace or Add will result in the effect of either overwriting the old certificate or adding a new certificate CRYPT_DATA_BLOB, which can be found in [CRYPT\_INTEGER\_BLOB](/previous-versions/windows/desktop/legacy/aa381414(v=vs.85)).
 
 <a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-pfxcertpassword"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/PFXCertPassword**  
 Password that protects the PFX blob. This is required if the PFX is password protected.
@@ -133,9 +133,9 @@ Optional. Used to specify whether the PFX certificate password is encrypted with
 
 The data type is int. Valid values:
 
--   0 - Password isn't encrypted.
--   1 - Password is encrypted with the MDM certificate.
--   2 - Password is encrypted with custom certificate.
+- 0 - Password isn't encrypted.
+- 1 - Password is encrypted with the MDM certificate.
+- 2 - Password is encrypted with custom certificate.
 
 When PFXCertPasswordEncryptionType =2, you must specify the store name in PFXCertPasswordEncryptionStore setting.
 
@@ -187,7 +187,7 @@ A node required for SCEP certificate enrollment. Parent node to group SCEP cert 
 Supported operations are Get, Add, Replace, and Delete.
 
 > [!Note]
-> Although the child nodes under Install support Replace commands, once the Exec command is sent to the device, the device will take the values that are set when the Exec command is accepted. The server should not expect the node value change after Exec command is accepted, as it will impact the current enrollment underway. The server should check the Status node value and make sure the device is not at an unknown state before changing child node values.
+> Although the child nodes under Install supports Replace commands, once the Exec command is sent to the device, the device will take the values that are set when the Exec command is accepted. The server should not expect the node value change after Exec command is accepted, as it will impact the current enrollment underway. The server should check the Status node value and make sure the device is not at an unknown state before changing child node values.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-serverurl"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/ServerURL**  
 Required for SCEP certificate enrollment. Specifies the certificate enrollment server. Multiple server URLs can be listed, separated by semicolons.
@@ -322,9 +322,9 @@ Data type is string.
 
 Valid values are:
 
--   Days (Default)
--   Months
--   Years
+- Days (Default)
+- Months
+- Years
 
 > [!NOTE]
 > The device only sends the MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) to the SCEP server as part of certificate enrollment request. Depending on the server configuration, the server defines how to use this valid period to create the certificate.
@@ -608,7 +608,7 @@ Enroll a client certificate through SCEP.
 </SyncML>
 ```
 
-Add a PFX certificate. The PFX certificate password is encrypted with a custom certificate fro "My" store.
+Add a PFX certificate. The PFX certificate password is encrypted with a custom certificate from "My" store.
 
 ```xml
 <SyncML>

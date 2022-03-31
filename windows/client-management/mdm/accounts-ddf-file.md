@@ -1,6 +1,6 @@
 ---
 title: Accounts DDF file
-description: XML file containing the device description framework (DDF) for the Accounts configuration service provider.
+description: View the XML file containing the device description framework (DDF) for the Accounts configuration service provider.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -13,10 +13,9 @@ manager: dansimp
 
 # Accounts CSP 
 
-
 This topic shows the OMA DM device description framework (DDF) for the **Accounts** configuration service provider.
 
-The XML below is for Windows 10, version 1803.
+The XML below is for Windows 10, version 1803 and later.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -157,7 +156,7 @@ The XML below is for Windows 10, version 1803.
                   <Add />
                 </AccessType>
                 <DefaultValue>1</DefaultValue>
-                <Description>This optional node specifies the local user group that a local user account should be joined to.  If the node is not set, the new local user account is joined just to the Standard Users group.  Set the value to 2 for Administrators group. This setting can be managed remotely.</Description>
+                <Description>This optional node specifies the local user group that a local user account should be joined.  If the node is not set, the new local user account is joined just to the Standard Users group.  Set the value to 2 for Administrators group. This setting can be managed remotely.</Description>
                 <DFFormat>
                   <int />
                 </DFFormat>
@@ -177,3 +176,7 @@ The XML below is for Windows 10, version 1803.
       </Node>
 </MgmtTree>
 ```
+
+## Related topics
+
+[Accounts configuration service provider](accounts-csp.md)

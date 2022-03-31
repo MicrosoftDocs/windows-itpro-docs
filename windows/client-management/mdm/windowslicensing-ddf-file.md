@@ -15,13 +15,13 @@ ms.date: 07/16/2017
 # WindowsLicensing DDF file
 
 > [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic shows the OMA DM device description framework (DDF) for the **WindowsLicensing** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
-The XML below is for Windows 10, version 1809.
+The XML below is for Windows 10, version 1809 and later.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -104,7 +104,7 @@ The XML below is for Windows 10, version 1809.
             <AccessType>
               <Get />
             </AccessType>
-            <Description>Returns a value that maps to the Windows 10 edition running on devices. Take the value, convert it into its hexadecimal equivalent and search the GetProductInfo function page on MSDN for edition information.</Description>
+            <Description>Returns a value that maps to the Windows 10 or Windows 11 edition running on devices. Take the value, convert it into its hexadecimal equivalent and search the GetProductInfo function page on MSDN for edition information.</Description>
             <DFFormat>
               <int />
             </DFFormat>
@@ -128,7 +128,7 @@ The XML below is for Windows 10, version 1809.
             <AccessType>
               <Get />
             </AccessType>
-            <Description>Returns the status of an edition upgrade on Windows 10 client devices.	 Status: 0 = Failed, 1 = Pending, 2 = In progress, 3 = Completed, 4 = Unknown</Description>
+            <Description>Returns the status of an edition upgrade on Windows 10 or Windows 11 client devices.	 Status: 0 = Failed, 1 = Pending, 2 = In progress, 3 = Completed, 4 = Unknown</Description>
             <DFFormat>
               <int />
             </DFFormat>
@@ -349,3 +349,7 @@ The XML below is for Windows 10, version 1809.
       </Node>
 </MgmtTree>
 ```
+
+## Related topics
+
+[WindowsLicensing configuration service provider](windowslicensing-csp.md)
