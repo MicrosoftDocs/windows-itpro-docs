@@ -14,7 +14,6 @@ ms.date: 08/13/2018
 
 # RemoteWipe DDF file
 
-
 This topic shows the OMA DM device description framework (DDF) for the **RemoteWipe** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
@@ -109,7 +108,7 @@ The XML below is the DDF for Windows 10, version 1809.
                 <DFType>
                     <MIME>text/plain</MIME>
                 </DFType>
-                <Description>Exec on this node will perform a remote wipe on the device and fully clean the internal drive. In some device configurations, this command may leave the device unable to boot. The return status code shows whether the device accepted the Exec command.</Description>
+                <Description>Exec on this node will perform a remote wipe on the device, and fully clean the internal drive. In some device configurations, this command may leave the device unable to boot. The return status code shows whether the device accepted the Exec command.</Description>
             </DFProperties>
         </Node>
         <Node>

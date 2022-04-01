@@ -14,7 +14,6 @@ ms.date: 06/26/2017
 
 # RemoteRing CSP
 
-
 You can use the RemoteRing configuration service provider to remotely trigger a device to produce an audible ringing sound, regardless of the volume that is set on the device.
 
 The following DDF format shows the RemoteRing configuration service provider in tree format.
@@ -39,7 +38,6 @@ Required. The node accepts requests to ring the device.
 The supported operation is Exec.
 
 ## Examples
-
 
 The following sample shows how to initiate a remote ring on the device.
 
