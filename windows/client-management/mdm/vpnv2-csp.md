@@ -771,7 +771,9 @@ Reserved for future use.
 Reserved for future use.
 
 <a href="" id="vpnv2-profilename-nativeprofile-cryptographysuite"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/CryptographySuite**  
-Added in Windows 10, version 1607. Properties of IPSec tunnels.
+Added in Windows 10, version 1607. Properties of IPSec tunnels. 
+
+[!NOTE] If you specify any of the properties under CryptographySuite, you must specify all of them. It's not valid to specify just some of the properties.
 
 <a href="" id="vpnv2-profilename-nativeprofile-cryptographysuite-authenticationtransformconstants"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/CryptographySuite/AuthenticationTransformConstants**  
 Added in Windows 10, version 1607.
