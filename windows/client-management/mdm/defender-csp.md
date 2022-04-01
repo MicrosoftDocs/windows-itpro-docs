@@ -10,7 +10,7 @@ ms.prod: w10
 ms.technology: windows
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 10/04/2021
+ms.date: 02/22/2022
 ---
 
 # Defender CSP
@@ -75,6 +75,7 @@ Defender
 --------EngineUpdatesChannel (Added with the 4.18.2106.5 Defender platform release)
 --------SecurityIntelligenceUpdatesChannel (Added with the 4.18.2106.5 Defender platform release)
 --------DisableGradualRelease (Added with the 4.18.2106.5 Defender platform release)
+--------PassiveRemediation (Added with the 4.18.2202.X Defender platform release)
 ----Scan
 ----UpdateSignature
 ----OfflineScan (Added in Windows 10 version 1803)
@@ -227,6 +228,14 @@ Supported operation is Get.
 Information about the execution status of the threat.
 
 The data type is integer.
+
+The following list shows the supported values:
+
+- 0 = Unknown
+- 1 = Blocked
+- 2 = Allowed
+- 3 = Running
+- 4 = Not running
 
 Supported operation is Get.
 
@@ -623,9 +632,9 @@ Valid values are:
 <a href="" id="configuration-hideexclusionsfromlocaladmins"></a>**Configuration/HideExclusionsFromLocalAdmins**<br>
 This policy setting controls whether or not exclusions are visible to Local Admins.  For end users (that are not Local Admins) exclusions are not visible, whether or not this setting is enabled.
 
-If you disable or do not configure this setting, Local Admins will be able to see exclusions in the Windows Security App and via PowerShell.
+If you disable or do not configure this setting, Local Admins will be able to see exclusions in the Windows Security App, in the registry, and via PowerShell.
 
-If you enable this setting, Local Admins will no longer be able to see the exclusion list in the Windows Security app or via PowerShell.
+If you enable this setting, Local Admins will no longer be able to see the exclusion list in the Windows Security app, in the registry, or via PowerShell.
 
 > [!NOTE]
 > Applying this setting will not remove exclusions, it will only prevent them from being visible to Local Admins. This is reflected in **Get-MpPreference**.
@@ -820,6 +829,16 @@ More details:
 
 - [Manage the gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/manage-gradual-rollout)  
 - [Create a custom gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/configure-updates)  
+
+<a href="" id="configuration-passiveremediation"></a>**Configuration/PassiveRemediation**
+This policy setting enables or disables EDR in block mode (recommended for devices running Microsoft Defender Antivirus in passive mode). For more information, see Endpoint detection and response in block mode | Microsoft Docs. Available with platform release: 4.18.2202.X
+
+The data type is integer
+
+Supported values:
+- 1: Turn EDR in block mode on
+- 0: Turn EDR in block mode off
+
 
 <a href="" id="scan"></a>**Scan**  
 Node that can be used to start a Windows Defender scan on a device.

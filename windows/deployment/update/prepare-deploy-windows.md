@@ -4,11 +4,11 @@ description: Final steps to get ready to deploy Windows, including preparing inf
 keywords: updates, servicing, current, deployment, General Availability Channel, feature, quality, rings, insider, tools
 ms.prod: w10
 ms.mktglfcycl: manage
-author: jaimeo
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: aaroncz
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.topic: article
 ms.collection: m365initiative-coredeploy
 ---
@@ -123,7 +123,7 @@ The specific endpoints can vary between Windows versions. See, for example, [Win
 
 
 ### Optimize download bandwidth
-Set up [Delivery Optimization](waas-delivery-optimization.md) for peer network sharing or Microsoft Connected Cache.
+Set up [Delivery Optimization](../do/waas-delivery-optimization.md) for peer network sharing or Microsoft Connected Cache.
 
 ### Address unhealthy devices
 

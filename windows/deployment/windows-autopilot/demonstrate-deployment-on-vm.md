@@ -8,8 +8,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-author: greg-lindsay
-ms.author: greglin
+author: aczechowski
+ms.author: aaroncz
 ms.collection:
   - M365-modern-desktop
   - highpri
@@ -88,7 +88,7 @@ If you already have Hyper-V and a Windows 10 VM, you can skip directly to the [C
     - [Prepare the app for Intune](#prepare-the-app-for-intune)
     - [Create app in Intune](#create-app-in-intune)
     - [Assign the app to your Intune profile](#assign-the-app-to-your-intune-profile)
-  - [Add Office 365](#add-office-365)
+  - [Add Office 365](#add-microsoft-365-apps)
     - [Create app in Intune](#create-app-in-intune)
     - [Assign the app to your Intune profile](#assign-the-app-to-your-intune-profile)
 - [Glossary](#glossary)
@@ -508,7 +508,7 @@ Select **Next** to continue with the **Out-of-box experience (OOBE)** settings:
 | Privacy Settings | Hide |
 | Hide change account options | Hide |
 | User account type | Standard |
-| Allow White Glove OOBE | No |
+| Allow pre-provisioned deployment | No |
 | Language (Region) | Operating system default |
 | Automatically configure keyboard | Yes |
 | Apply device name template | No |
@@ -814,9 +814,9 @@ At this point, you have completed steps to add a Win32 app to Intune.
 
 For more information on adding apps to Intune, see [Intune Standalone - Win32 app management](/intune/apps-win32-app-management).
 
-### Add Office 365
+### Add Microsoft 365 Apps
 
-#### Create app in Intune
+#### Create app in Microsoft Endpoint Manager
 
 Log in to the Azure portal and select **Intune**.
 
@@ -824,7 +824,7 @@ Go to **Intune > Clients apps > Apps**, and then select the **Add** button to cr
 
 ![Create app step 1.](images/app17.png)
 
-Under **App Type**, select **Office 365 Suite > Windows 10**:
+Under **App Type**, select **Microsoft 365 Apps > Windows 10 and later**:
 
 ![Create app step 2.](images/app18.png)
 
