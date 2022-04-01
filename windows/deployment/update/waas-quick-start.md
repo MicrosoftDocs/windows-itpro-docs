@@ -31,7 +31,7 @@ Some new terms have been introduced as part of Windows as a service, so you shou
 - **Insider Preview** builds are made available during the development of the features that will be shipped in the next feature update, enabling organizations to validate new features and confirm compatibility with existing apps and infrastructure, providing feedback to Microsoft on any issues encountered.
 - **Servicing channels** allow organizations to choose when to deploy new features. 
   - The **General Availability Channel** receives feature updates annually.
-  - The **Long-Term Servicing Channel**, which meant only for specialized devices (which typically don't run Office) such as those that control medical equipment or ATMs, receives new feature releases every two to three years.
+  - The **Long-Term Servicing Channel**, which is meant only for specialized devices (which typically don't run Office) such as those that control medical equipment or ATMs, receives new feature releases every two to three years.
 - **Deployment rings** are groups of devices used to initially pilot, and then to broadly deploy, each feature update in an organization. 
 
 See [Overview of Windows as a service](waas-overview.md) for more information.
