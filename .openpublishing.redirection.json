@@ -19504,6 +19504,11 @@
      "source_path": "windows/education/partners.yml",
      "redirect_url": "/education/",
      "redirect_document_id": true
+    },
+    { 
+     "source_path": "windows/education/developers.yml",
+     "redirect_url": "/education/",
+     "redirect_document_id": true
     }    
   ]
 }
