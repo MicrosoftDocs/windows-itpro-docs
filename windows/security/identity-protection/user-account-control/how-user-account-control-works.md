@@ -60,7 +60,7 @@ With UAC enabled, Windows 10 or Windows 11 prompts for consent or prompts for 
 
 The consent prompt is presented when a user attempts to perform a task that requires a user's administrative access token. The following is an example of the UAC consent prompt.
 
-![uac consent prompt.](images/uacconsentprompt.gif)
+![uac consent prompt.](images/uacconsentprompt.png)
 
 **The credential prompt**
 
@@ -68,7 +68,7 @@ The credential prompt is presented when a standard user attempts to perform a ta
 
 The following is an example of the UAC credential prompt.
 
-![uac credential prompt.](images/uaccredentialprompt.gif)
+![uac credential prompt.](images/uaccredentialprompt.png)
 
 **UAC elevation prompts**
 
