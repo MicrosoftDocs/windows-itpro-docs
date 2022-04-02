@@ -20,34 +20,37 @@ manager: dougeby
 -   Windows 10
 -   Windows 11
 
-Provisioning packages can be applied to client devices during the first-run experience (out-of-box experience or "OOBE") and after ("runtime").
+Provisioning packages can be applied to client devices during initial setup (out-of-box experience or "OOBE") and after ("runtime").
 
 >[!NOTE]
 >
 > - Applying a provisioning package to a desktop device requires administrator privileges on the device.
 > - You can interrupt a long-running provisioning process by pressing ESC.
 
-## During initial setup, from a USB drive
+## During initial setup
 
-1. Start with a computer on the first-run setup screen. If the PC has gone past this screen, reset the PC to start over. To reset the PC, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**.
+To apply a provisioning package from a USB drive during initial setup:
 
-    ![The first screen to set up a new PC.](../images/oobe.jpg)
+1. Start with a device on the initial setup screen. If the device has gone past this screen, reset the device to start over. To reset, go to **Settings** > **System** > [**Recovery**](ms-settings:recovery) > **Reset this PC**.
 
-2. Insert the USB drive. Windows Setup will recognize the drive and ask if you want to set up the device. Select **Set up**.
+   ![The first screen when setting up a new PC.](../images/oobe.png)
 
-    ![Set up device?](../images/setupmsg.jpg)
+2. Insert the USB drive. If nothing happens when you insert the USB drive, press the Windows key five times.
 
-3. The next screen asks you to select a provisioning source. Select **Removable Media** and select **Next**.
+   - If there is only one provisioning package on the USB drive, the provisioning package is applied. See step #5.
+   - If there is more than one provisioning package on the USB drive, Windows setup will recognize the drive and ask how you want to provision the device. Select **Install provisioning package** and select **Next**.
 
-    ![Provision this device.](../images/prov.jpg)
+   ![What would you like to do?](../images/provisioning-oobe-choice.png)
 
-4. Select the provisioning package (`.ppkg`) that you want to apply, and select **Next**.
+3. Select the provisioning package (`.ppkg`) that you want to apply, and select **Yes**.
 
-    ![Choose a package.](../images/choose-package.png)
+    ![Choose a package.](../images/provisioning-oobe-choose-package.png)
 
-5. Select **Yes, add it**.
+4. The selected provisioning package will install and apply to the device.
 
-    ![Do you trust this package?](../images/trust-package.png)
+   ![Setting up your PC.](../images/provisioning-oobe-installing.png)
+
+5. Wait for the device to load and begin applying the provisioning package. Once you see "You can remove your removable media now!" you can remove your USB drive. Windows will continue provisioning the device.
 
 ## After setup, from a USB drive, network folder, or SharePoint site
 
