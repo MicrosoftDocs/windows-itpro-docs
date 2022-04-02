@@ -27,6 +27,9 @@ Provisioning packages can be applied to client devices during initial setup (out
 > - Applying a provisioning package to a desktop device requires administrator privileges on the device.
 > - You can interrupt a long-running provisioning process by pressing ESC.
 
+>[!TIP]
+>In addition to the methods below, you can use the PowerShell cmdlet [Install-ProvisioningPackage](/powershell/module/provisioning/Install-ProvisioningPackage) with `-LogsDirectoryPath` to get logs for the operation.
+
 ## During initial setup
 
 To apply a provisioning package from a USB drive during initial setup:

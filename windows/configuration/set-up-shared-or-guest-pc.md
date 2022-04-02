@@ -185,30 +185,7 @@ You can configure Windows to be in shared PC mode in a couple different ways:
 
 ### Apply the provisioning package
 
-You can apply the provisioning package to a PC during initial setup or to a PC that has already been set up.
-
-**During initial setup**
-
-1. Start with a PC on the setup screen. 
-
-    ![The first screen to set up a new PC.](images/oobe.jpg)
-
-2. Insert the USB drive. If nothing happens when you insert the USB drive, press the Windows key five times.
-
-   - If there is only one provisioning package on the USB drive, the provisioning package is applied.
-    
-   - If there is more than one provisioning package on the USB drive, the **Set up device?** message displays. Click **Set up**, and select the provisioning package that you want to install. 
-
-     ![Set up device?](images/setupmsg.jpg)
-
-3. Complete the setup process.
-
-    
-**After setup**
-
-On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work access** &gt; **Add or remove a management package** &gt; **Add a package**, and selects the package to install. 
-
-![add a package option.](images/package.png)
+You can apply the provisioning package to a device during initial setup or to a device that has already been set up. For more information, see "[Apply a provisioning package](./provisioning-packages/provisioning-apply-package.md)."
 
 > [!NOTE]
 > If you apply the setup file to a computer that has already been set up, existing accounts and data might be lost.
