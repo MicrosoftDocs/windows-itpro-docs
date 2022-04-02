@@ -1,6 +1,6 @@
 ---
 title: Apply a provisioning package (Windows 10/11)
-description: Provisioning packages can be applied to a device during the first-run experience (OOBE) and after ("runtime").
+description: Provisioning packages can be applied to a device during initial setup (OOBE) and after ("runtime").
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,15 +20,15 @@ manager: dougeby
 -   Windows 10
 -   Windows 11
 
-Provisioning packages can be applied to client devices during initial setup (out-of-box experience or "OOBE") and after ("runtime").
+Provisioning packages can be applied to a device during initial setup (out-of-box experience or "OOBE") and after ("runtime").
 
->[!NOTE]
+> [!NOTE]
 >
 > - Applying a provisioning package to a desktop device requires administrator privileges on the device.
 > - You can interrupt a long-running provisioning process by pressing ESC.
 
->[!TIP]
->In addition to the methods below, you can use the PowerShell cmdlet [Install-ProvisioningPackage](/powershell/module/provisioning/Install-ProvisioningPackage) with `-LogsDirectoryPath` to get logs for the operation.
+> [!TIP]
+> In addition to the methods below, you can use the PowerShell cmdlet [Install-ProvisioningPackage](/powershell/module/provisioning/Install-ProvisioningPackage) with `-LogsDirectoryPath` to get logs for the operation.
 
 ## During initial setup
 
@@ -40,7 +40,7 @@ To apply a provisioning package from a USB drive during initial setup:
 
 2. Insert the USB drive. If nothing happens when you insert the USB drive, press the Windows key five times.
 
-   - If there is only one provisioning package on the USB drive, the provisioning package is applied. See step #5.
+   - If there is only one provisioning package on the USB drive, the provisioning package is applied. See step 5.
    - If there is more than one provisioning package on the USB drive, Windows setup will recognize the drive and ask how you want to provision the device. Select **Install provisioning package** and select **Next**.
 
    ![What would you like to do?](../images/provisioning-oobe-choice.png)
@@ -57,7 +57,7 @@ To apply a provisioning package from a USB drive during initial setup:
 
 ## After initial setup
 
-Provisioning packages can be applied after initial setup during runtime by user initiation. This can be done trough Windows settings or by simply double-clicking a provisioning package.
+Provisioning packages can be applied after initial setup through Windows settings or by simply double-clicking a provisioning package.
 
 ### Windows Settings
 
@@ -73,7 +73,7 @@ Provisioning packages can be applied after initial setup during runtime by user 
 
    ![Select and add a package.](../images/provisioning-runtime-add-package.png)
 
-4. Provisioning packages require administrator privileges as it can modify system policies and run scripts at the system level. Ensure you trust the package you are installing before you accept the UAC prompt. Select **Yes**.
+4. Provisioning packages require administrator privileges as they can modify system policies and run scripts at the system level. Ensure you trust the package you are installing before accepting the UAC prompt. Select **Yes**.
 
    ![Do you want to allow changes to your device?](../images/provisioning-runtime-UAC.png)
 
@@ -83,13 +83,13 @@ Provisioning packages can be applied after initial setup during runtime by user 
 
 ### Apply Directly
 
-To apply a provisioning package directly such as from a USB drive, folder, network, or SharePoint site:
+To apply a provisioning package directly, such as from a USB drive, folder, network, or SharePoint site:
 
-1. Navigate to the provisioning package and double-click it to begin installation.
+1. Navigate to the provisioning package and double-click it to begin the installation.
 
    ![Double-click package to being installation.](../images/provisioning-runtime-click-to-install.png)
 
-2. Provisioning packages require administrator privileges as it can modify system policies and run scripts at the system level. Ensure you trust the package you are installing before you accept the UAC prompt. Select **Yes**.
+2. Provisioning packages require administrator privileges as they can modify system policies and run scripts at the system level. Ensure you trust the package you are installing before accepting the UAC prompt. Select **Yes**.
 
    ![Do you want to allow changes to your device?](../images/provisioning-runtime-UAC.png)
 
