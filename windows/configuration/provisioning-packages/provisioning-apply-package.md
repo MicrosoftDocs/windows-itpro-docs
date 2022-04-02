@@ -78,9 +78,21 @@ Provisioning packages can be applied after initial setup during runtime by user 
 
    ![Do you trust this package?](../images/provisioning-runtime-trust.png)
 
-Insert the USB drive to a desktop computer, navigate to **Settings** > **Accounts** > **Access work or school** > **Add or remove a provisioning package** > **Add a package**, and select the package to install. For a provisioning package stored on a network folder or on a SharePoint site, navigate to the provisioning package and double-click it to begin installation.
+### Apply Directly
 
-![add a package option.](../images/package.png)
+To apply a provisioning package directly such as from a USB drive, folder, network, or SharePoint site:
+
+1. Navigate to the provisioning package and double-click it to begin installation.
+
+   ![Double-click package to being installation.](../images/provisioning-runtime-click-to-install.png)
+
+2. Provisioning packages require administrator privileges as it can modify system policies and run scripts at the system level. Ensure you trust the package you are installing before you accept the UAC prompt. Select **Yes**.
+
+   ![Do you want to allow changes to your device?](../images/provisioning-runtime-UAC.png)
+
+3. The provisioning runtime will ask if the package is from a source you trust. Verify that you are applying the correct package and that it is trusted. Select **Yes, add it**.
+
+   ![Do you trust this package?](../images/provisioning-runtime-trust.png)
 
 ## Related articles
 
