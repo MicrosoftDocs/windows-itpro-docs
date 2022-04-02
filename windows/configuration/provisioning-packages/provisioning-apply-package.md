@@ -52,7 +52,31 @@ To apply a provisioning package from a USB drive during initial setup:
 
 5. Wait for the device to load and begin applying the provisioning package. Once you see "You can remove your removable media now!" you can remove your USB drive. Windows will continue provisioning the device.
 
-## After setup, from a USB drive, network folder, or SharePoint site
+## After initial setup
+
+Provisioning packages can be applied after initial setup during runtime by user initiation. This can be done trough Windows settings or by simply double-clicking a provisioning package.
+
+### Windows Settings
+
+1. Insert the USB drive, then navigate to **Settings** > **Accounts** > [**Access work or school**](ms-settings:workplace) > **Add or remove a provisioning package** > **Add a package**.
+
+   ![Add or remove a provisioning package.](../images/provisioning-runtime-manage-packages.png)
+
+2. Choose the method you want to use, such as **Removable Media**.
+
+   ![Choose a method.](../images/provisioning-runtime-choose-package.png)
+
+3. Select the provisioning package (`.ppkg`) that you want to apply, and select **Add**.
+
+   ![Select and add a package.](../images/provisioning-runtime-add-package.png)
+
+4. Provisioning packages require administrator privileges as it can modify system policies and run scripts at the system level. Ensure you trust the package you are installing before you accept the UAC prompt. Select **Yes**.
+
+   ![Do you want to allow changes to your device?](../images/provisioning-runtime-UAC.png)
+
+5. The provisioning runtime will ask if the package is from a source you trust. Verify that you are applying the correct package and that it is trusted. Select **Yes, add it**.
+
+   ![Do you trust this package?](../images/provisioning-runtime-trust.png)
 
 Insert the USB drive to a desktop computer, navigate to **Settings** > **Accounts** > **Access work or school** > **Add or remove a provisioning package** > **Add a package**, and select the package to install. For a provisioning package stored on a network folder or on a SharePoint site, navigate to the provisioning package and double-click it to begin installation.
 
