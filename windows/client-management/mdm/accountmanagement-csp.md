@@ -32,14 +32,6 @@ AccountManagement
 --------ProfileInactivityThreshold
 ```
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|No|No|
-|Education|No|No|
-
 
 <a href="" id="accountmanagement"></a>**./Vendor/MSFT/AccountManagement**  
 Root node for the AccountManagement configuration service provider.

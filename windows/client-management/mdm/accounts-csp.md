@@ -30,15 +30,6 @@ Accounts
 ------------LocalUserGroup
 ```
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|No|No|
-|Education|No|No|
-
-
 <a href="" id="accounts"></a>**./Device/Vendor/MSFT/Accounts**  
 Root node.
 

@@ -14,14 +14,6 @@ ms.date: 06/26/2018
 
 # DeveloperSetup CSP
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
 The DeveloperSetup configuration service provider (CSP) is used to configure Developer Mode on the device and connect to the Windows Device Portal. For more information about the Windows Device Portal, see [Windows Device Portal overview](/windows/uwp/debug-test-perf/device-portal). This CSP was added in Windows 10, version 1703.
 
 > [!NOTE]
