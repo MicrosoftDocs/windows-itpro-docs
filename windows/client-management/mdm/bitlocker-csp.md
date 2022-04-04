@@ -71,6 +71,7 @@ Defines the root node for the BitLocker configuration service provider.
 Allows the administrator to require encryption that needs to be turned on by using BitLocker\Device Encryption.
 <!--/Description-->
 <!--SupportedSKUs-->
+
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|

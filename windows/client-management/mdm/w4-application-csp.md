@@ -14,6 +14,15 @@ ms.date: 06/26/2017
 
 # w4 APPLICATION CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 Use an **APPLICATION** configuration service provider that has an APPID of w4 to configure Multimedia Messaging Service (MMS).
 
@@ -47,7 +56,7 @@ This parameter takes a string value. The possible values to configure the NAME p
 -   no value specified
 
 > [!NOTE]
-> The APPLICATION/NAME value is displayed in the UI. The APPLICATION/NAME value might not be saved on the device. So after an upgrade, the MDM servers should resend APPLICATION/NAME to DMAcc.
+> The APPLICATION/NAME value is displayed in the UI. The APPLICATION/NAME value might not be saved on the device. Hence, after an upgrade, the MDM servers should resend APPLICATION/NAME to DMAcc.
 
 If no value is specified, the registry location will default to `<unnamed>`.
 

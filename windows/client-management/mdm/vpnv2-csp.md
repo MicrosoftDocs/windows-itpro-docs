@@ -14,6 +14,15 @@ ms.date: 09/21/2021
 
 # VPNv2 CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 The VPNv2 configuration service provider allows the mobile device management (MDM) server to configure the VPN profile of the device.
 
@@ -696,7 +705,7 @@ Supported operations include Get, Add, Replace, and Delete.
 Reserved for future use.
 
 <a href="" id="vpnv2-profilename-nativeprofile"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile**  
-Nodes under NativeProfile are required when using a Windows Inbox VPN Protocol (IKEv2, PPTP, L2TP).
+Nodes under NativeProfile are required when using a Windows Inbox VPN Protocol (IKEv2, PPTP, and L2TP).
 
 <a href="" id="vpnv2-profilename-nativeprofile-servers"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/Servers**  
 Required for native profiles. Public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm. Examples, 208.147.66.130 or vpn.contoso.com. 

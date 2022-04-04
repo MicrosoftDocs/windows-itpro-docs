@@ -14,6 +14,15 @@ ms.date: 06/26/2017
 
 # w7 APPLICATION CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 The APPLICATION configuration service provider that has an APPID of w7 is used for bootstrapping a device with an OMA DM account. Although this configuration service provider is used to set up an OMA DM account, it is managed over OMA Client Provisioning.
 
@@ -54,7 +63,6 @@ APPLICATION
 > **Note**   All parm names and characteristic types are case sensitive and must use all uppercase.
 Both APPSRV and CLIENT credentials must be provided in provisioning XML.
 
- 
 
 <a href="" id="appaddr"></a>**APPADDR**  
 This characteristic is used in the w7 APPLICATION characteristic to specify the DM server address.
@@ -132,9 +140,7 @@ Optional. The INIT parameter is used in the APPLICATION characteristic to indica
 
 > **Note**   This node is only for mobile operators and MDM servers that try to use this will fail. This node is not supported in the enterprise MDM enrollment scenario.
 This parameter forces the device to attempt to connect with the OMA DM server. The connection attempt fails if the XML is set during the coldinit phase. A common cause of this failure is that immediately after coldinit is finished the radio is not yet ready.
-
  
-
 <a href="" id="initialbackofftime"></a>**INITIALBACKOFFTIME**  
 Optional. The INITIALBACKOFFTIME parameter is used in the APPLICATION characteristic to specify the initial wait time in milliseconds when the DM client retries for the first time. The wait time grows exponentially. This parameter takes a numeric value in string format. The default value is “16000”. You can get or set this parameter.
 
@@ -183,7 +189,6 @@ Stores specifies which certificate stores the DM client will search to find the 
 > **Note**   %EF%80%80 is the UTF8-encoded character U+F000.
 
  
-
 Subject specifies the certificate to search for. For example, to specify that you want a certificate with a particular Subject attribute (“CN=Tester,O=Microsoft”), use the following:
 
 ```xml

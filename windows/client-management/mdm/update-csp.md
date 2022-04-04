@@ -14,6 +14,16 @@ ms.date: 02/23/2018
 
 # Update CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 The Update configuration service provider enables IT administrators to manage and control the rollout of new updates.
 
 > [!NOTE]
