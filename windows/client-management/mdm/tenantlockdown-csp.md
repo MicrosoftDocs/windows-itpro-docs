@@ -13,6 +13,16 @@ manager: dansimp
 
 # TenantLockdown CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 > [!WARNING]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. This CSP was added in Windows 10, version 1809.
 
@@ -42,3 +52,7 @@ When RequireNetworkInOOBE is true, when the device goes through OOBE at first lo
   -  False - No network connection requirement in OOBE.
 
 Example scenario:  Henry is the IT admin at Contoso. He deploys 1000 devices successfully with RequireNetworkInOOBE set to true. When users accidentally or intentionally reset their device, they are required to connect to a network before they can proceed. Upon successful connection, users see the Contoso branded sign-in experience where they must use their Azure AD credentials. There is no option to skip the network connection and create a local account.
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)

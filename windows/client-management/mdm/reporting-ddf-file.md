@@ -285,9 +285,10 @@ The XML below is the current version for the desktop CSP.
       </Node>
 </MgmtTree>
 ```
-
  
+## Related topics
 
+[Reporting csp](reporting-csp.md)
  
 
 

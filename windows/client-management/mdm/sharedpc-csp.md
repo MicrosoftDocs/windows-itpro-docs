@@ -14,6 +14,15 @@ ms.date: 01/16/2019
 
 # SharedPC CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 The SharedPC configuration service provider is used to configure settings for Shared PC usage.
 
@@ -219,7 +228,6 @@ Added in Windows 10, version 1703. Maximum size of the paging file in MB. Applie
 The default in the SharedPC provisioning package is 1024.
 
 ## Related topics
-
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 

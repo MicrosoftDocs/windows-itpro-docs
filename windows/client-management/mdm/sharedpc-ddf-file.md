@@ -14,7 +14,6 @@ ms.date: 12/05/2017
 
 # SharedPC DDF file
 
-
 This topic shows the OMA DM device description framework (DDF) for the **SharedPC** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
@@ -435,7 +434,6 @@ The XML below is the DDF for Windows 10, version 1703.
 ```
 
 ## Related topics
-
 
 [SharedPC configuration service provider](sharedpc-csp.md)
 

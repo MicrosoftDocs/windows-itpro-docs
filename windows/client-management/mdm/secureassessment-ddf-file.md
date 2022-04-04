@@ -184,12 +184,6 @@ The XML below is the current version for this CSP.
 </MgmtTree>
 ```
 
- 
+## Related topics
 
- 
-
-
-
-
-
-
+[Secureassessment csp](secureassessment-csp.md)

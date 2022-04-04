@@ -14,7 +14,6 @@ ms.date: 03/07/2018
 
 # RootCATrustedCertificates DDF file
 
-
 This topic shows the OMA DM device description framework (DDF) for the **RootCACertificates** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
@@ -1986,3 +1985,7 @@ The XML below is for Windows 10, version 1803.
       </Node>
 </MgmtTree>
 ```
+
+## Related topics
+
+[Rootcacertificates csp](rootcacertificates-csp.md)

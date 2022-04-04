@@ -14,6 +14,16 @@ ms.date: 06/26/2017
 
 # RemoteRing CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 You can use the RemoteRing configuration service provider to remotely trigger a device to produce an audible ringing sound, regardless of the volume that is set on the device.
 
 The following DDF format shows the RemoteRing configuration service provider in tree format.
@@ -52,7 +62,9 @@ The following sample shows how to initiate a remote ring on the device.
 </Exec>
 ```
 
- 
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md) 
 
  
 

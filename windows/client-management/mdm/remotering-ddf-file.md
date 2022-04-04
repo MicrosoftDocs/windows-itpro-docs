@@ -93,7 +93,9 @@ The XML below is the current version for this CSP.
 </MgmtTree>
 ```
 
- 
+## Related topics
+
+[Remotering csp](remotering-csp.md) 
 
  
 

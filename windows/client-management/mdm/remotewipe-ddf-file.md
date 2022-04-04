@@ -220,3 +220,7 @@ The XML below is the DDF for Windows 10, version 1809.
     </Node>
 </MgmtTree>
 ```
+
+## Related topics
+
+[Remotewipe csp](remotewipe-csp.md)

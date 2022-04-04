@@ -14,6 +14,16 @@ ms.date: 06/26/2017
 
 # Reporting CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 The Reporting configuration service provider is used to retrieve Windows Information Protection (formerly known as Enterprise Data Protection) and security auditing logs. This CSP was added in Windows 10, version 1511.
 
 The following DDF format shows the Reporting configuration service provider in tree format.
@@ -165,3 +175,7 @@ Retrieve a specified number of security auditing logs starting from the specifie
 </SyncML>
 ```
 -->
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)

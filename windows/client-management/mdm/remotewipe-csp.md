@@ -14,6 +14,16 @@ ms.date: 08/13/2018
 
 # RemoteWipe CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 The RemoteWipe configuration service provider can be used by mobile operators DM server or enterprise management server to remotely wipe a device. The RemoteWipe configuration service provider can make the data stored in memory and hard disks difficult to recover if the device is remotely wiped after being lost or stolen.
 
 The following shows the RemoteWipe configuration service provider management object in tree format as used by both OMA DM and OMA Client Provisioning. Enterprise IT Professionals can update these settings by using the Exchange Server.
@@ -78,7 +88,6 @@ Supported values:
 -  50: Failed: reset internals failed during reset attempt.
 
 ## Related topics
-
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 

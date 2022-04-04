@@ -146,7 +146,7 @@ The XML below is the current version for this CSP.
 
 ## Related topics
 
-[Reboot configuration service provider](reboot-csp.md)
+[Reboot csp](reboot-csp.md)
 
  
 

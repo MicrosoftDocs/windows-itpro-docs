@@ -14,6 +14,16 @@ ms.date: 06/26/2017
 
 # RemoteFind CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 The RemoteFind configuration service provider retrieves the location information for a particular device.
 
 The following shows the RemoteFind configuration service provider management object in tree format as used by OMA Client Provisioning.
