@@ -14,6 +14,15 @@ ms.date: 11/01/2017
 
 # DMClient CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 The DMClient configuration service provider (CSP) has more enterprise-specific mobile device management (MDM) configuration settings. These settings identify the device in the enterprise domain, include security mitigation for certificate renewal, and are used for server-triggered enterprise unenrollment.
 
@@ -66,6 +75,7 @@ DMClient
 ----Unenroll
 ----UpdateManagementServiceAddress
 ```
+
 <a href="" id="msft"></a>**./Vendor/MSFT**  
 All the nodes in this CSP are supported in the device context, except for the **ExchangeID** node, which is supported in the user context. For the device context, use the **./Device/Vendor/MSFT** path and for the user context, use the **./User/Vendor/MSFT** path.
 
@@ -104,8 +114,6 @@ Supported operations are Get and Add.
 > Although hardware device IDs are guaranteed to be unique, there's a concern that this isn't ultimately enforceable during a DM session. The device ID could be changed through the w7 APPLICATION CSP’s **USEHWDEVID** parm by another management server. So during enterprise bootstrap and enrollment, a new device ID is specified by the enterprise server.
 This node is required and must be set by the server before the client certificate renewal is triggered.
 
- 
-
 <a href="" id="provider-providerid-exchangeid"></a>**Provider/*ProviderID*/ExchangeID**  
 Optional. Character string that contains the unique Exchange device ID used by the Outlook account of the user the session is running against. The enterprise management server can correlate and merge records for:
 
@@ -114,8 +122,6 @@ Optional. Character string that contains the unique Exchange device ID used by t
 
 > [!NOTE]
 > In some cases for the desktop, this node will return "not found" until the user sets up their email.
-
- 
 
 Supported operation is Get.
 
@@ -148,8 +154,6 @@ Required. The character string that contains the device management server addres
 > [!NOTE]
 > When the **ManagementServerAddressList** value is set, the device ignores the value.
 
- 
-
 The DMClient CSP will save the address to the same location as the w7 and DMS CSPs. The save ensures the management client has a single place to retrieve the current server address. The initial value for this node is the same server address value as bootstrapped using the [w7 APPLICATION configuration service provider](w7-application-csp.md).
 
 Starting in Windows 10, version 1511, this node supports multiple server addresses in the format &lt;URL1&gt;&lt;URL2&gt;&lt;URL3&gt;. If there's only a single URL, then the &lt;&gt; aren't required. This feature is supported on Windows client devices.
@@ -159,7 +163,7 @@ During a DM session, the device will use the first address on the list and then 
 Supported operations are Add, Get, and Replace.
 
 <a href="" id="provider-providerid-upn"></a>**Provider/*ProviderID*/UPN**  
-Optional. Allows the management server to update the User Principal Name (UPN) of the enrolled user. This information is useful when the user email address changes in the identity system. Or, when the user enters an invalid UPN during enrollment, and fixes the UPN during federated enrollment. The UPN will be recorded and the UX will reflect the updated UPN.
+Optional. Allows the management server to update the User Principal Name (UPN) of the enrolled user. This information is useful when the user's email address changes in the identity system. Or, when the user enters an invalid UPN during enrollment, and fixes the UPN during federated enrollment. The UPN will be recorded and the UX will reflect the updated UPN.
 
 Supported operations are Get and Replace.
 
@@ -198,8 +202,6 @@ Optional. Used by the management server to set the DM session version that the s
 > This node is only supported in Windows 10 and later.
 
 Once you set the value to 2.0, it won't go back to 1.0.
-
- 
 
 Supported operations are Get, Replace, and Delete.
 
@@ -279,8 +281,6 @@ Added in Windows 10, version 1607. The list of management server URLs in the fo
 > [!NOTE]
 > The &lt; and &gt; should be escaped.
 
- 
-
 ```xml
    <Replace>
        <CmdID>101</CmdID>
@@ -299,23 +299,31 @@ If ManagementServerAddressList node is set, the device will only use the server 
 
 When the server isn't responding after a specified number of retries, the device tries to use the next server URL in the list. It keeps trying until it gets a successful connection. After the server list is updated, the client uses the updated list at the next session starting with the first one in the list.
 
-Supported operations are Get and Replace. Value type is string.
+Supported operations are Get and Replace.
+
+Value type is string.
 
 <a href="" id="provider-providerid-managementservertoupgradeto"></a>**Provider/*ProviderID*/ManagementServerToUpgradeTo**  
 Optional. Added in Windows 10, version 1703. Specify the Discovery server URL of the MDM provider to upgrade to for a Mobile Application Management (MAM) enrolled device.
 
-Supported operations are Add, Delete, Get, and Replace. Value type is string.
+Supported operations are Add, Delete, Get, and Replace.
+
+Value type is string.
 
 <a href="" id="provider-providerid-numberofdaysafterlostcontacttounenroll"></a>**Provider/*ProviderID*/NumberOfDaysAfterLostContactToUnenroll**  
 Optional. Number of days after last successful sync to unenroll.
 
-Supported operations are Add, Delete, Get, and Replace. Value type is integer.
+Supported operations are Add, Delete, Get, and Replace. 
+
+Value type is integer.
 
 <a href="" id="provider-providerid-aadsenddevicetoken"></a>**Provider/*ProviderID*/AADSendDeviceToken**  
 
 Device. Added in Windows 10 version 1803. For Azure AD backed enrollments, this feature will cause the client to send a Device Token if the User Token can't be obtained.
 
-Supported operations are Add, Delete, Get, and Replace. Value type is bool.
+Supported operations are Add, Delete, Get, and Replace. 
+
+Value type is bool.
 
 <a href="" id="provider-providerid-poll"></a>**Provider/*ProviderID*/Poll**  
 Optional. Polling schedules must use the DMClient CSP. The Registry paths previously associated with polling using the Registry CSP are now deprecated.
@@ -442,7 +450,7 @@ Optional. This node enables [Config Lock](config-lock.md) feature. If enabled, p
 Default = Locked
 
 > [!Note]
->If the device isn't a Secured-core PC, then this feature won't work. To know more, see [Secured-core PC](/windows-hardware/design/device-experiences/oem-highly-secure).
+> If the device isn't a Secured-core PC, then this feature won't work. To know more, see [Secured-core PC](/windows-hardware/design/device-experiences/oem-highly-secure).
 
 <a href="" id="provider-providerid-configlock-lock"></a>**Provider/*ProviderID*/ConfigLock/Lock**
 
@@ -504,22 +512,30 @@ Supported operations are Add, Delete, and Get.
 <a href="" id="provider-providerid-customenrollmentcompletepage-title"></a>**Provider/*ProviderID*/CustomEnrollmentCompletePage/Title**  
 Optional. Added in Windows 10, version 1703. Specifies the title of the all done page that appears at the end of the MDM enrollment flow.
 
-Supported operations are Add, Delete, Get, and Replace. Value type is string.
+Supported operations are Add, Delete, Get, and Replace. 
+
+Value type is string.
 
 <a href="" id="provider-providerid-customenrollmentcompletepage-bodytext"></a>**Provider/*ProviderID*/CustomEnrollmentCompletePage/BodyText**  
 Optional. Added in Windows 10, version 1703. Specifies the body text of the all done page that appears at the end of the MDM enrollment flow.
 
-Supported operations are Add, Delete, Get, and Replace. Value type is string.
+Supported operations are Add, Delete, Get, and Replace. 
+
+Value type is string.
 
 <a href="" id="provider-providerid-customenrollmentcompletepage-hyperlinkhref"></a>**Provider/*ProviderID*/CustomEnrollmentCompletePage/HyperlinkHref**  
 Optional. Added in Windows 10, version 1703. Specifies the URL that's shown at the end of the MDM enrollment flow.
 
-Supported operations are Add, Delete, Get, and Replace. Value type is string.
+Supported operations are Add, Delete, Get, and Replace. 
+
+Value type is string.
 
 <a href="" id="provider-providerid-customenrollmentcompletepage-hyperlinktext"></a>**Provider/*ProviderID*/CustomEnrollmentCompletePage/HyperlinkText**  
 Optional. Added in Windows 10, version 1703. Specifies the display text for the URL that's shown at the end of the MDM enrollment flow.
 
-Supported operations are Add, Delete, Get, and Replace. Value type is string.
+Supported operations are Add, Delete, Get, and Replace. 
+
+Value type is string.
 
 <a href="" id="provider-providerid-firstsyncstatus-"></a>**Provider/*ProviderID*/FirstSyncStatus**  
 Optional node. Added in Windows 10, version 1709.
@@ -527,17 +543,23 @@ Optional node. Added in Windows 10, version 1709.
 <a href="" id="provider-providerid-firstsyncstatus-expectedpolicies"></a>**Provider/*ProviderID*/FirstSyncStatus/ExpectedPolicies**  
 Required. Added in Windows 10, version 1709. This node contains a list of LocURIs that refer to policies the management service provider expects to configure, delimited by the character L"\xF000" (the CSP_LIST_DELIMITER).
 
-Supported operations are Add, Delete, Get, and Replace. Value type is string.
+Supported operations are Add, Delete, Get, and Replace. 
+
+Value type is string.
 
 <a href="" id="provider-providerid-firstsyncstatus-expectednetworkprofiles "></a>**Provider/*ProviderID*/FirstSyncStatus/ExpectedNetworkProfiles**  
 Required. Added in Windows 10, version 1709. This node contains a list of LocURIs that refer to Wi-Fi profiles and VPN profiles the management service provider expects to configure, delimited by the character L"\xF000".
 
-Supported operations are Add, Delete, Get, and Replace. Value type is string.
+Supported operations are Add, Delete, Get, and Replace. 
+
+Value type is string.
 
 <a href="" id="provider-providerid-firstsyncstatus-expectedmsiapppackages"></a>**Provider/*ProviderID*/FirstSyncStatus/ExpectedMSIAppPackages**  
-Required. Added in Windows 10, version 1709. This node contains a list of LocURIs that refer to App Packages the management service provider expects to configure using the EnterpriseDesktopAppManagement CSP, delimited by the character L"\xF000".  The LocURI will be followed by a semicolon and a number, representing the number of apps included in the App Package.  We won't verify that number. For example, `./User/Vendor/MSFT/EnterpriseDesktopAppManagement/MSI/ProductID1/Status;4"\xF000" ./User/Vendor/MSFT/EnterpriseDesktopAppManagement/MSI/ProductID2/Status;2`  This represents App Package ProductID1 containing four apps, and ProductID2 containing two apps.
+Required. Added in Windows 10, version 1709. This node contains a list of LocURIs that refer to App Packages the management service provider expects to configure using the EnterpriseDesktopAppManagement CSP, delimited by the character L"\xF000". The LocURI will be followed by a semicolon and a number, representing the number of apps included in the App Package.  We won't verify that number. For example, `./User/Vendor/MSFT/EnterpriseDesktopAppManagement/MSI/ProductID1/Status;4"\xF000" ./User/Vendor/MSFT/EnterpriseDesktopAppManagement/MSI/ProductID2/Status;2`  This represents App Package ProductID1 containing four apps, and ProductID2 containing two apps.
 
-Supported operations are Add, Delete, Get, and Replace. Value type is string.
+Supported operations are Add, Delete, Get, and Replace. 
+
+Value type is string.
 
 <a href="" id="provider-providerid-firstsyncstatus-expectedmodernapppackages"></a>**Provider/*ProviderID*/FirstSyncStatus/ExpectedModernAppPackages**  
 Required. Added in Windows 10, version 1709. This node contains a list of LocURIs that refer to App Packages the management service provider expects to configure using the EnterpriseModernAppManagement CSP, delimited by the character L"\xF000".  The LocURI will be followed by a semicolon and a number, representing the number of apps included in the App Package.  We won't verify that number.  For example, 
@@ -549,62 +571,86 @@ Required. Added in Windows 10, version 1709. This node contains a list of LocURI
 
 This syntax represents App Package PackageFullName containing four apps, and PackageFullName2 containing two apps.
 
-Supported operations are Add, Delete, Get, and Replace. Value type is string.
+Supported operations are Add, Delete, Get, and Replace. 
+
+Value type is string.
 
 <a href="" id="provider-providerid-firstsyncstatus-expectedpfxcerts"></a>**Provider/*ProviderID*/FirstSyncStatus/ExpectedPFXCerts**  
 Required. Added in Windows 10, version 1709. This node contains a list of LocURIs that refer to certs the management service provider expects to configure using the ClientCertificateInstall CSP, delimited by the character L"\xF000" (the CSP_LIST_DELIMITER).
 
-Supported operations are Add, Delete, Get, and Replace. Value type is string.
+Supported operations are Add, Delete, Get, and Replace. 
+
+Value type is string.
 
 <a href="" id="provider-providerid-firstsyncstatus-expectedscepcerts"></a>**Provider/*ProviderID*/FirstSyncStatus/ExpectedSCEPCerts**  
 Required. Added in Windows 10, version 1709. This node contains a list of LocURIs that refer to SCEP certs the management service provider expects to configure using the ClientCertificateInstall CSP, delimited by the character L"\xF000" (the CSP_LIST_DELIMITER).
 
-Supported operations are Add, Delete, Get, and Replace. Value type is string.
+Supported operations are Add, Delete, Get, and Replace. 
+
+Value type is string.
 
 <a href="" id="provider-providerid-firstsyncstatus-timeoutuntilsyncfailure"></a>**Provider/*ProviderID*/FirstSyncStatus/TimeOutUntilSyncFailure**  
-Required. Added in Windows 10, version 1709. This node determines how long we will poll until we surface an error message to the user.  The unit of measurement is minutes.  Default value will be 60, while maximum value will be 1,440 (one day).  
+Required. Added in Windows 10, version 1709. This node determines how long we'll poll until we surface an error message to the user.  The unit of measurement is minutes.  Default value will be 60, while maximum value will be 1,440 (one day).  
 
-Supported operations are Get and Replace. Value type is integer.
+Supported operations are Get and Replace. 
+
+Value type is integer.
 
 <a href="" id="provider-providerid-firstsyncstatus-serverhasfinishedprovisioning"></a>**Provider/*ProviderID*/FirstSyncStatus/ServerHasFinishedProvisioning**  
 Required. Added in Windows 10, version 1709. This node is set by the server to inform the UX that the server has finished configuring the device. It was added so that the server can “change its mind" about what it needs to configure on the device. When this node is set, many other DM Client nodes can't be changed. If this node isn't True, the UX will consider the configuration a failure. Once set to true, it would reject attempts to change it back to false with CFGMGR_E_COMMANDNOTALLOWED. This node applies to the per user expected policies and resources lists.
 
-Supported operations are Get and Replace. Value type is boolean.
+Supported operations are Get and Replace. 
+
+Value type is boolean.
 
 <a href="" id="provider-providerid-firstsyncstatus-issyncdone"></a>**Provider/*ProviderID*/FirstSyncStatus/IsSyncDone**  
 Required. Added in Windows 10, version 1709. This node, when doing a get, tells the server if the “First Syncs" are done and the device is fully configured. `Set` triggers the UX to override whatever state it's in, and tell the user that the device is configured. It can't be set from True to False (it won't change its mind  if the sync is done), and it can't be set from True to True (to prevent notifications from firing multiple times). This node only applies to the user MDM status page (on a per user basis).
 
-Supported operations are Get and Replace. Value type is boolean.
+Supported operations are Get and Replace. 
+
+Value type is boolean.
 
 <a href="" id="provider-providerid-firstsyncstatus-wasdevicesuccessfullyprovisioned"></a>**Provider/*ProviderID*/FirstSyncStatus/WasDeviceSuccessfullyProvisioned**  
 Required. Added in Windows 10, version 1709. Integer node determining if a device was successfully configured.  0 is failure, 1 is success, 2 is in progress.  Once the value is changed to 0 or 1, the value can't be changed again. The client will change the value of success or failure and update the node. The server can force a failure or success message to appear on the device by setting this value and then setting the IsSyncDone node to true. This node only applies to the user MDM status page (on a per user basis).
 
-Supported operations are Get and Replace. Value type is integer.
+Supported operations are Get and Replace. 
+
+Value type is integer.
 
 <a href="" id="provider-providerid-firstsyncstatus-blockinstatuspage"></a>**Provider/*ProviderID*/FirstSyncStatus/BlockInStatusPage**  
 Required. Device Only. Added in Windows 10, version 1803. This node determines if the MDM progress page is blocking in the Azure AD joined or DJ++ case, and which remediation options are available.
 
-Supported operations are Get and Replace. Value type is integer.
+Supported operations are Get and Replace. 
+
+Value type is integer.
 
 <a href="" id="provider-providerid-firstsyncstatus-allowcollectlogsbutton"></a>**Provider/*ProviderID*/FirstSyncStatus/AllowCollectLogsButton**  
 Required. Added in Windows 10, version 1803. This node decides if the MDM progress page displays the Collect Logs button.  
 
-Supported operations are Get and Replace. Value type is bool.
+Supported operations are Get and Replace. 
+
+Value type is bool.
 
 <a href="" id="provider-providerid-firstsyncstatus-customerrortext"></a>**Provider/*ProviderID*/FirstSyncStatus/CustomErrorText**  
 Required. Added in Windows 10, version 1803. This node allows the MDM to set custom error text, detailing what the user needs to do if there's an error.  
 
-Supported operations are Add, Get, Delete, and Replace. Value type is string.
+Supported operations are Add, Get, Delete, and Replace. 
+
+Value type is string.
 
 <a href="" id="provider-providerid-firstsyncstatus-skipdevicestatuspage"></a>**Provider/*ProviderID*/FirstSyncStatus/SkipDeviceStatusPage**  
 Required. Device only. Added in Windows 10, version 1803. This node decides if the MDM device progress page skips after Azure AD joined or Hybrid Azure AD joined in OOBE.
 
-Supported operations are Get and Replace. Value type is bool.
+Supported operations are Get and Replace. 
+
+Value type is bool.
 
 <a href="" id="provider-providerid-firstsyncstatus-skipuserstatuspage"></a>**Provider/*ProviderID*/FirstSyncStatus/SkipUserStatusPage**  
 Required. Device only. Added in Windows 10, version 1803. This node decides if the MDM user progress page skips after Azure AD joined or DJ++ after user login.
 
-Supported operations are Get and Replace. Value type is bool.
+Supported operations are Get and Replace. 
+
+Value type is bool.
 
 <a href="" id="provider-providerid-enhancedapplayersecurity"></a>**Provider/*ProviderID*/EnhancedAppLayerSecurity**  
 Required node. Added in Windows 10, version 1709.
@@ -614,22 +660,30 @@ Supported operation is Get.
 <a href="" id="provider-providerid-enhancedapplayersecurity-securitymode"></a>**Provider/*ProviderID*/EnhancedAppLayerSecurity/SecurityMode**  
 Required. Added in Windows 10, version 1709. This node specifies how the client will do the app layer signing and encryption. 0: no op; 1: sign only; 2: encrypt only; 3: sign and encrypt. The default value is 0.
 
-Supported operations are Add, Get, Replace, and Delete. Value type is integer.
+Supported operations are Add, Get, Replace, and Delete. 
+
+Value type is integer.
 
 <a href="" id="provider-providerid-enhancedapplayersecurity-usecertifrevocationcheckoffline"></a>**Provider/*ProviderID*/EnhancedAppLayerSecurity/UseCertIfRevocationCheckOffline**  
 Required. Added in Windows 10, version 1709. When this node is set, it tells the client to use the certificate even when the client can't check the certificate's revocation status because the device is offline. The default value is set.
 
-Supported operations are Add, Get, Replace, and Delete. Value type is boolean.
+Supported operations are Add, Get, Replace, and Delete. 
+
+Value type is boolean.
 
 <a href="" id="provider-providerid-enhancedapplayersecurity-cert0"></a>**Provider/*ProviderID*/EnhancedAppLayerSecurity/Cert0**  
 Required. Added in Windows 10, version 1709. The node contains the primary certificate - the public key to use.
 
-Supported operations are Add, Get, Replace, and Delete. Value type is string.
+Supported operations are Add, Get, Replace, and Delete. 
+
+Value type is string.
 
 <a href="" id="provider-providerid-enhancedapplayersecurity-cert1"></a>**Provider/*ProviderID*/EnhancedAppLayerSecurity/Cert1**  
 Required. Added in Windows 10, version 1709. The node contains the secondary certificate - the public key to use.
 
-Supported operations are Add, Get, Replace, and Delete. Value type is string.
+Supported operations are Add, Get, Replace, and Delete. 
+
+Value type is string.
 
 <a href="" id="provider-providerid-unenroll"></a>**Provider/*ProviderID*/Unenroll**  
 Required. The node accepts unenrollment requests using the OMA DM Exec command and calls the enrollment client to unenroll the device from the management server whose provider ID is specified in the `<Data>` tag under the `<Item>` element. Scope is permanent.
@@ -657,6 +711,5 @@ The following SyncML shows how to remotely unenroll the device. This command sho
 ```
 
 ## Related articles
-
 
 [Configuration service provider reference](configuration-service-provider-reference.md)

@@ -14,6 +14,15 @@ ms.date: 06/26/2017
 
 # EMAIL2 CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 The EMAIL2 configuration service provider (CSP) is used to configure Simple Mail Transfer Protocol (SMTP) email accounts.
 
@@ -81,9 +90,8 @@ Supported operations are Get, Add, and Delete.
 
 The braces {} around the GUID are required in the EMAIL2 configuration service provider.
 
--   For OMA Client Provisioning, the braces can be sent literally. For example, `<characteristic type="{C556E16F-56C4-4edb-9C64-D9469EE1FBE0}"/>`.
-
--   For OMA DM, the braces must be sent using ASCII values of 0x7B and 0x7D respectively. For example, `<Target><LocURI>./Vendor/MSFT/EMAIL2/0x7BC556E16F-56C4-4edb-9C64-D9469EE1FBE0x7D</LocURI></Target>`
+- For OMA Client Provisioning, the braces can be sent literally. For example, `<characteristic type="{C556E16F-56C4-4edb-9C64-D9469EE1FBE0}"/>`
+- For OMA DM, the braces must be sent using ASCII values of 0x7B and 0x7D respectively. For example, `<Target><LocURI>./Vendor/MSFT/EMAIL2/0x7BC556E16F-56C4-4edb-9C64-D9469EE1FBE0x7D</LocURI></Target>`
 
 <a href="" id="accounticon"></a>**ACCOUNTICON**  
 Optional. Returns the location of the icon associated with the account.
@@ -99,9 +107,8 @@ Supported operations are Get, Add, Replace, and Delete.
 
 Valid values are:
 
--   Email: normal email
-
--   VVM: visual voice mail
+- Email: Normal email
+- VVM: Visual voice mail
 
 <a href="" id="authname"></a>**AUTHNAME**  
 Required. Character string that specifies the name used to authorize the user to a specific email account (also known as the user's logon name).
@@ -113,15 +120,13 @@ Optional. Character string that specifies whether the outgoing server requires a
 
 Supported operations are Get, Add, Replace, and Delete.
 
-Value options:
+Value options are:
 
--   0 - Server authentication isn't required.
--   1 - Server authentication is required.
+- 0 - Server authentication isn't required.
+- 1 - Server authentication is required.
 
 > [!NOTE]
 > If this value isn't specified, then no SMTP authentication is done. Also, this is different from SMTPALTENABLED.
-
- 
 
 <a href="" id="authsecret"></a>**AUTHSECRET**  
 Optional. Character string that specifies the user's password. The same password is used for SMTP authentication.
@@ -140,18 +145,15 @@ Supported operations are Get, Add, Replace, and Delete.
 
 Value options:
 
--   -1: Specifies that all email currently on the server should be downloaded.
-
--   7: Specifies that seven days’ worth of email should be downloaded.
-
--   14: Specifies that 14 days’ worth of email should be downloaded.
-
--   30: Specifies that 30 days’ worth of email should be downloaded.
+- -1: Specifies that all email currently on the server should be downloaded.
+- 7: Specifies that seven days’ worth of email should be downloaded.
+- 14: Specifies that 14 days’ worth of email should be downloaded.
+- 30: Specifies that 30 days’ worth of email should be downloaded.
 
 <a href="" id="inserver"></a>**INSERVER**  
 Required. Character string that specifies the name of the incoming server name and port number. This string is limited to 62 characters. If the standard port number is used, then you don't have to specify the port number. The value format is:
 
--   server name:port number
+- server name:port number
 
 Supported operations are Get, Add, and Replace.
 
@@ -162,20 +164,16 @@ Supported operations are Get, Add, Replace, and Delete.
 
 Value options:
 
--   0 - Email updates must be performed manually.
-
--   15 (default) - Wait for 15 minutes between updates.
-
--   30 - Wait for 30 minutes between updates.
-
--   60 - Wait for 60 minutes between updates.
-
--   120 - Wait for 120 minutes between updates.
+- 0 - Email updates must be performed manually
+- 15 (default) - Wait for 15 minutes between updates
+- 30 - Wait for 30 minutes between updates
+- 60 - Wait for 60 minutes between updates
+- 120 - Wait for 120 minutes between updates.
 
 <a href="" id="keepmax"></a>**KEEPMAX**  
 Optional. Specifies the maximum size for a message attachment. Attachments beyond this size will not be downloaded but it will remain on the server. The message itself will be downloaded. This value can be set only for IMAP4 accounts.
 
-The limit is specified in KB
+The limit is specified in KB.
 
 Value options are 0, 25, 50, 125, and 250.
 
@@ -191,7 +189,7 @@ Supported operations are Get, Add, Replace, and Delete.
 <a href="" id="outserver"></a>**OUTSERVER**  
 Required. Character string that specifies the name of the messaging service's outgoing email server. Limited to 62 characters. The value format is:
 
--   server name:port number
+- server name:port number
 
 Supported operations are Get, Add, Delete, and Replace.
 
@@ -208,16 +206,12 @@ Supported operations are Get, Add, Replace, and Delete.
 > [!NOTE]
 > The EMAIL2 Configuration Service Provider doesn't support the OMA DM **Replace** command on the parameters **SERVICENAME** and **SERVICETYPE**. To replace either the email account name or the account service type, the existing email account must be deleted and then a new one must be created.
 
- 
-
 <a href="" id="servicetype"></a>**SERVICETYPE**  
 Required. Character string that specifies the type of email service to create or edit (for example, "IMAP4" or "POP3").
 
 Supported operations are Get, Add, Replace, and Delete.
 
 > **Note**   The EMAIL2 Configuration Service Provider doesn't support the OMA DM **Replace** command on the parameters **SERVICENAME** and **SERVICETYPE**. To replace either the email account name or the account service type, the existing email account must be deleted and then a new one must be created.
-
- 
 
 <a href="" id="retrieve"></a>**RETRIEVE**  
 Optional. Specifies the maximum size in bytes for messages retrieved from the incoming email server. Messages beyond this size are retrieved, but truncated.
@@ -227,10 +221,10 @@ Value options are 512, 1024, 2048, 5120, 20480, and 51200.
 Supported operations are Get, Add, Replace, and Delete.
 
 <a href="" id="serverdeleteaction"></a>**SERVERDELETEACTION**  
-Optional. Character string that specifies how message is deleted on server. Value options:
+Optional. Character string that specifies how message is deleted on server. Value options are:
 
--   1 - delete message on the server
--   2 - keep the message on the server (delete to the Trash folder).
+- 1 - Delete message on the server.
+- 2 - Keep the message on the server (delete to the Trash folder).
 
 Any other value results in default action, which depends on the transport.
 
@@ -244,19 +238,19 @@ Value type is string. Supported operations are Get, Add, Replace, and Delete.
 <a href="" id="syncingcontenttypes"></a>**SYNCINGCONTENTTYPES**  
 Required. Specifies a bitmask for which content types are supported for syncing, like Mail, Contacts, and Calendar.
 
--   No data (0x0)
--   Contacts (0x1)
--   Mail (0x2)
--   Appointments (0x4)
--   Tasks (0x8)
--   Notes (0x10)
--   Feeds (0x60)
--   Network Photo (0x180)
--   Group and room (0x200)
--   Chat (0x400)
--   Email Recipient Email (0x800)
--   Server Link (0x1000)
--   All items (0xffffffff)
+- No data (0x0)
+- Contacts (0x1)
+- Mail (0x2)
+- Appointments (0x4)
+- Tasks (0x8)
+- Notes (0x10)
+- Feeds (0x60)
+- Network Photo (0x180)
+- Group and room (0x200)
+- Chat (0x400)
+- Email Recipient Email (0x800)
+- Server Link (0x1000)
+- All items (0xffffffff)
 
 Supported operations are Get, Add, Replace, and Delete.
 
@@ -322,10 +316,10 @@ Optional. Character string that specifies if the incoming email server requires 
 
 Supported operations are Get, Add, Replace, and Delete.
 
-Value options:
+Value options are:
 
--   0 - SSL isn't required.
--   1 - SSL is required.
+- 0 - SSL isn't required.
+- 1 - SSL is required.
 
 <a href="" id="tagprops-812c000b"></a>**TAGPROPS/812C000B**  
 Optional. Character string that specifies if the outgoing email server requires SSL.
@@ -334,37 +328,28 @@ Supported operations are Get and Replace.
 
 Value options:
 
--   0 - SSL isn't required.
--   1 - SSL is required.
+- 0 - SSL isn't required.
+- 1 - SSL is required.
 
 ## Remarks
-
 
 When an application removal or configuration roll-back is provisioned, the EMAIL2 CSP passes the request to Configuration Manager, which handles the transaction externally. When a MAPI application is removed, the accounts that were created with it are deleted. All messages and other properties that the transport (like Short Message Service \[SMS\], Post Office Protocol \[POP\], or Simple Mail Transfer Protocol \[SMTP\]) might have stored, are lost. If an attempt to create a new email account is unsuccessful, the new account is automatically deleted. If an attempt to edit an existing account is unsuccessful, the original configuration is automatically rolled back (restored).
 
 For OMA DM, the EMAIL2 CSP handles the Replace command differently from most other configuration service providers. For the EMAIL2 CSP, Configuration Manager implicitly adds the missing part of the node to be replaced or any segment in the path of the node if it's left out in the \<LocURI>\</LocURI\> block. There are separate parameters defined for the outgoing server logon credentials. The following are the usage rules for these credentials:
 
--   The incoming server logon credentials are used (AUTHNAME, AUTHSECRET, and DOMAIN) unless the outgoing server credentials are set.
-
--   If some of the outgoing server credentials parameters are present, then the EMAIL2 Configuration Service Provider will be considered in error.
-
--   Account details cannot be queried unless the account GUID is known. Currently, there's no way to perform a top-level query for account GUIDs.
+- The incoming server logon credentials are used (AUTHNAME, AUTHSECRET, and DOMAIN) unless the outgoing server credentials are set.
+- If some of the outgoing server credentials parameters are present, then the EMAIL2 Configuration Service Provider will be considered in error.
+- Account details can't be queried unless the account GUID is known. Currently, there's no way to perform a top-level query for account GUIDs.
 
 If the connection to the mail server is initiated with deferred SSL, the mail server can send STARTTLS as a server capability and TLS will be enabled. The following steps show how to enable TLS.
 
-1.  The device attempts to connect to the mail server using SSL.
-
-2.  If the SSL connection fails, the device attempts to connect using deferred SSL.
-
-3.  If the connection fails over both SSL and deferred SSL, and the user selected **Server requires encrypted (SSL) connection**, the device doesn't attempt another connection.
-
-4.  If the user didn't select **Server requires encrypted (SSL) connection**, the device attempts to establish a non-SSL connection.
-
-5.  If the connection succeeds using any of the encryption protocols, the device requests the server capabilities.
-
-6.  If one of the capabilities sent by the mail server is STARTTLS and the connection is deferred SSL, then the device enables TLS. TLS isn't enabled on connections using SSL or non-SSL.
+1. The device attempts to connect to the mail server using SSL
+2. If the SSL connection fails, the device attempts to connect using deferred SSL
+3. If the connection fails over both SSL and deferred SSL, and the user selected **Server requires encrypted (SSL) connection**, the device doesn't attempt another connection
+4. If the user didn't select **Server requires encrypted (SSL) connection**, the device attempts to establish a non-SSL connection
+5. If the connection succeeds using any of the encryption protocols, the device requests the server capabilities.
+6. If one of the capabilities sent by the mail server is STARTTLS and the connection is deferred SSL, then the device enables TLS. TLS isn't enabled on connections using SSL or non-SSL.
 
 ## Related articles
-
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
