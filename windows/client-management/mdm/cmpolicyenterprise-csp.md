@@ -77,7 +77,7 @@ A value of "0" specifies that the connections aren't listed in order of preferen
 <a href="" id="connxxx"></a>**Conn**<strong>*XXX*</strong>  
 
 Enumerates the connections associated with the policy. Element names begin with "Conn" followed by three-digits, which increment starting from "000". For example, a policy which applied to five connections would have element entries named "Conn000", "Conn001", "Conn002", "Conn003", and "Conn004".
-=======
+
 Enumerates the connections associated with the policy. Element names begin with "Conn" followed by three digits that increment starting from "000". For example, a policy which is applied to five connections would have element entries named "Conn000", "Conn001", "Conn002", "Conn003", and "Conn004".
 
 <a href="" id="connectionid"></a>**ConnectionID**  
