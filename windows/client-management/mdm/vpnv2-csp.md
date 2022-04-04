@@ -29,13 +29,13 @@ The VPNv2 configuration service provider allows the mobile device management (MD
 Here are the requirements for this CSP:
 
 - VPN configuration commands must be wrapped in an Atomic block in SyncML.
-- For best results, configure your VPN certificates first before pushing down VPN profiles to devices. If you are using Windows Information Protection (WIP) (formerly known as Enterprise Data Protection), then you should configure VPN first before you configure WIP policies.
+- For best results, configure your VPN certificates first before pushing down VPN profiles to devices. If you're using Windows Information Protection (WIP) (formerly known as Enterprise Data Protection), then you should configure VPN first before you configure WIP policies.
 - Instead of changing individual properties, follow these steps to make any changes:
 
   - Send a Delete command for the ProfileName to delete the entire profile.
   - Send the entire profile again with new values wrapped in an Atomic block.
 
-    In certain conditions you can change some properties directly, but we do not recommend it.
+    In certain conditions you can change some properties directly, but we don't recommend it.
 
 The XSDs for all EAP methods are shipped in the box and can be found at the following locations:
 
@@ -341,7 +341,7 @@ Supported operations include Get, Add, and Delete.
 Optional node. List of applications set to trigger the VPN. If any of these apps are launched and the VPN profile is currently the active profile, this VPN profile will be triggered to connect.
 
 <a href="" id="vpnv2-profilename-apptriggerlist-apptriggerrowid"></a>**VPNv2/**<em>ProfileName</em>**/AppTriggerList/**<em>appTriggerRowId</em>  
-A sequential integer identifier that allows the ability to specify multiple apps for App Trigger. Sequencing must start at 0 and you should not skip numbers.
+A sequential integer identifier that allows the ability to specify multiple apps for App Trigger. Sequencing must start at 0 and you shouldn't skip numbers.
 
 Supported operations include Get, Add, Replace, and Delete.
 
@@ -349,7 +349,7 @@ Supported operations include Get, Add, Replace, and Delete.
 App Node under the Row Id.
 
 <a href="" id="vpnv2-profilename-apptriggerlist-apptriggerrowid-app-id"></a>**VPNv2/**<em>ProfileName</em>**/AppTriggerList/**<em>appTriggerRowId</em>**/App/Id**  
-App identity, which is either an app’s package family name or file path. The type is inferred by the Id, and therefore cannot be specified in the get only App/Type field
+App identity, which is either an app’s package family name or file path. The type is inferred by the Id, and therefore can't be specified in the get only App/Type field
 
 <a href="" id="vpnv2-profilename-apptriggerlist-apptriggerrowid-app-type"></a>**VPNv2/**<em>ProfileName</em>**/AppTriggerList/**<em>appTriggerRowId</em>**/App/Type**  
 Returns the type of **App/Id**. This value can be either of the following:
@@ -364,10 +364,10 @@ Optional node. List of routes to be added to the routing table for the VPN inter
 
 Every computer that runs TCP/IP makes routing decisions. These decisions are controlled by the IP routing table. Adding values under this node updates the routing table with routes for the VPN interface post connection. The values under this node represent the destination prefix of IP routes. A destination prefix consists of an IP address prefix and a prefix length.
 
-Adding a route here allows the networking stack to identify the traffic that needs to go over the VPN interface for split tunnel VPN. Some VPN servers can configure this during connect negotiation and do not need this information in the VPN Profile. Please check with your VPN server administrator to determine whether you need this information in the VPN profile.
+Adding a route here allows the networking stack to identify the traffic that needs to go over the VPN interface for split tunnel VPN. Some VPN servers can configure this during connect negotiation and don't need this information in the VPN Profile. Check with your VPN server administrator to determine whether you need this information in the VPN profile.
 
 <a href="" id="vpnv2-profilename-routelist-routerowid"></a>**VPNv2/**<em>ProfileName</em>**/RouteList/**<em>routeRowId</em>  
-A sequential integer identifier for the RouteList. This is required if you are adding routes. Sequencing must start at 0.
+A sequential integer identifier for the RouteList. This is required if you're adding routes. Sequencing must start at 0.
 
 Supported operations include Get, Add, Replace, and Delete.
 
@@ -397,7 +397,7 @@ Supported operations include Get, Add, Replace, and Delete.
 <a href="" id="vpnv2-profilename-domainnameinformationlist"></a>**VPNv2/**<em>ProfileName</em>**/DomainNameInformationList**  
 Optional node. Name Resolution Policy Table (NRPT) rules for the VPN profile.
 
-The Name Resolution Policy Table (NRPT) is a table of namespaces and corresponding settings stored in the Windows registry that determines the DNS client behavior when issuing queries and processing responses. Each row in the NRPT represents a rule for a portion of the namespace for which the DNS client issues queries. Before issuing name resolution queries, the DNS client consults the NRPT to determine if any additional flags must be set in the query. After receiving the response, the client again consults the NRPT to check for any special processing or policy requirements. In the absence of the NRPT, the client operates based on the DNS servers and suffixes set on the interface.
+The Name Resolution Policy Table (NRPT) is a table of namespaces and corresponding settings stored in the Windows registry that determines the DNS client behavior when issuing queries and processing responses. Each row in the NRPT represents a rule for a portion of the namespace for which the DNS client issues queries. Before issuing name resolution queries, the DNS client consults the NRPT to determine if any another flags must be set in the query. After receiving the response, the client again consults the NRPT to check for any special processing or policy requirements. In the absence of the NRPT, the client operates based on the DNS servers and suffixes set on the interface.
 
 > [!NOTE]  
 > Only applications using the [Windows DNS API](/windows/win32/dns/dns-reference) can make use of the NRPT and therefore all settings configured within the DomainNameInformationList section. Applications using their own DNS implementation bypass the Windows DNS API. One example of applications not using the Windows DNS API is nslookup, so always use the PowerShell CmdLet [Resolve-DNSName](/powershell/module/dnsclient/resolve-dnsname) to check the functionality of the NRPT.
@@ -418,7 +418,7 @@ Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 <a href="" id="vpnv2-profilename-domainnameinformationlist-dnirowid-domainnametype"></a>**VPNv2/**<em>ProfileName</em>**/DomainNameInformationList/**<em>dniRowId</em>**/DomainNameType**  
 Returns the namespace type. This value can be one of the following:
 
-- FQDN - If the DomainName was not prepended with a**.** and applies only to the fully qualified domain name (FQDN) of a specified host.
+- FQDN - If the DomainName wasn't prepended with a**.** and applies only to the fully qualified domain name (FQDN) of a specified host.
 - Suffix - If the DomainName was prepended with a**.** and applies to the specified namespace, all records in that namespace, and all subdomains.
 
 Value type is chr. Supported operation is Get.
@@ -429,7 +429,7 @@ List of comma-separated DNS Server IP addresses to use for the namespace.
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-domainnameinformationlist-dnirowid-webproxyservers"></a>**VPNv2/**<em>ProfileName</em>**/DomainNameInformationList/**<em>dniRowId</em>**/WebProxyServers**  
-Optional. Web Proxy Server IP address if you are redirecting traffic through your intranet.
+Optional. Web Proxy Server IP address if you're redirecting traffic through your intranet.
 
 > [!NOTE]  
 > Currently only one web proxy server is supported.  
@@ -439,7 +439,7 @@ Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 <a href="" id="vpnv2-profilename-domainnameinformationlist-dnirowid-autotrigger"></a>**VPNv2/**<em>ProfileName</em>**/DomainNameInformationList/**<em>dniRowId</em>**/AutoTrigger**  
 Added in Windows 10, version 1607. Optional. Boolean to determine whether this domain name rule will trigger the VPN.
 
-If set to False, this DomainName rule will not trigger the VPN.
+If set to False, this DomainName rule won't trigger the VPN.
 
 If set to True, this DomainName rule will trigger the VPN
 
@@ -448,7 +448,7 @@ By default, this value is false.
 Value type is bool.
 
 <a href="" id="vpnv2-profilename-domainnameinformationlist-dnirowid-persistent"></a>**VPNv2/**<em>ProfileName</em>**/DomainNameInformationList/**<em>dniRowId</em>**/Persistent**  
-Added in Windows 10, version 1607. A boolean value that specifies if the rule being added should persist even when the VPN is not connected. Value values:
+Added in Windows 10, version 1607. A boolean value that specifies if the rule being added should persist even when the VPN isn't connected. Value values:
 
 -   False (default) - This DomainName rule will only be applied when VPN is connected.
 -   True - This DomainName rule will always be present and applied.
