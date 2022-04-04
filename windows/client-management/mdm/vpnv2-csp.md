@@ -559,7 +559,7 @@ An optional flag to enable Always On mode. This will automatically connect the V
 
 Preserving user Always On preference
 
-Windows has a feature to preserve a user’s AlwaysOn preference.  In the event that a user manually unchecks the “Connect    automatically” checkbox, Windows will remember this user preference for this profile name by adding the profile name to the value AutoTriggerDisabledProfilesList.  
+Windows has a feature to preserve a user’s AlwaysOn preference.  In the event that a user manually uncheck the “Connect    automatically” checkbox, Windows will remember this user preference for this profile name by adding the profile name to the value AutoTriggerDisabledProfilesList.  
 Should a management tool remove/add the same profile name back and set AlwaysOn to true, Windows will not check the box if the profile name exists in the below registry value in order to preserve user preference.
 Key: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RasMan\Config`
 Value: AutoTriggerDisabledProfilesList
@@ -735,7 +735,7 @@ Required for native profiles. Type of tunneling protocol used. This value can be
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
 > [!NOTE]
-> The **Automatic** option means that the device will try each of the built-in tunneling protocols until one succeeds. It will attempt protocols in following order: SSTP, IKEv2, PPTP and then L2TP. This order is not customizable. 
+> The **Automatic** option means that the device will try each of the built-in tunneling protocols until one succeeds. It will attempt protocols in following order: SSTP, IKEv2, PPTP, and then L2TP. This order is not customizable. 
 
 <a href="" id="vpnv2-profilename-nativeprofile-authentication"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/Authentication**  
 Required node for native profile. It contains authentication information for the native VPN profile.

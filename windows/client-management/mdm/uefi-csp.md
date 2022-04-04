@@ -23,7 +23,7 @@ The table below shows the applicability of Windows:
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
-The UEFI configuration service provider (CSP) interfaces to UEFI's Device Firmware Configuration Interface (DFCI) to make BIOS configuration changes. This CSP was added in Windows 10, version 1809.
+The UEFI configuration service provider (CSP) interfaces to UEFI's Device Firmware Configuration Interface (DFCI) to make BIOS configuration changes. This CSP was added in Windows 10, version 1809c, and later.
 
 > [!NOTE]
 > The UEFI CSP version published in Windows 10, version 1803 is replaced with this one (version 1809).
