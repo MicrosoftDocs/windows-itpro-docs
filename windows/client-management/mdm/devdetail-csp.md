@@ -16,7 +16,7 @@ ms.date: 03/27/2020
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
-|Home|No|No|
+|Home|Yes|Yes|
 |Pro|Yes|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|

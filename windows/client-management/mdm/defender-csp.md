@@ -17,12 +17,11 @@ ms.date: 02/22/2022
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
-|Home|No|No|
+|Home|Yes|Yes|
 |Pro|Yes|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-
 
 > [!WARNING]
 > Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
@@ -187,7 +186,7 @@ The following table describes the supported values:
 | 48    | Policy                      |
 | 49    | EUS (Enterprise Unwanted Software)|
 | 50    | Ransomware                  |
-| 51    | Azure Site Recovery Rule                    |
+| 51    | ASR Rule                    |
 
 Supported operation is Get.
 
@@ -619,7 +618,7 @@ Intune tamper protection setting UX supports three states:
 When enabled or disabled exists on the client and admin moves the setting to not configured, it will not have any impact on the device state. To change the state to either enabled or disabled would require to be set explicitly.
 
 <a href="" id="configuration-disablelocaladminmerge"></a>**Configuration/DisableLocalAdminMerge**<br>
-This policy setting controls whether or not complex list settings configured by a local administrator are merged with managed settings. This setting applies to lists such as threats and exclusions.
+This policy setting controls whether or not complex list settings configured by a local administrator are merged with managed settings. This setting applies to lists such as threats and exclusion list.
 
 If you disable or don't configure this setting, unique items defined in preference settings configured by the local administrator will be merged into the resulting effective policy. In the case of conflicts, management settings will override preference settings.
 
@@ -643,7 +642,7 @@ This policy setting controls whether or not exclusions are visible to Local Admi
 
 - If you enable this setting, Local Admins will no longer be able to see the exclusion list in the Windows Security app or via PowerShell.
 
-- If you disable or don't configure this setting, Local Admins will be able to see exclusions in the Windows Security App and via PowerShell.
+- If you disable or don't configure this setting, Local Admins will be able to see the exclusion list in the Windows Security App and via PowerShell.
 
 > [!NOTE]
 > Applying this setting will not remove exclusions, it will only prevent them from being visible to Local Admins. This is reflected in **Get-MpPreference**.
