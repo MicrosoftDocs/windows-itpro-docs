@@ -74,7 +74,7 @@ Office 365 Education allows:
 - Students and faculty to use email and calendars, with mailboxes up to 50 GB per user.
 - Faculty to use advanced email features like email archiving and legal hold capabilities.
 - Faculty to help prevent unauthorized users from accessing documents and email by using Azure Rights Management.
-- Faculty to use advanced compliance tools on the unified eDiscovery pages in the Microsoft Purview portal.
+- Faculty to use advanced compliance tools on the unified eDiscovery pages in the Microsoft Purview compliance portal.
 - Faculty to host online classes, parent–teacher conferences, and other collaboration in Skype for Business or Skype.
 - Students and faculty to access up to 1 TB of personal cloud storage that users inside and outside the educational institution can share through OneDrive for Business.
 - Teachers to provide collaboration in the classroom through Microsoft SharePoint Online team sites.
