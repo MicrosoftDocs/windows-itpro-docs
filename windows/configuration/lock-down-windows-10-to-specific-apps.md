@@ -24,6 +24,7 @@ ms.collection: highpri
 
 > [!NOTE]
 > [!INCLUDE [Multi-app kiosk mode not supported on Windows 11](./includes/multi-app-kiosk-support-windows11.md)]
+> Add note: The user of dual- or multi-monitor is not supported for Multi-app kiosk mode.
 
 A [kiosk device](./kiosk-single-app.md) typically runs a single app, and users are prevented from accessing any features or functions on the device outside of the kiosk app. In Windows 10, version 1709, the [AssignedAccess configuration service provider (CSP)](/windows/client-management/mdm/assignedaccess-csp) was expanded to make it easy for administrators to create kiosks that run more than one app. The benefit of a kiosk that runs only one or more specified apps is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don’t need to access.
 
