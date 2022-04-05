@@ -1,6 +1,6 @@
 ---
 title: EnterpriseAppManagement CSP
-description: Handle enterprise application management tasks using EnterpriseAppManagement configuration service provider (CSP).
+description: Learn how to handle enterprise application management tasks using EnterpriseAppManagement configuration service provider (CSP).
 ms.assetid: 698b8bf4-652e-474b-97e4-381031357623
 ms.reviewer: 
 manager: dansimp
@@ -14,12 +14,10 @@ ms.date: 06/26/2017
 
 # EnterpriseAppManagement CSP
 
-
 The EnterpriseAppManagement enterprise configuration service provider is used to handle enterprise application management tasks such as installing an enterprise application token, the first auto-downloadable app link, querying installed enterprise applications (name and version), auto updating already installed enterprise applications, and removing all installed enterprise apps (including the enterprise app token) during unenrollment.
 
 > [!NOTE]
 > The EnterpriseAppManagement CSP is only supported in Windows 10 IoT Core.
- 
 
 The following shows the EnterpriseAppManagement configuration service provider in tree format.
 
@@ -52,7 +50,7 @@ EnterpriseAppManagement
 ```
 
 <a href="" id="enterpriseid"></a>***EnterpriseID***
-Optional. A dynamic node that represents the EnterpriseID as a GUID. It is used to enroll or unenroll enterprise applications.
+Optional. A dynamic node that represents the EnterpriseID as a GUID. It's used to enroll or unenroll enterprise applications.
 
 Supported operations are Add, Delete, and Get.
 
@@ -83,8 +81,6 @@ Supported operations are Get and Add.
 
 > [!NOTE]
 > Do NOT use Subject=CN%3DB1C43CD0-1624-5FBB-8E54-34CF17DFD3A1\\x00. The server must replace this value in the supplied client certificate. If your server returns a client certificate containing the same Subject value, this can cause unexpected behavior. The server should always override the subject value and not use the default device-provided Device ID Subject= Subject=CN%3DB1C43CD0-1624-5FBB-8E54-34CF17DFD3A1\\x00
-
- 
 
 <a href="" id="enterpriseid-status"></a>***EnterpriseID*/Status**
 Required. The integer value that indicates the current status of the application enrollment. Valid values are 0 (ENABLED), 1 (INSTALL\_DISABLED), 2 (REVOKED), and 3 (INVALID). Scope is dynamic.
@@ -168,7 +164,7 @@ Required. The integer value that indicates the status of the current download pr
 |4: INSTALLING|Handed off for installation.|
 |5: INSTALLED|Successfully installed|
 |6: FAILED|Application was rejected (not signed properly, bad XAP format, not enrolled properly, etc.)|
-|7:DOWNLOAD_FAILED|Unable to connect to server, file doesn't exist, etc.|
+|7: DOWNLOAD_FAILED|Unable to connect to server, file doesn't exist, etc.|
 
 Scope is dynamic. Supported operations are Get, Add, and Replace.
 
@@ -187,14 +183,13 @@ Supported operation is Exec.
 
 ## Remarks
 
-
 ### Install and Update Line of Business (LOB) applications
 
-A workplace can automatically install and update Line of Business applications during a management session. Line of Business applications support a variety of file types including XAP (8.0 and 8.1), AppX, and AppXBundles. A workplace can also update applications from XAP file formats to Appx and AppxBundle formats through the same channel. For more information, see the Examples section.
+A workplace can automatically install and update Line of Business applications during a management session. Line of Business applications supports various file types including XAP (8.0 and 8.1), AppX, and AppXBundles. A workplace can also update applications from XAP file formats to Appx and AppxBundle formats through the same channel. For more information, see the Examples section.
 
 ### Uninstall Line of Business (LOB) applications
 
-A workplace can also remotely uninstall Line of Business applications on the device. It is not possible to use this mechanism to uninstall Store applications on the device or Line of Business applications that are not installed by the enrolled workplace (for side-loaded application scenarios). For more information, see the Examples section
+A workplace can also remotely uninstall Line of Business applications on the device. It isn't possible to use this mechanism to uninstall Store applications on the device or Line of Business applications that aren't installed by the enrolled workplace (for side-loaded application scenarios). For more information, see the Examples section
 
 ### Query installed Store application
 
@@ -240,24 +235,17 @@ Response from the device (it contains list of subnodes if this app is installed 
 
 All node values under the ProviderID interior node represent the policy values that the management server wants to set.
 
--   An Add or Replace command on those nodes returns success in both of the following cases:
-
-    -   The value is actually applied to the device.
-
-    -   The value isn’t applied to the device because the device has a more secure value set already.
-
+- An Add or Replace command on those nodes returns success in both of the following cases:
+      - The value is applied to the device.
+      - The value isn’t applied to the device because the device has a more secure value set already.
 From a security perspective, the device complies with the policy request that is at least as secure as the one requested.
-
--   A Get command on those nodes returns the value that the server pushes down to the device.
-
--   If a Replace command fails, the node value is set to be the previous value before Replace command was applied.
-
--   If an Add command fails, the node is not created.
+- A Get command on those nodes returns the value that the server pushes down to the device.
+- If a Replace command fails, the node value is set to be the previous value before Replace command was applied.
+- If an Add command fails, the node is not created.
 
 The value actually applied to the device can be queried via the nodes under the DeviceValue interior node.
 
 ## OMA DM examples
-
 
 Enroll enterprise ID “4000000001” for the first time:
 
@@ -427,17 +415,14 @@ Response from the device (that contains two installed applications):
 
 ## Install and update an enterprise application
 
-
 Install or update the installed app with the product ID “{B316008A-141D-4A79-810F-8B764C4CFDFB}”.
 
-To perform an XAP update, create the Name, URL, Version, and DownloadInstall nodes first, then perform an “execute” on the “DownloadInstall” node (all within an “Atomic” operation). If the application does not exist, the application will be silently installed without any user interaction. If the application cannot be installed, the user will be notified with an Alert dialog.
+To perform an XAP update, create the Name, URL, Version, and DownloadInstall nodes first, then perform an “execute” on the “DownloadInstall” node (all within an “Atomic” operation). If the application doesn't exist, the application will be silently installed without any user interaction. If the application can't be installed, the user will be notified with an Alert dialog.
 
 > [!NOTE]
+>
 > - If a previous app-update node existed for this product ID (the node can persist for up to 1 week or 7 days after an installation has completed), then a 418 (already exist) error would be returned on the “Add”. To get around the 418 error, the server should issue a Replace command for the Name, URL, and Version nodes, and then execute on the “DownloadInstall” (within an “Atomic” operation).
-> 
 > - The application product ID curly braces need to be escaped where { is %7B and } is %7D.
-
- 
 
 ```xml
 <Atomic>
@@ -526,7 +511,6 @@ Uninstall an installed enterprise application with product ID “{7BB316008A-141
 ```
 
 ## Related topics
-
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 

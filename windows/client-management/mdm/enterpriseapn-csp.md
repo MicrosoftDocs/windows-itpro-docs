@@ -1,6 +1,6 @@
 ---
 title: EnterpriseAPN CSP
-description: The EnterpriseAPN configuration service provider is used by the enterprise to provision an APN for the Internet.
+description: Learn how the EnterpriseAPN configuration service provider is used by the enterprise to provision an APN for the Internet.
 ms.assetid: E125F6A5-EE44-41B1-A8CC-DF295082E6B2
 ms.reviewer: 
 manager: dansimp
@@ -14,10 +14,20 @@ ms.date: 09/22/2017
 
 # EnterpriseAPN CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 The EnterpriseAPN configuration service provider (CSP) is used by the enterprise to provision an APN for the Internet.
 
 > [!Note]
-> Starting in Windows 10, version 1703 the EnterpriseAPN CSP is supported in Windows 10 Home, Pro, Enterprise, and Education editions.
+> Starting in Windows 10, version 1703 the EnterpriseAPN CSP is supported in Windows 10/Windows 11 Home, Pro, Enterprise, and Education editions.
 
 The following shows the EnterpriseAPN configuration service provider in tree format.
 ```
@@ -39,111 +49,112 @@ EnterpriseAPN
 --------HideView
 ```
 <a href="" id="enterpriseapn"></a>**EnterpriseAPN**  
-<p>The root node for the EnterpriseAPN configuration service provider.</p>
+The root node for the EnterpriseAPN configuration service provider.
 
 <a href="" id="enterpriseapn-connectionname"></a>**EnterpriseAPN/**<strong>*ConnectionName*</strong>  
-<p>Name of the connection as seen by Windows Connection Manager.</p>
+Name of the connection as seen by Windows Connection Manager.
 
-<p>Supported operations are Add, Get, Delete, and Replace.</p>
+Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="enterpriseapn-connectionname-apnname"></a>**EnterpriseAPN/*ConnectionName*/APNName**  
-<p>Enterprise APN name.</p>
+Enterprise APN name.
 
-<p>Supported operations are Add, Get, Delete, and Replace.</p>
+Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="enterpriseapn-connectionname-iptype"></a>**EnterpriseAPN/*ConnectionName*/IPType**  
-<p>This value can be one of the following:</p>
+This value can be one of the following:
 
--   IPv4 - only IPV4 connection type
--   IPv6 - only IPv6 connection type
--   IPv4v6 (default)- IPv4 and IPv6 concurrently.
--   IPv4v6xlat - IPv6 with IPv4 provided by 46xlat
+- IPv4 - only IPV4 connection type.
+- IPv6 - only IPv6 connection type.
+- IPv4v6 (default)- IPv4 and IPv6 concurrently.
+- IPv4v6xlat - IPv6 with IPv4 provided by 46xlat.
 
-<p>Supported operations are Add, Get, Delete, and Replace.</p>
+Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="enterpriseapn-connectionname-isattachapn"></a>**EnterpriseAPN/*ConnectionName*/IsAttachAPN**  
-<p>Boolean value that indicates whether this APN should be requested as part of an LTE Attach. Default value is false.</p>
+Boolean value that indicates whether this APN should be requested as part of an LTE Attach. 
 
-<p>Supported operations are Add, Get, Delete, and Replace.</p>
+Default value is false.
+
+Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="enterpriseapn-connectionname-classid"></a>**EnterpriseAPN/*ConnectionName*/ClassId**  
-<p>GUID that defines the APN class to the modem. This is the same as the OEMConnectionId in CM_CellularEntries CSP. Normally this setting is not present. It is only required when IsAttachAPN is true and the attach APN is not only used as the Internet APN.</p>
+GUID that defines the APN class to the modem. This is the same as the OEMConnectionId in CM_CellularEntries CSP. Normally this setting isn't present. It's only required when IsAttachAPN is true and the attach APN isn't only used as the Internet APN.
 
-<p>Supported operations are Add, Get, Delete, and Replace.</p>
+Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="enterpriseapn-connectionname-authtype"></a>**EnterpriseAPN/*ConnectionName*/AuthType**  
-<p>Authentication type. This value can be one of the following:</p>
+Authentication type. This value can be one of the following:
 
--   None (default)
--   Auto
--   PAP
--   CHAP
--   MSCHAPv2
+- None (default)
+- Auto
+- PAP
+- CHAP
+- MSCHAPv2
 
-<p>Supported operations are Add, Get, Delete, and Replace.</p>
+Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="enterpriseapn-connectionname-username"></a>**EnterpriseAPN/*ConnectionName*/UserName**  
-<p>User name for use with PAP, CHAP, or MSCHAPv2 authentication.</p>
+User name for use with PAP, CHAP, or MSCHAPv2 authentication.
 
-<p>Supported operations are Add, Get, Delete, and Replace.</p>
+Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="enterpriseapn-connectionname-password"></a>**EnterpriseAPN/*ConnectionName*/Password**  
-<p>Password corresponding to the username.</p>
+Password corresponding to the username.
 
-<p>Supported operations are Add, Get, Delete, and Replace.</p>
+Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="enterpriseapn-connectionname-iccid"></a>**EnterpriseAPN/*ConnectionName*/IccId**  
-<p>Integrated Circuit Card ID (ICCID) associated with the cellular connection profile. If this node is not present, the connection is created on a single-slot device using the ICCID of the UICC and on a dual-slot device using the ICCID of the UICC that is active for data.</p>
+Integrated Circuit Card ID (ICCID) associated with the cellular connection profile. If this node isn't present, the connection is created on a single-slot device using the ICCID of the UICC and on a dual-slot device using the ICCID of the UICC that is active for data.
 
-<p>Supported operations are Add, Get, Delete, and Replace.</p>
+Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="enterpriseapn-connectionname-alwayson"></a>**EnterpriseAPN/*ConnectionName*/AlwaysOn**  
-<p>Added in Windows 10, version 1607. Boolean value that specifies whether the CM will automatically attempt to connect to the APN when a connection is available.</p>
+Added in Windows 10, version 1607. Boolean value that specifies whether the CM will automatically attempt to connect to the APN when a connection is available.
 
-<p>The default value is true.</p>
+The default value is true.
 
-<p>Supported operations are Add, Get, Delete, and Replace.</p>
+Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="enterpriseapn-connectionname-enabled"></a>**EnterpriseAPN/*ConnectionName*/Enabled**  
-<p>Added in Windows 10, version 1607. Boolean that specifies whether the connection is enabled.</p>
+Added in Windows 10, version 1607. Boolean that specifies whether the connection is enabled.
 
-<p>The default value is true.</p>
+The default value is true.
 
-<p>Supported operations are Add, Get, Delete, and Replace.</p>
+Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="enterpriseapn-connectionname-roaming"></a>**EnterpriseAPN/*ConnectionName*/Roaming**  
-<p>Added in Windows 10, version 1703. Specifies whether the connection should be activated when the device is roaming. Valid values:</p>
+Added in Windows 10, version 1703. Specifies whether the connection should be activated when the device is roaming. Valid values are:
 
-<ul>
-<li>0 - Disallowed</li>
-<li>1 - Allowed</li>
-<li>2 - DomesticRoaming</li>
-<li>3 - UseOnlyForDomesticRoaming</li>
-<li>4 - UseOnlyForNonDomesticRoaming</li>
-<li>5 - UseOnlyForRoaming</li>
-</ul>
+- 0 - Disallowed
+- 1 - Allowed
+- 2 - DomesticRoaming
+- 3 - UseOnlyForDomesticRoaming
+- 4 - UseOnlyForNonDomesticRoaming
+- 5 - UseOnlyForRoaming
 
-<p>Default is 1 (all roaming allowed).</p>
+Default is 1 (all roaming allowed).
 
-<p>Value type is string. Supported operations are Add, Get, Delete, and Replace.</p>
+Value type is string. 
 
+Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="enterpriseapn-settings"></a>**EnterpriseAPN/Settings**  
-<p>Added in Windows 10, version 1607. Node that contains global settings.</p>
+Added in Windows 10, version 1607. Node that contains global settings.
 
 <a href="" id="enterpriseapn-settings-allowusercontrol"></a>**EnterpriseAPN/Settings/AllowUserControl**  
-<p>Added in Windows 10, version 1607. Boolean value that specifies whether the cellular UX will allow users to connect with other APNs other than the Enterprise APN.</p>
+Added in Windows 10, version 1607. Boolean value that specifies whether the cellular UX will allow users to connect with other APNs other than the Enterprise APN.
 
-<p>The default value is false.</p>
+The default value is false.
 
-<p>Supported operations are Get and Replace.</p>
+Supported operations are Get and Replace.
 
 <a href="" id="enterpriseapn-settings-hideview"></a>**EnterpriseAPN/Settings/HideView**  
-<p>Added in Windows 10, version 1607. Boolean that specifies whether the cellular UX will allow the user to view enterprise APNs. Only applicable if AllowUserControl is true.</p>
+Added in Windows 10, version 1607. Boolean that specifies whether the cellular UX will allow the user to view enterprise APNs. Only applicable if AllowUserControl is true.
 
-<p>The default value is false.</p>
+The default value is false.
 
-<p>Supported operations are Get and Replace.</p>
+Supported operations are Get and Replace.
 
 ## Examples
 
@@ -290,15 +301,4 @@ atomicZ
 
 ## Related topics
 
-
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-
- 
-
-
-
-
-
-

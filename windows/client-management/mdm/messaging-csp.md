@@ -1,6 +1,6 @@
 ---
 title: Messaging CSP
-description: Use the Messaging configuration service provider (CSP) to configure the ability to get text messages audited on a mobile device.
+description: Learn how to use the Messaging configuration service provider (CSP) to configure the ability to get text messages audited on a mobile device.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -30,37 +30,36 @@ Messaging
 
 <a href="" id="--user-msft-applocker"></a>**./User/Vendor/MSFT/Messaging**  
 
-<p>Root node for the Messaging configuration service provider.</p>
+Root node for the Messaging configuration service provider.
 
 <a href="" id="auditinglevel"></a>**AuditingLevel**  
-<p>Turns on the &quot;Text&quot; auditing feature.</p>
-<p>The following list shows the supported values:</p>
-<ul>
-<li>0 (Default) - Off</li>
-<li>1 - On</li>
-</ul>
-<p>Supported operations are Get and Replace.</p>
+Turns on the "Text" auditing feature.
+The following list shows the supported values:
+
+- 0 (Default) - Off
+- 1 - On
+
+Supported operations are Get and Replace.
 
 <a href="" id="auditing"></a>**Auditing**  
-<p>Node for auditing.</p>
-<p>Supported operation is Get.</p>
+Node for auditing.
+Supported operation is Get.
 
 <a href="" id="messages"></a>**Messages**  
-<p>Node for messages.</p>
-<p>Supported operation is Get.</p>
+Node for messages.
+Supported operation is Get.
 
 <a href="" id="count"></a>**Count**  
-<p>The number of messages to return in the Data setting. The default is 100.</p>
-<p>Supported operations are Get and Replace.</p>
+The number of messages to return in the Data setting. The default is 100.
+Supported operations are Get and Replace.
 
 <a href="" id="revisionid"></a>**RevisionId**  
-<p>Retrieves messages whose revision ID is greater than RevisionId.</p>
-<p>Supported operations are Get and Replace.</p>
+Retrieves messages whose revision ID is greater than RevisionId.
+Supported operations are Get and Replace.
 
 <a href="" id="data"></a>**Data**  
-<p>The JSON string of text messages on the device.</p>
-<p>Supported operations are Get and Replace.</p>
-
+The JSON string of text messages on the device.
+Supported operations are Get and Replace.
 
 **SyncML example**
 
@@ -111,3 +110,7 @@ Messaging
   </SyncBody>
 </SyncML>
 ```
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)

@@ -11,12 +11,21 @@ ms.date: 05/21/2019
 
 # EnrollmentStatusTracking CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 During Autopilot deployment, you can configure the Enrollment Status Page (ESP) to block the device use until the required apps are installed. You can select the apps that must be installed before using the device. The EnrollmentStatusTracking configuration service provider (CSP) is used by Intune's agents, such as SideCar to configure ESP for blocking the device use until the required Win32 apps are installed. It tracks the installation status of the required policy providers and the apps they install and sends it to ESP, which displays the installation progress message to the user. For more information on ESP, see [Windows Autopilot Enrollment Status page](/windows/deployment/windows-autopilot/enrollment-status).
 
-ESP uses the EnrollmentStatusTracking CSP along with the DMClient CSP to track the installation of different apps. The EnrollmentStatusTracking CSP tracks Win32 apps installations and DMClient CSP tracks MSI and Universal Windows Platform apps installations. In DMClient CSP, the **FirstSyncStatus/ExpectedMSIAppPackages** and **FirstSyncStatus/ExpectedModernAppPackages** nodes list the apps to track their installation. See [DMClient CSP](dmclient-csp.md) for more information.
+ESP uses the EnrollmentStatusTracking CSP along with the DMClient CSP to track the installation of different apps. The EnrollmentStatusTracking CSP tracks Win32 apps installations and DMClient CSP tracks MSI and Universal Windows Platform apps installations. In DMClient CSP, the **FirstSyncStatus/ExpectedMSIAppPackages** and **FirstSyncStatus/ExpectedModernAppPackages** nodes list the apps to track their installation. For more information, see [DMClient CSP](dmclient-csp.md).
 
 The EnrollmentStatusTracking CSP was added in Windows 10, version 1903.
-
 
 The following shows the EnrollmentStatusTracking CSP in tree format.
 ```
@@ -59,6 +68,7 @@ EnrollmentStatusTracking
 ------------------------RebootRequired
 --------HasProvisioningCompleted
 ```
+
 <a href="" id="vendor-msft"></a>**./Vendor/MSFT**  
 For device context, use **./Device/Vendor/MSFT** path and for user context, use **./User/Vendor/MSFT** path.
 
@@ -93,10 +103,11 @@ Communicates the policy provider installation state back to ESP.
 Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
 
 Value type is integer. Expected values are as follows:
-- 1 — NotInstalled
-- 2 — NotRequired
-- 3 — Completed
-- 4 — Error
+
+- 1—NotInstalled
+- 2—NotRequired
+- 3—Completed
+- 4—Error
 
 <a href="" id="enrollmentstatustracking-devicepreparation-policyproviders-providername-lasterror"></a>**EnrollmentStatusTracking/DevicePreparation/PolicyProviders/*ProviderName*/LastError**  
 Required. This node is supported only in device context.  
@@ -127,8 +138,9 @@ This node specifies if the policy provider is registered for app provisioning.
 Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
 
 Value type is boolean. Expected values are as follows:
-- false — Indicates that the policy provider is not registered for app provisioning. This is the default.
-- true — Indicates that the policy provider is registered for app provisioning.
+
+- false—Indicates that the policy provider isn't registered for app provisioning. This is the default.
+- true—Indicates that the policy provider is registered for app provisioning.
 
 <a href="" id="enrollmentstatustracking-setup"></a>**EnrollmentStatusTracking/Setup**  
 Required. This node is supported in both user context and device context.  
@@ -150,7 +162,7 @@ Scope is permanent. Supported operation is Get.
 
 <a href="" id="enrollmentstatustracking-setup-apps-policyproviders-providername"></a>**EnrollmentStatusTracking/Setup/Apps/PolicyProviders**/***ProviderName***  
 Optional. This node is supported in both user context and device context.  
-Represents an app policy provider for the ESP. Existence of this node indicates to the ESP that it should not show the tracking status message until the TrackingPoliciesCreated node has been set to true.
+Represents an app policy provider for the ESP. Existence of this node indicates to the ESP that it shouldn't show the tracking status message until the TrackingPoliciesCreated node has been set to true.
 
 Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
 
@@ -161,8 +173,9 @@ Indicates if the provider has created the required policies for the ESP to use f
 Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
 
 Value type is boolean. The expected values are as follows:
-- true — Indicates that the provider has created the required policies.
-- false — Indicates that the provider has not created the required policies. This is the default.
+
+- true—Indicates that the provider has created the required policies.
+- false—Indicates that the provider hasn't created the required policies. This is the default.
 
 <a href="" id="enrollmentstatustracking-setup-apps-tracking"></a>**EnrollmentStatusTracking/Setup/Apps/Tracking**  
 Required. This node is supported in both user context and device context.  
@@ -178,7 +191,7 @@ Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
 
 <a href="" id="enrollmentstatustracking-setup-apps-tracking-providername-appname"></a>**EnrollmentStatusTracking/Setup/Apps/Tracking/*ProviderName*/_AppName_**  
 Optional. This node is supported in both user context and device context.  
-Represents a unique name for the app whose progress should be tracked by the ESP. The policy provider can define any arbitrary app name as ESP does not use the app name directly.
+Represents a unique name for the app whose progress should be tracked by the ESP. The policy provider can define any arbitrary app name as ESP doesn't use the app name directly.
 
 Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
 
@@ -189,21 +202,23 @@ Represents the installation state for the app. The policy providers (not the MDM
 Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
 
 Value type is integer. Expected values are as follows:
-- 1 — NotInstalled
-- 2 — InProgress
-- 3 — Completed
-- 4 — Error
+
+- 1—NotInstalled
+- 2—InProgress
+- 3—Completed
+- 4—Error
 
 <a href="" id="enrollmentstatustracking-setup-apps-tracking-providername-appname-rebootrequired"></a>**EnrollmentStatusTracking/Setup/Apps/Tracking/*ProviderName*/*AppName*/RebootRequired**  
 Optional. This node is supported in both user context and device context.  
-Indicates if the app installation requires ESP to issue a reboot. The policy providers installing the app (not the MDM server) must set this node. If the policy providers do not set this node, the ESP will not reboot the device for the app installation.
+Indicates if the app installation requires ESP to issue a reboot. The policy providers installing the app (not the MDM server) must set this node. If the policy providers don't set this node, the ESP won't reboot the device for the app installation.
 
 Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
 
 Value type is integer. Expected values are as follows:
-- 1 — NotRequired
-- 2 — SoftReboot
-- 3 — HardReboot
+
+- 1—NotRequired
+- 2—SoftReboot
+- 3—HardReboot
 
 <a href="" id="enrollmentstatustracking-setup-hasprovisioningcompleted"></a>**EnrollmentStatusTracking/Setup/HasProvisioningCompleted**  
 Required. This node is supported in both user context and device context.  
@@ -212,5 +227,10 @@ ESP sets this node when it completes. Providers can query this node to determine
 Scope is permanent. Supported operation is Get.
 
 Value type is boolean. Expected values are as follows:
-- true — Indicates that ESP has completed. This is the default.
-- false — Indicates that ESP is displayed, and provisioning is still going.
+
+- true—Indicates that ESP has completed. This is the default.
+- false—Indicates that ESP is displayed, and provisioning is still going.
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)
