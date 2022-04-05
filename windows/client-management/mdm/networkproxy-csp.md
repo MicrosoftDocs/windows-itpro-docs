@@ -23,7 +23,7 @@ The table below shows the applicability of Windows:
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
-The NetworkProxy configuration service provider (CSP) is used to configure a proxy server for ethernet and WiFi connections. These settings do not apply to VPN connections. This CSP was added in Windows 10, version 1703.
+The NetworkProxy configuration service provider (CSP) is used to configure a proxy server for ethernet and Wi-Fi connections. These settings do not apply to VPN connections. This CSP was added in Windows 10, version 1703.
 
 How the settings work:  
 
@@ -73,7 +73,7 @@ Address to the PAC script you want to use.
 The data type is string. Supported operations are Get and Replace. Starting in Windows 10, version 1803, the Delete operation is also supported.
 
 <a href="" id="proxyserver"></a>**ProxyServer**  
-Node for configuring a static proxy for Ethernet and WiFi connections. The same proxy server is used for all protocols - including HTTP, HTTPS, FTP, and SOCKS. These settings do not apply to VPN connections.
+Node for configuring a static proxy for Ethernet and Wi-Fi connections. The same proxy server is used for all protocols - including HTTP, HTTPS, FTP, and SOCKS. These settings do not apply to VPN connections.
 
 Supported operation is Get.
 

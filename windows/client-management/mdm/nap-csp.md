@@ -121,7 +121,7 @@ Queries of this field will return a string composed of sixteen asterisks (\*).
 Node.
 
 <a href="" id="napx-bearer-bearertype"></a>***NAPX*/Bearer/BearerType**  
-Required. Specifies the network type of the destination network. This can be set to GPRS, CDMA2000, WCDMA, TDMA, CSD, DTPT, and WiFi.
+Required. Specifies the network type of the destination network. This can be set to GPRS, CDMA2000, WCDMA, TDMA, CSD, DTPT, and Wi-Fi.
 
 ## Related articles
 
