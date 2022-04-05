@@ -14,7 +14,6 @@ author: jgeurten
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 
 ---
 
 # Microsoft recommended driver block rules
@@ -46,7 +45,7 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <SiPolicy xmlns="urn:schemas-microsoft-com:sipolicy">
-  <VersionEx>10.0.25070.0</VersionEx>
+  <VersionEx>10.0.25090.0</VersionEx>
   <PolicyTypeID>{D2BDA982-CCF6-4344-AC5B-0B44427B6816}</PolicyTypeID>
   <PlatformID>{2E07F7E4-194C-4D20-B7C9-6F44A6C5A234}</PlatformID>
   <Rules>
@@ -389,7 +388,7 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     <Deny ID="ID_DENY_RETLIFTEN_SHA256_70" FriendlyName="b.sys Hash Sha256" Hash="84DF20B1D9D87E305C92E5FFAE21B10B325609D59D835A954DBD8750EF5DABF4"/>
     <Deny ID="ID_DENY_RETLIFTEN_SHA256_71" FriendlyName="nt4.sys Hash Sha256" Hash="D7BC7306CB489FE4C285BBEDDC6D1A09E814EF55CF30BD5B8DAF87A52396F102"/>
     <Deny ID="ID_DENY_RETLIFTEN_SHA256_72" FriendlyName="d3.sys Hash Sha256" Hash="36875562E747136313EC5DB58174E5FAB870997A054CA8D3987D181599C7DB6A"/>
-    <Deny ID="ID_DENY_PROCESSHACKER" FriendlyName="kprocesshacker.sys FileRule" FileName="kprocesshacker.sys" />
+    <Deny ID="ID_DENY_PROCESSHACKER" FriendlyName="kprocesshacker.sys FileRule" FileName="kprocesshacker.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.65535.65535" />
     <Deny ID="ID_DENY_AMP" FriendlyName="System Mechanic CVE-2018-5701" FileName="amp.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="5.4.11.1" />
     <Deny ID="ID_DENY_ASMMAP" FriendlyName="Asus Memory Mapping Driver" FileName="asmmap.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_ASMMAP_64" FriendlyName="Asus Memory Mapping Driver" FileName="asmmap64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
@@ -422,6 +421,8 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     <FileAttrib ID="ID_FILEATTRIB_RTKIOW8X64_DRIVER" FriendlyName="" FileName="rtkiow8x64.sys" MinimumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_RTKIOW10X64_DRIVER" FriendlyName="" FileName="rtkiow10x64.sys" MinimumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_RWDRV_DRIVER" FriendlyName="" FileName="RwDrv.sys" MinimumFileVersion="65535.65535.65535.65535" />
+	<FileAttrib ID="ID_FILEATTRIB_SANDBOX_1" FriendlyName="Agnitum sandbox FileAttribute" FileName="sandbox.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_SANDBOX_2" FriendlyName="Agnitum SandBox FileAttribute" FileName="SandBox.sys"  MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_SANDRA" FriendlyName="" FileName="SANDRA" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.12.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_SANDRA_DRIVER" FriendlyName="" FileName="sandra.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.12.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_SEGWINDRVX64" FriendlyName="segwindrvx64.sys FileAttribute" FileName="segwindrvx64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="100.0.7.2" />
@@ -701,6 +702,26 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
       <CertPublisher Value="Advanced Micro Devices Inc." />
       <FileAttribRef RuleID="ID_FILEATTRIB_AMDPP" />
     </Signer>
+	<Signer ID="ID_SIGNER_AGNITUM_2004" Name="VeriSign Class 3 Code Signing 2004 CA">
+      <CertRoot Type="TBS" Value="C7FC1727F5B75A6421A1F95C73BBDB23580C48E5" />
+      <CertPublisher Value="Agnitum Ltd." />
+      <FileAttribRef RuleID="ID_FILEATTRIB_SANDBOX_2" />
+    </Signer>
+	<Signer ID="ID_SIGNER_AGNITUM_2009" Name="VeriSign Class 3 Code Signing 2009-2 CA">
+      <CertRoot Type="TBS" Value="4CDC38C800761463749C3CBD94A12F32E49877BF" />
+      <CertPublisher Value="Agnitum Ltd." />
+      <FileAttribRef RuleID="ID_FILEATTRIB_SANDBOX_1" />
+    </Signer>
+    <Signer ID="ID_SIGNER_AGNITUM_2010" Name="VeriSign Class 3 Code Signing 2010 CA">
+      <CertRoot Type="TBS" Value="4843A82ED3B1F2BFBEE9671960E1940C942F688D" />
+      <CertPublisher Value="Agnitum Ltd." />
+      <FileAttribRef RuleID="ID_FILEATTRIB_SANDBOX_1" />
+    </Signer>
+    <Signer ID="ID_SIGNER_AGNITUM_2010_1" Name="VeriSign Class 3 Code Signing 2010 CA">
+      <CertRoot Type="TBS" Value="4678C6E4A8787A8E6ED2BCE8792B122F6C08AFD8" />
+      <CertPublisher Value="Agnitum Ltd." />
+      <FileAttribRef RuleID="ID_FILEATTRIB_SANDBOX_1" />
+    </Signer>
     <Signer ID="ID_SIGNER_GEOTRUST_SRL_2009" Name="HT Srl Digital ID Class 3 - Microsoft Software Validation v2">
       <CertRoot Type="TBS" Value="d70edfa009a76bd8250d74e9ee92eb9ead7d4cb3" />
     </Signer>
@@ -722,11 +743,30 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
 	<Signer ID="ID_SIGNER_SAASAME" Name="SaaSaMe Ltd.">
       <CertRoot Type="TBS" Value="A86DE66D8198E4272859881476A6F9936034A482" />
     </Signer>
+	<Signer ID="ID_SIGNER_NVIDIA_2007" Name="Leaked 2007 NVIDIA Corporation Verisign Class 3 Code Signing 2004 CA">
+      <CertRoot Type="TBS" Value="80854F578E2A3B5552EA839BA4F98DDFE94B2381" />
+    </Signer>
 	<Signer ID="ID_SIGNER_NVIDIA_2011" Name="Leaked 2011 NVIDIA Corporation Verisign Class 3 Code Signing 2010 CA">
       <CertRoot Type="TBS" Value="15C37DBEBE6FCC77108E3D7AD982676D3D5E77F7" />
     </Signer>
 	<Signer ID="ID_SIGNER_NVIDIA_2015" Name="Leaked 2015 NVIDIA Corporation Verisign Class 3 Code Signing 2010 CA">
       <CertRoot Type="TBS" Value="F049A238763D4A90B148AB10A500F96EBF1DC436" />
+    </Signer>
+	<Signer ID="ID_SIGNER_HERMETICWIPER_1" Name="DigiCert Assured ID Code Signing CA-1">
+      <CertRoot Type="TBS" Value="47F4B9898631773231B32844EC0D49990AC4EB1E" />
+      <CertPublisher Value="CHENGDU YIWO Tech Development Co., Ltd." />
+    </Signer>
+    <Signer ID="ID_SIGNER_HERMETICWIPER_2" Name="Symantec Class 3 Extended Validation Code Signing CA - G2">
+      <CertRoot Type="TBS" Value="B3C925B4048C3F7C444D248A2B101186B57CBA39596EB5DCE0E17A4EE4B32F19" />
+      <CertPublisher Value="Chengdu Yiwo Tech Development Co., Ltd." />
+    </Signer>
+    <Signer ID="ID_SIGNER_HERMETICWIPER_3" Name="VeriSign Class 3 Code Signing 2004 CA">
+      <CertRoot Type="TBS" Value="C7FC1727F5B75A6421A1F95C73BBDB23580C48E5" />
+      <CertPublisher Value="CHENGDU YIWO Tech Development Co., Ltd." />
+    </Signer>
+    <Signer ID="ID_SIGNER_HERMETICWIPER_4" Name="VeriSign Class 3 Code Signing 2010 CA">
+      <CertRoot Type="TBS" Value="4843A82ED3B1F2BFBEE9671960E1940C942F688D" />
+      <CertPublisher Value="CHENGDU YIWO Tech Development Co., Ltd." />
     </Signer>
   </Signers>
   <!--Driver Signing Scenarios-->
@@ -734,6 +774,10 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     <SigningScenario Value="131" ID="ID_SIGNINGSCENARIO_DENIED_VULN_MAL_SIGNERS" FriendlyName="Signers of known vulnerable or malicious drivers">
       <ProductSigners>
         <DeniedSigners>
+		  <DeniedSigner SignerId="ID_SIGNER_AGNITUM_2004" />
+		  <DeniedSigner SignerId="ID_SIGNER_AGNITUM_2009" />
+		  <DeniedSigner SignerId="ID_SIGNER_AGNITUM_2010" />
+		  <DeniedSigner SignerId="ID_SIGNER_AGNITUM_2010_1" />
           <DeniedSigner SignerId="ID_SIGNER_AMDPP" />
           <DeniedSigner SignerId="ID_SIGNER_CAPCOM" />
           <DeniedSigner SignerId="ID_SIGNER_CHEAT_ENGINE" /> 
@@ -750,6 +794,10 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
           <DeniedSigner SignerId="ID_SIGNER_GEOTRUST_SRL_2010" />
           <DeniedSigner SignerId="ID_SIGNER_GLOBALSIGN_TG_SOFT" />
           <DeniedSigner SignerId="ID_SIGNER_HANDAN" />
+		  <DeniedSigner SignerId="ID_SIGNER_HERMETICWIPER_1" />
+		  <DeniedSigner SignerId="ID_SIGNER_HERMETICWIPER_2" />
+		  <DeniedSigner SignerId="ID_SIGNER_HERMETICWIPER_3" />
+		  <DeniedSigner SignerId="ID_SIGNER_HERMETICWIPER_4" />
           <DeniedSigner SignerId="ID_SIGNER_HP" /> 
           <DeniedSigner SignerId="ID_SIGNER_INTEL_IQVW" />
           <DeniedSigner SignerId="ID_SIGNER_JEROMIN_CODY_ERIC" />
@@ -757,6 +805,7 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
           <DeniedSigner SignerId="ID_SIGNER_MIMIKATZ_KERNEL_SHA2" />
           <DeniedSigner SignerId="ID_SIGNER_MIMIKATZ_USER" />
           <DeniedSigner SignerId="ID_SIGNER_NANJING" />
+		  <DeniedSigner SignerId="ID_SIGNER_NVIDIA_2007" />
 		  <DeniedSigner SignerId="ID_SIGNER_NVIDIA_2011" />
 		  <DeniedSigner SignerId="ID_SIGNER_NVIDIA_2015" />
           <DeniedSigner SignerId="ID_SIGNER_PHYSMEM" />
@@ -1143,7 +1192,7 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
     </Setting>
     <Setting Provider="PolicyInfo" Key="Information" ValueName="Id">
       <Value>
-        <String>10.0.25070.0</String>
+        <String>10.0.25090.0</String>
       </Value>
     </Setting>
   </Settings>
