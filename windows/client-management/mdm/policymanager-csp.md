@@ -14,6 +14,16 @@ ms.date: 06/28/2017
 
 # PolicyManager CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 PolicyManager CSP is deprecated. Use [Policy CSP](policy-configuration-service-provider.md) instead.
 
 <!-- 12.16.2021 mandia: Commenting out, as this CSP is specific to Windows 10 Mobile and Windows Phone 8.1

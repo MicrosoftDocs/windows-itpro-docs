@@ -14,6 +14,15 @@ ms.date: 06/26/2017
 
 # Provisioning CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 The Provisioning configuration service provider is used for bulk user enrollment to an MDM service.
 

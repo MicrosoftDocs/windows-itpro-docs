@@ -14,7 +14,17 @@ ms.date: 06/26/2017
 
 # NAPDEF CSP
 
-The NAPDEF configuration service provider is used to add, modify, or delete WAP network access points (NAPs). For complete information about these settings, see the standard WAP specification WAP-183-ProvCont-20010724-a.
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+The NAPDEF configuration service provider is used to add, modify, or delete WAP Network Access Points (NAPs). For complete information about these settings, see the standard WAP specification WAP-183-ProvCont-20010724-a.
 
 > [!Note]
 > You cannot use NAPDEF CSP on the desktop to update the Push Proxy Gateway (PPG) list.
@@ -71,7 +81,7 @@ A query of this parameter returns asterisks (\*) in the results.
 <a href="" id="authtype"></a>**AUTHTYPE**  
 Specifies the protocol used to authenticate the user.
 
-The only permitted values for this element are "POP" (Password Authentication Protocol) and "CHAP" (Challenge Handshake Authentication Protocol) authentication protocols. Note
+The only permitted values for this element are "POP" (Password Authentication Protocol) and "CHAP" (Challenge Handshake Authentication Protocol) authentication protocols.
 
 > [!Note]
 > **AuthName** and **AuthSecret** are not created if **AuthType** is not included in the initial device configuration. **AuthName** and **AuthSecret** cannot be changed if **AuthType** is not included in the provisioning XML used to make the change. 

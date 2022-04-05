@@ -13,6 +13,15 @@ manager: dansimp
 
 # MultiSIM CSP 
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 The MultiSIM configuration service provider (CSP) is used by the enterprise to manage devices with dual SIM single active configuration. An enterprise can set policies on whether that user can switch between SIM slots, specify which slot is the default, and whether the slot is embedded. This CSP was added in Windows 10, version 1803.
 

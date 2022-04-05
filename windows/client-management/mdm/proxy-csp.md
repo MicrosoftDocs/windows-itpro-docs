@@ -14,6 +14,15 @@ ms.date: 06/26/2017
 
 # PROXY CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 The PROXY configuration service provider is used to configure proxy connections.
 
