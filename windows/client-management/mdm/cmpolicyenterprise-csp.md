@@ -26,7 +26,7 @@ Each policy entry identifies one or more applications in combination with a host
 
 **Policy Ordering**: There's no explicit ordering of policies. The general rule is that the most concrete or specific policy mappings take a higher precedence.
 
-**Default Policies**: Policies are applied in the order of their scope with the most specific policies considered before the more general policies. The phone’s default behavior applies to all applications and all domains and is only used when no other, more specific policy is available. The default policy is to use any available WiFi network first and then any available APN.
+**Default Policies**: Policies are applied in the order of their scope with the most specific policies considered before the more general policies. The phone’s default behavior applies to all applications and all domains and is only used when no other, more specific policy is available. The default policy is to use any available Wi-Fi network first and then any available APN.
 
 The following shows the CMPolicyEnterprise configuration service provider management object in tree format as used by both Open Mobile Alliance (OMA) Client Provisioning and OMA Device Management.
 
@@ -93,8 +93,8 @@ For `CMST_CONNECTION_TYPE`, specify the GUID for the desired connection type. Th
 |CDMA|{274AD55A-4A70-4E35-93B3-AE2D2E6727FC}|
 |Legacy 3GPP|{6DE4C04B-B74E-47FA-99E5-8F2097C06A92}|
 |LTE|{2378E547-8312-46A5-905E-5C581E92693B}|
-|WiFi|{8568B401-858E-4B7B-B3DF-0FD4927F131B}|
-|WiFi hotspot|{072FC7DC-1D93-40D1-9BB0-2114D7D73434}|
+|Wi-Fi|{8568B401-858E-4B7B-B3DF-0FD4927F131B}|
+|Wi-Fi hotspot|{072FC7DC-1D93-40D1-9BB0-2114D7D73434}|
 
 
 For `CMST_CONNECTION_NETWORK_TYPE`, specify the GUID for the desired network type. The curly brackets {} around the GUID are required. The following network types are available:
