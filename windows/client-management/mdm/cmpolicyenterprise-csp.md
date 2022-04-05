@@ -14,6 +14,16 @@ ms.date: 06/26/2017
 
 # CMPolicyEnterprise CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No||
+|Business|No|No|
+|Enterprise|No|No|
+|Education|No|No|
+
 The CMPolicyEnterprise configuration service provider is used by the enterprise to define rules that the Connection Manager uses to identify the correct connection for a connection request.
 
 > [!NOTE]
