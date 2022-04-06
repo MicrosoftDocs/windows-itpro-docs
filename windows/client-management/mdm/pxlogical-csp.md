@@ -18,7 +18,7 @@ The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
-|Home|Yes|Yes|
+|Home|No|No|
 |Pro|Yes|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
