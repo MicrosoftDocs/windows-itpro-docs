@@ -99,11 +99,11 @@ The following diagram illustrates the high-level flow involved in the actual enr
 
 ![azure ad enrollment flow.](images/azure-ad-enrollment-flow.png)
 
-The MDM is expected to use this information about the device (Device ID) when reporting device compliance back to Azure AD using the [Azure AD Graph API](/azure/active-directory/develop/active-directory-graph-api). A sample for reporting device compliance is provided later in this article.
+The MDM is expected to use this information about the device (Device ID) when reporting device compliance back to Azure AD using the [Microsoft Graph API](/azure/active-directory/develop/active-directory-graph-api). A sample for reporting device compliance is provided later in this article.
 
 ## Make the MDM a reliable party of Azure AD
 
-To participate in the integrated enrollment flow outlined in the previous section, the MDM must consume access tokens issued by Azure AD. To report compliance with Azure AD, the MDM must authenticate itself to Azure AD and obtain authorization in the form of an access token that allows it to invoke the [Azure AD Graph API](/azure/active-directory/develop/active-directory-graph-api).
+To participate in the integrated enrollment flow outlined in the previous section, the MDM must consume access tokens issued by Azure AD. To report compliance with Azure AD, the MDM must authenticate itself to Azure AD and obtain authorization in the form of an access token that allows it to invoke the [Microsoft Graph API](/azure/active-directory/develop/active-directory-graph-api).
 
 ### Add a cloud-based MDM
 
@@ -148,7 +148,7 @@ Use the following steps to register a cloud-based MDM application with Azure AD.
 
 13. Generate a key for your application and copy it.
 
-    You need this key to call the Azure AD Graph API to report device compliance. This information is covered in the next section.
+    You need this key to call the Microsoft Graph API to report device compliance. This information is covered in the next section.
 
 For more information about how to register a sample application with Azure AD, see the steps to register the **TodoListService Web API** in [NativeClient-DotNet](https://go.microsoft.com/fwlink/p/?LinkId=613667).
 
@@ -164,7 +164,7 @@ For more information about registering applications with Azure AD, see [Basics o
 
 ### Key management and security guidelines
 
-The application keys used by your MDM service are a sensitive resource. They should be protected and rolled over periodically for greater security. Access tokens obtained by your MDM service to call the Azure AD Graph API are bearer tokens and should be protected to avoid unauthorized disclosure.
+The application keys used by your MDM service are a sensitive resource. They should be protected and rolled over periodically for greater security. Access tokens obtained by your MDM service to call the Microsoft Graph API are bearer tokens and should be protected to avoid unauthorized disclosure.
 
 For security best practices, see [Windows Azure Security Essentials](https://go.microsoft.com/fwlink/p/?LinkId=613715).
 
@@ -202,7 +202,7 @@ The following table shows the required information to create an entry in the Azu
 
 There are no special requirements for adding on-premises MDM to the app gallery. There's a generic entry for administrator to add an app to their tenant.
 
-However, key management is different for on-premises MDM. You must obtain the client ID (app ID) and key assigned to the MDM app within the customer's tenant. Thee ID and key obtain authorization to access the Azure AD Graph API and for reporting device compliance.
+However, key management is different for on-premises MDM. You must obtain the client ID (app ID) and key assigned to the MDM app within the customer's tenant. Thee ID and key obtain authorization to access the Microsoft Graph API and for reporting device compliance.
 
 ## Themes
 
@@ -247,7 +247,6 @@ The following parameters are passed in the query string:
 |api-version|Specifies the version of the protocol requested by the client. This value provides a mechanism to support version revisions of the protocol.|
 |mode|Specifies that the device is organization owned when mode=azureadjoin. This parameter isn't present for BYOD devices.|
 
- 
 ### Access token
 
 Azure AD issues a bearer access token. The token is passed in the authorization header of the HTTP request. Here's a typical format:
@@ -267,7 +266,7 @@ The following claims are expected in the access token passed by Windows to the T
 > [!NOTE]
 > There's no device ID claim in the access token because the device may not yet be enrolled at this time.
 
-To retrieve the list of group memberships for the user, you can use the [Azure AD Graph API](/azure/active-directory/develop/active-directory-graph-api).
+To retrieve the list of group memberships for the user, you can use the [Microsoft Graph API](/azure/active-directory/develop/active-directory-graph-api).
 
 Here's an example URL.
 
@@ -443,9 +442,9 @@ For a sample that illustrates how an MDM can obtain an access token using OAuth 
 -   **Cloud-based MDM** - If your product is a cloud-based multi-tenant MDM service, you have a single key configured for your service within your tenant. To obtain authorization, use this key to authenticate the MDM service with Azure AD.
 -   **On-premises MDM** - If your product is an on-premises MDM, customers must configure your product with the key used to authenticate with Azure AD. This key configuration is because each on-premises instance of your MDM product has a different tenant-specific key. So, you may need to expose a configuration experience in your MDM product that enables administrators to specify the key to be used to authenticate with Azure AD.
 
-### Use Azure AD Graph API
+### Use Microsoft Graph API
 
-The following sample REST API call illustrates how an MDM can use the Azure AD Graph API to report compliance status of a device being managed by it.
+The following sample REST API call illustrates how an MDM can use the Microsoft Graph API to report compliance status of a device being managed by it.
 
 > [!NOTE]
 > This API is only applicable for approved MDM apps on Windows 10 devices.
@@ -466,7 +465,7 @@ Where:
 
 -   **contoso.com** – This value is the name of the Azure AD tenant to whose directory the device has been joined.
 -   **db7ab579-3759-4492-a03f-655ca7f52ae1** – This value is the device identifier for the device whose compliance information is being reported to Azure AD.
--   **eyJ0eXAiO**……… – This value is the bearer access token issued by Azure AD to the MDM that authorizes the MDM to call the Azure AD Graph API. The access token is placed in the HTTP authorization header of the request.
+-   **eyJ0eXAiO**……… – This value is the bearer access token issued by Azure AD to the MDM that authorizes the MDM to call the Microsoft Graph API. The access token is placed in the HTTP authorization header of the request.
 -   **isManaged** and **isCompliant** - These Boolean attributes indicates compliance status.
 -   **api-version** - Use this parameter to specify which version of the graph API is being requested.
 
