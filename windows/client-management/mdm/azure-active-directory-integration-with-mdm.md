@@ -112,7 +112,7 @@ A cloud-based MDM is a SaaS application that provides device management capabili
 The MDM vendor must first register the application in their home tenant and mark it as a multi-tenant application. Here a code sample from GitHub that explains how to add multi-tenant applications to Azure AD, [WepApp-WebAPI-MultiTenant-OpenIdConnect-DotNet](https://go.microsoft.com/fwlink/p/?LinkId=613661).
 
 > [!NOTE]
-> For the MDM provider, if you don't have an existing Azure AD tentant with an Azure AD subscription that you manage, follow the step-by-step guide in [Add an Azure AD tenant and Azure AD subscription](add-an-azure-ad-tenant-and-azure-ad-subscription.md) to set up a tenant, add a subscription, and manage it via the Azure Portal.
+> For the MDM provider, if you don't have an existing Azure AD tenant with an Azure AD subscription that you manage, follow the step-by-step guide in [Add an Azure AD tenant and Azure AD subscription](add-an-azure-ad-tenant-and-azure-ad-subscription.md) to set up a tenant, add a subscription, and manage it via the Azure Portal.
 
 The MDM application uses keys to request access tokens from Azure AD. These keys are managed within the tenant of the MDM provider and not visible to individual customers. The same key is used by the multi-tenant MDM application to authenticate itself with Azure AD, whatever the customer tenent the managed device belongs.
 
