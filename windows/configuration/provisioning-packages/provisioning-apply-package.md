@@ -28,7 +28,7 @@ Provisioning packages can be applied to a device during initial setup (out-of-bo
 > - You can interrupt a long-running provisioning process by pressing ESC.
 
 > [!TIP]
-> In addition to the methods below, you can use the PowerShell cmdlet [Install-ProvisioningPackage](/powershell/module/provisioning/Install-ProvisioningPackage) with `-LogsDirectoryPath` to get logs for the operation.
+> In addition to the following methods, you can use the PowerShell cmdlet [Install-ProvisioningPackage](/powershell/module/provisioning/Install-ProvisioningPackage) with `-LogsDirectoryPath` to get logs for the operation.
 
 ## During initial setup
 
