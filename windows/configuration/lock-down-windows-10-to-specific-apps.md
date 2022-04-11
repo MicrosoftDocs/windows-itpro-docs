@@ -541,7 +541,7 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 ### Apply provisioning package to device
 
-Provisioning packages can be applied to a device during initial setup (out-of-box experience or "OOBE") and after ("runtime"). For more information, see "[Apply a provisioning package](./provisioning-packages/provisioning-apply-package.md)."
+Provisioning packages can be applied to a device during initial setup (out-of-box experience or "OOBE") and after ("runtime"). For more information, see [Apply a provisioning package](./provisioning-packages/provisioning-apply-package.md).
 
 > [!NOTE]
 > If your provisioning package doesn't include the assigned access user account creation, make sure the account you specified in the multi-app configuration XML exists on the device.

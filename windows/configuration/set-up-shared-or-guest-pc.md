@@ -185,7 +185,7 @@ You can configure Windows to be in shared PC mode in a couple different ways:
 
 ### Apply the provisioning package
 
-Provisioning packages can be applied to a device during initial setup (out-of-box experience or "OOBE") and after ("runtime"). For more information, see "[Apply a provisioning package](./provisioning-packages/provisioning-apply-package.md)."
+Provisioning packages can be applied to a device during initial setup (out-of-box experience or "OOBE") and after ("runtime"). For more information, see [Apply a provisioning package](./provisioning-packages/provisioning-apply-package.md).
 
 > [!NOTE]
 > If you apply the setup file to a computer that has already been set up, existing accounts and data might be lost.
