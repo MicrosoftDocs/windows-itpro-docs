@@ -306,6 +306,7 @@ You can also apply the Group Policies using the following registry keys:
 3. On the **Rule Type** page, click **Program**, and then click **Next**.
 
 4. On the **Program** page, click **This program path**, type **%windir%\\systemapps\\Microsoft.Windows.Cortana\_cw5n1h2txyewy\\SearchUI.exe**, and then click **Next**.
+   - On Windows 11 instead type **"%windir%\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe"**
 
 5. On the **Action** page, click **Block the connection**, and then click **Next**.
 
@@ -326,6 +327,8 @@ You can also apply the Group Policies using the following registry keys:
 -or-
 
 - Create a new REG_SZ registry setting named **{0DE40C8E-C126-4A27-9371-A27DAB1039F7}** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\WindowsFirewall\\FirewallRules** and set it to a value of **v2.25|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=%windir%\\SystemApps\\Microsoft.Windows.Cortana_cw5n1h2txyewy\\searchUI.exe|Name=Block outbound Cortana|**
+
+- On Windows 11 instead follow the previous section and use the Group Policy editor
 
 If your organization tests network traffic, do not use a network proxy as Windows Firewall does not block proxy traffic. Instead, use a network traffic analyzer. Based on your needs, there are many network traffic analyzers available at no cost.
 
