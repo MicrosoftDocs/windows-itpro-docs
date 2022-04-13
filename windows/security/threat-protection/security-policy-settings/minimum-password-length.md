@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 03/30/2022
 ms.technology: windows-sec
 ---
 
@@ -36,7 +36,7 @@ The **Minimum password length** policy setting determines the least number of ch
 
 ### Best practices
 
-Set Minimum password length to at least a value of 8. If the number of characters is set to 0, no password is required. In most environments, an eight-character password is recommended because it's long enough to provide adequate security and still short enough for users to easily remember. A minimum password length greater than 14 isn't supported at this time. This value will help provide adequate defense against a brute force attack. Adding complexity requirements will help reduce the possibility of a dictionary attack. For more info, see [Password must meet complexity requirements](password-must-meet-complexity-requirements.md).
+Set Minimum password length to at least a value of 14. If the number of characters is set to 0, no password is required. In most environments, an eight-character password is recommended because it's long enough to provide adequate security and still short enough for users to easily remember. A minimum password length greater than 14 isn't supported at this time. This value will help provide adequate defense against a brute force attack. Adding complexity requirements will help reduce the possibility of a dictionary attack. For more info, see [Password must meet complexity requirements](password-must-meet-complexity-requirements.md).
 
 Permitting short passwords reduces security because short passwords can be easily broken with tools that do dictionary or brute force attacks against the passwords. Requiring very long passwords can result in mistyped passwords that might cause account lockouts and might increase the volume of Help Desk calls.
 

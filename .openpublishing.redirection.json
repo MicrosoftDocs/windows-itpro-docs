@@ -19447,7 +19447,7 @@
     },
     {
       "source_path": "windows/security/threat-protection/intelligence/supply-chain-malware.md",
-      "redirect_url": "/microsoft-365/security/intelligence/supply-chain-malware.md",
+      "redirect_url": "/microsoft-365/security/intelligence/supply-chain-malware",
       "redirect_document_id": false  
     },
     {
@@ -19494,6 +19494,21 @@
      "source_path": "windows/deployment/update/waas-microsoft-connected-cache.md",
      "redirect_url": "/windows/deployment/do/waas-microsoft-connected-cache",
      "redirect_document_id": false
-    }
+    },
+    { 
+     "source_path": "windows/education/itadmins.yml",
+     "redirect_url": "/education/",
+     "redirect_document_id": true
+    },
+    { 
+     "source_path": "windows/education/partners.yml",
+     "redirect_url": "/education/",
+     "redirect_document_id": true
+    },
+    { 
+     "source_path": "windows/education/developers.yml",
+     "redirect_url": "/education/",
+     "redirect_document_id": true
+    }    
   ]
 }

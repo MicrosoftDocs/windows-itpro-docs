@@ -4,7 +4,7 @@ items:
   items: 
     - name: Client management tools and settings
       items:
-        - name: Administrative Tools in Windows 10
+        - name: Windows Tools/Administrative Tools
           href: administrative-tools-in-windows-10.md
         - name: Use Quick Assist to help users
           href: quick-assist.md
