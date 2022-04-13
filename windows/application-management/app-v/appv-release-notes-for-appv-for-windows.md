@@ -52,7 +52,7 @@ An error is generated during publishing refresh when synchronizing packages from
 **Workaround**: Upgrade the App-V 5.0 Management server to the App-V Management server for Windows 10 Clients.
 
 ## Custom configurations don't get applied for packages that will be published globally if they're set using the App-V Server
-If you assign a package to an AD group that contains machine accounts and apply a custom configuration to that group using the App-V Server, the custom configuration won't not be applied to those machines. The App-V Client will publish packages assigned to a machine account globally. However, it stores custom configuration files per user in each user’s profile. Globally published packages won't have access to this custom configuration.
+If you assign a package to an AD group that contains machine accounts and apply a custom configuration to that group using the App-V Server, the custom configuration won't be applied to those machines. The App-V Client will publish packages assigned to a machine account globally. However, it stores custom configuration files per user in each user’s profile. Globally published packages won't have access to this custom configuration.
 
 **Workaround**: Do one of the following:
 
@@ -64,7 +64,7 @@ If you assign a package to an AD group that contains machine accounts and apply 
 
 ## Server files not deleted after new App-V Server installation
 
-If you uninstall the App-V 5.0 SP1 Server and then install the App-V Server, the installation fails, the wrong version of the Management server is installed, and an error message is returned. The issue occurs because the Server files are not being deleted when you uninstall App-V 5.0 SP1, so the installation process does an upgrade instead of a new installation.
+If you uninstall the App-V 5.0 SP1 Server and then install the App-V Server, the installation fails, the wrong version of the Management server is installed, and an error message is returned. The issue occurs because the Server files aren't being deleted when you uninstall App-V 5.0 SP1, so the installation process does an upgrade instead of a new installation.
 
 **Workaround**: Delete this registry key before you start installing App-V:
 
