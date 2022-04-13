@@ -65,7 +65,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to control whether graphing functionality is available in the Windows Calculator app. If you disable this policy setting, graphing functionality will not be accessible in the Windows Calculator app. If you enable or don't configure this policy setting, you will be able to access graphing functionality.
+This policy setting allows you to control whether graphing functionality is available in the Windows Calculator app. If you disable this policy setting, graphing functionality won't be accessible in the Windows Calculator app. If you enable or don't configure this policy setting, you'll be able to access graphing functionality.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -147,7 +147,7 @@ The policy value is expected to be the name (network host name) of an installed 
 
 <!--/Scope-->
 <!--Description-->
-Allows IT Admins to prevent user installation of additional printers from the printers settings.
+Allows IT Admins to prevent user installation of more printers from the printers settings.
 
 <!--/Description-->
 <!--ADMXMapped-->
