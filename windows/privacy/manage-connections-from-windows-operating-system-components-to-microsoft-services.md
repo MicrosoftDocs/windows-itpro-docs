@@ -306,7 +306,8 @@ You can also apply the Group Policies using the following registry keys:
 3. On the **Rule Type** page, click **Program**, and then click **Next**.
 
 4. On the **Program** page, click **This program path**, type **%windir%\\systemapps\\Microsoft.Windows.Cortana\_cw5n1h2txyewy\\SearchUI.exe**, and then click **Next**.
-   - On Windows 11 instead type **"%windir%\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe"**
+
+   - On Windows 11, type **"%windir%\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe"** instead.
 
 5. On the **Action** page, click **Block the connection**, and then click **Next**.
 
