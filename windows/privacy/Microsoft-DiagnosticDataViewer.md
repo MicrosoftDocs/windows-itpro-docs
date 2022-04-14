@@ -187,4 +187,4 @@ When resetting the size of your data history to a lower value, be sure to turn o
 
 ## Related Links
 - [Module in PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.DiagnosticDataViewer)
-- [Documentation for Diagnostic Data Viewer for PowerShell](/powershell/module/microsoft.diagnosticdataviewer/?view=win10-ps)
+- [Documentation for Diagnostic Data Viewer for PowerShell](/powershell/module/microsoft.diagnosticdataviewer/?)
