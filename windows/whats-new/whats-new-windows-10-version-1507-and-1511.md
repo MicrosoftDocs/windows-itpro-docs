@@ -193,7 +193,7 @@ Event ID 4826 has been added to track the following changes to the Boot Configur
 
 Event ID 6416 has been added to track when an external device is detected through Plug and Play. One important scenario is if an external device that contains malware is inserted into a high-value machine that doesn’t expect this type of action, such as a domain controller.
 
-[Learn how to manage your security audit policies within your organization](../../security/threat-protection/auditing/security-auditing-overview.md).
+[Learn how to manage your security audit policies within your organization](/windows/security/threat-protection/auditing/security-auditing-overview.md).
 
 ### Trusted Platform Module
 
