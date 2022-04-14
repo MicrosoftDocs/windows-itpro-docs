@@ -101,7 +101,7 @@ You should open up a range of ports above port 5000. Port numbers below 5000 may
 >Description:
 >The Netlogon service could not add the AuthZ RPC interface. The service was terminated. The following error occurred: 'The parameter is incorrect.'
  
-If you would like to do a deep dive as to how it works, see [RPC over IT/Pro](https://blogs.technet.microsoft.com/askds/2012/01/24/rpc-over-itpro/).
+If you would like to do a deep dive as to how it works, see [RPC over IT/Pro](https://techcommunity.microsoft.com/t5/ask-the-directory-services-team/rpc-over-it-pro/ba-p/399898).
  
  
 ## Troubleshooting RPC error

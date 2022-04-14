@@ -2116,7 +2116,7 @@ Most restricted value: 0
 > This policy has no effect when the Browser/HomePages policy is not configured. 
  
 > [!IMPORTANT]
-> This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the [Microsoft browser extension policy](/legal/windows/agreements/microsoft-browser-extension-policy).
+> This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the [Microsoft browser extension policy](/legal/microsoft-edge/microsoft-browser-extension-policy).
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2975,7 +2975,7 @@ Most restricted value: 0
 [!INCLUDE [set-default-search-engine-shortdesc](../includes/set-default-search-engine-shortdesc.md)]
 
 > [!IMPORTANT]
-> This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the [Microsoft browser extension policy](/legal/windows/agreements/microsoft-browser-extension-policy).
+> This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the [Microsoft browser extension policy](/legal/microsoft-edge/microsoft-browser-extension-policy).
 
 
 Most restricted value:  0

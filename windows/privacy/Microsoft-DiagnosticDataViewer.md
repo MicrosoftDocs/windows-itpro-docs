@@ -47,7 +47,7 @@ Using the Diagnostic Data Viewer for PowerShell requires administrative (elevate
 ### Install the Diagnostic Data Viewer for PowerShell
 
    >[!IMPORTANT]
-   >It is recommended to visit the documentation on [Getting Started](/powershell/gallery/getting-started) with PowerShell Gallery. This page provides more specific details on installing a PowerShell module. 
+   >It is recommended to visit the documentation on [Getting Started](/powershell/scripting/gallery/getting-started) with PowerShell Gallery. This page provides more specific details on installing a PowerShell module. 
 
 To install the newest version of the Diagnostic Data Viewer PowerShell module, run the following command within an elevated PowerShell session: 
 ```powershell

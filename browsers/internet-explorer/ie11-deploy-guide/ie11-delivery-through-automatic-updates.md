@@ -60,7 +60,7 @@ If you use Automatic Updates in your company, but want to stop your users from a
     If you already use an update management solution, like [Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) or the more advanced [Microsoft Endpoint Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682129(v=technet.10)), you should use that instead of the Internet Explorer Blocker Toolkit.
 
     > [!NOTE]
-    > If you use WSUS to manage updates, and Update Rollups are configured for automatic installation, Internet Explorer will automatically install throughout your company. This scenario is discussed in detail in the Knowledge Base article [here](https://support.microsoft.com/kb/946202).
+    > If you use WSUS to manage updates, and Update Rollups are configured for automatic installation, Internet Explorer will automatically install throughout your company.
 
 Additional information on Internet Explorer 11, including a Readiness Toolkit, technical overview, in-depth feature summary, and Internet Explorer 11 download is available on the [Internet Explorer 11 page of the Microsoft Edge IT Center](https://technet.microsoft.com/microsoft-edge/dn262703.aspx).
 

@@ -166,7 +166,7 @@ For more information about registering applications with Azure AD, see [Basics o
 
 The application keys used by your MDM service are a sensitive resource. They should be protected and rolled over periodically for greater security. Access tokens obtained by your MDM service to call the Microsoft Graph API are bearer tokens and should be protected to avoid unauthorized disclosure.
 
-For security best practices, see [Windows Azure Security Essentials](https://go.microsoft.com/fwlink/p/?LinkId=613715).
+For security best practices, see [Windows Azure Security Essentials](/dotnet/api/system.identitymodel.tokens.jwt.jwtsecuritytokenhandler).
 
 You can rollover the application keys used by a cloud-based MDM service without requiring a customer interaction. There's a single set of keys across all customer tenants that are managed by the MDM vendor in their Azure AD tenant.
 

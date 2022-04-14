@@ -91,7 +91,7 @@ The following is an example of what your XML file should look like when you’re
 ```
 In the above example, the following is true:
 
-- www.cpandl.com, as the main domain, must use IE8 Enterprise Mode. However, www.cpandl.com/images must use IE7 Enterprise Mode.
+- ```www.cpandl.com```, as the main domain, must use IE8 Enterprise Mode. However, ```www.cpandl.com/images``` must use IE7 Enterprise Mode.
 
 - contoso.com, and all of its domain paths, can use the default compatibility mode for the site.
 

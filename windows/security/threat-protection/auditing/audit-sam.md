@@ -42,8 +42,6 @@ Changes to user and group objects are tracked by the Account Management audit ca
 
 **Event volume**: High on domain controllers.
 
-For information about reducing the number of events generated in this subcategory, see [KB841001](https://support.microsoft.com/kb/841001).
-
 | Computer Type     | General Success | General Failure | Stronger Success | Stronger Failure | Comments                                                                                                                                                                                                                    |
 |-------------------|-----------------|-----------------|------------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Domain Controller | -               | -               | -                | -                | There is no recommendation for this subcategory in this document, unless you know exactly what you need to monitor at [Security Account Manager](/previous-versions/windows/it-pro/windows-server-2003/cc756748(v=ws.10)) level. |

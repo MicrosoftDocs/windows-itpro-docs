@@ -25,8 +25,6 @@ For more information about CNG, visit these pages:
 
 -   <https://msdn.microsoft.com/library/windows/desktop/bb204775(v=vs.85).aspx>
 
--   <https://www.microsoft.com/download/details.aspx?id=1251>
-
 -   <https://www.microsoft.com/download/details.aspx?id=30688>
 
 This event is mainly used for CNG troubleshooting.
