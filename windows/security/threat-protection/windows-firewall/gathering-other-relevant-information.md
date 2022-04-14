@@ -82,6 +82,6 @@ In general, IPsec defeats network-based prioritization and port- or protocol-bas
 
 Network Monitor includes parsers for the ISAKMP (IKE), AH, and ESP protocols. Network Monitor parsers for ESP can parse inside the ESP packet only if ESP null-encryption is being used. Network Monitor cannot parse the encrypted parts of IPsec ESP traffic when encryption is performed in software. However, if encryption is performed by an IPsec hardware offload network adapter, the ESP packets can be decrypted when Network Monitor captures them on either the source or the destination and, therefore, they can be parsed. To diagnose ESP software-encrypted communication, you must disable ESP encryption and use ESP-null encryption by changing the IPsec policy or connection security rule on both devices.
 
-Message Analyzer is available on the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=44226).
+Message Analyzer is available on the [Microsoft Download Center](/message-analyzer/microsoft-message-analyzer-operating-guide).
 
 **Next:** [Determining the Trusted State of Your Devices](determining-the-trusted-state-of-your-devices.md)

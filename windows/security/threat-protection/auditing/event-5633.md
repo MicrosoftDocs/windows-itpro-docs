@@ -103,7 +103,7 @@ It typically generates when network adapter connects to new wired network.
 
 -   **Reason Code** \[Type = UnicodeString\]: contains Reason Text (explanation of Reason Code) and Reason Code for wired authentication results. See more information about reason codes for wired authentication here: <https://msdn.microsoft.com/library/windows/desktop/dd877212(v=vs.85).aspx>, <https://technet.microsoft.com/library/cc727747(v=ws.10).aspx>.
 
--   **Error Code** \[Type = HexInt32\]: unique [EAP error code](https://msdn.microsoft.com/library/windows/desktop/aa813691(v=vs.85).aspx).
+-   **Error Code** \[Type = HexInt32\]: unique [EAP error code](/windows/win32/eaphost/eap-related-error-and-information-constants).
 
 ## Security Monitoring Recommendations
 
