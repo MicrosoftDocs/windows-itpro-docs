@@ -33,20 +33,16 @@ items:
             tocHref: /windows/security/
             topicHref: /windows/security/
             items:
-              - name: Identity and access protection
-                tocHref: /windows/security/identity-protection/
-                topicHref: /windows/security/identity-protection/
-                items:
-                  - name: Windows Hello for Business
-                    tocHref: /windows/security/identity-protection/hello-for-business/
-                    topicHref: /windows/security/identity-protection/hello-for-business/
+              - name: Windows Hello for Business
+                tocHref: /windows/security/identity-protection/hello-for-business/
+                topicHref: /windows/security/identity-protection/hello-for-business/
               - name: Threat protection
                 tocHref: /windows/security/threat-protection/
                 topicHref: /windows/security/threat-protection/
                 items:
                   - name: Security auditing
                     tocHref: /windows/security/threat-protection/auditing/
-                    topicHref: /windows/security/threat-protection/auditing/
+                    topicHref: /windows/security/threat-protection/auditing/security-auditing-overview
                   - name: Microsoft Defender Application Guard
                     tocHref: /windows/security/threat-protection/microsoft-defender-application-guard/
                     topicHref: /windows/security/threat-protection/microsoft-defender-application-guard/
