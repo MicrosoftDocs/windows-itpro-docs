@@ -47,12 +47,12 @@
         - name: Define your servicing strategy
           href: update/plan-define-strategy.md
         - name: Delivery Optimization for Windows client updates
-          href: update/waas-delivery-optimization.md
+          href: do/waas-delivery-optimization.md
           items:
             - name: Using a proxy with Delivery Optimization
-              href: update/delivery-optimization-proxy.md
+              href: do/delivery-optimization-proxy.md
             - name: Delivery Optimization client-service communication
-              href: update/delivery-optimization-workflow.md
+              href: do/delivery-optimization-workflow.md
         - name: Windows 10 deployment considerations
           href: planning/windows-10-deployment-considerations.md
         - name: Windows 10 infrastructure requirements
@@ -83,7 +83,7 @@
         - name: Update Baseline
           href: update/update-baseline.md
         - name: Set up Delivery Optimization for Windows client updates
-          href: update/waas-delivery-optimization-setup.md
+          href: do/index.yml
         - name: Configure BranchCache for Windows client updates
           href: update/waas-branchcache.md
         - name: Prepare your deployment tools
@@ -167,6 +167,8 @@
               href: update/waas-manage-updates-wufb.md
             - name: Configure Windows Update for Business
               href: update/waas-configure-wufb.md
+            - name: Use Windows Update for Business and WSUS
+              href: update/wufb-wsus.md    
             - name: Windows Update for Business deployment service
               href: update/deployment-service-overview.md
               items:
@@ -183,7 +185,7 @@
         - name: Monitor Windows client updates
           items:
             - name: Monitor Delivery Optimization
-              href: update/waas-delivery-optimization-setup.md#monitor-delivery-optimization
+              href: do/waas-delivery-optimization-setup.md#monitor-delivery-optimization
             - name: Monitor Windows Updates
               items:
               - name: Monitor Windows Updates with Update Compliance
@@ -281,7 +283,7 @@
         - name: Additional Windows Update settings
           href: update/waas-wu-settings.md
         - name: Delivery Optimization reference
-          href: update/waas-delivery-optimization-reference.md
+          href: do/waas-delivery-optimization-reference.md
         - name: Windows client in S mode
           href: s-mode.md
         - name: Switch to Windows client Pro or Enterprise from S mode

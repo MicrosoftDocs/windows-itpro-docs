@@ -6,17 +6,18 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
-ms.author: greglin
-manager: laurawi
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.localizationpriority: high
 ms.topic: article
+ms.collection: highpri
 ---
 
 # What's new in Windows 10, version 21H1 for IT Pros
 
 **Applies to**
--   Windows 10, version 21H1
+-   Windows 10, version 21H1
 
 This article lists new and updated features and content that is of interest to IT Pros for Windows 10, version 21H1, also known as the **Windows 10 May 2021 Update**. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 20H2.
 

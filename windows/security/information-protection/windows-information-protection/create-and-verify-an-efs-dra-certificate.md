@@ -2,7 +2,7 @@
 title: Make & verify an EFS Data Recovery Agent certificate (Windows 10)
 description: Follow these steps to create, verify, and perform a quick recovery by using a Encrypting File System (EFS) Data Recovery Agent (DRA) certificate.
 keywords: Windows Information Protection, WIP, EDP, Enterprise Data Protection
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
@@ -18,10 +18,10 @@ ms.reviewer:
 ---
 
 # Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate
+
 **Applies to:**
 
-- Windows 10, version 1607 and later
-- Windows 10 Mobile, version 1607 and later
+- Windows 10, version 1607 and later
 
 If you don't already have an EFS DRA certificate, you'll need to create and extract one from your system before you can use Windows Information Protection (WIP), formerly known as enterprise data protection (EDP), in your organization. For the purposes of this section, we'll use the file name EFSDRA; however, this name can be replaced with anything that makes sense to you.
 
@@ -33,10 +33,12 @@ If you don't already have an EFS DRA certificate, you'll need to create and extr
 1. On a computer without an EFS DRA certificate installed, open a command prompt with elevated rights, and then navigate to where you want to store the certificate.
 
 2. Run this command:
-    
-    <code>cipher /r:<i>EFSRA</i></code>
-    
-    Where *EFSRA* is the name of the .cer and .pfx files that you want to create.
+
+    ```cmd
+    cipher /r:EFSRA
+    ```
+
+    Where *EFSRA* is the name of the `.cer` and `.pfx` files that you want to create.
 
 3. When prompted, type and confirm a password to help protect your new Personal Information Exchange (.pfx) file.
 
@@ -58,7 +60,9 @@ If you don't already have an EFS DRA certificate, you'll need to create and extr
 
 3. Open a command prompt with elevated rights, navigate to where you stored the file you just created, and then run this command:
 
-    <code>cipher /c <i>filename</i></code>
+    ```cmd
+    cipher /c filename
+    ```
 
     Where *filename* is the name of the file you created in Step 1.
 
@@ -72,9 +76,11 @@ If you don't already have an EFS DRA certificate, you'll need to create and extr
 
 3. Open a command prompt with elevated rights, navigate to the encrypted file, and then run this command:
 
-    <code>cipher /d <i>encryptedfile.extension</i></code>
-    
-    Where *encryptedfile.extension* is the name of your encrypted file. For example, corporatedata.docx.
+    ```cmd
+    cipher /d encryptedfile.extension
+    ```
+
+    Where *encryptedfile.extension* is the name of your encrypted file. For example, `corporatedata.docx`.
 
 ## Recover WIP-protected after unenrollment
 
@@ -84,26 +90,34 @@ It's possible that you might revoke data from an unenrolled device only to later
 >To maintain control over your enterprise data, and to be able to revoke again in the future, you must only perform this process after the employee has re-enrolled the device. 
 
 1. Have the employee sign in to the unenrolled device, open an elevated command prompt, and type:
-   
-   <code>Robocopy "%localappdata%\Microsoft\EDP\Recovery" "<i>new_location</i>" * /EFSRAW</code>
+
+    ```cmd
+    Robocopy "%localappdata%\Microsoft\EDP\Recovery" "new_location" * /EFSRAW
+    ```
 
    Where "*new_location*" is in a different directory. This can be on the employee's device or on a shared folder on a computer that runs Windows 8 or Windows Server 2012 or newer and can be accessed while you're logged in as a data recovery agent.
 
    To start Robocopy in S mode, open Task Manager. Click **File** > **Run new task**, type the command, and click **Create this task with administrative privileges**.
-   
+
    ![Robocopy in S mode.](images/robocopy-s-mode.png)
 
    If the employee performed a clean installation and there is no user profile, you need to recover the keys from the System Volume folder in each drive. Type: 
-    
-   <code>Robocopy "<i>drive_letter</i>:\System Volume Information\EDP\Recovery\" "<i>new_location</i>" * /EFSRAW</code>
+
+    ```cmd
+    Robocopy "drive_letter:\System Volume Information\EDP\Recovery\" "new_location" * /EFSRAW
+    ```
 
 2. Sign in to a different device with administrator credentials that have access to your organization's DRA certificate, and perform the file decryption and recovery by typing:
 
-   <code>cipher.exe /D "<i>new_location</i>"</code>
+    ```cmd
+    cipher.exe /D "new_location"
+    ```
 
 3. Have your employee sign in to the unenrolled device, and type:
 
-   <code>Robocopy "<i>new_location</i>" "%localappdata%\Microsoft\EDP\Recovery\Input"</code>
+    ```cmd
+    Robocopy "new_location" "%localappdata%\Microsoft\EDP\Recovery\Input"
+    ```
 
 4. Ask the employee to lock and unlock the device.
 
@@ -127,7 +141,8 @@ The employee experience is based on sign in with an Azure AD work account. The e
 
 After signing in, the necessary WIP key info is automatically downloaded and employees are able to access the files again.
 
-**To test what the employee sees during the WIP key recovery process**
+### To test what the employee sees during the WIP key recovery process
+
 1. Attempt to open a work file on an unenrolled device.
 
     The **Connect to Work to access work files** box appears.
@@ -139,6 +154,7 @@ After signing in, the necessary WIP key info is automatically downloaded and emp
 3. Sign-in to Azure AD as the employee and verify that the files now open
 
 ## Related topics
+
 - [Security Watch Deploying EFS: Part 1](/previous-versions/technet-magazine/cc162507(v=msdn.10))
 
 - [Protecting Data by Using EFS to Encrypt Hard Drives](/previous-versions/tn-archive/cc875821(v=technet.10))

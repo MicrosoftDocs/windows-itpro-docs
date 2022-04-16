@@ -10,6 +10,7 @@ ms.topic: troubleshooting
 author: dansimp
 ms.localizationpriority: medium 
 ms.author: dansimp
+ms.collection: highpri
 --- 
 
 # Advanced troubleshooting for Windows-based computer freeze issues 
@@ -132,7 +133,7 @@ If the computer is no longer frozen and now is running in a good state, use the 
    To allow the operating system to generate a memory dump file at an NMI interruption, set the value of the [NMICrashDump](/previous-versions/windows/it-pro/windows-server-2003/cc783271(v=ws.10)) registry entry to `1` (REG_DWORD). Then, restart the computer to apply this change.   
 
    > [!NOTE]
-   > This is applicable only for Windows 7, Windows Server 2008 R2, and earlier versions of Windows. For Windows 8 Windows Server 2012, and later versions of Windows, the NMICrashDump registry key is no longer required, and an NMI interruption will result in [a Stop error that follows a memory dump data collection](https://support.microsoft.com/help/2750146).   
+   > This is applicable only for Windows 7, Windows Server 2008 R2, and earlier versions of Windows. For Windows 8 Windows Server 2012, and later versions of Windows, the NMICrashDump registry key is no longer required, and an NMI interruption will result in [a Stop error that follows a memory dump data collection](/troubleshoot/windows-client/performance/nmi-hardware-failure-error).   
 
 4. When the computer exhibits the problem, hold down the right **Ctrl** key, and press the **Scroll Lock** key two times to generate a memory dump file.   
 
@@ -157,17 +158,17 @@ Learn how to use Dumpchk.exe to check your dump files:
 
 You can use Windows Performance Monitor to examine how programs that you run affect your computer's performance, both in real time and by collecting log data for later analysis. To create performance counter and event trace log collections on local and remote systems, run the following commands in a command prompt as administrator: 
 
-```cmd 
+```console
 Logman create counter LOGNAME_Long -u DOMAIN\USERNAME * -f bincirc -v mmddhhmm -max 500 -c "\\COMPUTERNAME\LogicalDisk(*)\*" "\\COMPUTERNAME\Memory\*" "\\COMPUTERNAME\Network Interface(*)\*" "\\COMPUTERNAME\Paging File(*)\*" "\\COMPUTERNAME\PhysicalDisk(*)\*" "\\COMPUTERNAME\Process(*)\*" "\\COMPUTERNAME\Redirector\*" "\\COMPUTERNAME\Server\*" "\\COMPUTERNAME\System\*" "\\COMPUTERNAME\Terminal Services\*" "\\COMPUTERNAME\Processor(*)\*" "\\COMPUTERNAME\Cache\*" -si 00:05:00  
 ``` 
 
-```cmd 
+```console 
 Logman create counter LOGNAME_Short -u DOMAIN\USERNAME * -f bincirc -v mmddhhmm -max 500 -c "\\COMPUTERNAME\LogicalDisk(*)\*" "\\COMPUTERNAME\Memory\*" "\\COMPUTERNAME\Network Interface(*)\*" "\\COMPUTERNAME\Paging File(*)\*" "\\COMPUTERNAME\PhysicalDisk(*)\*" "\\COMPUTERNAME\Process(*)\*" "\\COMPUTERNAME\Redirector\*" "\\COMPUTERNAME\Server\*" "\\COMPUTERNAME\System\*" "\\COMPUTERNAME\Terminal Services\*" "\\COMPUTERNAME\Processor(*)\*" "\\COMPUTERNAME\Cache\*" -si 00:00:10  
 ``` 
 
 Then, you can start or stop the log by running the following commands: 
 
-```cmd 
+```console
 logman start LOGNAME_Long / LOGNAME_Short   
 logman stop LOGNAME_Long / LOGNAME_Short  
 ``` 
@@ -282,6 +283,6 @@ The memory dump process occurs by pressing the RIGHT CTRL + SCROLL LOCK + SCROLL
 
 On Windows Server 2008, you may not have enough free disk space to generate a complete memory dump file on the system volume. There's a [hotfix](https://support.microsoft.com/help/957517) that allows for the data collection even though there isn't sufficient space on the system drive to store the memory dump file.   
 
-Additionally, on Windows Server 2008 Service Pack (SP2), there's a second option if the system drive doesn't have sufficient space. Namely, you can use the DedicatedDumpFile registry entry. To learn how to use the registry entry, see [New behavior in Windows Vista and Windows Server 2008](https://support.microsoft.com/help/969028).   
+Additionally, on Windows Server 2008 Service Pack (SP2), there's a second option if the system drive doesn't have sufficient space. Namely, you can use the DedicatedDumpFile registry entry. To learn how to use the registry entry, see [New behavior in Windows Vista and Windows Server 2008](/windows/client-management/generate-kernel-or-complete-crash-dump).   
 
 For more information, see [How to use the DedicatedDumpFile registry value to overcome space limitations on the system drive](https://blogs.msdn.com/b/ntdebugging/archive/2010/04/02/how-to-use-the-dedicateddumpfile-registry-value-to-overcome-space-limitations-on-the-system-drive-when-capturing-a-system-memory-dump.aspx).

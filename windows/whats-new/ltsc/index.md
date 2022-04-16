@@ -6,17 +6,18 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
-ms.author: greglin
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
 ms.localizationpriority: low
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Windows 10 Enterprise LTSC
 
 **Applies to**
--   Windows 10 Enterprise LTSC
+-   Windows 10 Enterprise LTSC
 
 ## In this topic
 
@@ -29,7 +30,7 @@ This topic provides links to articles with information about what's new in each 
 
 ## The Long-Term Servicing Channel (LTSC)
 
-The following table summarizes equivalent feature update versions of Windows 10 LTSC and semi-annual channel (SAC) releases.
+The following table summarizes equivalent feature update versions of Windows 10 LTSC and General Availability Channel (SAC) releases.
 
 | LTSC release | Equivalent SAC release | Availability date |
 | --- | --- | --- |
@@ -41,7 +42,7 @@ The following table summarizes equivalent feature update versions of Windows 10 
 > [!NOTE]
 > The Long-Term Servicing Channel was previously called the Long-Term Servicing Branch (LTSB). All references to LTSB are changed in this article to LTSC for consistency, even though the name of previous versions might still be displayed as LTSB.
 
-With the LTSC servicing model, customers can delay receiving feature updates and instead only receive monthly quality updates on devices. Features from Windows 10 that could be updated with new functionality, including Cortana, Edge, and all in-box Universal Windows apps, are also not included. Feature updates are offered in new LTSC releases every 2–3 years instead of every 6 months, and organizations can choose to install them as in-place upgrades or even skip releases over a 10-year life cycle. Microsoft is committed to providing bug fixes and security patches for each LTSC release during this 10 year period. 
+With the LTSC servicing model, customers can delay receiving feature updates and instead only receive monthly quality updates on devices. Features from Windows 10 that could be updated with new functionality, including Cortana, Edge, and all in-box Universal Windows apps, are also not included. Feature updates are offered in new LTSC releases every 2–3 years instead of every 6 months, and organizations can choose to install them as in-place upgrades, or even skip releases. Microsoft is committed to providing bug fixes and security patches for each LTSC release during the extended LTSC servicing lifecycle. Always check your individual LTSC release to verify its servicing lifecycle. For more information, see [release information](/windows/release-health/release-information), or perform a search on the [product lifecycle information](/lifecycle/products/) page.
 
 > [!IMPORTANT]
 > The Long-Term Servicing Channel is not intended for deployment on most or all the PCs in an organization. The LTSC edition of Windows 10 provides customers with access to a deployment option for their special-purpose devices and environments. These devices typically perform a single important task and don’t need feature updates as frequently as other devices in the organization. These devices are also typically not heavily dependent on support from external apps and tools. Since the feature set for LTSC does not change for the lifetime of the release, over time there might be some external tools that do not continue to provide legacy support. See [LTSC: What is it, and when it should be used](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/LTSC-What-is-it-and-when-should-it-be-used/ba-p/293181).

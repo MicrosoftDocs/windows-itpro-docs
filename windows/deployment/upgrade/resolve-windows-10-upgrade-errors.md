@@ -1,8 +1,7 @@
 ---
 title: Resolve Windows 10 upgrade errors - Windows IT Pro
-ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 description: Resolve Windows 10 upgrade errors for ITPros. Technical information for IT professionals to help diagnose Windows setup errors.
 keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, ITPro
 ms.prod: w10
@@ -10,15 +9,16 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Resolve Windows 10 upgrade errors : Technical information for IT Pros
 
 **Applies to**
--   Windows 10
+-   Windows 10
 
 >[!IMPORTANT]
 >This article contains technical instructions for IT administrators. If you are not an IT administrator, try some of the [quick fixes](quick-fixes.md) described in this article then contact [Microsoft Support](https://support.microsoft.com/contactus/) starting with the Virtual Agent. To talk to a person about your issue, click **Get started** to interact with the Virtual Agent, then enter "Talk to a person" two times. The Virtual Agent can also help you to resolve many Windows upgrade issues. Also see: [Get help with Windows 10 upgrade and installation errors](https://support.microsoft.com/help/10587/windows-10-get-help-with-upgrade-installation-errors) and [Submit Windows 10 upgrade errors using Feedback Hub](submit-errors.md).
@@ -61,5 +61,5 @@ See the following topics in this article:
 <br>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)
 <br>[Windows 10 Specifications](https://www.microsoft.com/windows/Windows-10-specifications)
 <br>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)
-<br>[Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)
+<br>[Fix Windows Update errors by using the DISM or System Update Readiness tool](/troubleshoot/windows-server/deployment/fix-windows-update-errors)
 <br>

@@ -3,8 +3,8 @@
 - name: Windows 11
   expanded: true
   items:
-    - name: What's new in Windows 11
-      href: windows-11-whats-new.md
+    - name: Windows 11 overview
+      href: windows-11-overview.md
     - name: Windows 11 requirements
       href: windows-11-requirements.md
     - name: Plan for Windows 11

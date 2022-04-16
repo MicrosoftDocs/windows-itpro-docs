@@ -5,13 +5,14 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: article
-ms.author: mandia
-author: MandiOhlinger
+ms.author: aaroncz
+author: aczechowski
 ms.localizationpriority: medium
 ms.date: 08/30/2021
 ms.reviewer: 
 manager: dougeby
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Add or hide features on the Windows client OS

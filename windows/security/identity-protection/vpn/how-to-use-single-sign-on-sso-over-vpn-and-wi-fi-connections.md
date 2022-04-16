@@ -1,12 +1,12 @@
 ---
 title: How to use Single Sign-On (SSO) over VPN and Wi-Fi connections (Windows 10 and Windows 11)
 description: Explains requirements to enable Single Sign-On (SSO) to on-premises domain resources over WiFi or VPN connections.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: dansimp
-ms.date: 09/23/2021
+ms.date: 03/22/2022
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -28,6 +28,9 @@ The credentials that are used for the connection authentication are placed in Cr
 The credentials are placed in Credential Manager as a "\*Session" credential.
 A "\*Session" credential implies that it is valid for the current user session.
 The credentials are also cleaned up when the WiFi or VPN connection is disconnected.
+
+> [!NOTE]
+> In Windows 10, version 21h2 and later, the "\*Session" credential is not visible in Credential Manager.
 
 For example, if someone using Microsoft Edge tries to access a domain resource, Microsoft Edge has the right Enterprise Authentication capability. This allows [WinInet](/windows/win32/wininet/wininet-reference) to release the credentials that it gets from the Credential Manager to the SSP that is requesting it.
 For more information about the Enterprise Authentication capability, see [App capability declarations](/windows/uwp/packaging/app-capability-declarations).

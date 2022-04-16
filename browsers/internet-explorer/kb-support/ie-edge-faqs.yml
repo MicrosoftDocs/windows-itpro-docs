@@ -9,11 +9,10 @@ metadata:
   ms.reviewer: ramakoni, DEV_Triage
   ms.prod: internet-explorer
   ms.technology:
-  ms.topic: kb-support
+  ms.topic: faq
   ms.custom: CI=111020
   ms.localizationpriority: medium
   ms.date: 01/23/2020
-    
 title: Internet Explorer and Microsoft Edge frequently asked questions (FAQ) for IT Pros
 summary: |
 
@@ -148,7 +147,7 @@ sections:
       - question: |
           Where to find Internet Explorer security zones registry entries
         answer: |
-          Most of the Internet Zone entries can be found in [Internet Explorer security zones registry entries for advanced users](https://support.microsoft.com/help/182569/internet-explorer-security-zones-registry-entries-for-advanced-users).
+          Most of the Internet Zone entries can be found in [Internet Explorer security zones registry entries for advanced users](/troubleshoot/browsers/ie-security-zones-registry-entries).
           
           This article was written for Internet Explorer 6 but is still applicable to Internet Explorer 11.
           
@@ -193,7 +192,7 @@ sections:
         answer: |
           Internet Explorer 11 is the last major version of Internet Explorer. Internet Explorer 11 will continue receiving security updates and technical support for the lifecycle of the version of Windows on which it is installed.
           
-          For more information, see [Lifecycle FAQ — Internet Explorer and Edge](https://support.microsoft.com/help/17454/lifecycle-faq-internet-explorer).
+          For more information, see [Lifecycle FAQ — Internet Explorer and Edge](/lifecycle/faq/internet-explorer-microsoft-edge).
           
       - question: |
           How to configure TLS (SSL) for Internet Explorer

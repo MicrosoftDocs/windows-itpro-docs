@@ -1,22 +1,22 @@
 ---
 title: Windows client updates, channels, and tools
 description: Brief summary of the kinds of Windows updates, the channels they are served through, and the tools for managing them
-keywords: updates, servicing, current, deployment, General Availability Channel, semi-annual channel, feature, quality, rings, insider, tools
+keywords: updates, servicing, current, deployment, General Availability Channel, General Availability Channel, feature, quality, rings, insider, tools
 ms.prod: w10
 ms.mktglfcycl: manage
-author: jaimeo
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: jaimeo
-ms.reviewer: 
-manager: laurawi
+ms.author: aaroncz
+manager: dougeby
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Windows client updates, channels, and tools
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 - Windows 11
 
 ## How Windows updates work

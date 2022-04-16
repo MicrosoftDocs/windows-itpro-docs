@@ -10,10 +10,10 @@ keywords: deployment, automate, tools, configure, mdt
 ms.localizationpriority: medium
 ms.date: 10/11/2017
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.audience: itpro
-ms.author: greglin
-author: greg-lindsay
+ms.author: aaroncz
+author: aczechowski
 audience: itpro
 ms.topic: article
 ---
@@ -25,7 +25,8 @@ ms.topic: article
 
 -   Windows 10
 
-**Important**: This guide leverages the proof of concept (PoC) environment configured using procedures in the following guide: 
+> [!IMPORTANT]
+> This guide leverages the proof of concept (PoC) environment configured using procedures in the following guide: 
 - [Step by step guide: Configure a test lab to deploy Windows 10](windows-10-poc.md)
 
 Please complete all steps in the prerequisite guide before starting this guide. This guide requires about 5 hours to complete, but can require less time or more time depending on the speed of the Hyper-V host. After completing the current guide, also see the companion guide:
@@ -36,7 +37,7 @@ The PoC environment is a virtual network running on Hyper-V with three virtual m
 - **SRV1**: A dual-homed contoso.com domain member server, DNS server, and default gateway providing NAT service for the PoC network.
 - **PC1**: A contoso.com member computer running Windows 7, Windows 8, or Windows 8.1 that has been shadow-copied from a physical computer on your corporate network.
 
->This guide uses the Hyper-V server role. If you do not complete all steps in a single session, consider using [checkpoints](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn818483(v=ws.11)) and [saved states](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee247418(v=ws.10)) to pause, resume, or restart your work.
+This guide uses the Hyper-V server role. If you do not complete all steps in a single session, consider using [checkpoints](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn818483(v=ws.11)) and [saved states](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee247418(v=ws.10)) to pause, resume, or restart your work.
 
 ## In this guide
 
@@ -44,23 +45,15 @@ This guide provides instructions to install and configure the Microsoft Deployme
 
 Topics and procedures in this guide are summarized in the following table. An estimate of the time required to complete each procedure is also provided. Time required to complete procedures will vary depending on the resources available to the Hyper-V host and assigned to VMs, such as processor speed, memory allocation, disk speed, and network speed.
 
-<br>
-
-<div>
-
-<table border="1" cellspacing="0" cellpadding="0">
-<tr><td BGCOLOR="#a0e4fa"><B>Topic</B><td BGCOLOR="#a0e4fa"><B>Description</B><td BGCOLOR="#a0e4fa"><B>Time</B>
-
-<tr><td><a href="#about-mdt" data-raw-source="[About MDT](#about-mdt)">About MDT</a><td>A high-level overview of the Microsoft Deployment Toolkit (MDT).<td>Informational
-<tr><td><a href="#install-mdt" data-raw-source="[Install MDT](#install-mdt)">Install MDT</a><td>Download and install MDT.<td>40 minutes
-<tr><td><a href="#create-a-deployment-share-and-reference-image" data-raw-source="[Create a deployment share and reference image](#create-a-deployment-share-and-reference-image)">Create a deployment share and reference image</a><td>A reference image is created to serve as the template for deploying new images.<td>90 minutes
-<tr><td><a href="#deploy-a-windows-10-image-using-mdt" data-raw-source="[Deploy a Windows 10 image using MDT](#deploy-a-windows-10-image-using-mdt)">Deploy a Windows 10 image using MDT</a><td>The reference image is deployed in the PoC environment.<td>60 minutes
-<tr><td><a href="#refresh-a-computer-with-windows-10" data-raw-source="[Refresh a computer with Windows 10](#refresh-a-computer-with-windows-10)">Refresh a computer with Windows 10</a><td>Export user data from an existing client computer, wipe the computer, install a new operating system, and then restore user data and settings.<td>60 minutes
-<tr><td><a href="#replace-a-computer-with-windows-10" data-raw-source="[Replace a computer with Windows 10](#replace-a-computer-with-windows-10)">Replace a computer with Windows 10</a><td>Back up an existing client computer, then restore this backup to a new computer.<td>60 minutes
-<tr><td><a href="#troubleshooting-logs-events-and-utilities" data-raw-source="[Troubleshooting logs, events, and utilities](#troubleshooting-logs-events-and-utilities)">Troubleshooting logs, events, and utilities</a><td>Log locations and troubleshooting hints.<td>Informational
-</TABLE>
-
-</div>
+|Topic|Description|Time|
+|--- |--- |--- |
+|[About MDT](#about-mdt)|A high-level overview of the Microsoft Deployment Toolkit (MDT).|Informational|
+|[Install MDT](#install-mdt)|Download and install MDT.|40 minutes|
+|[Create a deployment share and reference image](#create-a-deployment-share-and-reference-image)|A reference image is created to serve as the template for deploying new images.|90 minutes|
+|[Deploy a Windows 10 image using MDT](#deploy-a-windows-10-image-using-mdt)|The reference image is deployed in the PoC environment.|60 minutes|
+|[Refresh a computer with Windows 10](#refresh-a-computer-with-windows-10)|Export user data from an existing client computer, wipe the computer, install a new operating system, and then restore user data and settings.|60 minutes|
+|[Replace a computer with Windows 10](#replace-a-computer-with-windows-10)|Back up an existing client computer, then restore this backup to a new computer.|60 minutes|
+|[Troubleshooting logs, events, and utilities](#troubleshooting-logs-events-and-utilities)|Log locations and troubleshooting hints.|Informational|
 
 ## About MDT
 
@@ -73,18 +66,19 @@ MDT performs deployments by using the Lite Touch Installation (LTI), Zero Touch 
 
 1. On SRV1, temporarily disable IE Enhanced Security Configuration for Administrators by typing the following commands at an elevated Windows PowerShell prompt:
 
-    ```
+    ```powershell
     $AdminKey = "HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}"
     Set-ItemProperty -Path $AdminKey -Name “IsInstalled” -Value 0
     Stop-Process -Name Explorer
     ```
+
 2. Download and install the 64-bit version of [Microsoft Deployment Toolkit (MDT)](https://www.microsoft.com/download/details.aspx?id=54259) on SRV1 using the default options. As of the writing of this guide, the latest version of MDT was 8443.
 
 3. Download and install the latest [Windows Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) on SRV1 using the default installation settings. The current version is the ADK for Windows 10, version 1703. Installation might require several minutes to acquire all components.
 
 3. If desired, re-enable IE Enhanced Security Configuration:
 
-    ```
+    ```powershell
     Set-ItemProperty -Path $AdminKey -Name “IsInstalled” -Value 1
     Stop-Process -Name Explorer
     ```
@@ -95,7 +89,7 @@ A reference image serves as the foundation for Windows 10 devices in your organi
 
 1. In [Step by step guide: Configure a test lab to deploy Windows 10](windows-10-poc.md), the Windows 10 Enterprise .iso file was saved to the c:\VHD directory as **c:\VHD\w10-enterprise.iso**. The first step in creating a deployment share is to mount this file on SRV1.  To mount the Windows 10 Enterprise DVD on SRV1, open an elevated Windows PowerShell prompt on the Hyper-V host computer and type the following command:
 
-    ```
+    ```powershell
     Set-VMDvdDrive -VMName SRV1 -Path c:\VHD\w10-enterprise.iso
     ```
 2. On SRV1, verify that the Windows Enterprise installation DVD is mounted as drive letter D.
@@ -130,7 +124,7 @@ A reference image serves as the foundation for Windows 10 devices in your organi
     - Progress: wait for files to be copied
     - Confirmation: click **Finish**
 
-    >For purposes of this test lab, we will only add the prerequisite .NET Framework feature. Commerical applications (ex: Microsoft Office) will not be added to the deployment share. For information about adding applications, see the [Add applications](./deploy-windows-mdt/create-a-windows-10-reference-image.md) section of the [Create a Windows 10 reference image](deploy-windows-mdt/create-a-windows-10-reference-image.md) topic in the TechNet library.
+    For purposes of this test lab, we will only add the prerequisite .NET Framework feature. Commerical applications (ex: Microsoft Office) will not be added to the deployment share. For information about adding applications, see the [Add applications](./deploy-windows-mdt/create-a-windows-10-reference-image.md) section of the [Create a Windows 10 reference image](deploy-windows-mdt/create-a-windows-10-reference-image.md) topic in the TechNet library.
 
 11. The next step is to create a task sequence to reference the operating system that was imported. To create a task sequence, right-click the **Task Sequences** node and then click **New Task Sequence**. Use the following settings for the New Task Sequence Wizard:
     - Task sequence ID: **REFW10X64-001**<BR>
@@ -141,7 +135,7 @@ A reference image serves as the foundation for Windows 10 devices in your organi
     - Specify Product Key: **Do not specify a product key at this time**
     - Full Name: **Contoso**
     - Organization: **Contoso**
-    - Internet Explorer home page: **http://www.contoso.com**
+    - Internet Explorer home page: `http://www.contoso.com`
     - Admin Password: **Do not specify an Administrator password at this time**
     - Summary: click **Next**
     - Confirmation: click **Finish**
@@ -159,7 +153,8 @@ A reference image serves as the foundation for Windows 10 devices in your organi
 
 17. Enable Windows Update in the task sequence by clicking the **Windows Update (Post-Application Installation)** step, clicking the **Options** tab, and clearing the **Disable this step** checkbox.
     
-    >Note: Since we are not installing applications in this test lab, there is no need to enable the Windows Update Pre-Application Installation step. However, you should enable this step if you are also installing applications.
+    > [!NOTE]
+    > Since we are not installing applications in this test lab, there is no need to enable the Windows Update Pre-Application Installation step. However, you should enable this step if you are also installing applications.
 
 18. Click **OK** to complete editing the task sequence.
 
@@ -167,7 +162,7 @@ A reference image serves as the foundation for Windows 10 devices in your organi
 
 20. Replace the default rules with the following text:
 
-    ```
+    ```text
     [Settings]
     Priority=Default
 
@@ -202,7 +197,7 @@ A reference image serves as the foundation for Windows 10 devices in your organi
 
 21. Click **Apply** and then click **Edit Bootstrap.ini**. Replace the contents of the Bootstrap.ini file with the following text, and save the file:
 
-    ```
+    ```text
     [Settings]
     Priority=Default
 
@@ -222,20 +217,18 @@ A reference image serves as the foundation for Windows 10 devices in your organi
 
 25. Copy **c:\MDTBuildLab\Boot\LiteTouchPE_x86.iso** on SRV1 to the **c:\VHD** directory on the Hyper-V host computer. Note that in MDT, the x86 boot image can deploy both x86 and x64 operating systems, except on computers based on Unified Extensible Firmware Interface (UEFI).
 
-    >Hint: To copy the file, right-click the **LiteTouchPE_x86.iso** file and click **Copy** on SRV1, then open the **c:\VHD** folder on the Hyper-V host, right-click inside the folder and click **Paste**.
+    > [!TIP]
+    > To copy the file, right-click the **LiteTouchPE_x86.iso** file and click **Copy** on SRV1, then open the **c:\VHD** folder on the Hyper-V host, right-click inside the folder and click **Paste**.
 
 26. Open a Windows PowerShell prompt on the Hyper-V host computer and type the following commands:
 
-    <div>
-    <pre>
-
+    ```powershell
     New-VM REFW10X64-001 -SwitchName poc-internal -NewVHDPath "c:\VHD\REFW10X64-001.vhdx" -NewVHDSizeBytes 60GB
     Set-VMMemory REFW10X64-001 -DynamicMemoryEnabled $true -MinimumBytes 1024MB -MaximumBytes 1024MB -Buffer 20
     Set-VMDvdDrive REFW10X64-001 -Path c:\VHD\LiteTouchPE_x86.iso
     Start-VM REFW10X64-001
     vmconnect localhost REFW10X64-001
-	</pre>
-    </div>
+    ```
     
     The VM will require a few minutes to prepare devices and boot from the LiteTouchPE_x86.iso file. 
 
@@ -307,7 +300,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
 1. On SRV1, open an elevated Windows PowerShell prompt and type the following commands:
 
-    ```
+    ```powershell
     copy-item "C:\Program Files\Microsoft Deployment Toolkit\Templates\Bootstrap.ini" C:\MDTProd\Control\Bootstrap.ini -Force
     copy-item "C:\Program Files\Microsoft Deployment Toolkit\Templates\CustomSettings.ini" C:\MDTProd\Control\CustomSettings.ini -Force
     ``` 
@@ -315,7 +308,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
 3. Click the **Rules** tab and replace the rules with the following text (don't click OK yet):
 
-    ```
+    ```text
     [Settings]
     Priority=Default
     
@@ -351,19 +344,21 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
     SkipFinalSummary=NO
     EventService=http://SRV1:9800
     ```
-    **Note**: The contents of the Rules tab are added to c:\MDTProd\Control\CustomSettings.ini.
+
+    > [!NOTE]
+    > The contents of the Rules tab are added to c:\MDTProd\Control\CustomSettings.ini.
     
-    >In this example a **MachineObjectOU** entry is not provided. Normally this entry describes the specific OU where new client computer objects are created in Active Directory. However, for the purposes of this test lab clients are added to the default computers OU, which requires that this parameter be unspecified.
+    In this example a **MachineObjectOU** entry is not provided. Normally this entry describes the specific OU where new client computer objects are created in Active Directory. However, for the purposes of this test lab clients are added to the default computers OU, which requires that this parameter be unspecified.
 
     If desired, edit the follow line to include or exclude other users when migrating settings. Currently, the command is set to user exclude (ue) all users except for CONTOSO users specified by the user include option (ui):
     
-    ```
+    ```console
     ScanStateArgs=/ue:*\* /ui:CONTOSO\*
     ```
 
     For example, to migrate **all** users on the computer, replace this line with the following:
 
-    ```
+    ```console
     ScanStateArgs=/all
     ```   
 
@@ -371,7 +366,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
 4. Click **Edit Bootstap.ini** and replace text in the file with the following text:
 
-    ```
+    ```text
     [Settings]
     Priority=Default
     
@@ -382,6 +377,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
     UserPassword=pass@word1
     SkipBDDWelcome=YES
     ```
+
 5. Click **OK** when finished. 
 
 ### Update the deployment share
@@ -406,7 +402,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
 1. Initialize Windows Deployment Services (WDS) by typing the following command at an elevated Windows PowerShell prompt on SRV1:
 
-    ```
+    ```powershell
     WDSUTIL /Verbose /Progress /Initialize-Server /Server:SRV1 /RemInst:"C:\RemoteInstall"
     WDSUTIL /Set-Server /AnswerClients:All
     ```
@@ -421,11 +417,12 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
 1. Before using WDS to deploy a client image, you must temporarily disable the external network adapter on SRV1. This is just an artifact of the lab environment. In a typical deployment environment WDS would not be installed on the default gateway. 
 
-    >**Note**: Do not disable the *internal* network interface. To quickly view IP addresses and interface names configured on the VM, type **Get-NetIPAddress | ft interfacealias, ipaddress**
+    > [!NOTE]
+    > Do not disable the *internal* network interface. To quickly view IP addresses and interface names configured on the VM, type **Get-NetIPAddress | ft interfacealias, ipaddress**
     
     Assuming the external interface is named "Ethernet 2", to disable the *external* interface on SRV1, open a Windows PowerShell prompt on SRV1 and type the following command:
 
-    ```
+    ```powershell
     Disable-NetAdapter "Ethernet 2" -Confirm:$false
     ```
 
@@ -434,28 +431,30 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
 2. Next, switch to the Hyper-V host and open an elevated Windows PowerShell prompt. Create a generation 2 VM on the Hyper-V host that will load its OS using PXE. To create this VM, type the following commands at an elevated Windows PowerShell prompt:
 
-    ```
+    ```powershell
     New-VM –Name "PC2" –NewVHDPath "c:\vhd\pc2.vhdx" -NewVHDSizeBytes 60GB -SwitchName poc-internal -BootDevice NetworkAdapter -Generation 2
     Set-VMMemory -VMName "PC2" -DynamicMemoryEnabled $true -MinimumBytes 720MB -MaximumBytes 2048MB -Buffer 20
     ```
 
-    >Dynamic memory is configured on the VM to conserve resources. However, this can cause memory allocation to be reduced past what is required to install an operating system. If this happens, reset the VM and begin the OS installation task sequence immediately. This ensures the VM memory allocation is not decreased too much while it is idle.
+    Dynamic memory is configured on the VM to conserve resources. However, this can cause memory allocation to be reduced past what is required to install an operating system. If this happens, reset the VM and begin the OS installation task sequence immediately. This ensures the VM memory allocation is not decreased too much while it is idle.
 
 3. Start the new VM and connect to it:
 
-    ```
+    ```powershell
     Start-VM PC2
     vmconnect localhost PC2
     ```
+
 4. When prompted, hit ENTER to start the network boot process.
 
 5. In the Windows Deployment Wizard, choose the **Windows 10 Enterprise x64 Custom Image** and then click **Next**.
 
 6. After MDT lite touch installation has started, be sure to re-enable the external network adapter on SRV1. This is needed so the client can use Windows Update after operating system installation is complete.To re-enable the external network interface, open an elevated Windows PowerShell prompt on SRV1 and type the following command:
 
-    ```
+    ```powershell
     Enable-NetAdapter "Ethernet 2"
     ```
+
 7. On SRV1, in the Deployment Workbench console, click on **Monitoring** and view the status of installation. Right-click **Monitoring** and click **Refresh** if no data is displayed.
 8. OS installation requires about 10 minutes. When the installation is complete, the system will reboot automatically, configure devices, and install updates, requiring another 10-20 minutes.  When the new client computer is finished updating, click **Finish**. You will be automatically signed in to the local computer as administrator.
     
@@ -470,34 +469,36 @@ This section will demonstrate how to export user data from an existing client co
 
 1. If the PC1 VM is not already running, then start and connect to it:
     
-    ```
+    ```powershell
     Start-VM PC1
     vmconnect localhost PC1
     ```
 
 2. Switch back to the Hyper-V host and create a checkpoint for the PC1 VM so that it can easily be reverted to its current state for troubleshooting purposes and to perform additional scenarios.  Checkpoints are also known as snapshots. To create a checkpoint for the PC1 VM, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
 
-    ```
+    ```powershell
     Checkpoint-VM -Name PC1 -SnapshotName BeginState
     ```
 
 3. Sign on to PC1 using the CONTOSO\Administrator account.
 
-    >Specify **contoso\administrator** as the user name to ensure you do not sign on using the local administrator account. You must sign in with this account so that you have access to the deployment share.
+    Specify **contoso\administrator** as the user name to ensure you do not sign on using the local administrator account. You must sign in with this account so that you have access to the deployment share.
 
 4. Open an elevated command prompt on PC1 and type the following:
 
-    ```
+    ```console
     cscript \\SRV1\MDTProd$\Scripts\Litetouch.vbs
     ```
 
-    **Note**: For more information on tools for viewing log files and to assist with troubleshooting, see [Configuration Manager Tools](/configmgr/core/support/tools).
+    > [!NOTE]
+    > For more information on tools for viewing log files and to assist with troubleshooting, see [Configuration Manager Tools](/configmgr/core/support/tools).
 
 5. Choose the **Windows 10 Enterprise x64 Custom Image** and then click **Next**.
 
 6. Choose **Do not back up the existing computer** and click **Next**.
 
-    **Note**: The USMT will still back up the computer.
+    > [!NOTE]
+    > The USMT will still back up the computer.
 
 7. Lite Touch Installation will perform the following actions:
    - Back up user settings and data using USMT.
@@ -511,13 +512,13 @@ This section will demonstrate how to export user data from an existing client co
 
 9. Create another checkpoint for the PC1 VM so that you can review results of the computer refresh later. To create a checkpoint, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
 
-    ```
+    ```powershell
     Checkpoint-VM -Name PC1 -SnapshotName RefreshState
     ```
 
 10. Restore the PC1 VM to it's previous state in preparation for the replace procedure. To restore a checkpoint, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
 
-    ```
+    ```powershell
     Restore-VMSnapshot -VMName PC1 -Name BeginState -Confirm:$false
     Start-VM PC1
     vmconnect localhost PC1
@@ -537,11 +538,12 @@ At a high level, the computer replace process consists of:<BR>
 2. Click **OK**, right-click **MDT Production**, click **Update Deployment Share** and accept the default options in the wizard to update the share.
 3. Type the following commands at an elevated Windows PowerShell prompt on SRV1:
 
-    ```
+    ```powershell
     New-Item -Path C:\MigData -ItemType directory
     New-SmbShare -Name MigData$ -Path C:\MigData -ChangeAccess EVERYONE
     icacls C:\MigData /grant '"contoso\administrator":(OI)(CI)(M)'
     ```
+
 4. On SRV1 in the deployment workbench, under **MDT Production**, right-click the **Task Sequences** node, and click **New Folder**.
 5. Name the new folder **Other**, and complete the wizard using default options.
 6. Right-click the **Other** folder and then click **New Task Sequence**. Use the following values in the wizard:
@@ -556,21 +558,22 @@ At a high level, the computer replace process consists of:<BR>
 
 1. If you are not already signed on to PC1 as **contoso\administrator**, sign in using this account. To verify the currently signed in account, type the following command at an elevated command prompt:
 
-    ```
+    ```console
     whoami
     ```
 2. To ensure a clean environment before running the backup task sequence, type the following at an elevated Windows PowerShell prompt on PC1:
 
-    ```
+    ```powershell
     Remove-Item c:\minint -recurse
     Remove-Item c:\_SMSTaskSequence -recurse
     Restart-Computer
     ```
 3. Sign in to PC1 using the contoso\administrator account, and then type the following at an elevated command prompt:
 
-    ```
+    ```console
     cscript \\SRV1\MDTProd$\Scripts\Litetouch.vbs
     ```
+
 4. Complete the deployment wizard using the following:
     - **Task Sequence**: Backup Only Task Sequence
     - **User Data**: Specify a location: **\\\\SRV1\MigData$\PC1**
@@ -579,7 +582,7 @@ At a high level, the computer replace process consists of:<BR>
 6. On PC1, verify that **The user state capture was completed successfully** is displayed, and click **Finish** when the capture is complete.
 7. On SRV1, verify that the file **USMT.MIG** was created in the **C:\MigData\PC1\USMT** directory. See the following example:
 
-    ```
+    ```powershell
     PS C:\> dir C:\MigData\PC1\USMT
 
         Directory: C:\MigData\PC1\USMT
@@ -588,49 +591,52 @@ At a high level, the computer replace process consists of:<BR>
     ----                -------------     ------ ----
     -a---          9/6/2016  11:34 AM   14248685 USMT.MIG
     ```
-   ### Deploy PC3 
 
-8. On the Hyper-V host, type the following commands at an elevated Windows PowerShell prompt:
+### Deploy PC3 
 
-    ```
+1. On the Hyper-V host, type the following commands at an elevated Windows PowerShell prompt:
+
+    ```powershell
     New-VM –Name "PC3" –NewVHDPath "c:\vhd\pc3.vhdx" -NewVHDSizeBytes 60GB -SwitchName poc-internal -BootDevice NetworkAdapter -Generation 2
     Set-VMMemory -VMName "PC3" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes 2048MB -Buffer 20
     ```
-9. Temporarily disable the external network adapter on SRV1 again, so that we can successfully boot PC3 from WDS. To disable the adapter, type the following command at an elevated Windows PowerShell prompt on SRV1:
 
-    ```
+2. Temporarily disable the external network adapter on SRV1 again, so that we can successfully boot PC3 from WDS. To disable the adapter, type the following command at an elevated Windows PowerShell prompt on SRV1:
+
+    ```powershell
     Disable-NetAdapter "Ethernet 2" -Confirm:$false
     ```
 
-    >As mentioned previously, ensure that you disable the **external** network adapter, and wait for the command to complete before proceeding.
+    As mentioned previously, ensure that you disable the **external** network adapter, and wait for the command to complete before proceeding.
 
 
-10. Start and connect to PC3 by typing the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
+3. Start and connect to PC3 by typing the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
 
-     ```
+     ```powershell
      Start-VM PC3
      vmconnect localhost PC3
      ```
 
-11. When prompted, press ENTER for network boot.
+4. When prompted, press ENTER for network boot.
 
-12. On PC3, use the following settings for the Windows Deployment Wizard:
+5. On PC3, use the following settings for the Windows Deployment Wizard:
      - **Task Sequence**: Windows 10 Enterprise x64 Custom Image
      - **Move Data and Settings**: Do not move user data and settings
      - **User Data (Restore)**: Specify a location: **\\\\SRV1\MigData$\PC1**
 
-13. When OS installation has started on PC1, re-enable the external network adapter on SRV1 by typing the following command on SRV1:
+6. When OS installation has started on PC1, re-enable the external network adapter on SRV1 by typing the following command on SRV1:
 
-     ```
+     ```powershell
      Enable-NetAdapter "Ethernet 2"
      ```
-14. Setup will install the Windows 10 Enterprise operating system, update via Windows Update, and restore the user settings and data from PC1.
 
-15. When PC3 has completed installing the OS, sign in to PC3 using the contoso\administrator account. When the PC completes updating, click **Finish**.
+7. Setup will install the Windows 10 Enterprise operating system, update via Windows Update, and restore the user settings and data from PC1.
 
-16. Verify that settings have been migrated from PC1. This completes demonstration of the replace procedure.
+8. When PC3 has completed installing the OS, sign in to PC3 using the contoso\administrator account. When the PC completes updating, click **Finish**.
 
-17. Shut down PC3 in preparation for the [next](windows-10-poc-sc-config-mgr.md) procedure.
+9. Verify that settings have been migrated from PC1. This completes demonstration of the replace procedure.
+
+10. Shut down PC3 in preparation for the [next](windows-10-poc-sc-config-mgr.md) procedure.
 
 ## Troubleshooting logs, events, and utilities
 

@@ -10,10 +10,13 @@ metadata:
   ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice
   ms.topic: landing-page # Required
-  ms.collection: windows-10
-  author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
-  ms.author: greglin #Required; microsoft alias of author; optional team alias.
-  ms.date: 08/05/2021 #Required; mm/dd/yyyy format.
+  ms.collection:
+    - windows-10
+    - highpri
+  author: aczechowski
+  ms.author: aaroncz
+  manager: dougeby
+  ms.date: 03/28/2022 #Required; mm/dd/yyyy format.
   localization_priority: medium
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -26,7 +29,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Administrative Tools in Windows 10
+          - text: Windows Tools/Administrative Tools
             url: administrative-tools-in-windows-10.md
           - text: Create mandatory user profiles
             url: mandatory-user-profile.md

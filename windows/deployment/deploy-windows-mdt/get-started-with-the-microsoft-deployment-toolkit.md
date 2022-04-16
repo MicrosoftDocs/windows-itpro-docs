@@ -4,7 +4,7 @@ description: This topic will help you gain a better understanding of how to use 
 ms.assetid: a256442c-be47-4bb9-a105-c831f58ce3ee
 ms.reviewer: 
 manager: dougeby
-ms.author: greglin
+ms.author: aaroncz
 keywords: deploy, image, feature, install, tools
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ---
 

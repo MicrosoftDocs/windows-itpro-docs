@@ -2,13 +2,13 @@
 title: Configure Device Registration for Hybrid Azure AD joined Windows Hello for Business
 description: Azure Device Registration for Hybrid Certificate Trust Deployment (Windows Hello for Business)
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, cert-trust, device, registration
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -19,10 +19,11 @@ ms.reviewer:
 # Configure Device Registration for Hybrid Azure AD joined Windows Hello for Business
 
 **Applies to**
--  Windows 10, version 1703 or later
--  Windows 11
--  Hybrid deployment
--  Certificate trust
+
+- Windows 10, version 1703 or later
+- Windows 11
+- Hybrid deployment
+- Certificate trust
 
 Your environment is federated and you are ready to configure device registration for your hybrid environment. Hybrid Windows Hello for Business deployment needs device registration and device write-back to enable proper device authentication.  
 

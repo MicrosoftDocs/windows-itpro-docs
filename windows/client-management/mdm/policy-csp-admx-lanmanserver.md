@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 08/13/2020
 ms.reviewer: 
 manager: dansimp
@@ -96,7 +96,7 @@ Arrange the desired cipher suites in the edit box, one cipher suite per line, in
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Cipher suite order*
+-   GP Friendly name: *Cipher suite order*
 -   GP name: *Pol_CipherSuiteOrder*
 -   GP path: *Network/Lanman Server*
 -   GP ADMX file name: *LanmanServer.admx*
@@ -156,7 +156,7 @@ In circumstances where this policy setting is enabled, you can also select the f
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Hash Publication for BranchCache*
+-   GP Friendly name: *Hash Publication for BranchCache*
 -   GP name: *Pol_HashPublication*
 -   GP path: *Network/Lanman Server*
 -   GP ADMX file name: *LanmanServer.admx*
@@ -220,7 +220,7 @@ Hash version supported:
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Hash Version support for BranchCache*
+-   GP Friendly name: *Hash Version support for BranchCache*
 -   GP name: *Pol_HashSupportVersion*
 -   GP path: *Network/Lanman Server*
 -   GP ADMX file name: *LanmanServer.admx*
@@ -269,7 +269,7 @@ If you disable or do not configure this policy setting, the SMB server will sele
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Honor cipher suite order*
+-   GP Friendly name: *Honor cipher suite order*
 -   GP name: *Pol_HonorCipherSuiteOrder*
 -   GP path: *Network/Lanman Server*
 -   GP ADMX file name: *LanmanServer.admx*

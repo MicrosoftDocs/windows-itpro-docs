@@ -5,7 +5,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 02/12/2021
 ms.reviewer: 
@@ -25,6 +25,9 @@ manager: dansimp
     <a href="#search-allowcloudsearch">Search/AllowCloudSearch</a>
   </dd>
   <dd>
+    <a href="#search-allowcortanainaad">Search/AllowCortanaInAAD</a>
+  </dd>
+  <dd>
     <a href="#search-allowfindmyfiles">Search/AllowFindMyFiles</a>
   </dd>
   <dd>
@@ -32,6 +35,9 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#search-allowsearchtouselocation">Search/AllowSearchToUseLocation</a>
+  </dd>
+  <dd>
+    <a href="#search-allowsearchhighlights">Search/AllowSearchHighlights</a>
   </dd>
   <dd>
     <a href="#search-allowstoringimagesfromvisionsearch">Search/AllowStoringImagesFromVisionSearch</a>
@@ -69,38 +75,14 @@ manager: dansimp
 <a href="" id="search-allowcloudsearch"></a>**Search/AllowCloudSearch**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -120,7 +102,7 @@ Allow search and Cortana to search cloud sources like OneDrive and SharePoint. T
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Cloud Search*
+-   GP Friendly name: *Allow Cloud Search*
 -   GP name: *AllowCloudSearch*
 -   GP element: *AllowCloudSearch_Dropdown*
 -   GP path: *Windows Components/Search*
@@ -139,40 +121,17 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
+<a href="" id="search-allowcortanainaad"></a>**Search/AllowCortanaInAAD**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -185,42 +144,42 @@ The following list shows the supported values:
 
 <hr/>
 
+<!--/Scope-->
+<!--Description-->
+This policy allows the cortana opt-in page during windows setup out of the box experience.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *Allow Cloud Search*
+-   GP name: *AllowCortanaInAAD*
+-   GP element: *AllowCloudSearch_Dropdown*
+-   GP path: *Windows Components/Search*
+-   GP ADMX file name: *Search.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+This is a simple boolean value, default false, that can be set by MDM policy to allow the Cortana Page in OOBE when logged in with an AAD account.
+
+<!--/SupportedValues-->
+
+<!--/Policy-->
+
+<hr/>
+
 <!--Policy-->
 <a href="" id="search-allowfindmyfiles"></a>**Search/AllowFindMyFiles**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -240,7 +199,7 @@ Controls if the user can configure search to Find My Files mode, which searches 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Find My Files*
+-   GP Friendly name: *Allow Find My Files*
 -   GP name: *AllowFindMyFiles*
 -   GP path: *Computer Configuration/Administrative Templates/Windows Components/Search*
 -   GP ADMX file name: *Search.admx*
@@ -267,38 +226,14 @@ The following list shows the supported values:
 <a href="" id="search-allowindexingencryptedstoresoritems"></a>**Search/AllowIndexingEncryptedStoresOrItems**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -324,7 +259,7 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow indexing of encrypted files*
+-   GP Friendly name: *Allow indexing of encrypted files*
 -   GP name: *AllowIndexingEncryptedStoresOrItems*
 -   GP path: *Windows Components/Search*
 -   GP ADMX file name: *Search.admx*
@@ -345,38 +280,14 @@ The following list shows the supported values:
 <a href="" id="search-allowsearchtouselocation"></a>**Search/AllowSearchToUseLocation**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -398,7 +309,7 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow search and Cortana to use location*
+-   GP Friendly name: *Allow search and Cortana to use location*
 -   GP name: *AllowSearchToUseLocation*
 -   GP path: *Windows Components/Search*
 -   GP ADMX file name: *Search.admx*
@@ -409,6 +320,63 @@ The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="search-allowsearchhighlights"></a>**Search/AllowSearchHighlights**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy controls whether search highlights are shown in the search box or in search home.
+
+- If you enable this policy setting, then this setting turns on search highlights in the search box or in the search home.
+- If you disable this policy setting, then this setting turns off search highlights in the search box or in the search home. 
+
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *Allow search and highlights*
+-   GP name: *AllowSearchHighlights*
+-   GP path: *Windows Components/Search*
+-   GP ADMX file name: *Search.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values in Windows 10:
+- Not Configured/ Enabled (default) – Enabling or not configuring this setting turns on search    highlights in the taskbar search box and in search home.
+
+- Disabled – Disabling this setting turns off search highlights in the taskbar search box and in search home.
+
+The following list shows the supported values in Windows 11:
+- Not Configured/ Enabled (default) – Enabling or not configuring this setting turns on search highlights in the start menu search box and in search home.
+
+- Disabled – Disabling this setting turns off search highlights in the start menu search box and in search home.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -430,38 +398,14 @@ This policy has been deprecated.
 <a href="" id="search-allowusingdiacritics"></a>**Search/AllowUsingDiacritics**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -484,7 +428,7 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow use of diacritics*
+-   GP Friendly name: *Allow use of diacritics*
 -   GP name: *AllowUsingDiacritics*
 -   GP path: *Windows Components/Search*
 -   GP ADMX file name: *Search.admx*
@@ -505,38 +449,14 @@ The following list shows the supported values:
 <a href="" id="search-allowwindowsindexer"></a>**Search/AllowWindowsIndexer**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -562,38 +482,14 @@ Allow Windows indexer. Value type is integer.
 <a href="" id="search-alwaysuseautolangdetection"></a>**Search/AlwaysUseAutoLangDetection**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -616,7 +512,7 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Always use automatic language detection when indexing content and properties*
+-   GP Friendly name: *Always use automatic language detection when indexing content and properties*
 -   GP name: *AlwaysUseAutoLangDetection*
 -   GP path: *Windows Components/Search*
 -   GP ADMX file name: *Search.admx*
@@ -637,38 +533,14 @@ The following list shows the supported values:
 <a href="" id="search-disablebackoff"></a>**Search/DisableBackoff**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -688,7 +560,7 @@ If enabled, the search indexer backoff feature will be disabled. Indexing will c
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Disable indexer backoff*
+-   GP Friendly name: *Disable indexer backoff*
 -   GP name: *DisableBackoff*
 -   GP path: *Windows Components/Search*
 -   GP ADMX file name: *Search.admx*
@@ -709,38 +581,14 @@ The following list shows the supported values:
 <a href="" id="search-disableremovabledriveindexing"></a>**Search/DisableRemovableDriveIndexing**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -764,7 +612,7 @@ If you disable or do not configure this policy setting, locations on removable d
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Do not allow locations on removable drives to be added to libraries*
+-   GP Friendly name: *Do not allow locations on removable drives to be added to libraries*
 -   GP name: *DisableRemovableDriveIndexing*
 -   GP path: *Windows Components/Search*
 -   GP ADMX file name: *Search.admx*
@@ -785,38 +633,14 @@ The following list shows the supported values:
 <a href="" id="search-donotusewebresults"></a>**Search/DoNotUseWebResults**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -831,17 +655,18 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Don't search the web or display web results in Search.
+Don't search the web or display web results in Search, or show search highlights in the search box or in search home.
 
-This policy setting allows you to control whether or not Search can perform queries on the web, and if the web results are displayed in Search.
-If you enable this policy setting, queries won't be performed on the web and web results won't be displayed when a user performs a query in Search.
+This policy setting allows you to control whether or not Search can perform queries on the web, if web results are displayed in Search, and if search highlights are shown in the search box and in search home.
 
-If you disable this policy setting, queries will be performed on the web and web results will be displayed when a user performs a query in Search.
+- If you enable this policy setting, queries won't be performed on the web, web results won't be displayed when a user performs a query in Search, and search highlights will not be shown in the search box and in search home.
+
+- If you disable this policy setting, queries will be performed on the web, web results will be displayed when a user performs a query in Search, and search highlights will be shown in the search box and in search home.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Don't search the web or display web results in Search*
+-   GP Friendly name: *Don't search the web or display web results in Search*
 -   GP name: *DoNotUseWebResults*
 -   GP path: *Windows Components/Search*
 -   GP ADMX file name: *Search.admx*
@@ -850,8 +675,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 - Not allowed. Queries won't be performed on the web and web results won't be displayed when a user performs a query in Search.
-- 1 (default) - Allowed. Queries will be performed on the web and web results will be displayed when a user performs a query in Search.
+- 0 - Not allowed. Queries won't be performed on the web, web results won't be displayed when a user performs a query in Search, and search highlights won't be shown in the search box and in search home.
+- 1 (default) - Allowed. Queries will be performed on the web, web results will be displayed when a user performs a query in Search, and search highlights will be shown in the search box and in search home.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -862,38 +687,14 @@ The following list shows the supported values:
 <a href="" id="search-preventindexinglowdiskspacemb"></a>**Search/PreventIndexingLowDiskSpaceMB**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -917,7 +718,7 @@ When this policy is disabled or not configured, Windows Desktop Search automatic
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Stop indexing in the event of limited hard drive space*
+-   GP Friendly name: *Stop indexing in the event of limited hard drive space*
 -   GP name: *StopIndexingOnLimitedHardDriveSpace*
 -   GP path: *Windows Components/Search*
 -   GP ADMX file name: *Search.admx*
@@ -938,38 +739,14 @@ The following list shows the supported values:
 <a href="" id="search-preventremotequeries"></a>**Search/PreventRemoteQueries**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -989,7 +766,7 @@ If enabled, clients will be unable to query this computer's index remotely. Thus
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Prevent clients from querying the index remotely*
+-   GP Friendly name: *Prevent clients from querying the index remotely*
 -   GP name: *PreventRemoteQueries*
 -   GP path: *Windows Components/Search*
 -   GP ADMX file name: *Search.admx*

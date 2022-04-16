@@ -8,23 +8,20 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 06/26/2017
 ---
 
 # CMPolicyEnterprise CSP
-
 
 The CMPolicyEnterprise configuration service provider is used by the enterprise to define rules that the Connection Manager uses to identify the correct connection for a connection request.
 
 > [!NOTE]
 > This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
 
- 
-
 Each policy entry identifies one or more applications in combination with a host pattern. The policy entry is assigned a list of connection details that Connection Manager uses to satisfy connection requests matching the application and host patterns. CMPolicyEnterprise configuration service provider can have multiple policies
 
-**Policy Ordering**: There is no explicit ordering of policies. The general rule is that the most concrete or specific policy mappings take a higher precedence.
+**Policy Ordering**: There's no explicit ordering of policies. The general rule is that the most concrete or specific policy mappings take a higher precedence.
 
 **Default Policies**: Policies are applied in order of their scope with the most specific policies considered before the more general policies. The phone’s default behavior applies to all applications and all domains and is only used when no other, more specific policy is available. The default policy is to use any available Wi-Fi network first and then any available APN.
 
@@ -60,9 +57,9 @@ Specifies the mapping policy type.
 
 The following list describes the available mapping policy types:
 
--   Application-based mapping policies are applied to applications. To specify this mapping type, use the value `app`.
+- Application-based mapping policies are applied to applications. To specify this mapping type, use the value `app`.
 
--   Host-based mapping policies are applied to all types of clients requesting connections to specified host(s). To specify this mapping type, use the value `*`.
+- Host-based mapping policies are applied to all types of clients requesting connections to specified host(s). To specify this mapping type, use the value `*`.
 
 <a href="" id="host"></a>**Host**  
 Specifies the name of a host pattern. The host name is matched to the connection request to select the right policy to use.
@@ -72,10 +69,10 @@ The host pattern can have two wild cards, "\*" and "+". The host pattern is not 
 <a href="" id="orderedconnections"></a>**OrderedConnections**  
 Specifies whether the list of connections is in preference order.
 
-A value of "0" specifies that the connections are not listed in order of preference. A value of "1" indicates that the listed connections are in order of preference.
+A value of "0" specifies that the connections aren't listed in order of preference. A value of "1" indicates that the listed connections are in order of preference.
 
 <a href="" id="connxxx"></a>**Conn**<strong>*XXX*</strong>  
-Enumerates the connections associated with the policy. Element names begin with "Conn" followed by three digits which increment starting from "000". For example, a policy which applied to five connections would have element entries named "Conn000", "Conn001", "Conn002", "Conn003", and "Conn004".
+Enumerates the connections associated with the policy. Element names begin with "Conn" followed by three digits that increment starting from "000". For example, a policy which is applied to five connections would have element entries named "Conn000", "Conn001", "Conn002", "Conn003", and "Conn004".
 
 <a href="" id="connectionid"></a>**ConnectionID**  
 Specifies a unique identifier for a connection within a group of connections. The exact value is based on the Type parameter.
@@ -126,13 +123,13 @@ For `CMST_CONNECTION_DEVICE_TYPE`, specify the GUID for the desired device type.
 <a href="" id="type"></a>**Type**  
 Specifies the type of connection being referenced. The following list describes the available connection types:
 
--   `CMST_CONNECTION_NAME` – A connection specified by name.
+- `CMST_CONNECTION_NAME` – A connection specified by name.
 
--   `CMST_CONNECTION_TYPE` – Any connection of a specified type.
+- `CMST_CONNECTION_TYPE` – Any connection of a specified type.
 
--   `CMST_CONNECTION_NETWORK_TYPE` – Any connection of a specified device type.
+- `CMST_CONNECTION_NETWORK_TYPE` – Any connection of a specified device type.
 
--   `CMST_CONNECTION_DEVICE_TYPE` – Any connection of the specified network type.
+- `CMST_CONNECTION_DEVICE_TYPE` – Any connection of the specified network type.
 
 ## OMA client provisioning examples
 

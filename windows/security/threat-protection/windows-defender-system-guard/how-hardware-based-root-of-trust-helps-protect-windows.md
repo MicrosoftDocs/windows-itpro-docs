@@ -16,10 +16,9 @@ ms.date: 03/01/2019
 ms.technology: windows-sec
 ---
 
-
 # Windows Defender System Guard: How a hardware-based root of trust helps protect Windows 10
 
-In order to protect critical resources such as the Windows authentication stack, single sign-on tokens, the Windows Hello biometric stack, and the Virtual Trusted Platform Module, a system's firmware and hardware must be trustworthy.
+To protect critical resources such as the Windows authentication stack, single sign-on tokens, the Windows Hello biometric stack, and the Virtual Trusted Platform Module, a system's firmware and hardware must be trustworthy.
 
 Windows Defender System Guard reorganizes the existing Windows 10 system integrity features under one roof and sets up the next set of investments in Windows security. It's designed to make these security guarantees:
 
@@ -30,20 +29,21 @@ Windows Defender System Guard reorganizes the existing Windows 10 system integri
 
 ### Static Root of Trust for Measurement (SRTM)
 
-With Windows 7, one of the means attackers would use to persist and evade detection was to install what is often referred to as a bootkit or rootkit on the system. 
+With Windows 7, one of the means attackers would use to persist and evade detection was to install what is often referred to as a bootkit or rootkit on the system.
 This malicious software would start before Windows started, or during the boot process itself, enabling it to start with the highest level of privilege.
 
 With Windows 10 running on modern hardware (that is, Windows 8-certified or greater) a hardware-based root of trust helps ensure that no unauthorized firmware or software (such as a bootkit) can start before the Windows bootloader. 
 This hardware-based root of trust comes from the device’s Secure Boot feature, which is part of the Unified Extensible Firmware Interface (UEFI). 
 This technique of measuring the static early boot UEFI components is called the Static Root of Trust for Measurement (SRTM). 
 
-As there are thousands of PC vendors that produce numerous models with different UEFI BIOS versions, there becomes an incredibly large number of SRTM measurements upon bootup. 
-Two techniques exist to establish trust here—either maintain a list of known 'bad' SRTM measurements (also known as a block list), or a list of known 'good' SRTM measurements (also known as an allow list). 
+As there are thousands of PC vendors that produce many models with different UEFI BIOS versions, there becomes an incredibly large number of SRTM measurements upon bootup. 
+Two techniques exist to establish trust here—either maintain a list of known 'bad' SRTM measurements (also known as a blocklist), or a list of known 'good' SRTM measurements (also known as an allowlist). 
+
 Each option has a drawback:
 
 - A list of known 'bad' SRTM measurements allows a hacker to change just 1 bit in a component to create an entirely new SRTM hash that needs to be listed. This means that the SRTM flow is inherently brittle - a minor change can invalidate the entire chain of trust.
 - A list of known 'good' SRTM measurements requires each new BIOS/PC combination measurement to be carefully added, which is slow. 
-In addition, a bug fix for UEFI code can take a long time to design, build, retest, validate, and redeploy.
+Also, a bug fix for UEFI code can take a long time to design, build, retest, validate, and redeploy.
 
 ### Secure Launch—the Dynamic Root of Trust for Measurement (DRTM)
 
@@ -67,20 +67,18 @@ To defend against this, two techniques are used:
  - Paging protection to prevent inappropriate access to code and data
  - SMM hardware supervision and attestation
 
-Paging protection can be implemented to lock certain code tables to be read-only to prevent tampering. 
-This prevents access to any memory that has not been specifically assigned. 
+Paging protection can be implemented to lock certain code tables to be read-only to prevent tampering. This prevents access to any memory that hasn't been assigned. 
 
-A hardware-enforced processor feature known as a supervisor SMI handler can monitor the SMM and make sure it does not access any part of the address space that it is not supposed to. 
+A hardware-enforced processor feature known as a supervisor SMI handler can monitor the SMM and make sure it doesn't access any part of the address space that it isn't supposed to. 
 
 SMM protection is built on top of the Secure Launch technology and requires it to function. 
 In the future, Windows 10 will also measure this SMI Handler’s behavior and attest that no OS-owned memory has been tampered with. 
 
 ## Validating platform integrity after Windows is running (run time)
 
-While Windows Defender System Guard provides advanced protection that will help protect and maintain the integrity of the platform during boot and at run time, the reality is that we must apply an "assume breach" mentality to even our most sophisticated security technologies. We should be able to trust that the technologies are successfully doing their jobs, but we also need the ability to verify that they were successful in achieving their goals. When it comes to platform integrity, we can’t just trust the platform, which potentially could be compromised, to self-attest to its security state. So Windows Defender System Guard includes a series of technologies that enable remote analysis of the device’s integrity.
+While Windows Defender System Guard provides advanced protection that will help protect and maintain the integrity of the platform during boot and at run time, the reality is that we must apply an "assume breach" mentality to even our most sophisticated security technologies. We can trust that the technologies are successfully doing their jobs, but we also need the ability to verify that they were successful in achieving their goals. For platform integrity, we can’t just trust the platform, which potentially could be compromised, to self-attest to its security state. So Windows Defender System Guard includes a series of technologies that enable remote analysis of the device’s integrity.
 
-As Windows 10 boots, a series of integrity measurements are taken by Windows Defender System Guard using the device’s Trusted Platform Module 2.0 (TPM 2.0). System Guard Secure Launch will not support earlier TPM versions, such as TPM 1.2. This process and data are hardware-isolated away from Windows to help ensure that the measurement data is not subject to the type of tampering that could happen if the platform was compromised. From here, the measurements can be used to determine the integrity of the device’s firmware, hardware configuration state, and Windows boot-related components, just to name a few. 
-
+As Windows 10 boots, a series of integrity measurements are taken by Windows Defender System Guard using the device’s Trusted Platform Module 2.0 (TPM 2.0). System Guard Secure Launch won't support earlier TPM versions, such as TPM 1.2. This process and data are hardware-isolated away from Windows to help ensure that the measurement data isn't subject to the type of tampering that could happen if the platform was compromised. From here, the measurements can be used to determine the integrity of the device’s firmware, hardware configuration state, and Windows boot-related components, just to name a few.
 
 ![Boot time integrity.](images/windows-defender-system-guard-boot-time-integrity.png)
 

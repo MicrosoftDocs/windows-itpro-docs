@@ -1,13 +1,13 @@
 ---
 title: How Windows Hello for Business works - Technology and Terms
 description: Explore technology and terms associated with Windows Hello for Business. Learn how Windows Hello for Business works.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -18,6 +18,7 @@ ms.reviewer:
 # Technology and Terms
 
 **Applies to:**
+
 - Windows 10
 - Windows 11
 

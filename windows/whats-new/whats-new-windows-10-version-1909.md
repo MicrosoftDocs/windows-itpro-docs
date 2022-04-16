@@ -6,9 +6,9 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
-ms.author: greglin
-manager: laurawi
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.localizationpriority: high
 ms.topic: article
 ---
@@ -28,7 +28,7 @@ To deliver these updates in an optimal fashion, we are providing this feature up
 
 If you are updating from an older version of Windows 10 (version 1809 or earlier), the process of updating to the current version will be the same as it has been for previous Windows 10 feature updates. For more information, see [Evolving Windows 10 servicing and quality: the next steps](https://blogs.windows.com/windowsexperience/2019/07/01/evolving-windows-10-servicing-and-quality-the-next-steps/#rl2G5ETPhkhMvDeX.97).
 
-**Note**: Devices running the Enterprise, IoT Enterprise, or Education editions of Windows 10, version 1909 receive 30 months of support. For more information about the Windows servicing lifecycle, please see the [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
+**Note**: Devices running the Enterprise, IoT Enterprise, or Education editions of Windows 10, version 1909 receive 30 months of support. For more information about the Windows servicing lifecycle, please see the [Windows lifecycle fact sheet](/lifecycle/faq/windows).
 
 ### Windows Server Update Services (WSUS)
 

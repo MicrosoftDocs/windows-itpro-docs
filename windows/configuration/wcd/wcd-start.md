@@ -4,13 +4,13 @@ description: This section describes the Start settings that you can configure in
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.topic: article
 ms.date: 09/06/2017
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # Start (Windows Configuration Designer reference)
@@ -28,5 +28,5 @@ Use Start settings to apply a customized Start screen to devices.
 
 ## StartLayout
 
-Use StartLayout to select the `LayoutModification.xml` file that applies a customized Start screen to a mobile device.
+Use StartLayout to select the `LayoutModification.xml` file that applies a customized Start screen.
 

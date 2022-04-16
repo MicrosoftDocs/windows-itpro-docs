@@ -8,12 +8,14 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 ms.date: 09/28/2021
-ms.reviewer: 
-manager: dougeby
 ms.audience: itpro
-author: greg-lindsay
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 audience: itpro
-ms.collection: M365-modern-desktop
+ms.collection:
+  - M365-modern-desktop
+  - highpri
 ms.topic: article
 ---
 
@@ -66,79 +68,14 @@ Windows 10 Enterprise edition has a number of features that are unavailable in 
 
 *Table 1. Windows 10 Enterprise features not found in Windows 10 Pro*
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="80%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Feature</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Credential Guard<strong><em></strong></p></td>
-<td align="left"><p>This feature uses virtualization-based security to help protect security secrets (for example, NTLM password hashes, Kerberos Ticket Granting Tickets) so that only privileged system software can access them. This helps prevent Pass-the-Hash or Pass-the-Ticket attacks.</p>
-<p>Credential Guard has the following features:</p>
-<ul>
-<li><p><strong>Hardware-level security</strong>.&nbsp;&nbsp;Credential Guard uses hardware platform security features (such as Secure Boot and virtualization) to help protect derived domain credentials and other secrets.</p></li>
-<li><p><strong>Virtualization-based security</strong>.&nbsp;&nbsp;Windows services that access derived domain credentials and other secrets run in a virtualized, protected environment that is isolated.</p></li>
-<li><p><strong>Improved protection against persistent threats</strong>.&nbsp;&nbsp;Credential Guard works with other technologies (e.g., Device Guard) to help provide further protection against attacks, no matter how persistent.</p></li>
-<li><p><strong>Improved manageability</strong>.&nbsp;&nbsp;Credential Guard can be managed through Group Policy, Windows Management Instrumentation (WMI), or Windows PowerShell.</p></li>
-</ul>
-<p>For more information, see <a href="/windows/security/identity-protection/credential-guard/credential-guard" data-raw-source="[Protect derived domain credentials with Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard)">Protect derived domain credentials with Credential Guard</a>.</p>
-<p></em> <i>Credential Guard requires UEFI 2.3.1 or greater with Trusted Boot; Virtualization Extensions such as Intel VT-x, AMD-V, and SLAT must be enabled; x64 version of Windows; IOMMU, such as Intel VT-d, AMD-Vi; BIOS Lockdown; TPM 2.0 recommended for device health attestation (will use software if TPM 2.0 not present)</i></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Device Guard</p></td>
-<td align="left"><p>This feature is a combination of hardware and software security features that allows only trusted applications to run on a device. Even if an attacker manages to get control of the Windows kernel, he or she will be much less likely to run executable code. Device Guard can use virtualization-based security (VBS) in Windows 10 Enterprise edition to isolate the Code Integrity service from the Windows kernel itself. With VBS, even if malware gains access to the kernel, the effects can be severely limited, because the hypervisor can prevent the malware from executing code.</p>
-<p>Device Guard does the following:</p>
-<ul>
-<li><p>Helps protect against malware</p></li>
-<li><p>Helps protect the Windows system core from vulnerability and zero-day exploits</p></li>
-<li><p>Allows only trusted apps to run</p></li>
-</ul>
-<p>For more information, see <a href="/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control" data-raw-source="[Introduction to Device Guard](/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)">Introduction to Device Guard</a>.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>AppLocker management</p></td>
-<td align="left"><p>This feature helps IT pros determine which applications and files users can run on a device. The applications and files that can be managed include executable files, scripts, Windows Installer files, dynamic-link libraries (DLLs), packaged apps, and packaged app installers.</p>
-<p>For more information, see <a href="/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview" data-raw-source="[AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview)">AppLocker</a>.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Application Virtualization (App-V)</p></td>
-<td align="left"><p>This feature makes applications available to end users without installing the applications directly on users’ devices. App-V transforms applications into centrally managed services that are never installed and don&#39;t conflict with other applications. This feature also helps ensure that applications are kept current with the latest security updates.</p>
-<p>For more information, see <a href="/windows/application-management/app-v/appv-getting-started" data-raw-source="[Getting Started with App-V for Windows 10](/windows/application-management/app-v/appv-getting-started)">Getting Started with App-V for Windows 10</a>.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>User Experience Virtualization (UE-V)</p></td>
-<td align="left"><p>With this feature, you can capture user-customized Windows and application settings and store them on a centrally managed network file share. When users log on, their personalized settings are applied to their work session, regardless of which device or virtual desktop infrastructure (VDI) sessions they log on to.</p>
-<p>UE-V provides the ability to do the following:</p>
-<ul>
-<li><p>Specify which application and Windows settings synchronize across user devices</p></li>
-<li><p>Deliver the settings anytime and anywhere users work throughout the enterprise</p></li>
-<li><p>Create custom templates for your third-party or line-of-business applications</p></li>
-<li><p>Recover settings after hardware replacement or upgrade, or after re-imaging a virtual machine to its initial state</p></li>
-</ul>
-<p>For more information, see <a href="/windows/configuration/ue-v/uev-for-windows" data-raw-source="[User Experience Virtualization (UE-V) for Windows 10 overview](/windows/configuration/ue-v/uev-for-windows)">User Experience Virtualization (UE-V) for Windows 10 overview</a>.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Managed User Experience</p></td>
-<td align="left"><p>This feature helps customize and lock down a Windows device’s user interface to restrict it to a specific task. For example, you can configure a device for a controlled scenario such as a kiosk or classroom device. The user experience would be automatically reset once a user signs off. You can also restrict access to services including Cortana or the Windows Store, and manage Start layout options, such as:</p>
-<ul>
-<li><p>Removing and preventing access to the Shut Down, Restart, Sleep, and Hibernate commands</p></li>
-<li><p>Removing Log Off (the User tile) from the Start menu</p></li>
-<li><p>Removing frequent programs from the Start menu</p></li>
-<li><p>Removing the All Programs list from the Start menu</p></li>
-<li><p>Preventing users from customizing their Start screen</p></li>
-<li><p>Forcing Start menu to be either full-screen size or menu size</p></li>
-<li><p>Preventing changes to Taskbar and Start menu settings</p></li>
-</ul>
-</tr>
-</tbody>
-</table>
+|Feature|Description|
+|--- |--- |
+|Credential Guard|This feature uses virtualization-based security to help protect security secrets (for example, NTLM password hashes, Kerberos Ticket Granting Tickets) so that only privileged system software can access them. This helps prevent Pass-the-Hash or Pass-the-Ticket attacks.<p>Credential Guard has the following features:<li>**Hardware-level security**.  Credential Guard uses hardware platform security features (such as Secure Boot and virtualization) to help protect derived domain credentials and other secrets.<li>**Virtualization-based security**.  Windows services that access derived domain credentials and other secrets run in a virtualized, protected environment that is isolated.<li>**Improved protection against persistent threats**.  Credential Guard works with other technologies (e.g., Device Guard) to help provide further protection against attacks, no matter how persistent.<li>**Improved manageability**.  Credential Guard can be managed through Group Policy, Windows Management Instrumentation (WMI), or Windows PowerShell.<p>For more information, see [Protect derived domain credentials with Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard).<p>*Credential Guard requires UEFI 2.3.1 or greater with Trusted Boot; Virtualization Extensions such as Intel VT-x, AMD-V, and SLAT must be enabled; x64 version of Windows; IOMMU, such as Intel VT-d, AMD-Vi; BIOS Lockdown; TPM 2.0 recommended for device health attestation (will use software if TPM 2.0 not present)*|
+|Device Guard|This feature is a combination of hardware and software security features that allows only trusted applications to run on a device. Even if an attacker manages to get control of the Windows kernel, he or she will be much less likely to run executable code. Device Guard can use virtualization-based security (VBS) in Windows 10 Enterprise edition to isolate the Code Integrity service from the Windows kernel itself. With VBS, even if malware gains access to the kernel, the effects can be severely limited, because the hypervisor can prevent the malware from executing code.<p>Device Guard does the following:<li>Helps protect against malware<li>Helps protect the Windows system core from vulnerability and zero-day exploits<li>Allows only trusted apps to run<p>For more information, see [Introduction to Device Guard](/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control).|
+|AppLocker management|This feature helps IT pros determine which applications and files users can run on a device. The applications and files that can be managed include executable files, scripts, Windows Installer files, dynamic-link libraries (DLLs), packaged apps, and packaged app installers.<p>For more information, see [AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview).|
+|Application Virtualization (App-V)|This feature makes applications available to end users without installing the applications directly on users’ devices. App-V transforms applications into centrally managed services that are never installed and don't conflict with other applications. This feature also helps ensure that applications are kept current with the latest security updates.<p>For more information, see [Getting Started with App-V for Windows 10](/windows/application-management/app-v/appv-getting-started).|
+|User Experience Virtualization (UE-V)|With this feature, you can capture user-customized Windows and application settings and store them on a centrally managed network file share.<p>When users log on, their personalized settings are applied to their work session, regardless of which device or virtual desktop infrastructure (VDI) sessions they log on to.<p>UE-V provides the ability to do the following:<li>Specify which application and Windows settings synchronize across user devices<li>Deliver the settings anytime and anywhere users work throughout the enterprise<li>Create custom templates for your third-party or line-of-business applications<li>Recover settings after hardware replacement or upgrade, or after re-imaging a virtual machine to its initial state<p>For more information, see [User Experience Virtualization (UE-V) for Windows 10 overview](/windows/configuration/ue-v/uev-for-windows).|
+|Managed User Experience|This feature helps customize and lock down a Windows device’s user interface to restrict it to a specific task. For example, you can configure a device for a controlled scenario such as a kiosk or classroom device. The user experience would be automatically reset once a user signs off. You can also restrict access to services including Cortana or the Windows Store, and manage Start layout options, such as:<li>Removing and preventing access to the Shut Down, Restart, Sleep, and Hibernate commands<li>Removing Log Off (the User tile) from the Start menu<li>Removing frequent programs from the Start menu<li>Removing the All Programs list from the Start menu<li>Preventing users from customizing their Start screen<li>Forcing Start menu to be either full-screen size or menu size<li>Preventing changes to Taskbar and Start menu settings|
 
 ## Deployment of Windows 10/11 Enterprise E3 licenses
 
@@ -150,7 +87,10 @@ Now that you have Windows 10/11 Enterprise edition running on devices, how do yo
 
 The following sections provide you with the high-level tasks that need to be performed in your environment to help users take advantage of the Windows 10/11 Enterprise edition features.
 
-### Credential Guard\*
+### Credential Guard
+
+> [!NOTE]
+> Requires UEFI 2.3.1 or greater with Trusted Boot; Virtualization Extensions such as Intel VT-x, AMD-V, and SLAT must be enabled; x64 version of Windows; IOMMU, such as Intel VT-d, AMD-Vi; BIOS Lockdown; TPM 2.0 recommended for device health attestation (will use software if TPM 2.0 not present).
 
 You can implement Credential Guard on Windows 10 Enterprise devices by turning on Credential Guard on these devices. Credential Guard uses Windows 10/11 virtualization-based security features (Hyper-V features) that must be enabled on each device before you can turn on Credential Guard. You can turn on Credential Guard by using one of the following methods:
 
@@ -170,7 +110,7 @@ For more information about implementing Credential Guard, see the following reso
 -   [PC OEM requirements for Device Guard and Credential Guard](/windows-hardware/design/device-experiences/oem-security-considerations)
 -   [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337)
 
-\* *Requires UEFI 2.3.1 or greater with Trusted Boot; Virtualization Extensions such as Intel VT-x, AMD-V, and SLAT must be enabled; x64 version of Windows; IOMMU, such as Intel VT-d, AMD-Vi; BIOS Lockdown; TPM 2.0 recommended for device health attestation (will use software if TPM 2.0 not present)*
+
 
 ### Device Guard
 

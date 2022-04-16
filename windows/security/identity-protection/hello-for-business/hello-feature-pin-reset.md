@@ -2,19 +2,20 @@
 title: Pin Reset
 description: Learn how Microsoft PIN reset services enables you to help users recover who have forgotten their PIN.
 keywords: identity, PIN, Hello, passport, WHFB, hybrid, cert-trust, device, reset
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
-ms.collection: M365-identity-device-management
+ms.collection:
+  - M365-identity-device-management
+  - highpri
 ms.topic: article
 localizationpriority: medium
 ms.date: 5/3/2021
-ms.reviewer: 
 ---
 
 # PIN reset

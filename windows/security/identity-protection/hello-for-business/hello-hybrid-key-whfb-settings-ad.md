@@ -2,13 +2,13 @@
 title: Configuring Hybrid Azure AD joined key trust Windows Hello for Business - Active Directory (AD)
 description: Configuring Hybrid key trust Windows Hello for Business - Active Directory (AD)
 keywords: identity, PIN, biometric, Hello, passport, WHFB, ad, key trust, key-trust
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -19,14 +19,13 @@ ms.reviewer:
 # Configuring Hybrid Azure AD joined key trust Windows Hello for Business: Active Directory
 
 **Applies to**
--   Windows 10, version 1703 or later
--   Windows 11
--   Hybrid deployment
--   Key trust
 
+- Windows 10, version 1703 or later
+- Windows 11
+- Hybrid deployment
+- Key trust
 
 Configure the appropriate security groups to efficiently deploy Windows Hello for Business to users. 
-
 
 ### Creating Security Groups
 
@@ -59,6 +58,7 @@ Sign-in a domain controller or management workstation with *Domain Admin* equiva
 <hr>
 
 ## Follow the Windows Hello for Business hybrid key trust deployment guide
+
 1. [Overview](hello-hybrid-cert-trust.md)
 2. [Prerequisites](hello-hybrid-key-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-key-new-install.md)

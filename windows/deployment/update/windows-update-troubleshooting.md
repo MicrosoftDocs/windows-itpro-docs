@@ -4,13 +4,13 @@ description: Learn about troubleshooting Windows Update, issues related to HTTP/
 ms.prod: w10
 ms.mktglfcycl: 
 audience: itpro
-itproauthor: jaimeo
 ms.audience: itpro
-author: jaimeo
-ms.reviewer: 
-manager: laurawi
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.collection: highpri
 ---
 
 # Windows Update troubleshooting
@@ -19,6 +19,8 @@ ms.custom: seo-marvel-apr2020
 
 -   Windows 10
 -   Windows 11
+
+<p class="alert is-flex is-primary"><span class="has-padding-left-medium has-padding-top-extra-small"><a class="button is-primary" href="https://vsa.services.microsoft.com/v1.0/?partnerId=7d74cf73-5217-4008-833f-87a1a278f2cb&flowId=DMC&initialQuery=wu" target='_blank'><b>Try our Virtual Agent</b></a></span><span class="has-padding-small"> - It can help you quickly identify and fix common Windows Update issues</span>
 
 If you run into problems when using Windows Update, start with the following steps: 
  
@@ -154,7 +156,7 @@ Go to Services.msc and ensure that Windows Firewall Service is enabled. Stopping
 ## Issues arising from configuration of conflicting policies 
 Windows Update provides a wide range configuration policy to control the behavior of the Windows Update service in a managed environment. While these policies let you configure the settings at a granular level, misconfiguration or setting conflicting policies may lead to unexpected behaviors. 
  
-For more information, see [How to configure automatic updates by using Group Policy or registry settings](https://support.microsoft.com/help/328010/how-to-configure-automatic-updates-by-using-group-policy-or-registry-s) for more information.
+For more information, see [How to configure automatic updates by using Group Policy or registry settings](/windows/deployment/update/waas-wu-settings) for more information.
 
 ## Device cannot access update files
 

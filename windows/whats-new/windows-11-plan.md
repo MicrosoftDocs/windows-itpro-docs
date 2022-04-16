@@ -5,19 +5,19 @@ keywords: ["get started", "windows 11", "plan"]
 ms.prod: w11
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
-ms.author: greglin
-ms.reviewer: 
-manager: laurawi
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.localizationpriority: high
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Plan for Windows 11
 
 **Applies to**
 
--   Windows 11
+-   Windows 11
 
 ## Deployment planning
 
@@ -95,7 +95,7 @@ Along with user experience and security improvements, Windows 11 introduces enha
 
 When Windows 11 reaches general availability, a consolidated Windows 11 update history will be available on support.microsoft.com, similar to what is [available today for Windows 10](https://support.microsoft.com/topic/windows-10-update-history-1b6aac92-bf01-42b5-b158-f80c6d93eb11). Similarly, the [Windows release health](/windows/release-health/) hub will offer quick access to Windows 11 servicing announcements, known issues, and safeguard holds. 
 
-It is important that organizations have adequate time to plan for Windows 11. Microsoft also recognizes that many organizations will have a mix of Windows 11 and Windows 10 devices across their ecosystem. Devices on in-service versions of Windows 10 will continue to receive monthly Windows 10 security updates through 2025, as well as incremental improvements to Windows 10 to support ongoing Microsoft 365 deployments. For more information, see the [Windows 10 release information](/windows/release-health/release-information) page, which offers information about the Windows 10 Semi-Annual Channel and Long-term Servicing Channel (LTSC) releases. 
+It is important that organizations have adequate time to plan for Windows 11. Microsoft also recognizes that many organizations will have a mix of Windows 11 and Windows 10 devices across their ecosystem. Devices on in-service versions of Windows 10 will continue to receive monthly Windows 10 security updates through 2025, as well as incremental improvements to Windows 10 to support ongoing Microsoft 365 deployments. For more information, see the [Windows 10 release information](/windows/release-health/release-information) page, which offers information about the Windows 10 General Availability Channel and Long-term Servicing Channel (LTSC) releases. 
 
 ## Application compatibility
 

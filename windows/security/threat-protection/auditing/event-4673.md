@@ -90,7 +90,7 @@ Failure event generates when service call attempt fails.
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -173,7 +173,7 @@ For 4673(S, F): A privileged service was called.
 
 > **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
--   Monitor for this event where “**Subject\\Security ID**” is *not* one of these well-known security principals: LOCAL SYSTEM, NETWORK SERVICE, LOCAL SERVICE, and where “**Subject\\Security ID**” is not an administrative account that is expected to have the listed **Privileges**. Especially monitor Failure events.
+-   Monitor for this event where “**Subject\\Security ID**” is *not* one of these well-known security principals: LOCAL SYSTEM, NETWORK SERVICE, LOCAL SERVICE, and where “**Subject\\Security ID**” is not an administrative account that is expected to have the listed **Privileges**. See subcategories [Audit Sensitive Privilege Use](/windows/security/threat-protection/auditing/audit-sensitive-privilege-use) and [Audit Non Sensitive Privilege Use](/windows/security/threat-protection/auditing/audit-non-sensitive-privilege-use) for more details.
 
 -   If you need to monitor events related to specific Windows subsystems (“**Service\\Server**”), for example **NT Local Security Authority / Authentication Service** or **Security Account Manager**, monitor this event for the corresponding “**Service\\Server**.”
 

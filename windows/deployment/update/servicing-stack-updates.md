@@ -4,13 +4,13 @@ description: In this article, learn how servicing stack updates improve the code
 ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro
-itproauthor: jaimeo
-author: jaimeo
-ms.localizationpriority: medium
-ms.author: jaimeo
-ms.reviewer: 
-manager: laurawi
-ms.collection: M365-modern-desktop
+author: aczechowski
+ms.localizationpriority: high
+ms.author: aaroncz
+manager: dougeby
+ms.collection:
+  - M365-modern-desktop
+  - highpri
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
@@ -20,7 +20,7 @@ ms.custom: seo-marvel-apr2020
 
 **Applies to**
 
--   Windows 10
+-   Windows 10
 -   Windows 11
 
 ## What is a servicing stack update?

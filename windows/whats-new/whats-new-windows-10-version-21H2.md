@@ -1,16 +1,17 @@
 ---
 title: What's new in Windows 10, version 21H2 for IT pros
 description: Learn more about what's new in Windows 10 version 21H2, including servicing updates, Windows Subsystem for Linux, the latest CSPs, and more.
-ms.reviewer: 
 manager: dougeby
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
-ms.author: mandia
-author: MandiOhlinger
+ms.author: aaroncz
+author: aczechowski
 ms.localizationpriority: medium
 ms.topic: article
+ms.collection: highpri
+ms.custom: intro-overview
 ---
 
 # What's new in Windows 10, version 21H2
@@ -34,7 +35,7 @@ To learn more about the status of the November 2021 Update rollout, known issues
 
 ## Updates and servicing
 
-Windows 10, version 21H2 feature updates are installed annually using the General Availability Channel. Previous feature updates were installed using the Semi-Annual Channel. For more information on this change, see the [How to get the Windows 10 November 2021 Update](https://blogs.windows.com/windowsexperience/?p=176473).
+Windows 10, version 21H2 feature updates are installed annually using the General Availability Channel. Previous feature updates were installed using the General Availability Channel. For more information on this change, see the [How to get the Windows 10 November 2021 Update](https://blogs.windows.com/windowsexperience/?p=176473).
 
 Quality updates are still installed monthly on patch Tuesday.
 
@@ -69,9 +70,9 @@ For more information, see:
 - [What's new in Azure Virtual Desktop?](/azure/virtual-desktop/whats-new)
 - [Set up MSIX app attach with the Azure portal](/azure/virtual-desktop/app-attach-azure-portal)
 
-## Wi-Fi 6E support
+## Wi-Fi WPA3-Personal H2E support
 
-Also known as 802.11ax, Wi-Fi 6E support is built in to Windows 10, version 21H2. Wi-Fi 6E has new channel frequencies that are dedicated to 6E devices, and is more performant for apps that use more bandwidth.
+Wi-Fi WPA3-Personal H2E (Hash-to-Element) support is built in to Windows 10, version 21H2.
 
 ## Related articles
 

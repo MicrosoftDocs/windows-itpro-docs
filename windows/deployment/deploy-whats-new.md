@@ -1,8 +1,7 @@
 ---
 title: What's new in Windows client deployment
-ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 description: Use this article to learn about new solutions and online content related to deploying Windows in your organization.
 keywords: deployment, automate, tools, configure, news
 ms.mktglfcycl: deploy
@@ -11,15 +10,16 @@ ms.prod: w10
 ms.sitesec: library
 ms.pagetype: deploy
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.collection: highpri
 ---
 
 # What's new in Windows client deployment
 
 **Applies to:**
-- Windows 10
+- Windows 10
 - Windows 11
 
 ## In this topic
@@ -72,7 +72,7 @@ Windows PowerShell cmdlets for Delivery Optimization have been improved:
 - **Get-DeliveryOptimizationLogAnalysis** is a new cmdlet that provides a summary of the activity in your DO log (# of downloads, downloads from peers, overall peer efficiency). Use the **-ListConnections** option to for in-depth look at peer-to-peer connections.
 - **Enable-DeliveryOptimizationVerboseLogs** is a new cmdlet that enables a greater level of logging detail to assist in troubleshooting.
 
-Additional improvements in [Delivery Optimization](./update/waas-delivery-optimization.md) include:
+Additional improvements in [Delivery Optimization](./do/waas-delivery-optimization.md) include:
 - Enterprise network [throttling is enhanced](/windows-insider/archive/new-for-business#new-download-throttling-options-for-delivery-optimization-build-18917) to optimize foreground vs. background throttling.
 - Automatic cloud-based congestion detection is available for PCs with cloud service support.
 - Improved peer efficiency for enterprises and educational institutions with complex networks is enabled with [new policies](/windows/client-management/mdm/policy-csp-deliveryoptimization). This now supports Microsoft 365 Apps for enterprise updates and Intune content, with Microsoft Endpoint Manager content coming soon!
@@ -92,7 +92,7 @@ The following Delivery Optimization policies are removed in the Windows 10, vers
 - Intune console updates: target version is now available allowing you to specify which version of Windows 10 you want devices to move to. Additionally, this capability enables you to keep devices on their current version until they reach end of service. Check it out in Intune, also available as a Group Policy and Configuration Service Provider (CSP) policy.
 - Validation improvements: To ensure devices and end users stay productive and protected, Microsoft uses safeguard holds to block devices from updating when there are known issues that would impact that device. Also, to better enable IT administrators to validate on the latest release, we have created a new policy that enables admins to opt devices out of the built-in safeguard holds.
 
-- [**Automatic Restart Sign-on (ARSO)**](/windows-insider/at-work-pro/wip-4-biz-whats-new#automatic-restart-and-sign-on-arso-for-enterprises-build-18305): Windows will automatically log on as the user and lock their device in order to complete the update, ensuring that when the user returns and unlocks the device, the update will be completed.
+- [**Automatic Restart Sign-on (ARSO)**](/windows-server/identity/ad-ds/manage/component-updates/winlogon-automatic-restart-sign-on--arso-): Windows will automatically log on as the user and lock their device in order to complete the update, ensuring that when the user returns and unlocks the device, the update will be completed.
 - [**Windows Update for Business**](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-and-the-retirement-of-SAC-T/ba-p/339523): There will now be a single, common start date for phased deployments (no more SAC-T designation). In addition, there will be a new notification and reboot scheduling experience for end users, the ability to enforce update installation and reboot deadlines, and the ability to provide end user control over reboots for a specific time period.
 - **Update rollback improvements**: You can now automatically recover from startup failures by removing updates if the startup failure was introduced after the installation of recent driver or quality updates. When a device is unable to start up properly after the recent installation of Quality of driver updates, Windows will now automatically uninstall the updates to get the device back up and running normally.
 - **Pause updates**: We have extended the ability to pause updates for both feature and monthly updates. This extension ability is for all editions of Windows 10, including Home. You can pause both feature and monthly updates for up to 35 days (seven days at a time, up to five times). Once the 35-day pause period is reached, you will need to update your device before pausing again.

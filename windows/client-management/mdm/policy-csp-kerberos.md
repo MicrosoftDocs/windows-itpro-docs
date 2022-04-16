@@ -5,7 +5,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
@@ -23,6 +23,9 @@ manager: dansimp
 <dl>
   <dd>
     <a href="#kerberos-allowforestsearchorder">Kerberos/AllowForestSearchOrder</a>
+  </dd>
+  <dd>
+    <a href="#kerberos-cloudkerberosticketretrievalenabled">Kerberos/CloudKerberosTicketRetrievalEnabled</a>
   </dd>
   <dd>
     <a href="#kerberos-kerberosclientsupportsclaimscompoundarmor">Kerberos/KerberosClientSupportsClaimsCompoundArmor</a>
@@ -58,38 +61,14 @@ manager: dansimp
 <a href="" id="kerberos-allowforestsearchorder"></a>**Kerberos/AllowForestSearchOrder**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -125,41 +104,69 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
+<a href="" id="kerberos-cloudkerberosticketretrievalenabled"></a>**Kerberos/CloudKerberosTicketRetrievalEnabled**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy allows retrieving the cloud Kerberos ticket during the logon.
+
+- If you disable (0) or do not configure this policy setting, the cloud Kerberos ticket is not retrieved during the logon.
+
+- If you enable (1) this policy, the cloud Kerberos ticket is retrieved during the logon.
+<!--/Description-->
+
+<!--SupportedValues-->
+Valid values:  
+0 (default) - Disabled. 
+1 - Enabled. 
+
+<!--/SupportedValues-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Allow retrieving the cloud Kerberos ticket during the logon*
+-   GP name: *CloudKerberosTicketRetrievalEnabled*
+-   GP path: *System/Kerberos*
+-   GP ADMX file name: *Kerberos.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="kerberos-kerberosclientsupportsclaimscompoundarmor"></a>**Kerberos/KerberosClientSupportsClaimsCompoundArmor**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -197,38 +204,14 @@ ADMX Info:
 <a href="" id="kerberos-pkinithashalgorithmconfiguration"></a>**Kerberos/PKInitHashAlgorithmConfiguration**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-     <td>Yes</td>
-     <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -275,38 +258,14 @@ ADMX Info:
 <a href="" id="kerberos-requirekerberosarmoring"></a>**Kerberos/RequireKerberosArmoring**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-     <td>Yes</td>
-     <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-     <td>Yes</td>
-     <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-     <td>Yes</td>
-     <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-     <td>Yes</td>
-     <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -350,38 +309,14 @@ ADMX Info:
 <a href="" id="kerberos-requirestrictkdcvalidation"></a>**Kerberos/RequireStrictKDCValidation**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-     <td>Yes</td>
-     <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-     <td>Yes</td>
-     <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-     <td>Yes</td>
-     <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-     <td>Yes</td>
-     <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -420,38 +355,14 @@ ADMX Info:
 <a href="" id="kerberos-setmaximumcontexttokensize"></a>**Kerberos/SetMaximumContextTokenSize**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-     <td>Yes</td>
-     <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-     <td>Yes</td>
-     <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-     <td>Yes</td>
-     <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-     <td>Yes</td>
-     <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -495,38 +406,14 @@ ADMX Info:
 <a href="" id="kerberos-upnnamehints"></a>**Kerberos/UPNNameHints**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-     <td>Yes</td>
-     <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-     <td>Yes</td>
-     <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-     <td>Yes</td>
-     <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-     <td>Yes</td>
-     <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>

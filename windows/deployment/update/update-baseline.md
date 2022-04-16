@@ -1,13 +1,13 @@
 ---
 title: Update Baseline
 description: Use an update baseline to optimize user experience and meet monthly update goals
-keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, tools, group policy
+keywords: updates, servicing, current, deployment, General Availability Channel, feature, quality, rings, tools, group policy
 ms.prod: w10
 ms.mktglfcycl: manage
-author: jaimeo
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: jaimeo
-manager: laurawi
+ms.author: aaroncz
+manager: dougeby
 ms.topic: article
 ---
 

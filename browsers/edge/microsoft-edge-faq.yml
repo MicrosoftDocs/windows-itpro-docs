@@ -8,11 +8,10 @@ metadata:
   author: dansimp
   ms.author: dansimp
   ms.prod: edge
-  ms.topic: article
+  ms.topic: faq
   ms.mktglfcycl: general
   ms.sitesec: library
   ms.localizationpriority: medium
-    
 title: Frequently Asked Questions (FAQ) for IT Pros
 summary: |
   Applies to: Microsoft Edge on Windows 10
@@ -62,7 +61,7 @@ sections:
 
       - question: Will Internet Explorer 11 continue to receive updates?
         answer: |
-          We're committed to keeping Internet Explorer a supported, reliable, and safe browser. Internet Explorer is still a component of Windows and follows the support lifecycle of the OS on which it's installed. For details, see [Lifecycle FAQ - Internet Explorer](https://support.microsoft.com/help/17454/). While we continue to support and update Internet Explorer, the latest features and platform updates will only be available in Microsoft Edge.
+          We're committed to keeping Internet Explorer a supported, reliable, and safe browser. Internet Explorer is still a component of Windows and follows the support lifecycle of the OS on which it's installed. For details, see [Lifecycle FAQ - Internet Explorer](/lifecycle/faq/internet-explorer-microsoft-edge). While we continue to support and update Internet Explorer, the latest features and platform updates will only be available in Microsoft Edge.
           
       - question: How do I find out which version of Microsoft Edge I have?
         answer: |

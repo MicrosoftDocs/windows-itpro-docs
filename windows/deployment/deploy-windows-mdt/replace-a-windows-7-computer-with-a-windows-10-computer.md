@@ -5,7 +5,7 @@ ms.custom: seo-marvel-apr2020
 ms.assetid: acf091c9-f8f4-4131-9845-625691c09a2a
 ms.reviewer: 
 manager: dougeby
-ms.author: greglin
+ms.author: aaroncz
 keywords: deploy, deployment, replace
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ---
 

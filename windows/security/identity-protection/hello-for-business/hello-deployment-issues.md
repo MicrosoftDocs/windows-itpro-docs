@@ -3,13 +3,13 @@ title: Windows Hello for Business Deployment Known Issues
 description: A Troubleshooting Guide for Known Windows Hello for Business Deployment Issues
 keywords: identity, PIN, biometric, Hello, passport
 params: siblings_only
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -29,7 +29,7 @@ Applies to:
 - Windows 10, version 1803 and later
 - Windows 11
 
-PIN reset on Azure AD joined devices uses a flow called web sign-in to authenticate the user above lock. Web sign in only allows navigation to specific domains. If it attempts to navigate to a domain that is not allowed it will shows a page with the error message "We can't open that page right now".
+PIN reset on Azure AD joined devices uses a flow called web sign-in to authenticate the user above lock. Web sign in only allows navigation to specific domains. If it attempts to navigate to a domain that is not allowed it will show a page with the error message "We can't open that page right now".
 
 ### Identifying Azure AD joined PIN Reset Allowed Domains Issue
 
@@ -57,11 +57,11 @@ In Hybrid key trust deployments with domain controllers running certain builds o
 
 After the user provisions a Windows Hello for Business credential in a hybrid key trust environment, the key must sync from Azure AD to AD during an Azure AD Connect sync cycle. The user's public key will be written to the msDS-KeyCredentialLink attribute of the user object.
 
-Before the user's Windows Hello for Business key is synced, sign-in's with Windows Hello for Business will fail with the error message, *"That option is temporarily unavailable. For now, please use a different method to sign in."* After the sync is successful, the user should be able to login and unlock with their PIN or enrolled biometrics.
+Before the user's Windows Hello for Business key is synced, sign-in's with Windows Hello for Business will fail with the error message, *"That option is temporarily unavailable. For now, please use a different method to sign in."* After the sync is successful, the user should be able to log in and unlock with their PIN or enrolled biometrics.
 
 In environments impacted with this issue, after the first sign-in with Windows Hello for Business after provisioning is completed, the next sign-in attempt will fail. In environments where domain controllers are running a mix of builds, only some may be impacted by this issue and subsequent logon attempts may be sent different domain controllers. This may result in the sign-in failures appearing to be intermittent.
 
-After the initial logon attempt, the user's Windows Hello for Business public key is being deleted from the msDS-KeyCredentialLink attribute. This can be verified by querying a user's msDS-KeyCredentialLink attribute before and after sign-in. The msDS-KeyCredentialLink can be queried in AD using [Get-ADUser](/powershell/module/addsadministration/get-aduser) and specifying *msds-keycredentiallink* for the *-Properties* parameter.
+After the initial logon attempt, the user's Windows Hello for Business public key is being deleted from the msDS-KeyCredentialLink attribute. This can be verified by querying a user's msDS-KeyCredentialLink attribute before and after sign-in. The msDS-KeyCredentialLink can be queried in AD using [Get-ADUser](/powershell/module/activedirectory/get-aduser) and specifying *msds-keycredentiallink* for the *-Properties* parameter.
 
 ### Resolving User Public Key Deletion Issue
 

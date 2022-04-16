@@ -1,8 +1,8 @@
 ---
 title: Quick fixes - Windows IT Pro
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 description: Learn how to quickly resolve many problems, which may come up during a Windows 10 upgrade.
 keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, ITPro
 ms.custom: seo-marvel-apr2020
@@ -11,7 +11,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
 ms.topic: article
 ---
@@ -34,20 +34,25 @@ The Microsoft Virtual Agent provided by [Microsoft Support](https://support.micr
 
 ## List of fixes
 
-<ol>
-<li>Remove nonessential external hardware, such as docks and USB devices. <a href="#remove-external-hardware" data-raw-source="[More information](#remove-external-hardware)">More information</a>.</li>
-<li>Check the system drive for errors and attempt repairs. <a href="#repair-the-system-drive" data-raw-source="[More information](#repair-the-system-drive)">More information</a>.</li>
-<li>Run the Windows Update troubleshooter. <a href="#windows-update-troubleshooter" data-raw-source="[More information](#windows-update-troubleshooter)">More information</a>.</li>
-<li>Attempt to restore and repair system files. <a href="#repair-system-files" data-raw-source="[More information](#repair-system-files)">More information</a>.</li>
-<li>Update Windows so that all available recommended updates are installed, and ensure the computer is rebooted if this is necessary to complete installation of an update. <a href="#update-windows" data-raw-source="[More information](#update-windows)">More information</a>.</li>
-<li>Temporarily uninstall non-Microsoft antivirus software.
-  <a href="#uninstall-non-microsoft-antivirus-software" data-raw-source="[More information](#uninstall-non-microsoft-antivirus-software)">More information</a>.</li>
+1.  Remove nonessential external hardware, such as docks and USB devices. [More information](#remove-external-hardware).
 
-<li>Uninstall all nonessential software. <a href="#uninstall-non-essential-software" data-raw-source="[More information](#uninstall-non-essential-software)">More information</a>.</li>
-<li>Update firmware and drivers. <a href="#update-firmware-and-drivers" data-raw-source="[More information](#update-firmware-and-drivers)">More information</a></li>
-<li>Ensure that &quot;Download and install updates (recommended)&quot; is accepted at the start of the upgrade process. <a href="#ensure-that-download-and-install-updates-is-selected" data-raw-source="[More information](#ensure-that-download-and-install-updates-is-selected)">More information</a>.</li>
-<li>Verify at least 16 GB of free space is available to upgrade a 32-bit OS, or 20 GB for a 64-bit OS. <a href="#verify-disk-space" data-raw-source="[More information](#verify-disk-space)">More information</a>.</li>
-</ol>
+2.  Check the system drive for errors and attempt repairs. [More information](#repair-the-system-drive).
+
+3.  Run the Windows Update troubleshooter. [More information](#windows-update-troubleshooter).
+
+4.  Attempt to restore and repair system files. [More information](#repair-system-files).
+
+5.  Update Windows so that all available recommended updates are installed, and ensure the computer is rebooted if this is necessary to complete installation of an update. [More information](#update-windows).
+
+6.  Temporarily uninstall non-Microsoft antivirus software. [More information](#uninstall-non-microsoft-antivirus-software).
+
+7.  Uninstall all nonessential software. [More information](#uninstall-non-essential-software).
+
+8.  Update firmware and drivers. [More information](#update-firmware-and-drivers).
+
+9.  Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process. [More information](#ensure-that-download-and-install-updates-is-selected).
+
+10.  Verify at least 16 GB of free space is available to upgrade a 32-bit OS, or 20 GB for a 64-bit OS. [More information](#verify-disk-space).
 
 ## Step by step instructions
 
@@ -81,14 +86,20 @@ The system drive is the drive that contains the [system partition](/windows-hard
 To check and repair errors on the system drive:
 
 1. Click **Start**.
-2. Type **command**.
-3. Right-click **Command Prompt** and then left-click **Run as administrator**.
-4. If you are prompted by UAC, click **Yes**.
-5. Type **chkdsk /F** and press ENTER.
-6. When you are prompted to schedule a check the next time the system restarts, type **Y**.
-7. See the following example
 
-    ```
+2. Type **command**.
+
+3. Right-click **Command Prompt** and then left-click **Run as administrator**.
+
+4. If you are prompted by UAC, click **Yes**.
+
+5. Type **chkdsk /F** and press ENTER.
+
+6. When you are prompted to schedule a check the next time the system restarts, type **Y**.
+
+7. See the following example.
+
+    ```console
     C:\WINDOWS\system32>chkdsk /F
     The type of the file system is NTFS.
     Cannot lock current drive.
@@ -123,12 +134,16 @@ This fix is also described in detail at [answers.microsoft.com](https://answers.
 To check and repair system files:
 
 1. Click **Start**.
+
 2. Type **command**.
+
 3. Right-click **Command Prompt** and then left-click **Run as administrator**.
+
 4. If you are prompted by UAC, click **Yes**.
+
 5. Type **sfc /scannow** and press ENTER. See the following example:
 
-    ```
+    ```console
     C:\>sfc /scannow
 
     Beginning system scan.  This process will take some time.
@@ -140,7 +155,7 @@ To check and repair system files:
     ```
 6. If you are running Windows 8.1 or later, type **DISM.exe /Online /Cleanup-image /Restorehealth** and press ENTER (the DISM command options are not available for Windows 7). See the following example:
 
-    ```
+    ```console
     C:\>DISM.exe /Online /Cleanup-image /Restorehealth
 
     Deployment Image Servicing and Management tool
@@ -215,7 +230,7 @@ In the previous example, there is 703 GB of available free space on the system d
 
 To free up additional space on the system drive, begin by running Disk Cleanup. You can access Disk Cleanup by right-clicking the hard drive icon and then clicking Properties. See the following example:
 
-![Disk cleanup.](../images/cleanup.png)
+:::image type="content" alt-text="Disk cleanup." source="../images/cleanup.png":::
 
 For instructions to run Disk Cleanup and other suggestions to free up hard drive space, see [Tips to free up drive space on your PC](https://support.microsoft.com/help/17421/windows-free-up-drive-space).
 
@@ -240,4 +255,4 @@ If you downloaded the SetupDiag.exe program to your computer, then copied it to 
 <br>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)
 <br>[Windows 10 Specifications](https://www.microsoft.com/windows/Windows-10-specifications)
 <br>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)
-<br>[Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)
+<br>[Fix Windows Update errors by using the DISM or System Update Readiness tool](/troubleshoot/windows-server/deployment/fix-windows-update-errors)

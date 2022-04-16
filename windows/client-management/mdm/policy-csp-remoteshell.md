@@ -5,7 +5,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
@@ -57,38 +57,14 @@ manager: dansimp
 <a href="" id="remoteshell-allowremoteshellaccess"></a>**RemoteShell/AllowRemoteShellAccess**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -113,7 +89,7 @@ If you set this policy to ‘disabled’, new remote shell connections are rejec
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow Remote Shell Access*
+-   GP Friendly name: *Allow Remote Shell Access*
 -   GP name: *AllowRemoteShellAccess*
 -   GP path: *Windows Components/Windows Remote Shell*
 -   GP ADMX file name: *WindowsRemoteShell.admx*
@@ -127,38 +103,14 @@ ADMX Info:
 <a href="" id="remoteshell-maxconcurrentusers"></a>**RemoteShell/MaxConcurrentUsers**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -185,7 +137,7 @@ If you disable or do not configure this policy setting, the default number is fi
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *MaxConcurrentUsers*
+-   GP Friendly name: *MaxConcurrentUsers*
 -   GP name: *MaxConcurrentUsers*
 -   GP path: *Windows Components/Windows Remote Shell*
 -   GP ADMX file name: *WindowsRemoteShell.admx*
@@ -199,38 +151,14 @@ ADMX Info:
 <a href="" id="remoteshell-specifyidletimeout"></a>**RemoteShell/SpecifyIdleTimeout**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -257,7 +185,7 @@ If you do not configure or disable this policy setting, the default value of 900
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify idle Timeout*
+-   GP Friendly name: *Specify idle Timeout*
 -   GP name: *IdleTimeout*
 -   GP path: *Windows Components/Windows Remote Shell*
 -   GP ADMX file name: *WindowsRemoteShell.admx*
@@ -271,38 +199,14 @@ ADMX Info:
 <a href="" id="remoteshell-specifymaxmemory"></a>**RemoteShell/SpecifyMaxMemory**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -329,7 +233,7 @@ If you disable or do not configure this policy setting, the value 150 is used by
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify maximum amount of memory in MB per Shell*
+-   GP Friendly name: *Specify maximum amount of memory in MB per Shell*
 -   GP name: *MaxMemoryPerShellMB*
 -   GP path: *Windows Components/Windows Remote Shell*
 -   GP ADMX file name: *WindowsRemoteShell.admx*
@@ -343,38 +247,14 @@ ADMX Info:
 <a href="" id="remoteshell-specifymaxprocesses"></a>**RemoteShell/SpecifyMaxProcesses**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -399,7 +279,7 @@ If you disable or do not configure this policy setting,  the limit is five proce
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify maximum number of processes per Shell*
+-   GP Friendly name: *Specify maximum number of processes per Shell*
 -   GP name: *MaxProcessesPerShell*
 -   GP path: *Windows Components/Windows Remote Shell*
 -   GP ADMX file name: *WindowsRemoteShell.admx*
@@ -413,38 +293,14 @@ ADMX Info:
 <a href="" id="remoteshell-specifymaxremoteshells"></a>**RemoteShell/SpecifyMaxRemoteShells**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -471,7 +327,7 @@ If you disable or do not configure this policy setting, by default the limit is 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify maximum number of remote shells per user*
+-   GP Friendly name: *Specify maximum number of remote shells per user*
 -   GP name: *MaxShellsPerUser*
 -   GP path: *Windows Components/Windows Remote Shell*
 -   GP ADMX file name: *WindowsRemoteShell.admx*
@@ -485,38 +341,14 @@ ADMX Info:
 <a href="" id="remoteshell-specifyshelltimeout"></a>**RemoteShell/SpecifyShellTimeout**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -537,7 +369,7 @@ This policy setting is deprecated and has no effect when set to any state: Enabl
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify Shell Timeout*
+-   GP Friendly name: *Specify Shell Timeout*
 -   GP name: *ShellTimeOut*
 -   GP path: *Windows Components/Windows Remote Shell*
 -   GP ADMX file name: *WindowsRemoteShell.admx*

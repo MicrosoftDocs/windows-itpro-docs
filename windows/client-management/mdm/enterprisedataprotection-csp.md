@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 08/09/2017
 ---
 
@@ -38,7 +38,6 @@ EnterpriseDataProtection
 --------EDPEnforcementLevel
 --------EnterpriseProtectedDomainNames
 --------AllowUserDecryption
---------RequireProtectionUnderLockConfig
 --------DataRecoveryCertificate
 --------RevokeOnUnenroll
 --------RMSTemplateIDForEDP
@@ -94,24 +93,6 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 Most restricted value is 0.
-
-Supported operations are Add, Get, Replace, and Delete. Value type is integer.
-
-<a href="" id="settings-requireprotectionunderlockconfig"></a>**Settings/RequireProtectionUnderLockConfig**  
-Specifies whether the protection under lock feature (also known as encrypt under pin) should be configured. A PIN must be configured on the device before you can apply this policy.
-
-The following list shows the supported values:
-
--   0 (default) – Not required.
--   1 – Required.
-
-Most restricted value is 1.
-
-The CSP checks the current edition and hardware support (TPM), and returns an error message if the device does not have the required hardware.
-
-> [!Note]
-> This setting is only supported in Windows 10 Mobile.
-
 
 Supported operations are Add, Get, Replace, and Delete. Value type is integer.
 
@@ -250,7 +231,7 @@ For EFSCertificate KeyTag, it is expected to be a DER ENCODED binary certificate
 Supported operations are Add, Get, Replace, and Delete. Value type is base-64 encoded certificate.
 
 <a href="" id="settings-revokeonunenroll"></a>**Settings/RevokeOnUnenroll**  
-This policy controls whether to revoke the WIP keys when a device unenrolls from the management service. If set to 0 (Don&#39;t revoke keys), the keys will not be revoked and the user will continue to have access to protected files after unenrollment. If the keys are not revoked, there will be no revoked file cleanup subsequently. Prior to sending the unenroll command, when you want a device to do a selective wipe when it is unenrolled, then you should explicitly set this policy to 1.
+This policy controls whether to revoke the WIP keys when a device unenrolls from the management service. If set to 0 (Don't revoke keys), the keys will not be revoked and the user will continue to have access to protected files after unenrollment. If the keys are not revoked, there will be no revoked file cleanup subsequently. Prior to sending the unenroll command, when you want a device to do a selective wipe when it is unenrolled, then you should explicitly set this policy to 1.
 
 The following list shows the supported values:
 
@@ -260,7 +241,7 @@ The following list shows the supported values:
 Supported operations are Add, Get, Replace, and Delete. Value type is integer.
 
 <a href="" id="settings-revokeonmdmhandoff"></a>**Settings/RevokeOnMDMHandoff**  
-Added in Windows 10, version 1703. This policy controls whether to revoke the WIP keys when a device upgrades from mobile application management (MAM) to MDM. If set to 0 (Don&#39;t revoke keys), the keys will not be revoked and the user will continue to have access to protected files after upgrade. This is recommended if the MDM service is configured with the same WIP EnterpriseID as the MAM service.
+Added in Windows 10, version 1703. This policy controls whether to revoke the WIP keys when a device upgrades from mobile application management (MAM) to MDM. If set to 0 (Don't revoke keys), the keys will not be revoked and the user will continue to have access to protected files after upgrade. This is recommended if the MDM service is configured with the same WIP EnterpriseID as the MAM service.
 
 - 0 - Don't revoke keys
 - 1 (default) - Revoke keys

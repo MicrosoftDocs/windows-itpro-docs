@@ -4,7 +4,7 @@ metadata:
   description: This article for IT professionals answers frequently asked questions concerning the requirements to use BitLocker.
   ms.assetid: c40f87ac-17d3-47b2-afc6-6c641f72ecee
   ms.reviewer: 
-  ms.prod: w10
+  ms.prod: m365-security
   ms.mktglfcycl: explore
   ms.sitesec: library
   ms.pagetype: security
@@ -13,15 +13,16 @@ metadata:
   ms.author: dansimp
   manager: dansimp
   audience: ITPro
-  ms.collection: M365-security-compliance
-  ms.topic: conceptual
+  ms.collection:
+    - M365-security-compliance
+    - highpri
+  ms.topic: faq
   ms.date: 07/27/2021
   ms.custom: bitlocker
-    
 title: BitLocker Overview and Requirements FAQ
 summary: |
   **Applies to**
-  -   Windows 10
+  -   Windows 10
   
 
 sections:

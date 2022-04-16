@@ -4,7 +4,7 @@ description: Creating a reference image is important because that image serves a
 ms.assetid: 9da2fb57-f2ff-4fce-a858-4ae4c237b5aa
 ms.reviewer: 
 manager: dougeby
-ms.author: greglin
+ms.author: aaroncz
 keywords: deploy, deployment, configure, customize, install, installation
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ---
 
@@ -164,7 +164,7 @@ Download all three items in this list to the D:\\Downloads folder on MDT01.
 
     For example, you can use the following configuration.xml file, which provides these configuration settings:
       - Install the 64-bit version of Microsoft 365 Apps for enterprise in English directly from the Office Content Delivery Network (CDN) on the internet. Note: 64-bit is now the default and recommended edition. 
-      - Use the Semi-Annual Channel and get updates directly from the Office CDN on the internet. 
+      - Use the General Availability Channel and get updates directly from the Office CDN on the internet. 
       - Perform a silent installation. You won’t see anything that shows the progress of the installation and you won’t see any error messages.
 
      ```xml
@@ -179,7 +179,7 @@ Download all three items in this list to the D:\\Downloads folder on MDT01.
      </Configuration>
      ```
 
-     By using these settings, any time you build the reference image you’ll be installing the most up-to-date Semi-Annual Channel version of Microsoft 365 Apps for enterprise.
+     By using these settings, any time you build the reference image you’ll be installing the most up-to-date General Availability Channel version of Microsoft 365 Apps for enterprise.
 
  >[!TIP]
  >You can also use the web-based interface of the [Office Customization Tool](https://config.office.com/) to help you create your configuration.xml file.

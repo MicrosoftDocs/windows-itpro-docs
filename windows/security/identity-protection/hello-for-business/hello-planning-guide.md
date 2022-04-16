@@ -2,25 +2,26 @@
 title: Planning a Windows Hello for Business Deployment
 description: Learn about the role of each component within Windows Hello for Business and how certain deployment decisions affect other aspects of your infrastructure.
 keywords: identity, PIN, biometric, Hello, passport
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
-ms.collection: M365-identity-device-management
+ms.collection:
+  - M365-identity-device-management
+  - highpri
 ms.topic: article
 localizationpriority: conceptual
 ms.date: 09/16/2020
-ms.reviewer: 
 ---
 # Planning a Windows Hello for Business Deployment
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 - Windows 11
 
 Congratulations! You are taking the first step forward in helping move your organizations away from password to a two-factor, convenience authentication for Windows — Windows Hello for Business. This planning guide helps you understand the different topologies, architectures, and components that encompass a Windows Hello for Business infrastructure.

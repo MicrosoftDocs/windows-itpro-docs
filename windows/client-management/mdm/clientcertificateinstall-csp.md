@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 07/30/2021
 ---
 
@@ -16,7 +16,7 @@ ms.date: 07/30/2021
 
 The ClientCertificateInstall configuration service provider enables the enterprise to install client certificates. A client certificate has a unique ID, which is the *\[UniqueID\]* for this configuration. Each client certificate must have different UniqueIDs for the SCEP enrollment request.
 
-For PFX certificate installation and SCEP installation, the SyncML commands must be wrapped in atomic commands to ensure enrollment execution is not triggered until all settings are configured. The Enroll command must be the last item in the atomic block.
+For PFX certificate installation and SCEP installation, the SyncML commands must be wrapped in atomic commands to ensure that enrollment execution isn't triggered until all settings are configured. The Enroll command must be the last item in the atomic block.
 
 > [!Note]
 > Currently in Windows 10, version 1511, when using the ClientCertificateInstall to install certificates to the device store and the user store and both certificates are sent to the device in the same MDM payload, the certificate intended for the device store will also get installed in the user store. This may cause issues with Wi-Fi or VPN when choosing the correct certificate to establish a connection. We are working to fix this issue.
@@ -24,6 +24,7 @@ For PFX certificate installation and SCEP installation, the SyncML commands must
 You can only set PFXKeyExportable to true if KeyLocation=3. For any other KeyLocation value, the CSP will fail.
 
 The following shows the ClientCertificateInstall configuration service provider in tree format.
+
 ```
 ./Vendor/MSFT
 ClientCertificateInstall
@@ -65,6 +66,7 @@ ClientCertificateInstall
 ------------ErrorCode
 ------------RespondentServerUrl
 ```
+
 <a href="" id="device-or-user"></a>**Device or User**  
 For device certificates, use <strong>./Device/Vendor/MSFT</strong> path and for user certificates use <strong>./User/Vendor/MSFT</strong> path.
 
@@ -95,12 +97,12 @@ The data type is an integer corresponding to one of the following values:
 | Value | Description                                                                                                   |
 |-------|---------------------------------------------------------------------------------------------------------------|
 | 1     | Install to TPM if present, fail if not present.                                                               |
-| 2     | Install to TPM if present. If not present, fallback to software.                                              |
+| 2     | Install to TPM if present. If not present, fall back to software.                                              |
 | 3     | Install to software.                                                                                          |
 | 4     | Install to Windows Hello for Business (formerly known as Microsoft Passport for Work) whose name is specified |
 
 <a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-containername"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/ContainerName**  
-Optional. Specifies the Windows Hello for Business (formerly known as Microsoft Passport for Work) container name (if Windows Hello for Business storage provider (KSP) is chosen for the KeyLocation). If this node is not specified when Windows Hello for Business KSP is chosen, enrollment will fail.
+Optional. Specifies the Windows Hello for Business (formerly known as Microsoft Passport for Work) container name (if Windows Hello for Business storage provider (KSP) is chosen for the KeyLocation). If this node isn't specified when Windows Hello for Business KSP is chosen, enrollment will fail.
 
 Date type is string.
 
@@ -115,7 +117,7 @@ Supported operations are Get, Add, and Replace.
 
 If a blob already exists, the Add operation will fail. If Replace is called on this node, the existing certificates are overwritten.
 
-If Add is called on this node for a new PFX, the certificate will be added. When a certificate does not exist, Replace operation on this node will fail.
+If Add is called on this node for a new PFX, the certificate will be added. When a certificate doesn't exist, Replace operation on this node will fail.
 
 In other words, using Replace or Add will result in the effect of either overwriting the old certificate or adding a new certificate CRYPT_DATA_BLOB, which can be found in <a href="/previous-versions/windows/desktop/legacy/aa381414(v=vs.85)" data-raw-source="[CRYPT\_INTEGER\_BLOB](/previous-versions/windows/desktop/legacy/aa381414(v=vs.85))">CRYPT_INTEGER_BLOB</a>.
 
@@ -131,7 +133,7 @@ Optional. Used to specify whether the PFX certificate password is encrypted with
 
 The data type is int. Valid values:
 
--   0 - Password is not encrypted.
+-   0 - Password isn't encrypted.
 -   1 - Password is encrypted with the MDM certificate.
 -   2 - Password is encrypted with custom certificate.
 
@@ -140,7 +142,7 @@ When PFXCertPasswordEncryptionType =2, you must specify the store name in PFXCer
 Supported operations are Get, Add, and Replace.
 
 <a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-pfxkeyexportable"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/PFXKeyExportable**  
-Optional. Used to specify if the private key installed is exportable (and can be exported later). The PFX is not exportable when it is installed to TPM.
+Optional. Used to specify if the private key installed is exportable (and can be exported later). The PFX isn't exportable when it's installed to TPM.
 
 > [!Note]
 > You can only set PFXKeyExportable to true if KeyLocation=3. For any other KeyLocation value, the CSP will fail.
@@ -202,7 +204,7 @@ Data type is string.
 Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-ekumapping"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/EKUMapping**  
-Required. Specifies extended key usages. Subject to SCEP server configuration. The list of OIDs are separated by a plus <strong>+</strong>. For example, <em>OID1</em>+<em>OID2</em>+<em>OID3</em>.
+Required. Specifies extended key usages. Subject to SCEP server configuration. The list of OIDs is separated by a plus <strong>+</strong>. For example, <em>OID1</em>+<em>OID2</em>+<em>OID3</em>.
 
 Data type is string.
 
@@ -213,7 +215,7 @@ Required. Specifies the subject name.
 
 The SubjectName value is quoted if it contains leading or trailing white space or one of the following characters: (“,” “=” “+” “;”  ).
 
-For more details, see [CertNameToStrA function](/windows/win32/api/wincrypt/nf-wincrypt-certnametostra#remarks).
+For more information, see [CertNameToStrA function](/windows/win32/api/wincrypt/nf-wincrypt-certnametostra#remarks).
 
 Data type is string.
 
@@ -227,11 +229,11 @@ Optional. Specifies where to keep the private key.
 
 The data type is an integer corresponding to one of the following values:  
 
-| Value | Description                                                                                                                                                                                           |
-|-------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1     | Private key protected by TPM.                                                                                                                                                                         |
-| 2     | Private key protected by phone TPM if the device supports TPM. All Windows Phone 8.1 devices support TPM and will treat value 2 as 1.                                                                 |
-| 3     | (Default) Private key saved in software KSP.                                                                                                                                                          |
+| Value | Description  |
+|---|---|
+| 1     | Private key protected by TPM. |
+| 2     | Private key protected by phone TPM if the device supports TPM.  |
+| 3     | (Default) Private key saved in software KSP.  |
 | 4     | Private key protected by Windows Hello for Business (formerly known as Microsoft Passport for Work). If this option is specified, the ContainerName must be specified, otherwise enrollment will fail. |
 
 Supported operations are Add, Get, Delete, and Replace.
@@ -330,7 +332,10 @@ Valid values are:
 Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-validperiodunits"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/ValidPeriodUnits**  
-Optional. Specifies the desired number of units used in the validity period. This is subject to SCEP server configuration. Default value is 0. The unit type (days, months, or years) are defined in the ValidPeriod node. Note the valid period specified by MDM will overwrite the valid period specified in the certificate template. For example, if ValidPeriod is Days and ValidPeriodUnits is 30, it means the total valid duration is 30 days.
+Optional. Specifies the desired number of units used in the validity period. This is subject to SCEP server configuration. Default value is 0. The unit type (days, months, or years) is defined in the ValidPeriod node. 
+
+>[!Note]
+> The valid period specified by MDM will overwrite the valid period specified in the certificate template. For example, if ValidPeriod is Days and ValidPeriodUnits is 30, it means the total valid duration is 30 days.
 
 Data type is string.
 
@@ -340,7 +345,7 @@ Data type is string.
 Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-containername"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/ContainerName**  
-Optional. Specifies the Windows Hello for Business container name (if Windows Hello for Business KSP is chosen for the node). If this node is not specified when Windows Hello for Business KSP is chosen, the enrollment will fail.
+Optional. Specifies the Windows Hello for Business container name (if Windows Hello for Business KSP is chosen for the node). If this node isn't specified when Windows Hello for Business KSP is chosen, the enrollment will fail.
 
 Data type is string.
 
@@ -354,21 +359,21 @@ Data type is string.
 Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-enroll"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/Enroll**  
-Required. Triggers the device to start the certificate enrollment. The device will not notify MDM server after certificate enrollment is done. The MDM server could later query the device to find out whether new certificate is added.
+Required. Triggers the device to start the certificate enrollment. The device won't notify MDM server after certificate enrollment is done. The MDM server could later query the device to find out whether new certificate is added.
 
 The date type format is Null, meaning this node doesn’t contain a value.
 
 The only supported operation is Execute.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-aadkeyidentifierlist"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/AADKeyIdentifierList**  
-Optional. Specify the AAD Key Identifier List as a list of semicolon separated values. On Enroll, the values in this list are validated against the AAD Key present on the device. If no match is found, enrollment will fail.
+Optional. Specify the Azure AD Key Identifier List as a list of semicolon separated values. On Enroll, the values in this list are validated against the Azure AD Key present on the device. If no match is found, enrollment will fail.
 
 Data type is string.
 
 Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-certthumbprint"></a>**ClientCertificateInstall/SCEP/*UniqueID*/CertThumbprint**  
-Optional. Specifies the current certificate’s thumbprint if certificate enrollment succeeds. It is a 20-byte value of the SHA1 certificate hash specified as a hexadecimal string value.
+Optional. Specifies the current certificate’s thumbprint if certificate enrollment succeeds. It's a 20-byte value of the SHA1 certificate hash specified as a hexadecimal string value.
 
 If the certificate on the device becomes invalid (Cert expired, Cert chain is not valid, private key deleted) then it will return an empty string.
 

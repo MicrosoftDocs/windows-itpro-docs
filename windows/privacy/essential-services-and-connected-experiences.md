@@ -2,7 +2,7 @@
 title: Essential services and connected experiences for Windows
 description: Explains what the essential services and connected experiences are for Windows
 keywords: privacy, manage connections to Microsoft
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
@@ -10,7 +10,10 @@ audience: ITPro
 author: siosulli
 ms.author: dansimp
 manager: dansimp
-ms.date: 
+ms.technology: privacy
+ms.date: 11/24/2021
+ms.collection: highpri
+
 ---
 
 # Essential services and connected experiences for Windows
@@ -103,12 +106,11 @@ To view endpoints for Windows Enterprise, see:
 
 - [Manage connection endpoints for Windows 11](manage-windows-11-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 21H1](manage-windows-21H1-endpoints.md)
+- [Manage connection endpoints for Windows 10, version 21H2](manage-windows-21H2-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 20H2](manage-windows-20h2-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 1909](manage-windows-1909-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 1903](manage-windows-1903-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 1809](manage-windows-1809-endpoints.md)
-- [Manage connection endpoints for Windows 10, version 1803](manage-windows-1803-endpoints.md)
-- [Manage connection endpoints for Windows 10, version 1709](manage-windows-1709-endpoints.md)
 
 To view endpoints for non-Enterprise Windows editions, see:
 
@@ -118,5 +120,3 @@ To view endpoints for non-Enterprise Windows editions, see:
 - [Windows 10, version 1909, connection endpoints for non-Enterprise editions](windows-endpoints-1909-non-enterprise-editions.md)
 - [Windows 10, version 1903, connection endpoints for non-Enterprise editions](windows-endpoints-1903-non-enterprise-editions.md)
 - [Windows 10, version 1809, connection endpoints for non-Enterprise editions](windows-endpoints-1809-non-enterprise-editions.md)
-- [Windows 10, version 1803, connection endpoints for non-Enterprise editions](windows-endpoints-1803-non-enterprise-editions.md)
-- [Windows 10, version 1709, connection endpoints for non-Enterprise editions](windows-endpoints-1709-non-enterprise-editions.md)

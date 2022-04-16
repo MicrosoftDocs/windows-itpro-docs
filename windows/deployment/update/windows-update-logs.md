@@ -4,13 +4,13 @@ description: Learn about the Windows Update log files and how to merge and conve
 ms.prod: w10
 ms.mktglfcycl: 
 audience: itpro
-itproauthor: jaimeo
 ms.audience: itpro
-author: jaimeo
-ms.reviewer: 
-manager: laurawi
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.collection: highpri
 ---
 
 # Windows Update log files

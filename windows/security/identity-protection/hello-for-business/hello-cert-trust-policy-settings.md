@@ -2,25 +2,26 @@
 title: Configure Windows Hello for Business Policy settings - certificate trust
 description: Configure Windows Hello for Business Policy settings for Windows Hello for Business. Certificate-based deployments need three group policy settings.
 keywords: identity, PIN, biometric, Hello, passport
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
-ms.collection: M365-identity-device-management
+ms.collection:
+  - M365-identity-device-management
+  - highpri
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/20/2018
-ms.reviewer: 
 ---
 # Configure Windows Hello for Business Policy settings - Certificate Trust
 
 **Applies to**
 
-- Windows 10, version 1703 or later
+- Windows 10, version 1703 or later
 - Windows 11
 - On-premises deployment
 - Certificate trust

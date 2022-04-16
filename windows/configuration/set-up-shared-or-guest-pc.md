@@ -5,12 +5,13 @@ keywords: ["shared pc mode"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: greg-lindsay
-ms.author: greglin
+author: aczechowski
+ms.author: aaroncz
 ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: sybruckm
-manager: dansimp
+manager: dougeby
+ms.collection: highpri
 ---
 
 # Set up a shared or guest PC with Windows 10/11
@@ -18,7 +19,7 @@ manager: dansimp
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 - Windows 11
 
 Windows client has a *shared PC mode*, which optimizes Windows client for shared use scenarios, such as touchdown spaces in an enterprise and temporary customer use in retail. You can apply shared PC mode to Windows client Pro, Pro Education, Education, and Enterprise.
@@ -63,8 +64,8 @@ Shared PC mode exposes a set of customizations to tailor the behavior to your re
 | Setting | Value |
 |:---|:---|
 | EnableSharedPCMode | Set as **True**. If this is not set to **True**, shared PC mode is not turned on and none of the other settings apply. This setting controls this API: [IsEnabled](/uwp/api/windows.system.profile.sharedmodesettings) </br></br>Some of the remaining settings in **SharedPC** are optional, but we strongly recommend that you also set `EnableAccountManager` to **True**.  |
-| AccountManagement: AccountModel | This option controls how users can sign-in on the PC. Choosing domain-joined will enable any user in the domain to sign-in. Specifying the guest option will add the **Guest** option to the sign-in screen and enable anonymous guest access to the PC. <br/>  - **Only guest** allows anyone to use the PC as a local standard (non-admin) account.<br/>  - **Domain-joined only** allows users to sign in with an Active Directory or Azure AD account.<br/>-   **Domain-joined and guest** allows users to sign in with an Active Directory, Azure AD, or local standard account. |
-| AccountManagement: DeletionPolicy | - **Delete immediately** will delete the account on sign-out. <br/>- **Delete at disk space threshold** will start deleting accounts when available disk space falls below the threshold you set for **DiskLevelDeletion**, and it will stop deleting accounts when the available disk space reaches the threshold you set for **DiskLevelCaching**. Accounts are deleted in order of oldest accessed to most recently accessed. <br/><br/>Example: The caching number is 50 and the deletion number is 25. Accounts will be cached while the free disk space is above 25%. When the free disk space is less than 25% (the deletion number) at a maintenance period, accounts will be deleted (oldest last used first) until the free disk space is above 50% (the caching number). Accounts will be deleted immediately at sign off of an account if free space is under the deletion threshold and disk space is very low, regardless if the PC is actively in use or not. <br/>- **Delete at disk space threshold and inactive threshold** will apply the same disk space checks as noted above, but also delete accounts if they have not signed in within the number of days specified by **InactiveThreshold**  |
+| AccountManagement: AccountModel | This option controls how users can sign-in on the PC. Choosing domain-joined will enable any user in the domain to sign-in. <br/><br/>Specifying the guest option will add the **Guest** option to the sign-in screen and enable anonymous guest access to the PC. <br/><br/>  - **Only guest** allows anyone to use the PC as a local standard (non-admin) account.<br/>  - **Domain-joined only** allows users to sign in with an Active Directory or Azure AD account.<br/>-   **Domain-joined and guest** allows users to sign in with an Active Directory, Azure AD, or local standard account. |
+| AccountManagement: DeletionPolicy | - **Delete immediately** will delete the account on sign-out. <br/><br/>- **Delete at disk space threshold** will start deleting accounts when available disk space falls below the threshold you set for **DiskLevelDeletion**, and it will stop deleting accounts when the available disk space reaches the threshold you set for **DiskLevelCaching**. Accounts are deleted in order of oldest accessed to most recently accessed. <br/><br/>Example: The caching number is 50 and the deletion number is 25. Accounts will be cached while the free disk space is above 25%. When the free disk space is less than 25% (the deletion number) at a maintenance period, accounts will be deleted (oldest last used first) until the free disk space is above 50% (the caching number). Accounts will be deleted immediately at sign off of an account if free space is under the deletion threshold and disk space is very low, regardless if the PC is actively in use or not. <br/>- **Delete at disk space threshold and inactive threshold** will apply the same disk space checks as noted above, but also delete accounts if they have not signed in within the number of days specified by **InactiveThreshold**  |
 | AccountManagement: DiskLevelCaching | If you set **DeletionPolicy** to **Delete at disk space threshold**, set the percent of total disk space to be used as the disk space threshold for account caching.   |
 | AccountManagement: DiskLevelDeletion | If you set **DeletionPolicy** to **Delete at disk space threshold**, set the percent of total disk space to be used as the disk space threshold for account deletion.   |
 | AccountManagement: InactiveThreshold | If you set **DeletionPolicy** to **Delete at disk space threshold and inactive threshold**, set the number of days after which an account that has not signed in will be deleted.   | 
@@ -242,92 +243,137 @@ On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work ac
         New-Item -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\SharedPC\Exemptions\$sid" -Force
         ``` 
 
-
 ## Policies set by shared PC mode
+
 Shared PC mode sets local group policies to configure the device. Some of these are configurable using the shared pc mode options.
 
 > [!IMPORTANT]
 > It is not recommended to set additional policies on PCs configured for **Shared PC Mode**. The shared PC mode has been optimized to be fast and reliable over time with minimal to no manual maintenance required.
 
-<table border="1"> 
+### Admin Templates > Control Panel > Personalization
 
-<tr><th><p>Policy name</p></th><th><p>Value</p></th><th><p>When set?</p></th></tr> </thead>
-<tbody>
-<tr><td colspan="3"><p><strong>Admin Templates</strong> &gt; <strong>Control Panel</strong> &gt; <strong>Personalization</strong></p></td></tr> 
-<tr><td><p>Prevent enabling lock screen slide show</p></td><td><p>Enabled</p></td><td><p>Always</p></td></tr> 
-<tr><td><p>Prevent changing lock screen and logon image</p></td><td><p>Enabled</p></td><td><p>Always</p></td></tr> 
-<tr><td colspan="3"><p><strong>Admin Templates</strong> &gt; <strong>System</strong> &gt; <strong>Power Management</strong> &gt; <strong>Button Settings</strong></p></td></tr> 
-<tr><td><p>Select the Power button action (plugged in)</p></td><td><p>Sleep</p></td><td><p>SetPowerPolicies=True</p></td></tr> 
-<tr><td><p>Select the Power button action (on battery)</p></td><td><p>Sleep</p></td><td><p>SetPowerPolicies=True</p></td></tr> 
-<tr><td><p>Select the Sleep button action (plugged in)</p></td><td><p>Sleep</p></td><td><p>SetPowerPolicies=True</p></td></tr> 
-<tr><td><p>Select the lid switch action (plugged in)</p></td><td><p>Sleep</p></td><td><p>SetPowerPolicies=True</p></td></tr> 
-<tr><td><p>Select the lid switch action (on battery)</p></td><td><p>Sleep</p></td><td><p>SetPowerPolicies=True</p></td></tr> 
-<tr><td colspan="3"><p><strong>Admin Templates</strong> &gt; <strong>System</strong> &gt; <strong>Power Management</strong> &gt; <strong>Sleep Settings</strong></p></td></tr> 
-<tr><td><p>Require a password when a computer wakes (plugged in)</p></td><td><p>Enabled</p></td><td><p>SignInOnResume=True</p></td></tr> 
-<tr><td><p>Require a password when a computer wakes (on battery)</p></td><td><p>Enabled</p></td><td><p>SignInOnResume=True</p></td></tr>
-<tr><td><p>Specify the system sleep timeout (plugged in)</p></td><td><p><em>SleepTimeout</em></p></td><td><p>SetPowerPolicies=True</p></td></tr> 
-<tr><td><p>Specify the system sleep timeout (on battery)</p></td><td><p><em>SleepTimeout</em></p></td><td><p>SetPowerPolicies=True</p></td></tr> 
-<tr> <td> <p>Turn off hybrid sleep (plugged in)</p></td> <td> <p>Enabled</p></td><td><p>SetPowerPolicies=True</p></td></tr> 
-<tr> <td> <p>Turn off hybrid sleep (on battery)</p></td> <td> <p>Enabled</p></td><td><p>SetPowerPolicies=True</p></td></tr> 
-<tr> <td> <p>Specify the unattended sleep timeout (plugged in)</p></td> <td> <p><em>SleepTimeout</em></p> </td><td><p>SetPowerPolicies=True</p></td></tr> 
-<tr> <td> <p>Specify the unattended sleep timeout (on battery)</p></td> <td> <p><em>SleepTimeout</em></p> </td><td><p>SetPowerPolicies=True</p></td></tr> 
-<tr> <td> <p>Allow standby states (S1-S3) when sleeping (plugged in)</p></td> <td> <p>Enabled</p></td><td><p>SetPowerPolicies=True</p></td></tr> 
-<tr> <td> <p>Allow standby states (S1-S3) when sleeping (on battery)</p></td> <td> <p>Enabled</p></td> <td><p>SetPowerPolicies=True</p></td></tr> 
-<tr> <td> <p>Specify the system hibernate timeout (plugged in)</p></td> <td> <p>Enabled, 0</p></td><td><p>SetPowerPolicies=True</p></td></tr> 
-<tr> <td> <p>Specify the system hibernate timeout (on battery)</p></td> <td> <p>Enabled, 0</p></td><td><p>SetPowerPolicies=True</p></td></tr> 
-<tr> <td colspan="3"> <p><strong>Admin Templates</strong>&gt;<strong>System</strong>&gt;<strong>Power Management</strong>&gt;<strong>Video and Display Settings</strong></p></td></tr> 
-<tr> <td> <p>Turn off the display (plugged in)</p></td> <td> <p><em>SleepTimeout</em></p> </td></td><td><p>SetPowerPolicies=True</p></td></tr>
- <tr> <td> <p>Turn off the display (on battery</p></td> <td> <p><em>SleepTimeout</em></p> </td></td><td><p>SetPowerPolicies=True</p></td></tr> 
- <tr> <td colspan="3"> <p><strong>Admin Templates</strong>&gt;<strong>System</strong>&gt;<strong>Power Management</strong>&gt;<strong>Energy Saver Settings</strong></p></td></tr> 
- <tr><td>Energy Saver Battery Threshold (on battery)</td><td>70</td><td>SetPowerPolicies=True</td></tr>
-<tr> <td colspan="3"> <p><strong>Admin Templates</strong>&gt;<strong>System</strong>&gt;<strong>Logon</strong></p></td></tr> 
-<tr> <td> <p>Show first sign-in animation</p></td> <td> <p>Disabled</p></td><td><p>Always</p></td></tr> 
-<tr> <td> <p>Hide entry points for Fast User Switching</p></td> <td> <p>Enabled</p></td><td><p>Always</p></td></tr> 
-<tr> <td> <p>Turn on convenience PIN sign-in</p></td> <td> <p>Disabled</p></td><td><p>Always</p></td></tr> 
-<tr> <td> <p>Turn off picture password sign-in</p></td> <td> <p>Enabled</p></td><td><p>Always</p></td></tr> 
-<tr> <td> <p>Turn off app notification on the lock screen</p></td> <td> <p>Enabled</p></td><td><p>Always</p></td></tr> 
-<tr> <td> <p>Allow users to select when a password is required when resuming from connected standby</p></td> <td> <p>Disabled</p></td><td><p>SignInOnResume=True</p></td>
-</tr> 
-<tr> <td> <p>Block user from showing account details on sign-in</p></td> <td> <p>Enabled</p></td><td><p>Always</p></td></tr> 
-<tr> <td colspan="3"> <p><strong>Admin Templates</strong>&gt;<strong>System</strong>&gt;<strong>User Profiles</strong></p></td></tr> 
-<tr> <td> <p>Turn off the advertising ID</p></td> <td> <p>Enabled</p></td><td><p>SetEduPolicies=True</p></td></tr> 
-<tr> <td colspan="3"> <p><strong>Admin Templates</strong>&gt;<strong>Windows Components </strong></p></td></tr> 
-<tr> <td> <p>Do not show Windows Tips </p> </td> <td> <p>Enabled</p></td><td><p>SetEduPolicies=True</p></td></tr> 
-<tr> <td> <p>Turn off Microsoft consumer experiences </p></td> <td> <p>Enabled</p></td><td><p>SetEduPolicies=True</p></td></tr> 
-<tr> <td> <p>Microsoft Passport for Work</p></td> <td> <p>Disabled</p></td><td><p>Always</p></td></tr> 
-<tr> <td> <p>Prevent the usage of OneDrive for file storage</p></td> <td> <p>Enabled</p></td><td><p>Always</p></td></tr> 
-<tr> <td colspan="3"> <p><strong>Admin Templates</strong>&gt;<strong>Windows Components</strong>&gt;<strong>Biometrics</strong></p></td></tr> 
-<tr> <td> <p>Allow the use of biometrics</p></td> <td> <p>Disabled</p></td><td><p>Always</p></td></tr> 
-<tr> <td> <p>Allow users to log on using biometrics</p></td> <td> <p>Disabled</p></td><td><p>Always</p></td></tr> 
-<tr> <td> <p>Allow domain users to log on using biometrics</p></td> <td> <p>Disabled</p></td><td><p>Always</p></td></tr> 
-<tr> <td colspan="3"> <p><strong>Admin Templates</strong>&gt;<strong>Windows Components</strong>&gt;<strong>Data Collection and Preview Builds</strong></p></td></tr> 
-<tr> <td> <p>Toggle user control over Insider builds</p></td> <td> <p>Disabled</p></td><td><p>Always</p></td></tr> 
-<tr> <td> <p>Disable pre-release features or settings</p></td> <td> <p>Disabled</p></td><td><p>Always</p></td></tr> 
-<tr> <td> <p>Do not show feedback notifications</p></td> <td> <p>Enabled</p></td><td><p>Always</p></td></tr> 
-<tr><td>Allow Telemetry</td><td>Basic, 0</td><td>SetEduPolicies=True</td></tr>
-<tr> <td colspan="3"> <p><strong>Admin Templates</strong>&gt;<strong>Windows Components</strong>&gt;<strong>File Explorer</strong></p></td></tr> 
-<tr> <td> <p>Show lock in the user tile menu</p></td> <td> <p>Disabled</p></td><td><p>Always</p></td></tr> 
-<tr> <td colspan="3"> <p><strong>Admin Templates</strong>&gt;<strong>Windows Components</strong>&gt;<strong>Maintenance Scheduler</strong></p></td></tr> 
-<tr> <td> <p>Automatic Maintenance Activation Boundary</p></td> <td> <p><em>MaintenanceStartTime</em></p></td><td><p>Always</p></td></tr> 
-<tr> <td> <p>Automatic Maintenance Random Delay</p></td> <td> <p>Enabled, 2 hours</p></td><td><p>Always</p></td></tr> 
-<tr> <td> <p>Automatic Maintenance WakeUp Policy</p></td> <td> <p>Enabled</p></td><td><p>Always</p></td></tr> 
-<tr> <td colspan="3"> <p><strong>Admin Templates</strong>&gt;<strong>Windows Components</strong>&gt;<strong>Windows Hello for Business</strong></p></td></tr> 
-<tr> <td> <p>Use phone sign-in</p></td> <td> <p>Disabled</p></td><td><p>Always</p></td></tr> 
-<tr> <td> <p>Use Windows Hello for Business</p></td> <td> <p>Disabled</p></td><td><p>Always</p></td></tr> 
-<tr> <td> <p>Use biometrics</p></td> <td> <p>Disabled</p></td><td><p>Always</p></td></tr> 
-<tr> <td colspan="3"> <p><strong>Admin Templates</strong>&gt;<strong>Windows Components</strong>&gt;<strong>OneDrive</strong></p></td></tr> 
-<tr> <td> <p>Prevent the usage of OneDrive for file storage</p></td> <td> <p>Enabled</p></td><td><p>Always</p></td></tr> 
-<tr> <td colspan="3"> <p><strong>Windows Settings</strong>&gt;<strong>Security Settings</strong>&gt;<strong>Local Policies</strong>&gt;<strong>Security Options</strong></p></td> 
-</tr>
-<tr> <td> <p>Interactive logon: Do not display last user name</p> </td> <td> <p>Enabled, Disabled when account model is only guest</p> </td><td><p>Always</p></td></tr>
-<tr> <td> <p>Interactive logon: Sign-in last interactive user automatically after a system-initiated restart</p> </td> <td> <p>Disabled</p> </td> <td><p>Always</p></td> 
-</tr> 
-<tr> <td> <p>Shutdown: Allow system to be shut down without having to log on</p> </td> <td> <p>Disabled</p> </td><td><p>Always</p></td></tr> 
-<tr> <td> <p>User Account Control: Behavior of the elevation prompt for standard users</p> </td> <td> <p>Auto deny</p> </td><td><p>Always</p></td></tr> 
-</tbody>
-</table> </br></br>
+|Policy Name| Value|When set?|
+|--- |--- |--- |
+|Prevent enabling lock screen slide show|Enabled|Always|
+|Prevent changing lock screen and logon image|Enabled|Always|
 
+### Admin Templates > System > Power Management > Button Settings
 
+|Policy Name| Value|When set?|
+|--- |--- |--- |
+|Select the Power button action (plugged in)|Sleep|SetPowerPolicies=True|
+|Select the Power button action (on battery)|Sleep|SetPowerPolicies=True|
+|Select the Sleep button action (plugged in)|Sleep|SetPowerPolicies=True|
+|Select the lid switch action (plugged in)|Sleep|SetPowerPolicies=True|
+|Select the lid switch action (on battery)|Sleep|SetPowerPolicies=True|
 
+### Admin Templates > System > Power Management > Sleep Settings
 
+|Policy Name| Value|When set?|
+|--- |--- |--- |
+|Require a password when a computer wakes (plugged in)|Enabled|SignInOnResume=True|
+|Require a password when a computer wakes (on battery)|Enabled|SignInOnResume=True|
+|Specify the system sleep timeout (plugged in)|*SleepTimeout*|SetPowerPolicies=True|
+|Specify the system sleep timeout (on battery)|*SleepTimeout*|SetPowerPolicies=True|
+|Turn off hybrid sleep (plugged in)|Enabled|SetPowerPolicies=True|
+|Turn off hybrid sleep (on battery)|Enabled|SetPowerPolicies=True|
+|Specify the unattended sleep timeout (plugged in)|*SleepTimeout*|SetPowerPolicies=True|
+|Specify the unattended sleep timeout (on battery)|*SleepTimeout*|SetPowerPolicies=True|
+|Allow standby states (S1-S3) when sleeping (plugged in)|Enabled|SetPowerPolicies=True|
+|Allow standby states (S1-S3) when sleeping (on battery)|Enabled |SetPowerPolicies=True|
+|Specify the system hibernate timeout (plugged in)|Enabled, 0|SetPowerPolicies=True|
+|Specify the system hibernate timeout (on battery)|Enabled, 0|SetPowerPolicies=True|
 
+### Admin Templates>System>Power Management>Video and Display Settings
+
+|Policy Name| Value|When set?|
+|--- |--- |--- |
+|Turn off the display (plugged in)|*SleepTimeout*|SetPowerPolicies=True|
+|Turn off the display (on battery|*SleepTimeout*|SetPowerPolicies=True|
+
+### Admin Templates>System>Power Management>Energy Saver Settings
+
+|Policy Name| Value|When set?|
+|--- |--- |--- |
+|Energy Saver Battery Threshold (on battery)|70|SetPowerPolicies=True|
+
+### Admin Templates>System>Logon
+
+|Policy Name| Value|When set?|
+|--- |--- |--- |
+|Show first sign-in animation|Disabled|Always|
+|Hide entry points for Fast User Switching|Enabled|Always|
+|Turn on convenience PIN sign-in|Disabled|Always|
+|Turn off picture password sign-in|Enabled|Always|
+|Turn off app notification on the lock screen|Enabled|Always|
+|Allow users to select when a password is required when resuming from connected standby|Disabled|SignInOnResume=True|
+|Block user from showing account details on sign-in|Enabled|Always|
+
+### Admin Templates>System>User Profiles
+
+|Policy Name| Value|When set?|
+|--- |--- |--- |
+|Turn off the advertising ID|Enabled|SetEduPolicies=True|
+
+### Admin Templates>Windows Components
+
+|Policy Name| Value|When set?|
+|--- |--- |--- |
+|Do not show Windows Tips |Enabled|SetEduPolicies=True|
+|Turn off Microsoft consumer experiences |Enabled|SetEduPolicies=True|
+|Microsoft Passport for Work|Disabled|Always|
+|Prevent the usage of OneDrive for file storage|Enabled|Always|
+
+### Admin Templates>Windows Components>Biometrics
+
+|Policy Name| Value|When set?|
+|--- |--- |--- |
+|Allow the use of biometrics|Disabled|Always|
+|Allow users to log on using biometrics|Disabled|Always|
+|Allow domain users to log on using biometrics|Disabled|Always|
+
+### Admin Templates>Windows Components>Data Collection and Preview Builds
+
+|Policy Name| Value|When set?|
+|--- |--- |--- |
+|Toggle user control over Insider builds|Disabled|Always| 
+|Disable pre-release features or settings|Disabled|Always|
+|Do not show feedback notifications|Enabled|Always|
+|Allow Telemetry|Basic, 0|SetEduPolicies=True|
+
+### Admin Templates>Windows Components>File Explorer
+
+|Policy Name| Value|When set?|
+|--- |--- |--- |
+|Show lock in the user tile menu|Disabled|Always|
+
+### Admin Templates>Windows Components>Maintenance Scheduler
+
+|Policy Name| Value|When set?|
+|--- |--- |--- |
+|Automatic Maintenance Activation Boundary|*MaintenanceStartTime*|Always|
+|Automatic Maintenance Random Delay|Enabled, 2 hours|Always|
+|Automatic Maintenance WakeUp Policy|Enabled|Always|
+
+### Admin Templates>Windows Components>Windows Hello for Business
+
+|Policy Name| Value|When set?|
+|--- |--- |--- |
+|Use phone sign-in|Disabled|Always|
+|Use Windows Hello for Business|Disabled|Always|
+|Use biometrics|Disabled|Always|
+
+### Admin Templates>Windows Components>OneDrive
+
+|Policy Name| Value|When set?|
+|--- |--- |--- |
+|Prevent the usage of OneDrive for file storage|Enabled|Always|
+
+### Windows Settings>Security Settings>Local Policies>Security Options
+
+|Policy Name| Value|When set?|
+|--- |--- |--- |
+|Interactive logon: Do not display last user name|Enabled, Disabled when account model is only guest|Always|
+|Interactive logon: Sign-in last interactive user automatically after a system-initiated restart|Disabled |Always|
+|Shutdown: Allow system to be shut down without having to log on|Disabled|Always|
+|User Account Control: Behavior of the elevation prompt for standard users|Auto deny|Always|

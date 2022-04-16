@@ -4,7 +4,7 @@ description: This topic will walk you through the steps necessary to create the 
 ms.assetid: 5103c418-0c61-414b-b93c-a8e8207d1226
 ms.reviewer: 
 manager: dougeby
-ms.author: greglin
+ms.author: aaroncz
 keywords: deploy, system requirements
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ---
 
@@ -257,6 +257,5 @@ When you have completed all the steps in this section to prepare for deployment,
 **Sample files**
 
 The following sample files are also available to help automate some MDT deployment tasks. This guide does not use these files, but they are made available here so you can see how some tasks can be automated with Windows PowerShell.
-- [Gather.ps1](/samples/browse/?redirectedfrom=TechNet-Gallery). This sample Windows PowerShell script performs the MDT Gather process in a simulated MDT environment. This allows you to test the MDT gather process and check to see if it is working correctly without performing a full Windows deployment.
 - [Set-OUPermissions.ps1](https://go.microsoft.com/fwlink/p/?LinkId=619362). This sample Windows PowerShell script creates a domain account and then configures OU permissions to allow the account to join machines to the domain in the specified OU.
 - [MDTSample.zip](https://go.microsoft.com/fwlink/p/?LinkId=619363). This sample web service shows you how to configure a computer name dynamically using MDT.

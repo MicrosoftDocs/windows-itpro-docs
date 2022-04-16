@@ -35,6 +35,8 @@
                   href: manage-packaged-apps-with-windows-defender-application-control.md
                 - name: Use WDAC to control specific plug-ins, add-ins, and modules
                   href: use-windows-defender-application-control-policy-to-control-specific-plug-ins-add-ins-and-modules.md
+                - name: Understand WDAC policy settings
+                  href: understanding-wdac-policy-settings.md
             - name: Use multiple WDAC policies
               href: deploy-multiple-windows-defender-application-control-policies.md
         - name: Create your WDAC policy
@@ -50,6 +52,8 @@
                   href: create-wdac-policy-for-fully-managed-devices.md
                 - name: Create a WDAC policy for fixed-workload devices
                   href: create-initial-default-policy.md
+                - name: Create a WDAC deny list policy
+                  href: create-wdac-deny-policy.md
                 - name: Microsoft recommended block rules
                   href: microsoft-recommended-block-rules.md
                 - name: Microsoft recommended driver block rules
@@ -100,10 +104,10 @@
     - name: Windows Defender Application Control operational guide
       href: windows-defender-application-control-operational-guide.md
       items: 
-        - name: Understanding Application Control event IDs
-          href: event-id-explanations.md
         - name: Understanding Application Control event tags
           href: event-tag-explanations.md
+        - name: Understanding Application Control event IDs
+          href: event-id-explanations.md
         - name: Query WDAC events with Advanced hunting
           href: querying-application-control-events-centrally-using-advanced-hunting.md
         - name: Known Issues

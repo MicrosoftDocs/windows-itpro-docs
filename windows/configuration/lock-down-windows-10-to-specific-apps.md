@@ -3,16 +3,17 @@ title: Set up a multi-app kiosk on Windows 10 | Microsoft Docs
 description: Learn how to configure a kiosk device running Windows 10 so that users can only run a few specific apps.
 ms.assetid: 14DDDC96-88C7-4181-8415-B371F25726C8
 ms.reviewer: sybruckm
-manager: dansimp
+manager: dougeby
 keywords: ["lockdown", "app restrictions", "applocker"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: edu, security
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Set up a multi-app kiosk on Windows 10 devices
@@ -352,7 +353,7 @@ Starting with Windows 10 version 1809, you can configure the display name that w
 On domain-joined devices, local user accounts aren't shown on the sign-in screen by default. To show the **AutoLogonAccount** on the sign-in screen, enable the following Group Policy setting: **Computer Configuration > Administrative Templates > System > Logon > Enumerate local users on domain-joined computers**. (The corresponding MDM policy setting is [WindowsLogon/EnumerateLocalUsersOnDomainJoinedComputers in the Policy CSP](/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-enumeratelocalusersondomainjoinedcomputers).)
 
 >[!IMPORTANT]
->When Exchange Active Sync (EAS) password restrictions are active on the device, the autologon feature does not work. This behavior is by design. For more informations, see [How to turn on automatic logon in Windows](https://support.microsoft.com/help/324737/how-to-turn-on-automatic-logon-in-windows).
+>When Exchange Active Sync (EAS) password restrictions are active on the device, the autologon feature does not work. This behavior is by design. For more informations, see [How to turn on automatic logon in Windows](/troubleshoot/windows-server/user-profiles-and-logon/turn-on-automatic-logon).
 
 ##### Config for individual accounts
 
