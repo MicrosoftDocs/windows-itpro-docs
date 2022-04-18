@@ -76,6 +76,7 @@ Now that the app is in your Microsoft Store for Education inventory, you can cho
 If you need additional licenses for **Minecraft: Education Edition**, see [Purchase additional licenses](./education-scenarios-store-for-business.md#purchase-additional-licenses).
 
 ### <a href="" id="volume-license"></a>Minecraft: Education Edition - volume licensing
+
 Qualified education institutions can purchase Minecraft: Education Edition licenses through their Microsoft channel partner. Schools need to be part of the Enrollment for Education Solutions (EES) volume licensing program. Educational institutions should work with their channel partner to determine which Minecraft: Education Edition licensing offer is best for their institution. The process looks like this: 
 
 - Your channel partner will submit and process your volume license order, your licenses will be shown on [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx), and the licenses will be available in your [Microsoft Store for Education](https://www.microsoft.com/business-store) inventory. 
@@ -83,13 +84,17 @@ Qualified education institutions can purchase Minecraft: Education Edition licen
 - Sign in to [Microsoft Store for Education](https://educationstore.microsoft.com) to distribute and manage the Minecraft: Education Edition licenses. For more information on distribution options, see [Distribute Minecraft](#distribute-minecraft)
 
 ## Minecraft: Education Edition payment options
+
 You can pay for Minecraft: Education Edition with a debit or credit card, or with an invoice. 
 
 ### Debit or credit cards
+
 During the purchase, click **Get started! Add a way to pay.** Provide the info needed for your debit or credit card.
 
 ### Invoices
+
 Invoices are now a supported payment method for Minecraft: Education Edition. There are a few requirements:
+
 - Admins only (not supported for Teachers)
 - $500 invoice minimum for your initial purchase
 - $15,000 invoice maximum (for all invoices within your organization)
@@ -112,6 +117,7 @@ After you've finished the purchase, you can find your invoice by checking **Mine
 > After you complete a purchase, it can take up to twenty-four hours for the app to appear in **Apps & software**.
 
 **To view your invoice**
+
 1. In Microsoft Store for Education, click **Manage** and then click **Apps & software**. 
 2. Click **Minecraft: Education Edition** in the list of apps. 
 3. On **Minecraft: Education Edition**, click **View Bills**.
@@ -120,7 +126,7 @@ After you've finished the purchase, you can find your invoice by checking **Mine
 
 4. On **Invoice Bills**, click the invoice number to view and download your invoice. It downloads as a .pdf.
 
-   ![Minecraft: Education Edition app details page with view bills link highlighted.](images/mcee-invoice-bills.png)
+   ![Minecraft: Education Edition app details page with view invoice bills link highlighted.](images/mcee-invoice-bills.png)
 
 The **Payment Instructions** section on the first page of the invoice has information on invoice amount, due date, and how to pay with electronic funds transfer, or with a check. 
 
@@ -154,21 +160,21 @@ For Minecraft: Education Edition, you can use auto assign subscription to contro
 
 1. Sign in to [Microsoft Store for Education](https://educationstore.microsoft.com)
 2. Click Manage.
-    
+
     You'll see Minecraft: Education Edition product page.
-     
+
     ![Minecraft Education Edition product page with auto assign control highlighted.](images/mcee-auto-assign-legacy.png)
- 
+
    -Or-
- 
-    ![Minecraft Education Edition product page with auto assign control highlighted.](images/mcee-auto-assign-bd.png)
-    
-3. Slide the **Auto assign subscription** or click **Turn off auto assign subscription**.     
+
+    ![Minecraft Education Edition product page with auto assign control highlighted-2](images/mcee-auto-assign-bd.png)
+3. Slide the **Auto assign subscription** or click **Turn off auto assign subscription**.
 
 ### Install for me
-You can install the app on your PC. This gives you a chance to test the app and know how you might help others in your organization use the app.   
 
-1. Sign in to [Microsoft Store for Education](https://educationstore.microsoft.com). 
+You can install the app on your PC. This gives you a chance to test the app and know how you might help others in your organization use the app.
+
+1. Sign in to [Microsoft Store for Education](https://educationstore.microsoft.com).
 2. Click **Manage**, and then click **Install**.
 
     <!-- ![Minecraft Education Edition product page.](images/mc-install-for-me-teacher.png) -->
@@ -176,20 +182,19 @@ You can install the app on your PC. This gives you a chance to test the app and 
 3. Click **Install**.  
 
 ### Assign to others
-Enter email addresses for your students, and each student will get an email with a link to install the app. This option is best for older, more tech-savvy students who will always use the same PC at school. You can assign the app to individuals, groups, or add it to your private store, where students and teachers in your organization can download the app. 
 
+Enter email addresses for your students, and each student will get an email with a link to install the app. This option is best for older, more tech-savvy students who will always use the same PC at school. You can assign the app to individuals, groups, or add it to your private store, where students and teachers in your organization can download the app.
 
 **To assign to others**
-1. Sign in to [Microsoft Store for Education](https://educationstore.microsoft.com). 
+
+1. Sign in to [Microsoft Store for Education](https://educationstore.microsoft.com).
 2. Click **Manage**.
 
     ![Minecraft Education Edition product page.](images/mc-install-for-me-teacher.png)
-3. Click **Invite people**.
- 
+3. Click **Invite people**. 
 4. Type the name, or email address of the student or group you want to assign the app to, and then click **Assign**. 
 
-    You can only assign the app to students with work or school accounts. If you don't find the student, you might need to add a work or school account for the student.    
-   
+    You can only assign the app to students with work or school accounts. If you don't find the student, you might need to add a work or school account for the student.
     ![Assign to people showing student name.](images/minecraft-assign-to-people-name.png)
 
 **To finish Minecraft install (for students)**
@@ -225,14 +230,15 @@ Download for others allows teachers or IT admins to download an app that they ca
 Minecraft: Education Edition will not install if there are updates pending for other apps on the PC. Before installing Minecraft, check to see if there are pending updates for Microsoft Store apps. 
 
 **To check for app updates**
+
 1. Start Microsoft Store app on the PC (click **Start**, and type **Store**).
 2. Click the account button, and then click **Downloads and updates**.
 
-      ![Microsoft Store app showing access to My Library.](images/minecraft-private-store.png)
+      ![Microsoft Store app showing Downloads and updates](images/minecraft-private-store.png)
       
 3. Click **Check for updates**, and install all available updates. 
 
-      ![Microsoft Store app showing access to My Library.](images/mc-check-for-updates.png)
+      ![Microsoft Store app displaying Check for updates.](images/mc-check-for-updates.png)
       
 4. Restart the computer before installing Minecraft: Education Edition.  
 
@@ -241,8 +247,7 @@ You'll download a .zip file, extract the files, and then use one of the files to
 
 1. **Download Minecraft Education Edition.zip**. From the **Minecraft: Education Edition** page, click **Download for others** tab, and then click **Download**.
 
-    ![Microsoft Store app showing access to My Library.](images/mc-dnld-others-teacher.png)
- 
+    ![Microsoft Store app showing the Download.](images/mc-dnld-others-teacher.png)
 2. **Extract files**. Find the .zip file that you downloaded and extract the files. This is usually your **Downloads** folder, unless you chose to save the .zip file to a different location. Right-click the file and choose **Extract all**.
 3. **Save to USB drive**. After you've extracted the files, save the Minecraft: Education Edition folder to a USB drive, or to a network location that you can access from each PC.  
 4. **Install app**. Use the USB drive to copy the Minecraft folder to each Windows 10 PC where you want to install Minecraft: Education Edition. Open Minecraft: Education Edition folder, right-click **InstallMinecraftEducationEdition.bat** and click **Run as administrator**. 
