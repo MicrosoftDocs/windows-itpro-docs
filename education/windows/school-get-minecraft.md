@@ -20,27 +20,30 @@ ms.topic: conceptual
 
 **Applies to:**
 
--   Windows 10  
+- Windows 10  
 
 When you sign up for a [Minecraft: Education Edition](https://education.minecraft.net) trial, or purchase a [Minecraft: Education Edition](https://education.minecraft.net) subscription. Minecraft will be added to the inventory in your Microsoft Store for Education which is associated with your Azure Active Directory (Azure AD) tenant. Your Microsoft Store for Education is only displayed to members of your organization.
 
 >[!Note]
 >If you don't have an Azure AD or Office 365 tenant, you can set up a free Office 365 Education subscription when you request Minecraft: Education Edition. For more information see [Office 365 Education plans and pricing](https://products.office.com/academic/compare-office-365-education-plans).
 
-## Settings for Office 365 A3 or Office 365 A5 customers
+## Settings for Microsoft 365 A3 or Microsoft 365 A5 customers
 
 Schools that purchased these products have an extra option for making Minecraft: Education Edition available to their students:
-- Office 365 A3 or Office 365 A5
-- Enterprise Mobility + Security E3 or Enterprise Mobility + Security E5
+
+- Microsoft 365 A3 or Microsoft 365 A5
 - Minecraft: Education Edition
 
-If your school has these products in your tenant, admins can choose to enable Minecraft: Education Edition for students using Office 365 A3 or Office 365 A5. On your Office 365 A3 or Office 365 A5 details page in **Microsoft Store for Education**, under **Settings & actions**, you can select **Allow access to Minecraft: Education Edition for users of Office 365 A3 or Office 365 A5**. 
+If your school has these products in your tenant, admins can choose to enable Minecraft: Education Edition for students using Microsoft 365 A3 or Microsoft 365 A5. From the left-hand menu in Microsoft Admin Center, select Users. From the Users list, select the users you want to add or remove for Minecraft: Education Edition access. Add the relevant A3 or A5 license if it hasn't been assigned already.  
 
-When this setting is selected, students in your tenant can use Minecraft: Education Edition even if they do not have a trial or a direct license assigned to them. 
+> [!Note]
+> If you add a faculty license, the user will be assigned an instructor role in the application and will have elevated permissions.
 
-If you turn off this setting after students have been using Minecraft: Education Edition, they will have 25 more days to use Minecraft: Education Edition before they do not have access. 
+After selecting the appropriate product license, ensure Minecraft: Education Edition is toggled on or off, depending on if you want to add or remove Minecraft: Education Edition from the user (it will be on by default).
 
-## Add Minecraft to your Microsoft Store for Education 
+If you turn off this setting after students have been using Minecraft: Education Edition, they will have up to 30 more days to use Minecraft: Education Edition before they don't have access.
+
+## Add Minecraft to your Microsoft Store for Education
 
 You can start with the Minecraft: Education Edition trial to get individual copies of the app. For more information, see [Minecraft: Education Edition - direct purchase](#individual-copies). 
 
