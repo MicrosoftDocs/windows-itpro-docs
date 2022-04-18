@@ -25,7 +25,7 @@ ms.topic: conceptual
 When you sign up for a [Minecraft: Education Edition](https://education.minecraft.net) trial, or purchase a [Minecraft: Education Edition](https://education.minecraft.net) subscription. Minecraft will be added to the inventory in your Microsoft Store for Education which is associated with your Azure Active Directory (Azure AD) tenant. Your Microsoft Store for Education is only displayed to members of your organization.
 
 >[!Note]
->If you don't have an Azure AD or Office 365 tenant, you can set up a free Office 365 Education subscription when you request Minecraft: Education Edition. For more information see [Office 365 Education plans and pricing](https://products.office.com/academic/compare-office-365-education-plans).
+>If you don't have an Azure AD or Office 365 tenant, you can set up a free Office 365 Education subscription when you request Minecraft: Education Edition. For more information, see [Office 365 Education plans and pricing](https://products.office.com/academic/compare-office-365-education-plans).
 
 ## Settings for Microsoft 365 A3 or Microsoft 365 A5 customers
 
@@ -47,7 +47,7 @@ If you turn off this setting after students have been using Minecraft: Education
 
 You can start with the Minecraft: Education Edition trial to get individual copies of the app. For more information, see [Minecraft: Education Edition - direct purchase](#individual-copies). 
 
-If you’ve been approved and are part of the Enrollment for Education Solutions volume license program, you can purchase a volume licenses for Minecraft: Education Edition. For more information, see [Minecraft: Education Edition - volume license](#volume-license). 
+If you’ve been approved and are part of the Enrollment for Education Solutions volume license program, you can purchase a volume license for Minecraft: Education Edition. For more information, see [Minecraft: Education Edition - volume license](#volume-license). 
 
 ### <a href="" id="individual-copies"></a>Minecraft: Education Edition - direct purchase
 
