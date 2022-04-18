@@ -89,7 +89,7 @@ By default USMT migrates many settings, most of which are related to the user pr
 -   Specific file types. USMT templates migrate the following file types: .accdb, .ch3, .csv, .dif, .doc\*, .dot\*, .dqy, .iqy, .mcw, .mdb\*, .mpp, .one\*, .oqy, .or6, .pot\*, .ppa, .pps\*, .ppt\*, .pre, .pst, .pub, .qdf, .qel, .qph, .qsd, .rqy, .rtf, .scd, .sh3, .slk, .txt, .vl\*, .vsd, .wk\*, .wpd, .wps, .wq1, .wri, .xl\*, .xla, .xlb, .xls\*.
 
     **Note**  
-    The OpenDocument extensions (\*.odt, \*.odp, \*.ods, etc.) that Microsoft Office applications can use are not migrated by default.
+    The OpenDocument extensions (\*.odt, \*.odp, \*.ods, etc.) that Microsoft Office applications can use aren't migrated by default.
 
 -   Operating system component settings
 -   Application settings
@@ -248,7 +248,7 @@ For more information on WSUS, see the [Windows Server Update Services Overview](
 ## Unified Extensible Firmware Interface
 
 
-For many years BIOS has been the industry standard for booting a PC. BIOS has served us well, but it's time to replace it with something better. **UEFI** is the replacement for BIOS, so it is important to understand the differences between BIOS and UEFI. In this section, you learn the major differences between the two and how they affect operating system deployment.
+For many years BIOS has been the industry standard for booting a PC. BIOS has served us well, but it's time to replace it with something better. **UEFI** is the replacement for BIOS, so it's important to understand the differences between BIOS and UEFI. In this section, you learn the major differences between the two and how they affect operating system deployment.
 
 ### Introduction to UEFI
 
@@ -274,7 +274,7 @@ With UEFI, you can benefit from:
 
 ### Versions
 
-UEFI Version 2.3.1B is the version required for Windows 8 and later logo compliance. Later versions have been released to address issues; a small number of machines may need to upgrade their firmware to fully support the UEFI implementation in Windows 8 and later.
+UEFI Version 2.3.1B is the version required for Windows 8 and later logo compliance. Later versions have been released to address issues; a few machines may need to upgrade their firmware to fully support the UEFI implementation in Windows 8 and later.
 
 ### Hardware support for UEFI
 
@@ -289,16 +289,16 @@ In regard to UEFI, hardware is divided into four device classes:
 
 Microsoft started with support for EFI 1.10 on servers and then added support for UEFI on both clients and servers.
 
-With UEFI 2.3.1, there are both x86 and x64 versions of UEFI. Windows 10 supports both. However, UEFI does not support cross-platform boot. This means that a computer that has UEFI x64 can run only a 64-bit operating system, and a computer that has UEFI x86 can run only a 32-bit operating system.
+With UEFI 2.3.1, there are both x86 and x64 versions of UEFI. Windows 10 supports both. However, UEFI doesn't support cross-platform boot. This means that a computer that has UEFI x64 can run only a 64-bit operating system, and a computer that has UEFI x86 can run only a 32-bit operating system.
 
 ### How UEFI is changing operating system deployment
 
 There are many things that affect operating system deployment as soon as you run on UEFI/EFI-based hardware. Here are considerations to keep in mind when working with UEFI devices:
 
 -   Switching from BIOS to UEFI in the hardware is easy, but you also need to reinstall the operating system because you need to switch from MBR/NTFS to GPT/FAT32 and NTFS.
--   When you deploy to a Class 2 device, make sure the boot option you select matches the setting you want to have. It is common for old machines to have several boot options for BIOS but only a few for UEFI, or vice versa.
--   When deploying from media, remember the media has to be FAT32 for UEFI, and FAT32 has a file-size limitation of 4GB.
--   UEFI does not support cross-platform booting; therefore, you need to have the correct boot media (32- or 64-bit).
+-   When you deploy to a Class 2 device, make sure the boot option you select matches the setting you want to have. It's common for old machines to have several boot options for BIOS but only a few for UEFI, or vice versa.
+-   When deploying from media, remember the media has to be FAT32 for UEFI, and FAT32 has a file-size limitation of 4 GB.
+-   UEFI doesn't support cross-platform booting; therefore, you need to have the correct boot media (32-bit or 64-bit).
 
 For more information on UEFI, see the [UEFI firmware](/previous-versions/windows/it-pro/windows-8.1-and-8/hh824898(v=win.10)) overview and related resources.
 
