@@ -29,7 +29,7 @@ You can configure a mobile device management (MDM) tool to synchronize your Micr
 
 Your MDM tool needs to be installed and configured in Azure AD, in the same Azure AD directory used with Microsoft Store.
 
-In Azure AD management portal, find the MDM application, and then add it to your directory. Once the MDM has been configured in Azure AD, you can authorize the tool to work with the Microsoft Store for Business or Microsoft Store for Education. This allows the MDM tool to call Microsoft Store management tool services. For more information, see [Configure MDM provider](configure-mdm-provider-microsoft-store-for-business.md) and [Manage apps you purchased from the Microsoft Store for Business with Microsoft Intune](/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
+In Azure AD management portal, find the MDM application, and then add it to your directory. Once the MDM has been configured in Azure AD, you can authorize the tool to work with the Microsoft Store for Business or Microsoft Store for Education. This allows the MDM tool to call Microsoft Store management tool services. For more information, see [Configure MDM provider](configure-mdm-provider-microsoft-store-for-business.md) and [Manage apps you purchased from the Microsoft Store for Business with Microsoft Intune](/mem/intune/apps/windows-store-for-business).
 
 Microsoft Store services provide:
 
@@ -61,4 +61,4 @@ This diagram shows how you can use a management tool to distribute an online-lic
 ## Related topics
 
 [Configure MDM Provider](configure-mdm-provider-microsoft-store-for-business.md)
-[Manage apps you purchased from the Microsoft Store for Business and Education with Microsoft Intune](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
+[Manage apps you purchased from the Microsoft Store for Business and Education with Microsoft Intune](/mem/intune/apps/windows-store-for-business)

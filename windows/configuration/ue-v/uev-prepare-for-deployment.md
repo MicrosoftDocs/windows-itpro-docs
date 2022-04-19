@@ -313,7 +313,7 @@ The UE-V settings storage location and settings template catalog support storing
 
 -   The share can use Distributed File System (DFS) replication, but Distributed File System Replication (DFSR) is specifically not supported. Distributed File System Namespaces (DFSN) are supported. For detailed information, see:
 
-    - [Information about roaming profiles from the Directory Services team](https://blogs.technet.microsoft.com/askds/tag/roaming-profiles/)
+    - [Deploying Roaming User Profiles](/windows-server/storage/folder-redirection/deploy-roaming-user-profiles)
     
     - [Information about Microsoft support policy for a DFS-R and DFS-N deployment scenario](/troubleshoot/windows-server/networking/support-policy-for-dfsr-dfsn-deployment)
 

@@ -43,7 +43,7 @@ No. PowerShell-based DSC is rapidly gaining popularity, and more DSC tools are c
 
 **Does SCT support the creation of Microsoft Endpoint Manager DCM packs?**
 
-No. A potential alternative is Desired State Configuration (DSC), a feature of the [Windows Management Framework](https://www.microsoft.com/download/details.aspx?id=40855). A tool that supports conversion of GPO Backups to DSC format can be found [here](https://github.com/Microsoft/BaselineManagement).
+No. A potential alternative is Desired State Configuration (DSC), a feature of the [Windows Management Framework](https://www.microsoft.com/download/details.aspx?id=54616). A tool that supports conversion of GPO Backups to DSC format can be found [here](https://github.com/Microsoft/BaselineManagement).
 
 **Does SCT support the creation of Security Content Automation Protocol (SCAP)-format policies?**
 

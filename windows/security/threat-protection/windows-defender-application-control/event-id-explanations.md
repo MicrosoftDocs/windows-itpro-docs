@@ -109,7 +109,7 @@ For a simple solution for converting hex to binary, follow these steps.
 
 This view will provide the hex code in binary form, with each bit address shown separately.  The bit addresses start at 0 in the bottom right.  Each bit address correlates to a specific event policy-rule option.  If the bit address holds a value of 1, the setting is in the policy.
 
-Next, use the bit addresses and their values from the table below to determine the state of each [policy rule-option](/select-types-of-rules-to-create#table-1-windows-defender-application-control-policy---rule-options). For example, if the bit address of 16 holds a value of 1, then the “Enabled:Audit Mode (Default)” is in the policy meaning the policy is in audit mode.
+Next, use the bit addresses and their values from the table below to determine the state of each [policy rule-option](select-types-of-rules-to-create.md#table-1-windows-defender-application-control-policy---rule-options). For example, if the bit address of 16 holds a value of 1, then the “Enabled:Audit Mode (Default)” is in the policy meaning the policy is in audit mode.
 
 | Bit Address | Policy Rule Option |
 |-------|------|

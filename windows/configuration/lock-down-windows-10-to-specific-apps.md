@@ -225,7 +225,7 @@ The following example shows how to allow user access to the Downloads folder in 
     </Profiles>
 </AssignedAccessConfiguration>
 ```
-FileExplorerNamespaceRestriction has been extended in current Windows 10 Prerelease for finer granularity and easier use, see in the [Assigned access XML reference.](kiosk-xml.md) for full samples. The changes will allow IT Admin to configure if user can access Downloads folder, Removable drives, or no restriction at all by using certain new elements. Note that FileExplorerNamesapceRestrictions and AllowedNamespace:Downloads are available in namespace https://schemas.microsoft.com/AssignedAccess/201810/config, AllowRemovableDrives and NoRestriction are defined in a new namespace https://schemas.microsoft.com/AssignedAccess/2020/config.
+FileExplorerNamespaceRestriction has been extended in current Windows 10 Prerelease for finer granularity and easier use, see in the [Assigned access XML reference.](kiosk-xml.md) for full samples. The changes will allow IT Admin to configure if user can access Downloads folder, Removable drives, or no restriction at all by using certain new elements. Note that FileExplorerNamesapceRestrictions and AllowedNamespace:Downloads are available in namespace ```https://schemas.microsoft.com/AssignedAccess/201810/config```, AllowRemovableDrives and NoRestriction are defined in a new namespace ```https://schemas.microsoft.com/AssignedAccess/2020/config```.
 
 * When FileExplorerNamespaceRestrictions node is not used, or used but left empty, user will not be able to access any folder in common dialog (e.g. Save As in Microsoft Edge browser).
 * When Downloads is mentioned in allowed namespace, user will be able to access Downloads folder.

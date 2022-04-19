@@ -66,7 +66,7 @@ Many settings in Windows Configuration Designer will display documentation for t
 
 Most, if not all, CSPs are surfaced through your MDM service. If you see a CSP that provides a capability that you want to make use of and cannot find that capability in your MDM service, contact your MDM provider for assistance. It might be named differently than you expected. You can see the CSPs supported by MDM in the [Configuration service provider reference](/windows/client-management/mdm/configuration-service-provider-reference).
 
-When a CSP is available but is not explicitly included in your MDM solution, you may be able to make use of the CSP by using OMA-URI settings. In Intune, for example, you can use [custom policy settings](https://go.microsoft.com/fwlink/p/?LinkID=616316) to deploy settings. Intune documents [a partial list of settings](https://go.microsoft.com/fwlink/p/?LinkID=616317) that you can enter in the **OMA-URI Settings** section of a custom policy, if your MDM service provides that extension. You'll notice that the list doesn't explain the meanings of the allowed and default values, so use the [CSP reference documentation](/windows/client-management/mdm/configuration-service-provider-reference) to locate that information.
+When a CSP is available but is not explicitly included in your MDM solution, you may be able to make use of the CSP by using OMA-URI settings. In Intune, for example, you can use [custom policy settings](/mem/intune/configuration/custom-settings-configure) to deploy settings. Intune documents [a partial list of settings](/mem/intune/configuration/custom-settings-windows-10) that you can enter in the **OMA-URI Settings** section of a custom policy, if your MDM service provides that extension. You'll notice that the list doesn't explain the meanings of the allowed and default values, so use the [CSP reference documentation](/windows/client-management/mdm/configuration-service-provider-reference) to locate that information.
 
 ### CSPs in Lockdown XML
 
@@ -157,7 +157,6 @@ Here is a list of CSPs supported on Windows 10 Enterprise:
 -   [EnterpriseAssignedAccess CSP](/windows/client-management/mdm/enterpriseassignedaccess-csp)
 -   [EnterpriseDesktopAppManagement CSP](/windows/client-management/mdm/enterprisedesktopappmanagement-csp)
 -   [EnterpriseExt CSP](/windows/client-management/mdm/enterpriseext-csp)
--   [EnterpriseExtFileSystem CSP](/windows/client-management/mdm/enterpriseextfilessystem-csp)
 -   [EnterpriseModernAppManagement CSP](/windows/client-management/mdm/enterprisemodernappmanagement-csp)
 -   [FileSystem CSP](/windows/client-management/mdm/filesystem-csp)
 -   [HealthAttestation CSP](/windows/client-management/mdm/healthattestation-csp)
