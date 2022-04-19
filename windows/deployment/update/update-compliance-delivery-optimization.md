@@ -55,4 +55,3 @@ The download sources that could be included are:
 [!INCLUDE [Monitor Delivery Optimization](../do/includes/waas-delivery-optimization-monitor.md)]
 
 For more information on Delivery Optimization, see [Set up Delivery Optimization for Windows](../do/waas-delivery-optimization-setup.md).
-
