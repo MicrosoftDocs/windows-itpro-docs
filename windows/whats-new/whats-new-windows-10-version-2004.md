@@ -263,6 +263,6 @@ For information about Desktop Analytics and this release of Windows 10, see [Wha
 - [What's New in Windows 10](./index.yml): See what's new in other versions of Windows 10.
 - [Start developing on Windows 10, version 2004 today](https://blogs.windows.com/windowsdeveloper/2020/05/12/start-developing-on-windows-10-version-2004-today/): New and updated features in Windows 10 that are of interest to developers.
 - [What's new for business in Windows 10 Insider Preview Builds](/windows-insider/Active-Dev-Branch): A preview of new features for businesses.
-- [What's new in Windows 10, version 2004 - Windows Insiders](/windows-insider/at-home/whats-new-wip-at-home-20h1): This list also includes consumer focused new features.
+- [What's new in Windows 10, version 2004 - Windows Insiders](/windows-insider/archive/new-in-20h1): This list also includes consumer focused new features.
 - [Features and functionality removed in Windows 10](/windows/deployment/planning/windows-10-removed-features): Removed features.
 - [Windows 10 features we're no longer developing](/windows/deployment/planning/windows-10-deprecated-features): Features that are not being developed.

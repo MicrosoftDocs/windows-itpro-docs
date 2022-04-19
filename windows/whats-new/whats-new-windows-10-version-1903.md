@@ -138,7 +138,7 @@ Several new features are coming in the next version of Edge. See the [news from 
 
 ## See Also
 
-[What's New in Windows Server, version 1903](/windows-server/get-started/whats-new-in-windows-server-1903): New and updated features in Windows Server.<br>
+[What's New in Windows Server, version 1903](/windows-server/get-started/whats-new-in-windows-server-1903-1909): New and updated features in Windows Server.<br>
 [Windows 10 Features](https://www.microsoft.com/windows/features): Review general information about Windows 10 features.<br>
 [What's New in Windows 10](./index.yml): See what’s new in other versions of Windows 10.<br>
 [What's new in Windows 10](/windows-hardware/get-started/what-s-new-in-windows): See what’s new in Windows 10 hardware.<br>
