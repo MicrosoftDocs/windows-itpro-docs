@@ -184,8 +184,6 @@
               href: update/deploy-updates-intune.md
         - name: Monitor Windows client updates
           items:
-            - name: Monitor Delivery Optimization
-              href: do/waas-delivery-optimization-setup.md#monitor-delivery-optimization
             - name: Monitor Windows Updates
               items:
               - name: Monitor Windows Updates with Update Compliance
