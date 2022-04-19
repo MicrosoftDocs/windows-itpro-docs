@@ -35,7 +35,7 @@ Windows Hello addresses the following problems with passwords:
 - Strong passwords can be difficult to remember, and users often reuse passwords on multiple sites.
 - Server breaches can expose symmetric network credentials (passwords).
 - Passwords are subject to [replay attacks](/previous-versions/dotnet/netframework-4.0/aa738652(v=vs.100)).
-- Users can inadvertently expose their passwords due to [phishing attacks](https://go.microsoft.com/fwlink/p/?LinkId=615674).
+- Users can inadvertently expose their passwords due to phishing attacks.
 
 Windows Hello lets users authenticate to:
 

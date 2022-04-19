@@ -157,7 +157,7 @@ Primarily for large enterprise organizations with more complex authentication re
 [Hybrid Deployment](#hybrid-deployment), [Managed Environment](#managed-environment), [Pass-through authentication](#pass-through-authentication), [Password Hash Sync](#password-hash-sync)
 
 ### More information
-- [Choosing the right authentication method for your Azure Active Directory hybrid identity solution](/azure/security/azure-ad-choose-authn)
+- [Choosing the right authentication method for your Azure Active Directory hybrid identity solution](/azure/active-directory/hybrid/choose-ad-authn)
 
 [Return to Top](hello-how-it-works-technology.md)
 ## Hybrid Azure AD Joined
