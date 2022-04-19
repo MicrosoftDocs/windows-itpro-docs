@@ -13,7 +13,7 @@ ms.collection: M365-modern-desktop
 ms.topic: article
 ---
 
-# Microsoft Connected Cached for Internet Service Providers (ISPs)
+# Microsoft Connected Cache for Internet Service Providers (ISPs)
 
 **Applies to**
 
