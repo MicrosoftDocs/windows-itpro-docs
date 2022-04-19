@@ -184,49 +184,80 @@
               href: update/deploy-updates-intune.md
         - name: Monitor Windows client updates
           items:
-            - name: Monitor Windows Updates
+          - name: Monitor with Update Compliance (preview version)
+            href: update/update-compliance-v2-overview.md     
+            items:
+            - name: Enable Update Compliance (preview)
+              items: 
+              - name: Update Compliance prerequisites
+                href: update/update-compliance-v2-prerequisites.md
+              - name: Enable the Update Compliance solution
+                href: update/update-compliance-v2-enable.md                                
+              - name: Configure clients with a script
+                href: update/update-compliance-configuration-script.md
+              - name: Configure clients manually
+                href: update/update-compliance-configuration-manual.md
+              - name: Configure clients with Microsoft Endpoint Manager
+                href: update/update-compliance-configuration-mem.md          
+            - name: Software updates in the Microsoft admin center (preview)
+              href: update/update-status-admin-center.md                               
+            - name: Schema reference (preview)
               items:
-              - name: Monitor Windows Updates with Update Compliance
-                href: update/update-compliance-monitor.md
-              - name: Get started
-                items: 
-                  - name: Get started with Update Compliance
-                    href: update/update-compliance-get-started.md
-                  - name: Update Compliance configuration script
-                    href: update/update-compliance-configuration-script.md
-                  - name: Manually configuring devices for Update Compliance
-                    href: update/update-compliance-configuration-manual.md
-                  - name: Configuring devices for Update Compliance in Microsoft Endpoint Manager
-                    href: update/update-compliance-configuration-mem.md
-              - name: Update Compliance monitoring
-                items: 
-                  - name: Use Update Compliance
-                    href: update/update-compliance-using.md
-                  - name: Need attention report
-                    href: update/update-compliance-need-attention.md
-                  - name: Security update status report
-                    href: update/update-compliance-security-update-status.md
-                  - name: Feature update status report
-                    href: update/update-compliance-feature-update-status.md
-                  - name: Safeguard holds report
-                    href: update/update-compliance-safeguard-holds.md
-                  - name: Delivery Optimization in Update Compliance
-                    href: update/update-compliance-delivery-optimization.md
-                  - name: Data handling and privacy in Update Compliance
-                    href: update/update-compliance-privacy.md
-                  - name: Update Compliance schema reference
-                    href: update/update-compliance-schema.md
-                    items:
-                      - name: WaaSUpdateStatus
-                        href: update/update-compliance-schema-waasupdatestatus.md
-                      - name: WaaSInsiderStatus
-                        href: update/update-compliance-schema-waasinsiderstatus.md
-                      - name: WaaSDepoymentStatus
-                        href: update/update-compliance-schema-waasdeploymentstatus.md
-                      - name: WUDOStatus
-                        href: update/update-compliance-schema-wudostatus.md
-                      - name: WUDOAggregatedStatus
-                        href: update/update-compliance-schema-wudoaggregatedstatus.md
+              - name: Update Compliance schema reference
+                href: update/update-compliance-v2-schema.md
+              - name: UCClient
+                href: update/update-compliance-v2-schema-ucclient.md
+              - name: UCClientUpdateStatus
+                href: update/update-compliance-v2-schema-ucclientupdatestatus.md
+              - name: UCServiceUpdateStatus
+                href: update/update-compliance-v2-schema-ucserviceupdatestatus.md
+              - name: UCUpdateAlert
+                href: update/update-compliance-v2-schema-ucupdatealert.md
+              - name: UCDeviceAlert
+                href: update/update-compliance-v2-schema-ucdevicealert.md                                                                              
+          - name: Monitor updates with Update Compliance (GA)
+            href: update/update-compliance-monitor.md
+            items:
+            - name: Get started (GA)
+              items: 
+              - name: Get started with Update Compliance
+                href: update/update-compliance-get-started.md
+              - name: Update Compliance configuration script
+                href: update/update-compliance-configuration-script.md
+              - name: Manually configuring devices for Update Compliance
+                href: update/update-compliance-configuration-manual.md
+              - name: Configuring devices for Update Compliance in Microsoft Endpoint Manager
+                href: update/update-compliance-configuration-mem.md
+            - name: Update Compliance monitoring (GA)
+              items: 
+              - name: Use Update Compliance
+                href: update/update-compliance-using.md
+              - name: Need attention report
+                href: update/update-compliance-need-attention.md
+              - name: Security update status report
+                href: update/update-compliance-security-update-status.md
+              - name: Feature update status report
+                href: update/update-compliance-feature-update-status.md
+              - name: Safeguard holds report
+                href: update/update-compliance-safeguard-holds.md
+              - name: Delivery Optimization in Update Compliance
+                href: update/update-compliance-delivery-optimization.md
+              - name: Data handling and privacy in Update Compliance
+                href: update/update-compliance-privacy.md
+            - name: Schema reference (GA)
+              items:
+              - name: Update Compliance schema reference
+                href: update/update-compliance-schema.md
+              - name: WaaSUpdateStatus
+                href: update/update-compliance-schema-waasupdatestatus.md
+              - name: WaaSInsiderStatus
+                href: update/update-compliance-schema-waasinsiderstatus.md
+              - name: WaaSDepoymentStatus
+                href: update/update-compliance-schema-waasdeploymentstatus.md
+              - name: WUDOStatus
+                href: update/update-compliance-schema-wudostatus.md
+              - name: WUDOAggregatedStatus
+                href: update/update-compliance-schema-wudoaggregatedstatus.md
         - name: Troubleshooting
           items:
             - name: Resolve upgrade errors
