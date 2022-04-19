@@ -17,6 +17,8 @@ ms.topic: reference
 
 When the visualizations provided in the default experience don't fulfill your reporting needs, or if you need to troubleshoot issues with devices, it's valuable to understand the schema for Update Compliance and have a high-level understanding of the capabilities of [Azure Monitor log queries](/azure/azure-monitor/log-query/query-language) to power additional dashboards, integration with external data analysis tools, automated alerting, and more.
 
+## Schema
+
 The table below summarizes the different tables that are part of the Update Compliance solution. To learn how to navigate Azure Monitor Logs to find this data, see [Get started with log queries in Azure Monitor](/azure/azure-monitor/log-query/get-started-queries).
 
 > [!NOTE]
@@ -29,15 +31,3 @@ The table below summarizes the different tables that are part of the Update Comp
 | [**UCServiceUpdateStatus**](update-compliance-v2-schema-ucserviceupdatestatus.md) | Service record  | Update Event that comes directly from the service-side. The event has only service-side information for one device (client), and one update, in one deployment. This event has certain fields removed from it in favor of being able to show data in near real-time.  |
 | [**UCUpdateAlert**](update-compliance-v2-schema-ucupdatealert.md) | Service and device records  |  Alert for both client and service update. Contains information that needs attention, relative to one device (client), one update, and one deployment (if relevant). Certain fields may be blank depending on the UpdateAlert's AlertType field; for example, ServiceUpdateAlert will not necessarily contain client-side statuses.  |
 | [**UCDeviceAlert**] (update-compliance-v2-schema-ucdevicealert.md)| Service and device record  |  These alerts are activated as a result of an issue that is device-specific. It isn't specific to the combination of a specific update and a specific device. Like UpdateAlerts, the AlertType indicates where the Alert comes from (ServiceDeviceAlert, ClientDeviceAlert). For example, an EndOfService alert is a ClientDeviceAlert, as a build no longer being serviced (EOS) is a client-wide state. Meanwhile, DeviceRegistrationIssues in WUfB DS will be a ServiceDeviceAlert, as it's a device-wide state in the service to not be correctly registered.  |
-
-## Schema used by earlier version of Update Compliance
-
-You may notice that you can also access the schema used by an earlier version of Update Compliance. The table below is provided as a  
-
-|Table |Category |Description |
-|--|--|--|
-|[**WaaSUpdateStatus**](update-compliance-schema-waasupdatestatus.md) |Device record |This table houses device-centric data and acts as the device record for Update Compliance. Each record provided in daily snapshots map to a single device in a single tenant. This table has data such as the current device's installed version of Windows, whether it is on the latest available updates, and whether the device needs attention. |
-|[**WaaSInsiderStatus**](update-compliance-schema-waasinsiderstatus.md) |Device record |This table houses device-centric data specifically for devices enrolled to the Windows Insider Program. Devices enrolled to the Windows Insider Program do not currently have any WaaSDeploymentStatus records, so do not have Update Session data to report on update deployment progress. |
-|[**WaaSDeploymentStatus**](update-compliance-schema-waasdeploymentstatus.md) |Update Session record |This table tracks a specific update on a specific device. Multiple WaaSDeploymentStatus records can exist simultaneously for a given device, as each record is specific to a given update and its type. For example, a device can have both a WaaSDeploymentStatus tracking a Windows Feature Update, as well as one tracking a Windows Quality Update, at the same time. |
-|[**WUDOStatus**](update-compliance-schema-wudostatus.md) |Delivery Optimization record |This table provides information, for a single device, on their bandwidth utilization across content types in the event they use [Delivery Optimization](https://support.microsoft.com/help/4468254/windows-update-delivery-optimization-faq). |
-|[**WUDOAggregatedStatus**](update-compliance-schema-wudoaggregatedstatus.md) |Delivery Optimization record |This table aggregates all individual WUDOStatus records across the tenant and summarizes bandwidth savings across all devices enrolled to Delivery Optimization. |
