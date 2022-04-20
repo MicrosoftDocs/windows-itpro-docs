@@ -36,7 +36,7 @@ manager: dansimp
     <a href="#mixedreality-fallbackdiagnostics">MixedReality/FallbackDiagnostics</a>
   </dd>
   <dd>
-    <a href="#mixedreality-headtrackingmode">MixedReality/HeadTrackingMode/a>
+    <a href="#mixedreality-headtrackingmode">MixedReality/HeadTrackingMode</a>
   </dd>
   <dd>
     <a href="#mixedreality-microphonedisabled">MixedReality/MicrophoneDisabled</a>
