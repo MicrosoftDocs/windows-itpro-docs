@@ -36,7 +36,7 @@
     "globalMetadata": {
       "recommendations": true,
       "audience": "ITPro",
-      "breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
+      "breadcrumb_path": "/windows/resources/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-M365-IT",
       "ms.technology": "windows",
       "ms.topic": "article",
