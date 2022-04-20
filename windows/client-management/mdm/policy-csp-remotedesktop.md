@@ -30,17 +30,10 @@ manager: dansimp
   </dd>
 </dl>
 
-> [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
 <hr/>
 
 <!--Policy-->
-<a href="" id="remotedesktop-autosubscription"></a>**RemoteDesktop/AutoSubscription<**  
+<a href="" id="remotedesktop-autosubscription"></a>**RemoteDesktop/AutoSubscription**  
 
 <!--SupportedSKUs-->
 
@@ -59,26 +52,17 @@ manager: dansimp
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
-> * Device
+> * User
 
 <hr/>
 
 <!--/Scope-->
 <!--Description-->
 
-This policy allows to set the default connection URL for Remote Desktop Application. If you define this policy the specified URL is configured as the default subscription URL to Azure Virtual Desktop work spaces. 
+This policy allows administrators to enable automatic subscription for the Microsoft Remote Desktop client. If you define this policy, the specified URL is used by the client to silently subscribe the logged on user and retrieve the remote resources assigned to them. To automatically subscribe to Azure Virtual Desktop in the Azure Public cloud, set the URL to <https://rdweb.wvd.microsoft.com/api/arm/feeddiscovery>.
 
 <!--/Description-->
 
-<!--ADMXBacked-->
-
-ADMX Info:  
--   GP Friendly name: *Customize warning messages*
--   GP name: *AutoSubscription*
--   GP path: *System/Remote Desktop*
--   GP ADMX file name: *remotedesktop.admx*
-
-<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
@@ -109,7 +93,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy allows the user to load the DPAPI cred key from their user profile and decrypt any previously encrypted DPAPI data in the user profile or encrypt any new DPAPI data.
+This policy allows the user to load the DPAPI cred key from their user profile and decrypt any previously encrypted DPAPI data in the user profile or encrypt any new DPAPI data. This policy is needed when using FSLogix user profiles from Azure AD-joined VMs.
 
 <!--/Description-->
 
@@ -121,14 +105,6 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow DPAPI cred keys to be loaded from user profiles during logon for AADJ accounts*
--   GP name: *LoadAadCredKeyFromProfile*
--   GP path: *System/RemoteDesktop*
--   GP ADMX file name: *remotedesktop.admx*
-
-<!--/ADMXBacked-->
 <!--/Policy-->
 
 <hr/>
