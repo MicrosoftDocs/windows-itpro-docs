@@ -18,6 +18,8 @@ manager: dansimp
 
 <!--Policies-->
 ## RemoteDesktop policies  
+> [!Warning]
+> Some information relates to prerelease products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 <dl>
   <dd>
@@ -64,7 +66,7 @@ manager: dansimp
 <!--/Scope-->
 <!--Description-->
 
-This policy allows the user to load the DPAPI cred key from their user profile and decrypt any previously encrypted DPAPI data in the user profile or encrypt any new DPAPI data.
+This policy allows to set the default connection URL for Remote Desktop Application. If you define this policy the specified URL is configured as the default subscription URL to Azure Virtual Desktop work spaces. 
 
 <!--/Description-->
 
