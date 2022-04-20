@@ -57,7 +57,7 @@ After you configure the settings to monitor removable storage devices, use the f
 5.  Expand **Windows Logs**, and then click **Security**.
 6.  Look for event 4663, which logs successful attempts to write to or read from a removable storage device. Failures will log event 4656. Both events include **Task Category = Removable Storage device**.
    
-    For more information, see [Audit Removable Storage](audit-removable-storage.md)
+    For more information, see [Audit Removable Storage](audit-removable-storage.md).
 
     Key information to look for includes the name and account domain of the user who attempted to access the file, the object that the user is attempting to access, resource attributes of the resource, and the type of access that was attempted.
 
