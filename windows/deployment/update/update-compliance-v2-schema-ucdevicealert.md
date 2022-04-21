@@ -14,6 +14,11 @@ ms.topic: reference
 ---
 
 # UCDeviceAlert
+<!--37063317, 30141258, 37063041-->
+***(Applies to: Windows 11 & Windows 10)***
+
+> [!Important]
+> This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
 
 These alerts are activated as a result of an issue that is device-specific. It isn't specific to the combination of a specific update and a specific device. Like UpdateAlerts, the AlertType indicates where the Alert comes from (ServiceDeviceAlert, ClientDeviceAlert). For example, an EndOfService alert is a ClientDeviceAlert, as a build no longer being serviced (EOS) is a client-wide state. Meanwhile, DeviceRegistrationIssues in WUfB DS will be a ServiceDeviceAlert, as it's a device-wide state in the service to not be correctly registered.
 

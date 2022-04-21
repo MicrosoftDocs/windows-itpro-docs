@@ -15,6 +15,9 @@ ms.topic: article
 
 # Enable Update Compliance
 
+> [!Important]
+> This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
+
 Update Compliance is offered as an Azure Marketplace application that's is linked to a new or existing [Azure Log Analytics](/azure/log-analytics/query-language/get-started-analytics-portal) workspace within your Azure subscription. Note that, for the following steps, you must have either an Owner or Contributor [Azure role](/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-roles) as a minimum in order to add the solution.
 
 ## Add Update Compliance to your Azure subscription

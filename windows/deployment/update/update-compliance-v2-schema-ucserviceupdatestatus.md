@@ -14,6 +14,11 @@ ms.topic: reference
 ---
 
 # UCServiceUpdateStatus
+<!--37063317, 30141258, 37063041-->
+***(Applies to: Windows 11 & Windows 10)***
+
+> [!Important]
+> This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
 
 Update Event that comes directly from the service-side. The event has only service-side information for one device (client), and one update, in one deployment. This event has certain fields removed from it in favor of being able to show data in near real-time.
 
