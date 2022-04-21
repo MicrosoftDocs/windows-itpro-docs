@@ -22,9 +22,9 @@ The PROXY configuration service provider is used to configure proxy connections.
 
 This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
 
-For the PROXY CSP, you cannot use the Replace command unless the node already exists.
+For the PROXY CSP, you can't use the Replace command unless the node already exists.
 
-The following shows the PROXY configuration service provider management object in tree format as used by OMA DM. The OMA Client Provisioning protocol is not supported by this configuration service provider.
+The following example shows the PROXY configuration service provider management object in tree format as used by OMA DM. The OMA Client Provisioning protocol isn't supported by this configuration service provider.
 
 ```
 ./Vendor/MSFT/Proxy
@@ -62,9 +62,9 @@ Root node for the proxy connection.
 <a href="" id="proxyname"></a>***ProxyName***
 Defines the name of a proxy connection.
 
-It is recommended that this element name is specified as a numbered node beginning at zero. For example, to provision two proxy connections, use "PROXY0" and "PROXY1" as the element names. Any unique name can be used if desired (such as "GPRS-NAP"), but no spaces may appear in the name (use %20 instead).
+It's recommended that this element name is specified as a numbered node beginning at zero. For example, to provision two proxy connections, use "PROXY0" and "PROXY1" as the element names. Any unique name can be used if desired (such as "GPRS-NAP"), but no spaces may appear in the name (use %20 instead).
 
-The addition, update, and deletion of this sub-tree of nodes have to be specified in a single atomic transaction.
+The addition, update, and deletion of this subtree of nodes have to be specified in a single atomic transaction.
 
 <a href="" id="proxyname-proxyid"></a>***ProxyName*/PROXYID**
 Specifies the unique identifier of the proxy connection.
@@ -93,7 +93,7 @@ Node for port information.
 <a href="" id="proxyname-ports-portname"></a>***ProxyName*/Ports/_PortName_**
 Defines the name of a port.
 
-It is recommended that this element name is specified as a numbered node beginning at zero. For example, to provision two ports, use "PORT0" and "PORT1" as the element names.
+It's recommended that this element name is specified as a numbered node beginning at zero. For example, to provision two ports, use "PORT0" and "PORT1" as the element names.
 
 <a href="" id="proxyname-ports-portname-portnbr"></a>***ProxyName*/Ports/*PortName*/PortNbr**
 Specifies the port number to be associated with the parent port.
@@ -104,7 +104,7 @@ Node for services information.
 <a href="" id="proxyname-ports-services-servicename"></a>***ProxyName*/Ports/Services/_ServiceName_**
 Defines the name of a service.
 
-It is recommended that this element name is specified as a numbered node beginning at zero. For example, to provision two services, use "SERVICE0" and "SERVICE1" as the element names.
+It's recommended that this element name is specified as a numbered node beginning at zero. For example, to provision two services, use "SERVICE0" and "SERVICE1" as the element names.
 
 <a href="" id="proxyname-ports-services-servicename-servicename"></a>***ProxyName*/Ports/Services/*ServiceName*/ServiceName**
 Specifies the protocol to be associated with the parent port.
@@ -117,7 +117,7 @@ Node for connection reference information
 <a href="" id="proxyname-conrefs-conrefname"></a>***ProxyName*/ConRefs/_ConRefName_**
 Defines the name of a connection reference.
 
-It is recommended that this element name is specified as a numbered node beginning at zero. For example, to provision two connection references, use "CONREF0" and "CONREF1" as the element names.
+It's recommended that this element name is specified as a numbered node beginning at zero. For example, to provision two connection references, use "CONREF0" and "CONREF1" as the element names.
 
 <a href="" id="proxyname-conrefs-conrefname-conref"></a>***ProxyName*/ConRefs/*ConRefName*/ConRef**
 Specifies one single connectivity object associated with the proxy connection.
