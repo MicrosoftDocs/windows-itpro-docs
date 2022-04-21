@@ -33,7 +33,8 @@ To add Update Compliance to your Azure subscription, follow these steps:
    - [Azure Update Management](/azure/automation/automation-intro#update-management) users should use the same workspace for Update Compliance.
 1. If you don't have an existing Log Analytics workspace or you don't want to use a current workspaces, [create a new workspace](/azure/azure-monitor/logs/quick-create-workspace) in a [compatible region](update-compliance-v2-prerequisites.md#log-analytics-regions).
 
-### 
+### Add the Update Compliance solution to the workspace
+
 1. Go to the [Update Compliance page in the Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/Microsoft.WaaSUpdateInsights?tab=Overview). You might need to sign into your Azure subscription to access this.
 1. Select **Get it now**. 
 1. 
