@@ -24,7 +24,7 @@ ms.reviewer:
 - Windows 11
 
 **Requirements:**
-* Windows Hello for Business deployment (Hybrid or On-premises)
+* Windows Hello for Business deployment (Cloud, Hybrid or On-premises)
 * Azure AD, Hybrid Azure AD, or Domain Joined (Cloud, Hybrid, or On-Premises deployments)
 * Windows 10, version 1709 or newer, or Windows 11
 * Bluetooth, Bluetooth capable phone - optional
