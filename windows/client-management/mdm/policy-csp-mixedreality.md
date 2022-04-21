@@ -7,7 +7,6 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: dansimp
-ms.date: 1/31/2022
 ms.reviewer: 
 manager: dansimp
 ---
@@ -36,7 +35,7 @@ manager: dansimp
     <a href="#mixedreality-fallbackdiagnostics">MixedReality/FallbackDiagnostics</a>
   </dd>
   <dd>
-    <a href="#mixedreality-headtrackingmode">MixedReality/HeadTrackingMode/a>
+    <a href="#mixedreality-headtrackingmode">MixedReality/HeadTrackingMode</a>
   </dd>
   <dd>
     <a href="#mixedreality-microphonedisabled">MixedReality/MicrophoneDisabled</a>
