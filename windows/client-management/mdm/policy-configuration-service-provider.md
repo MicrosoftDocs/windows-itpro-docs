@@ -72,7 +72,7 @@ The root node for the Policy configuration service provider.
 Supported operation is Get.
 
 <a href="" id="policy-config"></a>**Policy/Config**  
-Node for grouping all policies configured by one source. The configuration source can use this path to set policy values and later query any policy value that it previously set. One policy can be configured by multiple configuration sources. If a configuration source wants to query the result of conflict resolution (for example, if Exchange and MDM both attempt to set a value,) the configuration source can use the Policy/Result path to retrieve the resulting value.
+Node for grouping all policies configured by one source. The configuration source can use this path to set policy values and later query any policy value that it previously set. One policy can be configured by multiple configuration sources. If a configuration source wants to query the result of conflict resolution (for example, if Exchange and MDM both attempt to set a value) the configuration source can use the Policy/Result path to retrieve the resulting value.
 
 Supported operation is Get.
 
