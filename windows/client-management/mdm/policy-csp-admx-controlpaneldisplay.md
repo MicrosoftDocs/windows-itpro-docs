@@ -605,7 +605,7 @@ This setting also prevents users from using Control Panel to change the window b
 
 If this setting is disabled or not configured, the Color (or Window Color) page or Color Scheme dialog is available in the Personalization or Display Control Panel.
 
-For systems prior to Windows Vista, this setting hides the Appearance and Themes tabs in the in Display in Control Panel.
+For systems prior to Windows Vista, this setting hides the Appearance and Themes tabs in the Display in Control Panel.
 
 <!--/Description-->
 
