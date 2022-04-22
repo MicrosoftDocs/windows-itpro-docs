@@ -1,6 +1,6 @@
 ---
 title: Policy CSP
-description: Learn how the Policy configuration service provider (CSP) enables the enterprise to configure policies on Windows 10.
+description: Learn how the Policy configuration service provider (CSP) enables the enterprise to configure policies on Windows 10 and Windows 11.
 ms.assetid: 4F3A1134-D401-44FC-A583-6EDD3070BA4F
 ms.reviewer: 
 manager: dansimp
@@ -16,27 +16,29 @@ ms.collection: highpri
 
 # Policy CSP
 
-The Policy configuration service provider enables the enterprise to configure policies on Windows 10. Use this configuration service provider to configure any company policies.
+The Policy configuration service provider enables the enterprise to configure policies on Windows 10 and Windows 11. Use this configuration service provider to configure any company policies.
 
 The Policy configuration service provider has the following sub-categories:
 
--   Policy/Config/*AreaName* – Handles the policy configuration request from the server.
--   Policy/Result/*AreaName* – Provides a read-only path to policies enforced on the device.
+- Policy/Config/*AreaName* – Handles the policy configuration request from the server.
+- Policy/Result/*AreaName* – Provides a read-only path to policies enforced on the device.
 
 <a href="" id="policy-scope"></a>
 
 > [!Important]
-> Policy scope is the level at which a policy can be configured. Some policies can only be configured at the device level, meaning the policy will take effect independent of who is logged into the device. Other policies can be configured at the user level, meaning the policy will only take effect for that user. 
+> Policy scope is the level at which a policy can be configured. Some policies can only be configured at the device level, meaning the policy will take effect independent of who is logged into the device. Other policies can be configured at the user level, meaning the policy will only take effect for that user.
 >
-> The allowed scope of a specific policy is represented below its table of supported Windows editions.  To configure a policy under a specific scope (user vs. device), please use the following paths:
+> The allowed scope of a specific policy is represented below its table of supported Windows editions. To configure a policy under a specific scope (user vs. device), please use the following paths:
 >
 > User scope:
-> -   **./User/Vendor/MSFT/Policy/Config/_AreaName/PolicyName_** to configure the policy.
-> -   **./User/Vendor/MSFT/Policy/Result/_AreaName/PolicyName_** to get the result.
+>
+> - **./User/Vendor/MSFT/Policy/Config/_AreaName/PolicyName_** to configure the policy.
+> - **./User/Vendor/MSFT/Policy/Result/_AreaName/PolicyName_** to get the result.
 >
 > Device scope:
-> -   **./Device/Vendor/MSFT/Policy/Config/_AreaName/PolicyName_** to configure the policy.
-> -   **./Device/Vendor/MSFT/Policy/Result/_AreaName/PolicyName_** to get the result.
+>
+> - **./Device/Vendor/MSFT/Policy/Config/_AreaName/PolicyName_** to configure the policy.
+> - **./Device/Vendor/MSFT/Policy/Result/_AreaName/PolicyName_** to get the result.
 >
 > For device wide configuration the **_Device/_**  portion may be omitted from the path, deeming the following paths respectively equivalent to the paths provided above:
 >
@@ -65,89 +67,88 @@ Policy
 
 
 <a href="" id="--vendor-msft-policy"></a>**./Vendor/MSFT/Policy**  
-<p>The root node for the Policy configuration service provider.
+The root node for the Policy configuration service provider.
 
-<p>Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="policy-config"></a>**Policy/Config**  
-<p>Node for grouping all policies configured by one source. The configuration source can use this path to set policy values and later query any policy value that it previously set. One policy can be configured by multiple configuration sources. If a configuration source wants to query the result of conflict resolution (for example, if Exchange and MDM both attempt to set a value,) the configuration source can use the Policy/Result path to retrieve the resulting value.
+Node for grouping all policies configured by one source. The configuration source can use this path to set policy values and later query any policy value that it previously set. One policy can be configured by multiple configuration sources. If a configuration source wants to query the result of conflict resolution (for example, if Exchange and MDM both attempt to set a value,) the configuration source can use the Policy/Result path to retrieve the resulting value.
 
-<p>Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="policy-config-areaname"></a>**Policy/Config/_AreaName_**  
-<p>The area group that can be configured by a single technology for a single provider. Once added, you cannot change the value.
+The area group that can be configured by a single technology for a single provider. Once added, you cannot change the value.
 
-<p>Supported operations are Add, Get, and Delete.
+Supported operations are Add, Get, and Delete.
 
 <a href="" id="policy-config-areaname-policyname"></a>**Policy/Config/_AreaName/PolicyName_**  
-<p>Specifies the name/value pair used in the policy.
+Specifies the name/value pair used in the policy.
 
-<p>The following list shows some tips to help you when configuring policies:
+The following list shows some tips to help you when configuring policies:
 
--   Separate substring values by the Unicode &\#xF000; in the XML file.
+- Separate substring values by the Unicode &\#xF000; in the XML file.
 
-> [!NOTE]
-> A query from a different caller could provide a different value as each caller could have different values for a named policy.
+    > [!NOTE]
+    > A query from a different caller could provide a different value as each caller could have different values for a named policy.
 
--   In SyncML, wrap this policy with the Atomic command so that the policy settings are treated as a single transaction.
--   Supported operations are Add, Get, Delete, and Replace.
--   Value type is string.
+- In SyncML, wrap this policy with the Atomic command so that the policy settings are treated as a single transaction.
+- Supported operations are Add, Get, Delete, and Replace.
+- Value type is string.
 
 <a href="" id="policy-result"></a>**Policy/Result**  
-<p>Groups the evaluated policies from all providers that can be configured.
+Groups the evaluated policies from all providers that can be configured.
 
-<p>Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="policy-result-areaname"></a>**Policy/Result/_AreaName_**  
-<p>The area group that can be configured by a single technology independent of the providers.
+The area group that can be configured by a single technology independent of the providers.
 
-<p>Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="policy-result-areaname-policyname"></a>**Policy/Result/_AreaName/PolicyName_**  
-<p>Specifies the name/value pair used in the policy.
+Specifies the name/value pair used in the policy.
 
-<p>Supported operation is Get.
+Supported operation is Get.
 
 <a href="" id="policy-result"></a>**Policy/ConfigOperations**  
-<p>Added in Windows 10, version 1703. The root node for grouping different configuration operations.
+Added in Windows 10, version 1703. The root node for grouping different configuration operations.
 
-<p>Supported operations are Add, Get, and Delete.
+Supported operations are Add, Get, and Delete.
 
 <a href="" id="policy-configoperations-admxinstall"></a>**Policy/ConfigOperations/ADMXInstall**  
-<p>Added in Windows 10, version 1703. Allows settings for ADMX files for Win32 and Desktop Bridge apps to be imported (ingested) by your device and processed into new ADMX-backed policies or preferences. By using ADMXInstall, you can add ADMX-backed policies for those Win32 or Desktop Bridge apps that have been added between OS releases. ADMX-backed policies are ingested to your device by using the Policy CSP URI: <code>./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall</code>. Each ADMX-backed policy or preference that is added is assigned a unique ID. For more information about using Policy CSP to configure Win32 and Desktop Bridge app policies, see <a href="win32-and-centennial-app-policy-configuration.md" data-raw-source="[Win32 and Desktop Bridge app policy configuration](win32-and-centennial-app-policy-configuration.md)">Win32 and Desktop Bridge app policy configuration</a>.
+Added in Windows 10, version 1703. Allows settings for ADMX files for Win32 and Desktop Bridge apps to be imported (ingested) by your device and processed into new ADMX-backed policies or preferences. By using ADMXInstall, you can add ADMX-backed policies for those Win32 or Desktop Bridge apps that have been added between OS releases. ADMX-backed policies are ingested to your device by using the Policy CSP URI: <code>./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall</code>. Each ADMX-backed policy or preference that is added is assigned a unique ID. For more information about using Policy CSP to configure Win32 and Desktop Bridge app policies, see [Win32 and Desktop Bridge app policy configuration](win32-and-centennial-app-policy-configuration.md).
 
 > [!NOTE]
 > The OPAX settings that are managed by the Microsoft Office Customization Tool are not supported by MDM. For more information about this tool, see [Office Customization Tool](/previous-versions/office/office-2013-resource-kit/cc179097(v=office.15)).
 
-<p>ADMX files that have been installed by using **ConfigOperations/ADMXInstall** can later be deleted by using the URI delete operation. Deleting an ADMX file will delete the ADMX file from disk, remove the metadata from the ADMXdefault registry hive, and delete all the policies that were set from the file. The MDM server can also delete all ADMX policies that are tied to a particular app by calling delete on the URI, <code>./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/{AppName}</code>.
+ADMX files that have been installed by using **ConfigOperations/ADMXInstall** can later be deleted by using the URI delete operation. Deleting an ADMX file will delete the ADMX file from disk, remove the metadata from the ADMXdefault registry hive, and delete all the policies that were set from the file. The MDM server can also delete all ADMX policies that are tied to a particular app by calling delete on the URI, <code>./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/{AppName}</code>.
 
-<p>Supported operations are Add, Get, and Delete.
+Supported operations are Add, Get, and Delete.
 
 <a href="" id="policy-configoperations-admxinstall-appname"></a>**Policy/ConfigOperations/ADMXInstall/_AppName_**  
-<p>Added in Windows 10, version 1703. Specifies the name of the Win32 or Desktop Bridge app associated with the ADMX file. 
+Added in Windows 10, version 1703. Specifies the name of the Win32 or Desktop Bridge app associated with the ADMX file. 
 
-<p>Supported operations are Add, Get, and Delete.
+Supported operations are Add, Get, and Delete.
 
 <a href="" id="policy-configoperations-admxinstall-appname-policy"></a>**Policy/ConfigOperations/ADMXInstall/_AppName_/Policy**  
-<p>Added in Windows 10, version 1703. Specifies that a Win32 or Desktop Bridge app policy is to be imported.
+Added in Windows 10, version 1703. Specifies that a Win32 or Desktop Bridge app policy is to be imported.
 
-<p>Supported operations are Add, Get, and Delete.
+Supported operations are Add, Get, and Delete.
 
 <a href="" id="policy-configoperations-admxinstall-appname-policy-uniqueid"></a>**Policy/ConfigOperations/ADMXInstall/_AppName_/Policy/_UniqueID_** 
-<p>Added in Windows 10, version 1703. Specifies the unique ID of the app ADMX file that contains the policy to import.
+Added in Windows 10, version 1703. Specifies the unique ID of the app ADMX file that contains the policy to import.
 
-<p>Supported operations are Add and Get. Does not support Delete.
+Supported operations are Add and Get. Does not support Delete.
 
 <a href="" id="policy-configoperations-admxinstall-appname-preference"></a>**Policy/ConfigOperations/ADMXInstall/_AppName_/Preference**  
-<p>Added in Windows 10, version 1703. Specifies that a Win32 or Desktop Bridge app preference is to be imported.
+Added in Windows 10, version 1703. Specifies that a Win32 or Desktop Bridge app preference is to be imported.
 
-<p>Supported operations are Add, Get, and Delete.
+Supported operations are Add, Get, and Delete.
 
 <a href="" id="policy-configoperations-admxinstall-appname-preference-uniqueid"></a>**Policy/ConfigOperations/ADMXInstall/_AppName_/Preference/_UniqueID_**  
-<p>Added in Windows 10, version 1703. Specifies the unique ID of the app ADMX file that contains the preference to import.
+Added in Windows 10, version 1703. Specifies the unique ID of the app ADMX file that contains the preference to import.
 
-<p>Supported operations are Add and Get. Does not support Delete.
-
+Supported operations are Add and Get. Does not support Delete.
 
 ## Policies
 
