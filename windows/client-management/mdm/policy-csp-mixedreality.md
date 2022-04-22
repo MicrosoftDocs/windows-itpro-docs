@@ -7,7 +7,6 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: dansimp
-ms.date: 1/31/2022
 ms.reviewer: 
 manager: dansimp
 ---
@@ -36,7 +35,7 @@ manager: dansimp
     <a href="#mixedreality-fallbackdiagnostics">MixedReality/FallbackDiagnostics</a>
   </dd>
   <dd>
-    <a href="#mixedreality-headtrackingmode">MixedReality/HeadTrackingMode/a>
+    <a href="#mixedreality-headtrackingmode">MixedReality/HeadTrackingMode</a>
   </dd>
   <dd>
     <a href="#mixedreality-microphonedisabled">MixedReality/MicrophoneDisabled</a>
@@ -91,9 +90,9 @@ Steps to use this policy correctly:
 |HoloLens 2|Yes|
 
 <!--/Description-->
-This new AutoLogonUser policy controls whether a user will be automatically logged on. Some customers want to set up devices that are tied to an identity but don't want any sign in experience. Imagine picking up a device and using remote assist immediately. Or have a benefit of being able to rapidly  distribute HoloLens devices and enable their end users to speed up login.
+This new AutoLogonUser policy controls whether a user will be automatically logged on. Some customers want to set up devices that are tied to an identity but don't want any sign-in experience. Imagine picking up a device and using remote assist immediately. Or have a benefit of being able to rapidly  distribute HoloLens devices and enable their end users to speed up login.
 
-When the policy is set to a non-empty value, it specifies the email address of the auto log-on user. The specified user must logon to the device at least once to enable autologon.
+When the policy is set to a non-empty value, it specifies the email address of the auto log-on user. The specified user must log on to the device at least once to enable autologon.
 
 The OMA-URI of new policy `./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoLogonUser`
 
@@ -102,7 +101,7 @@ String value
 
 - User with the same email address will have autologon enabled.
 
-On a device where this policy is configured, the user specified in the policy will need to log-on at least once. Subsequent reboots of the device after the first logon will have the specified user automatically logged on. Only a single autologon user is supported. Once enabled, the automatically logged on user will not be able to log out manually. To log-on as a different user, the policy must first be disabled.
+On a device where this policy is configured, the user specified in the policy will need to log on at least once. Subsequent reboots of the device after the first logon will have the specified user automatically logged on. Only a single autologon user is supported. Once enabled, the automatically logged on user will not be able to log out manually. To log on as a different user, the policy must first be disabled.
 
 > [!NOTE]
 >
