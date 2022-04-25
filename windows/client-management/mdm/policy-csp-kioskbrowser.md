@@ -77,7 +77,7 @@ These policies currently only apply to Kiosk Browser app. Kiosk Browser is a Mic
 
 <!--/Scope-->
 <!--Description-->
-List of exceptions to the blocked website URLs (with wildcard support). This is used to configure URLs kiosk browsers are allowed to navigate to, which are a subset of the blocked URLs.
+List of exceptions to the blocked website URLs (with wildcard support). This policy is used to configure URLs kiosk browsers are allowed to navigate to, which are a subset of the blocked URLs.
 
 > [!NOTE]
 > This policy only applies to the Kiosk Browser app in Microsoft Store.
@@ -113,7 +113,7 @@ List of exceptions to the blocked website URLs (with wildcard support). This is 
 
 <!--/Scope-->
 <!--Description-->
-List of blocked website URLs (with wildcard support). This is used to configure blocked URLs kiosk browsers cannot navigate to.
+List of blocked website URLs (with wildcard support). This policy is used to configure blocked URLs kiosk browsers can't navigate to.
 
 > [!NOTE]
 > This policy only applies to the Kiosk Browser app in Microsoft Store.
@@ -185,7 +185,7 @@ Configures the default URL kiosk browsers to navigate on launch and restart.
 
 <!--/Scope-->
 <!--Description-->
-Shows the Kiosk Browser's end session button. When the policy is enabled, the Kiosk Browser app shows a button to reset the browser. When the user clicks on the button, the app will prompt the user for confirmation to end the session. When the user confirms, the Kiosk browser will clear all browsing data (cache, cookies, etc.) and navigate back to the default URL.
+Shows the Kiosk Browser's end session button. When the policy is enabled, the Kiosk Browser app shows a button to reset the browser. When the user selects the button, the app will prompt the user for confirmation to end the session. When the user confirms, the Kiosk browser will clear all browsing data (cache, cookies, etc.) and navigate back to the default URL.
 
 <!--/Description-->
 <!--/Policy-->
@@ -292,7 +292,7 @@ Enable/disable kiosk browser's navigation buttons (forward/back).
 <!--Description-->
 Amount of time in minutes the session is idle until the kiosk browser restarts in a fresh state.  
 
-The value is an int 1-1440 that specifies the amount of minutes the session is idle until the kiosk browser restarts in a fresh state. The default value is empty which means there is no idle timeout within the kiosk browser.
+The value is an int 1-1440 that specifies the number of minutes the session is idle until the kiosk browser restarts in a fresh state. The default value is empty, which means there's no idle timeout within the kiosk browser.
 
 > [!NOTE]
 > This policy only applies to the Kiosk Browser app in Microsoft Store.

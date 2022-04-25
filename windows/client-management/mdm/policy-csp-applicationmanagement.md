@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ApplicationManagement
-description: Learn about various Policy configuration service provider (CSP) - ApplicationManagement, including SyncML, for Windows 10.
+description: Learn about various Policy configuration service providers (CSP) - ApplicationManagement, including SyncML, for Windows 10.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -101,9 +101,9 @@ This policy setting controls whether the system can archive infrequently used ap
 
 - If you enable this policy setting, then the system will periodically check for and archive infrequently used apps.
 
-- If you disable this policy setting, then the system will not archive any apps.
+- If you disable this policy setting, then the system won't archive any apps.
 
-If you do not configure this policy setting (default), then the system will follow default behavior, which is to periodically check for and archive infrequently used apps, and the user will be able to configure this setting themselves.
+If you don't configure this policy setting (default), then the system will follow default behavior, which is to periodically check for and archive infrequently used apps, and the user will be able to configure this setting themselves.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -203,7 +203,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Specifies whether automatic update of apps from Microsoft Store are allowed.
+Specifies whether automatic update of apps from Microsoft Store is allowed.
 
 
 Most restricted value is 0.
@@ -308,7 +308,7 @@ The following list shows the supported values:
 > [!NOTE]
 > The policy is only enforced in Windows 10 for desktop.
 
-Specifies whether DVR and broadcasting is allowed.
+Specifies whether DVR and broadcasting are allowed.
 
 Most restricted value is 0.
 
@@ -414,7 +414,7 @@ Manages non-administrator users' ability to install Windows app packages.
 
 If you enable this policy, non-administrators will be unable to initiate installation of Windows app packages. Administrators who wish to install an app will need to do so from an Administrator context (for example, an Administrator PowerShell window). All users will still be able to install Windows app packages via the Microsoft Store, if permitted by other policies.
 
-If you disable or do not configure this policy, all users will be able to initiate installation of Windows app packages.
+If you disable or don't configure this policy, all users will be able to initiate installation of Windows app packages.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -428,7 +428,7 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:  
 - 0 (default) - Disabled. All users will be able to initiate installation of Windows app packages.
-- 1 - Enabled. Non-administrator users will not be able to initiate installation of Windows app packages.
+- 1 - Enabled. Non-administrator users won't be able to initiate installation of Windows app packages.
 <!--/SupportedValues-->
 <!--Example-->
 
@@ -514,9 +514,9 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are launched after logon. This policy allows the IT admin to specify a list of applications that users can run after logging on to the device.
+List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are launched after a sign in. This policy allows the IT admin to specify a list of applications that users can run after logging on to the device.
 
-For this policy to work, the Windows apps need to declare in their manifest that they will use the start up task. Example of the declaration here: 
+For this policy to work, the Windows apps need to declare in their manifest that they'll use the startup task. Example of the declaration here: 
 
 ```xml
 <desktop:Extension Category="windows.startupTask"> 
@@ -571,7 +571,7 @@ Added in Windows 10, version 1803. This policy setting permits users to change i
 
 If you enable this policy setting, some of the security features of Windows Installer are bypassed. It permits installations to complete that otherwise would be halted due to a security violation.
 
-If you disable or do not configure this policy setting, the security features of Windows Installer prevent users from changing installation options typically reserved for system administrators, such as specifying the directory to which files are installed.
+If you disable or don't configure this policy setting, the security features of Windows Installer prevent users from changing installation options typically reserved for system administrators, such as specifying the directory to which files are installed.
 
 If Windows Installer detects that an installation package has permitted the user to change a protected option, it stops the installation and displays a message. These security features operate only when the installation program is running in a privileged security context in which it has access to directories denied to the user.
 
@@ -623,9 +623,9 @@ This setting supports a range of values between 0 and 1.
 <!--Description-->
 Added in Windows 10, version 1803. This policy setting directs Windows Installer to use elevated permissions when it installs any program on the system.
 
-If you enable this policy setting, privileges are extended to all programs. These privileges are usually reserved for programs that have been assigned to the user (offered on the desktop), assigned to the computer (installed automatically), or made available in Add or Remove Programs in Control Panel. This profile setting lets users install programs that require access to directories that the user might not have permission to view or change, including directories on highly restricted computers.
+If you enable this policy setting, privileges are extended to all programs. These privileges are reserved for programs that have been assigned to the user (offered on the desktop), assigned to the computer (installed automatically), or made available in Add or Remove Programs in Control Panel. This profile setting lets users install programs that require access to directories that the user might not have permission to view or change, including directories on highly restricted computers.
 
-If you disable or do not configure this policy setting, the system applies the current user's permissions when it installs programs that a system administrator does not distribute or offer.
+If you disable or don't configure this policy setting, the system applies the current user's permissions when it installs programs that a system administrator doesn't distribute or offer.
 
 > [!NOTE]
 > This policy setting appears both in the Computer Configuration and User Configuration folders. To make this policy setting effective, you must enable it in both folders.

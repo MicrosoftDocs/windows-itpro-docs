@@ -70,7 +70,7 @@ Steps to use this policy correctly:
 1. Enroll HoloLens devices and verify both configurations get applied to the device.
 1. Let Azure AD user 1 sign-in when internet is available. Once the user signs-in and Azure AD group membership is confirmed successfully, cache will be created.
 1. Now Azure AD user 1 can take HoloLens offline and use it for kiosk mode as long as policy value allows for X number of days.
-1. Steps 4 and 5 can be repeated for any other Azure AD user N. The key point is that any Azure AD user must sign-in to device using Internet at least once. Then we can determine that they are member of Azure AD group to which Kiosk configuration is targeted.
+1. Steps 4 and 5 can be repeated for any other Azure AD user N. The key point is that any Azure AD user must sign-in to device using Internet at least once. Then we can determine that they're a member of Azure AD group to which Kiosk configuration is targeted.
 
 > [!NOTE]
 > Until step 4 is performed for a Azure AD user will experience failure behavior mentioned similar to “disconnected” environments.
@@ -90,9 +90,9 @@ Steps to use this policy correctly:
 |HoloLens 2|Yes|
 
 <!--/Description-->
-This new AutoLogonUser policy controls whether a user will be automatically logged on. Some customers want to set up devices that are tied to an identity but don't want any sign-in experience. Imagine picking up a device and using remote assist immediately. Or have a benefit of being able to rapidly  distribute HoloLens devices and enable their end users to speed up login.
+This new AutoLogonUser policy controls whether a user will be automatically signed in. Some customers want to set up devices that are tied to an identity but don't want any sign-in experience. Imagine picking up a device and using remote assist immediately. Or have a benefit of being able to rapidly  distribute HoloLens devices and enable their end users to speed up sign in.
 
-When the policy is set to a non-empty value, it specifies the email address of the auto log-on user. The specified user must log on to the device at least once to enable autologon.
+When the policy is set to a non-empty value, it specifies the email address of the auto log-on user. The specified user must sign in to the device at least once to enable autologon.
 
 The OMA-URI of new policy `./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoLogonUser`
 
@@ -101,7 +101,7 @@ String value
 
 - User with the same email address will have autologon enabled.
 
-On a device where this policy is configured, the user specified in the policy will need to log on at least once. Subsequent reboots of the device after the first logon will have the specified user automatically logged on. Only a single autologon user is supported. Once enabled, the automatically logged on user will not be able to log out manually. To log on as a different user, the policy must first be disabled.
+On a device where this policy is configured, the user specified in the policy will need to sign in at least once. Subsequent reboots of the device after the first sign in will have the specified user automatically signed in. Only a single autologon user is supported. Once enabled, the automatically signed-in user won't be able to sign out manually. To sign in as a different user, the policy must first be disabled.
 
 > [!NOTE]
 >
@@ -121,7 +121,7 @@ On a device where this policy is configured, the user specified in the policy wi
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls for how many days Azure AD group membership cache is allowed to be used for Assigned Access configurations targeting Azure AD groups for signed in user. Once this policy setting is set only then cache is used otherwise not. In order for this policy setting to take effect, user must sign out and sign in with Internet available at least once before the cache can be used for subsequent "disconnected" sessions.
+This policy setting controls for how many days Azure AD group membership cache is allowed to be used for Assigned Access configurations targeting Azure AD groups for signed in user. Once this policy setting is set, only then cache is used, otherwise not. In order for this policy setting to take effect, user must sign out and sign in with Internet available at least once before the cache can be used for subsequent "disconnected" sessions.
 
 <!--/Description-->
 
@@ -161,7 +161,7 @@ Supported values are 0-60. The default value is 0 (day) and maximum value is 60 
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls if pressing the brightness button changes the brightness or not. It only impacts brightness on HoloLens and not the functionality of the button when it is used with other buttons as combination for other purposes.
+This policy setting controls if pressing the brightness button changes the brightness or not. It only impacts brightness on HoloLens and not the functionality of the button when it's used with other buttons as combination for other purposes.
 
 <!--/Description-->
 
@@ -204,7 +204,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy controls the behavior of moving platform feature on Hololens 2, that is, whether it is turned off / on or it can be toggled by a user. It should only be used by customers who intend to use Hololens 2 in moving environments with low dynamic motion. For background information, see [HoloLens 2 Moving Platform Mode | Microsoft Docs](/hololens/hololens2-moving-platform#:~:text=Why%20Moving%20Platform%20Mode%20is%20Necessary%20HoloLens%20needs%2csimilar%20pieces%20of%20information%20from%20two%20separate%20sources:).
+This policy controls the behavior of moving platform feature on Hololens 2, that is, whether it's turned off / on or it can be toggled by a user. It should only be used by customers who intend to use Hololens 2 in moving environments with low dynamic motion. For background information, see [HoloLens 2 Moving Platform Mode | Microsoft Docs](/hololens/hololens2-moving-platform#:~:text=Why%20Moving%20Platform%20Mode%20is%20Necessary%20HoloLens%20needs%2csimilar%20pieces%20of%20information%20from%20two%20separate%20sources:).
 
 <!--/Description-->
 
@@ -215,8 +215,8 @@ This policy controls the behavior of moving platform feature on Hololens 2, that
 - Integer value
 
 - 0 (Default) - Last set user's preference. Initial state is OFF and after that user's preference is persisted across reboots and is used to initialize the system.
-- 1 Force off - Moving platform is disabled and cannot be changed by user.
-- 2 Force on - Moving platform is enabled and cannot be changed by user.
+- 1 Force off - Moving platform is disabled and can't be changed by user.
+- 2 Force on - Moving platform is enabled and can't be changed by user.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -376,7 +376,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls if pressing the volume button changes the volume or not. It only impacts volume on HoloLens and not the functionality of the button when it is used with other buttons as combination for other purposes.
+This policy setting controls if pressing the volume button changes the volume or not. It only impacts volume on HoloLens and not the functionality of the button when it's used with other buttons as combination for other purposes.
 
 <!--/Description-->
 
