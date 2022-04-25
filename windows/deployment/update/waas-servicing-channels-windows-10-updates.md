@@ -63,7 +63,7 @@ The **Branch Readiness Level** settings allow you to choose between preview flig
 * Group Policy: **Computer Configuration/Administrative Templates/Windows Components/Windows Update/ Windows Update for Business** - *Select when Preview Builds and feature updates are received*
 * MDM: **Update/BranchReadinessLevel**
 
-For more information, see [Windows Insider Program for Business](/windows-insider/business/register)
+For more information, see [Windows Insider Program for Business](/windows-insider/business/register).
 
 ## Block access to Windows Insider Program
 
