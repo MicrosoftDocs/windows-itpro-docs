@@ -14,8 +14,6 @@ manager: dansimp
 
 # Policy CSP - AboveLock
 
-
-
 <hr/>
 
 <!--Policies-->
@@ -123,3 +121,6 @@ The following list shows the supported values:
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy CSP](policy-configuration-service-provider.md)

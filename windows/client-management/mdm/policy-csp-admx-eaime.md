@@ -96,9 +96,9 @@ manager: dansimp
 <!--Description-->
 This policy setting allows you to include the Non-Publishing Standard Glyph in the candidate list when Publishing Standard Glyph for the word exists.
 
-If you enable this policy setting, Non-Publishing Standard Glyph is not included in the candidate list when Publishing Standard Glyph for the word exists.
+If you enable this policy setting, Non-Publishing Standard Glyph isn't included in the candidate list when Publishing Standard Glyph for the word exists.
 
-If you disable or do not configure this policy setting, both Publishing Standard Glyph and Non-Publishing Standard Glyph are included in the candidate list.
+If you disable or don't configure this policy setting, both Publishing Standard Glyph and Non-Publishing Standard Glyph are included in the candidate list.
 
 This policy setting applies to Japanese Microsoft IME only.
 
@@ -161,7 +161,7 @@ If you enable this policy setting, then only the character code ranges specified
 - 0x1000 // IVS char
 - 0xFFFF // no definition.
 
-If you disable or do not configure this policy setting, no range of characters are filtered by default.
+If you disable or don't configure this policy setting, no range of characters are filtered by default.
 
 This policy setting applies to Japanese Microsoft IME only.
 
@@ -210,9 +210,9 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to turn off the ability to use a custom dictionary.
 
-If you enable this policy setting, you cannot add, edit, and delete words in the custom dictionary either with GUI tools or APIs. A word registered in the custom dictionary before enabling this policy setting can continue to be used for conversion.
+If you enable this policy setting, you can't add, edit, and delete words in the custom dictionary either with GUI tools or APIs. A word registered in the custom dictionary before enabling this policy setting can continue to be used for conversion.
 
-If you disable or do not configure this policy setting, the custom dictionary can be used by default.
+If you disable or don't configure this policy setting, the custom dictionary can be used by default.
 
 For Japanese Microsoft IME, [Clear auto-tuning information] works, even if this policy setting is enabled, and it clears self-tuned words from the custom dictionary.
 
@@ -265,7 +265,7 @@ This policy setting allows you to turn off history-based predictive input.
 
 If you enable this policy setting, history-based predictive input is turned off.
 
-If you disable or do not configure this policy setting, history-based predictive input is on by default.
+If you disable or don't configure this policy setting, history-based predictive input is on by default.
 
 This policy setting applies to Japanese Microsoft IME only.
 
@@ -315,9 +315,9 @@ This policy setting allows you to turn off Internet search integration.
 
 Search integration includes both using Search Provider (Japanese Microsoft IME) and performing Bing search from predictive input for Japanese Microsoft IME.
 
-If you enable this policy setting, you cannot use search integration.
+If you enable this policy setting, you can't use search integration.
 
-If you disable or do not configure this policy setting, the search integration function can be used by default.
+If you disable or don't configure this policy setting, the search integration function can be used by default.
 
 This policy setting applies to Japanese Microsoft IME.
 
@@ -366,11 +366,11 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to turn off Open Extended Dictionary.
 
-If you enable this policy setting, Open Extended Dictionary is turned off. You cannot add a new Open Extended Dictionary.
+If you enable this policy setting, Open Extended Dictionary is turned off. You can't add a new Open Extended Dictionary.
 
-For Japanese Microsoft IME, an Open Extended Dictionary that is added before enabling this policy setting is not used for conversion.
+For Japanese Microsoft IME, an Open Extended Dictionary that is added before enabling this policy setting isn't used for conversion.
 
-If you disable or do not configure this policy setting, Open Extended Dictionary can be added and used by default.
+If you disable or don't configure this policy setting, Open Extended Dictionary can be added and used by default.
 
 This policy setting is applied to Japanese Microsoft IME.
 
@@ -416,9 +416,9 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to turn off saving the auto-tuning result to file.
 
-If you enable this policy setting, the auto-tuning data is not saved to file.
+If you enable this policy setting, the auto-tuning data isn't saved to file.
 
-If you disable or do not configure this policy setting, auto-tuning data is saved to file by default.
+If you disable or don't configure this policy setting, auto-tuning data is saved to file by default.
 
 This policy setting applies to Japanese Microsoft IME only.
 
@@ -666,7 +666,7 @@ This policy setting allows you to turn on logging of misconversion for the misco
 
 If you enable this policy setting, misconversion logging is turned on.
 
-If you disable or do not configure this policy setting, misconversion logging is turned off.
+If you disable or don't configure this policy setting, misconversion logging is turned off.
 
 This policy setting applies to Japanese Microsoft IME and Traditional Chinese IME.
 

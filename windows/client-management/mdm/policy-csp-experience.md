@@ -155,7 +155,7 @@ ADMX Info:
 1. Configure Experiences/AllowClipboardHistory to 0.
 1. Open Notepad (or any editor app), select a text, and copy it to the clipboard.
 1. Press Win+V to open the clipboard history UI.
-1. You should not see any clipboard item including current item you copied.
+1. You shouldn't see any clipboard item including current item you copied.
 1. The setting under Settings App->System->Clipboard should be grayed out with policy warning.
 
 <!--/Validation-->
@@ -241,7 +241,7 @@ The following list shows the supported values:
 <!--Description-->
 Allows users to turn on/off device discovery UX.
 
-When set to 0, the projection pane is disabled. The Win+P and Win+K shortcut keys will not work on.
+When set to 0, the projection pane is disabled. The Win+P and Win+K shortcut keys won't work on.
 
 Most restricted value is 0.
 
@@ -287,7 +287,7 @@ This policy turns on Find My Device.
 
 When Find My Device is on, the device and its location are registered in the cloud so that the device can be located when the user initiates a Find command from account.microsoft.com. In Windows 10, version 1709 devices that are compatible with active digitizers, enabling Find My Device will also allow the user to view the last location of use of their active digitizer on their device; this location is stored locally on the user's device after each use of their active digitizer.
 
-When Find My Device is off, the device and its location are not registered and the Find My Device feature will not work. In Windows 10, version 1709 the user will not be able to view the location of the last use of their active digitizer on their device.
+When Find My Device is off, the device and its location aren't registered and the Find My Device feature won't work. In Windows 10, version 1709 the user won't be able to view the location of the last use of their active digitizer on their device.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -335,7 +335,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Specifies whether to allow the user to delete the workplace account using the workplace control panel. If the device is Azure Active Directory joined and MDM enrolled (e.g., auto-enrolled), then disabling the MDM unenrollment has no effect.
+Specifies whether to allow the user to delete the workplace account using the workplace control panel. If the device is Azure Active Directory joined and MDM enrolled (for example, auto-enrolled), then disabling the MDM unenrollment has no effect.
 
 > [!NOTE]
 > The MDM server can always remotely delete the account.
@@ -398,7 +398,7 @@ This policy is deprecated.
 
 <!--/Description-->
 <!--SupportedValues-->
-Describe what value are supported in by this policy and meaning of each value is default value.
+Describe what values are supported in by this policy and meaning of each value is default value.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -443,7 +443,7 @@ This policy is deprecated.
 
 <!--/Description-->
 <!--SupportedValues-->
-Describes what value are supported in by this policy and meaning of each value is default value.
+Describes what values are supported in by this policy and meaning of each value is default value.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -482,7 +482,7 @@ Allows or disallows all Windows sync settings on the device. For information abo
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Sync settings are not allowed.
+-   0 – Sync settings aren't allowed.
 -   1 (default) – Sync settings allowed.
 
 <!--/SupportedValues-->
@@ -517,12 +517,12 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 
-This policy allows you to prevent Windows from using diagnostic data to provide customized experiences to the user. If you enable this policy setting, Windows will not use diagnostic data from this device to customize content shown on the lock screen, Windows tips, Microsoft consumer features, or other related features. If these features are enabled, users will still see recommendations, tips and offers, but they may be less relevant. If you disable or do not configure this policy setting, Microsoft will use diagnostic data to provide personalized recommendations, tips, and offers to tailor Windows for the user's needs and make it work better for them.
+This policy allows you to prevent Windows from using diagnostic data to provide customized experiences to the user. If you enable this policy setting, Windows won't use diagnostic data from this device to customize content shown on the lock screen, Windows tips, Microsoft consumer features, or other related features. If these features are enabled, users will still see recommendations, tips and offers, but they may be less relevant. If you disable or don't configure this policy setting, Microsoft will use diagnostic data to provide personalized recommendations, tips, and offers to tailor Windows for the user's needs and make it work better for them.
 
 Diagnostic data can include browser, app and feature usage, depending on the "Diagnostic and usage data" setting value.
 
 > [!NOTE]
-> This setting does not control Cortana cutomized experiences because there are separate policies to configure it.
+> This setting doesn't control Cortana cutomized experiences because there are separate policies to configure it.
 
 Most restricted value is 0.
 
@@ -682,7 +682,7 @@ The following list shows the supported values:
 > This policy is only available for Windows 10 Enterprise and Windows 10 Education.
 
 
-Specifies whether to turn off all Windows spotlight features at once. If you enable this policy setting, Windows spotlight on lock screen, Windows Tips, Microsoft consumer features and other related features will be turned off. You should enable this policy setting if your goal is to minimize network traffic from target devices. If you disable or do not configure this policy setting, Windows spotlight features are allowed and may be controlled individually using their corresponding policy settings.
+Specifies whether to turn off all Windows spotlight features at once. If you enable this policy setting, Windows spotlight on lock screen, Windows Tips, Microsoft consumer features and other related features will be turned off. You should enable this policy setting if your goal is to minimize network traffic from target devices. If you disable or don't configure this policy setting, Windows spotlight features are allowed and may be controlled individually using their corresponding policy settings.
 
 Most restricted value is 0.
 
@@ -733,7 +733,7 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 
-This policy allows administrators to prevent Windows spotlight notifications from being displayed in the Action Center. If you enable this policy, Windows spotlight notifications will no longer be displayed in the Action Center. If you disable or do not configure this policy, Microsoft may display notifications in the Action Center that will suggest apps or features to help users be more productive on Windows.
+This policy allows administrators to prevent Windows spotlight notifications from being displayed in the Action Center. If you enable this policy, Windows spotlight notifications will no longer be displayed in the Action Center. If you disable or don't configure this policy, Microsoft may display notifications in the Action Center that will suggest apps or features to help users be more productive on Windows.
 
 Most restricted value is 0.
 
@@ -837,7 +837,7 @@ The following list shows the supported values:
 <!--Description-->
 
 This policy setting lets you turn off the Windows spotlight Windows welcome experience feature.
-The Windows welcome experience feature introduces onboard users to Windows; for example, launching Microsoft Edge with a webpage that highlights new features. If you enable this policy, the Windows welcome experience will no longer be displayed when there are updates and changes to Windows and its apps. If you disable or do not configure this policy, the Windows welcome experience will be launched to inform onboard users about what's new, changed, and suggested.
+The Windows welcome experience feature introduces onboard users to Windows; for example, launching Microsoft Edge with a webpage that highlights new features. If you enable this policy, the Windows welcome experience will no longer be displayed when there are updates and changes to Windows and its apps. If you disable or don't configure this policy, the Windows welcome experience will be launched to inform onboard users about what's new, changed, and suggested.
 
 Most restricted value is 0.
 
@@ -942,7 +942,7 @@ The values for this policy are 0, 1, 2, and 3. This policy defaults to 0 if not 
 -   0 - Not Configured: The Chat icon will be configured according to the defaults for your Windows edition.
 -   1 - Show: The Chat icon will be displayed on the taskbar by default. Users can show or hide it in Settings.
 -   2 - Hide: The Chat icon will be hidden by default. Users can show or hide it in Settings.
--   3 - Disabled: The Chat icon will not be displayed, and users cannot show or hide it in Settings.
+-   3 - Disabled: The Chat icon won't be displayed, and users can't show or hide it in Settings.
 
 > [!NOTE]
 > Option 1 (Show) and Option 2 (Hide) only work on the first sign-in attempt. Option 3 (Disabled) works on all attempts.
@@ -982,7 +982,7 @@ The values for this policy are 0, 1, 2, and 3. This policy defaults to 0 if not 
 > This policy is only available for Windows 10 Enterprise and Windows 10 Education.
 
 
-Allows IT admins to specify whether spotlight should be used on the user's lock screen. If your organization does not have an Enterprise spotlight content service, then this policy will behave the same as a setting of 1.
+Allows IT admins to specify whether spotlight should be used on the user's lock screen. If your organization doesn't have an Enterprise spotlight content service, then this policy will behave the same as a setting of 1.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1033,7 +1033,7 @@ This policy setting lets you turn off cloud optimized content in all Windows exp
 
 If you enable this policy setting, Windows experiences that use the cloud optimized content client component will present the default fallback content.
 
-If you disable or do not configure this policy setting, Windows experiences will be able to use cloud optimized content.
+If you disable or don't configure this policy setting, Windows experiences will be able to use cloud optimized content.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1083,9 +1083,9 @@ The following list shows the supported values:
 <!--Description-->
 Prevents devices from showing feedback questions from Microsoft.
 
-If you enable this policy setting, users will no longer see feedback notifications through the Feedback hub app. If you disable or do not configure this policy setting, users may see notifications through the Feedback hub app asking users for feedback.
+If you enable this policy setting, users will no longer see feedback notifications through the Feedback hub app. If you disable or don't configure this policy setting, users may see notifications through the Feedback hub app asking users for feedback.
 
-If you disable or do not configure this policy setting, users can control how often they receive feedback questions.
+If you disable or don't configure this policy setting, users can control how often they receive feedback questions.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1099,7 +1099,7 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Feedback notifications are not disabled. The actual state of feedback notifications on the device will then depend on what GP has configured or what the user has configured locally.
+-   0 (default) – Feedback notifications aren't disabled. The actual state of feedback notifications on the device will then depend on what GP has configured or what the user has configured locally.
 -   1 – Feedback notifications are disabled.
 
 <!--/SupportedValues-->
@@ -1151,7 +1151,7 @@ ADMX Info:
 Supported values:
 
 -  0 (default) - Allowed/turned on. The "browser" group synchronizes automatically between users' devices and lets users make changes.
--  2 - Prevented/turned off. The "browser" group does not use the _Sync your Settings_ option.
+-  2 - Prevented/turned off. The "browser" group doesn't use the _Sync your Settings_ option.
 
 
 _**Sync the browser settings automatically**_
@@ -1291,7 +1291,7 @@ If you enable this policy setting, the lock option is shown in the User Tile men
 
 If you disable this policy setting, the lock option is never shown in the User Tile menu.
 
-If you do not configure this policy setting, the lock option is shown in the User Tile menu. Users can choose if they want to show the lock in the user tile menu from the Power Options control panel.
+If you don't configure this policy setting, the lock option is shown in the User Tile menu. Users can choose if they want to show the lock in the user tile menu from the Power Options control panel.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1304,7 +1304,7 @@ ADMX Info:
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 Supported values:  
-- false - The lock option is not displayed in the User Tile menu.
+- false - The lock option isn't displayed in the User Tile menu.
 - true (default) - The lock option is displayed in the User Tile menu.
 
 <!--/SupportedValues-->

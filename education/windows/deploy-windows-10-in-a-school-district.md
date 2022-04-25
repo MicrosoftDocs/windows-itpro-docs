@@ -114,7 +114,7 @@ Office 365 Education allows:
 
 * Faculty to help prevent unauthorized users from accessing documents and email by using Microsoft Azure Rights Management.
 
-* Faculty to use advanced compliance tools on the unified eDiscovery pages in the Office 365 Compliance Center.
+* Faculty to use advanced compliance tools on the unified eDiscovery pages in the Microsoft Purview compliance portal.
 
 * Faculty to host online classes, parent–teacher conferences, and other collaboration in Skype for Business.
 

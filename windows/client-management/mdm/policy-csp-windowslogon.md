@@ -83,15 +83,15 @@ manager: dansimp
 <!--Description-->
 This policy setting controls whether a device automatically signs in and locks the last interactive user after the system restarts or after a shutdown and cold boot.
 
-This occurs only if the last interactive user did not sign out before the restart or shutdown.​
+This scenario occurs only if the last interactive user didn't sign out before the restart or shutdown.​
 
 If the device is joined to Active Directory or Azure Active Directory, this policy applies only to Windows Update restarts. Otherwise, this policy applies to both Windows Update restarts and user-initiated restarts and shutdowns.​
 
-If you do not configure this policy setting, it is enabled by default. When the policy is enabled, the user is automatically signed in and the session is automatically locked with all lock screen apps configured for that user after the device boots.​
+If you don't configure this policy setting, it's enabled by default. When the policy is enabled, the user is automatically signed in and the session is automatically locked with all lock screen apps configured for that user after the device boots.​
 
 After enabling this policy, you can configure its settings through the [ConfigAutomaticRestartSignOn](#windowslogon-configautomaticrestartsignon) policy, which configures the mode of automatically signing in and locking the last interactive user after a restart or cold boot​.
 
-If you disable this policy setting, the device does not configure automatic sign in. The user’s lock screen apps are not restarted after the system restarts.
+If you disable this policy setting, the device doesn't configure automatic sign in. The user’s lock screen apps aren't restarted after the system restarts.
 
 <!--/Description-->
 
@@ -142,17 +142,17 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls the configuration under which an automatic restart, sign on, and lock occurs after a restart or cold boot. If you chose “Disabled” in the [AllowAutomaticRestartSignOn](#windowslogon-allowautomaticrestartsignon) policy, then automatic sign on does not occur and this policy need not be configured.
+This policy setting controls the configuration under which an automatic restart, sign in, and lock occurs after a restart or cold boot. If you chose “Disabled” in the [AllowAutomaticRestartSignOn](#windowslogon-allowautomaticrestartsignon) policy, then automatic sign in doesn't occur and this policy need not be configured.
 
 If you enable this policy setting, you can choose one of the following two options:
 
-- Enabled if BitLocker is on and not suspended: Specifies that automatic sign on and lock occurs only if BitLocker is active and not suspended during the reboot or shutdown. Personal data can be accessed on the device’s hard drive at this time if BitLocker is not on or suspended during an update. BitLocker suspension temporarily removes protection for system components and data but may be needed in certain circumstances to successfully update boot-critical components.  
+- Enabled if BitLocker is on and not suspended: Specifies that automatic sign in and lock occurs only if BitLocker is active and not suspended during the reboot or shutdown. Personal data can be accessed on the device’s hard drive at this time if BitLocker isn't on or suspended during an update. BitLocker suspension temporarily removes protection for system components and data but may be needed in certain circumstances to successfully update boot-critical components.  
 BitLocker is suspended during updates if:
-    - The device does not have TPM 2.0 and PCR7
-    - The device does not use a TPM-only protector
-- Always Enabled: Specifies that automatic sign on happens even if BitLocker is off or suspended during reboot or shutdown. When BitLocker is not enabled, personal data is accessible on the hard drive. Automatic restart and sign on should only be run under this condition if you are confident that the configured device is in a secure physical location.
+    - The device doesn't have TPM 2.0 and PCR7
+    - The device doesn't use a TPM-only protector
+- Always Enabled: Specifies that automatic sign in happens even if BitLocker is off or suspended during reboot or shutdown. When BitLocker isn't enabled, personal data is accessible on the hard drive. Automatic restart and sign in should only be run under this condition if you're confident that the configured device is in a secure physical location.
 
-If you disable or do not configure this setting, automatic sign on defaults to the “Enabled if BitLocker is on and not suspended” behavior.
+If you disable or don't configure this setting, automatic sign in defaults to the “Enabled if BitLocker is on and not suspended” behavior.
 
 <!--/Description-->
 
@@ -207,7 +207,7 @@ This policy setting allows you to prevent app notifications from appearing on th
 
 If you enable this policy setting, no app notifications are displayed on the lock screen.
 
-If you disable or do not configure this policy setting, users can choose which apps display notifications on the lock screen.
+If you disable or don't configure this policy setting, users can choose which apps display notifications on the lock screen.
 
 <!--/Description-->
 
@@ -249,13 +249,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to control whether anyone can interact with available networks UI on the logon screen.
+This policy setting allows you to control whether anyone can interact with available networks UI on the sign-in screen.
 
-If you enable this policy setting, the PC's network connectivity state cannot be changed without signing into Windows.
+If you enable this policy setting, the PC's network connectivity state can't be changed without signing into Windows.
 
 If you disable or don't configure this policy setting, any user can disconnect the PC from the network or can connect the PC to other available networks without signing into Windows.
 
-Here is an example to enable this policy:
+Here's an example to enable this policy:
 
 ```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
@@ -320,16 +320,16 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to control whether users see the first sign-in animation when signing in to the computer for the first time. This applies to both the first user of the computer who completes the initial setup and users who are added to the computer later. It also controls if Microsoft account users are offered the opt-in prompt for services during their first sign-in.
+This policy setting allows you to control whether users see the first sign-in animation when signing in to the computer for the first time. This view applies to both the first user of the computer who completes the initial setup and users who are added to the computer later. It also controls if Microsoft account users are offered the opt-in prompt for services during their first sign-in.
 
 If you enable this policy setting, Microsoft account users see the opt-in prompt for services, and users with other accounts see the sign-in animation.
 
-If you disable this policy setting, users do not see the animation and Microsoft account users do not see the opt-in prompt for services.
+If you disable this policy setting, users don't see the animation and Microsoft account users don't see the opt-in prompt for services.
 
-If you do not configure this policy setting, the user who completes the initial Windows setup see the animation during their first sign-in. If the first user had already completed the initial setup and this policy setting is not configured, users new to this computer do not see the animation.
+If you don't configure this policy setting, the user who completes the initial Windows setup see the animation during their first sign-in. If the first user had already completed the initial setup and this policy setting isn't configured, users new to this computer don't see the animation.
 
 > [!NOTE]
-> The first sign-in animation is not displayed on Server, so this policy has no effect.
+> The first sign-in animation isn't displayed on Server, so this policy has no effect.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -385,7 +385,7 @@ This policy setting allows local users to be enumerated on domain-joined compute
 
 If you enable this policy setting, Logon UI will enumerate all local users on domain-joined computers.
 
-If you disable or do not configure this policy setting, the Logon UI will not enumerate local users on domain-joined computers.
+If you disable or don't configure this policy setting, the Logon UI won't enumerate local users on domain-joined computers.
 
 <!--/Description-->
 
@@ -427,7 +427,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to hide the Switch account button on the sign-in screen, Start, and the Task Manager. If you enable this policy setting, the Switch account button is hidden from the user who is attempting to sign-in or is signed in to the computer that has this policy applied. If you disable or do not configure this policy setting, the Switch account button is accessible to the user in the three locations.
+This policy setting allows you to hide the Switch account button on the sign-in screen, Start, and the Task Manager. If you enable this policy setting, the Switch account button is hidden from the user who is attempting to sign-in or is signed in to the computer that has this policy applied. If you disable or don't configure this policy setting, the Switch account button is accessible to the user in the three locations.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -446,7 +446,7 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--Validation-->
-To validate on Desktop, do the following:
+To validate on Desktop, do the following steps:
 
 1.   Enable policy.
 2.   Verify that the Switch account button in Start is hidden.
