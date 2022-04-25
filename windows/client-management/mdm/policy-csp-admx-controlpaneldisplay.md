@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_ControlPanelDisplay
-description: Policy CSP - ADMX_ControlPanelDisplay
+description: Learn about the Policy CSP - ADMX_ControlPanelDisplay.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -130,7 +130,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Disables the Display Control Panel.
+This policy setting disables the Display Control Panel.
 
 If you enable this setting, the Display Control Panel doesn't run. When users try to start Display, a message appears explaining that a setting prevents the action.
 
@@ -176,7 +176,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Removes the Settings tab from Display in Control Panel.
+This setting removes the Settings tab from Display in Control Panel.
 
 This setting prevents users from using Control Panel to add, configure, or change the display settings on the computer.
 
@@ -315,7 +315,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Prevents users or applications from changing the visual style of the windows and buttons displayed on their screens.
+This policy setting prevents users or applications from changing the visual style of the windows and buttons displayed on their screens.
 
 When enabled on Windows XP, this setting disables the "Windows and buttons" drop-down list on the Appearance tab in Display Properties.
 
@@ -360,7 +360,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Enables desktop screen savers.
+This policy setting enables desktop screen savers.
 
 If you disable this setting, screen savers don't run. Also, this setting disables the Screen Saver section of the Screen Saver dialog in the Personalization or Display Control Panel. As a result, users can't change the screen saver options.
 
@@ -417,7 +417,8 @@ To use this setting, type the fully qualified path and name of the file that sto
 
 This setting can be used in conjunction with the "Prevent changing lock screen and logon image" setting to always force the specified lock screen and sign-in image to be shown.
 
-Note: This setting only applies to Enterprise, Education, and Server SKUs.
+>[!NOTE]
+> This setting only applies to Enterprise, Education, and Server SKUs.
 
 <!--/Description-->
 
@@ -459,7 +460,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Prevents users from changing the size of the font in the windows and buttons displayed on their screens.
+This setting prevents users from changing the size of the font in the windows and buttons displayed on their screens.
 
 If this setting is enabled, the "Font size" drop-down list on the Appearance tab in Display Properties is disabled. 
 
@@ -549,7 +550,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Prevents users from changing the look of their start menu background, such as its color or accent.
+This setting prevents users from changing the look of their start menu background, such as its color or accent.
 
 By default, users can change the look of their start menu background, such as its color or accent.
 
@@ -598,9 +599,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Disables the Color (or Window Color) page in the Personalization Control Panel, or the Color Scheme dialog in the Display Control Panel on systems where the Personalization feature isn't available.
+This setting disables the Color (or Window Color) page in the Personalization Control Panel, or the Color Scheme dialog in the Display Control Panel on systems where the Personalization feature isn't available.
 
-This setting prevents users from using Control Panel to change the window border and taskbar color (on Windows 8), glass color (on Windows Vista and Windows 7), system colors, or color scheme of the desktop and windows.
+This setting also prevents users from using Control Panel to change the window border and taskbar color (on Windows 8), glass color (on Windows Vista and Windows 7), system colors, or color scheme of the desktop and windows.
 
 If this setting is disabled or not configured, the Color (or Window Color) page or Color Scheme dialog is available in the Personalization or Display Control Panel.
 
@@ -645,7 +646,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Prevents users from adding or changing the background design of the desktop.
+This setting prevents users from adding or changing the background design of the desktop.
 
 By default, users can use the Desktop Background page in the Personalization or Display Control Panel to add a background design (wallpaper) to their desktop.
 
@@ -653,7 +654,8 @@ If you enable this setting, none of the Desktop Background settings can be chang
 
 To specify wallpaper for a group, use the "Desktop Wallpaper" setting.
 
-Note: You must also enable the "Desktop Wallpaper" setting to prevent users from changing the desktop wallpaper. Refer to KB article: Q327998 for more information.
+>[!NOTE]
+>You must also enable the "Desktop Wallpaper" setting to prevent users from changing the desktop wallpaper. Refer to KB article: Q327998 for more information.
 
 Also, see the "Allow only bitmapped wallpaper" setting.
 
@@ -696,7 +698,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Prevents users from changing the desktop icons.
+This setting prevents users from changing the desktop icons.
 
 By default, users can use the Desktop Icon Settings dialog in the Personalization or Display Control Panel to show, hide, or change the desktop icons.
 
@@ -788,7 +790,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Prevents users from changing the mouse pointers.
+Available in the latest Windows 10 Insider Preview Build. This setting prevents users from changing the mouse pointers.
 
 By default, users can use the Pointers tab in the Mouse Control Panel to add, remove, or change the mouse pointers.
 
@@ -833,9 +835,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Prevents the Screen Saver dialog from opening in the Personalization or Display Control Panel.
+This setting prevents the Screen Saver dialog from opening in the Personalization or Display Control Panel.
 
-This setting prevents users from using Control Panel to add, configure, or change the screen saver on the computer. It doesn't prevent a screen saver from running.
+This setting also prevents users from using Control Panel to add, configure, or change the screen saver on the computer. It doesn't prevent a screen saver from running.
 
 <!--/Description-->
 
@@ -876,7 +878,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Prevents users from changing the sound scheme.
+This setting prevents users from changing the sound scheme.
 
 By default, users can use the Sounds tab in the Sound Control Panel to add, remove, or change the system Sound Scheme.
 
@@ -921,7 +923,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Forces Windows to use the specified colors for the background and accent. The color values are specified in hex as #RGB.
+This setting forces Windows to use the specified colors for the background and accent. The color values are specified in hex as #RGB.
 
 By default, users can change the background and accent colors.
 
@@ -966,7 +968,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Determines whether screen savers used on the computer are password protected.
+This setting determines whether screen savers used on the computer are password protected.
 
 If you enable this setting, all screen savers are password protected. If you disable this setting, password protection can't be set on any screen saver.
 
@@ -1025,9 +1027,7 @@ When configured, this idle time can be set from a minimum of 1 second to a maxim
 This setting has no effect under any of the following circumstances:
 
 - The setting is disabled or not configured.
-
 - The wait time is set to zero.
-
 - The "Enable Screen Saver" setting is disabled.
 
 - The "Screen saver executable name" setting and the Screen Saver dialog of the client computer's Personalization or Display Control Panel don't specify a valid existing screen saver program on the client.
@@ -1073,7 +1073,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Specifies the screen saver for the user's desktop.
+This setting specifies the screen saver for the user's desktop.
 
 If you enable this setting, the system displays the specified screen saver on the user's desktop. Also, this setting disables the drop-down list of screen savers in the Screen Saver dialog in the Personalization or Display Control Panel, which prevents users from changing the screen saver.
 
@@ -1127,7 +1127,7 @@ ADMX Info:
 <!--Description-->
 Available in the latest Windows 10 Insider Preview Build. Specifies which theme file is applied to the computer the first time a user logs on.
 
-If you enable this setting, the theme that you specify will be applied when a new user logs on for the first time.  This policy doesn't prevent the user from changing the theme or any of the theme elements such as the desktop background, color, sounds, or screen saver after the first sign in.
+If you enable this setting, the theme that you specify will be applied when a new user signs in for the first time.  This policy doesn't prevent the user from changing the theme or any of the theme elements such as the desktop background, color, sounds, or screen saver after the first sign in.
 
 If you disable or don't configure this setting, the default theme will be applied at the first sign in.
 
@@ -1245,3 +1245,7 @@ ADMX Info:
 
 
 <!--/Policies-->
+
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
