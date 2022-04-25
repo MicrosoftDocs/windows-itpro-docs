@@ -447,7 +447,7 @@ In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink
    :::image type="content" alt-text="Check that the device appears in Intune." source="images/intune_groups_devices_list.png":::
 
 ## 3. Manage device settings and features
-You can use Microsoft Intune admin settings and policies to manage features on your organization's mobile devices and computers. For more info, see [Manage settings and features on your devices with Microsoft Intune policies](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies).
+You can use Microsoft Intune admin settings and policies to manage features on your organization's mobile devices and computers. For more info, see [Manage settings and features on your devices with Microsoft Intune policies](/mem/intune/configuration/device-profiles).
 
 In this section, we'll show you how to reconfigure app deployment settings and add a new policy that will disable the camera for the Intune-managed devices and turn off Windows Hello and PINs during setup.
 
