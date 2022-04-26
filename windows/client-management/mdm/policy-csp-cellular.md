@@ -82,11 +82,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access cellular data by using Settings > Network - Internet > Cellular on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access cellular data and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access cellular data and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access cellular data and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access cellular data and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access cellular data by using Settings > Network - Internet > Cellular on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access cellular data by using Settings > Network - Internet > Cellular on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.”
 
@@ -271,7 +271,7 @@ ADMX Info:
 This policy setting configures the visibility of the link to the per-application cellular access control page in the cellular setting UX.
 
 If this policy setting is enabled, a drop-down list box presenting possible values will be active.  Select "Hide" or "Show" to hide or show the link to the per-application cellular access control page.
-If this policy setting is disabled or is not configured, the link to the per-application cellular access control page is showed by default.
+If this policy setting is disabled or isn't configured, the link to the per-application cellular access control page is shown by default.
 
 <!--/Description-->
 

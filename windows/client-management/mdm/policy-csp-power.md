@@ -195,9 +195,9 @@ ADMX Info:
 <!--Description-->
 This policy setting manages whether or not Windows is allowed to use standby states when putting the computer in a sleep state.
 
-If you enable or do not configure this policy setting, Windows uses standby states to put the computer in a sleep state.
+If you enable or don't configure this policy setting, Windows uses standby states to put the computer in a sleep state.
 
-If you disable this policy setting, standby states (S1-S3) are not allowed.
+If you disable this policy setting, standby states (S1-S3) aren't allowed.
 
 <!--/Description-->
 
@@ -241,9 +241,9 @@ ADMX Info:
 <!--Description-->
 This policy setting manages whether or not Windows is allowed to use standby states when putting the computer in a sleep state.
 
-If you enable or do not configure this policy setting, Windows uses standby states to put the computer in a sleep state.
+If you enable or don't configure this policy setting, Windows uses standby states to put the computer in a sleep state.
 
-If you disable this policy setting, standby states (S1-S3) are not allowed.
+If you disable this policy setting, standby states (S1-S3) aren't allowed.
 
 <!--/Description-->
 
@@ -289,9 +289,9 @@ This policy setting allows you to specify the period of inactivity before Window
 
 If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the display.
 
-If you disable or do not configure this policy setting, users control this setting.
+If you disable or don't configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the display from turning off.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this slide show can prevent the display from turning off. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 
 <!--/Description-->
 
@@ -337,9 +337,9 @@ This policy setting allows you to specify the period of inactivity before Window
 
 If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the display.
 
-If you disable or do not configure this policy setting, users control this setting.
+If you disable or don't configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the display from turning off.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this slide show can prevent the display from turning off.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 
 <!--/Description-->
 
@@ -386,7 +386,7 @@ This policy setting allows you to specify battery charge level at which Energy S
 
 If you enable this policy setting, you must specify a percentage value that indicates the battery charge level. Energy Saver is automatically turned on at (and below) the specified battery charge level.
 
-If you disable or do not configure this policy setting, users control this setting.
+If you disable or don't configure this policy setting, users control this setting.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -441,7 +441,7 @@ This policy setting allows you to specify battery charge level at which Energy S
 
 If you enable this policy setting, you must provide a percentage value that indicates the battery charge level. Energy Saver is automatically turned on at (and below) the specified battery charge level.
 
-If you disable or do not configure this policy setting, users control this setting.
+If you disable or don't configure this policy setting, users control this setting.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -496,9 +496,9 @@ This policy setting allows you to specify the period of inactivity before Window
 
 If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to hibernate.
 
-If you disable or do not configure this policy setting, users control this setting.
+If you disable or don't configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occurring.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this slide show can prevent the sleep transition from occurring.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 
 <!--/Description-->
 
@@ -544,9 +544,9 @@ This policy setting allows you to specify the period of inactivity before Window
 
 If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to hibernate.
 
-If you disable or do not configure this policy setting, users control this setting.
+If you disable or don't configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occurring.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this slide show can prevent the sleep transition from occurring.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 
 <!--/Description-->
 
@@ -591,9 +591,9 @@ ADMX Info:
 <!--Description-->
 This policy setting specifies whether or not the user is prompted for a password when the system resumes from sleep.
 
-If you enable or do not configure this policy setting, the user is prompted for a password when the system resumes from sleep.
+If you enable or don't configure this policy setting, the user is prompted for a password when the system resumes from sleep.
 
-If you disable this policy setting, the user is not prompted for a password when the system resumes from sleep.
+If you disable this policy setting, the user isn't prompted for a password when the system resumes from sleep.
 
 <!--/Description-->
 
@@ -637,9 +637,9 @@ ADMX Info:
 <!--Description-->
 This policy setting specifies whether or not the user is prompted for a password when the system resumes from sleep.
 
-If you enable or do not configure this policy setting, the user is prompted for a password when the system resumes from sleep.
+If you enable or don't configure this policy setting, the user is prompted for a password when the system resumes from sleep.
 
-If you disable this policy setting, the user is not prompted for a password when the system resumes from sleep.
+If you disable this policy setting, the user isn't prompted for a password when the system resumes from sleep.
 
 <!--/Description-->
 
@@ -685,7 +685,7 @@ This policy setting specifies the action that Windows takes when a user closes t
 
 If you enable this policy setting, you must select the desired action.
 
-If you disable this policy setting or do not configure it, users can see and change this setting.
+If you disable this policy setting or don't configure it, users can see and change this setting.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -746,7 +746,7 @@ This policy setting specifies the action that Windows takes when a user closes t
 
 If you enable this policy setting, you must select the desired action.
 
-If you disable this policy setting or do not configure it, users can see and change this setting.
+If you disable this policy setting or don't configure it, users can see and change this setting.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -807,7 +807,7 @@ This policy setting specifies the action that Windows takes when a user presses 
 
 If you enable this policy setting, you must select the desired action.
 
-If you disable this policy setting or do not configure it, users can see and change this setting.
+If you disable this policy setting or don't configure it, users can see and change this setting.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -868,7 +868,7 @@ This policy setting specifies the action that Windows takes when a user presses 
 
 If you enable this policy setting, you must select the desired action.
 
-If you disable this policy setting or do not configure it, users can see and change this setting.
+If you disable this policy setting or don't configure it, users can see and change this setting.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -929,7 +929,7 @@ This policy setting specifies the action that Windows takes when a user presses 
 
 If you enable this policy setting, you must select the desired action.
 
-If you disable this policy setting or do not configure it, users can see and change this setting.
+If you disable this policy setting or don't configure it, users can see and change this setting.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -990,7 +990,7 @@ This policy setting specifies the action that Windows takes when a user presses 
 
 If you enable this policy setting, you must select the desired action.
 
-If you disable this policy setting or do not configure it, users can see and change this setting.
+If you disable this policy setting or don't configure it, users can see and change this setting.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1051,9 +1051,9 @@ This policy setting allows you to specify the period of inactivity before Window
 
 If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to sleep.
 
-If you disable or do not configure this policy setting, users control this setting.
+If you disable or don't configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occurring.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this slide show can prevent the sleep transition from occurring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 
 <!--/Description-->
 
@@ -1099,9 +1099,9 @@ This policy setting allows you to specify the period of inactivity before Window
 
 If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to sleep.
 
-If you disable or do not configure this policy setting, users control this setting.
+If you disable or don't configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occurring.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this slide show can prevent the sleep transition from occurring.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 
 <!--/Description-->
 
@@ -1145,9 +1145,9 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to turn off hybrid sleep.
 
-If you set this policy setting to 0, a hiberfile is not generated when the system transitions to sleep (Stand By).
+If you set this policy setting to 0, a hiberfile isn't generated when the system transitions to sleep (Stand By).
 
-If you set this policy setting to 1 or do not configure this policy setting, users control this setting.
+If you set this policy setting to 1 or don't configure this policy setting, users control this setting.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1203,9 +1203,9 @@ The following are the supported values for Hybrid sleep (on battery):
 <!--Description-->
 This policy setting allows you to turn off hybrid sleep.
 
-If you set this policy setting to 0, a hiberfile is not generated when the system transitions to sleep (Stand By).
+If you set this policy setting to 0, a hiberfile isn't generated when the system transitions to sleep (Stand By).
 
-If you set this policy setting to 1 or do not configure this policy setting, users control this setting.
+If you set this policy setting to 1 or don't configure this policy setting, users control this setting.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1259,13 +1259,13 @@ The following are the supported values for Hybrid sleep (plugged in):
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to specify the period of inactivity before Windows transitions to sleep automatically when a user is not present at the computer.
+This policy setting allows you to specify the period of inactivity before Windows transitions to sleep automatically when a user isn't present at the computer.
 
-If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows automatically transitions to sleep when left unattended. If you specify 0 seconds, Windows does not automatically transition to sleep.
+If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows automatically transitions to sleep when left unattended. If you specify 0 seconds, Windows doesn't automatically transition to sleep.
 
-If you disable or do not configure this policy setting, users control this setting.
+If you disable or don't configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occurring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this slide show can prevent the sleep transition from occurring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1317,13 +1317,13 @@ Default value for unattended sleep timeout (on battery):
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to specify the period of inactivity before Windows transitions to sleep automatically when a user is not present at the computer.
+This policy setting allows you to specify the period of inactivity before Windows transitions to sleep automatically when a user isn't present at the computer.
 
-If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows automatically transitions to sleep when left unattended. If you specify 0 seconds, Windows does not automatically transition to sleep.
+If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows automatically transitions to sleep when left unattended. If you specify 0 seconds, Windows doesn't automatically transition to sleep.
 
-If you disable or do not configure this policy setting, users control this setting.
+If you disable or don't configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occurring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this slide show can prevent the sleep transition from occurring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 
 <!--/Description-->
 <!--ADMXMapped-->

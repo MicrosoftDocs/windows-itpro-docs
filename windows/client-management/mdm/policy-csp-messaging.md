@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Messaging
-description: Enable, and disable, text message back up and restore as well as Messaging Everywhere by using the Policy CSP for messaging.
+description: Enable, and disable, text message backup and restore as well as Messaging Everywhere by using the Policy CSP for messaging.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -56,7 +56,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Enables text message back up and restore and Messaging Everywhere. This policy allows an organization to disable these features to avoid information being stored on servers outside of their control.
+Enables text message backup and restore and Messaging Everywhere. This policy allows an organization to disable these features to avoid information being stored on servers outside of their control.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -70,7 +70,7 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 - message sync is not allowed and cannot be changed by the user.
+-   0 - message sync isn't allowed and can't be changed by the user.
 -   1 - message sync is allowed. The user can change this setting.
 
 <!--/SupportedValues-->
