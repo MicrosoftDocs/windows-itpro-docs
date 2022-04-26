@@ -486,8 +486,8 @@ Table 9. Management systems and deployment resources
 |Windows provisioning packages| <li> [Build and apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-create-package) <li>[Windows Imaging and Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd) <li> [Step-By-Step: Building Windows 10 Provisioning Packages](/archive/blogs/canitpro/step-by-step-building-windows-10-provisioning-packages)|
 |Group Policy|<li> [Core Network Companion Guide: Group Policy Deployment](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj899807(v=ws.11)) <li> [Deploying Group Policy](/previous-versions/windows/it-pro/windows-server-2003/cc737330(v=ws.10))"|
 |Configuration Manager| <li> [Site Administration for System Center 2012 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg681983(v=technet.10)) <li> [Deploying Clients for System Center 2012 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699391(v=technet.10))|
-|Intune| <li> [Set up and manage devices with Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=690262) <li> [Smoother Management Of Office 365 Deployments with Windows Intune](https://go.microsoft.com/fwlink/p/?LinkId=690263) <li> [System Center 2012 R2 Configuration Manager &amp;amp; Windows Intune](/learn/?l=fCzIjVKy_6404984382)|
-|MDT| <li>[MDT documentation in the Microsoft Deployment Toolkit (MDT) 2013](https://go.microsoft.com/fwlink/p/?LinkId=690324) <li> [Step-By-Step: Installing Windows 8.1 From A USB Key](/archive/blogs/canitpro/step-by-step-installing-windows-8-1-from-a-usb-key)|
+|Intune| <li> [Set up and manage devices with Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=690262) <li> [System Center 2012 R2 Configuration Manager &amp;amp; Windows Intune](/learn/?l=fCzIjVKy_6404984382)|
+|MDT| <li> [Step-By-Step: Installing Windows 8.1 From A USB Key](/archive/blogs/canitpro/step-by-step-installing-windows-8-1-from-a-usb-key)|
 
 If you determined that no new management system or no remediation of existing systems is necessary, you can skip this section. If you use a management system from another vendor, refer to the vendor documentation on how to perform the necessary steps.
 
@@ -504,7 +504,7 @@ Table 10. Management systems and app deployment resources
 |--- |--- |
 |Group Policy| <li> [Editing an AppLocker Policy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee791894(v=ws.10)) <li> [Group Policy Software Deployment Background](/previous-versions/windows/it-pro/windows-server-2003/cc739305(v=ws.10)) <li> [Assigning and Publishing Software](/previous-versions/windows/it-pro/windows-server-2003/cc783635(v=ws.10))|
 |Configuration Manager| <li> [How to Deploy Applications in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682082(v=technet.10)) <li> [Application Management in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699373(v=technet.10))|
-|Intune| <li> [Deploy apps to mobile devices in Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=733913) <li> [Manage apps with Microsoft Intune](/mem/intune/)|
+|Intune| <li> [Manage apps with Microsoft Intune](/mem/intune/)|
 
 If you determined that no deployment of apps is necessary, you can skip this section. If you use a management system from another vendor, refer to the vendor documentation on how to perform the necessary steps.
 
@@ -584,8 +584,6 @@ In some instances, you may receive the devices with Windows 10 already deployed
 -   [Windows Imaging and Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd)
 
 -   [Build and apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-create-package)
-
--   [MDT documentation in the Microsoft Deployment Toolkit (MDT) 2013](https://go.microsoft.com/fwlink/p/?LinkId=690324)
 
 -   [Step-By-Step: Installing Windows 8.1 From A USB Key](/archive/blogs/canitpro/step-by-step-installing-windows-8-1-from-a-usb-key)
 

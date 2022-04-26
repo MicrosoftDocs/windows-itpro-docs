@@ -282,7 +282,7 @@ ADMX Info:
 <!--Description-->
 This policy setting provides control over whether or not short names are generated during file creation. Some applications require short names for compatibility, but short names have a negative performance impact on the system.
 
-If you enable short names on all volumes then short names will always be generated. If you disable them on all volumes then they will never be generated. If you set short name creation to be configurable on a per volume basis then an on-disk flag will determine whether or not short names are created on a given volume. If you disable short name creation on all data volumes then short names will only be generated for files created on the system volume.
+If you enable short names on all volumes, then short names will always be generated. If you disable them on all volumes, then they'll never be generated. If you set short name creation to be configurable on a per volume basis, then an on-disk flag will determine whether or not short names are created on a given volume. If you disable short name creation on all data volumes, then short names will only be generated for files created on the system volume.
 
 <!--/Description-->
 
@@ -329,7 +329,7 @@ Symbolic links can introduce vulnerabilities in certain applications. To mitigat
 - Remote Link to Remote Target
 - Remote Link to Local Target
 
-For more information, refer to the Windows Help section.
+For more information, see the Windows Help section.
 
 > [!NOTE]
 > If this policy is disabled or not configured, local administrators may select the types of symbolic links to be evaluated.
