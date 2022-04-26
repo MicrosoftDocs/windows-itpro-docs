@@ -65,9 +65,9 @@ manager: dansimp
 <!--Description-->
 This policy setting allows you to configure Automatic Maintenance activation boundary. The maintenance activation boundary is the daily scheduled time at which Automatic Maintenance starts.
 
-If you enable this policy setting, this will override the default daily scheduled time as specified in Security and Maintenance/Automatic Maintenance Control Panel.
+If you enable this policy setting, this scheduled time will override the default daily scheduled time as specified in Security and Maintenance/Automatic Maintenance Control Panel.
 
-If you disable or do not configure this policy setting, the daily scheduled time as specified in Security and Maintenance/Automatic Maintenance Control Panel will apply.
+If you disable or don't configure this policy setting, the daily scheduled time as specified in Security and Maintenance/Automatic Maintenance Control Panel will apply.
 
 <!--/Description-->
 
@@ -115,7 +115,7 @@ The maintenance random delay is the amount of time up to which Automatic Mainten
 
 If you enable this policy setting, Automatic Maintenance will delay starting from its Activation Boundary, by up to this time.
 
-If you do not configure this policy setting, 4 hour random delay will be applied to Automatic Maintenance.
+If you don't configure this policy setting, 4 hour random delay will be applied to Automatic Maintenance.
 
 If you disable this policy setting, no random delay will be applied to Automatic Maintenance.
 

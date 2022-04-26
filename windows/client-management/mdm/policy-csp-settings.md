@@ -249,7 +249,7 @@ This policy disables edit device name option on Settings.
 <!--/Description-->
 <!--SupportedValues-->
 
-Describes what value are supported in by this policy and meaning of each value, default value.
+Describes what values are supported in by this policy and meaning of each value, default value.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -626,7 +626,7 @@ ADMX Info:
 The following list shows the supported values:
 
 -   0 (default) – User will be allowed to configure the setting.
--   1  – Don't show additional calendars.
+-   1  – Don't show more calendars.
 -   2  - Simplified Chinese (Lunar).
 -   3  - Traditional Chinese (Lunar).
 

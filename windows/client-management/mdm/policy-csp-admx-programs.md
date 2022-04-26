@@ -78,15 +78,15 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This setting removes the Set Program Access and Defaults page from the Programs Control Panel. As a result, users cannot view or change the associated page.
+This setting removes the Set Program Access and Defaults page from the Programs Control Panel. As a result, users can't view or change the associated page.
 
 The Set Program Access and Computer Defaults page allows administrators to specify default programs for certain activities, such as Web browsing or sending e-mail, as well as specify the programs that are accessible from the Start menu, desktop, and other locations.
 
 If this setting is disabled or not configured, the Set Program Access and Defaults button is available to all users.
 
-This setting does not prevent users from using other tools and methods to change program access or defaults.
+This setting doesn't prevent users from using other tools and methods to change program access or defaults.
 
-This setting does not prevent the Default Programs icon from appearing on the Start menu.
+This setting doesn't prevent the Default Programs icon from appearing on the Start menu.
 
 <!--/Description-->
 
@@ -134,9 +134,9 @@ This setting prevents users from accessing the "Get Programs" page from the Prog
 
 Published programs are those programs that the system administrator has explicitly made available to the user with a tool such as Windows Installer. Typically, system administrators publish programs to notify users of their availability, to recommend their use, or to enable users to install them without having to search for installation files.
 
-If this setting is enabled, users cannot view the programs that have been published by the system administrator, and they cannot use the "Get Programs" page to install published programs.  Enabling this feature does not prevent users from installing programs by using other methods.  Users will still be able to view and installed assigned (partially installed) programs that are offered on the desktop or on the Start menu.
+If this setting is enabled, users can't view the programs that have been published by the system administrator, and they can't use the "Get Programs" page to install published programs.  Enabling this feature doesn't prevent users from installing programs by using other methods.  Users will still be able to view and installed assigned (partially installed) programs that are offered on the desktop or on the Start menu.
 
-If this setting is disabled or is not configured, the "Install a program from the network" task to the "Get Programs" page will be available to all users.
+If this setting is disabled or isn't configured, the "Install a program from the network" task to the "Get Programs" page will be available to all users.
 
 > [!NOTE]
 > If the "Hide Programs Control Panel" setting is enabled, this setting is ignored.
@@ -187,7 +187,7 @@ This setting prevents users from accessing "Installed Updates" page from the "Vi
 
 If this setting is disabled or not configured, the "View installed updates" task and the "Installed Updates" page will be available to all users.
 
-This setting does not prevent users from using other tools and methods to install or uninstall programs.
+This setting doesn't prevent users from using other tools and methods to install or uninstall programs.
 
 <!--/Description-->
 
@@ -233,7 +233,7 @@ This setting prevents users from accessing "Programs and Features" to view, unin
 
 If this setting is disabled or not configured, "Programs and Features" will be available to all users.
 
-This setting does not prevent users from using other tools and methods to view or uninstall programs.  It also does not prevent users from linking to related Programs Control Panel Features including Windows Features, Get Programs, or Windows Marketplace.
+This setting doesn't prevent users from using other tools and methods to view or uninstall programs.  It also doesn't prevent users from linking to related Programs Control Panel Features including Windows Features, Get Programs, or Windows Marketplace.
 
 <!--/Description-->
 
@@ -283,7 +283,7 @@ If this setting is disabled or not configured, the Programs Control Panel in Cat
 
 When enabled, this setting takes precedence over the other settings in this folder.
 
-This setting does not prevent users from using other tools and methods to install or uninstall programs.
+This setting doesn't prevent users from using other tools and methods to install or uninstall programs.
 
 <!--/Description-->
 
@@ -325,11 +325,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This setting prevents users from accessing the "Turn Windows features on or off" task from the Programs Control Panel in Category View, Programs and Features in Classic View, and Get Programs. As a result, users cannot view, enable, or disable various Windows features and services.
+This setting prevents users from accessing the "Turn Windows features on or off" task from the Programs Control Panel in Category View, Programs and Features in Classic View, and Get Programs. As a result, users can't view, enable, or disable various Windows features and services.
 
-If this setting is disabled or is not configured, the "Turn Windows features on or off" task will be available to all users.
+If this setting is disabled or isn't configured, the "Turn Windows features on or off" task will be available to all users.
 
-This setting does not prevent users from using other tools and methods to configure services or enable or disable program components.
+This setting doesn't prevent users from using other tools and methods to configure services or enable or disable program components.
 
 <!--/Description-->
 
@@ -375,9 +375,9 @@ This setting prevents users from access the "Get new programs from Windows Marke
 
 Windows Marketplace allows users to purchase and/or download various programs to their computer for installation.
 
-Enabling this feature does not prevent users from navigating to Windows Marketplace using other methods. 
+Enabling this feature doesn't prevent users from navigating to Windows Marketplace using other methods. 
 
-If this feature is disabled or is not configured, the "Get new programs from Windows Marketplace" task link will be available to all users.
+If this feature is disabled or isn't configured, the "Get new programs from Windows Marketplace" task link will be available to all users.
 
 > [!NOTE]
 > If the "Hide Programs control Panel" setting is enabled, this setting is ignored.

@@ -75,7 +75,7 @@ landingContent:
       - linkListType: download
         links:
           - text: NSS Labs web browser security reports
-            url: https://www.microsoft.com/download/details.aspx?id=54773
+            url: https://www.microsoft.com/download/details.aspx?id=58080
       - linkListType: overview
         links:
           - text: Microsoft Edge sandbox
