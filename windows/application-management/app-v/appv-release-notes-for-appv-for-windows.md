@@ -128,7 +128,7 @@ When you run Repair-AppvClientConnectionGroup, the following error is displayed,
     3.  If the package is currently published, run **Repair-AppvClientPackage** on that package.
 
 ## Icons not displayed properly in Sequencer
-Icons in the Shortcuts and File Type Associations tab are not displayed correctly when modifying a package in the App-V Sequencer. This problem occurs when the size of the icons are not 16x16 or 32x32.
+Icons in the Shortcuts and File Type Associations tab are not displayed correctly when modifying a package in the App-V Sequencer. This problem occurs when the sizes of the icons are not 16x16 or 32x32.
 
 **Workaround**: Only use icons that are 16x16 or 32x32.
 
