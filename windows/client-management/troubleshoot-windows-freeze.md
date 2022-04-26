@@ -25,7 +25,7 @@ This article describes how to troubleshoot freeze issues on Windows-based comput
 *   Which computer is freezing? (Example: The impacted computer is a physical server, virtual server, and so on.) 
 *   What operation was being performed when the freezes occurred? (Example: This issue occurs when you shut down GUI, perform one or more operations, and so on.) 
 *   How often do the errors occur? (Example: This issue occurs every night at 7 PM, every day around 7 AM, and so on.) 
-*   On how many computers does this occur? (Example: All computers, only one computer, 10 computers, and so on.) 
+*   On how many computers does this freeze occur? (Example: All computers, only one computer, 10 computers, and so on.) 
 
 ## Troubleshoot the freeze issues  
 
@@ -36,7 +36,7 @@ To troubleshoot the freeze issues, check the current status of your computer, an
 If the physical computer or the virtual machine is still freezing, use one or more of the following methods for troubleshooting: 
 
 *   Try to access the computer through Remote Desktop, Citrix, and so on. 
-*   Use the domain account or local administrator account to log on the computer by using one of the Remote Physical Console Access features, such as Dell Remote Access Card (DRAC), HP Integrated Lights-Out (iLo), or IBM Remote supervisor adapter (RSA). 
+*   Use the domain account or local administrator account to sign in to the computer by using one of the Remote Physical Console Access features, such as Dell Remote Access Card (DRAC), HP Integrated Lights-Out (iLo), or IBM Remote supervisor adapter (RSA). 
 *   Test ping to the computer. Packet dropping and high network latency may be observed. 
 *   Access administrative shares (\\\\**ServerName**\\c$). 
 *   Press Ctrl + Alt + Delete command and check response. 
@@ -50,7 +50,7 @@ If the physical computer or virtual machine froze but is now running in a good s
 
 *   Review the System and Application logs from the computer that is having the issue. Check the event logs for the relevant Event ID:
 
-    - Application event log : Application Error (suggesting Crash or relevant System Process)
+    - Application event log: Application Error (suggesting Crash or relevant System Process)
     - System Event logs, Service Control Manager Error event IDs for Critical System Services
     - Error Event IDs 2019/2020 with source Srv/Server
 
@@ -88,7 +88,7 @@ If the computer is no longer frozen and now is running in a good state, use the 
 > If you have a restart feature that is enabled on the computer, such as the Automatic System Restart (ASR) feature in Compaq computers, disable it. This setting is usually found in the BIOS. With this feature enabled, if the BIOS doesn't detect a heartbeat from the operating system, it will restart the computer. The restart can interrupt the dump process.   
 
 
-1. Make sure that the computer is set up to get a complete memory dump file. To do this, follow these steps: 
+1. Ensure that the computer is set up to get a complete memory dump file. To do this setup, follow these steps:
 
    1.  Go to **Run** and enter `Sysdm.cpl`, and then press enter.
     
@@ -106,9 +106,11 @@ If the computer is no longer frozen and now is running in a good state, use the 
 
    5.  Make sure that there's a paging file (pagefile.sys) on the system drive and that it’s at least 100 megabytes (MB) over the installed RAM (Initial and Maximum Size). 
 
-   6.  Make sure that there's more available space on the system drive than there is physical RAM. 
+       Additionally, you can use the workaround for [space limitations on the system drive in Windows Server 2008](#space-limitations-on-the-system-drive-in-windows-server-2008). 
 
-2. Enable the CrashOnCtrlScroll registry value to allow the system to generate a dump file by using the keyboard. To do this, follow these steps: 
+   6.  Make sure that there's more available space on the system drive than there's physical RAM. 
+
+2. Enable the CrashOnCtrlScroll registry value to allow the system to generate a dump file by using the keyboard. To do this enablement, follow these steps: 
 
    1. Go to Registry Editor, and then locate the following registry keys: 
 
@@ -142,7 +144,7 @@ If the computer is no longer frozen and now is running in a good state, use the 
 
 ### Method 2: Data sanity check 
 
-Use the Dump Check Utility (Dumpchk.exe) to read a memory dump file or verify that the file was created correctly. You can use the Microsoft DumpChk (Crash Dump File Checker) tool to verify that the memory dump files are not corrupted or invalid. 
+Use the Dump Check Utility (Dumpchk.exe) to read a memory dump file or verify that the file was created correctly. You can use the Microsoft DumpChk (Crash Dump File Checker) tool to verify that the memory dump files aren't corrupted or invalid. 
 
 - [Using DumpChk](/windows-hardware/drivers/debugger/dumpchk)
 - [Download DumpCheck](https://developer.microsoft.com/windows/downloads/windows-10-sdk)
@@ -183,7 +185,7 @@ The Performance Monitor log is located in the path: C:\PERFLOGS
 If the physical computer is still running in a frozen state, follow these steps to enable and collect memory dump: 
 
 
-1. Make sure that the computer is set up to get a complete memory dump file and that you can access it through the network. To do this, follow these steps:   
+1. Ensure that the computer is set up to get a complete memory dump file and that you can access it through the network. To do this setup, follow these steps:   
    > [!NOTE]
    > If it isn't possible to access the affected computer through the network, try to generate a memory dump file through NMI interruption. The result of the action may not collect a memory dump file if some of the following settings aren't qualified.   
 
@@ -211,11 +213,11 @@ If the physical computer is still running in a frozen state, follow these steps 
         > [!NOTE]
         > If the size isn't reflected in the Registry, try to access an Administrative share where the page file is located (such as \\\\**ServerName**\C$). 
 
-   3. Make sure that there's a paging file (pagefile.sys) on the system drive of the computer, and it's at least 100 MB over the installed RAM. 
+   3. Ensure that there's a paging file (pagefile.sys) on the system drive of the computer, and it's at least 100 MB over the installed RAM. 
 
-   4. Make sure that there's more free space on the hard disk drives of the computer than there is physical RAM. 
+   4. Ensure that there's more free space on the hard disk drives of the computer than there's physical RAM. 
 
-2. Enable the **CrashOnCtrlScroll** registry value on the computer to allow the system to generate a dump file by using the keyboard. To do this, follow these steps: 
+2. Enable the **CrashOnCtrlScroll** registry value on the computer to allow the system to generate a dump file by using the keyboard. To do this enablement, follow these steps: 
 
    1.  From a remote computer preferably in the same network and subnet, go to Registry Editor \> Connect Network Registry. Connect to the concerned computer and locate the following registry keys: 
 

@@ -27,9 +27,9 @@ A Stop error is displayed as a blue screen that contains the name of the faulty 
 - `igdkmd64.sys`
 - `nvlddmkm.sys`
 
-There is no simple explanation for the cause of Stop errors (also known as blue screen errors or bug check errors). Many different factors can be involved. However, various studies indicate that Stop errors usually are not caused by Microsoft Windows components. Instead, these errors are generally related to malfunctioning hardware drivers or drivers that are installed by third-party software. This includes video cards, wireless network cards, security programs, and so on.
+There's no simple explanation for the cause of Stop errors (also known as blue screen errors or bug check errors). Many different factors can be involved. However, various studies indicate that Stop errors usually aren't caused by Microsoft Windows components. Instead, these errors are related to malfunctioning hardware drivers or drivers that are installed by third-party software. These drivers include video cards, wireless network cards, security programs, and so on.
 
-Our analysis of the root causes of crashes indicates the following:
+Our analysis of the root causes of crashes indicates that:
 
 - 70 percent are caused by third-party driver code
 - 10 percent are caused by hardware issues 
@@ -45,7 +45,7 @@ To troubleshoot Stop error messages, follow these general steps:
 
 1. Review the Stop error code that you find in the event logs. Search online for the specific Stop error codes to see whether there are any known issues, resolutions, or workarounds for the problem.
 
-2. As a best practice, we recommend that you do the following:
+2. As a best practice, we recommend that you do the following steps:
 
     1. Make sure that you install the latest Windows updates, cumulative updates, and rollup updates. To verify the update status, refer to the appropriate update history for your system:
 
@@ -75,7 +75,7 @@ To troubleshoot Stop error messages, follow these general steps:
 5. Contact the respective hardware or software vendor to update the drivers and applications in the following scenarios:
   
    - The error message indicates that a specific driver is causing the problem.
-   - You are seeing an indication of a service that is starting or stopping before the crash occurred. In this situation, determine whether the service behavior is consistent across all instances of the crash.
+   - You're seeing an indication of a service that is starting or stopping before the crash occurred. In this situation, determine whether the service behavior is consistent across all instances of the crash.
    - You have made any software or hardware changes.
 
      >[!NOTE]
@@ -103,7 +103,7 @@ To configure the system for memory dump files, follow these steps:
 
 6. Stop and disable Automatic System Restart Services (ASR) to prevent dump files from being written. 
 
-7. If the server is virtualized, disable auto reboot after the memory dump file is created. This lets you take a snapshot of the server in-state and also if the problem recurs.
+7. If the server is virtualized, disable auto reboot after the memory dump file is created. This disablement lets you take a snapshot of the server in-state and also if the problem recurs.
 
 The memory dump file is saved at the following locations:
 
@@ -116,7 +116,7 @@ The memory dump file is saved at the following locations:
 | Automatic memory dump file | %SystemRoot%\MEMORY.DMP |
 | Active memory dump file | %SystemRoot%\MEMORY.DMP |
 
-You can use the Microsoft DumpChk (Crash Dump File Checker) tool to verify that the memory dump files are not corrupted or invalid. For more information, see the following video:<br/><br/>
+You can use the Microsoft DumpChk (Crash Dump File Checker) tool to verify that the memory dump files aren't corrupted or invalid. For more information, see the following video:<br/><br/>
 
 >[!video https://www.youtube.com/embed/xN7tOfgNKag]
 
@@ -142,7 +142,7 @@ You can use the tools such as Windows Software Development KIT (SDK) and Symbols
 ## Advanced troubleshooting steps
 
 >[!NOTE]
->Advanced troubleshooting of crash dumps can be very challenging if you are not experienced with programming and internal Windows mechanisms. We have attempted to provide a brief insight here into some of the techniques used, including some examples. However, to really be effective at troubleshooting a crash dump, you should spend time becoming familiar with advanced debugging techniques. For a video overview, see [Advanced Windows Debugging](https://channel9.msdn.com/Blogs/Charles/Advanced-Windows-Debugging-An-Introduction) and [Debugging Kernel Mode Crashes and Hangs](https://channel9.msdn.com/Shows/Defrag-Tools/DefragTools-137-Debugging-kernel-mode-dumps). Also see the advanced references listed below.
+>Advanced troubleshooting of crash dumps can be very challenging if you aren't experienced with programming and internal Windows mechanisms. We have attempted to provide a brief insight here into some of the techniques used, including some examples. However, to really be effective at troubleshooting a crash dump, you should spend time becoming familiar with advanced debugging techniques. For a video overview, see [Advanced Windows Debugging](https://channel9.msdn.com/Blogs/Charles/Advanced-Windows-Debugging-An-Introduction) and [Debugging Kernel Mode Crashes and Hangs](https://channel9.msdn.com/Shows/Defrag-Tools/DefragTools-137-Debugging-kernel-mode-dumps). Also see the advanced references listed below.
 
 ### Advanced debugging references
 
@@ -151,25 +151,25 @@ You can use the tools such as Windows Software Development KIT (SDK) and Symbols
 
 ### Debugging steps
 
-1. Verify that the computer is set up to generate a complete memory dump file when a crash occurs. See the steps [here](troubleshoot-windows-freeze.md#method-1-memory-dump) for more information. 
+1. Verify that the computer is set up to generate a complete memory dump file when a crash occurs. For more information, see the steps [here](troubleshoot-windows-freeze.md#method-1-memory-dump). 
 
 2. Locate the memory.dmp file in your Windows directory on the computer that is crashing, and copy that file to another computer.
 
 3. On the other computer, download the [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 
-4. Start the install and choose **Debugging Tools for Windows**. This installs the WinDbg tool.
+4. Start the install and choose **Debugging Tools for Windows**. The WinDbg tool is installed.
 
 5. Open the WinDbg tool and set the symbol path by clicking **File** and then clicking **Symbol File Path**.
 
-    1. If the computer is connected to the Internet, enter the [Microsoft public symbol server](/windows-hardware/drivers/debugger/microsoft-public-symbols) (https://msdl.microsoft.com/download/symbols) and click **OK**. This is the recommended method.
+    1. If the computer is connected to the Internet, enter the [Microsoft public symbol server](/windows-hardware/drivers/debugger/microsoft-public-symbols) (https://msdl.microsoft.com/download/symbols) and click **OK**. This method is the recommended one.
 
-    1. If the computer is not connected to the Internet, you must specify a local [symbol path](/windows-hardware/drivers/debugger/symbol-path).
+    1. If the computer isn't connected to the Internet, you must specify a local [symbol path](/windows-hardware/drivers/debugger/symbol-path).
 
 6. Click on **Open Crash Dump**, and then open the memory.dmp file that you copied. See the example below.
 
    :::image type="content" alt-text="WinDbg img." source="images/windbg.png" lightbox="images/windbg.png":::
 
-7. There should be a link that says **!analyze -v** under **Bugcheck Analysis**. Click that link. This will enter the command !analyze -v in the prompt at the bottom of the page.
+7. There should be a link that says **!analyze -v** under **Bugcheck Analysis**. Click that link. The command !analyze -v is entered in the prompt at the bottom of the page.
 
 8. A detailed bugcheck analysis will appear. See the example below.
 
@@ -217,7 +217,7 @@ There are many possible causes of a bugcheck and each case is unique. In the exa
 
 The problem here is with **mpssvc** which is a component of the Windows Firewall. The problem was repaired by disabling the firewall temporarily and then resetting firewall policies. 
 
-Additional examples are provided in the [Debugging examples](#debugging-examples) section at the bottom of this article.
+More examples are provided in the [Debugging examples](#debugging-examples) section at the bottom of this article.
 
 ## Video resources
 
@@ -245,7 +245,7 @@ Use the following guidelines when you use Driver Verifier:
 
 - Enable concurrent verification on groups of 10–20 drivers.
 
-- Additionally, if the computer cannot boot into the desktop because of Driver Verifier, you can disable the tool by starting in Safe mode. This is because the tool cannot run in Safe mode.
+- Additionally, if the computer can't boot into the desktop because of Driver Verifier, you can disable the tool by starting in Safe mode. This solution is because the tool can't run in Safe mode.
 
 For more information, see [Driver Verifier](/windows-hardware/drivers/devtest/driver-verifier).
 
@@ -261,16 +261,16 @@ VIDEO_ENGINE_TIMEOUT_DETECTED or VIDEO_TDR_TIMEOUT_DETECTED<br>Stop error code 0
 DRIVER_IRQL_NOT_LESS_OR_EQUAL <br>Stop error code 0x0000000D1 | Apply the latest updates for the driver by applying the latest cumulative updates for the system through the Microsoft Update Catalog website.Update an outdated NIC driver. Virtualized VMware systems often run “Intel(R) PRO/1000 MT Network Connection” (e1g6032e.sys). This driver is available at [http://downloadcenter.intel.com](http://downloadcenter.intel.com). Contact the hardware vendor to update the NIC driver for a resolution. For VMware systems, use the VMware integrated NIC driver (types VMXNET or VMXNET2 , VMXNET3 can be used) instead of Intel e1g6032e.sys.
 PAGE_FAULT_IN_NONPAGED_AREA <br>Stop error code 0x000000050 | If a driver is identified in the Stop error message, contact the manufacturer for an update.If no updates are available, disable the driver, and monitor the system for stability. Run Chkdsk /f /r to detect and repair disk errors. You must restart the system before the disk scan begins on a system partition. Contact the manufacturer for any diagnostic tools that they may provide for the hard disk subsystem. Try to reinstall any application or service that was recently installed or updated. It's possible that the crash was triggered while the system was starting applications and reading the registry for preference settings. Reinstalling the application can fix corrupted registry keys.If the problem persists, and you have run a recent system state backup, try to restore the registry hives from the backup.
 SYSTEM_SERVICE_EXCEPTION <br>Stop error code c000021a {Fatal System Error} The Windows SubSystem system process terminated unexpectedly with a status of 0xc0000005. The system has been shut down. | Use the System File Checker tool to repair missing or corrupted system files. The System File Checker lets users scan for corruptions in Windows system files and restore corrupted files.  For more information, see [Use the System File Checker tool](https://support.microsoft.com/en-us/help/929833/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system-files).
-NTFS_FILE_SYSTEM <br>Stop error code 0x000000024 | This Stop error is commonly caused by corruption in the NTFS file system or bad blocks (sectors) on the hard disk. Corrupted drivers for hard disks (SATA or IDE) can also adversely affect the system's ability to read and write to disk. Run any hardware diagnostics that are provided by the manufacturer of the storage subsystem. Use the scan disk tool to verify that there are no file system errors. To do this, right-click the drive that you want to scan, select Properties, select Tools, and then select the Check now button.We also suggest that you update the NTFS file system driver (Ntfs.sys), and apply the latest cumulative updates for the current operating system that is experiencing the problem. 
-KMODE_EXCEPTION_NOT_HANDLED <br>Stop error code 0x0000001E | If a driver is identified in the Stop error message, disable or remove that driver. Disable or remove any drivers or services that were recently added. <br><br>If the error occurs during the startup sequence, and the system partition is formatted by using the NTFS file system, you might be able to use Safe mode to disable the driver in Device Manager. To do this, follow these steps:<br><br>Go to **Settings > Update &amp; security > Recovery**. Under **Advanced startup**, select **Restart now**. After your PC restarts to the **Choose an option** screen, select **Troubleshoot &gt; Advanced options &gt; Startup Settings &gt; Restart**. After the computer restarts, you'll see a list of options. Press **4** or **F4** to start the computer in Safe mode. Or, if you intend to use the Internet while in Safe mode, press **5** or **F5** for the Safe Mode with Networking option.
-DPC_WATCHDOG_VIOLATION <br>Stop error code 0x00000133 | This Stop error code is caused by a faulty driver that does not complete its work within the allotted time frame in certain conditions. To enable us to help mitigate this error, collect the memory dump file from the system, and then use the Windows Debugger to find the faulty driver. If a driver is identified in the Stop error message, disable the driver to isolate the problem. Check with the manufacturer for driver updates. Check the system log in Event Viewer for additional error messages that might help identify the device or driver that is causing Stop error 0x133. Verify that any new hardware that is installed is compatible with the installed version of Windows. For example, you can get information about required hardware at Windows 10 Specifications. If Windows Debugger is installed, and you have access to public symbols, you can load the c:\windows\memory.dmp file into the Debugger, and then refer to [Determining the source of Bug Check 0x133 (DPC_WATCHDOG_VIOLATION) errors on Windows Server 2012](/archive/blogs/ntdebugging/determining-the-source-of-bug-check-0x133-dpc_watchdog_violation-errors-on-windows-server-2012) to find the problematic driver from the memory dump.  
-USER_MODE_HEALTH_MONITOR <br>Stop error code 0x0000009E		| This Stop error indicates that a user-mode health check failed in a way that prevents graceful shutdown. Therefore, Windows restores critical services by restarting or enabling application failover to other servers. The Clustering Service incorporates a detection mechanism that may detect unresponsiveness in user-mode components.<br>This Stop error usually occurs in a clustered environment, and the indicated faulty driver is RHS.exe.Check the event logs for any storage failures to identify the failing process. Try to update the component or process that is indicated in the event logs. You should see the following event recorded:<br>Event ID: 4870<br>Source: Microsoft-Windows-FailoverClustering<br>Description: User mode health monitoring has detected that the system is not being responsive. The Failover cluster virtual adapter has lost contact with the Cluster Server process with a process ID ‘%1’, for ‘%2’ seconds. Recovery action is taken. Review the Cluster logs to identify the process and investigate which items might cause the process to hang. <br />For more information, see ["Why is my Failover Clustering node blue screening with a Stop 0x0000009E?"](https://techcommunity.microsoft.com/t5/failover-clustering/decoding-bugcheck-0x0000009e/ba-p/371863) Also, see the following Microsoft video [What to do if a 9E occurs](https://www.youtube.com/watch?v=vOJQEdmdSgw).
+NTFS_FILE_SYSTEM <br>Stop error code 0x000000024 | This Stop error is commonly caused by corruption in the NTFS file system or bad blocks (sectors) on the hard disk. Corrupted drivers for hard disks (SATA or IDE) can also adversely affect the system's ability to read and write to disk. Run any hardware diagnostics that are provided by the manufacturer of the storage subsystem. Use the scan disk tool to verify that there are no file system errors. To do this step, right-click the drive that you want to scan, select Properties, select Tools, and then select the Check now button. We also suggest that you update the NTFS file system driver (Ntfs.sys), and apply the latest cumulative updates for the current operating system that is experiencing the problem. 
+KMODE_EXCEPTION_NOT_HANDLED <br>Stop error code 0x0000001E | If a driver is identified in the Stop error message, disable or remove that driver. Disable or remove any drivers or services that were recently added. <br><br>If the error occurs during the startup sequence, and the system partition is formatted by using the NTFS file system, you might be able to use Safe mode to disable the driver in Device Manager. To disable the driver, follow these steps:<br><br>Go to **Settings > Update &amp; security > Recovery**. Under **Advanced startup**, select **Restart now**. After your PC restarts to the **Choose an option** screen, select **Troubleshoot &gt; Advanced options &gt; Startup Settings &gt; Restart**. After the computer restarts, you'll see a list of options. Press **4** or **F4** to start the computer in Safe mode. Or, if you intend to use the Internet while in Safe mode, press **5** or **F5** for the Safe Mode with Networking option.
+DPC_WATCHDOG_VIOLATION <br>Stop error code 0x00000133 | This Stop error code is caused by a faulty driver that doesn't complete its work within the allotted time frame in certain conditions. To enable us to help mitigate this error, collect the memory dump file from the system, and then use the Windows Debugger to find the faulty driver. If a driver is identified in the Stop error message, disable the driver to isolate the problem. Check with the manufacturer for driver updates. Check the system log in Event Viewer for other error messages that might help identify the device or driver that is causing Stop error 0x133. Verify that any new hardware that is installed is compatible with the installed version of Windows. For example, you can get information about required hardware at Windows 10 Specifications. If Windows Debugger is installed, and you have access to public symbols, you can load the c:\windows\memory.dmp file into the Debugger, and then refer to [Determining the source of Bug Check 0x133 (DPC_WATCHDOG_VIOLATION) errors on Windows Server 2012](/archive/blogs/ntdebugging/determining-the-source-of-bug-check-0x133-dpc_watchdog_violation-errors-on-windows-server-2012) to find the problematic driver from the memory dump.  
+USER_MODE_HEALTH_MONITOR <br>Stop error code 0x0000009E		| This Stop error indicates that a user-mode health check failed in a way that prevents graceful shutdown. Therefore, Windows restores critical services by restarting or enabling application failover to other servers. The Clustering Service incorporates a detection mechanism that may detect unresponsiveness in user-mode components.<br>This Stop error usually occurs in a clustered environment, and the indicated faulty driver is RHS.exe.Check the event logs for any storage failures to identify the failing process. Try to update the component or process that is indicated in the event logs. You should see the following event recorded:<br>Event ID: 4870<br>Source: Microsoft-Windows-FailoverClustering<br>Description: User mode health monitoring has detected that the system isn't being responsive. The Failover cluster virtual adapter has lost contact with the Cluster Server process with a process ID ‘%1’, for ‘%2’ seconds. Recovery action is taken. Review the Cluster logs to identify the process and investigate which items might cause the process to hang. <br />For more information, see ["Why is my Failover Clustering node blue screening with a Stop 0x0000009E?"](https://blogs.technet.microsoft.com/askcore/2009/06/12/why-is-my-failover-clustering-node-blue-screening-with-a-stop-0x0000009e) Also, see the following Microsoft video [What to do if a 9E occurs](https://www.youtube.com/watch?v=vOJQEdmdSgw).
 
 ## Debugging examples
 
 ### Example 1
 
-This bugcheck is caused by a driver hang during upgrade, resulting in a bugcheck D1 in NDIS.sys (a Microsoft driver).  The **IMAGE_NAME** tells you the faulting driver, but since this is Microsoft driver it cannot be replaced or removed. The resolution method is to disable the network device in device manager and try the upgrade again.
+This bugcheck is caused by a driver hang during upgrade, resulting in a bugcheck D1 in NDIS.sys (a Microsoft driver).  The **IMAGE_NAME** tells you the faulting driver, but since this driver is Microsoft driver it can't be replaced or removed. The resolution method is to disable the network device in device manager and try the upgrade again.
 
 ```console
 2: kd> !analyze -v
@@ -341,7 +341,7 @@ ANALYSIS_SESSION_HOST:  SHENDRIX-DEV0
 ANALYSIS_SESSION_TIME:  01-17-2019 11:06:05.0653
 ANALYSIS_VERSION: 10.0.18248.1001 amd64fre
 TRAP_FRAME:  ffffa884c0c3f6b0 -- (.trap 0xffffa884c0c3f6b0)
-NOTE: The trap frame does not contain all registers.
+NOTE: The trap frame doesn't contain all registers.
 Some register values may be zeroed or incorrect.
 rax=fffff807ad018bf0 rbx=0000000000000000 rcx=000000000011090a
 rdx=fffff807ad018c10 rsi=0000000000000000 rdi=0000000000000000
@@ -440,7 +440,7 @@ In this example, a non-Microsoft driver caused page fault, so we don’t have sy
 *******************************************************************************
 
 PAGE_FAULT_IN_NONPAGED_AREA (50)
-Invalid system memory was referenced.  This cannot be protected by try-except.
+Invalid system memory was referenced.  This can't be protected by try-except.
 Typically the address is just plain bad or it is pointing at freed memory.
 Arguments:
 Arg1: 8ba10000, memory referenced.

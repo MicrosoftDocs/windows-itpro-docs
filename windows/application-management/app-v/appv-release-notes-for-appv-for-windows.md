@@ -26,7 +26,7 @@ MSI packages that were generated using an App-V sequencer from previous versions
 
 1. Install the latest App-V sequencer, which you can get from the Windows Assessment and Deployment Kit (ADK) for Windows 10, version 1607. See [Download the Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit). For more information, see [Install the App-V Sequencer](appv-install-the-sequencer.md).
 
-2. Ensure that you have installed the **MSI Tools** included in the Windows 10 SDK, available as follows:
+2. Ensure that you've installed the **MSI Tools** included in the Windows 10 SDK, available as follows:
 
     - For the **Visual Studio Community 2015 with Update 3** client, which includes the latest Windows 10 SDK and developer tools, see [Downloads and tools for Windows 10](https://developer.microsoft.com/en-us/windows/downloads).
     
@@ -47,12 +47,12 @@ MSI packages that were generated using an App-V sequencer from previous versions
     where the path is to the new directory (**C:\MyMsiTools\ for this example**).
 
 ## Error occurs during publishing refresh between App-V 5.0 SP3 Management Server and App-V Client on Windows 10
-An error is generated during publishing refresh when synchronizing packages from the App-V 5.0 SP3 management server to an App-V client on Windows 10. This error occurs because the App-V 5.0 SP3 server does not understand the Windows 10 operating system that is specified in the publishing URL. The issue is fixed for App-V publishing server, but is not backported to versions of App-V 5.0 SP3 or earlier.
+An error is generated during publishing refresh when synchronizing packages from the App-V 5.0 SP3 management server to an App-V client on Windows 10. This error occurs because the App-V 5.0 SP3 server doesn't understand the Windows 10 operating system that is specified in the publishing URL. The issue is fixed for App-V publishing server, but isn't backported to versions of App-V 5.0 SP3 or earlier.
 
 **Workaround**: Upgrade the App-V 5.0 Management server to the App-V Management server for Windows 10 Clients.
 
-## Custom configurations do not get applied for packages that will be published globally if they are set using the App-V Server
-If you assign a package to an AD group that contains machine accounts and apply a custom configuration to that group using the App-V Server, the custom configuration will not be applied to those machines. The App-V Client will publish packages assigned to a machine account globally. However, it stores custom configuration files per user in each user’s profile. Globally published packages will not have access to this custom configuration.
+## Custom configurations don't get applied for packages that will be published globally if they're set using the App-V Server
+If you assign a package to an AD group that contains machine accounts and apply a custom configuration to that group using the App-V Server, the custom configuration won't not be applied to those machines. The App-V Client will publish packages assigned to a machine account globally. However, it stores custom configuration files per user in each user’s profile. Globally published packages won't have access to this custom configuration.
 
 **Workaround**: Do one of the following:
 
@@ -134,11 +134,6 @@ Icons in the Shortcuts and File Type Associations tab are not displayed correctl
 
 ## InsertVersionInfo.sql script no longer required for the Management Database
 The InsertVersionInfo.sql script is not required for versions of the App-V management database later than App-V 5.0 SP3.
-
-The Permissions.sql script should be updated according to **Step 2** in [KB article 3031340](https://support.microsoft.com/kb/3031340).
-
-> [!IMPORTANT]
-> **Step 1** of the KB article listed above isn't required for versions of App-V later than App-V 5.0 SP3.
 
 ## Microsoft Visual Studio 2012 not supported
 App-V doesn't support Visual Studio 2012.

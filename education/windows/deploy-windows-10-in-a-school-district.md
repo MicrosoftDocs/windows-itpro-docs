@@ -114,7 +114,7 @@ Office 365 Education allows:
 
 * Faculty to help prevent unauthorized users from accessing documents and email by using Microsoft Azure Rights Management.
 
-* Faculty to use advanced compliance tools on the unified eDiscovery pages in the Office 365 Compliance Center.
+* Faculty to use advanced compliance tools on the unified eDiscovery pages in the Microsoft Purview compliance portal.
 
 * Faculty to host online classes, parent–teacher conferences, and other collaboration in Skype for Business.
 
@@ -587,7 +587,7 @@ In this synchronization model (illustrated in Figure 7), you run Azure AD Connec
 
 #### To deploy AD DS and Azure AD synchronization
 
-1. Configure your environment to meet the prerequisites for installing Azure AD Connect by performing the steps in [Prerequisites for Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect-prerequisites/).
+1. Configure your environment to meet the prerequisites for installing Azure AD Connect by performing the steps in [Prerequisites for Azure AD Connect](/azure/active-directory/cloud-sync/how-to-prerequisites).
 
 2. In the VM or on the physical device that will run Azure AD Connect, sign in with a domain administrator account.
 
@@ -1096,13 +1096,13 @@ For more information about Intune, see [Microsoft Intune Documentation](/intune/
 
 #### To configure Intune settings
 
-1. Add Intune to your Office 365 subscription by completing the steps in [Manage Intune licenses](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4).
+1. Add Intune to your Office 365 subscription by completing the steps in [Manage Intune licenses](/mem/intune/fundamentals/licenses-assign).
 
-2. Enroll devices with Intune by completing the steps in [Get ready to enroll devices in Microsoft Intune](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune).
+2. Enroll devices with Intune by completing the steps in [Get ready to enroll devices in Microsoft Intune](/mem/intune/enrollment/quickstart-enroll-windows-device).
 
-3. Configure the settings in Intune Windows 10 policies by completing the steps in [Manage settings and features on your devices with Microsoft Intune policies](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies).
+3. Configure the settings in Intune Windows 10 policies by completing the steps in [Manage settings and features on your devices with Microsoft Intune policies](/mem/intune/configuration/device-profiles).
 
-4. Manage Windows 10 devices by completing the steps in [Manage Windows PCs with Microsoft Intune](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune).
+4. Manage Windows 10 devices by completing the steps in [Manage Windows PCs with Microsoft Intune](/mem/intune/remote-actions/device-management).
 
 ### Deploy and manage apps by using Intune
 
@@ -1112,11 +1112,10 @@ You can use Intune to deploy Microsoft Store and Windows desktop apps. Intune pr
 
 For more information about how to configure Intune to manage your apps, see the following resources:
 
-- [Add apps with Microsoft Intune](/intune/deploy-use/add-apps)
-- [Deploy apps with Microsoft Intune](/intune/deploy-use/deploy-apps)
-- [Update apps using Microsoft Intune](/intune/deploy-use/update-apps-using-microsoft-intune)
-- [Protect apps and data with Microsoft Intune](/intune/deploy-use/protect-apps-and-data-with-microsoft-intune)
-- [Help protect your data with full or selective wipe using Microsoft Intune](/intune/deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune)
+- [Add apps with Microsoft Intune](/mem/intune/apps/apps-add)
+- [Deploy apps with Microsoft Intune](/mem/intune/apps/apps-windows-10-app-deploy)
+- [Protect apps and data with Microsoft Intune](/mem/intune/apps/app-protection-policy)
+- [Help protect your data with full or selective wipe using Microsoft Intune](/mem/intune/remote-actions/devices-wipe)
 
 ### Deploy and manage apps by using Microsoft Endpoint Configuration Manager
 
@@ -1142,8 +1141,8 @@ To help ensure that your users have the most current features and security prote
 
 For more information about how to configure Intune to manage updates and malware protection, see the following resources:
 
-- [Keep Windows PCs up to date with software updates in Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)
-- [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
+- [Keep Windows PCs up to date with software updates in Microsoft Intune](/mem/intune/protect/windows-update-for-business-configure)
+- [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/mem/intune/protect/endpoint-protection-configure)
 
 ### Manage updates by using Microsoft Endpoint Configuration Manager
 
@@ -1252,8 +1251,8 @@ Table 19 lists the school and individual classroom maintenance tasks, the resour
 
 |Task and resources|Monthly|New semester or academic year|As required|
 |--- |--- |--- |--- |
-|Verify that Windows Update is active and current with operating system and software updates.<br>For more information about completing this task when you have:<li>Intune, see [Keep Windows PCs up to date with software updates in Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)<li>Group Policy, see [Windows Update for Business](/windows/deployment/update/waas-manage-updates-wufb).<li>WSUS, see [Windows Server Update Services](/windows/deployment/deploy-whats-new).<br>Neither Intune, Group Policy, nor WSUS, see “Install, upgrade, & activate” in Windows 10 help.|✔️|✔️|✔️|
-|Verify that Windows Defender is active and current with malware Security intelligence.<br>For more information about completing this task, see [Turn Windows Defender on or off](https://support.microsoft.com/instantanswers/742778f2-6aad-4a8d-8f5d-db59cebc4f24/how-to-protect-your-windows-10-pc#v1h=tab02)and [Updating Windows Defender](https://support.microsoft.com/instantanswers/742778f2-6aad-4a8d-8f5d-db59cebc4f24/how-to-protect-your-windows-10-pc#v1h=tab03).|✔️|✔️|✔️|
+|Verify that Windows Update is active and current with operating system and software updates.<br>For more information about completing this task when you have:<li>Intune, see [Keep Windows PCs up to date with software updates in Microsoft Intune](/mem/intune/protect/windows-update-for-business-configure)<li>Group Policy, see [Windows Update for Business](/windows/deployment/update/waas-manage-updates-wufb).<li>WSUS, see [Windows Server Update Services](/windows/deployment/deploy-whats-new).<br>Neither Intune, Group Policy, nor WSUS, see “Install, upgrade, & activate” in Windows 10 help.|✔️|✔️|✔️|
+|Verify that Windows Defender is active and current with malware Security intelligence.<br>For more information about completing this task, see [Turn Windows Defender on or off](/mem/intune/user-help/turn-on-defender-windows)and [Updating Windows Defender](/mem/intune/user-help/turn-on-defender-windows).|✔️|✔️|✔️|
 |Verify that Windows Defender has run a scan in the past week and that no viruses or malware were found.<br>For more information about completing this task, see the “How do I find and remove a virus?” topic in [Protect my PC from viruses](https://support.microsoft.com/help/17228/windows-protect-my-pc-from-viruses).|✔️|✔️|✔️|
 |Download and approve updates for Windows 10, apps, device driver, and other software.<br>For more information, see:<li>[Manage updates by using Intune](#manage-updates-by-using-intune)<li>[Manage updates by using Microsoft Endpoint Configuration Manager](#manage-updates-by-using-microsoft-endpoint-configuration-manager)|✔️|✔️|✔️|
 |Verify that you’re using the appropriate Windows 10 servicing options for updates and upgrades (such as selecting whether you want to use Current Branch or Current Branch for Business).<br>For more information about Windows 10 servicing options for updates and upgrades, see [Windows 10 servicing options](/windows/deployment/update/).||✔️|✔️|
