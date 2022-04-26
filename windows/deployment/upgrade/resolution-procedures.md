@@ -131,7 +131,7 @@ Also see the following sequential list of modern setup (mosetup) error codes wit
 | 0XC1900113 | MOSETUP_E_EULA_DECLINED | The user has declined the license terms. |
 | 0XC190011e | MOSETUP_E_FLIGHTING_BVT | The installation process has been halted for testing purposes. |
 | 0XC190011f | MOSETUP_E_PROCESS_CRASHED | The installation process crashed. |
-| 0XC1900120 | MOSETUP_E_EULA_TIMEOUT | The user has not accepted Eula within the required time limit. |
+| 0XC1900120 | MOSETUP_E_EULA_TIMEOUT | The user has not accepted the EULA within the required time limit. |
 | 0XC1900121 | MOSETUP_E_ADVERTISE_TIMEOUT | The user has not accepted Advertisement within the required time limit. |
 | 0XC1900122 | MOSETUP_E_DOWNLOADDISKSPACE_TIMEOUT | The download disk space issues were not resolved within the required time limit. |
 | 0XC1900123 | MOSETUP_E_INSTALLDISKSPACE_TIMEOUT | The install disk space issues were not resolved within the required time limit. |
