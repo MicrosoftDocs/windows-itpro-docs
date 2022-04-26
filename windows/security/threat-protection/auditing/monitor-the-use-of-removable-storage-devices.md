@@ -56,8 +56,13 @@ After you configure the settings to monitor removable storage devices, use the f
 4.  In Server Manager, click **Tools**, and then click **Event Viewer**.
 5.  Expand **Windows Logs**, and then click **Security**.
 6.  Look for event 4663, which logs successful attempts to write to or read from a removable storage device. Failures will log event 4656. Both events include **Task Category = Removable Storage device**.
+   
+    For more information, see [Audit Removable Storage](audit-removable-storage.md).
 
     Key information to look for includes the name and account domain of the user who attempted to access the file, the object that the user is attempting to access, resource attributes of the resource, and the type of access that was attempted.
+
+    > [!NOTE]
+    > Even after configuring settings to monitor removable storage devices, some versions of Windows 10 may require registry key **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Storage\HotPlugSecureOpen** to be set to **1** to start logging the removable storage audit events.
 
     > [!NOTE]
     > We do not recommend that you enable this category on a file server that hosts file shares on a removable storage device. When Removable Storage Auditing is configured, any attempt to access the removable storage device will generate an audit event.

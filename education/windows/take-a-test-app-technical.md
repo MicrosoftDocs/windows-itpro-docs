@@ -105,8 +105,6 @@ When running tests in this mode, keep the following in mind:
 - Permissive mode is not supported in kiosk mode (dedicated test account).
 - Permissive mode can be triggered from the web app running within Take a Test. Alternatively, you can create a link or shortcut without "#enforcelockdown" and it will launch in permissive mode.
 
-See [Secure Browser API Specification](https://github.com/SmarterApp/SB_BIRT/blob/master/irp/doc/req/SecureBrowserAPIspecification.md) for more info.
-
 ## Learn more
 
 [Take a Test API](/windows/uwp/apps-for-education/take-a-test-api)
