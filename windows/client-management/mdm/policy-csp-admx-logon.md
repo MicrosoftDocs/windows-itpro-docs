@@ -104,9 +104,9 @@ manager: dansimp
 <!--Description-->
 This policy prevents the user from showing account details (email address or user name) on the sign-in screen. 
 
-If you enable this policy setting, the user cannot choose to show account details on the sign-in screen.
+If you enable this policy setting, the user can't choose to show account details on the sign-in screen.
 
-If you disable or do not configure this policy setting, the user may choose to show account details on the sign-in screen.
+If you disable or don't configure this policy setting, the user may choose to show account details on the sign-in screen.
 
 <!--/Description-->
 
@@ -152,7 +152,7 @@ This policy setting disables the acrylic blur effect on logon background image.
 
 If you enable this policy, the logon background image shows without blur.
 
-If you disable or do not configure this policy, the logon background image adopts the acrylic blur effect.
+If you disable or don't configure this policy, the logon background image adopts the acrylic blur effect.
 
 <!--/Description-->
 
@@ -294,11 +294,11 @@ ADMX Info:
 <!--Description-->
 This policy setting ignores customized run-once lists.
 
-You can create a customized list of additional programs and documents that are started automatically the next time the system starts (but not thereafter). These programs are added to the standard list of programs and services that the system starts.
+You can create a customized list of other programs and documents that are started automatically the next time the system starts (but not thereafter). These programs are added to the standard list of programs and services that the system starts.
 
 If you enable this policy setting, the system ignores the run-once list.
 
-If you disable or do not configure this policy setting, the system runs the programs in the run-once list.
+If you disable or don't configure this policy setting, the system runs the programs in the run-once list.
 
 This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy setting in Computer Configuration takes precedence over the policy setting in User Configuration.
 
@@ -347,11 +347,11 @@ ADMX Info:
 <!--Description-->
 This policy setting ignores customized run-once lists.
 
-You can create a customized list of additional programs and documents that are started automatically the next time the system starts (but not thereafter). These programs are added to the standard list of programs and services that the system starts.
+You can create a customized list of other programs and documents that are started automatically the next time the system starts (but not thereafter). These programs are added to the standard list of programs and services that the system starts.
 
 If you enable this policy setting, the system ignores the run-once list.
 
-If you disable or do not configure this policy setting, the system runs the programs in the run-once list.
+If you disable or don't configure this policy setting, the system runs the programs in the run-once list.
 
 This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy setting in Computer Configuration takes precedence over the policy setting in User Configuration.
 
@@ -400,9 +400,9 @@ ADMX Info:
 <!--Description-->
 This policy setting suppresses system status messages.
 
-If you enable this setting, the system does not display a message reminding users to wait while their system starts or shuts down, or while users log on or off.
+If you enable this setting, the system doesn't display a message reminding users to wait while their system starts or shuts down, or while users sign in or sign out.
 
-If you disable or do not configure this policy setting, the system displays the message reminding users to wait while their system starts or shuts down, or while users log on or off.
+If you disable or don't configure this policy setting, the system displays the message reminding users to wait while their system starts or shuts down, or while users sign in or sign out.
 
 <!--/Description-->
 
@@ -446,9 +446,9 @@ ADMX Info:
 <!--Description-->
 This policy setting prevents connected users from being enumerated on domain-joined computers.
 
-If you enable this policy setting, the Logon UI will not enumerate any connected users on domain-joined computers.
+If you enable this policy setting, the Logon UI won't enumerate any connected users on domain-joined computers.
 
-If you disable or do not configure this policy setting, connected users will be enumerated on domain-joined computers.
+If you disable or don't configure this policy setting, connected users will be enumerated on domain-joined computers.
 
 <!--/Description-->
 
@@ -496,9 +496,9 @@ If you enable this policy setting, the welcome screen is hidden from the user lo
 
 Users can still display the welcome screen by selecting it on the Start menu or by typing "Welcome" in the Run dialog box.
 
-If you disable or do not configure this policy, the welcome screen is displayed each time a user logs on to the computer.
+If you disable or don't configure this policy, the welcome screen is displayed each time a user signs in to the computer.
 
-This setting applies only to Windows. It does not affect the "Configure Your Server on a Windows Server" screen on Windows Server.
+This setting applies only to Windows. It doesn't affect the "Configure Your Server on a Windows Server" screen on Windows Server.
 
 > [!NOTE]
 > This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
@@ -553,7 +553,7 @@ If you enable this policy setting, the welcome screen is hidden from the user lo
 
 Users can still display the welcome screen by selecting it on the Start menu or by typing "Welcome" in the Run dialog box.
 
-If you disable or do not configure this policy, the welcome screen is displayed each time a user logs on to the computer.  This setting applies only to Windows. It does not affect the "Configure Your Server on a Windows Server" screen on Windows Server.
+If you disable or don't configure this policy, the welcome screen is displayed each time a user signs in to the computer.  This setting applies only to Windows. It doesn't affect the "Configure Your Server on a Windows Server" screen on Windows Server.
 
 > [!NOTE]
 > This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
@@ -601,18 +601,18 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting specifies additional programs or documents that Windows starts automatically when a user logs on to the system.
+This policy setting specifies other programs or documents that Windows starts automatically when a user signs in to the system.
 
-If you enable this policy setting, you can specify which programs can run at the time the user logs on to this computer that has this policy applied.
+If you enable this policy setting, you can specify which programs can run at the time the user signs in to this computer that has this policy applied.
 
 To specify values for this policy setting, click Show. In the Show Contents dialog box in the Value column, type the name of the executable program (.exe) file or document file. To specify another name, press ENTER, and type the name. Unless the file is located in the %Systemroot% directory, you must specify the fully qualified path to the file.
 
-If you disable or do not configure this policy setting, the user will have to start the appropriate programs after logon.
+If you disable or don't configure this policy setting, the user will have to start the appropriate programs after signing in.
 
 > [!NOTE]
 > This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the system starts the programs specified in the Computer Configuration setting just before it starts the programs specified in the User Configuration setting.
 
-Also, see the "Do not process the legacy run list" and the "Do not process the run once list" settings.
+Also, see the "Do not process the legacy run list" and the "don't process the run once list" settings.
 
 <!--/Description-->
 
@@ -654,18 +654,18 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting specifies additional programs or documents that Windows starts automatically when a user logs on to the system.
+This policy setting specifies other programs or documents that Windows starts automatically when a user signs in to the system.
 
-If you enable this policy setting, you can specify which programs can run at the time the user logs on to this computer that has this policy applied.
+If you enable this policy setting, you can specify which programs can run at the time the user signs in to this computer that has this policy applied.
 
 To specify values for this policy setting, click Show. In the Show Contents dialog box in the Value column, type the name of the executable program (.exe) file or document file. To specify another name, press ENTER, and type the name. Unless the file is located in the %Systemroot% directory, you must specify the fully qualified path to the file.
 
-If you disable or do not configure this policy setting, the user will have to start the appropriate programs after logon.
+If you disable or don't configure this policy setting, the user will have to start the appropriate programs after signing in.
 
 > [!NOTE]
 > This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the system starts the programs specified in the Computer Configuration setting just before it starts the programs specified in the User Configuration setting.
 
-Also, see the "Do not process the legacy run list" and the "Do not process the run once list" settings.
+Also, see the "Do not process the legacy run list" and the "don't process the run once list" settings.
 
 
 <!--/Description-->
@@ -708,29 +708,29 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting determines whether Group Policy processing is synchronous (that is, whether computers wait for the network to be fully initialized during computer startup and user logon). By default, on client computers, Group Policy processing is not synchronous; client computers typically do not wait for the network to be fully initialized at startup and logon. Existing users are logged on using cached credentials, which results in shorter logon times. Group Policy is applied in the background after the network becomes available. 
+This policy setting determines whether Group Policy processing is synchronous (that is, whether computers wait for the network to be fully initialized during computer startup and user sign in). By default, on client computers, Group Policy processing isn't synchronous; client computers typically don't wait for the network to be fully initialized at startup and sign in. Existing users are signed in using cached credentials, which results in shorter sign-in times. Group Policy is applied in the background after the network becomes available.
 
-Note that because this is a background refresh, extensions such as Software Installation and Folder Redirection take two logons to apply changes. To be able to operate safely, these extensions require that no users be logged on. Therefore, they must be processed in the foreground before users are actively using the computer. In addition, changes that are made to the user object, such as adding a roaming profile path, home directory, or user object logon script, may take up to two logons to be detected.
+Because this process (of applying Group Policy) is a background refresh, extensions such as Software Installation and Folder Redirection take two sign-ins to apply changes. To be able to operate safely, these extensions require that no users be signed in. Therefore, they must be processed in the foreground before users are actively using the computer. In addition, changes that are made to the user object, such as adding a roaming profile path, home directory, or user object logon script, may take up to two sign-ins to be detected.
 
-If a user with a roaming profile, home directory, or user object logon script logs on to a computer, computers always wait for the network to be initialized before logging the user on. If a user has never logged on to this computer before, computers always wait for the network to be initialized.
+If a user with a roaming profile, home directory, or user object logon script signs in to a computer, computers always wait for the network to be initialized before signing in the user. If a user has never signed in to this computer before, computers always wait for the network to be initialized.
 
-If you enable this policy setting, computers wait for the network to be fully initialized before users are logged on. Group Policy is applied in the foreground, synchronously.
+If you enable this policy setting, computers wait for the network to be fully initialized before users are signed in. Group Policy is applied in the foreground, synchronously.
 
 On servers running Windows Server 2008 or later, this policy setting is ignored during Group Policy processing at computer startup and Group Policy processing will be synchronous (these servers wait for the network to be initialized during computer startup).
 
-If the server is configured as follows, this policy setting takes effect during Group Policy processing at user logon:
+If the server is configured as follows, this policy setting takes effect during Group Policy processing at user sign in:
 
 - The server is configured as a terminal server (that is, the Terminal Server role service is installed and configured on the server); and
 - The “Allow asynchronous user Group Policy processing when logging on through Terminal Services” policy setting is enabled. This policy setting is located under Computer Configuration\Policies\Administrative templates\System\Group Policy\\.
 
-If this configuration is not implemented on the server, this policy setting is ignored. In this case, Group Policy processing at user logon is synchronous (these servers wait for the network to be initialized during user logon).
+If this configuration isn't implemented on the server, this policy setting is ignored. In this case, Group Policy processing at user sign in is synchronous (these servers wait for the network to be initialized during user sign in).
 
-If you disable or do not configure this policy setting and users log on to a client computer or a server running Windows Server 2008 or later and that is configured as described earlier, the computer typically does not wait for the network to be fully initialized. In this case, users are logged on with cached credentials. Group Policy is applied asynchronously in the background.
+If you disable or don't configure this policy setting and users sign in to a client computer or a server running Windows Server 2008 or later and that is configured as described earlier, the computer typically doesn't wait for the network to be fully initialized. In this case, users are logged on with cached credentials. Group Policy is applied asynchronously in the background.
 
 > [!NOTE]
 >
-> - If you want to guarantee the application of Folder Redirection, Software Installation, or roaming user profile settings in just one logon, enable this policy setting to ensure that Windows waits for the network to be available before applying policy. 
-> - If Folder Redirection policy will apply during the next logon, security policies will be applied asynchronously during the next update cycle, if network connectivity is available.
+> - If you want to guarantee the application of Folder Redirection, Software Installation, or roaming user profile settings in just one sign in, enable this policy setting to ensure that Windows waits for the network to be available before applying policy. 
+> - If Folder Redirection policy will apply during the next sign in, security policies will be applied asynchronously during the next update cycle, if network connectivity is available.
 
 <!--/Description-->
 
@@ -774,9 +774,9 @@ ADMX Info:
 <!--Description-->
 This policy setting ignores Windows Logon Background.
 
-This policy setting may be used to make Windows give preference to a custom logon background.  If you enable this policy setting, the logon screen always attempts to load a custom background instead of the Windows-branded logon background.
+This policy setting may be used to make Windows give preference to a custom logon background. If you enable this policy setting, the sign-in screen always attempts to load a custom background instead of the Windows-branded logon background.
 
-If you disable or do not configure this policy setting, Windows uses the default Windows logon background or custom background.
+If you disable or don't configure this policy setting, Windows uses the default Windows logon background or custom background.
 
 <!--/Description-->
 
@@ -824,7 +824,7 @@ This policy setting is designed for advanced users who require this information.
 
 If you enable this policy setting, the system displays status messages that reflect each step in the process of starting, shutting down, logging on, or logging off the system.
 
-If you disable or do not configure this policy setting, only the default status messages are displayed to the user during these processes.
+If you disable or don't configure this policy setting, only the default status messages are displayed to the user during these processes.
 
 > [!NOTE]
 > This policy setting is ignored if the "Remove Boot/Shutdown/Logon/Logoff status messages" policy setting is enabled.

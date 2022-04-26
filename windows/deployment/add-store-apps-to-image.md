@@ -35,7 +35,7 @@ This topic describes the correct way to add Microsoft Store for Business applica
 * A Windows Image. For instructions on image creation, see [Create a Windows 10 reference image](deploy-windows-mdt/create-a-windows-10-reference-image.md).
 
 >[!NOTE]
-> If you'd like to add an internal LOB Microsoft Store application, please follow the instructions on **[Sideload line of business (LOB) apps in Windows client devices](/windows/application-management/sideload-apps-in-windows-10.md)**.
+> If you'd like to add an internal LOB Microsoft Store application, please follow the instructions on **[Sideload line of business (LOB) apps in Windows client devices](/windows/application-management/sideload-apps-in-windows-10)**.
 
 ## Adding a Store application to your image
 
@@ -78,7 +78,7 @@ Now, on the machine where your image file is accessible:
 * [Customize and export Start layout](/windows/configuration/customize-and-export-start-layout)
 * [Export-StartLayout](/powershell/module/startlayout/export-startlayout)
 * [Import-StartLayout](/powershell/module/startlayout/import-startlayout)
-* [Sideload line of business (LOB) apps in Windows client devices](/windows/application-management/sideload-apps-in-windows-10.md)
+* [Sideload line of business (LOB) apps in Windows client devices](/windows/application-management/sideload-apps-in-windows-10)
 * [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
 * [Deploy Windows 10 with the Microsoft Deployment Toolkit](./deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md)
 * [Windows Assessment and Deployment Kit (Windows ADK)](windows-adk-scenarios-for-it-pros.md)
