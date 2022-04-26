@@ -899,7 +899,7 @@ Deploying a new Configuration Manager infrastructure is beyond the scope of this
     Create a Microsoft Endpoint Manager driver package for each device type in your district. For more information, see [Manage drivers in Configuration Manager](/mem/configmgr/osd/get-started/manage-drivers).
 4. Add Windows apps.
 
-    Install the Windows apps (Windows desktop and Microsoft Store apps) that you want to deploy after the task sequence deploys your customized image (a thick, reference image that include Windows 10 and your core Windows desktop apps). These apps are in addition to the apps included in your reference image. You can only deploy Microsoft Store apps after you deploy Windows 10 because you cannot capture Microsoft Store apps in a reference image. Microsoft Store apps target users, not devices.
+    Install the Windows apps (Windows desktop and Microsoft Store apps) that you want to deploy after the task sequence deploys your customized image (a thick, reference image that includes Windows 10 and your core Windows desktop apps). These apps are in addition to the apps included in your reference image. You can only deploy Microsoft Store apps after you deploy Windows 10 because you cannot capture Microsoft Store apps in a reference image. Microsoft Store apps target users, not devices.
 
     Create a Configuration Manager application for each Windows desktop or Microsoft Store app that you want to deploy after you apply the reference image to a device. For more information, see [Deploy and manage applications with Configuration Manager](/mem/configmgr/apps/deploy-use/deploy-applications).
 
