@@ -41,7 +41,7 @@ AppLocker was available for Windows 8.1, and is improved with Windows 10. See [R
 Enhancements to AppLocker in Windows 10 include:
 
 -   A new parameter was added to the [New-AppLockerPolicy](/powershell/module/applocker/new-applockerpolicy) Windows PowerShell cmdlet that lets you choose whether executable and DLL rule collections apply to non-interactive processes. To enable this, set the **ServiceEnforcement** to **Enabled**.
--   A new [AppLocker](/windows/client-management/mdm/applocker-csp) configuration service provider was add to allow you to enable AppLocker rules by using an MDM server.
+-   A new [AppLocker](/windows/client-management/mdm/applocker-csp) configuration service provider was added to allow you to enable AppLocker rules by using an MDM server.
 
 [Learn how to manage AppLocker within your organization](/windows/device-security/applocker/applocker-overview).
 
@@ -78,7 +78,7 @@ In Windows 10, two new audit subcategories were added to the Advanced Audit Poli
     When this setting is configured, one or more security audit events are generated for each successful logon. You must also enable the **Audit Logon** setting under **Advanced Audit Policy Configuration\\System Audit Policies\\Logon/Logoff**. Multiple events are generated if the group membership information cannot fit in a single security audit event.
 -   [Audit PNP Activity](/windows/security/threat-protection/auditing/audit-pnp-activity) Found in the Detailed Tracking category, the Audit PNP Activity subcategory allows you to audit when plug and play detects an external device.
     Only Success audits are recorded for this category. If you do not configure this policy setting, no audit event is generated when an external device is detected by plug and play.
-    A PnP audit event can be used to track down changes in system hardware and will be logged on the PC where the change took place. A list of hardware vendor IDs are included in the event.
+    A PnP audit event can be used to track down changes in system hardware and will be logged on the PC where the change took place. A list of hardware vendor IDs is included in the event.
 
 #### <a href="" id="bkmk-moreinfo"></a>More info added to existing audit events
 
@@ -126,7 +126,7 @@ The logon event ID 4688 has been updated to include more verbose information to 
 2.  **TargetUserName** String
     The account name of the target user.
 3.  **TargetDomainName** String
-    The domain of the target user..
+    The domain of the target user.
 4.  **TargetLogonId** String
     The logon ID of the target user.
 5.  **ParentProcessName** String
@@ -196,7 +196,7 @@ User Account Control (UAC) helps prevent malware from damaging a computer and he
 
 You should not turn off UAC because this is not a supported scenario for devices running Windows 10. If you do turn off UAC, all Universal Windows Platform apps stop working. You must always set the **HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\EnableLUA** registry value to 1. If you need to provide auto elevation for programmatic access or installation, you could set the **HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\ConsentPromptBehaviorAdmin** registry value to 0, which is the same as setting the UAC slider Never Notify. This is not recommended for devices running Windows 10.
 
-For more info about how manage UAC, see [UAC Group Policy Settings and Registry Key Settings](/windows/access-protection/user-account-control/user-account-control-group-policy-and-registry-key-settings).
+For more info about how to manage UAC, see [UAC Group Policy Settings and Registry Key Settings](/windows/access-protection/user-account-control/user-account-control-group-policy-and-registry-key-settings).
 
 In Windows 10, User Account Control has added some improvements:
 
