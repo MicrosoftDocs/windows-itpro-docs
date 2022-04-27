@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 01/11/2022
+ms.date: 03/18/2022
 ms.reviewer: 
 manager: dansimp
 ms.collection: highpri
@@ -263,7 +263,7 @@ ms.collection: highpri
 
 <!--/Scope-->
 <!--Description-->
-Allows the IT admin (when used with **Update/ActiveHoursStart**) to manage a range of active hours where update reboots are not scheduled. This value sets the end time. There is a 12-hour maximum from start time.
+Allows the IT admin (when used with **Update/ActiveHoursStart**) to manage a range of active hours where update reboots aren't scheduled. This value sets the end time. there's a 12-hour maximum from start time.
 
 > [!NOTE]
 > The default maximum difference from start time has been increased to 18 in Windows 10, version 1703. In this version of Windows 10, the maximum range of active hours can now be configured.  See **Update/ActiveHoursMaxRange** below for more information.
@@ -358,7 +358,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Allows the IT admin (when used with **Update/ActiveHoursEnd**) to manage a range of hours where update reboots are not scheduled. This value sets the start time. There is a 12-hour maximum from end time.
+Allows the IT admin (when used with **Update/ActiveHoursEnd**) to manage a range of hours where update reboots aren't scheduled. This value sets the start time. There's a 12-hour maximum from end time.
 
 > [!NOTE]
 > The default maximum difference from end time has been increased to 18 in Windows 10, version 1703. In this version of Windows 10, the maximum range of active hours can now be configured.  See **Update/ActiveHoursMaxRange** above for more information.
@@ -411,7 +411,7 @@ Enables the IT admin to manage automatic update behavior to scan, download, and 
 
 Supported operations are Get and Replace.
 
-If the policy is not configured, end-users get the default behavior (Auto install and restart).
+If the policy isn't configured, end-users get the default behavior (Auto install and restart).
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -427,15 +427,15 @@ ADMX Info:
 The following list shows the supported values:
 
 - 0 – Notify the user before downloading the update. This policy is used by the enterprise who wants to enable the end users to manage data usage. With these option users are notified when there are updates that apply to the device and are ready for download. Users can download and install the updates from the Windows Update control panel.
-- 1 – Auto install the update and then notify the user to schedule a device restart. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device is not in use and is not running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates immediately. If the installation requires a restart, the end user is prompted to schedule the restart time. The end user has up to seven days to schedule the restart and after that, a restart of the device is forced. Enabling the end user to control the start time reduces the risk of accidental data loss caused by applications that do not shut down properly on restart.
-- 2 (default) – Auto install and restart. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device is not in use and is not running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates right away. If a restart is required, then the device is automatically restarted when the device is not actively being used. Automatic restarting when a device is not being used is the default behavior for unmanaged devices. Devices are updated quickly, but it increases the risk of accidental data loss caused by an application that does not shut down properly on restart.
+- 1 – Auto install the update and then notify the user to schedule a device restart. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device isn't in use and isn't running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates immediately. If the installation requires a restart, the end user is prompted to schedule the restart time. The end user has up to seven days to schedule the restart and after that, a restart of the device is forced. Enabling the end user to control the start time reduces the risk of accidental data loss caused by applications that don't shut down properly on restart.
+- 2 (default) – Auto install and restart. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device isn't in use and isn't running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates right away. If a restart is required, then the device is automatically restarted when the device isn't actively being used. Automatic restarting when a device isn't being used is the default behavior for unmanaged devices. Devices are updated quickly, but it increases the risk of accidental data loss caused by an application that doesn't shut down properly on restart.
 - 3 – Auto install and restart at a specified time. The IT specifies the installation day and time. If no day and time are specified, the default is 3 AM daily. Automatic installation happens at this time and device restart happens after a 15-minute countdown. If the user is logged in when Windows is ready to restart, the user can interrupt the 15-minute countdown to delay the restart.
-- 4 – Auto install and restart without end-user control. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device is not in use and is not running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates right away. If a restart is required, then the device is automatically restarted when the device is not actively being used. This setting option also sets the end-user control panel to read-only.
+- 4 – Auto install and restart without end-user control. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device isn't in use and isn't running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates right away. If a restart is required, then the device is automatically restarted when the device isn't actively being used. This setting option also sets the end-user control panel to read-only.
 - 5 – Turn off automatic updates.
 
 
 > [!IMPORTANT]
-> This option should be used only for systems under regulatory compliance, as you will not get security updates as well.
+> This option should be used only for systems under regulatory compliance, as you won't get security updates as well.
 
 
 <!--/SupportedValues-->
@@ -471,7 +471,7 @@ The following list shows the supported values:
 <!--Description-->
 Option to download updates automatically over metered connections (off by default). Value type is integer.
 
-A significant number of devices primarily use cellular data and do not have Wi-Fi access, which leads to a lower number of devices getting updates. Since a large number of devices have large data plans or unlimited data, this policy can unblock devices from getting updates.
+A significant number of devices primarily use cellular data and don't have Wi-Fi access, which leads to a lower number of devices getting updates. Since a large number of devices have large data plans or unlimited data, this policy can unblock devices from getting updates.
 
 This policy is accessible through the Update setting in the user interface or Group Policy.
 
@@ -540,7 +540,7 @@ The following list shows the supported values:
 - 1 – Allowed. Accepts updates received through Microsoft Update.
 
 > [!NOTE]
-> Setting this policy back to **0** or **Not configured** does not revert the configuration to receive updates from Microsoft Update automatically. In order to revert the configuration, you can run the PowerShell commands that are listed below to remove the Microsoft Update service:.
+> Setting this policy back to **0** or **Not configured** doesn't revert the configuration to receive updates from Microsoft Update automatically. In order to revert the configuration, you can run the PowerShell commands that are listed below to remove the Microsoft Update service:.
 
 ```
 $MUSM = New-Object -ComObject "Microsoft.Update.ServiceManager"
@@ -589,7 +589,7 @@ This policy is specific to desktop and local publishing via WSUS for third-party
 The following list shows the supported values:
 
 - 0 – Not allowed or not configured. Updates from an intranet Microsoft update service location must be signed by Microsoft.
-- 1 – Allowed. Accepts updates received through an intranet Microsoft update service location, if they are signed by a certificate found in the "Trusted Publishers" certificate store of the local computer.
+- 1 – Allowed. Accepts updates received through an intranet Microsoft update service location, if they're signed by a certificate found in the "Trusted Publishers" certificate store of the local computer.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -643,7 +643,7 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 – Update service is not allowed.
+- 0 – Update service isn't allowed.
 - 1 (default) – Update service is allowed.
 
 <!--/SupportedValues-->
@@ -689,10 +689,10 @@ The PC must restart for certain updates to take effect.
 
 If you enable this policy, a restart will automatically occur the specified number of days after the restart was scheduled.
 
-If you disable or do not configure this policy, the PC will restart according to the default schedule.
+If you disable or don't configure this policy, the PC will restart according to the default schedule.
 
 If any of the following two policies are enabled, this policy has no effect:
-1. No autorestart with logged on users for scheduled automatic updates installations.
+1. No autorestart with signed-in users for scheduled automatic updates installations.
 2. Always automatically restart at scheduled time.
 
 <!--/Description-->
@@ -743,11 +743,11 @@ Value type is integer. Default is 7 days.
 
 Supported values range: 2-30.
 
-Note that the PC must restart for certain updates to take effect.
+The PC must restart for certain updates to take effect.
 
 If you enable this policy, a restart will automatically occur the specified number of days after the restart was scheduled.
 
-If you disable or do not configure this policy, the PC will restart according to the default schedule.
+If you disable or don't configure this policy, the PC will restart according to the default schedule.
 
 If any of the following two policies are enabled, this policy has no effect:
 1. No autorestart with logged on users for scheduled automatic updates installations.
@@ -897,7 +897,7 @@ This policy setting allows you to configure if Automatic Maintenance should make
 
 If you enable this policy setting, Automatic Maintenance attempts to set OS wake policy and make a wake request for the daily scheduled time, if necessary.
 
-If you disable or do not configure this policy setting, the wake setting as specified in Security and Maintenance/Automatic Maintenance Control Panel applies.
+If you disable or don't configure this policy setting, the wake setting as specified in Security and Maintenance/Automatic Maintenance Control Panel applies.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -948,7 +948,7 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
-Allows the IT admin to set which branch a device receives their updates from. As of 1903, the branch readiness levels of General Availability Channel (Targeted) and General Availability Channel have been combined into one General Availability Channel set with a value of 16. For devices on 1903 and later releases, the value of 32 is not a supported value.
+Allows the IT admin to set which branch a device receives their updates from. As of 1903, the branch readiness levels of General Availability Channel (Targeted) and General Availability Channel have been combined into one General Availability Channel set with a value of 16. For devices on 1903 and later releases, the value of 32 isn't a supported value.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1000,7 +1000,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Allows admins to specify the number of days before feature updates are installed on the device automatically. Before the deadline, restarts can be scheduled by users or automatically scheduled outside of active hours, according to [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot). After the deadline passes, restarts will occur regardless of active hours and users will not be able to reschedule.
+Allows admins to specify the number of days before feature updates are installed on the device automatically. Before the deadline, restarts can be scheduled by users or automatically scheduled outside of active hours, according to [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot). After the deadline passes, restarts will occur regardless of active hours and users won't be able to reschedule.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -1052,7 +1052,7 @@ Default value is 7.
 
 <!--/Scope-->
 <!--Description-->
-Allows admins to specify the number of days before quality updates are installed on a device automatically. Before the deadline, restarts can be scheduled by users or automatically scheduled outside of active hours, according to [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot). After deadline passes, restarts will occur regardless of active hours and users will not be able to reschedule.
+Allows admins to specify the number of days before quality updates are installed on a device automatically. Before the deadline, restarts can be scheduled by users or automatically scheduled outside of active hours, according to [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot). After deadline passes, restarts will occur regardless of active hours and users won't be able to reschedule.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -1104,7 +1104,7 @@ Default value is 7.
 
 <!--/Scope-->
 <!--Description-->
-When used with [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates),allows the admin to specify a minimum number of days until restarts occur automatically for quality updates. Setting the grace period might extend the effective deadline set by the deadline policy. If [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates) is configured but this policy is not, then the default value of 2 will be used.
+When used with [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates),allows the admin to specify a minimum number of days until restarts occur automatically for quality updates. Setting the grace period might extend the effective deadline set by the deadline policy. If [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates) is configured but this policy isn't, then the default value of 2 will be used.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1158,7 +1158,7 @@ Default value is 2.
 <!--/Scope-->
 <!--Description-->
 
-When used with [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates), allows the admin to specify a minimum number of days until restarts occur automatically for feature updates. Setting the grace period may extend the effective deadline set by the deadline policy. If [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates) is configured but this policy is not, then the value from  [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod) will be used; if that policy is also not configured, then the default value of 2 will be used.
+When used with [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates), allows the admin to specify a minimum number of days until restarts occur automatically for feature updates. Setting the grace period may extend the effective deadline set by the deadline policy. If [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates) is configured but this policy isn't, then the value from  [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod) will be used; if that policy is also not configured, then the default value of 2 will be used.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1424,12 +1424,12 @@ Update:
   - Update - CD5FFD1E-E932-4E3A-BF74-18BF0B1BBD83
   - Driver - EBFC1FC5-71A4-4F7B-9ACA-3B9A503104A0
 
-Other/cannot defer:
+Other/can't defer:
 
 - Maximum deferral: No deferral
 - Deferral increment: No deferral
 - Update type/notes:
-  Any update category not specifically enumerated above falls into this category.
+  Any update category not enumerated above falls into this category.
       - Definition Update - E0789628-CE08-4437-BE74-2495B842F43B
 
 <!--/Description-->
@@ -1562,7 +1562,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Do not allow update deferral policies to cause scans against Windows Update. If this policy is not enabled, then configuring deferral policies will result in the client unexpectedly scanning Windows update.  With the policy enabled, those scans are prevented, and users can configure deferral policies as much as they like.
+Don't allow update deferral policies to cause scans against Windows Update. If this policy isn't enabled, then configuring deferral policies will result in the client unexpectedly scanning Windows update.  With the policy enabled, those scans are prevented, and users can configure deferral policies as much as they like.
 
 For more information about dual scan, see [Demystifying "Dual Scan"](/archive/blogs/wsus/demystifying-dual-scan) and [Improving Dual Scan on 1607](/archive/blogs/wsus/improving-dual-scan-on-1607).
 
@@ -1582,8 +1582,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 - allow scan against Windows Update
-- 1 - do not allow update deferral policies to cause scans against Windows Update
+- 0 - Allow scan against Windows Update
+- 1 - Don't allow update deferral policies to cause scans against Windows Update
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1629,7 +1629,7 @@ IT admins can, if necessary, opt devices out of safeguard protections using this
 >
 > The disable safeguards policy will revert to “Not Configured” on a device after moving to a new Windows 10 version, even if previously enabled. This ensures the admin is consciously disabling Microsoft’s default protection from known issues for each new feature update. 
 >
-> Disabling safeguards does not guarantee your device will be able to successfully update. The update may still fail on the device and will likely result in a bad experience post upgrade as you are bypassing the protection given by Microsoft pertaining to known issues.
+> Disabling safeguards doesn't guarantee your device will be able to successfully update. The update may still fail on the device and will likely result in a bad experience post upgrade as you're bypassing the protection given by Microsoft pertaining to known issues.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1644,7 +1644,7 @@ ADMX Info:
 The following list shows the supported values:
 
 - 0 (default) - Safeguards are enabled and devices may be blocked for upgrades until the safeguard is cleared.
-- 1 - Safeguards are not enabled and upgrades will be deployed without blocking on safeguards.
+- 1 - Safeguards aren't enabled and upgrades will be deployed without blocking on safeguards.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1679,7 +1679,7 @@ The following list shows the supported values:
 <!--Description-->
 To ensure the highest levels of security, we recommended using WSUS TLS certificate pinning on all devices. 
 
-By default, certificate pinning for Windows Update client is not enforced. 
+By default, certificate pinning for Windows Update client isn't enforced. 
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1693,8 +1693,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 (default) -Do not enforce certificate pinning
-- 1 - Do not enforce certificate pinning
+- 0 (default) - Enforce certificate pinning
+- 1 - Don't enforce certificate pinning
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1732,15 +1732,15 @@ For Quality Updates, this policy specifies the deadline in days before automatic
 The system will reboot on or after the specified deadline. The reboot is prioritized over any configured Active Hours and any existing system and user busy checks.
 
 > [!NOTE]
-> If Update/EngagedDeadline is the only policy set (Update/EngagedRestartTransitionSchedule and Update/EngagedRestartSnoozeSchedule are not set), the behavior goes from reboot required -> engaged behavior -> forced reboot after deadline is reached with a 3-day snooze period.
+> If Update/EngagedDeadline is the only policy set (Update/EngagedRestartTransitionSchedule and Update/EngagedRestartSnoozeSchedule aren't set), the behavior goes from reboot required -> engaged behavior -> forced reboot after deadline is reached with a 3-day snooze period.
 
 Value type is integer. Default is 14.
 
 Supported value range: 2 - 30.
 
-If no deadline is specified or deadline is set to 0, the restart will not be automatically executed and will remain Engaged restart (for example, pending user scheduling).
+If no deadline is specified or deadline is set to 0, the restart won't be automatically executed and will remain Engaged restart (for example, pending user scheduling).
 
-If you disable or do not configure this policy, the default behaviors will be used.
+If you disable or don't configure this policy, the default behaviors will be used.
 
 If any of the following policies are configured, this policy has no effect:
 1. No autorestart with logged on users for scheduled automatic updates installations
@@ -1793,9 +1793,9 @@ Value type is integer. Default is 14.
 
 Supported value range: 2-30.
 
-If no deadline is specified or deadline is set to 0, the restart will not be automatically executed and will remain Engaged restart (for example, pending user scheduling).
+If no deadline is specified or deadline is set to 0, the restart won't be automatically executed and will remain Engaged restart (for example, pending user scheduling).
 
-If you disable or do not configure this policy, the default behaviors will be used.
+If you disable or don't configure this policy, the default behaviors will be used.
 
 If any of the following policies are configured, this policy has no effect:
 1. No autorestart with logged on users for scheduled automatic updates installations
@@ -1848,7 +1848,7 @@ Value type is integer. Default is three days.
 
 Supported value range: 1-3.
 
-If you disable or do not configure this policy, the default behaviors will be used.
+If you disable or don't configure this policy, the default behaviors will be used.
 
 If any of the following policies are configured, this policy has no effect:
 1. No autorestart with logged on users for scheduled automatic updates installations
@@ -1901,7 +1901,7 @@ Value type is integer. Default is three days.
 
 Supported value range: 1-3.
 
-If you disable or do not configure this policy, the default behaviors will be used.
+If you disable or don't configure this policy, the default behaviors will be used.
 
 If any of the following policies are configured, this policy has no effect:
 1. No autorestart with logged on users for scheduled automatic updates installations
@@ -1954,7 +1954,7 @@ Value type is integer. Default value is 7 days.
 
 Supported value range: 2 - 30. 
 
-If you disable or do not configure this policy, the default behaviors will be used.
+If you disable or don't configure this policy, the default behaviors will be used.
 
 If any of the following policies are configured, this policy has no effect:
 1. No autorestart with logged on users for scheduled automatic updates installations
@@ -2007,7 +2007,7 @@ Value type is integer. Default value is seven days.
 
 Supported value range: 2-30.
 
-If you disable or do not configure this policy, the default behaviors will be used.
+If you disable or don't configure this policy, the default behaviors will be used.
 
 If any of the following policies are configured, this policy has no effect:
 1. No autorestart with logged on users for scheduled automatic updates installations
@@ -2103,10 +2103,10 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Allows Windows Update Agent to determine the download URL when it is missing from the metadata.  This scenario will occur when intranet update service stores the metadata files but the download contents are stored in the ISV file cache (specified as the <a href="#update-updateserviceurlalternate">alternate download URL</a>).
+Allows Windows Update Agent to determine the download URL when it's missing from the metadata.  This scenario will occur when intranet update service stores the metadata files but the download contents are stored in the ISV file cache (specified as the <a href="#update-updateserviceurlalternate">alternate download URL</a>).
 
 > [!NOTE]
-> This setting should only be used in combination with an alternate download URL and configured to use ISV file cache.  This setting is used when the intranet update service does not provide download URLs in the update metadata for files which are available on the alternate download server.
+> This setting should only be used in combination with an alternate download URL and configured to use ISV file cache.  This setting is used when the intranet update service doesn't provide download URLs in the update metadata for files which are available on the alternate download server.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2164,7 +2164,7 @@ Specifies whether to ignore the MO download limit (allow unlimited downloading) 
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 (default) – Do not ignore MO download limit for apps and their updates.
+- 0 (default) – Don't ignore MO download limit for apps and their updates.
 - 1 – Ignore MO download limit (allow unlimited downloading) for apps and their updates.
 
 <!--/SupportedValues-->
@@ -2217,7 +2217,7 @@ Specifies whether to ignore the MO download limit (allow unlimited downloading) 
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 (default) – Do not ignore MO download limit for OS updates.
+- 0 (default) – Don't ignore MO download limit for OS updates.
 - 1 – Ignore MO download limit (allow unlimited downloading) for OS updates.
 
 <!--/SupportedValues-->
@@ -2333,7 +2333,7 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 (default) – Deferrals are not paused.
+- 0 (default) – Deferrals aren't paused.
 - 1 – Deferrals are paused.
 
 <!--/SupportedValues-->
@@ -2368,7 +2368,7 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 
-Allows IT Admins to pause feature updates for up to 35 days. We recomment that you use the *Update/PauseFeatureUpdatesStartTime* policy if you are running Windows 10, version 1703 or later.
+Allows IT Admins to pause feature updates for up to 35 days. We recomment that you use the *Update/PauseFeatureUpdatesStartTime* policy if you're running Windows 10, version 1703 or later.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2383,7 +2383,7 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 (default) – Feature Updates are not paused.
+- 0 (default) – Feature Updates aren't paused.
 - 1 – Feature Updates are paused for 35 days or until value set to back to 0, whichever is sooner.
 
 <!--/SupportedValues-->
@@ -2476,7 +2476,7 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 (default) – Quality Updates are not paused.
+- 0 (default) – Quality Updates aren't paused.
 - 1 – Quality Updates are paused for 35 days or until value set back to 0, whichever is sooner.
 
 <!--/SupportedValues-->
@@ -2567,7 +2567,7 @@ This policy is deprecated. Use [Update/RequireUpdateApproval](#update-requireupd
 <!--Description-->
 Available in Windows 10, version 2004 and later. Enables IT administrators to specify which product they would like their device(s) to move to and/or stay on until they reach end of service or reconfigure the policy to target a new product. 
 
-If no product is specified, the device will continue receiving newer versions of the Windows product it is currently on. For details about different Windows 10 versions, see [release information](/windows/release-health/release-information).
+If no product is specified, the device will continue receiving newer versions of the Windows product it's currently on. For details about different Windows 10 versions, see [release information](/windows/release-health/release-information).
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2589,11 +2589,11 @@ Value type is a string containing a Windows product, for example, “Windows 11�
 
 <!--/Validation-->
 <!--/Policy-->
-By using this Windows Update for Business policy to upgrade devices to a new product (for example, Windows 11) you are agreeing that when applying this operating system to a device, either:
+By using this Windows Update for Business policy to upgrade devices to a new product (for example, Windows 11) you're agreeing that when applying this operating system to a device, either:
 
 1. The applicable Windows license was purchased through volume licensing, or
 
-2. That you are authorized to bind your organization and are accepting on its behalf the relevant Microsoft Software License Terms to be found here: (https://www.microsoft.com/Useterms).
+2. That you're authorized to bind your organization and are accepting on its behalf the relevant Microsoft Software License Terms to be found here: (https://www.microsoft.com/Useterms).
 
 <hr/>
 
@@ -3212,7 +3212,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy allows the IT admin to disable the "Pause Updates" feature. When this policy is enabled, the user cannot access the "Pause updates" feature.
+This policy allows the IT admin to disable the "Pause Updates" feature. When this policy is enabled, the user can't access the "Pause updates" feature.
 
 Value type is integer. Default is 0. Supported values 0, 1.
 
@@ -3253,7 +3253,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy allows the IT admin to remove access to scan Windows Update. When this policy is enabled, the user cannot access the Windows Update scan, download, and install features.
+This policy allows the IT admin to remove access to scan Windows Update. When this policy is enabled, the user can't access the Windows Update scan, download, and install features.
 
 Value type is integer. Default is 0. Supported values 0, 1.
 
@@ -3570,7 +3570,7 @@ The following list shows the supported values:
 <!--Description-->
 Available in Windows 10, version 1607 and later. By default, HTTP WSUS servers scan only if system proxy is configured. This policy setting allows you to configure user proxy as a fallback for detecting updates while using an HTTP-based intranet server despite the vulnerabilities it presents.
 
-This policy setting does not impact those customers who have, per Microsoft recommendation, secured their WSUS server with TLS/SSL protocol, thereby using HTTPS-based intranet servers to keep systems secure. That said, if a proxy is required, we recommend configuring a system proxy to ensure the highest level of security.
+This policy setting doesn't impact those customers who have, per Microsoft recommendation, secured their WSUS server with TLS/SSL protocol, thereby using HTTPS-based intranet servers to keep systems secure. That said, if a proxy is required, we recommend configuring a system proxy to ensure the highest level of security.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -3731,9 +3731,9 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 > [!IMPORTANT]
-> Starting in Windows 10, version 1703 this policy is not supported in IoT Mobile.
+> Starting in Windows 10, version 1703 this policy isn't supported in IoT Mobile.
 
-Allows the device to check for updates from a WSUS server instead of Microsoft Update. This setting is useful for on-premises MDMs that need to update devices that cannot connect to the Internet.
+Allows the device to check for updates from a WSUS server instead of Microsoft Update. This setting is useful for on-premises MDMs that need to update devices that can't connect to the Internet.
 
 Supported operations are Get and Replace.
 
@@ -3810,12 +3810,12 @@ This setting lets you specify a server on your network to function as an interna
 
 To use this setting, you must set two server name values: the server from which the Automatic Updates client detects and downloads updates, and the server to which updated workstations upload statistics. You can set both values to be the same server.  An optional server name value can be specified to configure Windows Update agent, and download updates from an alternate download server instead of WSUS Server.
 
-Value type is string and the default value is an empty string, "". If the setting is not configured, and if Automatic Updates is not disabled by policy or user preference, the Automatic Updates client connects directly to the Windows Update site on the Internet.
+Value type is string and the default value is an empty string, "". If the setting isn't configured, and if Automatic Updates isn't disabled by policy or user preference, the Automatic Updates client connects directly to the Windows Update site on the Internet.
 
 > [!NOTE]
 > If the "Configure Automatic Updates" Group Policy is disabled, then this policy has no effect.  
-> If the "Alternate Download Server" Group Policy is not set, it will use the WSUS server by default to download updates.  
-> This policy is not supported on Windows RT. Setting this policy will not have any effect on Windows RT PCs.
+> If the "Alternate Download Server" Group Policy isn't set, it will use the WSUS server by default to download updates.  
+> This policy isn't supported on Windows RT. Setting this policy won't have any effect on Windows RT PCs.
 
 <!--/Description-->
 <!--ADMXMapped-->

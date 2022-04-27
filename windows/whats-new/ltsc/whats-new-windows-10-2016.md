@@ -1,15 +1,15 @@
 ---
 title: What's new in Windows 10 Enterprise LTSC 2016
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2016 (also known as Windows 10 Enterprise 2016 LTSB).
 keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 Enterprise LTSC 2016"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: low
 ms.topic: article
 ---
@@ -118,12 +118,12 @@ Windows Information Protection (WIP) helps to protect against this potential dat
 
 Several new features and management options have been added to Windows Defender in this version of Windows 10.
 
-- [Windows Defender Offline in Windows 10](/windows/threat-protection/microsoft-defender-antivirus/windows-defender-offline) can be run directly from within Windows, without having to create bootable media.
-- [Use PowerShell cmdlets for Windows Defender](/windows/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus) to configure options and run scans.
-- [Enable the Block at First Sight feature in Windows 10](/windows/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus) to leverage the Windows Defender cloud for near-instant protection against new malware.
-- [Configure enhanced notifications for Windows Defender in Windows 10](/windows/threat-protection/microsoft-defender-antivirus/configure-notifications-microsoft-defender-antivirus) to see more information about threat detections and removal.
-- [Run a Windows Defender scan from the command line](/windows/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus).
-- [Detect and block Potentially Unwanted Applications with Windows Defender](/windows/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) during download and install times.
+- [Windows Defender Offline in Windows 10](/microsoft-365/security/defender-endpoint/microsoft-defender-offline) can be run directly from within Windows, without having to create bootable media.
+- [Use PowerShell cmdlets for Windows Defender](/microsoft-365/security/defender-endpoint/use-powershell-cmdlets-microsoft-defender-antivirus) to configure options and run scans.
+- [Enable the Block at First Sight feature in Windows 10](/microsoft-365/security/defender-endpoint/configure-block-at-first-sight-microsoft-defender-antivirus) to leverage the Windows Defender cloud for near-instant protection against new malware.
+- [Configure enhanced notifications for Windows Defender in Windows 10](/microsoft-365/security/defender-endpoint/configure-notifications-microsoft-defender-antivirus) to see more information about threat detections and removal.
+- [Run a Windows Defender scan from the command line](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus).
+- [Detect and block Potentially Unwanted Applications with Windows Defender](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) during download and install times.
 
 ### Microsoft Defender for Endpoint
 

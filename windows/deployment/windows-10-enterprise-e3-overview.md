@@ -8,9 +8,10 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 ms.date: 09/28/2021
-manager: dougeby
 ms.audience: itpro
-author: greg-lindsay
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 audience: itpro
 ms.collection:
   - M365-modern-desktop
@@ -131,18 +132,18 @@ Now that the devices have Windows 10/11 Enterprise, you can implement Device Gu
 
 For more information about implementing Device Guard, see:
 
-- [Planning and getting started on the Device Guard deployment process](https://technet.microsoft.com/itpro/windows/keep-secure/planning-and-getting-started-on-the-device-guard-deployment-process)
+- [Windows Defender Application Control and virtualization-based protection of code integrity](/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
 - [Device Guard deployment guide](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)
 
 ### AppLocker management
 
-You can manage AppLocker in Windows 10 Enterprise by using Group Policy. Group Policy requires that the you have AD DS and that the Windows 10/11 Enterprise devices are joined to the your AD DS domain. You can create AppLocker rules by using Group Policy, and then target those rules to the appropriate devices.
+You can manage AppLocker in Windows 10 Enterprise by using Group Policy. Group Policy requires that you have AD DS and that the Windows 10/11 Enterprise devices are joined to your AD DS domain. You can create AppLocker rules by using Group Policy, and then target those rules to the appropriate devices.
 
 For more information about AppLocker management by using Group Policy, see [AppLocker deployment guide](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-policies-deployment-guide).
 
 ### App-V
 
-App-V requires an App-V server infrastructure to support App-V clients. The primary App-V components that the you must have are as follows:
+App-V requires an App-V server infrastructure to support App-V clients. The primary App-V components that you must have are as follows:
 
 -   **App-V server**. The App-V server provides App-V management, virtualized app publishing, app streaming, and reporting services. Each of these services can be run on one server or can be run individually on multiple servers. For example, you could have multiple streaming servers. App-V clients contact App-V servers to determine which apps are published to the user or device, and then run the virtualized app from the server.
 
@@ -157,7 +158,7 @@ For more information about implementing the App-V server, App-V sequencer, and A
 -   [Deploying the App-V Sequencer and Configuring the Client](/windows/application-management/app-v/appv-deploying-the-appv-sequencer-and-client)
 
 ### UE-V
-UE-V requires server- and client-side components that you you’ll need to download, activate, and install. These components include:
+UE-V requires server- and client-side components that you’ll need to download, activate, and install. These components include:
 
 - **UE-V service**. The UE-V service (when enabled on devices) monitors registered applications and Windows for any settings changes, then synchronizes those settings between devices.
 

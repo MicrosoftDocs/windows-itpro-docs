@@ -36,7 +36,7 @@ Delivery Optimization also communicates with its cloud service by using HTTP/HTT
 
 ## What are the requirements if I use a proxy?
 
-For Delivery Optimization to successfully use the proxy, you should set up the proxy by using Windows proxy settings or Internet Explorer proxy settings. For details see [Using a proxy with Delivery Optimization](./delivery-optimization-proxy.md). Most content downloaded with Delivery Optimization uses byte range requests. Make sure your proxy allows byte range requests. For more information, see [Proxy requirements for Windows Update](/windows/deployment/update/windows-update-troubleshooting.md).
+For Delivery Optimization to successfully use the proxy, you should set up the proxy by using Windows proxy settings or Internet Explorer proxy settings. For details see [Using a proxy with Delivery Optimization](../do/delivery-optimization-proxy.md). Most content downloaded with Delivery Optimization uses byte range requests. Make sure your proxy allows byte range requests. For more information, see [Proxy requirements for Windows Update](/windows/deployment/update/windows-update-troubleshooting).
 
 ## What hostnames should I allow through my firewall to support Delivery Optimization?
 
@@ -64,9 +64,9 @@ Starting in Windows 10, version 1903, Delivery Optimization uses LEDBAT to relie
 
 Delivery Optimization attempts to identify VPNs by checking the network adapter type and details. A connection will be treated as a VPN if the adapter description contains certain keywords, such as "VPN" or "secure."
 
-If the connection is identified as a VPN, Delivery Optimization will suspend uploads to other peers. However, you can allow uploads over a VPN by using the [Enable Peer Caching while the device connects via VPN](waas-delivery-optimization-reference.md#enable-peer-caching-while-the-device-connects-via-vpn) policy.
+If the connection is identified as a VPN, Delivery Optimization will suspend uploads to other peers. However, you can allow uploads over a VPN by using the [Enable Peer Caching while the device connects via VPN](../do/waas-delivery-optimization-reference.md#enable-peer-caching-while-the-device-connects-via-vpn) policy.
 
-If you have defined a boundary group in Configuration Manager for VPN IP ranges, you can set the [DownloadMode](waas-delivery-optimization-reference.md#download-mode) policy to 0 for that boundary group, to ensure that there will be no peer-to-peer activity over the VPN. When the device is not connected using a VPN, it can still use peer-to-peer with the default of LAN.
+If you have defined a boundary group in Configuration Manager for VPN IP ranges, you can set the [DownloadMode](../do/waas-delivery-optimization-reference.md#download-mode) policy to 0 for that boundary group, to ensure that there will be no peer-to-peer activity over the VPN. When the device is not connected using a VPN, it can still use peer-to-peer with the default of LAN.
 
 With split tunneling, make sure to allow direct access to these endpoints:
 

@@ -3,12 +3,12 @@ title: Configure cellular settings for tablets and PCs (Windows 10)
 description: Enterprises can provision cellular settings for tablets and PC with built-in cellular modems or plug-in USB modem dongles.
 ms.assetid: 287706E5-063F-4AB5-902C-A0DF6D0730BC
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
-ms.author: greglin
+author: aczechowski
+ms.author: aaroncz
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 04/13/2018

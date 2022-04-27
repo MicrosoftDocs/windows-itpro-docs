@@ -6,9 +6,9 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
-ms.author: greglin
-manager: laurawi
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.localizationpriority: high
 ms.topic: article
 ---

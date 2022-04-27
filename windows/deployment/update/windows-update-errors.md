@@ -4,11 +4,11 @@ description: In this article, learn about some common issues you might experienc
 ms.prod: w10
 ms.mktglfcycl: 
 audience: itpro
-itproauthor: jaimeo
 ms.audience: itpro
-author: jaimeo
-ms.reviewer: kaushika
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
+ms.reviewer: kaushika
 ms.topic: troubleshooting
 ms.custom: seo-marvel-apr2020
 ms.collection: highpri
@@ -118,7 +118,7 @@ The following table provides information about common errors you might run into 
 
 | Message | Description | Mitigation |
 |---------|-------------|------------|
-| CBS_E_ABORT; client abort, IDABORT returned by ICbsUIHandler method except Error() | CBS   transaction timeout exceeded. | A servicing operation is taking a long time to complete. The servicing stack watchdog timer expires. Extending the timeout will mitigate the issue. Increase the resources on the device. If a virtual machine, increase virtual CPU and memory to speed up operations. Make sure the has installed the update in KB4493473 or later.|
+| CBS_E_ABORT; client abort, IDABORT returned by ICbsUIHandler method except Error() | CBS   transaction timeout exceeded. | A servicing operation is taking a long time to complete. The servicing stack watchdog timer expires. Extending the timeout will mitigate the issue. Increase the resources on the device. If a virtual machine, increase virtual CPU and memory to speed up operations. Make sure the device has installed the update in KB4493473 or later.|
 
 ## 0x800f0825
 
@@ -148,7 +148,7 @@ The following table provides information about common errors you might run into 
 
 | Message | Description | Mitigation |
 |---------|-------------|------------|
-| E_ACCESSDENIED; General access denied error | File system or registry key permissions have been changed and the servicing stack doesn't have the required level of access. | This error generally means an access was denied.<br> Go to %Windir%\logs\CBS, open the last CBS.log and search for “, error” and match with the timestamp. After finding the error, scroll up and try to determine what caused the access denial. It could be acess denied to a file, registry key. Determine what object needs the right permissions and change the permissions as needed. |
+| E_ACCESSDENIED; General access denied error | File system or registry key permissions have been changed and the servicing stack doesn't have the required level of access. | This error generally means an access was denied.<br> Go to %Windir%\logs\CBS, open the last CBS.log and search for “, error” and match with the timestamp. After finding the error, scroll up and try to determine what caused the access denial. It could be access denied to a file, registry key. Determine what object needs the right permissions and change the permissions as needed. |
 
 ## 0x80070570
 
@@ -198,7 +198,7 @@ The following table provides information about common errors you might run into 
 
 | Message | Description | Mitigation |
 |---------|-------------|------------|
-| WININET_E_TIMEOUT; The operation timed out | Unable to scan for updates due to a connectivity issue to Windows Update, Configuration Manager, or WSUS. | This error generally means that the Windows Update Agent was unable to connect to the update servers or your own source, such as WSUS, Configuration Manager, or Microsoft Endpoint Manager. <br> Check with your network team to ensure that the device can reach the update sources. For more info, see [Troubleshoot software update scan failures in Configuration Manager](/mem/configmgr/troubleshoot-software-update-scan-failures). <br> If you’re using the public Microsoft update servers, check that your device can access the following Windows Update endpoints: <br> `http://windowsupdate.microsoft.com` <br> https://.windowsupdate.microsoft.com <br> https://update.microsoft.com <br> https://*.update.microsoft.com <br> https://windowsupdate.com <br> https://*.windowsupdate.com <br> https://download.windowsupdate.com <br> https://*.download.windowsupdate.com <br> https://download.microsoft.com <br> https://*.download.windowsupdate.com <br> https://wustat.windows.com <br> https://*.wustat.windows.com <br> https://ntservicepack.microsoft.com |
+| WININET_E_TIMEOUT; The operation timed out | Unable to scan for updates due to a connectivity issue to Windows Update, Configuration Manager, or WSUS. | This error generally means that the Windows Update Agent was unable to connect to the update servers or your own source, such as WSUS, Configuration Manager, or Microsoft Endpoint Manager. <br> Check with your network team to ensure that the device can reach the update sources. For more info, see [Troubleshoot software update scan failures in Configuration Manager](/mem/configmgr/troubleshoot-software-update-scan-failures). <br> If you’re using the public Microsoft update servers, check that your device can access the following Windows Update endpoints: <br> `http://windowsupdate.microsoft.com` <br> `https://*.windowsupdate.microsoft.com` <br> `https://update.microsoft.com` <br> `https://*.update.microsoft.com` <br> `https://windowsupdate.com` <br> `https://*.windowsupdate.com` <br> `https://download.windowsupdate.com` <br> `https://*.download.windowsupdate.com` <br> `https://download.microsoft.com` <br> `https://*.download.windowsupdate.com` <br> `https://wustat.windows.com` <br> `https://*.wustat.windows.com` <br> `https://ntservicepack.microsoft.com` |
 
 ## 0x80240022
 

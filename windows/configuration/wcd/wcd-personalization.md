@@ -4,12 +4,12 @@ description: This section describes the Personalization settings that you can co
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.topic: article
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # Personalization (Windows Configuration Designer reference)

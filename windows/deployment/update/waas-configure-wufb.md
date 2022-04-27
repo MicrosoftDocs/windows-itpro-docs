@@ -8,9 +8,9 @@ ms.collection:
   - m365initiative-coredeploy
   - highpri
 audience: itpro
-author: jaimeo
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: aaroncz
 ms.topic: article
 ---
 

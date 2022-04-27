@@ -3,14 +3,14 @@ title: Remove Products (Windows 10)
 description: Learn how you must delete products from the product list view so you can remove products from the Volume Activation Management Tool (VAMT).
 ms.assetid: 4d44379e-dda1-4a8f-8ebf-395b6c0dad8e
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.date: 04/25/2017
 ms.topic: article
 ---

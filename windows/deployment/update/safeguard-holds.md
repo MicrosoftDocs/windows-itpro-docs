@@ -3,10 +3,10 @@ title: Safeguard holds
 description: What are safeguard holds, how can you tell if one is in effect, and what to do about it
 ms.prod: w10
 ms.mktglfcycl: manage
-author: jaimeo
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: jaimeo
-manager: laurawi
+ms.author: aaroncz
+manager: dougeby
 ms.topic: article
 ---
 

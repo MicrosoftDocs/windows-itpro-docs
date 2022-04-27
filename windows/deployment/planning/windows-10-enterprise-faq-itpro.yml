@@ -7,14 +7,13 @@ metadata:
   ms.mktglfcycl: plan
   ms.localizationpriority: medium
   ms.sitesec: library
-  author: greg-lindsay
   ms.date: 08/18/2017
   ms.reviewer: 
-  manager: laurawi
-  ms.author: greglin
+  author: aczechowski
+  ms.author: aaroncz
+  manager: dougeby
   audience: itpro
-  ms.topic: article
-    
+  ms.topic: faq
 title: 'Windows 10 Enterprise: FAQ for IT professionals'
 summary: Get answers to common questions around compatibility, installation, and support for Windows 10 Enterprise.
 
@@ -148,6 +147,6 @@ sections:
         answer: |
           Use the following resources for additional information about Windows 10.
           - If you are an IT professional or if you have a question about administering, managing, or deploying Windows 10 in your organization or business, visit the [Windows 10 IT Professional forums](https://social.technet.microsoft.com/forums/home?category=windows10itpro) on TechNet.
-          - If you are an end user or if you have a question about using Windows 10, visit the [Windows 10 forums on Microsoft Community](https://answers.microsoft.com/windows/forum/windows_10).
+          - If you are an end user or if you have a question about using Windows 10, visit the [Windows 10 forums on Microsoft Community](https://answers.microsoft.com/windows/forum).
           - If you are a developer or if you have a question about making apps for Windows 10, visit the [Windows Desktop Development forums](https://social.msdn.microsoft.com/forums/en-us/home?category=windowsdesktopdev).
           - If you have a question about Internet Explorer, visit the [Internet Explorer forums](https://social.technet.microsoft.com/forums/ie/en-us/home).
