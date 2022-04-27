@@ -1139,7 +1139,6 @@ The following list shows the CSPs supported in HoloLens devices:
 - [DiagnosticLog CSP](diagnosticlog-csp.md)
 - [DMAcc CSP](dmacc-csp.md)
 - [DMClient CSP](dmclient-csp.md)
-- [EnterpriseAppManagement CSP](enterpriseappmanagement-csp.md)
 - [HealthAttestation CSP](healthattestation-csp.md)
 - [NetworkProxy CSP](networkproxy-csp.md)
 - [Policy CSP](policy-configuration-service-provider.md)
