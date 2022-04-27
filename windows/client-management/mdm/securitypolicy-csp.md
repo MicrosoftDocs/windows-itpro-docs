@@ -22,9 +22,9 @@ The SecurityPolicy configuration service provider is used to configure security 
 
  
 
-For the SecurityPolicy CSP, you cannot use the Replace command unless the node already exists.
+For the SecurityPolicy CSP, you can't use the Replace command unless the node already exists.
 
-The following shows the SecurityPolicy configuration service provider management object in tree format as used by both OMA DM and OMA Client Provisioning.
+The following example shows the SecurityPolicy configuration service provider management object in tree format as used by both OMA DM and OMA Client Provisioning.
 
 ```console
 ./Vendor/MSFT
@@ -65,7 +65,7 @@ The following security policies are supported.
 
 - **PolicyID**: 4111 | Hex:100f
   - **Policy name**: OTA Provisioning Policy
-  - **Policy description**: This setting determines whether PIN signed OMA Client Provisioning messages will be processed. This policy's value specifies a role mask. If a message contains at least one of the following roles in the role mask, then the message is processed. To ensure properly signed OMA Client Provisioning messages are accepted by the configuration client, all of the roles that are set in 4141, 4142, and 4143 policies must also be set in this policy. For example, to ensure properly signed USERNETWPIN signed OMA Client Provisioning messages are accepted by the device, if policy 4143 is set to 4096 (SECROLE_ANY_PUSH_SOURCE) for an carrier-unlocked device, policy 4111 must also have the SECROLE_ANY_PUSH_SOURCE role set.
+  - **Policy description**: This setting determines whether PIN signed OMA Client Provisioning messages will be processed. This policy's value specifies a role mask. If a message contains at least one of the following roles in the role mask, then the message is processed. To ensure properly signed OMA Client Provisioning messages are accepted by the configuration client, all of the roles that are set in 4141, 4142, and 4143 policies must also be set in this policy. For example, to ensure properly signed USERNETWPIN signed OMA Client Provisioning messages are accepted by the device, if policy 4143 is set to 4096 (SECROLE_ANY_PUSH_SOURCE) for a carrier-unlocked device, policy 4111 must also have the SECROLE_ANY_PUSH_SOURCE role set.
     - Default value: 384 (SECROLE_OPERATOR_TPS | SECROLE_KNOWN_PPG)
     - Supported values: SECROLE_KNOWN_PPG, SECROLE_ANY_PUSH_SOURCE, SECROLE_OPERATOR_TPS
 
@@ -74,7 +74,7 @@ The following security policies are supported.
   - **Policy description**: This setting indicates whether Wireless Session Protocol (WSP) notifications from the WAP stack are routed.
     - Default value: 1
     - Supported values: 
-      - 0: Routing of WSP notifications is not allowed.
+      - 0: Routing of WSP notifications isn't allowed.
       - 1: Routing of WSP notifications is allowed.
 
 - **PolicyID**: 4132 | Hex:1024
@@ -83,13 +83,13 @@ The following security policies are supported.
     - Default value: 0
     - Supported values: 
       - 0: The device prompts a UI to get user confirmation when the OTA WAP provisioning message is signed purely with network pin.
-      - 1: There is no user prompt.
+      - 1: There's no user prompt.
 
 - **PolicyID**: 4141 | Hex:102d
   - **Policy name**: OMA CP NETWPIN Policy
   - **Policy description**: This setting determines whether the OMA network PIN signed message will be accepted. The message's role mask and the policy's role mask are combined using the AND operator. If the result is non-zero, then the message is accepted.
     - Default value: 0
-    - Supported values: SECROLE_KNOWN_PPG, SECROLE_ANY_PUSH_SOURCE , SECROLE_OPERATOR_TPS
+    - Supported values: SECROLE_KNOWN_PPG, SECROLE_ANY_PUSH_SOURCE, SECROLE_OPERATOR_TPS
 
 - **PolicyID**: 4142 | Hex:102e
   - **Policy name**: OMA CP USERPIN Policy
@@ -201,7 +201,7 @@ The following table shows the Microsoft custom elements that this Configuration 
 |Elements|Available|
 |--- |--- |
 |parm-query|Yes|
-|noparm|Yes. If this is used, then the policy is set to 0 by default (corresponding to the most restrictive of policy values).|
+|noparm|Yes. If this element is used, then the policy is set to 0 by default (corresponding to the most restrictive of policy values).|
 
  
 

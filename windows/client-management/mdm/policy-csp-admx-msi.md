@@ -132,11 +132,11 @@ This policy setting allows users to search for installation files during privile
 
 If you enable this policy setting, the Browse button in the "Use feature from" dialog box is enabled. As a result, users can search for installation files even when the installation program is running with elevated system privileges.
 
-Because the installation is running with elevated system privileges, users can browse through directories that their own permissions would not allow.
+Because the installation is running with elevated system privileges, users can browse through directories that their own permissions wouldn't allow.
 
-This policy setting does not affect installations that run in the user's security context. Also, see the "Remove browse dialog box for new source" policy setting.
+This policy setting doesn't affect installations that run in the user's security context. Also, see the "Remove browse dialog box for new source" policy setting.
 
-If you disable or do not configure this policy setting, by default, only system administrators can browse during installations with elevated privileges, such as installations offered on the desktop or displayed in Add or Remove Programs.
+If you disable or don't configure this policy setting, by default, only system administrators can browse during installations with elevated privileges, such as installations offered on the desktop or displayed in Add or Remove Programs.
 
 <!--/Description-->
 
@@ -183,9 +183,9 @@ This policy setting allows users to install programs from removable media during
 
 If you enable this policy setting, all users are permitted to install programs from removable media, such as floppy disks and CD-ROMs, even when the installation program is running with elevated system privileges.
 
-This policy setting does not affect installations that run in the user's security context. By default, users can install from removable media when the installation runs in their own security context.
+This policy setting doesn't affect installations that run in the user's security context. By default, users can install from removable media when the installation runs in their own security context.
 
-If you disable or do not configure this policy setting, by default, users can install programs from removable media only when the installation runs in the user's security context. During privileged installations, such as those offered on the desktop or displayed in Add or Remove Programs, only system administrators can install from removable media.
+If you disable or don't configure this policy setting, by default, users can install programs from removable media only when the installation runs in the user's security context. During privileged installations, such as those offered on the desktop or displayed in Add or Remove Programs, only system administrators can install from removable media.
 
 Also, see the "Prevent removable media source for any install" policy setting.
 
@@ -234,9 +234,9 @@ This policy setting allows users to patch elevated products.
 
 If you enable this policy setting, all users are permitted to install patches, even when the installation program is running with elevated system privileges. Patches are updates or upgrades that replace only those program files that have changed. Because patches can easily be vehicles for malicious programs, some installations prohibit their use.
 
-If you disable or do not configure this policy setting, by default, only system administrators can apply patches during installations with elevated privileges, such as installations offered on the desktop or displayed in Add or Remove Programs.
+If you disable or don't configure this policy setting, by default, only system administrators can apply patches during installations with elevated privileges, such as installations offered on the desktop or displayed in Add or Remove Programs.
 
-This policy setting does not affect installations that run in the user's security context. By default, users can install patches to programs that run in their own security context. Also, see the "Prohibit patching" policy setting.
+This policy setting doesn't affect installations that run in the user's security context. By default, users can install patches to programs that run in their own security context. Also, see the "Prohibit patching" policy setting.
 <!--/Description-->
 
 
@@ -288,7 +288,7 @@ If you enable this policy setting, you can use the options in the Prohibit Use o
 
 - The "Restart Manager Off for Legacy App Setup" option applies to packages that were created for Windows Installer versions lesser than 4.0. This option lets those packages display the legacy files in use UI while still using Restart Manager for detection.
 
-If you disable or do not configure this policy setting, Windows Installer will use Restart Manager to detect files in use and mitigate a system restart, when possible.
+If you disable or don't configure this policy setting, Windows Installer will use Restart Manager to detect files in use and mitigate a system restart, when possible.
 
 <!--/Description-->
 
@@ -337,9 +337,9 @@ If you enable this policy setting, the Browse button beside the "Use feature fro
 
 This policy setting applies even when the installation is running in the user's security context.
 
-If you disable or do not configure this policy setting, the Browse button is enabled when an installation is running in the user's security context. But only system administrators can browse when an installation is running with elevated system privileges, such as installations offered on the desktop or in Add or Remove Programs.
+If you disable or don't configure this policy setting, the Browse button is enabled when an installation is running in the user's security context. But only system administrators can browse when an installation is running with elevated system privileges, such as installations offered on the desktop or in Add or Remove Programs.
 
-This policy setting affects Windows Installer only. It does not prevent users from selecting other browsers, such as File Explorer or Network Locations, to search for installation files.
+This policy setting affects Windows Installer only. It doesn't prevent users from selecting other browsers, such as File Explorer or Network Locations, to search for installation files.
 
 Also, see the "Enable user to browse for source while elevated" policy setting.
 
@@ -388,7 +388,7 @@ This policy setting controls the ability to turn off all patch optimizations.
 
 If you enable this policy setting, all Patch Optimization options are turned off during the installation.
 
-If you disable or do not configure this policy setting, it enables faster application of patches by removing execution of unnecessary actions. The flyweight patching mode is primarily designed for patches that just update a few files or registry values. The Installer will analyze the patch for specific changes to determine if optimization is possible. If so, the patch will be applied using a minimal set of processing.
+If you disable or don't configure this policy setting, it enables faster application of patches by removing execution of unnecessary actions. The flyweight patching mode is primarily designed for patches that just update a few files or registry values. The Installer will analyze the patch for specific changes to determine if optimization is possible. If so, the patch will be applied using a minimal set of processing.
 
 <!--/Description-->
 
@@ -439,7 +439,7 @@ If you enable this policy setting, you can use the options in the Disable loggin
 
 - The "Logging via package settings off" option turns off the automatic logging behavior when specified via the MsiLogging policy. Log files can still be generated using the logging command line switch or the Logging policy.
 
-If you disable or do not configure this policy setting, Windows Installer will automatically generate log files for those packages that include the MsiLogging property.
+If you disable or don't configure this policy setting, Windows Installer will automatically generate log files for those packages that include the MsiLogging property.
 
 <!--/Description-->
 
@@ -488,11 +488,11 @@ If you enable this policy setting, you can prevent users from installing softwar
 
 - The "Never" option indicates Windows Installer is fully enabled. Users can install and upgrade software. 
 
-- The "For non-managed applications only" option permits users to install only those programs that a system administrator assigns (offers on the desktop) or publishes (adds them to Add or Remove Programs). This is the default behavior of Windows Installer on Windows Server 2003 family when the policy is not configured.
+- The "For non-managed applications only" option permits users to install only those programs that a system administrator assigns (offers on the desktop) or publishes (adds them to Add or Remove Programs). This option's induced behavior is the default behavior of Windows Installer on Windows Server 2003 family when the policy isn't configured.
 
 - The "Always" option indicates that Windows Installer is disabled.
 
-This policy setting affects Windows Installer only. It does not prevent users from using other methods to install and upgrade programs.
+This policy setting affects Windows Installer only. It doesn't prevent users from using other methods to install and upgrade programs.
 
 <!--/Description-->
 
@@ -537,11 +537,11 @@ ADMX Info:
 <!--Description-->
 This policy setting prevents users from installing any programs from removable media.
 
-If you enable this policy setting, if a user tries to install a program from removable media, such as CD-ROMs, floppy disks, and DVDs, a message appears stating that the feature cannot be found.
+If you enable this policy setting, if a user tries to install a program from removable media, such as CD-ROMs, floppy disks, and DVDs, a message appears stating that the feature can't be found.
 
 This policy setting applies even when the installation is running in the user's security context.
 
-If you disable or do not configure this policy setting, users can install from removable media when the installation is running in their own security context, but only system administrators can use removable media when an installation is running with elevated system privileges, such as installations offered on the desktop or in Add or Remove Programs.
+If you disable or don't configure this policy setting, users can install from removable media when the installation is running in their own security context, but only system administrators can use removable media when an installation is running with elevated system privileges, such as installations offered on the desktop or in Add or Remove Programs.
 
 Also, see the "Enable user to use media source while elevated" and "Hide the 'Add a program from CD-ROM or floppy disk' option" policy settings.
 
@@ -593,7 +593,7 @@ If you enable this policy setting, users are prevented from using Windows Instal
 > [!NOTE]
 > This policy setting applies only to installations that run in the user's security context.
 
-If you disable or do not configure this policy setting, by default, users who are not system administrators cannot apply patches to installations that run with elevated system privileges, such as those offered on the desktop or in Add or Remove Programs.
+If you disable or don't configure this policy setting, by default, users who aren't system administrators can't apply patches to installations that run with elevated system privileges, such as those offered on the desktop or in Add or Remove Programs.
 
 Also, see the "Enable user to patch elevated products" policy setting.
 
@@ -640,11 +640,11 @@ ADMX Info:
 <!--Description-->
 This policy setting prohibits Windows Installer from generating and saving the files it needs to reverse an interrupted or unsuccessful installation.
 
-If you enable this policy setting, Windows Installer is prevented from recording the original state of the system and sequence of changes it makes during installation. It also prevents Windows Installer from retaining files it intends to delete later. As a result, Windows Installer cannot restore the computer to its original state if the installation does not complete.
+If you enable this policy setting, Windows Installer is prevented from recording the original state of the system and sequence of changes it makes during installation. It also prevents Windows Installer from retaining files it intends to delete later. As a result, Windows Installer can't restore the computer to its original state if the installation doesn't complete.
 
-This policy setting is designed to reduce the amount of temporary disk space required to install programs. Also, it prevents malicious users from interrupting an installation to gather data about the internal state of the computer or to search secure system files. However, because an incomplete installation can render the system or a program inoperable, do not use this policy setting unless it is essential.
+This policy setting is designed to reduce the amount of temporary disk space required to install programs. Also, it prevents malicious users from interrupting an installation to gather data about the internal state of the computer or to search secure system files. However, because an incomplete installation can render the system or a program inoperable, don't use this policy setting unless it's essential.
 
-This policy setting appears in the Computer Configuration and User Configuration folders. If the policy setting is enabled in either folder, it is considered be enabled, even if it is explicitly disabled in the other folder.
+This policy setting appears in the Computer Configuration and User Configuration folders. If the policy setting is enabled in either folder, it's considered to be enabled, even if it's explicitly disabled in the other folder.
 <!--/Description-->
 
 
@@ -688,11 +688,11 @@ ADMX Info:
 <!--Description-->
 This policy setting prohibits Windows Installer from generating and saving the files it needs to reverse an interrupted or unsuccessful installation.
 
-If you enable this policy setting, Windows Installer is prevented from recording the original state of the system and sequence of changes it makes during installation. It also prevents Windows Installer from retaining files it intends to delete later. As a result, Windows Installer cannot restore the computer to its original state if the installation does not complete.
+If you enable this policy setting, Windows Installer is prevented from recording the original state of the system and sequence of changes it makes during installation. It also prevents Windows Installer from retaining files it intends to delete later. As a result, Windows Installer can't restore the computer to its original state if the installation doesn't complete.
 
-This policy setting is designed to reduce the amount of temporary disk space required to install programs. Also, it prevents malicious users from interrupting an installation to gather data about the internal state of the computer or to search secure system files. However, because an incomplete installation can render the system or a program inoperable, do not use this policy setting unless it is essential.
+This policy setting is designed to reduce the amount of temporary disk space required to install programs. Also, it prevents malicious users from interrupting an installation to gather data about the internal state of the computer or to search secure system files. However, because an incomplete installation can render the system or a program inoperable, don't use this policy setting unless it's essential.
 
-This policy setting appears in the Computer Configuration and User Configuration folders. If the policy setting is enabled in either folder, it is considered be enabled, even if it is explicitly disabled in the other folder.
+This policy setting appears in the Computer Configuration and User Configuration folders. If the policy setting is enabled in either folder, it's considered to be enabled, even if it's explicitly disabled in the other folder.
 
 <!--/Description-->
 
@@ -739,7 +739,7 @@ This policy setting controls the ability to turn off shared components.
 
 If you enable this policy setting, no packages on the system get the shared component functionality enabled by the msidbComponentAttributesShared attribute in the Component Table.
 
-If you disable or do not configure this policy setting, by default, the shared component functionality is allowed.
+If you disable or don't configure this policy setting, by default, the shared component functionality is allowed.
 
 <!--/Description-->
 
@@ -788,7 +788,7 @@ When you enable this policy setting, you can specify the types of events you wan
 
 To disable logging, delete all of the letters from the box.
 
-If you disable or do not configure this policy setting, Windows Installer logs the default event types, represented by the letters "iweap."
+If you disable or don't configure this policy setting, Windows Installer logs the default event types, represented by the letters "iweap."
 
 <!--/Description-->
 
@@ -838,7 +838,7 @@ Non-administrator updates provide a mechanism for the author of an application t
 
 If you enable this policy setting, only administrators or users with administrative privileges can apply updates to Windows Installer based applications.
 
-If you disable or do not configure this policy setting, users without administrative privileges can install non-administrator updates.
+If you disable or don't configure this policy setting, users without administrative privileges can install non-administrator updates.
 
 <!--/Description-->
 
@@ -884,11 +884,11 @@ ADMX Info:
 <!--Description-->
 This policy setting controls the ability for users or administrators to remove Windows Installer based updates.
 
-This policy setting should be used if you need to maintain a tight control over updates. One example is a lockdown environment where you want to ensure that updates once installed cannot be removed by users or administrators.
+This policy setting should be used if you need to maintain a tight control over updates. One example is a lockdown environment where you want to ensure that updates once installed can't be removed by users or administrators.
 
-If you enable this policy setting, updates cannot be removed from the computer by a user or an administrator. The Windows Installer can still remove an update that is no longer applicable to the product.
+If you enable this policy setting, updates can't be removed from the computer by a user or an administrator. The Windows Installer can still remove an update that is no longer applicable to the product.
 
-If you disable or do not configure this policy setting, a user can remove an update from the computer only if the user has been granted privileges to remove the update. This can depend on whether the user is an administrator, whether "Disable Windows Installer" and "Always install with elevated privileges" policy settings are set, and whether the update was installed in a per-user managed, per-user unmanaged, or per-machine context."
+If you disable or don't configure this policy setting, a user can remove an update from the computer only if the user has been granted privileges to remove the update. This grant of privileges can depend on whether the user is an administrator, whether "Disable Windows Installer" and "Always install with elevated privileges" policy settings are set, and whether the update was installed in a per-user managed, per-user unmanaged, or per-machine context."
 
 <!--/Description-->
 
@@ -932,11 +932,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting prevents Windows Installer from creating a System Restore checkpoint each time an application is installed. System Restore enables users, in the event of a problem, to restore their computers to a previous state without losing personal data files.
+This policy setting prevents Windows Installer from creating a System Restore checkpoint each time an application is installed. System Restore enables users - when a problem occurs - to restore their computers to a previous state without losing personal data files.
 
-If you enable this policy setting, the Windows Installer does not generate System Restore checkpoints when installing applications.
+If you enable this policy setting, the Windows Installer doesn't generate System Restore checkpoints when installing applications.
 
-If you disable or do not configure this policy setting, by default, the Windows Installer automatically creates a System Restore checkpoint each time an application is installed, so that users can restore their computer to the state it was in before installing the application.
+If you disable or don't configure this policy setting, by default, the Windows Installer automatically creates a System Restore checkpoint each time an application is installed, so that users can restore their computer to the state it was in before installing the application.
 
 <!--/Description-->
 
@@ -982,9 +982,9 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to configure user installs. To configure this policy setting, set it to enabled and use the drop-down list to select the behavior you want.
 
-If you do not configure this policy setting, or if the policy setting is enabled and "Allow User Installs" is selected, the installer allows and makes use of products that are installed per user, and products that are installed per computer. If the installer finds a per-user install of an application, this hides a per-computer installation of that same product.
+If you don't configure this policy setting, or if the policy setting is enabled and "Allow User Installs" is selected, the installer allows and makes use of products that are installed per user, and products that are installed per computer. If the installer finds a per-user install of an application, the per-computer installation of that same product is hidden.
 
-If you enable this policy setting and "Hide User Installs" is selected, the installer ignores per-user applications. This causes a per-computer installed application to be visible to users, even if those users have a per-user install of the product registered in their user profile.
+If you enable this policy setting and "Hide User Installs" is selected, the installer ignores per-user applications. This behavior of the installer causes a per-computer installed application to be visible to users, even if those users have a per-user install of the product registered in their user profile.
 
 <!--/Description-->
 
@@ -1030,15 +1030,15 @@ ADMX Info:
 <!--Description-->
 This policy setting causes the Windows Installer to enforce strict rules for component upgrades.
 
-If you enable this policy setting, strict upgrade rules will be enforced by the Windows Installer which may cause some upgrades to fail. Upgrades can fail if they attempt to do one of the following:
+If you enable this policy setting, strict upgrade rules will be enforced by the Windows Installer, which may cause some upgrades to fail. Upgrades can fail if they attempt to do one of the following steps:
 
 (1) Remove a component from a feature.
-This can also occur if you change the GUID of a component. The component identified by the original GUID appears to be removed and the component as identified by the new GUID appears as a new component.
+This removal can also occur if you change the GUID of a component. The component identified by the original GUID appears to be removed and the component as identified by the new GUID appears as a new component.
 
 (2) Add a new feature to the top or middle of an existing feature tree.
 The new feature must be added as a new leaf feature to an existing feature tree.
 
-If you disable or do not configure this policy setting, the Windows Installer will use less restrictive rules for component upgrades.
+If you disable or don't configure this policy setting, the Windows Installer will use less restrictive rules for component upgrades.
 
 <!--/Description-->
 
@@ -1085,13 +1085,13 @@ This policy controls the percentage of disk space available to the Windows Insta
 
 The Windows Installer uses the baseline file cache to save baseline files modified by binary delta difference updates. The cache is used to retrieve the baseline file for future updates. The cache eliminates user prompts for source media when new updates are applied.
 
-If you enable this policy setting you can modify the maximum size of the Windows Installer baseline file cache.
+If you enable this policy setting, you can modify the maximum size of the Windows Installer baseline file cache.
 
 If you set the baseline cache size to 0, the Windows Installer will stop populating the baseline cache for new updates. The existing cached files will remain on disk and will be deleted when the product is removed.
 
 If you set the baseline cache to 100, the Windows Installer will use available free space for the baseline file cache.
 
-If you disable or do not configure this policy setting, the Windows Installer will uses a default value of 10 percent for the baseline file cache maximum size.
+If you disable or don't configure this policy setting, the Windows Installer will use a default value of 10 percent for the baseline file cache maximum size.
 
 <!--/Description-->
 
@@ -1138,7 +1138,7 @@ This policy setting controls the ability to prevent embedded UI.
 
 If you enable this policy setting, no packages on the system can run embedded UI.
 
-If you disable or do not configure this policy setting, embedded UI is allowed to run.
+If you disable or don't configure this policy setting, embedded UI is allowed to run.
 
 <!--/Description-->
 
@@ -1183,7 +1183,7 @@ ADMX Info:
 <!--Description-->
 This policy setting allows Web-based programs to install software on the computer without notifying the user.
 
-If you disable or do not configure this policy setting, by default, when a script hosted by an Internet browser tries to install a program on the system, the system warns users and allows them to select or refuse the installation.
+If you disable or don't configure this policy setting, by default, when a script hosted by an Internet browser tries to install a program on the system, the system warns users and allows them to select or refuse the installation.
 
 If you enable this policy setting, the warning is suppressed and allows the installation to proceed.
 
@@ -1232,7 +1232,7 @@ ADMX Info:
 <!--Description-->
 This policy setting specifies the order in which Windows Installer searches for installation files.
 
-If you disable or do not configure this policy setting, by default, the Windows Installer searches the network first, then removable media (floppy drive, CD-ROM, or DVD), and finally, the Internet (URL).
+If you disable or don't configure this policy setting, by default, the Windows Installer searches the network first, then removable media (floppy drive, CD-ROM, or DVD), and finally, the Internet (URL).
 
 If you enable this policy setting, you can change the search order by specifying the letters representing each file source in the order that you want Windows Installer to search:
 
@@ -1289,7 +1289,7 @@ Transform files consist of instructions to modify or customize a program during 
 
 If you enable this policy setting, the transform file is saved in a secure location on the user's computer.
 
-If you do not configure this policy setting on Windows Server 2003, Windows Installer requires the transform file in order to repeat an installation in which the transform file was used, therefore, the user must be using the same computer or be connected to the original or identical media to reinstall, remove, or repair the installation.
+If you don't configure this policy setting on Windows Server 2003, Windows Installer requires the transform file in order to repeat an installation in which the transform file was used, therefore, the user must be using the same computer or be connected to the original or identical media to reinstall, remove, or repair the installation.
 
 This policy setting is designed for enterprises to prevent unauthorized or malicious editing of transform files.
 

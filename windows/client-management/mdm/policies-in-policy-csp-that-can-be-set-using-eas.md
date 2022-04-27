@@ -1,6 +1,6 @@
 ---
 title: Policies in Policy CSP that can be set using Exchange Active Sync (EAS)
-description: Policies in Policy CSP that can be set using Exchange Active Sync (EAS)
+description: Learn about the policies in Policy CSP that can be set using Exchange Active Sync (EAS).
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp

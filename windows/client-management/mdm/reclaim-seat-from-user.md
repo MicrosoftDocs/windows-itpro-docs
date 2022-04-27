@@ -37,7 +37,7 @@ The following parameters may be specified in the request URI.
 
 ### Response body
 
-The response body contain [SeatDetails](data-structures-windows-store-for-business.md#seatdetails).
+The response body contains [SeatDetails](data-structures-windows-store-for-business.md#seatdetails).
 
 |Error code|Description|Retry|Data field|Details|
 |--- |--- |--- |--- |--- |

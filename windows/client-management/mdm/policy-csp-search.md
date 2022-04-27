@@ -160,7 +160,7 @@ ADMX Info:
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 
-This is a simple boolean value, default false, that can be set by MDM policy to allow the Cortana Page in OOBE when logged in with an AAD account.
+This value is a simple boolean value, default false, that can be set by MDM policy to allow the Cortana Page in OOBE when logged in with an AAD account.
 
 <!--/SupportedValues-->
 
@@ -194,7 +194,7 @@ This is a simple boolean value, default false, that can be set by MDM policy to 
 
 <!--/Scope-->
 <!--Description-->
-Controls if the user can configure search to Find My Files mode, which searches files in secondary hard drives and also outside of the user profile. Find My Files does not allow users to search files or locations to which they do not have access.
+Controls if the user can configure search to Find My Files mode, which searches files in secondary hard drives and also outside of the user profile. Find My Files doesn't allow users to search files or locations to which they don't have access.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -252,7 +252,7 @@ Allows or disallows the indexing of items. This switch is for the Windows Search
 
 When the policy is enabled, WIP protected items are indexed and the metadata about them are stored in an unencrypted location. The metadata includes things like file path and date modified.
 
-When the policy is disabled, the WIP protected items are not indexed and do not show up in the results in Cortana or file explorer. There may also be a performance impact on photos and Groove apps if there are a lot of WIP protected media files on the device.
+When the policy is disabled, the WIP protected items aren't indexed and don't show up in the results in Cortana or file explorer. There may also be a performance impact on photos and Groove apps if there are many WIP-protected media files on the device.
 
 Most restricted value is 0.
 
@@ -302,7 +302,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Specifies whether search can leverage location information.
+Specifies whether search can use location information.
 
 Most restricted value is 0.
 
@@ -605,9 +605,9 @@ The following list shows the supported values:
 <!--Description-->
 This policy setting configures whether or not locations on removable drives can be added to libraries.
 
-If you enable this policy setting, locations on removable drives cannot be added to libraries. In addition, locations on removable drives cannot be indexed.
+If you enable this policy setting, locations on removable drives can't be added to libraries. In addition, locations on removable drives can't be indexed.
 
-If you disable or do not configure this policy setting, locations on removable drives can be added to libraries. In addition, locations on removable drives can be indexed.
+If you disable or don't configure this policy setting, locations on removable drives can be added to libraries. In addition, locations on removable drives can be indexed.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -659,7 +659,7 @@ Don't search the web or display web results in Search, or show search highlights
 
 This policy setting allows you to control whether or not Search can perform queries on the web, if web results are displayed in Search, and if search highlights are shown in the search box and in search home.
 
-- If you enable this policy setting, queries won't be performed on the web, web results won't be displayed when a user performs a query in Search, and search highlights will not be shown in the search box and in search home.
+- If you enable this policy setting, queries won't be performed on the web, web results won't be displayed when a user performs a query in Search, and search highlights won't be shown in the search box and in search home.
 
 - If you disable this policy setting, queries will be performed on the web, web results will be displayed when a user performs a query in Search, and search highlights will be shown in the search box and in search home.
 
@@ -711,7 +711,7 @@ The following list shows the supported values:
 <!--Description-->
 Enabling this policy prevents indexing from continuing after less than the specified amount of hard drive space is left on the same drive as the index location. Select between 0 and 1.
 
-Enable this policy if computers in your environment have extremely limited hard drive space.
+Enable this policy if computers in your environment have limited hard drive space.
 
 When this policy is disabled or not configured, Windows Desktop Search automatically manages your index size.
 
@@ -761,7 +761,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-If enabled, clients will be unable to query this computer's index remotely. Thus, when they are browsing network shares that are stored on this computer, they will not search them using the index. If disabled, client search requests will use this computer's index..
+If enabled, clients will be unable to query this computer's index remotely. Thus, when they're browsing network shares that are stored on this computer, they won't search them using the index. If disabled, client search requests will use this computer's index..
 
 <!--/Description-->
 <!--ADMXMapped-->
