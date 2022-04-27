@@ -191,7 +191,7 @@ The deployment process for the replace scenario is as follows:
 
 - [Upgrade to Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md)
 - [Upgrade to Windows 10 with Microsoft Endpoint Configuration Manager](./deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager.md)
-- [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=620230)
+- [Deploy Windows 10 using PXE and Configuration Manager](deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager.md)
 - [Deploy Windows 10 with the Microsoft Deployment Toolkit](./deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md)
 - [Windows setup technical reference](/windows-hardware/manufacture/desktop/windows-setup-technical-reference)
 - [Windows Imaging and Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd)

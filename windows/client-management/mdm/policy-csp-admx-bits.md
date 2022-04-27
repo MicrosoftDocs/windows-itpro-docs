@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_Bits
-description: Policy CSP - ADMX_Bits
+description: Learn about the Policy CSP - ADMX_Bits.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -102,9 +102,9 @@ manager: dansimp
 <!--Description-->
 This setting affects whether the BITS client is allowed to use Windows Branch Cache. If the Windows Branch Cache component is installed and enabled on a computer, BITS jobs on that computer can use Windows Branch Cache by default.
 
-If you enable this policy setting, the BITS client does not use Windows Branch Cache.
+If you enable this policy setting, the BITS client doesn't use Windows Branch Cache.
 
-If you disable or do not configure this policy setting, the BITS client uses Windows Branch Cache.
+If you disable or don't configure this policy setting, the BITS client uses Windows Branch Cache.
 
 > [!NOTE]
 > This policy setting does not affect the use of Windows Branch Cache by applications other than BITS. This policy setting does not apply to BITS transfers over SMB. This setting has no effect if the computer's administrative settings for Windows Branch Cache disable its use entirely.
@@ -152,7 +152,7 @@ This policy setting specifies whether the computer will act as a BITS peer cachi
 
 If you enable this policy setting, the computer will no longer use the BITS peer caching feature to download files; files will be downloaded only from the origin server. However, the computer will still make files available to its peers.
 
-If you disable or do not configure this policy setting, the computer attempts to download peer-enabled BITS jobs from peer computers before reverting to the origin server.
+If you disable or don't configure this policy setting, the computer attempts to download peer-enabled BITS jobs from peer computers before reverting to the origin server.
 
 > [!NOTE]
 > This policy setting has no effect if the "Allow BITS peer caching" policy setting is disabled or not configured.
@@ -201,7 +201,7 @@ This policy setting specifies whether the computer will act as a BITS peer cachi
 
 If you enable this policy setting, the computer will no longer cache downloaded files and offer them to its peers. However, the computer will still download files from peers.
 
-If you disable or do not configure this policy setting, the computer will offer downloaded and cached files to its peers.
+If you disable or don't configure this policy setting, the computer will offer downloaded and cached files to its peers.
 
 > [!NOTE]
 > This setting has no effect if the "Allow BITS peer caching" setting is disabled or not configured.
@@ -251,9 +251,9 @@ This policy setting determines if the Background Intelligent Transfer Service (B
 
 If BITS peer caching is enabled, BITS caches downloaded files and makes them available to other BITS peers. When transferring a download job, BITS first requests the files for the job from its peers in the same IP subnet. If none of the peers in the subnet have the requested files, BITS downloads them from the origin server.
 
-If you enable this policy setting, BITS downloads files from peers, caches the files, and responds to content requests from peers. Using the "Do not allow the computer to act as a BITS peer caching server" and "Do not allow the computer to act as a BITS peer caching client" policy settings, it is possible to control BITS peer caching functionality at a more detailed level. However, it should be noted that the "Allow BITS peer caching" policy setting must be enabled for the other two policy settings to have any effect.
+If you enable this policy setting, BITS downloads files from peers, caches the files, and responds to content requests from peers. Using the "Do not allow the computer to act as a BITS peer caching server" and "Do not allow the computer to act as a BITS peer caching client" policy settings, it's possible to control BITS peer caching functionality at a more detailed level. However, it should be noted that the "Allow BITS peer caching" policy setting must be enabled for the other two policy settings to have any effect.
 
-If you disable or do not configure this policy setting, the BITS peer caching feature will be disabled, and BITS will download files directly from the origin server.
+If you disable or don't configure this policy setting, the BITS peer caching feature will be disabled, and BITS will download files directly from the origin server.
 
 <!--/Description-->
 
@@ -296,15 +296,15 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting limits the network bandwidth that BITS uses for peer cache transfers (this setting does not affect transfers from the origin server).
+This policy setting limits the network bandwidth that BITS uses for peer cache transfers (this setting doesn't affect transfers from the origin server).
 
-To prevent any negative impact to a computer caused by serving other peers, by default BITS will use up to 30 percent of the bandwidth of the slowest active network interface. For example, if a computer has both a 100 Mbps network card and a 56 Kbps modem, and both are active, BITS will use a maximum of 30 percent of 56 Kbps. 
+To prevent any negative impact to a computer caused by serving other peers, by default BITS will use up to 30 percent of the bandwidth of the slowest active network interface. For example, if a computer has both a 100-Mbps network card and a 56-Kbps modem, and both are active, BITS will use a maximum of 30 percent of 56 Kbps. 
 
 You can change the default behavior of BITS, and specify a fixed maximum bandwidth that BITS will use for peer caching.
 
 If you enable this policy setting, you can enter a value in bits per second (bps) between 1048576 and 4294967200 to use as the maximum network bandwidth used for peer caching.
 
-If you disable this policy setting or do not configure it, the default value of 30 percent of the slowest active network interface will be used.
+If you disable this policy setting or don't configure it, the default value of 30 percent of the slowest active network interface will be used.
 
 > [!NOTE] 
 > This setting has no effect if the "Allow BITS peer caching" policy setting is disabled or not configured.
@@ -354,7 +354,7 @@ If you enable this policy setting, you can define a separate set of network band
 
 You can specify a limit to use for background jobs during a maintenance schedule. For example, if normal priority jobs are currently limited to 256 Kbps on a work schedule, you can further limit the network bandwidth of normal priority jobs to 0 Kbps from 8:00 A.M. to 10:00 A.M. on a maintenance schedule.
 
-If you disable or do not configure this policy setting, the limits defined for work or non-work schedules will be used.
+If you disable or don't configure this policy setting, the limits defined for work or non-work schedules will be used.
 
 > [!NOTE]
 > The bandwidth limits that are set for the maintenance period supersede any limits defined for work and other schedules.
@@ -399,13 +399,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting limits the network bandwidth that Background Intelligent Transfer Service (BITS) uses for background transfers during the work and non-work days and hours. The work schedule is defined using a weekly calendar, which consists of days of the week and hours of the day. All hours and days that are not defined in a work schedule are considered non-work hours.
+This policy setting limits the network bandwidth that Background Intelligent Transfer Service (BITS) uses for background transfers during the work and non-work days and hours. The work schedule is defined using a weekly calendar, which consists of days of the week and hours of the day. All hours and days that aren't defined in a work schedule are considered non-work hours.
 
 If you enable this policy setting, you can set up a schedule for limiting network bandwidth during both work and non-work hours. After the work schedule is defined, you can set the bandwidth usage limits for each of the three BITS background priority levels: high, normal, and low.
 
 You can specify a limit to use for background jobs during a work schedule. For example, you can limit the network bandwidth of low priority jobs to 128 Kbps from 8:00 A.M. to 5:00 P.M. on Monday through Friday, and then set the limit to 512 Kbps for non-work hours.
 
-If you disable or do not configure this policy setting, BITS uses all available unused bandwidth for background job transfers.
+If you disable or don't configure this policy setting, BITS uses all available unused bandwidth for background job transfers.
 
 <!--/Description-->
 
@@ -451,7 +451,7 @@ This policy setting limits the maximum amount of disk space that can be used for
 
 If you enable this policy setting, you can enter the percentage of disk space to be used for the BITS peer cache. You can enter a value between 1 percent and 80 percent.
 
-If you disable or do not configure this policy setting, the default size of the BITS peer cache is 1 percent of the total system disk size.
+If you disable or don't configure this policy setting, the default size of the BITS peer cache is 1 percent of the total system disk size.
 
 > [!NOTE]
 > This policy setting has no effect if the "Allow BITS peer caching" setting is disabled or not configured.
@@ -495,11 +495,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting limits the maximum age of files in the Background Intelligent Transfer Service (BITS) peer cache. In order to make the most efficient use of disk space, by default BITS removes any files in the peer cache that have not been accessed in the past 90 days.
+Available in the latest Windows 10 Insider Preview Build. This policy setting limits the maximum age of files in the Background Intelligent Transfer Service (BITS) peer cache. In order to make the most efficient use of disk space, by default BITS removes any files in the peer cache that haven't been accessed in the past 90 days.
 
 If you enable this policy setting, you can specify in days the maximum age of files in the cache. You can enter a value between 1 and 120 days.
 
-If you disable or do not configure this policy setting, files that have not been accessed for the past 90 days will be removed from the peer cache.
+If you disable or don't configure this policy setting, files that haven't been accessed for the past 90 days will be removed from the peer cache.
 
 > [!NOTE]
 > This policy setting has no effect if the "Allow BITS Peercaching" policy setting is disabled or not configured.
@@ -551,7 +551,7 @@ By default BITS uses a maximum download time of 90 days (7,776,000 seconds).
 
 If you enable this policy setting, you can set the maximum job download time to a specified number of seconds.
 
-If you disable or do not configure this policy setting, the default value of 90 days (7,776,000 seconds) will be used.
+If you disable or don't configure this policy setting, the default value of 90 days (7,776,000 seconds) will be used.
 
 <!--/Description-->
 
@@ -593,11 +593,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting limits the number of files that a BITS job can contain. By default, a BITS job is limited to 200 files. You can use this setting to raise or lower the maximum number of files a BITS jobs can contain.
+This policy setting limits the number of files that a BITS job can contain. By default, a BITS job is limited to 200 files. You can use this setting to raise or lower the maximum number of files a BITS job can contain.
 
 If you enable this policy setting, BITS will limit the maximum number of files a job can contain to the specified number.
 
-If you disable or do not configure this policy setting, BITS will use the default value of 200 for the maximum number of files a job can contain.
+If you disable or don't configure this policy setting, BITS will use the default value of 200 for the maximum number of files a job can contain.
 
 > [!NOTE]
 > BITS Jobs created by services and the local administrator account do not count toward this limit.
@@ -646,7 +646,7 @@ This policy setting limits the number of BITS jobs that can be created for all u
 
 If you enable this policy setting, BITS will limit the maximum number of BITS jobs to the specified number.
 
-If you disable or do not configure this policy setting, BITS will use the default BITS job limit of 300 jobs.
+If you disable or don't configure this policy setting, BITS will use the default BITS job limit of 300 jobs.
 
 > [!NOTE]
 > BITS jobs created by services and the local administrator account do not count toward this limit.
@@ -695,7 +695,7 @@ This policy setting limits the number of BITS jobs that can be created by a user
 
 If you enable this policy setting, BITS will limit the maximum number of BITS jobs a user can create to the specified number.
 
-If you disable or do not configure this policy setting, BITS will use the default user BITS job limit of 300 jobs.
+If you disable or don't configure this policy setting, BITS will use the default user BITS job limit of 300 jobs.
 
 > [!NOTE]
 > This limit must be lower than the setting specified in the "Maximum number of BITS jobs for this computer" policy setting, or 300 if the "Maximum number of BITS jobs for this computer" policy setting is not configured. BITS jobs created by services and the local administrator account do not count toward this limit.
@@ -744,7 +744,7 @@ This policy setting limits the number of ranges that can be added to a file in a
 
 If you enable this policy setting, BITS will limit the maximum number of ranges that can be added to a file to the specified number.
 
-If you disable or do not configure this policy setting, BITS will limit ranges to 500 ranges per file.
+If you disable or don't configure this policy setting, BITS will limit ranges to 500 ranges per file.
 
 > [!NOTE]
 > BITS Jobs created by services and the local administrator account do not count toward this limit.
@@ -766,3 +766,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
