@@ -89,7 +89,7 @@ By default USMT migrates many settings, most of which are related to the user pr
 -   Specific file types. USMT templates migrate the following file types: .accdb, .ch3, .csv, .dif, .doc\*, .dot\*, .dqy, .iqy, .mcw, .mdb\*, .mpp, .one\*, .oqy, .or6, .pot\*, .ppa, .pps\*, .ppt\*, .pre, .pst, .pub, .qdf, .qel, .qph, .qsd, .rqy, .rtf, .scd, .sh3, .slk, .txt, .vl\*, .vsd, .wk\*, .wpd, .wps, .wq1, .wri, .xl\*, .xla, .xlb, .xls\*.
 
     **Note**  
-    The OpenDocument extensions (\*.odt, \*.odp, \*.ods, etc.) that Microsoft Office applications can use are not migrated by default.
+    The OpenDocument extensions (\*.odt, \*.odp, \*.ods, etc.) that Microsoft Office applications can use aren't migrated by default.
 
 -   Operating system component settings
 -   Application settings
@@ -108,7 +108,7 @@ For more information, see [Windows Imaging and Configuration Designer](/windows/
 
 ### Windows System Image Manager (Windows SIM)
 
-Windows SIM is an authoring tool for Unattend.xml files. When using MDT and/or Configuration Manager, you don't need Windows SIM very often because those systems automatically update the Unattend.xml file during the deployment, greatly simplifying the process overall.
+Windows SIM is an authoring tool for Unattend.xml files. When using MDT and/or Configuration Manager, you don't need Windows SIM often because those systems automatically update the Unattend.xml file during the deployment, greatly simplifying the process overall.
 
 ![Windows answer file opened in Windows SIM.](images/mdt-11-fig07.png)
 
@@ -201,7 +201,7 @@ For more information on MDT, see the [Microsoft Deployment Toolkit](/mem/configm
 ## Microsoft Security Compliance Manager 2013
 
 
-[Microsoft SCM](https://go.microsoft.com/fwlink/p/?LinkId=619246) is a free utility used to create baseline security settings for the Windows client and server environment. The baselines can be exported and then deployed via Group Policy, local policies, MDT, or Configuration Manager. The current version of Security Compliance Manager includes baselines for Windows 8.1 and several earlier versions of Windows, Windows Server, and Internet Explorer.
+[Microsoft SCM](https://www.microsoft.com/download/details.aspx?id=53353) is a free utility used to create baseline security settings for the Windows client and server environment. The baselines can be exported and then deployed via Group Policy, local policies, MDT, or Configuration Manager. The current version of Security Compliance Manager includes baselines for Windows 8.1 and several earlier versions of Windows, Windows Server, and Internet Explorer.
 
 ![The SCM console showing a baseline configuration for a fictional client's computer security compliance.](images/mdt-11-fig14.png)
 
@@ -255,7 +255,7 @@ For many years BIOS has been the industry standard for booting a PC. BIOS has se
 BIOS has been in use for approximately 30 years. Even though it clearly has proven to work, it has some limitations, including:
 
 -   16-bit code
--   1 MB address space
+-   1-MB address space
 -   Poor performance on ROM initialization
 -   MBR maximum bootable disk size of 2.2 TB
 
@@ -274,7 +274,7 @@ With UEFI, you can benefit from:
 
 ### Versions
 
-UEFI Version 2.3.1B is the version required for Windows 8 and later logo compliance. Later versions have been released to address issues; a small number of machines may need to upgrade their firmware to fully support the UEFI implementation in Windows 8 and later.
+UEFI Version 2.3.1B is the version required for Windows 8 and later logo compliance. Later versions have been released to address issues; a few machines may need to upgrade their firmware to fully support the UEFI implementation in Windows 8 and later.
 
 ### Hardware support for UEFI
 
