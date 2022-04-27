@@ -394,7 +394,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
 2. On the **Monitoring** tab, select the **Enable monitoring for this deployment share** checkbox, and then click **OK**.
 
-3. Verify the monitoring service is working as expected by opening the following link on SRV1 : `http://localhost:9800/MDTMonitorEvent/`. If you do not see "**You have created a service**" at the top of the page, see [Troubleshooting MDT 2012 Monitoring](/archive/blogs/mniehaus/troubleshooting-mdt-2012-monitoring).
+3. Verify the monitoring service is working as expected by opening the following link on SRV1: `http://localhost:9800/MDTMonitorEvent/`. If you do not see "**You have created a service**" at the top of the page, see [Troubleshooting MDT 2012 Monitoring](/archive/blogs/mniehaus/troubleshooting-mdt-2012-monitoring).
 
 4. Close Internet Explorer.
 
