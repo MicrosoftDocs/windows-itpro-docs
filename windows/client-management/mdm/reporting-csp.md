@@ -57,13 +57,13 @@ Interior node for retrieving the security auditing logs. This node is only for m
 -->
 
 <a href="" id="retrievebytimerange"></a>**RetrieveByTimeRange**  
-Returns the logs that exist within the StartTime and StopTime. The StartTime and StopTime are expressed in ISO 8601 format. If the StartTime and StopTime are not specified, then the values are interpreted as either first existing or last existing time.
+Returns the logs that exist within the StartTime and StopTime. The StartTime and StopTime are expressed in ISO 8601 format. If the StartTime and StopTime aren't specified, then the values are interpreted as either first existing or last existing time.
 
 Here are the other possible scenarios:
 
--   If the StartTime and StopTime are not specified, then it returns all existing logs.
--   If the StopTime is specified, but the StartTime is not specified, then all logs that exist before the StopTime are returned.
--   If the StartTime is specified, but the StopTime is not specified, then all those logs that exist from the StartTime are returned.
+-   If the StartTime and StopTime aren't specified, then it returns all existing logs.
+-   If the StopTime is specified, but the StartTime isn't specified, then all logs that exist before the StopTime are returned.
+-   If the StartTime is specified, but the StopTime isn't specified, then all that logs that exist from the StartTime are returned.
 
 <a href="" id="retrievebycount"></a>**RetrieveByCount**  
 Interior node for retrieving a specified number of logs from the StartTime. The StartTime is expressed in ISO 8601 format. You can set the number of logs required by setting LogCount and StartTime. It returns the specified number of logs or less, if the total number of logs is less than LogCount.
@@ -72,7 +72,7 @@ Interior node for retrieving a specified number of logs from the StartTime. The 
 Contains the reporting logs.
 
 - Value type is XML. 
-- Supported operations is Get.
+- Supported operation is Get.
 
 <a href="" id="starttime"></a>**StartTime**  
 Specifies the starting time for retrieving logs.
@@ -87,7 +87,7 @@ Specifies the ending time for retrieving logs.
 - Supported operations are Get and Replace.
 
 <a href="" id="type"></a>**Type**  
-Added in Windows 10, version 1703. Specifies the type of logs to retrieve. You can use this to retrieve the WIP learning logs.
+Added in Windows 10, version 1703. Specifies the type of logs to retrieve. You can use this policy to retrieve the WIP learning logs.
 
 - Value type is integer.
 - Supported operations are Get and Replace.

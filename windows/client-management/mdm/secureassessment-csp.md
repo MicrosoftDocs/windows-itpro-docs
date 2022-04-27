@@ -26,7 +26,7 @@ The table below shows the applicability of Windows:
 
 The SecureAssessment configuration service provider is used to provide configuration information for the secure assessment browser.
 
-The following shows the SecureAssessment configuration service provider management objects in tree format as used by Open Mobile Alliance Device Management (OMA DM), OMA Client Provisioning, and Enterprise DM.
+The following example shows the SecureAssessment configuration service provider management objects in tree format as used by Open Mobile Alliance Device Management (OMA DM), OMA Client Provisioning, and Enterprise DM.
 ```
 ./Vendor/MSFT
 SecureAssessment

@@ -107,7 +107,7 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 - Do not allow
+-   0 - Don't allow
 -   1 (default) - Allow
 
 <!--/SupportedValues-->
@@ -128,7 +128,7 @@ The following list shows the supported values:
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
-Note: Versions prior to version 1903 do not support group policy.
+Note: Versions prior to version 1903 don't support group policy.
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -145,11 +145,11 @@ Note: Versions prior to version 1903 do not support group policy.
 <!--Description-->
 Storage Sense can automatically clean some of the user’s files to free up disk space. By default, Storage Sense is automatically turned on when the machine runs into low disk space and is set to run whenever the machine runs into storage pressure. This cadence can be changed in Storage settings or set with the Storage/ConfigStorageSenseGlobalCadence group policy.
 
-If you enable this policy setting without setting a cadence, Storage Sense is turned on for the machine with the default cadence of "during low free disk space." Users cannot disable Storage Sense, but they can adjust the cadence (unless you also configure the Storage/ConfigStorageSenseGlobalCadence group policy).
+If you enable this policy setting without setting a cadence, Storage Sense is turned on for the machine with the default cadence of "during low free disk space." Users can't disable Storage Sense, but they can adjust the cadence (unless you also configure the Storage/ConfigStorageSenseGlobalCadence group policy).
 
-If you disable this policy setting, the machine will turn off Storage Sense. Users cannot enable Storage Sense.
+If you disable this policy setting, the machine will turn off Storage Sense. Users can't enable Storage Sense.
 
-If you do not configure this policy setting, Storage Sense is turned off by default until the user runs into low disk space or the user enables it manually. Users can configure this setting in Storage settings.
+If you don't configure this policy setting, Storage Sense is turned off by default until the user runs into low disk space or the user enables it manually. Users can configure this setting in Storage settings.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -185,7 +185,7 @@ ADMX Info:
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
-Note: Versions prior to version 1903 do not support group policy.
+Note: Versions prior to version 1903 don't support group policy.
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -200,15 +200,15 @@ Note: Versions prior to version 1903 do not support group policy.
 
 <!--/Scope-->
 <!--Description-->
-When Storage Sense runs, it can delete the user’s temporary files that are not in use.
+When Storage Sense runs, it can delete the user’s temporary files that aren't in use.
 
-If the Storage/AllowStorageSenseGlobal policy is disabled, then this policy does not have any effect.
+If the Storage/AllowStorageSenseGlobal policy is disabled, then this policy doesn't have any effect.
 
-If you enable this policy setting, Storage Sense will delete the user’s temporary files that are not in use. Users cannot disable this setting in Storage settings.
+If you enable this policy setting, Storage Sense will delete the user’s temporary files that aren't in use. Users can't disable this setting in Storage settings.
 
-If you disable this policy setting, Storage Sense will not delete the user’s temporary files. Users cannot enable this setting in Storage settings.
+If you disable this policy setting, Storage Sense won't delete the user’s temporary files. Users can't enable this setting in Storage settings.
 
-If you do not configure this policy setting, Storage Sense will delete the user’s temporary files by default. Users can configure this setting in Storage settings.
+If you don't configure this policy setting, Storage Sense will delete the user’s temporary files by default. Users can configure this setting in Storage settings.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -245,7 +245,7 @@ ADMX Info:
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
-Note: Versions prior to version 1903 do not support group policy.
+Note: Versions prior to version 1903 don't support group policy.
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -260,15 +260,15 @@ Note: Versions prior to version 1903 do not support group policy.
 
 <!--/Scope-->
 <!--Description-->
-When Storage Sense runs, it can dehydrate cloud-backed content that hasn’t been opened in a certain amount of days.
+When Storage Sense runs, it can dehydrate cloud-backed content that hasn’t been opened in a certain number of days.
 
-If the Storage/AllowStorageSenseGlobal policy is disabled, then this policy does not have any effect.
+If the Storage/AllowStorageSenseGlobal policy is disabled, then this policy doesn't have any effect.
 
 If you enable this policy setting, you must provide the minimum number of days a cloud-backed file can remain unopened before Storage Sense dehydrates it. Supported values are: 0–365.
 
-If you set this value to zero, Storage Sense will not dehydrate any cloud-backed content. The default value is 0, which never dehydrates cloud-backed content.
+If you set this value to zero, Storage Sense won't dehydrate any cloud-backed content. The default value is 0, which never dehydrates cloud-backed content.
 
-If you disable or do not configure this policy setting, then Storage Sense will not dehydrate any cloud-backed content by default. Users can configure this setting in Storage settings.
+If you disable or don't configure this policy setting, then Storage Sense won't dehydrate any cloud-backed content by default. Users can configure this setting in Storage settings.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -305,7 +305,7 @@ ADMX Info:
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
-Note: Versions prior to version 1903 do not support group policy.
+Note: Versions prior to version 1903 don't support group policy.
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -322,13 +322,13 @@ Note: Versions prior to version 1903 do not support group policy.
 <!--Description-->
 When Storage Sense runs, it can delete files in the user’s Downloads folder if they haven’t been opened for more than a certain number of days.
 
-If the Storage/AllowStorageSenseGlobal policy is disabled, then this policy does not have any effect.
+If the Storage/AllowStorageSenseGlobal policy is disabled, then this policy doesn't have any effect.
 
 If you enable this policy setting, you must provide the minimum number of days a file can remain unopened before Storage Sense deletes it from the Downloads folder. Supported values are: 0-365.
 
-If you set this value to zero, Storage Sense will not delete files in the user’s Downloads folder. The default is 0, or never deleting files in the Downloads folder.
+If you set this value to zero, Storage Sense won't delete files in the user’s Downloads folder. The default is 0, or never deleting files in the Downloads folder.
 
-If you disable or do not configure this policy setting, then Storage Sense will not delete files in the user’s Downloads folder by default. Users can configure this setting in Storage settings.
+If you disable or don't configure this policy setting, then Storage Sense won't delete files in the user’s Downloads folder by default. Users can configure this setting in Storage settings.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -365,7 +365,7 @@ ADMX Info:
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
-Note: Versions prior to version 1903 do not support group policy.
+Note: Versions prior to version 1903 don't support group policy.
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -381,7 +381,7 @@ Note: Versions prior to version 1903 do not support group policy.
 <!--/Scope-->
 <!--Description-->
 Storage Sense can automatically clean some of the user’s files to free up disk space.
-If the Storage/AllowStorageSenseGlobal policy is disabled, then this policy does not have any effect.
+If the Storage/AllowStorageSenseGlobal policy is disabled, then this policy doesn't have any effect.
 
 If you enable this policy setting, you must provide the desired Storage Sense cadence.
 
@@ -394,7 +394,7 @@ The following are supported options:
 
 The default is 0 (during low free disk space).
 
-If you do not configure this policy setting, then the Storage Sense cadence is set to “during low free disk space” by default. Users can configure this setting in Storage settings.
+If you don't configure this policy setting, then the Storage Sense cadence is set to “during low free disk space” by default. Users can configure this setting in Storage settings.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -431,7 +431,7 @@ ADMX Info:
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
-Note: Versions prior to version 1903 do not support group policy.
+Note: Versions prior to version 1903 don't support group policy.
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -446,15 +446,15 @@ Note: Versions prior to version 1903 do not support group policy.
 
 <!--/Scope-->
 <!--Description-->
-When Storage Sense runs, it can delete files in the user’s Recycle Bin if they have been there for over a certain amount of days.
+When Storage Sense runs, it can delete files in the user’s Recycle Bin if they've been there for over a certain number of days.
 
-If the Storage/AllowStorageSenseGlobal policy is disabled, then this policy does not have any effect.
+If the Storage/AllowStorageSenseGlobal policy is disabled, then this policy doesn't have any effect.
 
 If you enable this policy setting, you must provide the minimum age threshold (in days) of a file in the Recycle Bin before Storage Sense will delete it. Supported values are: 0–365.
 
-If you set this value to zero, Storage Sense will not delete files in the user’s Recycle Bin. The default is 30 days.
+If you set this value to zero, Storage Sense won't delete files in the user’s Recycle Bin. The default is 30 days.
 
-If you disable or do not configure this policy setting, Storage Sense will delete files in the user’s Recycle Bin that have been there for over 30 days by default. Users can configure this setting in Storage settings.
+If you disable or don't configure this policy setting, Storage Sense will delete files in the user’s Recycle Bin which have been there for over 30 days by default. Users can configure this setting in Storage settings.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -506,9 +506,9 @@ ADMX Info:
 <!--Description-->
 This policy setting configures whether or not Windows will activate an Enhanced Storage device.
 
-If you enable this policy setting, Windows will not activate unactivated Enhanced Storage devices.
+If you enable this policy setting, Windows won't activate unactivated Enhanced Storage devices.
 
-If you disable or do not configure this policy setting, Windows will activate unactivated Enhanced Storage devices.
+If you disable or don't configure this policy setting, Windows will activate unactivated Enhanced Storage devices.
 
 <!--/Description-->
 > [!TIP]
@@ -556,7 +556,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-If you enable this policy setting, write access is denied to this removable storage class. If you disable or do not configure this policy setting, write access is allowed to this removable storage class. 
+If you enable this policy setting, write access is denied to this removable storage class. If you disable or don't configure this policy setting, write access is allowed to this removable storage class. 
 
 > [!Note]
 > To require that users write data to BitLocker-protected storage, enable the policy setting "Deny write access to drives not protected by BitLocker," which is located in "Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption\Removable Data Drives."
@@ -616,7 +616,7 @@ See [Use custom settings for Windows 10 devices in Intune](/intune/custom-settin
 
 <!--/Scope-->
 <!--Description-->
-This policy will do the enforcement over the following protocols which are used by most portable devices, e.g. mobile/IOS/Android:
+This policy will do the enforcement over the following protocols that are used by most portable devices, for example, mobile/IOS/Android:
 
 - Picture Transfer Protocol (PTP) over USB, IP, and Bluetooth
 - Media Transfer Protocol (MTP) over USB, IP, and Bluetooth
@@ -624,10 +624,10 @@ This policy will do the enforcement over the following protocols which are used 
 
 To enable this policy, the minimum OS requirement is Windows 10, version 1809 and [KB5003217 (OS Build 17763.1971)](https://support.microsoft.com/en-us/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46).
 
-If enabled, this policy will block end-user from Read access on any Windows Portal devices, e.g. mobile/iOS/Android.
+If enabled, this policy will block end-user from Read access on any Windows Portal devices, for example, mobile/iOS/Android.
 
 >[!NOTE]
-> WPD policy is not a reliable policy for removable storage - admin can not use WPD policy to block removable storage, e.g. if an end-user is using an USB thumb drive under a WPD policy, the policy may block PTP/MTP/etc, but end-user can still browser the USB via explorer.
+> WPD policy is not a reliable policy for removable storage - admin can not use WPD policy to block removable storage, for example, if an end-user is using an USB thumb drive under a WPD policy, the policy may block PTP/MTP/etc, but end-user can still browser the USB via explorer.
 
 Supported values for this policy are:
 - Not configured
@@ -678,7 +678,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy will do the enforcement over the following protocols which are used by most portable devices, e.g. mobile/IOS/Android:
+This policy will do the enforcement over the following protocols that are used by most portable devices, for example, mobile/IOS/Android:
 
 - Picture Transfer Protocol (PTP) over USB, IP, and Bluetooth
 - Media Transfer Protocol (MTP) over USB, IP, and Bluetooth
@@ -686,7 +686,7 @@ This policy will do the enforcement over the following protocols which are used 
 
 To enable this policy, the minimum OS requirement is Windows 10, version 1809 and [KB5003217 (OS Build 17763.1971)](https://support.microsoft.com/en-us/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46).
 
-If enabled, this policy will block end-user from Read access on any Windows Portal devices, e.g. mobile/iOS/Android.
+If enabled, this policy will block end-user from Read access on any Windows Portal devices, for example, mobile/iOS/Android.
 
 >[!NOTE]
 > WPD policy is not a reliable policy for removable storage - admin can not use WPD policy to block removable storage, e.g. if an end-user is using an USB thumb drive under a WPD policy, the policy may block PTP/MTP/etc, but end-user can still browser the USB via explorer.
@@ -740,7 +740,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy will do the enforcement over the following protocols which are used by most portable devices, e.g. mobile/IOS/Android:
+This policy will do the enforcement over the following protocols that are used by most portable devices, for example, mobile/IOS/Android:
 
 - Picture Transfer Protocol (PTP) over USB, IP, and Bluetooth
 - Media Transfer Protocol (MTP) over USB, IP, and Bluetooth
@@ -748,7 +748,7 @@ This policy will do the enforcement over the following protocols which are used 
 
 To enable this policy, the minimum OS requirement is Windows 10, version 1809 and [KB5003217 (OS Build 17763.1971)](https://support.microsoft.com/en-us/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46).
 
-If enabled, this will block end-user from Write access on any Windows Portal devices, e.g. mobile/iOS/Android.
+If enabled, this policy will block end-user from Write access on any Windows Portal devices, for example, mobile/iOS/Android.
 
 >[!NOTE]
 > WPD policy is not a reliable policy for removable storage - admin can not use WPD policy to block removable storage, e.g. if an end-user is using an USB thumb drive under a WPD policy, the policy may block PTP/MTP/etc, but end-user can still browser the USB via explorer.
@@ -802,7 +802,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy will do the enforcement over the following protocols which are used by most portable devices, e.g. mobile/IOS/Android:
+This policy will do the enforcement over the following protocols that are used by most portable devices, for example, mobile/IOS/Android:
 
 - Picture Transfer Protocol (PTP) over USB, IP, and Bluetooth
 - Media Transfer Protocol (MTP) over USB, IP, and Bluetooth
@@ -810,7 +810,7 @@ This policy will do the enforcement over the following protocols which are used 
 
 To enable this policy, the minimum OS requirement is Windows 10, version 1809 and [KB5003217 (OS Build 17763.1971)](https://support.microsoft.com/en-us/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46).
 
-If enabled, this will block end-user from Write access on any Windows Portal devices, e.g. mobile/iOS/Android.
+If enabled, this policy will block end-user from Write access on any Windows Portal devices, for example, mobile/iOS/Android.
 
 >[!NOTE]
 > WPD policy is not a reliable policy for removable storage - admin can not use WPD policy to block removable storage, e.g. if an end-user is using an USB thumb drive under a WPD policy, the policy may block PTP/MTP/etc, but end-user can still browser the USB via explorer.
