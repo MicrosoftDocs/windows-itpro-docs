@@ -25,8 +25,7 @@ The table below shows the applicability of Windows:
 
 The WindowsDefenderApplicationGuard configuration service provider (CSP) is used by the enterprise to configure the settings in Microsoft Defender Application Guard. This CSP was added in Windows 10, version 1709.
 
-The following shows the WindowsDefenderApplicationGuard configuration service provider in tree format.
-
+The following example shows the WindowsDefenderApplicationGuard configuration service provider in tree format.
 ```
 ./Device/Vendor/MSFT
 WindowsDefenderApplicationGuard
@@ -169,7 +168,7 @@ This policy setting is supported on Microsoft Edge on Windows 10/Windows 11 Ente
 The following list shows the supported values:
   
 - 0 (default) - Non-enterprise content embedded in enterprise sites is allowed to open outside of the Microsoft Defender Application Guard container, directly in Internet Explorer and Microsoft Edge.
-- 1 - Non-enterprise content embedded on enterprise sites are stopped from opening in Internet Explorer or Microsoft Edge outside of Microsoft Defender Application Guard.
+- 1 - Non-enterprise content embedded on enterprise sites is stopped from opening in Internet Explorer or Microsoft Edge outside of Microsoft Defender Application Guard.
 
 > [!NOTE]
 > This policy setting is no longer supported in the new Microsoft Edge browser. The policy will be deprecated and removed in a future release. Webpages that contain mixed content, both enterprise and non-enterprise, may load incorrectly or fail completely if this feature is enabled.
@@ -190,11 +189,9 @@ Value type is integer.
 
 Supported operations are Add, Get, Replace, and Delete.
 
-This policy setting is supported on Microsoft Edge on Windows 10/Windows 11 Enterprise or Windows 10/Windows 11 Education with Microsoft Defender Application Guard in Enterprise mode.
+The following list shows the supported values:  
 
-The following list shows the supported values:
-  
-- 0 - Application Guard discards user-downloaded files and other items (such as, cookies, Favorites, and so on) during machine restart or user log-off.
+- 0 - Application Guard discards user-downloaded files and other items (such as, cookies, Favorites, and so on) during machine restart or user sign out.
 - 1 - Application Guard saves user-downloaded files and other items (such as, cookies, Favorites, and so on) for use in future Application Guard sessions.
 
 <!--ADMXMapped-->
@@ -217,10 +214,10 @@ This policy setting is supported on Microsoft Edge on Windows 10/Windows 11 Ente
 
 If you enable this setting, Microsoft Defender Application Guard uses Hyper-V to access supported, high-security rendering graphics hardware (GPUs). These GPUs improve rendering performance and battery life while using Microsoft Defender Application Guard, particularly for video playback and other graphics-intensive use cases. If you enable this setting without connecting any high-security rendering graphics hardware, Microsoft Defender Application Guard will automatically revert to software-based (CPU) rendering.
 
-The following list shows the supported values:
-  
-- 0 (default) - Cannot access the vGPU and uses the CPU to support rendering graphics. When the policy is not configured, it is the same as disabled (0).
-- 1 - Turns on the functionality to access the vGPU offloading graphics rendering from the CPU. This can create a faster experience when working with graphics intense websites or watching video within the container. 
+The following list shows the supported values:  
+
+- 0 (default) - Can't access the vGPU and uses the CPU to support rendering graphics. When the policy isn't configured, it's the same as disabled (0).
+- 1 - Turns on the functionality to access the vGPU offloading graphics rendering from the CPU. This functionality can create a faster experience when working with graphics intense websites or watching video within the container. 
 
 > [!WARNING]
 > Enabling this setting with potentially compromised graphics devices or drivers might pose a risk to the host device.
@@ -235,17 +232,15 @@ ADMX Info:
 <!--/ADMXMapped-->
 
 <a href="" id="savefilestohost"></a>**Settings/SaveFilesToHost**  
-Added in Windows 10, version 1803. This policy setting allows you to determine whether users can elect to download files from Edge in the container and persist files from container to the host operating system. This also enables users to elect files on the host operating system and upload it through Edge in the container. 
+Added in Windows 10, version 1803. This policy setting allows you to determine whether users can elect to download files from Edge in the container and persist files from container to the host operating system. This policy setting also enables users to elect files on the host operating system and upload it through Edge in the container. 
 
 Value type is integer. 
 
 Supported operations are Add, Get, Replace, and Delete. 
 
-This policy setting is supported on Microsoft Edge on Windows 10/Windows 11 Enterprise or Windows 10/Windows 11 Education with Microsoft Defender Application Guard in Enterprise mode.
+The following list shows the supported values: 
 
-The following list shows the supported values:
-  
-- 0 (default) - The user cannot download files from Edge in the container to the host file system, or upload files from host file system to Edge in the container. When the policy is not configured, it is the same as disabled (0).
+- 0 (default) - The user can't download files from Edge in the container to the host file system, or upload files from host file system to Edge in the container. When the policy isn't configured, it's the same as disabled (0).
 - 1 - Turns on the functionality to allow users to download files from Edge in the container to the host file system.  
 
 <!--ADMXMapped-->
@@ -271,7 +266,7 @@ If you enable this setting, certificates with a thumbprint matching the ones spe
 Here's an example:  
 b4e72779a8a362c860c36a6461f31e3aa7e58c14,1b1d49f06d2a697a544a1059bd59a7b058cda924
 
-If you disable or don’t configure this setting, certificates are not shared with the Microsoft Defender Application Guard container.
+If you disable or don’t configure this setting, certificates aren't shared with the Microsoft Defender Application Guard container.
 
 <!--ADMXMapped-->
 ADMX Info:
@@ -298,9 +293,9 @@ If you enable this policy setting, applications inside Microsoft Defender Applic
 
 If you disable or don't configure this policy setting, applications inside Microsoft Defender Application Guard will be unable to access the camera and microphone on the user’s device.
 
-The following list shows the supported values:
-  
-- 0 (default) - Microsoft Defender Application Guard cannot access the device’s camera and microphone. When the policy is not configured, it is the same as disabled (0).
+The following list shows the supported values: 
+ 
+- 0 (default) - Microsoft Defender Application Guard can't access the device’s camera and microphone. When the policy isn't configured, it's the same as disabled (0).
 - 1 - Turns on the functionality to allow Microsoft Defender Application Guard to access the device’s camera and microphone.
 
 > [!IMPORTANT]

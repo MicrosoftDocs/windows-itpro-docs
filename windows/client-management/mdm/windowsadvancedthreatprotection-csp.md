@@ -26,7 +26,7 @@ The table below shows the applicability of Windows:
 
 The Windows Defender Advanced Threat Protection (WDATP) configuration service provider (CSP) allows IT Admins to onboard, determine configuration and health status, and offboard endpoints for WDATP.
 
-The following shows the WDATP configuration service provider in tree format as used by the Open Mobile Alliance (OMA) Device Management (DM).
+The following example shows the WDATP configuration service provider in tree format as used by the Open Mobile Alliance (OMA) Device Management (DM).
 
 ```console
 ./Device/Vendor/MSFT
@@ -123,7 +123,7 @@ Supported operations are Get and Replace.
 <a href="" id="devicetagging"></a>**DeviceTagging**  
 Added in Windows 10, version 1709. Represents Windows Defender Advanced Threat Protection configuration for managing role based access and device tagging.
 
-Supported operations is Get.
+Supported operation is Get.
 
 <a href="" id="group"></a>**DeviceTagging/Group**  
 Added in Windows 10, version 1709. Device group identifiers.

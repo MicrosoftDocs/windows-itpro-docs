@@ -26,7 +26,7 @@ The table below shows the applicability of Windows:
 
 The Win32AppInventory configuration service provider is used to provide an inventory of installed applications on a device.
 
-The following shows the Win32AppInventory configuration service provider management objects in tree format as used by Open Mobile Alliance Device Management (OMA DM), OMA Client Provisioning, and Enterprise DM.
+The following example shows the Win32AppInventory configuration service provider management objects in tree format as used by Open Mobile Alliance Device Management (OMA DM), OMA Client Provisioning, and Enterprise DM.
 
 ```
 ./Vendor/MSFT/Win32AppInventory
@@ -78,9 +78,9 @@ The supported operation is Get.
 <a href="" id="win32installedprogram-installedprogram-regkey"></a>**Win32InstalledProgram/_InstalledProgram_/RegKey**
 A string that specifies product code or registry subkey.
 
-For MSI-based applications, this is the product code.
+For MSI-based applications, this string is the product code.
 
-For applications found in Add/Remove Programs, this is the registry subkey.
+For applications found in Add/Remove Programs, this string is the registry subkey.
 
 The supported operation is Get.
 

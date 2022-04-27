@@ -73,15 +73,15 @@ This policy setting determines the execution level for Windows Boot Performance 
 
 If you enable this policy setting, you must select an execution level from the dropdown menu. If you select problem detection and troubleshooting only, the Diagnostic Policy Service (DPS) will detect Windows Boot Performance problems and attempt to determine their root causes. These root causes will be logged to the event log when detected, but no corrective action will be taken. If you select detection, troubleshooting and resolution, the DPS will detect Windows Boot Performance problems and indicate to the user that assisted resolution is available.
 
-If you disable this policy setting, Windows will not be able to detect, troubleshoot or resolve any Windows Boot Performance problems that are handled by the DPS.
+If you disable this policy setting, Windows won't be able to detect, troubleshoot or resolve any Windows Boot Performance problems that are handled by the DPS.
 
-If you do not configure this policy setting, the DPS will enable Windows Boot Performance for resolution by default.
+If you don't configure this policy setting, the DPS will enable Windows Boot Performance for resolution by default.
 
-This policy setting takes effect only if the diagnostics-wide scenario execution policy is not configured.
+This policy setting takes effect only if the diagnostics-wide scenario execution policy isn't configured.
 
 No system restart or service restart is required for this policy to take effect: changes take effect immediately.
 
-This policy setting will only take effect when the Diagnostic Policy Service is in the running state. When the service is stopped or disabled, diagnostic scenarios will not be executed.  The DPS can be configured with the Services snap-in to the Microsoft Management Console.
+This policy setting will only take effect when the Diagnostic Policy Service is in the running state. When the service is stopped or disabled, diagnostic scenarios won't be executed.  The DPS can be configured with the Services snap-in to the Microsoft Management Console.
 
 <!--/Description-->
 
@@ -127,15 +127,15 @@ Determines the execution level for Windows Standby/Resume Performance Diagnostic
 
 If you enable this policy setting, you must select an execution level from the dropdown menu. If you select problem detection and troubleshooting only, the Diagnostic Policy Service (DPS) will detect Windows Standby/Resume Performance problems and attempt to determine their root causes. These root causes will be logged to the event log when detected, but no corrective action will be taken. If you select detection, troubleshooting and resolution, the DPS will detect Windows Standby/Resume Performance problems and indicate to the user that assisted resolution is available.
 
-If you disable this policy setting, Windows will not be able to detect, troubleshoot or resolve any Windows Standby/Resume Performance problems that are handled by the DPS.
+If you disable this policy setting, Windows won't be able to detect, troubleshoot or resolve any Windows Standby/Resume Performance problems that are handled by the DPS.
 
-If you do not configure this policy setting, the DPS will enable Windows Standby/Resume Performance for resolution by default.
+If you don't configure this policy setting, the DPS will enable Windows Standby/Resume Performance for resolution by default.
 
-This policy setting takes effect only if the diagnostics-wide scenario execution policy is not configured.
+This policy setting takes effect only if the diagnostics-wide scenario execution policy isn't configured.
 
 No system restart or service restart is required for this policy to take effect: changes take effect immediately.
 
-This policy setting will only take effect when the Diagnostic Policy Service is in the running state. When the service is stopped or disabled, diagnostic scenarios will not be executed.  The DPS can be configured with the Services snap-in to the Microsoft Management Console.
+This policy setting will only take effect when the Diagnostic Policy Service is in the running state. When the service is stopped or disabled, diagnostic scenarios won't be executed.  The DPS can be configured with the Services snap-in to the Microsoft Management Console.
 
 <!--/Description-->
 
@@ -181,15 +181,15 @@ This policy setting determines the execution level for Windows Shutdown Performa
 
 If you enable this policy setting, you must select an execution level from the dropdown menu. If you select problem detection and troubleshooting only, the Diagnostic Policy Service (DPS) will detect Windows Shutdown Performance problems and attempt to determine their root causes. These root causes will be logged to the event log when detected, but no corrective action will be taken. If you select detection, troubleshooting and resolution, the DPS will detect Windows Shutdown Performance problems and indicate to the user that assisted resolution is available.
 
-If you disable this policy setting, Windows will not be able to detect, troubleshoot or resolve any Windows Shutdown Performance problems that are handled by the DPS.
+If you disable this policy setting, Windows won't be able to detect, troubleshoot or resolve any Windows Shutdown Performance problems that are handled by the DPS.
 
-If you do not configure this policy setting, the DPS will enable Windows Shutdown Performance for resolution by default.
+If you don't configure this policy setting, the DPS will enable Windows Shutdown Performance for resolution by default.
 
-This policy setting takes effect only if the diagnostics-wide scenario execution policy is not configured.
+This policy setting takes effect only if the diagnostics-wide scenario execution policy isn't configured.
 
 No system restart or service restart is required for this policy to take effect: changes take effect immediately.
 
-This policy setting will only take effect when the Diagnostic Policy Service is in the running state. When the service is stopped or disabled, diagnostic scenarios will not be executed.  The DPS can be configured with the Services snap-in to the Microsoft Management Console.
+This policy setting will only take effect when the Diagnostic Policy Service is in the running state. When the service is stopped or disabled, diagnostic scenarios won't be executed.  The DPS can be configured with the Services snap-in to the Microsoft Management Console.
 
 <!--/Description-->
 
@@ -235,15 +235,15 @@ Determines the execution level for Windows Standby/Resume Performance Diagnostic
 
 If you enable this policy setting, you must select an execution level from the dropdown menu. If you select problem detection and troubleshooting only, the Diagnostic Policy Service (DPS) will detect Windows Standby/Resume Performance problems and attempt to determine their root causes. These root causes will be logged to the event log when detected, but no corrective action will be taken. If you select detection, troubleshooting and resolution, the DPS will detect Windows Standby/Resume Performance problems and indicate to the user that assisted resolution is available.
 
-If you disable this policy setting, Windows will not be able to detect, troubleshoot or resolve any Windows Standby/Resume Performance problems that are handled by the DPS.
+If you disable this policy setting, Windows won't be able to detect, troubleshoot or resolve any Windows Standby/Resume Performance problems that are handled by the DPS.
 
-If you do not configure this policy setting, the DPS will enable Windows Standby/Resume Performance for resolution by default.
+If you don't configure this policy setting, the DPS will enable Windows Standby/Resume Performance for resolution by default.
 
-This policy setting takes effect only if the diagnostics-wide scenario execution policy is not configured.
+This policy setting takes effect only if the diagnostics-wide scenario execution policy isn't configured.
 
 No system restart or service restart is required for this policy to take effect: changes take effect immediately.
 
-This policy setting will only take effect when the Diagnostic Policy Service is in the running state. When the service is stopped or disabled, diagnostic scenarios will not be executed.  The DPS can be configured with the Services snap-in to the Microsoft Management Console.
+This policy setting will only take effect when the Diagnostic Policy Service is in the running state. When the service is stopped or disabled, diagnostic scenarios won't be executed.  The DPS can be configured with the Services snap-in to the Microsoft Management Console.
 
 <!--/Description-->
 
