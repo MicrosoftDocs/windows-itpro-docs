@@ -26,9 +26,6 @@ The table below shows the applicability of Windows:
 
 The EnterpriseAPN configuration service provider (CSP) is used by the enterprise to provision an APN for the Internet.
 
-> [!Note]
-> Starting in Windows 10, version 1703 the EnterpriseAPN CSP is supported in Windows 10/Windows 11 Home, Pro, Enterprise, and Education editions.
-
 The following shows the EnterpriseAPN configuration service provider in tree format.
 ```
 ./Vendor/MSFT

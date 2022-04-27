@@ -119,20 +119,20 @@ Added in Windows 10, version 1511. Required. Specifies the query for app invento
 Query parameters:
 
 - Output - Specifies the parameters for the information returned in AppInventoryResults operation. Multiple value must be separate by |. Valid values are:
-      - PackagesName - returns the *PackageFamilyName* and *PackageFullName* of the app. Default if nothing is specified.
-      - PackageDetails - returns all inventory attributes of the package. This includes all information from PackageNames parameter, but doesn't validate RequiresReinstall.
-      - RequiredReinstall - Validates the app status of the apps in the inventory query to determine if they require a reinstallation. This attribute may impact system performance depending on the number of apps installed. Requiring reinstall occurs when resource package updates or when the app is in a tampered state.
+   - PackagesName - returns the *PackageFamilyName* and *PackageFullName* of the app. Default if nothing is specified.
+   - PackageDetails - returns all inventory attributes of the package. This includes all information from PackageNames parameter, but doesn't validate RequiresReinstall.
+   - RequiredReinstall - Validates the app status of the apps in the inventory query to determine if they require a reinstallation. This attribute may impact system performance depending on the number of apps installed. Requiring reinstall occurs when resource package updates or when the app is in a tampered state. 
 - Source - specifies the app classification that aligns to the existing inventory nodes. You can use a specific filter or if no filter is specified then all sources will be returned. If no value is specified, all classifications are returned. Valid values are:
-      - AppStore - This classification is for apps that were acquired from Microsoft Store. These were apps directly installed from Microsoft Store or enterprise apps from Microsoft Store for Business.
-      - nonStore - This classification is for apps that weren't acquired from the Microsoft Store.
-      - System - Apps that are part of the OS. You can't uninstall these apps. This classification is read-only and can only be inventoried.
+   - AppStore - This classification is for apps that were acquired from Microsoft Store. These were apps directly installed from Microsoft Store or enterprise apps from Microsoft Store for Business.
+   - nonStore - This classification is for apps that weren't acquired from the Microsoft Store.
+   - System - Apps that are part of the OS. You can't uninstall these apps. This classification is read-only and can only be inventoried.
 - PackageTypeFilter - Specifies one or multiple types of packages you can use to query the user or device. Multiple values must be separated by |. Valid values are:
-      - Main - returns the main installed package.
-      - Bundle - returns installed bundle packages.
-      - Framework - returns installed framework packages.
-      - Resource - returns installed resources packages. Resources are either language, scale, or DirectX resources. They're parts of a bundle.
-      - XAP - returns XAP package types. This filter is only supported on Windows Mobile.
-      - All - returns all package types.
+   - Main - returns the main installed package.
+   - Bundle - returns installed bundle packages.
+   - Framework - returns installed framework packages.
+   - Resource - returns installed resources packages. Resources are either language, scale, or DirectX resources. They're parts of a bundle.
+   - XAP - returns XAP package types. This filter is only supported on Windows Mobile.
+   - All - returns all package types.
 If no value is specified, the combination of Main, Bundle, and Framework are returned.
 - PackageFamilyName - specifies the name of a particular package. If you specify this parameter, it returns the Package Family name if the package contains this value. If you don't specify this value, then all packages are returned.
 - Publisher - specifies the publisher of a particular package. If you specify this parameter, it returns the publisher if the value exists in the Publisher field. If you don't specify this value, then all publishers are returned.
@@ -159,10 +159,10 @@ Added in Windows 10, version 1703. Used to remove packages. Not supported for ./
 Parameters:
 
 - Package
-         - Name: Specifies the PackageFullName of the particular package to remove.
-         - RemoveForAllUsers:
-               - 0 (default) – Package will be unprovisioned so that new users don't receive the package. The package will remain installed for current users. This isn't currently supported.
-               - 1 – Package will be removed for all users only if it's a provisioned package.
+   - Name: Specifies the PackageFullName of the particular package to remove.
+   - RemoveForAllUsers:
+      - 0 (default) – Package will be unprovisioned so that new users don't receive the package. The package will remain installed for current users. This isn't currently supported.
+      - 1 – Package will be removed for all users only if it's a provisioned package.
 - User (optional): Specifies the SID of the particular user for whom to remove the package; only the package for the specified user can be removed.
 
 Supported operation is Execute.

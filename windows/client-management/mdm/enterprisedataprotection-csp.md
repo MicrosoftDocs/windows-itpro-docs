@@ -28,7 +28,6 @@ The EnterpriseDataProtection configuration service provider (CSP) is used to con
 
 > [!Note]
 > To make WIP functional, the AppLocker CSP and the network isolation-specific settings must also be configured. For more information, see [AppLocker CSP](applocker-csp.md) and NetworkIsolation policies in [Policy CSP](policy-configuration-service-provider.md).
-> This CSP was added in Windows 10, version 1607.
 
 While WIP has no hard dependency on VPN, for best results you should configure VPN profiles first before you configure the WIP policies. For VPN best practice recommendations, see [VPNv2 CSP](vpnv2-csp.md).
 
