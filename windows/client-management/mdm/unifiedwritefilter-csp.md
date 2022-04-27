@@ -28,7 +28,7 @@ The UnifiedWriteFilter (UWF) configuration service provider enables the IT admin
 
 > **Note**  The UnifiedWriteFilter CSP is only supported in Windows 10 Enterprise and Windows 10 Education.
 
-The following shows the UWF configuration service provider in tree format.
+The following example shows the UWF configuration service provider in tree format.
 ```
 ./Vendor/MSFT
 UnifiedWriteFilter
@@ -123,12 +123,12 @@ Setting the value
 
 To “move” swapfile to another volume, set the SwapfileSize property on that other volume's CSP note to non-zero.
 
-Currently SwapfileSize should not be relied for determining or controlling the overlay size, 
+Currently SwapfileSize shouldn't be relied for determining or controlling the overlay size, 
 
 <a href="" id="currentsession-maximumoverlaysize"></a>**CurrentSession/MaximumOverlaySize** or <a href="" id="nextsession-maximumoverlaysize"></a>**NextSession/MaximumOverlaySize**
 should be used for that purpose.
 
-:::image type="content" source="images/overlaysetting.png" alt-text="This is the overlay setting.":::
+:::image type="content" source="images/overlaysetting.png" alt-text="The overlay setting.":::
 
 > [!NOTE]
 > Only single swapfile is supported in current implementation and creating swapfile on specific volume will disable any other swapfile created on other volumes.
@@ -150,12 +150,12 @@ Required. Indicates the maximum cache size, in megabytes, of the overlay in the 
 The only supported operation is Get.
 
 <a href="" id="currentsession-persisitdomainsecretkey"></a>**CurrentSession/PersisitDomainSecretKey**  
-Required. Indicates if the domain secret registry key is in the registry exclusion list. If the registry key is not in the exclusion list, changes do not persist after a restart.
+Required. Indicates if the domain secret registry key is in the registry exclusion list. If the registry key isn't in the exclusion list, changes don't persist after a restart.
 
 The only supported operation is Get.
 
 <a href="" id="currentsession-persisttscal"></a>**CurrentSession/PersistTSCAL**  
-Required. Indicates if the Terminal Server Client Access License (TSCAL) registry key is in the UWF registry exclusion list. If the registry key is not in the exclusion list, changes do not persist after a restart.
+Required. Indicates if the Terminal Server Client Access License (TSCAL) registry key is in the UWF registry exclusion list. If the registry key isn't in the exclusion list, changes don't persist after a restart.
 
 The only supported operation is Get.
 
@@ -189,7 +189,7 @@ Required. Indicates the type of binding that the volume uses in the current sess
 The only supported operation is Get.
 
 <a href="" id="currentsession-volume-volume-driveletter"></a>**CurrentSession/Volume/*Volume*/DriveLetter**  
-Required. The drive letter of the volume. If the volume does not have a drive letter, this value is NULL.
+Required. The drive letter of the volume. If the volume doesn't have a drive letter, this value is NULL.
 
 The only supported operation is Get.
 
@@ -212,7 +212,7 @@ Required. This method deletes the specified file and commits the deletion to the
 Supported operations are Get and Execute.
 
 <a href="" id="currentsession-shutdownpending"></a>**CurrentSession/ShutdownPending**  
-Required. This value is True if the system is pending on shutdown. Otherwise, it is False.
+Required. This value is True if the system is pending on shutdown. Otherwise, it's False.
 
 The only supported operation is Get.
 
@@ -252,12 +252,12 @@ Required. Indicates the maximum cache size, in megabytes, of the overlay for the
 Supported operations are Get and Replace.
 
 <a href="" id="nextsession-persisitdomainsecretkey"></a>**NextSession/PersisitDomainSecretKey**  
-Required. Indicates if the domain secret registry key is in the registry exclusion list. If the registry key is not in the exclusion list, changes do not persist after a restart.
+Required. Indicates if the domain secret registry key is in the registry exclusion list. If the registry key isn't in the exclusion list, changes don't persist after a restart.
 
 Supported operations are Get and Replace.
 
 <a href="" id="nextsession-persisttscal"></a>**NextSession/PersistTSCAL**  
-Required. Indicates if the Terminal Server Client Access License (TSCAL) registry key is in the UWF registry exclusion list. If the registry key is not in the exclusion list, changes do not persist after a restart.
+Required. Indicates if the Terminal Server Client Access License (TSCAL) registry key is in the UWF registry exclusion list. If the registry key isn't in the exclusion list, changes don't persist after a restart.
 
 Supported operations are Get and Replace.
 
@@ -295,7 +295,7 @@ Required. Indicates the type of binding that the volume uses in the next session
 Supported operations are Get and Replace.
 
 <a href="" id="nextsession-volume-volume-driveletter"></a>**NextSession/Volume/*Volume*/DriveLetter**  
-The drive letter of the volume. If the volume does not have a drive letter, this value is NULL.
+The drive letter of the volume. If the volume doesn't have a drive letter, this value is NULL.
 
 The only supported operation is Get.
 
