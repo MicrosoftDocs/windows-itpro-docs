@@ -835,12 +835,8 @@ items:
               href: policy-csp-windowssandbox.md
             - name: WirelessDisplay
               href: policy-csp-wirelessdisplay.md
-        - name: PolicyManager CSP
-          href: policymanager-csp.md
         - name: Provisioning CSP
           href: provisioning-csp.md
-        - name: PROXY CSP
-          href: proxy-csp.md
         - name: PXLOGICAL CSP
           href: pxlogical-csp.md
         - name: Reboot CSP

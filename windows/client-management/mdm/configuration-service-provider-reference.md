@@ -641,18 +641,6 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[Proxy CSP](proxy-csp.md)
-
-<!--StartSKU-->
-
-|Home|Pro|Business|Enterprise|Education|
-|--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|
-
-<!--EndSKU-->
-<!--EndCSP-->
-
-<!--StartCSP-->
 [PXLogical CSP](pxlogical-csp.md)
 
 <!--StartSKU-->
@@ -696,18 +684,6 @@ Additional lists:
 |Home|Pro|Business|Enterprise|Education|
 |--- |--- |--- |--- |--- |
 |Yes|Yes|Yes|Yes|Yes|
-
-<!--EndSKU-->
-<!--EndCSP-->
-
-<!--StartCSP-->
-[PolicyManager CSP](policymanager-csp.md)
-
-<!--StartSKU-->
-
-|Home|Pro|Business|Enterprise|Education|
-|--- |--- |--- |--- |--- |
-|No|No|No|No|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
