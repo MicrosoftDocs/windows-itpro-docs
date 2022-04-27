@@ -545,18 +545,6 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[Messaging CSP](messaging-csp.md)
-
-<!--StartSKU-->
-
-|Home|Pro|Business|Enterprise|Education|
-|--- |--- |--- |--- |--- |
-|No|No|No|No|No|
-
-<!--EndSKU-->
-<!--EndCSP-->
-
-<!--StartCSP-->
 [MultiSIM CSP](multisim-csp.md)
 
 <!--StartSKU-->
