@@ -853,11 +853,6 @@ items:
           items: 
             - name: RemoteFind DDF file
               href: remotefind-ddf-file.md
-        - name: RemoteRing CSP
-          href: remotering-csp.md
-          items: 
-            - name: RemoteRing DDF file
-              href: remotering-ddf-file.md
         - name: RemoteWipe CSP
           href: remotewipe-csp.md
           items: 

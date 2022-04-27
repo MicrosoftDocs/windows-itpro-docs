@@ -748,9 +748,6 @@ Additional lists:
 <!--EndSKU-->
 <!--EndCSP-->
 
-<!--StartCSP-->
-[RemoteRing CSP](remotering-csp.md)
-
 <!--StartSKU-->
 
 |Home|Pro|Business|Enterprise|Education|
