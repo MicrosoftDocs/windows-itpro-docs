@@ -26,7 +26,8 @@ The table below shows the applicability of Windows:
 
 The APPLICATION configuration service provider that has an APPID of w7 is used for bootstrapping a device with an OMA DM account. Although this configuration service provider is used to set up an OMA DM account, it's managed over OMA Client Provisioning.
 
-> **Note**  This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_DEVICE\_MANAGEMENT\_ADMIN capabilities to be accessed from a network configuration application.
+> [!Note]
+> This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_DEVICE\_MANAGEMENT\_ADMIN capabilities to be accessed from a network configuration application.
 
 
 The following shows the configuration service provider in tree format as used by OMA Client Provisioning.
@@ -60,7 +61,8 @@ APPLICATION
 ---SSLCLIENTCERTSEARCHCRITERIA
 ```
 
-> **Note**   All parm names and characteristic types are case sensitive and must use all uppercase.
+> [!Note]
+> All parm names and characteristic types are case sensitive and must use all uppercase.
 Both APPSRV and CLIENT credentials must be provided in provisioning XML.
 
 
@@ -119,7 +121,8 @@ Required. The APPID parameter is used in the APPLICATION characteristic to diffe
 <a href="" id="backcompatretrydisabled"></a>**BACKCOMPATRETRYDISABLED**  
 Optional. The BACKCOMPATRETRYDISABLED parameter is used in the APPLICATION characteristic to specify whether to retry resending a package with an older protocol version (for example, 1.1) in the SyncHdr (not including the first time).
 
-> **Note**   This parameter doesn't contain a value. The existence of this parameter means backward compatibility retry is disabled. If the parameter is missing, it means backward compatibility retry is enabled.
+> [!Note]
+> This parameter doesn't contain a value. The existence of this parameter means backward compatibility retry is disabled. If the parameter is missing, it means backward compatibility retry is enabled.
 
  
 
@@ -188,9 +191,8 @@ The supported names are Subject and Stores; wildcard certificate search isn't su
 
 Stores specifies which certificate stores the DM client will search to find the SSL client certificate. The valid store value is My%5CUser. The store name isn't case sensitive.
 
-> [!Note]   
+> [!Note]
 > %EF%80%80 is the UTF8-encoded character U+F000.
-
 
 Subject specifies the certificate to search for. For example, to specify that you want a certificate with a particular Subject attribute (“CN=Tester,O=Microsoft”), use the following syntax:
 
