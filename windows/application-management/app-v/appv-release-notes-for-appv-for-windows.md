@@ -52,7 +52,7 @@ An error is generated during publishing refresh when synchronizing packages from
 **Workaround**: Upgrade the App-V 5.0 Management server to the App-V Management server for Windows 10 Clients.
 
 ## Custom configurations don't get applied for packages that will be published globally if they're set using the App-V Server
-If you assign a package to an AD group that contains machine accounts and apply a custom configuration to that group using the App-V Server, the custom configuration won't not be applied to those machines. The App-V Client will publish packages assigned to a machine account globally. However, it stores custom configuration files per user in each user’s profile. Globally published packages won't have access to this custom configuration.
+If you assign a package to an AD group that contains machine accounts and apply a custom configuration to that group using the App-V Server, the custom configuration won't be applied to those machines. The App-V Client will publish packages assigned to a machine account globally. However, it stores custom configuration files per user in each user’s profile. Globally published packages won't have access to this custom configuration.
 
 **Workaround**: Do one of the following:
 
@@ -64,7 +64,7 @@ If you assign a package to an AD group that contains machine accounts and apply 
 
 ## Server files not deleted after new App-V Server installation
 
-If you uninstall the App-V 5.0 SP1 Server and then install the App-V Server, the installation fails, the wrong version of the Management server is installed, and an error message is returned. The issue occurs because the Server files are not being deleted when you uninstall App-V 5.0 SP1, so the installation process does an upgrade instead of a new installation.
+If you uninstall the App-V 5.0 SP1 Server and then install the App-V Server, the installation fails, the wrong version of the Management server is installed, and an error message is returned. The issue occurs because the Server files aren't being deleted when you uninstall App-V 5.0 SP1, so the installation process does an upgrade instead of a new installation.
 
 **Workaround**: Delete this registry key before you start installing App-V:
 
@@ -72,19 +72,19 @@ Under HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVe
 
 ## File type associations added manually are not saved correctly
 
-File type associations added to an application package manually using the Shortcuts and FTAs tab at the end of the application upgrade wizard are not saved correctly. They will not be available to the App-V Client or to the Sequencer when updating the saved package again.
+File type associations added to an application package manually using the Shortcuts and FTAs tab at the end of the application upgrade wizard aren't saved correctly. They won't be available to the App-V Client or to the Sequencer when updating the saved package again.
 
 **Workaround**: To add a file type association, open the package for modification and run the update wizard. During the Installation step, add the new file type association through the operating system. The sequencer will detect the new association in the system registry and add it to the package’s virtual registry, where it will be available to the client.
 
 ## When streaming packages in Shared Content Store (SCS) mode to a client that is also managed with AppLocker, additional data is written to the local disk.
 
-To decrease the amount of data written to a client’s local disk, you can enable SCS mode on the App-V Client to stream the contents of a package on demand. However, if AppLocker manages an application within the package, some data might be written to the client’s local disk that would not otherwise be written.
+To decrease the amount of data written to a client’s local disk, you can enable SCS mode on the App-V Client to stream the contents of a package on demand. However, if AppLocker manages an application within the package, some data might be written to the client’s local disk that wouldn't otherwise be written.
 
 **Workaround**: None
 
 ## In the Management Console Add Package dialog box, the Browse button is not available when using Chrome or Firefox
 
-On the Packages page of the Management Console, if you click **Add or Upgrade** in the lower-right corner, the **Add Package** dialog box appears. If you are accessing the Management Console using Chrome or Firefox as your browser, you will not be able to browse to the location of the package.
+On the Packages page of the Management Console, if you click **Add or Upgrade** in the lower-right corner, the **Add Package** dialog box appears. If you're accessing the Management Console using Chrome or Firefox as your browser, you will not be able to browse to the location of the package.
 
 **Workaround**: Type or copy and paste the path to the package into the **Add Package** input field. If the Management Console has access to this path, you will be able to add the package. If the package is on a network share, you can browse to the location using File Explorer by doing these steps:
 
@@ -128,7 +128,7 @@ When you run Repair-AppvClientConnectionGroup, the following error is displayed,
     3.  If the package is currently published, run **Repair-AppvClientPackage** on that package.
 
 ## Icons not displayed properly in Sequencer
-Icons in the Shortcuts and File Type Associations tab are not displayed correctly when modifying a package in the App-V Sequencer. This problem occurs when the size of the icons are not 16x16 or 32x32.
+Icons in the Shortcuts and File Type Associations tab are not displayed correctly when modifying a package in the App-V Sequencer. This problem occurs when the sizes of the icons are not 16x16 or 32x32.
 
 **Workaround**: Only use icons that are 16x16 or 32x32.
 
