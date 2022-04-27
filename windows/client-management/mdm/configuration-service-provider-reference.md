@@ -439,18 +439,6 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[EnterpriseAppManagement CSP](enterpriseappmanagement-csp.md)
-
-<!--StartSKU-->
-
-|Home|Pro|Business|Enterprise|Education|
-|--- |--- |--- |--- |--- |
-|No|No|No|No|No|
-
-<!--EndSKU-->
-<!--EndCSP-->
-
-<!--StartCSP-->
 [EnterpriseAppVManagement CSP](enterpriseappvmanagement-csp.md)
 
 |Home|Pro|Business|Enterprise|Education|
