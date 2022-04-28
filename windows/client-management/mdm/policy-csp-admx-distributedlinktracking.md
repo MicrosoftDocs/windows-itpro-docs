@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_DistributedLinkTracking
-description: Policy CSP - ADMX_DistributedLinkTracking
+description: Learn about Policy CSP - ADMX_DistributedLinkTracking.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -61,8 +61,10 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy specifies that Distributed Link Tracking clients in this domain may use the Distributed Link Tracking (DLT) server, which runs on domain controllers.  
-The DLT client enables programs to track linked  files that are moved within an NTFS volume, to another NTFS volume on the same computer, or to an NTFS volume on  another computer.   
+This policy specifies that Distributed Link Tracking clients in this domain may use the Distributed Link Tracking (DLT) server, which runs on domain controllers. 
+
+The DLT client enables programs to track linked files that are moved within an NTFS volume, to another NTFS volume on the same computer, or to an NTFS volume on  another computer.
+
 The DLT client can more reliably track links when allowed to use the DLT server.  
 This policy should not be set unless the DLT server is running on all domain controllers in the domain.
 
@@ -85,3 +87,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

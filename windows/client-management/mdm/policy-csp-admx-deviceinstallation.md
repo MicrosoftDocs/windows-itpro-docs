@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_DeviceInstallation
-description: Policy CSP - ADMX_DeviceInstallation
+description: Learn about Policy CSP - ADMX_DeviceInstallation.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -86,7 +86,7 @@ This policy setting allows you to determine whether members of the Administrator
 
 If you enable this policy setting, members of the Administrators group can use the Add Hardware wizard or the Update Driver wizard to install and update the drivers for any device. If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
 
-If you disable or do not configure this policy setting, members of the Administrators group are subject to all policy settings that restrict device installation.
+If you disable or don't configure this policy setting, members of the Administrators group are subject to all policy settings that restrict device installation.
 
 <!--/Description-->
 
@@ -132,7 +132,7 @@ This policy setting allows you to display a custom message to users in a notific
 
 If you enable this policy setting, Windows displays the text you type in the Detail Text box when a policy setting prevents device installation.
 
-If you disable or do not configure this policy setting, Windows displays a default message when a policy setting prevents device installation.
+If you disable or don't configure this policy setting, Windows displays a default message when a policy setting prevents device installation.
 
 <!--/Description-->
 
@@ -178,7 +178,7 @@ This policy setting allows you to display a custom message title in a notificati
 
 If you enable this policy setting, Windows displays the text you type in the Main Text box as the title text of a notification when a policy setting prevents device installation.
 
-If you disable or do not configure this policy setting, Windows displays a default title in a notification when a policy setting prevents device installation.
+If you disable or don't configure this policy setting, Windows displays a default title in a notification when a policy setting prevents device installation.
 
 <!--/Description-->
 
@@ -224,7 +224,7 @@ This policy setting allows you to configure the number of seconds Windows waits 
 
 If you enable this policy setting, Windows waits for the number of seconds you specify before terminating the installation.
 
-If you disable or do not configure this policy setting, Windows waits 240 seconds for a device installation task to complete before terminating the installation.
+If you disable or don't configure this policy setting, Windows waits 240 seconds for a device installation task to complete before terminating the installation.
 
 <!--/Description-->
 
@@ -268,11 +268,12 @@ ADMX Info:
 <!--Description-->
 This policy setting establishes the amount of time (in seconds) that the system will wait to reboot in order to enforce a change in device installation restriction policies.
 
-If you enable this policy setting, set the amount of seconds you want the system to wait until a reboot.
+If you enable this policy setting, set the number of seconds you want the system to wait until a reboot.
 
-If you disable or do not configure this policy setting, the system does not force a reboot.
+If you disable or don't configure this policy setting, the system doesn't force a reboot.
 
-Note: If no reboot is forced, the device installation restriction right will not take effect until the system is restarted.
+>[!Note]
+> If no reboot is forced, the device installation restriction right won't take effect until the system is restarted.
 
 <!--/Description-->
 
@@ -314,11 +315,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to prevent Windows from installing removable devices. A device is considered removable when the driver for the device to which it is connected indicates that the device is removable. For example, a Universal Serial Bus (USB) device is reported to be removable by the drivers for the USB hub to which the device is connected. This policy setting takes precedence over any other policy setting that allows Windows to install a device.
+This policy setting allows you to prevent Windows from installing removable devices. A device is considered removable when the driver for the device to which it's connected indicates that the device is removable. For example, a Universal Serial Bus (USB) device is reported to be removable by the drivers for the USB hub to which the device is connected. This policy setting takes precedence over any other policy setting that allows Windows to install a device.
 
-If you enable this policy setting, Windows is prevented from installing removable devices and existing removable devices cannot have their drivers updated. If you enable this policy setting on a remote desktop server, the policy setting affects redirection of removable devices from a remote desktop client to the remote desktop server.
+If you enable this policy setting, Windows is prevented from installing removable devices and existing removable devices can't have their drivers updated. If you enable this policy setting on a remote desktop server, the policy setting affects redirection of removable devices from a remote desktop client to the remote desktop server.
 
-If you disable or do not configure this policy setting, Windows can install and update device drivers for removable devices as allowed or prevented by other policy settings.
+If you disable or don't configure this policy setting, Windows can install and update device drivers for removable devices as allowed or prevented by other policy settings.
 <!--/Description-->
 
 
@@ -361,9 +362,9 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to prevent Windows from creating a system restore point during device activity that would normally prompt Windows to create a system restore point. Windows normally creates restore points for certain driver activity, such as the installation of an unsigned driver. A system restore point enables you to more easily restore your system to its state before the activity. 
 
-If you enable this policy setting, Windows does not create a system restore point when one would normally be created.
+If you enable this policy setting, Windows doesn't create a system restore point when one would normally be created.
 
-If you disable or do not configure this policy setting, Windows creates a system restore point as it normally would.
+If you disable or don't configure this policy setting, Windows creates a system restore point as it normally would.
 
 <!--/Description-->
 
@@ -409,7 +410,7 @@ This policy setting specifies a list of device setup class GUIDs describing devi
 
 If you enable this policy setting, members of the Users group may install new drivers for the specified device setup classes. The drivers must be signed according to Windows Driver Signing Policy, or be signed by publishers already in the TrustedPublisher store.
 
-If you disable or do not configure this policy setting, only members of the Administrators group are allowed to install new device drivers on the system.
+If you disable or don't configure this policy setting, only members of the Administrators group are allowed to install new device drivers on the system.
 
 
 <!--/Description-->
@@ -427,3 +428,7 @@ ADMX Info:
 <hr/>
 
 <!--/Policies-->
+
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

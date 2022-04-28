@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_DFS
-description: Policy CSP - ADMX_DFS
+description: Learn about Policy CSP - ADMX_DFS.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -63,10 +63,9 @@ manager: dansimp
 This policy setting allows you to configure how often a Distributed File System (DFS) client attempts to discover domain controllers on a network. 
 By default, a DFS client attempts to discover domain controllers every 15 minutes.  
 
-- If you enable this policy setting, you can configure how often a DFS client attempts to discover domain controllers. 
-This value is specified in minutes.  
+If you enable this policy setting, you can configure how often a DFS client attempts to discover domain controllers. This value is specified in minutes.  
 
-- If you disable or do not configure this policy setting, the default value of 15 minutes applies.  
+If you disable or don't configure this policy setting, the default value of 15 minutes applies.  
 
 > [!NOTE]
 > The minimum value you can select is 15 minutes. If you try to set this setting to a value less than 15 minutes, the default value of 15 minutes is applied.
@@ -87,3 +86,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

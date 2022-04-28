@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_Desktop
-description: Policy CSP - ADMX_Desktop
+description: Learn about Policy CSP - ADMX_Desktop.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -145,13 +145,13 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Displays the filter bar above the results of an Active Directory search. The filter bar consists of buttons for applying additional filters to search results.
+Displays the filter bar above the results of an Active Directory search. The filter bar consists of buttons for applying more filters to search results.
 
 If you enable this setting, the filter bar appears when the Active Directory Find dialog box opens, but users can hide it.
 
-If you disable this setting or do not configure it, the filter bar does not appear, but users can display it by selecting "Filter" on the "View" menu.
+If you disable this setting or don't configure it, the filter bar doesn't appear, but users can display it by selecting "Filter" on the "View" menu.
 
-To see the filter bar, open Network Locations, click Entire Network, and then click Directory. Right-click the name of a Windows domain, and click Find. Type the name of an object in the directory, such as  "Administrator." If the filter bar does not appear above the resulting display, on the View menu, click Filter.
+To see the filter bar, open Network Locations, click Entire Network, and then click Directory. Right-click the name of a Windows domain, and click Find. Type the name of an object in the directory, such as  "Administrator." If the filter bar doesn't appear above the resulting display, on the View menu, click Filter.
 
 <!--/Description-->
 
@@ -197,9 +197,9 @@ Hides the Active Directory folder in Network Locations.
 
 The Active Directory folder displays Active Directory objects in a browse window.
 
-If you enable this setting, the Active Directory folder does not appear in the Network Locations folder.
+If you enable this setting, the Active Directory folder doesn't appear in the Network Locations folder.
 
-If you disable this setting or do not configure it, the Active Directory folder appears in the Network Locations folder.
+If you disable this setting or don't configure it, the Active Directory folder appears in the Network Locations folder.
 
 This setting is designed to let users search Active Directory but not tempt them to casually browse Active Directory.
 
@@ -247,7 +247,7 @@ Specifies the maximum number of objects the system displays in response to a com
 
 If you enable this setting, you can use the "Number of objects returned" box to limit returns from an Active Directory search.
 
-If you disable this setting or do not configure it, the system displays up to 10,000 objects. This consumes approximately 2 MB of memory or disk space.
+If you disable this setting or don't configure it, the system displays up to 10,000 objects. This consumes approximately 2 MB of memory or disk space.
 
 This setting is designed to protect the network and the domain controller from the effect of expansive searches.
 
@@ -295,7 +295,7 @@ Enables Active Desktop and prevents users from disabling it.
 
 This setting prevents users from trying to enable or disable Active Desktop while a policy controls it.
 
-If you disable this setting or do not configure it, Active Desktop is disabled by default, but users can enable it.
+If you disable this setting or don't configure it, Active Desktop is disabled by default, but users can enable it.
 
 > [!NOTE]
 > If both the "Enable Active Desktop" setting and the "Disable Active Desktop" setting are enabled, the "Disable Active Desktop" setting is ignored.  If the "Turn on Classic Shell" setting (in User Configuration\Administrative Templates\Windows Components\Windows Explorer) is enabled, Active Desktop is disabled, and both of these policies are ignored.
@@ -343,7 +343,7 @@ Disables Active Desktop and prevents users from enabling it.
 
 This setting prevents users from trying to enable or disable Active Desktop while a policy controls it.
 
-If you disable this setting or do not configure it, Active Desktop is disabled by default, but users can enable it.
+If you disable this setting or don't configure it, Active Desktop is disabled by default, but users can enable it.
 
 > [!NOTE]
 > If both the "Enable Active Desktop" setting and the "Disable Active Desktop" setting are enabled, the "Disable Active Desktop" setting is ignored. If the "Turn on Classic Shell" setting (in User Configuration\Administrative Templates\Windows Components\Windows Explorer) is enabled, Active Desktop is disabled, and both these policies are ignored.
@@ -390,7 +390,7 @@ ADMX Info:
 <!--Description-->
 Prevents the user from enabling or disabling Active Desktop or changing the Active Desktop configuration.
 
-This is a comprehensive setting that locks down the configuration you establish by using other policies in this folder. This setting removes the Web tab from Display in Control Panel. As a result, users cannot enable or disable Active Desktop. If Active Desktop is already enabled, users cannot add, remove, or edit Web content or disable, lock, or synchronize Active Desktop components.
+This is a comprehensive setting that locks down the configuration you establish by using other policies in this folder. This setting removes the Web tab from Display in Control Panel. As a result, users can't enable or disable Active Desktop. If Active Desktop is already enabled, users can't add, remove, or edit Web content or disable, lock, or synchronize Active Desktop components.
 
 <!--/Description-->
 
@@ -433,7 +433,7 @@ ADMX Info:
 <!--Description-->
 Removes icons, shortcuts, and other default and user-defined items from the desktop, including Briefcase, Recycle Bin, Computer, and Network Locations.
 
-Removing icons and shortcuts does not prevent the user from using another method to start the programs or opening the items they represent.
+Removing icons and shortcuts doesn't prevent the user from using another method to start the programs or opening the items they represent.
 
 Also, see "Items displayed in Places Bar" in User Configuration\Administrative Templates\Windows Components\Common Open File Dialog to remove the Desktop icon from the Places Bar. This will help prevent users from saving data to the Desktop.
 
@@ -479,9 +479,9 @@ ADMX Info:
 <!--Description-->
 Prevents users from using the Desktop Cleanup Wizard.
 
-If you enable this setting, the Desktop Cleanup wizard does not automatically run on a users workstation every 60 days. The user will also not be able to access the Desktop Cleanup Wizard.
+If you enable this setting, the Desktop Cleanup wizard doesn't automatically run on a users workstation every 60 days. The user will also not be able to access the Desktop Cleanup Wizard.
 
-If you disable this setting or do not configure it, the default behavior of the Desktop Clean Wizard running every 60 days occurs.
+If you disable this setting or don't configure it, the default behavior of the Desktop Clean Wizard running every 60 days occurs.
 
 > [!NOTE]
 > When this setting is not enabled, users can run the Desktop Cleanup Wizard, or have it run automatically every 60 days from Display, by clicking the Desktop tab and then clicking the Customize Desktop button.
@@ -528,7 +528,7 @@ ADMX Info:
 <!--Description-->
 Removes the Internet Explorer icon from the desktop and from the Quick Launch bar on the taskbar.
 
-This setting does not prevent the user from starting Internet Explorer by using other methods.
+This setting doesn't prevent the user from starting Internet Explorer by using other methods.
 
 <!--/Description-->
 
@@ -576,7 +576,7 @@ If you enable this setting, Computer is hidden on the desktop, the new Start men
 
 If you disable this setting, Computer is displayed as usual, appearing as normal on the desktop, Start menu, folder tree pane, and Web views, unless restricted by another setting.
 
-If you do not configure this setting, the default is to display Computer as usual.
+If you don't configure this setting, the default is to display Computer as usual.
 
 > [!NOTE]
 > In operating systems earlier than Microsoft Windows Vista, this policy applies to the My Computer icon. Hiding Computer and its contents does not hide the contents of the child folders of Computer. For example, if the users navigate into one of their hard drives, they see all of their folders and files there, even if this setting is enabled.
@@ -625,9 +625,9 @@ Removes most occurrences of the My Documents icon.
 
 This setting removes the My Documents icon from the desktop, from File Explorer, from programs that use the File Explorer windows, and from the standard Open dialog box.
 
-This setting does not prevent the user from using other methods to gain access to the contents of the My Documents folder.
+This setting doesn't prevent the user from using other methods to gain access to the contents of the My Documents folder.
 
-This setting does not remove the My Documents icon from the Start menu. To do so, use the "Remove My Documents icon from Start Menu" setting.
+This setting doesn't remove the My Documents icon from the Start menu. To do so, use the "Remove My Documents icon from Start Menu" setting.
 
 > [!NOTE]
 > To make changes to this setting effective, you must log off from and log back on to Windows 2000 Professional.
@@ -673,7 +673,7 @@ ADMX Info:
 <!--Description-->
 Removes the Network Locations icon from the desktop.
 
-This setting only affects the desktop icon. It does not prevent users from connecting to the network or browsing for shared computers on the network.
+This setting only affects the desktop icon. It doesn't prevent users from connecting to the network or browsing for shared computers on the network.
 
 > [!NOTE]
 > In operating systems earlier than Microsoft Windows Vista, this policy applies to the My Network Places icon.
@@ -720,9 +720,9 @@ ADMX Info:
 <!--Description-->
 This setting hides Properties on the context menu for Computer.
 
-If you enable this setting, the Properties option will not be present when the user right-clicks My Computer or clicks Computer and then goes to the File menu.  Likewise, Alt-Enter does nothing when Computer is selected.
+If you enable this setting, the Properties option won't be present when the user right-clicks My Computer or clicks Computer and then goes to the File menu.  Likewise, Alt-Enter does nothing when Computer is selected.
 
-If you disable or do not configure this setting, the Properties option is displayed as usual.
+If you disable or don't configure this setting, the Properties option is displayed as usual.
 
 <!--/Description-->
 
@@ -766,16 +766,15 @@ ADMX Info:
 <!--Description-->
 This policy setting hides the Properties menu command on the shortcut menu for the My Documents icon.
 
-If you enable this policy setting, the Properties menu command will not be displayed when the user does any of the following:
+If you enable this policy setting, the Properties menu command won't be displayed when the user does any of the following:
 
 - Right-clicks the My Documents icon.
 - Clicks the My Documents icon, and then opens the File menu.
 - Clicks the My Documents icon, and then presses ALT+ENTER.
 
-If you disable or do not configure this policy setting, the Properties menu command is displayed.
+If you disable or don't configure this policy setting, the Properties menu command is displayed.
 
 <!--/Description-->
-
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -814,11 +813,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Remote shared folders are not added to Network Locations whenever you open a document in the shared folder.
+Remote shared folders aren't added to Network Locations whenever you open a document in the shared folder.
 
-If you disable this setting or do not configure it, when you open a document in a remote shared folder, the system adds a connection to the shared folder to Network Locations.
+If you disable this setting or don't configure it, when you open a document in a remote shared folder, the system adds a connection to the shared folder to Network Locations.
 
-If you enable this setting, shared folders are not added to Network Locations automatically when you open a document in the shared folder.
+If you enable this setting, shared folders aren't added to Network Locations automatically when you open a document in the shared folder.
 
 <!--/Description-->
 
@@ -864,7 +863,7 @@ Removes most occurrences of the Recycle Bin icon.
 
 This setting removes the Recycle Bin icon from the desktop, from File Explorer, from programs that use the File Explorer windows, and from the standard Open dialog box.
 
-This setting does not prevent the user from using other methods to gain access to the contents of the Recycle Bin folder.
+This setting doesn't prevent the user from using other methods to gain access to the contents of the Recycle Bin folder.
 
 > [!NOTE]
 > To make changes to this setting effective, you must log off and then log back on.
@@ -910,9 +909,9 @@ ADMX Info:
 <!--Description-->
 Removes the Properties option from the Recycle Bin context menu.
 
-If you enable this setting, the Properties option will not be present when the user right-clicks on Recycle Bin or opens Recycle Bin and then clicks File. Likewise, Alt-Enter does nothing when Recycle Bin is selected.
+If you enable this setting, the Properties option won't be present when the user right-clicks on Recycle Bin or opens Recycle Bin and then clicks File. Likewise, Alt-Enter does nothing when Recycle Bin is selected.
 
-If you disable or do not configure this setting, the Properties option is displayed as usual.
+If you disable or don't configure this setting, the Properties option is displayed as usual.
 
 <!--/Description-->
 
@@ -956,7 +955,7 @@ ADMX Info:
 <!--Description-->
 Prevents users from saving certain changes to the desktop.
 
-If you enable this setting, users can change the desktop, but some changes, such as the position of open windows or the size and position of the taskbar, are not saved when users log off. However, shortcuts placed on the desktop are always saved.
+If you enable this setting, users can change the desktop, but some changes, such as the position of open windows or the size and position of the taskbar, aren't saved when users logoff. However, shortcuts placed on the desktop are always saved.
 
 <!--/Description-->
 
@@ -1000,9 +999,9 @@ ADMX Info:
 <!--Description-->
 Prevents windows from being minimized or restored when the active window is shaken back and forth with the mouse.
 
-If you enable this policy, application windows will not be minimized or restored when the active window is shaken back and forth with the mouse.
+If you enable this policy, application windows won't be minimized or restored when the active window is shaken back and forth with the mouse.
 
-If you disable or do not configure this policy, this window minimizing and restoring gesture will apply.
+If you disable or don't configure this policy, this window minimizing and restoring gesture will apply.
 
 <!--/Description-->
 
@@ -1047,9 +1046,9 @@ Specifies the desktop background ("wallpaper") displayed on all users' desktops.
 
 This setting lets you specify the wallpaper on users' desktops and prevents users from changing the image or its presentation. The wallpaper you specify can be stored in a bitmap (*.bmp) or JPEG (*.jpg) file.
 
-To use this setting, type the fully qualified path and name of the file that stores the wallpaper image. You can type a local path, such as C:\Windows\web\wallpaper\home.jpg or a UNC path, such as \\\Server\Share\Corp.jpg. If the specified file is not available when the user logs on, no wallpaper is displayed. Users cannot specify alternative wallpaper. You can also use this setting to specify that the wallpaper image be centered, tiled, or stretched. Users cannot change this specification.
+To use this setting, type the fully qualified path and name of the file that stores the wallpaper image. You can type a local path, such as C:\Windows\web\wallpaper\home.jpg or a UNC path, such as \\\Server\Share\Corp.jpg. If the specified file isn't available when the user logs on, no wallpaper is displayed. Users can't specify alternative wallpaper. You can also use this setting to specify that the wallpaper image be centered, tiled, or stretched. Users can't change this specification.
 
-If you disable this setting or do not configure it, no wallpaper is displayed. However, users can select the wallpaper of their choice.
+If you disable this setting or don't configure it, no wallpaper is displayed. However, users can select the wallpaper of their choice.
 
 Also, see the "Allow only bitmapped wallpaper" in the same location, and the "Prevent changing wallpaper" setting in User Configuration\Administrative Templates\Control Panel.
 
@@ -1097,7 +1096,7 @@ ADMX Info:
 <!--Description-->
 Prevents users from adding Web content to their Active Desktop.
 
-This setting removes the "New" button from Web tab in Display in Control Panel. As a result, users cannot add Web pages or pictures from the Internet or an intranet to the desktop. This setting does not remove existing Web content from their Active Desktop, or prevent users from removing existing Web content.
+This setting removes the "New" button from Web tab in Display in Control Panel. As a result, users can't add Web pages or pictures from the Internet or an intranet to the desktop. This setting doesn't remove existing Web content from their Active Desktop, or prevent users from removing existing Web content.
 
 Also, see the "Disable all items" setting.
 
@@ -1142,9 +1141,9 @@ ADMX Info:
 <!--Description-->
 Prevents users from removing Web content from their Active Desktop.
 
-In Active Desktop, you can add items to the desktop but close them so they are not displayed.
+In Active Desktop, you can add items to the desktop but close them so they aren't displayed.
 
-If you enable this setting, items added to the desktop cannot be closed; they always appear on the desktop. This setting removes the check boxes from items on the Web tab in Display in Control Panel.
+If you enable this setting, items added to the desktop can't be closed; they always appear on the desktop. This setting removes the check boxes from items on the Web tab in Display in Control Panel.
 
 > [!NOTE]
 > This setting does not prevent users from deleting items from their Active Desktop.
@@ -1193,7 +1192,7 @@ Prevents users from deleting Web content from their Active Desktop.
 
 This setting removes the Delete button from the Web tab in Display in Control Panel. As a result, users can temporarily remove, but not delete, Web content from their Active Desktop.
 
-This setting does not prevent users from adding Web content to their Active Desktop.
+This setting doesn't prevent users from adding Web content to their Active Desktop.
 
 Also, see the "Prohibit closing items" and "Disable all items" settings.
 
@@ -1239,7 +1238,7 @@ ADMX Info:
 <!--Description-->
 Prevents users from changing the properties of Web content items on their Active Desktop.
 
-This setting disables the Properties button on the Web tab in Display in Control Panel. Also, it removes the Properties item from the menu for each item on the Active Desktop. As a result, users cannot change the properties of an item, such as its synchronization schedule, password, or display characteristics.
+This setting disables the Properties button on the Web tab in Display in Control Panel. Also, it removes the Properties item from the menu for each item on the Active Desktop. As a result, users can't change the properties of an item, such as its synchronization schedule, password, or display characteristics.
 
 <!--/Description-->
 
@@ -1283,7 +1282,7 @@ ADMX Info:
 <!--Description-->
 Removes Active Desktop content and prevents users from adding Active Desktop content. 
 
-This setting removes all Active Desktop items from the desktop. It also removes the Web tab from Display in Control Panel. As a result, users cannot add Web pages or  pictures from the Internet or an intranet to the desktop.
+This setting removes all Active Desktop items from the desktop. It also removes the Web tab from Display in Control Panel. As a result, users can't add Web pages or  pictures from the Internet or an intranet to the desktop.
 
 > [!NOTE]
 > This setting does not disable Active Desktop. Users can  still use image formats, such as JPEG and GIF, for their desktop wallpaper.
@@ -1338,7 +1337,7 @@ You can also use this setting to delete particular Web-based items from users' d
 > Removing an item from the "Add" list for this setting is not the same as deleting it. Items that are removed from the "Add" list are not removed from the desktop. They are simply not added again.
 
 > [!NOTE]
-> For this setting to take affect, you must log off and log on to the system.
+> For this setting to take effect, you must log off and log on to the system.
 
 <!--/Description-->
 
@@ -1382,7 +1381,7 @@ ADMX Info:
 <!--Description-->
 Prevents users from manipulating desktop toolbars.
 
-If you enable this setting, users cannot add or remove toolbars from the desktop. Also, users cannot drag toolbars on to or off of docked toolbars.
+If you enable this setting, users can't add or remove toolbars from the desktop. Also, users can't drag toolbars on to or off of docked toolbars.
 
 > [!NOTE]
 > If users have added or removed toolbars, this setting prevents them from restoring the default configuration.
@@ -1432,9 +1431,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Prevents users from adjusting the length of desktop toolbars. Also, users cannot reposition items or toolbars on docked toolbars.
+Prevents users from adjusting the length of desktop toolbars. Also, users can't reposition items or toolbars on docked toolbars.
 
-This setting does not prevent users from adding or removing toolbars on the desktop.
+This setting doesn't prevent users from adding or removing toolbars on the desktop.
 
 > [!NOTE]
 > If users have adjusted their toolbars, this setting prevents them from restoring the default configuration.
@@ -1481,7 +1480,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Permits only bitmap images for wallpaper. This setting limits the desktop background ("wallpaper") to bitmap (.bmp) files. If users select files with other image formats, such as JPEG, GIF, PNG, or HTML, through the Browse button on the Desktop tab, the wallpaper does not load. Files that are autoconverted to a .bmp format, such as JPEG, GIF, and PNG, can be set as Wallpaper by right-clicking the image and selecting "Set as Wallpaper".
+Permits only bitmap images for wallpaper. This setting limits the desktop background ("wallpaper") to bitmap (.bmp) files. If users select files with other image formats, such as JPEG, GIF, PNG, or HTML, through the Browse button on the Desktop tab, the wallpaper doesn't load. Files that are auto-converted to a .bmp format, such as JPEG, GIF, and PNG, can be set as Wallpaper by right-clicking the image and selecting "Set as Wallpaper".
 
 Also, see the "Desktop Wallpaper" and the "Prevent changing wallpaper" (in User Configuration\Administrative Templates\Control Panel\Display) settings.
 
@@ -1501,3 +1500,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

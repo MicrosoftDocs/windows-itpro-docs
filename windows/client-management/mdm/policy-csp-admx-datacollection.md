@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_DataCollection
-description: Policy CSP - ADMX_DataCollection
+description: Learn about the Policy CSP - ADMX_DataCollection.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -63,7 +63,7 @@ manager: dansimp
 <!--Description-->
 This policy setting defines the identifier used to uniquely associate this device’s telemetry data as belonging to a given organization.
 
-If your organization is participating in a program that requires this device to be identified as belonging to your organization then use this setting to provide that identification. The value for this setting will be provided by Microsoft as part of the onboarding process for the program.
+If your organization is participating in a program that requires this device to be identified as belonging to your organization, then use this setting to provide that identification. The value for this setting will be provided by Microsoft as part of the onboarding process for the program.
 
 If you disable or do not configure this policy setting, then Microsoft will not be able to use this identifier to associate this machine and its telemetry data with your organization.
 
@@ -86,3 +86,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

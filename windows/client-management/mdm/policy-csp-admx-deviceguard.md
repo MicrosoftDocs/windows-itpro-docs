@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_DeviceGuard
-description: Policy CSP - ADMX_DeviceGuard
+description: Learn about Policy CSP - ADMX_DeviceGuard.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -70,9 +70,10 @@ The file path must be either a UNC path (for example, `\\ServerName\ShareName\SI
 or a locally valid path (for example, `C:\FolderName\SIPolicy.p7b)`. 
  
 The local machine account (LOCAL SYSTEM) must have access permission to the policy file.    
-If using a signed and protected policy then disabling this policy setting doesn't remove the feature from the computer. Instead, you must either:  
-1. First update the policy to a non-protected policy and then disable the setting.  
-2. Disable the setting and then remove the policy from each computer, with a physically present user.
+If using a signed and protected policy then disabling this policy setting doesn't remove the feature from the computer. Instead, you must either:
+
+- First update the policy to a non-protected policy and then disable the setting. (or)  
+- Disable the setting and then remove the policy from each computer, with a physically present user.
 
 <!--/Description-->
 
@@ -89,3 +90,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
