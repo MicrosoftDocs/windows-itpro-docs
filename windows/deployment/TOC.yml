@@ -198,9 +198,13 @@
               - name: Configure clients manually
                 href: update/update-compliance-configuration-manual.md
               - name: Configure clients with Microsoft Endpoint Manager
-                href: update/update-compliance-configuration-mem.md          
-            - name: Software updates in the Microsoft admin center (preview)
-              href: update/update-status-admin-center.md                               
+                href: update/update-compliance-configuration-mem.md 
+            - name: Use Update Compliance (preview)
+              items: 
+              - name: Use Update Compliance 
+                href: update/update-compliance-v2-use.md                         
+              - name: Software updates in the Microsoft admin center (preview)
+                href: update/update-status-admin-center.md                               
             - name: Schema reference (preview)
               items:
               - name: Update Compliance schema reference
