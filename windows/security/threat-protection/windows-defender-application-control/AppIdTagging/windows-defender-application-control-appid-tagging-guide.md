@@ -27,7 +27,7 @@ ms.technology: windows-sec
 - Windows Server 2022 and above
 
 > [!NOTE]
-> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
 After designing and deploying your Windows Defender Application Control (WDAC) policies, this guide covers understanding the effects your policies are having and troubleshooting when they are not behaving as expected. It contains information on where to find events and what they mean, and also querying these events with Microsoft Defender for Endpoint Advanced Hunting feature.
 
@@ -50,6 +50,6 @@ Server:
 
 | Topic | Description |
 | - | - |
-| [Designing and Creating AppId Policies](./design-create-appid-tagging-policies.md) | This topic covers how to design and create AppId Tagging policies. |
-| [Deploying AppId Policies](./deploy-appid-tagging-policies.md) | This topic covers how to deploy AppId Tagging policies. |
-| [Debugging AppId Policies](./debugging-operational-guide-appid-tagging-policies.md) | This topic covers how to debug and view events from AppId Tagging policies. |
+| [Designing and Creating AppId Policies](design-create-appid-tagging-policies.md) | This topic covers how to design and create AppId Tagging policies. |
+| [Deploying AppId Policies](deploy-appid-tagging-policies.md) | This topic covers how to deploy AppId Tagging policies. |
+| [Debugging AppId Policies](debugging-operational-guide-appid-tagging-policies.md) | This topic covers how to debug and view events from AppId Tagging policies. |

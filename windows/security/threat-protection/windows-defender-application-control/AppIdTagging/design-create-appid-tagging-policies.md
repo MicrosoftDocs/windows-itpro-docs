@@ -27,7 +27,7 @@ ms.technology: windows-sec
 -   Windows Server 2016 and above
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
 ## Create the policy using the WDAC Wizard
 
@@ -37,13 +37,11 @@ Using this method, you will use a hybrid of the WDAC Wizard and the WDAC PowerSh
 
 	Start with the Policy Creator task and select Multiple Policy Format and Base Policy. Select the Base Template to use for the policy. Our recommendation is to start with [Default Windows Mode](../wdac-wizard-create-base-policy#template-base-policies) and build ontop of these rules. 
 
-	![Configuring the policy base and template.](images/appid-wdac-wizard-1.png)
+	![Configuring the policy base and template.](../images/appid-wdac-wizard-1.png)
 
-2. Set the rule-options on the policy: 
+2. 	Set the following rule-options using the Wizard toggles:
 
-	Set the following rule-options using the Wizard toggles:
-
-	![Configuring the policy rule-options.](images/appid-wdac-wizard-2.png)
+	![Configuring the policy rule-options.](../images/appid-wdac-wizard-2.png)
 
 3. Create custom rules:
 
@@ -56,7 +54,7 @@ Using this method, you will use a hybrid of the WDAC Wizard and the WDAC PowerSh
 	- Hash rules: Create a rule based off the PE Authenticode hash of a file. 
 
 
-	For more information on creating new policy file rules, see the guidelines provided in the [creating policy file rules section](wdac-wizard-create-base-policy.md#creating-custom-file-rules).
+	For more information on creating new policy file rules, see the guidelines provided in the [creating policy file rules section](../wdac-wizard-create-base-policy#Creating-custom-file-rules).
 
 4. Convert to AppId Tagging Policy:
 
@@ -120,7 +118,7 @@ Using this method, you will create an AppId Tagging policy directly using the WD
 6. Optionally, deploy it for local testing:
 
 	```powershell
-		copy ".\{Policy ID}.cip" c:\windows\system32\codeintegrity\CiPolicies\Active\
-		./RefreshPolicy.exe
+	copy ".\{Policy ID}.cip" c:\windows\system32\codeintegrity\CiPolicies\Active\
+	./RefreshPolicy.exe
 	```
 	RefreshPolicy.exe is available for download from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=102925).

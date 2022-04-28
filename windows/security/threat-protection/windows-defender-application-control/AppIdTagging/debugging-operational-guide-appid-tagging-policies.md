@@ -27,9 +27,9 @@ ms.technology: windows-sec
 -   Windows Server 2016 and above
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
-After deployment of the WDAC AppId Tagging policy, WDAC will fire a 3099 policy deployed event in the [Event Viewer logs](event-id-explanations.md). You first should ensure that the policy has been successfully deployed onto the system by verifying the presence of the 3099 event. 
+After deployment of the WDAC AppId Tagging policy, WDAC will fire a 3099 policy deployed event in the [Event Viewer logs](../event-id-explanations.md). You first should ensure that the policy has been successfully deployed onto the system by verifying the presence of the 3099 event. 
 
 ## Verifying Tags on Running Processes
 
@@ -43,14 +43,14 @@ After verifying the policy has been deployed, the next step is to verify that th
 
 	Using Task Manager, or an equivalent process monitoring tool, locate the PID of the process you wish to inspect. In the example below, I have located the PID for the running process for Microsoft Edge to be 2260. The PID will be used in the next step. 
 
-	![Using Task Manager to locate the process ID - PID.](images/appid-pid-task-mgr.png)
+	![Using Task Manager to locate the process ID - PID.](../images/appid-pid-task-mgr.png)
 
 3. Use WinDbg to inspect the process
 
 	After opening WinDbg select File followed by "Attach to Process" and select the process with the PID identified in the step prior. Finally, select **Attach** to connect to the process. 
 
-	![Attach to the process using WinDbg.](images/appid-pid-windbg.png)
+	![Attach to the process using WinDbg.](../images/appid-pid-windbg.png)
 
 	Lastly, in the textbox, type _!token_ and hit enter to dump the security attributes on the process, including the _POLICYAPPID://_ followed by the key you set in the policy, as well as its corresponding value in the Value[0] field.
 
-	![Dump the security attributes on the process using WinDbg.](images/appid-pid-windbg-token.png)
+	![Dump the security attributes on the process using WinDbg.](../images/appid-pid-windbg-token.png)

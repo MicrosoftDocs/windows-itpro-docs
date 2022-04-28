@@ -115,10 +115,14 @@
         - name: Managed installer and ISG technical reference and troubleshooting guide
           href: configure-wdac-managed-installer.md
     - name: WDAC AppId Tagging guide
-      href: windows-defender-application-control-appid-tagging-guide.md
+      href: AppIdTagging/windows-defender-application-control-appid-tagging-guide.md
       items:
-        - name: Understanding Application Control event tags
-          href: event-tag-explanations.md
+        - name: Creating AppId Tagging Policies
+          href: AppIdTagging/design-create-appid-tagging-policies.md
+        - name: Deploying AppId Tagging Policies
+          href: AppIdTagging/deploy-appid-tagging-policies.md
+        - name: Testing and Debugging AppId Tagging Policies
+          href: AppIdTagging/debugging-operational-guide-appid-tagging-policies.md
     - name: AppLocker
       href: applocker\applocker-overview.md
       items: 
