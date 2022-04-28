@@ -1,6 +1,6 @@
 ---
 title: Designing, creating, managing and troubleshooting Windows Defender Application Control AppId Tagging policies (Windows)
-description: How to design, create manage and troubleshoot your WDAC AppId Tagging policies
+description: How to design, create, manage and troubleshoot your WDAC AppId Tagging policies
 keywords: security, malware, firewall
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: m365-security
@@ -18,7 +18,7 @@ ms.date: 04/27/2022
 ms.technology: windows-sec
 ---
 
-# WDAC Application Id (AppId) Tagging guide
+# WDAC Application ID (AppId) Tagging guide
 
 **Applies to**
 
@@ -29,11 +29,9 @@ ms.technology: windows-sec
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
-After designing and deploying your Windows Defender Application Control (WDAC) policies, this guide covers understanding the effects your policies are having and troubleshooting when they are not behaving as expected. It contains information on where to find events and what they mean, and also querying these events with Microsoft Defender for Endpoint Advanced Hunting feature.
-
 ## AppId Tagging Feature Overview
 
-The Application ID (AppId) Tagging Policy feature, while based off WDAC, is not application control. AppId Tagging policies can be used to tag the processes of the running application with a tag defined in the policy. Application processes which pass the AppId policy will receive the tag while failing applications will not. 
+The Application ID (AppId) Tagging Policy feature, while based off WDAC, is not application control. AppId Tagging policies can be used to tag the processes of the running application with a tag defined in the policy. Application processes that pass the AppId policy will receive the tag while failing applications won't. 
 
 ## AppId Tagging Feature Availability
 

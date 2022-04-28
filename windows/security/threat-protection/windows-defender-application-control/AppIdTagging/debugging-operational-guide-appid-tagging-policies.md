@@ -33,7 +33,7 @@ After deployment of the WDAC AppId Tagging policy, WDAC will fire a 3099 policy 
 
 ## Verifying Tags on Running Processes
 
-After verifying the policy has been deployed, the next step is to verify that the application processes you expect to pass the AppId Tagging policy have the tag set by the policy, and processes which should not have the tag do not. Note, processes running at the time of policy deployment will need to be restarted since WDAC can only tag processes created after the policy has been deployed. 
+After verifying the policy has been deployed, the next step is to verify that the application processes you expect to pass the AppId Tagging policy have your tag set. Please note that processes running at the time of policy deployment will need to be restarted since WDAC can only tag processes created after the policy has been deployed. 
 
 1. Download and Install the Windows Debugger 
 
@@ -47,10 +47,10 @@ After verifying the policy has been deployed, the next step is to verify that th
 
 3. Use WinDbg to inspect the process
 
-	After opening WinDbg select File followed by "Attach to Process" and select the process with the PID identified in the step prior. Finally, select **Attach** to connect to the process. 
+	After opening WinDbg. select File followed by `Attach to Process`, and select the process with the PID identified in the step prior. Finally, select `Attach` to connect to the process. 
 
 	![Attach to the process using WinDbg.](../images/appid-pid-windbg.png)
 
-	Lastly, in the textbox, type _!token_ and hit enter to dump the security attributes on the process, including the _POLICYAPPID://_ followed by the key you set in the policy, as well as its corresponding value in the Value[0] field.
+	Lastly, in the textbox, type _!token_ and hit enter to dump the security attributes on the process, including the _POLICYAPPID://_ followed by the key you set in the policy, and its corresponding value in the Value[0] field.
 
 	![Dump the security attributes on the process using WinDbg.](../images/appid-pid-windbg-token.png)

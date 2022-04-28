@@ -46,9 +46,9 @@
             - name: Policy creation for common WDAC usage scenarios
               href: types-of-devices.md
               items: 
-                - name: Create a WDAC policy for lightly-managed devices
+                - name: Create a WDAC policy for lightly managed devices
                   href: create-wdac-policy-for-lightly-managed-devices.md
-                - name: Create a WDAC policy for fully-managed devices
+                - name: Create a WDAC policy for fully managed devices
                   href: create-wdac-policy-for-fully-managed-devices.md
                 - name: Create a WDAC policy for fixed-workload devices
                   href: create-initial-default-policy.md
