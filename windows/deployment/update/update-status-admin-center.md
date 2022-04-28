@@ -49,7 +49,7 @@ Update Compliance is a Windows service hosted in Azure that uses Windows diagnos
 When you first select the **Windows** tab, you'll be asked to **Configure Settings**. This tab is populated by data from [Update Compliance](update-compliance-v2-overview.md). Supply the following information about your Update Compliance settings:
 
 - The 
-ONE tenant to ONE workspace 
+
 ## The Windows tab 
 
 The **Windows** tab in the **Software updates** page in the Microsoft admin center is populated by data from [Update Compliance](update-compliance-v2-overview.md). The tab contains a high-level overview of update compliance for Windows clients in your environment. The tab displays two charts **Windows update status** and **End of service**. 
@@ -67,3 +67,6 @@ A device is considered **Up to date** in this chart if it has installed security
 
 The **End of service** chart list the number of devices running an operating system version that's near or past the product lifecycle. 
 
+## Next steps
+
+Use [Update Compliance](update-compliance-v2-overview.md) to display additional data about the status of Windows updates.

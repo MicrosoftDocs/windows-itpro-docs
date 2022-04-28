@@ -29,7 +29,13 @@ Update Compliance is a cloud-based solution that provides information about the 
 
 ## Technical preview information for Update Compliance
 
-The new version of Update Compliance is in technical preview. Currently, the technical preview contains the following features:
+The new version of Update Compliance is in technical preview. Some of the benefits of this new version include:
+
+- Integration with [Windows Update for Business deployment service](deployment-service-overview) to enable per deployment reporting, monitoring, and troubleshooting.
+- Compatibility with [Feature updates](/mem/intune/protect/windows-10-feature-updates) and [Expedite Windows quality updates](/mem/intune/protect/windows-10-expedite-updates) policies in Intune.
+- A new **Alerts** data type to assist you with identifying devices that encounter issues during the update process. Error code information is provided to help troubleshoot update issues.
+
+Currently, the technical preview contains the following features:
 
 - Access to the following new Update Compliance tables:
     - UCClient

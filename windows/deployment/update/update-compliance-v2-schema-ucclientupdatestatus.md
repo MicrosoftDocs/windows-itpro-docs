@@ -11,6 +11,7 @@ author: mestew
 ms.author: mstewart
 ms.collection: M365-analytics
 ms.topic: reference
+date: 05/07/2022
 ---
 
 # UCClientUpdateStatus
@@ -40,11 +41,13 @@ Update Event that combines the latest client-based data with the latest service-
 | **OfferReceivedTime** |  [datetime](/azure/kusto/query/scalar-data-types/datetime)  | `2020-05-14 09:26:03.478039` | DateTime when device last reported entering OfferReceived, else empty. |
 | **RestartRequiredTime** |  [datetime](/azure/kusto/query/scalar-data-types/datetime)  | `2020-05-14 09:26:03.478039` | DateTime when device first reported entering RebootRequired (or RebootPending), else empty.  |
 | **SCCMClientId** |  [string](/azure/kusto/query/scalar-data-types/string) | `5AB72FAC-93AB-4954-9AB0-6557D0EFA245` | A string corresponding to the Configuration Manager Client ID on the device. |
+| **SourceSystem**| [string](/azure/kusto/query/scalar-data-types/string) | ??? /Azure/| 
 | **TargetBuild** |  [string](/azure/kusto/query/scalar-data-types/string) | `10.0.18363.836` | The full build of the content this DeviceUpdateEvent is tracking. For Windows 10 updates, this would correspond to the full build (10.0.14393.385). |
 | **TargetBuildNumber** |  [int](/azure/kusto/query/scalar-data-types/int)  | `18363` | Integer of the Major portion of Build. |
 | **TargetKBNumber** |  [int](/azure/kusto/query/scalar-data-types/int)  | `4524570` | KB Article. |
 | **TargetRevisionNumber** |  [int](/azure/kusto/query/scalar-data-types/int)  | `836` | Integer or the Minor (or Revision) portion of Build. |
 | **TargetVersion** |  [int](/azure/kusto/query/scalar-data-types/int)  | `1909` | The target OS Version such as 1909. |
+| **TenantID** | [string](/azure/kusto/query/scalar-data-types/string) | ??? //!AzureTenantID"
 | **TimeGenerated** |  [datetime](/azure/kusto/query/scalar-data-types/datetime)  | `2020-05-14 09:26:03.478039` | The time the snapshot generated this specific record. This is to determine to which batch snapshot this record belongs. |
 | **Type** |  [string](/azure/kusto/query/scalar-data-types/string) | `DeviceUpdateEvent` | The EntityType |
 | **UpdateCategory** |  [string](/azure/kusto/query/scalar-data-types/string) | `WindowsFeatureUpdate` | The type of content this DeviceUpdateEvent is tracking. |

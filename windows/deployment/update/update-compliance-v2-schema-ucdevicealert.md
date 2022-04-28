@@ -11,6 +11,7 @@ author: mestew
 ms.author: mstewart
 ms.collection: M365-analytics
 ms.topic: reference
+date: 05/07/2022
 ---
 
 # UCDeviceAlert
