@@ -13,7 +13,7 @@ ms.collection:
   - M365-analytics
   - highpri
 ms.topic: article
-ms.date: 04/10/2022
+ms.date: 05/07/2022
 ---
 
 # Microsoft admin center software updates (preview) page
@@ -23,7 +23,7 @@ ms.date: 04/10/2022
 > [!Important]
 > This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
 
-The **Software updates** page in the [Microsoft 365 admin center](https://admin.microsoft.com) displays a high-level overview of the installation status for Microsoft 365 Apps and Windows updates in your environment. Security updates are typically released on the second Tuesday of each month and they help protect you from known vulnerabilities. The **Software updates** page allows you to easily determine the overall update compliance for your devices.
+The **Software updates** page in the [Microsoft 365 admin center](https://admin.microsoft.com) displays a high-level overview of the installation status for Microsoft 365 Apps and Windows updates in your environment. [Quality updates](quality-updates.md) which contains security fixes are typically released on the second Tuesday of each month. Ensuring these updates are installed is important because they help protect you from known vulnerabilities. The **Software updates** page allows you to easily determine the overall update compliance for your devices.
 
 The **Software updates** page has following tabs to assist you in monitoring update status for your devices:
 
@@ -31,11 +31,11 @@ The **Software updates** page has following tabs to assist you in monitoring upd
    - For more information about the **Microsoft 365 Apps** tab, see [Microsoft 365 Apps updates in the admin center](/microsoft-365/admin/admin-overview/admin-center-overview).
 - **Windows**: Displays compliance charts for cumulative updates and feature updates for Windows clients. This article contains information about the **Windows** tab.
 
-:::image type="content" source="media/37063317-admin-center-software-updates.png" alt-text="Screenshot of the Microsoft 365 admin center displaying the software updates page with the Windows tab selected."  lightbox="media/37063317-admin-center-software-updates.png":::
+:::image type="content" source="media/37063317-admin-center-software-updates.png" alt-text="Screenshot of the Microsoft 365 admin center displaying the software updates page with the Windows tab selected." lightbox="media/37063317-admin-center-software-updates.png":::
 
 ## Prerequisites
 
-- The [Update Compliance](update-compliance-v2-overview.md) solution needs to be enabled with clients configured to send data to it
+- [Update Compliance](update-compliance-v2-overview.md) needs to be enabled with clients sending data to the solution
 - An appropriate role assigned for the [Microsoft 365 admin center](https://admin.microsoft.com) **???**
    - To configure settings for the **Software Updates** page: [Windows Update Deployment Administrator role](/azure/active-directory/roles/permissions-reference#windows-update-deployment-administrator)
    - To view the **Software Updates** page: [Global Reader role](/microsoft-365/admin/add-users/about-admin-roles)
@@ -46,16 +46,19 @@ Update Compliance is a Windows service hosted in Azure that uses Windows diagnos
 
 ## Get started
 
-When you first select the **Windows** tab, you'll be asked to **Configure Settings**. This tab is populated by data from [Update Compliance](update-compliance-v2-overview.md). Supply the following information about your Update Compliance settings:
+When you first select the **Windows** tab, you'll be asked to **Configure Settings**. This tab is populated by data from [Update Compliance](update-compliance-v2-overview.md). Verify or supply the following information about the settings for Update Compliance:
 
-- The 
+- The Azure subscription
+- The Log Analytics workspace
 
-## The Windows tab 
-
-The **Windows** tab in the **Software updates** page in the Microsoft admin center is populated by data from [Update Compliance](update-compliance-v2-overview.md). The tab contains a high-level overview of update compliance for Windows clients in your environment. The tab displays two charts **Windows update status** and **End of service**. 
+The initial setup can take up to 24 hours. During this time, the **Windows** tab will display that it's **Waiting for Update Compliance data**.
 
 
-### Windows update status chart 
+## The Windows tab
+
+The **Windows** tab in the **Software updates** page in the Microsoft admin center is populated by data from [Update Compliance](update-compliance-v2-overview.md). The tab contains a high-level overview of update compliance for Windows clients in your environment. The tab displays two charts **Windows update status** and **End of service**.
+
+### Windows update status chart
 
 The **Windows update status** chart gives you a visual representation of how many devices are in the following states for the monthly cumulative updates:
 
@@ -63,9 +66,15 @@ The **Windows update status** chart gives you a visual representation of how man
 - Missing security updates
 - Unsupported operating system
 
-A device is considered **Up to date** in this chart if it has installed security updates released within the past two months. Devices that are more two months behind on installation are in the **Missing security updates** classification. An **Unsupported operating system** is either no longer supported by the [Microsoft Product Lifecycle](/lifecycle/products/).
+A device is considered **Up to date** in this chart if it has installed [security updates](quality-updates.md) released within the past two months. Devices that are more two months behind on installation are in the **Missing security updates** classification. An **Unsupported operating system** is no longer supported by the [Microsoft Product Lifecycle](/lifecycle/products/).
 
-The **End of service** chart list the number of devices running an operating system version that's near or past the product lifecycle. 
+:::image type="content" source="media/37063317-windows-update-status-chart.png" alt-text="Screenshot of the Windows update status chart that is displayed in the Microsoft 365 admin center." lightbox="media/37063317-windows-update-status-chart.png":::
+
+### End of service chart
+
+The **End of service** chart list the number of devices running an operating system version that's near or past the [Microsoft Product Lifecycle](/lifecycle/products/). The **End of service** chart lists all operating system versions that aren't the latest version and counts the number of devices for each version. This chart can help you determine how many of your devices need to install the latest operating system [feature update](waas-quick-start#definitions). If you are currently deploying feature updates to these devices, the chart can also give you insight into how the deployment is progressing.
+
+:::image type="content" source="media/37063317-end-of-service-chart.png" alt-text="Screenshot of the Windows update status chart that is displayed in the Microsoft 365 admin center." lightbox="media/37063317-end-of-service-chart.png":::
 
 ## Next steps
 
