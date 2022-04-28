@@ -46,13 +46,15 @@ Update Compliance is a Windows service hosted in Azure that uses Windows diagnos
 
 ## Get started
 
-When you first select the **Windows** tab, you'll be asked to **Configure Settings**. This tab is populated by data from [Update Compliance](update-compliance-v2-overview.md). Verify or supply the following information about the settings for Update Compliance:
+1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/) and sign in. 
+1. Expand **Health**, then select **Software Updates**.
+1. In the **Software Updates** page, select the **Windows** tab.
+1. When you select the **Windows** tab for the first time, you'll be asked to **Configure Settings**. This tab is populated by data from [Update Compliance](update-compliance-v2-overview.md). Verify or supply the following information about the settings for Update Compliance:
 
-- The Azure subscription
-- The Log Analytics workspace
-
-The initial setup can take up to 24 hours. During this time, the **Windows** tab will display that it's **Waiting for Update Compliance data**.
-
+    - The Azure subscription
+    - The Log Analytics workspace
+1. The initial setup can take up to 24 hours. During this time, the **Windows** tab will display that it's **Waiting for Update Compliance data**.
+1. After the initial setup is complete, the **Windows** tab will display your Update Compliance data in the charts.
 
 ## The Windows tab
 
@@ -72,9 +74,9 @@ A device is considered **Up to date** in this chart if it has installed [securit
 
 ### End of service chart
 
-The **End of service** chart list the number of devices running an operating system version that's near or past the [Microsoft Product Lifecycle](/lifecycle/products/). The **End of service** chart lists all operating system versions that aren't the latest version and counts the number of devices for each version. This chart can help you determine how many of your devices need to install the latest operating system [feature update](waas-quick-start#definitions). If you're currently deploying feature updates to these devices, the chart can also give you insight into how the deployment is progressing.
+The **End of service** chart list the number of devices running an operating system version that's near or past the [Microsoft Product Lifecycle](/lifecycle/products/). The **End of service** chart lists all operating system versions that aren't the latest version and counts the number of devices for each version. This chart can help you determine how many of your devices need to install the latest operating system [feature update](waas-quick-start.md#definitions). If you're currently deploying feature updates to these devices, the chart can also give you insight into how the deployment is progressing.
 
-:::image type="content" source="media/37063317-end-of-service-chart.png" alt-text="Screenshot of the Windows update status chart that is displayed in the Microsoft 365 admin center." lightbox="media/37063317-end-of-service-chart.png":::
+:::image type="content" source="media/37063317-end-of-service-chart.png" alt-text="Screenshot of the end of service chart that is displayed in the Microsoft 365 admin center." lightbox="media/37063317-end-of-service-chart.png":::
 
 ## Next steps
 
