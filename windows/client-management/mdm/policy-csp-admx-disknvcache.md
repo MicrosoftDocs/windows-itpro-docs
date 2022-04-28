@@ -71,11 +71,9 @@ This policy setting turns off the boot and resumes optimizations for the hybrid 
 
 If you enable this policy setting, the system doesn't use the non-volatile (NV) cache to optimize boot and resume.  
 
-If you disable this policy setting, the system uses the NV cache to achieve faster boot and resume.
-
 The system determines the data that will be stored in the NV cache to optimize boot and resume. 
 
-The required data is stored in the NV cache during shutdown and hibernate, respectively. This might cause a slight increase in the time taken for shutdown and hibernate.  If you don't configure this policy setting, the default behavior is observed and the NV cache is used for boot and resume optimizations. 
+The required data is stored in the NV cache during shutdown and hibernate, respectively. This storage in such a location might cause a slight increase in the time taken for shutdown and hibernate.  If you don't configure this policy setting, the default behavior is observed and the NV cache is used for boot and resume optimizations. 
 
 This policy setting is applicable only if the NV cache feature is on.
 
@@ -124,8 +122,7 @@ If you enable this policy setting, the system won't manage the NV cache and won'
 
 If you disable this policy setting, the system will manage the NV cache on the disks if the other policy settings for the NV cache are appropriately configured. 
 
-This policy setting will take effect on next boot. If you don't configure this policy setting, the default behavior is to turn on support for the NV cache.
-
+This policy setting will take effect on next boot.  If you don't configure this policy setting, the default behavior is to turn on support for the NV cache.
 
 <!--/Description-->
 
@@ -170,7 +167,7 @@ This policy setting turns off the solid state mode for the hybrid hard disks.
 
 If you enable this policy setting, frequently written files such as the file system metadata and registry may not be stored in the NV cache.  
 
-If you disable this policy setting, the system will store frequently written data into the non-volatile (NV) cache. This allows the system to exclusively run out of the NV cache and power down the disk for longer periods to save power. 
+If you disable this policy setting, the system will store frequently written data into the non-volatile (NV) cache. This storage allows the system to exclusively run out of the NV cache and power down the disk for longer periods to save power.
 
 This can cause increased wear of the NV cache.  If you don't configure this policy setting, the default behavior of the system is observed and frequently written files will be stored in the NV cache.  
 

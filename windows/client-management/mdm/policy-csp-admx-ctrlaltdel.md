@@ -72,7 +72,7 @@ manager: dansimp
 <!--Description-->
 This policy setting prevents users from changing their Windows password on demand.
 
-If you enable this policy setting, the 'Change Password' button on the Windows Security dialog box will not appear when you press Ctrl+Alt+Del.
+If you enable this policy setting, the **Change Password** button on the Windows Security dialog box won't appear when you press Ctrl+Alt+Del.
 
 However, users will still be able to change their password when prompted by the system. The system prompts users for a new password when an administrator requires a new password or their password is expiring.
 
@@ -215,11 +215,11 @@ ADMX Info:
 <!--Description-->
 This policy setting disables or removes all menu items and buttons that log the user off the system.
 
-If you enable this policy setting, users won't see the Logoff menu item when they press Ctrl+Alt+Del. This will prevent them from logging off unless they restart or shut down the computer, or clicking Logoff from the Start menu.
+If you enable this policy setting, users won't see the Logoff menu item when they press Ctrl+Alt+Del. This scenario will prevent them from logging off unless they restart or shut down the computer, or clicking Log off from the Start menu.
 
 Also, see the 'Remove Logoff on the Start Menu' policy setting.
 
-If you disable or do not configure this policy setting, users can see and select the Logoff menu item when they press Ctrl+Alt+Del.
+If you disable or don't configure this policy setting, users can see and select the Logoff menu item when they press Ctrl+Alt+Del.
 
 <!--/Description-->
 

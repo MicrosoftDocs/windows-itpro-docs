@@ -274,7 +274,7 @@ If you enable this setting, users can't change or save a theme. Elements of a th
 If you disable or don't configure this setting, there's no effect.
 
 > [!NOTE]
-> If you enable this setting but do not specify a theme using the "load a specific theme" setting, the theme defaults to whatever the user previously set or the system default.
+> If you enable this setting but don't specify a theme using the "load a specific theme" setting, the theme defaults to whatever the user previously set or the system default.
 
 <!--/Description-->
 
@@ -409,13 +409,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This setting allows you to force a specific default lock screen and logon image by entering the path (location) of the image file. The same image will be used for both the lock and logon screens.
+This setting allows you to force a specific default lock screen and sign-in image by entering the path (location) of the image file. The same image will be used for both the lock and sign-in screens.
 
-This setting lets you specify the default lock screen and logon image shown when no user is signed in, and also sets the specified image as the default for all users (it replaces the inbox default image).
+This setting lets you specify the default lock screen and sign-in image shown when no user is signed in, and also sets the specified image as the default for all users (it replaces the inbox default image).
 
-To use this setting, type the fully qualified path and name of the file that stores the default lock screen and logon image. You can type a local path, such as C:\Windows\Web\Screen\img104.jpg or a UNC path, such as `\\Server\Share\Corp.jpg`.
+To use this setting, type the fully qualified path and name of the file that stores the default lock screen and sign-in image. You can type a local path, such as C:\Windows\Web\Screen\img104.jpg or a UNC path, such as `\\Server\Share\Corp.jpg`.
 
-This can be used with the "Prevent changing lock screen and logon image" setting to always force the specified lock screen and logon image to be shown.
+This setting can be used in conjunction with the "Prevent changing lock screen and logon image" setting to always force the specified lock screen and sign-in image to be shown.
 
 >[!NOTE]
 > This setting only applies to Enterprise, Education, and Server SKUs.
@@ -505,11 +505,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This setting prevents users from changing the background image shown when the machine is locked or when on the logon screen.
+Prevents users from changing the background image shown when the machine is locked or when on the sign-in screen.
 
-By default, users can change the background image shown when the machine is locked or displaying the logon screen.
+By default, users can change the background image shown when the machine is locked or displaying the sign-in screen.
 
-If you enable this setting, the user won't be able to change their lock screen and logon image, and they'll instead see the default image.
+If you enable this setting, the user won't be able to change their lock screen and sign-in image, and they'll instead see the default image.
 
 <!--/Description-->
 
@@ -1029,7 +1029,8 @@ This setting has no effect under any of the following circumstances:
 - The setting is disabled or not configured.
 - The wait time is set to zero.
 - The "Enable Screen Saver" setting is disabled.
-- Neither the "Screen saver executable name" setting nor the Screen Saver dialog of the client computer's Personalization or Display Control Panel specifies a valid existing screen saver program on the client.
+
+- The "Screen saver executable name" setting and the Screen Saver dialog of the client computer's Personalization or Display Control Panel don't specify a valid existing screen saver program on the client.
 
 When not configured, whatever wait time is set on the client through the Screen Saver dialog in the Personalization or Display Control Panel is used. The default is 15 minutes.
 
@@ -1083,7 +1084,7 @@ If you enable this setting, type the name of the file that contains the screen s
 If the specified screen saver isn't installed on a computer to which this setting applies, the setting is ignored.
 
 > [!NOTE]
-> This setting can be superseded by the "Enable Screen Saver" setting.  If the "Enable Screen Saver" setting is disabled, this setting is ignored, and screen savers do not run.
+> This setting can be superseded by the "Enable Screen Saver" setting.  If the "Enable Screen Saver" setting is disabled, this setting is ignored, and screen savers don't run.
 
 <!--/Description-->
 
@@ -1126,9 +1127,9 @@ ADMX Info:
 <!--Description-->
 Available in the latest Windows 10 Insider Preview Build. Specifies which theme file is applied to the computer the first time a user logs on.
 
-If you enable this setting, the theme that you specify will be applied when a new user logs on for the first time.  This policy doesn't prevent the user from changing the theme or any of the theme elements such as the desktop background, color, sounds, or screen saver after the first logon.
+If you enable this setting, the theme that you specify will be applied when a new user signs in for the first time.  This policy doesn't prevent the user from changing the theme or any of the theme elements such as the desktop background, color, sounds, or screen saver after the first sign in.
 
-If you disable or do not configure this setting, the default theme will be applied at the first logon.
+If you disable or don't configure this setting, the default theme will be applied at the first sign in.
 
 <!--/Description-->
 
@@ -1171,18 +1172,18 @@ ADMX Info:
 <!--Description-->
 This setting allows you to force a specific visual style file by entering the path (location) of the visual style file.
 
-This can be a local computer visual style (aero.msstyles), or a file located on a remote server using a UNC path (\\Server\Share\aero.msstyles).
+This file can be a local computer visual style (aero.msstyles) one, or a file located on a remote server using a UNC path (\\Server\Share\aero.msstyles).
 
 If you enable this setting, the visual style file that you specify will be used. Also, a user may not apply a different visual style when changing themes.
 
 If you disable or don't configure this setting, the users can select the visual style that they want to use by changing themes (if the Personalization Control Panel is available).
 
 > [!NOTE]
-> If this setting is enabled and the file is not available at user logon, the default visual style is loaded.
+> If this setting is enabled and the file isn't available at user logon, the default visual style is loaded.
 >
 > When running Windows XP, you can select the Luna visual style by typing %windir%\resources\Themes\Luna\Luna.msstyles.
 >
-> To select the Windows Classic visual style, leave the box blank beside "Path to Visual Style:" and enable this setting. When running Windows 8 or Windows RT, you cannot apply the Windows Classic visual style.
+> To select the Windows Classic visual style, leave the box blank beside "Path to Visual Style:" and enable this setting. When running Windows 8 or Windows RT, you can't apply the Windows Classic visual style.
 
 <!--/Description-->
 

@@ -60,9 +60,9 @@ manager: dansimp
 
 This policy controls the inclusion of Edge tabs into Alt+Tab.
 
-Enabling this policy restricts the number of Edge tabs that are allowed to appear in the Alt+Tab switcher. Alt+Tab can be configured to show all open Edge tabs, only the 5 most recent tabs, only the 3 most recent tabs, or no tabs. Setting the policy to no tabs configures the Alt+Tab switcher to show app windows only, which is the classic Alt+Tab behavior. 
+Enabling this policy restricts the number of Edge tabs that are allowed to appear in the Alt+Tab switcher. Alt+Tab can be configured to show all open Edge tabs, only the five most recent tabs, only the three most recent tabs, or no tabs. Setting the policy to no tabs configures the Alt+Tab switcher to show app windows only, which is the classic Alt+Tab behavior. 
 
-This policy only applies to the Alt+Tab switcher. When the policy is not enabled, the feature respects the user's setting in the Settings app.
+This policy only applies to the Alt+Tab switcher. When the policy isn't enabled, the feature respects the user's setting in the Settings app.
 <!--/Description-->
 
 > [!TIP]
@@ -85,8 +85,8 @@ ADMX Info:
 The following list shows the supported values:
 
 - 1 - Open windows and all tabs in Edge.
-- 2 - Open windows and 5 most recent tabs in Edge.
-- 3 - Open windows and 3 most recent tabs in Edge.
+- 2 - Open windows and five most recent tabs in Edge.
+- 3 - Open windows and three most recent tabs in Edge.
 - 4 - Open windows only.
 
 <!--/SupportedValues-->

@@ -51,7 +51,7 @@ Windows 10 Insider Preview builds offer organizations a valuable and exciting op
 |Feedback   |  - Provide feedback via [Feedback Hub app](insiderhub://home/). This helps us make adjustments to features as quickly as possible.<br> - Encourage users to sign into the Feedback Hub using their AAD work accounts. This enables both you and Microsoft to track feedback submitted by users within your specific organization. (Note: This tracking is only visible to Microsoft and registered Insiders within your organization’s domain.)<br> - [Learn how to provide effective feedback in the Feedback Hub](https://insider.windows.com/how-to-feedback/)       |
 
 ## Validate Insider Preview builds 
-Along with exploring new features, you also have the option to validate your apps and infrastructure on Insider Preview builds. This activity can play an important role in your [Windows 10 deployment strategy](/windows/deployment/update/waas-windows-insider-for-business). Early validation has several benefits:
+Along with exploring new features, you also have the option to validate your apps and infrastructure on Insider Preview builds. Early validation has several benefits:
 
 - Get a head start on your Windows validation process.
 - Identify issues sooner to accelerate your Windows deployment.

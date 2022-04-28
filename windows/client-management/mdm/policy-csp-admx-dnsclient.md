@@ -284,11 +284,11 @@ For example, when a user submits a query for a single-label name such as "exampl
 
 If a DNS suffix search list isn't specified, the DNS client attaches the primary DNS suffix to a single-label name. If this query fails, the connection-specific DNS suffix is attached for a new query. If none of these queries are resolved, the client devolves the primary DNS suffix of the computer (drops the leftmost label of the primary DNS suffix), attaches this devolved primary DNS suffix to the single-label name, and submits this new query to a DNS server.
 
-For example, if the primary DNS suffix ooo.aaa.microsoft.com is attached to the non-dot-terminated single-label name "example," and the DNS query for example.ooo.aaa.microsoft.com fails, the DNS client devolves the primary DNS suffix (drops the leftmost label) until the specified devolution level, and submits a query for example.aaa.microsoft.com. If this query fails, the primary DNS suffix is devolved further if it is under specified devolution level and the query example.microsoft.com is submitted. If this query fails, devolution continues if it is under specified devolution level and the query example.microsoft.com is submitted, corresponding to a devolution level of two. The primary DNS suffix can't be devolved beyond a devolution level of two. The devolution level can be configured using this policy setting. The default devolution level is two.
+For example, if the primary DNS suffix ooo.aaa.microsoft.com is attached to the non-dot-terminated single-label name "example," and the DNS query for example.ooo.aaa.microsoft.com fails, the DNS client devolves the primary DNS suffix (drops the leftmost label) till the specified devolution level, and submits a query for example.aaa.microsoft.com. If this query fails, the primary DNS suffix is devolved further if it is under specified devolution level and the query example.microsoft.com is submitted. If this query fails, devolution continues if it is under specified devolution level and the query example.microsoft.com is submitted, corresponding to a devolution level of two. The primary DNS suffix can't be devolved beyond a devolution level of two. The devolution level can be configured using this policy setting. The default devolution level is two.
 
 If you enable this policy setting and DNS devolution is also enabled, DNS clients use the DNS devolution level that you specify.
 
-If you disable this policy setting or don't configure it, DNS clients use the default devolution level of two when DNS devolution is enabled.
+If you disable this policy setting or don't configure it, DNS clients use the default devolution level of two if DNS devolution is enabled.
 
 <!--/Description-->
 
@@ -531,7 +531,7 @@ If you enable this policy setting, it supersedes the primary DNS suffix configur
 
 You can use this policy setting to prevent users, including local administrators, from changing the primary DNS suffix.
 
-If you disable this policy setting, or if you don't configure this policy setting, each computer uses its local primary DNS suffix, which is usually the DNS name of Active Directory domain to which it is joined.
+If you disable this policy setting, or if you don't configure this policy setting, each computer uses its local primary DNS suffix, which is usually the DNS name of Active Directory domain to which it's joined.
 <!--/Description-->
 
 
@@ -576,7 +576,7 @@ This policy setting specifies if a computer performing dynamic DNS registration 
 
 By default, a DNS client performing dynamic DNS registration registers A and PTR resource records with a concatenation of its computer name and the primary DNS suffix. For example, a computer name of mycomputer and a primary DNS suffix of microsoft.com will be registered as: mycomputer.microsoft.com.
 
-If you enable this policy setting, a computer will register A and PTR resource records with its connection-specific DNS suffix, in addition to the primary DNS suffix. This applies to all network connections used by computers that receive this policy setting.
+If you enable this policy setting, a computer will register A and PTR resource records with its connection-specific DNS suffix, in addition to the primary DNS suffix. This suffix-update applies to all network connections used by computers that receive this policy setting.
 
 For example, with a computer name of mycomputer, a primary DNS suffix of microsoft.com, and a connection specific DNS suffix of VPNconnection, a computer will register A and PTR resource records for mycomputer.VPNconnection and mycomputer.microsoft.com when this policy setting is enabled.
 
@@ -632,8 +632,8 @@ If you enable this policy setting, registration of PTR records will be determine
 
 To use this policy setting, click Enabled, and then select one of the following options from the drop-down list:
 
-- Do not register: Computers won't attempt to register PTR resource records.
-- Register: Computers will attempt to register PTR resource records even if registration of the corresponding A records was not successful.
+- Do not register: Computers won't attempt to register PTR resource records
+- Register: Computers will attempt to register PTR resource records even if registration of the corresponding A records wasn't successful.
 - Register only if A record registration succeeds: Computers will attempt to register PTR resource records only if registration of the corresponding A records was successful.
 
 If you disable this policy setting, or if you don't configure this policy setting, computers will use locally configured settings.
@@ -725,13 +725,13 @@ ADMX Info:
 <!--Description-->
 This policy setting specifies whether dynamic updates should overwrite existing resource records that contain conflicting IP addresses.
 
-This policy setting is designed for computers that register address (A) resource records in DNS zones that don't use Secure Dynamic Updates. Secure Dynamic Update preserves ownership of resource records and does not allow a DNS client to overwrite records that are registered by other computers.
+This policy setting is designed for computers that register address (A) resource records in DNS zones that don't use Secure Dynamic Updates. Secure Dynamic Update preserves ownership of resource records and doesn't allow a DNS client to overwrite records that are registered by other computers.
 
-During dynamic update of resource records in a zone that does not use Secure Dynamic Updates, an A resource record might exist that associates the client's host name with an IP address different than the one currently in use by the client. By default, the DNS client attempts to replace the existing A resource record with an A resource record that has the client's current IP address.
+During dynamic update of resource records in a zone that doesn't use Secure Dynamic Updates, an A resource record might exist that associates the client's host name with an IP address different than the one currently in use by the client. By default, the DNS client attempts to replace the existing (A) resource record with an (A) resource record that has the client's current IP address.
 
-If you enable this policy setting or if you don't configure this policy setting, DNS clients maintain their default behavior and will attempt to replace conflicting A resource records during dynamic update.
+If you enable this policy setting or if you don't configure this policy setting, DNS clients maintain their default behavior and will attempt to replace conflicting (A) resource records during dynamic update.
 
-If you disable this policy setting, existing A resource records that contain conflicting IP addresses won't be replaced during a dynamic update, and an error will be recorded in Event Viewer.
+If you disable this policy setting, existing (A) resource records that contain conflicting IP addresses won't be replaced during a dynamic update, and an error will be recorded in Event Viewer.
 
 <!--/Description-->
 
@@ -876,7 +876,7 @@ ADMX Info:
 <!--Description-->
 This policy setting specifies the DNS suffixes to attach to an unqualified single-label name before submission of a DNS query for that name.
 
-An unqualified single-label name contains no dots. The name "example" is a single-label name. This is different from a fully qualified domain name such as "example.microsoft.com."
+An unqualified single-label name contains no dots. The name "example" is a single-label name. This name is different from a fully qualified domain name such as "example.microsoft.com."
 
 Client computers that receive this policy setting will attach one or more suffixes to DNS queries for a single-label name. For example, a DNS query for the single-label name "example" will be modified to "example.microsoft.com" before sending the query to a DNS server if this policy setting is enabled with a suffix of "microsoft.com."
 
@@ -927,7 +927,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting specifies that a multi-homed DNS client should optimize name resolution across networks. The setting improves performance by issuing parallel DNS, link local multicast name resolution (LLMNR) and NetBIOS over TCP/IP (NetBT) queries across all networks. When multiple positive responses are received, the network binding order is used to determine which response to accept.
+This policy setting specifies that a multi-homed DNS client should optimize name resolution across networks. The setting improves performance by issuing parallel DNS, link local multicast name resolution (LLMNR) and NetBIOS over TCP/IP (NetBT) queries across all networks. If multiple positive responses are received, the network binding order is used to determine which response to accept.
 
 If you enable this policy setting, the DNS client won't perform any optimizations.  DNS queries will be issued across all networks first. LLMNR queries will be issued if the DNS queries fail, followed by NetBT queries if LLMNR queries fail.
 
@@ -1139,7 +1139,7 @@ For example, when a user submits a query for a single-label name such as "exampl
 
 If a DNS suffix search list isn't specified, the DNS client attaches the primary DNS suffix to a single-label name. If this query fails, the connection-specific DNS suffix is attached for a new query. If none of these queries are resolved, the client devolves the primary DNS suffix of the computer (drops the leftmost label of the primary DNS suffix), attaches this devolved primary DNS suffix to the single-label name, and submits this new query to a DNS server.
 
-For example, if the primary DNS suffix ooo.aaa.microsoft.com is attached to the non-dot-terminated single-label name "example," and the DNS query for example.ooo.aaa.microsoft.com fails, the DNS client devolves the primary DNS suffix (drops the leftmost label) till the specified devolution level, and submits a query for example.aaa.microsoft.com. If this query fails, the primary DNS suffix is devolved further if it is under specified devolution level and the query example.microsoft.com is submitted. If this query fails, devolution continues if it is under specified devolution level and the query example.microsoft.com is submitted, corresponding to a devolution level of two. The primary DNS suffix cannot be devolved beyond a devolution level of two. The devolution level can be configured using the primary DNS suffix devolution level policy setting. The default devolution level is two.
+For example, if the primary DNS suffix ooo.aaa.microsoft.com is attached to the non-dot-terminated single-label name "example," and the DNS query for example.ooo.aaa.microsoft.com fails, the DNS client devolves the primary DNS suffix (drops the leftmost label) till the specified devolution level, and submits a query for example.aaa.microsoft.com. If this query fails, the primary DNS suffix is devolved further if it is under specified devolution level and the query example.microsoft.com is submitted. If this query fails, devolution continues if it is under specified devolution level and the query example.microsoft.com is submitted, corresponding to a devolution level of two. The primary DNS suffix can't be devolved beyond a devolution level of two. The devolution level can be configured using the primary DNS suffix devolution level policy setting. The default devolution level is two.
 
 If you enable this policy setting, or if you don't configure this policy setting, DNS clients attempt to resolve single-label names using concatenations of the single-label name to be resolved and the devolved primary DNS suffix.
 

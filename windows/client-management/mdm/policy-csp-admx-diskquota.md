@@ -124,7 +124,7 @@ ADMX Info:
 <!--Description-->
 This policy setting turns on and turns off disk quota management on all NTFS volumes of the computer, and prevents users from changing the setting.  
 
-If you enable this policy setting, disk quota management is turned on, and users can't turn it off.  
+If you enable this policy setting, disk quota management is turned on, and users can't turn it off.
 
 If you disable the policy setting, disk quota management is turned off, and users can't turn it on. When this policy setting isn't configured then the disk quota management is turned off by default, and the administrators can turn it on. 
 

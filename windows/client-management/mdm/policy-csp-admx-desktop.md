@@ -243,11 +243,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Specifies the maximum number of objects the system displays in response to a command to browse or search Active Directory. This setting affects all browse displays associated with Active Directory, such as those in Local Users and Groups, Active Directory Users and Computers, and dialog boxes used to set permissions for user or group objects in Active Directory.
+Specifies the maximum number of objects the system displays in response to a command to browse or search Active Directory. This setting affects all browse displays associated with Active Directory, such as those displays in Local Users and Groups, Active Directory Users and Computers, and dialog boxes used to set permissions for user or group objects in Active Directory.
 
 If you enable this setting, you can use the "Number of objects returned" box to limit returns from an Active Directory search.
 
-If you disable this setting or don't configure it, the system displays up to 10,000 objects. This consumes approximately 2 MB of memory or disk space.
+If you disable this setting or don't configure it, the system displays up to 10,000 objects. This screen-display consumes approximately 2 MB of memory or disk space.
 
 This setting is designed to protect the network and the domain controller from the effect of expansive searches.
 
@@ -390,7 +390,7 @@ ADMX Info:
 <!--Description-->
 Prevents the user from enabling or disabling Active Desktop or changing the Active Desktop configuration.
 
-This is a comprehensive setting that locks down the configuration you establish by using other policies in this folder. This setting removes the Web tab from Display in Control Panel. As a result, users can't enable or disable Active Desktop. If Active Desktop is already enabled, users can't add, remove, or edit Web content or disable, lock, or synchronize Active Desktop components.
+This setting is a comprehensive one that locks down the configuration you establish by using other policies in this folder. This setting removes the Web tab from Display in Control Panel. As a result, users can't enable or disable Active Desktop. If Active Desktop is already enabled, users can't add, remove, or edit Web content or disable, lock, or synchronize Active Desktop components.
 
 <!--/Description-->
 
@@ -435,7 +435,7 @@ Removes icons, shortcuts, and other default and user-defined items from the desk
 
 Removing icons and shortcuts doesn't prevent the user from using another method to start the programs or opening the items they represent.
 
-Also, see "Items displayed in Places Bar" in User Configuration\Administrative Templates\Windows Components\Common Open File Dialog to remove the Desktop icon from the Places Bar. This will help prevent users from saving data to the Desktop.
+Also, see "Items displayed in Places Bar" in User Configuration\Administrative Templates\Windows Components\Common Open File Dialog to remove the Desktop icon from the Places Bar. The removal of the Desktop icon will help prevent users from saving data to the Desktop.
 
 <!--/Description-->
 
@@ -479,12 +479,12 @@ ADMX Info:
 <!--Description-->
 Prevents users from using the Desktop Cleanup Wizard.
 
-If you enable this setting, the Desktop Cleanup wizard doesn't automatically run on a users workstation every 60 days. The user will also not be able to access the Desktop Cleanup Wizard.
+If you enable this setting, the Desktop Cleanup wizard doesn't automatically run on a user's workstation every 60 days. The user will also not be able to access the Desktop Cleanup Wizard.
 
 If you disable this setting or don't configure it, the default behavior of the Desktop Clean Wizard running every 60 days occurs.
 
 > [!NOTE]
-> When this setting is not enabled, users can run the Desktop Cleanup Wizard, or have it run automatically every 60 days from Display, by clicking the Desktop tab and then clicking the Customize Desktop button.
+> When this setting isn't enabled, users can run the Desktop Cleanup Wizard, or have it run automatically every 60 days from Display, by clicking the Desktop tab and then clicking the Customize Desktop button.
 
 <!--/Description-->
 
@@ -579,7 +579,7 @@ If you disable this setting, Computer is displayed as usual, appearing as normal
 If you don't configure this setting, the default is to display Computer as usual.
 
 > [!NOTE]
-> In operating systems earlier than Microsoft Windows Vista, this policy applies to the My Computer icon. Hiding Computer and its contents does not hide the contents of the child folders of Computer. For example, if the users navigate into one of their hard drives, they see all of their folders and files there, even if this setting is enabled.
+> In operating systems earlier than Microsoft Windows Vista, this policy applies to the My Computer icon. Hiding Computer and its contents doesn't hide the contents of the child folders of Computer. For example, if the users navigate into one of their hard drives, they see all of their folders and files there, even if this setting is enabled.
 
 <!--/Description-->
 
@@ -766,7 +766,7 @@ ADMX Info:
 <!--Description-->
 This policy setting hides the Properties menu command on the shortcut menu for the My Documents icon.
 
-If you enable this policy setting, the Properties menu command won't be displayed when the user does any of the following:
+If you enable this policy setting, the Properties menu command won't be displayed when the user does any of the following tasks:
 
 - Right-clicks the My Documents icon.
 - Clicks the My Documents icon, and then opens the File menu.
@@ -955,7 +955,7 @@ ADMX Info:
 <!--Description-->
 Prevents users from saving certain changes to the desktop.
 
-If you enable this setting, users can change the desktop, but some changes, such as the position of open windows or the size and position of the taskbar, aren't saved when users logoff. However, shortcuts placed on the desktop are always saved.
+If you enable this setting, users can change the desktop, but some changes, such as the position of open windows or the size and position of the taskbar, aren't saved when users sign out. However, shortcuts placed on the desktop are always saved.
 
 <!--/Description-->
 
@@ -1053,7 +1053,7 @@ If you disable this setting or don't configure it, no wallpaper is displayed. Ho
 Also, see the "Allow only bitmapped wallpaper" in the same location, and the "Prevent changing wallpaper" setting in User Configuration\Administrative Templates\Control Panel.
 
 > [!NOTE]
-> This setting does not apply to remote desktop server sessions.
+> This setting doesn't apply to remote desktop server sessions.
 
 <!--/Description-->
 
@@ -1146,7 +1146,7 @@ In Active Desktop, you can add items to the desktop but close them so they aren'
 If you enable this setting, items added to the desktop can't be closed; they always appear on the desktop. This setting removes the check boxes from items on the Web tab in Display in Control Panel.
 
 > [!NOTE]
-> This setting does not prevent users from deleting items from their Active Desktop.
+> This setting doesn't prevent users from deleting items from their Active Desktop.
 
 <!--/Description-->
 
@@ -1285,7 +1285,7 @@ Removes Active Desktop content and prevents users from adding Active Desktop con
 This setting removes all Active Desktop items from the desktop. It also removes the Web tab from Display in Control Panel. As a result, users can't add Web pages or  pictures from the Internet or an intranet to the desktop.
 
 > [!NOTE]
-> This setting does not disable Active Desktop. Users can  still use image formats, such as JPEG and GIF, for their desktop wallpaper.
+> This setting doesn't disable Active Desktop. Users can  still use image formats, such as JPEG and GIF, for their desktop wallpaper.
 
 <!--/Description-->
 
@@ -1334,7 +1334,7 @@ You can use the "Add" box in this setting to add particular Web-based items or s
 You can also use this setting to delete particular Web-based items from users' desktops. Users can add the item again (if settings allow), but the item is deleted each time the setting is refreshed.
 
 > [!NOTE]
-> Removing an item from the "Add" list for this setting is not the same as deleting it. Items that are removed from the "Add" list are not removed from the desktop. They are simply not added again.
+> Removing an item from the "Add" list for this setting isn't the same as deleting it. Items that are removed from the "Add" list aren't removed from the desktop. They are simply not added again.
 
 > [!NOTE]
 > For this setting to take effect, you must log off and log on to the system.
@@ -1381,7 +1381,7 @@ ADMX Info:
 <!--Description-->
 Prevents users from manipulating desktop toolbars.
 
-If you enable this setting, users can't add or remove toolbars from the desktop. Also, users can't drag toolbars on to or off of docked toolbars.
+If you enable this setting, users can't add or remove toolbars from the desktop. Also, users can't drag toolbars onto or off from the docked toolbars.
 
 > [!NOTE]
 > If users have added or removed toolbars, this setting prevents them from restoring the default configuration.
@@ -1480,7 +1480,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Permits only bitmap images for wallpaper. This setting limits the desktop background ("wallpaper") to bitmap (.bmp) files. If users select files with other image formats, such as JPEG, GIF, PNG, or HTML, through the Browse button on the Desktop tab, the wallpaper doesn't load. Files that are auto-converted to a .bmp format, such as JPEG, GIF, and PNG, can be set as Wallpaper by right-clicking the image and selecting "Set as Wallpaper".
+Permits only bitmap images for wallpaper. This setting limits the desktop background ("wallpaper") to bitmap (.bmp) files. If users select files with other image formats, such as JPEG, GIF, PNG, or HTML, through the Browse button on the Desktop tab, the wallpaper doesn't load. Files that are autoconverted to a .bmp format, such as JPEG, GIF, and PNG, can be set as Wallpaper by right-clicking the image and selecting "Set as Wallpaper".
 
 Also, see the "Desktop Wallpaper" and the "Prevent changing wallpaper" (in User Configuration\Administrative Templates\Control Panel\Display) settings.
 

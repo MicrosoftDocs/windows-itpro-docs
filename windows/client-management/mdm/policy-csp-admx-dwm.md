@@ -180,7 +180,7 @@ If you enable this policy setting, window animations are turned off.
 
 If you disable or don't configure this policy setting, window animations are turned on. 
 
-Changing this policy setting requires a logoff for it to be applied.
+Changing this policy setting requires a sign out for it to be applied.
 
 <!--/Description-->
 
@@ -228,7 +228,7 @@ If you enable this policy setting, window animations are turned off.
 
 If you disable or don't configure this policy setting, window animations are turned on. 
 
-Changing this policy setting requires a logoff for it to be applied.
+Changing this policy setting requires out a sign for it to be applied.
 
 <!--/Description-->
 
