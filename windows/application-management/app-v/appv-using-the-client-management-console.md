@@ -19,13 +19,6 @@ ms.author: aaroncz
 
 This topic provides information about using the Application Virtualization (App-V) client management console to manage packages on the computer running the App-V client.
 
-## Obtain the client management console
-
-The client management console is separate from the App-V client itself. You can download the client management console from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=41186).
-
-> [!NOTE]
-> To perform all of the actions available using the client management console, you must have administrative access on the computer running the App-V client.
-
 ## Options for managing the App-V client
 
 The App-V client has associated settings that can be configured to determine how the client will run in your environment. You can manage these settings on the computer that runs the client, or you can use Windows PowerShell or Group Policy. For more information about configuring the client by using Windows PowerShell or Group Policy, see:
