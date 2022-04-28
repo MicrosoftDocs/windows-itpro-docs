@@ -11,6 +11,7 @@ author: mestew
 ms.author: mstewart
 ms.collection: M365-analytics
 ms.topic: article
+ms.date: 05/07/2022
 ---
 
 # Update Compliance overview
@@ -26,26 +27,36 @@ Update Compliance is a cloud-based solution that provides information about the 
 - Report on devices with update compliance issues
 - Review [Delivery Optimization](../do/waas-delivery-optimization.md) bandwidth savings across multiple content types
 
-:::image type="content" source="media/37063317-update-compliance-overview.png" alt-text="Screenshot showing Update Compliance dashboard in the Azure portal"  lightbox="media/37063317-update-compliance-overview.png":::
+## Technical preview information for Update Compliance
+
+The new version of Update Compliance is in technical preview. Currently, the technical preview contains the following features:
+
+- Access to the following new Update Compliance tables:
+    - UCClient
+    - UCClientReadinessStatus
+    - UCClientUpdateStatus
+    - UCUpdateAlert
+- Client data collection to populate the new Update Compliance tables
+
+> [!IMPORTANT]
+> Update Compliance is a Windows service hosted in Azure that uses Windows diagnostic data. You should be aware that Update Compliance doesn't meet [US Government community compliance (GCC)](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc#us-government-community-compliance) requirements. For a list of GCC offerings for Microsoft products and services, see the [Microsoft Trust Center](/compliance/regulatory/offering-home). Update Compliance is available in the Azure Commercial cloud, but not available for GCC High or United States Department of Defense customers.
 
 ## How Update Compliance works
 
-You'll set up Update Compliance by enrolling into the solution from the Azure portal. You'll then configure your Azure AD joined devices to send Windows client diagnostic data to the solution. Update Compliance uses the diagnostic data the clients send for all of its reporting. It collects system data such as:
+You'll set up Update Compliance by enrolling into the solution from the Azure portal. Then you'll configure your Azure AD joined devices to send Windows client diagnostic data to the solution. Update Compliance uses [Log Analytics in Azure Monitor](/azure/azure-monitor/logs/log-analytics-overview) to store the diagnostic data the clients send. You can use this data for reporting on updates for your devices. Update Compliance collects system data such as:
 
 - Update deployment progress
 - Delivery Optimization usage data
 - Windows Update for Business configuration data
 
-Update Compliance sends this client diagnostic data to an [Azure Log Analytics workspace](/azure/azure-monitor/logs/log-analytics-overview) that you own. It sorts and analyzes the data then presents it to you using rich visual reports within the Azure portal. The Azure Log Analytics ingestion and retention charges aren't incurred on your Azure subscription for Update Compliance data.
+The Azure Log Analytics ingestion and retention charges aren't incurred on your Azure subscription for Update Compliance data. You also choose an [Azure Log Analytics workspaces](/azure/azure-monitor/logs/log-analytics-overview) that you own for your client diagnostic data. The collected diagnostic data populates the Update Compliance tables so you can easily query your data.
 
 ## Use your Update Compliance data
 
 Since the data from your clients is stored in a Log Analytics workspace, you can go beyond the standard reports to analyze and display your data in multiple ways. Some of the ways you could display your data include:
 
-- Using the built-in or [custom workbooks](/azure/azure-monitor/visualize/workbooks-overview)
-   :::image type="content" source="media/37063317-update-compliance-workbooks.png" alt-text="Screenshot showing a a list of the built-in workbooks that come with the Update Compliance solution."  lightbox="media/37063317-update-compliance-workbooks.png":::
-- Using the built-in Kusto (KQL) queries or [custom queries](/azure/azure-monitor/logs/log-query-overview)
-   :::image type="content" source="media/37063317-update-compliance-kusto-query.png" alt-text="Screenshot showing a built-in Kusto query being run against the Update Compliance data."  lightbox="media/37063317-update-compliance-kusto-query.png":::
+- Using the data in [custom workbooks](/azure/azure-monitor/visualize/workbooks-overview) that you create
+- Building [custom Kusto (KQL) queries](/azure/azure-monitor/logs/log-query-overview)
 - Developing your own custom views by integrating the [Log Analytics data](/azure/azure-monitor/visualize/tutorial-logs-dashboards) into other tools such as:
    - [Operations Management Suite](/azure/azure-monitor/agents/om-agents)
    - [Power BI](/azure/azure-monitor/logs/log-powerbi)
@@ -54,4 +65,3 @@ Since the data from your clients is stored in a Log Analytics workspace, you can
 ## Next steps
 
 - Review the [Update Compliance prerequisites](update-compliance-v2-prerequisites.md)
-

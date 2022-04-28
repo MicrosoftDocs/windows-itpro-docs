@@ -30,14 +30,14 @@ Before you begin the process to add Update Compliance to your Azure subscription
 - An Azure subscription with [Azure Active Directory](/azure/active-directory/)
 - You must have either an Owner or Contributor [Azure role](/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-roles) as a minimum in order to add the Update Compliance solution.
 - Devices must be Azure Active Directory joined and meet the below OS, diagnostic, and endpoint access requirements
-   - Devices that are Workplace joined only (Azure AD registered) aren't supported with Update Compliance
+  - Devices that are Workplace joined only (Azure AD registered) aren't supported with Update Compliance
 
 ### Operating systems and editions
 
 - Windows 11 Professional, Education, Enterprise, and [Enterprise multi-session](/azure/virtual-desktop/windows-10-multisession-faq) editions
 - Windows 10 Professional, Education, Enterprise, and [Enterprise multi-session](/azure/virtual-desktop/windows-10-multisession-faq) editions
 
-Update Compliance only provides data for the standard Desktop Windows client version and is not currently compatible with Windows Server, Surface Hub, IoT, or other versions.
+Update Compliance only provides data for the standard Desktop Windows client version and isn't currently compatible with Windows Server, Surface Hub, IoT, or other versions.
 
 ### Windows client servicing channels
 
@@ -67,7 +67,7 @@ For more information about what's included in different diagnostic levels, see [
 [!INCLUDE [Endpoints for Update Compliance](./includes/update-compliance-endpoints.md)]
 
 > [!NOTE]
-> It is not currently supported to programmatically enroll to Update Compliance via the [Azure CLI](/cli/azure) or otherwise. You must manually add Update Compliance to your Azure subscription.
+> Enrolling into Update Compliance from the [Azure CLI](/cli/azure) or enrolling programmatically another way currently isn't supported. You must manually add Update Compliance to your Azure subscription.
 
 ## Log Analytics prerequisites
 

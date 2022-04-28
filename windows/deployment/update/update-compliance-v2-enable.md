@@ -18,34 +18,39 @@ ms.topic: article
 > [!Important]
 > This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
 
-Update Compliance is offered as an Azure Marketplace application that's is linked to a new or existing [Azure Log Analytics](/azure/log-analytics/query-language/get-started-analytics-portal) workspace within your Azure subscription. Note that, for the following steps, you must have either an Owner or Contributor [Azure role](/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-roles) as a minimum in order to add the solution.
+Update Compliance is offered as an Azure Marketplace application that's linked to a new or existing [Azure Log Analytics](/azure/log-analytics/query-language/get-started-analytics-portal) workspace within your Azure subscription.
 
 ## Add Update Compliance to your Azure subscription
 
-To add Update Compliance to your Azure subscription, follow these steps:
+After verifying you meet the [prerequisites], add Update Compliance to your Azure subscription by following the steps below:
 
 ### Select or create a new Log Analytics workspace
 
 1. Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com).
+   - Although an Azure subscription is required, you won't be charged for ingestion of Update Compliance data.
 1. In the Azure portal, type **Log Analytics** in the search bar. As you begin typing, the list filters based on your input.
 1. Select **Log Analytics workspaces**.
 1. If you already have a Log Analytics workspace, determine which Log Analytics workspace you'd like to use for Update Compliance. Ensure the workspace is in a **Compatible Log Analytics region** from the table listed in the [prerequisites](update-compliance-v2-prerequisites.md#log-analytics-regions).
    - [Azure Update Management](/azure/automation/automation-intro#update-management) users should use the same workspace for Update Compliance.
-1. If you don't have an existing Log Analytics workspace or you don't want to use a current workspaces, [create a new workspace](/azure/azure-monitor/logs/quick-create-workspace) in a [compatible region](update-compliance-v2-prerequisites.md#log-analytics-regions).
-
-### Add the Update Compliance solution to the workspace
-
-1. Go to the [Update Compliance page in the Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/Microsoft.WaaSUpdateInsights?tab=Overview). You might need to sign into your Azure subscription to access this.
-1. Select **Get it now**. 
-1. 
-<!--
-1. Choose an existing or configure a new Log Analytics Workspace, ensuring it is in a **Compatible Log Analytics region** from the table listed in the [prerequisites](update-compliance-v2-prerequisites.md#log-analytics-regions). Although an Azure subscription is required, you won't be charged for ingestion of Update Compliance data.
-   - [Azure Update Management](/azure/automation/automation-intro#update-management) users should use the same workspace for Update Compliance.
-1. After your workspace is configured and selected, select **Create**. You'll receive a notification when the solution has been successfully created.  -->
+1. If you don't have an existing Log Analytics workspace or you don't want to use a current workspace, [create a new workspace](/azure/azure-monitor/logs/quick-create-workspace) in a [compatible region](update-compliance-v2-prerequisites.md#log-analytics-regions).
 
 > [!Note]
 > The `CommercialID` for the Log Analytics workspace is no longer required when configuring your clients.  
+### Add the Update Compliance solution to the workspace
 
+1. Go to the [Update Compliance page in the Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/Microsoft.WaaSUpdateInsights?tab=Overview). You might need to sign into your Azure subscription to access this page.
+1. Select **Get it now**.
+1. Select **Continue** to agree to the [terms of use](https://azure.microsoft.com/[support/legal/) and the [privacy policy](https://privacy.microsoft.com/en-us/privacystatement) to create the app in Azure.
+1. Sign into the Azure portal to finish creating the Update Compliance solution.
+1. Select the following settings:
+   - **Subscription**: The Azure subscription to use.
+   - **Resource group**: Select or [create a resource group](/azure/azure-resource-manager/management/manage-resource-groups-portal) for the Update Compliance solution.
+   - **Azure Log Analytics Workspace**: The Log Analytics workspace you created or identified for use with Update Compliance.
+1. Select **Review + create** to review your settings.
+1. Select **Create** to add the solution. You'll receive a notification when the Updates Compliance solution has been successfully created.
+
+> [!Note]
+> You can only map one tenant to one Log Analytics workspace. Mapping one tenant to multiple workspaces isn't supported.
 
 ## Next steps
 
