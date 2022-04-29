@@ -26,8 +26,8 @@ ms.technology: windows-sec
 -   Windows 11
 -   Windows Server 2016 and above
 
->[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
 Similar to WDAC Application Control policies, WDAC AppId Tagging policies can be deployed locally and to your managed endpoints several ways. Once you've created your AppId Tagging policy, use one of the following methods to deploy:
 
@@ -46,7 +46,7 @@ Similar to MDM, policies can only be deployed via MEMCM not created. Using the [
 
 ### Deploy AppId Tagging Policies via Scripting
 
-Scripting hosts can be used to deploy AppId Tagging policies as well. This approach is often best suited for local deployment, but works for deployment to managed endpoints and users too. The [Deploy WDAC policies using script topic](/deployment/deploy-wdac-policies-with-script.md) describes how to deploy WDAC AppId Tagging policies via scripting. Only the method for deploying to version 1903 and above is applicable for AppId Tagging policies. 
+Scripting hosts can be used to deploy AppId Tagging policies as well. This approach is often best suited for local deployment, but works for deployment to managed endpoints and users too. The [Deploy WDAC policies using script article](/deployment/deploy-wdac-policies-with-script.md) describes how to deploy WDAC AppId Tagging policies via scripting. Only the method for deploying to version 1903 and above is applicable for AppId Tagging policies. 
 
 ### Deploying policies via the ApplicationControl CSP
 
