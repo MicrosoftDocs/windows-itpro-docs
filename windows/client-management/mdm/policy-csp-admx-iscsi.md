@@ -154,7 +154,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-If enabled then do not allow the initiator CHAP secret to be changed. 
+If enabled then don't allow the initiator CHAP secret to be changed. 
 
 If disabled then the initiator CHAP secret may be changed.
 

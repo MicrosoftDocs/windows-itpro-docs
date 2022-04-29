@@ -105,9 +105,9 @@ manager: dansimp
 Allows the user to enable Bluetooth or restrict access.
 
 > [!NOTE]
->  This value is not supported in Windows 10.
+>  This value isn't supported in Windows 10.
 
-If this is not set or it is deleted, the default value of 2 (Allow) is used.
+If this policy isn't set or is deleted, the default value of 2 (Allow) is used.
 
 Most restricted value is 0.
 
@@ -115,9 +115,9 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Disallow Bluetooth. If this is set to 0, the radio in the Bluetooth control panel will be grayed out and the user will not be able to turn Bluetooth on.
--   1 – Reserved. If this is set to 1, the radio in the Bluetooth control panel will be functional and the user will be able to turn Bluetooth on.
--   2 (default) – Allow Bluetooth. If this is set to 2, the radio in the Bluetooth control panel will be functional and the user will be able to turn Bluetooth on.
+-   0 – Disallow Bluetooth. If the value is set to 0, the radio in the Bluetooth control panel will be grayed out and the user won't be able to turn on Bluetooth.
+-   1 – Reserved. If the value is set to 1, the radio in the Bluetooth control panel will be functional and the user will be able to turn on Bluetooth.
+-   2 (default) – Allow Bluetooth. If the value is set to 2, the radio in the Bluetooth control panel will be functional and the user will be able to turn on Bluetooth.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -151,15 +151,15 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Allows the cellular data channel on the device. Device reboot is not required to enforce the policy.
+Allows the cellular data channel on the device. Device reboot isn't required to enforce the policy.
 
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Do not allow the cellular data channel. The user cannot turn it on. This value is not supported in Windows 10, version 1511.
+-   0 – Don't allow the cellular data channel. The user can't turn it on. This value isn't supported in Windows 10, version 1511.
 -   1 (default) – Allow the cellular data channel. The user can turn it off.
--   2 - Allow the cellular data channel. The user cannot turn it off.
+-   2 - Allow the cellular data channel. The user can't turn it off.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -193,7 +193,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Allows or disallows cellular data roaming on the device. Device reboot is not required to enforce the policy.
+Allows or disallows cellular data roaming on the device. Device reboot isn't required to enforce the policy.
 
 Most restricted value is 0.
 
@@ -209,15 +209,15 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Do not allow cellular data roaming. The user cannot turn it on. This value is not supported in Windows 10, version 1511.
+-   0 – Don't allow cellular data roaming. The user can't turn it on. This value isn't supported in Windows 10, version 1511.
 -   1 (default) – Allow cellular data roaming.
--   2 - Allow cellular data roaming on. The user cannot turn it off.
+-   2 - Allow cellular data roaming on. The user can't turn it off.
 
 <!--/SupportedValues-->
 <!--Validation-->
 To validate, the enterprise can confirm by observing the roaming enable switch in the UX. It will be inactive if the roaming policy is being enforced by the enterprise policy.
 
-To validate on devices, do the following:
+To validate on devices, perform the following steps:
 
 1.  Go to Cellular & SIM.
 2.  Click on the SIM (next to the signal strength icon) and select **Properties**.
@@ -301,8 +301,8 @@ The following list shows the supported values:
 <!--Description-->
 This policy allows IT admins to turn off the ability to Link a Phone with a PC to continue tasks, such as reading, email, and other tasks that require linking between Phone and PC.
 
-If you enable this policy setting, the Windows device will be able to enroll in Phone-PC linking functionality and participate in 'Continue on PC experiences'. If you disable this policy setting, the Windows device is not allowed to be linked to phones, will remove itself from the device list of any linked Phones, and cannot participate in 'Continue on PC experiences'.
-If you do not configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
+If you enable this policy setting, the Windows device will be able to enroll in Phone-PC linking functionality and participate in 'Continue on PC experiences'. If you disable this policy setting, the Windows device isn't allowed to be linked to phones, will remove itself from the device list of any linked Phones, and can't participate in 'Continue on PC experiences'.
+If you don't configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -314,14 +314,14 @@ ADMX Info:
 <!--SupportedValues-->
 This setting supports a range of values between 0 and 1.
 
-- 0 - Do not link
+- 0 - Don't link
 - 1 (default) - Allow phone-PC linking
 
 <!--/SupportedValues-->
 <!--Validation-->
 Validation:
 
-If the Connectivity/AllowPhonePCLinking policy is configured to value 0, the add a phone button in the Phones section in settings will be grayed out and clicking it will not launch the window for a user to enter their phone number.
+If the Connectivity/AllowPhonePCLinking policy is configured to value 0, the add a phone button in the Phones section in settings will be grayed out and clicking it won't launch the window for a user to enter their phone number.
 
 Device that has previously opt-in to MMX will also stop showing on the device list.
 
@@ -360,7 +360,7 @@ Device that has previously opt-in to MMX will also stop showing on the device li
 > [!NOTE]
 > Currently, this policy is supported only in HoloLens 2, Hololens (1st gen) Commercial Suite, and HoloLens (1st gen) Development Edition.
 
-Enables USB connection between the device and a computer to sync files with the device or to use developer tools to deploy or debug applications. Changing this policy does not affect USB charging.
+Enables USB connection between the device and a computer to sync files with the device or to use developer tools to deploy or debug applications. Changing this policy doesn't affect USB charging.
 
 Both Media Transfer Protocol (MTP) and IP over USB are disabled when this policy is enforced.
 
@@ -413,7 +413,7 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – VPN is not allowed over cellular.
+-   0 – VPN isn't allowed over cellular.
 -   1 (default) – VPN can use any connection, including cellular.
 
 <!--/SupportedValues-->
@@ -493,13 +493,13 @@ The following list shows the supported values:
 <!--Description-->
 This policy setting specifies whether to allow printing over HTTP from this client.
 
-Printing over HTTP allows a client to print to printers on the intranet as well as the Internet.
+Printing over HTTP allows a client to print to printers on the intranet and the Internet.
 
-Note: This policy setting affects the client side of Internet printing only. It does not prevent this computer from acting as an Internet Printing server and making its shared printers available via HTTP.
+Note: This policy setting affects the client side of Internet printing only. It doesn't prevent this computer from acting as an Internet Printing server and making its shared printers available via HTTP.
 
 If you enable this policy setting, it prevents this client from printing to Internet printers over HTTP.
 
-If you disable or do not configure this policy setting, users can choose to print to Internet printers over HTTP.
+If you disable or don't configure this policy setting, users can choose to print to Internet printers over HTTP.
 
 Also, see the "Web-based printing" policy setting in Computer Configuration/Administrative Templates/Printers.
 
@@ -549,11 +549,11 @@ This policy setting specifies whether to allow this client to download print dri
 
 To set up HTTP printing, non-inbox drivers need to be downloaded over HTTP.
 
-Note: This policy setting does not prevent the client from printing to printers on the Intranet or the Internet over HTTP.  It only prohibits downloading drivers that are not already installed locally.
+Note: This policy setting doesn't prevent the client from printing to printers on the Intranet or the Internet over HTTP.  It only prohibits downloading drivers that aren't already installed locally.
 
-If you enable this policy setting, print drivers cannot be downloaded over HTTP.
+If you enable this policy setting, print drivers can't be downloaded over HTTP.
 
-If you disable or do not configure this policy setting, users can download print drivers over HTTP.
+If you disable or don't configure this policy setting, users can download print drivers over HTTP.
 
 <!--/Description-->
 
@@ -601,11 +601,11 @@ This policy setting specifies whether Windows should download a list of provider
 
 These wizards allow users to select from a list of companies that provide services such as online storage and photographic printing. By default, Windows displays providers downloaded from a Windows website in addition to providers specified in the registry.
 
-If you enable this policy setting, Windows does not download providers, and only the service providers that are cached in the local registry are displayed.
+If you enable this policy setting, Windows doesn't download providers, and only the service providers that are cached in the local registry are displayed.
 
-If you disable or do not configure this policy setting, a list of providers are downloaded when the user uses the web publishing or online ordering wizards.
+If you disable or don't configure this policy setting, a list of providers is downloaded when the user uses the web publishing or online ordering wizards.
 
-See the documentation for the web publishing and online ordering wizards for more information, including details on specifying service providers in the registry.
+For more information, including details on specifying service providers in the registry, see the documentation for the web publishing and online ordering wizards.
 
 <!--/Description-->
 
@@ -649,7 +649,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to <http://www.msftconnecttest.com/connecttest.txt> to determine if the device can communicate with the Internet.  This policy disables the NCSI active probe, preventing network connectivity to www.msftconnecttest.com.
+Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to `<http://www.msftconnecttest.com/connecttest.txt>` to determine if the device can communicate with the Internet.  This policy disables the NCSI active probe, preventing network connectivity to `www.msftconnecttest.com`.
 
 Value type is integer.
 
@@ -695,7 +695,7 @@ ADMX Info:
 <!--Description-->
 This policy setting configures secure access to UNC paths.
 
-If you enable this policy, Windows only allows access to the specified UNC paths after fulfilling additional security requirements.
+If you enable this policy, Windows only allows access to the specified UNC paths after fulfilling other security requirements.
 
 <!--/Description-->
 
@@ -741,11 +741,11 @@ ADMX Info:
 <!--Description-->
 Determines whether a user can install and configure the Network Bridge.
 
-Important: This settings is location aware. It only applies when a computer is connected to the same DNS domain network it was connected to when the setting was refreshed on that computer. If a computer is connected to a DNS domain network other than the one it was connected to when the setting was refreshed, this setting does not apply.
+Important: This setting is location aware. It only applies when a computer is connected to the same DNS domain network it was connected to when the setting was refreshed on that computer. If a computer is connected to a DNS domain network other than the one it was connected to when the setting was refreshed, this setting doesn't apply.
 
 The Network Bridge allows users to create a layer 2 MAC bridge, enabling them to connect two or more network segments together. This connection appears in the Network Connections folder.
 
-If you disable this setting or do not configure it, the user will be able to create and modify the configuration of a Network Bridge. Enabling this setting does not remove an existing Network Bridge from the user's computer.
+If you disable this setting or don't configure it, the user will be able to create and modify the configuration of a Network Bridge. Enabling this setting doesn't remove an existing Network Bridge from the user's computer.
 
 <!--/Description-->
 

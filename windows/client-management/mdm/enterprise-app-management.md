@@ -400,7 +400,7 @@ If you purchased an app from the Store for Business and the app is specified for
 
 Here are the requirements for this scenario:
 
-- The location of the app can be a local files system (C:\\StagedApps\\app1.appx), a UNC path (\\\\server\\share\\app1.apx), or an HTTPS location (https://contoso.com/app1.appx\_
+- The location of the app can be a local files system (C:\\StagedApps\\app1.appx), a UNC path (\\\\server\\share\\app1.apx), or an HTTPS location (`https://contoso.com/app1.appx`).
 - The user must have permission to access the content location. For HTTPs, you can use server authentication or certificate authentication using a certificate associated with the enrollment. HTTP locations are supported, but not recommended because of lack of authentication requirements.
 - The device doesn't need to have connectivity to the Microsoft Store, store services, or have the Microsoft Store UI be enabled.
 - The user must be logged in, but association with Azure AD identity isn't required.
@@ -517,7 +517,7 @@ Provisioning allows you to stage the app to the device and all users of the devi
 
 Here are the requirements for this scenario:
 
-- The location of the app can be the local files system (C:\\StagedApps\\app1.appx), a UNC path (\\\\server\\share\\app1.apx), or an HTTPS location (https://contoso.com/app1.appx\_
+- The location of the app can be the local files system (C:\\StagedApps\\app1.appx), a UNC path (\\\\server\\share\\app1.apx), or an HTTPS location (`https://contoso.com/app1.appx\`)
 - The user must have permission to access the content location. For HTTPs, you can use server authentication or certificate authentication using a certificate associated with the enrollment. HTTP locations are supported, but not recommended because of lack of authentication requirements.
 - The device doesn't need to have connectivity to the Microsoft Store, or store services enabled.
 - The device doesn't need any Azure AD identity or domain membership.
