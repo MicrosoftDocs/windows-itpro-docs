@@ -141,11 +141,11 @@ A list of other relevant event IDs and their corresponding description.
 | Event ID | Description |
 |-------|------|
 | 3001 | An unsigned driver was attempted to load on the system. |
-| 3002 | WDAC could not verify the boot image as the page hash could not be found. |
-| 3004 | WDAC could not verify the file as the page hash could not be found. |
+| 3002 | Code Integrity could not verify the boot image as the page hash could not be found. |
+| 3004 | Code Integrity could not verify the file as the page hash could not be found. |
 | 3010 | The catalog containing the signature for the file under validation is invalid. |
-| 3011 | WDAC finished loading the signature catalog. |
-| 3012 | WDAC started loading the signature catalog. |
+| 3011 | Code Integrity finished loading the signature catalog. |
+| 3012 | Code Integrity started loading the signature catalog. |
 | 3023 | The driver file under validation did not meet the requirements to pass the application control policy. |
 | 3024 | Windows application control was unable to refresh the boot catalog file. |
 | 3026 | The catalog loaded is signed by a signing certificate that has been revoked by Microsoft and/or the certificate issuing authority. |
@@ -156,15 +156,15 @@ A list of other relevant event IDs and their corresponding description.
 | 3064 | If the WDAC policy was enforced, a user mode DLL under validation would not meet the requirements to pass the application control policy. The DLL was allowed since the WDAC policy is in audit mode. |
 | 3065 | If the WDAC policy was enforced, a user mode DLL under validation would not meet the requirements to pass the application control policy. |
 | 3074 | Page hash failure while hypervisor-protected code integrity was enabled. |
-| 3075 | This event monitors the performance of the WDAC policy check a file. |
+| 3075 | This event measures the performance of the WDAC policy check during file validation. |
 | 3076 | This event is the main WDAC block event for audit mode policies. It indicates that the file would have been blocked if the WDAC policy was enforced. |
 | 3077 | This event is the main WDAC block event for enforced policies. It indicates that the file did not pass your WDAC policy and was blocked. |
 | 3079 | The file under validation did not meet the requirements to pass the application control policy. |
 | 3080 | If the WDAC policy was in enforced mode, the file under validation would not have met the requirements to pass the application control policy. |
 | 3081 | The file under validation did not meet the requirements to pass the application control policy. |
 | 3082 | If the WDAC policy was in enforced mode, the non-WHQL driver would have been denied by the WDAC policy. |
-| 3084 | WDAC will enforce the WHQL Required policy setting on this session. |
-| 3085 | WDAC will not enforce the WHQL Required policy setting on this session. |
+| 3084 | Code Integrity will enforce the WHQL driver signing requirements on this boot session. |
+| 3085 | Code Integrity will not enforce the WHQL driver signing requirements on this boot session. |
 | 3086 | The file under validation does not meet the signing requirements for an isolated user mode (IUM) process. |
 | 3089 | This event contains signature information for files that were blocked or would have been blocked by WDAC. One 3089 event is created for each signature of a file. |
 | 3090 | *Optional* This event indicates that a file was allowed to run based purely on ISG or managed installer. |
