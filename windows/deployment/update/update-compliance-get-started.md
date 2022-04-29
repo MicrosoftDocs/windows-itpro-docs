@@ -48,6 +48,7 @@ Before you begin the process to add Update Compliance to your Azure subscription
 - **Diagnostic data requirements**: Update Compliance requires devices to send diagnostic data at *Required* level (previously *Basic*). Some queries in Update Compliance require devices to send diagnostic data at *Optional* level (previously *Full*) for Windows 11 devices or *Enhanced* level for Windows 10 devices. To learn more about what's included in different diagnostic levels, see [Diagnostics, feedback, and privacy in Windows](https://support.microsoft.com/windows/diagnostics-feedback-and-privacy-in-windows-28808a2b-a31b-dd73-dcd3-4559a5199319).
 - **Data transmission requirements**: Devices must be able to contact specific endpoints required to authenticate and send diagnostic data. These are enumerated in detail at [Configuring Devices for Update Compliance manually](update-compliance-configuration-manual.md).
 - **Showing device names in Update Compliance**: For Windows 10, version 1803 or later, device names will not appear in Update Compliance unless you individually opt-in devices by using policy. The steps to accomplish this is outlined in [Configuring Devices for Update Compliance](update-compliance-configuration-manual.md).
+- **Azure AD device join**: All devices enrolled in Update Compliance must meet all prerequisites for enabling Windows diagnostic data processor configuration, including the Azure AD join requirement.
 
 ## Add Update Compliance to your Azure subscription
 
