@@ -1,6 +1,6 @@
 ---
 title: Create your Windows Defender Application Control AppId Tagging Policies
-description: Windows Defender Application Control supports multiple code integrity policies for one device.
+description: Create your Windows Defender Application Control AppId tagging policies for Windows devices.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: m365-security
