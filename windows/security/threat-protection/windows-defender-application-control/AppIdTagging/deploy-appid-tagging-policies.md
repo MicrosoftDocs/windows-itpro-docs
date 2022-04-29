@@ -14,7 +14,7 @@ author: jgeurten
 ms.reviewer: jsuther1974
 ms.author: dansimp
 manager: dansimp
-ms.date: 04/27/2022
+ms.date: 04/29/2022
 ms.technology: windows-sec
 ---
 
@@ -31,10 +31,10 @@ ms.technology: windows-sec
 
 Similar to WDAC Application Control policies, WDAC AppId Tagging policies can be deployed locally and to your managed endpoints several ways. Once you've created your AppId Tagging policy, use one of the following methods to deploy:
 
-1. [Deploy policies with MDM](#Deploy-AppId-Tagging-Policies-with-MDM)
-1. [Deploy policies with MEMCM](#Deploy-AppId-Tagging-Policies-with-MEMCM)
-1. [Deploy policies using scripting](#Deploy-AppId-Tagging-Policies-via-Scripting)
-1. [Deploy using the ApplicationControl CSP](#Deploying-policies-via-the-ApplicationControl-CSP)
+1. [Deploy AppId Tagging Policies with MDM](#deploy-appid-tagging-policies-with-mdm)
+1. [Deploy policies with MEMCM](#deploy-appid-tagging-policies-with-memcm)
+1. [Deploy policies using scripting](#deploy-appid-tagging-policies-via-scripting)
+1. [Deploy using the ApplicationControl CSP](#deploying-policies-via-the-applicationcontrol-csp)
 
 ## Deploy AppId Tagging Policies with MDM
 
