@@ -1,6 +1,6 @@
 ---
-title: Use multiple Windows Defender Application Control Policies  (Windows)
-description: Windows Defender Application Control supports multiple code integrity policies for one device.
+title: Testing and Debugging AppId Tagging Policies
+description: Testing and Debugging AppId Tagging Policies to ensure your policies are deployed successfully.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: m365-security
@@ -14,7 +14,7 @@ author: jgeurten
 ms.reviewer: jsuther1974
 ms.author: dansimp
 manager: dansimp
-ms.date: 04/28/2022
+ms.date: 04/29/2022
 ms.technology: windows-sec
 ---
 
@@ -22,18 +22,18 @@ ms.technology: windows-sec
 
 **Applies to:**
 
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
 
->[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
 After deployment of the WDAC AppId Tagging policy, WDAC will fire a 3099 policy deployed event in the [Event Viewer logs](../event-id-explanations.md). You first should ensure that the policy has been successfully deployed onto the system by verifying the presence of the 3099 event. 
 
 ## Verifying Tags on Running Processes
 
-After verifying the policy has been deployed, the next step is to verify that the application processes you expect to pass the AppId Tagging policy have your tag set. Please note that processes running at the time of policy deployment will need to be restarted since WDAC can only tag processes created after the policy has been deployed. 
+After verifying the policy has been deployed, the next step is to verify that the application processes you expect to pass the AppId Tagging policy have your tag set. Note that processes running at the time of policy deployment will need to be restarted since WDAC can only tag processes created after the policy has been deployed. 
 
 1. Download and Install the Windows Debugger 
 
@@ -41,7 +41,7 @@ After verifying the policy has been deployed, the next step is to verify that th
 
 2. Get the Process ID (PID) of the process under validation
 
-	Using Task Manager, or an equivalent process monitoring tool, locate the PID of the process you wish to inspect. In the example below, I have located the PID for the running process for Microsoft Edge to be 2260. The PID will be used in the next step. 
+	Using Task Manager, or an equivalent process monitoring tool, locate the PID of the process you wish to inspect. In the example below, we've located the PID for the running process for Microsoft Edge to be 2260. The PID will be used in the next step. 
 
 	![Using Task Manager to locate the process ID - PID.](../images/appid-pid-task-mgr.png)
 
@@ -51,6 +51,6 @@ After verifying the policy has been deployed, the next step is to verify that th
 
 	![Attach to the process using WinDbg.](../images/appid-pid-windbg.png)
 
-	Lastly, in the textbox, type _!token_ and hit enter to dump the security attributes on the process, including the _POLICYAPPID://_ followed by the key you set in the policy, and its corresponding value in the Value[0] field.
+	Lastly, in the textbox, type `!token` and then press the Enter key to dump the security attributes on the process, including the _POLICYAPPID://_ followed by the key you set in the policy, and its corresponding value in the Value[0] field.
 
 	![Dump the security attributes on the process using WinDbg.](../images/appid-pid-windbg-token.png)
