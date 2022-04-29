@@ -47,7 +47,7 @@ For more info about this, see [Deploy and configure apps](/mem/intune/).
 
 2.  Any employee in the assigned group can now install the package. 
 
-For more info about this, see [Update apps using Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=301808)
+For more info about this, see [Update apps using Microsoft Intune](/mem/intune/apps/apps-windows-10-app-deploy)
 
  
 

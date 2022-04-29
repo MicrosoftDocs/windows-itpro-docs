@@ -27,7 +27,7 @@ We strongly suggest that while you're using virtualization, you also update your
 
 The Microsoft-supported options for virtualizing web apps are:
 
--   **Microsoft Enterprise Desktop Virtualization (MED-V).** Uses Microsoft Virtual PC to provide an enterprise solution for desktop virtualization. With MED-V, you can easily create, deliver, and manage corporate Virtual PC images on any Windows®-based desktop. For more information, see [MED-V](https://go.microsoft.com/fwlink/p/?LinkId=271653).
+-   **Microsoft Enterprise Desktop Virtualization (MED-V).** Uses Microsoft Virtual PC to provide an enterprise solution for desktop virtualization. With MED-V, you can easily create, deliver, and manage corporate Virtual PC images on any Windows®-based desktop. For more information, see [MED-V](/microsoft-desktop-optimization-pack/medv-v2/).
 
 -   **Client Hyper-V.** Uses the same virtualization technology previously available in Windows Server, but now installed for Windows 8.1. For more information, see [Client Hyper-V](/previous-versions/windows/it-pro/windows-8.1-and-8/hh857623(v=ws.11)).<p>
 For more information about virtualization options, see [Microsoft Desktop Virtualization](https://go.microsoft.com/fwlink/p/?LinkId=271662).
