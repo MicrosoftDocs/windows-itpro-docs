@@ -14,7 +14,7 @@ author: jgeurten
 ms.reviewer: jsuther1974
 ms.author: dansimp
 manager: dansimp
-ms.date: 04/27/2022
+ms.date: 04/29/2022
 ms.technology: windows-sec
 ---
 
@@ -26,8 +26,8 @@ ms.technology: windows-sec
 -   Windows 11
 -   Windows Server 2016 and above
 
->[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
 ## Create the policy using the WDAC Wizard
 
@@ -35,7 +35,7 @@ Using this method, you will use the WDAC Wizard and the PowerShell commands to c
 
 1. Create a new base policy using the templates:
 
-	Start with the Policy Creator task and select Multiple Policy Format and Base Policy. Select the Base Template to use for the policy. Our recommendation is to start with [Default Windows Mode](../wdac-wizard-create-base-policy#template-base-policies) and build on top of these rules. 
+	Start with the Policy Creator task and select Multiple Policy Format and Base Policy. Select the Base Template to use for the policy. Our recommendation is to start with [Default Windows Mode](../wdac-wizard-create-base-policy.md#template-base-policies) and build on top of these rules. 
 
 	![Configuring the policy base and template.](../images/appid-wdac-wizard-1.png)
 
