@@ -1,5 +1,5 @@
 ---
-title: Use multiple Windows Defender Application Control Policies  (Windows)
+title: Create your Windows Defender Application Control AppId Tagging Policies
 description: Windows Defender Application Control supports multiple code integrity policies for one device.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -54,7 +54,7 @@ Using this method, you will use the WDAC Wizard and the PowerShell commands to c
 	- Hash rules: Create a rule based off the PE Authenticode hash of a file. 
 
 
-	For more information on creating new policy file rules, see the guidelines provided in the [creating policy file rules section](../wdac-wizard-create-base-policy#Creating-custom-file-rules).
+	For more information on creating new policy file rules, see the guidelines provided in the [creating policy file rules section](../wdac-wizard-create-base-policy.md#Creating-custom-file-rules).
 
 4. Convert to AppId Tagging Policy:
 
@@ -82,7 +82,7 @@ Using this method, you will use the WDAC Wizard and the PowerShell commands to c
 
 Using this method, you'll create an AppId Tagging policy directly using the WDAC PowerShell commands. These PowerShell commands are only available on the supported platforms listed in [AppId Tagging Guide](./windows-defender-application-control-appid-tagging-guide.md). In an elevate PowerShell instance:
 
-1. Create an AppId rule for the policy based on a combination of the signing certificate chain and version of the application. This is the [SignedVersion Level](../select-types-of-rules-to-create#table-2-windows-defender-application-control-policy---file-rule-levels):
+1. Create an AppId rule for the policy based on a combination of the signing certificate chain and version of the application. This is the [SignedVersion Level](../select-types-of-rules-to-create.md#table-2-windows-defender-application-control-policy---file-rule-levels):
 
 	```powershell
 	$rule = New-CiPolicyRule -Level SignedVersion -DriverFilePath <path_to_application>
