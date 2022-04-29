@@ -423,7 +423,7 @@ This section describes the requirements and options for deploying Visio 2013 and
 ### Additional resources for Connection Groups
 
 * [Managing Connection Groups](appv-managing-connection-groups.md)
-* [Connection groups on the App-V team blog](https://blogs.msdn.microsoft.com/gladiator/tag/connection-groups/)
+* [Connection groups on the App-V team blog](/archive/blogs/gladiator/app-v-5-more-on-connection-groups)
 
 ### Additional resources for Dynamic Configuration
 

@@ -359,7 +359,7 @@ On **MDT01**:
    - Specify Product Key: Do not specify a product key at this time
    - Full Name: Contoso
    - Organization: Contoso
-   - Internet Explorer home page: https://www.contoso.com
+   - Internet Explorer home page: `https://www.contoso.com`
    - Admin Password: Do not specify an Administrator Password at this time
 
 ### Edit the Windows 10 task sequence

@@ -99,8 +99,8 @@ Internet Explorer shares many of the Windows essential services listed above. Th
 ## Related links
 
 - [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
-- [Connected Experiences in Office](/deployoffice/privacy/connected-experiences.md)
-- [Essential Services in Office](/deployoffice/privacy/essential-services.md)
+- [Connected Experiences in Office](/deployoffice/privacy/connected-experiences)
+- [Essential Services in Office](/deployoffice/privacy/essential-services)
 
 To view endpoints for Windows Enterprise, see:
 
