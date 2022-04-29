@@ -54,7 +54,7 @@ Using this method, you'll use the WDAC Wizard and the PowerShell commands to cre
 	- Hash rules: Create a rule based off the PE Authenticode hash of a file. 
 
 
-	For more information on creating new policy file rules, see the guidelines provided in the [creating policy file rules section](../wdac-wizard-create-base-policy.md#Creating-custom-file-rules).
+	For more information on creating new policy file rules, see the guidelines provided in the [creating policy file rules section](../wdac-wizard-create-base-policy.md#creating-custom-file-rules).
 
 4. Convert to AppId Tagging Policy:
 
