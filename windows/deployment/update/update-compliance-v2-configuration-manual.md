@@ -2,7 +2,7 @@
 title: Manually configuring devices for Update Compliance (preview)
 ms.reviewer: 
 manager: dougeby
-description: Manually configuring devices for Update Compliance
+description: Manually configuring devices for Update Compliance (preview)
 keywords: update compliance, oms, operations management suite, prerequisites, requirements, updates, upgrades, antivirus, antimalware, signature, log analytics, wdav
 ms.prod: w10
 ms.mktglfcycl: deploy

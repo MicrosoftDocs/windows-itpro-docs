@@ -2,7 +2,7 @@
 title: Configuring Microsoft Endpoint Manager devices for Update Compliance (preview)
 ms.reviewer: 
 manager: dougeby
-description: Configuring devices that are enrolled in Endpoint Manager for Update Compliance
+description: Configuring devices that are enrolled in Endpoint Manager for Update Compliance (preview)
 keywords: update compliance, oms, operations management suite, prerequisites, requirements, updates, upgrades, antivirus, antimalware, signature, log analytics, wdav, intune, mem
 ms.prod: w10
 ms.mktglfcycl: deploy
