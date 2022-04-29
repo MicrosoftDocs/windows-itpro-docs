@@ -58,7 +58,7 @@ Update Compliance is a Windows service hosted in Azure that uses Windows diagnos
 
 ## The Windows tab
 
-The **Windows** tab in the **Software updates** page in the Microsoft admin center is populated by data from [Update Compliance](update-compliance-v2-overview.md). The tab contains a high-level overview of update compliance for Windows clients in your environment. The tab displays two charts **Windows update status** and **End of service**.
+The **Windows** tab in the **Software updates** page in the Microsoft admin center is populated by data from [Update Compliance](update-compliance-v2-overview.md). The tab contains a high-level overview of update compliance for Windows clients in your environment. The tab displays two charts **Windows update status** and **End of service**. The Update Compliance data that populates these charts refreshes every 24 hours. For more information, see [Update Compliance data latency](update-compliance-v2-use.md#update-compliance-data-latency).
 
 ### Windows update status chart
 
