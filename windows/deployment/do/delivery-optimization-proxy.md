@@ -1,6 +1,6 @@
 ---
 title: Using a proxy with Delivery Optimization
-manager: laurawi
+manager: dansimp
 description: Settings to use with various proxy configurations to allow Delivery Optimization to work
 keywords: updates, downloads, network, bandwidth
 ms.prod: w10

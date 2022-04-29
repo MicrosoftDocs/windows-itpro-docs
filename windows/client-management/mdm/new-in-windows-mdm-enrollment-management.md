@@ -33,9 +33,9 @@ For details about Microsoft mobile device management protocols for Windows 10 a
 
 ## Breaking changes and known issues
 
-### Get command inside an atomic command is not supported
+### Get command inside an atomic command isn’t supported
 
-In Windows 10 and Windows 11, a Get command inside an atomic command is not supported. 
+In Windows 10 and Windows 11, a Get command inside an atomic command isn't supported. 
 
 ### Apps installed using WMI classes are not removed
 
@@ -270,7 +270,7 @@ The DM agent for [push-button reset](/windows-hardware/manufacture/desktop/push-
 No. Only one MDM is allowed.
 
 ### How do I set the maximum number of Azure Active Directory joined devices per user?
-1.  Login to the portal as tenant admin: https://manage.windowsazure.com.
+1.  Login to the portal as tenant admin: https://portal.azure.com.
 2.  Click Active Directory on the left pane.
 3.  Choose your tenant.
 4.  Click **Configure**.
