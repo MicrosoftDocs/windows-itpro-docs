@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: support
 ms.pagetype: security
-description: 
+description: A high-level overview of the delivery process and your options to control deployment of Internet Explorer through automatic updates.
 author: dansimp
 ms.author: dansimp
 ms.manager: dansimp

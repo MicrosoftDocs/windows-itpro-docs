@@ -106,8 +106,6 @@ If the computer is no longer frozen and now is running in a good state, use the 
 
    5.  Make sure that there's a paging file (pagefile.sys) on the system drive and that it’s at least 100 megabytes (MB) over the installed RAM (Initial and Maximum Size). 
 
-       Additionally, you can use the workaround for [space limitations on the system drive in Windows Server 2008](#space-limitations-on-the-system-drive-in-windows-server-2008). 
-
    6.  Make sure that there's more available space on the system drive than there's physical RAM. 
 
 2. Enable the CrashOnCtrlScroll registry value to allow the system to generate a dump file by using the keyboard. To do this enablement, follow these steps: 
