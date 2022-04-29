@@ -60,6 +60,9 @@ manager: dansimp
   <dd>
     <a href="#storage-wpddevicesdenywriteaccessperuser">Storage/WPDDevicesDenyWriteAccessPerUser</a>
   </dd>
+  <dd>
+    <a href="#storagehealthmonitor-disablestoragehealthmonitor">StorageHealthMonitor/DisableStorageHealthMonitor</a>
+  </dd>
 </dl>
 
 
@@ -839,3 +842,50 @@ ADMX Info:
 <hr/>
 
 <!--/Policies-->
+<!--Policy-->
+<a href="" id="storagehealthmonitor-disablestoragehealthmonitor"></a>**StorageHealthMonitor/DisableStorageHealthMonitor**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+Note: Versions prior to 21H2 will not support this policy
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Allows disable of Storage Health Monitor.
+
+Value type is integer.
+
+<!--/Description-->
+
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 - Storage Health Monitor is Enabled
+-   1 - Storage Health Monitor is Disabled
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+
+<!--/Policy-->
