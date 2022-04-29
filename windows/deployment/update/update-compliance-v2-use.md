@@ -15,6 +15,8 @@ date: 05/07/2022
 ---
 
 # Use Update Compliance (preview)
+<!--37063317, 30141258, 37063041-->
+***(Applies to: Windows 11 & Windows 10)***
 
 > [!Important]
 > This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
@@ -33,6 +35,7 @@ In this article you'll learn how to use Update Compliance to monitor Windows upd
 
 
 ## Update Compliance data latency
+
 Update Compliance uses Windows client diagnostic data as its data source. After you add Update Compliance and appropriately configure your devices, it could take 48-72 hours before they first appear.
 
 The data powering Update Compliance is refreshed every 24 hours, and refreshes with the latest data from all devices part of your organization that have been seen in the past 28 days. The entire set of data is refreshed in each daily snapshot, which means that the same data can be re-ingested even if no new data actually arrived from the device since the last snapshot. Snapshot time can be determined by the TimeGenerated field for each record, while LastScan can be used to roughly determine the freshness of each record's data.  

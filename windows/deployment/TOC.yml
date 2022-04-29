@@ -194,11 +194,11 @@
               - name: Enable the Update Compliance solution
                 href: update/update-compliance-v2-enable.md                                
               - name: Configure clients with a script
-                href: update/update-compliance-configuration-script.md
+                href: update/update-compliance-v2-configuration-script.md
               - name: Configure clients manually
-                href: update/update-compliance-configuration-manual.md
+                href: update/update-compliance-v2-configuration-manual.md
               - name: Configure clients with Microsoft Endpoint Manager
-                href: update/update-compliance-configuration-mem.md 
+                href: update/update-compliance-v2-configuration-mem.md 
             - name: Use Update Compliance (preview)
               items: 
               - name: Use Update Compliance 

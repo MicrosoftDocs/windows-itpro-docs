@@ -15,6 +15,8 @@ date: 05/07/2022
 ---
 
 # Enable Update Compliance
+<!--37063317, 30141258, 37063041-->
+***(Applies to: Windows 11 & Windows 10)***
 
 > [!Important]
 > This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
