@@ -37,7 +37,7 @@ For more information about how to configure an existing UE-V installation after 
 
 ## New UE-V template generator is available from the Windows 10 ADK
 
-UE-V for Windows 10 includes a new template generator, available from a new location. If you are upgrading from an existing UE-V installation, you'll need to use the new generator to create settings location templates. The UE-V for Windows 10 template generator is now available in the [Windows 10 Assessment and Deployment Kit](/windows-hardware/get-started/adk-install) (Windows ADK).
+UE-V for Windows 10 includes a new template generator, available from a new location. If you're upgrading from an existing UE-V installation, you’ll need to use the new generator to create settings location templates. The UE-V for Windows 10 template generator is now available in the [Windows 10 Assessment and Deployment Kit](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) (Windows ADK).
 
 ## Company Settings Center removed in UE-V for Windows 10, version 1607
 
@@ -57,7 +57,7 @@ Administrators can still define which user-customized application settings can s
 
 With Windows 10, version 1607, users can synchronize Windows application settings and Windows operating system settings to Azure instead of to OneDrive. You can use the Windows 10 enterprise sync functionality together with UE-V for on-premises domain-joined devices only.
 
-In hybrid cloud environments, UE-V can roam Win32 applications on-premises while [Enterprise State Roaming](/azure/active-directory/devices/enterprise-state-roaming-enable) (ESR) can roam the rest, e.g., Windows and desktop settings, themes, colors, etc., to an Azure cloud installation.
+In hybrid cloud environments, UE-V can roam Win32 applications on-premises while [Enterprise State Roaming](/azure/active-directory/devices/enterprise-state-roaming-overview) (ESR) can roam the rest, for example, Windows and desktop settings, themes, colors, and so on, to an Azure cloud installation.
 
 To configure UE-V to roam Windows desktop and application data only, change the following group policies:
 
@@ -76,13 +76,14 @@ Additionally, to enable Windows 10 and UE-V to work together, configure these po
 
 ## Settings Synchronization Behavior Changed in UE-V for Windows 10
 
-While earlier versions of UE-V roamed taskbar settings between Windows 10 devices, UE-V for Windows 10, version 1607 does not synchronize taskbar settings between devices running Windows 10 and devices running previous versions of Windows.
+While earlier versions of UE-V roamed taskbar settings between Windows 10 devices, UE-V for Windows 10, version 1607 doesn't synchronize taskbar settings between devices running Windows 10 and devices running previous versions of Windows.
 
 In addition, UE-V for Windows has removed support for the Windows calculator application.
 
-The Windows modern apps settings (DontSyncWindows8AppSettings) group policy is enabled by default and therefore, modern apps will not roam unless this policy is changed to disabled.
+The Windows modern apps settings (DontSyncWindows8AppSettings) group policy is enabled by default and therefore, modern apps won't roam unless this policy is changed to disabled.
 
-Please note, UE-V will roam any AppX apps that use the WinRT settings roaming API, provided that they have been opted in to roam at the time of development by the developer so there is no definitive list.
+> [!NOTE]
+> UE-V will roam any AppX apps that use the WinRT settings roaming API, if they've been opted in to roam at the time of development by the developer so there is no definitive list.
 
 ## Support Added for Roaming Network Printers
 
@@ -96,7 +97,7 @@ Printer roaming in UE-V requires one of these scenarios:
 
 -   The printer driver can be imported from Windows Update.
 
-> **Note**&nbsp;&nbsp;The UE-V printer roaming feature does not roam printer settings or preferences, such as printing double-sided.
+> **Note**&nbsp;&nbsp;The UE-V printer roaming feature doesn't roam printer settings or preferences, such as printing double-sided.
 
 ## Office 2016 Settings Location Template
 
@@ -104,13 +105,13 @@ UE-V for Windows 10, version 1607 includes the Microsoft Office 2016 settings lo
 
 > **Note**&nbsp;&nbsp;An Outlook profile must be created on any device on which a user wants to synchronize their Outlook signature. If the profile is not already created, the user can create one and then restart Outlook on that device to enable signature synchronization.
 
-UE-V works with Office 365 to determine whether Office 2016 settings are roamed by Office 365. If settings are roamed by Office 365, they are not roamed by UE-V. See [Overview of user and roaming settings for Microsoft Office](/previous-versions/office/office-2013-resource-kit/jj733593(v=office.15)) for more information.
+UE-V works with Office 365 to determine whether Office 2016 settings are roamed by Office 365. If settings are roamed by Office 365, they aren't roamed by UE-V. For more information, see [Overview of user and roaming settings for Microsoft Office](/previous-versions/office/office-2013-resource-kit/jj733593(v=office.15)).
 
-To enable settings synchronization using UE-V, do one of the following:
+To enable settings synchronization using UE-V, do one of the following steps:
 
 -   Use Group Policy to disable Office 365 synchronization
 
--   Do not enable the Office 365 synchronization experience during Office 2013 installation
+-   Don't enable the Office 365 synchronization experience during Office 2013 installation
 
 UE-V includes Office 2016, Office 2013, and Office 2010 templates.
 
