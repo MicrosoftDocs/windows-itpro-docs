@@ -44,6 +44,8 @@ Currently, the technical preview contains the following features:
     - UCUpdateAlert
 - Client data collection to populate the new Update Compliance tables
 
+:::image type="content" source="media/update-compliance-v2-query-table.png" alt-text="Screenshot of using a custom Kusto (KQL) query on Update Compliance data in Log Analytics." lightbox="media/update-compliance-v2-query-table.png":::
+
 > [!IMPORTANT]
 > Update Compliance is a Windows service hosted in Azure that uses Windows diagnostic data. You should be aware that Update Compliance doesn't meet [US Government community compliance (GCC)](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc#us-government-community-compliance) requirements. For a list of GCC offerings for Microsoft products and services, see the [Microsoft Trust Center](/compliance/regulatory/offering-home). Update Compliance is available in the Azure Commercial cloud, but not available for GCC High or United States Department of Defense customers.
 

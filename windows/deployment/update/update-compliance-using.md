@@ -20,7 +20,7 @@ ms.custom: seo-marvel-apr2020
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 - Windows 11
 
 In this section you'll learn how to use Update Compliance to monitor your device's Windows updates and Microsoft Defender Antivirus status. To configure your environment for use with Update Compliance, refer to [Get started with Update Compliance](update-compliance-get-started.md).
