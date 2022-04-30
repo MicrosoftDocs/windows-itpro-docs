@@ -61,7 +61,7 @@ On **CM01**:
 
 ## Add drivers for Windows 10
 
-This section illustrates how to add drivers for Windows 10 using the HP EliteBook 8560w as an example. For the HP EliteBook 8560w, you use HP SoftPaq Download Manager to get the drivers. The HP SoftPaq Download Manager can be accessed on the [HP Support site](https://go.microsoft.com/fwlink/p/?LinkId=619545).
+This section illustrates how to add drivers for Windows 10 using the HP EliteBook 8560w as an example. Use the HP Image Assistant from the [HP Client Management Solutions site](https://hp.com/go/clientmanagement).
 
 For the purposes of this section, we assume that you have downloaded the Windows 10 drivers for the HP EliteBook 8560w model and copied them to the **D:\Sources$\OSD\DriverSources\Windows 10 x64\Hewlett-Packard\HP EliteBook 8560w** folder on CM01.
 

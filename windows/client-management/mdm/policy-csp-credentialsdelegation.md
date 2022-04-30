@@ -65,11 +65,11 @@ manager: dansimp
 <!--Description-->
 Remote host allows delegation of non-exportable credentials
 
-When using credential delegation, devices provide an exportable version of credentials to the remote host. This exposes users to the risk of credential theft from attackers on the remote host.
+When credential delegation is being used, devices provide an exportable version of credentials to the remote host. This version exposes users to the risk of credential theft from attackers on the remote host.
 
 If you enable this policy setting, the host supports Restricted Admin or Remote Credential Guard mode.
 
-If you disable or do not configure this policy setting, Restricted Administration and Remote Credential Guard mode are not supported. User will always need to pass their credentials to the host.
+If you disable or don't configure this policy setting, Restricted Administration and Remote Credential Guard mode aren't supported. User will always need to pass their credentials to the host.
 
 <!--/Description-->
 

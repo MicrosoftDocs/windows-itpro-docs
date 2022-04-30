@@ -159,7 +159,7 @@ Here's the SyncMl example:
 <!--Description-->
 This policy setting determines whether Windows supports web-to-app linking with app URI handlers.
 
-Enabling this policy setting enables web-to-app linking so that apps can be launched with a http(s) URI.
+Enabling this policy setting enables web-to-app linking so that apps can be launched with an http(s) URI.
 
 Disabling this policy disables web-to-app linking and http(s) URIs will be opened in the default browser instead of launching the associated app.
 

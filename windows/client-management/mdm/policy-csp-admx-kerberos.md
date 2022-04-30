@@ -88,7 +88,7 @@ This policy setting controls whether a device always sends a compound authentica
 
 If you enable this policy setting and the resource domain requests compound authentication, devices that support compound authentication always send a compound authentication request. 
 
-If you disable or do not configure this policy setting and the resource domain requests compound authentication, devices will send a non-compounded authentication request first then a compound authentication request when the service requests compound authentication.
+If you disable or don't configure this policy setting and the resource domain requests compound authentication, devices will send a non-compounded authentication request first then a compound authentication request when the service requests compound authentication.
 
 <!--/Description-->
 
@@ -130,18 +130,18 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Support for device authentication using certificate will require connectivity to a DC in the device account domain which supports certificate authentication for computer accounts.
+Support for device authentication using certificate will require connectivity to a DC in the device account domain that supports certificate authentication for computer accounts.
 
 This policy setting allows you to set support for Kerberos to attempt authentication using the certificate for the device to the domain.
 
 If you enable this policy setting, the device's credentials will be selected based on the following options:
 
-- Automatic: Device will attempt to authenticate using its certificate. If the DC does not support computer account authentication using certificates then authentication with password will be attempted.
-- Force: Device will always authenticate using its certificate. If a DC cannot be found which support computer account authentication using certificates then authentication will fail.
+- Automatic: Device will attempt to authenticate using its certificate. If the DC doesn't support computer account authentication using certificates, then authentication with password will be attempted.
+- Force: Device will always authenticate using its certificate. If a DC can't be found which support computer account authentication using certificates, then authentication will fail.
 
 If you disable this policy setting, certificates will never be used.
 
-If you do not configure this policy setting, Automatic will be used.
+If you don't configure this policy setting, Automatic will be used.
 
 <!--/Description-->
 
@@ -189,7 +189,7 @@ If you enable this policy setting, you can view and change the list of DNS host 
 
 If you disable this policy setting, the host name-to-Kerberos realm mappings list defined by Group Policy is deleted.
 
-If you do not configure this policy setting, the system uses the host name-to-Kerberos realm mappings that are defined in the local registry, if they exist.
+If you don't configure this policy setting, the system uses the host name-to-Kerberos realm mappings that are defined in the local registry, if they exist.
 
 <!--/Description-->
 
@@ -234,9 +234,10 @@ ADMX Info:
 This policy setting allows you to disable revocation check for the SSL certificate of the targeted KDC proxy server.
 
 If you enable this policy setting, revocation check for the SSL certificate of the KDC proxy server is ignored by the Kerberos client. This policy setting should only be used in troubleshooting KDC proxy connections. 
-Warning: When revocation check is ignored, the server represented by the certificate is not guaranteed valid. 
+> [!WARNING]
+> When revocation check is ignored, the server represented by the certificate isn't guaranteed valid.
 
-If you disable or do not configure this policy setting, the Kerberos client enforces the revocation check for the SSL certificate. The connection to the KDC proxy server is not established if the revocation check fails.
+If you disable or don't configure this policy setting, the Kerberos client enforces the revocation check for the SSL certificate. The connection to the KDC proxy server isn't established if the revocation check fails.
 
 <!--/Description-->
 
@@ -280,9 +281,9 @@ ADMX Info:
 <!--Description-->
 This policy setting configures the Kerberos client's mapping to KDC proxy servers for domains based on their DNS suffix names.
 
-If you enable this policy setting, the Kerberos client will use the KDC proxy server for a domain when a domain controller cannot be located based on the configured mappings. To map a KDC proxy server to a domain, enable the policy setting, click Show, and then map the KDC proxy server name(s) to the DNS name for the domain using the syntax described in the options pane. In the Show Contents dialog box in the Value Name column, type a DNS suffix name. In the Value column, type the list of proxy servers using the appropriate syntax format. To view the list of mappings, enable the policy setting and then click the Show button. To remove a mapping from the list, click the mapping entry to be removed, and then press the DELETE key. To edit a mapping, remove the current entry from the list and add a new one with different parameters.
+If you enable this policy setting, the Kerberos client will use the KDC proxy server for a domain when a domain controller can't be located based on the configured mappings. To map a KDC proxy server to a domain, enable the policy setting, click Show, and then map the KDC proxy server name(s) to the DNS name for the domain using the syntax described in the options pane. In the Show Contents dialog box in the Value Name column, type a DNS suffix name. In the Value column, type the list of proxy servers using the appropriate syntax format. To view the list of mappings, enable the policy setting and then click the Show button. To remove a mapping from the list, click the mapping entry to be removed, and then press the DELETE key. To edit a mapping, remove the current entry from the list and add a new one with different parameters.
 
-If you disable or do not configure this policy setting, the Kerberos client does not have KDC proxy servers settings defined by Group Policy.
+If you disable or don't configure this policy setting, the Kerberos client doesn't have KDC proxy servers settings defined by Group Policy.
 
 <!--/Description-->
 
@@ -330,7 +331,7 @@ If you enable this policy setting, you can view and change the list of interoper
 
 If you disable this policy setting, the interoperable Kerberos V5 realm settings defined by Group Policy are deleted.
 
-If you do not configure this policy setting, the system uses the interoperable Kerberos V5 realm settings that are defined in the local registry, if they exist.
+If you don't configure this policy setting, the system uses the interoperable Kerberos V5 realm settings that are defined in the local registry, if they exist.
 
 <!--/Description-->
 
@@ -374,7 +375,7 @@ ADMX Info:
 <!--Description-->
 This policy setting controls configuring the device's Active Directory account for compound authentication.
 
-Support for providing compound authentication which is used for access control will require enough domain controllers in the resource account domains to support the requests. The Domain Administrator must configure the policy "Support Dynamic Access Control and Kerberos armoring" on all the domain controllers to support this policy.
+Support for providing compound authentication that is used for access control will require enough domain controllers in the resource account domains to support the requests. The Domain Administrator must configure the policy "Support Dynamic Access Control and Kerberos armoring" on all the domain controllers to support this policy.
 
 If you enable this policy setting, the device's Active Directory account will be configured for compound authentication by the following options:
 
@@ -384,7 +385,7 @@ If you enable this policy setting, the device's Active Directory account will be
 
 If you disable this policy setting, Never will be used.
 
-If you do not configure this policy setting, Automatic will be used.
+If you don't configure this policy setting, Automatic will be used.
 
 <!--/Description-->
 
@@ -430,7 +431,7 @@ This policy setting allows you to configure this server so that Kerberos can dec
 
 If you enable this policy setting, only services running as LocalSystem or NetworkService are allowed to accept these connections. Services running as identities different from LocalSystem or NetworkService might fail to authenticate.
 
-If you disable or do not configure this policy setting, any service is allowed to accept incoming connections by using this system-generated SPN.
+If you disable or don't configure this policy setting, any service is allowed to accept incoming connections by using this system-generated SPN.
 
 <!--/Description-->
 
