@@ -122,7 +122,7 @@ The Long-term Servicing Channel is available only in the Windows 10 Enterprise L
 
 For many IT pros, gaining visibility into feature updates early--before they’re available to the General Availability Channel — can be both intriguing and valuable for future end user communications as well as provide the means to test for any issues on the next General Availability release. Windows Insiders can consume and deploy preproduction code to their test machines, gaining early visibility into the next build. Testing the early builds helps both Microsoft and its customers because they have the opportunity to discover possible issues before the update is ever publicly available and can report it to Microsoft.
 
-Microsoft recommends that all organizations have at least a few devices enrolled in the Windows Insider Program and provide feedback on any issues they encounter. For information about the Windows Insider Program for Business, go to [Windows Insider Program for Business](/windows-insider/at-work-pro/wip-4-biz-get-started).
+Microsoft recommends that all organizations have at least a few devices enrolled in the Windows Insider Program and provide feedback on any issues they encounter. For information about the Windows Insider Program for Business, go to [Windows Insider Program for Business](/windows-insider/business/register).
 
 
 

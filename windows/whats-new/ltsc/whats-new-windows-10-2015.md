@@ -36,12 +36,12 @@ With Windows 10, you can create provisioning packages that let you quickly and e
 
 ### AppLocker
 
-AppLocker was available for Windows 8.1, and is improved with Windows 10. See [Requirements to use AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/requirements-to-use-applocker.md) for a list of operating system requirements.
+AppLocker was available for Windows 8.1, and is improved with Windows 10. See [Requirements to use AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/requirements-to-use-applocker) for a list of operating system requirements.
 
 Enhancements to AppLocker in Windows 10 include:
 
 -   A new parameter was added to the [New-AppLockerPolicy](/powershell/module/applocker/new-applockerpolicy) Windows PowerShell cmdlet that lets you choose whether executable and DLL rule collections apply to non-interactive processes. To enable this, set the **ServiceEnforcement** to **Enabled**.
--   A new [AppLocker](/windows/client-management/mdm/applocker-csp) configuration service provider was add to allow you to enable AppLocker rules by using an MDM server.
+-   A new [AppLocker](/windows/client-management/mdm/applocker-csp) configuration service provider was added to allow you to enable AppLocker rules by using an MDM server.
 
 [Learn how to manage AppLocker within your organization](/windows/device-security/applocker/applocker-overview).
 
@@ -76,9 +76,9 @@ In Windows 10, security auditing has added some improvements:
 In Windows 10, two new audit subcategories were added to the Advanced Audit Policy Configuration to provide greater granularity in audit events:
 -   [Audit Group Membership](/windows/device-security/auditing/audit-group-membership) Found in the Logon/Logoff audit category, the Audit Group Membership subcategory allows you to audit the group membership information in a user's logon token. Events in this subcategory are generated when group memberships are enumerated or queried on the PC where the logon session was created. For an interactive logon, the security audit event is generated on the PC that the user logged on to. For a network logon, such as accessing a shared folder on the network, the security audit event is generated on the PC hosting the resource.
     When this setting is configured, one or more security audit events are generated for each successful logon. You must also enable the **Audit Logon** setting under **Advanced Audit Policy Configuration\\System Audit Policies\\Logon/Logoff**. Multiple events are generated if the group membership information cannot fit in a single security audit event.
--   [Audit PNP Activity](/windows/device-security/auditing/audit-pnp-activity) Found in the Detailed Tracking category, the Audit PNP Activity subcategory allows you to audit when plug and play detects an external device.
+-   [Audit PNP Activity](/windows/security/threat-protection/auditing/audit-pnp-activity) Found in the Detailed Tracking category, the Audit PNP Activity subcategory allows you to audit when plug and play detects an external device.
     Only Success audits are recorded for this category. If you do not configure this policy setting, no audit event is generated when an external device is detected by plug and play.
-    A PnP audit event can be used to track down changes in system hardware and will be logged on the PC where the change took place. A list of hardware vendor IDs are included in the event.
+    A PnP audit event can be used to track down changes in system hardware and will be logged on the PC where the change took place. A list of hardware vendor IDs is included in the event.
 
 #### <a href="" id="bkmk-moreinfo"></a>More info added to existing audit events
 
@@ -126,7 +126,7 @@ The logon event ID 4688 has been updated to include more verbose information to 
 2.  **TargetUserName** String
     The account name of the target user.
 3.  **TargetDomainName** String
-    The domain of the target user..
+    The domain of the target user.
 4.  **TargetLogonId** String
     The logon ID of the target user.
 5.  **ParentProcessName** String
@@ -165,7 +165,7 @@ Event ID 4826 has been added to track the following changes to the Boot Configur
 
 Event ID 6416 has been added to track when an external device is detected through Plug and Play. One important scenario is if an external device that contains malware is inserted into a high-value machine that doesn’t expect this type of action, such as a domain controller.
 
-[Learn how to manage your security audit policies within your organization](/windows/device-security/auditing/security-auditing-overview).
+[Learn how to manage your security audit policies within your organization](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn319078(v=ws.11))
 
 ### Trusted Platform Module
 
@@ -196,7 +196,7 @@ User Account Control (UAC) helps prevent malware from damaging a computer and he
 
 You should not turn off UAC because this is not a supported scenario for devices running Windows 10. If you do turn off UAC, all Universal Windows Platform apps stop working. You must always set the **HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\EnableLUA** registry value to 1. If you need to provide auto elevation for programmatic access or installation, you could set the **HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\ConsentPromptBehaviorAdmin** registry value to 0, which is the same as setting the UAC slider Never Notify. This is not recommended for devices running Windows 10.
 
-For more info about how manage UAC, see [UAC Group Policy Settings and Registry Key Settings](/windows/access-protection/user-account-control/user-account-control-group-policy-and-registry-key-settings).
+For more info about how to manage UAC, see [UAC Group Policy Settings and Registry Key Settings](/windows/access-protection/user-account-control/user-account-control-group-policy-and-registry-key-settings).
 
 In Windows 10, User Account Control has added some improvements:
 

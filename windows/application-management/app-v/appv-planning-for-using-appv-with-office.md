@@ -70,7 +70,7 @@ The following table describes the integration level of each version of Office, a
 |Office 2013|Always integrated. Windows operating system integrations cannot be disabled.|
 |Office 2016|Always integrated. Windows operating system integrations cannot be disabled.|
 
-Microsoft recommends deploying Office coexistence with only one integrated Office instance. For example, if you’re using App-V to deploy Office 2010 and Office 2013, you should sequence Office 2010 in non-integrated mode. For more information about sequencing Office in non-integration (isolated) mode, see [How to sequence Microsoft Office 2010 in Microsoft Application Virtualization 5.0](https://support.microsoft.com/kb/2830069).
+Microsoft recommends deploying Office coexistence with only one integrated Office instance. For example, if you’re using App-V to deploy Office 2010 and Office 2013, you should sequence Office 2010 in non-integrated mode.
 
 ### Known limitations of Office coexistence scenarios
 

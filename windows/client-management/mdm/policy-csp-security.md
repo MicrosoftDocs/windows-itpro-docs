@@ -199,7 +199,7 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Will not force recovery from a non-ready TPM state.
+-   0 (default) – Won't force recovery from a non-ready TPM state.
 -   1 – Will prompt to clear the TPM if the TPM is in a non-ready state (or reduced functionality) which can be remediated with a TPM Clear.
 
 <!--/SupportedValues-->
@@ -326,7 +326,7 @@ This policy controls the Admin Authentication requirement in RecoveryEnvironment
 Supported values:  
 -  0 - Default: Keep using default(current) behavior
 -  1 - RequireAuthentication: Admin Authentication is always required for components in RecoveryEnvironment
--  2 - NoRequireAuthentication: Admin Authentication is not required for components in RecoveryEnvironment
+-  2 - NoRequireAuthentication: Admin Authentication isn't required for components in RecoveryEnvironment
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -344,10 +344,10 @@ The process of starting Push Button Reset (PBR) in WinRE:
 1. Open a cmd as Administrator, run command "reagentc /boottore" and restart the OS to boot to WinRE.
 1. OS should boot to the blue screen of WinRE UI, go through TroubleShoot -> Reset this PC, it should show two options: "Keep my files" and "Remove everything".
 
-If the MDM policy is set to "Default" (0) or does not exist, the admin authentication flow should work as default behavior:  
+If the MDM policy is set to "Default" (0) or doesn't exist, the admin authentication flow should work as default behavior:  
 
 1. Start PBR in WinRE, choose "Keep my files", it should pop up admin authentication.
-1. Click "<-" (right arrow) button and choose "Remove everything", it should not pop up admin authentication and just go to PBR options.
+1. Click "<-" (right arrow) button and choose "Remove everything", it shouldn't pop up admin authentication and just go to PBR options.
 
 If the MDM policy is set to "RequireAuthentication" (1)
 
@@ -356,9 +356,9 @@ If the MDM policy is set to "RequireAuthentication" (1)
 
 If the MDM policy is set to "NoRequireAuthentication" (2)
 
-1. Start PBR in WinRE, choose "Keep my files", it should not pop up admin authentication.
+1. Start PBR in WinRE, choose "Keep my files", it shouldn't pop up admin authentication.
 1. Go through PBR options and click "cancel" at final confirmation page, wait unit the UI is back.
-1. Click "TroubleShoot" -> "Reset this PC" again, choose "Remove everything", it should not pop up admin authentication neither.
+1. Click "TroubleShoot" -> "Reset this PC" again, choose "Remove everything", it shouldn't pop up admin authentication neither.
 
 <!--/Validation-->
 <!--/Policy-->
@@ -403,7 +403,7 @@ Most restricted value is 1.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Encryption is not required.
+-   0 (default) – Encryption isn't required.
 -   1 – Encryption is required.
 
 <!--/SupportedValues-->

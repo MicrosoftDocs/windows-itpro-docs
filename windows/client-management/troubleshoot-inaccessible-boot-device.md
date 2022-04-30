@@ -37,11 +37,11 @@ Any one of the following factors might cause the stop error:
 
 * Corrupted files in the **Boot** partition (for example, corruption in the volume that's labeled **SYSTEM** when you run the `diskpart` > `list vol` command)
 
-* If there is a blank GPT entry before the entry of the **Boot** partition
+* If there's a blank GPT entry before the entry of the **Boot** partition
 
 ## Troubleshoot this error
 
-Start the computer in [Windows Recovery Mode (WinRE)](/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference#span-identrypointsintowinrespanspan-identrypointsintowinrespanspan-identrypointsintowinrespanentry-points-into-winre). To do this, follow these steps.
+Start the computer in [Windows Recovery Mode (WinRE)](/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference#span-identrypointsintowinrespanspan-identrypointsintowinrespanspan-identrypointsintowinrespanentry-points-into-winre) by following these steps.
 
 1. Start the system by using [the installation media for the installed version of Windows](https://support.microsoft.com/help/15088).
 
@@ -92,7 +92,7 @@ If the `list disk` command lists the OS disks correctly, run the `list vol` comm
 
 ### Verify the integrity of Boot Configuration Database
 
-Check whether the Boot Configuration Database (BCD) has all the correct entries. To do this, run `bcdedit` at the WinRE command prompt.
+Check whether the Boot Configuration Database (BCD) has all the correct entries. To do this step, run `bcdedit` at the WinRE command prompt.
 
 To verify the BCD entries:
 
@@ -150,7 +150,7 @@ If the files are missing, and you want to rebuild the boot files, follow these s
    Bcdboot <**OSDrive* >:\windows /s <**SYSTEMdrive* >: /f ALL
    ```
 
-   For example, if we assign the `<System Drive>` (WinRE drive) the letter R and the `<OSdrive>` is the letter D, the following is the command that we would use:
+   For example, if we assign the `<System Drive>` (WinRE drive) the letter R and the `<OSdrive>` is the letter D, we would use the following command:
 
    ```console
    Bcdboot D:\windows /s R: /f ALL
@@ -159,7 +159,7 @@ If the files are missing, and you want to rebuild the boot files, follow these s
    >[!NOTE]
    >The **ALL** part of the **bcdboot** command writes all the boot files (both UEFI and BIOS) to their respective locations.
 
-If you don't have a Windows 10 ISO, format the partition and copy **bootmgr** from another working computer that has a similar Windows build. To do this, follow these steps:
+If you don't have a Windows 10 ISO, format the partition and copy **bootmgr** from another working computer that has a similar Windows build. To do the formatting and copying, follow these steps:
 
 1. Start **Notepad**.
 
@@ -197,7 +197,7 @@ After you run this command, you'll see the **Install pending** and **Uninstall P
 
 6. Expand **HKEY_LOCAL_MACHINE\OfflineComponentHive**, and check whether the **PendingXmlIdentifier** key exists. Create a backup of the **OfflineComponentHive** key, and then delete the **PendingXmlIdentifier** key.
 
-7. Unload the hive. To do this, highlight **OfflineComponentHive**, and then select **File** > **Unload hive**.
+7. Unload the hive. To do this unloading, highlight **OfflineComponentHive**, and then select **File** > **Unload hive**.
 
    > [!div class="mx-imgBorder"]
    > ![Unload Hive.](images/unloadhive.png)![Unload Hive](images/unloadhive1.png)
@@ -229,7 +229,7 @@ After you run this command, you'll see the **Install pending** and **Uninstall P
 
    If these keys exist, check each one to make sure that it has a value that's named **Start**, and that it's set to **0**. If it's not, set the value to **0**.
 
-   If any of these keys don't exist, you can try to replace the current registry hive by using the hive from **RegBack**. To do this, run the following commands:
+   If any of these keys don't exist, you can try to replace the current registry hive by using the hive from **RegBack**. To do this step, run the following commands:
 
    ```console
    cd OSdrive:\Windows\System32\config
@@ -270,7 +270,7 @@ Check whether there are any non-Microsoft upper and lower filter drivers on the 
 
 ### Running SFC and Chkdsk
 
- If the computer still doesn't start, you can try to run a **chkdisk**  process on the system drive, and then also run System File Checker. To do this, run the following commands at a WinRE command prompt:
+ If the computer still doesn't start, you can try to run a **chkdisk**  process on the system drive, and then also run System File Checker. Do these steps by running the following commands at a WinRE command prompt:
 
 *	`chkdsk /f /r OsDrive:`
 

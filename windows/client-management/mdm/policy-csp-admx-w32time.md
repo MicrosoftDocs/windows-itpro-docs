@@ -71,9 +71,9 @@ manager: dansimp
 <!--Description-->
 This policy setting allows you to specify Clock discipline and General values for the Windows Time service (W32time) for domain controllers including RODCs.
 
-If this policy setting is enabled, W32time Service on target machines use the settings provided here. Otherwise, the service on target machines use locally configured settings values.
+If this policy setting is enabled, W32time Service on target machines use the settings provided here. Otherwise, the Service on target machines use locally configured settings values.
 
-For more details on individual parameters, combinations of parameter values as well as definitions of flags, see https://go.microsoft.com/fwlink/?linkid=847809.
+For more information on individual parameters, combinations of parameter values, and definitions of flags, see https://go.microsoft.com/fwlink/?linkid=847809.
 
 **FrequencyCorrectRate**
 This parameter controls the rate at which the W32time corrects the local clock's frequency. Lower values cause slower corrections; larger values cause more frequent corrections. Default: 4 (scalar).
@@ -117,7 +117,7 @@ This parameter controls special events that may be logged to the Event Viewer Sy
 This parameter indicates the maximum error in seconds that is reported by the NTP server to clients that are requesting a time sample. (Applies only when the NTP server is using the time of the local CMOS clock.) Default: 10 seconds.
 
 **MaxPollInterval**
-This parameter controls the maximum polling interval, which defines the maximum amount of time between polls of a peer. Default: 10 in log base-2, or 1024 seconds. (Should not be set higher than 15.)
+This parameter controls the maximum polling interval, which defines the maximum amount of time between polls of a peer. Default: 10 in log base-2, or 1024 seconds. (Shouldn't be set higher than 15.)
 
 **MinPollInterval**
 This parameter controls the minimum polling interval that defines the minimum amount of time between polls of a peer. Default: 6 in log base-2, or 64 seconds.
@@ -126,10 +126,10 @@ This parameter controls the minimum polling interval that defines the minimum am
 This parameter indicates the maximum number of seconds a system clock can nominally hold its accuracy without synchronizing with a time source. If this period of time passes without W32time obtaining new samples from any of its input providers, W32time initiates a rediscovery of time sources. Default: 7800 seconds.
 
 **RequireSecureTimeSyncRequests**
-This parameter controls whether or not the DC will respond to time sync requests that use older authentication protocols. If enabled (set to 1), the DC will not respond to requests using such protocols. Default: 0 Boolean.
+This parameter controls whether or not the DC will respond to time sync requests that use older authentication protocols. If enabled (set to 1), the DC won't respond to requests using such protocols. Default: 0 Boolean.
 
 **UtilizeSslTimeData**
-This parameter controls whether W32time will use time data computed from SSL traffic on the machine as an additional input for correcting the local clock.  Default: 1 (enabled) Boolean
+This parameter controls whether W32time will use time data computed from SSL traffic on the machine as an extra input for correcting the local clock.  Default: 1 (enabled) Boolean
 
 **ClockAdjustmentAuditLimit**
 This parameter specifies the smallest local clock adjustments that may be logged to the W32time service event log on the target machine. Default: 800 Parts per million (PPM).
@@ -143,10 +143,10 @@ This parameter specifies the maximum amount of time that an entry can remain in 
 This parameter controls the maximum number of entries that are allowed in the chaining table. If the chaining table is full and no expired entries can be removed, any incoming requests are discarded. Default: 128 entries.
 
 **ChainMaxHostEntries**
-This parameter controls the maximum number of entries that are allowed in the chaining table for a particular host. Default: 4 entries.
+This parameter controls the maximum number of entries that are allowed in the chaining table for a particular host. Default: Four entries.
 
 **ChainDisable**
-This parameter controls whether or not the chaining mechanism is disabled. If chaining is disabled (set to 0), the RODC can synchronize with any domain controller, but hosts that do not have their passwords cached on the RODC will not be able to synchronize with the RODC. Default: 0 Boolean.
+This parameter controls whether or not the chaining mechanism is disabled. If chaining is disabled (set to 0), the RODC can synchronize with any domain controller, but hosts that don't have their passwords cached on the RODC won't be able to synchronize with the RODC. Default: 0 Boolean.
 
 **ChainLoggingRate**
 This parameter controls the frequency at which an event that indicates the number of successful and unsuccessful chaining attempts is logged to the System log in Event Viewer. Default: 30 minutes.
@@ -195,7 +195,7 @@ This policy setting specifies a set of parameters for controlling the Windows NT
 
 If you enable this policy setting, you can specify the following parameters for the Windows NTP Client.
 
-If you disable or do not configure this policy setting, the Windows NTP Client uses the defaults of each of the following parameters.
+If you disable or don't configure this policy setting, the Windows NTP Client uses the defaults of each of the following parameters.
 
 **NtpServer**
 The Domain Name System (DNS) name or IP address of an NTP time source. This value is in the form of ""dnsName,flags"" where ""flags"" is a hexadecimal bitmask of the flags for that host. For more information, see the NTP Client Group Policy Settings Associated with Windows Time section of the Windows Time Service Group Policy Settings.  The default value is ""time.windows.com,0x09"". 
@@ -204,7 +204,7 @@ The Domain Name System (DNS) name or IP address of an NTP time source. This valu
 This value controls the authentication that W32time uses. The default value is NT5DS.
 
 **CrossSiteSyncFlags**
-This value, expressed as a bitmask, controls how W32time chooses time sources outside its own site. The possible values are 0, 1, and 2. Setting this value to 0 (None) indicates that the time client should not attempt to synchronize time outside its site. Setting this value to 1 (PdcOnly) indicates that only the computers that function as primary domain controller (PDC) emulator operations masters in other domains can be used as synchronization partners when the client has to synchronize time with a partner outside its own site. Setting a value of 2 (All) indicates that any synchronization partner can be used. This value is ignored if the NT5DS value is not set. The default value is 2 decimal (0x02 hexadecimal).
+This value, expressed as a bitmask, controls how W32time chooses time sources outside its own site. The possible values are 0, 1, and 2. Setting this value to 0 (None) indicates that the time client shouldn't attempt to synchronize time outside its site. Setting this value to 1 (PdcOnly) indicates that only the computers that function as primary domain controller (PDC) emulator operations masters in other domains can be used as synchronization partners when the client has to synchronize time with a partner outside its own site. Setting a value of 2 (All) indicates that any synchronization partner can be used. This value is ignored if the NT5DS value isn't set. The default value is 2 decimal (0x02 hexadecimal).
 
 **ResolvePeerBackoffMinutes**
 This value, expressed in minutes, controls how long W32time waits before it attempts to resolve a DNS name when a previous attempt failed. The default value is 15 minutes.
@@ -216,7 +216,7 @@ This value controls how many times W32time attempts to resolve a DNS name before
 This NTP client value, expressed in seconds, controls how often a manually configured time source is polled when the time source is configured to use a special polling interval. If the SpecialInterval flag is enabled on the NTPServer setting, the client uses the value that is set as the SpecialPollInterval, instead of a variable interval between MinPollInterval and MaxPollInterval values, to determine how frequently to poll the time source. SpecialPollInterval must be in the range of [MinPollInterval, MaxPollInterval], else the nearest value of the range is picked. Default: 1024 seconds.
 
 **EventLogFlags**
-This value is a bitmask that controls events that may be logged to the System log in Event Viewer. Setting this value to 0x1 indicates that W32time will create an event whenever a time jump is detected. Setting this value to 0x2 indicates that W32time will create an event whenever a time source change is made. Because it is a bitmask value, setting 0x3 (the addition of 0x1 and 0x2) indicates that both time jumps and time source changes will be logged.
+This value is a bitmask that controls events that may be logged to the System log in Event Viewer. Setting this value to 0x1 indicates that W32time will create an event whenever a time jump is detected. Setting this value to 0x2 indicates that W32time will create an event whenever a time source change is made. Because it's a bitmask value, setting 0x3 (the addition of 0x1 and 0x2) indicates that both time jumps and time source changes will be logged.
 
 <!--/Description-->
 
@@ -264,7 +264,7 @@ Enabling the Windows NTP Client allows your computer to synchronize its computer
 
 If you enable this policy setting, you can set the local computer clock to synchronize time with NTP servers.
 
-If you disable or do not configure this policy setting, the local computer clock does not synchronize time with NTP servers.
+If you disable or don't configure this policy setting, the local computer clock doesn't synchronize time with NTP servers.
 
 <!--/Description-->
 
@@ -310,7 +310,7 @@ This policy setting allows you to specify whether the Windows NTP Server is enab
 
 If you enable this policy setting for the Windows NTP Server, your computer can service NTP requests from other computers.
 
-If you disable or do not configure this policy setting, your computer cannot service NTP requests from other computers.
+If you disable or don't configure this policy setting, your computer can't service NTP requests from other computers.
 
 <!--/Description-->
 
