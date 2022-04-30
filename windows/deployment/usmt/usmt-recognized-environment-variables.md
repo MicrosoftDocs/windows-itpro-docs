@@ -86,8 +86,9 @@ You can use these variables within sections in the .xml files with `context=User
 |**SYSTEM**|Refers to %**WINDIR**%\system32.|
 |**SYSTEM16**|Refers to %**WINDIR**%\system.|
 |**SYSTEM32**|Refers to %**WINDIR**%\system32.|
+|**SYSTEMDRIVE**|The drive that holds the Windows folder. Note that this is a drive name and not a folder name (`C:` not `C:\`)|
 |**SYSTEMPROFILE**|Refers to the value in **HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList\S-1-5-18 [ProfileImagePath]**.|
-|**SYSTEMROOT**|Refers to the root of the system drive.|
+|**SYSTEMROOT**|Same as **WINDIR**.|
 |**WINDIR**|Refers to the Windows folder located on the system drive.|
 
 ## <a href="" id="bkmk-2"></a>Variables that are recognized only in the user context
