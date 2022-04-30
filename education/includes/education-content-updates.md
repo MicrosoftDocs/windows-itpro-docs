@@ -2,6 +2,14 @@
 
 
 
+## Week of April 25, 2022
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 4/25/2022 | [Deploy Windows 10 in a school district (Windows 10)](/education/windows/deploy-windows-10-in-a-school-district) | modified |
+
+
 ## Week of April 18, 2022
 
 
