@@ -19,7 +19,7 @@ The table below shows the applicability of Windows:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
-|Business|Yes|Yes|
+|Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
