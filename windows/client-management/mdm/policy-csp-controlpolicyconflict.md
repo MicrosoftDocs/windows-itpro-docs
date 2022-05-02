@@ -33,11 +33,11 @@ manager: dansimp
 <a href="" id="controlpolicyconflict-mdmwinsovergp"></a>**ControlPolicyConflict/MDMWinsOverGP**  
 
 > [!NOTE]
-> MDM policy win over Group Policy are applicable to limited set of Group Policies. It dows not apply to the following GP settings.
-> - Group Policies that does not have a mapping with a MDM Policy controlled through Policy CSP.
-> - Group Policies that are not defined by ADMX (Administrative Templates). -- Example: Password policy - minimum password age.
-> - Group Policies under Windows Update category.
+> This setting is applicable to a limited set of group policies. It doesn't apply to the following group policy settings:
 >
+> - Group policies that don't have a mapping with an MDM policy that's controlled through the policy CSP.
+> - Group policies that aren't defined by an administrative template (ADMX). For example: Password policy - minimum password age.
+> - Group policies under the Windows Update category.
 
 
 <!--SupportedSKUs-->
