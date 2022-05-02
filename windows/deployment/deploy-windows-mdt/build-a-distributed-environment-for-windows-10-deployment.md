@@ -1,6 +1,7 @@
 ---
 title: Build a distributed environment for Windows 10 deployment (Windows 10)
-description: In this topic, you will learn how to replicate your Windows 10 deployment shares to facilitate the deployment of Windows 10 in remote or branch locations.
+<description: In this topic, you'll learn how to replicate your Windows 10 deployment shares to facilitate the deployment of Windows 10 in remote or branch locations.
+ms.assetid: a6cd5657-6a16-4fff-bfb4-44760902d00c
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
@@ -17,9 +18,9 @@ ms.topic: article
 
 Perform the steps in this article to build a distributed environment for Windows 10 deployment. A distributed environment for deployment is useful when you have a segmented network, for example one that is segmented geographically into two branch locations. If you work in a distributed environment, replicating the deployment shares is an important part of a deployment solution because images of 5 GB or more in size can present bandwidth issues when deployed over the wire. Replicating this content enables clients to do local deployments.
 
-Four computers are used in this topic: DC01, MDT01, MDT02, and PC0006. DC01 is a domain controller, MDT01 and MDT02 are domain member computers running Windows Server 2019, and PC0006 is a blank device where we will deploy Windows 10. The second deployment server (MDT02) will be configured for a remote site (Stockholm) by replicating the deployment share on MDT01 at the original site (New York). All devices are members of the domain contoso.com for the fictitious Contoso Corporation. 
+Four computers are used in this topic: DC01, MDT01, MDT02, and PC0006. DC01 is a domain controller, MDT01 and MDT02 are domain member computers running Windows Server 2019, and PC0006 is a blank device where we'll deploy Windows 10. The second deployment server (MDT02) will be configured for a remote site (Stockholm) by replicating the deployment share on MDT01 at the original site (New York). All devices are members of the domain contoso.com for the fictitious Contoso Corporation. 
 
-For the purposes of this article, we assume that MDT02 is prepared with the same network and storage capabilities that were specified for MDT01, except that MDT02 is located on a different subnet than MDT01. For more details on the infrastructure setup for this topic, please see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
+For the purposes of this article, we assume that MDT02 is prepared with the same network and storage capabilities that were specified for MDT01, except that MDT02 is located on a different subnet than MDT01. For more information on the infrastructure setup for this topic, see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
 
 ![figure 1.](../images/mdt-10-fig01.png)
 
@@ -29,7 +30,7 @@ Computers used in this topic.
 
 ## Replicate deployment shares
 
-Replicating the content between MDT01 (New York) and MDT02 (Stockholm) can be done in a number of different ways. The most common content replication solutions with Microsoft Deployment Toolkit (MDT) use either the Linked Deployment Shares (LDS) feature or Distributed File System Replication (DFS-R). Some organizations have used a simple robocopy script for replication of the content.
+Replicating the content between MDT01 (New York) and MDT02 (Stockholm) can be done in different ways. The most common content replication solutions with Microsoft Deployment Toolkit (MDT) use either the Linked Deployment Shares (LDS) feature or Distributed File System Replication (DFS-R). Some organizations have used a simple robocopy script for replication of the content.
 
 > [!NOTE]
 > Robocopy has options that allow for synchronization between folders. It has a simple reporting function; it supports transmission retry; and, by default, it will only copy/remove files from the source that are newer than files on the target.
@@ -40,7 +41,7 @@ LDS is a built-in feature in MDT for replicating content. However, LDS works bes
 
 ### Why DFS-R is a better option
 
-DFS-R is not only very fast and reliable, but it also offers central monitoring, bandwidth control, and a great delta replication engine. DFS-R will work equally well whether you have 2 sites or 90. When using DFS-R for MDT, we recommend running your deployment servers on Windows Server 2008 R2 or higher. From that version on, you can configure the replication targets as read-only, which is exactly what you want for MDT. This way, you can have your master deployment share centralized and replicate out changes as they happen. DFS-R will quickly pick up changes at the central deployment share in MDT01 and replicate the delta changes to MDT02.
+DFS-R isn't only fast and reliable, but it also offers central monitoring, bandwidth control, and a great delta replication engine. DFS-R will work equally well whether you have 2 sites or 90. When using DFS-R for MDT, we recommend running your deployment servers on Windows Server 2008 R2 or higher. From that version on, you can configure the replication targets as read-only, which is exactly what you want for MDT. This way, you can have your master deployment share centralized and replicate out changes as they happen. DFS-R will quickly pick up changes at the central deployment share in MDT01 and replicate the delta changes to MDT02.
 
 ## Set up Distributed File System Replication (DFS-R) for replication
 
@@ -113,7 +114,7 @@ When you have multiple deployment servers sharing the same content, you need to 
 
 On **MDT01**:
 
-1. Using Notepad, navigate to the **D:\\MDTProduction\\Control** folder and modify the Boostrap.ini file as follows. Under [DefaultGateway] enter the IP addresses for the client's default gateway in New York and Stockholm, respectively (replace 10.10.10.1 and 10.10.20.1 with your default gateways). The default gateway setting is what tells the client which deployment share (i.e. server) to use. 
+1. Using Notepad, navigate to the **D:\\MDTProduction\\Control** folder and modify the Boostrap.ini file as follows. Under [DefaultGateway] enter the IP addresses for the client's default gateway in New York and Stockholm, respectively (replace 10.10.10.1 and 10.10.20.1 with your default gateways). The default gateway setting is what tells the client which deployment share (that is, server) to use. 
 
    ```ini
    [Settings]
@@ -152,7 +153,7 @@ On **MDT01**:
 
    ## Replicate the content
 
-   Once the MDT01 and MDT02 servers are prepared, you are ready to configure the actual replication.
+   Once the MDT01 and MDT02 servers are prepared, you're ready to configure the actual replication.
 
    ### Create the replication group
 
@@ -247,7 +248,7 @@ Now you should have a solution ready for deploying the Windows 10 client to the
     1.  Select a task sequence to execute on this computer: Windows 10 Enterprise x64 RTM Custom Image 
     2.  Computer Name: PC0006
     3.  Applications: Select the Install - Adobe Reader
-4.  Setup will now start and perform the following:
+4.  Setup will now start and perform the following steps:
     1.  Install the Windows 10 Enterprise operating system.
     2.  Install applications.
     3.  Update the operating system using your local Windows Server Update Services (WSUS) server.
