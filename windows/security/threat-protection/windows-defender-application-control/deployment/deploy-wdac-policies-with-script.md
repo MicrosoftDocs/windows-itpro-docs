@@ -85,8 +85,8 @@ In addition to the steps outlined above, the binary policy file must also be cop
 1. Mount the EFI volume and make the directory, if it does not exist, in an elevated PowerShell prompt: 
 
     ```powershell
-   $MountPoint = 'C:\EFI'
-   $EFIDestinationFolder = "$MountPoint\Microsoft\Boot\CiPolicies\Active"
+   $MountPoint = 'C:\EFIMount'
+   $EFIDestinationFolder = "$MountPoint\EFI\Microsoft\Boot\CiPolicies\Active"
    $EFIPartition = (Get-Partition | Where-Object IsSystem).AccessPaths[0]
    mountvol $MountPoint $EFIPartition
    mkdir $EFIDestinationFolder

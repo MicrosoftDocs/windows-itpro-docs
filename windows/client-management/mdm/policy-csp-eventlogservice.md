@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - EventLogService
-description: Learn how to use the Policy CSP - EventLogService settting to control Event Log behavior when the log file reaches its maximum size.
+description: Learn how to use the Policy CSP - EventLogService setting to control Event Log behavior when the log file reaches its maximum size.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -67,9 +67,9 @@ manager: dansimp
 <!--Description-->
 This policy setting controls Event Log behavior when the log file reaches its maximum size.
 
-If you enable this policy setting and a log file reaches its maximum size, new events are not written to the log and are lost.
+If you enable this policy setting and a log file reaches its maximum size, new events aren't written to the log and are lost.
 
-If you disable or do not configure this policy setting and a log file reaches its maximum size, new events overwrite old events.
+If you disable or don't configure this policy setting and a log file reaches its maximum size, new events overwrite old events.
 
 Note: Old events may or may not be retained according to the "Backup log automatically when full" policy setting.
 
@@ -115,9 +115,9 @@ ADMX Info:
 <!--Description-->
 This policy setting specifies the maximum size of the log file in kilobytes.
 
-If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2147483647 kilobytes) in kilobyte increments.
+If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2,147,483,647 kilobytes) in kilobyte increments.
 
-If you disable or do not configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog and it defaults to 20 megabytes.
+If you disable or don't configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog and it defaults to 20 megabytes.
 
 <!--/Description-->
 
@@ -161,9 +161,9 @@ ADMX Info:
 <!--Description-->
 This policy setting specifies the maximum size of the log file in kilobytes.
 
-If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2147483647 kilobytes) in kilobyte increments.
+If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2,147,483,647 kilobytes) in kilobyte increments.
 
-If you disable or do not configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog and it defaults to 20 megabytes.
+If you disable or don't configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog and it defaults to 20 megabytes.
 
 <!--/Description-->
 
@@ -207,9 +207,9 @@ ADMX Info:
 <!--Description-->
 This policy setting specifies the maximum size of the log file in kilobytes.
 
-If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2147483647 kilobytes) in kilobyte increments.
+If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2,147,483,647 kilobytes) in kilobyte increments.
 
-If you disable or do not configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog and it defaults to 20 megabytes.
+If you disable or don't configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog and it defaults to 20 megabytes.
 
 <!--/Description-->
 

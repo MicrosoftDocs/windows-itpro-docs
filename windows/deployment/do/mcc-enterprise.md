@@ -114,7 +114,7 @@ For questions regarding these instructions contact [msconnectedcache@microsoft.c
 As part of the MCC preview onboarding process an Azure subscription ID must be provided to Microsoft. 
 
 > [!IMPORTANT]
-> [Contact Microsoft](mailto:mccforenterprise@microsoft.com?subject=[MCC%20for%20Enterprise]%20Please%20add%20our%20Azure%20subscription%20to%20the%20allow%20list) and provide this information if you have not already. You'll not be able to proceed if you skip this step.
+> [Take this survey](https://aka.ms/MSConnectedCacheSignup) and provide your Azure subscription ID and contact information to be added to the allow list for this preview. You will not be able to proceed if you skip this step.
 
 For information about creating or locating your subscription ID, see [Steps to obtain an Azure Subscription ID](#steps-to-obtain-an-azure-subscription-id).
 
@@ -122,7 +122,7 @@ For information about creating or locating your subscription ID, see [Steps to o
 
 The MCC Azure management portal is used to create and manage MCC nodes. An Azure Subscription ID is used to grant access to the preview and to create the MCC resource in Azure and Cache nodes. 
 
-Send email to the MCC team ([mccforenterprise@microsoft.com](mailto:mccforenterprise@microsoft.com)) with your Azure subscription ID to get access to the preview. The team will send you a link to the Azure portal which will allow you to create the resource described below. 
+Once you take the survey above and the MCC team adds your subscription id to the allow list, you will be given a link to the Azure portal where you can create the resource described below. 
 
 1.  On the Azure Portal home page, choose **Create a resource**:  
     ![eMCC img02](images/emcc02.png)
