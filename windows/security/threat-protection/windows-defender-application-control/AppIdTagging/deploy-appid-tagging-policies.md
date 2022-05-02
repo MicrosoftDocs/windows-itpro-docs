@@ -38,11 +38,11 @@ Similar to WDAC Application Control policies, WDAC AppId Tagging policies can be
 
 ## Deploy AppId Tagging Policies with MDM
 
-While policies can't be created in MDM, custom AppId Tagging policies can be deployed to endpoints using [the OMA-URI feature in MDM](../deploy-windows-defender-application-control-policies-using-intune.md#deploy-wdac-policies-with-custom-oma-uri). 
+Custom AppId Tagging policies can be deployed to endpoints using [the OMA-URI feature in MDM](../deploy-windows-defender-application-control-policies-using-intune.md#deploy-wdac-policies-with-custom-oma-uri). 
 
 ## Deploy AppId Tagging Policies with MEMCM
 
-Similar to MDM, policies can only be deployed via MEMCM not created. Using the [deployment task sequences](/deployment/deploy-windows-defender-application-control-policies-with-memcm.md#deploy-custom-wdac-policies-using-packagesprograms-or-task-sequences), policies can be deployed to your managed endpoints and users. 
+Custom AppId Tagging policies can deployed via MEMCM using the [deployment task sequences](/deployment/deploy-windows-defender-application-control-policies-with-memcm.md#deploy-custom-wdac-policies-using-packagesprograms-or-task-sequences), policies can be deployed to your managed endpoints and users. 
 
 ### Deploy AppId Tagging Policies via Scripting
 

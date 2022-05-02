@@ -31,11 +31,11 @@ ms.technology: windows-sec
 
 ## Create the policy using the WDAC Wizard
 
-Using this method, you'll use the WDAC Wizard and the PowerShell commands to create an application control policy and convert it to an AppIdTagging policy. The WDAC Wizard is available for download at the [WDAC Wizard Installer site](https://aka.ms/wdacwizard). These PowerShell commands are only available on the supported platforms listed in [AppId Tagging Guide](./windows-defender-application-control-appid-tagging-guide.md).
+You can use the WDAC Wizard and the PowerShell commands to create an application control policy and convert it to an AppIdTagging policy. The WDAC Wizard is available for download at the [WDAC Wizard Installer site](https://aka.ms/wdacwizard). These PowerShell commands are only available on the supported platforms listed in [AppId Tagging Guide](./windows-defender-application-control-appid-tagging-guide.md).
 
 1. Create a new base policy using the templates:
 
-	Start with the Policy Creator task and select Multiple Policy Format and Base Policy. Select the Base Template to use for the policy. Our recommendation is to start with [Default Windows Mode](../wdac-wizard-create-base-policy.md#template-base-policies) and build on top of these rules. 
+	Start with the Policy Creator task and select Multiple Policy Format and Base Policy. Select the Base Template to use for the policy. The example below shows beginning with the [Default Windows Mode](../wdac-wizard-create-base-policy.md#template-base-policies) template and build on top of these rules. 
 
 	![Configuring the policy base and template.](../images/appid-wdac-wizard-1.png)
 
@@ -58,31 +58,18 @@ Using this method, you'll use the WDAC Wizard and the PowerShell commands to cre
 
 4. Convert to AppId Tagging Policy:
 
-	After the Wizard builds the policy file, open the file in a text editor and remove the entire "Value=131" SigningScenario text block. The only remaining signing scenario should be "Value=12" or the usermode/application section. Next, open PowerShell in an elevated prompt and run the following command. Replace the AppIdTagging Key-Value pair for your scenario:
+	After the Wizard builds the policy file, open the file in a text editor and remove the entire "Value=131" SigningScenario text block. The only remaining signing scenario should be "Value=12" which is the usermode application section. Next, open PowerShell in an elevated prompt and run the following command. Replace the AppIdTagging Key-Value pair for your scenario:
 
 	```powershell
 	Set-CIPolicyIdInfo -ResetPolicyID -FilePath .\AppIdPolicy.xml -AppIdTaggingPolicy -AppIdTaggingKey "MyKey" -AppIdTaggingValue "MyValue"
 	```
 	The policyID GUID will be returned by PowerShell if successful. 
 
-5. Depending on your deployment method, convert the xml to binary: 
-
-	```powershell
-	Convertfrom-CIPolicy .\policy.xml ".\{PolicyIDGUID}.cip"
-	```
-
-6. Optionally, deploy it for local testing:
-
-	```powershell
-		copy ".\{Policy ID}.cip" c:\windows\system32\codeintegrity\CiPolicies\Active\
-		./RefreshPolicy.exe
-	```
-
 ## Create the policy using PowerShell 
 
 Using this method, you'll create an AppId Tagging policy directly using the WDAC PowerShell commands. These PowerShell commands are only available on the supported platforms listed in [AppId Tagging Guide](./windows-defender-application-control-appid-tagging-guide.md). In an elevate PowerShell instance:
 
-1. Create an AppId rule for the policy based on a combination of the signing certificate chain and version of the application. This is the [SignedVersion Level](../select-types-of-rules-to-create.md#table-2-windows-defender-application-control-policy---file-rule-levels):
+1. Create an AppId rule for the policy based on a combination of the signing certificate chain and version of the application. In the example below, the level has been set to SignedVersion. Any of the [WDAC File Rule Levels](../select-types-of-rules-to-create.md#table-2-windows-defender-application-control-policy---file-rule-levels) can be used in AppId rules:
 
 	```powershell
 	$rule = New-CiPolicyRule -Level SignedVersion -DriverFilePath <path_to_application>
@@ -109,16 +96,24 @@ Using this method, you'll create an AppId Tagging policy directly using the WDAC
 	```
 	The policyID GUID will be returned by PowerShell if successful. 
 
-5. Depending on your deployment method, convert the xml to binary: 
+## Deploy for Local Testing
+
+After creating your AppId Tagging policy in the above steps, you can deploy the policy to your local machine for testing before broadly deploying the policy to your endpoints:
+
+1. Depending on your deployment method, convert the xml to binary: 
 
 	```powershell
 	Convertfrom-CIPolicy .\policy.xml ".\{PolicyIDGUID}.cip"
 	```
 
-6. Optionally, deploy it for local testing:
+2. Optionally, deploy it for local testing:
 
 	```powershell
-	copy ".\{Policy ID}.cip" c:\windows\system32\codeintegrity\CiPolicies\Active\
-	./RefreshPolicy.exe
+		copy ".\{Policy ID}.cip" c:\windows\system32\codeintegrity\CiPolicies\Active\
+		./RefreshPolicy.exe
 	```
+
 	RefreshPolicy.exe is available for download from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=102925).
+
+## Next Steps
+For more information on debugging and broad deployment of the AppId Tagging policy, see [Debugging AppId policies](./debugging-operational-guide-appid-tagging-policies.md) and [Deploying AppId policies](deploy-appid-tagging-policies.md). 
