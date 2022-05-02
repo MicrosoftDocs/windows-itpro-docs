@@ -36,7 +36,7 @@ With Windows 10, you can create provisioning packages that let you quickly and e
 
 ### AppLocker
 
-AppLocker was available for Windows 8.1, and is improved with Windows 10. See [Requirements to use AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/requirements-to-use-applocker.md) for a list of operating system requirements.
+AppLocker was available for Windows 8.1, and is improved with Windows 10. See [Requirements to use AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/requirements-to-use-applocker) for a list of operating system requirements.
 
 Enhancements to AppLocker in Windows 10 include:
 

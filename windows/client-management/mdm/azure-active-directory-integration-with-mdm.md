@@ -378,8 +378,9 @@ Additional claims may be present in the Azure AD token, such as:
 
 Access tokens issued by Azure AD are JSON web tokens (JWTs). A valid JWT token is presented by Windows at the MDM enrollment endpoint to start the enrollment process. There are a couple of options to evaluate the tokens:
 
--   Use the JWT Token Handler extension for WIF to validate the contents of the access token and extract claims required for use. For more information, see [JSON Web Token Handler](/previous-versions/dotnet/framework/security/json-web-token-handler).
+-   Use the JWT Token Handler extension for WIF to validate the contents of the access token and extract claims required for use. For more information, see [JwtSecurityTokenHandler Class](/dotnet/api/system.identitymodel.tokens.jwt.jwtsecuritytokenhandler).
 -   Refer to the Azure AD authentication code samples to get a sample for working with access tokens. For an example, see [NativeClient-DotNet](https://go.microsoft.com/fwlink/p/?LinkId=613667).
+
 
 ## Device Alert 1224 for Azure AD user token
 
