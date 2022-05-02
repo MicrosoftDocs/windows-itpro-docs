@@ -15,10 +15,10 @@ ms.collection: highpri
 
 # Collect data using Network Monitor
 
-In this article, you will learn how to use Microsoft Network Monitor 3.4, which is a tool for capturing network traffic.
+In this article, you'll learn how to use Microsoft Network Monitor 3.4, which is a tool for capturing network traffic.
 
 > [!NOTE]
-> Network Monitor is the archived protocol analyzer and is no longer under development. Also, Microsoft Message Analyzer (MMA) was retired and its download packages were removed from microsoft.com sites on November 25, 2019. There is currently no Microsoft replacement for Microsoft Message Analyzer in development at this time.  For similar functionality, consider using another, non-Microsoft network protocol analyzer tool. For more details, see [Microsoft Message Analyzer Operating Guide](/message-analyzer/microsoft-message-analyzer-operating-guide).
+> Network Monitor is the archived protocol analyzer and is no longer under development. Also, Microsoft Message Analyzer (MMA) was retired and its download packages were removed from microsoft.com sites on November 25, 2019. There is currently no Microsoft replacement for Microsoft Message Analyzer in development at this time.  For similar functionality, consider using another, non-Microsoft network protocol analyzer tool. For more information, see [Microsoft Message Analyzer Operating Guide](/message-analyzer/microsoft-message-analyzer-operating-guide).
 
 To get started, [download Network Monitor tool](https://www.microsoft.com/download/details.aspx?id=4865). When you install Network Monitor, it installs its driver and hooks it to all the network adapters installed on the device. You can see the same on the adapter properties, as shown in the following image:
 
@@ -36,13 +36,13 @@ When the driver gets hooked to the network interface card (NIC) during installat
 
     ![Image of the New Capture option on menu.](images/tcp-ts-4.png)
 
-3. Reproduce the issue, and you will see that Network Monitor grabs the packets on the wire.
+3. Reproduce the issue, and you'll see that Network Monitor grabs the packets on the wire.
 
     ![Frame summary of network packets.](images/tcp-ts-5.png)
 
 4. Select **Stop**, and go to **File > Save as** to save the results. By default, the file will be saved as a ".cap" file.
 
-The saved file has captured all the traffic that is flowing to and from the selected network adapters on the local computer. However, your interest is only to look into the traffic/packets that are related to the specific connectivity problem you are facing. So you will need to filter the network capture to see only the related traffic. 
+The saved file has captured all the traffic that is flowing to and from the selected network adapters on the local computer. However, your interest is only to look into the traffic/packets that are related to the specific connectivity problem you're facing. So you'll need to filter the network capture to see only the related traffic. 
  
 **Commonly used filters**
  
@@ -58,7 +58,7 @@ The saved file has captured all the traffic that is flowing to and from the sele
 >[!TIP]
 >If you want to filter the capture for a specific field and do not know the syntax for that filter, just right-click that field and select **Add *the selected value* to Display Filter**. 
  
-Network traces which are collected using the **netsh** commands built in to Windows are of the extension "ETL". However, these ETL files can be opened using Network Monitor for further analysis. 
+Network traces that are collected using the **netsh** commands built in to Windows are of the extension "ETL". However, these ETL files can be opened using Network Monitor for further analysis. 
 
 ## More information
 

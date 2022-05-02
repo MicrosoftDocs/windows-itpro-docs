@@ -21,7 +21,7 @@ The PXLOGICAL configuration service provider is used to add, remove, or modify W
 > This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
 
 
-The following shows the PXLOGICAL configuration service provider management object in tree format as used by OMA Client Provisioning for initial bootstrapping of the device. The OMA DM protocol is not supported by this configuration service provider.
+The following example shows the PXLOGICAL configuration service provider management object in tree format as used by OMA Client Provisioning for initial bootstrapping of the device. The OMA DM protocol isn't supported by this configuration service provider.
 
 ```console
 PXLOGICAL
@@ -46,7 +46,7 @@ PXLOGICAL
 ```
 
 
-The following shows the PXLOGICAL configuration service provider management object in tree format as used by OMA Client Provisioning for updating the bootstrapping of the device. The OMA DM protocol is not supported by this configuration service provider.
+The following example shows the PXLOGICAL configuration service provider management object in tree format as used by OMA Client Provisioning for updating the bootstrapping of the device. The OMA DM protocol isn't supported by this configuration service provider.
 
 ```console
 PXLOGICAL
@@ -74,17 +74,17 @@ PXLOGICAL
 <a href="" id="pxphysical"></a>**PXPHYSICAL**  
 Defines a group of logical proxy settings.
 
-The element's mwid attribute is a Microsoft provisioning XML attribute, and is optional when adding a NAP or a proxy. It is required when updating and deleting existing NAPs and proxies and must have its value set to 1.
+The element's mwid attribute is a Microsoft provisioning XML attribute, and is optional when adding a NAP or a proxy. It's required when updating and deleting existing NAPs and proxies and must have its value set to 1.
 
 <a href="" id="domain"></a>**DOMAIN**  
 Specifies the domain associated with the proxy (for example, "\*.com").
 
-A Windows device supports only one proxy that does not have a DOMAIN parameter, or has an empty DOMAIN value. That is, the device only supports one default proxy. All other proxy configurations must have a DOMAIN parameter with a non-empty value. A query of this parameter returns a semicolon-delimited string of all domains associated with the proxy.
+A Windows device supports only one proxy that doesn't have a DOMAIN parameter, or has an empty DOMAIN value. That is, the device only supports one default proxy. All other proxy configurations must have a DOMAIN parameter with a non-empty value. A query of this parameter returns a semicolon-delimited string of all domains associated with the proxy.
 
 <a href="" id="name"></a>**NAME**  
 Specifies the name of the logical proxy.
 
-When a list of proxies is displayed to the user they are displayed together in a single line, so the length of this value should be short for readability.
+When a list of proxies is displayed to the user they're displayed together in a single line, so the length of this value should be short for readability.
 
 <a href="" id="port"></a>**PORT**  
 Defines the bindings between a port number and one or more protocols or services.
@@ -94,7 +94,7 @@ This configuration service provider can accept a maximum of two ports per physic
 <a href="" id="portnbr"></a>**PORTNBR**  
 Specifies the port number associated with some services on this proxy.
 
-If the PORTNBR is 80 or 443, or the PORT characteristic is missing, it is treated as an HTTP proxy.
+If the PORTNBR is 80 or 443, or the PORT characteristic is missing, it's treated as an HTTP proxy.
 
 <a href="" id="service"></a>**SERVICE**  
 Specifies the service associated with the port number.
@@ -104,7 +104,7 @@ Windows supports accepting WAP push connectionless sessions over a Short Message
 <a href="" id="pushenabled"></a>**PUSHENABLED**  
 Specifies whether or not push operations are enabled.
 
-If this element is used in PXLOGICAL, it applies to all of the PXPHYSICAL elements embedded in the PXLOGICAL element. A value of "0" indicates that the proxy does not support push operations. A value of "1" indicates that the proxy supports push operations.
+If this element is used in PXLOGICAL, it applies to all of the PXPHYSICAL elements embedded in the PXLOGICAL element. A value of "0" indicates that the proxy doesn't support push operations. A value of "1" indicates that the proxy supports push operations.
 
 <a href="" id="proxy-id"></a>**PROXY-ID**  
 Used during initial bootstrapping. Specifies the unique identifier of the logical proxy.
@@ -120,12 +120,12 @@ Specifies whether or not the physical proxies in this logical proxy are privileg
 <a href="" id="pxphysical"></a>**PXPHYSICAL**  
 Defines a group of physical proxy settings associated with the parent logical proxy.
 
-The element's mwid attribute is a Microsoft provisioning XML attribute, and is optional when adding a NAP or a proxy. It is required when updating and deleting existing NAPs and proxies and must have its value set to 1.
+The element's mwid attribute is a Microsoft provisioning XML attribute, and is optional when adding a NAP or a proxy. It's required when updating and deleting existing NAPs and proxies and must have its value set to 1.
 
 <a href="" id="physical-proxy-id"></a>**PHYSICAL-PROXY-ID**  
 Used during initial bootstrapping. Specifies the identifier of the physical proxy.
 
-When a list of proxies is displayed to the user they are displayed together in a single line, so the length of this value should be short for readability.
+When a list of proxies is displayed to the user they're displayed together in a single line, so the length of this value should be short for readability.
 
 <a href="" id="physical-proxy-id"></a>***PHYSICAL-PROXY-ID***  
 Used during bootstrapping updates. Specifies the identifier of the physical proxy.
@@ -150,7 +150,7 @@ If **TO-NAPID** is used, the NAP whose **NAPID** is referred to by **TO-NAPID** 
 
 The following table shows the Microsoft custom elements that this configuration service provider supports for OMA Client Provisioning.
 
-These features are available only for the device technique. In addition, the parameter-query and characteristic-query features are not supported for all PXPHYSICAL proxy parameters for all PXADDR types. All parameters can be queried when the PXPHYSICAL proxy PXADDRType is IPv4. For example, if a mobile operator queries the TO-NAPID parameter of a PXPHYSICAL proxy and the PXADDR Type is E164, a noparm is returned.
+These features are available only for the device technique. In addition, the parameter-query and characteristic-query features aren't supported for all PXPHYSICAL proxy parameters for all PXADDR types. All parameters can be queried when the PXPHYSICAL proxy PXADDRType is IPv4. For example, if a mobile operator queries the TO-NAPID parameter of a PXPHYSICAL proxy and the PXADDR Type is E164, a noparm is returned.
 
 |Feature|Available|
 |--- |--- |

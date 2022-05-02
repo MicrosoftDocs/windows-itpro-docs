@@ -137,7 +137,7 @@ sections:
           The desktop experience in Windows 10 has been improved to provide a better experience for people that use a traditional mouse and keyboard. Key changes include:
           - Start menu is a launching point for access to apps.
           - Universal apps now open in windows instead of full screen.
-          - [Multitasking is improved with adjustable Snap](http://blogs.windows.com/bloggingwindows/2015/06/04/arrange-your-windows-in-a-snap/), which allows you to have more than two windows side-by-side on the same screen and to customize how those windows are arranged.
+          - [Multitasking is improved with adjustable Snap](https://blogs.windows.com/windows-insider/2015/06/04/arrange-your-windows-in-a-snap/), which allows you to have more than two windows side-by-side on the same screen and to customize how those windows are arranged.
           - Tablet Mode to simplify using Windows with a finger or pen by using touch input.
           
   - name: Help and support
@@ -147,6 +147,6 @@ sections:
         answer: |
           Use the following resources for additional information about Windows 10.
           - If you are an IT professional or if you have a question about administering, managing, or deploying Windows 10 in your organization or business, visit the [Windows 10 IT Professional forums](https://social.technet.microsoft.com/forums/home?category=windows10itpro) on TechNet.
-          - If you are an end user or if you have a question about using Windows 10, visit the [Windows 10 forums on Microsoft Community](https://answers.microsoft.com/windows/forum/windows_10).
+          - If you are an end user or if you have a question about using Windows 10, visit the [Windows 10 forums on Microsoft Community](https://answers.microsoft.com/windows/forum).
           - If you are a developer or if you have a question about making apps for Windows 10, visit the [Windows Desktop Development forums](https://social.msdn.microsoft.com/forums/en-us/home?category=windowsdesktopdev).
           - If you have a question about Internet Explorer, visit the [Internet Explorer forums](https://social.technet.microsoft.com/forums/ie/en-us/home).
