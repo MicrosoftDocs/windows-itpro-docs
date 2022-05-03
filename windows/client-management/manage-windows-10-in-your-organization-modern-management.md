@@ -135,6 +135,6 @@ There are a variety of steps you can take to begin the process of modernizing de
 
 ## Related topics
 
--   [What is Intune?](//mem/intune/fundamentals/what-is-intune)
+-   [What is Intune?](/mem/intune/fundamentals/what-is-intune)
 -   [Windows 10 Policy CSP](./mdm/policy-configuration-service-provider.md)
 -   [Windows 10 Configuration service Providers](./mdm/configuration-service-provider-reference.md)

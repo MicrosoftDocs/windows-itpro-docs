@@ -14,7 +14,7 @@ author: jsuther1974
 ms.reviewer: jogeurte
 ms.author: dansimp
 manager: dansimp
-ms.date: 02/01/2022
+ms.date: 04/30/2022
 ms.technology: windows-sec
 ---
 
@@ -39,7 +39,7 @@ A Windows Defender Application Control (WDAC) policy logs events locally in Wind
 | 3076 | This event is the main WDAC block event for audit mode policies. It indicates that the file would have been blocked if the WDAC policy was enforced. |
 | 3077 | This event is the main WDAC block event for enforced policies. It indicates that the file did not pass your WDAC policy and was blocked. |
 | 3089 | This event contains signature information for files that were blocked or would have been blocked by WDAC. One 3089 event is created for each signature of a file. The event shows the total number of signatures found and an index value to identify the current signature. Unsigned files produce a single 3089 event with TotalSignatureCount 0. 3089 events are correlated with 3004, 3033, 3034, 3076 and 3077 events. You can match the events using the "Correlation ActivityID" found in the "System" portion of the event. |
-| 3099 | Indicates that a policy has been loaded. This event also includes information about the policy options that were specified by the policy. Refer to the  |
+| 3099 | Indicates that a policy has been loaded. This event also includes information about the WDAC policy options that were specified by the WDAC policy. |
 
 ## WDAC events found in the Microsoft Windows AppLocker MSI and Script log
 
@@ -57,7 +57,7 @@ Events 3090, 3091 and 3092 prove helpful diagnostic information when the ISG or 
 | Event ID | Explanation |
 |--------|---------|
 | 3090 | *Optional* This event indicates that a file was allowed to run based purely on ISG or managed installer. |
-| 3091 | This event indicates that a file did not have ISG or managed installer authorization and the policy is in audit mode. |
+| 3091 | This event indicates that a file did not have ISG or managed installer authorization and the WDAC policy is in audit mode. |
 | 3092 | This event is the enforcement mode equivalent of 3091. |
 
 The above events are reported per active policy on the system, so you may see multiple events for the same file.
@@ -72,8 +72,8 @@ The following information is found in the details for 3090, 3091, and 3092 event
 | PassesManagedInstaller | Indicates whether the file originated from a MI |
 | SmartlockerEnabled | Indicates whether the specified policy enables ISG trust |
 | PassesSmartlocker | Indicates whether the file had positive reputation according to the ISG |
-| AuditEnabled | True if the policy is in audit mode, otherwise it is in enforce mode |
-| PolicyName | The name of the policy to which the event applies |
+| AuditEnabled | True if the WDAC policy is in audit mode, otherwise it is in enforce mode |
+| PolicyName | The name of the WDAC policy to which the event applies |
 
 ### Enabling ISG and MI diagnostic events
 
@@ -149,28 +149,38 @@ A list of other relevant event IDs and their corresponding description.
 | 3023 | The driver file under validation did not meet the requirements to pass the application control policy. |
 | 3024 | Windows application control was unable to refresh the boot catalog file. |
 | 3026 | The catalog loaded is signed by a signing certificate that has been revoked by Microsoft and/or the certificate issuing authority. |
+| 3032 | The file under validation is revoked by the system or the file has a signature that has been revoked. 
 | 3033 | The file under validation did not meet the requirements to pass the application control policy. |
-| 3034 | The file under validation would not meet the requirements to pass the application control policy if the policy was enforced. The file was allowed since the policy is in audit mode. |
+| 3034 | The file under validation would not meet the requirements to pass the application control policy if the WDAC policy was enforced. The file was allowed since the WDAC policy is in audit mode. |
 | 3036 | The signed file under validation is signed by a code signing certificate that has been revoked by Microsoft or the certificate issuing authority. |
-| 3064 | If the policy was enforced, a user mode DLL under validation would not meet the requirements to pass the application control policy. The DLL was allowed since the policy is in audit mode. |
-| 3065 | [Ignored] If the policy was enforced, a user mode DLL under validation would not meet the requirements to pass the application control policy. |
+| 3064 | If the WDAC policy was enforced, a user mode DLL under validation would not meet the requirements to pass the application control policy. The DLL was allowed since the WDAC policy is in audit mode. |
+| 3065 | If the WDAC policy was enforced, a user mode DLL under validation would not meet the requirements to pass the application control policy. |
 | 3074 | Page hash failure while hypervisor-protected code integrity was enabled. |
-| 3075 | This event monitors the performance of the Code Integrity policy check a file. |
+| 3075 | This event measures the performance of the WDAC policy check during file validation. |
+| 3076 | This event is the main WDAC block event for audit mode policies. It indicates that the file would have been blocked if the WDAC policy was enforced. |
+| 3077 | This event is the main WDAC block event for enforced policies. It indicates that the file did not pass your WDAC policy and was blocked. |
 | 3079 | The file under validation did not meet the requirements to pass the application control policy. |
-| 3080 | If the policy was in enforced mode, the file under validation would not have met the requirements to pass the application control policy. |
+| 3080 | If the WDAC policy was in enforced mode, the file under validation would not have met the requirements to pass the application control policy. |
 | 3081 | The file under validation did not meet the requirements to pass the application control policy. |
-| 3082 | If the policy was in enforced mode, the non-WHQL driver would have been denied by the policy. |
-| 3084 | Code Integrity will enforce the WHQL Required policy setting on this session. |
-| 3085 | Code Integrity will not enforce the WHQL Required policy setting on this session. |
+| 3082 | If the WDAC policy was in enforced mode, the non-WHQL driver would have been denied by the WDAC policy. |
+| 3084 | Code Integrity will enforce the WHQL driver signing requirements on this boot session. |
+| 3085 | Code Integrity will not enforce the WHQL driver signing requirements on this boot session. |
 | 3086 | The file under validation does not meet the signing requirements for an isolated user mode (IUM) process. |
-| 3095 | This Code Integrity policy cannot be refreshed and must be rebooted instead. |
-| 3097 | The Code Integrity policy cannot be refreshed. |
+| 3089 | This event contains signature information for files that were blocked or would have been blocked by WDAC. One 3089 event is created for each signature of a file. |
+| 3090 | *Optional* This event indicates that a file was allowed to run based purely on ISG or managed installer. |
+| 3091 | This event indicates that a file did not have ISG or managed installer authorization and the WDAC policy is in audit mode. |
+| 3092 | This event is the enforcement mode equivalent of 3091. |
+| 3095 | The WDAC policy cannot be refreshed and must be rebooted instead. |
+| 3096 | The WDAC policy was not refreshed since it is already up-to-date. |
+| 3097 | The WDAC policy cannot be refreshed. |
+| 3099 | Indicates that a policy has been loaded. This event also includes information about the WDAC policy options that were specified by the WDAC policy.  |
 | 3100 | The application control policy was refreshed but was unsuccessfully activated. Retry. |
-| 3101 | Code Integrity started refreshing the policy. |
-| 3102 | Code Integrity finished refreshing the policy. |
-| 3103 | Code Integrity is ignoring the policy refresh. |
+| 3101 | The system started refreshing the WDAC policy. |
+| 3102 | The system finished refreshing the WDAC policy. |
+| 3103 | The system is ignoring the WDAC policy refresh. |
 | 3104 | The file under validation does not meet the signing requirements for a PPL (protected process light) process. |
-| 3105 | Code Integrity is attempting to refresh the policy. |
+| 3105 | The system is attempting to refresh the WDAC policy. |
 | 3108 | Windows mode change event was successful. |
 | 3110 | Windows mode change event was unsuccessful. |
 | 3111 | The file under validation did not meet the hypervisor-protected code integrity (HVCI) policy. |
+| 3112 | The file under validation is signed by a certificate that has been explicitly revoked by Windows. |

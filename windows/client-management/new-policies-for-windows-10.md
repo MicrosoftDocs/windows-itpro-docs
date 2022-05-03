@@ -507,7 +507,7 @@ Mobile device management (MDM) for Windows 10 Pro, Windows 10 Enterprise, and Wi
 
 Windows 10, version 1703, adds a number of [ADMX-backed policies to MDM](./mdm/policy-configuration-service-provider.md).
 
-If you use Microsoft Intune for MDM, you can [configure custom policies](https://go.microsoft.com/fwlink/p/?LinkId=616316) to deploy Open Mobile Alliance Uniform Resource Identifier (OMA-URI) settings that can be used to control features on Windows 10. For a list of OMA-URI settings, see [Custom URI settings for Windows 10 devices](https://go.microsoft.com/fwlink/p/?LinkId=616317).
+If you use Microsoft Intune for MDM, you can [configure custom policies](/mem/intune/configuration/custom-settings-configure) to deploy Open Mobile Alliance Uniform Resource Identifier (OMA-URI) settings that can be used to control features on Windows 10. For a list of OMA-URI settings, see [Custom URI settings for Windows 10 devices](/mem/intune/configuration/custom-settings-windows-10).
 
 No new [Exchange ActiveSync policies](/exchange/mobile-device-mailbox-policies-exchange-2013-help). For more information, see the [ActiveSync configuration service provider](./mdm/activesync-csp.md) technical reference.
 
