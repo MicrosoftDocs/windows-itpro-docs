@@ -1,15 +1,15 @@
 ---
 title: How to Manage Connection Groups on a Stand-alone Computer by Using Windows PowerShell (Windows 10/11)
 description: How to Manage Connection Groups on a Stand-alone Computer by Using Windows PowerShell
-author: greg-lindsay
+author: aczechowski
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ---
 
 
@@ -49,7 +49,7 @@ This topic explains the following procedures:
 
     Enable-AppvClientConnectionGroup –name "Financial Applications"
 
-    When any virtual applications that are in the member packages are run on the target computer, they will run inside the connection group’s virtual environment and will be available to all the virtual applications in the other packages in the connection group.
+    When any virtual applications that are in the member packages are run on the target computer, they'll run inside the connection group’s virtual environment and will be available to all the virtual applications in the other packages in the connection group.
 
 ## To enable or disable a connection group for a specific user
 

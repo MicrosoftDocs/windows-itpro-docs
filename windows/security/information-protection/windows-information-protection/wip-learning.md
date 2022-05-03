@@ -9,9 +9,9 @@ ms.mktglfcycl:
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: cabailey
-ms.author: cabailey
-manager: laurawi
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
@@ -33,7 +33,7 @@ In the **Website learning report**, you can view a summary of the devices that h
 
 1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-1. Click **Client apps** > **App protection status** > **Reports**.
+1. Select **Apps** > **Monitor** > **App protection status** > **Reports**.
 
    ![Image showing the UI path to the WIP report.](images/access-wip-learning-report.png) 
 

@@ -1,15 +1,15 @@
 ---
 title: Application Virtualization (App-V) (Windows 10/11)
 description: See various topics that can help you administer Application Virtualization (App-V) and its components.
-author: greg-lindsay
+author: aczechowski
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 09/27/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
 # Application Virtualization (App-V) for Windows client overview

@@ -1,15 +1,14 @@
 ---
 title: Olympia Corp enrollment guidelines
 description: Learn about the Olympia Corp enrollment and setting up an Azure Active Directory-REGISTERED Windows 10 device or an Azure Active Directory-JOINED Windows 10 device.
-ms.author: jaimeo
+ms.author: aaroncz
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
 audience: itpro
-itproauthor: jaimeo
-author: jaimeo
+author: aczechowski
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 keywords: insider, trial, enterprise, lab, corporation, test
 ms.custom: seo-marvel-apr2020
 ---

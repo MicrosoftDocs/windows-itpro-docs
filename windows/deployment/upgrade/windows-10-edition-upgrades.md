@@ -3,14 +3,14 @@ title: Windows 10 edition upgrade (Windows 10)
 description: With Windows 10, you can quickly upgrade from one edition of Windows 10 to another, provided the upgrade path is supported.
 ms.assetid: A7642E90-A3E7-4A25-8044-C4E402DC462A
 manager: dougeby
-ms.author: greglin
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mobile
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ms.collection: highpri
 ---

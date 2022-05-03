@@ -4,7 +4,7 @@ description: This topic will show you how to take your reference image for Windo
 ms.assetid: 1d70a3d8-1b1d-4051-b656-c0393a93f83c
 ms.reviewer: 
 manager: dougeby
-ms.author: greglin
+ms.author: aaroncz
 keywords: deployment, automate, tools, configure
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ---
 
@@ -359,7 +359,7 @@ On **MDT01**:
    - Specify Product Key: Do not specify a product key at this time
    - Full Name: Contoso
    - Organization: Contoso
-   - Internet Explorer home page: https://www.contoso.com
+   - Internet Explorer home page: `https://www.contoso.com`
    - Admin Password: Do not specify an Administrator Password at this time
 
 ### Edit the Windows 10 task sequence
@@ -371,7 +371,7 @@ On **MDT01**:
    1.  Preinstall: After the **Enable BitLocker (Offline)** action, add a **Set Task Sequence Variable** action with the following settings:
        1.  Name: Set DriverGroup001
        2.  Task Sequence Variable: DriverGroup001
-       3.  Value: Windows 10 x64\\%Manufacturer%\\%Model%
+       3.  Value: Windows 10 x64\\%Make%\\%Model%
 
    2.  Configure the **Inject Drivers** action with the following settings:
        - Choose a selection profile: Nothing

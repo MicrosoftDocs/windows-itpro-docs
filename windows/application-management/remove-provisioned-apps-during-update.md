@@ -4,11 +4,11 @@ description: How to keep provisioned apps that were removed from your machine fr
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.author: greglin
-author: greg-lindsay
+ms.author: aaroncz
+author: aczechowski
 ms.date: 05/25/2018
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 # How to keep apps removed from Windows 10 from returning during an update
 
