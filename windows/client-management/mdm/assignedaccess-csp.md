@@ -1,7 +1,6 @@
 ---
 title: AssignedAccess CSP
 description: The AssignedAccess configuration service provider (CSP) is used set the device to run in kiosk mode.
-ms.assetid: 421CC07D-6000-48D9-B6A3-C638AAF83984
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -9,7 +8,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: dansimp
-ms.date: 09/18/2018
+ms.date: 05/03/2022
 ---
 
 # AssignedAccess CSP
@@ -1234,6 +1233,11 @@ ShellLauncherConfiguration Add
 ```
 
 ShellLauncherConfiguration Add AutoLogon
+
+This function creates an autologon account on your behalf. It's a standard user with no password. The autologon account is managed by AssignedAccessCSP, so the account name isn't exposed.
+
+> [!Note]
+> The autologon function is designed to be used after OOBE with provisioning packages.
 
 ```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
