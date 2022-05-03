@@ -3,13 +3,13 @@ title: Set up a single-app kiosk on Windows 10/11
 description: A single-use device is easy to set up in Windows 10 and Windows 11 for desktop editions (Pro, Enterprise, and Education).
 ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
 ms.reviewer: sybruckm
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 keywords: ["assigned access", "kiosk", "lockdown", "digital sign", "digital signage"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
 ms.topic: article
 ms.collection: highpri

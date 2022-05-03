@@ -10,10 +10,10 @@ keywords: deployment, automate, tools, configure, mdt
 ms.localizationpriority: medium
 ms.date: 10/11/2017
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.audience: itpro
-ms.author: greglin
-author: greg-lindsay
+ms.author: aaroncz
+author: aczechowski
 audience: itpro
 ms.topic: article
 ---

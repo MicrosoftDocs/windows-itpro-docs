@@ -2,15 +2,14 @@
 title: Windows as a service
 ms.prod: w10 
 ms.topic: landing-page
-ms.manager: laurawi
+ms.manager: dougeby
 audience: itpro
-itproauthor: jaimeo
-author: jaimeo
-ms.author: jaimeo
+author: aczechowski
+ms.author: aaroncz
 description: Discover the latest news articles, videos, and podcasts about Windows as a service. Find resources for using Windows as a service within your organization. 
 ms.audience: itpro
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.localizationpriority: high
 ms.collection: M365-modern-desktop
 ---
@@ -105,7 +104,7 @@ Secure your organization's deployment investment.
 
 [Configure Windows Update for Business](waas-configure-wufb.md)
 
-[Express update delivery](waas-optimize-windows-10-updates.md#express-update-delivery)
+[Express update delivery](../do/waas-optimize-windows-10-updates.md#express-update-delivery)
 
 [Windows 10 deployment considerations](../planning/windows-10-deployment-considerations.md)
 

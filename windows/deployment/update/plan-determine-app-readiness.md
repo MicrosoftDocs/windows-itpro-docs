@@ -1,6 +1,6 @@
 ---
 title: Determine application readiness
-manager: laurawi
+manager: dougeby
 description: How to test your apps to know which need attention prior to deploying an update
 keywords: updates, servicing, current, deployment, General Availability Channel, feature, quality, rings, insider, tools
 ms.prod: w10
@@ -10,8 +10,8 @@ ms.localizationpriority: medium
 ms.audience: itpro
 ms.topic: article
 ms.collection: m365initiative-coredeploy
-ms.author: jaimeo
-author: jaimeo
+ms.author: aaroncz
+author: aczechowski
 ---
 
 # Determine application readiness

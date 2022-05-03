@@ -5,12 +5,12 @@ keywords: ["shared pc mode"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: greg-lindsay
-ms.author: greglin
+author: aczechowski
+ms.author: aaroncz
 ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: sybruckm
-manager: dansimp
+manager: dougeby
 ms.collection: highpri
 ---
 

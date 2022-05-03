@@ -7,8 +7,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: deploy
 audience: itpro
-author: jaimeo
-ms.author: jaimeo
+author: aczechowski
+ms.author: aaroncz
 ms.localizationpriority: medium
 ms.collection:
   - M365-analytics
@@ -51,14 +51,21 @@ Before you begin the process to add Update Compliance to your Azure subscription
 
 ## Add Update Compliance to your Azure subscription
 
-Update Compliance is offered as an Azure Marketplace application which is linked to a new or existing [Azure Log Analytics](/azure/log-analytics/query-language/get-started-analytics-portal) workspace within your Azure subscription. To configure this, follow these steps:
+Update Compliance is offered as an Azure Marketplace application that is linked to a new or existing [Azure Log Analytics](/azure/log-analytics/query-language/get-started-analytics-portal) workspace within your Azure subscription. Note that, for the following steps, you must have either an Owner or Contributor [Azure role](/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-roles) as a minimum in order to add the solution.
 
+To configure this, follow these steps:
 1. Go to the [Update Compliance page in the Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/Microsoft.WaaSUpdateInsights?tab=Overview). You might need to login to your Azure subscription to access this.
 2. Select **Get it now**.
 3. Choose an existing or configure a new Log Analytics Workspace, ensuring it is in a **Compatible Log Analytics region** from the following table. Although an Azure subscription is required, you won't be charged for ingestion of Update Compliance data.
    - [Desktop Analytics](/sccm/desktop-analytics/overview) users should use the same workspace for Update Compliance.
    - [Azure Update Management](/azure/automation/automation-intro#update-management) users should use the same workspace for Update Compliance.
 4. After your workspace is configured and selected, select **Create**. You'll receive a notification when the solution has been successfully created.
+
+Once the solution is in place, you can leverage one of the following Azure roles with Update Compliance:
+
+- To edit and write queries we recommend the [Log Analytics Contributor](/azure/role-based-access-control/built-in-roles#log-analytics-contributor) role.
+
+- To read and only view data we recommend the [Log Analytics Reader](/azure/role-based-access-control/built-in-roles#log-analytics-reader) role.
 
 |Compatible Log Analytics regions |
 | ------------------------------- |

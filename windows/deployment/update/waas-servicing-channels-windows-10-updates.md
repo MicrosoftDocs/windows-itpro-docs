@@ -3,11 +3,11 @@ title: Assign devices to servicing channels for Windows client updates
 description: Learn how to assign devices to servicing channels for Windows 10 updates locally, by using Group Policy, and by using MDM
 ms.prod: w10
 ms.mktglfcycl: deploy
-author: jaimeo
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: aaroncz
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.topic: article
 ms.custom:
 - seo-marvel-apr2020

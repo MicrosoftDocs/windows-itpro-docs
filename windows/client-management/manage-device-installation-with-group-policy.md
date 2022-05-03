@@ -4,11 +4,11 @@ description: Find out how to manage Device Installation Restrictions with Group 
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: barakm
+author: aczechowski
 ms.date: 09/14/2021
 ms.reviewer: 
-manager: barakm
-ms.author: barakm
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
 
@@ -17,7 +17,7 @@ ms.topic: article
 **Applies to**
 
 - Windows 10
-- Windows 11
+- Windows 11
 - Windows Server 2022
 
 

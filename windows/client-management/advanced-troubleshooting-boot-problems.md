@@ -3,12 +3,12 @@ title: Advanced troubleshooting for Windows boot problems
 description: Learn to troubleshoot when Windows can't boot. This article includes advanced troubleshooting techniques intended for use by support agents and IT professionals.
 ms.prod: w10
 ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.date: 11/16/2018
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ms.topic: troubleshooting
 ms.collection: highpri
 ---

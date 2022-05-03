@@ -4,13 +4,13 @@ description: This article discusses general and security-related best practices 
 ms.custom: seo-marvel-apr2020
 ms.assetid: e3cb1e78-4230-4eae-b179-e6e9160542d2
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.date: 04/19/2017
 ms.topic: article
 ---

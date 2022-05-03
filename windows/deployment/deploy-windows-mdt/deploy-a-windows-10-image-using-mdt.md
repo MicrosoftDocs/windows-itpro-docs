@@ -4,7 +4,7 @@ description: This topic will show you how to take your reference image for Windo
 ms.assetid: 1d70a3d8-1b1d-4051-b656-c0393a93f83c
 ms.reviewer: 
 manager: dougeby
-ms.author: greglin
+ms.author: aaroncz
 keywords: deployment, automate, tools, configure
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ---
 

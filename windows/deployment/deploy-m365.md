@@ -1,8 +1,8 @@
 ---
 title: Deploy Windows 10 with Microsoft 365
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 description: Learn about deploying Windows 10 with Microsoft 365 and how to use a free 90-day trial account to review some of the benefits of Microsoft 365.
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -11,7 +11,7 @@ ms.pagetype: deploy
 keywords: deployment, automate, tools, configure, mdt, sccm, M365
 ms.localizationpriority: medium
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ms.collection: M365-modern-desktop
 ms.custom: seo-marvel-apr2020

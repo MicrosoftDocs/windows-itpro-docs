@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 01/11/2022
+ms.date: 03/18/2022
 ms.reviewer: 
 manager: dansimp
 ms.collection: highpri
@@ -1693,7 +1693,7 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 (default) -Do not enforce certificate pinning
+- 0 (default) - Enforce certificate pinning
 - 1 - Do not enforce certificate pinning
 
 <!--/SupportedValues-->

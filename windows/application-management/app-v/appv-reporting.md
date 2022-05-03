@@ -1,15 +1,15 @@
 ---
 title: About App-V Reporting (Windows 10/11)
 description: Learn how the App-V reporting feature collects information about computers running the App-V client and virtual application package usage.
-author: greg-lindsay
+author: aczechowski
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/16/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
 # About App-V reporting
