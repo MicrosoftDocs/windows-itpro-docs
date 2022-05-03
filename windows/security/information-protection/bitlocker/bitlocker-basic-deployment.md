@@ -53,7 +53,7 @@ To start encryption for a volume, select **Turn on BitLocker** for the appropria
 
 ### Operating system volume
 
-Wen the BitLocker Drive Encryption Wizard launches, it verifies the computer meets the BitLocker system requirements for encrypting an operating system volume. By default, the system requirements are:
+When the BitLocker Drive Encryption Wizard launches, it verifies the computer meets the BitLocker system requirements for encrypting an operating system volume. By default, the system requirements are:
 
 |Requirement|Description|
 |--- |--- |
