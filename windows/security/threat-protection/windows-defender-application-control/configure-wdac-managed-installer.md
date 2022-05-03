@@ -90,3 +90,7 @@ Once you've completed configuring your chosen Managed Installer, by specifying w
    ```
 
    This command will show the raw XML to verify the individual rules that were set.
+
+## Remove Managed Installer feature
+
+To remove the Managed Installed from the device, you will need to remove the Managed Installer AppLocker policy from the device by following the instructions at [Delete an AppLocker rule - To clear AppLocker policies on a single system or remote systems](delete-an-applocker-rule.md#to-clear-applocker-policies-on-a-single-system-or-remote-systems)
