@@ -106,8 +106,6 @@ If the computer is no longer frozen and now is running in a good state, use the 
 
    5.  Make sure that there's a paging file (pagefile.sys) on the system drive and that it’s at least 100 megabytes (MB) over the installed RAM (Initial and Maximum Size). 
 
-       Additionally, you can use the workaround for [space limitations on the system drive in Windows Server 2008](#space-limitations-on-the-system-drive-in-windows-server-2008). 
-
    6.  Make sure that there's more available space on the system drive than there's physical RAM. 
 
 2. Enable the CrashOnCtrlScroll registry value to allow the system to generate a dump file by using the keyboard. To do this enablement, follow these steps: 
@@ -174,15 +172,6 @@ logman stop LOGNAME_Long / LOGNAME_Short
 ``` 
 
 The Performance Monitor log is located in the path: C:\PERFLOGS   
-
-### Method 4: Microsoft Support Diagnostics 
-
-1.  In the search box of the [Microsoft Support Diagnostics Self-Help Portal](https://home.diagnostics.support.microsoft.com/selfhelp), type Windows Performance Diagnostic. 
-
-2.  In the search results, select **Windows Performance Diagnostic**, and then click **Create**. 
-
-3.  Follow the steps of the diagnostic. 
-
 
 ### Additional methods to collect data 
 
@@ -278,11 +267,3 @@ You can use VMware Snapshots or suspend state and extract a memory dump file equ
 #### Citrix XenServer 
 
 The memory dump process occurs by pressing the RIGHT CTRL + SCROLL LOCK + SCROLL LOCK keyboard combination that's described in Method 1 and on [the Citrix site](http://support.citrix.com/article/ctx123177).   
-
-## Space limitations on the system drive in Windows Server 2008 
-
-On Windows Server 2008, you may not have enough free disk space to generate a complete memory dump file on the system volume. There's a [hotfix](https://support.microsoft.com/help/957517) that allows for the data collection even though there isn't sufficient space on the system drive to store the memory dump file.   
-
-Additionally, on Windows Server 2008 Service Pack (SP2), there's a second option if the system drive doesn't have sufficient space. Namely, you can use the DedicatedDumpFile registry entry. To learn how to use the registry entry, see [New behavior in Windows Vista and Windows Server 2008](/windows/client-management/generate-kernel-or-complete-crash-dump).   
-
-For more information, see [How to use the DedicatedDumpFile registry value to overcome space limitations on the system drive](https://blogs.msdn.com/b/ntdebugging/archive/2010/04/02/how-to-use-the-dedicateddumpfile-registry-value-to-overcome-space-limitations-on-the-system-drive-when-capturing-a-system-memory-dump.aspx).

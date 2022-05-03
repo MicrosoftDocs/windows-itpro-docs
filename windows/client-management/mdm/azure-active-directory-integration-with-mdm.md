@@ -114,7 +114,10 @@ The MDM vendor must first register the application in their home tenant and mark
 > [!NOTE]
 > For the MDM provider, if you don't have an existing Azure AD tenant with an Azure AD subscription that you manage, follow the step-by-step guide in [Add an Azure AD tenant and Azure AD subscription](add-an-azure-ad-tenant-and-azure-ad-subscription.md) to set up a tenant, add a subscription, and manage it via the Azure Portal.
 
-The MDM application uses keys to request access tokens from Azure AD. These keys are managed within the tenant of the MDM provider and not visible to individual customers. The same key is used by the multi-tenant MDM application to authenticate itself with Azure AD, whatever the customer tenent the managed device belongs.
+The MDM application uses keys to request access tokens from Azure AD. These keys are managed within the tenant of the MDM provider and not visible to individual customers. The same key is used by the multi-tenant MDM application to authenticate itself with Azure AD, whatever the customer tenant the managed device belongs.
+
+> [!NOTE]
+> All MDM apps must implement Azure AD V2 tokens before we certify that integration works. Due to changes in the Azure AD app platform, using Azure AD V2 tokens is a hard requirement. For more information, see [Microsoft identity platform access tokens](/azure/active-directory/develop/access-tokens#token-formats-and-ownership).
 
 Use the following steps to register a cloud-based MDM application with Azure AD. At this time, you need to work with the Azure AD engineering team to expose this application through the Azure AD app gallery.
 
@@ -166,7 +169,7 @@ For more information about registering applications with Azure AD, see [Basics o
 
 The application keys used by your MDM service are a sensitive resource. They should be protected and rolled over periodically for greater security. Access tokens obtained by your MDM service to call the Microsoft Graph API are bearer tokens and should be protected to avoid unauthorized disclosure.
 
-For security best practices, see [Windows Azure Security Essentials](https://go.microsoft.com/fwlink/p/?LinkId=613715).
+For security best practices, see [Windows Azure Security Essentials](/dotnet/api/system.identitymodel.tokens.jwt.jwtsecuritytokenhandler).
 
 You can roll over the application keys used by a cloud-based MDM service without requiring a customer interaction. There's a single set of keys across all customer tenants that are managed by the MDM vendor in their Azure AD tenant.
 

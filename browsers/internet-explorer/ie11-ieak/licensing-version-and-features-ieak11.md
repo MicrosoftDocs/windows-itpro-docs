@@ -104,7 +104,7 @@ Support for some of the Internet Explorer settings on the wizard pages varies de
 Two installation modes are available to you, depending on how you are planning to use the customized browser created with the software. Each mode requires a separate installation of the software.
 
 -   **External Distribution**
-    You shall use commercially reasonable efforts to maintain the quality of (i) any non-Microsoft software distributed with Internet Explorer 11, and (ii) any media used for distribution (for example, optical media, flash drives), at a level that meets or exceeds the highest industry standards. If you distribute add-ons with Internet Explorer 11, those add-ons must comply with the [Microsoft browser extension policy](/legal/windows/agreements/microsoft-browser-extension-policy).
+    You shall use commercially reasonable efforts to maintain the quality of (i) any non-Microsoft software distributed with Internet Explorer 11, and (ii) any media used for distribution (for example, optical media, flash drives), at a level that meets or exceeds the highest industry standards. If you distribute add-ons with Internet Explorer 11, those add-ons must comply with the [Microsoft browser extension policy](/legal/microsoft-edge/microsoft-browser-extension-policy).
 
 -   **Internal Distribution - corporate intranet**
     The software is solely for use by your employees within your company's organization and affiliated companies through your corporate intranet. Neither you nor any of your employees may permit redistribution of the software to or for use by third parties other than for third parties such as consultants, contractors, and temporary staff accessing your corporate intranet.
