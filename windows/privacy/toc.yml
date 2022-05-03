@@ -61,10 +61,6 @@
           href: manage-windows-1903-endpoints.md
         - name: Connection endpoints for Windows 10, version 1809
           href: manage-windows-1809-endpoints.md
-        - name: Connection endpoints for Windows 10, version 1803
-          href: manage-windows-1803-endpoints.md
-        - name: Connection endpoints for Windows 10, version 1709
-          href: manage-windows-1709-endpoints.md
         - name: Connection endpoints for non-Enterprise editions of Windows 11
           href: windows-11-endpoints-non-enterprise-editions.md
         - name: Connection endpoints for non-Enterprise editions of Windows 10, version 21H1
@@ -79,7 +75,3 @@
           href: windows-endpoints-1903-non-enterprise-editions.md
         - name: Connection endpoints for non-Enterprise editions of Windows 10, version 1809
           href: windows-endpoints-1809-non-enterprise-editions.md
-        - name: Connection endpoints for non-Enterprise editions of Windows 10, version 1803
-          href: windows-endpoints-1803-non-enterprise-editions.md
-        - name: Connection endpoints for non-Enterprise editions of Windows 10, version 1709
-          href: windows-endpoints-1709-non-enterprise-editions.md

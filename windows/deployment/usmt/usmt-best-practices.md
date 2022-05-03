@@ -4,13 +4,13 @@ description: This article discusses general and security-related best practices 
 ms.custom: seo-marvel-apr2020
 ms.assetid: e3cb1e78-4230-4eae-b179-e6e9160542d2
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -62,7 +62,7 @@ As the authorized administrator, it is your responsibility to protect the privac
 
 -   **Encrypting File System (EFS)**
 
-    Take extreme caution when migrating encrypted files, because the end user does not need to be logged on to capture the user state. By default, USMT fails if an encrypted file is found. For more information about EFS best practices, see this article in the [Microsoft Knowledge Base](https://go.microsoft.com/fwlink/p/?linkid=163). For specific instructions about EFS best practices, see [Migrate EFS Files and Certificates](usmt-migrate-efs-files-and-certificates.md).
+    Take extreme caution when migrating encrypted files, because the end user does not need to be logged on to capture the user state. By default, USMT fails if an encrypted file is found. For specific instructions about EFS best practices, see [Migrate EFS Files and Certificates](usmt-migrate-efs-files-and-certificates.md).
 
     **Important**  
     If you migrate an encrypted file without also migrating the certificate, end users will not be able to access the file after the migration.

@@ -20,20 +20,20 @@ The VPNv2 configuration service provider allows the mobile device management (MD
 Here are the requirements for this CSP:
 
 - VPN configuration commands must be wrapped in an Atomic block in SyncML.
-- For best results, configure your VPN certificates first before pushing down VPN profiles to devices. If you are using Windows Information Protection (WIP) (formerly known as Enterprise Data Protection), then you should configure VPN first before you configure WIP policies.
+- For best results, configure your VPN certificates first before pushing down VPN profiles to devices. If you're using Windows Information Protection (WIP) (formerly known as Enterprise Data Protection), then you should configure VPN first before you configure WIP policies.
 - Instead of changing individual properties, follow these steps to make any changes:
 
   - Send a Delete command for the ProfileName to delete the entire profile.
   - Send the entire profile again with new values wrapped in an Atomic block.
 
-    In certain conditions you can change some properties directly, but we do not recommend it.
+    In certain conditions you can change some properties directly, but we don't recommend it.
 
 The XSDs for all EAP methods are shipped in the box and can be found at the following locations:
 
 - `C:\Windows\schemas\EAPHost`
 - `C:\Windows\schemas\EAPMethods`
 
-The following shows the VPNv2 configuration service provider in tree format.
+The following example shows the VPNv2 configuration service provider in tree format.
 
 ```
 ./Vendor/MSFT
@@ -332,7 +332,7 @@ Supported operations include Get, Add, and Delete.
 Optional node. List of applications set to trigger the VPN. If any of these apps are launched and the VPN profile is currently the active profile, this VPN profile will be triggered to connect.
 
 <a href="" id="vpnv2-profilename-apptriggerlist-apptriggerrowid"></a>**VPNv2/**<em>ProfileName</em>**/AppTriggerList/**<em>appTriggerRowId</em>  
-A sequential integer identifier that allows the ability to specify multiple apps for App Trigger. Sequencing must start at 0 and you should not skip numbers.
+A sequential integer identifier that allows the ability to specify multiple apps for App Trigger. Sequencing must start at 0 and you shouldn't skip numbers.
 
 Supported operations include Get, Add, Replace, and Delete.
 
@@ -340,35 +340,35 @@ Supported operations include Get, Add, Replace, and Delete.
 App Node under the Row Id.
 
 <a href="" id="vpnv2-profilename-apptriggerlist-apptriggerrowid-app-id"></a>**VPNv2/**<em>ProfileName</em>**/AppTriggerList/**<em>appTriggerRowId</em>**/App/Id**  
-App identity, which is either an app’s package family name or file path. The type is inferred by the Id, and therefore cannot be specified in the get only App/Type field
+App identity, which is either an app’s package family name or file path. The type is inferred by the Id, and therefore can't be specified in the get only App/Type field
 
 <a href="" id="vpnv2-profilename-apptriggerlist-apptriggerrowid-app-type"></a>**VPNv2/**<em>ProfileName</em>**/AppTriggerList/**<em>appTriggerRowId</em>**/App/Type**  
-Returns the type of **App/Id**. This value can be either of the following:
+Returns the type of **App/Id**. This value can be either of the following values:
 
-- PackageFamilyName - When this is returned, the App/Id value represents the PackageFamilyName of the app. The PackageFamilyName is the unique name of the Microsoft Store application.
-- FilePath - When this is returned, the App/Id value represents the full file path of the app. For example, `C:\Windows\System\Notepad.exe`.
+- PackageFamilyName - When this value is returned, the App/Id value represents the PackageFamilyName of the app. The PackageFamilyName is the unique name of the Microsoft Store application.
+- FilePath - When this value is returned, the App/Id value represents the full file path of the app. For example, `C:\Windows\System\Notepad.exe`.
 
 Value type is chr. Supported operation is Get.
 
 <a href="" id="vpnv2-profilename-routelist-"></a>**VPNv2/**<em>ProfileName</em>**/RouteList/**  
-Optional node. List of routes to be added to the routing table for the VPN interface. This is required for split tunneling case where the VPN server site has more subnets that the default subnet based on the IP assigned to the interface.
+Optional node. List of routes to be added to the routing table for the VPN interface. This information is required for split tunneling case where the VPN server site has more subnets that the default subnet based on the IP assigned to the interface.
 
 Every computer that runs TCP/IP makes routing decisions. These decisions are controlled by the IP routing table. Adding values under this node updates the routing table with routes for the VPN interface post connection. The values under this node represent the destination prefix of IP routes. A destination prefix consists of an IP address prefix and a prefix length.
 
-Adding a route here allows the networking stack to identify the traffic that needs to go over the VPN interface for split tunnel VPN. Some VPN servers can configure this during connect negotiation and do not need this information in the VPN Profile. Please check with your VPN server administrator to determine whether you need this information in the VPN profile.
+Adding a route here allows the networking stack to identify the traffic that needs to go over the VPN interface for split tunnel VPN. Some VPN servers can configure this route during connect negotiation and don't need this information in the VPN Profile. Check with your VPN server administrator to determine whether you need this information in the VPN profile.
 
 <a href="" id="vpnv2-profilename-routelist-routerowid"></a>**VPNv2/**<em>ProfileName</em>**/RouteList/**<em>routeRowId</em>  
-A sequential integer identifier for the RouteList. This is required if you are adding routes. Sequencing must start at 0.
+A sequential integer identifier for the RouteList. This value is required if you're adding routes. Sequencing must start at 0.
 
 Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-routelist-routerowid-address"></a>**VPNv2/**<em>ProfileName</em>**/RouteList/**<em>routeRowId</em>**/Address**  
-Subnet address in IPv4/v6 address format which, along with the prefix will be used to determine the destination prefix to send via the VPN Interface. This is the IP address part of the destination prefix.
+Subnet address in IPv4/v6 address format which, along with the prefix, will be used to determine the destination prefix to send via the VPN Interface. This subnet address is the IP address part of the destination prefix.
 
 Supported operations include Get, Add, Replace, and Delete. Value type is chr. Example, `192.168.0.0`
 
 <a href="" id="vpnv2-profilename-routelist-routerowid-prefixsize"></a>**VPNv2/**<em>ProfileName</em>**/RouteList/**<em>routeRowId</em>**/PrefixSize**  
-The subnet prefix size part of the destination prefix for the route entry. This, along with the address will be used to determine the destination prefix to route through the VPN Interface.
+The subnet prefix size part of the destination prefix for the route entry. This subnet prefix, along with the address, will be used to determine the destination prefix to route through the VPN Interface.
 
 Value type is int. Supported operations include Get, Add, Replace, and Delete.
 
@@ -388,7 +388,7 @@ Supported operations include Get, Add, Replace, and Delete.
 <a href="" id="vpnv2-profilename-domainnameinformationlist"></a>**VPNv2/**<em>ProfileName</em>**/DomainNameInformationList**  
 Optional node. Name Resolution Policy Table (NRPT) rules for the VPN profile.
 
-The Name Resolution Policy Table (NRPT) is a table of namespaces and corresponding settings stored in the Windows registry that determines the DNS client behavior when issuing queries and processing responses. Each row in the NRPT represents a rule for a portion of the namespace for which the DNS client issues queries. Before issuing name resolution queries, the DNS client consults the NRPT to determine if any additional flags must be set in the query. After receiving the response, the client again consults the NRPT to check for any special processing or policy requirements. In the absence of the NRPT, the client operates based on the DNS servers and suffixes set on the interface.
+The Name Resolution Policy Table (NRPT) is a table of namespaces and corresponding settings stored in the Windows registry that determines the DNS client behavior when issuing queries and processing responses. Each row in the NRPT represents a rule for a portion of the namespace for which the DNS client issues queries. Before name resolution queries are issued, the DNS client consults the NRPT to determine if any extra flags must be set in the query. After the response is received, the client again consults the NRPT to check for any special processing or policy requirements. In the absence of the NRPT, the client operates based on the DNS servers and suffixes set on the interface.
 
 > [!NOTE]  
 > Only applications using the [Windows DNS API](/windows/win32/dns/dns-reference) can make use of the NRPT and therefore all settings configured within the DomainNameInformationList section. Applications using their own DNS implementation bypass the Windows DNS API. One example of applications not using the Windows DNS API is nslookup, so always use the PowerShell CmdLet [Resolve-DNSName](/powershell/module/dnsclient/resolve-dnsname) to check the functionality of the NRPT.
@@ -407,9 +407,9 @@ Used to indicate the namespace to which the policy applies. When a Name query is
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-domainnameinformationlist-dnirowid-domainnametype"></a>**VPNv2/**<em>ProfileName</em>**/DomainNameInformationList/**<em>dniRowId</em>**/DomainNameType**  
-Returns the namespace type. This value can be one of the following:
+Returns the namespace type. This value can be one of the following values:
 
-- FQDN - If the DomainName was not prepended with a**.** and applies only to the fully qualified domain name (FQDN) of a specified host.
+- FQDN - If the DomainName wasn't prepended with a**.** and applies only to the fully qualified domain name (FQDN) of a specified host.
 - Suffix - If the DomainName was prepended with a**.** and applies to the specified namespace, all records in that namespace, and all subdomains.
 
 Value type is chr. Supported operation is Get.
@@ -420,7 +420,7 @@ List of comma-separated DNS Server IP addresses to use for the namespace.
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-domainnameinformationlist-dnirowid-webproxyservers"></a>**VPNv2/**<em>ProfileName</em>**/DomainNameInformationList/**<em>dniRowId</em>**/WebProxyServers**  
-Optional. Web Proxy Server IP address if you are redirecting traffic through your intranet.
+Optional. Web Proxy Server IP address if you're redirecting traffic through your intranet.
 
 > [!NOTE]  
 > Currently only one web proxy server is supported.  
@@ -430,7 +430,7 @@ Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 <a href="" id="vpnv2-profilename-domainnameinformationlist-dnirowid-autotrigger"></a>**VPNv2/**<em>ProfileName</em>**/DomainNameInformationList/**<em>dniRowId</em>**/AutoTrigger**  
 Added in Windows 10, version 1607. Optional. Boolean to determine whether this domain name rule will trigger the VPN.
 
-If set to False, this DomainName rule will not trigger the VPN.
+If set to False, this DomainName rule won't trigger the VPN.
 
 If set to True, this DomainName rule will trigger the VPN
 
@@ -439,7 +439,7 @@ By default, this value is false.
 Value type is bool.
 
 <a href="" id="vpnv2-profilename-domainnameinformationlist-dnirowid-persistent"></a>**VPNv2/**<em>ProfileName</em>**/DomainNameInformationList/**<em>dniRowId</em>**/Persistent**  
-Added in Windows 10, version 1607. A boolean value that specifies if the rule being added should persist even when the VPN is not connected. Value values:
+Added in Windows 10, version 1607. A boolean value that specifies if the rule being added should persist even when the VPN isn't connected. Value values:
 
 -   False (default) - This DomainName rule will only be applied when VPN is connected.
 -   True - This DomainName rule will always be present and applied.
@@ -452,18 +452,18 @@ An optional node that specifies a list of rules. Only traffic that matches these
 > [!NOTE]
 > Once a TrafficFilterList is added, all traffic are blocked other than the ones matching the rules.
 
-When adding multiple rules, each rule operates based on an OR with the other rules. Within each rule, each property operates based on an AND with each other.
+When multiple rules are being added, each rule operates based on an OR with the other rules. Within each rule, each property operates based on an AND with each other.
 
 <a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid"></a>**VPNv2/**<em>ProfileName</em>**/TrafficFilterList/**<em>trafficFilterId</em>  
 A sequential integer identifier for the Traffic Filter rules. Sequencing must start at 0.
 
 <a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid-app"></a>**VPNv2/**<em>ProfileName</em>**/TrafficFilterList/**<em>trafficFilterId</em>**/App**  
-Per app VPN rule. This will allow only the apps specified to be allowed over the VPN interface. Value type is chr.
+Per app VPN rule. This property will allow only the apps specified to be allowed over the VPN interface. Value type is chr.
 
 <a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid-app-id"></a>**VPNv2/**<em>ProfileName</em>**/TrafficFilterList/**<em>trafficFilterId</em>**/App/Id**  
 App identity for the app-based traffic filter.
 
-The value for this node can be one of the following:
+The value for this node can be one of the following values:
 
 - PackageFamilyName - This App/Id value represents the PackageFamilyName of the app. The PackageFamilyName is the unique name of a Microsoft Store application.
 - FilePath - This App/Id value represents the full file path of the app. For example, `C:\Windows\System\Notepad.exe`.
@@ -511,17 +511,17 @@ A list of comma-separated values specifying remote IP address ranges to allow.
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid-routingpolicytype"></a>**VPNv2/**<em>ProfileName</em>**/TrafficFilterList/**<em>trafficFilterId</em>**/RoutingPolicyType**  
-Specifies the routing policy if an App or Claims type is used in the traffic filter. The scope of this property is for this traffic filter rule alone. The value can be one of the following:
+Specifies the routing policy if an App or Claims type is used in the traffic filter. The scope of this property is for this traffic filter rule alone. The value can be one of the following values:
 
 - SplitTunnel - For this traffic filter rule, only the traffic meant for the VPN interface (as determined by the networking stack) goes over the interface. Internet traffic can continue to go over the other interfaces.
 - ForceTunnel - For this traffic rule all IP traffic must go through the VPN Interface only.
 
-This is only applicable for App ID-based Traffic Filter rules.
+This property is only applicable for App ID-based Traffic Filter rules.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid-direction"></a>**VPNv2/**<em>ProfileName</em>**/TrafficFilterList/**<em>trafficFilterId</em>**/Direction**  
-Added in Windows 10, version 2004. Specifies the traffic direction to apply this policy to. Default is Outbound. The value can be one of the following:
+Added in Windows 10, version 2004. Specifies the traffic direction to apply this policy to. Default is Outbound. The value can be one of the following values:
 
 - Outbound - The rule applies to all outbound traffic
 - Inbound - The rule applies to all inbound traffic
@@ -531,27 +531,27 @@ If no inbound filter is provided, then by default all unsolicited inbound traffi
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-edpmodeid"></a>**VPNv2/**<em>ProfileName</em>**/EdpModeId**  
-Enterprise ID, which is required for connecting this VPN profile with a WIP policy. When this is set, the networking stack looks for this Enterprise ID in the app token to determine if the traffic is allowed to go over the VPN. If the profile is active, it also automatically triggers the VPN to connect. We recommend having only one such profile per device.
+Enterprise ID, which is required for connecting this VPN profile with a WIP policy. When this ID is set, the networking stack looks for this Enterprise ID in the app token to determine if the traffic is allowed to go over the VPN. If the profile is active, it also automatically triggers the VPN to connect. We recommend having only one such profile per device.
 
-Additionally when connecting with Windows Information Protection (WIP)(formerly known as Enterprise Data Protection), the admin does not have to specify AppTriggerList and TrafficFilterList rules separately in this profile (unless more advanced config is needed) because the WIP policies and App lists automatically takes effect.
+Additionally when a connection is being established with Windows Information Protection (WIP)(formerly known as Enterprise Data Protection), the admin doesn't have to specify AppTriggerList and TrafficFilterList rules separately in this profile (unless more advanced config is needed) because the WIP policies and App lists automatically takes effect.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-remembercredentials"></a>**VPNv2/**<em>ProfileName</em>**/RememberCredentials**  
-Boolean value (true or false) for caching credentials. Default is false, which means do not cache credentials. If set to true, credentials are cached whenever possible.
+Boolean value (true or false) for caching credentials. Default is false, which means don't cache credentials. If set to true, credentials are cached whenever possible.
 
 Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-alwayson"></a>**VPNv2/**<em>ProfileName</em>**/AlwaysOn**  
-An optional flag to enable Always On mode. This will automatically connect the VPN at sign-in and will stay connected until the user manually disconnects.
+An optional flag to enable Always On mode. This flag will automatically connect the VPN at sign in and will stay connected until the user manually disconnects.
 
 > [!NOTE]
 > Always On only works for the active profile. The first profile provisioned that can be auto triggered will automatically be set as active.
 
 Preserving user Always On preference
 
-Windows has a feature to preserve a user’s AlwaysOn preference.  In the event that a user manually unchecks the “Connect    automatically” checkbox, Windows will remember this user preference for this profile name by adding the profile name to the value AutoTriggerDisabledProfilesList.  
-Should a management tool remove/add the same profile name back and set AlwaysOn to true, Windows will not check the box if the profile name exists in the below registry value in order to preserve user preference.
+Windows has a feature to preserve a user’s AlwaysOn preference.  If a user manually unchecks the “Connect automatically” checkbox, Windows will remember this user preference for this profile name by adding the profile name to the value AutoTriggerDisabledProfilesList.  
+Should a management tool remove/add the same profile name back and set AlwaysOn to true, Windows won't check the box if the profile name exists in the below registry value in order to preserve user preference.
 Key: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RasMan\Config`
 Value: AutoTriggerDisabledProfilesList
 Type: REG_MULTI_SZ
@@ -569,13 +569,13 @@ Device tunnel profile.
 
 Valid values:
 
-- False (default) - this is not a device tunnel profile.
-- True - this is a device tunnel profile.
+- False (default) - this profile isn't a device tunnel profile.
+- True - this profile is a device tunnel profile.
 
 When the DeviceTunnel profile is turned on, it does the following things:
 
 - First, it automatically becomes an "always on" profile.
-- Second, it does not require the presence or logging in of any user to the machine in order for it to connect.
+- Second, it doesn't require the presence or logging in of any user to the machine in order for it to connect.
 - Third, no other device tunnel profile maybe is present on the same machine.-
 
 A device tunnel profile must be deleted before another device tunnel profile can be added, removed, or connected.
@@ -587,7 +587,7 @@ Allows registration of the connection's address in DNS.
 
 Valid values:
 
-- False = Do not register the connection's address in DNS (default).
+- False = Don't register the connection's address in DNS (default).
 - True = Register the connection's addresses in DNS.
 
 <a href="" id="vpnv2-profilename-dnssuffix"></a>**VPNv2/**<em>ProfileName</em>**/DnsSuffix**  
@@ -599,7 +599,7 @@ Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 Reserved for future use.
 
 <a href="" id="vpnv2-profilename-trustednetworkdetection"></a>**VPNv2/**<em>ProfileName</em>**/TrustedNetworkDetection**  
-Optional. Comma-separated string to identify the trusted network. VPN will not connect automatically when the user is on their corporate wireless network where protected resources are directly accessible to the device.
+Optional. Comma-separated string to identify the trusted network. VPN won't connect automatically when the user is on their corporate wireless network where protected resources are directly accessible to the device.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
@@ -657,7 +657,7 @@ Added in Windows 10, version 1607. Enables the Device Compliance flow from the 
 Value type is bool. Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-devicecompliance-sso"></a>**VPNv2/**<em>ProfileName</em>**/DeviceCompliance/Sso**  
-Added in Windows 10, version 1607. Nodes under SSO can be used to choose a certificate different from the VPN Authentication cert for the Kerberos Authentication in the case of Device Compliance.
+Added in Windows 10, version 1607. Nodes under SSO can be used to choose a certificate different from the VPN Authentication cert for the Kerberos Authentication if there's Device Compliance.
 
 <a href="" id="vpnv2-profilename-devicecompliance-sso-enabled"></a>**VPNv2/**<em>ProfileName</em>**/DeviceCompliance/Sso/Enabled**  
 Added in Windows 10, version 1607. If this field is set to True, the VPN Client will look for a separate certificate for Kerberos Authentication.
@@ -683,7 +683,7 @@ Required for plug-in profiles. Semicolon-separated list of servers in URL, hostn
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-pluginprofile-customconfiguration"></a>**VPNv2/**<em>ProfileName</em>**/PluginProfile/CustomConfiguration**  
-Optional. This is an HTML encoded XML blob for SSL-VPN plug-in specific configuration including authentication information that is deployed to the device to make it available for SSL-VPN plug-ins. Contact the plugin provider for format and other details. Most plugins can also configure values based on the server negotiations as well as defaults.
+Optional. This property is an HTML encoded XML blob for SSL-VPN plug-in specific configuration including authentication information that is deployed to the device to make it available for SSL-VPN plug-ins. Contact the plugin provider for format and other details. Most plugins can also configure values based on the server negotiations and defaults.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
@@ -708,7 +708,7 @@ You can make a list of server by making a list of server names (with optional fr
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-nativeprofile-routingpolicytype"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/RoutingPolicyType**  
-Optional for native profiles. Type of routing policy. This value can be one of the following:
+Optional for native profiles. Type of routing policy. This value can be one of the following values:
 
 - SplitTunnel - Traffic can go over any interface as determined by the networking stack.
 - ForceTunnel - All IP traffic must go over the VPN interface.
@@ -716,7 +716,7 @@ Optional for native profiles. Type of routing policy. This value can be one of t
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-nativeprofile-nativeprotocoltype"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/NativeProtocolType**  
-Required for native profiles. Type of tunneling protocol used. This value can be one of the following:
+Required for native profiles. Type of tunneling protocol used. This value can be one of the following values:
 
 - PPTP
 - L2TP
@@ -726,7 +726,7 @@ Required for native profiles. Type of tunneling protocol used. This value can be
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
 > [!NOTE]
-> The **Automatic** option means that the device will try each of the built-in tunneling protocols until one succeeds. It will attempt protocols in following order: SSTP, IKEv2, PPTP and then L2TP. This order is not customizable. 
+> The **Automatic** option means that the device will try each of the built-in tunneling protocols until one succeeds. It will attempt protocols in following order: SSTP, IKEv2, PPTP and then L2TP. This order isn't customizable. 
 
 <a href="" id="vpnv2-profilename-nativeprofile-authentication"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/Authentication**  
 Required node for native profile. It contains authentication information for the native VPN profile.
@@ -735,14 +735,14 @@ Required node for native profile. It contains authentication information for the
 This value can be one of the following:
 
 -   EAP
--   MSChapv2 (This is not supported for IKEv2)
+-   MSChapv2 (This method isn't supported for IKEv2)
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-nativeprofile-authentication-machinemethod"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/Authentication/MachineMethod**  
 This is only supported in IKEv2.
 
-This value can be one of the following:
+This value can be one of the following values:
 
 -   Certificate
 
@@ -771,7 +771,9 @@ Reserved for future use.
 Reserved for future use.
 
 <a href="" id="vpnv2-profilename-nativeprofile-cryptographysuite"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/CryptographySuite**  
-Added in Windows 10, version 1607. Properties of IPSec tunnels.
+Added in Windows 10, version 1607. Properties of IPSec tunnels. 
+
+[!NOTE] If you specify any of the properties under CryptographySuite, you must specify all of them. It's not valid to specify just some of the properties.
 
 <a href="" id="vpnv2-profilename-nativeprofile-cryptographysuite-authenticationtransformconstants"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/CryptographySuite/AuthenticationTransformConstants**  
 Added in Windows 10, version 1607.

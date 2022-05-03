@@ -33,6 +33,8 @@
     href: hello-prepare-people-to-use.md
   - name: Deployment Guides
     items:
+    - name: Hybrid Cloud Trust Deployment
+      href: hello-hybrid-cloud-trust.md
     - name: Hybrid Azure AD Joined Key Trust
       items: 
       - name: Hybrid Azure AD Joined Key Trust Deployment

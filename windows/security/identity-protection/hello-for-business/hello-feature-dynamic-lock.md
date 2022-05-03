@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -38,7 +38,7 @@ The Group Policy Editor, when the policy is enabled, creates a default signal ru
 >[!IMPORTANT]
 >Microsoft recommends using the default values for this policy settings.  Measurements are relative based on the varying conditions of each environment.  Therefore, the same values may produce different results. Test policy settings in each environment prior to broadly deploying the setting.
 
-For this policy setting, the **type** and **scenario** attribute values are static and cannot change.  The **classofDevice** is configurable but Phone is the only currently supported configuration. The attribute defaults to Phones sand uses the values from the following table:
+For this policy setting, the **type** and **scenario** attribute values are static and cannot change.  The **classofDevice** is configurable but Phone is the only currently supported configuration. The attribute defaults to Phones and uses the values from the following table:
 
 |Description|Value|
 |:-------------|:-------:|

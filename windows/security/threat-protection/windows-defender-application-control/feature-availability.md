@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 audience: ITPro
 ms.collection: M365-security-compliance
 author: denisebmsft
-ms.reviewer: isbrahm
+ms.reviewer: jgeurten
 ms.author: deniseb
 manager: dansimp
 ms.date: 07/29/2021
@@ -45,3 +45,4 @@ ms.technology: windows-sec
 | COM object configurability        | [Available on 1903+](./allow-com-object-registration-in-windows-defender-application-control-policy.md)  | Not available |
 | Packaged app rules                | [Available on RS5+](./manage-packaged-apps-with-windows-defender-application-control.md)  | Available on Windows 8+   |
 | Enforceable file types       | <ul><li>Driver files: .sys</li><li>Executable files: .exe and .com</li><li>DLLs: .dll and .ocx</li><li>Windows Installer files: .msi, .mst, and .msp</li><li>Scripts: .ps1, .vbs, and .js</li><li>Packaged apps and packaged app installers: .appx</li></ul>| <ul><li>Executable files: .exe and .com</li><li>[Optional] DLLs: .dll and .ocx</li><li>Windows Installer files: .msi, .mst, and .msp</li><li>Scripts: .ps1, .bat, .cmd, .vbs, and .js</li><li>Packaged apps and packaged app installers: .appx</li></ul>|
+| Application ID (AppId) Tagging | [Available on 20H1+](./AppIdTagging/windows-defender-application-control-appid-tagging-guide.md)  | Not available |

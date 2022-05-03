@@ -610,7 +610,7 @@ The following list shows the supported values:
 > This policy is only enforced in Windows 10 for desktop.
 
 
-Allows or disallows Windows Defender Realtime Monitoring functionality.
+Allows or disallows Windows Defender real-time Monitoring functionality.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -761,7 +761,7 @@ The following list shows the supported values:
 > This policy is only enforced in Windows 10 for desktop.
 
 
-Allows or disallows user access to the Windows Defender UI. If disallowed, all Windows Defender notifications will also be suppressed.
+Allows or disallows user access to the Windows Defender UI. I disallowed, all Windows Defender notifications will also be suppressed.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -863,7 +863,7 @@ ADMX Info:
 > This policy is only enforced in Windows 10 for desktop.
 
 
-This policy setting enables setting the state (Block/Audit/Off) for each Attack surface reduction (ASR) rule. Each ASR rule listed can be set to one of the following states (Block/Audit/Off). The ASR rule ID and state should be added under the Options for this setting. Each entry must be listed as a name value pair. The name defines a valid ASR rule ID, while the value contains the status ID indicating the status of the rule.
+This policy setting enables setting the state (Block/Audit/Off) for each Attack surface reduction (Azure Site Recovery) rule. Each ASR rule listed can be set to one of the following states (Block/Audit/Off). The ASR rule ID and state should be added under the Options for this setting. Each entry must be listed as a name value pair. The name defines a valid ASR rule ID, while the value contains the status ID indicating the status of the rule.
 
 For more information about ASR rule ID and status ID, see [Enable Attack Surface Reduction](/windows/threat-protection/windows-defender-exploit-guard/enable-attack-surface-reduction).
 
@@ -966,11 +966,11 @@ Valid values: 0–100
 <!--Description-->
 This policy setting allows you to manage whether a check for new virus and spyware definitions will occur before running a scan. 
 
-This setting applies to scheduled scans as well as the command line "mpcmdrun -SigUpdate", but it has no effect on scans initiated manually from the user interface.
+This setting applies to scheduled scans and the command line "mpcmdrun -SigUpdate", but it has no effect on scans initiated manually from the user interface.
 
 If you enable this setting, a check for new definitions will occur before running a scan.
 
-If you disable this setting or do not configure this setting, the scan will start using the existing definitions.
+If you disable this setting or don't configure this setting, the scan will start using the existing definitions.
 
 Supported values:
 
@@ -1057,7 +1057,7 @@ The following list shows the supported values:
 
 - 0x0 - Default windows defender blocking level
 - 0x2 - High blocking level - aggressively block unknowns while optimizing client performance (greater chance of false positives)       
-- 0x4 - High+ blocking level – aggressively block unknowns and apply additional protection measures (may impact  client performance)
+- 0x4 - High+ blocking level – aggressively block unknowns and apply more protection measures (may impact  client performance)
 - 0x6 - Zero tolerance blocking level – block all unknown executables
 
 <!--/SupportedValues-->
@@ -1097,7 +1097,7 @@ The following list shows the supported values:
 
 This feature allows Microsoft Defender Antivirus to block a suspicious file for up to 60 seconds, and scan it in the cloud to make sure it's safe. Value type is integer, range is 0 - 50.
 
-The typical cloud check timeout is 10 seconds. To enable the extended cloud check feature, specify the extended time in seconds, up to an additional 50 seconds. 
+The typical cloud check timeout is 10 seconds. To enable the extended cloud check feature, specify the extended time in seconds, up to an extra 50 seconds. 
 
 For example, if the desired timeout is 60 seconds, specify 50 seconds in this setting, which will enable the extended cloud check feature, and will raise the total time to 60 seconds. 
 
@@ -1148,7 +1148,7 @@ ADMX Info:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop. The previous name was GuardedFoldersAllowedApplications and changed to ControlledFolderAccessAllowedApplications.
 
-Added in Windows 10, version 1709. This policy setting allows user-specified applications to the controlled folder access feature. Adding an allowed application means the controlled folder access feature will allow the application to modify or delete content in certain folders such as My Documents. In most cases it will not be necessary to add entries. Microsoft Defender Antivirus will automatically detect and dynamically add applications that are friendly. Value type is string. Use the | as the substring separator.
+Added in Windows 10, version 1709. This policy setting allows user-specified applications to the controlled folder access feature. Adding an allowed application means the controlled folder access feature will allow the application to modify or delete content in certain folders such as My Documents. In most cases it won't be necessary to add entries. Microsoft Defender Antivirus will automatically detect and dynamically add applications that are friendly. Value type is string. Use the | as the substring separator.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1194,7 +1194,7 @@ ADMX Info:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop. The previous name was GuardedFoldersList and changed to ControlledFolderAccessProtectedFolders.
 
-This policy settings allows adding user-specified folder locations to the controlled folder access feature. These folders will complement the system defined folders such as My Documents and My Pictures. The list of system folders will be displayed in the user interface and can not be changed. Value type is string. Use the | as the substring separator.
+This policy setting allows adding user-specified folder locations to the controlled folder access feature. These folders will complement the system defined folders such as My Documents and My Pictures. The list of system folders will be displayed in the user interface and can't be changed. Value type is string. Use the | as the substring separator.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1244,7 +1244,7 @@ ADMX Info:
 Time period (in days) that quarantine items will be stored on the system.
 
 
-The default value is 0, which keeps items in quarantine, and does not automatically remove them.
+The default value is 0, which keeps items in quarantine, and doesn't automatically remove them.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1293,9 +1293,9 @@ Valid values: 0–90
 <!--Description-->
 This policy setting allows you to configure catch-up scans for scheduled full scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed.  Usually these scheduled scans are missed because the computer was turned off at the scheduled time. 
 
-If you enable this setting, catch-up scans for scheduled full scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer.  If there is no scheduled scan configured, there will be no catch-up scan run. 
+If you enable this setting, catch-up scans for scheduled full scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone signs in to the computer.  If there's no scheduled scan configured, there will be no catch-up scan run. 
 
-If you disable or do not configure this setting, catch-up scans for scheduled full scans will be turned off.
+If you disable or don't configure this setting, catch-up scans for scheduled full scans will be turned off.
 
 Supported values:
 
@@ -1356,9 +1356,9 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to configure catch-up scans for scheduled quick scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed. Usually these scheduled scans are missed because the computer was turned off at the scheduled time. 
 
-If you enable this setting, catch-up scans for scheduled quick scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer. If there is no scheduled scan configured, there will be no catch-up scan run.
+If you enable this setting, catch-up scans for scheduled quick scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone signs in to the computer. If there's no scheduled scan configured, there will be no catch-up scan run.
 
-If you disable or do not configure this setting, catch-up scans for scheduled quick scans will be turned off.
+If you disable or don't configure this setting, catch-up scans for scheduled quick scans will be turned off.
 
 Supported values:
 
@@ -1475,7 +1475,7 @@ This policy setting allows you to enable or disable low CPU priority for schedul
 
 If you enable this setting, low CPU priority will be used during scheduled scans.
 
-If you disable or do not configure this setting, not changes will be made to CPU priority for scheduled scans.
+If you disable or don't configure this setting, not changes will be made to CPU priority for scheduled scans.
 
 Supported values:
 
@@ -1535,13 +1535,13 @@ ADMX Info:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
-This policy allows you to turn network protection on (block/audit) or off. Network protection protects employees using any app from accessing phishing scams, exploit-hosting sites, and malicious content on the Internet. This includes preventing third-party browsers from connecting to dangerous sites. Value type is integer.
+This policy allows you to turn on network protection (block/audit) or off. Network protection protects employees using any app from accessing phishing scams, exploit-hosting sites, and malicious content on the Internet. This protection includes preventing third-party browsers from connecting to dangerous sites. Value type is integer.
 
 If you enable this setting, network protection is turned on and employees can't turn it off. Its behavior can be controlled by the following options: Block and Audit.
-If you enable this policy with the ""Block"" option, users/apps will be blocked from connecting to dangerous domains. You will be able to see this activity in Windows Defender Security Center.
-If you enable this policy with the ""Audit"" option, users/apps will not be blocked from connecting to dangerous domains. However, you will still see this activity in Windows Defender Security Center.
-If you disable this policy, users/apps will not be blocked from connecting to dangerous domains. You will not see any network activity in Windows Defender Security Center.
-If you do not configure this policy, network blocking will be disabled by default.
+If you enable this policy with the ""Block"" option, users/apps will be blocked from connecting to dangerous domains. You'll be able to see this activity in Windows Defender Security Center.
+If you enable this policy with the ""Audit"" option, users/apps won't be blocked from connecting to dangerous domains. However, you'll still see this activity in Windows Defender Security Center.
+If you disable this policy, users/apps won't be blocked from connecting to dangerous domains. You'll not see any network activity in Windows Defender Security Center.
+If you don't configure this policy, network blocking will be disabled by default.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1761,8 +1761,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – PUA Protection off. Windows Defender will not protect against potentially unwanted applications.
--   1 – PUA Protection on. Detected items are blocked. They will show in history along with other threats.
+-   0 (default) – PUA Protection off. Windows Defender won't protect against potentially unwanted applications.
+-   1 – PUA Protection on. Detected items are blocked. They'll show in history along with other threats.
 -   2 – Audit mode. Windows Defender will detect potentially unwanted applications, but take no action. You can review information about the applications Windows Defender would have taken action against by searching for events created by Windows Defender in the Event Viewer.
 
 <!--/SupportedValues-->
@@ -2095,7 +2095,7 @@ Valid values: 0–1380.
 <!--Description-->
 This policy setting allows you to define the security intelligence location for VDI-configured computers. 
 
-​If you disable or do not configure this setting, security intelligence will be referred from the default local source.
+​If you disable or don't configure this setting, security intelligence will be referred from the default local source.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2155,9 +2155,9 @@ Possible values are:
 
 For example: InternalDefinitionUpdateServer | MicrosoftUpdateServer | MMPC 
 
-If you enable this setting, definition update sources will be contacted in the order specified. Once definition updates have been successfully downloaded from one specified source, the remaining sources in the list will not be contacted.
+If you enable this setting, definition update sources will be contacted in the order specified. Once definition updates have been successfully downloaded from one specified source, the remaining sources in the list won't be contacted.
 
-If you disable or do not configure this setting, definition update sources will be contacted in a default order.
+If you disable or don't configure this setting, definition update sources will be contacted in a default order.
 
 OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/SignatureUpdateFallbackOrder
 
@@ -2217,9 +2217,9 @@ For example: \\unc1\Signatures | \\unc2\Signatures
 
 The list is empty by default.
 
-If you enable this setting, the specified sources will be contacted for definition updates. Once definition updates have been successfully downloaded from one specified source, the remaining sources in the list will not be contacted.
+If you enable this setting, the specified sources will be contacted for definition updates. Once definition updates have been successfully downloaded from one specified source, the remaining sources in the list won't be contacted.
 
-If you disable or do not configure this setting, the list will remain empty by default and no sources will be contacted.
+If you disable or don't configure this setting, the list will remain empty by default and no sources will be contacted.
 
 OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/SignatureUpdateFileSharesSources
 

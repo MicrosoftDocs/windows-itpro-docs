@@ -11,7 +11,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 01/28/2022
+ms.date: 02/14/2022
 ms.reviewer: rmunck
 ms.technology: windows-sec
 ---
@@ -46,10 +46,9 @@ The Security Compliance Toolkit consists of:
 
 -   Microsoft Office security baseline
     -   Microsoft 365 Apps for Enterprise Version 2112
-    -   Office 2016 
     
 -   Microsoft Edge security baseline
-    -   Edge Browser Version 97
+    -   Edge version 98
 
 -   Tools
     -   Policy Analyzer

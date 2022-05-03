@@ -3,10 +3,10 @@ title: Deploy Windows To Go in your organization (Windows 10)
 description: Learn how to deploy Windows To Go in your organization through a wizard in the user interface as well as programatically with Windows PowerShell.
 ms.assetid: cfe550be-ffbd-42d1-ab4d-80efae49b07f
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.audience: itpro
-author: greg-lindsay
-ms.author: greglin
+author: aczechowski
+ms.author: aaroncz
 keywords: deployment, USB, device, BitLocker, workspace, security, data
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -973,9 +973,6 @@ write-output "" "Provisioning script complete."
 ```
 
 ## Considerations when using different USB keyboard layouts with Windows To Go
-
-
-Before provisioning your Windows To Go drive you need to consider if your workspace will boot on a computer with a non-English USB keyboard attached. As described in [KB article 927824](https://go.microsoft.com/fwlink/p/?LinkId=619176) there is a known issue where the plug and play ID causes the keyboard to be incorrectly identified as an English 101 key keyboard. To avoid this problem, you can modify the provisioning script to set the override keyboard parameters.
 
 In the PowerShell provisioning script, after the image has been applied, you can add the following commands that will correctly set the keyboard settings. The following example uses the Japanese keyboard layout:
 

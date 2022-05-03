@@ -11,7 +11,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 01/28/2022
+ms.date: 02/14/2022
 ms.reviewer: 
 ms.technology: windows-sec
 ---
@@ -43,7 +43,7 @@ No. PowerShell-based DSC is rapidly gaining popularity, and more DSC tools are c
 
 **Does SCT support the creation of Microsoft Endpoint Manager DCM packs?**
 
-No. A potential alternative is Desired State Configuration (DSC), a feature of the [Windows Management Framework](https://www.microsoft.com/download/details.aspx?id=40855). A tool that supports conversion of GPO Backups to DSC format can be found [here](https://github.com/Microsoft/BaselineManagement).
+No. A potential alternative is Desired State Configuration (DSC), a feature of the [Windows Management Framework](https://www.microsoft.com/download/details.aspx?id=54616). A tool that supports conversion of GPO Backups to DSC format can be found [here](https://github.com/Microsoft/BaselineManagement).
 
 **Does SCT support the creation of Security Content Automation Protocol (SCAP)-format policies?**
 
@@ -80,7 +80,7 @@ Windows 8.1 |[9600 (April Update)](/archive/blogs/secguide/security-baselines-fo
 |           Name            |                                                                            Details                                                                            |                               Security Tools                                |
 |---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
 |   Microsoft 365 Apps for enterprise, version 2112    | [SecGuide](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-365-apps-for-enterprise-v2112/ba-p/3038172) |     [SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319)     |
-|   Microsoft Edge, version 97    | [SecGuide](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-v97/ba-p/3062252) |     [SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319)     |
+|   Microsoft Edge, version 98    | [SecGuide](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-v98/ba-p/3165443) |     [SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319)     |
 
 <br />
 

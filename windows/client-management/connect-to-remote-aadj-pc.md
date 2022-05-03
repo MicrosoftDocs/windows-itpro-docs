@@ -31,11 +31,11 @@ From its release, Windows 10 has supported remote connections to PCs joined to A
 
 ## Set up
 
-- Both PCs (local and remote) must be running Windows 10, version 1607 or later. Remote connections to an Azure AD-joined PC running earlier versions of Windows 10 are not supported.
-- Your local PC (where you are connecting from) must be either Azure AD-joined or Hybrid Azure AD-joined if using Windows 10, version 1607 and above, or [Azure AD registered](/azure/active-directory/devices/concept-azure-ad-register) if using Windows 10, version 2004 and above. Remote connections to an Azure AD-joined PC from an unjoined device or a non-Windows 10 device are not supported. 
-- The local PC and remote PC must be in the same Azure AD tenant. Azure AD B2B guests are not supported for Remote desktop. 
+- Both PCs (local and remote) must be running Windows 10, version 1607 or later. Remote connections to an Azure AD-joined PC running earlier versions of Windows 10 aren't supported.
+- Your local PC (where you're connecting from) must be either Azure AD-joined or Hybrid Azure AD-joined if using Windows 10, version 1607 and above, or [Azure AD registered](/azure/active-directory/devices/concept-azure-ad-register) if using Windows 10, version 2004 and above. Remote connections to an Azure AD-joined PC from an unjoined device or a non-Windows 10 device aren't supported. 
+- The local PC and remote PC must be in the same Azure AD tenant. Azure AD B2B guests aren't supported for Remote desktop. 
 
-Ensure [Remote Credential Guard](/windows/access-protection/remote-credential-guard), a new feature in Windows 10, version 1607, is turned off on the client PC you are using to connect to the remote PC.
+Ensure [Remote Credential Guard](/windows/access-protection/remote-credential-guard), a new feature in Windows 10, version 1607, is turned off on the client PC you're using to connect to the remote PC.
 
 - On the PC you want to connect to:
 
@@ -45,7 +45,7 @@ Ensure [Remote Credential Guard](/windows/access-protection/remote-credential-gu
 
      ![Allow remote connections to this computer.](images/allow-rdp.png)
 
-  3. If the user who joined the PC to Azure AD is the only one who is going to connect remotely, no additional configuration is needed. To allow additional users or groups to connect to the PC, you must allow remote connections for the specified users or groups. Users can be added either manually or through MDM policies:
+  3. If the user who joined the PC to Azure AD is the only one who is going to connect remotely, no other configuration is needed. To allow more users or groups to connect to the PC, you must allow remote connections for the specified users or groups. Users can be added either manually or through MDM policies:
      
       - Adding users manually
    
@@ -55,14 +55,14 @@ Ensure [Remote Credential Guard](/windows/access-protection/remote-credential-gu
         ```
         where *the-UPN-attribute-of-your-user* is the name of the user profile in C:\Users\, which is created based on the DisplayName attribute in Azure AD.
 
-        In order to execute this PowerShell command you be a member of the local Administrators group. Otherwise, you'll get an error like this example:
+        In order to execute this PowerShell command, you must be a member of the local Administrators group. Otherwise, you'll get an error like this example:
         - for cloud only user: "There is no such global user or group : *name*"
         - for synced user: "There is no such global user or group : *name*" </br>
 
          > [!NOTE]
          > For devices running Windows 10, version 1703 or earlier, the user must sign in to the remote device first before attempting remote connections.
          >
-         > Starting in Windows 10, version 1709, you can add other Azure AD users to the **Administrators** group on a device in **Settings** and restrict remote credentials to **Administrators**. If there is a problem connecting remotely, make sure that both devices are joined to Azure AD and that TPM is functioning properly on both devices.
+         > Starting in Windows 10, version 1709, you can add other Azure AD users to the **Administrators** group on a device in **Settings** and restrict remote credentials to **Administrators**. If there's a problem connecting remotely, make sure that both devices are joined to Azure AD and that TPM is functioning properly on both devices.
 
       - Adding users using policy
      

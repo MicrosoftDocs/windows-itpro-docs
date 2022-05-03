@@ -21,7 +21,7 @@ The DMSessionActions configuration service provider (CSP) is used to manage:
 
 This CSP was added in Windows 10, version 1703.
 
-The following shows the DMSessionActions configuration service provider in tree format.
+The following example shows the DMSessionActions configuration service provider in tree format.
 ```
 ./User/Vendor/MSFT
 DMSessionActions
@@ -92,7 +92,7 @@ DMSessionActions
 <p>Value type is string. Supported operation is Get.</p>
 
 <a href="" id="powersettings"></a>**PowerSettings**  
-<p>Node for power-related configrations</p>
+<p>Node for power-related configurations</p>
 
 <a href="" id="maxskippedsessionsinlowpowerstate"></a>**PowerSettings/MaxSkippedSessionsInLowPowerState**  
 <p>Maximum number of continuous skipped sync sessions when the device is in low-power state.</p>
