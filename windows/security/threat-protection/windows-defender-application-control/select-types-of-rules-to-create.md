@@ -141,6 +141,9 @@ You can also use the following macros when the exact volume may vary: `%OSDRIVE%
 > [!NOTE]
 > For others to better understand the WDAC policies that has been deployed, we recommend maintaining separate ALLOW and DENY policies on Windows 10, version 1903 and later.
 
+> [!NOTE]
+> There is currently a bug where MSIs cannot be allow listed in file path rules. MSIs must be allow listed using other rule types, for example, publisher rules or file attribute rules.
+
 ## More information about hashes
 
 ### Why does scan create four hash rules per XML file?

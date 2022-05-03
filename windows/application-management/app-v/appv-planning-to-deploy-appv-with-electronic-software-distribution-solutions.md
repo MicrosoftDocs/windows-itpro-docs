@@ -16,13 +16,13 @@ ms.topic: article
 
 [!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
-If you are using an electronic software distribution (ESD) system to deploy App-V packages, review the following planning considerations. For information about deploying App-V with Microsoft Endpoint Configuration Manager, see [Introduction to application management in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682125(v=technet.10)#BKMK_Appv).
+If you're using an electronic software distribution (ESD) system to deploy App-V packages, review the following planning considerations. For information about deploying App-V with Microsoft Endpoint Configuration Manager, see [Introduction to application management in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682125(v=technet.10)#BKMK_Appv).
 
 Review the following component and architecture requirements options that apply when you use an ESD to deploy App-V packages:
 
 | Deployment requirement or option | Description |
 |---|---|
-| The App-V Management server, Management database, and Publishing server are not required. | These functions are handled by the implemented ESD solution. |
+| The App-V Management server, Management database, and Publishing server aren't required. | These functions are handled by the implemented ESD solution. |
 | You can deploy the App-V Reporting server and Reporting database side-by-side with the ESD. | The side-by-side deployment lets you collect data and generate reports.<br/>If you enable the App-V client to send report information without using the App-V Reporting server, the reporting data will be stored in associated .xml files. |
 
 

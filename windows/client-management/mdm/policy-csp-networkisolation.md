@@ -119,7 +119,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Sets the enterprise IP ranges that define the computers in the enterprise network. Data that comes from those computers will be considered part of the enterprise and protected. These locations will be considered a safe destination for enterprise data to be shared to. This is a comma-separated list of IPv4 and IPv6 ranges.
+Sets the enterprise IP ranges that define the computers in the enterprise network. Data that comes from those computers will be considered part of the enterprise and protected. These locations will be considered a safe destination for enterprise data to be shared to. These ranges are a comma-separated list of IPv4 and IPv6 ranges.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -215,7 +215,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This is the comma-separated list of internal proxy servers. For example "157.54.14.28, 157.54.11.118, 10.202.14.167, 157.53.14.163, 157.69.210.59". These proxies have been configured by the admin to connect to specific resources on the Internet. They are considered to be enterprise network locations. The proxies are only leveraged in configuring the **EnterpriseCloudResources** policy to force traffic to the matched cloud resources through these proxies.
+This list is the comma-separated list of internal proxy servers. For example "157.54.14.28, 157.54.11.118, 10.202.14.167, 157.53.14.163, 157.69.210.59". These proxies have been configured by the admin to connect to specific resources on the Internet. They're considered to be enterprise network locations. The proxies are only used in configuring the **EnterpriseCloudResources** policy to force traffic to the matched cloud resources through these proxies.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -257,7 +257,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This is the list of domains that comprise the boundaries of the enterprise. Data from one of these domains that is sent to a device will be considered enterprise data and protected These locations will be considered a safe destination for enterprise data to be shared to. This is a comma-separated list of domains, for example "contoso.sharepoint.com, Fabrikam.com".
+This list is the list of domains that comprise the boundaries of the enterprise. Data from one of these domains that is sent to a device will be considered enterprise data and protected. These locations will be considered a safe destination for enterprise data to be shared to. This list is a comma-separated list of domains, for example "contoso.sharepoint.com, Fabrikam.com".
 
 > [!NOTE]
 > The client requires domain name to be canonical, otherwise the setting will be rejected by the client.
@@ -300,7 +300,7 @@ Here are the steps to create canonical domain names:
 
 <!--/Scope-->
 <!--Description-->
-This is a comma-separated list of proxy servers. Any server on this list is considered non-enterprise. For example "157.54.14.28, 157.54.11.118, 10.202.14.167, 157.53.14.163, 157.69.210.59".
+This list is a comma-separated list of proxy servers. Any server on this list is considered non-enterprise. For example "157.54.14.28, 157.54.11.118, 10.202.14.167, 157.53.14.163, 157.69.210.59".
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -383,7 +383,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-List of domain names that can used for work or personal resource.
+List of domain names that can be used for work or personal resource.
 
 <!--/Description-->
 <!--ADMXMapped-->

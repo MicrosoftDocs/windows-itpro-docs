@@ -67,7 +67,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This is the program that will be invoked when the user clicks the `events.asp` link.
+This program is the one that will be invoked when the user clicks the `events.asp` link.
 
 <!--/Description-->
  
@@ -109,7 +109,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This specifies the command line parameters that will be passed to the `events.asp` program.
+This program specifies the command line parameters that will be passed to the `events.asp` program.
 
 <!--/Description-->
 
@@ -150,7 +150,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This is the URL that will be passed to the Description area in the Event Properties dialog box. 
+This URL is the one that will be passed to the Description area in the Event Properties dialog box. 
 Change this value if you want to use a different Web server to handle event information requests.
 
 

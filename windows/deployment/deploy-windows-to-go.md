@@ -974,9 +974,6 @@ write-output "" "Provisioning script complete."
 
 ## Considerations when using different USB keyboard layouts with Windows To Go
 
-
-Before provisioning your Windows To Go drive you need to consider if your workspace will boot on a computer with a non-English USB keyboard attached. As described in [KB article 927824](https://go.microsoft.com/fwlink/p/?LinkId=619176) there is a known issue where the plug and play ID causes the keyboard to be incorrectly identified as an English 101 key keyboard. To avoid this problem, you can modify the provisioning script to set the override keyboard parameters.
-
 In the PowerShell provisioning script, after the image has been applied, you can add the following commands that will correctly set the keyboard settings. The following example uses the Japanese keyboard layout:
 
 ``` 

@@ -32,7 +32,7 @@ You can use Standard User Analyzer (SUA) to test your applications and monitor A
 
 You can use SUA in either of the following ways:
 
--   **Standard User Analyzer Wizard.** A wizard that guides you through a step-by-step process to locate and fix issues, without options for additional analysis.
+-   **Standard User Analyzer Wizard.** A wizard that guides you through a step-by-step process to locate and fix issues, without options for more analysis.
 
 -   **Standard User Analyzer Tool.** A full-function tool in which you can perform in-depth analysis and fix issues.
 
@@ -40,7 +40,7 @@ You can use SUA in either of the following ways:
 
 |Topic|Description|
 |--- |--- |
-|[Using the SUA Wizard](using-the-sua-wizard.md)|The Standard User Analyzer (SUA) Wizard works much like the SUA tool to evaluate User Account Control (UAC) issues. However, the SUA Wizard does not offer detailed analysis, and it cannot disable virtualization or elevate your permissions.|
+|[Using the SUA wizard](using-the-sua-wizard.md)|The Standard User Analyzer (SUA) wizard works much like the SUA tool to evaluate User Account Control (UAC) issues. However, the SUA wizard doesn't offer detailed analysis, and it can't disable virtualization or elevate your permissions.|
 |[Using the SUA Tool](using-the-sua-tool.md)|By using the Standard User Analyzer (SUA) tool, you can test your applications and monitor API calls to detect compatibility issues with the User Account Control (UAC) feature.|
 
 
