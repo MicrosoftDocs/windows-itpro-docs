@@ -33,7 +33,7 @@ For details about Microsoft mobile device management protocols for Windows 10 a
 
 ## Breaking changes and known issues
 
-### Get command inside an atomic command is not supported
+### Get command inside an atomic command isn’t supported
 
 In Windows 10 and Windows 11, a Get command inside an atomic command isn't supported. 
 
@@ -267,17 +267,18 @@ The DM agent for [push-button reset](/windows-hardware/manufacture/desktop/push-
 
 
 ### Can there be more than one MDM server to enroll and manage devices in Windows 10 or 11?
+
 No. Only one MDM is allowed.
 
 ### How do I set the maximum number of Azure Active Directory joined devices per user?
-1.  Log on to the portal as tenant admin: https://manage.windowsazure.com.
-2.  Click Active Directory on the left pane.
-3.  Choose your tenant.
-4.  Click **Configure**.
-5.  Set quota to unlimited.
 
-	:::image type="content" alt-text="aad maximum joined devices." source="images/faq-max-devices.png":::
- 
+1. Sign in to the portal as tenant admin: https://portal.azure.com.
+2. Select Active Directory on the left pane.
+3. Choose your tenant.
+4. Select **Configure**.
+5. Set quota to unlimited.
+
+  :::image type="content" alt-text="aad maximum joined devices." source="images/faq-max-devices.png":::
 
 ### What is dmwappushsvc?
 

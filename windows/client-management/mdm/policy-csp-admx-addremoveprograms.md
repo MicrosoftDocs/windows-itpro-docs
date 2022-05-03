@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_AddRemovePrograms
-description: Policy CSP - ADMX_AddRemovePrograms 
+description: Learn about the Policy CSP - ADMX_AddRemovePrograms.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -687,3 +687,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

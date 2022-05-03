@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_AppxPackageManager
-description: Policy CSP - ADMX_AppxPackageManager
+description: Learn about the Policy CSP - ADMX_AppxPackageManager.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -63,16 +63,16 @@ manager: dansimp
 <!--Description-->
 This policy setting allows you to manage the deployment of Windows Store apps when the user is signed in using a special profile. 
 
-Special profiles are the following user profiles, where changes are discarded after the user signs off:  
+Special profiles are the following user profiles where changes are discarded after the user signs off:  
 
-- Roaming user profiles to which the "Delete cached copies of roaming profiles" Group Policy setting applies
-- Mandatory user profiles and super-mandatory profiles, which are created by an administrator
-- Temporary user profiles, which are created when an error prevents the correct profile from loading
-- User profiles for the Guest account and members of the Guests group
+- Roaming user profiles to which the "Delete cached copies of roaming profiles" Group Policy setting applies.
+- Mandatory user profiles and super-mandatory profiles, which are created by an administrator.
+- Temporary user profiles, which are created when an error prevents the correct profile from loading.
+- User profiles for the Guest account and members of the Guests group.
 
 If you enable this policy setting, Group Policy allows deployment operations (adding, registering, staging, updating, or removing an app package) of Windows Store apps when using a special profile.
 
-If you disable or do not configure this policy setting, Group Policy blocks deployment operations of Windows Store apps when using a special profile.
+If you disable or don't configure this policy setting, Group Policy blocks deployment operations of Windows Store apps when using a special profile.
 
 <!--/Description-->
 
@@ -90,3 +90,7 @@ ADMX Info:
 
 
 <!--/Policies-->
+
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

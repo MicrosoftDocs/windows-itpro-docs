@@ -28,9 +28,9 @@ The following table shows the OMA DM standards that Windows uses.
 |DM protocol commands|The following list shows the commands that are used by the device. For more information about the OMA DM command elements, see "[OMA website](https://www.openmobilealliance.org/release/DM/V1_1_2-20031209-A/)" available from the OMA website.<br/><li>Add (Implicit Add supported)<li>Alert (DM alert): Generic alert (1226) is used by enterprise management client when the user triggers an MDM unenrollment action from the device or when a CSP finishes some asynchronous actions. Device alert (1224) is used to notify the server some device triggered event.<li>Atomic: Performing an Add command followed by Replace on the same node within an atomic element isn't supported. Nested Atomic and Get commands aren't allowed and will generate error code 500.<li>Delete: Removes a node from the DM tree, and the entire subtree beneath that node if one exists<li>Exec: Invokes an executable on the client device<li>Get: Retrieves data from the client device; for interior nodes, the child node names in the Data element are returned in URI-encoded format<li>Replace: Overwrites data on the client device<li>Result: Returns the data results of a Get command to the DM server<li>Sequence: Specifies the order in which a group of commands must be processed<li>Status: Indicates the completion status (success or failure) of an operation<br/><br/>If an XML element that isn't a valid OMA DM command is under one of the following elements, the status code 400 is returned for that element:<br/><li>SyncBody<li>Atomic<li>Sequence<br><br/>If no CmdID is provided in the DM command, the client returns blank in the status element and the status code 400.<br/><br/>If Atomic elements are nested, the following status codes are returned:<br/><li>The nested Atomic command returns 500.<li>The parent Atomic command returns 507.<br/><br/>For more information about the Atomic command, see OMA DM protocol common elements.<br>Performing an Add command followed by Replace on the same node within an Atomic element isn't supported.<br><br/>LocURI can't start with `/`.<br/><br/>Meta XML tag in SyncHdr is ignored by the device.|
 |OMA DM standard objects|DevInfo<li>DevDetail<li>OMA DM DMS account objects (OMA DM version 1.2)|
 |Security|<li>Authenticate DM server initiation notification SMS message (not used by enterprise management)<li>Application layer Basic and MD5 client authentication<li>Authenticate server with MD5 credential at application level<li>Data integrity and authentication with HMAC at application level<li>SSL level certificate-based client/server authentication, encryption, and data integrity check|
-|Nodes|In the OMA DM tree, the following rules apply for the node name:<br/><li>"." can be part of the node name.<li>The node name can't be empty.<li>The node name can't be only the asterisk (*) character.|
-|Provisioning Files|Provisioning XML must be well formed and follow the definition in SyncML Representation Protocol](https://go.microsoft.com/fwlink/p/?LinkId=526905).<br/><br/>If an XML element that isn't a valid OMA DM command is under SyncBody, the status code 400 is returned for that element.<div class="alert">**Note**<br>To represent a Unicode string as a URI, first encode the string as UTF-8. Then encode each of the UTF-8 bytes using URI encoding.</div>|
-|WBXML support|Windows supports sending and receiving SyncML in both XML format and encoded WBXML format. This dual-format support is configurable by using the DEFAULTENCODING node under the w7 APPLICATION characteristic during enrollment. For more information about WBXML encoding, see section 8 of the [SyncML Representation Protocol](https://go.microsoft.com/fwlink/p/?LinkId=526905) specification.|
+|Nodes|In the OMA DM tree, the following rules apply for the node name:<br/><li>"." can be part of the node name.<li>The node name can't be empty.<li>The node name can't be only the asterisk (`*`) character.|
+|Provisioning Files|Provisioning XML must be well formed and follow the definition in [SyncML Representation Protocol](https://www.openmobilealliance.org/release/Common/V1_2_2-20090724-A/OMA-TS-SyncML-RepPro-V1_2_2-20090724-A.pdf).<br/><br/>If an XML element that isn't a valid OMA DM command is under SyncBody, the status code 400 is returned for that element.<div class="alert">**Note**<br>To represent a Unicode string as a URI, first encode the string as UTF-8. Then encode each of the UTF-8 bytes using URI encoding.</div>|
+|WBXML support|Windows supports sending and receiving SyncML in both XML format and encoded WBXML format. This dual-format support is configurable by using the DEFAULTENCODING node under the w7 APPLICATION characteristic during enrollment. For more information about WBXML encoding, see section 8 of the [SyncML Representation Protocol](https://www.openmobilealliance.org/release/Common/V1_2_2-20090724-A/OMA-TS-SyncML-RepPro-V1_2_2-20090724-A.pdf) specification.|
 |Handling of large objects|In Windows 10, version 1511, client support for uploading large objects to the server was added.|
 
 
@@ -105,9 +105,9 @@ For CSPs and policies that support per user configuration, the MDM server can se
 
 The data part of this alert could be one of following strings:
 
--   User – the user that enrolled the device is actively logged in. The MDM server could send user-specific configuration for CSPs/policies that support per user configuration
--   Others – another user sign in but that user doesn't have an MDM account. The server can only apply device-wide configuration, for example, configuration applies to all users in the device.
--   None – no active user sign in. The server can only apply device-wide configuration and available configuration is restricted to the device environment (no active user sign in).
+- User: the user that enrolled the device is actively logged in. The MDM server could send user-specific configuration for CSPs/policies that support per user configuration
+- Others: another user sign in but that user doesn't have an MDM account. The server can only apply device-wide configuration, for example, configuration applies to all users in the device.
+- None: no active user sign in. The server can only apply device-wide configuration and available configuration is restricted to the device environment (no active user sign in).
 
 Below is an alert example:
 
@@ -117,25 +117,25 @@ Below is an alert example:
     <Data>1224</Data>
     <Item>
         <Meta>
-            <Type xmlns=”syncml:metinf”>com.microsoft/MDM/LoginStatus</Type>
-            <Format xmlns=”syncml:metinf”>chr</Format>
+            <Type xmlns="syncml:metinf">com.microsoft/MDM/LoginStatus</Type>
+            <Format xmlns="syncml:metinf">chr</Format>
         </Meta>
         <Data>user</Data>
     </Item>
 </Alert>
 ```
 
-The server notifies the device whether it's a user-targeted or device-targeted configuration by a prefix to the management node’s LocURL, with ./user for user targeted configuration, or ./device for device targeted configuration. By default, if no prefix with ./device or ./user, it's device targeted configuration.
+The server notifies the device whether it's a user-targeted or device-targeted configuration by a prefix to the management node's LocURL, with `./user` for user-targeted configuration, or `./device` for device-targeted configuration. By default, if no prefix with `./device` or `./user`, it's a device-targeted configuration.
 
-The following LocURL shows a per user CSP node configuration: **./user/vendor/MSFT/EnterpriseModernAppManagement/AppInstallation/&lt;PackageFamilyName&gt;/StoreInstall**
+The following LocURL shows a per user CSP node configuration: `./user/vendor/MSFT/EnterpriseModernAppManagement/AppInstallation/<PackageFamilyName>/StoreInstall`
 
-The following LocURL shows a per device CSP node configuration: **./device/vendor/MSFT/RemoteWipe/DoWipe**
+The following LocURL shows a per device CSP node configuration: `./device/vendor/MSFT/RemoteWipe/DoWipe`
 
 
 <a href="" id="syncml-response-codes"></a>
 ## SyncML response status codes
 
-When SyncML in OMA DM is being used, there are standard response status codes that are returned. The following table lists the common SyncML response status codes you're likely to see. For more information about SyncML response status codes, see section 10 of the [SyncML Representation Protocol](https://openmobilealliance.org/release/Common/V1_2_2-20090724-A/OMA-TS-SyncML-RepPro-V1_2_2-20090724-A.pdf) specification.
+When using SyncML in OMA DM, there are standard response status codes that are returned. The following table lists the common SyncML response status codes you're likely to see. For more information about SyncML response status codes, see section 10 of the [SyncML Representation Protocol](https://openmobilealliance.org/release/Common/V1_2_2-20090724-A/OMA-TS-SyncML-RepPro-V1_2_2-20090724-A.pdf) specification.
 
 | Status code | Description |
 |---|----|

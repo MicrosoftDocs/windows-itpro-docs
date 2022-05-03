@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_Bits
-description: Policy CSP - ADMX_Bits
+description: Learn about the Policy CSP - ADMX_Bits.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -298,7 +298,7 @@ ADMX Info:
 <!--Description-->
 This policy setting limits the network bandwidth that BITS uses for peer cache transfers (this setting doesn't affect transfers from the origin server).
 
-To prevent any negative impact to a computer caused by serving other peers, by default, BITS will use up to 30 percent of the bandwidth of the slowest active network interface. For example, if a computer has both a 100-Mbps network card and a 56-Kbps modem, and both are active, BITS will use a maximum of 30 percent of 56 Kbps. 
+To prevent any negative impact to a computer caused by serving other peers, by default, BITS will use up to 30 percent of the bandwidth of the slowest active network interface. For example, if a computer has both a 100-Mbps network card and a 56-Kbps modem, and both are active, BITS will use a maximum of 30 percent of 56 Kbps.
 
 You can change the default behavior of BITS, and specify a fixed maximum bandwidth that BITS will use for peer caching.
 
@@ -766,3 +766,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

@@ -4,14 +4,14 @@ description: Learn how active directory-based activation is implemented as a rol
 ms.custom: seo-marvel-apr2020
 ms.assetid: 08cce6b7-7b5b-42cf-b100-66c363a846af
 manager: dougeby
-ms.author: greglin
+ms.author: aaroncz
 keywords: vamt, volume activation, activation, windows activation
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
 ms.date: 01/13/2022
 ms.topic: article

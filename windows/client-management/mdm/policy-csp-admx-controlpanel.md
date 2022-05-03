@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_ControlPanel
-description: Policy CSP - ADMX_ControlPanel
+description: Learn about the Policy CSP - ADMX_ControlPanel.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -82,7 +82,9 @@ To hide a Control Panel item, enable this policy setting and click Show to acces
 If both the "Hide specified Control Panel items" setting and the "Show only specified Control Panel items" setting are enabled, the "Show only specified Control Panel items" setting is ignored.
 
 > [!NOTE]
-> The Display Control Panel item cannot be hidden in the Desktop context menu by using this setting. To hide the Display Control Panel item and prevent users from modifying the computer's display settings use the "Disable Display Control Panel" setting instead.  Note: To hide pages in the System Settings app, use the "Settings Page Visibility" setting under Computer Configuration.
+> The Display Control Panel item cannot be hidden in the Desktop context menu by using this setting. To hide the Display Control Panel item and prevent users from modifying the computer's display settings use the "Disable Display Control Panel" setting instead.  
+>
+>To hide pages in the System Settings app, use the "Settings Page Visibility" setting under Computer Configuration.
 
 <!--/Description-->
 
@@ -261,3 +263,7 @@ ADMX Info:
 <hr/>
 
 <!--/Policies-->
+
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
