@@ -1,23 +1,22 @@
 ---
 title: Offline Migration Reference (Windows 10)
-description: Offline Migration Reference
+description: Offline migration enables the ScanState tool to run inside a different Windows OS than the Windows OS from which ScanState is gathering files and settings.
 ms.assetid: f347547c-d601-4c3e-8f2d-0138edeacfda
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.date: 04/19/2017
 ms.topic: article
 ---
 
 # Offline Migration Reference
 
-
-Offline migration enables the ScanState tool to run inside a different Windows® operating system than the Windows operating system from which ScanState is gathering files and settings. There are two primary offline scenarios:
+Offline migration enables the ScanState tool to run inside a different Windows&reg; operating system than the Windows operating system from which ScanState is gathering files and settings. There are two primary offline scenarios:
 
 -   **Windows PE.** The ScanState tool can be run from within Windows PE, gathering files and settings from the offline Windows operating system on that machine.
 
@@ -31,8 +30,7 @@ When you use User State Migration Tool (USMT) 10.0 to gather and restore user s
 
 -   **New recovery scenario.** In scenarios where a machine no longer restarts properly, it might be possible to gather user state with the ScanState tool from within WinPE.
 
-## In This Topic
-
+## In This topic
 
 -   [What Will Migrate Offline?](#bkmk-whatwillmigrate)
 
@@ -48,7 +46,6 @@ When you use User State Migration Tool (USMT) 10.0 to gather and restore user s
 
 ## <a href="" id="bkmk-whatwillmigrate"></a>What Will Migrate Offline?
 
-
 The following user data and settings migrate offline, similar to an online migration:
 
 -   Data and registry keys specified in MigXML
@@ -61,47 +58,23 @@ The following user data and settings migrate offline, similar to an online migra
 
 -   EFS files
 
--   Internet Explorer® Favorites
+-   Internet Explorer&reg; Favorites
 
 For exceptions to what you can migrate offline, see [What Does USMT Migrate?](usmt-what-does-usmt-migrate.md)
 
 ## <a href="" id="bkmk-offlineenvironments"></a>What Offline Environments are Supported?
 
-
 The following table defines the supported combination of online and offline operating systems in USMT.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Running Operating System</th>
-<th align="left">Offline Operating System</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>WinPE 5.0 or greater, with the MSXML library</p></td>
-<td align="left"><p>Windows Vista, Windows 7, Windows 8, Windows 10</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows 7, Windows 8, Windows 10</p></td>
-<td align="left"><p>Windows.old directory</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Running Operating System|Offline Operating System|
+|--- |--- |
+|WinPE 5.0 or greater, with the MSXML library|Windows Vista, Windows 7, Windows 8, Windows 10|
+|Windows 7, Windows 8, Windows 10|Windows.old directory|
 
 **Note**  
-It is possible to run the ScanState tool while the drive remains encrypted by suspending Windows BitLocker Drive Encryption before booting into WinPE. For more information, see [this Microsoft site](https://go.microsoft.com/fwlink/p/?LinkId=190314).
-
- 
+It is possible to run the ScanState tool while the drive remains encrypted by suspending Windows BitLocker Drive Encryption before booting into WinPE. For more information, see [this Microsoft site](/previous-versions/windows/it-pro/windows-7/ee424315(v=ws.10)).
 
 ## <a href="" id="bkmk-usergroupmembership"></a>User-Group Membership and Profile Control
-
 
 User-group membership is not preserved during offline migrations. You must configure a **&lt;ProfileControl&gt;** section in the Config.xml file to specify the groups that the migrated users should be made members of. The following example places all migrated users into the Users group:
 
@@ -125,83 +98,26 @@ For information about the format of a Config.xml file, see [Config.xml File](usm
 
 ## <a href="" id="bkmk-commandlineoptions"></a>Command-Line Options
 
-
 An offline migration can either be enabled by using a configuration file on the command line, or by using one of the following command line options:
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Component</th>
-<th align="left">Option</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>ScanState.exe</p></td>
-<td align="left"><p><strong>/offline:</strong><em>&lt;path to offline.xml&gt;</em></p></td>
-<td align="left"><p>This command-line option enables the offline-migration mode and requires a path to an Offline.xml configuration file.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>ScanState.exe</p></td>
-<td align="left"><p><strong>/offlineWinDir:</strong><em>&lt;Windows directory&gt;</em></p></td>
-<td align="left"><p>This command-line option enables the offline-migration mode and starts the migration from the location specified. It is only for use in WinPE offline scenarios where the migration is occurring from a Windows directory.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>ScanState.exe</p></td>
-<td align="left"><p><strong>/OfflineWinOld:</strong><em>&lt;Windows.old directory&gt;</em></p></td>
-<td align="left"><p>This command-line option enables the offline migration mode and starts the migration from the location specified. It is only intended to be used in Windows.old migration scenarios, where the migration is occurring from a Windows.old directory.</p></td>
-</tr>
-</tbody>
-</table>
+|Component|Option|Description|
+|--- |--- |--- |
+|ScanState.exe|**/offline:***&lt;path to offline.xml&gt;*|This command-line option enables the offline-migration mode and requires a path to an Offline.xml configuration file.|
+|ScanState.exe|**/offlineWinDir:***&lt;Windows directory&gt;*|This command-line option enables the offline-migration mode and starts the migration from the location specified. It is only for use in WinPE offline scenarios where the migration is occurring from a Windows directory.|
+|ScanState.exe|**/OfflineWinOld:***&lt;Windows.old directory&gt;*|This command-line option enables the offline migration mode and starts the migration from the location specified. It is only intended to be used in Windows.old migration scenarios, where the migration is occurring from a Windows.old directory.|
 
- 
-
-You can use only one of the **/offline**,**/offlineWinDir** , or **/OfflineWinOld** command-line options at a time; USMT does not support using more than one together.
+You can use only one of the **/offline**, **/offlineWinDir**, or **/OfflineWinOld** command-line options at a time; USMT does not support using more than one together.
 
 ## <a href="" id="bkmk-environmentvariables"></a>Environment Variables
 
-
 The following system environment variables are necessary in the scenarios outlined below.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Variable</th>
-<th align="left">Value</th>
-<th align="left">Scenario</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>USMT_WORKING_DIR</p></td>
-<td align="left"><p>Full path to a working directory</p></td>
-<td align="left"><p>Required when USMT binaries are located on read-only media, which does not support the creation of log files or temporary storage. To set the system environment variable, at a command prompt type the following:</p>
-<pre class="syntax" space="preserve"><code>Set USMT_WORKING_DIR=[path to working directory]</code></pre></td>
-</tr>
-<tr class="even">
-<td align="left"><p>MIG_OFFLINE_PLATFORM_ARCH</p></td>
-<td align="left"><p>32 or 64</p></td>
-<td align="left"><p>While operating offline, this environment variable defines the architecture of the offline system, if the system does not match the WinPE and Scanstate.exe architecture. This environment variable enables the 32-bit ScanState application to gather data from a computer with 64-bit architecture, or the 64-bit ScanState application to gather data from a computer with 32-bit architecture. This is required when auto-detection of the offline architecture doesn’t function properly, for example, when the source system is running a 64-bit version of Windows XP. For example, to set this system environment variable for a 32-bit architecture, at a command prompt type the following:</p>
-<pre class="syntax" space="preserve"><code>Set MIG_OFFLINE_PLATFORM_ARCH=32</code></pre></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Variable|Value|Scenario|
+|--- |--- |--- |
+|USMT_WORKING_DIR|Full path to a working directory|Required when USMT binaries are located on read-only media, which does not support the creation of log files or temporary storage. To set the system environment variable, at a command prompt type the following: <br/><pre class="syntax"><code>Set USMT_WORKING_DIR=[path to working directory]</code></pre>|
+|MIG_OFFLINE_PLATFORM_ARCH|32 or 64|While operating offline, this environment variable defines the architecture of the offline system, if the system does not match the WinPE and Scanstate.exe architecture. This environment variable enables the 32-bit ScanState application to gather data from a computer with 64-bit architecture, or the 64-bit ScanState application to gather data from a computer with 32-bit architecture. This is required when auto-detection of the offline architecture doesn't function properly, for example, when the source system is running a 64-bit version of Windows XP. For example, to set this system environment variable for a 32-bit architecture, at a command prompt type the following: <br/><pre class="syntax"><code>Set MIG_OFFLINE_PLATFORM_ARCH=32</code></pre>|
 
 ## <a href="" id="bkmk-offlinexml"></a>Offline.xml Elements
-
 
 Use an offline.xml file when running the ScanState tool on a computer that has multiple Windows directories. The offline.xml file specifies which directories to scan for windows files. An offline.xml file can be used with the /offline option as an alternative to specifying a single Windows directory path with the /offlineDir option.
 
@@ -219,7 +135,7 @@ Syntax: &lt; winDir &gt; &lt;/ winDir &gt;
 
 ### <a href="" id="-path-"></a>&lt;path&gt;
 
-This element is a required child of **&lt;winDir&gt;** and contains a file path pointing to a valid Windows directory. Relative paths are interpreted from the ScanState tool’s working directory.
+This element is a required child of **&lt;winDir&gt;** and contains a file path pointing to a valid Windows directory. Relative paths are interpreted from the ScanState tool's working directory.
 
 Syntax: &lt;path&gt; c:\\windows &lt;/path&gt;
 
@@ -235,7 +151,7 @@ Syntax: &lt;mappings&gt; &lt;/mappings&gt;
 
 ### <a href="" id="-failonmultiplewindir-"></a>&lt;failOnMultipleWinDir&gt;
 
-This element is an optional child of **&lt;offline&gt;**. The **&lt;failOnMultipleWinDir&gt;** element allows the user to specify that the migration should fail when USMT detects that there are multiple instances of Windows installed on the source machine. When the **&lt;failOnMultipleWinDir&gt;** element isn’t present, the default behavior is that the migration does not fail.
+This element is an optional child of **&lt;offline&gt;**. The **&lt;failOnMultipleWinDir&gt;** element allows the user to specify that the migration should fail when USMT detects that there are multiple instances of Windows installed on the source machine. When the **&lt;failOnMultipleWinDir&gt;** element isn't present, the default behavior is that the migration does not fail.
 
 Syntax: &lt;failOnMultipleWinDir&gt;1&lt;/failOnMultipleWinDir&gt; or Syntax: &lt;failOnMultipleWinDir&gt;0&lt;/failOnMultipleWinDir&gt;
 
@@ -256,14 +172,4 @@ The following XML example illustrates some of the elements discussed earlier in 
 
 ## Related topics
 
-
 [Plan Your Migration](usmt-plan-your-migration.md)
-
- 
-
- 
-
-
-
-
-

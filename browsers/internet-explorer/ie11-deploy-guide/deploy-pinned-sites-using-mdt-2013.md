@@ -17,6 +17,9 @@ ms.date: 07/27/2017
 
 # Deploy pinned websites using Microsoft Deployment Toolkit (MDT) 2013
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 **Applies to:**
 
 -   Windows 10
@@ -27,10 +30,10 @@ ms.date: 07/27/2017
 
 You can pin websites to the Windows 8.1 taskbar for quick access. You pin a website simply by dragging its tab to the taskbar. Some websites can also extend the icon’s Jump List.
 
-The ability to pin websites to the Windows 8.1 taskbar can help make end users in businesses more productive. As an IT professional, for example, you can pin intranet and SharePoint websites to the taskbar to make them immediately available to users. In this article, you learn how to deploy pinned websites by using Lite Touch Installation in the [Microsoft Deployment Toolkit (MDT) 2013](https://go.microsoft.com/fwlink/p/?LinkId=398474).
+The ability to pin websites to the Windows 8.1 taskbar can help make end users in businesses more productive. As an IT professional, for example, you can pin intranet and SharePoint websites to the taskbar to make them immediately available to users. In this article, you learn how to deploy pinned websites by using Lite Touch Installation in the [Microsoft Deployment Toolkit (MDT) 2013](/mem/configmgr/mdt/).
 
 ## Deploying pinned websites in MDT 2013
-This topic requires that you have a complete MDT 2013 deployment share that contains Windows 8.1 which comes with Internet Explorer 11. If you’re deploying to Windows 7 clients and need to learn how to add IE11 to an MDT 2013 deployment share as an update, see [Installing Internet Explorer 11 using Microsoft Deployment Toolkit (MDT)](https://go.microsoft.com/fwlink/p/?LinkId=398475) in the TechNet library.
+This topic requires that you have a complete MDT 2013 deployment share that contains Windows 8.1 which comes with Internet Explorer 11. If you’re deploying to Windows 7 clients and need to learn how to add IE11 to an MDT 2013 deployment share as an update, see [Installing Internet Explorer 11 using Microsoft Deployment Toolkit (MDT)](./install-ie11-using-operating-system-deployment-systems.md) in the TechNet library.
 
 Deploying pinned websites in MDT 2013 is a 4-step process:
 
@@ -106,17 +109,14 @@ With the .website files ready to copy to the **Public Links** folder on target c
 ## Updating intranet websites for pinning
 The MDT 2013 deployment share and task sequences are now ready to pin websites to the taskbar during deployment. This pinning feature can include intranet sites important in your organization.
 
-You can make your intranet websites act more like applications by extending them to fully support the Windows 8.1 taskbar. This includes creating custom Jump Lists, thumbnail previews, and notifications. For info about extending your intranet websites, see [Pinned Sites Developer Documentation](https://go.microsoft.com/fwlink/p/?LinkId=398484) on MSDN. For more ideas about what to pin, see [Add-ons](https://go.microsoft.com/fwlink/p/?LinkId=398483) in the Internet Explorer Gallery.
+You can make your intranet websites act more like applications by extending them to fully support the Windows 8.1 taskbar. This includes creating custom Jump Lists, thumbnail previews, and notifications. For info about extending your intranet websites, see [Pinned Sites Developer Documentation](/previous-versions/windows/internet-explorer/ie-developer/samples/gg491731(v=vs.85)) on MSDN. For more ideas about what to pin, see [Add-ons](https://go.microsoft.com/fwlink/p/?LinkId=398483) in the Internet Explorer Gallery.
 
 ## Related topics
-- [Unattended Windows Setup Reference](https://go.microsoft.com/fwlink/p/?LinkId=276788)
-- [Windows System Image Manager Technical Reference](https://go.microsoft.com/fwlink/p/?LinkId=276789)
-- [Microsoft Deployment Toolkit (MDT)](https://go.microsoft.com/fwlink/p/?LinkId=331148)
-- [Windows ADK Overview](https://go.microsoft.com/fwlink/p/?LinkId=276669)
+- [Unattended Windows Setup Reference](/previous-versions/windows/it-pro/windows-8.1-and-8/ff699026(v=win.10))
+- [Windows System Image Manager Technical Reference](/previous-versions/windows/it-pro/windows-8.1-and-8/hh824929(v=win.10))
+- [Microsoft Deployment Toolkit (MDT)](/mem/configmgr/mdt/)
+- [Windows ADK Overview](/previous-versions/windows/it-pro/windows-8.1-and-8/hh825486(v=win.10))
 
  
 
  
-
-
-

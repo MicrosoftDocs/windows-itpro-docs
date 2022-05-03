@@ -16,6 +16,9 @@ ms.author: dansimp
 
 # Set up the Enterprise Mode Site List Portal
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 **Applies to:**
 
 -   Windows 10
@@ -36,8 +39,8 @@ You must download the deployment folder (**EMIEWebPortal/**), which includes all
 
 2. Install the Node.js® package manager, [npm](https://www.npmjs.com/).
 
-    >[!Note]   
-    >You need to install the npm package manager to replace all the third-party libraries we removed to make the Enterprise Mode Site List Portal open-source.
+    > [!NOTE]   
+    > You need to install the npm package manager to replace all the third-party libraries we removed to make the Enterprise Mode Site List Portal open-source.
 
 3. Open File Explorer and then open the **EMIEWebPortal/** folder.
 
@@ -49,8 +52,8 @@ You must download the deployment folder (**EMIEWebPortal/**), which includes all
 
 6. Go back up a directory, open the solution file **EMIEWebPortal.sln** in Visual Studio, open **Web.config** from **EMIEWebPortal/** folder, and replace MSIT-LOB-COMPAT with your server name hosting your database, replace LOBMerged with your database name, and build the entire solution.
 
-      >[!Note]
-      >Step 3 of this topic provides the steps to create your database.
+      > [!NOTE]
+      > Step 3 of this topic provides the steps to create your database.
 
 7. Copy the contents of the **EMIEWebPortal/** folder to a dedicated folder on your file system. For example, _D:\EMIEWebApp_. In a later step, you'll designate this folder as your website in the IIS Manager.
 
@@ -109,8 +112,8 @@ Create a new Application Pool and the website, by using the IIS Manager.
 
 9. Double-click the **Authentication** icon, right-click on **Windows Authentication**, and then click **Enable**. 
 
-    >[!Note]
-    >You must also make sure that **Anonymous Authentication** is marked as **Enabled**.
+    > [!NOTE]
+    > You must also make sure that **Anonymous Authentication** is marked as **Enabled**.
 
 ## Step 3 - Create and prep your database
 Create a SQL Server database and run our custom query to create the Enterprise Mode Site List tables.
@@ -209,8 +212,8 @@ Register the EMIEScheduler tool and service for production site list changes.
 
 1. Open File Explorer and go to EMIEWebPortal.SchedulerService\EMIEWebPortal.SchedulerService in your deployment directory, and then copy the **App_Data**, **bin**, and **Logs** folders to a separate folder. For example, C:\EMIEService\.
  
-    >[!Important]
-    >If you can't find the **bin** and **Logs** folders, you probably haven't built the Visual Studio solution. Building the solution creates the folders and files.
+    > [!IMPORTANT]
+    > If you can't find the **bin** and **Logs** folders, you probably haven't built the Visual Studio solution. Building the solution creates the folders and files.
 
 2. In Visual Studio start the Developer Command Prompt as an administrator, and then change the directory to the location of the InstallUtil.exe file. For example, _C:\Windows\Microsoft.NET\Framework\v4.0.30319_.
 

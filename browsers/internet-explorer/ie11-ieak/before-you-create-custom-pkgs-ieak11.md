@@ -18,6 +18,9 @@ ms.date: 04/24/2018
 
 # Before you start using IEAK 11
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 Before you run IEAK 11 and the Customization Wizard, make sure you have met the following requirements:
 
 - Have you determined which licensing version of the Internet Explorer Administration Kit 11 to install? For info, see [Determine the licensing version and features to use in IEAK 11](licensing-version-and-features-ieak11.md).

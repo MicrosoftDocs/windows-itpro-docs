@@ -35,8 +35,8 @@ You must download the deployment folder (**EMIEWebPortal/**), which includes all
 
 2. Install the Node.js® package manager, [npm](https://www.npmjs.com/).
 
-    >[!Note]   
-    >You need to install the npm package manager to replace all the third-party libraries we removed to make the Enterprise Mode Site List Portal open-source.
+    > [!NOTE]   
+    > You need to install the npm package manager to replace all the third-party libraries we removed to make the Enterprise Mode Site List Portal open-source.
 
 3. Open File Explorer and then open the **EMIEWebPortal/** folder.
 
@@ -105,8 +105,8 @@ Create a new Application Pool and the website, by using the IIS Manager.
 
 9. Double-click the **Authentication** icon, right-click on **Windows Authentication**, and then click **Enable**. 
 
-    >[!Note]
-    >You must also make sure that **Anonymous Authentication** is marked as **Enabled**.
+    > [!NOTE]
+    > You must also make sure that **Anonymous Authentication** is marked as **Enabled**.
 
 10. Return to the **<<i>website_name</i>> Home** pane, and double-click the **Connection Strings** icon.
 
@@ -116,8 +116,8 @@ Create a new Application Pool and the website, by using the IIS Manager.
 
     - **Initial catalog.** The name of your database.
 
-        >[!Note]
-        >Step 3 of this topic provides the steps to create your database.
+        > [!NOTE]
+        > Step 3 of this topic provides the steps to create your database.
 
 ## Step 3 - Create and prep your database
 Create a SQL Server database and run our custom query to create the Enterprise Mode Site List tables.
@@ -216,8 +216,8 @@ Register the EMIEScheduler tool and service for production site list changes.
 
 1. Open File Explorer and go to EMIEWebPortal.SchedulerService\EMIEWebPortal.SchedulerService in your deployment directory, and then copy the **App_Data**, **bin**, and **Logs** folders to a separate folder. For example, C:\EMIEService\.
  
-    >[!Important]
-    >If you can't find the **bin** and **Logs** folders, you probably haven't built the Visual Studio solution. Building the solution creates the folders and files.
+    > [!IMPORTANT]
+    > If you can't find the **bin** and **Logs** folders, you probably haven't built the Visual Studio solution. Building the solution creates the folders and files.
 
 2. In Visual Studio start the Developer Command Prompt as an administrator, and then change the directory to the location of the InstallUtil.exe file. For example, _C:\Windows\Microsoft.NET\Framework\v4.0.30319_.
 

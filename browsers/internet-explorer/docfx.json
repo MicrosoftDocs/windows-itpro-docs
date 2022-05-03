@@ -7,6 +7,7 @@
           "**/*.yml"
         ],
         "exclude": [
+          "**/includes/**",
           "**/obj/**"
         ]
       }
@@ -22,13 +23,14 @@
       }
     ],
     "globalMetadata": {
+      "recommendations": true,
       "breadcrumb_path": "/internet-explorer/breadcrumb/toc.json",
       "ROBOTS": "INDEX, FOLLOW",
       "audience": "ITPro",
       "ms.technology": "internet-explorer",
       "ms.prod": "ie11",
       "ms.topic": "article",
-      "manager": "laurawi",
+      "manager": "dansimp",
       "ms.date": "04/05/2017",
       "feedback_system": "None",
       "hideEdit": true,
@@ -38,7 +40,16 @@
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "Internet Explorer"
+      "titleSuffix": "Internet Explorer",
+      "contributors_to_exclude": [
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ]
     },
     "externalReference": [],
     "template": "op.html",

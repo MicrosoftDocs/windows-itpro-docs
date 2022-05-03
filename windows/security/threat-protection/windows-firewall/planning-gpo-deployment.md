@@ -1,10 +1,10 @@
 ---
-title: Planning GPO Deployment (Windows 10)
-description: Planning GPO Deployment
+title: Planning GPO Deployment (Windows)
+description: Learn how to use security group filtering and WMI filtering to provide the most flexible options for applying GPOs to devices in Active Directory.
 ms.assetid: b38adfb1-1371-4227-a887-e6d118809de1
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/08/2021
+ms.technology: windows-sec
 ---
 
 # Planning GPO Deployment
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 You can control which GPOs are applied to devices in Active Directory in a combination of three ways:
 

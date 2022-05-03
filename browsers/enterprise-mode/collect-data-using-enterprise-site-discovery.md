@@ -34,11 +34,11 @@ Before you start, you need to make sure you have the following:
 
     1.  Go to the [Microsoft Security Bulletin](https://go.microsoft.com/fwlink/p/?LinkID=718223) page, and change the filter to **Windows Internet Explorer 11**.
 
-        ![microsoft security bulletin techcenter](images/securitybulletin-filter.png)
+        ![microsoft security bulletin techcenter.](images/securitybulletin-filter.png)
 
     2.  Click the title of the latest cumulative security update, and then scroll down to the **Affected software** table.
 
-        ![affected software section](images/affectedsoftware.png)
+        ![affected software section.](images/affectedsoftware.png)
 
     3.  Click the link that represents both your operating system version and Internet Explorer 11, and then follow the instructions in the **How to get this update** section.
 
@@ -48,7 +48,7 @@ Before you start, you need to make sure you have the following:
 
     -   IETelemetry.mof file
 
-    -   Sample System Center 2012 report templates
+    -   Sample Configuration Manager report templates
 
         You must use System Center 2012 R2 Configuration Manager or later for these samples to work.
 
@@ -201,68 +201,32 @@ You can use Group Policy to finish setting up Enterprise Site Discovery. If you 
 You can use both the WMI and XML settings individually or together:
 
 **To turn off Enterprise Site Discovery**
-<table>
-    <tr>
-        <th>Setting name</th>
-        <th>Option</th>
-    </tr>
-    <tr>
-        <td>Turn on Site Discovery WMI output</td>
-        <td>Off</td>
-    </tr>
-        <tr>
-        <td>Turn on Site Discovery XML output</td>
-        <td>Blank</td>
-    </tr>
-</table>
+
+|Setting name  |Option  |
+|---------|---------|
+|Turn on Site Discovery WMI output     | Off       |
+|Turn on Site Discovery XML output    | Blank       |
 
 **Turn on WMI recording only**
-<table>
-    <tr>
-        <th>Setting name</th>
-        <th>Option</th>
-    </tr>
-    <tr>
-        <td>Turn on Site Discovery WMI output</td>
-        <td>On</td>
-    </tr>
-        <tr>
-        <td>Turn on Site Discovery XML output</td>
-        <td>Blank</td>
-    </tr>
-</table>
+
+|Setting name  |Option |
+|---------|---------|
+|Turn on Site Discovery WMI output    | On        |
+|Turn on Site Discovery XML output    | Blank       |
 
 **To turn on XML recording only**
-<table>
-    <tr>
-        <th>Setting name</th>
-        <th>Option</th>
-    </tr>
-    <tr>
-        <td>Turn on Site Discovery WMI output</td>
-        <td>Off</td>
-    </tr>
-        <tr>
-        <td>Turn on Site Discovery XML output</td>
-        <td>XML file path</td>
-    </tr>
-</table>
+
+|Setting name  |Option  |
+|---------|---------|
+|Turn on Site Discovery WMI output     | Off        |
+|Turn on Site Discovery XML output     | XML file path        |
  
 **To turn on both WMI and XML recording**
-<table>
-    <tr>
-        <th>Setting name</th>
-        <th>Option</th>
-    </tr>
-    <tr>
-        <td>Turn on Site Discovery WMI output</td>
-        <td>On</td>
-    </tr>
-        <tr>
-        <td>Turn on Site Discovery XML output</td>
-        <td>XML file path</td>
-    </tr>
-</table>
+
+|Setting name  |Option  |
+|---------|---------|
+|Turn on Site Discovery WMI output     | On         |
+|Turn on Site Discovery XML output     | XML file path         |
 
 ## Use Configuration Manager to collect your data
 After you’ve collected your data, you’ll need to get the local files off of your employee’s computers. To do this, use the hardware inventory process in Configuration Manager, using one of these options:
@@ -280,13 +244,13 @@ You can collect your hardware inventory using the MOF Editor, while you’re con
 
 1.  From the Configuration Manager, click **Administration**, click **Client Settings**, double-click **Default Client Settings**, click **Hardware Inventory**, and then click **Set Classes**.
 
-    ![Configuration Manager, showing the hardware inventory settings for client computers](images/configmgrhardwareinventory.png)
+    ![Configuration Manager, showing the hardware inventory settings for client computers.](images/configmgrhardwareinventory.png)
 
 2.  Click **Add**, click **Connect**, and connect to a computer that has completed the setup process and has already existing classes.
 
 3.  Change the **WMI Namespace** to `root\cimv2\IETelemetry`, and click **Connect**.
 
-    ![Configuration Manager, with the Connect to Windows Management Instrumentation (WMI) box](images/ie11-inventory-addclassconnectscreen.png)
+    ![Configuration Manager, with the Connect to Windows Management Instrumentation (WMI) box.](images/ie11-inventory-addclassconnectscreen.png)
 
 4.  Select the check boxes next to the following classes, and then click **OK**:
 
@@ -393,12 +357,12 @@ The sample reports, **SCCM Report Sample – ActiveX.rdl** and **SCCM Report Sam
 ### SCCM Report Sample – ActiveX.rdl
 Gives you a list of all of the ActiveX-related sites visited by the client computer.
 
-![ActiveX.rdl report, lists all ActiveX-related sites visited by the client computer](images/configmgractivexreport.png)
+![ActiveX.rdl report, lists all ActiveX-related sites visited by the client computer.](images/configmgractivexreport.png)
 
 ### SCCM Report Sample – Site Discovery.rdl
 Gives you a list of all of the sites visited by the client computer.
 
-![Site Discovery.rdl report, lists all websites visited by the client computer](images/ie-site-discovery-sample-report.png)
+![Site Discovery.rdl report, lists all websites visited by the client computer.](images/ie-site-discovery-sample-report.png)
 
 ## View the collected XML data
 After the XML files are created, you can use your own solutions to extract and parse the data. The data will look like:
@@ -436,7 +400,7 @@ You can import this XML data into the correct version of the Enterprise Mode Sit
 
 1.  Open the Enterprise Mode Site List Manager, click **File**, and then click **Bulk add from file**.
 
-    ![Enterprise Mode Site List Manager with Bulk add from file option](images/bulkadd-emiesitelistmgr.png)
+    ![Enterprise Mode Site List Manager with Bulk add from file option.](images/bulkadd-emiesitelistmgr.png)
 
 2.  Go to your XML file to add the included sites to the tool, and then click **Open**.<br>Each site is validated and if successful, added to the global site list when you click **OK** to close the menu. If a site doesn’t pass validation, you can try to fix the issues or pick the site and click **Add to list** to ignore the validation problem. For more information about fixing validation problems, see [Fix validation problems using the Enterprise Mode Site List Manager](fix-validation-problems-using-the-enterprise-mode-site-list-manager.md).
 

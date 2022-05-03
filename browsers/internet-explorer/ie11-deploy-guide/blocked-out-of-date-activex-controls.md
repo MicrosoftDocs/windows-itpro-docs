@@ -3,7 +3,8 @@ title: Blocked out-of-date ActiveX controls
 description: This page is periodically updated with new ActiveX controls blocked by this feature.
 author: dansimp
 ms.author: dansimp
-audience: itpromanager: dansimp
+audience: itpro
+manager: dansimp
 ms.date: 05/10/2018
 ms.topic: article
 ms.prod: ie11
@@ -16,6 +17,9 @@ ms.sitesec: library
 ---
 
 # Blocked out-of-date ActiveX controls
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 
 ActiveX controls are small apps that let websites provide content, like videos and games, and let you interact with content, like toolbars. Unfortunately, because many ActiveX controls aren't automatically updated, they can become outdated as new versions are released. It's very important that you keep your ActiveX controls up to date because malicious software (or malware) can target security flaws in outdated controls, damaging your computer by collecting info from it, installing unwanted software, or by letting someone else control it remotely. To help avoid this situation, Internet Explorer includes a security feature called _out-of-date ActiveX control blocking_.
 

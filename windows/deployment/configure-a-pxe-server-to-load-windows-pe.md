@@ -1,6 +1,6 @@
 ---
-title: Configure a PXE server to load Windows PE (Windows 10)
-description: This topic describes how to configure a PXE server to load Windows PE so that it can be used with an image file to install Windows 10 from the network. 
+title: Configure a PXE server to load Windows PE (Windows 10)
+description: This topic describes how to configure a PXE server to load Windows PE so that it can be used with an image file to install Windows 10 from the network. 
 keywords: upgrade, update, windows, windows 10, pxe, WinPE, image, wim
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -8,28 +8,25 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
 audience: itpro
-author: greg-lindsay
-ms.reviewer: 
-manager: laurawi
-audience: itpro
-author: greg-lindsay
-ms.author: greglin
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
+ms.custom: seo-marvel-apr2020
+ms.collection: highpri
 ---
 
-# Configure a PXE server to load Windows PE
+# Configure a PXE server to load Windows PE
 
 **Applies to**
 
--   Windows 10
-
-## Summary
+-   Windows 10
 
 This walkthrough describes how to configure a PXE server to load Windows PE by booting a client computer from the network. Using the Windows PE tools and a Windows 10 image file, you can install Windows 10 from the network.
 
 ## Prerequisites
 
-- A deployment computer: A computer with the [Windows Assessment and Deployment Kit](https://go.microsoft.com/fwlink/p/?LinkId=526803) (Windows ADK) installed.
+- A deployment computer: A computer with the [Windows Assessment and Deployment Kit](/windows-hardware/get-started/adk-install) (Windows ADK) and the Windows PE add-on with ADK installed.
 - A DHCP server: A DHCP server or DHCP proxy configured to respond to PXE client requests is required.
 - A PXE server: A server running the TFTP service that can host Windows PE boot files that the client will download.
 - A file server: A server hosting a network file share.
@@ -177,7 +174,7 @@ ramdisksdipath          \Boot\boot.sdi
 
 The following summarizes the PXE client boot process.
 
->The following assumes that you have configured DHCP option 67 (Bootfile Name) to "boot\PXEboot.n12" which enables direct boot to PXE with no user interaction. For more information about DHCP options for network boot, see [Managing Network Boot Programs](https://technet.microsoft.com/library/cc732351.aspx).
+>The following assumes that you have configured DHCP option 67 (Bootfile Name) to "boot\PXEboot.n12" which enables direct boot to PXE with no user interaction. For more information about DHCP options for network boot, see [Managing Network Boot Programs](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732351(v=ws.10)).
 
 1.  A client is directed by DHCP options 066 and 067 to download boot\\PXEboot.n12 from the TFTP server.
 2.  PXEboot.n12 immediately begins a network boot.
@@ -187,9 +184,9 @@ The following summarizes the PXE client boot process.
 7.  Windows PE loads, a command prompt opens and wpeinit.exe is run to initialize Windows PE.
 8.  The Windows PE client provides access to tools like imagex, diskpart, and bcdboot using the Windows PE command prompt. Using these tools together with a Windows 10 image file, the destination computer can be formatted properly to load a full Windows 10 operating system.
 
-See Also 
----------
+## See Also 
 
-#### Concepts
 
-[Windows PE Walkthroughs](https://technet.microsoft.com/library/cc748899.aspx)
+### Concepts
+
+[Windows PE Walkthroughs](/previous-versions/windows/it-pro/windows-vista/cc748899(v=ws.10))

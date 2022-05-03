@@ -15,6 +15,9 @@ ms.date: 07/27/2017
 
 
 # Use the Platform Selection page in the IEAK 11 Wizard
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 The **Platform Selection** page of the Internet Explorer Customization Wizard 11 lets you pick the operating system and architecture (32-bit or 64-bit) for the devices on which you’re going to install the custom installation package.
 
 **To use the Platform Selection page**

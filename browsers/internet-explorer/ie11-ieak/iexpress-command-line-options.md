@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 # IExpress Wizard command-line options
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 **Applies to:**
 - Windows Server 2008 R2 with SP1
 
@@ -35,8 +38,6 @@ These command-line options work with IExpress:<br>
 |`/r:n` |Never restarts the computer after installation. |
 |`/r:a` |Always restarts the computer after installation. |
 |`/r:s` |Restarts the computer after installation without prompting the employee. |
-
-For more information, see [Command-line switches for IExpress software update packages](https://go.microsoft.com/fwlink/p/?LinkId=317973).
 
 ## Related topics
 - [IExpress Wizard for Windows Server 2008 R2 with SP1](iexpress-wizard-for-win-server.md)

@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Customize the Toolbar button and Favorites List icons using IEAK 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Use these customization guidelines to change the browser toolbar button and the **Favorites List** icons, using your own branding and graphics.
 
 **Important**<br>Check your license agreement to make sure this customization is available.

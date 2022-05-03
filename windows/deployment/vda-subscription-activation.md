@@ -1,25 +1,30 @@
 ---
-title: Configure VDA for Windows 10 Subscription Activation
+title: Configure VDA for Windows 10/11 Subscription Activation
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.audience: itpro
-author: greg-lindsay
-description: How to enable Windows 10 Enterprise E3 and E5 subscriptions for VDA
+ms.author: aaroncz
+author: aczechowski
+description: Learn how to configure virtual machines (VMs) to enable Windows 10 Subscription Activation in a Windows Virtual Desktop Access (VDA) scenario.
 keywords: upgrade, update, task sequence, deploy
+ms.custom: seo-marvel-apr2020
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 audience: itpro
-author: greg-lindsay
 ms.topic: article
 ms.collection: M365-modern-desktop
 ---
 
-# Configure VDA for Windows 10 Subscription Activation
+# Configure VDA for Windows 10/11 Subscription Activation
 
-This document describes how to configure virtual machines (VMs) to enable [Windows 10 Subscription Activation](windows-10-subscription-activation.md) in a Windows Virtual Desktop Access (VDA) scenario. Windows VDA is a device or user-based licensing mechanism for managing access to virtual desktops.
+Applies to:
+- Windows 10
+- Windows 11
+
+This document describes how to configure virtual machines (VMs) to enable [Windows 10/11 Subscription Activation](windows-10-subscription-activation.md) in a Windows Virtual Desktop Access (VDA) scenario. Windows VDA is a device or user-based licensing mechanism for managing access to virtual desktops.
 
 Deployment instructions are provided for the following scenarios:
 1. [Active Directory-joined VMs](#active-directory-joined-vms)
@@ -28,34 +33,37 @@ Deployment instructions are provided for the following scenarios:
 
 ## Requirements
 
-- VMs must be running Windows 10 Pro, version 1703 (also known as the Creator's Update) or later.
+- VMs must be running Windows 10 Pro, version 1703 or later. Windows 11 is "later" in this context. 
 - VMs must be Active Directory-joined or Azure Active Directory (AAD)-joined.
-- VMs must be generation 1.
-- VMs must hosted by a [Qualified Multitenant Hoster](https://www.microsoft.com/en-us/CloudandHosting/licensing_sca.aspx) (QMTH).
+- VMs must be hosted by a Qualified Multitenant Hoster (QMTH). 
+    - For more information, see [Qualified Multitenant Hoster Program](https://download.microsoft.com/download/3/D/4/3D445779-2870-4E3D-AFCB-D35D2E1BC095/QMTH%20Authorized%20Partner%20List.pdf) (PDF download).
 
 ## Activation
 
 ### Scenario 1
-- The VM is running Windows 10, version 1803 or later.
-- The VM is hosted in Azure or another [Qualified Multitenant Hoster](https://www.microsoft.com/en-us/CloudandHosting/licensing_sca.aspx) (QMTH).
 
-    When a user with VDA rights signs in to the VM using their AAD credentials, the VM is automatically stepped-up to Enterprise and activated. There is no need to perform Windows 10 Pro activation. This eliminates the need to maintain KMS or MAK in the qualifying cloud infrastructure.
+- The VM is running Windows 10, version 1803 or later (ex: Windows 11).
+- The VM is hosted in Azure or another Qualified Multitenant Hoster (QMTH).
+
+    When a user with VDA rights signs in to the VM using their AAD credentials, the VM is automatically stepped-up to Enterprise and activated. There is no need to perform Windows 10/11 Pro activation. This eliminates the need to maintain KMS or MAK in the qualifying cloud infrastructure.
 
 ### Scenario 2
+
 - The Hyper-V host and the VM are both running Windows 10, version 1803 or later.
 
-    [Inherited Activation](https://docs.microsoft.com/windows/deployment/windows-10-subscription-activation#inherited-activation) is enabled. All VMs created by a user with a Windows 10 E3 or E5 license are automatically activated independent of whether a user signs in with a local account or using an Azure Active Directory account.
+    [Inherited Activation](./windows-10-subscription-activation.md#inherited-activation) is enabled. All VMs created by a user with a Windows 10/11 E3 or E5 license are automatically activated independent of whether a user signs in with a local account or using an Azure Active Directory account.
 
 ### Scenario 3
-- The VM is running Windows 10, version 1703 or 1709, or the hoster is not an authorized [QMTH](https://www.microsoft.com/en-us/CloudandHosting/licensing_sca.aspx) partner.
 
-    In this scenario, the underlying Windows 10 Pro license must be activated prior to Subscription Activation of Windows 10 Enterprise. Activation is accomplished using a Windows 10 Pro Generic Volume License Key (GVLK) and a Volume License KMS activation server provided by the hoster. Alternatively, a KMS activation server on your corporate network can be used if you have configured a private connection, such as [ExpressRoute](https://azure.microsoft.com/services/expressroute/) or [VPN Gateway](https://azure.microsoft.com/services/vpn-gateway/).
+- The VM is running Windows 10, version 1703 or 1709, or the hoster is not an authorized [QMTH](https://download.microsoft.com/download/3/D/4/3D445779-2870-4E3D-AFCB-D35D2E1BC095/QMTH%20Authorized%20Partner%20List.pdf) partner.
 
-For examples of activation issues, see [Troubleshoot the user experience](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses#troubleshoot-the-user-experience).
+    In this scenario, the underlying Windows 10/11 Pro license must be activated prior to Subscription Activation of Windows 10/11 Enterprise. Activation is accomplished using a Generic Volume License Key (GVLK) and a Volume License KMS activation server provided by the hoster. Alternatively, a KMS activation server can be used. KMS activation is provided for Azure VMs. For more information, see [Troubleshoot Azure Windows virtual machine activation problems](/azure/virtual-machines/troubleshooting/troubleshoot-activation-problems).
+
+For examples of activation issues, see [Troubleshoot the user experience](./deploy-enterprise-licenses.md#troubleshoot-the-user-experience).
 
 ## Active Directory-joined VMs
 
-1. Use the following instructions to prepare the VM for Azure: [Prepare a Windows VHD or VHDX to upload to Azure](https://docs.microsoft.com/azure/virtual-machines/windows/prepare-for-upload-vhd-image)
+1. Use the following instructions to prepare the VM for Azure: [Prepare a Windows VHD or VHDX to upload to Azure](/azure/virtual-machines/windows/prepare-for-upload-vhd-image)
 2. (Optional) To disable network level authentication, type the following at an elevated command prompt:
 
     ```
@@ -65,29 +73,27 @@ For examples of activation issues, see [Troubleshoot the user experience](https:
 3. At an elevated command prompt, type **sysdm.cpl** and press ENTER.
 4. On the Remote tab, choose **Allow remote connections to this computer** and then click **Select Users**.
 5. Click **Add**, type **Authenticated users**, and then click **OK** three times.
-6. Follow the instructions to use sysprep at [Steps to generalize a VHD](https://docs.microsoft.com/azure/virtual-machines/windows/prepare-for-upload-vhd-image#steps-to-generalize-a-vhd) and then start the VM again.
-7. [Install Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd).
-8. Open Windows Configuration Designer and click **Provison desktop services**.
-9. If you must activate Windows 10 Pro as described for [scenario 3](#scenario-3), complete the following steps. Otherwise, skip to step 10.
-
-    1. Under **Name**, type **Desktop AD Enrollment Pro GVLK**, click **Finish**, and then on the **Set up device** page enter a device name.
+6. Follow the instructions to use sysprep at [Steps to generalize a VHD](/azure/virtual-machines/windows/prepare-for-upload-vhd-image#steps-to-generalize-a-vhd) and then start the VM again.
+7. If you must activate Windows 10 Pro as described for [scenario 3](#scenario-3), complete the following steps to use Windows Configuration Designer and inject an activation key. Otherwise, skip to step 20.
+8. [Install Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd).
+9. Open Windows Configuration Designer and click **Provision desktop services**.
+10. Under **Name**, type **Desktop AD Enrollment Pro GVLK**, click **Finish**, and then on the **Set up device** page enter a device name.
         - Note: You can use a different project name, but this name is also used with dism.exe in a subsequent step.
-    2. Under **Enter product key** type the Pro GVLK key: **W269N-WFGWX-YVC9B-4J6C9-T83GX**.
-10. On the Set up network page, choose **Off**.
-11. On the Account Management page, choose **Enroll into Active Directory** and then enter the account details.
+11. Under **Enter product key** type the Pro GVLK key: **W269N-WFGWX-YVC9B-4J6C9-T83GX**.
+12. On the Set up network page, choose **Off**.
+13. On the Account Management page, choose **Enroll into Active Directory** and then enter the account details.
     - Note: This step is different for [Azure AD-joined VMs](#azure-active-directory-joined-vms).
-12. On the Add applications page, add applications if desired. This step is optional.
-13. On the Add certificates page, add certificates if desired. This step is optional.
-14. On the Finish page, click **Create**.
-15. If you must activate Windows 10 Pro as described for [scenario 3](#scenario-3), complete the following steps. Otherwise, skip to step 16.
-    1. In file explorer, double-click the VHD to mount the disk image. Determine the drive letter of the mounted image.
-    2. Type the following at an elevated commnand prompt. Replace the letter **G** with the drive letter of the mounted image, and enter the project name you used if it is different than the one suggested:
+14. On the Add applications page, add applications if desired. This step is optional.
+15. On the Add certificates page, add certificates if desired. This step is optional.
+16. On the Finish page, click **Create**.
+17. In file explorer, double-click the VHD to mount the disk image. Determine the drive letter of the mounted image.
+18. Type the following at an elevated command prompt. Replace the letter **G** with the drive letter of the mounted image, and enter the project name you used if it is different than the one suggested:
 
-    ```
+    ```cmd
     Dism.exe /Image=G:\ /Add-ProvisioningPackage /PackagePath: "Desktop AD Enrollment Pro GVLK.ppkg"
     ```
-    3. Right-click the mounted image in file explorer and click **Eject**.
-16. See instructions at [Upload and create VM from generalized VHD](https://docs.microsoft.com/azure/virtual-machines/windows/upload-generalized-managed#log-in-to-azure) to log in to Azure, get your storage account details, upload the VHD, and create a managed image.
+19. Right-click the mounted image in file explorer and click **Eject**.
+20. See instructions at [Upload and create VM from generalized VHD](/azure/virtual-machines/windows/upload-generalized-managed#log-in-to-azure) to log in to Azure, get your storage account details, upload the VHD, and create a managed image.
 
 ## Azure Active Directory-joined VMs
 
@@ -112,7 +118,7 @@ For Azure AD-joined VMs, follow the same instructions (above) as for [Active Dir
 3. On the Remote tab, choose **Allow remote connections to this computer** and then click **Select Users**.
 4. Click **Add**, type **Authenticated users**, and then click **OK** three times.
 5. [Install Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd).
-6. Open Windows Configuration Designer and click **Provison desktop services**.
+6. Open Windows Configuration Designer and click **Provision desktop services**.
 7. If you must activate Windows 10 Pro as described for [scenario 3](#scenario-3), complete the following steps. Otherwise, skip to step 8.
     1. Under **Name**, type **Desktop Bulk Enrollment Token Pro GVLK**, click **Finish**, and then on the **Set up device** page enter a device name.
     2. Under **Enter product key** type the Pro GVLK key: **W269N-WFGWX-YVC9B-4J6C9-T83GX**.
@@ -145,7 +151,6 @@ To create custom RDP settings for Azure:
 
 ## Related topics
 
-[Windows 10 Subscription Activation](windows-10-subscription-activation.md)
-<BR>[Recommended settings for VDI desktops](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/rds-vdi-recommendations)
-<BR>[Licensing the Windows Desktop for VDI Environments](https://download.microsoft.com/download/1/1/4/114A45DD-A1F7-4910-81FD-6CAF401077D0/Microsoft%20VDI%20and%20VDA%20FAQ%20v3%200.pdf)
-
+[Windows 10/11 Subscription Activation](windows-10-subscription-activation.md)
+<BR>[Recommended settings for VDI desktops](/windows-server/remote/remote-desktop-services/rds-vdi-recommendations)
+<BR>[Licensing the Windows Desktop for VDI Environments](https://download.microsoft.com/download/9/8/d/98d6a56c-4d79-40f4-8462-da3ecba2dc2c/licensing_windows_desktop_os_for_virtual_machines.pdf)

@@ -9,8 +9,7 @@ author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.author:
-ms.date: 10/22/2017
+ms.date: 07/21/2021
 ms.reviewer: 
 manager: dansimp
 ---
@@ -19,6 +18,9 @@ manager: dansimp
 
 **Applies to**
 -   Windows 10
+
+> [!IMPORTANT]
+> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
 
 Microsoft Store for Business and Education PowerShell module (preview) is now available on [PowerShell Gallery](https://go.microsoft.com/fwlink/?linkid=853459).
 
@@ -44,7 +46,7 @@ All of the **Microsoft Store for Business and Education** PowerShell cmdlets fol
 
 ## Install Microsoft Store for Business and Education PowerShell module
 > [!NOTE]
-> Installing **Microsoft Store for Business and Education** PowerShell model using **PowerShellGet** requires [Windows Management Framework 5.0](https://www.microsoft.com/download/details.aspx?id=48729). The framework is included with Windows 10 by default).
+> Installing **Microsoft Store for Business and Education** PowerShell model using **PowerShellGet** requires [Windows Management Framework 5.0](https://www.microsoft.com/download/details.aspx?id=54616). The framework is included with Windows 10 by default).
 
 To install **Microsoft Store for Business and Education PowerShell** with PowerShellGet, run this command:
 
@@ -89,7 +91,7 @@ Get-MSStoreInventory
 >1. Sign in to [Microsoft Store for Business](https://go.microsoft.com/fwlink/p/?LinkId=691845) or [Microsoft Store for Education](https://businessstore.microsoft.com/).
 >2. Click **Manage** and then choose **Apps & software**.
 >3. Click the line-of-business app. The URL of the page will contain the product ID and SKU as part of the URL. For example:
->![Url after apps/ is product id and next is SKU](images/lob-sku.png)
+>![Url after apps/ is product id and next is SKU.](images/lob-sku.png)
 
 ## View people assigned to a product
 Most items in **Products and Services** in **Microsoft Store for Business and Education** need to be assigned to people in your org. You can view the people in your org assigned to a specific product by using these commands:

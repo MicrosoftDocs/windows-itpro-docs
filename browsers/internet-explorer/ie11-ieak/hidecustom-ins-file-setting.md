@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the HideCustom .INS file to hide the GUID for each custom component
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Info about whether to hide the globally unique identifier (GUID) for each of your custom components.
 
 |Name                  |Value                                                                |Description                                    |

@@ -1,11 +1,11 @@
 ---
 title: Policy CSP - Handwriting
-description: Policy CSP - Handwriting
+description: Use the Policy CSP - Handwriting setting to allow an enterprise to configure the default mode for the handwriting panel.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
@@ -34,32 +34,14 @@ manager: dansimp
 <a href="" id="handwriting-paneldefaultmodedocked"></a>**Handwriting/PanelDefaultModeDocked**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -74,18 +56,18 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10. version 1709. This policy allows an enterprise to configure the default mode for the handwriting panel.
+This policy allows an enterprise to configure the default mode for the handwriting panel.
 
-The handwriting panel has 2 modes - floats near the text box, or docked to the bottom of the screen. The default configuration to is floating near text box. If you want the panel to be fixed or docked, use this policy to fix it to the bottom of the screen.
+The handwriting panel has two modes - floats near the text box, or docked to the bottom of the screen. The default configuration is the one floating near text box. If you want the panel to be fixed or docked, use this policy to fix it to the bottom of the screen.
 
-In floating mode, the content is hidden behind a flying-in panel and results in end-user dissatisfaction. The end-user will need to drag the flying-in panel to see the rest of the content. In the fixed mode, the flying-in panel is fixed to the bottom of the screen and does not require any user interaction.
+In floating mode, the content is hidden behind a flying-in panel and results in end-user dissatisfaction. The end-user will need to drag the flying-in panel to see the rest of the content. In the fixed mode, the flying-in panel is fixed to the bottom of the screen and doesn't require any user interaction.
 
-The docked mode is especially useful in Kiosk mode where you do not expect the end-user to drag the flying-in panel out of the way.
+The docked mode is especially useful in Kiosk mode where you don't expect the end-user to drag the flying-in panel out of the way.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Handwriting Panel Default Mode Docked*
+-   GP Friendly name: *Handwriting Panel Default Mode Docked*
 -   GP name: *PanelDefaultModeDocked*
 -   GP path: *Windows Components/Handwriting*
 -   GP ADMX file name: *Handwriting.admx*
@@ -100,15 +82,6 @@ The following list shows the supported values:
 <!--/SupportedValues-->
 <!--/Policy-->
 <hr/>
-
-Footnotes:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
 
 <!--/Policies-->
 

@@ -1,6 +1,6 @@
 ---
 title: Win32AppInventory DDF file
-description: Win32AppInventory DDF file
+description: Learn about the OMA DM device description framework (DDF) for the Win32AppInventory configuration service provider (CSP).
 ms.assetid: F6BCC10B-BFE4-40AB-AEEE-34679A4E15B0
 ms.reviewer: 
 manager: dansimp
@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 12/05/2017
 ---
 

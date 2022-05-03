@@ -1,24 +1,21 @@
 ---
 title: Audit Security System Extension (Windows 10)
-description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Security System Extension, which determines whether the operating system generates audit events related to security system extensions.
+description: The Advanced Security Audit policy setting, Audit Security System Extension, determines if audit events related to security system extensions are generated.
 ms.assetid: 9f3c6bde-42b2-4a0a-b353-ed3106ebc005
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/06/2021
+ms.technology: windows-sec
 ---
 
 # Audit Security System Extension
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 Audit Security System Extension contains information about the loading of an authentication package, notification package, or security package, plus information about trusted logon process registration events.
@@ -35,9 +32,9 @@ Attempts to install or load security system extensions or services are critical 
 
 | Computer Type     | General Success | General Failure | Stronger Success | Stronger Failure | Comments                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |-------------------|-----------------|-----------------|------------------|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Domain Controller | Yes             | No              | Yes              | No               | The main reason why we recommend Success auditing for this subcategory is “[4697](event-4697.md)(S): A service was installed in the system.” <br>For other events we strongly recommend monitoring a whitelist of allowed security extensions (authenticated packages, logon processes, notification packages, and security packages). Otherwise it's hard to pull useful information from these events, except event 4611 which typically should have “SYSTEM” as value for **“Subject”** field.<br>This subcategory doesn’t have Failure events, so there is no recommendation to enable Failure auditing for this subcategory. |
-| Member Server     | Yes             | No              | Yes              | No               | The main reason why we recommend Success auditing for this subcategory is “[4697](event-4697.md)(S): A service was installed in the system.” <br>For other events we strongly recommend monitoring a whitelist of allowed security extensions (authenticated packages, logon processes, notification packages, and security packages). Otherwise it's hard to pull useful information from these events, except event 4611 which typically should display “SYSTEM” for the **“Subject”** field.<br>This subcategory doesn’t have Failure events, so there is no recommendation to enable Failure auditing for this subcategory.   |
-| Workstation       | Yes             | No              | Yes              | No               | The main reason why we recommend Success auditing for this subcategory is “[4697](event-4697.md)(S): A service was installed in the system.” <br>For other events we strongly recommend monitoring a whitelist of allowed security extensions (authenticated packages, logon processes, notification packages, and security packages). Otherwise it's hard to pull useful information from these events, except event 4611 which typically should display “SYSTEM” for the **“Subject”** field.<br>This subcategory doesn’t have Failure events, so there is no recommendation to enable Failure auditing for this subcategory.   |
+| Domain Controller | Yes             | No              | Yes              | No               | The main reason why we recommend Success auditing for this subcategory is “[4697](event-4697.md)(S): A service was installed in the system.” <br>For other events, we strongly recommend monitoring an allowlist of allowed security extensions (authenticated packages, logon processes, notification packages, and security packages). Otherwise it's hard to pull useful information from these events, except event 4611 which typically should have “SYSTEM” as value for **“Subject”** field.<br>This subcategory doesn’t have Failure events, so there is no recommendation to enable Failure auditing for this subcategory. |
+| Member Server     | Yes             | No              | Yes              | No               | The main reason why we recommend Success auditing for this subcategory is “[4697](event-4697.md)(S): A service was installed in the system.” <br>For other events, we strongly recommend monitoring an allowlist of allowed security extensions (authenticated packages, logon processes, notification packages, and security packages). Otherwise it's hard to pull useful information from these events, except event 4611 which typically should display “SYSTEM” for the **“Subject”** field.<br>This subcategory doesn’t have Failure events, so there is no recommendation to enable Failure auditing for this subcategory.   |
+| Workstation       | Yes             | No              | Yes              | No               | The main reason why we recommend Success auditing for this subcategory is “[4697](event-4697.md)(S): A service was installed in the system.” <br>For other events, we strongly recommend monitoring an allowlist of allowed security extensions (authenticated packages, logon processes, notification packages, and security packages). Otherwise it's hard to pull useful information from these events, except event 4611 which typically should display “SYSTEM” for the **“Subject”** field.<br>This subcategory doesn’t have Failure events, so there is no recommendation to enable Failure auditing for this subcategory.   |
 
 **Events List:**
 

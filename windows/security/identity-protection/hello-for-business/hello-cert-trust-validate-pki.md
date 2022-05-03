@@ -1,14 +1,14 @@
 ---
 title: Validate Public Key Infrastructure - certificate trust model (Windows Hello for Business)
-description: How to Validate Public Key Infrastructure for Windows Hello for Business
+description: How to Validate Public Key Infrastructure for Windows Hello for Business, under a certificate trust model.
 keywords: identity, PIN, biometric, Hello, passport
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -16,12 +16,14 @@ localizationpriority: medium
 ms.date: 08/19/2018
 ms.reviewer: 
 ---
-# Validate and Configure Public Key Infrastructure
+# Validate and Configure Public Key Infrastructure - Certificate Trust Model
 
 **Applies to**
--   Windows 10, version 1703 or later
--   On-premises deployment
--   Certificate trust
+
+- Windows 10, version 1703 or later
+- Windows 11
+- On-premises deployment
+- Certificate trust
 
 
 Windows Hello for Business must have a public key infrastructure regardless of the deployment or trust model.  All trust models depend on the domain controllers having a certificate.  The certificate serves as a root of trust for clients to ensure they are not communicating with a rogue domain controller.  The certificate trust model extends certificate issuance to client computers.  During Windows Hello for Business provisioning, the user receives a sign-in certificate.
@@ -52,7 +54,7 @@ Sign-in using _Enterprise Admin_ equivalent credentials on Windows Server 2012 o
     
 ## Configure a Production Public Key Infrastructure
 
-If you do have an existing public key infrastructure, please review [Certification Authority Guidance](https://technet.microsoft.com/library/hh831574.aspx) from Microsoft TechNet to properly design your infrastructure.   Then, consult the [Test Lab Guide: Deploying an AD CS Two-Tier PKI Hierarchy](https://technet.microsoft.com/library/hh831348.aspx) for instructions on how to configure your public key infrastructure using the information from your design session.
+If you do have an existing public key infrastructure, please review [Certification Authority Guidance](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831574(v=ws.11)) from Microsoft TechNet to properly design your infrastructure.   Then, consult the [Test Lab Guide: Deploying an AD CS Two-Tier PKI Hierarchy](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831348(v=ws.11)) for instructions on how to configure your public key infrastructure using the information from your design session.
 
 ### Configure Domain Controller Certificates
 
@@ -94,7 +96,7 @@ The certificate template is configured to supersede all the certificate template
 
 ### Configure an Internal Web Server Certificate template
 
-Windows 10 clients use the https protocol when communicating with Active Directory Federation Services.  To meet this need, you must issue a server authentication certificate to all the nodes in the Active Directory Federation Services farm.  On-premises deployments can use a server authentication certificate issued by their enterprise PKI.  You must configure a server authentication certificate template so the host running the Active Directory Federation Service can request the certificate. 
+Windows 10 or Windows 11 clients use the https protocol when communicating with Active Directory Federation Services.  To meet this need, you must issue a server authentication certificate to all the nodes in the Active Directory Federation Services farm.  On-premises deployments can use a server authentication certificate issued by their enterprise PKI.  You must configure a server authentication certificate template so the host running the Active Directory Federation Service can request the certificate.
 
 Sign-in to a certificate authority or management workstations with _Domain Admin_ equivalent credentials.
 1. Open the **Certificate Authority** management console.
@@ -150,7 +152,7 @@ Domain controllers automatically request a certificate from the domain controlle
 7. Expand **Windows Settings**, **Security Settings**, and click **Public Key Policies**.
 8. In the details pane, right-click **Certificate Services Client – Auto-Enrollment** and select **Properties**.
 9. Select **Enabled** from the **Configuration Model** list.
-10. Select the **Renew expired certificates**, **update pending certificates**, and **remove revoked certificates** check box.
+10. Select the **Renew expired certificates, update pending certificates, and remove revoked certificates** check box.
 11. Select the **Update certificates that use certificate templates** check box.
 12. Click **OK**. Close the **Group Policy Management Editor**.
 

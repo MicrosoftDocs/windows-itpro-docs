@@ -1,21 +1,18 @@
 ---
-title: Help protect data with Cortana and WIP (Windows 10)
+title: Help protect data with Cortana and WIP (Windows)
 description: An optional test scenario about how to use Cortana at work with Windows Information Protection (WIP).
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: dansimp
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: aaroncz
 ms.date: 10/05/2017
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # Test scenario 7 - Use Cortana and Windows Information Protection (WIP) to help protect your organization’s data on a device
-
--   Windows 10, version 1703
--   Windows 10 Mobile, version 1703
 
 >[!IMPORTANT]
 >The data created as part of these scenarios will be uploaded to Microsoft’s Cloud to help Cortana learn and help your employees. This is the same info that Cortana uses in the consumer offering.

@@ -1,16 +1,17 @@
 ---
 title: Quick fixes - Windows IT Pro
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
-description: Learn how to quickly resolve many problems which may come up during a Windows 10 upgrade.
+manager: dougeby
+ms.author: aaroncz
+description: Learn how to quickly resolve many problems, which may come up during a Windows 10 upgrade.
 keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, ITPro
+ms.custom: seo-marvel-apr2020
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
 ms.topic: article
 ---
@@ -33,26 +34,31 @@ The Microsoft Virtual Agent provided by [Microsoft Support](https://support.micr
 
 ## List of fixes
 
-<ol>
-<li>Remove nonessential external hardware, such as docks and USB devices. <a href="#remove-external-hardware" data-raw-source="[More information](#remove-external-hardware)">More information</a>.</li>
-<li>Check the system drive for errors and attempt repairs. <a href="#repair-the-system-drive" data-raw-source="[More information](#repair-the-system-drive)">More information</a>.</li>
-<li>Run the Windows Update troubleshooter. <a href="#windows-update-troubleshooter" data-raw-source="[More information](#windows-update-troubleshooter)">More information</a>.</li>
-<li>Attempt to restore and repair system files. <a href="#repair-system-files" data-raw-source="[More information](#repair-system-files)">More information</a>.</li>
-<li>Update Windows so that all available recommended updates are installed, and ensure the computer is rebooted if this is necessary to complete installation of an update. <a href="#update-windows" data-raw-source="[More information](#update-windows)">More information</a>.</li>
-<li>Temporarily uninstall non-Microsoft antivirus software.
-  <a href="#uninstall-non-microsoft-antivirus-software" data-raw-source="[More information](#uninstall-non-microsoft-antivirus-software)">More information</a>.</li>
+1.  Remove nonessential external hardware, such as docks and USB devices. [More information](#remove-external-hardware).
 
-<li>Uninstall all nonessential software. <a href="#uninstall-non-essential-software" data-raw-source="[More information](#uninstall-non-essential-software)">More information</a>.</li>
-<li>Update firmware and drivers. <a href="#update-firmware-and-drivers" data-raw-source="[More information](#update-firmware-and-drivers)">More information</a></li>
-<li>Ensure that &quot;Download and install updates (recommended)&quot; is accepted at the start of the upgrade process. <a href="#ensure-that-download-and-install-updates-is-selected" data-raw-source="[More information](#ensure-that-download-and-install-updates-is-selected)">More information</a>.</li>
-<li>Verify at least 16 GB of free space is available to upgrade a 32-bit OS, or 20 GB for a 64-bit OS. <a href="#verify-disk-space" data-raw-source="[More information](#verify-disk-space)">More information</a>.</li>
-</ol>
+2.  Check the system drive for errors and attempt repairs. [More information](#repair-the-system-drive).
+
+3.  Run the Windows Update troubleshooter. [More information](#windows-update-troubleshooter).
+
+4.  Attempt to restore and repair system files. [More information](#repair-system-files).
+
+5.  Update Windows so that all available recommended updates are installed, and ensure the computer is rebooted if this is necessary to complete installation of an update. [More information](#update-windows).
+
+6.  Temporarily uninstall non-Microsoft antivirus software. [More information](#uninstall-non-microsoft-antivirus-software).
+
+7.  Uninstall all nonessential software. [More information](#uninstall-non-essential-software).
+
+8.  Update firmware and drivers. [More information](#update-firmware-and-drivers).
+
+9.  Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process. [More information](#ensure-that-download-and-install-updates-is-selected).
+
+10.  Verify at least 16 GB of free space is available to upgrade a 32-bit OS, or 20 GB for a 64-bit OS. [More information](#verify-disk-space).
 
 ## Step by step instructions
 
 ### Remove external hardware
 
-If the computer is portable and it is currently in a docking station, [undock the computer](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754084(v=ws.11)).
+If the computer is portable and it is currently in a docking station, [undock the computer](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754084(v=ws.11)).
 
 Unplug nonessential external hardware devices from the computer, such as:
 - Headphones
@@ -75,19 +81,25 @@ For more information about disconnecting external devices, see [Safely remove ha
 
 ### Repair the system drive
 
-The system drive is the drive that contains the [system partition](https://docs.microsoft.com/windows-hardware/manufacture/desktop/hard-drives-and-partitions#span-idpartitionsspanspan-idpartitionsspanspan-idpartitionsspanpartitions). This is usually the **C:** drive.
+The system drive is the drive that contains the [system partition](/windows-hardware/manufacture/desktop/hard-drives-and-partitions#span-idpartitionsspanspan-idpartitionsspanspan-idpartitionsspanpartitions). This is usually the **C:** drive.
 
 To check and repair errors on the system drive:
 
 1. Click **Start**.
-2. Type **command**.
-3. Right-click **Command Prompt** and then left-click **Run as administrator**.
-4. If you are prompted by UAC, click **Yes**.
-5. Type **chkdsk /F** and press ENTER.
-6. When you are prompted to schedule a check the next time the system restarts, type **Y**.
-7. See the following example
 
-    ```
+2. Type **command**.
+
+3. Right-click **Command Prompt** and then left-click **Run as administrator**.
+
+4. If you are prompted by UAC, click **Yes**.
+
+5. Type **chkdsk /F** and press ENTER.
+
+6. When you are prompted to schedule a check the next time the system restarts, type **Y**.
+
+7. See the following example.
+
+    ```console
     C:\WINDOWS\system32>chkdsk /F
     The type of the file system is NTFS.
     Cannot lock current drive.
@@ -105,9 +117,7 @@ To check and repair errors on the system drive:
 
 The Windows Update troubleshooter tool will automatically analyze and fix problems with Windows Update, such as a corrupted download. It will also tell you if there is a pending reboot that is preventing Windows from updating.
 
-For Windows 7 and 8.1, the tool is [here](https://aka.ms/diag_wu).
-
-For Windows 10, the tool is [here](https://aka.ms/wudiag).
+[Download the tool for Windows 10](https://aka.ms/wudiag).
 
 To run the tool, click the appropriate link above. Your web browser will prompt you to save or open the file. Select **open** and the tool will automatically start. The tool will walk you through analyzing and fixing some common problems.
 
@@ -122,12 +132,16 @@ This fix is also described in detail at [answers.microsoft.com](https://answers.
 To check and repair system files:
 
 1. Click **Start**.
+
 2. Type **command**.
+
 3. Right-click **Command Prompt** and then left-click **Run as administrator**.
+
 4. If you are prompted by UAC, click **Yes**.
+
 5. Type **sfc /scannow** and press ENTER. See the following example:
 
-    ```
+    ```console
     C:\>sfc /scannow
 
     Beginning system scan.  This process will take some time.
@@ -139,7 +153,7 @@ To check and repair system files:
     ```
 6. If you are running Windows 8.1 or later, type **DISM.exe /Online /Cleanup-image /Restorehealth** and press ENTER (the DISM command options are not available for Windows 7). See the following example:
 
-    ```
+    ```console
     C:\>DISM.exe /Online /Cleanup-image /Restorehealth
 
     Deployment Image Servicing and Management tool
@@ -152,8 +166,7 @@ To check and repair system files:
 
     ```
     > [!NOTE] 
-    > It may take several minutes for the command operations to be completed. For more information, see [Repair a Windows Image](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/repair-a-windows-image). 
-
+    > It may take several minutes for the command operations to be completed. For more information, see [Repair a Windows Image](/windows-hardware/manufacture/desktop/repair-a-windows-image) and [Use the System File Checker tool](https://support.microsoft.com/help/929833/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system).
 
 ### Update Windows
 
@@ -189,7 +202,7 @@ To remove programs, use the same steps as are provided [above](#uninstall-non-mi
 
 Updating firmware (such as the BIOS) and installing hardware drivers is a somewhat advanced task.  Do not attempt to update BIOS if you aren't familiar with BIOS settings or are not sure how to restore the previous BIOS version if there are problems. Most BIOS updates are provided as a "flash" update. Your manufacturer might provide a tool to perform the update, or you might be required to enter the BIOS and update it manually. Be sure to save your working BIOS settings, since some updates can reset your configuration and make the computer fail to boot if (for example) a RAID configuration is changed.
 
-Most BIOS and other hardware updates can be obtained from a website maintained by your computer manufacturer. For example, Microsoft Surface device drivers can be obtained at: [Download the latest firmware and drivers for Surface devices](https://docs.microsoft.com/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices).
+Most BIOS and other hardware updates can be obtained from a website maintained by your computer manufacturer. For example, Microsoft Surface device drivers can be obtained at: [Download the latest firmware and drivers for Surface devices](/surface/manage-surface-driver-and-firmware-updates).
 
 To obtain the proper firmware drivers, search for the most updated driver version provided by your computer manufacturer. Install these updates and reboot the computer after installation. Request assistance from the manufacturer if you have any questions.
 
@@ -197,7 +210,7 @@ To obtain the proper firmware drivers, search for the most updated driver versio
 
 When you begin a Windows Update, the setup process will ask you to **Get important updates**. Answer **Yes** if the computer you are updating is connected to the Internet. See the following example:
 
-![Get important updates](../images/update.jpg)
+![Get important updates.](../images/update.jpg)
 
 ### Verify disk space
 
@@ -209,13 +222,13 @@ In File Explorer, click on **Computer** or **This PC** on the left, then look un
 
 The amount of space available on the system drive will be displayed under the drive. See the following example:
 
-![System drive](../images/drive.png)
+![System drive.](../images/drive.png)
 
 In the previous example, there is 703 GB of available free space on the system drive (C:).
 
 To free up additional space on the system drive, begin by running Disk Cleanup. You can access Disk Cleanup by right-clicking the hard drive icon and then clicking Properties. See the following example:
 
-![Disk cleanup](../images/cleanup.png)
+:::image type="content" alt-text="Disk cleanup." source="../images/cleanup.png":::
 
 For instructions to run Disk Cleanup and other suggestions to free up hard drive space, see [Tips to free up drive space on your PC](https://support.microsoft.com/help/17421/windows-free-up-drive-space).
 
@@ -226,9 +239,9 @@ When you run Disk Cleanup and enable the option to Clean up system files, you ca
 > [!TIP]
 > It is no longer necessary to open an elevated command prompt to run the [SetupDiag](setupdiag.md) tool. However, this is still the optimal way to run the tool.
 
-To launch an elevated command prompt, press the Windows key on your keyboard, type **cmd**, press Ctrl+Shift+Enter, and then Alt+C to confirm the elevation prompt. Screenshots and other steps to open an administrator (aka elevated) command prompt are [here](https://answers.microsoft.com/en-us/windows/forum/windows_7-security/command-prompt-admin-windows-7/6a188166-5e23-461f-b468-f325688ec8c7). 
+To launch an elevated command prompt, press the Windows key on your keyboard, type **cmd**, press Ctrl+Shift+Enter, and then click **Yes** to confirm the elevation prompt. Screenshots and other steps to open an elevated command prompt are [here](https://answers.microsoft.com/en-us/windows/forum/windows_7-security/command-prompt-admin-windows-7/6a188166-5e23-461f-b468-f325688ec8c7). 
 
-Note: When you open an elevated command prompt, you will usually start in the **C:\WINDOWS\system32** directory. To run a program that you recently downloaded, you must change to the directory where the program is located. Alternatively, you can move or copy the program to a location on the computer that is automatically searched. These directories are listed in the [PATH variable](https://answers.microsoft.com/windows/forum/windows_10-other_settings-winpc/adding-path-variable/97300613-20cb-4d85-8d0e-cc9d3549ba23).
+Note: When you open an elevated command prompt, you will usually start in the **C:\WINDOWS\system32** directory. To run a program that you recently downloaded, you must change to the directory where the program is located. Alternatively, you can move or copy the program to a location on the computer that is automatically searched. These directories are listed in the [PATH variable](https://answers.microsoft.com/windows/forum/all/adding-path-variable/97300613-20cb-4d85-8d0e-cc9d3549ba23).
 
 If this is too complicated for you, then use File Explorer to create a new folder under C: with a short name such as "new" then copy or move the programs you want to run (like SetupDiag) to this folder using File Explorer. When you open an elevated command prompt, change to this directory by typing "cd c:\new" and now you can run the programs in that folder.
 
@@ -236,8 +249,8 @@ If you downloaded the SetupDiag.exe program to your computer, then copied it to 
 
 ## Related topics
 
-[Windows 10 FAQ for IT professionals](https://technet.microsoft.com/windows/dn798755.aspx)
+[Windows 10 FAQ for IT professionals](../planning/windows-10-enterprise-faq-itpro.yml)
 <br>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)
 <br>[Windows 10 Specifications](https://www.microsoft.com/windows/Windows-10-specifications)
 <br>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)
-<br>[Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)
+<br>[Fix Windows Update errors by using the DISM or System Update Readiness tool](/troubleshoot/windows-server/deployment/fix-windows-update-errors)

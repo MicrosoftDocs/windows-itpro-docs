@@ -17,6 +17,9 @@ ms.date: 05/10/2018
 
 # Tips and tricks to manage Internet Explorer compatibility
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 Find out how to achieve better backward compatibility for your legacy web applications with the Enterprise Mode Site List.
 
 Jump to:
@@ -25,7 +28,7 @@ Jump to:
 
 [Enterprise Mode for Internet Explorer 11](enterprise-mode-overview-for-ie11.md) can be very effective in providing backward compatibility for older web apps. The Enterprise Mode Site List includes the ability to put any web app in any document mode, include IE8 and IE7 Enterprise Modes, without changing a single line of code on the website.
 
-![Internet Explorer Enterprise Modes and document modes](images/img-enterprise-mode-site-list-xml.jpg)
+![Internet Explorer Enterprise Modes and document modes.](images/img-enterprise-mode-site-list-xml.jpg)
 
 Sites in the \<docMode\> section can be rendered in any document mode, as shown in blue above. Some sites designed for older versions of Internet Explorer may require better backward compatibility, and these can leverage the \<emie\> section of the Enterprise Mode Site List. IE8 Enterprise Mode provides higher-fidelity emulation for Internet Explorer 8 by using, among other improvements, the original Internet Explorer 8 user agent string. IE7 Enterprise Mode further improves emulation by adding Compatibility View.  
   
@@ -81,12 +84,12 @@ To see if the site works in the Internet Explorer 5, Internet Explorer 7, Intern
 
 -   Open the site in Internet Explorer 11, load the F12 tools by pressing the **F12** key or by selecting **F12 Developer Tools** from the **Tools** menu, and select the **Emulation** tab.  
 
-    ![F12 Developer Tools Emulation tab](images/img-f12-developer-tools-emulation.jpg)
+    ![F12 Developer Tools Emulation tab.](images/img-f12-developer-tools-emulation.jpg)
 
 -   Run the site in each document mode until you find the mode in which the site works.
  
-    >[!NOTE]
-    >You will need to make sure the User agent string dropdown matches the same browser version as the Document mode dropdown. For example, if you were testing to see if the site works in Internet Explorer 10, you should update the Document mode dropdown to 10 and the User agent string dropdown to Internet Explorer 10.
+    > [!NOTE]
+    > You will need to make sure the User agent string dropdown matches the same browser version as the Document mode dropdown. For example, if you were testing to see if the site works in Internet Explorer 10, you should update the Document mode dropdown to 10 and the User agent string dropdown to Internet Explorer 10.
 
 -   If you find a mode in which your site works, you will need to add the site  domain, sub-domain, or URL to the Enterprise Mode Site List for the document mode in which the site works, or ask the IT administrator to do so. You can add the *x-ua-compatible* meta tag or HTTP header as well.
 
@@ -116,8 +119,8 @@ If IE8 Enterprise Mode doesn't work, IE7 Enterprise Mode will give you the Compa
 
 If the site works, inform the IT administrator that the site needs to be added to the IE7 Enterprise Mode section.\
 
->[!NOTE]
->Adding the same Web path to the Enterprise Mode and sections of the Enterprise Mode Site List will not work, but we will address this in a future update.
+> [!NOTE]
+> Adding the same Web path to the Enterprise Mode and sections of the Enterprise Mode Site List will not work, but we will address this in a future update.
 
 ### Update the site for modern web standards
 

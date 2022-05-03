@@ -16,6 +16,9 @@ ms.date: 10/16/2017
 
 
 # Problems after installing Internet Explorer 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 After you install Internet Explorer 11 in your organization, you might run into the following issues. By following these suggestions, you should be able to fix them.
 
 ## Internet Explorer is in an unusable state
@@ -39,7 +42,7 @@ RIES does not:
 
 -   Affect the applied Administrative Template Group Policy settings.
 
-RIES turns off all custom toolbars, browser extensions, and customizations installed with IE11. If you change your mind, you can turn each of the customizations back on through the **Manage Add-ons** dialog box. For more information about resetting IE settings, see [How to Reset Internet Explorer Settings](https://go.microsoft.com/fwlink/p/?LinkId=214528).
+RIES turns off all custom toolbars, browser extensions, and customizations installed with IE11. If you change your mind, you can turn each of the customizations back on through the **Manage Add-ons** dialog box. For more information about resetting IE settings, see [How to Reset Internet Explorer Settings](https://support.microsoft.com/windows/change-or-reset-internet-explorer-settings-2d4bac50-5762-91c5-a057-a922533f77d5).
 
 ## IE is crashing or seems slow
 If you notice that CPU usage is running higher than normal, or that IE is frequently crashing or slowing down, you should check your browser add-ons and video card. By default, IE11 uses graphics processing unit (GPU) rendering mode. However, some outdated video cards and video drivers don't support GPU hardware acceleration. If IE11 determines that your current video card or video driver doesn't support GPU hardware acceleration, it'll use Software Rendering mode.

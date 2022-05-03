@@ -1,15 +1,16 @@
 ---
 title: Policy CSP - Defender
-description: Policy CSP - Defender
+description: Learn how to use the Policy CSP - Defender setting so you can allow or disallow scanning of archives.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
-ms.date: 09/27/2019
+ms.date: 12/29/2021
 ms.reviewer: 
 manager: dansimp
+ms.collection: highpri
 ---
 
 # Policy CSP - Defender
@@ -42,9 +43,6 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#defender-allowioavprotection">Defender/AllowIOAVProtection</a>
-  </dd>
-  <dd>
-    <a href="#defender-allowintrusionpreventionsystem">Defender/AllowIntrusionPreventionSystem</a>
   </dd>
   <dd>
     <a href="#defender-allowonaccessprotection">Defender/AllowOnAccessProtection</a>
@@ -131,6 +129,9 @@ manager: dansimp
     <a href="#defender-schedulescantime">Defender/ScheduleScanTime</a>
   </dd>
   <dd>
+    <a href="#defender-securityintelligencelocation">Defender/SecurityIntelligenceLocation</a>
+  </dd>
+  <dd>
     <a href="#defender-signatureupdatefallbackorder">Defender/SignatureUpdateFallbackOrder</a>
   </dd>
   <dd>
@@ -154,32 +155,15 @@ manager: dansimp
 <a href="" id="defender-allowarchivescanning"></a>**Defender/AllowArchiveScanning**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -203,9 +187,9 @@ Allows or disallows scanning of archives.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Scan archive files*
+-   GP Friendly name: *Scan archive files*
 -   GP name: *Scan_DisableArchiveScanning*
--   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -224,32 +208,15 @@ The following list shows the supported values:
 <a href="" id="defender-allowbehaviormonitoring"></a>**Defender/AllowBehaviorMonitoring**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -273,9 +240,9 @@ Allows or disallows Windows Defender Behavior Monitoring functionality.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn on behavior monitoring*
+-   GP Friendly name: *Turn on behavior monitoring*
 -   GP name: *RealtimeProtection_DisableBehaviorMonitoring*
--   GP path: *Windows Components/Windows Defender Antivirus/Real-time Protection*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Real-time Protection*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -294,32 +261,15 @@ The following list shows the supported values:
 <a href="" id="defender-allowcloudprotection"></a>**Defender/AllowCloudProtection**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -343,10 +293,10 @@ To best protect your PC, Windows Defender will send information to Microsoft abo
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Join Microsoft MAPS*
+-   GP Friendly name: *Join Microsoft MAPS*
 -   GP name: *SpynetReporting*
 -   GP element: *SpynetReporting*
--   GP path: *Windows Components/Windows Defender Antivirus/MAPS*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/MAPS*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -365,32 +315,15 @@ The following list shows the supported values:
 <a href="" id="defender-allowemailscanning"></a>**Defender/AllowEmailScanning**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -414,9 +347,9 @@ Allows or disallows scanning of email.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn on e-mail scanning*
+-   GP Friendly name: *Turn on e-mail scanning*
 -   GP name: *Scan_DisableEmailScanning*
--   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -435,32 +368,15 @@ The following list shows the supported values:
 <a href="" id="defender-allowfullscanonmappednetworkdrives"></a>**Defender/AllowFullScanOnMappedNetworkDrives**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -484,9 +400,9 @@ Allows or disallows a full scan of mapped network drives.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Run full scan on mapped network drives*
+-   GP Friendly name: *Run full scan on mapped network drives*
 -   GP name: *Scan_DisableScanningMappedNetworkDrivesForFullScan*
--   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -505,32 +421,15 @@ The following list shows the supported values:
 <a href="" id="defender-allowfullscanremovabledrivescanning"></a>**Defender/AllowFullScanRemovableDriveScanning**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -554,9 +453,9 @@ Allows or disallows a full scan of removable drives. During a quick scan, remova
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Scan removable drives*
+-   GP Friendly name: *Scan removable drives*
 -   GP name: *Scan_DisableRemovableDriveScanning*
--   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -575,32 +474,15 @@ The following list shows the supported values:
 <a href="" id="defender-allowioavprotection"></a>**Defender/AllowIOAVProtection**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -624,9 +506,9 @@ Allows or disallows Windows Defender IOAVP Protection functionality.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Scan all downloaded files and attachments*
+-   GP Friendly name: *Scan all downloaded files and attachments*
 -   GP name: *RealtimeProtection_DisableIOAVProtection*
--   GP path: *Windows Components/Windows Defender Antivirus/Real-time Protection*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Real-time Protection*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -642,97 +524,18 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="defender-allowintrusionpreventionsystem"></a>**Defender/AllowIntrusionPreventionSystem**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
-
-
-Allows or disallows Windows Defender Intrusion Prevention functionality.
-
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 – Not allowed.
--   1 (default) – Allowed.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
 <a href="" id="defender-allowonaccessprotection"></a>**Defender/AllowOnAccessProtection**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -756,9 +559,9 @@ Allows or disallows Windows Defender On Access Protection functionality.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Monitor file and program activity on your computer*
+-   GP Friendly name: *Monitor file and program activity on your computer*
 -   GP name: *RealtimeProtection_DisableOnAccessProtection*
--   GP path: *Windows Components/Windows Defender Antivirus/Real-time Protection*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Real-time Protection*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -771,38 +574,24 @@ The following list shows the supported values:
 <!--/SupportedValues-->
 <!--/Policy-->
 
+> [!IMPORTANT]
+> AllowOnAccessProtection is officially being deprecated.
+
 <hr/>
 
 <!--Policy-->
 <a href="" id="defender-allowrealtimemonitoring"></a>**Defender/AllowRealtimeMonitoring**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -821,14 +610,14 @@ The following list shows the supported values:
 > This policy is only enforced in Windows 10 for desktop.
 
 
-Allows or disallows Windows Defender Realtime Monitoring functionality.
+Allows or disallows Windows Defender real-time Monitoring functionality.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off real-time protection*
+-   GP Friendly name: *Turn off real-time protection*
 -   GP name: *DisableRealtimeMonitoring*
--   GP path: *Windows Components/Windows Defender Antivirus/Real-time Protection*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Real-time Protection*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -847,32 +636,15 @@ The following list shows the supported values:
 <a href="" id="defender-allowscanningnetworkfiles"></a>**Defender/AllowScanningNetworkFiles**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -896,9 +668,9 @@ Allows or disallows a scanning of network files.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Scan network files*
+-   GP Friendly name: *Scan network files*
 -   GP name: *Scan_DisableScanningNetworkFiles*
--   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -917,32 +689,15 @@ The following list shows the supported values:
 <a href="" id="defender-allowscriptscanning"></a>**Defender/AllowScriptScanning**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -979,32 +734,15 @@ The following list shows the supported values:
 <a href="" id="defender-allowuseruiaccess"></a>**Defender/AllowUserUIAccess**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1023,14 +761,14 @@ The following list shows the supported values:
 > This policy is only enforced in Windows 10 for desktop.
 
 
-Allows or disallows user access to the Windows Defender UI. If disallowed, all Windows Defender notifications will also be suppressed.
+Allows or disallows user access to the Windows Defender UI. I disallowed, all Windows Defender notifications will also be suppressed.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Enable headless UI mode*
+-   GP Friendly name: *Enable headless UI mode*
 -   GP name: *UX_Configuration_UILockdown*
--   GP path: *Windows Components/Windows Defender Antivirus/Client Interface*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Client Interface*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -1049,32 +787,15 @@ The following list shows the supported values:
 <a href="" id="defender-attacksurfacereductiononlyexclusions"></a>**Defender/AttackSurfaceReductionOnlyExclusions**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1093,17 +814,17 @@ The following list shows the supported values:
 > This policy is only enforced in Windows 10 for desktop.
 
 
-Added in Windows 10, version 1709. This policy setting allows you to prevent Attack Surface reduction rules from matching on files under the paths specified or for the fully qualified resources specified. Paths should be added under the Options for this setting. Each entry must be listed as a name value pair, where the name should be a string representation of a path or a fully qualified resource name. As an example, a path might be defined as: "c:\Windows" to exclude all files in this directory. A fully qualified resource name might be defined as: "C:\Windows\App.exe"..
+This policy setting allows you to prevent Attack Surface reduction rules from matching on files under the paths specified or for the fully qualified resources specified. Paths should be added under the Options for this setting. Each entry must be listed as a name value pair, where the name should be a string representation of a path or a fully qualified resource name. As an example, a path might be defined as: "c:\Windows" to exclude all files in this directory. A fully qualified resource name might be defined as: "C:\Windows\App.exe"..
 
 Value type is string.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Exclude files and paths from Attack Surface Reduction Rules*
+-   GP Friendly name: *Exclude files and paths from Attack Surface Reduction Rules*
 -   GP name: *ExploitGuard_ASR_ASROnlyExclusions*
 -   GP element: *ExploitGuard_ASR_ASROnlyExclusions*
--   GP path: *Windows Components/Windows Defender Antivirus/Windows Defender Exploit Guard/Attack Surface Reduction*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Windows Defender Exploit Guard/Attack Surface Reduction*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -1115,32 +836,15 @@ ADMX Info:
 <a href="" id="defender-attacksurfacereductionrules"></a>**Defender/AttackSurfaceReductionRules**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1159,19 +863,19 @@ ADMX Info:
 > This policy is only enforced in Windows 10 for desktop.
 
 
-Added in Windows 10, version 1709. This policy setting enables setting the state (Block/Audit/Off) for each Attack surface reduction (ASR) rule. Each ASR rule listed can be set to one of the following states (Block/Audit/Off). The ASR rule ID and state should be added under the Options for this setting. Each entry must be listed as a name value pair. The name defines a valid ASR rule ID, while the value contains the status ID indicating the status of the rule.
+This policy setting enables setting the state (Block/Audit/Off) for each Attack surface reduction (Azure Site Recovery) rule. Each ASR rule listed can be set to one of the following states (Block/Audit/Off). The ASR rule ID and state should be added under the Options for this setting. Each entry must be listed as a name value pair. The name defines a valid ASR rule ID, while the value contains the status ID indicating the status of the rule.
 
-For more information about ASR rule ID and status ID, see [Enable Attack Surface Reduction](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/enable-attack-surface-reduction).
+For more information about ASR rule ID and status ID, see [Enable Attack Surface Reduction](/windows/threat-protection/windows-defender-exploit-guard/enable-attack-surface-reduction).
 
 Value type is string.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Attack Surface Reduction rules*
+-   GP Friendly name: *Configure Attack Surface Reduction rules*
 -   GP name: *ExploitGuard_ASR_Rules*
 -   GP element: *ExploitGuard_ASR_Rules*
--   GP path: *Windows Components/Windows Defender Antivirus/Windows Defender Exploit Guard/Attack Surface Reduction*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Windows Defender Exploit Guard/Attack Surface Reduction*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -1183,32 +887,15 @@ ADMX Info:
 <a href="" id="defender-avgcpuloadfactor"></a>**Defender/AvgCPULoadFactor**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1235,10 +922,10 @@ The default value is 50.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify the maximum percentage of CPU utilization during a scan*
+-   GP Friendly name: *Specify the maximum percentage of CPU utilization during a scan*
 -   GP name: *Scan_AvgCPULoadFactor*
 -   GP element: *Scan_AvgCPULoadFactor*
--   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -1254,32 +941,15 @@ Valid values: 0–100
 <a href="" id="defender-checkforsignaturesbeforerunningscan"></a>**Defender/CheckForSignaturesBeforeRunningScan**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1296,11 +966,11 @@ Valid values: 0–100
 <!--Description-->
 This policy setting allows you to manage whether a check for new virus and spyware definitions will occur before running a scan. 
 
-This setting applies to scheduled scans as well as the command line "mpcmdrun -SigUpdate", but it has no effect on scans initiated manually from the user interface.
+This setting applies to scheduled scans and the command line "mpcmdrun -SigUpdate", but it has no effect on scans initiated manually from the user interface.
 
 If you enable this setting, a check for new definitions will occur before running a scan.
 
-If you disable this setting or do not configure this setting, the scan will start using the existing definitions.
+If you disable this setting or don't configure this setting, the scan will start using the existing definitions.
 
 Supported values:
 
@@ -1312,10 +982,10 @@ OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/CheckForSignaturesBeforeRunni
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Check for the latest virus and spyware definitions before running a scheduled scan*
+-   GP Friendly name: *Check for the latest virus and spyware definitions before running a scheduled scan*
 -   GP name: *CheckForSignaturesBeforeRunningScan*
 -   GP element: *CheckForSignaturesBeforeRunningScan*
--   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -1336,32 +1006,15 @@ ADMX Info:
 <a href="" id="defender-cloudblocklevel"></a>**Defender/CloudBlockLevel**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1380,11 +1033,11 @@ ADMX Info:
 > This policy is only enforced in Windows 10 for desktop.
 
 
-Added in Windows 10, version 1709. This policy setting determines how aggressive Windows Defender Antivirus will be in blocking and scanning suspicious files. Value type is integer.
+This policy setting determines how aggressive Microsoft Defender Antivirus will be in blocking and scanning suspicious files. Value type is integer.
 
-If this setting is on, Windows Defender Antivirus will be more aggressive when identifying suspicious files to block and scan; otherwise, it will be less aggressive and therefore block and scan with less frequency. 
+If this setting is on, Microsoft Defender Antivirus will be more aggressive when identifying suspicious files to block and scan; otherwise, it will be less aggressive and therefore block and scan with less frequency. 
 
-For more information about specific values that are supported, see the Windows Defender Antivirus documentation site.
+For more information about specific values that are supported, see the Microsoft Defender Antivirus documentation site.
       
 > [!NOTE]
 > This feature requires the "Join Microsoft MAPS" setting enabled in order to function.
@@ -1392,10 +1045,10 @@ For more information about specific values that are supported, see the Windows D
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select cloud protection level*
+-   GP Friendly name: *Select cloud protection level*
 -   GP name: *MpEngine_MpCloudBlockLevel*
 -   GP element: *MpCloudBlockLevel*
--   GP path: *Windows Components/Windows Defender Antivirus/MpEngine*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/MpEngine*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -1404,7 +1057,7 @@ The following list shows the supported values:
 
 - 0x0 - Default windows defender blocking level
 - 0x2 - High blocking level - aggressively block unknowns while optimizing client performance (greater chance of false positives)       
-- 0x4 - High+ blocking level – aggressively block unknowns and apply additional protection measures (may impact  client performance)
+- 0x4 - High+ blocking level – aggressively block unknowns and apply more protection measures (may impact  client performance)
 - 0x6 - Zero tolerance blocking level – block all unknown executables
 
 <!--/SupportedValues-->
@@ -1416,32 +1069,15 @@ The following list shows the supported values:
 <a href="" id="defender-cloudextendedtimeout"></a>**Defender/CloudExtendedTimeout**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1459,9 +1095,9 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
-Added in Windows 10, version 1709. This feature allows Windows Defender Antivirus to block a suspicious file for up to 60 seconds, and scan it in the cloud to make sure it's safe. Value type is integer, range is 0 - 50.
+This feature allows Microsoft Defender Antivirus to block a suspicious file for up to 60 seconds, and scan it in the cloud to make sure it's safe. Value type is integer, range is 0 - 50.
 
-The typical cloud check timeout is 10 seconds. To enable the extended cloud check feature, specify the extended time in seconds, up to an additional 50 seconds. 
+The typical cloud check timeout is 10 seconds. To enable the extended cloud check feature, specify the extended time in seconds, up to an extra 50 seconds. 
 
 For example, if the desired timeout is 60 seconds, specify 50 seconds in this setting, which will enable the extended cloud check feature, and will raise the total time to 60 seconds. 
 
@@ -1471,10 +1107,10 @@ For example, if the desired timeout is 60 seconds, specify 50 seconds in this se
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure extended cloud check*
+-   GP Friendly name: *Configure extended cloud check*
 -   GP name: *MpEngine_MpBafsExtendedTimeout*
 -   GP element: *MpBafsExtendedTimeout*
--   GP path: *Windows Components/Windows Defender Antivirus/MpEngine*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/MpEngine*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -1486,32 +1122,15 @@ ADMX Info:
 <a href="" id="defender-controlledfolderaccessallowedapplications"></a>**Defender/ControlledFolderAccessAllowedApplications**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1529,15 +1148,15 @@ ADMX Info:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop. The previous name was GuardedFoldersAllowedApplications and changed to ControlledFolderAccessAllowedApplications.
 
-Added in Windows 10, version 1709. This policy setting allows user-specified applications to the controlled folder access feature. Adding an allowed application means the controlled folder access feature will allow the application to modify or delete content in certain folders such as My Documents. In most cases it will not be necessary to add entries. Windows Defender Antivirus will automatically detect and dynamically add applications that are friendly. Value type is string. Use the | as the substring separator.
+Added in Windows 10, version 1709. This policy setting allows user-specified applications to the controlled folder access feature. Adding an allowed application means the controlled folder access feature will allow the application to modify or delete content in certain folders such as My Documents. In most cases it won't be necessary to add entries. Microsoft Defender Antivirus will automatically detect and dynamically add applications that are friendly. Value type is string. Use the | as the substring separator.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure allowed applications*
+-   GP Friendly name: *Configure allowed applications*
 -   GP name: *ExploitGuard_ControlledFolderAccess_AllowedApplications*
 -   GP element: *ExploitGuard_ControlledFolderAccess_AllowedApplications*
--   GP path: *Windows Components/Windows Defender Antivirus/Windows Defender Exploit Guard/Controlled Folder Access*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Windows Defender Exploit Guard/Controlled Folder Access*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -1549,32 +1168,15 @@ ADMX Info:
 <a href="" id="defender-controlledfolderaccessprotectedfolders"></a>**Defender/ControlledFolderAccessProtectedFolders**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1592,15 +1194,15 @@ ADMX Info:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop. The previous name was GuardedFoldersList and changed to ControlledFolderAccessProtectedFolders.
 
-Added in Windows 10, version 1709. This policy settings allows adding user-specified folder locations to the controlled folder access feature. These folders will complement the system defined folders such as My Documents and My Pictures. The list of system folders will be displayed in the user interface and can not be changed. Value type is string. Use the | as the substring separator.
+This policy setting allows adding user-specified folder locations to the controlled folder access feature. These folders will complement the system defined folders such as My Documents and My Pictures. The list of system folders will be displayed in the user interface and can't be changed. Value type is string. Use the | as the substring separator.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure protected folders*
+-   GP Friendly name: *Configure protected folders*
 -   GP name: *ExploitGuard_ControlledFolderAccess_ProtectedFolders*
 -   GP element: *ExploitGuard_ControlledFolderAccess_ProtectedFolders*
--   GP path: *Windows Components/Windows Defender Antivirus/Windows Defender Exploit Guard/Controlled Folder Access*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Windows Defender Exploit Guard/Controlled Folder Access*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -1612,32 +1214,15 @@ ADMX Info:
 <a href="" id="defender-daystoretaincleanedmalware"></a>**Defender/DaysToRetainCleanedMalware**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1659,15 +1244,15 @@ ADMX Info:
 Time period (in days) that quarantine items will be stored on the system.
 
 
-The default value is 0, which keeps items in quarantine, and does not automatically remove them.
+The default value is 0, which keeps items in quarantine, and doesn't automatically remove them.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure removal of items from Quarantine folder*
+-   GP Friendly name: *Configure removal of items from Quarantine folder*
 -   GP name: *Quarantine_PurgeItemsAfterDelay*
 -   GP element: *Quarantine_PurgeItemsAfterDelay*
--   GP path: *Windows Components/Windows Defender Antivirus/Quarantine*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Quarantine*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -1683,32 +1268,15 @@ Valid values: 0–90
 <a href="" id="defender-disablecatchupfullscan"></a>**Defender/DisableCatchupFullScan**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1725,24 +1293,24 @@ Valid values: 0–90
 <!--Description-->
 This policy setting allows you to configure catch-up scans for scheduled full scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed.  Usually these scheduled scans are missed because the computer was turned off at the scheduled time. 
 
-If you enable this setting, catch-up scans for scheduled full scans will be turned on.  If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer.  If there is no scheduled scan configured, there will be no catch-up scan run. 
+If you enable this setting, catch-up scans for scheduled full scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone signs in to the computer.  If there's no scheduled scan configured, there will be no catch-up scan run. 
 
-If you disable or do not configure this setting, catch-up scans for scheduled full scans will be turned off.
+If you disable or don't configure this setting, catch-up scans for scheduled full scans will be turned off.
 
 Supported values:
 
-- 0 - Disabled 
-- 1 - Enabled (default)
+- 1 - Disabled (default)
+- 0 - Enabled 
 
 OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/DisableCatchupFullScan
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn on catch-up full scan*
+-   GP Friendly name: *Turn on catch-up full scan*
 -   GP name: *Scan_DisableCatchupFullScan*
 -   GP element: *Scan_DisableCatchupFullScan*
--   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -1763,32 +1331,15 @@ ADMX Info:
 <a href="" id="defender-disablecatchupquickscan"></a>**Defender/DisableCatchupQuickScan**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1805,24 +1356,24 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to configure catch-up scans for scheduled quick scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed. Usually these scheduled scans are missed because the computer was turned off at the scheduled time. 
 
-If you enable this setting, catch-up scans for scheduled quick scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer. If there is no scheduled scan configured, there will be no catch-up scan run.
+If you enable this setting, catch-up scans for scheduled quick scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone signs in to the computer. If there's no scheduled scan configured, there will be no catch-up scan run.
 
-If you disable or do not configure this setting, catch-up scans for scheduled quick scans will be turned off.
+If you disable or don't configure this setting, catch-up scans for scheduled quick scans will be turned off.
 
 Supported values:
 
-- 0 - Disabled 
-- 1 - Enabled (default)
+- 1 - Disabled (default)
+- 0 - Enabled 
 
 OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/DisableCatchupQuickScan
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn on catch-up quick scan*
+-   GP Friendly name: *Turn on catch-up quick scan*
 -   GP name: *Scan_DisableCatchupQuickScan*
 -   GP element: *Scan_DisableCatchupQuickScan*
--   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -1843,32 +1394,15 @@ ADMX Info:
 <a href="" id="defender-enablecontrolledfolderaccess"></a>**Defender/EnableControlledFolderAccess**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1886,15 +1420,15 @@ ADMX Info:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop. The previous name was EnableGuardMyFolders  and changed to EnableControlledFolderAccess.
 
-Added in Windows 10, version 1709. This policy enables setting the state (On/Off/Audit) for the controlled folder access feature. The controlled folder access feature removes modify and delete permissions from untrusted applications to certain folders such as My Documents. Value type is integer and the range is 0 - 2.
+This policy enables setting the state (On/Off/Audit) for the controlled folder access feature. The controlled folder access feature removes modify and delete permissions from untrusted applications to certain folders such as My Documents. Value type is integer and the range is 0 - 2.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Controlled folder access*
+-   GP Friendly name: *Configure Controlled folder access*
 -   GP name: *ExploitGuard_ControlledFolderAccess_EnableControlledFolderAccess*
 -   GP element: *ExploitGuard_ControlledFolderAccess_EnableControlledFolderAccess*
--   GP path: *Windows Components/Windows Defender Antivirus/Windows Defender Exploit Guard/Controlled Folder Access*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Windows Defender Exploit Guard/Controlled Folder Access*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -1914,32 +1448,15 @@ The following list shows the supported values:
 <a href="" id="defender-enablelowcpupriority"></a>**Defender/EnableLowCPUPriority**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1958,7 +1475,7 @@ This policy setting allows you to enable or disable low CPU priority for schedul
 
 If you enable this setting, low CPU priority will be used during scheduled scans.
 
-If you disable or do not configure this setting, not changes will be made to CPU priority for scheduled scans.
+If you disable or don't configure this setting, not changes will be made to CPU priority for scheduled scans.
 
 Supported values:
 
@@ -1968,10 +1485,10 @@ Supported values:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure low CPU priority for scheduled scans*
+-   GP Friendly name: *Configure low CPU priority for scheduled scans*
 -   GP name: *Scan_LowCpuPriority*
 -   GP element: *Scan_LowCpuPriority*
--   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -1992,32 +1509,15 @@ ADMX Info:
 <a href="" id="defender-enablenetworkprotection"></a>**Defender/EnableNetworkProtection**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2035,21 +1535,21 @@ ADMX Info:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
-Added in Windows 10, version 1709. This policy allows you to turn network protection on (block/audit) or off. Network protection protects employees using any app from accessing phishing scams, exploit-hosting sites, and malicious content on the Internet. This includes preventing third-party browsers from connecting to dangerous sites. Value type is integer.
+This policy allows you to turn on network protection (block/audit) or off. Network protection protects employees using any app from accessing phishing scams, exploit-hosting sites, and malicious content on the Internet. This protection includes preventing third-party browsers from connecting to dangerous sites. Value type is integer.
 
 If you enable this setting, network protection is turned on and employees can't turn it off. Its behavior can be controlled by the following options: Block and Audit.
-If you enable this policy with the ""Block"" option, users/apps will be blocked from connecting to dangerous domains. You will be able to see this activity in Windows Defender Security Center.
-If you enable this policy with the ""Audit"" option, users/apps will not be blocked from connecting to dangerous domains. However, you will still see this activity in Windows Defender Security Center.
-If you disable this policy, users/apps will not be blocked from connecting to dangerous domains. You will not see any network activity in Windows Defender Security Center.
-If you do not configure this policy, network blocking will be disabled by default.
+If you enable this policy with the ""Block"" option, users/apps will be blocked from connecting to dangerous domains. You'll be able to see this activity in Windows Defender Security Center.
+If you enable this policy with the ""Audit"" option, users/apps won't be blocked from connecting to dangerous domains. However, you'll still see this activity in Windows Defender Security Center.
+If you disable this policy, users/apps won't be blocked from connecting to dangerous domains. You'll not see any network activity in Windows Defender Security Center.
+If you don't configure this policy, network blocking will be disabled by default.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Prevent users and apps from accessing dangerous websites*
+-   GP Friendly name: *Prevent users and apps from accessing dangerous websites*
 -   GP name: *ExploitGuard_EnableNetworkProtection*
 -   GP element: *ExploitGuard_EnableNetworkProtection*
--   GP path: *Windows Components/Windows Defender Antivirus/Windows Defender Exploit Guard/Network Protection*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Windows Defender Exploit Guard/Network Protection*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -2069,32 +1569,15 @@ The following list shows the supported values:
 <a href="" id="defender-excludedextensions"></a>**Defender/ExcludedExtensions**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2118,10 +1601,10 @@ Allows an administrator to specify a list of file type extensions to ignore duri
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Path Exclusions*
+-   GP Friendly name: *Path Exclusions*
 -   GP name: *Exclusions_Paths*
 -   GP element: *Exclusions_PathsList*
--   GP path: *Windows Components/Windows Defender Antivirus/Exclusions*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Exclusions*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -2133,32 +1616,15 @@ ADMX Info:
 <a href="" id="defender-excludedpaths"></a>**Defender/ExcludedPaths**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2182,10 +1648,10 @@ Allows an administrator to specify a list of directory paths to ignore during a 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Extension Exclusions*
+-   GP Friendly name: *Extension Exclusions*
 -   GP name: *Exclusions_Extensions*
 -   GP element: *Exclusions_ExtensionsList*
--   GP path: *Windows Components/Windows Defender Antivirus/Exclusions*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Exclusions*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -2197,32 +1663,15 @@ ADMX Info:
 <a href="" id="defender-excludedprocesses"></a>**Defender/ExcludedProcesses**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2252,10 +1701,10 @@ Each file type must be separated by a **|**. For example, "C:\\Example.exe|C:\\E
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Process Exclusions*
+-   GP Friendly name: *Process Exclusions*
 -   GP name: *Exclusions_Processes*
 -   GP element: *Exclusions_ProcessesList*
--   GP path: *Windows Components/Windows Defender Antivirus/Exclusions*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Exclusions*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -2267,32 +1716,15 @@ ADMX Info:
 <a href="" id="defender-puaprotection"></a>**Defender/PUAProtection**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2311,14 +1743,26 @@ ADMX Info:
 > This policy is only enforced in Windows 10 for desktop.
 
 
-Added in Windows 10, version 1607. Specifies the level of detection for potentially unwanted applications (PUAs). Windows Defender alerts you when potentially unwanted software is being downloaded or attempts to install itself on your computer.
+Specifies the level of detection for potentially unwanted applications (PUAs). Windows Defender alerts you when potentially unwanted software is being downloaded or attempts to install itself on your computer.
+
+> [!NOTE]
+> Potentially unwanted applications (PUA) are a category of software that can cause your machine to run slowly, display unexpected ads, or at worst, install other software which might be unexpected or unwanted. By default in Windows 10 (version 2004 and later), Microsoft Defender Antivirus blocks apps that are considered PUA, for Enterprise (E5) devices. For more information about PUA, see [Detect and block potentially unwanted applications](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
 
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *Configure detection for potentially unwanted applications*
+-   GP name: *Root_PUAProtection*
+-   GP element: *Root_PUAProtection*
+-   GP path: *Windows Components/Microsoft Defender Antivirus*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – PUA Protection off. Windows Defender will not protect against potentially unwanted applications.
--   1 – PUA Protection on. Detected items are blocked. They will show in history along with other threats.
+-   0 (default) – PUA Protection off. Windows Defender won't protect against potentially unwanted applications.
+-   1 – PUA Protection on. Detected items are blocked. They'll show in history along with other threats.
 -   2 – Audit mode. Windows Defender will detect potentially unwanted applications, but take no action. You can review information about the applications Windows Defender would have taken action against by searching for events created by Windows Defender in the Event Viewer.
 
 <!--/SupportedValues-->
@@ -2330,32 +1774,15 @@ The following list shows the supported values:
 <a href="" id="defender-realtimescandirection"></a>**Defender/RealTimeScanDirection**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2382,10 +1809,10 @@ Controls which sets of files should be monitored.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure monitoring for incoming and outgoing file and program activity*
+-   GP Friendly name: *Configure monitoring for incoming and outgoing file and program activity*
 -   GP name: *RealtimeProtection_RealtimeScanDirection*
 -   GP element: *RealtimeProtection_RealtimeScanDirection*
--   GP path: *Windows Components/Windows Defender Antivirus/Real-time Protection*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Real-time Protection*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -2405,32 +1832,15 @@ The following list shows the supported values:
 <a href="" id="defender-scanparameter"></a>**Defender/ScanParameter**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2454,10 +1864,10 @@ Selects whether to perform a quick scan or full scan.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify the scan type to use for a scheduled scan*
+-   GP Friendly name: *Specify the scan type to use for a scheduled scan*
 -   GP name: *Scan_ScanParameters*
 -   GP element: *Scan_ScanParameters*
--   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -2476,32 +1886,15 @@ The following list shows the supported values:
 <a href="" id="defender-schedulequickscantime"></a>**Defender/ScheduleQuickScanTime**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2534,10 +1927,10 @@ The default value is 120
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify the time for a daily quick scan*
+-   GP Friendly name: *Specify the time for a daily quick scan*
 -   GP name: *Scan_ScheduleQuickScantime*
 -   GP element: *Scan_ScheduleQuickScantime*
--   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -2553,32 +1946,15 @@ Valid values: 0–1380
 <a href="" id="defender-schedulescanday"></a>**Defender/ScheduleScanDay**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2605,10 +1981,10 @@ Selects the day that the Windows Defender scan should run.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify the day of the week to run a scheduled scan*
+-   GP Friendly name: *Specify the day of the week to run a scheduled scan*
 -   GP name: *Scan_ScheduleDay*
 -   GP element: *Scan_ScheduleDay*
--   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -2634,32 +2010,15 @@ The following list shows the supported values:
 <a href="" id="defender-schedulescantime"></a>**Defender/ScheduleScanTime**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2692,10 +2051,10 @@ The default value is 120.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify the time of day to run a scheduled scan*
+-   GP Friendly name: *Specify the time of day to run a scheduled scan*
 -   GP name: *Scan_ScheduleTime*
 -   GP element: *Scan_ScheduleTime*
--   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -2708,35 +2067,69 @@ Valid values: 0–1380.
 <hr/>
 
 <!--Policy-->
+<a href="" id="defender-securityintelligencelocation"></a>**Defender/SecurityIntelligenceLocation**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting allows you to define the security intelligence location for VDI-configured computers. 
+
+​If you disable or don't configure this setting, security intelligence will be referred from the default local source.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *Define security intelligence location for VDI clients*
+-   GP name: *SecurityIntelligenceLocation*
+-   GP element: *SecurityIntelligenceLocation*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Security Intelligence Updates*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+- Empty string - no policy is set
+- Non-empty string - the policy is set and security intelligence is gathered from the location
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="defender-signatureupdatefallbackorder"></a>**Defender/SignatureUpdateFallbackOrder**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2762,19 +2155,19 @@ Possible values are:
 
 For example: InternalDefinitionUpdateServer | MicrosoftUpdateServer | MMPC 
 
-If you enable this setting, definition update sources will be contacted in the order specified. Once definition updates have been successfully downloaded from one specified source, the remaining sources in the list will not be contacted.
+If you enable this setting, definition update sources will be contacted in the order specified. Once definition updates have been successfully downloaded from one specified source, the remaining sources in the list won't be contacted.
 
-If you disable or do not configure this setting, definition update sources will be contacted in a default order.
+If you disable or don't configure this setting, definition update sources will be contacted in a default order.
 
 OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/SignatureUpdateFallbackOrder
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Define the order of sources for downloading definition updates*
+-   GP Friendly name: *Define the order of sources for downloading definition updates*
 -   GP name: *SignatureUpdate_FallbackOrder*
 -   GP element: *SignatureUpdate_FallbackOrder*
--   GP path: *Windows Components/Windows Defender Antivirus/Signature Updates*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Signature Updates*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -2795,32 +2188,15 @@ ADMX Info:
 <a href="" id="defender-signatureupdatefilesharessources"></a>**Defender/SignatureUpdateFileSharesSources**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2841,19 +2217,19 @@ For example: \\unc1\Signatures | \\unc2\Signatures
 
 The list is empty by default.
 
-If you enable this setting, the specified sources will be contacted for definition updates. Once definition updates have been successfully downloaded from one specified source, the remaining sources in the list will not be contacted.
+If you enable this setting, the specified sources will be contacted for definition updates. Once definition updates have been successfully downloaded from one specified source, the remaining sources in the list won't be contacted.
 
-If you disable or do not configure this setting, the list will remain empty by default and no sources will be contacted.
+If you disable or don't configure this setting, the list will remain empty by default and no sources will be contacted.
 
 OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/SignatureUpdateFileSharesSources
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Define file shares for downloading definition updates*
+-   GP Friendly name: *Define file shares for downloading definition updates*
 -   GP name: *SignatureUpdate_DefinitionUpdateFileSharesSources*
 -   GP element: *SignatureUpdate_DefinitionUpdateFileSharesSources*
--   GP path: *Windows Components/Windows Defender Antivirus/Signature Updates*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Signature Updates*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -2874,32 +2250,15 @@ ADMX Info:
 <a href="" id="defender-signatureupdateinterval"></a>**Defender/SignatureUpdateInterval**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2930,10 +2289,10 @@ OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/SignatureUpdateInterval
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify the interval to check for definition updates*
+-   GP Friendly name: *Specify the interval to check for definition updates*
 -   GP name: *SignatureUpdate_SignatureUpdateInterval*
 -   GP element: *SignatureUpdate_SignatureUpdateInterval*
--   GP path: *Windows Components/Windows Defender Antivirus/Signature Updates*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Signature Updates*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -2949,32 +2308,15 @@ Valid values: 0–24.
 <a href="" id="defender-submitsamplesconsent"></a>**Defender/SubmitSamplesConsent**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2998,10 +2340,10 @@ Checks for the user consent level in Windows Defender to send data. If the requi
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Send file samples when further analysis is required*
+-   GP Friendly name: *Send file samples when further analysis is required*
 -   GP name: *SubmitSamplesConsent*
 -   GP element: *SubmitSamplesConsent*
--   GP path: *Windows Components/Windows Defender Antivirus/MAPS*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/MAPS*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -3022,32 +2364,15 @@ The following list shows the supported values:
 <a href="" id="defender-threatseveritydefaultaction"></a>**Defender/ThreatSeverityDefaultAction**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3068,7 +2393,7 @@ The following list shows the supported values:
 
 Allows an administrator to specify any valid threat severity levels and the corresponding default action ID to take.
 
-This value is a list of threat severity level IDs and corresponding actions, separated by a<strong>|</strong> using the format "*threat level*=*action*|*threat level*=*action*". For example "1=6|2=2|4=10|5=3
+This value is a list of threat severity level IDs and corresponding actions, separated by a <strong>|</strong> using the format "*threat level*=*action*|*threat level*=*action*". For example, "1=6|2=2|4=10|5=3".
 
 The following list shows the supported values for threat severity levels:
 
@@ -3079,34 +2404,26 @@ The following list shows the supported values for threat severity levels:
 
 The following list shows the supported values for possible actions:
 
--   1 – Clean
--   2 – Quarantine
--   3 – Remove
--   6 – Allow
--   8 – User defined
--   10 – Block
+-   1 – Clean. Service tries to recover files and try to disinfect.
+-   2 – Quarantine. Moves files to quarantine.
+-   3 – Remove. Removes files from system.
+-   6 – Allow. Allows file/does none of the above actions.
+-   8 – User defined. Requires user to make a decision on which action to take.
+-   10 – Block. Blocks file execution.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify threat alert levels at which default action should not be taken when detected*
+-   GP Friendly name: *Specify threat alert levels at which default action should not be taken when detected*
 -   GP name: *Threats_ThreatSeverityDefaultAction*
 -   GP element: *Threats_ThreatSeverityDefaultActionList*
--   GP path: *Windows Components/Windows Defender Antivirus/Threats*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Threats*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
 <hr/>
 
-Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
 
 <!--/Policies-->
-

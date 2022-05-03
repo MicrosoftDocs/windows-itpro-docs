@@ -1,23 +1,20 @@
 ---
 title: 5143(S) A network share object was modified. (Windows 10)
-description: Describes security event 5143(S) A network share object was modified.
+description: Describes security event 5143(S) A network share object was modified. This event is generated when a network share object is modified.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: windows-sec
 ---
 
 # 5143(S): A network share object was modified.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-5143.png" alt="Event 5143 illustration" width="740" height="547" hspace="10" align="left" />
@@ -95,7 +92,7 @@ This event generates every time network share object was modified.
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -259,5 +256,5 @@ For 5143(S): A network share object was modified.
 
 > **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
-- If you have high-value computers for which you need to monitor all modifications to all shares or specific shares (“**Share Name**”), monitor this event<strong>.</strong> For example, you could monitor all changes to the SYSVOL share on domain controllers.
+- If you have high-value computers for which you need to monitor all modifications to all shares or specific shares (“**Share Name**”), monitor this event<b>.</b> For example, you could monitor all changes to the SYSVOL share on domain controllers.
 

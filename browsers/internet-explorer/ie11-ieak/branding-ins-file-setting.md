@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the Branding .INS file to create custom branding and setup info
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Info about the custom branding and setup information in your browser package.
 
 |Name       |Value                           | Description                                                  |

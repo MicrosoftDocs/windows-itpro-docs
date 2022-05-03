@@ -6,12 +6,13 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 ms.localizationpriority: medium
-ms.audience: itproauthor: greg-lindsay
+ms.audience: itpro
 ms.date: 08/22/2017
-ms.reviewer: 
-manager: laurawi
-audience: itproauthor: greg-lindsay
-ROBOTS: noindex,nofollow
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+audience: itpro
+ROBOTS: NOINDEX
 ms.topic: article
 ---
 # Windows Autopilot EULA dismissal – important information

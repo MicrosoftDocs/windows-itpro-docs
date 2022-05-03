@@ -1,10 +1,10 @@
 ---
-title: Domain Isolation Policy Design (Windows 10)
-description: Domain Isolation Policy Design
+title: Domain Isolation Policy Design (Windows)
+description: Learn how to design a domain isolation policy, based on which devices accept only connections from authenticated members of the same isolated domain.
 ms.assetid: 7475084e-f231-473a-9357-5e1d39861d66
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/07/2021
+ms.technology: windows-sec
 ---
 
 # Domain Isolation Policy Design
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 In the domain isolation policy design, you configure the devices on your network to accept only connections coming from devices that are authenticated as members of the same isolated domain.
 
@@ -33,7 +35,7 @@ By using connection security rules based on IPsec, you provide a logical barrier
 
 The design is shown in the following illustration, with the arrows that show the permitted communication paths.
 
-![isolated domain boundary zone](images/wfasdomainisoboundary.gif)
+![isolated domain boundary zone.](images/wfasdomainisoboundary.gif)
 
 Characteristics of this design, as shown in the diagram, include the following:
 
@@ -50,8 +52,8 @@ Characteristics of this design, as shown in the diagram, include the following:
 -   Untrusted non-domain members (area D) - Devices that are not managed by your organization and have an unknown security configuration must have access only to those devices required for your organization to correctly conduct its business. Domain isolation exists to put a logical barrier between these untrusted Devices and your organization's devices.
 
 After implementing this design, your administrative team will have centralized management of the firewall and connection security rules applied to the devices in your organization.
-
->**Important:**  This design builds on the [Basic Firewall Policy Design](basic-firewall-policy-design.md), and in turn serves as the foundation for the [Server Isolation Policy Design](server-isolation-policy-design.md). If you plan to deploy all three, we recommend that you do the design work for all three together, and then deploy in the sequence presented.
+> [!IMPORTANT]
+> This design builds on the [Basic Firewall Policy Design](basic-firewall-policy-design.md), and in turn serves as the foundation for the [Server Isolation Policy Design](server-isolation-policy-design.md). If you plan to deploy all three, we recommend that you do the design work for all three together, and then deploy in the sequence presented.
 
 This design can be applied to Devices that are part of an Active Directory forest. Active Directory is required to provide the centralized management and deployment of Group Policy objects that contain the connection security rules.
 
@@ -59,7 +61,7 @@ In order to expand the isolated domain to include Devices that cannot be part of
 
 For more info about this design:
 
--   This design coincides with the deployment goals to [Protect Devices from Unwanted Network Traffic](protect-devices-from-unwanted-network-traffic.md), [Restrict Access to Only Trusted Devices](restrict-access-to-only-trusted-devices.md), and optionally [Require Encryption When Accessing Sensitive Network Resources](require-encryption-when-accessing-sensitive-network-resources.md).
+-   This design coincides with the implementation goals to [Protect Devices from Unwanted Network Traffic](protect-devices-from-unwanted-network-traffic.md), [Restrict Access to Only Trusted Devices](restrict-access-to-only-trusted-devices.md), and optionally [Require Encryption When Accessing Sensitive Network Resources](require-encryption-when-accessing-sensitive-network-resources.md).
 
 -   To learn more about this design, see the [Domain Isolation Policy Design Example](domain-isolation-policy-design-example.md).
 

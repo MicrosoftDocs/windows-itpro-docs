@@ -1,23 +1,20 @@
 ---
 title: 4936(S) Replication failure ends. (Windows 10)
-description: Describes security event 4936(S) Replication failure ends.
+description: Describes security event 4936(S) Replication failure ends. This event is generated when Active Directory replication failure ends.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: windows-sec
 ---
 
 # 4936(S): Replication failure ends.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 This event generates when Active Directory replication failure ends.

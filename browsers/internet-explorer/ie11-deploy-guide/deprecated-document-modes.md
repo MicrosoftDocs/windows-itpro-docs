@@ -17,6 +17,9 @@ ms.date: 07/27/2017
 
 # Deprecated document modes and Internet Explorer 11
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 **Applies to:**
 
 -   Windows 10
@@ -45,7 +48,7 @@ The compatibility improvements made in IE11 lets older websites just work in the
 ## Document mode selection flowchart
 This flowchart shows how IE11 works when document modes are used.
 
-![Flowchart detailing how document modes are chosen in IE11](images/docmode-decisions-sm.png)<br>
+![Flowchart detailing how document modes are chosen in IE11.](images/docmode-decisions-sm.png)<br>
 [Click this link to enlarge image](img-ie11-docmode-lg.md)
 
 ## Known Issues with Internet Explorer 8 document mode in Enterprise Mode

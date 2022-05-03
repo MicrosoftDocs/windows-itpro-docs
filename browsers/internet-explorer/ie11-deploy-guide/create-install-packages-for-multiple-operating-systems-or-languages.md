@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Create packages for multiple operating systems or languages
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 You'll create multiple versions of your custom browser package if:
 
 - You support more than 1 version of Windows®.

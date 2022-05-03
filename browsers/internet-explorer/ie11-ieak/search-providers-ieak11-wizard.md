@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the Search Providers page in the IEAK 11 Wizard
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 The **Search Providers** page of the Internet Explorer Customization Wizard 11 lets you add a default search provider (typically, Bing®) and additional providers to your custom version of IE.
 
 **Note**<br>The Internet Explorer Customization Wizard 11 offers improved and extended search settings. However, you can still optionally include support for Search Suggestions and Favicons, as well as Accelerator previews by using an .ins file from a previous version of IEAK.

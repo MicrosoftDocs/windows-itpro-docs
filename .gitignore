@@ -5,12 +5,16 @@ obj/
 _site/
 Tools/NuGet/
 .optemp/
-Thumbs.db
+*.db
 .DS_Store
-
+*.ini
+_themes*/
+common/
+.vscode/
 .openpublishing.build.mdproj
 .openpublishing.buildcore.ps1
 packages.config
+settings.json
 
 # User-specific files
 .vs/

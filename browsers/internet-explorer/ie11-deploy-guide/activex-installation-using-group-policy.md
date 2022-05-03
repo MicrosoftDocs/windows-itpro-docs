@@ -7,7 +7,8 @@ author: dansimp
 ms.prod: ie11
 ms.assetid: 59185370-558c-47e0-930c-8a5ed657e9e3
 ms.reviewer: 
-audience: itpromanager: dansimp
+audience: itpro
+manager: dansimp
 ms.author: dansimp
 title: ActiveX installation using group policy (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
@@ -16,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # Group Policy and ActiveX installation
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 
 ActiveX controls are installed and invoked using the HTML object tag with the CODEBASE attribute. This attribute, through a URL, makes Internet Explorer:
 
@@ -39,11 +43,8 @@ You use the ActiveX Installer Service (AXIS) and Group Policy to manage your Act
 
 -   **ActiveX installation policy for sites in trusted zones.** Identifies how AXIS should behave when a website tries to install an ActiveX control. First, AXIS looks to see if the site appears in either the list of approved installation sites or in the **Trusted sites** zone. If the does, then AXIS checks to make sure the control meets your company's policy requirements. If the ActiveX control meets all of these requirements, the control is installed.
 
-For more information about the ActiveX Installer Service, see [Administering the ActiveX Installer Service in Windows 7](https://go.microsoft.com/fwlink/p/?LinkId=214503).
+For more information about the ActiveX Installer Service, see [Administering the ActiveX Installer Service in Windows 7](/previous-versions/windows/it-pro/windows-7/dd631688(v=ws.10)).
 
  
 
  
-
-
-

@@ -1,6 +1,6 @@
 ---
 title: DynamicManagement DDF file
-description: DynamicManagement DDF file
+description: Learn about the OMA DM device description framework (DDF) for the DynamicManagement configuration service provider (CSP).
 ms.assetid: 7e266db0-2fd9-4412-b428-4550f41a1738
 ms.reviewer: 
 manager: dansimp
@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 12/05/2017
 ---
 

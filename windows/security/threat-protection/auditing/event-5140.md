@@ -2,22 +2,19 @@
 title: 5140(S, F) A network share object was accessed. (Windows 10)
 description: Describes security event 5140(S, F) A network share object was accessed.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: windows-sec
 ---
 
 # 5140(S, F): A network share object was accessed.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-5140.png" alt="Event 5140 illustration" width="449" height="557" hspace="10" align="left" />
@@ -95,7 +92,7 @@ This event generates once per session, when first access attempt was made.
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -145,7 +142,7 @@ For 5140(S, F): A network share object was accessed.
 
 > **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
-- If you have high-value computers for which you need to monitor all access to all shares or specific shares (“**Share Name**”), monitor this event<strong>.</strong> For example, you could monitor share **C$** on domain controllers.
+- If you have high-value computers for which you need to monitor all access to all shares or specific shares (“**Share Name**”), monitor this event<b>.</b> For example, you could monitor share **C$** on domain controllers.
 
 - Monitor this event if the **Network Information\\Source Address** is not from your internal IP range.
 

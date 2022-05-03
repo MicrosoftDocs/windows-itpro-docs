@@ -18,6 +18,9 @@ ms.date: 07/27/2017
 
 # Search your Enterprise Mode site list in the Enterprise Mode Site List Manager
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 **Applies to:**
 
 -   Windows 10
@@ -31,7 +34,7 @@ You can search to see if a specific site already appears in your global Enterpri
  **To search your compatibility list**
 
 - From the Enterprise Mode Site List Manager, type part of the URL into the **Search** box.<p>
-  The search query searches all of the text. For example, entering *“micro”* will return results like, www.microsoft.com, microsoft.com, and microsoft.com/images. Wildcard characters aren’t supported.
+  The search query searches all of the text. For example, entering *“micro”* will return results like, `www.microsoft.com`, `microsoft.com`, and `microsoft.com/images`. Wildcard characters aren’t supported.
 
 ## Related topics
 - [Download the Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853)

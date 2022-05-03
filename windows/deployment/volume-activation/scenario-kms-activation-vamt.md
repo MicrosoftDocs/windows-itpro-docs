@@ -1,15 +1,16 @@
 ---
 title: Scenario 3 KMS Client Activation (Windows 10)
-description: Scenario 3 KMS Client Activation
+description: Learn how to use the Volume Activation Management Tool (VAMT) to activate Key Management Service (KMS) client keys or Generic Volume License Keys (GVLKs).
 ms.assetid: 72b04e8f-cd35-490c-91ab-27ea799b05d0
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: aczechowski
 ms.date: 04/25/2017
 ms.topic: article
 ---

@@ -1,23 +1,20 @@
 ---
 title: 5142(S) A network share object was added. (Windows 10)
-description: Describes security event 5142(S) A network share object was added.
+description: Describes security event 5142(S) A network share object was added. This event is generated when a network share object is added.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: windows-sec
 ---
 
 # 5142(S): A network share object was added.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-5142.png" alt="Event 5142 illustration" width="449" height="406" hspace="10" align="left" />
@@ -86,7 +83,7 @@ This event generates every time network share object was added.
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -104,7 +101,7 @@ For 5142(S): A network share object was added.
 
 > **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
-- If you have high-value computers for which you need to monitor creation of new file shares, monitor this event<strong>.</strong> For example, you could monitor domain controllers.
+- If you have high-value computers for which you need to monitor creation of new file shares, monitor this event<b>.</b> For example, you could monitor domain controllers.
 
 - We recommend checking “**Share Path**”, because it should not point to system directories, such as **C:\\Windows** or **C:\\**, or to critical local folders which contain private or high value information.
 

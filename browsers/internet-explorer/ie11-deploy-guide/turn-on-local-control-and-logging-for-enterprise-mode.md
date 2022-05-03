@@ -18,6 +18,9 @@ ms.date: 07/27/2017
 
 # Turn on local control and logging for Enterprise Mode
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 **Applies to:**
 
 -   Windows 10
@@ -34,7 +37,7 @@ Besides turning on this feature, you also have the option to provide a URL for E
 
 1. Open your Group Policy editor and go to the **Administrative Templates\\Windows Components\\Internet Explorer\\Let users turn on and use Enterprise Mode from the Tools menu** setting.
 
-   ![group policy editor with emie setting](images/ie-emie-editpolicy.png)
+   ![group policy editor with emie setting.](images/ie-emie-editpolicy.png)
 
 2. Click **Enabled**, and then in the **Options** area, type the location for where to receive reports about when your employees use this functionality to turn Enterprise Mode on or off from the **Tools** menu.
 
@@ -46,7 +49,7 @@ Besides turning on this feature, you also have the option to provide a URL for E
 
 5. Right-click the **Enable** key, click **Modify**, and then type a **Value data** to point to a server that you can listen to for updates.
 
-   ![edit registry string for data collection location](images/ie-emie-editregistrystring.png)
+   ![edit registry string for data collection location.](images/ie-emie-editregistrystring.png)
 
 Your **Value data** location can be any of the following types:
 

@@ -1,18 +1,20 @@
 ---
 title: Deploy Windows 10 with Microsoft 365
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
-description: Concepts about deploying Windows 10 for M365
+manager: dougeby
+ms.author: aaroncz
+description: Learn about deploying Windows 10 with Microsoft 365 and how to use a free 90-day trial account to review some of the benefits of Microsoft 365.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 keywords: deployment, automate, tools, configure, mdt, sccm, M365
 ms.localizationpriority: medium
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: aczechowski
 ms.topic: article
 ms.collection: M365-modern-desktop
+ms.custom: seo-marvel-apr2020
 ---
 
 # Deploy Windows 10 with Microsoft 365
@@ -23,15 +25,15 @@ ms.collection: M365-modern-desktop
 
 This topic provides a brief overview of Microsoft 365 and describes how to use a free 90-day trial account to review some of the benefits of Microsoft 365.
 
-[Microsoft 365](https://www.microsoft.com/microsoft-365) is a new offering from Microsoft that combines [Windows 10](https://www.microsoft.com/windows/features) with [Office 365](https://products.office.com/business/explore-office-365-for-business), and [Enterprise Mobility and Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) (EMS). See the [M365 Enterprise poster](#m365-enterprise-poster) for an overview.
+[Microsoft 365](https://www.microsoft.com/microsoft-365) is a new offering from Microsoft that combines [Windows 10](https://www.microsoft.com/windows/features) with [Office 365](https://www.microsoft.com/microsoft-365/office-365), and [Enterprise Mobility and Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) (EMS). See the [M365 Enterprise poster](#m365-enterprise-poster) for an overview.
 
 For Windows 10 deployment, Microsoft 365 includes a fantastic deployment advisor that can walk you through the entire process of deploying Windows 10. The wizard supports multiple Windows 10 deployment methods, including:
 
 - Windows Autopilot
 - In-place upgrade
 - Deploying Windows 10 upgrade with Intune
-- Deploying Windows 10 upgrade with System Center Configuration Manager
-- Deploying a computer refresh with System Center Configuration Manager
+- Deploying Windows 10 upgrade with Microsoft Endpoint Configuration Manager
+- Deploying a computer refresh with Microsoft Endpoint Configuration Manager
 
 ## Free trial account
 
@@ -48,9 +50,9 @@ You can check out the Microsoft 365 deployment advisor and other resources for f
 >[!NOTE]
 >If you have not run a setup guide before, you will see the **Prepare your environment** guide first. This is to make sure you have basics covered like domain verification and a method for adding users. At the end of the "Prepare your environment" guide, there will be a **Ready to continue** button that sends you to the original guide that was selected.
 
-1. [Obtain a free M365 trial](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365).
-2. Check out the [Microsoft 365 deployment advisor](https://portal.office.com/onboarding/Microsoft365DeploymentAdvisor#/).
-3. Also check out the [Windows Analytics deployment advisor](https://portal.office.com/onboarding/WindowsAnalyticsDeploymentAdvisor#/). This advisor will walk you through deploying [Upgrade Readiness](https://docs.microsoft.com/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness), [Update Compliance](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor), and [Device Health](https://docs.microsoft.com/windows/deployment/update/device-health-monitor). 
+1. [Obtain a free M365 trial](/office365/admin/try-or-buy-microsoft-365).
+2. Check out the [Microsoft 365 deployment advisor](https://aka.ms/microsoft365setupguide).
+3. Also check out the [Windows Analytics deployment advisor](/mem/configmgr/desktop-analytics/overview). This advisor will walk you through deploying [Desktop Analytics](/mem/configmgr/desktop-analytics/overview). 
 
 That's all there is to it! 
 
@@ -60,19 +62,16 @@ Examples of these two deployment advisors are shown below.
 - [Windows Analytics deployment advisor example](#windows-analytics-deployment-advisor-example)
 
 ## Microsoft 365 deployment advisor example
-![Microsoft 365 deployment advisor](images/m365da.png)
+![Microsoft 365 deployment advisor.](images/m365da.png)
 
 ## Windows Analytics deployment advisor example
 
 
 ## M365 Enterprise poster
 
-[![M365 Enterprise poster](images/m365e.png)](https://aka.ms/m365eposter)
+[![M365 Enterprise poster.](images/m365e.png)](https://aka.ms/m365eposter)
 
 ## Related Topics
 
 [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)<br>
-[Modern Desktop Deployment Center](https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home)
-
-
-
+[Modern Desktop Deployment Center](/microsoft-365/enterprise/desktop-deployment-center-home)

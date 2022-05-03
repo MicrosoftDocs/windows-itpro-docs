@@ -1,10 +1,10 @@
 ---
 title: SMBv1 Microsoft network client Digitally sign communications (if server agrees) (Windows 10)
-description: For SMBv1 only, describes the best practices, location, values, and security considerations for the Microsoft network client Digitally sign communications (if server agrees) security policy setting.
+description: Best practices, location, values, and security considerations for the policy setting, Microsoft network client Digitally sign communications (if server agrees).
 ms.assetid: e553f700-aae5-425c-8650-f251c90ba5dd
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 01/04/2019
+ms.technology: windows-sec
 ---
 # SMBv1 Microsoft network client: Digitally sign communications (if server agrees)
 
 **Applies to**
 -   Windows 10
 
-This topic is about the Server Message Block (SMB) v1 protocol. SMBv1 is not secure and has been deprecated in Windows. Beginning with Windows 10 Fall Creators Update and Windows Server, version 1709, [SMBv1 is not installed by default](https://support.microsoft.com/help/4034314/smbv1-is-not-installed-by-default-in-windows). 
+This topic is about the Server Message Block (SMB) v1 protocol. SMBv1 is not secure and has been deprecated in Windows. Beginning with Windows 10 Fall Creators Update and Windows Server, version 1709, [SMBv1 is not installed by default](/windows-server/storage/file-server/troubleshoot/smbv1-not-installed-by-default-in-windows). 
 
 The rest of this topic describes the best practices, location, values, and security considerations for the **Microsoft network client: Digitally sign communications (if server agrees)** security policy setting only for SMBv1. The same policy setting can be applied to computers that run SMBv2. For more information, see [Microsoft network client: Digitally sign communications (if server agrees)](microsoft-network-client-digitally-sign-communications-always.md).
 
@@ -51,14 +52,14 @@ There are three other policy settings that relate to packet-signing requirements
 
 ### Best practices
 
-1.  Configure the following security policy settings as follows:
+ - Configure the following security policy settings as follows:
 
     -   Disable [Microsoft network client: Digitally sign communications (always)](smbv1-microsoft-network-client-digitally-sign-communications-always.md).
     -   Disable [Microsoft network server: Digitally sign communications (always)](smbv1-microsoft-network-server-digitally-sign-communications-always.md).
     -   Enable **Microsoft Network Client: Digitally Sign Communications (If Server Agrees)**.
     -   Enable [Microsoft network server: Digitally sign communications (if client agrees)](smbv1-microsoft-network-server-digitally-sign-communications-if-client-agrees.md).
 
-2.  Alternately, you can set all of these policy settings to Enabled, but enabling them can cause slower performance on client devices and prevent them from communicating with legacy SMB applications and operating systems.
+ - Alternately, you can set all of these policy settings to Enabled, but enabling them can cause slower performance on client devices and prevent them from communicating with legacy SMB applications and operating systems.
 
 ### Location
 
@@ -107,7 +108,8 @@ Configure the settings as follows:
 
 In highly secure environments we recommend that you configure all of these settings to Enabled. However, that configuration may cause slower performance on client devices and prevent communications with earlier SMB applications and operating systems.
 
->**Note:**  An alternative countermeasure that could protect all network traffic is to implement digital signatures with IPsec. There are hardware-based accelerators for IPsec encryption and signing that could be used to minimize the performance impact on the servers' CPUs. No such accelerators are available for SMB signing.
+> [!NOTE]
+> An alternative countermeasure that could protect all network traffic is to implement digital signatures with IPsec. There are hardware-based accelerators for IPsec encryption and signing that could be used to minimize the performance impact on the servers' CPUs. No such accelerators are available for SMB signing.
  
 ### Potential impact
 

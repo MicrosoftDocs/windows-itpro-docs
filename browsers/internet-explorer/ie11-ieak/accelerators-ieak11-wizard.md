@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the Accelerators page in the IEAK 11 Wizard
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 The **Accelerators** page of the Internet Explorer Administration Kit (IEAK 11) Customization Wizard lets you add accelerators to your employee computers. Accelerators are contextual menu options that can quickly get to a web service from any webpage. For example, an accelerator can look up a highlighted word in the dictionary or a selected location on a map.
 
 **Note**<br>

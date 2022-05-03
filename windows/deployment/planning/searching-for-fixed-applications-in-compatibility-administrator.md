@@ -1,16 +1,16 @@
 ---
 title: Searching for Fixed Applications in Compatibility Administrator (Windows 10)
-description: With the search functionality in Compatibility Administrator, you can locate specific executable (.exe) files with previously applied compatibility fixes, compatibility modes, or AppHelp messages.
+description: Compatibility Administrator can locate specific executable (.exe) files with previously applied compatibility fixes, compatibility modes, or AppHelp messages.
 ms.assetid: 1051a2dc-0362-43a4-8ae8-07dae39b1cb8
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.date: 04/19/2017
 ms.topic: article
 ---

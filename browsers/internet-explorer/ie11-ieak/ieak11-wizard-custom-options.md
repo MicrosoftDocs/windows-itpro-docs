@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Internet Explorer Administration Kit 11 (IEAK 11) Customization Wizard options
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Use the Internet Explorer Administration Kit 11 (IEAK 11) and the Internet Explorer Customization Wizard 11 to customize your browser install packages for deployment to your employee's devices.
 
 ## IE Customization Wizard 11 options

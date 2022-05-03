@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Internet Explorer Setup command-line options and return codes
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 You can use command-line options along with a tool like IExpress to package your custom version of Internet Explorer and to perform a batch installation across your organization.
 
 ## IE Setup command-line options

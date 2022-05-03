@@ -7,7 +7,8 @@ author: dansimp
 ms.prod: ie11
 ms.assetid: 2b390786-f786-41cc-bddc-c55c8a4c5af3
 ms.reviewer: 
-audience: itpromanager: dansimp
+audience: itpro
+manager: dansimp
 ms.author: dansimp
 title: Administrative templates and Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
@@ -16,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # Administrative templates and Internet Explorer 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 
 Administrative Templates are made up of a hierarchy of policy categories and subcategories that define how your policy settings appear in the Local Group Policy Editor, including:
 
@@ -27,7 +31,7 @@ Administrative Templates are made up of a hierarchy of policy categories and sub
 
 -   Text explanations about each setting and the supported version of Internet Explorer.
 
-For a conceptual overview of Administrative Templates, see [Managing Group Policy ADMX Files Step-by-Step Guide](https://go.microsoft.com/fwlink/p/?LinkId=214519).
+For a conceptual overview of Administrative Templates, see [Managing Group Policy ADMX Files Step-by-Step Guide](/previous-versions/windows/it-pro/windows-vista/cc709647(v=ws.10)).
 
 ## What are Administrative Templates?
 Administrative Templates are XML-based, multi-language files that define the registry-based Group Policy settings in the Local Group Policy Editor. There are two types of Administrative Templates:
@@ -38,7 +42,7 @@ Administrative Templates are XML-based, multi-language files that define the reg
 
 ## How do I store Administrative Templates?
 As an admin, you can create a central store folder on your SYSVOL directory, named **PolicyDefinitions**. For example, %*SystemRoot*%\\PolicyDefinitions. This folder provides a single, centralized storage location for your Administrative Templates (both ADMX and ADML) files, so they can be used by your domain-based Group Policy Objects (GPOs).
-<p><strong>Important</strong><br>Your Group Policy tools use the ADMX files in your store, ignoring any local copies. For more information about creating a central store, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=276810" data-raw-source="[Scenario 1: Editing the Local GPO Using ADMX Files](https://go.microsoft.com/fwlink/p/?LinkId=276810)">Scenario 1: Editing the Local GPO Using ADMX Files</a>.
+<p><strong>Important</strong><br>Your Group Policy tools use the ADMX files in your store, ignoring any local copies. For more information about creating a central store, see <a href="/previous-versions/windows/it-pro/windows-vista/cc722018(v=ws.10)" data-raw-source="[Scenario 1: Editing the Local GPO Using ADMX Files](/previous-versions/windows/it-pro/windows-vista/cc722018(v=ws.10))">Scenario 1: Editing the Local GPO Using ADMX Files</a>.
 
 ## Administrative Templates-related Group Policy settings
 When you install Internet Explorer 11, it updates the local administrative files, Inetres.admx and Inetres.adml, both located in the **PolicyDefinitions** folder.
@@ -72,9 +76,9 @@ IE11 provides these new policy settings, which are editable in the Local Group P
 ## Editing Group Policy settings
 Regardless which tool you're using to edit your Group Policy settings, you'll need to follow one of these guides for step-by-step editing instructions:
 
--   **If you're using the Group Policy Management Console (GPMC) or the Local Group Policy Editor.** See [Edit Administrative Template Policy Settings](https://go.microsoft.com/fwlink/p/?LinkId=214521) for step-by-step instructions about editing your Administrative Templates.
+-   **If you're using the Group Policy Management Console (GPMC) or the Local Group Policy Editor.** See [Edit Administrative Template Policy Settings](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771479(v=ws.11)) for step-by-step instructions about editing your Administrative Templates.
 
--   **If you're using GPMC with Advanced Group Policy Management (AGPM).** See [Checklist: Create, Edit, and Deploy a GPO](https://go.microsoft.com/fwlink/p/?LinkId=214522) for step-by-step instructions about how to check out a GPO from the AGPM archive, edit it, and request deployment.
+-   **If you're using GPMC with Advanced Group Policy Management (AGPM).** See [Checklist: Create, Edit, and Deploy a GPO](/microsoft-desktop-optimization-pack/agpm/checklist-create-edit-and-deploy-a-gpo-agpm40) for step-by-step instructions about how to check out a GPO from the AGPM archive, edit it, and request deployment.
 
 ## Related topics
 - [Administrative templates (.admx) for Windows 10 April 2018 Update](https://www.microsoft.com/download/details.aspx?id=56880)

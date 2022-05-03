@@ -2,22 +2,19 @@
 title: 5057(F) A cryptographic primitive operation failed. (Windows 10)
 description: Describes security event 5057(F) A cryptographic primitive operation failed.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: windows-sec
 ---
 
 # 5057(F): A cryptographic primitive operation failed.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 This event generates in case of CNG primitive operation failure.
@@ -28,9 +25,7 @@ For more information about Cryptographic Next Generation (CNG) visit these pages
 
 -   <https://msdn.microsoft.com/library/windows/desktop/bb204775(v=vs.85).aspx>
 
--   <http://www.microsoft.com/en-us/download/details.aspx?id=1251>
-
--   <http://www.microsoft.com/en-us/download/details.aspx?id=30688>
+-   <https://www.microsoft.com/download/details.aspx?id=30688>
 
 This event is mainly used for Cryptographic Next Generation (CNG) troubleshooting.
 

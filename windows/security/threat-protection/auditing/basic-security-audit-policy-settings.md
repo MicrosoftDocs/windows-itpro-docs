@@ -4,7 +4,7 @@ description: Basic security audit policy settings are found under Computer Confi
 ms.assetid: 31C2C453-2CFC-4D9E-BC88-8CE1C1A8F900
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 09/06/2021
+ms.technology: windows-sec
 ---
 
 # Basic security audit policy settings
 
-**Applies to**
--   Windows 10
 
 Basic security audit policy settings are found under Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Audit Policy.
 

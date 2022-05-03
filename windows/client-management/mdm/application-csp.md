@@ -1,6 +1,6 @@
 ---
 title: APPLICATION configuration service provider
-description: APPLICATION configuration service provider
+description: Learn how the APPLICATION configuration service provider is used to configure an application transport using Open Mobile Alliance (OMA) Client Provisioning.
 ms.assetid: 0705b5e9-a1e7-4d70-a73d-7f758ffd8099
 ms.reviewer: 
 manager: dansimp
@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: lomayor
+author: dansimp
 ms.date: 06/26/2017
 ---
 

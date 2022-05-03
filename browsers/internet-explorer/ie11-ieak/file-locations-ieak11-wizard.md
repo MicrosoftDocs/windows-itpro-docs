@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the File Locations page in the IEAK 11 Wizard
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 The **File Locations** page of the Internet Explorer Customization Wizard 11 lets you change the location of your folders, including:
 
 -   Where you’ll create and store your custom installation package.

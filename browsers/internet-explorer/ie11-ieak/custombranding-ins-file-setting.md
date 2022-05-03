@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the CustomBranding .INS file to create custom branding and setup info
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Provide the URL to your branding cabinet (.cab) file.
 
 

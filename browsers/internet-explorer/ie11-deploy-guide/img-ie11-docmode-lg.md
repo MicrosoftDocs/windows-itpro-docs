@@ -9,9 +9,12 @@ manager: dansimp
 ms.author: dansimp
 ---
 
-Return to: [Deprecated document modes and Internet Explorer 11](deprecated-document-modes.md)<br>
+# Full-sized flowchart detailing how document modes are chosen in IE11
 
-<p style="overflow: auto;">
-	<img src="images/docmode-decisions-lg.png" alt="Full-sized flowchart detailing how document modes are chosen in IE11" width="1355" height="1625" style="max-width:none;">
-</p>
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
+Return to: [Deprecated document modes and Internet Explorer 11](deprecated-document-modes.md)
+
+:::image type="content" source="images/docmode-decisions-lg.png" alt-text="Full-sized flowchart detailing how document modes are chosen in IE11" lightbox="images/docmode-decisions-lg.png":::
 

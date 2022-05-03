@@ -2,22 +2,19 @@
 title: 4928(S, F) An Active Directory replica source naming context was established. (Windows 10)
 description: Describes security event 4928(S, F) An Active Directory replica source naming context was established.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: windows-sec
 ---
 
 # 4928(S, F): An Active Directory replica source naming context was established.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-4928.png" alt="Event 4928 illustration" width="449" height="419" hspace="10" align="left" />
@@ -96,7 +93,7 @@ Failure event generates if an error occurs (**Status Code** != 0).
 
 > **Note**&nbsp;&nbsp;The Directory Tree of Active Directory tree is partitioned to allow sections to be distributed (replicated) to domain controllers in different domains within the forest. Each domain controller stores a copy of a specific part of the directory tree, called a **Naming Context** also known as Directory Partition. **Naming Context** is replicated as a unit to other domain controllers in the forest that contain a replica of the same sub tree. A **Naming Context** is also called a Directory Partition.
 
--   **Options** \[Type = UInt32\]: decimal value of [DRS Options](https://msdn.microsoft.com/library/cc228477.aspx).
+-   **Options** \[Type = UInt32\]: decimal value of [DRS Options](/openspecs/windows_protocols/ms-drsr/ac9c8a11-cd46-4080-acbf-9faa86344030).
 
     <img src="images/ad-sites-and-services.png" alt="Directory Replication Service options in AD Sites and Services" width="890" height="529" />
 
@@ -109,4 +106,3 @@ For 4928(S, F): An Active Directory replica source naming context was establishe
 -   Monitor for **Source Address** field, because the source of new replication (new DRA) must be authorized for this action. If you find any unauthorized DRA you should trigger an event.
 
 -   This event is typically used for Active Directory replication troubleshooting.
-

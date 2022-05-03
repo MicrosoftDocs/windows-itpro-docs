@@ -1,24 +1,21 @@
 ---
 title: Audit Other Policy Change Events (Windows 10)
-description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Other Policy Change Events, which determines whether the operating system generates audit events for security policy changes that are not otherwise audited in the Policy Change category.
+description: The policy setting, Audit Other Policy Change Events, determines if audit events are generated for security policy changes that are not otherwise audited.
 ms.assetid: 8618502e-c21c-41cc-8a49-3dc1eb359e60
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/06/2021
+ms.technology: windows-sec
 ---
 
 # Audit Other Policy Change Events
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 Audit Other Policy Change Events contains events about EFS Data Recovery Agent policy changes, changes in Windows Filtering Platform filter, status on Security policy settings updates for local Group Policy settings, Central Access Policy changes, and detailed troubleshooting events for Cryptographic Next Generation (CNG) operations.

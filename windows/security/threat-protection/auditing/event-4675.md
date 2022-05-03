@@ -1,23 +1,20 @@
 ---
 title: 4675(S) SIDs were filtered. (Windows 10)
-description: Describes security event 4675(S) SIDs were filtered.
+description: Describes security event 4675(S) SIDs were filtered. This event is generated when SIDs were filtered for a specific Active Directory trust.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/07/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: windows-sec
 ---
 
 # 4675(S): SIDs were filtered.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 This event generates when SIDs were filtered for specific Active Directory trust.

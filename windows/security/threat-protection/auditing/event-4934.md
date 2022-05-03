@@ -2,22 +2,19 @@
 title: 4934(S) Attributes of an Active Directory object were replicated. (Windows 10)
 description: Describes security event 4934(S) Attributes of an Active Directory object were replicated.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: windows-sec
 ---
 
 # 4934(S): Attributes of an Active Directory object were replicated.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 This event generates when attributes of an Active Directory object were replicated.

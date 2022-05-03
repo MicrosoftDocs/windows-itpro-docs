@@ -1,17 +1,14 @@
 ---
 title: Get started with Windows Update 
-description: Learn how Windows Update works, including architecture and troubleshooting
+description: An overview of learning resources for Windows Update, including documents on architecture, log files, and common errors.
 ms.prod: w10
 ms.mktglfcycl: 
 audience: itpro
-itproauthor: jaimeo
-author: jaimeo
-ms.localizationprioauthor: jaimeo
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.audience: itpro
-author: jaimeo
 ms.date: 09/18/2018
-ms.reviewer: 
-manager: laurawi
 ms.topic: article
 ---
 
@@ -19,7 +16,7 @@ ms.topic: article
 
 >Applies to: Windows 10
 
-With the release of Windows 10, we moved the update model to the Unified Update Platform. Unified Update Platform (UUP) is a single publishing, hosting, scan and download model for all types of OS updates, desktop and mobile for all Windows-based operating systems, for everything from monthly quality updates to new feature updates.  
+With the release of Windows 10, we moved the update model to the Unified Update Platform. Unified Update Platform (UUP) is a single publishing, hosting, scan and download model for all types of OS updates, client devices for all Windows-based operating systems, for everything from monthly quality updates to new feature updates.  
 
 Use the following information to get started with Windows Update:
 
@@ -29,11 +26,12 @@ Use the following information to get started with Windows Update:
 - Learn how to [troubleshoot Windows Update](windows-update-troubleshooting.md)
 - Review [common Windows Update errors](windows-update-errors.md) and check out the [error code reference](windows-update-error-reference.md)
 - Review [other resources](windows-update-resources.md) to help you use Windows Update
+- Review [Windows IT Pro Blog](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows10Blog) section of Microsoft Blogs.
 
 ## Unified Update Platform (UUP) architecture 
 To understand the changes to the Windows Update architecture that UUP introduces let's start with some new key terms. 
 
-![Windows Update terminology](images/update-terminology.png)
+![Windows Update terminology.](images/update-terminology.png)
 
 - **Update UI** – The user interface to initiate Windows Update check and history. Available under **Settings --> Update & Security --> Windows Update**. 
 - **Update Session Orchestrator (USO)**- A Windows OS component that orchestrates the sequence of downloading and installing various update types from Windows Update.  

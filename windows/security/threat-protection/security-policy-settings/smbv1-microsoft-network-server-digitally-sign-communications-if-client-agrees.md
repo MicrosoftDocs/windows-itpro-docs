@@ -1,10 +1,10 @@
 ---
 title: SMBv1 Microsoft network server Digitally sign communications (if client agrees) (Windows 10)
-description: For SMBv1 only, describes the best practices, location, values, policy management and security considerations for the Microsoft network server Digitally sign communications (if client agrees) security policy setting.
+description: Best practices, security considerations and more for the security policy setting, Microsoft network server Digitally sign communications (if client agrees).
 ms.assetid: c92b2e3d-1dbf-4337-a145-b17a585f4fc1
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 01/04/2019
+ms.technology: windows-sec
 ---
 
 # SMBv1 Microsoft network server: Digitally sign communications (if client agrees)
@@ -22,7 +23,7 @@ ms.date: 01/04/2019
 **Applies to**
 -   Windows 10
 
-This topic is about the Server Message Block (SMB) v1 protocol. SMBv1 is not secure and has been deprecated in Windows. Beginning with Windows 10 Fall Creators Update and Windows Server, version 1709, [SMBv1 is not installed by default](https://support.microsoft.com/help/4034314/smbv1-is-not-installed-by-default-in-windows). 
+This topic is about the Server Message Block (SMB) v1 protocol. SMBv1 is not secure and has been deprecated in Windows. Beginning with Windows 10 Fall Creators Update and Windows Server, version 1709, [SMBv1 is not installed by default](/windows-server/storage/file-server/troubleshoot/smbv1-not-installed-by-default-in-windows). 
 
 The rest of this topic describes the best practices, location, values, policy management and security considerations for the **Microsoft network server: Digitally sign communications (if client agrees)** security policy setting only for SMBv1. The same policy setting can be applied to computers that run SMBv2. For more information, see [Microsoft network server: Digitally sign communications (if client agrees)](microsoft-network-server-digitally-sign-communications-always.md).
 

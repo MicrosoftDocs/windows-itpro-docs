@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the Security and Privacy Settings page in the IEAK 11 Wizard
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 The **Security and Privacy Settings** page of the Internet Explorer Customization Wizard 11 lets you manage your security zones, privacy settings, and content ratings. These settings help restrict the types of content your employees can access from the Internet, including any content that might be considered offensive or otherwise inappropriate in a corporate setting.
 
 **To use the Security and Privacy Settings page**
