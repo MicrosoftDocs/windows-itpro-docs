@@ -3,14 +3,14 @@ title: Application Compatibility Toolkit (ACT) Technical Reference (Windows 10)
 description: The Microsoft Application Compatibility Toolkit (ACT) helps you see if the apps and devices in your org are compatible with different versions of Windows.
 ms.assetid: d90d38b2-2718-4481-90eb-4480719627ba
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ---
 

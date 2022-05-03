@@ -19,7 +19,7 @@ ms.date: 08/15/2018
 
 The WindowsLicensing configuration service provider is designed for licensing related management scenarios. Currently the scope is limited to edition upgrades of Windows 10 client devices, such as Windows 10 Pro to Windows 10 Enterprise. In addition, this CSP provides the capability to activate or change the product key of Windows 10 client devices.
 
-The following shows the WindowsLicensing configuration service provider in tree format.
+The following example shows the WindowsLicensing configuration service provider in tree format.
 
 ```console
 ./Vendor/MSFT
@@ -41,7 +41,7 @@ WindowsLicensing
 --------Status (Added in Windows 10, version 1809)
 ```
 <a href="" id="--device-vendor-msft-windowslicensing"></a>**./Device/Vendor/MSFT/WindowsLicensing**  
-This is the root node for the WindowsLicensing configuration service provider.
+This node is the root node for the WindowsLicensing configuration service provider.
 
 The supported operation is Get.
 
@@ -70,7 +70,7 @@ If a product key is entered in a provisioning package and the user begins instal
 
 After the device restarts, the edition upgrade process completes. The user will receive a notification of the successful upgrade.
 
-This node can also be used to activate or change a product key on a particular edition of Windows 10 desktop device by entering a product key. Activation or changing a product key does not require a reboot and is a silent process for the user.
+This node can also be used to activate or change a product key on a particular edition of Windows 10 desktop device by entering a product key. Activation or changing a product key doesn't require a reboot and is a silent process for the user.
 
 > [!IMPORTANT]
 > The product key entered must be 29 characters (that is, it should include dashes), otherwise the activation, edition upgrade, or product key change on Windows 10 desktop devices will fail. The product key is acquired from Microsoft Volume Licensing Service Center. Your organization must have a Volume Licensing contract with Microsoft to access the portal.
@@ -117,7 +117,7 @@ The supported operation is Get.
 Provides a license for an edition upgrade of Windows 10 devices.
 
 > [!NOTE]
-> This upgrade process does not require a system restart. 
+> This upgrade process doesn't require a system restart. 
 
 The date type is XML.
 
@@ -152,7 +152,7 @@ The data type is a chr.
 The supported operation is Exec.
 
 <a href="" id="changeproductkey"></a>**ChangeProductKey**  
-Added in Windows 10, version 1703. Installs a product key for Windows 10 desktop devices. Does not reboot.
+Added in Windows 10, version 1703. Installs a product key for Windows 10 desktop devices. Doesn't reboot.
 
 The data type is a chr.
 
@@ -191,7 +191,7 @@ Supported values:
 -  1 - User Blocked: The admin has blocked the user from switching their device out of S mode. Only the admin can switch the device out of S mode through the SMode/SwitchFromSMode node.
 
 <a href="" id="smode-switchfromsmode"></a>**SMode/SwitchFromSMode**  
-Added in Windows 10, version 1809. Switches a device out of S mode if possible. Does not reboot. For an example, see [Execute SwitchFromSMode](#smode-switchfromsmode-execute)
+Added in Windows 10, version 1809. Switches a device out of S mode if possible. Doesn't reboot. For an example, see [Execute SwitchFromSMode](#smode-switchfromsmode-execute)
 
 Supported operation is Execute.
 

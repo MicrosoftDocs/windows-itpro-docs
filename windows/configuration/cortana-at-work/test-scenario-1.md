@@ -4,12 +4,12 @@ description: A test scenario about how to sign in with your work or school accou
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.date: 10/05/2017
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # Test scenario 1 – Sign in with your work or school account and use Cortana to manage the notebook

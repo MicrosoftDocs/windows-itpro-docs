@@ -1,7 +1,7 @@
 ---
 title: Upgrade error codes - Windows IT Pro
 manager: dougeby
-ms.author: greglin
+ms.author: aaroncz
 description: Understand the error codes that may come up if something goes wrong during the Windows 10 upgrade process.
 keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, ITPro
 ms.prod: w10
@@ -9,7 +9,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
 ms.topic: article
 ms.collection: highpri
