@@ -4,12 +4,12 @@ description: Suggested testing scenarios that you can use to test Cortana in you
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.date: 06/28/2021
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # Cortana at work testing scenarios

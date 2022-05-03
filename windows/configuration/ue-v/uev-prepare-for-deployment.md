@@ -1,15 +1,15 @@
 ---
 title: Prepare a UE-V Deployment
 description: Learn about the types of User Experience Virtualization (UE-V) deployment you can execute and what preparations you can make beforehand to be successful.
-author: greg-lindsay
+author: aczechowski
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
 
@@ -313,7 +313,7 @@ The UE-V settings storage location and settings template catalog support storing
 
 -   The share can use Distributed File System (DFS) replication, but Distributed File System Replication (DFSR) is specifically not supported. Distributed File System Namespaces (DFSN) are supported. For detailed information, see:
 
-    - [Information about roaming profiles from the Directory Services team](https://blogs.technet.microsoft.com/askds/tag/roaming-profiles/)
+    - [Deploying Roaming User Profiles](/windows-server/storage/folder-redirection/deploy-roaming-user-profiles)
     
     - [Information about Microsoft support policy for a DFS-R and DFS-N deployment scenario](/troubleshoot/windows-server/networking/support-policy-for-dfsr-dfsn-deployment)
 

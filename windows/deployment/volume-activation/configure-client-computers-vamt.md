@@ -3,9 +3,9 @@ title: Configure Client Computers (Windows 10)
 description: Learn how to configure client computers to enable the Volume Activation Management Tool (VAMT) to function correctly.
 ms.assetid: a48176c9-b05c-4dd5-a9ef-83073e2370fc
 ms.reviewer: 
-manager: laurawi
-author: greg-lindsay
-ms.author: greglin
+manager: dougeby
+author: aczechowski
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -1,15 +1,15 @@
 ---
 title: Technical Reference for App-V (Windows 10/11)
 description: Learn strategy and context for many performance optimization practices in this technical reference for Application Virtualization (App-V).
-author: greg-lindsay
+author: aczechowski
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ---
 
 
@@ -24,21 +24,21 @@ This section provides reference information related to managing App-V.
 
 -   [Performance Guidance for Application Virtualization](appv-performance-guidance.md)
 
-    Provides strategy and context for many performance optimizations. Not all practices will be applicable. However, these are tested and supported. Using all suggested practices that are applicable to your organization will provide the optimal end-user experience.
+    Provides strategy and context for many performance optimizations. Not all practices will be applicable. However, these practices are tested and supported. Using all suggested practices that are applicable to your organization will provide the optimal end-user experience.
 
 -   [Application Publishing and Client Interaction](appv-application-publishing-and-client-interaction.md)
 
 Describes how the following App-V client operations affect the local operating system:
 
 - App-V files and data storage locations
-- package registry
-- package store behavior
-- roaming registry and data
-- client application lifecycle management
-- integration of App-V packages
-- dynamic configuration
-- side-by-side assemblies
-- client logging
+- Package registry
+- Package store behavior
+- Roaming registry and data
+- Client application lifecycle management
+- Integration of App-V packages
+- Dynamic configuration
+- Side-by-side assemblies
+- Client logging
 
 -   [Viewing App-V Server Publishing Metadata](appv-viewing-appv-server-publishing-metadata.md)
 
