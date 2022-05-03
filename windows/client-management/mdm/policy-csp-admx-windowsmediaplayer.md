@@ -130,13 +130,13 @@ If you enable this policy setting, select one of the following proxy types:
 
 If the Custom proxy type is selected, the rest of the options on the Setting tab must be specified because no default settings are used for the proxy. The options are ignored if Autodetect or Browser is selected.
 
-The Configure button on the Network tab in the Player is not available for the HTTP protocol and the proxy cannot be configured. If the "Hide network tab" policy setting is also enabled, the entire Network tab is hidden.
+The Configure button on the Network tab in the Player isn't available for the HTTP protocol and the proxy can't be configured. If the "Hide network tab" policy setting is also enabled, the entire Network tab is hidden.
 
-This policy is ignored if the "Streaming media protocols" policy setting is enabled and HTTP is not selected.
+This policy is ignored if the "Streaming media protocols" policy setting is enabled and HTTP isn't selected.
 
-If you disable this policy setting, the HTTP proxy server cannot be used and the user cannot configure the HTTP proxy.
+If you disable this policy setting, the HTTP proxy server can't be used and the user can't configure the HTTP proxy.
 
-If you do not configure this policy setting, users can configure the HTTP proxy settings.
+If you don't configure this policy setting, users can configure the HTTP proxy settings.
 
 <!--/Description-->
 
@@ -187,13 +187,13 @@ If you enable this policy setting, select one of the following proxy types:
 
 If the Custom proxy type is selected, the rest of the options on the Setting tab must be specified; otherwise, the default settings are used. The options are ignored if Autodetect is selected.
 
-The Configure button on the Network tab in the Player is not available and the protocol cannot be configured. If the "Hide network tab" policy setting is also enabled, the entire Network tab is hidden.
+The Configure button on the Network tab in the Player isn't available and the protocol can't be configured. If the "Hide network tab" policy setting is also enabled, the entire Network tab is hidden.
 
-This policy setting is ignored if the "Streaming media protocols" policy setting is enabled and Multicast is not selected.
+This policy setting is ignored if the "Streaming media protocols" policy setting is enabled and Multicast isn't selected.
 
-If you disable this policy setting, the MMS proxy server cannot be used and users cannot configure the MMS proxy settings.
+If you disable this policy setting, the MMS proxy server can't be used and users can't configure the MMS proxy settings.
 
-If you do not configure this policy setting, users can configure the MMS proxy settings.
+If you don't configure this policy setting, users can configure the MMS proxy settings.
 
 <!--/Description-->
 
@@ -244,11 +244,11 @@ If you enable this policy setting, select one of the following proxy types:
 
 If the Custom proxy type is selected, the rest of the options on the Setting tab must be specified; otherwise, the default settings are used. The options are ignored if Autodetect is selected.
 
-The Configure button on the Network tab in the Player is not available and the protocol cannot be configured. If the "Hide network tab" policy setting is also enabled, the entire Network tab is hidden.
+The Configure button on the Network tab in the Player isn't available and the protocol can't be configured. If the "Hide network tab" policy setting is also enabled, the entire Network tab is hidden.
 
-If you disable this policy setting, the RTSP proxy server cannot be used and users cannot change the RTSP proxy settings.
+If you disable this policy setting, the RTSP proxy server can't be used and users can't change the RTSP proxy settings.
 
-If you do not configure this policy setting, users can configure the RTSP proxy settings.
+If you don't configure this policy setting, users can configure the RTSP proxy settings.
 
 <!--/Description-->
 
@@ -294,9 +294,9 @@ This policy setting allows you to turn off do not show first use dialog boxes.
 
 If you enable this policy setting, the Privacy Options and Installation Options dialog boxes are prevented from being displayed the first time a user starts Windows Media Player.
 
-This policy setting prevents the dialog boxes which allow users to select privacy, file types, and other desktop options from being displayed when the Player is first started. Some of the options can be configured by using other Windows Media Player group policies.
+This policy setting prevents the dialog boxes that allow users to select privacy, file types, and other desktop options from being displayed when the Player is first started. Some of the options can be configured by using other Windows Media Player group policies.
 
-If you disable or do not configure this policy setting, the dialog boxes are displayed when the user starts the Player for the first time.
+If you disable or don't configure this policy setting, the dialog boxes are displayed when the user starts the Player for the first time.
 
 <!--/Description-->
 
@@ -342,7 +342,7 @@ This policy setting allows you to hide the Network tab.
 
 If you enable this policy setting, the Network tab in Windows Media Player is hidden. The default network settings are used unless the user has previously defined network settings for the Player.
 
-If you disable or do not configure this policy setting, the Network tab appears and users can use it to configure network settings.
+If you disable or don't configure this policy setting, the Network tab appears and users can use it to configure network settings.
 
 <!--/Description-->
 
@@ -386,11 +386,11 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to prevent the anchor window from being displayed when Windows Media Player is in skin mode.
 
-If you enable this policy setting, the anchor window is hidden when the Player is in skin mode. In addition, the option on the Player tab in the Player that enables users to choose whether the anchor window displays is not available.
+If you enable this policy setting, the anchor window is hidden when the Player is in skin mode. In addition, the option on the Player tab in the Player that enables users to choose whether the anchor window displays isn't available.
 
-If you disable or do not configure this policy setting, users can show or hide the anchor window when the Player is in skin mode by using the Player tab in the Player.
+If you disable or don't configure this policy setting, users can show or hide the anchor window when the Player is in skin mode by using the Player tab in the Player.
 
-If you do not configure this policy setting, and the "Set and lock skin" policy setting is enabled, some options in the anchor window are not available.
+If you don't configure this policy setting, and the "Set and lock skin" policy setting is enabled, some options in the anchor window aren't available.
 
 <!--/Description-->
 
@@ -434,11 +434,11 @@ ADMX Info:
 <!--Description-->
 This policy setting prevents the anchor window from being displayed when Windows Media Player is in skin mode.
 
-This policy hides the anchor window when the Player is in skin mode. In addition, the option on the Player tab in the Player that enables users to choose whether the anchor window displays is not available.
+This policy hides the anchor window when the Player is in skin mode. In addition, the option on the Player tab in the Player that enables users to choose whether the anchor window displays isn't available.
 
-When this policy is not configured or disabled, users can show or hide the anchor window when the Player is in skin mode by using the Player tab in the Player.
+When this policy isn't configured or disabled, users can show or hide the anchor window when the Player is in skin mode by using the Player tab in the Player.
 
-When this policy is not configured and the Set and Lock Skin policy is enabled, some options in the anchor window are not available.
+When this policy isn't configured and the Set and Lock Skin policy is enabled, some options in the anchor window aren't available.
 
 <!--/Description-->
 
@@ -482,11 +482,11 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to prevent video smoothing from occurring.
 
-If you enable this policy setting, video smoothing is prevented, which can improve video playback on computers with limited resources. In addition, the Use Video Smoothing check box in the Video Acceleration Settings dialog box in the Player is cleared and is not available.
+If you enable this policy setting, video smoothing is prevented, which can improve video playback on computers with limited resources. In addition, the Use Video Smoothing check box in the Video Acceleration Settings dialog box in the Player is cleared and isn't available.
 
-If you disable this policy setting, video smoothing occurs if necessary, and the Use Video Smoothing check box is selected and is not available.
+If you disable this policy setting, video smoothing occurs if necessary, and the Use Video Smoothing check box is selected and isn't available.
 
-If you do not configure this policy setting, video smoothing occurs if necessary. Users can change the setting for the Use Video Smoothing check box.
+If you don't configure this policy setting, video smoothing occurs if necessary. Users can change the setting for the Use Video Smoothing check box.
 
 Video smoothing is available only on the Windows XP Home Edition and Windows XP Professional operating systems.
 
@@ -532,11 +532,11 @@ ADMX Info:
 <!--Description-->
 This policy setting allows a screen saver to interrupt playback.
 
-If you enable this policy setting, a screen saver is displayed during playback of digital media according to the options selected on the Screen Saver tab in the Display Properties dialog box in Control Panel. The Allow screen saver during playback check box on the Player tab in the Player is selected and is not available.
+If you enable this policy setting, a screen saver is displayed during playback of digital media according to the options selected on the Screen Saver tab in the Display Properties dialog box in Control Panel. The Allow screen saver during playback check box on the Player tab in the Player is selected and isn't available.
 
-If you disable this policy setting, a screen saver does not interrupt playback even if users have selected a screen saver. The Allow screen saver during playback check box is cleared and is not available.
+If you disable this policy setting, a screen saver doesn't interrupt playback even if users have selected a screen saver. The Allow screen saver during playback check box is cleared and isn't available.
 
-If you do not configure this policy setting, users can change the setting for the Allow screen saver during playback check box.
+If you don't configure this policy setting, users can change the setting for the Allow screen saver during playback check box.
 
 <!--/Description-->
 
@@ -584,7 +584,7 @@ If you enable this policy setting, the "Update my music files (WMA and MP3 files
 
 The default privacy settings are used for the options on the Privacy tab unless the user changed the settings previously.
 
-If you disable or do not configure this policy setting, the Privacy tab is not hidden, and users can configure any privacy settings not configured by other polices.
+If you disable or don't configure this policy setting, the Privacy tab isn't hidden, and users can configure any privacy settings not configured by other policies.
 
 <!--/Description-->
 
@@ -630,7 +630,7 @@ This policy setting allows you to hide the Security tab in Windows Media Player.
 
 If you enable this policy setting, the default security settings for the options on the Security tab are used unless the user changed the settings previously. Users can still change security and zone settings by using Internet Explorer unless these settings have been hidden or disabled by Internet Explorer policies.
 
-If you disable or do not configure this policy setting, users can configure the security settings on the Security tab.
+If you disable or don't configure this policy setting, users can configure the security settings on the Security tab.
 
 <!--/Description-->
 
@@ -674,14 +674,14 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to specify whether network buffering uses the default or a specified number of seconds.
 
-If you enable this policy setting, select one of the following options to specify the number of seconds streaming media is buffered before it is played.
+If you enable this policy setting, select one of the following options to specify the number of seconds streaming media is buffered before it's played.
 
 - Custom: the number of seconds, up to 60, that streaming media is buffered.
 - Default: default network buffering is used and the number of seconds that is specified is ignored.
 
-The "Use default buffering" and "Buffer" options on the Performance tab in the Player are not available.
+The "Use default buffering" and "Buffer" options on the Performance tab in the Player aren't available.
 
-If you disable or do not configure this policy setting, users can change the buffering options on the Performance tab.
+If you disable or don't configure this policy setting, users can change the buffering options on the Performance tab.
 
 <!--/Description-->
 
@@ -725,11 +725,11 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to prevent Windows Media Player from downloading codecs.
 
-If you enable this policy setting, the Player is prevented from automatically downloading codecs to your computer. In addition, the Download codecs automatically check box on the Player tab in the Player is not available.
+If you enable this policy setting, the Player is prevented from automatically downloading codecs to your computer. In addition, the Download codecs automatically check box on the Player tab in the Player isn't available.
 
-If you disable this policy setting, codecs are automatically downloaded and the Download codecs automatically check box is not available.
+If you disable this policy setting, codecs are automatically downloaded and the Download codecs automatically check box isn't available.
 
-If you do not configure this policy setting, users can change the setting for the Download codecs automatically check box.
+If you don't configure this policy setting, users can change the setting for the Download codecs automatically check box.
 
 <!--/Description-->
 
@@ -773,9 +773,9 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to prevent media information for CDs and DVDs from being retrieved from the Internet.
 
-If you enable this policy setting, the Player is prevented from automatically obtaining media information from the Internet for CDs and DVDs played by users. In addition, the Retrieve media information for CDs and DVDs from the Internet check box on the Privacy Options tab in the first use dialog box and on the Privacy tab in the Player are not selected and are not available.
+If you enable this policy setting, the Player is prevented from automatically obtaining media information from the Internet for CDs and DVDs played by users. In addition, the Retrieve media information for CDs and DVDs from the Internet check box on the Privacy Options tab in the first use dialog box and on the Privacy tab in the Player aren't selected and aren't available.
 
-If you disable or do not configure this policy setting, users can change the setting of the Retrieve media information for CDs and DVDs from the Internet check box.
+If you disable or don't configure this policy setting, users can change the setting of the Retrieve media information for CDs and DVDs from the Internet check box.
 
 <!--/Description-->
 
@@ -821,7 +821,7 @@ This policy setting allows you to prevent media sharing from Windows Media Playe
 
 If you enable this policy setting, any user on this computer is prevented from sharing digital media content from Windows Media Player with other computers and devices that are on the same network. Media sharing is disabled from Windows Media Player or from programs that depend on the Player's media sharing feature.
 
-If you disable or do not configure this policy setting, anyone using Windows Media Player can turn media sharing on or off.
+If you disable or don't configure this policy setting, anyone using Windows Media Player can turn media sharing on or off.
 
 <!--/Description-->
 
@@ -865,9 +865,9 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to prevent media information for music files from being retrieved from the Internet.
 
-If you enable this policy setting, the Player is prevented from automatically obtaining media information for music files such as Windows Media Audio (WMA) and MP3 files from the Internet. In addition, the Update my music files (WMA and MP3 files) by retrieving missing media information from the Internet check box in the first use dialog box and on the Privacy and Media Library tabs in the Player are not selected and are not available.
+If you enable this policy setting, the Player is prevented from automatically obtaining media information for music files such as Windows Media Audio (WMA) and MP3 files from the Internet. In addition, the Update my music files (WMA and MP3 files) by retrieving missing media information from the Internet check box in the first use dialog box and on the Privacy and Media Library tabs in the Player aren't selected and aren't available.
 
-If you disable or do not configure this policy setting, users can change the setting of the Update my music files (WMA and MP3 files) by retrieving missing media information from the Internet check box.
+If you disable or don't configure this policy setting, users can change the setting of the Update my music files (WMA and MP3 files) by retrieving missing media information from the Internet check box.
 
 <!--/Description-->
 
@@ -911,9 +911,9 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to prevent a shortcut for the Player from being added to the Quick Launch bar.
 
-If you enable this policy setting, the user cannot add the shortcut for the Player to the Quick Launch bar.
+If you enable this policy setting, the user can't add the shortcut for the Player to the Quick Launch bar.
 
-If you disable or do not configure this policy setting, the user can choose whether to add the shortcut for the Player to the Quick Launch bar.
+If you disable or don't configure this policy setting, the user can choose whether to add the shortcut for the Player to the Quick Launch bar.
 
 <!--/Description-->
 
@@ -956,9 +956,9 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to prevent radio station presets from being retrieved from the Internet.
 
-If you enable this policy setting, the Player is prevented from automatically retrieving radio station presets from the Internet and displaying them in Media Library. In addition, presets that exist before the policy is configured are not be updated, and presets a user adds are not be displayed.
+If you enable this policy setting, the Player is prevented from automatically retrieving radio station presets from the Internet and displaying them in Media Library. In addition, presets that exist before the policy is configured aren't updated, and the presets that a user adds aren't displayed.
 
-If you disable or do not configure this policy setting, the Player automatically retrieves radio station presets from the Internet.
+If you disable or don't configure this policy setting, the Player automatically retrieves radio station presets from the Internet.
 
 <!--/Description-->
 
@@ -1002,9 +1002,9 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to prevent a shortcut icon for the Player from being added to the user's desktop.
 
-If you enable this policy setting, users cannot add the Player shortcut icon to their desktops.
+If you enable this policy setting, users can't add the Player shortcut icon to their desktops.
 
-If you disable or do not configure this policy setting, users can choose whether to add the Player shortcut icon to their desktops.
+If you disable or don't configure this policy setting, users can choose whether to add the Player shortcut icon to their desktops.
 
 <!--/Description-->
 
@@ -1050,11 +1050,11 @@ This policy setting allows you to set and lock Windows Media Player in skin mode
 
 If you enable this policy setting, the Player displays only in skin mode using the skin specified in the Skin box on the Setting tab.
 
-You must use the complete file name for the skin (for example, skin_name.wmz), and the skin must be installed in the %programfiles%\Windows Media Player\Skins Folder on a user's computer. If the skin is not installed on a user's computer, or if the Skin box is blank, the Player opens by using the Corporate skin. The only way to specify the Corporate skin is to leave the Skin box blank.
+You must use the complete file name for the skin (for example, skin_name.wmz), and the skin must be installed in the %programfiles%\Windows Media Player\Skins Folder on a user's computer. If the skin isn't installed on a user's computer, or if the Skin box is blank, the Player opens by using the Corporate skin. The only way to specify the Corporate skin is to leave the Skin box blank.
 
-A user has access only to the Player features that are available with the specified skin. Users cannot switch the Player to full mode and cannot choose a different skin.
+A user has access only to the Player features that are available with the specified skin. Users can't switch the Player to full mode and can't choose a different skin.
 
-If you disable or do not configure this policy setting, users can display the Player in full or skin mode and have access to all available features of the Player.
+If you disable or don't configure this policy setting, users can display the Player in full or skin mode and have access to all available features of the Player.
 
 <!--/Description-->
 
@@ -1098,13 +1098,13 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to specify that Windows Media Player can attempt to use selected protocols when receiving streaming media from a server running Windows Media Services.
 
-If you enable this policy setting, the protocols that are selected on the Network tab of the Player are used to receive a stream initiated through an MMS or RTSP URL from a Windows Media server. If the RSTP/UDP check box is selected, a user can specify UDP ports in the Use ports check box. If the user does not specify UDP ports, the Player uses default ports when using the UDP protocol. This policy setting also specifies that multicast streams can be received if the "Allow the Player to receive multicast streams" check box on the Network tab is selected.
+If you enable this policy setting, the protocols that are selected on the Network tab of the Player are used to receive a stream initiated through an MMS or RTSP URL from a Windows Media server. If the RSTP/UDP check box is selected, a user can specify UDP ports in the Use ports check box. If the user doesn't specify UDP ports, the Player uses default ports when using the UDP protocol. This policy setting also specifies that multicast streams can be received if the "Allow the Player to receive multicast streams" check box on the Network tab is selected.
 
-If you enable this policy setting, the administrator must also specify the protocols that are available to users on the Network tab. If the administrator does not specify any protocols, the Player cannot access an MMS or RTSP URL from a Windows Media server. If the "Hide network tab" policy setting is enabled, the entire Network tab is hidden.
+If you enable this policy setting, the administrator must also specify the protocols that are available to users on the Network tab. If the administrator doesn't specify any protocols, the Player can't access an MMS or RTSP URL from a Windows Media server. If the "Hide network tab" policy setting is enabled, the entire Network tab is hidden.
 
-If you do not configure this policy setting, users can select the protocols to use on the Network tab.
+If you don't configure this policy setting, users can select the protocols to use on the Network tab.
 
-If you disable this policy setting, the Protocols for MMS URLs and Multicast streams areas of the Network tab are not available and the Player cannot receive an MMS or RTSP stream from a Windows Media server.
+If you disable this policy setting, the Protocols for MMS URLs and Multicast streams areas of the Network tab aren't available and the Player can't receive an MMS or RTSP stream from a Windows Media server.
 
 <!--/Description-->
 

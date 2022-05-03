@@ -4,10 +4,10 @@ description: How IT Pros can use Quick Assist to help users
 ms.prod: w10
 ms.sitesec: library
 ms.topic: article
-author: jaimeo
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: jaimeo
-manager: laurawi
+ms.author: aaroncz
+manager: dougeby
 ms.collection: highpri
 ---
 

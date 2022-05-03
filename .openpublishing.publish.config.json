@@ -274,22 +274,6 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "windows-manage",
-      "build_source_folder": "windows/manage",
-      "build_output_subfolder": "windows-manage",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "windows-plan",
       "build_source_folder": "windows/plan",
       "build_output_subfolder": "windows-plan",
@@ -400,7 +384,6 @@
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
   "resolve_user_profile_using_github": true,
-  "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
       "path_to_root": "_themes.pdf",
@@ -431,9 +414,8 @@
       "template_folder": "_themes.pdf"
     }
   },
-  "docs_build_engine": {
-    "name": "docfx_v3"
-  },
+  "docs_build_engine": {},
+  "contribution_branch_mappings": {},
   "need_generate_pdf": false,
   "need_generate_intellisense": false
 }

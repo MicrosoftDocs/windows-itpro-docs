@@ -3,11 +3,11 @@ title: Configure BranchCache for Windows client updates
 description: In this article, learn how to use BranchCache to optimize network bandwidth during update deployment.
 ms.prod: w10
 ms.mktglfcycl: manage
-author: jaimeo
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: aaroncz
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
@@ -24,7 +24,7 @@ ms.custom: seo-marvel-apr2020
 
 BranchCache is a bandwidth-optimization feature that has been available since the Windows Server 2008 R2 and Windows 7 operating systems. Each client has a cache and acts as an alternate source for content that devices on its own network request. Windows Server Update Services (WSUS) and Microsoft Endpoint Manager can use BranchCache to optimize network bandwidth during update deployment, and it's easy to configure for either of them. BranchCache has two operating modes: Distributed Cache mode and Hosted Cache mode. 
 
-- Distributed Cache mode operates like the [Delivery Optimization](waas-delivery-optimization.md) feature in Windows client: each client contains a cached version of the BranchCache-enabled files it requests and acts as a distributed cache for other clients requesting that same file. 
+- Distributed Cache mode operates like the [Delivery Optimization](../do/waas-delivery-optimization.md) feature in Windows client: each client contains a cached version of the BranchCache-enabled files it requests and acts as a distributed cache for other clients requesting that same file. 
 
     >[!TIP]
     >Distributed Cache mode is preferred to Hosted Cache mode for Windows clients updates to get the most benefit from peer-to-peer distribution. 

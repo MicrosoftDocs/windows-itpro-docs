@@ -4,13 +4,13 @@ description: This section describes the SMISettings settings that you can config
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.topic: article
 ms.date: 03/30/2018
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # SMISettings (Windows Configuration Designer reference)

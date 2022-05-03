@@ -70,13 +70,13 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to turn off the automatic display of Server Manager at logon.  
+This policy setting allows you to turn off the automatic display of Server Manager at a sign in.  
 
-- If you enable this policy setting, Server Manager is not displayed automatically when a user logs on to the server.  
+- If you enable this policy setting, Server Manager isn't displayed automatically when a user signs in to the server.  
 
-- If you disable this policy setting, Server Manager is displayed automatically when a user logs on to the server.  
+- If you disable this policy setting, Server Manager is displayed automatically when a user signs in to the server.  
 
-If you do not configure this policy setting, Server Manager is displayed when a user logs on to the server. However, if the "Do not show me this console at logon" (Windows Server 2008 and Windows Server 2008 R2) or “Do not start Server Manager automatically at logon” (Windows Server 2012) option is selected, the console is not displayed automatically at logon.  
+If you don't configure this policy setting, Server Manager is displayed when a user signs in to the server. However, if the "Do not show me this console at logon" (Windows Server 2008 and Windows Server 2008 R2) or “Do not start Server Manager automatically at logon” (Windows Server 2012) option is selected, the console isn't displayed automatically at a sign in.  
 
 > [!NOTE]
 > Regardless of the status of this policy setting, Server Manager is available from the Start menu or the Windows taskbar.
@@ -122,11 +122,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to set the refresh interval for Server Manager. Each refresh provides Server Manager with updated information about which roles and features are installed on servers that you are managing by using Server Manager. Server Manager also monitors the status of roles and features installed on managed servers.  
+This policy setting allows you to set the refresh interval for Server Manager. Each refresh provides Server Manager with updated information about which roles and features are installed on servers that you're managing by using Server Manager. Server Manager also monitors the status of roles and features installed on managed servers.  
 
 - If you enable this policy setting, Server Manager uses the refresh interval specified in the policy setting instead of the “Configure Refresh Interval” setting (in Windows Server 2008 and Windows Server 2008 R2), or the “Refresh the data shown in Server Manager every [x] [minutes/hours/days]” setting (in Windows Server 2012) that is configured in the Server Manager console.  
 
-- If you disable this policy setting, Server Manager does not refresh automatically. If you do not configure this policy setting, Server Manager uses the refresh interval settings that are specified in the Server Manager console.  
+- If you disable this policy setting, Server Manager doesn't refresh automatically. If you don't configure this policy setting, Server Manager uses the refresh interval settings that are specified in the Server Manager console.  
 
 > [!NOTE]
 > The default refresh interval for Server Manager is two minutes in Windows Server 2008 and Windows Server 2008 R2, or 10 minutes in Windows Server 2012.
@@ -172,13 +172,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to turn off the automatic display of the Initial Configuration Tasks window at logon on Windows Server 2008 and Windows Server 2008 R2.  
+This policy setting allows you to turn off the automatic display of the Initial Configuration Tasks window at a sign in on Windows Server 2008 and Windows Server 2008 R2.  
 
-- If you enable this policy setting, the Initial Configuration Tasks window is not displayed when an administrator logs on to the server.  
+- If you enable this policy setting, the Initial Configuration Tasks window isn't displayed when an administrator signs in to the server.  
 
-- If you disable this policy setting, the Initial Configuration Tasks window is displayed when an administrator logs on to the server.
+- If you disable this policy setting, the Initial Configuration Tasks window is displayed when an administrator signs in to the server.
 
-If you do not configure this policy setting, the Initial Configuration Tasks window is displayed when an administrator logs on to the server. However, if an administrator selects the "Do not show this window at logon" option, the window is not displayed on subsequent logons.
+If you don't configure this policy setting, the Initial Configuration Tasks window is displayed when an administrator signs in to the server. However, if an administrator selects the "Do not show this window at logon" option, the window isn't displayed on subsequent logons.
 
 <!--/Description-->
 
@@ -222,11 +222,11 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to turn off the automatic display of the Manage Your Server page.  
 
-- If you enable this policy setting, the Manage Your Server page is not displayed each time an administrator logs on to the server.  
+- If you enable this policy setting, the Manage Your Server page isn't displayed each time an administrator signs in to the server.  
 
-- If you disable or do not configure this policy setting, the Manage Your Server page is displayed each time an administrator logs on to the server. 
+- If you disable or don't configure this policy setting, the Manage Your Server page is displayed each time an administrator signs in to the server. 
 
-However, if the administrator has selected the "Don’t display this page at logon" option at the bottom of the Manage Your Server page, the page is not displayed.
+However, if the administrator has selected the "Don’t display this page at logon" option at the bottom of the Manage Your Server page, the page isn't displayed.
 
 <!--/Description-->
 
