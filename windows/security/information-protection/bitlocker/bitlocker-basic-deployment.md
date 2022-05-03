@@ -257,9 +257,9 @@ $pw = Read-Host -AsSecureString
 Enable-BitLockerKeyProtector E: -PasswordProtector -Password $pw
 ```
 
-### Using a SID-based protector in Windows PowerShell
+### Using an SID-based protector in Windows PowerShell
 
-The ADAccountOrGroup protector is an Active Directory SID-based protector. This protector can be added to both operating system and data volumes, although it doesn't unlock operating system volumes in the pre-boot environment. The protector requires the SID for the domain account or group to link with the protector. BitLocker can protect a cluster-aware disk by adding a SID-based protector for the Cluster Name Object (CNO) that lets the disk properly fail over and be unlocked to any member computer of the cluster.
+The ADAccountOrGroup protector is an Active Directory SID-based protector. This protector can be added to both operating system and data volumes, although it doesn't unlock operating system volumes in the pre-boot environment. The protector requires the SID for the domain account or group to link with the protector. BitLocker can protect a cluster-aware disk by adding an SID-based protector for the Cluster Name Object (CNO) that lets the disk properly failover and be unlocked to any member computer of the cluster.
 
 > [!WARNING]
 > The SID-based protector requires the use of an additional protector (such as TPM, PIN, recovery key, etc.) when used on operating system volumes.
