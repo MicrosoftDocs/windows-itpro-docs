@@ -108,7 +108,7 @@ You can use the Microsoft Crash Dump File Checker (DumpChk) tool to verify that 
 For more information on how to use Dumpchk.exe to check your dump files, see the following articles:
 
 - [Using DumpChk](/windows-hardware/drivers/debugger/dumpchk)
-- [Download DumpCheck](https://developer.microsoft.com/windows/downloads/windows-10-sdk)
+- [Download DumpChk](https://developer.microsoft.com/windows/downloads/windows-10-sdk)
 
 ### Pagefile settings
 
