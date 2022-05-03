@@ -4,13 +4,13 @@ description: In this article, learn about the process Windows Update uses to dow
 ms.prod: w10
 ms.mktglfcycl: 
 audience: itpro
-itproauthor: jaimeo
-author: jaimeo
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: jaimeo
-ms.reviewer: 
-manager: laurawi
-ms.collection: M365-modern-desktop
+ms.author: aaroncz
+manager: dougeby
+ms.collection:
+  - M365-modern-desktop
+  - highpri
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
@@ -132,7 +132,7 @@ Once the Windows Update Orchestrator determines which updates apply to your comp
 
 To ensure that your other downloads aren't affected or slowed down because updates are downloading, Windows Update uses Delivery Optimization, which downloads updates and reduces bandwidth consumption. 
  
-For more information, see [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md). 
+For more information, see [Configure Delivery Optimization for Windows 10 updates](../do/waas-delivery-optimization.md). 
 
 ## Installing updates 
 ![Windows Update install step.](images/update-install-step.png)

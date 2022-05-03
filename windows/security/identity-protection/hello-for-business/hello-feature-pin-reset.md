@@ -2,19 +2,20 @@
 title: Pin Reset
 description: Learn how Microsoft PIN reset services enables you to help users recover who have forgotten their PIN.
 keywords: identity, PIN, Hello, passport, WHFB, hybrid, cert-trust, device, reset
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
-ms.collection: M365-identity-device-management
+ms.collection:
+  - M365-identity-device-management
+  - highpri
 ms.topic: article
 localizationpriority: medium
 ms.date: 5/3/2021
-ms.reviewer: 
 ---
 
 # PIN reset
@@ -38,7 +39,7 @@ There are two forms of PIN reset called destructive and non-destructive. Destruc
 Destructive and non-destructive PIN reset use the same entry points for initiating a PIN reset. If a user has forgotten their PIN, but has an alternate logon method, they can navigate to Sign-in options in Settings and initiate a PIN reset from the PIN options. If they do not have an alternate way to sign into their device, PIN reset can also be initiated from above the lock screen in the PIN credential provider.
 
 >[!IMPORTANT]
->For hybrid Azure AD joined devices, users must have corporate network connectivity to domain controllers to reset their PIN. If AD FS is being used for certificate trust or for on-premises only deployments, users must also have corporate network connectivity to federation services to reset their PIN.
+>For hybrid Azure AD joined devices, users must have corporate network connectivity to domain controllers to complete destructive PIN reset. If AD FS is being used for certificate trust or for on-premises only deployments, users must also have corporate network connectivity to federation services to reset their PIN.
 
 ### Reset PIN from Settings
 

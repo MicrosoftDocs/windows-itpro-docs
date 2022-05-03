@@ -16,7 +16,7 @@ ms.author: dansimp
 manager: dansimp
 ms.topic: conceptual
 ms.date: 02/20/2018
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Windows Defender Application Control design guide
@@ -34,10 +34,10 @@ This guide covers design and planning for Windows Defender Application Control (
 
 ## Plan for success
 
-A common refrain you may hear about application control is that it is "too hard". While it is true that application control is not as simple as flipping a switch, organizations can be successful if they take a methodical approach and carefully plan their approach. In reality, the issues that lead to failure with application control often arise from business issues rather than technology challenges. Organizations that have successfully deployed application control have ensured the following before starting their planning:
+A common refrain you may hear about application control is that it is "too hard." While it is true that application control is not as simple as flipping a switch, organizations can be successful, if they're methodical when carefully planning their approach. In reality, the issues that lead to failure with application control often arise from business issues rather than technology challenges. Organizations that have successfully deployed application control have ensured the following before starting their planning:
 
 -   Executive sponsorship and organizational buy-in is in place.
--   There is a clear **business** objective for using application control and it is not being planned as a purely technical problem from IT.
+-   There is a clear **business** objective for using application control, and it is not being planned as a purely technical problem from IT.
 -   The organization has a plan to handle potential helpdesk support requests for users who are blocked from running some apps.
 -   The organization has considered where application control can be most useful (for example, securing sensitive workloads or business functions) and also where it may be difficult to achieve (for example, developer workstations).
 
@@ -48,9 +48,9 @@ Once these business factors are in place, you are ready to begin planning your W
 | Topic | Description |
 | - | - |
 | [Plan for WDAC policy management](plan-windows-defender-application-control-management.md) | This topic describes the decisions you need to make to establish the processes for managing and maintaining WDAC policies. |
-| [Understand WDAC policy design decisions](understand-windows-defender-application-control-policy-design-decisions.md) | This topic lists the design questions, possible answers, and ramifications of the decisions when you plan a deployment of application control policies. |
+| [Understand WDAC policy design decisions](understand-windows-defender-application-control-policy-design-decisions.md) | This topic lists the design questions, possible answers, and ramifications of the decisions, when you plan a deployment of application control policies. |
 | [Understand WDAC policy rules and file rules](select-types-of-rules-to-create.md) | This topic lists resources you can use when selecting your application control policy rules by using WDAC. |
-| [Policy creation for common WDAC usage scenarios](types-of-devices.md) | This set of topics outlines common use case scenarios and helps you begin to develop a plan for deploying WDAC in your organization. |
+| [Policy creation for common WDAC usage scenarios](types-of-devices.md) | This set of topics outlines common use case scenarios, and helps you begin to develop a plan for deploying WDAC in your organization. |
 | [Policy creation using the WDAC Wizard tool](wdac-wizard.md) | This set of topics describes how to use the WDAC Wizard desktop app to easily create, edit, and merge WDAC policies. |
 
-After planning is complete, the next step is to deploy WDAC. The [Windows Defender Application Control Deployment Guide](windows-defender-application-control-deployment-guide.md) covers the creation and testing of policies, deploying the enforcement setting, and managing and maintaining the policies.
+After planning is complete, the next step is to deploy WDAC. The [Windows Defender Application Control Deployment Guide](windows-defender-application-control-deployment-guide.md) covers creating and testing policies, deploying the enforcement setting, and managing and maintaining policies.

@@ -10,6 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: dansimp
 ms.collection: M365-security-compliance
+ms.custom: intro-overview
 ms.prod: m365-security
 ms.technology: windows-sec
 ---

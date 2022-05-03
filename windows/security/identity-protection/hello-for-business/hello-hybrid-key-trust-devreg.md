@@ -2,13 +2,13 @@
 title: Configure Device Registration for Hybrid Azure AD joined key trust Windows Hello for Business
 description: Azure Device Registration for Hybrid Certificate Key Deployment (Windows Hello for Business)
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, key-trust, device, registration
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -19,13 +19,13 @@ ms.reviewer:
 # Configure Device Registration for Hybrid Azure AD joined key trust Windows Hello for Business
 
 **Applies to**
--  Windows 10, version 1703 or later
--  Windows 11
--  Hybrid deployment
--  Key trust
 
- 
-You are ready to configure device registration for your hybrid environment. Hybrid Windows Hello for Business deployment needs device registration to enable proper device authentication.   
+- Windows 10, version 1703 or later
+- Windows 11
+- Hybrid deployment
+- Key trust
+
+You are ready to configure device registration for your hybrid environment. Hybrid Windows Hello for Business deployment needs device registration to enable proper device authentication.
 
 > [!NOTE]
 > Before proceeding, you should familiarize yourself with device registration concepts such as:
@@ -36,6 +36,7 @@ You are ready to configure device registration for your hybrid environment. Hybr
 > You can learn about this and more by reading [Introduction to Device Management in Azure Active Directory.](/azure/active-directory/device-management-introduction)
 
 ## Configure Azure for Device Registration
+
 Begin configuring device registration to support Hybrid Windows Hello for Business by configuring device registration capabilities in Azure AD. 
 
 To do this, follow the **Configure device settings** steps under [Setting up Azure AD Join in your organization](/azure/active-directory/devices/device-management-azure-portal).
@@ -48,6 +49,7 @@ Next, follow the guidance on the [How to configure hybrid Azure Active Directory
 <hr>
 
 ## Follow the Windows Hello for Business hybrid key trust deployment guide
+
 1. [Overview](hello-hybrid-cert-trust.md)
 2. [Prerequisites](hello-hybrid-cert-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-key-new-install.md)

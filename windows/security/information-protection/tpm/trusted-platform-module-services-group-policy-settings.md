@@ -3,7 +3,7 @@ title: TPM Group Policy settings (Windows)
 description: This topic describes the Trusted Platform Module (TPM) Services that can be controlled centrally by using Group Policy settings.
 ms.assetid: 54ff1c1e-a210-4074-a44e-58fee26e4dbd
 ms.reviewer: 
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,7 +11,9 @@ author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+  - M365-security-compliance
+  - highpri
 ms.topic: conceptual
 ms.date: 09/06/2021
 ---
@@ -19,7 +21,7 @@ ms.date: 09/06/2021
 # TPM Group Policy settings
 
 **Applies to**
--   Windows 10
+-   Windows 10
 -   Windows 11
 -   Windows Server 2016 and above
 
@@ -33,8 +35,8 @@ The following Group Policy settings were introduced in Windows.
 
 ## Configure the level of TPM owner authorization information available to the operating system
 
->[!IMPORTANT]
->Beginning with Windows 10 version 1607 and Windows Server 2016, this policy setting is no longer used by Windows, but it continues to appear in GPEdit.msc for compatibility with previous versions. Beginning with Windows 10 version 1703, the default value is 5. This value is implemented during provisioning so that another Windows component can either delete it or take ownership of it, depending on the system configuration. For TPM 2.0, a value of 5 means keep the lockout authorization. For TPM 1.2, it means discard the Full TPM owner authorization and retain only the Delegated authorization.
+> [!IMPORTANT]
+> Beginning with Windows 10 version 1703, the default value is 5. This value is implemented during provisioning so that another Windows component can either delete it or take ownership of it, depending on the system configuration. For TPM 2.0, a value of 5 means keep the lockout authorization. For TPM 1.2, it means discard the Full TPM owner authorization and retain only the Delegated authorization.
 
 This policy setting configured which TPM authorization values are stored in the registry of the local computer. Certain authorization values are required in order to allow Windows to perform certain actions.
 

@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 12/08/2020
 ms.reviewer: 
 manager: dansimp
@@ -39,38 +39,14 @@ manager: dansimp
 <a href="" id="admx-radar-wdiscenarioexecutionpolicy"></a>**ADMX_Radar/WdiScenarioExecutionPolicy**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -91,10 +67,10 @@ This policy determines the execution level for Windows Resource Exhaustion Detec
 
 These root causes will be logged to the event log when detected, but no corrective action will be taken. If you select detection, troubleshooting and resolution, the DPS will detect Windows Resource Exhaustion problems and indicate to the user that assisted resolution is available.  
 
-- If you disable this policy setting, Windows will not be able to detect, troubleshoot or resolve any Windows Resource Exhaustion problems that are handled by the DPS.
+- If you disable this policy setting, Windows won't be able to detect, troubleshoot or resolve any Windows Resource Exhaustion problems that are handled by the DPS.
 
-If you do not configure this policy setting, the DPS will enable Windows Resource Exhaustion for resolution by default.  
-This policy setting takes effect only if the diagnostics-wide scenario execution policy is not configured.  No system restart or service restart is required for this policy to take effect: changes take effect immediately. This policy setting will only take effect when the Diagnostic Policy Service is in the running state. When the service is stopped or disabled, diagnostic scenarios will not be executed. The DPS can be configured with the Services snap-in to the Microsoft Management Console.
+If you don't configure this policy setting, the DPS will enable Windows Resource Exhaustion for resolution by default.  
+This policy setting takes effect only if the diagnostics-wide scenario execution policy isn't configured.  No system restart or service restart is required for this policy to take effect: changes take effect immediately. This policy setting will only take effect when the Diagnostic Policy Service is in the running state. When the service is stopped or disabled, diagnostic scenarios won't be executed. The DPS can be configured with the Services snap-in to the Microsoft Management Console.
 
 <!--/Description-->
 

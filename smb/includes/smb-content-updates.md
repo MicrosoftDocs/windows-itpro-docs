@@ -2,8 +2,9 @@
 
 
 
-## Week of April 26, 2021
+## Week of December 13, 2021
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
+| 12/14/2021 | [Deploy and manage a full cloud IT solution for your business](/windows/smb/cloud-mode-business-setup) | modified |

@@ -7,8 +7,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
-ms.author: mandia
-author: MandiOhlinger
+ms.author: aaroncz
+author: aczechowski
 ms.localizationpriority: medium
 ms.topic: article
 ---

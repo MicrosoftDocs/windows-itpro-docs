@@ -11,7 +11,7 @@ ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 5064(S, F): A cryptographic context operation was attempted.
@@ -24,8 +24,6 @@ This event generates when cryptographic context was created or deleted.
 For more information about Cryptographic Next Generation (CNG) visit these pages:
 
 -   <https://msdn.microsoft.com/library/windows/desktop/aa376214(v=vs.85).aspx>
-
--   <https://www.microsoft.com/download/details.aspx?id=1251>
 
 -   <https://www.microsoft.com/download/details.aspx?id=30688>
 

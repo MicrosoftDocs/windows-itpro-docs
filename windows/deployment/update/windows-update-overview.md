@@ -4,12 +4,11 @@ description: An overview of learning resources for Windows Update, including doc
 ms.prod: w10
 ms.mktglfcycl: 
 audience: itpro
-itproauthor: jaimeo
-author: jaimeo
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.audience: itpro
 ms.date: 09/18/2018
-ms.reviewer: 
-manager: laurawi
 ms.topic: article
 ---
 
@@ -17,7 +16,7 @@ ms.topic: article
 
 >Applies to: Windows 10
 
-With the release of Windows 10, we moved the update model to the Unified Update Platform. Unified Update Platform (UUP) is a single publishing, hosting, scan and download model for all types of OS updates, desktop and mobile for all Windows-based operating systems, for everything from monthly quality updates to new feature updates.  
+With the release of Windows 10, we moved the update model to the Unified Update Platform. Unified Update Platform (UUP) is a single publishing, hosting, scan and download model for all types of OS updates, client devices for all Windows-based operating systems, for everything from monthly quality updates to new feature updates.  
 
 Use the following information to get started with Windows Update:
 

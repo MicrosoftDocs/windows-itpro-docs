@@ -1,7 +1,7 @@
 ---
 title: VPN auto-triggered profile options (Windows 10 and Windows 11)
 description: Learn about the types of auto-trigger rules for VPNs in Windows, which start a VPN when it is needed to access a resource.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, networking
@@ -35,8 +35,7 @@ VPN profiles in Windows 10 or Windows 11 can be configured to connect automatica
 
 The app identifier for a desktop app is a file path. The app identifier for a UWP app is a package family name.
 
-[Find a package family name (PFN) for per-app VPN configuration](/intune/deploy-use/find-a-pfn-for-per-app-vpn)
-
+[Find a package family name (PFN) for per-app VPN configuration](/mem/configmgr/protect/deploy-use/find-a-pfn-for-per-app-vpn)
 
 ## Name-based trigger
 

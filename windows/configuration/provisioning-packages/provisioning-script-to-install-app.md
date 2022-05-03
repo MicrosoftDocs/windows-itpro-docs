@@ -4,12 +4,12 @@ description: With Windows 10/11, you can create provisioning packages that let 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
-ms.author: greglin
+author: aczechowski
+ms.author: aaroncz
 ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: gkomatsu
-manager: dansimp
+manager: dougeby
 ---
 
 # Use a script to install a desktop app in provisioning packages
@@ -171,12 +171,11 @@ Here’s a table describing this relationship, using the PowerShell example from
 | ProvisioningCommands/DeviceContext/CommandFiles | PowerShell_Example.bat | The single orchestrator script referenced by the command line that handles calling into the required installers or performing any other actions such as expanding cab files. This script must do the required logging. |
 | ProvisioningCommands/DeviceContext/CommandFiles | my_powershell_script.ps1 | Other assets referenced by the orchestrator script. In this example, there is only one, but there could be many assets referenced here. One common use case is using the orchestrator to call a series of install.exe or setup.exe installers to install several applications. Each of those installers must be included as an asset here. |
 
- 
 ### Add script to provisioning package
- 
-When you have the batch file written and the referenced assets ready to include, you can add them to a provisioning package in the Window Configuration Designer. 
 
-Using Windows Configuration Designer, specify the full details of how the script should be run in the CommandLine setting in the provisioning package. This includes flags or any other parameters that you would normally type on the command line. So for example if the package contained an app installer called install.exe and a script used to automate the install called InstallMyApp.bat, the `ProvisioningCommands/DeviceContext/CommandLine` setting should be configured to: 
+When you have the batch file written and the referenced assets ready to include, you can add them to a provisioning package in the Windows Configuration Designer.
+
+Using Windows Configuration Designer, specify the full details of how the script should be run in the CommandLine setting in the provisioning package. This includes flags or any other parameters that you would normally type on the command line. So for example if the package contained an app installer called install.exe and a script used to automate the install called InstallMyApp.bat, the `ProvisioningCommands/DeviceContext/CommandLine` setting should be configured to:
 
 ```bat
 cmd /c InstallMyApp.bat

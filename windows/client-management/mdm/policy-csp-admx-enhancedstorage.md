@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 11/23/2020
 ms.reviewer: 
 manager: dansimp
@@ -54,38 +54,14 @@ manager: dansimp
 <a href="" id="admx-enhancedstorage-approvedenstordevices"></a>**ADMX_EnhancedStorage/ApprovedEnStorDevices**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -104,7 +80,7 @@ This policy setting allows you to configure a list of Enhanced Storage devices b
 
 If you enable this policy setting, only Enhanced Storage devices that contain a manufacturer and product ID specified in this policy are usable on your computer.
 
-If you disable or do not configure this policy setting, all Enhanced Storage devices are usable on your computer.
+If you disable or don't configure this policy setting, all Enhanced Storage devices are usable on your computer.
 
 <!--/Description-->
 
@@ -123,38 +99,14 @@ ADMX Info:
 <a href="" id="admx-enhancedstorage-approvedsilos"></a>**ADMX_EnhancedStorage/ApprovedSilos**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -173,7 +125,7 @@ This policy setting allows you to create a list of IEEE 1667 silos, compliant wi
 
 If you enable this policy setting, only IEEE 1667 silos that match a silo type identifier specified in this policy are usable on your computer.
 
-If you disable or do not configure this policy setting, all IEEE 1667 silos on Enhanced Storage devices are usable on your computer.
+If you disable or don't configure this policy setting, all IEEE 1667 silos on Enhanced Storage devices are usable on your computer.
 
 <!--/Description-->
 
@@ -192,38 +144,14 @@ ADMX Info:
 <a href="" id="admx-enhancedstorage-disablepasswordauthentication"></a>**ADMX_EnhancedStorage/DisablePasswordAuthentication**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -240,9 +168,9 @@ ADMX Info:
 <!--Description-->
 This policy setting configures whether or not a password can be used to unlock an Enhanced Storage device.
 
-If you enable this policy setting, a password cannot be used to unlock an Enhanced Storage device.
+If you enable this policy setting, a password can't be used to unlock an Enhanced Storage device.
 
-If you disable or do not configure this policy setting, a password can be used to unlock an Enhanced Storage device.
+If you disable or don't configure this policy setting, a password can be used to unlock an Enhanced Storage device.
 
 <!--/Description-->
 
@@ -261,38 +189,14 @@ ADMX Info:
 <a href="" id="admx-enhancedstorage-disallowlegacydiskdevices"></a>**ADMX_EnhancedStorage/DisallowLegacyDiskDevices**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -309,9 +213,9 @@ ADMX Info:
 <!--Description-->
 This policy setting configures whether or not non-Enhanced Storage removable devices are allowed on your computer.
 
-If you enable this policy setting, non-Enhanced Storage removable devices are not allowed on your computer.
+If you enable this policy setting, non-Enhanced Storage removable devices aren't allowed on your computer.
 
-If you disable or do not configure this policy setting, non-Enhanced Storage removable devices are allowed on your computer.
+If you disable or don't configure this policy setting, non-Enhanced Storage removable devices are allowed on your computer.
 
 <!--/Description-->
 
@@ -330,38 +234,14 @@ ADMX Info:
 <a href="" id="admx-enhancedstorage-lockdeviceonmachinelock"></a>**ADMX_EnhancedStorage/LockDeviceOnMachineLock**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -382,7 +262,7 @@ This policy setting is supported in Windows Server SKUs only.
 
 If you enable this policy setting, the Enhanced Storage device remains locked when the computer is locked.
 
-If you disable or do not configure this policy setting, the Enhanced Storage device state is not changed when the computer is locked.
+If you disable or don't configure this policy setting, the Enhanced Storage device state isn't changed when the computer is locked.
 
 <!--/Description-->
 
@@ -401,38 +281,14 @@ ADMX Info:
 <a href="" id="admx-enhancedstorage-roothubconnectedenstordevices"></a>**ADMX_EnhancedStorage/RootHubConnectedEnStorDevices**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -451,7 +307,7 @@ This policy setting configures whether or not only USB root hub connected Enhanc
 
 If you enable this policy setting, only USB root hub connected Enhanced Storage devices are allowed.
 
-If you disable or do not configure this policy setting, USB Enhanced Storage devices connected to both USB root hubs and non-root hubs will be allowed.
+If you disable or don't configure this policy setting, USB Enhanced Storage devices connected to both USB root hubs and non-root hubs will be allowed.
 
 <!--/Description-->
 

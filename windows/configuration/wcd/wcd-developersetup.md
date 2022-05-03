@@ -4,13 +4,13 @@ description: This section describes the DeveloperSetup settings that you can con
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.topic: article
 ms.date: 09/06/2017
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # DeveloperSetup (Windows Configuration Designer reference)
@@ -19,18 +19,16 @@ Use to unlock developer mode on HoloLens devices and configure authentication to
 
 ## Applies to
 
-| Setting groups  | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [EnableDeveloperMode](#enabledevelopermode) |   |  |  | X |  |
-| [AuthenticationMode](#authenticationmode) |   |  |  | X |  |
+| Setting groups  | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| [EnableDeveloperMode](#developersetupsettings-enabledevelopermode) |   |  | ✔️ |  |
+| [AuthenticationMode](#windowsdeviceportalsettings-authentication-mode) |   |  | ✔️ |  |
 
 
-<span id="enabledevelopermode" />
 ## DeveloperSetupSettings: EnableDeveloperMode
 
 When this setting is configured as **True**, the device is unlocked for developer functionality.
 
-<span id="authenticationmode" />
 ## WindowsDevicePortalSettings: Authentication Mode
 
 When AuthenticationMode is set to **Basic Auth**, enter a user name and password to enable the device to connect to and authenticate with the Windows Device Portal.

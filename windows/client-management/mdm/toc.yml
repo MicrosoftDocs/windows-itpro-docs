@@ -48,6 +48,8 @@ items:
       href: device-update-management.md
     - name: Bulk enrollment
       href: bulk-enrollment-using-windows-provisioning-tool.md
+    - name: Secured-Core PC Configuration Lock
+      href: config-lock.md
     - name: Management tool for the Microsoft Store for Business
       href: management-tool-for-windows-store-for-business.md
       items: 
@@ -80,8 +82,6 @@ items:
               href: bulk-assign-and-reclaim-seats-from-user.md
             - name: Get seats assigned to a user
               href: get-seats-assigned-to-a-user.md
-    - name: Enable offline upgrades to Windows 10 for Windows Embedded 8.1 Handheld devices
-      href: enable-offline-updates-for-windows-embedded-8-1-handheld-devices-to-windows-10.md
     - name: Certificate renewal
       href: certificate-renewal-windows-mdm.md
     - name: Disconnecting from the management infrastructure (unenrollment)
@@ -149,10 +149,6 @@ items:
           items: 
             - name: BitLocker DDF file
               href: bitlocker-ddf-file.md
-        - name: BOOTSTRAP CSP
-          href: bootstrap-csp.md
-        - name: BrowserFavorite CSP
-          href: browserfavorite-csp.md
         - name: CellularSettings CSP
           href: cellularsettings-csp.md
         - name: CertificateStore CSP
@@ -172,8 +168,6 @@ items:
               href: clientcertificateinstall-ddf-file.md
         - name: CM_CellularEntries CSP
           href: cm-cellularentries-csp.md
-        - name: CM_ProxyEntries CSP
-          href: cm-proxyentries-csp.md
         - name: CMPolicy CSP
           href: cmpolicy-csp.md
         - name: CMPolicyEnterprise CSP
@@ -201,8 +195,6 @@ items:
           items: 
             - name: DeveloperSetup DDF
               href: developersetup-ddf.md
-        - name: DeviceInstanceService CSP
-          href: deviceinstanceservice-csp.md
         - name: DeviceLock CSP
           href: devicelock-csp.md
           items: 
@@ -270,13 +262,6 @@ items:
           items: 
             - name: EnterpriseAppVManagement DDF file
               href: enterpriseappvmanagement-ddf.md
-        - name: EnterpriseAssignedAccess CSP
-          href: enterpriseassignedaccess-csp.md
-          items: 
-            - name: EnterpriseAssignedAccess DDF file
-              href: enterpriseassignedaccess-ddf.md
-            - name: EnterpriseAssignedAccess XSD
-              href: enterpriseassignedaccess-xsd.md
         - name: EnterpriseDataProtection CSP
           href: enterprisedataprotection-csp.md
           items: 
@@ -289,16 +274,6 @@ items:
               href: enterprisedesktopappmanagement-ddf-file.md
             - name: EnterpriseDesktopAppManagement XSD
               href: enterprisedesktopappmanagement2-xsd.md
-        - name: EnterpriseExt CSP
-          href: enterpriseext-csp.md
-          items: 
-            - name: EnterpriseExt DDF file
-              href: enterpriseext-ddf.md
-        - name: EnterpriseExtFileSystem CSP
-          href: enterpriseextfilessystem-csp.md
-          items: 
-            - name: EnterpriseExtFileSystem DDF file
-              href: enterpriseextfilesystem-ddf.md
         - name: EnterpriseModernAppManagement CSP
           href: enterprisemodernappmanagement-csp.md
           items: 
@@ -311,8 +286,6 @@ items:
           items: 
             - name: eUICCs DDF file
               href: euiccs-ddf-file.md
-        - name: FileSystem CSP
-          href: filesystem-csp.md
         - name: Firewall CSP
           href: firewall-csp.md
           items: 
@@ -323,13 +296,6 @@ items:
           items: 
             - name: HealthAttestation DDF
               href: healthattestation-ddf.md
-        - name: HotSpot CSP
-          href: hotspot-csp.md
-        - name: Maps CSP
-          href: maps-csp.md
-          items: 
-            - name: Maps DDF
-              href: maps-ddf-file.md
         - name: Messaging CSP
           href: messaging-csp.md
           items: 
@@ -733,6 +699,8 @@ items:
               href: policy-csp-display.md
             - name: DmaGuard
               href: policy-csp-dmaguard.md
+            - name: EAP
+              href: policy-csp-eap.md
             - name: Education
               href: policy-csp-education.md
             - name: EnterpriseCloudPrint
@@ -753,6 +721,8 @@ items:
               href: policy-csp-games.md
             - name: Handwriting
               href: policy-csp-handwriting.md
+            - name: HumanPresence
+              href: policy-csp-humanpresence.md
             - name: InternetExplorer
               href: policy-csp-internetexplorer.md
             - name: Kerberos
@@ -771,6 +741,8 @@ items:
               href: policy-csp-lockdown.md
             - name: Maps
               href: policy-csp-maps.md
+            - name: MemoryDump
+              href: policy-csp-memorydump.md
             - name: Messaging
               href: policy-csp-messaging.md
             - name: MixedReality
@@ -785,6 +757,8 @@ items:
               href: policy-csp-networkisolation.md
             - name: NetworkListManager
               href: policy-csp-networklistmanager.md
+            - name: NewsAndInterests
+              href: policy-csp-newsandinterests.md
             - name: Notifications
               href: policy-csp-notifications.md
             - name: Power
@@ -795,6 +769,8 @@ items:
               href: policy-csp-privacy.md
             - name: RemoteAssistance
               href: policy-csp-remoteassistance.md
+            - name: RemoteDesktop
+              href: policy-csp-remotedesktop.md
             - name: RemoteDesktopServices
               href: policy-csp-remotedesktopservices.md
             - name: RemoteManagement
@@ -837,8 +813,12 @@ items:
               href: policy-csp-update.md
             - name: UserRights
               href: policy-csp-userrights.md
+            - name: VirtualizationBasedTechnology
+              href: policy-csp-virtualizationbasedtechnology.md
             - name: Wifi
               href: policy-csp-wifi.md
+            - name: WindowsAutoPilot
+              href: policy-csp-windowsautopilot.md
             - name: WindowsConnectionManager
               href: policy-csp-windowsconnectionmanager.md
             - name: WindowsDefenderSecurityCenter
@@ -868,21 +848,11 @@ items:
           items: 
             - name: Reboot DDF file
               href: reboot-ddf-file.md
-        - name: Registry CSP
-          href: registry-csp.md
-          items: 
-            - name: Registry DDF file
-              href: registry-ddf-file.md
         - name: RemoteFind CSP
           href: remotefind-csp.md
           items: 
             - name: RemoteFind DDF file
               href: remotefind-ddf-file.md
-        - name: RemoteLock CSP
-          href: remotelock-csp.md
-          items: 
-            - name: RemoteLock DDF file
-              href: remotelock-ddf-file.md
         - name: RemoteRing CSP
           href: remotering-csp.md
           items: 
@@ -993,6 +963,11 @@ items:
           items: 
             - name: WindowsAdvancedThreatProtection DDF file
               href: windowsadvancedthreatprotection-ddf.md
+        - name: WindowsAutoPilot CSP
+          href: windowsautopilot-csp.md
+          items: 
+            - name: WindowsAutoPilot DDF file
+              href: windowsautopilot-ddf-file.md
         - name: WindowsDefenderApplicationGuard CSP
           href: windowsdefenderapplicationguard-csp.md
           items: 
@@ -1003,11 +978,6 @@ items:
           items: 
             - name: WindowsLicensing DDF file
               href: windowslicensing-ddf-file.md
-        - name: WindowsSecurityAuditing CSP
-          href: windowssecurityauditing-csp.md
-          items: 
-            - name: WindowsSecurityAuditing DDF file
-              href: windowssecurityauditing-ddf-file.md
         - name: WiredNetwork CSP
           href: wirednetwork-csp.md
           items: 

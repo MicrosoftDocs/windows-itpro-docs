@@ -4,13 +4,13 @@ description: This section describes the DeviceFormFactor setting that you can co
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.topic: article
 ms.date: 04/30/2018
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # DeviceFormFactor (Windows Configuration Designer reference)
@@ -19,9 +19,9 @@ Use to identify the form factor of the device.
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| DeviceForm | X  | X | X |  |  |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| DeviceForm | ✔️  | ✔️ |  |  |
 
 Specifies the device form factor running Windows 10. Generally, the device form is set by the original equipment manufacturer (OEM), however you might want to change the device form based on its usage in your organization.
 

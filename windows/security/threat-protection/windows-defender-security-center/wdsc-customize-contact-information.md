@@ -25,9 +25,9 @@ ms.technology: windows-sec
 
 You can add information about your organization in a contact card to the Windows Security app. You can include a link to a support site, a phone number for a help desk, and an email address for email-based support.
 
-![The security center custom fly-out.](images/security-center-custom-flyout.png)
+![The Windows Security custom fly-out.](images/security-center-custom-flyout.png)
 
-This information will also be shown in some enterprise-specific notifications (including notifications for the [Block at first sight feature](/windows/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus), and [potentially unwanted applications](/windows/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)).
+This information will also be shown in some enterprise-specific notifications (including notifications for the [Block at first sight feature](/microsoft-365/security/defender-endpoint/configure-block-at-first-sight-microsoft-defender-antivirus), and [potentially unwanted applications](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)).
 
 Users can select the displayed information to initiate a support request:
 
