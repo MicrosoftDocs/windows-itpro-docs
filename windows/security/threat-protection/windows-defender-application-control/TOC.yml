@@ -46,9 +46,9 @@
             - name: Policy creation for common WDAC usage scenarios
               href: types-of-devices.md
               items: 
-                - name: Create a WDAC policy for lightly-managed devices
+                - name: Create a WDAC policy for lightly managed devices
                   href: create-wdac-policy-for-lightly-managed-devices.md
-                - name: Create a WDAC policy for fully-managed devices
+                - name: Create a WDAC policy for fully managed devices
                   href: create-wdac-policy-for-fully-managed-devices.md
                 - name: Create a WDAC policy for fixed-workload devices
                   href: create-initial-default-policy.md
@@ -101,19 +101,28 @@
           href: disable-windows-defender-application-control-policies.md
         - name: LOB Win32 Apps on S Mode
           href: LOB-win32-apps-on-s.md
-    - name: Windows Defender Application Control operational guide
+    - name: WDAC operational guide
       href: windows-defender-application-control-operational-guide.md
       items: 
-        - name: Understanding Application Control event IDs
-          href: event-id-explanations.md
         - name: Understanding Application Control event tags
           href: event-tag-explanations.md
+        - name: Understanding Application Control event IDs
+          href: event-id-explanations.md
         - name: Query WDAC events with Advanced hunting
           href: querying-application-control-events-centrally-using-advanced-hunting.md
         - name: Known Issues
           href: operations/known-issues.md
         - name: Managed installer and ISG technical reference and troubleshooting guide
           href: configure-wdac-managed-installer.md
+    - name: WDAC AppId Tagging guide
+      href: AppIdTagging/windows-defender-application-control-appid-tagging-guide.md
+      items:
+        - name: Creating AppId Tagging Policies
+          href: AppIdTagging/design-create-appid-tagging-policies.md
+        - name: Deploying AppId Tagging Policies
+          href: AppIdTagging/deploy-appid-tagging-policies.md
+        - name: Testing and Debugging AppId Tagging Policies
+          href: AppIdTagging/debugging-operational-guide-appid-tagging-policies.md
     - name: AppLocker
       href: applocker\applocker-overview.md
       items: 

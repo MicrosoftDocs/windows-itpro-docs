@@ -1,15 +1,15 @@
 ---
 title: Application Publishing and Client Interaction (Windows 10/11)
 description: Learn technical information about common App-V Client operations and their integration with the local operating system.
-author: greg-lindsay
+author: aczechowski
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 06/08/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
 # Application publishing and client interaction
@@ -346,7 +346,7 @@ This process will recreate both the local and network locations for AppData and 
 
 In an App-V Full Infrastructure, after applications are sequenced they are managed and published to users or computers through the App-V Management and Publishing servers. This section details the operations that occur during the common App-V application lifecycle operations (Add, publishing, launch, upgrade, and removal) and the file and registry locations that are changed and modified from the App-V Client perspective. The App-V Client operations are input as PowerShell commands on the computer running the App-V Client.
 
-This document focuses on App-V Full Infrastructure solutions. For specific information on App-V Integration with Configuration Manager 2012, see [Integrating Virtual Application Management with App-V 5 and Configuration Manager 2012 SP1](https://www.microsoft.com/download/details.aspx?id=38177).
+This document focuses on App-V Full Infrastructure solutions. For specific information on App-V Integration with Microsoft Endpoint Configuration Manager, see [Deploy App-V virtual applications with Configuration Manager](/mem/configmgr/apps/get-started/deploying-app-v-virtual-applications).
 
 The App-V application lifecycle tasks are triggered at user sign in (default), machine startup, or as background timed operations. The settings for the App-V Client operations, including Publishing Servers, refresh intervals, package script enablement, and others, are configured (after the client is enabled) with Windows PowerShell commands. See [App-V Client Configuration Settings: Windows PowerShell](appv-client-configuration-settings.md#app-v-client-configuration-settings-windows-powershell).
 

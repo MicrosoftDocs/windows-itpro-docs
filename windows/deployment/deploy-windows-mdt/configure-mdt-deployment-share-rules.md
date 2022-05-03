@@ -4,7 +4,7 @@ description: Learn how to configure the MDT rules engine to reach out to other r
 ms.assetid: b5ce2360-33cc-4b14-b291-16f75797391b
 ms.reviewer: 
 manager: dougeby
-ms.author: greglin
+ms.author: aaroncz
 keywords: rules, configuration, automate, deploy
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ---
 

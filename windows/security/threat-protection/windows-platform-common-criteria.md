@@ -234,33 +234,6 @@ Certified against the Protection Profile for General Purpose Operating Systems.
 - [Administrative Guide](https://www.microsoft.com/downloads/en/details.aspx?familyid=cb19538d-9e13-4ab6-af38-8f48abfdad08)
 - [Certification Report](http://www.commoncriteriaportal.org:80/files/epfiles/0570a_pdf.pdf) 
 
-### Windows XP and Windows Server 2003
-
-- [Security Target - Windows Server 2003 SP2 including R2, x64, and IA64; Windows XP Professional SP2 and x64 SP2; and Windows XP Embedded SP2](https://www.commoncriteriaportal.org/files/epfiles/st_vid10184-st.pdf)
-- [Identifying Windows XP and Windows Server 2003 Common Criteria Certified Requirements for the NIST Special Publication 800-53](https://download.microsoft.com/download/a/9/6/a96d1dfc-2bd4-408d-8d93-e0ede7529691/xpws03_ccto800-53.doc)
-- [Windows Server 2003 SP2 R2 Administrator Guide 3.0](https://www.microsoft.com/downloads/details.aspx?familyid=39598841-e693-4891-9234-cfd1550f3949)
-- [Windows Server 2003 SP2 R2 Configuration Guide 3.0](https://www.microsoft.com/downloads/details.aspx?familyid=4f7b6a93-0307-480f-a5af-a20268cbd7cc)
-- [Windows Server 2003 SP1 Administrator's Guide](https://www.microsoft.com/downloads/en/details.aspx?familyid=75736009-59e9-4a71-879e-cf581817b8cc)
-- [Windows Server 2003 SP1 Configuration Guide](https://www.microsoft.com/downloads/en/details.aspx?familyid=a0ad1856-beb7-4285-b47c-381e8a210c38)
-- [Windows Server 2003 with x64 Hardware Administrator's Guide](https://www.microsoft.com/downloads/details.aspx?familyid=8a26829f-c177-4b79-913a-4135fb7b96ef)
-- [Windows Server 2003 with x64 Hardware Configuration Guide](https://www.microsoft.com/downloads/details.aspx?familyid=3f9ecd0a-74dd-4d23-a4e5-d7b63fed70e8)
-- [Windows XP Administrator Guide 3.0](https://www.microsoft.com/downloads/details.aspx?familyid=9a7f0b16-72ce-4675-aec8-58785c4e37ee)
-- [Windows XP Configuration Guide 3.0](https://www.microsoft.com/downloads/details.aspx?familyid=165da57d-f066-4ddf-9462-cbecfcd68694)
-- [Windows XP User Guide 3.0](https://www.microsoft.com/downloads/details.aspx?familyid=7c1a4761-9b9e-429c-84eb-cd7b034c5779)
-- [Windows XP Professional with x64 Hardware Administrator's Guide](https://www.microsoft.com/downloads/details.aspx?familyid=346f041e-d641-4af7-bdea-c5a3246d0431)
-- [Windows XP Professional with x64 Hardware Configuration Guide](https://www.microsoft.com/downloads/details.aspx?familyid=a7075319-cc3d-4420-a00b-8c9a7068ad54)
-- [Windows XP Professional with x64 Hardware User’s Guide](https://www.microsoft.com/downloads/details.aspx?familyid=26c49cf5-6159-4197-97ce-bf1fdfc54569)
-- [Windows XP Professional Administrator's Guide](https://www.microsoft.com/downloads/en/details.aspx?familyid=9bcac470-a0b3-4d34-a561-fa8308c0ff60)
-- [Windows XP Professional Configuration Guide](https://www.microsoft.com/downloads/en/details.aspx?familyid=9f04915e-571a-422d-8ffa-5797051e81de)
-- [Windows XP Professional User's Guide](https://www.microsoft.com/downloads/en/details.aspx?familyid=d39d0028-7093-495c-80da-2b5b29a54bd8)
-- [Windows XP / Windows Server 2003 with x64 Hardware ETR](https://www.microsoft.com/downloads/details.aspx?familyid=6e8d98f9-25b9-4c85-9bd9-24d91ea3c9ef)
-- [Windows XP / Windows Server 2003 with x64 Hardware ETR, Part II](https://www.microsoft.com/downloads/details.aspx?familyid=0c35e7d8-9c56-4686-b902-d5ffb9915658)
-- [Windows Server 2003 SP2 including R2, Standard, Enterprise, Datacenter, x64, and Itanium Editions Validation Report](https://www.commoncriteriaportal.org/files/epfiles/20080303_st_vid10184-vr.pdf)
-- [Windows XP Professional SP2 and x64 SP2 Validation Report](https://www.commoncriteriaportal.org/files/epfiles/20080303_st_vid10184-vr.pdf)
-- [Windows XP Embedded SP2 Validation Report](https://www.commoncriteriaportal.org/files/epfiles/20080303_st_vid10184-vr.pdf)
-- [Windows XP and Windows Server 2003 ETR](https://www.microsoft.com/downloads/details.aspx?familyid=63cf2a1e-f578-4bb5-9245-d411f0f64265)
-- [Windows XP and Windows Server 2003 Validation Report](https://www.commoncriteriaportal.org/files/epfiles/st_vid9506-vr.pdf)
-
 ### Windows Server 2003 Certificate Server
 
 - [Security Target](https://www.commoncriteriaportal.org/files/epfiles/st_vid9507-st.pdf)

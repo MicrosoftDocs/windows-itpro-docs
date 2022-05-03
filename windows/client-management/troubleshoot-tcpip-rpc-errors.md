@@ -19,7 +19,7 @@ You might encounter an **RPC server unavailable** error when connecting to Windo
 
 ![The following error has occurred: the RPC server is unavailable.](images/rpc-error.png)
 
-This is a commonly encountered error message in the networking world and one can lose hope very fast without trying to understand much, as to what is happening ‘under the hood’. 
+This message is a commonly encountered error message in the networking world and one can lose hope fast without trying to understand much, as to what is happening ‘under the hood’. 
 
 Before getting in to troubleshooting the <em>*RPC server unavailable</em>- error, let’s first understand basics about the error. There are a few important terms to understand:
 
@@ -29,7 +29,7 @@ Before getting in to troubleshooting the <em>*RPC server unavailable</em>- error
 - UUID – a well-known GUID that identifies the RPC application. The UUID is what you use to see a specific kind of RPC application conversation, as there are likely to be many.
 - Opnum – the identifier of a function that the client wants the server to execute. It’s just a hexadecimal number, but a good network analyzer will translate the function for you. If neither knows, your application vendor must tell you.
 - Port – the communication endpoints for the client and server applications.
-- Stub data – the information given to functions and data exchanged between the client and server. This is the payload, the important part.
+- Stub data – the information given to functions and data exchanged between the client and server. This data is the payload, the important part.
  
 >[!Note]
 > A lot of the above information is used in troubleshooting, the most important is the Dynamic RPC port number you get while talking to EPM.
@@ -47,10 +47,10 @@ Remote Procedure Call (RPC) dynamic port allocation is used by server applicatio
  
 Customers using firewalls may want to control which ports RPC is using so that their firewall router can be configured to forward only these Transmission Control Protocol (UDP and TCP) ports. Many RPC servers in Windows let you specify the server port in custom configuration items such as registry entries. When you can specify a dedicated server port, you know what traffic flows between the hosts across the firewall, and you can define what traffic is allowed in a more directed manner.
  
-As a server port, please choose a port outside of the range you may want to specify below. You can find a comprehensive list of server ports that are used in Windows and major Microsoft products in the article [Service overview and network port requirements for Windows](/troubleshoot/windows-server/networking/service-overview-and-network-port-requirements).
+As a server port, choose a port outside of the range you may want to specify below. You can find a comprehensive list of server ports that are used in Windows and major Microsoft products in the article [Service overview and network port requirements for Windows](/troubleshoot/windows-server/networking/service-overview-and-network-port-requirements).
 The article also lists the RPC servers and which RPC servers can be configured to use custom server ports beyond the facilities the RPC runtime offers. 
  
-Some firewalls also allow for UUID filtering where it learns from a RPC Endpoint Mapper request for a RPC interface UUID. The response has the server port number, and a subsequent RPC Bind on this port is then allowed to pass.
+Some firewalls also allow for UUID filtering where it learns from an RPC Endpoint Mapper request for an RPC interface UUID. The response has the server port number, and a subsequent RPC Bind on this port is then allowed to pass.
  
 With Registry Editor, you can modify the following parameters for RPC. The RPC Port key values discussed below are all located in the following key in the registry:
  
@@ -58,11 +58,11 @@ With Registry Editor, you can modify the following parameters for RPC. The RPC P
 
 **Ports REG_MULTI_SZ**
  
-- Specifies a set of IP port ranges consisting of either all the ports available from the Internet or all the ports not available from the Internet. Each string represents a single port or an inclusive set of ports. For example, a single port may be represented by **5984**, and a set of ports may be represented by **5000-5100**. If any entries are outside the range of 0 to 65535, or if any string cannot be interpreted, the RPC runtime treats the entire configuration as invalid.
+- Specifies a set of IP port ranges consisting of either all the ports available from the Internet or all the ports not available from the Internet. Each string represents a single port or an inclusive set of ports. For example, a single port may be represented by **5984**, and a set of ports may be represented by **5000-5100**. If any entries are outside the range of 0 to 65535, or if any string can't be interpreted, the RPC runtime treats the entire configuration as invalid.
  
 **PortsInternetAvailable REG_SZ Y or N (not case-sensitive)**
  
-- If Y, the ports listed in the Ports key are all the Internet-available ports on that computer. If N, the ports listed in the Ports key are all those ports that are not Internet-available.
+- If Y, the ports listed in the Ports key are all the Internet-available ports on that computer. If N, the ports listed in the Ports key are all those ports that aren't Internet-available.
  
 **UseInternetPorts REG_SZ ) Y or N (not case-sensitive)**
  
@@ -72,7 +72,7 @@ With Registry Editor, you can modify the following parameters for RPC. The RPC P
  
 **Example:**
 
-In this example ports 5000 through 6000 inclusive have been arbitrarily selected to help illustrate how the new registry key can be configured. This is not a recommendation of a minimum number of ports needed for any particular system.
+In this example, ports 5000 through 6000 inclusive have been arbitrarily selected to help illustrate how the new registry key can be configured. This example isn't a recommendation of a minimum number of ports needed for any particular system.
 
 1. Add the Internet key under: HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc
 
@@ -108,13 +108,13 @@ If you would like to do a deep dive as to how it works, see [RPC over IT/Pro](ht
  
 ### PortQuery
 
-The best thing to always troubleshoot RPC issues before even getting in to traces is by making use of tools like **PortQry**. You can quickly determine if you are able to make a connection by running the command:
+The best thing to always troubleshoot RPC issues before even getting in to traces is by making use of tools like **PortQry**. You can quickly determine if you're able to make a connection by running the command:
 
 ```console
 Portqry.exe -n <ServerIP> -e 135
 ``` 
  
-This would give you a lot of output to look for, but you should be looking for <em>*ip_tcp</em>- and the port number in the brackets, which tells whether you were successfully able to get a dynamic port from EPM and also make a connection to it. If the above fails, you can typically start collecting simultaneous network traces. Something like this from the output of “PortQry”:
+This command would give you much of the output to look for, but you should be looking for <em>*ip_tcp</em>- and the port number in the brackets, which tells whether you were successfully able to get a dynamic port from EPM and also make a connection to it. If the above fails, you can typically start collecting simultaneous network traces. Something like this from the output of “PortQry”:
 
 ```console
 Portqry.exe -n 169.254.0.2 -e 135
@@ -138,7 +138,7 @@ The one in bold is the ephemeral port number that you made a connection to succe
  
 ### Netsh
 
-You can run the commands below to leverage Windows inbuilt netsh captures, to collect a simultaneous trace. Remember to execute the below on an “Admin CMD”, it requires elevation.
+You can run the commands below to use Windows inbuilt netsh captures, to collect a simultaneous trace. Remember to execute the below on an “Admin CMD”, it requires elevation.
  
 - On the client
 
@@ -164,30 +164,30 @@ Open the traces in [Microsoft Network Monitor 3.4](troubleshoot-tcpip-netmon.md)
 
 - Look for the “EPM” Protocol Under the “Protocol” column.
 
-- Now check if you are getting a response from the server. If you get a response, note the dynamic port number that you have been allocated to use.
+- Now check if you're getting a response from the server. If you get a response, note the dynamic port number that you've been allocated to use.
 
   :::image type="content" alt-text="Screenshot of Network Monitor with dynamic port highlighted." source="images/tcp-ts-23.png" lightbox="images/tcp-ts-23.png":::
 
-- Check if we are connecting successfully to this Dynamic port successfully.
+- Check if we're connecting successfully to this Dynamic port successfully.
 
 - The filter should be something like this: `tcp.port==<dynamic-port-allocated>` and `ipv4.address==<server-ip>` 
 
   :::image type="content" alt-text="Screenshot of Network Monitor with filter applied." source="images/tcp-ts-24.png" lightbox="images/tcp-ts-24.png":::
 
-This should help you verify the connectivity and isolate if any network issues are seen.
+This filter should help you verify the connectivity and isolate if any network issues are seen.
 
 
 ### Port not reachable
 
-The most common reason why we would see the RPC server unavailable is when the dynamic port that the client tries to connect is not reachable. The client side trace would then show TCP SYN retransmits for the dynamic port.
+The most common reason why we would see the RPC server unavailable is when the dynamic port that the client tries to connect isn't reachable. The client side trace would then show TCP SYN retransmits for the dynamic port.
  
 :::image type="content" alt-text="Screenshot of Network Monitor with TCP SYN retransmits." source="images/tcp-ts-25.png" lightbox="images/tcp-ts-25.png":::
  
-The port cannot be reachable due to one of the following reasons:
+The port can't be reachable due to one of the following reasons:
 
 - The dynamic port range is blocked on the firewall in the environment. 
 - A middle device is dropping the packets. 
-- The destination server is dropping the packets (WFP drop / NIC drop/ Filter driver etc).
+- The destination server is dropping the packets (WFP drop / NIC drop/ Filter driver etc.).
 
 
 
