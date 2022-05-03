@@ -19,9 +19,9 @@ The NAP (Network Access Point) Configuration Service Provider is used to manage 
 > [!Note]
 > This configuration service provider requires the `ID_CAP_CSP_FOUNDATION` and `ID_CAP_NETWORKING_ADMIN` capabilities to be accessed from a network configuration application.
 
-For the NAP CSP, you cannot use the Replace command unless the node already exists.
+For the NAP CSP, you can't use the Replace command unless the node already exists.
 
-The following shows the NAP configuration service provider management object in tree format as used by OMA DM. The OMA Client Provisioning protocol is not supported by this configuration service provider.
+The following example shows the NAP configuration service provider management object in tree format as used by OMA DM. The OMA Client Provisioning protocol isn't supported by this configuration service provider.
 
 ```console
 ./Vendor/MSFT
@@ -67,7 +67,7 @@ Root node.
 <a href="" id="napx"></a>***NAPX***  
 Required. Defines the name of the network access point.
 
-It is recommended that this element name is specified as a numbered node beginning at zero. For example, to provision two network access points, use "NAP0" and "NAP1" as the element names. Any unique name can be used if desired (such as "GPRS-NAP"), but no spaces may appear in the name (use %20 instead).
+It's recommended that this element name is specified as a numbered node beginning at zero. For example, to provision two network access points, use "NAP0" and "NAP1" as the element names. Any unique name can be used if desired (such as "GPRS-NAP"), but no spaces may appear in the name (use %20 instead).
 
 <a href="" id="napx-napid"></a>***NAPX*/NAPID**  
 Required. Specifies the identifier of the destination network.
@@ -105,13 +105,13 @@ Optional. Specifies the user name and domain to be used during authentication. T
 <a href="" id="napx-authinfo-authsecret"></a>***NAPX*/AuthInfo/AuthSecret**  
 Optional. Specifies the password used during authentication.
 
-Queries of this field will return a string composed of sixteen asterisks (\*).
+Queries of this field will return a string composed of 16 asterisks (\*).
 
 <a href="" id="napx-bearer"></a>***NAPX*/Bearer**  
 Node.
 
 <a href="" id="napx-bearer-bearertype"></a>***NAPX*/Bearer/BearerType**  
-Required. Specifies the network type of the destination network. This can be set to GPRS, CDMA2000, WCDMA, TDMA, CSD, DTPT, WiFi.
+Required. Specifies the network type of the destination network. This parameter's value can be set to GPRS, CDMA2000, WCDMA, TDMA, CSD, DTPT, WiFi.
 
 ## Related articles
 
