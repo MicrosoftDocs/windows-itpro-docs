@@ -46,7 +46,7 @@ All of the **Microsoft Store for Business and Education** PowerShell cmdlets fol
 
 ## Install Microsoft Store for Business and Education PowerShell module
 > [!NOTE]
-> Installing **Microsoft Store for Business and Education** PowerShell model using **PowerShellGet** requires [Windows Management Framework 5.0](https://www.microsoft.com/download/details.aspx?id=48729). The framework is included with Windows 10 by default).
+> Installing **Microsoft Store for Business and Education** PowerShell model using **PowerShellGet** requires [Windows Management Framework 5.0](https://www.microsoft.com/download/details.aspx?id=54616). The framework is included with Windows 10 by default).
 
 To install **Microsoft Store for Business and Education PowerShell** with PowerShellGet, run this command:
 

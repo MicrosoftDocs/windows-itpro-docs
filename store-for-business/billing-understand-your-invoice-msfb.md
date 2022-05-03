@@ -110,7 +110,7 @@ At the bottom of the invoice, there are instructions for paying your bill. You c
 If you have third-party services in your bill, the name and address of each publisher is listed at the bottom of your invoice.
 
 ## Next steps
-If there are Azure charges on your invoice that you would like more details on, see [Understand the Azure charges on your Microsoft Customer Agreement invoice](/azure/cost-management-billing/understand/download-azure-invoice#invoices-for-mca-and-mpa-billing-accounts).
+If there are Azure charges on your invoice that you would like more details on, see [Understand the Azure charges on your Microsoft Customer Agreement invoice](/azure/cost-management-billing/understand/mca-understand-your-invoice).
 
 ## Need help? Contact us.
 

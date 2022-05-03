@@ -1473,6 +1473,10 @@ xmlns="http://schemas.microsoft.com/windows/security/healthcertificate/validatio
 </HealthCertificateValidationResponse>
 ```
 
+## Security Considerations
+DHA anchors its trust in the TPM and its measurements. If TPM measurements can be spoofed or tampered, DHA can't provide any guarantee of device health for that device.
+For more information, see [PC Client TPM Certification](https://trustedcomputinggroup.org/resource/pc-client-tpm-certification/).
+
 ## Related topics
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
