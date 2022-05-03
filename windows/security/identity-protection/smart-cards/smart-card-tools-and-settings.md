@@ -1,7 +1,7 @@
 ---
 title: Smart Card Tools and Settings (Windows)
 description: This topic for the IT professional and smart card developer links to information about smart card debugging, settings, and events.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 11/19/2020
 ms.reviewer: 
 manager: dansimp
@@ -42,38 +42,14 @@ manager: dansimp
 <a href="" id="admx-devicesetup-deviceinstall-balloontips"></a>**ADMX_DeviceSetup/DeviceInstall_BalloonTips**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -90,9 +66,9 @@ manager: dansimp
 <!--Description-->
 This policy setting allows you to turn off "Found New Hardware" balloons during device installation.
 
-If you enable this policy setting, "Found New Hardware" balloons do not appear while a device is being installed.
+If you enable this policy setting, "Found New Hardware" balloons don't appear while a device is being installed.
 
-If you disable or do not configure this policy setting, "Found New Hardware" balloons appear while a device is being installed, unless the driver for the device suppresses the balloons.
+If you disable or don't configure this policy setting, "Found New Hardware" balloons appear while a device is being installed, unless the driver for the device suppresses the balloons.
 
 <!--/Description-->
 
@@ -112,38 +88,14 @@ ADMX Info:
 <a href="" id="admx-devicesetup-driversearchplaces-searchorderconfiguration"></a>**ADMX_DeviceSetup/DriverSearchPlaces_SearchOrderConfiguration**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -162,9 +114,9 @@ This policy setting allows you to specify the order in which Windows searches so
 
 If you enable this policy setting, you can select whether Windows searches for drivers on Windows Update unconditionally, only if necessary, or not at all.
 
-Note that searching always implies that Windows will attempt to search Windows Update exactly one time. With this setting, Windows will not continually search for updates. This setting is used to ensure that the best software will be found for the device, even if the network is temporarily available. If the setting for searching only if needed is specified, then Windows will search for a driver only if a driver is not locally available on the system.
+Searching always implies that Windows will attempt to search Windows Update exactly one time. With this setting, Windows won't continually search for updates. This setting is used to ensure that the best software will be found for the device, even if the network is temporarily available. If the setting for searching only if needed is specified, then Windows will search for a driver only if a driver isn't locally available on the system.
 
-If you disable or do not configure this policy setting, members of the Administrators group can determine the priority order in which Windows searches source locations for device drivers.
+If you disable or don't configure this policy setting, members of the Administrators group can determine the priority order in which Windows searches source locations for device drivers.
 
 <!--/Description-->
 

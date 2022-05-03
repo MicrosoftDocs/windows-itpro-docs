@@ -4,15 +4,15 @@ description: Learn about reference information for Windows Update error codes, i
 ms.prod: w10
 ms.mktglfcycl: 
 audience: itpro
-itproauthor: jaimeo
-author: jaimeo
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.localizationpriority: medium
 ms.audience: itpro
 ms.date: 09/18/2018
-ms.reviewer: 
-manager: laurawi
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.collection: highpri
 ---
 
 # Windows Update error codes by component

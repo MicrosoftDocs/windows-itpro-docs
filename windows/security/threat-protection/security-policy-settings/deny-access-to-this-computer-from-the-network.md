@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/19/2021
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Deny access to this computer from the network

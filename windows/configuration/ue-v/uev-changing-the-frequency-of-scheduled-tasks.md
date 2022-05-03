@@ -1,15 +1,15 @@
 ---
 title: Changing the Frequency of UE-V Scheduled Tasks
 description: Learn how to create a script that uses the Schtasks.exe command-line options so you can change the frequency of UE-V scheduled tasks.
-author: greg-lindsay
+author: aczechowski
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
 
@@ -29,8 +29,8 @@ When the User Experience Virtualization (UE-V) service is enabled, it creates th
 
 -   [Template Auto Update](#template-auto-update)
 
-**Note**<br>
-These tasks must remain enabled, because UE-V cannot function without them.
+> [!NOTE]
+> These tasks must remain enabled, because UE-V cannot function without them.
 
 These scheduled tasks are not configurable with the UE-V tools. Administrators who want to change the scheduled task for these items can create a script that uses the Schtasks.exe command-line options.
 
@@ -44,55 +44,21 @@ The following scheduled tasks are included in UE-V with sample scheduled task co
 
 The **Monitor Application Settings** task is used to synchronize settings for Windows apps. It is runs at logon but is delayed by 30 seconds to not affect the logon detrimentally. The Monitor Application Status task runs the UevAppMonitor.exe file, which is located in the UE-V Agent installation directory.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Task name</th>
-<th align="left">Default event</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>\Microsoft\UE-V\Monitor Application Status</p></td>
-<td align="left"><p>Logon</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Task name|Default event|
+|--- |--- |
+|\Microsoft\UE-V\Monitor Application Status|Logon|
 
 ### Sync Controller Application
 
 The **Sync Controller Application** task is used to start the Sync Controller to synchronize settings from the computer to the settings storage location. By default, the task runs every 30 minutes. At that time, local settings are synchronized to the settings storage location, and updated settings on the settings storage location are synchronized to the computer. The Sync Controller application runs the Microsoft.Uev.SyncController.exe, which is located in the UE-V Agent installation directory.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Task name</th>
-<th align="left">Default event</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>\Microsoft\UE-V\Sync Controller Application</p></td>
-<td align="left"><p>Logon, and every 30 minutes thereafter</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Task name|Default event|
+|--- |--- |
+|\Microsoft\UE-V\Sync Controller Application|Logon, and every 30 minutes thereafter|
 
 For example, the following command configures the agent to synchronize settings every 15 minutes instead of the default 30 minutes.
 
-``` syntax
+```console
 Schtasks /change /tn “Microsoft\UE-V\Sync Controller Application” /ri 15
 ```
 
@@ -100,118 +66,36 @@ Schtasks /change /tn “Microsoft\UE-V\Sync Controller Application” /ri 15
 
 The **Synchronize Settings at Logoff** task is used to start an application at logon that controls the synchronization of applications at logoff for UE-V. The Synchronize Settings at Logoff task runs the Microsoft.Uev.SyncController.exe file, which is located in the UE-V Agent installation directory.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Task name</th>
-<th align="left">Default event</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>\Microsoft\UE-V\Synchronize Settings at Logoff</p></td>
-<td align="left"><p>Logon</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Task name|Default event|
+|--- |--- |
+|\Microsoft\UE-V\Synchronize Settings at Logoff|Logon|
 
 ### Template Auto Update
 
 The **Template Auto Update** task checks the settings template catalog for new, updated, or removed templates. This task only runs if the SettingsTemplateCatalog is configured. The **Template Auto Update** task runs the ApplySettingsCatalog.exe file, which is located in the UE-V Agent installation directory.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Task name</th>
-<th align="left">Default event</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>\Microsoft\UE-V\Template Auto Update</p></td>
-<td align="left"><p>System startup and at 3:30 AM every day, at a random time within a 1-hour window</p></td>
-</tr>
-</tbody>
-</table>
+|Task name|Default event|
+|--- |--- |
+|\Microsoft\UE-V\Template Auto Update|System startup and at 3:30 AM every day, at a random time within a 1-hour window|
 
- 
 
 **Example:** The following command configures the UE-V service to check the settings template catalog store every hour.
 
-``` syntax
+```console
 schtasks /change /tn "Microsoft\UE-V\Template Auto Update" /ri 60
 ```
 
 
 ## UE-V Scheduled Task Details
 
-
 The following chart provides additional information about scheduled tasks for UE-V 2:
 
-<table>
-<colgroup>
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Task Name</strong> (file name)</p></td>
-<td align="left"><p><strong>Default Frequency</strong></p></td>
-<td align="left"><p><strong>Power Toggle</strong></p></td>
-<td align="left"><p><strong>Idle Only</strong></p></td>
-<td align="left"><p><strong>Network Connection</strong></p></td>
-<td align="left"><p><strong>Description</strong></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Monitor Application Settings</strong> (UevAppMonitor.exe)</p></td>
-<td align="left"><p>Starts 30 seconds after logon and continues until logoff.</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>N/A</p></td>
-<td align="left"><p>Synchronizes settings for Windows (AppX) apps.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Sync Controller Application</strong> (Microsoft.Uev.SyncController.exe)</p></td>
-<td align="left"><p>At logon and every 30 min thereafter.</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Only if Network is connected</p></td>
-<td align="left"><p>Starts the Sync Controller which synchronizes local settings with the settings storage location.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Synchronize Settings at Logoff</strong> (Microsoft.Uev.SyncController.exe)</p></td>
-<td align="left"><p>Runs at logon and then waits for Logoff to Synchronize settings.</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>N/A</p></td>
-<td align="left"><p>Start an application at logon that controls the synchronization of applications at logoff.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Template Auto Update</strong> (ApplySettingsCatalog.exe)</p></td>
-<td align="left"><p>Runs at initial logon and at 3:30 AM every day thereafter.</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>N/A</p></td>
-<td align="left"><p>Checks the settings template catalog for new, updated, or removed templates. This task only runs if SettingsTemplateCatalog is configured.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Task Name (file name)|Default Frequency|Power Toggle|Idle Only|Network Connection|Description|
+|--- |--- |--- |--- |--- |--- |
+|**Monitor Application Settings** (UevAppMonitor.exe)|Starts 30 seconds after logon and continues until logoff.|No|Yes|N/A|Synchronizes settings for Windows (AppX) apps.|
+|**Sync Controller Application** (Microsoft.Uev.SyncController.exe)|At logon and every 30 min thereafter.|Yes|Yes|Only if Network is connected|Starts the Sync Controller which synchronizes local settings with the settings storage location.|
+|**Synchronize Settings at Logoff** (Microsoft.Uev.SyncController.exe)|Runs at logon and then waits for Logoff to Synchronize settings.|No|Yes|N/A|Start an application at logon that controls the synchronization of applications at logoff.|
+|**Template Auto Update** (ApplySettingsCatalog.exe)|Runs at initial logon and at 3:30 AM every day thereafter.|Yes|No|N/A|Checks the settings template catalog for new, updated, or removed templates. This task only runs if SettingsTemplateCatalog is configured.|
 
 **Legend**
 

@@ -3,7 +3,7 @@ title: Trusted Platform Module (TPM) fundamentals (Windows)
 description: Inform yourself about the components of the Trusted Platform Module (TPM 1.2 and TPM 2.0) and how they are used to mitigate dictionary attacks.
 ms.assetid: ac90f5f9-9a15-4e87-b00d-4adcf2ec3000
 ms.reviewer: 
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,17 +11,19 @@ author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+  - M365-security-compliance
+  - highpri
 ms.topic: conceptual
-ms.date: 09/06/2021
+ms.date: 12/27/2021
 ---
 
 # TPM fundamentals
 
 **Applies to**
--   Windows 10
+-   Windows 10
 -   Windows 11
--   Windows Server 2016 and above
+-   Windows Server 2016 and later
 
 This article for the IT professional provides a description of the components of the Trusted Platform Module (TPM 1.2 and TPM 2.0) and explains how they are used to mitigate dictionary attacks.
 
@@ -104,11 +106,11 @@ Because many entities can use the TPM, a single authorization success cannot res
 
 TPM 2.0 has well defined anti-hammering behavior. This is in contrast to TPM 1.2 for which the anti-hammering protection was implemented by the manufacturer and the logic varied widely throughout the industry.
 
-For systems with TPM 2.0, the TPM is configured by Windows to lock after 32 authorization failures and to forget one authorization failure every two hours. This means that a user could quickly attempt to use a key with the wrong authorization value 32 times. For each of the 32 attempts, the TPM records if the authorization value was correct or not. This inadvertently causes the TPM to enter a locked state after 32 failed attempts.
+For systems with TPM 2.0, the TPM is configured by Windows to lock after 32 authorization failures and to forget one authorization failure every 10 minutes. This means that a user could quickly attempt to use a key with the wrong authorization value 32 times. For each of the 32 attempts, the TPM records if the authorization value was correct or not. This inadvertently causes the TPM to enter a locked state after 32 failed attempts.
 
-Attempts to use a key with an authorization value for the next two hours would not return success or failure; instead the response indicates that the TPM is locked. After two hours, one authorization failure is forgotten and the number of authorization failures remembered by the TPM drops to 31, so the TPM leaves the locked state and returns to normal operation. With the correct authorization value, keys could be used normally if no authorization failures occur during the next two hours. If a period of 64 hours elapses with no authorization failures, the TPM does not remember any authorization failures, and 32 failed attempts could occur again.
+Attempts to use a key with an authorization value for the next 10 minutes would not return success or failure; instead the response indicates that the TPM is locked. After 10 minutes, one authorization failure is forgotten and the number of authorization failures remembered by the TPM drops to 31, so the TPM leaves the locked state and returns to normal operation. With the correct authorization value, keys could be used normally if no authorization failures occur during the next 10 minutes. If a period of 320 minutes elapses with no authorization failures, the TPM does not remember any authorization failures, and 32 failed attempts could occur again.
 
-Windows 8 Certification does not require TPM 2.0 systems to forget about authorization failures when the system is fully powered off or when the system has hibernated. Windows does require that authorization failures are forgotten when the system is running normally, in a sleep mode, or in low power states other than off. If a Windows system with TPM 2.0 is locked, the TPM leaves lockout mode if the system is left on for two hours.
+Windows 8 Certification does not require TPM 2.0 systems to forget about authorization failures when the system is fully powered off or when the system has hibernated. Windows does require that authorization failures are forgotten when the system is running normally, in a sleep mode, or in low power states other than off. If a Windows system with TPM 2.0 is locked, the TPM leaves lockout mode if the system is left on for 10 minutes.
 
 The anti-hammering protection for TPM 2.0 can be fully reset immediately by sending a reset lockout command to the TPM and providing the TPM owner password. By default, Windows automatically provisions TPM 2.0 and stores the TPM owner password for use by system administrators.
 
@@ -122,20 +124,9 @@ Originally, BitLocker allowed from 4 to 20 characters for a PIN.
 Windows Hello has its own PIN for logon, which can be 4 to 127 characters.
 Both BitLocker and Windows Hello use the TPM to prevent PIN brute-force attacks.
 
-The TPM can be configured to use Dictionary Attack Prevention parameters ([lockout threshold and lockout duration](trusted-platform-module-services-group-policy-settings.md)) to control how many failed authorizations attempts are allowed before the TPM is locked out, and how much time must elapse before another attempt can be made.
+Windows 10, version 1607 and earlier used Dictionary Attack Prevention parameters. The Dictionary Attack Prevention Parameters provide a way to balance security needs with usability. For example, when BitLocker is used with a TPM + PIN configuration, the number of PIN guesses is limited over time. A TPM 2.0 in this example could be configured to allow only 32 PIN guesses immediately, and then only one more guess every two hours. This totals a maximum of about 4415 guesses per year. If the PIN is 4 digits, all 9999 possible PIN combinations could be attempted in a little over two years.
 
-The Dictionary Attack Prevention Parameters provide a way to balance security needs with usability.
-For example, when BitLocker is used with a TPM + PIN configuration, the number of PIN guesses is limited over time.
-A TPM 2.0 in this example could be configured to allow only 32 PIN guesses immediately, and then only one more guess every two hours.
-This totals a maximum of about 4415 guesses per year.
-If the PIN is 4 digits, all 9999 possible PIN combinations could be attempted in a little over two years.
-
-Increasing the PIN length requires a greater number of guesses for an attacker.
-In that case, the lockout duration between each guess can be shortened to allow legitimate users to retry a failed attempt sooner, while maintaining a similar level of protection.
-
-Beginning with Windows 10, version 1703, the minimum length for the BitLocker PIN was increased to 6 characters to better align with other Windows features that leverage TPM 2.0, including Windows Hello.
-To help organizations with the transition, with Windows 10, version 1703 with the October 2017 [cumulative update](https://support.microsoft.com/help/4018124) installed, Windows 10, version 1709 and higher, and Windows 11, the BitLocker PIN length is 6 characters by default, but it can be reduced to 4 characters.
-If the minimum PIN length is reduced from the default of six characters, then the TPM 2.0 lockout period will be extended.
+Beginning with Windows 10, version 1703, the minimum length for the BitLocker PIN was increased to 6 characters to better align with other Windows features that leverage TPM 2.0, including Windows Hello. Increasing the PIN length requires a greater number of guesses for an attacker. Therefore, the lockout duration between each guess was shortened to allow legitimate users to retry a failed attempt sooner while maintaining a similar level of protection. In case the legacy parameters for lockout threshold and recovery time need to be used, make sure that GPO is enabled and [configure the system to use legacy Dictionary Attack Prevention Parameters setting for TPM 2.0](/windows/security/information-protection/tpm/trusted-platform-module-services-group-policy-settings#configure-the-system-to-use-legacy-dictionary-attack-prevention-parameters-setting-for-tpm-20).
 
 ### TPM-based smart cards
 
@@ -145,7 +136,7 @@ The Windows TPM-based smart card, which is a virtual smart card, can be configur
 
 -   Hardware manufacturers and software developers have the option to use the security features of the TPM to meet their requirements.
 
--   The intent of selecting 32 failures as the lock-out threshold is so users rarely lock the TPM (even when learning to type new passwords or if they frequently lock and unlock their computers). If users lock the TPM, they must to wait two hours or use some other credential to sign in, such as a user name and password.
+-   The intent of selecting 32 failures as the lock-out threshold is so users rarely lock the TPM (even when learning to type new passwords or if they frequently lock and unlock their computers). If users lock the TPM, they must to wait 10 minutes or use some other credential to sign in, such as a user name and password.
 
 ## Related topics
 

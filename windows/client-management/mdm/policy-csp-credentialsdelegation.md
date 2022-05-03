@@ -5,7 +5,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
@@ -40,38 +40,14 @@ manager: dansimp
 <a href="" id="credentialsdelegation-remotehostallowsdelegationofnonexportablecredentials"></a>**CredentialsDelegation/RemoteHostAllowsDelegationOfNonExportableCredentials**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 
 <!--/SupportedSKUs-->
@@ -89,11 +65,11 @@ manager: dansimp
 <!--Description-->
 Remote host allows delegation of non-exportable credentials
 
-When using credential delegation, devices provide an exportable version of credentials to the remote host. This exposes users to the risk of credential theft from attackers on the remote host.
+When credential delegation is being used, devices provide an exportable version of credentials to the remote host. This version exposes users to the risk of credential theft from attackers on the remote host.
 
 If you enable this policy setting, the host supports Restricted Admin or Remote Credential Guard mode.
 
-If you disable or do not configure this policy setting, Restricted Administration and Remote Credential Guard mode are not supported. User will always need to pass their credentials to the host.
+If you disable or don't configure this policy setting, Restricted Administration and Remote Credential Guard mode aren't supported. User will always need to pass their credentials to the host.
 
 <!--/Description-->
 

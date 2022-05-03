@@ -15,7 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 02/28/2018
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Optional: Create a code signing cert for Windows Defender Application Control  

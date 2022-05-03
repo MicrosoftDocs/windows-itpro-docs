@@ -1,8 +1,7 @@
 ---
 title: Resolution procedures - Windows IT Pro
-ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 description: Discover general troubleshooting procedures for dealing with 0xC1900101, the generic rollback code thrown when something goes wrong during a Windows 10 upgrade.
 keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, ITPro
 ms.prod: w10
@@ -10,15 +9,16 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Resolution procedures
 
 **Applies to**
-- Windows 10
+- Windows 10
 
 > [!NOTE]  
 > This is a 200 level topic (moderate).  
@@ -34,7 +34,7 @@ A frequently observed [result code](upgrade-error-codes.md#result-codes) is 0xC1
 - Event logs: $Windows.~bt\Sources\Rollback\*.evtx
 - The device install log: $Windows.~bt\Sources\Rollback\setupapi\setupapi.dev.log
 
-The device install log is particularly helpful if rollback occurs during the sysprep operation (extend code 0x30018).  
+The device install log is helpful if rollback occurs during the sysprep operation (extend code 0x30018).  
 
 To resolve a rollback that was caused by driver conflicts, try running setup using a minimal set of drivers and startup programs by performing a [clean boot](https://support.microsoft.com/kb/929135) before initiating the upgrade process.
 
@@ -43,222 +43,66 @@ See the following general troubleshooting procedures associated with a result co
 
 | Code | Mitigation | Cause |
 | :---     |  :---  |  :--- |
-| 0xC1900101 - 0x20004   | Uninstall antivirus applications.<br>Remove all unused SATA devices. <br>Remove all unused devices and drivers. <br>Update drivers and BIOS.     | Windows Setup encountered an error during the SAFE_OS with the INSTALL_RECOVERY_ENVIRONMENT operation. <br>This is generally caused by out-of-date drivers.    |
-| 0xC1900101 - 0x2000c     | Disconnect all peripheral devices that are connected to the system, except for the mouse, keyboard and display.<br> Contact your hardware vendor to obtain updated device drivers.<br> Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process.       | Windows Setup encountered an unspecified error during Wim apply in the WinPE phase.<br> This is generally caused by out-of-date drivers      |
-| 0xC1900101 - 0x20017 | Ensure that all that drivers are updated.<br>Open the Setuperr.log and Setupact.log files in the %windir%\Panther directory, and then locate the problem drivers.<br>For more information, see [Windows Vista, Windows 7, Windows Server 2008 R2, Windows 8.1, and Windows 10 setup log file locations](https://support.microsoft.com/en-us/help/927521/windows-vista-windows-7-windows-server-2008-r2-windows-8-1-and-windows).<br>Update or uninstall the problem drivers. | A driver has caused an illegal operation.<br>Windows was not able to migrate the driver, resulting in a rollback of the operating system.<br>This is a SafeOS boot failure, typically caused by drivers or non-Microsoft disk encryption software. |
+| 0xC1900101 - 0x20004   | Uninstall antivirus applications.<br>Remove all unused SATA devices. <br>Remove all unused devices and drivers. <br>Update drivers and BIOS.     | Windows Setup encountered an error during the SAFE_OS with the INSTALL_RECOVERY_ENVIRONMENT operation. <br>This is caused by out-of-date drivers.    |
+| 0xC1900101 - 0x2000c     | Disconnect all peripheral devices that are connected to the system, except for the mouse, keyboard and display.<br> Contact your hardware vendor to obtain updated device drivers.<br> Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process.       | Windows Setup encountered an unspecified error during Wim apply in the WinPE phase.<br> This is caused by out-of-date drivers      |
+| 0xC1900101 - 0x20017 | Ensure that all that drivers are updated.<br>Open the Setuperr.log and Setupact.log files in the %windir%\Panther directory, and then locate the problem drivers.<br>For more information, see [Windows Vista, Windows 7, Windows Server 2008 R2, Windows 8.1, and Windows 10 setup log file locations](/troubleshoot/windows-client/deployment/windows-setup-log-file-locations).<br>Update or uninstall the problem drivers. | A driver has caused an illegal operation.<br>Windows wasn't able to migrate the driver, resulting in a rollback of the operating system.<br>This is a SafeOS boot failure, typically caused by drivers or non-Microsoft disk encryption software.<br>This can also be caused by a hardware failure. |
 | 0xC1900101 - 0x30018 | Disconnect all peripheral devices that are connected to the system, except for the mouse, keyboard and display.<br>Contact your hardware vendor to obtain updated device drivers.<br>Ensure that &quot;Download and install updates (recommended)&quot; is accepted at the start of the upgrade process. | A device driver has stopped responding to setup.exe during the upgrade process. |
 | 0xC1900101 - 0x3000D | Disconnect all peripheral devices that are connected to the system, except for the mouse, keyboard and display.<br>Update or uninstall the display driver. | Installation failed during the FIRST_BOOT phase while attempting the MIGRATE_DATA operation.<br>This can occur due to a problem with a display driver. |
-| 0xC1900101 - 0x4000D | Check supplemental rollback logs for a setupmem.dmp file, or event logs for any unexpected reboots or errors.<br>Review the rollback log and determine the stop code.<br>The rollback log is located in the <strong>$Windows.~BT\Sources\Rollback</strong> folder.  An example analysis is shown below. This example is not representative of all cases:<br>&nbsp;<br>Info SP     Crash 0x0000007E detected<br>Info SP       Module name           :<br>Info SP       Bugcheck parameter 1  : 0xFFFFFFFFC0000005<br>Info SP       Bugcheck parameter 2  : 0xFFFFF8015BC0036A<br>Info SP       Bugcheck parameter 3  : 0xFFFFD000E5D23728<br>Info SP       Bugcheck parameter 4  : 0xFFFFD000E5D22F40<br>Info SP     Cannot recover the system.<br>Info SP     Rollback: Showing splash window with restoring text: Restoring your previous version of Windows.<br>&nbsp;<br>Typically, there is a dump file for the crash to analyze. If you are not equipped to debug the dump, then attempt the following basic troubleshooting procedures:<br>&nbsp;<br>1. Make sure you have enough disk space.<br>2. If a driver is identified in the bug check message, disable the driver or check with the manufacturer for driver updates.<br>3. Try changing video adapters.<br>4. Check with your hardware vendor for any BIOS updates.<br>5. Disable BIOS memory options such as caching or shadowing. | A rollback occurred due to a driver configuration issue.<br>Installation failed during the second boot phase while attempting the MIGRATE_DATA operation.<br>This can occur because of incompatible drivers. |
-| 0xC1900101 - 0x40017 | Clean boot into Windows, and then attempt the upgrade to Windows 10. For more information, see [How to perform a clean boot in Windows](https://support.microsoft.com/kb/929135).<br>Ensure that you select the option to "Download and install updates (recommended)."<br>&nbsp;<br><b>Computers that run Citrix VDA</b>  <br>You may see this message after you upgrade a computer from Windows 10, version 1511 to Windows 10, version 1607. After the second system restart, the system generates this error and then rolls back to the previous version. This problem has also been observed in upgrades to Windows 8.1 and Windows 8.  <br>&nbsp;<br>This problem occurs because the computer has Citrix Virtual Delivery Agent (VDA) installed. Citrix VDA installs device drivers and a file system filter driver (CtxMcsWbc). This Citrix filter driver prevents the upgrade from writing changes to the disk, so the upgrade cannot complete and the system rolls back.  <br>&nbsp;<br>**Resolution**<br>&nbsp;<br>To resolve this problem, install [Cumulative update for Windows 10 Version 1607 and Windows Server 2016: November 8, 2016](https://support.microsoft.com/help/3200970/cumulative-update-for-windows-10-version-1607-and-windows-server-2016).<br>&nbsp;<br>You can work around this problem in two ways:<br>&nbsp;<br>**Workaround 1**<br>&nbsp;<br>1. Use the VDA setup application (VDAWorkstationSetup_7.11) to uninstall Citrix VDA.<br>2. Run the Windows upgrade again.<br>3. Reinstall Citrix VDA.<br>&nbsp;<br>**Workaround 2**<br>&nbsp;<br>If you cannot uninstall Citrix VDA, follow these steps to work around this problem:  <br>&nbsp;<br>1. In Registry Editor, go to the following subkey:<br> **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e967-e325-11ce-bfc1-08002be10318}\CtxMcsWbc**<br>2. Change the value of the **Start** entry from **0** to **4**. This change disables the Citrix MCS cache service.<br>3. Go to the following subkey:<br> **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e967-e325-11ce-bfc1-08002be10318}**<br>4. Delete the **CtxMcsWbc** entry.<br>5. Restart the computer, and then try the upgrade again.<br>&nbsp;<br>**Non-Microsoft information disclaimer**  <br>The non-Microsoft products that this article discusses are manufactured by companies that are independent of Microsoft. Microsoft makes no warranty, implied or otherwise, about the performance or reliability of these products. | Windows 10 upgrade failed after the second reboot.<br>This is usually caused by a faulty driver. For example: antivirus filter drivers or encryption drivers. |
+| 0xC1900101 - 0x4000D | Check supplemental rollback logs for a setupmem.dmp file, or event logs for any unexpected reboots or errors.<br>Review the rollback log and determine the stop code.<br>The rollback log is located in the <strong>$Windows.~BT\Sources\Rollback</strong> folder.  An example analysis is shown below. This example isn't representative of all cases:<br>&nbsp;<br>Info SP     Crash 0x0000007E detected<br>Info SP       Module name           :<br>Info SP       Bugcheck parameter 1  : 0xFFFFFFFFC0000005<br>Info SP       Bugcheck parameter 2  : 0xFFFFF8015BC0036A<br>Info SP       Bugcheck parameter 3  : 0xFFFFD000E5D23728<br>Info SP       Bugcheck parameter 4  : 0xFFFFD000E5D22F40<br>Info SP     Can't recover the system.<br>Info SP     Rollback: Showing splash window with restoring text: Restoring your previous version of Windows.<br>&nbsp;<br>Typically, there's a dump file for the crash to analyze. If you aren't equipped to debug the dump, then attempt the following basic troubleshooting procedures:<br>&nbsp;<br>1. Make sure you have enough disk space.<br>2. If a driver is identified in the bug check message, disable the driver or check with the manufacturer for driver updates.<br>3. Try changing video adapters.<br>4. Check with your hardware vendor for any BIOS updates.<br>5. Disable BIOS memory options such as caching or shadowing. | A rollback occurred due to a driver configuration issue.<br>Installation failed during the second boot phase while attempting the MIGRATE_DATA operation.<br>This can occur because of incompatible drivers. |
+| 0xC1900101 - 0x40017 | Clean boot into Windows, and then attempt the upgrade to Windows 10. For more information, see [How to perform a clean boot in Windows](https://support.microsoft.com/kb/929135).<br>Ensure that you select the option to "Download and install updates (recommended)."<br>&nbsp;<br><b>Computers that run Citrix VDA</b>  <br>You may see this message after you upgrade a computer from Windows 10, version 1511 to Windows 10, version 1607. After the second system restart, the system generates this error and then rolls back to the previous version. This problem has also been observed in upgrades to Windows 8.1 and Windows 8.  <br>&nbsp;<br>This problem occurs because the computer has Citrix Virtual Delivery Agent (VDA) installed. Citrix VDA installs device drivers and a file system filter driver (CtxMcsWbc). This Citrix filter driver prevents the upgrade from writing changes to the disk, so the upgrade can't complete and the system rolls back.  <br>&nbsp;<br>**Resolution**<br>&nbsp;<br>To resolve this problem, install [Cumulative update for Windows 10 Version 1607 and Windows Server 2016: November 8, 2016](https://support.microsoft.com/help/3200970/cumulative-update-for-windows-10-version-1607-and-windows-server-2016).<br>&nbsp;<br>You can work around this problem in two ways:<br>&nbsp;<br>**Workaround 1**<br>&nbsp;<br>1. Use the VDA setup application (VDAWorkstationSetup_7.11) to uninstall Citrix VDA.<br>2. Run the Windows upgrade again.<br>3. Reinstall Citrix VDA.<br>&nbsp;<br>**Workaround 2**<br>&nbsp;<br>If you can't uninstall Citrix VDA, follow these steps to work around this problem:  <br>&nbsp;<br>1. In Registry Editor, go to the following subkey:<br> **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e967-e325-11ce-bfc1-08002be10318}\CtxMcsWbc**<br>2. Change the value of the **Start** entry from **0** to **4**. This change disables the Citrix MCS cache service.<br>3. Go to the following subkey:<br> **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e967-e325-11ce-bfc1-08002be10318}**<br>4. Delete the **CtxMcsWbc** entry.<br>5. Restart the computer, and then try the upgrade again.<br>&nbsp;<br>**Non-Microsoft information disclaimer**  <br>The non-Microsoft products that this article discusses are manufactured by companies that are independent of Microsoft. Microsoft makes no warranty, implied or otherwise, about the performance or reliability of these products. | Windows 10 upgrade failed after the second reboot.<br>This is caused by a faulty driver. For example: antivirus filter drivers or encryption drivers. |
 
 ## 0x800xxxxx
 
-Result codes that start with the digits 0x800 are also important to understand. These error codes indicate general operating system errors, and are not unique to the Windows upgrade process. Examples include timeouts, devices not functioning, and a process stopping unexpectedly.
+Result codes that start with the digits 0x800 are also important to understand. These error codes indicate general operating system errors, and aren't unique to the Windows upgrade process. Examples include timeouts, devices not functioning, and a process stopping unexpectedly.
 
 See the following general troubleshooting procedures associated with a result code of 0x800xxxxx:
 
 | Code | Mitigation | Cause |
 | :---     |  :---  |  :--- |
 | 80040005 - 0x20007     |  This error has more than one possible cause. Attempt [quick fixes](quick-fixes.md), and if not successful, [analyze log files](log-files.md#analyze-log-files) in order to determine the problem and solution.  |   An unspecified error occurred with a driver during the SafeOS phase.   |
-| 0x80073BC3 - 0x20009<br>0x80070002 - 0x20009<br>0x80073B92 - 0x20009     |  These errors occur during partition analysis and validation, and can be caused by the presence of multiple system partitions. For example, if you installed a new system drive but left the previous system drive connected, this can cause a conflict. To resolve the errors, disconnect or temporarily disable drives that contain the unused system partition. You can reconnect the drive after the upgrade has completed. Alternatively, you can delete the unused system partition.  |   The requested system device cannot be found, there is a sharing violation, or there are multiple devices matching the identification criteria.   |
+| 0x80073BC3 - 0x20009<br>0x80070002 - 0x20009<br>0x80073B92 - 0x20009     |  These errors occur during partition analysis and validation, and can be caused by the presence of multiple system partitions. For example, if you installed a new system drive but left the previous system drive connected, this can cause a conflict. To resolve the errors, disconnect or temporarily disable drives that contain the unused system partition. You can reconnect the drive after the upgrade has completed. Alternatively, you can delete the unused system partition.  |   The requested system device can't be found, there's a sharing violation, or there are multiple devices matching the identification criteria.   |
 | 800704B8 - 0x3001A   |  Disable or uninstall non-Microsoft antivirus applications, disconnect all unnecessary devices, and perform a [clean boot](https://support.microsoft.com/kb/929135).  |   An extended error has occurred during the first boot phase.   |
-| 8007042B - 0x4000D    |  [Analyze log files](log-files.md#analyze-log-files) in order to determine the file, application, or driver that is not able to be migrated. Disconnect, update, remove, or replace the device or object.  |   The installation failed during the second boot phase while attempting the MIGRATE_DATA operation.<br>This issue can occur due to file system, application, or driver issues.   |
-| 8007001F - 0x3000D    |  [Analyze log files](log-files.md#analyze-log-files) in order to determine the files or registry entries that are blocking data migration.<br>&nbsp;<br>This error can be due to a problem with user profiles. It can occur due to corrupt registry entries under **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\ProfileList** or invalid files in the **\\Users** directory.<br>&nbsp;<br>**Note**: If a previous upgrade did not complete, invalid profiles might exist in the **Windows.old\\Users** directory.<br>&nbsp;<br>To repair this error, ensure that deleted accounts are not still present in the Windows registry and that files under the \\Users directory are valid. Delete the invalid files or user profiles that are causing this error. The specific files and profiles that are causing the error will be recorded in the Windows setup log files.|   The installation failed in the FIRST_BOOT phase with an error during MIGRATE_DATA operation.   |
-| 8007001F - 0x4000D     |  [Analyze log files](log-files.md#analyze-log-files) in order to determine the device that is not functioning properly. Disconnect, update, or replace the device.  |   General failure, a device attached to the system is not functioning.   |
+| 8007042B - 0x4000D    |  [Analyze log files](log-files.md#analyze-log-files) in order to determine the file, application, or driver that isn't able to be migrated. Disconnect, update, remove, or replace the device or object.  |   The installation failed during the second boot phase while attempting the MIGRATE_DATA operation.<br>This issue can occur due to file system, application, or driver issues.   |
+| 8007001F - 0x3000D    |  [Analyze log files](log-files.md#analyze-log-files) in order to determine the files or registry entries that are blocking data migration.<br>&nbsp;<br>This error can be due to a problem with user profiles. It can occur due to corrupt registry entries under **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\ProfileList** or invalid files in the **\\Users** directory.<br>&nbsp;<br>**Note**: If a previous upgrade didn't complete, invalid profiles might exist in the **Windows.old\\Users** directory.<br>&nbsp;<br>To repair this error, ensure that deleted accounts aren't still present in the Windows registry and that files under the \\Users directory are valid. Delete the invalid files or user profiles that are causing this error. The specific files and profiles that are causing the error will be recorded in the Windows setup log files.|   The installation failed in the FIRST_BOOT phase with an error during MIGRATE_DATA operation.   |
+| 8007001F - 0x4000D     |  [Analyze log files](log-files.md#analyze-log-files) in order to determine the device that isn't functioning properly. Disconnect, update, or replace the device.  |   General failure, a device attached to the system isn't functioning.   |
 | 8007042B - 0x4001E   |  This error has more than one possible cause. Attempt [quick fixes](quick-fixes.md), and if not successful, [analyze log files](log-files.md#analyze-log-files) in order to determine the problem and solution.  |   The installation failed during the second boot phase while attempting the PRE_OOBE operation.   |
 
 ## Other result codes
 
-<br /><table>
-
-<tr>
-<td BGCOLOR="#a0e4fa"><font color="#000000"><b>Error code</b></font></td>
-<td BGCOLOR="#a0e4fa"><font color="#000000"><b>Cause</b></font></td>
-<td BGCOLOR="#a0e4fa"><font color="#000000"><b>Mitigation</b></font></td>
-</tr>
-
-<tr>
-<td>0xC1800118</td>
-<td>WSUS has downloaded content that it cannot use due to a missing decryption key.</td>
-<td>See <a href="/archive/blogs/wsus/resolving-error-0xc1800118" data-raw-source="[Steps to resolve error 0xC1800118](/archive/blogs/wsus/resolving-error-0xc1800118)">Steps to resolve error 0xC1800118</a> for information.</td>
-</tr>
-
-<tr>
-<td>0xC1900200</td>
-<td>Setup.exe has detected that the machine does not meet the minimum system requirements.</td>
-<td>Ensure the system you are trying to upgrade meets the minimum system requirements. <br>See <a href="https://www.microsoft.com/windows/windows-10-specifications" data-raw-source="[Windows 10 specifications](https://www.microsoft.com/windows/windows-10-specifications)">Windows 10 specifications</a> for information.</td>
-</tr>
-
-<tr>
-<td>0x80090011</td>
-<td>A device driver error occurred during user data migration.</td>
-<td>Contact your hardware vendor and get all the device drivers updated. It is recommended to have an active internet connection during upgrade process.
-<br>Ensure that &quot;Download and install updates (recommended)&quot; is accepted at the start of the upgrade process.</td>
-</tr>
-<tr>
-<td>0xC7700112</td>
-<td>Failure to complete writing data to the system drive, possibly due to write access failure on the hard disk.</td>
-<td>This issue is resolved in the latest version of Upgrade Assistant.
-<br>Ensure that &quot;Download and install updates (recommended)&quot; is accepted at the start of the upgrade process.</td>
-</tr>
-
-<tr>
-<td>0x80190001</td>
-<td>An unexpected error was encountered while attempting to download files required for upgrade.</td>
-<td>To resolve this issue, download and run the media creation tool. See <a href="https://www.microsoft.com/software-download/windows10" data-raw-source="[Download windows 10](https://www.microsoft.com/software-download/windows10)">Download windows 10</a>.
-</td>
-</tr>
-<tr>
-<td>0x80246007</td>
-<td>The update was not downloaded successfully.</td>
-<td>Attempt other methods of upgrading the operating system.<br>
-Download and run the media creation tool. See <a href="https://www.microsoft.com/software-download/windows10" data-raw-source="[Download windows 10](https://www.microsoft.com/software-download/windows10)">Download windows 10</a>.
-<br>Attempt to upgrade using .ISO or USB.<br>
-<strong>Note</strong><br>Windows 10 Enterprise isn’t available in the media creation tool. For more information, go to the <a href="https://www.microsoft.com/licensing/servicecenter/default.aspx" data-raw-source="[Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx)">Volume Licensing Service Center</a>.
-</td>
-</tr>
-<tr>
-<td>0x80244018</td>
-<td>Your machine is connected through a proxy server.</td>
-<td>Make sure Automatically Detect Settings is selected in internet options. (<b>Control Panel</b> > <b>Internet Options</b> > <b>Connections</b> > <b>LAN Settings</b>).
-</td>
-</tr>
-<tr>
-<td>0xC1900201</td>
-<td>The system did not pass the minimum requirements to install the update.</td>
-<td>Contact the hardware vendor to get the latest updates.</td>
-</tr>
-<tr>
-<td>0x80240017</td>
-<td>The upgrade is unavailable for this edition of Windows.</td>
-<td>Administrative policies enforced by your organization might be preventing the upgrade. Contact your IT administrator.</td>
-</tr>
-
-<tr>
-<td>0x80070020</td>
-<td>The existing process cannot access the file because it is being used by another process.</td>
-<td>Use the MSCONFIG tool to perform a clean boot on the machine and then try to perform the update again. For more information, see <a href="https://support.microsoft.com/kb/929135" data-raw-source="[How to perform a clean boot in Windows](https://support.microsoft.com/kb/929135)">How to perform a clean boot in Windows</a>.</td>
-</tr>
-<tr>
-<td>0x80070522</td>
-<td>The user doesn’t have required privilege or credentials to upgrade.</td>
-<td>Ensure that you have signed in as a local administrator or have local administrator privileges.</td>
-</tr>
-<tr>
-<td>0xC1900107</td>
-<td>A cleanup operation from a previous installation attempt is still pending and a system reboot is required in order to continue the upgrade.
-</td>
-<td>Restart the device and run setup again. If restarting the device does not resolve the issue, then use the Disk Cleanup utility and clean up the temporary files as well as the System files. For more information, see <a href="https://support.microsoft.com/instantanswers/8fef4121-711b-4be1-996f-99e02c7301c2/disk-cleanup-in-windows-10" data-raw-source="[Disk cleanup in Windows 10](https://support.microsoft.com/instantanswers/8fef4121-711b-4be1-996f-99e02c7301c2/disk-cleanup-in-windows-10)">Disk cleanup in Windows 10</a>.</td>
-</tr>
-<tr>
-<td>0xC1900209</td>
-<td>The user has chosen to cancel because the system does not pass the compatibility scan to install the update. Setup.exe will report this error when it can upgrade the machine with user data but cannot migrate installed applications.</td>
-<td>Incompatible software is blocking the upgrade process. Uninstall the application and try the upgrade again. See <a href="/archive/blogs/mniehaus/windows-10-pre-upgrade-validation-using-setup-exe" data-raw-source="[Windows 10 Pre-Upgrade Validation using SETUP.EXE](/archive/blogs/mniehaus/windows-10-pre-upgrade-validation-using-setup-exe)">Windows 10 Pre-Upgrade Validation using SETUP.EXE</a> for more information.
-<br>You can also download the <a href="https://go.microsoft.com/fwlink/p/?LinkId=526740">Windows Assessment and Deployment Kit (ADK) for Windows 10</a> and install Application Compatibility Tools.
-</td>
-</tr>
-
-<tr>
-<td>0x8007002 </td>
-<td>This error is specific to upgrades using System Center 2012 Configuration Manager R2 SP1 CU3 (5.00.8238.1403)</td>
-<td>Analyze the SMSTS.log and verify that the upgrade is failing on &quot;Apply Operating system&quot; Phase: Error 80072efe DownloadFileWithRanges() failed. 80072efe. ApplyOperatingSystem (0x0760)
-<br>The error 80072efe means that the connection with the server was terminated abnormally.
-<br>To resolve this issue, try the OS Deployment test on a client in same VLAN as the Configuration Manager server. Check the network configuration for random client-server connection issues happening on the remote VLAN.
-</td>
-</tr>
-
-<tr>
-<td>0x80240FFF </td>
-<td>Occurs when update synchronization fails. It can occur when you are using Windows Server Update Services on its own or when it is integrated with Microsoft Endpoint Configuration Manager. If you enable update synchronization before you install <a href="https://support.microsoft.com/help/3095113/">hotfix 3095113</a>, WSUS doesn&#39;t recognize the Upgrades classification and instead treats the upgrade like a regular update.</td>
-<td> You can prevent this by installing <a href="/archive/blogs/wsus/important-update-for-wsus-4-0-kb-3095113">hotfix 3095113</a> before you enable update synchronization. However, if you have already run into this problem, do the following:
-<ol>
-<li>Disable the Upgrades classification.</li>
-<li>Install hotfix 3095113.</li>
-<li>Delete previously synched updates.</li>
-<li>Enable the Upgrades classification.</li>
-<li>Perform a full synch.</li>
-</ol>
-For detailed information on how to run these steps check out <a href="/archive/blogs/wsus/how-to-delete-upgrades-in-wsus">How to delete upgrades in WSUS</a>.</p>
-</td>
-</tr>
-
-<tr>
-<td>0x8007007E</td>
-<td>Occurs when update synchronization fails because you do not have <a href="https://support.microsoft.com/help/3095113/">hotfix 3095113</a> installed before you enable update synchronization. Specifically, the CopyToCache operation fails on clients that have already downloaded the upgrade because Windows Server Update Services has bad metadata related to the upgrade. It can occur when you are using standalone Windows Server Update Services or when WSUS is integrated with Microsoft Endpoint Configuration Manager.</td>
-<td> Use the following steps to repair Windows Server Update Services. You must run these steps on each WSUS server that synched metadata before you installed the hotfix.
-<ol>
-<li>Stop the Windows Update service. Sign in as a user with administrative privileges, and then do the following:
-<ol>
-<li>Open <b>Administrative Tools</b> from the Control Panel.</li>
-<li>Double-click <b>Services</b>.</li>
-<li>Find the <b>Windows Update</b> service, right-click it, and then select <b>Stop</b>. If prompted, enter your credentials.</li>
-</ol>
-</li>
-<li>Delete all files and folders under c:\Windows\SoftwareDistribution\DataStore.</li>
-<li>Restart the Windows Update service.</li>
-</ol>
-</td>
-</tr>
-
-</table>
+|Error code|Cause|Mitigation|
+|--- |--- |--- |
+|0xC1800118|WSUS has downloaded content that it can't use due to a missing decryption key.|See [Steps to resolve error 0xC1800118](/archive/blogs/wsus/resolving-error-0xc1800118) for information.|
+|0xC1900200|Setup.exe has detected that the machine doesn't meet the minimum system requirements.|Ensure the system you're trying to upgrade meets the minimum system requirements. See [Windows 10 specifications](https://www.microsoft.com/windows/windows-10-specifications) for information.|
+|0x80090011|A device driver error occurred during user data migration.|Contact your hardware vendor and get all the device drivers updated. It's recommended to have an active internet connection during upgrade process.<p>Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process.|
+|0xC7700112|Failure to complete writing data to the system drive, possibly due to write access failure on the hard disk.|This issue is resolved in the latest version of Upgrade Assistant.<p>Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process.|
+|0x80190001|An unexpected error was encountered while attempting to download files required for upgrade.|To resolve this issue, download and run the media creation tool. See [Download windows 10](https://www.microsoft.com/software-download/windows10).|
+|0x80246007|The update wasn't downloaded successfully.|Attempt other methods of upgrading the operating system.<p>Download and run the media creation tool. See [Download windows 10](https://www.microsoft.com/software-download/windows10).<p>Attempt to upgrade using .ISO or USB.<p> **Note:** Windows 10 Enterprise isn’t available in the media creation tool. For more information, go to the [Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx).|
+|0x80244018|Your machine is connected through a proxy server.|Make sure Automatically Detect Settings is selected in internet options. (Control Panel > Internet Options > Connections > LAN Settings).|
+|0xC1900201|The system didn't pass the minimum requirements to install the update.|Contact the hardware vendor to get the latest updates.|
+|0x80240017|The upgrade is unavailable for this edition of Windows.|Administrative policies enforced by your organization might be preventing the upgrade. Contact your IT administrator.|
+|0x80070020|The existing process can't access the file because it's being used by another process.|Use the MSCONFIG tool to perform a clean boot on the machine and then try to perform the update again. For more information, see [How to perform a clean boot in Windows](https://support.microsoft.com/kb/929135).|
+|0x80070522|The user doesn’t have required privilege or credentials to upgrade.|Ensure that you've signed in as a local administrator or have local administrator privileges.|
+|0xC1900107|A cleanup operation from a previous installation attempt is still pending and a system reboot is required in order to continue the upgrade.|Restart the device and run setup again. If restarting the device doesn't resolve the issue, then use the Disk Cleanup utility to clean up the temporary files and the System files. For more information, see [Disk cleanup in Windows 10](https://support.microsoft.com/windows/disk-cleanup-in-windows-8a96ff42-5751-39ad-23d6-434b4d5b9a68).|
+|0xC1900209|The user has chosen to cancel because the system doesn't pass the compatibility scan to install the update. Setup.exe will report this error when it can upgrade the machine with user data but cannot migrate installed applications.|Incompatible software is blocking the upgrade process. Uninstall the application and try the upgrade again. See [Windows 10 Pre-Upgrade Validation using SETUP.EXE](/archive/blogs/mniehaus/windows-10-pre-upgrade-validation-using-setup-exe) for more information.<p>You can also download the Windows Assessment and Deployment Kit (ADK) for Windows 10 and install Application Compatibility Tools.|
+|0x8007002|This error is specific to upgrades using System Center 2012 Configuration Manager R2 SP1 CU3 (5.00.8238.1403)|Analyze the SMSTS.log and verify that the upgrade is failing on "Apply Operating system" Phase: Error 80072efe DownloadFileWithRanges() failed. 80072efe. ApplyOperatingSystem (0x0760)<p>The error 80072efe means that the connection with the server was terminated abnormally.<p>To resolve this issue, try the OS Deployment test on a client in same VLAN as the Configuration Manager server. Check the network configuration for random client-server connection issues happening on the remote VLAN.|
+|0x80240FFF|Occurs when update synchronization fails. It can occur when you're using Windows Server Update Services on its own or when it's integrated with Microsoft Endpoint Configuration Manager. If you enable update synchronization before you install hotfix 3095113, WSUS doesn't recognize the Upgrades classification and instead treats the upgrade like a regular update.|You can prevent this by installing hotfix 3095113 before you enable update synchronization. However, if you have already run into this problem, do the following:<ol><li>Disable the Upgrades classification.<li>Install hotfix 3095113.<li>Delete previously synched updates.<li>Enable the Upgrades classification.<li>Perform a full synch.</ol><p>For detailed information on how to run these steps check out How to delete upgrades in WSUS.|
+|0x8007007E|Occurs when update synchronization fails because you don't have hotfix 3095113 installed before you enable update synchronization. Specifically, the CopyToCache operation fails on clients that have already downloaded the upgrade because Windows Server Update Services has bad metadata related to the upgrade. It can occur when you're using standalone Windows Server Update Services or when WSUS is integrated with Microsoft Endpoint Configuration Manager.|Use the following steps to repair Windows Server Update Services. You must run these steps on each WSUS server that synched metadata before you installed the hotfix.<p>Stop the Windows Update service. <li>Sign in as a user with administrative privileges, and then do the following:<li>Open Administrative Tools from the Control Panel.<li>Double-click Services.<li>Find the Windows Update service, right-click it, and then select Stop. If prompted, enter your credentials.<p>Delete all files and folders under c:\Windows\SoftwareDistribution\DataStore.<p>Restart the Windows Update service.|
 
 ## Other error codes
 
-<br><table>
-
-<tr><td BGCOLOR="#a0e4fa"><font color="#000000">Error Codes<td BGCOLOR="#a0e4fa"><font color="#000000">Cause<td BGCOLOR="#a0e4fa"><font color="#000000">Mitigation</td></tr>
-<tr><td>0x80070003- 0x20007
-<td>This is a failure during SafeOS phase driver installation.
-
-<td><a href="/windows-hardware/drivers/install/troubleshooting-device-and-driver-installations" data-raw-source="[Verify device drivers](/windows-hardware/drivers/install/troubleshooting-device-and-driver-installations)">Verify device drivers</a> on the computer, and <a href="log-files.md#analyze-log-files" data-raw-source="[analyze log files](log-files.md#analyze-log-files)">analyze log files</a> to determine the problem driver.
-</td></tr>
-<tr><td>0x8007025D - 0x2000C
-<td>This error occurs if the ISO file&#39;s metadata is corrupt.<td>&quot;Re-download the ISO/Media and re-attempt the upgrade.
-
-Alternatively, re-create installation media the [Media Creation Tool](https://www.microsoft.com/software-download/windows10).
-
-</td></tr>
-<tr><td>0x80070490 - 0x20007<td>An incompatible device driver is present.
-
-<td><a href="/windows-hardware/drivers/install/troubleshooting-device-and-driver-installations" data-raw-source="[Verify device drivers](/windows-hardware/drivers/install/troubleshooting-device-and-driver-installations)">Verify device drivers</a> on the computer, and <a href="log-files.md#analyze-log-files" data-raw-source="[analyze log files](log-files.md#analyze-log-files)">analyze log files</a> to determine the problem driver.
-
-</td></tr>
-<tr><td>0xC1900101 - 0x2000c
-<td>An unspecified error occurred in the SafeOS phase during WIM apply. This can be caused by an outdated driver or disk corruption.
-<td>Run checkdisk to repair the file system. For more information, see the <a href="quick-fixes.md" data-raw-source="[quick fixes](quick-fixes.md)">quick fixes</a> section in this guide.
-<br>Update drivers on the computer, and select &quot;Download and install updates (recommended)&quot; during the upgrade process. Disconnect devices other than the mouse, keyboard and display.</td></tr>
-<tr><td>0xC1900200 - 0x20008
-
-<td>The computer doesn’t meet the minimum requirements to download or upgrade to Windows 10.
-
-See <a href="https://www.microsoft.com/windows/windows-10-specifications" data-raw-source="[Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications)">Windows 10 Specifications</a> and verify the computer meets minimum requirements.
-
-Review logs for [compatibility information](/archive/blogs/askcore/using-the-windows-10-compatibility-reports-to-understand-upgrade-issues).</td></tr>
-<tr><td>0x80070004 - 0x3000D
-<td>This is a problem with data migration during the first boot phase. There are multiple possible causes.
-
-<td><a href="log-files.md#analyze-log-files" data-raw-source="[Analyze log files](log-files.md#analyze-log-files)">Analyze log files</a> to determine the issue.</td></tr>
-<tr><td>0xC1900101 - 0x4001E
-<td>Installation failed in the SECOND_BOOT phase with an error during PRE_OOBE operation.
-<td>This is a generic error that occurs during the OOBE phase of setup. See the <a href="#0xc1900101" data-raw-source="[0xC1900101](#0xc1900101)">0xC1900101</a> section of this guide and review general troubleshooting procedures described in that section.</td></tr>
-<tr><td>0x80070005 - 0x4000D
-<td>The installation failed in the SECOND_BOOT phase with an error in during MIGRATE_DATA operation. This error indicates that access was denied while attempting to migrate data.
-<td><a href="log-files.md#analyze-log-files" data-raw-source="[Analyze log files](log-files.md#analyze-log-files)">Analyze log files</a> to determine the data point that is reporting access denied.</td></tr>
-<tr><td>0x80070004 - 0x50012
-<td>Windows Setup failed to open a file.
-<td><a href="log-files.md#analyze-log-files" data-raw-source="[Analyze log files](log-files.md#analyze-log-files)">Analyze log files</a> to determine the data point that is reporting access problems.</td></tr>
-<tr><td>0xC190020e
-<br>0x80070070 - 0x50011
-<br>0x80070070 - 0x50012
-<br>0x80070070 - 0x60000
-<td>These errors indicate the computer does not have enough free space available to install the upgrade.
-<td>To upgrade a computer to Windows 10, it requires 16 GB of free hard drive space for a 32-bit OS, and 20 GB for a 64-bit OS. If there is not enough space, attempt to <a href="https://support.microsoft.com/help/17421/windows-free-up-drive-space" data-raw-source="[free up drive space](https://support.microsoft.com/help/17421/windows-free-up-drive-space)">free up drive space</a> before proceeding with the upgrade.
-
-> [!NOTE]  
-> If your device allows it, you can use an external USB drive for the upgrade process. Windows setup will back up the previous version of Windows to a USB external drive. The external drive must be at least 8GB (16GB is recommended). The external drive should be formatted using NTFS.  Drives that are formatted in FAT32 may run into errors due to FAT32 file size limitations. USB drives are preferred over SD cards because drivers for SD cards are not migrated if the device does not support Connected Standby.
-</td></tr>
-
-</table>
+| Error Codes | Cause | Mitigation |
+| --- | --- | --- |
+|0x80070003- 0x20007|This is a failure during SafeOS phase driver installation.|[Verify device drivers](/windows-hardware/drivers/install/troubleshooting-device-and-driver-installations) on the computer, and [analyze log files](log-files.md#analyze-log-files) to determine the problem driver.|
+|0x8007025D - 0x2000C|This error occurs if the ISO file&#39;s metadata is corrupt or if there's an issue with the storage medium, such as a RAM module containing bad blocks during the installation of Windows.|Redownload the ISO/Media and reattempt the upgrade<p>Alternatively, re-create installation media the [Media Creation Tool](https://www.microsoft.com/software-download/windows10).|
+|0x80070490 - 0x20007|An incompatible device driver is present.|[Verify device drivers](/windows-hardware/drivers/install/troubleshooting-device-and-driver-installations) on the computer, and [analyze log files](log-files.md#analyze-log-files) to determine the problem driver.|
+|0xC1900101 - 0x2000c|An unspecified error occurred in the SafeOS phase during WIM apply. This can be caused by an outdated driver or disk corruption.|Run checkdisk to repair the file system. For more information, see the [quick fixes](quick-fixes.md) section in this guide.<br>Update drivers on the computer, and select "Download and install updates (recommended)" during the upgrade process. Disconnect devices other than the mouse, keyboard and display.|
+|0xC1900200 - 0x20008|The computer doesn’t meet the minimum requirements to download or upgrade to Windows 10.|See [Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications) and verify the computer meets minimum requirements.<p>Review logs for [compatibility information](/archive/blogs/askcore/using-the-windows-10-compatibility-reports-to-understand-upgrade-issues).|
+|0xC1900200 - 0x20008|The computer doesn’t meet the minimum requirements to download or upgrade to Windows 10.<p>See [Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications) and verify the computer meets minimum requirements.<p>Review logs for [Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications).||
+|0x80070004 - 0x3000D|This is a problem with data migration during the first boot phase. There are multiple possible causes.|[Analyze log files](log-files.md#analyze-log-files) to determine the issue.|
+|0xC1900101 - 0x4001E|Installation failed in the SECOND_BOOT phase with an error during PRE_OOBE operation.|This is a generic error that occurs during the OOBE phase of setup. See the [0xC1900101](#0xc1900101) section of this guide and review general troubleshooting procedures described in that section.|
+|0x80070005 - 0x4000D|The installation failed in the SECOND_BOOT phase with an error in during MIGRATE_DATA operation. This error indicates that access was denied while attempting to migrate data.|[Analyze log files](log-files.md#analyze-log-files) to determine the data point that is reporting access denied.|
+|0x80070004 - 0x50012|Windows Setup failed to open a file.|[Analyze log files](log-files.md#analyze-log-files) to determine the data point that is reporting access problems.|
+|0xC190020e<br>0x80070070 - 0x50011<br>0x80070070 - 0x50012<br>0x80070070 - 0x60000|These errors indicate the computer doesn't have enough free space available to install the upgrade.|To upgrade a computer to Windows 10, it requires 16 GB of free hard drive space for a 32-bit OS, and 20 GB for a 64-bit OS. If there isn't enough space, attempt to [free up drive space](https://support.microsoft.com/help/17421/windows-free-up-drive-space) before proceeding with the upgrade. <p><div>**Note:** If your device allows it, you can use an external USB drive for the upgrade process. Windows setup will back up the previous version of Windows to a USB external drive. The external drive must be at least 8 GB (16 GB is recommended). The external drive should be formatted using NTFS.  Drives that are formatted in FAT32 may run into errors due to FAT32 file size limitations. USB drives are preferred over SD cards because drivers for SD cards aren't migrated if the device doesn't support Connected Standby.</div>|
 
 ## Modern setup errors
 
@@ -266,10 +110,10 @@ Also see the following sequential list of modern setup (mosetup) error codes wit
 
 | Result code | Message  | Description |
 | --- | --- | --- |
-| 0XC1900100 | MOSETUP_E_VERSION_MISMATCH | An unexpected version of Setup Platform binaries was encountered. Please verify the package contents. |
+| 0XC1900100 | MOSETUP_E_VERSION_MISMATCH | An unexpected version of Setup Platform binaries was encountered. Verify the package contents. |
 | 0XC1900101 | MOSETUP_E_SETUP_PLATFORM | The Setup Platform has encountered an unspecified error. |
 | 0XC1900102 | MOSETUP_E_SHUTDOWN_BLOCK | Unable to create or destroy the shutdown block message. |
-| 0XC1900103 | MOSETUP_E_COMPAT_TIMEOUT | The compatibility issues were not resolved within the required time limit. |
+| 0XC1900103 | MOSETUP_E_COMPAT_TIMEOUT | The compatibility issues weren't resolved within the required time limit. |
 | 0XC1900104 | MOSETUP_E_PROCESS_TIMEOUT | The installation process did not complete within the required time limit. |
 | 0XC1900105 | MOSETUP_E_TEST_MODE | The installation process is being used in a test environment. |
 | 0XC1900106 | MOSETUP_E_TERMINATE_PROCESS | The installation process was terminated. |
@@ -287,7 +131,7 @@ Also see the following sequential list of modern setup (mosetup) error codes wit
 | 0XC1900113 | MOSETUP_E_EULA_DECLINED | The user has declined the license terms. |
 | 0XC190011e | MOSETUP_E_FLIGHTING_BVT | The installation process has been halted for testing purposes. |
 | 0XC190011f | MOSETUP_E_PROCESS_CRASHED | The installation process crashed. |
-| 0XC1900120 | MOSETUP_E_EULA_TIMEOUT | The user has not accepted Eula within the required time limit. |
+| 0XC1900120 | MOSETUP_E_EULA_TIMEOUT | The user has not accepted the EULA within the required time limit. |
 | 0XC1900121 | MOSETUP_E_ADVERTISE_TIMEOUT | The user has not accepted Advertisement within the required time limit. |
 | 0XC1900122 | MOSETUP_E_DOWNLOADDISKSPACE_TIMEOUT | The download disk space issues were not resolved within the required time limit. |
 | 0XC1900123 | MOSETUP_E_INSTALLDISKSPACE_TIMEOUT | The install disk space issues were not resolved within the required time limit. |
@@ -344,6 +188,6 @@ Also see the following sequential list of modern setup (mosetup) error codes wit
 - [Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)
 - [Windows 10 Specifications](https://www.microsoft.com/windows/Windows-10-specifications)
 - [Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/home?category=Windows10ITPro)
-- [Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)
+- [Fix Windows Update errors by using the DISM or System Update Readiness tool](/troubleshoot/windows-server/deployment/fix-windows-update-errors)
 - [Win 7 to Win 10 upgrade error (0x800707E7 - 0x3000D)](https://answers.microsoft.com/en-us/windows/forum/all/win-7-to-win-10-upgrade-error-0x800707e7-0x3000d/1273bc1e-8a04-44d4-a6b2-808c9feeb020))
 - [Win 10 upgrade error: User profile suffix mismatch, 0x800707E7 - 0x3000D](https://answers.microsoft.com/en-us/windows/forum/windows_10-windows_install/win-10-upgrade-error-user-profile-suffix-mismatch/0f006733-2af5-4b42-a2d4-863fad05273d?page=3)

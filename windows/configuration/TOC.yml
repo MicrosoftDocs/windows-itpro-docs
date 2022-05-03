@@ -176,8 +176,6 @@
 
 - name: Reference
   items:
-    - name: Configure Windows 10 Mobile devices
-      href: mobile-devices/configure-mobile.md
     - name: Windows Configuration Designer reference
       items:
         - name: Windows Configuration Designer provisioning settings (reference)
@@ -192,14 +190,8 @@
           href: wcd/wcd-admxingestion.md 
         - name: AssignedAccess
           href: wcd/wcd-assignedaccess.md 
-        - name: AutomaticTime
-          href: wcd/wcd-automatictime.md 
         - name: Browser
           href: wcd/wcd-browser.md 
-        - name: CallAndMessagingEnhancement
-          href: wcd/wcd-callandmessagingenhancement.md 
-        - name: Calling
-          href: wcd/wcd-calling.md
         - name: CellCore
           href: wcd/wcd-cellcore.md
         - name: Cellular
@@ -220,8 +212,6 @@
           href: wcd/wcd-developersetup.md     
         - name: DeviceFormFactor
           href: wcd/wcd-deviceformfactor.md  
-        - name: DeviceInfo
-          href: wcd/wcd-deviceinfo.md
         - name: DeviceManagement
           href: wcd/wcd-devicemanagement.md  
         - name: DeviceUpdateCenter
@@ -229,9 +219,7 @@
         - name: DMClient
           href: wcd/wcd-dmclient.md 
         - name: EditionUpgrade
-          href: wcd/wcd-editionupgrade.md 
-        - name: EmbeddedLockdownProfiles
-          href: wcd/wcd-embeddedlockdownprofiles.md     
+          href: wcd/wcd-editionupgrade.md    
         - name: FirewallConfiguration
           href: wcd/wcd-firewallconfiguration.md     
         - name: FirstExperience
@@ -240,10 +228,6 @@
           href: wcd/wcd-folders.md  
         - name: HotSpot
           href: wcd/wcd-hotspot.md
-        - name: InitialSetup
-          href: wcd/wcd-initialsetup.md     
-        - name: InternetExplorer
-          href: wcd/wcd-internetexplorer.md 
         - name: KioskBrowser
           href: wcd/wcd-kioskbrowser.md      
         - name: Licensing
@@ -251,23 +235,13 @@
         - name: Location
           href: wcd/wcd-location.md      
         - name: Maps
-          href: wcd/wcd-maps.md  
-        - name: Messaging
-          href: wcd/wcd-messaging.md     
-        - name: ModemConfigurations
-          href: wcd/wcd-modemconfigurations.md     
-        - name: Multivariant
-          href: wcd/wcd-multivariant.md     
+          href: wcd/wcd-maps.md 
         - name: NetworkProxy
           href: wcd/wcd-networkproxy.md     
         - name: NetworkQOSPolicy
-          href: wcd/wcd-networkqospolicy.md
-        - name: NFC
-          href: wcd/wcd-nfc.md     
+          href: wcd/wcd-networkqospolicy.md 
         - name: OOBE
-          href: wcd/wcd-oobe.md    
-        - name: OtherAssets
-          href: wcd/wcd-otherassets.md     
+          href: wcd/wcd-oobe.md 
         - name: Personalization
           href: wcd/wcd-personalization.md     
         - name: Policies
@@ -275,13 +249,9 @@
         - name: Privacy
           href: wcd/wcd-privacy.md  
         - name: ProvisioningCommands
-          href: wcd/wcd-provisioningcommands.md    
-        - name: RcsPresence
-          href: wcd/wcd-rcspresence.md 
+          href: wcd/wcd-provisioningcommands.md
         - name: SharedPC
-          href: wcd/wcd-sharedpc.md     
-        - name: Shell
-          href: wcd/wcd-shell.md     
+          href: wcd/wcd-sharedpc.md 
         - name: SMISettings
           href: wcd/wcd-smisettings.md     
         - name: Start
@@ -297,11 +267,7 @@
         - name: TabletMode
           href: wcd/wcd-tabletmode.md  
         - name: TakeATest
-          href: wcd/wcd-takeatest.md    
-        - name: TextInput
-          href: wcd/wcd-textinput.md  
-        - name: Theme
-          href: wcd/wcd-theme.md  
+          href: wcd/wcd-takeatest.md
         - name: Time
           href: wcd/wcd-time.md    
         - name: UnifiedWriteFilter
@@ -389,23 +355,3 @@
               href: ue-v/uev-application-template-schema-reference.md
             - name: Security Considerations for UE-V
               href: ue-v/uev-security-considerations.md
-
-
-    - name: Use Windows Configuration Designer for Windows 10 Mobile devices
-      items:
-        - name: Use Windows Configuration Designer to configure Windows 10 Mobile devices
-          href: mobile-devices/provisioning-configure-mobile.md
-        - name: NFC-based device provisioning
-          href: mobile-devices/provisioning-nfc.md
-        - name: Barcode provisioning and the package splitter tool
-          href: mobile-devices/provisioning-package-splitter.md
-        - name: Use the Lockdown Designer app to create a Lockdown XML file
-          href: mobile-devices/mobile-lockdown-designer.md
-        - name: Configure Windows 10 Mobile using Lockdown XML
-          href: mobile-devices/lockdown-xml.md
-        - name: Settings and quick actions that can be locked down in Windows 10 Mobile
-          href: mobile-devices/settings-that-can-be-locked-down.md
-        - name: Product IDs in Windows 10 Mobile
-          href: mobile-devices/product-ids-in-windows-10-mobile.md
-        - name: Start layout XML for mobile editions of Windows 10 (reference)
-          href: mobile-devices/start-layout-xml-mobile.md

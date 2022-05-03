@@ -11,7 +11,7 @@ ms.date: 09/09/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 6409(-): BranchCache: A service connection point object could not be parsed.

@@ -2,17 +2,18 @@
 title: Connection endpoints for Windows 10 Enterprise, version 20H2
 description: Explains what Windows 10 endpoints are used for, how to turn off traffic to them, and the impact. Specific to Windows 10 Enterprise, version 20H2.
 keywords: privacy, manage connections to Microsoft, Windows 10
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
 audience: ITPro
 author: gental-giant
 ms.author: v-hakima
-manager: robsize
+manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 12/17/2020
+ms.date: 11/29/2021
+ms.technology: privacy
 ---
 
 # Manage connection endpoints for Windows 10 Enterprise, version 20H2
@@ -137,23 +138,21 @@ The following methodology was used to derive these network endpoints:
 
 To view endpoints for other versions of Windows 10 Enterprise, see:
 
+- [Manage connection endpoints for Windows 10, version 21H2](manage-windows-21H2-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 2004](manage-windows-2004-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 1909](manage-windows-1909-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 1903](manage-windows-1903-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 1809](manage-windows-1809-endpoints.md)
-- [Manage connection endpoints for Windows 10, version 1803](manage-windows-1803-endpoints.md)
-- [Manage connection endpoints for Windows 10, version 1709](manage-windows-1709-endpoints.md)
 
 To view endpoints for non-Enterprise Windows 10 editions, see:
 
+- [Windows 10, version 21H1, connection endpoints for non-Enterprise editions](windows-endpoints-21H1-non-enterprise-editions.md)
 - [Windows 10, version 2004, connection endpoints for non-Enterprise editions](windows-endpoints-2004-non-enterprise-editions.md)
 - [Windows 10, version 1909, connection endpoints for non-Enterprise editions](windows-endpoints-1909-non-enterprise-editions.md)
 - [Windows 10, version 1903, connection endpoints for non-Enterprise editions](windows-endpoints-1903-non-enterprise-editions.md)
 - [Windows 10, version 1809, connection endpoints for non-Enterprise editions](windows-endpoints-1809-non-enterprise-editions.md)
-- [Windows 10, version 1803, connection endpoints for non-Enterprise editions](windows-endpoints-1803-non-enterprise-editions.md)
-- [Windows 10, version 1709, connection endpoints for non-Enterprise editions](windows-endpoints-1709-non-enterprise-editions.md)
 
 ## Related links
 
-- [Office 365 URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US)
+- [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges)
 - [Network infrastructure requirements for Microsoft Intune](/mem/intune/fundamentals/intune-endpoints)

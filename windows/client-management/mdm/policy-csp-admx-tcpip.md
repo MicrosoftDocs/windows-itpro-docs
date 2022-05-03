@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 09/23/2020
 ms.reviewer: 
 manager: dansimp
@@ -75,38 +75,14 @@ manager: dansimp
 <a href="" id="admx-tcpip-6to4-router-name"></a>**ADMX_tcpip/6to4_Router_Name**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -144,38 +120,14 @@ ADMX Info:
 <a href="" id="admx-tcpip-6to4-router-name-resolution-interval"></a>**ADMX_tcpip/6to4_Router_Name_Resolution_Interval**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -213,38 +165,14 @@ ADMX Info:
 <a href="" id="admx-tcpip-6to4-state"></a>**ADMX_tcpip/6to4_State**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -288,38 +216,14 @@ ADMX Info:
 <a href="" id="admx-tcpip-iphttps-clientstate"></a>**ADMX_tcpip/IPHTTPS_ClientState**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -363,38 +267,14 @@ ADMX Info:
 <a href="" id="admx-tcpip-ip-stateless-autoconfiguration-limits-state"></a>**ADMX_tcpip/IP_Stateless_Autoconfiguration_Limits_State**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -432,38 +312,14 @@ ADMX Info:
 <a href="" id="admx-tcpip-isatap-router-name"></a>**ADMX_tcpip/ISATAP_Router_Name**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -501,38 +357,14 @@ ADMX Info:
 <a href="" id="admx-tcpip-isatap-state"></a>**ADMX_tcpip/ISATAP_State**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -576,38 +408,14 @@ ADMX Info:
 <a href="" id="admx-tcpip-teredo-client-port"></a>**ADMX_tcpip/Teredo_Client_Port**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -645,38 +453,14 @@ ADMX Info:
 <a href="" id="admx-tcpip-teredo-default-qualified"></a>**ADMX_tcpip/Teredo_Default_Qualified**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -716,38 +500,14 @@ ADMX Info:
 <a href="" id="admx-tcpip-teredo-refresh-rate"></a>**ADMX_tcpip/Teredo_Refresh_Rate**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -788,38 +548,14 @@ ADMX Info:
 <a href="" id="admx-tcpip-teredo-server-name"></a>**ADMX_tcpip/Teredo_Server_Name**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -857,38 +593,14 @@ ADMX Info:
 <a href="" id="admx-tcpip-teredo-state"></a>**ADMX_tcpip/Teredo_State**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -934,38 +646,14 @@ ADMX Info:
 <a href="" id="admx-tcpip-windows-scaling-heuristics-state"></a>**ADMX_tcpip/Windows_Scaling_Heuristics_State**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>

@@ -1,12 +1,12 @@
 ---
 title: Policy CSP - ADMX_ActiveXInstallService
-description: Policy CSP - ADMX_ActiveXInstallService
+description: Learn about the Policy CSP - ADMX_ActiveXInstallService.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 11/09/2020
 ms.reviewer: 
 manager: dansimp
@@ -40,31 +40,14 @@ manager: dansimp
 <a href="" id="admx-activexinstallservice-axisurlzonepolicies"></a>**ADMX_ActiveXInstallService/AxISURLZonePolicies**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -83,9 +66,9 @@ This policy setting controls the installation of ActiveX controls for sites in T
 
 If you enable this policy setting, ActiveX controls are installed according to the settings defined by this policy setting.
 
-If you disable or do not configure this policy setting, ActiveX controls prompt the user before installation. 
+If you disable or don't configure this policy setting, ActiveX controls prompt the user before installation. 
 
-If the trusted site uses the HTTPS protocol, this policy setting can also control how ActiveX Installer Service responds to certificate errors. By default all HTTPS connections must supply a server certificate that passes all validation criteria. If you are aware that a trusted site has a certificate error but you want to trust it anyway you can select the certificate errors that you want to ignore.
+If the trusted site uses the HTTPS protocol, this policy setting can also control how ActiveX Installer Service responds to certificate errors. By default all HTTPS connections must supply a server certificate that passes all validation criteria. If a trusted site has a certificate error but you want to trust it anyway, you can select the certificate errors that you want to ignore.
 
 > [!NOTE]
 > This policy setting applies to all sites in Trusted zones.
@@ -106,3 +89,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

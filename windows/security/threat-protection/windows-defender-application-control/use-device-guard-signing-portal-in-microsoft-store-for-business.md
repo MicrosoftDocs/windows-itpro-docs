@@ -15,7 +15,7 @@ author: jsuther1974
 ms.reviewer: isbrahm
 manager: dansimp
 ms.date: 02/19/2019
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Optional: Use the Device Guard Signing Portal in the Microsoft Store for Business
@@ -25,6 +25,9 @@ ms.technology: mde
 - Windows 10
 - Windows 11
 - Windows Server 2016 and above
+
+> [!IMPORTANT]
+> The existing web-based mechanism for the Device Guard Signing Service v1 will be retired on June 9, 2021. Please transition to the PowerShell based version of the service [(DGSS v2)](/microsoft-store/device-guard-signing-portal). For more details, see [Sign an MSIX package with Device Guard signing](/windows/msix/package/signing-package-device-guard-signing) and [Device Guard signing](/microsoft-store/device-guard-signing-portal).
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).

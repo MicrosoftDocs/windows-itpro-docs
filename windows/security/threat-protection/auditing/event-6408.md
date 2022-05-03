@@ -11,7 +11,7 @@ ms.date: 09/09/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 6408(-): Registered product %1 failed and Windows Firewall is now controlling the filtering for %2.

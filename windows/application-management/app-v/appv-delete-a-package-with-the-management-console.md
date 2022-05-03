@@ -1,15 +1,15 @@
 ---
 title: How to delete a package in the Management Console (Windows 10/11)
 description: Learn how to delete a package in the App-V Management Console and where to find information about operations for App-V.
-author: greg-lindsay
+author: aczechowski
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 09/27/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
 # How to delete a package in the Management Console

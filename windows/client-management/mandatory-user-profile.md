@@ -11,6 +11,7 @@ ms.date: 09/14/2021
 ms.reviewer: 
 manager: dansimp
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Create mandatory user profiles
@@ -41,7 +42,7 @@ The name of the folder in which you store the mandatory profile must use the cor
 | Windows 10, versions 1507 and 1511 | N/A | v5 |
 | Windows 10, versions 1607, 1703, 1709, 1803, 1809, 1903 and 1909 |  Windows Server 2016 and Windows Server 2019 | v6 |
 
-For more information, see [Deploy Roaming User Profiles, Appendix B](/windows-server/storage/folder-redirection/deploy-roaming-user-profiles#appendix-b-profile-version-reference-information) and [Roaming user profiles versioning in Windows 10 and Windows Server Technical Preview](https://support.microsoft.com/kb/3056198).
+For more information, see [Deploy Roaming User Profiles, Appendix B](/windows-server/storage/folder-redirection/deploy-roaming-user-profiles#appendix-b-profile-version-reference-information) and [Roaming user profiles versioning in Windows 10 and Windows Server Technical Preview](/troubleshoot/windows-server/user-profiles-and-logon/roaming-user-profiles-versioning).
 
 ## Mandatory user profile
 

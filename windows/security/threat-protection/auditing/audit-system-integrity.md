@@ -12,7 +12,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 09/06/2021
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Audit System Integrity

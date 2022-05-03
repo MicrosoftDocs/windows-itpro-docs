@@ -39,38 +39,14 @@ manager: dansimp
 
 <!--Policy-->
 <a href="" id="admx-framepanes-noreadingpane"></a>**ADMX_FramePanes/NoReadingPane**  
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -87,16 +63,16 @@ manager: dansimp
 <!--Description-->
 This policy setting shows or hides the Details Pane in File Explorer.  
 
-- If you enable this policy setting and configure it to hide the pane, the Details Pane in File Explorer is hidden and cannot be turned on by the user.  
+- If you enable this policy setting and configure it to hide the pane, the Details Pane in File Explorer is hidden and can't be turned on by the user.  
 
-- If you enable this policy setting and configure it to show the pane, the Details Pane is always visible and cannot be hidden by the user. 
+- If you enable this policy setting and configure it to show the pane, the Details Pane is always visible and can't be hidden by the user. 
 
 > [!NOTE]
-> This has a side effect of not being able to toggle to the Preview Pane since the two cannot be displayed at the same time.  
+> This has a side effect of not being able to toggle to the Preview Pane since the two can't be displayed at the same time.  
 
-- If you disable, or do not configure this policy setting, the Details Pane is hidden by default and can be displayed by the user. 
+- If you disable, or don't configure this policy setting, the Details Pane is hidden by default and can be displayed by the user.
 
-This is the default policy setting.
+This setting is the default policy setting.
 
 <!--/Description--> 
 
@@ -114,38 +90,14 @@ ADMX Info:
 <!--Policy-->
 <a href="" id="admx-framepanes-nopreviewpane"></a>**ADMX_FramePanes/NoPreviewPane**  
 
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -162,9 +114,9 @@ ADMX Info:
 <!--Description-->
 Hides the Preview Pane in File Explorer.  
 
-- If you enable this policy setting, the Preview Pane in File Explorer is hidden and cannot be turned on by the user.  
+- If you enable this policy setting, the Preview Pane in File Explorer is hidden and can't be turned on by the user.  
 
-- If you disable, or do not configure this setting, the Preview Pane is hidden by default and can be displayed by the user.
+- If you disable, or don't configure this setting, the Preview Pane is hidden by default and can be displayed by the user.
 
 <!--/Description-->
 

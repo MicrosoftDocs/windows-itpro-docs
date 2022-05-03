@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 02/25/2021
 ms.reviewer: 
 manager: dansimp
@@ -39,38 +39,14 @@ manager: dansimp
 <a href="" id="admx-winsrv-allowblockingappsatshutdown"></a>**ADMX_Winsrv/AllowBlockingAppsAtShutdown**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 
 <!--/SupportedSKUs-->
@@ -90,8 +66,8 @@ This policy setting specifies whether Windows will allow console applications an
 
 By default, such applications are automatically terminated if they attempt to cancel shutdown or block it indefinitely.
 
-- If you enable this setting, console applications or GUI applications without visible top-level windows that block or cancel shutdown will not be automatically terminated during shutdown.
-- If you disable or do not configure this setting, these applications will be automatically terminated during shutdown, helping to ensure that windows can shut down faster and more smoothly.
+- If you enable this setting, console applications or GUI applications without visible top-level windows that block or cancel shutdown won't be automatically terminated during shutdown.
+- If you disable or don't configure this setting, these applications will be automatically terminated during shutdown, helping to ensure that windows can shut down faster and more smoothly.
 
 > [!NOTE]
 > This policy setting applies to all sites in Trusted zones.

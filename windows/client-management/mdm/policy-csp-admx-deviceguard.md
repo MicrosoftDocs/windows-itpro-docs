@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
@@ -39,39 +39,14 @@ manager: dansimp
 <a href="" id="admx-deviceguard-configcipolicy"></a>**ADMX_DeviceGuard/ConfigCIPolicy**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-    
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -90,12 +65,12 @@ This policy setting lets you deploy a Code Integrity Policy to a machine to cont
 
 If you deploy a Code Integrity Policy, Windows will restrict what can run in both kernel mode and on the Windows Desktop based on the policy. 
 
-To enable this policy the machine must be rebooted.  
+To enable this policy, the machine must be rebooted.  
 The file path must be either a UNC path (for example, `\\ServerName\ShareName\SIPolicy.p7b`),
 or a locally valid path (for example, `C:\FolderName\SIPolicy.p7b)`. 
  
 The local machine account (LOCAL SYSTEM) must have access permission to the policy file.    
-If using a signed and protected policy then disabling this policy setting doesn't remove the feature from the computer. Instead, you must either:  
+If using a signed and protected policy, then disabling this policy setting doesn't remove the feature from the computer. Instead, you must either:  
 1. First update the policy to a non-protected policy and then disable the setting.  
 2. Disable the setting and then remove the policy from each computer, with a physically present user.
 
