@@ -1,7 +1,7 @@
 ---
 title: Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool
 description: Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool script
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
@@ -16,6 +16,13 @@ ms.reviewer:
 ---
 
 # Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool
+
+**Applies to:**
+- Windows 10
+- Windows 11
+- Windows Server 2016
+- Windows Server 2019
+- Windows Server 2022
 
 ```powershell
 # Script to find out if a machine is Device Guard compliant.
@@ -675,7 +682,7 @@ function CheckDriverCompat
     if($verifier_state.ToString().Contains("No drivers are currently verified."))
     {
         LogAndConsole "Enabling Driver verifier"
-        verifier.exe /flags 0x02000000 /all /log.code_integrity
+        verifier.exe /flags 0x02000000 /all /bootmode oneboot /log.code_integrity
 
         LogAndConsole "Enabling Driver Verifier and Rebooting system"
         Log $verifier_state
@@ -732,11 +739,11 @@ function IsDomainController
 
 function CheckOSSKU
 {
-    $osname = $((gwmi win32_operatingsystem).Name).ToLower()
+    $osname = $((Get-ComputerInfo).WindowsProductName).ToLower()
     $_SKUSupported = 0
     Log "OSNAME:$osname"
     $SKUarray = @("Enterprise", "Education", "IoT", "Windows Server")
-    $HLKAllowed = @("microsoft windows 10 pro")
+    $HLKAllowed = @("windows 10 pro")
     foreach ($SKUent in $SKUarray)
     {
         if($osname.ToString().Contains($SKUent.ToLower()))
@@ -774,7 +781,7 @@ function CheckOSSKU
 
 function CheckOSArchitecture
 {
-    $OSArch = $(gwmi win32_operatingsystem).OSArchitecture.ToLower()
+    $OSArch = $(Get-WmiObject win32_operatingsystem).OSArchitecture.ToLower()
     Log $OSArch
     if($OSArch -match ("^64\-?\s?bit"))
     {
@@ -812,9 +819,9 @@ function CheckSecureBootState
 
 function CheckVirtualization
 {
-    $_vmmExtension = $(gwmi -Class Win32_processor).VMMonitorModeExtensions
-    $_vmFirmwareExtension = $(gwmi -Class Win32_processor).VirtualizationFirmwareEnabled
-    $_vmHyperVPresent =  (gcim -Class Win32_ComputerSystem).HypervisorPresent
+    $_vmmExtension = $(Get-WMIObject -Class Win32_processor).VMMonitorModeExtensions
+    $_vmFirmwareExtension = $(Get-WMIObject -Class Win32_processor).VirtualizationFirmwareEnabled
+    $_vmHyperVPresent =  (Get-CimInstance -Class Win32_ComputerSystem).HypervisorPresent
     Log "VMMonitorModeExtensions $_vmmExtension"
     Log "VirtualizationFirmwareEnabled $_vmFirmwareExtension"
     Log "HyperVisorPresent $_vmHyperVPresent"
@@ -1040,7 +1047,7 @@ if(!$TestForAdmin)
     exit
 }
 
-$isRunningOnVM = (get-wmiobject win32_computersystem).model
+$isRunningOnVM = (Get-WmiObject win32_computersystem).model
 if($isRunningOnVM.Contains("Virtual"))
 {
     LogAndConsoleWarning "Running on a Virtual Machine. DG/CG is supported only if both guest VM and host machine are running with Windows 10, version 1703 or later with English localization."

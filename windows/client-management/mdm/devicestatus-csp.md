@@ -8,8 +8,8 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
-ms.date: 04/30/2019
+author: dansimp
+ms.date: 06/25/2021
 ---
 
 # DeviceStatus CSP
@@ -17,15 +17,57 @@ ms.date: 04/30/2019
 
 The DeviceStatus configuration service provider is used by the enterprise to keep track of device inventory and query the state of compliance of these devices with their enterprise policies.
 
-The following image shows the DeviceStatus configuration service provider in tree format.
-
-![devicestatus csp](images/provisioning-csp-devicestatus.png)
-
+The following example shows the DeviceStatus configuration service provider in tree format.
+```
+./Vendor/MSFT
+DeviceStatus
+----SecureBootState
+----CellularIdentities
+--------IMEI
+------------IMSI
+------------ICCID
+------------PhoneNumber
+------------CommercializationOperator
+------------RoamingStatus
+------------RoamingCompliance
+----NetworkIdentifiers
+--------MacAddress
+------------IPAddressV4
+------------IPAddressV6
+------------IsConnected
+------------Type
+----Compliance
+--------EncryptionCompliance
+----TPM
+--------SpecificationVersion
+----OS
+--------Edition
+--------Mode
+----Antivirus
+--------SignatureStatus
+--------Status
+----Antispyware
+--------SignatureStatus
+--------Status
+----Firewall
+--------Status
+----UAC
+--------Status
+----Battery
+--------Status
+--------EstimatedChargeRemaining
+--------EstimatedRuntime
+----DomainName
+----DeviceGuard
+--------VirtualizationBasedSecurityHwReq
+--------VirtualizationBasedSecurityStatus
+--------LsaCfgCredGuardStatus
+```
 <a href="" id="devicestatus"></a>**DeviceStatus**  
 The root node for the DeviceStatus configuration service provider.
 
 <a href="" id="devicestatus-securebootstate"></a>**DeviceStatus/SecureBootState**  
-Indicates whether secure boot is enabled. The value is one of the following:
+Indicates whether secure boot is enabled. The value is one of the following values:
 
 -   0 - Not supported
 -   1 - Enabled
@@ -36,9 +78,8 @@ Supported operation is Get.
 <a href="" id="devicestatus-cellularidentities"></a>**DeviceStatus/CellularIdentities**  
 Required. Node for queries on the SIM cards.
 
-> **Note**  Multiple SIMs are supported.
-
- 
+>[!NOTE]
+>Multiple SIMs are supported.
 
 <a href="" id="devicestatus-cellularidentities-imei"></a>**DeviceStatus/CellularIdentities/**<strong>*IMEI*</strong>  
 The unique International Mobile Station Equipment Identity (IMEI) number of the mobile device. An IMEI is present for each SIM card on the device.
@@ -95,7 +136,7 @@ Boolean value that indicates whether the network card associated with the MAC ad
 Supported operation is Get.
 
 <a href="" id="devicestatus-networkidentifiers-macaddress-type"></a>**DeviceStatus/NetworkIdentifiers/*MacAddress*/Type**  
-Type of network connection. The value is one of the following:
+Type of network connection. The value is one of the following values:
 
 -   2 - WLAN (or other Wireless interface)
 -   1 - LAN (or other Wired interface)
@@ -107,10 +148,10 @@ Supported operation is Get.
 Node for the compliance query.
 
 <a href="" id="devicestatus-compliance-encryptioncompliance"></a>**DeviceStatus/Compliance/EncryptionCompliance**  
-Boolean value that indicates compliance with the enterprise encryption policy. The value is one of the following:
+Boolean value that indicates compliance with the enterprise encryption policy for OS (system) drives. The value is one of the following values:
 
--   0 - not encrypted
--   1 - encrypted
+-   0 - Not encrypted
+-   1 - Encrypted
 
 Supported operation is Get.
 
@@ -138,8 +179,8 @@ Supported operation is Get.
 Added in Windows, version 1803. Read only node that specifies the device mode.
 
 Valid values:  
--  0 - the device is in standard configuration
--  1 - the device is in S mode configuration
+-  0 - The device is in standard configuration
+-  1 - The device is in S mode configuration
 
 Supported operation is Get.
 
@@ -153,9 +194,9 @@ Added in Windows, version 1607. Integer that specifies the status of the antivi
 
 Valid values:
 
--   0 - The security software reports that it is not the most recent version.
--   1 (default) - The security software reports that it is the most recent version.
--   2 – Not applicable. This is returned for devices like the phone that do not have an antivirus (where the API doesn’t exist.)
+-   0 - The security software reports that it isn't the most recent version.
+-   1 (default) - The security software reports that it's the most recent version.
+-   2 – Not applicable. This value is returned for devices like the phone that don't have an antivirus (where the API doesn’t exist.)
 
 Supported operation is Get.
 
@@ -170,11 +211,11 @@ Added in Windows, version 1607. Integer that specifies the status of the antivi
 
 Valid values:
 
--   0 – Antivirus is on and monitoring
--   1 – Antivirus is disabled
--   2 – Antivirus is not monitoring the device/PC or some options have been turned off
--   3 (default) – Antivirus is temporarily not completely monitoring the device/PC
--   4 – Antivirus not applicable for this device. This is returned for devices like the phone that do not have an antivirus (where the API doesn’t exist.)
+-   0 – Antivirus is on and monitoring.
+-   1 – Antivirus is disabled.
+-   2 – Antivirus isn't monitoring the device/PC or some options have been turned off.
+-   3 (default) – Antivirus is temporarily not completely monitoring the device/PC.
+-   4 – Antivirus not applicable for this device. This value is returned for devices like the phone that don't have an antivirus (where the API doesn’t exist.)
 
 Supported operation is Get.
 
@@ -188,9 +229,9 @@ Added in Windows, version 1607. Integer that specifies the status of the antisp
 
 Valid values:
 
--  0 - The security software reports that it is not the most recent version.
--  1 - The security software reports that it is the most recent version.
--  2 - Not applicable. This is returned for devices like the phone that do not have an antivirus (where the API doesn’t exist.)
+-  0 - The security software reports that it isn't the most recent version.
+-  1 - The security software reports that it's the most recent version.
+-  2 - Not applicable. This value is returned for devices like the phone that don't have an antivirus (where the API doesn’t exist.)
 
 Supported operation is Get.
 
@@ -205,10 +246,10 @@ Added in Windows, version 1607. Integer that specifies the status of the antisp
 
 Valid values:
 
--  0 - The status of the security provider category is good and does not need user attention.
--  1 - The status of the security provider category is not monitored by Windows Security Center (WSC).
--  2 - The status of the security provider category is poor and the computer may be at risk.
--  3 - The security provider category is in snooze state. Snooze indicates that WSC is not actively protecting the computer.
+- 0 - The status of the security provider category is good and doesn't need user attention.
+- 1 - The status of the security provider category isn't monitored by Windows Security.
+- 2 - The status of the security provider category is poor and the computer may be at risk.
+- 3 - The security provider category is in snooze state. Snooze indicates that the Windows Security Service isn't actively protecting the computer.
 
 Supported operation is Get.
 
@@ -222,11 +263,11 @@ Added in Windows, version 1607. Integer that specifies the status of the firewa
 
 Valid values:
 
--   0 – Firewall is on and monitoring
--   1 – Firewall has been disabled
--   2 – Firewall is not monitoring all networks or some rules have been turned off
--   3 (default) – Firewall is temporarily not monitoring all networks
--   4 – Not applicable. This is returned for devices like the phone that do not have an antivirus (where the API doesn’t exist.)
+-   0 – Firewall is on and monitoring.
+-   1 – Firewall has been disabled.
+-   2 – Firewall isn't monitoring all networks or some rules have been turned off.
+-   3 (default) – Firewall is temporarily not monitoring all networks.
+-   4 – Not applicable. This value is returned for devices like the phone that don't have an antivirus (where the API doesn’t exist.)
 
 Supported operation is Get.
 
@@ -251,21 +292,21 @@ Added in Windows, version 1607. Integer that specifies the status of the batter
 Supported operation is Get.
 
 <a href="" id="devicestatus-battery-estimatedchargeremaining"></a>**DeviceStatus/Battery/EstimatedChargeRemaining**  
-Added in Windows, version 1607. Integer that specifies the estimated battery charge remaining. This is the value returned in **BatteryLifeTime** in [SYSTEM\_POWER\_STATUS structure](https://msdn.microsoft.com/library/windows/desktop/aa373232.aspx).
+Added in Windows, version 1607. Integer that specifies the estimated battery charge remaining. This value is the one that is returned in **BatteryLifeTime** in [SYSTEM\_POWER\_STATUS structure](/windows/win32/api/winbase/ns-winbase-system_power_status).
 
-The value is the number of seconds of battery life remaining when the device is not connected to an AC power source. When it is connected to a power source, the value is -1. When the estimation is unknown, the value is -1.
+The value is the number of seconds of battery life remaining when the device isn't connected to an AC power source. When it's connected to a power source, the value is -1. When the estimation is unknown, the value is -1.
 
 Supported operation is Get.
 
 <a href="" id="devicestatus-battery-estimatedruntime"></a>**DeviceStatus/Battery/EstimatedRuntime**  
-Added in Windows, version 1607. Integer that specifies the estimated runtime of the battery. This is the value returned in **BatteryLifeTime** in [SYSTEM\_POWER\_STATUS structure](https://msdn.microsoft.com/library/windows/desktop/aa373232.aspx).
+Added in Windows, version 1607. Integer that specifies the estimated runtime of the battery. This value is the one that is returned in **BatteryLifeTime** in [SYSTEM\_POWER\_STATUS structure](/windows/win32/api/winbase/ns-winbase-system_power_status).
 
-The value is the number of seconds of battery life remaining when the device is not connected to an AC power source. When it is connected to a power source, the value is -1. When the estimation is unknown, the value is -1.
+The value is the number of seconds of battery life remaining when the device isn't connected to an AC power source. When it's connected to a power source, the value is -1. When the estimation is unknown, the value is -1.
 
 Supported operation is Get.
 
 <a href="" id="devicestatus-domainname"></a>**DeviceStatus/DomainName**  
-Added in Windows, version 1709. Returns the fully qualified domain name of the device (if any). If the device is not domain-joined, it returns an empty string.
+Added in Windows, version 1709. Returns the fully qualified domain name of the device (if any). If the device isn't domain-joined, it returns an empty string.
 
 Supported operation is Get.
 
@@ -281,17 +322,17 @@ Added in Windows, version 1709. Virtualization-based security hardware requirem
 - 0x1: SecureBoot required 
 - 0x2: DMA Protection required
 - 0x4: HyperV not supported for Guest VM
-- 0x8: HyperV feature is not available
+- 0x8: HyperV feature isn't available
 
 Supported operation is Get.
 
 <a href="" id="devicestatus-deviceguard-virtualizationbasedsecuritystatus"></a>**DeviceStatus/DeviceGuard/VirtualizationBasedSecurityStatus**  
-Added in Windows, version 1709. Virtualization-based security status.  Value is one of the following:
+Added in Windows, version 1709. Virtualization-based security status.  Value is one of the following values:
 - 0 - Running
 - 1 - Reboot required 
-- 2 - 64 bit architecture required 
-- 3 - not licensed 
-- 4 - not configured 
+- 2 - 64-bit architecture required 
+- 3 - Not licensed 
+- 4 - Not configured 
 - 5 - System doesn't meet hardware requirements 
 - 42 – Other. Event logs in Microsoft-Windows-DeviceGuard have more details
 
@@ -309,8 +350,3 @@ Added in Windows, version 1709. Local System Authority (LSA) credential guard s
 
 
 Supported operation is Get.
-
-
-
-
-

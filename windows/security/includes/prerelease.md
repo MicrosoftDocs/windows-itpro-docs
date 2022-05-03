@@ -1,12 +1,12 @@
 ---
-title: Microsoft Defender ATP Pre-release Disclaimer
-description: Disclaimer for pre-release version of Microsoft Defender ATP.
+title: Microsoft Defender for Endpoint Pre-release Disclaimer
+description: Disclaimer for pre-release version of Microsoft Defender for Endpoint.
 ms.date: 08/28/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: macapara
 author: mjcaparas
-ms.prod: w10
+ms.prod: m365-security
 ---
 
 > [!IMPORTANT]

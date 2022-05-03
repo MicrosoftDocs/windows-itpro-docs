@@ -4,18 +4,18 @@ description: This section describes the ADMXIngestion settings that you can conf
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: aaroncz
 ms.topic: article
 ms.date: 09/06/2017
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # ADMXIngestion (Windows Configuration Designer reference)
 
-Starting in Windows 10, version 1703, you can import (*ingest*) select Group Policy administrative templates (ADMX files) and configure values for ADMX-backed policies in a provisioning package. To see which types of ADMX-backed policies can be applied, see [Win32 and Desktop Bridge app policy configuration overview](https://docs.microsoft.com/windows/client-management/mdm/win32-and-centennial-app-policy-configuration). 
+Starting in Windows 10, version 1703, you can import (*ingest*) select Group Policy administrative templates (ADMX files) and configure values for ADMX-backed policies in a provisioning package. To see which types of ADMX-backed policies can be applied, see [Win32 and Desktop Bridge app policy configuration overview](/windows/client-management/mdm/win32-and-centennial-app-policy-configuration). 
 
 - The settings under [ConfigADMXInstalledPolicy](#configadmxinstalledpolicy) allow you to set values for policies in the imported ADMX file. 
 - The settings under [ConfigOperations](#configoperations) specify the ADMX file to be imported.
@@ -26,10 +26,10 @@ Starting in Windows 10, version 1703, you can import (*ingest*) select Group Pol
 
 ## Applies to
 
-| Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [ConfigADMXInstalledPolicy](#configadmxinstalledpolicy)  | X |  |  |  |  |
-| [ConfigOperations](#configoperations)  | X |   |  |   |   |
+| Setting groups | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| [ConfigADMXInstalledPolicy](#configadmxinstalledpolicy)  | ✔️ |  |  |  |
+| [ConfigOperations](#configoperations)  | ✔️ |  |   |   |
 
 ## ConfigADMXInstalledPolicy
 
@@ -87,14 +87,14 @@ $path="file path"
 
 The following images show snippets of the ADMX file for Office 16 that are used in the examples in the procedures above. The first image highlights the category names.
 
-![Snippet of ADMX shows category names highlighted](../images/admx-category.png)
+![Snippet of ADMX shows category names highlighted.](../images/admx-category.png)
 
 The next image highlights the specific policy.
 
-![Snipped of ADMX shows policy setting highlighted](../images/admx-policy.png)
+![Snipped of ADMX shows policy setting highlighted.](../images/admx-policy.png)
 
 
 ## Related topics
 
-- [Policy configuration service provider (CSP): ADMX-backed policies](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-admx-backed)
-- [Understanding ADMX-backed policies](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/understanding-admx-backed-policies)
+- [Policy configuration service provider (CSP): ADMX-backed policies](/windows/client-management/mdm/policy-configuration-service-provider)
+- [Understanding ADMX-backed policies](/windows/client-management/mdm/understanding-admx-backed-policies)

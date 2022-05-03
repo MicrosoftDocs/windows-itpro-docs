@@ -1,20 +1,20 @@
 ---
-title: How to create a connection croup with user-published and globally published packages (Windows 10)
+title: How to create a connection croup with user-published and globally published packages (Windows 10/11)
 description: How to create a connection croup with user-published and globally published packages.
-author: lomayor
+author: aczechowski
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 07/10/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
 # How to create a connection croup with user-published and globally published packages
 
->Applies to: Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 You can create user-entitled connection groups that contain both user-published and globally published packages, using either of the following methods:
 

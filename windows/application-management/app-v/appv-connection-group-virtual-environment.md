@@ -1,26 +1,26 @@
 ---
-title: About the connection group virtual environment (Windows 10)
+title: About the connection group virtual environment (Windows 10/11)
 description: Learn how the connection group virtual environment works and how package priority is determined.
-author: lomayor
+author: aczechowski
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 06/25/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
 # About the connection group virtual environment
 
->Applies to: Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 ## How package priority is determined
 
-The virtual environment and its current state are associated with the connection group, not with the individual packages. If you remove an App-V package from the connection group, the state that existed as part of the connection group will not migrate with the package.
+The virtual environment and its current state are associated with the connection group, not with the individual packages. If you remove an App-V package from the connection group, the state that existed as part of the connection group won't migrate with the package.
 
-If the same package is a part of two different connection groups, you have to indicate which connection group App-V should use. For example, you might have two packages in a connection group that each define the same registry DWORD value.
+If the same package is a part of two different connection groups, you have to indicate which connection group App-V should use. For example, you might have two packages in a connection group wherein each defines the same registry DWORD value.
 
 The connection group that is used is based on the order in which a package appears inside the **AppConnectionGroup** XML document:
 
@@ -48,12 +48,12 @@ Consider the following example section:
 
 Assume that same DWORD value ABC (HKEY\_LOCAL\_MACHINE\\software\\contoso\\finapp\\region) is defined in the first and third package.
 
-For this example, the DWORD value definition would be the following:
+For this example, the DWORD value definition would be as shown below:
 
 - Package 1 (A8731008-4523-4713-83A4-CD1363907160): HKEY\_LOCAL\_MACHINE\\software\\contoso\\finapp\\region=5
 - Package 3 (04220DCA-EE77-42BE-A9F5-96FD8E8593F2): HKEY\_LOCAL\_MACHINE\\software\\contoso\\finapp\\region=10
 
-Since Package 1 appears first, the AppConnectionGroup's virtual environment will have the single DWORD value of 5 (HKEY\_LOCAL\_MACHINE\\software\\contoso\\finapp\\region=5). This means that the virtual applications in Package 1, Package 2, and Package 3 will all see the value 5 when they query for HKEY\_LOCAL\_MACHINE\\software\\contoso\\finapp\\region.
+Since Package 1 appears first, the AppConnectionGroup's virtual environment will have the single DWORD value of 5 (HKEY\_LOCAL\_MACHINE\\software\\contoso\\finapp\\region=5). This result means that the virtual applications in Package 1, Package 2, and Package 3 will all see the value 5 when they query for HKEY\_LOCAL\_MACHINE\\software\\contoso\\finapp\\region.
 
 Other virtual environment resources are resolved in a similar way, but usually collisions occur in the registry.
 
@@ -72,7 +72,7 @@ The following example shows the order and relationship of a file name lookup in 
 |C:\Windows\System32|C:\Windows\System32|
 |C:\AppTest|C:\AppTest|
 
-When a virtualized application tries to find a specific file, App-V will first for a matching file path in Package A. If it doesn't find a matching path in Package A, it will then search Package B using the following mapping rules:
+When a virtualized application tries to find a specific file, App-V will search for a matching file path in Package A. If it doesn't find a matching path in Package A, it will then search Package B using the following mapping rules:
 
 - If a file named **test.txt** exists in the same virtual folder hierarchy in both application packages, App-V will use the first matching file.
 - If a file named **bar.txt** exists in the virtual folder hierarchy of one application package, but not in the other, App-V will use the first matching file.
