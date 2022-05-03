@@ -34,7 +34,7 @@ To get the EAP configuration from your desktop using the rasphone tool that is s
 
     ![vpnv2 csp set up connection.](images/vpnv2-csp-setupnewconnection.png)
 
-1.  Enter an Internet address and connection name. These can be fake since it does not impact the authentication parameters.
+1.  Enter an Internet address and connection name. These details can be fake since it doesn't impact the authentication parameters.
 
     ![vpnv2 csp set up connection 2.](images/vpnv2-csp-setupnewconnection2.png)
 
@@ -60,7 +60,7 @@ To get the EAP configuration from your desktop using the rasphone tool that is s
     Get-VpnConnection -Name Test
     ```
 
-    <a href="" id="pow"></a>Here is an example output.
+    <a href="" id="pow"></a>Here's an example output.
 
     ``` syntax
     Name                  : Test
@@ -88,7 +88,7 @@ To get the EAP configuration from your desktop using the rasphone tool that is s
     $a.EapConfigXmlStream.InnerXml
     ```
 
-    Here is an example output.
+    Here's an example output.
 
     ```xml
     <EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig"><EapMethod><Type xmlns="http://www.microsoft.co
@@ -116,18 +116,18 @@ To get the EAP configuration from your desktop using the rasphone tool that is s
 ## EAP certificate filtering
 
 
-In your deployment, if you have multiple certificates provisioned on the device and the Wi-Fi profile provisioned does not have a strict filtering criteria, you might see connection failures when connecting to Wi-Fi. The solution is to ensure that the Wi-Fi profile provisioned has strict filtering criteria so that it matches only one certificate.
+In your deployment, if you have multiple certificates provisioned on the device and the Wi-Fi profile provisioned doesn't have a strict filtering criteria, you might see connection failures when connecting to Wi-Fi. The solution is to ensure that the Wi-Fi profile provisioned has strict filtering criteria so that it matches only one certificate.
 
-Enterprises deploying certificate-based EAP authentication for VPN and Wi-Fi can encounter a situation where there are multiple certificates that meet the default criteria for authentication. This can lead to issues such as:
+Enterprises deploying certificate-based EAP authentication for VPN and Wi-Fi can encounter a situation where there are multiple certificates that meet the default criteria for authentication. This situation can lead to issues such as:
 
 -   The user might be prompted to select the certificate.
 -   The wrong certificate might be auto-selected and cause an authentication failure.
 
 A production ready deployment must have the appropriate certificate details as part of the profile being deployed. The following information explains how to create or update an EAP configuration XML such that the extraneous certificates are filtered out and the appropriate certificate can be used for the authentication.
 
-EAP XML must be updated with relevant information for your environment. This can be done manually by editing the following XML sample, or by using the step-by-step UI guide. After the EAP XML is updated, refer to instructions from your MDM to deploy the updated configuration as follows:
+EAP XML must be updated with relevant information for your environment. This task can be done manually by editing the following XML sample, or by using the step-by-step UI guide. After the EAP XML is updated, refer to instructions from your MDM to deploy the updated configuration as follows:
 
--   For Wi-Fi, look for the `<EAPConfig>` section of your current WLAN Profile XML. (This is what you specify for the WLanXml node in the Wi-Fi CSP.) Within these tags you will find the complete EAP configuration. Replace the section under `<EAPConfig>` with your updated XML and update your Wi-Fi profile. You can refer to your MDM’s guidance on how to deploy a new Wi-Fi profile.
+-   For Wi-Fi, look for the `<EAPConfig>` section of your current WLAN Profile XML. (This section is what you specify for the WLanXml node in the Wi-Fi CSP.) Within these tags you'll find the complete EAP configuration. Replace the section under `<EAPConfig>` with your updated XML and update your Wi-Fi profile. You can refer to your MDM’s guidance on how to deploy a new Wi-Fi profile.
 -   For VPN, EAP configuration is a separate field in the MDM configuration. Work with your MDM provider to identify and update the appropriate field.
 
 For information about EAP settings, see <https://technet.microsoft.com/library/hh945104.aspx#BKMK_Cfg_cert_Selct>.
@@ -142,13 +142,13 @@ The following list describes the prerequisites for a certificate to be used with
 
 -   The certificate must have at least one of the following EKU properties:
 
-    -   Client Authentication. As defined by RFC 5280, this is a well-defined OID with value 1.3.6.1.5.5.7.3.2.
-    -   Any Purpose. This is an EKU defined and published by Microsoft, and is a well-defined OID with value 1.3.6.1.4.1.311.10.12.1. The inclusion of this OID implies that the certificate can be used for any purpose. The advantage of this EKU over the All Purpose EKU is that additional non-critical or custom EKUs can still be added to the certificate for effective filtering.
-    -   All Purpose. As defined by RFC 5280, if a CA includes EKUs to satisfy some application needs, but does not want to restrict usage of the key, the CA can add an EKU value of 0. A certificate with such an EKU can be used for all purposes.
+    -   Client Authentication. As defined by RFC 5280, this property is a well-defined OID with value 1.3.6.1.5.5.7.3.2.
+    -   Any Purpose. This property is an EKU-defined one and is published by Microsoft, and is a well-defined OID with value 1.3.6.1.4.1.311.10.12.1. The inclusion of this OID implies that the certificate can be used for any purpose. The advantage of this EKU over the All Purpose EKU is that other non-critical or custom EKUs can still be added to the certificate for effective filtering.
+    -   All Purpose. As defined by RFC 5280, if a CA includes EKUs to satisfy some application needs, but doesn't want to restrict usage of the key, the CA can add an EKU value of 0. A certificate with such an EKU can be used for all purposes.
     
 -   The user or the computer certificate on the client must chain to a trusted root CA.
--   The user or the computer certificate does not fail any one of the checks that are performed by the CryptoAPI certificate store, and the certificate passes requirements in the remote access policy.
--   The user or the computer certificate does not fail any one of the certificate object identifier checks that are specified in the Internet Authentication Service (IAS)/Radius Server.
+-   The user or the computer certificate doesn't fail any one of the checks that are performed by the CryptoAPI certificate store, and the certificate passes requirements in the remote access policy.
+-   The user or the computer certificate doesn't fail any one of the certificate object identifier checks that are specified in the Internet Authentication Service (IAS)/Radius Server.
 -   The Subject Alternative Name (SubjectAltName) extension in the certificate contains the user principal name (UPN) of the user.
 
 The following XML sample explains the properties for the EAP TLS XML, including certificate filtering.
@@ -265,7 +265,7 @@ The following XML sample explains the properties for the EAP TLS XML, including 
 Alternatively, you can use the following procedure to create an EAP configuration XML:
 
 1.  Follow steps 1 through 7 in the EAP configuration article.
-1.  In the **Microsoft VPN SelfHost Properties** dialog box, select **Microsoft: Smart Card or other Certificate** from the drop-down menu (this selects EAP TLS).
+1.  In the **Microsoft VPN SelfHost Properties** dialog box, select **Microsoft: Smart Card or other Certificate** from the drop-down menu (this value selects EAP TLS).
 
     ![vpn self host properties window.](images/certfiltering1.png)
 

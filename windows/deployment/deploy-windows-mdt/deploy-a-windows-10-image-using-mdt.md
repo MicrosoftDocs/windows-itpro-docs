@@ -371,7 +371,7 @@ On **MDT01**:
    1.  Preinstall: After the **Enable BitLocker (Offline)** action, add a **Set Task Sequence Variable** action with the following settings:
        1.  Name: Set DriverGroup001
        2.  Task Sequence Variable: DriverGroup001
-       3.  Value: Windows 10 x64\\%Manufacturer%\\%Model%
+       3.  Value: Windows 10 x64\\%Make%\\%Model%
 
    2.  Configure the **Inject Drivers** action with the following settings:
        - Choose a selection profile: Nothing

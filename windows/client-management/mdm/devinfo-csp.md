@@ -1,6 +1,6 @@
 ---
 title: DevInfo CSP
-description: Learn now the DevInfo configuration service provider handles the managed object which provides device information to the OMA DM server.
+description: Learn how the DevInfo configuration service provider handles the managed object that provides device information to the OMA DM server.
 ms.assetid: d3eb70db-1ce9-4c72-a13d-651137c1713c
 ms.reviewer: 
 manager: dansimp
@@ -15,16 +15,16 @@ ms.date: 06/26/2017
 # DevInfo CSP
 
 
-The DevInfo configuration service provider handles the managed object which provides device information to the OMA DM server. This device information is automatically sent to the OMA DM server at the beginning of each OMA DM session.
+The DevInfo configuration service provider handles the managed object that provides device information to the OMA DM server. This device information is automatically sent to the OMA DM server at the beginning of each OMA DM session.
 
 > [!NOTE]
 > This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_DEVICE\_MANAGEMENT\_ADMIN capabilities to be accessed from a network configuration application.
 
  
 
-For the DevInfo CSP, you cannot use the Replace command unless the node already exists.
+For the DevInfo CSP, you can't use the Replace command unless the node already exists.
 
-The following shows the DevInfo configuration service provider management object in tree format as used by OMA Device Management. The OMA Client provisioning protocol is not supported by this configuration service provider.
+The following example shows the DevInfo configuration service provider management object in tree format as used by OMA Device Management. The OMA Client provisioning protocol isn't supported by this configuration service provider.
 ```
 .
 DevInfo
@@ -52,14 +52,14 @@ The **UseHWDevID** parm of the [DMAcc configuration service provider](dmacc-csp.
 <a href="" id="man"></a>**Man**  
 Required. Returns the name of the OEM. For Windows 10 for desktop editions, it returns the SystemManufacturer as defined in HKEY\_LOCAL\_MACHINE\\HARDWARE\\DESCRIPTION\\System\\BIOS\\SystemManufacturer.
 
-If no name is found, this returns "Unknown".
+If no name is found, the value returned is "Unknown".
 
 Supported operation is Get.
 
 <a href="" id="mod"></a>**Mod**  
 Required. Returns the name of the hardware device model as specified by the mobile operator. For Windows 10 for desktop editions, it returns the SystemProductName as defined in HKEY\_LOCAL\_MACHINE\\HARDWARE\\DESCRIPTION\\System\\BIOS\\SystemProductName.
 
-If no name is found, this returns "Unknown".
+If no name is found, the value returned is "Unknown".
 
 Supported operation is Get.
 
