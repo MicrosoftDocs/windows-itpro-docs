@@ -114,11 +114,7 @@ The following table shows the compatibility matrix for systems that have been Bi
 
 Table 1: Cross compatibility for Windows 11, Windows 10, Windows 8.1, Windows 8, and Windows 7 encrypted volumes
 
-<<<<<<< v-smandalika-blmgep-4318240
-|Encryption Type|Windows 10 and Windows 8.1|Windows 8|Windows 7|
-=======
 |Encryption Type|Windows 11, Windows 10, and Windows 8.1|Windows 8|Windows 7|
->>>>>>> main
 |--- |--- |--- |--- |
 |Fully encrypted on Windows 8|Presents as fully encrypted|N/A|Presented as fully encrypted|
 |Used Disk Space Only encrypted on Windows 8|Presents as encrypt on write|N/A|Presented as fully encrypted|
