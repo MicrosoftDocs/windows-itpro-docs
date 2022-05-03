@@ -6,9 +6,9 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
-ms.author: greglin
-manager: laurawi
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.localizationpriority: high
 ms.topic: article
 ---
@@ -16,7 +16,7 @@ ms.topic: article
 # What's new in Windows 10, version 2004 for IT Pros
 
 **Applies to**
--   Windows 10, version 2004
+-   Windows 10, version 2004
 
 This article lists new and updated features and content that are of interest to IT Pros for Windows 10, version 2004, also known as the Windows 10 May 2020 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1909.
 
@@ -194,9 +194,9 @@ Several enhancements to the Windows 10 user interface are implemented in this re
 
 - Productivity: chat-based UI gives you the ability to [interact with Cortana using typed or spoken natural language queries](https://support.microsoft.com/help/4557165) to easily get information across Microsoft 365 and stay on track. Productivity focused capabilities such as finding people profiles, checking schedules, joining meetings, and adding to lists in Microsoft To Do are currently available to English speakers in the US.
 
-  - In the coming months, with regular app updates through the Microsoft Store, we’ll enhance this experience to support wake word invocation and enable listening when you say “Cortana,” offer more productivity capabilities such as surfacing relevant emails and documents to help you prepare for meetings, and expand supported capabilities for international users.
+  - In the coming months, with regular app updates through the Microsoft Store, we'll enhance this experience to support wake word invocation and enable listening when you say "Cortana", offer more productivity capabilities such as surfacing relevant emails and documents to help you prepare for meetings, and expand supported capabilities for international users.
 
-- Security: tightened access to Cortana so that you must be securely logged in with your work or school account or your Microsoft account before using Cortana. Because of this tightened access, some consumer skills including music, connected home, and third-party skills will no longer be available. Additionally, users [get cloud-based assistance services that meet Office 365’s enterprise-level privacy, security, and compliance promises](/microsoft-365/admin/misc/cortana-integration?view=o365-worldwide) as set out in the Online Services Terms.
+- Security: tightened access to Cortana so that you must be securely logged in with your work or school account or your Microsoft account before using Cortana. Because of this tightened access, some consumer skills including music, connected home, and third-party skills will no longer be available. Additionally, users [get cloud-based assistance services that meet Office 365's enterprise-level privacy, security, and compliance promises](/microsoft-365/admin/misc/cortana-integration) as set out in the Online Services Terms.
 
 - Move the Cortana window: drag the Cortana window to a more convenient location on your desktop.
 
@@ -256,13 +256,13 @@ For information about Desktop Analytics and this release of Windows 10, see [Wha
 
 ## See Also
 
-- [What’s new for IT pros in Windows 10, version 2004](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-s-new-for-it-pros-in-windows-10-version-2004/ba-p/1419764): Windows IT Pro blog.
-- [What’s new in the Windows 10 May 2020 Update](https://blogs.windows.com/windowsexperience/2020/05/27/whats-new-in-the-windows-10-may-2020-update/): Windows Insider blog.
+- [What's new for IT pros in Windows 10, version 2004](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-s-new-for-it-pros-in-windows-10-version-2004/ba-p/1419764): Windows IT Pro blog.
+- [What's new in the Windows 10 May 2020 Update](https://blogs.windows.com/windowsexperience/2020/05/27/whats-new-in-the-windows-10-may-2020-update/): Windows Insider blog.
 - [What's New in Windows Server](/windows-server/get-started/whats-new-in-windows-server): New and updated features in Windows Server.
 - [Windows 10 Features](https://www.microsoft.com/windows/features): General information about Windows 10 features.
-- [What's New in Windows 10](./index.yml): See what’s new in other versions of Windows 10.
+- [What's New in Windows 10](./index.yml): See what's new in other versions of Windows 10.
 - [Start developing on Windows 10, version 2004 today](https://blogs.windows.com/windowsdeveloper/2020/05/12/start-developing-on-windows-10-version-2004-today/): New and updated features in Windows 10 that are of interest to developers.
 - [What's new for business in Windows 10 Insider Preview Builds](/windows-insider/Active-Dev-Branch): A preview of new features for businesses.
 - [What's new in Windows 10, version 2004 - Windows Insiders](/windows-insider/at-home/whats-new-wip-at-home-20h1): This list also includes consumer focused new features.
 - [Features and functionality removed in Windows 10](/windows/deployment/planning/windows-10-removed-features): Removed features.
-- [Windows 10 features we’re no longer developing](/windows/deployment/planning/windows-10-deprecated-features): Features that are not being developed.
+- [Windows 10 features we're no longer developing](/windows/deployment/planning/windows-10-deprecated-features): Features that are not being developed.

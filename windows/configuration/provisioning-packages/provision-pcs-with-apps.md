@@ -5,12 +5,12 @@ keywords: ["runtime provisioning", "provisioning package"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.topic: article
 ms.reviewer: gkomatsu
-manager: dansimp
+manager: dougeby
 ---
 
 # Provision PCs with apps 

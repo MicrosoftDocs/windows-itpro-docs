@@ -4,9 +4,9 @@ description: Brief summary of the kinds of Windows updates, the channels they ar
 keywords: updates, servicing, current, deployment, General Availability Channel, General Availability Channel, feature, quality, rings, insider, tools
 ms.prod: w10
 ms.mktglfcycl: manage
-author: jaimeo
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: aaroncz
 manager: dougeby
 ms.topic: article
 ms.collection: highpri
