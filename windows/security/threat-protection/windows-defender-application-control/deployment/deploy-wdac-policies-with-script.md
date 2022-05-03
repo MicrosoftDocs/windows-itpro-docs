@@ -10,7 +10,7 @@ ms.reviewer: jogeurte
 ms.author: jogeurte
 ms.manager: jsuther
 manager: dansimp
-ms.date: 11/06/2021
+ms.date: 03/08/2022
 ms.technology: windows-sec
 ms.topic: article
 ms.localizationpriority: medium
@@ -85,11 +85,11 @@ In addition to the steps outlined above, the binary policy file must also be cop
 1. Mount the EFI volume and make the directory, if it does not exist, in an elevated PowerShell prompt: 
 
     ```powershell
-   $MountPoint = 'C:\EFI'
-   $EFIDestinationFolder = "$MountPoint\Microsoft\Boot\CiPolicies\Active"
+   $MountPoint = 'C:\EFIMount'
+   $EFIDestinationFolder = "$MountPoint\EFI\Microsoft\Boot\CiPolicies\Active"
    $EFIPartition = (Get-Partition | Where-Object IsSystem).AccessPaths[0]
-   mkdir $EFIDestinationFolder
    mountvol $MountPoint $EFIPartition
+   mkdir $EFIDestinationFolder
     ```
 
 2. Copy the signed policy to the created folder:

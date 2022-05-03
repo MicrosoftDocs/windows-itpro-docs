@@ -23,7 +23,7 @@ manager: dansimp
 
 [EnterpriseAppVManagement CSP reference](./enterpriseappvmanagement-csp.md)
 
-The following shows the EnterpriseAppVManagement configuration service provider in tree format.
+The following example shows the EnterpriseAppVManagement configuration service provider in tree format.
 
 ```console
 ./Vendor/MSFT
@@ -54,7 +54,7 @@ EnterpriseAppVManagement
 ------------Policy
 ```
 
-<p>(./User/Vendor/MSFT/EnterpriseAppVManagement) contains the following sub-nodes.</p>
+<p>(./User/Vendor/MSFT/EnterpriseAppVManagement) contains the following subnodes.</p>
 
 <p><b>AppVPublishing</b> - An exec action node that contains the App-V publishing configuration for an MDM device (applied globally to all users for that device) or a specific MDM user.</p>
 
@@ -144,7 +144,7 @@ EnterpriseAppVManagement
 
 #### Configure App-V client
 
-<p>This example shows how to allow package scripts to run during package operations (publish, run, and unpublish).  Allowing package scripts assists in package deployments (add and publish of App-V apps).</p>
+<p>This example shows how to allow package scripts to run during package operations (publish, run, and unpublish). Allowing package scripts helps package deployments (add and publish of App-V apps).</p>
 
 ```xml
 <Replace> 

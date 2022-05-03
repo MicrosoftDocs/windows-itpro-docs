@@ -3,13 +3,13 @@ title: Conflicts and Precedence (Windows 10)
 description: In this article, learn how User State Migration Tool (USMT) 10.0 deals with conflicts and precedence.
 ms.assetid: 0e2691a8-ff1e-4424-879b-4d5a2f8a113a
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.date: 04/19/2017
 ms.topic: article
 ---

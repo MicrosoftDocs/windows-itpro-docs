@@ -22,6 +22,6 @@ ms.technology: windows-sec
 
 
 Advanced audit policy configuration is supported on all versions of Windows since it was introduced in Windows Vista. 
-There is no difference in security auditing support between 32-bit and 64-bit versions. 
-Windows editions that cannot join a domain, such as Windows 10 Home edition, do not have access to these features. 
+There's no difference in security auditing support between 32-bit and 64-bit versions. 
+Windows editions that can't join a domain, such as Windows 10 Home edition, don't have access to these features. 
 

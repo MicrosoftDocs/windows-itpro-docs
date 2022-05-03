@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -94,14 +94,14 @@ The easiest way to verify that the onPremisesDistingushedNamne attribute is sync
 2. Select **Sign in to Graph Explorer** and provide Azure credentials.
 
 > [!NOTE]
-> To successfully query the Graph API, adequate [permissions](/graph/api/user-get?view=graph-rest-1.0&tabs=http#permissions) must be granted.
+> To successfully query the Graph API, adequate [permissions](/graph/api/user-get?) must be granted.
 
 3. Select **Modify permissions (Preview)**. Scroll down and locate **User.Read.All** (or any other required permission) and select **Consent**. You will now be prompted for delegated permissions consent.
 
 4. In the Graph Explorer URL, enter https://graph.microsoft.com/v1.0/users/[userid]?$select=displayName,userPrincipalName,onPremisesDistinguishedName, where **[userid]** is the user principal name of a user in Azure Active Directory.  Select **Run query**.
 
 > [!NOTE]
-> Because the v1.0 endpoint of the Graph API only provides a limited set of parameters, we will use the $select [Optional OData query parameter](/graph/api/user-get?view=graph-rest-1.0&tabs=http#optional-query-parameters). For convenience, it is possible to switch the API version selector from **v1.0** to **beta** before performing the query. This will provide all available user information, but remember, **beta** endpoint queries should not be used in production scenarios.
+> Because the v1.0 endpoint of the Graph API only provides a limited set of parameters, we will use the $select [Optional OData query parameter](/graph/api/user-get?). For convenience, it is possible to switch the API version selector from **v1.0** to **beta** before performing the query. This will provide all available user information, but remember, **beta** endpoint queries should not be used in production scenarios.
 
 #### Request
 
@@ -650,7 +650,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
 5. Under **Basic Settings** next to **Name**, type **WHFB NDES 01**.  Choose a name that correlates this Azure AD Application Proxy setting with the on-premises NDES server.  Each NDES server must have its own Azure AD Application Proxy as two NDES servers cannot share the same internal URL.
 
-6. Next to **Internal URL**, type the internal, fully qualified DNS name of the NDES server associated with this Azure AD Application Proxy.  For example, https://ndes.corp.mstepdemo.net).  You need to match the primary host name (AD Computer Account name) of the NDES server, and prefix the URL with **https**.
+6. Next to **Internal URL**, type the internal, fully qualified DNS name of the NDES server associated with this Azure AD Application Proxy.  For example, ```https://ndes.corp.mstepdemo.net```.  You need to match the primary host name (AD Computer Account name) of the NDES server, and prefix the URL with **https**.
 
 7. Under **Internal URL**, select **https://** from the first list.  In the text box next to **https://**, type the hostname you want to use as your external hostname for the Azure AD Application Proxy.  In the list next to the hostname you typed, select a DNS suffix you want to use externally for the Azure AD Application Proxy.  It is recommended to use the default, -[tenantName].msapproxy.net where **[tenantName]** is your current Azure Active Directory tenant name (-mstephendemo.msappproxy.net).
 
@@ -1025,7 +1025,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
     ![WHFB SCEP certificate Profile EKUs.](images/aadjcert/profile03.png)
 
-17. Under **SCEP Server URLs**, type the fully qualified external name of the Azure AD Application proxy you configured. Append to the name **/certsrv/mscep/mscep.dll**. For example, https://ndes-mtephendemo.msappproxy.net/certsrv/mscep/mscep.dll. Click **Add**. Repeat this step for each additional NDES Azure AD Application Proxy you configured to issue Windows Hello for Business certificates. Microsoft Intune round-robin load balances requests among the URLs listed in the SCEP certificate profile.
+17. Under **SCEP Server URLs**, type the fully qualified external name of the Azure AD Application proxy you configured. Append to the name **/certsrv/mscep/mscep.dll**. For example, ```https://ndes-mtephendemo.msappproxy.net/certsrv/mscep/mscep.dll```. Click **Add**. Repeat this step for each additional NDES Azure AD Application Proxy you configured to issue Windows Hello for Business certificates. Microsoft Intune round-robin load balances requests among the URLs listed in the SCEP certificate profile.
 
 18. Click **Next**.
 
