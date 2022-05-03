@@ -16,6 +16,7 @@ ms.collection:
   - M365-security-compliance
   - highpri
 ms.topic: conceptual
+adobe-target: true
 ---
 
 # Trusted Platform Module Technology Overview

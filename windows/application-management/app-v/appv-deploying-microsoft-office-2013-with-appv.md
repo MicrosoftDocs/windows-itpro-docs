@@ -1,15 +1,15 @@
 ---
 title: Deploying Microsoft Office 2013 by Using App-V (Windows 10/11)
 description: Use Application Virtualization (App-V) to deliver Microsoft Office 2013 as a virtualized application to computers in your organization.
-author: greg-lindsay
+author: aczechowski
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
 # Deploying Microsoft Office 2013 by Using App-V
@@ -419,18 +419,11 @@ This section describes the requirements and options for deploying Visio 2013 and
 ### Additional resources for Office 2013 App-V Packages
 
 * [Office 2013 Deployment Tool for Click-to-Run](https://www.microsoft.com/download/details.aspx?id=36778)
-* [Supported scenarios for deploying Microsoft Office as a sequenced App-V Package](https://support.microsoft.com/kb/2772509)
-
-### Additional resources for Office 2010 App-V Packages
-
-* [Microsoft Office 2010 Sequencing Kit for Microsoft Application Virtualization 5.0](https://www.microsoft.com/download/details.aspx?id=38399)
-* [Known issues when you create or use an App-V 5.0 Office 2010 package](https://support.microsoft.com/kb/2828619)
-* [How To Sequence Microsoft Office 2010 in Microsoft Application Virtualization 5.0](https://support.microsoft.com/kb/2830069)
 
 ### Additional resources for Connection Groups
 
 * [Managing Connection Groups](appv-managing-connection-groups.md)
-* [Connection groups on the App-V team blog](https://blogs.msdn.microsoft.com/gladiator/tag/connection-groups/)
+* [Connection groups on the App-V team blog](/archive/blogs/gladiator/app-v-5-more-on-connection-groups)
 
 ### Additional resources for Dynamic Configuration
 

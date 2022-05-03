@@ -65,13 +65,13 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting blocks applications from using the network to send tile, badge, toast, and raw notifications. Specifically, this policy setting turns off the connection between Windows and the Windows Push Notification Service (WNS). This policy setting also stops applications from being able to use [periodic (polling) notifications](/windows/uwp/design/shell/tiles-and-notifications/periodic-notification-overview).
+This policy setting blocks application from using the network to send tile, badge, toast, and raw notifications. Specifically, this policy setting turns off the connection between Windows and the Windows Push Notification Service (WNS). This policy setting also stops applications from being able to use [periodic (polling) notifications](/windows/uwp/design/shell/tiles-and-notifications/periodic-notification-overview).
 
-If you enable this policy setting, applications and system features will not be able receive notifications from the network from WNS or via notification polling APIs.
+If you enable this policy setting, applications and system features won't be able to receive notifications from the network from WNS or via notification polling APIs.
 
 If you enable this policy setting, notifications can still be raised by applications running on the machine via local API calls from within the application.
 
-If you disable or do not configure this policy setting, the client computer will connect to WNS at user login and applications will be allowed to use periodic (polling) notifications.
+If you disable or don't configure this policy setting, the client computer will connect to WNS at user sign in and applications will be allowed to use periodic (polling) notifications.
 
 No reboots or service restarts are required for this policy setting to take effect.
 
@@ -130,7 +130,7 @@ Validation:
 <!--Description-->
 Boolean value that turns off notification mirroring.
 
-For each user logged into the device, if you enable this policy (set value to 1) the app and system notifications received by this user on this device will not get mirrored to other devices of the same logged in user. If you disable or do not configure this policy (set value to 0) the notifications received by this user on this device will be mirrored to other devices of the same logged in user. This feature can be turned off by apps that do not want to participate in Notification Mirroring. This feature can also be turned off by the user in the Cortana setting page.
+For each user signed in to the device, if you enable this policy (set value to 1) the app and system notifications received by this user on this device won't get mirrored to other devices of the same signed-in user. If you disable or don't configure this policy (set value to 0), the notifications received by this user on this device will be mirrored to other devices of the same signed-in user. This feature can be turned off by apps that don't want to participate in Notification Mirroring. This feature can also be turned off by the user in the Cortana setting page.
 
 No reboot or service restart is required for this policy to take effect.
 
@@ -182,9 +182,9 @@ The following list shows the supported values:
 <!--Description-->
 This policy setting turns off tile notifications.
 
-If you enable this policy setting, applications and system features will not be able to update their tiles and tile badges in the Start screen.
+If you enable this policy setting, applications and system features won't be able to update their tiles and tile badges in the Start screen.
 
-If you disable or do not configure this policy setting, tile and badge notifications are enabled and can be turned off by the administrator or user.
+If you disable or don't configure this policy setting, tile and badge notifications are enabled and can be turned off by the administrator or user.
 
 No reboots or service restarts are required for this policy setting to take effect.
 
@@ -263,7 +263,7 @@ Validation:
 <!--Description-->
 This policy setting determines which Windows Notification Service endpoint will be used to connect for Windows Push Notifications. 
 
-If you disable or do not configure this setting, the push notifications will connect to the default endpoint of client.wns.windows.com.
+If you disable or don't configure this setting, the push notifications will connect to the default endpoint of client.wns.windows.com.
 
 Note: Ensure the proper WNS FQDNs, VIPs, IPs and Ports are also allowlisted from your firewall settings.
 
@@ -277,7 +277,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-If the policy is not specified, we will default our connection to client.wns.windows.com.
+If the policy isn't specified, we'll default our connection to client.wns.windows.com.
 
 <!--/SupportedValues-->
 <!--/Policy-->

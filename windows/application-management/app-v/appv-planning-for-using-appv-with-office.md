@@ -1,15 +1,15 @@
 ---
 title: Planning for Deploying App-V with Office (Windows 10/11)
 description: Use the information in this article to plan how to deploy Office within Microsoft Application Virtualization (App-V).
-author: greg-lindsay
+author: aczechowski
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
 # Planning for deploying App-V with Office
@@ -70,7 +70,7 @@ The following table describes the integration level of each version of Office, a
 |Office 2013|Always integrated. Windows operating system integrations can't be disabled.|
 |Office 2016|Always integrated. Windows operating system integrations can't be disabled.|
 
-Microsoft recommends deploying Office coexistence with only one integrated Office instance. For example, if you’re using App-V to deploy Office 2010 and Office 2013, you should sequence Office 2010 in non-integrated mode. For more information about sequencing Office in non-integration (isolated) mode, see [How to sequence Microsoft Office 2010 in Microsoft Application Virtualization 5.0](https://support.microsoft.com/kb/2830069).
+Microsoft recommends deploying Office coexistence with only one integrated Office instance. For example, if you’re using App-V to deploy Office 2010 and Office 2013, you should sequence Office 2010 in non-integrated mode.
 
 ### Known limitations of Office coexistence scenarios
 

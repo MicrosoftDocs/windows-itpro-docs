@@ -3,14 +3,14 @@ title: Use VAMT in Windows PowerShell (Windows 10)
 description: Learn how to use Volume Activation Management Tool (VAMT) PowerShell cmdlets to perform the same functions as the Vamt.exe command-line tool.
 ms.assetid: 13e0ceec-d827-4681-a5c3-8704349e3ba9
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.date: 04/25/2017
 ms.topic: article
 ---

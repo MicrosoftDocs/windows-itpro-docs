@@ -3,14 +3,14 @@ title: Create a Custom Compatibility Mode (Windows 10)
 description: Windows® provides several compatibility modes, groups of compatibility fixes found to resolve many common application-compatibility issues.
 ms.assetid: 661a1c0d-267f-4a79-8445-62a9a98d09b0
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.date: 04/19/2017
 ms.topic: article
 ---

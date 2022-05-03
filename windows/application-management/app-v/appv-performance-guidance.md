@@ -1,15 +1,15 @@
 ---
 title: Performance Guidance for Application Virtualization (Windows 10/11)
 description: Learn how to configure App-V for optimal performance, optimize virtual app packages, and provide a better user experience with RDS and VDI.
-author: greg-lindsay
+author: aczechowski
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ---
 
 
@@ -349,8 +349,6 @@ Server Performance Tuning Guidelines for
 -   [File Server (SMB) Relevance: If used for App-V Content Storage and Delivery in SCS Mode](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj134210(v=ws.11))
 
 **Windows Client (Guest OS) Performance Tuning Guidance**
-
--   [Microsoft Windows 7](https://download.microsoft.com/download/E/5/7/E5783D68-160B-4366-8387-114FC3E45EB4/Performance Tuning Guidelines for Windows 7 Desktop Virtualization v1.9.docx)
 
 -   [Optimization Script: (Provided by Microsoft Support)](/archive/blogs/jeff_stokes/the-microsoft-premier-field-engineer-pfe-view-on-virtual-desktop-vdi-density)
 
