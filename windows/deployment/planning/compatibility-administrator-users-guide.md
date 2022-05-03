@@ -2,15 +2,15 @@
 title: Compatibility Administrator User's Guide (Windows 10)
 ms.assetid: 0ce05f66-9009-4739-a789-60f3ce380e76
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 description: The Compatibility Administrator tool helps you resolve potential application-compatibility issues before deploying a new version of Windows.
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ms.custom: seo-marvel-mar2020
 ---

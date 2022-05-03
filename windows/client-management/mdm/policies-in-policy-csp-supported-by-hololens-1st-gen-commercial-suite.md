@@ -1,6 +1,6 @@
 ---
 title: Policies in Policy CSP supported by HoloLens (1st gen) Commercial Suite
-description: Policies in Policy CSP supported by HoloLens (1st gen) Commercial Suite
+description: Learn the policies in Policy CSP supported by HoloLens (1st gen) Commercial Suite.
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp

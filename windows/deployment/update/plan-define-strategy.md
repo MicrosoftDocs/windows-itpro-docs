@@ -4,10 +4,10 @@ description: Two examples of a calendar-based approach to consistent update inst
 keywords: updates, servicing, current, deployment, General Availability Channel, feature, quality, rings, tools
 ms.prod: w10
 ms.mktglfcycl: manage
-author: jaimeo
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: jaimeo
-manager: laurawi
+ms.author: aaroncz
+manager: dougeby
 ms.topic: article
 ms.collection: m365initiative-coredeploy
 ---

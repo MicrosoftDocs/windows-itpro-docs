@@ -6,9 +6,9 @@ ms.mktglfcycl: plan
 ms.localizationpriority: medium
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
-manager: laurawi
-ms.author: greglin
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---

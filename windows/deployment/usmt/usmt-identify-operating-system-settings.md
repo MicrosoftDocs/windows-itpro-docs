@@ -3,13 +3,13 @@ title: Identify Operating System Settings (Windows 10)
 description: Identify which system settings you want to migrate, then use the User State Migration Tool (USMT) to select settings and keep the default values for all others.
 ms.assetid: 1704ab18-1765-41fb-a27c-3aa3128fa242
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.date: 04/19/2017
 ms.topic: article
 ---

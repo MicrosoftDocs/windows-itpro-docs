@@ -245,8 +245,8 @@ Whenever an application verifies a TLS/SSL certificate chain that contains a ser
 The output file name consists of the leading eight ASCII hex digits of the root’s SHA1 thumbprint followed by the server name. 
 For example:
 
-- D4DE20D0_xsi.outlook.com.p7b
-- DE28F4A4_www.yammer.com.p7b
+- `D4DE20D0_xsi.outlook.com.p7b`
+- `DE28F4A4_www.yammer.com.p7b`
 
 If there's either an enterprise certificate pin rule or a Microsoft certificate pin rule mismatch, then Windows writes the .p7b file to the **MismatchPinRules** child folder. 
 If the pin rules have expired, then Windows writes the .p7b to the **ExpiredPinRules** child folder. 
