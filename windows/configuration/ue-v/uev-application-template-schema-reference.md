@@ -70,7 +70,7 @@ The XML declaration must specify the XML version 1.0 attribute (&lt;?xml version
 
 **Type: String**
 
-UE-V uses the https://schemas.microsoft.com/UserExperienceVirtualization/2012/SettingsLocationTemplate namespace for all applications. SettingsLocationTemplate is the root element and contains all other elements. Reference SettingsLocationTemplate in all templates using this tag:
+UE-V uses the ```https://schemas.microsoft.com/UserExperienceVirtualization/2012/SettingsLocationTemplate``` namespace for all applications. SettingsLocationTemplate is the root element and contains all other elements. Reference SettingsLocationTemplate in all templates using this tag:
 
 `<SettingsLocationTemplate xmlns='https://schemas.microsoft.com/UserExperienceVirtualization/2012/SettingsLocationTemplate'>`
 

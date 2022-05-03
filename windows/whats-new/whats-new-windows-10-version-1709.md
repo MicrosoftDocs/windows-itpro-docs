@@ -87,7 +87,7 @@ The AssignedAccess CSP has been expanded to make it easy for administrators to c
 
 ### Microsoft Defender for Endpoint
 
-Microsoft Defender for Endpoint has been expanded with powerful analytics, security stack integration, and centralized management for better detection, prevention, investigation, response, and management. For more information, see [View the Microsoft Defender for Endpoint Security analytics dashboard](/windows/threat-protection/windows-defender-atp/security-analytics-dashboard-windows-defender-advanced-threat-protection).
+Microsoft Defender for Endpoint has been expanded with powerful analytics, security stack integration, and centralized management for better detection, prevention, investigation, response, and management. For more information, see [View the Microsoft Defender for Endpoint Security analytics dashboard](/microsoft-365/security/defender-endpoint/tvm-microsoft-secure-score-devices).
 
 ### Windows Defender Application Guard
 

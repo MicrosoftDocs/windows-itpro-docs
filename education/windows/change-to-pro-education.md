@@ -17,7 +17,7 @@ manager: dansimp
 # Change to Windows 10 Pro Education from Windows 10 Pro
 Windows 10 Pro Education is a new offering in Windows 10, version 1607. This edition builds on the commercial version of Windows 10 Pro and provides important management controls needed in schools by providing education-specific default settings.
 
-If you have an education tenant and use devices with Windows 10 Pro, global administrators can opt-in to a free change to Windows 10 Pro Education depending on your scenario.
+If you have an education tenant and use devices with Windows 10 Pro, global administrators can opt in to a free change to Windows 10 Pro Education depending on your scenario.
 - [Switch to Windows 10 Pro Education in S mode from Windows 10 Pro in S mode](./s-mode-switch-to-edu.md)
 
 To take advantage of this offering, make sure you meet the [requirements for changing](#requirements-for-changing). For academic customers who are eligible to change to Windows 10 Pro Education, but are unable to use the above methods, contact Microsoft Support for assistance.
@@ -43,7 +43,7 @@ For more info about Windows 10 default settings and recommendations for educatio
 
 ## Change from Windows 10 Pro to Windows 10 Pro Education
 
-For schools that want to standardize all their Windows 10 Pro devices to Windows 10 Pro Education, a global admin for the school can opt-in to a free change through the Microsoft Store for Education.
+For schools that want to standardize all their Windows 10 Pro devices to Windows 10 Pro Education, a global admin for the school can opt in to a free change through the Microsoft Store for Education.
 
 In this scenario:
 
@@ -51,7 +51,7 @@ In this scenario:
 - Any device that joins the Azure AD will change automatically to Windows 10 Pro Education.
 - The IT admin has the option to automatically roll back to Windows 10 Pro, if desired. See [Roll back Windows 10 Pro Education to Windows 10 Pro](#roll-back-windows-10-pro-education-to-windows-10-pro).
 
-See [change using Microsoft Store for Education](#change-using-microsoft-store-for-education) for details on how to do this.
+See [change using Microsoft Store for Education](#change-using-microsoft-store-for-education) for details on how to turn on the change.
 
 ### Change using Intune for Education
 
@@ -98,8 +98,8 @@ Academic institutions can easily move from Windows 10 Pro to Windows 10 Pro Educ
 
 When you change to Windows 10 Pro Education, you get the following benefits:
 
-- **Windows 10 Pro Education edition**. Devices currently running Windows 10 Pro, version 1607 or higher, or Windows 10 S mode, version 1703, can get Windows 10 Pro Education Current Branch (CB). This benefit does not include Long Term Service Branch (LTSB).
-- **Support from one to hundreds of users**. The Windows 10 Pro Education program does not have a limitation on the number of licenses an organization can have.
+- **Windows 10 Pro Education edition**. Devices currently running Windows 10 Pro, version 1607 or higher, or Windows 10 S mode, version 1703, can get Windows 10 Pro Education Current Branch (CB). This benefit doesn't include Long Term Service Branch (LTSB).
+- **Support from one to hundreds of users**. The Windows 10 Pro Education program doesn't have a limitation on the number of licenses an organization can have.
 - **Roll back options to Windows 10 Pro**
   - When a user leaves the domain or you turn off the setting to automatically change to Windows 10 Pro Education, the device reverts seamlessly to Windows 10 Pro edition (after a grace period of up to 30 days). 
   - For devices that originally had Windows 10 Pro edition installed, when a license expires or is transferred to another user, the Windows 10 Pro Education device seamlessly steps back down to Windows 10 Pro. 
@@ -108,13 +108,13 @@ When you change to Windows 10 Pro Education, you get the following benefits:
 
 
 ### Change using Microsoft Store for Education
-Once you enable the setting to change to Windows 10 Pro Education, the change will begin only after a user signs in to their device. The setting applies to the entire organization or tenant, so you cannot select which users will receive the change. The change will only apply to Windows 10 Pro devices.
+Once you enable the setting to change to Windows 10 Pro Education, the change will begin only after a user signs in to their device. The setting applies to the entire organization or tenant, so you can't select which users will receive the change. The change will only apply to Windows 10 Pro devices.
 
 **To turn on the automatic change to Windows 10 Pro Education**
 
 1. Sign in to [Microsoft Store for Education](https://educationstore.microsoft.com/) with your work or school account.
 
-   If this is the first time you're signing into the Microsoft Store for Education, you'll be prompted to accept the Microsoft Store for Education Terms of Use.
+   If you're signing into the Microsoft Store for Education for the first time, you'll be prompted to accept the Microsoft Store for Education Terms of Use.
 
 2. Click **Manage** from the top menu and then select the **Benefits tile**.
 3. In the **Benefits** tile, look for the **Change to Windows 10 Pro Education for free** link and then click it.
@@ -130,11 +130,11 @@ Once you enable the setting to change to Windows 10 Pro Education, the change wi
     A confirmation window pops up to let you know that an email has been sent to you to enable the change. 
 
 6. Close the confirmation window and check the email to proceed to the next step.
-7. In the email, click the link to **Change to Windows 10 Pro Education**. Once you click the link, this will take you back to the Microsoft Store for Education portal.
+7. In the email, click the link to **Change to Windows 10 Pro Education**. Once you click the link, you are taken back to the Microsoft Store for Education portal.
 
 8. Click **Change now** in the **changing your device to Windows 10 Pro Education for free** page in the Microsoft Store. 
 
-    You will see a window that confirms you've successfully changed all the devices in your organization to Windows 10 Pro Education, and each Azure AD joined device running Windows 10 Pro will automatically change the next time someone in your organization signs in to the device.
+    You'll see a window that confirms you've successfully changed all the devices in your organization to Windows 10 Pro Education, and each Azure AD joined device running Windows 10 Pro will automatically change the next time someone in your organization signs in to the device.
 
 9. Click **Close** in the **Success** window.
 
@@ -146,7 +146,7 @@ Enabling the automatic change also triggers an email message notifying all globa
 So what will users experience? How will they change their devices?
 
 ### For existing Azure AD joined devices
-Existing Azure AD domain joined devices will be changed to Windows 10 Pro Education the next time the user logs in. That's it! No additional steps are needed.
+Existing Azure AD domain joined devices will be changed to Windows 10 Pro Education the next time the user logs in. That's it! No other steps are needed.
 
 ### For new devices that are not Azure AD joined
 Now that you've turned on the setting to automatically change to Windows 10 Pro Education, the users are ready to change their devices running Windows 10 Pro, version 1607 or higher, version 1703 to Windows 10 Pro Education edition.
@@ -197,7 +197,7 @@ If the Windows device is running Windows 10, version 1703, follow these steps.
 
     ![Select the option to join the device to Azure Active Directory.](images/settings_setupworkorschoolaccount_2.png)
 
-4. On the **Let's get you signed in** window, enter the Azure AD credentials (username and password) and sign in. This will join the device to the school's Azure AD.
+4. On the **Let's get you signed in** window, enter the Azure AD credentials (username and password) and sign in. The device is joined with the school's Azure AD.
 5. To verify that the device was successfully joined to Azure AD, go back to **Settings > Accounts > Access work or school**. You should now see a connection under the **Connect to work or school** section that indicates the device is connected to Azure AD.
 
     **Figure 8** - Verify the device connected to Azure AD
@@ -207,7 +207,7 @@ If the Windows device is running Windows 10, version 1703, follow these steps.
 
 #### Step 2: Sign in using Azure AD account
 
-Once the device is joined to your Azure AD subscription, the user will sign in by using his or her Azure AD account. The Windows 10 Pro Education license associated with the user will enable Windows 10 Pro Education edition capabilities on the device.
+Once the device is joined to your Azure AD subscription, users will sign in by using their Azure AD account. The Windows 10 Pro Education license associated with the user will enable Windows 10 Pro Education edition capabilities on the device.
 
 
 #### Step 3: Verify that Pro Education edition is enabled
@@ -224,7 +224,7 @@ If there are any problems with the Windows 10 Pro Education license or the acti
 
 In some instances, users may experience problems with the Windows 10 Pro Education change. The most common problems that users may experience are as follows:
 
--   The existing operating system (Windows 10 Pro, version 1607 or higher, or version 1703) is not activated.
+-   The existing operating system (Windows 10 Pro, version 1607 or higher, or version 1703) isn't activated.
 -   The Windows 10 Pro Education change has lapsed or has been removed.
 
 Use the following figures to help you troubleshoot when users experience these common problems:
@@ -234,7 +234,7 @@ Use the following figures to help you troubleshoot when users experience these c
 <img src="images/win-10-pro-edu-activated-subscription-active.png" alt="Windows 10 activated and subscription active" /></br></br>
 
 
-**Figure 11** - Illustrates a device on which the existing operating system is not activated, but the Windows 10 Pro Education change is active.
+**Figure 11** - Illustrates a device on which the existing operating system isn't activated, but the Windows 10 Pro Education change is active.
 
 <img src="images/win-10-pro-edu-not-activated-subscription-active.png" alt="Windows 10 not activated and subscription active" /></br></br>
 
@@ -245,7 +245,7 @@ Devices must be running Windows 10 Pro, version 1607 or higher, or domain joined
 
 **To determine if a device is Azure AD joined**
 
-1.  Open a command prompt and type the following:
+1.  Open a command prompt and type the following command:
 
     ```
     dsregcmd /status
@@ -268,19 +268,19 @@ Devices must be running Windows 10 Pro, version 1607 or higher, or domain joined
 
 ### Roll back Windows 10 Pro Education to Windows 10 Pro
 
-If your organization has the Windows 10 Pro to Windows 10 Pro Education change enabled, and you decide to roll back to Windows 10 Pro or to cancel the change, you can do this by:
+If your organization has the Windows 10 Pro to Windows 10 Pro Education change enabled, and you decide to roll back to Windows 10 Pro or to cancel the change, perform the following task:
 
-- Logging into Microsoft Store for Education page and turning off the automatic change.
+- Log into Microsoft Store for Education page and turning off the automatic change.
 - Selecting the link to turn off the automatic change from the notification email sent to all global administrators.
 
-Once the automatic change to Windows 10 Pro Education is turned off, the change is effective immediately. Devices that were changed will revert to Windows 10 Pro only after the license has been refreshed (every 30 days) and the next time the user signs in. This means that a user whose device was changed may not immediately see Windows 10 Pro Education rolled back to Windows 10 Pro for up to 30 days. However, users who haven't signed in during the time that a change was enabled and then turned off will never see their device change from Windows 10 Pro.
+Once the automatic change to Windows 10 Pro Education is turned off, the change is effective immediately. Devices that were changed will revert to Windows 10 Pro only after the license has been refreshed (every 30 days) and the next time the user signs in. Therefore, users whose device was changed may not immediately see Windows 10 Pro Education rolled back to Windows 10 Pro for up to 30 days. However, users who haven't signed in during the time that a change was enabled and then turned off will never see their device change from Windows 10 Pro.
 
 > [!NOTE]  
-> Devices that were changed from  mode to Windows 10 Pro Education cannot roll back to Windows 10 Pro Education S mode.
+> Devices that were changed from  mode to Windows 10 Pro Education can't roll back to Windows 10 Pro Education S mode.
 
 **To roll back Windows 10 Pro Education to Windows 10 Pro**
 
-1. Log in to [Microsoft Store for Education](https://educationstore.microsoft.com/) with your school or work account, or follow the link from the notification email to turn off the automatic change.
+1. Sign in to [Microsoft Store for Education](https://educationstore.microsoft.com/) with your school or work account, or follow the link from the notification email to turn off the automatic change.
 2. Select **Manage > Benefits** and locate the section **Windows 10 Pro Education** and follow the link.
 3. In the **Revert to Windows 10 Pro** page, click **Revert to Windows 10 Pro**.
 
@@ -288,7 +288,7 @@ Once the automatic change to Windows 10 Pro Education is turned off, the change 
 
     ![Revert to Windows 10 Pro.](images/msfe_manage_reverttowin10pro.png)
 
-4. You will be asked if you're sure that you want to turn off automatic changes to Windows 10 Pro Education. Click **Yes**.
+4. You'll be asked if you're sure that you want to turn off automatic changes to Windows 10 Pro Education. Click **Yes**.
 5. Click **Close** in the **Success** page.
 
     All global admins get a confirmation email that a request was made to roll back your organization to Windows 10 Pro. If you, or another global admin, decide later that you want to turn on automatic changes again, you can do this by selecting **change to Windows 10 Pro Education for free** from the **Manage > Benefits** in the Microsoft Store for Education.

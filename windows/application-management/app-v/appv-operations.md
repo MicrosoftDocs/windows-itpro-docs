@@ -34,7 +34,7 @@ This section of the Microsoft Application Virtualization (App-V) Administratorâ€
     Describes how to deploy App-V packages by using an ESD.
 - [Using the App-V Client Management Console](appv-using-the-client-management-console.md)
 
-    Describes how perform client configuration tasks using the client management console.
+    Describes how to perform client configuration tasks using the client management console.
 - [Migrating to App-V from a Previous Version](appv-migrating-to-appv-from-a-previous-version.md)
 
     Provides instructions for migrating to App-V from a previous version.
