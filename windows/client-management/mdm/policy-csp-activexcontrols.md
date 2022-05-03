@@ -1,12 +1,12 @@
 ---
 title: Policy CSP - ActiveXControls
-description: Learn about various Policy configuration service provider (CSP) - ActiveXControls settings, including SyncML, for Windows 10.
+description: Learn about various Policy configuration service provider (CSP) - ActiveXControls settings, including SyncML, for Windows 10.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 09/27/2019
 ms.reviewer: 
 manager: dansimp
@@ -40,31 +40,13 @@ manager: dansimp
 <a href="" id="activexcontrols-approvedinstallationsites"></a>**ActiveXControls/ApprovedInstallationSites**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td><td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -83,9 +65,10 @@ This policy setting determines which ActiveX installation sites standard users i
 
 If you enable this setting, the administrator can create a list of approved ActiveX Install sites specified by host URL. 
 
-If you disable or do not configure this policy setting, ActiveX controls prompt the user for administrative credentials before installation. 
+If you disable or don't configure this policy setting, ActiveX controls prompt the user for administrative credentials before installation. 
 
-Note: Wild card characters cannot be used when specifying the host URLs.
+> [!Note]
+> Wild card characters can't be used when specifying the host URLs.
 
 <!--/Description-->
 
@@ -103,3 +86,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

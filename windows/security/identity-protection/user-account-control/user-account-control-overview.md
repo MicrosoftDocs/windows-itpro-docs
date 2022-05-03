@@ -3,7 +3,7 @@ title: User Account Control (Windows)
 description: User Account Control (UAC) helps prevent malware from damaging a PC and helps organizations deploy a better-managed desktop.
 ms.assetid: 43ac4926-076f-4df2-84af-471ee7d20c38
 ms.reviewer: 
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: operate
 ms.sitesec: library
 ms.pagetype: security
@@ -12,7 +12,9 @@ audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-ms.collection: M365-identity-device-management
+ms.collection:
+  - M365-identity-device-management
+  - highpri
 ms.topic: article
 ms.date: 09/24/2011
 ---
@@ -30,7 +32,7 @@ UAC allows all users to log on to their computers using a standard user account.
 
 Other apps, especially those that were not specifically designed with security settings in mind, often require additional permissions to run successfully. These types of apps are referred to as legacy apps. Additionally, actions such as installing new software and making configuration changes to the Windows Firewall, require more permissions than what is available to a standard user account.
 
-When an app needs to run with more than standard user rights, UAC can restore additional user groups to the token. This enables the user to have explicit control of apps that are making system level changes to their computer or device.
+When an app needs to run with more than standard user rights, UAC allows users to run apps with their administrator token (with administrative groups and privileges) instead of their default, standard user access token. Users continue to operate in the standard user security context, while enabling certain apps to run with elevated privileges, if needed.
 
 ## Practical applications
 

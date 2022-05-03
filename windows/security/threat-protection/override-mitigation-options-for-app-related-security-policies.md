@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.sitesec: library
 author: dulcemontemayor
 ms.localizationpriority: medium
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 

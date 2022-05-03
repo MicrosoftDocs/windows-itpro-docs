@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/09/2021
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Plan and deploy advanced security audit policies

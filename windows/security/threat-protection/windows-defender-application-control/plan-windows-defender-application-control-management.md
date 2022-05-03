@@ -15,7 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 02/21/2018
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Plan for Windows Defender Application Control lifecycle policy management
@@ -33,7 +33,7 @@ This topic describes the decisions you need to make to establish the processes f
 
 ## Policy XML lifecycle management
 
-The first step in implementing application control is to consider how your policies will be managed and maintained over time. Developing a process for managing WDAC policies helps assure that WDAC continues to effectively control how applications are allowed to run in your organization.
+The first step in implementing application control is to consider how your policies will be managed and maintained over time. Developing a process for managing WDAC policies helps ensure that WDAC continues to effectively control how applications are allowed to run in your organization.
 
 Most WDAC policies will evolve over time and proceed through a set of identifiable phases during their lifetime. Typically, these phases include:
 

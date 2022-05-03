@@ -1,12 +1,12 @@
 ---
 title: Policy CSP - ADMX_COM
-description: Policy CSP - ADMX_COM
+description: Learn about the Policy CSP - ADMX_COM.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 08/18/2020
 ms.reviewer: 
 manager: dansimp
@@ -42,38 +42,14 @@ manager: dansimp
 <a href="" id="admx-com-appmgmt-com-searchforclsid-1"></a>**ADMX_COM/AppMgmt_COM_SearchForCLSID_1**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -90,11 +66,11 @@ manager: dansimp
 <!--Description-->
 This policy setting directs the system to search Active Directory for missing Component Object Model (COM) components that a program requires.
 
-Many Windows programs, such as the MMC snap-ins, use the interfaces provided by the COM components. These programs cannot perform all their functions unless Windows has internally registered the required components.
+Many Windows programs, such as the MMC snap-ins, use the interfaces provided by the COM components. These programs can't perform all their functions unless Windows has internally registered the required components.
 
-If you enable this policy setting and a component registration is missing, the system searches for it in Active Directory and, if it is found, downloads it. The resulting searches might make some programs start or run slowly.
+If you enable this policy setting and a component registration is missing, the system searches for it in Active Directory and, if it's found, downloads it. The resulting searches might make some programs start or run slowly.
 
-If you disable or do not configure this policy setting, the program continues without the registration. As a result, the program might not perform all its functions, or it might stop.
+If you disable or don't configure this policy setting, the program continues without the registration. As a result, the program might not perform all its functions, or it might stop.
 
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
@@ -118,38 +94,14 @@ ADMX Info:
 <a href="" id="admx-com-appmgmt-com-searchforclsid-2"></a>**ADMX_COM/AppMgmt_COM_SearchForCLSID_2**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -166,11 +118,11 @@ ADMX Info:
 <!--Description-->
 This policy setting directs the system to search Active Directory for missing Component Object Model (COM) components that a program requires.
 
-Many Windows programs, such as the MMC snap-ins, use the interfaces provided by the COM components. These programs cannot perform all their functions unless Windows has internally registered the required components.
+Many Windows programs, such as the MMC snap-ins, use the interfaces provided by the COM components. These programs can't perform all their functions unless Windows has internally registered the required components.
 
-If you enable this policy setting and a component registration is missing, the system searches for it in Active Directory and, if it is found, downloads it. The resulting searches might make some programs start or run slowly.
+If you enable this policy setting and a component registration is missing, the system searches for it in Active Directory and, if it's found, downloads it. The resulting searches might make some programs start or run slowly.
 
-If you disable or do not configure this policy setting, the program continues without the registration. As a result, the program might not perform all its functions, or it might stop.
+If you disable or don't configure this policy setting, the program continues without the registration. As a result, the program might not perform all its functions, or it might stop.
 
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
@@ -189,3 +141,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

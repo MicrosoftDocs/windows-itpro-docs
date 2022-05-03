@@ -12,7 +12,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 09/06/2021
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Audit SAM
@@ -41,8 +41,6 @@ Only a [SACL](/windows/win32/secauthz/access-control-lists) for SAM\_SERVER can 
 Changes to user and group objects are tracked by the Account Management audit category. However, user accounts with enough privileges could potentially alter the files in which the account and password information is stored in the system, bypassing any Account Management events.
 
 **Event volume**: High on domain controllers.
-
-For information about reducing the number of events generated in this subcategory, see [KB841001](https://support.microsoft.com/kb/841001).
 
 | Computer Type     | General Success | General Failure | Stronger Success | Stronger Failure | Comments                                                                                                                                                                                                                    |
 |-------------------|-----------------|-----------------|------------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

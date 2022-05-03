@@ -1,7 +1,7 @@
 ---
 title: Virtual Smart Card Overview (Windows 10)
 description: Learn more about the virtual smart card technology that was developed by Microsoft. Find links to additional topics about virtual smart cards.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

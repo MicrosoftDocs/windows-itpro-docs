@@ -8,12 +8,15 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 06/26/2017
 ---
 
 # Storage CSP
 
+Storage CSP is deprecated. Use System/AllowStorageCard in [Policy CSP](policy-configuration-service-provider.md) instead.
+
+<!-- 12.16.2021 mandia: Commenting out, as this CSP is specific to Windows 10 Mobile.
 
 The Storage enterprise configuration service provider is used to configure the storage card settings. Currently, the only setting that needs to be configured is to enable or disable storage cards.
 
@@ -34,19 +37,10 @@ The supported operations are Get and Replace.
 
 > **Note**   If the device returns a 404 error code when the server applies the Get command to ./Vendor/MSFT/Storage/Disable, it means that the device does not have an SD card.
 
- 
+-->
 
 ## Related topics
 
+System/AllowStorageCard in [Policy CSP](policy-configuration-service-provider.md)
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-
- 
-
-
-
-
-
-

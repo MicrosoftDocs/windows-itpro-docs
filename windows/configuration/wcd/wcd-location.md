@@ -4,12 +4,12 @@ description: This section describes the Location settings that you can configure
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.topic: article
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # Location (Windows Configuration Designer reference)
@@ -18,9 +18,9 @@ Use Location settings to configure location services.
 
 ## Applies to
 
-| Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [EnableLocation](#enablelocation) |  |    |  |  | X |
+| Setting groups | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| [EnableLocation](#enablelocation) |  |  |  | ✔️ |
 
 ## EnableLocation
 

@@ -1,7 +1,7 @@
 ---
 title: Security Principals (Windows 10)
 description: Security Principals
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

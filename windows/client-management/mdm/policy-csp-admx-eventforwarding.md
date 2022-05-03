@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 08/17/2020
 ms.reviewer: 
 manager: dansimp
@@ -43,38 +43,14 @@ manager: dansimp
 <a href="" id="admx_eventforwarding-forwarderresourceusage"></a>**ADMX_EventForwarding/ForwarderResourceUsage**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -91,9 +67,9 @@ manager: dansimp
 <!--Description-->
 This policy setting controls resource usage for the forwarder (source computer) by controlling the events/per second sent to the Event Collector.
 
-If you enable this policy setting, you can control the volume of events sent to the Event Collector by the source computer. This may be required in high volume environments.
+If you enable this policy setting, you can control the volume of events sent to the Event Collector by the source computer. This volume-control may be required in high-volume environments.
 
-If you disable or do not configure this policy setting, forwarder resource usage is not specified.
+If you disable or don't configure this policy setting, forwarder resource usage isn't specified.
 
 This setting applies across all subscriptions for the forwarder (source computer).
 
@@ -117,37 +93,14 @@ ADMX Info:
 <a href="" id="admx_eventforwarding-subscriptionmanager"></a>**ADMX_EventForwarding/SubscriptionManager**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -175,7 +128,7 @@ Server=https://<FQDN of the collector>:5986/wsman/SubscriptionManager/WEC,Refres
 
 When using the HTTP protocol, use port 5985.
 
-If you disable or do not configure this policy setting, the Event Collector computer will not be specified.
+If you disable or don't configure this policy setting, the Event Collector computer won't be specified.
 
 <!--/Description-->
 

@@ -45,38 +45,14 @@ manager: dansimp
 <a href="" id="admx-eventviewer-eventviewer_redirectionprogram"></a>**ADMX_EventViewer/EventViewer_RedirectionProgram**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -91,7 +67,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This is the program that will be invoked when the user clicks the `events.asp` link.
+This program is the one that will be invoked when the user clicks the `events.asp` link.
 
 <!--/Description-->
  
@@ -111,38 +87,14 @@ ADMX Info:
 <a href="" id="admx-eventviewer-eventviewer_redirectionprogramcommandlineparameters"></a>**ADMX_EventViewer/EventViewer_RedirectionProgramCommandLineParameters**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -157,7 +109,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This specifies the command line parameters that will be passed to the `events.asp` program.
+This program specifies the command line parameters that will be passed to the `events.asp` program.
 
 <!--/Description-->
 
@@ -176,38 +128,14 @@ ADMX Info:
 <a href="" id="admx-eventviewer-eventviewer_redirectionurl"></a>**ADMX_EventViewer/EventViewer_RedirectionURL**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -222,7 +150,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This is the URL that will be passed to the Description area in the Event Properties dialog box. 
+This URL is the one that will be passed to the Description area in the Event Properties dialog box. 
 Change this value if you want to use a different Web server to handle event information requests.
 
 

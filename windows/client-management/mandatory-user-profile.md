@@ -11,6 +11,7 @@ ms.date: 09/14/2021
 ms.reviewer: 
 manager: dansimp
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Create mandatory user profiles
@@ -41,7 +42,7 @@ The name of the folder in which you store the mandatory profile must use the cor
 | Windows 10, versions 1507 and 1511 | N/A | v5 |
 | Windows 10, versions 1607, 1703, 1709, 1803, 1809, 1903 and 1909 |  Windows Server 2016 and Windows Server 2019 | v6 |
 
-For more information, see [Deploy Roaming User Profiles, Appendix B](/windows-server/storage/folder-redirection/deploy-roaming-user-profiles#appendix-b-profile-version-reference-information) and [Roaming user profiles versioning in Windows 10 and Windows Server Technical Preview](https://support.microsoft.com/kb/3056198).
+For more information, see [Deploy Roaming User Profiles, Appendix B](/windows-server/storage/folder-redirection/deploy-roaming-user-profiles#appendix-b-profile-version-reference-information) and [Roaming user profiles versioning in Windows 10 and Windows Server Technical Preview](/troubleshoot/windows-server/user-profiles-and-logon/roaming-user-profiles-versioning).
 
 ## Mandatory user profile
 
@@ -68,7 +69,7 @@ First, you create a default user profile with the customizations that you want, 
 
 1. At a command prompt, type the following command and press **ENTER**.
 
-   ```dos
+   ```console
    sysprep /oobe /reboot /generalize /unattend:unattend.xml
    ```
 
@@ -100,11 +101,11 @@ First, you create a default user profile with the customizations that you want, 
 
    - If the device is joined to the domain and you are signed in with an account that has permissions to write to a shared folder on the network, you can enter the shared folder path.
 
-   ![Example of Copy profile to.](images/copy-to-path.png)
+     ![Example of Copy profile to.](images/copy-to-path.png)
 
    - If the device is not joined to the domain, you can save the profile locally and then copy it to the shared folder location.
 
-   ![Example of Copy To UI with UNC path.](images/copy-to-path.png)
+     ![Example of Copy To UI with UNC path.](images/copy-to-path.png)
 
 1. Click **OK** to copy the default user profile.
 

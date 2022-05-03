@@ -2,14 +2,14 @@
 title: Enable or block Windows Mixed Reality apps in the enterprise (Windows 10/11)
 description: Learn how to enable Windows Mixed Reality apps in WSUS or block the Windows Mixed Reality portal in enterprises.
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 keyboards: ["mr", "mr portal", "mixed reality portal", "mixed reality"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-author: greg-lindsay
-ms.author: greglin
+author: aczechowski
+ms.author: aaroncz
 ms.topic: article
 ---
 
@@ -50,8 +50,7 @@ Organizations that use Windows Server Update Services (WSUS) must take action to
         ```
       
         > [!NOTE]
-        > * On Windows 10, you must rename the FOD .CAB file to : **Microsoft-Windows-Holographic-Desktop-FOD-Package\~31bf3856ad364e35\~amd64\~\~.cab**
-        > * On Windows 11, you must rename the FOD .CAB file to: **Microsoft-Windows-Holographic-Desktop-FOD-Package~31bf3856ad364e45~amd_64~~.cab**
+        > On Windows 10 and 11, you must rename the FOD .CAB file to: **Microsoft-Windows-Holographic-Desktop-FOD-Package~31bf3856ad364e35~amd64~~.cab**
 
    1. In **Settings** > **Update & Security** > **Windows Update**, select **Check for updates**.
 

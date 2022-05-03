@@ -3,11 +3,11 @@ title: Assign devices to servicing channels for Windows client updates
 description: Learn how to assign devices to servicing channels for Windows 10 updates locally, by using Group Policy, and by using MDM
 ms.prod: w10
 ms.mktglfcycl: deploy
-author: jaimeo
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: aaroncz
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.topic: article
 ms.custom:
 - seo-marvel-apr2020
@@ -43,7 +43,7 @@ The General Availability Channel is the default servicing channel for all Window
 >The LTSC edition is only available through the [Microsoft Volume Licensing Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
 
 >[!NOTE]
->Devices will automatically receive updates from the Semi-Annual Channel, unless they are configured to receive preview updates through the Windows Insider Program.
+>Devices will automatically receive updates from the General Availability Channel, unless they are configured to receive preview updates through the Windows Insider Program.
 
 
 ## Enroll devices in the Windows Insider Program
@@ -63,7 +63,7 @@ The **Branch Readiness Level** settings allow you to choose between preview flig
 * Group Policy: **Computer Configuration/Administrative Templates/Windows Components/Windows Update/ Windows Update for Business** - *Select when Preview Builds and feature updates are received*
 * MDM: **Update/BranchReadinessLevel**
 
-For more information, see [Windows Insider Program for Business](/windows-insider/at-work-pro/wip-4-biz-get-started)
+For more information, see [Windows Insider Program for Business](/windows-insider/business/register).
 
 ## Block access to Windows Insider Program
 

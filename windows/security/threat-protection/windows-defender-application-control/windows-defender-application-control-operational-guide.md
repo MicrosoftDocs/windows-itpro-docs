@@ -15,7 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 03/16/2020
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Windows Defender Application Control operational guide
