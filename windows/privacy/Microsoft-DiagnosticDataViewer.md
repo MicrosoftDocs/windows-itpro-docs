@@ -2,7 +2,7 @@
 title: Diagnostic Data Viewer for PowerShell Overview (Windows 10)
 description: Use this article to use the Diagnostic Data Viewer for PowerShell to review the diagnostic data sent to Microsoft by your device.
 keywords: privacy
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 01/17/2018
+ms.date: 11/29/2021
 ms.reviewer: 
+ms.technology: privacy
 ---
 
 # Diagnostic Data Viewer for PowerShell Overview
@@ -46,7 +47,7 @@ Using the Diagnostic Data Viewer for PowerShell requires administrative (elevate
 ### Install the Diagnostic Data Viewer for PowerShell
 
    >[!IMPORTANT]
-   >It is recommended to visit the documentation on [Getting Started](/powershell/gallery/getting-started) with PowerShell Gallery. This page provides more specific details on installing a PowerShell module. 
+   >It is recommended to visit the documentation on [Getting Started](/powershell/scripting/gallery/getting-started) with PowerShell Gallery. This page provides more specific details on installing a PowerShell module. 
 
 To install the newest version of the Diagnostic Data Viewer PowerShell module, run the following command within an elevated PowerShell session: 
 ```powershell
@@ -186,4 +187,4 @@ When resetting the size of your data history to a lower value, be sure to turn o
 
 ## Related Links
 - [Module in PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.DiagnosticDataViewer)
-- [Documentation for Diagnostic Data Viewer for PowerShell](/powershell/module/microsoft.diagnosticdataviewer/?view=win10-ps)
+- [Documentation for Diagnostic Data Viewer for PowerShell](/powershell/module/microsoft.diagnosticdataviewer/?)

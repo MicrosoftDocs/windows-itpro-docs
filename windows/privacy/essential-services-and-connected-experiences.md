@@ -2,7 +2,7 @@
 title: Essential services and connected experiences for Windows
 description: Explains what the essential services and connected experiences are for Windows
 keywords: privacy, manage connections to Microsoft
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
@@ -10,7 +10,10 @@ audience: ITPro
 author: siosulli
 ms.author: dansimp
 manager: dansimp
-ms.date: 
+ms.technology: privacy
+ms.date: 11/24/2021
+ms.collection: highpri
+
 ---
 
 # Essential services and connected experiences for Windows
@@ -55,7 +58,7 @@ Although enterprise admins can turn off most essential services, we recommend, w
 |Cloud Clipboard|Cloud Clipboard enables users to copy images and text across all Windows devices when they sign in with the same account. Users can paste from their clipboard history and also pin items.<br/>To turn it off, see [Cloud Clipboard](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#30-cloud-clipboard). |
 | Date and Time | The Windows Time service is used to synchronize and maintain the most accurate date and time on your devices. It's installed by default and starts automatically on devices that are part of a domain. It can be started manually on other devices. If this service is stopped, date and time synchronization will be unavailable and any services that explicitly depend on it will fail to start. <br/>To turn it off, see [Date and Time](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services#3-date--time). |
 | Delivery Optimization | Delivery Optimization is a cloud-managed, peer-to-peer client and a downloader service for Windows updates, upgrades, and applications to an organization's networked devices. Delivery Optimization allows devices to download updates from alternate sources, such as other peers on the network, in addition to Microsoft servers. This helps when you have a limited or unreliable Internet connection and reduces the bandwidth needed to keep all your organization's devices up to date. <br/>If you have Delivery Optimization Peer-to-Peer option turned on, devices on your network may send and receive updates and apps to other devices on your local network, if you choose, or to devices on the Internet. By default, devices running Windows will only use Delivery Optimization to get and receive updates for devices and apps on your local network. <br/>To turn it off, see [Delivery Optimization](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services#28-delivery-optimization). |
-| Emojis and more | The Emoji and more menu allows users to insert a variety of content like emoji, kaomoji, GIFs, symbols, and clipboard history. This connected experience is new in Windows 11. <br/>To turn it off, see [Emojis availability](/windows/client-management/mdm/policy-csp-textinpu.md#textinput-touchkeyboardemojibuttonavailability). |
+| Emojis and more | The Emoji and more menu allows users to insert a variety of content like emoji, kaomoji, GIFs, symbols, and clipboard history. This connected experience is new in Windows 11. <br/>To turn it off, see [Emojis availability](/windows/client-management/mdm/policy-csp-textinput). |
 | Find My Device | Find My Device is a feature that can help users locate their Windows device if it's lost or stolen. This feature only works if a Microsoft account is used to sign in to the device, the user is an administrator on the device, and when location is turned on for the device. Users can find their device by logging in to [https://account.microsoft.com/devices](https://account.microsoft.com/devices) under the Find My Device tab. <br/>To turn it off, see [Find My Device](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services#5-find-my-device). |
 | Location services | The device location setting enables certain Windows features such as auto setting the time zone or Find My Device to function properly. When the device location setting is enabled, the Microsoft location service will use a combination of global positioning service (GPS), nearby wireless access points, cell towers, and IP address to determine the device’s location. Depending on the capabilities of the device, its location can be determined with varying degrees of accuracy and may in some cases be determined precisely. <br/>To turn it off, see [Location services](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services#182-location). |
 | Microsoft Defender Antivirus | Microsoft Defender Antivirus provides cloud-delivered protection against new and emerging threats for the devices in your organization. Turning off Microsoft Defender Antivirus will potentially leave your Windows devices in a vulnerable state and more prone to security threats. <br/>To turn it off, see [Microsoft Defender Antivirus](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services#bkmk-defender). |
@@ -96,19 +99,18 @@ Internet Explorer shares many of the Windows essential services listed above. Th
 ## Related links
 
 - [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
-- [Connected Experiences in Office](/deployoffice/privacy/connected-experiences.md)
-- [Essential Services in Office](/deployoffice/privacy/essential-services.md)
+- [Connected Experiences in Office](/deployoffice/privacy/connected-experiences)
+- [Essential Services in Office](/deployoffice/privacy/essential-services)
 
 To view endpoints for Windows Enterprise, see:
 
 - [Manage connection endpoints for Windows 11](manage-windows-11-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 21H1](manage-windows-21H1-endpoints.md)
+- [Manage connection endpoints for Windows 10, version 21H2](manage-windows-21H2-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 20H2](manage-windows-20h2-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 1909](manage-windows-1909-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 1903](manage-windows-1903-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 1809](manage-windows-1809-endpoints.md)
-- [Manage connection endpoints for Windows 10, version 1803](manage-windows-1803-endpoints.md)
-- [Manage connection endpoints for Windows 10, version 1709](manage-windows-1709-endpoints.md)
 
 To view endpoints for non-Enterprise Windows editions, see:
 
@@ -118,5 +120,3 @@ To view endpoints for non-Enterprise Windows editions, see:
 - [Windows 10, version 1909, connection endpoints for non-Enterprise editions](windows-endpoints-1909-non-enterprise-editions.md)
 - [Windows 10, version 1903, connection endpoints for non-Enterprise editions](windows-endpoints-1903-non-enterprise-editions.md)
 - [Windows 10, version 1809, connection endpoints for non-Enterprise editions](windows-endpoints-1809-non-enterprise-editions.md)
-- [Windows 10, version 1803, connection endpoints for non-Enterprise editions](windows-endpoints-1803-non-enterprise-editions.md)
-- [Windows 10, version 1709, connection endpoints for non-Enterprise editions](windows-endpoints-1709-non-enterprise-editions.md)

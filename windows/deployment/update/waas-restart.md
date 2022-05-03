@@ -3,14 +3,14 @@ title: Manage device restarts after updates (Windows 10)
 description: Use Group Policy settings, mobile device management (MDM), or Registry to configure when devices will restart after a Windows 10 update is installed.
 ms.prod: w10
 ms.mktglfcycl: deploy
-author: jaimeo
+author: carmenf
 ms.localizationpriority: medium
-ms.author: jaimeo
-ms.reviewer: 
-manager: laurawi
+ms.author: carmenf
+manager: dougeby
 ms.topic: article
 ms.custom:
 - seo-marvel-apr2020
+ms.collection: highpri
 ---
 
 # Manage device restarts after updates
@@ -18,7 +18,7 @@ ms.custom:
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
@@ -158,7 +158,7 @@ In the Group Policy editor, you will see a number of policy settings that pertai
 | Turn off auto-restart for updates during active hours | ![yes.](images/checkmark.png) | Use this policy to configure active hours, during which the device will not be restarted. This policy has no effect if the **No auto-restart with logged on users for scheduled automatic updates installations** or **Always automatically restart at the scheduled time** policies are enabled.  |
 | Always automatically restart at the scheduled time | ![yes.](images/checkmark.png) | Use this policy to configure a restart timer (between 15 and 180 minutes) that will start immediately after Windows Update installs important updates. This policy has no effect if the **No auto-restart with logged on users for scheduled automatic updates installations** policy is enabled. |
 | Specify deadline before auto-restart for update installation | ![yes.](images/checkmark.png)  | Use this policy to specify how many days (between 2 and 14) an automatic restart can be delayed. This policy has no effect if the **No auto-restart with logged on users for scheduled automatic updates installations** or **Always automatically restart at the scheduled time** policies are enabled.  |
-| No auto-restart with logged on users for scheduled automatic updates installations | ![yes.](images/checkmark.png) | Use this policy to prevent automatic restart when a user is logged on. This policy applies only when the **Configure Automatic Updates** policy is configured to perform scheduled installations of updates. <br>There is no equivalent MDM policy setting for Windows 10 Mobile. |
+| No auto-restart with logged on users for scheduled automatic updates installations | ![yes.](images/checkmark.png) | Use this policy to prevent automatic restart when a user is logged on. This policy applies only when the **Configure Automatic Updates** policy is configured to perform scheduled installations of updates. |
 | Re-prompt for restart with scheduled installations | ![no.](images/crossmark.png) |   |
 | Delay Restart for scheduled installations | ![no.](images/crossmark.png) |   |
 | Reschedule Automatic Updates scheduled installations | ![no.](images/crossmark.png) |   |
@@ -201,7 +201,7 @@ There are three different registry combinations for controlling restart behavior
 
 - [Update Windows 10 in the enterprise](index.md)
 - [Overview of Windows as a service](waas-overview.md)
-- [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
+- [Configure Delivery Optimization for Windows 10 updates](../do/waas-delivery-optimization.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)

@@ -15,7 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 03/01/2018
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Windows Defender Application Control deployment in different scenarios: types of devices

@@ -1,11 +1,10 @@
 ---
 title: Windows 11 requirements
 description: Hardware requirements to deploy Windows 11
-ms.reviewer: 
 manager: dougeby
 ms.audience: itpro
-author: greg-lindsay
-ms.author: greglin
+author: aczechowski
+ms.author: aaroncz
 ms.prod: w11
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,13 +12,14 @@ ms.localizationpriority: medium
 audience: itpro
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.collection: highpri
 ---
 
 # Windows 11 requirements
 
 **Applies to**
 
-- Windows 11
+- Windows 11
 
 This article lists the system requirements for Windows 11. Windows 11 is also [supported on a virtual machine (VM)](#virtual-machine-support). 
 
@@ -46,7 +46,7 @@ For information about tools to evaluate readiness, see [Determine eligibility](w
 
 ## Operating system requirements
 
-For the best Windows 11 upgrade experience, eligible devices should be running Windows 10, version 2004 or later.
+Eligible Windows 10 devices must be on version 2004 or later, and have installed the September 14, 2021 security update or later, to upgrade directly to Windows 11.
 
 > [!NOTE]
 > S mode is only supported on the Home edition of Windows 11.

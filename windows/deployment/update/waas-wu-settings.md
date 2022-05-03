@@ -6,11 +6,12 @@ ms.mktglfcycl: deploy
 audience: itpro
 ms.localizationpriority: medium
 ms.audience: itpro
-author: jaimeo
-ms.reviewer:
-manager: laurawi
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.collection: highpri
 ---
 
 # Manage additional Windows Update settings
@@ -18,7 +19,7 @@ ms.custom: seo-marvel-apr2020
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 - Windows 11
 
 

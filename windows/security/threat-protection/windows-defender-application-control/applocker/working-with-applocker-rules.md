@@ -13,7 +13,7 @@ author: dansimp
 ms.localizationpriority: medium
 msauthor: v-anbic
 ms.date: 08/27/2018
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Working with AppLocker rules

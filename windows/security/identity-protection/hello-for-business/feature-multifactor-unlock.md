@@ -2,13 +2,13 @@
 title: Multi-factor Unlock
 description: Learn how Windows 10 and Windows 11 offer multi-factor device unlock by extending Windows Hello with trusted signals. 
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, cert-trust, device, registration, unlock, multi, factor, multifactor, multi-factor
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -347,7 +347,7 @@ This example configures Wi-Fi as a trusted signal (Windows 10, version 1803 or l
 
 You need at least a Windows 10, version 1709 or later workstation to run the Group Policy Management Console, which provides the latest Windows Hello for Business  Group Policy settings, which includes multi-factor unlock. To run the Group Policy Management Console, you need to install the Remote Server Administration Tools for Windows. You can download these tools from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=45520). Install the Remote Server Administration Tools for Windows on a computer running Windows 10, version 1709 or later.
 
-Alternatively, you can create copy the .ADMX and .ADML files from a Windows 10, version 1703 to their respective language folder on a Windows Server or you can create a Group Policy Central Store and copy them their respective language folder. See [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administrative-templates-in-windows) for more information.
+Alternatively, you can create copy the .ADMX and .ADML files from a Windows 10, version 1703 to their respective language folder on a Windows Server or you can create a Group Policy Central Store and copy them their respective language folder. See [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) for more information.
 
 ### Create the Multifactor Unlock Group Policy object
 

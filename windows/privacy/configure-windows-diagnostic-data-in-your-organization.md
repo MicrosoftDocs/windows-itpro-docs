@@ -2,7 +2,7 @@
 description: Use this article to make informed decisions about how you can configure Windows diagnostic data in your organization.
 title: Configure Windows diagnostic data in your organization (Windows 10 and Windows 11)
 keywords: privacy
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -11,9 +11,12 @@ audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection:
+  - M365-security-compliance
+  - highpri
 ms.topic: article
-ms.date: 10/04/2021
+ms.date: 11/29/2021
+ms.technology: privacy
 ---
 
 # Configure Windows diagnostic data in your organization
@@ -261,10 +264,14 @@ The Windows diagnostic data processor configuration enables you to be the contro
 
 ### Prerequisites
 
-- The device must be any of the following releases of Windows:
-  - Windows 11 Enterprise, Professional, or Education edition
-  - Windows 10 Enterprise, Education, or Professional edition, version 1809 with July 2021 update or later.
+- Use a supported version of Windows 10 or Windows 11
+- The following editions are supported: 
+  - Enterprise
+  - Professional
+  - Education
 - The device must be joined to Azure Active Directory.
+
+For the best experience, use the most current build of any operating system specified above. Configuration functionality and availability may vary on older systems. See [Lifecycle Policy](/lifecycle/products/windows-10-enterprise-and-education)
 
 The diagnostic data setting on the device should be set to Required diagnostic data or higher, and the following endpoints need to be reachable:
 

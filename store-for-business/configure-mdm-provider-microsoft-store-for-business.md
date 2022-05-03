@@ -18,8 +18,8 @@ ms.date: 07/21/2021
 # Configure an MDM provider
 
 **Applies to**
+
 -   Windows 10
--   Windows 10 Mobile
 
 > [!IMPORTANT]
 > Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
@@ -45,7 +45,7 @@ After your management tool is added to your Azure AD directory, you can configur
 3. From the list of MDM tools, select the one you want to synchronize with Microsoft Store, and then click **Activate.**
 
 Your MDM tool is ready to use with Microsoft Store. To learn how to configure synchronization and deploy apps, see these topics:
-- [Manage apps you purchased from Microsoft Store for Business with Microsoft Intune](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
+- [Manage apps you purchased from Microsoft Store for Business with Microsoft Intune](/mem/intune/apps/windows-store-for-business)
 - [Manage apps from Microsoft Store for Business with Microsoft Endpoint Configuration Manager](/configmgr/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
 
 For third-party MDM providers or management servers, check your product documentation.

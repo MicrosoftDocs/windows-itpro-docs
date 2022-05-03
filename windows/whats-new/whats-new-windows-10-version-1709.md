@@ -6,9 +6,9 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.reviewer: 
-author: greg-lindsay
-manager: laurawi
-ms.author: greglin
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
 ms.localizationpriority: high
 ms.topic: article
 ---
@@ -87,13 +87,13 @@ The AssignedAccess CSP has been expanded to make it easy for administrators to c
 
 ### Microsoft Defender for Endpoint
 
-Microsoft Defender for Endpoint has been expanded with powerful analytics, security stack integration, and centralized management for better detection, prevention, investigation, response, and management. For more information, see [View the Microsoft Defender for Endpoint Security analytics dashboard](/windows/threat-protection/windows-defender-atp/security-analytics-dashboard-windows-defender-advanced-threat-protection).
+Microsoft Defender for Endpoint has been expanded with powerful analytics, security stack integration, and centralized management for better detection, prevention, investigation, response, and management. For more information, see [View the Microsoft Defender for Endpoint Security analytics dashboard](/microsoft-365/security/defender-endpoint/tvm-microsoft-secure-score-devices).
 
 ### Windows Defender Application Guard
 
 Windows Defender Application Guard hardens a favorite attacker entry-point by isolating malware and other threats away from your data, apps, and infrastructure. For more information, see [Windows Defender Application Guard overview](/windows/threat-protection/windows-defender-application-guard/wd-app-guard-overview).
 
-### Window Defender Exploit Guard
+### Windows Defender Exploit Guard
 
 Window Defender Exploit Guard provides intrusion prevention capabilities to reduce the attack and exploit surface of applications. Exploit Guard has many of the threat mitigations that were available in Enhanced Mitigation Experience Toolkit (EMET) toolkit, a deprecated security download. These mitigations are now built into Windows and configurable with Exploit Guard. These mitigations include [Exploit protection](/microsoft-365/security/defender-endpoint/enable-exploit-protection), [Attack surface reduction protection](/microsoft-365/security/defender-endpoint/evaluate-attack-surface-reduction), [Controlled folder access](/microsoft-365/security/defender-endpoint/evaluate-controlled-folder-access), and [Network protection](/microsoft-365/security/defender-endpoint/enable-network-protection).
 

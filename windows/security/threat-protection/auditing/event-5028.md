@@ -11,7 +11,7 @@ ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 5028(F): The Windows Firewall Service was unable to parse the new security policy. The service will continue with currently enforced policy.

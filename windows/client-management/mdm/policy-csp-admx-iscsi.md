@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 12/17/2020
 ms.reviewer: 
 manager: dansimp
@@ -45,38 +45,14 @@ manager: dansimp
 <a href="" id="admx-iscsi-iscsigeneral_restrictadditionallogins"></a>**ADMX_iSCSI/iSCSIGeneral_RestrictAdditionalLogins**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -100,7 +76,7 @@ If disabled then new iSNS servers may be added and thus new targets discovered v
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not allow manual configuration of iSNS servers*
+-   GP Friendly name: *Do not allow manual configuration of iSNS servers*
 -   GP name: *iSCSIGeneral_RestrictAdditionalLogins*
 -   GP path: *System\iSCSI\iSCSI Target Discovery*
 -   GP ADMX file name: *iSCSI.admx*
@@ -113,38 +89,14 @@ ADMX Info:
 <a href="" id="admx-iscsi-iscsigeneral_changeiqnname"></a>**ADMX_iSCSI/iSCSIGeneral_ChangeIQNName**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -167,7 +119,7 @@ If disabled then new target portals may be added and thus new targets discovered
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not allow manual configuration of target portals*
+-   GP Friendly name: *Do not allow manual configuration of target portals*
 -   GP name: *iSCSIGeneral_ChangeIQNName*
 -   GP path: *System\iSCSI\iSCSI Target Discovery*
 -   GP ADMX file name: *iSCSI.admx*
@@ -180,38 +132,14 @@ ADMX Info:
 <a href="" id="admx-iscsi-iscsisecurity_changechapsecret"></a>**ADMX_iSCSI/iSCSISecurity_ChangeCHAPSecret**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -226,7 +154,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-If enabled then do not allow the initiator CHAP secret to be changed. 
+If enabled then don't allow the initiator CHAP secret to be changed. 
 
 If disabled then the initiator CHAP secret may be changed.
 
@@ -235,7 +163,7 @@ If disabled then the initiator CHAP secret may be changed.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not allow changes to initiator CHAP secret*
+-   GP Friendly name: *Do not allow changes to initiator CHAP secret*
 -   GP name: *iSCSISecurity_ChangeCHAPSecret*
 -   GP path: *System\iSCSI\iSCSI Security*
 -   GP ADMX file name: *iSCSI.admx*

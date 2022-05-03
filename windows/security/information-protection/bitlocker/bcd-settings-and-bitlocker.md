@@ -3,7 +3,7 @@ title: BCD settings and BitLocker (Windows 10)
 description: This topic for IT professionals describes the BCD settings that are used by BitLocker.
 ms.assetid: c4ab7ac9-16dc-4c7e-b061-c0b0deb2c4fa
 ms.reviewer: 
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security

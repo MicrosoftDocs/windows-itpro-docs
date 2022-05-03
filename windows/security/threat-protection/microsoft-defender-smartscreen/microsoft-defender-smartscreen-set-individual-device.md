@@ -11,7 +11,7 @@ ms.date: 10/13/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: macapara
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Set up and use Microsoft Defender SmartScreen on individual devices

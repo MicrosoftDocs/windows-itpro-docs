@@ -26,7 +26,7 @@ To make use of the Settings App group policies on Windows server 2016, install f
 >[!Note]
 >Each server that you want to manage access to the Settings App must be patched.
 
-If your company uses one or the PolicyDefinitions folder of the Domain Controllers used for Group Policy management, to centrally manage the new policies, copy the ControlPanel.admx and ControlPanel.adml file to [Central Store](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra).
+If your company uses one or the PolicyDefinitions folder of the Domain Controllers used for Group Policy management, to centrally manage the new policies, copy the ControlPanel.admx and ControlPanel.adml file to [Central Store](/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
 
 This policy is available for both User and Computer depending on the version of the OS. Windows Server 2016 with KB 4457127 applied will have both User and Computer policy. Windows 10, version 1703, added Computer policy for the Settings app. Windows 10, version 1809, added User policy for the Settings app.
 

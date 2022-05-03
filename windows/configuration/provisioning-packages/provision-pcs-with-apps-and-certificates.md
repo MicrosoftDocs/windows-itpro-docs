@@ -5,13 +5,13 @@ keywords: ["runtime provisioning", "provisioning package"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
-ms.author: greglin
+author: aczechowski
+ms.author: aaroncz
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/27/2017
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # Provision PCs with apps and certificates for initial deployment (advanced provisioning)
@@ -194,8 +194,6 @@ For details about the settings you can customize in provisioning packages, see [
 - [Settings changed when you uninstall a provisioning package](provisioning-uninstall-package.md)
 - [Provision PCs with common settings for initial deployment (simple provisioning)](provision-pcs-for-initial-deployment.md)
 - [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
-- [NFC-based device provisioning](../mobile-devices/provisioning-nfc.md)
-- [Use the package splitter tool](../mobile-devices/provisioning-package-splitter.md)
 - [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)
 - [Create a provisioning package with multivariant settings](provisioning-multivariant.md)
 

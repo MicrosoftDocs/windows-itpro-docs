@@ -3,15 +3,15 @@ title: Windows To Go feature overview (Windows 10)
 description: Windows To Go is a feature in Windows 10 Enterprise and Windows 10 Education that lets you create a workspace that can be booted from a USB-connected drive.
 ms.assetid: 9df82b03-acba-442c-801d-56db241f8d42
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 keywords: workspace, mobile, installation, image, USB, device, image, edu
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: mobility, edu
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ---
 
@@ -135,93 +135,27 @@ When assessing the use of a PC as a host for a Windows To Go workspace you shoul
 
 The following table details the characteristics that the host computer must have to be used with Windows To Go:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Item</th>
-<th align="left">Requirement</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Boot process</p></td>
-<td align="left"><p>Capable of USB boot</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Firmware</p></td>
-<td align="left"><p>USB boot enabled. (PCs certified for use with Windows 7 or later can be configured to boot directly from USB, check with the hardware manufacturer if you are unsure of the ability of your PC to boot from USB)</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Processor architecture</p></td>
-<td align="left"><p>Must support the image on the Windows To Go drive</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>External USB Hubs</p></td>
-<td align="left"><p>Not supported; connect the Windows To Go drive directly to the host machine</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Processor</p></td>
-<td align="left"><p>1 Ghz or faster</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>RAM</p></td>
-<td align="left"><p>2 GB or greater</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Graphics</p></td>
-<td align="left"><p>DirectX 9 graphics device with WDDM 1.2 or greater driver</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>USB port</p></td>
-<td align="left"><p>USB 2.0 port or greater</p></td>
-</tr>
-</tbody>
-</table>
+|Item|Requirement|
+|--- |--- |
+|Boot process|Capable of USB boot|
+|Firmware|USB boot enabled. (PCs certified for use with Windows 7 or later can be configured to boot directly from USB, check with the hardware manufacturer if you are unsure of the ability of your PC to boot from USB)|
+|Processor architecture|Must support the image on the Windows To Go drive|
+|External USB Hubs|Not supported; connect the Windows To Go drive directly to the host machine|
+|Processor|1 Ghz or faster|
+|RAM|2 GB or greater|
+|Graphics|DirectX 9 graphics device with WDDM 1.2 or greater driver|
+|USB port|USB 2.0 port or greater|
 
 **Checking for architectural compatibility between the host PC and the Windows To Go drive**
 
 In addition to the USB boot support in the BIOS, the Windows 10 image on your Windows To Go drive must be compatible with the processor architecture and the firmware of the host PC as shown in the table below.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Host PC Firmware Type</th>
-<th align="left">Host PC Processor Architecture</th>
-<th align="left">Compatible Windows To Go Image Architecture</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Legacy BIOS</p></td>
-<td align="left"><p>32-bit</p></td>
-<td align="left"><p>32-bit only</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Legacy BIOS</p></td>
-<td align="left"><p>64-bit</p></td>
-<td align="left"><p>32-bit and 64-bit</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>UEFI BIOS</p></td>
-<td align="left"><p>32-bit</p></td>
-<td align="left"><p>32-bit only</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>UEFI BIOS</p></td>
-<td align="left"><p>64-bit</p></td>
-<td align="left"><p>64-bit only</p></td>
-</tr>
-</tbody>
-</table>
+|Host PC Firmware Type|Host PC Processor Architecture|Compatible Windows To Go Image Architecture|
+|--- |--- |--- |
+|Legacy BIOS|32-bit|32-bit only|
+|Legacy BIOS|64-bit|32-bit and 64-bit|
+|UEFI BIOS|32-bit|32-bit only|
+|UEFI BIOS|64-bit|64-bit only|
 
 ## Additional resources
 

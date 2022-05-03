@@ -15,7 +15,7 @@ ms.reviewer: jogeurte
 ms.author: dansimp
 manager: dansimp
 ms.date: 07/19/2021
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Use multiple Windows Defender Application Control Policies

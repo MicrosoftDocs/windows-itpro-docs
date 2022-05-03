@@ -11,7 +11,7 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.date: 
 ms.reviewer: 
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Windows Sandbox configuration
