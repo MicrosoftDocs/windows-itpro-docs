@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ActiveXControls
-description: Learn about various Policy configuration service provider (CSP) - ActiveXControls settings, including SyncML, for Windows 10.
+description: Learn about various Policy configuration service provider (CSP) - ActiveXControls settings, including SyncML, for Windows 10.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -65,9 +65,10 @@ This policy setting determines which ActiveX installation sites standard users i
 
 If you enable this setting, the administrator can create a list of approved ActiveX Install sites specified by host URL. 
 
-If you disable or do not configure this policy setting, ActiveX controls prompt the user for administrative credentials before installation. 
+If you disable or don't configure this policy setting, ActiveX controls prompt the user for administrative credentials before installation. 
 
-Note: Wild card characters cannot be used when specifying the host URLs.
+> [!Note]
+> Wild card characters can't be used when specifying the host URLs.
 
 <!--/Description-->
 
@@ -85,3 +86,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

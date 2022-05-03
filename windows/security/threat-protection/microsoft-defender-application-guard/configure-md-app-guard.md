@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 09/20/2021
+ms.date: 03/10/2022
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
@@ -31,13 +31,13 @@ Application Guard uses both network isolation and application-specific settings.
 These settings, located at `Computer Configuration\Administrative Templates\Network\Network Isolation`, help you define and manage your organization's network boundaries. Application Guard uses this information to automatically transfer any requests to access the non-corporate resources into the Application Guard container.
 
 > [!NOTE]
-> You must configure either the Enterprise resource domains hosted in the cloud or Private network ranges for apps settings on your employee devices to successfully turn on Application Guard using enterprise mode. Proxy servers must be a neutral resource listed in the "Domains categorized as both work and personal" policy.
+> You must configure either the Enterprise resource domains hosted in the cloud or Private network ranges for apps settings on your employee devices to successfully turn on Application Guard using enterprise mode. Proxy servers must be a neutral resource listed in the **Domains categorized as both work and personal** policy.
  
 |Policy name|Supported versions|Description|
 |-----------|------------------|-----------|
 |Private network ranges for apps | At least Windows Server 2012, Windows 8, or Windows RT| A comma-separated list of IP address ranges that are in your corporate network. Included endpoints or endpoints that are included within a specified IP address range, are rendered using Microsoft Edge and won't be accessible from the Application Guard environment.|
-|Enterprise resource domains hosted in the cloud| At least Windows Server 2012, Windows 8, or Windows RT|A pipe-separated (\|) list of your domain cloud resources. Included endpoints are rendered using Microsoft Edge and won't be accessible from the Application Guard environment. <p>**NOTE**: This list supports the wildcards detailed in the [Network isolation settings wildcards](#network-isolation-settings-wildcards) table.|
-|Domains categorized as both work and personal| At least Windows Server 2012, Windows 8, or Windows RT|A comma-separated list of domain names used as both work or personal resources. Included endpoints are rendered using Microsoft Edge and will be accessible from the Application Guard and regular Edge environment. <p>**NOTE**: This list supports the wildcards detailed in the [Network isolation settings wildcards](#network-isolation-settings-wildcards) table.|
+|Enterprise resource domains hosted in the cloud| At least Windows Server 2012, Windows 8, or Windows RT|A pipe-separated (`|`) list of your domain cloud resources. Included endpoints are rendered using Microsoft Edge and won't be accessible from the Application Guard environment. <p>Note that this list supports the wildcards detailed in the [Network isolation settings wildcards](#network-isolation-settings-wildcards) table.|
+|Domains categorized as both work and personal| At least Windows Server 2012, Windows 8, or Windows RT|A comma-separated list of domain names used as both work or personal resources. Included endpoints are rendered using Microsoft Edge and will be accessible from the Application Guard and regular Edge environment. <p>Note that this list supports the wildcards detailed in the [Network isolation settings wildcards](#network-isolation-settings-wildcards) table.|
 
 ## Network isolation settings wildcards
 
@@ -49,7 +49,7 @@ These settings, located at `Computer Configuration\Administrative Templates\Netw
 |`..contoso.com`|2|Trust all levels of the domain hierarchy that are to the left of the dot. Matching sites include `shop.contoso.com`, `us.shop.contoso.com`, `www.us.shop.contoso.com`, but NOT `contoso.com` itself.|
 
 ## Application-specific settings
-These settings, located at `Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Application Guard`, can help you to manage your company's implementation of Application Guard.
+These settings, located at `Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Application Guard`, can help you to manage your organization's implementation of Application Guard.
 
 |Name|Supported versions|Description|Options|
 |-----------|------------------|-----------|-------|
@@ -63,3 +63,9 @@ These settings, located at `Computer Configuration\Administrative Templates\Wind
 |Allow camera and microphone access in Microsoft Defender Application Guard|Windows 10 Enterprise, 1809 or higher<br><br>Windows 10 Pro, 1809 or higher<p>Windows 11|Determines whether to allow camera and microphone access inside Microsoft Defender Application Guard.|**Enabled.** Applications inside Microsoft Defender Application Guard are able to access the camera and microphone on the user's device. **Important:** Be aware that enabling this policy with a potentially compromised container could bypass camera and microphone permissions and access the camera and microphone without the user's knowledge.<p>**Disabled or not configured.** Applications inside Microsoft Defender Application Guard are unable to access the camera and microphone on the user's device.|
 |Allow Microsoft Defender Application Guard to use Root Certificate Authorities from a user's device|Windows 10 Enterprise, 1809 or higher<br><br>Windows 10 Pro, 1809 or higher<p>Windows 11|Determines whether Root Certificates are shared with Microsoft Defender Application Guard.|**Enabled.** Certificates matching the specified thumbprint are transferred into the container. Use a comma to separate multiple certificates.<p>**Disabled or not configured.** Certificates are not shared with Microsoft Defender Application Guard.|
 |Allow auditing events in Microsoft Defender Application Guard|Windows 10 Enterprise, 1809 or higher<br><br>Windows 10 Pro, 1809 or higher<p>Windows 11|This policy setting allows you to decide whether auditing events can be collected from Microsoft Defender Application Guard.|**Enabled.** Application Guard inherits auditing policies from your device and logs system events from the Application Guard container to your host.<p>**Disabled or not configured.** event logs aren't collected from your Application Guard container.|
+ 
+## Application Guard support dialog settings
+
+These settings are located at `Administrative Templates\Windows Components\Windows Security\Enterprise Customization`. If an error is encountered, you are presented with a dialog box. By default, this dialog box only contains the error information and a button for you to report it to Microsoft via the feedback hub. However, it is possible to provide additional information in the dialog box.
+
+[Use Group Policy to enable and customize contact information](/windows/security/threat-protection/windows-defender-security-center/wdsc-customize-contact-information#use-group-policy-to-enable-and-customize-contact-information).

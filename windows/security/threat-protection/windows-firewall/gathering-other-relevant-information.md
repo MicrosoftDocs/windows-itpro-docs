@@ -62,8 +62,6 @@ In some cases, IPsec-secured traffic might have to pass through a router, perime
 
 In the case of a filtering router or a firewall, you must configure these devices to allow IPsec traffic to be forwarded. Configure the firewall to allow IPsec traffic on UDP source and destination port 500 (IKE), UDP source and destination port 4500 (IPsec NAT-T), and IP Protocol 50 (ESP). You might also have to configure the firewall to allow IPsec traffic on IP protocol 51 (AH) to allow troubleshooting by IPsec administrators and to allow the IPsec traffic to be inspected.
 
-For more info, see [How to Enable IPsec Traffic Through a Firewall](https://go.microsoft.com/fwlink/?LinkId=45085).
-
 ## Network load balancing and server clusters
 
 There are challenges implementing connection security for network traffic going to and from network load balancing (NLB) clusters and server clusters. NLB enables multiple servers to be clustered together to provide high availability for a service by providing automatic failover to other nodes in the cluster. Because IPsec matches a security association to a specific device, it prevents different devices from handling the same client connection. If a different node in the cluster responds to an IPsec connection that was originally established by another node, the traffic will be dropped by the client device as untrusted.
@@ -82,6 +80,6 @@ In general, IPsec defeats network-based prioritization and port- or protocol-bas
 
 Network Monitor includes parsers for the ISAKMP (IKE), AH, and ESP protocols. Network Monitor parsers for ESP can parse inside the ESP packet only if ESP null-encryption is being used. Network Monitor cannot parse the encrypted parts of IPsec ESP traffic when encryption is performed in software. However, if encryption is performed by an IPsec hardware offload network adapter, the ESP packets can be decrypted when Network Monitor captures them on either the source or the destination and, therefore, they can be parsed. To diagnose ESP software-encrypted communication, you must disable ESP encryption and use ESP-null encryption by changing the IPsec policy or connection security rule on both devices.
 
-Message Analyzer is available on the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=44226).
+Message Analyzer is available on the [Microsoft Download Center](/message-analyzer/microsoft-message-analyzer-operating-guide).
 
 **Next:** [Determining the Trusted State of Your Devices](determining-the-trusted-state-of-your-devices.md)
