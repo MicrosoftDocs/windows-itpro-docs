@@ -66,17 +66,17 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-This is a numeric policy setting with merge algorithm (lowest value is the most secure) that uses the most restrictive settings for complex manageability scenarios.
+This setting is a numeric policy setting with merge algorithm (lowest value is the most secure) that uses the most restrictive settings for complex manageability scenarios.
 
 Supported values:  
--   0 (default) - Turn this feature off.
--   1 - Turn this feature off but still apply critical troubleshooting.
+-   0 (default) - Turn off this feature.
+-   1 - Turn off this feature but still apply critical troubleshooting.
 -   2 - Notify users when recommended troubleshooting is available, then allow the user to run or ignore it.
 -   3 - Run recommended troubleshooting automatically and notify the user after it ran successfully.
 -   4 - Run recommended troubleshooting automatically without notifying the user.
 -   5 - Allow the user to choose their own recommended troubleshooting settings.
 
-By default, this policy is not configured and the SKU based defaults are used for managed devices. Current policy values for SKU's are as follows:
+By default, this policy isn't configured and the SKU based defaults are used for managed devices. Current policy values for SKUs are as follows:
 
 |SKU|Unmanaged Default|Managed Default|
 |--- |--- |--- |

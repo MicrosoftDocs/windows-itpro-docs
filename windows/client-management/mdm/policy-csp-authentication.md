@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Authentication
-description: The Policy CSP - Authentication setting allows the Azure AD tenant administrators to enable self service password reset feature on the Windows sign in screen.
+description: The Policy CSP - Authentication setting allows the Azure AD tenant administrators to enable self service password reset feature on the Windows sign-in screen.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -83,7 +83,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Specifies whether password reset is enabled for Azure Active Directory accounts. This policy allows the Azure AD tenant administrators to enable self service password reset feature on the windows logon screen.
+Specifies whether password reset is enabled for Azure Active Directory accounts. This policy allows the Azure AD tenant administrators to enable self service password reset feature on the Windows logon screen.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -212,14 +212,14 @@ Supported in the next release. Specifies whether Fast Identity Online (FIDO) dev
 
 Value type is integer.
 
-Here is an example scenario: At Contoso, there are a lot of shared devices and kiosks that employees throughout the day using as many as 20 different devices. To minimize the loss in productivity when employees have to login with username and password every time they pick up a device, the IT admin deploys SharePC CSP and Authentication/AllowFidoDeviceSignon policy to shared devices. The IT admin provisions and distributes FIDO 2.0 devices to employees, which allows them to authenticate to various shared devices and PCs.
+Here's an example scenario: At Contoso, there are many shared devices and kiosks that employees use throughout the day, for example, employees use as many as 20 different devices. To minimize the loss in productivity when employees have to sign in with username and password every time they pick up a device, the IT admin deploys SharePC CSP and Authentication/AllowFidoDeviceSignon policy to shared devices. The IT admin provisions and distributes FIDO 2.0 devices to employees, which allows them to authenticate to various shared devices and PCs.
 
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 - Do not allow. The FIDO device credential provider disabled. 
--   1 - Allow. The FIDO device credential provider is enabled and allows usage of FIDO devices to sign into an Windows.
+-   0 - Don't allow. The FIDO device credential provider disabled.
+-   1 - Allow. The FIDO device credential provider is enabled and allows usage of FIDO devices to sign in to Windows.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -257,7 +257,7 @@ Allows secondary authentication devices to work with Windows.
 
 The default for this policy must be on for consumer devices (defined as local or Microsoft account connected device) and off for enterprise devices (such as cloud domain-joined, cloud domain-joined in an on-premises only environment, cloud domain-joined in a hybrid environment, and BYOD).
 
-In the next major release of Windows 10, the default for this policy for consumer devices will be changed to off. This will only affect users that have not already set up a secondary authentication device.
+In the next major release of Windows 10, the default for this policy for consumer devices will be changed to off. This change will only affect users that have not already set up a secondary authentication device.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -412,7 +412,7 @@ Value type is integer. Supported values:
 
 - 0 - (default) The feature defaults to the existing SKU and device capabilities.
 - 1 - Enabled. Auto connect new non-admin Azure AD accounts to pre-configured candidate local accounts
-- 2 - Disabled. Do not auto connect new non-admin Azure AD accounts to pre-configured local accounts
+- 2 - Disabled. Don't auto connect new non-admin Azure AD accounts to pre-configured local accounts
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -466,8 +466,8 @@ Value type is integer. Supported values:
 Value type is integer. Supported values:
 
 - 0 - (default) The feature defaults to the existing SKU and device capabilities.
-- 1 - Enabled. Web Credential Provider will be enabled for Sign In
-- 2 - Disabled. Web Credential Provider will not be enabled for Sign In
+- 1 - Enabled. Web Credential Provider will be enabled for a sign in.
+- 2 - Disabled. Web Credential Provider won't be enabled for a sign in.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -512,7 +512,7 @@ Value type is integer. Supported values:
 <!--Description-->
 Specifies the preferred domain among available domains in the Azure AD tenant.
 
-Example: If your organization is using the "@contoso.com" tenant domain name, the policy value should be "contoso.com". For the user "abby@constoso.com", she would then be able to sign in using "abby" in the username field instead of "abby@contoso.com".
+Example: If your organization is using the "@contoso.com" tenant domain name, the policy value should be "contoso.com". For the user "abby@constoso.com", a sign in is done using "abby" in the username field instead of "abby@contoso.com".
 
 
 Value type is string.

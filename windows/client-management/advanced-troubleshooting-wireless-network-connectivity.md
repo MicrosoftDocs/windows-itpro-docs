@@ -20,7 +20,7 @@ ms.topic: troubleshooting
 
 ## Overview
 
-This is a general troubleshooting of establishing Wi-Fi connections from Windows clients.
+This overview describes the general troubleshooting of establishing Wi-Fi connections from Windows clients.
 Troubleshooting Wi-Fi connections requires understanding the basic flow of the Wi-Fi autoconnect state machine. Understanding this flow makes it easier to determine the starting point in a repro scenario in which a different behavior is found.
 This workflow involves knowledge and use of [TextAnalysisTool](https://github.com/TextAnalysisTool/Releases), an extensive text filtering tool that is useful with complex traces with numerous ETW providers such as wireless_dbg trace scenario.
 
@@ -29,11 +29,11 @@ This workflow involves knowledge and use of [TextAnalysisTool](https://github.co
 This article applies to any scenario in which Wi-Fi connections fail to establish. The troubleshooter is developed with Windows 10 clients in focus, but also may be useful with traces as far back as Windows 7.
 
 > [!NOTE]
-> This troubleshooter uses examples that demonstrate a general strategy for navigating and interpreting wireless component [Event Tracing for Windows](/windows/desktop/etw/event-tracing-portal) (ETW). It is not meant to be representative of every wireless problem scenario.
+> This troubleshooter uses examples that demonstrate a general strategy for navigating and interpreting wireless component [Event Tracing for Windows](/windows/desktop/etw/event-tracing-portal) (ETW). It's  not meant to be representative of every wireless problem scenario.
 
-Wireless ETW is incredibly verbose and calls out a lot of innocuous errors (rather flagged behaviors that have little or nothing to do with the problem scenario). Simply searching for or filtering on "err", "error", and "fail" will seldom lead you to the root cause of a problematic Wi-Fi scenario. Instead it will flood the screen with meaningless logs that will obfuscate the context of the actual problem.
+Wireless ETW is incredibly verbose and calls out many innocuous errors (rather flagged behaviors that have little or nothing to do with the problem scenario). Searching for or filtering on "err", "error", and "fail" will seldom lead you to the root cause of a problematic Wi-Fi scenario. Instead it will flood the screen with meaningless logs that will obfuscate the context of the actual problem.
 
-It is important to understand the different Wi-Fi components involved, their expected behaviors, and how the problem scenario deviates from those expected behaviors.
+It's  important to understand the different Wi-Fi components involved, their expected behaviors, and how the problem scenario deviates from those expected behaviors.
 The intention of this troubleshooter is to show how to find a starting point in the verbosity of wireless_dbg ETW and home in on the responsible components that are causing the connection problem.
 
 ### Known Issues and fixes
@@ -57,14 +57,14 @@ Make sure that you install the latest Windows updates, cumulative updates, and r
 
 ## Data Collection
 
-1. Network Capture with ETW. Enter the following at an elevated command prompt:
+1. Network Capture with ETW. Enter the following command at an elevated command prompt:
 
     ```console
     netsh trace start wireless_dbg capture=yes overwrite=yes maxsize=4096 tracefile=c:\tmp\wireless.etl
     ```
 2. Reproduce the issue.
-    - If there is a failure to establish connection, try to manually connect.
-    - If it is intermittent but easily reproducible, try to manually connect until it fails. Record the time of each connection attempt, and whether it was a success or failure.
+    - If there's a failure to establish connection, try to manually connect.
+    - If it's  intermittent but easily reproducible, try to manually connect until it fails. Record the time of each connection attempt, and whether it was a success or failure.
     - If the issue is intermittent but rare, netsh trace stop command needs to be triggered automatically (or at least alerted to admin quickly) to ensure trace doesn’t overwrite the repro data.
     - If intermittent connection drops trigger stop command on a script (ping or test network constantly until fail, then netsh trace stop).
 3. Stop the trace by entering the following command: 
@@ -78,11 +78,11 @@ Make sure that you install the latest Windows updates, cumulative updates, and r
     netsh trace convert c:\tmp\wireless.etl
     ```
 
-See the [example ETW capture](#example-etw-capture) at the bottom of this article for an example of the command output. After running these commands, you will have three files: wireless.cab, wireless.etl, and wireless.txt.
+See the [example ETW capture](#example-etw-capture) at the bottom of this article for an example of the command output. After running these commands, you'll have three files: wireless.cab, wireless.etl, and wireless.txt.
 
 ## Troubleshooting
 
-The following is a high-level view of the main wifi components in Windows.
+The following view is a high-level one of the main wifi components in Windows.
 
 |Wi-fi Components|Description|
 |--- |--- |
@@ -116,7 +116,7 @@ Filtering the ETW trace with the [TextAnalysisTool](https://github.com/TextAnaly
 
 Use the **FSM transition** trace filter to see the connection state machine. You can see [an example](#textanalysistool-example) of this filter applied in the TAT at the bottom of this page.
 
-The following is an example of a good connection setup:
+An example of a good connection setup is:
 
 ```console
 44676 [2]0F24.1020::‎2018‎-‎09‎-‎17 10:22:14.658 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: Disconnected to State: Reset
@@ -127,7 +127,7 @@ The following is an example of a good connection setup:
 49465 [2]0F24.17E0::‎2018‎-‎09‎-‎17 10:22:14.990 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: Authenticating to State: Connected
 ```
 
-The following is an example of a failed connection setup:
+An example of a failed connection setup is:
 
 ```console
 44676 [2]0F24.1020::‎2018‎-‎09‎-‎17 10:22:14.658 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: Disconnected to State: Reset
@@ -138,9 +138,9 @@ The following is an example of a failed connection setup:
 49465 [2]0F24.17E0::‎2018‎-‎09‎-‎17 10:22:14.990 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: Authenticating to State: Roaming
 ```
 
-By identifying the state at which the connection fails, one can focus more specifically in the trace on logs just prior to the last known good state. 
+By identifying the state at which the connection fails, one can focus more specifically in the trace on logs prior to the last known good state. 
 
-Examining **[Microsoft-Windows-WLAN-AutoConfig]** logs just prior to the bad state change should show evidence of error. Often, however, the error is propagated up through other wireless components.
+Examining **[Microsoft-Windows-WLAN-AutoConfig]** logs prior to the bad state change should show evidence of error. Often, however, the error is propagated up through other wireless components.
 In many cases the next component of interest will be the MSM, which lies just below Wlansvc.
 
 The important components of the MSM include:
@@ -149,10 +149,10 @@ The important components of the MSM include:
 
     ![MSM details.](images/msmdetails.png)
 
-Each of these components has their own individual state machines which follow specific transitions.
+Each of these components has its own individual state machines that follow specific transitions.
 Enable the **FSM transition, SecMgr Transition,** and **AuthMgr Transition** filters in TextAnalysisTool for more detail.
 
-Continuing with the example above, the combined filters look like this:
+Further to the preceding example, the combined filters look like the following command example:
 
 ```console
 [2] 0C34.2FF0::08/28/17-13:24:28.693 [Microsoft-Windows-WLAN-AutoConfig]FSM Transition from State: 
@@ -177,7 +177,7 @@ Authenticating to State: Roaming
 > [!NOTE]
 > In the next to last line the SecMgr transition is suddenly deactivating:<br>
 >\[2\] 0C34.2FF0::08/28/17-13:24:29.7512788 \[Microsoft-Windows-WLAN-AutoConfig\]Port\[13\] Peer 8A:15:14:B6:25:10 SecMgr Transition DEACTIVATE (11) --> INACTIVE (1)<br><br>
->This transition is what eventually propagates to the main connection state machine and causes the Authenticating phase to devolve to Roaming state. As before, it makes sense to focus on tracing just prior to this SecMgr behavior to determine the reason for the deactivation.
+>This transition is what eventually propagates to the main connection state machine and causes the Authenticating phase to devolve to Roaming state. As before, it makes sense to focus on tracing prior to this SecMgr behavior to determine the reason for the deactivation.
 
 Enabling the **Microsoft-Windows-WLAN-AutoConfig** filter will show more detail leading to the DEACTIVATE transition:
 
@@ -203,7 +203,7 @@ The trail backwards reveals a **Port Down** notification:
 
 Port events indicate changes closer to the wireless hardware. The trail can be followed by continuing to see the origin of this indication.
 
-Below, the MSM is the native wifi stack. These are Windows native wifi drivers which talk to the wifi miniport drivers. It is responsible for converting Wi-Fi (802.11) packets to 802.3 (Ethernet) so that TCPIP and other protocols and can use it.
+Below, the MSM is the native wifi stack. These drivers are Windows native wifi drivers that talk to the wifi miniport drivers. It's  responsible for converting Wi-Fi (802.11) packets to 802.3 (Ethernet) so that TCPIP and other protocols and can use it.
 
 Enable trace filter for **[Microsoft-Windows-NWifi]:**
 
@@ -230,7 +230,7 @@ In the trace above, we see the line:
 [0]0000.0000::‎08/28/17-13:24:29.127 [Microsoft-Windows-NWiFi]DisAssoc: 0x8A1514B62510 Reason: 0x4
 ```
 
-This is followed by **PHY_STATE_CHANGE** and **PORT_DOWN** events due to a disassociate coming from the Access Point (AP), as an indication to deny the connection. This could be due to invalid credentials, connection parameters, loss of signal/roaming, and various other reasons for aborting a connection. The action here would be to examine the reason for the disassociate sent from the indicated AP MAC (8A:15:14:B6:25:10). This would be done by examining internal logging/tracing from the AP.
+This line is followed by **PHY_STATE_CHANGE** and **PORT_DOWN** events due to a disassociate coming from the Access Point (AP), as an indication to deny the connection. This denail could be due to invalid credentials, connection parameters, loss of signal/roaming, and various other reasons for aborting a connection. The action here would be to examine the reason for the disassociate sent from the indicated AP MAC (8A:15:14:B6:25:10). This action would be done by examining internal logging/tracing from the AP.
 
 ### Resources
 

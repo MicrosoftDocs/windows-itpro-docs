@@ -46,7 +46,7 @@ To enable memory dump setting, follow these steps:
 
 When the computer crashes and restarts, the contents of physical RAM are written to the paging file that is located on the partition on which the operating system is installed.
 
-Depending on the speed of the hard disk on which Windows is installed, dumping more than 2 gigabytes (GB) of memory may take a long time. Even in a best case scenario, if the dump file is configured to reside on another local hard drive, a significant amount of data will be read and written to the hard disks. This can cause a prolonged server outage.
+Depending on the speed of the hard disk on which Windows is installed, dumping more than 2 gigabytes (GB) of memory may take a long time. Even in a best-case scenario, if the dump file is configured to reside on another local hard drive, a significant amount of data will be read and written to the hard disks. This read-and-write process can cause a prolonged server outage.
 
 >[!Note]
 >Use this method to generate complete memory dump files with caution. Ideally, you should do this only when you are explicitly requested to by the Microsoft Support engineer. Any kernel or complete memory dump file debugging should be the last resort after all standard troubleshooting methods have been completely exhausted.
@@ -55,7 +55,7 @@ Depending on the speed of the hard disk on which Windows is installed, dumping m
 
 ### Use the NotMyFault tool
 
-If you can log on while the problem is occurring, you can use the Microsoft Sysinternals NotMyFault tool. To do this, follow these steps:
+If you can sign in while the problem is occurring, you can use the Microsoft Sysinternals NotMyFault tool by following these steps:
 
 1. Download the [NotMyFault](https://download.sysinternals.com/files/NotMyFault.zip) tool.
 
@@ -71,17 +71,17 @@ If you can log on while the problem is occurring, you can use the Microsoft Sysi
 
 ### Use NMI
 
-On some computers, you cannot use keyboard to generate a crash dump file. For example, Hewlett-Packard (HP) BladeSystem servers from the Hewlett-Packard Development Company are managed through a browser-based graphical user interface (GUI). A keyboard is not attached to the HP BladeSystem server.
+On some computers, you can't use keyboard to generate a crash dump file. For example, Hewlett-Packard (HP) BladeSystem servers from the Hewlett-Packard Development Company are managed through a browser-based graphical user interface (GUI). A keyboard isn't attached to the HP BladeSystem server.
 
 In these cases, you must generate a complete crash dump file or a kernel crash dump file by using the Non-Maskable Interrupt (NMI) switch that causes an NMI on the system processor. 
 
-To do this, follow these steps:
+To implement this process, follow these steps:
 
 > [!IMPORTANT]  
 > Follow the steps in this section carefully. Serious problems might occur if you modify the registry incorrectly. Before you modify it, [back up the registry for restoration](https://support.microsoft.com/help/322756) in case problems occur.
  
 > [!NOTE]
-> This registry key is not required for clients running Windows 8 and later, or servers running Windows Server 2012 and later. Setting this registry key on later versions of Windows has no effect.
+> This registry key isn't required for clients running Windows 8 and later, or servers running Windows Server 2012 and later. Setting this registry key on later versions of Windows has no effect.
 
 1. In Registry Editor, locate the following registry subkey:
 
@@ -104,7 +104,7 @@ To do this, follow these steps:
    >[!Note]
    >For the exact steps, see the BIOS reference manual or contact your hardware vendor.
 
-9. Test this method on the server by using the NMI switch to generate a dump file. You will see a STOP 0x00000080 hardware malfunction.
+9. Test this method on the server by using the NMI switch to generate a dump file. You'll see a STOP 0x00000080 hardware malfunction.
 
 If you want to run NMI in Microsoft Azure using Serial Console, see [Use Serial Console for SysRq and NMI calls](/azure/virtual-machines/linux/serial-console-nmi-sysrq).
 
