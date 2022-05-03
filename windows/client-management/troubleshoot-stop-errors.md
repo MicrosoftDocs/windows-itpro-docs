@@ -68,13 +68,11 @@ To troubleshoot Stop error messages, follow these general steps:
 
      1. Run any relevant hardware and memory tests.
 
-3. Run the [Machine Memory Dump Collector](https://home.diagnostics.support.microsoft.com/selfhelp?knowledgebasearticlefilter=2027760&wa=wsignin1.0) Windows diagnostic package. This diagnostic tool is used to collect machine memory dump files and check for known solutions.
+3. Run [Microsoft Safety Scanner](https://www.microsoft.com/security/scanner/en-us/default.aspx) or any other virus detection program that includes checks of the Master Boot Record for infections.
 
-4. Run [Microsoft Safety Scanner](https://www.microsoft.com/security/scanner/en-us/default.aspx) or any other virus detection program that includes checks of the Master Boot Record for infections.
+4. Make sure that there is sufficient free space on the hard disk. The exact requirement varies, but we recommend 10–15 percent free disk space.
 
-5. Make sure that there's sufficient free space on the hard disk. The exact requirement varies, but we recommend 10–15 percent free disk space.
-
-6. Contact the respective hardware or software vendor to update the drivers and applications in the following scenarios:
+5. Contact the respective hardware or software vendor to update the drivers and applications in the following scenarios:
   
    - The error message indicates that a specific driver is causing the problem.
    - You're seeing an indication of a service that is starting or stopping before the crash occurred. In this situation, determine whether the service behavior is consistent across all instances of the crash.
@@ -93,7 +91,7 @@ To troubleshoot Stop error messages, follow these general steps:
 
 To configure the system for memory dump files, follow these steps:
 
-1. [Download DumpConfigurator tool](https://codeplexarchive.blob.core.windows.net/archive/projects/WinPlatTools/WinPlatTools.zip).
+1. Use the DumpConfigurator tool.
 
 2. Extract the .zip file and navigate to **Source Code** folder.
 
