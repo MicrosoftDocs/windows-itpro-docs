@@ -200,7 +200,7 @@ New features in [Windows Hello for Business](/windows/security/identity-protecti
 
 - You can now reset a forgotten PIN without deleting company managed data or apps on devices managed by [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune).
 
-- For Windows desktops, users are able to reset a forgotten PIN through **Settings > Accounts > Sign-in options**. For more details, check out [What if I forget my PIN?](/windows/security/identity-protection/hello-for-business/hello-features#pin-reset).
+- For Windows desktops, users are able to reset a forgotten PIN through **Settings > Accounts > Sign-in options**. For more details, check out [What if I forget my PIN?](/windows/security/identity-protection/hello-for-business/hello-feature-pin-reset).
 
 [Windows Hello](/windows/security/identity-protection/hello-for-business/hello-features) now supports FIDO 2.0 authentication for Azure AD Joined Windows 10 devices and has enhanced support for shared devices, as described in [Kiosk configuration](#kiosk-configuration). 
 
@@ -362,7 +362,7 @@ Until now, Windows logon only supported the use of identities federated to ADFS 
 
 1. Azure AD Join your Windows 10 PC. (Web sign-in is only supported on Azure AD Joined PCs).
 
-2. Set the Policy CSP, and the Authentication and EnableWebSignIn polices to enable web sign-in. 
+2. Set the Policy CSP, and the Authentication and EnableWebSignIn policies to enable web sign-in. 
 
 3. On the lock screen, select web sign-in under sign-in options.
 4. Click the “Sign in” button to continue.
@@ -532,7 +532,7 @@ In Windows 10 Enterprise LTSC 2019, we continue our work to improve the diagnost
 
 ### Application Virtualization for Windows (App-V)
 
-Previous versions of the Microsoft Application Virtualization Sequencer (App-V Sequencer) have required you to manually create your sequencing environment. Windows 10 Enterprise LTSC 2019 introduces two new PowerShell cmdlets, New-AppVSequencerVM and Connect-AppvSequencerVM, which automatically create your sequencing environment for you, including provisioning your virtual machine. Additionally, the App-V Sequencer has been updated to let you sequence or update multiple apps at the same time, while automatically capturing and storing your customizations as an App-V project template (.appvt) file, and letting you use PowerShell or Group Policy settings to automatically cleanup your unpublished packages after a device restart.
+Previous versions of the Microsoft Application Virtualization Sequencer (App-V Sequencer) have required you to manually create your sequencing environment. Windows 10 Enterprise LTSC 2019 introduces two new PowerShell cmdlets, New-AppVSequencerVM and Connect-AppvSequencerVM, which automatically create your sequencing environment for you, including provisioning your virtual machine. Additionally, the App-V Sequencer has been updated to let you sequence or update multiple apps at the same time, while automatically capturing and storing your customizations as an App-V project template (.appvt) file, and letting you use PowerShell or Group Policy settings to automatically clean up your unpublished packages after a device restart.
 
 For more info, see the following topics:
 - [Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)](/windows/application-management/app-v/appv-auto-provision-a-vm)
@@ -578,7 +578,7 @@ Users attempt to connect to a Miracast receiver as they did previously. When the
 - Users do not have to change how they connect to a Miracast receiver. They use the same UX as for standard Miracast connections.
 - No changes to current wireless drivers or PC hardware are required.
 - It works well with older wireless hardware that is not optimized for Miracast over Wi-Fi Direct.
-- It leverages an existing connection which both reduces the time to connect and provides a very stable stream.
+- It leverages an existing connection that both reduces the time to connect and provides a very stable stream.
 
 #### Enabling Miracast over Infrastructure
 

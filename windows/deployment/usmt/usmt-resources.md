@@ -28,7 +28,7 @@ ms.topic: article
 
         For more information about how to use the schema with your XML authoring environment, see the environment’s documentation.
 
--   [Ask the Directory Services Team blog](https://go.microsoft.com/fwlink/p/?LinkId=226365)
+-   [Ask the Directory Services Team blog](/archive/blogs/askds/)
 
 -   Forums:
 

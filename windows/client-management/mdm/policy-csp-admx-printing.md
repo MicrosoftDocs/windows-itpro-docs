@@ -140,12 +140,12 @@ Internet printing lets you display printers on Web pages so that printers can be
 
 If you enable this policy setting, Internet printing is activated on this server.
 
-If you disable this policy setting or do not configure it, Internet printing is not activated.
+If you disable this policy setting or don't configure it, Internet printing isn't activated.
 
 Internet printing is an extension of Internet Information Services (IIS). To use Internet printing, IIS must be installed, and printing support and this setting must be enabled.
 
 > [!NOTE]
-> This setting affects the server side of Internet printing only. It does not prevent the print client on the computer from printing across the Internet.
+> This setting affects the server side of Internet printing only. It doesn't prevent the print client on the computer from printing across the Internet.
 
 Also, see the "Custom support URL in the Printers folder's left pane" setting in this folder and the "Browse a common Web site to find printers" setting in User Configuration\Administrative Templates\Control Panel\Printers.
 
@@ -191,15 +191,15 @@ ADMX Info:
 <!--Description-->
 Determines if print driver components are isolated from applications instead of normally loading them into applications. Isolating print drivers greatly reduces the risk of a print driver failure causing an application crash.
 
-Not all applications support driver isolation. By default, Microsoft Excel 2007, Excel 2010, Word 2007, Word 2010 and certain other applications are configured to support it. Other applications may also be capable of isolating print drivers, depending on whether they are configured for it.
+Not all applications support driver isolation. By default, Microsoft Excel 2007, Excel 2010, Word 2007, Word 2010 and certain other applications are configured to support it. Other applications may also be capable of isolating print drivers, depending on whether they're configured for it.
 
-If you enable or do not configure this policy setting, then applications that are configured to support driver isolation will be isolated.
+If you enable or don't configure this policy setting, then applications that are configured to support driver isolation will be isolated.
 
 If you disable this policy setting, then print drivers will be loaded within all associated application processes.
 
 > [!NOTE]
 > - This policy setting applies only to applications opted into isolation.
-> - This policy setting applies only to print drivers loaded by applications. Print drivers loaded by the print spooler are not affected.
+> - This policy setting applies only to print drivers loaded by applications. Print drivers loaded by the print spooler aren't affected.
 > - This policy setting is only checked once during the lifetime of a process. After changing the policy, a running application must be relaunched before settings take effect.
 
 <!--/Description-->
@@ -246,7 +246,7 @@ By default, the Printers folder includes a link to the Microsoft Support Web pag
 
 If you enable this policy setting, you replace the "Get help with printing" default link with a link to a Web page customized for your enterprise.
 
-If you disable this setting or do not configure it, or if you do not enter an alternate Internet address, the default link will appear in the Printers folder.
+If you disable this setting or don't configure it, or if you don't enter an alternate Internet address, the default link will appear in the Printers folder.
 
 > [!NOTE]
 > Web pages links only appear in the Printers folder when Web view is enabled. If Web view is disabled, the setting has no effect. (To enable Web view, open the Printers folder, and, on the Tools menu, click Folder Options, click the General tab, and then click "Enable Web content in folders.")
@@ -299,9 +299,9 @@ This policy setting allows you to manage where client computers search for Point
 
 If you enable this policy setting, the client computer will continue to search for compatible Point and Print drivers from Windows Update after it fails to find the compatible driver from the local driver store and the server driver cache.
 
-If you disable this policy setting, the client computer will only search the local driver store and server driver cache for compatible Point and Print drivers. If it is unable to find a compatible driver, then the Point and Print connection will fail.
+If you disable this policy setting, the client computer will only search the local driver store and server driver cache for compatible Point and Print drivers. If it's unable to find a compatible driver, then the Point and Print connection will fail.
 
-This policy setting is not configured by default, and the behavior depends on the version of Windows that you are using.
+This policy setting isn't configured by default, and the behavior depends on the version of Windows that you're using.
 
 
 <!--/Description-->
@@ -344,11 +344,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-If you enable this policy setting, it sets the maximum number of printers (of each type) that the Add Printer wizard will display on a computer on a managed network (when the computer is able to reach a domain controller, e.g. a domain-joined laptop on a corporate network.)
+If you enable this policy setting, it sets the maximum number of printers (of each type) that the Add Printer wizard will display on a computer on a managed network (when the computer is able to reach a domain controller, for example, a domain-joined laptop on a corporate network.)
 
-If this policy setting is disabled, the network scan page will not be displayed.
+If this policy setting is disabled, the network scan page won't be displayed.
 
-If this policy setting is not configured, the Add Printer wizard will display the default number of printers of each type:
+If this policy setting isn't configured, the Add Printer wizard will display the default number of printers of each type:
 
 - Directory printers: 20
 - TCP/IP printers: 0
@@ -360,9 +360,9 @@ In order to view available Web Services printers on your network, ensure that ne
 
 If you would like to not display printers of a certain type, enable this policy and set the number of printers to display to 0.
 
-In Windows 10 and later, only TCP/IP printers can be shown in the wizard. If you enable this policy setting, only TCP/IP printer limits are applicable. On Windows 10 only, if you disable or do not configure this policy setting, the default limit is applied.
+In Windows 10 and later, only TCP/IP printers can be shown in the wizard. If you enable this policy setting, only TCP/IP printer limits are applicable. On Windows 10 only, if you disable or don't configure this policy setting, the default limit is applied.
 
-In Windows 8 and later, Bluetooth printers are not shown so its limit does not apply to those versions of Windows.
+In Windows 8 and later, Bluetooth printers aren't shown so its limit doesn't apply to those versions of Windows.
 
 <!--/Description-->
 
@@ -406,12 +406,12 @@ ADMX Info:
 <!--Description-->
 Allows users to use the Add Printer Wizard to search the network for shared printers.
 
-If you enable this setting or do not configure it, when users choose to add a network printer by selecting the "A network printer, or a printer attached to another computer" radio button on Add Printer Wizard's page 2, and also check the "Connect to this printer (or to browse for a printer, select this option and click Next)" radio button on Add Printer Wizard's page 3, and do not specify a printer name in the adjacent "Name" edit box, then Add Printer Wizard displays the list of shared printers on the network and invites to choose a printer from the shown list.
+If you enable this setting or don't configure it, when users choose to add a network printer by selecting the "A network printer, or a printer attached to another computer" radio button on Add Printer Wizard's page 2, and also check the "Connect to this printer (or to browse for a printer, select this option and click Next)" radio button on Add Printer Wizard's page 3, and don't specify a printer name in the adjacent "Name" edit box, then Add Printer Wizard displays the list of shared printers on the network and invites to choose a printer from the shown list.
 
-If you disable this setting, the network printer browse page is removed from within the Add Printer Wizard, and users cannot search the network but must type a printer name.
+If you disable this setting, the network printer browse page is removed from within the Add Printer Wizard, and users can't search the network but must type a printer name.
 
 > [!NOTE]
-> This setting affects the Add Printer Wizard only. It does not prevent users from using other programs to search for shared printers or to connect to network printers.
+> This setting affects the Add Printer Wizard only. It doesn't prevent users from using other programs to search for shared printers or to connect to network printers.
 
 <!--/Description-->
 
@@ -453,22 +453,22 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-When printing through a print server, determines whether the print spooler on the client will process print jobs itself, or pass them on to the server to do the work.
+When printing is being done through a print server, determines whether the print spooler on the client will process print jobs itself, or pass them on to the server to do the work.
 
-This policy setting only effects printing to a Windows print server.
+This policy setting only affects printing to a Windows print server.
 
-If you enable this policy setting on a client machine, the client spooler will not process print jobs before sending them to the print server. This decreases the workload on the client at the expense of increasing the load on the server.
+If you enable this policy setting on a client machine, the client spooler won't process print jobs before sending them to the print server, thereby decreasing the workload on the client at the expense of increasing the load on the server.
 
-If you disable this policy setting on a client machine, the client itself will process print jobs into printer device commands. These commands will then be sent to the print server, and the server will simply pass the commands to the printer. This increases the workload of the client while decreasing the load on the server.
+If you disable this policy setting on a client machine, the client itself will process print jobs into printer device commands. These commands will then be sent to the print server, and the server will pass the commands to the printer. This process increases the workload of the client while decreasing the load on the server.
 
-If you do not enable this policy setting, the behavior is the same as disabling it.
+If you don't enable this policy setting, the behavior is the same as disabling it.
 
 > [!NOTE]
-> This policy does not determine whether offline printing will be available to the client. The client print spooler can always queue print jobs when not connected to the print server. Upon reconnecting to the server, the client will submit any pending print jobs.
+> This policy doesn't determine whether offline printing will be available to the client. The client print spooler can always queue print jobs when not connected to the print server. Upon reconnecting to the server, the client will submit any pending print jobs.
 >
-> Some printer drivers require a custom print processor. In some cases the custom print processor may not be installed on the client machine, such as when the print server does not support transferring print processors during point-and-print. In the case of a print processor mismatch, the client spooler will always send jobs to the print server for rendering. Disabling the above policy setting does not override this behavior.
+> Some printer drivers require a custom print processor. In some cases the custom print processor may not be installed on the client machine, such as when the print server doesn't support transferring print processors during point-and-print. In the case of a print processor mismatch, the client spooler will always send jobs to the print server for rendering. Disabling the above policy setting doesn't override this behavior.
 >
-> In cases where the client print driver does not match the server print driver (mismatched connection), the client will always process the print job, regardless of the setting of this policy.
+> In cases where the client print driver doesn't match the server print driver (mismatched connection), the client will always process the print job, regardless of the setting of this policy.
 
 <!--/Description-->
 
@@ -604,15 +604,15 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Determines whether printers using kernel-mode drivers may be installed on the local computer.  Kernel-mode drivers have access to system-wide memory, and therefore poorly-written kernel-mode drivers can cause stop errors.
+Determines whether printers using kernel-mode drivers may be installed on the local computer.  Kernel-mode drivers have access to system-wide memory, and therefore poorly written kernel-mode drivers can cause stop errors.
 
 
-If you do not configure this setting on Windows Server 2003 family products, the installation of kernel-mode printer drivers will be blocked.
+If you don't configure this setting on Windows Server 2003 family products, the installation of kernel-mode printer drivers will be blocked.
 
-If you enable this setting, installation of a printer using a kernel-mode driver will not be allowed.
+If you enable this setting, installation of a printer using a kernel-mode driver won't be allowed.
 
 > [!NOTE]
-> This policy does not apply to 64-bit kernel-mode printer drivers as they cannot be installed and associated with a print queue.
+> This policy doesn't apply to 64-bit kernel-mode printer drivers as they can't be installed and associated with a print queue.
 
 <!--/Description-->
 
@@ -656,11 +656,11 @@ ADMX Info:
 <!--Description-->
 This preference allows you to change default printer management.
 
-If you enable this setting, Windows will not manage the default printer.
+If you enable this setting, Windows won't manage the default printer.
 
 If you disable this setting, Windows will manage the default printer.
 
-If you do not configure this setting, default printer management will not change. 
+If you don't configure this setting, default printer management won't change. 
 
 <!--/Description-->
 
@@ -706,7 +706,7 @@ Microsoft XPS Document Writer (MXDW) generates OpenXPS (*.oxps) files by default
 
 If you enable this group policy setting, the default MXDW output format is the legacy Microsoft XPS (*.xps).
 
-If you disable or do not configure this policy setting, the default MXDW output format is OpenXPS (*.oxps).
+If you disable or don't configure this policy setting, the default MXDW output format is OpenXPS (*.oxps).
 
 <!--/Description-->
 
@@ -752,7 +752,7 @@ If this policy setting is enabled, it prevents users from deleting local and net
 
 If a user tries to delete a printer, such as by using the Delete option in Printers in Control Panel, a message appears explaining that a setting prevents the action.
 
-This setting does not prevent users from running other programs to delete a printer.
+This setting doesn't prevent users from running other programs to delete a printer.
 
 If this policy is disabled, or not configured, users can delete printers using the methods described above.
 
@@ -796,11 +796,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy sets the maximum number of printers (of each type) that the Add Printer wizard will display on a computer on an unmanaged network (when the computer is not able to reach a domain controller, e.g. a domain-joined laptop on a home network.)
+This policy sets the maximum number of printers (of each type) that the Add Printer wizard will display on a computer on an unmanaged network (when the computer isn't able to reach a domain controller, for example, a domain-joined laptop on a home network.)
 
-If this setting is disabled, the network scan page will not be displayed.
+If this setting is disabled, the network scan page won't be displayed.
 
-If this setting is not configured, the Add Printer wizard will display the default number of printers of each type:
+If this setting isn't configured, the Add Printer wizard will display the default number of printers of each type:
 
 - TCP/IP printers: 50
 - Web Services printers: 50
@@ -809,9 +809,9 @@ If this setting is not configured, the Add Printer wizard will display the defau
 
 If you would like to not display printers of a certain type, enable this policy and set the number of printers to display to 0.
 
-In Windows 10 and later, only TCP/IP printers can be shown in the wizard. If you enable this policy setting, only TCP/IP printer limits are applicable. On Windows 10 only, if you disable or do not configure this policy setting, the default limit is applied.
+In Windows 10 and later, only TCP/IP printers can be shown in the wizard. If you enable this policy setting, only TCP/IP printer limits are applicable. On Windows 10 only, if you disable or don't configure this policy setting, the default limit is applied.
 
-In Windows 8 and later, Bluetooth printers are not shown so its limit does not apply to those versions of Windows.
+In Windows 8 and later, Bluetooth printers aren't shown so its limit doesn't apply to those versions of Windows.
 
 <!--/Description-->
 
@@ -855,9 +855,9 @@ ADMX Info:
 <!--Description-->
 This policy restricts clients computers to use package point and print only.
 
-If this setting is enabled, users will only be able to point and print to printers that use package-aware drivers. When using package point and print, client computers will check the driver signature of all drivers that are downloaded from print servers.
+If this setting is enabled, users will only be able to point and print to printers that use package-aware drivers. When package point and print are being used, client computers will check the driver signature of all drivers that are downloaded from print servers.
 
-If this setting is disabled, or not configured, users will not be restricted to package-aware point and print only.
+If this setting is disabled, or not configured, users won't be restricted to package-aware point and print only.
 
 <!--/Description-->
 
@@ -901,9 +901,9 @@ ADMX Info:
 <!--Description-->
 This policy restricts clients computers to use package point and print only.
 
-If this setting is enabled, users will only be able to point and print to printers that use package-aware drivers. When using package point and print, client computers will check the driver signature of all drivers that are downloaded from print servers.
+If this setting is enabled, users will only be able to point and print to printers that use package-aware drivers. When package point and print are being used, client computers will check the driver signature of all drivers that are downloaded from print servers.
 
-If this setting is disabled, or not configured, users will not be restricted to package-aware point and print only.
+If this setting is disabled, or not configured, users won't be restricted to package-aware point and print only.
 
 <!--/Description-->
 
@@ -947,13 +947,13 @@ ADMX Info:
 <!--Description-->
 Restricts package point and print to approved servers.
 
-This policy setting restricts package point and print connections to approved servers. This setting only applies to Package Point and Print connections, and is completely independent from the "Point and Print Restrictions" policy that governs the behavior of non-package point and print connections.
+This policy setting restricts package point and print connections to approved servers. This setting only applies to Package Point and Print connections, and is independent from the "Point and Print Restrictions" policy that governs the behavior of non-package point and print connections.
 
 Windows Vista and later clients will attempt to make a non-package point and print connection anytime a package point and print connection fails, including attempts that are blocked by this policy. Administrators may need to set both policies to block all print connections to a specific print server.
 
-If this setting is enabled, users will only be able to package point and print to print servers approved by the network administrator. When using package point and print, client computers will check the driver signature of all drivers that are downloaded from print servers.
+If this setting is enabled, users will only be able to package point and print to print servers approved by the network administrator. When package point and print are being used, client computers will check the driver signature of all drivers that are downloaded from print servers.
 
-If this setting is disabled, or not configured, package point and print will not be restricted to specific print servers.
+If this setting is disabled, or not configured, package point and print won't be restricted to specific print servers.
 
 <!--/Description-->
 
@@ -997,13 +997,13 @@ ADMX Info:
 <!--Description-->
 Restricts package point and print to approved servers.
 
-This policy setting restricts package point and print connections to approved servers. This setting only applies to Package Point and Print connections, and is completely independent from the "Point and Print Restrictions" policy that governs the behavior of non-package point and print connections.
+This policy setting restricts package point and print connections to approved servers. This setting only applies to Package Point and Print connections, and is independent from the "Point and Print Restrictions" policy that governs the behavior of non-package point and print connections.
 
 Windows Vista and later clients will attempt to make a non-package point and print connection anytime a package point and print connection fails, including attempts that are blocked by this policy. Administrators may need to set both policies to block all print connections to a specific print server.
 
-If this setting is enabled, users will only be able to package point and print to print servers approved by the network administrator. When using package point and print, client computers will check the driver signature of all drivers that are downloaded from print servers.
+If this setting is enabled, users will only be able to package point and print to print servers approved by the network administrator. When package point and print are being used, client computers will check the driver signature of all drivers that are downloaded from print servers.
 
-If this setting is disabled, or not configured, package point and print will not be restricted to specific print servers.
+If this setting is disabled, or not configured, package point and print won't be restricted to specific print servers.
 
 <!--/Description-->
 
@@ -1053,7 +1053,7 @@ When Location Tracking is enabled, the system uses the specified location as a c
 
 Type the location of the user's computer. When users search for printers, the system uses the specified location (and other search criteria) to find a printer nearby. You can also use this setting to direct users to a particular printer or group of printers that you want them to use.
 
-If you disable this setting or do not configure it, and the user does not type a location as a search criterion, the system searches for a nearby printer based on the IP address and subnet mask of the user's computer.
+If you disable this setting or don't configure it, and the user doesn't type a location as a search criterion, the system searches for a nearby printer based on the IP address and subnet mask of the user's computer.
 
 <!--/Description-->
 
@@ -1101,7 +1101,7 @@ Use Location Tracking to design a location scheme for your enterprise and assign
 
 If you enable this setting, users can browse for printers by location without knowing the printer's location or location naming scheme. Enabling Location Tracking adds a Browse button in the Add Printer wizard's Printer Name and Sharing Location screen and to the General tab in the Printer Properties dialog box. If you enable the Group Policy Computer location setting, the default location you entered appears in the Location field by default.
 
-If you disable this setting or do not configure it, Location Tracking is disabled. Printer proximity is estimated using the standard method (that is, based on IP address and subnet mask).
+If you disable this setting or don't configure it, Location Tracking is disabled. Printer proximity is estimated using the standard method (that is, based on IP address and subnet mask).
 
 <!--/Description-->
 
@@ -1143,15 +1143,15 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting determines whether the print spooler will execute print drivers in an isolated or separate process. When print drivers are loaded in an isolated process (or isolated processes), a print driver failure will not cause the print spooler service to fail.
+This policy setting determines whether the print spooler will execute print drivers in an isolated or separate process. When print drivers are loaded in an isolated process (or isolated processes), a print driver failure won't cause the print spooler service to fail.
 
-If you enable or do not configure this policy setting, the print spooler will execute print drivers in an isolated process by default.
+If you enable or don't configure this policy setting, the print spooler will execute print drivers in an isolated process by default.
 
 If you disable this policy setting, the print spooler will execute print drivers in the print spooler process.
 
 > [!NOTE]
 > - Other system or driver policy settings may alter the process in which a print driver is executed.
-> - This policy setting applies only to print drivers loaded by the print spooler. Print drivers loaded by applications are not affected.
+> - This policy setting applies only to print drivers loaded by the print spooler. Print drivers loaded by applications aren't affected.
 > - This policy setting takes effect without restarting the print spooler service.
 
 <!--/Description-->
@@ -1194,15 +1194,15 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting determines whether the print spooler will override the Driver Isolation compatibility reported by the print driver. This enables executing print drivers in an isolated process, even if the driver does not report compatibility.
+This policy setting determines whether the print spooler will override the Driver Isolation compatibility reported by the print driver. This policy setting enables executing print drivers in an isolated process, even if the driver doesn't report compatibility.
 
-If you enable this policy setting, the print spooler isolates all print drivers that do not explicitly opt out of Driver Isolation.
+If you enable this policy setting, the print spooler isolates all print drivers that don't explicitly opt out of Driver Isolation.
 
-If you disable or do not configure this policy setting, the print spooler uses the Driver Isolation compatibility flag value reported by the print driver.
+If you disable or don't configure this policy setting, the print spooler uses the Driver Isolation compatibility flag value reported by the print driver.
 
 > [!NOTE]
 > - Other system or driver policy settings may alter the process in which a print driver is executed.
-> - This policy setting applies only to print drivers loaded by the print spooler. Print drivers loaded by applications are not affected.
+> - This policy setting applies only to print drivers loaded by the print spooler. Print drivers loaded by applications aren't affected.
 > - This policy setting takes effect without restarting the print spooler service.
 
 <!--/Description-->
@@ -1251,7 +1251,7 @@ The Add Printer Wizard gives users the option of searching Active Directory for 
 
 If you enable this policy setting, these searches begin at the location you specify in the "Default Active Directory path" box. Otherwise, searches begin at the root of Active Directory.
 
-This setting only provides a starting point for Active Directory searches for printers. It does not restrict user searches through Active Directory.
+This setting only provides a starting point for Active Directory searches for printers. It doesn't restrict user searches through Active Directory.
 
 <!--/Description-->
 
@@ -1295,13 +1295,13 @@ ADMX Info:
 <!--Description-->
 Announces the presence of shared printers to print browse main servers for the domain.
 
-On domains with Active Directory, shared printer resources are available in Active Directory and are not announced.
+On domains with Active Directory, shared printer resources are available in Active Directory and aren't announced.
 
 If you enable this setting, the print spooler announces shared printers to the print browse main servers.
 
-If you disable this setting, shared printers are not announced to print browse main servers, even if Active Directory is not available.
+If you disable this setting, shared printers aren't announced to print browse main servers, even if Active Directory isn't available.
 
-If you do not configure this setting, shared printers are announced to browse main servers only when Active Directory is not available.
+If you don't configure this setting, shared printers are announced to browse main servers only when Active Directory isn't available.
 
 > [!NOTE]
 > A client license is used each time a client computer announces a printer to a print browse master on the domain.
@@ -1348,12 +1348,12 @@ ADMX Info:
 <!--Description-->
 This policy controls whether the print job name will be included in print event logs.
 
-If you disable or do not configure this policy setting, the print job name will not be included.
+If you disable or don't configure this policy setting, the print job name won't be included.
 
 If you enable this policy setting, the print job name will be included in new log entries.
 
 > [!NOTE]
-> This setting does not apply to Branch Office Direct Printing jobs.
+> This setting doesn't apply to Branch Office Direct Printing jobs.
 
 <!--/Description-->
 
@@ -1397,11 +1397,11 @@ ADMX Info:
 <!--Description-->
 This policy determines if v4 printer drivers are allowed to run printer extensions.
 
-V4 printer drivers may include an optional, customized user interface known as a printer extension. These extensions may provide access to more device features, but this may not be appropriate for all enterprises.
+V4 printer drivers may include an optional, customized user interface known as a printer extension. These extensions may provide access to more device features, but these extensions may not be appropriate for all enterprises.
 
-If you enable this policy setting, then all printer extensions will not be allowed to run.
+If you enable this policy setting, then all printer extensions won't be allowed to run.
 
-If you disable this policy setting or do not configure it, then all printer extensions that have been installed will be allowed to run.
+If you disable this policy setting or don't configure it, then all printer extensions that have been installed will be allowed to run.
 
 <!--/Description-->
 

@@ -342,7 +342,7 @@ This security group has not changed since Windows Server 2008.
 
 Members of the Cloneable Domain Controllers group that are domain controllers may be cloned. In Windows Server 2012 R2 and Windows Server 2012, you can deploy domain controllers by copying an existing virtual domain controller. In a virtual environment, you no longer have to repeatedly deploy a server image that is prepared by using sysprep.exe, promote the server to a domain controller, and then complete additional configuration requirements for deploying each domain controller (including adding the virtual domain controller to this security group).
 
-For more information, see [Introduction to Active Directory Domain Services (AD DS) Virtualization (Level 100)](https://technet.microsoft.com/library/hh831734.aspx).
+For more information, see [Introduction to Active Directory Domain Services (AD DS) Virtualization (Level 100)](/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100).
 
 This security group was introduced in Windows Server 2012, and it has not changed in subsequent versions.
 
