@@ -167,7 +167,7 @@ You can now reset a forgotten PIN without deleting company managed data or apps 
 
 For Windows desktops, users are able to reset a forgotten PIN through **Settings > Accounts > Sign-in options**.
 
-For more details, check out [What if I forget my PIN?](/security/identity-protection/hello-for-business/hello-feature-pin-reset.md).
+For more details, check out [What if I forget my PIN?](/security/identity-protection/hello-for-business/hello-feature-pin-reset).
 
 ### Windows Information Protection (WIP) and Azure Active Directory (Azure AD)
 Microsoft Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your allowed apps, your WIP-protection level, and how to find enterprise data on the network. For more info, see [Create a Windows Information Protection (WIP) policy using Microsoft Intune](/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune) and [Associate and deploy your Windows Information Protection (WIP) and VPN policies by using Microsoft Intune](/windows/threat-protection/windows-information-protection/create-vpn-and-wip-policy-using-intune).
