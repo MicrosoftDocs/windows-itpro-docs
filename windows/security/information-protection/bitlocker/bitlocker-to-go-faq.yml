@@ -5,7 +5,7 @@ metadata:
   ms.assetid: c40f87ac-17d3-47b2-afc6-6c641f72ecee
   ms.reviewer: 
   ms.author: dansimp
-  ms.prod: w10
+  ms.prod: m365-security
   ms.mktglfcycl: deploy
   ms.sitesec: library
   ms.pagetype: security
@@ -14,10 +14,9 @@ metadata:
   manager: dansimp
   audience: ITPro
   ms.collection: M365-security-compliance
-  ms.topic: conceptual
+  ms.topic: faq
   ms.date: 07/10/2018
   ms.custom: bitlocker
-    
 title: BitLocker To Go FAQ
 summary: |
   **Applies to**

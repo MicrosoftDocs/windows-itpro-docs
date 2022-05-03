@@ -5,7 +5,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
@@ -34,38 +34,14 @@ manager: dansimp
 <a href="" id="windowsconnectionmanager-prohitconnectiontonondomainnetworkswhenconnectedtodomainauthenticatednetwork"></a>**WindowsConnectionManager/ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -89,10 +65,10 @@ Automatic connection attempts
 - When the computer is already connected to a non-domain-based network, automatic connection attempts to domain-based networks are blocked.
 
 Manual connection attempts
-- When the computer is already connected to either a non-domain-based network or a domain-based network over media other than Ethernet, and a user attempts to create a manual connection to an additional network in violation of this policy setting, the existing network connection is disconnected and the manual connection is allowed.
-- When the computer is already connected to either a non-domain-based network or a domain-based network over Ethernet, and a user attempts to create a manual connection to an additional network in violation of this policy setting, the existing Ethernet connection is maintained and the manual connection attempt is blocked.
+- When the computer is already connected to either a non-domain-based network or a domain-based network over media other than Ethernet, and a user attempts to create a manual connection to another network in violation of this policy setting, the existing network connection is disconnected and the manual connection is allowed.
+- When the computer is already connected to either a non-domain-based network or a domain-based network over Ethernet, and a user attempts to create a manual connection to another network in violation of this policy setting, the existing Ethernet connection is maintained and the manual connection attempt is blocked.
 
-If this policy setting is not configured or is disabled, computers are allowed to connect simultaneously to both domain and non-domain networks.
+If this policy setting isn't configured or is disabled, computers are allowed to connect simultaneously to both domain and non-domain networks.
 
 <!--/Description-->
 > [!TIP]

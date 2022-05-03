@@ -3,23 +3,24 @@ title: Customize and manage the Windows 10 Start and taskbar layout  (Windows 10
 description: On Windows devices, customize the start menu layout and taskbar using XML, group policy, provisioning package, or MDM policy. You can add pinned folders, add a start menu size, pin apps to the taskbar, and more.
 ms.assetid: 2E94743B-6A49-463C-9448-B7DD19D9CD6A
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 keywords: ["start screen", "start menu"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: greg-lindsay
-ms.author: greglin
+author: aczechowski
+ms.author: aaroncz
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 08/05/2021
+ms.collection: highpri
 ---
 
 # Customize the Start menu and taskbar layout on Windows 10 and later devices
 
 **Applies to**:
 
-- Windows 10 version 1607 and later
+- Windows 10 version 1607 and later
 - Windows Server 2016 with Desktop Experience
 - Windows Server 2019 with Desktop Experience
 

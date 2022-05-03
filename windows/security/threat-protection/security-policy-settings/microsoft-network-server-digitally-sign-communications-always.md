@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 06/21/2018
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Microsoft network server: Digitally sign communications (always)

@@ -2,7 +2,7 @@
 title: Windows 10, version 1709 and Windows 11 and later optional diagnostic data (Windows 10)
 description: Use this article to learn about the types of optional diagnostic data that is collected.
 keywords: privacy,Windows 10
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
@@ -10,15 +10,21 @@ audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection:
+  - M365-security-compliance
+  - highpri
 ms.topic: article
-ms.reviewer: 
+ms.reviewer:
+ms.technology: privacy 
+
 ---
 
 # Windows 10, version 1709 and later and Windows 11 optional diagnostic data
 
 Applies to:
 - Windows 11
+- Windows 10, version 21H2
+- Windows 10, version 21H1
 - Windows 10, version 20H2
 - Windows 10, version 2004
 - Windows 10, version 1909
@@ -253,7 +259,7 @@ This type of data includes details about the health of the device, operating sys
 - Data about the reliability of content that appears in the [Windows Spotlight](/windows/configuration/windows-spotlight) (rotating lock screen images) is used for Windows Spotlight reliability investigations.
 - Timing data about how quickly Cortana responds to voice commands is used to improve Cortana listening performance.
 - Timing data about how quickly the facial recognition feature starts up and finishes is used to improve facial recognition performance.
-- Data about when an Application Window fails to appear is used to investigate issues with Application Window reliability and performance.
+- Data about when an application window fails to appear is used to investigate issues with application window reliability and performance.
 
 **With (optional) Tailored experiences:**<br>
 If a user has enabled Tailored experiences on the device, [pseudonymized](#pseudo) Product and Service Performance data from Windows 10 and Windows 11 is used by Microsoft to [personalize](#personalize), [recommend](#recommend), and [offer](#offer) Microsoft products and services to Windows 10 and Windows 11 users. Also, if a user has enabled Tailored experiences on the device, [pseudonymized](#pseudo) Product and Service Performance data from Windows 10 and Windows 11 is used by Microsoft to [promote](#promote) third-party Windows apps, services, hardware, and peripherals to Windows 10 and Windows 11 users.

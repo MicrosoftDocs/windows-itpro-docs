@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 09/23/2020
 ms.reviewer: 
 manager: dansimp
@@ -42,38 +42,14 @@ manager: dansimp
 <a href="" id="admx-tabletshell-disableinkball_1"></a>**ADMX_TabletShell/DisableInkball_1**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -90,9 +66,9 @@ manager: dansimp
 <!--Description-->
 Prevents start of InkBall game.  
 
-If you enable this policy, the InkBall game will not run.  
+If you enable this policy, the InkBall game won't run.  
 
-If you disable this policy, the InkBall game will run.  If you do not configure this policy, the InkBall game will run.
+If you disable this policy, the InkBall game will run.  If you don't configure this policy, the InkBall game will run.
 
 <!--/Description-->
 
@@ -113,38 +89,14 @@ ADMX Info:
 <a href="" id="admx-tabletshell-disablenotewriterprinting_1"></a>**ADMX_TabletShell/DisableNoteWriterPrinting_1**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -161,9 +113,9 @@ ADMX Info:
 <!--Description-->
 Prevents printing to Journal Note Writer.  
 
-If you enable this policy, the Journal Note Writer printer driver will not allow printing to it. It will remain displayed in the list of available printers, but attempts to print to it will fail.  
+If you enable this policy, the Journal Note Writer printer driver won't allow printing to it. It will remain displayed in the list of available printers, but attempts to print to it will fail.  
 
-If you disable this policy, you will be able to use this feature to print to a Journal Note.  If you do not configure this policy, users will be able to use this feature to print to a Journal Note.
+If you disable this policy, you'll be able to use this feature to print to a Journal Note.  If you don't configure this policy, users will be able to use this feature to print to a Journal Note.
 
 
 <!--/Description-->

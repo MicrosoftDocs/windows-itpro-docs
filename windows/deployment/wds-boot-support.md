@@ -6,11 +6,12 @@ ms.mktglfcycl: plan
 ms.localizationpriority: medium
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
-ms.author: greglin
-manager: laurawi
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.collection: highpri
 ---
 
 # Windows Deployment Services (WDS) boot.wim support
@@ -27,64 +28,16 @@ When you PXE-boot from a WDS server that uses the **boot.wim** file from install
 
 ## Deployment scenarios affected
 
-The table below provides support details for specific deployment scenarios.
+The table below provides support details for specific deployment scenarios (Boot Image Version).
 
-<br>
-<table cellpadding="1">
-    <tr>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td>&nbsp;</td>
-        <th>Windows 10</th>
-        <th>Windows Server 2016</th>
-        <th>Windows Server 2019</th>
-        <th>Windows Server 2022</th>
-        <th>Windows 11</th>
-    </tr>
-    <tr>
-        <td rowspan="6"><i>
-    <br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>Boot image version</i></td>
-    </tr>
-    <tr>
-        <td><b>Windows 10</b></td>
-        <td>Supported, using a boot image from matching or newer version.</td>
-        <td>Supported, using a boot image from Windows 10, version 1607 or later.</td>
-        <td>Supported, using a boot image from Windows 10, version 1809 or later.</td>
-        <td>Not supported.</td>
-        <td>Not supported.</td>
-    </tr>
-    <tr>
-        <td><b>Windows Server 2016</b></td>
-        <td>Supported, using a boot image from Windows 10, version 1607 or later.</td>
-        <td>Supported.</td>
-        <td>Not supported.</td>
-        <td>Not supported.</td>
-        <td>Not supported.</td>
-    </tr>
-    <tr>
-        <td><b>Windows Server 2019</b></td>
-        <td>Supported, using a boot image from Windows 10, version 1809 or later.</td>
-        <td>Supported.</td>
-        <td>Supported.</td>
-        <td>Not supported.</td>
-        <td>Not supported.</td>
-    </tr>
-    <tr>
-        <td><b>Windows Server 2022</b></td>
-        <td>Deprecated, with a warning message.</td>
-        <td>Deprecated, with a warning message.</td>
-        <td>Deprecated, with a warning message.</td>
-        <td>Deprecated, with a warning message.</td>
-        <td>Not supported.</td>
-    </tr>
-    <tr>
-        <td><b>Windows 11</b></td>
-        <td>Not supported, blocked.</td>
-        <td>Not supported, blocked.</td>
-        <td>Not supported, blocked.</td>
-        <td>Not supported, blocked.</td>
-        <td>Not supported, blocked.</td>
-    </tr>
-   </table>
+||Windows 10|Windows Server 2016|Windows Server 2019|Windows Server 2022|Windows 11|
+|--- |--- |--- |--- |--- |--- |
+|**Windows 10**|Supported, using a boot image from matching or newer version.|Supported, using a boot image from Windows 10, version 1607 or later.|Supported, using a boot image from Windows 10, version 1809 or later.|Not supported.|Not supported.|
+|**Windows Server 2016**|Supported, using a boot image from Windows 10, version 1607 or later.|Supported.|Not supported.|Not supported.|Not supported.|
+|**Windows Server 2019**|Supported, using a boot image from Windows 10, version 1809 or later.|Supported.|Supported.|Not supported.|Not supported.|
+|**Windows Server 2022**|Deprecated, with a warning message.|Deprecated, with a warning message.|Deprecated, with a warning message.|Deprecated, with a warning message.|Not supported.|
+|**Windows 11**|Not supported, blocked.|Not supported, blocked.|Not supported, blocked.|Not supported, blocked.|Not supported, blocked.|
+
 
 ## Reason for the change
 

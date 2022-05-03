@@ -13,7 +13,7 @@ ms.topic: conceptual
 ms.date: 10/20/2017
 ms.reviewer: 
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Baseline protections and additional qualifications for virtualization-based protection of code integrity

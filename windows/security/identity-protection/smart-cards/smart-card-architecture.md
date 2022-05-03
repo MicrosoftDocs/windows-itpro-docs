@@ -1,7 +1,7 @@
 ---
 title: Smart Card Architecture (Windows)
 description: This topic for the IT professional describes the system architecture that supports smart cards in the Windows operating system.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -82,7 +82,7 @@ Credential providers must be registered on a computer running Windows, and they 
 
 ## Smart card subsystem architecture
 
-Vendors provide smart cards and smart card readers, and in many cases the vendors are different for the smart card and the smart card reader. Drivers for smart card readers are written to the [Personal Computer/Smart Card (PC/SC) standard](https://www.pcscworkgroup.com/). Each smart card must have a Cryptographic Service Provider (CSP) that uses the CryptoAPI interfaces to enable cryptographic operations, and the WinSCard APIs to enable communications with smart card hardware.
+Vendors provide smart cards and smart card readers, and in many cases the vendors are different for the smart card and the smart card reader. Drivers for smart card readers are written to the [Personal Computer/Smart Card (PC/SC) standard](https://pcscworkgroup.com/). Each smart card must have a Cryptographic Service Provider (CSP) that uses the CryptoAPI interfaces to enable cryptographic operations, and the WinSCard APIs to enable communications with smart card hardware.
 
 ### Base CSP and smart card minidriver architecture
 

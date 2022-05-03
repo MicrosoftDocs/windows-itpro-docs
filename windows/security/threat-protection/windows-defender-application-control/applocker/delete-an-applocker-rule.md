@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 11/09/2020
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Delete an AppLocker rule

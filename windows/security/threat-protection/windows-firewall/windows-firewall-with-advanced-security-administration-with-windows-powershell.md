@@ -14,7 +14,7 @@ ms.topic: conceptual
 ms.date: 09/08/2021
 ms.reviewer: 
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Windows Defender Firewall with Advanced Security Administration with Windows PowerShell

@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 12/14/2020
 ms.reviewer: 
 manager: dansimp
@@ -41,38 +41,14 @@ manager: dansimp
 <a href="" id="admx-remoteassistance-ra-encryptedticketonly"></a>**ADMX_RemoteAssistance/RA_EncryptedTicketOnly**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -87,13 +63,13 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting enables Remote Assistance invitations to be generated with improved encryption so that only computers running this version (or later versions) of the operating system can connect. This policy setting does not affect Remote Assistance connections that are initiated by instant messaging contacts or the unsolicited Offer Remote Assistance.
+This policy setting enables Remote Assistance invitations to be generated with improved encryption so that only computers running this version (or later versions) of the operating system can connect. This policy setting doesn't affect Remote Assistance connections that are initiated by instant messaging contacts or the unsolicited Offer Remote Assistance.
 
 If you enable this policy setting, only computers running this version (or later versions) of the operating system can connect to this computer.
 
 If you disable this policy setting, computers running this version and a previous version of the operating system can connect to this computer.
 
-If you do not configure this policy setting, users can configure the setting in System Properties in the Control Panel.
+If you don't configure this policy setting, users can configure the setting in System Properties in the Control Panel.
 
 <!--/Description-->
 
@@ -113,38 +89,14 @@ ADMX Info:
 <a href="" id="admx-remoteassistance-ra-optimize-bandwidth"></a>**ADMX_RemoteAssistance/RA_Optimize_Bandwidth**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -181,7 +133,7 @@ If you enable this policy setting, bandwidth optimization occurs at the level sp
 
 If you disable this policy setting, application-based settings are used.
 
-If you do not configure this policy setting, application-based settings are used.
+If you don't configure this policy setting, application-based settings are used.
 
 <!--/Description-->
 

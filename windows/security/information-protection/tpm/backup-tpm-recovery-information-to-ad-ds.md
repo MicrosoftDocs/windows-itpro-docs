@@ -3,7 +3,7 @@ title: Back up the TPM recovery information to AD DS (Windows)
 description: This topic for the IT professional describes backup of Trusted Platform Module (TPM) information.
 ms.assetid: 62bcec80-96a1-464e-8b3f-d177a7565ac5
 ms.reviewer: 
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

@@ -11,13 +11,13 @@ ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 4937(S): A lingering object was removed from a replica.
 
 
-This event generates when a [lingering object](https://support.microsoft.com/kb/910205) was removed from a replica.
+This event generates when a [lingering object](/troubleshoot/windows-server/identity/information-lingering-objects) was removed from a replica.
 
 There is no example of this event in this document.
 

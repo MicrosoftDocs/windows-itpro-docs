@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 12/08/2020
 ms.reviewer: 
 manager: dansimp
@@ -41,38 +41,14 @@ manager: dansimp
 <a href="" id="admx-msched-activationboundarypolicy"></a>**ADMX_msched/ActivationBoundaryPolicy**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -89,9 +65,9 @@ manager: dansimp
 <!--Description-->
 This policy setting allows you to configure Automatic Maintenance activation boundary. The maintenance activation boundary is the daily scheduled time at which Automatic Maintenance starts.
 
-If you enable this policy setting, this will override the default daily scheduled time as specified in Security and Maintenance/Automatic Maintenance Control Panel.
+If you enable this policy setting, this scheduled time will override the default daily scheduled time as specified in Security and Maintenance/Automatic Maintenance Control Panel.
 
-If you disable or do not configure this policy setting, the daily scheduled time as specified in Security and Maintenance/Automatic Maintenance Control Panel will apply.
+If you disable or don't configure this policy setting, the daily scheduled time as specified in Security and Maintenance/Automatic Maintenance Control Panel will apply.
 
 <!--/Description-->
 
@@ -111,38 +87,14 @@ ADMX Info:
 <a href="" id="admx-msched-randomdelaypolicy"></a>**ADMX_msched/RandomDelayPolicy**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -163,7 +115,7 @@ The maintenance random delay is the amount of time up to which Automatic Mainten
 
 If you enable this policy setting, Automatic Maintenance will delay starting from its Activation Boundary, by up to this time.
 
-If you do not configure this policy setting, 4 hour random delay will be applied to Automatic Maintenance.
+If you don't configure this policy setting, 4 hour random delay will be applied to Automatic Maintenance.
 
 If you disable this policy setting, no random delay will be applied to Automatic Maintenance.
 

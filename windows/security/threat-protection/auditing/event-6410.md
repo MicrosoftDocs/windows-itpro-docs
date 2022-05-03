@@ -11,7 +11,7 @@ ms.date: 09/09/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 6410(F): Code integrity determined that a file does not meet the security requirements to load into a process.

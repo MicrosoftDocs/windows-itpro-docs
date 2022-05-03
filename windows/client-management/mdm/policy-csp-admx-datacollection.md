@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 12/01/2020
 ms.reviewer: 
 manager: dansimp
@@ -39,38 +39,14 @@ manager: dansimp
 <a href="" id="admx-datacollection-commercialidpolicy"></a>**ADMX_DataCollection/CommercialIdPolicy**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -87,9 +63,9 @@ manager: dansimp
 <!--Description-->
 This policy setting defines the identifier used to uniquely associate this device’s telemetry data as belonging to a given organization.
 
-If your organization is participating in a program that requires this device to be identified as belonging to your organization then use this setting to provide that identification. The value for this setting will be provided by Microsoft as part of the onboarding process for the program.
+If your organization is participating in a program that requires this device to be identified as belonging to your organization, then use this setting to provide that identification. The value for this setting will be provided by Microsoft as part of the onboarding process for the program.
 
-If you disable or do not configure this policy setting, then Microsoft will not be able to use this identifier to associate this machine and its telemetry data with your organization.
+If you disable or don't configure this policy setting, then Microsoft won't be able to use this identifier to associate this machine and its telemetry data with your organization.
 
 <!--/Description-->
 

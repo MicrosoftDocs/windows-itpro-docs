@@ -2,24 +2,24 @@
 title: Deploy Windows 10 using PXE and Configuration Manager (Windows 10)
 description: In this topic, you will learn how to deploy Windows 10 using Microsoft Endpoint Manager deployment packages and task sequences.
 ms.assetid: fb93f514-5b30-4f4b-99dc-58e6860009fa
-ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 keywords: deployment, image, UEFI, task sequence
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Deploy Windows 10 using PXE and Configuration Manager
 
 **Applies to**
 
--   Windows 10
+-   Windows 10
 
 In this topic, you will learn how to deploy Windows 10 using Microsoft Endpoint Manager deployment packages and task sequences. This topic will walk you through the process of deploying the Windows 10 Enterprise image to a Unified Extensible Firmware Interface (UEFI) computer named PC0001. An existing Configuration Manager infrastructure that is integrated with MDT is used for the procedures in this topic.
 

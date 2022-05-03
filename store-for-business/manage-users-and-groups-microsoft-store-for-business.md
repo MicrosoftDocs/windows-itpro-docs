@@ -21,7 +21,6 @@ ms.date: 07/21/2021
 **Applies to**
 
 -   Windows 10
--   Windows 10 Mobile
 
 > [!IMPORTANT]
 > Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
@@ -42,8 +41,8 @@ For more information on Azure AD, see [About Office 365 and Azure Active Directo
 ## Add user accounts to your Azure AD directory
 If you created a new Azure AD directory when you signed up for Store for Business, you'll have a directory set up with one user account - the global administrator. That global administrator can add user accounts to your Azure AD directory. However, adding user accounts to your Azure AD directory will not give those employees access to Store for Business. You'll need to assign Store for Business roles to your employees. For more information, see [Roles and permissions in the Store for Business.](roles-and-permissions-microsoft-store-for-business.md)
 
-You can use the [Office 365 admin dashboard](https://portal.office.com/adminportal) or [Azure management portal](https://go.microsoft.com/fwlink/p/?LinkId=691086) to add user accounts to your Azure AD directory. If you'll be using Azure management portal, you'll need an active subscription to [Azure management portal](https://go.microsoft.com/fwlink/p/?LinkId=708617).
+You can use the [Office 365 admin dashboard](https://portal.office.com/adminportal) or [Azure management portal](https://portal.azure.com/) to add user accounts to your Azure AD directory. If you'll be using Azure management portal, you'll need an active subscription to [Azure management portal](https://go.microsoft.com/fwlink/p/?LinkId=708617).
 
 For more information, see:
-- [Add user accounts using Office 365 admin dashboard](https://support.office.com/en-us/article/add-users-individually-or-in-bulk-to-office-365-admin-help-1970f7d6-03b5-442f-b385-5880b9c256ec)
+- [Add user accounts using Office 365 admin dashboard](/microsoft-365/admin/add-users)
 - [Add user accounts using Azure management portal](/azure/active-directory/fundamentals/add-users-azure-active-directory)

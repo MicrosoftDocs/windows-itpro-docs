@@ -15,7 +15,8 @@ ms.localizationpriority: medium
 # Policy CSP - Browser
 
 > [!NOTE]
-> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](/DeployEdge/).
+> These settings are for the previous version of Microsoft Edge (version 45 and earlier) and are deprecated. These settings will be removed in a future Windows release. Microsoft recommends updating your version of Microsoft Edge to version 77 or later and use the ADMX Ingestion function for management. Learn more about how to [Configure Microsoft Edge using Mobile Device Management](/deployedge/configure-edge-with-mdm).
+
 
 <!--Policies-->
 ## Browser policies  
@@ -199,38 +200,14 @@ ms.localizationpriority: medium
 <a href="" id="browser-allowaddressbardropdown"></a>**Browser/AllowAddressBarDropdown**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -277,38 +254,14 @@ Most restricted value: 0
 <a href="" id="browser-allowautofill"></a>**Browser/AllowAutofill**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -351,7 +304,7 @@ To verify AllowAutofill is set to 0 (not allowed):
 
 1.  Open Microsoft Edge.
 2.  In the upper-right corner of the browser, click **…**.
-3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
+3.  Click **Settings** in the dropdown list, and select **View Advanced Settings**.
 4.  Verify the setting **Save form entries** is grayed out.
 
 <!--/Validation-->
@@ -363,38 +316,14 @@ To verify AllowAutofill is set to 0 (not allowed):
 <a href="" id="browser-allowconfigurationupdateforbookslibrary"></a>**Browser/AllowConfigurationUpdateForBooksLibrary**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -439,38 +368,14 @@ Supported values:
 <a href="" id="browser-allowcookies"></a>**Browser/AllowCookies**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -511,9 +416,9 @@ Most restricted value: 0
 <!--Validation-->
 To verify AllowCookies is set to 0 (not allowed):
 
-1.  Open Microsoft Edge or Microsoft Edge for Windows 10 Mobile.
+1.  Open Microsoft Edge.
 2.  In the upper-right corner of the browser, click **…**.
-3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
+3.  Click **Settings** in the dropdown list, and select **View Advanced Settings**.
 4.  Verify the setting **Cookies** is disabled.
 
 <!--/Validation-->
@@ -525,38 +430,14 @@ To verify AllowCookies is set to 0 (not allowed):
 <a href="" id="browser-allowdevelopertools"></a>**Browser/AllowDeveloperTools**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -573,8 +454,6 @@ To verify AllowCookies is set to 0 (not allowed):
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows for desktop and not supported in Windows Mobile.
 
 [!INCLUDE [allow-developer-tools-shortdesc](../includes/allow-developer-tools-shortdesc.md)]
 
@@ -603,38 +482,14 @@ Most restricted value: 0
 <a href="" id="browser-allowdonottrack"></a>**Browser/AllowDoNotTrack**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -665,7 +520,7 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
-- Blank (default) - Do not send tracking information but let users choose to send tracking information to sites they visit.
+- Blank (default) - Don't send tracking information but let users choose to send tracking information to sites they visit.
 - 0 - Never send tracking information.
 - 1 - Send tracking information.
 
@@ -674,9 +529,9 @@ Most restricted value: 1
 <!--Validation-->
 To verify AllowDoNotTrack is set to 0 (not allowed):
 
-1.  Open Microsoft Edge or Microsoft Edge for Windows 10 Mobile.
+1.  Open Microsoft Edge.
 2.  In the upper-right corner of the browser, click **…**.
-3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
+3.  Click **Settings** in the dropdown list, and select **View Advanced Settings**.
 4.  Verify the setting **Send Do Not Track requests** is grayed out.
 
 <!--/Validation-->
@@ -688,38 +543,14 @@ To verify AllowDoNotTrack is set to 0 (not allowed):
 <a href="" id="browser-allowextensions"></a>**Browser/AllowExtensions**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -764,38 +595,14 @@ Supported values:
 <a href="" id="browser-allowflash"></a>**Browser/AllowFlash**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -840,38 +647,14 @@ Supported values:
 <a href="" id="browser-allowflashclicktorun"></a>**Browser/AllowFlashClickToRun**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -906,7 +689,7 @@ ADMX Info:
 Supported values:
 
 -   0 – Load and run Adobe Flash content automatically.
--   1 (default) – Does not load or run Adobe Flash content automatically. Requires action from the user.
+-   1 (default) – Doesn't load or run Adobe Flash content automatically. Requires action from the user.
 
 Most restricted value: 1
 
@@ -919,38 +702,14 @@ Most restricted value: 1
 <a href="" id="browser-allowfullscreenmode"></a>**Browser/AllowFullScreenMode**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -1003,38 +762,14 @@ Most restricted value: 0
 <a href="" id="browser-allowinprivate"></a>**Browser/AllowInPrivate**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -1079,38 +814,14 @@ Most restricted value:  0
 <a href="" id="browser-allowmicrosoftcompatibilitylist"></a>**Browser/AllowMicrosoftCompatibilityList**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -1159,38 +870,14 @@ Most restricted value:  0
 <a href="" id="browser-allowpasswordmanager"></a>**Browser/AllowPasswordManager**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -1244,38 +931,14 @@ To verify AllowPasswordManager is set to 0 (not allowed):
 <a href="" id="browser-allowpopups"></a>**Browser/AllowPopups**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -1318,7 +981,7 @@ Most restricted value: 1
 To verify AllowPopups is set to 0 (not allowed):
 
 1. Click or tap **More** (…) and select **Settings** > **View Advanced settings**.
-2.  Verify the setting **Block pop-ups** is disabled.
+2.  Verify whether the setting **Block pop-ups** is disabled.
 
 <!--/Validation-->
 <!--/Policy-->
@@ -1329,38 +992,14 @@ To verify AllowPopups is set to 0 (not allowed):
 <a href="" id="browser-allowprelaunch"></a>**Browser/AllowPrelaunch**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -1414,38 +1053,14 @@ Most restricted value: 0
 <a href="" id="browser-allowprinting"></a>**Browser/AllowPrinting**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -1498,38 +1113,14 @@ Most restricted value: 0
 <a href="" id="browser-allowsavinghistory"></a>**Browser/AllowSavingHistory**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -1582,38 +1173,14 @@ Most restricted value: 0
 <a href="" id="browser-allowsearchenginecustomization"></a>**Browser/AllowSearchEngineCustomization**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -1664,38 +1231,14 @@ Most restricted value: 0
 <a href="" id="browser-allowsearchsuggestionsinaddressbar"></a>**Browser/AllowSearchSuggestionsinAddressBar**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -1741,38 +1284,14 @@ Most restricted value: 0
 <a href="" id="browser-allowsideloadingofextensions"></a>**Browser/AllowSideloadingOfExtensions**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -1805,7 +1324,7 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
-- 0 - Prevented/not allowed. Disabling does not prevent sideloading of extensions using Add-AppxPackage via PowerShell. To prevent this, set the **ApplicationManagement/AllowDeveloperUnlock** policy to 1 (enabled).
+- 0 - Prevented/not allowed. Disabling doesn't prevent sideloading of extensions using Add-AppxPackage via PowerShell. To prevent this sideloading, set the **ApplicationManagement/AllowDeveloperUnlock** policy to 1 (enabled).
 - 1 (default) - Allowed.
 
 Most restricted value: 0
@@ -1825,38 +1344,14 @@ Most restricted value: 0
 <a href="" id="browser-allowsmartscreen"></a>**Browser/AllowSmartScreen**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -1888,7 +1383,7 @@ ADMX Info:
 Supported values:
 
 - Blank - Users can choose to use Windows Defender SmartScreen.
-- 0 – Turned off. Do not protect users from potential threats and prevent users from turning it on.
+- 0 – Turned off. Don't protect users from potential threats and prevent users from turning it on.
 - 1 (default) – Turned on. Protect users from potential threats and prevent users from turning it off.
 
 Most restricted value: 1
@@ -1909,38 +1404,14 @@ To verify AllowSmartScreen is set to 0 (not allowed):
 <a href="" id="browser-allowtabpreloading"></a>**Browser/AllowTabPreloading**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -1992,38 +1463,14 @@ Most restricted value: 1
 <a href="" id="browser-allowwebcontentonnewtabpage"></a>**Browser/AllowWebContentOnNewTabPage**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -2075,38 +1522,14 @@ Supported values:
 <a href="" id="browser-alwaysenablebookslibrary"></a>**Browser/AlwaysEnableBooksLibrary**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -2154,38 +1577,14 @@ Most restricted value: 0
 <a href="" id="browser-clearbrowsingdataonexit"></a>**Browser/ClearBrowsingDataOnExit**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -2225,12 +1624,12 @@ Most restricted value: 1
 
 <!--/SupportedValues-->
 <!--Validation-->
-To verify that browsing data is cleared on exit (ClearBrowsingDataOnExit is set to 1): 
+To verify whether browsing data is cleared on exit (ClearBrowsingDataOnExit is set to 1): 
 
 1. Open Microsoft Edge and browse to websites.
 2. Close the Microsoft Edge window.
 3. Open Microsoft Edge and start typing the same URL in address bar. 
-4. Verify that it does not auto-complete from history.
+4. Verify that it doesn't auto-complete from history.
 
 <!--/Validation-->
 <!--/Policy-->
@@ -2241,38 +1640,14 @@ To verify that browsing data is cleared on exit (ClearBrowsingDataOnExit is set 
 <a href="" id="browser-configureadditionalsearchengines"></a>**Browser/ConfigureAdditionalSearchEngines**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -2311,7 +1686,7 @@ ADMX Info:
 Supported values:
 
 -   0 (default) – Prevented/not allowed. Microsoft Edge uses the search engine specified in App settings.<p><p>If you enabled this policy and now want to disable it, disabling removes all previously configured search engines.
--   1 – Allowed. Add up to five additional search engines and set any one of them as the default.<p><p>For each search engine added you must specify a link to the OpenSearch XML file that contains, at a minimum, the short name and URL template (HTTPS) of the search engine. For more information about creating the OpenSearch XML file, see [Search provider discovery](/microsoft-edge/dev-guide/browser/search-provider-discovery).
+-   1 – Allowed. Add up to five more search engines and set any one of them as the default.<p><p>For each search engine added, you must specify a link to the OpenSearch XML file that contains, at a minimum, the short name and URL template (HTTPS) of the search engine. For more information about creating the OpenSearch XML file, see [Search provider discovery](/microsoft-edge/dev-guide/browser/search-provider-discovery).
 
 Most restricted value: 0
 <!--/SupportedValues-->
@@ -2323,38 +1698,14 @@ Most restricted value: 0
 <a href="" id="browser-configurefavoritesbar"></a>**Browser/ConfigureFavoritesBar**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -2407,38 +1758,14 @@ Supported values:
 <a href="" id="browser-configurehomebutton"></a>**Browser/ConfigureHomeButton**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -2495,38 +1822,14 @@ Supported values:
 <a href="" id="browser-configurekioskmode"></a>**Browser/ConfigureKioskMode**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -2568,7 +1871,7 @@ Supported values:
 - If it’s one of many apps, Microsoft Edge runs as normal.
 
 **1**: 
-- If it’s a single app, it runs a limited multi-tab version of InPrivate and is the only app available for public browsing. Users can’t minimize, close, or open windows or customize Microsoft Edge, but can clear browsing data and downloads and restart by clicking “End session.” You can configure Microsoft Edge to restart after a period of inactivity by using the “Configure kiosk reset after idle timeout” policy. _**For single-app public browsing:**_ If you do not configure the Configure kiosk reset after idle timeout policy and you enable this policy, Microsoft Edge kiosk resets after 5 minutes of idle time.
+- If it’s a single app, it runs a limited multi-tab version of InPrivate and is the only app available for public browsing. Users can’t minimize, close, or open windows or customize Microsoft Edge, but can clear browsing data and downloads and restart by clicking “End session.” You can configure Microsoft Edge to restart after a period of inactivity by using the “Configure kiosk reset after idle timeout” policy. _**For single-app public browsing:**_ If you don't configure the Configure kiosk reset after idle timeout policy and you enable this policy, Microsoft Edge kiosk resets after 5 minutes of idle time.
 - If it’s one of many apps, it runs in a limited multi-tab version of InPrivate for public browsing with other apps. Users can minimize, close, and open multiple InPrivate windows, but they can’t customize Microsoft Edge.
 
 <!--/SupportedValues-->
@@ -2586,38 +1889,14 @@ Supported values:
 <a href="" id="browser-configurekioskresetafteridletimeout"></a>**Browser/ConfigureKioskResetAfterIdleTimeout**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -2672,38 +1951,14 @@ Supported values:
 <a href="" id="browser-configureopenmicrosoftedgewith"></a>**Browser/ConfigureOpenMicrosoftEdgeWith**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -2768,38 +2023,14 @@ Supported values:
 <a href="" id="browser-configuretelemetryformicrosoft365analytics"></a>**Browser/ConfigureTelemetryForMicrosoft365Analytics**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -2853,38 +2084,14 @@ Most restricted value: 0
 <a href="" id="browser-disablelockdownofstartpages"></a>**Browser/DisableLockdownOfStartPages**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -2906,10 +2113,10 @@ Most restricted value: 0
 [!INCLUDE [disable-lockdown-of-start-pages-shortdesc](../includes/disable-lockdown-of-start-pages-shortdesc.md)]
   
 > [!NOTE]
-> This policy has no effect when the Browser/HomePages policy is not configured. 
+> This policy has no effect when the Browser/HomePages policy isn't configured. 
  
 > [!IMPORTANT]
-> This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the [Microsoft browser extension policy](/legal/windows/agreements/microsoft-browser-extension-policy).
+> This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the [Microsoft browser extension policy](/legal/microsoft-edge/microsoft-browser-extension-policy).
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2936,38 +2143,14 @@ Most restricted value: 0
 <a href="" id="browser-enableextendedbookstelemetry"></a>**Browser/EnableExtendedBooksTelemetry**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -3012,38 +2195,14 @@ Most restricted value: 0
 <a href="" id="browser-enterprisemodesitelist"></a>**Browser/EnterpriseModeSiteList**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -3063,11 +2222,6 @@ Most restricted value: 0
 
 [!INCLUDE [configure-enterprise-mode-site-list-shortdesc](../includes/configure-enterprise-mode-site-list-shortdesc.md)]
 
-> [!NOTE]
-> This policy is only enforced in Windows for desktop and not supported in Windows Mobile.
-
- 
-
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -3081,7 +2235,7 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
--   0 (default) - Turned off. Microsoft Edge does not check the Enterprise Mode Site List, and in this case, users might experience problems while using legacy apps.
+-   0 (default) - Turned off. Microsoft Edge doesn't check the Enterprise Mode Site List, and in this case, users might experience problems while using legacy apps.
 -   1 - Turned on. Microsoft Edge checks the Enterprise Mode Site List if configured. If an XML file exists in the cache container, IE11 waits 65 seconds and then checks the local cache for a new version from the server. If the server has a different version, Microsoft Edge uses the server file and stores it in the cache container. If you already use a site list, Enterprise Mode continues to work during the 65 second, but uses the existing file. To add the location to your site list, enter it in the {URI} box.<p>For details on how to configure the Enterprise Mode Site List, see [Interoperability and enterprise guidance](/microsoft-edge/deploy/group-policies/interoperability-enterprise-guidance-gp).
 
 
@@ -3094,38 +2248,14 @@ Supported values:
 <a href="" id="browser-enterprisesitelistserviceurl"></a>**Browser/EnterpriseSiteListServiceUrl**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -3154,38 +2284,14 @@ Supported values:
 <a href="" id="browser-homepages"></a>**Browser/HomePages**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -3202,20 +2308,17 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> This policy is only available for Windows for desktop and not supported in Windows Mobile.
-
 
 [!INCLUDE [configure-start-pages-shortdesc](../includes/configure-start-pages-shortdesc.md)]
 
 **Version 1607**<br>
-Starting with this version, the HomePages policy enforces that users cannot change the Start pages settings.
+From this version, the HomePages policy enforces that users can't change the Start pages settings.
 
 **Version 1703**<br>
 If you don't want to send traffic to Microsoft, use the \<about:blank\> value, which honors both domain and non-domain-joined devices when it's the only configured URL. 
 
 **Version 1809**<br>
-When you enable the Configure Open Microsoft Edge With policy and select an option, and you enter the URLs of the pages your want to load as the Start pages in this policy, the Configure Open Microsoft Edge With policy takes precedence, ignoring the HomePages policy. 
+When you enable the Configure Open Microsoft Edge With policy and select an option, and you enter the URLs of the pages you want to load as the Start pages in this policy, the Configure Open Microsoft Edge With policy takes precedence, ignoring the HomePages policy. 
 
 
 > [!NOTE]
@@ -3246,38 +2349,14 @@ Supported values:
 <a href="" id="browser-lockdownfavorites"></a>**Browser/LockdownFavorites**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -3324,38 +2403,14 @@ Most restricted value: 1
 <a href="" id="browser-preventaccesstoaboutflagsinmicrosoftedge"></a>**Browser/PreventAccessToAboutFlagsInMicrosoftEdge**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -3400,38 +2455,14 @@ Most restricted value: 1
 <a href="" id="browser-preventcerterroroverrides"></a>**Browser/PreventCertErrorOverrides**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -3482,38 +2513,14 @@ Most restricted value: 1
 <a href="" id="browser-preventfirstrunpage"></a>**Browser/PreventFirstRunPage**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -3559,38 +2566,14 @@ Most restricted value: 1
 <a href="" id="browser-preventlivetiledatacollection"></a>**Browser/PreventLiveTileDataCollection**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -3636,38 +2619,14 @@ Most restricted value: 1
 <a href="" id="browser-preventsmartscreenpromptoverride"></a>**Browser/PreventSmartScreenPromptOverride**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -3711,38 +2670,14 @@ Most restricted value: 1
 <a href="" id="browser-preventsmartscreenpromptoverrideforfiles"></a>**Browser/PreventSmartScreenPromptOverrideForFiles**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -3787,38 +2722,14 @@ Most restricted value: 1
 <a href="" id="browser-preventturningoffrequiredextensions"></a>**Browser/PreventTurningOffRequiredExtensions**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -3852,7 +2763,7 @@ Supported values:
 
 - Blank (default) - Allowed. Users can uninstall extensions. If you previously enabled this policy and you decide to disable it, the list of extension PFNs defined in this policy get ignored.
 
-- String - Provide a semi-colon delimited list of extension PFNs. For example, adding the following OneNote Web Clipper extension prevents users from turning it off:<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_Microsoft.OneNoteWebClipper8wekyb3d8bbwe_<p>After defining the list of extensions, you deploy them through any available enterprise deployment channel, such as Microsoft Intune. <p>Removing extensions from the list does not uninstall the extension from the user’s computer automatically. To uninstall the extension, use any available enterprise deployment channel. If you enable the Allow Developer Tools policy, then this policy does not prevent users from debugging and altering the logic on an extension.
+- String - Provide a semi-colon delimited list of extension PFNs. For example, adding the following OneNote Web Clipper extension prevents users from turning it off:<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_Microsoft.OneNoteWebClipper8wekyb3d8bbwe_<p>After defining the list of extensions, you deploy them through any available enterprise deployment channel, such as Microsoft Intune. <p>Removing extensions from the list doesn't uninstall the extension from the user’s computer automatically. To uninstall the extension, use any available enterprise deployment channel. If you enable the Allow Developer Tools policy, then this policy doesn't prevent users from debugging and altering the logic on an extension.
 
 <!--/SupportedValues-->
 <!--Example-->
@@ -3869,38 +2780,14 @@ Supported values:
 <a href="" id="browser-preventusinglocalhostipaddressforwebrtc"></a>**Browser/PreventUsingLocalHostIPAddressForWebRTC**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -3917,8 +2804,6 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows for desktop and not supported in Windows Mobile.
 
 [!INCLUDE [prevent-using-localhost-ip-address-for-webrtc-shortdesc](../includes/prevent-using-localhost-ip-address-for-webrtc-shortdesc.md)]
 
@@ -3947,38 +2832,14 @@ Most restricted value: 1
 <a href="" id="browser-provisionfavorites"></a>**Browser/ProvisionFavorites**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -4005,7 +2866,7 @@ Define a default list of favorites in Microsoft Edge. In this case, the Save a F
 To define a default list of favorites:
 1. In the upper-right corner of Microsoft Edge, click the ellipses (**...**) and select **Settings**.
 2. Click **Import from another browser**, click **Export to file** and save the file.
-3. In the **Options** section of the Group Policy Editor, provide the location that points the file with the list of favorites to provision. <p><p>Specify the URL as:<ul><li>HTTP location: "SiteList"=<http://localhost:8080/URLs.html></li><li>Local network: "SiteList"="\network\shares\URLs.html"</li><li>Local file: "SiteList"=file:///c:/Users/Documents/URLs.html</li></ul>
+3. In the **Options** section of the Group Policy Editor, provide the location that points the file with the list of favorites to provision. <p><p>Specify the URL as:<ul><li>HTTP location: "SiteList"=`<http://localhost:8080/URLs.html>`</li><li>Local network: "SiteList"="\network\shares\URLs.html"</li><li>Local file: "SiteList"=file:///c:/Users/Documents/URLs.html</li></ul>
 
 
 >[!IMPORTANT]
@@ -4032,38 +2893,14 @@ ADMX Info:
 <a href="" id="browser-sendintranettraffictointernetexplorer"></a>**Browser/SendIntranetTraffictoInternetExplorer**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -4083,10 +2920,6 @@ ADMX Info:
 
 [!INCLUDE [send-all-intranet-sites-to-ie-shortdesc](../includes/send-all-intranet-sites-to-ie-shortdesc.md)]
 
-> [!NOTE]
-> This policy is only enforced in Windows for desktop and not supported in Windows Mobile.
-
-
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -4100,7 +2933,7 @@ ADMX Info:
 Supported values:
 
 - 0 (default) - All sites, including intranet sites, open in Microsoft Edge automatically.
-- 1 - Only intranet sites open in Internet Explorer 11 automatically.<p><p>Enabling this policy automatically opens all intranet sites in IE11, even if the users have Microsoft Edge as their default browser.<ol><li>In Group Policy Editor, navigate to:<br><br>**Computer Configuration\\Administrative Templates\\Windows Components\\File Explorer\\Set a default associations configuration file** and click **Enable**.<p></li><li>Refresh the policy and then view the affected sites in Microsoft Edge.<p><p>A message displays saying that the page needs to open in IE. At the same time, the page opens in IE11 automatically; in a new frame if it is not yet running, or in a new tab.</li></ol>
+- 1 - Only intranet sites open in Internet Explorer 11 automatically.<p><p>Enabling this policy automatically opens all intranet sites in IE11, even if the users have Microsoft Edge as their default browser.<ol><li>In Group Policy Editor, navigate to:<br><br>**Computer Configuration\\Administrative Templates\\Windows Components\\File Explorer\\Set a default associations configuration file** and click **Enable**.<p></li><li>Refresh the policy and then view the affected sites in Microsoft Edge.<p><p>A message displays saying that the page needs to open in IE. At the same time, the page opens in IE11 automatically; in a new frame if it isn't yet running, or in a new tab.</li></ol>
 
 Most restricted value: 0
 
@@ -4113,38 +2946,14 @@ Most restricted value: 0
 <a href="" id="browser-setdefaultsearchengine"></a>**Browser/SetDefaultSearchEngine**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -4166,7 +2975,7 @@ Most restricted value: 0
 [!INCLUDE [set-default-search-engine-shortdesc](../includes/set-default-search-engine-shortdesc.md)]
 
 > [!IMPORTANT]
-> This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the [Microsoft browser extension policy](/legal/windows/agreements/microsoft-browser-extension-policy).
+> This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the [Microsoft browser extension policy](/legal/microsoft-edge/microsoft-browser-extension-policy).
 
 
 Most restricted value:  0
@@ -4184,9 +2993,9 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
-- Blank (default) - Microsoft Edge uses the default search engine specified in App settings. If you don't configure this policy and disable the [AllowSearchEngineCustomization](#browser-allowsearchenginecustomization) policy, users cannot make changes.
+- Blank (default) - Microsoft Edge uses the default search engine specified in App settings. If you don't configure this policy and disable the [AllowSearchEngineCustomization](#browser-allowsearchenginecustomization) policy, users can't make changes.
 - 0 - Microsoft Edge removes the policy-set search engine and uses the Microsoft Edge specified engine for the market.
-- 1 - Microsoft Edge uses the policy-set search engine specified in the OpenSearch XML file. Users cannot change the default search engine.<p><p>Specify a link to the OpenSearch XML file that contains, at a minimum, the short name and the URL template (HTTPS) of the search engine. For more information about creating the OpenSearch XML file, see [Search provider discovery](/microsoft-edge/dev-guide/browser/search-provider-discovery). Use this format to specify the link you want to add.<p><p>If you want users to use the default Microsoft Edge settings for each market, set the string to **EDGEDEFAULT**.<p><p>If you want users to use Microsoft Bing as the default search engine, then set the string to **EDGEBING**.
+- 1 - Microsoft Edge uses the policy-set search engine specified in the OpenSearch XML file. Users can't change the default search engine.<p><p>Specify a link to the OpenSearch XML file that contains, at a minimum, the short name and the URL template (HTTPS) of the search engine. For more information about creating the OpenSearch XML file, see [Search provider discovery](/microsoft-edge/dev-guide/browser/search-provider-discovery). Use this format to specify the link you want to add.<p><p>If you want users to use the default Microsoft Edge settings for each market, set the string to **EDGEDEFAULT**.<p><p>If you want users to use Microsoft Bing as the default search engine, then set the string to **EDGEBING**.
 
 Most restricted value: 1
 <!--/SupportedValues-->
@@ -4198,38 +3007,14 @@ Most restricted value: 1
 <a href="" id="browser-sethomebuttonurl"></a>**Browser/SetHomeButtonURL**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -4280,38 +3065,14 @@ Supported values:
 <a href="" id="browser-setnewtabpageurl"></a>**Browser/SetNewTabPageURL**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -4361,38 +3122,14 @@ Supported values:
 <a href="" id="browser-showmessagewhenopeningsitesininternetexplorer"></a>**Browser/ShowMessageWhenOpeningSitesInInternetExplorer**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -4411,10 +3148,6 @@ Supported values:
 <!--Description-->
 [!INCLUDE [show-message-when-opening-sites-in-ie-shortdesc](../includes/show-message-when-opening-sites-in-ie-shortdesc.md)]
 
-
-> [!NOTE]
-> This policy is only enforced in Windows for desktop and not supported in Windows Mobile.
-
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -4427,9 +3160,9 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
--   0 (default) – No additional message displays.
--   1 – Show an additional message stating that a site has opened in IE11.
--   2 - Show an additional message with a "Keep going in Microsoft Edge" link.
+-   0 (default) – No other message displays.
+-   1 – Show another message stating that a site has opened in IE11.
+-   2 - Show another message with a "Keep going in Microsoft Edge" link.
 
 Most restricted value: 0
 <!--/SupportedValues-->
@@ -4441,38 +3174,14 @@ Most restricted value: 0
 <a href="" id="browser-suppressedgedeprecationnotification"></a>**Browser/SuppressEdgeDeprecationNotification**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -4489,12 +3198,9 @@ Most restricted value: 0
 
 <!--/Scope-->
 <!--Description-->
-This policy allows Enterprise Admins to turn off the notification for company devices that the Edge Legacy browser is no longer supported after 3/9/2021 to avoid confusion for their enterprise users and reduce help desk calls. 
-By default, a notification will be presented to the user informing them of this upon application startup.
+This policy allows Enterprise Admins to turn off the notification for company devices that the Edge Legacy browser is no longer supported after March 9, 2021, to avoid confusion for their enterprise users and reduce help desk calls. 
+By default, a notification will be presented to the user informing them of this update upon application startup.
 With this policy, you can either allow (default) or suppress this notification.
-
-> [!NOTE]
-> This policy is only enforced in Windows for desktop and not supported in Windows Mobile.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -4516,38 +3222,14 @@ Supported values:
 <a href="" id="browser-syncfavoritesbetweenieandmicrosoftedge"></a><b>Browser/SyncFavoritesBetweenIEAndMicrosoftEdge</b>
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -4568,9 +3250,6 @@ Supported values:
  
 
 [!INCLUDE [keep-favorites-in-sync-between-ie-and-edge-shortdesc](../includes/keep-favorites-in-sync-between-ie-and-edge-shortdesc.md)]
-
-> [!NOTE]
-> This policy is only enforced in Windows for desktop and not supported in Windows Mobile.  
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -4606,38 +3285,14 @@ To verify that favorites are in synchronized between Internet Explorer and Micro
 <a href="" id="browser-unlockhomebutton"></a>**Browser/UnlockHomeButton**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->
@@ -4688,38 +3343,14 @@ Supported values:
 <a href="" id="browser-usesharedfolderforbooks"></a>**Browser/UseSharedFolderForBooks**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 
 <!--/SupportedSKUs-->

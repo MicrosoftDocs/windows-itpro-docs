@@ -3,13 +3,13 @@ title: Provision PCs with common settings (Windows 10/11)
 description: Create a provisioning package to apply common settings to a PC running Windows 10. 
 ms.assetid: 66D14E97-E116-4218-8924-E2A326C9367E
 ms.reviewer: gkomatsu
-manager: dansimp
+manager: dougeby
 keywords: ["runtime provisioning", "provisioning package"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
-ms.author: greglin
+author: aczechowski
+ms.author: aaroncz
 ms.topic: article
 ms.localizationpriority: medium
 ---
@@ -159,7 +159,5 @@ After you're done, click **Create**. It only takes a few seconds. When the packa
 - [Settings changed when you uninstall a provisioning package](provisioning-uninstall-package.md)
 - [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
 - [PowerShell cmdlets for provisioning Windows client (reference)](provisioning-powershell.md)
-- [NFC-based device provisioning](../mobile-devices/provisioning-nfc.md)
-- [Use the package splitter tool](../mobile-devices/provisioning-package-splitter.md)
 - [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)
 - [Create a provisioning package with multivariant settings](provisioning-multivariant.md)

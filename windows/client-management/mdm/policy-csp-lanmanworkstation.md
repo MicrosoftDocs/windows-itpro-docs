@@ -1,11 +1,11 @@
 ---
 title: Policy CSP - LanmanWorkstation
-description: Use the Policy CSP - LanmanWorkstation setting to determine if the SMB client will allow insecure guest logons to an SMB server.
+description: Use the Policy CSP - LanmanWorkstation setting to determine if the SMB client will allow insecure guest sign ins to an SMB server.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
@@ -34,38 +34,14 @@ manager: dansimp
 <a href="" id="lanmanworkstation-enableinsecureguestlogons"></a>**LanmanWorkstation/EnableInsecureGuestLogons**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -80,13 +56,13 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting determines if the SMB client will allow insecure guest logons to an SMB server.
+This policy setting determines if the SMB client will allow insecure guest sign ins to an SMB server.
 
-If you enable this policy setting or if you do not configure this policy setting, the SMB client will allow insecure guest logons.
+If you enable this policy setting or if you don't configure this policy setting, the SMB client will allow insecure guest sign ins.
 
-If you disable this policy setting, the SMB client will reject insecure guest logons.
+If you disable this policy setting, the SMB client will reject insecure guest sign ins.
 
-Insecure guest logons are used by file servers to allow unauthenticated access to shared folders. While uncommon in an enterprise environment, insecure guest logons are frequently used by consumer Network Attached Storage (NAS) appliances acting as file servers. Windows file servers require authentication and do not use insecure guest logons by default. Since insecure guest logons are unauthenticated, important security features such as SMB Signing and SMB Encryption are disabled. As a result, clients that allow insecure guest logons are vulnerable to a variety of man-in-the-middle attacks that can result in data loss, data corruption, and exposure to malware. Additionally, any data written to a file server using an insecure guest logon is potentially accessible to anyone on the network. Microsoft recommends disabling insecure guest logons and configuring file servers to require authenticated access.
+Insecure guest sign ins are used by file servers to allow unauthenticated access to shared folders. While uncommon in an enterprise environment, insecure guest sign ins are frequently used by consumer Network Attached Storage (NAS) appliances acting as file servers. Windows file servers require authentication and don't use insecure guest sign ins by default. Since insecure guest sign ins are unauthenticated, important security features such as SMB Signing and SMB Encryption are disabled. As a result, clients that allow insecure guest sign ins are vulnerable to various man-in-the-middle attacks that can result in data loss, data corruption, and exposure to malware. Additionally, any data written to a file server using an insecure guest sign in is potentially accessible to anyone on the network. Microsoft recommends disabling insecure guest sign ins and configuring file servers to require authenticated access.
 
 <!--/Description-->
 <!--ADMXMapped-->
