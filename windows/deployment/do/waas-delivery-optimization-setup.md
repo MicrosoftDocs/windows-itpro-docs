@@ -121,28 +121,74 @@ To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** 
 | Key | Value |
 | --- | --- |
 | File ID | A GUID that identifies the file being processed |
-| Priority | Priority of the download; values are **foreground** or **background** |
 | FileSize | Size of the file |
+| FileSizeInCache | Size of the file in the cache |
 | TotalBytesDownloaded | The number of bytes from any source downloaded so far |
 | PercentPeerCaching |The percentage of bytes downloaded from peers versus over HTTP |
 | BytesFromPeers | Total bytes downloaded from peer devices (sum of bytes downloaded from LAN, Group, and Internet Peers) |
 | BytesfromHTTP | Total number of bytes received over HTTP |
-| DownloadDuration | Total download time in seconds |
 | Status | Current state of the operation. Possible values are: **Downloading** (download in progress); **Complete** (download completed, but is not uploading yet); **Caching** (download completed successfully and is ready to upload or uploading); **Paused** (download/upload paused by caller) |
+| Priority | Priority of the download; values are **foreground** or **background** |
+| BytesFromCacheServer | Total number of bytes received from cache server |
+| BytesFromLanPeers | Total number of bytes received from peers found on the LAN |
+| BytesFromGroupPeers | Total number of bytes received from peers found in the group |
+| BytesFromInternetPeers | Total number of bytes received from internet peers |
+| BytesToLanPeers | Total number of bytes delivered from peers found on the LAN |
+| BytesToGroupPeers | Total number of bytes delivered from peers found in the group  |
+| BytesToInternetPeers | Total number of bytes delivered from peers found on the LAN  |
+| DownloadDuration | Total download time in seconds |
+| HttpConnectionCount |  |
+| LanConnectionCount |  |
+| GroupConnectionCount |  |
+| InternetConnectionCount |  |
+| DownloadMode |  |
+| SourceURL | Http source for the file |
+| CacheHost | IP address for the cache server |
 | NumPeers | Indicates the total number of peers returned from the service. |
 | PredefinedCallerApplication | Indicates the last caller that initiated a request for the file. |
 | ExpireOn | The target expiration date and time for the file. |
-| Pinned | A yes/no value indicating whether an item has been "pinned" in the cache (see `setDeliveryOptmizationStatus`). |
+| IsPinned | A yes/no value indicating whether an item has been "pinned" in the cache (see `setDeliveryOptmizationStatus`). |
 
 `Get-DeliveryOptimizationPerfSnap` returns a list of key performance data:
 
-- Number of files downloaded
-- Number of files uploaded
-- Total bytes downloaded
-- Total bytes uploaded
-- Average transfer size (download); that is, the number bytes downloaded divided by the number of files
-- Average transfer size (upload); the number of bytes uploaded divided by the number of files
-- Peer efficiency; same as PercentPeerCaching
+| Key | Value |
+| --- | --- |
+| FilesDownloaded | Number of files downloaded |
+| FilesUploaded | Number of files uploaded |
+| Files | |
+| TotalBytesDownloaded | Total bytes downloaded |
+| TotalBytesUploaded | Total bytes uploaded |
+| AverageDownloadSize | Average transfer size (download); that is, the number bytes downloaded divided by the number of files |
+| AverageUploadSize | Average transfer size (upload); the number of bytes uploaded divided by the number of files |
+| DownloadMode | Delivery Optimization Download mode used to deliver file |
+| CacheSizeBytes |  |
+| TotalDiskBytes |  |
+| AvailableDiskBytes |  |
+| CpuUsagePct |  |
+| MemUsageKB |  |
+| NumberOfPeers |  |
+| CacheHostConnections |  |
+| CdnConnections |  |
+| LanConnections |  |
+| LinkLocalConnections |  |
+| GroupConnections |  |
+| InternetConnections |  |
+| DownlinkBps |  |
+| DownlinkUsageBps |  |
+| UplinkBps |  |
+| UplinkUsageBps |  |
+| ForegroundDownloadRatePct |  |
+| BackgroundDownloadRatePct |  |
+| UploadRatePct |  |
+| UplinkUsageBps |  |
+| ForegroundDownloadRatePct |  |
+| BackgroundDownloadRatePct |  |
+| UploadRatePct |  |
+| UploadCount |  |
+| ForegroundDownloadCount |  |
+| ForegroundDownloadsPending |  |
+| BackgroundDownloadCount |  |
+| BackgroundDownloadsPending |  |
 
 Using the `-Verbose` option returns additional information:
 
@@ -188,9 +234,9 @@ With no options, this cmdlet returns these data:
 - total number of files
 - number of foreground files
 - minimum file size for it to be cached
-- number of eligible files
-- number of files with peers
-- number of peering files [how different from the above?]
+- number of eligible (larger than the minimum size for peering) files
+- number of files that found peers
+- number of peering files (the number of files that got at least 1 byte from peers)
 - overall efficiency
 - efficiency in the peered files
 

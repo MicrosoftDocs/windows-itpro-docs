@@ -22,7 +22,7 @@ There are two parts to the Windows management component:
 -   The enrollment client, which enrolls and configures the device to communicate with the enterprise management server.
 -   The management client, which periodically synchronizes with the management server to check for updates and apply the latest policies set by IT.
 
-Third-party MDM servers can manage Windows 10 by using the MDM protocol. The built-in management client is able to communicate with a third-party server proxy that supports the protocols outlined in this document to perform enterprise management tasks. The third-party server will have the same consistent first-party user experience for enrollment, which also provides simplicity for Windows 10 users. MDM servers do not need to create or download a client to manage Windows 10. For details about the MDM protocols, see [\[MS-MDM\]: Mobile Device Management Protocol](/openspecs/windows_protocols/ms-mdm/33769a92-ac31-47ef-ae7b-dc8501f7104f) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](/openspecs/windows_protocols/ms-mde2/4d7eadd5-3951-4f1c-8159-c39e07cbe692).
+Third-party MDM servers can manage Windows 10 by using the MDM protocol. The built-in management client is able to communicate with a third-party server proxy that supports the protocols outlined in this document to perform enterprise management tasks. The third-party server will have the same consistent first-party user experience for enrollment, which also provides simplicity for Windows 10 users. MDM servers don't need to create or download a client to manage Windows 10. For details about the MDM protocols, see [\[MS-MDM\]: Mobile Device Management Protocol](/openspecs/windows_protocols/ms-mdm/33769a92-ac31-47ef-ae7b-dc8501f7104f) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](/openspecs/windows_protocols/ms-mde2/4d7eadd5-3951-4f1c-8159-c39e07cbe692).
 
 ## MDM security baseline
 
@@ -52,7 +52,7 @@ For information about the MDM policies defined in the Intune security baseline, 
 
 ## Learn about migrating to MDM
 
-When an organization wants to move to MDM to manage devices, they should prepare by analyzing their current Group Policy settings to see what they need to transition to MDM management. Microsoft created the [MDM Migration Analysis Tool](https://aka.ms/mmat/) (MMAT) to help. MMAT determines which Group Policies have been set for a target user or computer and then generates a report that lists the level of support for each policy settings in MDM equivalents. For more information, see [MMAT Instructions](https://github.com/WindowsDeviceManagement/MMAT/blob/master/MDM%20Migration%20Analysis%20Tool%20Instructions.pdf).
+When an organization wants to move to MDM to manage devices, they should prepare by analyzing their current Group Policy settings to see what they need to transition to MDM management. Microsoft created the [MDM Migration Analysis Tool](https://aka.ms/mmat/) (MMAT) to help. MMAT determines which Group Policies have been set for a target user or computer and then generates a report that lists the level of support for each policy setting in MDM equivalents. For more information, see [MMAT Instructions](https://github.com/WindowsDeviceManagement/MMAT/blob/master/MDM%20Migration%20Analysis%20Tool%20Instructions.pdf).
 
 
 ## Learn about device enrollment
