@@ -3,13 +3,13 @@ title: XML File Requirements (Windows 10)
 description: Learn about the XML file requirements for creating custom .xml files, like the file must be in UTF-8 and have a unique migration urlid.
 ms.assetid: 4b567b50-c50a-4a4f-8684-151fe3f8275f
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.date: 04/19/2017
 ms.topic: article
 ---

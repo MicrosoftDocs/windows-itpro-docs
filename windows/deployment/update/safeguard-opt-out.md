@@ -3,10 +3,10 @@ title: Opt out of safeguard holds
 description: Steps to install an update even it if has a safeguard hold applied
 ms.prod: w10
 ms.mktglfcycl: manage
-author: jaimeo
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: jaimeo
-manager: laurawi
+ms.author: aaroncz
+manager: dougeby
 ms.topic: article
 ---
 

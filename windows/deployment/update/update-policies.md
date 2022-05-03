@@ -1,13 +1,14 @@
 ---
 title: Policies for update compliance, activity, and user experience
 ms.reviewer: 
-manager: laurawi
 description: Explanation and recommendations for settings
 keywords: updates, servicing, current, deployment, General Availability Channel, feature, quality, rings, insider, tools
 ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro
-author: jaimeo
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.localizationpriority: medium
 ms.audience: itpro
 ms.topic: article

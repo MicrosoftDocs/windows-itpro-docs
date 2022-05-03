@@ -156,7 +156,7 @@ landingContent:
           - text: Microsoft Security Development Lifecycle
             url: threat-protection/msft-security-dev-lifecycle.md
           - text: Microsoft Bug Bounty
-            url: threat-protection/microsoft-bug-bounty-program.md
+            url: /microsoft-365/security/intelligence/microsoft-bug-bounty-program.md
           - text: Common Criteria Certifications
             url: threat-protection/windows-platform-common-criteria.md
           - text: Federal Information Processing Standard (FIPS) 140 Validation

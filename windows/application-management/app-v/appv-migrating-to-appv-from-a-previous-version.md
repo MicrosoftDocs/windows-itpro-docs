@@ -1,15 +1,15 @@
 ---
 title: Migrating to App-V from a Previous Version (Windows 10/11)
 description: Learn how to migrate to Microsoft Application Virtualization (App-V) for Windows 10/11 from a previous version.
-author: greg-lindsay
+author: aczechowski
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ---
 
 
