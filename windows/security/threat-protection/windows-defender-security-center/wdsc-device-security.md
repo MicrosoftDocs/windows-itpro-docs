@@ -78,17 +78,3 @@ If you don't want users to see the recommendation to update TPM firmware, you ca
 
 5. [Deploy the updated GPO as you normally do](/windows/win32/srvnodes/group-policy). 
 
-## Disable Memory integrity switch
-If you don't want users to be able to change the Hypervisor Control Integrity (HVCI), or memory integrity, setting on their computers, you can disable the **Memory integrity** switch.
-> [!IMPORTANT]
-> You must have Windows 10, version 1803 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
-
-1.  On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
-
-2.  In the **Group Policy Management Editor** go to **Computer configuration** and then select **Administrative templates**.
-
-3.  Expand the tree to **Windows components** > **Windows Security** > **Device security**.
-
-4.  Open the **Disable Memory integrity switch** setting and set it to **Enabled**. Select **OK**.
-
-5. [Deploy the updated GPO as you normally do](/windows/win32/srvnodes/group-policy).

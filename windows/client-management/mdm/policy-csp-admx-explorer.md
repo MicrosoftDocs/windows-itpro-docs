@@ -121,7 +121,7 @@ Available in the latest Windows 10 Insider Preview Build. This policy setting co
 
 If you enable this policy setting, the menu bar will be displayed in File Explorer.
 
-If you disable or do not configure this policy setting, the menu bar will not be displayed in File Explorer.  
+If you disable or don't configure this policy setting, the menu bar won't be displayed in File Explorer.  
 
 > [!NOTE]
 > When the menu bar is not displayed, users can access the menu bar by pressing the 'ALT' key.
@@ -163,9 +163,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows administrators who have configured roaming profile in conjunction with Delete Cached Roaming Profile Group Policy setting to ensure that Explorer will not reinitialize default program associations and other settings to default values.
+This policy setting allows administrators who have configured roaming profile in conjunction with Delete Cached Roaming Profile Group Policy setting to ensure that Explorer won't reinitialize default program associations and other settings to default values.
 
-If you enable this policy setting on a machine that does not contain all programs installed in the same manner as it was on the machine on which the user had last logged on, unexpected behavior could occur.
+If you enable this policy setting on a machine that doesn't contain all programs installed in the same manner as it was on the machine on which the user had last logged on, unexpected behavior could occur.
 
 <!--/Description-->
 
@@ -210,10 +210,10 @@ This policy setting allows administrators to prevent users from adding new items
 
 If you enable this policy setting, users will no longer be able to add new items such as files or folders to the root of their Users Files folder in File Explorer.
 
-If you disable or do not configure this policy setting, users will be able to add new items such as files or folders to the root of their Users Files folder in File Explorer.
+If you disable or don't configure this policy setting, users will be able to add new items such as files or folders to the root of their Users Files folder in File Explorer.
 
 > [!NOTE]
-> Enabling this policy setting does not prevent the user from being able to add new items such as files and folders to their actual file system profile folder at %userprofile%.
+> Enabling this policy setting doesn't prevent the user from being able to add new items such as files and folders to their actual file system profile folder at %userprofile%.
 
 <!--/Description-->
 
@@ -254,7 +254,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy is similar to settings directly available to computer users.  Disabling animations can improve usability for users with some visual disabilities as well as improving performance and battery life in some scenarios.
+This policy is similar to settings directly available to computer users.  Disabling animations can improve usability for users with some visual disabilities, and also improve performance and battery life in some scenarios.
 
 <!--/Description-->
 

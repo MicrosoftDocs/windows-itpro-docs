@@ -14,13 +14,10 @@ ms.date: 06/26/2017
 
 # CMPolicyEnterprise CSP
 
-
 The CMPolicyEnterprise configuration service provider is used by the enterprise to define rules that the Connection Manager uses to identify the correct connection for a connection request.
 
 > [!NOTE]
 > This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
-
- 
 
 Each policy entry identifies one or more applications in combination with a host pattern. The policy entry is assigned a list of connection details that Connection Manager uses to satisfy connection requests matching the application and host patterns. CMPolicyEnterprise configuration service provider can have multiple policies
 
@@ -60,9 +57,9 @@ Specifies the mapping policy type.
 
 The following list describes the available mapping policy types:
 
--   Application-based mapping policies are applied to applications. To specify this mapping type, use the value `app`.
+- Application-based mapping policies are applied to applications. To specify this mapping type, use the value `app`.
 
--   Host-based mapping policies are applied to all types of clients requesting connections to specified host(s). To specify this mapping type, use the value `*`.
+- Host-based mapping policies are applied to all types of clients requesting connections to specified host(s). To specify this mapping type, use the value `*`.
 
 <a href="" id="host"></a>**Host**  
 Specifies the name of a host pattern. The host name is matched to the connection request to select the right policy to use.
@@ -126,13 +123,13 @@ For `CMST_CONNECTION_DEVICE_TYPE`, specify the GUID for the desired device type.
 <a href="" id="type"></a>**Type**  
 Specifies the type of connection being referenced. The following list describes the available connection types:
 
--   `CMST_CONNECTION_NAME` – A connection specified by name.
+- `CMST_CONNECTION_NAME` – A connection specified by name.
 
--   `CMST_CONNECTION_TYPE` – Any connection of a specified type.
+- `CMST_CONNECTION_TYPE` – Any connection of a specified type.
 
--   `CMST_CONNECTION_NETWORK_TYPE` – Any connection of a specified device type.
+- `CMST_CONNECTION_NETWORK_TYPE` – Any connection of a specified device type.
 
--   `CMST_CONNECTION_DEVICE_TYPE` – Any connection of the specified network type.
+- `CMST_CONNECTION_DEVICE_TYPE` – Any connection of the specified network type.
 
 ## OMA client provisioning examples
 

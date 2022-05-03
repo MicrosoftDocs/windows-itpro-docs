@@ -36,6 +36,6 @@ CellularSettings
 |1|Don’t roam (or Domestic roaming if applicable)|
 |2|Roam|
 
- ## Related topics
+## Related topics
 
 [Configuration service provider reference](configuration-service-provider-reference.md)

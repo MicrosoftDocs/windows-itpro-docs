@@ -1,14 +1,14 @@
 ---
 title: Windows 11 SE settings list
 description: Windows 11 SE automatically configures settings in the operating system. Learn more about the settings you can control and manage, and the settings you can't change.
-ms.reviewer: 
-manager: dougeby
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
-ms.author: mandia
-author: MandiOhlinger
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.reviewer: 
 ms.localizationpriority: medium
 ms.topic: article
 ---

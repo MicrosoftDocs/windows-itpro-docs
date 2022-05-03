@@ -14,7 +14,7 @@ author: jgeurten
 ms.reviewer: jsuther1974
 ms.author: dansimp
 manager: dansimp
-ms.date: 11/29/2021
+ms.date: 03/22/2022
 ms.technology: windows-sec
 ---
 
@@ -26,7 +26,7 @@ In this article we explain:
 
 1. File Rule Precedence Order
 2. Adding Allow Rules
-3. Singe Policy Considerations
+3. Single Policy Considerations
 4. Multiple Policy Considerations
 5. Best Practices
 6. Tutorial

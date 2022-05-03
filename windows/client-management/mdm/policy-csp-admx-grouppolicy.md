@@ -189,18 +189,18 @@ manager: dansimp
 <!--Description-->
 This policy setting allows user-based policy processing, roaming user profiles, and user object logon scripts for interactive logons across forests.
 
-This policy setting affects all user accounts that interactively log on to a computer in a different forest when a trust across forests or a two-way forest trust exists.
+This policy setting affects all user accounts that interactively sign in to a computer in a different forest when a trust across forests or a two-way forest trust exists.
 
-If you do not configure this policy setting:
+If you don't configure this policy setting:
 
 - No user-based policy settings are applied from the user's forest.
-- Users do not receive their roaming profiles; they receive a local profile on the computer from the local forest. A warning message appears to the user, and an event log message (1529) is posted.
+- Users don't receive their roaming profiles; they receive a local profile on the computer from the local forest. A warning message appears to the user, and an event log message (1529) is posted.
 - Loopback Group Policy processing is applied, using the Group Policy Objects (GPOs) that are scoped to the computer.
 - An event log message (1109) is posted, stating that loopback was invoked in Replace mode.
 
 If you enable this policy setting, the behavior is exactly the same as in Windows 2000: user policy is applied, and a roaming user profile is allowed from the trusted forest.
 
-If you disable this policy setting, the behavior is the same as if it is not configured.
+If you disable this policy setting, the behavior is the same as if it isn't configured.
 
 <!--/Description-->
 
@@ -248,11 +248,11 @@ This policy setting affects all policy settings that use the software installati
 
 This policy setting overrides customized settings that the program implementing the software installation policy set when it was installed.
 
-If you enable this policy setting, you can use the check boxes provided to change the options. If you disable or do not configure this policy setting, it has no effect on the system.
+If you enable this policy setting, you can use the check boxes provided to change the options. If you disable or don't configure this policy setting, it has no effect on the system.
 
 The "Allow processing across a slow network connection" option updates the policies even when the update is being transmitted across a slow network connection, such as a telephone line. Updates across slow connections can cause significant delays.
 
-The "Process even if the Group Policy objects have not changed" option updates and reapplies the policies even if the policies have not changed. Many policy setting implementations specify that they are updated only when changed. However, you might want to update unchanged policy settings, such as reapplying a desired policies in case a user has changed it.
+The "Process even if the Group Policy objects have not changed" option updates and reapplies the policies even if the policies haven't changed. Many policy setting implementations specify that they're updated only when changed. However, you might want to update unchanged policy settings, such as reapplying a desired policy in case a user has changed it.
 
 <!--/Description-->
 
@@ -296,17 +296,17 @@ ADMX Info:
 <!--Description-->
 This policy setting determines when disk quota policies are updated.
 
-This policy setting affects all policies that use the disk quota component of Group Policy, such as those in Computer Configuration\Administrative Templates\System\Disk Quotas.
+This policy setting affects all policies that use the disk quota component of Group Policy, such as those policies in Computer Configuration\Administrative Templates\System\Disk Quotas.
 
 This policy setting overrides customized settings that the program implementing the disk quota policy set when it was installed.
 
-If you enable this policy setting, you can use the check boxes provided to change the options. If you disable or do not configure this policy setting, it has no effect on the system.
+If you enable this policy setting, you can use the check boxes provided to change the options. If you disable or don't configure this policy setting, it has no effect on the system.
 
 The "Allow processing across a slow network connection" option updates the policies even when the update is being transmitted across a slow network connection, such as a telephone line. Updates across slow connections can cause significant delays.
 
-The "Do not apply during periodic background processing" option prevents the system from updating affected policies in the background while the computer is in use. When background updates are disabled, policy changes will not take effect until the next user logon or system restart.
+The "Do not apply during periodic background processing" option prevents the system from updating affected policies in the background while the computer is in use. When background updates are disabled, policy changes won't take effect until the next user sign in or system restart.
 
-The "Process even if the Group Policy objects have not changed" option updates and reapplies the policies even if the policies have not changed. Many policy implementations specify that they are updated only when changed. However, you might want to update unchanged policies, such as reapplying a desired setting in case a user has changed it.
+The "Process even if the Group Policy objects have not changed" option updates and reapplies the policies even if the policies haven't changed. Many policy implementations specify that they're updated only when changed. However, you might want to update unchanged policies, such as reapplying a desired setting in case a user has changed it.
 
 <!--/Description-->
 
@@ -354,13 +354,13 @@ This policy setting affects all policies that use the encryption component of Gr
 
 It overrides customized settings that the program implementing the encryption policy set when it was installed.
 
-If you enable this policy setting, you can use the check boxes provided to change the options. If you disable or do not configure this policy setting, it has no effect on the system.
+If you enable this policy setting, you can use the check boxes provided to change the options. If you disable or don't configure this policy setting, it has no effect on the system.
 
 The "Allow processing across a slow network connection" option updates the policies even when the update is being transmitted across a slow network connection, such as a telephone line. Updates across slow connections can cause significant delays.
 
-The "Do not apply during periodic background processing" option prevents the system from updating affected policies in the background while the computer is in use. When background updates are disabled, policy changes will not take effect until the next user logon or system restart.
+The "Do not apply during periodic background processing" option prevents the system from updating affected policies in the background while the computer is in use. When background updates are disabled, policy changes won't take effect until the next user sign in or system restart.
 
-The "Process even if the Group Policy objects have not changed" option updates and reapplies the policies even if the policies have not changed. Many policy implementations specify that they are updated only when changed. However, you might want to update unchanged policies, such as reapplying a desired setting in case a user has changed it.
+The "Process even if the Group Policy objects have not changed" option updates and reapplies the policies even if the policies haven't changed. Many policy implementations specify that they're updated only when changed. However, you might want to update unchanged policies, such as reapplying a desired setting in case a user has changed it.
 
 <!--/Description-->
 
@@ -404,15 +404,15 @@ ADMX Info:
 <!--Description-->
 This policy setting determines when folder redirection policies are updated.
 
-This policy setting affects all policies that use the folder redirection component of Group Policy, such as those in WindowsSettings\Folder Redirection. You can only set folder redirection policy for Group Policy objects, stored in Active Directory, not for Group Policy objects on the local computer.
+This policy setting affects all policies that use the folder redirection component of Group Policy, such as those policies in WindowsSettings\Folder Redirection. You can only set folder redirection policy for Group Policy objects, stored in Active Directory, not for Group Policy objects on the local computer.
 
 This policy setting overrides customized settings that the program implementing the folder redirection policy setting set when it was installed.
 
-If you enable this policy setting, you can use the check boxes provided to change the options. If you disable or do not configure this policy setting, it has no effect on the system.
+If you enable this policy setting, you can use the check boxes provided to change the options. If you disable or don't configure this policy setting, it has no effect on the system.
 
 The "Allow processing across a slow network connection" option updates the policies even when the update is being transmitted across a slow network connection, such as a telephone line. Updates across slow connections can cause significant delays.
 
-The "Process even if the Group Policy objects have not changed" option updates and reapplies the policies even if the policies have not changed. Many policy implementations specify that they are updated only when changed. However, you might want to update unchanged policies, such as reapplying a desired setting in case a user has changed it.
+The "Process even if the Group Policy objects have not changed" option updates and reapplies the policies even if the policies haven't changed. Many policy implementations specify that they're updated only when changed. However, you might want to update unchanged policies, such as reapplying a desired setting in case a user has changed it.
 
 <!--/Description-->
 
@@ -456,17 +456,17 @@ ADMX Info:
 <!--Description-->
 This policy setting determines when Internet Explorer Maintenance policies are updated.
 
-This policy setting affects all policies that use the Internet Explorer Maintenance component of Group Policy, such as those in Windows Settings\Internet Explorer Maintenance.
+This policy setting affects all policies that use the Internet Explorer Maintenance component of Group Policy, such as those policies in Windows Settings\Internet Explorer Maintenance.
 
 This policy setting overrides customized settings that the program implementing the Internet Explorer Maintenance policy set when it was installed.
 
-If you enable this policy setting, you can use the check boxes provided to change the options. If you disable or do not configure this policy setting, it has no effect on the system.
+If you enable this policy setting, you can use the check boxes provided to change the options. If you disable or don't configure this policy setting, it has no effect on the system.
 
 The "Allow processing across a slow network connection" option updates the policies even when the update is being transmitted across a slow network connection, such as a telephone line. Updates across slow connections can cause significant delays.
 
-The "Do not apply during periodic background processing" option prevents the system from updating affected policies in the background while the computer is in use. When background updates are disabled, policy changes will not take effect until the next user logon or system restart.
+The "Do not apply during periodic background processing" option prevents the system from updating affected policies in the background while the computer is in use. When background updates are disabled, policy changes won't take effect until the next user sign in or system restart.
 
-The "Process even if the Group Policy objects have not changed" option updates and reapplies the policies even if the policies have not changed. Many policy implementations specify that they are updated only when changed. However, you might want to update unchanged policies, such as reapplying a desired policy setting in case a user has changed it.
+The "Process even if the Group Policy objects have not changed" option updates and reapplies the policies even if the policies haven't changed. Many policy implementations specify that they're updated only when changed. However, you might want to update unchanged policies, such as reapplying a desired policy setting in case a user has changed it.
 
 <!--/Description-->
 
@@ -514,13 +514,13 @@ This policy setting affects all policies that use the IP security component of G
 
 This policy setting overrides customized settings that the program implementing the IP security policy set when it was installed.
 
-If you enable this policy setting, you can use the check boxes provided to change the options. If you disable or do not configure this policy setting, it has no effect on the system.
+If you enable this policy setting, you can use the check boxes provided to change the options. If you disable or don't configure this policy setting, it has no effect on the system.
 
 The "Allow processing across a slow network connection" option updates the policies even when the update is being transmitted across a slow network connection, such as a telephone line. Updates across slow connections can cause significant delays.
 
-The "Do not apply during periodic background processing" option prevents the system from updating affected policies in the background while the computer is in use. When background updates are disabled, policy changes will not take effect until the next user logon or system restart.
+The "Do not apply during periodic background processing" option prevents the system from updating affected policies in the background while the computer is in use. When background updates are disabled, policy changes won't take effect until the next user sign in or system restart.
 
-The "Process even if the Group Policy objects have not changed" option updates and reapplies the policies even if the policies have not changed. Many policy implementations specify that they are updated only when changed. However, you might want to update unchanged policies, such as reapplying a desired policy setting in case a user has changed it.
+The "Process even if the Group Policy objects have not changed" option updates and reapplies the policies even if the policies haven't changed. Many policy implementations specify that they're updated only when changed. However, you might want to update unchanged policies, such as reapplying a desired policy setting in case a user has changed it.
 
 <!--/Description-->
 
@@ -566,11 +566,11 @@ This policy setting determines when registry policies are updated.
 
 This policy setting affects all policies in the Administrative Templates folder and any other policies that store values in the registry. It overrides customized settings that the program implementing a registry policy set when it was installed.
 
-If you enable this policy setting, you can use the check boxes provided to change the options. If you disable or do not configure this policy setting, it has no effect on the system.
+If you enable this policy setting, you can use the check boxes provided to change the options. If you disable or don't configure this policy setting, it has no effect on the system.
 
-The "Do not apply during periodic background processing" option prevents the system from updating affected policies in the background while the computer is in use. When background updates are disabled, policy changes will not take effect until the next user logon or system restart.
+The "Do not apply during periodic background processing" option prevents the system from updating affected policies in the background while the computer is in use. When background updates are disabled, policy changes won't take effect until the next user sign in or system restart.
 
-The "Process even if the Group Policy objects have not changed" option updates and reapplies the policies even if the policies have not changed. Many policy implementations specify that they are updated only when changed. However, you might want to update unchanged policies, such as reapplying a desired policy setting in case a user has changed it.
+The "Process even if the Group Policy objects have not changed" option updates and reapplies the policies even if the policies haven't changed. Many policy implementations specify that they're updated only when changed. However, you might want to update unchanged policies, such as reapplying a desired policy setting in case a user has changed it.
 
 <!--/Description-->
 
@@ -614,15 +614,15 @@ ADMX Info:
 <!--Description-->
 This policy setting determines when policies that assign shared scripts are updated.
 
-This policy setting affects all policies that use the scripts component of Group Policy, such as those in WindowsSettings\Scripts. It overrides customized settings that the program implementing the scripts policy set when it was installed.
+This policy setting affects all policies that use the scripts component of Group Policy, such as those policies in WindowsSettings\Scripts. It overrides customized settings that the program implementing the scripts policy set when it was installed.
 
-If you enable this policy setting, you can use the check boxes provided to change the options. If you disable or do not configure this setting, it has no effect on the system.
+If you enable this policy setting, you can use the check boxes provided to change the options. If you disable or don't configure this setting, it has no effect on the system.
 
 The "Allow processing across a slow network connection" option updates the policies even when the update is being transmitted across a slow network connection, such as a telephone line. Updates across slow connections can cause significant delays.
 
-The "Do not apply during periodic background processing" option prevents the system from updating affected policies in the background while the computer is in use. When background updates are disabled, policy changes will not take effect until the next user logon or system restart.
+The "Do not apply during periodic background processing" option prevents the system from updating affected policies in the background while the computer is in use. When background updates are disabled, policy changes won't take effect until the next user sign in or system restart.
 
-The "Process even if the Group Policy objects have not changed" option updates and reapplies the policies even if the policies have not changed. Many policy implementations specify that they are updated only when changed. However, you might want to update unchanged policies, such as reapplying a desired policy setting in case a user has changed it.
+The "Process even if the Group Policy objects have not changed" option updates and reapplies the policies even if the policies haven't changed. Many policy implementations specify that they're updated only when changed. However, you might want to update unchanged policies, such as reapplying a desired policy setting in case a user has changed it.
 
 <!--/Description-->
 
@@ -666,15 +666,15 @@ ADMX Info:
 <!--Description-->
 This policy setting determines when security policies are updated.
 
-This policy setting affects all policies that use the security component of Group Policy, such as those in Windows Settings\Security Settings.
+This policy setting affects all policies that use the security component of Group Policy, such as those policies in Windows Settings\Security Settings.
 
 This policy setting overrides customized settings that the program implementing the security policy set when it was installed.
 
-If you enable this policy setting, you can use the check boxes provided to change the options. If you disable or do not configure this policy setting, it has no effect on the system.
+If you enable this policy setting, you can use the check boxes provided to change the options. If you disable or don't configure this policy setting, it has no effect on the system.
 
-The "Do not apply during periodic background processing" option prevents the system from updating affected policies in the background while the computer is in use. When background updates are disabled, policy changes will not take effect until the next user logon or system restart.
+The "Do not apply during periodic background processing" option prevents the system from updating affected policies in the background while the computer is in use. When background updates are disabled, policy changes won't take effect until the next user sign in or system restart.
 
-The "Process even if the Group Policy objects have not changed" option updates and reapplies the policies even if the policies have not changed. Many policy implementations specify that they be updated only when changed. However, you might want to update unchanged policies, such as reapplying a desired policy setting in case a user has changed it.
+The "Process even if the Group Policy objects have not changed" option updates and reapplies the policies even if the policies haven't changed. Many policy implementations specify that they be updated only when changed. However, you might want to update unchanged policies, such as reapplying a desired policy setting in case a user has changed it.
 
 <!--/Description-->
 
@@ -718,19 +718,19 @@ ADMX Info:
 <!--Description-->
 This policy setting determines when policies that assign wired network settings are updated.
 
-This policy setting affects all policies that use the wired network component of Group Policy, such as those in Windows Settings\Wired Network Policies.
+This policy setting affects all policies that use the wired network component of Group Policy, such as those policies in Windows Settings\Wired Network Policies.
 
 It overrides customized settings that the program implementing the wired network set when it was installed.
 
 If you enable this policy, you can use the check boxes provided to change the options.
 
-If you disable this setting or do not configure it, it has no effect on the system.
+If you disable this setting or don't configure it, it has no effect on the system.
 
 The "Allow processing across a slow network connection" option updates the policies even when the update is being transmitted across a slow network connection, such as a telephone line. Updates across slow connections can cause significant delays.
 
-The "Do not apply during periodic background processing" option prevents the system from updating affected policies in the background while the computer is in use. When background updates are disabled, policy changes will not take effect until the next user logon or system restart.
+The "Do not apply during periodic background processing" option prevents the system from updating affected policies in the background while the computer is in use. When background updates are disabled, policy changes won't take effect until the next user sign in or system restart.
 
-The "Process even if the Group Policy objects have not changed" option updates and reapplies the policies even if the policies have not changed. Many policy implementations specify that they are updated only when changed. However, you might want to update unchanged policies, such as reapplying a desired setting in case a user has changed it.
+The "Process even if the Group Policy objects have not changed" option updates and reapplies the policies even if the policies haven't changed. Many policy implementations specify that they're updated only when changed. However, you might want to update unchanged policies, such as reapplying a desired setting in case a user has changed it.
 
 <!--/Description-->
 
@@ -774,19 +774,19 @@ ADMX Info:
 <!--Description-->
 This policy setting determines when policies that assign wireless network settings are updated.
 
-This policy setting affects all policies that use the wireless network component of Group Policy, such as those in WindowsSettings\Wireless Network Policies.
+This policy setting affects all policies that use the wireless network component of Group Policy, such as those policies in WindowsSettings\Wireless Network Policies.
 
 It overrides customized settings that the program implementing the wireless network set when it was installed.
 
 If you enable this policy, you can use the check boxes provided to change the options.
 
-If you disable this setting or do not configure it, it has no effect on the system.
+If you disable this setting or don't configure it, it has no effect on the system.
 
 The "Allow processing across a slow network connection" option updates the policies even when the update is being transmitted across a slow network connection, such as a telephone line. Updates across slow connections can cause significant delays.
 
-The "Do not apply during periodic background processing" option prevents the system from updating affected policies in the background while the computer is in use. When background updates are disabled, policy changes will not take effect until the next user logon or system restart.
+The "Do not apply during periodic background processing" option prevents the system from updating affected policies in the background while the computer is in use. When background updates are disabled, policy changes won't take effect until the next user sign in or system restart.
 
-The "Process even if the Group Policy objects have not changed" option updates and reapplies the policies even if the policies have not changed. Many policy implementations specify that they are updated only when changed. However, you might want to update unchanged policies, such as reapplying a desired setting in case a user has changed it.
+The "Process even if the Group Policy objects have not changed" option updates and reapplies the policies even if the policies haven't changed. Many policy implementations specify that they're updated only when changed. However, you might want to update unchanged policies, such as reapplying a desired setting in case a user has changed it.
 
 <!--/Description-->
 
@@ -828,11 +828,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting specifies how long Group Policy should wait for workplace connectivity notifications during startup policy processing. If the startup policy processing is synchronous, the computer is blocked until workplace connectivity is available or the wait time is reached. If the startup policy processing is asynchronous, the computer is not blocked and policy processing will occur in the background. In either case, configuring this policy setting overrides any system-computed wait times.
+This policy setting specifies how long Group Policy should wait for workplace connectivity notifications during startup policy processing. If the startup policy processing is synchronous, the computer is blocked until workplace connectivity is available or the wait time is reached. If the startup policy processing is asynchronous, the computer isn't blocked and policy processing will occur in the background. In either case, configuring this policy setting overrides any system-computed wait times.
 
 If you enable this policy setting, Group Policy uses this administratively configured maximum wait time for workplace connectivity, and overrides any default or system-computed wait time.
 
-If you disable or do not configure this policy setting, Group Policy will use the default wait time of 60 seconds on computers running Windows operating systems greater than Windows 7 configured for workplace connectivity.
+If you disable or don't configure this policy setting, Group Policy will use the default wait time of 60 seconds on computers running Windows operating systems greater than Windows 7 configured for workplace connectivity.
 
 <!--/Description-->
 
@@ -878,12 +878,12 @@ This policy setting controls the ability of users to view their Resultant Set of
 
 By default, interactively logged on users can view their own Resultant Set of Policy (RSoP) data.
 
-If you enable this policy setting, interactive users cannot generate RSoP data.
+If you enable this policy setting, interactive users can't generate RSoP data.
 
-If you disable or do not configure this policy setting, interactive users can generate RSoP.
+If you disable or don't configure this policy setting, interactive users can generate RSoP.
 
 > [!NOTE]
-> This policy setting does not affect administrators. If you enable or disable this policy setting, by default administrators can view RSoP data.
+> This policy setting doesn't affect administrators. If you enable or disable this policy setting, by default administrators can view RSoP data.
 >
 > To view RSoP data on a client computer, use the RSoP snap-in for the Microsoft Management Console. You can launch the RSoP snap-in from the command line by typing RSOP.msc.
 >
@@ -933,12 +933,12 @@ This policy setting controls the ability of users to view their Resultant Set of
 
 By default, interactively logged on users can view their own Resultant Set of Policy (RSoP) data.
 
-If you enable this policy setting, interactive users cannot generate RSoP data.
+If you enable this policy setting, interactive users can't generate RSoP data.
 
-If you disable or do not configure this policy setting, interactive users can generate RSoP
+If you disable or don't configure this policy setting, interactive users can generate RSoP
 
 > [!NOTE]
-> This policy setting does not affect administrators. If you enable or disable this policy setting, by default administrators can view RSoP data.
+> This policy setting doesn't affect administrators. If you enable or disable this policy setting, by default administrators can view RSoP data.
 >
 > To view RSoP data on a client computer, use the RSoP snap-in for the Microsoft Management Console. You can launch the RSoP snap-in from the command line by typing RSOP.msc.
 >
@@ -1028,11 +1028,11 @@ ADMX Info:
 <!--Description-->
 Prevents the system from updating the Administrative Templates source files automatically when you open the Group Policy Object Editor.
 
-Administrators might want to use this if they are concerned about the amount of space used on the system volume of a DC.
+Administrators might want to use this option if they're concerned about the amount of space used on the system volume of a DC.
 
 By default, when you start the Group Policy Object Editor, a timestamp comparison is performed on the source files in the local %SYSTEMROOT%\inf directory and the source files stored in the GPO.
 
-If the local files are newer, they are copied into the GPO.
+If the local files are newer, they're copied into the GPO.
 
 Changing the status of this setting to Enabled will keep any source files from copying to the GPO.
 
@@ -1085,9 +1085,9 @@ ADMX Info:
 <!--Description-->
 This policy setting prevents Group Policy from being updated while the computer is in use. This policy setting applies to Group Policy for computers, users, and domain controllers.
 
-If you enable this policy setting, the system waits until the current user logs off the system before updating the computer and user settings.
+If you enable this policy setting, the system waits until the current user signs out the system before updating the computer and user settings.
 
-If you disable or do not configure this policy setting, updates can be applied while users are working. The frequency of updates is determined by the "Set Group Policy refresh interval for computers" and "Set Group Policy refresh interval for users" policy settings.
+If you disable or don't configure this policy setting, updates can be applied while users are working. The frequency of updates is determined by the "Set Group Policy refresh interval for computers" and "Set Group Policy refresh interval for users" policy settings.
 
 > [!NOTE]
 > If you make changes to this policy setting, you must restart your computer for it to take effect.
@@ -1136,12 +1136,12 @@ This policy setting prevents Local Group Policy Objects (Local GPOs) from being 
 
 By default, the policy settings in Local GPOs are applied before any domain-based GPO policy settings. These policy settings can apply to both users and the local computer. You can disable the processing and application of all Local GPOs to ensure that only domain-based GPOs are applied.
 
-If you enable this policy setting, the system does not process and apply any Local GPOs.
+If you enable this policy setting, the system doesn't process and apply any Local GPOs.
 
-If you disable or do not configure this policy setting, Local GPOs continue to be applied.
+If you disable or don't configure this policy setting, Local GPOs continue to be applied.
 
 > [!NOTE]
-> For computers joined to a domain, it is strongly recommended that you only configure this policy setting  in domain-based GPOs. This policy setting will be ignored on computers that are joined to a workgroup.
+> For computers joined to a domain, it's strongly recommended that you only configure this policy setting  in domain-based GPOs. This policy setting will be ignored on computers that are joined to a workgroup.
 
 <!--/Description-->
 
@@ -1185,9 +1185,9 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to control a user's ability to invoke a computer policy refresh.
 
-If you enable this policy setting, users are not able to invoke a refresh of computer policy. Computer policy will still be applied at startup or when an official policy refresh occurs.
+If you enable this policy setting, users aren't able to invoke a refresh of computer policy. Computer policy will still be applied at startup or when an official policy refresh occurs.
 
-If you disable or do not configure this policy setting, the default behavior applies. By default, computer policy is applied when the computer starts up. It also applies at a specified refresh interval or when manually invoked by the user.
+If you disable or don't configure this policy setting, the default behavior applies. By default, computer policy is applied when the computer starts up. It also applies at a specified refresh interval or when manually invoked by the user.
 
 > [!NOTE]
 > This policy setting applies only to non-administrators. Administrators can still invoke a refresh of computer policy at any time, no matter how this policy setting is configured.
@@ -1241,9 +1241,9 @@ This policy setting determines whether the Windows device is allowed to particip
 
 If you enable this policy setting, the Windows device is discoverable by other Windows devices that belong to the same user, and can participate in cross-device experiences.
 
-If you disable this policy setting, the Windows device is not discoverable by other devices, and cannot participate in cross-device experiences.
+If you disable this policy setting, the Windows device isn't discoverable by other devices, and can't participate in cross-device experiences.
 
-If you do not configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
+If you don't configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
 
 <!--/Description-->
 
@@ -1287,13 +1287,13 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to configure Group Policy caching behavior.
 
-If you enable or do not configure this policy setting, Group Policy caches policy information after every background processing session. This cache saves applicable GPOs and the settings contained within them. When Group Policy runs in synchronous foreground mode, it refers to this cache, which enables it to run faster. When the cache is read, Group Policy attempts to contact a logon domain controller to determine the link speed. When Group Policy runs in background mode or asynchronous foreground mode, it continues to download the latest version of the policy information, and it uses a bandwidth estimate to determine slow link thresholds. (See the “Configure Group Policy Slow Link Detection” policy setting to configure asynchronous foreground behavior.)
+If you enable or don't configure this policy setting, Group Policy caches policy information after every background processing session. This cache saves applicable GPOs and the settings contained within them. When Group Policy runs in synchronous foreground mode, it refers to this cache, which enables it to run faster. When the cache is read, Group Policy attempts to contact a logon domain controller to determine the link speed. When Group Policy runs in background mode or asynchronous foreground mode, it continues to download the latest version of the policy information, and it uses a bandwidth estimate to determine slow link thresholds. (See the “Configure Group Policy Slow Link Detection” policy setting to configure asynchronous foreground behavior.)
 
 The slow link value that is defined in this policy setting determines how long Group Policy will wait for a response from the domain controller before reporting the link speed as slow. The default is 500 milliseconds.
 
-The timeout value that is defined in this policy setting determines how long Group Policy will wait for a response from the domain controller before determining that there is no network connectivity. This stops the current Group Policy processing. Group Policy will run in the background the next time a connection to a domain controller is established. Setting this value too high might result in longer waits for the user at boot or logon. The default is 5000 milliseconds.
+The timeout value that is defined in this policy setting determines how long Group Policy will wait for a response from the domain controller before determining that there's no network connectivity. This waiting period stops the current Group Policy processing. Group Policy will run in the background the next time a connection to a domain controller is established. Setting this value too high might result in longer waits for the user at boot or sign in. The default is 5000 milliseconds.
 
-If you disable this policy setting, the Group Policy client will not cache applicable GPOs or settings that are contained within the GPOs. When Group Policy runs synchronously, it downloads the latest version of the policy from the network and uses bandwidth estimates to determine slow link thresholds. (See the “Configure Group Policy Slow Link Detection” policy setting to configure asynchronous foreground behavior.)
+If you disable this policy setting, the Group Policy client won't cache applicable GPOs or settings that are contained within the GPOs. When Group Policy runs synchronously, it downloads the latest version of the policy from the network and uses bandwidth estimates to determine slow link thresholds. (See the “Configure Group Policy Slow Link Detection” policy setting to configure asynchronous foreground behavior.)
 
 <!--/Description-->
 
@@ -1341,9 +1341,9 @@ If you enable this policy setting, Group Policy caches policy information after 
 
 The slow link value that is defined in this policy setting determines how long Group Policy will wait for a response from the domain controller before reporting the link speed as slow. The default is 500 milliseconds.
 
-The timeout value that is defined in this policy setting determines how long Group Policy will wait for a response from the domain controller before determining that there is no network connectivity. This stops the current Group Policy processing. Group Policy will run in the background the next time a connection to a domain controller is established. Setting this value too high might result in longer waits for the user at boot or logon. The default is 5000 milliseconds.
+The timeout value that is defined in this policy setting determines how long Group Policy will wait for a response from the domain controller before determining that there's no network connectivity. This waiting period stops the current Group Policy processing. Group Policy will run in the background the next time a connection to a domain controller is established. Setting this value too high might result in longer waits for the user at boot or sign in. The default is 5000 milliseconds.
 
-If you disable or do not configure this policy setting, the Group Policy client will not cache applicable GPOs or settings that are contained within the GPOs. When Group Policy runs synchronously, it downloads the latest version of the policy from the network and uses bandwidth estimates to determine slow link thresholds. (See the “Configure Group Policy Slow Link Detection” policy setting to configure asynchronous foreground behavior.)
+If you disable or don't configure this policy setting, the Group Policy client won't cache applicable GPOs or settings that are contained within the GPOs. When Group Policy runs synchronously, it downloads the latest version of the policy from the network and uses bandwidth estimates to determine slow link thresholds. (See the “Configure Group Policy Slow Link Detection” policy setting to configure asynchronous foreground behavior.)
 
 <!--/Description-->
 
@@ -1385,13 +1385,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy allows IT admins to turn off the ability to Link a Phone with a PC to continue reading, emailing and other tasks that requires linking between Phone and PC.
+This policy allows IT admins to turn off the ability to Link a Phone with a PC to continue reading, emailing and other tasks that require linking between Phone and PC.
 
 If you enable this policy setting, the Windows device will be able to enroll in Phone-PC linking functionality and participate in Continue on PC experiences.
 
-If you disable this policy setting, the Windows device is not allowed to be linked to Phones, will remove itself from the device list of any linked Phones, and cannot participate in Continue on PC experiences.
+If you disable this policy setting, the Windows device isn't allowed to be linked to Phones, will remove itself from the device list of any linked Phones, and can't participate in Continue on PC experiences.
 
-If you do not configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
+If you don't configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
 
 <!--/Description-->
 
@@ -1435,11 +1435,11 @@ ADMX Info:
 <!--Description-->
 This policy setting prevents administrators from viewing or using Group Policy preferences.
 
-A Group Policy administration (.adm) file can contain both true settings and preferences. True settings, which are fully supported by Group Policy, must use registry entries in the Software\Policies or Software\Microsoft\Windows\CurrentVersion\Policies registry subkeys. Preferences, which are not fully supported, use registry entries in other subkeys.
+A Group Policy administration (.adm) file can contain both true settings and preferences. True settings, which are fully supported by Group Policy, must use registry entries in the Software\Policies or Software\Microsoft\Windows\CurrentVersion\Policies registry subkeys. Preferences, which aren't fully supported, use registry entries in other subkeys.
 
-If you enable this policy setting, the "Show Policies Only" command is turned on, and administrators cannot turn it off. As a result, Group Policy Object Editor displays only true settings; preferences do not appear.
+If you enable this policy setting, the "Show Policies Only" command is turned on, and administrators can't turn it off. As a result, Group Policy Object Editor displays only true settings; preferences don't appear.
 
-If you disable or do not configure this policy setting, the "Show Policies Only" command is turned on by default, but administrators can view preferences by turning off the "Show Policies Only" command.
+If you disable or don't configure this policy setting, the "Show Policies Only" command is turned on by default, but administrators can view preferences by turning off the "Show Policies Only" command.
 
 > [!NOTE]
 > To find the "Show Policies Only" command, in Group Policy Object Editor, click the Administrative Templates folder (either one), right-click the same folder, and then point to "View."
@@ -1488,7 +1488,7 @@ ADMX Info:
 <!--Description-->
 This security feature provides a global setting to prevent programs from loading untrusted fonts. Untrusted fonts are any font installed outside of the %windir%\Fonts directory. 
 
-This feature can be configured to be in 3 modes: On, Off, and Audit. By default, it is Off and no fonts are blocked. If you aren't quite ready to deploy this feature into your organization, you can run it in Audit mode to see if blocking untrusted fonts causes any usability or compatibility issues.
+This feature can be configured to be in three modes: On, Off, and Audit. By default, it's Off and no fonts are blocked. If you aren't ready to deploy this feature into your organization, you can run it in Audit mode to see if blocking untrusted fonts causes any usability or compatibility issues.
 
 <!--/Description-->
 
@@ -1532,7 +1532,7 @@ ADMX Info:
 <!--Description-->
 This policy setting determines which domain controller the Group Policy Object Editor snap-in uses.
 
-If you enable this setting, you can which domain controller is used according to these options:
+If you enable this setting, you can know which domain controller is used according to these options:
 
 "Use the Primary Domain Controller" indicates that the Group Policy Object Editor snap-in reads and writes changes to the domain controller designated as the PDC Operations Master for the domain.
 
@@ -1540,7 +1540,7 @@ If you enable this setting, you can which domain controller is used according to
 
 "Use any available domain controller" indicates that the Group Policy Object Editor snap-in can read and write changes to any available domain controller.
 
-If you disable this setting or do not configure it, the Group Policy Object Editor snap-in uses the domain controller designated as the PDC Operations Master for the domain.
+If you disable this setting or don't configure it, the Group Policy Object Editor snap-in uses the domain controller designated as the PDC Operations Master for the domain.
 
 > [!NOTE]
 > To change the PDC Operations Master for a domain, in Active Directory Users and Computers, right-click a domain, and then click "Operations Masters."
@@ -1589,18 +1589,18 @@ This policy setting defines a slow connection for purposes of applying and updat
 
 If the rate at which data is transferred from the domain controller providing a policy update to the computers in this group is slower than the rate specified by this setting, the system considers the connection to be slow.
 
-The system's response to a slow policy connection varies among policies. The program implementing the policy can specify the response to a slow link. Also, the policy processing settings in this folder lets you override the programs' specified responses to slow links.
+The system's response to a slow policy connection varies among policies. The program implementing the policy can specify the response to a slow link. Also, the policy processing settings in this folder let you override the programs' specified responses to slow links.
 
 If you enable this setting, you can, in the "Connection speed" box, type a decimal number between 0 and 4,294,967,200, indicating a transfer rate in kilobits per second. Any connection slower than this rate is considered to be slow. If you type 0, all connections are considered to be fast.
 
-If you disable this setting or do not configure it, the system uses the default value of 500 kilobits per second.
+If you disable this setting or don't configure it, the system uses the default value of 500 kilobits per second.
 
 This setting appears in the Computer Configuration and User Configuration folders. The setting in Computer Configuration defines a slow link for policies in the Computer Configuration folder. The setting in User Configuration defines a slow link for settings in the User Configuration folder.
 
 Also, see the "Do not detect slow network connections" and related policies in Computer Configuration\Administrative Templates\System\User Profile.
 
 > [!NOTE]
-> If the profile server has IP connectivity, the connection speed setting is used. If the profile server does not have IP connectivity, the SMB timing is used.
+> If the profile server has IP connectivity, the connection speed setting is used. If the profile server doesn't have IP connectivity, the SMB timing is used.
 
 <!--/Description-->
 
@@ -1646,18 +1646,18 @@ This policy setting defines a slow connection for purposes of applying and updat
 
 If the rate at which data is transferred from the domain controller providing a policy update to the computers in this group is slower than the rate specified by this setting, the system considers the connection to be slow.
 
-The system's response to a slow policy connection varies among policies. The program implementing the policy can specify the response to a slow link. Also, the policy processing settings in this folder lets you override the programs' specified responses to slow links.
+The system's response to a slow policy connection varies among policies. The program implementing the policy can specify the response to a slow link. Also, the policy processing settings in this folder let you override the programs' specified responses to slow links.
 
 If you enable this setting, you can, in the "Connection speed" box, type a decimal number between 0 and 4,294,967,200, indicating a transfer rate in kilobits per second. Any connection slower than this rate is considered to be slow. If you type 0, all connections are considered to be fast.
 
-If you disable this setting or do not configure it, the system uses the default value of 500 kilobits per second.
+If you disable this setting or don't configure it, the system uses the default value of 500 kilobits per second.
 
 This setting appears in the Computer Configuration and User Configuration folders. The setting in Computer Configuration defines a slow link for policies in the Computer Configuration folder. The setting in User Configuration defines a slow link for settings in the User Configuration folder.
 
 Also, see the "Do not detect slow network connections" and related policies in Computer Configuration\Administrative Templates\System\User Profile. 
 
 > [!NOTE]
-> If the profile server has IP connectivity, the connection speed setting is used. If the profile server does not have IP connectivity, the SMB timing is used.
+> If the profile server has IP connectivity, the connection speed setting is used. If the profile server doesn't have IP connectivity, the SMB timing is used.
 
 <!--/Description-->
 
@@ -1705,7 +1705,7 @@ In addition to background updates, Group Policy for the computer is always updat
 
 By default, computer Group Policy is updated in the background every 90 minutes, with a random offset of 0 to 30 minutes.
 
-If you enable this setting, you can specify an update rate from 0 to 64,800 minutes (45 days). If you select 0 minutes, the computer tries to update Group Policy every 7 seconds. However, because updates might interfere with users' work and increase network traffic, very short update intervals are not appropriate for most installations.
+If you enable this setting, you can specify an update rate from 0 to 64,800 minutes (45 days). If you select 0 minutes, the computer tries to update Group Policy every 7 seconds. However, because updates might interfere with users' work and increase network traffic, very short update intervals aren't appropriate for most installations.
 
 If you disable this setting, Group Policy is updated every 90 minutes (the default). To specify that Group Policy should never be updated while the computer is in use, select the "Turn off background refresh of Group Policy" policy.
 
@@ -1713,7 +1713,7 @@ The Set Group Policy refresh interval for computers policy also lets you specify
 
 This setting establishes the update rate for computer Group Policy. To set an update rate for user policies, use the "Set Group Policy refresh interval for users" setting (located in User Configuration\Administrative Templates\System\Group Policy).
 
-This setting is only used when the "Turn off background refresh of Group Policy" setting is not enabled.
+This setting is only used when the "Turn off background refresh of Group Policy" setting isn't enabled.
 
 > [!NOTE]
 > Consider notifying users that their policy is updated periodically so that they recognize the signs of a policy update. When Group Policy is updated, the Windows desktop is refreshed; it flickers briefly and closes open menus. Also, restrictions imposed by Group Policies, such as those that limit the programs users can run, might interfere with tasks in progress.
@@ -1758,13 +1758,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting specifies how often Group Policy is updated on domain controllers while they are running (in the background). The updates specified by this setting occur in addition to updates performed when the system starts.
+This policy setting specifies how often Group Policy is updated on domain controllers while they're running (in the background). The updates specified by this setting occur in addition to updates performed when the system starts.
 
 By default, Group Policy on the domain controllers is updated every five minutes.
 
-If you enable this setting, you can specify an update rate from 0 to 64,800 minutes (45 days). If you select 0 minutes, the domain controller tries to update Group Policy every 7 seconds. However, because updates might interfere with users' work and increase network traffic, very short update intervals are not appropriate for most installations.
+If you enable this setting, you can specify an update rate from 0 to 64,800 minutes (45 days). If you select 0 minutes, the domain controller tries to update Group Policy every 7 seconds. However, because updates might interfere with users' work and increase network traffic, very short update intervals aren't appropriate for most installations.
 
-If you disable or do not configure this setting, the domain controller updates Group Policy every 5 minutes (the default). To specify that Group Policies for users should never be updated while the computer is in use, select the "Turn off background refresh of Group Policy" setting.
+If you disable or don't configure this setting, the domain controller updates Group Policy every 5 minutes (the default). To specify that Group Policies for users should never be updated while the computer is in use, select the "Turn off background refresh of Group Policy" setting.
 
 This setting also lets you specify how much the actual update interval varies. To prevent domain controllers with the same update interval from requesting updates simultaneously, the system varies the update interval for each controller by a random number of minutes. The number you type in the random time box sets the upper limit for the range of variance. For example, if you type 30 minutes, the system selects a variance of 0 to 30 minutes. Typing a large number establishes a broad range and makes it less likely that update requests overlap. However, updates might be delayed significantly.
 
@@ -1813,11 +1813,11 @@ ADMX Info:
 <!--Description-->
 This policy setting specifies how often Group Policy for users is updated while the computer is in use (in the background). This setting specifies a background update rate only for the Group Policies in the User Configuration folder.
 
-In addition to background updates, Group Policy for users is always updated when users log on.
+In addition to background updates, Group Policy for users is always updated when users sign in.
 
 By default, user Group Policy is updated in the background every 90 minutes, with a random offset of 0 to 30 minutes.
 
-If you enable this setting, you can specify an update rate from 0 to 64,800 minutes (45 days). If you select 0 minutes, the computer tries to update user Group Policy every 7 seconds. However, because updates might interfere with users' work and increase network traffic, very short update intervals are not appropriate for most installations.
+If you enable this setting, you can specify an update rate from 0 to 64,800 minutes (45 days). If you select 0 minutes, the computer tries to update user Group Policy every 7 seconds. However, because updates might interfere with users' work and increase network traffic, very short update intervals aren't appropriate for most installations.
 
 If you disable this setting, user Group Policy is updated every 90 minutes (the default). To specify that Group Policy for users should never be updated while the computer is in use, select the "Turn off background refresh of Group Policy" setting.
 
@@ -1874,15 +1874,15 @@ ADMX Info:
 <!--Description-->
 Enter “0” to disable Logon Script Delay.
 
-This policy setting allows you to configure how long the Group Policy client waits after logon before running scripts.
+This policy setting allows you to configure how long the Group Policy client waits after a sign in before running scripts.
 
-By default, the Group Policy client waits five minutes before running logon scripts. This helps create a responsive desktop environment by preventing disk contention.
+By default, the Group Policy client waits 5 minutes before running logon scripts. This 5-minute wait helps create a responsive desktop environment by preventing disk contention.
 
 If you enable this policy setting, Group Policy will wait for the specified amount of time before running logon scripts.
 
-If you disable this policy setting, Group Policy will run scripts immediately after logon.
+If you disable this policy setting, Group Policy will run scripts immediately after a sign in.
 
-If you do not configure this policy setting, Group Policy will wait five minutes before running logon scripts.
+If you don't configure this policy setting, Group Policy will wait five minutes before running logon scripts.
 
 <!--/Description-->
 
@@ -1976,7 +1976,7 @@ This policy setting allows you to create new Group Policy object links in the di
 
 If you enable this setting, you can create all new Group Policy object links in the disabled state by default. After you configure and test the new object links by using a policy compliant Group Policy management tool such as  Active Directory Users and Computers or Active Directory Sites and Services, you can enable the object links for use on the system.
 
-If you disable this setting or do not configure it, new Group Policy object links are created in the enabled state. If you do not want them to be effective until they are configured and tested, you must disable the object link.
+If you disable this setting or don't configure it, new Group Policy object links are created in the enabled state. If you don't want them to be effective until they're configured and tested, you must disable the object link.
 
 <!--/Description-->
 
@@ -2020,9 +2020,9 @@ ADMX Info:
 <!--Description-->
 This policy setting lets you always use local ADM files for the Group Policy snap-in.
 
-By default, when you edit a Group Policy Object (GPO) using the Group Policy Object Editor snap-in, the ADM files are loaded from that GPO into the Group Policy Object Editor snap-in. This allows you to use the same version of the ADM files that were used to create the GPO while editing this GPO.
+By default, when you edit a Group Policy Object (GPO) using the Group Policy Object Editor snap-in, the ADM files are loaded from that GPO into the Group Policy Object Editor snap-in. This edit-option allows you to use the same version of the ADM files that were used to create the GPO while editing this GPO.
 
-This leads to the following behavior:
+This edit-option leads to the following behavior:
 
 - If you originally created the GPO with, for example, an English system, the GPO contains English ADM files.
 
@@ -2032,14 +2032,14 @@ You can change this behavior by using this setting.
 
 If you enable this setting, the Group Policy Object Editor snap-in always uses local ADM files in your %windir%\inf directory when editing GPOs.
 
-This leads to the following behavior:
+This pattern leads to the following behavior:
 
 - If you had originally created the GPO with an English system, and then you edit the GPO with a Japanese system, the Group Policy Object Editor snap-in uses the local Japanese ADM files, and you see the text in Japanese under Administrative Templates.
 
-If you disable or do not configure this setting, the Group Policy Object Editor snap-in always loads all ADM files from the actual GPO.
+If you disable or don't configure this setting, the Group Policy Object Editor snap-in always loads all ADM files from the actual GPO.
 
 > [!NOTE]
-> If the ADMs that you require are not all available locally in your %windir%\inf directory, you might not be able to see all the settings that have been configured in the GPO that you are editing.
+> If the ADMs that you require aren't all available locally in your %windir%\inf directory, you might not be able to see all the settings that have been configured in the GPO that you are editing.
 
 <!--/Description-->
 
@@ -2082,7 +2082,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This security feature provides a means to override individual process MitigationOptions settings. This can be used to enforce a number of security policies specific to applications. The application name is specified as the Value name, including extension. The Value is specified as a bit field with a series of flags in particular positions. Bits can be set to either 0 (setting is forced off), 1 (setting is forced on), or ? (setting retains its existing value prior to GPO evaluation). The recognized bit locations are:
+This security feature provides a means to override individual process MitigationOptions settings. This security feature can be used to enforce many security policies specific to applications. The application name is specified as the Value name, including extension. The Value is specified as a bit field with a series of flags in particular positions. Bits can be set to either 0 (setting is forced off), 1 (setting is forced on), or ? (setting retains its existing value prior to GPO evaluation). The recognized bit locations are:
 
 PROCESS_CREATION_MITIGATION_POLICY_DEP_ENABLE (0x00000001)
 Enables data execution prevention (DEP) for the child process
@@ -2094,7 +2094,7 @@ PROCESS_CREATION_MITIGATION_POLICY_SEHOP_ENABLE (0x00000004)
 Enables structured exception handler overwrite protection (SEHOP) for the child process. SEHOP blocks exploits that use the structured exception handler (SEH) overwrite technique.
 
 PROCESS_CREATION_MITIGATION_POLICY_FORCE_RELOCATE_IMAGES_ALWAYS_ON (0x00000100)
-The force Address Space Layout Randomization (ASLR) policy forcibly rebases images that are not dynamic base compatible by acting as though an image base collision happened at load time. If relocations are required, images that do not have a base relocation section will not be loaded.
+The force Address Space Layout Randomization (ASLR) policy forcibly rebases images that aren't dynamic base compatible by acting as though an image base collision happened at load time. If relocations are required, images that don't have a base relocation section won't be loaded.
 
 PROCESS_CREATION_MITIGATION_POLICY_BOTTOM_UP_ASLR_ALWAYS_ON (0x00010000)
 PROCESS_CREATION_MITIGATION_POLICY_BOTTOM_UP_ASLR_ALWAYS_OFF (0x00020000)
@@ -2151,7 +2151,7 @@ RSoP logs information on Group Policy settings that have been applied to the cli
 
 If you enable this setting, RSoP logging is turned off.
 
-If you disable or do not configure this setting, RSoP logging is turned on. By default, RSoP logging is always on.
+If you disable or don't configure this setting, RSoP logging is turned on. By default, RSoP logging is always on.
 
 > [!NOTE]
 > To view the RSoP information logged on a client computer, you can use the RSoP snap-in in the Microsoft Management Console (MMC).
@@ -2245,9 +2245,9 @@ When Group Policy detects the bandwidth speed of a Direct Access connection, the
 > [!NOTE]
 > When Group Policy detects a slow network connection, Group Policy will only process those client side extensions configured for processing across a slow link (slow network connection).
 
-If you enable this policy, when Group Policy cannot determine the bandwidth speed across Direct Access, Group Policy will evaluate the network connection as a fast link and process all client side extensions.
+If you enable this policy, when Group Policy can't determine the bandwidth speed across Direct Access, Group Policy will evaluate the network connection as a fast link and process all client side extensions.
 
-If you disable this setting or do not configure it, Group Policy will evaluate the network connection as a slow link and process only those client side extensions configured to process over a slow link.
+If you disable this setting or don't configure it, Group Policy will evaluate the network connection as a slow link and process only those client side extensions configured to process over a slow link.
 
 <!--/Description-->
 
@@ -2289,13 +2289,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy directs Group Policy processing to skip processing any client side extension that requires synchronous processing (that is, whether computers wait for the network to be fully initialized during computer startup and user logon) when a slow network connection is detected.
+This policy directs Group Policy processing to skip processing any client side extension that requires synchronous processing (that is, whether computers wait for the network to be fully initialized during computer startup and user sign in) when a slow network connection is detected.
 
 If you enable this policy setting, when a slow network connection is detected, Group Policy processing will always run in an asynchronous manner.
-Client computers will not wait for the network to be fully initialized at startup and logon. Existing users will be logged on using cached credentials,
-which will result in shorter logon times. Group Policy will be applied in the background after the network becomes available.
-Note that because this is a background refresh, extensions requiring synchronous processing such as Software Installation, Folder Redirection
-and Drive Maps preference extension will not be applied.
+Client computers won't wait for the network to be fully initialized at startup and sign in. Existing users will be signed in using cached credentials, which will result in shorter sign-in times. Group Policy will be applied in the background after the network becomes available.
+Because this policy setting enables a background refresh, extensions requiring synchronous processing such as Software Installation, Folder Redirection and Drive Maps preference extension won't be applied.
 
 > [!NOTE]
 > There are two conditions that will cause Group Policy to be processed synchronously even if this policy setting is enabled:
@@ -2303,7 +2301,7 @@ and Drive Maps preference extension will not be applied.
 > - 1 - At the first computer startup after the client computer has joined the domain.
 > - 2 - If the policy setting "Always wait for the network at computer startup and logon" is enabled.
 
-If you disable or do not configure this policy setting, detecting a slow network connection will not affect whether Group Policy processing will be synchronous or asynchronous.
+If you disable or don't configure this policy setting, detecting a slow network connection won't affect whether Group Policy processing will be synchronous or asynchronous.
 
 <!--/Description-->
 
@@ -2345,11 +2343,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting specifies how long Group Policy should wait for network availability notifications during startup policy processing. If the startup policy processing is synchronous, the computer is blocked until the network is available or the default wait time is reached. If the startup policy processing is asynchronous, the computer is not blocked and policy processing will occur in the background. In either case, configuring this policy setting overrides any system-computed wait times.
+This policy setting specifies how long Group Policy should wait for network availability notifications during startup policy processing. If the startup policy processing is synchronous, the computer is blocked until the network is available or the default wait time is reached. If the startup policy processing is asynchronous, the computer isn't blocked and policy processing will occur in the background. In either case, configuring this policy setting overrides any system-computed wait times.
 
 If you enable this policy setting, Group Policy will use this administratively configured maximum wait time and override any default or system-computed wait time.
 
-If you disable or do not configure this policy setting, Group Policy will use the default wait time of 30 seconds on computers running Windows Vista operating system.
+If you disable or don't configure this policy setting, Group Policy will use the default wait time of 30 seconds on computers running Windows Vista operating system.
 
 <!--/Description-->
 
@@ -2391,9 +2389,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting directs the system to apply the set of Group Policy objects for the computer to any user who logs on to a computer affected by this setting. It is intended for special-use computers, such as those in public places, laboratories, and classrooms, where you must modify the user setting based on the computer that is being used.
+This policy setting directs the system to apply the set of Group Policy objects for the computer to any user who signs in to a computer affected by this setting. It's intended for special-use computers, such as those in public places, laboratories, and classrooms, where you must modify the user setting based on the computer that is being used.
 
-By default, the user's Group Policy Objects determine which user settings apply. If this setting is enabled, then, when a user logs on to this computer, the computer's Group Policy Objects determine which set of Group Policy Objects applies.
+By default, the user's Group Policy Objects determine which user settings apply. If this setting is enabled, then, when a user signs in to this computer, the computer's Group Policy Objects determine which set of Group Policy Objects applies.
 
 If you enable this setting, you can select one of the following modes from the Mode box:
 
@@ -2401,7 +2399,7 @@ If you enable this setting, you can select one of the following modes from the M
 
 "Merge" indicates that the user settings defined in the computer's Group Policy Objects and the user settings normally applied to the user are combined. If the settings conflict, the user settings in the computer's Group Policy Objects take precedence over the user's normal settings.
 
-If you disable this setting or do not configure it, the user's Group Policy Objects determines which user settings apply.
+If you disable this setting or don't configure it, the user's Group Policy Objects determines which user settings apply.
 
 > [!NOTE]
 > This setting is effective only when both the computer account and the user account are in at least Windows 2000 domains.

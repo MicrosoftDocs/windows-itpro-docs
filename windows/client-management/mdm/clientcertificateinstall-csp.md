@@ -16,7 +16,7 @@ ms.date: 07/30/2021
 
 The ClientCertificateInstall configuration service provider enables the enterprise to install client certificates. A client certificate has a unique ID, which is the *\[UniqueID\]* for this configuration. Each client certificate must have different UniqueIDs for the SCEP enrollment request.
 
-For PFX certificate installation and SCEP installation, the SyncML commands must be wrapped in atomic commands to ensure enrollment execution isn't triggered until all settings are configured. The Enroll command must be the last item in the atomic block.
+For PFX certificate installation and SCEP installation, the SyncML commands must be wrapped in atomic commands to ensure that enrollment execution isn't triggered until all settings are configured. The Enroll command must be the last item in the atomic block.
 
 > [!Note]
 > Currently in Windows 10, version 1511, when using the ClientCertificateInstall to install certificates to the device store and the user store and both certificates are sent to the device in the same MDM payload, the certificate intended for the device store will also get installed in the user store. This may cause issues with Wi-Fi or VPN when choosing the correct certificate to establish a connection. We are working to fix this issue.
@@ -24,6 +24,7 @@ For PFX certificate installation and SCEP installation, the SyncML commands must
 You can only set PFXKeyExportable to true if KeyLocation=3. For any other KeyLocation value, the CSP will fail.
 
 The following example shows the ClientCertificateInstall configuration service provider in tree format.
+
 ```
 ./Vendor/MSFT
 ClientCertificateInstall
@@ -65,6 +66,7 @@ ClientCertificateInstall
 ------------ErrorCode
 ------------RespondentServerUrl
 ```
+
 <a href="" id="device-or-user"></a>**Device or User**  
 For device certificates, use <strong>./Device/Vendor/MSFT</strong> path and for user certificates use <strong>./User/Vendor/MSFT</strong> path.
 
@@ -202,7 +204,7 @@ Data type is string.
 Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-ekumapping"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/EKUMapping**  
-Required. Specifies extended key usages. Subject to SCEP server configuration. The list of OIDs are separated by a plus <strong>+</strong>. For example, <em>OID1</em>+<em>OID2</em>+<em>OID3</em>.
+Required. Specifies extended key usages. Subject to SCEP server configuration. The list of OIDs is separated by a plus <strong>+</strong>. For example, <em>OID1</em>+<em>OID2</em>+<em>OID3</em>.
 
 Data type is string.
 
@@ -330,7 +332,10 @@ Valid values are:
 Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-validperiodunits"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/ValidPeriodUnits**  
-Optional. Specifies the desired number of units used in the validity period. This number is subject to SCEP server configuration. Default value is 0. The unit type (days, months, or years) is defined in the ValidPeriod node. Note the valid period specified by MDM will overwrite the valid period specified in the certificate template. For example, if ValidPeriod is Days and ValidPeriodUnits is 30, it means the total valid duration is 30 days.
+Optional. Specifies the desired number of units used in the validity period. This number is subject to SCEP server configuration. Default value is 0. The unit type (days, months, or years) is defined in the ValidPeriod node. 
+
+> [!Note]
+> The valid period specified by MDM will overwrite the valid period specified in the certificate template. For example, if ValidPeriod is Days and ValidPeriodUnits is 30, it means the total valid duration is 30 days.
 
 Data type is string.
 

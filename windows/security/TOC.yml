@@ -205,61 +205,6 @@
         href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/exploit-protection
       - name: Microsoft Defender for Endpoint
         href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint
-      - name: Security intelligence
-        href: threat-protection/intelligence/index.md
-        items: 
-        - name: Understand malware & other threats
-          href: threat-protection/intelligence/understanding-malware.md
-          items: 
-            - name: Prevent malware infection
-              href: threat-protection/intelligence/prevent-malware-infection.md
-            - name: Malware names
-              href: threat-protection/intelligence/malware-naming.md
-            - name: Coin miners
-              href: threat-protection/intelligence/coinminer-malware.md
-            - name: Exploits and exploit kits
-              href: threat-protection/intelligence/exploits-malware.md
-            - name: Fileless threats
-              href: threat-protection/intelligence/fileless-threats.md
-            - name: Macro malware
-              href: threat-protection/intelligence/macro-malware.md
-            - name: Phishing
-              href: threat-protection/intelligence/phishing.md
-            - name: Ransomware
-              href: /security/compass/human-operated-ransomware
-            - name: Rootkits
-              href: threat-protection/intelligence/rootkits-malware.md
-            - name: Supply chain attacks
-              href: threat-protection/intelligence/supply-chain-malware.md
-            - name: Tech support scams
-              href: threat-protection/intelligence/support-scams.md
-            - name: Trojans
-              href: threat-protection/intelligence/trojans-malware.md
-            - name: Unwanted software
-              href: threat-protection/intelligence/unwanted-software.md
-            - name: Worms
-              href: threat-protection/intelligence/worms-malware.md
-        - name: How Microsoft identifies malware and PUA
-          href: threat-protection/intelligence/criteria.md
-        - name: Submit files for analysis
-          href: threat-protection/intelligence/submission-guide.md
-        - name: Safety Scanner download
-          href: threat-protection/intelligence/safety-scanner-download.md
-        - name: Industry collaboration programs
-          href: threat-protection/intelligence/cybersecurity-industry-partners.md
-          items: 
-            - name: Virus information alliance
-              href: threat-protection/intelligence/virus-information-alliance-criteria.md
-            - name: Microsoft virus initiative
-              href: threat-protection/intelligence/virus-initiative-criteria.md
-            - name: Coordinated malware eradication
-              href: threat-protection/intelligence/coordinated-malware-eradication.md
-        - name: Information for developers
-          items: 
-            - name: Software developer FAQ
-              href: threat-protection/intelligence/developer-faq.yml
-            - name: Software developer resources
-              href: threat-protection/intelligence/developer-resources.md
    - name: More Windows security
      items: 
       - name: Override Process Mitigation Options to help enforce app-related security policies
@@ -460,8 +405,6 @@
       href: security-foundations.md
     - name: Microsoft Security Development Lifecycle
       href: threat-protection/msft-security-dev-lifecycle.md
-    - name: Microsoft Bug Bounty Program
-      href: threat-protection/microsoft-bug-bounty-program.md
     - name: FIPS 140-2 Validation
       href: threat-protection/fips-140-validation.md
     - name: Common Criteria Certifications

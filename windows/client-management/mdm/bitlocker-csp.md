@@ -21,8 +21,7 @@ The BitLocker configuration service provider (CSP) is used by the enterprise to 
 > 
 > You must send all the settings together in a single SyncML to be effective.
 
-A `Get` operation on any of the settings, except for `RequireDeviceEncryption` and `RequireStorageCardEncryption`, returns
-the setting configured by the admin.
+A `Get` operation on any of the settings, except for `RequireDeviceEncryption` and `RequireStorageCardEncryption`, returns the setting configured by the admin.
 
 For RequireDeviceEncryption and RequireStorageCardEncryption, the Get operation returns the actual status of enforcement to the admin, such as if Trusted Platform Module (TPM) protection is required and if encryption is required. And if the device has BitLocker enabled but with password protector, the status reported is 0. A Get operation on RequireDeviceEncryption doesn't verify that a minimum PIN length is enforced (SystemDrivesMinimumPINLength).
 
@@ -60,13 +59,16 @@ BitLocker
 --------RotateRecoveryPasswordsRequestID
 ```
 
+> [!TIP]
+> Some of the policies here are ADMX-backed policies. For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For more information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
+
 <a href="" id="--device-vendor-msft-bitlocker"></a>**./Device/Vendor/MSFT/BitLocker**  
 Defines the root node for the BitLocker configuration service provider.
 <!--Policy-->
 
 <a href="" id="requiredeviceencryption"></a>**RequireDeviceEncryption**  
 <!--Description-->
-Allows the administrator to require encryption to be turned on by using BitLocker\Device Encryption.
+Allows the administrator to require encryption that needs to be turned on by using BitLocker\Device Encryption.
 <!--/Description-->
 <!--SupportedSKUs-->
 
@@ -82,7 +84,7 @@ Allows the administrator to require encryption to be turned on by using BitLocke
 Data type is integer. Sample value for this node to enable this policy: 1.
 Supported operations are Add, Get, Replace, and Delete.
 
-Status of OS volumes and encryptable fixed data volumes are checked with a Get operation. Typically, BitLocker/Device Encryption will follow whichever value [EncryptionMethodByDriveType](#encryptionmethodbydrivetype) policy is set to. However, this policy setting will be ignored for self-encrypting fixed drives and self-encrypting OS drives.
+The status of OS volumes and encryptable fixed data volumes is checked with a Get operation. Typically, BitLocker/Device Encryption will follow whichever value [EncryptionMethodByDriveType](#encryptionmethodbydrivetype) policy is set to. However, this policy setting will be ignored for self-encrypting fixed drives and self-encrypting OS drives.
 
 Encryptable fixed data volumes are treated similarly to OS volumes. However, fixed data volumes must meet other criteria to be considered encryptable:
 
@@ -95,8 +97,8 @@ Encryptable fixed data volumes are treated similarly to OS volumes. However, fix
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default)—Disable. If the policy setting isn't set or is set to 0, the device's enforcement status isn't checked. The policy doesn't enforce encryption and it doesn't decrypt encrypted volumes.
--   1–Enable. The device's enforcement status is checked. Setting this policy to 1 triggers encryption of all drives (silently or non-silently based on [AllowWarningForOtherDiskEncryption](#allowwarningforotherdiskencryption) policy).  
+- 0 (default): Disable. If the policy setting isn't set or is set to 0, the device's enforcement status isn't checked. The policy doesn't enforce encryption and it doesn't decrypt encrypted volumes.
+- 1: Enable. The device's enforcement status is checked. Setting this policy to 1 triggers encryption of all drives (silently or non-silently based on [AllowWarningForOtherDiskEncryption](#allowwarningforotherdiskencryption) policy).  
 <!--/SupportedValues-->
 If you want to disable this policy, use the following SyncML:
 
@@ -141,20 +143,17 @@ Allows you to set the default encryption method for each of the different drive 
 <!--/SupportedValues-->
 <!--ADMXMapped-->
 ADMX Info:
-<ul>
-<li>GP Friendly name: <em>Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later)</em></li>
-<li>GP name: <em>EncryptionMethodWithXts_Name</em></li>
-<li>GP path: <em>Windows Components/BitLocker Drive Encryption</em></li>
-<li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
-</ul>
-<!--/ADMXMapped-->
 
-> [!TIP]
-> For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For more information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
+- GP Friendly name: *Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later)*
+- GP name: *EncryptionMethodWithXts_Name*
+- GP path: *Windows Components/BitLocker Drive Encryption*
+- GP ADMX file name: *VolumeEncryption.admx*
+
+<!--/ADMXMapped-->
 
 This setting allows you to configure the algorithm and cipher strength used by BitLocker Drive Encryption. This setting is applied when you turn on BitLocker. Changing the encryption method has no effect if the drive is already encrypted, or if encryption is in progress.
 
-If you enable this setting you'll be able to configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive will be used in other devices that aren't running Windows 10, version 1511.
+If you enable this setting, you'll be able to configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive will be used in other devices that aren't running Windows 10, version 1511.
 
 If you disable or don't configure this policy setting, BitLocker will use the default encryption method of XTS-AES 128-bit or the encryption method specified by any setup script.
 
@@ -164,9 +163,9 @@ If you disable or don't configure this policy setting, BitLocker will use the de
  <enabled/><data id="EncryptionMethodWithXtsOsDropDown_Name" value="xx"/><data id="EncryptionMethodWithXtsFdvDropDown_Name" value="xx"/><data id="EncryptionMethodWithXtsRdvDropDown_Name" value="xx"/>
 ```
 
-EncryptionMethodWithXtsOsDropDown_Name = Select the encryption method for operating system drives
-EncryptionMethodWithXtsFdvDropDown_Name = Select the encryption method for fixed data drives.
-EncryptionMethodWithXtsRdvDropDown_Name = Select the encryption method for removable data drives.
+- EncryptionMethodWithXtsOsDropDown_Name = Select the encryption method for operating system drives.
+- EncryptionMethodWithXtsFdvDropDown_Name = Select the encryption method for fixed data drives.
+- EncryptionMethodWithXtsRdvDropDown_Name = Select the encryption method for removable data drives.
 <!--SupportedValues-->
  The possible values for 'xx' are:
 
@@ -195,7 +194,9 @@ EncryptionMethodWithXtsRdvDropDown_Name = Select the encryption method for remov
 </Replace>
 ```
 
-Data type is string. Supported operations are Add, Get, Replace, and Delete.
+Data type is string.
+
+Supported operations are Add, Get, Replace, and Delete.
 <!--/Policy-->
 <!--Policy-->
 <a href="" id="identificationfield"></a>**IdentificationField**  
@@ -215,18 +216,15 @@ Allows you to associate unique organizational identifiers to a new drive that is
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
-<ul>
-<li>GP Friendly name: <em>Provide the unique identifiers for your organization </em></li>
-<li>GP name: <em>IdentificationField_Name</em></li>
-<li>GP path: <em>Windows Components/BitLocker Drive Encryption</em></li>
-<li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
-</ul>
+
+- GP Friendly name: *Provide the unique identifiers for your organization*
+- GP name: *IdentificationField_Name*
+- GP path: *Windows Components/BitLocker Drive Encryption*
+- GP ADMX file name: *VolumeEncryption.admx*
+
 <!--/ADMXMapped-->
 
-> [!TIP]
-> For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For more information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
-
-This setting is used to establish an identifier that is applied to all drives that are encrypted in your organization.
+This setting is used to establish an identifier that is applied to all encrypted drives in your organization.
 
 Identifiers are stored as the identification field and the allowed identification field. You can configure the following identification fields on existing drives by using the [Manage-bde](/windows-server/administration/windows-commands/manage-bde):
 
@@ -247,8 +245,8 @@ Sample value for this node to enable this policy is:
 
 Data ID:
 
-- IdentificationField: BitLocker identification field
-- SecIdentificationField: Allowed BitLocker identification field
+- IdentificationField: This is a BitLocker identification field.
+- SecIdentificationField: This is an allowed BitLocker identification field.
 
 If you disable or don't configure this setting, the identification field isn't required.
 
@@ -275,16 +273,13 @@ Allows users on devices that are compliant with InstantGo or the Microsoft Hardw
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
-<ul>
-<li>GP Friendly name: <em>Allow devices compliant with InstantGo or HSTI to opt out of pre-boot PIN</em></li>
-<li>GP name: <em>EnablePreBootPinExceptionOnDECapableDevice_Name</em></li>
-<li>GP path: <em>Windows Components/BitLocker Drive Encryption/Operating System Drives</em></li>
-<li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
-</ul>
-<!--/ADMXMapped-->
 
-> [!TIP]
-> For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For more information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
+- GP Friendly name: *Allow devices compliant with InstantGo or HSTI to opt out of pre-boot PIN*
+- GP name: *EnablePreBootPinExceptionOnDECapableDevice_Name*
+- GP path: *Windows Components/BitLocker Drive Encryption/Operating System Drives*
+- GP ADMX file name: *VolumeEncryption.admx*
+
+<!--/ADMXMapped-->
 
 This setting allows users on devices that are compliant with InstantGo or Microsoft Hardware Security Test Interface (HSTI) to not have a PIN for pre-boot authentication. This setting overrides the "Require startup PIN with TPM" option of the "Require additional authentication at startup" policy on compliant hardware.
 
@@ -317,16 +312,13 @@ Allows users to configure whether or not enhanced startup PINs are used with Bit
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
-<ul>
-<li>GP Friendly name: <em>Allow enhanced PINs for startup</em></li>
-<li>GP name: <em>EnhancedPIN_Name</em></li>
-<li>GP path: <em>Windows Components/BitLocker Drive Encryption/Operating System Drives</em></li>
-<li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
-</ul>
-<!--/ADMXMapped-->
 
-> [!TIP]
-> For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For more information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
+- GP Friendly name: *Allow enhanced PINs for startup*
+- GP name: *EnhancedPIN_Name*
+- GP path: *Windows Components/BitLocker Drive Encryption/Operating System Drives*
+- GP ADMX file name: *VolumeEncryption.admx*
+
+<!--/ADMXMapped-->
 
 This setting permits the use of enhanced PINs when you use an unlock method that includes a PIN. Enhanced startup PINs permit the usage of characters (including uppercase and lowercase letters, symbols, numbers, and spaces). This policy setting is applied when you turn on BitLocker.
 
@@ -362,16 +354,13 @@ Allows you to configure whether standard users are allowed to change BitLocker P
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
-<ul>
-<li>GP Friendly name: <em>Disallow standard users from changing the PIN or password</em></li>
-<li>GP name: <em>DisallowStandardUsersCanChangePIN_Name</em></li>
-<li>GP path: <em>Windows Components/BitLocker Drive Encryption/Operating System Drives</em></li>
-<li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
-</ul>
-<!--/ADMXMapped-->
 
-> [!TIP]
-> For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For more information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
+- GP Friendly name: *Disallow standard users from changing the PIN or password*
+- GP name: *DisallowStandardUsersCanChangePIN_Name*
+- GP path: *Windows Components/BitLocker Drive Encryption/Operating System Drives*
+- GP ADMX file name: *VolumeEncryption.admx*
+
+<!--/ADMXMapped-->
 
 This policy setting allows you to configure whether or not standard users are allowed to change the PIN or password, that is used to protect the operating system drive.
 
@@ -407,16 +396,13 @@ Allows users to enable authentication options that require user input from the p
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
-<ul>
-<li>GP Friendly name: <em>Enable use of BitLocker authentication requiring preboot keyboard input on slates</em></li>
-<li>GP name: <em>EnablePrebootInputProtectorsOnSlates_Name</em></li>
-<li>GP path: <em>Windows Components/BitLocker Drive Encryption/Operating System Drives</em></li>
-<li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
-</ul>
-<!--/ADMXMapped-->
 
-> [!TIP]
-> For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For more information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
+- GP Friendly name: *Enable use of BitLocker authentication requiring preboot keyboard input on slates*
+- GP name: *EnablePrebootInputProtectorsOnSlates_Name*
+- GP path: *Windows Components/BitLocker Drive Encryption/Operating System Drives*
+- GP ADMX file name: *VolumeEncryption.admx*
+
+<!--/ADMXMapped-->
 
 The Windows touch keyboard (such as used by tablets) isn't available in the preboot environment where BitLocker requires additional information, such as a PIN or password.
 
@@ -429,6 +415,7 @@ Sample value for this node to enable this policy is:
 ```
 
 If this policy is disabled, the Windows Recovery Environment must be enabled on tablets to support entering the BitLocker recovery password.
+
 When the Windows Recovery Environment isn't enabled and this policy isn't enabled, you can't turn on BitLocker on a device that uses the Windows touch keyboard.
 
 >[!Note]
@@ -458,18 +445,17 @@ Allows you to configure the encryption type that is used by BitLocker.
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
-<ul>
-<li>GP Friendly name: <em>Enforce drive encryption type on operating system drives</em></li>
-<li>GP name: <em>OSEncryptionType_Name</em></li>
-<li>GP path: <em>Windows Components/BitLocker Drive Encryption/Operating System Drives</em></li>
-<li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
-</ul>
+
+- GP Friendly name: *Enforce drive encryption type on operating system drives*
+- GP name: *OSEncryptionType_Name*
+- GP path: *Windows Components/BitLocker Drive Encryption/Operating System Drives*
+- GP ADMX file name: *VolumeEncryption.admx*
+
 <!--/ADMXMapped-->
 
-> [!TIP]
-> For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For more information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
+This policy setting is applied when you turn on BitLocker. Changing the encryption type will have no effect if the drive is already encrypted or if encryption is in progress.
 
-This policy setting is applied when you turn on BitLocker. Changing the encryption type has no effect if the drive is already encrypted or if encryption is in progress. Choose Full encryption to require that the entire drive be encrypted when BitLocker is turned on. Choose Used Space Only encryption to require that only the portion of the drive that is used to store data is encrypted when BitLocker is turned on.
+Choose Full encryption to require that the entire drive be encrypted when BitLocker is turned on. Choose Used Space Only encryption to require that only the portion of the drive that is used to store data is encrypted when BitLocker is turned on.
 
 If you enable this policy setting, the encryption type that BitLocker uses to encrypt drives is defined by this policy, and the encryption type option isn't presented in the BitLocker Setup Wizard.
 
@@ -483,7 +469,7 @@ If this policy is disabled, the BitLocker Setup Wizard asks the user to select t
 
 >[!Note]
 >This policy is ignored when shrinking or expanding a volume, and the BitLocker driver uses the current encryption method. 
->For example, when a drive that is using Used Space Only encryption is expanded, the new free space isn't wiped as it would be for a drive that uses Full encryption. The user could wipe the free space on a Used Space Only drive by using the following command: manage-bde -w. If the volume is shrunk, no action is taken for the new free space.
+>For example, when a drive that's using Used Space Only encryption is expanded, the new free space isn't wiped as it would be for a drive that uses Full encryption. The user could wipe the free space on a Used Space Only drive by using the following command: `manage-bde -w`. If the volume is shrunk, no action is taken for the new free space.
 
 For more information about the tool to manage BitLocker, see [Manage-bde](/windows-server/administration/windows-commands/manage-bde).
 
@@ -506,23 +492,20 @@ This setting is a direct mapping to the BitLocker Group Policy "Require addition
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
-<ul>
-<li>GP Friendly name: <em>Require more authentication at startup</em></li>
-<li>GP name: <em>ConfigureAdvancedStartup_Name</em></li>
-<li>GP path: <em>Windows Components/BitLocker Drive Encryption/Operating System Drives</em></li>
-<li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
-</ul>
-<!--/ADMXMapped-->
 
-> [!TIP]
-> For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For more information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
+- GP Friendly name: *Require additional authentication at startup*
+- GP name: *ConfigureAdvancedStartup_Name*
+- GP path: *Windows Components/BitLocker Drive Encryption/Operating System Drives*
+- GP ADMX file name: *VolumeEncryption.admx*
+
+<!--/ADMXMapped-->
 
 This setting allows you to configure whether BitLocker requires more authentication each time the computer starts and whether you're using BitLocker with or without a TPM. This setting is applied when you turn on BitLocker.
 
 > [!NOTE]
-> Only one of the additional authentication options can be required at startup, otherwise an error occurs.
+> Only one of the additional authentication options is required at startup, otherwise an error occurs.
 
-If you want to use BitLocker on a computer without a TPM, set the "ConfigureNonTPMStartupKeyUsage_Name" data. In this mode either a password or a USB drive is required for start-up. When a startup key is being used, the key information used to encrypt the drive is stored on the USB drive, creating a USB key. When the USB key is inserted the access to the drive is authenticated and the drive is accessible. If the USB key is lost or unavailable or if you've forgotten the password, then you'll need to use one of the BitLocker recovery options to access the drive.
+If you want to use BitLocker on a computer without a TPM, set the "ConfigureNonTPMStartupKeyUsage_Name" data. In this mode either a password or a USB drive is required for start-up. When using a startup key, the key information used to encrypt the drive is stored on the USB drive, creating a USB key. When the USB key is inserted, the access to the drive is authenticated and the drive is accessible. If the USB key is lost or unavailable, or if you have forgotten the password, then you'll need to use one of the BitLocker recovery options to access the drive.
 
 On a computer with a compatible TPM, four types of authentication methods can be used at startup to provide added protection for encrypted data. When the computer starts, it can use only the TPM for authentication, or it can also require insertion of a USB flash drive containing a startup key, the entry of a 6-digit to 20-digit personal identification number (PIN), or both.
 
@@ -537,35 +520,34 @@ If you disable or don't configure this setting, users can configure only basic o
 > If you want to require the use of a startup PIN and a USB flash drive, you must configure BitLocker settings using the command-line tool manage-bde instead of the BitLocker Drive Encryption setup wizard.
 
 > [!NOTE] 
-> Devices that pass Hardware Security Testability Specification (HSTI) validation or Modern 
-> Standby devices won't be able to configure a Startup PIN using this CSP. Users are required to manually configure the PIN.
+> Devices that pass Hardware Security Testability Specification (HSTI) validation or Modern Standby devices won't be able to configure a Startup PIN using this CSP. Users are required to manually configure the PIN.
 
 Sample value for this node to enable this policy is:
 
 ```xml
 <enabled/><data id="ConfigureNonTPMStartupKeyUsage_Name" value="xx"/><data id="ConfigureTPMStartupKeyUsageDropDown_Name" value="yy"/><data id="ConfigurePINUsageDropDown_Name" value="yy"/><data id="ConfigureTPMPINKeyUsageDropDown_Name" value="yy"/><data id="ConfigureTPMUsageDropDown_Name" value="yy"/>
 ```
+
 Data ID:
-<ul>
-<li>ConfigureNonTPMStartupKeyUsage_Name = Allow BitLocker without a compatible TPM (requires a password or a startup key on a USB flash drive).</li>
-<li>ConfigureTPMStartupKeyUsageDropDown_Name = (for computer with TPM) Configure TPM startup key.</li>
-<li>ConfigurePINUsageDropDown_Name = (for computer with TPM) Configure TPM startup PIN.</li>
-<li>ConfigureTPMPINKeyUsageDropDown_Name = (for computer with TPM) Configure TPM startup key and PIN.</li>
-<li>ConfigureTPMUsageDropDown_Name = (for computer with TPM) Configure TPM startup.</li>
-</ul>
+
+- ConfigureNonTPMStartupKeyUsage_Name = Allow BitLocker without a compatible TPM (requires a password or a startup key on a USB flash drive).
+- ConfigureTPMStartupKeyUsageDropDown_Name = (for computer with TPM) Configure TPM startup key.
+- ConfigurePINUsageDropDown_Name = (for computer with TPM) Configure TPM startup PIN.
+- ConfigureTPMPINKeyUsageDropDown_Name = (for computer with TPM) Configure TPM startup key and PIN.
+- ConfigureTPMUsageDropDown_Name = (for computer with TPM) Configure TPM startup.
+
 <!--SupportedValues-->
 The possible values for 'xx' are:
-<ul>
-<li>true = Explicitly allow</li>
-<li>false = Policy not set</li>
-</ul>
+
+- true = Explicitly allow
+- false = Policy not set
 
 The possible values for 'yy' are:
-<ul>
-<li>2 = Optional</li>
-<li>1 = Required</li>
-<li>0 = Disallowed</li>
-</ul>
+
+- 2 = Optional
+- 1 = Required
+- 0 = Disallowed
+
 <!--/SupportedValues-->
 Disabling the policy will let the system choose the default behaviors. If you want to disable this policy, use the following SyncML:
 
@@ -583,8 +565,12 @@ Disabling the policy will let the system choose the default behaviors. If you wa
    </Item>
  </Replace>
 ```
-Data type is string. Supported operations are Add, Get, Replace, and Delete.
+
+Data type is string. 
+
+Supported operations are Add, Get, Replace, and Delete.
 <!--/Policy-->
+
 <!--Policy-->
 <a href="" id="systemdrivesminimumpinlength"></a>**SystemDrivesMinimumPINLength**  
 <!--Description-->
@@ -603,16 +589,13 @@ This setting is a direct mapping to the BitLocker Group Policy "Configure minimu
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
-<ul>
-<li>GP Friendly name:<em>Configure minimum PIN length for startup</em></li>
-<li>GP name: <em>MinimumPINLength_Name</em></li>
-<li>GP path: <em>Windows Components/BitLocker Drive Encryption/Operating System Drives</em></li>
-<li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
-</ul>
-<!--/ADMXMapped-->
 
-> [!TIP]
-> For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For more information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
+- GP Friendly name: *Configure minimum PIN length for startup*
+- GP name: *MinimumPINLength_Name*
+- GP path: *Windows Components/BitLocker Drive Encryption/Operating System Drives*
+- GP ADMX file name: *VolumeEncryption.admx*
+
+<!--/ADMXMapped-->
 
 This setting allows you to configure a minimum length for a Trusted Platform Module (TPM) startup PIN. This setting is applied when you turn on BitLocker. The startup PIN must have a minimum length of six digits and can have a maximum length of 20 digits.
 
@@ -621,7 +604,7 @@ This setting allows you to configure a minimum length for a Trusted Platform Mod
 >
 >In TPM 2.0 if minimum PIN length is set below 6 digits, Windows will attempt to update the TPM lockout period to be greater than the default when a PIN is changed. If successful, Windows will only reset the TPM lockout period back to default if the TPM is reset. This doesn't apply to TPM 1.2.
 
-If you enable this setting, you can require a minimum number of digits to be used when setting the startup PIN.
+If you enable this setting, you will require a minimum number of digits to set the startup PIN.
 
 If you disable or don't configure this setting, users can configure a startup PIN of any length between 6 and 20 digits.
 
@@ -648,8 +631,11 @@ Disabling the policy will let the system choose the default behaviors. If you wa
  </Replace>
 ```
 
-Data type is string. Supported operations are Add, Get, Replace, and Delete.
+Data type is string. 
+
+Supported operations are Add, Get, Replace, and Delete.
 <!--/Policy-->
+
 <!--Policy-->
 <a href="" id="systemdrivesrecoverymessage"></a>**SystemDrivesRecoveryMessage** 
 <!--Description-->
@@ -669,19 +655,15 @@ This setting is a direct mapping to the BitLocker Group Policy "Configure pre-bo
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
-<ul>
-<li>GP Friendly name: <em>Configure pre-boot recovery message and URL</em></li>
-<li>GP name: <em>PrebootRecoveryInfo_Name</em></li>
-<li>GP path: <em>Windows Components/BitLocker Drive Encryption/Operating System Drives</em></li>
-<li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
-</ul>
+
+- GP Friendly name: *Configure pre-boot recovery message and URL*
+- GP name: *PrebootRecoveryInfo_Name*
+- GP path: *Windows Components/BitLocker Drive Encryption/Operating System Drives*
+- GP ADMX file name: *VolumeEncryption.admx*
+
 <!--/ADMXMapped-->
 
-> [!TIP]
-> For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For more information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
-
 This setting lets you configure the entire recovery message or replace the existing URL that is displayed on the pre-boot key recovery screen when the OS drive is locked.
-
 
 If you set the value to "1" (Use default recovery message and URL), the default BitLocker recovery message and URL will be displayed in the pre-boot key recovery screen. If you've previously configured a custom recovery message or URL and want to revert to the default message, you must keep the policy enabled and set the value "1" (Use default recovery message and URL).</o>
 
@@ -727,7 +709,9 @@ Disabling the policy will let the system choose the default behaviors.  If you w
 > [!NOTE]
 > Not all characters and languages are supported in pre-boot. It's strongly recommended that you test that the characters you use for the custom message or URL appear correctly on the pre-boot recovery screen.
 
-Data type is string. Supported operations are Add, Get, Replace, and Delete.
+Data type is string. 
+
+Supported operations are Add, Get, Replace, and Delete.
 <!--/Policy-->
 <!--Policy-->
 <a href="" id="systemdrivesrecoveryoptions"></a>**SystemDrivesRecoveryOptions**  
@@ -747,20 +731,17 @@ This setting is a direct mapping to the BitLocker Group Policy "Choose how BitLo
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
-<ul>
-<li>GP Friendly name: <em>Choose how BitLocker-protected operating system drives can be recovered</em></li>
-<li>GP name: <em>OSRecoveryUsage_Name</em></li>
-<li>GP path: <em>Windows Components/BitLocker Drive Encryption/Operating System Drives</em></li>
-<li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
-</ul>
+
+- GP Friendly name: *Choose how BitLocker-protected operating system drives can be recovered*
+- GP name: *OSRecoveryUsage_Name*
+- GP path: *Windows Components/BitLocker Drive Encryption/Operating System Drives*
+- GP ADMX file name: *VolumeEncryption.admx*
+
 <!--/ADMXMapped-->
 
-> [!TIP]
-> For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For more information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
+This setting allows you to control how BitLocker-protected operating system drives are recovered in the absence of required startup key information. This setting is applied when you turn on BitLocker.
 
-This setting allows you to control how BitLocker-protected operating system drives are recovered in the absence of the required startup key information. This setting is applied when you turn on BitLocker.
-
-The "OSAllowDRA_Name" (Allow certificate-based data recovery agent) data field is used to specify whether a data recovery agent can be used with BitLocker-protected operating system drives. Before a data recovery agent can be used, it must be added from the Public Key Policies item in either the Group Policy Management Console or the Local Group Policy Editor. For more information about adding data recovery agents, consult the BitLocker Drive Encryption Deployment Guide on Microsoft TechNet.
+The "OSAllowDRA_Name" (Allow certificate-based data recovery agent) data field is used to specify whether a data recovery agent can be used with BitLocker-protected operating system drives. Before a data recovery agent can be used, it must be added from the Public Key Policies item in either the Group Policy Management Console or the Local Group Policy Editor. For more information about adding data recovery agents, see the BitLocker Drive Encryption Deployment Guide on Microsoft Docs.
 
 In "OSRecoveryPasswordUsageDropDown_Name" and "OSRecoveryKeyUsageDropDown_Name" (Configure user storage of BitLocker recovery information) set whether users are allowed, required, or not allowed to generate a 48-digit recovery password or a 256-bit recovery key.
 
@@ -768,7 +749,7 @@ Set "OSHideRecoveryPage_Name" (Omit recovery options from the BitLocker setup wi
 
 Set "OSActiveDirectoryBackup_Name" (Save BitLocker recovery information to Active Directory Domain Services), to choose which BitLocker recovery information to store in AD DS for operating system drives (OSActiveDirectoryBackupDropDown_Name). If you set "1" (Backup recovery password and key package), both the BitLocker recovery password and key package are stored in AD DS. Storing the key package supports recovering data from a drive that has been physically corrupted. If you set "2" (Backup recovery password only), only the recovery password is stored in AD DS.
 
-Set the "OSRequireActiveDirectoryBackup_Name" (Don't enable BitLocker until recovery information is stored in AD DS for operating system drives) data field if you want to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information to AD DS succeeds.
+Set the "OSRequireActiveDirectoryBackup_Name" (Do not enable BitLocker until recovery information is stored in AD DS for operating system drives) data field if you want to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information to AD DS succeeds.
 
 > [!NOTE]
 > If the "OSRequireActiveDirectoryBackup_Name" (Don't enable BitLocker until recovery information is stored in AD DS for operating system drives) data field is set, a recovery password is automatically generated.
@@ -784,17 +765,20 @@ Sample value for this node to enable this policy is:
 ```
 <!--SupportedValues-->
 The possible values for 'xx' are:  
+
 - true = Explicitly allow
 - false = Policy not set
 
 The possible values for 'yy' are:  
+
 - 2 = Allowed
 - 1 = Required
 - 0 = Disallowed
 
 The possible values for 'zz' are:  
-- 2 = Store recovery passwords only
-- 1 = Store recovery passwords and key packages
+
+- 2 = Store recovery passwords only.
+- 1 = Store recovery passwords and key packages.
 <!--/SupportedValues-->
 Disabling the policy will let the system choose the default behaviors. If you want to disable this policy, use the following SyncML:
 
@@ -813,7 +797,9 @@ Disabling the policy will let the system choose the default behaviors. If you wa
  </Replace>
 ```
 
-Data type is string. Supported operations are Add, Get, Replace, and Delete.
+Data type is string. 
+
+Supported operations are Add, Get, Replace, and Delete.
 <!--/Policy-->
 <!--Policy-->
 <a href="" id="fixeddrivesrecoveryoptions"></a>**FixedDrivesRecoveryOptions**  
@@ -833,20 +819,17 @@ This setting is a direct mapping to the BitLocker Group Policy "Choose how BitLo
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
-<ul>
-<li>GP Friendly name: <em>Choose how BitLocker-protected fixed drives can be recovered</em></li>
-<li>GP name: <em>FDVRecoveryUsage_Name</em></li>
-<li>GP path: <em>Windows Components/BitLocker Drive Encryption/Fixed Drives</em></li>
-<li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
-</ul>
-<!--/ADMXMapped-->
 
-> [!TIP]
-> For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For more information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
+- GP Friendly name: *Choose how BitLocker-protected fixed drives can be recovered*
+- GP name: *FDVRecoveryUsage_Name*
+- GP path: *Windows Components/BitLocker Drive Encryption/Fixed Drives*
+- GP ADMX file name: *VolumeEncryption.admx*
+
+<!--/ADMXMapped-->
 
 This setting allows you to control how BitLocker-protected fixed data drives are recovered in the absence of the required credentials. This setting is applied when you turn on BitLocker.
 
-The "FDVAllowDRA_Name" (Allow data recovery agent) data field is used to specify whether a data recovery agent can be used with BitLocker-protected fixed data drives. Before a data recovery agent can be used, it must be added from the Public Key Policies item in either the Group Policy Management Console or the Local Group Policy Editor. For more information about adding data recovery agents, consult the BitLocker Drive Encryption Deployment Guide on Microsoft TechNet.
+The "FDVAllowDRA_Name" (Allow data recovery agent) data field is used to specify whether a data recovery agent can be used with BitLocker-protected fixed data drives. Before a data recovery agent can be used, it must be added from the Public Key Policies item in either the Group Policy Management Console or the Local Group Policy Editor. For more information about adding data recovery agents, see the BitLocker Drive Encryption Deployment Guide on Microsoft Docs.
 
 In "FDVRecoveryPasswordUsageDropDown_Name" (Configure user storage of BitLocker recovery information) set whether users are allowed, required, or not allowed to generate a 48-digit recovery password or a 256-bit recovery key.
 
@@ -872,24 +855,21 @@ Sample value for this node to enable this policy is:
 ```
 <!--SupportedValues-->
 The possible values for 'xx' are:
-<ul>
-<li>true = Explicitly allow</li>
-<li>false = Policy not set</li>
-</ul>
+
+- true = Explicitly allow
+- false = Policy not set
 
 The possible values for 'yy' are:
-<ul>
-<li>2 = Allowed</li>
-<li>1 = Required</li>
-<li>0 = Disallowed</li>
 
-</ul>
+- 2 = Allowed
+- 1 = Required
+- 0 = Disallowed
 
 The possible values for 'zz' are:
-<ul>
-<li>2 = Store recovery passwords only</li>
-<li>1 = Store recovery passwords and key packages</li>
-</ul>
+
+- 2 = Store recovery passwords only
+- 1 = Store recovery passwords and key packages
+
 <!--/SupportedValues-->
 Disabling the policy will let the system choose the default behaviors. If you want to disable this policy, use the following SyncML:
 
@@ -908,7 +888,9 @@ Disabling the policy will let the system choose the default behaviors. If you wa
  </Replace>
 ```
 
-Data type is string. Supported operations are Add, Get, Replace, and Delete.
+Data type is string. 
+
+Supported operations are Add, Get, Replace, and Delete.
 <!--/Policy-->
 <!--Policy-->
 <a href="" id="fixeddrivesrequireencryption"></a>**FixedDrivesRequireEncryption**  
@@ -928,16 +910,13 @@ This setting is a direct mapping to the BitLocker Group Policy "Deny write acces
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
-<ul>
-<li>GP Friendly name: <em>Deny write access to fixed drives not protected by BitLocker</em></li>
-<li>GP name: <em>FDVDenyWriteAccess_Name</em></li>
-<li>GP path: <em>Windows Components/BitLocker Drive Encryption/Fixed Drives</em></li>
-<li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
-</ul>
-<!--/ADMXMapped-->
 
-> [!TIP]
-> For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For more information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
+- GP Friendly name: *Deny write access to fixed drives not protected by BitLocker*
+- GP name: *FDVDenyWriteAccess_Name*
+- GP path: *Windows Components/BitLocker Drive Encryption/Fixed Drives*
+- GP ADMX file name: *VolumeEncryption.admx*
+
+<!--/ADMXMapped-->
 
 This setting determines whether BitLocker protection is required for fixed data drives to be writable on a computer.
 
@@ -966,7 +945,9 @@ If you disable or don't configure this setting, all fixed data drives on the com
  </Replace>
 ```
 
-Data type is string. Supported operations are Add, Get, Replace, and Delete.
+Data type is string. 
+
+Supported operations are Add, Get, Replace, and Delete.
 <!--/Policy-->
 <!--Policy-->
 <a href="" id="fixeddrivesencryptiontype"></a>**FixedDrivesEncryptionType**  
@@ -986,20 +967,17 @@ Allows you to configure the encryption type on fixed data drives that is used by
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
-<ul>
-<li>GP Friendly name: <em>Enforce drive encryption type on fixed data drives</em></li>
-<li>GP name: <em>FDVEncryptionType_Name</em></li>
-<li>GP path: <em>Windows Components/BitLocker Drive Encryption/Fixed Data Drives</em></li>
-<li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
-</ul>
+
+- GP Friendly name: *Enforce drive encryption type on fixed data drives*
+- GP name: *FDVEncryptionType_Name*
+- GP path: *Windows Components/BitLocker Drive Encryption/Fixed Data Drives*
+- GP ADMX file name: *VolumeEncryption.admx*
+
 <!--/ADMXMapped-->
 
-> [!TIP]
-> For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For more information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
+This policy setting is applied when you turn on BitLocker and controls whether fixed data drives utilize Used Space Only encryption or Full encryption. Setting this policy also causes the BitLocker Setup Wizard to skip the encryption options page, so no encryption selection is displayed to the user.
 
-This policy setting is applied when you turn on BitLocker and controls whether fixed data drives utilize Used Space Only encryption or Full encryption. Setting this policy also causes the BitLocker Setup Wizard to skip the encryption options page so no encryption selection displays to the user.
-
-Changing the encryption type has no effect if the drive is already encrypted or if encryption is in progress. Choose Full encryption to require that the entire drive be encrypted when BitLocker is turned on. Choose Used Space Only encryption to require that only the portion of the drive that is used to store data is encrypted when BitLocker is turned on.
+Changing the encryption type will have no effect if the drive is already encrypted or if encryption is in progress. Choose Full encryption to require that the entire drive be encrypted when BitLocker is turned on. Choose Used Space Only encryption to require only a portion of the drive that is used to store data is encrypted when BitLocker is turned on.
 
 If you enable this policy setting, the encryption type that BitLocker uses to encrypt drives, and the encryption type option isn't presented in the BitLocker Setup Wizard.
 
@@ -1013,7 +991,7 @@ If this policy is disabled, the BitLocker Setup Wizard asks the user to select t
 
 >[!Note]
 >This policy is ignored when you're shrinking or expanding a volume and the BitLocker driver uses the current encryption method. 
->For example, when a drive that is using Used Space Only encryption is expanded, the new free space isn't wiped as it would be for a drive that is using Full encryption. The user could wipe the free space on a Used Space Only drive by using the following command: manage-bde -w. If the volume is shrunk, no action is taken for the new free space.
+>For example, when a drive that's using Used Space Only encryption is expanded, the new free space isn't wiped as it would be for a drive that's using Full encryption. The user could wipe the free space on a Used Space Only drive by using the following command: `manage-bde -w`. If the volume is shrunk, no action is taken for the new free space.
 
 For more information about the tool to manage BitLocker, see [Manage-bde](/windows-server/administration/windows-commands/manage-bde).
 
@@ -1036,16 +1014,13 @@ This setting is a direct mapping to the BitLocker Group Policy "Deny write acces
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
-<ul>
-<li>GP Friendly name: <em>Deny write access to removable drives not protected by BitLocker</em></li>
-<li>GP name: <em>RDVDenyWriteAccess_Name</em></li>
-<li>GP path: <em>Windows Components/BitLocker Drive Encryption/Removeable Drives</em></li>
-<li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
-</ul>
-<!--/ADMXMapped-->
 
-> [!TIP]
-> For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For more information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
+- GP Friendly name: *Deny write access to removable drives not protected by BitLocker*
+- GP name: *RDVDenyWriteAccess_Name*
+- GP path: *Windows Components/BitLocker Drive Encryption/Removeable Drives*
+- GP ADMX file name: *VolumeEncryption.admx*
+
+<!--/ADMXMapped-->
 
 This setting configures whether BitLocker protection is required for a computer to be able to write data to a removable data drive.
 
@@ -1065,10 +1040,10 @@ Sample value for this node to enable this policy is:
 ```
 <!--SupportedValues-->
 The possible values for 'xx' are:
-<ul>
-<li>true = Explicitly allow</li>
-<li>false = Policy not set</li>
-</ul>
+
+- true = Explicitly allow
+- false = Policy not set
+
 <!--/SupportedValues-->
 Disabling the policy will let the system choose the default behaviors. If you want to disable this policy, use the following SyncML:
 
@@ -1105,20 +1080,17 @@ Allows you to configure the encryption type that is used by BitLocker.
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
-<ul>
-<li>GP Friendly name: <em>Enforce drive encryption type on removable data drives</em></li>
-<li>GP name: <em>RDVEncryptionType_Name</em></li>
-<li>GP path: <em>Windows Components/BitLocker Drive Encryption/Removable Data Drives</em></li>
-<li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
-</ul>
-<!--/ADMXMapped-->
 
-> [!TIP]
-> For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For more information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
+- GP Friendly name: *Enforce drive encryption type on removable data drives*
+- GP name: *RDVEncryptionType_Name*
+- GP path: *Windows Components/BitLocker Drive Encryption/Removable Data Drives*
+- GP ADMX file name: *VolumeEncryption.admx*
+
+<!--/ADMXMapped-->
 
 This policy controls whether removed data drives utilize Full encryption or Used Space Only encryption, and is applied when you turn on BitLocker. Setting this policy also causes the BitLocker Setup Wizard to skip the encryption options page, so no encryption selection displays to the user.
 
-Changing the encryption type has no effect if the drive is already encrypted or if encryption is in progress. Choose Full encryption to require that the entire drive be encrypted when BitLocker is turned on. Choose Used Space Only encryption to require that only the portion of the drive that is used to store data is encrypted when BitLocker is turned on.
+Changing the encryption type will no effect if the drive is already encrypted or if encryption is in progress. Choose Full encryption to require that the entire drive be encrypted when BitLocker is turned on. Choose Used Space Only encryption to require only the portion of the drive that is used to store data is encrypted when BitLocker is turned on.
 
 If you enable this policy setting, the encryption type that BitLocker uses to encrypt drives is defined by this policy, and the encryption type option isn't presented in the BitLocker Setup Wizard.
 
@@ -1149,16 +1121,12 @@ Allows you to control the use of BitLocker on removable data drives.
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
-<ul>
-<li>GP Friendly name: <em>Control use of BitLocker on removable drives</em></li>
-<li>GP name: <em>RDVConfigureBDE_Name</em></li>
-<li>GP path: <em>Windows Components/BitLocker Drive Encryption/Removable Data Drives</em></li>
-<li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
-</ul>
-<!--/ADMXMapped-->
 
-> [!TIP]
-> For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For more information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
+- GP Friendly name: *Control use of BitLocker on removable drives*
+- GP name: *RDVConfigureBDE_Name*
+- GP path: *Windows Components/BitLocker Drive Encryption/Removable Data Drives*
+- GP ADMX file name: *VolumeEncryption.admx*
+<!--/ADMXMapped-->
 
 This policy setting is used to prevent users from turning BitLocker on or off on removable data drives, and is applied when you turn on BitLocker.
 
@@ -1166,7 +1134,7 @@ For information about suspending BitLocker protection, see [BitLocker Basic Depl
 
 The options for choosing property settings that control how users can configure BitLocker are:
 
-- **Allow users to apply BitLocker protection on removable data drives**: Enables the user to enable BitLocker on a removable data drive.
+- **Allow users to apply BitLocker protection on removable data drives**: Enables the user to enable BitLocker on removable data drives.
 - **Allow users to suspend and decrypt BitLocker on removable data drives**: Enables the user to remove BitLocker from the drive or to suspend the encryption while performing maintenance.
 
 If you enable this policy setting, you can select property settings that control how users can configure BitLocker.
@@ -1177,6 +1145,7 @@ Sample value for this node to enable this policy is:
 <enabled/><data id="RDVAllowBDE_Name" value="true"/><data id="RDVDisableBDE_Name" value="true"/>
 ```
 Data ID:
+
 - RDVAllowBDE_Name: Allow users to apply BitLocker protection on removable data drives
 - RDVDisableBDE_Name: Allow users to suspend and decrypt BitLocker on removable data drives
 
@@ -1188,7 +1157,7 @@ If you don't configure this policy setting, users can use BitLocker on removable
 <!--Policy-->
 <a href="" id="allowwarningforotherdiskencryption"></a>**AllowWarningForOtherDiskEncryption**  
 <!--Description-->
-Allows the admin to disable the warning prompt for other disk encryption on the user machines that are targeted when the RequireDeviceEncryption policy is also set to 1.
+Allows the admin to disable the warning prompt for other disk encryption on the user machines that are targeted when the RequireDeviceEncryption policy is set to 1.
 <!--/Description-->
 > [!IMPORTANT]
 > Starting in Windows 10, version 1803, the value 0 can only be set for Azure Active Directory joined devices. When RequireDeviceEncryption is set to 1 and AllowWarningForOtherDiskEncryption is set to 0, Windows will attempt to silently enable [BitLocker](/windows/device-security/bitlocker/bitlocker-overview).
@@ -1230,6 +1199,7 @@ The following list shows the supported values:
 >When you disable the warning prompt, the OS drive's recovery key will back up to the user's Azure Active Directory account. When you allow the warning prompt, the user who receives the prompt can select where to back up the OS drive's recovery key.
 >
 >The endpoint for a fixed data drive's backup is chosen in the following order:
+>
   >1. The user's Windows Server Active Directory Domain Services account.
   >2. The user's Azure Active Directory account.
   >3. The user's personal OneDrive (MDM/MAM only).
@@ -1239,7 +1209,7 @@ The following list shows the supported values:
 <!--Policy-->
 <a href="" id="allowstandarduserencryption"></a>**AllowStandardUserEncryption**
 <!--Description-->
-Allows Admin to enforce "RequireDeviceEncryption" policy for scenarios where policy is pushed while current logged on user is non-admin/standard user Azure AD account.
+Allows Admin to enforce "RequireDeviceEncryption" policy for scenarios where policy is pushed while current logged on user is non-admin/standard user of Azure AD account.
 <!--/Description-->
 
 > [!NOTE]
@@ -1263,7 +1233,7 @@ If "AllowWarningForOtherDiskEncryption" isn't set, or is set to "1", "RequireDev
 The expected values for this policy are:
 
 - 1 = "RequireDeviceEncryption" policy will try to enable encryption on all fixed drives even if a current logged in user is standard user.
-- 0 = This value is the default value, when the policy isn't set. If current logged on user is a standard user, "RequireDeviceEncryption" policy won't try to enable encryption on any drive.
+- 0 = This value is the default value, when the policy isn't set. If the current logged on user is a standard user, "RequireDeviceEncryption" policy won't try to enable encryption on any drive.
 <!--/SupportedValues-->
 If you want to disable this policy, use the following SyncML:
 
@@ -1304,14 +1274,17 @@ This setting initiates a client-driven recovery password refresh after an OS dri
 
 <!--/SupportedSKUs-->
 
-Value type is int. Supported operations are Add, Delete, Get, and Replace.
+Value type is int. 
+
+Supported operations are Add, Delete, Get, and Replace.
 
 <!--SupportedValues-->
 
 Supported values are:
-- 0 – Refresh off (default)
-- 1 – Refresh on for Azure AD-joined devices 
-- 2 – Refresh on for both Azure AD-joined and hybrid-joined devices 
+
+- 0 – Refresh off (default).
+- 1 – Refresh on for Azure AD-joined devices. 
+- 2 – Refresh on for both Azure AD-joined and hybrid-joined devices.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1348,20 +1321,24 @@ Each server-side recovery key rotation is represented by a request ID. The serve
 
 <!--/SupportedSKUs-->
 
-Value type is string. Supported operation is Execute. Request ID is expected as a parameter.
+Value type is string.
+
+Supported operation is Execute. Request ID is expected as a parameter.
 
 > [!TIP]
 > Key rotation feature will only work when:
 >
 > - For Operating system drives:
->    - OSRequireActiveDirectoryBackup_Name is set to 1 ("Required")
->    - OSActiveDirectoryBackup_Name is set to true
+>    - OSRequireActiveDirectoryBackup_Name is set to 1 ("Required").
+>    - OSActiveDirectoryBackup_Name is set to true.
 > - For Fixed data drives:
->    - FDVRequireActiveDirectoryBackup_Name is set to 1 = ("Required")
->    - FDVActiveDirectoryBackup_Name is set to true
+>    - FDVRequireActiveDirectoryBackup_Name is set to 1 = ("Required").
+>    - FDVActiveDirectoryBackup_Name is set to true.
 
 <a href="" id="status"></a>**Status**  
-Interior node. Supported operation is Get.
+Interior node.
+
+Supported operation is Get.
 
 <!--/Policy-->
 
@@ -1383,16 +1360,19 @@ This node reports compliance state of device encryption on the system.
 <!--/SupportedSKUs-->
 
 <!--SupportedValues-->
-Value type is int. Supported operation is Get.
+Value type is int. 
+
+Supported operation is Get.
 
 Supported values:  
+
 - 0 - Indicates that the device is compliant.
 - Any non-zero value - Indicates that the device isn't compliant. This value represents a bitmask with each bit and the corresponding error code described in the following table:
 
 | Bit | Error Code |
 |-----|------------|
-| 0 |The BitLocker policy requires user consent to launch the BitLocker Drive Encryption Wizard to start encryption of the OS volume but the user didn't consent.|
-| 1 |The encryption method of the OS volume does not match the BitLocker policy.|
+| 0 |The BitLocker policy requires user consent to launch the BitLocker Drive Encryption Wizard to start encryption of the OS volume, but the user didn't consent.|
+| 1 |The encryption method of the OS volume doesn't match the BitLocker policy.|
 | 2 |The OS volume is unprotected.|
 | 3 |The BitLocker policy requires a TPM-only protector for the OS volume, but TPM protection is not used.|
 | 4 |The BitLocker policy requires TPM+PIN protection for the OS volume, but a TPM+PIN protector is not used.|
@@ -1401,12 +1381,12 @@ Supported values:
 | 7 |The BitLocker policy requires a TPM protector to protect the OS volume, but a TPM is not used.|
 | 8 |Recovery key backup failed.|
 | 9 |A fixed drive is unprotected.|
-| 10 |The encryption method of the fixed drive does not match the BitLocker policy.|
-| 11 |To encrypt drives, the BitLocker policy requires either the user to sign in as an Administrator or, if the device is joined to Azure AD, the AllowStandardUserEncryption policy must be set to 1.|
-| 12 |Windows Recovery Environment (WinRE) is not configured.|
-| 13 |A TPM is not available for BitLocker, either because it is not present, it has been made unavailable in the Registry, or the OS is on a removable drive. |
-| 14 |The TPM is not ready for BitLocker.|
-| 15 |The network is not available, which is required for recovery key backup. |
+| 10 |The encryption method of the fixed drive doesn't match the BitLocker policy.|
+| 11 |To encrypt drives, the BitLocker policy requires either the user to sign in as an Administrator or if the device is joined to Azure AD, the AllowStandardUserEncryption policy must be set to 1.|
+| 12 |Windows Recovery Environment (WinRE) isn't configured.|
+| 13 |A TPM isn't available for BitLocker, either because it isn't present, it has been made unavailable in the Registry, or the OS is on a removable drive. |
+| 14 |The TPM isn't ready for BitLocker.|
+| 15 |The network isn't available, which is required for recovery key backup. |
 | 16-31 |For future use.|
 
 <!--/SupportedValues-->
@@ -1439,7 +1419,9 @@ Status code can be one of the following values:
 
 <!--/SupportedSKUs-->
 
-Value type is int. Supported operation is Get.
+Value type is int. 
+
+Supported operation is Get.
 
 <!--/Policy-->
 
@@ -1463,7 +1445,9 @@ This node needs to be queried in synchronization with RotateRecoveryPasswordsSta
 
 <!--/SupportedSKUs-->
 
-Value type is string. Supported operation is Get.
+Value type is string. 
+
+Supported operation is Get.
 
 ### SyncML example
 
@@ -1630,3 +1614,7 @@ The following example is provided to show proper format and shouldn't be taken a
 ```
 
 <!--/Policy-->
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)

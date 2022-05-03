@@ -75,6 +75,7 @@ Defender
 --------EngineUpdatesChannel (Added with the 4.18.2106.5 Defender platform release)
 --------SecurityIntelligenceUpdatesChannel (Added with the 4.18.2106.5 Defender platform release)
 --------DisableGradualRelease (Added with the 4.18.2106.5 Defender platform release)
+--------PassiveRemediation (Added with the 4.18.2202.X Defender platform release)
 ----Scan
 ----UpdateSignature
 ----OfflineScan (Added in Windows 10 version 1803)
@@ -227,6 +228,14 @@ Supported operation is Get.
 Information about the execution status of the threat.
 
 The data type is integer.
+
+The following list shows the supported values:
+
+- 0 = Unknown
+- 1 = Blocked
+- 2 = Allowed
+- 3 = Running
+- 4 = Not running
 
 Supported operation is Get.
 
@@ -820,6 +829,16 @@ More details:
 
 - [Manage the gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/manage-gradual-rollout)  
 - [Create a custom gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/configure-updates)  
+
+<a href="" id="configuration-passiveremediation"></a>**Configuration/PassiveRemediation**
+This policy setting enables or disables EDR in block mode (recommended for devices running Microsoft Defender Antivirus in passive mode). For more information, see Endpoint detection and response in block mode | Microsoft Docs. Available with platform release: 4.18.2202.X
+
+The data type is integer
+
+Supported values:
+- 1: Turn EDR in block mode on
+- 0: Turn EDR in block mode off
+
 
 <a href="" id="scan"></a>**Scan**  
 Node that can be used to start a Windows Defender scan on a device.

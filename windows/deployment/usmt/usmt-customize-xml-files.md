@@ -3,13 +3,13 @@ title: Customize USMT XML Files (Windows 10)
 description: Learn how to customize USMT XML files. Also, learn about the migration XML files that are included with USMT.
 ms.assetid: d58363c1-fd13-4f65-8b91-9986659dc93e
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.date: 04/19/2017
 ms.topic: article
 ---
