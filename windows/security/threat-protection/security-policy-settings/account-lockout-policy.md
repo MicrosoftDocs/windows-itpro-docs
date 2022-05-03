@@ -4,7 +4,7 @@ description: Describes the Account Lockout Policy settings and links to informat
 ms.assetid: eb968c28-17c5-405f-b413-50728cb7b724
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/11/2018
+ms.technology: windows-sec
 ---
 
 # Account Lockout Policy
@@ -29,7 +30,7 @@ Someone who attempts to use more than a few unsuccessful passwords while trying 
 The following topics provide a discussion of each policy setting's implementation and best practices considerations, policy location, default values for the server type or Group Policy Object (GPO), relevant differences in operating system versions, and security considerations (including the possible vulnerabilities of each policy setting), countermeasures that you can implement, and the potential impact of implementing the countermeasures.
 
 >[!NOTE]
->Account lockout settings for remote access clients can be configured separately by editing the Registry on the server that manages the remote access. For more information, see [How to configure remote access client account lockout](https://support.microsoft.com/help/816118/how-to-configure-remote-access-client-account-lockout-in-windows-serve).
+>Account lockout settings for remote access clients can be configured separately by editing the Registry on the server that manages the remote access. For more information, see [How to configure remote access client account lockout](/troubleshoot/windows-server/networking/configure-remote-access-client-account-lockout).
 
 ## In this section
 

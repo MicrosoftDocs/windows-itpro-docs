@@ -32,32 +32,14 @@ ms.date: 09/27/2019
 <a href="" id="servicecontrolmanager-svchostprocessmitigation"></a>**ServiceControlManager/SvchostProcessMitigation**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -76,7 +58,10 @@ This policy setting enables process mitigation options on svchost.exe processes.
 
 If you enable this policy setting, built-in system services hosted in svchost.exe processes will have stricter security policies enabled on them.
 
-This includes a policy requiring all binaries loaded in these processes to be signed by Microsoft, as well as a policy disallowing dynamically-generated code.  
+These stricter security policies include a policy requiring all binaries loaded in these processes to be signed by Microsoft, and a policy disallowing dynamically generated code.  
+
+> [!IMPORTANT]
+> Enabling this policy could cause compatibility issues with third-party software that uses svchost.exe processes (for example, third-party antivirus software).
 
 If you disable or do not configure this policy setting, the stricter security settings will not be applied.
 
@@ -90,7 +75,7 @@ If you disable or do not configure this policy setting, the stricter security se
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Enable svchost.exe mitigation options*
+-   GP Friendly name: *Enable svchost.exe mitigation options*
 -   GP name: *SvchostProcessMitigationEnable*
 -   GP path: *System/Service Control Manager Settings/Security Settings*
 -   GP ADMX file name: *ServiceControlManager.admx*
@@ -98,8 +83,8 @@ ADMX Info:
 <!--/ADMXBacked-->
 <!--SupportedValues-->
 Supported values:  
-- disabled - Do not add ACG/CIG enforcement and other process mitigation/code integrity policies to SVCHOST processes.
-- enabled - Add ACG/CIG enforcement and other process mitigation/code integrity policies to SVCHOST processes.
+- Disabled - Do not add ACG/CIG enforcement and other process mitigation/code integrity policies to SVCHOST processes.
+- Enabled - Add ACG/CIG enforcement and other process mitigation/code integrity policies to SVCHOST processes.
 <!--/SupportedValues-->
 <!--Example-->
 
@@ -110,16 +95,4 @@ Supported values:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-
 <!--/Policies-->
-

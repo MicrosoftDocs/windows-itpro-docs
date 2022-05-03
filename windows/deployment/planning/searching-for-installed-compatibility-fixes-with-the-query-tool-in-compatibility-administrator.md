@@ -3,14 +3,14 @@ title: Searching for Installed Compatibility Fixes with the Query Tool in Compat
 description: You can access the Query tool from within Compatibility Administrator. The Query tool provides the same functionality as using the Search feature.
 ms.assetid: dd213b55-c71c-407a-ad49-33db54f82f22
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ---
 
@@ -105,8 +105,7 @@ You can use the **Fix Description** tab of the Query tool to add parameters that
 
     The query runs and the results of the query are displayed in the lower pane.
 
-## Querying by Using the Fix Description Tab
-
+## Querying by Using the Advanced Tab
 
 You can use the **Fix Description** tab of the Query tool to add additional SQL Server SELECT and WHERE clauses to your search criteria.
 

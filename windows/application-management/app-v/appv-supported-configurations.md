@@ -1,22 +1,30 @@
 ---
-title: App-V Supported Configurations (Windows 10)
-description: Learn the requirements to install and run App-V supported configurations in your Windows 10 environment.
-author: lomayor
+title: App-V Supported Configurations (Windows 10/11)
+description: Learn the requirements to install and run App-V supported configurations in your Windows 10/11 environment.
+author: aczechowski
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/16/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
 # App-V Supported Configurations
 
->Applies to: Windows 10, version 1607; Window Server 2019; Windows Server 2016; Windows Server 2012 R2; Windows Server 2012; Windows Server 2008 R2 (Extended Security Update)
+**Applies to**:
 
-This topic specifies the requirements to install and run App-V in your Windows 10 environment. For information about prerequisite software such as the .NET Framework, see [App-V prerequisites](appv-prerequisites.md).
+- Windows 10
+- Windows 11
+- Windows Server 2019
+- Windows Server 2016
+- Windows Server 2012 R2
+- Windows Server 2012
+- Windows Server 2008 R2 (Extended Security Update)
+
+This topic specifies the requirements to install and run App-V in your Windows client environment. For information about prerequisite software such as the .NET Framework, see [App-V prerequisites](appv-prerequisites.md).
 
 ## App-V Server system requirements
 
@@ -42,7 +50,7 @@ You can install the App-V Management server on a server running Windows Server 2
 ### Management server hardware requirements
 
 * A 64-bit (x64) processor that runs at 1.4 GHz or faster.
-* 1 GB RAM (64-bit).
+* 1-GB RAM (64-bit).
 * 200 MB of available hard disk space, not including the content directory.
 
 ### Management server database requirements
@@ -66,10 +74,10 @@ The App-V Publishing server can be installed on a server that runs Windows Serve
 
 ### Publishing server hardware requirements
 
-App-V adds no additional requirements beyond those of Windows Server.
+App-V adds requires nothing beyond the requirements of Windows Server.
 
 * A 64-bit (x64) processor that runs at 1.4 GHz or faster.
-* 2 GB RAM (64-bit).
+* 2-GB RAM (64-bit).
 * 200 MB of available hard disk space, not including the content directory.
 
 ### Reporting server operating system requirements
@@ -78,10 +86,10 @@ You can install the App-V Reporting server on a server running Windows Server 20
 
 ### Reporting server hardware requirements
 
-App-V adds no additional requirements beyond those of Windows Server.
+App-V adds no other requirements beyond those requirements of Windows Server.
 
 * A 64-bit (x64) processor that runs at 1.4 GHz or faster.
-* 2 GB RAM (64-bit).
+* 2-GB RAM (64-bit).
 * 200 MB of available hard disk space, not including the content directory.
 
 ### Reporting server database requirements
@@ -99,13 +107,13 @@ The following table lists the SQL Server versions that are supported for the App
 
 ## App-V client and Remote Desktop Services client requirements
 
-With Windows 10, version 1607 and later releases, the App-V client is included with Windows 10 Enterprise and Windows 10 Education. The App-V client is no longer part of the Microsoft Desktop Optimization Pack. Before you can use the App-V client, it must be enabled, as described in [Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md).
+Starting with Windows 10 version 1607, the App-V client is included with Windows Enterprise and Windows Education. The App-V client is no longer part of the Microsoft Desktop Optimization Pack. Before you can use the App-V client, it must be enabled, as described in [Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md).
 
 Similarly, the App-V Remote Desktop Services (RDS) client is included with Windows Server 2016 Standard and Windows Server 2016 Datacenter.
 
 ## Sequencer system requirements
 
-Sequencer is now part of the Windows Assessment and Deployment Kit (Windows ADK). [Download the latest Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install) that is recommended for your version of the Windows OS. 
+Sequencer is now part of the Windows Assessment and Deployment Kit (Windows ADK). [Download the latest Windows ADK](/windows-hardware/get-started/adk-install) that is recommended for your version of the Windows OS. 
 
 ### Sequencer hardware requirements
 

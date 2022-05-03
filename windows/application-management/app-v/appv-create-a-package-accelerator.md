@@ -1,20 +1,20 @@
 ---
-title: How to create a package accelerator (Windows 10)
+title: How to create a package accelerator (Windows 10/11)
 description: Learn how to create App-V Package Accelerators to automatically generate new virtual application packages.
-author: lomayor
+author: aczechowski
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 07/10/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
 # How to create a package accelerator
 
->Applies to: Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 App-V Package Accelerators automatically generate new virtual application packages.
 
@@ -51,7 +51,7 @@ Use the following procedure to create a package accelerator.
 
 5. If the application is already installed on the computer running the sequencer, then select **Files installed on local system** to specify the installation file. To use this option, the application must already be installed in the default installation location.
 
-6. On the **Gathering Information** page, review the files that you couldn't find in the location specified by the **Installation Files** page. If the files displayed are not required, select **Remove these files**, then select **Next**. If the files are required, select **Previous** and copy the required files to the directory specified on the **Installation Files** page.
+6. On the **Gathering Information** page, review the files that you couldn't find in the location specified by the **Installation Files** page. If the files displayed aren't required, select **Remove these files**, then select **Next**. If the files are required, select **Previous** and copy the required files to the directory specified on the **Installation Files** page.
 
    > [!NOTE]
     >You must either remove the unrequired files or select **Previous** and locate the required files to advance to the next page of this wizard.
@@ -60,7 +60,7 @@ Use the following procedure to create a package accelerator.
 
 8. Confirm that the **Verify Applications** page displays all installation files required to build the package. The package accelerator requires all installation files displayed in the **Applications** pane in order to create the package.
 
-    If you need to add additional Installer files, select **Add**. To remove unnecessary installation files, select the **Installer file**, then select **Delete**. To edit the properties associated with an installer, select **Edit**. The package accelerator requires the installation files specified in this step to create a new virtual application package. After you have confirmed the information displayed, select **Next**.
+    If you need to add more Installer files, select **Add**. To remove unnecessary installation files, select the **Installer file**, then select **Delete**. To edit the properties associated with an installer, select **Edit**. The package accelerator requires the installation files specified in this step to create a new virtual application package. After you've confirmed the information displayed, select **Next**.
 
 9. On the **Select Guidance** page, select **Browse** to specify the file that will provide the package accelerator with application instructions. For example, this file can contain information about how the computer running the Sequencer should be configured, application prerequisite information for target computers, and general notes. You should provide all required information for successful package accelerator application. The file you select must be in rich text (.rtf) or text file (.txt) format. After specifying the file, select **Next**.
 

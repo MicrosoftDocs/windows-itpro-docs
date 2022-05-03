@@ -1,0 +1,767 @@
+        - name: Security auditing
+          href: security-auditing-overview.md
+          items: 
+            - name: Basic security audit policies
+              href: basic-security-audit-policies.md
+              items: 
+                - name: Create a basic audit policy for an event category
+                  href: create-a-basic-audit-policy-settings-for-an-event-category.md
+                - name: Apply a basic audit policy on a file or folder
+                  href: apply-a-basic-audit-policy-on-a-file-or-folder.md
+                - name: View the security event log
+                  href: view-the-security-event-log.md
+                - name: Basic security audit policy settings
+                  href: basic-security-audit-policy-settings.md
+                  items: 
+                    - name: Audit account logon events
+                      href: basic-audit-account-logon-events.md
+                    - name: Audit account management
+                      href: basic-audit-account-management.md
+                    - name: Audit directory service access
+                      href: basic-audit-directory-service-access.md
+                    - name: Audit logon events
+                      href: basic-audit-logon-events.md
+                    - name: Audit object access
+                      href: basic-audit-object-access.md
+                    - name: Audit policy change
+                      href: basic-audit-policy-change.md
+                    - name: Audit privilege use
+                      href: basic-audit-privilege-use.md
+                    - name: Audit process tracking
+                      href: basic-audit-process-tracking.md
+                    - name: Audit system events
+                      href: basic-audit-system-events.md
+            - name: Advanced security audit policies
+              href: advanced-security-auditing.md
+              items: 
+                - name: Planning and deploying advanced security audit policies
+                  href: planning-and-deploying-advanced-security-audit-policies.md
+                - name: Advanced security auditing FAQ
+                  href: advanced-security-auditing-faq.yml
+                  items: 
+                    - name: Which editions of Windows support advanced audit policy configuration
+                      href: which-editions-of-windows-support-advanced-audit-policy-configuration.md
+                    - name: How to list XML elements in \<EventData>
+                      href: how-to-list-xml-elements-in-eventdata.md
+                    - name: Using advanced security auditing options to monitor dynamic access control objects
+                      href: using-advanced-security-auditing-options-to-monitor-dynamic-access-control-objects.md
+                      items: 
+                        - name: Monitor the central access policies that apply on a file server
+                          href: monitor-the-central-access-policies-that-apply-on-a-file-server.md
+                        - name: Monitor the use of removable storage devices
+                          href: monitor-the-use-of-removable-storage-devices.md
+                        - name: Monitor resource attribute definitions
+                          href: monitor-resource-attribute-definitions.md
+                        - name: Monitor central access policy and rule definitions
+                          href: monitor-central-access-policy-and-rule-definitions.md
+                        - name: Monitor user and device claims during sign-in
+                          href: monitor-user-and-device-claims-during-sign-in.md
+                        - name: Monitor the resource attributes on files and folders
+                          href: monitor-the-resource-attributes-on-files-and-folders.md
+                        - name: Monitor the central access policies associated with files and folders
+                          href: monitor-the-central-access-policies-associated-with-files-and-folders.md
+                        - name: Monitor claim types
+                          href: monitor-claim-types.md
+                    - name: Advanced security audit policy settings
+                      href: advanced-security-audit-policy-settings.md
+                      items: 
+                        - name: Audit Credential Validation
+                          href: audit-credential-validation.md
+                        - name: "Event 4774 S, F: An account was mapped for logon."
+                          href: event-4774.md
+                        - name: "Event 4775 F: An account could not be mapped for logon."
+                          href: event-4775.md
+                        - name: "Event 4776 S, F: The computer attempted to validate the credentials for an account."
+                          href: event-4776.md
+                        - name: "Event 4777 F: The domain controller failed to validate the credentials for an account."
+                          href: event-4777.md
+                    - name: Audit Kerberos Authentication Service
+                      href: audit-kerberos-authentication-service.md
+                      items: 
+                        - name: "Event 4768 S, F: A Kerberos authentication ticket, TGT, was requested."
+                          href: event-4768.md
+                        - name: "Event 4771 F: Kerberos pre-authentication failed."
+                          href: event-4771.md
+                        - name: "Event 4772 F: A Kerberos authentication ticket request failed."
+                          href: event-4772.md
+                    - name: Audit Kerberos Service Ticket Operations
+                      href: audit-kerberos-service-ticket-operations.md
+                      items: 
+                        - name: "Event 4769 S, F: A Kerberos service ticket was requested."
+                          href: event-4769.md
+                        - name: "Event 4770 S: A Kerberos service ticket was renewed."
+                          href: event-4770.md
+                        - name: "Event 4773 F: A Kerberos service ticket request failed."
+                          href: event-4773.md
+                    - name: Audit Other Account Logon Events
+                      href: audit-other-account-logon-events.md
+                    - name: Audit Application Group Management
+                      href: audit-application-group-management.md
+                    - name: Audit Computer Account Management
+                      href: audit-computer-account-management.md
+                      items: 
+                        - name: "Event 4741 S: A computer account was created."
+                          href: event-4741.md
+                        - name: "Event 4742 S: A computer account was changed."
+                          href: event-4742.md
+                        - name: "Event 4743 S: A computer account was deleted."
+                          href: event-4743.md
+                    - name: Audit Distribution Group Management
+                      href: audit-distribution-group-management.md
+                      items: 
+                        - name: "Event 4749 S: A security-disabled global group was created."
+                          href: event-4749.md
+                        - name: "Event 4750 S: A security-disabled global group was changed."
+                          href: event-4750.md
+                        - name: "Event 4751 S: A member was added to a security-disabled global group."
+                          href: event-4751.md
+                        - name: "Event 4752 S: A member was removed from a security-disabled global group."
+                          href: event-4752.md
+                        - name: "Event 4753 S: A security-disabled global group was deleted."
+                          href: event-4753.md
+                    - name: Audit Other Account Management Events
+                      href: audit-other-account-management-events.md
+                      items: 
+                        - name: "Event 4782 S: The password hash of an account was accessed."
+                          href: event-4782.md
+                        - name: "Event 4793 S: The Password Policy Checking API was called."
+                          href: event-4793.md
+                    - name: Audit Security Group Management
+                      href: audit-security-group-management.md
+                      items: 
+                        - name: "Event 4731 S: A security-enabled local group was created."
+                          href: event-4731.md
+                        - name: "Event 4732 S: A member was added to a security-enabled local group."
+                          href: event-4732.md
+                        - name: "Event 4733 S: A member was removed from a security-enabled local group."
+                          href: event-4733.md
+                        - name: "Event 4734 S: A security-enabled local group was deleted."
+                          href: event-4734.md
+                        - name: "Event 4735 S: A security-enabled local group was changed."
+                          href: event-4735.md
+                        - name: "Event 4764 S: A group�s type was changed."
+                          href: event-4764.md
+                        - name: "Event 4799 S: A security-enabled local group membership was enumerated."
+                          href: event-4799.md
+                    - name: Audit User Account Management
+                      href: audit-user-account-management.md
+                      items: 
+                        - name: "Event 4720 S: A user account was created."
+                          href: event-4720.md
+                        - name: "Event 4722 S: A user account was enabled."
+                          href: event-4722.md
+                        - name: "Event 4723 S, F: An attempt was made to change an account's password."
+                          href: event-4723.md
+                        - name: "Event 4724 S, F: An attempt was made to reset an account's password."
+                          href: event-4724.md
+                        - name: "Event 4725 S: A user account was disabled."
+                          href: event-4725.md
+                        - name: "Event 4726 S: A user account was deleted."
+                          href: event-4726.md
+                        - name: "Event 4738 S: A user account was changed."
+                          href: event-4738.md
+                        - name: "Event 4740 S: A user account was locked out."
+                          href: event-4740.md
+                        - name: "Event 4765 S: SID History was added to an account."
+                          href: event-4765.md
+                        - name: "Event 4766 F: An attempt to add SID History to an account failed."
+                          href: event-4766.md
+                        - name: "Event 4767 S: A user account was unlocked."
+                          href: event-4767.md
+                        - name: "Event 4780 S: The ACL was set on accounts that are members of administrators groups."
+                          href: event-4780.md
+                        - name: "Event 4781 S: The name of an account was changed."
+                          href: event-4781.md
+                        - name: "Event 4794 S, F: An attempt was made to set the Directory Services Restore Mode administrator password."
+                          href: event-4794.md
+                        - name: "Event 4798 S: A user's local group membership was enumerated."
+                          href: event-4798.md
+                        - name: "Event 5376 S: Credential Manager credentials were backed up."
+                          href: event-5376.md
+                        - name: "Event 5377 S: Credential Manager credentials were restored from a backup."
+                          href: event-5377.md
+                    - name: Audit DPAPI Activity
+                      href: audit-dpapi-activity.md
+                      items: 
+                        - name: "Event 4692 S, F: Backup of data protection master key was attempted."
+                          href: event-4692.md
+                        - name: "Event 4693 S, F: Recovery of data protection master key was attempted."
+                          href: event-4693.md
+                        - name: "Event 4694 S, F: Protection of auditable protected data was attempted."
+                          href: event-4694.md
+                        - name: "Event 4695 S, F: Unprotection of auditable protected data was attempted."
+                          href: event-4695.md
+                    - name: Audit PNP Activity
+                      href: audit-pnp-activity.md
+                      items: 
+                        - name: "Event 6416 S: A new external device was recognized by the System."
+                          href: event-6416.md
+                        - name: "Event 6419 S: A request was made to disable a device."
+                          href: event-6419.md
+                        - name: "Event 6420 S: A device was disabled."
+                          href: event-6420.md
+                        - name: "Event 6421 S: A request was made to enable a device."
+                          href: event-6421.md
+                        - name: "Event 6422 S: A device was enabled."
+                          href: event-6422.md
+                        - name: "Event 6423 S: The installation of this device is forbidden by system policy."
+                          href: event-6423.md
+                        - name: "Event 6424 S: The installation of this device was allowed, after having previously been forbidden by policy."
+                          href: event-6424.md
+                    - name: Audit Process Creation
+                      href: audit-process-creation.md
+                      items: 
+                        - name: "Event 4688 S: A new process has been created."
+                          href: event-4688.md
+                        - name: "Event 4696 S: A primary token was assigned to process."
+                          href: event-4696.md
+                    - name: Audit Process Termination
+                      href: audit-process-termination.md
+                      items: 
+                        - name: "Event 4689 S: A process has exited."
+                          href: event-4689.md
+                    - name: Audit RPC Events
+                      href: audit-rpc-events.md
+                      items: 
+                        - name: "Event 5712 S: A Remote Procedure Call, RPC, was attempted."
+                          href: event-5712.md
+                    - name: Audit Token Right Adjusted
+                      href: audit-token-right-adjusted.md
+                      items: 
+                        - name: "Event 4703 S: A user right was adjusted."
+                          href: event-4703.md
+                    - name: Audit Detailed Directory Service Replication
+                      href: audit-detailed-directory-service-replication.md
+                      items: 
+                        - name: "Event 4928 S, F: An Active Directory replica source naming context was established."
+                          href: event-4928.md
+                        - name: "Event 4929 S, F: An Active Directory replica source naming context was removed."
+                          href: event-4929.md
+                        - name: "Event 4930 S, F: An Active Directory replica source naming context was modified."
+                          href: event-4930.md
+                        - name: "Event 4931 S, F: An Active Directory replica destination naming context was modified."
+                          href: event-4931.md
+                        - name: "Event 4934 S: Attributes of an Active Directory object were replicated."
+                          href: event-4934.md
+                        - name: "Event 4935 F: Replication failure begins."
+                          href: event-4935.md
+                        - name: "Event 4936 S: Replication failure ends."
+                          href: event-4936.md
+                        - name: "Event 4937 S: A lingering object was removed from a replica."
+                          href: event-4937.md
+                    - name: Audit Directory Service Access
+                      href: audit-directory-service-access.md
+                      items: 
+                        - name: "Event 4662 S, F: An operation was performed on an object."
+                          href: event-4662.md
+                        - name: "Event 4661 S, F: A handle to an object was requested."
+                          href: event-4661.md
+                    - name: Audit Directory Service Changes
+                      href: audit-directory-service-changes.md
+                      items: 
+                        - name: "Event 5136 S: A directory service object was modified."
+                          href: event-5136.md
+                        - name: "Event 5137 S: A directory service object was created."
+                          href: event-5137.md
+                        - name: "Event 5138 S: A directory service object was undeleted."
+                          href: event-5138.md
+                        - name: "Event 5139 S: A directory service object was moved."
+                          href: event-5139.md
+                        - name: "Event 5141 S: A directory service object was deleted."
+                          href: event-5141.md
+                    - name: Audit Directory Service Replication
+                      href: audit-directory-service-replication.md
+                      items: 
+                        - name: "Event 4932 S: Synchronization of a replica of an Active Directory naming context has begun."
+                          href: event-4932.md
+                        - name: "Event 4933 S, F: Synchronization of a replica of an Active Directory naming context has ended."
+                          href: event-4933.md
+                    - name: Audit Account Lockout
+                      href: audit-account-lockout.md
+                      items: 
+                        - name: "Event 4625 F: An account failed to log on."
+                          href: event-4625.md
+                    - name: Audit User/Device Claims
+                      href: audit-user-device-claims.md
+                      items: 
+                        - name: "Event 4626 S: User/Device claims information."
+                          href: event-4626.md
+                    - name: Audit Group Membership
+                      href: audit-group-membership.md
+                      items: 
+                        - name: "Event 4627 S: Group membership information."
+                          href: event-4627.md
+                    - name: Audit IPsec Extended Mode
+                      href: audit-ipsec-extended-mode.md
+                    - name: Audit IPsec Main Mode
+                      href: audit-ipsec-main-mode.md
+                    - name: Audit IPsec Quick Mode
+                      href: audit-ipsec-quick-mode.md
+                    - name: Audit Logoff
+                      href: audit-logoff.md
+                      items: 
+                        - name: "Event 4634 S: An account was logged off."
+                          href: event-4634.md
+                        - name: "Event 4647 S: User initiated logoff."
+                          href: event-4647.md
+                    - name: Audit Logon
+                      href: audit-logon.md
+                      items: 
+                        - name: "Event 4624 S: An account was successfully logged on."
+                          href: event-4624.md
+                        - name: "Event 4625 F: An account failed to log on."
+                          href: event-4625.md
+                        - name: "Event 4648 S: A logon was attempted using explicit credentials."
+                          href: event-4648.md
+                        - name: "Event 4675 S: SIDs were filtered."
+                          href: event-4675.md
+                    - name: Audit Network Policy Server
+                      href: audit-network-policy-server.md
+                    - name: Audit Other Logon/Logoff Events
+                      href: audit-other-logonlogoff-events.md
+                      items: 
+                        - name: "Event 4649 S: A replay attack was detected."
+                          href: event-4649.md
+                        - name: "Event 4778 S: A session was reconnected to a Window Station."
+                          href: event-4778.md
+                        - name: "Event 4779 S: A session was disconnected from a Window Station."
+                          href: event-4779.md
+                        - name: "Event 4800 S: The workstation was locked."
+                          href: event-4800.md
+                        - name: "Event 4801 S: The workstation was unlocked."
+                          href: event-4801.md
+                        - name: "Event 4802 S: The screen saver was invoked."
+                          href: event-4802.md
+                        - name: "Event 4803 S: The screen saver was dismissed."
+                          href: event-4803.md
+                        - name: "Event 5378 F: The requested credentials delegation was disallowed by policy."
+                          href: event-5378.md
+                        - name: "Event 5632 S, F: A request was made to authenticate to a wireless network."
+                          href: event-5632.md
+                        - name: "Event 5633 S, F: A request was made to authenticate to a wired network."
+                          href: event-5633.md
+                    - name: Audit Special Logon
+                      href: audit-special-logon.md
+                      items: 
+                        - name: "Event 4964 S: Special groups have been assigned to a new logon."
+                          href: event-4964.md
+                        - name: "Event 4672 S: Special privileges assigned to new logon."
+                          href: event-4672.md
+                    - name: Audit Application Generated
+                      href: audit-application-generated.md
+                    - name: Audit Certification Services
+                      href: audit-certification-services.md
+                    - name: Audit Detailed File Share
+                      href: audit-detailed-file-share.md
+                      items: 
+                        - name: "Event 5145 S, F: A network share object was checked to see whether client can be granted desired access."
+                          href: event-5145.md
+                    - name: Audit File Share
+                      href: audit-file-share.md
+                      items: 
+                        - name: "Event 5140 S, F: A network share object was accessed."
+                          href: event-5140.md
+                        - name: "Event 5142 S: A network share object was added."
+                          href: event-5142.md
+                        - name: "Event 5143 S: A network share object was modified."
+                          href: event-5143.md
+                        - name: "Event 5144 S: A network share object was deleted."
+                          href: event-5144.md
+                        - name: "Event 5168 F: SPN check for SMB/SMB2 failed."
+                          href: event-5168.md
+                    - name: Audit File System
+                      href: audit-file-system.md
+                      items: 
+                        - name: "Event 4656 S, F: A handle to an object was requested."
+                          href: event-4656.md
+                        - name: "Event 4658 S: The handle to an object was closed."
+                          href: event-4658.md
+                        - name: "Event 4660 S: An object was deleted."
+                          href: event-4660.md
+                        - name: "Event 4663 S: An attempt was made to access an object."
+                          href: event-4663.md
+                        - name: "Event 4664 S: An attempt was made to create a hard link."
+                          href: event-4664.md
+                        - name: "Event 4985 S: The state of a transaction has changed."
+                          href: event-4985.md
+                        - name: "Event 5051: A file was virtualized."
+                          href: event-5051.md
+                        - name: "Event 4670 S: Permissions on an object were changed."
+                          href: event-4670.md
+                    - name: Audit Filtering Platform Connection
+                      href: audit-filtering-platform-connection.md
+                      items: 
+                        - name: "Event 5031 F: The Windows Firewall Service blocked an application from accepting incoming connections on the network."
+                          href: event-5031.md
+                        - name: "Event 5150: The Windows Filtering Platform blocked a packet."
+                          href: event-5150.md
+                        - name: "Event 5151: A more restrictive Windows Filtering Platform filter has blocked a packet."
+                          href: event-5151.md
+                        - name: "Event 5154 S: The Windows Filtering Platform has permitted an application or service to listen on a port for incoming connections."
+                          href: event-5154.md
+                        - name: "Event 5155 F: The Windows Filtering Platform has blocked an application or service from listening on a port for incoming connections."
+                          href: event-5155.md
+                        - name: "Event 5156 S: The Windows Filtering Platform has permitted a connection."
+                          href: event-5156.md
+                        - name: "Event 5157 F: The Windows Filtering Platform has blocked a connection."
+                          href: event-5157.md
+                        - name: "Event 5158 S: The Windows Filtering Platform has permitted a bind to a local port."
+                          href: event-5158.md
+                        - name: "Event 5159 F: The Windows Filtering Platform has blocked a bind to a local port."
+                          href: event-5159.md
+                    - name: Audit Filtering Platform Packet Drop
+                      href: audit-filtering-platform-packet-drop.md
+                      items: 
+                        - name: "Event 5152 F: The Windows Filtering Platform blocked a packet."
+                          href: event-5152.md
+                        - name: "Event 5153 S: A more restrictive Windows Filtering Platform filter has blocked a packet."
+                          href: event-5153.md
+                    - name: Audit Handle Manipulation
+                      href: audit-handle-manipulation.md
+                      items: 
+                        - name: "Event 4690 S: An attempt was made to duplicate a handle to an object."
+                          href: event-4690.md
+                    - name: Audit Kernel Object
+                      href: audit-kernel-object.md
+                      items: 
+                        - name: "Event 4656 S, F: A handle to an object was requested."
+                          href: event-4656.md
+                        - name: "Event 4658 S: The handle to an object was closed."
+                          href: event-4658.md
+                        - name: "Event 4660 S: An object was deleted."
+                          href: event-4660.md
+                        - name: "Event 4663 S: An attempt was made to access an object."
+                          href: event-4663.md
+                    - name: Audit Other Object Access Events
+                      href: audit-other-object-access-events.md
+                      items: 
+                        - name: "Event 4671: An application attempted to access a blocked ordinal through the TBS."
+                          href: event-4671.md
+                        - name: "Event 4691 S: Indirect access to an object was requested."
+                          href: event-4691.md
+                        - name: "Event 5148 F: The Windows Filtering Platform has detected a DoS attack and entered a defensive mode; packets associated with this attack will be discarded."
+                          href: event-5148.md
+                        - name: "Event 5149 F: The DoS attack has subsided and normal processing is being resumed."
+                          href: event-5149.md
+                        - name: "Event 4698 S: A scheduled task was created."
+                          href: event-4698.md
+                        - name: "Event 4699 S: A scheduled task was deleted."
+                          href: event-4699.md
+                        - name: "Event 4700 S: A scheduled task was enabled."
+                          href: event-4700.md
+                        - name: "Event 4701 S: A scheduled task was disabled."
+                          href: event-4701.md
+                        - name: "Event 4702 S: A scheduled task was updated."
+                          href: event-4702.md
+                        - name: "Event 5888 S: An object in the COM+ Catalog was modified."
+                          href: event-5888.md
+                        - name: "Event 5889 S: An object was deleted from the COM+ Catalog."
+                          href: event-5889.md
+                        - name: "Event 5890 S: An object was added to the COM+ Catalog."
+                          href: event-5890.md
+                    - name: Audit Registry
+                      href: audit-registry.md
+                      items: 
+                        - name: "Event 4663 S: An attempt was made to access an object."
+                          href: event-4663.md
+                        - name: "Event 4656 S, F: A handle to an object was requested."
+                          href: event-4656.md
+                        - name: "Event 4658 S: The handle to an object was closed."
+                          href: event-4658.md
+                        - name: "Event 4660 S: An object was deleted."
+                          href: event-4660.md
+                        - name: "Event 4657 S: A registry value was modified."
+                          href: event-4657.md
+                        - name: "Event 5039: A registry key was virtualized."
+                          href: event-5039.md
+                        - name: "Event 4670 S: Permissions on an object were changed."
+                          href: event-4670.md
+                    - name: Audit Removable Storage
+                      href: audit-removable-storage.md
+                    - name: Audit SAM
+                      href: audit-sam.md
+                      items: 
+                        - name: "Event 4661 S, F: A handle to an object was requested."
+                          href: event-4661.md
+                    - name: Audit Central Access Policy Staging
+                      href: audit-central-access-policy-staging.md
+                      items: 
+                        - name: "Event 4818 S: Proposed Central Access Policy does not grant the same access permissions as the current Central Access Policy."
+                          href: event-4818.md
+                    - name: Audit Audit Policy Change
+                      href: audit-audit-policy-change.md
+                      items: 
+                        - name: "Event 4670 S: Permissions on an object were changed."
+                          href: event-4670.md
+                        - name: "Event 4715 S: The audit policy, SACL, on an object was changed."
+                          href: event-4715.md
+                        - name: "Event 4719 S: System audit policy was changed."
+                          href: event-4719.md
+                        - name: "Event 4817 S: Auditing settings on object were changed."
+                          href: event-4817.md
+                        - name: "Event 4902 S: The Per-user audit policy table was created."
+                          href: event-4902.md
+                        - name: "Event 4906 S: The CrashOnAuditFail value has changed."
+                          href: event-4906.md
+                        - name: "Event 4907 S: Auditing settings on object were changed."
+                          href: event-4907.md
+                        - name: "Event 4908 S: Special Groups Logon table modified."
+                          href: event-4908.md
+                        - name: "Event 4912 S: Per User Audit Policy was changed."
+                          href: event-4912.md
+                        - name: "Event 4904 S: An attempt was made to register a security event source."
+                          href: event-4904.md
+                        - name: "Event 4905 S: An attempt was made to unregister a security event source."
+                          href: event-4905.md
+                    - name: Audit Authentication Policy Change
+                      href: audit-authentication-policy-change.md
+                      items: 
+                        - name: "Event 4706 S: A new trust was created to a domain."
+                          href: event-4706.md
+                        - name: "Event 4707 S: A trust to a domain was removed."
+                          href: event-4707.md
+                        - name: "Event 4716 S: Trusted domain information was modified."
+                          href: event-4716.md
+                        - name: "Event 4713 S: Kerberos policy was changed."
+                          href: event-4713.md
+                        - name: "Event 4717 S: System security access was granted to an account."
+                          href: event-4717.md
+                        - name: "Event 4718 S: System security access was removed from an account."
+                          href: event-4718.md
+                        - name: "Event 4739 S: Domain Policy was changed."
+                          href: event-4739.md
+                        - name: "Event 4864 S: A namespace collision was detected."
+                          href: event-4864.md
+                        - name: "Event 4865 S: A trusted forest information entry was added."
+                          href: event-4865.md
+                        - name: "Event 4866 S: A trusted forest information entry was removed."
+                          href: event-4866.md
+                        - name: "Event 4867 S: A trusted forest information entry was modified."
+                          href: event-4867.md
+                    - name: Audit Authorization Policy Change
+                      href: audit-authorization-policy-change.md
+                      items: 
+                        - name: "Event 4703 S: A user right was adjusted."
+                          href: event-4703.md
+                        - name: "Event 4704 S: A user right was assigned."
+                          href: event-4704.md
+                        - name: "Event 4705 S: A user right was removed."
+                          href: event-4705.md
+                        - name: "Event 4670 S: Permissions on an object were changed."
+                          href: event-4670.md
+                        - name: "Event 4911 S: Resource attributes of the object were changed."
+                          href: event-4911.md
+                        - name: "Event 4913 S: Central Access Policy on the object was changed."
+                          href: event-4913.md
+                    - name: Audit Filtering Platform Policy Change
+                      href: audit-filtering-platform-policy-change.md
+                    - name: Audit MPSSVC Rule-Level Policy Change
+                      href: audit-mpssvc-rule-level-policy-change.md
+                      items: 
+                        - name: "Event 4944 S: The following policy was active when the Windows Firewall started."
+                          href: event-4944.md
+                        - name: "Event 4945 S: A rule was listed when the Windows Firewall started."
+                          href: event-4945.md
+                        - name: "Event 4946 S: A change has been made to Windows Firewall exception list. A rule was added."
+                          href: event-4946.md
+                        - name: "Event 4947 S: A change has been made to Windows Firewall exception list. A rule was modified."
+                          href: event-4947.md
+                        - name: "Event 4948 S: A change has been made to Windows Firewall exception list. A rule was deleted."
+                          href: event-4948.md
+                        - name: "Event 4949 S: Windows Firewall settings were restored to the default values."
+                          href: event-4949.md
+                        - name: "Event 4950 S: A Windows Firewall setting has changed."
+                          href: event-4950.md
+                        - name: "Event 4951 F: A rule has been ignored because its major version number was not recognized by Windows Firewall."
+                          href: event-4951.md
+                        - name: "Event 4952 F: Parts of a rule have been ignored because its minor version number was not recognized by Windows Firewall. The other parts of the rule will be enforced."
+                          href: event-4952.md
+                        - name: "Event 4953 F: Windows Firewall ignored a rule because it could not be parsed."
+                          href: event-4953.md
+                        - name: "Event 4954 S: Windows Firewall Group Policy settings have changed. The new settings have been applied."
+                          href: event-4954.md
+                        - name: "Event 4956 S: Windows Firewall has changed the active profile."
+                          href: event-4956.md
+                        - name: "Event 4957 F: Windows Firewall did not apply the following rule."
+                          href: event-4957.md
+                        - name: "Event 4958 F: Windows Firewall did not apply the following rule because the rule referred to items not configured on this computer."
+                          href: event-4958.md
+                    - name: Audit Other Policy Change Events
+                      href: audit-other-policy-change-events.md
+                      items: 
+                        - name: "Event 4714 S: Encrypted data recovery policy was changed."
+                          href: event-4714.md
+                        - name: "Event 4819 S: Central Access Policies on the machine have been changed."
+                          href: event-4819.md
+                        - name: "Event 4826 S: Boot Configuration Data loaded."
+                          href: event-4826.md
+                        - name: "Event 4909: The local policy settings for the TBS were changed."
+                          href: event-4909.md
+                        - name: "Event 4910: The group policy settings for the TBS were changed."
+                          href: event-4910.md
+                        - name: "Event 5063 S, F: A cryptographic provider operation was attempted."
+                          href: event-5063.md
+                        - name: "Event 5064 S, F: A cryptographic context operation was attempted."
+                          href: event-5064.md
+                        - name: "Event 5065 S, F: A cryptographic context modification was attempted."
+                          href: event-5065.md
+                        - name: "Event 5066 S, F: A cryptographic function operation was attempted."
+                          href: event-5066.md
+                        - name: "Event 5067 S, F: A cryptographic function modification was attempted."
+                          href: event-5067.md
+                        - name: "Event 5068 S, F: A cryptographic function provider operation was attempted."
+                          href: event-5068.md
+                        - name: "Event 5069 S, F: A cryptographic function property operation was attempted."
+                          href: event-5069.md
+                        - name: "Event 5070 S, F: A cryptographic function property modification was attempted."
+                          href: event-5070.md
+                        - name: "Event 5447 S: A Windows Filtering Platform filter has been changed."
+                          href: event-5447.md
+                        - name: "Event 6144 S: Security policy in the group policy objects has been applied successfully."
+                          href: event-6144.md
+                        - name: "Event 6145 F: One or more errors occurred while processing security policy in the group policy objects."
+                          href: event-6145.md
+                    - name: Audit Sensitive Privilege Use
+                      href: audit-sensitive-privilege-use.md
+                      items: 
+                        - name: "Event 4673 S, F: A privileged service was called."
+                          href: event-4673.md
+                        - name: "Event 4674 S, F: An operation was attempted on a privileged object."
+                          href: event-4674.md
+                        - name: "Event 4985 S: The state of a transaction has changed."
+                          href: event-4985.md
+                    - name: Audit Non Sensitive Privilege Use
+                      href: audit-non-sensitive-privilege-use.md
+                      items: 
+                        - name: "Event 4673 S, F: A privileged service was called."
+                          href: event-4673.md
+                        - name: "Event 4674 S, F: An operation was attempted on a privileged object."
+                          href: event-4674.md
+                        - name: "Event 4985 S: The state of a transaction has changed."
+                          href: event-4985.md
+                    - name: Audit Other Privilege Use Events
+                      href: audit-other-privilege-use-events.md
+                      items: 
+                        - name: "Event 4985 S: The state of a transaction has changed."
+                          href: event-4985.md
+                    - name: Audit IPsec Driver
+                      href: audit-ipsec-driver.md
+                    - name: Audit Other System Events
+                      href: audit-other-system-events.md
+                      items: 
+                        - name: "Event 5024 S: The Windows Firewall Service has started successfully."
+                          href: event-5024.md
+                        - name: "Event 5025 S: The Windows Firewall Service has been stopped."
+                          href: event-5025.md
+                        - name: "Event 5027 F: The Windows Firewall Service was unable to retrieve the security policy from the local storage. The service will continue enforcing the current policy."
+                          href: event-5027.md
+                        - name: "Event 5028 F: The Windows Firewall Service was unable to parse the new security policy. The service will continue with currently enforced policy."
+                          href: event-5028.md
+                        - name: "Event 5029 F: The Windows Firewall Service failed to initialize the driver. The service will continue to enforce the current policy."
+                          href: event-5029.md
+                        - name: "Event 5030 F: The Windows Firewall Service failed to start."
+                          href: event-5030.md
+                        - name: "Event 5032 F: Windows Firewall was unable to notify the user that it blocked an application from accepting incoming connections on the network."
+                          href: event-5032.md
+                        - name: "Event 5033 S: The Windows Firewall Driver has started successfully."
+                          href: event-5033.md
+                        - name: "Event 5034 S: The Windows Firewall Driver was stopped."
+                          href: event-5034.md
+                        - name: "Event 5035 F: The Windows Firewall Driver failed to start."
+                          href: event-5035.md
+                        - name: "Event 5037 F: The Windows Firewall Driver detected critical runtime error. Terminating."
+                          href: event-5037.md
+                        - name: "Event 5058 S, F: Key file operation."
+                          href: event-5058.md
+                        - name: "Event 5059 S, F: Key migration operation."
+                          href: event-5059.md
+                        - name: "Event 6400: BranchCache: Received an incorrectly formatted response while discovering availability of content."
+                          href: event-6400.md
+                        - name: "Event 6401: BranchCache: Received invalid data from a peer. Data discarded."
+                          href: event-6401.md
+                        - name: "Event 6402: BranchCache: The message to the hosted cache offering it data is incorrectly formatted."
+                          href: event-6402.md
+                        - name: "Event 6403: BranchCache: The hosted cache sent an incorrectly formatted response to the client."
+                          href: event-6403.md
+                        - name: "Event 6404: BranchCache: Hosted cache could not be authenticated using the provisioned SSL certificate."
+                          href: event-6404.md
+                        - name: "Event 6405: BranchCache: %2 instances of event id %1 occurred."
+                          href: event-6405.md
+                        - name: "Event 6406: %1 registered to Windows Firewall to control filtering for the following: %2."
+                          href: event-6406.md
+                        - name: "Event 6407: 1%."
+                          href: event-6407.md
+                        - name: "Event 6408: Registered product %1 failed and Windows Firewall is now controlling the filtering for %2."
+                          href: event-6408.md
+                        - name: "Event 6409: BranchCache: A service connection point object could not be parsed."
+                          href: event-6409.md
+                    - name: Audit Security State Change
+                      href: audit-security-state-change.md
+                      items: 
+                        - name: "Event 4608 S: Windows is starting up."
+                          href: event-4608.md
+                        - name: "Event 4616 S: The system time was changed."
+                          href: event-4616.md
+                        - name: "Event 4621 S: Administrator recovered system from CrashOnAuditFail."
+                          href: event-4621.md
+                    - name: Audit Security System Extension
+                      href: audit-security-system-extension.md
+                      items: 
+                        - name: "Event 4610 S: An authentication package has been loaded by the Local Security Authority."
+                          href: event-4610.md
+                        - name: "Event 4611 S: A trusted logon process has been registered with the Local Security Authority."
+                          href: event-4611.md
+                        - name: "Event 4614 S: A notification package has been loaded by the Security Account Manager."
+                          href: event-4614.md
+                        - name: "Event 4622 S: A security package has been loaded by the Local Security Authority."
+                          href: event-4622.md
+                        - name: "Event 4697 S: A service was installed in the system."
+                          href: event-4697.md
+                    - name: Audit System Integrity
+                      href: audit-system-integrity.md
+                      items: 
+                        - name: "Event 4612 S: Internal resources allocated for the queuing of audit messages have been exhausted, leading to the loss of some audits."
+                          href: event-4612.md
+                        - name: "Event 4615 S: Invalid use of LPC port."
+                          href: event-4615.md
+                        - name: "Event 4618 S: A monitored security event pattern has occurred."
+                          href: event-4618.md
+                        - name: "Event 4816 S: RPC detected an integrity violation while decrypting an incoming message."
+                          href: event-4816.md
+                        - name: "Event 5038 F: Code integrity determined that the image hash of a file is not valid."
+                          href: event-5038.md
+                        - name: "Event 5056 S: A cryptographic self-test was performed."
+                          href: event-5056.md
+                        - name: "Event 5062 S: A kernel-mode cryptographic self-test was performed."
+                          href: event-5062.md
+                        - name: "Event 5057 F: A cryptographic primitive operation failed."
+                          href: event-5057.md
+                        - name: "Event 5060 F: Verification operation failed."
+                          href: event-5060.md
+                        - name: "Event 5061 S, F: Cryptographic operation."
+                          href: event-5061.md
+                        - name: "Event 6281 F: Code Integrity determined that the page hashes of an image file are not valid."
+                          href: event-6281.md
+                        - name: "Event 6410 F: Code integrity determined that a file does not meet the security requirements to load into a process."
+                          href: event-6410.md
+                    - name: Other Events
+                      href: other-events.md
+                      items: 
+                        - name: "Event 1100 S: The event logging service has shut down."
+                          href: event-1100.md
+                        - name: "Event 1102 S: The audit log was cleared."
+                          href: event-1102.md
+                        - name: "Event 1104 S: The security log is now full."
+                          href: event-1104.md
+                        - name: "Event 1105 S: Event log automatic backup."
+                          href: event-1105.md
+                        - name: "Event 1108 S: The event logging service encountered an error while processing an incoming event published from %1."
+                          href: event-1108.md
+                    - name: "Appendix A: Security monitoring recommendations for many audit events"
+                      href: appendix-a-security-monitoring-recommendations-for-many-audit-events.md
+                    - name: Registry (Global Object Access Auditing)
+                      href: registry-global-object-access-auditing.md
+                    - name: File System (Global Object Access Auditing)
+                      href: file-system-global-object-access-auditing.md
+        - name: Windows security
+          href: /windows/security/

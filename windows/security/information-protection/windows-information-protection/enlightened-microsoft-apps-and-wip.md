@@ -4,12 +4,12 @@ description: Learn the difference between enlightened and unenlightened apps. Fi
 ms.assetid: 17c85ea3-9b66-4b80-b511-8f277cb4345f
 ms.reviewer: 
 keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
@@ -23,7 +23,6 @@ ms.date: 05/02/2019
 **Applies to:**
 
 - Windows 10, version 1607 and later
-- Windows 10 Mobile, version 1607 and later
 
 Learn the difference between enlightened and unenlightened apps, and then review the list of enlightened apps provided by Microsoft along with the text you will need to use to add them to your allowed apps list.
 
@@ -73,6 +72,8 @@ Microsoft has made a concerted effort to enlighten several of our more popular a
 
 - Microsoft Remote Desktop 
 
+- Microsoft To Do
+
 > [!NOTE]
 > Microsoft Visio, Microsoft Office Access, Microsoft Project, and Microsoft Publisher are not enlightened apps and need to be exempted from WIP policy. If they are allowed, there is a risk of data loss. For example, if a device is workplace-joined and managed and the user leaves the company, metadata files that the apps rely on remain encrypted and the apps stop functioning.
 
@@ -113,6 +114,7 @@ You can add any or all of the enlightened Microsoft apps to your allowed apps li
 |                   Microsoft Paint                    |                                                                                                                                                          **Publisher:** `O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Binary Name:** mspaint.exe<br>**App Type:** Desktop app                                                                                                                                                          |
 |               Microsoft Remote Desktop               |                                                                                                                                                           **Publisher:** `O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Binary Name:** mstsc.exe<br>**App Type:** Desktop app                                                                                                                                                           |
 |              Microsoft MAPI Repair Tool              |                                                                                                                                                          **Publisher:** `O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Binary Name:** fixmapi.exe<br>**App Type:** Desktop app                                                                                                                                                          |
+|              Microsoft To Do                         |                                                                                                                                                          **Publisher:** `O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.Todos<br>**App Type:** Store app                                                                                                                                                          |
 
 >[!NOTE]
 >Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Editing Windows IT professional documentation](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
