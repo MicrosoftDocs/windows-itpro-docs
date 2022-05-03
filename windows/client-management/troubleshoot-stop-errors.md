@@ -29,10 +29,10 @@ There's no simple explanation for the cause of stop errors (also known as blue s
 
 Our analysis of the root causes of crashes indicates that:
 
-- 70% are caused by third-party driver code
-- 10% are caused by hardware issues
-- 5% are caused by Microsoft code
-- 15% have unknown causes, because the memory is too corrupted to analyze
+- 70% are caused by third-party driver code.
+- 10% are caused by hardware issues.
+- 5% are caused by Microsoft code.
+- 15% have unknown causes, because the memory is too corrupted to analyze.
 
 > [!NOTE]
 > The root cause of stop errors is never a user-mode process. While a user-mode process (such as Notepad or Slack) may trigger a stop error, it is merely exposing the underlying bug which is always in a driver, hardware, or the OS.
@@ -242,9 +242,6 @@ For more information, see [Driver Verifier](/windows-hardware/drivers/devtest/dr
 This section doesn't contain a list of all error codes, but since many error codes have the same potential resolutions, your best bet is to follow the steps below to troubleshoot your error.
 
 The following sections list general troubleshooting procedures for common stop error codes.
-
-Stop error message and code | Mitigation
---- | ---
 
 ### VIDEO_ENGINE_TIMEOUT_DETECTED or VIDEO_TDR_TIMEOUT_DETECTED
 
