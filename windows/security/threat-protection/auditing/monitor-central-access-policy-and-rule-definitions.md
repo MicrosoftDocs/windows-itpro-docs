@@ -14,14 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
-ms.technology: mde
+ms.date: 09/09/2021
+ms.technology: windows-sec
 ---
 
 # Monitor central access policy and rule definitions
 
-**Applies to**
--   Windows 10
 
 This article for IT professionals describes how to monitor changes to central access policy and central access rule definitions when you use advanced security auditing options to monitor dynamic access control objects.
 

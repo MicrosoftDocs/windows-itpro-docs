@@ -2,10 +2,9 @@
 title: Windows ADK for Windows 10 scenarios for IT Pros (Windows 10)
 description: The Windows Assessment and Deployment Kit (Windows ADK) contains tools that can be used by IT Pros to deploy Windows.
 ms.assetid: FC4EB39B-29BA-4920-87C2-A00D711AE48B
-ms.reviewer: 
-manager: laurawi
-ms.audience: itpro
-author: greg-lindsay
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -71,15 +70,14 @@ Here are some things you can do with Windows SIM:
 
 For a list of settings you can change, see [Unattended Windows Setup Reference](/windows-hardware/customize/desktop/unattend/) on the MSDN Hardware Dev Center.
 
-### Create a Windows image using Windows ICD
+### Create a provisioning package using Windows ICD
 
-Introduced in Windows 10, [Windows Imaging and Configuration Designer (ICD)](/windows/configuration/provisioning-packages/provisioning-install-icd) streamlines the customizing and provisioning of a Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), Windows 10 Mobile, or Windows 10 IoT Core (IoT Core) image.
+Introduced in Windows 10, [Windows Imaging and Configuration Designer (ICD)](/windows/configuration/provisioning-packages/provisioning-install-icd) streamlines the customizing and provisioning of a Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) or Windows 10 IoT Core (IoT Core) image.
 
 Here are some things you can do with Windows ICD:
 
 -   [Build and apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-create-package)
 -   [Export a provisioning package](/windows/configuration/provisioning-packages/provisioning-create-package)
--   [Build and deploy an image for Windows 10 for desktop editions](https://msdn.microsoft.com/library/windows/hardware/dn916105.aspx)
 
 ### IT Pro Windows deployment tools
 

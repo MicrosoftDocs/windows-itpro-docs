@@ -25,4 +25,4 @@
         - name: Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager
           href: replace-a-windows-7-client-with-windows-10-using-configuration-manager.md
         - name: Perform an in-place upgrade to Windows 10 using Configuration Manager
-          href: upgrade-to-windows-10-with-configuraton-manager.md
+          href: upgrade-to-windows-10-with-configuration-manager.md

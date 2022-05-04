@@ -1,8 +1,13 @@
-- name: Windows 10
+- name: Windows
   href: index.yml
   items: 
     - name: What's new
-      href: /windows/whats-new
+      expanded: true
+      items:
+        - name: What's new in Windows
+          href: /windows/whats-new
+        - name: Windows 11
+          href: /windows/whats-new/windows-11
     - name: Release information
       href: /windows/release-health
     - name: Deployment

@@ -4,28 +4,28 @@ description: This section describes the Windows Hello for Business settings that
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.topic: article
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # WindowsHelloForBusiness (Windows Configuration Designer reference)
 
 
-Use WindowsHelloForBusiness settings to specify whether [FIDO2 security keys for Windows Hello](https://blogs.windows.com/business/2018/04/17/windows-hello-fido2-security-keys/) can be used to sign in to Windows on a device configured for [Shared PC mode](wcd-sharedpc.md).
+Use WindowsHelloForBusiness settings to specify whether [FIDO2 security keys for Windows Hello](https://blogs.windows.com/business/2018/04/17/windows-hello-fido2-security-keys/) can be used to sign in to a Windows device configured for [Shared PC mode](wcd-sharedpc.md).
 
 ## Applies to
 
-| Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [SecurityKeys](#securitykeys) | X |    |  |  |  |
+| Setting groups | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: | 
+| [SecurityKeys](#securitykeys) | ✔️ |  |  |  |
 
 ## SecurityKeys
 
-Select the desired value:
+Select the value:
 
-- `0`: security keys for Windows Hello are disabled.
-- `1`: security keys for Windows Hello are enabled on [Shared PCs](wcd-sharedpc.md).
+- `0`: Security keys for Windows Hello are disabled.
+- `1`: Security keys for Windows Hello are enabled on [Shared PCs](wcd-sharedpc.md).

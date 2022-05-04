@@ -7,18 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 5068(S, F): A cryptographic function provider operation was attempted.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 This event generates in BCryptAddContextFunctionProvider() and BCryptRemoveContextFunctionProvider() functions. These are Cryptographic Next Generation (CNG) functions.
@@ -26,8 +22,6 @@ This event generates in BCryptAddContextFunctionProvider() and BCryptRemoveConte
 For more information about Cryptographic Next Generation (CNG) visit these pages:
 
 -   <https://msdn.microsoft.com/library/windows/desktop/aa376214(v=vs.85).aspx>
-
--   <https://www.microsoft.com/download/details.aspx?id=1251>
 
 -   <https://www.microsoft.com/download/details.aspx?id=30688>
 

@@ -1,15 +1,15 @@
 ---
 title: What's new in Windows 10 Enterprise LTSC 2016
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2016 (also known as Windows 10 Enterprise 2016 LTSB).
 keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 Enterprise LTSC 2016"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: low
 ms.topic: article
 ---
@@ -17,9 +17,9 @@ ms.topic: article
 # What's new in Windows 10 Enterprise LTSC 2016
 
 **Applies to**
--   Windows 10 Enterprise LTSC 2016
+-   Windows 10 Enterprise LTSC 2016
 
-This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2016 (LTSB), compared to Windows 10 Enterprise LTSC 2015 (LTSB). For a brief description of the LTSC servicing channel, see [Windows 10 Enterprise LTSC](index.md).
+This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2016 (LTSB), compared to Windows 10 Enterprise LTSC 2015 (LTSB). For a brief description of the LTSC servicing channel, see [Windows 10 Enterprise LTSC](index.md).
 
 >[!NOTE]
 >Features in Windows 10 Enterprise LTSC 2016 are equivalent to Windows 10, version 1607.
@@ -41,7 +41,7 @@ Windows ICD now includes simplified workflows for creating provisioning packages
 ### Windows Upgrade Readiness
 
 >[!IMPORTANT]
->Upgrade Readiness will not allow you to assess an upgrade to an LTSC release (LTSC builds are not available as target versions). However, you can enroll devices running LTSC to plan for an upgrade to a semi-annual channel release.
+>Upgrade Readiness will not allow you to assess an upgrade to an LTSC release (LTSC builds are not available as target versions). However, you can enroll devices running LTSC to plan for an upgrade to a General Availability Channel release.
 
 Microsoft developed Upgrade Readiness in response to demand from enterprise customers looking for additional direction and details about upgrading to Windows 10. Upgrade Readiness was built taking into account multiple channels of customer feedback, testing, and Microsoft’s experience upgrading millions of devices to Windows 10. 
 
@@ -69,14 +69,13 @@ Isolated User Mode is now included with Hyper-V so you don't have to install it 
 
 ### Windows Hello for Business
 
-When Windows 10 first shipped, it included Microsoft Passport and Windows Hello, which worked together to provide multi-factor authentication. To simplify deployment and improve supportability, Microsoft has combined these technologies into a single solution under the Windows Hello name in this version of Windows 10. Customers who have already deployed Microsoft Passport for Work will not experience any change in functionality. Customers who have yet to evaluate Windows Hello will find it easier to deploy due to simplified policies, documentation, and semantics.
+When Windows 10 first shipped, it included Microsoft Passport and Windows Hello, which worked together to provide multifactor authentication. To simplify deployment and improve supportability, Microsoft has combined these technologies into a single solution under the Windows Hello name in this version of Windows 10. Customers who have already deployed Microsoft Passport for Work will not experience any change in functionality. Customers who have yet to evaluate Windows Hello will find it easier to deploy due to simplified policies, documentation, and semantics.
 
 Additional changes for Windows Hello in Windows 10 Enterprise LTSC 2016:
 
 - Personal (Microsoft account) and corporate (Active Directory or Azure AD) accounts use a single container for keys.
 - Group Policy settings for managing Windows Hello for Business are now available for both **User Configuration** and **Computer Configuration**.
 - Beginning in this version of Windows 10, Windows Hello as a convenience PIN is disabled by default on all domain-joined computers. To enable a convenience PIN, enable the Group Policy setting **Turn on convenience PIN sign-in**. 
-<!--- Users can use Windows Phone with Windows Hello to sign in to a PC, connect to VPN, and sign in to Office 365 in a browser.-->
 
 [Learn more about Windows Hello for Business.](/windows/access-protection/hello-for-business/hello-identity-verification)
 
@@ -88,7 +87,9 @@ Additional changes for Windows Hello in Windows 10 Enterprise LTSC 2016:
   It provides the following benefits:
   - The algorithm is FIPS-compliant.
   - Easy to administer. You can use the BitLocker Wizard, manage-bde, Group Policy, MDM policy, Windows PowerShell, or WMI to manage it on devices in your organization.
-    >**Note:**  Drives encrypted with XTS-AES will not be accessible on older version of Windows. This is only recommended for fixed and operating system drives. Removable drives should continue to use the AES-CBC 128-bit or AES-CBC 256-bit algorithms.
+
+    > [!NOTE]
+    > Drives encrypted with XTS-AES will not be accessible on older version of Windows. This is only recommended for fixed and operating system drives. Removable drives should continue to use the AES-CBC 128-bit or AES-CBC 256-bit algorithms.
 
 ### Security auditing
 
@@ -117,12 +118,12 @@ Windows Information Protection (WIP) helps to protect against this potential dat
 
 Several new features and management options have been added to Windows Defender in this version of Windows 10.
 
-- [Windows Defender Offline in Windows 10](/windows/threat-protection/microsoft-defender-antivirus/windows-defender-offline) can be run directly from within Windows, without having to create bootable media.
-- [Use PowerShell cmdlets for Windows Defender](/windows/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus) to configure options and run scans.
-- [Enable the Block at First Sight feature in Windows 10](/windows/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus) to leverage the Windows Defender cloud for near-instant protection against new malware.
-- [Configure enhanced notifications for Windows Defender in Windows 10](/windows/threat-protection/microsoft-defender-antivirus/configure-notifications-microsoft-defender-antivirus) to see more information about threat detections and removal.
-- [Run a Windows Defender scan from the command line](/windows/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus).
-- [Detect and block Potentially Unwanted Applications with Windows Defender](/windows/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) during download and install times.
+- [Windows Defender Offline in Windows 10](/microsoft-365/security/defender-endpoint/microsoft-defender-offline) can be run directly from within Windows, without having to create bootable media.
+- [Use PowerShell cmdlets for Windows Defender](/microsoft-365/security/defender-endpoint/use-powershell-cmdlets-microsoft-defender-antivirus) to configure options and run scans.
+- [Enable the Block at First Sight feature in Windows 10](/microsoft-365/security/defender-endpoint/configure-block-at-first-sight-microsoft-defender-antivirus) to leverage the Windows Defender cloud for near-instant protection against new malware.
+- [Configure enhanced notifications for Windows Defender in Windows 10](/microsoft-365/security/defender-endpoint/configure-notifications-microsoft-defender-antivirus) to see more information about threat detections and removal.
+- [Run a Windows Defender scan from the command line](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus).
+- [Detect and block Potentially Unwanted Applications with Windows Defender](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) during download and install times.
 
 ### Microsoft Defender for Endpoint
 
@@ -135,7 +136,7 @@ With the growing threat from more sophisticated targeted attacks, a new security
 - The VPN client can integrate with the Conditional Access Framework, a cloud-based policy engine built into Azure Active Directory, to provide a device compliance option for remote clients.
 - The VPN client can integrate with Windows Information Protection (WIP) policy to provide additional security. [Learn more about Windows Information Protection](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip), previously known as Enterprise Data Protection.
 - New VPNv2 configuration service provider (CSP) adds configuration settings. For details, see [What's new in MDM enrollment and management](/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew_1607)
-- Microsoft Intune: *VPN Profile (Windows 10 Desktop and Mobile and later)* policy template includes support for native VPN plug-ins.
+- Microsoft Intune: *VPN* profile template includes support for native VPN plug-ins. For more information, see [Create VPN profiles to connect to VPN servers in Intune](/mem/intune/configuration/vpn-settings-configure).
 
 ## Management
 
@@ -172,6 +173,10 @@ With User Experience Virtualization (UE-V), you can capture user-customized Wind
 With the release of this version of Windows 10, UE-V is included with the Windows 10 for Enterprise edition. If you are new to Windows 10 and UE-V or upgrading from a previous version of UE-V, you’ll need to download, activate, and install server- and client-side components to start synchronizing user-customized settings across devices. 
 
 [Learn how to synchronize user-customized settings with UE-V.](/windows/configuration/ue-v/uev-for-windows)
+
+## Microsoft Edge
+
+The new chromium-based Microsoft Edge is not included in the LTSC release of Windows 10.  However, you can download and install it separately [here](https://www.microsoft.com/edge/business/download).
 
 ## See Also
 

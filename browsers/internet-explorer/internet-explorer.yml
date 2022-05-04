@@ -31,7 +31,7 @@ landingContent:
           - text: Use Enterprise Mode to improve compatibility
             url: /microsoft-edge/deploy/emie-to-improve-compatibility
           - text: Lifecycle FAQ - Internet Explorer
-            url: https://support.microsoft.com/help/17454/lifecycle-faq-internet-explorer
+            url: /lifecycle/faq/internet-explorer-microsoft-edge
       - linkListType: download
         links:
           - text: Download IE11 with Windows 10
@@ -46,8 +46,6 @@ landingContent:
             url: https://mva.microsoft.com/training-courses/getting-started-with-windows-10-for-it-professionals-10629?l=fCowqpy8_5905094681
           - text: 'Windows 10: Top Features for IT Pros'
             url: https://mva.microsoft.com/training-courses/windows-10-top-features-for-it-pros-16319?l=xBnT2ihhC_7306218965
-          - text: Manage and modernize Internet Explorer with Enterprise Mode
-            url: https://channel9.msdn.com/events/teched/newzealand/2014/pcit307
           - text: 'Virtual Lab: Enterprise Mode'
             url: https://www.microsoft.com/handsonlabs/SelfPacedLabs/?storyGuid=e4155067-2c7e-4b46-8496-eca38bedca02
 
@@ -123,7 +121,7 @@ landingContent:
           - text: Group Policy preferences for IE11
             url: ./ie11-deploy-guide/group-policy-preferences-and-ie11.md
           - text: Configure Group Policy preferences
-            url: https://support.microsoft.com/help/2898604/how-to-configure-group-policy-preference-settings-for-internet-explorer-11-in-windows-8.1-or-windows-server-2012-r2
+            url: /troubleshoot/browsers/how-to-configure-group-policy-preference-settings
           - text: Blocked out-of-date ActiveX controls
             url: ./ie11-deploy-guide/blocked-out-of-date-activex-controls.md
           - text: Out-of-date ActiveX control blocking

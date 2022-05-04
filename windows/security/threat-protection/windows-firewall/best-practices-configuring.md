@@ -13,16 +13,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Best practices for configuring Windows Defender Firewall
 
 **Applies to**
 
--   Windows operating systems including Windows 10
+-   Windows 10
+-   Windows 11
+-   Windows Server 2016 and above
 
--   Windows Server Operating Systems
 
 Windows Defender Firewall with Advanced Security provides host-based, two-way
 network traffic filtering and blocks unauthorized network traffic flowing into
@@ -38,7 +39,7 @@ type **WF.msc**, and then select **OK**. See also [Open Windows Firewall](./op
 
 When you open the Windows Defender Firewall for the first time, you can see the default settings applicable to the local computer. The Overview panel displays security settings for each type of network to which the device can connect.
 
-![Windows Defender Firewall with Advanced Security first time opening](images/fw01-profiles.png)
+![Windows Defender Firewall with Advanced Security first time opening.](images/fw01-profiles.png)
 
 *Figure 1: Windows Defender Firewall*
 
@@ -55,7 +56,7 @@ View detailed settings for each profile by right-clicking the top-level **Window
 Maintain the default settings in Windows Defender
 Firewall whenever possible. These settings have been designed to secure your device for use in most network scenarios. One key example is the default Block behavior for Inbound connections. 
 
-![A screenshot of a cell phone Description automatically generated](images/fw03-defaults.png)
+![A screenshot of a cell phone Description automatically generated.](images/fw03-defaults.png)
 
 *Figure 2: Default inbound/outbound settings*
 
@@ -70,7 +71,7 @@ In many cases, a next step for administrators will be to customize these profile
 
 This can be accomplished by right-clicking either **Inbound Rules** or **Outbound Rules**, and selecting **New Rule**. The interface for adding a new rule looks like this:
 
-![Rule creation wizard](images/fw02-createrule.png)
+![Rule creation wizard.](images/fw02-createrule.png)
 
 *Figure 3: Rule Creation Wizard*
 
@@ -119,7 +120,7 @@ In either of the scenarios above, once these rules are added they must be delete
 
 When designing a set of firewall policies for your network, it is a best practice to configure allow rules for any networked applications deployed on the host. Having these rules in place before the user first launches the application will help ensure a seamless experience.
 
-The absence of these staged rules does not necessarily mean that in the end an application will be unable to communicate on the network. However, the behaviors involved in the automatic creation of application rules at runtime requires user interaction. 
+The absence of these staged rules does not necessarily mean that in the end an application will be unable to communicate on the network. However, the behaviors involved in the automatic creation of application rules at runtime require user interaction and administrative privilege. If the device is expected to be used by non-administrative users, you should follow best practices and provide these rules before the application's first launch to avoid unexpected networking issues.
 
 To determine why some applications are blocked from communicating in the network, check for the following:
 
@@ -129,7 +130,9 @@ To determine why some applications are blocked from communicating in the network
 
 3.  Local Policy Merge is disabled, preventing the application or network service from creating local rules.
 
-![Windows Firewall prompt](images/fw04-userquery.png)
+Creation of application rules at runtime can also be prohibited by administrators using the Settings app or Group Policy.
+
+![Windows Firewall prompt.](images/fw04-userquery.png)
 
 *Figure 4: Dialog box to allow access*
 
@@ -146,7 +149,7 @@ Rule merging settings control how rules from different policy sources can be com
 
 The rule merging settings either allow or prevent local admins from creating their own firewall rules in addition to those obtained from Group Policy.
 
-![Customize settings](images/fw05-rulemerge.png)
+![Customize settings.](images/fw05-rulemerge.png)
 
 *Figure 5: Rule merging setting*
 
@@ -178,11 +181,11 @@ An important firewall feature you can use to mitigate damage during an active at
 Shields up can be achieved by checking **Block all
 incoming connections, including those in the list of allowed apps** setting found in either the Windows Settings app or the legacy file *firewall.cpl*.
 
-![Incoming connections](images/fw06-block.png)
+![Incoming connections.](images/fw06-block.png)
 
 *Figure 6: Windows settings App/Windows Security/Firewall Protection/Network Type*
 
-![Firewall cpl](images/fw07-legacy.png)
+![Firewall cpl.](images/fw07-legacy.png)
 
 *Figure 7: Legacy firewall.cpl*
 
@@ -207,4 +210,4 @@ For tasks related to creating outbound rules, see [Checklist: Creating Outbound 
 
 ## Document your changes
 
-When creating an inbound or outbound rule, you should specify details about the app itself, the port range used, and important notes like creation date. Rules must be well-documented for ease of review both by you and other admins. We highly encourage taking the time  to make the work of reviewing your firewall rules at a later date easier. And *never* create unnecessary holes in your firewall.
+When creating an inbound or outbound rule, you should specify details about the app itself, the port range used, and important notes like creation date. Rules must be well-documented for ease of review both by you and other admins. We highly encourage taking the time to make the work of reviewing your firewall rules at a later date easier. And *never* create unnecessary holes in your firewall.

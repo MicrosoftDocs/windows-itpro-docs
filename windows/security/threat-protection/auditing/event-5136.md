@@ -7,18 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 5136(S): A directory service object was modified.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-5136.png" alt="Event 5136 illustration" width="449" height="611" hspace="10" align="left" />
@@ -100,7 +96,7 @@ For a change operation you will typically see two 5136 events for one action, wi
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 

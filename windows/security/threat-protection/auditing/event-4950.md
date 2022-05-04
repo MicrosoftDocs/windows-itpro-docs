@@ -7,18 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 4950(S): A Windows Firewall setting has changed.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-4950.png" alt="Event 4950 illustration" width="449" height="354" hspace="10" align="left" />

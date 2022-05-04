@@ -4,7 +4,7 @@ description: Learn the difference between enlightened and unenlightened apps. Fi
 ms.assetid: 17c85ea3-9b66-4b80-b511-8f277cb4345f
 ms.reviewer: 
 keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
@@ -23,7 +23,6 @@ ms.date: 05/02/2019
 **Applies to:**
 
 - Windows 10, version 1607 and later
-- Windows 10 Mobile, version 1607 and later
 
 Learn the difference between enlightened and unenlightened apps, and then review the list of enlightened apps provided by Microsoft along with the text you will need to use to add them to your allowed apps list.
 

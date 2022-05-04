@@ -7,18 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/07/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 1108(S): The event logging service encountered an error while processing an incoming event published from %1.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-1108.png" alt="Event 1108 illustration" width="613" height="429" hspace="10" align="left" />

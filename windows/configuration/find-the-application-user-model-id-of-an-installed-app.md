@@ -1,13 +1,14 @@
 ---
 title: Find the Application User Model ID of an installed app
-ms.reviewer: 
-manager: dansimp
+ms.reviewer: sybruckm
+manager: dougeby
 description: To configure assigned access (kiosk mode), you need the Application User Model ID (AUMID) of apps installed on a device. 
-author: greg-lindsay
-ms.author: greglin
+author: aczechowski
+ms.author: aaroncz
 ms.topic: article
 ms.localizationpriority: medium
 ms.prod: w10
+ms.collection: highpri
 ---
 # Find the Application User Model ID of an installed app
 
@@ -18,13 +19,13 @@ To configure assigned access (kiosk mode), you need the Application User Model I
 To get the names and AUMIDs for all apps installed for the current user, open a Windows PowerShell command prompt and enter the following command:
 
 ```powershell
-get-StartApps
+Get-StartApps
 ```
 
 To get the names and AUMIDs for Windows Store apps installed for another user, open a Windows PowerShell command prompt and enter the following commands:
 
 ```powershell
-$installedapps = get-AppxPackage
+$installedapps = Get-AppxPackage
 
 $aumidList = @()
 foreach ($app in $installedapps)
@@ -50,7 +51,7 @@ To get the names and AUMIDs for all apps installed for the current user, perform
 
 3. In the **Choose Details** window, select **AppUserModelId**, and then select **OK**. (You might need to change the **View** setting from **Tiles** to **Details**.)
 
-![Image of the Choose Details options](images/aumid-file-explorer.png)
+![Image of the Choose Details options.](images/aumid-file-explorer.png)
 
 ## To find the AUMID of an installed app for the current user by using the registry
 
@@ -75,12 +76,12 @@ function listAumids( $userAccount ) {
     elseif ($userAccount)
     {
         # Find installed packages for the specified account. Must be run as an administrator in order to use this option.
-        $installedapps = get-AppxPackage -user $userAccount
+        $installedapps = Get-AppxPackage -user $userAccount
     }
     else
     {
         # Find installed packages for the current account.
-        $installedapps = get-AppxPackage
+        $installedapps = Get-AppxPackage
     }
 
     $aumidList = @()

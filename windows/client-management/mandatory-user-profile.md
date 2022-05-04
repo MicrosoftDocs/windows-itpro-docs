@@ -1,5 +1,5 @@
 ---
-title: Create mandatory user profiles (Windows 10)
+title: Create mandatory user profiles (Windows 10 and Windows 11)
 description: A mandatory user profile is a special type of pre-configured roaming user profile that administrators can use to specify settings for users.
 keywords: [".man","ntuser"]
 ms.prod: w10
@@ -7,16 +7,19 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: dansimp
 ms.author: dansimp
-ms.date: 10/02/2018
+ms.date: 09/14/2021
 ms.reviewer: 
 manager: dansimp
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Create mandatory user profiles
 
 **Applies to**
+
 - Windows 10
+- Windows 11
 
 A mandatory user profile is a roaming user profile that has been pre-configured by an administrator to specify settings for users. Settings commonly defined in a mandatory profile include (but are not limited to): icons that appear on the desktop, desktop backgrounds, user preferences in Control Panel, printer selections, and more. Configuration changes made during a user's session that are normally saved to a roaming user profile are not saved when a mandatory user profile is assigned.
 
@@ -39,7 +42,7 @@ The name of the folder in which you store the mandatory profile must use the cor
 | Windows 10, versions 1507 and 1511 | N/A | v5 |
 | Windows 10, versions 1607, 1703, 1709, 1803, 1809, 1903 and 1909 |  Windows Server 2016 and Windows Server 2019 | v6 |
 
-For more information, see [Deploy Roaming User Profiles, Appendix B](/windows-server/storage/folder-redirection/deploy-roaming-user-profiles#appendix-b-profile-version-reference-information) and [Roaming user profiles versioning in Windows 10 and Windows Server Technical Preview](https://support.microsoft.com/kb/3056198).
+For more information, see [Deploy Roaming User Profiles, Appendix B](/windows-server/storage/folder-redirection/deploy-roaming-user-profiles#appendix-b-profile-version-reference-information) and [Roaming user profiles versioning in Windows 10 and Windows Server Technical Preview](/troubleshoot/windows-server/user-profiles-and-logon/roaming-user-profiles-versioning).
 
 ## Mandatory user profile
 
@@ -66,7 +69,7 @@ First, you create a default user profile with the customizations that you want, 
 
 1. At a command prompt, type the following command and press **ENTER**.
 
-   ```dos
+   ```console
    sysprep /oobe /reboot /generalize /unattend:unattend.xml
    ```
 
@@ -75,7 +78,7 @@ First, you create a default user profile with the customizations that you want, 
    > [!TIP]
    > If you receive an error message that says "Sysprep was not able to validate your Windows installation", open %WINDIR%\\System32\\Sysprep\\Panther\\setupact.log and look for an entry like the following:
    >
-   > ![Microsoft Bing Translator package error](images/sysprep-error.png)
+   > ![Microsoft Bing Translator package error.](images/sysprep-error.png)
    >
    > Use the [Remove-AppxProvisionedPackage](/powershell/module/dism/remove-appxprovisionedpackage?view=win10-ps&preserve-view=true) and [Remove-AppxPackage -AllUsers](/powershell/module/appx/remove-appxpackage?view=win10-ps&preserve-view=true) cmdlet in Windows PowerShell to uninstall the app that is listed in the log.
 
@@ -86,11 +89,11 @@ First, you create a default user profile with the customizations that you want, 
 1. In **User Profiles**, click **Default Profile**, and then click **Copy To**.
 
 
-   ![Example of User Profiles UI](images/copy-to.png)
+   ![Example of User Profiles UI.](images/copy-to.png)
 
 1. In **Copy To**, under **Permitted to use**, click **Change**.
 
-   ![Example of Copy To UI](images/copy-to-change.png)
+   ![Example of Copy To UI.](images/copy-to-change.png)
 
 1. In **Select User or Group**, in the **Enter the object name to select** field, type `everyone`, click **Check Names**, and then click **OK**.
 
@@ -98,11 +101,11 @@ First, you create a default user profile with the customizations that you want, 
 
    - If the device is joined to the domain and you are signed in with an account that has permissions to write to a shared folder on the network, you can enter the shared folder path.
 
-   ![Example of Copy profile to](images/copy-to-path.png)
+     ![Example of Copy profile to.](images/copy-to-path.png)
 
    - If the device is not joined to the domain, you can save the profile locally and then copy it to the shared folder location.
 
-   ![Example of Copy To UI with UNC path](images/copy-to-path.png)
+     ![Example of Copy To UI with UNC path.](images/copy-to-path.png)
 
 1. Click **OK** to copy the default user profile.
 
@@ -139,9 +142,9 @@ When a user is configured with a mandatory profile, Windows 10 starts as though 
 
 | Group Policy setting | Windows 10 | Windows Server 2016 | Windows 8.1 | Windows Server 2012 |
 | --- | --- | --- | --- | --- |
-| Computer Configuration > Administrative Templates > System > Logon > **Show first sign-in animation** = Disabled | ![supported](images/checkmark.png) | ![supported](images/checkmark.png) | ![supported](images/checkmark.png) | ![supported](images/checkmark.png) |
-| Computer Configuration > Administrative Templates > Windows Components > Search > **Allow Cortana** = Disabled | ![supported](images/checkmark.png) | ![supported](images/checkmark.png) | ![not supported](images/crossmark.png)  | ![not supported](images/crossmark.png)  |
-| Computer Configuration > Administrative Templates > Windows Components > Cloud Content > **Turn off Microsoft consumer experience** = Enabled | ![supported](images/checkmark.png) | ![not supported](images/crossmark.png) | ![not supported](images/crossmark.png) | ![not supported](images/crossmark.png) |
+| Computer Configuration > Administrative Templates > System > Logon > **Show first sign-in animation** = Disabled | ![supported.](images/checkmark.png) | ![supported](images/checkmark.png) | ![supported](images/checkmark.png) | ![supported](images/checkmark.png) |
+| Computer Configuration > Administrative Templates > Windows Components > Search > **Allow Cortana** = Disabled | ![supported.](images/checkmark.png) | ![supported](images/checkmark.png) | ![not supported](images/crossmark.png)  | ![not supported](images/crossmark.png)  |
+| Computer Configuration > Administrative Templates > Windows Components > Cloud Content > **Turn off Microsoft consumer experience** = Enabled | ![supported.](images/checkmark.png) | ![not supported](images/crossmark.png) | ![not supported](images/crossmark.png) | ![not supported](images/crossmark.png) |
 
 > [!NOTE]
 > The Group Policy settings above can be applied in Windows 10 Professional edition.

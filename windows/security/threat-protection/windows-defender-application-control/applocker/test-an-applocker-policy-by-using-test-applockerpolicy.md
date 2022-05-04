@@ -1,5 +1,5 @@
 ---
-title: Test an AppLocker policy by using Test-AppLockerPolicy (Windows 10)
+title: Test an AppLocker policy by using Test-AppLockerPolicy (Windows)
 description: This topic for IT professionals describes the steps to test an AppLocker policy prior to importing it into a Group Policy Object (GPO) or another computer.
 ms.assetid: 048bfa38-6825-4a9a-ab20-776cf79f402a
 ms.reviewer: 
@@ -15,14 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Test an AppLocker policy by using Test-AppLockerPolicy
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for IT professionals describes the steps to test an AppLocker policy prior to importing it into a Group Policy Object (GPO) or another computer.
 

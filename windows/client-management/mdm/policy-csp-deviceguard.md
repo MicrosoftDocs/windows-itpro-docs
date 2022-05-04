@@ -5,7 +5,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
@@ -42,32 +42,15 @@ manager: dansimp
 <a href="" id="deviceguard-configuresystemguardlaunch"></a>**DeviceGuard/ConfigureSystemGuardLaunch**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -95,7 +78,7 @@ For more information about System Guard, see [Introducing Windows Defender Syste
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn On Virtualization Based Security*
+-   GP Friendly name: *Turn On Virtualization Based Security*
 -   GP name: *VirtualizationBasedSecurity*
 -   GP element: *SystemGuardDrop*
 -   GP path: *System/Device Guard*
@@ -119,32 +102,15 @@ ADMX Info:
 <a href="" id="deviceguard-enablevirtualizationbasedsecurity"></a>**DeviceGuard/EnableVirtualizationBasedSecurity**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -159,12 +125,12 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1709. Turns on virtualization based security(VBS) at the next reboot. virtualization based security uses the Windows Hypervisor to provide support for security services. Value type is integer.
+Turns on virtualization based security(VBS) at the next reboot. virtualization based security uses the Windows Hypervisor to provide support for security services. Value type is integer.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn On Virtualization Based Security*
+-   GP Friendly name: *Turn On Virtualization Based Security*
 -   GP name: *VirtualizationBasedSecurity*
 -   GP path: *System/Device Guard*
 -   GP ADMX file name: *DeviceGuard.admx*
@@ -185,32 +151,15 @@ The following list shows the supported values:
 <a href="" id="deviceguard-lsacfgflags"></a>**DeviceGuard/LsaCfgFlags**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -225,12 +174,12 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1709. This setting lets users turn on Credential Guard with virtualization-based security to help protect credentials at next reboot. Value type is integer.
+This setting lets users turn on Credential Guard with virtualization-based security to help protect credentials at next reboot. Value type is integer.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn On Virtualization Based Security*
+-   GP Friendly name: *Turn On Virtualization Based Security*
 -   GP name: *VirtualizationBasedSecurity*
 -   GP element: *CredentialIsolationDrop*
 -   GP path: *System/Device Guard*
@@ -253,32 +202,14 @@ The following list shows the supported values:
 <a href="" id="deviceguard-requireplatformsecurityfeatures"></a>**DeviceGuard/RequirePlatformSecurityFeatures**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -293,12 +224,12 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1709. Specifies the platform security level at the next reboot. Value type is integer.
+Specifies the platform security level at the next reboot. Value type is integer.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn On Virtualization Based Security*
+-   GP Friendly name: *Turn On Virtualization Based Security*
 -   GP name: *VirtualizationBasedSecurity*
 -   GP element: *RequirePlatformSecurityFeaturesDrop*
 -   GP path: *System/Device Guard*
@@ -315,15 +246,6 @@ The following list shows the supported values:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->

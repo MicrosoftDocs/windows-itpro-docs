@@ -9,15 +9,15 @@ metadata:
   ms.localizationpriority: medium
   author: denisebmsft
   ms.author: deniseb
-  ms.date: 06/16/2021
+  ms.date: 03/14/2022
   ms.reviewer:
   manager: dansimp
   ms.custom: asr
-  ms.technology: mde
-    
+  ms.technology: windows-sec
+  ms.topic: faq
 title: Frequently asked questions - Microsoft Defender Application Guard
 summary: |
-  **Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+
   
   This article lists frequently asked questions with answers for Microsoft Defender Application Guard (Application Guard). Questions span features, integration with the Windows operating system, and general configuration.
   
@@ -47,29 +47,7 @@ sections:
          - Verify this by going to edge://application-guard-internals/#utilities and entering the FQDN for the pac/proxy in the “check url trust” field and verifying that it says “Neutral”.
          - It must be a FQDN. A simple IP address will not work.
          - Optionally, if possible, the IP addresses associated with the server hosting the above should be removed from the Enterprise IP Ranges in the Network Isolation policies used by Application Guard.
-
-      - question: |
-          Can employees download documents from the Application Guard Edge session onto host devices?
-        answer: |
-          In Windows 10 Enterprise edition, version 1803, users are able to download documents from the isolated Application Guard container to the host PC. This capability is managed by policy.
-          
-          In Windows 10 Enterprise edition, version 1709, or Windows 10 Professional edition, version 1803, it is not possible to download files from the isolated Application Guard container to the host computer. However, employees can use the **Print as PDF** or **Print as XPS** options and save those files to the host device.
-          
-      - question: |
-          Can employees copy and paste between the host device and the Application Guard Edge session?
-        answer: |
-          Depending on your organization's settings, employees can copy and paste images (.bmp) and text to and from the isolated container.
-
-      - question: |
-          Why don't employees see their favorites in the Application Guard Edge session?
-        answer: |
-          Depending on your organization’s settings, it might be that Favorites Sync is turned off. To manage the policy, see: [Microsoft Edge and Microsoft Defender Application Guard | Microsoft Docs](/deployedge/microsoft-edge-security-windows-defender-application-guard).
-          
-      - question: |
-          Why aren’t employees able to see their extensions in the Application Guard Edge session?
-        answer: |
-          Make sure to enable the extensions policy on your Application Guard configuration.
-
+        
       - question: |
           How do I configure Microsoft Defender Application Guard to work with my network proxy (IP-Literal Addresses)?
         answer: |
@@ -194,11 +172,6 @@ sections:
           10. Choose **Apply to this Service** and select **Internet Connection Sharing (ICS) Shared Access**.
           
       - question: |
-          Why can I not launch Application Guard when Exploit Guard is enabled?
-        answer: |
-          There is a known issue such that if you change the Exploit Protection settings for CFG and possibly others, hvsimgr cannot launch. To mitigate this issue, go to **Windows Security** > **App and Browser control** > **Exploit Protection Setting**, and then switch CFG to **use default**.
-
-      - question: |
           How can I disable portions of ICS without breaking Application Guard?
         answer: |
           ICS is enabled by default in Windows, and ICS must be enabled in order for Application Guard to function correctly. We do not recommend disabling ICS; however, you can disable ICS in part by using a Group Policy and editing registry keys.
@@ -238,6 +211,21 @@ sections:
           
           Policy: Allow installation of devices using drivers that match these device setup classes
           - `{71a27cdd-812a-11d0-bec7-08002be2092f}`
+
+      - question: |
+          I'm encountering TCP fragmentation issues, and cannot enable my VPN connection. How do I fix this?
+        answer: |
+          WinNAT drops ICMP/UDP messages with packets greater than MTU when using Default Switch or Docker NAT network. Support for this has been added in [KB4571744](https://www.catalog.update.microsoft.com/Search.aspx?q=4571744). To fix the issue, install the update and enable the fix by following these steps:
+
+          1. Ensure that the FragmentAware DWORD is set to 1 in this registry setting: `\Registry\Machine\SYSTEM\CurrentControlSet\Services\Winnat`.
+
+          2. Reboot the device.
+          
+      - question: |
+          What does the _Allow users to trust files that open in Microsoft Defender Application Guard_ option in the Group policy do?
+        answer: |
+         This policy was present in Windows 10 prior to version 2004. It was removed from later versions of Windows as it doesn't enforce anything for either Edge or Office.
+
 
 additionalContent: |
 

@@ -1,13 +1,13 @@
 ---
 title: Deploy updates with Intune
-description: Deploy Windows 10 updates with Intune
+description: Deploy Windows client updates with Intune
 ms.prod: w10
 ms.mktglfcycl: manage
-author: jaimeo
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: aaroncz
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.topic: article
 ---
 
@@ -15,6 +15,7 @@ ms.topic: article
 
 **Applies to**
 
-- Windows 10
+-   Windows 10
+-   Windows 11
 
-See the Microsoft Intune [documentation](/mem/intune/protect/windows-update-for-business-configure#windows-10-feature-updates) for details about using Intune to deploy and manage Windows 10 updates.
+See the Microsoft Intune [documentation](/mem/intune/protect/windows-update-for-business-configure#windows-10-feature-updates) for details about using Intune to deploy and manage Windows client updates.

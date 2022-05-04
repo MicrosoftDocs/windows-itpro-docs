@@ -2,9 +2,8 @@
 title: Protect your enterprise data using Windows Information Protection (WIP) (Windows 10)
 description: Learn how to prevent accidental enterprise data leaks through apps and services, such as email, social media, and the public cloud.
 ms.assetid: 6cca0119-5954-4757-b2bc-e0ea4d2c7032
-ms.reviewer: 
 keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, DLP, data loss prevention, data leakage protection
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
@@ -13,7 +12,9 @@ author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+  - M365-security-compliance
+  - highpri
 ms.topic: conceptual
 ms.date: 03/05/2019
 ---
@@ -21,8 +22,7 @@ ms.date: 03/05/2019
 # Protect your enterprise data using Windows Information Protection (WIP)
 **Applies to:**
 
-- Windows 10, version 1607 and later
-- Windows 10 Mobile, version 1607 and later
+- Windows 10, version 1607 and later
 
 >Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/WindowsForBusiness/Compare).
 
@@ -57,7 +57,7 @@ To help address this security insufficiency, companies developed data loss preve
 
 - **A way to scan company data to see whether it matches any of your defined rules.** Currently, Microsoft Exchange Server and Exchange Online provide this service for email in transit, while Microsoft SharePoint and SharePoint Online provide this service for content stored in document libraries.
 
-- **The ability to specify what happens when data matches a rule, including whether employees can bypass enforcement.** For example, in Microsoft SharePoint and SharePoint Online, the Microsoft data loss prevention system lets you warn your employees that shared data includes sensitive info, and to share it anyway (with an optional audit log entry).
+- **The ability to specify what happens when data matches a rule, including whether employees can bypass enforcement.** For example, in Microsoft SharePoint and SharePoint Online, the Microsoft Purview data loss prevention system lets you warn your employees that shared data includes sensitive info, and to share it anyway (with an optional audit log entry).
 
 Unfortunately, data loss prevention systems have their own problems. For example, the less detailed the rule set, the more false positives are created, leading employees to believe that the rules slow down their work and need to be bypassed in order to remain productive, potentially leading to data being incorrectly blocked or improperly released. Another major problem is that data loss prevention systems must be widely implemented to be effective. For example, if your company uses a data loss prevention system for email, but not for file shares or document storage, you might find that your data leaks through the unprotected channels. But perhaps the biggest problem with data loss prevention systems is that it provides a jarring experience that interrupts the employees’ natural workflow by stopping some operations (such as sending a message with an attachment that the system tags as sensitive) while allowing others, often according to subtle rules that the employee doesn’t see and can’t understand.
 

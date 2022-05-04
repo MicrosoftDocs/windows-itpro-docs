@@ -4,11 +4,12 @@ description: Find resources for your Windows 10 deployment. Windows 10 provides 
 ms.assetid: 002F9B79-B50F-40C5-A7A5-0B4770E6EC15
 keywords: deploy, upgrade, update, configure
 ms.prod: w10
-manager: laurawi
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.localizationpriority: medium
-author: greg-lindsay
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.topic: article
 ---
 
@@ -30,6 +31,6 @@ Windows 10 provides new deployment capabilities, scenarios, and tools by buildi
 - [Deploy Windows 10 with MDT](../deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md)
 - [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](../deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
 - [Upgrade to Windows 10 with MDT](../deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md)
-- [Upgrade to Windows 10 with Configuration Manager](../deploy-windows-cm/upgrade-to-windows-10-with-configuraton-manager.md)
+- [Upgrade to Windows 10 with Configuration Manager](../deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager.md)
 - [Windows Imaging and Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd)
  

@@ -10,7 +10,7 @@ ms.author: deniseb
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Windows Defender Application Control and virtualization-based protection of code integrity

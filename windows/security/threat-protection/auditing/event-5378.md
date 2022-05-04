@@ -7,18 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 5378(F): The requested credentials delegation was disallowed by policy.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-5378.png" alt="Event 5378 illustration" width="449" height="438" hspace="10" align="left" />
@@ -92,7 +88,7 @@ It typically occurs when [CredSSP](/openspecs/windows_protocols/ms-cssp/85f57821
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 

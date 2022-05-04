@@ -1,9 +1,8 @@
 ---
-title: What's new in Windows 10 deployment
-ms.reviewer: 
-manager: laurawi
-ms.author: greglin
-description: Use this article to learn about new solutions and online content related to deploying Windows 10 in your organization.
+title: What's new in Windows client deployment
+manager: dougeby
+ms.author: aaroncz
+description: Use this article to learn about new solutions and online content related to deploying Windows in your organization.
 keywords: deployment, automate, tools, configure, news
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -11,30 +10,43 @@ ms.prod: w10
 ms.sitesec: library
 ms.pagetype: deploy
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.collection: highpri
 ---
 
-# What's new in Windows 10 deployment
+# What's new in Windows client deployment
 
 **Applies to:**
-- Windows 10
+- Windows 10
+- Windows 11
 
 ## In this topic
 
-This topic provides an overview of new solutions and online content related to deploying Windows 10 in your organization.
+This topic provides an overview of new solutions and online content related to deploying Windows client in your organization.
 
 - For an all-up overview of new features in Windows 10, see [What's new in Windows 10](/windows/whats-new/index).
 
-## Latest news
+## [Preview] Windows Autopilot diagnostics page
 
-[SetupDiag](#setupdiag) is included with Windows 10, version 2004 and later.<br>
-The [Windows ADK for Windows 10, version 2004](/windows-hardware/get-started/adk-install) is available.<br>
+When you deploy Windows 11 with Autopilot, you can enable users to view additional information about the Autopilot provisioning process. A new **Windows Autopilot diagnostics Page** is available to provide IT admins and end users with a user-friendly view to troubleshoot Autopilot failures. For more information, see [Windows Autopilot: What's new](/mem/autopilot/windows-autopilot-whats-new#preview-windows-autopilot-diagnostics-page).
+
+## Windows 11
+
+Check out the following new articles about Windows 11:
+- [Overview of Windows 11](/windows/whats-new/windows-11)
+- [Plan for Windows 11](/windows/whats-new/windows-11-plan)
+- [Prepare for Windows 11](/windows/whats-new/windows-11-prepare)
+
+The [Windows ADK for Windows 11](/windows-hardware/get-started/adk-install) is available.<br>
+
+## Deployment tools 
+
+[SetupDiag](#setupdiag) is included with Windows 10, version 2004 and later, and Windows 11.<br>
 New capabilities are available for [Delivery Optimization](#delivery-optimization) and [Windows Update for Business](#windows-update-for-business).<br>
 VPN support is added to [Windows Autopilot](#windows-autopilot)<br>
 An in-place upgrade wizard is available in [Configuration Manager](#microsoft-endpoint-configuration-manager).<br>
-The [Windows ADK](#windows-assessment-and-deployment-kit-adk) for Windows 10, version 2004 is available.<br>
 The Windows 10 deployment and update [landing page](index.yml) has been redesigned, with additional content added and more content coming soon.<br>
 
 ## The Modern Desktop Deployment Center
@@ -60,7 +72,7 @@ Windows PowerShell cmdlets for Delivery Optimization have been improved:
 - **Get-DeliveryOptimizationLogAnalysis** is a new cmdlet that provides a summary of the activity in your DO log (# of downloads, downloads from peers, overall peer efficiency). Use the **-ListConnections** option to for in-depth look at peer-to-peer connections.
 - **Enable-DeliveryOptimizationVerboseLogs** is a new cmdlet that enables a greater level of logging detail to assist in troubleshooting.
 
-Additional improvements in [Delivery Optimization](./update/waas-delivery-optimization.md) include:
+Additional improvements in [Delivery Optimization](./do/waas-delivery-optimization.md) include:
 - Enterprise network [throttling is enhanced](/windows-insider/archive/new-for-business#new-download-throttling-options-for-delivery-optimization-build-18917) to optimize foreground vs. background throttling.
 - Automatic cloud-based congestion detection is available for PCs with cloud service support.
 - Improved peer efficiency for enterprises and educational institutions with complex networks is enabled with [new policies](/windows/client-management/mdm/policy-csp-deliveryoptimization). This now supports Microsoft 365 Apps for enterprise updates and Intune content, with Microsoft Endpoint Manager content coming soon!
@@ -80,7 +92,7 @@ The following Delivery Optimization policies are removed in the Windows 10, vers
 - Intune console updates: target version is now available allowing you to specify which version of Windows 10 you want devices to move to. Additionally, this capability enables you to keep devices on their current version until they reach end of service. Check it out in Intune, also available as a Group Policy and Configuration Service Provider (CSP) policy.
 - Validation improvements: To ensure devices and end users stay productive and protected, Microsoft uses safeguard holds to block devices from updating when there are known issues that would impact that device. Also, to better enable IT administrators to validate on the latest release, we have created a new policy that enables admins to opt devices out of the built-in safeguard holds.
 
-- [**Automatic Restart Sign-on (ARSO)**](/windows-insider/at-work-pro/wip-4-biz-whats-new#automatic-restart-and-sign-on-arso-for-enterprises-build-18305): Windows will automatically log on as the user and lock their device in order to complete the update, ensuring that when the user returns and unlocks the device, the update will be completed.
+- [**Automatic Restart Sign-on (ARSO)**](/windows-server/identity/ad-ds/manage/component-updates/winlogon-automatic-restart-sign-on--arso-): Windows will automatically log on as the user and lock their device in order to complete the update, ensuring that when the user returns and unlocks the device, the update will be completed.
 - [**Windows Update for Business**](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-and-the-retirement-of-SAC-T/ba-p/339523): There will now be a single, common start date for phased deployments (no more SAC-T designation). In addition, there will be a new notification and reboot scheduling experience for end users, the ability to enforce update installation and reboot deadlines, and the ability to provide end user control over reboots for a specific time period.
 - **Update rollback improvements**: You can now automatically recover from startup failures by removing updates if the startup failure was introduced after the installation of recent driver or quality updates. When a device is unable to start up properly after the recent installation of Quality of driver updates, Windows will now automatically uninstall the updates to get the device back up and running normally.
 - **Pause updates**: We have extended the ability to pause updates for both feature and monthly updates. This extension ability is for all editions of Windows 10, including Home. You can pause both feature and monthly updates for up to 35 days (seven days at a time, up to five times). Once the 35-day pause period is reached, you will need to update your device before pausing again.
@@ -90,7 +102,7 @@ The following Delivery Optimization policies are removed in the Windows 10, vers
 
 Microsoft previously announced that we are [extending support](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop) for Windows 10 Enterprise and Windows 10 Education editions to 30 months from the version release date. This includes all past versions and future versions that are targeted for release in September (versions ending in 09, ex: 1809). Future releases that are targeted for release in March (versions ending in 03, ex: 1903) will continue to be supported for 18 months from their release date. All releases of Windows 10 Home, Windows 10 Pro, and Microsoft 365 Apps for enterprise will continue to be supported for 18 months (there is no change for these editions).  These support policies are summarized in the table below.
 
-![Support lifecycle](images/support-cycle.png)
+![Support lifecycle.](images/support-cycle.png)
 
 ## Windows 10 Enterprise upgrade
 
@@ -180,9 +192,9 @@ For the latest information about MDT, see the [MDT release notes](/mem/configmgr
 
 The Windows Assessment and Deployment Kit (Windows ADK) contains tools that can be used by IT Pros to deploy Windows.
 
-Download the Windows ADK and Windows PE add-on for Windows 10, version 2004 [here](/windows-hardware/get-started/adk-install).
+Download the Windows ADK and Windows PE add-on for Windows 11 [here](/windows-hardware/get-started/adk-install).
 
-For information about what's new in the ADK, see [What's new in the Windows ADK for Windows 10, version 2004](/windows-hardware/get-started/what-s-new-in-kits-and-tools#whats-new-in-the-windows-adk-for-windows-10-version-2004).
+For information about what's new in the ADK, see [What's new in the Windows ADK](/windows-hardware/get-started/what-s-new-in-kits-and-tools).
 
 Also see [Windows ADK for Windows 10 scenarios for IT Pros](windows-adk-scenarios-for-it-pros.md).
 
