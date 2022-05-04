@@ -1,7 +1,7 @@
 ---
 title: Use Virtual Smart Cards (Windows 10)
 description: This topic for the IT professional describes requirements for virtual smart cards and provides information about how to use and manage them.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -74,14 +74,18 @@ For more information about these Windows APIs, see:
 
 To help users visually distinguish a Trusted Platform Module (TPM)-based virtual smart card from physical smart cards, the virtual smart card has a different icon. The following icon is displayed during sign in, and on other screens that require the user to enter the PIN for a virtual smart card.
 
-![Icon for a virtual smart card](images/vsc-virtual-smart-card-icon.png)
+![Icon for a virtual smart card.](images/vsc-virtual-smart-card-icon.png)
 
 A TPM-based virtual smart card is labeled **Security Device** in the user interface.
 
 ## Changing the PIN
 
-The PIN for virtual smart card can be changed by pressing Ctrl+Alt+Del, and then selecting the TPM virtual smart card under **Sign in options**.
-
+The PIN for a virtual smart card can be changed by following these steps:
+- Sign in with the old PIN or password.
+- Press Ctrl+Alt+Del and choose **Change a password**.
+- Select **Sign-in Options**.
+- Select the virtual smart card icon.
+- Enter and confirm the new PIN.
 ## Resolving issues
 
 ### TPM not provisioned

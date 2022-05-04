@@ -1,14 +1,14 @@
 ---
 title: What's new in Windows 10 Enterprise LTSC 2019
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2019 (also known as Windows 10 Enterprise 2019 LTSB).
 keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 Enterprise LTSC 2019"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: low
 ms.topic: article
 ---
@@ -16,9 +16,9 @@ ms.topic: article
 # What's new in Windows 10 Enterprise LTSC 2019
 
 **Applies to**
--   Windows 10 Enterprise LTSC 2019
+-   Windows 10 Enterprise LTSC 2019
 
-This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2019, compared to Windows 10 Enterprise LTSC 2016 (LTSB). For a brief description of the LTSC servicing channel and associated support, see [Windows 10 Enterprise LTSC](index.md).
+This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2019, compared to Windows 10 Enterprise LTSC 2016 (LTSB). For a brief description of the LTSC servicing channel and associated support, see [Windows 10 Enterprise LTSC](index.md).
 
 >[!NOTE]
 >Features in Windows 10 Enterprise LTSC 2019 are equivalent to Windows 10, version 1809. 
@@ -32,15 +32,15 @@ Windows 10 Enterprise LTSC 2019 builds on Windows 10 Pro, version 1809 adding pr
 The Windows 10 Enterprise LTSC 2019 release is an important release for LTSC users because it includes the cumulative enhancements provided in Windows 10 versions 1703, 1709, 1803, and 1809. Details about these enhancements are provided below. 
 
 >[!IMPORTANT]
->The LTSC release is [intended for special use devices](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/LTSC-What-is-it-and-when-should-it-be-used/ba-p/293181). Support for LTSC by apps and tools that are designed for the semi-annual channel release of Windows 10 might be limited.
+>The LTSC release is [intended for special use devices](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/LTSC-What-is-it-and-when-should-it-be-used/ba-p/293181). Support for LTSC by apps and tools that are designed for the General Availability Channel release of Windows 10 might be limited.
 
 ## Microsoft Intune
 
-Microsoft Intune supports Windows 10 Enterprise LTSC 2019 and later.  This includes support for features such as [Windows Autopilot](#windows-autopilot). However, note that Windows 10 Update Rings Device profiles do not support LTSC releases, therefore you should use [Policy configuration service provider](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update), WSUS, or Configuration Manager for patching.
+Microsoft Intune supports Windows 10 Enterprise LTSC 2019 and later. However, note that Windows 10 Update Rings Device profiles do not support LTSC releases, therefore you should use [Policy configuration service provider](/windows/client-management/mdm/policy-csp-update), WSUS, or Configuration Manager for patching.
 
 ## Security
 
-This version of Window 10 includes security improvements for threat protection, information protection, and identity protection.
+This version of Windows 10 includes security improvements for threat protection, information protection, and identity protection.
 
 ### Threat protection
 
@@ -48,13 +48,15 @@ This version of Window 10 includes security improvements for threat protection, 
 
 The [Microsoft Defender for Endpoint](/windows/security/threat-protection/index) platform includes the security pillars shown in the following diagram. In this version of Windows, Defender for Endpoint includes powerful analytics, security stack integration, and centralized management for better detection, prevention, investigation, response, and management. 
 
-![Microsoft Defender for Endpoint](../images/wdatp.png)
+[ ![Microsoft Defender for Endpoint.](../images/wdatp.png) ](../images/wdatp.png#lightbox)
 
 ##### Attack surface reduction 
 
-Attack surface reduction includes host-based intrusion prevention systems such as [controlled folder access](/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard).
-    - This feature can help prevent ransomware and other destructive malware from changing your personal files. In some cases, apps that you normally use might be blocked from making changes to common folders like **Documents** and **Pictures**. We’ve made it easier for you to add apps that were recently blocked so you can keep using your device without turning off the feature altogether.
-    - When an app is blocked, it will appear in a recently blocked apps list, which you can get to by clicking **Manage settings** under the **Ransomware protection** heading. Click **Allow an app through Controlled folder access**. After the prompt, click the **+** button and choose **Recently blocked apps**. Select any of the apps to add them to the allowed list. You can also browse for an app from this page.
+Attack surface reduction includes host-based intrusion prevention systems such as [controlled folder access]/microsoft-365/security/defender-endpoint/enable-controlled-folders).
+
+- This feature can help prevent ransomware and other destructive malware from changing your personal files. In some cases, apps that you normally use might be blocked from making changes to common folders like **Documents** and **Pictures**. We’ve made it easier for you to add apps that were recently blocked so you can keep using your device without turning off the feature altogether.
+
+- When an app is blocked, it will appear in a recently blocked apps list, which you can get to by clicking **Manage settings** under the **Ransomware protection** heading. Click **Allow an app through Controlled folder access**. After the prompt, click the **+** button and choose **Recently blocked apps**. Select any of the apps to add them to the allowed list. You can also browse for an app from this page.
 
 ###### Windows Defender Firewall 
 
@@ -74,34 +76,42 @@ But these protections can also be configured separately. And, unlike HVCI, code 
 
 Endpoint detection and response is improved. Enterprise customers can now take advantage of the entire Windows security stack with Microsoft Defender Antivirus **detections** and Device Guard **blocks** being surfaced in the Microsoft Defender for Endpoint portal. 
 
-   Windows Defender is now called Microsoft Defender Antivirus and now shares detection status between M365 services and interoperates with Microsoft Defender for Endpoint.  Additional policies have also been implemented to enhance cloud based protection, and new channels are available for emergency protection. For more information, see [Virus and threat protection](/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection) and [Use next-gen technologies in Microsoft Defender Antivirus through cloud-delivered protection](/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus). 
-    
-   We've also [increased the breadth of the documentation library for enterprise security admins](/windows/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10). The new library includes information on:
-- [Deploying and enabling AV protection](/windows/threat-protection/microsoft-defender-antivirus/deploy-microsoft-defender-antivirus)
-- [Managing updates](/windows/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus)
-- [Reporting](/windows/threat-protection/microsoft-defender-antivirus/report-monitor-microsoft-defender-antivirus)
-- [Configuring features](/windows/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features)
-- [Troubleshooting](/windows/threat-protection/microsoft-defender-antivirus/troubleshoot-microsoft-defender-antivirus)
+Windows Defender is now called Microsoft Defender Antivirus and now shares detection status between M365 services and interoperates with Microsoft Defender for Endpoint.  Additional policies have also been implemented to enhance cloud based protection, and new channels are available for emergency protection. For more information, see [Virus and threat protection](/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection) and [Use next-gen technologies in Microsoft Defender Antivirus through cloud-delivered protection](/microsoft-365/security/defender-endpoint/cloud-protection-microsoft-defender-antivirus). 
 
-  Some of the highlights of the new library include [Evaluation guide for Microsoft Defender AV](/windows/threat-protection/microsoft-defender-antivirus//evaluate-microsoft-defender-antivirus) and [Deployment guide for Microsoft Defender AV in a virtual desktop infrastructure environment](/windows/threat-protection/microsoft-defender-antivirus/deployment-vdi-microsoft-defender-antivirus).
+We've also [increased the breadth of the documentation library for enterprise security admins](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows). The new library includes information on:
 
-  New features for Microsoft Defender AV in Windows 10 Enterprise LTSC 2019 include:
-- [Updates to how the Block at First Sight feature can be configured](/windows/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
-- [The ability to specify the level of cloud-protection](/windows/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus)
-- [Microsoft Defender Antivirus protection in the Windows Defender Security Center app](/windows/threat-protection/microsoft-defender-antivirus/windows-defender-security-center-antivirus)
+- [Deploying and enabling AV protection](/microsoft-365/security/defender-endpoint/deploy-microsoft-defender-antivirus)
+- [Managing updates](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus)
+- [Reporting](/microsoft-365/security/defender-endpoint/report-monitor-microsoft-defender-antivirus)
+- [Configuring features](/microsoft-365/security/defender-endpoint/configure-microsoft-defender-antivirus-features)
+- [Troubleshooting](/microsoft-365/security/defender-endpoint/troubleshoot-microsoft-defender-antivirus)
 
-  We've [invested heavily in helping to protect against ransomware](https://blogs.windows.com/business/2016/11/11/defending-against-ransomware-with-windows-10-anniversary-update/#UJlHc6SZ2Zm44jCt.97), and we continue that investment with [updated behavior monitoring and always-on real-time protection](/windows/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus).
+Some of the highlights of the new library include [Evaluation guide for Microsoft Defender AV](/microsoft-365/security/defender-endpoint/evaluate-microsoft-defender-antivirus) and [Deployment guide for Microsoft Defender AV in a virtual desktop infrastructure environment](/microsoft-365/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus).
 
-  **Endpoint detection and response** is also enhanced. New **detection** capabilities include:
-- [Use the threat intelligence API to create custom alerts](/windows/threat-protection/windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection) - Understand threat intelligence concepts, enable the threat intel application, and create custom threat intelligence alerts for your organization.
-  - [Custom detection](/windows/security/threat-protection/windows-defender-atp/overview-custom-detections). With custom detections, you can create custom queries to monitor events for any kind of behavior such as suspicious or emerging threats. This can be done by leveraging the power of Advanced hunting through the creation of custom detection rules. 
-  - Improvements on OS memory and kernel sensors to enable detection of attackers who are using in-memory and kernel-level attacks.
-  - Upgraded detections of ransomware and other advanced attacks.
-  - Historical detection capability ensures new detection rules apply to up to six months of stored data to detect previous attacks that might not have been noticed.
+New features for Microsoft Defender AV in Windows 10 Enterprise LTSC 2019 include:
 
-  **Threat response** is improved when an attack is detected, enabling immediate action by security teams to contain a breach:
-  - [Take response actions on a machine](/windows/threat-protection/windows-defender-atp/respond-machine-alerts-windows-defender-advanced-threat-protection) - Quickly respond to detected attacks by isolating machines or collecting an investigation package.
-  - [Take response actions on a file](/windows/threat-protection/windows-defender-atp/respond-file-alerts-windows-defender-advanced-threat-protection) - Quickly respond to detected attacks by stopping and quarantining files or blocking a file.
+- [Updates to how the Block at First Sight feature can be configured](/microsoft-365/security/defender-endpoint/configure-block-at-first-sight-microsoft-defender-antivirus)
+- [The ability to specify the level of cloud-protection](/microsoft-365/security/defender-endpoint/specify-cloud-protection-level-microsoft-defender-antivirus)
+- [Microsoft Defender Antivirus protection in the Windows Defender Security Center app](/microsoft-365/security/defender-endpoint/microsoft-defender-security-center-antivirus)
+
+We've [invested heavily in helping to protect against ransomware](https://blogs.windows.com/business/2016/11/11/defending-against-ransomware-with-windows-10-anniversary-update/#UJlHc6SZ2Zm44jCt.97), and we continue that investment with [updated behavior monitoring and always-on real-time protection](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus).
+
+**Endpoint detection and response** is also enhanced. New **detection** capabilities include:
+
+- [Use the threat intelligence API to create custom alerts](/windows/security/threat-protection/windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection) - Understand threat intelligence concepts, enable the threat intel application, and create custom threat intelligence alerts for your organization.
+
+- [Custom detection](/microsoft-365/security/defender-endpoint/overview-custom-detections). With custom detections, you can create custom queries to monitor events for any kind of behavior such as suspicious or emerging threats. This can be done by leveraging the power of Advanced hunting through the creation of custom detection rules. 
+
+- Improvements on OS memory and kernel sensors to enable detection of attackers who are using in-memory and kernel-level attacks.
+
+- Upgraded detections of ransomware and other advanced attacks.
+
+- Historical detection capability ensures new detection rules apply to up to six months of stored data to detect previous attacks that might not have been noticed.
+
+**Threat response** is improved when an attack is detected, enabling immediate action by security teams to contain a breach:
+
+- [Take response actions on a machine](/windows/threat-protection/windows-defender-atp/respond-machine-alerts-windows-defender-advanced-threat-protection) - Quickly respond to detected attacks by isolating machines or collecting an investigation package.
+- [Take response actions on a file](/windows/threat-protection/windows-defender-atp/respond-file-alerts-windows-defender-advanced-threat-protection) - Quickly respond to detected attacks by stopping and quarantining files or blocking a file.
 
 Additional capabilities have been added to help you gain a holistic view on **investigations** include:
 
@@ -139,16 +149,18 @@ We’re continuing to work on how other security apps you’ve installed show up
 
 This also means you’ll see more links to other security apps within **Windows Security**. For example, if you open the **Firewall & network protection** section, you’ll see the firewall apps that are running on your device under each firewall type, which includes domain, private, and public networks).
 
-You can read more about ransomware mitigations and detection capability at:  
+You can read more about ransomware mitigations and detection capability at:
+
 - [Averting ransomware epidemics in corporate networks with Microsoft Defender for Endpoint](https://blogs.technet.microsoft.com/mmpc/2017/01/30/averting-ransomware-epidemics-in-corporate-networks-with-windows-defender-atp/)
-- [Ransomware security intelligence](/windows/security/threat-protection/intelligence/ransomware-malware)
 - [Microsoft Malware Protection Center blog](https://blogs.technet.microsoft.com/mmpc/category/research/ransomware/)
 
 Also see [New capabilities of Microsoft Defender for Endpoint further maximizing the effectiveness and robustness of endpoint security](https://blogs.windows.com/business/2018/04/17/new-capabilities-of-windows-defender-atp-further-maximizing-the-effectiveness-and-robustness-of-endpoint-security/#62FUJ3LuMXLQidVE.97)
 
 Get a quick, but in-depth overview of Microsoft Defender for Endpoint for Windows 10: [Defender for Endpoint](/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection).
 
+<!-- 
 For more information about features of Microsoft Defender for Endpoint available in different editions of Windows 10, see the [Windows 10 commercial edition comparison](https://wincom.blob.core.windows.net/documents/Windows10_Commercial_Comparison.pdf).
+-->
 
 ### Information protection 
 
@@ -176,26 +188,6 @@ This is an update to the [BitLocker CSP](/windows/client-management/mdm/bitlocke
 
 This feature will soon be enabled on Olympia Corp as an optional feature.
 
-#### Delivering BitLocker policy to AutoPilot devices during OOBE 
-
-You can choose which encryption algorithm to apply to BitLocker encryption capable devices, rather than automatically having those devices encrypt themselves with the default algorithm. This allows the encryption algorithm (and other BitLocker policies that must be applied prior to encryption), to be delivered before BitLocker encryption begins. 
-
-For example, you can choose the XTS-AES 256 encryption algorithm, and have it applied to devices that would normally encrypt themselves automatically with the default XTS-AES 128 algorithm during OOBE.
-
-To achieve this:
-
-1. Configure the [encryption method settings](/intune/endpoint-protection-windows-10#windows-encryption) in the Windows 10 Endpoint Protection profile to the desired encryption algorithm. 
-
-2. [Assign the policy](/intune/device-profile-assign) to your Autopilot device group. 
-
-   > [!IMPORTANT]
-   > The encryption policy must be assigned to **devices** in the group, not users.
-
-3. Enable the Autopilot [Enrollment Status Page](/windows/deployment/windows-autopilot/enrollment-status) (ESP) for these devices. 
-
-   > [!IMPORTANT]
-   > If the ESP is not enabled, the policy will not apply before encryption starts.
-
 ### Identity protection
 
 Improvements have been added are to Windows Hello for Business and Credential Guard.
@@ -204,13 +196,11 @@ Improvements have been added are to Windows Hello for Business and Credential Gu
 
 New features in Windows Hello enable a better device lock experience, using multifactor unlock with new location and user proximity signals. Using Bluetooth signals, you can configure your Windows 10 device to automatically lock when you walk away from it, or to prevent others from accessing the device when  you are not present.
 
-New features in [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification.md) include: 
+New features in [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification) include: 
 
 - You can now reset a forgotten PIN without deleting company managed data or apps on devices managed by [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune).
 
-- For Windows Phone devices, an administrator is able to initiate a remote PIN reset through the Intune portal.
-
-- For Windows desktops, users are able to reset a forgotten PIN through **Settings > Accounts > Sign-in options**. For more details, check out [What if I forget my PIN?](/windows/security/identity-protection/hello-for-business/hello-features#pin-reset).
+- For Windows desktops, users are able to reset a forgotten PIN through **Settings > Accounts > Sign-in options**. For more details, check out [What if I forget my PIN?](/windows/security/identity-protection/hello-for-business/hello-feature-pin-reset).
 
 [Windows Hello](/windows/security/identity-protection/hello-for-business/hello-features) now supports FIDO 2.0 authentication for Azure AD Joined Windows 10 devices and has enhanced support for shared devices, as described in [Kiosk configuration](#kiosk-configuration). 
 
@@ -218,13 +208,13 @@ New features in [Windows Hello for Business](/windows/security/identity-protecti
 
 - Support for S/MIME with Windows Hello for Business and APIs for non-Microsoft identity lifecycle management solutions.
 
-- Windows Hello is part of the account protection pillar in Windows Defender Security Center. Account Protection will encourage password users to set up Windows Hello Face, Fingerprint or PIN for faster sign in, and will notify Dynamic lock users if Dynamic lock has stopped working because their phone or device Bluetooth is off.
+- Windows Hello is part of the account protection pillar in Windows Defender Security Center. Account Protection will encourage password users to set up Windows Hello Face, Fingerprint or PIN for faster sign in, and will notify Dynamic lock users if Dynamic lock has stopped working because their device Bluetooth is off.
 
 - You can set up Windows Hello from lock screen for MSA accounts. We’ve made it easier for Microsoft account users to set up Windows Hello on their devices for faster and more secure sign-in. Previously, you had to navigate deep into Settings to find Windows Hello. Now, you can set up Windows Hello Face, Fingerprint or PIN straight from your lock screen by clicking the Windows Hello tile under Sign-in options.
 
 - New [public API](/uwp/api/windows.security.authentication.web.core.webauthenticationcoremanager.findallaccountsasync#Windows_Security_Authentication_Web_Core_WebAuthenticationCoreManager_FindAllAccountsAsync_Windows_Security_Credentials_WebAccountProvider_) for secondary account SSO for a particular identity provider.
 
-- It is easier to set up Dynamic lock, and WD SC actionable alerts have been added when Dynamic lock stops working (ex: phone Bluetooth is off).
+- It is easier to set up Dynamic lock, and WD SC actionable alerts have been added when Dynamic lock stops working (ex: device Bluetooth is off).
  
 For more information, see: [Windows Hello and FIDO2 Security Keys enable secure and easy authentication for shared devices](https://blogs.windows.com/business/2018/04/17/windows-hello-fido2-security-keys/#OdKBg3pwJQcEKCbJ.97)
 
@@ -251,7 +241,7 @@ The new [security baseline for Windows 10 version 1803](/windows/security/threat
 
 #### SMBLoris vulnerability
 
-An issue, known as “SMBLoris�?, which could result in denial of service, has been addressed.
+An issue, known as _SMBLoris_, which could result in denial of service, has been addressed.
 
 #### Windows Security Center
 
@@ -263,7 +253,7 @@ The WSC service now requires antivirus products to run as a protected process to
 
 WSC now includes the Fluent Design System elements you know and love. You’ll also notice we’ve adjusted the spacing and padding around the app. It will now dynamically size the categories on the main page if more room is needed for extra info. We also updated the title bar so that it will use your accent color if you have enabled that option in **Color Settings**.
 
-![Security at a glance](../images/defender.png "Windows Security Center")
+![Security at a glance.](../images/defender.png "Windows Security Center")
 
 #### Group Policy Security Options
 
@@ -276,23 +266,10 @@ A new security policy setting
 
 We’ve continued to work on the **Current threats** area in  [Virus & threat protection](/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection), which now displays all threats that need action. You can quickly take action on threats from this screen: 
 
-![S mode settings](../images/virus-and-threat-protection.png "Virus & threat protection settings")
+> [!div class="mx-imgBorder"]
+> ![Virus & threat protection settings in Windows S mode.](../images/virus-and-threat-protection.png)
 
 ## Deployment
-
-### Windows Autopilot
-
-[Windows Autopilot](/windows/deployment/windows-autopilot/windows-autopilot) is a deployment tool introduced with Windows 10, version 1709 and is also available for Windows 10 Enterprise LTSC 2019 (and later versions). Windows Autopilot provides a modern device lifecycle management service powered by the cloud to deliver a zero touch experience for deploying Windows 10. 
-
-Windows Autopilot is currently available with Surface, Dell, HP, and Lenovo. Other OEM partners such as Panasonic, and Acer will support Autopilot soon. Check the [Windows IT Pro Blog](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog) or this article for updated information.
-
-Using Intune, Autopilot now enables locking the device during provisioning during the Windows Out Of Box Experience (OOBE) until policies and settings for the device get provisioned, thereby ensuring that by the time the user gets to the desktop, the device is secured and configured correctly. 
-
-You can also apply an Autopilot deployment profile to your devices using Microsoft Store for Business. When people in your organization run the out-of-box experience on the device, the profile configures Windows based on the Autopilot deployment profile you applied to the device. For more information, see [Manage Windows device deployment with Windows Autopilot Deployment](/microsoft-store/add-profile-to-devices).
-
-#### Autopilot Reset	
-
-IT Pros can use Autopilot Reset to quickly remove personal files, apps, and settings. A custom login screen is available from the lock screen that enables you to apply original settings and management enrollment (Azure Active Directory and device management) so that devices are returned to a fully configured, known, IT-approved state and ready to use. For more information, see [Reset devices with Autopilot Reset](/education/windows/autopilot-reset).
 
 ### MBR2GPT.EXE
 
@@ -369,13 +346,13 @@ If you have shared devices deployed in your work place, **Fast sign-in** enables
 
 **To enable fast sign-in:**
 
-1. Set up a shared or guest device with Windows 10, version 1809 or Windows 10 Enterprise LTSC 2019.
+1. Set up a shared or guest device with Windows 10, version 1809 or Windows 10 Enterprise LTSC 2019.
 
 2. Set the Policy CSP, and the **Authentication** and **EnableFastFirstSignIn** policies to enable fast sign-in.
 
 3. Sign-in to a shared PC with your account. You'll notice the difference!
 
-   ![fast sign-in](../images/fastsignin.png "fast sign-in")
+   ![fast sign-in.](../images/fastsignin.png "fast sign-in")
 
 ### Web sign-in to Windows 10
 
@@ -385,19 +362,19 @@ Until now, Windows logon only supported the use of identities federated to ADFS 
 
 1. Azure AD Join your Windows 10 PC. (Web sign-in is only supported on Azure AD Joined PCs).
 
-2. Set the Policy CSP, and the Authentication and EnableWebSignIn polices to enable web sign-in. 
+2. Set the Policy CSP, and the Authentication and EnableWebSignIn policies to enable web sign-in. 
 
 3. On the lock screen, select web sign-in under sign-in options.
 4. Click the “Sign in” button to continue.
 
-![Sign-in option](../images/websignin.png "web sign-in")
+![Sign-in option.](../images/websignin.png "web sign-in")
 
 ## Windows Analytics
 
 ### Upgrade Readiness
 
 >[!IMPORTANT]
->Upgrade Readiness will not allow you to assess an upgrade to an LTSC release (LTSC builds are not available as target versions). However, you can enroll devices running LTSC to plan for an upgrade to a semi-annual channel release.
+>Upgrade Readiness will not allow you to assess an upgrade to an LTSC release (LTSC builds are not available as target versions). However, you can enroll devices running LTSC to plan for an upgrade to a General Availability Channel release.
 
 Upgrade Readiness helps you ensure that applications and drivers are ready for a Windows 10 upgrade. The solution provides up-to-date application and driver inventory, information about known issues, troubleshooting guidance, and per-device readiness and tracking details. The Upgrade Readiness tool moved from public preview to general availability on March 2, 2017.
 
@@ -438,7 +415,9 @@ In the Feedback and Settings page under Privacy Settings you can now delete the 
 
 ### Kiosk configuration
 
-Microsoft Edge has many improvements specifically targeted to Kiosks, however Edge is not available in the LTSC release of Windows 10. Internet Explorer is included in Windows 10 LTSC releases as its feature set is not changing, and it will continue to get security fixes for the life of a Windows 10 LTSC release.
+The new chromium-based Microsoft Edge has many improvements specifically targeted to Kiosks. However, it is not included in the LTSC release of Windows 10.  You can download and install Microsoft Edge separately [here](https://www.microsoft.com/edge/business/download).
+
+Internet Explorer is included in Windows 10 LTSC releases as its feature set is not changing, and it will continue to get security fixes for the life of a Windows 10 LTSC release.
 
 If you wish to take advantage of [Kiosk capabilities in Edge](/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy), consider [Kiosk mode](/windows/configuration/kiosk-methods) with a semi-annual release channel. 
 
@@ -456,7 +435,7 @@ The OS uninstall period is a length of time that users are given when they can o
 
 Using the new wizards in Windows Configuration Designer, you can [create provisioning packages to enroll devices in Azure Active Directory](/windows/configuration/provisioning-packages/provisioning-packages#configuration-designer-wizards). Azure AD join in bulk is available in the desktop, mobile, kiosk, and Surface Hub wizards.
 
-![get bulk token action in wizard](../images/bulk-token.png)
+![get bulk token action in wizard.](../images/bulk-token.png)
 
 ### Windows Spotlight
 
@@ -484,9 +463,9 @@ Previously, the customized taskbar could only be deployed using Group Policy or 
 
 ### Windows Insider for Business
 
-We recently added the option to download Windows 10 Insider Preview builds using your corporate credentials in Azure Active Directory (AAD). By enrolling devices in AAD, you increase the visibility of feedback submitted by users in your organization – especially on features that support your specific business needs. For details, see [Windows Insider Program for Business](/windows/deployment/update/waas-windows-insider-for-business).
+We recently added the option to download Windows 10 Insider Preview builds using your corporate credentials in Azure Active Directory (Azure AD). By enrolling devices in Azure AD, you increase the visibility of feedback submitted by users in your organization – especially on features that support your specific business needs. For details, see [Windows Insider Program for Business](https://insider.windows.com/for-business).
 
-You can now register your Azure AD domains to the Windows Insider Program. For more information, see [Windows Insider Program for Business](/windows/deployment/update/waas-windows-insider-for-business#getting-started-with-windows-insider-program-for-business).
+You can now register your Azure AD domains to the Windows Insider Program. For more information, see [Windows Insider Program for Business](https://insider.windows.com/for-business).
 
 
 ### Optimize update delivery
@@ -549,11 +528,11 @@ For more info, see [Implement server-side support for mobile application managem
 
 ### MDM diagnostics
 
-In Windows 10 Enterprise LTSC 2019, we continue our work to improve the diagnostic experience for modern management. By introducing auto-logging for mobile devices, Windows will automatically collect logs when encountering an error in MDM, eliminating the need to have always-on logging for memory-constrained devices. Additionally, we are introducing [Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226) as an additional tool to help Support personnel quickly reduce issues to their root cause, while saving time and cost.
+In Windows 10 Enterprise LTSC 2019, we continue our work to improve the diagnostic experience for modern management. By introducing auto-logging for mobile devices, Windows will automatically collect logs when encountering an error in MDM, eliminating the need to have always-on logging for memory-constrained devices. Additionally, we are introducing [Microsoft Message Analyzer](/message-analyzer/microsoft-message-analyzer-operating-guide) as an additional tool to help Support personnel quickly reduce issues to their root cause, while saving time and cost.
 
 ### Application Virtualization for Windows (App-V)
 
-Previous versions of the Microsoft Application Virtualization Sequencer (App-V Sequencer) have required you to manually create your sequencing environment. Windows 10 Enterprise LTSC 2019 introduces two new PowerShell cmdlets, New-AppVSequencerVM and Connect-AppvSequencerVM, which automatically create your sequencing environment for you, including provisioning your virtual machine. Additionally, the App-V Sequencer has been updated to let you sequence or update multiple apps at the same time, while automatically capturing and storing your customizations as an App-V project template (.appvt) file, and letting you use PowerShell or Group Policy settings to automatically cleanup your unpublished packages after a device restart.
+Previous versions of the Microsoft Application Virtualization Sequencer (App-V Sequencer) have required you to manually create your sequencing environment. Windows 10 Enterprise LTSC 2019 introduces two new PowerShell cmdlets, New-AppVSequencerVM and Connect-AppvSequencerVM, which automatically create your sequencing environment for you, including provisioning your virtual machine. Additionally, the App-V Sequencer has been updated to let you sequence or update multiple apps at the same time, while automatically capturing and storing your customizations as an App-V project template (.appvt) file, and letting you use PowerShell or Group Policy settings to automatically clean up your unpublished packages after a device restart.
 
 For more info, see the following topics:
 - [Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)](/windows/application-management/app-v/appv-auto-provision-a-vm)
@@ -599,17 +578,17 @@ Users attempt to connect to a Miracast receiver as they did previously. When the
 - Users do not have to change how they connect to a Miracast receiver. They use the same UX as for standard Miracast connections.
 - No changes to current wireless drivers or PC hardware are required.
 - It works well with older wireless hardware that is not optimized for Miracast over Wi-Fi Direct.
-- It leverages an existing connection which both reduces the time to connect and provides a very stable stream.
+- It leverages an existing connection that both reduces the time to connect and provides a very stable stream.
 
 #### Enabling Miracast over Infrastructure
 
 If you have a device that has been updated to Windows 10 Enterprise LTSC 2019, then you automatically have this new feature. To take advantage of it in your environment, you need to ensure the following is true within your deployment:
 
-- The device (PC, phone, or Surface Hub) needs to be running Windows 10, version 1703, Windows 10 Enterprise LTSC 2019, or a later OS.
+- The device (PC or Surface Hub) needs to be running Windows 10, version 1703, Windows 10 Enterprise LTSC 2019, or a later OS.
 
-- A Windows PC or Surface Hub can act as a Miracast over Infrastructure *receiver*. A Windows PC or phone can act as a Miracast over Infrastructure *source*.
+- A Windows PC or Surface Hub can act as a Miracast over Infrastructure *receiver*. A Windows device can act as a Miracast over Infrastructure *source*.
     - As a Miracast receiver, the PC or Surface Hub must be connected to your enterprise network via either Ethernet or a secure Wi-Fi connection (e.g. using either WPA2-PSK or WPA2-Enterprise security). If the Hub is connected to an open Wi-Fi connection, Miracast over Infrastructure will disable itself.
-    - As a Miracast source, the  PC or phone must be connected to the same enterprise network via Ethernet or a secure Wi-Fi connection.
+    - As a Miracast source, the device must be connected to the same enterprise network via Ethernet or a secure Wi-Fi connection.
 
 - The DNS Hostname (device name) of the device needs to be resolvable via your DNS servers. You can achieve this by either allowing your device to register automatically via Dynamic DNS, or by manually creating an A or AAAA record for the device's hostname.
 
@@ -622,7 +601,7 @@ If you have a device that has been updated to Windows 10 Enterprise LTSC 2019, t
 
 We added a dropdown that displays as you type to help complete the next part of the path. You can also press **Ctrl + Backspace** to delete the last word, and **Ctrl + Delete** to delete the next word.
 
-![Reg editor](../images/regeditor.png "Registry editor dropdown")
+![Reg editor.](../images/regeditor.png "Registry editor dropdown")
 
 ## Remote Desktop with Biometrics
 
@@ -636,9 +615,9 @@ To get started, sign into your device using Windows Hello for Business. Bring up
 
 See the following example:
 
-![Enter your credentials](../images/RDPwBioTime.png "Windows Hello")
-![Provide credentials](../images/RDPwBio2.png "Windows Hello personal")
-![Microsoft Hyper-V Server 2016](../images/hyper-v.png "Microsoft Hyper-V Server 2016")
+![Enter your credentials.](../images/RDPwBioTime.png "Windows Hello")
+![Provide credentials.](../images/RDPwBio2.png "Windows Hello personal")
+![Microsoft Hyper-V Server 2016.](../images/hyper-v.png "Microsoft Hyper-V Server 2016")
 
 ## See Also
 

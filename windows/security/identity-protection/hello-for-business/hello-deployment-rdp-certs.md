@@ -2,13 +2,13 @@
 title: Deploying Certificates to Key Trust Users to Enable RDP
 description: Learn how to deploy certificates to a Key Trust user to enable remote desktop with supplied credentials
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, cert-trust, device, registration, unlock, remote desktop, RDP
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -22,6 +22,7 @@ ms.reviewer:
 **Applies To**
 
 - Windows 10, version 1703 or later
+- Windows 11
 - Hybrid deployment
 - Key trust
 
@@ -51,7 +52,7 @@ Three approaches are documented here:
 
 1. Right-click the **Smartcard Logon** template and click **Duplicate Template**
 
-    ![Duplicating Smartcard Template](images/rdpcert/duplicatetemplate.png)
+    ![Duplicating Smartcard Template.](images/rdpcert/duplicatetemplate.png)
 
 1. On the **Compatibility** tab:
     1. Clear the **Show resulting changes** check box
@@ -105,11 +106,11 @@ Three approaches are documented here:
 
 1. Update the certificate template by executing the following command:
 
-    certutil - dsaddtemplate \<TemplateName\>.txt
+    certutil -dsaddtemplate \<TemplateName\>.txt
 
 1. In the Certificate Authority console, right-click **Certificate Templates**, select **New**, and select **Certificate Template to Issue**
 
-    ![Selecting Certificate Template to Issue](images/rdpcert/certificatetemplatetoissue.png)
+    ![Selecting Certificate Template to Issue.](images/rdpcert/certificatetemplatetoissue.png)
 
 1. From the list of templates, select the template you previously created (**WHFB Certificate Authentication**) and click **OK**. It can take some time for the template to replicate to all servers and become available in this list.
 
@@ -123,7 +124,7 @@ Three approaches are documented here:
 
 1. In the left pane of the MMC, right-click **Personal**, click **All Tasks**, and then click **Request New Certificate…**
 
-    ![Request a new certificate](images/rdpcert/requestnewcertificate.png)
+    ![Request a new certificate.](images/rdpcert/requestnewcertificate.png)
 
 1. On the Certificate Enrollment screen, click **Next**.
 

@@ -1,7 +1,7 @@
 ---
-title: Smart Card Troubleshooting (Windows 10)
+title: Smart Card Troubleshooting (Windows)
 description: Describes the tools and services that smart card developers can use to help identify certificate issues with the smart card deployment.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -9,16 +9,17 @@ audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-ms.collection: M365-identity-device-management
+ms.collection:
+  - M365-identity-device-management
+  - highpri
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 04/19/2017
-ms.reviewer: 
+ms.date: 09/24/2021
 ---
 
 # Smart Card Troubleshooting
 
-Applies To: Windows 10, Windows Server 2016
+Applies To: Windows 10, Windows 11, Windows Server 2016 and above
 
 This article explains tools and services that smart card developers can use to help identify certificate issues with the smart card deployment.
 
@@ -57,7 +58,7 @@ To delete a container, type **certutil -delkey -csp "Microsoft Base Smart Card C
 
 ## Debugging and tracing using WPP
 
-WPP simplifies tracing the operation of the trace provider. It provides a mechanism for the trace provider to log real-time binary messages. Logged messages can be converted to a human-readable trace of the operation. For more information, see [Diagnostics with WPP - The NDIS blog](https://blogs.msdn.com/b/ndis/archive/2011/04/06/diagnostics-with-wpp.aspx).
+WPP simplifies tracing the operation of the trace provider. It provides a mechanism for the trace provider to log real-time binary messages. Logged messages can be converted to a human-readable trace of the operation. For more information, see [Diagnostics with WPP - The NDIS blog](/archive/blogs/ndis/diagnostics-with-wpp).
 
 ### Enable the trace
 

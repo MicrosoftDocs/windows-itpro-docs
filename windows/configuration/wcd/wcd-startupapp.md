@@ -4,13 +4,13 @@ description: This section describes the StartupApp settings that you can configu
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: aaroncz
 ms.topic: article
 ms.date: 09/06/2017
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # StartupApp (Windows Configuration Designer reference)
@@ -19,8 +19,8 @@ Use StartupApp settings to configure the default app that will run on start for 
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| Default |  |  |  |  |  X |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: | 
+| Default |  |  |  |  ✔️ |
 
 Enter the [Application User Model ID (AUMID)](/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) for the default app.

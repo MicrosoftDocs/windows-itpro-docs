@@ -25,13 +25,13 @@ landingContent:
           - text: System requirements and language support
             url: ./ie11-deploy-guide/system-requirements-and-language-support-for-ie11.md
           - text: Frequently asked questions
-            url: ./ie11-faq/faq-for-it-pros-ie11.md
+            url: ./ie11-faq/faq-for-it-pros-ie11.yml
           - text: Internet Explorer 11 deployment guide
             url: ./ie11-deploy-guide/index.md
           - text: Use Enterprise Mode to improve compatibility
             url: /microsoft-edge/deploy/emie-to-improve-compatibility
           - text: Lifecycle FAQ - Internet Explorer
-            url: https://support.microsoft.com/help/17454/lifecycle-faq-internet-explorer
+            url: /lifecycle/faq/internet-explorer-microsoft-edge
       - linkListType: download
         links:
           - text: Download IE11 with Windows 10
@@ -46,8 +46,6 @@ landingContent:
             url: https://mva.microsoft.com/training-courses/getting-started-with-windows-10-for-it-professionals-10629?l=fCowqpy8_5905094681
           - text: 'Windows 10: Top Features for IT Pros'
             url: https://mva.microsoft.com/training-courses/windows-10-top-features-for-it-pros-16319?l=xBnT2ihhC_7306218965
-          - text: Manage and modernize Internet Explorer with Enterprise Mode
-            url: https://channel9.msdn.com/events/teched/newzealand/2014/pcit307
           - text: 'Virtual Lab: Enterprise Mode'
             url: https://www.microsoft.com/handsonlabs/SelfPacedLabs/?storyGuid=e4155067-2c7e-4b46-8496-eca38bedca02
 
@@ -89,7 +87,7 @@ landingContent:
           - text: Download IEAK 11
             url: ./ie11-ieak/ieak-information-and-downloads.md
           - text: Frequently asked questions about IEAK 11
-            url: ./ie11-faq/faq-ieak11.md
+            url: ./ie11-faq/faq-ieak11.yml
           - text: Customization and distribution guidelines
             url: ./ie11-ieak/licensing-version-and-features-ieak11.md#customization-guidelines           
       - linkListType: deploy
@@ -123,7 +121,7 @@ landingContent:
           - text: Group Policy preferences for IE11
             url: ./ie11-deploy-guide/group-policy-preferences-and-ie11.md
           - text: Configure Group Policy preferences
-            url: https://support.microsoft.com/help/2898604/how-to-configure-group-policy-preference-settings-for-internet-explorer-11-in-windows-8.1-or-windows-server-2012-r2
+            url: /troubleshoot/browsers/how-to-configure-group-policy-preference-settings
           - text: Blocked out-of-date ActiveX controls
             url: ./ie11-deploy-guide/blocked-out-of-date-activex-controls.md
           - text: Out-of-date ActiveX control blocking
@@ -147,7 +145,7 @@ landingContent:
           - text: Disable VBScript execution in Internet Explorer for Internet Zone and Restricted Sites Zone
             url: https://support.microsoft.com/help/4012494/option-to-disable-vbscript-execution-in-internet-explorer-for-internet
           - text: Frequently asked questions about IEAK 11
-            url: ./ie11-faq/faq-ieak11.md
+            url: ./ie11-faq/faq-ieak11.yml
           - text: Internet Explorer 8, 9, 10, 11 forum
             url: https://social.technet.microsoft.com/forums/ie/home?forum=ieitprocurrentver
           - text: Contact a Microsoft support professional

@@ -1,18 +1,17 @@
 ---
-title: Policies enforced on kiosk devices (Windows 10)
+title: Policies enforced on kiosk devices (Windows 10/11)
 description: Learn about the policies enforced on a device when you configure it as a kiosk.
 ms.assetid: 14DDDC96-88C7-4181-8415-B371F25726C8
-ms.reviewer: 
-manager: dansimp
+ms.reviewer: sybruckm
+manager: dougeby
 keywords: ["lockdown", "app restrictions", "applocker"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: edu, security
-author: dansimp
+author: aczechowski
 ms.localizationpriority: medium
-ms.date: 07/30/2018
-ms.author: dansimp
+ms.author: aaroncz
 ms.topic: article
 ---
 
@@ -21,7 +20,8 @@ ms.topic: article
 
 **Applies to**
 
--   Windows 10 Pro, Enterprise, and Education
+- Windows 10 Pro, Enterprise, and Education
+- Windows 11
 
 
 

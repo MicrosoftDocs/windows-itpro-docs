@@ -3,15 +3,15 @@ title: Prepare your organization for Windows To Go (Windows 10)
 description: Though Windows To Go is no longer being developed, you can find info here about the the “what”, “why”, and “when” of deployment.
 ms.assetid: f3f3c160-90ad-40a8-aeba-2aedee18f7ff
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 keywords: ["mobile, device, USB, deploy"]
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: mobility
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
@@ -121,7 +121,7 @@ If you want Windows To Go to be able to connect back to organizational resources
 
 [Security and data protection considerations for Windows To Go](security-and-data-protection-considerations-for-windows-to-go.md)
 
-[Windows To Go: frequently asked questions](windows-to-go-frequently-asked-questions.md)
+[Windows To Go: frequently asked questions](windows-to-go-frequently-asked-questions.yml)
 
  
 

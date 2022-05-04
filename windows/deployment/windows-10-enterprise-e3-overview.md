@@ -1,158 +1,98 @@
 ---
-title: Windows 10 Enterprise E3 in CSP
-description: Describes Windows 10 Enterprise E3, an offering that delivers, by subscription, the features of Windows 10 Enterprise edition.
+title: Windows 10/11 Enterprise E3 in CSP
+description: Describes Windows 10/11 Enterprise E3, an offering that delivers, by subscription, the features of Windows 10/11 Enterprise edition.
 keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-ms.date: 08/24/2017
-ms.reviewer: 
-manager: laurawi
+ms.date: 09/28/2021
 ms.audience: itpro
-author: greg-lindsay
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 audience: itpro
-ms.collection: M365-modern-desktop
+ms.collection:
+  - M365-modern-desktop
+  - highpri
 ms.topic: article
 ---
 
-# Windows 10 Enterprise E3 in CSP
+# Windows 10/11 Enterprise E3 in CSP
 
-Windows 10 Enterprise E3 launched in the Cloud Solution Provider (CSP) channel on September 1, 2016. Windows 10 Enterprise E3 in CSP is a new offering that delivers, by subscription, exclusive features reserved for Windows 10 Enterprise edition. This offering is available through the Cloud Solution Provider (CSP) channel via the Partner Center as an online service. Windows 10 Enterprise E3 in CSP provides a flexible, per-user subscription for small- and medium-sized organizations (from one to hundreds of users). To take advantage of this offering, you must have the following:
+Applies to:
+- Windows 10
+- Windows 11
 
--   Windows 10 Pro, version 1607 (Windows 10 Anniversary Update) or later, installed and activated, on the devices to be upgraded
+Windows 10 Enterprise E3 launched in the Cloud Solution Provider (CSP) channel on September 1, 2016. With the release of Windows 11, Windows 10/11 Enterprise E3 in CSP is available.  
+
+Windows 10/11 Enterprise E3 in CSP delivers, by subscription, exclusive features reserved for Windows 10 or Windows 11 Enterprise editions. This offering is available through the Cloud Solution Provider (CSP) channel via the Partner Center as an online service. Windows 10/11 Enterprise E3 in CSP provides a flexible, per-user subscription for small- and medium-sized organizations (from one to hundreds of users). To take advantage of this offering, you must have the following:
+
+-   Windows 10 Pro, version 1607 (Windows 10 Anniversary Update) or later (or Windows 11), installed and activated, on the devices to be upgraded.
 -   Azure Active Directory (Azure AD) available for identity management
 
-Starting with Windows 10, version 1607 (Windows 10 Anniversary Update), you can move from Windows 10 Pro to Windows 10 Enterprise more easily than ever before—no keys and no reboots. After one of your users enters the Azure AD credentials associated with a Windows 10 Enterprise E3 license, the operating system turns from Windows 10 Pro to Windows 10 Enterprise and all the appropriate Windows 10 Enterprise features are unlocked. When a subscription license expires or is transferred to another user, the Windows 10 Enterprise device seamlessly steps back down to Windows 10 Pro.
+You can move from Windows 10 Pro or Windows 11 Pro to Windows 10 Enterprise or Windows 11 Enterprise more easily than ever before — with no keys, and no reboots. After one of your users enters the Azure AD credentials associated with a Windows 10/11 Enterprise E3 license, the operating system turns from Windows 10 Pro to Windows 10 Enterprise or Windows 11 Pro to Windows 11 Enterprise, and all the appropriate Enterprise features are unlocked. When a subscription license expires or is transferred to another user, the Enterprise device seamlessly steps back down to Windows 10 Pro or Windows 11 Pro.
 
-Previously, only organizations with a Microsoft Volume Licensing Agreement could deploy Windows 10 Enterprise to their users. Now, with Windows 10 Enterprise E3 in CSP, small- and medium-sized organizations can more easily take advantage of Windows 10 Enterprise features.
+Previously, only organizations with a Microsoft Volume Licensing Agreement could deploy Windows 10 Enterprise or Windows 11 Enterprise to their users. Now, with Windows 10/11 Enterprise E3 in CSP, small- and medium-sized organizations can more easily take advantage of Enterprise edition features.
 
-When you purchase Windows 10 Enterprise E3 via a partner, you get the following benefits:
+When you purchase Windows 10/11 Enterprise E3 via a partner, you get the following benefits:
 
--   **Windows 10 Enterprise edition**. Devices currently running Windows 10 Pro, version 1607 can get Windows 10 Enterprise Current Branch (CB) or Current Branch for Business (CBB). This benefit does not include Long Term Service Branch (LTSB).
-
--   **Support from one to hundreds of users**. Although the Windows 10 Enterprise E3 in CSP program does not have a limitation on the number of licenses an organization can have, the program is designed for small- and medium-sized organizations.
-
+-   **Windows 10/11 Enterprise edition**. Devices currently running Windows 10 Pro or Windows 11 Pro can get Windows 10/11 Enterprise Current Branch (CB) or Current Branch for Business (CBB). This benefit does not include Long Term Service Branch (LTSB).
+-   **Support from one to hundreds of users**. Although the Windows 10/11 Enterprise E3 in CSP program does not have a limitation on the number of licenses an organization can have, the program is designed for small- and medium-sized organizations.
 -   **Deploy on up to five devices**. For each user covered by the license, you can deploy Windows 10 Enterprise edition on up to five devices.
-
--   **Roll back to Windows 10 Pro at any time**. When a user’s subscription expires or is transferred to another user, the Windows 10 Enterprise device reverts seamlessly to Windows 10 Pro edition (after a grace period of up to 90 days).
-
--   **Monthly, per-user pricing model**. This makes Windows 10 Enterprise E3 affordable for any organization.
-
+-   **Roll back to Windows 10/11 Pro at any time**. When a user’s subscription expires or is transferred to another user, the Windows 10/11 Enterprise device reverts seamlessly to Windows 10/11 Pro edition (after a grace period of up to 90 days).
+-   **Monthly, per-user pricing model**. This makes Windows 10/11 Enterprise E3 affordable for any organization.
 -   **Move licenses between users**. Licenses can be quickly and easily reallocated from one user to another user, allowing you to optimize your licensing investment against changing needs.
 
-How does the Windows 10 Enterprise E3 in CSP program compare with Microsoft Volume Licensing Agreements and Software Assurance?
+How does the Windows 10/11 Enterprise E3 in CSP program compare with Microsoft Volume Licensing Agreements and Software Assurance?
 
 -   [Microsoft Volume Licensing](https://www.microsoft.com/licensing/default.aspx) programs are broader in scope, providing organizations with access to licensing for all Microsoft products.
-
 -   [Software Assurance](https://www.microsoft.com/Licensing/licensing-programs/software-assurance-default.aspx) provides organizations with the following categories of benefits:
 
     -   **Deployment and management**. These benefits include planning services, Microsoft Desktop Optimization (MDOP), Windows Virtual Desktop Access Rights, Windows-To-Go Rights, Windows Roaming Use Rights, Windows Thin PC, Windows RT Companion VDA Rights, and other benefits.
-
     -   **Training**. These benefits include training vouchers, online e-learning, and a home use program.
-
     -   **Support**. These benefits include 24x7 problem resolution support, backup capabilities for disaster recovery, System Center Global Service Monitor, and a passive secondary instance of SQL Server.
-
     -   **Specialized**. These benefits include step-up licensing availability (which enables you to migrate software from an earlier edition to a higher-level edition) and to spread license and Software Assurance payments across three equal, annual sums.
 
-    In addition, in Windows 10 Enterprise E3 in CSP, a partner can manage your licenses for you. With Software Assurance, you, the customer, manage your own licenses.
+    In addition, in Windows 10/11 Enterprise E3 in CSP, a partner can manage your licenses for you. With Software Assurance, you, the customer, manage your own licenses.
 
-In summary, the Windows 10 Enterprise E3 in CSP program is an upgrade offering that provides small- and medium-sized organizations easier, more flexible access to the benefits of Windows 10 Enterprise edition, whereas Microsoft Volume Licensing programs and Software Assurance are broader in scope and provide benefits beyond access to Windows 10 Enterprise edition.
+In summary, the Windows 10/11 Enterprise E3 in CSP program is an upgrade offering that provides small- and medium-sized organizations easier, more flexible access to the benefits of Windows 10 Enterprise edition, whereas Microsoft Volume Licensing programs and Software Assurance are broader in scope and provide benefits beyond access to the Enterprise edition of Windows 10 or Windows 11.
 
 ## Compare Windows 10 Pro and Enterprise editions
+
+> [!NOTE]
+> The following table only lists Windows 10. More information will be available about differences between Windows 11 editions after Windows 11 is generally available.
 
 Windows 10 Enterprise edition has a number of features that are unavailable in Windows 10 Pro. Table 1 lists the Windows 10 Enterprise features not found in Windows 10 Pro. Many of these features are security-related, whereas others enable finer-grained device management.
 
 *Table 1. Windows 10 Enterprise features not found in Windows 10 Pro*
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="80%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Feature</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Credential Guard<strong><em></strong></p></td>
-<td align="left"><p>This feature uses virtualization-based security to help protect security secrets (for example, NTLM password hashes, Kerberos Ticket Granting Tickets) so that only privileged system software can access them. This helps prevent Pass-the-Hash or Pass-the-Ticket attacks.</p>
-<p>Credential Guard has the following features:</p>
-<ul>
-<li><p><strong>Hardware-level security</strong>.&nbsp;&nbsp;Credential Guard uses hardware platform security features (such as Secure Boot and virtualization) to help protect derived domain credentials and other secrets.</p></li>
-<li><p><strong>Virtualization-based security</strong>.&nbsp;&nbsp;Windows services that access derived domain credentials and other secrets run in a virtualized, protected environment that is isolated.</p></li>
-<li><p><strong>Improved protection against persistent threats</strong>.&nbsp;&nbsp;Credential Guard works with other technologies (e.g., Device Guard) to help provide further protection against attacks, no matter how persistent.</p></li>
-<li><p><strong>Improved manageability</strong>.&nbsp;&nbsp;Credential Guard can be managed through Group Policy, Windows Management Instrumentation (WMI), or Windows PowerShell.</p></li>
-</ul>
-<p>For more information, see <a href="/windows/security/identity-protection/credential-guard/credential-guard" data-raw-source="[Protect derived domain credentials with Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard)">Protect derived domain credentials with Credential Guard</a>.</p>
-<p></em> <i>Credential Guard requires UEFI 2.3.1 or greater with Trusted Boot; Virtualization Extensions such as Intel VT-x, AMD-V, and SLAT must be enabled; x64 version of Windows; IOMMU, such as Intel VT-d, AMD-Vi; BIOS Lockdown; TPM 2.0 recommended for device health attestation (will use software if TPM 2.0 not present)</i></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Device Guard</p></td>
-<td align="left"><p>This feature is a combination of hardware and software security features that allows only trusted applications to run on a device. Even if an attacker manages to get control of the Windows kernel, he or she will be much less likely to run executable code. Device Guard can use virtualization-based security (VBS) in Windows 10 Enterprise edition to isolate the Code Integrity service from the Windows kernel itself. With VBS, even if malware gains access to the kernel, the effects can be severely limited, because the hypervisor can prevent the malware from executing code.</p>
-<p>Device Guard does the following:</p>
-<ul>
-<li><p>Helps protect against malware</p></li>
-<li><p>Helps protect the Windows system core from vulnerability and zero-day exploits</p></li>
-<li><p>Allows only trusted apps to run</p></li>
-</ul>
-<p>For more information, see <a href="/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control" data-raw-source="[Introduction to Device Guard](/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)">Introduction to Device Guard</a>.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>AppLocker management</p></td>
-<td align="left"><p>This feature helps IT pros determine which applications and files users can run on a device. The applications and files that can be managed include executable files, scripts, Windows Installer files, dynamic-link libraries (DLLs), packaged apps, and packaged app installers.</p>
-<p>For more information, see <a href="/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview" data-raw-source="[AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview)">AppLocker</a>.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Application Virtualization (App-V)</p></td>
-<td align="left"><p>This feature makes applications available to end users without installing the applications directly on users’ devices. App-V transforms applications into centrally managed services that are never installed and don&#39;t conflict with other applications. This feature also helps ensure that applications are kept current with the latest security updates.</p>
-<p>For more information, see <a href="/windows/application-management/app-v/appv-getting-started" data-raw-source="[Getting Started with App-V for Windows 10](/windows/application-management/app-v/appv-getting-started)">Getting Started with App-V for Windows 10</a>.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>User Experience Virtualization (UE-V)</p></td>
-<td align="left"><p>With this feature, you can capture user-customized Windows and application settings and store them on a centrally managed network file share. When users log on, their personalized settings are applied to their work session, regardless of which device or virtual desktop infrastructure (VDI) sessions they log on to.</p>
-<p>UE-V provides the ability to do the following:</p>
-<ul>
-<li><p>Specify which application and Windows settings synchronize across user devices</p></li>
-<li><p>Deliver the settings anytime and anywhere users work throughout the enterprise</p></li>
-<li><p>Create custom templates for your third-party or line-of-business applications</p></li>
-<li><p>Recover settings after hardware replacement or upgrade, or after re-imaging a virtual machine to its initial state</p></li>
-</ul>
-<p>For more information, see <a href="/windows/configuration/ue-v/uev-for-windows" data-raw-source="[User Experience Virtualization (UE-V) for Windows 10 overview](/windows/configuration/ue-v/uev-for-windows)">User Experience Virtualization (UE-V) for Windows 10 overview</a>.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Managed User Experience</p></td>
-<td align="left"><p>This feature helps customize and lock down a Windows device’s user interface to restrict it to a specific task. For example, you can configure a device for a controlled scenario such as a kiosk or classroom device. The user experience would be automatically reset once a user signs off. You can also restrict access to services including Cortana or the Windows Store, and manage Start layout options, such as:</p>
-<ul>
-<li><p>Removing and preventing access to the Shut Down, Restart, Sleep, and Hibernate commands</p></li>
-<li><p>Removing Log Off (the User tile) from the Start menu</p></li>
-<li><p>Removing frequent programs from the Start menu</p></li>
-<li><p>Removing the All Programs list from the Start menu</p></li>
-<li><p>Preventing users from customizing their Start screen</p></li>
-<li><p>Forcing Start menu to be either full-screen size or menu size</p></li>
-<li><p>Preventing changes to Taskbar and Start menu settings</p></li>
-</ul>
-</tr>
-</tbody>
-</table>
+|Feature|Description|
+|--- |--- |
+|Credential Guard|This feature uses virtualization-based security to help protect security secrets (for example, NTLM password hashes, Kerberos Ticket Granting Tickets) so that only privileged system software can access them. This helps prevent Pass-the-Hash or Pass-the-Ticket attacks.<p>Credential Guard has the following features:<li>**Hardware-level security**.  Credential Guard uses hardware platform security features (such as Secure Boot and virtualization) to help protect derived domain credentials and other secrets.<li>**Virtualization-based security**.  Windows services that access derived domain credentials and other secrets run in a virtualized, protected environment that is isolated.<li>**Improved protection against persistent threats**.  Credential Guard works with other technologies (e.g., Device Guard) to help provide further protection against attacks, no matter how persistent.<li>**Improved manageability**.  Credential Guard can be managed through Group Policy, Windows Management Instrumentation (WMI), or Windows PowerShell.<p>For more information, see [Protect derived domain credentials with Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard).<p>*Credential Guard requires UEFI 2.3.1 or greater with Trusted Boot; Virtualization Extensions such as Intel VT-x, AMD-V, and SLAT must be enabled; x64 version of Windows; IOMMU, such as Intel VT-d, AMD-Vi; BIOS Lockdown; TPM 2.0 recommended for device health attestation (will use software if TPM 2.0 not present)*|
+|Device Guard|This feature is a combination of hardware and software security features that allows only trusted applications to run on a device. Even if an attacker manages to get control of the Windows kernel, he or she will be much less likely to run executable code. Device Guard can use virtualization-based security (VBS) in Windows 10 Enterprise edition to isolate the Code Integrity service from the Windows kernel itself. With VBS, even if malware gains access to the kernel, the effects can be severely limited, because the hypervisor can prevent the malware from executing code.<p>Device Guard does the following:<li>Helps protect against malware<li>Helps protect the Windows system core from vulnerability and zero-day exploits<li>Allows only trusted apps to run<p>For more information, see [Introduction to Device Guard](/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control).|
+|AppLocker management|This feature helps IT pros determine which applications and files users can run on a device. The applications and files that can be managed include executable files, scripts, Windows Installer files, dynamic-link libraries (DLLs), packaged apps, and packaged app installers.<p>For more information, see [AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview).|
+|Application Virtualization (App-V)|This feature makes applications available to end users without installing the applications directly on users’ devices. App-V transforms applications into centrally managed services that are never installed and don't conflict with other applications. This feature also helps ensure that applications are kept current with the latest security updates.<p>For more information, see [Getting Started with App-V for Windows 10](/windows/application-management/app-v/appv-getting-started).|
+|User Experience Virtualization (UE-V)|With this feature, you can capture user-customized Windows and application settings and store them on a centrally managed network file share.<p>When users log on, their personalized settings are applied to their work session, regardless of which device or virtual desktop infrastructure (VDI) sessions they log on to.<p>UE-V provides the ability to do the following:<li>Specify which application and Windows settings synchronize across user devices<li>Deliver the settings anytime and anywhere users work throughout the enterprise<li>Create custom templates for your third-party or line-of-business applications<li>Recover settings after hardware replacement or upgrade, or after re-imaging a virtual machine to its initial state<p>For more information, see [User Experience Virtualization (UE-V) for Windows 10 overview](/windows/configuration/ue-v/uev-for-windows).|
+|Managed User Experience|This feature helps customize and lock down a Windows device’s user interface to restrict it to a specific task. For example, you can configure a device for a controlled scenario such as a kiosk or classroom device. The user experience would be automatically reset once a user signs off. You can also restrict access to services including Cortana or the Windows Store, and manage Start layout options, such as:<li>Removing and preventing access to the Shut Down, Restart, Sleep, and Hibernate commands<li>Removing Log Off (the User tile) from the Start menu<li>Removing frequent programs from the Start menu<li>Removing the All Programs list from the Start menu<li>Preventing users from customizing their Start screen<li>Forcing Start menu to be either full-screen size or menu size<li>Preventing changes to Taskbar and Start menu settings|
 
-## Deployment of Windows 10 Enterprise E3 licenses
+## Deployment of Windows 10/11 Enterprise E3 licenses
 
 See [Deploy Windows 10 Enterprise licenses](deploy-enterprise-licenses.md).
 
-## Deploy Windows 10 Enterprise features
+## Deploy Windows 10/11 Enterprise features
 
-Now that you have Windows 10 Enterprise edition running on devices, how do you take advantage of the Enterprise edition features and capabilities? What are the next steps that need to be taken for each of the features discussed in [Table 1](#compare-windows10-pro-and-enterprise-editions)?
+Now that you have Windows 10/11 Enterprise edition running on devices, how do you take advantage of the Enterprise edition features and capabilities? What are the next steps that need to be taken for each of the features discussed in [Table 1](#compare-windows10-pro-and-enterprise-editions)?
 
-The following sections provide you with the high-level tasks that need to be performed in your environment to help users take advantage of the Windows 10 Enterprise edition features.
+The following sections provide you with the high-level tasks that need to be performed in your environment to help users take advantage of the Windows 10/11 Enterprise edition features.
 
-### Credential Guard\*
+### Credential Guard
 
-You can implement Credential Guard on Windows 10 Enterprise devices by turning on Credential Guard on these devices. Credential Guard uses Windows 10 virtualization-based security features (Hyper-V features) that must be enabled on each device before you can turn on Credential Guard. You can turn on Credential Guard by using one of the following methods:
+> [!NOTE]
+> Requires UEFI 2.3.1 or greater with Trusted Boot; Virtualization Extensions such as Intel VT-x, AMD-V, and SLAT must be enabled; x64 version of Windows; IOMMU, such as Intel VT-d, AMD-Vi; BIOS Lockdown; TPM 2.0 recommended for device health attestation (will use software if TPM 2.0 not present).
+
+You can implement Credential Guard on Windows 10 Enterprise devices by turning on Credential Guard on these devices. Credential Guard uses Windows 10/11 virtualization-based security features (Hyper-V features) that must be enabled on each device before you can turn on Credential Guard. You can turn on Credential Guard by using one of the following methods:
 
 -   **Automated**. You can automatically turn on Credential Guard for one or more devices by using Group Policy. The Group Policy settings automatically add the virtualization-based security features and configure the Credential Guard registry settings on managed devices.
 
@@ -170,11 +110,11 @@ For more information about implementing Credential Guard, see the following reso
 -   [PC OEM requirements for Device Guard and Credential Guard](/windows-hardware/design/device-experiences/oem-security-considerations)
 -   [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337)
 
-\* *Requires UEFI 2.3.1 or greater with Trusted Boot; Virtualization Extensions such as Intel VT-x, AMD-V, and SLAT must be enabled; x64 version of Windows; IOMMU, such as Intel VT-d, AMD-Vi; BIOS Lockdown; TPM 2.0 recommended for device health attestation (will use software if TPM 2.0 not present)*
+
 
 ### Device Guard
 
-Now that the devices have Windows 10 Enterprise, you can implement Device Guard on the Windows 10 Enterprise devices by performing the following steps:
+Now that the devices have Windows 10/11 Enterprise, you can implement Device Guard on the Windows 10 Enterprise devices by performing the following steps:
 
 1.  **Optionally, create a signing certificate for code integrity policies**. As you deploy code integrity policies, you might need to sign catalog files or code integrity policies internally. To do this, you will either need a publicly issued code signing certificate (that you purchase) or an internal certificate authority (CA). If you choose to use an internal CA, you will need to create a code signing certificate.
 
@@ -192,24 +132,24 @@ Now that the devices have Windows 10 Enterprise, you can implement Device Guard
 
 For more information about implementing Device Guard, see:
 
-- [Planning and getting started on the Device Guard deployment process](https://technet.microsoft.com/itpro/windows/keep-secure/planning-and-getting-started-on-the-device-guard-deployment-process)
+- [Windows Defender Application Control and virtualization-based protection of code integrity](/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
 - [Device Guard deployment guide](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)
 
 ### AppLocker management
 
-You can manage AppLocker in Windows 10 Enterprise by using Group Policy. Group Policy requires that the you have AD DS and that the Windows 10 Enterprise devices are joined to the your AD DS domain. You can create AppLocker rules by using Group Policy, and then target those rules to the appropriate devices.
+You can manage AppLocker in Windows 10 Enterprise by using Group Policy. Group Policy requires that you have AD DS and that the Windows 10/11 Enterprise devices are joined to your AD DS domain. You can create AppLocker rules by using Group Policy, and then target those rules to the appropriate devices.
 
 For more information about AppLocker management by using Group Policy, see [AppLocker deployment guide](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-policies-deployment-guide).
 
 ### App-V
 
-App-V requires an App-V server infrastructure to support App-V clients. The primary App-V components that the you must have are as follows:
+App-V requires an App-V server infrastructure to support App-V clients. The primary App-V components that you must have are as follows:
 
 -   **App-V server**. The App-V server provides App-V management, virtualized app publishing, app streaming, and reporting services. Each of these services can be run on one server or can be run individually on multiple servers. For example, you could have multiple streaming servers. App-V clients contact App-V servers to determine which apps are published to the user or device, and then run the virtualized app from the server.
 
 -   **App-V sequencer**. The App-V sequencer is a typical client device that is used to sequence (capture) apps and prepare them for hosting from the App-V server. You install apps on the App-V sequencer, and the App-V sequencer software determines the files and registry settings that are changed during app installation. Then the sequencer captures these settings to create a virtualized app.
 
--   **App-V client**. The App-V client must be enabled on any client device on which apps will be run from the App-V server. These will be the Windows 10 Enterprise E3 devices.
+-   **App-V client**. The App-V client must be enabled on any client device on which apps will be run from the App-V server. These will be the Windows 10/11 Enterprise E3 devices.
 
 For more information about implementing the App-V server, App-V sequencer, and App-V client, see the following resources:
 
@@ -218,7 +158,7 @@ For more information about implementing the App-V server, App-V sequencer, and A
 -   [Deploying the App-V Sequencer and Configuring the Client](/windows/application-management/app-v/appv-deploying-the-appv-sequencer-and-client)
 
 ### UE-V
-UE-V requires server- and client-side components that you you’ll need to download, activate, and install. These components include:
+UE-V requires server- and client-side components that you’ll need to download, activate, and install. These components include:
 
 - **UE-V service**. The UE-V service (when enabled on devices) monitors registered applications and Windows for any settings changes, then synchronizes those settings between devices.
 
@@ -253,7 +193,7 @@ The Managed User Experience feature is a set of Windows 10 Enterprise edition f
 
 ## Related topics
 
-[Windows 10 Enterprise Subscription Activation](windows-10-subscription-activation.md)
-<BR>[Connect domain-joined devices to Azure AD for Windows 10 experiences](/azure/active-directory/devices/hybrid-azuread-join-plan)
-<BR>[Compare Windows 10 editions](https://www.microsoft.com/WindowsForBusiness/Compare)
-<BR>[Windows for business](https://www.microsoft.com/windowsforbusiness/default.aspx)
+[Windows 10/11 Enterprise Subscription Activation](windows-10-subscription-activation.md)<br>
+[Connect domain-joined devices to Azure AD for Windows 10 experiences](/azure/active-directory/devices/hybrid-azuread-join-plan)<br>
+[Compare Windows 10 editions](https://www.microsoft.com/WindowsForBusiness/Compare)<br>
+[Windows for business](https://www.microsoft.com/windowsforbusiness/default.aspx)<br>

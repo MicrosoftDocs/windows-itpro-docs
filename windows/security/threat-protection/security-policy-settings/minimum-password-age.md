@@ -12,7 +12,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.date: 11/13/2018
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Minimum password age

@@ -11,15 +11,11 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
-ms.technology: mde
+ms.date: 01/05/2021
+ms.technology: windows-sec
 ---
 
 # Audit Registry
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 Audit Registry allows you to audit attempts to access registry objects. A security audit event is generated only for objects that have system access control lists ([SACL](/windows/win32/secauthz/access-control-lists)s) specified, and only if the type of access requested, such as Read, Write, or Modify, and the account making the request match the settings in the SACL.
@@ -49,3 +45,9 @@ If success auditing is enabled, an audit entry is generated each time any accoun
 -   [5039](event-5039.md)(-): A registry key was virtualized.
 
 -   [4670](event-4670.md)(S): Permissions on an object were changed.
+
+
+> [!NOTE]
+> On creating a subkey for a parent (RegCreateKey), the expectation is to see an event for opening a handle for the newly created object (event 4656) issued by the object manager. You will see this event only when "Audit Object Access" is enabled under **Local Policies** > **Audit Policy** in Local Security Policy. This event is not generated while using precisely defined settings for seeing only registry-related events under **Advanced Audit Policy Configurations** > **Object Access** > **Audit Registry** in Local Security Policy. For example, you will not see this event with the setting to just see the registry-related auditing events using "auditpol.exe /set /subcategory:{0CCE921E-69AE-11D9-BED3-505054503030} /success:enable". This behavior is expected only on later versions of the operating system (Windows 11, Windows Server 2022, and later). On previous versions, 4656 events are not generated during subkey creation.
+>
+> Calls to Registry APIs to access an open key object to perform an operation such as RegSetValue, RegEnumValue, and RegRenameKey would trigger an event to access the object (event 4663). For example, creating a subkey using regedit.exe would not trigger a 4663 event, but renaming it would. 

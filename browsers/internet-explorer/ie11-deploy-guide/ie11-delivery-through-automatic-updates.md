@@ -2,7 +2,7 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: support
 ms.pagetype: security
-description: 
+description: A high-level overview of the delivery process and your options to control deployment of Internet Explorer through automatic updates.
 author: dansimp
 ms.author: dansimp
 ms.manager: dansimp
@@ -54,13 +54,13 @@ If you use Automatic Updates in your company, but want to stop your users from a
 -   **Download and use the Internet Explorer 11 Blocker Toolkit.**  Includes a Group Policy template and a script that permanently blocks Internet Explorer 11 from being offered by Windows Update or Microsoft Update as a high-priority update. You can download this kit from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=40722).
 
     > [!NOTE]
-    > The toolkit won't stop users with local administrator accounts from manually installing Internet Explorer 11. Using this toolkit also prevents your users from receiving automatic upgrades from Internet Explorer 8, Internet Explorer 9, or Internet Explorer 10 to Internet Explorer 11. For more information, see the [Internet Explorer 11 Blocker Toolkit frequently asked questions](../ie11-faq/faq-ie11-blocker-toolkit.md).
+    > The toolkit won't stop users with local administrator accounts from manually installing Internet Explorer 11. Using this toolkit also prevents your users from receiving automatic upgrades from Internet Explorer 8, Internet Explorer 9, or Internet Explorer 10 to Internet Explorer 11. For more information, see the [Internet Explorer 11 Blocker Toolkit frequently asked questions](../ie11-faq/faq-ie11-blocker-toolkit.yml).
 
 -   **Use an update management solution to control update deployment.**
     If you already use an update management solution, like [Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) or the more advanced [Microsoft Endpoint Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682129(v=technet.10)), you should use that instead of the Internet Explorer Blocker Toolkit.
 
     > [!NOTE]
-    > If you use WSUS to manage updates, and Update Rollups are configured for automatic installation, Internet Explorer will automatically install throughout your company. This scenario is discussed in detail in the Knowledge Base article [here](https://support.microsoft.com/kb/946202).
+    > If you use WSUS to manage updates, and Update Rollups are configured for automatic installation, Internet Explorer will automatically install throughout your company.
 
 Additional information on Internet Explorer 11, including a Readiness Toolkit, technical overview, in-depth feature summary, and Internet Explorer 11 download is available on the [Internet Explorer 11 page of the Microsoft Edge IT Center](https://technet.microsoft.com/microsoft-edge/dn262703.aspx).
 
@@ -137,7 +137,7 @@ If you need to reset your Update Rollups packages to auto-approve, do this:
 
 -   [Internet Explorer 11 Blocker Toolkit download](https://www.microsoft.com/download/details.aspx?id=40722)
 
--   [Internet Explorer 11 FAQ for IT pros](../ie11-faq/faq-for-it-pros-ie11.md)
+-   [Internet Explorer 11 FAQ for IT pros](../ie11-faq/faq-for-it-pros-ie11.yml)
 
 -   [Internet Explorer 11 delivery through automatic updates]()
 

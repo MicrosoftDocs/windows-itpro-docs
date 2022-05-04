@@ -4,24 +4,29 @@ description: Learn about troubleshooting Windows Update, issues related to HTTP/
 ms.prod: w10
 ms.mktglfcycl: 
 audience: itpro
-itproauthor: jaimeo
 ms.audience: itpro
-author: jaimeo
-ms.reviewer: 
-manager: laurawi
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.collection: highpri
 ---
 
 # Windows Update troubleshooting
 
->Applies to: Windows 10
+**Applies to**
+
+-   Windows 10
+-   Windows 11
+
+<p class="alert is-flex is-primary"><span class="has-padding-left-medium has-padding-top-extra-small"><a class="button is-primary" href="https://vsa.services.microsoft.com/v1.0/?partnerId=7d74cf73-5217-4008-833f-87a1a278f2cb&flowId=DMC&initialQuery=wu" target='_blank'><b>Try our Virtual Agent</b></a></span><span class="has-padding-small"> - It can help you quickly identify and fix common Windows Update issues</span>
 
 If you run into problems when using Windows Update, start with the following steps: 
  
 1. Run the built-in Windows Update troubleshooter to fix common issues. Navigate to **Settings > Update & Security > Troubleshoot > Windows Update**. 
 
-2. Install the most recent Servicing Stack Update (SSU) that matches your version of Windows from the Microsoft Update Catalog. See [Servicing stack updates](servicing-stack-updates.md) for more details on servicing stack updates. 
+2. Install the most recent Servicing Stack Update that matches your version of Windows from the Microsoft Update Catalog. See [Servicing stack updates](servicing-stack-updates.md) for more details on servicing stack updates. 
 
 3. Make sure that you install the latest Windows updates, cumulative updates, and rollup updates. To verify the update status, refer to the appropriate update history for your system: 
 
@@ -151,7 +156,7 @@ Go to Services.msc and ensure that Windows Firewall Service is enabled. Stopping
 ## Issues arising from configuration of conflicting policies 
 Windows Update provides a wide range configuration policy to control the behavior of the Windows Update service in a managed environment. While these policies let you configure the settings at a granular level, misconfiguration or setting conflicting policies may lead to unexpected behaviors. 
  
-For more information, see [How to configure automatic updates by using Group Policy or registry settings](https://support.microsoft.com/help/328010/how-to-configure-automatic-updates-by-using-group-policy-or-registry-s) for more information.
+For more information, see [How to configure automatic updates by using Group Policy or registry settings](/windows/deployment/update/waas-wu-settings) for more information.
 
 ## Device cannot access update files
 
@@ -171,11 +176,11 @@ Ensure that devices can reach necessary Windows Update endpoints through the fir
 > [!NOTE]
 > Be sure not to use HTTPS for those endpoints that specify HTTP, and vice versa. The connection will fail.
 
-The specific endpoints can vary between Windows 10 versions. See, for example, [Windows 10 2004 Enterprise connection endpoints](/windows/privacy/manage-windows-2004-endpoints). Similar articles for other Windows 10 versions are available in the table of contents nearby.
+The specific endpoints can vary between Windows client versions. See, for example, [Windows 10 2004 Enterprise connection endpoints](/windows/privacy/manage-windows-2004-endpoints). Similar articles for other Windows client versions are available in the table of contents nearby.
 
  
 ## Updates aren't downloading from the intranet endpoint (WSUS or Configuration Manager) 
-Windows 10 devices can receive updates from a variety of sources, including Windows Update online, a Windows Server Update Services server, and others. To determine the source of Windows Updates currently being used on a device, follow these steps: 
+Windows client devices can receive updates from a variety of sources, including Windows Update online, a Windows Server Update Services server, and others. To determine the source of Windows Updates currently being used on a device, follow these steps: 
  
 1. Start Windows PowerShell as an administrator.
 2. Run \$MUSM = New-Object -ComObject "Microsoft.Update.ServiceManager". 
@@ -186,7 +191,7 @@ Check the output for the Name and OffersWindowsUPdates parameters, which you can
 |Output|Meaning| 
 |-|-|
 |- Name: Microsoft Update <br>-OffersWindowsUpdates: True| - The update source is Microsoft Update, which means that updates for other Microsoft products besides the operating system could also be delivered.<br>- Indicates that the client is configured to receive updates for all Microsoft Products (Office, etc.) |
-|- <a name="BKMK_DCAT"></a>Name: DCat Flighting Prod <br>- OffersWindowsUpdates: True |- Starting with Windows 10 1709, feature updates are always delivered through the DCAT service.<br>- Indicates that the client is configured to receive feature updates from Windows Update. |
+|- <a name="BKMK_DCAT"></a>Name: DCat Flighting Prod <br>- OffersWindowsUpdates: True |- Starting with Windows 10, version 1709, feature updates are always delivered through the DCAT service.<br>- Indicates that the client is configured to receive feature updates from Windows Update. |
 |- Name: Windows Store (DCat Prod) <br>- OffersWindowsUpdates: False |-The update source is Insider Updates for Store Apps.<br>- Indicates that the client will not receive or is not configured to receive these updates.| 
 |- Name: Windows Server Update Service <br>- OffersWindowsUpdates: True |- The source is a Windows Server Updates Services server. <br>- The client is configured to receive updates from WSUS. |
 |- Name: Windows Update<br>- OffersWindowsUpdates: True|- The source is Windows Update. <br>- The client is configured to receive updates from Windows Update Online.| 
@@ -230,8 +235,8 @@ As shown in the following logs, automatic update runs the scan and finds no upda
 2018-08-06 10:58:47:383  480 5d8 Agent **  END  **  Agent: Finding updates [CallerId = AutomaticUpdates  Id = 57] 
 ```
 
-## High bandwidth usage on Windows 10 by Windows Update 
-Users might see that Windows 10 is consuming all the bandwidth in the different offices under the system context. This behavior is by design. Components that might consume bandwidth expand beyond Windows Update components. 
+## High bandwidth usage on Windows client by Windows Update 
+Users might see that Windows is consuming all the bandwidth in the different offices under the system context. This behavior is by design. Components that might consume bandwidth expand beyond Windows Update components. 
 
 The following group policies can help mitigate this situation: 
  

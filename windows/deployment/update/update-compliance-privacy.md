@@ -1,27 +1,34 @@
 ---
 title: Privacy in Update Compliance
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 description: an overview of the Feature Update Status report
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: deploy
 audience: itpro
-itproauthor: jaimeo
-author: jaimeo
-ms.author: jaimeo
+author: aczechowski
+ms.author: aaroncz
 ms.collection: M365-analytics
 ms.topic: article
 ---
 
 # Privacy in Update Compliance
 
+**Applies to**
+
+- Windows 10
+- Windows 11
+
 Update Compliance is fully committed to privacy, centering on these tenets:
 
-- **Transparency:** Windows 10 diagnostic data events that are required for Update Compliance's operation are fully documented (see the links for additional information) so you can review them with your company's security and compliance teams. The Diagnostic Data Viewer lets you see diagnostic data sent from a given device (see [Diagnostic Data Viewer Overview](/windows/configuration/diagnostic-data-viewer-overview) for details).
+- **Transparency:** Windows client diagnostic data events that are required for Update Compliance's operation are fully documented (see the links for additional information) so you can review them with your company's security and compliance teams. The Diagnostic Data Viewer lets you see diagnostic data sent from a given device (see [Diagnostic Data Viewer Overview](/windows/configuration/diagnostic-data-viewer-overview) for details).
 - **Control:** You ultimately control the level of diagnostic data you wish to share. In Windows 10, version 1709 we added a new policy to Limit enhanced diagnostic data to the minimum required by Windows Analytics.
 - **Security:** Your data is protected with strong security and encryption.
 - **Trust:** Update Compliance supports the Online Services Terms.
+
+> [!IMPORTANT]
+> Update Compliance is a Windows service hosted in Azure that uses Windows diagnostic data. You should be aware that Update Compliance doesn't meet [US Government community compliance (GCC)](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc#us-government-community-compliance) requirements. For a list of GCC offerings for Microsoft products and services, see the [Microsoft Trust Center](/compliance/regulatory/offering-home). Update Compliance is available in the Azure Commercial cloud, but not available for GCC High or United States Department of Defense customers. 
 
 ## Data flow for Update Compliance
 

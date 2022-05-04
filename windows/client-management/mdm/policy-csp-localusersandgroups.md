@@ -5,7 +5,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 10/14/2020
 ms.reviewer: 
@@ -13,9 +13,6 @@ manager: dansimp
 ---
 
 # Policy CSP - LocalUsersAndGroups
-
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 <hr/>
 
@@ -35,32 +32,15 @@ manager: dansimp
 <a href="" id="localusersandgroups-configure"></a>**LocalUsersAndGroups/Configure**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -75,7 +55,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10, version 20H2. This policy setting allows IT admins to add, remove, or replace members of local groups on a managed device.
+This policy setting allows IT admins to add, remove, or replace members of local groups on a managed device.
 
 > [!NOTE]
 > The [RestrictedGroups/ConfigureGroupMembership](./policy-csp-restrictedgroups.md#restrictedgroups-configuregroupmembership) policy setting also allows you to configure members (users or AAD groups) to a Windows 10 local group. However, it allows only for a full replace of the existing groups with the new members and does not allow selective add or remove.
@@ -104,7 +84,7 @@ where:
 - `<remove member>`: Specifies the SID or name of the member to remove from the specified group.
 
     > [!NOTE]
-    > When specifying member names of the user accounts, you must use following format – AzureAD/userUPN. For example, "AzureAD/user1@contoso.com" or "AzureAD/user2@contoso.co.uk". 
+    > When specifying member names of the user accounts, you must use following format – AzureAD\userUPN. For example, "AzureAD\user1@contoso.com" or "AzureAD\user2@contoso.co.uk". 
 For adding Azure AD groups, you need to specify the Azure AD Group SID. Azure AD group names are not supported with this policy.
 for more information, see [LookupAccountNameA function](/windows/win32/api/winbase/nf-winbase-lookupaccountnamea).  
 
@@ -125,7 +105,7 @@ See [Use custom settings for Windows 10 devices in Intune](/mem/intune/configura
 
 Example 1: AAD focused.
 
-The following example updates the built-in administrators group with AAD account "bob@contoso.com" and an Azure AD group with the SID **S-1-12-1-111111111-22222222222-3333333333-4444444444. On an AAD joined machines**. 
+The following example updates the built-in administrators group with AAD account "bob@contoso.com" and an Azure AD group with the SID **S-1-12-1-111111111-22222222222-3333333333-4444444444** on an AAD-joined machine. 
 
 ```xml
 <GroupConfiguration>
@@ -239,7 +219,7 @@ To troubleshoot Name/SID lookup APIs:
 
 1. Enable **lsp.log** on the client device by running the following commands:
 
-    ```cmd
+    ```powershell
     Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa" -Name LspDbgInfoLevel -Value 0x800 -Type dword -Force
 
     Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa" -Name LspDbgTraceOptions -Value 0x1 -Type dword -Force
@@ -249,74 +229,72 @@ To troubleshoot Name/SID lookup APIs:
 
 2. Turn the logging off by running the following command:
 
-    ```cmd
+    ```powershell
     Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa" -Name LspDbgInfoLevel -Value 0x0 -Type dword -Force
     
     Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa" -Name LspDbgTraceOptions -Value 0x0 -Type dword -Force
     ```
+
 ```xml
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">
-                          <xs:simpleType name="name">
-                            <xs:restriction base="xs:string">
-                              <xs:maxLength value="255" />
-                            </xs:restriction>
-                          </xs:simpleType>
-                          <xs:element name="accessgroup">
-                            <xs:complexType>
-                                <xs:sequence>
-                                    <xs:element name="group" minOccurs="1" maxOccurs="1">
-                                      <xs:annotation>
-                                        <xs:documentation>Group Configuration Action</xs:documentation>
-                                      </xs:annotation>
-                                      <xs:complexType>
-                                        <xs:attribute name="action" type="name" use="required"/>
-                                      </xs:complexType>
-                                    </xs:element>
-                                    <xs:element name="add" minOccurs="0" maxOccurs="unbounded">
-                                      <xs:annotation>
-                                        <xs:documentation>Group Member to Add</xs:documentation>
-                                      </xs:annotation>
-                                      <xs:complexType>
-                                        <xs:attribute name="member" type="name" use="required"/>
-                                      </xs:complexType>
-                                    </xs:element>
-                                    <xs:element name="remove" minOccurs="0" maxOccurs="unbounded">
-                                      <xs:annotation>
-                                        <xs:documentation>Group Member to Remove</xs:documentation>
-                                      </xs:annotation>
-                                      <xs:complexType>
-                                        <xs:attribute name="member" type="name" use="required"/>
-                                      </xs:complexType>
-                                    </xs:element>
-                                    <xs:element name="property" minOccurs="0" maxOccurs="unbounded">
-                                      <xs:annotation>
-                                        <xs:documentation>Group property to configure</xs:documentation>
-                                      </xs:annotation>
-                                      <xs:complexType>
-                                        <xs:attribute name="desc" type="name" use="required"/>
-                                        <xs:attribute name="value" type="name" use="required"/>
-                                      </xs:complexType>
-                                    </xs:element>
-                                  </xs:sequence>
-                              <xs:attribute name="desc" type="name" use="required"/>
-                            </xs:complexType>
-                          </xs:element>
-                          <xs:element name="GroupConfiguration">
-                            <xs:complexType>
-                              <xs:sequence>
-                                <xs:element name="accessgroup" minOccurs="0" maxOccurs="unbounded">
-                                  <xs:annotation>
-                              <xs:documentation>Local Group Configuration</xs:documentation>
-                            </xs:annotation>
-                                </xs:element>
-                              </xs:sequence>
-                            </xs:complexType>
-                          </xs:element>
-                      </xs:schema>
+  <xs:simpleType name="name">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="255" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="accessgroup">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="group" minOccurs="1" maxOccurs="1">
+              <xs:annotation>
+                <xs:documentation>Group Configuration Action</xs:documentation>
+              </xs:annotation>
+              <xs:complexType>
+                <xs:attribute name="action" type="name" use="required"/>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="add" minOccurs="0" maxOccurs="unbounded">
+              <xs:annotation>
+                <xs:documentation>Group Member to Add</xs:documentation>
+              </xs:annotation>
+              <xs:complexType>
+                <xs:attribute name="member" type="name" use="required"/>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="remove" minOccurs="0" maxOccurs="unbounded">
+              <xs:annotation>
+                <xs:documentation>Group Member to Remove</xs:documentation>
+              </xs:annotation>
+              <xs:complexType>
+                <xs:attribute name="member" type="name" use="required"/>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="property" minOccurs="0" maxOccurs="unbounded">
+              <xs:annotation>
+                <xs:documentation>Group property to configure</xs:documentation>
+              </xs:annotation>
+              <xs:complexType>
+                <xs:attribute name="desc" type="name" use="required"/>
+                <xs:attribute name="value" type="name" use="required"/>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+      <xs:attribute name="desc" type="name" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GroupConfiguration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="accessgroup" minOccurs="0" maxOccurs="unbounded">
+          <xs:annotation>
+      <xs:documentation>Local Group Configuration</xs:documentation>
+    </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
 ```
 
-Footnotes:
-
-Available in Windows 10, version 20H2
 
 <!--/Policies-->

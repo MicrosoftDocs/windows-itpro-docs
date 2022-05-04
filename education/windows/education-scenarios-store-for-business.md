@@ -39,7 +39,7 @@ Admins can control whether or not teachers are automatically assigned the **Basi
 2. Click **Manage**, and then click **Settings**. 
 3. On **Shop**, select or clear **Make everyone a Basic Purchaser**.
 
-![manage settings to control Basic Purchaser role assignment](images/sfe-make-everyone-bp.png)
+![manage settings to control Basic Purchaser role assignment.](images/sfe-make-everyone-bp.png)
 
 > [!NOTE]
 > **Make everyone a Basic Purchaser** is on by default. 
@@ -52,7 +52,7 @@ When **Make everyone a Basic Purchaser** is turned off, admins can manually assi
 2. Click **Manage**, and then choose **Permissions**.
 3. On **Roles**, click **Assign roles**, type and select a name, choose the role you want to assign, and then click **Save**.
 
-    ![Permission page for Microsoft Store for Business](images/sfe-roles.png)
+    ![Permission page for Microsoft Store for Business.](images/sfe-roles.png)
 
 **Blocked Basic Purchasers**
 
@@ -151,7 +151,7 @@ For info on how to distribute **Minecraft: Education Edition**, see [For teacher
 
 Employees will receive an email with a link that will install the app on their device. Click the link to start the Microsoft Store app, and then click **Install**. Also, in the Microsoft Store app, they can find the app under **My Library**.
 
-### Purchase additional licenses
+### Purchase more licenses
 Applies to: IT admins and teachers
 
 You can manage current app licenses, or purchase more licenses for apps in **Apps & software**. 
@@ -164,7 +164,7 @@ You'll have a summary of current license availability.
 
 **Minecraft: Education Edition subscriptions**
 
-Similarly, you can purchase additional subscriptions of **Minecraft: Education Edition** through Microsoft Store for Business. Find **Minecraft: Education Edition** in your inventory and use the previous steps for purchasing additional app licenses. 
+Similarly, you can purchase more subscriptions of **Minecraft: Education Edition** through Microsoft Store for Business. Find **Minecraft: Education Edition** in your inventory and use the previous steps for purchasing more app licenses. 
 
 ## Manage order history
 Applies to: IT admins and teachers

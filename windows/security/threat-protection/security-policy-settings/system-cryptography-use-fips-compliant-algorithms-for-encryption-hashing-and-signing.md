@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 11/16/2018
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing

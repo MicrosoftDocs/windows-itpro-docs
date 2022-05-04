@@ -27,12 +27,13 @@
       }
     ],
     "globalMetadata": {
+      "recommendations": true,
       "breadcrumb_path": "/microsoft-edge/deploy/breadcrumb/toc.json",
       "ROBOTS": "INDEX, FOLLOW",
       "ms.technology": "microsoft-edge",
       "audience": "ITPro",
       "ms.topic": "article",
-      "manager": "laurawi",
+      "manager": "dansimp",
       "ms.prod": "edge",
       "feedback_system": "None",
       "hideEdit": true,
@@ -53,7 +54,7 @@
         "garycentric"
       ]
     },
-    "externalReference": [],
+    "fileMetadata": {},
     "template": "op.html",
     "dest": "browsers/edge",
     "markdownEngineName": "markdig"
