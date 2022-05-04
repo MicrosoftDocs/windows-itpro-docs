@@ -148,7 +148,7 @@ Use the following PowerShell cmdlet to remove carriage returns and line feeds fr
 
 ```PS
 $outputFile = "output.admx"
-$inputFile = "input.admx
+$inputFile = "input.admx"
 (Get-Content $inputFile -Raw).Replace("`r`n","") | Set-Content $outputFile -Force
 ```
 
