@@ -2,13 +2,13 @@
 title: Configure Device Registration for Hybrid Azure AD joined key trust Windows Hello for Business
 description: Azure Device Registration for Hybrid Certificate Key Deployment (Windows Hello for Business)
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, key-trust, device, registration
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -19,13 +19,13 @@ ms.reviewer:
 # Configure Device Registration for Hybrid Azure AD joined key trust Windows Hello for Business
 
 **Applies to**
--  Windows 10, version 1703 or later
--  Windows 11
--  Hybrid deployment
--  Key trust
 
- 
-You are ready to configure device registration for your hybrid environment. Hybrid Windows Hello for Business deployment needs device registration to enable proper device authentication.   
+- Windows 10, version 1703 or later
+- Windows 11
+- Hybrid deployment
+- Key trust
+
+You are ready to configure device registration for your hybrid environment. Hybrid Windows Hello for Business deployment needs device registration to enable proper device authentication.
 
 > [!NOTE]
 > Before proceeding, you should familiarize yourself with device registration concepts such as:
@@ -36,6 +36,7 @@ You are ready to configure device registration for your hybrid environment. Hybr
 > You can learn about this and more by reading [What is a device identity](/azure/active-directory/devices/overview)
 
 ## Configure Hybrid Azure AD join
+
 Begin configuring device registration to support Hybrid Windows Hello for Business by configuring device registration capabilities in Azure AD. 
 
 Follow the guidance on the [How to configure hybrid Azure Active Directory joined devices](/azure/active-directory/devices/hybrid-azuread-join-plan) page. In the **Select your scenario based on your identity infrastructure** section, identify your configuration (either **Managed environment** or **Federated environment**) and perform only the steps applicable to your environment.
@@ -57,6 +58,7 @@ You can learn more about this scenario by reading [Review on-premises UPN suppor
 <hr>
 
 ## Follow the Windows Hello for Business hybrid key trust deployment guide
+
 1. [Overview](hello-hybrid-cert-trust.md)
 2. [Prerequisites](hello-hybrid-cert-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-key-new-install.md)

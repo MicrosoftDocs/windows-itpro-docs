@@ -4,11 +4,11 @@ description: This article contains information on how to enforce compliance dead
 ms.custom: seo-marvel-apr2020
 ms.prod: w10
 ms.mktglfcycl: manage
-author: jaimeo
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: aaroncz
 ms.reviewer:
-manager: laurawi
+manager: dougeby
 ms.topic: article
 ---
 # Enforcing compliance deadlines for updates

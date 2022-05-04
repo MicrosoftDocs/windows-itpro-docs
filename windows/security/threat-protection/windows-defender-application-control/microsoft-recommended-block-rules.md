@@ -4,7 +4,7 @@ description: View a list of recommended block rules, based on knowledge shared b
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: m365-security
-ms.technology: mde
+ms.technology: windows-sec
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,7 @@ author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 08/23/2021
+ms.date: 09/29/2021
 ---
 
 # Microsoft recommended block rules
@@ -88,7 +88,9 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 | `Alex Ionescu` | `@aionescu`|
 | `Brock Mammen`| |
 | `Casey Smith` | `@subTee` | 
+| `James Forshaw` | `@tiraniddo` |
 | `Jimmy Bayne` | `@bohops` |
+| `Kim Oppalfens` | `@thewmiguy` |
 | `Lasse Trolle Borup` | `Langkjaer Cyber Defence` |
 | `Lee Christensen` | `@tifkin_` |
 | `Matt Graeber` | `@mattifestation` | 
@@ -164,6 +166,7 @@ Select the correct version of each .dll for the Windows release you plan to supp
   <Deny ID="ID_DENY_KILL" FriendlyName="kill.exe" FileName="kill.exe" MinimumFileVersion="65535.65535.65535.65535" />
   <Deny ID="ID_DENY_LXRUN" FriendlyName="lxrun.exe" FileName="lxrun.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
   <Deny ID="ID_DENY_LXSS" FriendlyName="LxssManager.dll" FileName="LxssManager.dll" MinimumFileVersion="65535.65535.65535.65535"/>
+  <Deny ID="ID_DENY_INTUNE_AGENT" FriendlyName="IntuneWindowsAgent.exe" FileName="Microsoft.Management.Services.IntuneWindowsAgent.exe" MinimumFileVersion="1.46.204.0"/> 
   <Deny ID="ID_DENY_MFC40" FriendlyName="mfc40.dll" FileName="mfc40.dll" MinimumFileVersion="65535.65535.65535.65535"/> 
   <Deny ID="ID_DENY_MS_BUILD" FriendlyName="Microsoft.Build.dll" FileName="Microsoft.Build.dll" MinimumFileVersion="65535.65535.65535.65535" /> 
   <Deny ID="ID_DENY_MS_BUILD_FMWK" FriendlyName="Microsoft.Build.Framework.dll" FileName="Microsoft.Build.Framework.dll" MinimumFileVersion="65535.65535.65535.65535" /> 
@@ -905,6 +908,7 @@ Select the correct version of each .dll for the Windows release you plan to supp
   <FileRuleRef RuleID="ID_DENY_KILL"/>
   <FileRuleRef RuleID="ID_DENY_LXSS"/> 
   <FileRuleRef RuleID="ID_DENY_LXRUN"/> 
+  <FileRuleRef RuleID="ID_DENY_INTUNE_AGENT"/>
   <FileRuleRef RuleID="ID_DENY_MFC40"/>
   <FileRuleRef RuleID="ID_DENY_MS_BUILD" /> 
   <FileRuleRef RuleID="ID_DENY_MS_BUILD_FMWK" /> 

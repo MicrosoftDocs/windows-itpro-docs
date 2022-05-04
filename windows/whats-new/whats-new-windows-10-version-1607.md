@@ -1,15 +1,15 @@
 ---
 title: What's new in Windows 10, version 1607 (Windows 10)
-description: What's new in Windows 10 for Windows 10 (version 1607) and Windows 10 Mobile.
+description: What's new in Windows 10 for Windows 10 (version 1607).
 keywords: ["What's new in Windows 10", "Windows 10", "anniversary update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: 
-author: greg-lindsay
-manager: laurawi
-ms.author: greglin
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
 
@@ -19,7 +19,7 @@ Below is a list of some of the new and updated features in Windows 10, version 1
 
 >[!NOTE]
 >For release dates and servicing options for each version, see [Windows 10 release information](https://technet.microsoft.com/windows/release-info).
-  
+
 ## Deployment
 
 ### Windows Imaging and Configuration Designer (ICD)
@@ -78,7 +78,6 @@ Additional changes for Windows Hello in Windows 10, version 1607:
 - Personal (Microsoft account) and corporate (Active Directory or Azure AD) accounts use a single container for keys.
 - Group Policy settings for managing Windows Hello for Business are now available for both **User Configuration** and **Computer Configuration**.
 - Beginning in version 1607, Windows Hello as a convenience PIN is disabled by default on all domain-joined computers. To enable a convenience PIN for Windows 10, version 1607, enable the Group Policy setting **Turn on convenience PIN sign-in**. 
-<!--- Users can use Windows Phone with Windows Hello to sign in to a PC, connect to VPN, and sign in to Office 365 in a browser.-->
 
 [Learn more about Windows Hello for Business.](/windows/access-protection/hello-for-business/hello-identity-verification)
 
@@ -87,7 +86,7 @@ Additional changes for Windows Hello in Windows 10, version 1607:
 - The VPN client can integrate with the Conditional Access Framework, a cloud-based policy engine built into Azure Active Directory, to provide a device compliance option for remote clients.
 - The VPN client can integrate with Windows Information Protection (WIP) policy to provide additional security. [Learn more about Windows Information Protection](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip), previously known as Enterprise Data Protection.
 - New VPNv2 configuration service provider (CSP) adds configuration settings. For details, see [What's new in MDM enrollment and management](/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew_1607)
-- Microsoft Intune: *VPN Profile (Windows 10 Desktop and Mobile and later)* policy template includes support for native VPN plug-ins.
+- Microsoft Intune: *VPN* profile template includes support for native VPN plug-ins. For more information, see [Create VPN profiles to connect to VPN servers in Intune](/mem/intune/configuration/vpn-settings-configure).
 
 
 ### Windows Information Protection (WIP), formerly known as enterprise data protection (EDP)
@@ -103,12 +102,12 @@ Windows Information Protection (WIP) helps to protect against this potential dat
 ### Windows Defender
 Several new features and management options have been added to Windows Defender in Windows 10, version 1607.
 
-- [Windows Defender Offline in Windows 10](/windows/threat-protection/microsoft-defender-antivirus/windows-defender-offline) can be run directly from within Windows, without having to create bootable media.
-- [Use PowerShell cmdlets for Windows Defender](/windows/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus) to configure options and run scans.
-- [Enable the Block at First Sight feature in Windows 10](/windows/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus) to leverage the Windows Defender cloud for near-instant protection against new malware.
-- [Configure enhanced notifications for Windows Defender in Windows 10](/windows/threat-protection/microsoft-defender-antivirus/configure-notifications-microsoft-defender-antivirus) to see more information about threat detections and removal.
-- [Run a Windows Defender scan from the command line](/windows/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus).
-- [Detect and block Potentially Unwanted Applications with Windows Defender](/windows/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) during download and install times.
+- [Windows Defender Offline in Windows 10](/microsoft-365/security/defender-endpoint/microsoft-defender-offline) can be run directly from within Windows, without having to create bootable media.
+- [Use PowerShell cmdlets for Windows Defender](/microsoft-365/security/defender-endpoint/use-powershell-cmdlets-microsoft-defender-antivirus) to configure options and run scans.
+- [Enable the Block at First Sight feature in Windows 10](/microsoft-365/security/defender-endpoint/configure-block-at-first-sight-microsoft-defender-antivirus) to leverage the Windows Defender cloud for near-instant protection against new malware.
+- [Configure enhanced notifications for Windows Defender in Windows 10](/microsoft-365/security/defender-endpoint/configure-notifications-microsoft-defender-antivirus) to see more information about threat detections and removal.
+- [Run a Windows Defender scan from the command line](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus).
+- [Detect and block Potentially Unwanted Applications with Windows Defender](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) during download and install times.
 
 ### Microsoft Defender for Endpoint
 

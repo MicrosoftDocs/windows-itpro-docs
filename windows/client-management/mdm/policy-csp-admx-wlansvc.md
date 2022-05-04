@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 10/27/2020
 ms.reviewer: 
 manager: dansimp
@@ -45,38 +45,14 @@ manager: dansimp
 <a href="" id="admx-wlansvc-setcost"></a>**ADMX_wlansvc/SetCost**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -96,8 +72,8 @@ This policy setting configures the cost of Wireless LAN (WLAN) connections on th
 If this policy setting is enabled, a drop-down list box presenting possible cost values will be active. Selecting one of the following values from the list will set the cost of all WLAN connections on the local machine:
 
 - Unrestricted: Use of this connection is unlimited and not restricted by usage charges and capacity constraints.
-- Fixed: Use of this connection is not restricted by usage charges and capacity constraints up to a certain data limit.  
-- Variable: This connection is costed on a per byte basis.  If this policy setting is disabled or is not configured, the cost of Wireless LAN connections is Unrestricted by default.
+- Fixed: Use of this connection isn't restricted by usage charges and capacity constraints up to a certain data limit.  
+- Variable: This connection is costed on a per byte basis.  If this policy setting is disabled or isn't configured, the cost of Wireless LAN connections is Unrestricted by default.
 
 <!--/Description-->
 
@@ -117,38 +93,14 @@ ADMX Info:
 <a href="" id="admx-wlansvc-setpinenforced"></a>**ADMX_wlansvc/SetPINEnforced**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -167,7 +119,7 @@ This policy applies to Wireless Display connections. This policy means that the 
 
 Conversely it means that Push Button is NOT allowed.
 
-If this policy setting is disabled or is not configured, by default Push Button pairing is allowed (but not necessarily preferred).
+If this policy setting is disabled or isn't configured, by default Push Button pairing is allowed (but not necessarily preferred).
 
 <!--/Description-->
 
@@ -187,38 +139,14 @@ ADMX Info:
 <a href="" id="admx-wlansvc-setpinpreferred"></a>**ADMX_wlansvc/SetPINPreferred**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -237,7 +165,7 @@ This policy applies to Wireless Display connections. This policy changes the pre
 
 When enabled, it makes the connections to prefer a PIN for pairing to Wireless Display devices over the Push Button pairing method.
 
-If this policy setting is disabled or is not configured, by default Push Button pairing is preferred (if allowed by other policies).
+If this policy setting is disabled or isn't configured, by default Push Button pairing is preferred (if allowed by other policies).
 
 <!--/Description-->
 

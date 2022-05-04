@@ -1,7 +1,7 @@
 ---
 title: BitLocker deployment comparison (Windows 10)
 description: This article shows the BitLocker deployment comparison chart.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
@@ -30,7 +30,7 @@ This article depicts the BitLocker deployment comparison chart.
 
 | Requirements |Microsoft Intune  |Microsoft Endpoint Configuration Manager  |Microsoft BitLocker Administration and Monitoring (MBAM) |
 |---------|---------|---------|---------|
-|Minimum client operating system version     |Windows 11 and Windows 10    | Windows 11, Windows 10, and Windows 8.1  | Windows 7 and later        |
+|Minimum client operating system version     |Windows 11 and Windows 10    | Windows 11, Windows 10, and Windows 8.1  | Windows 7, Windows 8, Windows 8.1, Windows 10, and Windows 10 IoT        |
 |Supported Windows SKUs     |    Enterprise, Pro, Education     |    Enterprise, Pro, Education     |     Enterprise    |
 |Minimum Windows version     |1909   |    None     |    None     |
 |Supported domain-joined status     |     Microsoft Azure Active Directory (Azure AD) joined, hybrid Azure AD joined    |   Active Directory joined, hybrid Azure AD joined      |     Active Directory joined    |

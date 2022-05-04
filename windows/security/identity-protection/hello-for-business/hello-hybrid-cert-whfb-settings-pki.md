@@ -2,13 +2,13 @@
 title: Configuring Hybrid Azure AD joined Windows Hello for Business - Public Key Infrastructure (PKI)
 description: Discussing the configuration of the Public Key Infrastructure (PKI) in a Hybrid deployment of Windows Hello for Business
 keywords: identity, PIN, biometric, Hello, passport, WHFB, PKI
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article

@@ -1,18 +1,18 @@
 ---
-title: Policy CSP - Bitlocker
-description: Use the Policy configuration service provider (CSP) - Bitlocker to manage encryption of PCs and devices.
+title: Policy CSP - BitLocker
+description: Use the Policy configuration service provider (CSP) - BitLocker to manage encryption of PCs and devices.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
 manager: dansimp
 ---
 
-# Policy CSP - Bitlocker
+# Policy CSP - BitLocker
 
 
 
@@ -22,7 +22,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## Bitlocker policies  
+## BitLocker policies  
 
 <dl>
   <dd>
@@ -37,38 +37,14 @@ manager: dansimp
 <a href="" id="bitlocker-encryptionmethod"></a>**Bitlocker/EncryptionMethod**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 
 <!--/SupportedSKUs-->

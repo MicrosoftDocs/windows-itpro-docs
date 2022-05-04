@@ -4,13 +4,13 @@ description: In this article, learn about the process Windows Update uses to dow
 ms.prod: w10
 ms.mktglfcycl: 
 audience: itpro
-itproauthor: jaimeo
-author: jaimeo
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: jaimeo
-ms.reviewer: 
-manager: laurawi
-ms.collection: M365-modern-desktop
+ms.author: aaroncz
+manager: dougeby
+ms.collection:
+  - M365-modern-desktop
+  - highpri
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
@@ -90,6 +90,18 @@ When users start scanning in Windows Update through the Settings panel, the foll
    - Windows Update uses the thread ID filtering to concentrate on one particular task. 
 
       ![Windows Update scan log 1.](images/update-scan-log-1.png)
+      
+#### Proxy Behavior
+For Windows Update (WU) scans URLs that are used for update detection ([MS-WUSP]: SimpleAuth Web Service | Microsoft Docs, [MS-WUSP]: Client Web Service | Microsoft Docs):
+- System proxy is attempted (set using the `netsh` command).
+- If WUA fails to reach the service due to a certain proxy, service, or authentication error code, then user proxy is attempted (generally it is the logged-in user).
+
+    > [!Note]
+    > For intranet WSUS update service URLs, we provide an option via Windows Update policy to select the proxy behavior.
+
+For WU URLs that _aren't_ used for update detection, such as for download or reporting:
+- User proxy is attempted.
+- If WUA fails to reach the service due to a certain proxy, service, or authentication error code, then the system proxy is attempted.
 
 #### Identifies service IDs
 
@@ -132,7 +144,7 @@ Once the Windows Update Orchestrator determines which updates apply to your comp
 
 To ensure that your other downloads aren't affected or slowed down because updates are downloading, Windows Update uses Delivery Optimization, which downloads updates and reduces bandwidth consumption. 
  
-For more information, see [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md). 
+For more information, see [Configure Delivery Optimization for Windows 10 updates](../do/waas-delivery-optimization.md). 
 
 ## Installing updates 
 ![Windows Update install step.](images/update-install-step.png)

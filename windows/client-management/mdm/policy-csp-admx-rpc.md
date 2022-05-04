@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 12/08/2020
 ms.reviewer: 
 manager: dansimp
@@ -47,38 +47,14 @@ manager: dansimp
 <a href="" id="admx-rpc-rpcextendederrorinformation"></a>**ADMX_RPC/RpcExtendedErrorInformation**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -99,7 +75,7 @@ Extended error information includes the local time that the error occurred, the 
 
 If you disable this policy setting, the RPC Runtime only generates a status code to indicate an error condition.
 
-If you do not configure this policy setting, it remains disabled.  It will only generate a status code to indicate an error condition.
+If you don't configure this policy setting, it remains disabled.  It will only generate a status code to indicate an error condition.
 
 If you enable this policy setting, the RPC runtime will generate extended error information.
 
@@ -136,38 +112,14 @@ ADMX Info:
 <a href="" id="admx-rpc-rpcignoredelegationfailure"></a>**ADMX_RPC/RpcIgnoreDelegationFailure**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -184,17 +136,17 @@ ADMX Info:
 <!--Description-->
 This policy setting controls whether the RPC Runtime ignores delegation failures when delegation is requested.
 
-The constrained delegation model, introduced in Windows Server 2003, does not report that delegation was enabled on a security context when a client connects to a server. Callers of RPC and COM are encouraged to use the RPC_C_QOS_CAPABILITIES_IGNORE_DELEGATE_FAILURE flag, but some applications written for the traditional delegation model prior to Windows Server 2003 may not use this flag and will encounter RPC_S_SEC_PKG_ERROR when connecting to a server that uses constrained delegation.
+The constrained delegation model, introduced in Windows Server 2003, doesn't report that delegation was enabled on a security context when a client connects to a server. Callers of RPC and COM are encouraged to use the RPC_C_QOS_CAPABILITIES_IGNORE_DELEGATE_FAILURE flag, but some applications written for the traditional delegation model prior to Windows Server 2003 may not use this flag and will encounter RPC_S_SEC_PKG_ERROR when connecting to a server that uses constrained delegation.
 
 If you disable this policy setting, the RPC Runtime will generate RPC_S_SEC_PKG_ERROR errors to applications that ask for delegation and connect to servers using constrained delegation. 
 
-If you do not configure this policy setting, it remains disabled and will generate RPC_S_SEC_PKG_ERROR errors to applications that ask for delegation and connect to servers using constrained delegation.
+If you don't configure this policy setting, it remains disabled and will generate RPC_S_SEC_PKG_ERROR errors to applications that ask for delegation and connect to servers using constrained delegation.
 
 If you enable this policy setting, then:
 
-- "Off" directs the RPC Runtime to generate RPC_S_SEC_PKG_ERROR if the client asks for delegation, but the created security context does not support delegation.
+- "Off" directs the RPC Runtime to generate RPC_S_SEC_PKG_ERROR if the client asks for delegation, but the created security context doesn't support delegation.
 
-- "On" directs the RPC Runtime to accept security contexts that do not support delegation even if delegation was asked for.
+- "On" directs the RPC Runtime to accept security contexts that don't support delegation even if delegation was asked for.
 
 > [!NOTE]
 > This policy setting will not be applied until the system is rebooted.
@@ -218,38 +170,14 @@ ADMX Info:
 <a href="" id="admx-rpc-rpcminimumhttpconnectiontimeout"></a>**ADMX_RPC/RpcMinimumHttpConnectionTimeout**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -274,7 +202,7 @@ The minimum allowed value for this policy setting is 90 seconds. The maximum is 
 
 If you disable this policy setting, the idle connection timeout on the IIS server running the RPC HTTP proxy will be used.
 
-If you do not configure this policy setting, it will remain disabled.  The idle connection timeout on the IIS server running the RPC HTTP proxy will be used.
+If you don't configure this policy setting, it will remain disabled.  The idle connection timeout on the IIS server running the RPC HTTP proxy will be used.
 
 If you enable this policy setting, and the IIS server running the RPC HTTP proxy is configured with a lower idle connection timeout, the timeout on the IIS server is used. Otherwise, the provided timeout value is used. The timeout is given in seconds.
 
@@ -299,38 +227,14 @@ ADMX Info:
 <a href="" id="admx-rpc-rpcstateinformation"></a>**ADMX_RPC/RpcStateInformation**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -349,11 +253,11 @@ This policy setting determines whether the RPC Runtime maintains RPC state infor
 
 If you disable this policy setting, the RPC runtime defaults to "Auto2" level.
 
-If you do not configure this policy setting, the RPC  defaults to "Auto2" level. 
+If you don't configure this policy setting, the RPC  defaults to "Auto2" level. 
 
 If you enable this policy setting, you can use the drop-down box to determine which systems maintain RPC state information.
 
-- "None" indicates that the system does not maintain any RPC state information. Note: Because the basic state information required for troubleshooting has a negligible effect on performance and uses only about 4K of memory, this setting is not recommended for most installations.
+- "None" indicates that the system doesn't maintain any RPC state information. Note: Because the basic state information required for troubleshooting has a negligible effect on performance and uses only about 4K of memory, this setting isn't recommended for most installations.
 
 - "Auto1" directs RPC to maintain basic state information only if the computer has at least 64 MB of memory.
 
@@ -361,7 +265,7 @@ If you enable this policy setting, you can use the drop-down box to determine wh
 
 - "Server" directs RPC to maintain basic state information on the computer, regardless of its capacity.
 
-- "Full" directs RPC to maintain complete RPC state information on the system, regardless of its capacity. Because this level can degrade performance, it is recommended for use only while you are investigating an RPC problem.
+- "Full" directs RPC to maintain complete RPC state information on the system, regardless of its capacity. Because this level can degrade performance, it's recommended for use only while you're investigating an RPC problem.
 
 > [!NOTE]
 > To retrieve the RPC state information from a system that maintains it, you must use a debugging tool.

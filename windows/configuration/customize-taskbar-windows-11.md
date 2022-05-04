@@ -3,14 +3,15 @@ title: Configure and customize Windows 11 taskbar | Microsoft Docs
 description: On Windows 11 devices, pin and unpin default apps and organization apps on the taskbar using an XML file. Deploy the taskbar XML file using Group Policy or MDM and Microsoft Endpoint Manager. See what happens to the taskbar when the Windows OS client is installed or upgraded.
 ms.assetid: 
 manager: dougeby
-ms.author: mandia
+ms.author: aaroncz
 ms.reviewer: chataylo
 ms.prod: w11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
-author: MandiOhlinger
+author: aczechowski
 ms.localizationpriority: medium
+ms.collection: highpri
 ---
 
 # Customize the Taskbar on Windows 11

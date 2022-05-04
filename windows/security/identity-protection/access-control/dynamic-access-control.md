@@ -1,7 +1,7 @@
 ---
 title: Dynamic Access Control Overview (Windows 10)
 description: Learn about Dynamic Access Control and its associated elements, which were introduced in Windows Server 2012 and Windows 8.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

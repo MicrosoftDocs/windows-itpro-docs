@@ -16,7 +16,7 @@ ms.author: dansimp
 manager: dansimp
 ms.topic: conceptual
 ms.date: 10/14/2020
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Creating a new Base Policy with the Wizard
@@ -66,7 +66,7 @@ A description of each policy rule, beginning with the left-most column, is provi
 | **Allow Supplemental Policies** | Use this option on a base policy to allow supplemental policies to expand it. |
 | **Disable Script Enforcement** | This option disables script enforcement options. Unsigned PowerShell scripts and interactive PowerShell are no longer restricted to [Constrained Language Mode](/powershell/module/microsoft.powershell.core/about/about_language_modes). NOTE: This option is required to run HTA files, and is only supported with the Windows 10 May 2019 Update (1903) and higher. Using it on earlier versions of Windows 10 is not supported and may have unintended results. |
 |**[Hypervisor-protected code integrity (HVCI)](../device-guard/enable-virtualization-based-protection-of-code-integrity.md)**| When enabled, policy enforcement uses virtualization-based security to run the code integrity service inside a secure environment. HVCI provides stronger protections against kernel malware.|
-| **Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by Microsoft’s Intelligent Security Graph (ISG). |
+| **Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by the Microsoft Intelligent Security Graph (ISG). |
 | **Managed Installer** | Use this option to automatically allow applications installed by a software distribution solution, such as Microsoft Endpoint Configuration Manager, that has been defined as a managed installer. |
 | **Require WHQL** | By default, legacy drivers that are not Windows Hardware Quality Labs (WHQL) signed are allowed to execute. Enabling this rule requires that every executed driver is WHQL signed and removes legacy driver support. Going forward, every new Windows–compatible driver must be WHQL certified. |
 | **Update Policy without Rebooting** | Use this option to allow future WDAC policy updates to apply without requiring a system reboot. |
@@ -84,7 +84,7 @@ Selecting the **+ Advanced Options** label will show another column of policy ru
 |------------ | ----------- |
 | **Boot Audit on Failure** | Used when the WDAC policy is in enforcement mode. When a driver fails during startup, the WDAC policy will be placed in audit mode so that Windows will load. Administrators can validate the reason for the failure in the CodeIntegrity event log. |
 | **Disable Flight Signing** | If enabled, WDAC policies will not trust flightroot-signed binaries. This would be used in the scenario in which organizations only want to run released binaries, not flight/preview-signed builds. |
-| **Disable Runtime FilePath Rule Protection** | Disable default FilePath rule protection (apps and executables allowed based on file path rules must come from a file path that’s only writable by an administrator) for any FileRule that allows a file based on FilePath. |
+| **Disable Runtime FilePath Rule Protection** | Disable default FilePath rule protection (apps and executables allowed based on file path rules must come from a file path that's only writable by an administrator) for any FileRule that allows a file based on FilePath. |
 | **Dynamic Code Security** | Enables policy enforcement for .NET applications and dynamically loaded libraries (DLLs). |
 | **Invalidate EAs on Reboot** | When the Intelligent Security Graph option (14) is used, WDAC sets an extended file attribute that indicates that the file was authorized to run. This option will cause WDAC to periodically revalidate the reputation for files that were authorized by the ISG.| 
 | **Require EV Signers** | In addition to being WHQL signed, this rule requires that drivers must have been submitted by a partner that has an Extended Verification (EV) certificate. All Windows 10 and later, or Windows 11 drivers will meet this requirement. |
@@ -132,10 +132,9 @@ The Wizard supports the creation of [file name rules](select-types-of-rules-to-c
 
 ### File Hash Rules
 
-Lastly, the Wizard supports creating file rules using the hash of the file. Although this level is specific, it can cause additional administrative overhead to maintain the current product versions’ hash values. Each time a binary is updated, the hash value changes, therefore requiring a policy update. By default, the Wizard will use file hash as the fallback in case a file rule cannot be created using the specified file rule level. 
+Lastly, the Wizard supports creating file rules using the hash of the file. Although this level is specific, it can cause additional administrative overhead to maintain the current product version's hash values. Each time a binary is updated, the hash value changes, therefore requiring a policy update. By default, the Wizard will use file hash as the fallback in case a file rule cannot be created using the specified file rule level.
 
-
-#### Deleting Signing Rules 
+#### Deleting Signing Rules
   
 The policy signing rules list table on the left of the page will document the allow and deny rules in the template, as well as any custom rules you create. Template signing rules and custom rules can be deleted from the policy by selecting the rule from the rules list table. Once the rule is highlighted, press the delete button underneath the table. you will be prompted for additional confirmation. Select `Yes` to remove the rule from the policy and the rules table. 
 

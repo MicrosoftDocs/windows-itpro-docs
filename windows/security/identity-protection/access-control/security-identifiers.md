@@ -1,7 +1,7 @@
 ---
 title: Security identifiers (Windows 10)
 description: Security identifiers
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -9,18 +9,21 @@ audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-ms.collection: M365-identity-device-management
+ms.collection:
+  - M365-identity-device-management
+  - highpri
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 04/19/2017
-ms.reviewer: 
 ---
 
 # Security identifiers
 
 **Applies to**
 -   Windows 10
+-   Windows 11
 -   Windows Server 2016
+-   Windows Server 2019
 
 This topic for the IT professional describes security identifiers and how they work in regards to accounts and groups in the Windows operating system.
 
@@ -165,7 +168,7 @@ The following table lists the universal well-known SIDs.
 | S-1-5 | NT Authority | A SID that represents an identifier authority. |
 | S-1-5-80-0 | All Services | A group that includes all service processes configured on the system. Membership is controlled by the operating system.|
 
-The following table lists the predefined identifier authority constants. The first four values are used with universal well-known SIDs, and the last value is used with well-known SIDs in Windows operating systems designated in the **Applies To** list.
+The following table lists the predefined identifier authority constants. The first four values are used with universal well-known SIDs, and the rest of the values are used with well-known SIDs in Windows operating systems designated in the **Applies To** list.
 
 | Identifier Authority | Value | SID String Prefix |
 | - | - | - |
@@ -173,6 +176,8 @@ The following table lists the predefined identifier authority constants. The fir
 | SECURITY_WORLD_SID_AUTHORITY | 1 | S-1-1 |
 | SECURITY_LOCAL_SID_AUTHORITY | 2 | S-1-2 |
 | SECURITY_CREATOR_SID_AUTHORITY | 3 | S-1-3 |
+| SECURITY_NT_AUTHORITY | 5 | S-1-5 |
+| SECURITY_AUTHENTICATION_AUTHORITY | 18 | S-1-18 |
 
 The following RID values are used with universal well-known SIDs. The Identifier authority column shows the prefix of the identifier authority with which you can combine the RID to create a universal well-known SID.
 
@@ -255,14 +260,6 @@ The SECURITY\_NT\_AUTHORITY (S-1-5) predefined identifier authority produces SID
 | S-1-5-80 | NT Service | A SID that is used as an NT Service account prefix.|
 | S-1-5-80-0 | All Services| A group that includes all service processes that are configured on the system. Membership is controlled by the operating system. SID S-1-5-80-0 equals NT SERVICES\ALL SERVICES. This SID was introduced in Windows Server 2008 R2.|
 | S-1-5-83-0| NT VIRTUAL MACHINE\Virtual Machines| A built-in group. The group is created when the Hyper-V role is installed. Membership in the group is maintained by the Hyper-V Management Service (VMMS). This group requires the **Create Symbolic Links** right (SeCreateSymbolicLinkPrivilege), and also the **Log on as a Service** right (SeServiceLogonRight). |
-| S-1-16-0| Untrusted Mandatory Level| A SID that represents an untrusted integrity level.|
-| S-1-16-4096 | Low Mandatory Level| A SID that represents a low integrity level.|
-| S-1-16-8192 | Medium Mandatory Level| This SID represents a medium integrity level.|
-| S-1-16-8448 | Medium Plus Mandatory Level| A SID that represents a medium plus integrity level.|
-| S-1-16-12288 | High Mandatory Level| A SID that represents a high integrity level.|
-| S-1-16-16384 | System Mandatory Level| A SID that represents a system integrity level.|
-| S-1-16-20480 | Protected Process Mandatory Level| A SID that represents a protected-process integrity level.|
-| S-1-16-28672 | Secure Process Mandatory Level| A SID that represents a secure process integrity level.|
 
 The following RIDs are relative to each domain.
 
@@ -307,6 +304,19 @@ Capability Security Identifiers (SIDs) are used to uniquely and immutably identi
 All Capability SIDs that the operating system is aware of are stored in the Windows Registry in the path `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities'. Any Capability SID added to Windows by first or third-party applications will be added to this location.
 
 ## Examples of registry keys taken from Windows 10, version 1909, 64-bit Enterprise edition
+
+You may see the following registry keys under AllCachedCapabilities:
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities\capabilityClass_DevUnlock
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities\capabilityClass_DevUnlock_Internal
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities\capabilityClass_Enterprise
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities\capabilityClass_General
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities\capabilityClass_Restricted
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities\capabilityClass_Windows
+
+All Capability SIDs are prefixed by S-1-15-3
+
+## Examples of registry keys taken from Windows 11, version 21H2, 64-bit Enterprise edition
 
 You may see the following registry keys under AllCachedCapabilities:
 

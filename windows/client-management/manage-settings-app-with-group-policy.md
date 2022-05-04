@@ -14,11 +14,11 @@ ms.topic: article
 
 # Manage the Settings app with Group Policy
 
-
 **Applies to**
 
-- Windows 10, Windows Server 2016
-- Windows 11
+-   Windows 10
+-   Windows 11
+-   Windows Server 2016
 
 You can now manage the pages that are shown in the Settings app by using Group Policy. When you use Group Policy to manage pages, you can hide specific pages from users. Before Windows 10, version 1703, you could either show everything in the Settings app or hide it completely.
 To make use of the Settings App group policies on Windows server 2016, install fix [4457127](https://support.microsoft.com/help/4457127/windows-10-update-kb4457127) or a later cumulative update. 
@@ -26,7 +26,7 @@ To make use of the Settings App group policies on Windows server 2016, install f
 >[!Note]
 >Each server that you want to manage access to the Settings App must be patched.
 
-If your company uses one or the PolicyDefinitions folder of the Domain Controllers used for Group Policy management, to centrally manage the new policies, copy the ControlPanel.admx and ControlPanel.adml file to [Central Store](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra).
+If your company uses one or the PolicyDefinitions folder of the Domain Controllers used for Group Policy management, to centrally manage the new policies, copy the ControlPanel.admx and ControlPanel.adml file to [Central Store](/troubleshoot/windows-client/group-policy/create-and-manage-central-store).
 
 This policy is available for both User and Computer depending on the version of the OS. Windows Server 2016 with KB 4457127 applied will have both User and Computer policy. Windows 10, version 1703, added Computer policy for the Settings app. Windows 10, version 1809, added User policy for the Settings app.
 

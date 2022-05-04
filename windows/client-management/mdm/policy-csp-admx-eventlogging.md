@@ -39,38 +39,14 @@ manager: dansimp
 <a href="" id="admx-eventlogging-enableprotectedeventlogging"></a>**ADMX_EventLogging/EnableProtectedEventLogging**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -89,9 +65,9 @@ This policy setting lets you configure Protected Event Logging.
 
 - If you enable this policy setting, components that support it will use the certificate you supply to encrypt potentially sensitive event log data before writing it to the event log. Data will be encrypted using the Cryptographic Message Syntax (CMS) standard and the public key you provide. 
 
-You can use the Unprotect-CmsMessage PowerShell cmdlet to decrypt these encrypted messages, provided that you have access to the private key corresponding to the public key that they were encrypted with.  
+You can use the Unprotect-CmsMessage PowerShell cmdlet to decrypt these encrypted messages, if you have access to the private key corresponding to the public key that they were encrypted with.  
 
-- If you disable or do not configure this policy setting, components will not encrypt event log messages before writing them to the event log.
+- If you disable or don't configure this policy setting, components won't encrypt event log messages before writing them to the event log.
 
 <!--/Description-->
 

@@ -1,14 +1,14 @@
 ---
 title: What's new in Windows 10 Enterprise LTSC 2019
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2019 (also known as Windows 10 Enterprise 2019 LTSB).
 keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 Enterprise LTSC 2019"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: low
 ms.topic: article
 ---
@@ -16,9 +16,9 @@ ms.topic: article
 # What's new in Windows 10 Enterprise LTSC 2019
 
 **Applies to**
--   Windows 10 Enterprise LTSC 2019
+-   Windows 10 Enterprise LTSC 2019
 
-This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2019, compared to Windows 10 Enterprise LTSC 2016 (LTSB). For a brief description of the LTSC servicing channel and associated support, see [Windows 10 Enterprise LTSC](index.md).
+This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2019, compared to Windows 10 Enterprise LTSC 2016 (LTSB). For a brief description of the LTSC servicing channel and associated support, see [Windows 10 Enterprise LTSC](index.md).
 
 >[!NOTE]
 >Features in Windows 10 Enterprise LTSC 2019 are equivalent to Windows 10, version 1809. 
@@ -32,15 +32,15 @@ Windows 10 Enterprise LTSC 2019 builds on Windows 10 Pro, version 1809 adding pr
 The Windows 10 Enterprise LTSC 2019 release is an important release for LTSC users because it includes the cumulative enhancements provided in Windows 10 versions 1703, 1709, 1803, and 1809. Details about these enhancements are provided below. 
 
 >[!IMPORTANT]
->The LTSC release is [intended for special use devices](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/LTSC-What-is-it-and-when-should-it-be-used/ba-p/293181). Support for LTSC by apps and tools that are designed for the semi-annual channel release of Windows 10 might be limited.
+>The LTSC release is [intended for special use devices](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/LTSC-What-is-it-and-when-should-it-be-used/ba-p/293181). Support for LTSC by apps and tools that are designed for the General Availability Channel release of Windows 10 might be limited.
 
 ## Microsoft Intune
 
-Microsoft Intune supports Windows 10 Enterprise LTSC 2019 and later.  This includes support for features such as [Windows Autopilot](#windows-autopilot). However, note that Windows 10 Update Rings Device profiles do not support LTSC releases, therefore you should use [Policy configuration service provider](/windows/client-management/mdm/policy-csp-update), WSUS, or Configuration Manager for patching.
+Microsoft Intune supports Windows 10 Enterprise LTSC 2019 and later. However, note that Windows 10 Update Rings Device profiles do not support LTSC releases, therefore you should use [Policy configuration service provider](/windows/client-management/mdm/policy-csp-update), WSUS, or Configuration Manager for patching.
 
 ## Security
 
-This version of Window 10 includes security improvements for threat protection, information protection, and identity protection.
+This version of Windows 10 includes security improvements for threat protection, information protection, and identity protection.
 
 ### Threat protection
 
@@ -48,7 +48,7 @@ This version of Window 10 includes security improvements for threat protection, 
 
 The [Microsoft Defender for Endpoint](/windows/security/threat-protection/index) platform includes the security pillars shown in the following diagram. In this version of Windows, Defender for Endpoint includes powerful analytics, security stack integration, and centralized management for better detection, prevention, investigation, response, and management. 
 
-![Microsoft Defender for Endpoint.](../images/wdatp.png)
+[ ![Microsoft Defender for Endpoint.](../images/wdatp.png) ](../images/wdatp.png#lightbox)
 
 ##### Attack surface reduction 
 
@@ -188,26 +188,6 @@ This is an update to the [BitLocker CSP](/windows/client-management/mdm/bitlocke
 
 This feature will soon be enabled on Olympia Corp as an optional feature.
 
-#### Delivering BitLocker policy to AutoPilot devices during OOBE 
-
-You can choose which encryption algorithm to apply to BitLocker encryption capable devices, rather than automatically having those devices encrypt themselves with the default algorithm. This allows the encryption algorithm (and other BitLocker policies that must be applied prior to encryption), to be delivered before BitLocker encryption begins. 
-
-For example, you can choose the XTS-AES 256 encryption algorithm, and have it applied to devices that would normally encrypt themselves automatically with the default XTS-AES 128 algorithm during OOBE.
-
-To achieve this:
-
-1. Configure the [encryption method settings](/intune/endpoint-protection-windows-10#windows-encryption) in the Windows 10 Endpoint Protection profile to the desired encryption algorithm. 
-
-2. [Assign the policy](/intune/device-profile-assign) to your Autopilot device group. 
-
-   > [!IMPORTANT]
-   > The encryption policy must be assigned to **devices** in the group, not users.
-
-3. Enable the Autopilot [Enrollment Status Page](/windows/deployment/windows-autopilot/enrollment-status) (ESP) for these devices. 
-
-   > [!IMPORTANT]
-   > If the ESP is not enabled, the policy will not apply before encryption starts.
-
 ### Identity protection
 
 Improvements have been added are to Windows Hello for Business and Credential Guard.
@@ -220,9 +200,7 @@ New features in [Windows Hello for Business](/windows/security/identity-protecti
 
 - You can now reset a forgotten PIN without deleting company managed data or apps on devices managed by [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune).
 
-- For Windows Phone devices, an administrator is able to initiate a remote PIN reset through the Intune portal.
-
-- For Windows desktops, users are able to reset a forgotten PIN through **Settings > Accounts > Sign-in options**. For more details, check out [What if I forget my PIN?](/windows/security/identity-protection/hello-for-business/hello-features#pin-reset).
+- For Windows desktops, users are able to reset a forgotten PIN through **Settings > Accounts > Sign-in options**. For more details, check out [What if I forget my PIN?](/windows/security/identity-protection/hello-for-business/hello-feature-pin-reset).
 
 [Windows Hello](/windows/security/identity-protection/hello-for-business/hello-features) now supports FIDO 2.0 authentication for Azure AD Joined Windows 10 devices and has enhanced support for shared devices, as described in [Kiosk configuration](#kiosk-configuration). 
 
@@ -230,13 +208,13 @@ New features in [Windows Hello for Business](/windows/security/identity-protecti
 
 - Support for S/MIME with Windows Hello for Business and APIs for non-Microsoft identity lifecycle management solutions.
 
-- Windows Hello is part of the account protection pillar in Windows Defender Security Center. Account Protection will encourage password users to set up Windows Hello Face, Fingerprint or PIN for faster sign in, and will notify Dynamic lock users if Dynamic lock has stopped working because their phone or device Bluetooth is off.
+- Windows Hello is part of the account protection pillar in Windows Defender Security Center. Account Protection will encourage password users to set up Windows Hello Face, Fingerprint or PIN for faster sign in, and will notify Dynamic lock users if Dynamic lock has stopped working because their device Bluetooth is off.
 
 - You can set up Windows Hello from lock screen for MSA accounts. We’ve made it easier for Microsoft account users to set up Windows Hello on their devices for faster and more secure sign-in. Previously, you had to navigate deep into Settings to find Windows Hello. Now, you can set up Windows Hello Face, Fingerprint or PIN straight from your lock screen by clicking the Windows Hello tile under Sign-in options.
 
 - New [public API](/uwp/api/windows.security.authentication.web.core.webauthenticationcoremanager.findallaccountsasync#Windows_Security_Authentication_Web_Core_WebAuthenticationCoreManager_FindAllAccountsAsync_Windows_Security_Credentials_WebAccountProvider_) for secondary account SSO for a particular identity provider.
 
-- It is easier to set up Dynamic lock, and WD SC actionable alerts have been added when Dynamic lock stops working (ex: phone Bluetooth is off).
+- It is easier to set up Dynamic lock, and WD SC actionable alerts have been added when Dynamic lock stops working (ex: device Bluetooth is off).
  
 For more information, see: [Windows Hello and FIDO2 Security Keys enable secure and easy authentication for shared devices](https://blogs.windows.com/business/2018/04/17/windows-hello-fido2-security-keys/#OdKBg3pwJQcEKCbJ.97)
 
@@ -288,23 +266,10 @@ A new security policy setting
 
 We’ve continued to work on the **Current threats** area in  [Virus & threat protection](/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection), which now displays all threats that need action. You can quickly take action on threats from this screen: 
 
-![S mode settings.](../images/virus-and-threat-protection.png "Virus & threat protection settings")
+> [!div class="mx-imgBorder"]
+> ![Virus & threat protection settings in Windows S mode.](../images/virus-and-threat-protection.png)
 
 ## Deployment
-
-### Windows Autopilot
-
-[Windows Autopilot](/windows/deployment/windows-autopilot/windows-autopilot) is a deployment tool introduced with Windows 10, version 1709 and is also available for Windows 10 Enterprise LTSC 2019 (and later versions). Windows Autopilot provides a modern device lifecycle management service powered by the cloud to deliver a zero touch experience for deploying Windows 10. 
-
-Windows Autopilot is currently available with Surface, Dell, HP, and Lenovo. Other OEM partners such as Panasonic, and Acer will support Autopilot soon. Check the [Windows IT Pro Blog](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows10Blog) or this article for updated information.
-
-Using Intune, Autopilot now enables locking the device during provisioning during the Windows Out Of Box Experience (OOBE) until policies and settings for the device get provisioned, thereby ensuring that by the time the user gets to the desktop, the device is secured and configured correctly. 
-
-You can also apply an Autopilot deployment profile to your devices using Microsoft Store for Business. When people in your organization run the out-of-box experience on the device, the profile configures Windows based on the Autopilot deployment profile you applied to the device. For more information, see [Manage Windows device deployment with Windows Autopilot Deployment](/microsoft-store/add-profile-to-devices).
-
-#### Autopilot Reset	
-
-IT Pros can use Autopilot Reset to quickly remove personal files, apps, and settings. A custom login screen is available from the lock screen that enables you to apply original settings and management enrollment (Azure Active Directory and device management) so that devices are returned to a fully configured, known, IT-approved state and ready to use. For more information, see [Reset devices with Autopilot Reset](/education/windows/autopilot-reset).
 
 ### MBR2GPT.EXE
 
@@ -381,7 +346,7 @@ If you have shared devices deployed in your work place, **Fast sign-in** enables
 
 **To enable fast sign-in:**
 
-1. Set up a shared or guest device with Windows 10, version 1809 or Windows 10 Enterprise LTSC 2019.
+1. Set up a shared or guest device with Windows 10, version 1809 or Windows 10 Enterprise LTSC 2019.
 
 2. Set the Policy CSP, and the **Authentication** and **EnableFastFirstSignIn** policies to enable fast sign-in.
 
@@ -397,7 +362,7 @@ Until now, Windows logon only supported the use of identities federated to ADFS 
 
 1. Azure AD Join your Windows 10 PC. (Web sign-in is only supported on Azure AD Joined PCs).
 
-2. Set the Policy CSP, and the Authentication and EnableWebSignIn polices to enable web sign-in. 
+2. Set the Policy CSP, and the Authentication and EnableWebSignIn policies to enable web sign-in. 
 
 3. On the lock screen, select web sign-in under sign-in options.
 4. Click the “Sign in” button to continue.
@@ -409,7 +374,7 @@ Until now, Windows logon only supported the use of identities federated to ADFS 
 ### Upgrade Readiness
 
 >[!IMPORTANT]
->Upgrade Readiness will not allow you to assess an upgrade to an LTSC release (LTSC builds are not available as target versions). However, you can enroll devices running LTSC to plan for an upgrade to a semi-annual channel release.
+>Upgrade Readiness will not allow you to assess an upgrade to an LTSC release (LTSC builds are not available as target versions). However, you can enroll devices running LTSC to plan for an upgrade to a General Availability Channel release.
 
 Upgrade Readiness helps you ensure that applications and drivers are ready for a Windows 10 upgrade. The solution provides up-to-date application and driver inventory, information about known issues, troubleshooting guidance, and per-device readiness and tracking details. The Upgrade Readiness tool moved from public preview to general availability on March 2, 2017.
 
@@ -567,7 +532,7 @@ In Windows 10 Enterprise LTSC 2019, we continue our work to improve the diagnost
 
 ### Application Virtualization for Windows (App-V)
 
-Previous versions of the Microsoft Application Virtualization Sequencer (App-V Sequencer) have required you to manually create your sequencing environment. Windows 10 Enterprise LTSC 2019 introduces two new PowerShell cmdlets, New-AppVSequencerVM and Connect-AppvSequencerVM, which automatically create your sequencing environment for you, including provisioning your virtual machine. Additionally, the App-V Sequencer has been updated to let you sequence or update multiple apps at the same time, while automatically capturing and storing your customizations as an App-V project template (.appvt) file, and letting you use PowerShell or Group Policy settings to automatically cleanup your unpublished packages after a device restart.
+Previous versions of the Microsoft Application Virtualization Sequencer (App-V Sequencer) have required you to manually create your sequencing environment. Windows 10 Enterprise LTSC 2019 introduces two new PowerShell cmdlets, New-AppVSequencerVM and Connect-AppvSequencerVM, which automatically create your sequencing environment for you, including provisioning your virtual machine. Additionally, the App-V Sequencer has been updated to let you sequence or update multiple apps at the same time, while automatically capturing and storing your customizations as an App-V project template (.appvt) file, and letting you use PowerShell or Group Policy settings to automatically clean up your unpublished packages after a device restart.
 
 For more info, see the following topics:
 - [Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)](/windows/application-management/app-v/appv-auto-provision-a-vm)
@@ -613,17 +578,17 @@ Users attempt to connect to a Miracast receiver as they did previously. When the
 - Users do not have to change how they connect to a Miracast receiver. They use the same UX as for standard Miracast connections.
 - No changes to current wireless drivers or PC hardware are required.
 - It works well with older wireless hardware that is not optimized for Miracast over Wi-Fi Direct.
-- It leverages an existing connection which both reduces the time to connect and provides a very stable stream.
+- It leverages an existing connection that both reduces the time to connect and provides a very stable stream.
 
 #### Enabling Miracast over Infrastructure
 
 If you have a device that has been updated to Windows 10 Enterprise LTSC 2019, then you automatically have this new feature. To take advantage of it in your environment, you need to ensure the following is true within your deployment:
 
-- The device (PC, phone, or Surface Hub) needs to be running Windows 10, version 1703, Windows 10 Enterprise LTSC 2019, or a later OS.
+- The device (PC or Surface Hub) needs to be running Windows 10, version 1703, Windows 10 Enterprise LTSC 2019, or a later OS.
 
-- A Windows PC or Surface Hub can act as a Miracast over Infrastructure *receiver*. A Windows PC or phone can act as a Miracast over Infrastructure *source*.
+- A Windows PC or Surface Hub can act as a Miracast over Infrastructure *receiver*. A Windows device can act as a Miracast over Infrastructure *source*.
     - As a Miracast receiver, the PC or Surface Hub must be connected to your enterprise network via either Ethernet or a secure Wi-Fi connection (e.g. using either WPA2-PSK or WPA2-Enterprise security). If the Hub is connected to an open Wi-Fi connection, Miracast over Infrastructure will disable itself.
-    - As a Miracast source, the  PC or phone must be connected to the same enterprise network via Ethernet or a secure Wi-Fi connection.
+    - As a Miracast source, the device must be connected to the same enterprise network via Ethernet or a secure Wi-Fi connection.
 
 - The DNS Hostname (device name) of the device needs to be resolvable via your DNS servers. You can achieve this by either allowing your device to register automatically via Dynamic DNS, or by manually creating an A or AAAA record for the device's hostname.
 

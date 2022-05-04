@@ -11,7 +11,7 @@ ms.date: 09/09/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 6400(-): BranchCache: Received an incorrectly formatted response while discovering availability of content.

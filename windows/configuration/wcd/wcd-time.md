@@ -4,10 +4,10 @@ description: This section describes the Time settings that you can configure in 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
-manager: dansimp
+ms.author: aaroncz
+manager: dougeby
 ms.topic: article
 ---
 
@@ -17,9 +17,9 @@ Use **Time** to configure settings for time zone setup for Windows 10, version (
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [ProvisionSetTimeZone](#provisionsettimezone) | X  |  |  |  |  |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| [ProvisionSetTimeZone](#provisionsettimezone) | ✔️ |  |  |  |
 
 ## ProvisionSetTimeZone
 
