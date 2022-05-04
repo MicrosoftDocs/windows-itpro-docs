@@ -58,6 +58,11 @@ The following sections list the components that make network connections to Micr
 
 The following table lists management options for each setting,  For Windows 10 (beginning with Windows 10 Enterprise version 1607) and Windows 11.
 
+ > [!IMPORTANT]
+> **If you need assistance with troubleshooting issues, please refer to**:</br> 
+>  - [Keep your device running smoothly](https://support.microsoft.com/topic/keep-your-device-running-smoothly-with-recommended-troubleshooting-ec76fe10-4ac8-ce9d-49c6-757770fe68f1)</br>
+>  - [CSP - Troubleshooting](/windows/client-management/mdm/policy-csp-troubleshooting)
+
 
 | Setting | UI | Group Policy | Registry |
 | - | :-: | :-: | :-: |
@@ -861,6 +866,8 @@ Use Settings > Privacy & security to configure some settings that may be importa
 
 - [18.23 Voice Activation](#bkmk-voice-act)
 
+- [18.24 News and interests](#bkmk-priv-news)
+
 ### <a href="" id="bkmk-general"></a>18.1 General
 
 **General** includes options that don't fall into other areas.
@@ -1528,6 +1535,13 @@ To turn this Off in the UI:
 
 - Create a REG_DWORD registry setting named **LetAppsActivateWithVoiceAboveLock** in **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\AppPrivacy** with a **value of 2 (two)**
 
+### <a href="" id="bkmk-priv-news"></a>18.24 News and interests  
+
+In the **Windows Feeds** area, you can choose which apps have access to your diagnostic information.
+
+To turn this off:
+
+- Create a REG_DWORD registry setting named **EnableFeeds** in **HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Feeds** with a **value of 0 (zero)**.
 
 ### <a href="" id="bkmk-spp"></a>19. Software Protection Platform
 
