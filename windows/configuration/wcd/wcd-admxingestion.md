@@ -147,8 +147,9 @@ The next sample highlights the specific policy.
 Use the following PowerShell cmdlet to remove carriage returns and line feeds from a multi-line file to create a single-line file that you can paste in **AdmxFileUid**.
 
 ```PS
-$path="file path"
-(Get-Content $admxFile -Raw).Replace("`r`n","") | Set-Content $path -Force
+$outputFile = "output.admx"
+$inputFile = "input.admx
+(Get-Content $inputFile -Raw).Replace("`r`n","") | Set-Content $outputFile -Force
 ```
 
 ## Configuration Samples
