@@ -266,7 +266,7 @@ ms.collection: highpri
 Allows the IT admin (when used with **Update/ActiveHoursStart**) to manage a range of active hours where update reboots aren't scheduled. This value sets the end time. there's a 12-hour maximum from start time.
 
 > [!NOTE]
-> The default maximum difference from start time has been increased to 18 in Windows 10, version 1703. In this version of Windows 10, the maximum range of active hours can now be configured.  See **Update/ActiveHoursMaxRange** below for more information.
+> The default maximum difference from start time has been increased to 18 in Windows 10, version 1703. In this version of Windows 10, the maximum range of active hours can now be configured.  See **Update/ActiveHoursMaxRange** below for more information.
 
 Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc.
 
@@ -361,7 +361,7 @@ ADMX Info:
 Allows the IT admin (when used with **Update/ActiveHoursEnd**) to manage a range of hours where update reboots aren't scheduled. This value sets the start time. There's a 12-hour maximum from end time.
 
 > [!NOTE]
-> The default maximum difference from end time has been increased to 18 in Windows 10, version 1703. In this version of Windows 10, the maximum range of active hours can now be configured.  See **Update/ActiveHoursMaxRange** above for more information.
+> The default maximum difference from end time has been increased to 18 in Windows 10, version 1703. In this version of Windows 10, the maximum range of active hours can now be configured.  See **Update/ActiveHoursMaxRange** above for more information.
 
 Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc.
 
@@ -433,7 +433,6 @@ The following list shows the supported values:
 - 4: Auto install and restart at a specified time. You specify the installation day and time. If no day and time is specified, the default is 3 AM daily. Automatic installation happens at this time and device restart happens after a 15-minute countdown. If the user is signed in when Windows is ready to restart, the user can interrupt the 15-minute countdown to delay the restart. This option is the same as `3`, but restricts end user controls on the settings page.
 - 5: Turn off automatic updates.
 - 6 (default): Updates automatically download and install at an optimal time determined by the device. Restart occurs outside of active hours until the deadline is reached, if configured.
-
 
 > [!IMPORTANT]
 > This option should be used only for systems under regulatory compliance, as you won't get security updates as well.
@@ -537,8 +536,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 – Not configured.
-- 1 – Allowed. Accepts updates received through Microsoft Update.
+- 0 - Not configured.
+- 1 - Allowed. Accepts updates received through Microsoft Update.
 
 > [!NOTE]
 > Setting this policy back to **0** or **Not configured** doesn't revert the configuration to receive updates from Microsoft Update automatically. In order to revert the configuration, you can run the PowerShell commands that are listed below to remove the Microsoft Update service:.
@@ -589,8 +588,8 @@ This policy is specific to desktop and local publishing via WSUS for third-party
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 – Not allowed or not configured. Updates from an intranet Microsoft update service location must be signed by Microsoft.
-- 1 – Allowed. Accepts updates received through an intranet Microsoft update service location, if they're signed by a certificate found in the "Trusted Publishers" certificate store of the local computer.
+- 0 - Not allowed or not configured. Updates from an intranet Microsoft update service location must be signed by Microsoft.
+- 1 - Allowed. Accepts updates received through an intranet Microsoft update service location, if they're signed by a certificate found in the "Trusted Publishers" certificate store of the local computer.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -630,7 +629,7 @@ Even when Windows Update is configured to receive updates from an intranet updat
 Enabling this policy will disable that functionality, and may cause connection to public services such as the Microsoft Store to stop working.
 
 > [!NOTE]
-> This policy applies only when the desktop or device is configured to connect to an intranet update service using the "Specify intranet Microsoft update service location" policy.
+> This policy applies only when the desktop or device is configured to connect to an intranet update service using the "Specify intranet Microsoft update service location" policy.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -644,8 +643,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 – Update service isn't allowed.
-- 1 (default) – Update service is allowed.
+- 0 - Update service isn't allowed.
+- 1 (default) - Update service is allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -857,8 +856,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 1 (default) – Auto Dismissal.
-- 2 – User Dismissal.
+- 1 (default) - Auto Dismissal.
+- 2 - User Dismissal.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1307,7 +1306,7 @@ Defers Feature Updates for the specified number of days.
 Supported values are 0-365 days.
 
 > [!IMPORTANT]
-> The default maximum number of days to defer an update has been increased from 180 (Windows 10, version 1607) to 365 in Windows 10, version 1703.
+> The default maximum number of days to defer an update has been increased from 180 (Windows 10, version 1607) to 365 in Windows 10, version 1703.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1394,7 +1393,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use DeferUpdatePeriod for Windows 10, version 1511 devices.
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use DeferUpdatePeriod for Windows 10, version 1511 devices.
 
 
 Allows IT Admins to specify update delays for up to four weeks.
@@ -1472,7 +1471,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use DeferUpgradePeriod for Windows 10, version 1511 devices.
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use DeferUpgradePeriod for Windows 10, version 1511 devices.
 
 
 Allows IT Admins to specify other upgrade delays for up to eight months.
@@ -1617,18 +1616,18 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows Update for Business (WUfB) devices running Windows 10, version 1809 and above and installed with October 2020 security update. This policy setting specifies that a WUfB device should skip safeguards.
+Available in Windows Update for Business devices running Windows 10, version 1809 and above and installed with October 2020 security update. This policy setting specifies that a Windows Update for Business device should skip safeguards.
 
 Safeguard holds prevent a device with a known compatibility issue from being offered a new OS version. The offering will proceed once a fix is issued and is verified on a held device. The aim of safeguards is to protect the device and user from a failed or poor upgrade experience.
 
 The safeguard holds protection is provided by default to all the devices trying to update to a new Windows 10 Feature Update version via Windows Update.
 
-IT admins can, if necessary, opt devices out of safeguard protections using this policy setting or via the “Disable safeguards for Feature Updates” Group Policy. 
+IT admins can, if necessary, opt devices out of safeguard protections using this policy setting or via the "Disable safeguards for Feature Updates" Group Policy. 
 
 > [!NOTE]
 > Opting out of the safeguards can put devices at risk from known performance issues. We recommend opting out only in an IT environment for validation purposes. Further, you can leverage the Windows Insider Program for Business Release Preview Channel in order to validate the upcoming Windows 10 Feature Update version without the safeguards being applied.
 >
-> The disable safeguards policy will revert to “Not Configured” on a device after moving to a new Windows 10 version, even if previously enabled. This ensures the admin is consciously disabling Microsoft’s default protection from known issues for each new feature update. 
+> The disable safeguards policy will revert to "Not Configured" on a device after moving to a new Windows 10 version, even if previously enabled. This ensures the admin is consciously disabling Microsoft's default protection from known issues for each new feature update. 
 >
 > Disabling safeguards doesn't guarantee your device will be able to successfully update. The update may still fail on the device and will likely result in a bad experience post upgrade as you're bypassing the protection given by Microsoft pertaining to known issues.
 
@@ -2070,8 +2069,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 (default) – Allow Windows Update drivers.
-- 1 – Exclude Windows Update drivers.
+- 0 (default) - Allow Windows Update drivers.
+- 1 - Exclude Windows Update drivers.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -2122,8 +2121,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 (default) – Disabled.
-- 1 – Enabled.
+- 0 (default) - Disabled.
+- 1 - Enabled.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -2165,8 +2164,8 @@ Specifies whether to ignore the MO download limit (allow unlimited downloading) 
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 (default) – Don't ignore MO download limit for apps and their updates.
-- 1 – Ignore MO download limit (allow unlimited downloading) for apps and their updates.
+- 0 (default) - Don't ignore MO download limit for apps and their updates.
+- 1 - Ignore MO download limit (allow unlimited downloading) for apps and their updates.
 
 <!--/SupportedValues-->
 <!--Validation-->
@@ -2218,8 +2217,8 @@ Specifies whether to ignore the MO download limit (allow unlimited downloading) 
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 (default) – Don't ignore MO download limit for OS updates.
-- 1 – Ignore MO download limit (allow unlimited downloading) for OS updates.
+- 0 (default) - Don't ignore MO download limit for OS updates.
+- 1 - Ignore MO download limit (allow unlimited downloading) for OS updates.
 
 <!--/SupportedValues-->
 <!--Validation-->
@@ -2313,7 +2312,7 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use PauseDeferrals for Windows 10, version 1511 devices.
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use PauseDeferrals for Windows 10, version 1511 devices.
 
 
 Allows IT Admins to pause updates and upgrades for up to five weeks. Paused deferrals will be reset after five weeks.
@@ -2334,8 +2333,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 (default) – Deferrals aren't paused.
-- 1 – Deferrals are paused.
+- 0 (default) - Deferrals aren't paused.
+- 1 - Deferrals are paused.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -2384,8 +2383,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 (default) – Feature Updates aren't paused.
-- 1 – Feature Updates are paused for 35 days or until value set to back to 0, whichever is sooner.
+- 0 (default) - Feature Updates aren't paused.
+- 1 - Feature Updates are paused for 35 days or until value set to back to 0, whichever is sooner.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -2477,8 +2476,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 (default) – Quality Updates aren't paused.
-- 1 – Quality Updates are paused for 35 days or until value set back to 0, whichever is sooner.
+- 0 (default) - Quality Updates aren't paused.
+- 1 - Quality Updates are paused for 35 days or until value set back to 0, whichever is sooner.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -2581,7 +2580,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Value type is a string containing a Windows product, for example, “Windows 11” or “11” or “Windows 10”.
+Value type is a string containing a Windows product, for example, "Windows 11" or "11" or "Windows 10".
 <!--/SupportedValues-->
 <!--Example-->
 
@@ -2625,7 +2624,7 @@ By using this Windows Update for Business policy to upgrade devices to a new pro
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use RequireDeferUpgrade for Windows 10, version 1511 devices.
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use RequireDeferUpgrade for Windows 10, version 1511 devices.
 
 
 Allows the IT admin to set a device to General Availability Channel train.
@@ -2641,8 +2640,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 (default) – User gets upgrades from General Availability Channel (Targeted).
-- 1 – User gets upgrades from General Availability Channel.
+- 0 (default) - User gets upgrades from General Availability Channel (Targeted).
+- 1 - User gets upgrades from General Availability Channel.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -2676,7 +2675,7 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> If you previously used the **Update/PhoneUpdateRestrictions** policy in previous versions of Windows, it has been deprecated. Please use this policy instead. 
+> If you previously used the **Update/PhoneUpdateRestrictions** policy in previous versions of Windows, it has been deprecated. Please use this policy instead. 
 
 
 Allows the IT admin to restrict the updates that are installed on a device to only those on an update approval list. It enables IT to accept the End User License Agreement (EULA) associated with the approved update on behalf of the end user. EULAs are approved once an update is approved.
@@ -2687,8 +2686,8 @@ Supported operations are Get and Replace.
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 – Not configured. The device installs all applicable updates.
-- 1 – The device only installs updates that are both applicable and on the Approved Updates list. Set this policy to 1 if IT wants to control the deployment of updates on devices, such as when testing is required prior to deployment.
+- 0 - Not configured. The device installs all applicable updates.
+- 1 - The device only installs updates that are both applicable and on the Approved Updates list. Set this policy to 1 if IT wants to control the deployment of updates on devices, such as when testing is required prior to deployment.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -2770,7 +2769,7 @@ Supported values are 15, 30, or 60 (minutes).
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
 
 
 Allows the IT Admin to specify the period for autorestart warning reminder notifications.
@@ -2840,14 +2839,14 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 (default) – Every day
-- 1 – Sunday
-- 2 – Monday
-- 3 – Tuesday
-- 4 – Wednesday
-- 5 – Thursday
-- 6 – Friday
-- 7 – Saturday
+- 0 (default) - Every day
+- 1 - Sunday
+- 2 - Monday
+- 3 - Tuesday
+- 4 - Wednesday
+- 5 - Thursday
+- 6 - Friday
+- 7 - Saturday
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -3111,7 +3110,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
 
 
 Enables the IT admin to schedule the time of the update installation.
@@ -3179,8 +3178,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 (default) – Enabled
-- 1 – Disabled
+- 0 (default) - Enabled
+- 1 - Disabled
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -3676,9 +3675,9 @@ Display options for update notifications. This policy allows you to define what 
 
 Options: 
 
--  0 (default) – Use the default Windows Update notifications
--  1 – Turn off all notifications, excluding restart warnings
--  2 – Turn off all notifications, including restart warnings
+-  0 (default) - Use the default Windows Update notifications
+-  1 - Turn off all notifications, excluding restart warnings
+-  2 - Turn off all notifications, including restart warnings
 
 > [!IMPORTANT]
 > If you choose not to get update notifications and also define other Group policies so that devices aren't automatically getting updates, neither you nor device users will be aware of critical security, quality, or feature updates, and your devices may be at risk.
