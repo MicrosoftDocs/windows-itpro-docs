@@ -37,11 +37,11 @@ The following methodology was used to derive these network endpoints:
 
 1. Set up the latest version of Windows 10 on a test virtual machine using the default settings. 
 2. Leave the device(s) running idle for a week ("idle" means a user is not interacting with the system/device).
-3. Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.  
+3. Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic. 
 4. Compile reports on traffic going to public IP addresses.
 5.  The test virtual machine(s) was logged into using a local account, and was not joined to a domain or Azure Active Directory.
-6.  All traffic was captured in our lab using a IPV4 network.  Therefore, no IPV6 traffic is reported here. 
-7.  These tests were conducted in an approved Microsoft lab.  It's possible your results may be different.
+6.  All traffic was captured in our lab using an IPV4 network. Therefore, no IPV6 traffic is reported here. 
+7.  These tests were conducted in an approved Microsoft lab. It's possible your results may be different.
 8.  These tests were conducted for one week, but if you capture traffic for longer you may have different results.
 
 > [!NOTE]
@@ -52,10 +52,10 @@ The following methodology was used to derive these network endpoints:
 |Area|Description|Protocol|Destination|
 |----------------|----------|----------|------------|
 |Apps|||[Learn how to turn off traffic to the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-windowsstore)|
-||The following endpoints are used to download updates to the Weather app Live Tile. If you turn off traffic to this endpoint, no Live Tiles will be updated.|HTTP|blob.weather.microsoft.com|
-|||HTTP|tile-service.weather.microsoft.com
-|||HTTP|tile-service.weather.microsoft.com
-||The following endpoint is used for OneNote Live Tile. To turn off traffic for this endpoint, either uninstall OneNote or disable the Microsoft Store. If you disable the Microsoft store, other Store apps cannot be installed or updated. Additionally, the Microsoft Store won't be able to revoke malicious Store apps and users will still be able to open them.|HTTPS|cdn.onenote.net/livetile/?Language=en-US
+||The following endpoints are used to download updates to the Weather app Live Tile. If you turn off traffic to this endpoint, no Live Tiles will be updated.|HTTP|`blob.weather.microsoft.com`|
+|||HTTP|tile-service.weather.microsoft.com|
+|||HTTP|tile-service.weather.microsoft.com|
+||The following endpoint is used for OneNote Live Tile. To turn off traffic for this endpoint, either uninstall OneNote or disable the Microsoft Store. If you disable the Microsoft store, other Store apps cannot be installed or updated. Additionally, the Microsoft Store won't be able to revoke malicious Store apps and users will still be able to open them.|HTTPS|cdn.onenote.net/livetile/?Language=en-US|
 ||The following endpoint is used for Twitter updates. To turn off traffic for these endpoints, either uninstall Twitter or disable the Microsoft Store. If you disable the Microsoft store, other Store apps cannot be installed or updated. Additionally, the Microsoft Store won't be able to revoke malicious Store apps and users will still be able to open them.|HTTPS|*.twimg.com*|
 ||The following endpoint is used for Candy Crush Saga updates. To turn off traffic for this endpoint, either uninstall Candy Crush Saga or disable the Microsoft Store. If you disable the Microsoft store, other Store apps cannot be installed or updated. Additionally, the Microsoft Store won't be able to revoke malicious Store apps and users will still be able to open them.|TLS v1.2|candycrushsoda.king.com|
 ||The following endpoint is used by the Photos app to download configuration files, and to connect to the Microsoft 365 admin center's shared infrastructure, including Office in a browser. To turn off traffic for this endpoint, either uninstall the Photos app or disable the Microsoft Store. If you disable the Microsoft store, other Store apps cannot be installed or updated. Additionally, the Microsoft Store won't be able to revoke malicious Store apps and users will still be able to open them.|HTTPS|evoke-windowsservices-tas.msedge.net|
@@ -68,9 +68,7 @@ The following methodology was used to derive these network endpoints:
 |Azure |The following endpoints are related to Azure. |HTTPS|wd-prod-*fe*.cloudapp.azure.com|
 |||HTTPS|ris-prod-atm.trafficmanager.net|
 |||HTTPS|validation-v2.sls.trafficmanager.net|
-|Certificates|Certificates are digital files, stored on client devices, used to both encrypt data and verify the identity of an individual or organization. Trusted root certificates issued by a certification authority (CA) are stored in a certificate trust list (CTL). The Automatic Root Certificates Update mechanism contacts Windows Updates to update the CTL. If a new version of the CTL is identified, the list of trusted root certificates cached on the local device will be updated. Untrusted certificates are certificates where the server certificate issuer is unknown or is not trusted by the service. Untrusted certificates are also stored in a list on the local device and updated by the Automatic Root Certificates Update mechanism.
-
-If automatic updates are turned off, applications and websites may stop working because they did not receive an updated root certificate that the application uses. Additionally, the list of untrusted certificates will no longer be updated, which increases the attack vector on the device.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#automatic-root-certificates-update)|
+|Certificates|Certificates are digital files, stored on client devices, used to both encrypt data and verify the identity of an individual or organization. Trusted root certificates issued by a certification authority (CA) are stored in a certificate trust list (CTL). The Automatic Root Certificates Update mechanism contacts Windows Updates to update the CTL. If a new version of the CTL is identified, the list of trusted root certificates cached on the local device will be updated. Untrusted certificates are certificates where the server certificate issuer is unknown or is not trusted by the service. Untrusted certificates are also stored in a list on the local device and updated by the Automatic Root Certificates Update mechanism.<br> <br>If automatic updates are turned off, applications and websites may stop working because they did not receive an updated root certificate that the application uses. Additionally, the list of untrusted certificates will no longer be updated, which increases the attack vector on the device.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#automatic-root-certificates-update)|
 |||HTTP|ctldl.windowsupdate.com|
 |Cortana and Search|||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-cortana)|
 ||The following endpoint is used to get images that are used for Microsoft Store suggestions. If you turn off traffic for this endpoint, you will block images that are used for Microsoft Store suggestions.|HTTPS|store-images.*microsoft.com|
@@ -188,5 +186,5 @@ To view endpoints for non-Enterprise Windows 10 editions, see:
 
 ## Related links
 
-- [Office 365 URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US)
+- [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges)
 - [Network infrastructure requirements for Microsoft Intune](/mem/intune/fundamentals/intune-endpoints)
