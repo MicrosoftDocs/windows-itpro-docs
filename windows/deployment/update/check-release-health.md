@@ -42,7 +42,7 @@ To be informed about the latest updates and releases, follow us on Twitter [@Win
 1. Go to the Microsoft 365 admin center at [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339), and sign in with an administrator account.
 
     > [!NOTE]
-    > By default, the Windows release health page is available to individuals who have been assigned the global admin or service administrator role for their tenant. To allow Exchange, SharePoint, and Skype for Business admins to view the Windows release health page, you must first assign them to a Service admin role. For more information about roles that can view service health, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true#roles-available-in-the-microsoft-365-admin-center).
+    > By default, the Windows release health page is available to individuals who have been assigned the global admin or service administrator role for their tenant. To allow Exchange, SharePoint, and Skype for Business admins to view the Windows release health page, you must first assign them to a Service admin role. For more information about roles that can view service health, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true#roles-available-in-the-microsoft-365-admin-center).
   
 2. To view Windows release health in the Microsoft 365 Admin Center, go to **Health > Windows release health**.
 
@@ -50,15 +50,15 @@ To be informed about the latest updates and releases, follow us on Twitter [@Win
 
    The **All versions** tab (the default view) shows all Windows products with access to their posted known issues.
 
-   ![View of current issues in release health](images/WRH-menu.png)
+   ![View of current issues in release health.](images/WRH-menu.png)
 
    A known issue is an issue that has been identified in a Windows monthly update or feature update that impacts Windows devices. The **Active and recently resolved** column provides a link to the **Known issues** tab filtered to the version selected. Selecting the **Known issues** tab will show known issues that are active or resolved within the last 30 days. 
    
-   ![View of known issues in release health](images/WRH-known-issues-20H2.png)
+   ![View of known issues in release health.](images/WRH-known-issues-20H2.png)
    
    The **History** tab shows the history of known issues that have been resolved for up to 6 months.
 
-   ![View of history issues in release health](images/WRH-history-20H2.png)
+   ![View of history issues in release health.](images/WRH-history-20H2.png)
 
    The known issue summary provides the following information:
 
@@ -70,7 +70,7 @@ To be informed about the latest updates and releases, follow us on Twitter [@Win
 
    Select the **Issue title** to access more information, including a link to the history of all status updates posted while we work on a solution. Here is an example:
 
-   ![A screenshot showing issue details](images/WRH-known-issue-detail.png)
+   ![A screenshot showing issue details.](images/WRH-known-issue-detail.png)
      
 ## Status definitions
 
@@ -91,11 +91,11 @@ In the **Windows release health** experience, every known issue is assigned as s
 
 The Windows release health page lets you view the history of all status updates posted for a specific known issue. To view all past updates posted for a given issue, select **View history** on the issue detail page.
   
-![Show link to view message history](images/WRH-view-message-history-padded.png)
+![Show link to view message history.](images/WRH-view-message-history-padded.png)
   
 A list of all status updates posted in the selected timeframe will be displayed, as shown below. You can expand any row to view the specific information provided in that status update.  
 
-![View message history](images/WRH-message-history-example-padded.png)
+![View message history.](images/WRH-message-history-example-padded.png)
   
 ## Frequently asked questions
 
@@ -148,4 +148,4 @@ A list of all status updates posted in the selected timeframe will be displayed,
     The advisory ID can be found in the upper left-hand corner of the known issue Details pane. To find it, select the Known issue you’re seeking help on, click the Details pane and you’ll find the ID under the issue title. It will be the letters WI followed by a number, similar to “WI123456”.
 
 -   **How can I learn more about expanding my use of Microsoft 365 admin center?**
-    To learn more, see the [Microsoft 365 admin center documentation](https://docs.microsoft.com/microsoft-365/admin/admin-overview/about-the-admin-center).
+    To learn more, see the [Microsoft 365 admin center documentation](/microsoft-365/admin/admin-overview/about-the-admin-center).

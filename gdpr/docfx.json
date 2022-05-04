@@ -31,6 +31,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "recommendations": true,
     "author": "eross-msft",
 		"ms.author": "lizross",
 		"feedback_system": "GitHub",

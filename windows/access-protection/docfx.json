@@ -32,6 +32,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "recommendations": true,
       "breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
       "ms.technology": "windows",
       "audience": "ITPro",

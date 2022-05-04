@@ -1,5 +1,5 @@
 ---
-title: Plan for WDAC policy management (Windows 10)
+title: Plan for WDAC policy management (Windows)
 description: Learn about the decisions you need to make to establish the processes for managing and maintaining Windows Defender Application Control policies.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -15,21 +15,25 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 02/21/2018
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Plan for Windows Defender Application Control lifecycle policy management
 
 **Applies to:**
 
-- Windows 10
-- Windows Server 2016 and above
+-   Windows 10
+-   Windows 11
+-   Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
 This topic describes the decisions you need to make to establish the processes for managing and maintaining Windows Defender Application Control (WDAC) policies.
 
 ## Policy XML lifecycle management
 
-The first step in implementing application control is to consider how your policies will be managed and maintained over time. Developing a process for managing WDAC policies helps assure that WDAC continues to effectively control how applications are allowed to run in your organization.
+The first step in implementing application control is to consider how your policies will be managed and maintained over time. Developing a process for managing WDAC policies helps ensure that WDAC continues to effectively control how applications are allowed to run in your organization.
 
 Most WDAC policies will evolve over time and proceed through a set of identifiable phases during their lifetime. Typically, these phases include:
 
@@ -41,7 +45,7 @@ Most WDAC policies will evolve over time and proceed through a set of identifiab
 6. Deploy the enforced mode policy to intended devices. We recommend using staged rollouts for enforced policies to detect and respond to issues before deploying the policy broadly.
 7. Repeat steps 1-6 anytime the desired "circle-of-trust" changes.  
 
-![Recommended WDAC policy deployment process](images/policyflow.png)
+![Recommended WDAC policy deployment process.](images/policyflow.png)
 
 ### Keep WDAC policies in a source control or document management solution
 
@@ -49,10 +53,10 @@ To effectively manage WDAC policies, you should store and maintain your policy X
 
 ### Set PolicyName, PolicyID, and Version metadata for each policy
 
-Use the [Set-CIPolicyIDInfo](/powershell/module/configci/set-cipolicyidinfo) cmdlet to give each policy a descriptive name and set a unique ID in order to differentiate each policy when reviewing WDAC events or when viewing the policy XML document. Although you can specify a string value for PolicyId, for policies using the multiple policy format we recommend using the -ResetPolicyId switch to let the system auto-generate a unique ID for the policy.
+Use the [Set-CIPolicyIDInfo](/powershell/module/configci/set-cipolicyidinfo) cmdlet to give each policy a descriptive name and set a unique ID in order to differentiate each policy when reviewing WDAC events or when viewing the policy XML document. Although you can specify a string value for PolicyId, for policies using the multiple policy format we recommend using the -ResetPolicyId switch to let the system autogenerate a unique ID for the policy.
 
 > [!NOTE]
-> PolicyID only applies to policies using the [multiple policy format](deploy-multiple-windows-defender-application-control-policies.md) on computers running Windows 10, version 1903 and above. Running -ResetPolicyId on a policy created for pre-1903 computers will convert it to multiple policy format and prevent it from running on those earlier versions of Windows 10.
+> PolicyID only applies to policies using the [multiple policy format](deploy-multiple-windows-defender-application-control-policies.md) on computers running Windows 10, version 1903 and above, or Windows 11. Running -ResetPolicyId on a policy created for pre-1903 computers will convert it to multiple policy format and prevent it from running on those earlier versions of Windows 10.
 > PolicyID should be set only once per policy and use different PolicyID's for the audit and enforced mode versions of each policy.
 
 In addition, we recommend using the [Set-CIPolicyVersion](/powershell/module/configci/set-cipolicyversion) cmdlet to increment the policy's internal version number when you make changes to the policy. The version must be defined as a standard four-part version string (e.g. "1.0.0.0").

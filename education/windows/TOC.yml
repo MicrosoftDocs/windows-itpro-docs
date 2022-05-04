@@ -1,3 +1,9 @@
+- name: Windows 11 SE for Education
+  items:
+   - name: Overview
+     href: windows-11-se-overview.md
+   - name: Settings and CSP list
+     href: windows-11-se-settings-list.md
 - name: Windows 10 for Education
   href: index.md
   items: 

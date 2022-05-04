@@ -12,7 +12,7 @@ author: cmcatee-MSFT
 manager: scotv
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 03/10/2021
+ms.date: 07/21/2021
 ---
 
 # Prerequisites for Microsoft Store for Business and Education
@@ -20,7 +20,9 @@ ms.date: 03/10/2021
 **Applies to**
 
 -   Windows 10
--   Windows 10 Mobile
+
+> [!IMPORTANT]
+> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
 
 > [!IMPORTANT]
 > Starting on April 14th, 2021, only free apps will be available in Microsoft Store for Business and Education. For more information, see [Microsoft Store for Business and Education](index.md).
@@ -57,17 +59,17 @@ While not required, you can use a management tool to distribute and manage apps.
 
 If your organization restricts computers on your network from connecting to the Internet, there is a set of URLs that need to be available for devices to use Microsoft Store. Some of the Microsoft Store features use Store services. Devices using Microsoft Store – either to acquire, install, or update apps – will need access to these URLs. If you use a proxy server to block traffic, your configuration needs to allow these URLs:
 
-- login.live.com
-- login.windows.net
-- account.live.com
-- clientconfig.passport.net
-- windowsphone.com
-- \*.wns.windows.com
-- \*.microsoft.com
-- \*.s-microsoft.com
-- www.msftncsi.com (prior to Windows 10, version 1607)
-- www.msftconnecttest.com/connecttest.txt (replaces www.msftncsi.com
+- `login.live.com`
+- `login.windows.net`
+- `account.live.com`
+- `clientconfig.passport.net`
+- `windowsphone.com`
+- `\*.wns.windows.com`
+- `\*.microsoft.com`
+- `\*.s-microsoft.com`
+- `www.msftncsi.com` (prior to Windows 10, version 1607)
+- `www.msftconnecttest.com/connecttest.txt` (replaces `www.msftncsi.com`
   starting with Windows 10, version 1607)
  
 Store for Business requires Microsoft Windows HTTP Services (WinHTTP) to install, or update apps.
-For more information about how to configure WinHTTP proxy settings to devices, see [Use Group Policy to apply WinHTTP proxy settings to Windows clients](https://support.microsoft.com/help/4494447/use-group-policy-to-apply-winhttp-proxy-settings-to-clients).
+

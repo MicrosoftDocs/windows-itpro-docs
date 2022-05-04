@@ -3,13 +3,13 @@ title: Common Migration Scenarios (Windows 10)
 description: See how the User State Migration Tool (USMT) 10.0 is used when planning hardware and/or operating system upgrades.
 ms.assetid: 1d8170d5-e775-4963-b7a5-b55e8987c1e4
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -49,7 +49,7 @@ The following diagram shows a PC-refresh migration, also known as a computer ref
 
  
 
-![usmt pc refresh scenario](images/dep-win8-l-usmt-pcrefresh.jpg)
+![usmt pc refresh scenario.](images/dep-win8-l-usmt-pcrefresh.jpg)
 
  
 
@@ -100,7 +100,7 @@ The following diagram shows a PC-replacement migration. First, the administrator
 
  
 
-![usmt pc replace scenario](images/dep-win8-l-usmt-pcreplace.jpg)
+![usmt pc replace scenario.](images/dep-win8-l-usmt-pcreplace.jpg)
 
  
 

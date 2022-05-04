@@ -1,7 +1,6 @@
 ---
-title: Microsoft Defender SmartScreen overview (Windows 10)
+title: Microsoft Defender SmartScreen overview (Windows)
 description: Learn how Microsoft Defender SmartScreen protects against phishing or malware websites and applications, and the downloading of potentially malicious files.
-keywords: SmartScreen Filter, Windows SmartScreen, Microsoft Defender SmartScreen
 ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -12,7 +11,7 @@ audience: ITPro
 ms.localizationpriority: high
 ms.reviewer: 
 manager: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Microsoft Defender SmartScreen
@@ -20,7 +19,7 @@ ms.technology: mde
 **Applies to:**
 
 - Windows 10
-- Windows 10 Mobile
+- Windows 11
 - Microsoft Edge
 
 Microsoft Defender SmartScreen protects against phishing or malware websites and applications, and the downloading of potentially malicious files.
@@ -62,7 +61,7 @@ If you believe a warning or block was incorrectly shown for a file or applicatio
 
 When submitting Microsoft Defender SmartScreen products, make sure to select **Microsoft Defender SmartScreen** from the product menu.
 
-![Windows Security, Microsoft Defender SmartScreen controls](images/Microsoft-defender-smartscreen-submission.png)
+![Windows Security, Microsoft Defender SmartScreen controls.](images/Microsoft-defender-smartscreen-submission.png)
 
 ## Viewing Microsoft Defender SmartScreen anti-phishing events
 
@@ -76,7 +75,7 @@ Microsoft Defender SmartScreen events appear in the Microsoft-Windows-SmartScree
 
 Windows event log for SmartScreen is disabled by default, users can use Event Viewer UI to enable the log or use the command line to enable it:
 
-```
+```console
 wevtutil sl Microsoft-Windows-SmartScreen/Debug /e:true
 ```
 
@@ -84,11 +83,11 @@ wevtutil sl Microsoft-Windows-SmartScreen/Debug /e:true
 > For information on how to use the Event Viewer, see [Windows Event Viewer](/host-integration-server/core/windows-event-viewer1).
 
 
-EventID | Description
--|-
-1000 | Application Windows Defender SmartScreen Event
-1001 | Uri Windows Defender SmartScreen Event
-1002 | User Decision Windows Defender SmartScreen Event
+| EventID | Description |
+|---|---|
+| 1000 | Application Windows Defender SmartScreen Event |
+| 1001 | Uri Windows Defender SmartScreen Event |
+| 1002 | User Decision Windows Defender SmartScreen Event |
 
 ## Related topics
 - [SmartScreen Frequently Asked Questions](https://fb.smartscreen.microsoft.com/smartscreenfaq.aspx)

@@ -1,19 +1,19 @@
 ---
 title: Install VAMT (Windows 10)
-description: Learn how to install Volume Activation Management Tool (VAMT) as part of the Windows Assessment and Deployment Kit (ADK) for Windows 10.
+description: Learn how to install Volume Activation Management Tool (VAMT) as part of the Windows Assessment and Deployment Kit (ADK) for Windows 10.
 ms.assetid: 2eabd3e2-0a68-43a5-8189-2947e46482fc
-ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
 ms.date: 03/11/2019
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Install VAMT
@@ -49,7 +49,7 @@ You install VAMT as part of the Windows Assessment and Deployment Kit (ADK) for 
 
 5. On the completion page, note the instance name for your installation, select **Close**, and then select **Yes**. 
 
-    ![In this example, the instance name is SQLEXPRESS01](images/sql-instance.png)
+    ![In this example, the instance name is SQLEXPRESS01.](images/sql-instance.png)
 
 ### Install VAMT using the ADK
 
@@ -73,7 +73,7 @@ You install VAMT as part of the Windows Assessment and Deployment Kit (ADK) for 
 
 2. Enter the server instance name (for a remote SQL use the FQDN) and a name for the database, select **Connect**, and then select **Yes** to create the database. See the following image for an example for SQL.
 
-   ![Server name is .\SQLEXPRESS and database name is VAMT](images/vamt-db.png)
+   ![Server name is .\SQLEXPRESS and database name is VAMT.](images/vamt-db.png)
 
    For remote SQL Server, use `servername.yourdomain.com`.
 

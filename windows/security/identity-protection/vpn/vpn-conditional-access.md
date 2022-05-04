@@ -1,7 +1,7 @@
 ---
-title: VPN and conditional access (Windows 10)
+title: VPN and conditional access (Windows 10 and Windows 11)
 description: Learn how to integrate the VPN client with the Conditional Access Platform, so you can create access rules for Azure Active Directory (Azure AD) connected apps.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, networking
@@ -10,12 +10,12 @@ ms.author: dansimp
 manager: dansimp
 ms.reviewer: 
 ms.localizationpriority: medium
-ms.date: 03/21/2019
+ms.date: 09/23/2021
 ---
 
 # VPN and conditional access
 
->Applies to: Windows 10 and Windows 10 Mobile
+>Applies to: Windows 10 and Windows 11
 
 The VPN client is now able to integrate with the cloud-based Conditional Access Platform to provide a device compliance option for remote clients. Conditional Access is a policy-based evaluation engine that lets you create access rules for any Azure Active Directory (Azure AD) connected application.  
 
@@ -35,7 +35,7 @@ See also [Always On VPN deployment for Windows Server and Windows 10](/windows-s
 
 - Azure AD-issued short-lived certificates - When a VPN connection attempt is made, the Azure AD Token Broker on the local device communicates with Azure Active Directory, which then checks for health based on compliance rules. If compliant, Azure AD sends back a short-lived certificate that is used to authenticate the VPN. Note that certificate authentication methods such as EAP-TLS can be used. When that certificate expires, the client will again check with Azure AD for health validation before a new certificate is issued.
 
-- [Microsoft Intune device compliance policies](/intune/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune) - Cloud-based device compliance leverages Microsoft Intune Compliance Policies, which are capable of querying the device state and define compliance rules for the following, among other things.
+- [Microsoft Intune device compliance policies](/mem/intune/protect/device-compliance-get-started) - Cloud-based device compliance leverages Microsoft Intune Compliance Policies, which are capable of querying the device state and define compliance rules for the following, among other things.
 
     - Antivirus status
     - Auto-update status and update compliance
@@ -87,11 +87,11 @@ Two client-side configuration service providers are leveraged for VPN device com
 The VPN client side connection flow works as follows:
 
 > [!div class="mx-imgBorder"]
-> ![Device compliance workflow when VPN client attempts to connect](images/vpn-device-compliance.png)
+> ![Device compliance workflow when VPN client attempts to connect.](images/vpn-device-compliance.png)
  
 When a VPNv2 Profile is configured with \<DeviceCompliance> \<Enabled>true<\/Enabled> the VPN client uses this connection flow:
 
-1.	 The VPN client calls into Windows 10’s Azure AD Token Broker, identifying itself as a VPN client.
+1.	 The VPN client calls into Windows 10’s or Windows 11’s Azure AD Token Broker, identifying itself as a VPN client.
 
 2.	 The Azure AD Token Broker authenticates to Azure AD and provides it with information about the device trying to connect. The Azure AD Server checks if the device is in compliance with the policies.
 
@@ -110,6 +110,7 @@ See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](/windows/clien
 - [Azure Active Directory conditional access](/azure/active-directory/conditional-access/overview)
 - [Getting started with Azure Active Directory Conditional Access](/azure/active-directory/authentication/tutorial-enable-azure-mfa)
 - [Control the health of Windows 10-based devices](../../threat-protection/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices.md)
+- Control the health of Windows 11-based devices
 - [Tip of the Day: The Conditional Access Framework and Device Compliance for VPN (Part 1)](/archive/blogs/tip_of_the_day/tip-of-the-day-the-conditional-access-framework-and-device-compliance-for-vpn)
 - [Tip of the Day: The Conditional Access Framework and Device Compliance for VPN (Part 2)](/archive/blogs/tip_of_the_day/tip-of-the-day-the-conditional-access-framework-and-device-compliance-for-vpn-part-2)
 - [Tip of the Day: The Conditional Access Framework and Device Compliance for VPN (Part 3)](/archive/blogs/tip_of_the_day/tip-of-the-day-the-conditional-access-framework-and-device-compliance-for-vpn-part-3)

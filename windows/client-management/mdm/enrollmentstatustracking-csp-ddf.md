@@ -5,7 +5,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: ManikaDhiman
+author: dansimp
 ms.date: 05/17/2019
 ---
 

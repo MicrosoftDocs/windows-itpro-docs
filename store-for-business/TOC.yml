@@ -51,8 +51,6 @@
           href: add-profile-to-devices.md
         - name: Microsoft Store for Business and Education PowerShell module - preview
           href: microsoft-store-for-business-education-powershell-module.md
-        - name: Manage software purchased with Microsoft Products and Services agreement in Microsoft Store for Business
-          href: manage-mpsa-software-microsoft-store-for-business.md
         - name: Working with solution providers
           href: /microsoft-365/commerce/manage-partners
     - name: Billing and payments

@@ -2,17 +2,18 @@
 title: Connection endpoints for Windows 10 Enterprise, version 21H1
 description: Explains what Windows 10 endpoints are used for, how to turn off traffic to them, and the impact. Specific to Windows 10 Enterprise, version 21H1.
 keywords: privacy, manage connections to Microsoft, Windows 10
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
 audience: ITPro
 author: gental-giant
-ms.author: tomlayson
-manager: mfletcher
+ms.author: v-hakima
+manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 9/17/2021
+ms.date: 11/29/2021
+ms.technology: privacy
 ---
 
 # Manage connection endpoints for Windows 10 Enterprise, version 21H1
@@ -121,7 +122,7 @@ If automatic updates are turned off, applications and websites may stop working 
 |Windows Spotlight|The following endpoints are used to retrieve Windows Spotlight metadata that describes content, such as references to image locations, as well as suggested apps, Microsoft account notifications, and Windows tips. If you turn off traffic for these endpoints, Windows Spotlight will still try to deliver new lock screen images and updated content but it will fail; suggested apps, Microsoft account notifications, and Windows tips will not be downloaded. For more information, see Windows Spotlight.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-spotlight)|
 |||TLSv1.2/HTTPS/HTTP|arc.msn.com|
 |||HTTPS|ris.api.iris.microsoft.com|
-|Windows Update|The following endpoint is used for Windows Update downloads of apps and operating system updates, including HTTP downloads or HTTP downloads blended with peers. If you turn off traffic for this endpoint, Windows Update downloads will not be managed, as critical metadata that is used to make downloads more resilient is blocked. Downloads may be impacted by corruption (resulting in re-downloads of full files). Additionally, downloads of the same update by multiple devices on the same local network will not use peer devices for bandwidth reduction.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-updates)|
+|Windows Update|The following endpoint is used for Windows Update downloads of apps and OS updates, including HTTP downloads or HTTP downloads blended with peers. If you turn off traffic for this endpoint, Windows Update downloads will not be managed, as critical metadata that is used to make downloads more resilient is blocked. Downloads may be impacted by corruption (resulting in re-downloads of full files). Additionally, downloads of the same update by multiple devices on the same local network will not use peer devices for bandwidth reduction.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-updates)|
 |||TLSv1.2/HTTPS/HTTP|*.prod.do.dsp.mp.microsoft.com|
 |||HTTP|emdl.ws.microsoft.com|
 ||The following endpoints are used to download operating system patches, updates, and apps from Microsoft Store. If you turn off traffic for these endpoints, the device will not be able to download updates for the operating system.|TLSv1.2/HTTPS/HTTP|*.dl.delivery.mp.microsoft.com|
@@ -138,25 +139,23 @@ If automatic updates are turned off, applications and websites may stop working 
 
 To view endpoints for other versions of Windows 10 Enterprise, see:
 
+- [Manage connection endpoints for Windows 10, version 21H2](manage-windows-21H2-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 20H2](manage-windows-20H2-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 2004](manage-windows-2004-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 1909](manage-windows-1909-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 1903](manage-windows-1903-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 1809](manage-windows-1809-endpoints.md)
-- [Manage connection endpoints for Windows 10, version 1803](manage-windows-1803-endpoints.md)
-- [Manage connection endpoints for Windows 10, version 1709](manage-windows-1709-endpoints.md)
 
 To view endpoints for non-Enterprise Windows 10 editions, see:
 
+- [Windows 10, version 21H1, connection endpoints for non-Enterprise editions](windows-endpoints-21H1-non-enterprise-editions.md)
 - [Windows 10, version 20H2, connection endpoints for non-Enterprise editions](windows-endpoints-20H2-non-enterprise-editions.md)
 - [Windows 10, version 2004, connection endpoints for non-Enterprise editions](windows-endpoints-2004-non-enterprise-editions.md)
 - [Windows 10, version 1909, connection endpoints for non-Enterprise editions](windows-endpoints-1909-non-enterprise-editions.md)
 - [Windows 10, version 1903, connection endpoints for non-Enterprise editions](windows-endpoints-1903-non-enterprise-editions.md)
 - [Windows 10, version 1809, connection endpoints for non-Enterprise editions](windows-endpoints-1809-non-enterprise-editions.md)
-- [Windows 10, version 1803, connection endpoints for non-Enterprise editions](windows-endpoints-1803-non-enterprise-editions.md)
-- [Windows 10, version 1709, connection endpoints for non-Enterprise editions](windows-endpoints-1709-non-enterprise-editions.md)
 
 ## Related links
 
-- [Office 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US)
+- [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges)
 - [Network infrastructure requirements for Microsoft Intune](/mem/intune/fundamentals/intune-endpoints)

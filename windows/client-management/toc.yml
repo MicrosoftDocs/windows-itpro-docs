@@ -4,7 +4,7 @@ items:
   items: 
     - name: Client management tools and settings
       items:
-        - name: Administrative Tools in Windows 10
+        - name: Windows Tools/Administrative Tools
           href: administrative-tools-in-windows-10.md
         - name: Use Quick Assist to help users
           href: quick-assist.md
@@ -18,6 +18,8 @@ items:
           href: change-default-removal-policy-external-storage-media.md
         - name: Group Policies that apply only to Windows 10 Enterprise and Windows 10 Education
           href: group-policies-for-enterprise-and-education-editions.md
+        - name: Manage Device Installation with Group Policy
+          href: manage-device-installation-with-group-policy.md
         - name: Manage the Settings app with Group Policy
           href: manage-settings-app-with-group-policy.md
         - name: What version of Windows am I running
@@ -34,7 +36,7 @@ items:
       items: 
         - name: CSP reference     
           href: mdm/configuration-service-provider-reference.md
-    - name: Troubleshoot Windows 10 clients
+    - name: Troubleshoot Windows clients
       items: 
         - name: Windows 10 support solutions      
           href: windows-10-support-solutions.md
@@ -53,6 +55,12 @@ items:
               items: 
                 - name: Collect data using Network Monitor
                   href: troubleshoot-tcpip-netmon.md
+                - name: "Part 1: TCP/IP performance overview"
+                  href: /troubleshoot/windows-server/networking/overview-of-tcpip-performance
+                - name: "Part 2: TCP/IP performance underlying network issues"
+                  href: /troubleshoot/windows-server/networking/troubleshooting-tcpip-performance-underlying-network
+                - name: "Part 3: TCP/IP performance known issues"
+                  href: /troubleshoot/windows-server/networking/tcpip-performance-known-issues                
                 - name: Troubleshoot TCP/IP connectivity
                   href: troubleshoot-tcpip-connectivity.md
                 - name: Troubleshoot port exhaustion

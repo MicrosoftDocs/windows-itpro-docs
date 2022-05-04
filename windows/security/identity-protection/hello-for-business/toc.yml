@@ -17,8 +17,6 @@
     href: hello-how-it-works.md
   - name: Technical Deep Dive
     items:
-    - name: Device Registration
-      href: hello-how-it-works-device-registration.md 
     - name: Provisioning
       href: hello-how-it-works-provisioning.md
     - name: Authentication
@@ -35,6 +33,8 @@
     href: hello-prepare-people-to-use.md
   - name: Deployment Guides
     items:
+    - name: Hybrid Cloud Trust Deployment
+      href: hello-hybrid-cloud-trust.md
     - name: Hybrid Azure AD Joined Key Trust
       items: 
       - name: Hybrid Azure AD Joined Key Trust Deployment

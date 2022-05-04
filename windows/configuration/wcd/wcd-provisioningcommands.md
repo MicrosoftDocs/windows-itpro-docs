@@ -4,13 +4,13 @@ description: This section describes the ProvisioningCommands settings that you c
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.topic: article
 ms.date: 09/06/2017
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # ProvisioningCommands (Windows Configuration Designer reference)
@@ -19,9 +19,9 @@ Use ProvisioningCommands settings to install Windows desktop applications using 
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| All settings | X  |  |  |  |  |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: | 
+| All settings | ✔️  |  |  |  |  
 
 For instructions on adding apps to provisioning packages, see [Provision PCs with apps](../provisioning-packages/provision-pcs-with-apps.md).
 
