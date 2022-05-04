@@ -22,7 +22,7 @@ ms.author: aaroncz
 -   Windows Server 2012 R2
 -   Windows Server 2016
 
-You can run a locally installed application in a virtual environment, alongside applications that have been virtualized by using Microsoft Application Virtualization (App-V). You might want to do this if you:
+You can run a locally installed application in a virtual environment, alongside applications that have been virtualized by using Microsoft Application Virtualization (App-V). You might want to do this task if you:
 
 -   Want to install and run an application locally on client computers, but want to virtualize and run specific plug-ins that work with that local application.
 
@@ -45,7 +45,7 @@ Each method accomplishes essentially the same task, but some methods may be bett
 
 To add a locally installed application to a package or to a connection group’s virtual environment, you add a subkey to the `RunVirtual` registry key in the Registry Editor, as described in the following sections.
 
-There is no Group Policy setting available to manage this registry key, so you have to use Microsoft Endpoint Manager or another electronic software distribution (ESD) system, or manually edit the registry.
+There's no Group Policy setting available to manage this registry key, so you have to use Microsoft Endpoint Manager or another electronic software distribution (ESD) system, or manually edit the registry.
 
 Starting with App-V 5.0 SP3, when using RunVirtual, you can publish packages globally or to the user.
 
@@ -63,16 +63,16 @@ Starting with App-V 5.0 SP3, when using RunVirtual, you can publish packages glo
        For example, create `HKEY_CURRENT_USER \SOFTWARE\Microsoft\AppV\Client\RunVirtual\MyApp.exe`.
 
     - Connection group can be:
-      - Packages that are published just globally or just to the user
+      - Packages that are published globally or just to the user
       - Packages that are published globally and to the user
 
-      Use the `HKEY_LOCAL_MACHINE` or `HKEY_CURRENT_USER` key. But, all of the following must be true:
+      Use the `HKEY_LOCAL_MACHINE` or `HKEY_CURRENT_USER` key. But, all of the following conditions must be fulfilled:
 
       - If you want to include multiple packages in the virtual environment, you must include them in an enabled connection group.
       - Create only one subkey for one of the packages in the connection group. If, for example, you have one package that is published globally, and another package that is published to the user, you create a subkey for either of these packages, but not both. Although you create a subkey for only one of the packages, all of the packages in the connection group, plus the local application, will be available in the virtual environment.
       - The key under which you create the subkey must match the publishing method you used for the package.
 
-        For example, if you published the package to the user, you must create the subkey under `HKEY_CURRENT_USER\SOFTWARE\Microsoft\AppV\Client\RunVirtual`. Do not add a key for the same application under both hives.
+        For example, if you published the package to the user, you must create the subkey under `HKEY_CURRENT_USER\SOFTWARE\Microsoft\AppV\Client\RunVirtual`. Don't add a key for the same application under both hives.
 
 2.  Set the new registry subkey’s value to the PackageId and VersionId of the package, separating the values with an underscore.
 
@@ -80,7 +80,7 @@ Starting with App-V 5.0 SP3, when using RunVirtual, you can publish packages glo
 
     **Example**: 4c909996-afc9-4352-b606-0b74542a09c1\_be463724-Oct1-48f1-8604-c4bd7ca92fa
 
-    The application in the previous example would produce a registry export file (.reg file) like the following:
+    The application in the previous example would produce a registry export file (.reg file) like the following example:
 
     ```registry
     Windows Registry Editor Version 5.00 

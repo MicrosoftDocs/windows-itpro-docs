@@ -102,12 +102,12 @@ Windows Information Protection (WIP) helps to protect against this potential dat
 ### Windows Defender
 Several new features and management options have been added to Windows Defender in Windows 10, version 1607.
 
-- [Windows Defender Offline in Windows 10](/windows/threat-protection/microsoft-defender-antivirus/windows-defender-offline) can be run directly from within Windows, without having to create bootable media.
-- [Use PowerShell cmdlets for Windows Defender](/windows/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus) to configure options and run scans.
-- [Enable the Block at First Sight feature in Windows 10](/windows/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus) to leverage the Windows Defender cloud for near-instant protection against new malware.
-- [Configure enhanced notifications for Windows Defender in Windows 10](/windows/threat-protection/microsoft-defender-antivirus/configure-notifications-microsoft-defender-antivirus) to see more information about threat detections and removal.
-- [Run a Windows Defender scan from the command line](/windows/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus).
-- [Detect and block Potentially Unwanted Applications with Windows Defender](/windows/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) during download and install times.
+- [Windows Defender Offline in Windows 10](/microsoft-365/security/defender-endpoint/microsoft-defender-offline) can be run directly from within Windows, without having to create bootable media.
+- [Use PowerShell cmdlets for Windows Defender](/microsoft-365/security/defender-endpoint/use-powershell-cmdlets-microsoft-defender-antivirus) to configure options and run scans.
+- [Enable the Block at First Sight feature in Windows 10](/microsoft-365/security/defender-endpoint/configure-block-at-first-sight-microsoft-defender-antivirus) to leverage the Windows Defender cloud for near-instant protection against new malware.
+- [Configure enhanced notifications for Windows Defender in Windows 10](/microsoft-365/security/defender-endpoint/configure-notifications-microsoft-defender-antivirus) to see more information about threat detections and removal.
+- [Run a Windows Defender scan from the command line](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus).
+- [Detect and block Potentially Unwanted Applications with Windows Defender](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) during download and install times.
 
 ### Microsoft Defender for Endpoint
 
