@@ -95,7 +95,7 @@ In **ConfigADMXInstalledPolicy**, you provide a policy setting and value for tha
 
 ## Category and policy in ADMX
 
-The following samples show the ADMX file for Chromium Edge that are used in the examples in the procedures above. The first sample highlights the category names.
+The following samples show the ADMX file for Chromium Edge used in the examples in the procedures above. The first sample highlights the category names.
 
 ```XML
   <categories>
