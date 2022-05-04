@@ -46,7 +46,9 @@ Avoid selecting Windows apps that are designed to launch other apps as part of t
 
 ## Guidelines for web browsers
 
-Starting with Windows 10 version 1809+, Microsoft Edge includes support for kiosk mode. [Learn how to deploy Microsoft Edge kiosk mode.](/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy)
+In Windows 10, version 1909, assigned access adds support for the new Microsoft Edge kiosk mode. [Learn how to deploy Microsoft Edge kiosk mode](/DeployEdge/microsoft-edge-configure-kiosk-mode).
+
+In Windows 10, version 1809, Microsoft Edge Legacy includes support for kiosk mode. [Learn how to deploy Microsoft Edge kiosk mode](/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy).
 
 In Windows client, you can install the **Kiosk Browser** app from Microsoft to use as your kiosk app. For digital signage scenarios, you can configure **Kiosk Browser** to navigate to a URL and show only that content -- no navigation buttons, no address bar, etc. For kiosk scenarios, you can configure additional settings, such as allowed and blocked URLs, navigation buttons, and end session buttons. For example, you could configure your kiosk to show the online catalog for your store, where customers can navigate between departments and items, but aren’t allowed to go to a competitor's website. 
 
@@ -155,6 +157,12 @@ You can create your own web browser Windows app by using the WebView class. Lear
 ## Secure your information
 
 Avoid selecting Windows apps that may expose the information you don’t want to show in your kiosk, since kiosk usually means anonymous access and locates in a public setting like a shopping mall. For example, an app that has a file picker allows the user to gain access to files and folders on the user's system, avoid selecting these types of apps if they provide unnecessary data access.
+
+## Customize your breakout sequence
+
+Assigned access allows for the specification of a new breakout sequence. A breakout sequence is a keyboard shortcut that stops the kiosk experience and brings the user back to the lock screen. By default the breakout sequence is configured to be ctrl+alt+delete, a common Windows keyboard shortcut. It is recommended that this is set to a non-standard Windows shortcut to prevent disruptions in the kiosk experience.
+
+There is currently no user interface for customizing the breakout sequence in Windows settings, so it would need to be specified in a provisioning method where an XML format such as MDM is used.
 
 ## App configuration
 
