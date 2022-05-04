@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_EnhancedStorage
-description: Policy CSP - ADMX_EnhancedStorage
+description: Learn about the Policy CSP - ADMX_EnhancedStorage.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -76,7 +76,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to configure a list of Enhanced Storage devices by manufacturer and product ID that are usable on your computer.
+This policy setting allows you to configure a list of Enhanced Storage devices that contain a manufacturer and product ID that are usable on your computer.
 
 If you enable this policy setting, only Enhanced Storage devices that contain a manufacturer and product ID specified in this policy are usable on your computer.
 
@@ -121,7 +121,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to create a list of IEEE 1667 silos, compliant with the Institute of Electrical and Electronics Engineers, Inc. (IEEE) 1667 specification, that are usable on your computer.
+This policy setting allows you to create a list of IEEE 1667 silos, compliant with the Institute of Electrical and Electronics Engineers, Inc. (IEEE) 1667 specification, that is usable on your computer.
 
 If you enable this policy setting, only IEEE 1667 silos that match a silo type identifier specified in this policy are usable on your computer.
 
@@ -258,7 +258,8 @@ ADMX Info:
 <!--Description-->
 This policy setting locks Enhanced Storage devices when the computer is locked.
 
-This policy setting is supported in Windows Server SKUs only.
+>[!Note]
+>This policy setting is supported in Windows Server SKUs only.
 
 If you enable this policy setting, the Enhanced Storage device remains locked when the computer is locked.
 
@@ -324,3 +325,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

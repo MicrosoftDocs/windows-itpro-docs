@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_Help
-description: Policy CSP - ADMX_Help
+description: Learn about the Policy CSP - ADMX_Help.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -22,7 +22,7 @@ manager: dansimp
 
 <hr/>
 
-<!--Policies--
+<!--Policies-->
 ## ADMX_Help policies  
 
 <dl>
@@ -82,7 +82,7 @@ If you disable or don't configure this policy setting, DEP is turned on for HTML
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP Friendly name: *Turn off Data Execution Prevention for HTML Help Executible*
+-   GP Friendly name: *Turn off Data Execution Prevention for HTML Help Executable*
 -   GP name: *DisableHHDEP*
 -   GP path: *System*
 -   GP ADMX file name: *Help.admx*
@@ -256,3 +256,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

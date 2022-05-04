@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_HelpAndSupport
-description: Policy CSP - ADMX_HelpAndSupport
+description: Learn about the Policy CSP - ADMX_HelpAndSupport.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -71,9 +71,9 @@ manager: dansimp
 <!--Description-->
 This policy setting specifies whether active content links in trusted assistance content are rendered. By default, the Help viewer renders trusted assistance content with active elements such as ShellExecute links and Guided Help links.
 
-If you enable this policy setting, active content links are not rendered. The text is displayed, but there are no clickable links for these elements.
+If you enable this policy setting, active content links aren't rendered. The text is displayed, but there are no clickable links for these elements.
 
-If you disable or do not configure this policy setting, the default behavior applies (Help viewer renders trusted assistance content with active elements).
+If you disable or don't configure this policy setting, the default behavior applies (Help viewer renders trusted assistance content with active elements).
 
 <!--/Description-->
 
@@ -117,9 +117,9 @@ ADMX Info:
 <!--Description-->
 This policy setting specifies whether users can provide ratings for Help content.
 
-If you enable this policy setting, ratings controls are not added to Help content.
+If you enable this policy setting, ratings controls aren't added to Help content.
 
-If you disable or do not configure this policy setting, ratings controls are added to Help topics.
+If you disable or don't configure this policy setting, ratings controls are added to Help topics.
 
 Users can use the control to provide feedback on the quality and usefulness of the Help and Support content.
 
@@ -164,9 +164,9 @@ ADMX Info:
 <!--Description-->
 This policy setting specifies whether users can participate in the Help Experience Improvement program. The Help Experience Improvement program collects information about how customers use Windows Help so that Microsoft can improve it.
 
-If you enable this policy setting, users cannot participate in the Help Experience Improvement program.
+If you enable this policy setting, users can't participate in the Help Experience Improvement program.
 
-If you disable or do not configure this policy setting, users can turn on the Help Experience Improvement program feature from the Help and Support settings page.
+If you disable or don't configure this policy setting, users can turn on the Help Experience Improvement program feature from the Help and Support settings page.
 
 <!--/Description-->
 
@@ -212,7 +212,7 @@ This policy setting specifies whether users can search and view content from Win
 
 If you enable this policy setting, users are prevented from accessing online assistance content from Windows Online.
 
-If you disable or do not configure this policy setting, users can access online assistance if they have a connection to the Internet and have not disabled Windows Online from the Help and Support Options page.
+If you disable or don't configure this policy setting, users can access online assistance if they have a connection to the Internet and haven't disabled Windows Online from the Help and Support Options page.
 
 <!--/Description-->
 
@@ -232,3 +232,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
