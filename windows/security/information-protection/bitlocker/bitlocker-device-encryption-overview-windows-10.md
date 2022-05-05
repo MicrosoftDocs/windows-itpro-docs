@@ -143,7 +143,7 @@ Part of the Microsoft Desktop Optimization Pack, Microsoft BitLocker Administrat
 * Enforces the BitLocker encryption policy options that you set for your enterprise.
 * Integrates with existing management tools, such as Microsoft Endpoint Configuration Manager.
 * Offers an IT-customizable recovery user experience.
-* Supports Windows 10.
+* Supports Windows 11 and Windows 10.
 
 > [!IMPORTANT]
 > Enterprises could use MBAM to manage client computers with BitLocker that are domain-joined on-premises until mainstream support ended in July 2019, or they could receive extended support until April 2026.
