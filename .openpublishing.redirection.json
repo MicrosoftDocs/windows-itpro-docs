@@ -19496,12 +19496,12 @@
      "redirect_document_id": false
     },
     { 
-     "source_path": "windows/education/itadmins.yml",
+     "source_path": "windows/education/itadmins.md",
      "redirect_url": "/education/",
      "redirect_document_id": true
     },
     { 
-     "source_path": "windows/education/partners.yml",
+     "source_path": "windows/education/partners.md",
      "redirect_url": "/education/",
      "redirect_document_id": true
     },
@@ -19511,7 +19511,7 @@
       "redirect_document_id": false
     },
     { 
-     "source_path": "windows/education/developers.yml",
+     "source_path": "windows/education/developers.md",
      "redirect_url": "/education/",
      "redirect_document_id": true
     }    
