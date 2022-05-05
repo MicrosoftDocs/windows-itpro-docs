@@ -35,7 +35,7 @@ Your environment is federated and you're ready to configure device registration 
 
 Use this three-phased approach for configuring device registration.
 
-1. [Configure devices to register in Azure](#Configure-hybrid-azure-ad-join)
+1. [Configure devices to register in Azure](#configure-hybrid-azure-ad-join)
 2. [Synchronize devices to on-premises Active Directory](#configure-active-directory-to-support-azure-device-synchronization)
 3. [Configure AD FS to use cloud devices](#configure-ad-fs-to-use-azure-registered-devices)
 
