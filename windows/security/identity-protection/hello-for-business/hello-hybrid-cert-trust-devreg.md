@@ -35,7 +35,7 @@ Your environment is federated and you are ready to configure device registration
 
 Use this three-phased approach for configuring device registration.
 
-1. [Configure devices to register in Azure](#configure-azure-for-device-registration)
+1. [Configure devices to register in Azure](#Configure-hybrid-azure-ad-join)
 2. [Synchronize devices to on-premises Active Directory](#configure-active-directory-to-support-azure-device-synchronization)
 3. [Configure AD FS to use cloud devices](#configure-ad-fs-to-use-azure-registered-devices)
 
@@ -62,7 +62,7 @@ If the user principal name (UPN) in your on-premises Active Directory is differe
 - Configure Azure AD Connect to sync the user's on-premises UPN to the `onPremisesUserPrincipalName attribute` in Azure AD.
 - Add the domain name of the on-premises UPN as a [verified domain](/azure/active-directory/fundamentals/add-custom-domain) in Azure AD. 
 
-You can learn more about this scenario by reading [Review on-premises UPN support for Hybrid Azure Ad join](azure/active-directory/devices/hybrid-azuread-join-plan#review-on-premises-ad-users-upn-support-for-hybrid-azure-ad-join).
+You can learn more about this scenario by reading [Review on-premises UPN support for Hybrid Azure Ad join](/azure/active-directory/devices/hybrid-azuread-join-plan#review-on-premises-ad-users-upn-support-for-hybrid-azure-ad-join).
 
 > [!NOTE]
 > Windows Hello for Business Hybrid key trust is not supported, if your users' on-premises domain cannot be added as a verified domain in Azure AD.
