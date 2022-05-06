@@ -62,6 +62,7 @@ Use the Set-AppLockerPolicy cmdlet with the -XMLPolicy parameter, using an .XML 
     <RuleCollection Type="Script" EnforcementMode="NotConfigured" />
     <RuleCollection Type="Dll" EnforcementMode="NotConfigured" />
     <RuleCollection Type="Appx" EnforcementMode="NotConfigured" />
+    <RuleCollection Type="ManagedInstaller" EnforcementMode="NotConfigured" />
 </AppLockerPolicy>
 ```
 

@@ -109,6 +109,7 @@ To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** 
 <!--Using include file, waas-delivery-optimization-monitor.md, for shared content on DO monitoring-->
 [!INCLUDE [Monitor Delivery Optimization](includes/waas-delivery-optimization-monitor.md)]
 
+
 ### Monitor with Update Compliance
 
 Update Compliance provides you with information about your Delivery Optimization configuration, including the observed bandwidth savings across all devices that used peer-to-peer distribution over the past 28 days.

@@ -55,32 +55,31 @@ Open `RunConfig.bat` and configure the following (assuming a first-run, with `ru
 
 |Error  |Description  |
 |---------|---------|
-| 27    | Not system account. |
-| 37    | Unexpected exception when collecting logs| 
 | 1    | General unexpected error| 
 | 6    | Invalid CommercialID| 
-| 48    | CommercialID is not a GUID| 
 | 8    | Couldn't create registry key path to setup CommercialID| 
 | 9    | Couldn't write CommercialID at registry key path| 
-| 53    | There are conflicting CommercialID values.| 
 | 11    | Unexpected result when setting up CommercialID.| 
-| 62    | AllowTelemetry registry key is not of the correct type REG_DWORD| 
-| 63    | AllowTelemetry is not set to the appropriate value and it could not be set by the script.| 
-| 64    | AllowTelemetry is not of the correct type REG_DWORD.| 
-| 99    | Device is not Windows 10.| 
-| 40    | Unexpected exception when checking and setting telemetry.| 
 | 12    | CheckVortexConnectivity failed, check Log output for more information.| 
 | 12    | Unexpected failure when running CheckVortexConnectivity.| 
-| 66    | Failed to verify UTC connectivity and recent uploads.|  
-| 67    | Unexpected failure when verifying UTC CSP.| 
+| 16    | Reboot is pending on device, restart device and restart script.| 
+| 17    | Unexpected exception in CheckRebootRequired.| 
+| 27    | Not system account. |
+| 30    | Unable to disable Enterprise Auth Proxy. This registry value must be 0 for UTC to operate in an authenticated proxy environment.| 
+| 34    | Unexpected exception when attempting to check  Proxy settings.| 
+| 35    | Unexpected exception when checking User Proxy.| 
+| 37    | Unexpected exception when collecting logs| 
+| 40    | Unexpected exception when checking and setting telemetry.| 
 | 41    | Unable to impersonate logged-on user.| 
 | 42    | Unexpected exception when attempting to impersonate logged-on user.| 
 | 43    | Unexpected exception when attempting to impersonate logged-on user.| 
-| 16    | Reboot is pending on device, restart device and restart script.| 
-| 17    | Unexpected exception in CheckRebootRequired.| 
 | 44    | Error when running CheckDiagTrack service.| 
 | 45    | DiagTrack.dll not found.| 
+| 48    | CommercialID is not a GUID| 
 | 50    | DiagTrack service not running.| 
+| 51    | Unexpected exception when attempting to run Census.exe| 
+| 52    | Could not find Census.exe| 
+| 53    | There are conflicting CommercialID values.| 
 | 54    | Microsoft Account Sign In Assistant (MSA) Service disabled.| 
 | 55    | Failed to create new registry path for SetDeviceNameOptIn| 
 | 56    | Failed to create property for SetDeviceNameOptIn at registry path| 
@@ -89,12 +88,13 @@ Open `RunConfig.bat` and configure the following (assuming a first-run, with `ru
 | 59    | Failed to delete LastPersistedEventTimeOrFirstBoot property at registry path when attempting to clean up OneSettings.| 
 | 60    | Failed to delete registry key when attempting to clean up OneSettings.| 
 | 61    | Unexpected exception when attempting to clean up OneSettings.| 
-| 52    | Could not find Census.exe| 
-| 51    | Unexpected exception when attempting to run Census.exe| 
-| 34    | Unexpected exception when attempting to check  Proxy settings.| 
-| 30    | Unable to disable Enterprise Auth Proxy. This registry value must be 0 for UTC to operate in an authenticated proxy environment.| 
-| 35    | Unexpected exception when checking User Proxy.| 
+| 62    | AllowTelemetry registry key is not of the correct type REG_DWORD| 
+| 63    | AllowTelemetry is not set to the appropriate value and it could not be set by the script.| 
+| 64    | AllowTelemetry is not of the correct type REG_DWORD.| 
+| 66    | Failed to verify UTC connectivity and recent uploads.|  
+| 67    | Unexpected failure when verifying UTC CSP.| 
 | 91    | Failed to create new registry path for EnableAllowUCProcessing| 
 | 92    | Failed to create property for EnableAllowUCProcessing at registry path| 
 | 93    | Failed to update value for EnableAllowUCProcessing| 
 | 94    | Unexpected exception in EnableAllowUCProcessing| 
+| 99    | Device is not Windows 10.| 
