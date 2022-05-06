@@ -1,20 +1,20 @@
 ---
-title: How to publish a package by using the Management console (Windows 10)
+title: How to publish a package by using the Management console (Windows 10/11)
 description: Learn how the Management console in App-V can help you enable admin controls as well as publish App-V packages.
-author: lomayor
+author: aczechowski
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 09/27/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
 # How to publish a package by using the Management console
 
->Applies to: Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 Use the following procedure to publish an App-V package. Once you publish a package, computers running the App-V client can access and run the applications in that package.
 

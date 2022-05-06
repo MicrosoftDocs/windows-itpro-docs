@@ -1,27 +1,29 @@
 ---
-title: Hybrid Windows Hello for Business - Directory Synchronization
+title: Hybrid Azure AD joined Windows Hello for Business - Directory Synchronization
 description: How to configure Hybrid key trust Windows Hello for Business - Directory Synchronization
 keywords: identity, PIN, biometric, Hello, passport, WHFB, dirsync, connect, Windows Hello, AD Connect, key trust, key-trust
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 08/19/2018
+ms.date: 4/30/2021
 ms.reviewer: 
 ---
-# Configure Hybrid Windows Hello for Business: Directory Synchronization
+# Configure Hybrid Azure AD joined Windows Hello for Business: Directory Synchronization
 
 **Applies to**
--   Windows 10, version 1703 or later
--   Hybrid deployment
--   Key trust
+
+- Windows 10, version 1703 or later
+- Windows 11
+- Hybrid deployment
+- Key trust
 
 ## Directory Synchronization
 
@@ -29,7 +31,7 @@ In hybrid deployments, users register the public portion of their Windows Hello 
 
 ### Group Memberships for the Azure AD Connect Service Account
 >[!IMPORTANT]
-> If you already have a Windows Server 2016 domain controller in your domain, you can skip **Configure Permissions for Key Synchronization**. For more detail see [Configure Hybrid Windows Hello for Business: Directory Synchronization](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-whfb-settings-dir-sync).
+> If you already have a Windows Server 2016 domain controller in your domain, you can skip **Configure Permissions for Key Synchronization**. For more detail see [Configure Hybrid Windows Hello for Business: Directory Synchronization](./hello-hybrid-cert-whfb-settings-dir-sync.md).
 
 The KeyAdmins global group provides the Azure AD Connect service with the permissions needed to read and write the public key to Active Directory.  
 
@@ -54,6 +56,7 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 <hr>
 
 ## Follow the Windows Hello for Business hybrid key trust deployment guide
+
 1. [Overview](hello-hybrid-cert-trust.md)
 2. [Prerequisites](hello-hybrid-key-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-key-new-install.md)

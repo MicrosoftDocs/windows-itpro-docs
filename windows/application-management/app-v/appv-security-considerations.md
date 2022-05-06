@@ -1,39 +1,39 @@
 ---
-title: App-V Security Considerations (Windows 10)
+title: App-V Security Considerations (Windows 10/11)
 description: Learn about accounts and groups, log files, and other security-related considerations for Microsoft Application Virtualization (App-V).
-author: lomayor
+author: aczechowski
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/16/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
 # App-V security considerations
 
->Applies to: Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 This topic contains a brief overview of the accounts and groups, log files, and other security-related considerations for Microsoft Application Virtualization (App-V).
 
 >[!IMPORTANT]
->App-V is not a security product and does not provide any guarantees for a secure environment.
+>App-V isn't a security product and doesn't provide any guarantees for a secure environment.
 
 ## The PackageStoreAccessControl (PSAC) feature has been deprecated
 
-Effective as of June, 2014, the PackageStoreAccessControl (PSAC) feature introduced in Microsoft Application Virtualization (App-V) 5.0 Service Pack 2 (SP2) has been deprecated in both single-user and multi-user environments.
+Effective as of June 2014, the PackageStoreAccessControl (PSAC) feature introduced in Microsoft Application Virtualization (App-V) 5.0 Service Pack 2 (SP2) has been deprecated in both single-user and multi-user environments.
 
 ## General security considerations
 
-**Understand the security risks.** The most serious risk to App-V is from unauthorized users hijacking an App-V client's functionality, giving the hacker the ability to reconfigure key data on App-V clients. By comparison, short-term loss of App-V functionality from a denial-of-service attack would not be as catastrophic.
+**Understand the security risks.** The most serious risk to App-V is from unauthorized users hijacking an App-V client's functionality, giving the hacker the ability to reconfigure key data on App-V clients. By comparison, short-term loss of App-V functionality from a denial-of-service attack wouldn't be as catastrophic.
 
 **Physically secure your computers**. A security strategy that doesn't consider physical security is incomplete. Anyone with physical access to an App-V server could potentially attack the entire client base, so potential physical attacks or thefts should be prevented at all cost. App-V servers should be stored in a physically secure server room with controlled access. Lock the computer with the operating system or a secured screen saver to keep computers secure when the administrators are away.
 
 **Apply the most recent security updates to all computers**. To stay informed about the latest updates for operating systems, Microsoft SQL Server, and App-V, see the [Microsoft Security TechCenter](https://technet.microsoft.com/security/bb291012). (THIS LINK NEEDS TO BE UPDATED)
 
-**Use strong passwords or pass phrases**. Always use strong passwords with 15 or more characters for all App-V and App-V administrator accounts. Never use blank passwords. For more information about password concepts, see [Password Policy](https://docs.microsoft.com/sql/relational-databases/security/password-policy) and [Strong Passwords](https://docs.microsoft.com/sql/relational-databases/security/strong-passwords). (THIS LINK NEEDS TO BE UPDATED)
+**Use strong passwords or pass phrases**. Always use strong passwords with 15 or more characters for all App-V and App-V administrator accounts. Never use blank passwords. For more information about password concepts, see [Password Policy](/sql/relational-databases/security/password-policy) and [Strong Passwords](/sql/relational-databases/security/strong-passwords). (THIS LINK NEEDS TO BE UPDATED)
 
 ## Accounts and groups in App-V
 
@@ -50,8 +50,8 @@ No groups are created automatically during App-V setup. You should create the fo
 |---|---|---|
 |App-V Management Admin group|Used to manage the App-V management server. This group is created during the App-V Management Server installation.|The management console can't create a new group after installation is complete.|
 |Database read/write for Management Service account|Provides read/write access to the management database. This account should be created during App-V management database installation.||
-|App-V Management Service install admin account|Provides public access to schema-version table in management database. This account should be created during App-V management database installation.|This is only required if the management database is being installed separately from the service.|
-|App-V Reporting Service install admin account|Public access to schema-version table in reporting database. This account should be created during the App-V reporting database installation.|This is only required if reporting database is being installed separately from the service.|
+|App-V Management Service install admin account|Provides public access to schema-version table in management database. This account should be created during App-V management database installation.|This account is only required if the management database is being installed separately from the service.|
+|App-V Reporting Service install admin account|Public access to schema-version table in reporting database. This account should be created during the App-V reporting database installation.|This account is only required if reporting database is being installed separately from the service.|
 
 Consider the following additional information:
 
@@ -62,9 +62,9 @@ Consider the following additional information:
 
 ### App-V package security
 
-The following will help you plan how to ensure that virtualized packages are secure.
+The following information will help you plan how to ensure that virtualized packages are secure.
 
-* If an application installer applies an access control list (ACL) to a file or directory, then that ACL is not persisted in the package. If the file or directory is modified by a user when the package is deployed, the modified file or directory will either inherit the ACL in the **%userprofile%** or inherit the ACL of the target computer’s directory. The former occurs if the file or directory does not exist in a virtual file system location; the latter occurs if the file or directory exists in a virtual file system location, such as **%windir%**.
+* If an application installer applies an access control list (ACL) to a file or directory, then that ACL isn't persisted in the package. If the file or directory is modified by a user when the package is deployed, the modified file or directory will either inherit the ACL in the **%userprofile%** or inherit the ACL of the target computer’s directory. The former occurs if the file or directory doesn't exist in a virtual file system location; the latter occurs if the file or directory exists in a virtual file system location, such as **%windir%**.
 
 ## App-V log files
 

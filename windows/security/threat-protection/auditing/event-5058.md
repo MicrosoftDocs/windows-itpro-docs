@@ -7,18 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 5058(S, F): Key file operation.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-5058.png" alt="Event 5058 illustration" width="833" height="502" hspace="10" align="left" />
@@ -27,7 +23,7 @@ ms.technology: mde
 
 ***Event Description:***
 
-This event generates when an operation (read, write, delete, and so on) was performed on a file that contains a KSP key by using a [Key Storage Provider](https://msdn.microsoft.com/library/windows/desktop/bb931355(v=vs.85).aspx) (KSP). This event generates only if one of the following KSPs were used:
+This event generates when an operation (read, write, delete, and so on) was performed on a file that contains a KSP key by using a [Key Storage Provider](/windows/win32/seccertenroll/cng-key-storage-providers) (KSP). This event generates only if one of the following KSPs were used:
 
 -   Microsoft Software Key Storage Provider
 
@@ -99,7 +95,7 @@ You can see these events, for example, during certificate renewal or export oper
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -164,4 +160,3 @@ For 5058(S, F): Key file operation.
 -   Typically this event is required for detailed monitoring of KSP-related actions with cryptographic keys. If you need to monitor actions related to specific cryptographic keys (**“Key Name”**) or a specific **“Operation”**, such as **“Delete key file”**, create monitoring rules and use this event as an information source.
 
 > **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
-

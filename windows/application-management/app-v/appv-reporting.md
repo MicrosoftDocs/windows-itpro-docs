@@ -1,20 +1,20 @@
 ---
-title: About App-V Reporting (Windows 10)
+title: About App-V Reporting (Windows 10/11)
 description: Learn how the App-V reporting feature collects information about computers running the App-V client and virtual application package usage.
-author: lomayor
+author: aczechowski
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/16/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
 # About App-V reporting
 
->Applies to: Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 Application Virtualization (App-V) includes a built-in reporting feature that collects information about computers running the App-V client and virtual application package usage. You can generate reports from a centralized database with this information.
 
@@ -28,9 +28,9 @@ The following list displays the end–to-end high-level workflow for reporting i
    * Windows Authentication role (under **IIS / Security**)
    * SQL Server installed and running with SQL Server Reporting Services (SSRS)
 
-     To confirm SQL Server Reporting Services is running, enter <https://localhost/Reports> in a web browser as administrator on the server that will host App-V Reporting. The SQL Server Reporting Services Home page should appear.
-2. Install the App-V reporting server and associated database. For more information about installing the reporting server see [How to install the Reporting Server on a standalone computer and connect it to the database](appv-install-the-reporting-server-on-a-standalone-computer.md). Configure the time when the computer running the App-V client should send data to the reporting server.
-3. If you are not using an electronic software distribution system such as Configuration Manager to view reports then you can define reports in SQL Server Reporting Service. Download predefined appvshort Reports from the Download Center at [Application Virtualization SSRS Reports](https://www.microsoft.com/download/details.aspx?id=42630).
+     To confirm SQL Server Reporting Services is running, enter `https://localhost/Reports` in a web browser as administrator on the server that will host App-V Reporting. The SQL Server Reporting Services Home page should appear.
+2. Install the App-V reporting server and associated database. For more information about installing the reporting server, see [How to install the Reporting Server on a standalone computer and connect it to the database](appv-install-the-reporting-server-on-a-standalone-computer.md). Configure the time when the computer running the App-V client should send data to the reporting server.
+3. If you aren't using an electronic software distribution system such as Configuration Manager to view reports, then you can define reports in SQL Server Reporting Service.
 
    > [!NOTE]
     >If you are using the Configuration Manager integration with App-V, most reports are generated from Configuration Manager rather than from App-V.
@@ -43,13 +43,13 @@ The following list displays the end–to-end high-level workflow for reporting i
     To immediately send App-V report data, run **Send-AppvClientReport** on the App-V client.
 
     For more information about configuring reporting on the App-V client, see [About client configuration settings](appv-client-configuration-settings.md). To administer App-V Reporting with Windows PowerShell, see [How to enable reporting on the App-V client by using PowerShell](appv-enable-reporting-on-the-appv-client-with-powershell.md).
-5. After the reporting server receives the data from the App-V client it sends the data to the reporting database. When the database receives and processes the client data, a successful reply is sent to the reporting server, which then notifies the App-V client.
+5. After the reporting server receives the data from the App-V client, it sends the data to the reporting database. When the database receives and processes the client data, a successful reply is sent to the reporting server, which then notifies the App-V client.
 6. When the App-V client receives the success notification, it empties the data cache to conserve space.
 
    > [!NOTE]
     >By default, the cache is cleared after the server confirms receipt of data. You can manually configure the client to save the data cache.
     
-    If the App-V client device does not receive a success notification from the server, it retains data in the cache and tries to resend data at the next configured interval. Clients continue to collect data and add it to the cache.
+    If the App-V client device doesn't receive a success notification from the server, it retains data in the cache and tries to resend data at the next configured interval. Clients continue to collect data and add it to the cache.
 
 ### App-V reporting server frequently asked questions
 
@@ -57,7 +57,7 @@ The following sections provide answers to frequently asked questions about how A
 
 #### How frequently is reporting information sent to the reporting database?
 
-Frequency depends on the computer running the App-V client's reporting configuration. You must configure the frequency or interval for sending the reporting data manually, as App-V reporting is not enabled by default.
+Frequency depends on the computer running the App-V client's reporting configuration. You must configure the frequency or interval for sending the reporting data manually, as App-V reporting isn't enabled by default.
 
 #### What information is stored in the reporting server database?
 
@@ -73,10 +73,10 @@ The following information is stored in the reporting database:
 It depends. Three sets of data can be sent to the reporting server:
 
 * Operating system and App-V client information, which is about 150 Bytes every time it gets sent to the server.
-* Published package lists, which are about 7 KB per 30 packages. This is sent only when the package list is updated with a publishing refresh, which is done infrequently; if there is no change, this information is not sent.
-* Virtual application usage information is about 0.25 KB per event. Opening and closing count as one event if both occur before sending the information. When sending using a scheduled task, only the data since the last successful upload is sent to the server. If sending manually through the Windows PowerShell cmdlet, there is an optional argument called **DeleteOnSuccess** that controls if the data needs to be re-sent the next time around.
+* Published package lists, which are about 7 KB per 30 packages. This is sent only when the package list is updated with a publishing refresh, which is done infrequently; if there's no change, this information isn't sent.
+* Virtual application usage information is about 0.25 KB per event. Opening and closing count as one event if both occur before sending the information. When the information is sent through a scheduled task, only the data since the last successful upload is sent to the server. If sending manually through the Windows PowerShell cmdlet, there's an optional argument called **DeleteOnSuccess** that controls if the data needs to be resent the next time around.
 
-For example, if twenty applications are opened and closed and reporting information is scheduled to be sent daily, the typical daily traffic should be about 0.15 KB + 20 × 0.25 KB, or about 5 KB/user.
+For example, if 20 applications are opened and closed and reporting information is scheduled to be sent daily, the typical daily traffic should be about 0.15 KB + 20 × 0.25 KB, or about 5 KB/user.
 
 #### Can I schedule reporting?
 
@@ -96,7 +96,7 @@ Yes. Besides manually sending reporting using Windows PowerShell cmdlets (**Send
 
 ## App-V Client reporting
 
-To use App-V reporting you must enable and configure the App-V client. To configure reporting on the client, use the Windows PowerShell cmdlet **Set-AppVClientConfiguration**, or the Group Policy **ADMX Template**. For more information about the Windows PowerShell cmdlets, see [About client configuration settings](appv-client-configuration-settings.md). The following section provides examples of Windows PowerShell commands for configuring App-V client reporting.
+To use App-V reporting,, you must enable and configure the App-V client. To configure reporting on the client, use the Windows PowerShell cmdlet **Set-AppVClientConfiguration**, or the Group Policy **ADMX Template**. For more information about the Windows PowerShell cmdlets, see [About client configuration settings](appv-client-configuration-settings.md). The following section provides examples of Windows PowerShell commands for configuring App-V client reporting.
 
 ### Configuring App-V client reporting using Windows PowerShell
 
@@ -177,7 +177,7 @@ Send-AppVClientReport –URL http://MyReportingServer:MyPort/ -DeleteOnSuccess
 
 If the reporting server has been previously configured, then the **–URL** parameter can be omitted. Alternatively, if the data should be sent to an alternate location, specify a different URL to override the configured **ReportingServerURL** for this data collection.
 
-The **-DeleteOnSuccess** parameter indicates that if the transfer is successful, then the data cache will be cleared. If this is not specified, then the cache will not be cleared.
+The **-DeleteOnSuccess** parameter indicates that if the transfer is successful, then the data cache will be cleared. If the transfer-status isn't specified, then the cache won't be cleared.
 
 ### Manual Data Collection
 
@@ -185,16 +185,16 @@ You can also use the **Send-AppVClientReport** cmdlet to manually collect data. 
 
 |With a reporting server|Without a reporting server|
 |---|---|
-|f you have an existing App-V reporting server, create a customized scheduled task or script. Specify that the client sends the data to the specified location at the desired frequency.|If you do not have an existing App-V reporting Server, use the **–URL** parameter to send the data to a specified share. For example: ```Send-AppVClientReport –URL \\Myshare\MyData\ -DeleteOnSuccess``` <br>The previous example will send the reporting data to the ```\\MyShare\MyData\``` location indicated by the **-URL** parameter. After the data has been sent, the cache is cleared.|
+|f you have an existing App-V reporting server, create a customized scheduled task or script. Specify that the client sends the data to the specified location at the desired frequency.|If you don't have an existing App-V reporting Server, use the **–URL** parameter to send the data to a specified share. For example: ```Send-AppVClientReport –URL \\Myshare\MyData\ -DeleteOnSuccess``` <br>The previous example will send the reporting data to the ```\\MyShare\MyData\``` location indicated by the **-URL** parameter. After the data has been sent, the cache is cleared.|
 
 >[!NOTE]
 >If a location other than the Reporting Server is specified, the data is sent in **.xml** format with no additional processing.
 
 ### Creating reports
 
-To retrieve report information and create reports using App-V you must use one of the following methods:
+To retrieve report information and create reports using App-V, you must use one of the following methods:
 
-* Microsoft SQL Server Reporting Services (SSRS)—Microsoft SSRS is available with Microsoft SQL Server. SSRS is not installed when you install the App-V reporting server. It must be deployed separately to generate the associated reports. For more information, see the [What is SQL Server Reporting Services (SSRS)?](https://docs.microsoft.com/sql/reporting-services/create-deploy-and-manage-mobile-and-paginated-reports) article.
+* Microsoft SQL Server Reporting Services (SSRS)—Microsoft SSRS is available with Microsoft SQL Server. SSRS isn't installed when you install the App-V reporting server. It must be deployed separately to generate the associated reports. For more information, see the [What is SQL Server Reporting Services (SSRS)?](/sql/reporting-services/create-deploy-and-manage-mobile-and-paginated-reports) article.
 
 * Scripting—You can generate reports by scripting directly against the App-V reporting database. For example:
 
@@ -202,7 +202,7 @@ To retrieve report information and create reports using App-V you must use one o
 
     **spProcessClientReport** is scheduled to run at midnight or 12:00 AM.
 
-    To run the Microsoft SQL Server Scheduled Stored procedure, the Microsoft SQL Server Agent must be running. Make sure the Microsoft SQL Server Agent is set to **AutoStart**. For more information, see [Autostart SQL Server Agent (SQL Server Management Studio)](https://docs.microsoft.com/sql/ssms/agent/autostart-sql-server-agent-sql-server-management-studio).
+    To run the Microsoft SQL Server Scheduled Stored procedure, the Microsoft SQL Server Agent must be running. Make sure the Microsoft SQL Server Agent is set to **AutoStart**. For more information, see [Autostart SQL Server Agent (SQL Server Management Studio)](/sql/ssms/agent/autostart-sql-server-agent-sql-server-management-studio).
 
     The stored procedure is also created when you use the App-V database scripts.
 

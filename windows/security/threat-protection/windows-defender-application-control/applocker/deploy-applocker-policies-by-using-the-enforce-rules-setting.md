@@ -1,5 +1,5 @@
 ---
-title: Deploy AppLocker policies by using the enforce rules setting (Windows 10)
+title: Deploy AppLocker policies by using the enforce rules setting (Windows)
 description: This topic for IT professionals describes the steps to deploy AppLocker policies by using the enforcement setting method.
 ms.assetid: fd3a3d25-ff3b-4060-8390-6262a90749ba
 ms.reviewer: 
@@ -15,14 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Deploy AppLocker policies by using the enforce rules setting
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for IT professionals describes the steps to deploy AppLocker policies by using the enforcement setting method.
 

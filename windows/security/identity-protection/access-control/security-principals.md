@@ -1,7 +1,7 @@
 ---
 title: Security Principals (Windows 10)
 description: Security Principals
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -42,7 +42,7 @@ The following diagram illustrates the Windows authorization and access control 
 
 **Authorization and access control process**
 
-![authorization and access control process](images/authorizationandaccesscontrolprocess.gif)
+![authorization and access control process.](images/authorizationandaccesscontrolprocess.gif)
 
 Security principals are closely related to the following components and technologies:
 
