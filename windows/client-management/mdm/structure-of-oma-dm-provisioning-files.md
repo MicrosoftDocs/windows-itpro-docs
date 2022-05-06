@@ -29,7 +29,7 @@ The following table shows the OMA DM versions that are supported.
 
 ## File format
 
-The following example shows the general structure of the XML document sent by the server using OMA DM version 1.2.1 for demonstration purposes only. The initial XML packages exchanged between client and server could contain extra XML tags. For a detailed description and samples for those packages, see the [OMA Device Management Protocol 1.2.1](https://go.microsoft.com/fwlink/p/?LinkId=526902) specification.
+The following example shows the general structure of the XML document sent by the server using OMA DM version 1.2.1 for demonstration purposes only. The initial XML packages exchanged between client and server could contain additional XML tags. For a detailed description and samples for those packages, see the [OMA Device Management Protocol 1.2.1](https://www.openmobilealliance.org/release/DM/V1_2_1-20080617-A/OMA-TS-DM_Protocol-V1_2_1-20080617-A.pdf) specification.
 
 ```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>

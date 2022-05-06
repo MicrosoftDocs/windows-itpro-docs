@@ -18,11 +18,11 @@ ms.collection: highpri
  
 ## Overview
 
-This article includes general troubleshooting for 802.1X wireless and wired clients. While troubleshooting 802.1X and wireless, it's important to know how the flow of authentication works, and then figure out where it's breaking. It involves a lot of third-party devices and software. Most of the time, we have to identify where the problem is, and another vendor has to fix it. We don't make access points or switches, so it's not an end-to-end Microsoft solution.
+This article includes general troubleshooting for 802.1X wireless and wired clients. While troubleshooting 802.1X and wireless, it's important to know how the flow of authentication works, and then figure out where it's breaking. It involves many third-party devices and software. Most of the time, we have to identify where the problem is, and another vendor has to fix it. We don't make access points or switches, so it's not an end-to-end Microsoft solution.
  
 ## Scenarios
 
-This troubleshooting technique applies to any scenario in which wireless or wired connections with 802.1X authentication is attempted and then fails to establish. The workflow covers Windows 7 through Windows 10 (and Windows 11) for clients, and Windows Server 2008 R2 through Windows Server 2012 R2 for NPS.
+This troubleshooting technique applies to any scenario in which wireless or wired connections with 802.1X authentication are attempted and then fail to establish. The workflow covers Windows 7 through Windows 10 (and Windows 11) for clients, and Windows Server 2008 R2 through Windows Server 2012 R2 for NPS.
  
 ## Known issues
 
@@ -38,9 +38,9 @@ Viewing [NPS authentication status events](/previous-versions/windows/it-pro/win
 
 NPS event log entries contain information about the connection attempt, including the name of the connection request policy that matched the connection attempt and the network policy that accepted or rejected the connection attempt. If you don't see both success and failure events, see the [NPS audit policy](#audit-policy) section later in this article.
 
-Check the Windows Security event log on the NPS Server for NPS events that correspond to rejected ([event ID 6273](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc735399(v%3dws.10))) or accepted ([event ID 6272](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc735388(v%3dws.10))) connection attempts.
+Check the Windows Security event log on the NPS Server for NPS events that correspond to the rejected ([event ID 6273](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc735399(v%3dws.10))) or the accepted ([event ID 6272](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc735388(v%3dws.10))) connection attempts.
  
-In the event message, scroll to the very bottom, and then check the [Reason Code](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd197570(v%3dws.10)) field and the text that's associated with it.
+In the event message, scroll to the bottom, and then check the [Reason Code](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd197570(v%3dws.10)) field and the text that's associated with it.
  
    ![example of an audit failure.](images/auditfailure.png)
    *Example: event ID 6273 (Audit Failure)*<br><br>
@@ -48,7 +48,7 @@ In the event message, scroll to the very bottom, and then check the [Reason Code
    ![example of an audit success.](images/auditsuccess.png)
    *Example: event ID 6272 (Audit Success)*<br>
 
-‎The WLAN AutoConfig operational log lists information and error events based on conditions detected by or reported to the WLAN AutoConfig service. The operational log contains information about the wireless network adapter, the properties of the wireless connection profile, the specified network authentication, and, in the event of connectivity problems, the reason for the failure. For wired network access, the Wired AutoConfig operational log is an equivalent one.
+‎The WLAN AutoConfig operational log lists information and error events based on conditions detected by or reported to the WLAN AutoConfig service. The operational log contains information about the wireless network adapter, the properties of the wireless connection profile, the specified network authentication, and, if connectivity problems occur, the reason for the failure. For wired network access, the Wired AutoConfig operational log is an equivalent one.
 
 On the client side, go to **Event Viewer (Local)\Applications and Services Logs\Microsoft\Windows\WLAN-AutoConfig/Operational** for wireless issues. For wired network access issues, go to  **..\Wired-AutoConfig/Operational**. See the following example:
 
@@ -114,7 +114,7 @@ auditpol /set /subcategory:"Network Policy Server" /success:enable /failure:enab
 
 Even if audit policy appears to be fully enabled, it sometimes helps to disable and then re-enable this setting. You can also enable Network Policy Server logon/logoff auditing by using Group Policy. To get to the success/failure setting, select **Computer Configuration** > **Policies** > **Windows Settings** > **Security Settings** > **Advanced Audit Policy Configuration** > **Audit Policies** > **Logon/Logoff** > **Audit Network Policy Server**.
 
-## Additional references
+## More references
 
 [Troubleshooting Windows Vista 802.11 Wireless Connections](/previous-versions/windows/it-pro/windows-vista/cc766215(v=ws.10))<br>
 [Troubleshooting Windows Vista Secure 802.3 Wired Connections](/previous-versions/windows/it-pro/windows-vista/cc749352(v=ws.10))

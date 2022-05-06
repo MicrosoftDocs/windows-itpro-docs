@@ -2116,7 +2116,7 @@ Most restricted value: 0
 > This policy has no effect when the Browser/HomePages policy isn't configured. 
  
 > [!IMPORTANT]
-> This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the [Microsoft browser extension policy](/legal/windows/agreements/microsoft-browser-extension-policy).
+> This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the [Microsoft browser extension policy](/legal/microsoft-edge/microsoft-browser-extension-policy).
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2866,7 +2866,7 @@ Define a default list of favorites in Microsoft Edge. In this case, the Save a F
 To define a default list of favorites:
 1. In the upper-right corner of Microsoft Edge, click the ellipses (**...**) and select **Settings**.
 2. Click **Import from another browser**, click **Export to file** and save the file.
-3. In the **Options** section of the Group Policy Editor, provide the location that points the file with the list of favorites to provision. <p><p>Specify the URL as:<ul><li>HTTP location: "SiteList"=<http://localhost:8080/URLs.html></li><li>Local network: "SiteList"="\network\shares\URLs.html"</li><li>Local file: "SiteList"=file:///c:/Users/Documents/URLs.html</li></ul>
+3. In the **Options** section of the Group Policy Editor, provide the location that points the file with the list of favorites to provision. <p><p>Specify the URL as:<ul><li>HTTP location: "SiteList"=`<http://localhost:8080/URLs.html>`</li><li>Local network: "SiteList"="\network\shares\URLs.html"</li><li>Local file: "SiteList"=file:///c:/Users/Documents/URLs.html</li></ul>
 
 
 >[!IMPORTANT]
@@ -2975,7 +2975,7 @@ Most restricted value: 0
 [!INCLUDE [set-default-search-engine-shortdesc](../includes/set-default-search-engine-shortdesc.md)]
 
 > [!IMPORTANT]
-> This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the [Microsoft browser extension policy](/legal/windows/agreements/microsoft-browser-extension-policy).
+> This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the [Microsoft browser extension policy](/legal/microsoft-edge/microsoft-browser-extension-policy).
 
 
 Most restricted value:  0

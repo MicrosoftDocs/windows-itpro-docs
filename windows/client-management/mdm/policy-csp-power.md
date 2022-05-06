@@ -272,6 +272,8 @@ ADMX Info:
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
+Added to HoloLens 2 in [Windows Holographic, version 20H2](/hololens/hololens-release-notes-2004#new-power-policies-for-hololens-2).
+
 <!--/SupportedSKUs-->
 <hr/>
 
