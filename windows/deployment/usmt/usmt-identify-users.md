@@ -3,13 +3,13 @@ title: Identify Users (Windows 10)
 description: Learn how to identify users you plan to migrate, as well as how to migrate local accounts and domain accounts.
 ms.assetid: 957a4fe9-79fd-44a2-8c26-33e50f71f9de
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ms.localizationpriority: medium
 ---

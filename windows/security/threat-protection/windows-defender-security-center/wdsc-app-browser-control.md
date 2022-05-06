@@ -11,21 +11,22 @@ ms.localizationpriority: medium
 audience: ITPro
 author: dansimp
 ms.author: dansimp
-ms.date: 04/30/2018
+ms.date: 
 ms.reviewer: 
 manager: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # App and browser control
 
 **Applies to**
 
-- Windows 10, version 1703 and later
+- Windows 10
+- Windows 11
 
-The **App and browser control** section contains information and settings for Windows Defender SmartScreen. IT administrators and IT pros can get configuration guidance from the [Windows Defender SmartScreen documentation library](https://docs.microsoft.com/windows/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview).
+The **App and browser control** section contains information and settings for Windows Defender SmartScreen. IT administrators and IT pros can get configuration guidance from the [Windows Defender SmartScreen documentation library](/windows/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview).
 
-In Windows 10, version 1709 and later, the section also provides configuration options for Exploit protection. You can prevent users from modifying these specific options with Group Policy. IT administrators can get more information at [Exploit protection](../microsoft-defender-atp/exploit-protection.md).
+In Windows 10, version 1709 and later, the section also provides configuration options for Exploit protection. You can prevent users from modifying these specific options with Group Policy. IT administrators can get more information at [Exploit protection](/microsoft-365/security/defender-endpoint/exploit-protection).
 
 You can also choose to hide the section from users of the machine. This can be useful if you don't want employees in your organization to see or have access to user-configured options for the features shown in the section.
 
@@ -36,20 +37,17 @@ You can prevent users from modifying settings in the Exploit protection area. Th
 You can only prevent users from modifying Exploit protection settings by using Group Policy.
 
 > [!IMPORTANT]
->
-> ### Requirements
->
 > You must have Windows 10, version 1709 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings.
 
-1. On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
 
-2. In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
+2. In the **Group Policy Management Editor** go to **Computer configuration**, select **Policies** and then **Administrative templates**.
 
 3. Expand the tree to **Windows components > Windows Security > App and browser protection**.
 
 4. Open the **Prevent users from modifying settings** setting and set it to **Enabled**. Click **OK**.
 
-5. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx).
+5. [Deploy the updated GPO as you normally do](/windows/win32/srvnodes/group-policy).
 
 ## Hide the App & browser control section
 
@@ -58,22 +56,19 @@ You can choose to hide the entire section by using Group Policy. The section wil
 This can only be done in Group Policy.
 
 > [!IMPORTANT]
->
-> ### Requirements
->
-> You must have Windows 10, version 1709 (the Fall Creators Update). The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings.
+> You must have Windows 10, version 1709 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings.
 
-1. On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
 
-2. In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
+2. In the **Group Policy Management Editor** go to **Computer configuration**, select **Policies** and then **Administrative templates**.
 
 3. Expand the tree to **Windows components > Windows Security > App and browser protection**.
 
 4. Open the **Hide the App and browser protection area** setting and set it to **Enabled**. Click **OK**.
 
-5. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx).
+5. [Deploy the updated GPO as you normally do](/windows/win32/srvnodes/group-policy).
 
 > [!NOTE]
 > If you hide all sections then the app will show a restricted interface, as in the following screenshot:
 >
-> ![Windows Security app with all sections hidden by Group Policy](images/wdsc-all-hide.png)
+> ![Windows Security app with all sections hidden by Group Policy.](images/wdsc-all-hide.png)

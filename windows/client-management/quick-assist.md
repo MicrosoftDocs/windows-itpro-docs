@@ -4,19 +4,23 @@ description: How IT Pros can use Quick Assist to help users
 ms.prod: w10
 ms.sitesec: library
 ms.topic: article
-author: jaimeo
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: jaimeo
-manager: laurawi
+ms.author: aaroncz
+manager: dougeby
+ms.collection: highpri
 ---
 
 # Use Quick Assist to help users
 
-Quick Assist is a Windows 10 application that enables a person to share their device with another person over a remote connection. Your support staff can use it to remotely connect to a user’s device and then view its display, make annotations, or take full control. In this way, they can troubleshoot, diagnose technological issues, and provide instructions to users directly on their devices.
+Quick Assist is a Windows application that enables a person to share their device with another person over a remote connection. Your support staff can use it to remotely connect to a user’s device and then view its display, make annotations, or take full control. In this way, they can troubleshoot, diagnose technological issues, and provide instructions to users directly on their devices.
 
 ## Before you begin
 
 All that's required to use Quick Assist is suitable network and internet connectivity. No particular roles, permissions, or policies are involved. Neither party needs to be in a domain. The helper must have a Microsoft account. The sharer doesn’t have to authenticate.
+
+> [!NOTE]
+> In case the helper and sharer use different keyboard layouts or mouse settings, the ones from the sharer are used during the session.
 
 ### Authentication
 
@@ -57,7 +61,7 @@ Both the helper and sharer must be able to reach these endpoints over port 443:
 
 7. RDP shares the video to the helper over https (port 443) through the RDP relay service to the helper's RDP control. Input is shared from the helper to the sharer through the RDP relay service.
 
-:::image type="content" source="images/quick-assist-flow.png" lightbox="images/quick-assist-flow.png" alt-text="Schematic flow of connections when a Quick Assist session is established":::
+:::image type="content" source="images/quick-assist-flow.png" lightbox="images/quick-assist-flow.png" alt-text="Schematic flow of connections when a Quick Assist session is established.":::
 
 ### Data and privacy
 
