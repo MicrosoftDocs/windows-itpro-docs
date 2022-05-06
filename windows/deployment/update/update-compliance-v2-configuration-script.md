@@ -21,13 +21,13 @@ ms.topic: article
 
 > [!Important]
 > - This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
-> - A new policy is required to use Update Compliance: "AllowUpdateComplianceProcessing." If you're already using Update Compliance and have configured your devices prior to May 10, 2021, you must rerun the script so the new policy can be configured.
+> - A new policy is required to use Update Compliance: `AllowUpdateComplianceProcessing`. If you're already using Update Compliance and have configured your devices prior to May 10, 2021, you must rerun the script so the new policy can be configured.
 
-The Update Compliance Configuration Script is the recommended method of configuring devices to send data to Microsoft for use with Update Compliance. The script configures the registry keys backing policies, ensures required services are running, and more. This script is a recommended complement to configuring the required policies documented in [Manually configured devices for Update Compliance](update-compliance-configuration-manual.md), as it can provide feedback on whether there are any configuration issues outside of policies being configured. 
+The Update Compliance Configuration Script is the recommended method of configuring devices to send data to Microsoft for use with Update Compliance. The script configures the registry keys backing policies, ensures required services are running, and more. This script is a recommended complement to configuring the required policies documented in [Manually configured devices for Update Compliance](update-compliance-configuration-manual.md), as it can provide feedback on whether there are any configuration issues outside of policies being configured.
 
 ## About the script
 
-The configuration script configures registry keys directly. Be aware that registry keys can potentially be overwritten by policy settings like Group Policy or MDM. *Reconfiguring devices with the script does not reconfigure previously set policies, both in the case of Group Policy and MDM*. If there are conflicts between your Group Policy or MDM configurations and the required configurations listed in [Manually configuring devices for Update Compliance](update-compliance-configuration-manual.md), device data might not appear in Update Compliance correctly. 
+The configuration script configures registry keys directly. Be aware that registry keys can potentially be overwritten by policy settings like Group Policy or MDM. *Reconfiguring devices with the script doesn't reconfigure previously set policies, both in the case of Group Policy and MDM*. If there are conflicts between your Group Policy or MDM configurations and the required configurations listed in [Manually configuring devices for Update Compliance](update-compliance-configuration-manual.md), device data might not appear in Update Compliance correctly. 
 
 You can download the script from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=101086). Keep reading to learn how to configure the script and interpret error codes that are output in logs for troubleshooting.
 
@@ -58,7 +58,7 @@ Open `RunConfig.bat` and configure the following (assuming a first-run, with `ru
 |---------|---------|
 | 1    | General unexpected error|
 | 6    | Invalid CommercialID|
-| 8    | Couldn't create registry key path to setup CommercialID|
+| 8    | Couldn't create registry key path to set up CommercialID|
 | 9    | Couldn't write CommercialID at registry key path|
 | 11    | Unexpected result when setting up CommercialID.|
 | 12    | CheckVortexConnectivity failed, check Log output for more information.|
@@ -76,10 +76,10 @@ Open `RunConfig.bat` and configure the following (assuming a first-run, with `ru
 | 43    | Unexpected exception when attempting to impersonate logged-on user.|
 | 44    | Error when running CheckDiagTrack service.|
 | 45    | DiagTrack.dll not found.|
-| 48    | CommercialID is not a GUID|
+| 48    | CommercialID isn't a GUID|
 | 50    | DiagTrack service not running.|
 | 51    | Unexpected exception when attempting to run Census.exe|
-| 52    | Could not find Census.exe|
+| 52    | Couldn't find Census.exe|
 | 53    | There are conflicting CommercialID values.|
 | 54    | Microsoft Account Sign In Assistant (MSA) Service disabled.|
 | 55    | Failed to create new registry path for SetDeviceNameOptIn|
@@ -89,16 +89,16 @@ Open `RunConfig.bat` and configure the following (assuming a first-run, with `ru
 | 59    | Failed to delete LastPersistedEventTimeOrFirstBoot property at registry path when attempting to clean up OneSettings.|
 | 60    | Failed to delete registry key when attempting to clean up OneSettings.|
 | 61    | Unexpected exception when attempting to clean up OneSettings.|
-| 62    | AllowTelemetry registry key is not of the correct type REG_DWORD|
-| 63    | AllowTelemetry is not set to the appropriate value and it could not be set by the script.|
-| 64    | AllowTelemetry is not of the correct type REG_DWORD.|
+| 62    | AllowTelemetry registry key isn't of the correct type REG_DWORD|
+| 63    | AllowTelemetry isn't set to the appropriate value and it couldn't be set by the script.|
+| 64    | AllowTelemetry isn't of the correct type REG_DWORD.|
 | 66    | Failed to verify UTC connectivity and recent uploads.|  
 | 67    | Unexpected failure when verifying UTC CSP.|
 | 91    | Failed to create new registry path for EnableAllowUCProcessing|
 | 92    | Failed to create property for EnableAllowUCProcessing at registry path|
 | 93    | Failed to update value for EnableAllowUCProcessing|
 | 94    | Unexpected exception in EnableAllowUCProcessing|
-| 99    | Device is not Windows 10.|
+| 99    | Device isn't Windows 10.|
 
 ## Verify device configuration
 
