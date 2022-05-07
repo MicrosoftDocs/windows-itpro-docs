@@ -59,6 +59,9 @@ The following known issues have been fixed by servicing releases made available 
 
 ## Known issues involving third-party applications
 
+The following issue affects MSCHAPv2
+Credential guard doesn't work with MSCHAPv2 configurations, of which Cisco ISE is a very popular enterprise implementation.
+
 The following issue affects the Java GSS API. See the following Oracle bug database article: 
 
 - [JDK-8161921: Windows Defender Credential Guard doesn't allow sharing of TGT with Java](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=8161921)
