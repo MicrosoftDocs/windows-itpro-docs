@@ -118,7 +118,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-The company name that is displayed to the users. CompanyName is required for both EnableCustomizedToasts and EnableInAppCustomization. If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices will not display the contact options.
+The company name that is displayed to the users. CompanyName is required for both EnableCustomizedToasts and EnableInAppCustomization. If you disable or don't configure this setting, or don't have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices won't display the contact options.
 
 Value type is string. Supported operations are Add, Get, Replace and Delete.
 
@@ -162,7 +162,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Use this policy setting to specify if to display the Account protection area in Windows Defender Security Center. If you disable or do not configure this setting, Windows Defender Security Center will display this area.
+Use this policy setting to specify if to display the Account protection area in Windows Defender Security Center. If you disable or don't configure this setting, Windows Defender Security Center will display this area.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -177,7 +177,7 @@ ADMX Info:
 Valid values:
 
 - 0 - (Disable) The users can see the display of the Account protection area in Windows Defender Security Center.
-- 1 - (Enable) The users cannot see the display of the Account protection area in Windows Defender Security Center.
+- 1 - (Enable) The users can't see the display of the Account protection area in Windows Defender Security Center.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -210,7 +210,7 @@ Valid values:
 
 <!--/Scope-->
 <!--Description-->
-Use this policy setting if you want to disable the display of the app and browser protection area in Windows Defender Security Center. If you disable or do not configure this setting, Windows Defender Security Center will display this area.
+Use this policy setting if you want to disable the display of the app and browser protection area in Windows Defender Security Center. If you disable or don't configure this setting, Windows Defender Security Center will display this area.
 
 Value type is integer. Supported operations are Add, Get, Replace and Delete.
 
@@ -227,7 +227,7 @@ ADMX Info:
 The following list shows the supported values:
 
 - 0 - (Disable) The users can see the display of the app and browser protection area in Windows Defender Security Center.
-- 1 - (Enable) The users cannot see the display of the app and browser protection area in Windows Defender Security Center.
+- 1 - (Enable) The users can't see the display of the app and browser protection area in Windows Defender Security Center.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -324,7 +324,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Use this policy setting if you want to disable the display of the Device security area in the Windows Defender Security Center. If you disable or do not configure this setting, Windows Defender Security Center will display this area.
+Use this policy setting if you want to disable the display of the Device security area in the Windows Defender Security Center. If you disable or don't configure this setting, Windows Defender Security Center will display this area.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -339,7 +339,7 @@ ADMX Info:
 Valid values:
 
 - 0 - (Disable) The users can see the display of the Device security area in Windows Defender Security Center.
-- 1 - (Enable) The users cannot see the display of the Device security area in Windows Defender Security Center.
+- 1 - (Enable) The users can't see the display of the Device security area in Windows Defender Security Center.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -372,10 +372,10 @@ Valid values:
 
 <!--/Scope-->
 <!--Description-->
-Use this policy if you want Windows Defender Security Center to only display notifications which are considered critical. If you disable or do not configure this setting, Windows Defender Security Center will display critical and non-critical notifications to users.
+Use this policy if you want Windows Defender Security Center to only display notifications that are considered critical. If you disable or don't configure this setting, Windows Defender Security Center will display critical and non-critical notifications to users.
 
 > [!NOTE]
-> If Suppress notification is enabled then users will not see critical or non-critical messages.
+> If Suppress notification is enabled then users won't see critical or non-critical messages.
 
 Value type is integer. Supported operations are Add, Get, Replace and Delete.
 
@@ -391,8 +391,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 - (Disable) Windows Defender Security Center will display critical and non-critical notifications to users..
-- 1 - (Enable) Windows Defender Security Center only display notifications which are considered critical on clients.
+- 0 - (Disable) Windows Defender Security Center will display critical and non-critical notifications to users.
+- 1 - (Enable) Windows Defender Security Center only display notifications that are considered critical on clients.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -425,7 +425,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Use this policy setting if you want to disable the display of the family options area in Windows Defender Security Center. If you disable or do not configure this setting, Windows Defender Security Center will display this area.
+Use this policy setting if you want to disable the display of the family options area in Windows Defender Security Center. If you disable or don't configure this setting, Windows Defender Security Center will display this area.
 
 Value type is integer. Supported operations are Add, Get, Replace and Delete.
 
@@ -442,7 +442,7 @@ ADMX Info:
 The following list shows the supported values:
 
 - 0 - (Disable) The users can see the display of the family options area in Windows Defender Security Center.
-- 1 - (Enable) The users cannot see the display of the family options area in Windows Defender Security Center.
+- 1 - (Enable) The users can't see the display of the family options area in Windows Defender Security Center.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -475,7 +475,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Use this policy setting if you want to disable the display of the device performance and health area in Windows Defender Security Center. If you disable or do not configure this setting, Windows Defender Security Center will display this area.
+Use this policy setting if you want to disable the display of the device performance and health area in Windows Defender Security Center. If you disable or don't configure this setting, Windows Defender Security Center will display this area.
 
 Value type is integer. Supported operations are Add, Get, Replace and Delete.
 
@@ -492,7 +492,7 @@ ADMX Info:
 The following list shows the supported values:
 
 - 0 - (Disable) The users can see the display of the device performance and health area in Windows Defender Security Center.
-- 1 - (Enable) The users cannot see the display of the device performance and health area in Windows Defender Security Center.
+- 1 - (Enable) The users can't see the display of the device performance and health area in Windows Defender Security Center.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -525,7 +525,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Use this policy setting if you want to disable the display of the firewall and network protection area in Windows Defender Security Center. If you disable or do not configure this setting, Windows Defender Security Center will display this area.
+Use this policy setting if you want to disable the display of the firewall and network protection area in Windows Defender Security Center. If you disable or don't configure this setting, Windows Defender Security Center will display this area.
 
 Value type is integer. Supported operations are Add, Get, Replace and Delete.
 
@@ -542,7 +542,7 @@ ADMX Info:
 The following list shows the supported values:
 
 - 0 - (Disable) The users can see the display of the firewall and network protection area in Windows Defender Security Center.
-- 1 - (Enable) The users cannot see the display of the firewall and network protection area in Windows Defender Security Center.
+- 1 - (Enable) The users can't see the display of the firewall and network protection area in Windows Defender Security Center.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -575,7 +575,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Use this policy setting if you want to disable the display of Windows Defender Security Center notifications. If you disable or do not configure this setting, Windows Defender Security Center notifications will display on devices.
+Use this policy setting if you want to disable the display of Windows Defender Security Center notifications. If you disable or don't configure this setting, Windows Defender Security Center notifications will display on devices.
 
 Value type is integer. Supported operations are Add, Get, Replace and Delete.
 
@@ -592,7 +592,7 @@ ADMX Info:
 The following list shows the supported values:
 
 - 0 - (Disable) The users can see the display of Windows Defender Security Center notifications.
-- 1 - (Enable) The users cannot see the display of Windows Defender Security Center notifications.
+- 1 - (Enable) The users can't see the display of Windows Defender Security Center notifications.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -628,7 +628,7 @@ The following list shows the supported values:
 Hide the recommendation to update TPM Firmware when a vulnerable firmware is detected.
 
 Enabled:
-Users will not be shown a recommendation to update their TPM Firmware.
+Users won't be shown a recommendation to update their TPM Firmware.
 
 Disabled:
 Users will see a recommendation to update their TPM Firmware if Windows Security detects the system contains a TPM with vulnerable firmware.        
@@ -689,7 +689,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Use this policy setting if you want to disable the display of the virus and threat protection area in Windows Defender Security Center. If you disable or do not configure this setting, Windows Defender Security Center will display this area.
+Use this policy setting if you want to disable the display of the virus and threat protection area in Windows Defender Security Center. If you disable or don't configure this setting, Windows Defender Security Center will display this area.
 
 Value type is integer. Supported operations are Add, Get, Replace and Delete.
 
@@ -706,7 +706,7 @@ ADMX Info:
 The following list shows the supported values:
 
 - 0 - (Disable) The users can see the display of the virus and threat protection area in Windows Defender Security Center.
-- 1 - (Enable) The users cannot see the display of the virus and threat protection area in Windows Defender Security Center.
+- 1 - (Enable) The users can't see the display of the virus and threat protection area in Windows Defender Security Center.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -739,7 +739,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Prevent users from making changes to the exploit protection settings area in the Windows Defender Security Center. If you disable or do not configure this setting, local users can make changes in the exploit protection settings area.
+Prevent users from making changes to the exploit protection settings area in the Windows Defender Security Center. If you disable or don't configure this setting, local users can make changes in the exploit protection settings area.
 
 Value type is integer. Supported operations are Add, Get, Replace and Delete.
 
@@ -756,7 +756,7 @@ ADMX Info:
 The following list shows the supported values:
 
 - 0 - (Disable) Local users are allowed to make changes in the exploit protection settings area.
-- 1 - (Enable) Local users cannot make changes in the exploit protection settings area.
+- 1 - (Enable) Local users can't make changes in the exploit protection settings area.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -789,7 +789,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-The email address that is displayed to users.  The default mail application is used to initiate email actions. If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices will not display contact options.
+The email address that is displayed to users.  The default mail application is used to initiate email actions. If you disable or don't configure this setting, or don't have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices won't display contact options.
 
 Value type is string. Supported operations are Add, Get, Replace and Delete.
 
@@ -833,7 +833,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Enable this policy to display your company name and contact options in the notifications. If you disable or do not configure this setting, or do not provide CompanyName and a minimum of one contact method (Phone using Skype, Email, Help portal URL) Windows Defender Security Center will display a default notification text.
+Enable this policy to display your company name and contact options in the notifications. If you disable or don't configure this setting, or don't provide CompanyName and a minimum of one contact method (Phone using Skype, Email, Help portal URL) Windows Defender Security Center will display a default notification text.
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
@@ -883,7 +883,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Enable this policy to have your company name and contact options displayed in a contact card fly out in Windows Defender Security Center. If you disable or do not configure this setting, or do not provide CompanyName and a minimum of one contact method (Phone using Skype, Email, Help portal URL) Windows Defender Security Center will not display the contact card fly out notification.
+Enable this policy to have your company name and contact options displayed in a contact card fly out in Windows Defender Security Center. If you disable or don't configure this setting, or don't provide CompanyName and a minimum of one contact method (Phone using Skype, Email, Help portal URL) Windows Defender Security Center won't display the contact card fly out notification.
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
@@ -899,7 +899,7 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 - (Disable) Do not display the company name and contact options in the card fly out notification.
+- 0 - (Disable) Don't display the company name and contact options in the card fly out notification.
 - 1 - (Enable) Display the company name and contact options in the card fly out notification.
 
 <!--/SupportedValues-->
@@ -1143,7 +1143,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-The phone number or Skype ID that is displayed to users.  Skype is used to initiate the call. If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices will not display contact options.
+The phone number or Skype ID that is displayed to users.  Skype is used to initiate the call. If you disable or don't configure this setting, or don't have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices won't display contact options.
 
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
@@ -1187,9 +1187,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-The help portal URL this is displayed to users. The default browser is used to initiate this action. If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then the device will not display contact options.
+The help portal URL that is displayed to users. The default browser is used to initiate this action. If you disable or don't configure this setting, or don't have EnableCustomizedToasts or EnableInAppCustomization enabled, then the device won't display contact options.
 
-Value type is Value type is string. Supported operations are Add, Get, Replace, and Delete.
+Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->

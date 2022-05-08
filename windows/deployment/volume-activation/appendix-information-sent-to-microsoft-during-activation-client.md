@@ -1,16 +1,12 @@
 ---
 title: Appendix Information sent to Microsoft during activation (Windows 10)
-description: Information sent to Microsoft during activation.
+description: Learn about the information sent to Microsoft during activation.
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
 author: aczechowski
-keywords: vamt, volume activation, activation, windows activation
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: activation
-audience: itpro
+ms.technology: windows
 ms.localizationpriority: medium
 ms.date: 07/27/2017
 ms.topic: article
@@ -32,13 +28,13 @@ ms.topic: article
 
 When you activate a computer running Windows 10, the following information is sent to Microsoft:
 
--   The Microsoft product code (a five-digit code that identifies the Windows product you are activating)
+-   The Microsoft product code (a five-digit code that identifies the Windows product you're activating)
 -   A channel ID or site code that identifies how the Windows product was originally obtained
 
     For example, a channel ID or site code identifies whether the product was originally purchased from a retail store, obtained as an evaluation copy, obtained through a volume licensing program, or preinstalled by a computer manufacturer.
     
 -   The date of installation and whether the installation was successful
--   Information that helps confirm that your Windows product key has not been altered
+-   Information that helps confirm that your Windows product key hasn't been altered
 -   Computer make and model
 -   Version information for the operating system and software
 -   Region and language settings
@@ -48,7 +44,7 @@ When you activate a computer running Windows 10, the following information is se
 -   Volume serial number (hashed) of the hard disk drive
 -   The result of the activation check
 
-    This includes error codes and the following information about any activation exploits and related malicious or unauthorized software that was found or disabled:
+    This result includes error codes and the following information about any activation exploits and related malicious or unauthorized software that was found or disabled:
     
     -   The activation exploit's identifier
     -   The activation exploit's current state, such as cleaned or quarantined
@@ -57,12 +53,12 @@ When you activate a computer running Windows 10, the following information is se
 -   The name and a hash of the contents of your computer's startup instructions file
 -   If your Windows license is on a subscription basis, information about how your subscription works
 
-Standard computer information is also sent, but your computer's IP address is only retained temporarily.
+Standard computer information is also sent, but your computer's IP address is only kept temporarily.
 
 ## Use of information
 
-Microsoft uses the information to confirm that you have a licensed copy of the software. Microsoft does not use the information to contact individual consumers.
-For additional details, see [Windows 10 Privacy Statement](https://go.microsoft.com/fwlink/p/?LinkId=619879).
+Microsoft uses the information to confirm that you have a licensed copy of the software. Microsoft doesn't use the information to contact individual consumers.
+For more information, see [Windows 10 Privacy Statement](https://go.microsoft.com/fwlink/p/?LinkId=619879).
 
 ## See also
 

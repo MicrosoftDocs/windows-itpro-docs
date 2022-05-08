@@ -36,9 +36,9 @@ Pre-release Windows 10 feature updates are now available to IT administrators us
 
 The Windows 10, version 1909 enablement package will be available on WSUS as [KB4517245](https://support.microsoft.com/kb/4517245), which can be deployed on existing deployments of Windows 10, version 1903. 
 
-### Windows Update for Business (WUfB)
+### Windows Update for Business
 
-If you are using WUfB, you will receive the Windows 10, version 1909 update in the same way that you have for prior feature updates, and as defined by your feature update deferral policy.
+If you are using Windows Update for Business, you will receive the Windows 10, version 1909 update in the same way that you have for prior feature updates, and as defined by your feature update deferral policy.
 
 ## Security
 
@@ -56,7 +56,7 @@ Windows 10, version 1909 also includes two new features called **Key-rolling** a
 
 ### Transport Layer Security (TLS)
 
-An experimental implementation of TLS 1.3 is included in Windows 10, version 1909. TLS 1.3 disabled by default system wide. If you enable TLS 1.3 on a device for testing, then it can also be enabled in Internet Explorer 11.0 and Microsoft Edge by using Internet Options. For beta versions of Microsoft Edge on Chromium, TLS 1.3 is not built on the Windows TLS stack, and is instead configured independently, using the **Edge://flags** dialog. Also see [Microsoft Edge platform status](https://developer.microsoft.com/microsoft-edge/platform/status/tls13/).
+An experimental implementation of TLS 1.3 is included in Windows 10, version 1909. TLS 1.3 disabled by default system wide. If you enable TLS 1.3 on a device for testing, then it can also be enabled in Internet Explorer 11.0 and Microsoft Edge by using Internet Options. For beta versions of Microsoft Edge on Chromium, TLS 1.3 is not built on the Windows TLS stack, and is instead configured independently, using the **Edge://flags** dialog. Also see [Microsoft Edge platform status](https://developer.microsoft.com/microsoft-edge/status/tls13/)
 
 ## Virtualization
 
