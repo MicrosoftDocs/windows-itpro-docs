@@ -20,6 +20,14 @@ ms.technology: windows-sec
 
 # Understanding Application Control events
 
+**Applies to**
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and up *
+
+* Not all events are available in Windows Server 2016 and up, e.g.  (eg: 3099, 31xx). 
+
 A Windows Defender Application Control (WDAC) policy logs events locally in Windows Event Viewer in either enforced or audit mode. These events are generated under two locations:
 
 - Events about WDAC policy activation and the control of executables, dlls, and drivers appear in **Applications and Services logs** > **Microsoft** > **Windows** > **CodeIntegrity** > **Operational**
