@@ -1,0 +1,35 @@
+
+title:	Recommended experience settings
+state:	OPEN
+author:	lightupdifire
+labels:	question, deployment, writer-input-required
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	10349
+--
+Hello,
+
+Can you please explain more this part:
+
+"**Automatically download, install, and restart (default if no restart policies are set up or enabled).**"
+
+What does this mean exactly? We should set it to "Default"? Or to which policy? There is no "Automatically download" name provided in the policy menu.
+
+![image](https://user-images.githubusercontent.com/39700914/152785912-8018bddc-9220-4184-9444-8388a495f06e.png)
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 2056993d-a700-fba6-8982-e645b182eeea
+* Version Independent ID: fb38a86a-cdf6-6fc2-8eb6-fd54f1599f55
+* Content: [Windows Update for Business - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/update/waas-manage-updates-wufb)
+* Content Source: [windows/deployment/update/waas-manage-updates-wufb.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/update/waas-manage-updates-wufb.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @jaimeo
+* Microsoft Alias: **jaimeo**

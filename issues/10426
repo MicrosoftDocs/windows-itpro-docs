@@ -1,0 +1,30 @@
+
+title:	Add a question
+state:	OPEN
+author:	hogan777
+labels:	deployment, writer-input-required, doc-enhancement
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	10426
+--
+Would be great if you could add a question "Would any servicing stack have a CVE associated to it?"
+Please also provide its response.
+
+[Enter feedback here]
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: b706f0af-d504-a8ca-7c38-b8bb9283bfad
+* Version Independent ID: 14f31acf-9f47-59a6-269f-62ab249fe560
+* Content: [Servicing stack updates - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/update/servicing-stack-updates#why-should-servicing-stack-updates-be-installed-and-kept-up-to-date)
+* Content Source: [windows/deployment/update/servicing-stack-updates.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/update/servicing-stack-updates.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @jaimeo
+* Microsoft Alias: **jaimeo**

@@ -1,0 +1,36 @@
+
+title:	About Event ID 4625 Description
+state:	OPEN
+author:	erdemguricin
+labels:	question, threat-protection
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10242
+--
+
+[Enter feedback here]
+
+I couldn't be sure that if 4625 Event ID Actually means "This event generates if an account logon attempt failed when the account was already locked out. It also generates for a logon attempt after which the account was locked out." in this blog post's description.
+
+Because it seems that Event ID 4625 means by informations gathered from blogs listed below,  "It documents each and every failed attempt to logon to the local computer regardless of logon type, location of the user or type of account.". But I already know that only Sub Status Code 0xC0000234 means that "the account was already locked out".
+
+https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventid=4625
+https://www.manageengine.com/products/active-directory-audit/kb/windows-security-log-event-id-4625.html
+
+There are two different knowledge about this Event ID and I'm just wondering which one is correct? Could you please check and inform me and who reads this blog?
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 80307c25-b809-e9b8-bab2-d37d3de7e920
+* Version Independent ID: 24c32be1-2fc3-f22f-7e6c-da4049bf8458
+* Content: [4625(F) An account failed to log on. (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4625)
+* Content Source: [windows/security/threat-protection/auditing/event-4625.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/auditing/event-4625.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

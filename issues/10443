@@ -1,0 +1,35 @@
+
+title:	"Disable Memory integrity switch" policy does not exist.
+state:	OPEN
+author:	hyakutakem
+labels:	threat-protection, doc-bug
+comments:	2
+assignees:	e0i
+projects:	
+milestone:	
+number:	10443
+--
+[Enter feedback here]
+Tell me about "Disable Memory integrity switch" policy
+
+It is as follows
+~~~~~
+You must have Windows 10, version 1803 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings.
+~~~~~
+
+But, Even if I check the latest admx/adml files , This policy item does not exist.
+Where is admx/adml files that include this policy ?
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: e1311b0a-9022-b1db-ddd5-d5c57a4fde22
+* Version Independent ID: e0dcb960-8145-2590-de7a-3a75118c3c5f
+* Content: [Device security in the Windows Security app - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-security-center/wdsc-device-security#disable-memory-integrity-switch)
+* Content Source: [windows/security/threat-protection/windows-defender-security-center/wdsc-device-security.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/windows-defender-security-center/wdsc-device-security.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

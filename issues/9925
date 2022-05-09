@@ -1,0 +1,28 @@
+
+title:	The URL is invalid
+state:	OPEN
+author:	goxia
+labels:	deployment, doc-bug
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	9925
+--
+
+MDT Sample Web Service [https://go.microsoft.com/fwlink/p/?LinkId=619363] is invalid
+
+
+---
+#### 文档详细信息
+
+⚠ *请勿编辑此部分。 docs.microsoft.com ➟ GitHub 问题链接必须具有此部分。*
+
+* ID: 64521363-9e66-1e99-3438-fdcf016b1a50
+* Version Independent ID: 9d0e854b-2151-07d0-931e-7ee1892e79f4
+* Content: [使用 MDT 中的 Web 服务 (Windows10) - Windows Deployment](https://docs.microsoft.com/zh-cn/windows/deployment/deploy-windows-mdt/use-web-services-in-mdt)
+* Content Source: [windows/deployment/deploy-windows-mdt/use-web-services-in-mdt.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/master/windows/deployment/deploy-windows-mdt/use-web-services-in-mdt.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @greg-lindsay
+* Microsoft Alias: **greglin**

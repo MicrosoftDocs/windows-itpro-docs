@@ -1,0 +1,39 @@
+
+title:	Allow Update Compliance processing Value
+state:	OPEN
+author:	erottier
+labels:	deployment, doc-bug
+comments:	6
+assignees:	e0i
+projects:	
+milestone:	
+number:	9751
+--
+Hi,
+
+I followed these instructions, to enable "Allow Update Compliance processing" via Intune configuration profile.
+
+I've included this in my profile:
+"OMA-URI: ./Vendor/MSFT/Policy/Config/System/AllowUpdateComplianceProcessing
+Data type: Integer
+Value: 16"
+
+What I found was that with this code the hex code is 10 and the decimal is 16. According to other website it should be hex 16 and dec. 22.
+
+Regards.
+
+(for example: https://www.thewindowsclub.com/enable-update-compliance-processing)
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 47a41574-4118-dff7-f9ae-047b2dbdf30f
+* Version Independent ID: 4f48d7a5-3965-60a4-221c-c519253bfc29
+* Content: [Configuring Microsoft Endpoint Manager devices for Update Compliance - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/update/update-compliance-configuration-mem)
+* Content Source: [windows/deployment/update/update-compliance-configuration-mem.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/update/update-compliance-configuration-mem.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @jaimeo
+* Microsoft Alias: **jaimeo**

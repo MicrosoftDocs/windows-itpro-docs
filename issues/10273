@@ -1,0 +1,26 @@
+
+title:	Policy CSP DDF File Missing ADMX-Backed Policies?
+state:	OPEN
+author:	eppsilon
+labels:	question, client management
+comments:	2
+assignees:	e0i, MaratMussabekov
+projects:	
+milestone:	
+number:	10273
+--
+The [ADMX-backed policies](https://docs.microsoft.com/en-us/windows/client-management/mdm/policies-in-policy-csp-admx-backed) are listed on another page but not included in the downloadable Policy CSP DDF XML file. (I checked the 2004 and 20H2 versions.) Is that page the definitive list of ADMX-backed policies? Is there a way to know which ones are supported by each version of Windows 10?
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 051c376e-e9dd-368d-0af7-ac0d997226c2
+* Version Independent ID: e49d31fa-4ba6-2140-54ee-f9564f59371b
+* Content: [Policy DDF file - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-ddf-file)
+* Content Source: [windows/client-management/mdm/policy-ddf-file.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/policy-ddf-file.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

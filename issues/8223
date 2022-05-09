@@ -1,0 +1,31 @@
+
+title:	No documentation about strange behaviour of Windows blocking HID Access to FIDO2 Devices
+state:	OPEN
+author:	riedel
+labels:	hello-for-business, doc-idea
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	8223
+--
+The Windows Fido2 documentation is terrible compared to the original  FIDO2 documentation. Instead of providing access to a better API and compete on quality, there is enforcement to use this underdocumented API. Unfortunately the MS api does not seem to be a one to one translation.
+
+At least it would be fair that microsoft explains that they block unelevated access to the CTAP API of the Hardware. 
+
+Further Microsoft should provide a migration guide from CTAP to webauthn.h for developers.
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: b9884247-29d3-eacb-25cb-60c712fa561c
+* Version Independent ID: 020c8ae8-dd46-4ef2-9e11-5aea3059f0ed
+* Content: [WebAuthn APIs - Microsoft 365 Security](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/webauthnapis)
+* Content Source: [windows/security/identity-protection/hello-for-business/WebAuthnAPIs.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/WebAuthnAPIs.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @mapalko
+* Microsoft Alias: **mapalko**

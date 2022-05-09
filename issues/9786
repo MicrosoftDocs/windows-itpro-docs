@@ -1,0 +1,28 @@
+
+title:	assumption
+state:	OPEN
+author:	mikalar
+labels:	identity protection, doc-bug
+comments:	1
+assignees:	e0i, MaratMussabekov
+projects:	
+milestone:	
+number:	9786
+--
+In the section "**_Create an NDES-Intune authentication certificate template_**" point no 8. In order for computers/servers to show in "_Enter the object names to select_" with an underline, the checkbox in "_Select this object type_" for "Computers" needs to be checked.
+Unless point no 8 refers to, user account and not a computer object but it doesn't look like it.
+Kind regards,
+Mikael
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 9f709fd4-0b5d-b238-4060-222d550cd538
+* Version Independent ID: fb3f29da-2236-c47d-6bea-8efbcec8d7d3
+* Content: [Using Certificates for AADJ On-premises Single-sign On single sign-on - Microsoft 365 Security](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-cert#install-and-configure-the-ndes-role)
+* Content Source: [windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-cert.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-cert.md)
+* Product: **w10**
+* GitHub Login: @mapalko
+* Microsoft Alias: **mapalko**

@@ -1,0 +1,30 @@
+
+title:	Instructions for NDES RA?
+state:	OPEN
+author:	robmacf
+labels:	hello-for-business, in progress, product-feedback
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	5545
+--
+If one follows the page "Planning a Windows Hello for Business Deployment", one of the options for device management of domain joined devices (box 2a) is "modern management". In this case, the Planning Guide requires that the Registration Authority (RA) is NDES.  Quote from the planning page: "If box 2a or 2b reads modern management, write NDES in box 5b (Registration Authority) and write the following certificate template names and issuances in box 5c on your planning worksheet..."  
+
+On this page ("Configure Windows Hello for Business: Active Directory Federation Services") which follows the "Configure PKI" step, one is configuring whichever Registration Authorities (RA's) are needed for WHFB.  This page includes instructions only for configuring an ADFS RA; it does not mention an NDES RA even though one might need an NDES RA as indicated in the Planning Guide.  
+
+Is this because the NDES RA is not in fact supported for a Hybrid Certificate Trust Deployment?  The planning guide as currently written allows one to follow a path that results in requiring an NDES RA.  If using an NDES RA in a Hybrid Certificate Trust Deployment is a supported scenario, then configuring an NDES RA should be documented in the Hybrid Certificate Trust Deployment Guide.  The Deployment Guide should not assume that the ADFS RA is the only RA that needs to be configured.  On the other hand, if using an NDES RA in a Hybrid Certificate Trust Deployment is not in fact supported, then the Planning Guide should explicitly state that using Modern Management for domain-joined devices in a Hybrid Certificate Trust Deployment is not supported.
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 24d7753d-30e1-db13-429a-c0b4eaf2c9c5
+* Version Independent ID: 5be668ea-fc9d-0fb5-585d-4f5d5575b416
+* Content: [Configuring Hybrid Windows Hello for Business - Active Directory Federation Services (ADFS)](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-whfb-settings-adfs)
+* Content Source: [windows/security/identity-protection/hello-for-business/hello-hybrid-cert-whfb-settings-adfs.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-whfb-settings-adfs.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @mapalko
+* Microsoft Alias: **mapalko**

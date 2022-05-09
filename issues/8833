@@ -1,0 +1,26 @@
+
+title:	Upgrade Readiness mentioned
+state:	OPEN
+author:	russrimm
+labels:	deployment, Microsoft submitter, doc-idea
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	8833
+--
+This page mentions using Upgrade Readiness which is deprecated.  May want to change it out to Desktop Analytics.
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 34937b5e-eda3-9c93-c31b-0701ea61198a
+* Version Independent ID: 36f54d9f-503d-ea0a-bff2-3441571f8d44
+* Content: [Quick guide to Windows as a service (Windows 10) - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/update/waas-quick-start)
+* Content Source: [windows/deployment/update/waas-quick-start.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/update/waas-quick-start.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @jaimeo
+* Microsoft Alias: **jaimeo**

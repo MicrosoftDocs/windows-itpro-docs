@@ -1,0 +1,31 @@
+
+title:	Add a notion about windows sandbox being a discriminating piece of shit
+state:	OPEN
+author:	Nils-Berghs
+labels:	product-feedback, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10516
+--
+
+Once again MS has succesfully degraded lefties to second class citizens. I understand that on installing a new operation system it uses a right handed mouse. When running such a 'new' operation system virtually it should either respect the mouse settings of the host system or communicate in terms of 'primary' and 'secondary' clicks instead of right or left.
+
+I refuse to believe that this is a technical issue, nor that this is an oversight (a company the size of Microsoft certainly has some checks in place). The only remaining option is pure and intended discrimination op people who don't use the 'right' hand (pun intended). And if this is the case at least have the decency to communicate it. 
+
+I sincerely hope that this gets fixed without a conviction for discrimination!
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 8c06f3ef-5946-862a-ae14-f897fdb518ca
+* Version Independent ID: cd6a8b99-b1e9-dff5-f174-a15840b304f0
+* Content: [Windows Sandbox - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview)
+* Content Source: [windows/security/threat-protection/windows-sandbox/windows-sandbox-overview.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

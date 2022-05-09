@@ -1,0 +1,26 @@
+
+title:	Conflict?
+state:	OPEN
+author:	asampson68
+labels:	question, deployment, assigned-to-author
+comments:	2
+assignees:	e0i
+projects:	
+milestone:	
+number:	6670
+--
+In the content above it states "Devices running Windows 10 Mobile and Windows 10 IoT Mobile receive updates from the Semi-annual Channel" Note that it says Windows 10 Mobile ONLY, not Windows 10 Mobile *Enterprise*. But in the table immediately below this statement it indicates that Windows 10 Mobile is NOT supported on the semi-annual channel. To simplify... you basically state "Windows 10 Mobile DOES use the semi-annual channel", then in the table you says "Windows 10 mobile does NOT use the semi-annual channel." Please clarify
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 37a55e58-a782-0ccf-a200-1554eed26b1d
+* Version Independent ID: b02194fd-e682-1382-58bb-2b2312150775
+* Content: [Deploy updates to Windows 10 Mobile or Windows 10 IoT Mobile - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/update/waas-mobile-updates)
+* Content Source: [windows/deployment/update/waas-mobile-updates.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/update/waas-mobile-updates.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @jaimeo
+* Microsoft Alias: **jaimeo**

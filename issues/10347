@@ -1,0 +1,30 @@
+
+title:	Recommended WIP URLs page doesn't include enough information to use WIP with Dynamics 365 especially 
+state:	OPEN
+author:	markheydon
+labels:	information protection, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10347
+--
+
+The page mentions the URL for a US Dynamics 365 instance and administrators would understand the 'contoso' bit needs replacing as needed, and that the '.crm' bit needs changing with the relevant local server details too (e.g. crm11 for UK). However, this isn't made clear on the page.
+
+More importantly, simply adding the Dynamics 365 instance URL seems to break Dynamics 365 App for Outlook on Windows Desktop versions of Outlook. With the URL added to a WIP policy, trying to access the 'Add-in' section to manage tracked contacts in Outlook Desktop gives an error saying 'ADD-IN ERROR...A problem occurred while trying to reach this add-in.'.
+
+The page needs updating or at least linking to proper instructions to use WIP with Dynamics 365 App for Outlook.
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 255d1c9b-6b79-cb49-c230-84570daae489
+* Version Independent ID: a2dcf5fd-c20d-c219-13f9-3e936036b368
+* Content: [Recommended URLs for Windows Information Protection (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/information-protection/windows-information-protection/recommended-network-definitions-for-wip)
+* Content Source: [windows/security/information-protection/windows-information-protection/recommended-network-definitions-for-wip.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/information-protection/windows-information-protection/recommended-network-definitions-for-wip.md)
+* Product: **m365-security**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

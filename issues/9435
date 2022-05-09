@@ -1,0 +1,27 @@
+
+title:	Parsing Script Missing
+state:	OPEN
+author:	sedelrio
+labels:	policy settings, threat-protection, doc-bug
+comments:	2
+assignees:	e0i
+projects:	
+milestone:	
+number:	9435
+--
+On the Audit only mode, there is a recommendation to dump the events to a common share, and also the instruction to use a script to parse the events, however the link to the script seems to not be available anymore, and also would be good to add a description about how to dump the Events (For instance, using Event forwarding GPO)
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: ef8b6967-0e45-bcdd-6d70-54759d9f7ec8
+* Version Independent ID: 6651ebc1-04f0-421f-891b-6957ca37da7c
+* Content: [Network access - Restrict clients allowed to make remote calls to SAM - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/network-access-restrict-clients-allowed-to-make-remote-sam-calls)
+* Content Source: [windows/security/threat-protection/security-policy-settings/network-access-restrict-clients-allowed-to-make-remote-sam-calls.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/security-policy-settings/network-access-restrict-clients-allowed-to-make-remote-sam-calls.md)
+* Product: **m365-security**
+* Technology: **mde**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

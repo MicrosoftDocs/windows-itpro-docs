@@ -1,0 +1,38 @@
+
+title:	TPM lockout authorization - inaccurate description and misleading terminology
+state:	OPEN
+author:	wmjdgla
+labels:	information protection, doc-enhancement
+comments:	0
+assignees:	e0i, MaratMussabekov
+projects:	
+milestone:	
+number:	10210
+--
+> Starting with Windows 10, version 1607, or Windows 11, Windows will not retain the TPM owner password when provisioning the TPM. The password will be set to a random high entropy value and then discarded.
+
+On Windows 10 20H2 and Windows 11 with TPM 2.0, I found that the TPM's ownerAuth and endorsementAuth are both just a 0-byte sequence. Authorization for the SRK (Storage Root Key) is also a 0-byte sequence.
+
+lockoutAuth is stored as a 20-byte sequence encoded in base64 format in `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TPM\WMI\Admin\OwnerAuthFull`, and this agrees with the statement in the "Important" section:
+
+> For Windows 10 versions newer than 1703 the default value for this key is 5. For TPM 2.0, a value of 5 means keep the lockout authorization.
+
+I can confirm that the above values are correct as I am able to use them to successfully change the authorization values to my own ones. So none of the authorization values here are unknown and/or discarded.
+
+In addition, the page talks about "owner password", giving the impression that it's referring to ownerAuth. However it goes on to state:
+>The TPM owner password allows the ability to enable, disable, or clear the TPM without having physical access to the computer, ... The TPM owner password also allows manipulation of the TPM dictionary attack logic.
+
+Clearing the TPM and manipulating the TPM dictionary attack logic requires lockoutAuth, not ownerAuth (as per TPM Library Spec).
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 589107e3-caf8-797e-391e-41457437e5c1
+* Version Independent ID: acce4c69-e822-f7e9-8341-06b6d3061c57
+* Content: [Change the TPM owner password (Windows) - Windows security](https://docs.microsoft.com/en-us/windows/security/information-protection/tpm/change-the-tpm-owner-password)
+* Content Source: [windows/security/information-protection/tpm/change-the-tpm-owner-password.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/information-protection/tpm/change-the-tpm-owner-password.md)
+* Product: **m365-security**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

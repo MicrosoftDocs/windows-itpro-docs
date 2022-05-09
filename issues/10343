@@ -1,0 +1,27 @@
+
+title:	What are "external sources", exactly?
+state:	OPEN
+author:	Rvvhub
+labels:	application control, doc-idea
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10343
+--
+Would be helpful if the article clearly specified what "external sources" are, exactly.
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 4bf3b48c-94bb-67d5-25d9-135f4160fd78
+* Version Independent ID: 14d65fdf-f6d1-4b0c-ada3-b06d04c4b72a
+* Content: [Windows Defender Application Control and .NET Hardening (Windows) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/use-windows-defender-application-control-with-dynamic-code-security)
+* Content Source: [windows/security/threat-protection/windows-defender-application-control/use-windows-defender-application-control-with-dynamic-code-security.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/windows-defender-application-control/use-windows-defender-application-control-with-dynamic-code-security.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @jsuther1974
+* Microsoft Alias: **dansimp**

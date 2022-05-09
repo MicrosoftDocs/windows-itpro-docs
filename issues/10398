@@ -1,0 +1,35 @@
+
+title:	Information on vmdrv.sys addition to driver blocklist
+state:	OPEN
+author:	voicemod
+labels:	application control, product-feedback
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10398
+--
+Hi
+
+We are Voicemod S.L. a software company with a voice changer technology based in Spain.
+On 16 Feb, commit 832a449ad83ca2e6fde4a4368b9ced6c7b4f2e1b our driver was added to the list of recommended blocked drivers. Because of that since 22257.1 W11 Insider preview the driver is not working, we contact microsoft support team and a Escalation Engineer on WDK (Matt P.) finally point us to this list.
+
+We are try to understand why this happens and the way to removed our driver for this list.
+Can we have more information or contact about this issue? To fully understand this incident and prevent it in future developments.
+
+In the meantime we sent our driver to [Microsoft Security Intelligence Driver Submission page](https://www.microsoft.com/en-us/wdsi/driversubmission) to be scanned and we are running HLK on W11 to find vulnerabilities.
+
+Thanks for your time.
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 6e8740b8-c1f2-4b88-3d4d-66cdbf20215f
+* Version Independent ID: 7986a684-b35d-06bd-be30-dfca9923cb9c
+* Content: [Microsoft recommended driver block rules (Windows) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules)
+* Content Source: [windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules.md)
+* Product: **m365-security**
+* GitHub Login: @jgeurten
+* Microsoft Alias: **dansimp**

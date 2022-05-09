@@ -1,0 +1,31 @@
+
+title:	vulnerability explanation not sufficient IMHO
+state:	OPEN
+author:	mirbach
+labels:	policy settings, threat-protection, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	9759
+--
+
+[Enter feedback here]
+Vulnerability
+The Log on as a batch job user right presents a low-risk vulnerability. For most organizations, the default settings are sufficient. Members of the local Administrators group have this right by default.
+
+This paragraph does not really describe the potential vulnerability and how it can be exploited. Does the scheduled task need to exist with this user account before someone can logon as a batch job or is the right sufficient? 
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: a8d839f2-c46b-657a-f19b-b3b20e383dfd
+* Version Independent ID: 69a66a2f-b607-cd53-b5cd-0f5854639dbc
+* Content: [Log on as a batch job (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/log-on-as-a-batch-job)
+* Content Source: [windows/security/threat-protection/security-policy-settings/log-on-as-a-batch-job.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/security-policy-settings/log-on-as-a-batch-job.md)
+* Product: **m365-security**
+* Technology: **mde**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

@@ -1,0 +1,27 @@
+
+title:	CSS of this page is not displaying properly.
+state:	OPEN
+author:	josedper
+labels:	auditing, docs-experience
+comments:	2
+assignees:	e0i
+projects:	
+milestone:	
+number:	10447
+--
+
+CSS of this page is not displaying properly.
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 881049ef-5df0-bc80-12b1-bb27217cdad5
+* Version Independent ID: 71ddceeb-db97-27ca-c45c-e4745541b970
+* Content: [4741(S) A computer account was created. (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4741)
+* Content Source: [windows/security/threat-protection/auditing/event-4741.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/auditing/event-4741.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

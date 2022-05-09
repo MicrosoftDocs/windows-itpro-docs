@@ -1,0 +1,36 @@
+
+title:	Error when running mdmdiagnosticstool command
+state:	OPEN
+author:	DontNeedNoGit
+labels:	question, client management
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10232
+--
+
+I copied and pasted the mdmdiagnosticstool command exactly as it is on the support page listed and it returns an error; "Autopilot : The term 'Autopilot' is not recognized as the name of a cmdlet, function, script file, or operable
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+
+Same for DeviceProvisioning.
+
+I definitely have both in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MdmDiagnostics\Area
+
+I tried re-ordering the areas in your command and it seems that it no longer respects/allows/works with the ; separator. That is, if Autopilot is first, then I don't get an error about Autopilot, but do about the other two. DeviceProvisioning also works when it is the first item in the list. So, it seems the ; separator doesn't work now. 
+
+Can you please clarify and update?
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 738225b2-66a4-e0dd-47fb-faf333ed52d1
+* Version Independent ID: d9d3274c-3ee7-ed3a-6cd8-6b387027562c
+* Content: [Diagnose MDM failures in Windows 10 - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10#use-command-to-collect-logs-directly-from-windows10-pcs)
+* Content Source: [windows/client-management/mdm/diagnose-mdm-failures-in-windows-10.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

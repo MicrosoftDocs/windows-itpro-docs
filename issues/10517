@@ -1,0 +1,27 @@
+
+title:	Give example of 'Enable HVCI using Intune'
+state:	OPEN
+author:	tmontney
+labels:	doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10517
+--
+To be consistent, this should list an example as all other methods do. More importantly, I can find little else on enabling HVCI through Intune (aside from using the registry or a script). I have not yet figured out how to enable this.
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 1d4b8d75-5d09-e0d6-1a90-45175fd1043d
+* Version Independent ID: dfb10d10-a514-6ea5-1307-df865db530db
+* Content: [Enable virtualization-based protection of code integrity - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity)
+* Content Source: [windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

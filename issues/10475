@@ -1,0 +1,28 @@
+
+title:	FIPS 140 Validation article needs update
+state:	OPEN
+author:	bleary1415
+labels:	threat-protection, doc-idea
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10475
+--
+For this article, it only addresses up to Windows 10 Fall 2018 Update (Version 1809). Can you please update it to include the most recent Windows 10 builds?
+
+Thank you! 
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: e93f07bf-c0dd-dd83-d7bf-8562e7f197c3
+* Version Independent ID: a6c44187-8ff1-6519-5291-146b4c1bf46c
+* Content: [Federal Information Processing Standard (FIPS) 140 Validation - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/fips-140-validation)
+* Content Source: [windows/security/threat-protection/fips-140-validation.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/fips-140-validation.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

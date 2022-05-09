@@ -1,0 +1,30 @@
+
+title:	Run a full Census sync
+state:	OPEN
+author:	Peresb
+labels:	deployment, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	9833
+--
+
+[Enter feedback here]
+
+Unsupported method of doing Fullsyncs. This paragraph should be removed ASAP. 
+Peres Bayer - Principal Software Development Lead (owner of census client) 
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 37a5ef77-5d80-ce40-7243-c96f708e907c
+* Version Independent ID: 3e24d136-6af4-2531-31fd-feac09f37901
+* Content: [Manually configuring devices for Update Compliance - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/update/update-compliance-configuration-manual#run-a-full-census-sync)
+* Content Source: [windows/deployment/update/update-compliance-configuration-manual.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/update/update-compliance-configuration-manual.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @jaimeo
+* Microsoft Alias: **jaimeo**

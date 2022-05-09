@@ -1,0 +1,37 @@
+
+title:	Token Elevation Type Windows 2016/10
+state:	OPEN
+author:	lord-garmadon
+labels:	auditing, doc-idea
+comments:	0
+assignees:	e0i, VLG17
+projects:	
+milestone:	
+number:	9920
+--
+Based on my experience, Windows 2016/10 and above are logging the following values for field Token Elevation Type:
+
+- %%1936
+- %%1937
+- %%1938
+
+However, the page lists the following potential values (that were used pre-Windows 2016/10, I believe):
+
+- TokenElevationTypeDefault (1)
+- TokenElevationTypeFull (2)
+- TokenElevationTypeLimited (3)
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 5eca37ef-510b-52ec-ed07-2fb4a2d307dc
+* Version Independent ID: c4977b85-a93a-119d-3010-b6148c3421f0
+* Content: [4688(S) A new process has been created. (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4688)
+* Content Source: [windows/security/threat-protection/auditing/event-4688.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/auditing/event-4688.md)
+* Product: **m365-security**
+* Technology: **mde**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

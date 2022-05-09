@@ -1,0 +1,27 @@
+
+title:	Convenience PIN Date
+state:	OPEN
+author:	alevere
+labels:	hello-for-business, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10431
+--
+
+Please publish a date to deprecate convenience PIN for an enterprise.
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 82ecd7ea-0ecb-cf7b-a1ab-9cda97e5cc0a
+* Version Independent ID: 81acb0ad-2d46-bd0b-abb5-7c2e851d7a71
+* Content: [Windows Hello for Business Frequently Asked Questions (FAQ) - Windows security](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-faq)
+* Content Source: [windows/security/identity-protection/hello-for-business/hello-faq.yml](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/hello-faq.yml)
+* Product: **m365-security**
+* GitHub Login: @Gitprakhar13
+* Microsoft Alias: **prsriva**

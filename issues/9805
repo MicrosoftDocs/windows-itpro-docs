@@ -1,0 +1,25 @@
+
+title:	MDM Section Is Empty
+state:	OPEN
+author:	ivassallo19
+labels:	application control, doc-idea
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	9805
+--
+On this page, the section 'Editing an AppLocker policy by using Mobile Device Management (MDM)' is completely empty.
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 9639e297-41c6-5e4f-6b64-45812976448b
+* Version Independent ID: 227e7fd0-b79c-9f93-754e-c3d26b02cd07
+* Content: [Edit an AppLocker policy (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/edit-an-applocker-policy)
+* Content Source: [windows/security/threat-protection/windows-defender-application-control/applocker/edit-an-applocker-policy.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/windows-defender-application-control/applocker/edit-an-applocker-policy.md)
+* Product: **m365-security**
+* Technology: **mde**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

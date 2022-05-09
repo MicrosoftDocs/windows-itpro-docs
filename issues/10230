@@ -1,0 +1,27 @@
+
+title:	No Mention of Windows 11
+state:	OPEN
+author:	ld0614
+labels:	client management, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10230
+--
+This (and Associated Pages) don't make any mention of Windows 11 nor include the DDF files for Windows 11, does this mean that Windows 11 is not supported via CSP management?
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 162c8434-b3ab-e235-43ce-ed435d6cd06e
+* Version Independent ID: 18b29b82-f1ad-81b8-2ea4-f7bebc506487
+* Content: [Configuration service provider reference - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/configuration-service-provider-reference)
+* Content Source: [windows/client-management/mdm/configuration-service-provider-reference.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/configuration-service-provider-reference.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

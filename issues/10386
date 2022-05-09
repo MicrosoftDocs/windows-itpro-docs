@@ -1,0 +1,34 @@
+
+title:	Reference to Intunmem equivalent 
+state:	OPEN
+author:	Jlouden9
+labels:	policy settings, threat-protection, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10386
+--
+Hi,
+
+Just wondering if there is any thoughts on including a section that refers to the intune\mem equivalent. This would add people who are moving away from GPO's as a configuration plane and towards Intune\MEM with Autopilot to manage their fleet. 
+
+If the the setting is configurable via one of the inbuilt templates just refer to that, or as is the case here call out that a CSP or alternate method should be used for deploying this setting.
+
+Regards
+John
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: e3ded1fc-7605-b135-d643-fdc2f40fbb0c
+* Version Independent ID: 3e5a97a6-4557-19a1-9980-fbc602251573
+* Content: [Network access Do not allow storage of passwords and credentials for network authentication (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/network-access-do-not-allow-storage-of-passwords-and-credentials-for-network-authentication)
+* Content Source: [windows/security/threat-protection/security-policy-settings/network-access-do-not-allow-storage-of-passwords-and-credentials-for-network-authentication.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/security-policy-settings/network-access-do-not-allow-storage-of-passwords-and-credentials-for-network-authentication.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

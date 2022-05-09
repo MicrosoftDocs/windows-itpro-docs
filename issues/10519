@@ -1,0 +1,25 @@
+
+title:	Screenshot of system summary is too old
+state:	OPEN
+author:	RAJU2529
+labels:	doc-bug
+comments:	2
+assignees:	e0i
+projects:	
+milestone:	
+number:	10519
+--
+This article has old screenshot of the system summary which indicates intel i5-2500 processor and  the system does not booted in Secure mode. so screenshot should change with new latest processor.
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 1d4b8d75-5d09-e0d6-1a90-45175fd1043d
+* Version Independent ID: dfb10d10-a514-6ea5-1307-df865db530db
+* Content: [Enable virtualization-based protection of code integrity - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity)
+* Content Source: [windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

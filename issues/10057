@@ -1,0 +1,33 @@
+
+title:	Script not compatible with Windows 11
+state:	OPEN
+author:	NeighborGeek
+labels:	deployment, writer-input-required, doc-bug
+comments:	4
+assignees:	e0i
+projects:	
+milestone:	
+number:	10057
+--
+
+This page says it applies to Windows 11, but the Update Compliance Configuration Script returns the following error when run on Windows 11:
+
+> ErrorCode 99 : Device must be Windows 10 to use Update Compliance.
+
+Either the page needs to be updated to show it doesn't apply to Win11, or the script needs to be updated to run on Win11.  
+
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: eeb8c41f-5e79-8310-3a2c-e2465d6aac96
+* Version Independent ID: f517bcb0-3833-08b3-f3f4-75a732b3c629
+* Content: [Update Compliance Configuration Script - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/update/update-compliance-configuration-script)
+* Content Source: [windows/deployment/update/update-compliance-configuration-script.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/update/update-compliance-configuration-script.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @jaimeo
+* Microsoft Alias: **jaimeo**

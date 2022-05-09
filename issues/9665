@@ -1,0 +1,27 @@
+
+title:	Updated video?
+state:	OPEN
+author:	cwidhelm
+labels:	client management, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	9665
+--
+Is there an updated video that could be put here?  The one embedded is very old: https://youtu.be/g1rIcBhhxpA
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: b2dbf610-169d-936a-28d7-f9b8710720b3
+* Version Independent ID: ded12365-1392-17d6-6f73-23bbe49ab97b
+* Content: [Manage Windows 10 in your organization - transitioning to modern management - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/manage-windows-10-in-your-organization-modern-management)
+* Content Source: [windows/client-management/manage-windows-10-in-your-organization-modern-management.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/manage-windows-10-in-your-organization-modern-management.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

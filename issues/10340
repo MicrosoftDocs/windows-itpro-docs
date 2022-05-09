@@ -1,0 +1,27 @@
+
+title:	Create the KeyCredential Admins Security Global Group?
+state:	OPEN
+author:	kklouzal
+labels:	hello-for-business, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10340
+--
+
+Is this step even necessary on Windows Server 2019? Server 2019 by default already has a 'Key Admins' group setup. Investigation is needed..
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 13c400ea-f52d-b45b-a871-31c94262084d
+* Version Independent ID: 9465e043-990f-cb8b-2d4b-33dc8d3c21bf
+* Content: [Update Active Directory schema for cert-trust deployment (Windows Hello for Business) - Windows security](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-cert-trust-validate-ad-prereq)
+* Content Source: [windows/security/identity-protection/hello-for-business/hello-cert-trust-validate-ad-prereq.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/hello-cert-trust-validate-ad-prereq.md)
+* Product: **m365-security**
+* GitHub Login: @mapalko
+* Microsoft Alias: **mapalko**

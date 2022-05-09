@@ -1,0 +1,14 @@
+
+title:	Information regarding sign-ins related to "IrisSelectionFrontDoor"
+state:	OPEN
+author:	precubcr
+labels:	privacy, doc-enhancement
+comments:	2
+assignees:	e0i
+projects:	
+milestone:	
+number:	10502
+--
+It seems like Spotlight does many Sign-ins to IrisSelectionFrontDoor.
+I am not able to see any kind of information regarding this nowhere in the docs.
+Maybe adding some info could bring more clarity to the service?

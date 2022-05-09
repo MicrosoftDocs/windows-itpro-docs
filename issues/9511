@@ -1,0 +1,28 @@
+
+title:	Clarification of version/feature compatibility
+state:	OPEN
+author:	Daniel-t
+labels:	application control, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	9511
+--
+Please clarify which versions of Windows Server and Windows 10 have access to which features.
+
+Specifically (but not limited) , Rule Option 14 (Intelligent Security Graph) which we are being told by MS support isn't available in Server 2016, but is in Server 2019+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 74ef7917-edec-5597-4689-1ffbf6735918
+* Version Independent ID: 41f7ceb2-ad16-812c-3766-b9a9a72a42c1
+* Content: [Understand Windows Defender Application Control (WDAC) policy rules and file rules (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/select-types-of-rules-to-create#feedback)
+* Content Source: [windows/security/threat-protection/windows-defender-application-control/select-types-of-rules-to-create.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/windows-defender-application-control/select-types-of-rules-to-create.md)
+* Product: **m365-security**
+* Technology: **mde**
+* GitHub Login: @jsuther1974
+* Microsoft Alias: **dansimp**

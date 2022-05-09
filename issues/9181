@@ -1,0 +1,46 @@
+
+title:	Error list is not (or no longer) comprehensive
+state:	OPEN
+author:	anatomicunderground
+labels:	deployment, product-question, writer-input-required
+comments:	14
+assignees:	e0i, dougeby, nam31
+projects:	
+milestone:	
+number:	9181
+--
+The list of error messages in this document is no longer comprehensive. We are seeing the following error codes in our environment, which are not documented here. 
+
+Is there another comprehensive list of WU error messages? Or possible an API where error information could be retrieved automatically? We are using event log collection to trigger alerts and automated fixes. Having a comprehensive list of error messages is critical.
+
+SourceName:
+Microsoft-Windows-WindowsUpdateClient
+
+EventID:
+20
+
+errorCodes:
+0xc190020e
+0x80073d02
+0x80070663
+0x80070643
+0x80073701
+0x8007000d
+0x80070070
+0x80070057
+0x80070005
+0x80246010
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: f76d96ac-5343-20e2-9d99-9c1cea7ccc2e
+* Version Independent ID: a95c9b39-4a66-d726-4404-de5af60ac982
+* Content: [Windows Update error code list by component - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/update/windows-update-error-reference)
+* Content Source: [windows/deployment/update/windows-update-error-reference.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/update/windows-update-error-reference.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @jaimeo
+* Microsoft Alias: **greglin**

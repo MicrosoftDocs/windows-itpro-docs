@@ -1,0 +1,27 @@
+
+title:	Clarification request about Hybrid AAD Join and "line of sight to the domain controller for the first time"
+state:	OPEN
+author:	Martony78
+labels:	identity protection, doc-enhancement
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	10306
+--
+The document states the following:
+> In the above deployment model, a newly provisioned user will not be able to sign in using Windows Hello for Business until (a) Azure AD Connect successfully synchronizes the public key to the on-premises Active Directory and (b) device has line of sight to the domain controller for the first time.
+
+Does the device must have a line of sight to the domain controller when the user registers to Windows Hello? When he first attempts to login using its Windows Hello PIN? Both?
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 10fcf686-1781-8a62-16bb-b26b3f5982fd
+* Version Independent ID: 37d733ad-e809-1674-ffbc-ae3d0c495423
+* Content: [How Windows Hello for Business works - Authentication - Windows security](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-how-it-works-authentication)
+* Content Source: [windows/security/identity-protection/hello-for-business/hello-how-it-works-authentication.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/hello-how-it-works-authentication.md)
+* Product: **m365-security**
+* GitHub Login: @mapalko
+* Microsoft Alias: **mapalko**

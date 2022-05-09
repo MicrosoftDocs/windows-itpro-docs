@@ -1,0 +1,32 @@
+
+title:	Awkward Phrasing for Windows 10 Mitigations That You Can Configure - Microsoft Defender Antivirus Description
+state:	OPEN
+author:	anothergeorgecoldham
+labels:	threat-protection, product-question, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10490
+--
+
+[Enter feedback here]
+Under Windows 10 mitigations that you can configure, for Microsoft Defender Antivirus the description is awkward.
+
+The sentence "Microsoft Defender Antivirus has been improved to a considerable extent since it was introduced...."
+
+It may be better "Microsoft Defender Antivirus has improved considerably since it was introduced...."
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 981c9ad4-d618-de21-4a79-0262b5d377d8
+* Version Independent ID: 5657feb8-539d-90eb-0b81-3f461158e0dd
+* Content: [Mitigate threats by using Windows 10 security features (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/overview-of-threat-mitigations-in-windows-10)
+* Content Source: [windows/security/threat-protection/overview-of-threat-mitigations-in-windows-10.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/overview-of-threat-mitigations-in-windows-10.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

@@ -1,0 +1,29 @@
+
+title:	Add Firmware update information for New Surface Dock 2
+state:	OPEN
+author:	danchar4
+labels:	devices, in progress, doc-enhancement
+comments:	1
+assignees:	e0i, VLG17
+projects:	
+milestone:	
+number:	6844
+--
+
+Please add firmware update information for the new Surface Dock 2
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 2a7b356e-3dbd-7f59-845e-a92e05865a52
+* Version Independent ID: 711c5497-373f-662c-7fae-ba60f046e50c
+* Content: [Microsoft Surface Dock Firmware Update - Technical information for IT administrators - Surface](https://docs.microsoft.com/en-us/surface/surface-dock-firmware-update)
+* Content Source: [devices/surface/surface-dock-firmware-update.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/devices/surface/surface-dock-firmware-update.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @greg-lindsay
+* Microsoft Alias: **greglin**
+* Label: **devices**

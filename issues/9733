@@ -1,0 +1,54 @@
+
+title:	Minimum system requirements for windows 11 fulfilled and yet I receive the error
+state:	OPEN
+author:	treasuregem
+labels:	deployment, product-question
+comments:	23
+assignees:	e0i
+projects:	
+milestone:	
+number:	9733
+--
+I tested if my laptop will support windows 11 or not using the application provided (PC health at a glance) and it gave me an error that My system can not run windows 11. I guess my system requirements are fulfilled with reference to the minimum system requirements given on the windows 11 website page. 
+
+I have the following spect of my laptop:
+1. Processor :	Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, 2592 Mhz, 4 Core(s), 8 Logical Processor(s)
+2. Installed Physical Memory (RAM): 	12.0 GB
+3. Storage: 250 GB SSD
+4. TPM: Ready to Use, Specification version 2.0 (from TPM.msc)
+             TpmPresent                : True (from get-tpm)
+             TpmReady                  : True
+             TpmEnabled                : True
+             TpmActivated              : True
+             TpmOwned                  : True
+             RestartPending            : Trus
+             ManufacturerIdTxt         : INTC
+             ManufacturerVersion       : 302.12.0.0
+             ManufacturerVersionFull20 : 302.12.0.0
+5.  BIOS Mode:	UEFI
+6.  Secure Boot State:	On
+7. Display Devices:  Card Name:    Intel(R) HD Graphics 530
+                               Driver Model: WDDM 2.1
+                               Card name: NVIDIA GeForce GTX 950M
+                               Driver Model: WDDM 2.7
+8. Display: 1920 x 1080 (Recommended)
+9. Microsoft account and internet: Yes (using Windows 10 , Version: 21H1 OS Build 19043.1081 using winver, Pre-installed)
+10. DirectX: DirectX 12 (from dxdiag)
+
+ I don't understand what my system is lacking.
+
+[Enter feedback here]
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: db554047-b9ca-f5c9-d79f-4a70686a66db
+* Version Independent ID: e05bf4bc-ab29-9d32-bd53-5ca3e70aba1b
+* Content: [Windows 11 requirements - What's new in Windows](https://docs.microsoft.com/en-us/windows/whats-new/windows-11-requirements)
+* Content Source: [windows/whats-new/windows-11-requirements.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/whats-new/windows-11-requirements.md)
+* Product: **w10**
+* GitHub Login: @greg-lindsay
+* Microsoft Alias: **greglin**

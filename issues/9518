@@ -1,0 +1,34 @@
+
+title:	Two links to the same article? 
+state:	OPEN
+author:	grnathan
+labels:	application control, doc-bug
+comments:	2
+assignees:	e0i
+projects:	
+milestone:	
+number:	9518
+--
+
+This article has a 'Note' section containing the text:
+
+
+`AppLocker is a defense-in-depth security feature and not a security boundary. Windows Defender Application Control should be used when the goal is to provide robust protection against a threat and there are expected to be no by-design limitations that would prevent the security feature from achieving this goal.`
+
+
+"not a security boundary" and "Windows Defender Application Control" are both hyperlinks out to the very helpful Microsoft defintion of a security boundary, but I think the intent may have been for that second link to provide the reader with a quick way to find further reading about WDAC, possibly via something like [this](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/wdac-and-applocker-overview)? 
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: ca31fd83-dd9b-e7c3-5b17-25b3ea501d90
+* Version Independent ID: 313c66c9-b59a-126d-bfc8-cfca1fe51803
+* Content: [AppLocker (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview)
+* Content Source: [windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview.md)
+* Product: **m365-security**
+* Technology: **mde**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

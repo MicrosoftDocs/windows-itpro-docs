@@ -1,0 +1,31 @@
+
+title:	Missing FIPS certificate #s for Windows Server 2022 and Windows 11
+state:	OPEN
+author:	scarson
+labels:	threat-protection, doc-idea
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10455
+--
+
+Latest Windows version covered is 10.
+Latest Windows Server version covered is 2019.
+
+We need the FIPS certificate numbers for Windows 11 and Windows Server 2022 for compliance documentation and audits.
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: e93f07bf-c0dd-dd83-d7bf-8562e7f197c3
+* Version Independent ID: a6c44187-8ff1-6519-5291-146b4c1bf46c
+* Content: [Federal Information Processing Standard (FIPS) 140 Validation - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/fips-140-validation#windows-server-2019-version-1809)
+* Content Source: [windows/security/threat-protection/fips-140-validation.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/fips-140-validation.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

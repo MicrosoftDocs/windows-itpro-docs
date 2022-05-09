@@ -1,0 +1,35 @@
+
+title:	Configure the Registration Authority Additional Information
+state:	OPEN
+author:	kklouzal
+labels:	hello-for-business, doc-idea
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10337
+--
+
+It absolutely needs to be noted that in Server 2019, the "Configure the Registration Authority" section calls to run the following powershell command:
+`Set-AdfsCertificateAuthority -EnrollmentAgent -EnrollmentAgentCertificateTemplate WHFBEnrollmentAgent -WindowsHelloCertificateTemplate WHFBAuthentication`
+Which WILL fail with the following error in a 100% on-prem configuration:
+![image](https://user-images.githubusercontent.com/2928845/152263038-8553956b-11e4-406b-8d20-c2fcbb649fe6.png)
+The ONLY workaround is to change the ADFS Authentication Methods to use 'Certificate Authentication' in the 'Primary' AND 'Additional' tab BEFORE running the aforementioned powershell command:
+![image](https://user-images.githubusercontent.com/2928845/152263148-419ab142-2038-442e-8443-96f6aab3876e.png)
+`Get-AdfsCertificateAuthority` can then be used to verify the options have been set appropriately:
+![image](https://user-images.githubusercontent.com/2928845/152263273-20cdc577-6dd0-4931-a17e-25c0f4309f03.png)
+
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: b063e00b-84e5-9da7-2229-e0e24da3b877
+* Version Independent ID: da9f4867-2aa3-aefa-1603-ddb2ab1ed624
+* Content: [Prepare and Deploy Windows AD FS certificate trust (Windows Hello for Business) - Windows security](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-cert-trust-adfs)
+* Content Source: [windows/security/identity-protection/hello-for-business/hello-cert-trust-adfs.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/hello-cert-trust-adfs.md)
+* Product: **m365-security**
+* GitHub Login: @mapalko
+* Microsoft Alias: **mapalko**

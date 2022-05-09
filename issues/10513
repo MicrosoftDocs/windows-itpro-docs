@@ -1,0 +1,68 @@
+
+title:	Dynamic lock (Windows Goodbye) information is missing. 
+state:	OPEN
+author:	ECartman
+labels:	doc-bug
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10513
+--
+Microsoft is not providing critical details about Dynamic lock. and thus, might be causing potential security concerns for our clients. 
+
+context: 
+Clients has call Windows support. with Concerns that Dynamic lock is not working consistently. 
+after a in depth review of this feature we conclude that the way the Dynamic lock works, is working as design. 
+however, we note that Microsoft has not provided clear statements on the limitations and the case use for this feature. 
+
+and using this feature as a security feature is misleading. granted. the document does not state this feature as a security feature(directly). but the section where this document resides plus the components that are interacted with contradicts that (Dynamic lock - Windows security) nor does its state that Dynamic lock is a feature for convenience. 
+
+we need to add disclaimers on the following aspects: 
+
+Limitations of Windows Dynamic lock: 
+
+[Dynamic lock] is not a security driven function. It should be considered as convenience. As such, it is important to point out that [Dynamic lock] will not ensure a security focus consistency. Rather as convenience for the user.
+
+Dynamic lock works within a Service where a loop keeps checking for “User Presence”, as per the document states. 
+but the article does not inform that Idle timers need also to be meet for the Dynamic lock to trigger (as "activity" is considered "Presence")
+
+and thus, users are required to be mindful that there is a window of opportunity for computers to be used, and being keep from locking, (the idle timer + the “User Presence” detection window (relative to the source)) 
+
+Dynamic lock not triggering problem: 
+[Dynamic lock] does not trigger, or does not have the desired behavior due activity is detected and reset the idle timer, examples:
+
+Hardware input.
+
+Keyboard strokes.
+
+Mouse button presses
+
+Mouse movement (can be inadvertent by mouse drifting (due position or hardware issues)
+
+Controllers (for example, Xbox Controller) inadvertent inputs might happen due to damaged components, hardware problems, even intentionally)
+
+Drivers might report constant input as nature of a setting (for example a "turbo o macro that simulates input" as those available on Gaming Hardware)
+
+Software Request, software can request or cause Windows to "reset" or "stop" the computer from going idle to ensure their activity execute uninterrupted, examples of those software are:
+     Video playback Software
+      Internet Browsers (in similar fashion as they might have video or other multimedia playback)
+      Conferencing Software
+
+Any software that calls the Function: [SetThreadExecutionState function (winbase.h) - Win32 apps | Microsoft Docs] (https://docs.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-setthreadexecutionstate?redirectedfrom=MSDN) as this will reset the system idle timer.
+
+
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 31b8df15-a1c0-99c7-4d5d-7c0e450b909a
+* Version Independent ID: 0eafe3aa-09fb-fd82-fd36-95e4b576f52c
+* Content: [Dynamic lock - Windows security](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-feature-dynamic-lock)
+* Content Source: [windows/security/identity-protection/hello-for-business/hello-feature-dynamic-lock.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/hello-feature-dynamic-lock.md)
+* Product: **m365-security**
+* GitHub Login: @Gitprakhar13
+* Microsoft Alias: **prsriva**

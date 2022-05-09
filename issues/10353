@@ -1,0 +1,28 @@
+
+title:	"10. Live Tiles" =! "18.5 Notifications"
+state:	OPEN
+author:	megaslowpoke
+labels:	privacy, doc-bug
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10353
+--
+Указание на политики и запись в реестре ошибочны в "10. Живые плитки", и копируют данные по реестру из "18.5 Уведомления". Также политика "Отключить уведомления на плитках" находится в "Конфигурация пользователя", а не компьютера.
+
+The en-us version has a similar error, but both entries are exactly the same, but in fact "10. Live Tiles" **=!** "18.5 Notifications"
+
+---
+#### Сведения о документе
+
+⚠ *Не вносите правки в этот раздел. Это необходимо для связывания страницы сайта docs.microsoft.com с вопросом на GitHub.*
+
+* ID: 9abd3113-b803-87b6-ef7f-6893bcc5ceb5
+* Version Independent ID: 6f7ca1ee-d19c-42bb-7db5-6158fc160e32
+* Content: [Управление подключениями к службам Майкрософт из компонентов операционной системы Windows 10 и Windows 11 - Windows Privacy](https://docs.microsoft.com/ru-ru/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services)
+* Content Source: [windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/master/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
+* Product: **m365-security**
+* Technology: **privacy**
+* GitHub Login: @TomLayson
+* Microsoft Alias: **tomlayson**

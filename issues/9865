@@ -1,0 +1,27 @@
+
+title:	Link to overview page links to cert trust instead of key trust
+state:	OPEN
+author:	lalders
+labels:	hello-for-business, doc-bug
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	9865
+--
+
+Link to overview page links to cert trust instead of key trust
+
+
+---
+#### Documentdetails
+
+⚠ *Dit gedeelte niet bewerken. Het is vereist om problemen te koppelen tussen docs.microsoft.com en GitHub.*
+
+* ID: b12b9b27-39c0-7520-21d0-3637546d8707
+* Version Independent ID: 7d44ad99-5021-504b-f026-24a50b2576e6
+* Content: [Configure Hybrid Azure AD joined Windows Hello for Business key trust Settings - Microsoft 365 Security](https://docs.microsoft.com/nl-nl/windows/security/identity-protection/hello-for-business/hello-hybrid-key-whfb-settings)
+* Content Source: [windows/security/identity-protection/hello-for-business/hello-hybrid-key-whfb-settings.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/hello-hybrid-key-whfb-settings.md)
+* Product: **w10**
+* GitHub Login: @mapalko
+* Microsoft Alias: **mapalko**

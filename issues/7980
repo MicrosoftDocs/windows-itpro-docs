@@ -1,0 +1,13 @@
+
+title:	Mac OS Risk Score
+state:	OPEN
+author:	shashankg10
+labels:	question, defender for endpoint
+comments:	2
+assignees:	e0i
+projects:	
+milestone:	
+number:	7980
+--
+I have on-boarded Mac OS, machines its been more than a week, the device risk score is none and the exposure score is also none. Is this okay ? I belive it should report the risk level on the machine atleast.
+![image](https://user-images.githubusercontent.com/66464126/88784046-27370800-d1c2-11ea-85a8-955692c2fd2f.png)

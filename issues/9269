@@ -1,0 +1,27 @@
+
+title:	Add SHA256 hash
+state:	OPEN
+author:	trudolf-msft
+labels:	threat-protection, Microsoft submitter, doc-bug
+comments:	6
+assignees:	Dansimp, nam31
+projects:	
+milestone:	
+number:	9269
+--
+Please add SHA256 hashes to this page.
+Security aware customer need this to fulfil national requirements (clean source principal).
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: f5bb1ce3-9128-5385-4417-d22eb5f8cb77
+* Version Independent ID: cb6ba731-a2c2-e9b9-7c3e-db781b1b5222
+* Content: [Microsoft Safety Scanner Download - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/intelligence/safety-scanner-download)
+* Content Source: [windows/security/threat-protection/intelligence/safety-scanner-download.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/intelligence/safety-scanner-download.md)
+* Product: **m365-security**
+* Technology: **mde**
+* GitHub Login: @levinec
+* Microsoft Alias: **ellevin**

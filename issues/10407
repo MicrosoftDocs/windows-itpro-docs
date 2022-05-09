@@ -1,0 +1,28 @@
+
+title:	Needs info on subscription upgrades to Windows Business (via M365 Business Premium)
+state:	OPEN
+author:	unearthnz
+labels:	deployment, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10407
+--
+
+Hi team, this page on subscription upgrades to Windows only covers upgrades to Windows Enterprise via M365 enterprise licenses (ie E3/E5) - however upgrade to Windows Business via M365 Business licenses (ie M365 Business Premium) is also possible too. Can we add that info to this page, or make it obvious this page only relates to the enterprise licensing and create a similar page for the Business subscription upgrades? Cheers!
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 6443e532-640d-81c0-8215-b711bd1977d4
+* Version Independent ID: fc504984-91d7-b586-04ec-4c751fb48998
+* Content: [Windows 10/11 Subscription Activation - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/windows-10-subscription-activation)
+* Content Source: [windows/deployment/windows-10-subscription-activation.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/windows-10-subscription-activation.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @greg-lindsay
+* Microsoft Alias: **greglin**

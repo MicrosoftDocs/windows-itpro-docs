@@ -1,0 +1,35 @@
+
+title:	Applies to Server 2012 R2 too
+state:	OPEN
+author:	SpitFire-666
+labels:	application control, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10372
+--
+(minor feedback)
+
+"Applies to
+
+Windows 10
+Windows 11
+Windows Server 2016 and above"
+
+Also works for Server 2012 R2 - steps and results are identical.
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 47368267-c017-65b6-cabd-2877f0a61511
+* Version Independent ID: 178ba95c-a396-fd72-d06f-1e434c8a58cc
+* Content: [Import an AppLocker policy from another computer (Windows) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/import-an-applocker-policy-from-another-computer)
+* Content Source: [windows/security/threat-protection/windows-defender-application-control/applocker/import-an-applocker-policy-from-another-computer.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/windows-defender-application-control/applocker/import-an-applocker-policy-from-another-computer.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

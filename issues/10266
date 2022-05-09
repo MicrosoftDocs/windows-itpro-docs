@@ -1,0 +1,14 @@
+
+title:	Olympia.windows.com link does not work
+state:	OPEN
+author:	mapalko
+labels:	Microsoft submitter, doc-idea
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	10266
+--
+https://github.com/MicrosoftDocs/windows-itpro-docs/blob/497c6d7ae578004a565841fa6b35392f7f0cb333/windows/deployment/update/olympia/olympia-enrollment-guidelines.md?plain=1#L34
+
+The link "see https://olympia.windows.com/Info/FAQ." directs the user to a 403 web app has stopped error page.

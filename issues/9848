@@ -1,0 +1,28 @@
+
+title:	More detail needed
+state:	OPEN
+author:	ianc911
+labels:	policy settings, threat-protection, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	9848
+--
+This article provides details about what GP setting to make to enable various levels of auditingcceptance for NTLM auth, but makes no recommendation about specifically where the policy should be applied. Should it be applied only against DC's in the default DC policy? Against all domain computers? More information is needed to effectively deploy this security measure.
+[Enter feedback here]
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: f343712d-894d-1cbe-793a-00c2c7a6a5a2
+* Version Independent ID: 34ff1caf-163c-38a6-7ff4-3fa9c520dd0f
+* Content: [Network security Restrict NTLM in this domain (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/network-security-restrict-ntlm-ntlm-authentication-in-this-domain)
+* Content Source: [windows/security/threat-protection/security-policy-settings/network-security-restrict-ntlm-ntlm-authentication-in-this-domain.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/security-policy-settings/network-security-restrict-ntlm-ntlm-authentication-in-this-domain.md)
+* Product: **m365-security**
+* Technology: **mde**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

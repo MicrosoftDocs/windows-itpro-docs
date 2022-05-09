@@ -1,0 +1,31 @@
+
+title:	Password Max Length Guidance is No Longer Sufficient
+state:	OPEN
+author:	DenkertM
+labels:	policy settings, threat-protection, doc-bug
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10390
+--
+
+As of March 2022, this page no longer meets the guidlines of NIST SP 800-62 Paragraph 5.1.1.2. 
+
+This guidance states "Verifiers SHALL require subscriber-chosen memorized secrets to be at least 8 characters in length. Verifiers SHOULD permit subscriber-chosen memorized secrets at least 64 characters in length."
+
+It is recommended that the guidance from Microsoft is updated to reflect the NIST guidance.
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 9bcaf30b-7304-6874-ba5d-791cc4d435d2
+* Version Independent ID: 961def9f-094a-3d1e-82a4-bb152c2e5a1e
+* Content: [Minimum password length (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/minimum-password-length)
+* Content Source: [windows/security/threat-protection/security-policy-settings/minimum-password-length.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/security-policy-settings/minimum-password-length.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

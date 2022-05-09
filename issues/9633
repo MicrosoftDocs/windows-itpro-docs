@@ -1,0 +1,34 @@
+
+title:	Confusing instructions
+state:	OPEN
+author:	DeanGross
+labels:	mdm, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	9633
+--
+The instructions state that joining during the OOBE is not supported, and then the next sentence states how to do it. This is confusing. Please reword.
+
+Given that these are not for an IT pro, these instructions makes some assumptions that may not be accurate about the level of knowledge possessed by the device owner. For example, many people don't know the difference between AD and AAD nor why they would/should join to either one. It would be more helpful and clear if these were scenario based, something like if you have x and need to do y, then do z. Most people just want to get connected, make it as simple as possible. 
+
+There are too many options on this page, it would be better if there were some scenarios listed at the top of the page with each scenario on a separate page.
+
+Many people don't know what deep links are, this needs to be explained. 
+
+Imagine your mom or dad just got hired and was told to go to the store to get any computer and then follow these instructions. They are the audience :) 
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 39ae2ccd-9f3f-dcb5-3a20-46b1b4fd3d53
+* Version Independent ID: b381c208-94b1-2d22-ef16-a57c138a7d72
+* Content: [MDM enrollment of Windows 10-based devices - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-your-windows-10-based-device-to-work-using-a-deep-link)
+* Content Source: [windows/client-management/mdm/mdm-enrollment-of-windows-devices.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/mdm-enrollment-of-windows-devices.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

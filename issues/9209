@@ -1,0 +1,28 @@
+
+title:	Citation for legal precedent - Interactive Logon Message text
+state:	OPEN
+author:	davwheat
+labels:	question, policy settings, threat-protection
+comments:	7
+assignees:	Dansimp, nam31
+projects:	
+milestone:	
+number:	9209
+--
+> Legal precedents have established that organizations that display warnings to users who connect to their servers over a network have a higher rate of successfully prosecuting trespassers.
+
+Are there any citations available for this claim? I feel like putting this in documentation without any real proof isn't a great idea.
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 8897b50b-10e9-5d0b-6150-c1834a296a20
+* Version Independent ID: bed1c6d9-91c3-02f2-12c9-58229886118a
+* Content: [Interactive Logon Message text (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/interactive-logon-message-text-for-users-attempting-to-log-on)
+* Content Source: [windows/security/threat-protection/security-policy-settings/interactive-logon-message-text-for-users-attempting-to-log-on.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/security-policy-settings/interactive-logon-message-text-for-users-attempting-to-log-on.md)
+* Product: **m365-security**
+* Technology: **mde**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

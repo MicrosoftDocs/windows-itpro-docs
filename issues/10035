@@ -1,0 +1,36 @@
+
+title:	Enterprise Read-only Domain Controllers should be documented as a Special Identity based on its behavior
+state:	OPEN
+author:	cnotin
+labels:	identity protection, doc-bug
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10035
+--
+The "Enterprise Read-only Domain Controllers" looks similar to "Enterprise Domain Controllers", which is documented as a Special Identity in this page.
+
+Contrary to other special identities, "Enterprise Read-only Domain Controllers" exist as an AD group in the "Users" container and we can see its member. However, even when RODC are present in the forest it stays empty:
+![image](https://user-images.githubusercontent.com/550823/137289300-f3420e64-9eb5-45e7-9936-19f8ec479c04.png)
+
+
+But, when a security token is created for an RODC, it automatically contains "Enterprise Read-only Domain Controllers":
+![image](https://user-images.githubusercontent.com/550823/137289373-c3044148-b114-4c25-8681-4c28ca8c34e4.png)
+
+So it isn't really like other special identities, but it behaves like one.
+Shouldn't it be documented in this special identities page?
+Another option would be to describe this in https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-security-groups with the same "Membership is controlled by the operating system" sentence.
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 486e8a12-8230-6ae2-264f-73c76b266682
+* Version Independent ID: 2f47f94f-b416-beac-c75d-8908e4000e66
+* Content: [Special Identities (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/special-identities#feedback)
+* Content Source: [windows/security/identity-protection/access-control/special-identities.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/access-control/special-identities.md)
+* Product: **w10**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

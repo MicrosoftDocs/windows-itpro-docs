@@ -1,0 +1,35 @@
+
+title:	Update the page with the new Update Compliance records
+state:	OPEN
+author:	PanuSaukko
+labels:	deployment, writer-input-required, doc-idea
+comments:	5
+assignees:	e0i
+projects:	
+milestone:	
+number:	10082
+--
+Hi,
+
+There are a bunch of new Update Compliance records:
+- UCClient
+- UCClientReadinessStatus
+- UCClientUpdateStatus
+- UCDeviceAlerts
+
+Please update the page to contain information about those new records.
+
+Panu
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 9d810dfe-ae87-176c-b3f8-7e6643fc9fab
+* Version Independent ID: ebe32236-716e-8224-8a2e-54d940ea3b9e
+* Content: [Update Compliance Data Schema - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/update/update-compliance-schema)
+* Content Source: [windows/deployment/update/update-compliance-schema.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/update/update-compliance-schema.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @jaimeo
+* Microsoft Alias: **jaimeo**

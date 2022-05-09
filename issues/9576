@@ -1,0 +1,29 @@
+
+title:	Seperate out intune vs Store for business
+state:	OPEN
+author:	Minkus32
+labels:	deployment, doc-idea
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	9576
+--
+
+[Enter feedback here]
+Its really confusing in that document when you keep both the intune and store for business configuration stuff together.
+Can you move the Store for Business sections in their their own document as its entirely unnecessary to try and scrool through or skip sections that din't apply to a purely intune deployment.
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: bcc63299-cc1c-e031-deb7-915914b8f94e
+* Version Independent ID: 356eaba5-16b0-952f-fc19-c8d5be5feb5f
+* Content: [Demonstrate Autopilot deployment - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/demonstrate-deployment-on-vm)
+* Content Source: [windows/deployment/windows-autopilot/demonstrate-deployment-on-vm.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/windows-autopilot/demonstrate-deployment-on-vm.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @greg-lindsay
+* Microsoft Alias: **greglin**

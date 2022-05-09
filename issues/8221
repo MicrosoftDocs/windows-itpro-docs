@@ -1,0 +1,33 @@
+
+title:	confusing description about AADJ certificate trust deployment
+state:	OPEN
+author:	SeanXuMSFT
+labels:	hello-for-business, doc-enhancement
+comments:	5
+assignees:	e0i
+projects:	
+milestone:	
+number:	8221
+--
+
+[Enter feedback here]
+hi,
+the page indicate if we want to deploy cert trust for AAD join device, we need to "**[read and follow Configure Azure AD joined devices for On-premises Single-Sign On using Windows Hello for Business](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base)** and then Using Certificates for AADJ On-premises Single-sign On."
+
+however, the first link is mainly about key trust for AAD join device, which contains the steps to publish KDC cert CDP to internet, which is not required for cert trust, which make customer confused. 
+
+please help to review this part and make change accordingly. thanks.
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 7aeacc06-dbfc-07d8-d181-41d08d89e04b
+* Version Independent ID: 6f16be7a-f5b1-fbad-15a2-18a2bc1a0716
+* Content: [Azure AD Join Single Sign-on Deployment - Microsoft 365 Security](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso)
+* Content Source: [windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @mapalko
+* Microsoft Alias: **mapalko**

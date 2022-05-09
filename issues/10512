@@ -1,0 +1,36 @@
+
+title:	Interactive logon Do not require CTRL+ALT+DEL - policy definitions should be explained in documentation
+state:	OPEN
+author:	PaulieShore
+labels:	policy settings, threat-protection, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10512
+--
+The documentation should be updated to reflect what happens when this policy is Defined and then Undefined. Regardless of whether this policy is Enabled or Disabled, defining this Policy appears to create the Registry value "DisableCAD" in "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System". This value does not appear to exist on any domain-joined machines where this policy has never been defined. However, if this policy is defined and then not defined, the Registry item remains on the client machines with the value of 0 regardless of the previous state. This is very problematic. 
+
+For example, if the policy was defined and set to "Enable" and then later Undefined, the registry value of "DisableCAD" appears to revert to 0. At this point there is a requirement to use CTRL+ALT+DEL to login even though the policy is "Undefined" (unchecked). This was not the configuration before Undefining the policy, nor is it the default behavior of Windows 10. 
+
+This is very confusing because if the Policy was never defined, there is NO requirement to use CTRL+ALT+DEL to logon. The registry value "DisableCAD does not exist. However once the policy is defined, it must always be either "Enabled" or "Disabled". Otherwise the registry value of the machine will revert to "0" and the requirement for CTRL+ALT+DEL is enabled. 
+
+The reason for this is to help avoid Systems Administrators from enabling this policy and then experiencing unintended consequences when the policy is removed (Undefined). We never used this policy. It become Defined and set to "Enabled". This alone made no changes since we never had the requirement for end-users to use CTRL+ALT+DEL to login. However the policy was then removed as it's technically not required. At this point machines now prompts for end-users to use CTRL+ALT+DEL to login. This was not the desired outcome. 
+
+![image](https://user-images.githubusercontent.com/1333865/166691572-963a8559-f749-4a87-bbe6-e05067b15a49.png)
+
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 37a73a55-d78f-64cc-4764-51f3e0a87d4c
+* Version Independent ID: 68ee2547-18a5-ad1c-725d-c2a8960c7f54
+* Content: [Interactive logon Do not require CTRL+ALT+DEL (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/interactive-logon-do-not-require-ctrl-alt-del)
+* Content Source: [windows/security/threat-protection/security-policy-settings/interactive-logon-do-not-require-ctrl-alt-del.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/security-policy-settings/interactive-logon-do-not-require-ctrl-alt-del.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

@@ -1,0 +1,27 @@
+
+title:	Documentation on SEMM enroll is incomplete
+state:	OPEN
+author:	tbross319
+labels:	devices, in progress, doc-idea
+comments:	0
+assignees:	e0i, joinimran
+projects:	
+milestone:	
+number:	6536
+--
+We should amend the final section of the documentation to walk through SEMM enrollment.  Once you boot to UEFI (screenshot) Navigate to Management Tab (screenshot) Click on Install from USB (screenshot) and then [Unsure if middle step] and then enter the thumbprint (screenshot).
+
+@greg-lindsay  @y0avb 
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 9ada9bc1-7022-ddda-5237-a0829084a140
+* Version Independent ID: e35bbaab-6c60-57e8-9829-9862324c4289
+* Content: [Secure and manage Surface Hub 2S with SEMM - Surface Hub](https://docs.microsoft.com/en-us/surface-hub/surface-hub-2s-secure-with-uefi-semm#feedback)
+* Content Source: [devices/surface-hub/surface-hub-2s-secure-with-uefi-semm.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/devices/surface-hub/surface-hub-2s-secure-with-uefi-semm.md)
+* Product: **surface-hub**
+* Technology: **windows**
+* GitHub Login: @greg-lindsay
+* Microsoft Alias: **greglin**

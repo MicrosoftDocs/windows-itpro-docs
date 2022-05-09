@@ -1,0 +1,28 @@
+
+title:	Windows 7 in 2021 as an example???
+state:	OPEN
+author:	woodsonja
+labels:	question, deployment
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10238
+--
+Why is Windows 7 still being used as an example when it's no longer supported?
+
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 7ab08370-69ab-d025-cea2-c41c3aa4b908
+* Version Independent ID: 9f5603f8-10e6-2651-3120-6d5627217cc9
+* Content: [Prepare for deployment with MDT (Windows 10) - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt)
+* Content Source: [windows/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @greg-lindsay
+* Microsoft Alias: **greglin**

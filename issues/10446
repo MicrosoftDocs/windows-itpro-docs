@@ -1,0 +1,28 @@
+
+title:	XML Snippet Examples for CSP Documentation
+state:	OPEN
+author:	jeremycolby
+labels:	client management, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10446
+--
+
+Basic XML snippet example for creating a new account would be very helpful. Noticed a lot of the CSP documentation missing examples and end up googling
+Cheers
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 309bae29-c769-5051-6c3f-aebeb455cd34
+* Version Independent ID: bbdfad82-025e-8aee-b3fc-bcfb8b110674
+* Content: [Accounts CSP - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/accounts-csp)
+* Content Source: [windows/client-management/mdm/accounts-csp.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/accounts-csp.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

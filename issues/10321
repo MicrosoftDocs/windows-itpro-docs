@@ -1,0 +1,45 @@
+
+title:	Detail the links between DeviceEvents AppControl actiontype events and eventviewer
+state:	OPEN
+author:	kimoppalfens
+labels:	application control, doc-enhancement
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	10321
+--
+Hi,
+
+This page could use more actionable information. I am trying to understand what is being registered in DeviceEvents under actiontype AppControl*. 
+
+It appears to contain items from the Microsoft-Windows-AppLocker/EXE and DLL and Microsoft-Windows-CodeIntegrity/Operational logs, but that doesn't appear to be all of it.
+
+Secondly, I find it hard to figure out which time in the DeviceEvents table relates to the time the event was created in EventViewer.
+There's several different times in the DeviceEvents table:
+
+- TimeStamp (I believe this is the time the data was added to Defender for Endpoint)
+- ProcessCreationTime
+- InitiatingProcessCreationTime
+- InitiatingProcessParentCreationTime
+
+It seems the actual timestamp of the eventlog entry is not available.
+
+I find it quite hard to work with the data around appcontrol data in Defender for Endpoint. There's equally zero information posted by anyone using this on the entire internet.
+
+
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 1a868903-95b1-288c-72d2-be936171044a
+* Version Independent ID: 1456cb15-b4ec-2c0d-958e-340766c27788
+* Content: [Query Application Control events with Advanced Hunting (Windows) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/querying-application-control-events-centrally-using-advanced-hunting)
+* Content Source: [windows/security/threat-protection/windows-defender-application-control/querying-application-control-events-centrally-using-advanced-hunting.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/windows-defender-application-control/querying-application-control-events-centrally-using-advanced-hunting.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @jsuther1974
+* Microsoft Alias: **dansimp**

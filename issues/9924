@@ -1,0 +1,27 @@
+
+title:	Invalid markup in WHFB PKI config docs
+state:	OPEN
+author:	alexrsagen
+labels:	hello-for-business, doc-bug
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	9924
+--
+There seems to be an error with the formatting of this document.
+
+The last "Note" on the page appears to contain what is possibly an incomplete command, in addition to the next section heading "Publish Certificate Templates to a Certificate Authority".
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 800b8090-65a9-da9f-a930-1f80dc9f2c2d
+* Version Independent ID: b4495b6a-4ca5-7aa1-7964-ef6e19275c4e
+* Content: [Configure Hybrid Azure AD joined key trust Windows Hello for Business - Microsoft 365 Security](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-key-whfb-settings-pki)
+* Content Source: [windows/security/identity-protection/hello-for-business/hello-hybrid-key-whfb-settings-pki.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/hello-hybrid-key-whfb-settings-pki.md)
+* Product: **w10**
+* GitHub Login: @mapalko
+* Microsoft Alias: **mapalko**

@@ -1,0 +1,29 @@
+
+title:	WHFB On-Prem MFA Requirement Clarification
+state:	OPEN
+author:	kklouzal
+labels:	hello-for-business, doc-idea
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10336
+--
+
+It needs to be clearly noted that Windows Hello For Business Multi-Factor Authentication requirement can be fulfilled by using ADFS Certificate Authentication. It is very misleading for users attempting to grasp this complicated implementation when the docs do not have all the available information present. This is especially true for those of us attempting a 100% on-prem configuration and being pushed towards Azure MFA.
+![image](https://user-images.githubusercontent.com/2928845/152260389-cae95c19-5744-4dbb-84fd-4aaec97f2598.png)
+
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 145edd19-d1ef-2724-94d4-779561580a0e
+* Version Independent ID: 19035969-fd7a-714f-bd13-7172e745013c
+* Content: [Validate and Deploy MFA for Windows Hello for Business with certificate trust - Windows security](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-cert-trust-validate-deploy-mfa)
+* Content Source: [windows/security/identity-protection/hello-for-business/hello-cert-trust-validate-deploy-mfa.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/hello-cert-trust-validate-deploy-mfa.md)
+* Product: **m365-security**
+* GitHub Login: @mapalko
+* Microsoft Alias: **mapalko**

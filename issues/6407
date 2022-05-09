@@ -1,0 +1,12 @@
+
+title:	Update telemetry designations
+state:	OPEN
+author:	cinglis-msft
+labels:	question, Microsoft submitter
+comments:	4
+assignees:	e0i, Dansimp
+projects:	
+milestone:	
+number:	6407
+--
+Will this article be updated to reflect the new telemetry level designations described in the Help article [Diagnostics Feedback and Privacy in Windows 10](https://support.microsoft.com/help/4468236/diagnostics-feedback-and-privacy-in-windows-10-microsoft-privacy)?

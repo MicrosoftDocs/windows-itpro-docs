@@ -1,0 +1,34 @@
+
+title:	Hybrid Join - PIN reset without corpnet access
+state:	OPEN
+author:	Wh00T
+labels:	hello-for-business, doc-enhancement
+comments:	2
+assignees:	e0i, VLG17
+projects:	
+milestone:	
+number:	10021
+--
+FAQ states:
+"Hybrid customers can on-board their Azure tenant to use the Windows Hello for Business PIN reset service to reset their PINs without access to their corporate network."
+In an internal discussion this statement was denied:
+"On-prem connectivity is needed for Hybrid joined PCs"
+
+There is other public documentation stating that DC connectivity is required:
+"For hybrid Azure AD joined devices, users must have corporate network connectivity to domain controllers to reset their PIN."
+https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-feature-pin-reset#using-pin-reset
+
+I tried to get it running in a lab but as soon as my DC is unavailable, PIN reset fails (error code: 0x80090033). Can you please verify this statement or remove it?
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 82ecd7ea-0ecb-cf7b-a1ab-9cda97e5cc0a
+* Version Independent ID: 81acb0ad-2d46-bd0b-abb5-7c2e851d7a71
+* Content: [Windows Hello for Business Frequently Asked Questions (FAQ) - Windows security](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-faq#feedback)
+* Content Source: [windows/security/identity-protection/hello-for-business/hello-faq.yml](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/hello-faq.yml)
+* Product: **w10**
+* GitHub Login: @mapalko
+* Microsoft Alias: **mapalko**

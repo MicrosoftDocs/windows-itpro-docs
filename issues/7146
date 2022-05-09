@@ -1,0 +1,35 @@
+
+title:	Duplicate Entry?
+state:	OPEN
+author:	Kirtar22
+labels:	identity protection, doc-idea
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	7146
+--
+
+[Enter feedback here]
+Hi team, 
+
+Can you please verify "Policy Name" in Step 1 and Step 2 (in TABLE) under "Enforce local account restrictions for remote access" ?
+Looks duplicate. 
+
+Regards,
+
+Kirtar
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 74d32ee6-c7ff-9328-97d6-40ad82c73392
+* Version Independent ID: 01f10cbb-4cae-077f-8245-7b0ada8305d7
+* Content: [Local Accounts (Windows 10) - Microsoft 365 Security](https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/local-accounts)
+* Content Source: [windows/security/identity-protection/access-control/local-accounts.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/access-control/local-accounts.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @DulceMontemayor
+* Microsoft Alias: **dansimp**

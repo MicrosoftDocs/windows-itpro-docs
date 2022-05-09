@@ -1,0 +1,32 @@
+
+title:	Move "Capture the hardware ID" to after system reset
+state:	OPEN
+author:	MPTechWork
+labels:	deployment, doc-enhancement
+comments:	0
+assignees:	e0i, joinimran
+projects:	
+milestone:	
+number:	9986
+--
+
+[Please move the "Capture the hardware ID" to after doing the system reset, the system reset onb a hyper-V VM appears to change the hardware hash but not the seral number (see attached)]
+
+![image](https://user-images.githubusercontent.com/48975414/135192996-1eabeb80-7e61-45f7-bda0-9d21c373469f.png)
+
+![image](https://user-images.githubusercontent.com/48975414/135193037-0295d06f-5686-45b8-a731-3c549c43880a.png)
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: bcc63299-cc1c-e031-deb7-915914b8f94e
+* Version Independent ID: 356eaba5-16b0-952f-fc19-c8d5be5feb5f
+* Content: [Demonstrate Autopilot deployment - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/demonstrate-deployment-on-vm#verify-support-for-hyper-v)
+* Content Source: [windows/deployment/windows-autopilot/demonstrate-deployment-on-vm.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/windows-autopilot/demonstrate-deployment-on-vm.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @greg-lindsay
+* Microsoft Alias: **greglin**

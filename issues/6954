@@ -1,0 +1,33 @@
+
+title:	Please clarify the Failed Status Values
+state:	OPEN
+author:	PriyaKOMA
+labels:	mdm, in progress, doc-enhancement
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	6954
+--
+
+[Enter feedback here]
+FailedUpdates/Failed Update Guid/Status
+
+Specifies the failed update status (for example, download, install).
+
+Supported operation is Get.
+The above status on querying gives 0,8 etc. Can you mention how these values map to install, download etc and the other possible values  
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 85da8b6b-3138-1fe8-15b6-e3ab96c12efb
+* Version Independent ID: 236d9dbb-f05e-b3fd-ee43-c2081b4f4300
+* Content: [Update CSP - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/update-csp)
+* Content Source: [windows/client-management/mdm/update-csp.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/update-csp.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @ManikaDhiman
+* Microsoft Alias: **dansimp**

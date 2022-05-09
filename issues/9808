@@ -1,0 +1,25 @@
+
+title:	Add Description of Illegal Password Characters
+state:	OPEN
+author:	Jitsusama
+labels:	policy settings, threat-protection, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	9808
+--
+It would be quite useful to have a description of what characters are invalid for a password, either on this page, or some other page (this is the closest page I could find.) This is particularly useful when wanting to protect AD authentication attempts on a front end system by outright blocking AD authentication if the provided password has an illegal character in it.
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: b5128d9a-e02a-df9b-24cc-32711ad37b54
+* Version Independent ID: fecafb19-6b37-1f2e-ba3d-5e0bf0d49d09
+* Content: [Password must meet complexity requirements (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/password-must-meet-complexity-requirements)
+* Content Source: [windows/security/threat-protection/security-policy-settings/password-must-meet-complexity-requirements.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/security-policy-settings/password-must-meet-complexity-requirements.md)
+* Product: **m365-security**
+* Technology: **mde**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

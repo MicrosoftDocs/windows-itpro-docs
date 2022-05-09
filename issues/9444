@@ -1,0 +1,42 @@
+
+title:	"Smartcard feature (including user certificate)" is missing in "Windows Hello for Business features" section
+state:	OPEN
+author:	identityiskey
+labels:	hello-for-business, doc-idea
+comments:	0
+assignees:	e0i, joinimran
+projects:	
+milestone:	
+number:	9444
+--
+
+[Enter feedback here]
+Not for this page but for the "Windows Hello for Business features" (1 level up)
+
+a) I miss the "Smartcard feature" enabled with Windows Certificate Trust described here:
+- It should stated that Windows Hello could be used for Smartcard purposes (= User ceritficate). Please describe the features that it can be used for:
+- Authentication against IIS Websites?
+- Authentication for RDP
+- Signing Office Documents (works we tested that - you can sign Word documents with hello Smartcard certificate)
+- Signing PDFs?
+- CodeSigning (including CodeSign EKU in Windows Hello Certificate Template on PKI)?
+- E-Mail Signing S/MIME (including e-mail protection EKU in Windows Hello Certificate Template on PKI)?
+ 
+b)The GPO setting for Windows Hello : "Use Windows Hello for Business as smart card certificates" should be describe
+-> As far as I understand this GPO allows the smartcard unlock just with the Windows Hello Sign-In and does not have the need to always unlock with fingprint / PIN during sign-in session. This needs to be clarified why and where this should be used. Examples needed.
+
+
+Be
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 4e456736-63a3-672a-814f-047cc66f0f98
+* Version Independent ID: 80cd84e4-6ea5-c707-f362-98fd507fcbfa
+* Content: [Remote Desktop - Microsoft 365 Security](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-feature-remote-desktop)
+* Content Source: [windows/security/identity-protection/hello-for-business/hello-feature-remote-desktop.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/hello-feature-remote-desktop.md)
+* Product: **w10**
+* GitHub Login: @mapalko
+* Microsoft Alias: **mapalko**

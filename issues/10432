@@ -1,0 +1,35 @@
+
+title:	Capture does not work for windows 10 21h2
+state:	OPEN
+author:	somescout
+labels:	deployment, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10432
+--
+Looks like step "Apply Windows PE (BCD)" does not work after sysprep - VM restarts to current system without booting WinPE (Hyper-V VM hosted by Windows Server 2016)
+
+As workaround I extracted from LTISysprep script to commit pending renames, and put them in following way:
+1. Commit pending renames
+2. Apply Windows PE (BCD)
+3. Sysprep
+
+This way OS being captured correctly.
+
+But it would be nice to have supported solution.
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: e0eb8c97-caa0-bb05-4b91-14ad2adc4aac
+* Version Independent ID: 0cc541a3-8198-c029-d795-308e673ee2f4
+* Content: [Create a Windows 10 reference image (Windows 10) - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image)
+* Content Source: [windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @greg-lindsay
+* Microsoft Alias: **greglin**

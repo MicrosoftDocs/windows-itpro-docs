@@ -1,0 +1,29 @@
+
+title:	unknown abbreviation
+state:	OPEN
+author:	vkleinerde
+labels:	application guard, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	9812
+--
+Original text:
+Yes, both the Enterprise Resource domains that are hosted in the cloud and the domains that are categorized as both work and personal have a 16383-B limit.
+
+What does the -B mean exact (Bit, Byte)?
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: f9c07cd4-de43-6ac5-075c-2b93fa0efb66
+* Version Independent ID: 66a4adf9-e97a-1114-bb22-e24d5c661e14
+* Content: [FAQ - Microsoft Defender Application Guard (Windows 10) - Microsoft 365 Security](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard)
+* Content Source: [windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard.yml](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard.yml)
+* Product: **m365-security**
+* Technology: **mde**
+* GitHub Login: @denisebmsft
+* Microsoft Alias: **deniseb**

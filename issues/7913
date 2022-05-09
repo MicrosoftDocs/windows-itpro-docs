@@ -1,0 +1,28 @@
+
+title:	Inactive devices and retention policy
+state:	OPEN
+author:	mattsmacblog
+labels:	defender for endpoint, product-question
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	7913
+--
+Can you elaborate on what happens to inactive devices after the retention policy period?
+
+i.e Would a Laptop sitting in a cupboard go inactive after 7 days, and if the retention policy was 90 days on day 91 it would disappear from the Portal?  What happens on day 92 if someone powers up the laptop?  Does it need to be on-boarded again? or will it come back by itself?
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: f5e07681-222a-ca3c-20f3-c98dabd935fa
+* Version Independent ID: 6a9262d1-911f-bd4b-5366-7e6a0e31ca13
+* Content: [Fix unhealthy sensors in Microsoft Defender ATP - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/fix-unhealthy-sensors)
+* Content Source: [windows/security/threat-protection/microsoft-defender-atp/fix-unhealthy-sensors.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/microsoft-defender-atp/fix-unhealthy-sensors.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @mjcaparas
+* Microsoft Alias: **macapara**

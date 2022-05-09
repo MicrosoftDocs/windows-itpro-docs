@@ -1,0 +1,27 @@
+
+title:	FIDO2 key requirements incomplete
+state:	OPEN
+author:	maweeras-msft
+labels:	hello-for-business, Microsoft submitter, doc-bug
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	9757
+--
+
+https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-passwordless#fido2-security-keys is more comprehensive in its requirements and with references to CTAP. This document as is conflicts with the other and implies lesser requirements.
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: aacf4c87-5c77-1d03-0c60-bc608fabe2f8
+* Version Independent ID: 70d65968-6f5e-8013-0b0b-6d5d660969e0
+* Content: [Microsoft-compatible security key - Microsoft 365 Security](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/microsoft-compatible-security-key)
+* Content Source: [windows/security/identity-protection/hello-for-business/microsoft-compatible-security-key.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/microsoft-compatible-security-key.md)
+* Product: **w10**
+* GitHub Login: @mapalko
+* Microsoft Alias: **mapalko**

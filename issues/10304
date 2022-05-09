@@ -1,0 +1,35 @@
+
+title:	Unable to get TimeLanguageSettings/BlockCleanupOfUnusedPreinstalledLangPacks to work
+state:	OPEN
+author:	boivinx7
+labels:	client management, product-feedback
+comments:	2
+assignees:	e0i
+projects:	
+milestone:	
+number:	10304
+--
+
+Is its still an active existing config, seems to not exist anywhere but this doc.
+Its not in intune Settings Catalog or ADMX, its not in Configuration Designer and it wont work.
+
+./Vendor/MSFT/Policy/Config/TimeLanguageSettings/BlockCleanupOfUnusedPreinstalledLangPacks
+
+![image](https://user-images.githubusercontent.com/30272385/150366217-2580f7df-3b3c-4721-a1b8-d770234a3805.png)
+
+![image](https://user-images.githubusercontent.com/30272385/150366989-5bf17182-3d8a-4b6a-a421-905ef59edae6.png)
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 86ff0ddd-37e5-2f87-920c-f83b07d4ebb1
+* Version Independent ID: ca02de5e-14cb-5f64-b7e4-9b5fe738029f
+* Content: [Policy CSP - TimeLanguageSettings - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-blockcleanupofunusedpreinstalledlangpacks)
+* Content Source: [windows/client-management/mdm/policy-csp-timelanguagesettings.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/policy-csp-timelanguagesettings.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

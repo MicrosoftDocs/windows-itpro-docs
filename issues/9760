@@ -1,0 +1,31 @@
+
+title:	Abilitare Windows Defender Credential Guard con Criteri di gruppo
+state:	OPEN
+author:	alessandrozangarelli
+labels:	credential guard, doc-bug
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	9760
+--
+Modificare il percorso per raggiungere il criterio in Windows 10 21H1
+
+Configurazione Computer → Modelli Amministrativi → Sistema → Device Guard:
+
+Attiva sicurezza basata su virtualizzazione
+
+https://docs.microsoft.com/it-it/windows/security/identity-protection/credential-guard/credential-guard-manage#enable-windows-defender-credential-guard
+
+---
+#### Dettagli del documento
+
+⚠ *Non modificare questa sezione. È necessaria per i collegamenti relativi ai problemi tra docs.microsoft.com ➟ GitHub.*
+
+* ID: 41c2cb44-269d-3334-019a-726eb5432f1c
+* Version Independent ID: 251024cc-b818-18c6-a112-4ac0276cb4b1
+* Content: [Gestire Windows Defender Credential Guard (Windows 10) - Microsoft 365 Security](https://docs.microsoft.com/it-it/windows/security/identity-protection/credential-guard/credential-guard-manage?source=docs#enable-windows-defender-credential-guard-by-using-group-policy)
+* Content Source: [windows/security/identity-protection/credential-guard/credential-guard-manage.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/master/windows/security/identity-protection/credential-guard/credential-guard-manage.md)
+* Product: **w10**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **v-tea**

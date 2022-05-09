@@ -1,0 +1,31 @@
+
+title:	Code 0x801c0451 is missing.
+state:	OPEN
+author:	ArnfinnEide82
+labels:	hello-for-business, doc-bug
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10313
+--
+Code 0x801c0451 is missing.
+
+This fixed it for me:
+_We dealt with this a bunch in our environment. What we found is that some PC's were showing duplicate accounts under "Email & Accounts" in settings. So, for example, when loading up the settings app in Windows and going into the "Email & Accounts" section, you might see 2 listings for user account "John.Doe@domain.com". This appears to cause issues in Windows (and Office), including with Hello setup. Not sure why the duplicate account shows up, but the solution is to go to %LOCALAPPDATA%\Packages\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy\AC\TokenBroker and rename the "accounts" folder to "accounts.old" and reboot. The duplicate account will be gone after a reboot, and Hello should properly complete set up. We've also noticed this fixing several other issues, including Office 365 randomly showing "unlicensed product" for a user with an active E5 license. Whenever duplicate accounts show up, it eventually causes issues!__ 
+
+   https://docs.microsoft.com/en-us/answers/questions/299767/hello-error-0x801c0451-during-pin-creation.html
+
+
+---
+#### Dokumentinformasjon
+
+⚠ *Ikke rediger denne delen. Den kreves for koblingen docs.microsoft.com ➟ GitHub-problem.*
+
+* ID: 6b4f9133-887f-17a6-95fc-3712de8a3fa1
+* Version Independent ID: 09d34ce8-1590-8202-3e70-e6299dadbb65
+* Content: [Windows Hello errors during PIN creation (Windows) - Windows security](https://docs.microsoft.com/nb-no/windows/security/identity-protection/hello-for-business/hello-errors-during-pin-creation)
+* Content Source: [windows/security/identity-protection/hello-for-business/hello-errors-during-pin-creation.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/hello-errors-during-pin-creation.md)
+* Product: **m365-security**
+* GitHub Login: @mapalko
+* Microsoft Alias: **mapalko**

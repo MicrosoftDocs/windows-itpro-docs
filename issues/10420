@@ -1,0 +1,31 @@
+
+title:	Audit NTLM authentication in this domain - Possible values
+state:	OPEN
+author:	MatteoC5
+labels:	policy settings, threat-protection, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10420
+--
+**Possible values** section doesn't contains all values that can be selected from Group Policy Editor:
+
+![image](https://user-images.githubusercontent.com/26538648/158146597-68ce2f9f-dc83-473b-893f-94e96e74eea0.png)
+
+Thank you
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: dbb8b947-6958-5295-2ca1-b8292dbfef99
+* Version Independent ID: 01d43298-a48e-4531-b289-c44cadb305ab
+* Content: [Network security Restrict NTLM Audit NTLM authentication in this domain (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/network-security-restrict-ntlm-audit-ntlm-authentication-in-this-domain)
+* Content Source: [windows/security/threat-protection/security-policy-settings/network-security-restrict-ntlm-audit-ntlm-authentication-in-this-domain.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/security-policy-settings/network-security-restrict-ntlm-audit-ntlm-authentication-in-this-domain.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

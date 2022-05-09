@@ -1,0 +1,32 @@
+
+title:	Need to correct the statement about Allow Auto Reply affecting OOF messages.
+state:	OPEN
+author:	sheehand
+labels:	deployment, writer-input-required, doc-bug
+comments:	1
+assignees:	e0i, VLG17
+projects:	
+milestone:	
+number:	10019
+--
+The section title "Remote domain blocks OOF replies" is incorrect.
+
+Remote Domains do not need to be configured as AutoReplyEnabled = $True for any external OOF messages to work. The two settings (Automatic Reply and OOF type) are mutually exclusive, with the Allow Automatic Replies referring to automatic replies created via Inbox rules in Outlook. I have tested this both with on-prem Exchange 2016 and 3 different EXO tenants (one in DoD IL5).
+
+This whole section should be removed or reworded to clarify this confusion. I am leaning towards rewording because the EAC transport rule wizard uses the term "automatic replies" to refer to OOF messages which only leads to further confusion.
+
+Dan Sheehan
+Daniel.Sheehan@microsoft.com
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: d01d80d4-e5eb-b529-80c8-c946b5e886af
+* Version Independent ID: 84e83f07-0441-ce4d-4215-823340474b51
+* Content: [Edit an existing topic using the Edit link - What's new in Windows](https://docs.microsoft.com/en-us/windows/whats-new/contribute-to-a-topic?source=docs)
+* Content Source: [windows/whats-new/contribute-to-a-topic.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/whats-new/contribute-to-a-topic.md)
+* Product: **w10**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

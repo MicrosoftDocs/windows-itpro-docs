@@ -1,0 +1,32 @@
+
+title:	Unable to access the system after "Bypass Traverse Checking" right was revoked from Everyone and Users
+state:	OPEN
+author:	gexgd0419
+labels:	policy settings, threat-protection, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	9737
+--
+> Organizations that are extremely concerned about security may want to remove the Everyone group, and perhaps the Users group, from the list of groups that have the Bypass traverse checking user right.
+
+I removed these two groups, and now I am denied access to the **logon screen**, on a newly-installed Windows 10 system. It just showed me a black or frozen screen. Rebooting into safe mode cannot solve this issue.
+
+It turns out that UWP apps (including some system components such as LockApp.exe) cannot work with Bypass traverse checking right revoked, (possibly) because the root directories of the file system and the NT object manager grant app packages no access, failing all traverse checks. For example, "C:\Windows" grants "ALL APPLICATION PACKAGES" read and execute permission, but the root directory "C:\" grants app packages no access, so traverse checking will fail and "C:\Windows" will not be accessible. In the NT object manager, the parent directory of "\Sessions\X\AppContainerNamedObjects" also grants app packages no access.
+
+This document doesn't tell me that removing these two groups will leave the system in an unusable state, though.
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: bdf00c57-677f-fd79-f516-2937e0c3e894
+* Version Independent ID: f3dd08b3-bc0e-03ac-c429-fb8f34d6e760
+* Content: [Bypass traverse checking (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/bypass-traverse-checking)
+* Content Source: [windows/security/threat-protection/security-policy-settings/bypass-traverse-checking.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/security-policy-settings/bypass-traverse-checking.md)
+* Product: **m365-security**
+* Technology: **mde**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

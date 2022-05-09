@@ -1,0 +1,28 @@
+
+title:	Explanatory note for Co-Management 
+state:	OPEN
+author:	msarnabm
+labels:	client management, Microsoft submitter, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10405
+--
+
+An explanatory note for co-managed devices to leverage the enrollment method described in this Doc's link: https://docs.microsoft.com/en-us/mem/configmgr/comanage/tutorial-co-manage-clients
+
+This is the only supported way for using Device Credentials for co-managed devices since the GPO toggle for Device Credentials isnt supported on Co-managed devices.
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: ad012591-5c74-f1cd-d3a2-443768e8ceee
+* Version Independent ID: 918ea4bc-0849-3745-5d9d-a21a973bcd3b
+* Content: [Enroll a Windows 10 device automatically using Group Policy - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy?source=docs)
+* Content Source: [windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

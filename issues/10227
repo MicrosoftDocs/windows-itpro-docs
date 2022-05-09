@@ -1,0 +1,39 @@
+
+title:	wrong gp name! 
+state:	OPEN
+author:	attaya
+labels:	question, client management, writer-input-required
+comments:	1
+assignees:	e0i, Dansimp, MaratMussabekov
+projects:	
+milestone:	
+number:	10227
+--
+
+below description is wrong:
+
+GP Friendly name: Allow time zone redirection
+GP name: TS_GATEWAY_POLICY_ENABLE
+GP path: Windows Components\Remote Desktop Services\Remote Desktop Session Host\Device and Resource Redirection
+GP ADMX file name: TerminalServer.admx
+
+the right name for "Allow time zone redirection" is TS_TIME_ZONE! 
+
+it causes confusing to our customer, i am a CSS engineer. 
+
+[Enter feedback here]
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 2d881506-cf8c-4e25-16cd-df477ed6fb0c
+* Version Independent ID: 98158dde-730b-ec77-d2f9-c5e045d69dad
+* Content: [Policy CSP - ADMX_TerminalServer - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-terminalserver)
+* Content Source: [windows/client-management/mdm/policy-csp-admx-terminalserver.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/policy-csp-admx-terminalserver.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

@@ -1,0 +1,29 @@
+
+title:	What does "human presence sensor" exactly means?
+state:	OPEN
+author:	peterweiweiwang
+labels:	product-question
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	10486
+--
+What does "human presence sensor" exactly mean in this policy?
+Is it HID Biometric Human Presence sensor? Or is it something like TOF sensor?
+
+Thanks for your help on clarification.
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 53c259bd-bfb2-91f3-86ba-374bb3623a13
+* Version Independent ID: 53c259bd-bfb2-91f3-86ba-374bb3623a13
+* Content: [Policy CSP - HumanPresence - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-humanpresence)
+* Content Source: [windows/client-management/mdm/policy-csp-humanpresence.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/policy-csp-humanpresence.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

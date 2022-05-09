@@ -1,0 +1,26 @@
+
+title:	Multi-app kiosk
+state:	OPEN
+author:	Elis150
+labels:	deployment, product-question
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10449
+--
+Hello, 
+
+i was project to make multi-app kiosk with AD user
+Attached txt file with code
+
+
+[New Text Document (2).txt](https://github.com/MicrosoftDocs/windows-itpro-docs/files/8352588/New.Text.Document.2.txt)
+i used this guid 
+https://techdirectarchive.com/2020/01/31/kiosk-mode-deployment-on-windows-10-with-an-ad-domain-account/
+
+but after i runing this kiosk will create local user
+
+the point is i need to create on AD user to reach some documentation which are in file server.
+
+so maybe any ideas how to fix this. 

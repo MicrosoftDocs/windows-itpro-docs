@@ -1,0 +1,30 @@
+
+title:	Windows 10 Team edition not specified as supported or not supported for this feature.
+state:	OPEN
+author:	fvanrijt
+labels:	mdm, doc-idea
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	9806
+--
+
+The Microsoft Surface Hubs run also a version of Windows 10 build 20H2: Team edition. can this also be added into the table and specify if it is supported or not?
+
+Frank van Rijt
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 8b0c55a7-9aaa-d395-409e-59c2595c8e9e
+* Version Independent ID: cf8e5a71-a8fc-1d43-6eed-03d3f2490693
+* Content: [Policy CSP - LocalUsersAndGroups - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-localusersandgroups)
+* Content Source: [windows/client-management/mdm/policy-csp-localusersandgroups.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/policy-csp-localusersandgroups.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @ManikaDhiman
+* Microsoft Alias: **dansimp**

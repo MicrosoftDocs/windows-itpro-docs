@@ -1,0 +1,44 @@
+
+title:	Positively identify information in table "Supported Windows 10 downgrade paths"
+state:	OPEN
+author:	RhysCLCsAustralia
+labels:	deployment, writer-input-required, doc-enhancement
+comments:	2
+assignees:	e0i, aczechowski
+projects:	
+milestone:	
+number:	10499
+--
+Tab
+When viewing the table "Supported Windows 10 downgrade paths" the lack of cell outlines and the use of a blank cell to positively identify an outcome makes the table very hard to read.
+Please update the table "Supported Windows 10 downgrade paths" to positively identify the situation for all scenarios:
+https://docs.microsoft.com/en-us/windows/deployment/upgrade/windows-10-edition-upgrades#supported-windows-10-downgrade-paths
+
+✔ = Supported downgrade path
+❌ = Not supported
+NA = Not considered a downgrade or an upgrade
+
+[blank] = Not supported or not a downgrade
+Edition	Home	Pro	Pro for Workstations	Pro Education	Education	Enterprise LTSC	Enterprise
+Home	NA	❌	❌	❌	❌	❌	❌
+Pro	❌	NA	❌	❌	❌	❌	❌
+Pro for Workstations	❌	❌	NA	❌	❌	❌	❌
+Pro Education	❌	❌	❌	NA	❌	❌	❌
+Education	❌	✔	✔	✔	NA	❌	NA
+Enterprise LTSC	❌	❌	❌	❌	❌	NA	❌
+Enterprise	❌	✔	✔	✔	NA	❌	NA
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 5d622668-cedc-5eec-4a1b-441ce84d3126
+* Version Independent ID: 7da5e009-c1ac-0f18-c945-564da440e90f
+* Content: [Windows 10 edition upgrade (Windows 10) - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/upgrade/windows-10-edition-upgrades)
+* Content Source: [windows/deployment/upgrade/windows-10-edition-upgrades.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/upgrade/windows-10-edition-upgrades.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @aczechowski
+* Microsoft Alias: **aaroncz**

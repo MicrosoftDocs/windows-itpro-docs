@@ -1,0 +1,33 @@
+
+title:	Policy is rejected by licensing
+state:	OPEN
+author:	colealbrecht
+labels:	mdm, product-feedback
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	9835
+--
+Doesn't seem to work with a Microsoft 365 Business Premium license:
+
+MDM PolicyManager: Policy is rejected by licensing, Policy: (Configure), Area: (LocalUsersAndGroups), Result:(0x82B00006) Unknown Win32 Error code: 0x82b00006.
+
+
+On Windows 10 20H2 (OS Build 19042.1110)
+Windows 10 Professional
+Microsoft 365 Business Premium license is properly assigned and Microsoft Intune is enabled. 
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 8b0c55a7-9aaa-d395-409e-59c2595c8e9e
+* Version Independent ID: cf8e5a71-a8fc-1d43-6eed-03d3f2490693
+* Content: [Policy CSP - LocalUsersAndGroups - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-localusersandgroups)
+* Content Source: [windows/client-management/mdm/policy-csp-localusersandgroups.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/policy-csp-localusersandgroups.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @ManikaDhiman
+* Microsoft Alias: **dansimp**

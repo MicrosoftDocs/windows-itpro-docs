@@ -1,0 +1,28 @@
+
+title:	Relevance to Azure AD joined systems? 
+state:	OPEN
+author:	nickleburn
+labels:	policy settings, threat-protection, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10333
+--
+
+[Enter feedback here]
+It would be good to know if there's any relevance to Azure AD (only) joined systems, or if this is deprecated for them.
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: feadb953-839a-9434-fb11-cf94cd61d4c0
+* Version Independent ID: 0d37baee-263a-9c2b-f9a1-a51c7896e055
+* Content: [Domain member Digitally encrypt or sign secure channel data (always) (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/domain-member-digitally-encrypt-or-sign-secure-channel-data-always)
+* Content Source: [windows/security/threat-protection/security-policy-settings/domain-member-digitally-encrypt-or-sign-secure-channel-data-always.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/security-policy-settings/domain-member-digitally-encrypt-or-sign-secure-channel-data-always.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

@@ -1,0 +1,28 @@
+
+title:	Windows Event log encodeings ... where does one find the meanings.
+state:	OPEN
+author:	burnalting
+labels:	question, threat-protection
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	10345
+--
+Using Windows Security Audit event code 5058 as an example, where can one find the mappings of the hexcodes of the **KeyType**, **Operation** or **ReturnCode** _Data_ attributes to their textual context ... eg "User or Machine key for KeyType, or Write/Read/Delete for Operation"?
+
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: cbfd140e-f0d0-cd3d-3cd2-1f3285eda407
+* Version Independent ID: 135e2f4a-8ca5-99ba-f7aa-6f4fad71514a
+* Content: [5058(S, F) Key file operation. (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-5058)
+* Content Source: [windows/security/threat-protection/auditing/event-5058.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/auditing/event-5058.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

@@ -1,0 +1,32 @@
+
+title:	Improve Doc - Add to endpoint which can handle interception
+state:	OPEN
+author:	MVDB1984
+labels:	privacy, doc-idea
+comments:	3
+assignees:	Dansimp, nam31
+projects:	
+milestone:	
+number:	6896
+--
+
+Is it possible to add to the document which end-points can handle SSL interception?
+For security reasons, proxy servers perform SSL interception to ensure no malicious things are in the https/ssl package. Endpoints which can't handle this, and service fail because of this, need to be excluded from this kind of interception.
+
+If this kind of info would be available, it would make life easier for the security admin who is managing the proxy settings.
+It would also ensure such security measures will not break Microsoft Services crucial for the good working of the OS.
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 6b16b4c9-06ac-6c47-3a02-580d9b7da7da
+* Version Independent ID: 958f6888-4ddf-4fec-7fc7-084f0289d79e
+* Content: [Connection endpoints for Windows 10 Enterprise, version 2004 - Windows Privacy](https://docs.microsoft.com/en-us/windows/privacy/manage-windows-2004-endpoints)
+* Content Source: [windows/privacy/manage-windows-2004-endpoints.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/privacy/manage-windows-2004-endpoints.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @linque1
+* Microsoft Alias: **obezeajo**

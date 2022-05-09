@@ -1,0 +1,30 @@
+
+title:	UpdateServiceUrl also supports Delete command
+state:	OPEN
+author:	ervinbms
+labels:	client management, writer-input-required, doc-idea
+comments:	0
+assignees:	e0i, arcarley
+projects:	
+milestone:	
+number:	10413
+--
+
+CSS spent 6 months with BMW to fix an issue because of missing documentation. the CSP UpdateServiceUrl is documented to only support Get and Replace. We found that when you remove the policy completely from Intune, Intune sends a Delete command to the device. This Delete command will clean up everything on the device and then the device is able to search for updates on WU. Once we knew that Delete is supported the issue was fixed by creating the Delete command on their 3rd party MDM. 
+
+Please include Aria Carley (arianna.carley@microsoft.com) as a reviewer, she was in the loop with this escalation. 
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 91ca58bd-f279-7739-0140-c4bd56784768
+* Version Independent ID: 1d2ecc90-58a3-6bcd-84ae-ef04d7a3b7b4
+* Content: [Policy CSP - Update - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-updateserviceurl)
+* Content Source: [windows/client-management/mdm/policy-csp-update.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/policy-csp-update.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

@@ -1,0 +1,30 @@
+
+title:	Device tags (`tags`) dictionary not listed in full config profile example
+state:	OPEN
+author:	apizz
+labels:	defender for endpoint, doc-idea
+comments:	13
+assignees:	Dansimp, lindspea, nam31
+projects:	
+milestone:	
+number:	6073
+--
+The `tags` preference is listed as a dictionary and has associated keys `key` and `value`.  While these contained keys are listed as string values, it is uncertain whether these preferences are supposed to be able to be listed multiple times, similar to the `exclusions` preference, or only once.  While the `exclusions` preference is listed as a dictionary in the documentation, the example profile has `exclusions` as an array with contained dictionaries.
+
+Because the `tags` preference is not listed in the full config profile example, it is unclear as to the required format for the profile.
+
+Can the `tags` preference be added to the config profile example?
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: ca5c929d-414f-70b8-c687-e9a60ef709e3
+* Version Independent ID: a3cde3f5-e7a1-e0cc-aeae-fd6123f696c5
+* Content: [Set preferences for Microsoft Defender ATP for Mac - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#device-tags)
+* Content Source: [windows/security/threat-protection/microsoft-defender-atp/mac-preferences.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/microsoft-defender-atp/mac-preferences.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

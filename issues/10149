@@ -1,0 +1,27 @@
+
+title:	Manual Restart?
+state:	OPEN
+author:	NFC153
+labels:	deployment, product-question, writer-input-required
+comments:	3
+assignees:	e0i
+projects:	
+milestone:	
+number:	10149
+--
+I always used to restart manually, as and when convenient. Is this still an option? It isn't clear from this page nor from the options offered on upgrade.
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 0184809a-63ff-ecc2-ab67-9c9f4df900f8
+* Version Independent ID: ac25ee6c-4c57-58b3-1313-e4a53f53c5a1
+* Content: [Manage device restarts after updates (Windows 10) - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/update/waas-restart#feedback)
+* Content Source: [windows/deployment/update/waas-restart.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/update/waas-restart.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @jaimeo
+* Microsoft Alias: **jaimeo**

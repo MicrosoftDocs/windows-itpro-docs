@@ -1,0 +1,27 @@
+
+title:	The documentation page for the SeDelegateSessionUserImpersonatePrivilege privilege is missing
+state:	OPEN
+author:	LorenzoDePasquale
+labels:	policy settings, threat-protection, doc-bug
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10412
+--
+In the page [User Rights Assignment](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/user-rights-assignment), the group policy setting `Obtain an impersonation token for another user in the same session` links to this page (https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/impersonate-a-client-after-authentication) which corresponds to another setting, `Impersonate a client after authentication`. Is this the correct behavior?
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 7de1fb45-91eb-f37f-8106-81bf82a5602e
+* Version Independent ID: 1c765989-4c50-4b89-83fe-a8625f0f9fd5
+* Content: [User Rights Assignment (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/user-rights-assignment)
+* Content Source: [windows/security/threat-protection/security-policy-settings/user-rights-assignment.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/security-policy-settings/user-rights-assignment.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

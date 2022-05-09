@@ -1,0 +1,21 @@
+
+title:	Provide basic style guide for more efficient contributing experience
+state:	OPEN
+author:	aisgbnok
+labels:	docs-experience
+comments:	2
+assignees:	e0i
+projects:	
+milestone:	
+number:	10468
+--
+## Answer 🎉
+You can find a more detailed and up-to-date guide that is [publicly available here!](https://docs.microsoft.com/contribute/) It includes the [new image syntax.](https://docs.microsoft.com/contribute/markdown-reference#standard-conceptual-images-docs-markdown) I hope this helps anyone who could not find the up-to-date guide, for whatever reason, like myself. It is more detailed than the [contributing guide kept in this repo.](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/2ae579becb5107a5f37122c82385d56fc6c87e21/CONTRIBUTING.md) 
+
+> ⚠️
+> I am not closing this issue yet, as it would be great for the [current contributing guide in this repo](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/2ae579becb5107a5f37122c82385d56fc6c87e21/CONTRIBUTING.md) to at least link to the new guide.
+
+## Original Issue
+This repository would benefit from having a more detailed style guide. For example, lately, I have seen the usage of `:::image type="content" source="<folderPath>" alt-text="<alt text>":::` over the traditional markdown image syntax `![<alt text>](<folderPath>)`. I'm not familiar with this new approach, and can't find it documented anywhere publically.
+
+Providing a more detailed style guide would improve the contributing experience as the current guide is lacking. This would reduce the load on Microsoft reviewers, as they would have less syntax to correct. It would go a long way in improving efficiency for contributors and Microsoft reviewers as well as provide consistent syntax across documentation.

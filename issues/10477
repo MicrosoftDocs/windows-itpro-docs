@@ -1,0 +1,26 @@
+
+title:	No examples provided of accepted values
+state:	OPEN
+author:	ShadowXVII
+labels:	client management, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10477
+--
+No examples are provided of accepted values for this OMA-URI policy branch.
+
+---
+#### Document details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: dff6da0f-1424-9109-c7d4-751842850c5b
+* Version Independent ID: 2f8bd8bf-8103-2b0b-9ec2-cf54687b23a2
+* Content: [Policy CSP - EventLogService - Windows Client Management](https://docs.microsoft.com/en-gb/windows/client-management/mdm/policy-csp-eventlogservice)
+* Content Source: [windows/client-management/mdm/policy-csp-eventlogservice.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/policy-csp-eventlogservice.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

@@ -1,0 +1,28 @@
+
+title:	Couldn't manage to make this work
+state:	OPEN
+author:	ncoffez
+labels:	client management, product-question
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10265
+--
+I have tried any possible variation of the explained solution, to no avail. Finally, I was able to configure the upgradeEditionWithProductKey using **Devices > Windows > Configuration Profiles > Create Profile** and selecting **Templates > Edition Upgrade and mode switch**
+
+Maybe this alternative should be mentioned as I spent multiple days looking for a way to upgrade all licenses to Windows Enterprise for InTune using this guide. 
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 9b01a2e6-e105-d3b8-decc-4a26ee1abaf9
+* Version Independent ID: 40b419f6-0a39-369d-1d76-5308eb77b202
+* Content: [WindowsLicensing CSP - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/windowslicensing-csp)
+* Content Source: [windows/client-management/mdm/windowslicensing-csp.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/windowslicensing-csp.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

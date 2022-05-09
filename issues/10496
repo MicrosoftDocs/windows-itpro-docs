@@ -1,0 +1,28 @@
+
+title:	Validate "applies to" list
+state:	OPEN
+author:	JamesTStanley
+labels:	deployment, doc-enhancement
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	10496
+--
+
+[Enter feedback here]
+The "applies to" section at the top of this page lists several versions of Windows Server, but I don't think that's right - this article is about Windows 10/11 clients
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 1684b30a-3187-85ce-0cf7-10d1b8298b7f
+* Version Independent ID: 9b7170fc-2b39-8e46-7898-894a45de8623
+* Content: [Configure Windows Update for Business - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/update/waas-configure-wufb)
+* Content Source: [windows/deployment/update/waas-configure-wufb.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/update/waas-configure-wufb.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @aczechowski
+* Microsoft Alias: **aaroncz**

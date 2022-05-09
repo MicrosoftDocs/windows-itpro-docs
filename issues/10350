@@ -1,0 +1,31 @@
+
+title:	Please detail supported env variables
+state:	OPEN
+author:	jerryabo
+labels:	threat-protection, doc-enhancement
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	10350
+--
+"Type the path to the program in the text box. Use environment variables as appropriate to ensure that programs installed in different locations on different computers work correctly."
+
+Env variables can be system or user defined, built-in to Windows or custom/user defined. From testing, it appears that custom variables are unsupported, i.e. they fail (via GPO, UX, or MDM). 
+
+Please detail what env variables are supported so that it can be understood which are not.
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 9c673d2f-a224-8f9c-c3c8-fd8c09d084dc
+* Version Independent ID: f6668ab2-72b0-1a58-f18b-09252f068e9d
+* Content: [Create an Outbound Program or Service Rule (Windows) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule)
+* Content Source: [windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

@@ -1,0 +1,26 @@
+
+title:	Configure Certificate Superseding for the Domain Controller Authentication (Kerberos) Certificate Template  Is Confusing
+state:	OPEN
+author:	mmurphy58
+labels:	hello-for-business, doc-enhancement
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	10509
+--
+
+Step 7 reads "From the Add Superseded Template dialog, select the Kerberos Authentication certificate template, and click OK." why would I add the template to the list of superseded templates that I want to supersede the list with?  Is this a copy/paste error?
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: fd063d0c-8739-15bd-4f16-11b893029845
+* Version Independent ID: cd3679fe-dd9c-44f9-04ed-c772a47ca4e4
+* Content: [Configuring Hybrid Azure AD joined Windows Hello for Business - Public Key Infrastructure (PKI) - Windows security](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-whfb-settings-pki)
+* Content Source: [windows/security/identity-protection/hello-for-business/hello-hybrid-cert-whfb-settings-pki.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-whfb-settings-pki.md)
+* Product: **m365-security**
+* GitHub Login: @Gitprakhar13
+* Microsoft Alias: **prsriva**

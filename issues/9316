@@ -1,0 +1,32 @@
+
+title:	Regarding "options"
+state:	OPEN
+author:	mschwarz85018
+labels:	question, deployment
+comments:	1
+assignees:	nam31
+projects:	
+milestone:	
+number:	9316
+--
+
+Why does this page state this:
+"if you have selected the option to automatically download updates" and
+"When the option to automatically install updates is configured"?
+I have never found that setting these options has any effect.  Microsoft seems to force the updates on people, regardless of how they set these.
+
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 16a8126d-2552-97a3-6bb4-c24fd32ffc1f
+* Version Independent ID: 82afb372-5fee-e0c9-56b0-3e8276401e23
+* Content: [How Windows Update works - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/update/how-windows-update-works)
+* Content Source: [windows/deployment/update/how-windows-update-works.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/update/how-windows-update-works.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @jaimeo
+* Microsoft Alias: **jaimeo**

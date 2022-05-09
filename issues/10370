@@ -1,0 +1,30 @@
+
+title:	PCPTool does not support current WBCL format
+state:	OPEN
+author:	mikebeaton
+labels:	bitlocker, product-feedback
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	10370
+--
+
+The PCPTool listed in this page no longer works. It decodes the first (header) entry in the log then fails with `ERROR - PcpToolDecodeLog(): (0x80070057) The parameter is incorrect.`
+
+It seems pretty clear from a bit of single-stepping that the log format is no longer what is assumed by that (fairly old) code.
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 688de6fb-2db0-8aa4-c89c-bda8e3a5c1c0
+* Version Independent ID: e3415e74-19f4-0267-a9b9-f8fe444cd258
+* Content: [Decode Measured Boot logs to track PCR changes - Windows security](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/ts-bitlocker-decode-measured-boot-logs)
+* Content Source: [windows/security/information-protection/bitlocker/ts-bitlocker-decode-measured-boot-logs.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/information-protection/bitlocker/ts-bitlocker-decode-measured-boot-logs.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @Teresa-Motiv
+* Microsoft Alias: **v-tappelgate**

@@ -1,0 +1,12 @@
+
+title:	Sandbox documentation missing RAIL mode
+state:	OPEN
+author:	timmontague
+labels:	threat-protection, doc-enhancement
+comments:	3
+assignees:	e0i, VLG17
+projects:	
+milestone:	
+number:	9637
+--
+In the Sandbox overview video embedded in https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview.md it demonstrates "remote applications integrated locally" (RAIL) mode at 26:48. In RAIL mode an application running in the Sandbox is integrated with the host OS and the Sandbox desktop is not shown. The Sandbox configuration documentation does not explain how to enable that.

@@ -1,0 +1,16 @@
+
+title:	The Credential type dropdown does not show (Auto MDM Enrollment, AD, GPO)
+state:	OPEN
+author:	rsbedard
+labels:	client management, product-question
+comments:	2
+assignees:	e0i
+projects:	
+milestone:	
+number:	10435
+--
+I am currently working in a customer environment and we tried to deploy MDM template but the section in the middle left was empty.
+
+Can anyone tell me how I can fix this? Do I need to update the template or do I need to update the domain controller level.
+
+Please let me know,

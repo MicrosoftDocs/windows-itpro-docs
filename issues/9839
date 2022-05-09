@@ -1,0 +1,28 @@
+
+title:	Does this support 21h1? Noticing it is failing for devices on 21h1.
+state:	OPEN
+author:	nickjxyz
+labels:	mdm, product-question
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	9839
+--
+
+[Enter feedback here]
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 8b0c55a7-9aaa-d395-409e-59c2595c8e9e
+* Version Independent ID: cf8e5a71-a8fc-1d43-6eed-03d3f2490693
+* Content: [Policy CSP - LocalUsersAndGroups - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-localusersandgroups?WT.mc_id=M365-MVP-5004140)
+* Content Source: [windows/client-management/mdm/policy-csp-localusersandgroups.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/policy-csp-localusersandgroups.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @ManikaDhiman
+* Microsoft Alias: **dansimp**

@@ -1,0 +1,37 @@
+
+title:	Confusing Note
+state:	OPEN
+author:	cmc099
+labels:	mdm, doc-enhancement
+comments:	1
+assignees:	e0i, joinimran
+projects:	
+milestone:	
+number:	10157
+--
+
+>The NetworkQoSPolicy configuration service provider is officially supported for **devices that are Intune managed and Azure AD joined**. Currently, this CSP is not supported on the following devices:
+
+>Azure AD Hybrid joined devices.
+Devices that use both GPO and CSP at the same time.
+
+>The **minimum operating system** requirement for this CSP is **Windows 10, version 2004**. This CSP is **supported only in Microsoft Surface Hub prior to Windows 10, version 2004**.
+
+
+The Note above seems contradictory in multiple ways. Devices that are Intune managed and Azure AD joined implies a broad range of devices. The last sentence then states that only Microsoft Surface Hub devices are supported. Additionally, the last two sentences conflict. The first sentence states that at least Win 10 2004 is required. The next sentence states that only versions prior to Win 10 2004 are supported.
+
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 4bb8b93e-0c1a-8b47-472f-effef5f9209e
+* Version Independent ID: 8a2615e2-a77b-c08e-b91c-3ce33e0539b2
+* Content: [NetworkQoSPolicy CSP - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/networkqospolicy-csp)
+* Content Source: [windows/client-management/mdm/networkqospolicy-csp.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/networkqospolicy-csp.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @ManikaDhiman
+* Microsoft Alias: **dansimp**

@@ -1,0 +1,28 @@
+
+title:	SetPolicyDrivenUpdateSource - Incorrect descriptions?
+state:	OPEN
+author:	carlbarrettuk
+labels:	client management, doc-idea
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10254
+--
+
+In the section: SetPolicyDrivenUpdateSourceForDriver I believe the same explanation text has been copied in for the other sections too (SetPolicyDrivenUpdateSourceForQuality, SetPolicyDrivenUpdateSourceForFeature, SetPolicyDrivenUpdateSourceForOther and SetPolicyDrivenUpdateSourceForQuality)
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 91ca58bd-f279-7739-0140-c4bd56784768
+* Version Independent ID: 1d2ecc90-58a3-6bcd-84ae-ef04d7a3b7b4
+* Content: [Policy CSP - Update - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#)
+* Content Source: [windows/client-management/mdm/policy-csp-update.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/policy-csp-update.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

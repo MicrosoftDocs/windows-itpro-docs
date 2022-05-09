@@ -1,0 +1,30 @@
+
+title:	Update Intune Connector Setup Screenshots
+state:	OPEN
+author:	SHAKTI4601
+labels:	doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10520
+--
+
+As Intune connector setup UI is changed, can you please update the screenshot to select the proper options in the new UI. Now the new UI has 4 options and that's why it needs more clarification to select the right option.
+
+![image](https://user-images.githubusercontent.com/26208510/167260270-4a6c27d1-738b-4029-8375-1e90ebf9eb8b.png)
+
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 9f709fd4-0b5d-b238-4060-222d550cd538
+* Version Independent ID: fb3f29da-2236-c47d-6bea-8efbcec8d7d3
+* Content: [Using Certificates for AADJ On-premises Single-sign On single sign-on - Windows security](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-cert)
+* Content Source: [windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-cert.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-cert.md)
+* Product: **m365-security**
+* GitHub Login: @Gitprakhar13
+* Microsoft Alias: **prsriva**

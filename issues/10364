@@ -1,0 +1,31 @@
+
+title:	Clarify interaction between AppLocker and Powershell
+state:	OPEN
+author:	Rvvhub
+labels:	application control, doc-idea
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10364
+--
+Please clarify the interaction between Applocker and Powershell.
+The documentation implies that AppLocker can be used to *block* Powershell scripts.
+In reality, Applocker only forces Powershell scripts to be run in Constrained Language Mode.
+
+Please also clarify/document that in cases where a PS1 script is "blocked" AppLocker generates an 8007 event - which literally states the script will be blocked. After which the script runs.
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: a9f1063b-e5b6-9215-e6dd-56513dfafb94
+* Version Independent ID: 73019747-2e4d-5eb5-1dcb-08affddfee4c
+* Content: [Script rules in AppLocker (Windows) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/script-rules-in-applocker)
+* Content Source: [windows/security/threat-protection/windows-defender-application-control/applocker/script-rules-in-applocker.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/windows-defender-application-control/applocker/script-rules-in-applocker.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @mjcaparas
+* Microsoft Alias: **macapara**

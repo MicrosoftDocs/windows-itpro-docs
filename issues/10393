@@ -1,0 +1,28 @@
+
+title:	The Day Windows Stopped Being Fun
+state:	OPEN
+author:	12bucklemyshoe
+labels:	client management, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10393
+--
+
+[the cryptic life-ending instructions to get out of inaccessible boot device ruined it for me - I have had it with Insider anything.  Microsoft breaks people and computers.  I know its you and not my computers.  Thanks god for pirates; no one could be as destructive as Microsoft.]
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 388514ac-6488-384c-fb86-e8dfd3970a28
+* Version Independent ID: 7cd69358-f4bc-67a2-ba27-ea20f0946e32
+* Content: [Advanced advice for Stop error 7B, Inaccessible_Boot_Device - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/troubleshoot-inaccessible-boot-device)
+* Content Source: [windows/client-management/troubleshoot-inaccessible-boot-device.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/troubleshoot-inaccessible-boot-device.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

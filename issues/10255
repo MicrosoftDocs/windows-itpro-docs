@@ -1,0 +1,28 @@
+
+title:	Incorrect link
+state:	OPEN
+author:	Computer-Tsu
+labels:	question, deployment
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	10255
+--
+
+The page, https://www.microsoft.com/en-us/download/details.aspx?id=25250 has Related links, one is titled GPO TechNet, that link, http://go.microsoft.com/fwlink/?linkid=31191, instead goes here which is Windows Deployment, and not the intended GPO topic.
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 9ac5717f-e911-ac81-445d-6fbeb371b334
+* Version Independent ID: 5e8e7627-d30e-d3ea-f673-c0093486cc99
+* Content: [What's new in Windows client deployment - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/deploy-whats-new)
+* Content Source: [windows/deployment/deploy-whats-new.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/deploy-whats-new.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @greg-lindsay
+* Microsoft Alias: **greglin**

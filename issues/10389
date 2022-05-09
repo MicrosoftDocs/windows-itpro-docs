@@ -1,0 +1,47 @@
+
+title:	Supportability Matrix wrong?? (W10 devices may not support it?)
+state:	OPEN
+author:	JordiSG
+labels:	client management, doc-bug
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10389
+--
+Regarding the supportability matrix of this CSP, after some tests, seems like W10 is not supported.
+
+I've tested with W10 21H1, and the CSP will fail 
+![image](https://user-images.githubusercontent.com/58511466/156728395-9032a72a-4f2b-48fe-b659-d9e509a20d9f.png)
+
+Per docs, this setting relies on NewsAndInterests.xml ADMX which is not present on the device
+![image](https://user-images.githubusercontent.com/58511466/156728498-b4b44354-d75c-4e04-9ac1-fedf3f73402e.png)
+
+I've also tried to use the Settings Catalog setting 
+![image](https://user-images.githubusercontent.com/58511466/156728713-def1f968-3340-42f4-8409-b34f4e49b837.png)
+
+Which seems setting the same registry key as the CSP on a Windows 11 device
+![image](https://user-images.githubusercontent.com/58511466/156728772-4748bc77-bab4-40d4-880b-72c80c34196e.png)
+
+And if trying to apply on a Windows 10, it clearly says that it's not applicable in Intune console
+![image](https://user-images.githubusercontent.com/58511466/156728932-0f6f6b74-9d7a-4a6b-ad2e-3c28d6e7ab0e.png)
+
+
+![image](https://user-images.githubusercontent.com/58511466/156728962-784da944-3c59-4689-b6c1-65ac508885fc.png)
+
+So please adapt the doc details
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 9b8f2d68-ff96-ff9e-7707-fe8ac2efede0
+* Version Independent ID: 9b8f2d68-ff96-ff9e-7707-fe8ac2efede0
+* Content: [Policy CSP - NewsAndInterests - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-newsandinterests)
+* Content Source: [windows/client-management/mdm/policy-csp-newsandinterests.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/policy-csp-newsandinterests.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

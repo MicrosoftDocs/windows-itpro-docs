@@ -1,0 +1,66 @@
+
+title:	Differences between Docs and Interface Help
+state:	OPEN
+author:	GambitC90
+labels:	information protection, in progress, Microsoft submitter, doc-idea
+comments:	0
+assignees:	e0i, VLG17
+projects:	
+milestone:	
+number:	6609
+--
+Just wanted some clarification on two items on this page...:
+
+https://docs.microsoft.com/en-us/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure#cloud-resources
+
+https://docs.microsoft.com/en-us/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure#protected-domains
+
+*************************************************************************************
+ - On this doc page under Cloud resources it states
+
+Specify the cloud resources to be treated as corporate and protected by WIP. For each cloud resource, you may also optionally specify a proxy server from your Internal proxy servers list to route traffic for this cloud resource. Be aware that all traffic routed through your Internal proxy servers is considered enterprise.
+
+Separate multiple resources with the "|" delimiter. If you don’t use proxy servers, you must also include the "," delimiter just before the "|".
+
+ - The data validation help on the Intune Blade states:
+Specify cloud resources to be treated as corporate and be protected with Windows Information Protection policy. Multiple resources can be specified by separating individual entries with the '|' character.
+
+If you have a proxy configured in your company, then you can specify the proxy through which traffic to cloud resources you specified will be routed.
+
+URL[,Proxy]|URL[,Proxy]
+
+Without proxy: contoso.sharepoint.com|contoso.visualstudio.com
+With proxy: contoso.sharepoint.com,proxy.contoso.com|contoso.visualstudio.com,proxy.contoso.com
+
+Question: The without proxy - should it be "contoso.sharepoint.com|contoso.visualstudio.com" as per the blade info, or "contoso.sharepoint.com,|contoso.visualstudio.com" as per the docs?
+*************************************************************************************
+ - On this doc page under Protected domains it states
+
+Specify the domains used for identities in your environment. All traffic to the fully-qualified domains appearing in this list will be protected. Separate multiple domains with the "," delimiter.
+
+ - The data validation help on the Intune Blade states:
+Specify the DNS names that form your corporate network. These are used in conjunction with the IP ranges that you specify to define your corporate network boundary. Multiple values can be specified by separating individual entries with a '|'.
+
+This setting is required to have Windows Information Protection enabled.
+
+For example: corp.contoso.com|region.contoso.com
+
+Question: Which one is correct, for multiple domains do we use "|" as per the Blade Help, or "," as per the docs?
+
+*************************************************************************************
+
+I think we have a case where the Docs have drifted from the Interface or one of them is wrong.  Either way one needs to be updated.
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: c1ad3f92-24de-5eb5-8454-c72d85737183
+* Version Independent ID: 900125eb-31ea-faf3-ac30-7c3d7b30f611
+* Content: [Create a Windows Information Protection (WIP) policy with MDM using the Azure portal for Microsoft Intune (Windows 10) - Microsoft 365 Security](https://docs.microsoft.com/en-us/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure#cloud-resources)
+* Content Source: [windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @DulceMontemayor
+* Microsoft Alias: **dansimp**

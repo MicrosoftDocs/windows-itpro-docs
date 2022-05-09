@@ -1,0 +1,28 @@
+
+title:	Events not available on WS2016
+state:	OPEN
+author:	Rvvhub
+labels:	application control, doc-bug
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10325
+--
+This page states it applies to Windows Server 2016 an up, but many of the events (eg: 3099, 31xx) are not available on Windows Server 2016. Please clarify this on the page.
+Also, if possible, please add information for alternative troubleshooting methods on Windows Server 2016 (eg: how to determine if/which policy was loaded).
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 5da550e8-6065-7666-46b1-7bfb84ad775e
+* Version Independent ID: ffbb3f81-73d3-c5e9-ca5a-abbb36320661
+* Content: [Understanding Application Control event IDs (Windows) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/event-id-explanations)
+* Content Source: [windows/security/threat-protection/windows-defender-application-control/event-id-explanations.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/windows-defender-application-control/event-id-explanations.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @jsuther1974
+* Microsoft Alias: **dansimp**

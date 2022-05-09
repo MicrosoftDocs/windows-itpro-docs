@@ -1,0 +1,29 @@
+
+title:	unsubstantiated claim: legal notice means higher success rate of prosecution.
+state:	OPEN
+author:	truekonrads
+labels:	policy settings, threat-protection, doc-bug
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	9917
+--
+
+The text has a disputed claim: "Not using this warning-message policy setting leaves your organization legally vulnerable to trespassers who unlawfully penetrate your network. Legal precedents have established that organizations that display warnings to users who connect to their servers over a network have a higher rate of successfully prosecuting trespassers."
+
+To my knowledge, this is an entirely unsubstantiated claim.
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 8897b50b-10e9-5d0b-6150-c1834a296a20
+* Version Independent ID: bed1c6d9-91c3-02f2-12c9-58229886118a
+* Content: [Interactive Logon Message text (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/interactive-logon-message-text-for-users-attempting-to-log-on)
+* Content Source: [windows/security/threat-protection/security-policy-settings/interactive-logon-message-text-for-users-attempting-to-log-on.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/security-policy-settings/interactive-logon-message-text-for-users-attempting-to-log-on.md)
+* Product: **m365-security**
+* Technology: **mde**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

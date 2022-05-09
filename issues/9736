@@ -1,0 +1,32 @@
+
+title:	Gather.ps1 - link broken
+state:	OPEN
+author:	ksaib
+labels:	deployment, doc-bug
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	9736
+--
+
+Hello MS Team,
+
+The link to the Gather.ps1 script is broken and I could not find it on the search as well on the landing page of that current link.
+Please see if this can be fixed.
+
+Thanks
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: af8c59c3-65e9-1e4c-f78d-8d2770e88690
+* Version Independent ID: 0d0b65d8-5026-8232-5658-561d88cc2065
+* Content: [Simulate a Windows 10 deployment in a test environment (Windows 10) - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/deploy-windows-mdt/simulate-a-windows-10-deployment-in-a-test-environment)
+* Content Source: [windows/deployment/deploy-windows-mdt/simulate-a-windows-10-deployment-in-a-test-environment.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/deploy-windows-mdt/simulate-a-windows-10-deployment-in-a-test-environment.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @greg-lindsay
+* Microsoft Alias: **greglin**

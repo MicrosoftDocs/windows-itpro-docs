@@ -1,0 +1,26 @@
+
+title:	Clarification - Configure Chat Icon
+state:	OPEN
+author:	homotechsual
+labels:	client management, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10373
+--
+Please advise whether the information given for "Configure Chat Icon" is correct - it appears not to work on Business (which is odd if it works on Home and Pro) and there are numerous reports that this requires Enterprise or Education to function.
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 6e8ecbe3-ba72-ec44-0591-7f604d50b1e3
+* Version Independent ID: 9d5ff118-d539-dd6e-ae3e-102392c22287
+* Content: [Policy CSP - Experience - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-experience#experience-configurechaticonvisibilityonthetaskbar)
+* Content Source: [windows/client-management/mdm/policy-csp-experience.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/policy-csp-experience.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

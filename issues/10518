@@ -1,0 +1,42 @@
+
+title:	CDATA tag (<![CDATA[...]]>) and Delimiter 0xF000 are not working in UserRights
+state:	OPEN
+author:	MangeshDugad
+labels:	doc-bug
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10518
+--
+While configuring UserRight policies using Intune custom profiles, the syntax mentioned in the documentation does not work. Specifically using CDATA tag (<![CDATA[...]]>) and Delimiter 0xF000 do not work.
+
+I am using OMA URI: "./Device/Vendor/MSFT/Policy/Config/UserRights/CreateGlobalObjects" and "./Device/Vendor/MSFT/Policy/Config/UserRights/DenyLocalLogOn " 
+
+Tried with below values - 
+1. *S-1-5-32-546 : Policy status is succeeded on MEM Portal and Group/account is added on the client.
+No events logged in event viewer related to this setting (DeviceManagement-Enterprise-Diagnostics-Provider)
+
+Note: In 2 and 3, I used the encoded value & # x F 0 0 0 ; (without space) for delimiter 0xF000 from documentation. Added space just to make these visible.
+
+2. *S-1-5-19& #xF000;*S-1-5-20& #xF000;*S-1-5-11 :  Policy status is succeeded on MEM portal, but groupsccounts are not added on the client. No events logged in event viewer related to this setting.
+
+3. <! [CDATA[*S-1-5-19& #xF000;*S-1-5-20& #xF000;*S-1-5-11] ] >  : Groupsccounts are added on the client, but policy status on MEM portal shows an error -2016281112 (Remediation failed).
+One informational event logged for this setting.
+
+![image](https://user-images.githubusercontent.com/105086281/167227905-02ba400c-c369-44c6-b0fc-8d2e191ba486.png)
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 3b62d452-1910-d962-0ccc-9ac3f8135f15
+* Version Independent ID: 5a4e6f0c-bcd4-8d8b-93f7-5bda7135b931
+* Content: [Policy CSP - UserRights - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-userrights?source=docs)
+* Content Source: [windows/client-management/mdm/policy-csp-userrights.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/policy-csp-userrights.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

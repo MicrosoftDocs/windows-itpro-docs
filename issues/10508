@@ -1,0 +1,40 @@
+
+title:	Reword the note about Kernel DMA protection & Hyper-V for clarity
+state:	OPEN
+author:	SillyKeith
+labels:	information protection, Microsoft submitter, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10508
+--
+
+[Enter feedback here]
+The note about Kernel DMA & Hyper-V Virtualization is not really intelligible.  Users are left scratching their heads about what it means and what to do.  I took a pass at updating it, but the PM/Eng team should vet it.
+
+New Note:   _just say you won't see this option_
+Hyper-V - Virtualization Enabled in Firmware will not be show if a hypervisor has been detected.
+<insert graphic of hypervisor_has_been_detected.png
+![hypervisor_has_been_detected](https://user-images.githubusercontent.com/28606059/166325754-4657b237-23f2-46a4-8bcf-998d2158a9c9.png)
+> 
+
+New #4
+If the current state of Kernel DMA Protection is OFF and a hypervisor has been detected, the platform and/or system firmware may not support SVM and IOMMU.  Enabling Hyper-V virtualization in Firmware (IOMMU) is required to enable Kernel DMA Protection, even when the firmware has the flag of "ACPI Kernel DMA Protection Indicators" described in Kernel DMA Protection (Memory Access Protection) for OEMs. _<keep link to OEM page>_
+
+New #5
+5.	If the state of Kernel DMA Protection remains Off, then the system does not support this feature.
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: b9b83e95-63de-87c5-929c-d5f25e33d124
+* Version Independent ID: 743ead3f-b4a5-1589-6577-e1d12aaa1b92
+* Content: [Kernel DMA Protection (Windows) - Windows security](https://docs.microsoft.com/en-us/windows/security/information-protection/kernel-dma-protection-for-thunderbolt#using-system-information)
+* Content Source: [windows/security/information-protection/kernel-dma-protection-for-thunderbolt.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/information-protection/kernel-dma-protection-for-thunderbolt.md)
+* Product: **m365-security**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

@@ -1,0 +1,28 @@
+
+title:	Is there a way to add an AAD group to local remote desktop users group?
+state:	OPEN
+author:	tnewton1
+labels:	client management, product-question
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	10324
+--
+
+Is there a way to add an Azure AD security group to the local desktop users group? In a legacy environment, we have a GPO that adds "RDP Enabled" group to the local remote desktop users group on domain joined PCs. Is this functionality supported or do I have to script bulk adding/removing users?
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 72e1cc18-3fc2-d7fa-7ff3-20fc9a3596d4
+* Version Independent ID: 8ed24664-ce8c-7c08-654a-d3ef267f274f
+* Content: [Connect to remote Azure Active Directory-joined PC (Windows) - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/connect-to-remote-aadj-pc)
+* Content Source: [windows/client-management/connect-to-remote-aadj-pc.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/connect-to-remote-aadj-pc.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

@@ -1,0 +1,27 @@
+
+title:	new version not listed.
+state:	OPEN
+author:	c3474
+labels:	in progress, defender for endpoint, doc-idea
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	7029
+--
+I noticed that my Microsoft Defender ATP for macOS has updated to version 101.01.54. As an IT admin I went to this "What's New" site to see what changes were made in this version and was very surprised to see the version I'm on is not listed. Please consider this a formal request to have the "what's new" updated with the new version being deployed at the time of deployment. If at all possible it would be really nice if the "what's new" was updated _before_ the new version release. 
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 287292d6-355f-5ad8-b29d-3fcc4b2604ca
+* Version Independent ID: 1bcc491b-3736-6a85-3551-7aade2ff5f8a
+* Content: [What's new in Microsoft Defender Advanced Threat Protection for Mac - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-whatsnew)
+* Content Source: [windows/security/threat-protection/microsoft-defender-atp/mac-whatsnew.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/microsoft-defender-atp/mac-whatsnew.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

@@ -1,0 +1,29 @@
+
+title:	Specify what level the logon command is run under
+state:	OPEN
+author:	keithn
+labels:	threat-protection, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10456
+--
+
+The most critical thing about the logon command is whether it is executed as an Administrator or not, I haven't tried it yet, but I'm assuming that it is at the Administrator level, but because it is not specified I need to do an experiment just to work that out
+
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 2efc9d32-0f98-0804-78a4-4caccdfac010
+* Version Independent ID: 797bb0d3-bade-98f6-fe85-508764571f37
+* Content: [Windows Sandbox configuration - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-sandbox/windows-sandbox-configure-using-wsb-file)
+* Content Source: [windows/security/threat-protection/windows-sandbox/windows-sandbox-configure-using-wsb-file.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/windows-sandbox/windows-sandbox-configure-using-wsb-file.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

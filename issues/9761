@@ -1,0 +1,24 @@
+
+title:	enable credential guard screenshot is not proper
+state:	OPEN
+author:	RAJU2529
+labels:	credential guard, doc-bug
+comments:	3
+assignees:	e0i
+projects:	
+milestone:	
+number:	9761
+--
+Just now I found out enabling credential guard screenshot is not proper, this must be changed to enabled position.
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 41c2cb44-269d-3334-019a-726eb5432f1c
+* Version Independent ID: 251024cc-b818-18c6-a112-4ac0276cb4b1
+* Content: [Manage Windows Defender Credential Guard (Windows 10) - Microsoft 365 Security](https://docs.microsoft.com/en-us/windows/security/identity-protection/credential-guard/credential-guard-manage?source=docs#enable-windows-defender-credential-guard-by-using-group-policy)
+* Content Source: [windows/security/identity-protection/credential-guard/credential-guard-manage.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/credential-guard/credential-guard-manage.md)
+* Product: **w10**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **v-tea**

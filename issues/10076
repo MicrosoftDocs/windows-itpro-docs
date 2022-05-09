@@ -1,0 +1,28 @@
+
+title:	Resetting service ACLs is dangerous!
+state:	OPEN
+author:	joachimme
+labels:	doc-enhancement
+comments:	10
+assignees:	e0i, VLG17
+projects:	
+milestone:	
+number:	10076
+--
+
+[Enter feedback here]
+In step 4b, the article claims it will reset the ACLs for the services BITS and Windows Update to their default value. I just checked Windows Server 2016 and Windows Server 2019 default values and both deviate from the alleged "default values" in the article.  So it will not reset the ACLs to the default values but instead it will change the default values. I think the risk is higher to break something by changing the service ACLs. Not sure if Microsoft would support changing from default values.
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 886426b5-8548-1cfc-ccd2-fd03e549c967
+* Version Independent ID: 599aea76-47e4-dccc-799c-2d8acf549546
+* Content: [Windows Update - Additional resources - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/update/windows-update-resources)
+* Content Source: [windows/deployment/update/windows-update-resources.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/update/windows-update-resources.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @jaimeo
+* Microsoft Alias: **jaimeo**

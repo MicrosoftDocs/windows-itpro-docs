@@ -1,0 +1,26 @@
+
+title:	missing Windows IoT Enterprise policy csp reference
+state:	OPEN
+author:	sveinungre
+labels:	client management, doc-bug
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10474
+--
+The page "Policies in Policy CSP supported by Windows 10 IoT Enterprise" is visible in the search/filter on the left side, but the link does not lead to Windows IoT Enterprise, where has the content gone? I very much desire to read that page.
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 33e7455a-e798-e89e-a9bf-bdff51d00ba6
+* Version Independent ID: 7dc81b34-4cc2-2ecc-bb5b-9900b85e3817
+* Content: [Policies in Policy CSP supported by Windows 10 IoT Core - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/policies-in-policy-csp-supported-by-iot-core)
+* Content Source: [windows/client-management/mdm/policies-in-policy-csp-supported-by-iot-core.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/policies-in-policy-csp-supported-by-iot-core.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

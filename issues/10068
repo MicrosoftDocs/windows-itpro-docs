@@ -1,0 +1,18 @@
+
+title:	AGPM 4.0 SP3 support for Server 2016
+state:	OPEN
+author:	ZinSystems
+labels:	deployment, doc-enhancement
+comments:	1
+assignees:	e0i, VLG17
+projects:	
+milestone:	
+number:	10068
+--
+Hi,
+
+I have AGMP successfully running on a Windows Server 2016 member server in a pre-prod environment. After reviewing the supported server operating system lists I have noticed Windows Server 2016 is not listed as a supported OS to run AGPM 4.3 on! This is odd as 2019 and 2012 are both listed as being supported. I do think this is a typo, but can someone please clarify that 2016 is a supported OS for AGPM 4.3, before I deploy this into a production environment?
+
+Official support options article:
+
+https://docs.microsoft.com/en-us/microsoft-desktop-optimization-pack/agpm/choosing-which-version-of-agpm-to-install

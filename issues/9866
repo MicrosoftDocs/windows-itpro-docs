@@ -1,0 +1,46 @@
+
+title:	How to fix missing machine names in Update Compliance?
+state:	OPEN
+author:	superpigeon2000
+labels:	deployment, product-feedback
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	9866
+--
+Hi,
+
+We finally have computers talking back to our work space and showing all the information about the machines but none are reporting back with computer names.
+
+The settings we're currently pushing out via gpo are below
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection
+AllowDeviceNameInTelemetry (Dword) = 1 (1)
+AllowTelemetry (Dword) = 1 (1)
+AllowUpdateComplianceProcessing (Dword) = 10 (16)
+AllowWUfBCloudProcessing (Dword) = 8 (8)
+CommercialID (Reg_SZ) = 'Our commercial ID'
+DisableTelemetryOptInSettingsUx (Dword) = 1 (1)
+
+We have the commercial ID correct and data is feeding back but the machine name just isn't being populated.
+We either have nothing or just #
+Is there anything else we need to change or anything that can be done to force the machine names to be populated?
+Has anyone seen this when activly defining to allow device name in telemetry?
+
+Cheers
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: e5549abd-da28-5d11-49c6-e66ecf5cd0b6
+* Version Independent ID: 0ad6a1a2-5c75-baeb-00de-a6649592ec69
+* Content: [Get started with Update Compliance - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/update/update-compliance-get-started)
+* Content Source: [windows/deployment/update/update-compliance-get-started.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/update/update-compliance-get-started.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @jaimeo
+* Microsoft Alias: **jaimeo**

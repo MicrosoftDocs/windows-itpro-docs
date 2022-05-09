@@ -1,0 +1,32 @@
+
+title:	hyperlink are incorrect in technet
+state:	OPEN
+author:	kapilhudiya
+labels:	identity protection, doc-enhancement
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	10257
+--
+
+[Enter feedback here]
+
+links are not working correctly:
+
+
+Isolated User Mode in Windows 10 with Dave Probert (Channel 9)
+Isolated User Mode Processes and Features in Windows 10 with Logan Gabriel (Channel 9)
+More on Processes and Features in Windows 10 Isolated User Mode with Dave Probert (Channel 9)
+Mitigating Credential Theft using the Windows 10 Isolated User Mode (Channel 9)
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 87ec66f8-6598-5751-a10f-55951c08b3ff
+* Version Independent ID: c3bb99fb-ec6f-638f-fb26-af3142f5d49c
+* Content: [Protect derived domain credentials with Windows Defender Credential Guard (Windows) - Windows security](https://docs.microsoft.com/en-in/windows/security/identity-protection/credential-guard/credential-guard)
+* Content Source: [windows/security/identity-protection/credential-guard/credential-guard.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/credential-guard/credential-guard.md)
+* Product: **m365-security**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

@@ -1,0 +1,29 @@
+
+title:	Enabling of Service tracking
+state:	OPEN
+author:	kimoppalfens
+labels:	application control, doc-enhancement
+comments:	0
+assignees:	e0i, VLG17
+projects:	
+milestone:	
+number:	9978
+--
+
+The part around adding the Service tracking is terribly confusing.
+I can't seem to find any documentation on what the Applocker rulecollectionextensions do.
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 5881f449-2567-9d50-99be-0b6cdb1218d7
+* Version Independent ID: e4d0109a-54dc-3bb9-d4c5-cad8fdf93179
+* Content: [Configure a WDAC managed installer (Windows) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/configure-wdac-managed-installer)
+* Content Source: [windows/security/threat-protection/windows-defender-application-control/configure-wdac-managed-installer.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/windows-defender-application-control/configure-wdac-managed-installer.md)
+* Product: **m365-security**
+* Technology: **mde**
+* GitHub Login: @jsuther1974
+* Microsoft Alias: **dansimp**

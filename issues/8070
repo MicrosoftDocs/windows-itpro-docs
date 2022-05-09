@@ -1,0 +1,25 @@
+
+title:	the users do not know their password
+state:	OPEN
+author:	rishtech
+labels:	hello-for-business, in progress, doc-idea
+comments:	1
+assignees:	e0i, MaratMussabekov
+projects:	
+milestone:	
+number:	8070
+--
+If the user doesn't know their passsword, how they will sign in to their machine for the first time.
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 6ca080bd-ed37-60a8-ec22-b1929166ff0c
+* Version Independent ID: d2742e0c-9d66-4b1f-8555-a1fb1546455b
+* Content: [Passwordless Strategy - Microsoft 365 Security](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/passwordless-strategy)
+* Content Source: [windows/security/identity-protection/hello-for-business/passwordless-strategy.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/passwordless-strategy.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @mapalko
+* Microsoft Alias: **mapalko**

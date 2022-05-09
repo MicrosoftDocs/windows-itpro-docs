@@ -1,0 +1,34 @@
+
+title:	missing some properties 
+state:	OPEN
+author:	RAJU2529
+labels:	threat-protection, doc-enhancement
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	9825
+--
+Today i executed the below command using powershell, and I found some properties are missing 
+**Get-CimInstance –ClassName Win32_DeviceGuard –Namespace root\Microsoft\Windows\DeviceGuard**
+The following properties are missing in this article, 
+
+**CodeIntegrityPolicyEnforcementStatus**
+**UsermodeCodeIntegrityPolicyEnforcementStatus**
+**VirtualMachineIsolation**                     
+**VirtualMachineIsolationProperties**
+
+The screenshot is too old,  Secure launch configuration box is not there in the screenshot, the old screenshot must be replaced with new screenshot.
+
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 1d4b8d75-5d09-e0d6-1a90-45175fd1043d
+* Version Independent ID: dfb10d10-a514-6ea5-1307-df865db530db
+* Content: [Enable virtualization-based protection of code integrity - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity)
+* Content Source: [windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity.md)
+* Product: **m365-security**
+* Technology: **mde**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

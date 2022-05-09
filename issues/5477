@@ -1,0 +1,83 @@
+
+title:	Defender ATP API Field Documentation is missing many fields
+state:	OPEN
+author:	GeneCupstid
+labels:	assigned-to-author, defender for endpoint, doc-bug
+comments:	4
+assignees:	e0i, mjcaparas
+projects:	
+milestone:	
+number:	5477
+--
+
+[Microsoft Defender ATP detections API fields](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/api-portal-mapping) document is missing definitions for properties returned by ATP API.
+
+I've attached a table of comparing fields returned by the API, and the corresponding field in documentation, if it exists (blank = missing in documentation)
+
+
+In API | In Documentation
+-- | --
+Actor | Actor
+AlertId | AlertId
+AlertPart |  
+AlertTime | AlertTime
+AlertTitle | AlertTitle
+Category | Category
+CloudCreatedMachineTags |  
+CommandLine |  
+ComputerDnsName | ComputerDnsName
+CreatorIocName |  
+CreatorIocValue |  
+Description |  
+DeviceCreatedMachineTags |  
+DeviceID |  
+ExternalId |  
+FileHash |  
+FileName | FileName
+FilePath | FilePath
+FullId |  
+IncidentLinkToWDATP |  
+InternalIPv4List | InternalIPv4List
+InternalIPv6List | InternalIPv6List
+IoaDefinitionId |  
+IocName |  
+IocUniqueId |  
+IocValue |  
+IpAddress | IpAddress
+LastProcessedTimeUtc | LastProcessedTimeUtc
+LinkToWDATP | LinkToWDATP
+LogOnUsers | LogOnUsers
+MachineDomain | MachineDomain
+MachineGroup |  
+MachineName | MachineName
+Md5 | Md5
+RemediationAction |  
+RemediationIsSuccess | RemediationIsSuccess
+ReportID |  
+Severity | Severity
+Sha1 | Sha1
+Sha256 | Sha256
+Source |  
+ThreatCategory |  
+ThreatFamily |  
+ThreatName | ThreatName
+Url | Url
+UserDomain | UserDomain
+UserName | UserName
+WasExecutingWhileDetected | WasExecutingWhileDetected
+
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 9e9ec713-7d81-465c-e7e0-9ecb4fc5024e
+* Version Independent ID: 2c2f1ed7-4211-5e8c-ce7a-624a92edecd2
+* Content: [Microsoft Defender ATP detections API fields](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/api-portal-mapping#feedback)
+* Content Source: [windows/security/threat-protection/microsoft-defender-atp/api-portal-mapping.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/microsoft-defender-atp/api-portal-mapping.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @mjcaparas
+* Microsoft Alias: **macapara**

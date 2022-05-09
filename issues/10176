@@ -1,0 +1,31 @@
+
+title:	Incorrect event description 4688
+state:	OPEN
+author:	MValiukh
+labels:	auditing, doc-idea
+comments:	7
+assignees:	e0i, joinimran
+projects:	
+milestone:	
+number:	10176
+--
+
+According to the description in the documentation** of event 4688 A new process has been created - TokenElevationTypeDefault (1): Type 1 is a full token with no privileges removed or groups disabled. A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account (for which UAC disabled by default), service account or local system account.
+
+However in reality (Windows 7, Windows 10) when a regular user (who is ONLY a member of the users group) starts a process then events 4688 with TokenElevationTypeDefault (1) are generated. The UAC is enabled and the user is not an built-in Administrator or even a member of the local Administrators group.
+
+Question: how this could happen - an ordinary regular user cannot have a full token. This description of the event in the documentation does not allow to properly analyze incidents related to this event and to make cyber investigations.
+**https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4688
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 5eca37ef-510b-52ec-ed07-2fb4a2d307dc
+* Version Independent ID: c4977b85-a93a-119d-3010-b6148c3421f0
+* Content: [4688(S) A new process has been created. (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4688)
+* Content Source: [windows/security/threat-protection/auditing/event-4688.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/auditing/event-4688.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

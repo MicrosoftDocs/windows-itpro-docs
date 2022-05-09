@@ -1,0 +1,41 @@
+
+title:	MDT 
+state:	OPEN
+author:	Ryu-Syrius
+labels:	question, deployment
+comments:	0
+assignees:	e0i, MaratMussabekov
+projects:	
+milestone:	
+number:	10205
+--
+Microsoft Deployment Toolkit can no longer be used if your organization relied on out-of-the-box digital licensing.
+
+In the past, MDT could import an image from Media Creation Tool, provided you exported the licensed Windows Edition from install.esd using DISM to an install.wim source file.
+
+This year, the above process displays the error message "the source directory does not contain an identifiable operating system."
+
+Our organization had not purchased Windows 10 Pro volume licensing, as the various manufacturers already provided digital licensing.  Each year we deploy a clean and tested customized image via MDT containing the latest security patches and organization-specific configurations.
+
+Now that MDT requires a volume license or physical media image natively containing install.wim source file, we have to revisist our deployment strategy, with very short notice.
+
+Given there has been no change to our MDT environment, aside of regular updates, I suspect a change in the Media Creation Tool ISO now prevents the detection of an OS.
+
+https://docs.microsoft.com/en-us/windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image#add-windows10-enterprise-x64-full-source
+
+[Enter feedback here]
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: e0eb8c97-caa0-bb05-4b91-14ad2adc4aac
+* Version Independent ID: 0cc541a3-8198-c029-d795-308e673ee2f4
+* Content: [Create a Windows 10 reference image (Windows 10) - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image)
+* Content Source: [windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @greg-lindsay
+* Microsoft Alias: **greglin**

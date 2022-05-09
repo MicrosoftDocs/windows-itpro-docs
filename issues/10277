@@ -1,0 +1,37 @@
+
+title:	Clarity on how to test connectivity to endpoints
+state:	OPEN
+author:	PaulKlerkx
+labels:	deployment, writer-input-required, doc-enhancement
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	10277
+--
+Hi,  I'm wondering if you can either clarify or include a link that documents the process described as - 
+
+"Ensure that devices can reach necessary Windows Update endpoints through the firewall. For example, for Windows 10, version 2004, the following protocols must be able to reach these respective endpoints"
+
+I haven't been able to find an answer to this via normal web searches.  
+I have asked the question in techcommunity forums but am not getting anywhere there.  https://techcommunity.microsoft.com/t5/windows-management/how-do-i-verify-network-endpoint-connectivity/m-p/3058723/emcs_t/S2h8ZW1haWx8dG9waWNfc3Vic2NyaXB0aW9ufEtZQlE0OEE0QkIxUlo0fDMwNTg3MjN8U1VCU0NSSVBUSU9OU3xoSw#M582 
+
+For Example - Step by Step, what is the process to ensure a device can reach *.prod.do.dsp.mp.microsoft.com and connect using TLS 1.2         
+Is there a suitable powershell command, is there a specific utility.   
+
+OR, are you saying I need to implement windows updates in a test environment, then check firewall logs for these paths to see that they are getting through.  My problem there is, what if the requests aren't visible on the firewall, does another misconfiguration mean the data isn't getting that far.  (group policy or system file issues for example) Are you saying all of these links should appear in firewall logs when I run a dism repair command with windows update as my source?
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 349d337e-ca0f-a40a-a522-bd1ae71c7d1e
+* Version Independent ID: 50f0c3b0-eaad-89c0-eb3c-878e7564d6f6
+* Content: [Windows Update troubleshooting - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/update/windows-update-troubleshooting)
+* Content Source: [windows/deployment/update/windows-update-troubleshooting.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/update/windows-update-troubleshooting.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @jaimeo
+* Microsoft Alias: **greglin**

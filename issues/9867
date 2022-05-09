@@ -1,0 +1,33 @@
+
+title:	Document flows for on-prem certificate and key trust deployments
+state:	OPEN
+author:	pfennigd
+labels:	hello-for-business, doc-enhancement
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	9867
+--
+
+Good morning,
+
+It would be especially helpful for our security team if the on-prem only certificate and key trust implementations could be documented here as well.
+
+Thanks much,
+
+Dan
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 10fcf686-1781-8a62-16bb-b26b3f5982fd
+* Version Independent ID: 37d733ad-e809-1674-ffbc-ae3d0c495423
+* Content: [How Windows Hello for Business works - Authentication - Microsoft 365 Security](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-how-it-works-authentication)
+* Content Source: [windows/security/identity-protection/hello-for-business/hello-how-it-works-authentication.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/hello-how-it-works-authentication.md)
+* Product: **w10**
+* GitHub Login: @mapalko
+* Microsoft Alias: **mapalko**

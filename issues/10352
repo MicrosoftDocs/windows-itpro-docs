@@ -1,0 +1,30 @@
+
+title:	Value does not require translation: v6Transition - Teredo_State 
+state:	OPEN
+author:	megaslowpoke
+labels:	privacy, doc-bug
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10352
+--
+Ошибочный перевод значения параметра:
+
+> Создайте новый параметр реестра REG_SZ с именем Teredo_State в разделе HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\TCPIP6Transition со значением **Отключено**.
+
+Должно быть  **Disabled**
+
+---
+#### Сведения о документе
+
+⚠ *Не вносите правки в этот раздел. Это необходимо для связывания страницы сайта docs.microsoft.com с вопросом на GitHub.*
+
+* ID: 9abd3113-b803-87b6-ef7f-6893bcc5ceb5
+* Version Independent ID: 6f7ca1ee-d19c-42bb-7db5-6158fc160e32
+* Content: [Управление подключениями к службам Майкрософт из компонентов операционной системы Windows 10 и Windows 11 - Windows Privacy](https://docs.microsoft.com/ru-ru/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services)
+* Content Source: [windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/master/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
+* Product: **m365-security**
+* Technology: **privacy**
+* GitHub Login: @TomLayson
+* Microsoft Alias: **tomlayson**

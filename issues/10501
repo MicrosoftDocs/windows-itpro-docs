@@ -1,0 +1,32 @@
+
+title:	Is policy DDF file going to be updated for latest changes?
+state:	OPEN
+author:	athamala
+labels:	client management, doc-idea
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10501
+--
+
+Hi,
+
+Are these Policy CSP DDF files still going to be updated? Or is there an alternative reference definition for possible CSP fields and values, without going through documentation web pages. 
+
+regards,
+Arto Hämäläinen
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 051c376e-e9dd-368d-0af7-ac0d997226c2
+* Version Independent ID: e49d31fa-4ba6-2140-54ee-f9564f59371b
+* Content: [Policy DDF file - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-ddf-file)
+* Content Source: [windows/client-management/mdm/policy-ddf-file.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/policy-ddf-file.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

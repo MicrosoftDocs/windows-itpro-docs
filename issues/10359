@@ -1,0 +1,103 @@
+
+title:	Windows 11 Professional is not compliant yet reported in M365 Security Portal
+state:	OPEN
+author:	Braedach
+labels:	identity protection, product-feedback
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10359
+--
+
+This tool is not available to Windows 11 Professional and needs looking at please the following is provided.
+
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\WINDOWS\system32> cd..
+PS C:\WINDOWS> cd
+PS C:\WINDOWS> cd c:\Temp
+PS C:\Temp> dir
+
+
+    Directory: C:\Temp
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        16/01/2022   7:30 AM         812802 ASR-Verification.Log
+-a----         9/02/2022   3:06 PM          64629 DG-Readiness.ps1
+-a----        16/01/2022   7:26 AM          34106 ServicesFix-3.4.Log
+
+
+PS C:\Temp> .\DG-Readiness.ps1 -capable
+
+###########################################################################
+
+Readiness Tool Version 3.7.2 Release.
+Tool to check if your device is capable to run Device Guard and Credential Guard.
+
+###########################################################################
+
+###########################################################################
+OS and Hardware requirements for enabling Device Guard and Credential Guard
+ 1. OS SKUs: Available only on these OS Skus - Enterprise, Server, Education and Enterprise IoT
+ 2. Hardware: Recent hardware that supports virtualization extension with SLAT
+To learn more please visit: https://aka.ms/dgwhcr
+###########################################################################
+
+Checking if the device is DG/CG Capable
+ ====================== Step 1 Driver Compat ======================
+Driver verifier already enabled
+Verifying each module please wait ...
+Completed scan. List of Compatible Modules can be found at C:\DGLogs\DeviceGuardCheckLog.txt
+No Incompatible Drivers found
+ ====================== Step 2 Secure boot present ======================
+Secure Boot is present
+ ====================== Step 3 MS UEFI HSTI tests ======================
+Copying HSTITest.dll
+HSTI Duple Count: 3
+HSTI Blob size: 1408
+String: 01,00,00,00,03,00,00,00,2C,00,00,00,17,02,00,00,00,00,00,00,44,02,00,00,00,00,00,00,BB,00,00,C0,44,02,00,00,39,03,00,00,00,00,00,00,03,00,00,00,02,00,00,00,41,00,4D,00,49,00,20,00,41,00,70,00,74,00,69,00,6F,00,56,00,20,00,76,00,31,00,2E,00,30,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,03,00,00,00,00,00,00,00,00,3F,00,00,3F,00,00,00,03,00,00,00,01,00,00,00,49,00,6E,00,74,00,65,00,6C,00,28,00,52,00,29,00,20,00,39,00,2D,00,53,00,65,00,72,00,69,00,65,00,73,00,20,00,76,00,31,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,03,00,00,00,FF,07,00,FF,07,00,FF,06,00,45,00,72,00,72,00,6F,00,72,00,20,00,30,00,78,00,30,00,30,00,30,00,38,00,30,00,30,00,30,00,33,00,20,00,50,00,6C,00,61,00,74,00,66,00,6F,00,72,00,6D,00,20,00,53,00,65,00,63,00,75,00,72,00,69,00,74,00,79,00,20,00,53,00,70,00,65,00,63,00,69,00,66,00,69,00,63,00,61,00,74,00,69,00,6F,00,6E,00,20,00,2D,00,20,00,4D,00,65,00,6D,00,6F,00,72,00,79,00,20,00,4D,00,61,00,70,00,20,00,53,00,65,00,63,00,75,00,72,00,69,00,74,00,79,00,20,00,43,00,6F,00,6E,00,66,00,69,00,67,00,75,00,72,00,61,00,74,00,69,00,6F,00,6E,00,20,00,2D,00,20,00,20,00,4E,00,6F,00,6E,00,20,00,6C,00,6F,00,63,00,6B,00,61,00,62,00,6C,00,65,00,20,00,4D,00,4D,00,49,00,4F,00,20,00,72,00,61,00,6E,00,67,00,65,00,73,00,20,00,6F,00,76,00,65,00,72,00,6C,00,61,00,70,00,20,00,6F,00,74,00,68,00,65,00,72,00,20,00,63,00,72,00,69,00,74,00,69,00,63,00,61,00,6C,00,20,00,72,00,65,00,67,00,69,00,6F,00,6E,00,73,00,0D,00,0A,00,00,00,00,00,00,
+HSTIStatus: False
+HSTI validation failed
+ ====================== Step 4 OS Architecture ======================
+64 bit architecture
+ ====================== Step 5 Supported OS SKU ======================
+This PC edition is Unsupported for Device Guard
+ ====================== Step 6 Virtualization Firmware ======================
+Virtualization firmware check passed
+ ====================== Step 7 TPM version ======================
+TPM 2.0 is present.
+ ====================== Step 8 Secure MOR ======================
+Secure MOR is available
+ ====================== Step 9 NX Protector ======================
+NX Protector is available
+ ====================== Step 10 SMM Mitigation ======================
+SMM Mitigation is available
+ ====================== End Check ======================
+ ====================== Summary ======================
+Machine is not Device Guard / Credential Guard compatible because of the following:
+OS SKU unsupported
+
+HSTI is absent
+
+To learn more about required hardware and software please visit: https://aka.ms/dgwhcr
+PS C:\Temp>
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: c12e9c4a-af05-9ecd-a791-ac89aa43787c
+* Version Independent ID: 76517523-a960-c5fb-ce76-2c3efe642f37
+* Content: [Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool - Windows security](https://docs.microsoft.com/en-us/windows/security/identity-protection/credential-guard/dg-readiness-tool)
+* Content Source: [windows/security/identity-protection/credential-guard/dg-readiness-tool.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/credential-guard/dg-readiness-tool.md)
+* Product: **m365-security**
+* GitHub Login: @SteveSyfuhs
+* Microsoft Alias: **stsyfuhs**

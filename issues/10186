@@ -1,0 +1,23 @@
+
+title:	Clarify kind of hardware TPMs that Windows Hello will accept for attestation
+state:	OPEN
+author:	complexspaces
+labels:	hello-for-business, doc-idea
+comments:	3
+assignees:	e0i
+projects:	
+milestone:	
+number:	10186
+--
+Currently, it is very ambiguous (and not aligned) which kind of TPM's that the [Windows Hello](https://docs.microsoft.com/en-us/windows/uwp/security/microsoft-passport) [Attestation API](https://docs.microsoft.com/en-us/uwp/api/windows.security.credentials.keycredential.getattestationasync?view=winrt-22000) will accept as "valid."
+
+Based on some preliminary testing, it is not clear at all what Windows Hello (the functionality of which used to be grouped under Microsoft's Passport technology) is using to check if a TPM supports attestation and often seems to be in disagreement with Windows' itself elsewhere. This seems like either a bug, or an oversight somewhere. Below are the support testing results:
+
+| TPM Kind | Windows' Device Security Center Reports Support | Windows Hello Reports Support |
+|-------|-------|-------|
+| Hyper-V Virtual TPM | Yes | Yes |
+| VMWare Virtual TPM | Yes | No |
+| AMD Ryzen CPU fTPM | Yes | No |
+| INTC Laptop TPM | Yes | Yes
+
+If this is not a bug and undocumented, intended behavior, I believe it should please be documented so users of the API can be aware of the limitations.

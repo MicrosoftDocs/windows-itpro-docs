@@ -1,0 +1,28 @@
+
+title:	Clarification of version compatability
+state:	OPEN
+author:	Daniel-t
+labels:	application control, doc-bug
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	9512
+--
+The "Applies to" section says that this applies to Windows Server 2016 and above, however the Windows 10 version quoted is 1709, and we are being told by MS support that this feature isn't available until Windows Server 2019.
+
+Please change the "Applies to" to refer to Windows Server 2019 rather than Server 2016, to avoid future customer confusion.
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 2586cc9a-d449-97cf-8164-c2e4bbed7c1e
+* Version Independent ID: d606e2a2-465e-6d45-62dd-d57ff85b6a1a
+* Content: [Authorize reputable apps with the Intelligent Security Graph (ISG) (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/use-windows-defender-application-control-with-intelligent-security-graph)
+* Content Source: [windows/security/threat-protection/windows-defender-application-control/use-windows-defender-application-control-with-intelligent-security-graph.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/windows-defender-application-control/use-windows-defender-application-control-with-intelligent-security-graph.md)
+* Product: **m365-security**
+* Technology: **mde**
+* GitHub Login: @jsuther1974
+* Microsoft Alias: **dansimp**

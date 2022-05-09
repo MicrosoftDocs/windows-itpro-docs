@@ -1,0 +1,16 @@
+
+title:	EnableFastFirstSignIn - Pre-configured candidate local accounts
+state:	OPEN
+author:	SivaMulpuru
+labels:	mdm, doc-enhancement
+comments:	2
+assignees:	e0i, VLG17
+projects:	
+milestone:	
+number:	10063
+--
+[Pre-configured candidate local accounts are any local accounts (pre-configured or added) in your device.](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-authentication#authentication-enablefastfirstsignin)
+
+Hi there, I think this needs additional clarification.
+
+What if the machine has multiple user profiles? How do we pre-configured a profile for this purpose?

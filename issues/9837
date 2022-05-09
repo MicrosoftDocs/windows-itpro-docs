@@ -1,0 +1,36 @@
+
+title:	Azure AD joined devices for On-premises Single-Sign On using Windows Hello for Business with VPN scenario
+state:	OPEN
+author:	NomadRex
+labels:	hello-for-business, doc-enhancement
+comments:	0
+assignees:	e0i, VLG17
+projects:	
+milestone:	
+number:	9837
+--
+
+If a user connects to VPN after sign-in with WHFB PIN or BIO, they cannot access on-prem resource until they lock/unlock screen with WHFB credential.
+
+The workaround is also discussed in this article.
+https://docs.microsoft.com/en-us/troubleshoot/windows-client/group-policy/group-membership-changes-not-updating-over-some-vpn-connections#workarounds
+
+1. Use a VPN that establishes a client connection before the user signs in.
+2. Sign in to the client computer, and then connect to the VPN as you usually do.
+    When you are sure that the client computer is connected to the VPN, lock Windows.
+    Unlock the client computer, and then sign out of Windows.
+    Sign in to Windows again.
+
+Should we add this portion to the doc as more and more customers are using AADJ with WHFB?
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 43c175ce-52a4-8b46-716f-106b4d55106c
+* Version Independent ID: 374a7e9d-6e4f-f188-328b-4ca2651a9481
+* Content: [Configure Azure AD joined devices for On-premises Single-Sign On using Windows Hello for Business - Microsoft 365 Security](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base)
+* Content Source: [windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base.md)
+* Product: **w10**
+* GitHub Login: @mapalko
+* Microsoft Alias: **mapalko**

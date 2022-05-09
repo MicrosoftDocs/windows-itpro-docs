@@ -1,0 +1,30 @@
+
+title:	Error 0x80070532
+state:	OPEN
+author:	michevnew
+labels:	hello-for-business, doc-idea
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	10358
+--
+Just run into this: 0x80070532
+
+![image](https://user-images.githubusercontent.com/38553333/153554743-1fdaf06e-e04f-4e49-a14c-a3ecfa261ce6.png)
+
+No information available in the article or online for that matter, can you please add it to the list?
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 6b4f9133-887f-17a6-95fc-3712de8a3fa1
+* Version Independent ID: 09d34ce8-1590-8202-3e70-e6299dadbb65
+* Content: [Windows Hello errors during PIN creation (Windows) - Windows security](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-errors-during-pin-creation)
+* Content Source: [windows/security/identity-protection/hello-for-business/hello-errors-during-pin-creation.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/hello-errors-during-pin-creation.md)
+* Product: **m365-security**
+* GitHub Login: @mapalko
+* Microsoft Alias: **mapalko**

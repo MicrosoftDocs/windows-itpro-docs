@@ -1,0 +1,27 @@
+
+title:	Document is missing details for event ID 3096.
+state:	OPEN
+author:	andrewjsilcock
+labels:	application control, doc-bug
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	10498
+--
+
+[Enter feedback here]
+We've noticed an additional event ID (3096) in an environment that isn't listed in the document.  The Description of the event is "No change in active Code Integrity policy {GUID} AuditSignedandReputablewithTrustedInstallerRing0 after refresh. id {ID}. Status 0x0".  Would be great if that can be added for completeness.
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 5da550e8-6065-7666-46b1-7bfb84ad775e
+* Version Independent ID: ffbb3f81-73d3-c5e9-ca5a-abbb36320661
+* Content: [Understanding Application Control event IDs (Windows) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/event-id-explanations)
+* Content Source: [windows/security/threat-protection/windows-defender-application-control/event-id-explanations.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/windows-defender-application-control/event-id-explanations.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @jsuther1974
+* Microsoft Alias: **dansimp**

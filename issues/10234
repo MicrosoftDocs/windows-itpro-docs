@@ -1,0 +1,26 @@
+
+title:	Link on Kerberos/PKInitHashAlgorithmConfiguration is broken
+state:	OPEN
+author:	tr5tn
+labels:	question, client management
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10234
+--
+The link for more information at the bottom of the Kerberos/PKInitHashAlgorithmConfiguration content is broken, and this appears to be the only source of Microsoft information right now, so I could use more info. ;) 
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: c0e4a0b3-27f0-fa12-34aa-0be9415bfba0
+* Version Independent ID: d45903ee-c06f-7ee8-6277-440e9837dcdc
+* Content: [Policy CSP - Kerberos - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-kerberos)
+* Content Source: [windows/client-management/mdm/policy-csp-kerberos.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/policy-csp-kerberos.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

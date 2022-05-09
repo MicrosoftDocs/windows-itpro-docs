@@ -1,0 +1,30 @@
+
+title:	Allow Telemetry instructions are contradictory
+state:	OPEN
+author:	callahan22
+labels:	deployment, doc-enhancement
+comments:	2
+assignees:	e0i
+projects:	
+milestone:	
+number:	10510
+--
+Allow Telemetry | 1 - Basic | Configures the maximum allowed diagnostic data to be sent to Microsoft. Individual users can still set this value lower than what the policy defines. See the following policy for more information.
+
+That's not accurate. 3 is the maximum allowed data. So now I'm not sure which to use. The stated "1" or "3" which would match the description you're giving.
+
+Can you confirm which one we use?
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 37a5ef77-5d80-ce40-7243-c96f708e907c
+* Version Independent ID: 3e24d136-6af4-2531-31fd-feac09f37901
+* Content: [Manually configuring devices for Update Compliance - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/update/update-compliance-configuration-manual)
+* Content Source: [windows/deployment/update/update-compliance-configuration-manual.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/update/update-compliance-configuration-manual.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @aczechowski
+* Microsoft Alias: **aaroncz**

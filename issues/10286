@@ -1,0 +1,31 @@
+
+title:	Correction of Windows 10 Version 
+state:	OPEN
+author:	jobykjohn
+labels:	writer-input-required, doc-bug
+comments:	2
+assignees:	e0i
+projects:	
+milestone:	
+number:	10286
+--
+
+[Enter feedback here]
+
+Instead of Starting with Windows 10, version 2006 (and in Windows 11), the Bypass option of Download Mode is no longer used, the statement should be Starting with Windows 10, version 2004 (and in Windows 11), the Bypass option of Download Mode is no longer used.
+
+I don't believe there is a Windows 10 Version 2006 as per https://docs.microsoft.com/en-us/windows/release-health/release-information
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: eb67e518-6f60-23e0-2545-c2839e2b4159
+* Version Independent ID: e9a31629-e3cb-0367-31c4-5661284d89bf
+* Content: [Delivery Optimization for Windows client updates - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/update/waas-delivery-optimization?source=docs)
+* Content Source: [windows/deployment/update/waas-delivery-optimization.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/update/waas-delivery-optimization.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @jaimeo
+* Microsoft Alias: **jaimeo**

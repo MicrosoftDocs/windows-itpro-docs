@@ -1,0 +1,29 @@
+
+title:	This value type of the SystemDrivesEnablePrebootInputProtectorsOnSlates is wrong
+state:	OPEN
+author:	goxia
+labels:	client management, doc-bug
+comments:	3
+assignees:	e0i
+projects:	
+milestone:	
+number:	10436
+--
+This value type of the SystemDrivesEnablePrebootInputProtectorsOnSlates is wrong.
+I try do at strings and integers are all wrong.
+
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 4a05802f-9d0f-9aeb-3c8e-8b92f1284202
+* Version Independent ID: 1fd9efc2-8946-75e4-27f3-95ac43a9d987
+* Content: [BitLocker CSP - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/bitlocker-csp?source=docs)
+* Content Source: [windows/client-management/mdm/bitlocker-csp.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/bitlocker-csp.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

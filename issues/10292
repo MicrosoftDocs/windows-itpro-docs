@@ -1,0 +1,28 @@
+
+title:	Support for Windows 11 & Windows Server 2022
+state:	OPEN
+author:	Fojonx
+labels:	deployment, product-question
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10292
+--
+
+Is there a timeline/roadmap for adding support for Windows 11 and Windows Server 2022 deployments to MDT?
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 02d07ede-1437-53e7-8ea5-3ee441cda67d
+* Version Independent ID: 8b657df5-9053-7611-9132-f9113d439a7c
+* Content: [Get started with the Microsoft Deployment Toolkit (MDT) (Windows 10) - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit?source=docs)
+* Content Source: [windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @greg-lindsay
+* Microsoft Alias: **greglin**

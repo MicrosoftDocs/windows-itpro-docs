@@ -1,0 +1,29 @@
+
+title:	Add information about Intune/AzureAD calculated SIDs
+state:	OPEN
+author:	Ross-Y
+labels:	question, identity protection, writer-input-required
+comments:	3
+assignees:	e0i, Dansimp, MaratMussabekov
+projects:	
+milestone:	
+number:	10212
+--
+
+Hello,
+It would be nice to add information about Intune / Azure AD calculated SIDs, which start with S-1-12-1 . You could also add script example to calculate Azure ObjectID into SID and vice versa.
+Thank you,
+Ross
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: af0ec4a3-6f79-33d7-adab-0000742fc992
+* Version Independent ID: db89d5e2-f49f-bf65-f583-a9545e6fe0bb
+* Content: [Security identifiers (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/security-identifiers)
+* Content Source: [windows/security/identity-protection/access-control/security-identifiers.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/access-control/security-identifiers.md)
+* Product: **m365-security**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

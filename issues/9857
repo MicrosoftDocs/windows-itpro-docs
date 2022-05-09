@@ -1,0 +1,33 @@
+
+title:	Can we please mention the easiest way: Get-WindowsAutopilotInfo.ps1 -Online?
+state:	OPEN
+author:	vazome
+labels:	deployment, doc-enhancement
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	9857
+--
+There is no need to do all these steps with capturing hardware ID if you just do Get-WindowsAutopilotInfo -Online via CMD (Shift + F10) in OOBE.
+```
+Set-ExecutionPolicy -Scope Bypass -Force
+Install-Script -Name Get-WindowsAutopilotInfo -Force
+Get-WindowsAutopilotInfo.ps1 -Online
+```
+Sure doing it offline is an option but in my opinion first one must be the easiest: Get-WindowsAutopilotInfo.ps1 -Online
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: bcc63299-cc1c-e031-deb7-915914b8f94e
+* Version Independent ID: 356eaba5-16b0-952f-fc19-c8d5be5feb5f
+* Content: [Demonstrate Autopilot deployment - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/demonstrate-deployment-on-vm#configure-company-branding)
+* Content Source: [windows/deployment/windows-autopilot/demonstrate-deployment-on-vm.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/windows-autopilot/demonstrate-deployment-on-vm.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @greg-lindsay
+* Microsoft Alias: **greglin**

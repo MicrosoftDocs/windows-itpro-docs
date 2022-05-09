@@ -1,0 +1,27 @@
+
+title:	Increase Virtual CPU and Memory to avoid error
+state:	OPEN
+author:	Bosjvd
+labels:	deployment, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10459
+--
+Following the article it lets you create the VM with only 1 vCPU. This will lead to an error during the "Preparing your device for mobile management" step. Basically a timeout occurs due to a lack of resources.
+Update the article to account for this. Would have saved me several hours.
+https://call4cloud.nl/2022/02/autopilot-across-the-timeout-verse/
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: bcc63299-cc1c-e031-deb7-915914b8f94e
+* Version Independent ID: 356eaba5-16b0-952f-fc19-c8d5be5feb5f
+* Content: [Demonstrate Autopilot deployment - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/demonstrate-deployment-on-vm)
+* Content Source: [windows/deployment/windows-autopilot/demonstrate-deployment-on-vm.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/windows-autopilot/demonstrate-deployment-on-vm.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @aczechowski
+* Microsoft Alias: **aaroncz**

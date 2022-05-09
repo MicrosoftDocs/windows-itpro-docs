@@ -1,0 +1,12 @@
+
+title:	Compatible browser for Network protection
+state:	OPEN
+author:	PawanGupta01
+labels:	defender for endpoint, doc-bug
+comments:	3
+assignees:	e0i
+projects:	
+milestone:	
+number:	8243
+--
+Once this feature is switch ON in blocked mode, does it have the capability to work in all the browsers apart from IE and Edge?

@@ -1,0 +1,26 @@
+
+title:	Remove the Jamf enrollment page
+state:	OPEN
+author:	mbrrg
+labels:	defender for endpoint, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	8856
+--
+Is setting up Jamf Pro device enrollment really in the scope for Defender setup? It just increases the confusion. You should expect Jamf to be setup already.
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: ba08e466-0a94-5356-6dcb-3fda32e21cf8
+* Version Independent ID: b59676b9-bf73-a885-a1d9-a84ca1107d33
+* Content: [Enroll Microsoft Defender ATP for macOS devices into Jamf Pro - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-jamfpro-enroll-devices)
+* Content Source: [windows/security/threat-protection/microsoft-defender-atp/mac-jamfpro-enroll-devices.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/microsoft-defender-atp/mac-jamfpro-enroll-devices.md)
+* Product: **w10**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

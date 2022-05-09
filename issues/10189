@@ -1,0 +1,16 @@
+
+title:	Add more documentation around TPM state used to seal Windows Hello keys
+state:	OPEN
+author:	complexspaces
+labels:	information protection, doc-idea
+comments:	1
+assignees:	e0i, MaratMussabekov
+projects:	
+milestone:	
+number:	10189
+--
+Currently, [all](https://docs.microsoft.com/en-us/windows/security/information-protection/tpm/how-windows-uses-the-tpm#windows-hello-for-business) [of](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-overview#how-windows-hello-for-business-works-key-points) [the documentation](https://docs.microsoft.com/en-us/windows/security/information-protection/tpm/tpm-recommendations#tpm-and-windows-features) around Windows Hello and use of the platform's TPM simply refers to it as such, that it "uses it." This is less than ideal as it doesn't give consumers of the Hello APIs a clear understanding around the security guarantees applied to the key material stored in the TPM, so they are unable to evaluate the possible threat model to using it.
+
+This is in contrast to the [documentation around Bitlocker](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings#about-the-platform-configuration-register-pcr), which [clearly states](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings#configure-tpm-platform-validation-profile-for-native-uefi-firmware-configurations) the PCRs that it binds to by default.
+
+I believe it would be very helpful to document these more specific details so that those evaluating using Windows Hello for key storage can get a clear image of what kind of platform threats are protected against or not, instead of hoping for the best.

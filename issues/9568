@@ -1,0 +1,36 @@
+
+title:	Great article but useless for beginners
+state:	OPEN
+author:	Anoni-Mouse
+labels:	deployment, doc-idea
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	9568
+--
+
+[Enter feedback here]
+Great article but useless for beginners. So where can I configure this settings from? 
+
+1. admin.microsoft.com
+2. endpoint.microsoft.com
+3. portal.azure.com
+4. security.microsoft.com
+5. etc
+
+Thanks
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 6443e532-640d-81c0-8215-b711bd1977d4
+* Version Independent ID: fc504984-91d7-b586-04ec-4c751fb48998
+* Content: [Windows 10 Subscription Activation - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/windows-10-subscription-activation)
+* Content Source: [windows/deployment/windows-10-subscription-activation.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/windows-10-subscription-activation.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @greg-lindsay
+* Microsoft Alias: **greglin**

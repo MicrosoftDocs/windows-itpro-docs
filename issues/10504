@@ -1,0 +1,25 @@
+
+title:	Missing Mixed Reality Portal FOD download link for 20H2
+state:	OPEN
+author:	philippitts
+labels:	client management, doc-bug
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10504
+--
+The [Enable or block Windows Mixed Reality apps in enterprises](https://docs.microsoft.com/en-us/windows/application-management/manage-windows-mixed-reality) page is missing a link to download the Mixed Reality Portal FOD for Windows 10 20H2. Mixed reality is supported on this version of Windows as confirmed by the page and on machines connected to the internet. Can this page be updated with the correct link to the 20H2 FOD for Windows Mixed Reality Portal?
+
+This issue relates to, but does not duplicate the following:
+
+https://github.com/MicrosoftDocs/windows-itpro-docs/issues/9192
+https://github.com/MicrosoftDocs/windows-itpro-docs/issues/8574
+https://github.com/MicrosoftDocs/windows-itpro-docs/issues/6742
+
+These issues have all resolved various broken links, but never added a link to the 20H2 FOD.
+
+Note: the [2004](https://software-download.microsoft.com/download/pr/6cf73b63/Microsoft-Windows-Holographic-Desktop-FOD-Package%7E31bf3856ad364e35%7Eamd64%7E%7E.cab) link is also broken on this page.
+
+Content: [Enable or block Windows Mixed Reality apps in enterprises](https://docs.microsoft.com/en-us/windows/application-management/manage-windows-mixed-reality)
+Content Source: [windows/application-management/manage-windows-mixed-reality.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/application-management/manage-windows-mixed-reality.md)

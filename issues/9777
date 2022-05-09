@@ -1,0 +1,40 @@
+
+title:	MBEC available on 7th gen Intel processors, so why not usable for Windows 11?
+state:	OPEN
+author:	Prototyped
+labels:	deployment, doc-enhancement
+comments:	3
+assignees:	e0i
+projects:	
+milestone:	
+number:	9777
+--
+There has been comment in the press based on an interview with Microsoft's David Weston, partner director of enterprise and OS security, as to why Windows 11 requires Intel 8th generation processors as a baseline (desktops: Coffee Lake, laptops: Kaby Lake Refresh):
+
+https://www.techrepublic.com/article/windows-11-understanding-the-system-requirements-and-the-security-benefits/
+
+I quote:
+
+>Eighth-generation processors also already include functionality that improves the performance of HVCI: Intel's Mode-based execute control for EPT (MBEC), AMD's Guest-mode execute trap for NPT (GMET), and ARM's Translation table stage 2 Unprivileged Execute-never (TTS2UXN). Older processors have to rely on slower, less power-frugal Restricted User Mode emulation, which is one of the reasons for the CPU requirements in Windows 11. 
+
+However, your documentation on Device Guard states Kaby Lake (7th generation Intel processors) and higher support MBEC:
+
+https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity.md#enable-virtualization-based-protection-of-code-integrity
+
+>[!NOTE] Because it makes use of Mode Based Execution Control, HVCI works better with Intel Kaby Lake or AMD Zen 2 CPUs and newer. Processors without MBEC will rely on an emulation of this feature, called Restricted User Mode, which has a bigger impact on performance.
+
+Is this a gap in documentation, or in the explanation as to why 7th generation processors are not usable with Windows 11?
+
+For what it's worth, Intel's "8th generation" processors can be from [five actual microarchitectures](https://pcper.com/2017/08/intel-announces-8th-generation-core-processors-starting-with-15-watt-quad-core-kaby-lake-refresh-for-notebooks/):
+
+- [Coffee Lake](https://ark.intel.com/content/www/us/en/ark/products/codename/97787/products-formerly-coffee-lake.html) (desktops, laptops)
+- [Kaby Lake Refresh](https://ark.intel.com/content/www/us/en/ark/products/codename/126287/products-formerly-kaby-lake-r.html) (laptops)
+- [Whiskey Lake](https://ark.intel.com/content/www/us/en/ark/products/codename/135883/products-formerly-whiskey-lake.html) (laptops)
+- [Amber Lake](https://ark.intel.com/content/www/us/en/ark/products/codename/186968/products-formerly-amber-lake-y.html) (laptops, tablets)
+- [Cannon Lake](https://ark.intel.com/content/www/us/en/ark/products/136863/intel-core-i3-8121u-processor-4m-cache-up-to-3-20-ghz.html) ([10 nm die shrink of Kaby Lake](https://en.wikipedia.org/wiki/Cannon_Lake_(microprocessor)); [one laptop model](https://www.anandtech.com/print/13405/intel-10nm-cannon-lake-and-core-i3-8121u-deep-dive-review) and [two Intel-branded small form factor desktops](https://ark.intel.com/content/www/us/en/ark/products/codename/126377/products-formerly-crimson-canyon.html))
+
+>For what Intel is calling the 8th generation, the company has explicitly stated that it will feature multiple architectures, including the Kaby Lake refresh processors (like the 15-watt CPUs announced here), Coffee Lake designs, and Cannonlake designs. It will also have parts built on the 14nm process technology node currently in use today as well as the 10nm process technology due next year.
+
+My own ThinkPad T480 is equipped with a Kaby Lake Refresh processor, and PC Health Check indicates it is eligible for Windows 11, despite it being based on the same technology as 7th generation Kaby Lake, the main difference being that these mobile processors have twice the cores available compared to the Kaby Lake mobile processors (4 instead of 2).
+
+I would suggest either fixing the documentation if indeed it is only "8th generation" Intel processors that support MBEC, or fixing the Windows 11 CPU floor.

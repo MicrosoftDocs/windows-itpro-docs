@@ -1,0 +1,31 @@
+
+title:	Deadline for patching
+state:	OPEN
+author:	Dirk-Manderin
+labels:	deployment, assigned-to-author, product-question
+comments:	2
+assignees:	e0i, itsrlyAria
+projects:	
+milestone:	
+number:	9437
+--
+A question regarding the statement 'This policy starts the countdown for the update installation deadline from when the update is published, instead of starting with the "restart pending" state as the older policies did.'.  
+If you are using a deferral for quality updates, does the countdown for the update installation begin when that referral expires, or from the actual date the update was published?
+
+For example, I have a quality update deferral of 21 days.  My deadline for quality updates is 2 days.  If the countdown truly begins when the update is published, would it not force the update installation and reboot immediately?
+I tested this by setting my deferral period to 8 days and deadline to 2 days.  As of the test, the last patch Tuesday was 14 days ago.  When I did a check for Windows Updates from the control panel, it pulls down the March 2021 update and installs it, then prompts that I have 2 days before a restart.
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 44aabe97-360e-0655-09ec-5d1e352bdb1a
+* Version Independent ID: 1c729c42-741d-ecb7-6490-a4bfdd029263
+* Content: [Enforce compliance deadlines with policies in Windows Update for Business (Windows 10) - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/update/wufb-compliancedeadlines)
+* Content Source: [windows/deployment/update/wufb-compliancedeadlines.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/update/wufb-compliancedeadlines.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @jaimeo
+* Microsoft Alias: **jaimeo**

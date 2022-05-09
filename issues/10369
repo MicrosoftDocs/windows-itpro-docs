@@ -1,0 +1,43 @@
+
+title:	AdsyncPrep.psm1 is was removed in AD Connect 2.0
+state:	OPEN
+author:	dbona75
+labels:	hello-for-business, doc-enhancement
+comments:	2
+assignees:	e0i
+projects:	
+milestone:	
+number:	10369
+--
+Hello Guys , 
+
+this procedure doesn't takes you anywhere  : https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-trust-devreg#create-service-connection-point-scp-in-active-directory because 
+
+the adsyncPrem.psm1 was removed starting AD Connect 2.0 , so is not clear how to enable hybrid cert trust deployment.
+https://docs.microsoft.com/en-us/azure/active-directory/hybrid/reference-connect-version-history#release-status-11
+
+"We removed the ADSyncPrep.psm1 module from the installation because it's no longer used." (ad connect release note) 
+
+This doc must be updated : I suspect that the ADFS registration services was de facto deprecated and is not today possible or recommended to achive cert trust with ADFS. 
+
+Thanks in advance
+
+
+
+
+
+[Enter feedback here]
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 93cb286c-03a9-187a-77a3-771c1c672342
+* Version Independent ID: 875bbfa3-7ee3-960e-9b1c-ff5216a62d8b
+* Content: [Configure Device Registration for Hybrid Azure AD joined Windows Hello for Business - Windows security](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-trust-devreg)
+* Content Source: [windows/security/identity-protection/hello-for-business/hello-hybrid-cert-trust-devreg.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-trust-devreg.md)
+* Product: **m365-security**
+* GitHub Login: @mapalko
+* Microsoft Alias: **mapalko**

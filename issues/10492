@@ -1,0 +1,51 @@
+
+title:	Two well-known SIDs still missing
+state:	OPEN
+author:	PishPoshery
+labels:	identity protection, doc-bug
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10492
+--
+
+It looks like this was identified and supposedly corrected, but I'm not seeing -503 and -504 Well-known SIDs
+https://githubhot.com/repo/MicrosoftDocs/SupportArticles-docs/issues/193
+
+Well-known SIDs missing from Documentation #193
+Hello,
+
+I've noticed that there are two well-known SIDs that are missing from the relevant documentation pages. The documentation pages I am referring to are: https://docs.microsoft.com/en-us/troubleshoot/windows-server/identity/security-identifiers-in-windows https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/security-identifiers https://docs.microsoft.com/en-us/windows/win32/secauthz/well-known-sids
+
+The two well-known SIDs and their respective accounts are: DefaultAccount S-1-5-21domain-503 WDAGUtilityAccount S-1-5-21domain-504
+
+Deland-Han
+[Deland-Han](https://githubhot.com/@Deland-Han)
+Deland-Han
+COLLABORATOR
+Created 9 months ago
+[@omry99](https://githubmemory.com/@omry99) Thank you for the feedback. I will check with our engineers team on this change.
+
+Deland-Han
+[Deland-Han](https://githubhot.com/@Deland-Han)
+Deland-Han
+COLLABORATOR
+Created 9 months ago
+Hi, we have added the information, and merge the information from https://docs.microsoft.com/en-us/troubleshoot/windows-server/identity/security-identifiers-in-windows to https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/security-identifiers.
+
+Thank you for your feedback.
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: af0ec4a3-6f79-33d7-adab-0000742fc992
+* Version Independent ID: db89d5e2-f49f-bf65-f583-a9545e6fe0bb
+* Content: [Security identifiers (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/security-identifiers)
+* Content Source: [windows/security/identity-protection/access-control/security-identifiers.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/access-control/security-identifiers.md)
+* Product: **m365-security**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

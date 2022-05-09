@@ -1,0 +1,30 @@
+
+title:	Export Enterprise Root certificate Instruction
+state:	OPEN
+author:	0phirian
+labels:	hello-for-business, product-question
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10478
+--
+
+[On the title it says Export Enterprise Root Certificate but on the instruction it's exporting the domain controller certificate.
+Please advise and clarify?]
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 43c175ce-52a4-8b46-716f-106b4d55106c
+* Version Independent ID: 374a7e9d-6e4f-f188-328b-4ca2651a9481
+* Content: [Configure Azure AD joined devices for On-premises Single-Sign On using Windows Hello for Business - Windows security](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base)
+* Content Source: [windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base.md)
+* Product: **m365-security**
+* GitHub Login: @Gitprakhar13
+* Microsoft Alias: **prsriva*
+![2022-04-13 14_37_16-Configure Azure AD joined devices for On-premises Single-Sign On using Windows H](https://user-images.githubusercontent.com/103559285/163115275-c3275378-51df-4688-bc4f-8e3c2fe76083.jpg)
+*

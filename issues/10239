@@ -1,0 +1,30 @@
+
+title:	Missing file under link  
+state:	OPEN
+author:	
+labels:	question, privacy
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10239
+--
+
+[Enter feedback here]
+Missing file under link  
+https://go.microsoft.com/fwlink/?linkid=828887
+ Windows Restricted Traffic Limited Functionality Baseline
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 9abd3113-b803-87b6-ef7f-6893bcc5ceb5
+* Version Independent ID: 6f7ca1ee-d19c-42bb-7db5-6158fc160e32
+* Content: [Manage connections from Windows 10 and Windows 11 operating system components to Microsoft services - Windows Privacy](https://docs.microsoft.com/en-us/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services)
+* Content Source: [windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
+* Product: **m365-security**
+* Technology: **privacy**
+* GitHub Login: @TomLayson
+* Microsoft Alias: **tomlayson**

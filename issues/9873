@@ -1,0 +1,28 @@
+
+title:	Deleting user diagnostic data with Windows diagnostic data processor configuration
+state:	OPEN
+author:	msftuser
+labels:	privacy, doc-idea
+comments:	2
+assignees:	e0i
+projects:	
+milestone:	
+number:	9873
+--
+When the Windows diagnostic data processor configuration is enabled, users can’t initiate deletion requests for their own data from Windows Settings.  Instead, it’s stated in the article that administrators can do so “by invoking a delete request from the admin portal”.
+
+I’ve looked through both the M365 admin portal and the Azure portal and didn’t find any settings related to Windows telemetry or diagnostic data.  Please elaborate on the deletion procedure.
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 7fb999d2-1864-9a75-8c93-44884a0d5f27
+* Version Independent ID: da983002-7246-fb74-15fb-f4415ea90ee0
+* Content: [Windows 10 & Privacy Compliance Guide - Windows Privacy](https://docs.microsoft.com/en-us/windows/privacy/windows-10-and-privacy-compliance)
+* Content Source: [windows/privacy/windows-10-and-privacy-compliance.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/privacy/windows-10-and-privacy-compliance.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @brianlic-msft
+* Microsoft Alias: **brianlic**

@@ -1,0 +1,25 @@
+
+title:	can i add MFA link in this article
+state:	OPEN
+author:	RAJU2529
+labels:	deployment, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	9832
+--
+Can I add Multi-Factor Authentication (MFA) link  in this article 
+**https://www.microsoft.com/security/blog/2020/01/15/how-to-implement-multi-factor-authentication/**
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 3fa733db-e564-bd3f-d41b-241b27b13b40
+* Version Independent ID: ef647afb-e298-af7b-5523-2076d3f2c9c6
+* Content: [Prepare for Windows 11 - What's new in Windows](https://docs.microsoft.com/en-us/windows/whats-new/windows-11-prepare)
+* Content Source: [windows/whats-new/windows-11-prepare.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/whats-new/windows-11-prepare.md)
+* Product: **w11**
+* GitHub Login: @greg-lindsay
+* Microsoft Alias: **greglin**

@@ -1,0 +1,33 @@
+
+title:	Conflict with NIST 800-63
+state:	OPEN
+author:	nchpf
+labels:	policy settings, threat-protection, doc-bug
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10453
+--
+The recommendation to enable secure desktop as a best practice conflicts with NIST's recommendation to allow pasting of passwords to enable/encourage complex passwords...
+o	https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63b.pdf?page=24
+o	https://www.thesslstore.com/blog/nist-password-pasting/
+o	https://www.ncsc.gov.uk/blog-post/let-them-paste-passwords
+
+
+
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: ac17ceb6-52c3-0b85-8dd8-998f7bffd7a5
+* Version Independent ID: ab416216-7ad6-998d-27d1-426cfd0961b2
+* Content: [User Account Control Switch to the secure desktop when prompting for elevation (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/user-account-control-switch-to-the-secure-desktop-when-prompting-for-elevation)
+* Content Source: [windows/security/threat-protection/security-policy-settings/user-account-control-switch-to-the-secure-desktop-when-prompting-for-elevation.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/security-policy-settings/user-account-control-switch-to-the-secure-desktop-when-prompting-for-elevation.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

@@ -1,0 +1,33 @@
+
+title:	error 0x80072f8f
+state:	OPEN
+author:	smadasam
+labels:	hello-for-business, Microsoft submitter, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10334
+--
+I am getting error 0x80072f8f.  What does it mean?
+
+g:\os\src>err 0x80072f8f
+# for hex 0x80072f8f / decimal -2147012721
+  WININET_E_DECODING_FAILED                                      winerror.h
+# Content decoding has failed
+
+Looking through the source code, it looks like it is maybe related to HTTPS requests, maybe something to do with the certificates or maybe compression.  Not sure.
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 6b4f9133-887f-17a6-95fc-3712de8a3fa1
+* Version Independent ID: 09d34ce8-1590-8202-3e70-e6299dadbb65
+* Content: [Windows Hello errors during PIN creation (Windows) - Windows security](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-errors-during-pin-creation)
+* Content Source: [windows/security/identity-protection/hello-for-business/hello-errors-during-pin-creation.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/hello-errors-during-pin-creation.md)
+* Product: **m365-security**
+* GitHub Login: @mapalko
+* Microsoft Alias: **mapalko**

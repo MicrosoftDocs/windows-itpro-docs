@@ -1,0 +1,35 @@
+
+title:	Is it supported or working when adding AAD Security group to Local Remote Desktop Users group?
+state:	OPEN
+author:	TommyXingSZ
+labels:	client management, doc-idea
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10497
+--
+Is it supported or working when adding AAD Security group to local Remote Desktop Users group?
+I worked with a customer that trying to grant bulk of users with RDP rights, by adding Azure AD Security group to local Remote Desktop Users group. However, the result is not as expected.
+*The AAD Security Group is added to the local Remote Desktop Users by Intune>Endpoint Security>Account Protection> the "Local user group membership" policy
+* When Network Level Authentication is enabled, RDP fails with "The connection was denied because the user account is not authorized for remote login". User token is not getting the Remote Desktop Users membership.
+* When Network Level Authentication is disabled. User can enter the credential at WinLogon window and is able to RDP.
+
+From [link](https://docs.microsoft.com/en-us/azure/active-directory/devices/assign-local-admin#manage-administrator-privileges-using-azure-ad-groups-preview), it seems the 4th point is saying AAD group is not expected.
+"Azure AD groups deployed to a device with this policy don't apply to remote desktop connections. To control remote desktop permissions for Azure AD joined devices, you need to add the individual user's SID to the appropriate group."
+
+So for the current documentation "To allow additional users or groups to connect to the PC, you must allow remote connections for the specified users or groups.", is AAD group actually supported, or it there a specific method/condition to make AAD group working?
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 72e1cc18-3fc2-d7fa-7ff3-20fc9a3596d4
+* Version Independent ID: 8ed24664-ce8c-7c08-654a-d3ef267f274f
+* Content: [Connect to remote Azure Active Directory-joined PC (Windows) - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/connect-to-remote-aadj-pc)
+* Content Source: [windows/client-management/connect-to-remote-aadj-pc.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/connect-to-remote-aadj-pc.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

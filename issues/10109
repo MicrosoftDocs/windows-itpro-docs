@@ -1,0 +1,31 @@
+
+title:	Storage to AD DS is wrong, lacks Azure
+state:	OPEN
+author:	zerqent
+labels:	information protection, writer-input-required, doc-bug
+comments:	3
+assignees:	e0i, MaratMussabekov
+projects:	
+milestone:	
+number:	10109
+--
+
+"This policy setting is used to configure the storage of BitLocker recovery information in AD DS..."
+
+This is inaccurate. Should also say that the information will be stored in Azure if the system is joined.
+
+This should also be backported to every ADMX/ADML-template.
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 5476099c-9d70-97df-8ee6-bc442605cfbd
+* Version Independent ID: 49ca0628-bd88-e05b-b705-3b361b57512d
+* Content: [BitLocker Group Policy settings (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings)
+* Content Source: [windows/security/information-protection/bitlocker/bitlocker-group-policy-settings.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings.md)
+* Product: **w10**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

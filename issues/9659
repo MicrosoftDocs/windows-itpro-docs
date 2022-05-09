@@ -1,0 +1,28 @@
+
+title:	OMA-URL for CommercialID is incorrect
+state:	OPEN
+author:	kistersr
+labels:	deployment, writer-input-required, doc-bug
+comments:	2
+assignees:	e0i
+projects:	
+milestone:	
+number:	9659
+--
+
+The OMA-URI: ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID string is incorrect. I believe the correct OMA-URI is ./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID. Can you please confirm and update the doc if necessary.
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 47a41574-4118-dff7-f9ae-047b2dbdf30f
+* Version Independent ID: 4f48d7a5-3965-60a4-221c-c519253bfc29
+* Content: [Configuring Microsoft Endpoint Manager devices for Update Compliance - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/update/update-compliance-configuration-mem?source=docs)
+* Content Source: [windows/deployment/update/update-compliance-configuration-mem.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/update/update-compliance-configuration-mem.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @jaimeo
+* Microsoft Alias: **jaimeo**

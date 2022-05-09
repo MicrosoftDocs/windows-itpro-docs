@@ -1,0 +1,27 @@
+
+title:	Totally confusing
+state:	OPEN
+author:	bencorley
+labels:	identity protection, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10326
+--
+
+So, the features requires Windows 10+ or Windows 2016+, but in the GPO screenshot we clearly see minimum support versions Windows 8.1, Windows 2012...at the end what is the minimum Windows Version supported ? Can you please clarify !?
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: c826587d-2e65-083f-254d-75f188158f08
+* Version Independent ID: 746596b5-c1df-9ea0-abcc-f6ff97874e40
+* Content: [Protect Remote Desktop credentials with Windows Defender Remote Credential Guard (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/identity-protection/remote-credential-guard)
+* Content Source: [windows/security/identity-protection/remote-credential-guard.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/remote-credential-guard.md)
+* Product: **m365-security**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

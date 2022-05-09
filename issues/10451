@@ -1,0 +1,27 @@
+
+title:	Window manager\Window Manager Group - defining the Group policy by default removes it, how to add it back.  
+state:	OPEN
+author:	PaulKlerkx
+labels:	policy settings, threat-protection, doc-enhancement
+comments:	2
+assignees:	e0i
+projects:	
+milestone:	
+number:	10451
+--
+
+Hi, this page states that "removing Window manager\Window Manager Group" causes problems, however to set the group policy, you enable the policy, then have to define what users/groups have access, however there doesn't appear to be a clear method of adding this entry to the policy.  If you can't add it, then it is by default removed.  It would be an improvement to this page to detail the process of adding this entry when defining the policy.  (Bing Search of the web didn't return a clear method either)
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: f26917db-f3e1-eb86-7b8f-090018f5d4d7
+* Version Independent ID: f5d2f03c-7e77-ff58-9726-258f9a541f11
+* Content: [Increase scheduling priority (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/increase-scheduling-priority)
+* Content Source: [windows/security/threat-protection/security-policy-settings/increase-scheduling-priority.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/security-policy-settings/increase-scheduling-priority.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

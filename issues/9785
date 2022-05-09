@@ -1,0 +1,45 @@
+
+title:	Examples in "You have a bad setup in the environment" are wrong
+state:	OPEN
+author:	mark-phaedrus
+labels:	deployment, Microsoft submitter, doc-idea
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	9785
+--
+Both of the examples in the "You have a bad setup in the environment" section of this page have serious problems.
+
+### First Example
+
+The first example in the "You have a bad setup in the environment" section shows OperationalInsight scanning against a WSUS server with the search criteria IsHidden=0 AND DeploymentAction=* . The text then provides the following explanation of a problem.
+
+> In the above log snippet, we see that the Criteria = "IsHidden = 0 AND DeploymentAction=*". "*" means there is nothing specified from the server. So, the scan happens but there is no direction to download or install to the agent. So it just scans the update and provides the results.
+
+I'm not at all sure what problem this is intended to demonstrate. But whatever problem there is, the explanation is wrong. :)
+
+- It is certainly true that this search criteria string _allows_ updates that have not been approved for install/uninstall to be returned in the search results. But saying that _the search criteria itself_ means that "there is nothing specified from the server" is incoherent.
+- Since the logs shown in the example are not verbose, there is no way of knowing what the properties are of those 83 updates that were returned. So saying that none of those updates are approved for install/uninstall is a blind guess that may or may not be correct.
+- The CallerId of OperationalInsight means that this search is not being done by Automatic Updates. It is therefore completely up to the calling application to decide what to do with those search results. If the caller is just doing an inventory of the system, it may be completely intentional that the caller is then not installing any of the updates that are returned.
+- There is another potential problem shown in these logs that is not discussed in the text. This is an offline scan (see the "Online = No" in the log). An offline scan does not sync with the server for updates; it only operates on the update metadata that has been retrieved in previous searches. So if Automatic Updates is disabled and there is no other application on the box that's done an online scan recently, it may very well be that the search isn't returning installable updates because the device hasn't learned that those installable updates exist yet.
+
+As a result of these problems, this example probably harms the reader's understanding more than it helps.
+
+### Second Example
+
+The second example is better, in the sense that nothing it says is definitely wrong. But again, since these logs are non-verbose, we have no idea what updates are being returned or what their properties are. So saying that they aren't approved for install is a blind guess.
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 349d337e-ca0f-a40a-a522-bd1ae71c7d1e
+* Version Independent ID: 50f0c3b0-eaad-89c0-eb3c-878e7564d6f6
+* Content: [Windows Update troubleshooting - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/update/windows-update-troubleshooting#feedback)
+* Content Source: [windows/deployment/update/windows-update-troubleshooting.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/update/windows-update-troubleshooting.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @jaimeo
+* Microsoft Alias: **greglin**

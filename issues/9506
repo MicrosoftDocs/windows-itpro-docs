@@ -1,0 +1,25 @@
+
+title:	Azure MFA using WHFB no longer supported
+state:	OPEN
+author:	jgallucci32
+labels:	hello-for-business, doc-bug
+comments:	8
+assignees:	e0i, VLG17
+projects:	
+milestone:	
+number:	9506
+--
+We were informed by MSFT support today that following these instructions when using Azure AD Connect even though it is fully functional is no longer supported. Please update the documentation to provide a warning to users wanting to use the on-premise model with Azure MFA using Azure AD Connect that they cannot use this method. Instead they must re-deploy with one of the Hybrid models.
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 12c2ca3e-9d15-5a4a-971a-bc1eb3cb2637
+* Version Independent ID: ca1f6f75-8129-24d1-2426-21effa0ab151
+* Content: [Validate and Deploy MFA for Windows Hello for Business with key trust - Microsoft 365 Security](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-key-trust-validate-deploy-mfa)
+* Content Source: [windows/security/identity-protection/hello-for-business/hello-key-trust-validate-deploy-mfa.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/hello-key-trust-validate-deploy-mfa.md)
+* Product: **w10**
+* GitHub Login: @mapalko
+* Microsoft Alias: **mapalko**

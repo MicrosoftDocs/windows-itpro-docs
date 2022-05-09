@@ -1,0 +1,26 @@
+
+title:	PIN recovery under Account Protection (Endpoint Security)
+state:	OPEN
+author:	lucafabbri365
+labels:	identity protection, doc-bug
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	10461
+--
+Hello,
+please, look at [Create a PIN Reset Device configuration profile using Microsoft Intune](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-feature-pin-reset#create-a-pin-reset-device-configuration-profile-using-microsoft-intune) section, second point _2. Click Endpoint Security > Account Protection > Properties_: may be I'm in wrong, however I cannot see any "Properties" (You have to Create Policy or edit existing one).
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: d9dae9da-eaf0-c209-7c65-be8d2c1ada12
+* Version Independent ID: 28b6788d-7982-23c2-5f19-f80690ebc0ce
+* Content: [Pin Reset - Windows security](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-feature-pin-reset)
+* Content Source: [windows/security/identity-protection/hello-for-business/hello-feature-pin-reset.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/hello-feature-pin-reset.md)
+* Product: **m365-security**
+* GitHub Login: @Gitprakhar13
+* Microsoft Alias: **prsriva**

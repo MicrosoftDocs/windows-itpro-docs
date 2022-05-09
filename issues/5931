@@ -1,0 +1,26 @@
+
+title:	Clarification on data latency and troubleshooting?
+state:	OPEN
+author:	sdxfuj
+labels:	deployment, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	5931
+--
+If you get unexpected results, like seeing the device configuration for download mode but content distribution contains no data, is that due to data latency, incorrect telemetry settings or something else? Consider clarifying expectations and troubleshooting, common errors etc for us admins.
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 2399593c-cd60-af48-04c8-d6718cd3d1ec
+* Version Independent ID: 20dedc08-413b-fda3-622a-f5c1058f85ca
+* Content: [Delivery Optimization in Update Compliance (Windows 10) - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/update/update-compliance-delivery-optimization)
+* Content Source: [windows/deployment/update/update-compliance-delivery-optimization.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/update/update-compliance-delivery-optimization.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @jaimeo
+* Microsoft Alias: **jaimeo**

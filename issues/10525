@@ -1,0 +1,35 @@
+
+title:	RDP from Azure AD Registered Device - tenants
+state:	OPEN
+author:	fowl2
+labels:	doc-enhancement
+comments:	0
+assignees:	
+projects:	
+milestone:	
+number:	10525
+--
+According to article, Azure AD registered device are supported:
+
+> Your local PC (where you're connecting from) must be ... [Azure AD registered](https://docs.microsoft.com/en-us/azure/active-directory/devices/concept-azure-ad-register) if using Windows 10, version 2004 and above. Remote connections to an Azure AD-joined PC from an unjoined device or a non-Windows 10 device aren't supported.
+
+But then it goes on to say:
+
+> The local PC and remote PC must be in the same Azure AD tenant. 
+
+A device can be registered to multiple tenants. What does "in" mean in this context? Does the device have to be registered to only one tenant? Is it the first tenant?
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 72e1cc18-3fc2-d7fa-7ff3-20fc9a3596d4
+* Version Independent ID: 8ed24664-ce8c-7c08-654a-d3ef267f274f
+* Content: [Connect to remote Azure Active Directory-joined PC (Windows) - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/connect-to-remote-aadj-pc)
+* Content Source: [windows/client-management/connect-to-remote-aadj-pc.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/connect-to-remote-aadj-pc.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

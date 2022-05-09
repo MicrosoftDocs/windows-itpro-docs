@@ -1,0 +1,40 @@
+
+title:	Confusion regarding AppLocker CSP support with Windows 10 Business edition
+state:	OPEN
+author:	theonlycoder
+labels:	mdm, doc-enhancement
+comments:	11
+assignees:	e0i
+projects:	
+milestone:	
+number:	9560
+--
+Hi,
+
+In the matrix showing which CSPs are supported on which Windows 10 editions, the AppLocker CSP is listed as being supported on all editions of Windows 10 other than Windows 10 Business.
+
+However, the AppLocker documentation @ https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/requirements-to-use-applocker says the following:
+
+> _"You can use the AppLocker CSP to configure AppLocker policies on any edition of Windows 10 supported by Mobile Device Management (MDM)."_
+
+In the same table it also makes clear that all AppLocker rule types can be configured and enforced on "Windows 10". Nowhere within the article is there any mention of any editions being excluded.
+
+My (possibly flawed) thinking would be that because Windows 10 Business is just the edition that Windows 10 Pro changes to when enrolled into Microsoft 365, you would expect the same AppLocker functionality that is available on Pro edition to be available if the install is converted to Business edition.
+
+It would be good to get some clarity on this in the documentation.
+
+Thanks in advance!
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 162c8434-b3ab-e235-43ce-ed435d6cd06e
+* Version Independent ID: 18b29b82-f1ad-81b8-2ea4-f7bebc506487
+* Content: [Configuration service provider reference - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/configuration-service-provider-reference)
+* Content Source: [windows/client-management/mdm/configuration-service-provider-reference.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/configuration-service-provider-reference.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @ManikaDhiman
+* Microsoft Alias: **dansimp**

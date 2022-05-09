@@ -1,0 +1,28 @@
+
+title:	Undocumented error when distributing a package via WSUS Package Publisher.
+state:	OPEN
+author:	gva1964
+labels:	deployment, writer-input-required, doc-idea
+comments:	2
+assignees:	e0i
+projects:	
+milestone:	
+number:	10281
+--
+
+[Введите отзыв здесь]
+Error downloading updates 0x8024b303
+
+---
+#### Сведения о документе
+
+⚠ *Не вносите правки в этот раздел. Это необходимо для связывания страницы сайта docs.microsoft.com с вопросом на GitHub.*
+
+* ID: f76d96ac-5343-20e2-9d99-9c1cea7ccc2e
+* Version Independent ID: a95c9b39-4a66-d726-4404-de5af60ac982
+* Content: [Список кодов ошибок Центра обновления Windows с разбивкой по компонентам - Windows Deployment](https://docs.microsoft.com/ru-ru/windows/deployment/update/windows-update-error-reference#feedback)
+* Content Source: [windows/deployment/update/windows-update-error-reference.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/master/windows/deployment/update/windows-update-error-reference.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @jaimeo
+* Microsoft Alias: **greglin**

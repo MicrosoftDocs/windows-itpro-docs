@@ -1,0 +1,27 @@
+
+title:	MSChapV2 Issues
+state:	OPEN
+author:	jeffdfield
+labels:	credential guard, doc-idea
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10379
+--
+
+You should add the known issue that credential guard doesn't work with MSCHAPv2 configurations and I would love it if you mentioned Cisco ISE as that is a very popular enterprise implementation of MSCHAPv2.
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 1f5b9ff0-c74a-81e0-d9c8-7f42a97e872b
+* Version Independent ID: 5ab185fd-8de6-5481-829c-ae12022d836c
+* Content: [Windows Defender Credential Guard - Known issues (Windows) - Windows security](https://docs.microsoft.com/en-us/windows/security/identity-protection/credential-guard/credential-guard-known-issues)
+* Content Source: [windows/security/identity-protection/credential-guard/credential-guard-known-issues.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/credential-guard/credential-guard-known-issues.md)
+* Product: **m365-security**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

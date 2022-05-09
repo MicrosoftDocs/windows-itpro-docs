@@ -1,0 +1,53 @@
+
+title:	Service Connection Point (SCP) in Active Directory for ADFS Device Registration Service
+state:	OPEN
+author:	kklouzal
+labels:	hello-for-business, product-feedback
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10341
+--
+
+The 'Service Connection Point (SCP) in Active Directory for ADFS Device Registration Service' section needs a note or further investigation or something.
+
+Windows Server 2019 CONSTANTLY throws errors in the event log pertaining directly to this. I'm not sure if it can be ignored or if it's screaming at me that something is fundamentally broken with my configuration. In an on-prem setup we get tons of these errors in the event log:
+
+Error 3036:
+
+> The description for Event ID 3036 from source Device Registration Service cannot be found. Either the component that raises this event is not installed on your local computer or the installation is corrupted. You can install or repair the component on the local computer.
+> 
+> If the event originated on another computer, the display information had to be saved with the event.
+> 
+> The following information was included with the event: 
+> 
+> none.
+> System.InvalidOperationException: Invalid or missing tenant information in Active Directory. Make sure you have configured the Service Connection Point (SCP) here: CN=62a0ff2e-97b9-4513-943f-0d221bd30080,CN=Device Registration Configuration,CN=Services,CN=Configuration,(forest-dn).
+> Exception (if any): none
+>    at Microsoft.DeviceRegistration.ADAdapter.AdrsTenantInfoUtil.GetTenantInfo(AdrsTenantConfigStore StoreType)
+>    at Microsoft.DeviceRegistration.ADAdapter.AdrsTenantInfoUtil.GetTenantInfo()
+>    at Microsoft.DeviceRegistration.ADAdapter.ADStore.<>c.<LookupTenantNameAsync>b__180_0()
+>    at System.Threading.Tasks.Task`1.InnerInvoke()
+>    at System.Threading.Tasks.Task.Execute()
+> --- End of stack trace from previous location where exception was thrown ---
+>    at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+>    at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+>    at Microsoft.DeviceRegistration.Utilities.DRServiceManager.<RefreshKeyReceiptPublicCertsAsync>d__114.MoveNext()
+> 
+> The locale specific resource for the desired message is not present
+
+Now you tell me, is something broken with my configuration? The docs don't mention anything about this. They need to..
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: b063e00b-84e5-9da7-2229-e0e24da3b877
+* Version Independent ID: da9f4867-2aa3-aefa-1603-ddb2ab1ed624
+* Content: [Prepare and Deploy Windows AD FS certificate trust (Windows Hello for Business) - Windows security](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-cert-trust-adfs)
+* Content Source: [windows/security/identity-protection/hello-for-business/hello-cert-trust-adfs.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/hello-cert-trust-adfs.md)
+* Product: **m365-security**
+* GitHub Login: @mapalko
+* Microsoft Alias: **mapalko**

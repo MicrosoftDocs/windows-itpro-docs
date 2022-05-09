@@ -1,0 +1,34 @@
+
+title:	Get-DeliveryOptimizationPerfSnap has a new option -PeerInfo
+state:	OPEN
+author:	clamb123
+labels:	deployment, doc-bug
+comments:	2
+assignees:	e0i, narkissit
+projects:	
+milestone:	
+number:	8239
+--
+
+[Enter feedback here]
+The doc says:
+Starting in Windows 10, version 2004, Get-DeliveryOptimizationPerfSnap has a new option -PeerInfo which returns a real-time list of the connected peers.
+
+No it doesn't! See attachment.
+
+![PeerInfo](https://user-images.githubusercontent.com/66670497/92480384-ba5d5780-f1dc-11ea-8b28-8beaf06831aa.png)
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 8d745280-391c-4f6d-6a35-7125fa263548
+* Version Independent ID: 0ccd8add-b5fb-469c-509e-e009c43a00ac
+* Content: [Set up Delivery Optimization - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/update/waas-delivery-optimization-setup)
+* Content Source: [windows/deployment/update/waas-delivery-optimization-setup.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/update/waas-delivery-optimization-setup.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @jaimeo
+* Microsoft Alias: **jaimeo**

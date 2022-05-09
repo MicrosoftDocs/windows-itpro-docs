@@ -1,0 +1,39 @@
+
+title:	Is regularly clearing the NodeCache problematic?
+state:	OPEN
+author:	Mike-Crowley
+labels:	client management, product-question
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10329
+--
+Obviously this will consume, CPU, bandwidth, etc, but is regularly clearing the NodeCache problematic? 
+Example use case:
+
+If I wanted to force windows to re-download the LockScreenImageUrl on a regular basis (part of PersonalizationCSP), I can do something like this:
+
+`Clear-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Provisioning\NodeCache\CSP\Device\MS DM Server\' -Name CacheVersion`
+
+`Clear-ItemProperty -Path 'HKLM:SOFTWARE\Microsoft\Windows\CurrentVersion\PersonalizationCSP' -Name LockScreenImageUrl`
+
+`Get-ScheduledTask 'Schedule #1 created by enrollment client' | Start-ScheduledTask`
+
+This achieves the desired result, but will it lead to exhaustion of Node IDs or a similar long-term problem?
+
+(I notice the workstation generates new keys when this happens. Is there an upper limit?)
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 8acbb6a2-add6-98e1-7670-472b114f7e42
+* Version Independent ID: 787a0834-ec2b-2dfb-3b41-d31830a8c49d
+* Content: [NodeCache CSP - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/nodecache-csp)
+* Content Source: [windows/client-management/mdm/nodecache-csp.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/nodecache-csp.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

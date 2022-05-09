@@ -1,0 +1,19 @@
+
+title:	MsiInstallJob with installation parametres
+state:	OPEN
+author:	elshobokshy
+labels:	question, product-feedback
+comments:	2
+assignees:	e0i
+projects:	
+milestone:	
+number:	10376
+--
+Hello,
+
+I'm trying to install an application using the .msi file and a MsiInstallJob XML file.
+
+However, the installation fails because the .msi contains fields that needs to be filled (credential fields). Is there a way to add, inside the XML file, the value to use inside those fields?
+
+Kind regards,
+Alexandre

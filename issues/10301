@@ -1,0 +1,27 @@
+
+title:	REquire Update for creation app policy for WIP from Endpoint Manager admin
+state:	OPEN
+author:	AshishOnGit
+labels:	information protection, doc-enhancement
+comments:	2
+assignees:	e0i
+projects:	
+milestone:	
+number:	10301
+--
+
+[Enter feedback here]
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 31038d8d-6b71-6b34-6590-81cb35c5954c
+* Version Independent ID: db01fe97-9a4a-c852-5763-f0f4c28b6efd
+* Content: [Create a Windows Information Protection (WIP) policy using Microsoft Intune (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/information-protection/windows-information-protection/overview-create-wip-policy)
+* Content Source: [windows/security/information-protection/windows-information-protection/overview-create-wip-policy.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/information-protection/windows-information-protection/overview-create-wip-policy.md)
+* Product: **m365-security**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

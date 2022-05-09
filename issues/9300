@@ -1,0 +1,19 @@
+
+title:	Section of what data is collected by MDE
+state:	OPEN
+author:	YulelogPagoda
+labels:	defender for endpoint, Microsoft submitter, doc-idea
+comments:	3
+assignees:	Dansimp, nam31
+projects:	
+milestone:	
+number:	9300
+--
+I'm sitting on the phone with a bank that wants to use this product and we've had four or five calls talking about data handling.... they want to have this data in very clear terms. 
+
+_"file data (such as file names, sizes, and hashes)"?_ 
+does that mean the files will be collected? 
+_"process data (running processes, hashes)"_
+does this mean the process memory? 
+
+This kind of stuff has to be very specific.

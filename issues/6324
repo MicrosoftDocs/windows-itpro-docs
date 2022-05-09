@@ -1,0 +1,26 @@
+
+title:	Missing code 0x80070643
+state:	OPEN
+author:	LuigiBruno
+labels:	deployment, doc-bug
+comments:	2
+assignees:	e0i
+projects:	
+milestone:	
+number:	6324
+--
+Add description for the error code 0x80070643.
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: f76d96ac-5343-20e2-9d99-9c1cea7ccc2e
+* Version Independent ID: a95c9b39-4a66-d726-4404-de5af60ac982
+* Content: [Windows Update error code list by component - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/update/windows-update-error-reference?source=docs#feedback)
+* Content Source: [windows/deployment/update/windows-update-error-reference.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/update/windows-update-error-reference.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @jaimeo
+* Microsoft Alias: **greglin**

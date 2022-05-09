@@ -1,0 +1,28 @@
+
+title:	Additional Information Needed
+state:	OPEN
+author:	Turranx
+labels:	policy settings, threat-protection, doc-bug
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10384
+--
+
+Where is the link to the page that explains how "remote servers" are determined?
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 761d0db6-1f42-1ec5-ea01-c1543d4f7e6c
+* Version Independent ID: ac0eafd4-9efa-272c-b873-fc4d9e129973
+* Content: [Network security Restrict NTLM Outgoing traffic (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/network-security-restrict-ntlm-outgoing-ntlm-traffic-to-remote-servers)
+* Content Source: [windows/security/threat-protection/security-policy-settings/network-security-restrict-ntlm-outgoing-ntlm-traffic-to-remote-servers.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/security-policy-settings/network-security-restrict-ntlm-outgoing-ntlm-traffic-to-remote-servers.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

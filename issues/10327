@@ -1,0 +1,32 @@
+
+title:	Documentation not exact
+state:	OPEN
+author:	ggbce
+labels:	deployment, doc-enhancement
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	10327
+--
+
+[Enter feedback here]
+
+In this page, it tell: 
+
+Microsoft is committed to providing bug fixes and security patches for each LTSC release during this 10 year period.
+
+But in some other Microsof pages, for Windows 10 LTSC 2021 (based on 21H2) it's not telling the support will be for 10 years... ? Can you confirm/clarify what the exact EOL for security patches for this version.
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 684ab805-b732-043b-9d4c-e8c02660557a
+* Version Independent ID: 5c288d08-f2cb-3927-93cb-acb2412fc62c
+* Content: [Windows 10 Enterprise LTSC - What's new in Windows](https://docs.microsoft.com/en-us/windows/whats-new/ltsc/)
+* Content Source: [windows/whats-new/ltsc/index.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/whats-new/ltsc/index.md)
+* Product: **w10**
+* GitHub Login: @greg-lindsay
+* Microsoft Alias: **greglin**

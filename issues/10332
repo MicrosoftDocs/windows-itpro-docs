@@ -1,0 +1,29 @@
+
+title:	Microsoft Security Guidance blog is no longer maintained
+state:	OPEN
+author:	rlsheldon
+labels:	policy settings, threat-protection, docs-experience
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10332
+--
+
+[Enter feedback here]
+
+For the Using the Security Compliance Manager section, it refers us to the Microsoft Security Guidance blog, which indicates it is no longer maintained. Please provide a current resource, if such exists, for this option. Or clarify to which versions of Windows this option applies.
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 17448d52-0861-20e9-b74a-a433c88c5104
+* Version Independent ID: 7d2bc2f7-e38d-c990-2fee-c65e2d7f9559
+* Content: [Administer security policy settings (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/administer-security-policy-settings?source=docs#using-the-security-compliance-manager)
+* Content Source: [windows/security/threat-protection/security-policy-settings/administer-security-policy-settings.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/security-policy-settings/administer-security-policy-settings.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

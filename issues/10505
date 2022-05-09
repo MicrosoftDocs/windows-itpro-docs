@@ -1,0 +1,32 @@
+
+title:	Information for UEFI network boot to load Windows PE 
+state:	OPEN
+author:	mqqqqqqq
+labels:	deployment, writer-input-required, doc-enhancement
+comments:	1
+assignees:	e0i, aczechowski
+projects:	
+milestone:	
+number:	10505
+--
+Hi,
+I was looking at this document to attempt to UEFI network boot WinPE (Windows 10), but it seems this is more for legacy bios instead of UEFI.  Is there any pointers on how to get this to work under UEFI?
+
+Thanks,
+
+Mike
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: a6a95648-e93d-fdd5-b52f-afca6e49a139
+* Version Independent ID: 607d9bc8-de81-eb28-5326-434e1cf6a696
+* Content: [Configure a PXE server to load Windows PE (Windows 10) - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/configure-a-pxe-server-to-load-windows-pe)
+* Content Source: [windows/deployment/configure-a-pxe-server-to-load-windows-pe.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/configure-a-pxe-server-to-load-windows-pe.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @aczechowski
+* Microsoft Alias: **aaroncz**

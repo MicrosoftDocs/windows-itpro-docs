@@ -1,0 +1,12 @@
+
+title:	FIPS 201-2 Compliance for Windows 10 Enterprise v 1903
+state:	OPEN
+author:	datocrats-org
+labels:	assigned-to-author, threat-protection, product-question
+comments:	2
+assignees:	e0i, Dansimp
+projects:	
+milestone:	
+number:	6000
+--
+Please update this article to include the newer release of Windows 10 Enterprise (v 1903) and reference the specific NIST certificates.  This info is necessary to remain in compliance with FIPS requirements, without it the rest of the great info and content you provide will not be useful because the NIST certification behind them cannot be easily referenced.  

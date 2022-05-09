@@ -1,0 +1,26 @@
+
+title:	Process question
+state:	OPEN
+author:	rconiv
+labels:	question, client management
+comments:	0
+assignees:	e0i, joinimran
+projects:	
+milestone:	
+number:	10173
+--
+Is step 1 under Verify auto-enrollment requirements and settings still valid for verifying a user has the InTune license?  I am thinking not, since InTune was rolled in to Endpoint Protection
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: ad012591-5c74-f1cd-d3a2-443768e8ceee
+* Version Independent ID: 918ea4bc-0849-3745-5d9d-a21a973bcd3b
+* Content: [Enroll a Windows 10 device automatically using Group Policy - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy#configure-the-auto-enrollment-for-a-group-of-devices)
+* Content Source: [windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

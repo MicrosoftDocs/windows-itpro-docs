@@ -1,0 +1,16 @@
+
+title:	0x8024402D code missing from docs reference
+state:	OPEN
+author:	gilm0079
+labels:	deployment, product-feedback, writer-input-required
+comments:	1
+assignees:	e0i, dougeby
+projects:	
+milestone:	
+number:	10400
+--
+Back Story: We have issues in our domain with computers most of the time not being able to check for windows updates. I've exhausted all troubleshooting steps I've found online. A while back we added the ability for Kaspersky's admin server to handle windows updates. It does a discovery process of scanning the PC. It seems like it first queries the target machine's windows update service then if that fails does its own discovery scan as a failback. Kaspersky also has issues getting results from the windows update service and the failback has worked for us most of the time.
+
+I tried to do a little more research on the errors today and Kaspersky's discovery kicked back this error:
+```
+System patch management: Windows Update Agent error 8024402d #1181 (-2145107923) COM error 0x8024402D (wcode: 0) ''<5xppaALmx6aaJAgipsaZj0>Error details: 1181/-2145107923 (COM error 0x8024402D (wcode: 0) ''), c:_6vlf7p9h\s

@@ -1,0 +1,32 @@
+
+title:	Use Azure RMS for WIP. Determines whether WIP uses Microsoft Azure Rights Management
+state:	OPEN
+author:	lightupdifire
+labels:	information protection, doc-bug
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10331
+--
+Hello,
+
+I don't think that "Azure Rights Management" is good here, as far I know Azure Rights Management has been replaced by Unified Labeling isn't it?
+
+And hyperlink is broken "Use Azure RMS for WIP. Determines whether WIP uses **Microsoft Azure Rights Management**"
+Here I guess it should point to https://docs.microsoft.com/en-us/azure/information-protection/what-is-azure-rms
+
+So could be good to update the link and maybe to replace the naming? As possibly no longer possible to deploy Azure Rights Management or Azure Information Protection, only the Office 365 Unified Labeling.
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 7df27add-73fe-4f0b-7e30-face0f95cda3
+* Version Independent ID: 3ec647d9-3470-8d8b-a941-d56f6522a35e
+* Content: [Create a Windows Information Protection (WIP) policy with MDM using the Azure portal for Microsoft Intune (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
+* Content Source: [windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure.md)
+* Product: **m365-security**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

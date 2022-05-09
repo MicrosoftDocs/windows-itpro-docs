@@ -1,0 +1,34 @@
+
+title:	Images missing in archived content / active content linking to hard to read archived content
+state:	OPEN
+author:	grangeway
+labels:	client management, product-question
+comments:	2
+assignees:	e0i
+projects:	
+milestone:	
+number:	10168
+--
+Hello Team,
+
+The section on DPC_WATCHDOG_VIOLATION and debugging links to a guide on how to analyze this particular error message, which goes to archived content at https://docs.microsoft.com/en-us/archive/blogs/ntdebugging/determining-the-source-of-bug-check-0x133-dpc_watchdog_violation-errors-on-windows-server-2012
+
+For the variant where parameter is 1, it then links to https://docs.microsoft.com/en-us/archive/blogs/ntdebugging/part-3-etw-methods-of-tracing - where none of the images in the content work any longer.
+
+Is there any chance of getting this content recovered, or of updating the original links to provide a current guide to how to set up ETW kernel tracing ?
+
+Thanks
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 3b85544e-69dc-04ef-3ae7-98864d7a7529
+* Version Independent ID: af0af832-7663-ab3b-7283-2948819465ac
+* Content: [Advanced troubleshooting for Stop error or blue screen error issue - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/troubleshoot-stop-errors)
+* Content Source: [windows/client-management/troubleshoot-stop-errors.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/troubleshoot-stop-errors.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

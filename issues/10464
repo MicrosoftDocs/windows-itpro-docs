@@ -1,0 +1,35 @@
+
+title:	Missing Options for Write debugging information
+state:	OPEN
+author:	TroySAJordan
+labels:	client management, doc-bug
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	10464
+--
+You are missing information on the *Write debugging information* section as per below.
+
+| Option | Documented |
+| --- | --- |
+| (none) | True |
+| Small Memory Dump | True |
+| Kernel Memory Dump | True |
+| Complete Memory Dump | True |
+| Automatic Memory Dump | False |
+| Active Memory Dump | False |
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 15dba2f3-d2e9-592e-b724-a2166213fc25
+* Version Independent ID: 4b63e388-c87b-3173-c623-a12d791b224e
+* Content: [Configure system failure and recovery options in Windows - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/system-failure-recovery-options)
+* Content Source: [windows/client-management/system-failure-recovery-options.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/system-failure-recovery-options.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Deland-Han
+* Microsoft Alias: **delhan**

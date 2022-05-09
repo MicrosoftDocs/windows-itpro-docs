@@ -1,0 +1,16 @@
+
+title:	Improve Apply a provisioning package article
+state:	OPEN
+author:	aisgbnok
+labels:	deployment, doc-bug
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10462
+--
+## Summary
+
+Some of the provisioning package articles are out of date. For example, the user flow in [Apply a provisioning package](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-apply-package) is based on EOL versions of Windows 10, I think I even see a screenshot of the settings page that is pre fluent design (before build 1803).
+
+I use provisioning packages regularly and would love for some of these outdated pages to be updated. I would also be thrilled to contribute to these pages.

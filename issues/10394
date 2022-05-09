@@ -1,0 +1,29 @@
+
+title:	Good sample - needs builder
+state:	OPEN
+author:	Degies
+labels:	client management, doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10394
+--
+Good page and good info. A builder to generate that xml would be nice for those of us to scared to code stuff and break stuff. 
+thx thx help help pls pls export | would be valuable = true
+[Enter feedback here]
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: e88a1cfd-be05-05d9-41b8-9eb201b03262
+* Version Independent ID: 08c5ce8e-63c9-2f24-c0ee-8ac5d5218371
+* Content: [Policy CSP - ExploitGuard - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-exploitguard)
+* Content Source: [windows/client-management/mdm/policy-csp-exploitguard.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/policy-csp-exploitguard.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

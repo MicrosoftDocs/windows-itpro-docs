@@ -1,0 +1,28 @@
+
+title:	BitLocker Network Unlock Certificate Creation
+state:	OPEN
+author:	TRLABz
+labels:	bitlocker, in progress, doc-idea
+comments:	4
+assignees:	e0i
+projects:	
+milestone:	
+number:	7002
+--
+
+[HI.  Please see Step 6 under "Create the Network Unlock Certificate" Here: https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-how-to-enable-network-unlock#create-the-network-unlock-certificate. It mentions setting up a "Friendly Name" but that doesn't seem to be what is required. It needs either a Subject Name or an Alternative Name, but the instructions are not clear about what to provide for either of those.  See this SpiceWorks article for details: https://community.spiceworks.com/topic/2149260-setting-up-bitlocker-network-unlock. Thank you!]
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 91c13083-9b29-e54b-fd85-8033ec665fcd
+* Version Independent ID: ce8c4647-69bc-95d4-2192-6e737d5ad5da
+* Content: [BitLocker How to enable Network Unlock (Windows 10) - Microsoft 365 Security](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-how-to-enable-network-unlock#create-the-certificate-template-for-network-unlock)
+* Content Source: [windows/security/information-protection/bitlocker/bitlocker-how-to-enable-network-unlock.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/information-protection/bitlocker/bitlocker-how-to-enable-network-unlock.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

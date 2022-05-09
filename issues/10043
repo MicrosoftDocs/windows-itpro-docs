@@ -1,0 +1,32 @@
+
+title:	Incorrect policy name/description?
+state:	OPEN
+author:	spellinn
+labels:	client management, doc-bug
+comments:	1
+assignees:	e0i, VLG17
+projects:	
+milestone:	
+number:	10043
+--
+
+The GP policy name (TS_GATEWAY_POLICY_AUTH_METHOD) seems at odd with what the policy is documented as controlling (Clipboard redirection)
+
+The policy with this name would appear to correspond with controlling the authentication methods under
+
+SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services\LogonMethod
+
+and not clipboard redirection
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 2d881506-cf8c-4e25-16cd-df477ed6fb0c
+* Version Independent ID: 98158dde-730b-ec77-d2f9-c5e045d69dad
+* Content: [Policy CSP - ADMX_TerminalServer - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-terminalserver)
+* Content Source: [windows/client-management/mdm/policy-csp-admx-terminalserver.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/policy-csp-admx-terminalserver.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @ManikaDhiman
+* Microsoft Alias: **dansimp**

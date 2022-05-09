@@ -1,0 +1,29 @@
+
+title:	Incorrect registry path
+state:	OPEN
+author:	jholl016
+labels:	deployment, writer-input-required, doc-bug
+comments:	1
+assignees:	e0i, dougeby
+projects:	
+milestone:	
+number:	10399
+--
+In the section 'Set the AllowWUfBCloudProcessing policy', step 8 says to confirm the policy is applied by checking a registry key.  The correct location to check is
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\ **current** \System\AllowWUfBCloudProcessing  (not under the 'default' key)
+
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: a62218bc-5b18-dd96-b434-81b6bea709ac
+* Version Independent ID: 68df8404-dea4-6973-f74c-c6c39d912e22
+* Content: [Windows Update for Business deployment service - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/update/deployment-service-overview)
+* Content Source: [windows/deployment/update/deployment-service-overview.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/update/deployment-service-overview.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @jaimeo
+* Microsoft Alias: **jaimeo**

@@ -1,0 +1,37 @@
+
+title:	Clarification
+state:	OPEN
+author:	Air-Git
+labels:	client management, doc-enhancement
+comments:	0
+assignees:	e0i, VLG17
+projects:	
+milestone:	
+number:	9905
+--
+
+Can you clarify this statement?
+"/DefaultOutboundAction
+
+This value is the action that the firewall does by default (and evaluates at the very end) on outbound connections. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it is configured; otherwise, the local store value is used. DefaultOutboundAction will block all outbound traffic unless it is explicitly specified not to block.
+
+0x00000000 - allow
+0x00000001 - block
+Default value is 0 (allow)."
+
+The statement "DefaultOutboundAction will block all outbound traffic unless it is explicitly specified not to block." seems to mean that the default state is Block. But the statement "Default value is 0 (allow)" seems to mean that the default state is to allow.
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: bfea4e59-ec8c-cbdf-a039-23612c2266a5
+* Version Independent ID: 7058544b-7ef2-a398-366a-cf71520aa9d8
+* Content: [Firewall CSP - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/firewall-csp#defaultoutboundaction)
+* Content Source: [windows/client-management/mdm/firewall-csp.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/firewall-csp.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @ManikaDhiman
+* Microsoft Alias: **dansimp**

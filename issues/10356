@@ -1,0 +1,33 @@
+
+title:	Mistakes and Improvements
+state:	OPEN
+author:	DCameo
+labels:	hello-for-business, doc-enhancement
+comments:	2
+assignees:	e0i
+projects:	
+milestone:	
+number:	10356
+--
+[Enter feedback here]
+[Configure Automatic Certificate Enrollment](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings#create-the-windows-hello-for-business-group-policy-object
+)
+Mistake: this should be configured under **Computer Configuration**
+
+[Configure Security in the Windows Hello for Business Group Policy object](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings#create-the-windows-hello-for-business-group-policy-object)
+Mistake is repeated again: this needs to be configured under **Computer Configuration**
+
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 0ec90f64-9a12-fdf9-25db-0e83cf77b7a2
+* Version Independent ID: fb68756c-2d0c-c28c-4bda-ef6a876576e7
+* Content: [Configure Windows Hello for Business Policy settings - certificate trust - Windows security](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings)
+* Content Source: [windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings.md)
+* Product: **m365-security**
+* GitHub Login: @mapalko
+* Microsoft Alias: **mapalko**

@@ -1,0 +1,27 @@
+
+title:	Audio missing from videos 
+state:	OPEN
+author:	BHGoodwin
+labels:	writer-input-required, docs-experience
+comments:	2
+assignees:	e0i
+projects:	
+milestone:	
+number:	10074
+--
+
+[The YouTube videos below the header "Windows Hello for Business user enrollment experience" don't have any audio, making them inaccessible to blind users.]
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 23a14bad-9353-85fa-7f9f-b5db2be529f6
+* Version Independent ID: ade91093-e916-281c-5645-00b4c3643d1c
+* Content: [Windows Hello for Business Videos - Windows security](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-videos#windows-hello-for-business-user-enrollment-experienc)
+* Content Source: [windows/security/identity-protection/hello-for-business/hello-videos.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/hello-videos.md)
+* Product: **w10**
+* GitHub Login: @mapalko
+* Microsoft Alias: **mapalko**

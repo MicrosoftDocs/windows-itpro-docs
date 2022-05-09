@@ -1,0 +1,33 @@
+
+title:	Shall I select security device credential?
+state:	OPEN
+author:	xinglai22
+labels:	hello-for-business, product-feedback
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10395
+--
+[Enter feedback here]
+Hi team,
+I would like to confirm if the expected behavior is to select "Security device credential" instead of input PIN in the WHFB pop-up directly. Because when I input PIN in the default pop-up WireShark will report Kerberos C_name mismatch error and continue using WHFB key for RDP instead of the certificate we deployed.
+
+![image](https://user-images.githubusercontent.com/101072475/156949025-67bafd51-9114-480b-b890-90b3999ddf71.png)
+![image](https://user-images.githubusercontent.com/101072475/156949171-236ddcb2-43b2-497c-a4b5-cf0a1f284e0f.png)
+
+![image](https://user-images.githubusercontent.com/101072475/156949102-0240664c-31fc-4422-b7fd-f57152fe18a9.png)
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 7e9cc344-d2c1-1f8b-232a-b2cccd8b32a3
+* Version Independent ID: eb87d132-cc0b-8ab2-4417-51e1bc719c14
+* Content: [Deploying Certificates to Key Trust Users to Enable RDP - Windows security](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-deployment-rdp-certs)
+* Content Source: [windows/security/identity-protection/hello-for-business/hello-deployment-rdp-certs.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/hello-deployment-rdp-certs.md)
+* Product: **m365-security**
+* GitHub Login: @Gitprakhar13
+* Microsoft Alias: **prsriva**

@@ -1,0 +1,28 @@
+
+title:	Est-on en 21H1 ?
+state:	OPEN
+author:	oooforum
+labels:	deployment, product-question
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	9819
+--
+
+Comment fait-on pour savoir si cette version a été installée ? SystemInfo ne renvoie pas cette information.
+
+
+---
+#### Détails du document
+
+⚠ *Ne pas modifier cette section. C’est obligatoire pour docs.microsoft.com ➟ Liaison des problèmes GitHub.*
+
+* ID: e2ae660a-6af6-e989-3d82-cf2b11725981
+* Version Independent ID: c42e6619-b11c-a996-b136-6fc03b839ae5
+* Content: [Nouveautés de Windows 10, version 21H1 - What's new in Windows](https://docs.microsoft.com/fr-fr/windows/whats-new/whats-new-windows-10-version-21h1)
+* Content Source: [windows/whats-new/whats-new-windows-10-version-21H1.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/master/windows/whats-new/whats-new-windows-10-version-21H1.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @greg-lindsay
+* Microsoft Alias: **greglin**

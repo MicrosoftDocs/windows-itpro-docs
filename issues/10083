@@ -1,0 +1,43 @@
+
+title:	bitlocker-d out w/o key
+state:	OPEN
+author:	jimc
+labels:	bitlocker, doc-idea
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10083
+--
+
+[Enter feedback here]
+
+heres my need - I have trouble thinking its not a regular occurrence.
+
+I bought a new asus gaming laptop and a 2nd NVME to hold and run linux.
+I installed fedora, everything was fine
+until I unlocked the secure-boot and booted
+
+now I boot windows and get the blue-bitlock of death
+
+of course I dont have a key, despite the "hel.pful" url on-screen 
+telling me where go get it.  maybe I used a new outlook email to 
+register it, but theres nothing to recover.
+
+I would think a whole new page for bitlocked - out by UIFI secure boot
+could help. 
+
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 0e21c26e-1320-04e1-d103-e64751235f9f
+* Version Independent ID: 48b4da0f-2bb0-98d8-20f9-acd30a0e4a34
+* Content: [BitLocker recovery guide (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-recovery-guide-plan)
+* Content Source: [windows/security/information-protection/bitlocker/bitlocker-recovery-guide-plan.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/information-protection/bitlocker/bitlocker-recovery-guide-plan.md)
+* Product: **w10**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

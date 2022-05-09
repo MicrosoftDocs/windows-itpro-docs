@@ -1,0 +1,34 @@
+
+title:	edit review for "BitLocker cannot encrypt a drive: known issues"
+state:	OPEN
+author:	verdy-p
+labels:	bitlocker, doc-bug
+comments:	2
+assignees:	e0i
+projects:	
+milestone:	
+number:	9821
+--
+In the "Resolution" section, "To repair the security descriptor of BDESvc, open an elevated PowerShell window and enter the following command:"
+
+> `sc sdset bdesvc D:(A;;CCDCLCSWRPWPDTLORCWDWO;;;SY)(A;;CCDCLCSWRPWPDTLORCWDWO;;;BA)(A;;CCLCSWRPLORC;;;BU)(A;;CCLCSWRPLORC;;;AU)S:(AU;FA;CCDCLCSWRPWPDTLOSDRCWDWO;;;WD)`
+
+This command does not work without the quotation marks (because the SDDL string contains semicolons and parentheses,)
+
+This should be:
+
+> `sc sdset bdesvc "D:(A;;CCDCLCSWRPWPDTLORCWDWO;;;SY)(A;;CCDCLCSWRPWPDTLORCWDWO;;;BA)(A;;CCLCSWRPLORC;;;BU)(A;;CCLCSWRPLORC;;;AU)S:(AU;FA;CCDCLCSWRPWPDTLOSDRCWDWO;;;WD)"`
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 31baa23e-2ca3-617f-c061-cfbcff4909ce
+* Version Independent ID: fa64d25d-48ef-8c20-7227-ea78b6294bf4
+* Content: [BitLocker cannot encrypt a drive  known issues - Microsoft 365 Security](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/ts-bitlocker-cannot-encrypt-issues)
+* Content Source: [windows/security/information-protection/bitlocker/ts-bitlocker-cannot-encrypt-issues.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/information-protection/bitlocker/ts-bitlocker-cannot-encrypt-issues.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Teresa-Motiv
+* Microsoft Alias: **v-tea**

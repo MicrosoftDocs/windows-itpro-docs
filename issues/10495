@@ -1,0 +1,30 @@
+
+title:	Missing Text in Table 1 "WDAC events found in the Microsoft Windows CodeIntegrity Operational log"
+state:	OPEN
+author:	AndrewPascoCS
+labels:	application control, doc-bug
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10495
+--
+The  Explanation for event ID 3099 in Table 1 in section "WDAC events found in the Microsoft Windows CodeIntegrity Operational log" appears to be truncated.  As the text currently reads
+
+"Indicates that a policy has been loaded. This event also includes information about the policy options that were specified by the policy. Refer to the"
+
+with no further explanation after the "the". 
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 5da550e8-6065-7666-46b1-7bfb84ad775e
+* Version Independent ID: ffbb3f81-73d3-c5e9-ca5a-abbb36320661
+* Content: [Understanding Application Control event IDs (Windows) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/event-id-explanations)
+* Content Source: [windows/security/threat-protection/windows-defender-application-control/event-id-explanations.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/windows-defender-application-control/event-id-explanations.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @jsuther1974
+* Microsoft Alias: **dansimp**

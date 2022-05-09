@@ -1,0 +1,26 @@
+
+title:	Name for TPM 2.0 lockout authorization value is not as described
+state:	OPEN
+author:	wmjdgla
+labels:	information protection, writer-input-required, doc-bug
+comments:	4
+assignees:	e0i, MaratMussabekov
+projects:	
+milestone:	
+number:	10211
+--
+Under `Configure the level of TPM owner authorization information available to the operating system`, the page states that the name for lockout authorization value under TPM 1.2 is `OwnerAuthFull`, while under TPM 2.0 it's `LockoutAuth`. However on Windows 10 20H2 and Windows 11 with TPM 2.0, `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TPM\WMI\Admin\` only has `OwnerAuthFull`.
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 3492cc23-3415-c41e-f68a-7e648a522c3e
+* Version Independent ID: 1299343a-f7ee-af5b-5e2c-9bc68d370426
+* Content: [TPM Group Policy settings (Windows) - Windows security](https://docs.microsoft.com/en-us/windows/security/information-protection/tpm/trusted-platform-module-services-group-policy-settings)
+* Content Source: [windows/security/information-protection/tpm/trusted-platform-module-services-group-policy-settings.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/information-protection/tpm/trusted-platform-module-services-group-policy-settings.md)
+* Product: **m365-security**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

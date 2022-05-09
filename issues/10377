@@ -1,0 +1,46 @@
+
+title:	Error in Blocklist
+state:	OPEN
+author:	mfgjwaterman
+labels:	application control, product-feedback
+comments:	1
+assignees:	e0i
+projects:	
+milestone:	
+number:	10377
+--
+
+While generating a new xml file for wdac usage, the current blocked drivers list gives an error:
+
+```
+Merge-CIPolicy : "Incorrectly formatted document: there must be one node with ID = ID_ALLOW_ALL_1"
+At line:1 char:1
++ Merge-CIPolicy -OutputFilePath .\Merged.xml -PolicyPaths .\DefaultWin ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Merge-CIPolicy], CIPolicyException
+    + FullyQualifiedErrorId : Microsoft.SecureBoot.UserConfig.CIPolicyException,Microsoft.SecureBoot.UserConfig.MergeCIPolicy
+```
+
+Command used:
+
+`Merge-CIPolicy -OutputFilePath .\Merged.xml -PolicyPaths .\DefaultWindows_Audit.xml, .\MicrosoftDriverBlockList.xml`
+
+My Solution, remove line 714
+`<FileRuleRef RuleID="ID_ALLOW_ALL_1" />`
+
+and remove line 1047
+`<FileRuleRef RuleID="ID_ALLOW_ALL_2" />`
+
+My own analysis is that there are no references to the FileRuleRef RuleID's.
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 6e8740b8-c1f2-4b88-3d4d-66cdbf20215f
+* Version Independent ID: 7986a684-b35d-06bd-be30-dfca9923cb9c
+* Content: [Microsoft recommended driver block rules (Windows) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules?source=docs)
+* Content Source: [windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules.md)
+* Product: **m365-security**
+* GitHub Login: @jgeurten
+* Microsoft Alias: **dansimp**

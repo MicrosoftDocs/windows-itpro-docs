@@ -1,0 +1,34 @@
+
+title:	RLL file extension
+state:	OPEN
+author:	kimoppalfens
+labels:	application control, doc-enhancement
+comments:	1
+assignees:	e0i, VLG17
+projects:	
+milestone:	
+number:	10065
+--
+
+[Voer hier feedback in]
+This page mentions *.sys','*.dll','*.com','*.exe','*.ocx','*.msi','*.mst','*.msp','*.vbs','*.ps1','*.js' as file extensions that are monitored by Windows Defender Application Control policies. 
+
+I've just come across a file with an RLL extension that was flagged as getting blocked with an eventid 3076. The policy is still in audit mode so the RLL file was allowed to load. Shouldn't RLLs be in that table somewhere or don't they have to be taken into account for your policy?
+
+My particular instance tried to load \Windows\System32\1033\sqlnclir11.rll which I believe is part of the SQL client runtime library.
+
+
+
+---
+#### Documentdetails
+
+⚠ *Dit gedeelte niet bewerken. Het is vereist om problemen te koppelen tussen docs.microsoft.com en GitHub.*
+
+* ID: 0c5b2cd1-331e-4b0f-cf2f-b6e35499c8b0
+* Version Independent ID: 9a1a48ba-1174-9cf3-2a28-e53873409e7f
+* Content: [Windows Defender Application Control Feature Availability - Windows security](https://docs.microsoft.com/nl-nl/windows/security/threat-protection/windows-defender-application-control/feature-availability)
+* Content Source: [windows/security/threat-protection/windows-defender-application-control/feature-availability.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/windows-defender-application-control/feature-availability.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @denisebmsft
+* Microsoft Alias: **deniseb**

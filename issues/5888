@@ -1,0 +1,28 @@
+
+title:	Notifications for non-administrators?
+state:	OPEN
+author:	sdxfuj
+labels:	question, deployment, assigned-to-author
+comments:	5
+assignees:	e0i, arcarley
+projects:	
+milestone:	
+number:	5888
+--
+Our tests show that non-administrators don't receive any of the notifications in this document, even though the deadline settins themselves work. However, if I log in with an account that has local admin privilegies, the notifications are shown. We have set the GPO that should allow non-administrators to receive update notifications, but I suspect that GPO doesn't apply to Windows 10, as it's not  listed as a supported OS for that setting.
+
+The question is: How do we notify non-administrator users on the machines that have update deadlines set? Is it at all possible?
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 44aabe97-360e-0655-09ec-5d1e352bdb1a
+* Version Independent ID: 1c729c42-741d-ecb7-6490-a4bfdd029263
+* Content: [Enforce compliance deadlines with policies in Windows Update for Business (Windows 10) - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/update/wufb-compliancedeadlines#feedback)
+* Content Source: [windows/deployment/update/wufb-compliancedeadlines.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/update/wufb-compliancedeadlines.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @jaimeo
+* Microsoft Alias: **jaimeo**

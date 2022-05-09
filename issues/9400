@@ -1,0 +1,31 @@
+
+title:	Trusted Signal is not possession factor
+state:	OPEN
+author:	RichardvanNuland
+labels:	hello-for-business, product-feedback, product-question
+comments:	2
+assignees:	nam31
+projects:	
+milestone:	
+number:	9400
+--
+
+I am missing information that describes that the phone (or network) as trusted signal second factor should not be considered a 'possession' factor. When I connect a mobile phone using bluetooth as "user A" then this device is paired on device level. So when "user B" logs on and the phone of "user A" is still within range, it still acts as 2nd factor unlock.
+
+This means that true MFA for data on the device itself is still not realised.
+
+Another aspect is that with PIN + Trusted Signal you are in a ackward situation when something happens with your phone or when you are in a location where you need to switch off your phone (e.g. airplane).
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 38f8c2ce-8edb-60d3-ebf9-bdb625bf66dc
+* Version Independent ID: ee1ed0a8-b05c-c499-6504-40b5b298c53b
+* Content: [Multi-factor Unlock - Microsoft 365 Security](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/feature-multifactor-unlock)
+* Content Source: [windows/security/identity-protection/hello-for-business/feature-multifactor-unlock.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/feature-multifactor-unlock.md)
+* Product: **w10**
+* GitHub Login: @mapalko
+* Microsoft Alias: **mapalko**

@@ -1,0 +1,39 @@
+
+title:	Localisation Support
+state:	OPEN
+author:	tryhardriceboy
+labels:	doc-enhancement
+comments:	0
+assignees:	e0i
+projects:	
+milestone:	
+number:	10485
+--
+Hi,
+
+I think it would be very helpful to include some advice on how to localize the Windows deployment, as it's something that users outside of the US appear to struggle with (judging by many forum posts).
+
+If a paragraph could be created that includes examples of extra 'Rules' for localization, that would be a great time saver for your readers.  In my instance (for Australia) I needed to add the following lines, but it took a few hours of testing to find the correct parameters, and where to set them!
+
+UserLocale=en-AU
+SystemLocale=en-AU
+InputLocale=0c09:00000409
+KeyboardLocale=0c09:00000409
+
+Thanks,
+
+Trevor.
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 1c66f2a3-5be3-e3cf-b90f-c9ce2f6ecf9d
+* Version Independent ID: c9ed7f55-3770-73a4-5ee4-deee16eb7600
+* Content: [Deploy a Windows 10 image using MDT (Windows 10) - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt)
+* Content Source: [windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @aczechowski
+* Microsoft Alias: **aaroncz**

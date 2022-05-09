@@ -1,0 +1,26 @@
+
+title:	What about on-premise ?
+state:	OPEN
+author:	Sayannara
+labels:	assigned-to-author, hello-for-business, docs-experience
+comments:	1
+assignees:	e0i, mapalko
+projects:	
+milestone:	
+number:	6507
+--
+The documentation is good, unfortunately, there is less for on-premise. I really miss an operating diagram for this.
+
+---
+#### Détails du document
+
+⚠ *Ne pas modifier cette section. C’est obligatoire pour docs.microsoft.com ➟ Liaison des problèmes GitHub.*
+
+* ID: 10fcf686-1781-8a62-16bb-b26b3f5982fd
+* Version Independent ID: 37d733ad-e809-1674-ffbc-ae3d0c495423
+* Content: [Fonctionnement de Windows Hello entreprise-authentification - Microsoft 365 Security](https://docs.microsoft.com/fr-fr/windows/security/identity-protection/hello-for-business/hello-how-it-works-authentication#feedback)
+* Content Source: [windows/security/identity-protection/hello-for-business/hello-how-it-works-authentication.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/master/windows/security/identity-protection/hello-for-business/hello-how-it-works-authentication.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @mapalko
+* Microsoft Alias: **mapalko**

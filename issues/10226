@@ -1,0 +1,30 @@
+
+title:	Certificate Tile Enumeration
+state:	OPEN
+author:	jamesburkecissp
+labels:	question, identity protection
+comments:	2
+assignees:	e0i
+projects:	
+milestone:	
+number:	10226
+--
+
+[Enter feedback here]
+Hi,
+I need some professional services around certificate tile enumeration.
+I can't find a contract for someone at Microsoft to assist me with this.
+James
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 132e8bfa-12ba-2ae0-7745-545bcfd909f1
+* Version Independent ID: 984c17f4-04a4-bf30-3a9e-3af49209f0bb
+* Content: [Certificate Requirements and Enumeration (Windows) - Windows security](https://docs.microsoft.com/en-us/windows/security/identity-protection/smart-cards/smart-card-certificate-requirements-and-enumeration)
+* Content Source: [windows/security/identity-protection/smart-cards/smart-card-certificate-requirements-and-enumeration.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/smart-cards/smart-card-certificate-requirements-and-enumeration.md)
+* Product: **m365-security**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

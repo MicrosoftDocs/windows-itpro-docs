@@ -1,0 +1,26 @@
+
+title:	--trace option help
+state:	OPEN
+author:	aminah-amino
+labels:	in progress, defender for endpoint, product-question
+comments:	2
+assignees:	e0i
+projects:	
+milestone:	
+number:	5651
+--
+not seeing any results with $ mdatp --trace . Trying to use it to check performance issues. (using 100.79.42).
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 287292d6-355f-5ad8-b29d-3fcc4b2604ca
+* Version Independent ID: 1bcc491b-3736-6a85-3551-7aade2ff5f8a
+* Content: [What's new in Microsoft Defender Advanced Threat Protection for Mac - Microsoft 365 Security](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-whatsnew)
+* Content Source: [windows/security/threat-protection/microsoft-defender-atp/mac-whatsnew.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/microsoft-defender-atp/mac-whatsnew.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

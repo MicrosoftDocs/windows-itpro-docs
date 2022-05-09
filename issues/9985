@@ -1,0 +1,26 @@
+
+title:	Microsoft Store for Business flow is not longer valid
+state:	OPEN
+author:	jvintzel
+labels:	application control, Microsoft submitter, doc-enhancement
+comments:	0
+assignees:	e0i, joinimran
+projects:	
+milestone:	
+number:	9985
+--
+When you go to the Store for Business it tells you that section is retired and go to a different place.  Docs should be updated.
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 3019351c-51a1-bd25-2b68-7983a5444ea2
+* Version Independent ID: 8802294a-3cda-db86-6da3-28360b7b68dc
+* Content: [Use the Device Guard Signing Portal in the Microsoft Store for Business  (Windows) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/use-device-guard-signing-portal-in-microsoft-store-for-business)
+* Content Source: [windows/security/threat-protection/windows-defender-application-control/use-device-guard-signing-portal-in-microsoft-store-for-business.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/threat-protection/windows-defender-application-control/use-device-guard-signing-portal-in-microsoft-store-for-business.md)
+* Product: **m365-security**
+* Technology: **mde**
+* GitHub Login: @jsuther1974
+* Microsoft Alias: **dansimp**
