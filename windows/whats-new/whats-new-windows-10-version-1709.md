@@ -6,9 +6,9 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.reviewer: 
-author: greg-lindsay
-manager: laurawi
-ms.author: greglin
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
 ms.localizationpriority: high
 ms.topic: article
 ---
@@ -52,7 +52,7 @@ WUfB now has additional controls available to manage Windows Insider Program enr
 
 ### Windows Insider Program for Business
 
-You can now register your Azure AD domains to the Windows Insider Program. For more information, see [Windows Insider Program for Business](/windows/deployment/update/waas-windows-insider-for-business#getting-started-with-windows-insider-program-for-business).
+You can now register your Azure AD domains to the Windows Insider Program. For more information, see [Windows Insider Program for Business](https://insider.windows.com/for-business).
 
 
 ## Administration
@@ -87,13 +87,13 @@ The AssignedAccess CSP has been expanded to make it easy for administrators to c
 
 ### Microsoft Defender for Endpoint
 
-Microsoft Defender for Endpoint has been expanded with powerful analytics, security stack integration, and centralized management for better detection, prevention, investigation, response, and management. For more information, see [View the Microsoft Defender for Endpoint Security analytics dashboard](/windows/threat-protection/windows-defender-atp/security-analytics-dashboard-windows-defender-advanced-threat-protection).
+Microsoft Defender for Endpoint has been expanded with powerful analytics, security stack integration, and centralized management for better detection, prevention, investigation, response, and management. For more information, see [View the Microsoft Defender for Endpoint Security analytics dashboard](/microsoft-365/security/defender-endpoint/tvm-microsoft-secure-score-devices).
 
 ### Windows Defender Application Guard
 
 Windows Defender Application Guard hardens a favorite attacker entry-point by isolating malware and other threats away from your data, apps, and infrastructure. For more information, see [Windows Defender Application Guard overview](/windows/threat-protection/windows-defender-application-guard/wd-app-guard-overview).
 
-### Window Defender Exploit Guard
+### Windows Defender Exploit Guard
 
 Window Defender Exploit Guard provides intrusion prevention capabilities to reduce the attack and exploit surface of applications. Exploit Guard has many of the threat mitigations that were available in Enhanced Mitigation Experience Toolkit (EMET) toolkit, a deprecated security download. These mitigations are now built into Windows and configurable with Exploit Guard. These mitigations include [Exploit protection](/microsoft-365/security/defender-endpoint/enable-exploit-protection), [Attack surface reduction protection](/microsoft-365/security/defender-endpoint/evaluate-attack-surface-reduction), [Controlled folder access](/microsoft-365/security/defender-endpoint/evaluate-controlled-folder-access), and [Network protection](/microsoft-365/security/defender-endpoint/enable-network-protection).
 
@@ -119,7 +119,7 @@ The minimum PIN length is being changed from 6 to 4, with a default of 6. For mo
 Microsoft has released new [Windows security baselines](/windows/device-security/windows-security-baselines) for Windows Server and Windows 10. A security baseline is a group of Microsoft-recommended configuration settings with an explanation of their security impact. For more information, and to download the Policy Analyzer tool, see [Microsoft Security Compliance Toolkit 1.0](/windows/device-security/security-compliance-toolkit-10).
 
 ### SMBLoris vulnerability
-An issue, known as “SMBLoris�?, which could result in denial of service, has been addressed.
+An issue, known as _SMBLoris_, which could result in denial of service, has been addressed.
 
 
 ## Windows Analytics

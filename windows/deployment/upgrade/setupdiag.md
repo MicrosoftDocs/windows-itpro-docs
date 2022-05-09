@@ -1,8 +1,7 @@
 ---
 title: SetupDiag
-ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 description: SetupDiag works by examining Windows Setup log files. This article shows how to use the SetupDiag tool to diagnose Windows Setup errors.
 keywords: deploy, troubleshoot, windows, 10, upgrade, update, setup, diagnose
 ms.custom: seo-marvel-apr2020
@@ -11,28 +10,29 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
 ms.topic: article
+ms.collection: highpri
 ---
 
 # SetupDiag
 
 **Applies to**
--   Windows 10
+-   Windows 10
 
 >[!NOTE]
 >This is a 300 level topic (moderate advanced).<br>
 >See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.<br>
 
-&nbsp;[![Download SetupDiag](../images/download.png)](https://go.microsoft.com/fwlink/?linkid=870142)
+&nbsp;[![Download SetupDiag.](../images/download.png)](https://go.microsoft.com/fwlink/?linkid=870142)
 
 ## About SetupDiag
 
-<I>Current downloadable version of SetupDiag: 1.6.1.0</I>
->Always be sure to run the most recent version of SetupDiag, so that can access new functionality and fixes to known issues.
+<I>Current downloadable version of SetupDiag: 1.6.2107.27002.</I> 
+> Always be sure to run the most recent version of SetupDiag, so that can access new functionality and fixes to known issues.
 
-SetupDiag is a standalone diagnostic tool that can be used to obtain details about why a Windows 10 upgrade was unsuccessful. 
+SetupDiag is a diagnostic tool that can be used to obtain details about why a Windows 10 upgrade was unsuccessful. 
 
 SetupDiag works by examining Windows Setup log files. It attempts to parse these log files to determine the root cause of a failure to update or upgrade the computer to Windows 10. SetupDiag can be run on the computer that failed to update, or you can export logs from the computer to another location and run SetupDiag in offline mode.
 
@@ -49,7 +49,7 @@ When run by Windows Setup, the following [parameters](#parameters) are used:
 - /Output:%windir%\logs\SetupDiag\SetupDiagResults.xml
 - /RegPath:HKEY_LOCAL_MACHINE\SYSTEM\Setup\SetupDiag\Results
 
-The resulting SetupDiag analysis can be found at **%WinDir%\Logs\SetupDiag\SetupDiagResults.xml** and in the registry under **HKLM\SYSTEM\Setup\SetupDiag\Results**.
+The resulting SetupDiag analysis can be found at **%WinDir%\Logs\SetupDiag\SetupDiagResults.xml** and in the registry under **HKLM\SYSTEM\Setup\SetupDiag\Results**.  Please note that this is not the same as the default registry path when SetupDiag is run manually. When SetupDiag is run manually, and the /RegPath parameter is not specified, data is stored in the registry at HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag.
 
 > [!IMPORTANT]
 > When SetupDiag indicates that there were multiple failures, the last failure in the log file is typically the fatal error, not the first one.
@@ -344,6 +344,10 @@ Each rule name and its associated unique rule identifier are listed with a descr
 
 ## Release notes
 
+07/27/2021 - SetupDiag v1.6.2107.27002 is released with 61 rules, as a standalone tool available in the Download Center.
+- This version contains compliance updates and minor bug fixes.
+- With this release and subsequent releases, the version number of the downloadable SetupDiag tool is different from the one included with Windows Setup.
+
 05/06/2021 - SetupDiag v1.6.1.0 is released with 61 rules, as a standalone tool available in the Download Center.  
 - This version of SetupDiag is included with Windows 10, version 21H1.
 - A new rule is added: UserProfileSuffixMismatch.
@@ -563,7 +567,7 @@ Refer to "https://docs.microsoft.com/windows/desktop/Debug/system-error-codes" f
 
 ## Sample registry key
 
-![Example of Addreg](./../images/addreg.png)
+![Example of Addreg.](./../images/addreg.png)
 
 ## Related topics
 

@@ -31,11 +31,11 @@ ms.date: 07/27/2017
 
 Using Group Policy, you can turn on Enterprise Mode for Internet Explorer and then you can turn on local user control using the **Let users turn on and use Enterprise Mode from the Tools menu** setting, located in the `Administrative Templates\Windows Components\Internet Explorer` category path. After you turn this setting on, your users can turn on Enterprise Mode locally, from the IE **Tools** menu.
 
-![enterprise mode option on the tools menu](images/ie-emie-toolsmenu.png)
+![enterprise mode option on the tools menu.](images/ie-emie-toolsmenu.png)
 
 The **Let users turn on and use Enterprise Mode from the Tools menu** setting also lets you decide where to send the user reports (as a URL). We recommend creating a custom HTTP port 81 to let your incoming user information go to a dedicated site. A dedicated site is important so you can quickly pick out the Enterprise Mode traffic from your other website traffic.
 
-![group policy to turn on enterprise mode](images/ie-emie-grouppolicy.png)
+![group policy to turn on enterprise mode.](images/ie-emie-grouppolicy.png)
 
 Getting these reports lets you find out about sites that aren’t working right, so you can add them to your Enterprise Mode site list, without having to locate them all yourself. For more information about creating and using a site list, see the [Add multiple sites to the Enterprise Mode site list using a file and the Enterprise Mode Site List Manager (schema v.2)](add-multiple-sites-to-enterprise-mode-site-list-using-the-version-2-schema-and-enterprise-mode-tool.md) or the [Add multiple sites to the Enterprise Mode site list using a file and the Enterprise Mode Site List Manager (schema v.1)](add-multiple-sites-to-enterprise-mode-site-list-using-the-version-1-schema-and-enterprise-mode-tool.md) topic, based on your operating system.
 
@@ -51,11 +51,11 @@ When you turn logging on, you need a valid URL that points to a server that can 
 
 3. Open the Internet Information Services (IIS) Manager, click **Bindings**, highlight **Port 81**, click **Edit**, and then change the website information to point to Port 81 so it matches your custom-created port.
 
-   ![IIS Manager, editing website bindings](images/ie-emie-editbindings.png)
+   ![IIS Manager, editing website bindings.](images/ie-emie-editbindings.png)
 
 4. Open the **Logging** feature, pick **W3C** for the format, and click **Select Fields** to open the **W3C Logging Fields** box.
 
-   ![IIS Manager, setting logging options](images/ie-emie-logging.png)
+   ![IIS Manager, setting logging options.](images/ie-emie-logging.png)
 
 5. Change the WC3 logging fields to include only the **Date**, **Client IP**, **User Name**, and **URI Query** standard fields, and then click **OK**.<p>
    Using only these fields keeps the log file simple, giving you the date, client IP address, and the website URI information for any site changed by your users.
@@ -76,7 +76,7 @@ When you turn logging on, you need a valid URL that points to a server that can 
 ### IIS log file information
 This is what your log files will look like after you set everything up and at least one of your users has turned on Enterprise Mode locally from the **Tools** menu. You can see the URL of the problematic website and client IP address of the user that turned on Enterprise Mode.
 
-![Enterprise Mode log file](images/ie-emie-logfile.png)
+![Enterprise Mode log file.](images/ie-emie-logfile.png)
 
 
 ## Using the GitHub sample to collect your data
@@ -103,14 +103,14 @@ For logging, you’re going to need a valid URL that points to a server that can
 
 5. Right-click on the name, PhoneHomeSample, and click **Publish**.
 
-   ![Visual Studio, Publish menu](images/ie-emie-publishsolution.png)
+   ![Visual Studio, Publish menu.](images/ie-emie-publishsolution.png)
 
 6. In the **Publish Web** wizard, pick the publishing target and options that work for your organization.
 
    **Important**<br>
    Make sure you have a database associated with your publishing target. Otherwise, your reports won’t be collected and you’ll have problems deploying the website. 
 
-   ![Visual Studio, Publish Web wizard](images/ie-emie-publishweb.png)
+   ![Visual Studio, Publish Web wizard.](images/ie-emie-publishweb.png)
 
    After you finish the publishing process, you need to test to make sure the app deployed successfully.
 
@@ -135,7 +135,7 @@ For logging, you’re going to need a valid URL that points to a server that can
 -   Go to `https://<deploy_URL>/List` to see the report results.<p>
 If you’re already on the webpage, you’ll need to refresh the page to see the results.
 
-    ![Enterprise Mode Result report with details](images/ie-emie-reportwdetails.png)
+    ![Enterprise Mode Result report with details.](images/ie-emie-reportwdetails.png)
 
 
 ### Troubleshooting publishing errors
@@ -145,7 +145,7 @@ If you have errors while you’re publishing your project, you should try to upd
 
 1.  From the **Tools** menu of Microsoft Visual Studio, click **NuGet Package Manager**, and click **Manage NuGet Packages for Solution**.
 
-    ![Nuget Package Manager for package updates](images/ie-emie-packageupdate.png)
+    ![Nuget Package Manager for package updates.](images/ie-emie-packageupdate.png)
 
 2.  Click **Updates** on the left side of the tool, and click the **Update All** button.<p>
 You may need to do some additional package cleanup to remove older package versions.

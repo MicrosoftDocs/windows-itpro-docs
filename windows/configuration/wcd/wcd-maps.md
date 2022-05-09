@@ -4,12 +4,12 @@ description: This section describes the Maps settings that you can configure in 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.topic: article
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # Maps (Windows Configuration Designer reference)
@@ -18,11 +18,11 @@ Use for settings related to Maps.
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [ChinaVariantWin10](#chinavariantwin10) | X  | X | X |  |  |
-| [UseExternalStorage](#useexternalstorage) | X  | X | X |  |  |
-| [UseSmallerCache](#usesmallercache) | X  | X | X |  |  |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| [ChinaVariantWin10](#chinavariantwin10) | ✔️  | ✔️ |  |  |
+| [UseExternalStorage](#useexternalstorage) | ✔️  | ✔️ |  |  |
+| [UseSmallerCache](#usesmallercache) | ✔️  | ✔️ |  |  |
 
 
 ## ChinaVariantWin10

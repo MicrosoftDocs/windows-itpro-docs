@@ -7,18 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/07/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 1105(S): Event log automatic backup
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-1105.png" alt="Event 1105 illustration" width="572" height="317" hspace="10" align="left" />

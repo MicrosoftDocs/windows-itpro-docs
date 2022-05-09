@@ -1,13 +1,13 @@
 ---
 title: Update Baseline
 description: Use an update baseline to optimize user experience and meet monthly update goals
-keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, tools, group policy
+keywords: updates, servicing, current, deployment, General Availability Channel, feature, quality, rings, tools, group policy
 ms.prod: w10
 ms.mktglfcycl: manage
-author: jaimeo
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: jaimeo
-manager: laurawi
+ms.author: aaroncz
+manager: dougeby
 ms.topic: article
 ---
 
@@ -15,7 +15,10 @@ ms.topic: article
 
 **Applies to:** Windows 10
 
-With the large number of different policies offered for Windows 10, Update Baseline provides a clear list of recommended Windows Update policy settings for IT administrators who want the best user experience while also meeting their monthly update compliance goals. See [Policies included in the Update Baseline](#policies-included-in-the-update-baseline) for the full list of policy configurations. 
+> [!NOTE]
+> Update Baseline is not currently available for Windows 11.
+
+With the large number of different policies offered for Windows client, Update Baseline provides a clear list of recommended Windows Update policy settings for IT administrators who want the best user experience while also meeting their monthly update compliance goals. See [Policies included in the Update Baseline](#policies-included-in-the-update-baseline) for the full list of policy configurations. 
 
 ## Why is Update Baseline needed? 
 

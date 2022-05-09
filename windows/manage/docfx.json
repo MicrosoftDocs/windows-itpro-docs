@@ -31,6 +31,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "recommendations": true,
       "_op_documentIdPathDepotMapping": {
         "./": {
           "depot_name": "MSDN.windows-manage",

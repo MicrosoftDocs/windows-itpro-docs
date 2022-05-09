@@ -12,7 +12,7 @@ author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 3/19/2018
+ms.date: 07/21/2021
 ---
 
 # Working with line-of-business apps
@@ -20,7 +20,9 @@ ms.date: 3/19/2018
 **Applies to**
 
 -   Windows 10
--   Windows 10 Mobile
+
+> [!IMPORTANT]
+> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
 
 Your company or school can make line-of-business (LOB) applications available through Microsoft Store for Business or Microsoft Store for Education. These apps are custom to your school or organization – they might be internal apps, or apps specific to your school, business, or industry.
 
@@ -43,7 +45,7 @@ You'll need to set up:
 -   LOB publishers need to have an app in Microsoft Store, or have an app ready to submit to the Store.
 
 The process and timing look like this:
-![Process showing LOB workflow in Microsoft Store for Business. Includes workflow for MSFB admin, LOB publisher, and Developer](images/lob-workflow.png)
+![Process showing LOB workflow in Microsoft Store for Business. Includes workflow for MSFB admin, LOB publisher, and Developer.](images/lob-workflow.png)
 
 ## <a href="" id="add-lob-publisher"></a>Add an LOB publisher (Admin)
 Admins need to invite developer or ISVs to become an LOB publisher.

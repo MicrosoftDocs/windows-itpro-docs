@@ -4,13 +4,13 @@ description: This section describes the ADMXIngestion settings that you can conf
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.topic: article
 ms.date: 09/06/2017
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # ADMXIngestion (Windows Configuration Designer reference)
@@ -26,10 +26,10 @@ Starting in Windows 10, version 1703, you can import (*ingest*) select Group Pol
 
 ## Applies to
 
-| Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [ConfigADMXInstalledPolicy](#configadmxinstalledpolicy)  | X |  |  |  |  |
-| [ConfigOperations](#configoperations)  | X |   |  |   |   |
+| Setting groups | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| [ConfigADMXInstalledPolicy](#configadmxinstalledpolicy)  | ✔️ |  |  |  |
+| [ConfigOperations](#configoperations)  | ✔️ |  |   |   |
 
 ## ConfigADMXInstalledPolicy
 
@@ -87,11 +87,11 @@ $path="file path"
 
 The following images show snippets of the ADMX file for Office 16 that are used in the examples in the procedures above. The first image highlights the category names.
 
-![Snippet of ADMX shows category names highlighted](../images/admx-category.png)
+![Snippet of ADMX shows category names highlighted.](../images/admx-category.png)
 
 The next image highlights the specific policy.
 
-![Snipped of ADMX shows policy setting highlighted](../images/admx-policy.png)
+![Snipped of ADMX shows policy setting highlighted.](../images/admx-policy.png)
 
 
 ## Related topics

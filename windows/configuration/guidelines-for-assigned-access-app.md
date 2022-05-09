@@ -1,17 +1,17 @@
 ---
-title: Guidelines for choosing an app for assigned access (Windows 10)
+title: Guidelines for choosing an app for assigned access (Windows 10/11)
 description: The following guidelines may help you choose an appropriate Windows app for your assigned access experience.
 keywords: ["kiosk", "lockdown", "assigned access"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.topic: article
-ms.date: 10/02/2018
-ms.reviewer: 
-manager: dansimp
+ms.reviewer: sybruckm
+manager: dougeby
+ms.collection: highpri
 ---
 
 # Guidelines for choosing an app for assigned access (kiosk mode)
@@ -19,7 +19,8 @@ manager: dansimp
 
 **Applies to**
 
--   Windows 10
+- Windows 10
+- Windows 11
 
 
 You can use assigned access to restrict customers at your business to using only one Windows app so your device acts like a kiosk.  Administrators can use assigned access to restrict a selected user account to access a single Windows app. You can choose almost any Windows app for assigned access; however, some apps may not provide a good user experience.
@@ -45,9 +46,9 @@ Avoid selecting Windows apps that are designed to launch other apps as part of t
 
 ## Guidelines for web browsers
 
-In Windows 10, version 1809, Microsoft Edge includes support for kiosk mode. [Learn how to deploy Microsoft Edge kiosk mode.](/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy)
+Starting with Windows 10 version 1809+, Microsoft Edge includes support for kiosk mode. [Learn how to deploy Microsoft Edge kiosk mode.](/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy)
 
-In Windows 10, version 1803 and later, you can install the **Kiosk Browser** app from Microsoft to use as your kiosk app. For digital signage scenarios, you can configure **Kiosk Browser** to navigate to a URL and show only that content -- no navigation buttons, no address bar, etc. For kiosk scenarios, you can configure additional settings, such as allowed and blocked URLs, navigation buttons, and end session buttons. For example, you could configure your kiosk to show the online catalog for your store, where customers can navigate between departments and items, but aren’t allowed to go to a competitor's website. 
+In Windows client, you can install the **Kiosk Browser** app from Microsoft to use as your kiosk app. For digital signage scenarios, you can configure **Kiosk Browser** to navigate to a URL and show only that content -- no navigation buttons, no address bar, etc. For kiosk scenarios, you can configure additional settings, such as allowed and blocked URLs, navigation buttons, and end session buttons. For example, you could configure your kiosk to show the online catalog for your store, where customers can navigate between departments and items, but aren’t allowed to go to a competitor's website. 
 
 >[!NOTE]
 >Kiosk Browser supports a single tab. If a website has links that open a new tab, those links will not work with Kiosk Browser. Kiosk Browser does not support .pdfs.
@@ -55,7 +56,7 @@ In Windows 10, version 1803 and later, you can install the **Kiosk Browser** app
 >Kiosk Browser cannot access intranet websites.
 
 
-**Kiosk Browser** must be downloaded for offline licensing using Microsoft Store For Business. You can deploy **Kiosk Browser** to devices running Windows 10, version 1803 (Pro, Business, Enterprise, and Education).
+**Kiosk Browser** must be downloaded for offline licensing using Microsoft Store For Business. You can deploy **Kiosk Browser** to devices running Windows 10, version 1803 (Pro, Business, Enterprise, and Education) and Windows 11.
 
 1. [Get **Kiosk Browser** in Microsoft Store for Business with offline license type.](/microsoft-store/acquire-apps-microsoft-store-for-business#acquire-apps)
 2. [Deploy **Kiosk Browser** to kiosk devices.](/microsoft-store/distribute-offline-apps)
@@ -81,7 +82,8 @@ Restart on Idle Time | Specify when Kiosk Browser should restart in a fresh stat
 > 
 > 1. Create the provisioning package. When ready to export, close the project in Windows Configuration Designer.
 > 2. Open the customizations.xml file in the project folder (e.g C:\Users\name\Documents\Windows Imaging and Configuration Designer (WICD)\Project_18). 
-> 3. Insert the null character string in between each URL (e.g www.bing.com`&#xF000;`www.contoso.com). 
+> 3. Insert the null character string in between each URL 
+(e.g `www.bing.com` and `www.contoso.com`). 
 > 4. Save the XML file.
 > 5. Open the project again in Windows Configuration Designer.
 > 6. Export the package. Ensure you do not revisit the created policies under Kiosk Browser or else the null character will be removed.
@@ -119,8 +121,8 @@ The following table describes the results for different combinations of blocked 
 
 Blocked URL rule |  Block URL exception rule | Result
 --- | --- | ---
-`*` | `contoso.com`<br>`fabrikam.com` | All requests are blocked unless it is to contoso.com, fabrikam.com, or any of their subdomains.
-`contoso.com` | `mail.contoso.com`<br>`.contoso.com`<br>`.www.contoso.com` | Block all requests to contoso.com, except for the main page and its mail subdomain.
+`*` | `contoso.com`<br>`fabrikam.com` | All requests are blocked unless it is to `contoso.com, fabrikam.com,` or any of their subdomains.
+`contoso.com` | `mail.contoso.com`<br>`.contoso.com`<br>`.www.contoso.com` | Block all requests to `contoso.com,` except for the main page and its mail subdomain.
 `youtube.com` | `youtube.com/watch?v=v1`<br>`youtube.com/watch?v=v2` | Blocks all access to youtube.com except for the specified videos (v1 and v2).
 
 The following table gives examples for blocked URLs. 
@@ -128,11 +130,11 @@ The following table gives examples for blocked URLs.
 
 |          Entry           |                                    Result                                     |
 |--------------------------|-------------------------------------------------------------------------------|
-|      `contoso.com`       | Blocks all requests to contoso.com, www.contoso.com, and sub.www.contoso.com  |
+|      `contoso.com`       | Blocks all requests to contoso.com, `www.contoso.com,` and sub.www.contoso.com  |
 |       `https://*`        |                   Blocks all HTTPS requests to any domain.                    |
-|    `mail.contoso.com`    | Blocks requests to mail.contoso.com but not to www.contoso.com or contoso.com |
+|    `mail.contoso.com`    | Blocks requests to mail.contoso.com but not to `www.contoso.com` or `contoso.com` |
 |      `.contoso.com`      |    Blocks contoso.com but not its subdomains, like subdomain.contoso.com.     |
-|    `.www.contoso.com`    |                Blocks www.contoso.com but not its subdomains.                 |
+|    `.www.contoso.com`    |                Blocks `www.contoso.com` but not its subdomains.                 |
 |           `*`            |    Blocks all requests except for URLs in the Blocked URL Exceptions list.    |
 |         `*:8080`         |                       Blocks all requests to port 8080.                       |
 |   `contoso.com/stuff`    |         Blocks all requests to contoso.com/stuff and its subdomains.          |
@@ -162,7 +164,7 @@ Check the guidelines published by your selected app and set up accordingly.
 
 ## Develop your kiosk app
 
-Assigned access in Windows 10 leverages the new lock framework. When an assigned access user signs in, the selected kiosk app is launched above the lock screen. The kiosk app is running as an above lock screen app. 
+Assigned access in Windows client leverages the new lock framework. When an assigned access user signs in, the selected kiosk app is launched above the lock screen. The kiosk app is running as an above lock screen app. 
 
 Follow the [best practices guidance for developing a kiosk app for assigned access](/windows-hardware/drivers/partnerapps/create-a-kiosk-app-for-assigned-access). 
 

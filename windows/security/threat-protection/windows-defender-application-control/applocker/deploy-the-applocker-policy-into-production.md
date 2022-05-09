@@ -1,5 +1,5 @@
 ---
-title: Deploy the AppLocker policy into production (Windows 10)
+title: Deploy the AppLocker policy into production (Windows)
 description: This topic for the IT professional describes the tasks that should be completed before you deploy AppLocker application control settings.
 ms.assetid: ebbb1907-92dc-499e-8cee-8e637483c9ae
 ms.reviewer: 
@@ -15,14 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Deploy the AppLocker policy into production
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for the IT professional describes the tasks that should be completed before you deploy AppLocker application control settings.
 

@@ -1,5 +1,5 @@
 ---
-title: Use the Device Guard Signing Portal in the Microsoft Store for Business  (Windows 10)
+title: Use the Device Guard Signing Portal in the Microsoft Store for Business  (Windows)
 description: You can sign code integrity policies with the Device Guard signing portal to prevent them from being tampered with after they're deployed.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -15,18 +15,24 @@ author: jsuther1974
 ms.reviewer: isbrahm
 manager: dansimp
 ms.date: 02/19/2019
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Optional: Use the Device Guard Signing Portal in the Microsoft Store for Business
 
 **Applies to:**
 
--   Windows 10
--   Windows Server 2019
--   Windows Server 2016
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
 
-You can sign code integrity policies with the Device Guard signing portal to prevent them from being tampered with after they're deployed. 
+> [!IMPORTANT]
+> The existing web-based mechanism for the Device Guard Signing Service v1 will be retired on June 9, 2021. Please transition to the PowerShell based version of the service [(DGSS v2)](/microsoft-store/device-guard-signing-portal). For more details, see [Sign an MSIX package with Device Guard signing](/windows/msix/package/signing-package-device-guard-signing) and [Device Guard signing](/microsoft-store/device-guard-signing-portal).
+
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+
+You can sign code integrity policies with the Device Guard signing portal to prevent them from being tampered with after they're deployed.
 
 ## Sign your code integrity policy
 Before you get started, be sure to review these best practices:

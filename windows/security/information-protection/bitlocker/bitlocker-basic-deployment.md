@@ -3,7 +3,7 @@ title: BitLocker basic deployment (Windows 10)
 description: This article for the IT professional explains how BitLocker features can be used to protect your data through drive encryption.
 ms.assetid: 97c646cb-9e53-4236-9678-354af41151c4
 ms.reviewer: 
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
@@ -12,7 +12,9 @@ author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+  - M365-security-compliance
+  - highpri
 ms.topic: conceptual
 ms.date: 02/28/2019
 ms.custom: bitlocker
@@ -22,7 +24,9 @@ ms.custom: bitlocker
 
 **Applies to**
 
--   Windows 10
+-   Windows 10
+-   Windows 11
+-   Windows Server 2016 and above
 
 This article for the IT professional explains how BitLocker features can be used to protect your data through drive encryption.
 
@@ -108,14 +112,14 @@ Windows Explorer allows users to launch the BitLocker Drive Encryption wizard by
 
 The following table shows the compatibility matrix for systems that have been BitLocker enabled then presented to a different version of Windows.
 
-Table 1: Cross compatibility for Windows 10, Windows 8.1, Windows 8, and Windows 7 encrypted volumes
+Table 1: Cross compatibility for Windows 11, Windows 10, Windows 8.1, Windows 8, and Windows 7 encrypted volumes
 
-|Encryption Type|Windows 10 and Windows 8.1|Windows 8|Windows 7|
+|Encryption Type|Windows 11, Windows 10, and Windows 8.1|Windows 8|Windows 7|
 |--- |--- |--- |--- |
 |Fully encrypted on Windows 8|Presents as fully encrypted|N/A|Presented as fully encrypted|
 |Used Disk Space Only encrypted on Windows 8|Presents as encrypt on write|N/A|Presented as fully encrypted|
 |Fully encrypted volume from Windows 7|Presents as fully encrypted|Presented as fully encrypted|N/A|
-|Partially encrypted volume from Windows 7|Windows 10 and Windows 8.1 will complete encryption regardless of policy|Windows 8 will complete encryption regardless of policy|N/A|
+|Partially encrypted volume from Windows 7|Windows 11, Windows 10, and Windows 8.1 will complete encryption regardless of policy|Windows 8 will complete encryption regardless of policy|N/A|
 
 ## <a href="" id="bkmk-dep3"></a>Encrypting volumes using the manage-bde command-line interface
 
@@ -181,132 +185,20 @@ manage-bde -on C:
 
 Windows PowerShell cmdlets provide an alternative way to work with BitLocker. Using Windows PowerShell's scripting capabilities, administrators can integrate BitLocker options into existing scripts with ease. The list below displays the available BitLocker cmdlets.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Name</strong></p></td>
-<td align="left"><p><strong>Parameters</strong></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Add-BitLockerKeyProtector</strong></p></td>
-<td align="left"><p>-ADAccountOrGroup</p>
-<p>-ADAccountOrGroupProtector</p>
-<p>-Confirm</p>
-<p>-MountPoint</p>
-<p>-Password</p>
-<p>-PasswordProtector</p>
-<p>-Pin</p>
-<p>-RecoveryKeyPath</p>
-<p>-RecoveryKeyProtector</p>
-<p>-RecoveryPassword</p>
-<p>-RecoveryPasswordProtector</p>
-<p>-Service</p>
-<p>-StartupKeyPath</p>
-<p>-StartupKeyProtector</p>
-<p>-TpmAndPinAndStartupKeyProtector</p>
-<p>-TpmAndPinProtector</p>
-<p>-TpmAndStartupKeyProtector</p>
-<p>-TpmProtector</p>
-<p>-WhatIf</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Backup-BitLockerKeyProtector</strong></p></td>
-<td align="left"><p>-Confirm</p>
-<p>-KeyProtectorId</p>
-<p>-MountPoint</p>
-<p>-WhatIf</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Disable-BitLocker</strong></p></td>
-<td align="left"><p>-Confirm</p>
-<p>-MountPoint</p>
-<p>-WhatIf</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Disable-BitLockerAutoUnlock</strong></p></td>
-<td align="left"><p>-Confirm</p>
-<p>-MountPoint</p>
-<p>-WhatIf</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Enable-BitLocker</strong></p></td>
-<td align="left"><p>-AdAccountOrGroup</p>
-<p>-AdAccountOrGroupProtector</p>
-<p>-Confirm</p>
-<p>-EncryptionMethod</p>
-<p>-HardwareEncryption</p>
-<p>-Password</p>
-<p>-PasswordProtector</p>
-<p>-Pin</p>
-<p>-RecoveryKeyPath</p>
-<p>-RecoveryKeyProtector</p>
-<p>-RecoveryPassword</p>
-<p>-RecoveryPasswordProtector</p>
-<p>-Service</p>
-<p>-SkipHardwareTest</p>
-<p>-StartupKeyPath</p>
-<p>-StartupKeyProtector</p>
-<p>-TpmAndPinAndStartupKeyProtector</p>
-<p>-TpmAndPinProtector</p>
-<p>-TpmAndStartupKeyProtector</p>
-<p>-TpmProtector</p>
-<p>-UsedSpaceOnly</p>
-<p>-WhatIf</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Enable-BitLockerAutoUnlock</strong></p></td>
-<td align="left"><p>-Confirm</p>
-<p>-MountPoint</p>
-<p>-WhatIf</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Get-BitLockerVolume</strong></p></td>
-<td align="left"><p>-MountPoint</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Lock-BitLocker</strong></p></td>
-<td align="left"><p>-Confirm</p>
-<p>-ForceDismount</p>
-<p>-MountPoint</p>
-<p>-WhatIf</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Remove-BitLockerKeyProtector</strong></p></td>
-<td align="left"><p>-Confirm</p>
-<p>-KeyProtectorId</p>
-<p>-MountPoint</p>
-<p>-WhatIf</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Resume-BitLocker</strong></p></td>
-<td align="left"><p>-Confirm</p>
-<p>-MountPoint</p>
-<p>-WhatIf</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Suspend-BitLocker</strong></p></td>
-<td align="left"><p>-Confirm</p>
-<p>-MountPoint</p>
-<p>-RebootCount</p>
-<p>-WhatIf</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Unlock-BitLocker</strong></p></td>
-<td align="left"><p>-AdAccountOrGroup</p>
-<p>-Confirm</p>
-<p>-MountPoint</p>
-<p>-Password</p>
-<p>-RecoveryKeyPath</p>
-<p>-RecoveryPassword</p>
-<p>-RecoveryPassword</p>
-<p>-WhatIf</p></td>
-</tr>
-</tbody>
-</table>
+|Name|Parameters|
+|--- |--- |
+|**Add-BitLockerKeyProtector**|<li>ADAccountOrGroup<li>ADAccountOrGroupProtector<li>Confirm<li>MountPoint<li>Password<li>PasswordProtector<li>Pin<li>RecoveryKeyPath<li>RecoveryKeyProtector<li>RecoveryPassword<li>RecoveryPasswordProtector<li>Service<li>StartupKeyPath<li>StartupKeyProtector<li>TpmAndPinAndStartupKeyProtector<li>TpmAndPinProtector<li>TpmAndStartupKeyProtector<li>TpmProtector<li>WhatIf|
+|**Backup-BitLockerKeyProtector**|<li>Confirm<li>KeyProtectorId<li>MountPoint<li>WhatIf|
+|**Disable-BitLocker**|<li>Confirm<li>MountPoint<li>WhatIf|
+|**Disable-BitLockerAutoUnlock**|<li>Confirm<li>MountPoint<li>WhatIf|
+|**Enable-BitLocker**|<li>AdAccountOrGroup<li>AdAccountOrGroupProtector<li>Confirm<li>EncryptionMethod<li>HardwareEncryption<li>Password<li>PasswordProtector<li>Pin<li>RecoveryKeyPath<li>RecoveryKeyProtector<li>RecoveryPassword<li>RecoveryPasswordProtector<li>Service<li>SkipHardwareTest<li>StartupKeyPath<li>StartupKeyProtector<li>TpmAndPinAndStartupKeyProtector<li>TpmAndPinProtector<li>TpmAndStartupKeyProtector<li>TpmProtector<li>UsedSpaceOnly<li>WhatIf|
+|**Enable-BitLockerAutoUnlock**|<li>Confirm<li>MountPoint<li>WhatIf|
+|**Get-BitLockerVolume**|<li>MountPoint|
+|**Lock-BitLocker**|<li>Confirm<li>ForceDismount<li>MountPoint<li>WhatIf|
+|**Remove-BitLockerKeyProtector**|<li>Confirm<li>KeyProtectorId<li>MountPoint<li>WhatIf|
+|**Resume-BitLocker**|<li>Confirm<li>MountPoint<li>WhatIf|
+|**Suspend-BitLocker**|<li>Confirm<li>MountPoint<li>RebootCount<li>WhatIf|
+|**Unlock-BitLocker**|<li>AdAccountOrGroup<li>Confirm<li>MountPoint<li>Password<li>RecoveryKeyPath<li>RecoveryPassword<li>RecoveryPassword<li>WhatIf|
 
 Similar to manage-bde, the Windows PowerShell cmdlets allow configuration beyond the options offered in the control panel. As with manage-bde, users need to consider the specific needs of the volume they are encrypting prior to running Windows PowerShell cmdlets.
 
@@ -386,8 +278,9 @@ Get-ADUser -filter {samaccountname -eq "administrator"}
 
 > [!NOTE]
 > Use of this command requires the RSAT-AD-PowerShell feature.
->
-> **Tip:**  In addition to the Windows PowerShell command above, information about the locally logged on user and group membership can be found using: WHOAMI /ALL. This does not require the use of additional features.
+
+> [!TIP]
+> In addition to the Windows PowerShell command above, information about the locally logged on user and group membership can be found using: WHOAMI /ALL. This does not require the use of additional features.
 
 In the example below, the user wishes to add a domain SID-based protector to the previously encrypted operating system volume. The user knows the SID for the user account or group they wish to add and uses the following command:
 

@@ -16,7 +16,7 @@ ms.topic: troubleshooting
 
 Microsoft regularly releases both updates for Windows Server. To ensure your servers can receive future updates, including security updates, it's important to keep your servers updated. Check out - [Windows 10 and Windows Server 2016 update history](https://support.microsoft.com/en-us/help/4000825/windows-10-windows-server-2016-update-history) for a complete list of released updates.
 
-This section contains advanced troubleshooting topics and links to help you resolve issues with Windows 10 in an enterprise or IT pro environment. Additional topics will be added as they become available.
+This section contains advanced troubleshooting topics and links to help you resolve issues with Windows 10 in an enterprise or IT pro environment. More topics will be added as they become available.
 
 ## Troubleshoot 802.1x Authentication
 - [Advanced Troubleshooting 802.1X Authentication](./advanced-troubleshooting-802-authentication.md)
@@ -24,12 +24,12 @@ This section contains advanced troubleshooting topics and links to help you reso
 
 ## Troubleshoot BitLocker
 - [Guidelines for troubleshooting BitLocker](/windows/security/information-protection/bitlocker/troubleshoot-bitlocker)
-- [BitLocker cannot encrypt a drive: known issues](/windows/security/information-protection/bitlocker/ts-bitlocker-cannot-encrypt-issues)
+- [BitLocker can't encrypt a drive: known issues](/windows/security/information-protection/bitlocker/ts-bitlocker-cannot-encrypt-issues)
 - [Enforcing BitLocker policies by using Intune: known issues](/windows/security/information-protection/bitlocker/ts-bitlocker-intune-issues)
 - [BitLocker Network Unlock: known issues](/windows/security/information-protection/bitlocker/ts-bitlocker-network-unlock-issues)
 - [BitLocker recovery: known issues](/windows/security/information-protection/bitlocker/ts-bitlocker-recovery-issues)
 - [BitLocker configuration: known issues](/windows/security/information-protection/bitlocker/ts-bitlocker-config-issues)
-- [BitLocker cannot encrypt a drive: known TPM issues](/windows/security/information-protection/bitlocker/ts-bitlocker-cannot-encrypt-tpm-issues)
+- [BitLocker can't encrypt a drive: known TPM issues](/windows/security/information-protection/bitlocker/ts-bitlocker-cannot-encrypt-tpm-issues)
 - [BitLocker and TPM: other known issues](/windows/security/information-protection/bitlocker/ts-bitlocker-tpm-issues)
 - [Decode Measured Boot logs to track PCR changes](/windows/security/information-protection/bitlocker/ts-bitlocker-decode-measured-boot-logs)
 - [BitLocker frequently asked questions (FAQ)](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions)
@@ -110,7 +110,7 @@ This section contains advanced troubleshooting topics and links to help you reso
 - [Windows Update log files](/windows/deployment/update/windows-update-logs)
 - [Windows Update troubleshooting](/windows/deployment/update/windows-update-troubleshooting)
 - [Windows Update common errors and mitigation](/windows/deployment/update/windows-update-errors)
-- [Windows Update - Additional resources](/windows/deployment/update/windows-update-resources)
+- [Windows Update - More resources](/windows/deployment/update/windows-update-resources)
 - [Get started with Windows Update](/windows/deployment/update/windows-update-overview)
 - [Servicing stack updates](/windows/deployment/update/servicing-stack-updates)
 

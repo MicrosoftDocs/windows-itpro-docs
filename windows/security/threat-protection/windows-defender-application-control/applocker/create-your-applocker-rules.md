@@ -1,5 +1,5 @@
 ---
-title: Create Your AppLocker rules (Windows 10)
+title: Create Your AppLocker rules (Windows)
 description: This topic for the IT professional describes what you need to know about AppLocker rules and the methods that you can to create rules.
 ms.assetid: b684a3a5-929c-4f70-8742-04088022f232
 ms.reviewer: 
@@ -15,14 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Create Your AppLocker rules
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for the IT professional describes what you need to know about AppLocker rules and the methods that you can to create rules.
 

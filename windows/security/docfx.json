@@ -33,7 +33,8 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
+      "recommendations": true,
+      "breadcrumb_path": "/windows/resources/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-M365-IT",
       "ms.topic": "article",
       "manager": "dansimp",
@@ -47,7 +48,7 @@
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "Microsoft 365 Security",
+      "titleSuffix": "Windows security",
       "contributors_to_exclude": [
         "rjagiewich", 
         "traya1", 

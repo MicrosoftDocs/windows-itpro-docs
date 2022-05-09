@@ -1,26 +1,26 @@
 ---
-title: Use MDM Bridge WMI Provider to create a Windows 10 kiosk (Windows 10)
+title: Use MDM Bridge WMI Provider to create a Windows 10/11 kiosk (Windows 10/11)
 description: Environments that use Windows Management Instrumentation (WMI) can use the MDM Bridge WMI Provider to configure the MDM_AssignedAccess class.
 ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
-ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+ms.reviewer: sybruckm
+manager: dougeby
+ms.author: aaroncz
 keywords: ["assigned access", "kiosk", "lockdown", "digital sign", "digital signage"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
-ms.date: 11/07/2018
 ms.topic: article
 ---
 
-# Use MDM Bridge WMI Provider to create a Windows 10 kiosk
+# Use MDM Bridge WMI Provider to create a Windows client kiosk
 
 
 **Applies to**
 
--   Windows 10 Pro, Enterprise, and Education
+- Windows 10 Pro, Enterprise, and Education
+- Windows 11
 
 Environments that use [Windows Management Instrumentation (WMI)](/windows/win32/wmisdk/wmi-start-page) can use the [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal) to configure the MDM_AssignedAccess class. For more information about using a PowerShell script to configure AssignedAccess, see [PowerShell Scripting with WMI Bridge Provider](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider). 
 

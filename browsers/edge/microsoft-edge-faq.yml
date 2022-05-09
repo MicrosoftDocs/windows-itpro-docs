@@ -8,14 +8,13 @@ metadata:
   author: dansimp
   ms.author: dansimp
   ms.prod: edge
-  ms.topic: article
+  ms.topic: faq
   ms.mktglfcycl: general
   ms.sitesec: library
   ms.localizationpriority: medium
-    
 title: Frequently Asked Questions (FAQ) for IT Pros
 summary: |
-  Applies to: Microsoft Edge on Windows 10 and Windows 10 Mobile
+  Applies to: Microsoft Edge on Windows 10
   
   > [!NOTE]
   > You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](/DeployEdge/).
@@ -40,7 +39,7 @@ sections:
           
       - question: How do I customize Microsoft Edge and related settings for my organization?
         answer: |
-          You can use Group Policy or Microsoft Intune to manage settings related to Microsoft Edge, such as security settings, folder redirection, and preferences. See [Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge](./group-policies/index.yml) for a list of policies currently available for Microsoft Edge and configuration information. Note that the preview release of Chromium-based Microsoft Edge might not include management policies or other enterprise functionality; our focus during the preview is modern browser fundamentals.  
+          You can use Group Policy or Microsoft Intune to manage settings related to Microsoft Edge, such as security settings, folder redirection, and preferences. See [Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge](./group-policies/index.yml) for a list of policies currently available for Microsoft Edge and configuration information. The preview release of Chromium-based Microsoft Edge might not include management policies or other enterprise functionality; our focus during the preview is modern browser fundamentals.  
           
       - question: Is Adobe Flash supported in Microsoft Edge?
         answer: |
@@ -62,7 +61,7 @@ sections:
 
       - question: Will Internet Explorer 11 continue to receive updates?
         answer: |
-          We're committed to keeping Internet Explorer a supported, reliable, and safe browser. Internet Explorer is still a component of Windows and follows the support lifecycle of the OS on which it's installed. For details, see [Lifecycle FAQ - Internet Explorer](https://support.microsoft.com/help/17454/). While we continue to support and update Internet Explorer, the latest features and platform updates will only be available in Microsoft Edge.
+          We're committed to keeping Internet Explorer a supported, reliable, and safe browser. Internet Explorer is still a component of Windows and follows the support lifecycle of the OS on which it's installed. For details, see [Lifecycle FAQ - Internet Explorer](/lifecycle/faq/internet-explorer-microsoft-edge). While we continue to support and update Internet Explorer, the latest features and platform updates will only be available in Microsoft Edge.
           
       - question: How do I find out which version of Microsoft Edge I have?
         answer: |
