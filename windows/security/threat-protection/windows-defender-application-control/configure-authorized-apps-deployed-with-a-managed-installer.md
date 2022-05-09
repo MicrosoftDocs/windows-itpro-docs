@@ -230,6 +230,10 @@ Below are steps to create a WDAC policy that allows Windows to boot and enables 
 > [!NOTE]
 > Your WDAC policy must include rules for all system/boot components, kernel drivers, and any other authorized applications that can't be deployed through a managed installer.
 
+## Remove Managed Installer feature
+
+To remove the Managed Installer feature from the device, you will need to remove the Managed Installer AppLocker policy from the device by following the instructions at [Delete an AppLocker rule - To clear AppLocker policies on a single system or remote systems](delete-an-applocker-rule.md#to-clear-applocker-policies-on-a-single-system-or-remote-systems)
+
 ## Related articles
 
 - [Managed installer and ISG technical reference and troubleshooting guide](configure-wdac-managed-installer.md)
