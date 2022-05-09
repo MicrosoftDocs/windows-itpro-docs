@@ -1,3 +1,4 @@
+level: II
 
 title:	Enterprise Read-only Domain Controllers should be documented as a Special Identity based on its behavior
 state:	OPEN

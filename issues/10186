@@ -1,3 +1,4 @@
+level: II
 
 title:	Clarify kind of hardware TPMs that Windows Hello will accept for attestation
 state:	OPEN
