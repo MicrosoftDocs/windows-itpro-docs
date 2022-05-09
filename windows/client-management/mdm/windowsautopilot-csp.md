@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: dansimp
-ms.date: 02/07/2022
+ms.date: 05/09/2022
 ---
 
 # WindowsAutoPilot CSP
