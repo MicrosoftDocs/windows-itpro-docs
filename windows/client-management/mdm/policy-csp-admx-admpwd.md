@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_AdmPwd
-description: Policy CSP - ADMX_AdmPwd
+description: Learn about the Policy CSP - ADMX_AdmPwd.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -73,7 +73,7 @@ manager: dansimp
 
 When you enable this setting, planned password expiration longer than password age dictated by "Password Settings" policy is NOT allowed. When such expiration is detected, password is changed immediately and password expiration is set according to policy.
 
-When you disable or not configure this setting, password expiration time may be longer than required by "Password Settings" policy.
+When you disable or don't configure this setting, password expiration time may be longer than required by "Password Settings" policy.
 <!--/Description-->
 
 <!--ADMXBacked-->
@@ -160,7 +160,7 @@ ADMX Info:
 
 When you enable this setting, planned password expiration longer than password age dictated by "Password Settings" policy is NOT allowed. When such expiration is detected, password is changed immediately and password expiration is set according to policy.
 
-When you disable or not configure this setting, password expiration time may be longer than required by "Password Settings" policy.
+When you disable or don't configure this setting, password expiration time may be longer than required by "Password Settings" policy.
 <!--/Description-->
 
 <!--ADMXBacked-->
@@ -225,3 +225,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

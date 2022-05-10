@@ -1,5 +1,5 @@
 ---
-title: Use Windows Update for Business (WUfB) and Windows Server Update Services (WSUS) together
+title: Use Windows Update for Business and Windows Server Update Services (WSUS) together
 description:  Learn how to use Windows Update for Business and WSUS together using the new scan source policy.
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -23,7 +23,7 @@ ms.topic: article
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
-The Windows update scan source policy enables you to choose what types of updates to get from either [WSUS](waas-manage-updates-wsus.md) or Windows Update for Business (WUfB) service.
+The Windows update scan source policy enables you to choose what types of updates to get from either [WSUS](waas-manage-updates-wsus.md) or Windows Update for Business service.
 
 We added the scan source policy starting with the [September 1, 2021—KB5005101 (OS Builds 19041.1202, 19042.1202, and 19043.1202) Preview](https://support.microsoft.com/help/5005101) update and it applies to Window 10, version 2004 and above and Windows 11. This policy changes the way devices determine whether to scan against a local WSUS server or Windows Update service.
 

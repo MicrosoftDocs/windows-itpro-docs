@@ -79,11 +79,11 @@ manager: dansimp
 <!--Description-->
 This policy setting blocks voice and video calls during Quiet Hours.
 
-If you enable this policy setting, voice and video calls will be blocked during the designated Quiet Hours time window each day, and users will not be able to customize any other Quiet Hours settings.
+If you enable this policy setting, voice and video calls will be blocked during the designated Quiet Hours time window each day, and users won't be able to customize any other Quiet Hours settings.
 
-If you disable this policy setting, voice and video calls will be allowed during Quiet Hours, and users will not be able to customize this or any other Quiet Hours settings.
+If you disable this policy setting, voice and video calls will be allowed during Quiet Hours, and users won't be able to customize this or any other Quiet Hours settings.
 
-If you do not configure this policy setting, voice and video calls will be allowed during Quiet Hours by default. Administrators and users will be able to modify this setting.
+If you don't configure this policy setting, voice and video calls will be allowed during Quiet Hours by default. Administrators and users will be able to modify this setting.
 
 <!--/Description-->
 
@@ -128,9 +128,9 @@ ADMX Info:
 <!--Description-->
 This policy setting turns off toast notifications on the lock screen.
 
-If you enable this policy setting, applications will not be able to raise toast notifications on the lock screen.
+If you enable this policy setting, applications won't be able to raise toast notifications on the lock screen.
 
-If you disable or do not configure this policy setting, toast notifications on the lock screen are enabled and can be turned off by the administrator or user.
+If you disable or don't configure this policy setting, toast notifications on the lock screen are enabled and can be turned off by the administrator or user.
 
 No reboots or service restarts are required for this policy setting to take effect.
 
@@ -177,11 +177,11 @@ ADMX Info:
 <!--Description-->
 This policy setting turns off Quiet Hours functionality.
 
-If you enable this policy setting, toast notifications will not be suppressed and some background tasks will not be deferred during the designated Quiet Hours time window each day.
+If you enable this policy setting, toast notifications won't be suppressed and some background tasks won't be deferred during the designated Quiet Hours time window each day.
 
-If you disable this policy setting, toast notifications will be suppressed and some background task deferred during the designated Quiet Hours time window. Users will not be able to change this or any other Quiet Hours settings.
+If you disable this policy setting, toast notifications will be suppressed and some background task deferred during the designated Quiet Hours time window. Users won't be able to change this or any other Quiet Hours settings.
 
-If you do not configure this policy setting, Quiet Hours are enabled by default but can be turned off or by the administrator or user.
+If you don't configure this policy setting, Quiet Hours are enabled by default but can be turned off or by the administrator or user.
 
 <!--/Description-->
 
@@ -226,13 +226,13 @@ ADMX Info:
 <!--Description-->
 This policy setting turns off toast notifications for applications.
 
-If you enable this policy setting, applications will not be able to raise toast notifications.
+If you enable this policy setting, applications won't be able to raise toast notifications.
 
-Note that this policy does not affect taskbar notification balloons.
+This policy doesn't affect taskbar notification balloons.
 
-Note that Windows system features are not affected by this policy.  You must enable/disable system features individually to stop their ability to raise toast notifications.
+Windows system features aren't affected by this policy.  You must enable/disable system features individually to stop their ability to raise toast notifications.
 
-If you disable or do not configure this policy setting, toast notifications are enabled and can be turned off by the administrator or user.
+If you disable or don't configure this policy setting, toast notifications are enabled and can be turned off by the administrator or user.
 
 No reboots or service restarts are required for this policy setting to take effect.
 
@@ -279,11 +279,11 @@ ADMX Info:
 <!--Description-->
 This policy setting specifies the number of minutes after midnight (local time) that Quiet Hours is to begin each day.
 
-If you enable this policy setting, the specified time will be used, and users will not be able to customize any Quiet Hours settings.
+If you enable this policy setting, the specified time will be used, and users won't be able to customize any Quiet Hours settings.
 
-If you disable this policy setting, a default value will be used, and users will not be able to change it or any other Quiet Hours setting.
+If you disable this policy setting, a default value will be used, and users won't be able to change it or any other Quiet Hours setting.
 
-If you do not configure this policy setting, a default value will be used, which administrators and users will be able to modify.
+If you don't configure this policy setting, a default value will be used, which administrators and users will be able to modify.
 
 <!--/Description-->
 
@@ -328,11 +328,11 @@ ADMX Info:
 <!--Description-->
 This policy setting specifies the number of minutes after midnight (local time) that Quiet Hours is to end each day.
 
-If you enable this policy setting, the specified time will be used, and users will not be able to customize any Quiet Hours settings.
+If you enable this policy setting, the specified time will be used, and users won't be able to customize any Quiet Hours settings.
 
-If you disable this policy setting, a default value will be used, and users will not be able to change it or any other Quiet Hours setting.
+If you disable this policy setting, a default value will be used, and users won't be able to change it or any other Quiet Hours setting.
 
-If you do not configure this policy setting, a default value will be used, which administrators and users will be able to modify.
+If you don't configure this policy setting, a default value will be used, which administrators and users will be able to modify.
 
 <!--/Description-->
 

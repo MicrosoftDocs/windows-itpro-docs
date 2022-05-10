@@ -33,7 +33,7 @@ For PFX certificate installation and SCEP installation, the SyncML commands must
 
 You can only set PFXKeyExportable to true if KeyLocation=3. For any other KeyLocation value, the CSP will fail.
 
-The following shows the ClientCertificateInstall configuration service provider in tree format.
+The following example shows the ClientCertificateInstall configuration service provider in tree format.
 
 ```
 ./Vendor/MSFT
@@ -119,7 +119,7 @@ Date type is string.
 Supported operations are Get, Add, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-pfxcertblob"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/PFXCertBlob**  
-CRYPT_DATA_BLOB structure that contains a PFX packet with the exported and encrypted certificates and keys. The Add operation triggers the addition to the PFX certificate. This requires that all the other nodes under UniqueID that are parameters for PFX installation (Container Name, KeyLocation, CertPassword, KeyExportable) are present before this is called. This also sets the Status node to the current Status of the operation.
+CRYPT_DATA_BLOB structure that contains a PFX packet with the exported and encrypted certificates and keys. The Add operation triggers the addition to the PFX certificate. This Add operation requires that all the other nodes under UniqueID that are parameters for PFX installation (Container Name, KeyLocation, CertPassword, KeyExportable) are present before the Add operation is called. This trigger for addition also sets the Status node to the current Status of the operation.
 
 The data type format is binary.
 
@@ -197,7 +197,7 @@ A node required for SCEP certificate enrollment. Parent node to group SCEP cert 
 Supported operations are Get, Add, Replace, and Delete.
 
 > [!Note]
-> Although the child nodes under Install supports Replace commands, once the Exec command is sent to the device, the device will take the values that are set when the Exec command is accepted. The server should not expect the node value change after Exec command is accepted, as it will impact the current enrollment underway. The server should check the Status node value and make sure the device is not at an unknown state before changing child node values.
+> Although the child nodes under Install support Replace commands, once the Exec command is sent to the device, the device will take the values that are set when the Exec command is accepted. The server should not expect the node value change after Exec command is accepted, as it will impact the current enrollment underway. The server should check the Status node value and ensure the device isn't at an unknown state before changing child node values.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-serverurl"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/ServerURL**  
 Required for SCEP certificate enrollment. Specifies the certificate enrollment server. Multiple server URLs can be listed, separated by semicolons.
@@ -223,7 +223,7 @@ Supported operations are Get, Add, Delete, and Replace.
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-subjectname"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/SubjectName**  
 Required. Specifies the subject name. 
 
-The SubjectName value is quoted if it contains leading or trailing white space or one of the following characters: (“,” “=” “+” “;”  ).
+The SubjectName value is quoted if it contains leading or trailing white space or one of the following characters: (“,” “=” “+” “;”).
 
 For more information, see [CertNameToStrA function](/windows/win32/api/wincrypt/nf-wincrypt-certnametostra#remarks).
 
@@ -235,7 +235,7 @@ Supported operations are Add, Get, and Replace.
 Optional. Specifies where to keep the private key.
 
 > [!Note]
-> Even if the private key is protected by TPM, it is not protected with a TPM PIN.
+> Even if the private key is protected by TPM, it isn't protected with a TPM PIN.
 
 The data type is an integer corresponding to one of the following values:  
 
@@ -310,14 +310,14 @@ Data type is string.
 Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-cathumbprint"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/CAThumbprint**  
-Required. Specifies Root CA thumbprint. This is a 20-byte value of the SHA1 certificate hash specified as a hexadecimal string value. When client authenticates the SCEP server, it checks the CA certificate from the SCEP server to verify a match with this certificate. If it is not a match, the authentication will fail.
+Required. Specifies Root CA thumbprint. This thumbprint is a 20-byte value of the SHA1 certificate hash specified as a hexadecimal string value. When client authenticates the SCEP server, it checks the CA certificate from the SCEP server to verify a match with this certificate. If it isn't a match, the authentication will fail.
 
 Data type is string.
 
 Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-subjectalternativenames"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/SubjectAlternativeNames**  
-Optional. Specifies subject alternative names (SAN). Multiple alternative names can be specified by this node. Each name is the combination of name format+actual name. Refer to the name type definitions in MSDN for more information.
+Optional. Specifies subject alternative names (SAN). Multiple alternative names can be specified by this node. Each name is the combination of name format+actual name. For more information, see the name type definitions in MSDN.
 
 Each pair is separated by semicolon. For example, multiple SANs are presented in the format of <em>[name format1]</em>+<em>[actual name1]</em>;<em>[name format 2]</em>+<em>[actual name2]</em>.
 
@@ -342,9 +342,9 @@ Valid values are:
 Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-validperiodunits"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/ValidPeriodUnits**  
-Optional. Specifies the desired number of units used in the validity period. This is subject to SCEP server configuration. Default value is 0. The unit type (days, months, or years) is defined in the ValidPeriod node. 
+Optional. Specifies the desired number of units used in the validity period. This number is subject to SCEP server configuration. Default value is 0. The unit type (days, months, or years) is defined in the ValidPeriod node. 
 
->[!Note]
+> [!Note]
 > The valid period specified by MDM will overwrite the valid period specified in the certificate template. For example, if ValidPeriod is Days and ValidPeriodUnits is 30, it means the total valid duration is 30 days.
 
 Data type is string.
@@ -385,7 +385,7 @@ Supported operations are Add, Get, Delete, and Replace.
 <a href="" id="clientcertificateinstall-scep-uniqueid-certthumbprint"></a>**ClientCertificateInstall/SCEP/*UniqueID*/CertThumbprint**  
 Optional. Specifies the current certificate’s thumbprint if certificate enrollment succeeds. It's a 20-byte value of the SHA1 certificate hash specified as a hexadecimal string value.
 
-If the certificate on the device becomes invalid (Cert expired, Cert chain is not valid, private key deleted) then it will return an empty string.
+If the certificate on the device becomes invalid (Cert expired, Cert chain isn't valid, private key deleted) then it will return an empty string.
 
 Data type is string.
 

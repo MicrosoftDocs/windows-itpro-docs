@@ -120,7 +120,7 @@ For more information, see [Windows Setup Command-Line Options](/windows-hardware
 
 SetupDiag works by searching Windows Setup log files. When searching log files, SetupDiag uses a set of rules to match known issues. In the current version of SetupDiag there are 26 rules contained in the rules.xml file, which is extracted when SetupDiag is run. The rules.xml file will be updated as new versions of SetupDiag are made available. 
 
-### Windows Update for Business (WUfB)
+### Windows Update for Business
 
 Windows Update for Business now provides greater control over updates, with the ability to pause and uninstall problematic updates using Intune.  For more information, see [Manage software updates in Intune](/intune/windows-update-for-business-configure).
 

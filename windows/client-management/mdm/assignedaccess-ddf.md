@@ -49,7 +49,7 @@ The XML below is for Windows 10, version 1803 and later.
                 <Permanent />
             </Scope>
             <DFType>
-                <MIME>com.microsoft/2.0/MDM/AssignedAccess</MIME>
+                <MIME>com.microsoft/4.0/MDM/AssignedAccess</MIME>
             </DFType>
         </DFProperties>
         <Node>
