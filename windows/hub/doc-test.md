@@ -18,7 +18,7 @@ manager: dougeby
 This article is for testing purposes only.
 
 > [!NOTE]
-> For more markdown examples and tips, see the **template.md** file at the root of the repository.
+> For more markdown examples and tips, see the **template.md** file at the root of the repository. Including examples of links and images.
 
 ## Basic Markdown and GFM
 
@@ -46,31 +46,6 @@ _Italics_ (`_`)
 **Bold** (`**`)
 
 ~~Strikethrough~~ (`~~`)
-
-## Links
-
-To link to a markdown file in the same repo, use **file-relative links**. Use the Docs Authoring Pack to help.
-
-Examples:
-
-- [Windows client documentation for IT Pros](index.yml)
-- [Plan for Windows 11](../whats-new/windows-11-plan.md)
-
-To link to a header in the same markdown file, find the section anchor and link using `#` (for example, `#blockquote`). Use the Docs Authoring Pack to help.
-
-- Example: [Blockquotes](#blockquotes)
-
-To link to a header in a markdown file in the same repo, use relative linking + hashtag linking.
-
-- [Windows 11 availability](../whats-new/windows-11-plan.md#windows-11-availability)
-
-To link to another article on docs.ms, use a **root-relative link**.
-
-- Example: [What's new in Configuration Manager incremental versions](/mem/configmgr/core/plan-design/changes/whats-new-incremental-versions)
-
-To link to an external file, use the full URL as the link. Remove any locales.
-
-- Example: [GitHub](https://www.github.com)
 
 ## Lists
 
@@ -151,20 +126,6 @@ This example is for `in-line code`.
 
 > The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
 
-## Images
-
-### Static Image
-
-:::image type="content" source="images/deploy1.png" alt-text="A graphic of a laptop as a suitcase.":::
-
-### Image with lightbox
-
-:::image type="content" source="images/deploy2.png" alt-text="A graphic of a computer with external monitor." lightbox="images/W10-WaaS-poster.PNG":::
-
-### Animated gif
-
-:::image type="content" source="/mem/media/docs-filter-toc.gif" alt-text="Animated gif of 'filter by title' option in the table of contents.":::
-
 ## Alerts
 
 ### Note
@@ -191,22 +152,3 @@ This example is for `in-line code`.
 
 > [!IMPORTANT]
 > This alert is a IMPORTANT
-
-## Videos
-
-### YouTube
-
-> [!VIDEO https://www.youtube.com/embed/R6_eWWfNB54]
-
-## docs.ms extensions
-
-### Button
-
-> [!div class="button"]
-[button links](/rights-management)
-
-### Step-By-Step
-
->[!div class="step-by-step"]
-[Pre](https://www.example.com)
-[Next](https://www.example.com)
