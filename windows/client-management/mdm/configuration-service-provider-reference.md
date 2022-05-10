@@ -1019,7 +1019,7 @@ Additional lists:
 
 |Home|Pro|Business|Enterprise|Education|
 |--- |--- |--- |--- |--- |
-|No|Yes|Yes|Yes|Yes|
+|No|No|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
