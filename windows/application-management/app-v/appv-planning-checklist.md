@@ -32,6 +32,6 @@ This checklist can be used to help you plan for preparing your organization for 
 
 
 
-## Related topics
+## Related articles
 
 [Planning for App-V](appv-planning-for-appv.md)
