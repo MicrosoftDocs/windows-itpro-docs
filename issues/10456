@@ -1,3 +1,4 @@
+level: II
 
 title:	Specify what level the logon command is run under
 state:	OPEN

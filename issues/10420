@@ -1,3 +1,4 @@
+level: II
 
 title:	Audit NTLM authentication in this domain - Possible values
 state:	OPEN
