@@ -26,7 +26,7 @@ The table below shows the applicability of Windows:
 
 The DeviceStatus configuration service provider is used by the enterprise to keep track of device inventory and query the state of compliance of these devices with their enterprise policies.
 
-The following shows the DeviceStatus configuration service provider in tree format.
+The following example shows the DeviceStatus configuration service provider in tree format.
 ```
 ./Vendor/MSFT
 DeviceStatus
@@ -77,7 +77,7 @@ DeviceStatus
 The root node for the DeviceStatus configuration service provider.
 
 <a href="" id="devicestatus-securebootstate"></a>**DeviceStatus/SecureBootState**  
-Indicates whether secure boot is enabled. The value is one of the following:
+Indicates whether secure boot is enabled. The value is one of the following values:
 
 - 0 - Not supported
 - 1 - Enabled
@@ -146,7 +146,7 @@ Boolean value that indicates whether the network card associated with the MAC ad
 Supported operation is Get.
 
 <a href="" id="devicestatus-networkidentifiers-macaddress-type"></a>**DeviceStatus/NetworkIdentifiers/*MacAddress*/Type**  
-Type of network connection. The value is one of the following:
+Type of network connection. The value is one of the following values:
 
 - 2 - WLAN (or other Wireless interface)
 - 1 - LAN (or other Wired interface)
@@ -158,7 +158,7 @@ Supported operation is Get.
 Node for the compliance query.
 
 <a href="" id="devicestatus-compliance-encryptioncompliance"></a>**DeviceStatus/Compliance/EncryptionCompliance**  
-Boolean value that indicates compliance with the enterprise encryption policy for OS (system) drives. The value is one of the following:
+Boolean value that indicates compliance with the enterprise encryption policy for OS (system) drives. The value is one of the following values:
 
 - 0 - Not encrypted
 - 1 - Encrypted
@@ -227,7 +227,7 @@ Valid values:
 - 1 – Antivirus is disabled.
 - 2 – Antivirus isn't monitoring the device/PC or some options have been turned off.
 - 3 (default) – Antivirus is temporarily not completely monitoring the device/PC.
-- 4 – Antivirus not applicable for this device. It is returned for devices like the phone that don't have an antivirus (where the API doesn’t exist).
+- 4 – Antivirus not applicable for this device. This value is returned for devices like the phone that don't have an antivirus (where the API doesn’t exist.)
 
 Supported operation is Get.
 
@@ -243,7 +243,7 @@ Valid values:
 
 - 0 - The security software reports that it isn't the most recent version.
 - 1 - The security software reports that it's the most recent version.
-- 2 - Not applicable. It is returned for devices like the phone that don't have an antivirus (where the API doesn’t exist.)
+- 2 - Not applicable. This value is returned for devices like the phone that don't have an antivirus (where the API doesn’t exist.)
 
 Supported operation is Get.
 
@@ -280,7 +280,7 @@ Valid values:
 - 1 – Firewall has been disabled.
 - 2 – Firewall isn't monitoring all networks or some rules have been turned off.
 - 3 (default) – Firewall is temporarily not monitoring all networks.
-- 4 – Not applicable. This is returned for devices like the phone that don't have an antivirus (where the API doesn’t exist.)
+- 4 – Not applicable. This value is returned for devices like the phone that don't have an antivirus (where the API doesn’t exist.)
 
 Supported operation is Get.
 
@@ -305,14 +305,14 @@ Added in Windows, version 1607. Integer that specifies the status of the batter
 Supported operation is Get.
 
 <a href="" id="devicestatus-battery-estimatedchargeremaining"></a>**DeviceStatus/Battery/EstimatedChargeRemaining**  
-Added in Windows, version 1607. Integer that specifies the estimated battery charge remaining. It is the value returned in **BatteryLifeTime** in [SYSTEM\_POWER\_STATUS structure](/windows/win32/api/winbase/ns-winbase-system_power_status).
+Added in Windows, version 1607. Integer that specifies the estimated battery charge remaining. This value is the one that is returned in **BatteryLifeTime** in [SYSTEM\_POWER\_STATUS structure](/windows/win32/api/winbase/ns-winbase-system_power_status).
 
 The value is the number of seconds of battery life remaining when the device isn't connected to an AC power source. When it's connected to a power source, the value is -1. When the estimation is unknown, the value is -1.
 
 Supported operation is Get.
 
 <a href="" id="devicestatus-battery-estimatedruntime"></a>**DeviceStatus/Battery/EstimatedRuntime**  
-Added in Windows, version 1607. Integer that specifies the estimated runtime of the battery. It is the value returned in **BatteryLifeTime** in [SYSTEM\_POWER\_STATUS structure](/windows/win32/api/winbase/ns-winbase-system_power_status).
+Added in Windows, version 1607. Integer that specifies the estimated runtime of the battery. This value is the one that is returned in **BatteryLifeTime** in [SYSTEM\_POWER\_STATUS structure](/windows/win32/api/winbase/ns-winbase-system_power_status).
 
 The value is the number of seconds of battery life remaining when the device isn't connected to an AC power source. When it's connected to a power source, the value is -1. When the estimation is unknown, the value is -1.
 
@@ -331,11 +331,11 @@ Supported operation is Get.
 <a href="" id="devicestatus-deviceguard-virtualizationbasedsecurityhwreq"></a>**DeviceStatus/DeviceGuard/VirtualizationBasedSecurityHwReq**  
 Added in Windows, version 1709. Virtualization-based security hardware requirement status. The value is a 256 value bitmask.
 
-- 0x0: System meets hardware configuration requirements.
-- 0x1: SecureBoot required.
-- 0x2: DMA Protection required.
-- 0x4: HyperV not supported for Guest VM.
-- 0x8: HyperV feature isn't available.
+- 0x0: System meets hardware configuration requirements
+- 0x1: SecureBoot required 
+- 0x2: DMA Protection required
+- 0x4: HyperV not supported for Guest VM
+- 0x8: HyperV feature isn't available
 
 Supported operation is Get.
 

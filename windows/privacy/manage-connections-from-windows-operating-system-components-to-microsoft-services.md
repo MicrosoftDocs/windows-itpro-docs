@@ -58,6 +58,11 @@ The following sections list the components that make network connections to Micr
 
 The following table lists management options for each setting,  For Windows 10 (beginning with Windows 10 Enterprise version 1607) and Windows 11.
 
+ > [!IMPORTANT]
+> **If you need assistance with troubleshooting issues, please refer to**:</br> 
+>  - [Keep your device running smoothly](https://support.microsoft.com/topic/keep-your-device-running-smoothly-with-recommended-troubleshooting-ec76fe10-4ac8-ce9d-49c6-757770fe68f1)</br>
+>  - [CSP - Troubleshooting](/windows/client-management/mdm/policy-csp-troubleshooting)
+
 
 | Setting | UI | Group Policy | Registry |
 | - | :-: | :-: | :-: |
@@ -581,7 +586,7 @@ Find the Microsoft Edge Group Policy objects under **Computer Configuration** > 
 | Configure search suggestions in Address Bar              | Choose whether the Address Bar shows search suggestions. <br /> **Set to Disabled**                    |
 | Configure Windows Defender SmartScreen (Windows 10, version 1703)               | Choose whether Microsoft Defender SmartScreen is turned on or off. <br /> **Set to Disabled**                            |
 | Allow web content on New Tab page                     | Choose whether a new tab page appears. <br /> **Set to Disabled**                                     |
-| Configure Start pages                       | Choose the Start page for domain-joined devices. <br /> **Enabled** and **Set this to <<about:blank>>**         |
+| Configure Start pages                       | Choose the Start page for domain-joined devices. <br /> **Enabled** and **Set this to ```<<about:blank>>```**         |
 | Prevent the First Run webpage from opening on Microsoft Edge                       | Choose whether employees see the First Run webpage. <br /> **Set to: Enable**        |
 | Allow Microsoft Compatibility List                       | Choose whether to use the Microsoft Compatibility List in Microsoft Edge. <br /> **Set to: Disabled**        |
 
@@ -597,7 +602,7 @@ Alternatively, you can configure the following Registry keys as described:
 | Configure search suggestions in Address Bar | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\SearchScopes<br/>REG_DWORD name: ShowSearchSuggestionsGlobal <br />Value: **0**|
 | Configure Windows Defender SmartScreen (Windows 10, version 1703) | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\PhishingFilter<br/>REG_DWORD name: EnabledV9 <br/>Value: **0** |
 | Allow web content on New Tab page  | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\ServiceUI<br/>REG_DWORD name: AllowWebContentOnNewTabPage <br/>Value: **0** |
-| Configure corporate Home pages | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Internet Settings<br/>REG_SZ name: ProvisionedHomePages <br/>Value: **<<about:blank>>**|
+| Configure corporate Home pages | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Internet Settings<br/>REG_SZ name: ProvisionedHomePages <br/>Value: **```<<about:blank>>```**|
 | Prevent the First Run webpage from opening on Microsoft Edge | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main <br>REG_DWORD name: PreventFirstRunPage <br/>Value: **1**|
 | Choose whether employees can configure Compatibility View. | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\BrowserEmulation<br/>REG_DWORD: MSCompatibilityMode <br />Value: **0**|
 
@@ -860,6 +865,8 @@ Use Settings > Privacy & security to configure some settings that may be importa
 - [18.22 Activity History](#bkmk-act-history)
 
 - [18.23 Voice Activation](#bkmk-voice-act)
+
+- [18.24 News and interests](#bkmk-priv-news)
 
 ### <a href="" id="bkmk-general"></a>18.1 General
 
@@ -1528,6 +1535,13 @@ To turn this Off in the UI:
 
 - Create a REG_DWORD registry setting named **LetAppsActivateWithVoiceAboveLock** in **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\AppPrivacy** with a **value of 2 (two)**
 
+### <a href="" id="bkmk-priv-news"></a>18.24 News and interests  
+
+In the **Windows Feeds** area, you can choose which apps have access to your diagnostic information.
+
+To turn this off:
+
+- Create a REG_DWORD registry setting named **EnableFeeds** in **HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Feeds** with a **value of 0 (zero)**.
 
 ### <a href="" id="bkmk-spp"></a>19. Software Protection Platform
 

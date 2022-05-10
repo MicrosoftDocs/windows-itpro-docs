@@ -28,7 +28,7 @@ The DeviceManageability configuration service provider (CSP) is used to retrieve
 
 For performance reasons, DeviceManageability CSP directly reads the CSP version from the registry. Specifically, the value csp\_version is used to determine each of the CSP versions. The csp\_version is a value under each of the CSP registration keys. To have consistency on the CSP version, the CSP GetProperty implementation for CFGMGR\_PROPERTY\_SEMANTICTYPE has to be updated to read from the registry as well, so that both the paths return the same information. 
 
-The following shows the DeviceManageability configuration service provider in a tree format.
+The following example shows the DeviceManageability configuration service provider in a tree format.
 ```
 ./Device/Vendor/MSFT
 DeviceManageability

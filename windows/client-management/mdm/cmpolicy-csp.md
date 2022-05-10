@@ -67,7 +67,7 @@ The following list describes the available mapping policy types:
 <a href="" id="host"></a>**Host**  
 Specifies the name of a host pattern. The host name is matched to the connection request to select the right policy to use.
 
-The host pattern can have two wild cards, "\*" and "+". The host pattern is not a URL pattern and there's no concept of transport or paths on the specific host. For example, the host pattern might be "\*.host\_name.com" to match any prefix to the host\_name.com domains. The host pattern will match "www.host\_name.com" and "mail.host\_name.com", but it will not match "host\_name.com".
+The host pattern can have two wild cards, `*` and `+`. The host pattern isn't a URL pattern and there's no concept of transport or paths on the specific host. For example, the host pattern might be `*.host_name.com` to match any prefix to the `host_name.com` domains. The host pattern will match `www.host_name.com` and `mail.host_name.com`, but it won't match `host_name.com`.
 
 <a href="" id="orderedconnections"></a>**OrderedConnections**  
 Specifies whether the list of connections is in preference order.

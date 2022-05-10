@@ -36,9 +36,9 @@ Pre-release Windows 10 feature updates are now available to IT administrators us
 
 The Windows 10, version 1909 enablement package will be available on WSUS as [KB4517245](https://support.microsoft.com/kb/4517245), which can be deployed on existing deployments of Windows 10, version 1903. 
 
-### Windows Update for Business (WUfB)
+### Windows Update for Business
 
-If you are using WUfB, you will receive the Windows 10, version 1909 update in the same way that you have for prior feature updates, and as defined by your feature update deferral policy.
+If you are using Windows Update for Business, you will receive the Windows 10, version 1909 update in the same way that you have for prior feature updates, and as defined by your feature update deferral policy.
 
 ## Security
 

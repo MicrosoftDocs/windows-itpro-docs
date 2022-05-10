@@ -30,8 +30,7 @@ The DMSessionActions configuration service provider (CSP) is used to manage:
 
 This CSP was added in Windows 10, version 1703.
 
-The following shows the DMSessionActions configuration service provider in tree format:
-
+The following example shows the DMSessionActions configuration service provider in tree format.
 ```
 ./User/Vendor/MSFT
 DMSessionActions

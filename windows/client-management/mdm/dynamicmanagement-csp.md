@@ -28,7 +28,7 @@ Windows 10 or Windows 11 allows you to manage devices differently depending on l
 
 This CSP was added in Windows 10, version 1703.
 
-The following shows the DynamicManagement configuration service provider in tree format.
+The following example shows the DynamicManagement configuration service provider in tree format.
 ```
 ./Device/Vendor/MSFT
 DynamicManagement
