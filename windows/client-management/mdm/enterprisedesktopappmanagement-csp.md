@@ -28,7 +28,7 @@ The EnterpriseDesktopAppManagement configuration service provider is used to han
 
 Application installations can take some time to complete, hence they're done asynchronously. When the Exec command is completed, the client can send a generic alert to the management server with a status, whether it's a failure or success. For a SyncML example, see [Alert example](#alert-example).
 
-The following shows the EnterpriseDesktopAppManagement CSP in tree format.
+The following example shows the EnterpriseDesktopAppManagement CSP in tree format.
 
 ```
 ./Device/Vendor/MSFT
@@ -75,7 +75,7 @@ Installation date of the application. Value type is string. Supported operation 
 <a href="" id="msi-productid-downloadinstall"></a>**MSI/*ProductID*/DownloadInstall**
 Executes the download and installation of the application. Value type is string. Supported operations are Execute and Get.
 
-In Windows 10, version 1703 service release, a new tag \<DownloadFromAad\> was added to the \<Enforcement\> section of the XML. The default value is 0 (don't send token). This tag is optional and needs to be set to 1 in case the server wants the download URL to get the AADUserToken.\<TimeOut\> 0 will set the timeout to infinite. 
+In Windows 10, version 1703 service release, a new tag \<DownloadFromAad\> was added to the \<Enforcement\> section of the XML. The default value is 0 (don't send token). This tag is optional and needs to be set to 1 in case the server wants the download URL to get the AADUserToken. `<TimeOut>` 0 will set the timeout to infinite. 
 
 Here's an example:
 
@@ -106,7 +106,7 @@ Status of the application. Value type is string. Supported operation is Get.
 | Enforcement Completed     | 70    |
 
 <a href="" id="msi-productid-lasterror"></a>**MSI/*ProductID*/LastError**
-The last error code during the application installation process. This is typically stored as an HRESULT format. Depending on what was occurring when the error happened, this could be the result of executing MSIExec.exe or the error result from an API that failed.
+The last error code during the application installation process. This error code is typically stored as an HRESULT format. Depending on what was occurring when the error happened, this error could be the result of executing MSIExec.exe or the error result from an API that failed.
 
 Value type is string. Supported operation is Get.
 
@@ -119,7 +119,7 @@ Value type is string. Supported operation is Get.
 Added in the March service release of Windows 10, version 1607.
 
 <a href="" id="msi-upgradecode"></a>**MSI/UpgradeCode/_Guid_**
-Added in the March service release of Windows 10, version 1607. A gateway (or device management server) uses this method to detect matching upgrade MSI product when an Admin wants to update an existing MSI app. If the same upgrade product is installed, then the update is allowed.
+Added in the March service release of Windows 10, version 1607. A gateway (or device management server) uses this method to detect matching upgrade MSI product when an administrator wants to update an existing MSI app. If the same upgrade product is installed, then the update is allowed.
 
 Value type is string. Supported operation is Get.
 
@@ -262,8 +262,9 @@ The following table describes the fields in the previous sample:
 
 |Name|Description|
 |--- |--- |
-|Add|This is required to precede the Exec command.<li>CmdID - Input value used to reference the request. Responses include this value, which can be used to match the request and response.<li>LocURI - Path to Win32 CSP command processor, including the Product ID (in this example, 1803A630-3C38-4D2B-9B9A-0CB37243539C) property escaped for XML formatting.|
+|Add|This field is required to precede the Exec command.<li>CmdID - Input value used to reference the request. Responses include this value, which can be used to match the request and response.<li>LocURI - Path to Win32 CSP command processor, including the Product ID (in this example, 1803A630-3C38-4D2B-9B9A-0CB37243539C) property escaped for XML formatting.|
 |Exec|The Exec node includes the parameters and properties requires to locate, download, validate and perform product installation.<li>CmdID - Input value used to reference the request. Responses will include this value that can be used to match request and response.<li>LocURI - Path to Win32 CSP command processor, including the Product ID (in this example, 1803A630-3C38-4D2B-9B9A-0CB37243539C) property escaped for XML formatting.<li>Data - The Data node contains an embedded XML, of type “MsiInstallJob”<li>MsiInstallJob - Contains all information required for the successful download, validation and execution of the MSI installation process (see section at the end of this document for details on this embedded data object).|
+</table>
 
 > [!Note]
 > Information status on the MSI job will be reported using standard OMA-DM notification mechanism. The status reported is represented using standard MSIEXEC return codes as HRESULT as defined in the MSIEXEC topic on Microsoft TechNet at [Msiexec (command-line options)](https://technet.microsoft.com/library/cc759262%28v=ws.10%29.aspx).
@@ -324,7 +325,7 @@ The following table MsiInstallJob describes the schema elements.
 
 |Element|Description|
 |--- |--- |
-|MsiInstallJob|root element<br>"Attribute: "id - the application identifier of the application being installed|
+|MsiInstallJob|root element<br>Attribute: "id" - the application identifier of the application being installed|
 |Product|child element of MsiInstallJob<br>Attribute: “Version” – string representation of application version|
 |Download|child element of Product. Container for download configuration information.|
 |ContentURLList|child element of Download. Contains list of one or more content download URL locators in the form of ContentURL elements.|

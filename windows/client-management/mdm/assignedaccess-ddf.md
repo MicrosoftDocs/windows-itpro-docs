@@ -22,8 +22,7 @@ You can download the DDF files from the links below:
 - [Download all the DDF files for Windows 10, version 1703](https://download.microsoft.com/download/C/7/C/C7C94663-44CF-4221-ABCA-BC895F42B6C2/Windows10_1703_DDF_download.zip)
 - [Download all the DDF files for Windows 10, version 1607](https://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip)
 
-The XML below is for Windows 10, version 1803.
-
+The XML below is for Windows 10, version 1909.
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
@@ -50,7 +49,7 @@ The XML below is for Windows 10, version 1803.
                 <Permanent />
             </Scope>
             <DFType>
-                <MIME>com.microsoft/2.0/MDM/AssignedAccess</MIME>
+                <MIME>com.microsoft/4.0/MDM/AssignedAccess</MIME>
             </DFType>
         </DFProperties>
         <Node>
@@ -203,7 +202,6 @@ This node supports Add, Delete, Replace and Get methods. When there's no configu
  
 
  
-
 
 
 

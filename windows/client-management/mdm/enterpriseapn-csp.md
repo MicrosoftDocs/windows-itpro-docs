@@ -26,7 +26,7 @@ The table below shows the applicability of Windows:
 
 The EnterpriseAPN configuration service provider (CSP) is used by the enterprise to provision an APN for the Internet.
 
-The following shows the EnterpriseAPN configuration service provider in tree format.
+The following example shows the EnterpriseAPN configuration service provider in tree format.
 ```
 ./Vendor/MSFT
 EnterpriseAPN

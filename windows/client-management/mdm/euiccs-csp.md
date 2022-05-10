@@ -59,12 +59,12 @@ eUICCs
 Root node for the eUICCs CSP.
 
 <a href="" id="euicc"></a>**_eUICC_**  
-Interior node. Represents information associated with an eUICC. There's one subtree for each known eUICC, created by the Local Profile Assistant (LPA) when the eUICC is first seen. The node name is meaningful only to the LPA (which associates it with an eUICC ID (EID) in an implementation-specific manner, for example, this could be an SHA-256 hash of the EID). The node name "Default" represents the currently active eUICC.
+Interior node. Represents information associated with an eUICC. There's one subtree for each known eUICC, created by the Local Profile Assistant (LPA) when the eUICC is first seen. The node name is meaningful only to the LPA (which associates it with an eUICC ID (EID) in an implementation-specific manner, for example, this association could be an SHA-256 hash of the EID). The node name "Default" represents the currently active eUICC.
 
 Supported operation is Get.
 
 <a href="" id="euicc-identifier"></a>**_eUICC_/Identifier**  
-Required. Identifies an eUICC in an implementation-specific manner, for example, this could be an SHA-256 hash of the EID.
+Required. Identifies an eUICC in an implementation-specific manner, for example, this identification could be an SHA-256 hash of the EID.
 
 Supported operation is Get. Value type is string.
 
@@ -105,7 +105,7 @@ Supported operation is Get.
 Value type is integer. Default value is 1.
 
 <a href="" id="euicc-downloadservers-servername-autoenable"></a>**_eUICC_/DownloadServers/_ServerName_/AutoEnable**  
-Required. Indicates whether the discovered profile must be enabled automatically after install. This must be set by the MDM when the ServerName subtree is created.
+Required. Indicates whether the discovered profile must be enabled automatically after install. This setting must be defined by the MDM when the ServerName subtree is created.
 
 Supported operations are Add, Get, and Replace. 
 

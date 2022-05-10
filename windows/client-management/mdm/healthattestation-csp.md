@@ -26,7 +26,7 @@ The table below shows the applicability of Windows:
 
 The Device HealthAttestation configuration service provider (DHA-CSP) enables enterprise IT administrators to assess if a device is booted to a trusted and compliant state, and to take enterprise policy actions.
 
-The following is a list of functions performed by the Device HealthAttestation CSP:
+The following list is a description of the functions performed by the Device HealthAttestation CSP:
 
 - Collects device boot logs, Trusted Platform Module (TPM) audit trails and the TPM certificate (DHA-BootData) from a managed device
 - Forwards DHA-BootData to a Device Health Attestation Service (DHA-Service)
@@ -35,7 +35,7 @@ The following is a list of functions performed by the Device HealthAttestation C
 
 ## Windows 11 Device health attestation
 
-Windows 11 introduces an update to the device health attestation feature. This helps add support for deeper insights to Windows boot security, supporting a zero trust approach to device security. Device health attestation on Windows can be accessed by using the HealthAttestation CSP. This CSP helps assess if a device is booted to a trusted and compliant state and then to take appropriate action. Windows 11 introduces extra child nodes to the HealthAttestation node for the MDM providers to connect to the Microsoft Azure Attestation service, which provides a simplified approach to attestation.
+Windows 11 introduces an update to the device health attestation feature. This update helps add support for deeper insights to Windows boot security, supporting a zero trust approach to device security. Device health attestation on Windows can be accessed by using the HealthAttestation CSP. This CSP helps assess if a device is booted to a trusted and compliant state and then to take appropriate action. Windows 11 introduces more child nodes to the HealthAttestation node for the MDM providers to connect to the Microsoft Azure Attestation service, which provides a simplified approach to attestation.
 
 The attestation report provides a health assessment of the boot-time properties of the device to ensure that the devices are automatically secure as soon as they power on. The health attestation result can then be used to allow or deny access to networks, apps, or services, depending on the health of the device.
 
@@ -136,10 +136,10 @@ Templated SyncML Call:
 Data fields:
 
 - rpID (Relying Party Identifier): This field contains an identifier that can be used to help determine the caller.
-- serviceEndpoint: This field contains the complete URL of the Microsoft Azure Attestation provider instance to be used for evaluation.
-- nonce: This field contains an arbitrary number that can be used once in a cryptographic communication. It's often a random or pseudo-random number issued in an authentication protocol to ensure that old communications can't be reused in replay attacks.
+- serviceEndpoint : This field contains the complete URL of the Microsoft Azure Attestation provider instance to be used for evaluation.
+- nonce: This field contains an arbitrary number that can be used only once in a cryptographic communication. It's often a random or pseudo-random number issued in an authentication protocol to ensure that old communications can't be reused in replay attacks.
 - aadToken: The AAD token to be used for authentication against the Microsoft Azure Attestation service.
-- cv: This field contains an identifier(Correlation Vector) that will be passed in to the service call, that can be used for diagnostics purposes.
+- cv: This field contains an identifier(Correlation Vector) that will be passed in to the service call, and that can be used for diagnostics purposes.
 
 Sample Data:
 
@@ -260,7 +260,8 @@ calls between client and MAA and for each call the GUID is separated by semicolo
 ```
 
 > [!NOTE]
-> MAA CSP nodes are available on arm64 but is not currently supported.
+> MAA CSP nodes are available on arm64 but isn't currently supported.
+
 
 ### MAA CSP Integration Steps
 
@@ -382,7 +383,7 @@ calls between client and MAA and for each call the GUID is separated by semicolo
     // Find the first EV_SEPARATOR in PCR 12, 13, Or 14
     c:[type=="events", issuer=="AttestationService"] => add(type="evSeparatorSeq", value=JmesPath(c.value, "Events[? EventTypeString == 'EV_SEPARATOR' && (PcrIndex == `12` || PcrIndex == `13` || PcrIndex == `14`)] | @[0].EventSeq"));
     c:[type=="evSeparatorSeq", value != "null", issuer=="AttestationPolicy"] => add(type="beforeEvSepClause", value=AppendString(AppendString("Events[? EventSeq < `", c.value), "`"));
-    [type=="evSeparatorSeq", value=="null", issuer=="AttestationPolicy"] => add(type="beforeEvSepClause", value="Events[? `true` "); // No restriction of EV_SEPARATOR in case it is not present
+    [type=="evSeparatorSeq", value=="null", issuer=="AttestationPolicy"] => add(type="beforeEvSepClause", value="Events[? `true` "); // No restriction of EV_SEPARATOR in case it's not present
 
     //Finding the Boot App SVN
     // Find the first EVENT_TRANSFER_CONTROL with value 1 or 2 in PCR 12 which is before the EV_SEPARATOR
@@ -545,8 +546,8 @@ More information about TPM attestation can be found here: [Microsoft Azure Attes
 |DHA-Service type|Description|Operation cost|
 |--- |--- |--- |
 |Device Health Attestation – Cloud (DHA-Cloud)|DHA-Cloud is a Microsoft owned and operated DHA-Service that is:<li>Available in Windows for free<li>Running on a high-availability and geo-balanced cloud infrastructure <li>Supported by most DHA-Enabled device management solutions as the default device attestation service provider<li>Accessible to all enterprise-managed devices via following:<ul><li>FQDN = has.spserv.microsoft.com port<li>Port = 443<li>Protocol = TCP|No cost</ul></li>|
-|Device Health Attestation – On Premise(DHA-OnPrem)|DHA-OnPrem refers to DHA-Service that is running on premises:<li>Offered to Windows Server 2016 customer (no added licensing cost for enabling/running DHA-Service) <li>Hosted on an enterprise owned and managed server device/hardware<li>Supported by 1st and 3rd party DHA-Enabled device management solution providers that support on-premises and hybrid (Cloud + OnPrem) hardware attestation scenarios<li>Accessible to all enterprise-managed devices via following:<ul><li>FQDN = (enterprise assigned)<li>Port = (enterprise assigned)<li>Protocol = TCP|The operation cost of running one or more instances of Server 2016 on-premises.</ul></li>|
-|Device Health Attestation - Enterprise-Managed Cloud(DHA-EMC)|DHA-EMC refers to an enterprise-managed DHA-Service that is running as a virtual host/service on a Windows Server 2016 compatible - enterprise-managed cloud service, such as Microsoft Azure.<li>Offered to Windows Server 2016 customers with no extra licensing cost (no added licensing cost for enabling/running DHA-Service)<li>Supported by 1st and 3rd party DHA-Enabled device management solution providers that support on-premises and hybrid (Cloud + OnPrem) hardware attestation scenarios <li>Accessible to all enterprise-managed devices via following:<ul> <li>FQDN = (enterprise assigned)<li>Port = (enterprise assigned)<li>Protocol = TCP|The operation cost of running Server 2016 on a compatible cloud service, such as Microsoft Azure.</ul></li>|
+|Device Health Attestation – On Premise(DHA-OnPrem)|DHA-OnPrem refers to DHA-Service that is running on premises:<li>Offered to Windows Server 2016 customer (no added licensing cost for enabling/running DHA-Service) <li>Hosted on an enterprise owned and managed server device/hardware<li>Supported by 1st and 3rd party DHA-Enabled device management solution providers that support on-premises and hybrid (Cloud + OnPrem) hardware attestation scenarios<li>Accessible to all enterprise-managed devices via following settings:<ul><li>FQDN = (enterprise assigned)<li>Port = (enterprise assigned)<li>Protocol = TCP|The operation cost of running one or more instances of Server 2016 on-premises.</ul></li>|
+|Device Health Attestation - Enterprise-Managed Cloud(DHA-EMC)|DHA-EMC refers to an enterprise-managed DHA-Service that is running as a virtual host/service on a Windows Server 2016 compatible - enterprise-managed cloud service, such as Microsoft Azure.<li>Offered to Windows Server 2016 customers with no extra licensing cost (no added licensing cost for enabling/running DHA-Service)<li>Supported by 1st and 3rd party DHA-Enabled device management solution providers that support on-premises and hybrid (Cloud + OnPrem) hardware attestation scenarios <li>Accessible to all enterprise-managed devices via following settings:<ul> <li>FQDN = (enterprise assigned)<li>Port = (enterprise assigned)<li>Protocol = TCP|The operation cost of running Server 2016 on a compatible cloud service, such as Microsoft Azure.</ul></li>|
 
 ### CSP diagram and node descriptions  
 
@@ -886,7 +887,7 @@ The following list of data points is verified by the DHA-Service in DHA-Report v
 \*\*  Reports if BitLocker was enabled during initial boot.    
 \*\*\* The "Hybrid Resume" must be disabled on the device. Reports first-party ELAM "Defender" was loaded during boot.
 
-Each of these are described in further detail in the following sections, along with the recommended actions to take.
+Each of these data points is described in further detail in the following sections, along with the recommended actions to take.
 
 <a href="" id="issued"></a>**Issued**
 
@@ -917,7 +918,7 @@ This attribute reports the number of times a PC device has rebooted.
 
 A device can be trusted more if the DEP Policy is enabled on the device.
 
-Data Execution Prevention (DEP) Policy defines is a set of hardware and software technologies that perform additional checks on memory to help prevent malicious code from running on a system. Secure boot allows a limited list on x86/amd64 and on ARM NTOS locks it to on.
+Data Execution Prevention (DEP) Policy defines a set of hardware and software technologies that perform extra checks on memory to help prevent malicious code from running on a system. Secure boot allows a limited list on x86/amd64 and on ARM NTOS locks it to on.
 
 DEPPolicy can be disabled or enabled by using the following commands in WMI or a PowerShell script:
 
@@ -965,7 +966,7 @@ If BootManagerRevListVersion != [CurrentVersion], then take one of the following
 
 <a href="" id="codeintegrityrevlistversion"></a>**CodeIntegrityRevListVersion**
 
-This attribute indicates the version of the code that is performing integrity checks during the boot sequence. Using this attribute can help you detect if the device is running the latest version of the code that performs integrity checks, or if it's exposed to security risks (revoked) and enforces an appropriate policy action.
+This attribute indicates the version of the code that is performing integrity checks during the boot sequence. Using this attribute can help you detect if the device is running the latest version of the code that performs integrity checks, or if it's exposed to security risks (revoked), and enforce an appropriate policy action.
 
 If CodeIntegrityRevListVersion = [CurrentVersion], then allow access.
 
@@ -978,7 +979,7 @@ If CodeIntegrityRevListVersion != [CurrentVersion], then take one of the followi
 
 <a href="" id="securebootenabled"></a>**SecureBootEnabled**  
 
-When Secure Boot is enabled the core components used to boot the machine must have correct cryptographic signatures that are trusted by the organization that manufactured the device. The UEFI firmware verifies this before it lets the machine start. If any files have been tampered with, breaking their signature, the system will not boot.
+When Secure Boot is enabled, the core components used to boot the machine must have correct cryptographic signatures that are trusted by the organization that manufactured the device. The UEFI firmware verifies this requirement before it lets the machine start. If any files have been tampered with, breaking their signature, the system won't boot.
 
 If SecureBootEnabled = 1 (True), then allow access.
 
@@ -1024,7 +1025,7 @@ If OSKernelDebuggingEnabled = 1 (True), then take one of the following actions t
 
 When code integrity is enabled, code execution is restricted to integrity verified code.
 
-Code integrity is a feature that validates the integrity of a driver or system file each time it is loaded into memory. Code integrity detects whether an unsigned driver or system file is being loaded into the kernel, or whether a system file has been modified by malicious software that is being run by a user account with administrator privileges.
+Code integrity is a feature that validates the integrity of a driver or system file each time it's loaded into memory. Code integrity detects whether an unsigned driver or system file is being loaded into the kernel, or whether a system file has been modified by malicious software that is being run by a user account with administrator privileges.
 
 On x64-based versions of the operating system, kernel-mode drivers must be digitally signed.
 
@@ -1126,7 +1127,7 @@ This attribute identifies the security version number of the Boot Application th
 
 If reported BootAppSVN equals an accepted value, then allow access.
 
-If reported BootAppSVN does not equal an accepted value, then take one of the following actions that align with your enterprise policies:
+If reported BootAppSVN doesn't equal an accepted value, then take one of the following actions that align with your enterprise policies:
 
 - Disallow all access.
 - Direct the device to an enterprise honeypot, to further monitor the device's activities.
@@ -1137,7 +1138,7 @@ This attribute identifies the security version number of the Boot Manager that w
 
 If reported BootManagerSVN equals an accepted value, then allow access.
 
-If reported BootManagerSVN does not equal an accepted value, then take one of the following actions that align with your enterprise policies:
+If reported BootManagerSVN doesn't equal an accepted value, then take one of the following actions that align with your enterprise policies:
 
 - Disallow all access.
 - Direct the device to an enterprise honeypot, to further monitor the device's activities.
@@ -1153,18 +1154,17 @@ Based on the reply you receive from TPMVersion node:
 
 - If reported TPMVersion equals an accepted value, then allow access.
 - If reported TPMVersion doesn't equal an accepted value, then take one of the following actions that align with your enterprise policies:
-       - Disallow all access.
-       - Direct the device to an enterprise honeypot, to further monitor the device's activities.
+    - Disallow all access
+    - Direct the device to an enterprise honeypot, to further monitor the device's activities.
 
 <a href="" id="pcr0"></a>**PCR0**
 
 The measurement that is captured in PCR[0] typically represents a consistent view of the Host Platform between boot cycles. It contains a measurement of components that are provided by the host platform manufacturer.
 
-Enterprise managers can create an allow list of trusted PCR[0] values, compare the PCR[0] value of the managed devices (the value that is verified and reported by HAS) with the allow list, and then make a trust decision based on the result of the comparison.
+Enterprise managers can create an allowlist of trusted PCR[0] values, compare the PCR[0] value of the managed devices (the value that is verified and reported by HAS) with the allowlist, and then make a trust decision based on the result of the comparison.
 
-If your enterprise doesn't have a allow list of accepted PCR[0] values, then take no action.
-
-If PCR[0] equals an accepted allow list value, then allow access.
+If your enterprise doesn't have an allowlist of accepted PCR[0] values, then take no action.
+If PCR[0] equals an accepted allowlist value, then allow access.
 
 If PCR[0] doesn't equal any accepted listed value, then take one of the following actions that align with your enterprise policies:
 
@@ -1177,7 +1177,7 @@ SBCPHash is the finger print of the Custom Secure Boot Configuration Policy (SBC
 
 If SBCPHash isn't present, or is an accepted allow-listed value, then allow access.
 
-If SBCPHash is present in DHA-Report, and isn't an allow-listed value, then take one of the following actions that align with your enterprise policies:
+If SBCPHash is present in DHA-Report, and isn't an allowlisted value, then take one of the following actions that align with your enterprise policies:
 
 - Disallow all access.
 - Place the device in a watch list to monitor the device more closely for potential risks.
@@ -1186,9 +1186,9 @@ If SBCPHash is present in DHA-Report, and isn't an allow-listed value, then take
 
 This attribute indicates the Code Integrity policy that is controlling the security of the boot environment.
 
-If CIPolicy is not present, or is an accepted allow-listed value, then allow access.
+If CIPolicy isn't present, or is an accepted allow-listed value, then allow access.
 
-If CIPolicy is present and is not an allow-listed value, then take one of the following actions that align with your enterprise policies:
+If CIPolicy is present and isn't an allow-listed value, then take one of the following actions that align with your enterprise policies:
 
 - Disallow all access.
 - Place the device in a watch list to monitor the device more closely for potential risks.
@@ -1199,7 +1199,7 @@ This attribute identifies the Boot Revision List that was loaded during initial 
 
 If reported BootRevListInfo version equals an accepted value, then allow access.
 
-If reported BootRevListInfo version does not equal an accepted value, then take one of the following actions that align with your enterprise policies:
+If reported BootRevListInfo version doesn't equal an accepted value, then take one of the following actions that align with your enterprise policies:
 
 - Disallow all access.
 - Direct the device to an enterprise honeypot, to further monitor the device's activities.
@@ -1210,7 +1210,7 @@ This attribute identifies the Operating System Revision List that was loaded dur
 
 If reported OSRevListInfo version equals an accepted value, then allow access.
 
-If reported OSRevListInfo version does not equal an accepted value, then take one of the following actions that align with your enterprise policies:
+If reported OSRevListInfo version doesn't equal an accepted value, then take one of the following actions that align with your enterprise policies:
 
 - Disallow all access.
 - Direct the device to an enterprise honeypot, to further monitor the device's activities.  
@@ -1219,12 +1219,12 @@ If reported OSRevListInfo version does not equal an accepted value, then take on
 
 HealthStatusMismatchFlags attribute appears if DHA-Service detects an integrity issue (mismatch) in the DHA-Data it receives from device management solutions, for validation.
 
-In case of a detected issue a list of impacted DHA-report elements will be listed under the HealthStatusMismatchFlags attribute.
+If an issue is detected, a list of impacted DHA-report elements will be listed under the HealthStatusMismatchFlags attribute.
 
 ### Device HealthAttestation CSP status and error codes
 
 Error code: 0 | Error name: HEALTHATTESTATION_CERT_RETRIEVAL_UNINITIALIZED  
-Error description: This is the initial state for devices that have never participated in a DHA-Session.
+Error description: This state is the initial state for devices that have never participated in a DHA-Session.
 
 Error code: 1 | Error name: HEALTHATTESTATION_CERT_RETRIEVAL_REQUESTED  
 Error description: This state signifies that MDM client’s Exec call on the node VerifyHealth has been triggered and now the OS is trying to retrieve DHA-EncBlob from DHA-Server.
@@ -1482,6 +1482,10 @@ xmlns="http://schemas.microsoft.com/windows/security/healthcertificate/validatio
  </HealthCertificateProperties>
 </HealthCertificateValidationResponse>
 ```
+
+## Security Considerations
+DHA anchors its trust in the TPM and its measurements. If TPM measurements can be spoofed or tampered, DHA can't provide any guarantee of device health for that device.
+For more information, see [PC Client TPM Certification](https://trustedcomputinggroup.org/resource/pc-client-tpm-certification/).
 
 ## Related topics
 

@@ -25,11 +25,13 @@ The table below shows the applicability of Windows:
 
 The Firewall configuration service provider (CSP) allows the mobile device management (MDM) server to configure the Windows Defender Firewall global settings, per profile settings, and the desired set of custom rules to be enforced on the device.  Using the Firewall CSP the IT admin can now manage non-domain devices, and reduce the risk of network security threats across all systems connecting to the corporate network.  This CSP was added Windows 10, version 1709.
 
+The Firewall configuration service provider (CSP) allows the mobile device management (MDM) server to configure the Windows Defender Firewall global settings, per profile settings, and the desired set of custom rules to be enforced on the device.  Using the Firewall CSP the IT admin can now manage non-domain devices, and reduce the risk of network security threats across all systems connecting to the corporate network.  This CSP was added Windows 10, version 1709.
+ 
 Firewall rules in the FirewallRules section must be wrapped in an Atomic block in SyncML, either individually or collectively.
 
-For detailed information on some of the fields below see [[MS-FASP]: Firewall and Advanced Security Protocol documentation](/openspecs/windows_protocols/ms-winerrata/6521c5c4-1f76-4003-9ade-5cccfc27c8ac).
+For detailed information on some of the fields below, see [[MS-FASP]: Firewall and Advanced Security Protocol documentation](/openspecs/windows_protocols/ms-winerrata/6521c5c4-1f76-4003-9ade-5cccfc27c8ac).
 
-The following shows the Firewall configuration service provider in tree format. 
+The following example shows the Firewall configuration service provider in tree format. 
 ```
 ./Vendor/MSFT
 Firewall
@@ -127,7 +129,7 @@ Integer value that contains the maximum policy version that the server host can 
 Value type in integer. Supported operation is Get.
 
 <a href="" id="currentprofiles"></a>**MdmStore/Global/CurrentProfiles**
-Integer value that contains a bitmask of the current enforced profiles that are maintained by the server firewall host. See <a href="/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc" data-raw-source="[FW_PROFILE_TYPE](/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc)">FW_PROFILE_TYPE</a> for the bitmasks that are used to identify profile types. This value is available only in the dynamic store; therefore, it isn't merged and has no merge law.
+Integer value that contains a bitmask of the current enforced profiles that are maintained by the server firewall host. See <a href="/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc" data-raw-source="[FW_PROFILE_TYPE](/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc)">FW_PROFILE_TYPE</a> for the bitmasks that are used to identify profile types. This value is available only in the dynamic store; therefore, it's not merged and has no merge law.
 Value type in integer. Supported operation is Get.
 
 <a href="" id="disablestatefulftp"></a>**MdmStore/Global/DisableStatefulFtp**
@@ -142,25 +144,23 @@ Default value is 300.
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <a href="" id="presharedkeyencoding"></a>**MdmStore/Global/PresharedKeyEncoding**
-Specifies the preshared key encoding that is used. The value is integer and MUST be a valid value from the [PRESHARED_KEY_ENCODING_VALUES enumeration](/openspecs/windows_protocols/ms-fasp/b9d24a5e-7755-4c60-adeb-e0c7a718f909). The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, use the local store value.
+Specifies the preshared key encoding that is used. The value is integer and MUST be a valid value from the <a href="/openspecs/windows_protocols/ms-fasp/b9d24a5e-7755-4c60-adeb-e0c7a718f909" data-raw-source="[PRESHARED_KEY_ENCODING_VALUES enumeration](/openspecs/windows_protocols/ms-fasp/b9d24a5e-7755-4c60-adeb-e0c7a718f909)">PRESHARED_KEY_ENCODING_VALUES enumeration</a>. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, use the local store value.
 Default value is 1.
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <a href="" id="ipsecexempt"></a>**MdmStore/Global/IPsecExempt**
-This value configures IPsec exceptions. The value is integer and MUST be a combination of the valid flags that are defined in [IPSEC_EXEMPT_VALUES](/openspecs/windows_protocols/ms-fasp/7daabd9f-74c3-4295-add6-e2402b01b191); therefore, the maximum value MUST always be IPSEC_EXEMPT_MAX-1 for servers supporting a schema version of 0x0201 and IPSEC_EXEMPT_MAX_V2_0-1 for servers supporting a schema version of 0x0200. If the maximum value is exceeded when the method RRPC_FWSetGlobalConfig (Opnum 4) is called, the method returns ERROR_INVALID_PARAMETER. This error code is returned if no other preceding error is discovered. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, use the local store value.
+This value configures IPsec exceptions. The value is integer and MUST be a combination of the valid flags that are defined in <a href="/openspecs/windows_protocols/ms-fasp/7daabd9f-74c3-4295-add6-e2402b01b191" data-raw-source="[IPSEC_EXEMPT_VALUES](/openspecs/windows_protocols/ms-fasp/7daabd9f-74c3-4295-add6-e2402b01b191)">IPSEC_EXEMPT_VALUES</a>; therefore, the maximum value MUST always be IPSEC_EXEMPT_MAX-1 for servers supporting a schema version of 0x0201 and IPSEC_EXEMPT_MAX_V2_0-1 for servers supporting a schema version of 0x0200. If the maximum value is exceeded when the method RRPC_FWSetGlobalConfig (Opnum 4) is called, the method returns ERROR_INVALID_PARAMETER. This error code is returned if no other preceding error is discovered. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, use the local store value.
 Default value is 0.
-
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <a href="" id="crlcheck"></a>**MdmStore/Global/CRLcheck**
 This value specifies how certificate revocation list (CRL) verification is enforced. The value is integer and MUST be 0, 1, or 2. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, use the local store value. Valid valued:
 
-- 0 disables CRL checking.
+- 0 disables CRL checking
 - 1 specifies that CRL checking is attempted and that certificate validation fails only if the certificate is revoked. Other failures that are encountered during CRL checking (such as the revocation URL being unreachable) don't cause certificate validation to fail.
-- 2 means that checking is required and that certificate validation fails if any error is encountered during CRL processing.
+- 2 means that checking is required and that certificate validation fails if any error is encountered during CRL processing
 
 Default value is 0.
-
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <a href="" id="policyversion"></a>**MdmStore/Global/PolicyVersion**
@@ -198,13 +198,11 @@ Interior node. Supported operation is Get.
 <a href="" id="enablefirewall"></a>**/EnableFirewall**
 Boolean value for the firewall and advanced security enforcement. If this value is false, the server MUST NOT block any network traffic, regardless of other policy settings. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 Default value is true.
-
 Value type is bool. Supported operations are Add, Get and Replace.
 
 <a href="" id="disablestealthmode"></a>**/DisableStealthMode**
 Boolean value. When this option is false, the server operates in stealth mode. The firewall rules used to enforce stealth mode are implementation-specific. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 Default value is false.
-
 Value type is bool. Supported operations are Add, Get and Replace.
 
 <a href="" id="shielded"></a>**/Shielded**
@@ -216,25 +214,21 @@ Value type is bool. Supported operations are Get and Replace.
 <a href="" id="disableunicastresponsestomulticastbroadcast"></a>**/DisableUnicastResponsesToMulticastBroadcast**
 Boolean value. If it's true, unicast responses to multicast broadcast traffic are blocked. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 Default value is false.
-
 Value type is bool. Supported operations are Add, Get and Replace.
 
 <a href="" id="disableinboundnotifications"></a>**/DisableInboundNotifications**
 Boolean value. If this value is false, the firewall MAY display a notification to the user when an application is blocked from listening on a port.  If this value is on, the firewall MUST NOT display such a notification. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 Default value is false.
-
 Value type is bool. Supported operations are Add, Get and Replace.
 
 <a href="" id="authappsallowuserprefmerge"></a>**/AuthAppsAllowUserPrefMerge**
 Boolean value. If this value is false, authorized application firewall rules in the local store are ignored and not enforced. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 Default value is true.
-
 Value type is bool. Supported operations are Add, Get and Replace.
 
 <a href="" id="globalportsallowuserprefmerge"></a>**/GlobalPortsAllowUserPrefMerge**
 Boolean value. If this value is false, global port firewall rules in the local store are ignored and not enforced. The setting only has meaning if it's set or enumerated in the Group Policy store or if it's enumerated from the GroupPolicyRSoPStore. The merge law for this option is to let the value GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used.
 Default value is true.
-
 Value type is bool. Supported operations are Add, Get and Replace.
 
 <a href="" id="allowlocalpolicymerge"></a>**/AllowLocalPolicyMerge**
@@ -256,7 +250,6 @@ This value is the action that the firewall does by default (and evaluates at the
 - 0x00000001 - block
 
 Default value is 0 (allow).
-
 Value type is integer. Supported operations are Add, Get and Replace.
 
 Sample syncxml to provision the firewall settings to evaluate
@@ -296,7 +289,6 @@ Value type is integer. Supported operations are Add, Get and Replace.
 <a href="" id="disablestealthmodeipsecsecuredpacketexemption"></a>**/DisableStealthModeIpsecSecuredPacketExemption**
 Boolean value. This option is ignored if DisableStealthMode is true. Otherwise, when this option is true, the firewall&#39;s stealth mode rules MUST NOT prevent the host computer from responding to unsolicited network traffic if that traffic is secured by IPsec. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used. For schema versions 0x0200, 0x0201, and 0x020A, this value is invalid and MUST NOT be used.
 Default value is true.
-
 Value type is bool. Supported operations are Add, Get and Replace.
 
 <a href="" id="firewallrules"></a>**FirewallRules**
@@ -330,7 +322,7 @@ Fully Qualified Binary Name
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 <a href="" id="servicename"></a>**FirewallRules/_FirewallRuleName_/App/ServiceName**
-This is a service name used in cases when a service, not an application, is sending or receiving traffic.
+This parameter is a service name used in cases when a service, not an application, is sending or receiving traffic.
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 <a href="" id="protocol"></a>**FirewallRules/_FirewallRuleName_/Protocol**
@@ -349,13 +341,13 @@ If not specified, the default is All.
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 <a href="" id="localaddressranges"></a>**FirewallRules/*FirewallRuleName*/LocalAddressRanges**
-Comma separated list of local addresses covered by the rule. The default value is "*". Valid tokens include:
+Comma-separated list of local addresses covered by the rule. The default value is "*". Valid tokens include:
 
-- "*" indicates any local address. If present, this must be the only token included.
+- "*" indicates any local address. If present, the local address must be the only token included.
 - A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask nor a network prefix is specified, the subnet mask defaults to 255.255.255.255.
 - A valid IPv6 address.
-- An IPv4 address range in the format of "start address - end address" with no spaces included.
-- An IPv6 address range in the format of "start address - end address" with no spaces included.
+- An IPv4 address range in the format of &quot;start address - end address&quot; with no spaces included.
+- An IPv6 address range in the format of &quot;start address - end address&quot; with no spaces included.
 
 If not specified, the default is All.
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
@@ -363,24 +355,24 @@ Value type is string. Supported operations are Add, Get, Replace, and Delete.
 <a href="" id="remoteaddressranges"></a>**FirewallRules/*FirewallRuleName*/RemoteAddressRanges**
 List of comma separated tokens specifying the remote addresses covered by the rule. The default value is "*". Valid tokens include:
 
-- "*" indicates any remote address. If present, this must be the only token included.
-- "Defaultgateway"
-- "DHCP"
-- "DNS"
-- "WINS"
-- "Intranet"
-- "RmtIntranet"
-- "Internet"
-- "Ply2Renders"
-- "LocalSubnet" indicates any local address on the local subnet. This token is not case-sensitive.
+- "*" indicates any remote address. If present, the address must be the only token included.
+- &quot;Defaultgateway&quot;
+- &quot;DHCP&quot;
+- &quot;DNS&quot;
+- &quot;WINS&quot;
+- &quot;Intranet&quot;
+- &quot;RmtIntranet&quot;
+- &quot;Internet&quot;
+- &quot;Ply2Renders&quot;
+- &quot;LocalSubnet&quot; indicates any local address on the local subnet. This token isn't case-sensitive.
 - A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255.
 - A valid IPv6 address.
-- An IPv4 address range in the format of "start address - end address" with no spaces included.
-- An IPv6 address range in the format of "start address - end address" with no spaces included.
+- An IPv4 address range in the format of &quot;start address - end address&quot; with no spaces included.
+- An IPv6 address range in the format of &quot;start address - end address&quot; with no spaces included.
 
 If not specified, the default is All.
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
-The tokens "Intranet", "RmtIntranet", "Internet" and "Ply2Renders" are supported on Windows 10, version 1809, and later.
+The tokens &quot;Intranet&quot;, &quot;RmtIntranet&quot;, &quot;Internet&quot; and &quot;Ply2Renders&quot; are supported on Windows 10, version 1809, and later.
 
 <a href="" id="description"></a>**FirewallRules/_FirewallRuleName_/Description**
 Specifies the description of the rule.
@@ -435,7 +427,7 @@ New rules have the EdgeTraversal property disabled by default.
 Value type is bool. Supported operations are Add, Get, Replace, and Delete.
 
 <a href="" id="localuserauthorizedlist"></a>**FirewallRules/_FirewallRuleName_/LocalUserAuthorizationList**
-Specifies the list of authorized local users for this rule. This is a string in Security Descriptor Definition Language (SDDL) format.
+Specifies the list of authorized local users for this rule. This list is a string in Security Descriptor Definition Language (SDDL) format.
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 <a href="" id="status"></a>**FirewallRules/_FirewallRuleName_/Status**

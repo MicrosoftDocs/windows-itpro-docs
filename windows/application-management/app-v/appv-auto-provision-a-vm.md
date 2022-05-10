@@ -20,7 +20,7 @@ Previous versions of the App-V Sequencer have required you to manually create yo
 
 ## Automatic VM provisioning of the sequencing environment
 
-You have two options for provisioning an VM for auto-sequencing:
+You have two options for provisioning a VM for auto-sequencing:
 
 1. Using a Virtual Hard Disk (VHD)
 2. Updating an existing VM

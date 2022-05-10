@@ -36,7 +36,7 @@ To learn more about WIP, see the following articles:
 - [Create a Windows Information Protection (WIP) policy](/windows/security/information-protection/windows-information-protection/overview-create-wip-policy)
 - [General guidance and best practices for Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/guidance-and-best-practices-wip)
 
-The following shows the EnterpriseDataProtection CSP in tree format.
+The following example shows the EnterpriseDataProtection CSP in tree format.
 
 ```console
 ./Device/Vendor/MSFT
@@ -107,7 +107,7 @@ Most restricted value is 0.
 Supported operations are Add, Get, Replace, and Delete. Value type is integer.
 
 <a href="" id="settings-datarecoverycertificate"></a>**Settings/DataRecoveryCertificate**  
-Specifies a recovery certificate that can be used for data recovery of encrypted files. This is the same as the data recovery agent (DRA) certificate for encrypting file system (EFS), only delivered through mobile device management (MDM) instead of Group Policy.
+Specifies a recovery certificate that can be used for data recovery of encrypted files. This certificate is the same as the data recovery agent (DRA) certificate for encrypting file system (EFS), only delivered through mobile device management (MDM) instead of Group Policy.
 
 > [!Note]
 > If this policy and the corresponding Group Policy setting are both configured, the Group Policy setting is enforced.
@@ -241,7 +241,7 @@ For EFSCertificate KeyTag, it's expected to be a DER ENCODED binary certificate.
 Supported operations are Add, Get, Replace, and Delete. Value type is base-64 encoded certificate.
 
 <a href="" id="settings-revokeonunenroll"></a>**Settings/RevokeOnUnenroll**  
-This policy controls whether to revoke the WIP keys when a device unenrolls from the management service. If set to 0 (Don't revoke keys), the keys won't be revoked and the user will continue to have access to protected files after unenrollment. If the keys aren't revoked, there will be no revoked file cleanup after. Prior to sending the unenroll command, when you want a device to do a selective wipe when it's unenrolled, then you should explicitly set this policy to 1.
+This policy controls whether to revoke the WIP keys when a device unenrolls from the management service. If set to 0 (Don't revoke keys), the keys won't be revoked and the user will continue to have access to protected files after unenrollment. If the keys aren't revoked, there will be no revoked file cleanup, later. Prior to sending the unenroll command, when you want a device to do a selective wipe when it's unenrolled, then you should explicitly set this policy to 1.
 
 The following list shows the supported values:
 
@@ -251,7 +251,7 @@ The following list shows the supported values:
 Supported operations are Add, Get, Replace, and Delete. Value type is integer.
 
 <a href="" id="settings-revokeonmdmhandoff"></a>**Settings/RevokeOnMDMHandoff**  
-Added in Windows 10, version 1703. This policy controls whether to revoke the WIP keys when a device upgrades from mobile application management (MAM) to MDM. If set to 0 (Don't revoke keys), the keys won't be revoked and the user will continue to have access to protected files after upgrade. This is recommended if the MDM service is configured with the same WIP EnterpriseID as the MAM service.
+Added in Windows 10, version 1703. This policy controls whether to revoke the WIP keys when a device upgrades from mobile application management (MAM) to MDM. If set to 0 (Don't revoke keys), the keys won't be revoked and the user will continue to have access to protected files after upgrade. This setting is recommended if the MDM service is configured with the same WIP EnterpriseID as the MAM service.
 
 - 0 - Don't revoke keys.
 - 1 (default) - Revoke keys.
