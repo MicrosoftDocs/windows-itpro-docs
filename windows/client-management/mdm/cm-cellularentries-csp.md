@@ -28,7 +28,7 @@ The CM\_CellularEntries configuration service provider is used to configure the 
 
 This configuration service provider requires the ID\_CAP\_NETWORKING\_ADMIN capability to be accessed from a network configuration application.
 
-The following shows the CM\_CellularEntries configuration service provider management object in tree format as used by Open Mobile Alliance Client Provisioning (OMA CP). The OMA DM protocol is not supported with this configuration service provider.
+The following example shows the CM\_CellularEntries configuration service provider management object in tree format as used by Open Mobile Alliance Client Provisioning (OMA CP). The OMA DM protocol isn't supported with this configuration service provider.
 
 ```console
 CM_CellularEntries
@@ -66,9 +66,9 @@ The [CMPolicy configuration service provider](cmpolicy-csp.md) uses the value of
 <a href="" id="alwayson"></a>**AlwaysOn**  
 Type: Int. Specifies if the Connection Manager will automatically attempt to connect to the APN when a connection is available.
 
-A value of "0" specifies that AlwaysOn is not supported, and the Connection Manager will only attempt to connect to the APN when an application requests the connection. This setting is recommended for applications that use a connection occasionally, for example, an APN that only controls MMS.
+A value of "0" specifies that AlwaysOn isn't supported, and the Connection Manager will only attempt to connect to the APN when an application requests the connection. This setting is recommended for applications that use a connection occasionally. For example, an APN that only controls MMS.
 
-A value of "1" specifies that AlwaysOn is supported, and the Connection Manager will automatically attempt to connect to the APN when it is available. This setting is recommended for general purpose Internet APNs.
+A value of "1" specifies that AlwaysOn is supported, and the Connection Manager will automatically attempt to connect to the APN when it's available. This setting is recommended for general purpose internet APNs.
 
 There must be at least one AlwaysOn Internet connection provisioned for the mobile operator.
 
@@ -120,7 +120,7 @@ Optional. Specifies if the connection requires a corresponding mappings policy.
 
 A value of "0" specifies that the connection can be used for any general Internet communications. A value of "1" specifies that the connection is only used if a mapping policy is present.
 
-For example, if the multimedia messaging service (MMS) APN does not have any other traffic except MMS, you can configure a mapping policy that sends MMS traffic to this connection. Then, you set the value of UseRequiresMappingsPolicy to be equal to "1" and Connection Manager will only use the connection for MMS traffic. Without this, Connection Manager will try to use the connection for any general purpose Internet traffic.
+For example, if the multimedia messaging service (MMS) APN shouldn't have any other traffic except MMS, you can configure a mapping policy that sends MMS traffic to this connection. Then, you set the value of UseRequiresMappingsPolicy to be equal to "1" and Connection Manager will only use the connection for MMS traffic. Without this, Connection Manager will try to use the connection for any general purpose internet traffic.
 
 <a href="" id="version"></a>**Version**  
 Type: Int. Specifies the XML version number and is used to verify that the XML is supported by Connection Manager's configuration service provider.
@@ -153,11 +153,11 @@ Optional. Type: String. Specifies the network protocol of the connection. Availa
 > Do not use IPv6 or IPv4v6xlat on a device or network that does not support IPv6. Data functionality will not work. In addition, the device will not be able to connect to a roaming network that does not support IPv6 unless you configure roaming connections with an IPType of IPv4v6.
 
 <a href="" id="exemptfromdisablepolicy"></a>**ExemptFromDisablePolicy**  
-Added back in Windows 10, version 1511.Optional. Type: Int. This should only be specified for special purpose connections whose applications directly manage their disable state (such as MMS). A value of "0" specifies that the connection is subject to the disable policy used by general purpose connections (not exempt). A value of "1" specifies that the connection is exempt. If a value isn't specified, the default value is "0" (not exempt).
+Added back in Windows 10, version 1511. Optional. Type: Int. This value should only be specified for special purpose connections whose applications directly manage their disable state (such as MMS). A value of "0" specifies that the connection is subject to the disable policy used by general purpose connections (not exempt). A value of "1" specifies that the connection is exempt. If a value isn't specified, the default value is "0" (not exempt).
 
-To allow MMS when data is set to OFF, set both ExemptFromDisablePolicy and UseRequiresMappingsPolicy to "1". This indicates that the connection is a dedicated MMS connection, and that it shouldn't be disabled when all other connections are disabled. As a result, MMS can be sent and received when data is set to OFF. 
+To allow MMS when data is set to OFF, set both ExemptFromDisablePolicy and UseRequiresMappingsPolicy to "1". These settings indicate that the connection is a dedicated MMS connection and that it shouldn't be disabled when all other connections are disabled. As a result, MMS can be sent and received when data is set to OFF. 
 
->[!Note]
+> [!Note]
 > Sending MMS while roaming is still not allowed.
 
 > [!IMPORTANT]
@@ -169,16 +169,16 @@ To avoid UX inconsistency with certain value combinations of ExemptFromDisablePo
 - Set AllowMMSIfDataIsOff to 1 (default is 0)
 
 <a href="" id="exemptfromroaming"></a>**ExemptFromRoaming**  
-Added back in Windows 10, version 1511.Optional. Type: Int. This should be specified only for special purpose connections whose applications directly manage their roaming state. It should never be used with general purpose connections. A value of "0" specifies that the connection is subject to the roaming policy (not exempt). A value of "1" specifies that the connection is exempt (unaffected by the roaming policy). If a value is not specified, the default value is "0" (not exempt).
+Added back in Windows 10, version 1511. Optional. Type: Int. This value should be specified only for special purpose connections whose applications directly manage their roaming state. It should never be used with general purpose connections. A value of "0" specifies that the connection is subject to the roaming policy (not exempt). A value of "1" specifies that the connection is exempt (unaffected by the roaming policy). If a value isn't specified, the default value is "0" (not exempt).
 
 <a href="" id="tetheringnai"></a>**TetheringNAI**  
-Optional. Type: Int. CDMA only. Specifies if the connection is a tethering connection. A value of "0" specifies that the connection is not a tethering connection. A value of "1" specifies that the connection is a tethering connection. If a value is not specified, the default value is "0".
+Optional. Type: Int. CDMA only. Specifies if the connection is a tethering connection. A value of "0" specifies that the connection is not a tethering connection. A value of "1" specifies that the connection is a tethering connection. If a value isn't specified, the default value is "0".
 
 <a href="" id="idledisconnecttimeout"></a>**IdleDisconnectTimeout**  
 Optional. Type: Int. Specifies how long an on-demand connection can be unused before Connection Manager tears the connection down. This value is specified in seconds. Valid value range is 5 to 60 seconds. If not specified, the default is 30 seconds.
 
 > [!IMPORTANT]
-> You must specify the IdleDisconnectTimeout value when updating an on-demand connection to ensure that the desired value is still configured. If it is not specified, the default value of 30 seconds may be used.
+> You must specify the IdleDisconnectTimeout value when updating an on-demand connection to ensure that the desired value is still configured. If it isn't specified, the default value of 30 seconds may be used.
 
 > [!NOTE]
 > If tear-down/activation requests occur too frequently, this value should be set to greater than 5 seconds.

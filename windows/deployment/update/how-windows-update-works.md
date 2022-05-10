@@ -90,6 +90,18 @@ When users start scanning in Windows Update through the Settings panel, the foll
    - Windows Update uses the thread ID filtering to concentrate on one particular task. 
 
       ![Windows Update scan log 1.](images/update-scan-log-1.png)
+      
+#### Proxy Behavior
+For Windows Update (WU) scans URLs that are used for update detection ([MS-WUSP]: SimpleAuth Web Service | Microsoft Docs, [MS-WUSP]: Client Web Service | Microsoft Docs):
+- System proxy is attempted (set using the `netsh` command).
+- If WUA fails to reach the service due to a certain proxy, service, or authentication error code, then user proxy is attempted (generally it is the logged-in user).
+
+    > [!Note]
+    > For intranet WSUS update service URLs, we provide an option via Windows Update policy to select the proxy behavior.
+
+For WU URLs that _aren't_ used for update detection, such as for download or reporting:
+- User proxy is attempted.
+- If WUA fails to reach the service due to a certain proxy, service, or authentication error code, then the system proxy is attempted.
 
 #### Identifies service IDs
 
