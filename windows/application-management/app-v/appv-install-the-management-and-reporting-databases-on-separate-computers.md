@@ -67,7 +67,7 @@ Use the following procedure to install the database server and management server
 4. For each database, copy the scripts to a share and modify them following the instructions in the readme file.
 
   > [!NOTE]
-   >For more information about modifying the required SIDs contained in the scripts see, [How to Install the App-V Databases and Convert the Associated Security Identifiers by Using Windows PowerShell](appv-install-the-appv-databases-and-convert-the-associated-security-identifiers-with-powershell.md).
+   >For more information about modifying the required SIDs contained in the scripts, see, [How to Install the App-V Databases and Convert the Associated Security Identifiers by Using Windows PowerShell](appv-install-the-appv-databases-and-convert-the-associated-security-identifiers-with-powershell.md).
 5. Run the scripts on the computer running Microsoft SQL Server.
 
 
