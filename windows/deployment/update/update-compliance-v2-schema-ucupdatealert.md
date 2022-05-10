@@ -45,7 +45,7 @@ Alert for both client and service updates. Contains information that needs atten
 | **GlobalDeviceId** | [string](/azure/kusto/query/scalar-data-types/string) | `g:1298371934870` | Internal Microsoft Global identifier, if available. |
 | **Recommendation** | [string](/azure/kusto/query/scalar-data-types/string) | `Free up disk space.` | A localized string translated from RecommendedAction, Message, and other fields (depending on source of Alert) that provides a recommended action. |
 | **ResolvedTime** | [datetime](/azure/kusto/query/scalar-data-types/datetime) | `2020-05-14 09:26:03.478039` | The time this alert was resolved, else empty. |
-| **SCCMClientId** | [string](/azure/kusto/query/scalar-data-types/string) | `5AB72FAC-93AB-4954-9AB0-6557D0EFA245` | SCCM Client ID of the device, if available. |
+| **SCCMClientId** | [string](/azure/kusto/query/scalar-data-types/string) | `5AB72FAC-93AB-4954-9AB0-6557D0EFA245` | Configuration Manager Client ID of the device, if available. |
 | **ServiceSubstate** | [string](/azure/kusto/query/scalar-data-types/string) | `OfferReady` | If the Alert is from the Service, the ServiceSubstate at the time this Alert was activated or updated, else Empty. |
 | **ServiceSubstateRank** | [int](/azure/kusto/query/scalar-data-types/int) | `100` | Rank of ServiceSubstate |
 | **StartTime** | [datetime](/azure/kusto/query/scalar-data-types/datetime) | `2020-05-14 09:26:03.478039` | The time this alert was activated. |
@@ -54,5 +54,5 @@ Alert for both client and service updates. Contains information that needs atten
 | **TimeGenerated** | [datetime](/azure/kusto/query/scalar-data-types/datetime) | `2020-05-14 09:26:03.478039` | The time the snapshot generated this specific record. This is to determine to which batch snapshot this record belongs. |
 | **Type** | [string](/azure/kusto/query/scalar-data-types/string) | `UpdateAlert` | The entity type. |
 | **UpdateCategory** | [string](/azure/kusto/query/scalar-data-types/string) | `WindowsFeatureUpdate` | The type of content this DeviceUpdateEvent is tracking. |
-| **UpdateClassification** | [string](/azure/kusto/query/scalar-data-types/string) | `Upgrade` | Whether this content is an Upgrade (FU), Security (QU), NonSecurity (QU) |
+| **UpdateClassification** | [string](/azure/kusto/query/scalar-data-types/string) | `Upgrade` | Whether this content is an upgrade (feature update), Security (quality update), NonSecurity (quality update) |
 | **URL** | [string](/azure/kusto/query/scalar-data-types/string) | `aka.ms/errordetail32152` | An optional URL to get more in-depth information related to this alert.  |
