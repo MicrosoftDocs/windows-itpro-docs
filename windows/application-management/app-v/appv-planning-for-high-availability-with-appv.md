@@ -48,7 +48,7 @@ Running App-V Server in Shared Content Store (SCS) mode with clustered file serv
 To enable SCS mode configurations, follow these steps:
 
 1. Configure the App-V client to run in SCS mode. For more information, see [Deploying the App-V Sequencer and Configuring the Client](appv-deploying-the-appv-sequencer-and-client.md).
-2. Configure the file server cluster, configured in either the scale out mode (which started with Windows Server 2012) or the earlier clustering mode, with a virtual SAN.
+2. Configure the file server cluster, configured in either the scale-out mode (which started with Windows Server 2012) or the earlier clustering mode, with a virtual SAN.
 
 The following steps can be used to validate the configuration:
 
@@ -63,7 +63,7 @@ Review the following articles to learn more about configuring Windows Server fai
 
 ## Support for Microsoft SQL Server mirroring
 
-Using Microsoft SQL Server mirroring, where the App-V management server database is mirrored utilizing two SQL Server instances, for App-V management server databases is supported.
+ With the Microsoft SQL Server mirroring being used, where the App-V management server database is mirrored utilizing two SQL Server instances, for App-V management server databases is supported.
 
 Review the following to learn more about how to configure Microsoft SQL Server mirroring:
 
@@ -76,7 +76,7 @@ The following steps can be used to validate the configuration:
 2. Select **Failover** to designate a new master Microsoft SQL Server instance.
 3. Verify that the App-V management server continues to function as expected after the failover.
 
-The connection string on the management server can be modified to include ```failover partner = <server2>```. This will only help when the primary on the mirror has failed over to the secondary and the computer running the App-V client is doing a fresh connection (say after reboot).
+The connection string on the management server can be modified to include ```failover partner = <server2>```. This modification will only help when the primary on the mirror has failed over to the secondary and the computer running the App-V client is doing a fresh connection (say after reboot).
 
 Use the following steps to modify the connection string to include ```failover partner = <server2>```:
 

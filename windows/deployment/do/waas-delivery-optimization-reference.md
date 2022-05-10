@@ -190,7 +190,7 @@ Starting in Windows 10, version 1803, specifies the maximum foreground download 
 
 ### Maximum Background Download Bandwidth
 
-Starting in Windows 10, version 1803, specifies the maximum background download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth. **The default value of "0"** means that Delivery Optimization dynamically adjusts to use the available bandwidth for foreground downloads. However, downloads from LAN peers are not throttled even when this policy is set.
+Starting in Windows 10, version 1803, specifies the maximum background download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth. **The default value of "0"** means that Delivery Optimization dynamically adjusts to use the available bandwidth for background downloads. However, downloads from LAN peers are not throttled even when this policy is set.
 
 ### Percentage of Maximum Download Bandwidth
 

@@ -20,7 +20,7 @@ There are several different deployment configurations and requirements to consid
 
 ## App-V supported configurations
 
-[App-V supported configurations](appv-supported-configurations.md) describes the minimum hardware and operating system requirements for each App-V components. For information about software that you must install before you install App-V, see [App-V Prerequisites](appv-prerequisites.md).
+[App-V supported configurations](appv-supported-configurations.md) describes the minimum hardware and operating system requirements for each App-V component. For information about software that you must install before you install App-V, see [App-V Prerequisites](appv-prerequisites.md).
 
 ## App-V capacity planning
 

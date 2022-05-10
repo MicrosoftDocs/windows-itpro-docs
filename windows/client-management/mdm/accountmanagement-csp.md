@@ -18,7 +18,7 @@ AccountManagement CSP is used to configure setting in the Account Manager servic
 > [!NOTE]
 > The AccountManagement CSP is only supported in Windows Holographic for Business edition.
 
-The following shows the AccountManagement configuration service provider in tree format.
+The following syntax shows the AccountManagement configuration service provider in tree format.
 
 ```console
 ./Vendor/MSFT
@@ -72,7 +72,7 @@ Supported operations are Add, Get, Replace, and Delete.
 Value type is integer.
 
 <a href="" id="accountmanagement-userprofilemanagement-profileinactivitythreshold"></a>**UserProfileManagement/ProfileInactivityThreshold**  
-Start deleting profiles when they have not been logged on during the specified period, given as number of days. Default value is 30.
+Start deleting profiles when they haven't been logged on during the specified period, given as number of days. Default value is 30.
 
 Supported operations are Add, Get, Replace, and Delete. Value type is integer.
 
