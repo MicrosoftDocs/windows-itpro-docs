@@ -119,7 +119,8 @@ The following table lists management options for each setting,  For Windows 10 (
 | [28. Delivery Optimization](#bkmk-updates) | ![Check mark.](images/checkmark.png) | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [29. Windows Update](#bkmk-wu) | | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [30. Cloud Clipboard](#bkmk-clcp) | | ![Check mark](images/checkmark.png) |  |
-| [31. Services Configuration](#bkmk-svccfg) | | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [31. Services Configuration](#bkmk-svccfg) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [32. Widgets](#bkmk-widgets) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 
 
 ### Settings for Windows Server 2016 with Desktop Experience
@@ -1918,6 +1919,14 @@ Services Configuration is used by Windows components and apps, such as the telem
 You can turn off Services Configuration by setting the following registry entries:
 
 Add a REG_DWORD value named **DisableOneSettingsDownloads** to **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\DataCollection** and set the value to **1**.
+
+### <a href="" id="bkmk-widgets"></a>32. Widgets
+
+Widgets is a news and feeds service that can be customized by the user. If you turn off this service, apps using this service may stop working.
+
+You can turn off Widgets by setting the following registry entries:
+
+Add a REG_DWORD value named **AllowWidgets** to **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Widgets** and set the value to **0**.
 
 ### <a href="" id="bkmk-allowedtraffic"></a> Allowed traffic list for Windows Restricted Traffic Limited Functionality Baseline
 
