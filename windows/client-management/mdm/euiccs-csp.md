@@ -1,6 +1,6 @@
 ---
 title: eUICCs CSP
-description: Learn how the eUICCs CSP is used to support eUICC enterprise use cases and enables the IT admin to manage (assign, re-assign, remove) subscriptions to employees.
+description: Learn how the eUICCs CSP is used to support eUICC enterprise use cases and enables the IT admin to manage (assign, reassign, remove) subscriptions to employees.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -14,9 +14,9 @@ manager: dansimp
 # eUICCs CSP
 
 
-The eUICCs configuration service provider is used to support eUICC enterprise use cases and enables the IT admin to manage (assign, re-assign, remove) subscriptions to employees. This CSP was added in windows 10, version 1709.
+The eUICCs configuration service provider is used to support eUICC enterprise use cases and enables the IT admin to manage (assign, reassign, remove) subscriptions to employees. This CSP was added in windows 10, version 1709.
 
-The following shows the eUICCs configuration service provider in tree format.
+The following example shows the eUICCs configuration service provider in tree format.
 ```
 ./Device/Vendor/MSFT
 eUICCs
@@ -48,12 +48,12 @@ eUICCs
 Root node. 
 
 <a href="" id="euicc"></a>**_eUICC_**  
-Interior node. Represents information associated with an eUICC. There is one subtree for each known eUICC, created by the Local Profile Assistant (LPA) when the eUICC is first seen. The node name is meaningful only to the LPA (which associates it with an eUICC ID (EID) in an implementation-specific manner, e.g., this could be a SHA-256 hash of the EID). The node name "Default" represents the currently active eUICC.
+Interior node. Represents information associated with an eUICC. There's one subtree for each known eUICC, created by the Local Profile Assistant (LPA) when the eUICC is first seen. The node name is meaningful only to the LPA (which associates it with an eUICC ID (EID) in an implementation-specific manner, for example, this association could be an SHA-256 hash of the EID). The node name "Default" represents the currently active eUICC.
 
 Supported operation is Get.
 
 <a href="" id="euicc-identifier"></a>**_eUICC_/Identifier**  
-Required. Identifies an eUICC in an implementation-specific manner, e.g., this could be a SHA-256 hash of the EID.
+Required. Identifies an eUICC in an implementation-specific manner, for example, this identification could be an SHA-256 hash of the EID.
 
 Supported operation is Get. Value type is string.
 
@@ -63,7 +63,7 @@ Required. Indicates whether this eUICC is physically present and active. Updated
 Supported operation is Get. Value type is boolean.
 
 <a href="" id="euicc-ppr1allowed"></a>**_eUICC_/PPR1Allowed**  
-Profile Policy Rule 1 (PPR1) is required. Indicates whether the download of a profile with PPR1 is allowed. If the eUICC already has a profile (regardless of its origin and policy rules associated with it), the download of a profile with PPR1 is not allowed.
+Profile Policy Rule 1 (PPR1) is required. Indicates whether the download of a profile with PPR1 is allowed. If the eUICC already has a profile (regardless of its origin and policy rules associated with it), the download of a profile with PPR1 isn't allowed.
 
 Supported operation is Get. Value type is boolean.
 
@@ -88,7 +88,7 @@ Required. Current state of the discovery operation for the parent ServerName (Re
 Supported operation is Get. Value type is integer. Default value is 1.
 
 <a href="" id="euicc-downloadservers-servername-autoenable"></a>**_eUICC_/DownloadServers/_ServerName_/AutoEnable**  
-Required. Indicates whether the discovered profile must be enabled automatically after install. This must be set by the MDM when the ServerName subtree is created.
+Required. Indicates whether the discovered profile must be enabled automatically after install. This setting must be defined by the MDM when the ServerName subtree is created.
 
 Supported operations are Add, Get, and Replace. Value type is bool.
 
@@ -133,7 +133,7 @@ Required. Determines whether the local user interface of the LUI is available (t
 Supported operations are Get and Replace. Value type is boolean. Default value is true.
 
 <a href="" id="euicc-actions"></a>**_eUICC_/Actions**  
-Interior node. Required. Actions that can be performed on the eUICC as a whole (when it is active).
+Interior node. Required. Actions that can be performed on the eUICC as a whole (when it's active).
 
 Supported operation is Get.
 
