@@ -2,6 +2,7 @@
 
 Thank you for your interest in the Windows IT professional documentation! We appreciate your feedback, edits, and additions to our docs.
 This page covers the basic steps for editing our technical documentation.
+For a more up-to-date and general contribution guide, see the main [Microsoft Docs contributor guide overview.](https://docs.microsoft.com/contribute/)
 
 ## Sign a CLA
 
