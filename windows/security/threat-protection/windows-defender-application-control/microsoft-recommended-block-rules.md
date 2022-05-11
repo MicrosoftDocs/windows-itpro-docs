@@ -123,6 +123,7 @@ Select the correct version of each .dll for the Windows release you plan to supp
 <?xml version="1.0" encoding="utf-8"?>
 <SiPolicy xmlns="urn:schemas-microsoft-com:sipolicy">
   <VersionEx>10.0.0.0</VersionEx>
+  <PolicyTypeID>{A244370E-44C9-4C06-B551-F6016E563076}</PolicyTypeID>
   <PlatformID>{2E07F7E4-194C-4D20-B7C9-6F44A6C5A234}</PlatformID>
   <Rules>
     <Rule>
@@ -141,11 +142,10 @@ Select the correct version of each .dll for the Windows release you plan to supp
       <Option>Enabled:Dynamic Code Security</Option>
     </Rule>
   </Rules>
-  <!--EKUS-->
+  <!-- EKUS  -->
   <EKUs />
-  <!--File Rules-->
+  <!-- File Rules  -->
   <FileRules>
-    <Deny ID="ID_DENY_KD_KMCI" FriendlyName="kd.exe" FileName="kd.Exe" MinimumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_ADDINPROCESS" FriendlyName="AddInProcess.exe" FileName="AddInProcess.exe" MinimumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_ADDINPROCESS32" FriendlyName="AddInProcess32.exe" FileName="AddInProcess32.exe" MinimumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_ADDINUTIL" FriendlyName="AddInUtil.exe" FileName="AddInUtil.exe" MinimumFileVersion="65535.65535.65535.65535" />
@@ -162,10 +162,12 @@ Select the correct version of each .dll for the Windows release you plan to supp
     <Deny ID="ID_DENY_FSI" FriendlyName="fsi.exe" FileName="fsi.exe" MinimumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_FSI_ANYCPU" FriendlyName="fsiAnyCpu.exe" FileName="fsiAnyCpu.exe" MinimumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_INFINSTALL" FriendlyName="infdefaultinstall.exe" FileName="infdefaultinstall.exe" MinimumFileVersion="65535.65535.65535.65535" />
+	<Deny ID="ID_DENY_INSTALLUTIL" FriendlyName="Microsoft InstallUtil" FileName="InstallUtil.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_KD" FriendlyName="kd.exe" FileName="kd.Exe" MinimumFileVersion="65535.65535.65535.65535" />
+    <Deny ID="ID_DENY_KD_KMCI" FriendlyName="kd.exe" FileName="kd.Exe" MinimumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_KILL" FriendlyName="kill.exe" FileName="kill.exe" MinimumFileVersion="65535.65535.65535.65535" />
-    <Deny ID="ID_DENY_LXSS" FriendlyName="LxssManager.dll" FileName="LxssManager.dll" MinimumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_LXRUN" FriendlyName="lxrun.exe" FileName="lxrun.exe" MinimumFileVersion="65535.65535.65535.65535" />
+    <Deny ID="ID_DENY_LXSS" FriendlyName="LxssManager.dll" FileName="LxssManager.dll" MinimumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_INTUNE_AGENT" FriendlyName="IntuneWindowsAgent.exe" FileName="Microsoft.Management.Services.IntuneWindowsAgent.exe" MinimumFileVersion="1.46.204.0" />
     <Deny ID="ID_DENY_MFC40" FriendlyName="mfc40.dll" FileName="mfc40.dll" MinimumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_MS_BUILD" FriendlyName="Microsoft.Build.dll" FileName="Microsoft.Build.dll" MinimumFileVersion="65535.65535.65535.65535" />
@@ -188,6 +190,33 @@ Select the correct version of each .dll for the Windows release you plan to supp
     <Deny ID="ID_DENY_WSL" FriendlyName="wsl.exe" FileName="wsl.exe" MinimumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_WSLCONFIG" FriendlyName="wslconfig.exe" FileName="wslconfig.exe" MinimumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_WSLHOST" FriendlyName="wslhost.exe" FileName="wslhost.exe" MinimumFileVersion="65535.65535.65535.65535" />
+    <!-- pick the correct version of msxml3.dll, msxml6.dll, and jscript9.dll based on the release you are supporting -->
+    <!-- the versions of these files in the 1903 release have this issue fixed, so they don’t need to be blocked -->
+    <!-- RS1 Windows 1607
+    <Deny  ID="ID_DENY_MSXML3"        FriendlyName="msxml3.dll"         FileName="msxml3.dll" MinimumFileVersion ="8.110.14393.2550"/>
+    <Deny  ID="ID_DENY_MSXML6"        FriendlyName="msxml6.dll"         FileName="msxml6.dll" MinimumFileVersion ="6.30.14393.2550"/>
+    <Deny  ID="ID_DENY_JSCRIPT9"      FriendlyName="jscript9.dll"       FileName="jscript9.dll" MinimumFileVersion ="11.0.14393.2607"/>
+    -->
+      <!-- RS2 Windows 1703
+    <Deny  ID="ID_DENY_MSXML3"        FriendlyName="msxml3.dll"         FileName="msxml3.dll" MinimumFileVersion ="8.110.15063.1386"/>
+    <Deny  ID="ID_DENY_MSXML6"        FriendlyName="msxml6.dll"         FileName="msxml6.dll" MinimumFileVersion ="6.30.15063.1386"/>
+    <Deny  ID="ID_DENY_JSCRIPT9"      FriendlyName="jscript9.dll"       FileName="jscript9.dll" MinimumFileVersion ="11.0.15063.1445"/>
+    -->
+      <!-- RS3 Windows 1709
+    <Deny  ID="ID_DENY_MSXML3"        FriendlyName="msxml3.dll"         FileName="msxml3.dll" MinimumFileVersion ="8.110.16299.725"/>
+    <Deny  ID="ID_DENY_MSXML6"        FriendlyName="msxml6.dll"         FileName="msxml6.dll" MinimumFileVersion ="6.30.16299.725"/>
+    <Deny  ID="ID_DENY_JSCRIPT9"      FriendlyName="jscript9.dll"       FileName="jscript9.dll" MinimumFileVersion ="11.0.16299.785"/>
+    -->
+      <!-- RS4 Windows 1803
+    <Deny  ID="ID_DENY_MSXML3"        FriendlyName="msxml3.dll"         FileName="msxml3.dll" MinimumFileVersion ="8.110.17134.344"/>
+    <Deny  ID="ID_DENY_MSXML6"        FriendlyName="msxml6.dll"         FileName="msxml6.dll" MinimumFileVersion ="6.30.17134.344"/>
+    <Deny  ID="ID_DENY_JSCRIPT9"      FriendlyName="jscript9.dll"       FileName="jscript9.dll" MinimumFileVersion ="11.0.17134.406"/>
+    -->
+      <!-- RS5 Windows 1809
+    <Deny  ID="ID_DENY_MSXML3"        FriendlyName="msxml3.dll"         FileName="msxml3.dll" MinimumFileVersion ="8.110.17763.54"/>
+    <Deny  ID="ID_DENY_MSXML6"        FriendlyName="msxml6.dll"         FileName="msxml6.dll" MinimumFileVersion ="6.30.17763.54"/>
+    <Deny  ID="ID_DENY_JSCRIPT9"      FriendlyName="jscript9.dll"       FileName="jscript9.dll" MinimumFileVersion ="11.0.17763.133"/>
+    -->
     <Deny ID="ID_DENY_D_1" FriendlyName="Powershell 1" Hash="02BE82F63EE962BCD4B8303E60F806F6613759C6" />
     <Deny ID="ID_DENY_D_2" FriendlyName="Powershell 2" Hash="13765D9A16CC46B2113766822627F026A68431DF" />
     <Deny ID="ID_DENY_D_3" FriendlyName="Powershell 3" Hash="148972F670E18790D62D753E01ED8D22B351A57E45544D88ACE380FEDAF24A40" />
@@ -214,6 +243,7 @@ Select the correct version of each .dll for the Windows release you plan to supp
     <Deny ID="ID_DENY_D_24" FriendlyName="Powershell 24" Hash="F16E605B55774CDFFDB0EB99FAFF43A40622ED2AB1C011D1195878F4B20030BC" />
     <Deny ID="ID_DENY_D_25" FriendlyName="Powershell 25" Hash="F29A958287788A6EEDE6035D49EF5CB85EEC40D214FDDE5A0C6CAA65AFC00EEC" />
     <Deny ID="ID_DENY_D_26" FriendlyName="Powershell 26" Hash="F875E43E12685ECE0BA2D42D55A13798CE9F1FFDE3CAE253D2529F4304811A52" />
+    <!-- System.Management.Automation.dll   -->
     <Deny ID="ID_DENY_D_27" FriendlyName="PowerShell 27" Hash="720D826A84284E18E0003526A0CD9B7FF0C4A98A" />
     <Deny ID="ID_DENY_D_28" FriendlyName="PowerShell 28" Hash="CB5DF9D0D25571948C3D257882E07C7FA5E768448E0DEBF637E110F9FF575808" />
     <Deny ID="ID_DENY_D_29" FriendlyName="PowerShell 29" Hash="3C7265C3393C585D32E509B2D2EC048C73AC5EE6" />
@@ -436,44 +466,6 @@ Select the correct version of each .dll for the Windows release you plan to supp
     <Deny ID="ID_DENY_D_246" FriendlyName="PowerShell 246" Hash="0C4688AACD02829850DE0F792AC06D3C87895412A910EA76F7F9BF31B3B4A3E9" />
     <Deny ID="ID_DENY_D_247" FriendlyName="PowerShell 247" Hash="6DC048AFA50B5B1B0AD7DD3125AC83D46FED730A" />
     <Deny ID="ID_DENY_D_248" FriendlyName="PowerShell 248" Hash="432F666CCE8CD222484E263AE02F63E0038143DD6AD07B3EB1633CD3C498C13D" />
-    <Deny ID="ID_DENY_D_249" FriendlyName="PubPrn 249" Hash="68E96BE23748AA680D5E1E557778901F332ED5D3" />
-    <Deny ID="ID_DENY_D_250" FriendlyName="PubPrn 250" Hash="8FA30B5931806565C2058E565C06AD5F1C5A48CDBE609975EB31207C25214063" />
-    <Deny ID="ID_DENY_D_251" FriendlyName="PubPrn 251" Hash="32C4B29FE428B1DF473F3F4FECF519D285E93521" />
-    <Deny ID="ID_DENY_D_252" FriendlyName="PubPrn 252" Hash="D44FB563198D60DFDC91608949FE2FADAD6161854D084EB1968C558AA36513C7" />
-    <Deny ID="ID_DENY_D_253" FriendlyName="PubPrn 253" Hash="9EDBEF086D350863F29175F5AB5178B88B142C75" />
-    <Deny ID="ID_DENY_D_254" FriendlyName="PubPrn 254" Hash="9B22C98351F2B6DEDDCED0D805C65F5B166FF519A8DF41EB242CB909471892EB" />
-    <Deny ID="ID_DENY_D_255" FriendlyName="PubPrn 255" Hash="8A3B30F345C43246B3500721CFEEADBAC6B9D9C6" />
-    <Deny ID="ID_DENY_D_256" FriendlyName="PubPrn 256" Hash="37C20BF20A2BBACE50957F8D0AB3FD16174BC005E79D47E51E899AFD9E4B7724" />
-    <Deny ID="ID_DENY_D_257" FriendlyName="PubPrn 257" Hash="C659DAD2B37375781E2D584E16AAE2A10B5A1156" />
-    <Deny ID="ID_DENY_D_258" FriendlyName="PubPRn 258" Hash="EBDACA86F10AC0446D60CC75628EC7A370B1E2236E6D20F22372F91033B6D429" />
-    <Deny ID="ID_DENY_D_259" FriendlyName="PubPrn 259" Hash="C9D6394BBFF8CD9C6590F08C54EC6AFDEB5CFFB4" />
-    <Deny ID="ID_DENY_D_260" FriendlyName="PubPrn 260" Hash="518E4EA7A2B70713E1AEC6E7E75A488C39384B625C5F2779073E9294CBF2BD9F" />
-    <Deny ID="ID_DENY_D_261" FriendlyName="PubPrn 261" Hash="C9D6394BBFF8CD9C6590F08C54EC6AFDEB5CFFB4" />
-    <Deny ID="ID_DENY_D_262" FriendlyName="PubPrn 262" Hash="518E4EA7A2B70713E1AEC6E7E75A488C39384B625C5F2779073E9294CBF2BD9F" />
-    <Deny ID="ID_DENY_D_263" FriendlyName="PubPrn 263" Hash="763A652217A1E30F2D288B7F44E08346949A02CD" />
-    <Deny ID="ID_DENY_D_264" FriendlyName="PubPrn 264" Hash="FCDDA212B06602F642B29FC05316EF75E4EE9975E6E8A9526E842BE2EA237C5D" />
-    <Deny ID="ID_DENY_D_265" FriendlyName="PubPrn 265" Hash="763A652217A1E30F2D288B7F44E08346949A02CD" />
-    <Deny ID="ID_DENY_D_266" FriendlyName="PubPrn 266" Hash="FCDDA212B06602F642B29FC05316EF75E4EE9975E6E8A9526E842BE2EA237C5D" />
-    <Deny ID="ID_DENY_D_267" FriendlyName="PubPrn 267" Hash="60FD28D770B23A0477679311D247DA4D5C61074C" />
-    <Deny ID="ID_DENY_D_268" FriendlyName="PubPrn 268" Hash="D09A4B2EA611CDFDC6DCA44314289B622B2A5EDA09716EF4A16B91EC90BFBA8F" />
-    <Deny ID="ID_DENY_D_269" FriendlyName="PubPrn 269" Hash="60FD28D770B23A0477679311D247DA4D5C61074C" />
-    <Deny ID="ID_DENY_D_270" FriendlyName="PubPrn 270" Hash="D09A4B2EA611CDFDC6DCA44314289B622B2A5EDA09716EF4A16B91EC90BFBA8F" />
-    <Deny ID="ID_DENY_D_271" FriendlyName="PubPrn 271" Hash="47CBE201ED224BF3F5C322F7A49EF64469AF2E1A" />
-    <Deny ID="ID_DENY_D_272" FriendlyName="PubPrn 272" Hash="24855B9CC420719D5AB93F4F1589CE09E4063E4FC98681BD91A1D18A3C8ACB43" />
-    <Deny ID="ID_DENY_D_273" FriendlyName="PubPrn 273" Hash="47CBE201ED224BF3F5C322F7A49EF64469AF2E1A" />
-    <Deny ID="ID_DENY_D_274" FriendlyName="PubPrn 274" Hash="24855B9CC420719D5AB93F4F1589CE09E4063E4FC98681BD91A1D18A3C8ACB43" />
-    <Deny ID="ID_DENY_D_275" FriendlyName="PubPrn 275" Hash="663D8E25BAE20510A882F6692BE2620FBABFB94E" />
-    <Deny ID="ID_DENY_D_276" FriendlyName="PubPrn 276" Hash="649A9E5A4867A28C7D0934793F33B545F9441EA23872715C84826D80CC8EC576" />
-    <Deny ID="ID_DENY_D_277" FriendlyName="PubPrn 277" Hash="226ABB2FBAEFC5A7E2A819D9D708F826C00FD215" />
-    <Deny ID="ID_DENY_D_278" FriendlyName="PubPrn 278" Hash="AC6B35C904D388FD12C07C2F6A1A07F337D31895713BF01DCCE7A7F187D7F4D9" />
-    <Deny ID="ID_DENY_D_279" FriendlyName="PubPrn 279" Hash="071D7849941E43144839988971255FE34690A747" />
-    <Deny ID="ID_DENY_D_280" FriendlyName="PubPrn 280" Hash="5AF75895BDC11A6B68C816A8677D7CF9692BF25A95C4378A43FBDE740B18EEB1" />
-    <Deny ID="ID_DENY_D_281" FriendlyName="PubPrn 281" Hash="9FBFF074C201BFEBE37710CB453EFF9A14AE3BFF" />
-    <Deny ID="ID_DENY_D_282" FriendlyName="PubPrn 282" Hash="A0C71A925850D2D481C7E520F5D5A83305EC169EEA4C5B8DC20C8D8AFCD8A512" />
-    <Deny ID="ID_DENY_D_283" FriendlyName="PSWorkflowUtility 283" Hash="4FBC9A72C5D5246F34994F13076A5AD98A1A844E" />
-    <Deny ID="ID_DENY_D_284" FriendlyName="PSWorkflowUtility 284" Hash="7BF44433D3A606104778F64B11B92C52FC99C4BA570C50B70438275D0B587B8E" />
-    <Deny ID="ID_DENY_D_285" FriendlyName="PSWorkflowUtility 285" Hash="99382ED8FA3577DFD903C01478A79D6D90681406" />
-    <Deny ID="ID_DENY_D_286" FriendlyName="PSWorkflowUtility 286" Hash="C3A5DAB20947CA8FD092E75C25177E7BAE7884CA58710F14827144C09EA1F94B" />
     <Deny ID="ID_DENY_D_287" FriendlyName="PowerShellShell 287" Hash="2B45C165F5E0BFD932397B18980BA680E2E82BD1" />
     <Deny ID="ID_DENY_D_288" FriendlyName="PowerShellShell 288" Hash="1DD0AD6B85DAEBAE7555DC37EA6C160EA38F75E3D4847176F77562A59025660A" />
     <Deny ID="ID_DENY_D_289" FriendlyName="PowerShellShell 289" Hash="A8C9E28F25C9C5F479691F2F49339F4448747638" />
@@ -770,8 +762,6 @@ Select the correct version of each .dll for the Windows release you plan to supp
     <Deny ID="ID_DENY_D_580" FriendlyName="PowerShellShell 580" Hash="8838FE3D8E2505F3D3D8B98C64739115838A0B443BBBBFB487342F1EE7801360" />
     <Deny ID="ID_DENY_D_581" FriendlyName="PowerShellShell 581" Hash="28C5E53DE197E872F7E4772BF40F728F56FE3ACC" />
     <Deny ID="ID_DENY_D_582" FriendlyName="PowerShellShell 582" Hash="3493DAEC6EC03E56ECC4A15432C750735F75F9CB38D8779C7783B4DA956BF037" />
-    <Deny ID="ID_DENY_D_583" FriendlyName="Winrm 583" Hash="3FA2D2963CBF47FFD5F7F5A9B4576F34ED42E552" />
-    <Deny ID="ID_DENY_D_584" FriendlyName="Winrm 584" Hash="6C96E976DC47E0C99B77814E560E0DC63161C463C75FA15B7A7CA83C11720E82" />
     <Deny ID="ID_DENY_D_585" FriendlyName="PowerShellShell 585" Hash="DBB5A6F5388C574A3B5B63E65F7810AB271E9A77" />
     <Deny ID="ID_DENY_D_586" FriendlyName="PowerShellShell 586" Hash="6DB24D174CCF06C9138B5A9320AE4261CA0CF305357DEF1B7054DD84758E92AB" />
     <Deny ID="ID_DENY_D_587" FriendlyName="PowerShellShell 587" Hash="757626CF5D444F5A4AF79EDE38E9EF65FA2C9802" />
@@ -794,31 +784,81 @@ Select the correct version of each .dll for the Windows release you plan to supp
     <Deny ID="ID_DENY_D_604" FriendlyName="PowerShellShell 604" Hash="B38E1198F82E7C2B3123984C017417F2A48BDFF5B6DBAD20B2438D7B65F6E39F" />
     <Deny ID="ID_DENY_D_605" FriendlyName="PowerShellShell 605" Hash="DE16A6B93178B6C6FC33FBF3E9A86CFF070DA6D3" />
     <Deny ID="ID_DENY_D_606" FriendlyName="PowerShellShell 606" Hash="A3EF9A95D1E859958DEBE44C033B4562EBB9B4C6E32005CA5C07B2E07A42E2BE" />
-    <FileAttrib ID="ID_DENY_INSTALLUTIL" FriendlyName="Microsoft InstallUtil" FileName="InstallUtil.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <!-- pubprn.vbs  -->
+    <!-- rs2 x86fre  -->
+    <Deny ID="ID_DENY_D_249" FriendlyName="PubPrn 249" Hash="68E96BE23748AA680D5E1E557778901F332ED5D3" />
+    <Deny ID="ID_DENY_D_250" FriendlyName="PubPrn 250" Hash="8FA30B5931806565C2058E565C06AD5F1C5A48CDBE609975EB31207C25214063" />
+    <!-- rs2 amd64fre  -->
+    <Deny ID="ID_DENY_D_251" FriendlyName="PubPrn 251" Hash="32C4B29FE428B1DF473F3F4FECF519D285E93521" />
+    <Deny ID="ID_DENY_D_252" FriendlyName="PubPrn 252" Hash="D44FB563198D60DFDC91608949FE2FADAD6161854D084EB1968C558AA36513C7" />
+    <!-- rs2 amd64chk  -->
+    <Deny ID="ID_DENY_D_253" FriendlyName="PubPrn 253" Hash="9EDBEF086D350863F29175F5AB5178B88B142C75" />
+    <Deny ID="ID_DENY_D_254" FriendlyName="PubPrn 254" Hash="9B22C98351F2B6DEDDCED0D805C65F5B166FF519A8DF41EB242CB909471892EB" />
+    <!-- rs2 x86chk  -->
+    <Deny ID="ID_DENY_D_255" FriendlyName="PubPrn 255" Hash="8A3B30F345C43246B3500721CFEEADBAC6B9D9C6" />
+    <Deny ID="ID_DENY_D_256" FriendlyName="PubPrn 256" Hash="37C20BF20A2BBACE50957F8D0AB3FD16174BC005E79D47E51E899AFD9E4B7724" />
+    <!-- rs2 woafre  -->
+    <Deny ID="ID_DENY_D_257" FriendlyName="PubPrn 257" Hash="C659DAD2B37375781E2D584E16AAE2A10B5A1156" />
+    <Deny ID="ID_DENY_D_258" FriendlyName="PubPRn 258" Hash="EBDACA86F10AC0446D60CC75628EC7A370B1E2236E6D20F22372F91033B6D429" />
+    <!-- rs3 amd64chk  -->
+    <Deny ID="ID_DENY_D_259" FriendlyName="PubPrn 259" Hash="C9D6394BBFF8CD9C6590F08C54EC6AFDEB5CFFB4" />
+    <Deny ID="ID_DENY_D_260" FriendlyName="PubPrn 260" Hash="518E4EA7A2B70713E1AEC6E7E75A488C39384B625C5F2779073E9294CBF2BD9F" />
+    <!-- rs3 amd64fre  -->
+    <Deny ID="ID_DENY_D_261" FriendlyName="PubPrn 261" Hash="C9D6394BBFF8CD9C6590F08C54EC6AFDEB5CFFB4" />
+    <Deny ID="ID_DENY_D_262" FriendlyName="PubPrn 262" Hash="518E4EA7A2B70713E1AEC6E7E75A488C39384B625C5F2779073E9294CBF2BD9F" />
+    <!-- rs3 arm64chk  -->
+    <Deny ID="ID_DENY_D_263" FriendlyName="PubPrn 263" Hash="763A652217A1E30F2D288B7F44E08346949A02CD" />
+    <Deny ID="ID_DENY_D_264" FriendlyName="PubPrn 264" Hash="FCDDA212B06602F642B29FC05316EF75E4EE9975E6E8A9526E842BE2EA237C5D" />
+    <!-- rs3 arm64fre  -->
+    <Deny ID="ID_DENY_D_265" FriendlyName="PubPrn 265" Hash="763A652217A1E30F2D288B7F44E08346949A02CD" />
+    <Deny ID="ID_DENY_D_266" FriendlyName="PubPrn 266" Hash="FCDDA212B06602F642B29FC05316EF75E4EE9975E6E8A9526E842BE2EA237C5D" />
+    <!-- rs3 woachk  -->
+    <Deny ID="ID_DENY_D_267" FriendlyName="PubPrn 267" Hash="60FD28D770B23A0477679311D247DA4D5C61074C" />
+    <Deny ID="ID_DENY_D_268" FriendlyName="PubPrn 268" Hash="D09A4B2EA611CDFDC6DCA44314289B622B2A5EDA09716EF4A16B91EC90BFBA8F" />
+    <!-- rs3 woafre  -->
+    <Deny ID="ID_DENY_D_269" FriendlyName="PubPrn 269" Hash="60FD28D770B23A0477679311D247DA4D5C61074C" />
+    <Deny ID="ID_DENY_D_270" FriendlyName="PubPrn 270" Hash="D09A4B2EA611CDFDC6DCA44314289B622B2A5EDA09716EF4A16B91EC90BFBA8F" />
+    <!-- rs3 x86chk  -->
+    <Deny ID="ID_DENY_D_271" FriendlyName="PubPrn 271" Hash="47CBE201ED224BF3F5C322F7A49EF64469AF2E1A" />
+    <Deny ID="ID_DENY_D_272" FriendlyName="PubPrn 272" Hash="24855B9CC420719D5AB93F4F1589CE09E4063E4FC98681BD91A1D18A3C8ACB43" />
+    <!-- rs3 x86fre  -->
+    <Deny ID="ID_DENY_D_273" FriendlyName="PubPrn 273" Hash="47CBE201ED224BF3F5C322F7A49EF64469AF2E1A" />
+    <Deny ID="ID_DENY_D_274" FriendlyName="PubPrn 274" Hash="24855B9CC420719D5AB93F4F1589CE09E4063E4FC98681BD91A1D18A3C8ACB43" />
+    <!-- rs3 sxs amd64  -->
+    <Deny ID="ID_DENY_D_275" FriendlyName="PubPrn 275" Hash="663D8E25BAE20510A882F6692BE2620FBABFB94E" />
+    <Deny ID="ID_DENY_D_276" FriendlyName="PubPrn 276" Hash="649A9E5A4867A28C7D0934793F33B545F9441EA23872715C84826D80CC8EC576" />
+    <!-- rs3 sxs arm64  -->
+    <Deny ID="ID_DENY_D_277" FriendlyName="PubPrn 277" Hash="226ABB2FBAEFC5A7E2A819D9D708F826C00FD215" />
+    <Deny ID="ID_DENY_D_278" FriendlyName="PubPrn 278" Hash="AC6B35C904D388FD12C07C2F6A1A07F337D31895713BF01DCCE7A7F187D7F4D9" />
+    <!-- rs3 sxs woa  -->
+    <Deny ID="ID_DENY_D_279" FriendlyName="PubPrn 279" Hash="071D7849941E43144839988971255FE34690A747" />
+    <Deny ID="ID_DENY_D_280" FriendlyName="PubPrn 280" Hash="5AF75895BDC11A6B68C816A8677D7CF9692BF25A95C4378A43FBDE740B18EEB1" />
+    <!-- rs3 sxs x86  -->
+    <Deny ID="ID_DENY_D_281" FriendlyName="PubPrn 281" Hash="9FBFF074C201BFEBE37710CB453EFF9A14AE3BFF" />
+    <Deny ID="ID_DENY_D_282" FriendlyName="PubPrn 282" Hash="A0C71A925850D2D481C7E520F5D5A83305EC169EEA4C5B8DC20C8D8AFCD8A512" />
+    <!-- psworkflowutility.psm1  -->
+    <!-- th1  -->
+    <Deny ID="ID_DENY_D_283" FriendlyName="PSWorkflowUtility 283" Hash="4FBC9A72C5D5246F34994F13076A5AD98A1A844E" />
+    <Deny ID="ID_DENY_D_284" FriendlyName="PSWorkflowUtility 284" Hash="7BF44433D3A606104778F64B11B92C52FC99C4BA570C50B70438275D0B587B8E" />
+    <!-- th2  -->
+    <Deny ID="ID_DENY_D_285" FriendlyName="PSWorkflowUtility 285" Hash="99382ED8FA3577DFD903C01478A79D6D90681406" />
+    <Deny ID="ID_DENY_D_286" FriendlyName="PSWorkflowUtility 286" Hash="C3A5DAB20947CA8FD092E75C25177E7BAE7884CA58710F14827144C09EA1F94B" />
+    <!-- winrm.vbs  -->
+    <Deny ID="ID_DENY_D_583" FriendlyName="Winrm 583" Hash="3FA2D2963CBF47FFD5F7F5A9B4576F34ED42E552" />
+    <Deny ID="ID_DENY_D_584" FriendlyName="Winrm 584" Hash="6C96E976DC47E0C99B77814E560E0DC63161C463C75FA15B7A7CA83C11720E82" />
   </FileRules>
-  <!--Signers-->
-  <Signers>
-    <Signer ID="ID_SIGNER_F_3_1" Name="Microsoft Code Signing PCA">
-      <CertRoot Type="TBS" Value="27543A3F7612DE2261C7228321722402F63A07DE" />
-      <CertPublisher Value="Microsoft Corporation" />
-      <FileAttribRef RuleID="ID_DENY_INSTALLUTIL" />
-    </Signer>
-    <Signer ID="ID_SIGNER_F_4_1" Name="Microsoft Code Signing PCA 2011">
-      <CertRoot Type="TBS" Value="F6F717A43AD9ABDDC8CEFDDE1C505462535E7D1307E630F9544A2D14FE8BF26E" />
-      <CertPublisher Value="Microsoft Corporation" />
-      <FileAttribRef RuleID="ID_DENY_INSTALLUTIL" />
-    </Signer>
-  </Signers>
-  <!--Driver Signing Scenarios-->
+  <!-- Signers  -->
+  <Signers />
+  <!-- Driver Signing Scenarios  -->
   <SigningScenarios>
-    <SigningScenario Value="131" ID="ID_SIGNINGSCENARIO_DRIVERS_1" FriendlyName="Auto generated policy on 05-10-2022">
+    <SigningScenario Value="131" ID="ID_SIGNINGSCENARIO_DRIVERS_1" FriendlyName="Driver Signing Scenarios">
       <ProductSigners>
         <FileRulesRef>
           <FileRuleRef RuleID="ID_DENY_KD_KMCI" />
         </FileRulesRef>
       </ProductSigners>
     </SigningScenario>
-    <SigningScenario Value="12" ID="ID_SIGNINGSCENARIO_WINDOWS" FriendlyName="Auto generated policy on 05-10-2022">
+    <SigningScenario Value="12" ID="ID_SIGNINGSCENARIO_WINDOWS" FriendlyName="User Mode Signing Scenarios">
       <ProductSigners>
         <FileRulesRef>
           <FileRuleRef RuleID="ID_DENY_ADDINPROCESS" />
@@ -837,6 +877,7 @@ Select the correct version of each .dll for the Windows release you plan to supp
           <FileRuleRef RuleID="ID_DENY_FSI" />
           <FileRuleRef RuleID="ID_DENY_FSI_ANYCPU" />
           <FileRuleRef RuleID="ID_DENY_INFINSTALL" />
+		  <FileRuleRef RuleID="ID_DENY_INSTALLUTIL" />
           <FileRuleRef RuleID="ID_DENY_KD" />
           <FileRuleRef RuleID="ID_DENY_KILL" />
           <FileRuleRef RuleID="ID_DENY_LXSS" />
@@ -863,6 +904,11 @@ Select the correct version of each .dll for the Windows release you plan to supp
           <FileRuleRef RuleID="ID_DENY_WSL" />
           <FileRuleRef RuleID="ID_DENY_WSLCONFIG" />
           <FileRuleRef RuleID="ID_DENY_WSLHOST" />
+          <!-- uncomment the relevant line(s) below if you have uncommented them in the rule definitions above
+		  <FileRuleRef RuleID="ID_DENY_MSXML3" /> 
+		  <FileRuleRef RuleID="ID_DENY_MSXML6" /> 
+		  <FileRuleRef RuleID="ID_DENY_JSCRIPT9" />
+		  -->
           <FileRuleRef RuleID="ID_DENY_D_1" />
           <FileRuleRef RuleID="ID_DENY_D_2" />
           <FileRuleRef RuleID="ID_DENY_D_3" />
@@ -1470,20 +1516,12 @@ Select the correct version of each .dll for the Windows release you plan to supp
           <FileRuleRef RuleID="ID_DENY_D_605" />
           <FileRuleRef RuleID="ID_DENY_D_606" />
         </FileRulesRef>
-        <DeniedSigners>
-          <DeniedSigner SignerId="ID_SIGNER_F_3_1" />
-          <DeniedSigner SignerId="ID_SIGNER_F_4_1" />
-        </DeniedSigners>
       </ProductSigners>
     </SigningScenario>
   </SigningScenarios>
   <UpdatePolicySigners />
-  <CiSigners>
-    <CiSigner SignerId="ID_SIGNER_F_3_1" />
-    <CiSigner SignerId="ID_SIGNER_F_4_1" />
-  </CiSigners>
+  <CiSigners />
   <HvciOptions>0</HvciOptions>
-  <PolicyTypeID>{A244370E-44C9-4C06-B551-F6016E563076}</PolicyTypeID>
 </SiPolicy>
 ```
 <br />
