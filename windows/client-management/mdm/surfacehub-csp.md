@@ -233,7 +233,7 @@ Specifies, whether calendar sync and other Exchange server services is enabled.
 
 If there's an error calling ValidateAndCommit, there's another context for that error in this node. Here are the possible error values:
 
-| ErrorContext value | Stage where error occurred | Description and suggestions |
+| **ErrorContext value** | **Stage where error occurred** | **Description and suggestions** |
 | --- | --- | --- |
 | 1 | Unknown | |
 | 2 | Populating account | Unable to retrieve account details using the username and password you provided.<br/><br/> For Azure AD accounts, ensure that UserPrincipalName and Password are valid.<br/> For AD accounts, ensure that DomainName, UserName, and Password are valid.<br/> Ensure that the specified account has an Exchange server mailbox. |
@@ -355,7 +355,7 @@ Enables wireless projection to the device.
 
 Wireless channel to use for Miracast operation. The supported channels are defined by the Wi-Fi Alliance Wi-Fi Direct specification.
 
-|Compatibility|Values|
+|**Compatibility**|**Values**|
 |--- |--- |
 |Works with all Miracast senders in all regions|1, 3, 4, 5, 6, 7, 8, 9, 10, 11|
 |Works with all 5ghz band Miracast senders in all regions|36, 40, 44, 48|
@@ -410,7 +410,7 @@ Added in Windows 10, version 1703. Specifies the number of minutes until the Hub
 
 The following table shows the permitted values.
 
-|Value|Description|
+|**Value**|**Description**|
 |--- |--- |
 |0|Never time out|
 |1|1 minute|
@@ -434,7 +434,7 @@ Added in Windows 10, version 1703. Specifies the number of minutes until the ses
 
 The following table shows the permitted values.
 
-|Value|Description|
+|**Value**|**Description**|
 |--- |--- |
 |0|Never time out|
 |1|1 minute (default)|
@@ -458,7 +458,7 @@ Added in Windows 10, version 1703. Specifies the number of minutes until the Hub
 
 The following table shows the permitted values.
 
-|Value|Description|
+|**Value**|**Description**|
 |--- |--- |
 |0|Never time out|
 |1|1 minute|
