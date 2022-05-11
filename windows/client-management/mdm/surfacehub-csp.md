@@ -544,6 +544,7 @@ GUID identifying the Microsoft Operations Management Suite workspace ID to colle
 - Supported operation is Get and Replace.
 
 <a href="" id="momagent-workspacekey"></a>**MOMAgent/WorkspaceKey** 
+
 Primary key for authenticating with the workspace.
 
 - The data type is string. 
