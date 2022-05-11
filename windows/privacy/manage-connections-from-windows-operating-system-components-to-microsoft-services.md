@@ -58,6 +58,11 @@ The following sections list the components that make network connections to Micr
 
 The following table lists management options for each setting,  For Windows 10 (beginning with Windows 10 Enterprise version 1607) and Windows 11.
 
+ > [!IMPORTANT]
+> **If you need assistance with troubleshooting issues, please refer to**:</br> 
+>  - [Keep your device running smoothly](https://support.microsoft.com/topic/keep-your-device-running-smoothly-with-recommended-troubleshooting-ec76fe10-4ac8-ce9d-49c6-757770fe68f1)</br>
+>  - [CSP - Troubleshooting](/windows/client-management/mdm/policy-csp-troubleshooting)
+
 
 | Setting | UI | Group Policy | Registry |
 | - | :-: | :-: | :-: |
@@ -114,7 +119,8 @@ The following table lists management options for each setting,  For Windows 10 (
 | [28. Delivery Optimization](#bkmk-updates) | ![Check mark.](images/checkmark.png) | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [29. Windows Update](#bkmk-wu) | | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [30. Cloud Clipboard](#bkmk-clcp) | | ![Check mark](images/checkmark.png) |  |
-| [31. Services Configuration](#bkmk-svccfg) | | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [31. Services Configuration](#bkmk-svccfg) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [32. Widgets](#bkmk-widgets) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 
 
 ### Settings for Windows Server 2016 with Desktop Experience
@@ -591,7 +597,7 @@ Alternatively, you can configure the following Registry keys as described:
 | - | - |
 | Allow Address Bar drop-down list suggestions  | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\ServiceUI<br/>REG_DWORD name: ShowOneBox<br/> Set to **0**|
 | Allow configuration updates for the Books Library  | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\BooksLibrary<br/>REG_DWORD name: AllowConfigurationUpdateForBooksLibrary<br/> Set to **0**|
-| Configure Autofill  | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main<br/>REG_SZ name: Use FormSuggest<br/>Value : **No** |
+| Configure Autofill  | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main<br/>REG_SZ name: Use FormSuggest<br/>Value: **No** |
 | Configure Do Not Track   | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main<br/>REG_DWORD name: DoNotTrack<br/> REG_DWORD: **1** |
 | Configure Password Manager | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main<br/>REG_SZ name: FormSuggest Passwords<br /> REG_SZ: **No** |
 | Configure search suggestions in Address Bar | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\SearchScopes<br/>REG_DWORD name: ShowSearchSuggestionsGlobal <br />Value: **0**|
@@ -860,6 +866,8 @@ Use Settings > Privacy & security to configure some settings that may be importa
 - [18.22 Activity History](#bkmk-act-history)
 
 - [18.23 Voice Activation](#bkmk-voice-act)
+
+- [18.24 News and interests](#bkmk-priv-news)
 
 ### <a href="" id="bkmk-general"></a>18.1 General
 
@@ -1528,6 +1536,13 @@ To turn this Off in the UI:
 
 - Create a REG_DWORD registry setting named **LetAppsActivateWithVoiceAboveLock** in **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\AppPrivacy** with a **value of 2 (two)**
 
+### <a href="" id="bkmk-priv-news"></a>18.24 News and interests  
+
+In the **Windows Feeds** area, you can choose which apps have access to your diagnostic information.
+
+To turn this off:
+
+- Create a REG_DWORD registry setting named **EnableFeeds** in **HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Feeds** with a **value of 0 (zero)**.
 
 ### <a href="" id="bkmk-spp"></a>19. Software Protection Platform
 
@@ -1722,7 +1737,7 @@ In Group Policy, configure:
 
    -and-
 
-- Create a SZ registry setting named **ConfigureAppInstallControl** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\SmartScreen** with a value of **Anywhere**.
+- Create an SZ registry setting named **ConfigureAppInstallControl** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\SmartScreen** with a value of **Anywhere**.
 
 
 ### <a href="" id="bkmk-spotlight"></a>25. Personalized Experiences
@@ -1904,6 +1919,14 @@ Services Configuration is used by Windows components and apps, such as the telem
 You can turn off Services Configuration by setting the following registry entries:
 
 Add a REG_DWORD value named **DisableOneSettingsDownloads** to **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\DataCollection** and set the value to **1**.
+
+### <a href="" id="bkmk-widgets"></a>32. Widgets
+
+Widgets is a news and feeds service that can be customized by the user. If you turn off this service, apps using this service may stop working.
+
+You can turn off Widgets by setting the following registry entries:
+
+Add a REG_DWORD value named **AllowWidgets** to **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Widgets** and set the value to **0**.
 
 ### <a href="" id="bkmk-allowedtraffic"></a> Allowed traffic list for Windows Restricted Traffic Limited Functionality Baseline
 
