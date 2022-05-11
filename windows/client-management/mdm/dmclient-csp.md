@@ -461,7 +461,7 @@ This node is an integer, value is "0" or "1".
 Default is 1, meaning the MDM enrollment is the “winning” authority for conflicting policies/resources. Value 1 means MMP-C enrollment is the “winning” one.
 Support operations are Get and Set.
 
-<a href="" id="provider-providerid-linkedenrollment-nenroll"></a>**Provider/*ProviderID*/LinkedEnrollment/Enroll**
+<a href="" id="provider-providerid-linkedenrollment-enroll"></a>**Provider/*ProviderID*/LinkedEnrollment/Enroll**
 This is an execution node and will trigger a silent MMP-C enrollment, using the AAD device token pulled from the AADJ’ed device. There is no user interaction needed.
 
 Support operation is Exec.
