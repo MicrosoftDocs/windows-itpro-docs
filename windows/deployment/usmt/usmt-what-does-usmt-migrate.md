@@ -236,9 +236,9 @@ You should also note the following:
 
 Starting in Windows 10, version 1607 the USMT does not migrate the Start menu layout. To migrate a user's Start menu, you must export and then import settings using the Windows PowerShell cmdlets **Export-StartLayout** and **Import-StartLayout**. For more information, see [USMT common issues](./usmt-common-issues.md#usmt-does-not-migrate-the-start-layout).
 
-## User profiles from on-premises Active Directory to Azure Active Directory
+## User profiles from Active Directory to Azure Active Directory
 
-USMT doesn’t support migrating user profiles from on-premises Active Directory to Azure Active Directory.
+USMT doesn't support migrating user profiles from Active Directory to Azure Active Directory.
 
 ## Related topics
 
