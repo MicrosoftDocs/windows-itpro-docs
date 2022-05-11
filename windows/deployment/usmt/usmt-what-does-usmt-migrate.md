@@ -16,18 +16,6 @@ ms.topic: article
 
 # What does USMT migrate?
 
-## In this topic
-
--   [Default migration scripts](#bkmk-defaultmigscripts)
-
--   [User Data](#bkmk-3)
-
--   [Operating-system components](#bkmk-4)
-
--   [Supported applications](#bkmk-2)
-
--   [What USMT does not migrate](#no)
-
 ## <a href="" id="bkmk-defaultmigscripts"></a>Default migration scripts
 
 The User State Migration Tool (USMT) 10.0 is designed so that an IT engineer can precisely define migrations using the USMT .xml scripting language. USMT provides the following sample scripts:
@@ -247,6 +235,10 @@ You should also note the following:
 ### Start menu layout
 
 Starting in Windows 10, version 1607 the USMT does not migrate the Start menu layout. To migrate a user's Start menu, you must export and then import settings using the Windows PowerShell cmdlets **Export-StartLayout** and **Import-StartLayout**. For more information, see [USMT common issues](./usmt-common-issues.md#usmt-does-not-migrate-the-start-layout).
+
+## User profiles from on-premises Active Directory to Azure Active Directory
+
+USMT doesn’t support migrating user profiles from on-premises Active Directory to Azure Active Directory.
 
 ## Related topics
 
