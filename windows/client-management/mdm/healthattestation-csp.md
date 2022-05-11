@@ -946,8 +946,8 @@ If BitLockerStatus = 1 (On), then allow access.
 
 If BitLockerStatus = 0 (Off), then take one of the following actions that align with your enterprise policies:
 
-- Disallow all access..
-- Disallow access to HBI assets..
+- Disallow all access.
+- Disallow access to HBI assets.
 - Allow conditional access based on other data points that are present at evaluation time. For example, other attributes on the health certificate, or a device's past activities and trust history.
 - Take one of the previous actions and additionally place the device in a watch list to monitor the device more closely for potential risks.
 
@@ -957,10 +957,10 @@ This attribute indicates the version of the Boot Manager that is running on the 
 
 If BootManagerRevListVersion = [CurrentVersion], then allow access.
 
-If BootManagerRevListVersion != [CurrentVersion], then take one of the following actions that align with your enterprise policies:
+If `BootManagerRevListVersion !`= [CurrentVersion], then take one of the following actions that align with your enterprise policies:
 
-- Disallow all access..
-- Disallow access to HBI and MBI assets..
+- Disallow all access.
+- Disallow access to HBI and MBI assets.
 - Place the device in a watch list to monitor the device more closely for potential risks.
 - Trigger a corrective action, such as informing the technical support team to contact the owner investigate the issue.
 
@@ -970,10 +970,10 @@ This attribute indicates the version of the code that is performing integrity ch
 
 If CodeIntegrityRevListVersion = [CurrentVersion], then allow access.
 
-If CodeIntegrityRevListVersion != [CurrentVersion], then take one of the following actions that align with your enterprise policies:
+If `CodeIntegrityRevListVersion !`= [CurrentVersion], then take one of the following actions that align with your enterprise policies:
 
-- Disallow all access..
-- Disallow access to HBI and MBI assets..
+- Disallow all access.
+- Disallow access to HBI and MBI assets.
 - Place the device in a watch list to monitor the device more closely for potential risks.
 - Trigger a corrective action, such as informing the technical support team to contact the owner investigate the issue.
 

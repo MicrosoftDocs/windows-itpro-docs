@@ -833,18 +833,6 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[SurfaceHub](surfacehub-csp.md)
-
-<!--StartSKU-->
-
-|Home|Pro|Business|Enterprise|Education|
-|--- |--- |--- |--- |--- |
-||||||
-
-<!--EndSKU-->
-<!--EndCSP-->
-
-<!--StartCSP-->
 [TenantLockdown CSP](tenantlockdown-csp.md)
 
 <!--StartSKU-->
@@ -935,7 +923,7 @@ Additional lists:
 
 |Home|Pro|Business|Enterprise|Education|
 |--- |--- |--- |--- |--- |
-||||||
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1032,7 +1020,7 @@ Additional lists:
 
 |Home|Pro|Business|Enterprise|Education|
 |--- |--- |--- |--- |--- |
-||||||
+|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->

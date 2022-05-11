@@ -384,7 +384,7 @@ If not specified - a new rule is enabled by default.
 Boolean value. Supported operations are Get and Replace.
 
 <a href="" id="profiles"></a>**FirewallRules/_FirewallRuleName_/Profiles**
-Specifies the profiles to which the rule belongs: Domain, Private, Public. .  See [FW_PROFILE_TYPE](/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) for the bitmasks that are used to identify profile types.
+Specifies the profiles to which the rule belongs: Domain, Private, or Public. See [FW_PROFILE_TYPE](/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) for the bitmasks that are used to identify profile types.
 If not specified, the default is All.
 Value type is integer. Supported operations are Get and Replace.
 
