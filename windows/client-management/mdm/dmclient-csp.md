@@ -333,8 +333,9 @@ Device. Added in Windows 10 version 1803. For Azure AD backed enrollments, this 
 Supported operations are Add, Delete, Get, and Replace. Value type is bool.
 
 <a href="" id="provider-providerid-forceaadtoken"></a>**Provider/*ProviderID*/ForceAadToken**
+The value type is integer/enum.
 
-- new
+The value is "1" and it means client should always send AAD device token during check-in/sync.
 
 <a href="" id="provider-providerid-poll"></a>**Provider/*ProviderID*/Poll**  
 Optional. Polling schedules must use the DMClient CSP. The Registry paths previously associated with polling using the Registry CSP are now deprecated.
