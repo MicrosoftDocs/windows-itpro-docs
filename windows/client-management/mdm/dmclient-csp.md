@@ -526,7 +526,7 @@ Value type is integer. Only applicable for Windows 10 multi-session.
 > Max(NumAllowedConcurrentUserSession, NumAllowedConcurrentUserSessionAtUserLogon) + 1
 
 <a href="" id="provider-providerid-multiplesession-intervalforscheduledretriesforusersession"></a>**Provider/*ProviderID*/MultipleSession/IntervalForScheduledRetriesForUserSession**
-Optional. This node specifies the waiting time (in minutes) for the initial set of retries as specified by the number of retries in **/<ProviderID>/Poll/NumberOfScheduledRetriesForUserSession**. 
+Optional. This node specifies the waiting time (in minutes) for the initial set of retries as specified by the number of retries in `/<ProviderID>/Poll/NumberOfScheduledRetriesForUserSession`. 
 
 If IntervalForScheduledRetriesForUserSession is not set, then the default value is used. The default value is 1440. If the value is set to 0, this schedule is disabled.
 
