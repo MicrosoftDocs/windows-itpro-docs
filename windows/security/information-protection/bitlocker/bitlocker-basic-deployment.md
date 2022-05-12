@@ -99,7 +99,7 @@ Encryption status displays in the notification area or within the BitLocker cont
 
 ### <a href="" id="-onedrive-option-"></a> OneDrive option
 
-There is a new option for storing the BitLocker recovery key using the OneDrive. This option requires that computers aren't members of a domain and that the user is using a Microsoft Account. Local accounts don't give the option to use OneDrive. Using the OneDrive option is the default, recommended recovery key storage method for computers that aren't joined to a domain.
+There's a new option for storing the BitLocker recovery key using the OneDrive. This option requires that computers aren't members of a domain and that the user is using a Microsoft Account. Local accounts don't give the option to use OneDrive. Using the OneDrive option is the default, recommended recovery key storage method for computers that aren't joined to a domain.
 
 Users can verify the recovery key was saved properly by checking their OneDrive for the BitLocker folder that is created automatically during the save process. The folder will contain two files, a readme.txt and the recovery key. For users storing more than one recovery password on their OneDrive,
 they can identify the required recovery key by looking at the file name. The recovery key ID is appended to the end of the file name.
@@ -143,7 +143,7 @@ This command returns the volumes on the target, current encryption status, and v
 
 **Enabling BitLocker without a TPM**
 
-For example, suppose that you want to enable BitLocker on a computer without a TPM chip. To properly enable BitLocker for the operating system volume, you will need to use a USB flash drive as a startup key to boot (in this example, the drive letter E). You would first create the startup key needed for BitLocker using the –protectors option and save it to the USB drive on E: and then begin the encryption process. You will need to reboot the computer when prompted to complete the encryption process.
+For example, suppose that you want to enable BitLocker on a computer without a TPM chip. To properly enable BitLocker for the operating system volume, you'll need to use a USB flash drive as a startup key to boot (in this example, the drive letter E). You would first create the startup key needed for BitLocker using the –protectors option and save it to the USB drive on E: and then begin the encryption process. You'll need to reboot the computer when prompted to complete the encryption process.
 
 ```powershell
 manage-bde –protectors -add C: -startupkey E:
@@ -170,7 +170,7 @@ This command will require the user to enter and then confirm the password protec
 
 ### Data volume
 
-Data volumes use the same syntax for encryption as operating system volumes but they do not require protectors for the operation to complete. Encrypting data volumes can be done using the base command: `manage-bde -on <drive letter>` or users can choose to add protectors to the volume. We recommend that you add at least one primary protector and a recovery protector to a data volume.
+Data volumes use the same syntax for encryption as operating system volumes but they don't require protectors for the operation to complete. Encrypting data volumes can be done using the base command: `manage-bde -on <drive letter>` or users can choose to add protectors to the volume. We recommend that you add at least one primary protector and a recovery protector to a data volume.
 
 **Enabling BitLocker with a password**
 
@@ -200,11 +200,11 @@ Windows PowerShell cmdlets provide an alternative way to work with BitLocker. Us
 |**Suspend-BitLocker**|<li>Confirm<li>MountPoint<li>RebootCount<li>WhatIf|
 |**Unlock-BitLocker**|<li>AdAccountOrGroup<li>Confirm<li>MountPoint<li>Password<li>RecoveryKeyPath<li>RecoveryPassword<li>RecoveryPassword<li>WhatIf|
 
-Similar to manage-bde, the Windows PowerShell cmdlets allow configuration beyond the options offered in the control panel. As with manage-bde, users need to consider the specific needs of the volume they are encrypting prior to running Windows PowerShell cmdlets.
+Similar to manage-bde, the Windows PowerShell cmdlets allow configuration beyond the options offered in the control panel. As with manage-bde, users need to consider the specific needs of the volume they're encrypting prior to running Windows PowerShell cmdlets.
 
 A good initial step is to determine the current state of the volume(s) on the computer. You can do this using the `Get-BitLocker` volume cmdlet. The output from this cmdlet displays information on the volume type, protectors, protection status, and other useful information.
 
-Occasionally, all protectors may not be shown when using **Get-BitLockerVolume** due to lack of space in the output display. If you do not see all of the protectors for a volume, you can use the Windows PowerShell pipe command (|) to format a listing of the protectors.
+Occasionally, all protectors may not be shown when using **Get-BitLockerVolume** due to lack of space in the output display. If you don't see all of the protectors for a volume, you can use the Windows PowerShell pipe command (|) to format a listing of the protectors.
 
 > [!NOTE]
 > In the event that there are more than four protectors for a volume, the pipe command may run out of display space. For volumes with more than four protectors, use the method described in the section below to generate a listing of all protectors with protector ID.
@@ -293,7 +293,7 @@ Add-BitLockerKeyProtector C: -ADAccountOrGroupProtector -ADAccountOrGroup "<SID>
 
 ## <a href="" id="bkmk-dep5"></a> Checking BitLocker status
 
-To check the BitLocker status of a particular volume, administrators can look at the status of the drive in the BitLocker control panel applet, Windows Explorer, manage-bde command-line tool, or Windows PowerShell cmdlets. Each option offers different levels of detail and ease of use. We will look at each of the available methods in the following section.
+To check the BitLocker status of a particular volume, administrators can look at the status of the drive in the BitLocker control panel applet, Windows Explorer, manage-bde command-line tool, or Windows PowerShell cmdlets. Each option offers different levels of detail and ease of use. We'll look at each of the available methods in the following section.
 
 ### Checking BitLocker status with the control panel
 
@@ -343,7 +343,7 @@ Administrators can enable BitLocker prior to operating system deployment from th
 
 ### Decrypting BitLocker volumes
 
-Decrypting volumes removes BitLocker and any associated protectors from the volumes. Decryption should occur when protection is no longer required. BitLocker decryption should not occur as a troubleshooting step. BitLocker can be removed from a volume using the BitLocker control panel applet, manage-bde, or Windows PowerShell cmdlets. We will discuss each method further below.
+Decrypting volumes removes BitLocker and any associated protectors from the volumes. Decryption should occur when protection is no longer required. BitLocker decryption shouldn't occur as a troubleshooting step. BitLocker can be removed from a volume using the BitLocker control panel applet, manage-bde, or Windows PowerShell cmdlets. We'll discuss each method further below.
 
 ### Decrypting volumes using the BitLocker control panel applet
 
@@ -378,7 +378,7 @@ Using the Disable-BitLocker command, they can remove all protectors and encrypti
 Disable-BitLocker
 ```
 
-If a user did not want to input each mount point individually, using the `-MountPoint` parameter in an array can sequence the same command into one line without requiring additional user input. An example command is:
+If a user didn't want to input each mount point individually, using the `-MountPoint` parameter in an array can sequence the same command into one line without requiring additional user input. An example command is:
 
 ```powershell
 Disable-BitLocker -MountPoint E:,F:,G:
