@@ -2,7 +2,7 @@
 title: Enhanced diagnostic data required by Windows Analytics (Windows 10)
 description: Use this article to learn more about the limit enhanced diagnostic data events policy used by Desktop Analytics
 keywords: privacy, diagnostic data
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 11/9/2018
-ms.reviewer: 
+ms.date: 11/29/2021
+ms.reviewer:
+ms.technology: privacy 
 ---
 
 
@@ -26,7 +27,7 @@ ms.reviewer:
 
 > [!IMPORTANT]
 > The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Update Compliance](/windows/deployment/update/update-compliance-get-started) will continue to be supported.
-> For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/en-us/help/4521815/windows-analytics-retirement).
+> For more information, see [Windows Analytics retirement on January 31, 2020](/lifecycle/announcements/windows-analytics-retirement).
 
 Desktop Analytics reports are powered by diagnostic data not included in the Basic level.
 

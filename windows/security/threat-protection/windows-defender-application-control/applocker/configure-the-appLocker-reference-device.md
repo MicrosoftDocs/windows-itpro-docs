@@ -1,5 +1,5 @@
 ---
-title: Configure the AppLocker reference device (Windows 10)
+title: Configure the AppLocker reference device (Windows)
 description: This topic for the IT professional describes the steps to create an AppLocker policy platform structure on a reference computer.
 ms.assetid: 034bd367-146d-4956-873c-e1e09e6fefee
 ms.reviewer: 
@@ -15,14 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Configure the AppLocker reference device
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for the IT professional describes the steps to create an AppLocker policy platform structure on a reference computer.
 

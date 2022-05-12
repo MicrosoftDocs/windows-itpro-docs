@@ -1,5 +1,5 @@
 ---
-title: AppLocker settings (Windows 10)
+title: AppLocker settings (Windows)
 description: This topic for the IT professional lists the settings used by AppLocker.
 ms.assetid: 9cb4aa19-77c0-4415-9968-bd07dab86839
 ms.reviewer: 
@@ -15,14 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # AppLocker settings
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for the IT professional lists the settings used by AppLocker.
 

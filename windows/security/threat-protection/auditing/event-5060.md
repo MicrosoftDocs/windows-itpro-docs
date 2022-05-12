@@ -7,18 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 5060(F): Verification operation failed.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 This event generates when the Cryptographic Next Generation (CNG) verification operation fails.
@@ -28,8 +24,6 @@ For more information about CNG, visit these pages:
 -   <https://msdn.microsoft.com/library/windows/desktop/aa376214(v=vs.85).aspx>
 
 -   <https://msdn.microsoft.com/library/windows/desktop/bb204775(v=vs.85).aspx>
-
--   <https://www.microsoft.com/download/details.aspx?id=1251>
 
 -   <https://www.microsoft.com/download/details.aspx?id=30688>
 

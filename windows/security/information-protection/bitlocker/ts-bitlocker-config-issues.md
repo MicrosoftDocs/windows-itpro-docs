@@ -2,12 +2,12 @@
 title: BitLocker configuration known issues
 description: Describes common issues that involve your BitLocker configuration and BitLocker's general functionality, and provides guidance for addressing those issues.
 ms.reviewer: kaushika
-ms.technology: windows
-ms.prod: w10
+ms.technology: windows-sec
+ms.prod: m365-security
 ms.sitesec: library
 ms.localizationpriority: medium
 author: Teresa-Motiv
-ms.author: v-tea
+ms.author: v-tappelgate
 manager: kaushika
 audience: ITPro
 ms.collection: Windows Security Technologies\BitLocker
@@ -20,9 +20,9 @@ ms.custom: bitlocker
 
 This article describes common issues that affect your BitLocker configuration and BitLocker's general functionality. This article also provides guidance to address these issues.
 
-## BitLocker encryption is slower in Windows 10
+## BitLocker encryption is slower in Windows 10 and Windows 11
 
-In both Windows 10 and Windows 7, BitLocker runs in the background to encrypt drives. However, in Windows 10, BitLocker is less aggressive about requesting resources. This behavior reduces the chance that BitLocker will affect the computer's performance.
+In both Windows 11, Windows 10, and Windows 7, BitLocker runs in the background to encrypt drives. However, in Windows 11 and Windows 10, BitLocker is less aggressive about requesting resources. This behavior reduces the chance that BitLocker will affect the computer's performance.
 
 To compensate for these changes, BitLocker uses a new conversion model. This model, (referred to as Encrypt-On-Write), makes sure that any new disk writes on all client SKUs and any internal drives are always encrypted *as soon as you turn on BitLocker*.
 
@@ -53,11 +53,11 @@ After Windows 7 was released, several other areas of BitLocker were improved:
 
 - **Integration with Azure Active Directory** (Azure AD). BitLocker can store recovery information in Azure AD to make it easier to recover.
 
-- **[Direct memory access (DMA) Port Protection](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt)**. By using MDM policies to manage BitLocker, you can block a device's DMA ports and secure the device during its startup.
+- **[Direct memory access (DMA) Port Protection](../kernel-dma-protection-for-thunderbolt.md)**. By using MDM policies to manage BitLocker, you can block a device's DMA ports and secure the device during its startup.
 
-- **[BitLocker Network Unlock](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-how-to-enable-network-unlock)**. If your BitLocker-enabled desktop or server computer is connected to a wired corporate network in a domain environment, you can automatically unlock its operating system volume during a system restart.
+- **[BitLocker Network Unlock](./bitlocker-how-to-enable-network-unlock.md)**. If your BitLocker-enabled desktop or server computer is connected to a wired corporate network in a domain environment, you can automatically unlock its operating system volume during a system restart.
 
-- **Support for [Encrypted Hard Drives](https://docs.microsoft.com/windows/security/information-protection/encrypted-hard-drive)**. Encrypted Hard Drives are a new class of hard drives that are self-encrypting at a hardware level and allow for full disk hardware encryption. By taking on that workload, Encrypted Hard Drives increase BitLocker performance and reduce CPU usage and power consumption.
+- **Support for [Encrypted Hard Drives](../encrypted-hard-drive.md)**. Encrypted Hard Drives are a new class of hard drives that are self-encrypting at a hardware level and allow for full disk hardware encryption. By taking on that workload, Encrypted Hard Drives increase BitLocker performance and reduce CPU usage and power consumption.
 
 - **Support for classes of HDD/SSD hybrid disks**. BitLocker can encrypt a disk that uses a small SSD as a non-volatile cache in front of the HDD, such as Intel Rapid Storage Technology.
 
@@ -152,13 +152,13 @@ There is one supported way to perform backup and restore of a virtualized domain
 
 If you have to take a production snapshot of a virtualized domain controller, you can suspend BitLocker in the guest operating system before you start the production snapshot. However, this approach is not recommended.
 
-For more information and recommendations about backing up virtualized domain controllers, see [Virtualizing Domain Controllers using Hyper-V: Backup and Restore Considerations for Virtualized Domain Controllers](https://docs.microsoft.com/windows-server/identity/ad-ds/get-started/virtual-dc/virtualized-domain-controllers-hyper-v#backup-and-restore-considerations-for-virtualized-domain-controllers)
+For more information and recommendations about backing up virtualized domain controllers, see [Virtualizing Domain Controllers using Hyper-V: Backup and Restore Considerations for Virtualized Domain Controllers](/windows-server/identity/ad-ds/get-started/virtual-dc/virtualized-domain-controllers-hyper-v#backup-and-restore-considerations-for-virtualized-domain-controllers)
 
 ### More information
 
 When the VSS NTDS writer requests access to the encrypted drive, the Local Security Authority Subsystem Service (LSASS) generates an error entry that resembles the following:
 
-```
+```console
 \# for hex 0xc0210000 / decimal -1071579136
 ‎ STATUS\_FVE\_LOCKED\_VOLUME ntstatus.h
 ‎ \# This volume is locked by BitLocker Drive Encryption.
@@ -166,7 +166,7 @@ When the VSS NTDS writer requests access to the encrypted drive, the Local Secur
 
 The operation produces the following call stack:
 
-```
+```console
 \# Child-SP RetAddr Call Site
 ‎ 00 00000086\`b357a800 00007ffc\`ea6e7a4c KERNELBASE\!FindFirstFileExW+0x1ba \[d:\\rs1\\minkernel\\kernelbase\\filefind.c @ 872\]
 ‎ 01 00000086\`b357abd0 00007ffc\`e824accb KERNELBASE\!FindFirstFileW+0x1c \[d:\\rs1\\minkernel\\kernelbase\\filefind.c @ 208\]
