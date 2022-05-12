@@ -1,20 +1,20 @@
 ---
-title: How to make a connection group ignore the package version (Windows 10)
+title: How to make a connection group ignore the package version (Windows 10/11)
 description: Learn how to make a connection group ignore the package version with the App-V Server Management Console.
-author: dansimp
+author: aczechowski
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 06/18/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
 # How to make a connection group ignore the package version
 
-> Applies to: Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 You can use Application Virtualization (App-V) to configure a connection group to use any version of a package, simplifying package upgrades and reducing the number of connection groups you need to create.
 
@@ -22,9 +22,9 @@ You can also configure a connection group to accept any version of a package, so
 
 - If the connection group has access to multiple versions of a package, App-V will use the latest version.
 
-- If the connection group contains an optional package with an incorrect version, App-V ignores the package and won’t block the connection group’s virtual environment from being created.
+- If the connection group contains an optional package with an incorrect version, App-V ignores the package and won't block the connection group's virtual environment from being created.
 
-- If the connection group contains a non-optional package that has an incorrect version, App-V won't be able to create the connection group’s virtual environment.
+- If the connection group contains a non-optional package that has an incorrect version, App-V won't be able to create the connection group's virtual environment.
 
 ## Make a connection group ignore the package version with the App-V Server Management Console
 
@@ -50,13 +50,13 @@ For more about adding or upgrading packages, see [How to add or upgrade packages
     Add-AppvClientConnectionGroup
     ```
 
-    For more information about how to use the **Add-AppvClientConnectionGroup** cmdlet, see [**Add-AppvClientConnectionGroup**](https://docs.microsoft.com/powershell/module/appvclient/add-appvclientconnectiongroup?view=win10-ps).
+    For more information about how to use the **Add-AppvClientConnectionGroup** cmdlet, see [**Add-AppvClientConnectionGroup**](/powershell/module/appvclient/add-appvclientconnectiongroup).
 
 4. When you upgrade a package, use the following cmdlets to remove the old package, add the upgraded package, and publish the upgraded package:
 
-    - [**Remove-AppvClientPackage**](https://docs.microsoft.com/powershell/module/appvclient/remove-appvclientpackage?view=win10-ps)
-    - [**Add-AppvClientPackage**](https://docs.microsoft.com/powershell/module/appvclient/add-appvclientpackage?view=win10-ps)
-    - [**Publish-AppvClientPackage**](https://docs.microsoft.com/powershell/module/appvclient/publish-appvclientpackage?view=win10-ps)
+    - [**Remove-AppvClientPackage**](/powershell/module/appvclient/remove-appvclientpackage)
+    - [**Add-AppvClientPackage**](/powershell/module/appvclient/add-appvclientpackage)
+    - [**Publish-AppvClientPackage**](/powershell/module/appvclient/publish-appvclientpackage)
 
 For more information, see [How to manage App-V packages running on a stand-alone computer by using Windows PowerShell](appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md).
 
