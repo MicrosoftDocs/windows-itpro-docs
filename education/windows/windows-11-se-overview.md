@@ -58,7 +58,6 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 |FireFox	                              |100.0.0	|Mozilla|
 |FortiClient	                          |7.0.1.0083	|Fortinet|
 |Free NaturalReader	                    |16.1.2	    |Natural Soft|
-|Ghotit 	                              |2.0.0.0	|Ghotit ltd|
 |GoGuardian	                            |1.4.4	    |GoGuardian|
 |Google Chrome	                        |100.0.4896.127	|Google|
 |Illuminate Lockdown Browser	          |2.0.5	    |Illuminate Education|
@@ -69,7 +68,6 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 |Kurzweil 3000 Assistive Learning	      |20.13.0000	 |Kurzweil Educational Systems|
 |LanSchool	                            |9.1.0.46	   |Stoneware|
 |Lightspeed Smart Agent                	|2.6.2	     |Lightspeed Systems|
-|Metamoji Classroom	                    |3.12.4.0	   |MetaMoji Corporation|
 |Microsoft Connect	                    |10.0.22000.1|Microsoft|
 |Mozilla Firefox	                      |99.0.1	     |Mozilla|
 |NAPLAN	                                |2.5.0	     |NAP|
@@ -90,7 +88,6 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 |SuperNova Magnifier & Screen Reader	  |21.02	     |Dolphin Computer Access|
 |TestNav	                              |1.10.2.0	   |Pearson Education Inc|
 |TX Secure Browser	                    |14.0.0	     |Cambium Assessment|
-|Win Bird Maintenance Assistance	      |19.0.0	     |Win Bird co., ltd|
 |Zoom	                                  |5.9.1 (2581)	|Zoom|
 |ZoomText Fusion	                      |2022.2109.10	|Freedom Scientific|
 |ZoomText Magnifier/Reader	            |2022.2109.25	|Freedom Scientific|
