@@ -2,16 +2,12 @@
 title: Release Notes for App-V for Windows 10 version 1703 (Windows 10/11)
 description: A list of known issues and workarounds for App-V running on Windows 10 version 1703 and Windows 11.
 author: aczechowski
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
 ---
-
 
 # Release Notes for App-V for Windows 10 version 1703 and later
 
@@ -108,7 +104,7 @@ For information that can help with troubleshooting App-V for Windows client, see
 
 <br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
-## Related topics
+## Related articles
 - [What's new in App-V for Windows client](appv-about-appv.md)
 
 - [Release Notes for App-V for Windows 10, version 1607](appv-release-notes-for-appv-for-windows-1703.md)

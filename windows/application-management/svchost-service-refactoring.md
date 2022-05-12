@@ -2,9 +2,6 @@
 title: Service Host service refactoring in Windows 10 version 1703
 description: Learn about the SvcHost Service Refactoring introduced in Windows 10 version 1703.
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: mobile
 ms.author: aaroncz
 author: aczechowski
 ms.date: 07/20/2017

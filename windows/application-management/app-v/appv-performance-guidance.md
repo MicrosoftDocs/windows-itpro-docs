@@ -2,16 +2,12 @@
 title: Performance Guidance for Application Virtualization (Windows 10/11)
 description: Learn how to configure App-V for optimal performance, optimize virtual app packages, and provide a better user experience with RDS and VDI.
 author: aczechowski
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
 ---
-
 
 # Performance Guidance for Application Virtualization
 
@@ -509,6 +505,6 @@ The following terms are used when describing concepts and actions related to App
 
 <br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
-## Related topics
+## Related articles
 
 [Application Virtualization (App-V) overview](appv-for-windows.md)
