@@ -2,9 +2,6 @@
 title: How to Modify an Existing Virtual Application Package (Windows 10/11)
 description: Learn how to modify an existing virtual application package and add a new application to an existing virtual application package.
 author: aczechowski
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
@@ -12,12 +9,11 @@ manager: dougeby
 ms.author: aaroncz
 ---
 
-
 # How to Modify an Existing Virtual Application Package
 
 [!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
-This topic explains how to:
+This article explains how to:
 
 -   [Update an application in an existing virtual application package](#update-an-application-in-an-existing-virtual-application-package)
 
@@ -151,6 +147,6 @@ This topic explains how to:
 
 <br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
-## Related topics
+## Related articles
 
 [Operations for App-V](appv-operations.md)
