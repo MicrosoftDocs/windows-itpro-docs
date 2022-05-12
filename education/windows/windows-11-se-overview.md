@@ -48,7 +48,6 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 |CKAuthenticator                        |3.6		|Content Keeper|
 |Class Policy	                          |114.0.0	|Class Policy|
 |Classroom.Cloud                        |1.40.0004   |NetSupport|
-|Clipchamp	                            |2.2.5.0	|Clipchamp (Microsoft Company)|
 |CoGat Secure Browser                   |11.0.0.19  |Riverside Insights|
 |Dragon Professional Individual	        |15.00.100	|Nuance Communications|
 |DRC Insight	                          |11.0.30.0	|Data recognition Corporation|
