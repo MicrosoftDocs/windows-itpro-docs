@@ -38,12 +38,12 @@ Windows 11 SE is only available preinstalled on devices from OEMs. The OEM insta
 Windows 11 SE comes with some preinstalled apps. The following apps can also run on Windows 11 SE, and are deployed using the [Intune for Education portal](https://intuneeducation.portal.azure.com). For more information, see [Manage devices running Windows 11 SE](/intune-education/windows-11-se-overview).
 
 
-| Application | Supported version | Apptype | Vendor |
+| Application | Supported version | App Type | Vendor |
 | --- | --- | --- | --- |
 |AirSecure	                            |8.0.0	|Win32  |AIR|
 |Brave Browser      	                |1.34.80|Win32	    |Brave|
-|Bulb Digital Portoflio              	|0.0.7.0|Store|Bulb|
-|CA Secure Browser	                    |14.0.0	   |Win32     |Cambium Development|
+|Bulb Digital Portfolio              	|0.0.7.0|Store|Bulb|
+|Secure Browser	                    |14.0.0	   |Win32     |Cambium Development|
 |Cisco Umbrella                      	|3.0.110.0	|Win32    |Cisco|
 |CKAuthenticator                        |3.6		|Win32    |Content Keeper|
 |Class Policy	                        |114.0.0	|Win32    |Class Policy|
@@ -68,7 +68,7 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 |Microsoft Connect	                    |10.0.22000.1 |Store  |Microsoft|
 |Mozilla Firefox	                    |99.0.1	     |Win32   |Mozilla|
 |NAPLAN	                                |2.5.0	    |Win32    |NAP|
-|Net Support Manager	                |12.01.0011	|Win32    |NetSupport|
+|NetSupport Manager	                |12.01.0011	|Win32    |NetSupport|
 |NetSupport Notify	                    |5.10.1.215	|Win32    |NetSupport|
 |NetSupport School	                    |14.00.0011	 |Win32   |NetSupport|
 |NextUp Talker	                        |1.0.49	    |Win32    |NextUp Technologies|
@@ -79,11 +79,10 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 |ReadAndWriteForWindows	                |12.0.60.0	 |Win32   |Texthelp Ltd.|
 |Remote Help	                        |3.8.0.12	 |Win32   |Microsoft|
 |Respondus Lockdown Browser         	|2.0.8.05	 |Win32   |Respondus|
-|Safe Exam Broswer                   	|3.3.2.413	  |Win32  |Safe Exam Broswer|
+|Safe Exam Browser                   	|3.3.2.413	  |Win32  |Safe Exam Browser|
 |Secure Browser	                        |4.8.3.376	  |Win32  |Questar, Inc|
 |SensoCloud test	                    |2021.11.15.0	|Win32|Senso.Cloud|
 |SuperNova Magnifier & Screen Reader	|21.02	     |Win32   |Dolphin Computer Access|
-|TX Secure Browser	                    |14.0.0	     |Win32   |Cambium Assessment|
 |Zoom	                                |5.9.1 (2581)|Win32	|Zoom|
 |ZoomText Fusion	                    |2022.2109.10|Win32	|Freedom Scientific|
 |ZoomText Magnifier/Reader	            |2022.2109.25|Win32	|Freedom Scientific|
