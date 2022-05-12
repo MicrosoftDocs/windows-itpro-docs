@@ -2,16 +2,12 @@
 title: How to Manage Connection Groups on a Stand-alone Computer by Using Windows PowerShell (Windows 10/11)
 description: How to Manage Connection Groups on a Stand-alone Computer by Using Windows PowerShell
 author: aczechowski
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
 ---
-
 
 # How to Manage Connection Groups on a Stand-alone Computer by Using Windows PowerShell
 
@@ -21,7 +17,7 @@ An App-V connection group allows you to run all the virtual applications as a de
 
 A connection group XML file defines the connection group for the App-V client. For information about the connection group XML file and how to configure it, see [About the Connection Group File](appv-connection-group-file.md).
 
-This topic explains the following procedures:
+This article explains the following procedures:
 
 -   [To add and publish the App-V packages in the connection group](#to-add-and-publish-the-app-v-packages-in-the-connection-group)
 
@@ -90,7 +86,7 @@ This topic explains the following procedures:
 
 <br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
-## Related topics
+## Related articles
 
 
 [Operations for App-V](appv-operations.md)
