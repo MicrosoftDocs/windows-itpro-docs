@@ -47,6 +47,7 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 |Cisco Umbrella                      	  |3.0.110.0	|Cisco|
 |CKAuthenticator                        |3.6		|Content Keeper|
 |Class Policy	                          |114.0.0	|Class Policy|
+|Classroom.Cloud                        |1.40.0004   |NetSupport|
 |Clipchamp	                            |2.2.5.0	|Clipchamp (Microsoft Company)|
 |CoGat Secure Browser                   |11.0.0.19  |Riverside Insights|
 |Dragon Professional Individual	        |15.00.100	|Nuance Communications|
@@ -66,31 +67,30 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 |Kite Student Portal	                  |8.0.1	     |Dynamic Learning Maps|
 |Kortext	                              |2.3.433.0	 |Kortext|
 |Kurzweil 3000 Assistive Learning	      |20.13.0000	 |Kurzweil Educational Systems|
-|LanSchool	                            |9.1.0.46	 |Stoneware|
+|LanSchool	                            |9.1.0.46	   |Stoneware|
 |Lightspeed Smart Agent                	|2.6.2	     |Lightspeed Systems|
-|Metamoji Classroom	                    |3.12.4.0	 |MetaMoji Corporation|
+|Metamoji Classroom	                    |3.12.4.0	   |MetaMoji Corporation|
 |Microsoft Connect	                    |10.0.22000.1|Microsoft|
 |Mozilla Firefox	                      |99.0.1	     |Mozilla|
 |NAPLAN	                                |2.5.0	     |NAP|
-|Net Support                            |	        |NetSupport|
-|Net Support Manager	                  |12.01.0011	|NetSupport|
-|NetSupport Notify	                    |5.10.1.215	|NetSupport|
-|NetSupport School	                    |14.00.0011	|NetSupport|
-|NextUp Talker	                        |1.0.49	    |NextUp Technologies|
-|NonVisual Desktop Access	              |2021.3.1	|NV Access|
-|NWEA Secure Testing Browser	          |5.4.300.0	|NWEA|
-|Pearson TestNav	                      |1.10.2.0	|Pearson|
-|Questar Secure Browser	                |4.8.3.376	|Questar|
-|ReadAndWriteForWindows	                |12.0.60.0	|Texthelp Ltd.|
-|Remote Help	                          |3.8.0.12	|Microsoft|
-|Respondus Lockdown Browser           	|2.0.8.05	|Respondus|
-|Safe Exam Broswer                    	|3.3.2.413	|Safe Exam Broswer|
-|Secure Browser	                        |4.8.3.376	|Questar, Inc|
+|Net Support Manager	                  |12.01.0011  |NetSupport|
+|NetSupport Notify	                    |5.10.1.215	 |NetSupport|
+|NetSupport School	                    |14.00.0011	 |NetSupport|
+|NextUp Talker	                        |1.0.49	     |NextUp Technologies|
+|NonVisual Desktop Access	              |2021.3.1	   |NV Access|
+|NWEA Secure Testing Browser	          |5.4.300.0	 |NWEA|
+|Pearson TestNav	                      |1.10.2.0	   |Pearson|
+|Questar Secure Browser	                |4.8.3.376	 |Questar|
+|ReadAndWriteForWindows	                |12.0.60.0	 |Texthelp Ltd.|
+|Remote Help	                          |3.8.0.12	   |Microsoft|
+|Respondus Lockdown Browser           	|2.0.8.05	   |Respondus|
+|Safe Exam Broswer                    	|3.3.2.413	 |Safe Exam Broswer|
+|Secure Browser	                        |4.8.3.376	 |Questar, Inc|
 |SensoCloud test	                      |2021.11.15.0	|Senso.Cloud|
-|SuperNova Magnifier & Screen Reader	  |21.02	    |Dolphin Computer Access|
-|TestNav	                              |1.10.2.0	|Pearson Education Inc|
-|TX Secure Browser	                    |14.0.0	    |Cambium Assessment|
-|Win Bird Maintenance Assistance	      |19.0.0	    |Win Bird co., ltd|
+|SuperNova Magnifier & Screen Reader	  |21.02	     |Dolphin Computer Access|
+|TestNav	                              |1.10.2.0	   |Pearson Education Inc|
+|TX Secure Browser	                    |14.0.0	     |Cambium Assessment|
+|Win Bird Maintenance Assistance	      |19.0.0	     |Win Bird co., ltd|
 |Zoom	                                  |5.9.1 (2581)	|Zoom|
 |ZoomText Fusion	                      |2022.2109.10	|Freedom Scientific|
 |ZoomText Magnifier/Reader	            |2022.2109.25	|Freedom Scientific|
