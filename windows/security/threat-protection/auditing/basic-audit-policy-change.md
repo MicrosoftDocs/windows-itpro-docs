@@ -4,7 +4,7 @@ description: Determines whether to audit every incident of a change to user righ
 ms.assetid: 1025A648-6B22-4C85-9F47-FE0897F1FA31
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 09/06/2021
+ms.technology: windows-sec
 ---
 
 # Audit policy change
 
-**Applies to**
--   Windows 10
 
 Determines whether to audit every incident of a change to user rights assignment policies, audit policies, or trust policies.
 

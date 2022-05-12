@@ -2,22 +2,19 @@
 title: 4693(S, F) Recovery of data protection master key was attempted. (Windows 10)
 description: Describes security event 4693(S, F) Recovery of data protection master key was attempted.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/07/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: windows-sec
 ---
 
 # 4693(S, F): Recovery of data protection master key was attempted.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-4693.png" alt="Event 4693 illustration" width="449" height="477" hspace="10" align="left" />
@@ -26,7 +23,7 @@ ms.author: dansimp
 
 ***Event Description:***
 
-This event generates every time that recovery is attempted for a [DPAPI](https://msdn.microsoft.com/library/ms995355.aspx) Master Key.
+This event generates every time that recovery is attempted for a [DPAPI](/previous-versions/ms995355(v=msdn.10)) Master Key.
 
 While unprotecting data, if DPAPI cannot use the Master Key protected by the user's password, it sends the backup Master Key to a domain controller by using a mutually authenticated and privacy protected RPC call. The domain controller then decrypts the Master Key with its private key and sends it back to the client by using the same protected RPC call. This protected RPC call is used to ensure that no one listening on the network can get the Master Key.
 
@@ -96,7 +93,7 @@ Failure event generates when a Master Key restore operation fails for some reaso
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -129,4 +126,3 @@ For 4693(S, F): Recovery of data protection master key was attempted.
 -   For domain joined computers, **Recovery Reason** should typically be a domain controller DNS name.
 
 > **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
-

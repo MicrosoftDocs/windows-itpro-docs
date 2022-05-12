@@ -1,22 +1,22 @@
 ---
-title: Auto-remove unpublished packages on App-V client (Windows 10)
+title: Auto-remove unpublished packages on App-V client (Windows 10/11)
 description: How to automatically clean up any unpublished packages on your App-V client devices.
-author: dansimp
+author: aczechowski
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 06/15/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
----
+---        
 # Automatically clean up unpublished packages on the App-V client
 
->Applies to: Windows 10, version 1703
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
-If you wanted to free up additional storage space in previous versions of App-V, you would have had to manually remove your unpublished packages from your client devices. Windows 10, version 1703 introduces the ability to use PowerShell or Group Policy settings to automatically clean up your unpublished packages after restarting your device.
+If you wanted to free up additional storage space in previous versions of App-V, you would have had to manually remove your unpublished packages from your client devices. Starting with Windows 10 version 1703, use PowerShell or Group Policy settings to automatically clean up your unpublished packages after restarting your device.
 
 ## Clean up with PowerShell cmdlets
 
@@ -62,5 +62,5 @@ Using Group Policy, you can turn on the **Enable automatic cleanup of unused App
 ## Related topics
 
 - [Download the Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
-- [Download the Microsoft Application Virtualization 5.0 Client UI Application](https://www.microsoft.com/download/details.aspx?id=41186)
+- [Deploying App-V for Windows client](appv-deploying-appv.md)
 - [Using the App-V Client Management Console](appv-using-the-client-management-console.md)

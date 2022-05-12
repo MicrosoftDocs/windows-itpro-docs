@@ -3,15 +3,16 @@ title: Firewall and network protection in the Windows Security app
 description: Use the Firewall & network protection section to see the status of and make changes to firewalls and network connections for the machine.
 keywords: wdsc, firewall, windows defender firewall, network, connections, domain, private network, publish network, allow firewall, firewall rule, block firewall
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-ms.date: 04/30/2018
+ms.date:
 ms.reviewer: 
 manager: dansimp
+ms.technology: windows-sec
 ---
 
 
@@ -19,8 +20,8 @@ manager: dansimp
 
 **Applies to**
 
-- Windows 10, version 1703 and later
-
+- Windows 10
+- Windows 11
 
 The **Firewall & network protection** section contains information about the firewalls and network connections used by the machine, including the status of Windows Defender Firewall and any other third-party firewalls. IT administrators and IT pros can get configuration guidance from the [Windows Defender Firewall with Advanced Security documentation library](../windows-firewall/windows-firewall-with-advanced-security.md).
 
@@ -51,5 +52,5 @@ This can only be done in Group Policy.
 >[!NOTE]
 >If you hide all sections then the app will show a restricted interface, as in the following screenshot:
 >  
->![Windows Security app with all sections hidden by Group Policy](images/wdsc-all-hide.png)
+>![Windows Security app with all sections hidden by Group Policy.](images/wdsc-all-hide.png)
 
