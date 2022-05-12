@@ -2,9 +2,6 @@
 title: Planning for the App-V Sequencer and Client Deployment (Windows 10/11)
 description: Learn what you need to do to plan for the App-V Sequencer and Client deployment, and where to find additional information about the deployment process.
 author: aczechowski
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
@@ -12,6 +9,7 @@ manager: dougeby
 ms.author: aaroncz
 ms.topic: article
 ---
+
 # Planning for the App-V Sequencer and Client Deployment
 
 [!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
@@ -58,7 +56,7 @@ The following list displays some of the benefits of using App-V SCS:
 
 * [Planning to deploy App-V](appv-planning-to-deploy-appv.md)
 
-## Related topics
+## Related articles
 
 * [How to install the sequencer](appv-install-the-sequencer.md)
 * [Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md)
