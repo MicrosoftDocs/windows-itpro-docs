@@ -53,7 +53,7 @@ Use this three-phased approach for configuring device registration.
 
 ## Configure Hybrid Azure AD join
 
-Begin configuring device registration to support Hybrid Windows Hello for Business by configuring device registration capabilities in Azure AD.
+To support hybrid Windows Hello for Business, configure hybrid Azure AD join.
 
 Follow the guidance on [How to configure hybrid Azure Active Directory joined devices](/azure/active-directory/devices/hybrid-azuread-join-plan) page. In the **Select your scenario based on your identity infrastructure** section, identify your configuration (either **Managed environment** or **Federated environment**) and perform only the steps applicable to your environment.
 
