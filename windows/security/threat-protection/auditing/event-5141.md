@@ -7,18 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 5141(S): A directory service object was deleted.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-5141.png" alt="Event 5141 illustration" width="449" height="549" hspace="10" align="left" />
@@ -29,7 +25,7 @@ ms.technology: mde
 
 This event generates every time an Active Directory object is deleted.
 
-This event only generates if the deleted object has a particular entry in its [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx): the “**Delete”** action, auditing for specific objects.
+This event only generates if the deleted object has a particular entry in its [SACL](/windows/win32/secauthz/access-control-lists): the “**Delete”** action, auditing for specific objects.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -95,7 +91,7 @@ This event only generates if the deleted object has a particular entry in its [S
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -198,4 +194,3 @@ For 5141(S): A directory service object was deleted.
 -   If you need to monitor deletion of Active Directory objects with specific classes, monitor for **Class** field with specific class name. For example, we recommend that you monitor for group policy objects deletions: **groupPolicyContainer** class.
 
 -   If you need to monitor deletion of specific Active Directory objects, monitor for **DN** field with specific object name. For example, if you have critical Active Directory objects which should not be deleted, monitor for their deletion.
-

@@ -1,5 +1,5 @@
 ---
-title: Gathering Other Relevant Information (Windows 10)
+title: Gathering Other Relevant Information (Windows)
 description: Learn about additional information you may need to gather to deploy Windows Defender Firewall with Advanced Security policies in your organization.
 ms.assetid: 87ccca07-4346-496b-876d-cdde57d0ce17
 ms.reviewer: 
@@ -14,15 +14,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
-ms.technology: mde
+ms.date: 09/08/2021
+ms.technology: windows-sec
 ---
 
 # Gathering Other Relevant Information
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 This topic discusses several other things that you should examine to see whether they will cause any complications in your ability to deploy Windows Defender Firewall with Advanced Security policies in your organization.
 
@@ -30,7 +31,7 @@ This topic discusses several other things that you should examine to see whether
 
 Because IPsec uses mathematically intensive cryptographic techniques, it can consume significant overhead on a device. Areas to watch:
 
--   **Encryption.** You might use 256-bit Advanced Encryption Standard (AES-256) and 384-bit Secure Hash Algorithm (SHA-384) to check integrity in situations that require the strongest available encryption and key exchange protection. If you have NICs that support IPsec Task Offload, you can reduce the effect that encryption has on network throughput. For more information, see [IPsec Task Offload](https://technet.microsoft.com/network/dd277647.aspx).
+-   **Encryption.** You might use 256-bit Advanced Encryption Standard (AES-256) and 384-bit Secure Hash Algorithm (SHA-384) to check integrity in situations that require the strongest available encryption and key exchange protection. If you have NICs that support IPsec Task Offload, you can reduce the effect that encryption has on network throughput. For more information, see [IPsec Task Offload](/previous-versions/windows/it-pro/windows-server-2003/cc776369(v=ws.10)).
 
 -   **Security association (SA) negotiation.** You can use a shorter lifetime for the main mode SA, such as three hours, but then you might need to make tradeoffs. Because each main mode SA occupies approximately 5  KB of RAM, situations in which a server brokers tens of thousands of concurrent connections can lead to overutilization.
 
@@ -61,8 +62,6 @@ In some cases, IPsec-secured traffic might have to pass through a router, perime
 
 In the case of a filtering router or a firewall, you must configure these devices to allow IPsec traffic to be forwarded. Configure the firewall to allow IPsec traffic on UDP source and destination port 500 (IKE), UDP source and destination port 4500 (IPsec NAT-T), and IP Protocol 50 (ESP). You might also have to configure the firewall to allow IPsec traffic on IP protocol 51 (AH) to allow troubleshooting by IPsec administrators and to allow the IPsec traffic to be inspected.
 
-For more info, see [How to Enable IPsec Traffic Through a Firewall](https://go.microsoft.com/fwlink/?LinkId=45085).
-
 ## Network load balancing and server clusters
 
 There are challenges implementing connection security for network traffic going to and from network load balancing (NLB) clusters and server clusters. NLB enables multiple servers to be clustered together to provide high availability for a service by providing automatic failover to other nodes in the cluster. Because IPsec matches a security association to a specific device, it prevents different devices from handling the same client connection. If a different node in the cluster responds to an IPsec connection that was originally established by another node, the traffic will be dropped by the client device as untrusted.
@@ -81,6 +80,6 @@ In general, IPsec defeats network-based prioritization and port- or protocol-bas
 
 Network Monitor includes parsers for the ISAKMP (IKE), AH, and ESP protocols. Network Monitor parsers for ESP can parse inside the ESP packet only if ESP null-encryption is being used. Network Monitor cannot parse the encrypted parts of IPsec ESP traffic when encryption is performed in software. However, if encryption is performed by an IPsec hardware offload network adapter, the ESP packets can be decrypted when Network Monitor captures them on either the source or the destination and, therefore, they can be parsed. To diagnose ESP software-encrypted communication, you must disable ESP encryption and use ESP-null encryption by changing the IPsec policy or connection security rule on both devices.
 
-Message Analyzer is available on the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=44226).
+Message Analyzer is available on the [Microsoft Download Center](/message-analyzer/microsoft-message-analyzer-operating-guide).
 
 **Next:** [Determining the Trusted State of Your Devices](determining-the-trusted-state-of-your-devices.md)

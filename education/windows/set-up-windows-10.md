@@ -27,7 +27,7 @@ Choose the tool that is appropriate for how your students will sign in (Active D
 
 You can use the following diagram to compare the tools.
 
-![Which tool to use to set up Windows 10](images/suspc_wcd_featureslist.png)
+![Which tool to use to set up Windows 10.](images/suspc_wcd_featureslist.png)
 
 
 ## In this section

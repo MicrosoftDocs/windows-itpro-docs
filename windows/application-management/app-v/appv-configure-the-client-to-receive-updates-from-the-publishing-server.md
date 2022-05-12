@@ -1,20 +1,20 @@
 ---
-title: How to configure the client to receive package and connection groups updates from the publishing server (Windows 10)
+title: How to configure the client to receive package and connection groups updates from the publishing server (Windows 10/11)
 description: How to configure the client to receive package and connection groups updates from the publishing server.
-author: dansimp
+author: aczechowski
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 06/25/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
 # How to configure the client to receive package and connection groups updates from the publishing server
 
->Applies to: Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 The App-V publishing server's single-point management and high scalability lets you deploy packages and connection groups and keep them up to date.
 
@@ -26,7 +26,7 @@ This article will tell you how to configure the App-V client to receive updates 
 ## Configure the App-V client to receive updates from the publishing server
 
 1. Deploy the App-V management and publishing servers, and add the required packages and connection groups. For more information about adding packages and connection groups, see [How to add or upgrade packages by using the Management Console](appv-add-or-upgrade-packages-with-the-management-console.md) and [How to create a connection group](appv-create-a-connection-group.md).
-2. To open the management console, open a web browser and enter the following URL: <https://MyMgmtSrv/AppvManagement/Console.html>. Import, publish, and entitle all packages and connection groups that your users will need.
+2. To open the management console, open a web browser and enter the following URL: `https://MyMgmtSrv/AppvManagement/Console.html`. Import, publish, and entitle all packages and connection groups that your users will need.
 3. On the computer running the App-V client, open an elevated Windows PowerShell command prompt, and run the following command:
 
     ```PowerShell

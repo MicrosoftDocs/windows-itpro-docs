@@ -1,0 +1,28 @@
+- name: Windows
+  href: index.yml
+  items: 
+    - name: What's new
+      expanded: true
+      items:
+        - name: What's new in Windows
+          href: /windows/whats-new
+        - name: Windows 11
+          href: /windows/whats-new/windows-11
+    - name: Release information
+      href: /windows/release-health
+    - name: Deployment
+      href: /windows/deployment
+    - name: Configuration
+      href: /windows/configuration
+    - name: Client management
+      href: /windows/client-management
+    - name: Application management
+      href: /windows/application-management
+    - name: Security
+      href: /windows/security
+    - name: Privacy
+      href: /windows/privacy
+    - name: Troubleshooting
+      href: /windows/client-management/windows-10-support-solutions
+    - name: Previous Windows versions
+      href: /previous-versions/windows

@@ -14,4 +14,4 @@ ms.prod: w10
 
 Return to: [Advanced troubleshooting for Windows boot problems](advanced-troubleshooting-boot-problems.md)<br>
 
-![Full-sized boot sequence flowchart](images/boot-sequence.png)
+![Full-sized boot sequence flowchart.](images/boot-sequence.png)

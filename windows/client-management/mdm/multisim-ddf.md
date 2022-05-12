@@ -5,13 +5,13 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 02/27/2018
 ms.reviewer: 
 manager: dansimp
 ---
 
-# MultiSIM CSP 
+# MultiSIM DDF
 
 
 This topic shows the OMA DM device description framework (DDF) for the **MultiSIM** configuration service provider.

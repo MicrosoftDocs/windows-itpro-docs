@@ -7,18 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/07/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 4904(S): An attempt was made to register a security event source.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-4904.png" alt="Event 4904 illustration" width="449" height="462" hspace="10" align="left" />
@@ -27,7 +23,7 @@ ms.technology: mde
 
 ***Event Description:***
 
-This event generates every time a new [security event source](https://msdn.microsoft.com/library/windows/desktop/aa363661(v=vs.85).aspx) is registered.
+This event generates every time a new [security event source](/windows/win32/eventlog/event-sources) is registered.
 
 You can typically see this event during system startup, if specific roles (Internet Information Services, for example) are installed in the system.
 
@@ -92,7 +88,7 @@ You can typically see this event during system startup, if specific roles (Inter
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -135,4 +131,3 @@ For 4904(S): An attempt was made to register a security event source.
 -   If you have a pre-defined list of allowed security event sources for specific computers or computer types, then you can use this event and check whether “**Event Source\\Source Name**”is in your defined list.
 
 -   Typically this event has an informational purpose.
-
