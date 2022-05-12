@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 12/05/2017
 ---
 
@@ -127,29 +127,6 @@ The XML below is the current version for this CSP.
                 <Replace />
               </AccessType>
               <Description>Deprecated. Recommendation is to always set to 1. When fetching this policy value, client will always return 1 regardless of what was originally set by server.</Description>
-              <DFFormat>
-                <int />
-              </DFFormat>
-              <Occurrence>
-                <One />
-              </Occurrence>
-              <Scope>
-                <Dynamic />
-              </Scope>
-              <DFType>
-                <MIME>text/plain</MIME>
-              </DFType>
-            </DFProperties>
-          </Node>
-          <Node>
-            <NodeName>RequireProtectionUnderLockConfig</NodeName>
-            <DFProperties>
-              <AccessType>
-                <Get />
-                <Add />
-                <Delete />
-                <Replace />
-              </AccessType>
               <DFFormat>
                 <int />
               </DFFormat>

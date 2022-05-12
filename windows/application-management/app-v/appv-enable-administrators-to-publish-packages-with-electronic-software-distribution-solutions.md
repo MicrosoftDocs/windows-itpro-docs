@@ -1,22 +1,21 @@
 ---
-title: How to Enable Only Administrators to Publish Packages by Using an ESD (Windows 10)
+title: How to enable only administrators to publish packages by using an ESD
 description: Learn how to enable only administrators to publish packages by bsing an electronic software delivery (ESD).
-author: lomayor
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
+author: aczechowski
 ms.prod: w10
-ms.date: 04/19/2017
+ms.technology: windows
+ms.date: 05/02/2022
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.topic: article
+manager: dougeby
+ms.author: aaroncz
+ms.topic: how-to
 ---
+
 # How to enable only administrators to publish packages by using an ESD
 
->Applies to: Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
-Starting in App-V 5.0 SP3, you can configure the App-V client so that only administrators (not end users) can publish or unpublish packages. In earlier versions of App-V, you could not prevent end users from performing these tasks.
+Starting in App-V 5.0 SP3, you can configure the App-V client so that only administrators (not end users) can publish or unpublish packages. In earlier versions of App-V, you couldn't prevent end users from performing these tasks.
 
 Here's how to enable only administrators to publish or unpublish packages:
 

@@ -29,6 +29,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "recommendations": true,
       "breadcrumb_path": "/windows/smb/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-M365-IT",
       "feedback_system": "None",

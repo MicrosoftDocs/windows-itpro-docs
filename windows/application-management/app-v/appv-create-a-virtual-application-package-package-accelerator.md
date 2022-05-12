@@ -1,20 +1,20 @@
 ---
-title: How to create a virtual application package using an App-V Package Accelerator (Windows 10)
+title: How to create a virtual application package using an App-V Package Accelerator (Windows 10/11)
 description: How to create a virtual application package using an App-V Package Accelerator.
-author: lomayor
+author: aczechowski
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 07/10/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
 # How to create a virtual application package using an App-V Package Accelerator
 
->Applies to: Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 Use the following procedure to create a virtual application package with the App-V Package Accelerator.
 

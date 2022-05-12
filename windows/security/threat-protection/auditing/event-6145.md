@@ -2,22 +2,19 @@
 title: 6145(F) One or more errors occurred while processing security policy in the group policy objects. (Windows 10)
 description: Describes security event 6145(F) One or more errors occurred while processing security policy in the group policy objects.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: windows-sec
 ---
 
 # 6145(F): One or more errors occurred while processing security policy in the group policy objects.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-6145.png" alt="Event 6145 illustration" width="464" height="361" hspace="10" align="left" />
@@ -28,7 +25,7 @@ ms.author: dansimp
 
 This event generates every time settings from the “Security Settings” section in the group policy object are applied to a computer with one or more errors. This event generates on the target computer itself.
 
-This event generates, for example, if the [SID](https://msdn.microsoft.com/library/windows/desktop/aa379571(v=vs.85).aspx) of a security principal which was included in one of the Group Policy settings cannot be resolved or translated to the real account name.
+This event generates, for example, if the [SID](/windows/win32/secauthz/security-identifiers) of a security principal which was included in one of the Group Policy settings cannot be resolved or translated to the real account name.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -90,4 +87,3 @@ For 6145(F): One or more errors occurred while processing security policy in the
 -   Typically this event has an informational purpose and the reason is configuration errors in Group Policy’s security settings.
 
 -   This event might be used for Group Policy troubleshooting purposes.
-

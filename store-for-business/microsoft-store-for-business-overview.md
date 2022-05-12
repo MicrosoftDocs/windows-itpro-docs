@@ -3,16 +3,16 @@ title: Microsoft Store for Business and Microsoft Store for Education overview (
 description: With Microsoft Store for Business and Microsoft Store for Education, organizations and schools can make volume purchases of Windows apps.
 ms.assetid: 9DA71F6B-654D-4121-9A40-D473CC654A1C
 ms.reviewer: 
-manager: dansimp
 ms.prod: w10
-ms.pagetype: store, mobile
+ms.pagetype: store
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: TrudyHa
-ms.author: TrudyHa
+ms.author: cmcatee
+author: cmcatee-MSFT
+manager: scotv
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 10/17/2017
+ms.date: 07/21/2021
 ---
 
 # Microsoft Store for Business and Microsoft Store for Education overview
@@ -20,9 +20,17 @@ ms.date: 10/17/2017
 **Applies to**
 
 -   Windows 10
--   Windows 10 Mobile
 
-Designed for organizations, Microsoft Store for Business and Microsoft Store for Education give IT decision makers and administrators in businesses or schools a flexible way to find, acquire, manage, and distribute free and paid apps in select markets to Windows 10 devices in volume. IT administrators can manage Microsoft Store apps and private line-of-business apps in one inventory, plus assign and re-use licenses as needed. You can choose the best distribution method for your organization: directly assign apps to individuals and teams, publish apps to private pages in Microsoft Store, or connect with management solutions for more options. 
+> [!IMPORTANT]
+> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
+
+> [!IMPORTANT]
+> Starting on April 14th, 2021, only free apps will be available in Microsoft Store for Business and Education. For more information, see [Microsoft Store for Business and Education](index.md).
+
+Designed for organizations, Microsoft Store for Business and Microsoft Store for Education give IT decision makers and administrators in businesses or schools a flexible way to find, acquire, manage, and distribute free and paid apps in select markets to Windows 10 devices in volume. IT administrators can manage Microsoft Store apps and private line-of-business apps in one inventory, plus assign and re-use licenses as needed. You can choose the best distribution method for your organization: directly assign apps to individuals and teams, publish apps to private pages in Microsoft Store, or connect with management solutions for more options. There will be no support for Microsoft Store for Business and Education on Windows 11.
+
+> [!IMPORTANT]
+> Customers who are in the Office 365 GCC environment or are eligible to buy with government pricing cannot use Microsoft Store for Business.
 
 ## Features
 Organizations or schools of any size can benefit from using Microsoft Store for Business or Microsoft Store for Education:
@@ -62,7 +70,7 @@ Microsoft Azure Active Directory (AD) accounts for your employees:
 - For offline-licensed apps, Azure AD accounts are not required for employees.
 - Admins can add or remove user accounts in the Microsoft 365 admin center, even if you don’t have an Office 365 subscription. You can access the Office 365 admin portal directly from the Store for Business and Education. 
 
-For more information on Azure AD, see [About Office 365 and Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=708612), and [Intro to Azure: identity and access](https://go.microsoft.com/fwlink/p/?LinkId=708611).
+For more information on Azure AD, see [About Office 365 and Azure Active Directory](/previous-versions//dn509517(v=technet.10)), and [Intro to Azure: identity and access](https://go.microsoft.com/fwlink/p/?LinkId=708611).
 
 ### Optional
 
@@ -77,21 +85,19 @@ While not required, you can use a management tool to distribute and manage apps.
 
 The first step for getting your organization started with Store for Business and Education is signing up. Sign up using an existing account (the same one you use for Office 365, Dynamics 365, Intune, Azure, etc.) or we’ll quickly create an account for you. You must be a Global Administrator for your organization.
 
-For more information, see [Sign up for Store for Business and Education](sign-up-microsoft-store-for-business.md).
-
 ## Set up
 
 After your admin signs up for the Store for Business and Education, they can assign roles to other employees in your company or school. The admin needs Azure AD User Admin permissions to assign Microsoft Store for Business and Education roles. These are the roles and their permissions.
 
 | Permission | Account settings | Acquire apps | Distribute apps | Device Guard signing |
 | ---------- | ---------------- | ------------ | --------------- | -------------------- |
-| Admin | X | X | X |  |
-| Purchaser |  | X | X |  |
-| Device Guard signer |  |  |  | X |
-| Basic purchaser |  | X | X |  |
+| Admin | ✔️ | ✔️ | ✔️ |  |
+| Purchaser |  | ✔️ | ✔️ |  |
+| Device Guard signer |  |  |  | ✔️ |
+| Basic purchaser |  | ✔️ | ✔️ |  |
 
 > [!NOTE]
-> Currently, the Basic purchaser role is only available for schools using Microsoft Store for Education. For more information, see [Microsoft Store for Education permissions](https://docs.microsoft.com/education/windows/education-scenarios-store-for-business?toc=/microsoft-store/education/toc.json#manage-domain-settings).
+> Currently, the Basic purchaser role is only available for schools using Microsoft Store for Education. For more information, see [Microsoft Store for Education permissions](/education/windows/education-scenarios-store-for-business?toc=%2fmicrosoft-store%2feducation%2ftoc.json#manage-domain-settings).
 
 In some cases, admins will need to add Azure Active Directory (AD) accounts for their employees. For more information, see [Manage user accounts and groups](manage-users-and-groups-microsoft-store-for-business.md).
 
@@ -158,184 +164,164 @@ For more information, see [Manage settings in the Store for Business](manage-set
 Store for Business and Education is currently available in these markets.
 
 ### Support for free and paid products
-<table>
-   <tr>
-        <th align="center" colspan="4">Supports all free and paid products</th>
-   </tr>
-   <tr align="left">
-     <td>
-        <ul>
-            <li>Afghanistan</li>
-            <li>Algeria</li>
-            <li>Andorra</li>
-            <li>Angola</li>
-            <li>Anguilla</li>
-            <li>Antigua and Barbuda</li>
-            <li>Argentina</li>
-            <li>Australia</li>
-            <li>Austria</li>
-            <li>Bahamas</li>
-            <li>Bahrain</li>
-            <li>Bangladesh</li>
-            <li>Barbados</li>
-            <li>Belgium</li>
-            <li>Belize</li>
-            <li>Bermuda</li>
-            <li>Benin</li>
-            <li>Bhutan</li>
-            <li>Bolivia</li>
-            <li>Bonaire</li>
-            <li>Botswana</li>
-            <li>Brunei Darussalam</li>
-            <li>Bulgaria</li>
-            <li>Burundi</li>
-            <li>Cambodia</li>
-            <li>Cameroon</li>
-            <li>Canada</li>
-            <li>Cayman Islands</li>
-            <li>Chile</li>
-            <li>Colombia</li>
-            <li>Comoros</li>
-            <li>Costa Rica</li>
-            <li>C&ocirc;te D&#39;ivoire</li>
-            <li>Croatia</li>
-            <li>Cur&ccedil;ao</li>
-            <li>Cyprus</li>
-            <li>Czech Republic</li>
-            <li>Denmark</li>
-            <li>Dominican Republic</li>
-            <li>Ecuador</li>
-        </ul>
-     </td>
-     <td>
-        <ul> 
-            <li>Egypt</li>
-            <li>El Salvador</li>
-            <li>Estonia</li>
-            <li>Ethiopia</li>
-            <li>Faroe Islands</li>
-            <li>Fiji</li>
-            <li>Finland</li>
-            <li>France</li>
-            <li>French Guiana</li>
-            <li>French Polynesia</li>
-            <li>Germany</li>
-            <li>Ghana</li>
-            <li>Greece</li>
-            <li>Greenland</li>
-            <li>Guadeloupe</li>
-            <li>Guatemala</li>
-            <li>Honduras</li>
-            <li>Hong Kong SAR</li>
-            <li>Hungary</li>
-            <li>Iceland</li>
-            <li>Indonesia</li>
-            <li>Iraq</li>
-            <li>Ireland</li>
-            <li>Israel</li>
-            <li>Italy</li>
-            <li>Jamaica</li>
-            <li>Japan</li>
-            <li>Jersey</li>
-            <li>Jordan</li>
-            <li>Kenya</li>
-            <li>Kuwait</li>
-            <li>Laos</li>
-            <li>Latvia</li>
-            <li>Lebanon</li>
-            <li>Libya</li>
-            <li>Liechtenstein</li>
-            <li>Lithuania</li>
-            <li>Luxembourg</li>
-            <li>Macedonia</li>
-            <li>Madagascar</li>
-        </ul>
-    </td>
-     <td>
-        <ul>
-            <li>Malawi</li>
-            <li>Malaysia</li>
-            <li>Maldives</li>
-            <li>Mali</li>
-            <li>Malta</li>
-            <li>Marshall Islands</li>
-            <li>Martinique</li>
-            <li>Mauritius</li>
-            <li>Mayotte</li>
-            <li>Mexico</li>
-            <li>Mongolia</li>
-            <li>Montenegro</li>
-            <li>Morocco</li>
-            <li>Mozambique</li>
-            <li>Myanamar</li>
-            <li>Namibia</li>
-            <li>Nepal</li>
-            <li>Netherlands</li>
-            <li>New Caledonia</li>
-            <li>New Zealand</li>
-            <li>Nicaragua</li>
-            <li>Nigeria</li>
-            <li>Norway</li>
-            <li>Oman</li>
-            <li>Pakistan</li>
-            <li>Palestinian Authority</li>
-            <li>Panama</li>
-            <li>Papua New Guinea</li>
-            <li>Paraguay</li>
-            <li>Peru</li>
-            <li>Philippines</li>
-            <li>Poland</li>
-            <li>Portugal</li>
-            <li>Qatar</li>
-            <li>Republic of Cabo Verde</li>
-            <li>Reunion</li>
-            <li>Romania</li>
-            <li>Rwanda</li>
-            <li>Saint Kitts and Nevis</li> 
-        </ul>
-    </td>
-    <td>
-        <ul>
-            <li>Saint Lucia</li>
-            <li>Saint Martin</li>
-            <li>Saint Vincent and the Grenadines</li>
-            <li>San marino</li>
-            <li>Saudi Arabia</li>
-            <li>Senegal</li>
-            <li>Serbia</li>
-            <li>Seychelles</li>
-            <li>Singapore</li>
-            <li>Sint Maarten</li>
-            <li>Slovakia</li>
-            <li>Slovenia</li>
-            <li>South Africa</li>
-            <li>Spain</li>
-            <li>Sri Lanka</li>
-            <li>Suriname</li>
-            <li>Sweden</li>
-            <li>Switzerland</li>
-            <li>Tanzania</li>
-            <li>Thailand</li>
-            <li>Timor-Leste</li>
-            <li>Togo</li>
-            <li>Tonga</li>
-            <li>Trinidad and Tobago</li>
-            <li>Tunisia</li>
-            <li>Turkey</li>
-            <li>Turks and Caicos Islands</li>
-            <li>Uganda</li>
-            <li>United Arab Emirates</li>
-            <li>United Kingdom</li>
-            <li>United States</li>
-            <li>Uruguay</li>
-            <li>Vatican City</li>
-            <li>Viet Nam</li>
-            <li>Virgin Islands, U.S.</li>
-            <li>Zambia</li>
-            <li>Zimbabwe<br>&nbsp;&nbsp;&nbsp;</li><br/>        </ul>
-    </td>
-   </tr>
-</table>
+
+- Afghanistan
+- Algeria
+- Andorra
+- Angola
+- Anguilla
+- Antigua and Barbuda
+- Argentina
+- Australia
+- Austria
+- Bahamas
+- Bahrain
+- Bangladesh
+- Barbados
+- Belgium
+- Belize
+- Bermuda
+- Benin
+- Bhutan
+- Bolivia
+- Bonaire
+- Botswana
+- Brunei Darussalam
+- Bulgaria
+- Burundi
+- Cambodia
+- Cameroon
+- Canada
+- Cayman Islands
+- Chile
+- Colombia
+- Comoros
+- Costa Rica
+- Côte D'ivoire
+- Croatia
+- Curçao
+- Cyprus
+- Czech Republic
+- Denmark
+- Dominican Republic
+- Ecuador
+- Egypt
+- El Salvador
+- Estonia
+- Ethiopia
+- Faroe Islands
+- Fiji
+- Finland
+- France
+- French Guiana
+- French Polynesia
+- Germany
+- Ghana
+- Greece
+- Greenland
+- Guadeloupe
+- Guatemala
+- Honduras
+- Hong Kong SAR
+- Hungary
+- Iceland
+- Indonesia
+- Iraq
+- Ireland
+- Israel
+- Italy
+- Jamaica
+- Japan
+- Jersey
+- Jordan
+- Kenya
+- Kuwait
+- Laos
+- Latvia
+- Lebanon
+- Libya
+- Liechtenstein
+- Lithuania
+- Luxembourg
+- Macedonia
+- Madagascar
+- Malawi
+- Malaysia
+- Maldives
+- Mali
+- Malta
+- Marshall Islands
+- Martinique
+- Mauritius
+- Mayotte
+- Mexico
+- Mongolia
+- Montenegro
+- Morocco
+- Mozambique
+- Myanamar
+- Namibia
+- Nepal
+- Netherlands
+- New Caledonia
+- New Zealand
+- Nicaragua
+- Nigeria
+- Norway
+- Oman
+- Pakistan
+- Palestinian Authority
+- Panama
+- Papua New Guinea
+- Paraguay
+- Peru
+- Philippines
+- Poland
+- Portugal
+- Qatar
+- Republic of Cabo Verde
+- Reunion
+- Romania
+- Rwanda
+- Saint Kitts and Nevis
+- Saint Lucia
+- Saint Martin
+- Saint Vincent and the Grenadines
+- San marino
+- Saudi Arabia
+- Senegal
+- Serbia
+- Seychelles
+- Singapore
+- Sint Maarten
+- Slovakia
+- Slovenia
+- South Africa
+- Spain
+- Sri Lanka
+- Suriname
+- Sweden
+- Switzerland
+- Tanzania
+- Thailand
+- Timor-Leste
+- Togo
+- Tonga
+- Trinidad and Tobago
+- Tunisia
+- Turkey
+- Turks and Caicos Islands
+- Uganda
+- United Arab Emirates
+- United Kingdom
+- United States
+- Uruguay
+- Vatican City
+- Viet Nam
+- Virgin Islands, U.S.
+- Zambia
+- Zimbabwe
+
 
 ### Support for free apps
 Customers in these markets can use Microsoft Store for Business and Education to acquire free apps:
@@ -374,7 +360,7 @@ This table summarize what customers can purchase, depending on which Microsoft S
 > [!NOTE]
 > **Microsoft Store for Education customers with support for free apps and Minecraft: Education Edition**
 > - Admins can acquire free apps from **Microsoft Store for Education**.
-> - Admins need to use an invoice to purchase **Minecraft: Education Edition**. For more information, see [Invoice payment option](https://docs.microsoft.com/education/windows/school-get-minecraft#invoices). 
+> - Admins need to use an invoice to purchase **Minecraft: Education Edition**. For more information, see [Invoice payment option](/education/windows/school-get-minecraft#invoices). 
 > - Teachers, or people with the Basic Purchaser role, can acquire free apps, but not **Minecraft: Education Edition**. 
 
 ## Privacy notice

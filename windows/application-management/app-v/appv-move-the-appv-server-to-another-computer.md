@@ -1,15 +1,15 @@
 ---
-title: How to Move the App-V Server to Another Computer (Windows 10)
+title: How to Move the App-V Server to Another Computer (Windows 10/11)
 description: Learn how to create a new management server console in your environment and learn how to connect it to the App-V database.
-author: lomayor
+author: aczechowski
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: dougeby
+ms.author: aaroncz
 ---
 
 
@@ -25,9 +25,9 @@ Use the following information to create a new management server console in your 
 
 Follow these steps to create a new management server console:
 
-1.  Install the management server on a computer in your environment. For more information about installing the management server see [Deploying the App-V server](appv-deploying-the-appv-server.md).
+1.  Install the management server on a computer in your environment. For more information about installing the management server, see [Deploying the App-V server](appv-deploying-the-appv-server.md).
 
-2.  After you have completed the installation, use the following link to connect it to the App-V database - [How to install the Management Server on a Standalone Computer and Connect it to the Database](appv-install-the-management-server-on-a-standalone-computer.md).
+2.  After you've completed the installation, use the following link to connect it to the App-V database - [How to install the Management Server on a Standalone Computer and Connect it to the Database](appv-install-the-management-server-on-a-standalone-computer.md).
 
 
 
