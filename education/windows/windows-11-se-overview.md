@@ -40,7 +40,6 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 
 | Application | Supported version | Apptype | Vendor |
 | --- | --- | --- | --- |
-
 |AirSecure	                            |8.0.0	|Win32  |AIR|
 |Brave Browser      	                |1.34.80|Win32	    |Brave|
 |Bulb Digital Portoflio              	|0.0.7.0|Store|Bulb|
