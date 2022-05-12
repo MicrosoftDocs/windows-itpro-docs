@@ -3,14 +3,14 @@ title: Creating a Custom Compatibility Fix in Compatibility Administrator (Windo
 description: The Compatibility Administrator tool uses the term fix to describe the combination of compatibility information added to a customized database for a specific application.
 ms.assetid: e4f2853a-0e46-49c5-afd7-0ed12f1fe0c2
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ---
 

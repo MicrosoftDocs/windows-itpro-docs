@@ -1,5 +1,5 @@
 ---
-title: Run the Automatically Generate Rules wizard (Windows 10)
+title: Run the Automatically Generate Rules wizard (Windows)
 description: This topic for IT professionals describes steps to run the wizard to create AppLocker rules on a reference device.
 ms.assetid: 8cad1e14-d5b2-437c-8f88-70cffd7b3d8e
 ms.reviewer: 
@@ -15,14 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Run the Automatically Generate Rules wizard
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for IT professionals describes steps to run the wizard to create AppLocker rules on a reference device.
 

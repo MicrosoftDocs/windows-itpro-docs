@@ -4,26 +4,26 @@ description: This section describes the EditionUpgrade settings that you can con
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: aaroncz
 ms.topic: article
 ms.date: 04/30/2018
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # EditionUpgrade (Windows Configuration Designer reference)
 
-Use to upgrade the edition of Windows 10 on the device. [Learn about Windows 10 edition upgrades.](https://docs.microsoft.com/windows/deployment/upgrade/windows-10-edition-upgrades)
+Use to upgrade the edition of Windows 10 on the device. [Learn about Windows 10 edition upgrades.](/windows/deployment/upgrade/windows-10-edition-upgrades)
 
 ## Applies to
 
-| Setting  | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [ChangeProductKey](#changeproductkey) | X  | X |  |  |  |
-| [UpgradeEditionWithLicense](#upgradeeditionwithlicense) | X  | X |  | X |  |
-| [UpgradeEditionWithProductKey](#upgradeeditionwithproductkey) | X  | X |  |  |  |
+| Setting  | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| [ChangeProductKey](#changeproductkey) | ✔️  |  |  |  |
+| [UpgradeEditionWithLicense](#upgradeeditionwithlicense) | ✔️  |  | ✔️ |  |
+| [UpgradeEditionWithProductKey](#upgradeeditionwithproductkey) | ✔️  |  |  |  |
 
 
 ## ChangeProductKey
@@ -46,4 +46,4 @@ After the device restarts, the edition upgrade process completes. The user will 
 
 ## Related topics
 
-- [WindowsLicensing configuration service provider (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/windowslicensing-csp)
+- [WindowsLicensing configuration service provider (CSP)](/windows/client-management/mdm/windowslicensing-csp)

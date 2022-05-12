@@ -1,0 +1,40 @@
+- name: Deploy Windows 10 with the Microsoft Deployment Toolkit (MDT)
+  items: 
+    - name: Get started with MDT
+      href: get-started-with-the-microsoft-deployment-toolkit.md
+    - name: Deploy Windows 10 with MDT
+      items: 
+        - name: Prepare for deployment with MDT
+          href: prepare-for-windows-deployment-with-mdt.md
+        - name: Create a Windows 10 reference image
+          href: create-a-windows-10-reference-image.md
+        - name: Deploy a Windows 10 image using MDT
+          href: deploy-a-windows-10-image-using-mdt.md
+        - name: Build a distributed environment for Windows 10 deployment
+          href: build-a-distributed-environment-for-windows-10-deployment.md
+        - name: Refresh a Windows 7 computer with Windows 10
+          href: refresh-a-windows-7-computer-with-windows-10.md
+        - name: Replace a Windows 7 computer with a Windows 10 computer
+          href: replace-a-windows-7-computer-with-a-windows-10-computer.md
+        - name: Perform an in-place upgrade to Windows 10 with MDT
+          href: upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md
+    - name: Customize MDT
+      items: 
+        - name: Configure MDT settings
+          href: configure-mdt-settings.md
+        - name: Set up MDT for BitLocker
+          href: set-up-mdt-for-bitlocker.md
+        - name: Configure MDT deployment share rules
+          href: configure-mdt-deployment-share-rules.md
+        - name: Configure MDT for UserExit scripts
+          href: configure-mdt-for-userexit-scripts.md
+        - name: Simulate a Windows 10 deployment in a test environment
+          href: simulate-a-windows-10-deployment-in-a-test-environment.md
+        - name: Use the MDT database to stage Windows 10 deployment information
+          href: use-the-mdt-database-to-stage-windows-10-deployment-information.md
+        - name: Assign applications using roles in MDT
+          href: assign-applications-using-roles-in-mdt.md
+        - name: Use web services in MDT
+          href: use-web-services-in-mdt.md
+        - name: Use Orchestrator runbooks with MDT
+          href: use-orchestrator-runbooks-with-mdt.md

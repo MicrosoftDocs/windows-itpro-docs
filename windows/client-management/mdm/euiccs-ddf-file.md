@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 03/02/2018
 ---
 
@@ -58,7 +58,7 @@ The XML below if for Windows 10, version 1803.
                 <AccessType>
                     <Get />
                 </AccessType>
-                <Description>Represents information associated with an eUICC. There is one subtree for each known eUICC, created by the Local Profile Assistant (LPA) when the eUICC is first seen. The node name is the eUICC ID (EID). The node name "Default" represents the currently active eUICC.</Description>
+                <Description>Represents information associated with an eUICC. There is one subtree for each known eUICC, created by the Local Profile Assistant (LPA) when the eUICC is first seen.  The node name is the eUICC ID (EID). The node name "Default" represents the currently active eUICC.</Description>
                 <DFFormat>
                     <node />
                 </DFFormat>

@@ -22,7 +22,7 @@ ms.date: 07/27/2017
 
 Group Policy preferences are less strict than Group Policy settings, based on:
 
-|    |Group Policy preferences |Group Policy settings |
+| Type   |Group Policy preferences |Group Policy settings |
 |-----|-------------------------|----------------------|
 |Enforcement |<ul><li>Not enforced</li><li>Has the user interface turned on</li><li>Can only be refreshed or applied once</li></ul> |<ul><li>Enforced</li><li>Has the user interface turned off</li><li>Can be refreshed multiple times</li></ul> |
 |Flexibility |Lets you create preference items for registry settings, files, and folders. |<ul><li>Requires app support</li><li>Needs you to create Administrative Templates for new policy settings</li><li>Won't let you create policy settings to manage files and folders</li></ul> |

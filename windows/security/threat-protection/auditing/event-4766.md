@@ -7,21 +7,17 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/07/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 4766(F): An attempt to add SID History to an account failed.
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
-
-This event generates when an attempt to add [SID History](https://msdn.microsoft.com/library/ms679833(v=vs.85).aspx) to an account failed.
+This event generates when an attempt to add [SID History](/windows/win32/adschema/a-sidhistory) to an account failed.
 
 See more information about SID History here: <https://technet.microsoft.com/library/cc779590(v=ws.10).aspx>.
 
@@ -68,4 +64,3 @@ There is no example of this event in this document.
 ## Security Monitoring Recommendations
 
 -   There is no recommendation for this event in this document.
-

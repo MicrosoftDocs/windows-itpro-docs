@@ -15,10 +15,10 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
-# Advanced security audit policy settings
+# Advanced security audit policy settings for Windows 10
 
 **Applies to**
 -   Windows 10
