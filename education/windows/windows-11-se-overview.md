@@ -43,7 +43,6 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 |AirSecure	                            |8.0.0	|Win32  |AIR|
 |Brave Browser      	                |1.34.80|Win32	    |Brave|
 |Bulb Digital Portfolio              	|0.0.7.0|Store|Bulb|
-|Secure Browser	                    |14.0.0	   |Win32     |Cambium Development|
 |Cisco Umbrella                      	|3.0.110.0	|Win32    |Cisco|
 |CKAuthenticator                        |3.6		|Win32    |Content Keeper|
 |Class Policy	                        |114.0.0	|Win32    |Class Policy|
@@ -80,6 +79,7 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 |Remote Help	                        |3.8.0.12	 |Win32   |Microsoft|
 |Respondus Lockdown Browser         	|2.0.8.05	 |Win32   |Respondus|
 |Safe Exam Browser                   	|3.3.2.413	  |Win32  |Safe Exam Browser|
+|Secure Browser	                    |14.0.0	   |Win32     |Cambium Development|
 |Secure Browser	                        |4.8.3.376	  |Win32  |Questar, Inc|
 |SensoCloud test	                    |2021.11.15.0	|Win32|Senso.Cloud|
 |SuperNova Magnifier & Screen Reader	|21.02	     |Win32   |Dolphin Computer Access|
