@@ -2,9 +2,6 @@
 title: How to convert a package created in a previous version of App-V (Windows 10/11)
 description: Use the package converter utility to convert a virtual application package created in a previous version of App-V.
 author: aczechowski
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 07/10/2018
 ms.reviewer: 
@@ -89,6 +86,6 @@ The App-V package converter will save the App-V 4.6 installation root folder and
 - Other functionality—Windows PowerShell has other built-in functionality for features such as aliases, lazy-binding, .NET Object, and many others. These features can help you create advanced scenarios for the Package Converter.
 
 
-## Related topics
+## Related articles
 
 - [Operations for App-V](appv-operations.md)
