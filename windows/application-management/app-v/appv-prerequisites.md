@@ -1,22 +1,20 @@
 ---
-title: App-V Prerequisites (Windows 10)
+title: App-V Prerequisites (Windows 10/11)
 description: Learn about the prerequisites you need before you begin installing Application Virtualization (App-V).
-author: lomayor
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
+author: aczechowski
 ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
-# App-V for Windows 10 prerequisites
 
->Applies to: Windows 10, version 1607
+# App-V for Windows client prerequisites
 
-Before installing App-V for Windows 10, ensure that you have installed all of the following required prerequisite software.
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
+
+Before installing App-V for Windows client, ensure that you have installed all of the following required prerequisite software.
 
 For a list of supported operating systems and hardware requirements for the App-V server, sequencer, and client, see [App-V Supported Configurations](appv-supported-configurations.md).
 
@@ -26,7 +24,7 @@ The following table indicates the software that is already installed for differe
 
 |Operating system|Prerequisite description|
 |---|---|
-|Windows 10|All prerequisite software is already installed.|
+|Windows 10/11|All prerequisite software is already installed.|
 |Windows 8.1|All prerequisite software is already installed.<br>If you're running Windows 8, upgrade to Windows 8.1 before using App-V.|
 |Windows Server 2016|The following prerequisite software is already installed:<br>- Microsoft .NET Framework 4.5<br>- Windows PowerShell 3.0<br><br>Installing Windows PowerShell requires a restart.|
 |Windows 7|No prerequisite software is installed. You must install the software before you can install App-V.|
@@ -99,7 +97,7 @@ The Management database is only required if you use the App-V Management server.
 |Custom database name (if applicable)|Unique database name.<br>Default: AppVManagement|
 |Management server location|Machine account on which the Management server is deployed.<br>Format to use: **Domain\MachineAccount**|
 |Management server installation administrator|Account used to install the Management server.<br>Format to use: **Domain\AdministratorLoginName**|
-|Microsoft SQL Server Service Agent|Configure the Management database computer so that the Microsoft SQL Server Agent service is restarted automatically. For instructions, see [Configure SQL Server Agent to restart services automatically](https://technet.microsoft.com/magazine/gg313742.aspx).|
+|Microsoft SQL Server Service Agent|Configure the Management database computer so that the Microsoft SQL Server Agent service is restarted automatically. For instructions, see [Configure SQL Server Agent to restart services automatically](/previous-versions/technet-magazine/gg313742(v=msdn.10)).|
 
 ### Publishing server prerequisite software
 
@@ -160,7 +158,7 @@ What to know before installing the prerequisites:
 |[Windows PowerShell 3.0](https://www.microsoft.com/download/details.aspx?id=34595)|Installing Windows PowerShell 3.0 requires a restart.|
 |[KB2533623](https://support.microsoft.com/kb/2533623)|Applies to Windows 7 only: download and install the KB.|
 
-## Related topics
+## Related articles
 
 * [Planning for App-V](appv-planning-for-appv.md)
 * [App-V Supported Configurations](appv-supported-configurations.md)

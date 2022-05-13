@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 06/28/2018
 ---
 
@@ -120,84 +120,6 @@ The XML below is for Windows 10, version 1809.
             </DFType>
           </DFProperties>
         </Node>
-        <Node>
-          <NodeName>Proxy</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>Optional node. The format is url:port. Configuration of the network proxy (if any).</Description>
-            <DFFormat>
-              <chr />
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <CaseSense>
-              <CIS />
-            </CaseSense>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>ProxyPacUrl</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-              <Add />
-              <Delete />
-              <Replace />
-            </AccessType>
-            <Description>Optional node. URL to the PAC file location.</Description>
-            <DFFormat>
-              <chr />
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <CaseSense>
-              <CIS />
-            </CaseSense>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>ProxyWPAD</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-              <Add />
-              <Delete />
-              <Replace />
-            </AccessType>
-            <Description>Optional node: The presence of the field enables WPAD for proxy lookup.</Description>
-            <DFFormat>
-              <bool />
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
       </Node>
     </Node>
   </Node>
@@ -206,15 +128,4 @@ The XML below is for Windows 10, version 1809.
 
 ## Related topics
 
-
 [WiFi configuration service provider](wifi-csp.md)
-
- 
-
- 
-
-
-
-
-
-

@@ -2,22 +2,19 @@
 title: 4953(F) Windows Firewall ignored a rule because it could not be parsed. (Windows 10)
 description: Describes security event 4953(F) Windows Firewall ignored a rule because it could not be parsed.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: windows-sec
 ---
 
 # 4953(F): Windows Firewall ignored a rule because it could not be parsed.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-4953.png" alt="Event 4953 illustration" width="449" height="375" hspace="10" align="left" />
@@ -93,11 +90,11 @@ It can happen if Windows Firewall rule registry entry was corrupted.
 
 -   **ID** \[Type = UnicodeString\]: the unique identifier for ignored firewall rule.
 
-    To see the unique ID of the rule you need to navigate to “**HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\SharedAccess\\Parameters\\FirewallPolicy\\FirewallRules”** registry key and you will see the list of Windows Firewall rule IDs (Name column) with parameters:
+    To see the unique ID of the rule, navigate to the “**HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\SharedAccess\\Parameters\\FirewallPolicy\\FirewallRules”** registry key and you will see the list of Windows Firewall rule IDs (Name column) with parameters:
 
 <img src="images/registry-editor-firewallrules.png" alt="Registry Editor FirewallRules key illustration" width="1412" height="422" />
 
--   **Name** \[Type = UnicodeString\]: the name of the rule which was ignored. You can see the name of Windows Firewall rule using Windows Firewall with Advanced Security management console (**wf.msc**), check “Name” column:
+-   **Name** \[Type = UnicodeString\]: the name of the rule that was ignored. You can see the name of Windows Firewall rule using Windows Firewall with Advanced Security management console (**wf.msc**), check “Name” column:
 
 <img src="images/windows-firewall-with-advanced-security.png" alt="Windows Firewall with Advanced Security illustration" width="1082" height="363" />
 

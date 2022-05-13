@@ -1,12 +1,12 @@
 ---
 title: Evaluate Virtual Smart Card Security (Windows 10)
 description: This topic for the IT professional describes security characteristics and considerations when deploying TPM virtual smart cards.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
@@ -28,7 +28,7 @@ A crucial aspect of TPM virtual smart cards is their ability to securely store a
 
 The following diagram illustrates the secure key hierarchy and the process of accessing the user key.
 
-![Diagram of the process of accessing the user key](images/vsc-process-of-accessing-user-key.png)
+![Diagram of the process of accessing the user key.](images/vsc-process-of-accessing-user-key.png)
 
 The following keys are stored on the hard disk:
 

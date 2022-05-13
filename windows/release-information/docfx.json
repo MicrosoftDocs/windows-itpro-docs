@@ -35,13 +35,23 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "recommendations": true,
       "breadcrumb_path": "/windows/release-information/breadcrumb/toc.json",
       "ms.prod": "w10",
       "ms.date": "4/30/2019",
       "audience": "ITPro",
       "titleSuffix": "Windows Release Information",
       "extendBreadcrumb": true,
-      "feedback_system": "None"
+      "feedback_system": "None",
+      "contributors_to_exclude": [
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ]
     },
     "fileMetadata": {},
     "template": [],

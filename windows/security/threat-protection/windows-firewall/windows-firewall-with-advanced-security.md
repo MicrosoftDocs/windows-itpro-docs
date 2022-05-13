@@ -1,7 +1,7 @@
 ---
-title: Windows Defender Firewall with Advanced Security (Windows 10)
+title: Windows Defender Firewall with Advanced Security (Windows)
 description: Learn overview information about the Windows Defender Firewall with Advanced Security (WFAS) and Internet Protocol security (IPsec) features.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,17 +12,18 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 10/21/2020
+ms.date: 09/08/2021
 ms.reviewer: 
 ms.custom: asr
+ms.technology: windows-sec
 ---
 
 # Windows Defender Firewall with Advanced Security
 
 **Applies to**
-- Windows 10
-- Windows Server 2016
-- Windows Server 2019
+-   Windows 10
+-   Windows 11
+-   Windows Server 2016 and above
 
 This is an overview of the Windows Defender Firewall with Advanced Security (WFAS) and Internet Protocol security (IPsec) features.
 
