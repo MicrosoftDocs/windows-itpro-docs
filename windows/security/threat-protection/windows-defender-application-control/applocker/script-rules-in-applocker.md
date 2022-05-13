@@ -1,5 +1,5 @@
 ---
-title: Script rules in AppLocker (Windows 10)
+title: Script rules in AppLocker (Windows)
 description: This topic describes the file formats and available default rules for the script rule collection.
 ms.assetid: fee24ca4-935a-4c5e-8a92-8cf1d134d35f
 ms.reviewer: 
@@ -15,14 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Script rules in AppLocker
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic describes the file formats and available default rules for the script rule collection.
 

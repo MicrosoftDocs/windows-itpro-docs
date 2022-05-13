@@ -7,21 +7,17 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/09/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 6406(-): %1 registered to Windows Firewall to control filtering for the following: %2.
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
-
-[BranchCache](https://technet.microsoft.com/library/dd425028.aspx) events are outside the scope of this document.
+[BranchCache](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj127252(v=ws.11)) events are outside the scope of this document.
 
 There is no example of this event in this document.
 
@@ -42,4 +38,3 @@ There is no example of this event in this document.
 ## Security Monitoring Recommendations
 
 -   There is no recommendation for this event in this document.
-

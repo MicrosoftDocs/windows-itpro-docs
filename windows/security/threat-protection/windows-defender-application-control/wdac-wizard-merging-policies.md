@@ -16,7 +16,7 @@ ms.author: dansimp
 manager: dansimp
 ms.topic: conceptual
 ms.date: 10/14/2020
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Merging existing policies with the WDAC Wizard
@@ -30,4 +30,4 @@ Select the policies you wish to merge into one policy using the `+ Add Policy` b
 
 Lastly, select a filepath save location for the final merged policy using the `Browse` button. If a minimum of two policies are selected, and the save location is specified, select the `Next` button to build the policy. 
 
-![Merging WDAC policies into a final WDAC policy](images/wdac-wizard-merge.png)
+![Merging WDAC policies into a final WDAC policy.](images/wdac-wizard-merge.png)

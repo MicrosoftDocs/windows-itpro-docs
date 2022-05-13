@@ -4,13 +4,13 @@ description: This section describes the Licensing settings that you can configur
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: aaroncz
 ms.topic: article
 ms.date: 09/06/2017
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # Licensing (Windows Configuration Designer reference)
@@ -19,10 +19,10 @@ Use for settings related to Microsoft licensing programs.
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [AllowWindowsEntitlementReactivation](#allowwindowsentitlementreactivation) | X  |  |  |  |  |
-| [DisallowKMSClientOnlineAVSValidation](#disallowkmsclientonlineavsvalidation) | X  |  |  |  |  |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| [AllowWindowsEntitlementReactivation](#allowwindowsentitlementreactivation) | ✔️  |  |  |  |
+| [DisallowKMSClientOnlineAVSValidation](#disallowkmsclientonlineavsvalidation) | ✔️  |  |  |  |
 
 ## AllowWindowsEntitlementReactivation
 

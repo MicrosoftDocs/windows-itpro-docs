@@ -7,18 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 5152(F): The Windows Filtering Platform blocked a packet.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-5152.png" alt="Event 5152 illustration" width="497" height="499" hspace="10" align="left" />
@@ -27,7 +23,7 @@ ms.technology: mde
 
 ***Event Description:***
 
-This event generates when [Windows Filtering Platform](https://msdn.microsoft.com/library/windows/desktop/aa366510(v=vs.85).aspx) has blocked a network packet.
+This event generates when [Windows Filtering Platform](/windows/win32/fwp/windows-filtering-platform-start-page) has blocked a network packet.
 
 This event is generated for every received network packet.
 
@@ -159,7 +155,7 @@ This event is generated for every received network packet.
 
     <img src="images/filters-xml-file.png" alt="Filters.xml file illustration" width="840" height="176" />
 
--   **Layer Name** \[Type = UnicodeString\]: [Application Layer Enforcement](https://msdn.microsoft.com/library/windows/desktop/aa363971(v=vs.85).aspx) layer name.
+-   **Layer Name** \[Type = UnicodeString\]: [Application Layer Enforcement](/windows/win32/fwp/application-layer-enforcement--ale-) layer name.
 
 -   **Layer Run-Time ID** \[Type = UInt64\]: Windows Filtering Platform layer identifier. To find a specific Windows Filtering Platform layer ID, run the following command: **netsh wfp show state**. As a result of this command **wfpstate.xml** file will be generated. Open this file and find specific substring with required layer ID (**&lt;layerId&gt;**)**,** for example:
 
@@ -188,4 +184,3 @@ For 5152(F): The Windows Filtering Platform blocked a packet.
 -   Monitor for all connections with a “**Protocol Number”** that is not typical for this device or computer, for example, anything other than 1, 6, or 17.
 
 -   If the computer’s communication with “**Destination Address”** should always use a specific “**Destination Port**,**”** monitor for any other “**Destination Port**.”
-

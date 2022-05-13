@@ -1,5 +1,5 @@
 ---
-title: Export an AppLocker policy to an XML file (Windows 10)
+title: Export an AppLocker policy to an XML file (Windows)
 description: This topic for IT professionals describes the steps to export an AppLocker policy to an XML file for review or testing.
 ms.assetid: 979bd23f-6815-478b-a6a4-a25239cb1080
 ms.reviewer: 
@@ -15,14 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Export an AppLocker policy to an XML file
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for IT professionals describes the steps to export an AppLocker policy to an XML file for review or testing.
 Membership in the local **Administrators** group, or equivalent, is the minimum required to complete this procedure.
