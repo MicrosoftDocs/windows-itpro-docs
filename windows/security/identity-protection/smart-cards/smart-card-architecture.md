@@ -1,7 +1,7 @@
 ---
-title: Smart Card Architecture (Windows 10)
+title: Smart Card Architecture (Windows)
 description: This topic for the IT professional describes the system architecture that supports smart cards in the Windows operating system.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -12,13 +12,13 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 04/19/2017
+ms.date: 09/24/2021
 ms.reviewer: 
 ---
 
 # Smart Card Architecture
 
-Applies To: Windows 10, Windows Server 2016
+Applies To: Windows 10, Windows 11, Windows Server 2016 and above
 
 This topic for the IT professional describes the system architecture that supports smart cards in the Windows operating system, including credential provider architecture and the smart card subsystem architecture.
 
@@ -33,7 +33,7 @@ For smart cards, Windows supports a provider architecture that meets the secure 
 -   [Smart card subsystem architecture](#smart-card-subsystem-architecture)
 
 <!-- This link probably won't stay current. If it seems useful, it could be un-commented.
-For more information, see [Windows Authentication Architecture](https://technet.microsoft.com/library/dn751044(v=ws.11).aspx). This topic in the Windows Authentication Technical Overview explains the basic architectural scheme for Windows authentication for past and current versions of Windows.
+For more information, see [Windows Authentication Architecture](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn751044(v=ws.11)). This topic in the Windows Authentication Technical Overview explains the basic architectural scheme for Windows authentication for past and current versions of Windows.
 -->
 
 ## Credential provider architecture
@@ -52,7 +52,7 @@ Interactive sign-in in Windows begins when the user presses CTRL+ALT+DEL. The CT
 
 After receiving the SAS, the UI then generates the sign-in tile from the information received from the registered credential providers. The following graphic shows the architecture for credential providers in the Windows operating system.
 
-![Credential provider architecture](images/sc-image201.gif)
+![Credential provider architecture.](images/sc-image201.gif)
 
 **Figure 1**&nbsp;&nbsp;**Credential provider architecture**
 
@@ -82,13 +82,13 @@ Credential providers must be registered on a computer running Windows, and they 
 
 ## Smart card subsystem architecture
 
-Vendors provide smart cards and smart card readers, and in many cases the vendors are different for the smart card and the smart card reader. Drivers for smart card readers are written to the [Personal Computer/Smart Card (PC/SC) standard](https://www.pcscworkgroup.com/). Each smart card must have a Cryptographic Service Provider (CSP) that uses the CryptoAPI interfaces to enable cryptographic operations, and the WinSCard APIs to enable communications with smart card hardware.
+Vendors provide smart cards and smart card readers, and in many cases the vendors are different for the smart card and the smart card reader. Drivers for smart card readers are written to the [Personal Computer/Smart Card (PC/SC) standard](https://pcscworkgroup.com/). Each smart card must have a Cryptographic Service Provider (CSP) that uses the CryptoAPI interfaces to enable cryptographic operations, and the WinSCard APIs to enable communications with smart card hardware.
 
 ### Base CSP and smart card minidriver architecture
 
 Figure 2 illustrates the relationship between the CryptoAPI, CSPs, the Smart Card Base Cryptographic Service Provider (Base CSP), and smart card minidrivers.
 
-![Base CSP and smart card minidriver architecture](images/sc-image203.gif)
+![Base CSP and smart card minidriver architecture.](images/sc-image203.gif)
 
 **Figure 2**&nbsp;&nbsp;**Base CSP and smart card minidriver architecture**
 
@@ -236,7 +236,7 @@ Applications can call the Base CSP with CRYPT\_DEFAULT\_CONTAINER\_OPTIONAL, set
 
 In some of the following scenarios, the user can be prompted to insert a smart card. If the user context is silent, this operation fails and no UI is displayed. Otherwise, in response to the UI, the user can insert a smart card or click **Cancel**. If the user cancels the operation, the operation fails. The flow chart in Figure 3 shows the selection steps performed by the Windows operating system.
 
-![Smart card selection process](images/sc-image205.png)
+![Smart card selection process.](images/sc-image205.png)
 
 **Figure 3**&nbsp;&nbsp;**Smart card selection behavior**
 
@@ -314,7 +314,7 @@ For other operations, the caller may be able to acquire a "verify" context again
 
 Figure 4 shows the Cryptography architecture that is used by the Windows operating system.
 
-![Cryptography architecture](images/sc-image206.gif)
+![Cryptography architecture.](images/sc-image206.gif)
 
 **Figure 4**&nbsp;&nbsp;**Cryptography architecture**
 
@@ -342,4 +342,4 @@ If a smart card is registered by a CSP and a smart card minidriver, the one that
 
 CSPs and KSPs are meant to be written only if specific functionality is not available in the current smart card minidriver architecture. For example, the smart card minidriver architecture supports hardware security modules, so a minidriver could be written for a hardware security module, and a CSP or KSP may not be required unless it is needed to support algorithms that are not implemented in the Base CSP or smart card KSP.
 
-For more information about how to write a smart card minidriver, CSP, or KSP, see [Smart Card Minidrivers](https://msdn.microsoft.com/windows/hardware/drivers/smartcard/smart-card-minidrivers).
+For more information about how to write a smart card minidriver, CSP, or KSP, see [Smart Card Minidrivers](/windows-hardware/drivers/smartcard/smart-card-minidrivers).

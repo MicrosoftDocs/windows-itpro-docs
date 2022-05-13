@@ -4,12 +4,12 @@ description: This section describes the NetworkProxy settings that you can confi
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: aaroncz
 ms.topic: article
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # NetworkProxy (Windows Configuration Designer reference)
@@ -18,9 +18,9 @@ Use for settings related to NetworkProxy.
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| All settings |   |  | X |  |  |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| All settings |   | ✔️ |  |  |
 
 
 ## AutoDetect
@@ -50,4 +50,4 @@ Address to the PAC script you want to use.
 
 ## Related topics
 
-- [NetworkProxy configuration service provider (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/networkproxy-csp)
+- [NetworkProxy configuration service provider (CSP)](/windows/client-management/mdm/networkproxy-csp)
