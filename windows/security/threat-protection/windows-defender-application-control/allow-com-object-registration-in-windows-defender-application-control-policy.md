@@ -164,7 +164,7 @@ To add this CLSID to the existing policy, follow these steps:
     ```
 ### Default COM Object Allow List
 
-
+The table below describes the list of COM objects that are inherently trusted in Windows Defender Application Control. Objects in this list do not need to be allowlisted in your WDAC policies. They can be denied by creating explicit deny rules in your WDAC policy.
 
 | File Name | CLSID |
 |--------|-----------|
