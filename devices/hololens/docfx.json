@@ -30,11 +30,12 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "recommendations": true,
       "breadcrumb_path": "/hololens/breadcrumb/toc.json",
       "ms.technology": "windows",
       "ms.topic": "article",
       "audience": "ITPro",
-      "manager": "laurawi",
+      "manager": "dansimp",
       "ms.date": "04/05/2017",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
@@ -45,7 +46,16 @@
           "folder_relative_path_in_docset": "./"
         } 
           
-        }
+        },
+      "contributors_to_exclude": [
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ]
     },
     "fileMetadata": {},
     "template": [],

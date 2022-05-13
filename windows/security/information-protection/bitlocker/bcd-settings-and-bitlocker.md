@@ -3,7 +3,7 @@ title: BCD settings and BitLocker (Windows 10)
 description: This topic for IT professionals describes the BCD settings that are used by BitLocker.
 ms.assetid: c4ab7ac9-16dc-4c7e-b061-c0b0deb2c4fa
 ms.reviewer: 
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
@@ -21,11 +21,14 @@ ms.custom: bitlocker
 # Boot Configuration Data settings and BitLocker
 
 **Applies to**
--   Windows 10
 
-This topic describes the Boot Configuration Data (BCD) settings that are used by BitLocker.
+-   Windows 10
+-   Windows 11
+-   Windows Server 2016 and above
 
-When protecting data at rest on an operating system volume, during the boot process, BitLocker verifies that the security sensitive BCD settings have not changed since BitLocker was last enabled, resumed, or recovered.
+This topic for IT professionals describes the Boot Configuration Data (BCD) settings that are used by BitLocker.
+
+When protecting data at rest on an operating system volume, during the boot process BitLocker verifies that the security sensitive BCD settings have not changed since BitLocker was last enabled, resumed, or recovered.
 
 ## BitLocker and BCD Settings
 
@@ -70,7 +73,8 @@ For example, either “`winload:hypervisordebugport`” or “`winload:0x250000f
 
 A setting that applies to all boot applications may be applied only to an individual application; however, the reverse is not true. For example, one can specify either “`all:locale`” or “`winresume:locale`”, but as the BCD setting “`win-pe`” does not apply to all boot applications, “`winload:winpe`” is valid, but “`all:winpe`” is not valid. The setting that controls boot debugging (“`bootdebug`” or 0x16000010) will always be validated and will have no effect if it is included in the provided fields.
 
-> **Note:**  Take care when configuring BCD entries in the group policy setting. The Local Group Policy Editor does not validate the correctness of the BCD entry. BitLocker will fail to be enabled if the specified group policy setting is invalid.
+> [!NOTE]
+> Take care when configuring BCD entries in the Group Policy setting. The Local Group Policy Editor does not validate the correctness of the BCD entry. BitLocker will fail to be enabled if the Group Policy setting specified is invalid.
  
 ### Default BCD validation profile
 
@@ -106,8 +110,10 @@ The following table contains the default BCD validation profile used by BitLocke
 
 ### Full list of friendly names for ignored BCD settings
 
-The following is a full list of BCD settings with friendly names which are ignored by default. These settings are not part of the default BitLocker validation profile, but can be added if you see a need to validate any of these settings before allowing a BitLocker–protected operating system drive to be unlocked.
-> **Note:**  Additional BCD settings exist that have hex values but do not have friendly names. These settings are not included in this list.
+This following is a full list of BCD settings with friendly names, which are ignored by default. These settings are not part of the default BitLocker validation profile, but can be added if you see a need to validate any of these settings before allowing a BitLocker–protected operating system drive to be unlocked.
+
+> [!NOTE]
+> Additional BCD settings exist that have hex values but do not have friendly names. These settings are not included in this list.
 
 | Hex Value | Prefix | Friendly Name |
 | - | - | - |

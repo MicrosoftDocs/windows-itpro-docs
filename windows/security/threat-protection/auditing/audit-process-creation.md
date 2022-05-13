@@ -6,26 +6,23 @@ ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 03/16/2022
+ms.technology: windows-sec
 ---
 
 # Audit Process Creation
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 Audit Process Creation determines whether the operating system generates audit events when a process is created (starts).
 
 These audit events can help you track user activity and understand how a computer is being used. Information includes the name of the program or the user that created the process.
 
-**Event volume**: Low to Medium, depending on system usage.
+**Event volume**: Medium to High, depending on the process activity on the computer.
 
 This subcategory allows you to audit events generated when a process is created or starts. The name of the application and user that created the process is also audited.
 

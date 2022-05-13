@@ -2,22 +2,19 @@
 title: 5145(S, F) A network share object was checked to see whether client can be granted desired access. (Windows 10)
 description: Describes security event 5145(S, F) A network share object was checked to see whether client can be granted desired access.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: windows-sec
 ---
 
 # 5145(S, F): A network share object was checked to see whether client can be granted desired access.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-5145.png" alt="Event 5145 illustration" width="591" height="671" hspace="10" align="left" />
@@ -95,7 +92,7 @@ This event generates every time network share object (file or folder) was access
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -150,7 +147,7 @@ This event generates every time network share object (file or folder) was access
 | AppendData (or AddSubdirectory or CreatePipeInstance)     | 0x4,<br>%%4418             | **AppendData -** For a file object, the right to append data to the file. (For local files, write operations will not overwrite existing data if this flag is specified without **FILE\_WRITE\_DATA**.) For a directory object, the right to create a subdirectory (**FILE\_ADD\_SUBDIRECTORY**). <br>**AddSubdirectory -** For a directory, the right to create a subdirectory.<br>**CreatePipeInstance -** For a named pipe, the right to create a pipe.                                                                                                                       |
 | ReadEA                                                    | 0x8,<br>%%4419             | The right to read extended file attributes.                                                                                                                             |
 | WriteEA                                                   | 0x10,<br>%%4420            | The right to write extended file attributes.                                                                                                                            |
-| Execute/Traverse                                          | 0x20,<br>%%4421            | **Execute** - For a native code file, the right to execute the file. This access right given to scripts may cause the script to be executable, depending on the script interpreter.<br>**Traverse -** For a directory, the right to traverse the directory. By default, users are assigned the **BYPASS\_TRAVERSE\_CHECKING**&thinsp; [privilege](https://msdn.microsoft.com/library/windows/desktop/aa379306(v=vs.85).aspx), which ignores the **FILE\_TRAVERSE**&thinsp; [access right](https://msdn.microsoft.com/library/windows/desktop/aa374902(v=vs.85).aspx). See the remarks in [File Security and Access Rights](https://msdn.microsoft.com/library/windows/desktop/aa364399(v=vs.85).aspx) for more information.                                            |
+| Execute/Traverse                                          | 0x20,<br>%%4421            | **Execute** - For a native code file, the right to execute the file. This access right given to scripts may cause the script to be executable, depending on the script interpreter.<br>**Traverse -** For a directory, the right to traverse the directory. By default, users are assigned the **BYPASS\_TRAVERSE\_CHECKING**&thinsp; [privilege](/windows/win32/secauthz/privileges), which ignores the **FILE\_TRAVERSE**&thinsp; [access right](/windows/win32/secauthz/access-rights-and-access-masks). See the remarks in [File Security and Access Rights](/windows/win32/fileio/file-security-and-access-rights) for more information.                                            |
 | DeleteChild                                               | 0x40,<br>%%4422            | For a directory, the right to delete a directory and all the files it contains, including read-only files.                                                                                                                                                                                                     |
 | ReadAttributes                                            | 0x80,<br>%%4423            | The right to read file attributes.                                                                                                                                                                                                                                                                             |
 | WriteAttributes                                           | 0x100,<br>%%4424           | The right to write file attributes.                                                                                                                                     |
@@ -322,6 +319,3 @@ For 5145(S, F): A network share object was checked to see whether client can be 
     -   WRITE\_DAC
 
     -   WRITE\_OWNER
-
-
-

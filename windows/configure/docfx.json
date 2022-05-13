@@ -3,7 +3,8 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+          "**/*.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -30,13 +31,23 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "recommendations": true,
       "feedback_system": "None",
       "hideEdit": true,
       "_op_documentIdPathDepotMapping": {
         "./": {
           "depot_name": "MSDN.windows-configure"
         }
-      }
+      },
+      "contributors_to_exclude": [
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ]
     },
     "fileMetadata": {},
     "template": [],

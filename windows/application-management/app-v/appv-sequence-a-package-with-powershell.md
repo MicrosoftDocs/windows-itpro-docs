@@ -1,22 +1,17 @@
 ---
-title: How to sequence a package by using Windows PowerShell (Windows 10)
+title: How to sequence a package by using Windows PowerShell (Windows 10/11)
 description: Learn how to sequence a new Microsoft Application Virtualization (App-V) package by using Windows PowerShell.
-author: lomayor
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
+author: aczechowski
 ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: dougeby
+ms.author: aaroncz
 ---
-
 
 # How to Sequence a Package by using Windows PowerShell
 
-**Applies to**
--   Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 Use the following procedure to create a new App-V package using Windows PowerShell.
 
@@ -26,7 +21,7 @@ Use the following procedure to create a new App-V package using Windows PowerShe
  
 **To create a new virtual application by using Windows PowerShell**
 
-1.  Install the App-V sequencer. For more information about installing the sequencer see [How to Install the Sequencer](appv-install-the-sequencer.md).
+1.  Install the App-V sequencer. For more information about installing the sequencer, see [How to Install the Sequencer](appv-install-the-sequencer.md).
 
 2.  Click **Start** and type **Windows PowerShell**. Right-click **Windows PowerShell**, and select **Run as Administrator**.
 
@@ -63,12 +58,12 @@ The following list displays additional optional parameters that can be used with
 
 -   FullLoad - specifies that the package must be fully downloaded to the computer running the App-V before it can be opened.
 
-In Windows 10, version 1703, running the new-appvsequencerpackage or the update-appvsequencepackage cmdlets automatically captures and stores all of your customizations as an App-V project template. If you want to make changes to this package later, your customizations are automatically loaded from this template file. 
+Starting with Windows 10 version 1703, the `new-appvsequencerpackage` or the `update-appvsequencepackage` cmdlets automatically capture and store all of your customizations as an App-V project template. If you want to make changes to this package later, your customizations are automatically loaded from this template file. 
 
 > [!IMPORTANT]
 > If you have an auto-saved template and you attempt to load another template through the _TemplateFilePath_ parameter, the customization value from the parameter will override the auto-saved template. 
 
-## Related topics
+## Related articles
 
 - [Administering App-V by using Windows PowerShell](appv-administering-appv-with-powershell.md)
 
