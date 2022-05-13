@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 08/15/2018
 ---
 
@@ -17,14 +17,31 @@ ms.date: 08/15/2018
 > [!WARNING]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-The WindowsLicensing configuration service provider is designed for licensing related management scenarios. Currently the scope is limited to edition upgrades of Windows 10 desktop and mobile devices, such as Windows 10 Pro to Windows 10 Enterprise. In addition, this CSP provides the capability to activate or change the product key of Windows 10 desktop devices.
+The WindowsLicensing configuration service provider is designed for licensing related management scenarios. Currently the scope is limited to edition upgrades of Windows 10 client devices, such as Windows 10 Pro to Windows 10 Enterprise. In addition, this CSP provides the capability to activate or change the product key of Windows 10 client devices.
 
-The following diagram shows the WindowsLicensing configuration service provider in tree format.
+The following example shows the WindowsLicensing configuration service provider in tree format.
 
-![windowslicensing csp diagram](images/provisioning-csp-windowslicensing.png)
-
+```console
+./Vendor/MSFT
+WindowsLicensing
+----UpgradeEditionWithProductKey
+----ChangeProductKey
+----Edition
+----Status
+----LicenseKeyType
+----CheckApplicability
+----ChangeProductKey (Added in Windows 10, version 1703)
+----Subscriptions (Added in Windows 10, version 1607)
+--------SubscriptionId (Added in Windows 10, version 1607)
+------------Status (Added in Windows 10, version 1607)
+------------Name (Added in Windows 10, version 1607)
+----SMode (Added in Windows 10, version 1809)
+--------SwitchingPolicy (Added in Windows 10, version 1809)
+--------SwitchFromSMode (Added in Windows 10, version 1809)
+--------Status (Added in Windows 10, version 1809)
+```
 <a href="" id="--device-vendor-msft-windowslicensing"></a>**./Device/Vendor/MSFT/WindowsLicensing**  
-This is the root node for the WindowsLicensing configuration service provider.
+This node is the root node for the WindowsLicensing configuration service provider.
 
 The supported operation is Get.
 
@@ -53,7 +70,7 @@ If a product key is entered in a provisioning package and the user begins instal
 
 After the device restarts, the edition upgrade process completes. The user will receive a notification of the successful upgrade.
 
-This node can also be used to activate or change a product key on a particular edition of Windows 10 desktop device by entering a product key. Activation or changing a product key does not require a reboot and is a silent process for the user.
+This node can also be used to activate or change a product key on a particular edition of Windows 10 desktop device by entering a product key. Activation or changing a product key doesn't require a reboot and is a silent process for the user.
 
 > [!IMPORTANT]
 > The product key entered must be 29 characters (that is, it should include dashes), otherwise the activation, edition upgrade, or product key change on Windows 10 desktop devices will fail. The product key is acquired from Microsoft Volume Licensing Service Center. Your organization must have a Volume Licensing contract with Microsoft to access the portal.
@@ -75,14 +92,14 @@ Activation or changing a product key can be carried out on the following edition
 -   Windows 10 Pro
 
 <a href="" id="edition"></a>**Edition**  
-Returns a value that maps to the Windows 10 edition running on desktop or mobile devices. Take the value, convert it into its hexadecimal equivalent and search the GetProductInfo function page on MSDN for edition information.
+Returns a value that maps to the Windows 10 edition. Take the value, convert it into its hexadecimal equivalent and search the GetProductInfo function page on MSDN for edition information.
 
 The data type is an Int.
 
 The supported operation is Get.
 
 <a href="" id="status"></a>**Status**  
-Returns the status of an edition upgrade on Windows 10 desktop or mobile devices. The status corresponds to one of the following values:
+Returns the status of an edition upgrade on Windows devices. The status corresponds to one of the following values:
 
 -   0 = Failed
 -   1 = Pending
@@ -94,13 +111,13 @@ The data type is an Int.
 
 The supported operation is Get.
 
+<!-- 12.16.2021 mandia: Commenting out this section, as it appears specific to Windows 10 Mobile. 
+
 <a href="" id="upgradeeditionwithlicense"></a>**UpgradeEditionWithLicense**  
-Provides a license for an edition upgrade of Windows 10 mobile devices.
+Provides a license for an edition upgrade of Windows 10 devices.
 
 > [!NOTE]
-> This upgrade process does not require a system restart.
-
- 
+> This upgrade process doesn't require a system restart. 
 
 The date type is XML.
 
@@ -109,8 +126,6 @@ The supported operation is Execute.
 > [!IMPORTANT]
 > The XML license file contents must be properly escaped (that is, it should not simply be a copied XML), otherwise the edition upgrade on Windows 10 mobile devices will fail. For more information on proper escaping of the XML license file, see Section 2.4 of the [W3C XML spec](http://www.w3.org/TR/xml/) . The XML license file is acquired from the Microsoft Volume Licensing Service Center. Your organization must have a Volume Licensing contract with Microsoft to access the portal.
 
- 
-
 The following are valid edition upgrade paths when using this node through an MDM or provisioning package:
 
 -   Windows 10 Mobile to Windows 10 Mobile Enterprise
@@ -118,11 +133,12 @@ The following are valid edition upgrade paths when using this node through an MD
 > [!Warning]
 > Edition upgrades do not support Volume Licence (VL) keys.
 
+-->
+
 <a href="" id="licensekeytype"></a>**LicenseKeyType**  
 Returns the parameter type used by Windows 10 devices for an edition upgrade, activation, or product key change.
 
--   Windows 10 for desktop devices require a product key.
--   Windows 10 Mobile devices require a XML license file for an edition upgrade.
+- Windows 10 client devices require a product key.
 
 The data type is a chr.
 
@@ -136,7 +152,7 @@ The data type is a chr.
 The supported operation is Exec.
 
 <a href="" id="changeproductkey"></a>**ChangeProductKey**  
-Added in Windows 10, version 1703. Installs a product key for Windows 10 desktop devices. Does not reboot.
+Added in Windows 10, version 1703. Installs a product key for Windows 10 desktop devices. Doesn't reboot.
 
 The data type is a chr.
 
@@ -175,7 +191,7 @@ Supported values:
 -  1 - User Blocked: The admin has blocked the user from switching their device out of S mode. Only the admin can switch the device out of S mode through the SMode/SwitchFromSMode node.
 
 <a href="" id="smode-switchfromsmode"></a>**SMode/SwitchFromSMode**  
-Added in Windows 10, version 1809. Switches a device out of S mode if possible. Does not reboot. For an example, see [Execute SwitchFromSMode](#smode-switchfromsmode-execute)
+Added in Windows 10, version 1809. Switches a device out of S mode if possible. Doesn't reboot. For an example, see [Execute SwitchFromSMode](#smode-switchfromsmode-execute)
 
 Supported operation is Execute.
 
@@ -300,7 +316,7 @@ Values:
 > [!NOTE]
 > `XXXXX-XXXXX-XXXXX-XXXXX-XXXXX` in the **Data** tag should be replaced with your product key.
 
- 
+<!-- 12.16.2021 mandia: Commenting out this section, as it appears specific to Windows 10 Mobile.  
 
 **UpgradeEditionWithLicense**
 
@@ -316,17 +332,18 @@ Values:
         <Meta>
           <Format xmlns="syncml:metinf">chr</Format>
         </Meta>
-        <Data><!-- XML ENCODED LICENSE GOES HERE --></Data>
+        <Data>YOUR XML ENCODED LICENSE GOES HERE</Data>
       </Item>
     </Exec>
     <Final/>
   </SyncBody>
 </SyncML>
 ```
+-->
 
 <a href="" id="smode-status-example"></a>**Get S mode status**
 
-```
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Get>
@@ -346,7 +363,7 @@ Values:
 
 <a href="" id="smode-switchfromsmode-execute"></a>**Execute SwitchFromSMode**
 
-```
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Exec>
@@ -371,7 +388,7 @@ Values:
 
 <a href="" id="smode-switchingpolicy-add"></a>**Add S mode SwitchingPolicy**
 
-```
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Add>
@@ -396,7 +413,7 @@ Values:
 
 <a href="" id="smode-switchingpolicy-get"></a>**Get S mode SwitchingPolicy**
 
-```
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Get>
@@ -416,7 +433,7 @@ Values:
 
 <a href="" id="smode-switchingpolicy-replace"></a>**Replace S mode SwitchingPolicy**
 
-```
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
@@ -441,7 +458,7 @@ Values:
 
 <a href="" id="smode-switchingpolicy-delete"></a>**Delete S mode SwitchingPolicy**
 
-```
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Delete>
@@ -458,17 +475,7 @@ Values:
   </SyncBody>
 </SyncML>
 ```
+
 ## Related topics
 
-
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-
- 
-
-
-
-
-
-

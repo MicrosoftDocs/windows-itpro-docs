@@ -2,22 +2,19 @@
 title: 4692(S, F) Backup of data protection master key was attempted. (Windows 10)
 description: Describes security event 4692(S, F) Backup of data protection master key was attempted.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/07/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: windows-sec
 ---
 
 # 4692(S, F): Backup of data protection master key was attempted.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-4692.png" alt="Event 4692 illustration" width="448" height="396" hspace="10" align="left" />
@@ -26,7 +23,7 @@ ms.author: dansimp
 
 ***Event Description:***
 
-This event generates every time that a backup is attempted for the [DPAPI](https://msdn.microsoft.com/library/ms995355.aspx) Master Key.
+This event generates every time that a backup is attempted for the [DPAPI](/previous-versions/ms995355(v=msdn.10)) Master Key.
 
 When a computer is a member of a domain, DPAPI has a backup mechanism to allow unprotection of the data. When a Master Key is generated, DPAPI communicates with a domain controller. Domain controllers have a domain-wide public/private key pair, associated solely with DPAPI. The local DPAPI client gets the domain controller public key from a domain controller by using a mutually authenticated and privacy protected RPC call. The client encrypts the Master Key with the domain controller public key. It then stores this backup Master Key along with the Master Key protected by the user's password.
 
@@ -99,7 +96,7 @@ Failure event generates when a Master Key backup operation fails for some reason
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -128,4 +125,3 @@ For 4692(S, F): Backup of data protection master key was attempted.
 -   This event is typically an informational event and it is difficult to detect any malicious activity using this event. It’s mainly used for DPAPI troubleshooting.
 
 > **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
-

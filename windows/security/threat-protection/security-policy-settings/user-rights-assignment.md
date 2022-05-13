@@ -4,7 +4,7 @@ description: Provides an overview and links to information about the User Rights
 ms.assetid: 99340252-60be-4c79-b0a5-56fbe1a9b0c5
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,15 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 12/16/2021
+ms.technology: windows-sec
 ---
 
 # User Rights Assignment
 
 **Applies to**
 -   Windows 10
+-   Windows 11
 
 Provides an overview and links to information about the User Rights Assignment security policy settings user rights that are available in Windows.
 User rights govern the methods by which a user can log on to a system. User rights are applied at the local device level, and they allow users to perform tasks on a device or in a domain. User rights include logon rights and permissions. Logon rights control who is authorized to log on to a device and how they can log on. User rights permissions control access to computer and domain resources, and they can override permissions that have been set on specific objects. User rights are managed in Group Policy under the **User Rights Assignment** item.
@@ -69,6 +71,7 @@ The following table links to each security policy setting and provides the const
 | [Manage auditing and security log](manage-auditing-and-security-log.md)| SeSecurityPrivilege| 
 | [Modify an object label](modify-an-object-label.md) | SeRelabelPrivilege| 
 | [Modify firmware environment values](modify-firmware-environment-values.md)| SeSystemEnvironmentPrivilege| 
+| [Obtain an impersonation token for another user in the same session](impersonate-a-client-after-authentication.md) | SeDelegateSessionUserImpersonatePrivilege|
 | [Perform volume maintenance tasks](perform-volume-maintenance-tasks.md) | SeManageVolumePrivilege| 
 | [Profile single process](profile-single-process.md) | SeProfileSingleProcessPrivilege| 
 | [Profile system performance](profile-system-performance.md) | SeSystemProfilePrivilege| 
@@ -78,6 +81,7 @@ The following table links to each security policy setting and provides the const
 | [Shut down the system](shut-down-the-system.md) | SeShutdownPrivilege| 
 | [Synchronize directory service data](synchronize-directory-service-data.md)| SeSyncAgentPrivilege| 
 | [Take ownership of files or other objects](take-ownership-of-files-or-other-objects.md) | SeTakeOwnershipPrivilege| 
+
  
 ## Related topics
 

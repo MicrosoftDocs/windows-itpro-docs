@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 07/14/2020
 ---
 
@@ -31,7 +31,6 @@ Here's the XSD for the ProfileXML node in the VPNv2 CSP and VpnManagementAgent::
         <xs:element name="AlwaysOn" type="xs:boolean" minOccurs="0" maxOccurs="1" />
         <xs:element name="DnsSuffix" type="xs:string" minOccurs="0" maxOccurs="1"/>
         <xs:element name="TrustedNetworkDetection" type="xs:string" minOccurs="0" maxOccurs="1"/>
-        <xs:element name="LockDown" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
         <xs:element name="DeviceTunnel" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
         <xs:element name="RegisterDNS" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
         <xs:element name="ByPassForLocal" type="xs:boolean" minOccurs="0" maxOccurs="1"/>

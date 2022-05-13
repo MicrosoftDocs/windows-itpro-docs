@@ -2,22 +2,19 @@
 title: 5032(F) Windows Firewall was unable to notify the user that it blocked an application from accepting incoming connections on the network. (Windows 10)
 description: Describes security event 5032(F) Windows Firewall was unable to notify the user that it blocked an application from accepting incoming connections on the network.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: windows-sec
 ---
 
 # 5032(F): Windows Firewall was unable to notify the user that it blocked an application from accepting incoming connections on the network.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 Windows Firewall with Advanced Security can be configured to notify the user when an application is blocked by the firewall, and ask if the application should continue to be blocked in the future.

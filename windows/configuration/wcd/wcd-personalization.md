@@ -4,12 +4,12 @@ description: This section describes the Personalization settings that you can co
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: aaroncz
 ms.topic: article
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # Personalization (Windows Configuration Designer reference)
@@ -18,12 +18,12 @@ Use to configure settings to personalize a PC.
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [DeployDesktopImage](#deploydesktopimage) | X  |  |  |  |  |
-| [DeployLockScreenImage](#deploylockscreenimage) | X  |  |  |  |  |
-| [DesktopImageUrl](#desktopimageurl) | X  |  |  |  |  |
-| [LockScreenImageUrl](#lockscreenimageurl) | X  |  |  |  |  |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| [DeployDesktopImage](#deploydesktopimage) | ✔️  |  |  |  |
+| [DeployLockScreenImage](#deploylockscreenimage) | ✔️  |  |  |  |
+| [DesktopImageUrl](#desktopimageurl) | ✔️  |  |  |  |
+| [LockScreenImageUrl](#lockscreenimageurl) | ✔️  |  |  |  |
 
 ## DeployDesktopImage
 
