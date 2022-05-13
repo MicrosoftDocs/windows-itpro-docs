@@ -23,6 +23,8 @@ We've tried to make editing an existing, public file as simple as possible.
 
     ![Microsoft Docs Web, showing the Edit link.](images/contribute-link.png)
 
+    If the Edit button isn't present, it may mean the content isn't open to public contributions. Some pages are generated (for example, from inline documentation in code) and must be edited in the project they belong to.
+
 2. On GitHub, Select the **Pencil** icon to edit the article. If the pencil icon is grayed out, you need to either log in to your GitHub account or create a new account.
 
     ![GitHub Web, showing the Pencil icon.](images/pencil-icon.png)
