@@ -1,24 +1,24 @@
 ---
 title: Policies in Policy CSP supported by HoloLens 2
-description: Policies in Policy CSP supported by HoloLens 2
+description: Learn about the policies in Policy CSP supported by HoloLens 2.
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
-ms.date: 10/08/2020
+ms.date: 03/01/2022
 ---
 
 # Policies in Policy CSP supported by HoloLens 2
 
 > [!div class="op_single_selector"]
 >
-> - [HoloLens 2](policy-csps-supported-by-hololens2.md)
-> - [HoloLens (1st gen) Commercial Suite](policy-csps-supported-by-hololens-1st-gen-commercial-suite.md)
-> - [HoloLens (1st gen) Development Edition](policy-csps-supported-by-hololens-1st-gen-development-edition.md)
+> - [HoloLens 2]()
+> - [HoloLens (1st gen) Commercial Suite](./policies-in-policy-csp-supported-by-hololens-1st-gen-commercial-suite.md)
+> - [HoloLens (1st gen) Development Edition](./policies-in-policy-csp-supported-by-hololens-1st-gen-development-edition.md)
 >
 
 - [Accounts/AllowMicrosoftAccountConnection](policy-csp-accounts.md#accounts-allowmicrosoftaccountconnection)
@@ -50,17 +50,18 @@ ms.date: 10/08/2020
 - [DeviceLock/MinDevicePasswordLength](policy-csp-devicelock.md#devicelock-mindevicepasswordlength)
 - [Experience/AllowCortana](policy-csp-experience.md#experience-allowcortana)
 - [Experience/AllowManualMDMUnenrollment](policy-csp-experience.md#experience-allowmanualmdmunenrollment)
-- [MixedReality/AADGroupMembershipCacheValidityInDays](./policy-csp-mixedreality.md#mixedreality-aadgroupmembershipcachevalidityindays)
-- [MixedReality/BrightnessButtonDisabled](./policy-csp-mixedreality.md#mixedreality-brightnessbuttondisabled)
-- [MixedReality/FallbackDiagnostics](./policy-csp-mixedreality.md#mixedreality-fallbackdiagnostics)
-- [MixedReality/MicrophoneDisabled](./policy-csp-mixedreality.md#mixedreality-microphonedisabled)
-- [MixedReality/VolumeButtonDisabled](./policy-csp-mixedreality.md#mixedreality-volumebuttondisabled)
-- [Power/DisplayOffTimeoutOnBattery](./policy-csp-power.md#power-displayofftimeoutonbattery)
-- [Power/DisplayOffTimeoutPluggedIn](./policy-csp-power.md#power-displayofftimeoutpluggedin)
-- [Power/EnergySaverBatteryThresholdOnBattery](./policy-csp-power.md#power-energysaverbatterythresholdonbattery)
-- [Power/EnergySaverBatteryThresholdPluggedIn](./policy-csp-power.md#power-energysaverbatterythresholdpluggedin)
-- [Power/StandbyTimeoutOnBattery](./policy-csp-power.md#power-standbytimeoutonbattery)
-- [Power/StandbyTimeoutPluggedIn](./policy-csp-power.md#power-standbytimeoutpluggedin)
+- [MixedReality/AADGroupMembershipCacheValidityInDays](./policy-csp-mixedreality.md#mixedreality-aadgroupmembershipcachevalidityindays) <sup>9</sup>
+- [MixedReality/AutoLogonUser](./policy-csp-mixedreality.md#mixedreality-autologonuser) <sup>10</sup>
+- [MixedReality/BrightnessButtonDisabled](./policy-csp-mixedreality.md#mixedreality-brightnessbuttondisabled) <sup>9</sup>
+- [MixedReality/FallbackDiagnostics](./policy-csp-mixedreality.md#mixedreality-fallbackdiagnostics) <sup>9</sup>
+- [MixedReality/MicrophoneDisabled](./policy-csp-mixedreality.md#mixedreality-microphonedisabled) <sup>9</sup>
+- [MixedReality/VolumeButtonDisabled](./policy-csp-mixedreality.md#mixedreality-volumebuttondisabled) <sup>9</sup>
+- [Power/DisplayOffTimeoutOnBattery](./policy-csp-power.md#power-displayofftimeoutonbattery) <sup>9</sup>
+- [Power/DisplayOffTimeoutPluggedIn](./policy-csp-power.md#power-displayofftimeoutpluggedin) <sup>9</sup>
+- [Power/EnergySaverBatteryThresholdOnBattery](./policy-csp-power.md#power-energysaverbatterythresholdonbattery) <sup>9</sup>
+- [Power/EnergySaverBatteryThresholdPluggedIn](./policy-csp-power.md#power-energysaverbatterythresholdpluggedin) <sup>9</sup>
+- [Power/StandbyTimeoutOnBattery](./policy-csp-power.md#power-standbytimeoutonbattery) <sup>9</sup>
+- [Power/StandbyTimeoutPluggedIn](./policy-csp-power.md#power-standbytimeoutpluggedin) <sup>9</sup>
 - [Privacy/AllowInputPersonalization](policy-csp-privacy.md#privacy-allowinputpersonalization)
 - [Privacy/LetAppsAccessAccountInfo](policy-csp-privacy.md#privacy-letappsaccessaccountinfo)
 - [Privacy/LetAppsAccessAccountInfo_ForceAllowTheseApps](policy-csp-privacy.md#privacy-letappsaccessaccountinfo-forceallowtheseapps)
@@ -83,24 +84,31 @@ ms.date: 10/08/2020
 - [Privacy/LetAppsAccessMicrophone_ForceAllowTheseApps](policy-csp-privacy.md#privacy-letappsaccessmicrophone-forceallowtheseapps) <sup>8</sup>
 - [Privacy/LetAppsAccessMicrophone_ForceDenyTheseApps](policy-csp-privacy.md#privacy-letappsaccessmicrophone-forcedenytheseapps) <sup>8</sup>
 - [Privacy/LetAppsAccessMicrophone_UserInControlOfTheseApps](policy-csp-privacy.md#privacy-letappsaccessmicrophone-userincontroloftheseapps) <sup>8</sup>
+- [RemoteLock/Lock](./remotelock-csp.md) <sup>9</sup>
 - [Search/AllowSearchToUseLocation](policy-csp-search.md#search-allowsearchtouselocation)
-- [Security/AllowAddProvisioningPackage](policy-csp-security.md#security-allowaddprovisioningpackage)
-- [Security/AllowRemoveProvisioningPackage](policy-csp-security.md#security-allowremoveprovisioningpackage)
-- [Security/RequireDeviceEncryption](policy-csp-security.md#security-requiredeviceencryption)
+- [Security/AllowAddProvisioningPackage](policy-csp-security.md#security-allowaddprovisioningpackage) <sup>9</sup>
+- [Security/AllowRemoveProvisioningPackage](policy-csp-security.md#security-allowremoveprovisioningpackage) <sup>9</sup>
 - [Settings/AllowDateTime](policy-csp-settings.md#settings-allowdatetime)
 - [Settings/AllowVPN](policy-csp-settings.md#settings-allowvpn)
+- [Settings/PageVisibilityList](./policy-csp-settings.md#settings-pagevisibilitylist) <sup>9</sup>
 - [Speech/AllowSpeechModelUpdate](policy-csp-speech.md#speech-allowspeechmodelupdate)
 - [System/AllowCommercialDataPipeline](policy-csp-system.md#system-allowcommercialdatapipeline)
 - [System/AllowLocation](policy-csp-system.md#system-allowlocation)
 - [System/AllowStorageCard](policy-csp-system.md#system-allowstoragecard)
 - [System/AllowTelemetry](policy-csp-system.md#system-allowtelemetry)
-- [TimeLanguageSettings/ConfigureTimeZone](./policy-csp-timelanguagesettings.md#timelanguagesettings-configuretimezone)
-- [Update/ActiveHoursEnd](./policy-csp-update.md#update-activehoursend)
-- [Update/ActiveHoursMaxRange](./policy-csp-update.md#update-activehoursmaxrange)
-- [Update/ActiveHoursStart](./policy-csp-update.md#update-activehoursstart)
+- [TimeLanguageSettings/ConfigureTimeZone](./policy-csp-timelanguagesettings.md#timelanguagesettings-configuretimezone) <sup>9</sup>
+- [Update/ActiveHoursEnd](./policy-csp-update.md#update-activehoursend) <sup>9</sup>
+- [Update/ActiveHoursMaxRange](./policy-csp-update.md#update-activehoursmaxrange) <sup>9</sup>
+- [Update/ActiveHoursStart](./policy-csp-update.md#update-activehoursstart) <sup>9</sup>
 - [Update/AllowAutoUpdate](policy-csp-update.md#update-allowautoupdate)
 - [Update/AllowUpdateService](policy-csp-update.md#update-allowupdateservice)
+- [Update/AutoRestartNotificationSchedule](policy-csp-update.md#update-autorestartnotificationschedule) <sup>10</sup>
+- [Update/AutoRestartRequiredNotificationDismissal](policy-csp-update.md#update-autorestartrequirednotificationdismissal) <sup>10</sup>
 - [Update/BranchReadinessLevel](policy-csp-update.md#update-branchreadinesslevel)
+- [Update/ConfigureDeadlineForFeatureUpdates](policy-csp-update.md#update-configuredeadlineforfeatureupdates) <sup>10</sup>
+- [Update/ConfigureDeadlineForQualityUpdates](policy-csp-update.md#update-configuredeadlineforqualityupdates) <sup>10</sup>
+- [Update/ConfigureDeadlineGracePeriod](policy-csp-update.md#update-configuredeadlinegraceperiod) <sup>10</sup>
+- [Update/ConfigureDeadlineNoAutoReboot](policy-csp-update.md#update-configuredeadlinenoautoreboot) <sup>10</sup>
 - [Update/DeferFeatureUpdatesPeriodInDays](policy-csp-update.md#update-deferfeatureupdatesperiodindays)
 - [Update/DeferQualityUpdatesPeriodInDays](policy-csp-update.md#update-deferqualityupdatesperiodindays)
 - [Update/ManagePreviewBuilds](policy-csp-update.md#update-managepreviewbuilds)
@@ -108,8 +116,10 @@ ms.date: 10/08/2020
 - [Update/PauseQualityUpdates](policy-csp-update.md#update-pausequalityupdates)
 - [Update/ScheduledInstallDay](policy-csp-update.md#update-scheduledinstallday)
 - [Update/ScheduledInstallTime](policy-csp-update.md#update-scheduledinstalltime)
+- [Update/ScheduleImminentRestartWarning](policy-csp-update.md#update-scheduleimminentrestartwarning) <sup>10</sup>
+- [Update/ScheduleRestartWarning](policy-csp-update.md#update-schedulerestartwarning) <sup>10</sup>
 - [Update/SetDisablePauseUXAccess](policy-csp-update.md#update-setdisablepauseuxaccess)
-- [Update/UpdateServiceUrl](policy-csp-update.md#update-updateserviceurl)
+- [Update/UpdateNotificationLevel](policy-csp-update.md#update-updatenotificationlevel) <sup>10</sup>
 - [Wifi/AllowManualWiFiConfiguration](policy-csp-wifi.md#wifi-allowmanualwificonfiguration)
 - [Wifi/AllowWiFi](policy-csp-wifi.md#wifi-allowwifi) <sup>8</sup>
 
@@ -123,6 +133,8 @@ Footnotes:
 - 6 - Available in Windows 10, version 1903.
 - 7 - Available in Windows 10, version 1909.
 - 8 - Available in Windows 10, version 2004.
+- 9 - Available in [Windows Holographic, version 20H2](/hololens/hololens-release-notes#windows-holographic-version-20h2)
+- 10 - Available in [Windows Holographic, version 21H2](/hololens/hololens-release-notes#windows-holographic-version-21h2)
 
 ## Related topics
 

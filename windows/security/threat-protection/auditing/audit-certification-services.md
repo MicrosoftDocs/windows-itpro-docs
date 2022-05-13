@@ -6,19 +6,16 @@ ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/06/2021
+ms.technology: windows-sec
 ---
 
 # Audit Certification Services
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 Audit Certification Services determines whether the operating system generates events when Active Directory Certificate Services (AD CS) operations are performed.
 
@@ -54,9 +51,9 @@ Role-specific subcategories are outside the scope of this document.
 
 | Computer Type     | General Success | General Failure | Stronger Success | Stronger Failure | Comments                                                                                                                                                                                                                        |
 |-------------------|-----------------|-----------------|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Domain Controller | IF              | IF              | IF               | IF               | IF – if a server has the [Active Directory Certificate Services](https://technet.microsoft.com/windowsserver/dd448615.aspx) (AD CS) role installed and you need to monitor AD CS related events, enable this subcategory. |
-| Member Server     | IF              | IF              | IF               | IF               | IF – if a server has the [Active Directory Certificate Services](https://technet.microsoft.com/windowsserver/dd448615.aspx) (AD CS) role installed and you need to monitor AD CS related events, enable this subcategory. |
-| Workstation       | No              | No              | No               | No               | [Active Directory Certificate Services](https://technet.microsoft.com/windowsserver/dd448615.aspx) (AD CS) role cannot be installed on client OS.                                                                         |
+| Domain Controller | IF              | IF              | IF               | IF               | IF – if a server has the [Active Directory Certificate Services](/windows/deployment/deploy-whats-new) (AD CS) role installed and you need to monitor AD CS related events, enable this subcategory. |
+| Member Server     | IF              | IF              | IF               | IF               | IF – if a server has the [Active Directory Certificate Services](/windows/deployment/deploy-whats-new) (AD CS) role installed and you need to monitor AD CS related events, enable this subcategory. |
+| Workstation       | No              | No              | No               | No               | [Active Directory Certificate Services](/windows/deployment/deploy-whats-new) (AD CS) role cannot be installed on client OS.                                                                         |
 
 - 4868: The certificate manager denied a pending certificate request.
 

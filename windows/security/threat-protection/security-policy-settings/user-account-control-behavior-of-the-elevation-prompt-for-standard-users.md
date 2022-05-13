@@ -4,7 +4,7 @@ description: Learn about best practices, security considerations, and more for t
 ms.assetid: 1eae7def-8f6c-43b6-9474-23911fdc01ba
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +14,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 10/11/2021
+ms.technology: windows-sec
 ---
 
 # User Account Control: Behavior of the elevation prompt for standard users
@@ -45,7 +46,7 @@ This policy setting determines the behavior of the elevation prompt for standard
 ### Best practices
 
 1.  Configure the **User Account Control: Behavior of the elevation prompt for standard users** to **Automatically deny elevation requests**. This setting requires the user to log on with an administrative account to run programs that require elevation of privilege.
-2.  As a security best practice, standard users should not have knowledge of administrative passwords. However, if your users have both standard and administrator-level accounts, set **Prompt for credentials** so that the users do not choose to always log on with their administrator accounts, and they shift their behavior to use the standard user account.
+2.  As a security best practice, standard users should not have knowledge of administrative passwords. However, if your users have both standard and administrator-level accounts, set **Prompt for credentials on the secure desktop** so that the users do not choose to always log on with their administrator accounts, and they shift their behavior to use the standard user account.
 
 ### Location
 

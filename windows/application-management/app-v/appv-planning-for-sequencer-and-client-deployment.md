@@ -1,20 +1,18 @@
 ---
-title: Planning for the App-V Sequencer and Client Deployment (Windows 10)
+title: Planning for the App-V Sequencer and Client Deployment (Windows 10/11)
 description: Learn what you need to do to plan for the App-V Sequencer and Client deployment, and where to find additional information about the deployment process.
-author: lomayor
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
+author: aczechowski
 ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
+
 # Planning for the App-V Sequencer and Client Deployment
 
->Applies to: Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 Before you can use App-V, you must install the App-V Sequencer and enable the App-V client. You can also the App-V shared content store, although it isn't required. The following sections will tell you how to set these up.
 
@@ -38,7 +36,7 @@ Ideally, you should install the sequencer on a computer running as a virtual mac
 
 ## Planning for App-V client deployment
 
-In Windows 10, version 1607, the App-V client is included with the operating system. For more information, see [Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md).
+Starting with Windows 10 version 1607, the App-V client is included with the operating system. For more information, see [Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md).
 
 ## Planning for the App-V Shared Content Store (SCS)
 
@@ -58,7 +56,7 @@ The following list displays some of the benefits of using App-V SCS:
 
 * [Planning to deploy App-V](appv-planning-to-deploy-appv.md)
 
-## Related topics
+## Related articles
 
 * [How to install the sequencer](appv-install-the-sequencer.md)
 * [Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md)

@@ -2,25 +2,22 @@
 title: 4768(S, F) A Kerberos authentication ticket (TGT) was requested. (Windows 10)
 description: Describes security event 4768(S, F) A Kerberos authentication ticket (TGT) was requested.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 10/20/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: windows-sec
 ---
 
 # 4768(S, F): A Kerberos authentication ticket (TGT) was requested.
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
-
-<img src="images/event-4768.png" alt="Event 4768 illustration" width="554" height="659" hspace="10" align="left" />
+:::image type="content" alt-text="Event 4768 illustration." source="images/event-4768.png":::
 
 ***Subcategory:***&nbsp;[Audit Kerberos Authentication Service](audit-kerberos-authentication-service.md)
 
@@ -32,14 +29,15 @@ This event generates only on domain controllers.
 
 If TGT issue fails then you will see Failure event with **Result Code** field not equal to “**0x0**”.
 
-This event doesn't generate for **Result Codes**: 0x10, 0x17 and 0x18. Event “[4771](event-4771.md): Kerberos pre-authentication failed.” generates instead.
+This event doesn't generate for **Result Codes**: 0x10 and 0x18. Event “[4771](event-4771.md): Kerberos pre-authentication failed.” generates instead.
 
-> **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
+> [!NOTE]
+> For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
 <br clear="all">
 
 ***Event XML:***
-```
+```xml
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
  <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
@@ -100,7 +98,8 @@ This event doesn't generate for **Result Codes**: 0x10, 0x17 and 0x18. Event “
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-> **Note**&nbsp;&nbsp;A **Kerberos Realm** is a set of managed nodes that share the same Kerberos database. The Kerberos database resides on the Kerberos master computer system, which should be kept in a physically secure room. Active Directory domain is the example of Kerberos Realm in the Microsoft Windows Active Directory world.
+    > [!NOTE]
+    > A **Kerberos Realm** is a set of managed nodes that share the same Kerberos database. The Kerberos database resides on the Kerberos master computer system, which should be kept in a physically secure room. Active Directory domain is the example of Kerberos Realm in the Microsoft Windows Active Directory world.
 
 -   **User ID** \[Type = SID\]**:** SID of account for which (TGT) ticket was requested. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID cannot be resolved, you will see the source data in the event.
 
@@ -108,7 +107,8 @@ This event doesn't generate for **Result Codes**: 0x10, 0x17 and 0x18. Event “
 
     -   **NULL SID** – this value shows in [4768](event-4768.md) Failure events.
 
-> **Note**&nbsp;&nbsp;A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
+    > [!NOTE]
+    > A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
 
 **Service Information:**
 
@@ -118,7 +118,7 @@ This event doesn't generate for **Result Codes**: 0x10, 0x17 and 0x18. Event “
 
 -   **Service ID** \[Type = SID\]**:** SID of the service account in the Kerberos Realm to which TGT request was sent. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID cannot be resolved, you will see the source data in the event.
 
-    Domain controllers have a specific service account (**krbtgt**) that is used by the [Key Distribution Center](https://msdn.microsoft.com/library/windows/desktop/aa378170(v=vs.85).aspx) (KDC) service to issue Kerberos tickets. It has a built-in, pre-defined SID: S-1-5-21-[DOMAIN\_IDENTIFIER](https://technet.microsoft.com/library/cc962011.aspx)-502.
+    Domain controllers have a specific service account (**krbtgt**) that is used by the [Key Distribution Center](/windows/win32/secauthn/key-distribution-center) (KDC) service to issue Kerberos tickets. It has a built-in, pre-defined SID: S-1-5-21-[DOMAIN\_IDENTIFIER](/previous-versions/windows/it-pro/windows-2000-server/cc962011(v=technet.10))-502.
 
     -   **NULL SID** – this value shows in [4768](event-4768.md) Failure events.
 
@@ -148,7 +148,10 @@ This event doesn't generate for **Result Codes**: 0x10, 0x17 and 0x18. Event “
 
     -   Using **MSB 0** bit numbering we have bit 1, 8, 15 and 27 set = Forwardable, Renewable, Canonicalize, Renewable-ok.
 
-> **Note**&nbsp;&nbsp;In the table below **“MSB 0”** bit numbering is used, because RFC documents use this style. In “MSB 0” style bit numbering begins from left.<br><img src="images/msb.png" alt="MSB illustration" width="224" height="57" />
+> [!NOTE]
+> In the table below **“MSB 0”** bit numbering is used, because RFC documents use this style. In “MSB 0” style bit numbering begins from left.
+> 
+> <img src="images/msb.png" alt="MSB illustration" width="224" height="57" />
 
 The most common values:
 
@@ -165,8 +168,8 @@ The most common values:
 | 2     | Forwarded                | Indicates either that a TGT has been forwarded or that a ticket was issued from a forwarded TGT.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | 3     | Proxiable                | (TGT only). Tells the ticket-granting service that it can issue tickets with a network address that differs from the one in the TGT.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | 4     | Proxy                    | Indicates that the network address in the ticket is different from the one in the TGT used to obtain the ticket.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| 5     | Allow-postdate           | Postdated tickets SHOULD NOT be supported in [KILE](https://msdn.microsoft.com/library/cc233855.aspx) (Microsoft Kerberos Protocol Extension).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| 6     | Postdated                | Postdated tickets SHOULD NOT be supported in [KILE](https://msdn.microsoft.com/library/cc233855.aspx) (Microsoft Kerberos Protocol Extension).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| 5     | Allow-postdate           | Postdated tickets SHOULD NOT be supported in [KILE](/openspecs/windows_protocols/ms-kile/2a32282e-dd48-4ad9-a542-609804b02cc9) (Microsoft Kerberos Protocol Extension).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| 6     | Postdated                | Postdated tickets SHOULD NOT be supported in [KILE](/openspecs/windows_protocols/ms-kile/2a32282e-dd48-4ad9-a542-609804b02cc9) (Microsoft Kerberos Protocol Extension).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | 7     | Invalid                  | This flag indicates that a ticket is invalid, and it must be validated by the KDC before use. Application servers must reject tickets which have this flag set.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | 8     | Renewable                | Used in combination with the End Time and Renew Till fields to cause tickets with long life spans to be renewed at the KDC periodically.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | 9     | Initial                  | Indicates that a ticket was issued using the authentication service (AS) exchange and not issued based on a TGT.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -184,9 +187,10 @@ The most common values:
 | 30    | Renew                    | The RENEW option indicates that the present request is for a renewal. The ticket provided is encrypted in the secret key for the server on which it is valid. This option will only be honored if the ticket to be renewed has its RENEWABLE flag set and if the time in it’s renew-till field has not passed. The ticket to be renewed is passed in the padata field as part of the authentication header.                                                                                                                                                                                                                                                  |
 | 31    | Validate                 | This option is used only by the ticket-granting service. The VALIDATE option indicates that the request is to validate a postdated ticket. Should not be in use, because postdated tickets are not supported by KILE.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
-> Table 2. Kerberos ticket flags.
-> 
-> **Note**&nbsp;&nbsp;[KILE](https://msdn.microsoft.com/library/cc233855.aspx) **(Microsoft Kerberos Protocol Extension)** – Kerberos protocol extensions used in Microsoft operating systems. These extensions provide additional capability for authorization information including group memberships, interactive logon information, and integrity levels.
+## Table 2. Kerberos ticket flags
+
+> [!NOTE]
+> [KILE](/openspecs/windows_protocols/ms-kile/2a32282e-dd48-4ad9-a542-609804b02cc9) **(Microsoft Kerberos Protocol Extension)** – Kerberos protocol extensions used in Microsoft operating systems. These extensions provide additional capability for authorization information including group memberships, interactive logon information, and integrity levels.
 
 -   **Result Code** \[Type = HexInt32\]**:** hexadecimal result code of TGT issue operation. The “Table 3. TGT/TGS issue error codes.” contains the list of the most common error codes for this event.
 
@@ -251,12 +255,15 @@ The most common values:
 | 0x43                                                       | KRB\_AP\_ERR\_NO\_TGT                  | No TGT was presented or available                                           | In user-to-user authentication if the service does not possess a ticket granting ticket, it should return the error KRB\_AP\_ERR\_NO\_TGT.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | 0x44                                                       | KDC\_ERR\_WRONG\_REALM                 | Incorrect domain or principal                                               | Although this error rarely occurs, it occurs when a client presents a cross-realm TGT to a realm other than the one specified in the TGT. Typically, this results from incorrectly configured DNS.                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
-> <span id="_Ref432868145" class="anchor"></span>Table 3. TGT/TGS issue error codes.
+<span id="_Ref432868145" class="anchor"></span>
+
+## Table 3. TGT/TGS issue error codes
 
 -   **Ticket Encryption Type** \[Type = HexInt32\]: the cryptographic suite that was used for issued TGT.
 
 
 <span id="kerberos-encryption-types" />
+
 ## Table 4. Kerberos encryption types
 
 | Type | Type Name               | Description                                                                       |
@@ -270,10 +277,11 @@ The most common values:
 | 0xFFFFFFFF or 0xffffffff                                        | -                       | This type shows in Audit Failure events.                                          |
 
 
--   **Pre-Authentication Type** \[Type = UnicodeString\]: the code number of [pre-Authentication](https://technet.microsoft.com/library/cc772815(v=ws.10).aspx) type which was used in TGT request.
+-   **Pre-Authentication Type** \[Type = UnicodeString\]: the code number of [pre-Authentication](/previous-versions/windows/it-pro/windows-server-2003/cc772815(v=ws.10)) type which was used in TGT request.
 
 <span id="kerberos-preauthentication-types" />
-## Table 5. Kerberos Pre-Authentication types.
+
+## Table 5. Kerberos Pre-Authentication types
 
 | Type | Type Name              | Description                                                                                                                                                                                                                                                                                                                                                                                                      |
 |------------------------------------------------------------------------|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -281,6 +289,7 @@ The most common values:
 | 2                                                                      | PA-ENC-TIMESTAMP       | This is a normal type for standard password authentication.                                                                                                                                                                                                                                                                                                                                                      |
 | 11                                                                     | PA-ETYPE-INFO          | The ETYPE-INFO pre-authentication type is sent by the KDC in a KRB-ERROR indicating a requirement for additional pre-authentication. It is usually used to notify a client of which key to use for the encryption of an encrypted timestamp for the purposes of sending a PA-ENC-TIMESTAMP pre-authentication value.<br>Never saw this Pre-Authentication Type in Microsoft Active Directory environment.  |
 | 15                                                                     | PA-PK-AS-REP\_OLD      | Used for Smart Card logon authentication.                                                                                                                                                                                                                                                                                                                                                                        |
+| 16                                                                     | PA-PK-AS-REQ           | Request sent to KDC in Smart Card authentication scenarios.                  |
 | 17                                                                     | PA-PK-AS-REP           | This type should also be used for Smart Card authentication, but in certain Active Directory environments, it is never seen.                                                                                                                                                                                                                                                                                     |
 | 19                                                                     | PA-ETYPE-INFO2         | The ETYPE-INFO2 pre-authentication type is sent by the KDC in a KRB-ERROR indicating a requirement for additional pre-authentication. It is usually used to notify a client of which key to use for the encryption of an encrypted timestamp for the purposes of sending a PA-ENC-TIMESTAMP pre-authentication value.<br>Never saw this Pre-Authentication Type in Microsoft Active Directory environment. |
 | 20                                                                     | PA-SVR-REFERRAL-INFO   | Used in KDC Referrals tickets.                                                                                                                                                                                                                                                                                                                                                                                   |
@@ -299,18 +308,18 @@ The most common values:
 
 For 4768(S, F): A Kerberos authentication ticket (TGT) was requested.
 
-| **Type of monitoring required**                                                                                                                                                                                                                                                                                   | **Recommendation**                                                                                                                                             |
+| Type of monitoring required | Recommendation |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **High-value accounts**: You might have high-value domain or local accounts for which you need to monitor each action.<br>Examples of high-value accounts are database administrators, built-in local administrator account, domain administrators, service accounts, domain controller accounts and so on. | Monitor this event with the **“User ID”** that corresponds to the high-value account or accounts.                                                              |
 | **Anomalies or malicious actions**: You might have specific requirements for detecting anomalies or monitoring potential malicious actions. For example, you might need to monitor for use of an account outside of working hours.                                                                                | When you monitor for anomalies or malicious actions, use the **“User ID”** (with other information) to monitor how or when a particular account is being used. |
 | **Non-active accounts**: You might have non-active, disabled, or guest accounts, or other accounts that should never be used.                                                                                                                                                                                     | Monitor this event with the **“User ID”** that corresponds to the accounts that should never be used.                                                          |
-| **Account whitelist**: You might have a specific allow list of accounts that are the only ones allowed to perform actions corresponding to particular events.                                                                                                                                                      | If this event corresponds to a “whitelist-only” action, review the **“User ID”** for accounts that are outside the allow list.                                  |
+| **Account allowlist**: You might have a specific allowlist of accounts that are the only ones allowed to perform actions corresponding to particular events.                                                                                                                                                      | If this event corresponds to an “allowlist-only” action, review the **“User ID”** for accounts that are outside the allowlist.                                  |
 | **External accounts**: You might be monitoring accounts from another domain, or “external” accounts that are not allowed to perform certain actions (represented by certain specific events).                                                                                                                     | Monitor this event for the **“Supplied Realm Name”** corresponding to another domain or “external” location.                                                   |
 | **Account naming conventions**: Your organization might have specific naming conventions for account names.                                                                                                                                                                                                       | Monitor “**User ID”** for names that don’t comply with naming conventions.                                                                                     |
 
--   You can track all [4768](event-4768.md) events where the **Client Address** is not from your internal IP range or not from private IP ranges.
+-   You can track all [4768](event-4768.md) events where the **Client Address** is not from your internal IP address range or not from private IP address ranges.
 
--   If you know that **Account Name** should be used only from known list of IP addresses, track all **Client Address** values for this **Account Name** in [4768](event-4768.md) events. If **Client Address** is not from the allow list, generate the alert.
+-   If you know that **Account Name** should be used only from known list of IP addresses, track all **Client Address** values for this **Account Name** in [4768](event-4768.md) events. If **Client Address** is not from the allowlist, generate the alert.
 
 -   All **Client Address** = ::1 means local authentication. If you know the list of accounts which should log on to the domain controllers, then you need to monitor for all possible violations, where **Client Address** = ::1 and **Account Name** is not allowed to log on to any domain controller.
 
@@ -318,9 +327,9 @@ For 4768(S, F): A Kerberos authentication ticket (TGT) was requested.
 
 -   Also consider monitoring the fields shown in the following table, to discover the issues listed:
 
-| **Field**                   | **Issue to discover**                                                                                                                                                                                                                                                                                                                                   |
+| Field | Issue to discover |
 |-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Certificate Issuer Name** | Certification authority name is not from your PKI infrastructure.                                                                                                                                                                                                                                                                                       |
+| **Certificate Issuer Name** | Certification authority name is not from your PKI.                                                                                                                                                                                                                                                                                       |
 | **Certificate Issuer Name** | Certification authority name is not authorized to issue smart card authentication certificates.                                                                                                                                                                                                                                                         |
 | **Pre-Authentication Type** | Value is **0**, which means that pre-authentication was not used. All accounts should use Pre-Authentication, except accounts configured with “Do not require Kerberos preauthentication,” which is a security risk. For more information, see [Table 5. Kerberos Pre-Authentication types](#kerberos-preauthentication-types).                         |
 | **Pre-Authentication Type** | Value is **not 15** when account must use a smart card for authentication. For more information, see [Table 5. Kerberos Pre-Authentication types](#kerberos-preauthentication-types).                                                                                                                                                                   |
@@ -343,4 +352,3 @@ For 4768(S, F): A Kerberos authentication ticket (TGT) was requested.
 | **Result Code**             | **0x3C** (Generic error). This error can help you more quickly identify problems with Kerberos authentication.                                                                                                                                                                                                                                          |
 | **Result Code**             | **0x3E** (The client trust failed or is not implemented). This error helps you identify logon attempts with revoked certificates and the situations when the root Certification Authority that issued the smart card certificate (through a chain) is not trusted by a domain controller.                                                               |
 | **Result Code**             | **0x3F**, **0x40**, **0x41** errors. These errors can help you more quickly identify smart-card related problems with Kerberos authentication.                                                                                                                                                                                                          |
-

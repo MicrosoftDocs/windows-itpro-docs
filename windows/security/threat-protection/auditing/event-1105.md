@@ -2,22 +2,19 @@
 title: 1105(S) Event log automatic backup. (Windows 10)
 description: This event generates every time Windows security log becomes full and new event log file was created.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/07/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: windows-sec
 ---
 
-# 1105(S): Event log automatic backup.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
+# 1105(S): Event log automatic backup
 
 
 <img src="images/event-1105.png" alt="Event 1105 illustration" width="572" height="317" hspace="10" align="left" />
@@ -28,7 +25,7 @@ ms.author: dansimp
 
 This event generates every time Windows security log becomes full and new event log file was created.
 
-This event generates, for example, if the maximum size of Security Event Log file was reached and event log retention method is: “[Archive the log when full, do not overwrite events](https://technet.microsoft.com/library/cc721981.aspx)”.
+This event generates, for example, if the maximum size of Security Event Log file was reached and event log retention method is: “[Archive the log when full, do not overwrite events](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc721981(v=ws.11))”.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -71,7 +68,7 @@ This event generates, for example, if the maximum size of Security Event Log fil
 
 ***Field Descriptions:***
 
-**Log** \[Type = UnicodeString\]: the name of the log which was archived (new event log file was created and previous event log was archived). Always “**Security”** for Security Event Logs.
+**Log** \[Type = UnicodeString\]: the name of the log that was archived (new event log file was created and previous event log was archived). Always “**Security”** for Security Event Logs.
 
 **File**: \[Type = FILETIME\]: full path and filename of archived log file.
 
@@ -99,5 +96,4 @@ The time in this event is always in ***GMT+0/UTC+0*** time zone.
 
 For 1105(S): Event log automatic backup.
 
--   Typically it’s an informational event and no actions are needed. But if your baseline settings are not set to [Archive the log when full, do not overwrite events](https://technet.microsoft.com/library/cc721981.aspx), then this event will be a sign that some settings are not set to baseline settings or were changed.
-
+-   Typically it’s an informational event and no actions are needed. But if your baseline settings are not set to [Archive the log when full, do not overwrite events](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc721981(v=ws.11)), then this event will be a sign that some settings are not set to baseline settings or were changed.
