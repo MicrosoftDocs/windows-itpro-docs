@@ -19,13 +19,13 @@ We've tried to make editing an existing, public file as simple as possible.
 
 ### To edit a topic
 
-1. Go to the page on [docs.microsoft.com](https://docs.microsoft.com/) that you want to update, and then select **Edit** (pencil icon).
+1. Go to the page on [docs.microsoft.com](https://docs.microsoft.com/) that you want to update, and then select the **Pencil** icon.
 
-    ![Microsoft Docs Web, showing the Edit link.](images/contribute-link.png)
+    ![Microsoft Docs Web, showing the Edit This Document link.](images/contribute-link.png)
 
-    If the Edit button isn't present, it may mean the content isn't open to public contributions. Some pages are generated (for example, from inline documentation in code) and must be edited in the project they belong to.
+    If the pencil icon isn't present, it may mean the content isn't open to public contributions. Some pages are generated (for example, from inline documentation in code) and must be edited in the project they belong to.
 
-2. On GitHub, Select the **Pencil** icon to edit the article. If the pencil icon is grayed out, you need to either log in to your GitHub account or create a new account.
+2. On GitHub, select the **Pencil** icon to edit the article. If the pencil icon is grayed out, you need to either log in to your GitHub account or create a new account.
 
     ![GitHub Web, showing the Pencil icon.](images/pencil-icon.png)
 
@@ -36,11 +36,11 @@ We've tried to make editing an existing, public file as simple as possible.
 
 4. Make your suggested change, and then select **Preview changes** to make sure it looks correct.
 
-    ![GitHub Web, showing the Preview Changes tab.](images/preview-changes.png)
+    ![GitHub Web, showing the Preview changes tab.](images/preview-changes.png)
 
 5. When you’re done editing, scroll to the bottom of the page, and then select **Propose changes** to create a fork in your personal GitHub account.
 
-    ![GitHub Web, showing the Propose file change button.](images/propose-file-change.png)
+    ![GitHub Web, showing the Propose changes button.](images/propose-changes.png)
 
     The **Comparing changes** screen appears to see what the changes are between your fork and the original content.
 
