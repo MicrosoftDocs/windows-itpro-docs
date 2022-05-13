@@ -35,13 +35,13 @@ This article explains how to deploy BitLocker on Windows Server 2012 and later v
 5.  Select the **Select a server from the server pool** option in the **Server Selection** pane and confirm the server on which the BitLocker feature is to be installed.
 6.  Select **Next** on the **Server Roles** pane of the **Add Roles and Features** wizard to proceed to the **Features** pane.
  **Note**: Server roles and features are installed by using the same wizard in Server Manager.
-7.  Select the check box next to **BitLocker Drive Encryption** within the **Features** pane of the **Add Roles and Features** wizard. The wizard shows the additional management features available for BitLocker. If you don't want to install these features, deselect the **Include management tools 
+7.  Select the check box next to **BitLocker Drive Encryption** within the **Features** pane of the **Add Roles and Features** wizard. The wizard shows the extra management features available for BitLocker. If you don't want to install these features, deselect the **Include management tools 
 ** and select **Add Features**. Once optional features selection is complete, select **Next** to proceed in the wizard.
 
     > **Note:**      The **Enhanced Storage** feature is a required feature for enabling BitLocker. This feature enables support for encrypted hard drives on capable systems.
      
 8.  Select **Install** on the **Confirmation** pane of the **Add Roles and Features** wizard to begin BitLocker feature installation. The BitLocker feature requires a restart for its installation to be complete. Selecting the **Restart the destination server automatically if required** option in the **Confirmation** pane forces a restart of the computer after installation is complete.
-9.  If the **Restart the destination server automatically if required** check box isn't selected, the **Results** pane of the **Add Roles and Features** wizard displays the success or failure of the BitLocker feature installation. If required, a notification of additional action necessary to complete the feature installation, such as the restart of the computer, will be displayed in the results text.
+9.  If the **Restart the destination server automatically if required** check box isn't selected, the **Results** pane of the **Add Roles and Features** wizard displays the success or failure of the BitLocker feature installation. If necessary, a notification of other action necessary to complete the feature installation, such as the restart of the computer, will be displayed in the results text.
 
 ### <a href="" id="bkmk-blinstallwps"></a>To install BitLocker using Windows PowerShell
 
