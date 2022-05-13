@@ -50,9 +50,9 @@ The procedures in this guide are summarized in the following table. An estimate 
 |[Prepare for Zero Touch installation](#prepare-for-zero-touch-installation)|Prerequisite procedures to support Zero Touch installation.|60 minutes|
 |[Create a boot image for Configuration Manager](#create-a-boot-image-for-configuration-manager)|Use the MDT wizard to create the boot image in Configuration Manager.|20 minutes|
 |[Create a Windows 10 reference image](#create-a-windows-10-reference-image)|This procedure can be skipped if it was done previously, otherwise instructions are provided to create a reference image.|0-60 minutes|
-|[Add a Windows 10 OS image](#add-a-windows-10-operating-system-image)|Add a Windows 10 OS image and distribute it.|10 minutes|
+|[Add a Windows 10 OS image](#add-a-windows-10-os-image)|Add a Windows 10 OS image and distribute it.|10 minutes|
 |[Create a task sequence](#create-a-task-sequence)|Create a Configuration Manager task sequence with MDT integration using the MDT wizard|15 minutes|
-|[Finalize the OS configuration](#finalize-the-operating-system-configuration)|Enable monitoring, configure rules, and distribute content.|30 minutes|
+|[Finalize the OS configuration](#finalize-the-os-configuration)|Enable monitoring, configure rules, and distribute content.|30 minutes|
 |[Deploy Windows 10 using PXE and Configuration Manager](#deploy-windows-10-using-pxe-and-configuration-manager)|Deploy Windows 10 using Configuration Manager deployment packages and task sequences.|60 minutes|
 |[Replace a client with Windows 10 using Configuration Manager](#replace-a-client-with-windows-10-using-configuration-manager)|Replace a client computer with Windows 10 using Configuration Manager.|90 minutes|
 |[Refresh a client with Windows 10 using Configuration Manager](#refresh-a-client-with-windows-10-using-configuration-manager)|Use a task sequence to refresh a client with Windows 10 using Configuration Manager and MDT|90 minutes|
@@ -423,7 +423,7 @@ WDSUTIL /Set-Server /AnswerClients:None
 
 ### Create a Windows 10 reference image
 
-If you've already completed steps in [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md) then you've already created a Windows 10 reference image. In this case, skip to the next procedure in this guide: [Add a Windows 10 OS image](#add-a-windows-10-operating-system-image). If you've not yet created a Windows 10 reference image, complete the steps in this section.
+If you've already completed steps in [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md) then you've already created a Windows 10 reference image. In this case, skip to the next procedure in this guide: [Add a Windows 10 OS image](#add-a-windows-10-os-image). If you've not yet created a Windows 10 reference image, complete the steps in this section.
 
 1. In [Step by step guide: Deploy Windows 10 in a test lab](windows-10-poc.md) the Windows 10 Enterprise .iso file was saved to the c:\VHD directory as **c:\VHD\w10-enterprise.iso**. The first step in creating a deployment share is to mount this file on SRV1.  To mount the Windows 10 Enterprise DVD on SRV1, open an elevated Windows PowerShell prompt on the Hyper-V host computer and type the following command:
 
