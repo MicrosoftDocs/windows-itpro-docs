@@ -80,7 +80,7 @@ Added in Windows 10, version 1809. Status value indicating current state of an A
 Supported values:  
 
 -  0: Never run (not started). The default state. 
--  1: Complete
+-  1: Complete.
 -  10: Reset has been scheduled. 
 -  20: Reset is scheduled and waiting for a reboot. 
 -  30: Failed during CSP Execute ("Exec" in SyncML). 

@@ -78,4 +78,4 @@ The XML below is for Windows 10, version 1809.
 
 ## Related topics
 
-[Tenantlockdown csp](tenantlockdown-csp.md)
+[TenantLockdown CSP](tenantlockdown-csp.md)

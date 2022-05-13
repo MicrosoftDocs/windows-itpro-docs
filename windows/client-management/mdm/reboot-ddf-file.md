@@ -146,7 +146,7 @@ The XML below is the current version for this CSP.
 
 ## Related topics
 
-[Reboot csp](reboot-csp.md)
+[Reboot CSP](reboot-csp.md)
 
  
 

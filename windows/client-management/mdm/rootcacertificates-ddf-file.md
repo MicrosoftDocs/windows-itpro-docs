@@ -1988,4 +1988,4 @@ The XML below is for Windows 10, version 1803.
 
 ## Related topics
 
-[Rootcacertificates csp](rootcacertificates-csp.md)
+[RootCATrustedCertificates CSP](rootcacertificates-csp.md)

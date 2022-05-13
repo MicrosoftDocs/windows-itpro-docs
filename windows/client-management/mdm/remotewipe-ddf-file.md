@@ -223,4 +223,4 @@ The XML below is the DDF for Windows 10, version 1809.
 
 ## Related topics
 
-[Remotewipe csp](remotewipe-csp.md)
+[RemoteWipe CSP](remotewipe-csp.md)

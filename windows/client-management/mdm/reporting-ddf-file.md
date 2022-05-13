@@ -288,11 +288,5 @@ The XML below is the current version for the desktop CSP.
  
 ## Related topics
 
-[Reporting csp](reporting-csp.md)
+[Reporting CSP](reporting-csp.md)
  
-
-
-
-
-
-

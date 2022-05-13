@@ -118,13 +118,3 @@ Returns the certificate template name.  The only supported operation is Get.
 ## Related topics
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-
- 
-
-
-
-
-
-
