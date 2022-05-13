@@ -1,10 +1,10 @@
 ---
-title: Configure Windows Defender Firewall with Advanced Security to Suppress Notifications When a Program is Blocked (Windows 10)
+title: Configure Windows Defender Firewall with Advanced Security to Suppress Notifications When a Program is Blocked (Windows)
 description: Configure Windows Defender Firewall with Advanced Security to suppress notifications when a program is Bbocked
 ms.assetid: b7665d1d-f4d2-4b5a-befc-8b6bd940f69b
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,14 +14,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/07/2021
+ms.technology: windows-sec
 ---
 
 # Configure Windows Defender Firewall with Advanced Security to Suppress Notifications When a Program Is Blocked
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 To configure Windows Defender Firewall with Advanced Security to suppress the display of a notification when it blocks a program that tries to listen for network traffic and to prohibit locally defined rules, use the Windows Defender Firewall with Advanced Security node in the Group Policy Management console.
 

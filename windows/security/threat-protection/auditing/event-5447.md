@@ -2,22 +2,19 @@
 title: 5447(S) A Windows Filtering Platform filter has been changed. (Windows 10)
 description: Describes security event 5447(S) A Windows Filtering Platform filter has been changed.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: windows-sec
 ---
 
 # 5447(S): A Windows Filtering Platform filter has been changed.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-5447.png" alt="Event 5447 illustration" width="493" height="793" hspace="10" align="left" />
@@ -26,7 +23,7 @@ ms.author: dansimp
 
 ***Event Description:***
 
-This event generates every time a [Windows Filtering Platform](https://msdn.microsoft.com/library/windows/desktop/aa366510(v=vs.85).aspx) filter has been changed.
+This event generates every time a [Windows Filtering Platform](/windows/win32/fwp/windows-filtering-platform-start-page) filter has been changed.
 
 It typically generates during Group Policy update procedures.
 
@@ -88,4 +85,3 @@ It typically generates during Group Policy update procedures.
 For 5447(S): A Windows Filtering Platform filter has been changed.
 
 -   This event mainly used for Windows Filtering Platform troubleshooting and typically has little to no security relevance.
-

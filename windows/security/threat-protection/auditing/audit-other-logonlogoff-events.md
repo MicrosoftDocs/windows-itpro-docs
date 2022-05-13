@@ -6,19 +6,16 @@ ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/06/2021
+ms.technology: windows-sec
 ---
 
 # Audit Other Logon/Logoff Events
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 Audit Other Logon/Logoff Events determines whether Windows generates audit events for other logon or logoff events.
@@ -43,9 +40,9 @@ Logon events are essential to understanding user activity and detecting potentia
 
 | Computer Type     | General Success | General Failure | Stronger Success | Stronger Failure | Comments                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |-------------------|-----------------|-----------------|------------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Domain Controller | Yes             | Yes             | Yes              | Yes              | We recommend Success auditing, to track possible Kerberos replay attacks, terminal session connect and disconnect actions, network authentication events, and some other events. Volume of these events is typically very low.<br>Failure events will show you when requested credentials [CredSSP](https://msdn.microsoft.com/library/cc226764.aspx) delegation was disallowed by policy. The volume of these events is very low—typically you will not get any of these events. |
-| Member Server     | Yes             | Yes             | Yes              | Yes              | We recommend Success auditing, to track possible terminal session connect and disconnect actions, network authentication events, and some other events. Volume of these events is typically very low.<br>Failure events will show you when requested credentials [CredSSP](https://msdn.microsoft.com/library/cc226764.aspx) delegation was disallowed by policy. The volume of these events is very low—typically you will not get any of these events.                          |
-| Workstation       | Yes             | Yes             | Yes              | Yes              | We recommend Success auditing, to track possible terminal session connect and disconnect actions, network authentication events, and some other events. Volume of these events is typically very low.<br>Failure events will show you when requested credentials [CredSSP](https://msdn.microsoft.com/library/cc226764.aspx) delegation was disallowed by policy. The volume of these events is very low—typically you will not get any of these events.                          |
+| Domain Controller | Yes             | Yes             | Yes              | Yes              | We recommend Success auditing, to track possible Kerberos replay attacks, terminal session connect and disconnect actions, network authentication events, and some other events. Volume of these events is typically very low.<br>Failure events will show you when requested credentials [CredSSP](/openspecs/windows_protocols/ms-cssp/85f57821-40bb-46aa-bfcb-ba9590b8fc30) delegation was disallowed by policy. The volume of these events is very low—typically you will not get any of these events. |
+| Member Server     | Yes             | Yes             | Yes              | Yes              | We recommend Success auditing, to track possible terminal session connect and disconnect actions, network authentication events, and some other events. Volume of these events is typically very low.<br>Failure events will show you when requested credentials [CredSSP](/openspecs/windows_protocols/ms-cssp/85f57821-40bb-46aa-bfcb-ba9590b8fc30) delegation was disallowed by policy. The volume of these events is very low—typically you will not get any of these events.                          |
+| Workstation       | Yes             | Yes             | Yes              | Yes              | We recommend Success auditing, to track possible terminal session connect and disconnect actions, network authentication events, and some other events. Volume of these events is typically very low.<br>Failure events will show you when requested credentials [CredSSP](/openspecs/windows_protocols/ms-cssp/85f57821-40bb-46aa-bfcb-ba9590b8fc30) delegation was disallowed by policy. The volume of these events is very low—typically you will not get any of these events.                          |
 
 **Events List:**
 
@@ -68,4 +65,3 @@ Logon events are essential to understanding user activity and detecting potentia
 -   [5632](event-5632.md)(S): A request was made to authenticate to a wireless network.
 
 -   [5633](event-5633.md)(S): A request was made to authenticate to a wired network.
-

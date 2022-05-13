@@ -1,17 +1,15 @@
 ---
-title: Deploying the App-V Server (Windows 10)
-description: Learn how to deploy the Application Virtualization (App-V) Server in App-V for Windows 10 by using different deployment configurations described in this article.
-author: lomayor
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
+title: Deploying the App-V Server (Windows 10/11)
+description: Learn how to deploy the Application Virtualization (App-V) Server in App-V for Windows 10/11 by using different deployment configurations described in this article.
+author: aczechowski
 ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
+
 # Deploying the App-V server
 
 >Applies to: Windows Server 2016
@@ -19,9 +17,9 @@ ms.topic: article
 You can install the Application Virtualization (App-V) server components using different deployment configurations, which are described in this topic. Before you install the server features, review the server section of [App-V security considerations](appv-security-considerations.md).
 
 >[!NOTE]
->If you plan to use the App-V server components in your deployment, note that the version number is still listed as App-V 5.x, as the App-V server components have not changed in App-V for Windows 10.
+>If you plan to use the App-V server components in your deployment, note that the version number is still listed as App-V 5.x, as the App-V server components have not changed in App-V for Windows client.
 
-To learn more about deploying App-V for Windows 10, read [What's new in App-V](appv-about-appv.md).
+To learn more about deploying App-V for Windows client, read [What's new in App-V](appv-about-appv.md).
 
 >[!IMPORTANT]
 >Before installing and configuring the App-V servers, you must specify the port or ports where each component will be hosted. You must also add the associated firewall rules to allow incoming requests to access the specified ports, as the installer does not modify firewall settings.
@@ -35,17 +33,21 @@ App-V offers the following five server components, each of which serves a specif
 
 * **Management server.** Use the App-V management server and console to manage your App-V infrastructure. See [Administering App-V with the management console](appv-administering-virtual-applications-with-the-management-console.md) for more information about the management server.
 
- > [!NOTE]
-    >If you are using App-V with your electronic software distribution solution, you don’t need to use the management server and console. However, you may want to take advantage of the reporting and streaming capabilities in App-V.
+  > [!NOTE]
+  > If you are using App-V with your electronic software distribution solution, you don’t need to use the management server and console. However, you may want to take advantage of the reporting and streaming capabilities in App-V.
+
 * **Management database.** Use the App-V management database to facilitate database pre-deployments for App-V management. For more information about the management database, see [How to deploy the App-V server](appv-deploy-the-appv-server.md).
+
 * **Publishing server.** Use the App-V publishing server to host and stream virtual applications. The publishing server supports the HTTP and HTTPS protocols and does not require a database connection. To learn how to configure the publishing server, see [How to install the App-V publishing server](appv-install-the-publishing-server-on-a-remote-computer.md).
+
 * **Reporting server.** Use the App-V reporting server to generate reports that help you manage your App-V infrastructure. The reporting server requires a connection to the reporting database. To learn more about App-V's reporting capabilities, see [About App-V reporting](appv-reporting.md).
+
 * **Reporting database.** Use the App-V reporting database to facilitate database pre-deployments for App-V reporting. To learn more about the reporting database, see [How to deploy the App-V server](appv-deploy-the-appv-server.md).
 
 All five App-V server components are included in the Microsoft Desktop Optimization Pack (MDOP) 2015 ISO package, which can be downloaded from either of the following locations:
 
 * The [MSDN (Microsoft Developer Network) subscriptions site](https://msdn.microsoft.com/subscriptions/downloads/default.aspx#FileId=65215). You must have a MSDN subscription to download the MDOP ISO package from this site.
-* The [Volume Licensing Service Center](https://www.microsoft.com/licensing/default.aspx) if you're using [Windows 10 for Enterprise or Education](https://www.microsoft.com/WindowsForBusiness/windows-product-home).
+* The [Volume Licensing Service Center](https://www.microsoft.com/licensing/default.aspx) if you're using [Windows client for Enterprise or Education](https://www.microsoft.com/WindowsForBusiness/windows-product-home).
 
 In large organizations, you might want to install more than one instance of the server components to get the following benefits.
 
