@@ -6,25 +6,22 @@ ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/06/2021
+ms.technology: windows-sec
 ---
 
 # Audit Application Group Management
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
+Audit Application Group Management generates events for actions related to [application groups](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771579(v=ws.11)), such as group creation, modification, addition or removal of group member and some other actions.
 
-Audit Application Group Management generates events for actions related to [application groups](https://technet.microsoft.com/library/cc771579.aspx), such as group creation, modification, addition or removal of group member and some other actions.
+[Application groups](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771579(v=ws.11)) are used by [Authorization Manager](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc726036(v=ws.11)).
 
-[Application groups](https://technet.microsoft.com/library/cc771579.aspx) are used by [Authorization Manager](https://technet.microsoft.com/library/cc726036.aspx).
-
-Audit Application Group Management subcategory is out of scope of this document, because [Authorization Manager](https://technet.microsoft.com/library/cc726036.aspx) is very rarely in use and it is deprecated starting from Windows Server 2012.
+Audit Application Group Management subcategory is out of scope of this document, because [Authorization Manager](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc726036(v=ws.11)) is very rarely in use and it is deprecated starting from Windows Server 2012.
 
 | Computer Type     | General Success | General Failure | Stronger Success | Stronger Failure | Comments                                                |
 |-------------------|-----------------|-----------------|------------------|------------------|---------------------------------------------------------|

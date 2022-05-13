@@ -2,22 +2,19 @@
 title: 6420(S) A device was disabled. (Windows 10)
 description: Describes security event 6420(S) A device was disabled. This event is generated when a specific device is disabled.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/09/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: windows-sec
 ---
 
 # 6420(S): A device was disabled.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-6420.png" alt="Event 6420 illustration" width="526" height="682" hspace="10" align="left" />
@@ -92,7 +89,7 @@ This event generates every time specific device was disabled.
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 

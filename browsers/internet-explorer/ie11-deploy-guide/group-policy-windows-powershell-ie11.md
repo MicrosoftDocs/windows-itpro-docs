@@ -32,11 +32,8 @@ Each cmdlet is a single-function command-line tool that can:
 
 -   Configure registry-based policy settings and registry settings for Group Policy preferences.
 
-For more info about PowerShell and Group Policy management, see [Use Windows PowerShell to Manage Group Policy](https://go.microsoft.com/fwlink/p/?LinkId=276828).
+For more info about PowerShell and Group Policy management, see [Use Windows PowerShell to Manage Group Policy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759177(v=ws.11)).
 
  
 
  
-
-
-

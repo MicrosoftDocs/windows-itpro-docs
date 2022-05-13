@@ -1,35 +1,35 @@
 ---
-title: Windows 10 VPN technical guide (Windows 10)
-description: Learn about decisions to make for Windows 10 clients in your enterprise VPN solution and how to configure your deployment. 
-ms.prod: w10
+title: Windows VPN technical guide (Windows 10 and Windows 11)
+description: Learn about decisions to make for Windows 10 or Windows 11 clients in your enterprise VPN solution and how to configure your deployment.
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dulcemontemayor
+author: dansimp
 ms.localizationpriority: medium
-ms.date: 07/27/2017
+ms.date: 02/21/2022
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
 ---
 
-# Windows 10 VPN technical guide
+# Windows VPN technical guide
 
 
 **Applies to**
 
 - Windows 10
-- Windows 10 Mobile
+- Windows 11
 
-This guide will walk you through the decisions you will make for Windows 10 clients in your enterprise VPN solution and how to configure your deployment. This guide references the [VPNv2 Configuration Service Provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx) and provides mobile device management (MDM) configuration instructions using Microsoft Intune and the VPN Profile template for Windows 10.
+This guide will walk you through the decisions you will make for Windows 10 or Windows 11 clients in your enterprise VPN solution and how to configure your deployment. This guide references the [VPNv2 Configuration Service Provider (CSP)](/windows/client-management/mdm/vpnv2-csp) and provides mobile device management (MDM) configuration instructions using Microsoft Intune and the VPN Profile template for Windows 10 and Windows 11.
 
-![Intune VPN policy template](images/vpn-intune-policy.png)
+To create a Windows 10 VPN device configuration profile see: [Windows 10 and Windows Holographic device settings to add VPN connections using Intune](/mem/intune/configuration/vpn-settings-windows-10).
 
->[!NOTE]
->This guide does not explain server deployment.  
+> [!NOTE]
+> This guide does not explain server deployment.
 
 ## In this guide
 
-| Topic | Description  |
+| Article | Description  |
 | --- | --- |
 | [VPN connection types](vpn-connection-type.md) | Select a VPN client and tunneling protocol |
 | [VPN routing decisions](vpn-routing.md)  | Choose between split tunnel and force tunnel configuration |
@@ -37,13 +37,10 @@ This guide will walk you through the decisions you will make for Windows 10 clie
 | [VPN and conditional access](vpn-conditional-access.md)  | Use Azure Active Directory policy evaluation to set access policies for VPN connections. |
 | [VPN name resolution](vpn-name-resolution.md)  | Decide how name resolution should work |
 | [VPN auto-triggered profile options](vpn-auto-trigger-profile.md)  | Set a VPN profile to connect automatically by app or by name, to be "always on", and to not trigger VPN on trusted networks |
-| [VPN security features](vpn-security-features.md)  | Set a LockDown VPN profile, configure traffic filtering, and connect VPN profile to Windows Information Protection (WIP) |
+| [VPN security features](vpn-security-features.md)  | Configure traffic filtering, connect a VPN profile to Windows Information Protection (WIP), and more |
 | [VPN profile options](vpn-profile-options.md)  | Combine settings into single VPN profile using XML |
 
 
 ## Learn more
 
-- [VPN connections in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/vpn-connections-in-microsoft-intune)
-
-
-
+- [Create VPN profiles to connect to VPN servers in Intune](/mem/intune/configuration/vpn-settings-configure)

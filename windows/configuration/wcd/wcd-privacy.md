@@ -4,10 +4,10 @@ description: This section describes the Privacy settings that you can configure 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: dansimp
-manager: dansimp
+ms.author: aaroncz
+manager: dougeby
 ms.topic: article
 ---
 
@@ -17,9 +17,9 @@ Use **Privacy** to configure settings for app activation with voice.
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| All settings | X  | X | X |  | X |
+| Setting   | Windows client |  Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| All settings | ✔️  |  ✔️ |  | ✔️ |
 
 ## LetAppsActivateWithVoice
 

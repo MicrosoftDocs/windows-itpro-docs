@@ -1,15 +1,12 @@
 ---
-title: How to Install the App-V Databases and Convert the Associated Security Identifiers by Using Windows PowerShell (Windows 10)
+title: How to Install the App-V Databases and Convert the Associated Security Identifiers by Using Windows PowerShell (Windows 10/11)
 description: How to Install the App-V Databases and Convert the Associated Security Identifiers by Using Windows PowerShell
-author: lomayor
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
+author: aczechowski
 ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: dougeby
+ms.author: aaroncz
 ---
 
 
@@ -22,7 +19,7 @@ Use the following Windows PowerShell procedure to convert any number of Active D
 
 Before attempting this procedure, you should read and understand the information and examples displayed in the following list:
 
--   **.INPUTS** – The account or accounts used to convert to SID format. This can be a single account name or an array of account names.
+-   **.INPUTS** – The account or accounts used to convert to SID format. This item can be a single account name or an array of account names.
 
 -   **.OUTPUTS** - A list of account names with the corresponding SID in standard and hexadecimal formats.
 
@@ -129,7 +126,7 @@ Before attempting this procedure, you should read and understand the information
     }
     ```
 
-3.  Run the script you saved in step one of this procedure passing the accounts to convert as arguments.
+3.  Run the script you saved in Step 1 of this procedure passing the accounts to convert as arguments.
 
     For example,
 
@@ -141,6 +138,6 @@ Before attempting this procedure, you should read and understand the information
 
 <br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
-## Related topics
+## Related articles
 
 [Administering App-V by Using Windows PowerShell](appv-administering-appv-with-powershell.md)

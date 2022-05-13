@@ -11,8 +11,9 @@ metadata:
   ms.subservice: subservice
   ms.topic: landing-page # Required
   ms.collection: windows-10
-  author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
-  ms.author: greglin #Required; microsoft alias of author; optional team alias.
+  author: aczechowski
+  ms.author: aaroncz
+  manager: dougeby
   ms.date: 08/05/2020 #Required; mm/dd/yyyy format.
   localization_priority: medium
     
@@ -27,7 +28,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Overview of Windows Autopilot
-            url:  https://docs.microsoft.com/mem/autopilot/windows-autopilot
+            url:  /mem/autopilot/windows-autopilot
 
               # Card
   - title: Tutorials

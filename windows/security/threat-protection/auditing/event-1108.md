@@ -2,22 +2,19 @@
 title: The event logging service encountered an error (Windows 10)
 description: Describes security event 1108(S) The event logging service encountered an error while processing an incoming event published from %1.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/07/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: windows-sec
 ---
 
 # 1108(S): The event logging service encountered an error while processing an incoming event published from %1.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-1108.png" alt="Event 1108 illustration" width="613" height="429" hspace="10" align="left" />
@@ -76,7 +73,7 @@ For example, event 1108 might be generated after an incorrect [4703](event-4703.
 
 ***Field Descriptions:***
 
-**%1** \[Type = UnicodeString\]: the name of [security event source](https://msdn.microsoft.com/library/windows/desktop/aa363661(v=vs.85).aspx) from which event was received for processing. You can see all registered security event source names in this registry path: “HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\EventLog\\Security”. Here is an example:
+**%1** \[Type = UnicodeString\]: the name of [security event source](/windows/win32/eventlog/event-sources) from which event was received for processing. You can see all registered security event source names in this registry path: “HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\EventLog\\Security”. Here is an example:
 
 <img src="images/subkeys-under-security-key.png" alt="Subkeys under Security key illustration" width="236" height="246" />
 
@@ -85,4 +82,3 @@ For example, event 1108 might be generated after an incorrect [4703](event-4703.
 For 1108(S): The event logging service encountered an error while processing an incoming event published from %1.
 
 -   We recommend monitoring for all events of this type and checking what the cause of the error was.
-

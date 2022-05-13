@@ -1,17 +1,15 @@
 ---
-title: How to install the Management Server on a Standalone Computer and Connect it to the Database (Windows 10)
+title: How to install the Management Server on a Standalone Computer and Connect it to the Database (Windows 10/11)
 description: How to install the Management Server on a Standalone Computer and Connect it to the Database
-author: lomayor
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
+author: aczechowski
 ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
+
 # How to install the Management Server on a Standalone Computer and Connect it to the Database
 
 >Applies to: Windows Server 2016
@@ -38,6 +36,6 @@ To install the management server on a standalone computer and connect it to the 
 
 
 
-## Related topics
+## Related articles
 
 * [Deploying App-V](appv-deploying-appv.md)

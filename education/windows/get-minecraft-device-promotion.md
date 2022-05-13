@@ -24,7 +24,7 @@ manager: dansimp
 The **Minecraft: Education Edition** with Windows 10 device promotion ended January 31, 2018.
 
 Qualifying customers that received one-year subscriptions for Minecraft: Education Edition as part of this program and wish to continue using the game in their schools can purchase new subscriptions in Microsoft Store for Education. 
-For more information on purchasing Minecraft: Education Edition, see [Add Minecraft to your Store for Education](https://docs.microsoft.com/education/windows/school-get-minecraft?toc=/microsoft-store/education/toc.json). 
+For more information on purchasing Minecraft: Education Edition, see [Add Minecraft to your Store for Education](./school-get-minecraft.md?toc=%2fmicrosoft-store%2feducation%2ftoc.json). 
 
 >[!Note]
 >**Minecraft: Education Edition** with Windows 10 device promotion subscriptions are valid for 1 year from the time 
