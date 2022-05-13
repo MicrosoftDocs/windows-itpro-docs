@@ -2,9 +2,6 @@
 title: Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer) (Windows 10/11)
 description: How to automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer) PowerShell cmdlet or the user interface.
 author: aczechowski
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
@@ -122,7 +119,7 @@ After provisioning your sequencing environment, you must sequence your apps, eit
 
 After you sequence your packages, you can automatically clean up any unpublished packages on the App-V client. To learn more, see [Automatically clean up unpublished packages on the App-V client](appv-auto-clean-unpublished-packages.md).
 
-### Related topics
+### Related articles
 
 - [Download the **Convert-WindowsImage** tool](https://www.powershellgallery.com/packages/Convert-WindowsImage/10.0)
 - [Download the Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
