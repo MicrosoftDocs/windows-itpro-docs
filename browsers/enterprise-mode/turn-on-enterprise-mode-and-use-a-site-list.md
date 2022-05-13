@@ -9,7 +9,7 @@ centralized control, you can create one global list of websites that render usin
 1.  Open your Group Policy editor and go to the **Administrative Templates\\Windows Components\\Microsoft Edge\\Configure the Enterprise Mode     Site List** setting.<p>Turning this setting on also requires you to create and store a site list.
 
 <!-- 
-    ![Local Group Policy Editor for using a site list](../edge/images/config-enterprise-site-list.png)
+    ![Local Group Policy Editor for using a site list.](../edge/images/config-enterprise-site-list.png)
 -->
 
 2.  Click **Enabled**, and then in the **Options** area, type the location to your site list.
@@ -24,7 +24,7 @@ All of your managed devices must have access to this location if you want them t
 
 2.  Edit the `SiteList` registry key to point to where you want to keep your Enterprise Mode site list file.<p>For example:
     <!--
-    ![Enterprise mode with site list in the registry](../edge/images/enterprise-mode-value-data.png) -->
+    ![Enterprise mode with site list in the registry.](../edge/images/enterprise-mode-value-data.png) -->
 
     -   **HTTPS location:** `"SiteList"="https://localhost:8080/sites.xml"`
 

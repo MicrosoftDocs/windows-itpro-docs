@@ -2,22 +2,19 @@
 title: 5025(S) The Windows Firewall Service has been stopped. (Windows 10)
 description: Describes security event 5025(S) The Windows Firewall Service has been stopped.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: windows-sec
 ---
 
 # 5025(S): The Windows Firewall Service has been stopped.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-5025.png" alt="Event 5025 illustration" width="449" height="317" hspace="10" align="left" />

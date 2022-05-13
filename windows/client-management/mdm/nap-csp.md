@@ -8,24 +8,58 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 06/26/2017
 ---
 
 # NAP CSP
 
-
 The NAP (Network Access Point) Configuration Service Provider is used to manage and query GPRS and CDMA connections.
 
-> **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
+> [!Note]
+> This configuration service provider requires the `ID_CAP_CSP_FOUNDATION` and `ID_CAP_NETWORKING_ADMIN` capabilities to be accessed from a network configuration application.
 
- 
+For the NAP CSP, you can't use the Replace command unless the node already exists.
 
-For the NAP CSP, you cannot use the Replace command unless the node already exists.
+The following example shows the NAP configuration service provider management object in tree format as used by OMA DM. The OMA Client Provisioning protocol isn't supported by this configuration service provider.
 
-The following diagram shows the NAP configuration service provider management object in tree format as used by OMA DM. The OMA Client Provisioning protocol is not supported by this configuration service provider.
-
-![nap csp (dm)](images/provisioning-csp-nap.png)
+```console
+./Vendor/MSFT
+NAP
+----*
+--------NapId
+--------Name
+--------Addr
+--------AddrType
+--------IPv4
+------------AutoConfig
+------------LocalAddr
+------------NetMask
+------------Gateway
+------------DNS
+----------------*
+--------------------DNSAddr
+--------IPv6
+------------AutoConfig
+------------LocalAddr
+--------Linger
+--------AuthInfo
+------------AuthType
+------------AuthName
+------------AuthSecret
+------------AuthEntities
+----------------*
+--------------------AuthEntity
+------------SPI
+--------Bearer
+------------BearerType
+--------Ext
+------------Microsoft
+----------------Guid
+----------------AlwaysOn
+----------------Secure
+----------------SecureLevel
+```
 
 <a href="" id="--vendor-msft-nap"></a>**./Vendor/MSFT/NAP**  
 Root node.
@@ -33,7 +67,7 @@ Root node.
 <a href="" id="napx"></a>***NAPX***  
 Required. Defines the name of the network access point.
 
-It is recommended that this element name is specified as a numbered node beginning at zero. For example, to provision two network access points, use "NAP0" and "NAP1" as the element names. Any unique name can be used if desired (such as "GPRS-NAP"), but no spaces may appear in the name (use %20 instead).
+It's recommended that this element name is specified as a numbered node beginning at zero. For example, to provision two network access points, use "NAP0" and "NAP1" as the element names. Any unique name can be used if desired (such as "GPRS-NAP"), but no spaces may appear in the name (use %20 instead).
 
 <a href="" id="napx-napid"></a>***NAPX*/NAPID**  
 Required. Specifies the identifier of the destination network.
@@ -53,34 +87,11 @@ Required. Specifies the type of address used to identify the destination network
 
 The following table shows some commonly used ADDRTYPE values and the types of connection that corresponds with each value.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>ADDRTYPE Value</th>
-<th>Connection Type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>E164</p></td>
-<td><p>RAS connections</p></td>
-</tr>
-<tr class="even">
-<td><p>APN</p></td>
-<td><p>GPRS connections</p></td>
-</tr>
-<tr class="odd">
-<td><p>ALPHA</p></td>
-<td><p>Wi-Fi-based connections</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|ADDRTYPE Value|Connection Type|
+|--- |--- |
+|E164|RAS connections|
+|APN|GPRS connections|
+|ALPHA|Wi-Fi-based connections|
 
 <a href="" id="napx-authinfo"></a>***NAPX*/AuthInfo**  
 Optional node. Specifies the authentication information, including the protocol, user name, and password.
@@ -94,25 +105,15 @@ Optional. Specifies the user name and domain to be used during authentication. T
 <a href="" id="napx-authinfo-authsecret"></a>***NAPX*/AuthInfo/AuthSecret**  
 Optional. Specifies the password used during authentication.
 
-Queries of this field will return a string composed of sixteen asterisks (\*).
+Queries of this field will return a string composed of 16 asterisks (\*).
 
 <a href="" id="napx-bearer"></a>***NAPX*/Bearer**  
 Node.
 
 <a href="" id="napx-bearer-bearertype"></a>***NAPX*/Bearer/BearerType**  
-Required. Specifies the network type of the destination network. This can be set to GPRS, CDMA2000, WCDMA, TDMA, CSD, DTPT, WiFi.
+Required. Specifies the network type of the destination network. This parameter's value can be set to GPRS, CDMA2000, WCDMA, TDMA, CSD, DTPT, WiFi.
 
-## Related topics
-
+## Related articles
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
  
-
- 
-
-
-
-
-
-

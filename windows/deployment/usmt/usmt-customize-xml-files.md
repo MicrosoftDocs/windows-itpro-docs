@@ -3,13 +3,13 @@ title: Customize USMT XML Files (Windows 10)
 description: Learn how to customize USMT XML files. Also, learn about the migration XML files that are included with USMT.
 ms.assetid: d58363c1-fd13-4f65-8b91-9986659dc93e
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -120,7 +120,7 @@ To exclude a component from the Config.xml file, set the **migrate** value to **
 
 -   For more information about each .xml element, see the [XML Elements Library](usmt-xml-elements-library.md) topic.
 
--   For answers to common questions, see ".xml files" in the [Frequently Asked Questions](usmt-faq.md) topic.
+-   For answers to common questions, see ".xml files" in the [Frequently Asked Questions](usmt-faq.yml) topic.
 
 ## Related topics
 
