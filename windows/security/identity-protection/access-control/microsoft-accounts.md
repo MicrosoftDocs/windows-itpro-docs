@@ -1,12 +1,12 @@
 ---
 title: Microsoft Accounts (Windows 10)
 description: Microsoft Accounts
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
@@ -60,7 +60,7 @@ Credential information is encrypted twice. The first encryption is based on the 
 
     Blank passwords are not allowed.
 
-    For more information, see [Microsoft Account Security Overview](https://www.microsoft.com/account/security/default.aspx).
+    For more information, see [How to help keep your Microsoft account safe and secure](https://support.microsoft.com/account-billing/how-to-help-keep-your-microsoft-account-safe-and-secure-628538c2-7006-33bb-5ef4-c917657362b9).
 
 -   **Secondary proof of identity is required**.
 
@@ -185,6 +185,6 @@ Within your organization, you can set application control policies to regulate a
 
 ## See also
 
-- [Managing Privacy: Using a Microsoft Account to Logon and Resulting Internet Communication](https://technet.microsoft.com/library/jj884082(v=ws.11).aspx)
+- [Managing Privacy: Using a Microsoft Account to Logon and Resulting Internet Communication](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj884082(v=ws.11))
 
 - [Access Control Overview](access-control.md)

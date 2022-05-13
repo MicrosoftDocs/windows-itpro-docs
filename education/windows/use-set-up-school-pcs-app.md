@@ -103,7 +103,7 @@ We strongly recommend that you avoid changing preset policies. Changes can slow 
 
 The **Set up School PCs** app guides you through the configuration choices for the student PCs.  To begin, open the app on your PC and click **Get started**.   
     
-   ![Launch the Set up School PCs app](images/suspc_getstarted_050817.png)  
+   ![Launch the Set up School PCs app.](images/suspc_getstarted_050817.png)  
 
 ### Package name  
 Type a unique name to help distinguish your school's provisioning packages. The name appears:  

@@ -1,17 +1,17 @@
 ---
-title: Guidelines for choosing an app for assigned access (Windows 10)
+title: Guidelines for choosing an app for assigned access (Windows 10/11)
 description: The following guidelines may help you choose an appropriate Windows app for your assigned access experience.
 keywords: ["kiosk", "lockdown", "assigned access"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: dansimp
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: aaroncz
 ms.topic: article
-ms.date: 10/02/2018
-ms.reviewer: 
-manager: dansimp
+ms.reviewer: sybruckm
+manager: dougeby
+ms.collection: highpri
 ---
 
 # Guidelines for choosing an app for assigned access (kiosk mode)
@@ -19,7 +19,8 @@ manager: dansimp
 
 **Applies to**
 
--   Windows 10
+- Windows 10
+- Windows 11
 
 
 You can use assigned access to restrict customers at your business to using only one Windows app so your device acts like a kiosk.  Administrators can use assigned access to restrict a selected user account to access a single Windows app. You can choose almost any Windows app for assigned access; however, some apps may not provide a good user experience.
@@ -28,11 +29,11 @@ The following guidelines may help you choose an appropriate Windows app for your
 
 ## General guidelines
 
-- Windows apps must be provisioned or installed for the assigned access account before they can be selected as the assigned access app. [Learn how to provision and install apps](https://msdn.microsoft.com/library/windows/hardware/mt228170.aspx#install_your_apps). 
+- Windows apps must be provisioned or installed for the assigned access account before they can be selected as the assigned access app. [Learn how to provision and install apps](/windows/client-management/mdm/enterprise-app-management#install_your_apps). 
 
 - Updating a Windows app can sometimes change the Application User Model ID (AUMID) of the app. If this happens, you must update the assigned access settings to launch the updated app, because assigned access uses the AUMID to determine which app to launch. 
 
-- Apps that are generated using the [Desktop App Converter (Desktop Bridge)](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter) cannot be used as kiosk apps.
+- Apps that are generated using the [Desktop App Converter (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter) cannot be used as kiosk apps.
 
 
 
@@ -45,9 +46,11 @@ Avoid selecting Windows apps that are designed to launch other apps as part of t
 
 ## Guidelines for web browsers
 
-In Windows 10, version 1809, Microsoft Edge includes support for kiosk mode. [Learn how to deploy Microsoft Edge kiosk mode.](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy)
+In Windows 10, version 1909, assigned access adds support for the new Microsoft Edge kiosk mode. [Learn how to deploy Microsoft Edge kiosk mode](/DeployEdge/microsoft-edge-configure-kiosk-mode).
 
-In Windows 10, version 1803 and later, you can install the **Kiosk Browser** app from Microsoft to use as your kiosk app. For digital signage scenarios, you can configure **Kiosk Browser** to navigate to a URL and show only that content -- no navigation buttons, no address bar, etc. For kiosk scenarios, you can configure additional settings, such as allowed and blocked URLs, navigation buttons, and end session buttons. For example, you could configure your kiosk to show the online catalog for your store, where customers can navigate between departments and items, but aren’t allowed to go to a competitor's website. 
+In Windows 10, version 1809, Microsoft Edge Legacy includes support for kiosk mode. [Learn how to deploy Microsoft Edge kiosk mode](/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy).
+
+In Windows client, you can install the **Kiosk Browser** app from Microsoft to use as your kiosk app. For digital signage scenarios, you can configure **Kiosk Browser** to navigate to a URL and show only that content -- no navigation buttons, no address bar, etc. For kiosk scenarios, you can configure additional settings, such as allowed and blocked URLs, navigation buttons, and end session buttons. For example, you could configure your kiosk to show the online catalog for your store, where customers can navigate between departments and items, but aren’t allowed to go to a competitor's website. 
 
 >[!NOTE]
 >Kiosk Browser supports a single tab. If a website has links that open a new tab, those links will not work with Kiosk Browser. Kiosk Browser does not support .pdfs.
@@ -55,11 +58,11 @@ In Windows 10, version 1803 and later, you can install the **Kiosk Browser** app
 >Kiosk Browser cannot access intranet websites.
 
 
-**Kiosk Browser** must be downloaded for offline licensing using Microsoft Store For Business. You can deploy **Kiosk Browser** to devices running Windows 10, version 1803 (Pro, Business, Enterprise, and Education).
+**Kiosk Browser** must be downloaded for offline licensing using Microsoft Store For Business. You can deploy **Kiosk Browser** to devices running Windows 10, version 1803 (Pro, Business, Enterprise, and Education) and Windows 11.
 
-1. [Get **Kiosk Browser** in Microsoft Store for Business with offline license type.](https://docs.microsoft.com/microsoft-store/acquire-apps-microsoft-store-for-business#acquire-apps)
-2. [Deploy **Kiosk Browser** to kiosk devices.](https://docs.microsoft.com/microsoft-store/distribute-offline-apps)
-3. Configure policies using settings from the Policy Configuration Service Provider (CSP) for [KioskBrowser](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-kioskbrowser). These settings can be configured using your MDM service provider, or [in a provisioning package](provisioning-packages/provisioning-create-package.md). In Windows Configuration Designer, the settings are located in **Policies > KioskBrowser** when you select advanced provisioning for Windows desktop editions.
+1. [Get **Kiosk Browser** in Microsoft Store for Business with offline license type.](/microsoft-store/acquire-apps-microsoft-store-for-business#acquire-apps)
+2. [Deploy **Kiosk Browser** to kiosk devices.](/microsoft-store/distribute-offline-apps)
+3. Configure policies using settings from the Policy Configuration Service Provider (CSP) for [KioskBrowser](/windows/client-management/mdm/policy-csp-kioskbrowser). These settings can be configured using your MDM service provider, or [in a provisioning package](provisioning-packages/provisioning-create-package.md). In Windows Configuration Designer, the settings are located in **Policies > KioskBrowser** when you select advanced provisioning for Windows desktop editions.
 
 >[!NOTE]
 >If you configure the kiosk using a provisioning package, you must apply the provisioning package after the device completes the out-of-box experience (OOBE).
@@ -81,14 +84,15 @@ Restart on Idle Time | Specify when Kiosk Browser should restart in a fresh stat
 > 
 > 1. Create the provisioning package. When ready to export, close the project in Windows Configuration Designer.
 > 2. Open the customizations.xml file in the project folder (e.g C:\Users\name\Documents\Windows Imaging and Configuration Designer (WICD)\Project_18). 
-> 3. Insert the null character string in between each URL (e.g www.bing.com`&#xF000;`www.contoso.com). 
+> 3. Insert the null character string in between each URL 
+(e.g `www.bing.com` and `www.contoso.com`). 
 > 4. Save the XML file.
 > 5. Open the project again in Windows Configuration Designer.
 > 6. Export the package. Ensure you do not revisit the created policies under Kiosk Browser or else the null character will be removed.
 > 
 > 
 > [!TIP]
-> To enable the **End Session** button for Kiosk Browser in Intune, you must [create a custom OMA-URI policy](https://docs.microsoft.com/intune/custom-settings-windows-10) with the following information:
+> To enable the **End Session** button for Kiosk Browser in Intune, you must [create a custom OMA-URI policy](/intune/custom-settings-windows-10) with the following information:
 > - OMA-URI: ./Vendor/MSFT/Policy/Config/KioskBrowser/EnableEndSessionButton
 > - Data type: Integer
 > - Value: 1
@@ -119,8 +123,8 @@ The following table describes the results for different combinations of blocked 
 
 Blocked URL rule |  Block URL exception rule | Result
 --- | --- | ---
-`*` | `contoso.com`<br>`fabrikam.com` | All requests are blocked unless it is to contoso.com, fabrikam.com, or any of their subdomains.
-`contoso.com` | `mail.contoso.com`<br>`.contoso.com`<br>`.www.contoso.com` | Block all requests to contoso.com, except for the main page and its mail subdomain.
+`*` | `contoso.com`<br>`fabrikam.com` | All requests are blocked unless it is to `contoso.com, fabrikam.com,` or any of their subdomains.
+`contoso.com` | `mail.contoso.com`<br>`.contoso.com`<br>`.www.contoso.com` | Block all requests to `contoso.com,` except for the main page and its mail subdomain.
 `youtube.com` | `youtube.com/watch?v=v1`<br>`youtube.com/watch?v=v2` | Blocks all access to youtube.com except for the specified videos (v1 and v2).
 
 The following table gives examples for blocked URLs. 
@@ -128,11 +132,11 @@ The following table gives examples for blocked URLs.
 
 |          Entry           |                                    Result                                     |
 |--------------------------|-------------------------------------------------------------------------------|
-|      `contoso.com`       | Blocks all requests to contoso.com, www.contoso.com, and sub.www.contoso.com  |
+|      `contoso.com`       | Blocks all requests to contoso.com, `www.contoso.com,` and sub.www.contoso.com  |
 |       `https://*`        |                   Blocks all HTTPS requests to any domain.                    |
-|    `mail.contoso.com`    | Blocks requests to mail.contoso.com but not to www.contoso.com or contoso.com |
+|    `mail.contoso.com`    | Blocks requests to mail.contoso.com but not to `www.contoso.com` or `contoso.com` |
 |      `.contoso.com`      |    Blocks contoso.com but not its subdomains, like subdomain.contoso.com.     |
-|    `.www.contoso.com`    |                Blocks www.contoso.com but not its subdomains.                 |
+|    `.www.contoso.com`    |                Blocks `www.contoso.com` but not its subdomains.                 |
 |           `*`            |    Blocks all requests except for URLs in the Blocked URL Exceptions list.    |
 |         `*:8080`         |                       Blocks all requests to port 8080.                       |
 |   `contoso.com/stuff`    |         Blocks all requests to contoso.com/stuff and its subdomains.          |
@@ -145,7 +149,7 @@ The following table gives examples for blocked URLs.
 
 You can create your own web browser Windows app by using the WebView class. Learn more about developing your own web browser app:
 - [Creating your own browser with HTML and JavaScript](https://blogs.windows.com/msedgedev/2015/08/27/creating-your-own-browser-with-html-and-javascript/) 
-- [WebView class](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.webview.aspx)
+- [WebView class](/uwp/api/Windows.UI.Xaml.Controls.WebView)
 - [A web browser built with JavaScript as a Windows app](https://github.com/MicrosoftEdge/JSBrowser/tree/v1.0)
 
 
@@ -153,6 +157,12 @@ You can create your own web browser Windows app by using the WebView class. Lear
 ## Secure your information
 
 Avoid selecting Windows apps that may expose the information you don’t want to show in your kiosk, since kiosk usually means anonymous access and locates in a public setting like a shopping mall. For example, an app that has a file picker allows the user to gain access to files and folders on the user's system, avoid selecting these types of apps if they provide unnecessary data access.
+
+## Customize your breakout sequence
+
+Assigned access allows for the specification of a new breakout sequence. A breakout sequence is a keyboard shortcut that stops the kiosk experience and brings the user back to the lock screen. By default the breakout sequence is configured to be ctrl+alt+delete, a common Windows keyboard shortcut. It is recommended that this is set to a non-standard Windows shortcut to prevent disruptions in the kiosk experience.
+
+There is currently no user interface for customizing the breakout sequence in Windows settings, so it would need to be specified in a provisioning method where an XML format such as MDM is used.
 
 ## App configuration
 
@@ -162,20 +172,10 @@ Check the guidelines published by your selected app and set up accordingly.
 
 ## Develop your kiosk app
 
-Assigned access in Windows 10 leverages the new lock framework. When an assigned access user signs in, the selected kiosk app is launched above the lock screen. The kiosk app is running as an above lock screen app. 
+Assigned access in Windows client leverages the new lock framework. When an assigned access user signs in, the selected kiosk app is launched above the lock screen. The kiosk app is running as an above lock screen app. 
 
-Follow the [best practices guidance for developing a kiosk app for assigned access](https://msdn.microsoft.com/library/windows/hardware/mt633799%28v=vs.85%29.aspx). 
+Follow the [best practices guidance for developing a kiosk app for assigned access](/windows-hardware/drivers/partnerapps/create-a-kiosk-app-for-assigned-access). 
 
 ## Test your assigned access experience
 
 The above guidelines may help you select or develop an appropriate Windows app for your assigned access experience. Once you have selected your app, we recommend that you thoroughly test the assigned access experience to ensure that your device provides a good customer experience.
-
-
-
-
-
-
-
-
-
-

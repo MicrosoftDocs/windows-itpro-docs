@@ -4,13 +4,13 @@ description: This section describes the Certificates settings that you can confi
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: aaroncz
 ms.topic: article
 ms.date: 09/06/2017
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # Certificates (Windows Configuration Designer reference)
@@ -25,9 +25,9 @@ Use to deploy Root Certificate Authority (CA) certificates to devices. The follo
 
 ## Applies to
 
-| Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| All setting groups | X |  X | X | X | X |
+| Setting groups | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| All setting groups | ✔️ |  ✔️ | ✔️ | ✔️ |
 
 
 ## CACertificates
@@ -71,4 +71,4 @@ Use to deploy Root Certificate Authority (CA) certificates to devices. The follo
 ## Related topics
 
 
-- [RootCATrustedCertficates configuration service provider (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/rootcacertificates-csp)
+- [RootCATrustedCertficates configuration service provider (CSP)](/windows/client-management/mdm/rootcacertificates-csp)
