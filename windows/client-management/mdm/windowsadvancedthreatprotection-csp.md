@@ -82,7 +82,7 @@ Supported operation is Get.
 
 The following list shows the supported values:
 
-- 0 (default) – Not onboarded.
+- 0 (default) – Not onboarded
 - 1 – Onboarded
 
 <a href="" id="healthstate-orgid"></a>**HealthState/OrgId**  

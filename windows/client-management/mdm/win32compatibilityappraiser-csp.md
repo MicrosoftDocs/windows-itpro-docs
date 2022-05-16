@@ -98,10 +98,10 @@ An integer value representing whether the installed versions of the Compatibilit
 
 The values are:
   
-- 0 == Neither the code nor data is of a sufficient version  
-- 1 == The code version is insufficient but the data version is sufficient 
-- 2 == The code version is sufficient but the data version is insufficient
-- 3 == Both the code and data are of a sufficient version
+- 0 == Neither the code nor data is of a sufficient version. 
+- 1 == The code version is insufficient but the data version is sufficient.
+- 2 == The code version is sufficient but the data version is insufficient.
+- 3 == Both the code and data are of a sufficient version.
 
 Value type is integer. 
 
