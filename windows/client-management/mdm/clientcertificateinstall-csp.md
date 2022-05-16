@@ -35,7 +35,7 @@ You can only set PFXKeyExportable to true if KeyLocation=3. For any other KeyLoc
 
 The following example shows the ClientCertificateInstall configuration service provider in tree format.
 
-```
+```console
 ./Vendor/MSFT
 ClientCertificateInstall
 ----PFXCertInstall
