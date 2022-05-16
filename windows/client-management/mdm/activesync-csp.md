@@ -37,7 +37,7 @@ The `./Vendor/MSFT/ActiveSync path` is deprecated, but will continue to work in 
 
 The following example shows the ActiveSync configuration service provider management objects in tree format as used by Open Mobile Alliance Device Management (OMA DM), OMA Client Provisioning, and Enterprise DM.
 
-```
+```console
 ./Vendor/MSFT
 ActiveSync
 ----Accounts

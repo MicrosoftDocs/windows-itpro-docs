@@ -29,7 +29,7 @@ Existing WDAC policies deployed using the AppLocker CSP's CodeIntegrity node can
 
 The following example shows the ApplicationControl CSP in tree format.
 
-```
+```console
 ./Vendor/MSFT
 ApplicationControl
 ----Policies

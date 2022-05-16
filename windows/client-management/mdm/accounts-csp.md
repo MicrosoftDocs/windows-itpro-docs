@@ -27,7 +27,7 @@ The Accounts configuration service provider (CSP) is used by the enterprise (1) 
 
 The following syntax shows the Accounts configuration service provider in tree format.
 
-```
+```console
 ./Device/Vendor/MSFT
 Accounts
 ----Domain

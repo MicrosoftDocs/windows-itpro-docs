@@ -40,7 +40,7 @@ In Windows 10, version 1709, the AssignedAccess configuration service provider (
 
 The following example shows the AssignedAccess configuration service provider in tree format
 
-```
+```console
 ./Vendor/MSFT
 AssignedAccess
 ----KioskModeApp

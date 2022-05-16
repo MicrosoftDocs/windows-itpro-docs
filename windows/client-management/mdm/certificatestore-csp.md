@@ -34,7 +34,7 @@ For the CertificateStore CSP, you can't use the Replace command unless the node 
 
 The following example shows the CertificateStore configuration service provider management object in tree format as used by both Open Mobile Alliance Device Management (OMA DM) and OMA Client Provisioning.
 
-```
+```console
 ./Vendor/MSFT
 CertificateStore
 ----ROOT

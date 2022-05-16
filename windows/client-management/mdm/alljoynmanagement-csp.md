@@ -25,7 +25,7 @@ For the firewall settings, note that PublicProfile and PrivateProfile are mutual
 
 The following example shows the AllJoynManagement configuration service provider in tree format
 
-```
+```console
 ./Vendor/MSFT
 AllJoynManagement
 ----Configurations
