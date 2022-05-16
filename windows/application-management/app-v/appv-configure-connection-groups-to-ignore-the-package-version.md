@@ -2,9 +2,6 @@
 title: How to make a connection group ignore the package version (Windows 10/11)
 description: Learn how to make a connection group ignore the package version with the App-V Server Management Console.
 author: aczechowski
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 06/18/2018
 ms.reviewer: 
@@ -64,6 +61,6 @@ For more information, see [How to manage App-V packages running on a stand-alone
 
 
 
-## Related topics
+## Related articles
 
 - [Managing connection groups](appv-managing-connection-groups.md)

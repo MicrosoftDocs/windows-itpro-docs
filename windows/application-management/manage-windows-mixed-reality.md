@@ -3,10 +3,7 @@ title: Enable or block Windows Mixed Reality apps in the enterprise (Windows 10/
 description: Learn how to enable Windows Mixed Reality apps in WSUS or block the Windows Mixed Reality portal in enterprises.
 ms.reviewer: 
 manager: dougeby
-keyboards: ["mr", "mr portal", "mixed reality portal", "mixed reality"]
 ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
 ms.localizationpriority: medium
 author: aczechowski
 ms.author: aaroncz
@@ -102,6 +99,6 @@ In the following example, the **Id** can be any generated GUID and the **Name** 
 ```
 
 
-## Related topics
+## Related articles
 
 - [Mixed reality](https://developer.microsoft.com/windows/mixed-reality/mixed_reality)
