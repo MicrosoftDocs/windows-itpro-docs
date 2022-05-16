@@ -2,13 +2,13 @@
 title: Deploying Certificates to Key Trust Users to Enable RDP
 description: Learn how to deploy certificates to a Key Trust user to enable remote desktop with supplied credentials
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, cert-trust, device, registration, unlock, remote desktop, RDP
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -22,6 +22,7 @@ ms.reviewer:
 **Applies To**
 
 - Windows 10, version 1703 or later
+- Windows 11
 - Hybrid deployment
 - Key trust
 
@@ -51,7 +52,7 @@ Three approaches are documented here:
 
 1. Right-click the **Smartcard Logon** template and click **Duplicate Template**
 
-    ![Duplicating Smartcard Template](images/rdpcert/duplicatetemplate.png)
+    ![Duplicating Smartcard Template.](images/rdpcert/duplicatetemplate.png)
 
 1. On the **Compatibility** tab:
     1. Clear the **Show resulting changes** check box
@@ -105,11 +106,11 @@ Three approaches are documented here:
 
 1. Update the certificate template by executing the following command:
 
-    certutil - dsaddtemplate \<TemplateName\>.txt
+    certutil -dsaddtemplate \<TemplateName\>.txt
 
 1. In the Certificate Authority console, right-click **Certificate Templates**, select **New**, and select **Certificate Template to Issue**
 
-    ![Selecting Certificate Template to Issue](images/rdpcert/certificatetemplatetoissue.png)
+    ![Selecting Certificate Template to Issue.](images/rdpcert/certificatetemplatetoissue.png)
 
 1. From the list of templates, select the template you previously created (**WHFB Certificate Authentication**) and click **OK**. It can take some time for the template to replicate to all servers and become available in this list.
 
@@ -123,7 +124,7 @@ Three approaches are documented here:
 
 1. In the left pane of the MMC, right-click **Personal**, click **All Tasks**, and then click **Request New Certificate…**
 
-    ![Request a new certificate](images/rdpcert/requestnewcertificate.png)
+    ![Request a new certificate.](images/rdpcert/requestnewcertificate.png)
 
 1. On the Certificate Enrollment screen, click **Next**.
 
@@ -135,9 +136,9 @@ Three approaches are documented here:
 
 ## Deploying a certificate to Hybrid or Azure AD Joined Devices using Simple Certificate Enrollment Protocol (SCEP) via Intune
 
-Deploying a certificate to Azure AD Joined Devices may be achieved with the Simple Certificate Enrollment Protocol (SCEP) via Intune. For guidance deploying the required infrastructure, refer to [Configure infrastructure to support SCEP certificate profiles with Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/certificates-scep-configure).
+Deploying a certificate to Azure AD Joined Devices may be achieved with the Simple Certificate Enrollment Protocol (SCEP) via Intune. For guidance deploying the required infrastructure, refer to [Configure infrastructure to support SCEP certificate profiles with Microsoft Intune](/mem/intune/protect/certificates-scep-configure).
 
-Next you should deploy the root CA certificate (and any other intermediate certificate authority certificates) to Azure AD Joined Devices using a Trusted root certificate profile with Intune. For guidance, refer to [Create trusted certificate profiles in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/certificates-trusted-root).
+Next you should deploy the root CA certificate (and any other intermediate certificate authority certificates) to Azure AD Joined Devices using a Trusted root certificate profile with Intune. For guidance, refer to [Create trusted certificate profiles in Microsoft Intune](/mem/intune/protect/certificates-trusted-root).
 
 Once these requirements have been met, a new device configuration profile may be configured from Intune that provisions a certificate for the user of the device. Proceed as follows:
 
@@ -194,7 +195,7 @@ Once the configuration profile has been created, targeted clients will receive t
 
 ## Using non-Microsoft Enterprise Certificate Authorities
 
-If you are using a Public Key Infrastructure that uses non-Microsoft services, the certificate templates published to the on-premises Active Directory may not be available. For guidance with integration of Intune/SCEP with non-Microsoft PKI deployments, refer to [Use third-party certification authorities (CA) with SCEP in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/certificate-authority-add-scep-overview).
+If you are using a Public Key Infrastructure that uses non-Microsoft services, the certificate templates published to the on-premises Active Directory may not be available. For guidance with integration of Intune/SCEP with non-Microsoft PKI deployments, refer to [Use third-party certification authorities (CA) with SCEP in Microsoft Intune](/mem/intune/protect/certificate-authority-add-scep-overview).
 
 As an alternative to using SCEP or if none of the previously covered solutions will work in your environment, you can manually generate Certificate Signing Requests (CSR) for submission to your PKI. To assist with this approach, you can use the [Generate-CertificateRequest](https://www.powershellgallery.com/packages/Generate-CertificateRequest) PowerShell commandlet.
 

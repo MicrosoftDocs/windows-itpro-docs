@@ -2,24 +2,24 @@
 title: Deploy Windows 10 using PXE and Configuration Manager (Windows 10)
 description: In this topic, you will learn how to deploy Windows 10 using Microsoft Endpoint Manager deployment packages and task sequences.
 ms.assetid: fb93f514-5b30-4f4b-99dc-58e6860009fa
-ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 keywords: deployment, image, UEFI, task sequence
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Deploy Windows 10 using PXE and Configuration Manager
 
 **Applies to**
 
--   Windows 10
+-   Windows 10
 
 In this topic, you will learn how to deploy Windows 10 using Microsoft Endpoint Manager deployment packages and task sequences. This topic will walk you through the process of deploying the Windows 10 Enterprise image to a Unified Extensible Firmware Interface (UEFI) computer named PC0001. An existing Configuration Manager infrastructure that is integrated with MDT is used for the procedures in this topic.
 
@@ -65,7 +65,7 @@ All server and client computers referenced in this guide are on the same subnet.
     >[!NOTE]
     >You also can use the built-in reports to get information about ongoing deployments. For example, a task sequence report gives you a quick overview of the task sequence progress.
 
-    ![MDT monitoring](../images/pc0001-monitor.png)
+    ![MDT monitoring.](../images/pc0001-monitor.png)
 
     Monitoring the deployment with MDT.
 
@@ -73,20 +73,20 @@ All server and client computers referenced in this guide are on the same subnet.
 
 Examples are provided below of various stages of deployment:
 
-![pc0001a](../images/pc0001a.png)<br>
-![pc0001b](../images/pc0001b.png)<br>
-![pc0001c](../images/pc0001c.png)<br>
-![pc0001d](../images/pc0001d.png)<br>
-![pc0001e](../images/pc0001e.png)<br>
-![pc0001f](../images/pc0001f.png)<br>
-![pc0001g](../images/pc0001g.png)<br>
-![pc0001h](../images/pc0001h.png)<br>
-![pc0001i](../images/pc0001i.png)<br>
-![pc0001j](../images/pc0001j.png)<br>
-![pc0001k](../images/pc0001k.png)<br>
-![pc0001l](../images/pc0001l.png)<br>
-![pc0001m](../images/pc0001m.png)<br>
-![pc0001n](../images/pc0001n.png)
+![pc0001a.](../images/pc0001a.png)<br>
+![pc0001b.](../images/pc0001b.png)<br>
+![pc0001c.](../images/pc0001c.png)<br>
+![pc0001d.](../images/pc0001d.png)<br>
+![pc0001e.](../images/pc0001e.png)<br>
+![pc0001f.](../images/pc0001f.png)<br>
+![pc0001g.](../images/pc0001g.png)<br>
+![pc0001h.](../images/pc0001h.png)<br>
+![pc0001i.](../images/pc0001i.png)<br>
+![pc0001j.](../images/pc0001j.png)<br>
+![pc0001k.](../images/pc0001k.png)<br>
+![pc0001l.](../images/pc0001l.png)<br>
+![pc0001m.](../images/pc0001m.png)<br>
+![pc0001n.](../images/pc0001n.png)
 
 Next, see [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md).
 
@@ -97,6 +97,6 @@ Next, see [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Ma
 [Add a Windows 10 operating system image using Configuration Manager](add-a-windows-10-operating-system-image-using-configuration-manager.md)<br>
 [Create an application to deploy with Windows 10 using Configuration Manager](create-an-application-to-deploy-with-windows-10-using-configuration-manager.md)<br>
 [Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager](add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager.md)<br>
-[Create a task sequence with Configuration Manager and MDT](../deploy-windows-mdt/create-a-task-sequence-with-configuration-manager-and-mdt.md)<br>
+[Create a task sequence with Configuration Manager and MDT](./create-a-task-sequence-with-configuration-manager-and-mdt.md)<br>
 [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md)<br>
 [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](replace-a-windows-7-client-with-windows-10-using-configuration-manager.md)<br>

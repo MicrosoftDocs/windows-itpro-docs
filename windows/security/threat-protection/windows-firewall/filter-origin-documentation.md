@@ -13,7 +13,7 @@ ms.collection:
   - m365-security-compliance
   - m365-initiative-windows-security
 ms.topic: troubleshooting
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Filter origin audit log improvements
@@ -22,7 +22,7 @@ Debugging packet drops is a continuous issue to Windows customers. In the past, 
 
 Typically, when investigating packet drop events, a customer would use the field `Filter Run-Time ID` from Windows Filtering Platform (WFP) audits 5157 or 5152. 
 
-![Event properties](images/event-properties-5157.png)
+![Event properties.](images/event-properties-5157.png)
 
 The filter ID uniquely identifies the filter that caused the packet drop. The filter ID can be searched in the WFP state dump output to trace back to the Firewall rule where the filter originated from. 
 
@@ -66,14 +66,14 @@ To enable a specific audit event, run the corresponding command in an administra
 
 |**Audit #**|**Enable command**|**Link**|
 |:-----|:-----|:-----|
-|**5157**|`Auditpol /set /category:"System" /SubCategory:"Filtering Platform Connection" /success:enable /failure:enable`|[5157(F): The Windows Filtering Platform has blocked a connection.](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5157)|
-|**5152**|`Auditpol /set /category:"System" /SubCategory:"Filtering Platform Connection" /success:enable /failure:enable`|[5152(F): The Windows Filtering Platform blocked a packet.](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5152)|
+|**5157**|`Auditpol /set /category:"System" /SubCategory:"Filtering Platform Connection" /success:enable /failure:enable`|[5157(F): The Windows Filtering Platform has blocked a connection.](../auditing/event-5157.md)|
+|**5152**|`Auditpol /set /category:"System" /SubCategory:"Filtering Platform Packet Drop" /success:enable /failure:enable`|[5152(F): The Windows Filtering Platform blocked a packet.](../auditing/event-5152.md)|
 
 ## Example flow of debugging packet drops with filter origin 
 
 As the audit surfaces `Filter Origin` and `Interface Index`, the network admin can determine the root cause of the network packet drop and the interface it happened on.
 
-![Event audit](images/event-audit-5157.png)
+![Event audit.](images/event-audit-5157.png)
 
 The next sections are divided by `Filter Origin` type, the value is either a rule name or the name of one of the default block filters. If the filter origin is one of the default block filters, skip to the section, **Firewall default block filters**. Otherwise, continue to the section **Firewall rules**.
 
@@ -86,7 +86,7 @@ Get-NetFirewallRule -Name “<Filter Origin>”
 Get-NetFirewallRule -Name " {A549B7CF-0542-4B67-93F9-EEBCDD584377} "
 ```
 
-![Firewall rule](images/firewallrule.png)
+![Firewall rule.](images/firewallrule.png)
 
 After identifying the rule that caused the drop, the network admin can now modify/disable the rule to allow the traffic they want through command prompt or using the Windows Defender UI. The network admin can find the rule in the UI with the rule’s `DisplayName`.
 
@@ -99,9 +99,9 @@ After identifying the rule that caused the drop, the network admin can now modif
 
 Network drop events from the AppContainer loopback block filter origin occur when localhost loopback is not enabled properly for the Universal Windows Platform (UWP) app.
 
-To enable localhost loopback in a local debugging environment, see [Communicating with localhost](https://docs.microsoft.com/windows/iot-core/develop-your-app/loopback).
+To enable localhost loopback in a local debugging environment, see [Communicating with localhost](/windows/iot-core/develop-your-app/loopback).
 
-To enable localhost loopback for a published app that requires loopback access to communicate with another UWP or packaged win32 app, see [uap4:LoopbackAccessRules](https://docs.microsoft.com/uwp/schemas/appxpackage/uapmanifestschema/element-uap4-loopbackaccessrules).
+To enable localhost loopback for a published app that requires loopback access to communicate with another UWP or packaged win32 app, see [uap4:LoopbackAccessRules](/uwp/schemas/appxpackage/uapmanifestschema/element-uap4-loopbackaccessrules).
 
 **Boottime default**
 
@@ -118,7 +118,7 @@ Get-NetIPInterface –InterfaceIndex <Interface Index>
 Get-NetIPInterface –InterfaceIndex 5
 ```
 
-![Quarantine default block filter](images/quarantine-default-block-filter.png)
+![Quarantine default block filter.](images/quarantine-default-block-filter.png)
 
 To learn more about the quarantine feature, see [Quarantine behavior](quarantine.md).
 
@@ -139,7 +139,7 @@ To generate a list of all the query user block rules, you can run the following 
 Get-NetFirewallRule | Where {$_.Name -like "*Query User*"}
 ```
 
-![Query user default block filter](images/query-user-default-block-filters.png)
+![Query user default block filter.](images/query-user-default-block-filters.png)
 
 The query user pop-up feature is enabled by default. 
 
@@ -158,15 +158,14 @@ Set-NetFirewallProfile -NotifyOnListen False
 
 Network drops from stealth filters are typically made to prevent port scanning.
 
-To disable stealth-mode, see [Disable stealth mode in Windows](https://docs.microsoft.com/troubleshoot/windows-server/networking/disable-stealth-mode).
+To disable stealth-mode, see [Disable stealth mode in Windows](/troubleshoot/windows-server/networking/disable-stealth-mode).
 
 **UWP default**
 
 Network drops from Universal Windows Platform (UWP) default inbound/outbound block filters are often caused by the UWP app not being configured correctly (that is, the UWP app is missing the correct capability tokens or loopback is not enabled) or the private range is configured incorrectly. 
 
-For more information on how to debug drops caused by UWP default block filters, see [Troubleshooting UWP App Connectivity Issues](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/troubleshooting-uwp-firewall).
+For more information on how to debug drops caused by UWP default block filters, see [Troubleshooting UWP App Connectivity Issues](./troubleshooting-uwp-firewall.md).
 
 **WSH default**
 
 Network drops from Windows Service Hardening (WSH) default filters indicate that there wasn’t an explicit Windows Service Hardening allow rule to allow network traffic for the protected service. The service owner will need to configure allow rules for the service if the block is not expected.
-
