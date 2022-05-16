@@ -108,7 +108,7 @@ This policy setting allows you to manage whether the Windows Remote Management (
 
 If you enable this policy setting, the WinRM client uses Basic authentication. If WinRM is configured to use HTTP transport, the user name and password are sent over the network as clear text.
 
-If you disable or do not configure this policy setting, the WinRM client does not use Basic authentication.
+If you disable or don't configure this policy setting, the WinRM client doesn't use Basic authentication.
 
 <!--/Description-->
 
@@ -154,7 +154,7 @@ This policy setting allows you to manage whether the Windows Remote Management (
 
 If you enable this policy setting, the WinRM service accepts Basic authentication from a remote client.
 
-If you disable or do not configure this policy setting, the WinRM service does not accept Basic authentication from a remote client.
+If you disable or don't configure this policy setting, the WinRM service doesn't accept Basic authentication from a remote client.
 
 <!--/Description-->
 
@@ -200,7 +200,7 @@ This policy setting allows you to manage whether the Windows Remote Management (
 
 If you enable this policy setting, the WinRM client uses CredSSP authentication.
 
-If you disable or do not configure this policy setting, the WinRM client does not use CredSSP authentication.
+If you disable or don't configure this policy setting, the WinRM client doesn't use CredSSP authentication.
 
 <!--/Description-->
 
@@ -246,7 +246,7 @@ This policy setting allows you to manage whether the Windows Remote Management (
 
 If you enable this policy setting, the WinRM service accepts CredSSP authentication from a remote client.
 
-If you disable or do not configure this policy setting, the WinRM service does not accept CredSSP authentication from a remote client.
+If you disable or don't configure this policy setting, the WinRM service doesn't accept CredSSP authentication from a remote client.
 
 <!--/Description-->
 
@@ -294,11 +294,11 @@ If you enable this policy setting, the WinRM service automatically listens on th
 
 To allow WinRM service to receive requests over the network, configure the Windows Firewall policy setting with exceptions for Port 5985 (default port for HTTP).
 
-If you disable or do not configure this policy setting, the WinRM service will not respond to requests from a remote computer, regardless of whether or not any WinRM listeners are configured.
+If you disable or don't configure this policy setting, the WinRM service won't respond to requests from a remote computer, regardless of whether or not any WinRM listeners are configured.
 
 The service listens on the addresses specified by the IPv4 and IPv6 filters. The IPv4 filter specifies one or more ranges of IPv4 addresses, and the IPv6 filter specifies one or more ranges of IPv6addresses. If specified, the service enumerates the available IP addresses on the computer and uses only addresses that fall within one of the filter ranges.
 
-You should use an asterisk (\*) to indicate that the service listens on all available IP addresses on the computer. When \* is used, other ranges in the filter are ignored. If the filter is left blank, the service does not listen on any addresses.
+You should use an asterisk (\*) to indicate that the service listens on all available IP addresses on the computer. When \* is used, other ranges in the filter are ignored. If the filter is left blank, the service doesn't listen on any addresses.
 
 For example, if you want the service to listen only on IPv4 addresses, leave the IPv6 filter empty.
 
@@ -351,7 +351,7 @@ This policy setting allows you to manage whether the Windows Remote Management (
 
 If you enable this policy setting, the WinRM client sends and receives unencrypted messages over the network.
 
-If you disable or do not configure this policy setting, the WinRM client sends or receives only encrypted messages over the network.
+If you disable or don't configure this policy setting, the WinRM client sends or receives only encrypted messages over the network.
 
 <!--/Description-->
 
@@ -397,7 +397,7 @@ This policy setting allows you to manage whether the Windows Remote Management (
 
 If you enable this policy setting, the WinRM client sends and receives unencrypted messages over the network.
 
-If you disable or do not configure this policy setting, the WinRM client sends or receives only encrypted messages over the network.
+If you disable or don't configure this policy setting, the WinRM client sends or receives only encrypted messages over the network.
 
 <!--/Description-->
 
@@ -441,9 +441,9 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) client uses Digest authentication.
 
-If you enable this policy setting, the WinRM client does not use Digest authentication.
+If you enable this policy setting, the WinRM client doesn't use Digest authentication.
 
-If you disable or do not configure this policy setting, the WinRM client uses Digest authentication.
+If you disable or don't configure this policy setting, the WinRM client uses Digest authentication.
 
 <!--/Description-->
 
@@ -487,9 +487,9 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) client uses Negotiate authentication.
 
-If you enable this policy setting, the WinRM client does not use Negotiate authentication.
+If you enable this policy setting, the WinRM client doesn't use Negotiate authentication.
 
-If you disable or do not configure this policy setting, the WinRM client uses Negotiate authentication.
+If you disable or don't configure this policy setting, the WinRM client uses Negotiate authentication.
 
 <!--/Description-->
 
@@ -533,9 +533,9 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) service accepts Negotiate authentication from a remote client.
 
-If you enable this policy setting, the WinRM service does not accept Negotiate authentication from a remote client.
+If you enable this policy setting, the WinRM service doesn't accept Negotiate authentication from a remote client.
 
-If you disable or do not configure this policy setting, the WinRM service accepts Negotiate authentication from a remote client.
+If you disable or don't configure this policy setting, the WinRM service accepts Negotiate authentication from a remote client.
 
 <!--/Description-->
 
@@ -577,13 +577,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether the Windows Remote Management (WinRM) service will not allow RunAs credentials to be stored for any plug-ins.
+This policy setting allows you to manage whether the Windows Remote Management (WinRM) service won't allow RunAs credentials to be stored for any plug-ins.
 
-If you enable this policy setting, the WinRM service will not allow the RunAsUser or RunAsPassword configuration values to be set for any plug-ins.  If a plug-in has already set the RunAsUser and RunAsPassword configuration values, the RunAsPassword configuration value will be erased from the credential store on this computer.
+If you enable this policy setting, the WinRM service won't allow the RunAsUser or RunAsPassword configuration values to be set for any plug-ins.  If a plug-in has already set the RunAsUser and RunAsPassword configuration values, the RunAsPassword configuration value will be erased from the credential store on this computer.
 
-If you disable or do not configure this policy setting, the WinRM service will allow the RunAsUser and RunAsPassword configuration values to be set for plug-ins and the RunAsPassword value will be stored securely.
+If you disable or don't configure this policy setting, the WinRM service will allow the RunAsUser and RunAsPassword configuration values to be set for plug-ins and the RunAsPassword value will be stored securely.
 
-If you enable and then disable this policy setting,any values that were previously configured for RunAsPassword will need to be reset.
+If you enable and then disable this policy setting, any values that were previously configured for RunAsPassword will need to be reset.
 
 <!--/Description-->
 
@@ -625,17 +625,17 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to set the hardening level of the Windows Remote Management (WinRM) service with regard to channel binding tokens.
+This policy setting allows you to set the hardening level of the Windows Remote Management (WinRM) service regarding channel binding tokens.
 
 If you enable this policy setting, the WinRM service uses the level specified in HardeningLevel to determine whether or not to accept a received request, based on a supplied channel binding token.
 
-If you disable or do not configure this policy setting, you can configure the hardening level locally on each computer.
+If you disable or don't configure this policy setting, you can configure the hardening level locally on each computer.
 
 If HardeningLevel is set to Strict, any request not containing a valid channel binding token is rejected.
 
-If HardeningLevel is set to Relaxed (default value), any request containing an invalid channel binding token is rejected. However, a request that does not contain a channel binding token is accepted (though it is not protected from credential-forwarding attacks).
+If HardeningLevel is set to Relaxed (default value), any request containing an invalid channel binding token is rejected. However, a request that doesn't contain a channel binding token is accepted (though it isn't protected from credential-forwarding attacks).
 
-If HardeningLevel is set to None, all requests are accepted (though they are not protected from credential-forwarding attacks).
+If HardeningLevel is set to None, all requests are accepted (though they aren't protected from credential-forwarding attacks).
 
 <!--/Description-->
 
@@ -679,9 +679,9 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) client uses the list specified in TrustedHostsList to determine if the destination host is a trusted entity.
 
-If you enable this policy setting, the WinRM client uses the list specified in TrustedHostsList to determine if the destination host is a trusted entity. The WinRM client uses this list when neither HTTPS nor Kerberos are used to authenticate the identity of the host.
+If you enable this policy setting, the WinRM client uses the list specified in TrustedHostsList to determine if the destination host is a trusted entity. The WinRM client uses this list when HTTPS or Kerberos is used to authenticate the identity of the host.
 
-If you disable or do not configure this policy setting and the WinRM client needs to use the list of trusted hosts, you must configure the list of trusted hosts locally on each computer.
+If you disable or don't configure this policy setting and the WinRM client needs to use the list of trusted hosts, you must configure the list of trusted hosts locally on each computer.
 
 <!--/Description-->
 
@@ -727,7 +727,7 @@ This policy setting turns on or turns off an HTTP listener created for backward 
 
 If you enable this policy setting, the HTTP listener always appears.
 
-If you disable or do not configure this policy setting, the HTTP listener never appears.
+If you disable or don't configure this policy setting, the HTTP listener never appears.
 
 When certain port 80 listeners are migrated to WinRM 2.0, the listener port number changes to 5985.
 
@@ -777,7 +777,7 @@ This policy setting turns on or turns off an HTTPS listener created for backward
 
 If you enable this policy setting, the HTTPS listener always appears.
 
-If you disable or do not configure this policy setting, the HTTPS listener never appears.
+If you disable or don't configure this policy setting, the HTTPS listener never appears.
 
 When certain port 443 listeners are migrated to WinRM 2.0, the listener port number changes to 5986.
 

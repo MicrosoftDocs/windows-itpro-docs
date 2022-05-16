@@ -72,8 +72,8 @@ This policy setting configures the cost of Wireless LAN (WLAN) connections on th
 If this policy setting is enabled, a drop-down list box presenting possible cost values will be active. Selecting one of the following values from the list will set the cost of all WLAN connections on the local machine:
 
 - Unrestricted: Use of this connection is unlimited and not restricted by usage charges and capacity constraints.
-- Fixed: Use of this connection is not restricted by usage charges and capacity constraints up to a certain data limit.  
-- Variable: This connection is costed on a per byte basis.  If this policy setting is disabled or is not configured, the cost of Wireless LAN connections is Unrestricted by default.
+- Fixed: Use of this connection isn't restricted by usage charges and capacity constraints up to a certain data limit.  
+- Variable: This connection is costed on a per byte basis.  If this policy setting is disabled or isn't configured, the cost of Wireless LAN connections is Unrestricted by default.
 
 <!--/Description-->
 
@@ -119,7 +119,7 @@ This policy applies to Wireless Display connections. This policy means that the 
 
 Conversely it means that Push Button is NOT allowed.
 
-If this policy setting is disabled or is not configured, by default Push Button pairing is allowed (but not necessarily preferred).
+If this policy setting is disabled or isn't configured, by default Push Button pairing is allowed (but not necessarily preferred).
 
 <!--/Description-->
 
@@ -165,7 +165,7 @@ This policy applies to Wireless Display connections. This policy changes the pre
 
 When enabled, it makes the connections to prefer a PIN for pairing to Wireless Display devices over the Push Button pairing method.
 
-If this policy setting is disabled or is not configured, by default Push Button pairing is preferred (if allowed by other policies).
+If this policy setting is disabled or isn't configured, by default Push Button pairing is preferred (if allowed by other policies).
 
 <!--/Description-->
 

@@ -68,11 +68,11 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls the legacy remote shutdown interface (named pipe). The named pipe remote shutdown interface is needed in order to shutdown this system from a remote Windows XP or Windows Server 2003 system.
+This policy setting controls the legacy remote shutdown interface (named pipe). The named pipe remote shutdown interface is needed in order to shut down this system from a remote Windows XP or Windows Server 2003 system.
 
-If you enable this policy setting, the system does not create the named pipe remote shutdown interface.
+If you enable this policy setting, the system doesn't create the named pipe remote shutdown interface.
 
-If you disable or do not configure this policy setting, the system creates the named pipe remote shutdown interface.
+If you disable or don't configure this policy setting, the system creates the named pipe remote shutdown interface.
 
 <!--/Description-->
 
@@ -119,7 +119,7 @@ This policy setting controls the use of fast startup.
 
 If you enable this policy setting, the system requires hibernate to be enabled.
 
-If you disable or do not configure this policy setting, the local setting is used.
+If you disable or don't configure this policy setting, the local setting is used.
 
 <!--/Description-->
 
@@ -166,7 +166,7 @@ This policy setting configures the number of minutes the system waits for the hu
 
 If you enable this policy setting, the system waits for the hung logon sessions for the number of minutes specified.
 
-If you disable or do not configure this policy setting, the default timeout value is 3 minutes for workstations and 15 minutes for servers.
+If you disable or don't configure this policy setting, the default timeout value is 3 minutes for workstations and 15 minutes for servers.
 
 <!--/Description-->
 

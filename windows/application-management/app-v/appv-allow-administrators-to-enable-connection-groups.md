@@ -2,9 +2,6 @@
 title: Only Allow Admins to Enable Connection Groups (Windows 10/11)
 description: Configure the App-V client so that only administrators, not users, can enable or disable connection groups.
 author: aczechowski
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 06/08/2018
 ms.reviewer: 
@@ -32,6 +29,6 @@ Use one of the following methods to allow only administrators to enable or disab
 
 
 
-## Related topics
+## Related articles
 
 - [Managing Connection Groups](appv-managing-connection-groups.md)
