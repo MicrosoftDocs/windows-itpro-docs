@@ -931,7 +931,7 @@ Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
 
     ![site.](images/configmgr-site.png)
 
-    If the client isn't able to find the PS1 site, review any error messages that are displayed in **C:\Windows\CCM\Logs\ClientIDManagerStartup.log** and **LocationServices.log**. A common reason the it can't locate the site code is because a previous configuration exists. For example, if a previous site code is configured at **HKLM\SOFTWARE\Microsoft\SMS\Mobile Client\GPRequestedSiteAssignmentCode**, delete or update this entry.
+    If the client isn't able to find the PS1 site, review any error messages that are displayed in **C:\Windows\CCM\Logs\ClientIDManagerStartup.log** and **LocationServices.log**. A common reason the client can't locate the site code is because a previous configuration exists. For example, if a previous site code is configured at **HKLM\SOFTWARE\Microsoft\SMS\Mobile Client\GPRequestedSiteAssignmentCode**, delete or update this entry.
 
 1. On SRV1, in the Assets and Compliance workspace, select **Device Collections** and then double-click **All Desktop and Server Clients**. This node will be added under **Devices**.
 
