@@ -14,8 +14,8 @@ You've already completed this step.
 
 We've tried to make editing an existing, public file as simple as possible.
 
->**Note**<br>
->At this time, only the English (en-us) content is available for editing.
+> **Note**<br>
+> At this time, only the English (en-us) content is available for editing.
 
 ### To edit a topic
 
@@ -23,9 +23,9 @@ We've tried to make editing an existing, public file as simple as possible.
 
     ![Microsoft Docs Web, showing the Edit This Document link.](images/contribute-link.png)
 
-    If the pencil icon isn't present, it may mean the content isn't open to public contributions. Some pages are generated (for example, from inline documentation in code) and must be edited in the project they belong to.
+    If the pencil icon isn't present, it might mean the content isn't open to public contributions. Some pages are generated (for example, from inline documentation in code) and must be edited in the project they belong to.
 
-2. On GitHub, select the **Pencil** icon to edit the article. If the pencil icon is grayed out, you need to either log in to your GitHub account or create a new account.
+2. In GitHub, select the **Pencil** icon to edit the article. If the pencil icon is grayed out, you need to either log in to your GitHub account or create a new account.
 
     ![GitHub Web, showing the Pencil icon.](images/pencil-icon.png)
 
@@ -48,9 +48,9 @@ We've tried to make editing an existing, public file as simple as possible.
 
      Select **Create pull request**. Next, enter a title and description to give the approver the appropriate context about what’s in the request. Make sure that only your changed files are in this pull request; otherwise, you could overwrite changes from other people.
 
-7. Click **Create pull request** again to actually submit the pull request.
+7. Select **Create pull request** again to actually submit the pull request.
 
-    The pull request is sent to the writer of the topic and your edits are reviewed. If your request is accepted, updates are published to their respective article. This repository contains articles in some of the following topics:
+    The pull request is sent to the writer of the topic and your edits are reviewed. If your request is accepted, updates are published to their respective article. This repository contains articles on some of the following topics:
 
     - [Windows client documentation for IT Pros](https://docs.microsoft.com/windows/)
     - [Surface](https://docs.microsoft.com/surface)
