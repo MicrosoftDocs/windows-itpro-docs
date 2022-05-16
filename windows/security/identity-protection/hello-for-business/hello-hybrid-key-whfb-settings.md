@@ -1,30 +1,31 @@
 ---
-title: Configure Hybrid Windows Hello for Business key trust Settings
+title: Configure Hybrid Azure AD joined Windows Hello for Business key trust Settings
 description: Begin the process of configuring your hybrid key trust environment for Windows Hello for Business. Start with your Active Directory configuration.
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, certificate-trust
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 08/19/2018
+ms.date: 4/30/2021
 ms.reviewer: 
 ---
-# Configure Hybrid Windows Hello for Business key trust settings
+# Configure Hybrid Azure AD joined Windows Hello for Business key trust settings
 
 **Applies to**
--   Windows 10, version 1703 or later
--   Hybrid deployment
--   Key trust
 
- 
-You are ready to configure your hybrid key trust environment for Windows Hello for Business.
+- Windows 10, version 1703 or later
+- Windows 11
+- Hybrid deployment
+- Key trust
+
+You are ready to configure your hybrid Azure AD joined key trust environment for Windows Hello for Business.
   
 > [!IMPORTANT]
 > Ensure your environment meets all the [prerequisites](hello-hybrid-key-trust-prereqs.md) before proceeding. Review the [New Installation baseline](hello-hybrid-key-new-install.md) section of this deployment document to learn how to prepare your environment for your Windows Hello for Business deployment.  
@@ -45,7 +46,8 @@ For the most efficient deployment, configure these technologies in order beginni
 <hr>
 
 ## Follow the Windows Hello for Business hybrid key trust deployment guide
-1. [Overview](hello-hybrid-cert-trust.md)
+
+1. [Overview](hello-hybrid-key-trust.md)
 2. [Prerequisites](hello-hybrid-key-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-key-new-install.md)
 4. [Configure Directory Synchronization](hello-hybrid-key-trust-dirsync.md)

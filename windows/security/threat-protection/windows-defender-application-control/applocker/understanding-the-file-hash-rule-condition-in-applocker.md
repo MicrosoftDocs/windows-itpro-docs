@@ -1,5 +1,5 @@
 ---
-title: Understanding the file hash rule condition in AppLocker (Windows 10)
+title: Understanding the file hash rule condition in AppLocker (Windows)
 description: This topic explains the AppLocker file hash rule condition, the advantages and disadvantages, and how it is applied.
 ms.assetid: 4c6d9af4-2b1a-40f4-8758-1a6f9f147756
 ms.reviewer: 
@@ -15,14 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Understanding the file hash rule condition in AppLocker
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic explains the AppLocker file hash rule condition, the advantages and disadvantages, and how it is applied.
 

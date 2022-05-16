@@ -4,12 +4,12 @@ description: This section describes the UsbErrorsOEMOverride settings that you c
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: aaroncz
 ms.topic: article
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # UsbErrorsOEMOverride (reference)
@@ -20,9 +20,9 @@ Allows an OEM to hide the USB option UI in Settings and all USB device errors.
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [HideUsbErrorNotifyOptionUI](#hideusberrornotifyoptionui) | X | X | X | X |   |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: | 
+| [HideUsbErrorNotifyOptionUI](#hideusberrornotifyoptionui) | ✔️ | ✔️ | ✔️ |   |
 
 ## HideUsbErrorNotifyOptionUI
 

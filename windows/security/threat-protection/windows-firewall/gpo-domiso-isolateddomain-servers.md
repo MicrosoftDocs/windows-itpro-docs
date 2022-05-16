@@ -1,6 +1,6 @@
 ---
-title: GPO\_DOMISO\_IsolatedDomain\_Servers (Windows 10)
-description: Author this GPO by using the Windows Defender Firewall with Advanced Security interface in the Group Policy editing tools.
+title: GPO\_DOMISO\_IsolatedDomain\_Servers (Windows)
+description: Author this GPO by using the Windows Defender Firewall with Advanced Security interface in the Group Policy editing tools.
 ms.assetid: 33aed8f3-fdc3-4f96-985c-e9d2720015d3
 ms.reviewer: 
 ms.author: dansimp
@@ -14,15 +14,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
-ms.technology: mde
+ms.date: 09/08/2021
+ms.technology: windows-sec
 ---
 
 # GPO\_DOMISO\_IsolatedDomain\_Servers
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 This GPO is authored by using the Windows Defender Firewall interface in the Group Policy editing tools. The User Configuration section of the GPO is disabled. It is intended to only apply to server devices that are running at least Windows Server 2008.
 
@@ -33,4 +34,3 @@ Because so many of the settings and rules for this GPO are common to those in th
     >**Important:**  Windows Vista and Windows Server 2008 support only one network location profile at a time. The profile for the least secure network type is applied to the device. If you attach a network adapter to a device that is not physically connected to a network, the public network location type is associated with the network adapter and applied to the device.
 
 **Next:** [Boundary Zone GPOs](boundary-zone-gpos.md)
-

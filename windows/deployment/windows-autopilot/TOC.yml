@@ -1,0 +1,5 @@
+- name: Windows Autopilot deployment
+  href: index.yml
+  items: 
+    - name: Get started
+      href: demonstrate-deployment-on-vm.md

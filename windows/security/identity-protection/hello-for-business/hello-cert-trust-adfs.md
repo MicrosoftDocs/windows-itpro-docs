@@ -1,14 +1,14 @@
 ---
-title: Prepare & Deploy Windows AD FS certificate trust (Windows Hello for Business)
-description: How to Prepare and Deploy Windows Server 2016 Active Directory Federation Services (AD FS) for Windows Hello for Business, using certificate trust.
+title: Prepare and Deploy Windows AD FS certificate trust (Windows Hello for Business)
+description: Learn how to Prepare and Deploy Windows Server 2016 Active Directory Federation Services (AD FS) for Windows Hello for Business, using certificate trust.
 keywords: identity, PIN, biometric, Hello, passport
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -16,11 +16,12 @@ localizationpriority: medium
 ms.date: 01/14/2021
 ms.reviewer: 
 ---
-# Prepare and Deploy Windows Server 2016 Active Directory Federation Services
+# Prepare and Deploy Windows Server 2016 Active Directory Federation Services - Certificate Trust
 
 **Applies to**
 
 - Windows 10, version 1703 or later
+- Windows 11
 - On-premises deployment
 - Certificate trust
 
@@ -28,9 +29,9 @@ Windows Hello for Business works exclusively with the Active Directory Federatio
 
 The following guidance describes deploying a new instance of Active Directory Federation Services 2016 using the Windows Information Database as the configuration database, which is ideal for environments with no more than 30 federation servers and no more than 100 relying party trusts.
 
-If your environment exceeds either of these factors or needs to provide SAML artifact resolution, token replay detection, or needs Active Directory Federation Services to operate in a federated provider role, then your deployment needs to use a SQL for your configuration database. To deploy the Active Directory Federation Services using SQL as its configuration database, please review the [Deploying a Federation Server Farm](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/deploying-a-federation-server-farm) checklist.
+If your environment exceeds either of these factors or needs to provide SAML artifact resolution, token replay detection, or needs Active Directory Federation Services to operate in a federated provider role, then your deployment needs to use a SQL for your configuration database. To deploy the Active Directory Federation Services using SQL as its configuration database, please review the [Deploying a Federation Server Farm](/windows-server/identity/ad-fs/deployment/deploying-a-federation-server-farm) checklist.
 
-If your environment has an existing instance of Active Directory Federation Services, then you’ll need to upgrade all nodes in the farm to Windows Server 2016 along with the Windows Server 2016 update.  If your environment uses Windows Internal Database (WID) for the configuration database, please read [Upgrading to AD FS in Windows Server 2016 using a WID database](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/upgrading-to-ad-fs-in-windows-server-2016) to upgrade your environment.  If your environment uses SQL for the configuration database, please read [Upgrading to AD FS in Windows Server 2016 with SQL Server](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/upgrading-to-ad-fs-in-windows-server-2016-sql) to upgrade your environment.
+If your environment has an existing instance of Active Directory Federation Services, then you’ll need to upgrade all nodes in the farm to Windows Server 2016 along with the Windows Server 2016 update.  If your environment uses Windows Internal Database (WID) for the configuration database, please read [Upgrading to AD FS in Windows Server 2016 using a WID database](/windows-server/identity/ad-fs/deployment/upgrading-to-ad-fs-in-windows-server-2016) to upgrade your environment.  If your environment uses SQL for the configuration database, please read [Upgrading to AD FS in Windows Server 2016 with SQL Server](/windows-server/identity/ad-fs/deployment/upgrading-to-ad-fs-in-windows-server-2016-sql) to upgrade your environment.
 
 Ensure you apply the Windows Server 2016 Update to all nodes in the farm after you have successfully completed the upgrade. 
 
@@ -91,7 +92,7 @@ Sign-in the federation server with domain administrator equivalent credentials.
 5. Click **Next** on the **Select Certificate Enrollment Policy** page.
 6. On the **Request Certificates** page, Select the **Internal Web Server** check box.
 7. Click the **More information is required to enroll for this certificate. Click here to configure settings** link   
-    ![Example of Certificate Properties Subject Tab - This is what shows when you click the above link](images/hello-internal-web-server-cert.png)
+    ![Example of Certificate Properties Subject Tab - This is what shows when you click the above link.](images/hello-internal-web-server-cert.png)
 8. Under **Subject name**, select **Common Name** from the **Type** list.  Type the FQDN of the computer hosting the Active Directory Federation Services role and then click **Add**.  
 9. Under **Alternative name**, select **DNS** from the **Type** list.  Type the FQDN of the name you will use for your federation services (fs.corp.contoso.com). The name you use here MUST match the name you use when configuring the Active Directory Federation Services server role.  Click **Add**. Repeat the same to add device registration service name (*enterpriseregistration.contoso.com*) as another alternative name. Click **OK** when finished.
 10. Click **Enroll**.
@@ -123,7 +124,7 @@ Sign-in the federation server with _Enterprise Admin_ equivalent credentials.
 8. Click **Next** on the **Active Directory Federation Service** page.
 9. Click **Install** to start the role installation.
 
-## Review
+## Review & validate
 
 Before you continue with the deployment, validate your deployment progress by reviewing the following items:
 
@@ -148,7 +149,7 @@ Windows Server 2012 or later domain controllers support Group Managed Service Ac
 GMSA uses the Microsoft Key Distribution Service that is located on Windows Server 2012 or later domain controllers.  Windows uses the Microsoft Key Distribution Service to protect secrets stored and used by the GMSA.  Before you can create a GMSA, you must first create a root key for the service.  You can skip this if your environment already uses GMSA.
 
 >[!NOTE]
-> If the [default object creation quota for security principles](https://docs.microsoft.com/openspecs/windows_protocols/ms-adts/d55ca655-109b-4175-902a-3e9d60833012) is set, you will need to change it for the Group Managed Service Account in order to be able to register new devices. 
+> If the [default object creation quota for security principles](/openspecs/windows_protocols/ms-adts/d55ca655-109b-4175-902a-3e9d60833012) is set, you will need to change it for the Group Managed Service Account in order to be able to register new devices. 
 
 #### Create KDS Root Key
 
@@ -184,7 +185,7 @@ Sign-in the federation server with _domain administrator_ equivalent credentials
 
 1. Start **Server Manager**.
 2. Click the notification flag in the upper right corner. Click **Configure federation services on this server**.
-![Example of pop-up notification as described above](images/hello-adfs-configure-2012r2.png)
+![Example of pop-up notification as described above.](images/hello-adfs-configure-2012r2.png)
 3. On the **Welcome** page, click **Create the first federation server farm** and click **Next**.
 4. Click **Next** on the **Connect to Active Directory Domain Services** page.
 5. On the **Specify Service Properties** page, select the recently enrolled or imported certificate from the **SSL Certificate** list.  The certificate is likely named after your federation service, such as *fs.corp.contoso.com* or *fs.contoso.com*.
@@ -204,7 +205,7 @@ Sign-in the federation server with _domain administrator_ equivalent credentials
 
 1. Start **Server Manager**.
 2. Click the notification flag in the upper right corner.  Click **Configure federation services on this server**.
-![Example of pop-up notification as described above](images/hello-adfs-configure-2012r2.png)
+![Example of pop-up notification as described above.](images/hello-adfs-configure-2012r2.png)
 3. On the **Welcome** page, click **Create the first federation server farm** and click **Next**.
 4. Click **Next** on the **Connect to Active Directory Domain Services** page.
 5. On the **Specify Service Properties** page, select the recently enrolled or imported certificate from the **SSL Certificate** list. The certificate is likely named after your federation service, such as fs.corp.mstepdemo.net or fs.mstepdemo.net.
@@ -265,7 +266,7 @@ Sign-in the federation server with _Enterprise Admin_ equivalent credentials. Th
 3. In the details pane, click **Configure Device Registration**.
 4. In the **Configure Device Registration** dialog, click **OK**.
 
-## Review
+## Review to validate
 
 Before you continue with the deployment, validate your deployment progress by reviewing the following items:
 * Confirm you followed the correct procedures based on the domain controllers used in your deployment. 
@@ -403,7 +404,7 @@ Approximately 60 days prior to enrollment agent certificate’s expiration, the 
 ### Service Connection Point (SCP) in Active Directory for ADFS Device Registration Service
 
 > [!NOTE]
-> Normally this script is not needed, as enabling Device Registration via the ADFS Management console already creates the objects. You can validate the SCP using the script below. For detailed information about the Device Registration Service, see [Configuring Device Registration](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn614658(v=ws.11)?redirectedfrom=MSDN).
+> Normally this script is not needed, as enabling Device Registration via the ADFS Management console already creates the objects. You can validate the SCP using the script below. For detailed information about the Device Registration Service, see [Configuring Device Registration](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn614658(v=ws.11)).
 
 Now you will add the Service connection Point to ADFS device registration Service for your Active directory by running the following script:
 
@@ -456,7 +457,7 @@ Sign-in the federation server with _Enterprise Admin_ equivalent credentials.
 6. On the **Select server roles** page, click **Next**.
 7. Select **Network Load Balancing** on the **Select features** page.
 8. Click **Install** to start the feature installation.
-   ![Feature selection screen with NLB selected](images/hello-nlb-feature-install.png)
+   ![Feature selection screen with NLB selected.](images/hello-nlb-feature-install.png)
 
 ### Configure Network Load Balancing for AD FS
 
@@ -465,25 +466,25 @@ Before you can load balance all the nodes in the AD FS farm, you must first crea
 Sign-in a node of the federation farm with _Admin_ equivalent credentials.
 
 1. Open **Network Load Balancing Manager** from **Administrative Tools**.
-    ![NLB Manager user interface](images/hello-nlb-manager.png)
+    ![NLB Manager user interface.](images/hello-nlb-manager.png)
 2. Right-click **Network Load Balancing Clusters**, and then click **New Cluster**.
 3. To connect to the host that is to be a part of the new cluster, in the **Host** text box, type the name of the host, and then click **Connect**.
-    ![NLB Manager - Connect to new Cluster screen](images/hello-nlb-connect.png)
+    ![NLB Manager - Connect to new Cluster screen.](images/hello-nlb-connect.png)
 4. Select the interface that you want to use with the cluster, and then click **Next**. (The interface hosts the virtual IP address and receives the client traffic to load balance.)
 5. In **Host Parameters**, select a value in **Priority (Unique host identifier)**. This parameter specifies a unique ID for each host. The host with the lowest numerical priority among the current members of the cluster handles all of the cluster's network traffic that is not covered by a port rule. Click **Next**.
 6. In **Cluster IP Addresses**, click **Add** and type the cluster IP address that is shared by every host in the cluster. NLB adds this IP address to the TCP/IP stack on the selected interface of all hosts that are chosen to be part of the cluster. Click **Next**.
-    ![NLB Manager - Add IP to New Cluster screen](images/hello-nlb-add-ip.png)
+    ![NLB Manager - Add IP to New Cluster screen.](images/hello-nlb-add-ip.png)
 7. In **Cluster Parameters**, select values in **IP Address** and **Subnet mask** (for IPv6 addresses, a subnet mask value is not needed). Type the full Internet name that users will use to access this NLB cluster.
-    ![NLB Manager - Cluster IP Configuration screen](images/hello-nlb-cluster-ip-config.png)
+    ![NLB Manager - Cluster IP Configuration screen.](images/hello-nlb-cluster-ip-config.png)
 8. In **Cluster operation mode**, click **Unicast** to specify that a unicast media access control (MAC) address should be used for cluster operations. In unicast mode, the MAC address of the cluster is assigned to the network adapter of the computer, and the built-in MAC address of the network adapter is not used. We recommend that you accept the unicast default settings. Click **Next**.
 9. In Port Rules, click Edit to modify the default port rules to use port 443.
-    ![NLB Manager - Add\Edit Port Rule screen](images/hello-nlb-cluster-port-rule.png)
+    ![NLB Manager - Add\Edit Port Rule screen.](images/hello-nlb-cluster-port-rule.png)
 
 ### Additional AD FS Servers
 
 1. To add more hosts to the cluster, right-click the new cluster, and then click **Add Host to Cluster**.
 2. Configure the host parameters (including host priority, dedicated IP addresses, and load weight) for the additional hosts by following the same instructions that you used to configure the initial host. Because you are adding hosts to an already configured cluster, all the cluster-wide parameters remain the same.
-    ![NLB Manager - Cluster with nodes](images/hello-nlb-cluster.png)
+    ![NLB Manager - Cluster with nodes.](images/hello-nlb-cluster.png)
 
 ## Configure DNS for Device Registration
 
