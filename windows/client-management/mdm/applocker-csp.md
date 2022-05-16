@@ -1,7 +1,6 @@
 ---
 title: AppLocker CSP
 description: Learn how the AppLocker configuration service provider is used to specify which applications are allowed or disallowed.
-ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -13,7 +12,6 @@ ms.date: 11/19/2019
 ---
 
 # AppLocker CSP
-
 
 The AppLocker configuration service provider is used to specify which applications are allowed or disallowed. There's no user interface shown for apps that are blocked.
 

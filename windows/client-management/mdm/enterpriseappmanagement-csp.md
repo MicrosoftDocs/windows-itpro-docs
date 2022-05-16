@@ -1,7 +1,6 @@
 ---
 title: EnterpriseAppManagement CSP
 description: Handle enterprise application management tasks using EnterpriseAppManagement configuration service provider (CSP).
-ms.assetid: 698b8bf4-652e-474b-97e4-381031357623
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -13,7 +12,6 @@ ms.date: 06/26/2017
 ---
 
 # EnterpriseAppManagement CSP
-
 
 The EnterpriseAppManagement enterprise configuration service provider is used to handle enterprise application management tasks such as installing an enterprise application token, the first auto-downloadable app link, querying installed enterprise applications (name and version), auto updating already installed enterprise applications, and removing all installed enterprise apps (including the enterprise app token) during unenrollment.
 

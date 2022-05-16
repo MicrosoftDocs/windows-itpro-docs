@@ -1,10 +1,7 @@
 ---
 title: What version of Windows am I running?
 description: Discover which version of Windows you are running to determine whether or not your device is enrolled in the Long-Term Servicing Channel or General Availability Channel.
-keywords: Long-Term Servicing Channel, LTSC, LTSB, General Availability Channel, GAC, Windows, version, OS Build
 ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.date: 04/30/2018

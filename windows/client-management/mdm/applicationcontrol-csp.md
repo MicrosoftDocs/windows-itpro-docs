@@ -1,7 +1,6 @@
 ---
 title: ApplicationControl CSP
 description: The ApplicationControl CSP allows you to manage multiple Windows Defender Application Control (WDAC) policies from an MDM server.
-keywords: security, malware
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

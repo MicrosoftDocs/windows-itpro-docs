@@ -1,7 +1,6 @@
 ---
 title: EnterpriseModernAppManagement CSP
 description: Learn how the EnterpriseModernAppManagement configuration service provider (CSP) is used for the provisioning and reporting of modern enterprise apps.
-ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp

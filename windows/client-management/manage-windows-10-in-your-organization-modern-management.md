@@ -1,11 +1,7 @@
 ---
 title: Manage Windows 10 in your organization - transitioning to modern management
 description: This topic offers strategies for deploying and managing Windows 10, including deploying Windows 10 in a mixed environment.
-keywords: ["MDM", "device management", "group policy", "Azure Active Directory"]
 ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: devices
 author: dansimp
 ms.localizationpriority: medium
 ms.date: 04/26/2018

@@ -2,7 +2,6 @@
 title: Use Quick Assist to help users
 description: How IT Pros can use Quick Assist to help users
 ms.prod: w10
-ms.sitesec: library
 ms.topic: article
 author: aczechowski
 ms.localizationpriority: medium

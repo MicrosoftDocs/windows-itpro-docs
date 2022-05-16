@@ -1,7 +1,6 @@
 ---
 title: CertificateStore DDF file
 description: Learn about OMA DM device description framework (DDF) for the CertificateStore configuration service provider. DDF files are used with OMA DM provisioning XML.
-ms.assetid: D9A12D4E-3122-45C3-AD12-CC4FFAEC08B8
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -13,7 +12,6 @@ ms.date: 12/05/2017
 ---
 
 # CertificateStore DDF file
-
 
 This topic shows the OMA DM device description framework (DDF) for the **CertificateStore** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 

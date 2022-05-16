@@ -1,7 +1,6 @@
 ---
 title: ActiveSync CSP
 description: Learn how the ActiveSync configuration service provider is used to set up and change settings for Exchange ActiveSync. 
-ms.assetid: c65093ef-bd36-4f32-9dab-edb7bcfb3188
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -13,7 +12,6 @@ ms.date: 06/26/2017
 ---
 
 # ActiveSync CSP
-
 
 The ActiveSync configuration service provider is used to set up and change settings for Exchange ActiveSync. After an Exchange account has been updated over-the-air by the ActiveSync configuration service provider, the device must be powered off and then powered back on to see sync status.
 
