@@ -1,5 +1,5 @@
 ---
-title: Using Event Viewer with AppLocker (Windows 10)
+title: Using Event Viewer with AppLocker (Windows)
 description: This topic lists AppLocker events and describes how to use Event Viewer with AppLocker.
 ms.assetid: 109abb10-78b1-4c29-a576-e5a17dfeb916
 ms.reviewer: 
@@ -14,15 +14,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 09/21/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Using Event Viewer with AppLocker
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic lists AppLocker events and describes how to use Event Viewer with AppLocker.
 
@@ -64,6 +68,20 @@ The following table contains information about the events that you can use to de
 | 8024 | Information| Packaged app installation audited.| Added in Windows Server 2012 and Windows 8.| 
 | 8025 | Warning| Packaged app installation disabled.| Added in Windows Server 2012 and Windows 8.| 
 | 8027 | Warning| No Packaged app rule configured.| Added in Windows Server 2012 and Windows 8.| 
+| 8028 | Warning | * was allowed to run but would have been prevented if the Config CI policy were enforced.| Added in Windows Server 2016 and Windows 10.|
+| 8029 | Error | * was prevented from running due to Config CI policy.| Added in Windows Server 2016 and Windows 10.|
+| 8030 | Information | ManagedInstaller check SUCCEEDED during Appid verification of * | Added in Windows Server 2016 and Windows 10.|
+| 8031 | Information | SmartlockerFilter detected file * being written by process * | Added in Windows Server 2016 and Windows 10.|
+| 8032 | Error | ManagedInstaller check FAILED during Appid verification of * | Added in Windows Server 2016 and Windows 10.|
+| 8033 | Warning | ManagedInstaller check FAILED during Appid verification of * . Allowed to run due to Audit Applocker Policy. | Added in Windows Server 2016 and Windows 10.|
+| 8034 | Information | ManagedInstaller Script check FAILED during Appid verification of * | Added in Windows Server 2016 and Windows 10.|
+| 8035 | Error | ManagedInstaller Script check SUCCEEDED during Appid verification of * | Added in Windows Server 2016 and Windows 10.|
+| 8036 | Error | * was prevented from running due to Config CI policy | Added in Windows Server 2016 and Windows 10.|
+| 8037 | Information | * passed Config CI policy and was allowed to run | Added in Windows Server 2016 and Windows 10.|
+| 8038 | Information | Publisher info: Subject: * Issuer: * Signature index * (* total) | Added in Windows Server 2016 and Windows 10.|
+| 8039 | Warning | * passed Config CI policy and was allowed to run | Added in Windows Server 2016 and Windows 10.|
+| 8040 | Error | Package family name * version * was prevented from installing or updating due to Config CI policy | Added in Windows Server 2016 and Windows 10.|
+
  
 ## Related topics
 

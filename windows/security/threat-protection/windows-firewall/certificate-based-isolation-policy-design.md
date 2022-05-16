@@ -1,5 +1,5 @@
 ---
-title: Certificate-based Isolation Policy Design (Windows 10)
+title: Certificate-based Isolation Policy Design (Windows)
 description: Explore the methodology behind Certificate-based Isolation Policy Design and how it defers from Domain Isolation and Server Isolation Policy Design.
 ms.assetid: 63e01a60-9daa-4701-9472-096c85e0f862
 ms.reviewer: 
@@ -14,15 +14,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
-ms.technology: mde
+ms.date: 09/07/2021
+ms.technology: windows-sec
 ---
 
 # Certificate-based isolation policy design
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 In the certificate-based isolation policy design, you provide the same types of protections to your network traffic as described in the [Domain Isolation Policy Design](domain-isolation-policy-design.md) and [Server Isolation Policy Design](server-isolation-policy-design.md) sections. The only difference is the method used to share identification credentials during the authentication of your network traffic.
 

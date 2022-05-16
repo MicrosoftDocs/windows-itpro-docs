@@ -4,13 +4,13 @@ description: This section describes the CleanPC settings that you can configure 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: aaroncz
 ms.topic: article
 ms.date: 09/06/2017
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # CleanPC (Windows Configuration Designer reference)
@@ -19,13 +19,13 @@ Use to remove user-installed and pre-installed applications, with the option to 
 
 ## Applies to
 
-| Settings  | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| CleanPCRetainingUserData | X |    |  |  |  |
-| CleanPCWithoutRetainingUserData | X |    |  |  |  |
+| Settings  | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| CleanPCRetainingUserData | ✔️ |  |  |  |
+| CleanPCWithoutRetainingUserData | ✔️ |  |  |  |
 
 For each setting, the options are **Enable** and **Not configured**. 
 
 ## Related topics
 
-- [CleanPC configuration service provider (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/cleanpc-csp)
+- [CleanPC configuration service provider (CSP)](/windows/client-management/mdm/cleanpc-csp)
