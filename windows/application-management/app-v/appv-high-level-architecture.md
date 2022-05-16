@@ -2,9 +2,6 @@
 title: High-level architecture for App-V (Windows 10/11)
 description: Use the information in this article to simplify your Microsoft Application Virtualization (App-V) deployment.
 author: aczechowski
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
@@ -12,6 +9,7 @@ manager: dougeby
 ms.author: aaroncz
 ms.topic: article
 ---
+
 # High-level architecture for App-V
 
 [!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
@@ -32,6 +30,6 @@ A typical App-V implementation consists of the following elements.
 >[!NOTE]
 >If you are using App-V with electronic software distribution (ESD), you aren't required to use the App-V Management server. However, you can still use App-V's reporting and streaming functionality.
 
-## Related topics
+## Related articles
 
 - [Getting Started with App-V](appv-getting-started.md)
