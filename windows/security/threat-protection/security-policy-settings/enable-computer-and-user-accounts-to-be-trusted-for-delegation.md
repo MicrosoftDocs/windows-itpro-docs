@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Enable computer and user accounts to be trusted for delegation
@@ -86,7 +86,7 @@ Settings are applied in the following order through a Group Policy Object (GPO),
 When a local setting is greyed out, it indicates that a GPO currently controls that setting.
 
 > [!NOTE]
-> More information about configuring the policy can be found [here](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/how-to-configure-security-policy-settings).
+> More information about configuring the policy can be found [here](./how-to-configure-security-policy-settings.md).
 
 ## Security considerations
 

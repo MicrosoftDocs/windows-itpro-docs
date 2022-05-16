@@ -23,13 +23,14 @@
       }
     ],
     "globalMetadata": {
+      "recommendations": true,
       "breadcrumb_path": "/internet-explorer/breadcrumb/toc.json",
       "ROBOTS": "INDEX, FOLLOW",
       "audience": "ITPro",
       "ms.technology": "internet-explorer",
       "ms.prod": "ie11",
       "ms.topic": "article",
-      "manager": "laurawi",
+      "manager": "dansimp",
       "ms.date": "04/05/2017",
       "feedback_system": "None",
       "hideEdit": true,
@@ -48,7 +49,7 @@
         "jborsecnik",
         "tiburd",
         "garycentric"
-      ],
+      ]
     },
     "externalReference": [],
     "template": "op.html",
