@@ -19521,7 +19521,7 @@
       "redirect_document_id": false
     },
     { 
-     "source_path": "windows/education/developers.md",
+     "source_path": "education/developers.md",
      "redirect_url": "/education/",
      "redirect_document_id": true
     },
