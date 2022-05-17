@@ -19510,10 +19510,35 @@
       "redirect_url": "/windows/security/threat-protection/windows-security-configuration-framework/security-compliance-toolkit-10",
       "redirect_document_id": false
     },
+    {
+      "source_path": "windows-docs-pr/windows/client-management/mdm/remotering-csp.md",
+      "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/client-management/mdm/remotering-ddf-file.md",
+      "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+      "redirect_document_id": false
+    },
     { 
      "source_path": "windows/education/developers.yml",
      "redirect_url": "/education/",
      "redirect_document_id": true
-    }    
+    },
+    { 
+      "source_path": "windows/client-management/mdm/enterpriseappmanagement-csp.md",
+      "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+      "redirect_document_id": false
+     },
+     { 
+      "source_path": "windows/client-management/mdm/messaging-ddf.md",
+      "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+      "redirect_document_id": false
+     },
+     { 
+      "source_path": "windows/client-management/mdm/messaging-csp.md",
+      "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+      "redirect_document_id": false
+     }      
   ]
 }
