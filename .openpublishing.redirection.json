@@ -19496,14 +19496,14 @@
      "redirect_document_id": false
     },
     { 
-     "source_path": "windows/education/itadmins.yml",
-     "redirect_url": "/education/",
+     "source_path": "education/itadmins.yml",
+     "redirect_url": "/education",
      "redirect_document_id": true
     },
     { 
-     "source_path": "windows/education/partners.yml",
-     "redirect_url": "/education/",
-     "redirect_document_id": true
+     "source_path": "education/partners.yml",
+     "redirect_url": "/education",
+     "redirect_document_id": false
     },
     {
       "source_path": "windows/security/threat-protection/security-compliance-toolkit-10.md",
@@ -19521,9 +19521,9 @@
       "redirect_document_id": false
     },
     { 
-     "source_path": "windows/education/developers.yml",
-     "redirect_url": "/education/",
-     "redirect_document_id": true
+     "source_path": "education/developers.yml",
+     "redirect_url": "/education",
+     "redirect_document_id": false
     },
     { 
       "source_path": "windows/client-management/mdm/enterpriseappmanagement-csp.md",
