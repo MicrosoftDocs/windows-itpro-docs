@@ -39,7 +39,6 @@ ms.date: 10/14/2020
   </dd>
 </dl>
 
-
 <hr/>
 
 <!--Policy-->
@@ -48,6 +47,7 @@ ms.date: 10/14/2020
 Available in the latest Windows 10 insider preview build.
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -118,6 +118,7 @@ The following are the supported values:
 Available in the latest Windows 10 insider preview build.
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -142,7 +143,7 @@ Available in the latest Windows 10 insider preview build.
 <!--Description-->
 This policy setting allows the IT admin to enable or disable sharing of the host clipboard with the sandbox.
 
-If this policy isn't configured, end-users get the default behavior (clipboard redirection enabled. 
+If this policy isn't configured, end-users get the default behavior (clipboard redirection enabled). 
 
 If clipboard sharing is disabled, a user won't be able to enable clipboard sharing from their own configuration file. 
 
@@ -185,6 +186,7 @@ The following are the supported values:
 Available in the latest Windows 10 insider preview build.
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -250,6 +252,7 @@ The following are the supported values:
 Available in the latest Windows 10 insider preview build.
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -272,7 +275,7 @@ Available in the latest Windows 10 insider preview build.
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows the IT admin to enable or disable printer sharing from the host into the Sandbox. 
+This policy setting allows the IT admin to enable or disable printer sharing from the host into the Sandbox.
 
 If this policy isn't configured, end-users get the default behavior (printer sharing disabled). 
 
@@ -316,6 +319,7 @@ The following are the supported values:
 Available in the latest Windows 10 insider preview build.
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -385,6 +389,7 @@ The following are the supported values:
 Available in the latest Windows 10 insider preview build.
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -448,3 +453,7 @@ The following are the supported values:
 <hr/>
 
 <!--/Policies-->
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)

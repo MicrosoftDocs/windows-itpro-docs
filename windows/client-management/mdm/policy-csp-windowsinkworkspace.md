@@ -14,7 +14,6 @@ manager: dansimp
 
 # Policy CSP - WindowsInkWorkspace
 
-
 <hr/>
 
 <!--Policies-->
@@ -29,13 +28,13 @@ manager: dansimp
   </dd>
 </dl>
 
-
 <hr/>
 
 <!--Policy-->
 <a href="" id="windowsinkworkspace-allowsuggestedappsinwindowsinkworkspace"></a>**WindowsInkWorkspace/AllowSuggestedAppsInWindowsInkWorkspace**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -84,6 +83,7 @@ The following list shows the supported values:
 <a href="" id="windowsinkworkspace-allowwindowsinkworkspace"></a>**WindowsInkWorkspace/AllowWindowsInkWorkspace**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -131,3 +131,6 @@ Value type is int. The following list shows the supported values:
 
 <!--/Policies-->
 
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)

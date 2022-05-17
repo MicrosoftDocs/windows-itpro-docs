@@ -14,10 +14,10 @@ manager: dansimp
 
 # Policy CSP - WindowsDefenderSecurityCenter
 
-
 <hr/>
 
 <!--Policies-->
+
 ## WindowsDefenderSecurityCenter policies  
 
 <dl>
@@ -89,13 +89,13 @@ manager: dansimp
   </dd>
 </dl>
 
-
 <hr/>
 
 <!--Policy-->
 <a href="" id="windowsdefendersecuritycenter-companyname"></a>**WindowsDefenderSecurityCenter/CompanyName**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -120,10 +120,12 @@ manager: dansimp
 <!--Description-->
 The company name that is displayed to the users. CompanyName is required for both EnableCustomizedToasts and EnableInAppCustomization. If you disable or don't configure this setting, or don't have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices won't display the contact options.
 
-Value type is string. Supported operations are Add, Get, Replace and Delete.
+- Supported value type is string. 
+- Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
+
 ADMX Info:  
 -   GP Friendly name: *Specify contact company name*
 -   GP name: *EnterpriseCustomization_CompanyName*
@@ -140,6 +142,7 @@ ADMX Info:
 <a href="" id="windowsdefendersecuritycenter-disableaccountprotectionui"></a>**WindowsDefenderSecurityCenter/DisableAccountProtectionUI**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -188,6 +191,7 @@ Valid values:
 <a href="" id="windowsdefendersecuritycenter-disableappbrowserui"></a>**WindowsDefenderSecurityCenter/DisableAppBrowserUI**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -212,7 +216,8 @@ Valid values:
 <!--Description-->
 Use this policy setting if you want to disable the display of the app and browser protection area in Windows Defender Security Center. If you disable or don't configure this setting, Windows Defender Security Center will display this area.
 
-Value type is integer. Supported operations are Add, Get, Replace and Delete.
+- Supported value type is integer. 
+- Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -238,6 +243,7 @@ The following list shows the supported values:
 <a href="" id="windowsdefendersecuritycenter-disablecleartpmbutton"></a>**WindowsDefenderSecurityCenter/DisableClearTpmButton**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -262,14 +268,9 @@ The following list shows the supported values:
 <!--Description-->
 Disable the Clear TPM button in Windows Security.
 
-Enabled:
-The Clear TPM button will be unavailable for use.
-
-Disabled:
-The Clear TPM button will be available for use on supported systems.
-
-Not configured:
-Same as Disabled.
+- Enabled: The Clear TPM button will be unavailable for use.
+- Disabled: The Clear TPM button will be available for use on supported systems.
+- Not configured: Same as Disabled.
 
 Supported values:
 
@@ -302,6 +303,7 @@ ADMX Info:
 <a href="" id="windowsdefendersecuritycenter-disabledevicesecurityui"></a>**WindowsDefenderSecurityCenter/DisableDeviceSecurityUI**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -350,6 +352,7 @@ Valid values:
 <a href="" id="windowsdefendersecuritycenter-disableenhancednotifications"></a>**WindowsDefenderSecurityCenter/DisableEnhancedNotifications**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -377,7 +380,8 @@ Use this policy if you want Windows Defender Security Center to only display not
 > [!NOTE]
 > If Suppress notification is enabled then users won't see critical or non-critical messages.
 
-Value type is integer. Supported operations are Add, Get, Replace and Delete.
+- Supported value type is integer. 
+- Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -403,6 +407,7 @@ The following list shows the supported values:
 <a href="" id="windowsdefendersecuritycenter-disablefamilyui"></a>**WindowsDefenderSecurityCenter/DisableFamilyUI**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -427,7 +432,8 @@ The following list shows the supported values:
 <!--Description-->
 Use this policy setting if you want to disable the display of the family options area in Windows Defender Security Center. If you disable or don't configure this setting, Windows Defender Security Center will display this area.
 
-Value type is integer. Supported operations are Add, Get, Replace and Delete.
+- Supported value type is integer. 
+- Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -453,6 +459,7 @@ The following list shows the supported values:
 <a href="" id="windowsdefendersecuritycenter-disablehealthui"></a>**WindowsDefenderSecurityCenter/DisableHealthUI**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -477,7 +484,8 @@ The following list shows the supported values:
 <!--Description-->
 Use this policy setting if you want to disable the display of the device performance and health area in Windows Defender Security Center. If you disable or don't configure this setting, Windows Defender Security Center will display this area.
 
-Value type is integer. Supported operations are Add, Get, Replace and Delete.
+- Supported value type is integer. 
+- Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -503,6 +511,7 @@ The following list shows the supported values:
 <a href="" id="windowsdefendersecuritycenter-disablenetworkui"></a>**WindowsDefenderSecurityCenter/DisableNetworkUI**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -527,7 +536,8 @@ The following list shows the supported values:
 <!--Description-->
 Use this policy setting if you want to disable the display of the firewall and network protection area in Windows Defender Security Center. If you disable or don't configure this setting, Windows Defender Security Center will display this area.
 
-Value type is integer. Supported operations are Add, Get, Replace and Delete.
+- Supported value type is integer. 
+- Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -553,6 +563,7 @@ The following list shows the supported values:
 <a href="" id="windowsdefendersecuritycenter-disablenotifications"></a>**WindowsDefenderSecurityCenter/DisableNotifications**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -577,7 +588,8 @@ The following list shows the supported values:
 <!--Description-->
 Use this policy setting if you want to disable the display of Windows Defender Security Center notifications. If you disable or don't configure this setting, Windows Defender Security Center notifications will display on devices.
 
-Value type is integer. Supported operations are Add, Get, Replace and Delete.
+- Supported value type is integer. 
+- Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -603,6 +615,7 @@ The following list shows the supported values:
 <a href="" id="windowsdefendersecuritycenter-disabletpmfirmwareupdatewarning"></a>**WindowsDefenderSecurityCenter/DisableTpmFirmwareUpdateWarning**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -627,14 +640,9 @@ The following list shows the supported values:
 <!--Description-->
 Hide the recommendation to update TPM Firmware when a vulnerable firmware is detected.
 
-Enabled:
-Users won't be shown a recommendation to update their TPM Firmware.
-
-Disabled:
-Users will see a recommendation to update their TPM Firmware if Windows Security detects the system contains a TPM with vulnerable firmware.        
-
-Not configured:
-Same as Disabled.
+- Enabled: Users won't be shown a recommendation to update their TPM Firmware.
+- Disabled: Users will see a recommendation to update their TPM Firmware if Windows Security detects the system contains a TPM with vulnerable firmware.
+- Not configured: Same as Disabled.
 
 Supported values:
 
@@ -667,6 +675,7 @@ ADMX Info:
 <a href="" id="windowsdefendersecuritycenter-disablevirusui"></a>**WindowsDefenderSecurityCenter/DisableVirusUI**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -691,7 +700,8 @@ ADMX Info:
 <!--Description-->
 Use this policy setting if you want to disable the display of the virus and threat protection area in Windows Defender Security Center. If you disable or don't configure this setting, Windows Defender Security Center will display this area.
 
-Value type is integer. Supported operations are Add, Get, Replace and Delete.
+- Supported value type is integer. 
+- Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -717,6 +727,7 @@ The following list shows the supported values:
 <a href="" id="windowsdefendersecuritycenter-disallowexploitprotectionoverride"></a>**WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -741,7 +752,8 @@ The following list shows the supported values:
 <!--Description-->
 Prevent users from making changes to the exploit protection settings area in the Windows Defender Security Center. If you disable or don't configure this setting, local users can make changes in the exploit protection settings area.
 
-Value type is integer. Supported operations are Add, Get, Replace and Delete.
+- Supported value type is integer. 
+- Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -767,6 +779,7 @@ The following list shows the supported values:
 <a href="" id="windowsdefendersecuritycenter-email"></a>**WindowsDefenderSecurityCenter/Email**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -789,9 +802,10 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-The email address that is displayed to users.  The default mail application is used to initiate email actions. If you disable or don't configure this setting, or don't have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices won't display contact options.
+The email address that is displayed to users. The default mail application is used to initiate email actions. If you disable or don't configure this setting, or don't have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices won't display contact options.
 
-Value type is string. Supported operations are Add, Get, Replace and Delete.
+- Supported value type is string. 
+- Supported operations are Add, Get, Replace and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -811,6 +825,7 @@ ADMX Info:
 <a href="" id="windowsdefendersecuritycenter-enablecustomizedtoasts"></a>**WindowsDefenderSecurityCenter/EnableCustomizedToasts**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -835,7 +850,8 @@ ADMX Info:
 <!--Description-->
 Enable this policy to display your company name and contact options in the notifications. If you disable or don't configure this setting, or don't provide CompanyName and a minimum of one contact method (Phone using Skype, Email, Help portal URL) Windows Defender Security Center will display a default notification text.
 
-Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+- Supported value type is integer. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -861,6 +877,7 @@ The following list shows the supported values:
 <a href="" id="windowsdefendersecuritycenter-enableinappcustomization"></a>**WindowsDefenderSecurityCenter/EnableInAppCustomization**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -885,7 +902,8 @@ The following list shows the supported values:
 <!--Description-->
 Enable this policy to have your company name and contact options displayed in a contact card fly out in Windows Defender Security Center. If you disable or don't configure this setting, or don't provide CompanyName and a minimum of one contact method (Phone using Skype, Email, Help portal URL) Windows Defender Security Center won't display the contact card fly out notification.
 
-Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+- Support value type is integer. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -911,6 +929,7 @@ The following list shows the supported values:
 <a href="" id="windowsdefendersecuritycenter-hideransomwaredatarecovery"></a>**WindowsDefenderSecurityCenter/HideRansomwareDataRecovery**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -959,6 +978,7 @@ Valid values:
 <a href="" id="windowsdefendersecuritycenter-hidesecureboot"></a>**WindowsDefenderSecurityCenter/HideSecureBoot**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -1007,6 +1027,7 @@ Valid values:
 <a href="" id="windowsdefendersecuritycenter-hidetpmtroubleshooting"></a>**WindowsDefenderSecurityCenter/HideTPMTroubleshooting**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -1055,6 +1076,7 @@ Valid values:
 <a href="" id="windowsdefendersecuritycenter-hidewindowssecuritynotificationareacontrol"></a>**WindowsDefenderSecurityCenter/HideWindowsSecurityNotificationAreaControl**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -1081,14 +1103,9 @@ This policy setting hides the Windows Security notification area control.
 
 The user needs to either sign out and sign in or reboot the computer for this setting to take effect.
 
-Enabled:
-Windows Security notification area control will be hidden.
-
-Disabled:
-Windows Security notification area control will be shown.
-
-Not configured:
-Same as Disabled.
+- Enabled: Windows Security notification area control will be hidden.
+- Disabled: Windows Security notification area control will be shown.
+- Not configured: Same as Disabled.
 
 Supported values:
 
@@ -1121,6 +1138,7 @@ ADMX Info:
 <a href="" id="windowsdefendersecuritycenter-phone"></a>**WindowsDefenderSecurityCenter/Phone**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -1143,9 +1161,10 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-The phone number or Skype ID that is displayed to users.  Skype is used to initiate the call. If you disable or don't configure this setting, or don't have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices won't display contact options.
+The phone number or Skype ID that is displayed to users. Skype is used to initiate the call. If you disable or don't configure this setting, or don't have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices won't display contact options.
 
-Value type is string. Supported operations are Add, Get, Replace, and Delete.
+- Supported value type is string. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1165,6 +1184,7 @@ ADMX Info:
 <a href="" id="windowsdefendersecuritycenter-url"></a>**WindowsDefenderSecurityCenter/URL**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -1189,7 +1209,8 @@ ADMX Info:
 <!--Description-->
 The help portal URL that is displayed to users. The default browser is used to initiate this action. If you disable or don't configure this setting, or don't have EnableCustomizedToasts or EnableInAppCustomization enabled, then the device won't display contact options.
 
-Value type is string. Supported operations are Add, Get, Replace, and Delete.
+- Supported value type is string. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1205,3 +1226,7 @@ ADMX Info:
 <hr/>
 
 <!--/Policies-->
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)
