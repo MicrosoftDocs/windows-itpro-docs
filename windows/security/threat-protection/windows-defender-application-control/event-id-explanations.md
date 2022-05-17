@@ -24,9 +24,7 @@ ms.technology: windows-sec
 
 - Windows 10
 - Windows 11
-- Windows Server 2016 and up *
-
-* Not all events are available in Windows Server 2016 and up, e.g.  (eg: 3099, 31xx). 
+- Windows Server 2016 and later (limited events)
 
 A Windows Defender Application Control (WDAC) policy logs events locally in Windows Event Viewer in either enforced or audit mode. These events are generated under two locations:
 
