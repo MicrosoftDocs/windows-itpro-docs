@@ -89,3 +89,5 @@ This topic helps IT administrators learn about built-in accessibility features, 
  
 [Inclusive Design](https://www.microsoft.com/design/inclusive)
 
+[Accessibility guide for Microsoft 365 Apps](/deployoffice/accessibility-guide)
+
