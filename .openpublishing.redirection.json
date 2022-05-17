@@ -19503,7 +19503,7 @@
     { 
      "source_path": "education/partners.md",
      "redirect_url": "/education/",
-     "redirect_document_id": true
+     "redirect_document_id": false
     },
     {
       "source_path": "windows/security/threat-protection/security-compliance-toolkit-10.md",
@@ -19523,7 +19523,7 @@
     { 
      "source_path": "education/developers.md",
      "redirect_url": "/education/",
-     "redirect_document_id": true
+     "redirect_document_id": false
     },
     { 
       "source_path": "windows/client-management/mdm/enterpriseappmanagement-csp.md",
