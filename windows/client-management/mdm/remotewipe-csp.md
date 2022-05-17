@@ -14,7 +14,6 @@ ms.date: 08/13/2018
 
 # RemoteWipe CSP
 
-
 The RemoteWipe configuration service provider can be used by mobile operators DM server or enterprise management server to remotely wipe a device. The RemoteWipe configuration service provider can make the data stored in memory and hard disks difficult to recover if the device is remotely wiped after being lost or stolen.
 
 The following example shows the RemoteWipe configuration service provider management object in tree format as used by both OMA DM and OMA Client Provisioning. Enterprise IT Professionals can update these settings by using the Exchange Server.
