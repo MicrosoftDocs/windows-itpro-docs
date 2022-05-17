@@ -749,18 +749,6 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[RemoteRing CSP](remotering-csp.md)
-
-<!--StartSKU-->
-
-|Home|Pro|Business|Enterprise|Education|
-|--- |--- |--- |--- |--- |
-|No|No|No|No|No|
-
-<!--EndSKU-->
-<!--EndCSP-->
-
-<!--StartCSP-->
 [RemoteWipe CSP](remotewipe-csp.md)
 
 <!--StartSKU-->
@@ -857,18 +845,6 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[SurfaceHub](surfacehub-csp.md)
-
-<!--StartSKU-->
-
-|Home|Pro|Business|Enterprise|Education|
-|--- |--- |--- |--- |--- |
-||||||
-
-<!--EndSKU-->
-<!--EndCSP-->
-
-<!--StartCSP-->
 [TenantLockdown CSP](tenantlockdown-csp.md)
 
 <!--StartSKU-->
@@ -948,18 +924,6 @@ Additional lists:
 |Home|Pro|Business|Enterprise|Education|
 |--- |--- |--- |--- |--- |
 |Yes|Yes|Yes|Yes|Yes|
-
-<!--EndSKU-->
-<!--EndCSP-->
-
-<!--StartCSP-->
-[W4 Application CSP](w4-application-csp.md)
-
-<!--StartSKU-->
-
-|Home|Pro|Business|Enterprise|Education|
-|--- |--- |--- |--- |--- |
-||||||
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1049,18 +1013,6 @@ Additional lists:
 <!--EndSKU-->
 <!--EndCSP-->
 
-<!--StartCSP-->
-[w7 Application CSP](w7-application-csp.md)
-
-<!--StartSKU-->
-
-|Home|Pro|Business|Enterprise|Education|
-|--- |--- |--- |--- |--- |
-||||||
-
-<!--EndSKU-->
-<!--EndCSP-->
-
 <hr/>
 <!--EndCSPs-->
 
@@ -1077,7 +1029,6 @@ You can download the DDF files for various CSPs from the links below:
 
 
 ## <a href="" id="hololens"></a>CSPs supported in HoloLens devices
-
 
 The following list shows the CSPs supported in HoloLens devices:
 
