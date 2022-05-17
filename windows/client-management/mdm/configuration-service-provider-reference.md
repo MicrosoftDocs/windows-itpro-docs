@@ -983,7 +983,7 @@ Additional lists:
 
 |Home|Pro|Business|Enterprise|Education|
 |--- |--- |--- |--- |--- |
-|No|Yes|Yes|Yes|Yes|
+|No|No|No|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
