@@ -19511,13 +19511,13 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "windows-docs-pr/blob/live/windows/client-management/mdm/remotering-csp.md",
-      "redirect_url": "windows/client-management/mdm/configuration-service-provider-reference",
+      "source_path": "windows-docs-pr/windows/client-management/mdm/remotering-csp.md",
+      "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/client-management/mdm/remotering-ddf-file.md",
-      "redirect_url": "windows/client-management/mdm/configuration-service-provider-reference",
+      "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
       "redirect_document_id": false
     },
     { 
