@@ -2,9 +2,6 @@
 title: What's new in App-V for Windows 10, version 1703 and earlier (Windows 10)
 description: Information about what's new in App-V for Windows 10, version 1703 and earlier. 
 author: aczechowski
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 06/08/2018
 ms.reviewer: 
@@ -67,7 +64,7 @@ App-V supports System Center 2016 and System Center 2012 R2 Configuration Manage
 
 
 
-## Related topics
+## Related articles
 
 * [Release Notes for App-V for Windows 10, version 1607](../app-v/appv-release-notes-for-appv-for-windows.md)
 * [Release Notes for App-V for Windows 10, version 1703](../app-v/appv-release-notes-for-appv-for-windows-1703.md)

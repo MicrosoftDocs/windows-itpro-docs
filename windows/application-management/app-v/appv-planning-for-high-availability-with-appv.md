@@ -2,9 +2,6 @@
 title: Planning for High Availability with App-V Server
 description: Learn what you need to know so you can plan for high availability with Application Virtualization (App-V) server.
 author: aczechowski
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
@@ -12,6 +9,7 @@ manager: dougeby
 ms.author: aaroncz
 ms.topic: article
 ---
+
 # Planning for high availability with App-V Server
 
 [!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
@@ -104,6 +102,6 @@ The App-V management server database supports deployments to computers running M
 
 
 
-## Related topics
+## Related articles
 
 * [Planning to deploy App-V](appv-planning-to-deploy-appv.md)
