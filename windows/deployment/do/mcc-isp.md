@@ -93,12 +93,11 @@ To deploy MCC:
 2. [Create the MCC Resource in Azure](#create-the-mcc-resource-in-azure)
 3. [Create a MCC Node](#create-a-mcc-node-in-azure)
 4. [Edit Cache Node Information](#edit-cache-node-information)
-5. [Set up your server](#set-up-a-server-with-ubuntu)
-6. [Install MCC on a physical server or VM](#install-mcc)
-7. [Verify proper functioning MCC server](#verify-proper-functioning-mcc-server)
-8. [Configure BGP Routing](#configure-bgp-routing)
-9. [Review the MCC summary report](#verify-server-side) 
-10. [Review common issues if needed](#common-issues)
+5. [Install MCC on a physical server or VM](#install-mcc)
+6. [Verify proper functioning MCC server](#verify-proper-functioning-mcc-server)
+7. [Configure BGP Routing](#configure-bgp-routing)
+8. [Review the MCC summary report](#verify-server-side) 
+9. [Review common issues if needed](#common-issues)
 
 For questions regarding these instructions, contact [msconnectedcache@microsoft.com](mailto:msconnectedcache@microsoft.com).
 
@@ -411,7 +410,7 @@ Use this method if you already have a MCC that is active and running.
     sudo iotedge list
     ```
 
-4. Ensure MCC is reachable. Replace <CacheServerIp> with the IP Address of your MCC (or localhost)
+4. Ensure MCC is reachable. Replace <**CacheServerIp**> with the IP Address of your MCC (or localhost)
     ```
     wget http://<CacheServerIP>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com
     ```
@@ -556,6 +555,12 @@ We have observed in hypervisor environments the cache server peak egress at arou
 1. Enable **SR-IOV** in the BIOS AND enable **SR-IOV** in the NIC properties. Finally, enable **SR-IOV** in the hypervisors for the MCC VM. Microsoft has found these settings to double egress when using a Microsoft Hyper-V deployment.
 
 2. Enable “high performance” in the BIOS as opposed to energy savings. Microsoft has found this setting nearly doubled egress in a Microsoft Hyper-V deployment.
+
+### Grant Other Users Access to Manage Your MCC
+
+More users can be given access to manage Microsoft Connected Cache, even if they don't have an Azure account. Once the first cache node has been created on the portal, other users can be added as "Wwners" of the Microsoft Connected Cache resource group AND the Microsoft Connected Cache resource. 
+
+[Follow these instructions](https://docs.microsoft.com/en-us/azure/role-based-access-control/quickstart-assign-role-user-portal) to add other users as owners of the Microsoft Connected Cache resource and Microsoft Connected Cache resource group. 
 
 ### Setting up a VM on Windows Server
 
