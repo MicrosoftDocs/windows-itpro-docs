@@ -26,6 +26,7 @@ ms.custom:
 - Windows 11
 - Windows Server 2016
 - Windows Server 2019
+- Windows Server 2022
 
 
 ## Enable Windows Defender Credential Guard
@@ -204,9 +205,13 @@ DG_Readiness_Tool_v3.6.ps1 -Ready
     
     - **Event ID 17** Error reading Windows Defender Credential Guard (LsaIso.exe) UEFI configuration: \[error code\]  
     
-      You can also verify that TPM is being used for key protection by checking Event ID 51 in the **Microsoft** -&gt; **Windows** -&gt; **Kernel-Boot** event source. If you are running with a TPM, the TPM PCR mask value will be something other than 0.
+  - You can also verify that TPM is being used for key protection by checking **Event ID 51** in *Applications and Services logs → Microsoft → Windows → Kernel-Boot* event log. The full event text will read like this:
       
-    - **Event ID 51** VSM Master Encryption Key Provisioning. Using cached copy status: **0x0**. Unsealing cached copy status: 0x1. New key generation status: 0x1. Sealing status: **0x1**. TPM PCR mask: **0x0**.  
+    ```
+    VSM Master Encryption Key Provisioning. Using cached copy status: 0x0. Unsealing cached copy status: 0x1. New key generation status: 0x1. Sealing status: 0x1. TPM PCR mask: 0x0.
+    ```
+      
+    If you are running with a TPM, the TPM PCR mask value will be something other than 0.
         
   - You can use Windows PowerShell to determine whether credential guard is running on a client computer. On the computer in question, open an elevated PowerShell window and run the following command:
   
