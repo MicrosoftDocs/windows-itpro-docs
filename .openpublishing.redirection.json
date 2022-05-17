@@ -19496,12 +19496,12 @@
      "redirect_document_id": false
     },
     { 
-     "source_path": "windows/education/itadmins.md",
+     "source_path": "education/itadmins.md",
      "redirect_url": "/education/",
      "redirect_document_id": true
     },
     { 
-     "source_path": "windows/education/partners.md",
+     "source_path": "education/partners.md",
      "redirect_url": "/education/",
      "redirect_document_id": true
     },
