@@ -19496,13 +19496,13 @@
      "redirect_document_id": false
     },
     { 
-     "source_path": "education/itadmins.md",
-     "redirect_url": "/education/",
+     "source_path": "education/itadmins.yml",
+     "redirect_url": "/education",
      "redirect_document_id": true
     },
     { 
-     "source_path": "education/partners.md",
-     "redirect_url": "/education/",
+     "source_path": "education/partners.yml",
+     "redirect_url": "/education",
      "redirect_document_id": false
     },
     {
@@ -19521,8 +19521,8 @@
       "redirect_document_id": false
     },
     { 
-     "source_path": "education/developers.md",
-     "redirect_url": "/education/",
+     "source_path": "education/developers.yml",
+     "redirect_url": "/education",
      "redirect_document_id": false
     },
     { 
