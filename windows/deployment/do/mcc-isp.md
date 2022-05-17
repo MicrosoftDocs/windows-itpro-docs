@@ -45,7 +45,7 @@ The following steps describe how MCC is provisioned and used.
     - **Note:** Only IPv4 addresses are supported at this time. Entering IPv6 addresses will result in an error.
 4. Microsoft end-user devices (clients) periodically connect with Microsoft Delivery Optimization Services, and the services match the IP address of the client with the IP address of the corresponding MCC node.
 5. Microsoft clients make the range requests for content from the MCC node.
-6. An MCC node pulls content from the CDN, seeds its local cache stored on disk, and delivers the content to the client.
+6. A MCC node pulls content from the CDN, seeds its local cache stored on disk, and delivers the content to the client.
 7. Subsequent requests from end-user devices (clients) for content will be served from cache.
 8. If the MCC node is unavailable, the client will pull content from CDN to ensure uninterrupted service for your subscribers.
 
@@ -63,19 +63,19 @@ The following steps describe how MCC is provisioned and used.
 
 2. **Hardware to host MCC**: The recommended configuration will serve approximately 35,000 consumer devices, downloading a 2GB payload in 24-hour timeframe at a sustained rate of 9 Gbps with a 10 Gbps NIC.
 
-Disk requirements:
+**Disk requirements:**
 - SSDs are recommended due to improved cache read speeds of SSD, compared to HDD.
 - Using multiple disks is recommended to improve cache performance.
 - RAID disk configurations are discouraged because cache performance will be impacted. If you're using RAID disk configurations, ensure striping.
 - The maximum number of disks supported is 10.
 
-NIC requirements:
+**NIC requirements:**
 - Multiple NICs on a single MCC instance are supported using a Link Aggregated configuration.
 - 10Gbps NIC is the minimum speed recommended, but any NIC is supported.
 
 ### Sizing recommendations
 
-The MCC module is optimized for Ubuntu 20.04 LTS. Install Ubuntu 20.04 LTS on a physical server or VM of your choice. As discussed earlier, the recommended configuration (details below) will serve approximately 35,000 consumer devices downloading a 2GB payload in 24-hour timeframe at a sustained rate of 6.5 Gbps.
+The MCC module is optimized for Ubuntu 20.04 LTS. Install Ubuntu 20.04 LTS on a physical server or VM of your choice. As discussed earlier, the recommended configuration (details below) will serve approximately 35,000 consumer devices downloading a 2GB payload in 24-hour timeframe at a sustained rate of 9 Gbps with a 10 Gbps NIC.
 
 | Component  | Minimum | Recommended |
 | -- | --- | --- |
@@ -91,7 +91,7 @@ To deploy MCC:
 
 1. [Provide Microsoft with your Azure subscription ID](#provide-microsoft-with-your-azure-subscription-id)
 2. [Create the MCC Resource in Azure](#create-the-mcc-resource-in-azure)
-3. [Create an MCC Node](#create-an-mcc-node-in-azure)
+3. [Create a MCC Node](#create-a-mcc-node-in-azure)
 4. [Edit Cache Node Information](#edit-cache-node-information)
 5. [Set up your server](#set-up-a-server-with-ubuntu)
 6. [Install MCC on a physical server or VM](#install-mcc)
@@ -100,7 +100,7 @@ To deploy MCC:
 9. [Review the MCC summary report](#verify-server-side) 
 10. [Review common issues if needed](#common-issues)
 
-For questions regarding these instructions, contact [msconnectedcache@microsoft.com].(mailto:msconnectedcache@microsoft.com)
+For questions regarding these instructions, contact [msconnectedcache@microsoft.com](mailto:msconnectedcache@microsoft.com).
 
 ## Provide Microsoft with your Azure Subscription ID
 
@@ -118,7 +118,7 @@ The MCC Azure management portal is used to create and manage MCC nodes. An Azure
 
 Operators who have been given access to the program will be sent a link to the Azure portal, which will allow you to create the resource described below.
 
-1. Choose **Create a resource**  
+1. Choose **Create a resource**.  
 
     ![eMCC img02](images/imcc02.png)
 
@@ -134,7 +134,7 @@ Operators who have been given access to the program will be sent a link to the A
 
     -   Choose the subscription that you provided to Microsoft.
     -   Azure resource groups are logical groups of resources. Create a new resource group and choose a name for your resource group.
-    -   Choose **(US) West US**” for the location of the resource. This choice will not impact MCC if the physical location isn't in the West US, it is just a limitation of the preview.
+    -   Choose **(US) West US** for the location of the resource. This choice will not impact MCC if the physical location isn't in the West US, it is just a limitation of the preview.
 
        > [!NOTE]
        > Your MCC resource will not be created properly if you don't select **(US) West US**
@@ -143,8 +143,7 @@ Operators who have been given access to the program will be sent a link to the A
 
         ![iMCC emg05](images/imcc05.png)
 
-5.  Once all the information has been entered, click the **Review + Create** button. Once validation is complete, click the **Create** button to start the
-    resource creation.
+5.  Once all the information has been entered, click the **Review + Create** button. Once validation is complete, click the **Create** button to start the resource creation.
 
     ![iMCC img06](images/imcc06.png)
 
@@ -158,7 +157,7 @@ Operators who have been given access to the program will be sent a link to the A
 #### Error: Could not create Marketplace item
 
 - If you receive a "Could not create marketplace item" error message in your Azure portal:
-    -   Ensure that you have selected "Microsoft Connected Cache" and not "Connected Cache resources" while trying to create an MCC resource
+    -   Ensure that you have selected "Microsoft Connected Cache" and not "Connected Cache resources" while trying to create a MCC resource
     -   Ensure that you are using the same subscription that you provided to Microsoft and you have privileges to create an Azure resource
     -   Clear your browser cache and start in a new window if the issue persists
 
@@ -180,7 +179,8 @@ Creating a MCC node is a multi-step process, and the first step is to access the
 | **Field Name**                | **Expected Value**                         | **Description**                                                                                                                                                                                         |
 |-------------------------------|--------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Cache Node Name**           | Alphanumeric name that includes no spaces. | The name of the cache node. You may choose names based on location like Seattle-1. This name must be unique and can't be changed later.                                                                    |
-| **Server IP Address**         | Ipv4 Address                               | IP address of your MCC server. This is used to route end-user devices in your network to the server for Microsoft content downloads. **The IP address must be publicly accessible.** |
+| **Server IP Address**         | IPv4 Address                               | IP address of your MCC server. This is used to route end-user devices in your network to the server for Microsoft content downloads. **The IP address must be publicly accessible.** |
+| **Max Allowable Egress (Mbps)** | Integer in Mbps | The maximum egress (Mbps) of your MCC based on the specifications of your hardware (i.e. 10000 Mbps).|
 | **Address Range/CIDR Blocks** | IPv4 CIDR notation                         | IP Address range/CIDR blocks that should be routed to the MCC server as a comma separated list. For example: 2.21.234.0/24 , 3.22.235.0/24 , 4.23.236.0/24                        |
 | **Enable Cache Node**         | Enable/Disable Radio Button                | **Enable** permits the cache node to receive content requests. <br>**Disable** prevents the cache node from receiving content requests. <br>Cache nodes are enabled by default.          |
 
@@ -197,11 +197,11 @@ There are two other read-only fields on this page that are populated after the c
 | **IP Space**        | Number of IP addresses that will be routed to your cache server.                                                                                                        |
 | **Activation Keys** | Set of keys to activate your cache node with the MCC services. Copy the keys for use during install. The CustomerID is your Azure subscripiton ID. |
 
-5.  Enter the information for the Cache Node and click on the Create button. In the screenshot below only the Cache Node Name is provided, but all information can be included if desired. Cache Node Name and Max allowable Egress (Mbps) are required fields.
+5.  Enter the information for the Cache Node and click on the Create button. **Cache Node Name** and **Max Allowable Egress (Mbps)** are required fields, but all information can be included if desired.
 
     ![iMCC img12](images/imcc12.png)
 
-    If there are errors the form will provide guidance on how to correct the errors. For example:
+    If there are errors, the form will provide guidance on how to correct the errors. For example:
 
     - The cache node name is in use in the resource or is an incorrect format.
     - The CIDR block notation or list is incorrect.
@@ -237,33 +237,20 @@ To edit IP address or CIDR information, click on the Cache Node Name which will 
 
 ![iMCC img16](images/imcc16.png)
 
-The Server IP Address, Address Range/CIDR Blocks, and Enable Cache Node are all editable as show below:
+The **Server IP Address**, **Address Range/CIDR Blocks**, and **Enable Cache Node** are all editable as shown below:
 
 ![iMCC img17](images/imcc17.png)
-
-## Set up a server with Ubuntu 
-
-The MCC module is optimized for Ubuntu 20.04 LTS. Install Ubuntu 20.04 LTS on a physical server or VM of your choice. As discussed earlier, the recommended configuration (details below) will serve approximately 35,000 consumer devices downloading a 2GB payload in 24-hour timeframe at a sustained rate of 6.5 Gbps.
-
-|             | **Minimum**                                 | **Recommended**                                    |
-|-------------|---------------------------------------------|----------------------------------------------------|
-| **Server**  | Ubuntu 20.04 LTS VM or physical server      | Ubuntu 20.04 LTS VM or physical server (preferred) |
-| **NIC**     | 10 Gbps                                     | 10 Gbps                                            |
-| **Disk**    | SSD 1 – 2 drives minimum 2 TB each minimum  | SSD 2 – 4 drives minimum 2 TB each minimum         |
-| **Memory**  | 8 GB                                        | 32 GB or more                                      |
-| **Cores**   | 4                                           | 8 or more                                          |
 
 ## Install MCC
 
 Installing MCC on your physical server or VM is a straightforward process. A Bash script installer performs the following tasks:
 
--   Azure IoT Edge relies on an OCI-compatible container runtime. The script
-    will install the Moby engine and CLI.
+-   Azure IoT Edge relies on an OCI-compatible container runtime. The script will install the Moby engine and CLI.
 -   Installs IoT Edge.
 -   Installs SSH to support remote access to the server
 -   Enables the firewall and opens port 80 for inbound and outbound traffic. Port 80 is used by MCC.
 -   Configures Connected Cache tuning settings.
--   Creates the necessary *FREE* Azure resource - IoT Hub/IoT Edge.
+-   Creates the necessary free Azure resource - IoT Hub/IoT Edge.
 -   Deploys the MCC container to server.
 
 > [!IMPORTANT]
@@ -271,17 +258,17 @@ Installing MCC on your physical server or VM is a straightforward process. A Bas
 
 ### Steps to install MCC
 
-1.  Download and unzip mccinstaller.zip from the create cache node page or cache node configuration page which contains the necessary installation files.
+1.  Download and unzip mccinstaller.zip from the **Create Cache Node** page or **Cache Node Configuration** page which contains the necessary installation files.
 
     ![iMCC img18](images/imcc18.png)
 
-    Files and folders contained in the mccinstaller.zip file:
+    Files and folders contained in the **mccinstaller.zip** file:
 
     - Diagnostics folder
     - **installmcc.sh** – Main installer file.
-    - **installIotEdge.sh** – Installs the necessary prerequisites like IoT Edge runtime and Docker and makes necessary host OS settings to optimization caching performance.
+    - **installIotEdge.sh** – Installs the necessary prerequisites like IoT Edge runtime and Docker and makes necessary host OS settings to optimize caching performance.
     - **resourceDeploymentForConnectedCache.sh** – Creates Azure cloud resources required to support MCC control plane.
-    - **mccdeployment.json** – Deployment manifest used by IoT Edge to deploy the MCC container and configure settings on the container like cache drives location sizes.
+    - **mccdeployment.json** – Deployment manifest used by IoT Edge to deploy the MCC container and configure settings on the container like cache drives location and sizes.
     - **mccupdate.json**
     - **packagever.txt**
     - **uninstallmcc.sh** - Main uninstaller file
@@ -289,9 +276,9 @@ Installing MCC on your physical server or VM is a straightforward process. A Bas
 
 2.  Copy all 4 installation files to your Linux server (physical or VM).
 
-3.  Before proceeding, ensure that you have a data drive configured on your server. You'll need to specify the location for this cache drive on step 9. Mimimum size for the data drive is 100GB. For instructions to mount a disk on a Linux VM, see [Attach a data disk to a Linux VM](/azure/virtual-machines/linux/attach-disk-portal#find-the-disk).
+3.  Before proceeding, ensure that you have a data drive configured on your server. You'll need to specify the location for this cache drive on **Step 9**. Mimimum size for the data drive is 100GB. For instructions to mount a disk on a Linux VM, see [Attach a data disk to a Linux VM](/azure/virtual-machines/linux/attach-disk-portal#find-the-disk).
 
-4.  Open a terminal and change the access permissions to execute on the **installmcc.sh** Bash script file using chmod.
+4.  Open a terminal window and change the access permissions to execute on the **installmcc.sh** Bash script file using chmod.
 
     ```bash
     sudo chmod +x installmcc.sh
@@ -321,23 +308,18 @@ Installing MCC on your physical server or VM is a straightforward process. A Bas
 > The permissions / ownerships on the cache drive location will be changed to everyone via chmod 777<br>
 > **Don't** point the cache drive location to any of the following: “**.**”, “**./var**”, “**/**”, “**\<space\>**”
 
-Specifying any of the directories mentioned above will corrupt the VM and you
-will need to provision a new one.
+Specifying any of the directories mentioned above will corrupt the VM, and you will need to provision a new one.
 
 ![iMCC img24](images/imcc24.png)
 
-10.  If this is your first MCC deployment, select “n” when
-    prompted for an IoT Hub. If this is **not** your first MCC deployment, you
-    can use an existing IoT hub from your previous MCC installation. After
-    selecting “Y”, we will display your existing IoT Hubs, you can copy and
-    paste the resulting IoT Hub name to continue.
+10.  If this is your first MCC deployment, select “n” when prompted for an IoT Hub. If this is **not** your first MCC deployment, you can use an existing IoT hub from your previous MCC installation. After selecting “y”, we will display your existing IoT Hubs, and you can copy and paste the resulting IoT Hub name to continue.
 
 ![iMCC img25](images/imcc25.png)
 
 11.  If there are no errors, go to the next step.
 
 -  If there are errors, inspect the installer logs which are under /etc/mccresourcecreation/.
--  If there were, follow the instructions to [Troubleshoot your IoT Edge device](/azure/iot-edge/troubleshoot).
+-  If there are errors, follow the instructions to [Troubleshoot your IoT Edge device](/azure/iot-edge/troubleshoot).
 
 ## Verify Proper Functioning MCC Server
 
@@ -351,13 +333,13 @@ sudo iotedge list​
 
 ![iMCC img26](images/imcc26.png)
 
-If **edgeAgent** and **edgeHub** containers are listed, but not “MCC”, you may view the status of the IoTEdge security manager using the command:
+If **edgeAgent** and **edgeHub** containers are listed, but not **“MCC”**, you may view the status of the IoTEdge security manager using the command:
 
 ```bash
 sudo journalctl -u iotedge -f
 ```
 
-For example, this command provides the current status of the starting, stopping of a container, or the container pull and start as is shown in the sample below:
+For example, this command provides the current status of the starting and stopping of a container, or the container pull and start as is shown in the sample below:
 
 ![iMCC img27](images/imcc27.png)
 
@@ -385,7 +367,7 @@ If the test fails, see the [common issues](#common-issues) section below for mor
 
 ## Configure BGP Routing
 
-If you have a MCC that is already active and running, follow Method 1 to configure BGP using the Update Script. If you are installing MCC for the first time, configure BGP Routing with Method 2. 
+If you have a MCC that is already active and running, follow **Method 1** to configure BGP using the Update Script. If you are installing MCC for the first time, configure BGP Routing with **Method 2**. 
 
 ### Method 1: Configure BGP with the Update Script
 
@@ -402,7 +384,7 @@ Use this method if you already have a MCC that is active and running.
     sudo chmod +x installIoTEdge.sh
     ```
 
-3. Copy the cache node update script located at the bottom of the same page and run it on your Linux machine at the same location as Step 2. 
+3. Copy the cache node update script located at the bottom of the same page and run it on your Linux machine at the same location as **Step 2**. 
 
 ![iMCC img54](images/imcc54.png)
 
@@ -423,7 +405,7 @@ Use this method if you already have a MCC that is active and running.
     b. Verify that the BGP connection has been established and that you are advertising routes to the MCC
     c. Wait 5 minutes to refresh the cache node page in the Azure portal to see the BGP routes
 
-3. Confirm the update is complete by running the following command. Ensure MCC is running on **1.2.1.1070**. If you only see *edgeAgent* and *edgeHub*, wait 5 minutes and run this command again.
+3. Confirm the update is complete by running the following command. Ensure MCC is running on **1.2.1.1070**. If you only see **edgeAgent** and **edgeHub**, wait 5 minutes and run this command again.
 
     ```
     sudo iotedge list
@@ -508,7 +490,7 @@ To run this script:
 
 1.  Navigate to the following folder in the MCC installation files:
 
-**mccinstaller** \> **MccResourceInstall** \> **Diagnostics**
+    **mccinstaller** \> **MccResourceInstall** \> **Diagnostics**
 
 2.  Run the following commands:
 
@@ -516,7 +498,7 @@ To run this script:
     sudo chmod +x collectMccDiagnostics.sh
     sudo ./collectMccDiagnostics.sh
     ```
-3.  The script stores all the debug files into a folder and the creates a tar file. After the script is finished running, it will output the path of the tar file that you can share with the MCC team. The file should be **/etc/mccdiagnostics/support_bundle_\$timestamp.tar.gz**.
+3.  The script stores all the debug files into a folder and creates a tar file. After the script is finished running, it will output the path of the tar file that you can share with the MCC team. The file should be **/etc/mccdiagnostics/support_bundle_\$timestamp.tar.gz**.
 
 4.  [Email the MCC team](mailto:msconnectedcache@microsoft.com?subject=Debugging%20Support%20Request%20for%20MCC) and attach this tar file, asking for debugging support. Screenshots of the error along with any other warnings you saw will be helpful during our debugging process.
 
@@ -569,9 +551,9 @@ sudo ./uninstallmcc.sh
 
 ### Performance of MCC in VM/Hypervisor environments
 
-We have observed in hypervisor environments the cache server peak egress at around 1.1 Gbps. If you wish to maximize the egress in hypervisor environments it is critical to make two settings changes.
+We have observed in hypervisor environments the cache server peak egress at around 1.1 Gbps. If you wish to maximize the egress in hypervisor environments, it is critical to make two settings changes.
 
-1. Enable **SR-IOV** in the BIOS AND enable **SR-IOV** in the NIC properties, and finally, enable **SR-IOV** in the hypervisors for the MCC VM. Microsoft has found these settings to double egress when using a Microsoft Hyper-V deployment.
+1. Enable **SR-IOV** in the BIOS AND enable **SR-IOV** in the NIC properties. Finally, enable **SR-IOV** in the hypervisors for the MCC VM. Microsoft has found these settings to double egress when using a Microsoft Hyper-V deployment.
 
 2. Enable “high performance” in the BIOS as opposed to energy savings. Microsoft has found this setting nearly doubled egress in a Microsoft Hyper-V deployment.
 
