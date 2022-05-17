@@ -79,7 +79,6 @@ The following table provides a full list of supported integration points for Off
 ### Connection Groups
 
 * [Managing Connection Groups](appv-managing-connection-groups.md)
-* [Connection groups on the App-V team blog](/archive/blogs/appv)
 
 ### Dynamic Configuration
 
