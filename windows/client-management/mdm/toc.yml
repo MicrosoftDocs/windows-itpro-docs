@@ -255,8 +255,6 @@ items:
           items: 
             - name: EnterpriseAPN DDF
               href: enterpriseapn-ddf.md
-        - name: EnterpriseAppManagement CSP
-          href: enterpriseappmanagement-csp.md
         - name: EnterpriseAppVManagement CSP
           href: enterpriseappvmanagement-csp.md
           items: 
@@ -296,11 +294,6 @@ items:
           items: 
             - name: HealthAttestation DDF
               href: healthattestation-ddf.md
-        - name: Messaging CSP
-          href: messaging-csp.md
-          items: 
-            - name: Messaging DDF file
-              href: messaging-ddf.md
         - name: MultiSIM CSP
           href: multisim-csp.md
           items: 
