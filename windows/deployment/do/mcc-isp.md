@@ -124,6 +124,7 @@ Operators who have been given access to the program will be sent a link to the A
 2. Type **Microsoft Connected Cache** into the search box and hit **Enter** to show search results.
 
 3.  Select **Microsoft Connected Cache** and choose **Create** on the next screen to start the process of creating the MCC resource.
+    -   **Note:** DO NOT selected "Connected Cache Resources", which is different from Microsoft Connected Cache.
 
     ![iMCC img03](images/imcc03.png)
     ![iMCC img04](images/imcc04.png)
@@ -173,7 +174,7 @@ Creating a MCC node is a multi-step process, and the first step is to access the
 
     ![iMCC img09](images/imcc09.png)
 
-4.  Clicking the **Create Cache Node** button will open the **Create Cache Node** page; **Cache Node Name** is the only field required for cache node creation.
+4.  Clicking the **Create Cache Node** button will open the **Create Cache Node** page; **Cache Node Name** and **Max Allowable Egress** are the only fields required for cache node creation.
 
 | **Field Name**                | **Expected Value**                         | **Description**                                                                                                                                                                                         |
 |-------------------------------|--------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
