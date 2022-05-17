@@ -846,11 +846,6 @@ items:
           items: 
             - name: RemoteFind DDF file
               href: remotefind-ddf-file.md
-        - name: RemoteRing CSP
-          href: remotering-csp.md
-          items: 
-            - name: RemoteRing DDF file
-              href: remotering-ddf-file.md
         - name: RemoteWipe CSP
           href: remotewipe-csp.md
           items: 
@@ -956,10 +951,10 @@ items:
           items: 
             - name: WindowsAdvancedThreatProtection DDF file
               href: windowsadvancedthreatprotection-ddf.md
-        - name: WindowsAutoPilot CSP
+        - name: WindowsAutopilot CSP
           href: windowsautopilot-csp.md
           items: 
-            - name: WindowsAutoPilot DDF file
+            - name: WindowsAutopilot DDF file
               href: windowsautopilot-ddf-file.md
         - name: WindowsDefenderApplicationGuard CSP
           href: windowsdefenderapplicationguard-csp.md
