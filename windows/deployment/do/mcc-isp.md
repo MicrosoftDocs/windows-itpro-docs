@@ -61,7 +61,7 @@ The following steps describe how MCC is provisioned and used.
     > [!NOTE]
     > If you request Exchange or Public peering in the future, business email addresses must be used to register ASN's, because Microsoft does not accept Gmail or other non-business email addresses.
 
-2. **Hardware to host MCC**: The recommended configuration will serve approximately 35,000 consumer devices, downloading a 2GB payload in 24-hour timeframe at a sustained rate of 6.5 Gbps.
+2. **Hardware to host MCC**: The recommended configuration will serve approximately 35,000 consumer devices, downloading a 2GB payload in 24-hour timeframe at a sustained rate of 9 Gbps with a 10 Gbps NIC.
 
 Disk requirements:
 - SSDs are recommended due to improved cache read speeds of SSD, compared to HDD.
@@ -93,11 +93,12 @@ To deploy MCC:
 2. [Create the MCC Resource in Azure](#create-the-mcc-resource-in-azure)
 3. [Create an MCC Node](#create-an-mcc-node-in-azure)
 4. [Edit Cache Node Information](#edit-cache-node-information)
-5. [Set up your server](#set-up-a-server-with-sr-or-an-ubuntu)
+5. [Set up your server](#set-up-a-server-with-ubuntu)
 6. [Install MCC on a physical server or VM](#install-mcc)
 7. [Verify proper functioning MCC server](#verify-proper-functioning-mcc-server)
-8. [Review the MCC summary report](#verify-server-side) 
-9. [Review common issues if needed](#common-issues)
+8. [Configure BGP Routing](#configure-bgp-routing)
+9. [Review the MCC summary report](#verify-server-side) 
+10. [Review common issues if needed](#common-issues)
 
 For questions regarding these instructions, contact [msconnectedcache@microsoft.com].(mailto:msconnectedcache@microsoft.com)
 
@@ -266,7 +267,7 @@ Installing MCC on your physical server or VM is a straightforward process. A Bas
 -   Deploys the MCC container to server.
 
 > [!IMPORTANT]
-> Ensure that ports 80, 443, 5000, 5671, and 8883 are open so Microsoft can verify proper functioning of the cache server
+> Ensure that ports 80, 179, 443, 5000, 5671, and 8883 are open so Microsoft can verify proper functioning of the cache server
 
 ### Steps to install MCC
 
@@ -381,6 +382,61 @@ http://<CacheServerIP>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsup
 ```
 
 If the test fails, see the [common issues](#common-issues) section below for more information.
+
+## Configure BGP Routing
+
+If you have a MCC that is already active and running, follow Method 1 to configure BGP using the Update Script. If you are installing MCC for the first time, configure BGP Routing with Method 2. 
+
+### Method 1: Configure BGP with the Update Script
+
+Use this method if you already have a MCC that is active and running.
+
+1. Navigate to the Azure portal to download the installer. Detailed steps on how to download: From the Azure portal, navigate to your existing Connected Cache Resource. Under "Cache Node Management" section on the leftmost panel, click on "Cache Nodes". Select one of your existing Cache Nodes and click on the "Download Installer" button. 
+
+![iMCC img18](images/imcc18.png)
+
+2. Run the following commands to give permissions to the update script:
+
+    ```
+    sudo chmod +x updatemcc.sh
+    sudo chmod +x installIoTEdge.sh
+    ```
+
+3. Copy the cache node update script located at the bottom of the same page and run it on your Linux machine at the same location as Step 2. 
+
+![iMCC img54](images/imcc54.png)
+
+4. Log in with your Azure credentials using the Device Login Code.
+
+5. Continue with **Method 2** to finish configuring your MCC with BGP Routing.
+
+### Method 2: Configure BGP during the Initial Installation
+
+1. Enter "y" when asked if you would like to configure BGP.
+    a. Enter the number of BGP neighbors you would like to configure
+    b. Enter the IP address for the neighbor
+    c. Enter the ASN corresponding to that neighbor (this should be the same ASN as the MCC -iBGP connection)
+    d. Repeat steps 1.b and 1.c for each neighbor you would like to configure
+
+2. BGP is now configured from the MCC side. From your end, please establish a neighborship from your router to MCC's host machine (use the IP address of the host machine that is running the MCC container)
+    a. Please ensure there aren't any firewall rules blocking this connection
+    b. Verify that the BGP connection has been established and that you are advertising routes to the MCC
+    c. Wait 5 minutes to refresh the cache node page in the Azure portal to see the BGP routes
+
+3. Confirm the update is complete by running the following command. Ensure MCC is running on **1.2.1.1070**. If you only see *edgeAgent* and *edgeHub*, wait 5 minutes and run this command again.
+
+    ```
+    sudo iotedge list
+    ```
+
+4. Ensure MCC is reachable. Replace <CacheServerIp> with the IP Address of your MCC (or localhost)
+    ```
+    wget http://<CacheServerIP>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com
+    ```
+
+5. After successfully completing the update, navigate to the portal and select “Download JSON” to check the routes being reported. Change the radio button from “Manually Entered” to “Use BGP” to start routing using BGP.
+
+![iMCC img55](images/imcc55.png)
 
 ## Common Issues
 
