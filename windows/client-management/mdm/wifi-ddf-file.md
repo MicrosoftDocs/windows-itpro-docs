@@ -15,11 +15,11 @@ ms.date: 06/28/2018
 # WiFi DDF file
 
 > [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic shows the OMA DM device description framework (DDF) for the **WiFi** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
-The XML below is for Windows 10, version 1809.
+The XML below is for Windows 10, version 1809 and later.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

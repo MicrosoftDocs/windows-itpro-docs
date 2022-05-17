@@ -2,9 +2,6 @@
 title: App-V Supported Configurations (Windows 10/11)
 description: Learn the requirements to install and run App-V supported configurations in your Windows 10/11 environment.
 author: aczechowski
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 04/16/2018
 ms.reviewer: 
@@ -12,6 +9,7 @@ manager: dougeby
 ms.author: aaroncz
 ms.topic: article
 ---
+
 # App-V Supported Configurations
 
 **Applies to**:
@@ -24,7 +22,7 @@ ms.topic: article
 - Windows Server 2012
 - Windows Server 2008 R2 (Extended Security Update)
 
-This topic specifies the requirements to install and run App-V in your Windows client environment. For information about prerequisite software such as the .NET Framework, see [App-V prerequisites](appv-prerequisites.md).
+This article specifies the requirements to install and run App-V in your Windows client environment. For information about prerequisite software such as the .NET Framework, see [App-V prerequisites](appv-prerequisites.md).
 
 ## App-V Server system requirements
 
@@ -123,7 +121,7 @@ See the Windows or Windows Server documentation for the hardware requirements.
 
 The App-V client works with Configuration Manager versions starting with Technical Preview for System Center Configuration Manager, version 1606.
 
-## Related topics
+## Related articles
 
 * [Planning to deploy App-V](appv-planning-to-deploy-appv.md)
 * [App-V prerequisites](appv-prerequisites.md)

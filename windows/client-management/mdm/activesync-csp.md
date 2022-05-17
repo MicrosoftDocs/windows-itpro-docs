@@ -14,23 +14,30 @@ ms.date: 06/26/2017
 
 # ActiveSync CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 The ActiveSync configuration service provider is used to set up and change settings for Exchange ActiveSync. After an Exchange account has been updated over-the-air by the ActiveSync configuration service provider, the device must be powered off and then powered back on to see sync status.
 
 Configuring Windows Live ActiveSync accounts through this configuration service provider isn't supported.
 
 > [!NOTE]
-> The target user must be logged in for the CSP to succeed. The correct way to configure an account is to use the ./User/Vendor/MSFT/ActiveSync path.
+> The target user must be logged in for the CSP to succeed. The correct way to configure an account is to use the `./User/Vendor/MSFT/ActiveSync` path.
 
-On the desktop, only per user configuration (./User/Vendor/MSFT/ActiveSync) is supported. However, the ./Vendor/MSFT/ActiveSync path will work if the user is logged in. The CSP fails when no user is logged in.
+On the desktop, only per user configuration `./User/Vendor/MSFT/ActiveSync` is supported. However, the `./Vendor/MSFT/ActiveSync` path will work if the user is logged in. The CSP fails when no user is logged in.
 
-The ./Vendor/MSFT/ActiveSync path is deprecated, but will continue to work in the short term.
-
- 
+The `./Vendor/MSFT/ActiveSync path` is deprecated, but will continue to work in the short term.
 
 The following example shows the ActiveSync configuration service provider management objects in tree format as used by Open Mobile Alliance Device Management (OMA DM), OMA Client Provisioning, and Enterprise DM.
 
-```
+```console
 ./Vendor/MSFT
 ActiveSync
 ----Accounts
@@ -66,13 +73,11 @@ ActiveSync
 The root node for the ActiveSync configuration service provider.
 
 > [!NOTE]
-> The target user must be logged in for the CSP to succeed. The correct way to configure an account is to use the ./User/Vendor/MSFT/ActiveSync path.
+> The target user must be logged in for the CSP to succeed. The correct way to configure an account is to use the `./User/Vendor/MSFT/ActiveSync` path.
 
-On the desktop, only per user configuration (./User/Vendor/MSFT/ActiveSync) is supported. However, the ./Vendor/MSFT/ActiveSync will work if the user is logged in. The CSP fails when no user is logged in.
+On the desktop, only per user configuration `./User/Vendor/MSFT/ActiveSync` is supported. However, the ./Vendor/MSFT/ActiveSync will work if the user is logged in. The CSP fails when no user is logged in.
 
-The ./Vendor/MSFT/ActiveSync path is deprecated, but will continue to work in the short term.
-
- 
+The `./Vendor/MSFT/ActiveSync` path is deprecated, but will continue to work in the short term.
 
 The supported operation is Get.
 
@@ -264,7 +269,6 @@ Required. A character string that specifies the name of the content type.
 > [!NOTE]
 > In Windows 10, this node is currently not working.
 
- 
 Supported operations are Get, Replace, and Add (can't Add after the account is created).
 
 When you use Add or Replace inside an atomic block in the SyncML, the CSP returns an error and provisioning fails. When you use Add or Replace outside of the atomic block, the error is ignored and the account is provisioned as expected.
@@ -275,7 +279,9 @@ Node for mail body type and email age filter.
 <a href="" id="policies-mailbodytype"></a>**Policies/MailBodyType**  
 Required. Specifies the email body type: HTML or plain.
 
-Value type is string. Supported operations are Add, Get, Replace, and Delete.
+Value type is string.
+
+Supported operations are Add, Get, Replace, and Delete.
 
 <a href="" id="policies-maxmailagefilter"></a>**Policies/MaxMailAgeFilter**  
 Required. Specifies the time window used for syncing mail items to the device.
@@ -283,7 +289,6 @@ Required. Specifies the time window used for syncing mail items to the device.
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 ## Related topics
-
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
