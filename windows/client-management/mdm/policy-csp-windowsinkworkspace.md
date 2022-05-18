@@ -119,7 +119,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Value type is int. The following list shows the supported values:
+Supported value type is int. The following list shows the supported values:
 
 -   0 - access to ink workspace is disabled. The feature is turned off.
 -   1 - ink workspace is enabled (feature is turned on), but the user cannot access it above the lock screen.

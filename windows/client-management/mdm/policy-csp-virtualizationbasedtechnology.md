@@ -28,13 +28,13 @@ manager: dansimp
   </dd>
 </dl>
 
-
 <hr/>
 
 <!--Policy-->
 <a href="" id="virtualizationbasedtechnology-hypervisorenforcedcodeintegrity"></a>**VirtualizationBasedTechnology/HypervisorEnforcedCodeIntegrity**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -57,7 +57,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Allows the IT admin to control the state of Hypervisor-protected Code Integrity (HVCI) on devices. HVCI is a feature within Virtualization Based Security, and is frequently referred to as Memory integrity. Learn more [here](/windows-hardware/design/device-experiences/oem-vbs).
+Allows the IT admin to control the state of Hypervisor-Protected Code Integrity (HVCI) on devices. HVCI is a feature within Virtualization Based Security, and is frequently referred to as Memory integrity. Learn more [here](/windows-hardware/design/device-experiences/oem-vbs).
 
 >[!NOTE]
 >After the policy is pushed, a system reboot will be required to change the state of HVCI.
@@ -66,9 +66,9 @@ Allows the IT admin to control the state of Hypervisor-protected Code Integrity 
 <!--SupportedValues-->
 The following are the supported values:
 
-- 0: (Disabled) Turns off Hypervisor-Protected Code Integrity remotely if configured previously without UEFI Lock
-- 1: (Enabled with UEFI lock) Turns on Hypervisor-Protected Code Integrity with UEFI lock
-- 2: (Enabled without lock) Turns on Hypervisor-Protected Code Integrity without UEFI lock
+- 0: (Disabled) Turns off Hypervisor-Protected Code Integrity remotely if configured previously without UEFI Lock.
+- 1: (Enabled with UEFI lock) Turns on Hypervisor-Protected Code Integrity with UEFI lock.
+- 2: (Enabled without lock) Turns on Hypervisor-Protected Code Integrity without UEFI lock.
 
 <!--/SupportedValues-->
 <!--Example-->
@@ -84,6 +84,7 @@ The following are the supported values:
 <a href="" id="virtualizationbasedtechnology-requireuefimemoryattributestable"></a>**VirtualizationBasedTechnology/RequireUEFIMemoryAttributesTable**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -106,7 +107,7 @@ The following are the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Allows the IT admin to control the state of Hypervisor-protected Code Integrity (HVCI) on devices. HVCI is a feature within Virtualization Based Security, and is frequently referred to as Memory integrity. Learn more [here](/windows-hardware/design/device-experiences/oem-vbs).
+Allows the IT admin to control the state of Hypervisor-Protected Code Integrity (HVCI) on devices. HVCI is a feature within Virtualization Based Security, and is frequently referred to as Memory integrity. Learn more [here](/windows-hardware/design/device-experiences/oem-vbs).
 
 >[!NOTE]
 >After the policy is pushed, a system reboot will be required to change the state of HVCI.
@@ -116,8 +117,8 @@ Allows the IT admin to control the state of Hypervisor-protected Code Integrity 
 
 The following are the supported values:
 
-- 0: (Disabled) Do not require UEFI Memory Attributes Table
-- 1: (Enabled) Require UEFI Memory Attributes Table
+- 0: (Disabled) Do not require UEFI Memory Attributes Table.
+- 1: (Enabled) Require UEFI Memory Attributes Table.
 
 <!--/SupportedValues-->
 <!--Example-->
@@ -131,3 +132,6 @@ The following are the supported values:
 
 <!--/Policies-->
 
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)
