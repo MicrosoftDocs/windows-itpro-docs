@@ -48,8 +48,6 @@ landingContent:
         links:
           - text: Test your site on Microsoft Edge for free on BrowserStack
             url: https://developer.microsoft.com/microsoft-edge/tools/remote/
-          - text: Use sonarwhal to improve your website
-            url: https://sonarwhal.com/
   
   # Card (optional)
   - title: Improve compatibility with Enterprise Mode
@@ -126,10 +124,8 @@ landingContent:
             url: ./edge-technical-demos.md
       - linkListType: how-to-guide
         links:
-          - text: Import bookmarks
-            url: https://microsoftedgetips.microsoft.com/2/39
-          - text: Password management
-            url: https://microsoftedgetips.microsoft.com/2/18
+          - text: Microsoft Edge features and tips
+            url: https://microsoftedgetips.microsoft.com
       
   # Card (optional)
   - title: Stay informed

@@ -2,16 +2,12 @@
 title: How to Modify Client Configuration by Using Windows PowerShell (Windows 10/11)
 description: Learn how to modify the Application Virtualization (App-V) client configuration by using Windows PowerShell.
 author: aczechowski
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
 ---
-
 
 # How to Modify Client Configuration by Using Windows PowerShell
 
@@ -34,6 +30,6 @@ Use the following procedure to configure the App-V client configuration.
  
 <br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
-## Related topics
+## Related articles
 
 [Operations for App-V](appv-operations.md)

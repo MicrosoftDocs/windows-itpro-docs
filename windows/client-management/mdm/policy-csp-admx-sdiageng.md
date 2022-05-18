@@ -66,7 +66,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows users who are connected to the Internet to access and search troubleshooting content that is hosted on Microsoft content servers. Users can access online troubleshooting content from within the Troubleshooting Control Panel UI by clicking "Yes" when they are prompted by a message that states, "Do you want the most up-to-date troubleshooting content?"
+This policy setting allows Internet-connected users to access and search troubleshooting content that is hosted on Microsoft content servers. Users can access online troubleshooting content from within the Troubleshooting Control Panel UI by clicking "Yes" when they are prompted by a message that states, "Do you want the most up-to-date troubleshooting content?"
 
 If you enable or do not configure this policy setting, users who are connected to the Internet can access and search troubleshooting content that is hosted on Microsoft content servers from within the Troubleshooting Control Panel user interface.
 
@@ -116,7 +116,7 @@ This policy setting allows users to access and run the troubleshooting tools tha
 
 If you enable or do not configure this policy setting, users can access and run the troubleshooting tools from the Troubleshooting Control Panel.
 
-If you disable this policy setting, users cannot access or run the troubleshooting tools from the Control Panel.
+If this policy setting is disabled, the users cannot access or run the troubleshooting tools from the Control Panel.
 
 >[!Note]
 >This setting also controls a user's ability to launch standalone troubleshooting packs such as those found in .diagcab files.

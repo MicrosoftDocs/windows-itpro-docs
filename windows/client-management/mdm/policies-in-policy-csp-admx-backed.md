@@ -980,7 +980,7 @@ ms.date: 10/08/2020
 - [ADMX_sdiageng/ScriptedDiagnosticsExecutionPolicy](./policy-csp-admx-sdiageng.md#admx-sdiageng-scripteddiagnosticsexecutionpolicy)
 - [ADMX_sdiageng/ScriptedDiagnosticsSecurityPolicy](./policy-csp-admx-sdiageng.md#admx-sdiageng-scripteddiagnosticssecuritypolicy)
 - [ADMX_sdiagschd/ScheduledDiagnosticsExecutionPolicy](./policy-csp-admx-sdiagschd.md#admx-sdiagschd-scheduleddiagnosticsexecutionpolicy)
-- [ADMX_Securitycenter/SecurityCenter_SecurityCenterInDomain](/policy-csp-admx-securitycenter.md#admx-securitycenter-securitycenter-securitycenterindomain)
+- [ADMX_Securitycenter/SecurityCenter_SecurityCenterInDomain](./policy-csp-admx-securitycenter.md#admx-securitycenter-securitycenter-securitycenterindomain)
 - [ADMX_Sensors/DisableLocationScripting_1](./policy-csp-admx-sensors.md#admx-sensors-disablelocationscripting-1)
 - [ADMX_Sensors/DisableLocationScripting_2](./policy-csp-admx-sensors.md#admx-sensors-disablelocationscripting-2)
 - [ADMX_Sensors/DisableLocation_1](./policy-csp-admx-sensors.md#admx-sensors-disablelocation-1)

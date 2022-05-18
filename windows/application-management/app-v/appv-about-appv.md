@@ -2,9 +2,6 @@
 title: What's new in App-V for Windows 10, version 1703 and earlier (Windows 10)
 description: Information about what's new in App-V for Windows 10, version 1703 and earlier. 
 author: aczechowski
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 06/08/2018
 ms.reviewer: 
@@ -27,8 +24,8 @@ Previous versions of the App-V Sequencer required manual sequencing and updating
 Using the automatic sequencer to package your apps gives you the following benefits:
 
 * **Automatic virtual machine (VM) sequencing environment provisioning**. To learn more, see [Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-provision-a-vm.md).
-* **Package batch-sequencing**. This means that multiple apps can be sequenced at the same time, in a single group. To learn more, see [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-sequencing.md).
-* **Package batch-updating**. This means that multiple apps can be updated at the same time, in a single group. To learn more, see [Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-updating.md).
+* **Package batch-sequencing**. This benefit denotes that multiple apps can be sequenced at the same time, in a single group. To learn more, see [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-sequencing.md).
+* **Package batch-updating**. This benefit denotes that multiple apps can be updated at the same time, in a single group. To learn more, see [Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-updating.md).
 
 ### Updates to the App-V project template
 
@@ -36,7 +33,7 @@ Starting with Windows 10, version 1703, you can now save an App-V project templa
 
 ### Automatically clean up unpublished App-V packages from the App-V client
 
-Previous versions of App-V have required you to manually remove your unpublished packages from your client devices, to free up additional storage space. Windows 10, version 1703 introduces the ability to use PowerShell or Group Policy settings to automatically clean up your unpublished packages after a device restart. To learn more, see [Automatically clean up unpublished packages on the App-V client](../app-v/appv-auto-clean-unpublished-packages.md).
+Previous versions of App-V have required you to manually remove your unpublished packages from your client devices, to free up more storage space. Windows 10, version 1703 introduces the ability to use PowerShell or Group Policy settings to automatically clean up your unpublished packages after a device restart. To learn more, see [Automatically clean up unpublished packages on the App-V client](../app-v/appv-auto-clean-unpublished-packages.md).
 
 ## What's new in App-V in Windows 10, version 1607
 
@@ -67,7 +64,7 @@ App-V supports System Center 2016 and System Center 2012 R2 Configuration Manage
 
 
 
-## Related topics
+## Related articles
 
 * [Release Notes for App-V for Windows 10, version 1607](../app-v/appv-release-notes-for-appv-for-windows.md)
 * [Release Notes for App-V for Windows 10, version 1703](../app-v/appv-release-notes-for-appv-for-windows-1703.md)
