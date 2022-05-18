@@ -834,7 +834,6 @@ Additional lists:
 
 <!--StartCSP-->
 [SurfaceHub](surfacehub-csp.md)
-
 <!--StartSKU-->
 
 |Home|Pro|Business|Enterprise|Education|
@@ -930,7 +929,6 @@ Additional lists:
 
 <!--StartCSP-->
 [W4 Application CSP](w4-application-csp.md)
-
 <!--StartSKU-->
 
 |Home|Pro|Business|Enterprise|Education|
@@ -1027,7 +1025,6 @@ Additional lists:
 
 <!--StartCSP-->
 [w7 Application CSP](w7-application-csp.md)
-
 <!--StartSKU-->
 
 |Home|Pro|Business|Enterprise|Education|
