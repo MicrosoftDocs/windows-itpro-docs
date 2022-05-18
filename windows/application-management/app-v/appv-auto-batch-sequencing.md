@@ -2,9 +2,6 @@
 title: Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer) (Windows 10/11)
 description: How to automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer).
 author: aczechowski
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
@@ -93,7 +90,7 @@ There are three types of log files that occur when you sequence multiple apps at
 - **New-BatchAppVSequencerPackages-report-<*time_stamp*>.txt**. Located in the **OutputPath** folder you specified earlier. This log contains info about the connections made to the VM, showing if there were any failures. Additionally, it briefly includes success or failure info for all of the apps.
 - **Log.txt file**. Located in the **Output Package** folder. This file contains all code included in the NewAppVSequencerPackage cmdlet, including the allowed parameters.
 
-### Related topics
+### Related articles
 
 - [Download the Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
 - [How to install the App-V Sequencer](appv-install-the-sequencer.md)

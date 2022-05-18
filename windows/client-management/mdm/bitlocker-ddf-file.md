@@ -937,3 +937,7 @@ Supported Values: String form of request ID. Example format of request ID is GUI
       </Node>
 </MgmtTree>
 ```
+
+## Related topics
+
+[BitLocker configuration service provider](bitlocker-csp.md)
