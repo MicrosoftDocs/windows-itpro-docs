@@ -399,6 +399,8 @@ Use this method if you already have a MCC that is active and running.
     c. Enter the ASN corresponding to that neighbor (this should be the same ASN as the MCC -iBGP connection)
     d. Repeat steps 1.b and 1.c for each neighbor you would like to configure
 
+**Note:** With the BGP configuration, you are essentially setting up an iBGP neighbor in your public ASN. For example, when you initiate the BGP session from the router to the cache node, you would use your own ASN. 
+
 2. BGP is now configured from the MCC side. From your end, please establish a neighborship from your router to MCC's host machine (use the IP address of the host machine that is running the MCC container)
     a. Please ensure there aren't any firewall rules blocking this connection
     b. Verify that the BGP connection has been established and that you are advertising routes to the MCC
