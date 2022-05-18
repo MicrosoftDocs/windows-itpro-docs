@@ -19498,7 +19498,7 @@
     { 
      "source_path": "windows/education/itadmins.yml",
      "redirect_url": "/education/",
-     "redirect_document_id": true
+     "redirect_document_id": false
     },
     { 
      "source_path": "windows/education/partners.yml",
