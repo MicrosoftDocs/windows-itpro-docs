@@ -93,4 +93,4 @@ wevtutil sl Microsoft-Windows-SmartScreen/Debug /e:true
 - [SmartScreen Frequently Asked Questions](https://fb.smartscreen.microsoft.com/smartscreenfaq.aspx)
 - [Threat protection](../index.md)
 - [Available Microsoft Defender SmartScreen Group Policy and mobile device management (MDM) settings](/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-available-settings)
-- [Configuration service provider reference](../../../client-management/mdm/configuration-service-provider-reference.md#configuration-service-provider-reference)
+- [Configuration service provider reference](/windows/client-management/mdm/configuration-service-provider-reference.md#configuration-service-provider-reference)
