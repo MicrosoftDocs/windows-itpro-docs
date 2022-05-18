@@ -1,0 +1,35 @@
+
+title:	AD Connect ?
+state:	OPEN
+author:	dbznico
+labels:	hello-for-business
+comments:	0
+assignees:	
+projects:	
+milestone:	
+number:	10544
+--
+
+Hello everyone,
+
+Sorry but i don't understand why on the Cloud trust deployment, AD Connect is marked as "N/A" ?
+
+We need AD Connect to works for hybridation no ? or i am stupid ? ^^
+
+Many thanks,
+
+Regards,
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 87e5f5f1-16cf-57e2-bdfc-b090d90437b1
+* Version Independent ID: 1662c47f-12cb-147d-25f0-dee98b6c7722
+* Content: [Windows Hello for Business Deployment Prerequisite Overview - Windows security](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-identity-verification)
+* Content Source: [windows/security/identity-protection/hello-for-business/hello-identity-verification.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/hello-identity-verification.md)
+* Product: **m365-security**
+* GitHub Login: @Gitprakhar13
+* Microsoft Alias: **prsriva**

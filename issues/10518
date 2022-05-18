@@ -1,9 +1,8 @@
 level: III
-
 title:	CDATA tag (<![CDATA[...]]>) and Delimiter 0xF000 are not working in UserRights
 state:	OPEN
 author:	MangeshDugad
-labels:	doc-bug
+labels:	client management, doc-bug
 comments:	0
 assignees:	e0i
 projects:	

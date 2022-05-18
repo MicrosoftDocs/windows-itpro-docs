@@ -1,0 +1,41 @@
+
+title:	"Connect to remote Azure Active Directory-joined PC" documentation does not work! 
+state:	OPEN
+author:	iNeedThisToWork
+labels:	client management
+comments:	1
+assignees:	
+projects:	
+milestone:	
+number:	10535
+--
+This about connecting from w10 (pro) to w11 (pro) using `AzureAd\username@orgdomain.etc`. 
+
+I followed the directions on 
+https://docs.microsoft.com/en-us/windows/client-management/connect-to-remote-aadj-pc
+
+Those instructions do not get anywhere close to working me. I have found many guides that do the following additional steps to make this work
+1. Text edit the RDP config file to this:
+- `enablecredsspsupport:i:0`
+- `authenticcation level:i:2` 
+**NOTE: This is NOT what the [Note: If you cannot connect using Remote Desktop Connection 6.0](https://docs.microsoft.com/en-us/troubleshoot/windows-server/remote/remote-desktop-connection-6-prompts-credentials) says! Different values!**
+2. Rdp Client: Disable persistent bitmap caching to prevent blackscreen 
+3. RDP to get **remote login screen**
+4. Fill in `AzureAd\username@orgdomain.etc` / `password` and there
+
+As a user, I spent an insane amount of time on figuring this, but now I'm somewhat unsure about how to go about making a PR to this docs page since this was a pretty epic level of not working and I obviously don't understand the details of RDP and how to debug it
+
+i would be happier if a simpler solution was found or an update is coming etc, but this pain needs to stop
+
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 72e1cc18-3fc2-d7fa-7ff3-20fc9a3596d4
+* Version Independent ID: 8ed24664-ce8c-7c08-654a-d3ef267f274f
+* Content: [Connect to remote Azure Active Directory-joined PC (Windows) - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/connect-to-remote-aadj-pc)
+* Content Source: [windows/client-management/connect-to-remote-aadj-pc.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/connect-to-remote-aadj-pc.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

@@ -1,0 +1,14 @@
+
+title:	encrypted PFXCertPassword blob details
+state:	OPEN
+author:	andreamerico
+labels:	
+comments:	0
+assignees:	
+projects:	
+milestone:	
+number:	10545
+--
+Hi, 
+
+can we have more details on encrypted PfxCertPassword? (for example the padding scheme to be used when encrypting)

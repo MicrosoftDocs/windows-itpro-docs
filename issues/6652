@@ -1,6 +1,5 @@
 level: REJ
 level: II
-
 title:	precedence of UAC component "CreateProcess"'s three checking conditions is unclear
 state:	OPEN
 author:	1600

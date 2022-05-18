@@ -1,5 +1,4 @@
 level: III
-
 title:	Add more documentation around TPM state used to seal Windows Hello keys
 state:	OPEN
 author:	complexspaces

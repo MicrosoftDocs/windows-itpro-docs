@@ -1,0 +1,27 @@
+
+title:	Not able to get PFN for Windows Push Notifications
+state:	OPEN
+author:	kamalmaheshwari
+labels:	client management
+comments:	0
+assignees:	
+projects:	
+milestone:	
+number:	10534
+--
+
+[Enter feedback here]
+Not getting the option to create new app as shown in the steps. Previously this used to work. Something has changed on the portal which not even shows the option to create a new app
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 663b7682-f766-a141-e4f9-81c607eb8308
+* Version Independent ID: 16c14d60-188b-a49c-4112-ef25f4ef1e9b
+* Content: [Push notification support for device management - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/mdm/push-notification-windows-mdm)
+* Content Source: [windows/client-management/mdm/push-notification-windows-mdm.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/mdm/push-notification-windows-mdm.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

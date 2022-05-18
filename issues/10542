@@ -1,0 +1,27 @@
+
+title:	Question: Can I access my BitLocker-protected drive if I insert the hard disk into a different computer?
+state:	OPEN
+author:	alex47
+labels:	bitlocker
+comments:	0
+assignees:	
+projects:	
+milestone:	
+number:	10542
+--
+In question: Can I access my BitLocker-protected drive if I insert the hard disk into a different computer?
+The answer doesn't mention whether a BitLocker encrypted **system drive** can be unlocked in another computer if we have the recovery key.
+I'm assuming the system drive refers to the C: drive in the documentation.
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 7a2b6bec-05af-1e20-a22e-d2a0c71a7dca
+* Version Independent ID: 5c644e57-ae1b-a510-ebdb-52391fb6407f
+* Content: [BitLocker deployment and administration FAQ (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-deployment-and-administration-faq)
+* Content Source: [windows/security/information-protection/bitlocker/bitlocker-deployment-and-administration-faq.yml](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/information-protection/bitlocker/bitlocker-deployment-and-administration-faq.yml)
+* Product: **m365-security**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

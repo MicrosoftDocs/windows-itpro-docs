@@ -1,0 +1,33 @@
+
+title:	Update frequency change ?
+state:	OPEN
+author:	gbms311
+labels:	deployment
+comments:	1
+assignees:	
+projects:	
+milestone:	
+number:	10543
+--
+This is an introductory page, so probably need to set the right expectation for the most current Win 11 experience. 
+
+The page states ..
+
+_Windows as a service will deliver smaller feature updates two times per year, around March and September, to help address these issues._
+
+Is this still correct ? its actually only once a year now .
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: c6957383-3bd9-eef9-6410-9c42f8a0b172
+* Version Independent ID: a2090374-0fd1-8d67-66de-30c4cf2835f7
+* Content: [Overview of Windows as a service - Windows Deployment](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview)
+* Content Source: [windows/deployment/update/waas-overview.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/deployment/update/waas-overview.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @aczechowski
+* Microsoft Alias: **aaroncz**

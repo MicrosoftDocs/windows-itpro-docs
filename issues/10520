@@ -1,9 +1,8 @@
 level: III
-
 title:	Update Intune Connector Setup Screenshots
 state:	OPEN
 author:	SHAKTI4601
-labels:	doc-enhancement
+labels:	hello-for-business, doc-enhancement
 comments:	0
 assignees:	e0i
 projects:	

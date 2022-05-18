@@ -1,10 +1,9 @@
 level: I
-
 title:	Is there a way to add an AAD group to local remote desktop users group?
 state:	OPEN
 author:	tnewton1
 labels:	client management, product-question
-comments:	1
+comments:	2
 assignees:	e0i
 projects:	
 milestone:	

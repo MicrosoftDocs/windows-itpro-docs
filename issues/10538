@@ -1,0 +1,28 @@
+
+title:	Too Small
+state:	OPEN
+author:	JeffTiedeman
+labels:	client management
+comments:	0
+assignees:	
+projects:	
+milestone:	
+number:	10538
+--
+
+At least on my laptop, this is much too small.
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: 5b651056-4303-d9ce-b977-7e0882d92042
+* Version Independent ID: 85d149ed-28d0-6c32-99bd-af6b9dc6c308
+* Content: [Boot sequence flowchart - Windows Client Management](https://docs.microsoft.com/en-us/windows/client-management/img-boot-sequence)
+* Content Source: [windows/client-management/img-boot-sequence.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/client-management/img-boot-sequence.md)
+* Product: **w10**
+* Technology: **windows**
+* GitHub Login: @Dansimp
+* Microsoft Alias: **dansimp**

@@ -1,9 +1,8 @@
 level: II
-
 title:	Give example of 'Enable HVCI using Intune'
 state:	OPEN
 author:	tmontney
-labels:	doc-enhancement
+labels:	threat-protection, doc-enhancement
 comments:	0
 assignees:	e0i
 projects:	

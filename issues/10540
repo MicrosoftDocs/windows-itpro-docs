@@ -1,0 +1,31 @@
+
+title:	Kommando fehlerhaft
+state:	OPEN
+author:	wwwrashiade
+labels:	bitlocker
+comments:	0
+assignees:	
+projects:	
+milestone:	
+number:	10540
+--
+
+[Hier Feedback eingeben]
+Die Anweisung
+"manage-bde protectors get <Drive>"
+ist falsch und müsste lauten:
+"manage-bde -protectors -get <Drive>"
+
+---
+#### Dokumentdetails
+
+⚠ *Bearbeiten Sie diesen Abschnitt nicht. Er ist für die Verknüpfung von docs.microsoft.com zum GitHub-Artikel erforderlich.*
+
+* ID: 5b389e93-4218-5431-5451-f4524eba0835
+* Version Independent ID: 227dfd4c-a9dc-d6c2-0aaf-3bfb9c0c3feb
+* Content: [Bekannte Probleme beim Entsperren des BitLocker-Netzwerks - Windows security](https://docs.microsoft.com/de-de/windows/security/information-protection/bitlocker/ts-bitlocker-network-unlock-issues#feedback)
+* Content Source: [windows/security/information-protection/bitlocker/ts-bitlocker-network-unlock-issues.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/main/windows/security/information-protection/bitlocker/ts-bitlocker-network-unlock-issues.md)
+* Product: **m365-security**
+* Technology: **windows-sec**
+* GitHub Login: @Teresa-Motiv
+* Microsoft Alias: **v-tappelgate**

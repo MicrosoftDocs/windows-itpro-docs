@@ -1,9 +1,8 @@
 level: II
-
 title:	Dynamic lock (Windows Goodbye) information is missing. 
 state:	OPEN
 author:	ECartman
-labels:	doc-bug
+labels:	hello-for-business, doc-bug
 comments:	0
 assignees:	e0i
 projects:	
@@ -13,11 +12,10 @@ number:	10513
 Microsoft is not providing critical details about Dynamic lock. and thus, might be causing potential security concerns for our clients. 
 
 context: 
-Clients has call Windows support. with Concerns that Dynamic lock is not working consistently. 
-after a in depth review of this feature we conclude that the way the Dynamic lock works, is working as design. 
-however, we note that Microsoft has not provided clear statements on the limitations and the case use for this feature. 
+a client contacted about a Windows support incident, and with Concerns that Dynamic lock is not working consistently. 
+after a in depth review of this feature we conclude that, the way the Dynamic lock works, do not match quite well what the client expects. we also noted that Microsoft does not provide clear statements on the limitations and the case use for this feature. 
 
-and using this feature as a security feature is misleading. granted. the document does not state this feature as a security feature(directly). but the section where this document resides plus the components that are interacted with contradicts that (Dynamic lock - Windows security) nor does its state that Dynamic lock is a feature for convenience. 
+Using Dynamic lock as a "security feature" is misleading. granted. the document does not state Dynamic lock is a security feature(directly). but the section where this document resides, plus the components that are interacted with contradicts that (Dynamic lock - Windows security) nor does its state that Dynamic lock is a feature for convenience. 
 
 we need to add disclaimers on the following aspects: 
 
@@ -39,7 +37,7 @@ Keyboard strokes.
 
 Mouse button presses
 
-Mouse movement (can be inadvertent by mouse drifting (due position or hardware issues)
+Mouse movement (can be inadvertent by mouse drifting (due position or hardware issues))
 
 Controllers (for example, Xbox Controller) inadvertent inputs might happen due to damaged components, hardware problems, even intentionally)
 

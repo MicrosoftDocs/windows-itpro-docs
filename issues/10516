@@ -1,9 +1,8 @@
 level: II
-
 title:	Add a notion about windows sandbox being a discriminating piece of shit
 state:	OPEN
 author:	Nils-Berghs
-labels:	product-feedback, doc-enhancement
+labels:	threat-protection, product-feedback, doc-enhancement
 comments:	0
 assignees:	e0i
 projects:	

@@ -1,0 +1,27 @@
+
+title:	When will Cloud Trust configuration on Intune be built-in?
+state:	OPEN
+author:	tom-tackett
+labels:	hello-for-business
+comments:	0
+assignees:	
+projects:	
+milestone:	
+number:	10528
+--
+
+When will the WHfB Cloud-Trust setting be a normal toggle in the configuration options, rather than a manual OMA-URI entry?
+
+
+---
+#### Document Details
+
+⚠ *Do not edit this section. It is required for docs.microsoft.com ➟ GitHub issue linking.*
+
+* ID: f37c7491-e550-86a8-5897-61d1a22c6631
+* Version Independent ID: f37c7491-e550-86a8-5897-61d1a22c6631
+* Content: [Hybrid Cloud Trust Deployment (Windows Hello for Business) - Windows security](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-hybrid-cloud-trust)
+* Content Source: [windows/security/identity-protection/hello-for-business/hello-hybrid-cloud-trust.md](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/hello-hybrid-cloud-trust.md)
+* Product: **m365-security**
+* GitHub Login: @Gitprakhar13
+* Microsoft Alias: **prsriva**

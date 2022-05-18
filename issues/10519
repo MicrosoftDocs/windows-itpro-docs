@@ -1,10 +1,9 @@
 level: III
-
 title:	Screenshot of system summary is too old
 state:	OPEN
 author:	RAJU2529
-labels:	doc-bug
-comments:	2
+labels:	threat-protection, doc-bug
+comments:	4
 assignees:	e0i
 projects:	
 milestone:	

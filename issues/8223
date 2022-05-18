@@ -1,6 +1,5 @@
 level: REJ
 level: III
-
 title:	No documentation about strange behaviour of Windows blocking HID Access to FIDO2 Devices
 state:	OPEN
 author:	riedel

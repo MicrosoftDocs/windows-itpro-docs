@@ -1,9 +1,8 @@
 level: II
-
 title:	RDP from Azure AD Registered Device - tenants
 state:	OPEN
 author:	fowl2
-labels:	doc-enhancement
+labels:	client management, doc-enhancement
 comments:	0
 assignees:	
 projects:	
