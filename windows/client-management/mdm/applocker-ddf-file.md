@@ -670,15 +670,4 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
 
 ## Related topics
 
-
 [AppLocker configuration service provider](applocker-csp.md)
-
- 
-
- 
-
-
-
-
-
-

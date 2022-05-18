@@ -13,6 +13,16 @@ ms.date: 06/18/2019
 
 # WiFi CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 > [!WARNING]
 > Some information relates to pre-released products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
@@ -40,11 +50,10 @@ WiFi
 ---------WiFiCost
 ```
 
-
 The following list shows the characteristics and parameters.
 
 <a href="" id="wifi"></a>**Device or User profile**
-For user profile, use ./User/Vendor/MSFT/Wifi path and for device profile, use ./Device/Vendor/MSFT/Wifi path.
+For user profile, use .`/User/Vendor/MSFT/Wifi` path and for device profile, use `./Device/Vendor/MSFT/Wifi` path.
 
 <a href="" id="profile"></a>**Profile**
 Identifies the Wi-Fi network configuration. Each Wi-Fi network configuration is represented by a profile object. This network profile includes all the information required for the device to connect to that network – for example, the SSID, authentication and encryption methods and passphrase if there's WEP or WPA2 networks.
@@ -93,6 +102,7 @@ Supported operations are Get, Add, Delete, and Replace.
 -->
 
 <a href="" id="disableinternetconnectivitychecks"></a>**DisableInternetConnectivityChecks**
+
 > [!Note]
 > This node has been deprecated since Windows 10, version 1607.
 
@@ -100,8 +110,8 @@ Added in Windows 10, version 1511. Optional. Disable the internet connectivity c
 
 Value type is chr.
 
--   True - internet connectivity check is disabled.
--   False - internet connectivity check is enabled.
+- True - internet connectivity check is disabled.
+- False - internet connectivity check is enabled.
 
 Supported operations are Get, Add, Delete, and Replace.
 
@@ -137,7 +147,6 @@ Supported values:
 Supported operations are Add, Get, Replace and Delete. Value type is integer.
 
 ## Examples
-
 
 These XML examples show how to perform various tasks using OMA DM.
 
@@ -240,8 +249,4 @@ The following example shows how to add PEAP-MSCHAPv2 network with SSID ‘MyNetw
 
 ## Related topics
 
-
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-

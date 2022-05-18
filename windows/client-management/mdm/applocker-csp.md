@@ -13,6 +13,16 @@ ms.date: 11/19/2019
 
 # AppLocker CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 The AppLocker configuration service provider is used to specify which applications are allowed or disallowed. There's no user interface shown for apps that are blocked.
 
 The following example shows the AppLocker configuration service provider in tree format.
@@ -72,13 +82,11 @@ Defines restrictions for applications.
 
 > [!NOTE]
 > When you create a list of allowed apps, all [inbox apps](#inboxappsandcomponents) are also blocked, and you must include them in your list of allowed apps. Don't forget to add the inbox apps for Phone, Messaging, Settings, Start, Email and accounts, Work and school, and other apps that you need.
-
+>
 > Delete/unenrollment is not properly supported unless Grouping values are unique across enrollments. If multiple enrollments use the same Grouping value, then unenrollment will not work as expected since there are duplicate URIs that get deleted by the resource manager. To prevent this problem, the Grouping value should include some randomness. The best practice is to use a randomly generated GUID. However, there's no requirement on the exact value of the node.
 
 > [!NOTE]
-> The AppLocker CSP will schedule a reboot when a policy is applied or a deletion occurs using the AppLocker/ApplicationLaunchRestrictions/Grouping/CodeIntegrity/Policy URI.
-
-Additional information:
+> The AppLocker CSP will schedule a reboot when a policy is applied or when a deletion occurs using the AppLocker/ApplicationLaunchRestrictions/Grouping/CodeIntegrity/Policy URI.
 
 <a href="" id="applocker-applicationlaunchrestrictions-grouping"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_**  
 Grouping nodes are dynamic nodes, and there may be any number of them for a given enrollment (or a given context). The actual identifiers are selected by the management endpoint, whose job it's to determine what their purpose is, and to not conflict with other identifiers that they define.
@@ -94,14 +102,14 @@ Supported operations are Get, Add, Delete, and Replace.
 <a href="" id="applocker-applicationlaunchrestrictions-grouping-exe-policy"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/EXE/Policy**  
 Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy.
 
-Data type is string. 
+Data type is string.
 
 Supported operations are Get, Add, Delete, and Replace.
 
 <a href="" id="applocker-applicationlaunchrestrictions-grouping-exe-enforcementmode"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/EXE/EnforcementMode**  
 The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
 
-The data type is a string. 
+The data type is a string.
 
 Supported operations are Get, Add, Delete, and Replace.
 
@@ -204,22 +212,25 @@ Data type is Base64.
 Supported operations are Get, Add, Delete, and Replace.
 
 > [!NOTE]
-> To use Code Integrity Policy, you first need to convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet. Then a Base64-encoded blob of the binary policy representation should be created (for example, using the [certutil -encode](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc732443(v=ws.11)) command line tool) and added to the Applocker-CSP.
+> To use Code Integrity Policy, you first need to convert the policies to binary format using the `ConvertFrom-CIPolicy` cmdlet. Then a Base64-encoded blob of the binary policy representation should be created (for example, using the [certutil -encode](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc732443(v=ws.11)) command line tool) and added to the Applocker-CSP.
 
 <a href="" id="applocker-enterprisedataprotection"></a>**AppLocker/EnterpriseDataProtection**  
-Captures the list of apps that are allowed to handle enterprise data. Should be used in conjunction with the settings in **./Device/Vendor/MSFT/EnterpriseDataProtection** in [EnterpriseDataProtection CSP](enterprisedataprotection-csp.md).
+Captures the list of apps that are allowed to handle enterprise data. Should be used with the settings in **./Device/Vendor/MSFT/EnterpriseDataProtection** in [EnterpriseDataProtection CSP](enterprisedataprotection-csp.md).
 
 In Windows 10, version 1607 the Windows Information Protection has a concept for allowed and exempt applications. Allowed applications can access enterprise data and the data handled by those applications are protected with encryption. Exempt applications can also access enterprise data, but the data handled by those applications aren't protected. This is because some critical enterprise applications may have compatibility problems with encrypted data.
 
 You can set the allowed list using the following URI:
+
 - ./Vendor/MSFT/AppLocker/EnterpriseDataProtection/_Grouping_/EXE/Policy
 - ./Vendor/MSFT/AppLocker/EnterpriseDataProtection/_Grouping_/StoreApps/Policy
 
 You can set the exempt list using the following URI. The _Grouping_ string must contain the keyword "EdpExempt" anywhere to help distinguish the exempt list from the allowed list. The "EdpExempt" keyword is also evaluated in a case-insensitive manner:
+
 - ./Vendor/MSFT/AppLocker/EnterpriseDataProtection/_Grouping includes "EdpExempt"_/EXE/Policy
 - ./Vendor/MSFT/AppLocker/EnterpriseDataProtection/_Grouping includes "EdpExempt"_/StoreApps/Policy
 
 Exempt examples:
+
 - ./Vendor/MSFT/AppLocker/EnterpriseDataProtection/ContosoEdpExempt/EXE/Policy
 - ./Vendor/MSFT/AppLocker/EnterpriseDataProtection/xxxxxEdpExemptxxxxx/EXE/Policy
 
@@ -257,15 +268,15 @@ Data type is string.
 
 Supported operations are Get, Add, Delete, and Replace.
 
-1.  On your phone under **Device discovery**, tap **Pair**. You'll get a code (case sensitive).
-2.  On the browser on the **Set up access page**, enter the code (case sensitive) into the text box and click **Submit**.
+1. On your phone under **Device discovery**, tap **Pair**. You'll get a code (case sensitive).
+2. On the browser on the **Set up access page**, enter the code (case sensitive) into the text box and click **Submit**.
 
     The **Device Portal** page opens on your browser.
 
     ![device portal screenshot.](images/applocker-screenshot1.png)
 
-3.  On the desktop **Device Portal** page, click **Apps** to open the **App Manager**.
-4.  On the **App Manager** page under **Running apps**, you'll see the **Publisher** and **PackageFullName** of apps.
+3. On the desktop **Device Portal** page, click **Apps** to open the **App Manager**.
+4. On the **App Manager** page under **Running apps**, you'll see the **Publisher** and **PackageFullName** of apps.
 
     ![device portal app manager.](images/applocker-screenshot3.png)
 
@@ -277,7 +288,7 @@ The following table shows the mapping of information to the AppLocker publisher 
 
 |Device portal data|AppLocker publisher rule field|
 |--- |--- |
-|PackageFullName|ProductName<br><br> The product name is first part of the PackageFullName followed by the version number. In the Windows Camera example, the ProductName is Microsoft.WindowsCamera.|
+|PackageFullName|ProductName: The product name is first part of the PackageFullName followed by the version number. In the Windows Camera example, the ProductName is Microsoft.WindowsCamera.|
 |Publisher|Publisher|
 |Version|Version<br> <br>The version can be used either in the HighSection or LowSection of the BinaryVersionRange.<br> <br>HighSection defines the highest version number and LowSection defines the lowest version number that should be trusted. You can use a wildcard for both versions to make a version- independent rule. Using a wildcard for one of the values will provide higher than or lower than a specific version semantics.|
 
@@ -291,13 +302,13 @@ Here's an example AppLocker publisher rule:
 
 You can get the publisher name and product name of apps using a web API.
 
-**To find publisher and product name for Microsoft apps in Microsoft Store for Business**
+**To find publisher and product name for Microsoft apps in Microsoft Store for Business:**
 
-1.  Go to the Microsoft Store for Business website, and find your app. For example, Microsoft OneNote.
+1. Go to the Microsoft Store for Business website, and find your app. For example, Microsoft OneNote.
 
-2.  Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, **9wzdncrfhvjl**.
+2. Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is [https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl](https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl), and you'd copy the ID value: **9wzdncrfhvjl**.
 
-3.  In your browser, run the Store for Business portal web API, to return a JavaScript Object Notation (JSON) file that includes the publisher and product name values.
+3. In your browser, run the Store for Business portal web API, to return a JavaScript Object Notation (JSON) file that includes the publisher and product name values.
 
 Request URI:
 
@@ -357,16 +368,12 @@ The product name is first part of the PackageFullName followed by the version nu
 | SettingsPagePhoneNfc               | b0894dfd-4671-4bb9-bc17-a8b39947ffb6\_1.0.0.0\_neutral\_\_1prqnbg33c1tj | b0894dfd-4671-4bb9-bc17-a8b39947ffb6 |
 
 
-
 ## <a href="" id="inboxappsandcomponents"></a>Inbox apps and components
-
 
 The following list shows the apps that may be included in the inbox.
 
 > [!NOTE]
 > This list identifies system apps that ship as part of Windows that you can add to your AppLocker policy to ensure proper functioning of the operating system. If you decide to block some of these apps, we recommend a thorough testing before deploying to your production environment. Failure to do so may result in unexpected failures and can significantly degrade the user experience.
-
-
 
 |App|Product ID|Product name|
 |--- |--- |--- |
@@ -1275,6 +1282,7 @@ The following example for Windows 10 Holographic for Business denies all apps an
 ```
 
 ## Recommended blocklist for Windows Information Protection
+
 The following example for Windows 10, version 1607 denies known unenlightened Microsoft apps from accessing enterprise data as an allowed app. (An administrator might still use an exempt rule, instead.) This prevention ensures an administrator doesn't accidentally make these apps Windows Information Protection allowed, and avoid known compatibility issues related to automatic file encryption with these applications.
 
 In this example, Contoso is the node name. We recommend using a GUID for this node.
@@ -1457,6 +1465,5 @@ In this example, Contoso is the node name. We recommend using a GUID for this no
 ```
 
 ## Related topics
-
 
 [Configuration service provider reference](configuration-service-provider-reference.md)

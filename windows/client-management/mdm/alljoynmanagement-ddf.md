@@ -236,7 +236,7 @@ It is typically implemented as a GUID.</Description>
                             <Get />
                             <Replace />
                         </AccessType>
-                        <Description>An Alphanumeric KEY value that conforms to the AllJoyn SRP KEYX Authentication Standard</Description>
+                        <Description>An Alphanumeric KEY value that conforms to the AllJoyn SRP KEYX Authentication Standard.</Description>
                         <DFFormat>
                             <chr />
                         </DFFormat>
@@ -326,15 +326,4 @@ It is typically implemented as a GUID.</Description>
 
 ## Related topics
 
-
 [AllJoynManagement configuration service provider](alljoynmanagement-csp.md)
-
- 
-
- 
-
-
-
-
-
-

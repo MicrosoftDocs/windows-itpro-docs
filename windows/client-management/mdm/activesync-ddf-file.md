@@ -531,7 +531,7 @@ The XML below is the current version for this CSP.
                   <Replace />
                   <Delete />
                 </AccessType>
-                <Description>Enables or disables syncing email, contacts, task, and calendar.Each is represented by a GUID.Email: {c6d47067-6e92-480e-b0fc-4ba82182fac7}. Contacts: {0dd8685c-e272-4fcb-9ecf-2ead7ea2497b}.Calendar: {4a5d9fe0-f139-4a63-a5a4-4f31ceea02ad}. Tasks:{783ae4f6-4c12-4423-8270-66361260d4f1}</Description>
+                <Description>Enables or disables syncing email, contacts, task, and calendar. Each is represented by a GUID.Email: {c6d47067-6e92-480e-b0fc-4ba82182fac7}. Contacts: {0dd8685c-e272-4fcb-9ecf-2ead7ea2497b}.Calendar: {4a5d9fe0-f139-4a63-a5a4-4f31ceea02ad}. Tasks:{783ae4f6-4c12-4423-8270-66361260d4f1}</Description>
                 <DFFormat>
                   <node />
                 </DFFormat>
@@ -677,15 +677,4 @@ The XML below is the current version for this CSP.
 
 ## Related topics
 
-
 [ActiveSync configuration service provider](activesync-csp.md)
-
- 
-
- 
-
-
-
-
-
-
