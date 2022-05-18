@@ -14,6 +14,15 @@ ms.date: 08/13/2018
 
 # RemoteWipe CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 The RemoteWipe configuration service provider can be used by mobile operators DM server or enterprise management server to remotely wipe a device. The RemoteWipe configuration service provider can make the data stored in memory and hard disks difficult to recover if the device is remotely wiped after being lost or stolen.
 
@@ -40,9 +49,9 @@ Supported operation is Exec.
 <a href="" id="dowipepersistprovisioneddata"></a>**doWipePersistProvisionedData**  
 Specifies that provisioning data should be backed up to a persistent location, and then a remote wipe of the device should be performed.
 
-Supported operation is Exec.
-
 When used with OMA Client Provisioning, a dummy value of "1" should be included for this element.
+
+Supported operation is Exec.
 
 The information that was backed up will be restored and applied to the device when it resumes. The return status code shows whether the device accepted the Exec command.
 
@@ -54,7 +63,7 @@ The doWipeProtected is functionally similar to doWipe. But unlike doWipe, which 
 Supported operation is Exec.
 
 <a href="" id="doWipePersistUserData"></a>**doWipePersistUserData**  
-Added in Windows 10, version 1709.  Exec on this node will perform a remote reset on the device and persist user accounts and data. The return status code shows whether the device accepted the Exec command.
+Added in Windows 10, version 1709. Exec on this node will perform a remote reset on the device, and persist user accounts and data. The return status code shows whether the device accepted the Exec command.
 
 <a href="" id="automaticredeployment"></a>**AutomaticRedeployment**  
 Added in Windows 10, version 1809. Node for the Autopilot Reset operation.
@@ -71,7 +80,7 @@ Added in Windows 10, version 1809. Status value indicating current state of an A
 Supported values:  
 
 -  0: Never run (not started). The default state. 
--  1: Complete. 
+-  1: Complete.
 -  10: Reset has been scheduled. 
 -  20: Reset is scheduled and waiting for a reboot. 
 -  30: Failed during CSP Execute ("Exec" in SyncML). 
@@ -79,7 +88,6 @@ Supported values:
 -  50: Failed: reset internals failed during reset attempt.
 
 ## Related topics
-
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 

@@ -2,9 +2,6 @@
 title: Deploying Microsoft Office 2016 by using App-V (Windows 10/11)
 description: Use Application Virtualization (App-V) to deliver Microsoft Office 2016 as a virtualized application to computers in your organization.
 author: aczechowski
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
@@ -12,6 +9,7 @@ manager: dougeby
 ms.author: aaroncz
 ms.topic: article
 ---
+
 # Deploying Microsoft Office 2016 by using App-V
 
 [!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
@@ -375,7 +373,7 @@ The following table describes the requirements and options for deploying Visio 2
 | How do I package and publish Visio 2016 and Project 2016 with Office? | You must include Visio 2016 and Project 2016 in the same package with Office.<br>If you're not deploying Office, you can create a package that contains Visio and/or Project, as long as you follow the packaging, publishing, and deployment requirements described in this topic.  |
 | How can I deploy Visio 2016 and Project 2016 to specific users?       | Use one of the following methods:<br>**To create two different packages and deploy each one to a different group of users**:<br>Create and deploy the following packages:<br>- A package that contains only Office—deploy to computers whose users need only Office.<br>- A package that contains Office, Visio, and Project—deploy to computers whose users need all three applications.<br><br>**To create only one package for the whole organization, or to create a package intended for users who share computers**:<br>1. Create a package that contains Office, Visio, and Project.<br>2. Deploy the package to all users.<br>3. Use [AppLocker](/windows/security/threat-protection/applocker/applocker-overview) to prevent specific users from using Visio and Project. |
 
-## Related topics
+## Related articles
 
 * [Deploying App-V for Windows client](appv-deploying-appv.md)
 * [Deploying Microsoft Office 2013 by using App-V](appv-deploying-microsoft-office-2013-with-appv.md)

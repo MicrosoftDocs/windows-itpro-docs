@@ -2,9 +2,6 @@
 title: App-V Deployment Checklist (Windows 10/11)
 description: Use the App-V deployment checklist to understand the recommended steps and items to consider when deploying App-V features.
 author: aczechowski
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
@@ -12,6 +9,7 @@ manager: dougeby
 ms.author: aaroncz
 ms.topic: article
 ---
+
 # App-V Deployment Checklist
 
 [!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
@@ -31,6 +29,6 @@ This checklist outlines the recommended steps and items to consider when deployi
 
 
 
-## Related topics
+## Related articles
 
 * [Deploying App-V](appv-deploying-appv.md)
