@@ -2,9 +2,6 @@
 title: Planning for Deploying App-V with Office (Windows 10/11)
 description: Use the information in this article to plan how to deploy Office within Microsoft Application Virtualization (App-V).
 author: aczechowski
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
@@ -12,6 +9,7 @@ manager: dougeby
 ms.author: aaroncz
 ms.topic: article
 ---
+
 # Planning for deploying App-V with Office
 
 [!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
@@ -48,7 +46,7 @@ Before implementing Office coexistence, review the information in the following 
 |Office 2013|[How to use Office 2013 suites and programs (MSI deployment) on a computer running another version of Office](https://support.microsoft.com/kb/2784668)|
 |Office 2010|How to use Office 2010 suites and programs on a computer running another version of Office](https://support.microsoft.com/kb/2121447)|
 
-Once you've reviewed the relevant guide, this topic will supplement what you've learned with information about Office coexistence that's more specific to App-V deployments.
+Once you've reviewed the relevant guide, this article will supplement what you've learned with information about Office coexistence that's more specific to App-V deployments.
 
 ### Supported Office coexistence scenarios
 
@@ -125,7 +123,7 @@ The Office 2013 or Office 2016 App-V package supports the following integration 
 |Primary Interop Assemblies|Support managed add-ins|
 |Office Document Cache Handler|Allows Document Cache for Office applications|
 |Outlook Protocol Search Handler|User can search in Outlook|
-|Active X Controls|For more information on ActiveX controls, refer to [ActiveX Control API Reference](<https://msdn.microsoft.com/library/vs/alm/ms440037(v=office.14).aspx>).|
+|Active X Controls|For more information on ActiveX controls, see [ActiveX Control API Reference](<https://msdn.microsoft.com/library/vs/alm/ms440037(v=office.14).aspx>).|
 |OneDrive Pro Icon Overlays|Windows Explorer shell icon overlays when users look at folders OneDrive Pro folders|
 |Shell extensions||
 |Shortcuts||
@@ -135,7 +133,7 @@ The Office 2013 or Office 2016 App-V package supports the following integration 
 
 
 
-## Related topics
+## Related articles
 
 * [Deploying Microsoft Office 2016 by Using App-V](appv-deploying-microsoft-office-2016-with-appv.md)
 * [Deploying Microsoft Office 2013 by Using App-V](appv-deploying-microsoft-office-2013-with-appv.md)
