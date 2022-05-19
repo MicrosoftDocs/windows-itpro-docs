@@ -19521,11 +19521,6 @@
       "redirect_document_id": false
     },
     { 
-     "source_path": "windows/education/developers.yml",
-     "redirect_url": "/education/",
-     "redirect_document_id": true
-    }, 
-    { 
      "source_path": "education/developers.yml",
      "redirect_url": "/education",
      "redirect_document_id": false
@@ -19536,12 +19531,22 @@
       "redirect_document_id": false
      },
      { 
-      "source_path": "windows/client-management/mdm/policymanager-csp.md",
+      "source_path": "windows/client-management/mdm/messaging-ddf.md",
       "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
       "redirect_document_id": false
      },
      { 
       "source_path": "windows/client-management/mdm/messaging-csp.md",
+      "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+      "redirect_document_id": false
+     },
+     { 
+      "source_path": "windows/client-management/mdm/policymanager-csp.md",
+      "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+      "redirect_document_id": false
+     }, 
+     { 
+      "source_path": "windows/client-management/mdm/proxy-csp.md",
       "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
       "redirect_document_id": false
      }      
