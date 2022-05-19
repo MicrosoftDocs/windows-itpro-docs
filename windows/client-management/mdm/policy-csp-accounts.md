@@ -31,6 +31,9 @@ manager: dansimp
   <dd>
     <a href="#accounts-allowmicrosoftaccountsigninassistant">Accounts/AllowMicrosoftAccountSignInAssistant</a>
   </dd>
+  <dd>
+    <a href="#accounts-domainnamesforemailsync">Accounts/DomainNamesForEmailSync</a>
+  </dd>
 </dl>
 
 
@@ -66,7 +69,7 @@ Specifies whether user is allowed to add non-MSA email accounts.
 Most restricted value is 0.
 
 > [!NOTE]
-> This policy will only block UI/UX-based methods for adding non-Microsoft accounts. Even if this policy is enforced, you can still provision non-MSA accounts using the [EMAIL2 CSP](email2-csp.md).
+> This policy will only block UI/UX-based methods for adding non-Microsoft accounts. 
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -168,9 +171,47 @@ The following list shows the supported values:
 <hr/>
 
 
+<!--Policy-->
+<a href="" id="accounts-domainnamesforemailsync"></a>**Accounts/DomainNamesForEmailSync**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+<!--/Policies-->
 
 <!--/Policies-->
 
 ## Related topics
 
 [Policy CSP](policy-configuration-service-provider.md)
+
