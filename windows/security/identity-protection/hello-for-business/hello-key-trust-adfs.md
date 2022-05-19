@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -19,11 +19,11 @@ ms.reviewer:
 # Prepare and Deploy Windows Server 2016 Active Directory Federation Services with Key Trust
 
 **Applies to**
--   Windows 10, version 1703 or later
--   Windows 11
--   On-premises deployment
--   Key trust
 
+- Windows 10, version 1703 or later
+- Windows 11
+- On-premises deployment
+- Key trust
 
 Windows Hello for Business works exclusively with the Active Directory Federation Service role included with Windows Server 2016 and requires an additional server update.  The on-premises key trust deployment uses Active Directory Federation Services roles for key registration and device registration.
 
@@ -344,6 +344,7 @@ Before you continue with the deployment, validate your deployment progress by re
 
 
 ## Follow the Windows Hello for Business on premises certificate trust deployment guide
+
 1. [Validate Active Directory prerequisites](hello-key-trust-validate-ad-prereq.md)
 2. [Validate and Configure Public Key Infrastructure](hello-key-trust-validate-pki.md)
 3. Prepare and Deploy Windows Server 2016 Active Directory Federation Services (*You are here*)

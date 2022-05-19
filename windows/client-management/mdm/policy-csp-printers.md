@@ -23,6 +23,18 @@ manager: dansimp
 
 <dl>
   <dd>
+    <a href="#printers-approvedusbprintdevices">Printers/ApprovedUsbPrintDevices</a>
+  </dd>
+  <dd>
+    <a href="#printers-approvedusbprintdevicesuser">Printers/ApprovedUsbPrintDevicesUser</a>
+  </dd>
+  <dd>
+    <a href="#printers-enabledevicecontrol">Printers/EnableDeviceControl</a>
+  </dd>
+  <dd>
+    <a href="#printers-enabledevicecontroluser">Printers/EnableDeviceControlUser</a>
+  </dd>
+  <dd>
     <a href="#printers-pointandprintrestrictions">Printers/PointAndPrintRestrictions</a>
   </dd>
   <dd>
@@ -39,6 +51,296 @@ manager: dansimp
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 > 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="printers-approvedusbprintdevices"></a>**Printers/ApprovedUsbPrintDevices**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy implements the print portion of the Device Control requirements. 
+These requirements include restricting printing to USB connected printers that match a list of approved USB Vid/Pid combinations or to corporate connected printers while either directly connected to the corporate network or when using a VPN connection to the corporate network.  
+This policy will contain the comma-separated list of approved USB Vid&Pid combinations that the print spooler will allow to print when Device Control is enabled.
+The format of this setting is `<vid>/<pid>[,<vid>/<pid>]`
+
+Parent deliverable: 26209274 - Device Control: Printer
+<!--/Description-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Support for new Device Control Print feature*
+-   GP name: *ApprovedUsbPrintDevices*
+-   GP path: *Printers*
+-   GP ADMX file name: *Printing.admx*
+
+<!--/ADMXBacked-->
+
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="printers-approvedusbprintdevicesuser"></a>**Printers/ApprovedUsbPrintDevicesUser**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy implements the print portion of the Device Control requirements. 
+These requirements include restricting printing to USB connected printers that match a list of approved USB Vid/Pid combinations or to corporate connected printers while either directly connected to the corporate network or when using a VPN connection to the corporate network.  
+This policy will contain the comma separated list of approved USB Vid&Pid combinations that the print spooler will allow to print when Device Control is enabled.
+The format of this setting is `<vid>/<pid>[,<vid>/<pid>]`
+
+<!--/Description-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Support for new Device Control Print feature*
+-   GP name: *ApprovedUsbPrintDevicesUser*
+-   GP path: *Printers*
+-   GP ADMX file name: *Printing.admx*
+
+<!--/ADMXBacked-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="printers-enabledevicecontrol"></a>**Printers/EnableDeviceControl**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy implements the print portion of the Device Control requirements. 
+These requirements include restricting printing to USB connected printers that match a list of approved USB Vid/Pid combinations or to corporate connected printers while either directly connected to the corporate network or when using a VPN connection to the corporate network.  
+This policy will control whether the print spooler will attempt to restrict printing as part of Device Control.
+
+The default value of the policy will be Unconfigured.
+
+If the policy value is either Unconfigured or Disabled, the print spooler won't restrict printing.
+
+If the policy value is Enabled, the print spooler will restrict local printing to USB devices in the Approved Device list. 
+
+
+<!--/Description-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Support for new Device Control Print feature*
+-   GP name: *EnableDeviceControl*
+-   GP path: *Printers*
+-   GP ADMX file name: *Printing.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+
+<!--Policy-->
+<a href="" id="printers-enabledevicecontroluser"></a>**Printers/EnableDeviceControlUser**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy implements the print portion of the Device Control requirements. 
+These requirements include restricting printing to USB connected printers that match a list of approved USB Vid/Pid combinations or to corporate connected printers while either directly connected to the corporate network or when using a VPN connection to the corporate network.  
+This policy will control whether the print spooler will attempt to restrict printing as part of Device Control.
+
+The default value of the policy will be Unconfigured.
+
+If the policy value is either Unconfigured or Disabled, the print spooler won't restrict printing.
+
+If the policy value is Enabled, the print spooler will restrict local printing to USB devices in the Approved Device list. 
+
+
+<!--/Description-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Support for new Device Control Print feature*
+-   GP name: *EnableDeviceControlUser*
+-   GP path: *Printers*
+-   GP ADMX file name: *Printing.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
 
 <hr/>
 
@@ -72,11 +374,11 @@ This policy setting controls the client Point and Print behavior, including the 
 
 If you enable this policy setting:
 
-- Windows XP and later clients will only download print driver components from a list of explicitly named servers. If a compatible print driver is available on the client, a printer connection will be made. If a compatible print driver is not available on the client, no connection will be made.
+- Windows XP and later clients will only download print driver components from a list of explicitly named servers. If a compatible print driver is available on the client, a printer connection will be made. If a compatible print driver isn't available on the client, no connection will be made.
 
-- You can configure Windows Vista clients so that security warnings and elevated command prompts do not appear when users Point and Print, or when printer connection drivers need to be updated.
+- You can configure Windows Vista clients so that security warnings and elevated command prompts don't appear when users Point and Print, or when printer connection drivers need to be updated.
 
-If you do not configure this policy setting:
+If you don't configure this policy setting:
 
 - Windows Vista client computers can point and print to any server.
 
@@ -90,9 +392,9 @@ If you disable this policy setting:
 
 - Windows Vista client computers can create a printer connection to any server using Point and Print.
 
-- Windows Vista computers will not show a warning or an elevated command prompt when users create a printer connection to any server using Point and Print.
+- Windows Vista computers won't show a warning or an elevated command prompt when users create a printer connection to any server using Point and Print.
 
-- Windows Vista computers will not show a warning or an elevated command prompt when an existing printer connection driver needs to be updated.
+- Windows Vista computers won't show a warning or an elevated command prompt when an existing printer connection driver needs to be updated.
 
 - Windows Server 2003 and Windows XP client computers can create a printer connection to any server using Point and Print.
 
@@ -155,11 +457,11 @@ This policy setting controls the client Point and Print behavior, including the 
 
 If you enable this policy setting:
 
-- Windows XP and later clients will only download print driver components from a list of explicitly named servers. If a compatible print driver is available on the client, a printer connection will be made. If a compatible print driver is not available on the client, no connection will be made.
+- Windows XP and later clients will only download print driver components from a list of explicitly named servers. If a compatible print driver is available on the client, a printer connection will be made. If a compatible print driver isn't available on the client, no connection will be made.
 
-- You can configure Windows Vista clients so that security warnings and elevated command prompts do not appear when users Point and Print, or when printer connection drivers need to be updated.
+- You can configure Windows Vista clients so that security warnings and elevated command prompts don't appear when users Point and Print, or when printer connection drivers need to be updated.
 
-If you do not configure this policy setting:
+If you don't configure this policy setting:
 
 - Windows Vista client computers can point and print to any server.
 
@@ -173,9 +475,9 @@ If you disable this policy setting:
 
 - Windows Vista client computers can create a printer connection to any server using Point and Print.
 
-- Windows Vista computers will not show a warning or an elevated command prompt when users create a printer connection to any server using Point and Print.
+- Windows Vista computers won't show a warning or an elevated command prompt when users create a printer connection to any server using Point and Print.
 
-- Windows Vista computers will not show a warning or an elevated command prompt when an existing printer connection driver needs to be updated.
+- Windows Vista computers won't show a warning or an elevated command prompt when an existing printer connection driver needs to be updated.
 
 - Windows Server 2003 and Windows XP client computers can create a printer connection to any server using Point and Print.
 
@@ -222,11 +524,11 @@ ADMX Info:
 <!--Description-->
 Determines whether the computer's shared printers can be published in Active Directory.
 
-If you enable this setting or do not configure it, users can use the "List in directory" option in the Printer's Properties' Sharing tab to publish shared printers in Active Directory.
+If you enable this setting or don't configure it, users can use the "List in directory" option in the Printer's Properties' Sharing tab to publish shared printers in Active Directory.
 
-If you disable this setting, this computer's shared printers cannot be published in Active Directory, and the "List in directory" option is not available.
+If you disable this setting, this computer's shared printers can't be published in Active Directory, and the "List in directory" option isn't available.
 
-Note: This settings takes priority over the setting "Automatically publish new printers in the Active Directory".
+Note: This setting takes priority over the setting "Automatically publish new printers in the Active Directory".
 
 <!--/Description-->
 

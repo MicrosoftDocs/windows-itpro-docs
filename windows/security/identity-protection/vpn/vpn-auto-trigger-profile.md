@@ -35,8 +35,7 @@ VPN profiles in Windows 10 or Windows 11 can be configured to connect automatica
 
 The app identifier for a desktop app is a file path. The app identifier for a UWP app is a package family name.
 
-[Find a package family name (PFN) for per-app VPN configuration](/intune/deploy-use/find-a-pfn-for-per-app-vpn)
-
+[Find a package family name (PFN) for per-app VPN configuration](/mem/configmgr/protect/deploy-use/find-a-pfn-for-per-app-vpn)
 
 ## Name-based trigger
 
@@ -78,7 +77,7 @@ Should a management tool remove or add the same profile name back and set **Alwa
 
 ## Trusted network detection
 
-This feature configures the VPN such that it would not get triggered if a user is on a trusted corporate network. The value of this setting is a list of DNS suffices. The VPN stack will look at the DNS suffix on the physical interface and if it matches any in the configured list and the network is private or provisioned by MDM, then VPN will not get triggered.
+This feature configures the VPN such that it would not get triggered if a user is on a trusted corporate network. The value of this setting is a list of DNS suffixes. The VPN stack will look at the network name of the physical interface connection profile and if it matches any in the configured list and the network is private or provisioned by MDM, then VPN will not get triggered.
 
 Trusted network detection can be configured using the VPNv2/*ProfileName*/TrustedNetworkDetection setting in the [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp).
 

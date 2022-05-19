@@ -55,7 +55,7 @@ Ea Value Length: 7e
 
 ## Enabling managed installer logging events
 
-Refer to [Understanding Application Control Events](event-id-explanations.md#optional-intelligent-security-graph-isg-or-managed-installer-mi-diagnostic-events) for information on enabling optional managed installer diagnostic events.
+Refer to [Understanding Application Control Events](event-id-explanations.md#diagnostic-events-for-intelligent-security-graph-isg-and-managed-installer-mi) for information on enabling optional managed installer diagnostic events.
 
 ## Deploying the Managed Installer rule collection
 

@@ -8,9 +8,9 @@ metadata:
   description: Learn how to manage and deploy Windows Hello for Business.
   ms.prod: m365-security
   ms.topic: landing-page
-  author: mapalko
+  author: GitPrakhar13
   manager: dansimp
-  ms.author: mapalko
+  ms.author: prsriva
   ms.date: 01/22/2021
   ms.collection:
     - M365-identity-device-management

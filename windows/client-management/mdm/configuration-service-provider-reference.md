@@ -439,18 +439,6 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[EnterpriseAppManagement CSP](enterpriseappmanagement-csp.md)
-
-<!--StartSKU-->
-
-|Home|Pro|Business|Enterprise|Education|
-|--- |--- |--- |--- |--- |
-|No|No|No|No|No|
-
-<!--EndSKU-->
-<!--EndCSP-->
-
-<!--StartCSP-->
 [EnterpriseAppVManagement CSP](enterpriseappvmanagement-csp.md)
 
 |Home|Pro|Business|Enterprise|Education|
@@ -540,18 +528,6 @@ Additional lists:
 |Home|Pro|Business|Enterprise|Education|
 |--- |--- |--- |--- |--- |
 |Yes|Yes|No|Yes|Yes|
-
-<!--EndSKU-->
-<!--EndCSP-->
-
-<!--StartCSP-->
-[Messaging CSP](messaging-csp.md)
-
-<!--StartSKU-->
-
-|Home|Pro|Business|Enterprise|Education|
-|--- |--- |--- |--- |--- |
-|No|No|No|No|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -749,18 +725,6 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[RemoteRing CSP](remotering-csp.md)
-
-<!--StartSKU-->
-
-|Home|Pro|Business|Enterprise|Education|
-|--- |--- |--- |--- |--- |
-|No|No|No|No|No|
-
-<!--EndSKU-->
-<!--EndCSP-->
-
-<!--StartCSP-->
 [RemoteWipe CSP](remotewipe-csp.md)
 
 <!--StartSKU-->
@@ -857,18 +821,6 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[SurfaceHub](surfacehub-csp.md)
-
-<!--StartSKU-->
-
-|Home|Pro|Business|Enterprise|Education|
-|--- |--- |--- |--- |--- |
-||||||
-
-<!--EndSKU-->
-<!--EndCSP-->
-
-<!--StartCSP-->
 [TenantLockdown CSP](tenantlockdown-csp.md)
 
 <!--StartSKU-->
@@ -953,18 +905,6 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[W4 Application CSP](w4-application-csp.md)
-
-<!--StartSKU-->
-
-|Home|Pro|Business|Enterprise|Education|
-|--- |--- |--- |--- |--- |
-||||||
-
-<!--EndSKU-->
-<!--EndCSP-->
-
-<!--StartCSP-->
 [WiFi CSP](wifi-csp.md)
 
 <!--StartSKU-->
@@ -1019,7 +959,7 @@ Additional lists:
 
 |Home|Pro|Business|Enterprise|Education|
 |--- |--- |--- |--- |--- |
-|No|Yes|Yes|Yes|Yes|
+|No|No|No|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1049,18 +989,6 @@ Additional lists:
 <!--EndSKU-->
 <!--EndCSP-->
 
-<!--StartCSP-->
-[w7 Application CSP](w7-application-csp.md)
-
-<!--StartSKU-->
-
-|Home|Pro|Business|Enterprise|Education|
-|--- |--- |--- |--- |--- |
-||||||
-
-<!--EndSKU-->
-<!--EndCSP-->
-
 <hr/>
 <!--EndCSPs-->
 
@@ -1078,7 +1006,6 @@ You can download the DDF files for various CSPs from the links below:
 
 ## <a href="" id="hololens"></a>CSPs supported in HoloLens devices
 
-
 The following list shows the CSPs supported in HoloLens devices:
 
 | Configuration service provider        | HoloLens (1st gen) Development Edition      | HoloLens (1st gen) Commercial Suite | HoloLens 2 |
@@ -1091,7 +1018,7 @@ The following list shows the CSPs supported in HoloLens devices:
 | [CertificateStore CSP](certificatestore-csp.md)    | Yes | Yes| Yes |
 | [ClientCertificateInstall CSP](clientcertificateinstall-csp.md)  | No | Yes       | Yes |
 | [DevDetail CSP](devdetail-csp.md)   | Yes | Yes       | Yes |
-| [DeveloperSetup CSP](developersetup-csp.md)   | No | Yes    (runtime provisioning via provisioning packages only; no MDM support)| Yes |
+| [DeveloperSetup CSP](developersetup-csp.md)   | No | Yes    (runtime provisioning via provisioning packages only; no MDM support)| Yes (runtime provisioning via provisioning packages only; no MDM support) |
 | [DeviceManageability CSP](devicemanageability-csp.md) | No | No | Yes |
 | [DeviceStatus CSP](devicestatus-csp.md)  | No | Yes  | Yes |
 | [DevInfo CSP](devinfo-csp.md)  | Yes | Yes       | Yes |
@@ -1135,6 +1062,7 @@ The following list shows the CSPs supported in HoloLens devices:
 -   [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)
 -   [Firewall-CSP](firewall-csp.md) 
 -   [HealthAttestation CSP](healthattestation-csp.md)
+-   [NetworkProxy CSP](networkproxy-csp.md)
 -   [NetworkQoSPolicy CSP](networkqospolicy-csp.md)
 -   [NodeCache CSP](nodecache-csp.md)
 -   [PassportForWork CSP](passportforwork-csp.md)
@@ -1162,7 +1090,6 @@ The following list shows the CSPs supported in HoloLens devices:
 - [DiagnosticLog CSP](diagnosticlog-csp.md)
 - [DMAcc CSP](dmacc-csp.md)
 - [DMClient CSP](dmclient-csp.md)
-- [EnterpriseAppManagement CSP](enterpriseappmanagement-csp.md)
 - [HealthAttestation CSP](healthattestation-csp.md)
 - [NetworkProxy CSP](networkproxy-csp.md)
 - [Policy CSP](policy-configuration-service-provider.md)

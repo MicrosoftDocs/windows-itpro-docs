@@ -255,8 +255,6 @@ items:
           items: 
             - name: EnterpriseAPN DDF
               href: enterpriseapn-ddf.md
-        - name: EnterpriseAppManagement CSP
-          href: enterpriseappmanagement-csp.md
         - name: EnterpriseAppVManagement CSP
           href: enterpriseappvmanagement-csp.md
           items: 
@@ -296,11 +294,6 @@ items:
           items: 
             - name: HealthAttestation DDF
               href: healthattestation-ddf.md
-        - name: Messaging CSP
-          href: messaging-csp.md
-          items: 
-            - name: Messaging DDF file
-              href: messaging-ddf.md
         - name: MultiSIM CSP
           href: multisim-csp.md
           items: 
@@ -741,6 +734,8 @@ items:
               href: policy-csp-lockdown.md
             - name: Maps
               href: policy-csp-maps.md
+            - name: MemoryDump
+              href: policy-csp-memorydump.md
             - name: Messaging
               href: policy-csp-messaging.md
             - name: MixedReality
@@ -755,6 +750,8 @@ items:
               href: policy-csp-networkisolation.md
             - name: NetworkListManager
               href: policy-csp-networklistmanager.md
+            - name: NewsAndInterests
+              href: policy-csp-newsandinterests.md
             - name: Notifications
               href: policy-csp-notifications.md
             - name: Power
@@ -765,6 +762,8 @@ items:
               href: policy-csp-privacy.md
             - name: RemoteAssistance
               href: policy-csp-remoteassistance.md
+            - name: RemoteDesktop
+              href: policy-csp-remotedesktop.md
             - name: RemoteDesktopServices
               href: policy-csp-remotedesktopservices.md
             - name: RemoteManagement
@@ -847,11 +846,6 @@ items:
           items: 
             - name: RemoteFind DDF file
               href: remotefind-ddf-file.md
-        - name: RemoteRing CSP
-          href: remotering-csp.md
-          items: 
-            - name: RemoteRing DDF file
-              href: remotering-ddf-file.md
         - name: RemoteWipe CSP
           href: remotewipe-csp.md
           items: 
@@ -957,6 +951,11 @@ items:
           items: 
             - name: WindowsAdvancedThreatProtection DDF file
               href: windowsadvancedthreatprotection-ddf.md
+        - name: WindowsAutopilot CSP
+          href: windowsautopilot-csp.md
+          items: 
+            - name: WindowsAutopilot DDF file
+              href: windowsautopilot-ddf-file.md
         - name: WindowsDefenderApplicationGuard CSP
           href: windowsdefenderapplicationguard-csp.md
           items: 

@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 12/03/2021
+ms.date: 01/18/2022
 ---
 
 # Change the TPM owner password
@@ -46,7 +46,7 @@ Instead of changing your owner password, you can also use the following options 
 
 ## Change the TPM owner password
 
-With Windows 10, version 1507 or 1511, or Windows 11, if you have opted specifically to preserve the TPM owner password, you can use the saved password to change to a new password.
+With Windows 10, version 1507 or 1511, if you have opted specifically to preserve the TPM owner password, you can use the saved password to change to a new password.
 
 To change to a new TPM owner password, in TPM.msc, click **Change Owner Password**, and follow the instructions. You will be prompted to provide the owner password file or to type the password. Then you can create a new password, either automatically or manually, and save the password in a file or as a printout.
 
