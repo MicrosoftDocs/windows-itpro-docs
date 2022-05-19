@@ -46,13 +46,13 @@ The Store for Business provides services that enable a management tool to synchr
 
 ### Offline-licensed application distribution
 
-The following diagram is an overview of app distribution, from getting an offline-licensed application to distributing to clients. Once synchronized from the Store for Business, the management tool can use the Windows management framework to distribute applications to devices.
+The following diagram is an overview of app distribution, from getting an offline-licensed application to distributing to clients. Once the applications are synchronized from the Store for Business, the management tool can use the Windows management framework to distribute applications to devices.
 
 ![business store offline app distribution.](images/businessstoreportalservices2.png)
 
 ### Online-licensed application distribution
 
-The following diagram is an overview of app distribution, from getting an online-licensed application to distributing to clients. Once synchronized from the Store for Business, the management tool can use the Windows management framework to distribute applications to devices. For online-licensed applications, the management tool calls back into the Store for Business management services to assign an application before issuing the policy to install the application.
+The following diagram is an overview of app distribution, from getting an online-licensed application to distributing to clients. Once the applications are synchronized from the Store for Business, the management tool can use the Windows management framework to distribute applications to devices. For online-licensed applications, the management tool calls back into the Store for Business management services to assign an application before issuing the policy to install the application.
 
 ![business store online app distribution.](images/businessstoreportalservices3.png)
 
@@ -85,7 +85,7 @@ Here are the details for requesting an authorization token:
 
 ## Using the management tool
 
-After registering your management tool with Azure AD, the management tool can call into the management services. There are a couple of call patterns:
+After you register your management tool with Azure AD, the management tool can call into the management services. There are a couple of call patterns:
 
 -   First the ability to get new or updated applications.
 -   Second the ability to assign or reclaim applications.

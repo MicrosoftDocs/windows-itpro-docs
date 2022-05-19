@@ -2,13 +2,13 @@
 title: What's new in Windows 10 Enterprise LTSC 2021
 ms.reviewer: 
 manager: dougeby
-ms.author: greglin
+ms.author: aaroncz
 description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2021.
 keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 Enterprise LTSC 2021"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: low
 ms.topic: article
 ---
@@ -22,7 +22,7 @@ This article lists new and updated features and content that is of interest to I
 
 > [!NOTE]
 > Features in Windows 10 Enterprise LTSC 2021 are equivalent to Windows 10, version 21H2.<br>
-> The LTSC release is [intended for special use devices](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/LTSC-What-is-it-and-when-should-it-be-used/ba-p/293181). Support for LTSC by apps and tools that are designed for the semi-annual channel release of Windows 10 might be limited.
+> The LTSC release is [intended for special use devices](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/LTSC-What-is-it-and-when-should-it-be-used/ba-p/293181). Support for LTSC by apps and tools that are designed for the General Availability Channel release of Windows 10 might be limited.
 
 Windows 10 Enterprise LTSC 2021 builds on Windows 10 Enterprise LTSC 2019, adding premium features such as advanced protection against modern security threats and comprehensive device management, app management, and control capabilities. 
 
@@ -237,7 +237,7 @@ Microsoft Edge kiosk mode offers two lockdown experiences of the browser so orga
 
 ## Windows Subsystem for Linux
 
-Windows Subsystem for Linux (WSL) is be available in-box.
+Windows Subsystem for Linux (WSL) is available in-box.
 
 ## Networking
 

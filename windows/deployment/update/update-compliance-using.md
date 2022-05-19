@@ -1,15 +1,15 @@
 ---
 title: Using Update Compliance
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 description: Learn how to use Update Compliance to monitor your device's Windows updates.
 keywords: oms, operations management suite, wdav, updates, upgrades, antivirus, antimalware, signature, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: deploy
 audience: itpro
-author: jaimeo
-ms.author: jaimeo
+author: aczechowski
+ms.author: aaroncz
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
@@ -29,7 +29,7 @@ In this section you'll learn how to use Update Compliance to monitor your device
 Update Compliance:
 - Provides detailed deployment monitoring for Windows client feature and quality updates.
 - Reports when devices need attention due to issues related to update deployment.
-- Shows bandwidth usage and savings for devices that are configured to use [Delivery Optimization](waas-delivery-optimization.md).
+- Shows bandwidth usage and savings for devices that are configured to use [Delivery Optimization](../do/waas-delivery-optimization.md).
 - Provides all of the above data in [Log Analytics](#using-log-analytics), which affords additional querying and export capabilities.
 
 ## The Update Compliance tile

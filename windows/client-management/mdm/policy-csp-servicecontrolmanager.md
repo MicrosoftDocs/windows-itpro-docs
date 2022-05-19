@@ -58,7 +58,7 @@ This policy setting enables process mitigation options on svchost.exe processes.
 
 If you enable this policy setting, built-in system services hosted in svchost.exe processes will have stricter security policies enabled on them.
 
-This includes a policy requiring all binaries loaded in these processes to be signed by Microsoft, and a policy disallowing dynamically generated code.  
+These stricter security policies include a policy requiring all binaries loaded in these processes to be signed by Microsoft, and a policy disallowing dynamically generated code.  
 
 > [!IMPORTANT]
 > Enabling this policy could cause compatibility issues with third-party software that uses svchost.exe processes (for example, third-party antivirus software).
@@ -75,7 +75,7 @@ If you disable or do not configure this policy setting, the stricter security se
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Enable svchost.exe mitigation options*
+-   GP Friendly name: *Enable svchost.exe mitigation options*
 -   GP name: *SvchostProcessMitigationEnable*
 -   GP path: *System/Service Control Manager Settings/Security Settings*
 -   GP ADMX file name: *ServiceControlManager.admx*

@@ -12,7 +12,7 @@ ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
-ms.date: 08/17/2017
+ms.date: 01/26/2022
 ms.reviewer: 
 ---
 
@@ -33,7 +33,7 @@ The following known issue has been fixed in the [Cumulative Security Update for 
    Failure occurred in ‘LogonUserExEx’. <br>
    User Action: Ensure the credentials for the task are correctly specified. <br>
    Additional Data: Error Value: 2147943726. 2147943726: ERROR\_LOGON\_FAILURE (The user name or password is incorrect)."
--  When enabling NTLM audit on the domain controller, an Event ID 8004 with an indecipherable username format is logged. For example:
+-  When enabling NTLM audit on the domain controller, an Event ID 8004 with an indecipherable username format is logged. You also get a similar user name in a user logon failure event 4625 with error 0xC0000064 on the machine itself. For example:
    > Log Name: Microsoft-Windows-NTLM/Operational  
     Source: Microsoft-Windows-Security-Netlogon  
     Event ID: 8004  
@@ -57,22 +57,13 @@ The following known issues have been fixed by servicing releases made available 
      This issue can potentially lead to unexpected account lockouts. See also Microsoft® Knowledge Base articles [KB4015219](https://support.microsoft.com/help/4015219/windows-10-update-kb4015219) and [KB4015221](https://support.microsoft.com/help/4015221/windows-10-update-kb4015221)
 
 
-- [KB4033236 Two incorrect logon attempts sent to Active Directory after Windows Defender Credential Guard installed on Windows](https://support.microsoft.com/help/4033236/two-incorrect-logon-attempts-sent-to-active-directory-after-credential?preview)
-
-    This issue can potentially lead to unexpected account lockouts. The issue was fixed in servicing updates for each of the following operating systems:
-
-    - Windows 10 Version 1607 and Windows Server 2016: 
-    [KB4015217 (OS Build 14393.1066 and 14393.1083)](https://support.microsoft.com/help/4015217) 
-    - Windows 10 Version 1511: [KB4015219 (OS Build 10586.873)](https://support.microsoft.com/help/4015219)
-    - Windows 10 Version 1507: [KB4015221 (OS Build 10240.17354)](https://support.microsoft.com/help/4015221)
-
 ## Known issues involving third-party applications
 
 The following issue affects the Java GSS API. See the following Oracle bug database article: 
 
 - [JDK-8161921: Windows Defender Credential Guard doesn't allow sharing of TGT with Java](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=8161921)
 
-When Windows Defender Credential Guard is enabled on Windows, the Java GSS API won't authenticate. This is expected behavior because Windows Defender Credential Guard blocks specific application authentication capabilities and won't provide the TGT session key to applications regardless of registry key settings. For further information, see [Application requirements](/windows/access-protection/credential-guard/credential-guard-requirements#application-requirements).
+When Windows Defender Credential Guard is enabled on Windows, the Java GSS API won't authenticate. This is expected behavior because Windows Defender Credential Guard blocks specific application authentication capabilities and won't provide the TGT session key to applications regardless of registry key settings. For more information, see [Application requirements](/windows/access-protection/credential-guard/credential-guard-requirements#application-requirements).
 
 The following issue affects Cisco AnyConnect Secure Mobility Client:
 
@@ -106,7 +97,7 @@ For further technical information on LSAISO.exe, see the MSDN article: [Isolated
 See the following article on Citrix support for Secure Boot:
 - [Citrix Support for Secure Boot](https://www.citrix.com/blogs/2016/12/08/windows-server-2016-hyper-v-secure-boot-support-now-available-in-xenapp-7-12/)
 
-Windows Defender Credential Guard is not supported by either these products, products versions, computer systems, or Windows 10 versions:
+Windows Defender Credential Guard isn't supported by either these products, products versions, computer systems, or Windows 10 versions:
 
 - For Windows Defender Credential Guard on Windows with McAfee Encryption products, see:
   [Support for Hypervisor-Protected Code Integrity and Windows Defender Credential Guard on Windows with McAfee encryption products](https://kc.mcafee.com/corporate/index?page=content&id=KB86009)
@@ -123,6 +114,6 @@ Windows Defender Credential Guard is not supported by either these products, pro
 - For Windows Defender Credential Guard on Windows with Symantec Endpoint Protection
   [Windows devices with Windows Defender Credential Guard and Symantec Endpoint Protection 12.1](https://www.symantec.com/connect/forums/windows-10-device-guard-credentials-guard-and-sep-121)
 
-  This is not a comprehensive list. Check whether your product vendor, product version, or computer system, supports Windows Defender Credential Guard on systems that run Windows or specific versions of Windows. Specific computer system models may be incompatible with Windows Defender Credential Guard. 
+  This isn't a comprehensive list. Check whether your product vendor, product version, or computer system, supports Windows Defender Credential Guard on systems that run Windows or specific versions of Windows. Specific computer system models may be incompatible with Windows Defender Credential Guard. 
 
   Microsoft encourages third-party vendors to contribute to this page by providing relevant product support information and by adding links to their own product support statements.

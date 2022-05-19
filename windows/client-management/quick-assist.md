@@ -4,10 +4,10 @@ description: How IT Pros can use Quick Assist to help users
 ms.prod: w10
 ms.sitesec: library
 ms.topic: article
-author: jaimeo
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: jaimeo
-manager: laurawi
+ms.author: aaroncz
+manager: dougeby
 ms.collection: highpri
 ---
 
@@ -18,6 +18,9 @@ Quick Assist is a Windows application that enables a person to share their devic
 ## Before you begin
 
 All that's required to use Quick Assist is suitable network and internet connectivity. No particular roles, permissions, or policies are involved. Neither party needs to be in a domain. The helper must have a Microsoft account. The sharer doesn’t have to authenticate.
+
+> [!NOTE]
+> In case the helper and sharer use different keyboard layouts or mouse settings, the ones from the sharer are used during the session.
 
 ### Authentication
 

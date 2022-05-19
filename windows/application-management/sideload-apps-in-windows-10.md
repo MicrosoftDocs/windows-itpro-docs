@@ -1,15 +1,11 @@
 ---
 title: Sideload LOB apps in Windows client OS | Microsoft Docs
 description: Learn how to sideload line-of-business (LOB) apps in Windows client operating systems, including Windows 10/11. When you sideload an app, you deploy a signed app package to a device.
-ms.assetid: C46B27D0-375B-4F7A-800E-21595CF1D53D
 ms.reviewer: 
 manager: dougeby
-ms.author: greglin
+ms.author: aaroncz
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: mobile
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
 ---
 
@@ -53,7 +49,7 @@ You can sideload apps on managed or unmanaged devices.
 
 Managed devices are typically owned by your organization. They're managed by Group Policy (on-premises), or a Mobile Device Management (MDM) provider, such as Microsoft Intune (cloud). Bring your own devices (BYOD) and personal devices can also be managed by your organization. On managed devices, you can create a policy that turns on sideloading, and then deploy this policy to your Windows devices.
 
-Unmanaged devices are devices that are not managed by your organization. These devices are typically personal devices owned by users. Users can turn on sideloading using the Settings app.
+Unmanaged devices are devices that aren't managed by your organization. These devices are typically personal devices owned by users. Users can turn on sideloading using the Settings app.
 
 > [!IMPORTANT]
 > To install an app on Windows client, you can:

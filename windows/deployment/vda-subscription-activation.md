@@ -3,8 +3,8 @@ title: Configure VDA for Windows 10/11 Subscription Activation
 ms.reviewer: 
 manager: dougeby
 ms.audience: itpro
-ms.author: greglin
-author: greg-lindsay
+ms.author: aaroncz
+author: aczechowski
 description: Learn how to configure virtual machines (VMs) to enable Windows 10 Subscription Activation in a Windows Virtual Desktop Access (VDA) scenario.
 keywords: upgrade, update, task sequence, deploy
 ms.custom: seo-marvel-apr2020
@@ -153,4 +153,4 @@ To create custom RDP settings for Azure:
 
 [Windows 10/11 Subscription Activation](windows-10-subscription-activation.md)
 <BR>[Recommended settings for VDI desktops](/windows-server/remote/remote-desktop-services/rds-vdi-recommendations)
-<BR>[Licensing the Windows Desktop for VDI Environments](https://download.microsoft.com/download/1/1/4/114A45DD-A1F7-4910-81FD-6CAF401077D0/Microsoft%20VDI%20and%20VDA%20FAQ%20v3%200.pdf)
+<BR>[Licensing the Windows Desktop for VDI Environments](https://download.microsoft.com/download/9/8/d/98d6a56c-4d79-40f4-8462-da3ecba2dc2c/licensing_windows_desktop_os_for_virtual_machines.pdf)

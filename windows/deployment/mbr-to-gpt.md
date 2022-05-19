@@ -7,12 +7,12 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 audience: itpro
-author: greg-lindsay
-ms.author: greglin
+author: aczechowski
+ms.author: aaroncz
 ms.date: 02/13/2018
 manager: dougeby
 ms.audience: itpro
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.collection: highpri
