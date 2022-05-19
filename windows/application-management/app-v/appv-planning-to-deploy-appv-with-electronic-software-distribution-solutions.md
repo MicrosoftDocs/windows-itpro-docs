@@ -2,9 +2,6 @@
 title: Planning to Deploy App-V with an Electronic Software Distribution System (Windows 10/11)
 description: Planning to Deploy App-V with an Electronic Software Distribution System
 author: aczechowski
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
@@ -12,6 +9,7 @@ manager: dougeby
 ms.author: aaroncz
 ms.topic: article
 ---
+
 # Planning to Deploy App-V with an electronic software distribution system
 
 [!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
@@ -29,7 +27,7 @@ Review the following component and architecture requirements options that apply 
 
 
 
-## Related topics
+## Related articles
 
 * [Planning to deploy App-V](appv-planning-to-deploy-appv.md)
 * [How to deploy App-V packages Using Electronic Software Distribution](appv-deploy-appv-packages-with-electronic-software-distribution-solutions.md)

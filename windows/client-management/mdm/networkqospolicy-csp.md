@@ -13,6 +13,16 @@ manager: dansimp
 
 # NetworkQoSPolicy CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 The NetworkQoSPolicy configuration service provider creates network Quality of Service (QoS) policies. A QoS policy performs a set of actions on network traffic based on a set of matching conditions. This CSP was added in Windows 10, version 1703.
 
 The following conditions are supported:
@@ -71,7 +81,7 @@ NetworkQoSPolicy
 <p>The supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="name-apppathnamematchcondition"></a>***Name*/AppPathNameMatchCondition**  
-<p>Specifies the name of an application to be used to match the network traffic, such as application.exe or %ProgramFiles%\application.exe.
+<p>Specifies the name of an application to be used to match the network traffic, such as `application.exe` or `%ProgramFiles%\application.exe`.
 
 <p>The data type is char. 
 
@@ -111,7 +121,7 @@ NetworkQoSPolicy
 <p>The supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="name-dscpaction"></a>***Name*/DSCPAction**  
-<p>The differentiated services code point (DSCP) value to apply to matching network traffic.
+<p>The Differentiated Services Code Point (DSCP) value to apply to matching network traffic.
 
 <p>Valid values are 0-63.
 

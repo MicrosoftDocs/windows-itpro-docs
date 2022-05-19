@@ -2,9 +2,6 @@
 title: Enable the App-V in-box client (Windows 10/11)
 description: Learn how to enable the Microsoft Application Virtualization (App-V) in-box client installed with Windows 10/11.
 author: aczechowski
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
@@ -12,6 +9,7 @@ manager: dougeby
 ms.author: aaroncz
 ms.topic: article
 ---
+
 # Enable the App-V in-box client
 
 [!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
