@@ -33,7 +33,6 @@ The Security Compliance Toolkit consists of:
     -   Windows 10 Version 21H2
     -   Windows 10 Version 21H1
     -   Windows 10 Version 20H2
-    -   Windows 10 Version 1909
     -   Windows 10 Version 1809
     -   Windows 10 Version 1607
     -   Windows 10 Version 1507
