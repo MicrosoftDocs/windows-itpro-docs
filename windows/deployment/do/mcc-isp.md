@@ -27,7 +27,7 @@ ms.topic: article
 
 Microsoft Connected Cache (MCC) preview is a software-only caching solution that delivers Microsoft content within operator networks. MCC can be deployed to as many physical servers or VMs as needed and is managed from a cloud portal. Microsoft cloud services handle routing of consumer devices to the cache server for content downloads.
 
-Microsoft Connected Cache is a Hybrid (mix of on-prem and cloud resources) application application composed of a Docker compatible Linux container deployed to your server and a cloud management portal. Microsoft chose Azure IoT Edge (more information on IoT Edge in the [appendix](#appendix)) as a secure and reliable control plane. Even though your scenario is not related to IoT, Azure IoT Edge is our secure Linux container deployment and management infrastructure. 
+Microsoft Connected Cache is a Hybrid (mix of on-premise and cloud resources) application composed of a Docker compatible Linux container deployed to your server and a cloud management portal. Microsoft chose Azure IoT Edge (more information on IoT Edge in the [appendix](#appendix)) as a secure and reliable control plane. Even though your scenario isn't related to IoT, Azure IoT Edge is our secure Linux container deployment and management infrastructure. 
 
 
 ## How MCC works
@@ -38,10 +38,10 @@ The following steps describe how MCC is provisioned and used.
 
 1. The Azure Management Portal is used to create and manage MCC nodes.
 2. A shell script is used to provision the server and deploy the MCC application.
-3. A combination of the Azure Management Portal and shell script are used to configure Microsoft Delivery Optimization Services to route traffic to the MCC server.
+3. A combination of the Azure Management Portal and shell script is used to configure Microsoft Delivery Optimization Services to route traffic to the MCC server.
     - The publicly accessible IPv4 address of the server is configured on the portal.
     - **Manual Routing:** Providing the CIDR blocks that represent the client IP address space, which should be routed to the MCC node.
-    - **BGP Routing:** A shell script is used to initiate a peering session with a router in the operator network, and the operator initiaties a session with the MCC node.
+    - **BGP Routing:** A shell script is used to initiate a peering session with a router in the operator network, and the operator initiates a session with the MCC node.
     - **Note:** Only IPv4 addresses are supported at this time. Entering IPv6 addresses will result in an error.
 4. Microsoft end-user devices (clients) periodically connect with Microsoft Delivery Optimization Services, and the services match the IP address of the client with the IP address of the corresponding MCC node.
 5. Microsoft clients make the range requests for content from the MCC node.
@@ -54,14 +54,14 @@ The following steps describe how MCC is provisioned and used.
 
 1. **Azure subscription**: The MCC management portal is hosted within Azure and is used to create the Connected Cache Azure resource and IoT Hub resource. Both are **free** services.
 
-    Your Azure subscription ID is first used to provision MCC services and enable access to the preview. The MCC server requirement for an Azure subscription will cost you nothing. If you don't have an Azure subscription already, you can create an Azure [Pay-As-You-Go](https://azure.microsoft.com/offers/ms-azr-0003p/) account which requires a credit card for verification purposes. For more information, see the [Azure Free Account FAQ](https://azure.microsoft.com/free/free-account-faq/). *Please do not submit a trial subscription* as you will lose access to your Azure resources after the trial period ends.
+    Your Azure subscription ID is first used to provision MCC services and enable access to the preview. The MCC server requirement for an Azure subscription will cost you nothing. If you don't have an Azure subscription already, you can create an Azure [Pay-As-You-Go](https://azure.microsoft.com/offers/ms-azr-0003p/) account, which requires a credit card for verification purposes. For more information, see the [Azure Free Account FAQ](https://azure.microsoft.com/free/free-account-faq/). *Don't submit a trial subscription* as you'll lose access to your Azure resources after the trial period ends.
 
-    The resources used for the preview, and in the future when this product is ready for production, will be completely free to you - like other caching solutions. 
+    The resources used for the preview, and in the future when this product is ready for production, will be free to you - like other caching solutions. 
     
     > [!NOTE]
     > If you request Exchange or Public peering in the future, business email addresses must be used to register ASN's, because Microsoft does not accept Gmail or other non-business email addresses.
 
-2. **Hardware to host MCC**: The recommended configuration will serve approximately 35,000 consumer devices, downloading a 2GB payload in 24-hour timeframe at a sustained rate of 9 Gbps with a 10 Gbps NIC.
+2. **Hardware to host MCC**: The recommended configuration will serve approximately 35,000 consumer devices, downloading a 2-GB payload in 24-hour timeframe at a sustained rate of 9 Gbps with a 10 Gbps NIC.
 
 **Disk requirements:**
 - SSDs are recommended due to improved cache read speeds of SSD, compared to HDD.
@@ -71,18 +71,18 @@ The following steps describe how MCC is provisioned and used.
 
 **NIC requirements:**
 - Multiple NICs on a single MCC instance are supported using a Link Aggregated configuration.
-- 10Gbps NIC is the minimum speed recommended, but any NIC is supported.
+- 10 Gbps NIC is the minimum speed recommended, but any NIC is supported.
 
 ### Sizing recommendations
 
-The MCC module is optimized for Ubuntu 20.04 LTS. Install Ubuntu 20.04 LTS on a physical server or VM of your choice. As discussed earlier, the recommended configuration (details below) will serve approximately 35,000 consumer devices downloading a 2GB payload in 24-hour timeframe at a sustained rate of 9 Gbps with a 10 Gbps NIC.
+The MCC module is optimized for Ubuntu 20.04 LTS. Install Ubuntu 20.04 LTS on a physical server or VM of your choice. As discussed earlier, the recommended configuration (details below) will serve approximately 35,000 consumer devices downloading a 2-GB payload in 24-hour timeframe at a sustained rate of 9 Gbps with a 10 Gbps NIC.
 
 | Component  | Minimum | Recommended |
 | -- | --- | --- |
 | OS |  Ubuntu 20.04 LTS VM or physical server | Ubuntu 20.04 LTS VM or physical server (preferred) |
 | NIC | 10 Gbps| at least 10 Gbps |
-| Disk | SSD <br>1 drive <br>2TB each  |SSD <br>2-4 drives <br>at least 2TB each  |
-| Memory | 8GB | 32GB or greater |
+| Disk | SSD <br>1 drive <br>2 TB each  |SSD <br>2-4 drives <br>at least 2 TB each  |
+| Memory | 8 GB | 32 GB or greater |
 | Cores | 4 | 8 or more  |
 
 ## Steps to deploy MCC
@@ -133,7 +133,7 @@ Operators who have been given access to the program will be sent a link to the A
 
     -   Choose the subscription that you provided to Microsoft.
     -   Azure resource groups are logical groups of resources. Create a new resource group and choose a name for your resource group.
-    -   Choose **(US) West US** for the location of the resource. This choice will not impact MCC if the physical location isn't in the West US, it is just a limitation of the preview.
+    -   Choose **(US) West US** for the location of the resource. This choice won't impact MCC if the physical location isn't in the West US, it's just a limitation of the preview.
 
        > [!NOTE]
        > Your MCC resource will not be created properly if you don't select **(US) West US**
@@ -142,13 +142,13 @@ Operators who have been given access to the program will be sent a link to the A
 
         ![iMCC emg05](images/imcc05.png)
 
-5.  Once all the information has been entered, click the **Review + Create** button. Once validation is complete, click the **Create** button to start the resource creation.
+5.  Once all the information has been entered, select the **Review + Create** button. Once validation is complete, select the **Create** button to start the resource creation.
 
     ![iMCC img06](images/imcc06.png)
 
 #### Error: Validation failed
 
--   If you get a "Validation failed" error message on your portal, it is likely because you selected the **Location** as **US West 2** or some other location that isn't **(US) West US**.
+-   If you get a "Validation failed" error message on your portal, it's likely because you selected the **Location** as **US West 2** or some other location that isn't **(US) West US**.
 -   To resolve this error, go to the previous step and choose **(US) West US**.
 
     ![iMCC img07](images/imcc07.png)
@@ -156,20 +156,20 @@ Operators who have been given access to the program will be sent a link to the A
 #### Error: Could not create Marketplace item
 
 - If you receive a "Could not create marketplace item" error message in your Azure portal:
-    -   Ensure that you have selected "Microsoft Connected Cache" and not "Connected Cache resources" while trying to create a MCC resource
-    -   Ensure that you are using the same subscription that you provided to Microsoft and you have privileges to create an Azure resource
+    -   Ensure that you've selected "Microsoft Connected Cache" and not "Connected Cache resources" while trying to create a MCC resource
+    -   Ensure that you're using the same subscription that you provided to Microsoft and you have privileges to create an Azure resource
     -   Clear your browser cache and start in a new window if the issue persists
 
 ### Create a MCC node in Azure
 
 Creating a MCC node is a multi-step process, and the first step is to access the MCC private preview management portal.
 
-1.  After the successful resource creation click on **Go to resource**.
-2.  Under **Cache Node Management** section on the leftmost panel, click on **Cache Nodes**.
+1.  After the successful resource creation, select **Go to resource**.
+2.  Under **Cache Node Management** section on the leftmost panel, select **Cache Nodes**.
 
     ![iMCC img08](images/imcc08.png)
 
-3.  On the **Cache Nodes** blade, click on the **Create Cache Node** button.
+3.  On the **Cache Nodes** section, select the **Create Cache Node** button.
 
     ![iMCC img09](images/imcc09.png)
 
@@ -178,9 +178,9 @@ Creating a MCC node is a multi-step process, and the first step is to access the
 | **Field Name**                | **Expected Value**                         | **Description**                                                                                                                                                                                         |
 |-------------------------------|--------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Cache Node Name**           | Alphanumeric name that includes no spaces. | The name of the cache node. You may choose names based on location like Seattle-1. This name must be unique and can't be changed later.                                                                    |
-| **Server IP Address**         | IPv4 Address                               | IP address of your MCC server. This is used to route end-user devices in your network to the server for Microsoft content downloads. **The IP address must be publicly accessible.** |
-| **Max Allowable Egress (Mbps)** | Integer in Mbps | The maximum egress (Mbps) of your MCC based on the specifications of your hardware (i.e. 10000 Mbps).|
-| **Address Range/CIDR Blocks** | IPv4 CIDR notation                         | IP Address range/CIDR blocks that should be routed to the MCC server as a comma separated list. For example: 2.21.234.0/24 , 3.22.235.0/24 , 4.23.236.0/24                        |
+| **Server IP Address**         | IPv4 Address                               | IP address of your MCC server. This address is used to route end-user devices in your network to the server for Microsoft content downloads. **The IP address must be publicly accessible.** |
+| **Max Allowable Egress (Mbps)** | Integer in Mbps | The maximum egress (Mbps) of your MCC based on the specifications of your hardware (for example, 10,000 Mbps).|
+| **Address Range/CIDR Blocks** | IPv4 CIDR notation                         | IP Address range/CIDR blocks that should be routed to the MCC server as a comma separated list. For example: 2.21.234.0/24, 3.22.235.0/24, 4.23.236.0/24                        |
 | **Enable Cache Node**         | Enable/Disable Radio Button                | **Enable** permits the cache node to receive content requests. <br>**Disable** prevents the cache node from receiving content requests. <br>Cache nodes are enabled by default.          |
 
   ![iMCC img10](images/imcc10.png)
@@ -194,9 +194,9 @@ There are two other read-only fields on this page that are populated after the c
 | **Field Name**      | **Description**                                                                                                                                                          |
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **IP Space**        | Number of IP addresses that will be routed to your cache server.                                                                                                        |
-| **Activation Keys** | Set of keys to activate your cache node with the MCC services. Copy the keys for use during install. The CustomerID is your Azure subscripiton ID. |
+| **Activation Keys** | Set of keys to activate your cache node with the MCC services. Copy the keys for use during install. The CustomerID is your Azure subscription ID. |
 
-5.  Enter the information for the Cache Node and click on the Create button. **Cache Node Name** and **Max Allowable Egress (Mbps)** are required fields, but all information can be included if desired.
+5.  Enter the information for the Cache Node and select the Create button. **Cache Node Name** and **Max Allowable Egress (Mbps)** are required fields, but all information can be included if desired.
 
     ![iMCC img12](images/imcc12.png)
 
@@ -204,7 +204,7 @@ There are two other read-only fields on this page that are populated after the c
 
     - The cache node name is in use in the resource or is an incorrect format.
     - The CIDR block notation or list is incorrect.
-    - The server IP address or CIDR block are already in use.
+    - The server IP address or CIDR block is already in use.
 
     See the following example with all information entered:
 
@@ -232,7 +232,7 @@ See the following example:
 
 IP address or CIDR information can be modified for existing MCC nodes in the portal.
 
-To edit IP address or CIDR information, click on the Cache Node Name which will open the Cache Node Configuration page. Cache nodes can be deleted here by clicking the check box to the left of a Cache Node Name and then clicking the delete toolbar item. Be aware that if a cache node is deleted, there is no way to recover the cache node or any of the information related to the cache node.
+To edit IP address or CIDR information, select the Cache Node Name, which will open the Cache Node Configuration page. Cache nodes can be deleted here by clicking the check box to the left of a Cache Node Name and then clicking the delete toolbar item. If a cache node is deleted, there's no way to recover the cache node or any of the information related to the cache node.
 
 ![iMCC img16](images/imcc16.png)
 
@@ -257,7 +257,7 @@ Installing MCC on your physical server or VM is a straightforward process. A Bas
 
 ### Steps to install MCC
 
-1.  Download and unzip mccinstaller.zip from the **Create Cache Node** page or **Cache Node Configuration** page which contains the necessary installation files.
+1.  Download and unzip mccinstaller.zip from the **Create Cache Node** page or **Cache Node Configuration** page, which contains the necessary installation files.
 
     ![iMCC img18](images/imcc18.png)
 
@@ -273,9 +273,9 @@ Installing MCC on your physical server or VM is a straightforward process. A Bas
     - **uninstallmcc.sh** - Main uninstaller file
     - **updatemcc.sh** - Main update file
 
-2.  Copy all 4 installation files to your Linux server (physical or VM).
+2.  Copy all four installation files to your Linux server (physical or VM).
 
-3.  Before proceeding, ensure that you have a data drive configured on your server. You'll need to specify the location for this cache drive on **Step 9**. Mimimum size for the data drive is 100GB. For instructions to mount a disk on a Linux VM, see [Attach a data disk to a Linux VM](/azure/virtual-machines/linux/attach-disk-portal#find-the-disk).
+3.  Before proceeding, ensure that you have a data drive configured on your server. You'll need to specify the location for this cache drive on **Step 9**. Minimum size for the data drive is 100 GB. For instructions to mount a disk on a Linux VM, see [Attach a data disk to a Linux VM](/azure/virtual-machines/linux/attach-disk-portal#find-the-disk).
 
 4.  Open a terminal window and change the access permissions to execute on the **installmcc.sh** Bash script file using chmod.
 
@@ -287,7 +287,7 @@ Installing MCC on your physical server or VM is a straightforward process. A Bas
 
     ![iMCC img19](images/imcc19.png)
 
-6.  You'll be prompted to sign in to the Azure Portal using a device code.
+6.  You'll be prompted to sign in to the Azure portal using a device code.
 
     ![iMCC img20](images/imcc20.png)
 
@@ -307,17 +307,17 @@ Installing MCC on your physical server or VM is a straightforward process. A Bas
 > The permissions / ownerships on the cache drive location will be changed to everyone via chmod 777<br>
 > **Don't** point the cache drive location to any of the following: “**.**”, “**./var**”, “**/**”, “**\<space\>**”
 
-Specifying any of the directories mentioned above will corrupt the VM, and you will need to provision a new one.
+Specifying any of the directories mentioned above will corrupt the VM, and you'll need to provision a new one.
 
 ![iMCC img24](images/imcc24.png)
 
-10.  If this is your first MCC deployment, select “n” when prompted for an IoT Hub. If this is **not** your first MCC deployment, you can use an existing IoT hub from your previous MCC installation. After selecting “y”, we will display your existing IoT Hubs, and you can copy and paste the resulting IoT Hub name to continue.
+10.  If it is your first MCC deployment, select “n” when prompted for an IoT Hub. If it is **not** your first MCC deployment, you can use an existing IoT hub from your previous MCC installation. After selecting “y”, we'll display your existing IoT Hubs, and you can copy and paste the resulting IoT Hub name to continue.
 
 ![iMCC img25](images/imcc25.png)
 
 11.  If there are no errors, go to the next step.
 
--  If there are errors, inspect the installer logs which are under /etc/mccresourcecreation/.
+-  If there are errors, inspect the installer logs, which are under /etc/mccresourcecreation/.
 -  If there are errors, follow the instructions to [Troubleshoot your IoT Edge device](/azure/iot-edge/troubleshoot).
 
 ## Verify Proper Functioning MCC Server
@@ -332,7 +332,7 @@ sudo iotedge list​
 
 ![iMCC img26](images/imcc26.png)
 
-If **edgeAgent** and **edgeHub** containers are listed, but not **“MCC”**, you may view the status of the IoTEdge security manager using the command:
+If **edgeAgent** and **edgeHub** containers are listed, but not **“MCC”**, you may view the status of the IoT Edge security manager using the command:
 
 ```bash
 sudo journalctl -u iotedge -f
@@ -362,17 +362,17 @@ Similarly, enter the following URL into a web browser on the network:
 http://<CacheServerIP>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com
 ```
 
-If the test fails, see the [common issues](#common-issues) section below for more information.
+For more information if the test fails, see the [common issues](#common-issues) section below.
 
 ## Configure BGP Routing
 
-If you have a MCC that is already active and running, follow **Method 1** to configure BGP using the Update Script. If you are installing MCC for the first time, configure BGP Routing with **Method 2**. 
+If you have a MCC that is already active and running, follow **Method 1** to configure BGP using the Update Script. If you're installing MCC for the first time, configure BGP Routing with **Method 2**. 
 
 ### Method 1: Configure BGP with the Update Script
 
 Use this method if you already have a MCC that is active and running.
 
-1. Navigate to the Azure portal to download the installer. Detailed steps on how to download: From the Azure portal, navigate to your existing Connected Cache Resource. Under "Cache Node Management" section on the leftmost panel, click on "Cache Nodes". Select one of your existing Cache Nodes and click on the "Download Installer" button. 
+1. Navigate to the Azure portal to download the installer. Detailed steps on how to download: From the Azure portal, navigate to your existing Connected Cache Resource. Under "Cache Node Management" section on the leftmost panel, select "Cache Nodes". Select one of your existing Cache Nodes and select the "Download Installer" button. 
 
 ![iMCC img18](images/imcc18.png)
 
@@ -387,7 +387,7 @@ Use this method if you already have a MCC that is active and running.
 
 ![iMCC img54](images/imcc54.png)
 
-4. Log in with your Azure credentials using the Device Login Code.
+4. Sign in with your Azure credentials using the Device Log In Code.
 
 5. Continue with **Method 2** to finish configuring your MCC with BGP Routing.
 
@@ -399,11 +399,11 @@ Use this method if you already have a MCC that is active and running.
     c. Enter the ASN corresponding to that neighbor (this should be the same ASN as the MCC -iBGP connection)
     d. Repeat steps 1.b and 1.c for each neighbor you would like to configure
 
-**Note:** With the BGP configuration, you are essentially setting up an iBGP neighbor in your public ASN. For example, when you initiate the BGP session from the router to the cache node, you would use your own ASN. 
+**Note:** With the BGP configuration, you're essentially setting up an iBGP neighbor in your public ASN. For example, when you initiate the BGP session from the router to the cache node, you would use your own ASN. 
 
-2. BGP is now configured from the MCC side. From your end, please establish a neighborship from your router to MCC's host machine (use the IP address of the host machine that is running the MCC container)
-    a. Please ensure there aren't any firewall rules blocking this connection
-    b. Verify that the BGP connection has been established and that you are advertising routes to the MCC
+2. BGP is now configured from the MCC side. From your end, establish a neighborship from your router to MCC's host machine (use the IP address of the host machine that is running the MCC container)
+    a. Ensure there aren't any firewall rules blocking this connection
+    b. Verify that the BGP connection has been established and that you're advertising routes to the MCC
     c. Wait 5 minutes to refresh the cache node page in the Azure portal to see the BGP routes
 
 3. Confirm the update is complete by running the following command. Ensure MCC is running on **1.2.1.1070**. If you only see **edgeAgent** and **edgeHub**, wait 5 minutes and run this command again.
@@ -477,7 +477,7 @@ Follow the steps below to configure the device to work with your DNS:
     sudo chmod 555 /etc/docker/daemon.json​
     ```
 
-6.  Restart Docker (to pick up the new DNS) and restart IoTEdge  
+6.  Restart Docker (to pick up the new DNS) and restart IoT Edge  
     
     ```bash
     sudo systemctl restart dockersudo systemctl daemon-reloadsudo restart IoTEdge
@@ -485,7 +485,7 @@ Follow the steps below to configure the device to work with your DNS:
 
 ## Diagnostics Script
 
-If you're having issues with your MCC, we included a diagnostics script which will collect all your logs and zip them into a single file. You can then send us these logs via email for the MCC team to debug.
+If you're having issues with your MCC, we included a diagnostics script, which will collect all your logs and zip them into a single file. You can then send us these logs via email for the MCC team to debug.
 
 To run this script:
 
@@ -505,7 +505,7 @@ To run this script:
 
 ## Updating your MCC
 
-Throughout the private preview phase, we will send you security and feature updates for MCC. Please follow these steps to perform the update.
+Throughout the private preview phase, we'll send you security and feature updates for MCC. Follow these steps to perform the update.
 
 Run the following commands with the **arguments** we provided in the email to update your MCC:
 
@@ -522,7 +522,7 @@ sudo ./updatemcc.sh version="msconnectedcacheprod.azurecr.io/mcc/linux/iot/mcc-u
 
 ## Uninstalling MCC
 
-In the zip file, you'll find the file **uninstallmcc.sh** which uninstalls MCC and all the related components. Please contact the MCC Team before running this script and only run this script if you're facing issues with MCC installation. **Exercise caution before running this script as existing IoT workflows in this VM will also be erased.**
+In the zip file, you'll find the file **uninstallmcc.sh** which uninstalls MCC and all the related components. Contact the MCC Team before running this script and only run this script if you're facing issues with MCC installation. **Exercise caution before running this script as existing IoT workflows in this VM will also be erased.**
 
 The **uninstallmcc.sh** script will remove the following:
 
@@ -544,15 +544,15 @@ sudo ./uninstallmcc.sh
 ### Steps to obtain an Azure Subscription ID
 
 1. Sign in to https://portal.azure.com/ and navigate to the Azure services section.
-2. Click on **Subscriptions**. If you don't see **Subscriptions**, click on the **More Services** arrow and search for **Subscriptions**. 
+2. Select **Subscriptions**. If you don't see **Subscriptions**, select the **More Services** arrow and search for **Subscriptions**. 
 3. If you already have an Azure Subscription, skip to step 5. If you don't have an Azure Subscription, select **+ Add** on the top left. 
 4. Select the **Pay-As-You-Go** subscription. You'll be asked to enter credit card information, but you'll not be charged for using the MCC service. 
-5. On the **Subscriptions** blade, you'll find details about your current subscription. Click on the subscription name. 
-6. After you select the subscription name, you'll find the subscription ID in the **Overview** tab. Click on the **Copy to clipboard** icon next to your Subscription ID to copy the value. 
+5. On the **Subscriptions** section, you'll find details about your current subscription. Select the subscription name. 
+6. After you select the subscription name, you'll find the subscription ID in the **Overview** tab. Select the **Copy to clipboard** icon next to your Subscription ID to copy the value. 
 
 ### Performance of MCC in VM/Hypervisor environments
 
-We have observed in hypervisor environments the cache server peak egress at around 1.1 Gbps. If you wish to maximize the egress in hypervisor environments, it is critical to make two settings changes.
+We've observed in hypervisor environments the cache server peak egress at around 1.1 Gbps. If you wish to maximize the egress in hypervisor environments, it's critical to make two settings changes.
 
 1. Enable **SR-IOV** in the BIOS AND enable **SR-IOV** in the NIC properties. Finally, enable **SR-IOV** in the hypervisors for the MCC VM. Microsoft has found these settings to double egress when using a Microsoft Hyper-V deployment.
 
@@ -560,7 +560,7 @@ We have observed in hypervisor environments the cache server peak egress at arou
 
 ### Grant Other Users Access to Manage Your MCC
 
-More users can be given access to manage Microsoft Connected Cache, even if they don't have an Azure account. Once the first cache node has been created on the portal, other users can be added as "Wwners" of the Microsoft Connected Cache resource group AND the Microsoft Connected Cache resource. 
+More users can be given access to manage Microsoft Connected Cache, even if they don't have an Azure account. Once the first cache node has been created on the portal, other users can be added as "Owners" of the Microsoft Connected Cache resource group AND the Microsoft Connected Cache resource. 
 
 [Follow these instructions](https://docs.microsoft.com/en-us/azure/role-based-access-control/quickstart-assign-role-user-portal) to add other users as owners of the Microsoft Connected Cache resource and Microsoft Connected Cache resource group. 
 
@@ -587,7 +587,7 @@ You can use hardware that will natively run Ubuntu 20.04 LTS, or you can run an 
     
     ![iMCC img35](images/imcc35.png)
 
-5.  Set the virtual hard disk parameters. You should specify enough space for the OS and the content that will be cached. That example below allocates one terabyte.  
+5.  Set the virtual hard disk parameters. You should specify enough space for the OS and the content that will be cached. That example below allocates 1 terabyte.  
     
     ![iMCC img36](images/imcc36.png)
 
@@ -645,7 +645,7 @@ The Azure IoT Edge runtime enables custom and cloud logic on IoT Edge devices. T
     monitoring.
 -   Manages communication between an IoT Edge device and the cloud.
 
-For more information on Azure IoT Edge, please see the [Azure IoT Edge documentation](/azure/iot-edge/about-iot-edge).
+For more information on Azure IoT Edge, see the [Azure IoT Edge documentation](/azure/iot-edge/about-iot-edge).
 
 ## Also see
 
