@@ -2,9 +2,6 @@
 title: App-V Security Considerations (Windows 10/11)
 description: Learn about accounts and groups, log files, and other security-related considerations for Microsoft Application Virtualization (App-V).
 author: aczechowski
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 04/16/2018
 ms.reviewer: 
@@ -12,11 +9,12 @@ manager: dougeby
 ms.author: aaroncz
 ms.topic: article
 ---
+
 # App-V security considerations
 
 [!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
-This topic contains a brief overview of the accounts and groups, log files, and other security-related considerations for Microsoft Application Virtualization (App-V).
+This article contains a brief overview of the accounts and groups, log files, and other security-related considerations for Microsoft Application Virtualization (App-V).
 
 >[!IMPORTANT]
 >App-V isn't a security product and doesn't provide any guarantees for a secure environment.
@@ -70,6 +68,6 @@ The following information will help you plan how to ensure that virtualized pack
 
 During App-V setup, setup log files are created in the **%temp%** folder of the installing user.
 
-## Related topics
+## Related articles
 
 [Preparing Your Environment for App-V](appv-preparing-your-environment.md)

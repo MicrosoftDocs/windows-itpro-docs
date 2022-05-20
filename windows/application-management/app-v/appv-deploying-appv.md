@@ -2,9 +2,6 @@
 title: Deploying App-V (Windows 10/11)
 description: App-V supports several different deployment options. Learn how to complete App-V deployment at different stages in your App-V deployment.
 author: aczechowski
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
@@ -12,11 +9,12 @@ manager: dougeby
 ms.author: aaroncz
 ms.topic: article
 ---
+
 # Deploying App-V for Windows client
 
 [!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
-App-V supports several different deployment options. Review this topic for information about the tasks that you must complete at different stages in your deployment.
+App-V supports several different deployment options. Review this article for information about the tasks that you must complete at different stages in your deployment.
 
 ## App-V Deployment Information
 

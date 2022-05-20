@@ -14,6 +14,15 @@ ms.date: 03/27/2020
 
 # DevDetail CSP
 
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+
 The DevDetail configuration service provider handles the management object that provides device-specific parameters to the OMA DM server. These device parameters can be queried by servers using OMA DM commands. They aren't sent from the client to the server automatically.
 
 > [!NOTE]

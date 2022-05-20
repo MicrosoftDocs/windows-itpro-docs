@@ -2,9 +2,6 @@
 title: App-V Prerequisites (Windows 10/11)
 description: Learn about the prerequisites you need before you begin installing Application Virtualization (App-V).
 author: aczechowski
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
@@ -161,7 +158,7 @@ What to know before installing the prerequisites:
 |[Windows PowerShell 3.0](https://www.microsoft.com/download/details.aspx?id=34595)|Installing Windows PowerShell 3.0 requires a restart.|
 |[KB2533623](https://support.microsoft.com/kb/2533623)|Applies to Windows 7 only: download and install the KB.|
 
-## Related topics
+## Related articles
 
 * [Planning for App-V](appv-planning-for-appv.md)
 * [App-V Supported Configurations](appv-supported-configurations.md)
