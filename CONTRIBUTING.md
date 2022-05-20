@@ -23,16 +23,13 @@ We've tried to make editing an existing, public file as simple as possible.
 
     ![Microsoft Docs Web, showing the Edit This Document link.](images/contribute-link.png)
 
-    If the pencil icon isn't present, it might mean the content isn't open to public contributions. Some pages are generated (for example, from inline documentation in code) and must be edited in the project they belong to.
+    If the pencil icon isn't present, the content might not be open to public contributions. Some pages are generated (for example, from inline documentation in code) and must be edited in the project they belong to. This isn't always the case and you might be able to find the documentation by searching the [Microsoft Docs Organization on GitHub](https://github.com/MicrosoftDocs).
 
-2. In GitHub, select the **Pencil** icon to edit the article. If the pencil icon is grayed out, you need to either log in to your GitHub account or create a new account.
+2. In GitHub, select the **Pencil** icon to edit the article. If the pencil icon is grayed out, you need to either sign in to your GitHub account or create a new account.
 
     ![GitHub Web, showing the Pencil icon.](images/pencil-icon.png)
 
-3. Using Markdown language, make your changes to the file. For info about how to edit content using Markdown, see:
-
-    - **If you're linked to the Microsoft organization in GitHub:** [Windows authoring guide](https://aka.ms/WindowsAuthoring)
-    - **If you're external to Microsoft:** [Microsoft Docs Markdown reference](https://docs.microsoft.com/contribute/markdown-reference), [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+3. Using Markdown language, make your changes to the file. For info about how to edit content using Markdown, see the [Microsoft Docs Markdown reference](https://docs.microsoft.com/contribute/markdown-reference) and GitHub's [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) documentation.
 
 4. Make your suggested change, and then select **Preview changes** to make sure it looks correct.
 
@@ -52,15 +49,11 @@ We've tried to make editing an existing, public file as simple as possible.
 
     The pull request is sent to the writer of the topic and your edits are reviewed. If your request is accepted, updates are published to their respective article. This repository contains articles on some of the following topics:
 
-    - [Windows client documentation for IT Pros](https://docs.microsoft.com/windows/)
-    - [Surface](https://docs.microsoft.com/surface)
-    - [Surface Hub](https://docs.microsoft.com/surface-hub)
-    - [HoloLens](https://docs.microsoft.com/hololens)
+    - [Windows client documentation for IT Pros](https://docs.microsoft.com/windows/resources/)
     - [Microsoft Store](https://docs.microsoft.com/microsoft-store)
     - [Windows 10 for Education](https://docs.microsoft.com/education/windows)
     - [Windows 10 for SMB](https://docs.microsoft.com/windows/smb)
     - [Internet Explorer 11](https://docs.microsoft.com/internet-explorer/)
-    - [Microsoft Desktop Optimization Pack](https://docs.microsoft.com/microsoft-desktop-optimization-pack)
 
 ## Making more substantial changes
 
