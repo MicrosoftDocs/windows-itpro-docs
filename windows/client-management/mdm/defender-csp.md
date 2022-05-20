@@ -363,7 +363,7 @@ Network Protection inspects DNS traffic that occurs over a UDP channel, to provi
 
 <a href="" id="enablenetworkprotection-disablehttpparsing"></a>**EnableNetworkProtection/DisableHttpParsing**
 
-Network Protection inspects HTTP traffic to see if a connection is being made to a malicious website, and to provide metadata to Behavior Monitoring. HTTP connections to malicious websites can also be blocked if -EnableNetworkProtection is set to enabled. HTTP inspection can be disabled by setting this value to "$true".
+Network Protection inspects HTTP traffic to see if a connection is being made to a malicious website, and to provide metadata to Behavior Monitoring. HTTP connections to malicious websites can also be blocked if Enable Network Protection is set to enabled. HTTP inspection can be disabled by setting this value to "$true".
 
 - Type: Boolean
 - Position: Named
@@ -373,7 +373,7 @@ Network Protection inspects HTTP traffic to see if a connection is being made to
 
 <a href="" id="enablenetworkprotection-disablerdpparsing"></a>**EnableNetworkProtection/DisableRdpParsing**
 
-Network Protection inspects RDP traffic so that it can block connections from known malicious hosts if -EnableNetworkProtection is set to be enabled, and to provide metadata to behavior monitoring. RDP inspection can be disabled by setting this value to "$true".
+Network Protection inspects RDP traffic so that it can block connections from known malicious hosts if Enable Network Protection is set to be enabled, and to provide metadata to behavior monitoring. RDP inspection can be disabled by setting this value to "$true".
 
 - Type: Boolean
 - Position: Named
@@ -383,7 +383,7 @@ Network Protection inspects RDP traffic so that it can block connections from kn
 
 <a href="" id="enablenetworkprotection-disablesshparsing"></a>**EnableNetworkProtection/DisableSshParsing**
 
-Network Protection inspects SSH traffic, so that it can block connections from known malicious hosts. If -EnableNetworkProtection is set to be enabled, and to provide metadata to behavior monitoring. SSH inspection can be disabled by setting this value to "$true".
+Network Protection inspects SSH traffic, so that it can block connections from known malicious hosts. If Enable Network Protection is set to be enabled, and to provide metadata to behavior monitoring. SSH inspection can be disabled by setting this value to "$true".
 
 - Type: Boolean
 - Position: Named
@@ -393,7 +393,7 @@ Network Protection inspects SSH traffic, so that it can block connections from k
 
 <a href="" id="enablenetworkprotection-disabletlsparsing"></a>**EnableNetworkProtection/DisableTlsParsing**
 
-Network Protection inspects TLS traffic (also known as HTTPS traffic) to see if a connection is being made to a malicious website, and to provide metadata to Behavior Monitoring. TLS connections to malicious websites can also be blocked if -EnableNetworkProtection is set to enabled. HTTP inspection can be disabled by setting this value to "$true".
+Network Protection inspects TLS traffic (also known as HTTPS traffic) to see if a connection is being made to a malicious website, and to provide metadata to Behavior Monitoring. TLS connections to malicious websites can also be blocked if Enable Network Protection is set to enabled. HTTP inspection can be disabled by setting this value to "$true".
 
 - Type: Boolean
 - Position: Named
@@ -726,7 +726,7 @@ Intune Support log location setting UX supports three states:
 - 1 - Enabled. Enables the Support log location feature. Requires admin to set custom file path.
 - 0 - Disabled. Turns off the Support log location feature. 
 
-When enabled or disabled exists on the client and admin moves the setting to be configured not , it won't have any impact on the device state. To change the state to either enabled or disabled would require to be set explicitly.  
+When enabled or disabled exists on the client and admin moves the setting to not configured, it won't have any impact on the device state. To change the state to either enabled or disabled would require to be set explicitly.  
 
 More details:  
 

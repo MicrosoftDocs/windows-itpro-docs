@@ -60,7 +60,7 @@ Uefi
 ```
 The following list describes the characteristics and parameters.
 
-<a href="" id="uefi"></a>**./Vendor/MSFT/Uefi**  
+<a href="" id="uefi"></a>**./Vendor/MSFT/UEFI**  
 Root node.
 
 <a href="" id="deviceidentifier"></a>**DeviceIdentifier**  
@@ -89,7 +89,7 @@ Retrieves the binary result package of the previous Identity/Apply operation.
 Supported operation is Get.
 
 <a href="" id="permissions"></a>**Permissions**  
-Node for settings permission operations..
+Node for settings permission operations.
 
 <a href="" id="permissions-current"></a>**Permissions/Current**  
 Retrieves XML from UEFI that describes the current UEFI settings permissions.

@@ -321,7 +321,7 @@ Invitations to collaborate from the Whiteboard app aren't allowed.
 
 <a href="" id="inboxapps-whiteboard-signindisabled"></a>**InBoxApps/Whiteboard/SigninDisabled**
 
-Sign-in from the Whiteboard app aren't allowed.
+Sign-ins from the Whiteboard app aren't allowed.
 
 - The data type is boolean. 
 - Supported operation is Get and Replace.

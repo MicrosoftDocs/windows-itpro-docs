@@ -102,7 +102,7 @@ Added in Windows 10, version 2004. Optional. Determines the full version (X.Y.Z 
 <a href="" id="mccmncpairs"></a>**MCCMNCPairs**  
 Required. List all of the MCC and MNC pairs owned by the mobile operator. This list is used to verify that the UICC matches the network and SUPL can be used. When the UICC and network don't match, the device uses the default location service and doesn't use SUPL.
 
-This value is a string with the format "(X1, Y1)(X2, Y2)…(Xn, Yn)", in which `X` is an MCC and `Y` is an MNC.
+This value is a string with the format `(X1, Y1)(X2, Y2)…(Xn, Yn)`, in which `X` is an MCC and `Y` is an MNC.
 
 For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
 
