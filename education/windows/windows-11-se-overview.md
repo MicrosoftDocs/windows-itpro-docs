@@ -52,6 +52,7 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 |DRC INSIGHT Online Assessments	        |12.0.0.0  |Store    |Data recognition Corporation|
 |Duo from Cisco	                        |2.25.0     |Win32    |Cisco|
 |e-Speaking Voice and Speech recognition	|4.4.0.8 |Win32   |e-speaking|
+|eTests                                 |4.0.25    |Win32   |CASAS|
 |FortiClient	                        |7.0.1.0083	|Win32    |Fortinet|
 |Free NaturalReader	                    |16.1.2	    |Win32    |Natural Soft|
 |GoGuardian	                            |1.4.4	   |Win32     |GoGuardian|
