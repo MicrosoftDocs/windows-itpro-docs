@@ -562,7 +562,7 @@ We've observed in hypervisor environments the cache server peak egress at around
 
 More users can be given access to manage Microsoft Connected Cache, even if they don't have an Azure account. Once the first cache node has been created on the portal, other users can be added as "Owners" of the Microsoft Connected Cache resource group AND the Microsoft Connected Cache resource. 
 
-[Follow these instructions](https://docs.microsoft.com/en-us/azure/role-based-access-control/quickstart-assign-role-user-portal) to add other users as owners of the Microsoft Connected Cache resource and Microsoft Connected Cache resource group. 
+[Follow these instructions](/azure/role-based-access-control/quickstart-assign-role-user-portal) to add other users as owners of the Microsoft Connected Cache resource and Microsoft Connected Cache resource group. 
 
 ### Setting up a VM on Windows Server
 
