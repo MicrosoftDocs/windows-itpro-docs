@@ -264,18 +264,18 @@ ADMX Info:
 
 <!--Description-->
 
-This policy allows to configure folders that the user can enumerate and access in the File Explorer.
+This policy configures the folders that the user can enumerate and access in the File Explorer.
 
 <!--/Description-->
 
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0: all folders
-- 15:Desktop, Documents, Pictures, Downloads
-- 31:Desktop, Documents, Pictures, Downloads, Network
-- 47:This PC (local drive), [Desktop, Documents, Pictures], Downloads
-- 63:This PC , [Desktop, Documents, Pictures], Downloads, Network
+- 0: All folders
+- 15:Desktop, Documents, Pictures, and Downloads
+- 31:Desktop, Documents, Pictures, Downloads, and Network
+- 47:This PC (local drive), [Desktop, Documents, Pictures], and Downloads
+- 63:This PC, [Desktop, Documents, Pictures], Downloads, and Network
 
 <!--/SupportedValues-->
 
@@ -319,7 +319,7 @@ ADMX Info:
 
 <!--Description-->
 
-This policy allows to configure folders that the user can enumerate and access in the File Explorer.
+This policy configures the folders that the user can enumerate and access in the File Explorer.
 
 <!--/Description-->
 
