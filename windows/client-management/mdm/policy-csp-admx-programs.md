@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_Programs
-description: Policy CSP - ADMX_Programs
+description: Learn about Policy CSP - ADMX_Programs.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -13,6 +13,7 @@ manager: dansimp
 ---
 
 # Policy CSP - ADMX_Programs
+
 >[!TIP]
 > These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 > 
@@ -82,14 +83,13 @@ This setting removes the Set Program Access and Defaults page from the Programs 
 
 The Set Program Access and Computer Defaults page allows administrators to specify default programs for certain activities, such as Web browsing or sending e-mail, as well as specify the programs that are accessible from the Start menu, desktop, and other locations.
 
-If this setting is disabled or not configured, the Set Program Access and Defaults button is available to all users.
+If this setting is disabled or not configured, the "Set Program Access and Defaults" button is available to all users.
 
 This setting doesn't prevent users from using other tools and methods to change program access or defaults.
 
 This setting doesn't prevent the Default Programs icon from appearing on the Start menu.
 
 <!--/Description-->
-
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -400,3 +400,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

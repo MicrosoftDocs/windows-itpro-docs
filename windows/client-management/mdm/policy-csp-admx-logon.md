@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_Logon
-description: Policy CSP - ADMX_Logon
+description: Learn about Policy CSP - ADMX_Logon.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -13,6 +13,7 @@ manager: dansimp
 ---
 
 # Policy CSP - ADMX_Logon
+
 >[!TIP]
 > These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 > 
@@ -102,14 +103,13 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy prevents the user from showing account details (email address or user name) on the sign-in screen. 
+This policy prevents the user from showing account details (email address or user name) on the sign-in screen.
 
 If you enable this policy setting, the user can't choose to show account details on the sign-in screen.
 
 If you disable or don't configure this policy setting, the user may choose to show account details on the sign-in screen.
 
 <!--/Description-->
-
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -710,7 +710,7 @@ ADMX Info:
 <!--Description-->
 This policy setting determines whether Group Policy processing is synchronous (that is, whether computers wait for the network to be fully initialized during computer startup and user sign in). By default, on client computers, Group Policy processing isn't synchronous; client computers typically don't wait for the network to be fully initialized at startup and sign in. Existing users are signed in using cached credentials, which results in shorter sign-in times. Group Policy is applied in the background after the network becomes available.
 
-Because this process (of applying Group Policy) is a background refresh, extensions such as Software Installation and Folder Redirection take two sign-ins to apply changes. To be able to operate safely, these extensions require that no users be signed in. Therefore, they must be processed in the foreground before users are actively using the computer. In addition, changes that are made to the user object, such as adding a roaming profile path, home directory, or user object logon script, may take up to two sign-ins to be detected.
+Because this process (of applying Group Policy) is a background refresh, extensions such as Software Installation and Folder Redirection take two sign-ins to apply changes. To be able to operate safely, these extensions require that no users be signed in. Therefore, they must be processed in the foreground before users are actively using the computer. In addition, changes that are made to the user object, such as adding a roaming profile path, home directory, or user object logon script may take up to two sign-ins to be detected.
 
 If a user with a roaming profile, home directory, or user object logon script signs in to a computer, computers always wait for the network to be initialized before signing in the user. If a user has never signed in to this computer before, computers always wait for the network to be initialized.
 
@@ -847,3 +847,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

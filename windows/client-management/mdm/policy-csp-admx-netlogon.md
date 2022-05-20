@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_Netlogon
-description: Policy CSP - ADMX_Netlogon
+description: Learn about Policy CSP - ADMX_Netlogon.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -13,6 +13,7 @@ manager: dansimp
 ---
 
 # Policy CSP - ADMX_Netlogon
+
 >[!TIP]
 > These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 > 
@@ -228,7 +229,6 @@ If you don't configure this policy setting, DC Locator APIs can return IPv4/IPv6
 
 <!--/Description-->
 
-
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP Friendly name: *Return domain controller address type*
@@ -268,13 +268,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting specifies whether the computers to which this setting is applied attempts DNS name resolution of single-label domain names, by appending different registered DNS suffixes, and uses NetBIOS name resolution only if DNS name resolution fails. This policy, including the specified default behavior, isn't used if the AllowSingleLabelDnsDomain policy setting is enabled.
+This policy setting specifies whether the computers to which this setting is applied attempts DNS name resolution of single-label domain names, by appending different registered DNS suffixes, and uses NetBIOS name resolution only if DNS name resolution fails. This policy, including the specified default behavior, isn't used if the `AllowSingleLabelDnsDomain` policy setting is enabled.
 
-By default, when no setting is specified for this policy, the behavior is the same as explicitly enabling this policy, unless the AllowSingleLabelDnsDomain policy setting is enabled.
+By default, when no setting is specified for this policy, the behavior is the same as explicitly enabling this policy, unless the `AllowSingleLabelDnsDomain` policy setting is enabled.
 
-If you enable this policy setting, when the AllowSingleLabelDnsDomain policy isn't enabled, computers to which this policy is applied, will locate a domain controller hosting an Active Directory domain specified with a single-label name, by appending different registered DNS suffixes to perform DNS name resolution. The single-label name isn't used without appending DNS suffixes unless the computer is joined to a domain that has a single-label DNS name in the Active Directory forest. NetBIOS name resolution is performed on the single-label name only, if DNS resolution fails.
+If you enable this policy setting, when the `AllowSingleLabelDnsDomain` policy isn't enabled, computers to which this policy is applied, will locate a domain controller hosting an Active Directory domain specified with a single-label name, by appending different registered DNS suffixes to perform DNS name resolution. The single-label name isn't used without appending DNS suffixes unless the computer is joined to a domain that has a single-label DNS name in the Active Directory forest. NetBIOS name resolution is performed on the single-label name only, if DNS resolution fails.
 
-If you disable this policy setting, when the AllowSingleLabelDnsDomain policy isn't enabled, computers to which this policy is applied, will only use NetBIOS name resolution to attempt to locate a domain controller hosting an Active Directory domain specified with a single-label name. The computers won't attempt DNS name resolution in this case, unless the computer is searching for a domain with a single label DNS name to which this computer is joined, in the Active Directory forest.
+If you disable this policy setting, when the `AllowSingleLabelDnsDomain` policy isn't enabled, computers to which this policy is applied, will only use NetBIOS name resolution to attempt to locate a domain controller hosting an Active Directory domain specified with a single-label name. The computers won't attempt DNS name resolution in this case, unless the computer is searching for a domain with a single label DNS name to which this computer is joined, in the Active Directory forest.
 
 <!--/Description-->
 
@@ -372,11 +372,11 @@ ADMX Info:
 <!--Description-->
 This policy setting specifies whether the computers to which this setting is applied attempt DNS name resolution of a single-label domain name.
 
-By default, the behavior specified in the AllowDnsSuffixSearch is used. If the AllowDnsSuffixSearch policy is disabled, then NetBIOS name resolution is used exclusively, to locate a domain controller hosting an Active Directory domain specified with a single-label name.
+By default, the behavior specified in the `AllowDnsSuffixSearch` is used. If the `AllowDnsSuffixSearch` policy is disabled, then NetBIOS name resolution is used exclusively, to locate a domain controller hosting an Active Directory domain specified with a single-label name.
 
 If you enable this policy setting, computers to which this policy is applied will attempt to locate a domain controller hosting an Active Directory domain specified with a single-label name using DNS name resolution.
 
-If you disable this policy setting, computers to which this setting is applied will use the AllowDnsSuffixSearch policy, if it isn't disabled or perform NetBIOS name resolution otherwise, to attempt to locate a domain controller that hosts an Active Directory domain specified with a single-label name. the computers won't the DNS name resolution in this case, unless the computer is searching for a domain with a single label DNS name that exists in the Active Directory forest to which this computer is joined.
+If you disable this policy setting, computers to which this setting is applied will use the `AllowDnsSuffixSearch` policy, if it isn't disabled or perform NetBIOS name resolution otherwise, to attempt to locate a domain controller that hosts an Active Directory domain specified with a single-label name. The computers won't use the DNS name resolution in this case, unless the computer is searching for a domain with a single label DNS name that exists in the Active Directory forest to which this computer is joined.
 
 If you don't configure this policy setting, it isn't applied to any computers, and computers use their local configuration.
 
@@ -1065,7 +1065,7 @@ ADMX Info:
 <!--Description-->
 This policy setting specifies the extra time for the computer to wait for the domain controller’s (DC) response when logging on to the network.
 
-To specify the expected dial-up delay at sign in, click Enabled, and then enter the desired value in seconds (for example, the value "60" is 1 minute).
+To specify the expected dial-up delay at sign-in, click Enabled, and then enter the desired value in seconds (for example, the value "60" is 1 minute).
 
 If you don't configure this policy setting, it isn't applied to any computers, and computers use their local configuration.
 
@@ -1163,7 +1163,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting specifies the sites for which the global catalogs (GC) should register site-specific GC locator DNS SRV resource records. These records are registered in addition to the site-specific SRV records registered for the site where the GC resides, and records registered by a GC configured to register GC Locator DNS SRV records for those sites without a GC that are closest to it. 
+This policy setting specifies the sites for which the global catalogs (GC) should register site-specific GC locator DNS SRV resource records. The records are registered in addition to the site-specific SRV records registered for the site where the GC resides, and records registered by a GC configured to register GC Locator DNS SRV records for those sites without a GC that are closest to it. 
 
 The GC Locator DNS records and the site-specific SRV records are dynamically registered by the Net Logon service, and they're used to locate the GC. An Active Directory site is one or more well-connected TCP/IP subnets that allow administrators to configure Active Directory access and replication. A GC is a domain controller that contains a partial replica of every domain in Active Directory.
 
@@ -1466,7 +1466,7 @@ ADMX Info:
 <!--Description-->
 This policy setting specifies the amount of time (in seconds) the DC locator remembers that a domain controller (DC) couldn't be found in a domain. When a subsequent attempt to locate the DC occurs within the time set in this setting, DC Discovery immediately fails, without attempting to find the DC.
 
-The default value for this setting is 45 seconds. The maximum value for this setting is 7 days (7*24*60*60). The minimum value for this setting is 0.
+The default value for this setting is 45 seconds. The maximum value for this setting is seven days (7*24*60*60). The minimum value for this setting is 0.
 
 > [!WARNING]
 > If the value for this setting is too large, a client won't attempt to find any DCs that were initially unavailable. If the value for this setting is too small, clients will attempt to find DCs even when none are available.
@@ -1955,3 +1955,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

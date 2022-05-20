@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_Printing
-description: Policy CSP - ADMX_Printing
+description: Learn about Policy CSP - ADMX_Printing.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -13,6 +13,7 @@ manager: dansimp
 ---
 
 # Policy CSP - ADMX_Printing
+
 >[!TIP]
 > These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 > 
@@ -249,7 +250,8 @@ If you enable this policy setting, you replace the "Get help with printing" defa
 If you disable this setting or don't configure it, or if you don't enter an alternate Internet address, the default link will appear in the Printers folder.
 
 > [!NOTE]
-> Web pages links only appear in the Printers folder when Web view is enabled. If Web view is disabled, the setting has no effect. (To enable Web view, open the Printers folder, and, on the Tools menu, click Folder Options, click the General tab, and then click "Enable Web content in folders.")
+> Web pages links only appear in the Printers folder when Web view is enabled. If Web view is disabled, the setting has no effect.
+> To enable Web view, open the Printers folder, and, on the Tools menu, click Folder Options, click the General tab, and then click "Enable Web content in folders."
 
 Also, see the "Activate Internet printing" setting in this setting folder and the "Browse a common web site to find printers" setting in User Configuration\Administrative Templates\Control Panel\Printers.
 
@@ -303,9 +305,7 @@ If you disable this policy setting, the client computer will only search the loc
 
 This policy setting isn't configured by default, and the behavior depends on the version of Windows that you're using.
 
-
 <!--/Description-->
-
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -1418,5 +1418,8 @@ ADMX Info:
 <hr/>
 
 
-
 <!--/Policies-->
+
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
