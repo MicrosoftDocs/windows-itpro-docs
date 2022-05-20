@@ -77,7 +77,7 @@ Config Lock is designed to ensure that a Secured-Core PC isn't unintentionally m
 ## FAQ
 
 **Can an IT admins disable Config Lock ?** </br>
-	Yes. IT admins can use MDM to turn off Config Lock.</br>
+	Yes. IT admins can use MDM to turn off Config Lock completely or put it in temporary unlock mode for helpdesk activities.</br>
 
 ### List of locked policies
 

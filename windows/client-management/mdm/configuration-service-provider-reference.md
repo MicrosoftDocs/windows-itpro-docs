@@ -617,18 +617,6 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[Proxy CSP](proxy-csp.md)
-
-<!--StartSKU-->
-
-|Home|Pro|Business|Enterprise|Education|
-|--- |--- |--- |--- |--- |
-|Yes|Yes|Yes|Yes|Yes|
-
-<!--EndSKU-->
-<!--EndCSP-->
-
-<!--StartCSP-->
 [PXLogical CSP](pxlogical-csp.md)
 
 <!--StartSKU-->
@@ -672,18 +660,6 @@ Additional lists:
 |Home|Pro|Business|Enterprise|Education|
 |--- |--- |--- |--- |--- |
 |Yes|Yes|Yes|Yes|Yes|
-
-<!--EndSKU-->
-<!--EndCSP-->
-
-<!--StartCSP-->
-[PolicyManager CSP](policymanager-csp.md)
-
-<!--StartSKU-->
-
-|Home|Pro|Business|Enterprise|Education|
-|--- |--- |--- |--- |--- |
-|No|No|No|No|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -821,6 +797,15 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
+
+[SurfaceHub](surfacehub-csp.md)
+<!--StartSKU-->
+
+<!--EndSKU-->
+<!--EndCSP-->
+
+<!--StartCSP-->
+
 [TenantLockdown CSP](tenantlockdown-csp.md)
 
 <!--StartSKU-->
@@ -905,6 +890,16 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
+
+[W4 Application CSP](w4-application-csp.md)
+<!--StartSKU-->
+
+<!--EndSKU-->
+<!--EndCSP-->
+
+<!--StartCSP-->
+
+
 [WiFi CSP](wifi-csp.md)
 
 <!--StartSKU-->
@@ -988,6 +983,15 @@ Additional lists:
 
 <!--EndSKU-->
 <!--EndCSP-->
+
+
+<!--StartCSP-->
+[w7 Application CSP](w7-application-csp.md)
+<!--StartSKU-->
+
+<!--EndSKU-->
+<!--EndCSP-->
+
 
 <hr/>
 <!--EndCSPs-->
