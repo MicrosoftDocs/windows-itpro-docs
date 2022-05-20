@@ -44,7 +44,8 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 5. In the **Enter the object names to select** text box, type the name of the service account used as an AD DS Connector account and click **OK**.
 6. Click **OK** to return to **Active Directory Users and Computers**.
 
-Note: If your AD has multiple domains in your forest. Your ADConnect accounts needs to be part of "Enterprise Key Admins" group to write the keys across other domain users.
+> [!NOTE]
+> If your Active Directory forest has multiple domains, your ADConnect accounts need to be members of the **Enterprise Key Admins** group. This membership is needed to write the keys to other domain users.
 
 ### Section Review
 
