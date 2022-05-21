@@ -196,7 +196,7 @@ Creating a MCC node is a multi-step process. The first step is to access the MCC
 
 1. On the **Cache Nodes** section, select **Create Cache Node**.
 
-    :::image type="content" source="images/imcc09.png" alt-text="Select the 'Create Cache Node" option.":::
+    :::image type="content" source="images/imcc09.png" alt-text="Select the 'Create Cache Node' option.":::
 
 1. This action opens the **Create Cache Node** page. The only required fields are **Cache Node Name** and **Max Allowable Egress (Mbps)**.
 
@@ -225,7 +225,7 @@ Creating a MCC node is a multi-step process. The first step is to access the MCC
 
 1. Enter the information to create the cache node, and then select **Create**.
 
-    :::image type="content" source="images/imcc12.png" alt-text="Select 'Create" on the Create Cache Node page.":::
+    :::image type="content" source="images/imcc12.png" alt-text="Select 'Create' on the Create Cache Node page.":::
 
 If there are errors, the page gives you guidance on how to correct the errors. For example:
 
@@ -706,7 +706,7 @@ You can use hardware that will natively run Ubuntu 20.04 LTS, or you can run an 
 
 1. Choose the options for installing updates and third party hardware. For example, download updates and install third party software drivers.
 
-    :::image type="content" source="images/imcc44.png" alt-text="Ubuntu install, Keyboard layout page.":::
+    :::image type="content" source="images/imcc44.png" alt-text="Ubuntu install, updates page.":::
 
     <!-- This description doesn't correspond to the screenshot.
     It looks like imcc44 should be for updates, because imcc48 is also for keyboard layout.
