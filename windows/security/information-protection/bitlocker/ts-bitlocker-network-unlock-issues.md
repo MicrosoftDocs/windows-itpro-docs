@@ -12,7 +12,6 @@ manager: kaushika
 audience: ITPro
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
-ms.date: 10/7/2019
 ms.custom: bitlocker
 ---
 
