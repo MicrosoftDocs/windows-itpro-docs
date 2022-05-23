@@ -85,6 +85,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -131,6 +132,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -177,6 +179,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -226,6 +229,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -275,6 +279,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -328,6 +333,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -381,6 +387,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -427,6 +434,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -473,6 +481,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -530,6 +539,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -584,6 +594,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -637,6 +648,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -691,6 +703,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -755,6 +768,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -801,6 +815,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
