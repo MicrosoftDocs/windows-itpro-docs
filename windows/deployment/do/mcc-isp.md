@@ -23,7 +23,7 @@ _Applies to_
 ## Overview
 
 > [!IMPORTANT]
-> Microsoft Connected Cache is currently a private preview feature. During this phase we invite customers to take part in early access for testing purposes. This phase doesn't include formal support and shouldn't be used for production workloads. For more information, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
+> Microsoft Connected Cache is currently a private preview feature. During this phase we invite customers to take part in early access for testing purposes. This phase doesn't include formal support. Instead, you'll be working directly with the product team to provide feedback on Microsoft Connected Cache. For more information, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
 
 Microsoft Connected Cache (MCC) preview is a software-only caching solution that delivers Microsoft content within operator networks. MCC can be deployed to as many physical servers or VMs as needed and is managed from a cloud portal. Microsoft cloud services handle routing of consumer devices to the cache server for content downloads.
 
@@ -66,12 +66,15 @@ The following steps describe how MCC is provisioned and used:
 
 The MCC management portal is hosted within Azure. It's used to create the Connected Cache Azure resource and IoT Hub resource. Both are _free_ services.
 
+> [!NOTE]
+> If you request Exchange or Public peering in the future, business email addresses must be used to register ASNs. Microsoft doesn't accept Gmail or other non-business email addresses.
+
 Your Azure subscription ID is first used to provision MCC services and enable access to the preview. The MCC server requirement for an Azure subscription will cost you nothing. If you don't have an Azure subscription already, you can create an Azure [Pay-As-You-Go](https://azure.microsoft.com/offers/ms-azr-0003p/) account, which requires a credit card for verification purposes. For more information, see the [Azure free account FAQ](https://azure.microsoft.com/free/free-account-faq/). _Don't submit a trial subscription_ as you'll lose access to your Azure resources after the trial period ends.
 
 The resources used for the preview, and in the future when this product is ready for production, will be free to you - like other caching solutions.
 
-> [!NOTE]
-> If you request Exchange or Public peering in the future, business email addresses must be used to register ASNs. Microsoft doesn't accept Gmail or other non-business email addresses.
+> [!IMPORTANT]
+> To join the Microsoft Connected Cache private preview, provide your Azure subscription ID by filling out [this survey](https://aka.ms/MCCForISPSurvey).
 
 ### Hardware to host the MCC
 
@@ -107,13 +110,11 @@ To deploy MCC:
 
 1. [Provide Microsoft with your Azure subscription ID](#provide-microsoft-with-your-azure-subscription-id)
 2. [Create the MCC Resource in Azure](#create-the-mcc-resource-in-azure)
-3. [Create a MCC Node](#create-a-mcc-node-in-azure)
-4. [Edit Cache Node Information](#edit-cache-node-information)
+3. [Create a Cache Node](#create-a-mcc-node-in-azure)
+4. [Configure Cache Node Routing](#edit-cache-node-information) 
 5. [Install MCC on a physical server or VM](#install-mcc)
 6. [Verify properly functioning MCC server](#verify-properly-functioning-mcc-server)
-7. [Configure BGP Routing](#configure-bgp-routing)
-8. [Review the MCC summary report](#verify-server-side)
-9. [Review common issues if needed](#common-issues)
+7. [Review common issues if needed](#common-issues)
 
 For questions regarding these instructions, contact [msconnectedcache@microsoft.com](mailto:msconnectedcache@microsoft.com).
 
@@ -122,7 +123,7 @@ For questions regarding these instructions, contact [msconnectedcache@microsoft.
 As part of the MCC preview onboarding process, an Azure subscription ID must be provided to Microsoft.
 
 > [!IMPORTANT]
-> If you haven't already, [contact Microsoft](mailto:mccforenterprise@microsoft.com?subject=[MCC%20for%20Enterprise]%20Please%20add%20our%20Azure%20subscription%20to%20the%20allow%20list) and provide your Azure subscription ID. You can't continue if you skip this step.
+> If you haven't already, provide your Azure subscription ID by filling out [this survey](https://aka.ms/MCCForISPSurvey). You can't continue if you skip this step.
 
 For information about creating or locating your subscription ID, see [Steps to obtain an Azure subscription ID](#steps-to-obtain-an-azure-subscription-id).
 
@@ -359,6 +360,43 @@ Before you start, make sure that you have a data drive configured on your server
 
     :::image type="content" source="images/imcc25.png" alt-text="Bash script output with steps for existing IoT Hub.":::
 
+1. If you want to configure BGP, enter `y`. If you want to use manual entered prefixes for routing, enter `n` and skip to Step 16. You can always configure BGP at a later time using the Update Script.
+
+    1. Enter the number of BGP neighbors you want to configure.
+    1. Enter the IP address for the neighbor.
+    1. Enter the ASN corresponding to that neighbor. This value should be the same ASN as the MCC -iBGP connection.
+    1. Repeat these steps for each neighbor you need to configure.
+
+    > [!NOTE]
+    > With the BGP configuration, you're essentially setting up an iBGP neighbor in your public ASN. For example, when you initiate the BGP session from the router to the cache node, you would use your own ASN.
+
+1. BGP is now configured from the MCC side. From your end, establish a neighborship from your router to MCC's host machine. Use the IP address of the host machine that's running the MCC container.
+
+    1. Make sure there aren't any firewall rules blocking this connection.
+    1. Verify that the BGP connection has been established and that you're advertising routes to the MCC.
+    1. Wait five minutes to refresh the cache node page in the Azure portal to see the BGP routes.
+
+1. Confirm the update is complete by running the following command.
+
+    ```bash
+    sudo iotedge list
+    ```
+
+    Make sure MCC is running on the latest version. If you only see **edgeAgent** and **edgeHub**, wait five minutes and run this command again.
+
+1. Make sure MCC is reachable. Replace `<CacheServerIp>` with the IP address of your MCC or localhost.
+
+    ```bash
+    wget http://<CacheServerIP>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com
+    ```
+
+1. After you successfully complete the update, go to the Azure portal. To check the routes being reported, select **Download JSON**.
+
+1. To start routing using BGP, change the **Prefix Source** from **Manually Entered** to **Use BGP**.
+
+    :::image type="content" source="images/imcc55.PNG" alt-text="Cache node configuration with the Prefix Source set to Use BGP.":::
+
+
 1. If there are no errors, go to the next section to verify the MCC server.
 
     If there are errors:
@@ -411,69 +449,6 @@ http://<CacheServerIP>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsup
 
 If the test fails, for more information, see the [common issues](#common-issues) section.
 
-## Configure BGP routing
-
-If you have a MCC that's already active and running, use [Method 1](#method-1-configure-bgp-with-the-update-script) to configure BGP with the update script. If you're installing MCC for the first time, configure BGP routing with [Method 2](#method-2-configure-bgp-during-the-initial-installation).
-
-### Method 1: Configure BGP with the update script
-
-Use this method if you already have a MCC that's active and running.
-
-1. Get the update script from the **mccinstaller.zip** installation file. For more information, see [Steps to install MCC](#steps-to-install-mcc).
-
-1. Run the following commands to give permissions to the update script:
-
-    ```bash
-    sudo chmod +x updatemcc.sh
-    sudo chmod +x installIoTEdge.sh
-    ```
-
-1. In the Azure portal, in the Connected Cache installer instructions, copy the cache node update Bash script command. Run the Bash script from the terminal of the Linux server.
-
-    :::image type="content" source="images/imcc54.png" alt-text="Copy the cache node update Bash script in the Connected Cache installer instructions.":::
-
-1. Sign in with your Azure credentials using the device code.
-
-1. To finish configuring your MCC with BGP routing, continue with [Method 2](#method-2-configure-bgp-during-the-initial-installation).
-
-### Method 2: Configure BGP during the initial installation
-
-1. When the script asks if you want to configure BGP, enter `Y`.
-
-    1. Enter the number of BGP neighbors you want to configure.
-    1. Enter the IP address for the neighbor.
-    1. Enter the ASN corresponding to that neighbor. This value should be the same ASN as the MCC -iBGP connection.
-    1. Repeat these steps for each neighbor you need to configure.
-
-    > [!NOTE]
-    > With the BGP configuration, you're essentially setting up an iBGP neighbor in your public ASN. For example, when you initiate the BGP session from the router to the cache node, you would use your own ASN.
-
-1. BGP is now configured from the MCC side. From your end, establish a neighborship from your router to MCC's host machine. Use the IP address of the host machine that's running the MCC container.
-
-    1. Make sure there aren't any firewall rules blocking this connection.
-    1. Verify that the BGP connection has been established and that you're advertising routes to the MCC.
-    1. Wait five minutes to refresh the cache node page in the Azure portal to see the BGP routes.
-
-1. Confirm the update is complete by running the following command.
-
-    ```bash
-    sudo iotedge list
-    ```
-
-    Make sure MCC is running on `1.2.1.1070`. If you only see **edgeAgent** and **edgeHub**, wait five minutes and run this command again.
-
-1. Make sure MCC is reachable. Replace `<CacheServerIp>` with the IP address of your MCC or localhost.
-
-    ```bash
-    wget http://<CacheServerIP>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com
-    ```
-
-1. After you successfully complete the update, go to the Azure portal. To check the routes being reported, select **Download JSON**.
-
-1. To start routing using BGP, change the **Prefix Source** from **Manually Entered** to **Use BGP**.
-
-    :::image type="content" source="images/imcc55.PNG" alt-text="Cache node configuration with the Prefix Source set to Use BGP.":::
-
 ## Common Issues
 
 > [!NOTE]
@@ -494,8 +469,6 @@ sudo iotedge check --verbose
 ```
 
 If you see issues with ports 5671, 443, and 8883, your IoT Edge device needs to update the DNS for Docker.
-
-![iMCC img29](images/imcc29.png)<!-- this is unreadable - need to pull out the text, then remove this image? -->
 
 To configure the device to work with your DNS, use the following steps:
 
@@ -577,6 +550,16 @@ For example:
 ```bash
 sudo ./updatemcc.sh version="msconnectedcacheprod.azurecr.io/mcc/linux/iot/mcc-ubuntu-iot-amd64:1.2.1.981" tenantid="799a999aa-99a1-99aa-99aa-9a9aa099db99" customerid="99a999aa-99a1-99aa-99aa-9aaa9aaa0saa" cachenodeid=" aa99aaaa-999a-9aas-99aa99daaa99 " customerkey="a99d999a-aaaa-aa99-0999aaaa99aa"
 ```
+
+### Configure BGP on an Existing MCC
+
+If you have a MCC that's already active and running, follow the steps below to configure BGP.
+
+1. Run the Update commands as described above.
+
+1. Sign in with your Azure credentials using the device code.
+
+1. To finish configuring your MCC with BGP routing, continue from Step 10 of [Steps to Install MCC](#steps-to-install-mcc).
 
 ## Uninstalling MCC
 
@@ -701,12 +684,6 @@ You can use hardware that will natively run Ubuntu 20.04 LTS, or you can run an 
     :::image type="content" source="images/imcc43.png" alt-text="Ubuntu install, Welcome page, select language.":::
 
 1. Choose the options for installing updates and third party hardware. For example, download updates and install third party software drivers.
-
-    :::image type="content" source="images/imcc44.png" alt-text="Ubuntu install, updates page.":::
-
-    <!-- This description doesn't correspond to the screenshot.
-    It looks like imcc44 should be for updates, because imcc48 is also for keyboard layout.
-    -->
 
 1. Select **Erase disk and install Ubuntu**. If you had a previous version of Ubuntu installed, we recommend erasing and installing Ubuntu 16.04.
 
