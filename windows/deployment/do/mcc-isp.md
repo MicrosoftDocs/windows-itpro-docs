@@ -75,7 +75,7 @@ The resources used for the preview, and in the future when this product is ready
 
 ### Hardware to host the MCC
 
-This recommended configuration will serve approximately 35,000 consumer devices, downloading a 2-GB payload in a 24-hour timeframe at a sustained rate of 9 Gbps with a 10 Gbps NIC.
+This recommended configuration can egress at a rate of 9 Gbps with a 10 Gbps NIC.
 
 #### Disk requirements
 
@@ -91,7 +91,7 @@ This recommended configuration will serve approximately 35,000 consumer devices,
 
 ### Sizing recommendations
 
-The MCC module is optimized for Ubuntu 20.04 LTS. Install Ubuntu 20.04 LTS on a physical server or VM of your choice. The following recommended configuration will serve approximately 35,000 consumer devices downloading a 2-GB payload in 24-hour timeframe at a sustained rate of 9 Gbps with a 10 Gbps NIC.
+The MCC module is optimized for Ubuntu 20.04 LTS. Install Ubuntu 20.04 LTS on a physical server or VM of your choice. The following recommended configuration can egress at a rate of 9 Gbps with a 10 Gbps NIC.
 
 | Component  | Minimum | Recommended |
 | -- | --- | --- |
@@ -168,13 +168,15 @@ Operators who have been given access to the program will be sent a link to the A
 
     :::image type="content" source="images/imcc06.png" alt-text="'Your deployment is complete' message displaying deployment details.":::
 
-#### Error: Validation failed
+#### Common Resource Creation Errors
+
+##### Error: Validation failed
 
 If you get the error message "Validation failed" in the Azure portal, it's likely because you selected the **Location** as **US West 2** or another unsupported location. To resolve this error, go to the previous step and choose **(US) West US** for the **Location**.
 
 :::image type="content" source="images/imcc07.png" alt-text="'Validation failed' error message for Connected Cache in an unsupported location.":::
 
-#### Error: Could not create Marketplace item
+##### Error: Could not create Marketplace item
 
 If you get the error message "Could not create marketplace item" in the Azure portal, use the following steps to troubleshoot:
 
@@ -185,8 +187,6 @@ If you get the error message "Could not create marketplace item" in the Azure po
 - If the issue persists, clear your browser cache and start in a new window.
 
 ### Create a MCC node in Azure
-
-Creating a MCC node is a multi-step process. The first step is to access the MCC private preview management portal.
 
 1. After you successfully create the resource, select **Go to resource**.
 
@@ -273,7 +273,7 @@ To delete a cache node, select it in the cache nodes list, and then select **Del
 
 To install MCC on your physical server or VM, you use a Bash script installer, which runs the following tasks:
 
-- Azure IoT Edge relies on an OCI-compatible container runtime. The script will install the Moby engine and CLI.
+- Installs the Moby engine and CLI.
 - Installs IoT Edge.
 - Installs SSH to support remote access to the server.
 - Enables the firewall and opens port 80 for inbound and outbound traffic. The MCC uses port 80.
@@ -284,12 +284,12 @@ To install MCC on your physical server or VM, you use a Bash script installer, w
 > [!IMPORTANT]
 > Make sure that the following ports are open so that Microsoft can verify proper functionality of the cache server:
 >
-> - 80
-> - 179
-> - 443
-> - 5000
-> - 5671
-> - 8883
+> - 80: content delivery
+> - 179: BGP session
+> - 443: IoT Edge secure communication
+> - 5000: (optional) used to view locally running report
+> - 5671: IoT Edge communication/container management
+> - 8883: IoT Edge communication/container management
 
 ### Steps to install MCC
 
@@ -301,7 +301,7 @@ Before you start, make sure that you have a data drive configured on your server
 
     Unzip the **mccinstaller.zip** file, which includes the following installation files and folders:
 
-    - Diagnostics folder
+    - Diagnostics folder: Used to create diagnostics support bundle.
     - **installmcc.sh**: Main installer file.
     - **installIotEdge.sh**: Installs the necessary prerequisites. For example, IoT Edge runtime and Docker. It also makes necessary host OS settings to optimize caching performance.
     - **resourceDeploymentForConnectedCache.sh**: Creates Azure cloud resources required to support the MCC control plane.
@@ -311,7 +311,7 @@ Before you start, make sure that you have a data drive configured on your server
     - **uninstallmcc.sh**: Main uninstaller file.
     - **updatemcc.sh**: Main update file.
 
-1. Copy all four installation files to your Linux server.<!-- which four? -->
+1. Copy all files to your Linux server.
 
 1. Open a terminal window. Change the access permissions to execute on the **installmcc.sh** Bash script file using `chmod`.
 
@@ -326,10 +326,6 @@ Before you start, make sure that you have a data drive configured on your server
 1. Sign in to the Azure portal with a device code.
 
     :::image type="content" source="images/imcc20.png" alt-text="Bash script prompt to sign in to the Azure portal with a device code.":::
-
-1. Enter the Azure Container Registry (ACR) password for access to the MCC container.
-
-    :::image type="content" source="images/imcc21.png" alt-text="Bash script prompt to enter the Azure Container Registry password.":::
 
 1. Specify the number of drives to configure. Use an integer value less than 10.
 
@@ -349,7 +345,7 @@ Before you start, make sure that you have a data drive configured on your server
     > - `/`
     > - `<space>`
     >
-    > Specifying any of these locations will corrupt the VM, and you'll need to provision a new one.
+    > Specifying any of these will corrupt the OS, and you'll need to re-install the image again.
 
 1. Specify an integer value as the size in GB for each cache drive. The minimum is `100` GB.
 
@@ -732,12 +728,6 @@ You can use hardware that will natively run Ubuntu 20.04 LTS, or you can run an 
 
     > [!TIP]
     > Everything is case sensitive in Linux.
-
-    <!-- 
-    :::image type="content" source="images/imcc49.png" alt-text="Ubuntu install":::
-    ![iMCC img49](images/imcc49.png)
-
-    imcc49 is also Keyboard layout - is it needed?-->
 
     :::image type="content" source="images/imcc50.png" alt-text="Ubuntu install, 'Who are you' screen.":::
 
