@@ -16,6 +16,16 @@ ms.date: 09/12/2019
 
 The SUPL configuration service provider is used to configure the location client, as shown in the following:
 
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+The SUPL configuration service provider is used to configure the location client, as shown in the following table:
+
 - **Location Service**: Connection type
   - **SUPL**: All connections other than CDMA
   - **V2 UPL**: CDMA
@@ -94,7 +104,7 @@ Added in Windows 10, version 2004. Optional. Determines the full version (X.Y.Z 
 <a href="" id="mccmncpairs"></a>**MCCMNCPairs**  
 Required. List all of the MCC and MNC pairs owned by the mobile operator. This list is used to verify that the UICC matches the network and SUPL can be used. When the UICC and network don't match, the device uses the default location service and doesn't use SUPL.
 
-This value is a string with the format "(X1, Y1)(X2, Y2)…(Xn, Yn)", in which `X` is an MCC and `Y` is an MNC.
+This value is a string with the format `(X1, Y1)(X2, Y2)…(Xn, Yn)`, in which `X` is an MCC and `Y` is an MNC.
 
 For OMA DM, if the format for this node is incorrect then an entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
 
@@ -322,7 +332,7 @@ Adding new configuration information for an H-SLP server for SUPL. Values in ita
 </wap-provisioningdoc>
 ```
 
-Adding a SUPL and a V2 UPL account to the same device. Values in italic must be replaced with correct settings for the mobile operator network. A valid binary blob must be included for the root certificate data value.
+Adding a SUPL and a V2 UPL account to the same device. Values in italic must be replaced with correct settings for the mobile operator network. A valid binary BLOB must be included for the root certificate data value.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -352,7 +362,6 @@ Adding a SUPL and a V2 UPL account to the same device. Values in italic must be 
 ```
 
 ## OMA DM examples
-
 
 Adding a SUPL account to a device. Values in italic must be replaced with correct settings for the mobile operator network. A valid binary blob must be included for the root certificate data value.
 
@@ -427,7 +436,6 @@ Adding a SUPL account to a device. Values in italic must be replaced with correc
 ```
 
 ## Microsoft Custom Elements
-
 
 The following table shows the Microsoft custom elements that this configuration service provider supports for OMA Client Provisioning.
 
