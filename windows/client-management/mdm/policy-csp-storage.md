@@ -14,7 +14,6 @@ manager: dansimp
 
 # Policy CSP - Storage
 
-
 <hr/>
 
 <!--Policies-->
@@ -65,13 +64,13 @@ manager: dansimp
   </dd>
 </dl>
 
-
 <hr/>
 
 <!--Policy-->
 <a href="" id="storage-allowdiskhealthmodelupdates"></a>**Storage/AllowDiskHealthModelUpdates**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -96,7 +95,7 @@ manager: dansimp
 <!--Description-->
 Allows disk health model updates.
 
-Value type is integer.
+Supported value type is integer.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -122,6 +121,7 @@ The following list shows the supported values:
 <a href="" id="storage-allowstoragesenseglobal"></a>**Storage/AllowStorageSenseGlobal**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -131,7 +131,8 @@ The following list shows the supported values:
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
-Note: Versions prior to version 1903 don't support group policy.
+> [!NOTE]
+> Versions prior to version 1903 don't support group policy.
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -146,7 +147,7 @@ Note: Versions prior to version 1903 don't support group policy.
 
 <!--/Scope-->
 <!--Description-->
-Storage Sense can automatically clean some of the user’s files to free up disk space. By default, Storage Sense is automatically turned on when the machine runs into low disk space and is set to run whenever the machine runs into storage pressure. This cadence can be changed in Storage settings or set with the Storage/ConfigStorageSenseGlobalCadence group policy.
+Storage Sense can automatically clean some of the user’s files to free up disk space. By default, Storage Sense is automatically turned on when the machine runs into low disk space, and it is set to run whenever the machine runs into storage pressure. This cadence can be changed in Storage settings or set with the Storage/ConfigStorageSenseGlobalCadence group policy.
 
 If you enable this policy setting without setting a cadence, Storage Sense is turned on for the machine with the default cadence of "during low free disk space." Users can't disable Storage Sense, but they can adjust the cadence (unless you also configure the Storage/ConfigStorageSenseGlobalCadence group policy).
 
@@ -179,6 +180,7 @@ ADMX Info:
 <a href="" id="storage-allowstoragesensetemporaryfilescleanup"></a>**Storage/AllowStorageSenseTemporaryFilesCleanup**  
 
 <!--SupportedSKUs-->
+Versions prior to version 1903 don't support group policy.
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -188,7 +190,8 @@ ADMX Info:
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
-Note: Versions prior to version 1903 don't support group policy.
+> [!NOTE]
+> Versions prior to version 1903 don't support group policy.
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -239,6 +242,7 @@ ADMX Info:
 <a href="" id="storage-configstoragesensecloudcontentdehydrationthreshold"></a>**Storage/ConfigStorageSenseCloudContentDehydrationThreshold**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -248,7 +252,8 @@ ADMX Info:
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
-Note: Versions prior to version 1903 don't support group policy.
+> [!NOTE]
+> Versions prior to version 1903 don't support group policy.
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -299,6 +304,7 @@ ADMX Info:
 <a href="" id="storage-configstoragesensedownloadscleanupthreshold"></a>**Storage/ConfigStorageSenseDownloadsCleanupThreshold**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -308,7 +314,8 @@ ADMX Info:
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
-Note: Versions prior to version 1903 don't support group policy.
+> [!NOTE]
+> Versions prior to version 1903 don't support group policy.
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -359,6 +366,7 @@ ADMX Info:
 <a href="" id="storage-configstoragesenseglobalcadence"></a>**Storage/ConfigStorageSenseGlobalCadence**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -368,7 +376,8 @@ ADMX Info:
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
-Note: Versions prior to version 1903 don't support group policy.
+> [!NOTE]
+> Versions prior to version 1903 don't support group policy.
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -425,6 +434,7 @@ ADMX Info:
 <a href="" id="storage-configstoragesenserecyclebincleanupthreshold"></a>**Storage/ConfigStorageSenseRecycleBinCleanupThreshold**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -434,7 +444,8 @@ ADMX Info:
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
-Note: Versions prior to version 1903 don't support group policy.
+> [!NOTE]
+> Versions prior to version 1903 don't support group policy.
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -485,6 +496,7 @@ ADMX Info:
 <a href="" id="storage-enhancedstoragedevices"></a>**Storage/EnhancedStorageDevices**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -509,17 +521,17 @@ ADMX Info:
 <!--Description-->
 This policy setting configures whether or not Windows will activate an Enhanced Storage device.
 
-If you enable this policy setting, Windows won't activate unactivated Enhanced Storage devices.
+If you enable this policy setting, Windows won't activate un-activated Enhanced Storage devices.
 
-If you disable or don't configure this policy setting, Windows will activate unactivated Enhanced Storage devices.
+If you disable or don't configure this policy setting, Windows will activate un-activated Enhanced Storage devices.
 
 <!--/Description-->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 > 
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 > 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -537,6 +549,7 @@ ADMX Info:
 <a href="" id="storage-removablediskdenywriteaccess"></a>**Storage/RemovableDiskDenyWriteAccess**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -564,7 +577,7 @@ If you enable this policy setting, write access is denied to this removable stor
 > [!Note]
 > To require that users write data to BitLocker-protected storage, enable the policy setting "Deny write access to drives not protected by BitLocker," which is located in "Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption\Removable Data Drives."
 
-Supported values:  
+Supported values for this policy are:  
 -  0 - Disable
 -  1 - Enable
 
@@ -597,6 +610,7 @@ See [Use custom settings for Windows 10 devices in Intune](/intune/custom-settin
 <a href="" id="storage-wpddevicesdenyreadaccessperdevice"></a>**Storage/WPDDevicesDenyReadAccessPerDevice**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -621,16 +635,16 @@ See [Use custom settings for Windows 10 devices in Intune](/intune/custom-settin
 <!--Description-->
 This policy will do the enforcement over the following protocols that are used by most portable devices, for example, mobile/IOS/Android:
 
-- Picture Transfer Protocol (PTP) over USB, IP, and Bluetooth
-- Media Transfer Protocol (MTP) over USB, IP, and Bluetooth
-- Mass Storage Class (MSC) over USB
+- Picture Transfer Protocol (PTP) over USB, IP, and Bluetooth.
+- Media Transfer Protocol (MTP) over USB, IP, and Bluetooth.
+- Mass Storage Class (MSC) over USB.
 
 To enable this policy, the minimum OS requirement is Windows 10, version 1809 and [KB5003217 (OS Build 17763.1971)](https://support.microsoft.com/en-us/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46).
 
 If enabled, this policy will block end-user from Read access on any Windows Portal devices, for example, mobile/iOS/Android.
 
 >[!NOTE]
-> WPD policy is not a reliable policy for removable storage - admin can not use WPD policy to block removable storage, for example, if an end-user is using an USB thumb drive under a WPD policy, the policy may block PTP/MTP/etc, but end-user can still browser the USB via explorer.
+> WPD policy is not a reliable policy for removable storage - admin can not use WPD policy to block removable storage. For example, if an end-user is using an USB thumb drive under a WPD policy, the policy may block PTP/MTP/etc, but end-user can still browse the USB via explorer.
 
 Supported values for this policy are:
 - Not configured
@@ -659,6 +673,7 @@ ADMX Info:
 <a href="" id="storage-wpddevicesdenyreadaccessperuser"></a>**Storage/WPDDevicesDenyReadAccessPerUser**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -683,16 +698,16 @@ ADMX Info:
 <!--Description-->
 This policy will do the enforcement over the following protocols that are used by most portable devices, for example, mobile/IOS/Android:
 
-- Picture Transfer Protocol (PTP) over USB, IP, and Bluetooth
-- Media Transfer Protocol (MTP) over USB, IP, and Bluetooth
-- Mass Storage Class (MSC) over USB
+- Picture Transfer Protocol (PTP) over USB, IP, and Bluetooth.
+- Media Transfer Protocol (MTP) over USB, IP, and Bluetooth.
+- Mass Storage Class (MSC) over USB.
 
 To enable this policy, the minimum OS requirement is Windows 10, version 1809 and [KB5003217 (OS Build 17763.1971)](https://support.microsoft.com/en-us/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46).
 
 If enabled, this policy will block end-user from Read access on any Windows Portal devices, for example, mobile/iOS/Android.
 
 >[!NOTE]
-> WPD policy is not a reliable policy for removable storage - admin can not use WPD policy to block removable storage, e.g. if an end-user is using an USB thumb drive under a WPD policy, the policy may block PTP/MTP/etc, but end-user can still browser the USB via explorer.
+> WPD policy is not a reliable policy for removable storage - admin can not use WPD policy to block removable storage. For example, if an end-user is using an USB thumb drive under a WPD policy, the policy may block PTP/MTP/etc, but end-user can still browse the USB via explorer.
 
 Supported values for this policy are:  
 - Not configured
@@ -721,6 +736,7 @@ ADMX Info:
 <a href="" id="storage-wpddevicesdenywriteaccessperdevice"></a>**Storage/WPDDevicesDenyWriteAccessPerDevice**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -745,16 +761,16 @@ ADMX Info:
 <!--Description-->
 This policy will do the enforcement over the following protocols that are used by most portable devices, for example, mobile/IOS/Android:
 
-- Picture Transfer Protocol (PTP) over USB, IP, and Bluetooth
-- Media Transfer Protocol (MTP) over USB, IP, and Bluetooth
-- Mass Storage Class (MSC) over USB
+- Picture Transfer Protocol (PTP) over USB, IP, and Bluetooth.
+- Media Transfer Protocol (MTP) over USB, IP, and Bluetooth.
+- Mass Storage Class (MSC) over USB.
 
 To enable this policy, the minimum OS requirement is Windows 10, version 1809 and [KB5003217 (OS Build 17763.1971)](https://support.microsoft.com/en-us/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46).
 
 If enabled, this policy will block end-user from Write access on any Windows Portal devices, for example, mobile/iOS/Android.
 
 >[!NOTE]
-> WPD policy is not a reliable policy for removable storage - admin can not use WPD policy to block removable storage, e.g. if an end-user is using an USB thumb drive under a WPD policy, the policy may block PTP/MTP/etc, but end-user can still browser the USB via explorer.
+> WPD policy is not a reliable policy for removable storage - admin can not use WPD policy to block removable storage. For example, if an end-user is using an USB thumb drive under a WPD policy, the policy may block PTP/MTP/etc, but end-user can still browse the USB via explorer.
 
 Supported values for this policy are:  
 - Not configured
@@ -783,6 +799,7 @@ ADMX Info:
 <a href="" id="storage-wpddevicesdenywriteaccessperuser"></a>**Storage/WPDDevicesDenyWriteAccessPerUser**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -807,16 +824,16 @@ ADMX Info:
 <!--Description-->
 This policy will do the enforcement over the following protocols that are used by most portable devices, for example, mobile/IOS/Android:
 
-- Picture Transfer Protocol (PTP) over USB, IP, and Bluetooth
-- Media Transfer Protocol (MTP) over USB, IP, and Bluetooth
-- Mass Storage Class (MSC) over USB
+- Picture Transfer Protocol (PTP) over USB, IP, and Bluetooth.
+- Media Transfer Protocol (MTP) over USB, IP, and Bluetooth.
+- Mass Storage Class (MSC) over USB.
 
 To enable this policy, the minimum OS requirement is Windows 10, version 1809 and [KB5003217 (OS Build 17763.1971)](https://support.microsoft.com/en-us/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46).
 
 If enabled, this policy will block end-user from Write access on any Windows Portal devices, for example, mobile/iOS/Android.
 
 >[!NOTE]
-> WPD policy is not a reliable policy for removable storage - admin can not use WPD policy to block removable storage, e.g. if an end-user is using an USB thumb drive under a WPD policy, the policy may block PTP/MTP/etc, but end-user can still browser the USB via explorer.
+> WPD policy is not a reliable policy for removable storage - admin can not use WPD policy to block removable storage. For example, if an end-user is using an USB thumb drive under a WPD policy, the policy may block PTP/MTP/etc, but end-user can still browse the USB via explorer.
 
 Supported values for this policy are:  
 - Not configured
@@ -846,6 +863,7 @@ ADMX Info:
 <a href="" id="storagehealthmonitor-disablestoragehealthmonitor"></a>**StorageHealthMonitor/DisableStorageHealthMonitor**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -855,7 +873,8 @@ ADMX Info:
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
-Note: Versions prior to 21H2 will not support this policy
+> [!NOTE]
+> Versions prior to 21H2 will not support this policy
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -872,15 +891,15 @@ Note: Versions prior to 21H2 will not support this policy
 <!--Description-->
 Allows disable of Storage Health Monitor.
 
-Value type is integer.
+Supported value type is integer.
 
 <!--/Description-->
 
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 - Storage Health Monitor is Enabled
--   1 - Storage Health Monitor is Disabled
+-   0 - Storage Health Monitor is Enabled.
+-   1 - Storage Health Monitor is Disabled.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -889,3 +908,7 @@ The following list shows the supported values:
 
 
 <!--/Policy-->
+
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)
