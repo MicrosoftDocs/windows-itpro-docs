@@ -34,7 +34,7 @@ The Windows Defender Application Control (WDAC) policy Wizard is an open-source 
 
 ## Downloading the application
 
-The WDAC Wizard can be downloaded from the official [Wizard installer website](https://bit.ly/3koHwYs) as an MSIX packaged application. The Wizard's source code is available as part of Microsoft's Open Source Software offerings on GitHub at the [WDAC Wizard Repo](https://github.com/MicrosoftDocs/WDAC-Toolkit).
+The WDAC Wizard can be downloaded from the official [WDAC Wizard installer website](https://webapp-wdac-wizard.azurewebsites.net) as an MSIX packaged application. The Wizard's source code is available as part of Microsoft's Open Source Software offerings on GitHub at the [WDAC Wizard Repo](https://github.com/MicrosoftDocs/WDAC-Toolkit).
 
 **Supported Clients**
 
