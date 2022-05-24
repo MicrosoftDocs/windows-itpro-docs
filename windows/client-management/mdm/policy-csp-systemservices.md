@@ -14,8 +14,6 @@ manager: dansimp
 
 # Policy CSP - SystemServices
 
-
-
 <hr/>
 
 <!--Policies-->
@@ -49,6 +47,7 @@ manager: dansimp
 <a href="" id="systemservices-configurehomegrouplistenerservicestartupmode"></a>**SystemServices/ConfigureHomeGroupListenerServiceStartupMode**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -71,7 +70,9 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
+This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). 
+
+Default: Manual.
 
 <!--/Description-->
 <!--DbMapped-->
@@ -88,6 +89,7 @@ GP Info:
 <a href="" id="systemservices-configurehomegroupproviderservicestartupmode"></a>**SystemServices/ConfigureHomeGroupProviderServiceStartupMode**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -110,7 +112,9 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
-This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
+This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). 
+
+Default: Manual.
 
 <!--/Description-->
 <!--DbMapped-->
@@ -127,6 +131,7 @@ GP Info:
 <a href="" id="systemservices-configurexboxaccessorymanagementservicestartupmode"></a>**SystemServices/ConfigureXboxAccessoryManagementServiceStartupMode**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -149,7 +154,9 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
-This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
+This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). 
+
+Default: Manual.
 
 <!--/Description-->
 <!--DbMapped-->
@@ -166,6 +173,7 @@ GP Info:
 <a href="" id="systemservices-configurexboxliveauthmanagerservicestartupmode"></a>**SystemServices/ConfigureXboxLiveAuthManagerServiceStartupMode**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -188,7 +196,9 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
-This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
+This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). 
+
+Default: Manual.
 
 <!--/Description-->
 <!--DbMapped-->
@@ -205,6 +215,7 @@ GP Info:
 <a href="" id="systemservices-configurexboxlivegamesaveservicestartupmode"></a>**SystemServices/ConfigureXboxLiveGameSaveServiceStartupMode**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -227,7 +238,9 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
-This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
+This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). 
+
+Default: Manual.
 
 <!--/Description-->
 <!--DbMapped-->
@@ -244,6 +257,7 @@ GP Info:
 <a href="" id="systemservices-configurexboxlivenetworkingservicestartupmode"></a>**SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -266,7 +280,9 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
-This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
+This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). 
+
+Default: Manual.
 
 <!--/Description-->
 <!--DbMapped-->
@@ -281,3 +297,6 @@ GP Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)
