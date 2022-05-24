@@ -1229,4 +1229,4 @@ ADMX Info:
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Policy configuration service provider](policy-configuration-service-provider.md)
