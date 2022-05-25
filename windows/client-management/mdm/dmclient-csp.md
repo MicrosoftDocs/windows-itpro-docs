@@ -73,6 +73,8 @@ DMClient
 ----------------LastError
 ------------Recovery
 ----------------AllowRecovery
+----------------RecoveryStatus
+----------------InitiateRecovery
 ------------MultipleSession
 ----------------NumAllowedConcurrentUserSessionForBackgroundSync
 ----------------NumAllowedConcurrentUserSessionAtUserLogonSync
@@ -119,8 +121,6 @@ Supported operations are Get and Add.
 > Although hardware device IDs are guaranteed to be unique, there's a concern that this isn't ultimately enforceable during a DM session. The device ID could be changed through the w7 APPLICATION CSP’s **USEHWDEVID** parm by another management server. So during enterprise bootstrap and enrollment, a new device ID is specified by the enterprise server.
 This node is required and must be set by the server before the client certificate renewal is triggered.
 
- 
-
 <a href="" id="provider-providerid-exchangeid"></a>**Provider/*ProviderID*/ExchangeID**  
 Optional. Character string that contains the unique Exchange device ID used by the Outlook account of the user the session is running against. The enterprise management server can correlate and merge records for:
 
@@ -129,8 +129,6 @@ Optional. Character string that contains the unique Exchange device ID used by t
 
 > [!NOTE]
 > In some cases for the desktop, this node will return "not found" until the user sets up their email.
-
- 
 
 Supported operation is Get.
 
@@ -162,8 +160,6 @@ Required. The character string that contains the device management server addres
 
 > [!NOTE]
 > When the **ManagementServerAddressList** value is set, the device ignores the value.
-
- 
 
 The DMClient CSP will save the address to the same location as the w7 and DMS CSPs. The save ensures the management client has a single place to retrieve the current server address. The initial value for this node is the same server address value as bootstrapped using the [w7 APPLICATION configuration service provider](w7-application-csp.md).
 
@@ -491,6 +487,12 @@ This specifies the Hresult to report the enrollment/unenroll results.
 <a href="" id="provider-providerid-recovery-allowrecovery"></a>**Provider/*ProviderID*/Recovery/AllowRecovery**
 This node determines whether or not the client will automatically initiate a MDM Recovery operation when it detects issues with the MDM certificate.
 
+Supported operations are Get, Add, Replace, Delete. 
+
+Default value is 0
+
+<a href="" id="provider-providerid-recovery-recoverystatus"></a>**Provider/*ProviderID*/Recovery/RecoveryStatus**
+
 This node tracks the status of a Recovery request from the InitiateRecovery node. The values are as follows:
 
 - 0 - No Recovery request has been processed.  
@@ -503,12 +505,24 @@ This node tracks the status of a Recovery request from the InitiateRecovery node
 - 7 - Recovery has failed because the client cannot authenticate to the server.  
 - 8 - Recovery has failed because the server has rejected the client's request.
 
+Supported operation is Get only.
+
+<a href="" id="provider-providerid-recovery-initiaterecovery"></a>**Provider/*ProviderID*/Recovery/InitiateRecovery**
+
+This node initiates an MDM Recovery operation on the client.  
+
+If initiated with argument 0, it triggers MDM Recovery, no matter the state of the device.
+
+If initiated with argument 1, it triggers only if the MDM certificate’s private key isn’t already protected by the TPM, if there is a TPM to put the private key into, and if the TPM is ready for attestation. 
+
+Supported operation is Exec only.
+
 <a href="" id="provider-providerid-multiplesession-numallowedconcurrentusersessionforbackgroundsync"></a>**Provider/*ProviderID*/MultipleSession/NumAllowedConcurrentUserSessionForBackgroundSync**
 Optional. This node specifies maximum number of concurrent user sync sessions in background. Default value is 25.
 
 The values are : 0= none, 1= sequential, anything else=  parallel.
 
-Supported operation is Get, Add, Replace and Delete. 
+Supported operations are Get, Add, Replace and Delete. 
 
 Value type is integer. Only applicable for Windows 10 multi-session.
 
@@ -518,7 +532,7 @@ Optional. This node specifies maximum number of concurrent user sync sessions at
 
 The values are : 0= none, 1= sequential, anything else= parallel.
 
-Supported operation is Get, Add, Replace and Delete. 
+Supported operations are Get, Add, Replace and Delete. 
 
 Value type is integer. Only applicable for Windows 10 multi-session. 
 
