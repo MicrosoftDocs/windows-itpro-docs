@@ -133,7 +133,7 @@ ADMX Info:
 |Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
-|Education|||
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
