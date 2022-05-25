@@ -64,7 +64,6 @@ manager: dansimp
   </dd>
 </dl>
 
-
 <hr/>
 
 <!--Policy-->
@@ -249,7 +248,7 @@ This policy disables edit device name option on Settings.
 <!--/Description-->
 <!--SupportedValues-->
 
-Describes what values are supported in by this policy and meaning of each value, default value.
+Describes what values are supported in/by this policy and meaning of each value, and default value.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -611,7 +610,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Allows IT Admins to configure the default setting for showing more calendars (besides the default calendar for the locale) in the taskbar clock and calendar flyout. Other supported calendars are: Simplified or Traditional Chinese lunar calendar. Turning on one of these calendars will display Chinese lunar dates below the default calendar for the locale.  Select "Don't show additional calendars" to prevent showing other calendars besides the default calendar for the locale.
+Allows IT Admins to configure the default setting for showing more calendars (besides the default calendar for the locale) in the taskbar clock and calendar flyout. Other supported calendars are: Simplified or Traditional Chinese lunar calendar. Turning on one of these calendars will display Chinese lunar dates below the default calendar for the locale. Select "Don't show additional calendars" to prevent showing other calendars besides the default calendar for the locale.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -664,21 +663,21 @@ The following list shows the supported values:
 <!--Description-->
 Allows IT Admins to either:
 
-- Prevent specific pages in the System Settings app from being visible or accessible
+- Prevent specific pages in the System Settings app from being visible or accessible.
 
   OR
 
-- To do so for all pages except the pages you enter
+- To do so for all pages except the pages you enter.
 
 The mode will be specified by the policy string beginning with either the string `showonly:` or `hide:`. Pages are identified by a shortened version of their already published URIs, which is the URI minus the "ms-settings:" prefix.
 
-For example, if the URI for a settings page is "ms-settings:bluetooth", the page identifier used in the policy will be just "bluetooth".  Multiple page identifiers are separated by semicolons. For more information on the URI reference scheme used for the various pages of the System Settings app, see [ms-settings: URI scheme reference](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference).
+For example, if the URI for a settings page is "ms-settings:bluetooth", the page identifier used in the policy will be just "bluetooth". Multiple page identifiers are separated by semicolons. For more information on the URI reference scheme used for the various pages of the System Settings app, see [ms-settings: URI scheme reference](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference).
 
 The following example shows a policy that allows access only to the **about** and **bluetooth** pages, which have URI "ms-settings:about" and "ms-settings:bluetooth" respectively:
 
 `showonly:about;bluetooth`
 
-If the policy isn't specified, then the behavior is that no pages are affected. If the policy string is formatted incorrectly, then it's ignored (that is, treated as not set). It's ignored to prevent the machine from becoming unserviceable if data corruption occurs. If a page is already hidden for another reason, then it stays hidden, even if the page is in a `showonly:` list.
+If the policy isn't specified, then the behavior is that no pages are affected. If the policy string is formatted incorrectly, then it's ignored (that is, treated as not set). It's ignored to prevent the machine from becoming unserviceable, if data corruption occurs. If a page is already hidden for another reason, then it stays hidden, even if the page is in a `showonly:` list.
 
 The format of the PageVisibilityList value is as follows:
 
@@ -721,3 +720,6 @@ To validate on Desktop, use the following steps:
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

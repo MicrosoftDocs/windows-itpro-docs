@@ -14,7 +14,6 @@ manager: dansimp
 
 # Policy CSP - RemoteShell
 
-
 <hr/>
 
 <!--Policies-->
@@ -45,11 +44,11 @@ manager: dansimp
 </dl>
 
 > [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 > 
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 > 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
@@ -127,7 +126,7 @@ ADMX Info:
 <!--Description-->
 This policy setting configures the maximum number of users able to concurrently perform remote shell operations on the system.
 
-The value can be any  number from 1 to 100.
+The value can be any number from 1 to 100.
 
 If you enable this policy setting, the new shell connections are rejected if they exceed the specified limit.
 
@@ -173,7 +172,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting configures the maximum time in milliseconds remote shell will stay open without any user activity until it is automatically deleted.
+This policy setting configures the maximum time in milliseconds, and remote shell will stay open without any user activity until it is automatically deleted.
 
 Any value from 0 to 0x7FFFFFFF can be set. A minimum of 60000 milliseconds (1 minute) is used for smaller values.
 
@@ -273,7 +272,7 @@ This policy setting configures the maximum number of processes a remote shell is
 
 If you enable this policy setting, you can specify any number from 0 to 0x7FFFFFFF to set the maximum number of process per shell. Zero (0) means unlimited number of processes.
 
-If you disable or do not configure this policy setting,  the limit is five processes per shell.
+If you disable or do not configure this policy setting, the limit is five processes per shell.
 
 <!--/Description-->
 
@@ -315,7 +314,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting configures the maximum number of concurrent shells any user can remotely open on the same system.
+This policy setting configures the maximum number of concurrent shells and any user can remotely open on the same system.
 
 Any number from 0 to 0x7FFFFFFF can be set, where 0 means unlimited number of shells.
 
@@ -380,3 +379,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)
