@@ -28,7 +28,7 @@ The Windows Defender Application Control policy wizard is an open-source Windows
 
 ## Downloading the application
 
-Downloaded the tool from the official [Windows Defender Application Control Policy Wizard website](https://webapp-wdac-wizard.azurewebsites.net/) as an MSIX packaged application. The tool's source code is available as part of Microsoft's Open Source Software offerings on GitHub at the [WDAC Policy Wizard repository](https://github.com/MicrosoftDocs/WDAC-Toolkit).
+Download the tool from the official [Windows Defender Application Control Policy Wizard website](https://webapp-wdac-wizard.azurewebsites.net/) as an MSIX packaged application. The tool's source code is available as part of Microsoft's Open Source Software offerings on GitHub at the [WDAC Policy Wizard repository](https://github.com/MicrosoftDocs/WDAC-Toolkit).
 
 ### Supported clients
 
@@ -39,7 +39,7 @@ As the tool uses the cmdlets in the background, it's functional on clients only 
 
 If neither requirement is satisfied, it throws an error as the cmdlets aren't available.
 
-## In this section
+## Resources to learn more
 
 | Article | Description |
 | - | - |
