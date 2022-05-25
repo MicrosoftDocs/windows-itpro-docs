@@ -1,6 +1,6 @@
 ---
 title: NetworkQoSPolicy CSP
-description: he NetworkQoSPolicy CSP applies the Quality of Service (QoS) policy for Microsoft Surface Hub. This CSP was added in Windows 10, version 1703.
+description: The NetworkQoSPolicy CSP applies the Quality of Service (QoS) policy for Microsoft Surface Hub. This CSP was added in Windows 10, version 1703.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -12,6 +12,16 @@ manager: dansimp
 ---
 
 # NetworkQoSPolicy CSP
+
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 The NetworkQoSPolicy configuration service provider creates network Quality of Service (QoS) policies. A QoS policy performs a set of actions on network traffic based on a set of matching conditions. This CSP was added in Windows 10, version 1703.
 
@@ -31,7 +41,7 @@ The following actions are supported:
 > 
 > The minimum operating system requirement for this CSP is Windows 10, version 2004. This CSP is supported only in Microsoft Surface Hub prior to Windows 10, version 2004.
 
-The following shows the NetworkQoSPolicy configuration service provider in tree format.
+The following example shows the NetworkQoSPolicy configuration service provider in tree format.
 ```
 ./Device/Vendor/MSFT
 NetworkQoSPolicy
@@ -71,7 +81,7 @@ NetworkQoSPolicy
 <p>The supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="name-apppathnamematchcondition"></a>***Name*/AppPathNameMatchCondition**  
-<p>Specifies the name of an application to be used to match the network traffic, such as application.exe or %ProgramFiles%\application.exe.
+<p>Specifies the name of an application to be used to match the network traffic, such as `application.exe` or `%ProgramFiles%\application.exe`.
 
 <p>The data type is char. 
 
@@ -111,7 +121,7 @@ NetworkQoSPolicy
 <p>The supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="name-dscpaction"></a>***Name*/DSCPAction**  
-<p>The differentiated services code point (DSCP) value to apply to matching network traffic.
+<p>The Differentiated Services Code Point (DSCP) value to apply to matching network traffic.
 
 <p>Valid values are 0-63.
 

@@ -14,17 +14,27 @@ ms.date: 02/28/2020
 
 # CertificateStore CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 The CertificateStore configuration service provider is used to add secure socket layers (SSL), intermediate, and self-signed certificates.
 
 > [!Note]
 > The CertificateStore configuration service provider does not support installing client certificates.
 > The Microsoft protocol version of Open Mobile Alliance (OMA) is case insensitive.
 
-For the CertificateStore CSP, you cannot use the Replace command unless the node already exists.
+For the CertificateStore CSP, you can't use the Replace command unless the node already exists.
 
-The following shows the CertificateStore configuration service provider management object in tree format as used by both Open Mobile Alliance Device Management (OMA DM) and OMA Client Provisioning.
+The following example shows the CertificateStore configuration service provider management object in tree format as used by both Open Mobile Alliance Device Management (OMA DM) and OMA Client Provisioning.
 
-```
+```console
 ./Vendor/MSFT
 CertificateStore
 ----ROOT
@@ -121,7 +131,7 @@ Supported operation is Get.
 > CA/System is case sensitive. Please use the RootCATrustedCertificates CSP moving forward for installing CA certificates.
 
 <a href="" id="my-user"></a>**My/User**  
-Defines the certificate store that contains public keys for client certificates. This is only used by enterprise servers to push down the public key of a client certificate. The client certificate is used by the device client to authenticate itself to the enterprise server for device management and downloading enterprise applications.
+Defines the certificate store that contains public keys for client certificates. This certificate store is only used by enterprise servers to push down the public key of a client certificate. The client certificate is used by the device client to authenticate itself to the enterprise server for device management and downloading enterprise applications.
 
 Supported operation is Get.
 
@@ -129,7 +139,7 @@ Supported operation is Get.
 > My/User is case sensitive.
 
 <a href="" id="my-system"></a>**My/System**  
-Defines the certificate store that contains public key for client certificate. This is only used by enterprise server to push down the public key of the client cert. The client cert is used by the device to authenticate itself to the enterprise server for device management and enterprise app downloading.
+Defines the certificate store that contains public key for client certificate. This certificate store is only used by enterprise server to push down the public key of the client cert. The client cert is used by the device to authenticate itself to the enterprise server for device management and enterprise app downloading.
 
 Supported operation is Get.
 
@@ -142,27 +152,27 @@ Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certifi
 Supported operations are Get, Delete, and Replace.
 
 <a href="" id="certhash-encodedcertificate"></a>***CertHash*/EncodedCertificate**  
-Required. Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string value can’t include extra formatting characters such as embedded linefeeds, etc.
+Required. Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string value can't include extra formatting characters such as embedded linefeeds, etc.
 
 Supported operations are Get, Add, Delete, and Replace.
 
 <a href="" id="certhash-issuedby"></a>***CertHash*/IssuedBy**  
-Required. Returns the name of the certificate issuer. This is equivalent to the *Issuer* member in the CERT\_INFO data structure.
+Required. Returns the name of the certificate issuer. This name is equivalent to the *Issuer* member in the CERT\_INFO data structure.
 
 Supported operation is Get.
 
 <a href="" id="certhash-issuedto"></a>***CertHash*/IssuedTo**  
-Required. Returns the name of the certificate subject. This is equivalent to the *Subject* member in the CERT\_INFO data structure.
+Required. Returns the name of the certificate subject. This name is equivalent to the *Subject* member in the CERT\_INFO data structure.
 
 Supported operation is Get.
 
 <a href="" id="certhash-validfrom"></a>***CertHash*/ValidFrom**  
-Required. Returns the starting date of the certificate's validity. This is equivalent to the *NotBefore* member in the CERT\_INFO structure.
+Required. Returns the starting date of the certificate's validity. This date is equivalent to the *NotBefore* member in the CERT\_INFO structure.
 
 Supported operation is Get.
 
 <a href="" id="certhash-validto"></a>***CertHash*/ValidTo**  
-Required. Returns the expiration date of the certificate. This is equivalent to the *NotAfter* member in the CERT\_INFO structure.
+Required. Returns the expiration date of the certificate. This expiration date is equivalent to the *NotAfter* member in the CERT\_INFO structure.
 
 Supported operation is Get.
 
@@ -217,7 +227,7 @@ Supported operations are Get, Add, Delete, and Replace.
 <a href="" id="my-scep-uniqueid-install-subjectname"></a>**My/SCEP/*UniqueID*/Install/SubjectName**  
 Required. Specifies the subject name. 
 
-The SubjectName value is quoted if it contains leading or trailing white space or one of the following characters: (“,” “=” “+” “;”  ).
+The SubjectName value is quoted if it contains leading or trailing white space or one of the following characters: (“,” “=” “+” “;”).
 
 For more information, see [CertNameToStrA function](/windows/win32/api/wincrypt/nf-wincrypt-certnametostra#remarks).
 
@@ -228,7 +238,7 @@ Supported operations are Get, Add, Delete, and Replace.
 <a href="" id="my-scep-uniqueid-install-keyprotection"></a>**My/SCEP/*UniqueID*/Install/KeyProtection**  
 Optional. Specifies the location of the private key. Although the private key is protected by TPM, it isn't protected with TPM PIN. SCEP enrolled certificate doesn't support TPM PIN protection.
 
-Supported values are one of the following:
+Supported values are one of the following values:
 
 - 1 – Private key is protected by device TPM.
 
@@ -246,20 +256,20 @@ Optional. Specifies the device retry waiting time in minutes when the SCEP serve
 Supported operations are Get, Add, and Delete.
 
 <a href="" id="my-scep-uniqueid-install-retrycount"></a>**My/SCEP/*UniqueID*/Install/RetryCount**  
-Optional. Special to SCEP. Specifies the device retry times when the SCEP server sends pending status. Value type is an integer. Default value is 3. Max value can’t be larger than 30. If it's larger than 30, the device will use 30. The min value is 0, which means no retry.
+Optional. Special to SCEP. Specifies the device retry times when the SCEP server sends pending status. Value type is an integer. Default value is 3. Max value can't be larger than 30. If it's larger than 30, the device will use 30. The min value is 0, which means no retry.
 
 Supported operations are Get, Add, Delete, and Replace.
 
 <a href="" id="my-scep-uniqueid-install-templatename"></a>**My/SCEP/*UniqueID*/Install/TemplateName**  
 Optional. OID of certificate template name.
 
->[!Note]
-> Template name is typically ignored by the SCEP server; therefore, the MDM server typically doesn't need to provide it. Value type is chr.
+> [!Note]
+> Template name is typically ignored by the SCEP server, so the MDM server typically doesn't need to provide it. Value type is `chr`.
 
 Supported operations are Get, Add, and Delete.
 
 <a href="" id="my-scep-uniqueid-install-keylength"></a>**My/SCEP/*UniqueID*/Install/KeyLength**  
-Required for enrollment. Specify private key length (RSA). Value type is an integer. Valid values are 1024, 2048, 4096. NGC key lengths supported should be specified.
+Required for enrollment. Specifies private key length (RSA). Value type is an integer. Valid values are 1024, 2048, 4096. NGC key lengths supported should be specified.
 
 Supported operations are Get, Add, Delete, and Replace.
 
@@ -285,7 +295,7 @@ Optional. Specifies the units for the valid period. Value type is chr.
 
 Supported operations are Get, Add, Delete, and Replace.
 
-Valid values are one of the following:
+Valid values are one of the following values:
 
 - Days (default)
 - Months
@@ -317,7 +327,7 @@ Required. Specifies the latest status for the certificate due to enrollment requ
 
 Supported operation is Get.
 
-Valid values are one of the following:
+Valid values are one of the following values:
 
 -   1 – Finished successfully.
 
@@ -343,7 +353,7 @@ Required. Returns the URL of the SCEP server that responded to the enrollment re
 Supported operation is Get.
 
 <a href="" id="my-wstep"></a>**My/WSTEP**  
-Required for MDM enrolled device. The parent node that hosts the MDM enrollment client certificate related settings that are enrolled via WSTEP. The nodes under WSTEP are mostly for MDM client certificate renew requests. Value type is node.
+Required for MDM enrolled device. Specifies the parent node that hosts the MDM enrollment client certificate related settings that are enrolled via WSTEP. The nodes under WSTEP are mostly for MDM client certificate renew requests. Value type is node.
 
 Supported operation is Get.
 
@@ -358,12 +368,10 @@ Optional. Specifies the URL of certificate renewal server. If this node doesn't 
 > [!NOTE]
 > The renewal process follows the same steps as device enrollment, which means that it starts with Discovery service, followed by Enrollment policy service, and then Enrollment web service.
 
- 
-
 Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="my-wstep-renew-renewalperiod"></a>**My/WSTEP/Renew/RenewalPeriod**  
-Optional. The time (in days) to trigger the client to initiate the MDM client certificate renew process before the MDM certificate expires. The MDM server cannot set and update the renewal period. This parameter applies to both manual certificate renewal and request on behalf of (ROBO) certificate renewal. It's recommended that the renew period is set a couple of months before the certificate expires to ensure that the certificate gets renewed successfully with data connectivity.
+Optional. The time (in days) to trigger the client to initiate the MDM client certificate renew process before the MDM certificate expires. The MDM server can't set and update the renewal period. This parameter applies to both manual certificate renewal and request on behalf of (ROBO) certificate renewal. It's recommended that the renew period is set a couple of months before the certificate expires to ensure that the certificate gets renewed successfully with data connectivity.
 
 The default value is 42 and the valid values are 1 – 1000. Value type is an integer.
 
@@ -401,7 +409,7 @@ Required. Shows the latest action status for this certificate. Value type is an 
 
 Supported operation is Get.
 
-Supported values are one of the following:
+Supported values are one of the following values:
 
 - 0 – Not started.
 - 1 – Renewal in progress.
@@ -414,7 +422,7 @@ Optional. If certificate renewal fails, this integer value indicates the HRESULT
 Supported operation is Get.
 
 <a href="" id="my-wstep-renew-lastrenewalattempttime"></a>**My/WSTEP/Renew/LastRenewalAttemptTime**  
-Added in Windows 10, version 1607. Time of the last attempted renewal.
+Added in Windows 10, version 1607. Specifies the time of the last attempted renewal.
 
 Supported operation is Get.
 
@@ -424,7 +432,7 @@ Added in Windows 10, version 1607. Initiates a renewal now.
 Supported operation is Execute.
 
 <a href="" id="my-wstep-renew-retryafterexpiryinterval"></a>**My/WSTEP/Renew/RetryAfterExpiryInterval**  
-Added in Windows 10, version 1703. How long after the enrollment certificate has expired before trying to renew.
+Added in Windows 10, version 1703. Specifies how long after the enrollment certificate has expired before trying to renew.
 
 Supported operations are Add, Get, and Replace.
 
@@ -697,7 +705,6 @@ Configure the device to automatically renew an MDM client certificate with the s
 ```
 
 ## Related topics
-
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 

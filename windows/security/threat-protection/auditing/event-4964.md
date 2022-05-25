@@ -23,7 +23,7 @@ ms.technology: windows-sec
 
 ***Event Description:***
 
-This event occurs when an account that is a member of any defined [Special Group](https://blogs.technet.com/b/askds/archive/2008/03/11/special-groups-auditing-via-group-policy-preferences.aspx) logs in.
+This event occurs when an account that is a member of any defined [Special Group](https://techcommunity.microsoft.com/t5/ask-the-directory-services-team/special-groups-auditing-via-group-policy-preferences/ba-p/395095) logs in.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 

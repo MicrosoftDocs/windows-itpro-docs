@@ -2,13 +2,9 @@
 title: Information protection (Windows 10)
 description: Learn more about how to protect sensitive data across your organization.
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/10/2018

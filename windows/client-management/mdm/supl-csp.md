@@ -14,6 +14,14 @@ ms.date: 09/12/2019
 
 # SUPL CSP
 
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 The SUPL configuration service provider is used to configure the location client, as shown in the following table:
 
 - **Location Service**: Connection type
@@ -94,7 +102,7 @@ Added in Windows 10, version 2004. Optional. Determines the full version (X.Y.Z 
 <a href="" id="mccmncpairs"></a>**MCCMNCPairs**  
 Required. List all of the MCC and MNC pairs owned by the mobile operator. This list is used to verify that the UICC matches the network and SUPL can be used. When the UICC and network don't match, the device uses the default location service and doesn't use SUPL.
 
-This value is a string with the format "(X1, Y1)(X2, Y2)…(Xn, Yn)", in which `X` is an MCC and `Y` is an MNC.
+This value is a string with the format `(X1, Y1)(X2, Y2)…(Xn, Yn)`, in which `X` is an MCC and `Y` is an MNC.
 
 For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
 
@@ -110,7 +118,6 @@ Optional. Specifies the positioning method that the SUPL client will use for mob
 |4|OTDOA|
 |5|AFLT|
 
- 
 
 The default is 0. The default method in Windows devices provides high-quality assisted GNSS positioning for mobile originated position requests without loading the mobile operator’s network or location services.
 
@@ -118,7 +125,6 @@ The default is 0. The default method in Windows devices provides high-quality as
 > The Mobile Station Assisted, OTDOA, and AFLT positioning methods must only be configured for test purposes.
 
  
-
 For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
 
 <a href="" id="locmasterswitchdependencynii"></a>**LocMasterSwitchDependencyNII**  
@@ -132,7 +138,6 @@ This value manages the settings for both SUPL and v2 UPL. If a device is configu
 |On|1|Yes|
 |Off|0|Yes|
 |Off|1|No (unless privacyOverride is set)|
-
 
 When the location toggle is set to Off and this value is set to 1, the following application requests will fail:
 
@@ -238,7 +243,6 @@ The default is 0. The default method provides high-quality assisted GNSS positio
 > The Mobile Station Assisted and AFLT positioning methods must only be configured for test purposes.
 
  
-
 For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
 
 <a href="" id="locmasterswitchdependencynii"></a>**LocMasterSwitchDependencyNII**  
@@ -305,7 +309,6 @@ If a mobile operator requires the communication with the H-SLP to take place ove
 
 ## OMA Client Provisioning examples
 
-
 Adding new configuration information for an H-SLP server for SUPL. Values in italic must be replaced with correct settings for the mobile operator network. A valid binary blob must be included for the root certificate data value.
 
 ```xml
@@ -330,7 +333,7 @@ Adding new configuration information for an H-SLP server for SUPL. Values in ita
 </wap-provisioningdoc>
 ```
 
-Adding a SUPL and a V2 UPL account to the same device. Values in italic must be replaced with correct settings for the mobile operator network. A valid binary blob must be included for the root certificate data value.
+Adding a SUPL and a V2 UPL account to the same device. Values in italic must be replaced with correct settings for the mobile operator network. A valid binary BLOB must be included for the root certificate data value.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -360,7 +363,6 @@ Adding a SUPL and a V2 UPL account to the same device. Values in italic must be 
 ```
 
 ## OMA DM examples
-
 
 Adding a SUPL account to a device. Values in italic must be replaced with correct settings for the mobile operator network. A valid binary blob must be included for the root certificate data value.
 
@@ -435,7 +437,6 @@ Adding a SUPL account to a device. Values in italic must be replaced with correc
 ```
 
 ## Microsoft Custom Elements
-
 
 The following table shows the Microsoft custom elements that this configuration service provider supports for OMA Client Provisioning.
 
