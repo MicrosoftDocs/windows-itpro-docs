@@ -162,7 +162,7 @@ Following is an example of setting the policy using Microsoft Endpoint Manager:
 
 8. (Optional) To verify that the policy reached the client, check the value of the following registry entry: 
 
-   **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PolicyManager \\default\\System\\AllowWUfBCloudProcessing**
+   **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PolicyManager\\current\\device\\System\\AllowWUfBCloudProcessing**
 
 ## Best practices
 Follow these suggestions for the best results with the service.
