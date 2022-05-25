@@ -33,12 +33,12 @@ manager: dansimp
 <a href="" id="controlpolicyconflict-mdmwinsovergp"></a>**ControlPolicyConflict/MDMWinsOverGP**  
 
 > [!NOTE]
-> This setting is applicable to a limited set of group policies. It doesn't apply to the following group policy settings:
+> This setting doesn't apply to the following types of group policies:
 >
-> - Group policies that don't have a mapping with an MDM policy that's controlled through the policy CSP.
-> - Group policies that aren't defined by an administrative template (ADMX). For example: Password policy - minimum password age.
-> - Group policies under the Windows Update category.
-
+> - If they don't map to an MDM policy. For example, firewall policies and account lockout policies
+> - If they aren't defined by an ADMX. For example, Password policy - minimum password age.
+> - If they're in the Windows Update category.
+> - If they have list entries. For example, the Microsoft Edge CookiesAllowedForUrls policy.
 
 <!--SupportedSKUs-->
 
