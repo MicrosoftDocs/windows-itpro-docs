@@ -14,7 +14,7 @@ ms.date: 07/28/2017
 
 # SurfaceHub CSP
 
-The SurfaceHub configuration service provider (CSP) is used to configure Microsoft Surface Hub settings. This CSP was added in Windows 10, version 1511.
+The SurfaceHub configuration service provider (CSP) is used to configure Microsoft Surface Hub settings. This CSP was added in Windows 10, version 1511, and later.
 
 The following example shows the SurfaceHub CSP management objects in tree format.
 
@@ -240,7 +240,7 @@ If there's an error calling ValidateAndCommit, there's another context for that 
 | 3 | Populating Exchange server address | Unable to auto-discover your Exchange server address. Try to manually specify the Exchange server address using the ExchangeServer field. |
 | 4 | Validating Exchange server address | Unable to validate the Exchange server address. Ensure the ExchangeServer field is valid. |
 | 5 | Saving account information | Unable to save account details to the system. |
-| 6 | Validating EAS policies | The device account uses an unsupported EAS policy. Make sure the EAS policy is configured correctly according to the admin guide. |
+| 6 | Validating EAS policies | The device account uses an unsupported EAS policy. Ensure the EAS policy is configured correctly according to the admin guide. |
 
 It performs the following:
 - The data type is integer.
@@ -321,7 +321,7 @@ Invitations to collaborate from the Whiteboard app aren't allowed.
 
 <a href="" id="inboxapps-whiteboard-signindisabled"></a>**InBoxApps/Whiteboard/SigninDisabled**
 
-Sign-in from the Whiteboard app aren't allowed.
+Sign-ins from the Whiteboard app aren't allowed.
 
 - The data type is boolean. 
 - Supported operation is Get and Replace.
