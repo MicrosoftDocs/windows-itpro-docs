@@ -32,6 +32,14 @@ manager: dansimp
 <!--Policy-->
 <a href="" id="controlpolicyconflict-mdmwinsovergp"></a>**ControlPolicyConflict/MDMWinsOverGP**  
 
+> [!NOTE]
+> This setting doesn't apply to the following types of group policies:
+>
+> - If they don't map to an MDM policy. For example, firewall policies and account lockout policies.
+> - If they aren't defined by an ADMX. For example, Password policy - minimum password age.
+> - If they're in the Windows Update category.
+> - If they have list entries. For example, the Microsoft Edge CookiesAllowedForUrls policy.
+
 <!--SupportedSKUs-->
 
 |Edition|Windows 10|Windows 11|
@@ -57,9 +65,6 @@ manager: dansimp
 <!--/Scope-->
 <!--Description-->
 This policy allows the IT admin to control which policy will be used whenever both the MDM policy and its equivalent Group Policy (GP) are set on the device.
-
-> [!NOTE]
-> MDMWinsOverGP only applies to policies in Policy CSP. MDM policies win over Group Policies where applicable; not all Group Policies are available via MDM or CSP. It does not apply to other MDM settings with equivalent GP settings that are defined in other CSPs.
 
 This policy is used to ensure that MDM policy wins over GP when policy is configured on MDM channel. The default value is 0. The MDM policies in Policy CSP will behave as described if this policy value is set 1.
 
