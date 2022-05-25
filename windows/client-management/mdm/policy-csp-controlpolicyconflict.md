@@ -35,7 +35,7 @@ manager: dansimp
 > [!NOTE]
 > This setting doesn't apply to the following types of group policies:
 >
-> - If they don't map to an MDM policy. For example, firewall policies and account lockout policies
+> - If they don't map to an MDM policy. For example, firewall policies and account lockout policies.
 > - If they aren't defined by an ADMX. For example, Password policy - minimum password age.
 > - If they're in the Windows Update category.
 > - If they have list entries. For example, the Microsoft Edge CookiesAllowedForUrls policy.
