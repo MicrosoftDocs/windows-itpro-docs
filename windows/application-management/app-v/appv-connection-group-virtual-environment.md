@@ -2,9 +2,6 @@
 title: About the connection group virtual environment (Windows 10/11)
 description: Learn how the connection group virtual environment works and how package priority is determined.
 author: aczechowski
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 06/25/2018
 ms.reviewer: 
@@ -81,6 +78,6 @@ When a virtualized application tries to find a specific file, App-V will search 
 
 
 
-## Related topics
+## Related articles
 
 - [Managing Connection Groups](appv-managing-connection-groups.md)

@@ -14,6 +14,16 @@ ms.date: 06/26/2017
 
 # CMPolicyEnterprise CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|No|No|
+|Education|No|No|
+
 The CMPolicyEnterprise configuration service provider is used by the enterprise to define rules that the Connection Manager uses to identify the correct connection for a connection request.
 
 > [!NOTE]
@@ -21,9 +31,12 @@ The CMPolicyEnterprise configuration service provider is used by the enterprise 
 
 Each policy entry identifies one or more applications in combination with a host pattern. The policy entry is assigned a list of connection details that Connection Manager uses to satisfy connection requests matching the application and host patterns. CMPolicyEnterprise configuration service provider can have multiple policies
 
+Each policy entry identifies one or more applications in combination with a host pattern. The policy entry is assigned a list of connection details that Connection Manager uses to satisfy connection requests matching the application and host patterns. CMPolicyEnterprise configuration service provider can have multiple policies
+
+
 **Policy Ordering**: There's no explicit ordering of policies. The general rule is that the most concrete or specific policy mappings take a higher precedence.
 
-**Default Policies**: Policies are applied in order of their scope with the most specific policies considered before the more general policies. The phone’s default behavior applies to all applications and all domains and is only used when no other, more specific policy is available. The default policy is to use any available Wi-Fi network first and then any available APN.
+**Default Policies**: Policies are applied in the order of their scope with the most specific policies considered before the more general policies. The phone’s default behavior applies to all applications and all domains and is only used when no other, more specific policy is available. The default policy is to use any available Wi-Fi network first and then any available APN.
 
 The following shows the CMPolicyEnterprise configuration service provider management object in tree format as used by both Open Mobile Alliance (OMA) Client Provisioning and OMA Device Management.
 
@@ -72,7 +85,8 @@ Specifies whether the list of connections is in preference order.
 A value of "0" specifies that the connections aren't listed in order of preference. A value of "1" indicates that the listed connections are in order of preference.
 
 <a href="" id="connxxx"></a>**Conn**<strong>*XXX*</strong>  
-Enumerates the connections associated with the policy. Element names begin with "Conn" followed by three digits that increment starting from "000". For example, a policy applied to five connections would have element entries named "Conn000", "Conn001", "Conn002", "Conn003", and "Conn004".
+
+Enumerates the connections associated with the policy. Element names begin with "Conn" followed by three-digits, which increment starting from "000". For example, a policy which applied to five connections would have element entries named "Conn000", "Conn001", "Conn002", "Conn003", and "Conn004".
 
 <a href="" id="connectionid"></a>**ConnectionID**  
 Specifies a unique identifier for a connection within a group of connections. The exact value is based on the Type parameter.
@@ -90,7 +104,6 @@ For `CMST_CONNECTION_TYPE`, specify the GUID for the desired connection type. Th
 |Wi-Fi|{8568B401-858E-4B7B-B3DF-0FD4927F131B}|
 |Wi-Fi hotspot|{072FC7DC-1D93-40D1-9BB0-2114D7D73434}|
 
- 
 
 For `CMST_CONNECTION_NETWORK_TYPE`, specify the GUID for the desired network type. The curly brackets {} around the GUID are required. The following network types are available:
 
@@ -132,7 +145,6 @@ Specifies the type of connection being referenced. The following list describes 
 - `CMST_CONNECTION_DEVICE_TYPE` – Any connection of the specified network type.
 
 ## OMA client provisioning examples
-
 
 Adding an application-based mapping policy. In this example, the ConnectionId for type CMST\_CONNECTION\_NAME is set to the name of the connection (“GPRSConn1”) that is configured with the CM\_CellularEntries configuration service provider.
 
@@ -226,7 +238,6 @@ Adding a host-based mapping policy. In this example, the ConnectionId for type C
 ```
 
 ## OMA DM examples
-
 
 Adding an application-based mapping policy:
 
@@ -364,7 +375,6 @@ Adding a host-based mapping policy:
 
 ## Microsoft Custom Elements
 
-
 |Element|Available|
 |--- |--- |
 |parm-query|Yes|
@@ -372,7 +382,6 @@ Adding a host-based mapping policy:
 |characteristic-query|Yes<br> <br>Recursive query: Yes<br> <br>Top level query: Yes|
 
 ## Related topics
-
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 

@@ -12,7 +12,6 @@ manager: kaushika
 audience: ITPro
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
-ms.date: 10/7/2019
 ms.custom: bitlocker
 ---
 
@@ -36,7 +35,11 @@ You can use the following steps on computers that have either x64 or x32 UEFI sy
 1. Open an elevated Command Prompt window and run the following command:
 
    ```cmd
-   manage-bde protectors get <Drive>
+   manage-bde -protectors -get <Drive>
+   ```
+   
+   ```cmd
+   manage-bde -protectors -get C:
    ```
 
    where \<*Drive*> is the drive letter, followed by a colon (:), of the bootable drive.
