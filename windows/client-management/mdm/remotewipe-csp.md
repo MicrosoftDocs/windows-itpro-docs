@@ -40,7 +40,7 @@ RemoteWipe
 --------Status
 ```
 <a href="" id="dowipe"></a>**doWipe**  
-Specifies that a remote wipe of the device should be performed. The return status code indicates whether the device accepted the Exec command.
+Specifies that a remote wipe of the device should be performed. A remote wipe is the equivalent of running "Reset this PC > Remove everything" from the Settings app. The return status code indicates whether the device accepted the Exec command.
 
 When used with OMA Client Provisioning, a dummy value of "1" should be included for this element.
 
@@ -56,9 +56,9 @@ Supported operation is Exec.
 The information that was backed up will be restored and applied to the device when it resumes. The return status code shows whether the device accepted the Exec command.
 
 <a href="" id="doWipeProtected"></a>**doWipeProtected**  
-Added in Windows 10, version 1703. Exec on this node performs a remote wipe on the device and fully clean the internal drive. In some device configurations, this command may leave the device unable to boot. The return status code indicates whether the device accepted the Exec command.
+Added in Windows 10, version 1703. Exec on this node performs a remote wipe on the device and fully clean the internal drive. Drives that are cleaned with doWipeProtected aren't expected to meet industry or government standards for data cleaning. In some device configurations, this command may leave the device unable to boot. The return status code indicates whether the device accepted the Exec command.
 
-The doWipeProtected is functionally similar to doWipe. But unlike doWipe, which can be easily circumvented by simply power cycling the device, doWipeProtected will keep trying to reset the device until it’s done.
+The doWipeProtected is functionally similar to doWipe. But unlike doWipe, which can be easily circumvented by simply power cycling the device, doWipeProtected will keep trying to reset the device until it’s done. Because doWipeProtected will keep trying to reset the device until it's done, use doWipeProtected in lost/stolen device scenarios.
 
 Supported operation is Exec.
 
