@@ -1,17 +1,12 @@
 ---
 title: Implementing Your Windows Defender Firewall with Advanced Security Design Plan (Windows)
 description: Implementing Your Windows Defender Firewall with Advanced Security Design Plan
-ms.assetid: 15f609d5-5e4e-4a71-9eff-493a2e3e40f9
 ms.reviewer: 
 ms.author: dansimp
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021

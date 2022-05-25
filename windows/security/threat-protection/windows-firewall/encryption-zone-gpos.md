@@ -1,17 +1,12 @@
 ---
 title: Encryption Zone GPOs (Windows)
 description: Learn how to add a device to an encryption zone by adding the device account to the encryption zone group in Windows Defender Firewall with Advanced Security.
-ms.assetid: eeb973dd-83a5-4381-9af9-65c43c98c29b
 ms.reviewer: 
 ms.author: dansimp
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021

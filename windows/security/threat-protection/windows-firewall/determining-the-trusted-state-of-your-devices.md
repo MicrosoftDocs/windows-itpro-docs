@@ -1,17 +1,12 @@
 ---
 title: Determining the Trusted State of Your Devices (Windows)
 description: Learn how to define the trusted state of devices in your enterprise to help design your strategy for using Windows Defender Firewall with Advanced Security.
-ms.assetid: 3e77f0d0-43aa-47dd-8518-41ccdab2f2b2
 ms.reviewer: 
 ms.author: dansimp
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/07/2021
