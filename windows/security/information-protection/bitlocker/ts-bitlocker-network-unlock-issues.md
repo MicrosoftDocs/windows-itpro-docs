@@ -40,11 +40,11 @@ You can use the following steps on computers with either x64 or x32 UEFI firmwar
    manage-bde -protectors -get C:
    ```
 
-   where `<Drive>` is the drive letter, followed by a colon (`:`), of the bootable drive.
+   Where `<Drive>` is the drive letter, followed by a colon (`:`), of the bootable drive.
    If the output of this command includes a key protector of type **TpmCertificate (9)**, the configuration is correct for BitLocker network unlock.
 
 1. Start Registry Editor, and verify the following settings:
-   - Entry `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\FVE: OSManageNKP` is set to `1`
+   - Entry `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\FVE: OSManageNKP` is set to `1`.
    - Subkey `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SystemCertificates\FVE_NKP\Certificates` has an entry whose name matches the name of the certificate thumbprint of the network unlock key protector that you found in step 1.
 
 ## 1. On a Surface Pro 4 device, BitLocker network unlock doesn't work because the UEFI network stack is incorrectly configured
@@ -83,7 +83,7 @@ A DHCP server that supports BOOTP clients must interact with those clients accor
 
 If a DHCP server that isn't configured to support BOOTP clients receives a BOOTREQUEST message from a BOOTP client, that server silently discards the BOOTREQUEST message.
 
-For more information about DHCP and BitLocker network unlock, see [BitLocker: How to enable network unlock: network unlock sequence](/windows/device-security/bitlocker/bitlocker-how-to-enable-network-unlock#network-unlock-sequence)
+For more information about DHCP and BitLocker network unlock, see [BitLocker: How to enable network unlock: network unlock sequence](/windows/device-security/bitlocker/bitlocker-how-to-enable-network-unlock#network-unlock-sequence).
 
 ### Resolution for issue 2
 
