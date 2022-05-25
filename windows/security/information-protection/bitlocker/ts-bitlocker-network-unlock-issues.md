@@ -38,7 +38,7 @@ You can use the following steps on computers that have either x64 or x32 UEFI sy
    manage-bde -protectors -get <Drive>
    ```
    
-   ``` example cmd
+   ```cmd
    manage-bde -protectors -get C:
    ```
 
