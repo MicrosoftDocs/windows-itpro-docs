@@ -86,7 +86,7 @@ None. Changes to this policy become effective without a restart when saved local
 
 ### Group Policy
 
-Setting and deploying this policy using Group Policy takes precedence over the setting on the local device. If the Group Policy is set to **Not Configured**, local settings will apply.
+Setting and deploying this policy using Group Policy takes precedence over the setting on the local device. If the Group Policy is set to **Not Configured**, local settings will apply. The policy is applicable to domain controllers only.
 
 ### Auditing
 
