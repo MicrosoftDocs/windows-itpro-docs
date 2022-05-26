@@ -506,7 +506,7 @@ This node determines whether or not the client will automatically initiate a MDM
 
 Supported operations are Get, Add, Replace and Delete.
 
-Default value is 0.
+The supported values for this node are 1-true (allow) and 0-false(not allow). Default value is 0.
 
 <a href="" id="provider-providerid-recovery-recoverystatus"></a>**Provider/*ProviderID*/Recovery/RecoveryStatus**
 
