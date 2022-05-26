@@ -482,6 +482,7 @@ This is an execution node and will trigger a silent MMP-C unenroll, there is no 
 Support operation is Exec.
 
 <a href="" id="provider-providerid-linkedenrollment-enrollstatus"></a>**Provider/*ProviderID*/LinkedEnrollment/EnrollStatus**
+
 This node can be used to check both enroll and unenroll statuses.
 This will return the enroll action status and is defined as a enum class LinkedEnrollmentStatus. The values are aas follows:
 
@@ -496,12 +497,14 @@ This will return the enroll action status and is defined as a enum class LinkedE
 Support operation is Get only.
 
 <a href="" id="provider-providerid-linkedenrollment-lasterror"></a>**Provider/*ProviderID*/LinkedEnrollment/LastError**
+
 This specifies the Hresult to report the enrollment/unenroll results.
 
 <a href="" id="provider-providerid-recovery-allowrecovery"></a>**Provider/*ProviderID*/Recovery/AllowRecovery**
+
 This node determines whether or not the client will automatically initiate a MDM Recovery operation when it detects issues with the MDM certificate.
 
-Supported operations are Get, Add, Replace, Delete. 
+Supported operations are Get, Add, Replace and Delete.
 
 Default value is 0
 
@@ -532,11 +535,12 @@ If initiated with argument 1, it triggers only if the MDM certificate’s privat
 Supported operation is Exec only.
 
 <a href="" id="provider-providerid-multiplesession-numallowedconcurrentusersessionforbackgroundsync"></a>**Provider/*ProviderID*/MultipleSession/NumAllowedConcurrentUserSessionForBackgroundSync**
+
 Optional. This node specifies maximum number of concurrent user sync sessions in background. Default value is 25.
 
 The values are : 0= none, 1= sequential, anything else=  parallel.
 
-Supported operations are Get, Add, Replace and Delete. 
+Supported operations are Get, Add, Replace and Delete.
 
 Value type is integer. Only applicable for Windows 10 multi-session.
 
