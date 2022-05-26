@@ -506,21 +506,21 @@ This node determines whether or not the client will automatically initiate a MDM
 
 Supported operations are Get, Add, Replace and Delete.
 
-Default value is 0
+Default value is 0.
 
 <a href="" id="provider-providerid-recovery-recoverystatus"></a>**Provider/*ProviderID*/Recovery/RecoveryStatus**
 
 This node tracks the status of a Recovery request from the InitiateRecovery node. The values are as follows:
 
-- 0 - No Recovery request has been processed.  
-- 1 - Recovery is in Process.  
-- 2 - Recovery has finished successfully.
-- 3 - Recovery has failed to start because TPM is not available.  
-- 4 - Recovery has failed to start because AAD keys are not protected by the TPM.
-- 5 - Recovery has failed to start because the MDM keys are already protected by the TPM.
-- 6 - Recovery has failed to start because the TPM is not ready for attestation.
-- 7 - Recovery has failed because the client cannot authenticate to the server.  
-- 8 - Recovery has failed because the server has rejected the client's request.
+0 - No Recovery request has been processed.  
+1 - Recovery is in Process.  
+2 - Recovery has finished successfully.
+3 - Recovery has failed to start because TPM is not available.  
+4 - Recovery has failed to start because AAD keys are not protected by the TPM.
+5 - Recovery has failed to start because the MDM keys are already protected by the TPM.
+6 - Recovery has failed to start because the TPM is not ready for attestation.
+7 - Recovery has failed because the client cannot authenticate to the server.  
+8 - Recovery has failed because the server has rejected the client's request.
 
 Supported operation is Get only.
 
@@ -553,9 +553,6 @@ The values are : 0= none, 1= sequential, anything else= parallel.
 Supported operations are Get, Add, Replace and Delete. 
 
 Value type is integer. Only applicable for Windows 10 multi-session. 
-
->[!Note]
-> Max(NumAllowedConcurrentUserSession, NumAllowedConcurrentUserSessionAtUserLogon) + 1
 
 <a href="" id="provider-providerid-multiplesession-intervalforscheduledretriesforusersession"></a>**Provider/*ProviderID*/MultipleSession/IntervalForScheduledRetriesForUserSession**
 Optional. This node specifies the waiting time (in minutes) for the initial set of retries as specified by the number of retries in `/<ProviderID>/Poll/NumberOfScheduledRetriesForUserSession`. 
