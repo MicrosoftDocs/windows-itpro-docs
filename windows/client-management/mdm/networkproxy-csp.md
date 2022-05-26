@@ -13,11 +13,21 @@ manager: dansimp
 
 # NetworkProxy CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 The NetworkProxy configuration service provider (CSP) is used to configure a proxy server for ethernet and Wi-Fi connections. These settings do not apply to VPN connections. This CSP was added in Windows 10, version 1703.
 
 How the settings work:  
 
-- If auto-detect is enabled, the system tries to find the path to a proxy auto config (PAC) script and download it.
+- If auto-detect is enabled, the system tries to find the path to a Proxy Auto Config (PAC) script and download it.
 - If #1 fails and a setup script is specified, the system tries to download the explicitly configured PAC script.
 - If #2 fails and a proxy server is specified, the system tries to use the explicitly configured proxy server.
 - Otherwise, the system tries to reach the site directly.

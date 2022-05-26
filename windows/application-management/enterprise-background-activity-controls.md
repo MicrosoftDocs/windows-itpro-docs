@@ -8,7 +8,6 @@ ms.reviewer:
 manager: dougeby
 ms.topic: article
 ms.prod: w10
-keywords: windows 10, uwp, enterprise, background task, resources
 ---
 
 # Remove background task resource restrictions
