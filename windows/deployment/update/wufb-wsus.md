@@ -57,7 +57,8 @@ To help you better understand the scan source policy, see the default scan behav
 > [!TIP]
 > The only two relevant policies for where your updates come from are the specify scan source policy and whether or not you have configured a WSUS server. This should simplify the configuration options.
 
-Note - If you have devices configured for WSUS and do not configure the scan source policy for feature updates to come from Windows update or set any Windows Update for Business offering policies, then users who click "Check online for updates" on the Settings page may see the optional upgrade to Windows 11. We recommend configuring the scan source policy or a Windows Update for Business offering policy to prevent such.
+> [!NOTE]
+> If you have devices configured for WSUS and do not configure the scan source policy for feature updates to come from Windows update or set any Windows Update for Business offering policies, then users who select "Check online for updates" on the Settings page may see the optional upgrade to Windows 11. We recommend configuring the scan source policy or a Windows Update for Business offering policy to prevent such.
 
 ## Configure the scan sources
 
