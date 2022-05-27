@@ -34,6 +34,9 @@ manager: dansimp
   <dd>
     <a href="#accounts-domainnamesforemailsync">Accounts/DomainNamesForEmailSync</a>
   </dd>
+  <dd>
+    <a href="#accounts-restricttoenterprisedeviceauthenticationonly">Accounts/RestrictToEnterpriseDeviceAuthenticationOnly</a>
+  </dd>
 </dl>
 
 
@@ -211,6 +214,48 @@ The following list shows the supported values:
 <!--/Policy-->
 
 <hr/>
+
+<!--Policy-->
+<a href="" id="accounts-restricttoenterprisedeviceauthenticationonly"></a>**Accounts/RestrictToEnterpriseDeviceAuthenticationOnly**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|Yes|
+|Business|No|Yes|
+|Enterprise|No|Yes|
+|Education|No|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Added in Windows 11, version 22H2. This setting determines whether to only allow enterprise device authentication for the Microsoft Account Sign-in Assistant service (wlidsvc). By default, this setting is disabled and allows both user and device authentication. When the value is set to 1, we only allow device authentication and block user authentication.
+
+Most restricted value is 1.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) - Allow both device and user authentication.
+-   1 - Only allow device authentication. Block user authentication.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+<hr/>
+
 <!--/Policies-->
 
 <!--/Policies-->
