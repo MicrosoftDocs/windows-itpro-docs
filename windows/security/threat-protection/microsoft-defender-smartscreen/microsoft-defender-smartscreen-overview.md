@@ -12,6 +12,7 @@ ms.localizationpriority: high
 ms.reviewer: 
 manager: dansimp
 ms.technology: windows-sec
+adobe-target: true
 ---
 
 # Microsoft Defender SmartScreen
