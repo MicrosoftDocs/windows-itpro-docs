@@ -15,7 +15,6 @@ manager: dansimp
 # Policy CSP - Privacy
 
 
-
 <hr/>
 
 <!--Policies-->
@@ -328,7 +327,6 @@ Allows or disallows the automatic acceptance of the pairing and privacy user con
 > [!NOTE]
 > There were issues reported with the previous release of this policy and a fix was added in Windows 10, version 1709.
 
-
 Most restricted value is 0.
 
 <!--/Description-->
@@ -419,7 +417,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Updated in Windows 10, version 1809. This policy specifies whether users on the device have the option to enable online speech recognition. When enabled, users can use their voice for dictation and to talk to Cortana and other apps that use Microsoft cloud-based speech recognition. Microsoft will use voice input to help improve our speech services. If the policy value is set to 0, online speech recognition will be disabled and users cannot enable online speech recognition via settings. If policy value is set to 1 or is not configured, control is deferred to users.
+Updated in Windows 10, version 1809. This policy specifies whether users on the device have the option to enable online speech recognition. When enabled, users can use their voice for dictation, and talk to Cortana and other apps that use Microsoft cloud-based speech recognition. Microsoft will use voice input to help improve our speech services. If the policy value is set to 0, online speech recognition will be disabled and users cannot enable online speech recognition via settings. If policy value is set to 1 or is not configured, control is deferred to users.
 
 Most restricted value is 0.
 
@@ -523,7 +521,8 @@ The following list shows the supported values:
 <!--Description-->
 Enabling this policy prevents the privacy experience from launching during user logon for new and upgraded users.
 
-Value type is integer.  
+Supported value type is integer.  
+
 -  0 (default) - Allow the "choose privacy settings for your device" screen for a new user during their first logon or when an existing user logs in for the first time after an upgrade.
 -  1 - Do not allow the "choose privacy settings for your device" screen when a new user logs in or an existing user logs in for the first time after an upgrade.
 
@@ -591,7 +590,7 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Disabled. Apps/OS can't publish the activities and roaming is disabled. (not published to the cloud).
+-   0 – Disabled. Apps/OS can't publish the activities and roaming is disabled (not published to the cloud).
 -   1 – (default) Enabled. Apps/OS can publish the activities and will be roamed across device graph.
 
 <!--/SupportedValues-->
@@ -626,7 +625,6 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 Specifies whether Windows apps can access account information.
-
 
 Most restricted value is 2.
 
@@ -809,7 +807,7 @@ ADMX Info:
 
 Specifies whether Windows apps can access the movement of the user's head, hands, motion controllers, and other tracked objects, while the apps are running in the background.
 
-Value type is integer.
+Supported value type is integer.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -864,7 +862,7 @@ The following list shows the supported values:
 
 List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to the user's movements while the apps are running in the background. This setting overrides the default LetAppsAccessBackgroundSpatialPerception policy setting for the specified apps.
 
-Value type is chr.
+Supported value type is chr.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -914,7 +912,7 @@ ADMX Info:
 
 List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to the user's movements while the apps are running in the background. This setting overrides the default LetAppsAccessBackgroundSpatialPerception policy setting for the specified apps.
 
-Value type is chr.
+Supported value type is chr.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -965,7 +963,7 @@ ADMX Info:
 List of semi-colon delimited Package Family Names of Windows Store Apps. 
 The user is able to control the user movements privacy setting for the listed apps. This setting overrides the default LetAppsAccessBackgroundSpatialPerception policy setting for the specified apps.
 
-Value type is chr.
+Supported value type is chr.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1011,7 +1009,6 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 Specifies whether Windows apps can access the calendar.
-
 
 Most restricted value is 2.
 
@@ -1191,7 +1188,6 @@ ADMX Info:
 <!--Description-->
 Specifies whether Windows apps can access call history.
 
-
 Most restricted value is 2.
 
 <!--/Description-->
@@ -1369,7 +1365,6 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 Specifies whether Windows apps can access the camera.
-
 
 Most restricted value is 2.
 
@@ -1549,7 +1544,6 @@ ADMX Info:
 <!--Description-->
 Specifies whether Windows apps can access contacts.
 
-
 Most restricted value is 2.
 
 <!--/Description-->
@@ -1727,7 +1721,6 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 Specifies whether Windows apps can access email.
-
 
 Most restricted value is 2.
 
@@ -2039,7 +2032,6 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. The use
 <!--Description-->
 Specifies whether Windows apps can access location.
 
-
 Most restricted value is 2.
 
 <!--/Description-->
@@ -2217,7 +2209,6 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 Specifies whether Windows apps can read or send messages (text or MMS).
-
 
 Most restricted value is 2.
 
@@ -2397,7 +2388,6 @@ ADMX Info:
 <!--Description-->
 Specifies whether Windows apps can access the microphone.
 
-
 Most restricted value is 2.
 
 <!--/Description-->
@@ -2575,7 +2565,6 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 Specifies whether Windows apps can access motion data.
-
 
 Most restricted value is 2.
 
@@ -2755,7 +2744,6 @@ ADMX Info:
 <!--Description-->
 Specifies whether Windows apps can access notifications.
 
-
 Most restricted value is 2.
 
 <!--/Description-->
@@ -2934,7 +2922,6 @@ ADMX Info:
 <!--Description-->
 Specifies whether Windows apps can make phone calls.
 
-
 Most restricted value is 2.
 
 <!--/Description-->
@@ -3112,7 +3099,6 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 Specifies whether Windows apps have access to control radios.
-
 
 Most restricted value is 2.
 
@@ -3460,7 +3446,6 @@ ADMX Info:
 <!--Description-->
 Specifies whether Windows apps can access trusted devices.
 
-
 Most restricted value is 2.
 
 <!--/Description-->
@@ -3739,7 +3724,6 @@ The following list shows the supported values:
 <!--Description-->
 Force allow, force deny or give user control of apps that can get diagnostic information about other running apps.
 
-
 Most restricted value is 2.
 
 <!--/Description-->
@@ -3918,8 +3902,8 @@ ADMX Info:
 <!--Description-->
 Specifies whether Windows apps can run in the background.
 
-
 Most restricted value is 2.
+
 > [!WARNING]
 > Be careful when determining which apps should have their background activity disabled. Communication apps normally update tiles and notifications through background processes. Turning off background activity for these types of apps could cause text message, email, and voicemail notifications to not function. This could also cause background email syncing to not function properly.
 
@@ -4013,7 +3997,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied the ability to run in the background. This setting overrides the default LetAppsRunInBackground policy setting for the specified apps.
+List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied the ability, to run in the background. This setting overrides the default LetAppsRunInBackground policy setting for the specified apps.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -4098,7 +4082,6 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 Specifies whether Windows apps can sync with devices.
-
 
 Most restricted value is 2.
 
@@ -4276,7 +4259,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Allows It Admins to enable publishing of user activities to the activity feed.
+Allows IT Admins to enable publishing of user activities to the activity feed.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -4340,3 +4323,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

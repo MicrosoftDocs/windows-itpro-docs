@@ -93,11 +93,11 @@ manager: dansimp
 </dl>
 
 > [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 > 
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 > 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 
 <hr/>
@@ -341,7 +341,7 @@ If you enable this policy setting, you must provide a value, in seconds, indicat
 
 If you disable or don't configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this slide show can prevent the display from turning off.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this slide show can prevent the display from turning off. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 
 <!--/Description-->
 
@@ -500,7 +500,7 @@ If you enable this policy setting, you must provide a value, in seconds, indicat
 
 If you disable or don't configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this slide show can prevent the sleep transition from occurring.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this slide show can prevent the sleep transition from occurring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 
 <!--/Description-->
 
@@ -548,10 +548,9 @@ If you enable this policy setting, you must provide a value, in seconds, indicat
 
 If you disable or don't configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this slide show can prevent the sleep transition from occurring.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this slide show can prevent the sleep transition from occurring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 
 <!--/Description-->
-
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -1103,7 +1102,7 @@ If you enable this policy setting, you must provide a value, in seconds, indicat
 
 If you disable or don't configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this slide show can prevent the sleep transition from occurring.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this slide show can prevent the sleep transition from occurring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 
 <!--/Description-->
 
@@ -1163,8 +1162,8 @@ ADMX Info:
 <!--SupportedValues-->
 
 The following are the supported values for Hybrid sleep (on battery):
--   0 - no hibernation file for sleep (default)
--   1 - hybrid sleep
+-   0 - no hibernation file for sleep (default).
+-   1 - hybrid sleep.
 
 <!--/SupportedValues-->
 <!--Example-->
@@ -1221,8 +1220,8 @@ ADMX Info:
 <!--SupportedValues-->
 
 The following are the supported values for Hybrid sleep (plugged in):
--   0 - no hibernation file for sleep (default)
--   1  - hybrid sleep
+-   0 - no hibernation file for sleep (default).
+-   1  - hybrid sleep.
 
 <!--/SupportedValues-->
 <!--Example-->
@@ -1353,3 +1352,6 @@ Default value for unattended sleep timeout (plugged in):
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)
