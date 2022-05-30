@@ -14,8 +14,6 @@ manager: dansimp
 
 # Policy CSP - Notifications
 
-
-
 <hr/>
 
 <!--Policies-->
@@ -71,7 +69,7 @@ If you enable this policy setting, applications and system features won't be abl
 
 If you enable this policy setting, notifications can still be raised by applications running on the machine via local API calls from within the application.
 
-If you disable or don't configure this policy setting, the client computer will connect to WNS at user sign in and applications will be allowed to use periodic (polling) notifications.
+If you disable or don't configure this policy setting, the client computer will connect to WNS at user sign in, and applications will be allowed to use periodic (polling) notifications.
 
 No reboots or service restarts are required for this policy setting to take effect.
 
@@ -93,9 +91,9 @@ This setting supports a range of values between 0 and 1.
 <!--/SupportedValues-->
 <!--Validation-->
 Validation:  
-1. Enable policy
-2. Reboot machine
-3. Ensure that you can't receive a notification from Facebook app while FB app isn't running
+1. Enable policy.
+2. Reboot machine.
+3. Ensure that you can't receive a notification from Facebook app while FB app isn't running.
 
 <!--/Validation-->
 <!--/Policy-->
@@ -130,7 +128,7 @@ Validation:
 <!--Description-->
 Boolean value that turns off notification mirroring.
 
-For each user signed in to the device, if you enable this policy (set value to 1) the app and system notifications received by this user on this device won't get mirrored to other devices of the same signed-in user. If you disable or don't configure this policy (set value to 0), the notifications received by this user on this device will be mirrored to other devices of the same signed-in user. This feature can be turned off by apps that don't want to participate in Notification Mirroring. This feature can also be turned off by the user in the Cortana setting page.
+For each user signed in to the device, if you enable this policy (set value to 1), the app and system notifications received by this user on this device won't get mirrored to other devices of the same signed-in user. If you disable or don't configure this policy (set value to 0), the notifications received by this user on this device will be mirrored to other devices of the same signed-in user. This feature can be turned off by apps that don't want to participate in Notification Mirroring. This feature can also be turned off by the user in the Cortana setting page.
 
 No reboot or service restart is required for this policy to take effect.
 
@@ -203,9 +201,9 @@ This setting supports a range of values between 0 and 1.
 <!--/SupportedValues-->
 <!--Validation-->
 Validation:  
-1. Enable policy
-2. Reboot machine
-3. Ensure that all tiles are default (no live tile content showing, like no weather forecast on the Weather tile)
+1. Enable policy.
+2. Reboot machine.
+3. Ensure that all tiles are default (no live tile content showing, like no weather forecast on the Weather tile).
 
 <!--/Validation-->
 <!--/Policy-->
@@ -265,7 +263,8 @@ This policy setting determines which Windows Notification Service endpoint will 
 
 If you disable or don't configure this setting, the push notifications will connect to the default endpoint of client.wns.windows.com.
 
-Note: Ensure the proper WNS FQDNs, VIPs, IPs and Ports are also allowlisted from your firewall settings.
+> [!NOTE]
+> Ensure the proper WNS FQDNs, VIPs, IPs and Ports are also allowlisted from your firewall settings.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -285,3 +284,7 @@ If the policy isn't specified, we'll default our connection to client.wns.window
 
 
 <!--/Policies-->
+
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

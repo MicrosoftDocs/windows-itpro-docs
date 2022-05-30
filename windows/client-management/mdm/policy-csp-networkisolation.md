@@ -14,8 +14,6 @@ manager: dansimp
 
 # Policy CSP - NetworkIsolation
 
-
-
 <hr/>
 
 <!--Policies-->
@@ -47,7 +45,6 @@ manager: dansimp
     <a href="#networkisolation-neutralresources">NetworkIsolation/NeutralResources</a>
   </dd>
 </dl>
-
 
 <hr/>
 
@@ -174,7 +171,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <!--/Scope-->
 <!--Description-->
-Integer value that tells the client to accept the configured list and not to use heuristics to attempt to find other subnets.
+Integer value that tells the client to accept the configured list and not to use heuristics to attempt and find other subnets.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -257,11 +254,10 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This list is the list of domains that comprise the boundaries of the enterprise. Data from one of these domains that is sent to a device will be considered enterprise data and protected. These locations will be considered a safe destination for enterprise data to be shared to. This list is a comma-separated list of domains, for example "contoso.sharepoint.com, Fabrikam.com".
+This is a list of domains that comprise the boundaries of the enterprise. Data from one of these domains that is sent to a device will be considered enterprise data and protected. These locations will be considered a safe destination for enterprise data to be shared to. This list is a comma-separated list of domains, for example "contoso.sharepoint.com, Fabrikam.com".
 
 > [!NOTE]
 > The client requires domain name to be canonical, otherwise the setting will be rejected by the client.
- 
 
 Here are the steps to create canonical domain names:
 
@@ -400,3 +396,7 @@ ADMX Info:
 
 
 <!--/Policies-->
+
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

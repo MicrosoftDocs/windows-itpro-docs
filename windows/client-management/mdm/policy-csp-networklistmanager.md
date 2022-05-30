@@ -14,7 +14,6 @@ manager: dansimp
 
 # Policy CSP - NetworkListManager
 
-
 <hr/>
 
 <!--Policies-->
@@ -28,7 +27,6 @@ manager: dansimp
     <a href="#networklistmanager-configuredtlsauthenticationnetworkname">NetworkListManager/ConfiguredTLSAuthenticationNetworkName</a>
   </dd>
 </dl>
-
 
 <hr/>
 
@@ -107,3 +105,6 @@ This policy setting provides the string that is to be used to name a network. Th
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)
