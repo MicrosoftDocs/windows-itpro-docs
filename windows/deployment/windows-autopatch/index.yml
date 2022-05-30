@@ -28,11 +28,6 @@ landingContent:
             url: ./overview/windows-autopatch-overview.md
           - text: Windows Autopatch FAQ
             url: ./overview/windows-autopatch-faq.md
-      - linkListType: prepare
-        links:
-          - text: Prepare
-            url: ./prepare/index.md
-
   
   # Card (optional)
   - title: Articles and blog posts
