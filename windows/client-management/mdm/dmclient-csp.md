@@ -514,11 +514,11 @@ This node tracks the status of a Recovery request from the InitiateRecovery node
 
 0 - No Recovery request has been processed.  
 1 - Recovery is in Process.  
-2 - Recovery has finished successfully.
+2 - Recovery has finished successfully.  
 3 - Recovery has failed to start because TPM is not available.  
-4 - Recovery has failed to start because AAD keys are not protected by the TPM.
-5 - Recovery has failed to start because the MDM keys are already protected by the TPM.
-6 - Recovery has failed to start because the TPM is not ready for attestation.
+4 - Recovery has failed to start because AAD keys are not protected by the TPM.  
+5 - Recovery has failed to start because the MDM keys are already protected by the TPM.  
+6 - Recovery has failed to start because the TPM is not ready for attestation.  
 7 - Recovery has failed because the client cannot authenticate to the server.  
 8 - Recovery has failed because the server has rejected the client's request.
 
