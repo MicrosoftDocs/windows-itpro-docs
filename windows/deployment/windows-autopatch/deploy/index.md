@@ -14,7 +14,7 @@ msreviewer: hathind
 
 # Deploying with Windows Autopatch
 
-These articles describe the steps you'll need to take deploy with Windows Autopatch including:
+The following articles describe the steps you must take to deploy your devices with Windows Autopatch:
 
-- [Add and verify admin contacts](windows-autopatch-admin-contacts.md)
-- [Register devices](windows-autopatch-register-devices.md)
+1. [Add and verify admin contacts](windows-autopatch-admin-contacts.md)
+1. [Register devices](windows-autopatch-register-devices.md)

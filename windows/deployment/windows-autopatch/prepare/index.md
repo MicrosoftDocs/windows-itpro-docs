@@ -14,9 +14,9 @@ msreviewer: hathind
 
 # Preparing for Windows Autopatch
 
-These articles describe the steps you'll need to take to prepare for Windows Autopatch, including:
+The following articles describe the steps you must take to onboard with Windows Autopatch:
 
-- [Review the prerequisites](windows-autopatch-prerequisites.md)
-- [Configure your network](windows-autopatch-configure-network.md)
-- [Enroll your tenant](windows-autopatch-enroll-tenant.md)
-- [Fix issues found in the Readiness assessment tool](windows-autopatch-fix-issues.md)
+1. [Review the prerequisites](windows-autopatch-prerequisites.md)
+1. [Configure your network](windows-autopatch-configure-network.md)
+1. [Enroll your tenant](windows-autopatch-enroll-tenant.md)
+1. [Fix issues found in the Readiness assessment tool](windows-autopatch-fix-issues.md)

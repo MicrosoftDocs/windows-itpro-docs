@@ -14,7 +14,7 @@ msreviewer: hathind
 
 # Operating with Windows Autopatch
 
-This section includes information about your day-to-day life with the service:
+This section includes information about Windows Autopatch update management, types of updates managed by Windows Autopatch, and how to contact the Windows Autopatch Service Engineering Team:
 
 - [Update management](windows-autopatch-update-management.md)
 - [Windows quality updates](windows-autopatch-wqu-overview.md)
