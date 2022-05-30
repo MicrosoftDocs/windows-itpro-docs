@@ -25,13 +25,13 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Windows Autopatch?
-            url: overview/windows-autopatch-overview.md
+            url: ./overview/windows-autopatch-overview.md
           - text: Windows Autopatch FAQ
-            url: overview/windows-autopatch-faq.md
+            url: ./overview/windows-autopatch-faq.md
       - linkListType: prepare
         links:
           - text: Prepare
-            url: prepare/index.md
+            url: ./prepare/index.md
 
   
   # Card (optional)
