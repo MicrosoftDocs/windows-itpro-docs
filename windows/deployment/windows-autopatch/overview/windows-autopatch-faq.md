@@ -56,7 +56,7 @@ msreviewer: hathind
 
 | Question | Answer |
 | ----- | ----- |
-| What support is available for customers who need help with onboarding to Windows Autopatch? | The FastTrack Center is the primary mode of support for customers who need assistance from Microsoft to meet the pre-requisites (such as Intune and Azure or Hybrid AD) for onboarding to Windows Autopatch. For more information, see [Microsoft FastTrack for Windows Autopatch](../operate/windows-autopatch-support-request.md#Micrsoft-FastTrack).<p><p>When you've onboarded with Windows Autopatch, you can [submit a support request](../operate/windows-autopatch-support-request.md) with the Windows Autopatch Service Engineering Team. |
+| What support is available for customers who need help with onboarding to Windows Autopatch? | The FastTrack Center is the primary mode of support for customers who need assistance from Microsoft to meet the pre-requisites (such as Intune and Azure or Hybrid AD) for onboarding to Windows Autopatch. For more information, see [Microsoft FastTrack for Windows Autopatch](../operate/windows-autopatch-support-request.md#microsoft-fasttrack).<p><p>When you've onboarded with Windows Autopatch, you can [submit a support request](../operate/windows-autopatch-support-request.md) with the Windows Autopatch Service Engineering Team. |
 
 ## Other
 

@@ -42,7 +42,7 @@ The following Windows 64-bit editions are required for Windows Autopatch:
 Windows Autopatch fully supports co-management. The following co-management requirements apply:
 
 - Use a currently supported [Configuration Manager version](/mem/configmgr/core/servers/manage/updates#supported-versions).
-- Ensure ConfigMgr is connected to the internet and [cloud-attach with Intune](mem/configmgr/cloud-attach/overview).
+- Ensure ConfigMgr is connected to the internet and [cloud-attach with Intune](/mem/configmgr/cloud-attach/overview).
 - Ensure ConfigMgr is co-managed. For more information, see [Paths to co-management](/mem/configmgr/comanage/quickstart-paths).
 - Set the [Windows Update workload](/mem/configmgr/comanage/workloads#windows-update-policies) to Pilot Intune or Intune.
 - Set the [Device configuration workload](/mem/configmgr/comanage/workloads#device-configuration) to Pilot Intune or Intune.

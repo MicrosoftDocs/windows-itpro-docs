@@ -65,7 +65,7 @@ The following articles describe the mandatory steps to prepare for enrollment, i
 
 - [Prerequisites](../prepare/windows-autopatch-prerequisites.md)
 - [Configure your network](../prepare/windows-autopatch-configure-network.md)
-- [Enroll your tenant with Windows Autopatch](../prepare/windows-enroll-tenant.md)
+- [Enroll your tenant with Windows Autopatch](../prepare/windows-autopatch-enroll-tenant.md)
 - [Fix issues found by the Readiness assessment tool](../prepare/windows-autopatch-fix-issues.md)
 
 ### Deploy

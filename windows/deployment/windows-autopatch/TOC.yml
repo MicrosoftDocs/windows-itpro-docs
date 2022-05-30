@@ -9,7 +9,7 @@
         - name: FAQ
           href: overview/windows-autopatch-faq.md
     - name: Prepare
-      href:
+      href: prepare/index.md
       items: 
         - name: Prerequisites
           href: prepare/windows-autopatch-prerequisites.md
@@ -20,14 +20,14 @@
         - name: Fix issues found by the Readiness assessment tool
           href: prepare/windows-autopatch-fix-issues.md
     - name: Deploy
-      href:
+      href: deploy/index.md
       items:
         - name: Add and verify admin contacts
           href: deploy/windows-autopatch-admin-contacts.md
         - name: Register your devices
           href: deploy/windows-autopatch-register-devices.md
     - name: Operate
-      href: 
+      href: operate/index.md
       items:
         - name: Update management
           href: operate/windows-autopatch-update-management.md
