@@ -93,7 +93,7 @@ A role defines the set of permissions granted to users assigned to that role. Yo
 Once devices or Azure AD groups containing devices are added to the **Windows Autopatch Device Registration** group, Windows Autopatch discovers these devices and runs device-level prerequisite checks to try to register them.
 
 > [!IMPORTANT]
-> It might take up to an hour for devices to change its statuses from **Ready for User** to **Active** in the Ready tab during the public preview.
+> It might take up to an hour for a device to change its statuses from **Ready for User** to **Active** in the Ready tab during the public preview.
 
 ## Other device lifecycle management scenarios
 
