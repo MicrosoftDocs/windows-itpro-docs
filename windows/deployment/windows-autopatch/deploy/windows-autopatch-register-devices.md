@@ -25,7 +25,18 @@ Windows Autopatch to take over software updates management of supported devices 
 - [Microsoft Edge updates](../operate/windows-autopatch-edge.md)
 - [Microsoft Teams updates](../operate/windows-autopatch-teams.md)
 
-You must choose what devices to manage with Windows Autopatch by adding either devices through direct membership or by adding other Azure Active Directory (Azure AD) dynamic/assigned groups into the Azure Active Directory assigned **Windows Autopatch Device Registration** group. Windows Autopatch runs every hour to discover new devices added to this group. Once new devices are discovered, Windows Autopatch attempts to register these devices into its service.
+You must choose what devices to manage with Windows Autopatch by adding either devices through direct membership or by nesting other Azure Active Directory (Azure AD) dynamic/assigned groups into the Azure Active Directory assigned **Windows Autopatch Device Registration** group. Windows Autopatch runs every hour to discover new devices added to this group. Once new devices are discovered, Windows Autopatch attempts to register these devices into its service.
+
+### Other nested Azure AD group supported scenarios
+
+Windows Autopatch also supports the following Azure AD nested group scenarios:
+
+- Azure AD groups synced up from:
+	- On-premises Active Directory groups (Windows server type).
+	- [Configuration Manager collections](/mem/configmgr/core/clients/manage/collections/create-collections#bkmk_aadcollsync).
+
+> [!IMPORTANT]
+> The **Windows Autopatch Device Registration** Azure AD group only supports one level of Azure AD nested groups.
 
 > [!TIP]
 > You can also use the **Discover Devices** button in either the Ready or Not ready tabs to discover devices from the Windows Autopatch Device Registration Azure AD group on demand.
@@ -34,13 +45,14 @@ To be eligible for Windows Autopatch management, devices must meet a minimum set
 
 ## Prerequisites
 
-- Windows 10/11 Enterprise edition 1809+.
+- Windows 10/11 64-bit Enterprise edition 1809+.
 - Either hybrid or Azure AD joined (personal devices aren't supported).
-- Managed by Microsoft Endpoint Manager (either Microsoft Endpoint Manager-Intune or Microsoft Endpoint Manager-Configuration Manager Co-management).
-- Microsoft Endpoint Manager-Configuration Manager Co-management workloads swung over to Microsoft Endpoint Manager-Intune (either set to Pilot Intune or Intune).
-	- Windows Updates policies
-	- Device configuration
-	- Office Click-to-run
+- Managed by Microsoft Endpoint Manager
+	- Microsoft Endpoint Manager-Intune or Microsoft Endpoint Manager-Configuration Manager Co-management.
+		- Microsoft Endpoint Manager-Configuration Manager Co-management workloads swung over to Microsoft Endpoint Manager-Intune (either set to Pilot Intune or Intune).
+			- Windows Updates policies
+			- Device configuration
+			- Office Click-to-run
 - Last Intune device check-in completed within the last 28 days.  
 
 For more information about each prerequisite check, see the [Prerequisites](../prepare/windows-autopatch-prerequisites.md) article.
@@ -79,6 +91,9 @@ A role defines the set of permissions granted to users assigned to that role. Yo
 5. Add either devices through direct membership or other Azure Active Directory dynamic or assigned groups as nested groups in the **Windows Autopatch Device Registration** group.
 
 Once devices or Azure AD groups containing devices are added to the **Windows Autopatch Device Registration** group, Windows Autopatch discovers these devices and runs device-level prerequisite checks to try to register them.
+
+> [!IMPORTANT]
+> It might take up to an hour for a device to change its statuses from **Ready for User** to **Active** in the Ready tab during the public preview.
 
 ## Other device lifecycle management scenarios
 
