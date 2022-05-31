@@ -1,7 +1,7 @@
 ---
 title: Register your devices
 description:  This article details how to register devices in Autopatch
-ms.date: 05/30/2022
+ms.date: 05/31/2022
 ms.prod: w11
 ms.technology: windows
 ms.topic: how-to
@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
-msreviewer: hathind
+msreviewer: andredm7
 ---
 
 # Register your devices
@@ -25,16 +25,22 @@ Windows Autopatch to take over software updates management of supported devices 
 - [Microsoft Edge updates](../operate/windows-autopatch-edge.md)
 - [Microsoft Teams updates](../operate/windows-autopatch-teams.md)
 
-You must choose what devices to manage with Windows Autopatch by adding either devices through direct membership or by adding other Azure Active Directory (Azure AD) dynamic groups into the Azure Active Directory assigned **Windows Autopatch Device Registration** group. Windows Autopatch runs every hour to discover new devices added to this group. Once new devices are discovered, Windows Autopatch attempts to register these devices into its service.
+You must choose what devices to manage with Windows Autopatch by adding either devices through direct membership or by adding other Azure Active Directory (Azure AD) dynamic/assigned groups into the Azure Active Directory assigned **Windows Autopatch Device Registration** group. Windows Autopatch runs every hour to discover new devices added to this group. Once new devices are discovered, Windows Autopatch attempts to register these devices into its service.
+
+> [!TIP]
+> You can also use the **Discover Devices** button in either the Ready or Not Ready tabs to discover devices from the Windows Autopatch Device Registration Azure AD group on demand.
 
 To be eligible for Windows Autopatch management, devices must meet a minimum set of required software-based prerequisites:
 
 ## Prerequisites
 
-- Supported Windows OS Enterprise edition version.
+- Windows 10/11 Enterprise edition 1809+.
 - Either hybrid or Azure AD joined (personal devices aren't supported).
 - Managed by Microsoft Endpoint Manager (either Microsoft Endpoint Manager-Intune or Microsoft Endpoint Manager-Configuration Manager Co-management).
-- Microsoft Endpoint Manager-Configuration Manager Co-management workloads (Windows Updates policies, Device configuration and Office Click-to-run) must be set to Pilot Intune or Intune.
+- Microsoft Endpoint Manager-Configuration Manager Co-management workloads swung over to Microsoft Endpoint Manager-Intune (either set to Pilot Intune or Intune).
+	- Windows Updates policies
+	- Device configuration
+	- Office Click-to-run
 - Last Intune device check-in completed within the last 28 days.  
 
 For more information about each prerequisite check, see the [Prerequisites](../prepare/windows-autopatch-prerequisites.md) article.
@@ -45,14 +51,17 @@ Windows Autopatch introduces a new user interface to help IT admins manage devic
 
 | Tab | Purpose |
 | ----- | ----- |
-| Ready tab | The purpose of the Ready tab is to show devices that were successfully registered to the Windows Autopatch service and that have met device health requirements. |
+| Ready tab | The purpose of the Ready tab is to show devices that were successfully registered to the Windows Autopatch service and that have met on-going device health requirements. |
 | Not ready tab | The purpose of the Not ready tab is to show devices that didn't successfully register into the Windows Autopatch service, or didn't pass one of the device readiness checks. This tab is intended to help customers identify and remediate devices that don't meet device readiness checks.<p><p>Devices successfully registered and healthy don't show up in the Not ready tab. |
+
+> [!WARNING]
+> The **Not Ready** tab will not be available during the first week of the Public preview.
 
 ## Built-in roles required for device registration
 
 A role defines the set of permissions granted to users assigned to that role. You can use one of the following built-in roles in Windows Autopatch to register devices:
 
-- Global Administrator
+- Azure AD Global Administrator
 - Intune Service Administrator
 - Modern Workplace Intune Administrator
 
