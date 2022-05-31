@@ -47,8 +47,7 @@ Update Compliance uses an [Azure Log Analytics workspaces](/azure/azure-monitor/
    - [Azure Update Management](/azure/automation/automation-intro#update-management) users should use the same workspace for Update Compliance.
 1. If you don't have an existing Log Analytics workspace or you don't want to use a current workspace, [create a new workspace](/azure/azure-monitor/logs/quick-create-workspace) in a [compatible region](update-compliance-v2-prerequisites.md#log-analytics-regions).
 
-> [!Note]
-> The `CommercialID` for the Log Analytics workspace is no longer required when configuring your clients.  
+
 
 ### <a name="bkmk_solution"></a> Add the Update Compliance solution to the Log Analytics workspace
 
@@ -57,7 +56,7 @@ Update Compliance is offered as an Azure Marketplace application that's linked t
 1. Go to the [Update Compliance page in the Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/Microsoft.WaaSUpdateInsights?tab=Overview). You might need to sign into your Azure subscription to access this page.
 1. Select **Get it now**.
 1. Select **Continue** to agree to the [terms of use](https://azure.microsoft.com/[support/legal/) and the [privacy policy](https://privacy.microsoft.com/en-us/privacystatement) to create the app in Azure.
-1. Sign into the Azure portal to finish creating the Update Compliance solution.
+1. Sign into the [Azure portal](https://portal.azure.com) to finish creating the Update Compliance solution.
 1. Select the following settings:
    - **Subscription**: The Azure subscription to use.
    - **Resource group**: Select or [create a resource group](/azure/azure-resource-manager/management/manage-resource-groups-portal) for the Update Compliance solution.
@@ -67,6 +66,22 @@ Update Compliance is offered as an Azure Marketplace application that's linked t
 
 > [!Note]
 > You can only map one tenant to one Log Analytics workspace. Mapping one tenant to multiple workspaces isn't supported.
+
+### <a name="bkmk_id"></a> Get the Commercial ID for the Update Compliance solution
+
+The **Commercial ID** directs your clients to the Update Compliance solution in your Log Analytics workspace. You'll need this ID when you configure clients to send data to Update Compliance.
+
+1. If needed, sign into the [Azure portal](https://portal.azure.com).
+1. In the Azure portal, type **Log Analytics** in the search bar. As you begin typing, the list filters based on your input.
+1. Select **Log Analytics workspaces**.
+1. Select the Log Analytics workspace that you added the Update Compliance solution to.
+1. Select **Solutions** from the Log Analytics workspace, then select **WaaSUpdateInsights(&lt;Log Analytics workspace name>)** to go to the summary page for the solution. 
+1. Select **Update Compliance Settings** from the **WaaSUpdateInsights(&lt;Log Analytics workspace name>)** summary page.
+1. The **Commercial Id Key** is listed in the text box with an option to copy the ID. The **Commercial Id Key** is commonly referred to as the `CommercialID` or **Commercial ID** in Update Compliance.
+
+   > [!Warning]
+   > Regenerate a Commercial ID only if your original ID can no longer be used. Regenerating a commercial ID requires you to deploy the new commercial ID to your computers in order to continue to collect data and so can result in data loss.
+
 
 ## Next steps
 
