@@ -496,7 +496,7 @@ The status error mapping is listed below.
 |--- |--- |
 |0|Success|
 |1|Failure: invalid PFN|
-|2|Failure: invalid or expired device authentication with MSA|
+|2|Failure: invalid or expired device authentication with Microsoft account|
 |3|Failure: WNS client registration failed due to an invalid or revoked PFN|
 |4|Failure: no Channel URI assigned|
 |5|Failure: Channel URI has expired|
