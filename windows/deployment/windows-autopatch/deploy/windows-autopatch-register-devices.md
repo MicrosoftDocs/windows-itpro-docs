@@ -28,7 +28,7 @@ Windows Autopatch to take over software updates management of supported devices 
 You must choose what devices to manage with Windows Autopatch by adding either devices through direct membership or by adding other Azure Active Directory (Azure AD) dynamic/assigned groups into the Azure Active Directory assigned **Windows Autopatch Device Registration** group. Windows Autopatch runs every hour to discover new devices added to this group. Once new devices are discovered, Windows Autopatch attempts to register these devices into its service.
 
 > [!TIP]
-> You can also use the **Discover Devices** button in either the Ready or Not Ready tabs to discover devices from the Windows Autopatch Device Registration Azure AD group on demand.
+> You can also use the **Discover Devices** button in either the Ready or Not ready tabs to discover devices from the Windows Autopatch Device Registration Azure AD group on demand.
 
 To be eligible for Windows Autopatch management, devices must meet a minimum set of required software-based prerequisites:
 
@@ -45,7 +45,7 @@ To be eligible for Windows Autopatch management, devices must meet a minimum set
 
 For more information about each prerequisite check, see the [Prerequisites](../prepare/windows-autopatch-prerequisites.md) article.
 
-## About Devices Ready and Not Ready tabs
+## About Devices Ready and Not ready tabs
 
 Windows Autopatch introduces a new user interface to help IT admins manage devices and troubleshoot device readiness statuses seamlessly with actionable in-UI device readiness reports for unregistered devices or unhealthy devices.
 
@@ -54,8 +54,8 @@ Windows Autopatch introduces a new user interface to help IT admins manage devic
 | Ready tab | The purpose of the Ready tab is to show devices that were successfully registered to the Windows Autopatch service and that have met on-going device health requirements. |
 | Not ready tab | The purpose of the Not ready tab is to show devices that didn't successfully register into the Windows Autopatch service, or didn't pass one of the device readiness checks. This tab is intended to help customers identify and remediate devices that don't meet device readiness checks.<p><p>Devices successfully registered and healthy don't show up in the Not ready tab. |
 
-> [!WARNING]
-> The **Not Ready** tab will not be available during the first week of the Public preview.
+> [!IMPORTANT]
+> The **Not ready** tab will not be available during the first week of the public preview.
 
 ## Built-in roles required for device registration
 
