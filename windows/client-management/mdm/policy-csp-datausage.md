@@ -60,6 +60,7 @@ This policy is deprecated in Windows 10, version 1809.
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|

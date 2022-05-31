@@ -246,6 +246,7 @@ ms.collection: highpri
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -295,6 +296,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -341,6 +343,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -390,6 +393,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -452,6 +456,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -504,6 +509,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -561,6 +567,7 @@ $MUSM.RemoveService("7971f918-a847-4430-9279-4a52d1efe18d")
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -605,6 +612,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -660,6 +668,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -718,6 +727,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -776,6 +786,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -824,6 +835,7 @@ Supported values are 15, 30, 60, 120, and 240 (minutes).
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -873,6 +885,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -931,6 +944,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -983,6 +997,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1035,6 +1050,7 @@ Default value is 7.
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1087,6 +1103,7 @@ Default value is 7.
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1140,6 +1157,7 @@ Default value is 2.
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1194,6 +1212,7 @@ Default value is 2.
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1250,6 +1269,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1283,6 +1303,7 @@ Enable IT admin to configure feature update uninstall period. Values range 2 - 6
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1331,6 +1352,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1375,6 +1397,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1453,6 +1476,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1503,6 +1527,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1545,6 +1570,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1599,6 +1625,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1660,6 +1687,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1710,6 +1738,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1770,6 +1799,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1825,6 +1855,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1878,6 +1909,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1931,6 +1963,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1984,6 +2017,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -2037,6 +2071,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -2086,6 +2121,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -2138,6 +2174,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -2191,6 +2228,7 @@ To validate this policy:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -2244,6 +2282,7 @@ To validate this policy:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -2294,6 +2333,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -2350,6 +2390,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -2400,6 +2441,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -2444,6 +2486,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -2493,6 +2536,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -2548,6 +2592,7 @@ This policy is deprecated. Use [Update/RequireUpdateApproval](#update-requireupd
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -2606,6 +2651,7 @@ By using this Windows Update for Business policy to upgrade devices to a new pro
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2657,6 +2703,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2703,6 +2750,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -2751,6 +2799,7 @@ Supported values are 15, 30, or 60 (minutes).
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -2803,6 +2852,7 @@ Supported values are 2, 4, 8, 12, or 24 (hours).
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -2862,6 +2912,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -2908,6 +2959,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -2954,6 +3006,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -3000,6 +3053,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -3046,6 +3100,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -3092,6 +3147,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -3146,6 +3202,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -3195,6 +3252,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -3236,6 +3294,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -3277,6 +3336,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -3327,6 +3387,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -3383,6 +3444,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -3439,6 +3501,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -3495,6 +3558,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -3551,6 +3615,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -3604,6 +3669,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -3654,6 +3720,7 @@ Value type is a string containing Windows 10 version number. For example, 1809, 
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -3713,6 +3780,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -3787,6 +3855,7 @@ Example
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
