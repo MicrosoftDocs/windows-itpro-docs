@@ -133,6 +133,9 @@ conceptualContent:
         - url: /windows/deployment/update/prepare-deploy-windows
           itemType: deploy
           text: Prepare to deploy Windows client
+        - url: /windows/deployment/windows-autopatch
+          itemType: deploy
+          text: Windows Autopatch
  
   # Card
     - title: App management
