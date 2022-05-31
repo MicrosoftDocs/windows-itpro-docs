@@ -13,6 +13,7 @@ ms.author: mstewart
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
+ms.date: 05/31/2022
 ---
 
 # Configuring devices through the Update Compliance (preview) Configuration Script

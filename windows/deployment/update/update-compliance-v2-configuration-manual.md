@@ -13,6 +13,7 @@ ms.author: mstewart
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
+ms.date: 05/31/2022
 ---
 
 # Manually Configuring Devices for Update Compliance (preview)

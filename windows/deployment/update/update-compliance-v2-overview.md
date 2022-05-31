@@ -11,7 +11,7 @@ author: mestew
 ms.author: mstewart
 ms.collection: M365-analytics
 ms.topic: article
-ms.date: 05/07/2022
+ms.date: 05/31/2022
 ---
 
 # Update Compliance overview
