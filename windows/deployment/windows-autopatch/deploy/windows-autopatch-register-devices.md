@@ -49,13 +49,13 @@ For more information about each prerequisite check, see the [Prerequisites](../p
 
 Windows Autopatch introduces a new user interface to help IT admins manage devices and troubleshoot device readiness statuses seamlessly with actionable in-UI device readiness reports for unregistered devices or unhealthy devices.
 
+> [!IMPORTANT]
+> The **Not ready** tab will not be available during the first week of the public preview.
+
 | Tab | Purpose |
 | ----- | ----- |
 | Ready tab | The purpose of the Ready tab is to show devices that were successfully registered to the Windows Autopatch service and that have met on-going device health requirements. |
 | Not ready tab | The purpose of the Not ready tab is to show devices that didn't successfully register into the Windows Autopatch service, or didn't pass one of the device readiness checks. This tab is intended to help customers identify and remediate devices that don't meet device readiness checks.<p><p>Devices successfully registered and healthy don't show up in the Not ready tab. |
-
-> [!IMPORTANT]
-> The **Not ready** tab will not be available during the first week of the public preview.
 
 ## Built-in roles required for device registration
 
