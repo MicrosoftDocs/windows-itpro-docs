@@ -33,7 +33,7 @@ Windows Autopatch also supports the following Azure AD nested group scenarios:
 
 - Azure AD groups synced up from:
 	- On-premises Active Directory groups (Windows server type).
-	- [Configuration Manager collections](https://docs.microsoft.com/mem/configmgr/core/clients/manage/collections/create-collections#bkmk_aadcollsync).
+	- [Configuration Manager collections](/mem/configmgr/core/clients/manage/collections/create-collections#bkmk_aadcollsync).
 
 > [!IMPORTANT]
 > The **Windows Autopatch Device Registration** Azure AD group only supports one level of Azure AD nested groups.
