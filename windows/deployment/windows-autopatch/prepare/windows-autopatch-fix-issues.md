@@ -38,7 +38,7 @@ This setting must be turned on to avoid a "lack of permissions" error when we in
 | ----- | ----- |
 | Not ready | Allow access to unlicensed admins should be turned on. Without this setting enabled, errors can occur when we try to access your Azure AD organization for service. You can safely enable this setting without worrying about security implications. The scope of access is defined by the roles assigned to users, including our operations staff.<p><p>For more information, see [Unlicensed admins](/mem/intune/fundamentals/unlicensed-admins). |
 
-### Windows 10 update rings
+### Update rings for Windows 10 or later
 
 Your "Windows 10 update ring" policy in Intune must not target any Windows Autopatch devices.
 
