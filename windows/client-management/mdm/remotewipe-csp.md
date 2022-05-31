@@ -40,14 +40,14 @@ RemoteWipe
 --------Status
 ```
 <a href="" id="dowipe"></a>**doWipe**  
-Specifies that a remote wipe of the device should be performed. A remote wipe is the equivalent of running "Reset this PC > Remove everything" from the Settings app. The return status code indicates whether the device accepted the Exec command.
+Specifies that a remote reset of the device should be started. A remote reset is equivalent to running "Reset this PC > Remove everything" from the Settings app. The return status code indicates whether the device accepted the Exec command. If a doWipe reset is started and then interrupted, the reset will not automatically be retried.
 
 When used with OMA Client Provisioning, a dummy value of "1" should be included for this element.
 
 Supported operation is Exec.
 
 <a href="" id="dowipepersistprovisioneddata"></a>**doWipePersistProvisionedData**  
-Specifies that provisioning data should be backed up to a persistent location, and then a remote wipe of the device should be performed.
+Specifies that provisioning data should be backed up to a persistent location, and then a remote doWipe reset of the device should be started.
 
 When used with OMA Client Provisioning, a dummy value of "1" should be included for this element.
 
@@ -56,14 +56,14 @@ Supported operation is Exec.
 The information that was backed up will be restored and applied to the device when it resumes. The return status code shows whether the device accepted the Exec command.
 
 <a href="" id="doWipeProtected"></a>**doWipeProtected**  
-Added in Windows 10, version 1703. Exec on this node performs a remote wipe on the device and fully clean the internal drive. Drives that are cleaned with doWipeProtected aren't expected to meet industry or government standards for data cleaning. In some device configurations, this command may leave the device unable to boot. The return status code indicates whether the device accepted the Exec command.
+Added in Windows 10, version 1703. Exec on this node performs a remote reset on the device and also fully cleans the internal drive. Drives that are cleaned with doWipeProtected aren't expected to meet industry or government standards for data cleaning. In some device configurations, this command may leave the device unable to boot. The return status code indicates whether the device accepted the Exec command.
 
 The doWipeProtected is functionally similar to doWipe. But unlike doWipe, which can be easily circumvented by simply power cycling the device, doWipeProtected will keep trying to reset the device until it’s done. Because doWipeProtected will keep trying to reset the device until it's done, use doWipeProtected in lost/stolen device scenarios.
 
 Supported operation is Exec.
 
 <a href="" id="doWipePersistUserData"></a>**doWipePersistUserData**  
-Added in Windows 10, version 1709. Exec on this node will perform a remote reset on the device, and persist user accounts and data. The return status code shows whether the device accepted the Exec command.
+Added in Windows 10, version 1709. Exec on this node will perform a doWipe remote reset on the device, and persist user accounts and data. The return status code shows whether the device accepted the Exec command.
 
 <a href="" id="automaticredeployment"></a>**AutomaticRedeployment**  
 Added in Windows 10, version 1809. Node for the Autopilot Reset operation.
