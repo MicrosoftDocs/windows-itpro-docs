@@ -55,7 +55,7 @@ Choose one of the following two enrollment options:
 
 ### Set up an Azure Active Directory-REGISTERED Windows client device
 
-This is the Bring Your Own Device (BYOD) method--your device will receive Olympia policies and features, but a new account will not be created. See [Azure Active Directory device management FAQ](/azure/active-directory/devices/faq) for additional information.
+This is the Bring Your Own Device (BYOD) method--your device will receive Olympia policies and features, but a new account will not be created. See [Azure Active Directory device management FAQ](/azure/active-directory/devices/faq#azure-ad-register-faq) for additional information.
 
 1. Go to **Start > Settings > Accounts > Access work or school**. To see this setting, you need to have administrator rights to your device (see [local administrator](https://support.microsoft.com/windows/create-a-local-user-or-administrator-account-in-windows-20de74e0-ac7f-3502-a866-32915af2a34d)).
 
