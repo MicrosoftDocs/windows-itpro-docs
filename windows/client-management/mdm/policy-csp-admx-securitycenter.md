@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_Securitycenter
-description: Policy CSP - ADMX_Securitycenter
+description: Learn about Policy CSP - ADMX_Securitycenter.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -90,3 +90,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
