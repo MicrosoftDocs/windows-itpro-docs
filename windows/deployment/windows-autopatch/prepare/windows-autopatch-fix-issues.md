@@ -66,7 +66,7 @@ Windows Autopatch requires the following licenses:
 
 | Result | Meaning |
 | ----- | ----- |
-| Not ready | Windows Autopatch requires Windows 10/11 Enterprise E3 (or higher) to be assigned to your users. Additionally, Azure Active Directory Premium, Microsoft Intune and Windows 10/11 Enterprise are required. For more information, see [more about licenses](../prepare/windows-autopatch-prerequisites.md#more-about-licenses). |
+| Not ready | Windows Autopatch requires Windows 10/11 Enterprise E3 (or higher) to be assigned to your users. Additionally, Azure Active Directory Premium, and Microsoft Intune are required. For more information, see [more about licenses](../prepare/windows-autopatch-prerequisites.md#more-about-licenses). |
 
 ### Windows Autopatch service accounts
 
