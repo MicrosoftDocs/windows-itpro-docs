@@ -11,7 +11,7 @@ author: mestew
 ms.author: mstewart
 ms.collection: M365-analytics
 ms.topic: reference
-ms.date: 05/31/2022
+ms.date: 06/06/2022
 ---
 
 # UCClientUpdateStatus

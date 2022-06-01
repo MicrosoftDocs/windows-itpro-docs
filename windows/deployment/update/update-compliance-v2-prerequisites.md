@@ -11,7 +11,7 @@ author: mestew
 ms.author: mstewart
 ms.collection: M365-analytics
 ms.topic: article
-ms.date: 05/31/2022
+ms.date: 06/06/2022
 ---
 
 # Update Compliance prerequisites
@@ -24,7 +24,7 @@ ms.date: 05/31/2022
 
 ## Update Compliance prerequisites
 
-Before you begin the process to add Update Compliance to your Azure subscription, ensure you can meet the prerequisites.
+Before you begin the process to add Update Compliance to your Azure subscription, ensure you meet the prerequisites.
 
 ### Azure and Azure Active Directory
 

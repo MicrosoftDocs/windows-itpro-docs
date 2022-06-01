@@ -11,7 +11,7 @@ author: mestew
 ms.author: mstewart
 ms.collection: M365-analytics
 ms.topic: article
-ms.date: 05/31/2022
+ms.date: 06/06/2022
 ---
 
 # Use Update Compliance (preview)
@@ -64,4 +64,4 @@ Update Compliance is built on the Log Analytics platform that is integrated into
 See below for a few articles related to Log Analytics: 
 - Learn how to effectively execute custom Log Searches by referring to Microsoft Azure's excellent documentation on [querying data in Log Analytics](/azure/log-analytics/log-analytics-log-searches).
 - Review the documentation on [analyzing data for use in Log Analytics](/azure/log-analytics/log-analytics-dashboards) to develop your own custom data views in Operations Management Suite or [Power BI](https://powerbi.microsoft.com/).
-- [Gain an overview of Log Analytics' alerts](/azure/log-analytics/log-analytics-alerts) and learn how to use it to always stay informed about the most critical issues you care about.
+- [Gain an overview of alerts for Log Analytics](/azure/log-analytics/log-analytics-alerts) and learn how to use it to always stay informed about the most critical issues you care about.

@@ -36,8 +36,8 @@ The **Software updates** page has following tabs to assist you in monitoring upd
 ## Prerequisites
 
 - [Update Compliance](update-compliance-v2-overview.md) needs to be enabled with clients sending data to the solution
-- An appropriate role assigned for the [Microsoft 365 admin center](https://admin.microsoft.com) **???**
-   - To configure settings for the **Software Updates** page: [Windows Update Deployment Administrator role](/azure/active-directory/roles/permissions-reference#windows-update-deployment-administrator)
+- An appropriate role assigned for the [Microsoft 365 admin center](https://admin.microsoft.com)
+   - To configure settings for the **Software Updates** page: [Global Admin role](/microsoft-365/admin/add-users/about-admin-roles)
    - To view the **Software Updates** page: [Global Reader role](/microsoft-365/admin/add-users/about-admin-roles)
 
 ## Limitations
@@ -57,7 +57,7 @@ Update Compliance is a Windows service hosted in Azure that uses Windows diagnos
 1. After the initial setup is complete, the **Windows** tab will display your Update Compliance data in the charts.
 
 > [!Tip]
-> If you don't see an entry for Software updates (Preview) in the menu, try going to this URL: [https://admin.microsoft.com/Adminportal/Home#/softwareupdates](https://admin.microsoft.com/Adminportal/Home#/softwareupdates).
+> If you don't see an entry for **Software updates (preview)** in the menu, try going to this URL: [https://admin.microsoft.com/Adminportal/Home#/softwareupdates](https://admin.microsoft.com/Adminportal/Home#/softwareupdates).
 
 ## The Windows tab
 

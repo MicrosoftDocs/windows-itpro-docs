@@ -11,7 +11,7 @@ author: mestew
 ms.author: mstewart
 ms.collection: M365-analytics
 ms.topic: article
-ms.date: 05/31/2022
+ms.date: 06/06/2022
 ---
 
 # Enable Update Compliance
@@ -80,7 +80,7 @@ The **Commercial ID** directs your clients to the Update Compliance solution in 
 1. The **Commercial Id Key** is listed in the text box with an option to copy the ID. The **Commercial Id Key** is commonly referred to as the `CommercialID` or **Commercial ID** in Update Compliance.
 
    > [!Warning]
-   > Regenerate a Commercial ID only if your original ID can no longer be used. Regenerating a commercial ID requires you to deploy the new commercial ID to your computers in order to continue to collect data and so can result in data loss.
+   > Regenerate a Commercial ID only if your original ID can no longer be used. Regenerating a Commercial ID requires you to deploy the new commercial ID to your computers in order to continue to collect data and so can result in data loss.
 
 
 ## Next steps

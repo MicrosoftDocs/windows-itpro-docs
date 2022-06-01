@@ -13,7 +13,7 @@ ms.author: mstewart
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
-ms.date: 05/31/2022
+ms.date: 06/06/2022
 ---
 
 # Configuring Microsoft Endpoint Manager devices for Update Compliance (preview)
