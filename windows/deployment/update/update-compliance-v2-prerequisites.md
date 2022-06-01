@@ -45,7 +45,6 @@ Update Compliance only provides data for the standard Desktop Windows client ver
 Update Compliance supports Windows client devices on the following channels:
 
 - General Availability Channel
-- Long-term Servicing Channel (LTSC).
 - Update Compliance *counts* Windows Insider Preview devices, but doesn't currently provide detailed deployment insights for them.
 
 ### Diagnostic data requirements
@@ -75,8 +74,12 @@ For more information about what's included in different diagnostic levels, see [
 ### Permissions
 
 - To edit and write queries, we recommend the [Log Analytics Contributor](/azure/role-based-access-control/built-in-roles#log-analytics-contributor) role.
-
 - To read and only view data, we recommend the [Log Analytics Reader](/azure/role-based-access-control/built-in-roles#log-analytics-reader) role.
+
+When you use the [Microsoft admin center software updates (preview) page](update-status-admin-center.md) with Update Compliance, the following permissions are also recommended:
+   - To configure settings for the **Software Updates** page: [Global Admin role](/microsoft-365/admin/add-users/about-admin-roles)
+   - To view the **Software Updates** page: [Global Reader role](/microsoft-365/admin/add-users/about-admin-roles)
+
 
 ### Log Analytics regions
 
