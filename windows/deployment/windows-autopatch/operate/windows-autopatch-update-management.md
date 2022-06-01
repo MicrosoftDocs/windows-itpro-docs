@@ -22,7 +22,7 @@ Keeping your devices up to date is a balance of speed and stability. Windows Aut
 | ----- | ----- |
 | Window quality update | Windows Autopatch uses four update rings to manage Windows quality updates. For more detailed information, see [Windows quality updates](../operate/windows-autopatch-wqu-overview.md). |
 | Anti-virus definition | Updated with each scan. |
-| Microsoft 365 Apps for enterprise | For more information, see Microsoft 365 Apps for enterprise. |
+| Microsoft 365 Apps for enterprise | For more information, see [Microsoft 365 Apps for enterprise](windows-autopatch-microsoft-365-apps-enterprise.md). |
 | Microsoft Edge | For more information, see [Microsoft Edge](../operate/windows-autopatch-edge.md). |
 | Microsoft Teams | For more information, see [Microsoft Teams](../operate/windows-autopatch-teams.md). |
 

@@ -45,6 +45,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|No|Yes|
 |Education|No|Yes|
@@ -94,6 +95,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|No|Yes|
 |Education|No|Yes|
@@ -143,6 +145,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|No|Yes|
 |Education|No|Yes|
