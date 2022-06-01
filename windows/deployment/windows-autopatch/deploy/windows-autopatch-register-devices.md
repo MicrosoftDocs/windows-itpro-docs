@@ -18,7 +18,7 @@ Before Microsoft can manage your devices in Windows Autopatch, you must have dev
 
 ## Before you begin
 
-Windows Autopatch can take over software updates management of supported devices as soon as an IT admin decides to have their tenant managed by the service. The Windows Autopatch software updates management scope includes:
+Windows Autopatch can take over software update management of supported devices as soon as an IT admin decides to have their tenant managed by the service. The Windows Autopatch software update management scope includes:
 
 - [Windows quality updates](../operate/windows-autopatch-wqu-overview.md)
 - [Microsoft 365 Apps for enterprise updates](../operate/windows-autopatch-microsoft-365-apps-enterprise.md)
@@ -72,7 +72,7 @@ Windows Autopatch introduces a new user interface to help IT admins manage devic
 | Tab | Purpose |
 | ----- | ----- |
 | Ready tab | The purpose of the Ready tab is to show devices that were successfully registered to the Windows Autopatch service and that have met post-registration device health requirements. |
-| Not ready tab | The purpose of the Not ready tab is to show devices that didn't successfully register into the Windows Autopatch service, or didn't pass one of the post-registration health requirements. This tab is intended to help customers identify and remediate devices that don't meet either pre or post-registration device readiness checks.<p><p>Devices successfully registered and healthy don't show up in the Not ready tab. |
+| Not ready tab | The purpose of the Not ready tab is to show devices that didn't successfully register into the Windows Autopatch service, or didn't pass one of the post-registration health requirements. This tab is intended to help customers identify and remediate devices that don't meet either pre or post-registration device readiness checks.<p><p>Devices successfully registered and healthy don't appear in the Not ready tab. |
 
 ## Built-in roles required for device registration
 
@@ -83,14 +83,14 @@ A role defines the set of permissions granted to users assigned to that role. Yo
 - Intune Service Administrator
 - Modern Workplace Intune Administrator
 
-See [Azure AD built-in roles](https://docs.microsoft.com/azure/active-directory/roles/permissions-reference) and  [Role-based access control (RBAC) with Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control) for more details.
+For more information, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference) and  [Role-based access control (RBAC) with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 
 > [!NOTE]
 > The Modern Workplace Intune Admin role is a custom created role during the Windows Autopatch tenant enrollment process. This role can assign administrators to Endpoint Manager roles, and allows you to create and configure custom Endpoint Manager roles.
 
 ## Details about the device registration process
 
-The process of registering your devices in Windows Autopatch does the following:
+Registering your devices in Windows Autopatch does the following:
 
 1. Makes a record of devices in the service.
 2. Assign devices into the ring groups and other groups required for software updates management.
@@ -131,4 +131,4 @@ If you need to repair a device that was previously registered into the Windows A
 When one of these hardware changes occurs, Azure AD creates a new device ID record for that device, even if it's technically the same device.
 
 > [!IMPORTANT]
-> If a new Azure AD device ID is generated for a device that was previously registered into Windows Autopatch, even technically being the same device, the new Azure AD device ID has to be added either through device direct membership or through nested Azure AD dynamic/assigned group into the Windows Autopatch Device Registration group. This process guarantees the newly generated Azure AD device ID is registered into the Windows Autopatch service and it can keep having its software updates managed by the service.
+> If a new Azure AD device ID is generated for a device that was previously registered into Windows Autopatch, even if it's the same device, the new Azure AD device ID must be added either through device direct membership or through nested Azure AD dynamic/assigned group into the **Windows Autopatch Device Registration** group. This process guarantees the newly generated Azure AD device ID is registered with Windows Autopatch and that the device continues to have its software updates managed by the service.
