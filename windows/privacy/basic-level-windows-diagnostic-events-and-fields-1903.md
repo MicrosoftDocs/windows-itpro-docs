@@ -75,7 +75,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Security.AppLockerCSP.CAppLockerCSP::Commit
 
-This event returns information about the Commit operation in the AppLocker Configuration Service Provider (CSP) to help keep Windows secure..
+This event returns information about the Commit operation in the AppLocker Configuration Service Provider (CSP) to help keep Windows secure.
 
 The following fields are available:
 
