@@ -1,18 +1,13 @@
 ---
 description: Learn more about the Windows 10, version 1709 diagnostic data gathered at the basic level.
 title: Windows 10, version 1709 basic diagnostic events and fields (Windows 10)
-keywords: privacy, telemetry
 ms.prod: m365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-audience: ITPro
 ms.date: 
 ms.reviewer:
 ms.technology: privacy

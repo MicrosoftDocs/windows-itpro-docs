@@ -1,13 +1,8 @@
 ---
 title: Windows Privacy Compliance Guide
 description: This article provides information to help IT and compliance professionals understand the personal data policies as related to Windows.
-keywords: privacy, GDPR, compliance
 ms.prod: m365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: high
-audience: ITPro
 author: brianlic-msft
 ms.author: brianlic
 manager: dansimp

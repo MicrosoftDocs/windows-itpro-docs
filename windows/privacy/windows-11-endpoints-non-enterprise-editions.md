@@ -1,12 +1,8 @@
 ---
 title: Windows 11 connection endpoints for non-Enterprise editions
 description: Explains what Windows 11 endpoints are used in non-Enterprise editions. Specific to Windows 11.
-keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2016
 ms.prod: m365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
 ms.localizationpriority: high
-audience: ITPro
 author: gental-giant
 ms.author: v-hakima
 manager: dansimp
