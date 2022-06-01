@@ -13,8 +13,6 @@ manager: dansimp
 
 # Policy CSP - InternetExplorer
 
-
-
 <hr/>
 
 <!--Policies-->
@@ -803,11 +801,11 @@ manager: dansimp
 </dl>
 
 > [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 > 
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 > 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
@@ -841,9 +839,12 @@ manager: dansimp
 <!--Description-->
 This policy setting allows you to add a specific list of search providers to the user's default list of search providers. Normally, search providers can be added from third-party toolbars or in Setup. The user can also add a search provider from the provider's website.
 
-If you enable this policy setting, the user can add and remove search providers, but only from the set of search providers specified in the list of policy keys for search providers (found under [HKCU or HKLM\Software\policies\Microsoft\Internet Explorer\SearchScopes]). Note: This list can be created from a custom administrative template file. For information about creating this custom administrative template file, see the Internet Explorer documentation on search providers.
+If you enable this policy setting, the user can add and remove search providers, but only from the set of search providers specified in the list of policy keys for search providers (found under [HKCU or HKLM\Software\policies\Microsoft\Internet Explorer\SearchScopes]). 
 
-If you disable or do not configure this policy setting, the user can configure their list of search providers unless another policy setting restricts such configuration.
+> [!NOTE]
+> This list can be created from a custom administrative template file. For information about creating this custom administrative template file, see the Internet Explorer documentation on search providers.
+
+If you disable or do not configure this policy setting, the user can configure their list of search providers, unless another policy setting restricts such configuration.
 
 <!--/Description-->
 
@@ -887,7 +888,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls the ActiveX Filtering feature for websites that are running ActiveX controls. The user can choose to turn off ActiveX Filtering for specific websites so that ActiveX controls can run properly.
+This policy setting controls the ActiveX Filtering feature for websites that are running ActiveX controls. The user can choose to turn off ActiveX Filtering for specific websites, so that ActiveX controls can run properly.
 
 If you enable this policy setting, ActiveX Filtering is enabled by default for the user. The user cannot turn off ActiveX Filtering, although they may add per-site exceptions.
 
@@ -941,11 +942,11 @@ This list can be used with the 'Deny all add-ons unless specifically allowed in 
 
 If you enable this policy setting, you can enter a list of add-ons to be allowed or denied by Internet Explorer. For each entry that you add to the list, enter the following information:
 
-Name of the Value - the CLSID (class identifier) for the add-on you wish to add to the list.  The CLSID should be in brackets for example, ‘{000000000-0000-0000-0000-0000000000000}'. The CLSID for an add-on can be obtained by reading the OBJECT tag from a Web page on which the add-on is referenced.
+- Name of the Value - the CLSID (class identifier) for the add-on you wish to add to the list. The CLSID should be in brackets for example, ‘{000000000-0000-0000-0000-0000000000000}'. The CLSID for an add-on can be obtained by reading the OBJECT tag from a Web page on which the add-on is referenced.
 
-Value - A number indicating whether Internet Explorer should deny or allow the add-on to be loaded. To specify that an add-on should be denied enter a 0 (zero) into this field. To specify that an add-on should be allowed, enter a 1 (one) into this field. To specify that an add-on should be allowed and also permit the user to manage the add-on through Add-on Manager, enter a 2 (two) into this field.
+- Value - A number indicating whether Internet Explorer should deny or allow the add-on to be loaded. To specify that an add-on should be denied, enter a 0 (zero) into this field. To specify that an add-on should be allowed, enter a 1 (one) into this field. To specify that an add-on should be allowed and also permit the user to manage the add-on through Add-on Manager, enter a 2 (two) into this field.
 
-If you disable this policy setting, the list is deleted. The 'Deny all add-ons unless specifically allowed in the Add-on List' policy setting will still determine whether add-ons not in this list are assumed to be denied.
+If you disable this policy setting, the list is deleted. The 'Deny all add-ons unless specifically allowed in the Add-on List' policy setting will determine, whether add-ons not in this list are assumed to be denied.
 
 <!--/Description-->
 
@@ -992,7 +993,7 @@ This AutoComplete feature can remember and suggest User names and passwords on F
 
 If you enable this setting, the user cannot change "User name and passwords on forms" or "prompt me to save passwords". The Auto Complete feature for User names and passwords on Forms will be turned on. You have to decide whether to select "prompt me to save passwords".
 
-If you disable this setting the user cannot change "User name and passwords on forms" or "prompt me to save passwords". The Auto Complete feature for User names and passwords on Forms is turned off. The user also cannot opt to be prompted to save passwords.
+If you disable this setting, the user cannot change "User name and passwords on forms" or "prompt me to save passwords". The Auto Complete feature for User names and passwords on Forms is turned off. The user also cannot opt to be prompted to save passwords.
 
 If you do not configure this setting, the user has the freedom of turning on Auto complete for User name and passwords on forms and the option of prompting to save passwords. To display this option, the users open the Internet Options dialog box, click the Contents Tab and click the Settings button.
 
@@ -1038,7 +1039,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to turn on the certificate address mismatch security warning. When this policy setting is turned on, the user is warned when visiting Secure HTTP (HTTPS) websites that present certificates issued for a different website address. This warning helps prevent spoofing attacks.
+This policy setting allows you to turn on the certificate address mismatch security warning. When this policy setting is turned on, the user is warned, when visiting Secure HTTP (HTTPS) websites that present certificates issued for a different website address. This warning helps prevent spoofing attacks.
 
 If you enable this policy setting, the certificate address mismatch warning always appears.
 
@@ -1188,7 +1189,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows Internet Explorer to provide enhanced suggestions as the user types in the Address bar. To provide enhanced suggestions, the user's keystrokes are sent to Microsoft through Microsoft services.
+This policy setting allows Internet Explorer to provide enhanced suggestions, as the user types in the Address bar. To provide enhanced suggestions, the user's keystrokes are sent to Microsoft through Microsoft services.
 
 If you enable this policy setting, users receive enhanced suggestions while typing in the Address bar. In addition, users cannot change the Suggestions setting on the Settings charm.
 
@@ -1249,7 +1250,7 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting lets you decide whether users can turn on Enterprise Mode for websites with compatibility issues. Optionally, this policy also lets you specify where to get reports (through post messages) about the websites for which users turn on Enterprise Mode using the Tools menu.
+This policy setting lets you decide whether users can turn on Enterprise Mode for websites with compatibility issues. Optionally, this policy also lets you specify where to get reports (through post messages) about the websites for which users turn on Enterprise Mode, using the Tools menu.
 
 If you turn this setting on, users can see and use the Enterprise Mode option from the Tools menu. If you turn this setting on, but don't specify a report location, Enterprise Mode will still be available to your users, but you won't get any reports.
 
@@ -1344,7 +1345,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to block an insecure fallback to SSL 3.0. When this policy is enabled, Internet Explorer will attempt to connect to sites using SSL 3.0 or below when TLS 1.0 or greater fails.
+This policy setting allows you to block an insecure fallback to SSL 3.0. When this policy is enabled, Internet Explorer will attempt to connect to sites using SSL 3.0 or below, when TLS 1.0 or greater fails.
 
 We recommend that you do not allow insecure fallback in order to prevent a man-in-the-middle attack.
 
@@ -1442,7 +1443,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls how Internet Explorer displays local intranet content. Intranet content is defined as any webpage that belongs to the local intranet security zone.
+This policy setting controls, how Internet Explorer displays local intranet content. Intranet content is defined as any webpage that belongs to the local intranet security zone.
 
 If you enable this policy setting, Internet Explorer uses the current user agent string for local intranet content. Additionally, all local intranet Standards Mode pages appear in the Standards Mode available with the latest version of Internet Explorer. The user cannot change this behavior through the Compatibility View Settings dialog box.
 
@@ -1492,7 +1493,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This template policy setting allows you to configure policy settings in this zone consistent with a selected security level, for example, Low, Medium Low, Medium, or High.
+This template policy setting allows you to configure policy settings in this zone consistent with a selected security level. For example, Low, Medium Low, Medium, or High.
 
 If you enable this template policy setting and select a security level, all values for individual settings in the zone will be overwritten by the standard template defaults.
 
@@ -1500,9 +1501,11 @@ If you disable this template policy setting, no security level is configured.
 
 If you do not configure this template policy setting, no security level is configured.
 
-Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
+> [!NOTE]
+> Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
-Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
+> [!NOTE]
+> It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 
 <!--/Description-->
 
@@ -1546,7 +1549,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This template policy setting allows you to configure policy settings in this zone consistent with a selected security level, for example, Low, Medium Low, Medium, or High.
+This template policy setting allows you to configure policy settings in this zone, consistent with a selected security level. For example, Low, Medium Low, Medium, or High.
 
 If you enable this template policy setting and select a security level, all values for individual settings in the zone will be overwritten by the standard template defaults.
 
@@ -1554,9 +1557,11 @@ If you disable this template policy setting, no security level is configured.
 
 If you do not configure this template policy setting, no security level is configured.
 
-Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
+> [!NOTE]
+> Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
-Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
+> [!NOTE]
+> It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 
 <!--/Description-->
 
@@ -1600,7 +1605,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This template policy setting allows you to configure policy settings in this zone consistent with a selected security level, for example, Low, Medium Low, Medium, or High.
+This template policy setting allows you to configure policy settings in this zone consistent with a selected security level. For example, Low, Medium Low, Medium, or High.
 
 If you enable this template policy setting and select a security level, all values for individual settings in the zone will be overwritten by the standard template defaults.
 
@@ -1608,9 +1613,11 @@ If you disable this template policy setting, no security level is configured.
 
 If you do not configure this template policy setting, no security level is configured.
 
-Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
+> [!NOTE]
+> Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
-Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
+> [!NOTE]
+> It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 
 <!--/Description-->
 
@@ -1654,7 +1661,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This template policy setting allows you to configure policy settings in this zone consistent with a selected security level, for example, Low, Medium Low, Medium, or High.
+This template policy setting allows you to configure policy settings in this zone consistent with a selected security level. For example, Low, Medium Low, Medium, or High.
 
 If you enable this template policy setting and select a security level, all values for individual settings in the zone will be overwritten by the standard template defaults.
 
@@ -1662,9 +1669,11 @@ If you disable this template policy setting, no security level is configured.
 
 If you do not configure this template policy setting, no security level is configured.
 
-Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
+> [!NOTE]
+> Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
-Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
+> [!NOTE]
+> It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 
 <!--/Description-->
 
@@ -1708,7 +1717,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This template policy setting allows you to configure policy settings in this zone consistent with a selected security level, for example, Low, Medium Low, Medium, or High.
+This template policy setting allows you to configure policy settings in this zone consistent with a selected security level. For example, Low, Medium Low, Medium, or High.
 
 If you enable this template policy setting and select a security level, all values for individual settings in the zone will be overwritten by the standard template defaults.
 
@@ -1716,9 +1725,11 @@ If you disable this template policy setting, no security level is configured.
 
 If you do not configure this template policy setting, no security level is configured.
 
-Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
+> [!NOTE]
+> Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
-Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
+> [!NOTE]
+> It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 
 <!--/Description-->
 
@@ -1762,7 +1773,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This template policy setting allows you to configure policy settings in this zone consistent with a selected security level, for example, Low, Medium Low, Medium, or High.
+This template policy setting allows you to configure policy settings in this zone consistent with a selected security level. For example, Low, Medium Low, Medium, or High.
 
 If you enable this template policy setting and select a security level, all values for individual settings in the zone will be overwritten by the standard template defaults.
 
@@ -1770,9 +1781,11 @@ If you disable this template policy setting, no security level is configured.
 
 If you do not configure this template policy setting, no security level is configured.
 
-Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
+> [!NOTE]
+> Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
-Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
+> [!NOTE]
+> It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 
 <!--/Description-->
 
@@ -1816,7 +1829,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This template policy setting allows you to configure policy settings in this zone consistent with a selected security level, for example, Low, Medium Low, Medium, or High.
+This template policy setting allows you to configure policy settings in this zone consistent with a selected security level. For example, Low, Medium Low, Medium, or High.
 
 If you enable this template policy setting and select a security level, all values for individual settings in the zone will be overwritten by the standard template defaults.
 
@@ -1824,9 +1837,11 @@ If you disable this template policy setting, no security level is configured.
 
 If you do not configure this template policy setting, no security level is configured.
 
-Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
+> [!NOTE]
+> Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
-Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
+> [!NOTE]
+> It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 
 <!--/Description-->
 
@@ -1979,13 +1994,19 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to manage a list of sites that you want to associate with a particular security zone. These zone numbers have associated security settings that apply to all of the sites in the zone.
 
-Internet Explorer has 4 security zones, numbered 1-4, and these are used by this policy setting to associate sites to zones. They are: (1) Intranet zone, (2) Trusted Sites zone, (3) Internet zone, and (4) Restricted Sites zone. Security settings can be set for each of these zones through other policy settings, and their default settings are: Trusted Sites zone (Medium template), Intranet zone (Medium-Low template), Internet zone (Medium-high template), and Restricted Sites zone (High template). (The Local Machine zone and its locked down equivalent have special security settings that protect your local computer.)
+Internet Explorer has 4 security zones, numbered 1-4, and these are used by this policy setting to associate sites to zones. They are: 
+1. Intranet zone
+1. Trusted Sites zone 
+1. Internet zone
+1. Restricted Sites zone
 
-If you enable this policy setting, you can enter a list of sites and their related zone numbers. The association of a site with a zone will ensure that the security settings for the specified zone are applied to the site.  For each entry that you add to the list, enter the following information:
+Security settings can be set for each of these zones through other policy settings, and their default settings are: Trusted Sites zone (Medium template), Intranet zone (Medium-Low template), Internet zone (Medium-high template), and Restricted Sites zone (High template). (The Local Machine zone and its locked down equivalent have special security settings that protect your local computer.)
 
-Valuename – A host for an intranet site, or a fully qualified domain name for other sites. The valuename may also include a specific protocol. For example, if you enter `<http://www.contoso.com>` as the valuename, other protocols are not affected. If you enter just `www.contoso.com,` then all protocols are affected for that site, including http, https, ftp, and so on. The site may also be expressed as an IP address (e.g., 127.0.0.1) or range (e.g., 127.0.0.1-10). To avoid creating conflicting policies, do not include additional characters after the domain such as trailing slashes or URL path. For example, policy settings for `www.contoso.com` and `www.contoso.com/mail` would be treated as the same policy setting by Internet Explorer, and would therefore be in conflict.
+If you enable this policy setting, you can enter a list of sites and their related zone numbers. The association of a site with a zone will ensure that the security settings for the specified zone are applied to the site. For each entry that you add to the list, enter the following information:
 
-Value - A number indicating the zone with which this site should be associated for security settings. The Internet Explorer zones described above are 1-4.
+- Valuename – A host for an intranet site, or a fully qualified domain name for other sites. The valuename may also include a specific protocol. For example, if you enter `<http://www.contoso.com>` as the valuename, other protocols are not affected. If you enter just `www.contoso.com,` then all protocols are affected for that site, including http, https, ftp, and so on. The site may also be expressed as an IP address (e.g., 127.0.0.1) or range (e.g., 127.0.0.1-10). To avoid creating conflicting policies, do not include additional characters after the domain such as trailing slashes or URL path. For example, policy settings for `www.contoso.com` and `www.contoso.com/mail` would be treated as the same policy setting by Internet Explorer, and would therefore be in conflict.
+
+- Value - A number indicating the zone with which this site should be associated for security settings. The Internet Explorer zones described above are 1-4.
 
 If you disable or do not configure this policy, users may choose their own site-to-zone assignments.
 
@@ -2111,7 +2132,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls the Suggested Sites feature, which recommends websites based on the user’s browsing activity. Suggested Sites reports a user’s browsing history to Microsoft to suggest sites that the user might want to visit.
+This policy setting controls the Suggested Sites feature, which recommends websites based on the user’s browsing activity. Suggested Sites reports a user’s browsing history to Microsoft, to suggest sites that the user might want to visit.
 
 If you enable this policy setting, the user is not prompted to enable Suggested Sites. The user’s browsing history is sent to Microsoft to produce suggestions.
 
@@ -2161,7 +2182,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This template policy setting allows you to configure policy settings in this zone consistent with a selected security level, for example, Low, Medium Low, Medium, or High.
+This template policy setting allows you to configure policy settings in this zone consistent with a selected security level. For example, Low, Medium Low, Medium, or High.
 
 If you enable this template policy setting and select a security level, all values for individual settings in the zone will be overwritten by the standard template defaults.
 
@@ -2169,9 +2190,11 @@ If you disable this template policy setting, no security level is configured.
 
 If you do not configure this template policy setting, no security level is configured.
 
-Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
+> [!NOTE]
+> Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
-Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
+> [!NOTE]
+> It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 
 <!--/Description-->
 
@@ -2215,7 +2238,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This template policy setting allows you to configure policy settings in this zone consistent with a selected security level, for example, Low, Medium Low, Medium, or High.
+This template policy setting allows you to configure policy settings in this zone consistent with a selected security level. For example, Low, Medium Low, Medium, or High.
 
 If you enable this template policy setting and select a security level, all values for individual settings in the zone will be overwritten by the standard template defaults.
 
@@ -2223,9 +2246,11 @@ If you disable this template policy setting, no security level is configured.
 
 If you do not configure this template policy setting, no security level is configured.
 
-Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
+> [!NOTE]
+> Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
-Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
+> [!NOTE]
+> It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 
 <!--/Description-->
 
@@ -2269,7 +2294,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This template policy setting allows you to configure policy settings in this zone consistent with a selected security level, for example, Low, Medium Low, Medium, or High.
+This template policy setting allows you to configure policy settings in this zone consistent with a selected security level. For example, Low, Medium Low, Medium, or High.
 
 If you enable this template policy setting and select a security level, all values for individual settings in the zone will be overwritten by the standard template defaults.
 
@@ -2277,9 +2302,11 @@ If you disable this template policy setting, no security level is configured.
 
 If you do not configure this template policy setting, no security level is configured.
 
-Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
+> [!NOTE]
+> Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
-Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
+> [!NOTE]
+> It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 
 <!--/Description-->
 
@@ -2373,7 +2400,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether Internet Explorer checks for digital signatures (which identifies the publisher of signed software and verifies it hasn't been modified or tampered with) on user computers before downloading executable programs.
+This policy setting allows you to manage whether Internet Explorer checks for digital signatures (which identifies the publisher of signed software, and verifies it hasn't been modified or tampered with) on user computers before downloading executable programs.
 
 If you enable this policy setting, Internet Explorer will check the digital signatures of executable programs and display their identities before downloading them to user computers.
 
@@ -2427,21 +2454,21 @@ Enables you to configure up to three versions of Microsoft Edge to open a redire
 If both the Windows Update for the next version of Microsoft Edge* and Microsoft Edge Stable channel are installed, the following behaviors occur:
 
 - If you enable this policy, you can configure redirected sites to open in up to three of the following channels where:
- 1 = Microsoft Edge Stable
- 2 = Microsoft Edge Beta version 77 or later
- 3 = Microsoft Edge Dev version 77 or later
- 4 = Microsoft Edge Canary version 77 or later
+    - 1 = Microsoft Edge Stable
+    - 2 = Microsoft Edge Beta version 77 or later
+    - 3 = Microsoft Edge Dev version 77 or later
+    - 4 = Microsoft Edge Canary version 77 or later
 
 - If you disable or do not configure this policy, Microsoft Edge Stable channel is used. This is the default behavior.
 
 If the Windows Update for the next version of Microsoft Edge* or Microsoft Edge Stable channel are not installed, the following behaviors occur:
 
 - If you enable this policy, you can configure redirected sites to open in up to three of the following channels where:
- 0 = Microsoft Edge version 45 or earlier
- 1 = Microsoft Edge Stable
- 2 = Microsoft Edge Beta version 77 or later
- 3 = Microsoft Edge Dev version 77 or later
- 4 = Microsoft Edge Canary version 77 or later
+    - 0 = Microsoft Edge version 45 or earlier
+    - 1 = Microsoft Edge Stable
+    - 2 = Microsoft Edge Beta version 77 or later
+    - 3 = Microsoft Edge Dev version 77 or later
+    - 4 = Microsoft Edge Canary version 77 or later
 
 - If you disable or do not configure this policy, Microsoft Edge version 45 or earlier is automatically used. This is the default behavior.
 
@@ -2694,7 +2721,7 @@ ADMX Info:
 <!--Description-->
 Internet Explorer uses Multipurpose Internet Mail Extensions (MIME) data to determine file handling procedures for files received through a Web server.
 
-This policy setting determines whether Internet Explorer requires that all file-type information provided by Web servers be consistent. For example, if the MIME type of a file is text/plain but the MIME sniff indicates that the file is really an executable file, Internet Explorer renames the file by saving it in the Internet Explorer cache and changing its extension.
+This policy setting determines, whether Internet Explorer requires that all file-type information provided by Web servers be consistent. For example, if the MIME type of a file is text/plain, but the MIME sniff indicates that the file is really an executable file, then Internet Explorer renames the file by saving it in the Internet Explorer cache and changing its extension.
 
 If you enable this policy setting, Internet Explorer requires consistent MIME data for all received files.
 
@@ -2746,7 +2773,7 @@ ADMX Info:
 This setting determines whether IE automatically downloads updated versions of Microsoft’s VersionList.XML. IE uses this file to determine whether an ActiveX control should be stopped from loading.
 
 > [!Caution]
-> If you enable this setting, IE stops downloading updated versions of VersionList.XML. Turning off this automatic download breaks the [out-of-date ActiveX control blocking feature](/internet-explorer/ie11-deploy-guide/out-of-date-activex-control-blocking) by not letting the version list update with newly outdated controls, potentially compromising the security of your computer.
+> If you enable this setting, IE stops downloading updated versions of VersionList.XML. Turning off this automatic download, breaks the [out-of-date ActiveX control blocking feature](/internet-explorer/ie11-deploy-guide/out-of-date-activex-control-blocking) by not letting the version list update with newly outdated controls, potentially compromising the security of your computer.
 
 If you disable or do not configure this setting, IE continues to download updated versions of VersionList.XML.
 
@@ -3008,7 +3035,10 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
-This setting specifies the number of days that Internet Explorer tracks views of pages in the History List. To access the Temporary Internet Files and History Settings dialog box, from the Menu bar, on the Tools menu, click Internet Options, click the General tab, and then click Settings under Browsing history.
+This setting specifies the number of days that Internet Explorer tracks views of pages in the History List. To access the Temporary Internet Files and History Settings dialog box, do the following:
+
+1. From the Menu bar, on the Tools menu, click Internet Options.
+1. Click the General tab, and then click Settings under Browsing history.
 
 If you enable this policy setting, a user cannot set the number of days that Internet Explorer tracks views of the pages in the History List. You must specify the number of days that Internet Explorer tracks views of pages in the History List. Users can not delete browsing history.
 
@@ -3260,7 +3290,8 @@ If you enable this policy setting, the browser negotiates or does not negotiate 
 
 If you disable or do not configure this policy setting, the user can select which encryption method the browser supports.
 
-Note: SSL 2.0 is off by default and is no longer supported starting with Windows 10 Version 1607. SSL 2.0 is an outdated security protocol, and enabling SSL 2.0 impairs the performance and functionality of TLS 1.0.
+> [!NOTE]
+> SSL 2.0 is off by default and is no longer supported starting with Windows 10 Version 1607. SSL 2.0 is an outdated security protocol, and enabling SSL 2.0 impairs the performance and functionality of TLS 1.0.
 
 <!--/Description-->
 
@@ -3363,7 +3394,7 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting prevents Internet Explorer from running the First Run wizard the first time a user starts the browser after installing Internet Explorer or Windows.
+This policy setting prevents Internet Explorer from running the First Run wizard, the first time a user starts the browser after installing Internet Explorer or Windows.
 
 If you enable this policy setting, you must make one of the following choices:
 -   Skip the First Run wizard, and go directly to the user's home page.
@@ -3371,7 +3402,7 @@ If you enable this policy setting, you must make one of the following choices:
 
 Starting with Windows 8, the "Welcome to Internet Explorer" webpage is not available. The user's home page will display regardless of which option is chosen.
 
-If you disable or do not configure this policy setting, Internet Explorer may run the First Run wizard the first time the browser is started after installation.
+If you disable or do not configure this policy setting, Internet Explorer may run the First Run wizard, the first time the browser is started after installation.
 
 <!--/Description-->
 
@@ -3746,13 +3777,14 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting determines whether Internet Explorer 11 uses 64-bit processes (for greater security) or 32-bit processes (for greater compatibility) when running in Enhanced Protected Mode on 64-bit versions of Windows.
+This policy setting determines whether Internet Explorer 11 uses 64-bit processes (for greater security) or 32-bit processes (for greater compatibility), when running in Enhanced Protected Mode on 64-bit versions of Windows.
 
-Important: Some ActiveX controls and toolbars may not be available when 64-bit processes are used.
+> [!IMPORTANT]
+> Some ActiveX controls and toolbars may not be available when 64-bit processes are used.
 
-If you enable this policy setting, Internet Explorer 11 will use 64-bit tab processes when running in Enhanced Protected Mode on 64-bit versions of Windows.
+If you enable this policy setting, Internet Explorer 11 will use 64-bit tab processes, when running in Enhanced Protected Mode on 64-bit versions of Windows.
 
-If you disable this policy setting, Internet Explorer 11 will use 32-bit tab processes when running in Enhanced Protected Mode on 64-bit versions of Windows.
+If you disable this policy setting, Internet Explorer 11 will use 32-bit tab processes, when running in Enhanced Protected Mode on 64-bit versions of Windows.
 
 If you don't configure this policy setting, users can turn this feature on or off using Internet Explorer settings. This feature is turned off by default.
 
@@ -3900,7 +3932,8 @@ If you enable this policy setting, you can specify which default home pages shou
 
 If you disable or do not configure this policy setting, the user can add secondary home pages.
 
-Note: If the “Disable Changing Home Page Settings” policy is enabled, the user cannot add secondary home pages.
+> [!NOTE]
+> If the “Disable Changing Home Page Settings” policy is enabled, the user cannot add secondary home pages.
 
 <!--/Description-->
 
@@ -3993,7 +4026,7 @@ ADMX Info:
 <!--Description-->
 Prevents Internet Explorer from checking whether a new version of the browser is available.
 
-If you enable this policy, it prevents Internet Explorer from checking to see whether it is the latest available browser version and notifying users if a new version is available.
+If you enable this policy, it prevents Internet Explorer from checking to see whether it is the latest available browser version and notifies users if a new version is available.
 
 If you disable this policy or do not configure it, Internet Explorer checks every 30 days by default, and then notifies users if a new version is available.
 
