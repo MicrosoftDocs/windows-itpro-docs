@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_Smartcard
-description: Policy CSP - ADMX_Smartcard
+description: Learn about Policy CSP - ADMX_Smartcard.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -108,7 +108,7 @@ manager: dansimp
 <!--Description-->
 This policy setting lets you allow certificates without an Extended Key Usage (EKU) set to be used for signing in.
 
-In versions of Windows prior to Windows Vista, smart card certificates that are used for a sign in require an enhanced key usage (EKU) extension with a smart card logon object identifier. This policy setting can be used to modify that restriction.
+In versions of Windows, prior to Windows Vista, smart card certificates that are used for a sign-in require an enhanced key usage (EKU) extension with a smart card logon object identifier. This policy setting can be used to modify that restriction.
 
 If you enable this policy setting, certificates with the following attributes can also be used to sign in on with a smart card:
 
@@ -161,7 +161,7 @@ ADMX Info:
 <!--Description-->
 This policy setting lets you determine whether the integrated unblock feature will be available in the logon User Interface (UI).
 
-In order to use the integrated unblock feature, your smart card must support this feature.  Check with your hardware manufacturer to see if your smart card supports this feature.
+In order to use the integrated unblock feature, your smart card must support this feature. Check with your hardware manufacturer to see if your smart card supports this feature.
 
 If you enable this policy setting, the integrated unblock feature will be available.
 
@@ -255,9 +255,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting permits those certificates to be displayed for a sign in which are either expired or not yet valid.
+This policy setting permits those certificates to be displayed for a sign-in, which are either expired or not yet valid.
 
-Under previous versions of Microsoft Windows, certificates were required to contain a valid time and not be expired. The certificate must still be accepted by the domain controller in order to be used. This setting only controls the displaying of the certificate on the client machine. 
+Under previous versions of Microsoft Windows, certificates were required to contain a valid time and not be expired. The certificate must still be accepted by the domain controller in order to be used. This setting only controls displaying of the certificate on the client machine. 
 
 If you enable this policy setting, certificates will be listed on the sign-in screen regardless of whether they have an invalid time or their time validity has expired.
 
@@ -351,7 +351,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage the cleanup behavior of root certificates.  If you enable this policy setting, then root certificate cleanup will occur according to the option selected. If you disable or don't configure this setting then root certificate cleanup will occur on a sign out.
+This policy setting allows you to manage the cleanup behavior of root certificates.  
+
+If you enable this policy setting, then root certificate cleanup will occur according to the option selected. 
+
+If you disable or don't configure this setting then root certificate cleanup will occur on a sign out.
 
 <!--/Description-->
 
@@ -399,7 +403,7 @@ This policy setting allows you to manage the root certificate propagation that o
 If you enable or don't configure this policy setting then root certificate propagation will occur when you insert your smart card.
 
 > [!NOTE]
-> For this policy setting to work the following policy setting must also be enabled: Turn on certificate propagation from smart card.
+> For this policy setting to work this policy setting must also be enabled: "Turn on certificate propagation from smart card".
 
 If you disable this policy setting, then root certificates won't be propagated from the smart card.
 
@@ -494,7 +498,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to control whether elliptic curve cryptography (ECC) certificates on a smart card can be used to sign in to a domain.
+This policy setting allows you to control whether elliptic curve cryptography (ECC) certificates on a smart card can be used to sign-in to a domain.
 
 If you enable this policy setting, ECC certificates on a smart card can be used to sign in to a domain.
 
@@ -503,6 +507,7 @@ If you disable or don't configure this policy setting, ECC certificates on a sma
 > [!NOTE]
 > This policy setting only affects a user's ability to log on to a domain. ECC certificates on a smart card that are used for other applications, such as document signing, are not affected by this policy setting. 
 > If you use an ECDSA key to log on, you must also have an associated ECDH key to permit logons when you are not connected to the network.
+
 <!--/Description-->
 
 
@@ -551,7 +556,7 @@ During the certificate renewal period, a user can have multiple valid logon cert
 If there are two or more of the "same" certificate on a smart card and this policy is enabled, then the certificate that is used for a sign in on Windows 2000, Windows XP, and Windows 2003 Server will be shown, otherwise the certificate with the expiration time furthest in the future will be shown.  
 
 > [!NOTE]
-> This setting will be applied after the following policy: "Allow time invalid certificates"
+> This setting will be applied after this policy: "Allow time invalid certificates"
 
 If you enable or don't configure this policy setting, filtering will take place.
 
@@ -598,9 +603,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage the reading of all certificates from the smart card for a sign in.
+This policy setting allows you to manage the reading of all certificates from the smart card for a sign-in.
 
-During a sign in, Windows will by default only read the default certificate from the smart card unless it supports retrieval of all certificates in a single call. This setting forces Windows to read all the certificates from the card. This setting can introduce a significant performance decrease in certain situations. Contact your smart card vendor to determine if your smart card and associated CSP supports the required behavior.
+During a sign-in, Windows will by default only read the default certificate from the smart card unless it supports retrieval of all certificates in a single call. This setting forces Windows to read all the certificates from the card. This setting can introduce a significant performance decrease in certain situations. Contact your smart card vendor to determine if your smart card and associated CSP supports the required behavior.
 
 If you enable this setting, then Windows will attempt to read all certificates from the smart card regardless of the feature set of the CSP.
 
@@ -652,7 +657,7 @@ This policy setting allows you to manage the displayed message when a smart card
 If you enable this policy setting, the specified message will be displayed to the user when the smart card is blocked. 
 
 > [!NOTE]
-> The following policy setting must be enabled: Allow Integrated Unblock screen to be displayed at the time of logon.
+> The following policy setting must be enabled: "Allow Integrated Unblock screen to be displayed at the time of logon".
 
 If you disable or don't configure this policy setting, the default message will be displayed to the user when the smart card is blocked, if the integrated unblock feature is enabled.
 
@@ -699,7 +704,7 @@ ADMX Info:
 <!--Description-->
 This policy setting lets you reverse the subject name from how it's stored in the certificate when displaying it during a sign in.  
 
-By default the user principal name (UPN) is displayed in addition to the common name to help users distinguish one certificate from another. For example, if the certificate subject was CN=User1, OU=Users, DN=example, DN=com and had an UPN of user1@example.com then "User1" will be displayed along with "user1@example.com." If the UPN isn't present, then the entire subject name will be displayed. This setting controls the appearance of that subject name and might need to be adjusted per organization.
+By default the User Principal Name (UPN) is displayed in addition to the common name to help users distinguish one certificate from another. For example, if the certificate subject was CN=User1, OU=Users, DN=example, DN=com and had an UPN of user1@example.com then "User1" will be displayed along with "user1@example.com." If the UPN isn't present, then the entire subject name will be displayed. This setting controls the appearance of that subject name and might need to be adjusted per organization.
 
 If you enable this policy setting or don't configure this setting, then the subject name will be reversed.  
 
@@ -846,7 +851,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting lets you determine whether an optional field will be displayed during a sign in and elevation that allows users to enter their user name or user name and domain, thereby associating a certificate with the users.
+This policy setting lets you determine whether an optional field will be displayed during a sign-in and elevation that allows users to enter their user name or user name and domain, thereby associating a certificate with the users.
 
 If you enable this policy setting, then an optional field that allows a user to enter their user name or user name and domain will be displayed.
 
@@ -870,3 +875,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
