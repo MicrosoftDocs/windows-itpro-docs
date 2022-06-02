@@ -39,27 +39,27 @@ You can use Group Policy to enable Windows Defender Credential Guard. This will 
 
 1. From the Group Policy Management Console, go to **Computer Configuration** > **Administrative Templates** > **System** > **Device Guard**.
 
-1. Double-click **Turn On Virtualization Based Security**, and then click the **Enabled** option.
+1. Select **Turn On Virtualization Based Security**, and then select the **Enabled** option.
 
 1. In the **Select Platform Security Level** box, choose **Secure Boot** or **Secure Boot and DMA Protection**.
 
-1. In the **Credential Guard Configuration** box, click **Enabled with UEFI lock**, and then click **OK**. If you want to be able to turn off Windows Defender Credential Guard remotely, choose **Enabled without lock**.
+1. In the **Credential Guard Configuration** box, select **Enabled with UEFI lock**. If you want to be able to turn off Windows Defender Credential Guard remotely, choose **Enabled without lock**.
 
 1. In the **Secure Launch Configuration** box, choose **Not Configured**, **Enabled** or **Disabled**. See [System Guard Secure Launch and SMM protection](../../threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md) for more details.
 
    :::image type="content" source="images/credguard-gp.png" alt-text="Windows Defender Credential Guard Group Policy setting.":::
 
-1. Close the Group Policy Management Console.
+1. Select **OK**, and then close the Group Policy Management Console.
 
 To enforce processing of the group policy, you can run `gpupdate /force`.
 
 ### Enable Windows Defender Credential Guard by using Intune
 
-1. From **Home**, click **Microsoft Intune**.
+1. From **Home**, select **Microsoft Intune**.
 
-1. Click **Device configuration**.
+1. Select **Device configuration**.
 
-1. Click **Profiles** > **Create Profile** > **Endpoint protection** > **Windows Defender Credential Guard**.
+1. Select **Profiles** > **Create Profile** > **Endpoint protection** > **Windows Defender Credential Guard**.
 
    > [!NOTE]
    > It will enable VBS and Secure Boot and you can do it with or without UEFI Lock. If you will need to disable Credential Guard remotely, enable it without UEFI lock.
@@ -85,13 +85,13 @@ You can do this by using either the Control Panel or the Deployment Image Servic
 
 1. Open the Programs and Features control panel.
 
-1. Click **Turn Windows feature on or off**.
+1. Select **Turn Windows feature on or off**.
 
 1. Go to **Hyper-V** > **Hyper-V Platform**, and then select the **Hyper-V Hypervisor** check box.
 
 1. Select the **Isolated User Mode** check box at the top level of the feature selection.
 
-1. Click **OK**.
+1. Select **OK**.
 
 ##### Add the virtualization-based security features to an offline image by using DISM
 
@@ -157,9 +157,9 @@ DG_Readiness_Tool.ps1 -Enable -AutoReboot
 
 You can view System Information to check that Windows Defender Credential Guard is running on a PC.
 
-1. Click **Start**, type **msinfo32.exe**, and then click **System Information**.
+1. Select **Start**, type **msinfo32.exe**, and then select **System Information**.
 
-1. Click **System Summary**.
+1. Select **System Summary**.
 
 1. Confirm that **Credential Guard** is shown next to **Virtualization-based security Services Running**.
 
