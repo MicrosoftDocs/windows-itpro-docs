@@ -11289,7 +11289,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).
+This policy setting allows you to manage, whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).
 
 If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
@@ -11339,7 +11339,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether script code on pages in the zone is run.
+This policy setting allows you to manage, whether script code on pages in the zone is run.
 
 If you enable this policy setting, script code on pages in the zone can run automatically. If you select Prompt in the drop-down box, users are queried to choose whether to allow script code on pages in the zone to run.
 
@@ -11389,7 +11389,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting manages whether users will be automatically prompted for ActiveX control installations.
+This policy setting manages, whether users will be automatically prompted for ActiveX control installations.
 
 If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
 
@@ -11439,7 +11439,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting determines whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.
+This policy setting determines, whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.
 
 If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
@@ -11537,7 +11537,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether scripts can perform a clipboard operation (for example, cut, copy, and paste) in a specified region.
+This policy setting allows you to manage, whether scripts can perform a clipboard operation (for example, cut, copy, and paste) in a specified region.
 
 If you enable this policy setting, a script can perform a clipboard operation.
 
@@ -11589,7 +11589,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether users can drag files or copy and paste files from a source within the zone.
+This policy setting allows you to manage, whether users can drag files or copy and paste files from a source within the zone.
 
 If you enable this policy setting, users can drag files or copy and paste files from this zone automatically. If you select Prompt in the drop-down box, users are queried to choose whether to drag or copy files from this zone.
 
@@ -11639,7 +11639,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether file downloads are permitted from the zone. This option is determined by the zone of the page with the link causing the download, not the zone from which the file is delivered.
+This policy setting allows you to manage, whether file downloads are permitted from the zone. This option is determined by the zone of the page with the link causing the download, not the zone from which the file is delivered.
 
 If you enable this policy setting, files can be downloaded from the zone.
 
@@ -11689,7 +11689,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether pages of the zone may download HTML fonts.
+This policy setting allows you to manage, whether pages of the zone may download HTML fonts.
 
 If you enable this policy setting, HTML fonts can be downloaded automatically. If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.
 
@@ -11739,13 +11739,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.
+This policy setting allows you to manage, whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.
 
 If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
 
-If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone, as set by Protection from Zone Elevation feature control.
 
-If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone, as set by Protection from Zone Elevation feature control.
 
 <!--/Description-->
 
@@ -11839,7 +11839,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether a user's browser can be redirected to another Web page if the author of the Web page uses the Meta Refresh setting (tag) to redirect browsers to another Web page.
+This policy setting allows you to manage, whether a user's browser can be redirected to another Web page, if the author of the Web page uses the Meta Refresh setting (tag) to redirect browsers to another Web page.
 
 If you enable this policy setting, a user's browser that loads a page containing an active Meta Refresh setting can be redirected to another Web page.
 
@@ -11889,9 +11889,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage, whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
-If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
+If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine, whether to execute unsigned managed components.
 
 If you disable this policy setting, Internet Explorer will not execute unsigned managed components.
 
@@ -11941,7 +11941,7 @@ ADMX Info:
 <!--Description-->
 This policy setting controls whether or not the user is prompted to allow ActiveX controls to run on websites other than the website that installed the ActiveX control.
 
-If you enable this policy setting, the user is prompted before ActiveX controls can run from websites in this zone. The user can choose to allow the control to run from the current site or from all sites.
+If you enable this policy setting, the user is prompted before ActiveX controls can run from websites in this zone. The user can choose to allow the control, to run from the current site or from all sites.
 
 If you disable this policy setting, the user does not see the per-site ActiveX prompt, and ActiveX controls can run from all sites in this zone.
 
@@ -11987,7 +11987,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether or not the user is allowed to run the TDC ActiveX control on websites.
+This policy setting controls, whether or not the user is allowed to run the TDC ActiveX control on websites.
 
 If you enable this policy setting, the TDC ActiveX control will not run from websites in this zone.
 
