@@ -74,7 +74,7 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 |NextUp Talker	                        |1.0.49	    |Win32    |NextUp Technologies|
 |NonVisual Desktop Access	            |2021.3.1	|Win32    |NV Access|
 |NWEA Secure Testing Browser	        |5.4.300.0	 |Win32   |NWEA|
-|Pearson TestNav	                    |1.10.2.0	|Win32    |Pearson|
+|Pearson TestNav	                    |1.10.2.0	|Store    |Pearson|
 |Questar Secure Browser	                |4.8.3.376	|Win32    |Questar|
 |ReadAndWriteForWindows	                |12.0.60.0	 |Win32   |Texthelp Ltd.|
 |Remote Help	                        |3.8.0.12	 |Win32   |Microsoft|
