@@ -1591,3 +1591,7 @@ This policy allows an IT Admin to define the following details:
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)
+
