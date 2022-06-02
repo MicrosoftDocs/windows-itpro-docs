@@ -77,7 +77,7 @@ Windows Autopatch will either:
 > [!NOTE]
 > Windows Autopatch doesn't currently allow customers to force their devices to stay on a previous version or rollback to a previous version.
 
-Since Windows quality updates are bundled together into a single release in the [Monthly Enterprise Channel](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview), we can't roll back only a portion of the update for Microsoft 365 Apps for enterprise.  
+Since quality updates are bundled together into a single release in the [Monthly Enterprise Channel](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview), we can't roll back only a portion of the update for Microsoft 365 Apps for enterprise.  
 
 ## Conflicting and unsupported policies
 
