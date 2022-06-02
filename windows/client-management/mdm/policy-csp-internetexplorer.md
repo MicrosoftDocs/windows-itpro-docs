@@ -4194,7 +4194,8 @@ If you disable this policy or do not configure it, users can add Web sites to or
 
 This policy prevents users from changing site management settings for security zones established by the administrator.
 
-Note:  The "Disable the Security page" policy (located in \User Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel), which removes the Security tab from the interface, takes precedence over this policy. If it is enabled, this policy is ignored.
+> [!NOTE]
+> The "Disable the Security page" policy (located in \User Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel), which removes the Security tab from the interface, takes precedence over this policy. If it is enabled, this policy is ignored.
 
 Also, see the "Security zones: Use only machine settings" policy.
 
@@ -4247,7 +4248,8 @@ If you disable this policy or do not configure it, users can change the settings
 
 This policy prevents users from changing security zone settings established by the administrator.
 
-Note: The "Disable the Security page" policy (located in \User Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel), which removes the Security tab from Internet Explorer in Control Panel, takes precedence over this policy. If it is enabled, this policy is ignored.
+> [!NOTE]
+> The "Disable the Security page" policy (located in \User Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel), which removes the Security tab from Internet Explorer in Control Panel, takes precedence over this policy. If it is enabled, this policy is ignored.
 
 Also, see the "Security zones: Use only machine settings" policy.
 
@@ -4347,9 +4349,9 @@ This policy setting allows you to manage a list of domains on which Internet Exp
 
 If you enable this policy setting, you can enter a custom list of domains for which outdated ActiveX controls won't be blocked in Internet Explorer. Each domain entry must be formatted like one of the following:
 
-1. "domain.name.TLD". For example, if you want to include *.contoso.com/*, use "contoso.com"
-2. "hostname". For example, if you want to include http://example, use "example"
-3. "file:///path/filename.htm". For example, use "file:///C:/Users/contoso/Desktop/index.htm"
+1. "domain.name.TLD". For example, if you want to include *.contoso.com/*, use "contoso.com".
+2. "hostname". For example, if you want to include http://example, use "example".
+3. "file:///path/filename.htm". For example, use "file:///C:/Users/contoso/Desktop/index.htm".
 
 If you disable or don't configure this policy setting, the list is deleted and Internet Explorer continues to block specific outdated ActiveX controls on all domains in the Internet Zone.
 
@@ -4407,8 +4409,8 @@ This policy setting lets admins enable extended Microsoft Edge Internet Explorer
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) - Disabled.
--   1 - Enabled.
+-   0 (default) - Disabled
+-   1 - Enabled
 
 <!--/SupportedValues-->
 <!--ADMXBacked-->
@@ -4450,11 +4452,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether local sites which are not explicitly mapped into any Security Zone are forced into the local Intranet security zone.
+This policy setting controls, whether local sites which are not explicitly mapped into any Security Zone are forced into the local Intranet security zone.
 
 If you enable this policy setting, local sites which are not explicitly mapped into a zone are considered to be in the Intranet Zone.
 
-If you disable this policy setting, local sites which are not explicitly mapped into a zone will not be considered to be in the Intranet Zone (so would typically be in the Internet Zone).
+If you disable this policy setting, local sites which are not explicitly mapped into a zone will not be considered in the Intranet Zone (so would typically be in the Internet Zone).
 
 If you do not configure this policy setting, users choose whether to force local sites into the Intranet Zone.
 
@@ -4500,7 +4502,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether URLs representing UNCs are mapped into the local Intranet security zone.
+This policy setting controls, whether URLs representing UNCs are mapped into the local Intranet security zone.
 
 If you enable this policy setting, all network paths are mapped into the Intranet Zone.
 
@@ -4550,7 +4552,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).
+This policy setting allows you to manage, whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).
 
 If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
@@ -4600,7 +4602,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting manages whether users will be automatically prompted for ActiveX control installations.
+This policy setting manages, whether users will be automatically prompted for ActiveX control installations.
 
 If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
 
@@ -4650,7 +4652,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting determines whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.
+This policy setting determines, whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.
 
 If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
@@ -4698,11 +4700,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether scripts can perform a clipboard operation (for example, cut, copy, and paste) in a specified region.
+This policy setting allows you to manage, whether scripts can perform a clipboard operation (for example, cut, copy, and paste) in a specified region.
 
 If you enable this policy setting, a script can perform a clipboard operation.
 
-If you select Prompt in the drop-down box, users are queried as to whether to perform clipboard operations.
+If you select Prompt in the drop-down box, users are queried, whether to perform clipboard operations.
 
 If you disable this policy setting, a script cannot perform a clipboard operation.
 
@@ -4750,7 +4752,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether users can drag files or copy and paste files from a source within the zone.
+This policy setting allows you to manage, whether users can drag files or copy and paste files from a source within the zone.
 
 If you enable this policy setting, users can drag files or copy and paste files from this zone automatically. If you select Prompt in the drop-down box, users are queried to choose whether to drag or copy files from this zone.
 
@@ -4800,7 +4802,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether pages of the zone may download HTML fonts.
+This policy setting allows you to manage, whether pages of the zone may download HTML fonts.
 
 If you enable this policy setting, HTML fonts can be downloaded automatically. If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.
 
@@ -4850,11 +4852,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether Web sites from less privileged zones, such as Restricted Sites, can navigate into this zone.
+This policy setting allows you to manage, whether Web sites from less privileged zones, such as Restricted Sites, can navigate into this zone.
 
-If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone.  The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
+If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
 
-If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone, as set by Protection from Zone Elevation feature control.
 
 If you do not configure this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone.
 
@@ -4950,9 +4952,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage, whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
-If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
+If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine, whether to execute unsigned managed components.
 
 If you disable this policy setting, Internet Explorer will not execute unsigned managed components.
 
@@ -5000,7 +5002,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether or not the user is prompted to allow ActiveX controls to run on websites other than the website that installed the ActiveX control.
+This policy setting controls, whether or not the user is prompted to allow ActiveX controls to run on websites other than the website that installed the ActiveX control.
 
 If you enable this policy setting, the user is prompted before ActiveX controls can run from websites in this zone. The user can choose to allow the control to run from the current site or from all sites.
 
@@ -5048,7 +5050,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether or not the user is allowed to run the TDC ActiveX control on websites.
+This policy setting controls, whether or not the user is allowed to run the TDC ActiveX control on websites.
 
 If you enable this policy setting, the TDC ActiveX control will not run from websites in this zone.
 
@@ -5146,7 +5148,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting determines whether a page can control embedded WebBrowser controls via script.
+This policy setting determines, whether a page can control embedded WebBrowser controls via script.
 
 If you enable this policy setting, script access to the WebBrowser control is allowed.
 
@@ -5196,7 +5198,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether the user can run scriptlets.
+This policy setting allows you to manage, whether the user can run scriptlets.
 
 If you enable this policy setting, the user can run scriptlets.
 
@@ -5246,7 +5248,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether Windows Defender SmartScreen scans pages in this zone for malicious content.
+This policy setting controls, whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
 If you enable this policy setting, Windows Defender SmartScreen scans pages in this zone for malicious content.
 
@@ -5254,7 +5256,8 @@ If you disable this policy setting, Windows Defender SmartScreen does not scan p
 
 If you do not configure this policy setting, the user can choose whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
-Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
+> [!NOTE]
+> In Internet Explorer 7, this policy setting controls whether Phishing Filter, scans pages in this zone for malicious content.
 
 <!--/Description-->
 
@@ -5298,7 +5301,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether script is allowed to update the status bar within the zone.
+This policy setting allows you to manage, whether script is allowed to update the status bar within the zone.
 
 If you enable this policy setting, script is allowed to update the status bar.
 
@@ -5346,7 +5349,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured.
+This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored, if this policy setting is appropriately configured.
 
 If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
@@ -5396,7 +5399,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether VBScript can be run on pages from the specified zone in Internet Explorer.
+This policy setting allows you to manage, whether VBScript can be run on pages from the specified zone in Internet Explorer.
 
 If you selected Enable in the drop-down box, VBScript can run without user intervention.
 
@@ -5450,11 +5453,11 @@ ADMX Info:
 <!--Description-->
 This policy setting determines whether Internet Explorer runs antimalware programs against ActiveX controls, to check if they're safe to load on pages.
 
-If you enable this policy setting, Internet Explorer won't check with your antimalware program to see if it's safe to create an instance of the ActiveX control.
+If you enable this policy setting, Internet Explorer won't check with your antimalware program, to see if it's safe to create an instance of the ActiveX control.
 
-If you disable this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control.
+If you disable this policy setting, Internet Explorer always checks with your antimalware program, to see if it's safe to create an instance of the ActiveX control.
 
-If you don't configure this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control. Users can turn this behavior on or off, using Internet Explorer Security settings.
+If you don't configure this policy setting, Internet Explorer always checks with your antimalware program, to see if it's safe to create an instance of the ActiveX control. Users can turn this behavior on or off, using Internet Explorer Security settings.
 
 <!--/Description-->
 
@@ -5498,13 +5501,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether users may download signed ActiveX controls from a page in the zone.
+This policy setting allows you to manage, whether users may download signed ActiveX controls from a page in the zone.
 
 If you enable this policy, users can download signed controls without user intervention. If you select Prompt in the drop-down box, users are queried whether to download controls signed by publishers who aren't trusted. Code signed by trusted publishers is silently downloaded.
 
 If you disable the policy setting, signed controls cannot be downloaded.
 
-If you do not configure this policy setting, users are queried whether to download controls signed by publishers who aren't trusted.  Code signed by trusted publishers is silently downloaded.
+If you do not configure this policy setting, users are queried whether to download controls signed by publishers who aren't trusted. Code signed by trusted publishers is silently downloaded.
 
 <!--/Description-->
 
@@ -5548,7 +5551,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether users may download unsigned ActiveX controls from the zone. Such code is potentially harmful, especially when coming from an untrusted zone.
+This policy setting allows you to manage, whether users may download unsigned ActiveX controls from the zone. Such code is potentially harmful, especially when coming from an untrusted zone.
 
 If you enable this policy setting, users can run unsigned controls without user intervention. If you select Prompt in the drop-down box, users are queried to choose whether to allow the unsigned control to run.
 
@@ -5646,15 +5649,15 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to set options for dragging content from one domain to a different domain when the source and destination are in different windows.
+This policy setting allows you to set options for dragging content from one domain to a different domain, when the source and destination are in different windows.
 
-If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in different windows. Users cannot change this setting.
+If you enable this policy setting and click Enable, users can drag content from one domain to a different domain, when the source and destination are in different windows. Users cannot change this setting.
 
-If you enable this policy setting and click Disable, users cannot drag content from one domain to a different domain when both the source and destination are in different windows. Users cannot change this setting.
+If you enable this policy setting and click Disable, users cannot drag content from one domain to a different domain, when both the source and destination are in different windows. Users cannot change this setting.
 
-In Internet Explorer 10, if you disable this policy setting or do not configure it, users cannot drag content from one domain to a different domain when the source and destination are in different windows. Users can change this setting in the Internet Options dialog.
+In Internet Explorer 10, if you disable this policy setting or do not configure it, users cannot drag content from one domain to a different domain, when the source and destination are in different windows. Users can change this setting in the Internet Options dialog.
 
-In Internet Explorer 9 and earlier versions, if you disable this policy or do not configure it, users can drag content from one domain to a different domain when the source and destination are in different windows. Users cannot change this setting.
+In Internet Explorer 9 and earlier versions, if you disable this policy or do not configure it, users can drag content from one domain to a different domain, when the source and destination are in different windows. Users cannot change this setting.
 
 <!--/Description-->
 
@@ -5698,15 +5701,15 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to set options for dragging content from one domain to a different domain when the source and destination are in the same window.
+This policy setting allows you to set options for dragging content from one domain to a different domain, when the source and destination are in the same window.
 
-If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in the same window. Users cannot change this setting.
+If you enable this policy setting and click Enable, users can drag content from one domain to a different domain, when the source and destination are in the same window. Users cannot change this setting.
 
-If you enable this policy setting and click Disable, users cannot drag content from one domain to a different domain when the source and destination are in the same window. Users cannot change this setting in the Internet Options dialog.
+If you enable this policy setting and click Disable, users cannot drag content from one domain to a different domain, when the source and destination are in the same window. Users cannot change this setting in the Internet Options dialog.
 
-In Internet Explorer 10, if you disable this policy setting or do not configure it, users cannot drag content from one domain to a different domain when the source and destination are in the same window. Users can change this setting in the Internet Options dialog.
+In Internet Explorer 10, if you disable this policy setting or do not configure it, users cannot drag content from one domain to a different domain, when the source and destination are in the same window. Users can change this setting in the Internet Options dialog.
 
-In Internet Explorer 9 and earlier versions, if you disable this policy setting or do not configure it, users can drag content from one domain to a different domain when the source and destination are in the same window. Users cannot change this setting in the Internet Options dialog.
+In Internet Explorer 9 and earlier versions, if you disable this policy setting or do not configure it, users can drag content from one domain to a different domain, when the source and destination are in the same window. Users cannot change this setting in the Internet Options dialog.
 
 <!--/Description-->
 
@@ -5800,7 +5803,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to turn on Protected Mode. Protected Mode helps protect Internet Explorer from exploited vulnerabilities by reducing the locations that Internet Explorer can write to in the registry and the file system.
+This policy setting allows you to turn on Protected Mode. Protected Mode helps protect Internet Explorer from exploited vulnerabilities, by reducing the locations that Internet Explorer can write to in the registry and the file system.
 
 If you enable this policy setting, Protected Mode is turned on. The user cannot turn off Protected Mode.
 
@@ -5850,7 +5853,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether or not local path information is sent when the user is uploading a file via an HTML form. If the local path information is sent, some information may be unintentionally revealed to the server. For instance, files sent from the user's desktop may contain the user name as a part of the path.
+This policy setting controls whether or not local path information is sent, when the user is uploading a file via an HTML form. If the local path information is sent, some information may be unintentionally revealed to the server. For instance, files sent from the user's desktop may contain the user name as a part of the path.
 
 If you enable this policy setting, path information is sent when the user is uploading a file via an HTML form.
 
@@ -5981,7 +5984,7 @@ If you enable this policy setting, you can choose options from the drop-down box
 
 Low Safety enables applets to perform all operations.
 
-Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer), and user-controlled file I/O.
 
 High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
 
@@ -6031,9 +6034,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether applications may be run and files may be downloaded from an IFRAME reference in the HTML of the pages in this zone.
+This policy setting allows you to manage, whether applications may be run and files may be downloaded from an IFRAME reference in the HTML of the pages in this zone.
 
-If you enable this policy setting, users can run applications and download files from IFRAMEs on the pages in this zone without user intervention. If you select Prompt in the drop-down box, users are queried to choose whether to run applications and download files from IFRAMEs on the pages in this zone.
+If you enable this policy setting, users can run applications and download files from IFRAMEs on the pages in this zone, without user intervention. If you select Prompt in the drop-down box, users are queried to choose whether to run applications and download files from IFRAMEs on the pages in this zone.
 
 If you disable this policy setting, users are prevented from running applications and downloading files from IFRAMEs on the pages in this zone.
 
@@ -6085,11 +6088,11 @@ This policy setting allows you to manage settings for logon options.
 
 If you enable this policy setting, you can choose from the following logon options.
 
-Anonymous logon to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol.
+Anonymous logon to disable HTTP authentication, and use the guest account only for the Common Internet File System (CIFS) protocol.
 
 Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session.
 
-Automatic logon only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the remainder of the session.
+Automatic logon, only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the remainder of the session.
 
 Automatic logon with current user name and password to attempt logon using Windows NT Challenge Response (also known as NTLM authentication). If Windows NT Challenge Response is supported by the server, the logon uses the user's network user name and password for logon. If Windows NT Challenge Response is not supported by the server, the user is queried to provide the user name and password.
 
@@ -6139,13 +6142,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.
+This policy setting allows you to manage the opening of windows and frames, and access of applications across different domains.
 
-If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
+If you enable this policy setting, users can open windows and frames from other domains, and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
 
 If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
 
-If you do not configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
+If you do not configure this policy setting, users can open windows and frames from other domains, and access applications from other domains.
 
 <!--/Description-->
 
@@ -6189,9 +6192,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether .NET Framework components that are signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage, whether .NET Framework components that are signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
-If you enable this policy setting, Internet Explorer will execute signed managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute signed managed components.
+If you enable this policy setting, Internet Explorer will execute signed managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine, whether to execute signed managed components.
 
 If you disable this policy setting, Internet Explorer will not execute signed managed components.
 
@@ -6239,7 +6242,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether or not the "Open File - Security Warning" message appears when the user tries to open executable files or other potentially unsafe files (from an intranet file share by using File Explorer, for example).
+This policy setting controls, whether or not the "Open File - Security Warning" message appears when the user tries to open executable files or other potentially unsafe files (from an intranet file share by using File Explorer, for example).
 
 If you enable this policy setting and set the drop-down box to Enable, these files open without a security warning. If you set the drop-down box to Prompt, a security warning appears before the files open.
 
@@ -6289,7 +6292,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether unwanted pop-up windows appear. Pop-up windows that are opened when the end user clicks a link are not blocked.
+This policy setting allows you to manage, whether unwanted pop-up windows appear. Pop-up windows that are opened, when the end user clicks a link are not blocked.
 
 If you enable this policy setting, most unwanted pop-up windows are prevented from appearing.
 
@@ -6339,13 +6342,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).
+This policy setting allows you to manage, whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).
 
 If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
 If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-If you do not configure this policy setting, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
+If you do not configure this policy setting, users are queried to choose, whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
 <!--/Description-->
 
@@ -6389,7 +6392,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting manages whether users will be automatically prompted for ActiveX control installations.
+This policy setting manages, whether users will be automatically prompted for ActiveX control installations.
 
 If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
 
@@ -6439,7 +6442,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting determines whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.
+This policy setting determines, whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.
 
 If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
@@ -6487,7 +6490,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether pages of the zone may download HTML fonts.
+This policy setting allows you to manage, whether pages of the zone may download HTML fonts.
 
 If you enable this policy setting, HTML fonts can be downloaded automatically. If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.
 
@@ -6537,11 +6540,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether Web sites from less privileged zones, such as Restricted Sites, can navigate into this zone.
+This policy setting allows you to manage, whether Web sites from less privileged zones, such as Restricted Sites, can navigate into this zone.
 
-If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone.  The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
+If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
 
-If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone, as set by Protection from Zone Elevation feature control.
 
 If you do not configure this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone.
 
@@ -6587,9 +6590,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage, whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag, and managed executables referenced from a link.
 
-If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
+If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine, whether to execute unsigned managed components.
 
 If you disable this policy setting, Internet Explorer will not execute unsigned managed components.
 
@@ -6637,7 +6640,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether the user can run scriptlets.
+This policy setting allows you to manage, whether the user can run scriptlets.
 
 If you enable this policy setting, the user can run scriptlets.
 
@@ -6687,7 +6690,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether Windows Defender SmartScreen scans pages in this zone for malicious content.
+This policy setting controls, whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
 If you enable this policy setting, Windows Defender SmartScreen scans pages in this zone for malicious content.
 
@@ -6695,7 +6698,8 @@ If you disable this policy setting, Windows Defender SmartScreen does not scan p
 
 If you do not configure this policy setting, the user can choose whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
-Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
+> [!NOTE]
+> In Internet Explorer 7, this policy setting controls whether Phishing Filter, scans pages in this zone for malicious content.
 
 <!--/Description-->
 
@@ -6739,7 +6743,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured.
+This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored, if this policy setting is appropriately configured.
 
 If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
@@ -6789,13 +6793,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting determines whether Internet Explorer runs antimalware programs against ActiveX controls, to check if they're safe to load on pages.
+This policy setting determines, whether Internet Explorer runs antimalware programs against ActiveX controls, to check if they're safe to load on pages.
 
 If you enable this policy setting, Internet Explorer won't check with your antimalware program to see if it's safe to create an instance of the ActiveX control.
 
-If you disable this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control.
+If you disable this policy setting, Internet Explorer always checks with your antimalware program, to see if it's safe to create an instance of the ActiveX control.
 
-If you don't configure this policy setting, Internet Explorer won't check with your antimalware program to see if it's safe to create an instance of the ActiveX control. Users can turn this behavior on or off, using Internet Explorer Security settings.
+If you don't configure this policy setting, Internet Explorer won't check with your antimalware program, to see if it's safe to create an instance of the ActiveX control. Users can turn this behavior on or off, using Internet Explorer Security settings.
 
 <!--/Description-->
 
@@ -6897,7 +6901,7 @@ If you enable this policy setting, you can choose options from the drop-down box
 
 Low Safety enables applets to perform all operations.
 
-Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer), and user-controlled file I/O.
 
 High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
 
@@ -6947,13 +6951,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.
+This policy setting allows you to manage the opening of windows and frames, and access of applications across different domains.
 
-If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
+If you enable this policy setting, users can open windows and frames from other domains, and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
 
 If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
 
-If you do not configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
+If you do not configure this policy setting, users can open windows and frames from other domains, and access applications from other domains.
 
 <!--/Description-->
 
@@ -7000,7 +7004,7 @@ ADMX Info:
 This policy setting prevents intranet sites from being opened in any browser except Internet Explorer.
 
 > [!NOTE]
-> If the [InternetExplorer/SendSitesNotInEnterpriseSiteListToEdg](#internetexplorer-policies)e policy is not enabled, then this policy has no effect.
+> If the [InternetExplorer/SendSitesNotInEnterpriseSiteListToEdge](#internetexplorer-policies) policy is not enabled, then this policy has no effect.
 
 If you enable this policy, all intranet sites are opened in Internet Explorer 11. The only exceptions are sites listed in your Enterprise Mode Site List.
 If you disable or do not configure this policy, all intranet sites are automatically opened in Microsoft Edge.
@@ -7073,7 +7077,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).
+This policy setting allows you to manage, whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).
 
 If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
@@ -7123,7 +7127,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting manages whether users will be automatically prompted for ActiveX control installations.
+This policy setting manages, whether users will be automatically prompted for ActiveX control installations.
 
 If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
 
@@ -7173,7 +7177,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting determines whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.
+This policy setting determines, whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.
 
 If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
@@ -7221,7 +7225,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether pages of the zone may download HTML fonts.
+This policy setting allows you to manage, whether pages of the zone may download HTML fonts.
 
 If you enable this policy setting, HTML fonts can be downloaded automatically. If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.
 
@@ -7271,13 +7275,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.
+This policy setting allows you to manage, whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.
 
 If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
 
-If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone, as set by Protection from Zone Elevation feature control.
 
-If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be in this zone, as set by Protection from Zone Elevation feature control.
 
 <!--/Description-->
 
@@ -7321,9 +7325,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage, whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
-If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
+If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine, whether to execute unsigned managed components.
 
 If you disable this policy setting, Internet Explorer will not execute unsigned managed components.
 
@@ -7371,7 +7375,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether the user can run scriptlets.
+This policy setting allows you to manage, whether the user can run scriptlets.
 
 If you enable this policy setting, the user can run scriptlets.
 
@@ -7421,7 +7425,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether Windows Defender SmartScreen scans pages in this zone for malicious content.
+This policy setting controls, whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
 If you enable this policy setting, Windows Defender SmartScreen scans pages in this zone for malicious content.
 
@@ -7429,7 +7433,8 @@ If you disable this policy setting, Windows Defender SmartScreen does not scan p
 
 If you do not configure this policy setting, the user can choose whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
-Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
+> [!NOTE]
+> In Internet Explorer 7, this policy setting controls whether Phishing Filter, scans pages in this zone for malicious content.
 
 <!--/Description-->
 
@@ -7473,7 +7478,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured.
+This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored, if this policy setting is appropriately configured.
 
 If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
@@ -7523,13 +7528,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting determines whether Internet Explorer runs antimalware programs against ActiveX controls, to check if they're safe to load on pages.
+This policy setting determines, whether Internet Explorer runs antimalware programs against ActiveX controls, to check if they're safe to load on pages.
 
-If you enable this policy setting, Internet Explorer won't check with your antimalware program to see if it's safe to create an instance of the ActiveX control.
+If you enable this policy setting, Internet Explorer won't check with your antimalware program, to see if it's safe to create an instance of the ActiveX control.
 
-If you disable this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control.
+If you disable this policy setting, Internet Explorer always checks with your antimalware program, to see if it's safe to create an instance of the ActiveX control.
 
-If you don't configure this policy setting, Internet Explorer won't check with your antimalware program to see if it's safe to create an instance of the ActiveX control. Users can turn this behavior on or off, using Internet Explorer Security settings.
+If you don't configure this policy setting, Internet Explorer won't check with your antimalware program, to see if it's safe to create an instance of the ActiveX control. Users can turn this behavior on or off, using Internet Explorer Security settings.
 
 <!--/Description-->
 
@@ -7631,7 +7636,7 @@ If you enable this policy setting, you can choose options from the drop-down box
 
 Low Safety enables applets to perform all operations.
 
-Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer), and user-controlled file I/O.
 
 High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
 
@@ -7681,13 +7686,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.
+This policy setting allows you to manage the opening of windows and frames, and access of applications across different domains.
 
-If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
+If you enable this policy setting, users can open windows and frames from other domains, and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
 
 If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
 
-If you do not configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
+If you do not configure this policy setting, users can open windows and frames from other domains, and access applications from other domains.
 
 <!--/Description-->
 
@@ -7731,7 +7736,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).
+This policy setting allows you to manage, whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).
 
 If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
@@ -7781,7 +7786,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting manages whether users will be automatically prompted for ActiveX control installations.
+This policy setting manages, whether users will be automatically prompted for ActiveX control installations.
 
 If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
 
@@ -7831,7 +7836,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting determines whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.
+This policy setting determines, whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.
 
 If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
@@ -7879,7 +7884,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether pages of the zone may download HTML fonts.
+This policy setting allows you to manage, whether pages of the zone may download HTML fonts.
 
 If you enable this policy setting, HTML fonts can be downloaded automatically. If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.
 
@@ -7929,13 +7934,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.
+This policy setting allows you to manage, whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.
 
 If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
 
-If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone, as set by Protection from Zone Elevation feature control.
 
-If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be in this zone, as set by Protection from Zone Elevation feature control.
 
 <!--/Description-->
 
@@ -7979,9 +7984,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether, .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
-If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
+If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine, whether to execute unsigned managed components.
 
 If you disable this policy setting, Internet Explorer will not execute unsigned managed components.
 
@@ -8029,7 +8034,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether the user can run scriptlets.
+This policy setting allows you to manage, whether the user can run scriptlets.
 
 If you enable this policy setting, the user can run scriptlets.
 
@@ -8079,7 +8084,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether Windows Defender SmartScreen scans pages in this zone for malicious content.
+This policy setting controls, whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
 If you enable this policy setting, Windows Defender SmartScreen scans pages in this zone for malicious content.
 
@@ -8087,7 +8092,8 @@ If you disable this policy setting, Windows Defender SmartScreen does not scan p
 
 If you do not configure this policy setting, the user can choose whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
-Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
+> [!NOTE]
+> In Internet Explorer 7, this policy setting controls whether Phishing Filter, scans pages in this zone for malicious content.
 
 <!--/Description-->
 
@@ -8131,7 +8137,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured.
+This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored, if this policy setting is appropriately configured.
 
 If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
@@ -8239,7 +8245,7 @@ If you enable this policy setting, you can choose options from the drop-down box
 
 Low Safety enables applets to perform all operations.
 
-Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer), and user-controlled file I/O.
 
 High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
 
@@ -8289,13 +8295,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.
+This policy setting allows you to manage the opening of windows and frames, and access of applications across different domains.
 
-If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
+If you enable this policy setting, users can open windows and frames from other domains, and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
 
 If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
 
-If you do not configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
+If you do not configure this policy setting, users can open windows and frames from other domains, and access applications from other domains.
 
 <!--/Description-->
 
@@ -8345,7 +8351,7 @@ If you enable this policy setting, you can choose options from the drop-down box
 
 Low Safety enables applets to perform all operations.
 
-Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer), and user-controlled file I/O.
 
 High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
 
@@ -8395,13 +8401,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).
+This policy setting allows you to manage, whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).
 
 If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
 If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-If you do not configure this policy setting, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
+If you do not configure this policy setting, users are queried to choose, whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
 <!--/Description-->
 
@@ -8445,7 +8451,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting manages whether users will be automatically prompted for ActiveX control installations.
+This policy setting manages, whether users will be automatically prompted for ActiveX control installations.
 
 If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
 
@@ -8495,7 +8501,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting determines whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.
+This policy setting determines, whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.
 
 If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
@@ -8543,7 +8549,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether pages of the zone may download HTML fonts.
+This policy setting allows you to manage, whether pages of the zone may download HTML fonts.
 
 If you enable this policy setting, HTML fonts can be downloaded automatically. If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.
 
@@ -8593,13 +8599,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.
+This policy setting allows you to manage, whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.
 
 If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
 
-If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone, as set by Protection from Zone Elevation feature control.
 
-If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone, as set by Protection from Zone Elevation feature control.
 
 <!--/Description-->
 
@@ -8643,9 +8649,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage, whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
-If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
+If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine, whether to execute unsigned managed components.
 
 If you disable this policy setting, Internet Explorer will not execute unsigned managed components.
 
@@ -8693,7 +8699,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether the user can run scriptlets.
+This policy setting allows you to manage, whether the user can run scriptlets.
 
 If you enable this policy setting, the user can run scriptlets.
 
@@ -8743,7 +8749,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether Windows Defender SmartScreen scans pages in this zone for malicious content.
+This policy setting controls, whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
 If you enable this policy setting, Windows Defender SmartScreen scans pages in this zone for malicious content.
 
@@ -8751,7 +8757,8 @@ If you disable this policy setting, Windows Defender SmartScreen does not scan p
 
 If you do not configure this policy setting, the user can choose whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
-Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
+> [!NOTE]
+> In Internet Explorer 7, this policy setting controls whether Phishing Filter, scans pages in this zone for malicious content.
 
 <!--/Description-->
 
@@ -8795,7 +8802,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured.
+This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored, if this policy setting is appropriately configured.
 
 If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
@@ -8897,13 +8904,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.
+This policy setting allows you to manage the opening of windows and frames, and access of applications across different domains.
 
-If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
+If you enable this policy setting, users can open windows and frames from other domains, and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
 
 If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
 
-If you do not configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
+If you do not configure this policy setting, users can open windows and frames from other domains, and access applications from other domains.
 
 <!--/Description-->
 
@@ -8947,7 +8954,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).
+This policy setting allows you to manage, whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).
 
 If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
@@ -8997,7 +9004,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting manages whether users will be automatically prompted for ActiveX control installations.
+This policy setting manages, whether users will be automatically prompted for ActiveX control installations.
 
 If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
 
@@ -9047,7 +9054,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting determines whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.
+This policy setting determines, whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.
 
 If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
@@ -9095,7 +9102,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether pages of the zone may download HTML fonts.
+This policy setting allows you to manage, whether pages of the zone may download HTML fonts.
 
 If you enable this policy setting, HTML fonts can be downloaded automatically. If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.
 
@@ -9145,13 +9152,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.
+This policy setting allows you to manage, whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.
 
 If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
 
-If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone, as set by Protection from Zone Elevation feature control.
 
-If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone, as set by Protection from Zone Elevation feature control.
 
 <!--/Description-->
 
@@ -9195,9 +9202,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage, whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
-If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
+If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine, whether to execute unsigned managed components.
 
 If you disable this policy setting, Internet Explorer will not execute unsigned managed components.
 
@@ -9245,7 +9252,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether the user can run scriptlets.
+This policy setting allows you to manage, whether the user can run scriptlets.
 
 If you enable this policy setting, the user can run scriptlets.
 
@@ -9295,7 +9302,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether Windows Defender SmartScreen scans pages in this zone for malicious content.
+This policy setting controls, whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
 If you enable this policy setting, Windows Defender SmartScreen scans pages in this zone for malicious content.
 
@@ -9303,7 +9310,8 @@ If you disable this policy setting, Windows Defender SmartScreen does not scan p
 
 If you do not configure this policy setting, the user can choose whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
-Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
+> [!NOTE]
+> In Internet Explorer 7, this policy setting controls whether Phishing Filter, scans pages in this zone for malicious content.
 
 <!--/Description-->
 
@@ -9347,7 +9355,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured.
+This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored, if this policy setting is appropriately configured.
 
 If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
@@ -9455,7 +9463,7 @@ If you enable this policy setting, you can choose options from the drop-down box
 
 Low Safety enables applets to perform all operations.
 
-Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer), and user-controlled file I/O.
 
 High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
 
@@ -9505,13 +9513,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.
+This policy setting allows you to manage the opening of windows and frames, and access of applications across different domains.
 
-If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
+If you enable this policy setting, users can open windows and frames from other domains, and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
 
 If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
 
-If you do not configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
+If you do not configure this policy setting, users can open windows and frames from other domains, and access applications from other domains.
 
 <!--/Description-->
 
@@ -9555,7 +9563,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).
+This policy setting allows you to manage, whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).
 
 If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
@@ -9605,7 +9613,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting manages whether users will be automatically prompted for ActiveX control installations.
+This policy setting manages, whether users will be automatically prompted for ActiveX control installations.
 
 If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
 
@@ -9655,7 +9663,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting determines whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.
+This policy setting determines, whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.
 
 If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
@@ -9703,7 +9711,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether pages of the zone may download HTML fonts.
+This policy setting allows you to manage, whether pages of the zone may download HTML fonts.
 
 If you enable this policy setting, HTML fonts can be downloaded automatically. If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.
 
@@ -9753,13 +9761,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.
+This policy setting allows you to manage, whether Web sites from less privileged zones, such as Internet sites, can navigate into this zone.
 
 If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
 
-If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone, as set by Protection from Zone Elevation feature control.
 
-If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone, as set by Protection from Zone Elevation feature control.
 
 <!--/Description-->
 
@@ -9803,9 +9811,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage, whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
-If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
+If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine, whether to execute unsigned managed components.
 
 If you disable this policy setting, Internet Explorer will not execute unsigned managed components.
 
@@ -9853,7 +9861,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether the user can run scriptlets.
+This policy setting allows you to manage, whether the user can run scriptlets.
 
 If you enable this policy setting, the user can run scriptlets.
 
@@ -9903,7 +9911,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether Windows Defender SmartScreen scans pages in this zone for malicious content.
+This policy setting controls, whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
 If you enable this policy setting, Windows Defender SmartScreen scans pages in this zone for malicious content.
 
@@ -9911,7 +9919,8 @@ If you disable this policy setting, Windows Defender SmartScreen does not scan p
 
 If you do not configure this policy setting, the user can choose whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
-Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
+> [!NOTE]
+> In Internet Explorer 7, this policy setting controls whether Phishing Filter, scans pages in this zone for malicious content.
 
 <!--/Description-->
 
@@ -9955,7 +9964,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured.
+This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored, if this policy setting is appropriately configured.
 
 If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
@@ -10005,7 +10014,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage ActiveX controls not marked as safe.
+This policy setting allows you to manage, ActiveX controls not marked as safe.
 
 If you enable this policy setting, ActiveX controls are run, loaded with parameters, and scripted without setting object safety for untrusted data or scripts. This setting is not recommended, except for secure and administered zones. This setting causes both unsafe and safe controls to be initialized and scripted, ignoring the Script ActiveX controls marked safe for scripting option.
 
@@ -10063,7 +10072,7 @@ If you enable this policy setting, you can choose options from the drop-down box
 
 Low Safety enables applets to perform all operations.
 
-Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer), and user-controlled file I/O.
 
 High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
 
@@ -10113,9 +10122,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.
+This policy setting allows you to manage the opening of windows and frames, and access of applications across different domains.
 
-If you enable this policy setting, users can open additional windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow additional windows and frames to access applications from other domains.
+If you enable this policy setting, users can open additional windows and frames from other domains, and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow additional windows and frames to access applications from other domains.
 
 If you disable this policy setting, users cannot open other windows and frames from other domains or access applications from different domains.
 
@@ -10163,7 +10172,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).
+This policy setting allows you to manage, whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO).
 
 If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
@@ -10213,7 +10222,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting manages whether users will be automatically prompted for ActiveX control installations.
+This policy setting manages, whether users will be automatically prompted for ActiveX control installations.
 
 If you enable this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
 
@@ -10263,7 +10272,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting determines whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.
+This policy setting determines, whether users will be prompted for non user-initiated file downloads. Regardless of this setting, users will receive file download dialogs for user-initiated downloads.
 
 If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
@@ -10311,7 +10320,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether pages of the zone may download HTML fonts.
+This policy setting allows you to manage, whether pages of the zone may download HTML fonts.
 
 If you enable this policy setting, HTML fonts can be downloaded automatically. If you enable this policy setting and Prompt is selected in the drop-down box, users are queried whether to allow HTML fonts to download.
 
@@ -10365,9 +10374,9 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 If you enable this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone. The security zone will run without the added layer of security that is provided by the Protection from Zone Elevation security feature. If you select Prompt in the drop-down box, a warning is issued to the user that potentially risky navigation is about to occur.
 
-If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone, as set by Protection from Zone Elevation feature control.
 
-If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
+If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone, as set by Protection from Zone Elevation feature control.
 
 <!--/Description-->
 
@@ -10411,9 +10420,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage, whether .NET Framework components that are not signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
-If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
+If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine, whether to execute unsigned managed components.
 
 If you disable this policy setting, Internet Explorer will not execute unsigned managed components.
 
@@ -10461,7 +10470,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether the user can run scriptlets.
+This policy setting allows you to manage, whether the user can run scriptlets.
 
 If you enable this policy setting, the user can run scriptlets.
 
@@ -10511,7 +10520,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether Windows Defender SmartScreen scans pages in this zone for malicious content.
+This policy setting controls whether, Windows Defender SmartScreen scans pages in this zone for malicious content.
 
 If you enable this policy setting, Windows Defender SmartScreen scans pages in this zone for malicious content.
 
@@ -10519,7 +10528,8 @@ If you disable this policy setting, Windows Defender SmartScreen does not scan p
 
 If you do not configure this policy setting, the user can choose whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
-Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
+> [!NOTE]
+> In Internet Explorer 7, this policy setting controls whether Phishing Filter, scans pages in this zone for malicious content.
 
 <!--/Description-->
 
@@ -10563,7 +10573,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored if this policy setting is appropriately configured.
+This policy setting allows you to manage the preservation of information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk. When a user returns to a persisted page, the state of the page can be restored, if this policy setting is appropriately configured.
 
 If you enable this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
@@ -10671,7 +10681,7 @@ If you enable this policy setting, you can choose options from the drop-down box
 
 Low Safety enables applets to perform all operations.
 
-Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O.
+Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program cannot make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer), and user-controlled file I/O.
 
 High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running.
 
@@ -10721,13 +10731,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage the opening of windows and frames and access of applications across different domains.
+This policy setting allows you to manage the opening of windows and frames, and access of applications across different domains.
 
-If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
+If you enable this policy setting, users can open windows and frames from other domains, and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains.
 
 If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
 
-If you do not configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
+If you do not configure this policy setting, users can open windows and frames from other domains, and access applications from other domains.
 
 <!--/Description-->
 
@@ -10821,7 +10831,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting determines whether Internet Explorer MIME sniffing will prevent promotion of a file of one type to a more dangerous file type.
+This policy setting determines, whether Internet Explorer MIME sniffing will prevent promotion of a file of one type to a more dangerous file type.
 
 If you enable this policy setting, MIME sniffing will never promote a file of one type to a more dangerous file type.
 
@@ -10871,7 +10881,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to specify what is displayed when the user opens a new tab.
+This policy setting allows you to specify, what is displayed when the user opens a new tab.
 
 If you enable this policy setting, you can choose which page to display when the user opens a new tab: blank page (about:blank), the first home page, the new tab page or the new tab page with my news feed.
 
@@ -10933,7 +10943,7 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to manage whether the Notification bar is displayed for Internet Explorer processes when file or code installs are restricted. By default, the Notification bar is displayed for Internet Explorer processes.
+This policy setting allows you to manage, whether the Notification bar is displayed for Internet Explorer processes when file or code installs are restricted. By default, the Notification bar is displayed for Internet Explorer processes.
 
 If you enable this policy setting, the Notification bar will be displayed for Internet Explorer Processes.
 
@@ -11079,7 +11089,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Internet Explorer places restrictions on each Web page it opens. The restrictions are dependent upon the location of the Web page (Internet, Intranet, Local Machine zone, etc.). Web pages on the local computer have the fewest security restrictions and reside in the Local Machine zone, making the Local Machine security zone a prime target for malicious users. Zone Elevation also disables JavaScript navigation if there is no security context.
+Internet Explorer places restrictions on each Web page it opens. The restrictions are dependent upon the location of the Web page (Internet, Intranet, Local Machine zone, etc.). Web pages on the local computer have the fewest security restrictions and reside in the Local Machine zone, making the Local Machine security zone a prime target for malicious users. Zone Elevation also disables JavaScript navigation, if there is no security context.
 
 If you enable this policy setting, any zone can be protected from zone elevation by Internet Explorer processes.
 
@@ -11131,9 +11141,9 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to stop users from seeing the "Run this time" button and from running specific outdated ActiveX controls in Internet Explorer.
 
-If you enable this policy setting, users won't see the "Run this time" button on the warning message that appears when Internet Explorer blocks an outdated ActiveX control.
+If you enable this policy setting, users won't see the "Run this time" button on the warning message that appears, when Internet Explorer blocks an outdated ActiveX control.
 
-If you disable or don't configure this policy setting, users will see the "Run this time" button on the warning message that appears when Internet Explorer blocks an outdated ActiveX control. Clicking this button lets the user run the outdated ActiveX control once.
+If you disable or don't configure this policy setting, users will see the "Run this time" button on the warning message that appears, when Internet Explorer blocks an outdated ActiveX control. Clicking this button lets the user run the outdated ActiveX control once.
 
 For more information, see "Outdated ActiveX Controls" in the Internet Explorer TechNet library.
 
