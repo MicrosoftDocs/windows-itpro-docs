@@ -104,8 +104,7 @@ Either the support staff or a user can start a Quick Assist session.
 
 ## If Quick Assist is missing
 
-If for some reason a user doesn't have Quick Assist on their system or it's not working properly, try to uninstall and reinstall it. 
-[Install Quick Assist] (https://support.microsoft.com/en-us/windows/install-quick-assist-c17479b7-a49d-4d12-938c-dbfb97c88bca).
+If for some reason a user doesn't have Quick Assist on their system or it's not working properly, try to uninstall and reinstall it. For more information, see [Install Quick Assist](https://support.microsoft.com/windows/install-quick-assist-c17479b7-a49d-4d12-938c-dbfb97c88bca).
 
 ## Next steps
 
