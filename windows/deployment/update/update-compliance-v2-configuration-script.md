@@ -47,10 +47,10 @@ This script's two primary files are `ConfigScript.ps1` and `RunConfig.bat`. You 
 Open `RunConfig.bat` and configure the following (assuming a first-run, with `runMode=Pilot`):
 
 1. Define `logPath` to where you want the logs to be saved. Ensure that `runMode=Pilot`.
-2. Set `commercialIDValue` to your [Commercial ID](update-compliance-v2-enable.md#bkmk_id) for the Update Compliance solution.
-3. Run the script.
-4. Examine the logs for any issues. If there are no issues, then all devices with a similar configuration and network profile are ready for the script to be deployed with `runMode=Deployment`.
-5. If there are issues, gather the logs and provide them to Microsoft Support.
+1. Set `commercialIDValue` to your [Commercial ID](update-compliance-v2-enable.md#bkmk_id) for the Update Compliance solution.
+1. Run the script.
+1. Examine the logs for any issues. If there are no issues, then all devices with a similar configuration and network profile are ready for the script to be deployed with `runMode=Deployment`.
+1. If there are issues, gather the logs and provide them to Microsoft Support.
 
 ## Verify device configuration
 
@@ -133,3 +133,6 @@ In some cases, you may need to manually verify the device configuration has the 
 | 94    | Unexpected exception in EnableAllowUCProcessing|
 | 99    | Device isn't Windows 10.|
 
+## Next steps
+
+[Use Update Compliance](update-compliance-v2-use.md)

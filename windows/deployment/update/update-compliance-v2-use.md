@@ -52,13 +52,10 @@ The data powering Update Compliance is refreshed every 24 hours, and refreshes w
 | UCClient | Once per day |4 hours |
 | UCClientUpdateStatus|Every update event (Download, install, etc.)|24-36 hours |
 | UCServiceUpdateStatus| Every update event (Download, install, etc.)|24-36 hours |
-| UCUpdateAlert |
-| UCDeviceAlert |
-| UCCientReadinesssStatus |
-|WUDOAggregatedStatus|On update event, aggregated over time|24-36 hours |
-|WUDOStatus|Once per day|12 hours |
+| UCUpdateAlert | Every event | 24-36 hours |
+| UCDeviceAlert | Every event | 24-36 hours |
+| UCClientReadinessStatus | After Windows 11 readiness assessment |24-36 hours |
 
-This latency means you should generally expect to see new data device data every 24 hours, except for WaaSDeploymentStatus and WUDOAggregatedStatus, which may take 36-48 hours.
 
 ## Using Log Analytics
 

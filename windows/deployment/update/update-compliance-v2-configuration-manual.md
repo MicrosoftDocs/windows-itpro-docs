@@ -83,4 +83,6 @@ To enable data sharing between devices, your network, and Microsoft's Diagnostic
 
 Many Windows and Microsoft services are required to ensure that not only the device can function, but Update Compliance can see device data. It is recommended that you allow all default services from the out-of-box experience to remain running. The [Update Compliance Configuration Script](update-compliance-configuration-script.md) checks whether the majority of these services are running or are allowed to run automatically.
 
+## Next steps
 
+[Use Update Compliance](update-compliance-v2-use.md)

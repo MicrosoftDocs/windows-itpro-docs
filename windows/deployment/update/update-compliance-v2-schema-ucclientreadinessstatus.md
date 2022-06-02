@@ -37,7 +37,7 @@ UCClientReadinessStatus is an individual device's record about its readiness for
 | **TargetOSVersion** |  [string](/azure/kusto/query/scalar-data-types/string)  | `21H2` | The operating system version being targeted to the device for this readiness record.|
 | **TargetOSBuild** |  [string](/azure/kusto/query/scalar-data-types/string) | `10.0.22000.1` | The full operating system build number that's being targeted to the device for this readiness record.|
 | **ReadinessStatus** |  [string](/azure/kusto/query/scalar-data-types/string) | `Not capable` | The readiness status of the device is either capable, not capable, or
-unknown. This status is determined by the Windows Update applicability.|
+unknown. This status is determined by Windows Update.|
 | **ReadinessReason** | [string](/azure/kusto/query/scalar-data-types/string) | `CPU;TPM` | Lists which [hardware requirements](../../whats-new/windows-11-requirements.md#hardware-requirements) are blocking the device from being capable of installing Windows 11. Field is null if the device is capable. This status is determined by the Windows Update applicability. |
 | **ReadinessScanTime** | [datetime](/azure/kusto/query/scalar-data-types/datetime) | `2020-05-14 09:26:03.478039` | The date and time when readiness was assessed and the assessment was sent.|
 | **ReadinessExpiryTime**| [datetime](/azure/kusto/query/scalar-data-types/datetime) | `2020-05-14 09:26:03.478039` | The date and time when the  readiness assessment will expire.|

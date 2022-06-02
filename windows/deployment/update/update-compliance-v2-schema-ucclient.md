@@ -42,15 +42,15 @@ UCClient acts as an individual device's record. It contains data such as the cur
 | **OSBuild** |  [string](/azure/kusto/query/scalar-data-types/string) | `10.0.18363.836` | The full OS build installed on this device, such as Major.Minor.Build.Revision  |
 | **OSBuildNumber** |  [int](/azure/kusto/query/scalar-data-types/int) | `da` | The Major, in int format, this device is on |
 | **OSEdition** |  [string](/azure/kusto/query/scalar-data-types/string) | `Professional` | The Windows SKU/Edition |
-| **OSFeatureUpdateComplianceStatus** |  [string](/azure/kusto/query/scalar-data-types/string)| `Compliant` | Whether or not the device is on the latest Feature Update being Offered by WUfB DS, else NotApplicable. |
+| **OSFeatureUpdateComplianceStatus** |  [string](/azure/kusto/query/scalar-data-types/string)| `Compliant` | Whether or not the device is on the latest Feature Update being Offered by the Windows Update for Business deployment service, else NotApplicable. |
 | **OSFeatureUpdateEOSTime** |  [datetime](/azure/kusto/query/scalar-data-types/datetime) | `2020-05-14 09:26:03.478039` | The end of service date of the Feature Update currently installed on the device. |
 | **OSFeatureUpdateReleaseTime** |  [datetime](/azure/kusto/query/scalar-data-types/datetime) | `2020-05-14 09:26:03.478039` | The release date of the Feature Update currently installed on the device. |
 | **OSFeatureUpdateStatus** |  [string](/azure/kusto/query/scalar-data-types/string) | `InService;EndOfService` | Whether or not the device is on the latest available Feature Update, for its Feature Update. |
-| **OSQualityUpdateComplianceStatus** |  [string](/azure/kusto/query/scalar-data-types/string) | `NotCompliant` | Whether or not the device is on the latest Quality Update being Offered by WUfB DS, else NotApplicable. |
+| **OSQualityUpdateComplianceStatus** |  [string](/azure/kusto/query/scalar-data-types/string) | `NotCompliant` | Whether or not the device is on the latest Quality Update being Offered by the Windows Update for Business deployment service, else NotApplicable. |
 | **OSQualityUpdateReleaseTime** |  [datetime](/azure/kusto/query/scalar-data-types/datetime) | `2020-05-14 09:26:03.478039` | The release date of the Quality Update currently installed on the device. |
 | **OSQualityUpdateStatus** |  [string](/azure/kusto/query/scalar-data-types/string)| `Latest;NotLatest` | Whether or not the device is on the latest available Quality Update, for its Feature Update. | 
 | **OSRevisionNumber** |  [int](/azure/kusto/query/scalar-data-types/int) | `836` | The revision, in int format, this device is on. |
-| **OSSecurityUpdateComplianceStatus** |  [string](/azure/kusto/query/scalar-data-types/string) | `NotCompliant` | Whether or not the device is on the latest Security update (QU, Classification=Security) being offered by WUfB DS, else NotApplicable. |
+| **OSSecurityUpdateComplianceStatus** |  [string](/azure/kusto/query/scalar-data-types/string) | `NotCompliant` | Whether or not the device is on the latest Security update (QU, Classification=Security) being offered by the Windows Update for Business deployment service, else NotApplicable. |
 | **OSSecurityUpdateStatus** |  [string](/azure/kusto/query/scalar-data-types/string)| `Latest;NotLatest;MultipleSecurityUpdatesMissing` | Whether or not the device is on the latest available Security Update, for its Feature Update. |
 | **OSServicingChannel** |  [string](/azure/kusto/query/scalar-data-types/string) | `SAC` | The elected Windows 10 Servicing Channel of the device. |
 | **OSVersion** |  [string](/azure/kusto/query/scalar-data-types/string) | `1909` | The Win10 OS Version (such as 19H2, 20H1, 20H2) currently installed on the device. |

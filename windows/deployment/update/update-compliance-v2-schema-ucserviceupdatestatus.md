@@ -28,7 +28,7 @@ Update Event that comes directly from the service-side. The event has only servi
 | **AzureADDeviceId** | [string](/azure/kusto/query/scalar-data-types/string) | `71db1a1a-f1a6-4a25-b88f-79c2f513dae0` | If this DeviceUpdateEvent is from content deployed by a DSS policy, this GUID will map to that policy, otherwise it will be empty. |
 | **AzureADTenantId** | [string](/azure/kusto/query/scalar-data-types/string) | `69ca04b0-703d-4b3a-9184-c4e3c15d6f5e` | A GUID corresponding to the Azure AD Tenant to which the device belongs. |
 | **DeploymentId** | [string](/azure/kusto/query/scalar-data-types/string) | `cf1b12a3-3d84-4ce3-bc8e-de48459e252d` | If this DeviceUpdateEvent is from content deployed by a DSS policy, this GUID will map to that policy, otherwise it will be empty. |
-| **DeploymentIsExpedited** | [bool](/azure/kusto/query/scalar-data-types/bool) | `FALSE` | Whether this content is being expedited by WUfB DS. |
+| **DeploymentIsExpedited** | [bool](/azure/kusto/query/scalar-data-types/bool) | `FALSE` | Whether this content is being expedited by the Windows Update for Business deployment service. |
 | **GlobalDeviceId** | [string](/azure/kusto/query/scalar-data-types/string) | `g:9832741921341` | Microsoft internal Global Device Identifier |
 | **OfferReadyTime** | [datetime](/azure/kusto/query/scalar-data-types/datetime) | `2020-05-14 09:26:03.478039` | DateTime of OfferReady transition. If empty, not yet been Offered. |
 | **ProjectedOfferReadyTime** | [datetime](/azure/kusto/query/scalar-data-types/datetime) | `2020-05-14 09:26:03.478039` | Projected time update will be Offered to device. If empty, unknown.  |
