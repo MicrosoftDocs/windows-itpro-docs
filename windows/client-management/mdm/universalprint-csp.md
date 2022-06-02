@@ -28,7 +28,7 @@ The UniversalPrint configuration service provider (CSP) is used to add Universal
 
 This CSP was added in Windows 11.
 
-The following shows the UniversalPrint configuration service provider in tree format.
+The following example shows the UniversalPrint configuration service provider in tree format.
 
 ```console
 ./Vendor/MSFT
@@ -58,7 +58,7 @@ The data type is string. Supported operations are Get, Replace, and Delete.
 
 <a href="" id="guidprintersharedid)"></a>**`<GUID>` (PrinterSharedID)**
 
-Identifies the Universal Print printer, by its Share ID, you want to install on the targeted user account. You can get the printer's Share ID in the printer's properties in the [Universal Print portal](/universal-print/portal/navigate-up).
+The Share ID is used to identify the Universal Print printer you want to install on the targeted user account. You can get the printer's Share ID in the printer's properties in the [Universal Print portal](/universal-print/portal/navigate-up).
 
 The data type is GUID. Supported operations are ??.
 
@@ -67,7 +67,7 @@ The data type is GUID. Supported operations are ??.
 
 <a href="" id="clouddeviceid"></a>**CloudDeviceID**
 
-Identifies the Universal Print printer, by its Printer ID, you want to install on the targeted user account. You can get the printer's Printer ID in the printer's properties in the [Universal Print portal](/universal-print/portal/navigate-up).
+The Printer ID is used to identify the Universal Print printer you want to install on the targeted user account. You can get the printer's Printer ID in the printer's properties in the [Universal Print portal](/universal-print/portal/navigate-up).
 
 The data type is GUID. Supported operations are ??.
 
@@ -76,7 +76,7 @@ The data type is GUID. Supported operations are ??.
 
 <a href="" id="printersharedname"></a>**PrinterSharedName**
 
-Identifies the Universal Print printer, by its Share Name, you want to install on the targeted user account. You can get the printer's Share Name in the printer's properties in the [Universal Print portal](/universal-print/portal/navigate-up).
+The Share Name is used to identify the Universal Print printer you want to install on the targeted user account. You can get the printer's Share Name in the printer's properties in the [Universal Print portal](/universal-print/portal/navigate-up).
 
 The data type is string. Supported operations are ??.
 
@@ -85,7 +85,7 @@ The data type is string. Supported operations are ??.
 
 <a href="" id="install"></a>**Install**
 
-Installs Universal Print printer. Supports async execute.
+Installs the Universal Print printer. Supports async execute.
 
 The data type is boolean. Supported operations are ??.
 

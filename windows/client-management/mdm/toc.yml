@@ -904,10 +904,10 @@ items:
           items: 
             - name: UnifiedWriteFilter DDF file
               href: unifiedwritefilter-ddf.md
-        - name: Universal Print CSP
+        - name: UniversalPrint CSP
           href: universalprint-csp.md
           items: 
-            - name: Universal Print DDF file
+            - name: UniversalPrint DDF file
               href: universalprint-ddf-file.md
         - name: Update CSP
           href: update-csp.md
