@@ -21,8 +21,6 @@ manager: dansimp
 > 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-
-
 <hr/>
 
 <!--Policies-->
@@ -817,7 +815,7 @@ ADMX Info:
 
 Specifies the maximum time in seconds that each file is held in the Delivery Optimization cache after downloading successfully. The value 0 (zero) means "unlimited"; Delivery Optimization will hold the files in the cache longer and make the files available for uploads to other devices, as long as the cache size hasn't exceeded. The value 0 is new in Windows 10, version 1607.
 
-The default value is 259200 seconds (3 days).
+The default value is 259200 seconds (three days).
 
 <!--/Description-->
 <!--ADMXMapped-->
