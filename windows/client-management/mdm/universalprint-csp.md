@@ -54,13 +54,13 @@ Valid values:
 - Install (default) - The printer is installed.
 - Uninstall - The printer is uninstalled.
 
-The data type is string. Supported operations are Get, Replace, and Delete.
+The data type is node (XML node). Supported operation is Get.
 
 <a href="" id="guidprintersharedid)"></a>**`<GUID>` (PrinterSharedID)**
 
 The Share ID is used to identify the Universal Print printer you want to install on the targeted user account. You can get the printer's Share ID in the printer's properties in the [Universal Print portal](/universal-print/portal/navigate-up).
 
-The data type is GUID. Supported operations are ??.
+The data type is node (XML node). Supported operations are Get, Add, and Delete.
 
 > [!NOTE]
 > The targeted user account must have access rights to the printer and to the Universal Print service.
@@ -69,7 +69,7 @@ The data type is GUID. Supported operations are ??.
 
 The Printer ID is used to identify the Universal Print printer you want to install on the targeted user account. You can get the printer's Printer ID in the printer's properties in the [Universal Print portal](/universal-print/portal/navigate-up).
 
-The data type is GUID. Supported operations are ??.
+The data type is string/text (GUID). Supported operations are Get, Add, Delete, and Replace.
 
 > [!NOTE]
 > The targeted user account must have access rights to the printer and to the Universal Print service.
@@ -78,7 +78,7 @@ The data type is GUID. Supported operations are ??.
 
 The Share Name is used to identify the Universal Print printer you want to install on the targeted user account. You can get the printer's Share Name in the printer's properties in the [Universal Print portal](/universal-print/portal/navigate-up).
 
-The data type is string. Supported operations are ??.
+The data type is string/text. Supported operations are Get, Add, Delete, and Replace.
 
 > [!NOTE]
 > The targeted user account must have access rights to the printer and to the Universal Print service.
@@ -87,7 +87,7 @@ The data type is string. Supported operations are ??.
 
 Installs the Universal Print printer. Supports async execute.
 
-The data type is boolean. Supported operations are ??.
+The data type is string/text (empty string). Supported operations are Get and Execute.
 
 <a href="" id="status"></a>**Status**
 
@@ -101,10 +101,10 @@ Valid values:
 - 8 - Installation initial status
 - 32 - Unknown (not used)
 
-The data type is integer. Supported operations are ??.
+The data type is int. Supported operations is Get.
 
 <a href="" id="errorcode"></a>**ErrorCode**
 
 HRESULT of the last installation returned code.
 
-The data type is string. Supported operations are ??.
+The data type is int. Supported operation is Get.
