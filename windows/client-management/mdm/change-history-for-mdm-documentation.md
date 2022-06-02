@@ -227,7 +227,7 @@ This article lists new and updated articles for the Mobile Device Management (MD
 |[WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)|Added the following node in Windows 10, version 1803:<li>Settings/AllowVirtualGPU<li>Settings/SaveFilesToHost|
 |[NetworkProxy CSP](networkproxy-csp.md)|Added the following node in Windows 10, version 1803:<li>ProxySettingsPerUser|
 |[Accounts CSP](accounts-csp.md)|Added a new CSP in Windows 10, version 1803.|
-|[MDM Migration Analysis Tool (MMAT)](https://aka.ms/mmat)|Updated version available. MMAT is a tool you can use to determine which Group Policies are set on a target user/computer and cross-reference them against the list of supported MDM policies.|
+|[MDM Migration Analysis Tool (MMAT)](https://github.com/WindowsDeviceManagement/MMAT)|Updated version available. MMAT is a tool you can use to determine which Group Policies are set on a target user/computer and cross-reference them against the list of supported MDM policies.|
 |[CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download)|Added the DDF download of Windows 10, version 1803 configuration service providers.|
 |[Policy CSP](policy-configuration-service-provider.md)|Added the following new policies for Windows 10, version 1803:<li>Bluetooth/AllowPromptedProximalConnections<li>KioskBrowser/EnableEndSessionButton<li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AddRemoteServerExceptionsForNTLMAuthentication<li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_AuditIncomingNTLMTraffic<li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_IncomingNTLMTraffic<li>LocalPoliciesSecurityOptions/NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers|
 
