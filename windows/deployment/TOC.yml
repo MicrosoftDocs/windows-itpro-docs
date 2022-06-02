@@ -211,18 +211,20 @@
                 href: update/update-compliance-v2-schema.md
               - name: UCClient
                 href: update/update-compliance-v2-schema-ucclient.md
+              - name: UCClientReadinessStatus
+                href: update/update-compliance-v2-schema-ucclientreadinessstatus.md               
               - name: UCClientUpdateStatus
                 href: update/update-compliance-v2-schema-ucclientupdatestatus.md
+              - name: UCDeviceAlert
+                href: update/update-compliance-v2-schema-ucdevicealert.md                                
               - name: UCServiceUpdateStatus
                 href: update/update-compliance-v2-schema-ucserviceupdatestatus.md
               - name: UCUpdateAlert
-                href: update/update-compliance-v2-schema-ucupdatealert.md
-              - name: UCDeviceAlert
-                href: update/update-compliance-v2-schema-ucdevicealert.md                                                                              
-          - name: Monitor updates with Update Compliance (GA)
+                href: update/update-compliance-v2-schema-ucupdatealert.md                                                                         
+          - name: Monitor updates with Update Compliance
             href: update/update-compliance-monitor.md
             items:
-            - name: Get started (GA)
+            - name: Get started
               items: 
               - name: Get started with Update Compliance
                 href: update/update-compliance-get-started.md
@@ -232,7 +234,7 @@
                 href: update/update-compliance-configuration-manual.md
               - name: Configuring devices for Update Compliance in Microsoft Endpoint Manager
                 href: update/update-compliance-configuration-mem.md
-            - name: Update Compliance monitoring (GA)
+            - name: Update Compliance monitoring
               items: 
               - name: Use Update Compliance
                 href: update/update-compliance-using.md

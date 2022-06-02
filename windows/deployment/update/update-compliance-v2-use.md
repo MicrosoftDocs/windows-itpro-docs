@@ -49,9 +49,12 @@ The data powering Update Compliance is refreshed every 24 hours, and refreshes w
 
 | Data Type | Data upload rate from device | Data Latency |
 |--|--|--|
-|UCClient | Once per day |4 hours |
-|UCClientUpdateStatus|Every update event (Download, install, etc.)|24-36 hours |
-|UCServiceUpdateStatus| Every update event (Download, install, etc.)|24-36 hours |
+| UCClient | Once per day |4 hours |
+| UCClientUpdateStatus|Every update event (Download, install, etc.)|24-36 hours |
+| UCServiceUpdateStatus| Every update event (Download, install, etc.)|24-36 hours |
+| UCUpdateAlert |
+| UCDeviceAlert |
+| UCCientReadinesssStatus |
 |WUDOAggregatedStatus|On update event, aggregated over time|24-36 hours |
 |WUDOStatus|Once per day|12 hours |
 

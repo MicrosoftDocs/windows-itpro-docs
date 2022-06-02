@@ -80,3 +80,7 @@ These alerts are activated as a result of an issue that is device-specific. It i
 | **WUServiceURLConfigured** | [string](/azure/kusto/query/scalar-data-types/string) | `http://abcd-srv:8530` | CSP:UpdateServiceUrl. The following list shows the supported values: </br> </br> Not configured. The device checks for updates from Microsoft Update. </br> </br> Set to a URL, such as `http://abcd-srv:8530`, the device checks for updates from the WSUS server at the specified URL.|
 | **WUUXDisabled** | [int](/azure/kusto/query/scalar-data-types/int) | `1` | CSP:SetDisableUXWUAccess.This policy allows the IT admin to remove access to scan Windows Update. When this policy is enabled, the user can't access the Windows Update scan, download, and install features. Default is 0. Supported values 0, 1. |
 
+## Next steps
+
+- [Update Compliance overview](update-compliance-v2-overview.md)
+- [Use Update Compliance](update-compliance-v2-use.md)

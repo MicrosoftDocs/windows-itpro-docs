@@ -65,3 +65,7 @@ Update Event that combines the latest client-based data with the latest service-
 | **UpdateReleaseTime** |  [datetime](/azure/kusto/query/scalar-data-types/datetime)  | `2020-05-14 09:26:03.478039` | The release date of the update |
 | **UpdateSource** |  [string](/azure/kusto/query/scalar-data-types/string) | `UUP` | The source of the update - UUP, MUv6, Media |
 
+## Next steps
+
+- [Update Compliance overview](update-compliance-v2-overview.md)
+- [Use Update Compliance](update-compliance-v2-use.md)

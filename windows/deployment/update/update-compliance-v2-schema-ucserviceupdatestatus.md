@@ -45,3 +45,8 @@ Update Event that comes directly from the service-side. The event has only servi
 | **UpdateDisplayName** | [string](/azure/kusto/query/scalar-data-types/string) | `2022-04 Cumulative Update for Windows 10 Version 21H1 for x64-based Systems (KB5012599)` | Friendly update display name. For Windows OS updates, there's a naming convention. For D&F, it's DriverFileName |
 | **UpdateManufacturer** | [string](/azure/kusto/query/scalar-data-types/string) | `Microsoft` | Manufacturer of update. Microsoft for WU FU/QU, for D&F name of driver manufacturer such as NVIDIA |
 | **UpdateReleaseTime** | [datetime](/azure/kusto/query/scalar-data-types/datetime) | `2020-05-14 09:26:03.478039` | DateTime of update's release date. |
+
+## Next steps
+
+- [Update Compliance overview](update-compliance-v2-overview.md)
+- [Use Update Compliance](update-compliance-v2-use.md)
