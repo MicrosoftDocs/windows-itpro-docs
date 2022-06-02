@@ -1,17 +1,12 @@
 ---
 title: Modify GPO Filters (Windows)
 description: Learn how to modify GPO filters to apply to a different zone or version of windows in Windows Defender Firewall with Advanced Security.
-ms.assetid: 24ede9ca-a501-4025-9020-1129e2cdde80
 ms.reviewer: 
 ms.author: dansimp
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021
