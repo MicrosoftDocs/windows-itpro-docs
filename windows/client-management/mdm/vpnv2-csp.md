@@ -29,7 +29,7 @@ The VPNv2 configuration service provider allows the mobile device management (MD
 Here are the requirements for this CSP:
 
 - VPN configuration commands must be wrapped in an Atomic block in SyncML.
-- For best results, configure your VPN certificates first before pushing down VPN profiles to devices. If you're using Windows Information Protection (WIP) (formerly known as Enterprise Data Protection), then you should configure VPN first before you configure WIP policies.
+- For best results, configure your VPN certificates first before pushing down VPN profiles to devices. If you're using Windows Information Protection (WIP) (formerly known as Enterprise Data Protection), then you should configure VPN first before you configure Windows Information Protection policies.
 - Instead of changing individual properties, follow these steps to make any changes:
 
   - Send a Delete command for the ProfileName to delete the entire profile.
@@ -540,9 +540,9 @@ If no inbound filter is provided, then by default all unsolicited inbound traffi
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-edpmodeid"></a>**VPNv2/**<em>ProfileName</em>**/EdpModeId**  
-Enterprise ID, which is required for connecting this VPN profile with a WIP policy. When this ID is set, the networking stack looks for this Enterprise ID in the app token to determine if the traffic is allowed to go over the VPN. If the profile is active, it also automatically triggers the VPN to connect. We recommend having only one such profile per device.
+Enterprise ID, which is required for connecting this VPN profile with a Windows Information Protection policy. When this ID is set, the networking stack looks for this Enterprise ID in the app token to determine if the traffic is allowed to go over the VPN. If the profile is active, it also automatically triggers the VPN to connect. We recommend having only one such profile per device.
 
-Additionally when a connection is being established with Windows Information Protection (WIP)(formerly known as Enterprise Data Protection), the admin doesn't have to specify AppTriggerList and TrafficFilterList rules separately in this profile (unless more advanced config is needed) because the WIP policies and App lists automatically takes effect.
+Additionally when a connection is being established with Windows Information Protection (WIP)(formerly known as Enterprise Data Protection), the admin doesn't have to specify AppTriggerList and TrafficFilterList rules separately in this profile (unless more advanced config is needed) because the Windows Information Protection policies and App lists automatically takes effect.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 

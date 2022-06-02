@@ -25,7 +25,7 @@ All that's required to use Quick Assist is suitable network and internet connect
 
 ### Authentication
 
-The helper can authenticate when they sign in by using a Microsoft Account (MSA) or Azure Active Directory (Azure AD). Local Active Directory authentication isn't currently supported.
+The helper can authenticate when they sign in by using a Microsoft account (MSA) or Azure Active Directory (Azure AD). Local Active Directory authentication isn't currently supported.
 
 ### Network considerations
 
