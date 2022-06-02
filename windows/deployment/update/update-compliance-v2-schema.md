@@ -37,3 +37,8 @@ The table below summarizes the different tables that are part of the Update Comp
 | [**UCServiceUpdateStatus**](update-compliance-v2-schema-ucserviceupdatestatus.md) | Service record  | Update Event that comes directly from the service-side. The event has only service-side information for one device (client), and one update, in one deployment. This event has certain fields removed from it in favor of being able to show data in near real-time.  |
 | [**UCUpdateAlert**](update-compliance-v2-schema-ucupdatealert.md) | Service and device records  |  Alert for both client and service update. Contains information that needs attention, relative to one device (client), one update, and one deployment (if relevant). Certain fields may be blank depending on the UpdateAlert's AlertType field; for example, ServiceUpdateAlert will not necessarily contain client-side statuses.  |
 | [**UCDeviceAlert**](update-compliance-v2-schema-ucdevicealert.md)| Service and device record  |  These alerts are activated as a result of an issue that is device-specific. It isn't specific to the combination of a specific update and a specific device. Like UpdateAlerts, the AlertType indicates where the Alert comes from (ServiceDeviceAlert, ClientDeviceAlert). For example, an EndOfService alert is a ClientDeviceAlert, as a build no longer being serviced (EOS) is a client-wide state. Meanwhile, DeviceRegistrationIssues in WUfB DS will be a ServiceDeviceAlert, as it's a device-wide state in the service to not be correctly registered.  |
+
+## Next steps
+
+- [Update Compliance overview](update-compliance-v2-overview.md)
+- [Use Update Compliance](update-compliance-v2-use.md)

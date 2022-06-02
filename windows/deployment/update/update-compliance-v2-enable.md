@@ -65,7 +65,8 @@ Update Compliance is offered as an Azure Marketplace application that's linked t
 1. Select **Create** to add the solution. You'll receive a notification when the Updates Compliance solution has been successfully created.
 
 > [!Note]
-> You can only map one tenant to one Log Analytics workspace. Mapping one tenant to multiple workspaces isn't supported.
+> - You can only map one tenant to one Log Analytics workspace. Mapping one tenant to multiple workspaces isn't supported.
+> - If you change the Log Analytics workspace for Update Compliance, stale data will be displayed for about 24 hours until the new workspace is fully onboarded.
 
 ### <a name="bkmk_id"></a> Get the Commercial ID for the Update Compliance solution
 
@@ -80,7 +81,7 @@ The **Commercial ID** directs your clients to the Update Compliance solution in 
 1. The **Commercial Id Key** is listed in the text box with an option to copy the ID. The **Commercial Id Key** is commonly referred to as the `CommercialID` or **Commercial ID** in Update Compliance.
 
    > [!Warning]
-   > Regenerate a Commercial ID only if your original ID can no longer be used. Regenerating a Commercial ID requires you to deploy the new commercial ID to your computers in order to continue to collect data and so can result in data loss.
+   > Regenerate a Commercial ID only if your original ID can no longer be used. Regenerating a Commercial ID requires you to deploy the new commercial ID to your computers in order to continue to collect data and can result in data loss.
 
 
 ## Next steps

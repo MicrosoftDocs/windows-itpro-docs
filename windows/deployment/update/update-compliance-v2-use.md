@@ -49,9 +49,9 @@ The data powering Update Compliance is refreshed every 24 hours, and refreshes w
 
 | Data Type | Data upload rate from device | Data Latency |
 |--|--|--|
-|WaaSUpdateStatus | Once per day |4 hours |
-|WaaSInsiderStatus| Once per day |4 hours |
-|WaaSDeploymentStatus|Every update event (Download, install, etc.)|24-36 hours |
+|UCClient | Once per day |4 hours |
+|UCClientUpdateStatus|Every update event (Download, install, etc.)|24-36 hours |
+|UCServiceUpdateStatus| Every update event (Download, install, etc.)|24-36 hours |
 |WUDOAggregatedStatus|On update event, aggregated over time|24-36 hours |
 |WUDOStatus|Once per day|12 hours |
 
