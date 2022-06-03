@@ -1,17 +1,12 @@
 ---
 title: Planning Isolation Groups for the Zones (Windows)
 description: Learn about planning isolation groups for the zones in Microsoft Firewall, including information on universal groups and GPOs.
-ms.assetid: be4b662d-c1ce-441e-b462-b140469a5695
 ms.reviewer: 
 ms.author: dansimp
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021

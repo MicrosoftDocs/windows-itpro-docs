@@ -27,7 +27,7 @@ landingContent:
           - text: What is Windows Autopatch?
             url: ./overview/windows-autopatch-overview.md
           - text: Windows Autopatch FAQ
-            url: ./overview/windows-autopatch-faq.md
+            url: ./overview/windows-autopatch-faq.yml
   
   # Card (optional)
   - title: Articles and blog posts
