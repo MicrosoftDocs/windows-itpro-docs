@@ -7,7 +7,7 @@
         - name: What is Windows Autopatch?
           href: overview/windows-autopatch-overview.md
         - name: FAQ
-          href: overview/windows-autopatch-faq.md
+          href: overview/windows-autopatch-faq.yml
     - name: Prepare
       href: prepare/index.md
       items: 
@@ -49,7 +49,7 @@
               href: operate/windows-autopatch-edge.md
             - name: Microsoft Teams
               href: operate/windows-autopatch-teams.md
-        - name: Deregister a devices
+        - name: Deregister a device
           href: operate/windows-autopatch-deregister-devices.md
         - name: Submit a support request
           href: operate/windows-autopatch-support-request.md
