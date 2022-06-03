@@ -36,14 +36,12 @@ UCClientReadinessStatus is an individual device's record about its readiness for
 | **TargetOSName** | [string](/azure/kusto/query/scalar-data-types/string) | `Windows 11` | The name of the operating system being targeted to the device for this readiness record.|
 | **TargetOSVersion** |  [string](/azure/kusto/query/scalar-data-types/string)  | `21H2` | The operating system version being targeted to the device for this readiness record.|
 | **TargetOSBuild** |  [string](/azure/kusto/query/scalar-data-types/string) | `10.0.22000.1` | The full operating system build number that's being targeted to the device for this readiness record.|
-| **ReadinessStatus** |  [string](/azure/kusto/query/scalar-data-types/string) | `Not capable` | The readiness status of the device is either capable, not capable, or
-unknown. This status is determined by Windows Update.|
+| **ReadinessStatus** |  [string](/azure/kusto/query/scalar-data-types/string) | `Not capable` | The readiness status of the device is either capable, not capable, or unknown. This status is determined by Windows Update.|
 | **ReadinessReason** | [string](/azure/kusto/query/scalar-data-types/string) | `CPU;TPM` | Lists which [hardware requirements](/windows/whats-new/windows-11-requirements#hardware-requirements) are blocking the device from being capable of installing Windows 11. Field is null if the device is capable. This status is determined by the Windows Update applicability. |
 | **ReadinessScanTime** | [datetime](/azure/kusto/query/scalar-data-types/datetime) | `2020-05-14 09:26:03.478039` | The date and time when readiness was assessed and the assessment was sent.|
 | **ReadinessExpiryTime**| [datetime](/azure/kusto/query/scalar-data-types/datetime) | `2020-05-14 09:26:03.478039` | The date and time when the  readiness assessment will expire.|
-| **SetupReadinessStatus**| [string](/azure/kusto/query/scalar-data-types/string) | `Not capable` | The readiness status of the device is either capable, not capable, or
-unknown. This status is determined by Windows setup.|
-| **SetupReadinessReason** | Lists which [hardware requirements](/windows/whats-new/windows-11-requirements#hardware-requirements) are blocking the device from being capable of installing Windows 11. Field is null if the device is capable. This status is determined by Windows setup. |
+| **SetupReadinessStatus**| [string](/azure/kusto/query/scalar-data-types/string) | `Not capable` | The readiness status of the device is either capable, not capable, or unknown. This status is determined by Windows setup.|
+| **SetupReadinessReason** | [string](/azure/kusto/query/scalar-data-types/string) | `CPU;TPM` | Lists which [hardware requirements](/windows/whats-new/windows-11-requirements#hardware-requirements) are blocking the device from being capable of installing Windows 11. Field is null if the device is capable. This status is determined by Windows setup. |
 | **SetupReadinessTime** | [datetime](/azure/kusto/query/scalar-data-types/datetime) | `2020-05-14 09:26:03.478039` | The date and time when readiness was assessed by setup and the assessment was sent.|
 | **SetupReadinessExpiryTime** |  [datetime](/azure/kusto/query/scalar-data-types/datetime) | `2020-05-14 09:26:03.478039` | The date and time when the setup readiness assessment will expire.|
 | **TimeGenerated** |  [datetime](/azure/kusto/query/scalar-data-types/datetime) | `2020-05-14 10:26:03.478039` | The date and time when Azure Monitor Logs ingested this record for your Log Analytics workspace.|
