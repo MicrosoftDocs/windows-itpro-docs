@@ -26,9 +26,9 @@ These alerts are activated as a result of an issue that is device-specific. It i
 |Field |Type |Example |Description |
 |---|---|---|---|
 | **AlertClassification** | [string](/azure/kusto/query/scalar-data-types/string) | `Error` | Whether this alert is an Error, a Warning, or Informational. |
-| **AlertId** | [string](/azure/kusto/query/scalar-data-types/string) | `9e107d9d372bb6826bd81d3542a419d6` | The unique identifier of this alert. |
+| **AlertId** | [string](/azure/kusto/query/scalar-data-types/string) | `9e107d9d372bb6826bd81d3542a419d6` | The unique identifier of this alert |
 | **AlertRank** | [int](/azure/kusto/query/scalar-data-types/int) | `1000` | Integer ranking of alert for prioritization during troubleshooting |
-| **AlertStatus** | [string](/azure/kusto/query/scalar-data-types/string) | `Active` | Whether this alert is Active, Resolved, or Deleted. |
+| **AlertStatus** | [string](/azure/kusto/query/scalar-data-types/string) | `Active` | Whether this alert is Active, Resolved, or Deleted |
 | **AlertSubtype** | [string](/azure/kusto/query/scalar-data-types/string) | `DiskFull` | The subtype of alert. |
 | **AlertType** | [string](/azure/kusto/query/scalar-data-types/string) | `ClientUpdateAlert` | The type of alert such as ClientUpdateAlert or ServiceUpdateAlert. Indicates which fields will be present. |
 | **AzureADDeviceId** | [string](/azure/kusto/query/scalar-data-types/string) | `71db1a1a-f1a6-4a25-b88f-79c2f513dae0` | Azure AD device ID of the device, if available. |
@@ -45,7 +45,7 @@ These alerts are activated as a result of an issue that is device-specific. It i
 | **ServiceSubstate** | [string](/azure/kusto/query/scalar-data-types/string) | `OfferReady` | If the alert is from the service, the ServiceSubstate at the time this alert was activated or updated, else Empty. |
 | **ServiceSubstateRank** | [int](/azure/kusto/query/scalar-data-types/int) | `100` | Rank of ServiceSubstate |
 | **StartTime** | [datetime](/azure/kusto/query/scalar-data-types/datetime) | `2020-05-14 09:26:03.478039` | The time this alert was activated. |
-| **TargetBuild** | [string](/azure/kusto/query/scalar-data-types/string) | `18363.836` | The Windows 10 Major.Revision this UpdateAlert is relative to. |
+| **TargetBuild** | [string](/azure/kusto/query/scalar-data-types/string) | `18363.836` | The Windows 10 Major. Revision this UpdateAlert is relative to. |
 | **TargetVersion** | [string](/azure/kusto/query/scalar-data-types/string) | `1909` | The Windows 10 build this UpdateAlert is relative to. |
 | **TimeGenerated** | [datetime](/azure/kusto/query/scalar-data-types/datetime) | `2020-05-14 09:26:03.478039` | The time the snapshot generated this specific record. This is to determine to which batch snapshot this record belongs. |
 | **Type** | [string](/azure/kusto/query/scalar-data-types/string) | `UpdateAlert` | The entity type. |

@@ -24,7 +24,7 @@ ms.date: 06/06/2022
 
 ## Update Compliance prerequisites
 
-Before you begin the process to add Update Compliance to your Azure subscription, ensure you meet the prerequisites.
+Before you begin the process of adding Update Compliance to your Azure subscription, ensure you meet the prerequisites.
 
 ### Azure and Azure Active Directory
 

@@ -41,6 +41,8 @@ Currently, the technical preview contains the following features:
     - UCClient
     - UCClientReadinessStatus
     - UCClientUpdateStatus
+    - UCDeviceAlert
+    - UCServiceUpdateStatus
     - UCUpdateAlert
 - Client data collection to populate the new Update Compliance tables
 

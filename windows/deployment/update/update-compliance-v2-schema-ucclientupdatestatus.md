@@ -39,7 +39,7 @@ Update Event that combines the latest client-based data with the latest service-
 | **OfferReceivedTime** |  [datetime](/azure/kusto/query/scalar-data-types/datetime)  | `2020-05-14 09:26:03.478039` | Date and time when device last reported entering OfferReceived, else empty. |
 | **RestartRequiredTime** |  [datetime](/azure/kusto/query/scalar-data-types/datetime)  | `2020-05-14 09:26:03.478039` | Date and time when device first reported entering RebootRequired (or RebootPending), else empty.  |
 | **SCCMClientId** |  [string](/azure/kusto/query/scalar-data-types/string) | `5AB72FAC-93AB-4954-9AB0-6557D0EFA245` | A string corresponding to the Configuration Manager Client ID on the device. |
-| **TargetBuild** |  [string](/azure/kusto/query/scalar-data-types/string) | `10.0.18363.836` | The full build of the content this DeviceUpdateEvent is tracking. For Windows 10 updates, this would correspond to the full build (10.0.14393.385). |
+| **TargetBuild** |  [string](/azure/kusto/query/scalar-data-types/string) | `10.0.18363.836` | The full build of the content this DeviceUpdateEvent is tracking. For Windows 10 updates, this value would correspond to the full build (10.0.14393.385). |
 | **TargetBuildNumber** |  [int](/azure/kusto/query/scalar-data-types/int)  | `18363` | Integer of the Major portion of Build. |
 | **TargetKBNumber** |  [int](/azure/kusto/query/scalar-data-types/int)  | `4524570` | KB Article. |
 | **TargetRevisionNumber** |  [int](/azure/kusto/query/scalar-data-types/int)  | `836` | Integer or the minor (or revision) portion of the build. |

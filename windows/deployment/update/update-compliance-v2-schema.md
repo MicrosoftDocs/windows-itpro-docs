@@ -1,8 +1,8 @@
 ---
-title: Update Compliance version 2 Data Schema
+title: Update Compliance (preview) data schema
 ms.reviewer: 
 manager: dougeby
-description: An overview of Update Compliance version 2data schema
+description: An overview of Update Compliance (preview) data schema
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: deploy
@@ -35,9 +35,9 @@ The table below summarizes the different tables that are part of the Update Comp
 | [**UCClient**](update-compliance-v2-schema-ucclient.md) | Device record | UCClient acts as an individual device's record. It contains data such as the currently installed build, the device's name, the operating system edition, and active hours (quantitative). |
 |[**UCClientReadinessStatus**](update-compliance-v2-schema-ucclientreadinessstatus.md) | Device record | UCClientReadinessStatus is an individual device's record about its readiness for updating to Windows 11. If the device isn't capable of running Windows 11, the record includes which Windows 11 hardware requirements the device doesn't meet.|
 | [**UCClientUpdateStatus**](update-compliance-v2-schema-ucclientupdatestatus.md) |  Device record |  Update Event that combines the latest client-based data with the latest service-based data to create a complete picture for one device (client) and one update. |
-| [**UCServiceUpdateStatus**](update-compliance-v2-schema-ucserviceupdatestatus.md) | Service record  | Update Event that comes directly from the service-side. The event has only service-side information for one device (client), and one update, in one deployment. |
-| [**UCUpdateAlert**](update-compliance-v2-schema-ucupdatealert.md) | Service and device records  |  Alert for both client and service update. Contains information that needs attention, relative to one device (client), one update, and one deployment, if relevant. Certain fields may be blank depending on the UpdateAlert's AlertType field. For example, ServiceUpdateAlert will not necessarily contain client-side statuses and may be blank.  |
 | [**UCDeviceAlert**](update-compliance-v2-schema-ucdevicealert.md)| Service and device record  |  These alerts are activated as a result of an issue that is device-specific. It isn't specific to the combination of a specific update and a specific device. Like UpdateAlerts, the AlertType indicates where the Alert comes from such as a ServiceDeviceAlert or ClientDeviceAlert. For example, an EndOfService alert is a ClientDeviceAlert, since a build that's no longer being serviced is a client-wide state. Meanwhile, DeviceRegistrationIssues in Windows Update for Business deployment service will be a ServiceDeviceAlert, as it's a device-wide state in the service to not be correctly registered.  |
+| [**UCServiceUpdateStatus**](update-compliance-v2-schema-ucserviceupdatestatus.md) | Service record  | Update Event that comes directly from the service-side. The event has only service-side information for one device (client), and one update, in one deployment. |
+| [**UCUpdateAlert**](update-compliance-v2-schema-ucupdatealert.md) | Service and device records  |  Alert for both client and service update. Contains information that needs attention, relative to one device (client), one update, and one deployment, if relevant. Certain fields may be blank depending on the UpdateAlert's AlertType field. For example, ServiceUpdateAlert won't necessarily contain client-side statuses and may be blank.  |
 
 ## Next steps
 
