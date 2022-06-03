@@ -18,7 +18,7 @@ sections:
     questions:
       - question: What Windows versions are supported?
         answer: |
-          Windows Autopatch works with all [supported versions of Windows 10 and Windows 11 Enterprise edition](/windows/release-health/supported-versions-windows-client).
+          Windows Autopatch works with all [supported versions of Windows 10 and Windows 11](/windows/release-health/supported-versions-windows-client) Enterprise and Professional editions.
       - question: What is the difference between Windows Update for Business and Windows Autopatch?
         answer: |
           Windows Autopatch is a service that removes the need for organizations to plan and operate the update process. Windows Autopatch moves the burden from your IT to Microsoft. Windows Autopatch uses [Windows Update for Business](/windows/deployment/update/deployment-service-overview) and other service components to update devices. Both are part of Windows Enterprise E3.
@@ -38,7 +38,7 @@ sections:
     questions:
       - question: What are the prerequisites for Windows Autopatch?
         answer: |
-          - [Supported Windows 10/11 Enterprise edition versions](/windows/release-health/supported-versions-windows-client)
+          - [Supported Windows 10/11 Enterprise and Professional edition versions](/windows/release-health/supported-versions-windows-client)
           - [Azure Active Directory (Azure AD) Premium](/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses)
           - [Hybrid Azure AD-Joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid) or [Azure AD-joined only](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
           - [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune)
