@@ -3,7 +3,6 @@ title: Configuring Microsoft Endpoint Manager devices for Update Compliance (pre
 ms.reviewer: 
 manager: dougeby
 description: Configuring devices that are enrolled in Endpoint Manager for Update Compliance (preview)
-keywords: update compliance, oms, operations management suite, prerequisites, requirements, updates, upgrades, antivirus, antimalware, signature, log analytics, wdav, intune, mem
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: deploy
@@ -18,17 +17,17 @@ ms.date: 06/06/2022
 
 # Configuring Microsoft Endpoint Manager devices for Update Compliance (preview)
 <!--37063317, 30141258, 37063041-->
-***(Applies to: Windows 11 & Windows 10)***
+***(Applies to: Windows 11 & Windows 10 managed by [Microsoft Endpoint Manager](/mem/endpoint-manager-overview))***
 
 > [!Important]
 > - This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
 > - As of May 10, 2021, a new policy is required to use Update Compliance: "Allow Update Compliance Processing." For more details, see the Mobile Device Management policies and Group policies tables.
 
-This article is specifically targeted at configuring devices enrolled to [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) for Update Compliance, within MEM itself. Configuring devices for Update Compliance in MEM breaks down to the following steps:
+This article is specifically targeted at configuring devices enrolled to [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) for Update Compliance, within Microsoft Endpoint Manager itself. Configuring devices for Update Compliance in Microsoft Endpoint Manager breaks down to the following steps:
 
-1. [Create a configuration profile](#create-a-configuration-profile) for devices you want to enroll, that contains settings for all the MDM policies that must be configured.
+1. [Create a configuration profile](#create-a-configuration-profile) for devices you want to enroll. The configuration profile contains settings for all the Mobile Device Management (MDM) policies that must be configured.
 2. [Deploy the configuration script](#deploy-the-configuration-script) as a Win32 app to those same devices, so additional checks can be performed to ensure devices are correctly configured.
-3. Wait for data to populate. The length of this process depends on the computer being on, connected to the internet, and correctly configured. Some data types take longer to appear than others. You can learn more about this in the broad section on [enrolling devices to Update Compliance](update-compliance-get-started.md#enroll-devices-in-update-compliance).
+3. Wait for data to populate. The length of this process depends on the computer being on, connected to the internet, and correctly configured. Some data types take longer to appear than others. For more information, see [Use Update Compliance](update-compliance-v2-use.md).
 
 ## Create a configuration profile
 
@@ -39,8 +38,8 @@ Take the following steps to create a configuration profile that will set require
 1. Select **Platform**="Windows 10 and later" and **Profile type**="Templates".
 1. For **Template name**, select **Custom**, and then press **Create**.
 1. You are now on the Configuration profile creation screen. On the **Basics** tab, give a **Name** and **Description**.
-1. On the **Configuration settings** page, you will be adding multiple OMA-URI Settings that correspond to the policies described in [Manually configuring devices for Update Compliance](update-compliance-configuration-manual.md).
-    1. If you don't already have it, get your Commercial ID. For steps, see [Get your CommmercialID](update-compliance-get-started.md#get-your-commercialid).
+1. On the **Configuration settings** page, you will be adding multiple OMA-URI Settings that correspond to the policies described in [Manually configuring devices for Update Compliance](update-compliance-v2-configuration-manual.md).
+    1. If you don't already have it, get your Commercial ID. For steps, see [Get your CommmercialID](update-compliance-v2-enable.md#kmk_id).
     1. Add a setting for **Commercial ID** with the following values:
         - **Name**: Commercial ID
         - **Description**: Sets the Commercial ID that corresponds to the Update Compliance Log Analytics workspace.
@@ -76,7 +75,7 @@ Take the following steps to create a configuration profile that will set require
 
 ## Deploy the configuration script
 
-The [Update Compliance Configuration Script](update-compliance-configuration-script.md) is an important component of properly enrolling devices in Update Compliance, though it isn't strictly necessary. It checks to ensure that devices have the required services running and checks connectivity to the endpoints detailed in the section on [Manually configuring devices for Update Compliance](update-compliance-configuration-manual.md). You can deploy the script as a Win32 app. For more information, see [Win32 app management in Microsoft Intune](/mem/intune/apps/apps-win32-app-management).
+The [Update Compliance Configuration Script](update-compliance-v2-configuration-script.md) is an important component of properly enrolling devices in Update Compliance, though it isn't strictly necessary. It checks to ensure that devices have the required services running and checks connectivity to the endpoints detailed in the section on [Manually configuring devices for Update Compliance](update-compliance-v2-configuration-manual.md). You can deploy the script as a Win32 app. For more information, see [Win32 app management in Microsoft Intune](/mem/intune/apps/apps-win32-app-management).
 
 When you deploy the configuration script as a Win32 app, you won't be able to retrieve the results of logs on the device without having access to the device, or saving results of the logs to a shared filesystem. We recommend deploying the script in Pilot mode to a set of devices that you do have access to, or have a way to access the resultant log output the script provides, with as similar of a configuration profile as other devices which will be enrolled to Update Compliance, and analyzing the logs for any potential issues. Following this, you can deploy the configuration script in Deployment mode as a Win32 app to all Update Compliance devices.
 

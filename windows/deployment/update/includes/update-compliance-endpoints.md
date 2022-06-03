@@ -22,4 +22,4 @@ Devices must be able to contact the following endpoints in order to authenticate
 | `http://adl.windows.com` | Required for Windows Update functionality. |
 | `https://watson.telemetry.microsoft.com` | Windows Error Reporting (WER), used to provide more advanced error reporting if certain Feature Update deployment failures occur. |
 | `https://oca.telemetry.microsoft.com`  | Online Crash Analysis, used to provide device-specific recommendations and detailed errors if there are certain crashes. |
-| `https://login.live.com` | This endpoint facilitates MSA access and is required to create the primary identifier we use for devices. Without this service, devices won't be visible in the solution. The Microsoft Account Sign-in Assistant service must also be running (wlidsvc). |
+| `https://login.live.com` | This endpoint facilitates your Microsoft account access and is required to create the primary identifier we use for devices. Without this service, devices won't be visible in the solution. The Microsoft Account Sign-in Assistant service must also be running (wlidsvc). |

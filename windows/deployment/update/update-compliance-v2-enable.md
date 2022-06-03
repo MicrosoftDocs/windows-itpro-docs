@@ -27,9 +27,9 @@ After verifying the [prerequisites](update-compliance-v2-prerequisites.md) are m
    1. [Select or create a new Log Analytics workspace](#bkmk_workspace) for use with Update Compliance.
    1. [Add the Update Compliance solution](#bkmk_solution) to the Log Analytics workspace.
 1. Configure the clients to send data to Update compliance. You can configure clients in the following three ways:
-    - Use a [script](update-compliance-configuration-script.md)
-    - Use [Microsoft Endpoint Manager](update-compliance-configuration-mem.md)
-    - Configure [manually](update-compliance-configuration-manual.md)
+    - Use a [script](update-compliance-v2-configuration-script.md)
+    - Use [Microsoft Endpoint Manager](update-compliance-v2-configuration-mem.md)
+    - Configure [manually](update-compliance-v2-configuration-manual.md)
 
 ## <a name="bkmk_add"></a> Add Update Compliance to your Azure subscription
 
@@ -88,6 +88,6 @@ The **Commercial ID** directs your clients to the Update Compliance solution in 
 
 Once you've added Update Compliance to a workspace in your Azure subscription, you'll need to configure any devices you want to monitor. Enroll devices into Update Compliance using any of the following methods:
 
-- [Configure clients with a script](update-compliance-configuration-script.md)
-- [Configure clients manually](update-compliance-configuration-manual.md)
-- [Configure clients with Microsoft Endpoint Manager](update-compliance-configuration-mem.md)
+- [Configure clients with a script](update-compliance-v2-configuration-script.md)
+- [Configure clients manually](update-compliance-v2-configuration-manual.md)
+- [Configure clients with Microsoft Endpoint Manager](update-compliance-v2-configuration-mem.md)
