@@ -64,7 +64,7 @@ Once a support request is mitigated, it can no longer be edited. If a request ha
 
 ## Microsoft FastTrack
 
-[Microsoft FastTrack](https://www.microsoft.com/en-us/fasttrack) offers Microsoft 365 deployment guidance for customers with 150 or more licenses of an eligible subscription at no additional cost. FastTrack Specialists can help customers work through the Windows Autopatch technical prerequisites described in the [FAQ](../overview/windows-autopatch-faq.md). For more information, visit the [FastTrack website](https://www.microsoft.com/en-ca/fasttrack?rtc=1).
+[Microsoft FastTrack](https://www.microsoft.com/en-us/fasttrack) offers Microsoft 365 deployment guidance for customers with 150 or more licenses of an eligible subscription at no additional cost. FastTrack Specialists can help customers work through the Windows Autopatch technical prerequisites described in the [FAQ](../overview/windows-autopatch-faq.yml). For more information, visit the [FastTrack website](https://www.microsoft.com/en-ca/fasttrack?rtc=1).
 
 Customers who need help with Microsoft 365 workloads can sign in to https://fasttrack.microsoft.com/ with a valid Azure ID and submit a Request for Assistance.
 
