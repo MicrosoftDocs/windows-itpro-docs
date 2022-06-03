@@ -45,7 +45,7 @@ You can use Group Policy to enable Windows Defender Credential Guard. This will 
 
 1. In the **Credential Guard Configuration** box, select **Enabled with UEFI lock**. If you want to be able to turn off Windows Defender Credential Guard remotely, choose **Enabled without lock**.
 
-1. In the **Secure Launch Configuration** box, choose **Not Configured**, **Enabled** or **Disabled**. See [System Guard Secure Launch and SMM protection](../../threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md) for more details.
+1. In the **Secure Launch Configuration** box, choose **Not Configured**, **Enabled** or **Disabled**. For more information, see [System Guard Secure Launch and SMM protection](../../threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md).
 
    :::image type="content" source="images/credguard-gp.png" alt-text="Windows Defender Credential Guard Group Policy setting.":::
 
@@ -65,7 +65,7 @@ To enforce processing of the group policy, you can run `gpupdate /force`.
    > It will enable VBS and Secure Boot and you can do it with or without UEFI Lock. If you will need to disable Credential Guard remotely, enable it without UEFI lock.
 
 > [!TIP]
-> You can also configure Credential Guard by using an account protection profile in endpoint security. See [Account protection policy settings for endpoint security in Intune](/mem/intune/protect/endpoint-security-account-protection-profile-settings).
+> You can also configure Credential Guard by using an account protection profile in endpoint security. For more information, see [Account protection policy settings for endpoint security in Intune](/mem/intune/protect/endpoint-security-account-protection-profile-settings).
 
 ### Enable Windows Defender Credential Guard by using the registry
 
@@ -99,13 +99,13 @@ You can do this by using either the Control Panel or the Deployment Image Servic
 
 1. Add the Hyper-V Hypervisor by running the following command:
 
-   ```console
+   ```cmd
    dism /image:<WIM file name> /Enable-Feature /FeatureName:Microsoft-Hyper-V-Hypervisor /all
    ```
 
 1. Add the Isolated User Mode feature by running the following command:
 
-   ```console
+   ```cmd
    dism /image:<WIM file name> /Enable-Feature /FeatureName:IsolatedUserMode
    ```
 
@@ -142,7 +142,7 @@ You can do this by using either the Control Panel or the Deployment Image Servic
 
 You can also enable Windows Defender Credential Guard by using the [HVCI and Windows Defender Credential Guard hardware readiness tool](dg-readiness-tool.md).
 
-```console
+```cmd
 DG_Readiness_Tool.ps1 -Enable -AutoReboot
 ```
 
@@ -167,7 +167,7 @@ You can view System Information to check that Windows Defender Credential Guard 
 
 You can also check that Windows Defender Credential Guard is running by using the [HVCI and Windows Defender Credential Guard hardware readiness tool](dg-readiness-tool.md).
 
-```console
+```cmd
 DG_Readiness_Tool_v3.6.ps1 -Ready
 ```
 
@@ -237,7 +237,7 @@ To disable Windows Defender Credential Guard, you can use the following set of p
 
 1. Delete the Windows Defender Credential Guard EFI variables by using bcdedit. From an elevated command prompt, type the following commands:
 
-   ```console
+   ```cmd
    mountvol X: /s
    copy %WINDIR%\System32\SecConfig.efi X:\EFI\Microsoft\Boot\SecConfig.efi /Y
    bcdedit /create {0cb3b571-2f2e-4343-a879-d86a476d7215} /d "DebugTool" /application osloader
@@ -257,7 +257,7 @@ To disable Windows Defender Credential Guard, you can use the following set of p
     > [!NOTE]
     > The PC must have one-time access to a domain controller to decrypt content, such as files that were encrypted with EFS. If you want to turn off both Windows Defender Credential Guard and virtualization-based security, run the following bcdedit commands after turning off all virtualization-based security Group Policy and registry settings:
     >
-    > ```console
+    > ```cmd
     > bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} loadoptions DISABLE-LSA-ISO,DISABLE-VBS
     > bcdedit /set vsmlaunchtype off
     > ```
