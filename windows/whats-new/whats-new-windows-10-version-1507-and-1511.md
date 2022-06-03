@@ -1,11 +1,8 @@
 ---
 title: What's new in Windows 10, versions 1507 and 1511 (Windows 10)
 description: What's new in Windows 10 for Windows 10 (versions 1507 and 1511).
-ms.assetid: 75F285B0-09BE-4821-9B42-37B9BE54CEC6
 ms.reviewer: 
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
