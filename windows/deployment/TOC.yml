@@ -205,7 +205,7 @@
                 href: update/update-compliance-v2-use.md                         
               - name: Software updates in the Microsoft admin center (preview)
                 href: update/update-status-admin-center.md                               
-            - name: Schema reference (preview)
+            - name: Update Compliance schema reference (preview)
               items:
               - name: Update Compliance schema reference
                 href: update/update-compliance-v2-schema.md
