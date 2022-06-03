@@ -39,8 +39,3 @@ Update Event that comes directly from the service-side. The event has only servi
 | **Type** | [string](/azure/kusto/query/scalar-data-types/string) | `ServiceUpdateEvent` | The EntityType |
 | **UpdateCategory** | [string](/azure/kusto/query/scalar-data-types/string) | `WindowsFeatureUpdate` | The type of content this DeviceUpdateEvent is tracking. |
 | **UpdateClassification** | [string](/azure/kusto/query/scalar-data-types/string) | `Upgrade` | Whether this update is an upgrade (feature update), security (quality update), non-security (quality update) |
-
-## Next steps
-
-- [Update Compliance overview](update-compliance-v2-overview.md)
-- [Use Update Compliance](update-compliance-v2-use.md)

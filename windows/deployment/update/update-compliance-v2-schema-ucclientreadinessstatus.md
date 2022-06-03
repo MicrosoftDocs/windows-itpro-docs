@@ -45,8 +45,3 @@ UCClientReadinessStatus is an individual device's record about its readiness for
 | **SetupReadinessTime** | [datetime](/azure/kusto/query/scalar-data-types/datetime) | `2020-05-14 09:26:03.478039` | The date and time when readiness was assessed by setup and the assessment was sent.|
 | **SetupReadinessExpiryTime** |  [datetime](/azure/kusto/query/scalar-data-types/datetime) | `2020-05-14 09:26:03.478039` | The date and time when the setup readiness assessment will expire.|
 | **TimeGenerated** |  [datetime](/azure/kusto/query/scalar-data-types/datetime) | `2020-05-14 10:26:03.478039` | The date and time when Azure Monitor Logs ingested this record for your Log Analytics workspace.|
-
-## Next steps
-
-- [Update Compliance overview](update-compliance-v2-overview.md)
-- [Use Update Compliance](update-compliance-v2-use.md)

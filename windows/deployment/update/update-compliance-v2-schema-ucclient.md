@@ -60,8 +60,3 @@ UCClient acts as an individual device's record. It contains data such as the cur
 | **WUQualityDeferralDays** |  [int](/azure/kusto/query/scalar-data-types/int) | `-1` | CSP: DeferQualityUpdates. The Windows Update quality update deferral configuration in days. -1 indicates not configured, 0 indicates configured but set to 0. Values greater than 0 indicate the policy setting. |
 | **WUQualityGracePeriodDays** |  [int](/azure/kusto/query/scalar-data-types/int) | `0` | The Windows Update grace period for quality update in days. -1 indicates not configured, 0 indicates configured and set to 0. Values greater than 0 indicate the grace period in days. |
 | **WUQualityPauseState** |  [string](/azure/kusto/query/scalar-data-types/string) | `NotConfigured` | Indicates pause status of device for quality updates, possible values are Paused, NotPaused, NotConfigured. |
-
-## Next steps
-
-- [Update Compliance overview](update-compliance-v2-overview.md)
-- [Use Update Compliance](update-compliance-v2-use.md)

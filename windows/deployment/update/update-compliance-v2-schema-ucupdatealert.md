@@ -54,8 +54,3 @@ Alert for both client and service updates. Contains information that needs atten
 | **UpdateCategory** | [string](/azure/kusto/query/scalar-data-types/string) | `WindowsFeatureUpdate` | The type of content this DeviceUpdateEvent is tracking. |
 | **UpdateClassification** | [string](/azure/kusto/query/scalar-data-types/string) | `Upgrade` | Whether this update is an upgrade (feature update), security (quality update), non-security (quality update) |
 | **URL** | [string](/azure/kusto/query/scalar-data-types/string) | `aka.ms/errordetail32152` | An optional URL to get more in-depth information related to this alert.  |
-
-## Next steps
-
-- [Update Compliance overview](update-compliance-v2-overview.md)
-- [Use Update Compliance](update-compliance-v2-use.md)

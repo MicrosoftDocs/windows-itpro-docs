@@ -51,8 +51,3 @@ These alerts are activated as a result of an issue that is device-specific. It i
 | **Type** | [string](/azure/kusto/query/scalar-data-types/string) | `UpdateAlert` | The entity type. |
 | **UpdateCategory** | [string](/azure/kusto/query/scalar-data-types/string) | `WindowsFeatureUpdate` | The type of content this DeviceUpdateEvent is tracking. |
 | **UpdateClassification** | [string](/azure/kusto/query/scalar-data-types/string) | `Upgrade` | Whether this content is an upgrade (feature update), security (quality update), non-security (quality update) |
-
-## Next steps
-
-- [Update Compliance overview](update-compliance-v2-overview.md)
-- [Use Update Compliance](update-compliance-v2-use.md)
