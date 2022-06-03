@@ -1,12 +1,8 @@
 ---
 title: What's new in Windows 10, version 1703
 description: New and updated features in Windows 10, version 1703 (also known as the Creators Updated).
-keywords: ["What's new in Windows 10", "Windows 10", "creators update"]
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.localizationpriority: high
-ms.assetid: dca7c655-c4f6-45f8-aa02-64187b202617
 ms.reviewer: 
 author: aczechowski
 manager: dougeby

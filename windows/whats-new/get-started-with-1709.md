@@ -1,10 +1,7 @@
 ---
 title: Get started with Windows 10, version 1709
 description: Learn about features, review requirements, and plan your deployment of Windows 10, version 1709, including IT Pro content, release information, and history.
-keywords: ["get started", "windows 10", "fall creators update", "1709"]
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.date: 10/16/2017
