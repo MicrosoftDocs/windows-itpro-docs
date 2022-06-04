@@ -41,7 +41,7 @@ There are several reasons why a Windows-based computer may have problems during 
 
     The kernel passes control to the session manager process (Smss.exe) which initializes the system session, and loads and starts the devices and drivers that aren't marked BOOT_START.
 
-<a name="boot-sequence">
+<a name="boot-sequence"></a>
 
 Here's a summary of the boot sequence, what will be seen on the display, and typical boot problems at that point in the sequence. Before you start troubleshooting, you have to understand the outline of the boot process and display status to ensure that the issue is properly identified at the beginning of the engagement. Select the thumbnail to view it larger.
 
