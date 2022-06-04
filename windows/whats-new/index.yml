@@ -58,9 +58,9 @@ landingContent:
           - text: Windows 10 update history
             url: https://support.microsoft.com/topic/windows-10-update-history-857b8ccb-71e4-49e5-b3f6-7073197d98fb
           - text: Windows 10 features we're no longer developing
-            url: ../deployment/planning/windows-10-deprecated-features.md
+            url: /windows/deployment/planning/windows-10-deprecated-features
           - text: Features and functionality removed in Windows 10
-            url: ../deployment/planning/windows-10-removed-features.md
+            url: /windows/deployment/planning/windows-10-removed-features
           - text: Compare Windows 10 Editions
             url: https://www.microsoft.com/windowsforbusiness/compare
           - text: Windows 10 Enterprise LTSC

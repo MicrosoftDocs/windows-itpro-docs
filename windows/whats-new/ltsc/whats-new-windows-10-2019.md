@@ -34,7 +34,7 @@ The Windows 10 Enterprise LTSC 2019 release is an important release for LTSC use
 
 ## Microsoft Intune
 
-Microsoft Intune supports Windows 10 Enterprise LTSC 2019 and later. However, Windows 10 update rings device profiles don't support LTSC releases. For installing software updates, use the [policy configuration service provider (CSP)](../../client-management/mdm/policy-csp-update.md), Windows Server Update Services (WSUS), or Microsoft Endpoint Configuration Manager.
+Microsoft Intune supports Windows 10 Enterprise LTSC 2019 and later. However, Windows 10 update rings device profiles don't support LTSC releases. For installing software updates, use the [policy configuration service provider (CSP)](/windows/client-management/mdm/policy-csp-update), Windows Server Update Services (WSUS), or Microsoft Endpoint Configuration Manager.
 
 ## Security
 
@@ -60,12 +60,12 @@ Windows Defender Firewall now supports Windows Subsystem for Linux (WSL) process
 
 ##### Windows Defender Device Guard
 
-[Device Guard](../../security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md) has always been a collection of technologies that can be combined to lock down a PC, including:
+[Device Guard](/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control) has always been a collection of technologies that can be combined to lock down a PC, including:
 
 - Software-based protection provided by code integrity policies
 - Hardware-based protection provided by Hypervisor-protected code integrity (HVCI)
 
-But these protections can also be configured separately. And, unlike HVCI, code integrity policies don't require virtualization-based security (VBS). To help underscore the distinct value of these protections, code integrity policies have been rebranded as [Windows Defender Application Control](../../security/threat-protection/windows-defender-application-control/windows-defender-application-control.md).
+But these protections can also be configured separately. And, unlike HVCI, code integrity policies don't require virtualization-based security (VBS). To help underscore the distinct value of these protections, code integrity policies have been rebranded as [Windows Defender Application Control](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control).
 
 ### Next-gen protection
 
@@ -73,7 +73,7 @@ But these protections can also be configured separately. And, unlike HVCI, code 
 
 Endpoint detection and response is improved. Enterprise customers can now take advantage of the entire Windows security stack with Microsoft Defender Antivirus **detections** and Device Guard **blocks** being surfaced in the Microsoft Defender for Endpoint portal.
 
-Windows Defender is now called Microsoft Defender Antivirus and now shares detection status between Microsoft 365 services and interoperates with Microsoft Defender for Endpoint.  Other policies have also been implemented to enhance cloud based protection, and new channels are available for emergency protection. For more information, see [Virus and threat protection](../../security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection.md) and [Use next-gen technologies in Microsoft Defender Antivirus through cloud-delivered protection](/microsoft-365/security/defender-endpoint/cloud-protection-microsoft-defender-antivirus).
+Windows Defender is now called Microsoft Defender Antivirus and now shares detection status between Microsoft 365 services and interoperates with Microsoft Defender for Endpoint.  Other policies have also been implemented to enhance cloud based protection, and new channels are available for emergency protection. For more information, see [Virus and threat protection](/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection) and [Use next-gen technologies in Microsoft Defender Antivirus through cloud-delivered protection](/microsoft-365/security/defender-endpoint/cloud-protection-microsoft-defender-antivirus).
 
 We've also [increased the breadth of the documentation library for enterprise security admins](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows). The new library includes information on:
 
@@ -163,21 +163,21 @@ Improvements have been added to Windows Information Protection and BitLocker.
 
 Windows Information Protection is now designed to work with Microsoft Office and Azure Information Protection.
 
-Microsoft Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your allowed apps, your WIP-protection level, and how to find enterprise data on the network. For more info, see [Create a Windows Information Protection (WIP) policy using Microsoft Intune](../../security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure.md) and [Associate and deploy your Windows Information Protection (WIP) and VPN policies by using Microsoft Intune](../../security/information-protection/windows-information-protection/create-vpn-and-wip-policy-using-intune-azure.md).
+Microsoft Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your allowed apps, your WIP-protection level, and how to find enterprise data on the network. For more info, see [Create a Windows Information Protection (WIP) policy using Microsoft Intune](/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure) and [Associate and deploy your Windows Information Protection (WIP) and VPN policies by using Microsoft Intune](/windows/security/information-protection/windows-information-protection/create-vpn-and-wip-policy-using-intune-azure).
 
-You can also now collect your audit event logs by using the Reporting configuration service provider (CSP) or the Windows Event Forwarding (for Windows desktop domain-joined devices). For more information, see [How to collect Windows Information Protection (WIP) audit event logs](../../security/information-protection/windows-information-protection/collect-wip-audit-event-logs.md).
+You can also now collect your audit event logs by using the Reporting configuration service provider (CSP) or the Windows Event Forwarding (for Windows desktop domain-joined devices). For more information, see [How to collect Windows Information Protection (WIP) audit event logs](/windows/security/information-protection/windows-information-protection/collect-wip-audit-event-logs).
 
 This release enables support for WIP with Files on Demand, allows file encryption while the file is open in another app, and improves performance. For more information, see [OneDrive files on-demand for the enterprise](https://techcommunity.microsoft.com/t5/microsoft-onedrive-blog/onedrive-files-on-demand-for-the-enterprise/ba-p/117234).
 
 ### BitLocker
 
-The minimum PIN length is being changed from 6 to 4, with a default of 6. For more information, see [BitLocker Group Policy settings](../../security/information-protection/bitlocker/bitlocker-group-policy-settings.md#configure-minimum-pin-length-for-startup).
+The minimum PIN length is being changed from 6 to 4, with a default of 6. For more information, see [BitLocker Group Policy settings](/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings#configure-minimum-pin-length-for-startup).
 
 #### Silent enforcement on fixed drives
 
 Through a Modern Device Management (MDM) policy, BitLocker can be enabled silently for standard Azure Active Directory (Azure AD) joined users. In Windows 10, version 1803 automatic BitLocker encryption was enabled for standard Azure AD users, but this still required modern hardware that passed the Hardware Security Test Interface (HSTI). This new functionality enables BitLocker via policy even on devices that don't pass the HSTI.
 
-This change is an update to the [BitLocker CSP](../../client-management/mdm/bitlocker-csp.md) and used by Intune and others.
+This change is an update to the [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp) and used by Intune and others.
 
 ### Identity protection
 
@@ -187,13 +187,13 @@ Improvements have been added are to Windows Hello for Business and Credential Gu
 
 New features in Windows Hello enable a better device lock experience, using multifactor unlock with new location and user proximity signals. Using Bluetooth signals, you can configure your Windows 10 device to automatically lock when you walk away from it, or to prevent others from accessing the device when you aren't present.
 
-New features in [Windows Hello for Business](../../security/identity-protection/hello-for-business/hello-identity-verification.md) include:
+New features in [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification) include:
 
 - You can now reset a forgotten PIN without deleting company managed data or apps on devices managed by [Microsoft Intune](/mem/intune).
 
-- For Windows desktops, users are able to reset a forgotten PIN through **Settings > Accounts > Sign-in options**. For more information, see [What if I forget my PIN?](../../security/identity-protection/hello-for-business/hello-feature-pin-reset.md).
+- For Windows desktops, users are able to reset a forgotten PIN through **Settings > Accounts > Sign-in options**. For more information, see [What if I forget my PIN?](/windows/security/identity-protection/hello-for-business/hello-feature-pin-reset).
 
-[Windows Hello for Business](../../security/identity-protection/hello-for-business/index.yml) now supports FIDO 2.0 authentication for Azure AD Joined Windows 10 devices and has enhanced support for shared devices, as described in [Kiosk configuration](#kiosk-configuration).
+[Windows Hello for Business](/windows/security/identity-protection/hello-for-business/index) now supports FIDO 2.0 authentication for Azure AD Joined Windows 10 devices and has enhanced support for shared devices, as described in [Kiosk configuration](#kiosk-configuration).
 
 - Windows Hello is now password-less on S-mode.
 
@@ -218,13 +218,13 @@ Windows Defender Credential Guard has always been an optional feature, but Windo
 > [!NOTE]
 > Windows Defender Credential Guard is available only to S mode devices or Enterprise and Education Editions.
 
-For more information, see [Credential Guard Security Considerations](../../security/identity-protection/credential-guard/credential-guard-requirements.md#security-considerations).
+For more information, see [Credential Guard Security Considerations](/windows/security/identity-protection/credential-guard/credential-guard-requirements#security-considerations).
 
 ### Other security improvements
 
 #### Windows security baselines
 
-Microsoft has released new [Windows security baselines](../../security/threat-protection/windows-security-configuration-framework/windows-security-baselines.md) for Windows Server and Windows 10. A security baseline is a group of Microsoft-recommended configuration settings with an explanation of their security effect. For more information, and to download the Policy Analyzer tool, see [Microsoft Security Compliance Toolkit 1.0](../../security/threat-protection/windows-security-configuration-framework/security-compliance-toolkit-10.md).
+Microsoft has released new [Windows security baselines](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines) for Windows Server and Windows 10. A security baseline is a group of Microsoft-recommended configuration settings with an explanation of their security effect. For more information, and to download the Policy Analyzer tool, see [Microsoft Security Compliance Toolkit 1.0](/windows/security/threat-protection/windows-security-configuration-framework/security-compliance-toolkit-10).
 
 #### SMBLoris vulnerability
 
@@ -244,14 +244,14 @@ WSC now includes the Fluent Design System elements you know and love. You'll als
 
 #### Group policy security options
 
-The security setting [**Interactive logon: Display user information when the session is locked**](../../security/threat-protection/security-policy-settings/interactive-logon-display-user-information-when-the-session-is-locked.md) has been updated to work with the **Privacy** setting in **Settings** > **Accounts** > **Sign-in options**.
+The security setting [**Interactive logon: Display user information when the session is locked**](/windows/security/threat-protection/security-policy-settings/interactive-logon-display-user-information-when-the-session-is-locked) has been updated to work with the **Privacy** setting in **Settings** > **Accounts** > **Sign-in options**.
 
 A new security policy setting
-[**Interactive logon: Don't display username at sign-in**](../../security/threat-protection/security-policy-settings/interactive-logon-dont-display-username-at-sign-in.md) has been introduced in Windows 10 Enterprise LTSC 2019. This security policy setting determines whether the username is displayed during sign-in. It works with the **Privacy** setting in **Settings** > **Accounts** > **Sign-in options**. The setting only affects the **Other user** tile.
+[**Interactive logon: Don't display username at sign-in**](/windows/security/threat-protection/security-policy-settings/interactive-logon-dont-display-username-at-sign-in) has been introduced in Windows 10 Enterprise LTSC 2019. This security policy setting determines whether the username is displayed during sign-in. It works with the **Privacy** setting in **Settings** > **Accounts** > **Sign-in options**. The setting only affects the **Other user** tile.
 
 #### Windows 10 in S mode
 
-We've continued to work on the **Current threats** area in  [Virus & threat protection](../../security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection.md), which now displays all threats that need action. You can quickly take action on threats from this screen:
+We've continued to work on the **Current threats** area in  [Virus & threat protection](/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection), which now displays all threats that need action. You can quickly take action on threats from this screen:
 
 :::image type="content" source="../images/virus-and-threat-protection.png" alt-text="Screenshot of the Virus & threat protection settings in Windows.":::
 
@@ -265,7 +265,7 @@ The GPT partition format is newer and enables the use of larger and more disk pa
 
 Other security features of Windows 10 that are enabled when you boot in UEFI mode include: Secure Boot, Early Launch Anti-malware (ELAM) driver, Windows Trusted Boot, Measured Boot, Device Guard, Credential Guard, and BitLocker Network Unlock.
 
-For more information, see [MBR2GPT.EXE](../../deployment/mbr-to-gpt.md).
+For more information, see [MBR2GPT.EXE](/windows/deployment/mbr-to-gpt).
 
 ### DISM
 
@@ -314,7 +314,7 @@ Portions of the work done during the offline phases of a Windows update have bee
 
 ### SetupDiag
 
-[SetupDiag](../../deployment/upgrade/setupdiag.md) is a new command-line tool that can help diagnose why a Windows 10 update failed.
+[SetupDiag](/windows/deployment/upgrade/setupdiag) is a new command-line tool that can help diagnose why a Windows 10 update failed.
 
 SetupDiag works by searching Windows Setup log files. When it searches log files, SetupDiag uses a set of rules to match known issues. In the current version of SetupDiag there are 53 rules contained in the rules.xml file, which is extracted when SetupDiag is run. The rules.xml file will be updated as new versions of SetupDiag are made available.
 
@@ -322,7 +322,7 @@ SetupDiag works by searching Windows Setup log files. When it searches log files
 
 ### Faster sign-in to a Windows 10 shared pc
 
-If you have shared devices deployed in your work place, **Fast sign-in** enables users to quickly sign in to a [shared Windows 10 PC](../../configuration/set-up-shared-or-guest-pc.md).
+If you have shared devices deployed in your work place, **Fast sign-in** enables users to quickly sign in to a [shared Windows 10 PC](/windows/configuration/set-up-shared-or-guest-pc).
 
 #### To enable fast sign-in
 
@@ -358,17 +358,17 @@ Update Compliance is a solution built using OMS Log Analytics that provides info
 
 New capabilities in Update Compliance let you monitor Windows Defender protection status, compare compliance with industry peers, and optimize bandwidth for deploying updates.
 
-For more information about Update Compliance, see [Monitor Windows Updates with Update Compliance](../../deployment/update/update-compliance-monitor.md).
+For more information about Update Compliance, see [Monitor Windows Updates with Update Compliance](/windows/deployment/update/update-compliance-monitor).
 
 ## Accessibility and privacy
 
 ### Accessibility
 
-"Out of box" accessibility is enhanced with auto-generated picture descriptions. For more information about accessibility, see [Accessibility information for IT Professionals](../../configuration/windows-10-accessibility-for-itpros.md). Also see the accessibility section in [What's new in the Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/30/whats-new-in-the-windows-10-april-2018-update/).
+"Out of box" accessibility is enhanced with auto-generated picture descriptions. For more information about accessibility, see [Accessibility information for IT Professionals](/windows/configuration/windows-10-accessibility-for-itpros). Also see the accessibility section in [What's new in the Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/30/whats-new-in-the-windows-10-april-2018-update/).
 
 ### Privacy
 
-In the Feedback and Settings page under Privacy Settings you can now delete the diagnostic data your device has sent to Microsoft. You can also view this diagnostic data using the [Diagnostic Data Viewer](../../privacy/diagnostic-data-viewer-overview.md) app.
+In the Feedback and Settings page under Privacy Settings you can now delete the diagnostic data your device has sent to Microsoft. You can also view this diagnostic data using the [Diagnostic Data Viewer](/windows/privacy/diagnostic-data-viewer-overview) app.
 
 ## Configuration
 
@@ -378,13 +378,13 @@ The new chromium-based Microsoft Edge has many improvements targeted to kiosks. 
 
 Internet Explorer is included in Windows 10 LTSC releases as its feature set isn't changing, and it will continue to get security fixes for the life of a Windows 10 LTSC release.
 
-If you wish to take advantage of [Kiosk capabilities in Microsoft Edge](/previous-versions/windows/edge-legacy/microsoft-edge-kiosk-mode-deploy), consider [Kiosk mode](../../configuration/kiosk-methods.md) with a semi-annual release channel.
+If you wish to take advantage of [Kiosk capabilities in Microsoft Edge](/previous-versions/windows/edge-legacy/microsoft-edge-kiosk-mode-deploy), consider [Kiosk mode](/windows/configuration/kiosk-methods) with a semi-annual release channel.
 
 ### Co-management
 
-Intune and Microsoft Endpoint Configuration Manager policies have been added to enable hybrid Azure AD-joined authentication. Mobile Device Management (MDM) has added over 150 new policies and settings in this release, including the [MDMWinsOverGP](../../client-management/mdm/policy-csp-controlpolicyconflict.md) policy, to enable easier transition to cloud-based management.
+Intune and Microsoft Endpoint Configuration Manager policies have been added to enable hybrid Azure AD-joined authentication. Mobile Device Management (MDM) has added over 150 new policies and settings in this release, including the [MDMWinsOverGP](/windows/client-management/mdm/policy-csp-controlpolicyconflict) policy, to enable easier transition to cloud-based management.
 
-For more information, see [What's New in MDM enrollment and management](../../client-management/mdm/new-in-windows-mdm-enrollment-management.md).
+For more information, see [What's New in MDM enrollment and management](/windows/client-management/mdm/new-in-windows-mdm-enrollment-management).
 
 ### OS uninstall period
 
@@ -392,7 +392,7 @@ The OS uninstall period is a length of time that users are given when they can o
 
 ### Azure Active Directory join in bulk
 
-Using the new wizards in Windows Configuration Designer, you can [create provisioning packages to enroll devices in Azure Active Directory](../../configuration/provisioning-packages/provisioning-packages.md#configuration-designer-wizards). Azure AD join in bulk is available in the desktop, mobile, kiosk, and Surface Hub wizards.
+Using the new wizards in Windows Configuration Designer, you can [create provisioning packages to enroll devices in Azure Active Directory](/windows/configuration/provisioning-packages/provisioning-packages#configuration-designer-wizards). Azure AD join in bulk is available in the desktop, mobile, kiosk, and Surface Hub wizards.
 
 ### Windows Spotlight
 
@@ -402,19 +402,19 @@ The following new group policy and mobile device management (MDM) settings are a
 - **Do not use diagnostic data for tailored experiences**
 - **Turn off the Windows Welcome Experience**
 
-For more information, see [Configure Windows Spotlight on the lock screen](../../configuration/windows-spotlight.md).
+For more information, see [Configure Windows Spotlight on the lock screen](/windows/configuration/windows-spotlight).
 
 ### Start and taskbar layout
 
-Previously, the customized taskbar could only be deployed using Group Policy or provisioning packages. Windows 10 Enterprise LTSC 2019 adds support for customized taskbars to [MDM](../../configuration/customize-windows-10-start-screens-by-using-mobile-device-management.md).
+Previously, the customized taskbar could only be deployed using Group Policy or provisioning packages. Windows 10 Enterprise LTSC 2019 adds support for customized taskbars to [MDM](/windows/configuration/customize-windows-10-start-screens-by-using-mobile-device-management).
 
-[More MDM policy settings are available for Start and taskbar layout](../../configuration/windows-10-start-layout-options-and-policies.md). New MDM policy settings include:
+[More MDM policy settings are available for Start and taskbar layout](/windows/configuration/windows-10-start-layout-options-and-policies). New MDM policy settings include:
 
-- Settings for the User tile: [**Start/HideUserTile**](../../client-management/mdm/policy-configuration-service-provider.md#start-hideusertile), [**Start/HideSwitchAccount**](../../client-management/mdm/policy-configuration-service-provider.md#start-hideswitchaccount), [**Start/HideSignOut**](../../client-management/mdm/policy-configuration-service-provider.md#start-hidesignout), [**Start/HideLock**](../../client-management/mdm/policy-configuration-service-provider.md#start-hidelock), and [**Start/HideChangeAccountSettings**](../../client-management/mdm/policy-configuration-service-provider.md#start-hidechangeaccountsettings)
+- Settings for the User tile: [**Start/HideUserTile**](/windows/client-management/mdm/policy-configuration-service-provider#start-hideusertile), [**Start/HideSwitchAccount**](/windows/client-management/mdm/policy-configuration-service-provider#start-hideswitchaccount), [**Start/HideSignOut**](/windows/client-management/mdm/policy-configuration-service-provider#start-hidesignout), [**Start/HideLock**](/windows/client-management/mdm/policy-configuration-service-provider#start-hidelock), and [**Start/HideChangeAccountSettings**](/windows/client-management/mdm/policy-configuration-service-provider#start-hidechangeaccountsettings)
 
-- Settings for Power: [**Start/HidePowerButton**](../../client-management/mdm/policy-configuration-service-provider.md#start-hidepowerbutton), [**Start/HideHibernate**](../../client-management/mdm/policy-configuration-service-provider.md#start-hidehibernate), [**Start/HideRestart**](../../client-management/mdm/policy-configuration-service-provider.md#start-hiderestart), [**Start/HideShutDown**](../../client-management/mdm/policy-configuration-service-provider.md#start-hideshutdown), and [**Start/HideSleep**](../../client-management/mdm/policy-configuration-service-provider.md#start-hidesleep)
+- Settings for Power: [**Start/HidePowerButton**](/windows/client-management/mdm/policy-configuration-service-provider#start-hidepowerbutton), [**Start/HideHibernate**](/windows/client-management/mdm/policy-configuration-service-provider#start-hidehibernate), [**Start/HideRestart**](/windows/client-management/mdm/policy-configuration-service-provider#start-hiderestart), [**Start/HideShutDown**](/windows/client-management/mdm/policy-configuration-service-provider#start-hideshutdown), and [**Start/HideSleep**](/windows/client-management/mdm/policy-configuration-service-provider#start-hidesleep)
 
-- Other new settings: [**Start/HideFrequentlyUsedApps**](../../client-management/mdm/policy-configuration-service-provider.md#start-hidefrequentlyusedapps), [**Start/HideRecentlyAddedApps**](../../client-management/mdm/policy-configuration-service-provider.md#start-hiderecentlyaddedapps), **AllowPinnedFolder**, **ImportEdgeAssets**, [**Start/HideRecentJumplists**](../../client-management/mdm/policy-configuration-service-provider.md#start-hiderecentjumplists), [**Start/NoPinningToTaskbar**](../../client-management/mdm/policy-configuration-service-provider.md#start-nopinningtotaskbar), [**Settings/PageVisibilityList**](../../client-management/mdm/policy-configuration-service-provider.md#settings-pagevisibilitylist), and [**Start/HideAppsList**](../../client-management/mdm/policy-configuration-service-provider.md#start-hideapplist).
+- Other new settings: [**Start/HideFrequentlyUsedApps**](/windows/client-management/mdm/policy-configuration-service-provider#start-hidefrequentlyusedapps), [**Start/HideRecentlyAddedApps**](/windows/client-management/mdm/policy-configuration-service-provider#start-hiderecentlyaddedapps), **AllowPinnedFolder**, **ImportEdgeAssets**, [**Start/HideRecentJumplists**](/windows/client-management/mdm/policy-configuration-service-provider#start-hiderecentjumplists), [**Start/NoPinningToTaskbar**](/windows/client-management/mdm/policy-configuration-service-provider#start-nopinningtotaskbar), [**Settings/PageVisibilityList**](/windows/client-management/mdm/policy-configuration-service-provider#settings-pagevisibilitylist), and [**Start/HideAppsList**](/windows/client-management/mdm/policy-configuration-service-provider#start-hideapplist).
 
 ## Windows Update
 
@@ -426,7 +426,7 @@ You can now register your Azure AD domains to the Windows Insider Program. For m
 
 ### Optimize update delivery
 
-With changes delivered in Windows 10 Enterprise LTSC 2019, [express updates](../../deployment/do/waas-optimize-windows-10-updates.md#express-update-delivery) are now fully supported with Configuration Manager. It's also supported with other third-party updating and management products that [implement this new functionality](/windows-server/administration/windows-server-update-services/deploy/express-update-delivery-isv-support). This support is in addition to current express support on Windows Update, Windows Update for Business and WSUS.
+With changes delivered in Windows 10 Enterprise LTSC 2019, [express updates](/windows/deployment/do/waas-optimize-windows-10-updates#express-update-delivery) are now fully supported with Configuration Manager. It's also supported with other third-party updating and management products that [implement this new functionality](/windows-server/administration/windows-server-update-services/deploy/express-update-delivery-isv-support). This support is in addition to current express support on Windows Update, Windows Update for Business and WSUS.
 
 >[!NOTE]
 > The above changes can be made available to Windows 10, version 1607, by installing the April 2017 cumulative update.
@@ -435,13 +435,13 @@ Delivery Optimization policies now enable you to configure other restrictions to
 
 Added policies include:
 
-- [Allow uploads while the device is on battery while under set Battery level](../../deployment/do/waas-delivery-optimization-reference.md#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level)
-- [Enable Peer Caching while the device connects via VPN](../../deployment/do/waas-delivery-optimization-reference.md#enable-peer-caching-while-the-device-connects-via-vpn)
-- [Minimum RAM (inclusive) allowed to use Peer Caching](../../deployment/do/waas-delivery-optimization-reference.mdn#minimum-ram-allowed-to-use-peer-caching)
-- [Minimum disk size allowed to use Peer Caching](../../deployment/do/waas-delivery-optimization-reference.mdn#minimum-disk-size-allowed-to-use-peer-caching)
-- [Minimum Peer Caching Content File Size](../../deployment/do/waas-delivery-optimization-reference.mdn#minimum-peer-caching-content-file-size)
+- [Allow uploads while the device is on battery while under set Battery level](/windows/deployment/do/waas-delivery-optimization-reference#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level)
+- [Enable Peer Caching while the device connects via VPN](/windows/deployment/do/waas-delivery-optimization-reference#enable-peer-caching-while-the-device-connects-via-vpn)
+- [Minimum RAM (inclusive) allowed to use Peer Caching](/windows/deployment/do/waas-delivery-optimization-reference#minimum-ram-allowed-to-use-peer-caching)
+- [Minimum disk size allowed to use Peer Caching](/windows/deployment/do/waas-delivery-optimization-reference#minimum-disk-size-allowed-to-use-peer-caching)
+- [Minimum Peer Caching Content File Size](/windows/deployment/do/waas-delivery-optimization-reference#minimum-peer-caching-content-file-size)
 
-For more information, see [Configure Delivery Optimization for Windows updates](../../deployment/do/waas-delivery-optimization.md).
+For more information, see [Configure Delivery Optimization for Windows updates](/windows/deployment/do/waas-delivery-optimization).
 
 ### Uninstalled in-box apps no longer automatically reinstall
 
@@ -453,33 +453,33 @@ Additionally, apps de-provisioned by admins on Windows 10 Enterprise LTSC 2019 m
 
 ### New MDM capabilities
 
-Windows 10 Enterprise LTSC 2019 adds many new [configuration service providers (CSPs)](../../configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers.md) that provide new capabilities for managing Windows 10 devices using MDM or provisioning packages. Among other things, these CSPs enable you to configure a few hundred of the most useful group policy settings via MDM. For more information, see [Policy CSP - ADMX-backed policies](../../client-management/mdm/policy-configuration-service-provider.md).
+Windows 10 Enterprise LTSC 2019 adds many new [configuration service providers (CSPs)](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) that provide new capabilities for managing Windows 10 devices using MDM or provisioning packages. Among other things, these CSPs enable you to configure a few hundred of the most useful group policy settings via MDM. For more information, see [Policy CSP - ADMX-backed policies](/windows/client-management/mdm/policy-configuration-service-provider).
 
 Some of the other new CSPs are:
 
-- The [DynamicManagement CSP](../../client-management/mdm/dynamicmanagement-csp.md) allows you to manage devices differently depending on location, network, or time. For example, managed devices can have cameras disabled when at a work location, the cellular service can be disabled when outside the country to avoid roaming charges, or the wireless network can be disabled when the device isn't within the corporate building or campus. Once configured, these settings will be enforced even if the device can't reach the management server when the location or network changes. The dynamic management CSP enables configuration of policies that change how the device is managed in addition to setting the conditions on which the change occurs.
+- The [DynamicManagement CSP](/windows/client-management/mdm/dynamicmanagement-csp) allows you to manage devices differently depending on location, network, or time. For example, managed devices can have cameras disabled when at a work location, the cellular service can be disabled when outside the country to avoid roaming charges, or the wireless network can be disabled when the device isn't within the corporate building or campus. Once configured, these settings will be enforced even if the device can't reach the management server when the location or network changes. The dynamic management CSP enables configuration of policies that change how the device is managed in addition to setting the conditions on which the change occurs.
 
-- The [CleanPC CSP](../../client-management/mdm/cleanpc-csp.md) allows removal of user-installed and pre-installed applications, with the option to persist user data.
+- The [CleanPC CSP](/windows/client-management/mdm/cleanpc-csp) allows removal of user-installed and pre-installed applications, with the option to persist user data.
 
-- The [BitLocker CSP](../../client-management/mdm/bitlocker-csp.md) is used to manage encryption of PCs and devices. For example, you can require storage card encryption on mobile devices, or require encryption for operating system drives.
+- The [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp) is used to manage encryption of PCs and devices. For example, you can require storage card encryption on mobile devices, or require encryption for operating system drives.
 
-- The [NetworkProxy CSP](../../client-management/mdm/networkproxy-csp.md) is used to configure a proxy server for ethernet and Wi-Fi connections.
+- The [NetworkProxy CSP](/windows/client-management/mdm/networkproxy-csp) is used to configure a proxy server for ethernet and Wi-Fi connections.
 
-- The [Office CSP](../../client-management/mdm/office-csp.md) enables a Microsoft Office client to be installed on a device via the Office Deployment Tool. For more information, see [Configuration options for the Office Deployment Tool](/deployoffice/office-deployment-tool-configuration-options).
+- The [Office CSP](/windows/client-management/mdm/office-csp) enables a Microsoft Office client to be installed on a device via the Office Deployment Tool. For more information, see [Configuration options for the Office Deployment Tool](/deployoffice/office-deployment-tool-configuration-options).
 
-- The [EnterpriseAppVManagement CSP](../../client-management/mdm/enterpriseappvmanagement-csp.md) is used to manage virtual applications in Windows 10 PCs (Enterprise and Education editions) and enables App-V sequenced apps to be streamed to PCs even when managed by MDM.
+- The [EnterpriseAppVManagement CSP](/windows/client-management/mdm/enterpriseappvmanagement-csp) is used to manage virtual applications in Windows 10 PCs (Enterprise and Education editions) and enables App-V sequenced apps to be streamed to PCs even when managed by MDM.
 
-For more information, see [What's new in mobile device enrollment and management](../../client-management/mdm/new-in-windows-mdm-enrollment-management.md).
+For more information, see [What's new in mobile device enrollment and management](/windows/client-management/mdm/new-in-windows-mdm-enrollment-management).
 
-MDM has been expanded to include domain joined devices with Azure Active Directory registration. Group policy can be used with Active Directory joined devices to trigger auto-enrollment to MDM. For more information, see [Enroll a Windows 10 device automatically using Group Policy](../../client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy.md).
+MDM has been expanded to include domain joined devices with Azure Active Directory registration. Group policy can be used with Active Directory joined devices to trigger auto-enrollment to MDM. For more information, see [Enroll a Windows 10 device automatically using Group Policy](/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy).
 
-Multiple new configuration items are also added. For more information, see [What's new in MDM enrollment and management](../../client-management/mdm/new-in-windows-mdm-enrollment-management.md).
+Multiple new configuration items are also added. For more information, see [What's new in MDM enrollment and management](/windows/client-management/mdm/new-in-windows-mdm-enrollment-management).
 
 ### Mobile application management support for Windows 10
 
 The Windows version of mobile application management (MAM) is a lightweight solution for managing company data access and security on personal devices. MAM support is built into Windows on top of Windows Information Protection (WIP), starting in Windows 10 Enterprise LTSC 2019.
 
-For more info, see [Implement server-side support for mobile application management on Windows](../../client-management/mdm/implement-server-side-mobile-application-management.md).
+For more info, see [Implement server-side support for mobile application management on Windows](/windows/client-management/mdm/implement-server-side-mobile-application-management).
 
 ### MDM diagnostics
 
@@ -491,17 +491,17 @@ Previous versions of the Microsoft Application Virtualization Sequencer (App-V S
 
 For more information, see the following articles:
 
-- [Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)](../../application-management/app-v/appv-auto-provision-a-vm.md)
-- [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](../../application-management/app-v/appv-auto-batch-sequencing.md)
-- [Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](../../application-management/app-v/appv-auto-batch-updating.md)
-- [Automatically cleanup unpublished packages on the App-V client](../../application-management/app-v/appv-auto-clean-unpublished-packages.md)
+- [Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)](/windows/application-management/app-v/appv-auto-provision-a-vm)
+- [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](/windows/application-management/app-v/appv-auto-batch-sequencing)
+- [Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](/windows/application-management/app-v/appv-auto-batch-updating)
+- [Automatically cleanup unpublished packages on the App-V client](/windows/application-management/app-v/appv-auto-clean-unpublished-packages)
 
 ### Windows diagnostic data
 
 Learn more about the diagnostic data that's collected at the Basic level and some examples of the types of data that is collected at the Full level.
 
-- [Windows 10, version 1703 basic level Windows diagnostic events and fields](../../privacy/basic-level-windows-diagnostic-events-and-fields-1703.md)
-- [Windows 10, version 1703 diagnostic data](../../privacy/windows-diagnostic-data-1703.md)
+- [Windows 10, version 1703 basic level Windows diagnostic events and fields](/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1703)
+- [Windows 10, version 1703 diagnostic data](/windows/privacy/windows-diagnostic-data-1703)
 
 ### Group policy spreadsheet
 
@@ -511,7 +511,7 @@ Learn about the new group policies that were added in Windows 10 Enterprise LTSC
 
 ### Mixed reality apps
 
-This version of Windows 10 introduces [Windows Mixed Reality](https://blogs.windows.com/windowsexperience/2017/10/03/the-era-of-windows-mixed-reality-begins-october-17/). Organizations that use WSUS must take action to enable Windows Mixed Reality. You can also prohibit use of Windows Mixed Reality by blocking installation of the Mixed Reality Portal. For more information, see [Enable or block Windows Mixed Reality apps in the enterprise](../../application-management/manage-windows-mixed-reality.md).
+This version of Windows 10 introduces [Windows Mixed Reality](https://blogs.windows.com/windowsexperience/2017/10/03/the-era-of-windows-mixed-reality-begins-october-17/). Organizations that use WSUS must take action to enable Windows Mixed Reality. You can also prohibit use of Windows Mixed Reality by blocking installation of the Mixed Reality Portal. For more information, see [Enable or block Windows Mixed Reality apps in the enterprise](/windows/application-management/manage-windows-mixed-reality).
 
 ## Networking
 

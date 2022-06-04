@@ -50,11 +50,11 @@ With Windows 10, you can continue to use traditional OS deployment, but you can 
 
 - Avoid reimaging by using dynamic provisioning, enabled by a cloud-based device management service such as [Windows Autopilot](/mem/autopilot/windows-autopilot) or [Microsoft Intune](/mem/intune/fundamentals/).
 
-- Create self-contained provisioning packages built with the Windows Configuration Designer. For more information, see [Provisioning packages for Windows](../configuration/provisioning-packages/provisioning-packages.md).
+- Create self-contained provisioning packages built with the Windows Configuration Designer. For more information, see [Provisioning packages for Windows](/windows/configuration/provisioning-packages/provisioning-packages).
 
 - Use traditional imaging techniques such as deploying custom images using [Configuration Manager](/mem/configmgr/core/understand/introduction).
 
-You have multiple options for [upgrading to Windows 10](../deployment/windows-10-deployment-scenarios.md). For existing devices running Windows 8.1, you can use the robust in-place upgrade process for a fast, reliable move to Windows 10 while automatically preserving all the existing apps, data, and settings. This process usage can mean lower deployment costs, and improved productivity as end users can be immediately productive - everything is right where they left it. You can also use a traditional wipe-and-load approach if you prefer, using the same tools that you use today.
+You have multiple options for [upgrading to Windows 10](/windows/deployment/windows-10-deployment-scenarios). For existing devices running Windows 8.1, you can use the robust in-place upgrade process for a fast, reliable move to Windows 10 while automatically preserving all the existing apps, data, and settings. This process usage can mean lower deployment costs, and improved productivity as end users can be immediately productive - everything is right where they left it. You can also use a traditional wipe-and-load approach if you prefer, using the same tools that you use today.
 
 ## Identity and authentication
 
@@ -80,7 +80,7 @@ You can envision user and device management as falling into these two categories
 
     - [Conditional access](/azure/active-directory/conditional-access/overview) to corporate resources based on the health or configuration of the device
 
-    - [Windows Hello for Business](../security/identity-protection/hello-for-business/hello-identity-verification.md)
+    - [Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-identity-verification)
 
     - Windows Hello
 
