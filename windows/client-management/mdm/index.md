@@ -4,12 +4,13 @@ description: Windows 10 and Windows 11 provide an enterprise-level solution to m
 MS-HAID:
 - 'p\_phDeviceMgmt.provisioning\_and\_device\_management'
 - 'p\_phDeviceMgmt.mobile\_device\_management\_windows\_mdm'
-ms.author: dansimp
 ms.topic: overview
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: aczechowski
+ms.author: aaroncz
 ms.collection: highpri
+ms.date: 06/03/2022
 ---
 
 # Mobile device management
@@ -46,12 +47,6 @@ For more information about the MDM policies defined in the MDM security baseline
 - [MDM Security baseline for Windows 10, version 1809](https://download.microsoft.com/download/2/C/4/2C418EC7-31E0-4A74-8928-6DCD512F9A46/1809-MDM-SecurityBaseLine-Document-[Preview].zip)
 
 For information about the MDM policies defined in the Intune security baseline, see [Windows security baseline settings for Intune](/mem/intune/protect/security-baseline-settings-mdm-all).
-
-<span id="mmat" />
-
-## Learn about migrating to MDM
-
-When an organization wants to move to MDM to manage devices, they should prepare by analyzing their current Group Policy settings to see what they need to transition to MDM management. Microsoft created the [MDM Migration Analysis Tool](https://github.com/WindowsDeviceManagement/MMAT) (MMAT) to help. MMAT determines which Group Policies have been set for a target user or computer and then generates a report that lists the level of support for each policy setting in MDM equivalents. For more information, see [MMAT Instructions](https://github.com/WindowsDeviceManagement/MMAT/blob/master/MDM%20Migration%20Analysis%20Tool%20Instructions.pdf).
 
 ## Learn about device enrollment
 
