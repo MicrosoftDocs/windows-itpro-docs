@@ -2,18 +2,12 @@
 Fill out the information below to help us review this pull request. 
 You can delete these comments once you are done.
 -->
-
-# Description
-
 <!-- 
-If your changes are extensive, you can provide a brief description here and list more detailed changes below.
--->
+## Description
 
-## Changes
-
-<!--
-- Briefly describe or list **what** this PR changes.
-- Share any important highlights regarding your changes, such as screenshots, code snippets, or formatting.
+If your changes are extensive:
+- Uncomment this heading and provide a brief description here.
+- List more detailed changes below under the changes heading.
 -->
 
 ## Why
@@ -26,7 +20,14 @@ If your changes are extensive, you can provide a brief description here and list
   - For more information, see [Linking a pull request to an issue using a keyword](https://docs.github.com/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).
 -->
 
-Closes #[Issue Number]
+- Closes #[Issue Number]
+
+## Changes
+
+<!--
+- Briefly describe or list **what** this PR changes.
+- Share any important highlights regarding your changes, such as screenshots, code snippets, or formatting.
+-->
 
 <!--
 Thanks for contributing to Microsoft docs content!
