@@ -1,17 +1,12 @@
 ---
 title: Gathering Information about Your Devices (Windows)
 description: Learn what information to gather about the devices in your enterprise to plan your Windows Defender Firewall with Advanced Security deployment.
-ms.assetid: 7f7cd3b9-de8e-4fbf-89c6-3d1a47bc2beb
 ms.reviewer: 
 ms.author: dansimp
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021

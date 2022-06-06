@@ -35,7 +35,9 @@ Windows Autopatch is included with Window 10/11 Enterprise E3 or higher. The fol
 
 The following Windows 64-bit editions are required for Windows Autopatch:
 
+- Windows 10/11 Pro
 - Windows 10/11 Enterprise
+- Windows 10/11 Pro for Workstations
 
 ## Co-management requirements
 

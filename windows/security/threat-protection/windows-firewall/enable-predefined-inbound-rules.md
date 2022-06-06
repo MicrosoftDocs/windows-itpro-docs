@@ -1,17 +1,12 @@
 ---
 title: Enable Predefined Inbound Rules (Windows)
 description: Learn the rules for Windows Defender Firewall with Advanced Security for common networking roles and functions.
-ms.assetid: a4fff086-ae81-4c09-b828-18c6c9a937a7
 ms.reviewer: 
 ms.author: dansimp
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/07/2021

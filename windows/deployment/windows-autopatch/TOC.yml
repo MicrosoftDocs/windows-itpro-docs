@@ -7,7 +7,7 @@
         - name: What is Windows Autopatch?
           href: overview/windows-autopatch-overview.md
         - name: FAQ
-          href: overview/windows-autopatch-faq.md
+          href: overview/windows-autopatch-faq.yml
     - name: Prepare
       href: prepare/index.md
       items: 
