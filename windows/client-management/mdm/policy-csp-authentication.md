@@ -124,7 +124,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Allows an EAP cert-based authentication for a single sign on (SSO) to access internal resources.
+Allows an EAP cert-based authentication for a Single Sign on (SSO) to access internal resources.
 
 <!--/Description-->
 <!--SupportedValues-->

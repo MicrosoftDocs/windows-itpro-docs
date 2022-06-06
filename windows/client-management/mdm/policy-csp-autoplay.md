@@ -72,9 +72,8 @@ manager: dansimp
 <!--Description-->
 This policy setting disallows AutoPlay for MTP devices like cameras or phones.
 
-If you enable this policy setting, AutoPlay is not allowed for MTP devices like cameras or phones.
-
-If you disable or do not configure this policy setting, AutoPlay is enabled for non-volume devices.
+- If you enable this policy setting, AutoPlay is not allowed for MTP devices like cameras or phones.
+- If you disable or do not configure this policy setting, AutoPlay is enabled for non-volume devices.
 
 <!--/Description-->
 
@@ -191,7 +190,8 @@ This policy setting disables Autoplay on additional types of drives. You cannot 
 
 If you disable or do not configure this policy setting, AutoPlay is enabled.
 
-Note: This policy setting appears in both the Computer Configuration and User Configuration folders. If the policy settings conflict, the policy setting in Computer Configuration takes precedence over the policy setting in User Configuration.
+> [!Note]
+> This policy setting appears in both the Computer Configuration and User Configuration folders. If the policy settings conflict, the policy setting in Computer Configuration takes precedence over the policy setting in User Configuration.
 
 <!--/Description-->
 

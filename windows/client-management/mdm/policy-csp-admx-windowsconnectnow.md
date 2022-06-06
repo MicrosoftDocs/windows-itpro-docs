@@ -68,9 +68,13 @@ manager: dansimp
 <!--Description-->
 This policy setting prohibits access to Windows Connect Now (WCN) wizards. 
 
-If you enable this policy setting, the wizards are turned off and users have no access to any of the wizard tasks. All the configuration-related tasks, including "Set up a wireless router or access point" and "Add a wireless device" are disabled. 
+- If you enable this policy setting, the wizards are turned off and users have no access to any of the wizard tasks. 
 
-If you disable or don't configure this policy setting, users can access the wizard tasks. They are "Set up a wireless router or access point" and "Add a wireless device." The default for this policy setting allows users to access all WCN wizards.
+All the configuration-related tasks, including "Set up a wireless router or access point" and "Add a wireless device" are disabled. 
+
+- If you disable or don't configure this policy setting, users can access the wizard tasks. 
+
+They are "Set up a wireless router or access point" and "Add a wireless device." The default for this policy setting allows users to access all WCN wizards.
 
 <!--/Description-->
 
@@ -113,9 +117,13 @@ ADMX Info:
 <!--Description-->
 This policy setting prohibits access to Windows Connect Now (WCN) wizards. 
 
-If you enable this policy setting, the wizards are turned off and users have no access to any of the wizard tasks. All the configuration-related tasks, including "Set up a wireless router or access point" and "Add a wireless device" are disabled. 
+- If you enable this policy setting, the wizards are turned off and users have no access to any of the wizard tasks. 
 
-If you disable or don't configure this policy setting, users can access the wizard tasks. They are "Set up a wireless router or access point" and "Add a wireless device." The default for this policy setting allows users to access all WCN wizards.
+All the configuration-related tasks, including "Set up a wireless router or access point" and "Add a wireless device" are disabled. 
+
+- If you disable or don't configure this policy setting, users can access the wizard tasks. 
+
+They are "Set up a wireless router or access point" and "Add a wireless device." The default for this policy setting allows users to access all WCN wizards.
 
 <!--/Description-->
 
@@ -161,9 +169,8 @@ This policy setting allows the configuration of wireless settings using Windows 
 
 More options are available to allow discovery and configuration over a specific medium. 
 
-If you enable this policy setting, more choices are available to turn off the operations over a specific medium. 
-
-If you disable this policy setting, operations are disabled over all media. 
+- If you enable this policy setting, more choices are available to turn off the operations over a specific medium. 
+- If you disable this policy setting, operations are disabled over all media. 
 
 If you don't configure this policy setting, operations are enabled over all media. 
 

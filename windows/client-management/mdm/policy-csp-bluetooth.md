@@ -73,7 +73,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Specifies whether the device can send out Bluetooth advertisements.
+This policy specifies whether the device can send out Bluetooth advertisements.
 
 If this is not set or it is deleted, the default value of 1 (Allow) is used.
 
@@ -118,7 +118,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Specifies whether other Bluetooth-enabled devices can discover the device.
+This policy specifies whether other Bluetooth-enabled devices can discover the device.
 
 If this is not set or it is deleted, the default value of 1 (Allow) is used.
 
@@ -163,7 +163,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Specifies whether to allow specific bundled Bluetooth peripherals to automatically pair with the host device.
+This policy specifies whether to allow specific bundled Bluetooth peripherals to automatically pair with the host device.
 
 <!--/Description-->
 <!--SupportedValues-->

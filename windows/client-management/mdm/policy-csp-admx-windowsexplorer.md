@@ -330,7 +330,6 @@ Enabling this policy will also turn off the preview pane and set the folder opti
 
 If you disable or not configure this policy, the default File Explorer behavior is applied to the user.
 
-
 <!--/Description-->
 
 
@@ -379,7 +378,6 @@ If you disable or do not configure this setting, the default behavior of not dis
 
 <!--/Description-->
 
-
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP Friendly name: *Display confirmation dialog when deleting files*
@@ -426,7 +424,6 @@ If you disable or do not configure this policy setting, no changes are made to t
 
 <!--/Description-->
 
-
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP Friendly name: *Location where all default Library definition files for users/machines reside.*
@@ -472,7 +469,6 @@ This behavior is consistent with Windows Vista's behavior in this scenario.
 This disables access to user-defined properties, and properties stored in NTFS secondary streams.
 
 <!--/Description-->
-
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -528,7 +524,6 @@ If you enable this policy, Windows Libraries features that rely on indexed file 
 If you disable or do not configure this policy, all default Windows Libraries features will be enabled.
 
 <!--/Description-->
-
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -669,9 +664,8 @@ ADMX Info:
 <!--Description-->
 This policy setting determines whether remote paths can be used for file shortcut (.lnk file) icons.
 
-If you enable this policy setting, file shortcut icons are allowed to be obtained from remote paths.
-
-If you disable or do not configure this policy setting, file shortcut icons that use remote paths are prevented from being displayed.
+- If you enable this policy setting, file shortcut icons are allowed to be obtained from remote paths.
+- If you disable or do not configure this policy setting, file shortcut icons that use remote paths are prevented from being displayed.
 
 > [!NOTE]
 > Allowing the use of remote paths in file shortcut icons can expose users’ computers to security risks.
@@ -869,9 +863,8 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to turn off the display of snippets in Content view mode.
 
-If you enable this policy setting, File Explorer will not display snippets in Content view mode.
-
-If you disable or do not configure this policy setting, File Explorer shows snippets in Content view mode by default.
+- If you enable this policy setting, File Explorer will not display snippets in Content view mode.
+- If you disable or do not configure this policy setting, File Explorer shows snippets in Content view mode by default.
 
 <!--/Description-->
 
@@ -916,9 +909,8 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to manage whether a user may preview an item from this zone or display custom thumbnails in the preview pane in File Explorer. While this policy setting usually applies to items returned by OpenSearch queries using Search Connectors (which allow rich searching of remote sources from within the File Explorer), it might affect other items as well that are marked from this zone. For example, some application-specific items such as MAPI (Messaging Application Programming Interface) items that are returned as search results in File Explorer will be affected. MAPI items reside in the Internet zone, so disabling this policy for the Internet zone will prevent the previewing of these items in File Explorer. For the case of custom thumbnails, it is the zone of the thumbnail that is checked, not the zone of item. Typically these are the same but a source is able to define a specific location of a thumbnail that is different than the location of the item.
 
-If you enable this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
-
-If you disable this policy setting, users will be prevented from previewing items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+- If you enable this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+- If you disable this policy setting, users will be prevented from previewing items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
 
 If you do not configure this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
 
@@ -967,9 +959,8 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to manage whether a user may preview an item from this zone or display custom thumbnails in the preview pane in File Explorer. While this policy setting usually applies to items returned by OpenSearch queries using Search Connectors (which allow rich searching of remote sources from within the File Explorer), it might affect other items as well that are marked from this zone. For example, some application-specific items such as MAPI (Messaging Application Programming Interface) items that are returned as search results in File Explorer will be affected. MAPI items reside in the Internet zone, so disabling this policy for the Internet zone will prevent the previewing of these items in File Explorer. For the case of custom thumbnails, it is the zone of the thumbnail that is checked, not the zone of item. Typically these are the same but a source is able to define a specific location of a thumbnail that is different than the location of the item.
 
-If you enable this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
-
-If you disable this policy setting, users will be prevented from previewing items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+- If you enable this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+- If you disable this policy setting, users will be prevented from previewing items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
 
 If you do not configure this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
 
@@ -2399,12 +2390,9 @@ If you disable this setting or do not configure it, the "File name" field includ
 
 This setting, and others in this folder, lets you remove new features added in Windows 2000 Professional, so that the Open dialog box looks like it did in Windows NT 4.0 and earlier. These policies only affect programs that use the standard Open dialog box provided to developers of Windows programs.
 
-To see an example of the standard Open dialog box, start WordPad and, on the File menu, click Open.
-
-
+To see an example of the standard Open dialog box, start WordPad and, on the **File** menu, click **Open**.
 
 <!--/Description-->
-
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -2628,9 +2616,8 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to remove the Shared Documents folder from My Computer. When a Windows client is in a workgroup, a Shared Documents icon appears in the File Explorer Web view under "Other Places" and also under "Files Stored on This Computer" in My Computer. Using this policy setting, you can choose not to have these items displayed.
 
-If you enable this policy setting, the Shared Documents folder is not displayed in the Web view or in My Computer.
-
-If you disable or do not configure this policy setting, the Shared Documents folder is displayed in Web view and also in My Computer when the client is part of a workgroup.
+- If you enable this policy setting, the Shared Documents folder is not displayed in the Web view or in My Computer.
+- If you disable or do not configure this policy setting, the Shared Documents folder is displayed in Web view and also in My Computer when the client is part of a workgroup.
 
 
 <!--/Description-->
@@ -2674,7 +2661,7 @@ ADMX Info:
 <!--Description-->
 Prevents users from using File Explorer or Network Locations to map or disconnect network drives.
 
-If you enable this setting, the system removes the Map Network Drive and Disconnect Network Drive commands from the toolbar and Tools menus in File Explorer and Network Locations and from menus that appear when you right-click the File Explorer or Network Locations icons.
+If you enable this setting, the system removes the Map Network Drive and Disconnect Network Drive commands from the toolbar and Tools menus in File Explorer and Network Locations and from menus that appear when you right-click the **File Explorer** or **Network Locations** icons.
 
 This setting does not prevent users from connecting to another computer by typing the name of a shared folder in the Run dialog box.
 
@@ -2769,7 +2756,7 @@ ADMX Info:
 <!--Description-->
 Removes the shortcut bar from the Open dialog box. This setting, and others in this folder, lets you remove new features added in Windows 2000 Professional, so that the Open dialog box looks like it did in Windows NT 4.0 and earlier. These policies only affect programs that use the standard Open dialog box provided to developers of Windows programs.
 
-To see an example of the standard Open dialog box, start WordPad and, on the File menu, click Open.
+To see an example of the standard Open dialog box, start WordPad and, on the **File** menu, click **Open**.
 
 <!--/Description-->
 
@@ -3297,7 +3284,7 @@ The valid items you may display in the Places Bar are:
 
 The list of Common Shell Folders that may be specified:
 
-Desktop, Recent Places, Documents, Pictures, Music, Recently Changed, Attachments and Saved Searches.
+Desktop, Recent Places, Documents, Pictures, Music, Recently Changed, Attachments, and Saved Searches.
 
 If you disable or do not configure this setting the default list of items will be displayed in the Places Bar.
 
@@ -3700,7 +3687,7 @@ If you disable or do not configure this policy setting, no custom Internet searc
 
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:  ]
 -   GP Friendly name: *Pin Internet search sites to the "Search again" links and the Start menu*
 -   GP name: *TryHarderPinnedOpenSearch*
 -   GP path: *Windows Components\File Explorer*

@@ -100,7 +100,6 @@ manager: dansimp
 This policy setting controls whether the system can archive infrequently used apps.
 
 - If you enable this policy setting, then the system will periodically check for and archive infrequently used apps.
-
 - If you disable this policy setting, then the system will not archive any apps.
 
 If you do not configure this policy setting (default), then the system will follow default behavior, which is to periodically check for and archive infrequently used apps, and the user will be able to configure this setting themselves.

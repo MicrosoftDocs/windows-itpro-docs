@@ -102,7 +102,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Allows the user to enable Bluetooth or restrict access.
+This policy allows the user to enable Bluetooth or restrict access.
 
 > [!NOTE]
 >  This value is not supported in Windows 10.
@@ -151,7 +151,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Allows the cellular data channel on the device. Device reboot is not required to enforce the policy.
+This policy allows the cellular data channel on the device. Device reboot is not required to enforce the policy.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -258,7 +258,7 @@ To validate on devices, do the following:
 > [!NOTE]
 > This policy requires reboot to take effect.
 
-Allows IT Admins the ability to disable the Connected Devices Platform (CDP) component. CDP enables discovery and connection to other devices (either proximally with BT/LAN or through the cloud) to support remote app launching, remote messaging, remote app sessions, and other cross-device experiences.
+This policy allows IT Admins the ability to disable the Connected Devices Platform (CDP) component. CDP enables discovery and connection to other devices (either proximally with BT/LAN or through the cloud) to support remote app launching, remote messaging, remote app sessions, and other cross-device experiences.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -301,7 +301,10 @@ The following list shows the supported values:
 <!--Description-->
 This policy allows IT admins to turn off the ability to Link a Phone with a PC to continue tasks, such as reading, email, and other tasks that require linking between Phone and PC.
 
-If you enable this policy setting, the Windows device will be able to enroll in Phone-PC linking functionality and participate in 'Continue on PC experiences'. If you disable this policy setting, the Windows device is not allowed to be linked to phones, will remove itself from the device list of any linked Phones, and cannot participate in 'Continue on PC experiences'.
+If you enable this policy setting, the Windows device will be able to enroll in Phone-PC linking functionality and participate in 'Continue on PC experiences'. 
+
+If you disable this policy setting, the Windows device is not allowed to be linked to phones, will remove itself from the device list of any linked Phones, and cannot participate in 'Continue on PC experiences'.
+
 If you do not configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
 
 <!--/Description-->
@@ -448,7 +451,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Prevents the device from connecting to VPN when the device roams over cellular networks.
+This policy prevents the device from connecting to VPN when the device roams over cellular networks.
 
 Most restricted value is 0.
 
@@ -739,7 +742,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Determines whether a user can install and configure the Network Bridge.
+This policy determines whether a user can install and configure the Network Bridge.
 
 Important: This settings is location aware. It only applies when a computer is connected to the same DNS domain network it was connected to when the setting was refreshed on that computer. If a computer is connected to a DNS domain network other than the one it was connected to when the setting was refreshed, this setting does not apply.
 

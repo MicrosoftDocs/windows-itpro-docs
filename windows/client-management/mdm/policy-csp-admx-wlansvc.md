@@ -73,7 +73,7 @@ If this policy setting is enabled, a drop-down list box presenting possible cost
 
 - Unrestricted: Use of this connection is unlimited and not restricted by usage charges and capacity constraints.
 - Fixed: Use of this connection is not restricted by usage charges and capacity constraints up to a certain data limit.  
-- Variable: This connection is costed on a per byte basis.  If this policy setting is disabled or is not configured, the cost of Wireless LAN connections is Unrestricted by default.
+- Variable: This connection is costed on a per byte basis. If this policy setting is disabled or is not configured, the cost of Wireless LAN connections is Unrestricted by default.
 
 <!--/Description-->
 
