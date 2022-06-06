@@ -2,13 +2,9 @@
 title: Windows Defender Firewall with Advanced Security Administration with Windows PowerShell (Windows)
 description: Windows Defender Firewall with Advanced Security Administration with Windows PowerShell
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021
