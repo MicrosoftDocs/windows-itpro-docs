@@ -14,7 +14,7 @@ ms.collection: highpri
 
 # Use Quick Assist to help users
 
-Quick Assist is a Windows application that enables a person to share their device with another person over a remote connection. Your support staff can use it to remotely connect to a user's device and then view its display, make annotations, or take full control. In this way, they can troubleshoot, diagnose technological issues, and provide instructions to users directly on their devices.
+Quick Assist is a Microsoft Store application that enables a person to share their device with another person over a remote connection. Your support staff can use it to remotely connect to a user's device and then view its display, make annotations, or take full control. In this way, they can troubleshoot, diagnose technological issues, and provide instructions to users directly on their devices.
 
 ## Before you begin
 
@@ -42,7 +42,6 @@ Both the helper and sharer must be able to reach these endpoints over port 443:
 | `*.api.support.microsoft.com` | API access for Quick Assist |
 | `*.vortex.data.microsoft.com` | Used for diagnostic data |
 | `*.channelservices.microsoft.com` | Required for chat services within Quick Assist |
-| `*.skype.com` | Skype requests may vary based on geography. If connection issues persist, test this endpoint. |
 | `*.remoteassistanceprodacs.communication.azure.com` | Azure Communication Services (ACS) technology the Quick Assist app uses. |
 | `*.turn.azure.com` | Protocol used to help endpoint. |
 | `browser.pipe.aria.microsoft.com` | Required diagnostic data for client and services used by Quick Assist. |
@@ -105,23 +104,7 @@ Either the support staff or a user can start a Quick Assist session.
 
 ## If Quick Assist is missing
 
-If for some reason a user doesn't have Quick Assist on their system or it's not working properly, try to uninstall and reinstall it.
-
-### Uninstall Quick Assist
-
-1. Start the Settings app, and then select **Apps**.
-2. Select **Optional features**.
-3. In the **Installed features** search bar, type *Quick Assist*.
-4. Select **Microsoft Quick Assist**, and then select **Uninstall**.
-
-### Reinstall Quick Assist
-
-1. Start the Settings app, and then select **Apps**.
-2. Select **Optional features**.
-3. Select **Add a feature**.
-4. In the new dialog that opens, in the **Add an optional feature** search bar, type *Quick Assist*.
-5. Select the check box for **Microsoft Quick Assist**, and then select **Install**.
-6. Restart the device.
+If for some reason a user doesn't have Quick Assist on their system or it's not working properly, try to uninstall and reinstall it. For more information, see [Install Quick Assist](https://support.microsoft.com/windows/install-quick-assist-c17479b7-a49d-4d12-938c-dbfb97c88bca).
 
 ## Next steps
 

@@ -1,17 +1,12 @@
 ---
 title: Designing a Windows Defender Firewall Strategy (Windows)
 description: Answer the question in this article to design an effective Windows Defender Firewall with Advanced Security Strategy.
-ms.assetid: 6d98b184-33d6-43a5-9418-4f24905cfd71
 ms.reviewer: 
 ms.author: dansimp
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/07/2021
