@@ -45,7 +45,6 @@ PXLOGICAL
 -------TO-NAPID
 ```
 
-
 The following shows the PXLOGICAL configuration service provider management object in tree format as used by OMA Client Provisioning for updating the bootstrapping of the device. The OMA DM protocol is not supported by this configuration service provider.
 
 ```console
@@ -125,7 +124,7 @@ The element's mwid attribute is a Microsoft provisioning XML attribute, and is o
 <a href="" id="physical-proxy-id"></a>**PHYSICAL-PROXY-ID**  
 Used during initial bootstrapping. Specifies the identifier of the physical proxy.
 
-When a list of proxies is displayed to the user they are displayed together in a single line, so the length of this value should be short for readability.
+When a list of proxies is displayed to the user they are displayed together in a single line, hence, the length of this value should be short for readability.
 
 <a href="" id="physical-proxy-id"></a>***PHYSICAL-PROXY-ID***  
 Used during bootstrapping updates. Specifies the identifier of the physical proxy.

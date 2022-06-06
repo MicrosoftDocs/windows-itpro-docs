@@ -15,7 +15,7 @@ ms.date: 09/21/2021
 # VPNv2 CSP
 
 
-The VPNv2 configuration service provider allows the mobile device management (MDM) server to configure the VPN profile of the device.
+The VPNv2 configuration service provider allows the Mobile Device Management (MDM) server to configure the VPN profile of the device.
 
 Here are the requirements for this CSP:
 
@@ -355,7 +355,7 @@ Optional node. List of routes to be added to the routing table for the VPN inter
 
 Every computer that runs TCP/IP makes routing decisions. These decisions are controlled by the IP routing table. Adding values under this node updates the routing table with routes for the VPN interface post connection. The values under this node represent the destination prefix of IP routes. A destination prefix consists of an IP address prefix and a prefix length.
 
-Adding a route here allows the networking stack to identify the traffic that needs to go over the VPN interface for split tunnel VPN. Some VPN servers can configure this during connect negotiation and do not need this information in the VPN Profile. Please check with your VPN server administrator to determine whether you need this information in the VPN profile.
+Adding a route here allows the networking stack to identify the traffic that needs to go over the VPN interface for split tunnel VPN. Some VPN servers can configure this during connect negotiation and do not need this information in the VPN Profile. Check with your VPN server administrator to determine whether you need this information in the VPN profile.
 
 <a href="" id="vpnv2-profilename-routelist-routerowid"></a>**VPNv2/**<em>ProfileName</em>**/RouteList/**<em>routeRowId</em>  
 A sequential integer identifier for the RouteList. This is required if you are adding routes. Sequencing must start at 0.
@@ -652,7 +652,7 @@ Reserved for future use.
 Added in Windows 10, version 1607. Nodes under DeviceCompliance can be used to enable AAD-based Conditional Access for VPN.
 
 <a href="" id="vpnv2-profilename-devicecompliance-enabled"></a>**VPNv2/**<em>ProfileName</em>**/DeviceCompliance/Enabled**  
-Added in Windows 10, version 1607. Enables the Device Compliance flow from the client. If marked as True, the VPN Client will attempt to communicate with AAD to get a certificate to use for authentication. The VPN should be set up to use Certificate Auth and the VPN Server must trust the Server returned by Azure Active Directory.
+Added in Windows 10, version 1607. Enables the Device Compliance flow from the client. If marked as True, the VPN Client will attempt to communicate with AAD to get a certificate to use for authentication. The VPN should be set up to use Certificate Auth and the VPN Server must trust the Server returned by Azure Active Directory (AAD).
 
 Value type is bool. Supported operations include Get, Add, Replace, and Delete.
 
