@@ -104,7 +104,6 @@ To do this in Group Policy, go to **Computer Configuration\Administrative Templa
 
 To do this with MDM, go to **.Vendor/MSFT/Policy/Config/DeliveryOptimization/** and set DOMaxCacheAge to 7 or more (up to 30 days).
 
-[//]: # (material about "preferred" devices; remove MinQos/MaxCacheAge; table format?)
 
 <!--Using include file, waas-delivery-optimization-monitor.md, for shared content on DO monitoring-->
 [!INCLUDE [Monitor Delivery Optimization](includes/waas-delivery-optimization-monitor.md)]

@@ -20,10 +20,11 @@ ms.custom: seo-marvel-apr2020
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 - Windows 11
 
-![DO status.](images/UC_workspace_DO_status.png)
+:::image type="content" alt-text="Screenshot of Delivery Optimization information in Update Compliance." source="images/UC_workspace_DO_status.png" lightbox="images/UC_workspace_DO_status.png":::
+
 The Update Compliance solution provides you with information about your Delivery Optimization configuration, including the observed bandwidth savings across all devices that used peer-to-peer distribution over the past 28 days.
 
 ## Delivery Optimization Status

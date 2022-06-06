@@ -14,8 +14,6 @@ ms.localizationpriority: medium
 
 ## Monitor Delivery Optimization
 
-[//]: # (How to tell if it's working? What values are reasonable; which are not? If not, which way to adjust and how? -- check PercentPeerCaching for files > minimum >= 50%)
-
 ### Windows PowerShell cmdlets
 
 **Starting in Windows 10, version 1703**, you can use new PowerShell cmdlets to check the performance of Delivery Optimization.
@@ -162,7 +160,3 @@ Using the `-ListConnections` option returns these details about peers:
 If `Path` is not specified, this cmdlet reads all logs from the DoSvc log directory, which requires administrator permissions. If `Flush` is specified, the cmdlet stops DoSvc before reading logs.
 
 Log entries are written to the PowerShell pipeline as objects. To dump logs to a text file, run `Get-DeliveryOptimizationLog | Set-Content <output file>` or something similar.
-
-[//]: # (section on what to look for in logs, list of peers, connection failures)
-
-[//]: # (possibly move to Troubleshooting)
