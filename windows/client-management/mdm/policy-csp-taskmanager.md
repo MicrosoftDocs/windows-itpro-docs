@@ -37,6 +37,7 @@ The table below shows the applicability of Windows:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|

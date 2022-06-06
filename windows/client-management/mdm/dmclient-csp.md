@@ -20,6 +20,7 @@ The table below shows the applicability of Windows:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -50,6 +51,8 @@ DMClient
 ------------Unenroll
 ------------AADResourceID
 ------------AADDeviceID
+------------AADSendDeviceToken
+------------ForceAadToken
 ------------EnrollmentType
 ------------EnableOmaDmKeepAliveMessage
 ------------HWDevID
@@ -72,6 +75,21 @@ DMClient
 ----------------NumberOfRemainingScheduledRetries
 ----------------PollOnLogin
 ----------------AllUsersPollOnFirstLogin
+------------LinkedEnrollment
+----------------Priority
+----------------Enroll
+----------------Unenroll
+----------------EnrollStatus
+----------------LastError
+------------Recovery
+----------------AllowRecovery
+----------------RecoveryStatus
+----------------InitiateRecovery
+------------MultipleSession
+----------------NumAllowedConcurrentUserSessionForBackgroundSync
+----------------NumAllowedConcurrentUserSessionAtUserLogonSync
+----------------IntervalForScheduledRetriesForUserSession
+----------------NumberOfScheduledRetriesForUserSession
 ----Unenroll
 ----UpdateManagementServiceAddress
 ```
@@ -325,6 +343,11 @@ Supported operations are Add, Delete, Get, and Replace.
 
 Value type is bool.
 
+<a href="" id="provider-providerid-forceaadtoken"></a>**Provider/*ProviderID*/ForceAadToken**
+The value type is integer/enum.
+
+The value is "1" and it means client should always send AAD device token during check-in/sync.
+
 <a href="" id="provider-providerid-poll"></a>**Provider/*ProviderID*/Poll**  
 Optional. Polling schedules must use the DMClient CSP. The Registry paths previously associated with polling using the Registry CSP are now deprecated.
 
@@ -442,6 +465,113 @@ Supported operations are Add, Get, and Replace.
 Optional. Boolean value that allows the IT admin to require the device to start a management session on first user login for all NT users. A session is only kicked off the first time a user logs in to the system. Later sign-ins won't trigger an MDM session. Login isn't the same as device unlock. Default value is false, where polling is disabled on first login. Supported values are true or false.
 
 Supported operations are Add, Get, and Replace.
+
+<a href="" id="provider-providerid-linkedenrollment-priority"></a>**Provider/*ProviderID*/LinkedEnrollment/Priority**
+This node is an integer, value is "0" or "1".
+
+Default is 1, meaning the MDM enrollment is the “winning” authority for conflicting policies/resources. Value 1 means MMP-C enrollment is the “winning” one.
+Support operations are Get and Set.
+
+<a href="" id="provider-providerid-linkedenrollment-enroll"></a>**Provider/*ProviderID*/LinkedEnrollment/Enroll**
+This is an execution node and will trigger a silent MMP-C enrollment, using the AAD device token pulled from the AADJ’ed device. There is no user interaction needed.
+
+Support operation is Exec.
+
+<a href="" id="provider-providerid-linkedenrollment-unenroll"></a>**Provider/*ProviderID*/LinkedEnrollment/Unenroll**
+This is an execution node and will trigger a silent MMP-C unenroll, there is no user interaction needed. On un-enrollment, all the settings/resources set by MMPC will be rolled back(rollback details will be covered later).
+
+Support operation is Exec.
+
+<a href="" id="provider-providerid-linkedenrollment-enrollstatus"></a>**Provider/*ProviderID*/LinkedEnrollment/EnrollStatus**
+
+This node can be used to check both enroll and unenroll statuses.
+This will return the enroll action status and is defined as a enum class LinkedEnrollmentStatus. The values are aas follows:
+
+- Undefined = 0
+- EnrollmentNotStarted = 1
+- InProgress = 2
+- Failed = 3
+- Succeeded = 4
+- UnEnrollmentQueued = 5
+- UnEnrollmentSucceeded = 8
+
+Support operation is Get only.
+
+<a href="" id="provider-providerid-linkedenrollment-lasterror"></a>**Provider/*ProviderID*/LinkedEnrollment/LastError**
+
+This specifies the Hresult to report the enrollment/unenroll results.
+
+<a href="" id="provider-providerid-recovery-allowrecovery"></a>**Provider/*ProviderID*/Recovery/AllowRecovery**
+
+This node determines whether or not the client will automatically initiate a MDM Recovery operation when it detects issues with the MDM certificate.
+
+Supported operations are Get, Add, Replace and Delete.
+
+The supported values for this node are 1-true (allow) and 0-false(not allow). Default value is 0.
+
+<a href="" id="provider-providerid-recovery-recoverystatus"></a>**Provider/*ProviderID*/Recovery/RecoveryStatus**
+
+This node tracks the status of a Recovery request from the InitiateRecovery node. The values are as follows:
+
+0 - No Recovery request has been processed.  
+1 - Recovery is in Process.  
+2 - Recovery has finished successfully.  
+3 - Recovery has failed to start because TPM is not available.  
+4 - Recovery has failed to start because AAD keys are not protected by the TPM.  
+5 - Recovery has failed to start because the MDM keys are already protected by the TPM.  
+6 - Recovery has failed to start because the TPM is not ready for attestation.  
+7 - Recovery has failed because the client cannot authenticate to the server.  
+8 - Recovery has failed because the server has rejected the client's request.
+
+Supported operation is Get only.
+
+<a href="" id="provider-providerid-recovery-initiaterecovery"></a>**Provider/*ProviderID*/Recovery/InitiateRecovery**
+
+This node initiates an MDM Recovery operation on the client.  
+
+If initiated with argument 0, it triggers MDM Recovery, no matter the state of the device.
+
+If initiated with argument 1, it triggers only if the MDM certificate’s private key isn’t already protected by the TPM, if there is a TPM to put the private key into, and if the TPM is ready for attestation. 
+
+Supported operation is Exec only.
+
+<a href="" id="provider-providerid-multiplesession-numallowedconcurrentusersessionforbackgroundsync"></a>**Provider/*ProviderID*/MultipleSession/NumAllowedConcurrentUserSessionForBackgroundSync**
+
+Optional. This node specifies maximum number of concurrent user sync sessions in background. Default value is 25.
+
+The values are : 0= none, 1= sequential, anything else=  parallel.
+
+Supported operations are Get, Add, Replace and Delete.
+
+Value type is integer. Only applicable for Windows 10 multi-session.
+
+
+<a href="" id="provider-providerid-multiplesession-numallowedconcurrentusersessionatuserlogonsync"></a>**Provider/*ProviderID*/MultipleSession/NumAllowedConcurrentUserSessionAtUserLogonSync**
+Optional. This node specifies maximum number of concurrent user sync sessions at User Login. Default value is 25.
+
+The values are : 0= none, 1= sequential, anything else= parallel.
+
+Supported operations are Get, Add, Replace and Delete. 
+
+Value type is integer. Only applicable for Windows 10 multi-session. 
+
+<a href="" id="provider-providerid-multiplesession-intervalforscheduledretriesforusersession"></a>**Provider/*ProviderID*/MultipleSession/IntervalForScheduledRetriesForUserSession**
+Optional. This node specifies the waiting time (in minutes) for the initial set of retries as specified by the number of retries in `/<ProviderID>/Poll/NumberOfScheduledRetriesForUserSession`. 
+
+If IntervalForScheduledRetriesForUserSession is not set, then the default value is used. The default value is 1440. If the value is set to 0, this schedule is disabled.
+
+This configuration is only applicable for Windows Multi-session Editions.
+
+Supported operations are Get and Replace.
+
+<a href="" id="provider-providerid-multiplesession-numberofscheduledretriesforusersession"></a>**Provider/*ProviderID*/MultipleSession/NumberOfScheduledRetriesForUserSession**
+Optional. This node specifies the number of times the DM client should retry to connect to the server when the client is initially configured or enrolled to communicate with the server. 
+
+If the value is set to 0 and the IntervalForScheduledRetriesForUserSession value is not 0, then the schedule will be set to repeat an infinite number of times. 
+
+The default value is 0. This configuration is only applicable for Windows Multi-session Editions.
+
+Supported operations are Get and Replace.
 
 <a href="" id="provider-providerid-configlock"></a>**Provider/*ProviderID*/ConfigLock**
 
