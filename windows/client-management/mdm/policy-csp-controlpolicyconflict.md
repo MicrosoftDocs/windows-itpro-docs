@@ -32,12 +32,21 @@ manager: dansimp
 <!--Policy-->
 <a href="" id="controlpolicyconflict-mdmwinsovergp"></a>**ControlPolicyConflict/MDMWinsOverGP**  
 
+> [!NOTE]
+> This setting doesn't apply to the following types of group policies:
+>
+> - If they don't map to an MDM policy. For example, firewall policies and account lockout policies.
+> - If they aren't defined by an ADMX. For example, Password policy - minimum password age.
+> - If they're in the Windows Update category.
+> - If they have list entries. For example, the Microsoft Edge CookiesAllowedForUrls policy.
+
 <!--SupportedSKUs-->
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -75,7 +84,7 @@ The following list shows the supported values:
 The policy should be set at every sync to ensure the device removes any settings that conflict with MDM just as it does on the very first set of the policy. 
 This ensures that:
 
--  GP settings that correspond to MDM applied settings are not conflicting 
+-  GP settings that correspond to MDM applied settings aren't conflicting 
 -  The current Policy Manager policies are refreshed from what MDM has set 
 -  Any values set by scripts/user outside of GP that conflict with MDM are removed
 

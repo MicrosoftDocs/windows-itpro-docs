@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Education
-description: Learn how to use the Policy CSP - Education setting to control graphing functionality in the Windows Calculator app. 
+description: Learn how to use the Policy CSP - Education setting to control the graphing functionality in the Windows Calculator app. 
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -47,6 +47,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -65,7 +66,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to control whether graphing functionality is available in the Windows Calculator app. If you disable this policy setting, graphing functionality will not be accessible in the Windows Calculator app. If you enable or don't configure this policy setting, you will be able to access graphing functionality.
+This policy setting allows you to control whether graphing functionality is available in the Windows Calculator app. If you disable this policy setting, graphing functionality won't be accessible in the Windows Calculator app. If you enable or don't configure this policy setting, you'll be able to access graphing functionality.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -93,6 +94,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -129,6 +131,7 @@ The policy value is expected to be the name (network host name) of an installed 
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -147,7 +150,7 @@ The policy value is expected to be the name (network host name) of an installed 
 
 <!--/Scope-->
 <!--Description-->
-Allows IT Admins to prevent user installation of additional printers from the printers settings.
+Allows IT Admins to prevent user installation of more printers from the printers settings.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -178,6 +181,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|

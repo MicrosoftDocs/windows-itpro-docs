@@ -8,8 +8,8 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection:
   - M365-identity-device-management

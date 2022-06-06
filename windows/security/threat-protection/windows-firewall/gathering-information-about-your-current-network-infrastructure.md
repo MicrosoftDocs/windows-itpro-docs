@@ -1,17 +1,12 @@
 ---
 title: Gathering Info about Your Network Infrastructure (Windows)
 description: Learn how to gather info about your network infrastructure so that you can effectively plan for Windows Defender Firewall with Advanced Security deployment.
-ms.assetid: f98d2b17-e71d-4ffc-b076-118b4d4782f9
 ms.reviewer: 
 ms.author: dansimp
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021
@@ -70,7 +65,7 @@ Other examples of incompatibility include:
 
 -   Network monitoring tools might be unable to parse ESP packets that are not encrypted (ESP-Null).
 
-    >**Note:**  Microsoft Message Analyzer can help in troubleshooting of unencrypted IPsec packets. The latest version of Message Analyzer is available on the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=44226).
+    >**Note:**  Microsoft Message Analyzer can help in troubleshooting of unencrypted IPsec packets. The latest version of Message Analyzer is available on the [Microsoft Download Center](/message-analyzer/microsoft-message-analyzer-operating-guide).
      
 ## Network address translation (NAT)
 

@@ -3,12 +3,12 @@ title: Recognized Environment Variables (Windows 10)
 description: Learn how to use environment variables to identify folders that may be different on different computers.
 ms.assetid: 2b0ac412-e131-456e-8f0c-c26249b5f3df
 manager: dougeby
-ms.author: greglin
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.date: 04/19/2017
 ms.topic: article
 ms.collection: highpri
@@ -86,8 +86,9 @@ You can use these variables within sections in the .xml files with `context=User
 |**SYSTEM**|Refers to %**WINDIR**%\system32.|
 |**SYSTEM16**|Refers to %**WINDIR**%\system.|
 |**SYSTEM32**|Refers to %**WINDIR**%\system32.|
+|**SYSTEMDRIVE**|The drive that holds the Windows folder. Note that this is a drive name and not a folder name (`C:` not `C:\`).|
 |**SYSTEMPROFILE**|Refers to the value in **HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList\S-1-5-18 [ProfileImagePath]**.|
-|**SYSTEMROOT**|Refers to the root of the system drive.|
+|**SYSTEMROOT**|Same as **WINDIR**.|
 |**WINDIR**|Refers to the Windows folder located on the system drive.|
 
 ## <a href="" id="bkmk-2"></a>Variables that are recognized only in the user context

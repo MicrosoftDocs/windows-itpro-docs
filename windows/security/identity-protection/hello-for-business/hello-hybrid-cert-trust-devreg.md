@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -19,12 +19,13 @@ ms.reviewer:
 # Configure Device Registration for Hybrid Azure AD joined Windows Hello for Business
 
 **Applies to**
--  Windows 10, version 1703 or later
--  Windows 11
--  Hybrid deployment
--  Certificate trust
 
-Your environment is federated and you are ready to configure device registration for your hybrid environment. Hybrid Windows Hello for Business deployment needs device registration and device write-back to enable proper device authentication.  
+- Windows 10, version 1703 or later
+- Windows 11
+- Hybrid deployment
+- Certificate trust
+
+Your environment is federated and you're ready to configure device registration for your hybrid environment. Hybrid Windows Hello for Business deployment needs device registration and device write-back to enable proper device authentication.  
 
 > [!IMPORTANT]
 > If your environment is not federated, review the [New Installation baseline](hello-hybrid-cert-new-install.md) section of this deployment document to learn how to federate your environment for your Windows Hello for Business deployment. 
@@ -34,7 +35,7 @@ Your environment is federated and you are ready to configure device registration
 
 Use this three-phased approach for configuring device registration.
 
-1. [Configure devices to register in Azure](#configure-azure-for-device-registration)
+1. [Configure devices to register in Azure](#configure-hybrid-azure-ad-join)
 2. [Synchronize devices to on-premises Active Directory](#configure-active-directory-to-support-azure-device-synchronization)
 3. [Configure AD FS to use cloud devices](#configure-ad-fs-to-use-azure-registered-devices)
 
@@ -50,11 +51,21 @@ Use this three-phased approach for configuring device registration.
 >[!IMPORTANT]
 > To use hybrid identity with Azure Active Directory and device WriteBack features, you must use the built-in GUI with the [latest updates for ADConnect](https://www.microsoft.com/download/details.aspx?id=47594).
 
-## Configure Azure for Device Registration
+## Configure Hybrid Azure AD join
 
-Begin configuring device registration to support Hybrid Windows Hello for Business by configuring device registration capabilities in Azure AD.
+To support hybrid Windows Hello for Business, configure hybrid Azure AD join.
 
-To do this, follow the **Configure device settings** steps under [Setting up Azure AD Join in your organization](/azure/active-directory/devices/device-management-azure-portal)  
+Follow the guidance on [How to configure hybrid Azure Active Directory joined devices](/azure/active-directory/devices/hybrid-azuread-join-plan) page. In the **Select your scenario based on your identity infrastructure** section, identify your configuration (either **Managed environment** or **Federated environment**) and perform only the steps applicable to your environment.
+
+If the user principal name (UPN) in your on-premises Active Directory is different from the UPN in Azure AD, you also need to complete the following steps:
+
+- Configure Azure AD Connect to sync the user's on-premises UPN to the `onPremisesUserPrincipalName attribute` in Azure AD.
+- Add the domain name of the on-premises UPN as a [verified domain](/azure/active-directory/fundamentals/add-custom-domain) in Azure AD. 
+
+You can learn more about this scenario by reading [Review on-premises UPN support for Hybrid Azure Ad join](/azure/active-directory/devices/hybrid-azuread-join-plan#review-on-premises-ad-users-upn-support-for-hybrid-azure-ad-join).
+
+> [!NOTE]
+> Windows Hello for Business Hybrid key trust is not supported, if your users' on-premises domain cannot be added as a verified domain in Azure AD.
 
 ## Configure Active Directory to support Azure device synchronization
 
@@ -89,14 +100,14 @@ Sign-in to the domain controller hosting the schema master operational role usin
 2. Type ```cd /d x:\support\adprep``` where *x* is the drive letter of the DVD or mounted ISO.
 3. To update the schema, type ```adprep /forestprep```.
 4. Read the Adprep Warning.  Type the letter **C*** and press **Enter** to update the schema.
-5. Close the Command Prompt and sign-out.
+5. Close the Command Prompt and sign out.
 
 > [!NOTE]
 > If you installed Azure AD Connect prior to upgrading the schema, you will need to re-run the Azure AD Connect installation and refresh the on-premises AD schema to ensure the synchronization rule for msDS-KeyCredentialLink is configured.
 
 ### Setup Active Directory Federation Services
 
-If you are new to AD FS and federation services, you should review [Understanding Key AD FS Concepts](/windows-server/identity/ad-fs/technical-reference/understanding-key-ad-fs-concepts) to prior to designing and deploying your federation service.
+If you're new to AD FS and federation services, you should review [Understanding Key AD FS Concepts](/windows-server/identity/ad-fs/technical-reference/understanding-key-ad-fs-concepts) to prior to designing and deploying your federation service.
 Review the [AD FS Design guide](/windows-server/identity/ad-fs/design/ad-fs-design-guide-in-windows-server-2012-r2) to plan your federation service.
 
 Once you have your AD FS design ready, review [Deploying a Federation Server farm](/windows-server/identity/ad-fs/deployment/deploying-a-federation-server-farm) to configure AD FS in your environment.
@@ -114,11 +125,11 @@ Use the [Setting of a Federation Proxy](/windows-server/identity/ad-fs/deploymen
 
 Next, you need to synchronize the on-premises Active Directory with Azure Active Directory.  To do this, first review the [Integrating on-prem directories with Azure Active Directory](/azure/active-directory/connect/active-directory-aadconnect) and [hardware and prerequisites](/azure/active-directory/connect/active-directory-aadconnect-prerequisites) needed and then [download the software](https://go.microsoft.com/fwlink/?LinkId=615771).
 
-When you are ready to install, follow the **Configuring federation with AD FS** section of [Custom installation of Azure AD Connect](/azure/active-directory/connect/active-directory-aadconnect-get-started-custom).  Select the **Federation with AD FS** option on the **User sign-in** page.  At the **AD FS Farm** page, select the use an existing option and click **Next**.  
+When you're ready to install, follow the **Configuring federation with AD FS** section of [Custom installation of Azure AD Connect](/azure/active-directory/connect/active-directory-aadconnect-get-started-custom).  Select the **Federation with AD FS** option on the **User sign-in** page.  At the **AD FS Farm** page, select the use an existing option and click **Next**.  
 
 ### Create AD objects for AD FS Device Authentication
 
-If your AD FS farm is not already configured for Device Authentication (you can see this in the AD FS Management console under Service -> Device Registration), use the following steps to create the correct AD DS objects and configuration.
+If your AD FS farm isn't already configured for Device Authentication (you can see this in the AD FS Management console under Service -> Device Registration), use the following steps to create the correct AD DS objects and configuration.
 ![Device Registration: AD FS](images/hybridct/device1.png)
 
 > [!NOTE]
@@ -126,10 +137,10 @@ If your AD FS farm is not already configured for Device Authentication (you can 
 
 1. Run the **Add Roles & Features** wizard and select feature **Remote Server Administration Tools** -> **Role Administration Tools** -> **AD DS and AD LDS Tools** -> Choose both the **Active Directory module for Windows PowerShell** and the **AD DS Tools**.
     ![Device Registration: Overview](images/hybridct/device2.png)
-2. On your AD FS primary server, ensure you are logged in as AD DS user with enterprise administrator privileges and open an elevated Windows PowerShell prompt.  Then, run the following commands:  
+2. On your AD FS primary server, ensure you're logged in as AD DS user with enterprise administrator privileges and open an elevated Windows PowerShell prompt.  Then, run the following commands:  
    `Import-module activedirectory`  
    `PS C:\> Initialize-ADDeviceRegistration -ServiceAccountName "<your service account>"` 
-3. On the pop-up window click **Yes**.
+3. On the pop-up window, click **Yes**.
 
    > [!NOTE]
    > If your AD FS service is configured to use a GMSA account, enter the account name in the format "domain\accountname$"
@@ -142,7 +153,7 @@ If your AD FS farm is not already configured for Device Authentication (you can 
    - Device Registration Service DKM container and object under Configuration --> Services --> Device Registration Configuration  
 
    ![Device Registration: Tests](images/hybridct/device4.png) <br>
-4. Once this is done, you will see a successful completion message.
+4. Once this is done, you'll see a successful completion message.
 
    ![Device Registration: Completion](images/hybridct/device5.png) 
 
@@ -179,20 +190,20 @@ To ensure AD DS objects and containers are in the correct state for write back o
 
    Where the [AD connector account name] is the name of the account you configured in Azure AD Connect when adding your on-premises AD DS directory in domain\accountname format  
 
-The above command creates the following objects for device write back to AD DS, if they do not exist already, and allows access to the specified AD connector account name  
+The above command creates the following objects for device write back to AD DS, if they don't exist already, and allows access to the specified AD connector account name  
 
 - RegisteredDevices container in the AD domain partition  
 - Device Registration Service container and object under Configuration --> Services --> Device Registration Configuration  
 
 ### Enable Device Write Back in Azure AD Connect
 
-If you have not done so before, enable device write back in Azure AD Connect by running the wizard a second time and selecting **"Customize Synchronization Options"**, then checking the box for device write back and selecting the forest in which you have run the above cmdlets  
+If you haven't done so before, enable device write back in Azure AD Connect by running the wizard a second time and selecting **"Customize Synchronization Options"**, then checking the box for device write back and selecting the forest in which you have run the above cmdlets  
 
 ## Configure AD FS to use Azure registered devices
 
 ### Configure issuance of claims
 
-In a federated Azure AD configuration, devices rely on Active Directory Federation Services (AD FS) or a 3rd party on-premises federation service to authenticate to Azure AD. Devices authenticate to get an access token to register against the Azure Active Directory Device Registration Service (Azure DRS).
+In a federated Azure AD configuration, devices rely on Active Directory Federation Services (AD FS) or a third party on-premises federation service to authenticate to Azure AD. Devices authenticate to get an access token to register against the Azure Active Directory Device Registration Service (Azure DRS).
 
 Windows current devices authenticate using Integrated Windows Authentication to an active WS-Trust endpoint (either 1.3 or 2005 versions) hosted by the on-premises federation service.
 
@@ -210,17 +221,17 @@ When you're using AD FS, you need to enable the following WS-Trust endpoints:
 > [!NOTE]
 >If you don’t have AD FS as your on-premises federation service, follow the instructions from your vendor to make sure they support WS-Trust 1.3 or 2005 endpoints and that these are published through the Metadata Exchange file (MEX).
 
-The following claims must exist in the token received by Azure DRS for device registration to complete. Azure DRS will create a device object in Azure AD with some of this information which is then used by Azure AD Connect to associate the newly created device object with the computer account on-premises.
+The following claims must exist in the token received by Azure DRS for device registration to complete. Azure DRS will create a device object in Azure AD with some of this information that is then used by Azure AD Connect to associate the newly created device object with the computer account on-premises.
 
 - `http://schemas.microsoft.com/ws/2012/01/accounttype`
 - `http://schemas.microsoft.com/identity/claims/onpremobjectguid`
 - `http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid`
 
-If you have more than one verified domain name, you need to provide the following claim for computers:
+If you've more than one verified domain name, you need to provide the following claim for computers:
 
 - `http://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid`
 
-If you are already issuing an ImmutableID claim (e.g., alternate login ID) you need to provide one corresponding claim for computers:
+If you're already issuing an ImmutableID claim (for example, alternate sign in ID) you need to provide one corresponding claim for computers:
 
 - `http://schemas.microsoft.com/LiveID/Federation/2008/05/ImmutableID`
 
@@ -299,7 +310,7 @@ The definition helps you to verify whether the values are present or if you need
 
 #### Issue issuerID for computer when multiple verified domain names in Azure AD
 
-**`http://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid`** - This claim must contain the Uniform Resource Identifier (URI) of any of the verified domain names that connect with the on-premises federation service (AD FS or 3rd party) issuing the token. In AD FS, you can add issuance transform rules that look like the ones below in that specific order after the ones above. Please note that one rule to explicitly issue the rule for users is necessary. In the rules below, a first rule identifying user vs. computer authentication is added.
+**`http://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid`** - This claim must contain the Uniform Resource Identifier (URI) of any of the verified domain names that connect with the on-premises federation service (AD FS or third party) issuing the token. In AD FS, you can add issuance transform rules that look like the ones below in that specific order after the ones above. Note that one rule to explicitly issue the rule for users is necessary. In the rules below, a first rule identifying user vs. computer authentication is added.
 
 ```powershell
 
@@ -351,10 +362,10 @@ In the claim above,
 - `$<domain>` is the AD FS service URL
 - `<verified-domain-name>` is a placeholder you need to replace with one of your verified domain names in Azure AD
 
-For more details about verified domain names, see [Add a custom domain name to Azure Active Directory](/azure/active-directory/active-directory-add-domain).  
+For more information about verified domain names, see [Add a custom domain name to Azure Active Directory](/azure/active-directory/active-directory-add-domain).  
 To get a list of your verified company domains, you can use the [Get-MsolDomain](/powershell/module/msonline/get-msoldomain?view=azureadps-1.0&preserve-view=true) cmdlet.
 
-#### Issue ImmutableID for computer when one for users exist (e.g. alternate login ID is set)
+#### Issue ImmutableID for computer when one for users exist (for example, alternate login ID is set)
 
 **`http://schemas.microsoft.com/LiveID/Federation/2008/05/ImmutableID`** - This claim must contain a valid value for computers. In AD FS, you can create an issuance transform rule as follows:
 
@@ -507,16 +518,16 @@ The following script helps you with the creation of the issuance transform rules
 
 #### Remarks
 
-- This script appends the rules to the existing rules. Do not run the script twice because the set of rules would be added twice. Make sure that no corresponding rules exist for these claims (under the corresponding conditions) before running the script again.
+- This script appends the rules to the existing rules. Don't run the script twice because the set of rules would be added twice. Make sure that no corresponding rules exist for these claims (under the corresponding conditions) before running the script again.
 
-- If you have multiple verified domain names (as shown in the Azure AD portal or via the Get-MsolDomains cmdlet), set the value of **$multipleVerifiedDomainNames** in the script to **$true**. Also make sure that you remove any existing issuerid claim that might have been created by Azure AD Connect or via other means. Here is an example for this rule:
+- If you have multiple verified domain names (as shown in the Azure AD portal or via the Get-MsolDomains cmdlet), set the value of **$multipleVerifiedDomainNames** in the script to **$true**. Also make sure that you remove any existing issuerid claim that might have been created by Azure AD Connect or via other means. Here's an example for this rule:
 
   ```Claims Rule Language
     c:[Type == "http://schemas.xmlsoap.org/claims/UPN"]
     => issue(Type = "http://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid", Value = regexreplace(c.Value, ".+@(?<domain>.+)",  "http://${domain}/adfs/services/trust/")); 
   ```
 
-- If you have already issued an **ImmutableID** claim  for user accounts, set the value of **$immutableIDAlreadyIssuedforUsers** in the script to **$true**.
+- If you've already issued an **ImmutableID** claim  for user accounts, set the value of **$immutableIDAlreadyIssuedforUsers** in the script to **$true**.
 
 #### Configure Device Authentication in AD FS 
 

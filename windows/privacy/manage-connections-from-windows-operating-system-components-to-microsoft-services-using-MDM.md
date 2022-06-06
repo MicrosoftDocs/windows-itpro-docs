@@ -179,4 +179,4 @@ For Windows 10 and Windows 11, the following MDM policies are available in the [
 |settings-win.data.microsoft.com|
 |msedge.api.cdp.microsoft.com|
 |\*.dl.delivery.mp.microsoft.com|
-
+|edge.microsoft.com|

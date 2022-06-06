@@ -5,15 +5,10 @@ ms.reviewer:
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/20/2021
 ms.localizationpriority: medium
 ms.custom: 
-f1.keywords: NOCSH 
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 search.appverid: MET150 
 ms.collection: M365-security-compliance
 ms.prod: m365-security

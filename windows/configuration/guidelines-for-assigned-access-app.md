@@ -1,16 +1,13 @@
 ---
 title: Guidelines for choosing an app for assigned access (Windows 10/11)
 description: The following guidelines may help you choose an appropriate Windows app for your assigned access experience.
-keywords: ["kiosk", "lockdown", "assigned access"]
 ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.topic: article
 ms.reviewer: sybruckm
-manager: dansimp
+manager: dougeby
 ms.collection: highpri
 ---
 
@@ -46,7 +43,9 @@ Avoid selecting Windows apps that are designed to launch other apps as part of t
 
 ## Guidelines for web browsers
 
-Starting with Windows 10 version 1809+, Microsoft Edge includes support for kiosk mode. [Learn how to deploy Microsoft Edge kiosk mode.](/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy)
+In Windows 10, version 1909, assigned access adds support for the new Microsoft Edge kiosk mode. [Learn how to deploy Microsoft Edge kiosk mode](/DeployEdge/microsoft-edge-configure-kiosk-mode).
+
+In Windows 10, version 1809, Microsoft Edge Legacy includes support for kiosk mode. [Learn how to deploy Microsoft Edge kiosk mode](/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy).
 
 In Windows client, you can install the **Kiosk Browser** app from Microsoft to use as your kiosk app. For digital signage scenarios, you can configure **Kiosk Browser** to navigate to a URL and show only that content -- no navigation buttons, no address bar, etc. For kiosk scenarios, you can configure additional settings, such as allowed and blocked URLs, navigation buttons, and end session buttons. For example, you could configure your kiosk to show the online catalog for your store, where customers can navigate between departments and items, but aren’t allowed to go to a competitor's website. 
 
@@ -82,7 +81,8 @@ Restart on Idle Time | Specify when Kiosk Browser should restart in a fresh stat
 > 
 > 1. Create the provisioning package. When ready to export, close the project in Windows Configuration Designer.
 > 2. Open the customizations.xml file in the project folder (e.g C:\Users\name\Documents\Windows Imaging and Configuration Designer (WICD)\Project_18). 
-> 3. Insert the null character string in between each URL (e.g www.bing.com`&#xF000;`www.contoso.com). 
+> 3. Insert the null character string in between each URL 
+(e.g `www.bing.com` and `www.contoso.com`). 
 > 4. Save the XML file.
 > 5. Open the project again in Windows Configuration Designer.
 > 6. Export the package. Ensure you do not revisit the created policies under Kiosk Browser or else the null character will be removed.
@@ -120,8 +120,8 @@ The following table describes the results for different combinations of blocked 
 
 Blocked URL rule |  Block URL exception rule | Result
 --- | --- | ---
-`*` | `contoso.com`<br>`fabrikam.com` | All requests are blocked unless it is to contoso.com, fabrikam.com, or any of their subdomains.
-`contoso.com` | `mail.contoso.com`<br>`.contoso.com`<br>`.www.contoso.com` | Block all requests to contoso.com, except for the main page and its mail subdomain.
+`*` | `contoso.com`<br>`fabrikam.com` | All requests are blocked unless it is to `contoso.com, fabrikam.com,` or any of their subdomains.
+`contoso.com` | `mail.contoso.com`<br>`.contoso.com`<br>`.www.contoso.com` | Block all requests to `contoso.com,` except for the main page and its mail subdomain.
 `youtube.com` | `youtube.com/watch?v=v1`<br>`youtube.com/watch?v=v2` | Blocks all access to youtube.com except for the specified videos (v1 and v2).
 
 The following table gives examples for blocked URLs. 
@@ -129,11 +129,11 @@ The following table gives examples for blocked URLs.
 
 |          Entry           |                                    Result                                     |
 |--------------------------|-------------------------------------------------------------------------------|
-|      `contoso.com`       | Blocks all requests to contoso.com, www.contoso.com, and sub.www.contoso.com  |
+|      `contoso.com`       | Blocks all requests to contoso.com, `www.contoso.com,` and sub.www.contoso.com  |
 |       `https://*`        |                   Blocks all HTTPS requests to any domain.                    |
-|    `mail.contoso.com`    | Blocks requests to mail.contoso.com but not to www.contoso.com or contoso.com |
+|    `mail.contoso.com`    | Blocks requests to mail.contoso.com but not to `www.contoso.com` or `contoso.com` |
 |      `.contoso.com`      |    Blocks contoso.com but not its subdomains, like subdomain.contoso.com.     |
-|    `.www.contoso.com`    |                Blocks www.contoso.com but not its subdomains.                 |
+|    `.www.contoso.com`    |                Blocks `www.contoso.com` but not its subdomains.                 |
 |           `*`            |    Blocks all requests except for URLs in the Blocked URL Exceptions list.    |
 |         `*:8080`         |                       Blocks all requests to port 8080.                       |
 |   `contoso.com/stuff`    |         Blocks all requests to contoso.com/stuff and its subdomains.          |
@@ -154,6 +154,12 @@ You can create your own web browser Windows app by using the WebView class. Lear
 ## Secure your information
 
 Avoid selecting Windows apps that may expose the information you don’t want to show in your kiosk, since kiosk usually means anonymous access and locates in a public setting like a shopping mall. For example, an app that has a file picker allows the user to gain access to files and folders on the user's system, avoid selecting these types of apps if they provide unnecessary data access.
+
+## Customize your breakout sequence
+
+Assigned access allows for the specification of a new breakout sequence. A breakout sequence is a keyboard shortcut that stops the kiosk experience and brings the user back to the lock screen. By default the breakout sequence is configured to be ctrl+alt+delete, a common Windows keyboard shortcut. It is recommended that this is set to a non-standard Windows shortcut to prevent disruptions in the kiosk experience.
+
+There is currently no user interface for customizing the breakout sequence in Windows settings, so it would need to be specified in a provisioning method where an XML format such as MDM is used.
 
 ## App configuration
 

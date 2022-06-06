@@ -4,11 +4,8 @@ ms.reviewer:
 manager: dougeby
 description: Learn more and understand the different types of apps that run on Windows 10 and Windows 11. For example, learn more about UWP, WPF, Win32, and Windows Forms apps, including the best way to install these apps.
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: mobile
-ms.author: mandia
-author: MandiOhlinger
+ms.author: aaroncz
+author: aczechowski
 ms.localizationpriority: medium
 ms.topic: article
 ms.collection: highpri

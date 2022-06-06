@@ -126,6 +126,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -170,6 +171,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -213,6 +215,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -256,6 +259,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -299,6 +303,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -341,6 +346,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -366,9 +372,9 @@ Delay reporting for the random minutes: The maximum minutes of random delay on t
 
 Repeat reporting for every (days): The periodical interval in days for sending the reporting data.
 
-Data Cache Limit: This value specifies the maximum size in megabytes (MB) of the XML cache for storing reporting information. The default value is 20 MB. The size applies to the cache in memory. When the limit is reached, the log file will roll over. When a new record is to be added (bottom of the list), one or more of the oldest records (top of the list) will be deleted to make room. A warning will be logged to the Client log and the event log the first time this occurs, and will not be logged again until after the cache has been successfully cleared on transmission and the log has filled up again.
+Data Cache Limit: This value specifies the maximum size in megabytes (MB) of the XML cache for storing reporting information. The default value is 20 MB. The size applies to the cache in memory. When the limit is reached, the log file will roll over. When a new record is to be added (bottom of the list), one or more of the oldest records (top of the list) will be deleted to make room. A warning will be logged to the Client log and the event log the first time this deletion occurs, and won't be logged again until after the cache has been successfully cleared on transmission and the log has filled up again.
 
-Data Block Size: This value specifies the maximum size in bytes to transmit to the server at once on a reporting upload, to avoid permanent transmission failures when the log has reached a significant size. The  default value is 65536. When transmitting report data to the server, one block at a time of application records that is less than or equal to the block size in bytes of XML data will be removed from the cache and sent to the server. Each block will have the general Client data and global package list data prepended, and these will not factor into the block size calculations; the potential exists for an extremely large package list to result in transmission failures over low bandwidth or unreliable connections.
+Data Block Size: This value specifies the maximum size in bytes to transmit to the server at once on a reporting upload, to avoid permanent transmission failures when the log has reached a significant size. The  default value is 65536. When report data is being transmitted to the server, one block at a time of application records that is less than or equal to the block size in bytes of XML data will be removed from the cache and sent to the server. Each block will have the general Client data and global package list data prepended, and these components won't factor into the block size calculations; the potential exists for a large package list to result in transmission failures over low bandwidth or unreliable connections.
 
 <!--/Description-->
 
@@ -394,6 +400,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -411,6 +418,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
+
 This policy specifies the file paths relative to %userprofile% that do not roam with a user's profile. Example usage: /FILEEXCLUSIONLIST='desktop;my pictures'.
 
 <!--/Description-->
@@ -437,6 +445,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -454,6 +463,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
+
 This policy specifies the registry paths that do not roam with a user profile. Example usage: /REGISTRYEXCLUSIONLIST=software\classes;software\clients.
 
 <!--/Description-->
@@ -480,6 +490,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -523,6 +534,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -540,7 +552,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Migration mode allows the App-V client to modify shortcuts and FTA's for packages created using a previous version of App-V.
+Migration mode allows the App-V client to modify shortcuts and FTAs for packages created using a previous version of App-V.
 
 <!--/Description-->
 
@@ -566,6 +578,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -583,7 +596,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
+
 This policy specifies the location where symbolic links are created to the current version of a per-user published package. Shortcuts, file type associations, etc. are created pointing to this path. If empty, symbolic links are not used during publishing. Example: %localappdata%\Microsoft\AppV\Client\Integration.
+
 
 <!--/Description-->
 
@@ -609,6 +624,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -626,6 +642,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
+
 This policy specifies the location where symbolic links are created to the current version of a globally published package. Shortcuts, file type associations, etc. are created pointing to this path. If empty, symbolic links are not used during publishing. Example: %allusersprofile%\Microsoft\AppV\Client\Integration.
 
 <!--/Description-->
@@ -652,6 +669,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -675,7 +693,7 @@ Publishing Server URL: Displays the URL of publishing server.
 
 Global Publishing Refresh: Enables global publishing refresh (Boolean).
 
-Global Publishing Refresh On Logon: Triggers a global publishing refresh on logon (Boolean).
+Global Publishing Refresh On Logon: Triggers a global publishing refresh on a sign in(Boolean).
 
 Global Publishing Refresh Interval: Specifies the publishing refresh interval using the GlobalRefreshIntervalUnit. To disable package refresh, select 0.
 
@@ -683,7 +701,7 @@ Global Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23,
 
 User Publishing Refresh: Enables user publishing refresh (Boolean).
 
-User Publishing Refresh On Logon: Triggers a user publishing refresh on logon (Boolean).
+User Publishing Refresh On Logon: Triggers a user publishing refresh on a sign in (Boolean).
 
 User Publishing Refresh Interval: Specifies the publishing refresh interval using the UserRefreshIntervalUnit. To disable package refresh, select 0.
 
@@ -713,6 +731,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -736,7 +755,7 @@ Publishing Server URL: Displays the URL of publishing server.
 
 Global Publishing Refresh: Enables global publishing refresh (Boolean).
 
-Global Publishing Refresh On Logon: Triggers a global publishing refresh on logon (Boolean).
+Global Publishing Refresh On Logon: Triggers a global publishing refresh on a sign in (Boolean).
 
 Global Publishing Refresh Interval: Specifies the publishing refresh interval using the GlobalRefreshIntervalUnit. To disable package refresh, select 0.
 
@@ -744,7 +763,7 @@ Global Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23,
 
 User Publishing Refresh: Enables user publishing refresh (Boolean).
 
-User Publishing Refresh On Logon: Triggers a user publishing refresh on logon (Boolean).
+User Publishing Refresh On Logon: Triggers a user publishing refresh on la sign in (Boolean).
 
 User Publishing Refresh Interval: Specifies the publishing refresh interval using the UserRefreshIntervalUnit. To disable package refresh, select 0.
 
@@ -774,6 +793,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -797,7 +817,7 @@ Publishing Server URL: Displays the URL of publishing server.
 
 Global Publishing Refresh: Enables global publishing refresh (Boolean).
 
-Global Publishing Refresh On Logon: Triggers a global publishing refresh on logon (Boolean).
+Global Publishing Refresh On Logon: Triggers a global publishing refresh on a sign in (Boolean).
 
 Global Publishing Refresh Interval: Specifies the publishing refresh interval using the GlobalRefreshIntervalUnit. To disable package refresh, select 0.
 
@@ -805,7 +825,7 @@ Global Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23,
 
 User Publishing Refresh: Enables user publishing refresh (Boolean).
 
-User Publishing Refresh On Logon: Triggers a user publishing refresh on logon (Boolean).
+User Publishing Refresh On Logon: Triggers a user publishing refresh on a sign in (Boolean).
 
 User Publishing Refresh Interval: Specifies the publishing refresh interval using the UserRefreshIntervalUnit. To disable package refresh, select 0.
 
@@ -835,6 +855,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -858,7 +879,7 @@ Publishing Server URL: Displays the URL of publishing server.
 
 Global Publishing Refresh: Enables global publishing refresh (Boolean).
 
-Global Publishing Refresh On Logon: Triggers a global publishing refresh on logon (Boolean).
+Global Publishing Refresh On Logon: Triggers a global publishing refresh on a sign in (Boolean).
 
 Global Publishing Refresh Interval: Specifies the publishing refresh interval using the GlobalRefreshIntervalUnit. To disable package refresh, select 0.
 
@@ -866,7 +887,7 @@ Global Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23,
 
 User Publishing Refresh: Enables user publishing refresh (Boolean).
 
-User Publishing Refresh On Logon: Triggers a user publishing refresh on logon (Boolean).
+User Publishing Refresh On Logon: Triggers a user publishing refresh on a sign in (Boolean).
 
 User Publishing Refresh Interval: Specifies the publishing refresh interval using the UserRefreshIntervalUnit. To disable package refresh, select 0.
 
@@ -896,6 +917,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -919,7 +941,7 @@ Publishing Server URL: Displays the URL of publishing server.
 
 Global Publishing Refresh: Enables global publishing refresh (Boolean).
 
-Global Publishing Refresh On Logon: Triggers a global publishing refresh on logon (Boolean).
+Global Publishing Refresh On Logon: Triggers a global publishing refresh on a sign in (Boolean).
 
 Global Publishing Refresh Interval: Specifies the publishing refresh interval using the GlobalRefreshIntervalUnit. To disable package refresh, select 0.
 
@@ -927,7 +949,7 @@ Global Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23,
 
 User Publishing Refresh: Enables user publishing refresh (Boolean).
 
-User Publishing Refresh On Logon: Triggers a user publishing refresh on logon (Boolean).
+User Publishing Refresh On Logon: Triggers a user publishing refresh on a sign in (Boolean).
 
 User Publishing Refresh Interval: Specifies the publishing refresh interval using the UserRefreshIntervalUnit. To disable package refresh, select 0.
 
@@ -957,6 +979,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1000,6 +1023,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1017,7 +1041,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This setting controls whether virtualized applications are launched on Windows 8 machines connected via a metered network connection (e.g. 4G).
+This setting controls whether virtualized applications are launched on Windows 8 machines connected via a metered network connection (for example, 4G).
 
 <!--/Description-->
 
@@ -1043,6 +1067,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1086,6 +1111,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1129,6 +1155,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1172,6 +1199,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1215,6 +1243,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1258,6 +1287,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1275,6 +1305,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
+
 This policy specifies that streamed package contents will be not be saved to the local hard disk.
 
 <!--/Description-->
@@ -1301,6 +1332,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1318,7 +1350,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-If enabled, the App-V client will support BrancheCache compatible HTTP streaming. If BranchCache support is not desired, this should be disabled. The client can then apply HTTP optimizations which are incompatible with BranchCache
+If enabled, the App-V client will support BrancheCache compatible HTTP streaming. If BranchCache support isn't desired, this setting should be disabled. The client can then apply HTTP optimizations that are incompatible with BranchCache.
 
 <!--/Description-->
 
@@ -1344,6 +1376,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1387,6 +1420,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|

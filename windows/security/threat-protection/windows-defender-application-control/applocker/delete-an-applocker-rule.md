@@ -62,6 +62,7 @@ Use the Set-AppLockerPolicy cmdlet with the -XMLPolicy parameter, using an .XML 
     <RuleCollection Type="Script" EnforcementMode="NotConfigured" />
     <RuleCollection Type="Dll" EnforcementMode="NotConfigured" />
     <RuleCollection Type="Appx" EnforcementMode="NotConfigured" />
+    <RuleCollection Type="ManagedInstaller" EnforcementMode="NotConfigured" />
 </AppLockerPolicy>
 ```
 
@@ -78,3 +79,15 @@ C:\Users\Administrator> Set-AppLockerPolicy -XMLPolicy .\clear.xml
 ```
 
 This will remove all AppLocker Policies on a machine and could be potentially scripted to use on multiple machines using remote execution tools with accounts with proper access.
+
+The following PowerShell commands must also be run to stop the AppLocker services and the effects of the former AppLocker policy.
+
+```powershell
+appidtel.exe stop [-mionly]
+sc.exe config appid start=demand
+sc.exe config appidsvc start=demand
+sc.exe config applockerfltr start=demand
+sc stop applockerfltr
+sc stop appidsvc
+sc stop appid
+```

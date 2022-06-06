@@ -3,14 +3,14 @@ title: Perform Local Reactivation (Windows 10)
 description: An initially activated a computer using scenarios like MAK, retail, or CSLVK (KMS host), can be reactivated with Volume Activation Management Tool (VAMT).
 ms.assetid: aacd5ded-da11-4d27-a866-3f57332f5dec
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.date: 04/25/2017
 ms.topic: article
 ---

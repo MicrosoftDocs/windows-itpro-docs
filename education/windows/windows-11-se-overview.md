@@ -1,14 +1,14 @@
 ---
 title: What is Windows 11 SE
 description: Learn more about Windows 11 SE, and the apps that are included with the operating system. Read about the features IT professionals and administrators should know about Windows 11 SE. Add and deploy your apps using Microsoft Intune for Education.
-ms.reviewer: 
-manager: dougeby
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
-ms.author: mandia
-author: MandiOhlinger
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.reviewer: 
 ms.localizationpriority: medium
 ms.topic: article
 ---
@@ -38,36 +38,55 @@ Windows 11 SE is only available preinstalled on devices from OEMs. The OEM insta
 Windows 11 SE comes with some preinstalled apps. The following apps can also run on Windows 11 SE, and are deployed using the [Intune for Education portal](https://intuneeducation.portal.azure.com). For more information, see [Manage devices running Windows 11 SE](/intune-education/windows-11-se-overview).
 
 
-| Application | Supported version | Vendor |
-| --- | --- | --- |
-|Blub Digital Portoflio                 |0.0.7.0         |bulb|
-|CA Secure Browser                      |14.0.0          |Cambium Development|
-|Cisco Umbrella                         |3.0.110.0       |Cisco|
-|Dragon Professional Individual         |15.00.100       |Nuance Communications|
-|DRC INSIGHT Online Assessments         |12.0.0.0        |DRC|
-|e-Speaking Voice and Speech recognition|4.4.0.8         |e-speaking|
-|Free NaturalReader                     |16.1.2          |Natural Soft|
-|GoGuardian                             |1.4.4           |GoGuardian|
-|Google Chrome                          |97.0.4692.71    |Google|
-|Jaws for Windows                       |2022.2112.24 ILM|Freedom Scientific|
-|Kite Student Portal                    |8.0.1|Dynamic Learning Maps|
-|Kortext                                |2.3.418.0       |Kortext|
-|LanSchool                              |9.1.0.46        |Stoneware|
-|Lightspeed Smart Agent                 |1.9.1           |Lightspeed Systems|
-|Mozilla Firefox                        |96.0.2          |Mozilla|
-|NextUp Talker                          |1.0.49          |NextUp Technologies|
-|NonVisual Desktop Access               |2021.3.1        |NV Access|
-|NWEA Secure Testing Browser            |5.4.300.0       |NEWA|
-|Read&Write for Windows (US English)    |12.0.60.0       |Texthelp Ltd.|
-|Safe Exam Broswer                      |3.3.1           |Safe Exam Broswer|
-|Secure Browser                         |4.8.3.376       |Questar, Inc|
-|SuperNova Magnifier & Screen Reader    | 20.03          |Dolphin Computer Access|
-|SuperNova Magnifier & Speech           | 20.03          |Dolphin Computer Access|
-|Respondus Lockdown Browser             |2.0.8.03        |Respondus|
-|TestNav                                |1.10.2.0        |Pearson Education Inc|
-|SecureBrowser                          |14.0.0          |Cambium Development|
-|Zoom                                   |5.9.1 (2581)    |Zoom|
-|ZoomText Magnifier/Reader              |2022.2109.25ILM | AI Squared| 
+| Application | Supported version | App Type | Vendor |
+| --- | --- | --- | --- |
+|AirSecure	                            |8.0.0	|Win32  |AIR|
+|Brave Browser      	                |1.34.80|Win32	    |Brave|
+|Bulb Digital Portfolio              	|0.0.7.0|Store|Bulb|
+|Cisco Umbrella                      	|3.0.110.0	|Win32    |Cisco|
+|CKAuthenticator                        |3.6		|Win32    |Content Keeper|
+|Class Policy	                        |114.0.0	|Win32    |Class Policy|
+|Classroom.cloud                        |1.40.0004	 |Win32   |NetSupport|
+|CoGat Secure Browser                   |11.0.0.19  |Win32    |Riverside Insights|
+|Dragon Professional Individual	        |15.00.100	|Win32    |Nuance Communications|
+|DRC INSIGHT Online Assessments	        |12.0.0.0  |Store    |Data recognition Corporation|
+|Duo from Cisco	                        |2.25.0     |Win32    |Cisco|
+|e-Speaking Voice and Speech recognition	|4.4.0.8 |Win32   |e-speaking|
+|eTests                                 |4.0.25    |Win32   |CASAS|
+|FortiClient	                        |7.0.1.0083	|Win32    |Fortinet|
+|Free NaturalReader	                    |16.1.2	    |Win32    |Natural Soft|
+|GoGuardian	                            |1.4.4	   |Win32     |GoGuardian|
+|Google Chrome	                        |100.0.4896.127|Win32	|Google|
+|Illuminate Lockdown Browser	        |2.0.5	    |Win32    |Illuminate Education|
+|Immunet	                            |7.5.0.20795 |Win32   |Immunet|
+|JAWS for Windows	                    |2022.2112.24 |Win32  |Freedom Scientific|
+|Kite Student Portal	                |8.0.1	    |Win32    |Dynamic Learning Maps|
+|Kortext	                            |2.3.433.0  |Store	    |Kortext|
+|Kurzweil 3000 Assistive Learning	    |20.13.0000	|Win32    |Kurzweil Educational Systems|
+|LanSchool	                            |9.1.0.46	|Win32    |Stoneware|
+|Lightspeed Smart Agent                	|2.6.2	    |Win32    |Lightspeed Systems|
+|Microsoft Connect	                    |10.0.22000.1 |Store  |Microsoft|
+|Mozilla Firefox	                    |99.0.1	     |Win32   |Mozilla|
+|NAPLAN	                                |2.5.0	    |Win32    |NAP|
+|NetSupport Manager	                |12.01.0011	|Win32    |NetSupport|
+|NetSupport Notify	                    |5.10.1.215	|Win32    |NetSupport|
+|NetSupport School	                    |14.00.0011	 |Win32   |NetSupport|
+|NextUp Talker	                        |1.0.49	    |Win32    |NextUp Technologies|
+|NonVisual Desktop Access	            |2021.3.1	|Win32    |NV Access|
+|NWEA Secure Testing Browser	        |5.4.300.0	 |Win32   |NWEA|
+|Pearson TestNav	                    |1.10.2.0	|Store    |Pearson|
+|Questar Secure Browser	                |4.8.3.376	|Win32    |Questar|
+|ReadAndWriteForWindows	                |12.0.60.0	 |Win32   |Texthelp Ltd.|
+|Remote Help	                        |3.8.0.12	 |Win32   |Microsoft|
+|Respondus Lockdown Browser         	|2.0.8.05	 |Win32   |Respondus|
+|Safe Exam Browser                   	|3.3.2.413	  |Win32  |Safe Exam Browser|
+|Secure Browser	                    |14.0.0	   |Win32     |Cambium Development|
+|Secure Browser	                        |4.8.3.376	  |Win32  |Questar, Inc|
+|SensoCloud	                    |2021.11.15.0	|Win32|Senso.Cloud|
+|SuperNova Magnifier & Screen Reader	|21.02	     |Win32   |Dolphin Computer Access|
+|Zoom	                                |5.9.1 (2581)|Win32	|Zoom|
+|ZoomText Fusion	                    |2022.2109.10|Win32	|Freedom Scientific|
+|ZoomText Magnifier/Reader	            |2022.2109.25|Win32	|Freedom Scientific|
 
 ### Enabled apps
 

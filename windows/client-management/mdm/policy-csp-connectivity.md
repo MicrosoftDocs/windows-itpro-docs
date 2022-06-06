@@ -84,6 +84,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -105,9 +106,9 @@ manager: dansimp
 This policy allows the user to enable Bluetooth or restrict access.
 
 > [!NOTE]
->  This value is not supported in Windows 10.
+>  This value isn't supported in Windows 10.
 
-If this isn't set or it's deleted, the default value of 2 (Allow) is used.
+If this policy isn't set or is deleted, the default value of 2 (Allow) is used.
 
 Most restricted value is 0.
 
@@ -133,6 +134,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -151,6 +153,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
+
 This policy allows the cellular data channel on the device. Device reboot isn't required to enforce the policy.
 
 <!--/Description-->
@@ -175,6 +178,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -217,7 +221,7 @@ The following list shows the supported values:
 <!--Validation-->
 To validate, the enterprise can confirm by observing the roaming enable switch in the UX. It will be inactive if the roaming policy is being enforced by the enterprise policy.
 
-To validate on devices, do the following:
+To validate on devices, perform the following steps:
 
 1.  Go to Cellular & SIM.
 2.  Click on the SIM (next to the signal strength icon) and select **Properties**.
@@ -237,6 +241,7 @@ To validate on devices, do the following:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -281,6 +286,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -324,6 +330,7 @@ This setting supports a range of values between 0 and 1.
 <!--Validation-->
 Validation:
 
+
 If the Connectivity/AllowPhonePCLinking policy is configured to value 0, add a phone button in the Phones section in settings will be grayed out and clicking it will not launch the window for a user to enter their phone number.
 
 Device that has previously opt-in to MMX will also stop showing on the device list.
@@ -342,6 +349,7 @@ Device that has previously opt-in to MMX will also stop showing on the device li
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|No|No|
 |Education|No|No|
@@ -390,6 +398,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -416,7 +425,7 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – VPN is not allowed over cellular.
+-   0 – VPN isn't allowed over cellular.
 -   1 (default) – VPN can use any connection, including cellular.
 
 <!--/SupportedValues-->
@@ -433,6 +442,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -476,6 +486,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -496,13 +507,13 @@ The following list shows the supported values:
 <!--Description-->
 This policy setting specifies whether to allow printing over HTTP from this client.
 
-Printing over HTTP allows a client to print to printers on the intranet as well as the Internet.
+Printing over HTTP allows a client to print to printers on the intranet and the Internet.
 
-Note: This policy setting affects the client side of Internet printing only. It does not prevent this computer from acting as an Internet Printing server and making its shared printers available via HTTP.
+Note: This policy setting affects the client side of Internet printing only. It doesn't prevent this computer from acting as an Internet Printing server and making its shared printers available via HTTP.
 
 If you enable this policy setting, it prevents this client from printing to Internet printers over HTTP.
 
-If you disable or do not configure this policy setting, users can choose to print to Internet printers over HTTP.
+If you disable or don't configure this policy setting, users can choose to print to Internet printers over HTTP.
 
 Also, see the "Web-based printing" policy setting in Computer Configuration/Administrative Templates/Printers.
 
@@ -530,6 +541,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -552,11 +564,11 @@ This policy setting specifies whether to allow this client to download print dri
 
 To set up HTTP printing, non-inbox drivers need to be downloaded over HTTP.
 
-Note: This policy setting does not prevent the client from printing to printers on the Intranet or the Internet over HTTP.  It only prohibits downloading drivers that are not already installed locally.
+Note: This policy setting doesn't prevent the client from printing to printers on the Intranet or the Internet over HTTP.  It only prohibits downloading drivers that aren't already installed locally.
 
-If you enable this policy setting, print drivers cannot be downloaded over HTTP.
+If you enable this policy setting, print drivers can't be downloaded over HTTP.
 
-If you disable or do not configure this policy setting, users can download print drivers over HTTP.
+If you disable or don't configure this policy setting, users can download print drivers over HTTP.
 
 <!--/Description-->
 
@@ -582,6 +594,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -604,11 +617,11 @@ This policy setting specifies whether Windows should download a list of provider
 
 These wizards allow users to select from a list of companies that provide services such as online storage and photographic printing. By default, Windows displays providers downloaded from a Windows website in addition to providers specified in the registry.
 
-If you enable this policy setting, Windows does not download providers, and only the service providers that are cached in the local registry are displayed.
+If you enable this policy setting, Windows doesn't download providers, and only the service providers that are cached in the local registry are displayed.
 
-If you disable or do not configure this policy setting, a list of providers are downloaded when the user uses the web publishing or online ordering wizards.
+If you disable or don't configure this policy setting, a list of providers is downloaded when the user uses the web publishing or online ordering wizards.
 
-See the documentation for the web publishing and online ordering wizards for more information, including details on specifying service providers in the registry.
+For more information, including details on specifying service providers in the registry, see the documentation for the web publishing and online ordering wizards.
 
 <!--/Description-->
 
@@ -634,6 +647,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -652,7 +666,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to <http://www.msftconnecttest.com/connecttest.txt> to determine if the device can communicate with the Internet.  This policy disables the NCSI active probe, preventing network connectivity to www.msftconnecttest.com.
+Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to `<http://www.msftconnecttest.com/connecttest.txt>` to determine if the device can communicate with the Internet.  This policy disables the NCSI active probe, preventing network connectivity to `www.msftconnecttest.com`.
 
 Value type is integer.
 
@@ -678,6 +692,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -698,7 +713,7 @@ ADMX Info:
 <!--Description-->
 This policy setting configures secure access to UNC paths.
 
-If you enable this policy, Windows only allows access to the specified UNC paths after fulfilling additional security requirements.
+If you enable this policy, Windows only allows access to the specified UNC paths after fulfilling other security requirements.
 
 <!--/Description-->
 
@@ -724,6 +739,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -744,11 +760,11 @@ ADMX Info:
 <!--Description-->
 This policy determines whether a user can install and configure the Network Bridge.
 
-Important: This settings is location aware. It only applies when a computer is connected to the same DNS domain network it was connected to when the setting was refreshed on that computer. If a computer is connected to a DNS domain network other than the one it was connected to when the setting was refreshed, this setting does not apply.
+Important: This setting is location aware. It only applies when a computer is connected to the same DNS domain network it was connected to when the setting was refreshed on that computer. If a computer is connected to a DNS domain network other than the one it was connected to when the setting was refreshed, this setting doesn't apply.
 
 The Network Bridge allows users to create a layer 2 MAC bridge, enabling them to connect two or more network segments together. This connection appears in the Network Connections folder.
 
-If you disable this setting or do not configure it, the user will be able to create and modify the configuration of a Network Bridge. Enabling this setting does not remove an existing Network Bridge from the user's computer.
+If you disable this setting or don't configure it, the user will be able to create and modify the configuration of a Network Bridge. Enabling this setting doesn't remove an existing Network Bridge from the user's computer.
 
 <!--/Description-->
 

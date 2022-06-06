@@ -6,8 +6,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -18,6 +18,7 @@ ms.reviewer:
 # Technology and Terms
 
 **Applies to:**
+
 - Windows 10
 - Windows 11
 
@@ -156,7 +157,7 @@ Primarily for large enterprise organizations with more complex authentication re
 [Hybrid Deployment](#hybrid-deployment), [Managed Environment](#managed-environment), [Pass-through authentication](#pass-through-authentication), [Password Hash Sync](#password-hash-sync)
 
 ### More information
-- [Choosing the right authentication method for your Azure Active Directory hybrid identity solution](/azure/security/azure-ad-choose-authn)
+- [Choosing the right authentication method for your Azure Active Directory hybrid identity solution](/azure/active-directory/hybrid/choose-ad-authn)
 
 [Return to Top](hello-how-it-works-technology.md)
 ## Hybrid Azure AD Joined
