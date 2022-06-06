@@ -28,7 +28,7 @@ The **Software updates** page in the [Microsoft 365 admin center](https://admin.
 The **Software updates** page has following tabs to assist you in monitoring update status for your devices:
 
 - **Microsoft 365 Apps**: Displays update status for Microsoft 365 Apps.
-   - For more information about the **Microsoft 365 Apps** tab, see [Microsoft 365 Apps updates in the admin center](/microsoft-365/admin/admin-overview/admin-center-overview).
+   - For more information about the **Microsoft 365 Apps** tab, see [Microsoft 365 Apps updates in the admin center](/DeployOffice/updates/software-update-status).
 - **Windows**: Displays compliance charts for cumulative updates and feature updates for Windows clients. This article contains information about the **Windows** tab.
 
 :::image type="content" source="media/37063317-admin-center-software-updates.png" alt-text="Screenshot of the Microsoft 365 admin center displaying the software updates page with the Windows tab selected." lightbox="media/37063317-admin-center-software-updates.png":::
