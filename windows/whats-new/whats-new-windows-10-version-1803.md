@@ -6,8 +6,9 @@ ms.reviewer:
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.topic: article
+ROBOTS: NOINDEX
 ---
 
 # What's new in Windows 10, version 1803 for IT Pros

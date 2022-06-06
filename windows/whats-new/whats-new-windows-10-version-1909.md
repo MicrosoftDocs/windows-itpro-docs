@@ -5,8 +5,9 @@ ms.prod: w10
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.topic: article
+ROBOTS: NOINDEX
 ---
 
 # What's new in Windows 10, version 1909 for IT Pros
