@@ -2,17 +2,11 @@
 title: Replace a Windows 7 computer with a Windows 10 computer (Windows 10)
 description: In this article, you will learn how to replace a Windows 7 device with a Windows 10 device.
 ms.custom: seo-marvel-apr2020
-ms.assetid: acf091c9-f8f4-4131-9845-625691c09a2a
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-keywords: deploy, deployment, replace
 ms.prod: w10
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.sitesec: library
-ms.pagetype: mdt
-audience: itpro
 author: aczechowski
 ms.topic: article
 ---
