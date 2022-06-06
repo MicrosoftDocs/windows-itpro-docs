@@ -2,8 +2,6 @@
 title: Uninstall a provisioning package - reverted settings (Windows 10/11)
 description: This article lists the settings that are reverted when you uninstall a provisioning package on Windows 10/11 desktop client devices.
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
 author: aczechowski
 ms.author: aaroncz
 ms.topic: article
