@@ -1,6 +1,6 @@
 ---
 title: Replace a Windows 7 computer with a Windows 10 computer (Windows 10)
-description: In this article, you will learn how to replace a Windows 7 device with a Windows 10 device.
+description: In this article, you'll learn how to replace a Windows 7 device with a Windows 10 device.
 ms.custom: seo-marvel-apr2020
 ms.reviewer: 
 manager: dougeby
@@ -16,15 +16,15 @@ ms.topic: article
 **Applies to**
 -   Windows 10
 
-A computer replace scenario for Windows 10 is quite similar to a computer refresh for Windows 10. However, because you are replacing a device, you cannot store the backup on the old computer. Instead you need to store the backup to a location where the new computer can read it. The User State Migration Tool (USMT) will be used to back up and restore data and settings. 
+A computer replace scenario for Windows 10 is similar to a computer refresh for Windows 10. However, because you're replacing a device, you can't store the backup on the old computer. Instead you need to store the backup to a location where the new computer can read it. The User State Migration Tool (USMT) will be used to back up and restore data and settings. 
 
-For the purposes of this topic, we will use four computers: DC01, MDT01, PC0002, and PC0007. 
+For the purposes of this topic, we'll use four computers: DC01, MDT01, PC0002, and PC0007. 
 - DC01 is a domain controller for the contoso.com domain.
 - MDT01 is domain member server that hosts your deployment share.
 - PC0002 is an old computer running Windows 7 SP1 that will be replaced by PC0007. 
 - PC0007 is a new computer will have the Windows 10 OS installed prior to data from PC0002 being migrated. Both PC0002 and PC0007 are members of the contoso.com domain.
 
-For more details on the setup for this topic, please see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
+For more details on the setup for this topic, see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
 
 ![The computers used in this topic.](../images/mdt-03-fig01.png)
 
@@ -40,9 +40,9 @@ The computers used in this topic.
 
 On **MDT01**:
 
-1. Open the Deployment Workbench, under **Deployment Shares** right-click **MDT Production**, click **Properties**, and then click the **Rules** tab.
-2. Change the **SkipUserData=YES** option to **NO**, and click **OK**.
-3. Right-click **MDT Production** and click **Update Deployment Share**. Click **Next**, **Next**, and **Finish** to complete the Update Deployment Share Wizard with the default settings.
+1. Open the Deployment Workbench, under **Deployment Shares** right-click **MDT Production**, select **Properties**, and then select the **Rules** tab.
+2. Change the **SkipUserData=YES** option to **NO**, and select **OK**.
+3. Right-click on **MDT Production** and select **Update Deployment Share**. Then select **Next**, **Next**, and **Finish** to complete the Update Deployment Share Wizard with the default settings.
 
 ### Create and share the MigData folder
 
@@ -75,7 +75,7 @@ On **MDT01**:
 
 During a computer replace, these are the high-level steps that occur:
 
-1.  On the computer you are replacing, a special replace task sequence runs the USMT backup and, if you configured it, runs the optional full Windows Imaging (WIM) backup.
+1.  On the computer you're replacing, a special replace task sequence runs the USMT backup and, if you configured it, runs the optional full Windows Imaging (WIM) backup.
 2.  On the new computer, you perform a standard bare-metal deployment. At the end of the bare-metal deployment, the USMT backup from the old computer is restored.
 
 ### Run the replace task sequence
