@@ -1,16 +1,13 @@
 ---
 title: Provision PCs with apps  (Windows 10/11)
 description: Learn how to install multiple Universal Windows Platform (UWP) apps and Windows desktop applications (Win32) in a provisioning package.
-keywords: ["runtime provisioning", "provisioning package"]
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.topic: article
 ms.reviewer: gkomatsu
-manager: dansimp
+manager: dougeby
 ---
 
 # Provision PCs with apps 

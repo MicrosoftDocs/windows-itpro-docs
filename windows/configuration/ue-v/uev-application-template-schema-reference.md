@@ -1,18 +1,14 @@
 ---
 title: Application Template Schema Reference for UE-V
 description: Learn details about the XML structure of the UE-V settings location templates and learn how to edit these files.
-author: greg-lindsay
-ms.pagetype: mdop, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
+author: aczechowski
 ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
-
 
 # Application Template Schema Reference for UE-V
 
@@ -70,7 +66,7 @@ The XML declaration must specify the XML version 1.0 attribute (&lt;?xml version
 
 **Type: String**
 
-UE-V uses the https://schemas.microsoft.com/UserExperienceVirtualization/2012/SettingsLocationTemplate namespace for all applications. SettingsLocationTemplate is the root element and contains all other elements. Reference SettingsLocationTemplate in all templates using this tag:
+UE-V uses the ```https://schemas.microsoft.com/UserExperienceVirtualization/2012/SettingsLocationTemplate``` namespace for all applications. SettingsLocationTemplate is the root element and contains all other elements. Reference SettingsLocationTemplate in all templates using this tag:
 
 `<SettingsLocationTemplate xmlns='https://schemas.microsoft.com/UserExperienceVirtualization/2012/SettingsLocationTemplate'>`
 

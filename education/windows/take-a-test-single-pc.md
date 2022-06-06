@@ -113,7 +113,7 @@ One of the ways you can present content in a locked down manner is by embedding 
 
 3. To enable permissive mode, do not include `enforceLockdown` in the schema parameters.
 
-   See [Permissive mode](take-a-test-app-technical.md#permissive-mode) and [Secure Browser API Specification](https://github.com/SmarterApp/SB_BIRT/blob/master/irp/doc/req/SecureBrowserAPIspecification.md) for more info.
+   For more information, see [Permissive mode](take-a-test-app-technical.md#permissive-mode).
 
 
 ### Create a shortcut for the test link

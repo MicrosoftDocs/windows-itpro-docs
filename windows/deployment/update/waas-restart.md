@@ -3,9 +3,9 @@ title: Manage device restarts after updates (Windows 10)
 description: Use Group Policy settings, mobile device management (MDM), or Registry to configure when devices will restart after a Windows 10 update is installed.
 ms.prod: w10
 ms.mktglfcycl: deploy
-author: jaimeo
+author: carmenf
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: carmenf
 manager: dougeby
 ms.topic: article
 ms.custom:
@@ -201,7 +201,7 @@ There are three different registry combinations for controlling restart behavior
 
 - [Update Windows 10 in the enterprise](index.md)
 - [Overview of Windows as a service](waas-overview.md)
-- [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
+- [Configure Delivery Optimization for Windows 10 updates](../do/waas-delivery-optimization.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)

@@ -1,17 +1,12 @@
 ---
 title: Plan to Deploy Windows Defender Firewall with Advanced Security (Windows)
 description: Use the design information in this article to plan for the deployment of Windows Defender Firewall with Advanced Security in your organization.
-ms.assetid: 891a30c9-dbf5-4a88-a279-00662b9da48e
 ms.reviewer: 
 ms.author: dansimp
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021

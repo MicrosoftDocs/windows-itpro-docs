@@ -2,14 +2,12 @@
 title: Set up and test Cortana in Windows 10, versions 1909 and earlier, with Microsoft 365 in your organization
 description: Learn how to connect Cortana to Office 365 so employees are notified about regular meetings and unusual events. You can even set an alarm for early meetings.
 ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.date: 10/05/2017
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # Set up and test Cortana in Windows 10, versions 1909 and earlier, with Microsoft 365 in your organization

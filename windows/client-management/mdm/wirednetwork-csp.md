@@ -1,6 +1,6 @@
 ---
 title: WiredNetwork CSP
-description: The WiredNetwork configuration service provider (CSP) is used by the enterprise to configure wired Internet on devices that do not have GP. Learn how it works.
+description: The WiredNetwork configuration service provider (CSP) is used by the enterprise to configure wired Internet on devices that don't have GP. Learn how it works.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -13,12 +13,23 @@ manager: dansimp
 
 # WiredNetwork CSP 
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 > [!WARNING]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-The WiredNetwork configuration service provider (CSP) is used by the enterprise to configure wired Internet on devices that do not have GP to enable them to access corporate Internet over ethernet. This CSP was added in Windows 10, version 1809.
+The WiredNetwork configuration service provider (CSP) is used by the enterprise to configure wired Internet on devices that don't have GP to enable them to access corporate Internet over ethernet. This CSP was added in Windows 10, version 1809.
 
-The following shows the WiredNetwork configuration service provider in tree format.
+The following example shows the WiredNetwork configuration service provider in tree format.
 ```
 ./User/Vendor/MSFT
 WiredNetwork
@@ -39,17 +50,19 @@ WiredNetwork
 ----EnableBlockPeriod
 ```
 <a href="" id="wirednetwork"></a>**./Device/Vendor/MSFT/WiredNetwork**  
-Root node.
+The root node for the wirednetwork configuration service provider.
 
 <a href="" id="lanxml"></a>**LanXML**  
 Optional. XML describing the wired network configuration and follows the LAN_profile schemas https://msdn.microsoft.com/library/windows/desktop/aa816366(v=vs.85).aspx.
 
-Supported operations are Add, Get, Replace, and Delete. Value type is string.
+- Supported operations are Add, Get, Replace, and Delete. 
+- Value type is string.
 
 <a href="" id="enableblockperiod"></a>**EnableBlockPeriod**  
  Optional. Enable block period (minutes), used to specify the duration for which automatic authentication attempts will be blocked from occurring after a failed authentication attempt.
 
-Supported operations are Add, Get, Replace, and Delete. Value type is integer.
+- Supported operations are Add, Get, Replace, and Delete. 
+- Value type is integer.
 
 The following example shows how to add a wired network profile:
 ```xml
@@ -70,3 +83,7 @@ The following example shows how to add a wired network profile:
   </SyncBody>
 </SyncML>
 ```
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)

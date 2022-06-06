@@ -1,12 +1,9 @@
 ---
 title: Prepare for Windows 11
 description: Prepare your infrastructure and tools to deploy Windows 11, IT Pro content.
-keywords: ["get started", "windows 11"]
 ms.prod: w11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-author: greg-lindsay
-ms.author: greglin
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
 ms.localizationpriority: high
 ms.topic: article

@@ -8,8 +8,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection:
   - M365-identity-device-management
@@ -84,8 +84,9 @@ For errors listed in this table, contact Microsoft Support for assistance.
 
 | Hex         | Cause   |
 |-------------|---------|
-| 0X80072F0C  | Unknown |
 | 0x80070057  | Invalid parameter or argument is passed. |
+| 0X80072F0C  | Unknown |
+| 0x80072F8F  | A mismatch happens between the system's clock and the activation server's clock when attempting to activate Windows.|
 | 0x80090010  | NTE_PERM |
 | 0x80090020  | NTE\_FAIL |
 | 0x80090027  | Caller provided a wrong parameter. If third-party code receives this error, they must change their code. |
@@ -104,7 +105,6 @@ For errors listed in this table, contact Microsoft Support for assistance.
 | 0x801C03F1  | ​There is no UPN in the token. |
 | ​0x801C044C  | There is no core window for the current thread. |
 | 0x801c004D  | DSREG_NO_DEFAULT_ACCOUNT: NGC provisioning is unable to find the default WAM account to use to request AAD token for provisioning. Unable to enroll a device to use a PIN for login. |
-
 
 ## Related topics
 

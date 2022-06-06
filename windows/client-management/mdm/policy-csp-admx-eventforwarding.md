@@ -47,8 +47,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -67,9 +68,9 @@ manager: dansimp
 <!--Description-->
 This policy setting controls resource usage for the forwarder (source computer) by controlling the events/per second sent to the Event Collector.
 
-If you enable this policy setting, you can control the volume of events sent to the Event Collector by the source computer. This may be required in high volume environments.
+If you enable this policy setting, you can control the volume of events sent to the Event Collector by the source computer. This volume-control may be required in high-volume environments.
 
-If you disable or do not configure this policy setting, forwarder resource usage is not specified.
+If you disable or don't configure this policy setting, forwarder resource usage isn't specified.
 
 This setting applies across all subscriptions for the forwarder (source computer).
 
@@ -97,8 +98,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -128,7 +130,7 @@ Server=https://<FQDN of the collector>:5986/wsman/SubscriptionManager/WEC,Refres
 
 When using the HTTP protocol, use port 5985.
 
-If you disable or do not configure this policy setting, the Event Collector computer will not be specified.
+If you disable or don't configure this policy setting, the Event Collector computer won't be specified.
 
 <!--/Description-->
 

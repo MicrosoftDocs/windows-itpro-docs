@@ -46,8 +46,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -66,9 +67,9 @@ manager: dansimp
 <!--Description-->
 Prevents start of InkBall game.  
 
-If you enable this policy, the InkBall game will not run.  
+If you enable this policy, the InkBall game won't run.  
 
-If you disable this policy, the InkBall game will run.  If you do not configure this policy, the InkBall game will run.
+If you disable this policy, the InkBall game will run.  If you don't configure this policy, the InkBall game will run.
 
 <!--/Description-->
 
@@ -93,8 +94,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -113,9 +115,9 @@ ADMX Info:
 <!--Description-->
 Prevents printing to Journal Note Writer.  
 
-If you enable this policy, the Journal Note Writer printer driver will not allow printing to it. It will remain displayed in the list of available printers, but attempts to print to it will fail.  
+If you enable this policy, the Journal Note Writer printer driver won't allow printing to it. It will remain displayed in the list of available printers, but attempts to print to it will fail.  
 
-If you disable this policy, you will be able to use this feature to print to a Journal Note.  If you do not configure this policy, users will be able to use this feature to print to a Journal Note.
+If you disable this policy, you'll be able to use this feature to print to a Journal Note.  If you don't configure this policy, users will be able to use this feature to print to a Journal Note.
 
 
 <!--/Description-->

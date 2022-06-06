@@ -11,10 +11,10 @@ ms.localizationpriority: medium
 audience: ITPro
 ms.collection: M365-security-compliance
 author: denisebmsft
-ms.reviewer: isbrahm
+ms.reviewer: jgeurten
 ms.author: deniseb
 manager: dansimp
-ms.date: 07/29/2021
+ms.date: 05/09/2022
 ms.custom: asr
 ms.technology: windows-sec
 ---
@@ -32,7 +32,7 @@ ms.technology: windows-sec
 
 | Capability  | WDAC | AppLocker   |
 |-------------|------|-------------|
-| Platform support    | Available on Windows 10 and Windows 11  | Available on Windows 8+   |
+| Platform support    | Available on Windows 10, Windows 11, and Windows Server 2016 or later  | Available on Windows 8 or later   |
 | SKU availability     | Cmdlets are available on all SKUs on 1909+ builds.<br>For pre-1909 builds, cmdlets are only available on Enterprise but policies are effective on all SKUs.  | Policies deployed through GP are only effective on Enterprise devices.<br>Policies deployed through MDM are effective on all SKUs.  |
 | Management solutions   | <ul><li>[Intune](./deploy-windows-defender-application-control-policies-using-intune.md) (limited built-in policies or custom policy deployment via OMA-URI)</li><li>[Microsoft Endpoint Manager Configuration Manager (MEMCM)](/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager) (limited built-in policies or custom policy deployment via Software Distribution)</li><li>[Group Policy](./deploy-windows-defender-application-control-policies-using-group-policy.md) </li><li>PowerShell</li></ul>  | <ul><li>[Intune](/windows/client-management/mdm/applocker-csp) (custom policy deployment via OMA-URI only)</li><li>MEMCM (custom policy deployment via Software Distribution only)</li><li>[Group Policy](./applocker/determine-group-policy-structure-and-rule-enforcement.md)</li><li>PowerShell</li><ul> |
 | Per-User and Per-User group rules | Not available (policies are device-wide)  | Available on Windows 8+  |
@@ -45,3 +45,4 @@ ms.technology: windows-sec
 | COM object configurability        | [Available on 1903+](./allow-com-object-registration-in-windows-defender-application-control-policy.md)  | Not available |
 | Packaged app rules                | [Available on RS5+](./manage-packaged-apps-with-windows-defender-application-control.md)  | Available on Windows 8+   |
 | Enforceable file types       | <ul><li>Driver files: .sys</li><li>Executable files: .exe and .com</li><li>DLLs: .dll and .ocx</li><li>Windows Installer files: .msi, .mst, and .msp</li><li>Scripts: .ps1, .vbs, and .js</li><li>Packaged apps and packaged app installers: .appx</li></ul>| <ul><li>Executable files: .exe and .com</li><li>[Optional] DLLs: .dll and .ocx</li><li>Windows Installer files: .msi, .mst, and .msp</li><li>Scripts: .ps1, .bat, .cmd, .vbs, and .js</li><li>Packaged apps and packaged app installers: .appx</li></ul>|
+| Application ID (AppId) Tagging | [Available on 20H1+](./AppIdTagging/windows-defender-application-control-appid-tagging-guide.md)  | Not available |
