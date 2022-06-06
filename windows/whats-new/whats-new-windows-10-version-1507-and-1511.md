@@ -6,8 +6,9 @@ ms.prod: w10
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.topic: article
+ROBOTS: NOINDEX
 ---
 
 # What's new in Windows 10, versions 1507 and 1511 for IT Pros
