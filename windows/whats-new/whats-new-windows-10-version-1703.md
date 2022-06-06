@@ -2,12 +2,13 @@
 title: What's new in Windows 10, version 1703
 description: New and updated features in Windows 10, version 1703 (also known as the Creators Updated).
 ms.prod: w10
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.reviewer: 
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
 ms.topic: article
+ROBOTS: NOINDEX
 ---
 
 # What's new in Windows 10, version 1703 for IT Pros
@@ -39,8 +40,6 @@ Both the desktop and kiosk wizards include an option to remove pre-installed sof
 ### Azure Active Directory join in bulk
 
 Using the new wizards in Windows Configuration Designer, you can [create provisioning packages to enroll devices in Azure Active Directory](/windows/configuration/provisioning-packages/provisioning-packages#configuration-designer-wizards). Azure AD join in bulk is available in the desktop, mobile, kiosk, and Surface Hub wizards.
-
-![get bulk token action in wizard.](images/bulk-token.png)
 
 
 ### Windows Spotlight
@@ -228,7 +227,6 @@ Some of the other new CSPs are:
 
 - The [EnterpriseAppVManagement CSP](/windows/client-management/mdm/enterpriseappvmanagement-csp) is used to manage virtual applications in Windows 10 PCs (Enterprise and Education editions) and enables App-V sequenced apps to be streamed to PCs even when managed by MDM.
 
-IT pros can use the new [MDM Migration Analysis Tool (MMAT)](https://aka.ms/mmat) to determine which Group Policy settings have been configured for a user or computer and cross-reference those settings against a built-in list of supported MDM policies. MMAT can generate both XML and HTML reports indicating the level of support for each Group Policy setting and MDM equivalents.
 
 [Learn more about new MDM capabilities.](/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew10)
 

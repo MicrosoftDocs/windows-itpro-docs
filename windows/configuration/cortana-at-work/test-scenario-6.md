@@ -2,8 +2,6 @@
 title: Test scenario 6 - Review a reminder suggested by Cortana based on what you’ve promised in email
 description: A test scenario about how to use Cortana with the Suggested reminders feature.
 ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
