@@ -38,14 +38,14 @@ This setting must be turned on to avoid a "lack of permissions" error when we in
 | ----- | ----- |
 | Not ready | Allow access to unlicensed admins should be turned on. Without this setting enabled, errors can occur when we try to access your Azure AD organization for service. You can safely enable this setting without worrying about security implications. The scope of access is defined by the roles assigned to users, including our operations staff.<p><p>For more information, see [Unlicensed admins](/mem/intune/fundamentals/unlicensed-admins). |
 
-### Windows 10 update rings
+### Update rings for Windows 10 or later
 
 Your "Windows 10 update ring" policy in Intune must not target any Windows Autopatch devices.
 
 | Result | Meaning |
 | ----- | ----- |
 | Not ready | You have an "update ring" policy that targets all devices, all users, or both. Change the policy to use an assignment that targets a specific Azure Active Directory (AD) group that doesn't include any Windows Autopatch devices.<p><p>After enrolling into Autopatch, make sure that any update ring policies you have exclude the **Modern Workplace Devices - All** Azure Active Directory (AD) group.</p><p>For more information, see [Manage Windows 10 software updates in Intune](/mem/intune/protect/windows-update-for-business-configure).</p>|
-| Advisory | Both the **Modern Workplace Devices - All** and **Modern Workplace - All** Azure AD groups are groups that we create after you enroll in Windows Autopatch.<p>This advisory appears after enrolling into Autopatch. Check the following:<ol><li>Make sure that any update ring policies you have exclude the **Modern Workplace Devices - All** Azure Active Directory (AD) group.</li><li>If you have assigned Azure AD user groups to these policies, make sure that any update ring policies you have also exclude the **Modern Workplace - All** Azure AD group that you add your Windows Autopatch users to (or an equivalent group).</li></ol>For more information, see [Manage Windows 10 software updates in Intune](/mem/intune/protect/windows-update-for-business-configure). |
+| Advisory | Both the **Modern Workplace Devices - All** and **Modern Workplace - All** Azure AD groups are groups that we create after you enroll in Windows Autopatch. This advisory is flagging an action you should take after enrolling into the service:<ol><li>Make sure that any update ring policies you have exclude the **Modern Workplace Devices - All** Azure Active Directory (AD) group.</li><li>If you have assigned Azure AD user groups to these policies, make sure that any update ring policies you have also exclude the **Modern Workplace - All** Azure AD group that you add your Windows Autopatch users to (or an equivalent group).</li></ol><br>For more information, see [Manage Windows 10 software updates in Intune](/mem/intune/protect/windows-update-for-business-configure). |
 
 ## Azure Active Directory settings
 
@@ -53,7 +53,7 @@ You can access Azure Active Directory (AD) settings in the [Azure portal](https:
 
 ### Conditional access policies
 
-Conditional access policies must not prevent Windows Autopatch from connecting to your Intune tenant.
+Conditional access policies must not prevent Windows Autopatch from connecting to your tenant.
 
 | Result | Meaning |
 | ----- | ----- |

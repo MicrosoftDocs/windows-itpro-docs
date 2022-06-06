@@ -36,9 +36,10 @@ You must choose what devices to manage with Windows Autopatch by either adding t
 
 Windows Autopatch also supports the following Azure AD nested group scenarios:
 
-- Azure AD groups synced up from:
-	- On-premises Active Directory groups (Windows server type).
-	- [Configuration Manager collections](/mem/configmgr/core/clients/manage/collections/create-collections#bkmk_aadcollsync).
+Azure AD groups synced up from:
+
+- On-premises Active Directory groups (Windows server type).
+- [Configuration Manager collections](/mem/configmgr/core/clients/manage/collections/create-collections#bkmk_aadcollsync).
 
 > [!IMPORTANT]
 > The **Windows Autopatch Device Registration** Azure AD group only supports one level of Azure AD nested groups.
@@ -50,19 +51,19 @@ Windows Autopatch also supports the following Azure AD nested group scenarios:
 
 To be eligible for Windows Autopatch management, devices must meet a minimum set of required software-based prerequisites:
 
-- Windows 10/11 64-bit Enterprise edition 1809+.
-- Either hybrid or Azure AD joined (personal devices aren't supported).
-- Managed by Microsoft Endpoint Manager
-	- Microsoft Endpoint Manager-Intune or Microsoft Endpoint Manager-Configuration Manager Co-management.
-		- Microsoft Endpoint Manager-Configuration Manager Co-management workloads swung over to Microsoft Endpoint Manager-Intune (either set to Pilot Intune or Intune).
-			- Windows Updates policies
-			- Device configuration
-			- Office Click-to-run
+- [Supported Windows 10/11 Enterprise and Professional edition versions](/windows/release-health/supported-versions-windows-client)
+- Either [Hybrid Azure AD-Joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid) or [Azure AD-joined only](/azure/active-directory/devices/concept-azure-ad-join-hybrid) (personal devices aren't supported).
+- Managed by Microsoft Endpoint Manager.
+    - [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune) or [Co-management](/prepare/windows-autopatch-prerequisites.md#co-management-requirements).
+        - [Switch Microsoft Endpoint Manager-Configuration Manager Co-management workloads to Microsoft Endpoint Manager-Intune](/mem/configmgr/comanage/how-to-switch-workloads) (either set to Pilot Intune or Intune). This includes the following workloads:
+            - Windows updates policies
+            - Device configuration
+            - Office Click-to-run
 - Last Intune device check-in completed within the last 28 days.  
 
 For more details on each prerequisite check, see the [Prerequisites](../prepare/windows-autopatch-prerequisites.md) article.
 
-## About Devices Ready and Not ready tabs
+## About the Ready and Not ready tabs
 
 Windows Autopatch introduces a new user interface to help IT admins manage devices and troubleshoot device readiness statuses seamlessly with actionable in-UI device readiness reports for unregistered devices or unhealthy devices.
 
