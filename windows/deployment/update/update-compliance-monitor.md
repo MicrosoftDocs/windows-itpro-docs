@@ -1,15 +1,15 @@
 ---
 title: Monitor Windows Updates and Microsoft Defender AV with Update Compliance
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 description: You can use Update Compliance in Azure portal to monitor the progress of updates and key anti-malware protection features on devices in your network.
 keywords: oms, operations management suite, wdav, updates, upgrades, antivirus, antimalware, signature, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: deploy
 audience: itpro
-author: jaimeo
-ms.author: jaimeo
+author: aczechowski
+ms.author: aaroncz
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
@@ -29,7 +29,7 @@ Update Compliance enables organizations to:
 
 * Monitor security, quality, and feature updates for Windows 10 or Windows 11 Professional, Education, and Enterprise editions.
 * View a report of device and update issues related to compliance that need attention.
-* Check bandwidth savings incurred across multiple content types by using [Delivery Optimization](waas-delivery-optimization.md).
+* Check bandwidth savings incurred across multiple content types by using [Delivery Optimization](../do/waas-delivery-optimization.md).
 
 Update Compliance is offered through the Azure portal, and is included as part of Windows 10 or Windows 11 licenses listed in the [prerequisites](update-compliance-get-started.md#update-compliance-prerequisites). Azure Log Analytics ingestion and retention charges are not incurred on your Azure subscription for Update Compliance data.
 

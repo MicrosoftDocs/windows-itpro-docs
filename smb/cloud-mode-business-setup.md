@@ -447,7 +447,7 @@ In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink
    :::image type="content" alt-text="Check that the device appears in Intune." source="images/intune_groups_devices_list.png":::
 
 ## 3. Manage device settings and features
-You can use Microsoft Intune admin settings and policies to manage features on your organization's mobile devices and computers. For more info, see [Manage settings and features on your devices with Microsoft Intune policies](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies).
+You can use Microsoft Intune admin settings and policies to manage features on your organization's mobile devices and computers. For more info, see [Manage settings and features on your devices with Microsoft Intune policies](/mem/intune/configuration/device-profiles).
 
 In this section, we'll show you how to reconfigure app deployment settings and add a new policy that will disable the camera for the Intune-managed devices and turn off Windows Hello and PINs during setup.
 
@@ -574,7 +574,7 @@ See [Add users to Office 365](/microsoft-365/admin/add-users/add-users) to learn
 To learn more about the services and tools mentioned in this walkthrough, and learn what other tasks you can do, follow these links:
 - [Set up Office 365 for business](/microsoft-365/admin/setup)
 - Common admin tasks in Office 365 including email and OneDrive in [Manage Office 365](/microsoft-365/admin/)
-- More info about managing devices, apps, data, troubleshooting, and more in the [/mem/intune/](/mem/intune/)
+- More info about managing devices, apps, data, troubleshooting, and more in the [Intune documentation](/mem/intune/)
 - Learn more about Windows client in the [Windows client documentation for IT Pros](/windows/resources/).
 - Info about distributing apps to your employees, managing apps, managing settings, and more in [Microsoft Store for Business](/microsoft-store/)
 

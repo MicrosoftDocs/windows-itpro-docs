@@ -46,8 +46,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -68,9 +69,9 @@ This policy setting specifies whether Digital Locker can run.
 
 Digital Locker is a dedicated download manager associated with Windows Marketplace and a feature of Windows that can be used to manage and download products acquired and stored in the user's Windows Marketplace Digital Locker.
 
-If you enable this setting, Digital Locker will not run.
+If you enable this setting, Digital Locker won't run.
 
-If you disable or do not configure this setting, Digital Locker can be run.
+If you disable or don't configure this setting, Digital Locker can be run.
 
 <!--/Description-->
 
@@ -94,8 +95,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -116,9 +118,9 @@ This policy setting specifies whether Digital Locker can run.
 
 Digital Locker is a dedicated download manager associated with Windows Marketplace and a feature of Windows that can be used to manage and download products acquired and stored in the user's Windows Marketplace Digital Locker.
 
-If you enable this setting, Digital Locker will not run.
+If you enable this setting, Digital Locker won't run.
 
-If you disable or do not configure this setting, Digital Locker can be run.
+If you disable or don't configure this setting, Digital Locker can be run.
 
 <!--/Description-->
 

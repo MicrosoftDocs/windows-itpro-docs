@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -19,10 +19,11 @@ ms.reviewer:
 # Configure Hybrid Azure AD joined Windows Hello for Business: Directory Synchronization
 
 **Applies to**
--   Windows 10, version 1703 or later
--   Windows 11
--   Hybrid deployment
--   Key trust
+
+- Windows 10, version 1703 or later
+- Windows 11
+- Hybrid deployment
+- Key trust
 
 ## Directory Synchronization
 
@@ -43,6 +44,9 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 5. In the **Enter the object names to select** text box, type the name of the service account used as an AD DS Connector account and click **OK**.
 6. Click **OK** to return to **Active Directory Users and Computers**.
 
+> [!NOTE]
+> If your Active Directory forest has multiple domains, your ADConnect accounts need to be members of the **Enterprise Key Admins** group. This membership is needed to write the keys to other domain users.
+
 ### Section Review
 
 > [!div class="checklist"]
@@ -55,6 +59,7 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 <hr>
 
 ## Follow the Windows Hello for Business hybrid key trust deployment guide
+
 1. [Overview](hello-hybrid-cert-trust.md)
 2. [Prerequisites](hello-hybrid-key-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-key-new-install.md)

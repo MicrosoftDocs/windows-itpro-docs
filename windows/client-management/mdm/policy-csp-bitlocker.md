@@ -1,6 +1,6 @@
 ---
-title: Policy CSP - Bitlocker
-description: Use the Policy configuration service provider (CSP) - Bitlocker to manage encryption of PCs and devices.
+title: Policy CSP - BitLocker
+description: Use the Policy configuration service provider (CSP) - BitLocker to manage encryption of PCs and devices.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -12,7 +12,7 @@ ms.reviewer:
 manager: dansimp
 ---
 
-# Policy CSP - Bitlocker
+# Policy CSP - BitLocker
 
 
 
@@ -22,7 +22,7 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## Bitlocker policies  
+## BitLocker policies  
 
 <dl>
   <dd>
@@ -42,6 +42,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|

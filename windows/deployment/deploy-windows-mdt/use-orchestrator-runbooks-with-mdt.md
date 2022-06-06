@@ -4,7 +4,7 @@ description: Learn how to integrate Microsoft System Center 2012 R2 Orchestrator
 ms.assetid: 68302780-1f6f-4a9c-9407-b14371fdce3f
 ms.reviewer: 
 manager: dougeby
-ms.author: greglin
+ms.author: aaroncz
 keywords: web services, database
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ---
 

@@ -1,16 +1,14 @@
 ---
 title: What's new in Windows 10, version 1803
 description: New and updated features in Windows 10, version 1803 (also known as the Windows 10 April 2018 Update).
-keywords: ["What's new in Windows 10", "Windows 10", "April 2018 Update"]
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.reviewer: 
-author: greg-lindsay
-manager: laurawi
-ms.author: greglin
-ms.localizationpriority: high
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.localizationpriority: medium
 ms.topic: article
+ROBOTS: NOINDEX
 ---
 
 # What's new in Windows 10, version 1803 for IT Pros
@@ -120,7 +118,7 @@ For more information, see [Windows Setup Command-Line Options](/windows-hardware
 
 SetupDiag works by searching Windows Setup log files. When searching log files, SetupDiag uses a set of rules to match known issues. In the current version of SetupDiag there are 26 rules contained in the rules.xml file, which is extracted when SetupDiag is run. The rules.xml file will be updated as new versions of SetupDiag are made available. 
 
-### Windows Update for Business (WUfB)
+### Windows Update for Business
 
 Windows Update for Business now provides greater control over updates, with the ability to pause and uninstall problematic updates using Intune.  For more information, see [Manage software updates in Intune](/intune/windows-update-for-business-configure).
 
