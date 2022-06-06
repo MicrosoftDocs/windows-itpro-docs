@@ -98,7 +98,7 @@ sections:
       - question: |
           Is there a size limit to the domain lists that I need to configure?
         answer: |
-          Yes, both the Enterprise Resource domains that are hosted in the cloud and the domains that are categorized as both work and personal have a 1,6383 Bytes limit.
+          Yes, both the Enterprise Resource domains that are hosted in the cloud and the domains that are categorized as both work and personal have a 1,6383 bytes limit.
 
       - question: |
           Why does my encryption driver break Microsoft Defender Application Guard?
