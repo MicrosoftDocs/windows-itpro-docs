@@ -49,7 +49,7 @@ Alice identifies the following key factors to arrive at the "circle-of-trust" fo
 - All clients are managed by Microsoft Endpoint Manager (MEM) either with Configuration Manager (MEMCM) standalone or hybrid mode with Intune;
 
     > [!NOTE]
-    > Microsoft Endpoint Configuration Manager was previously known as System Center Configuration Manager (SCCM). 
+    > Microsoft Endpoint Configuration Manager was previously known as System Center Configuration Manager. 
 
 - Some, but not all, apps are deployed using MEMCM;
 - Most users are local administrators on their devices;

@@ -473,7 +473,7 @@ Default is 1, meaning the MDM enrollment is the “winning” authority for conf
 Support operations are Get and Set.
 
 <a href="" id="provider-providerid-linkedenrollment-enroll"></a>**Provider/*ProviderID*/LinkedEnrollment/Enroll**
-This is an execution node and will trigger a silent MMP-C enrollment, using the AAD device token pulled from the AADJ’ed device. There is no user interaction needed.
+This is an execution node and will trigger a silent MMP-C enrollment, using the Azure Active Directory device token pulled from the Azure AD-joined device. There is no user interaction needed.
 
 Support operation is Exec.
 

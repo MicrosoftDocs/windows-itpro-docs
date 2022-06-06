@@ -2171,9 +2171,9 @@ The following fields are available:
 - **IsEDPEnabled**  Represents if Enterprise data protected on the device.
 - **IsMDMEnrolled**  Whether the device has been MDM Enrolled or not.
 - **MPNId**  Returns the Partner ID/MPN ID from Regkey. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\DeployID
-- **SCCMClientId**  This ID correlate systems that send data to Compat Analytics (OMS) and other OMS based systems with systems in an Enterprise SCCM environment.
+- **SCCMClientId**  This ID correlate systems that send data to Compat Analytics (OMS) and other OMS based systems with systems in an Enterprise Configuration Manager environment.
 - **ServerFeatures**  Represents the features installed on a Windows   Server. This can be used by developers and administrators who need to automate the process of determining the features installed on a set of server computers.
-- **SystemCenterID**  The SCCM ID is an anonymized one-way hash of the Active Directory Organization identifier
+- **SystemCenterID**  The Configuration Manager ID is an anonymized one-way hash of the Active Directory Organization identifier
 
 
 ### Census.Firmware
@@ -3362,7 +3362,7 @@ The following fields are available:
 - **IsDeviceNetworkMetered**  Indicates whether the device is connected to a metered network.
 - **IsDeviceOobeBlocked**  Indicates whether user approval is required to install updates on the device.
 - **IsDeviceRequireUpdateApproval**  Indicates whether user approval is required to install updates on the device.
-- **IsDeviceSccmManaged**  Indicates whether the device is running the Microsoft SCCM (System Center Configuration Manager) to keep the operating system and applications up to date.
+- **IsDeviceSccmManaged**  Indicates whether the device is running the Microsoft System Center Configuration Manager to keep the operating system and applications up to date.
 - **IsDeviceUninstallActive**  Indicates whether the OS (operating system) on the device was recently updated.
 - **IsDeviceUpdateNotificationLevel**  Indicates whether the device has a set policy to control update notifications.
 - **IsDeviceUpdateServiceManaged**  Indicates whether the device uses WSUS (Windows Server Update Services).
@@ -6058,7 +6058,7 @@ The following fields are available:
 - **RemediationShellDeviceNewOS**  TRUE if the device has a recently installed OS.
 - **RemediationShellDeviceProSku**  Indicates whether a Windows 10 Professional edition is detected.
 - **RemediationShellDeviceQualityUpdatesPaused**  Indicates whether Quality Updates are paused on the device.
-- **RemediationShellDeviceSccm**  TRUE if the device is managed by SCCM (Microsoft System Center Configuration Manager).
+- **RemediationShellDeviceSccm**  TRUE if the device is managed by Microsoft System Center Configuration Manager.
 - **RemediationShellDeviceSedimentMutexInUse**  Indicates whether the Sediment Pack mutual exclusion object (mutex) is in use.
 - **RemediationShellDeviceSetupMutexInUse**  Indicates whether device setup is in progress.
 - **RemediationShellDeviceWuRegistryBlocked**  Indicates whether the Windows Update is blocked on the device via the registry.
@@ -6820,7 +6820,7 @@ The following fields are available:
 - **IsSuccessFailurePostReboot**  Indicates whether the update succeeded and then failed after a restart.
 - **IsWUfBDualScanEnabled**  Indicates whether Windows Update for Business dual scan is enabled on the device.
 - **IsWUfBEnabled**  Indicates whether Windows Update for Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag that indicates if the WU-for-Business target version policy is enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag that indicates if the Windows Update for Business target version policy is enabled on the device.
 - **MergedUpdate**  Indicates whether the OS update and a BSP update merged for installation.
 - **MsiAction**  The stage of MSI installation where it failed.
 - **MsiProductCode**  The unique identifier of the MSI installer.
@@ -6875,9 +6875,9 @@ The following fields are available:
 - **IsFinalOutcomeEvent**  Indicates whether this event signals the end of the update/upgrade process.
 - **IsFirmware**  Indicates whether an update was a firmware update.
 - **IsSuccessFailurePostReboot**  Indicates whether an initial success was a failure after a reboot.
-- **IsWUfBDualScanEnabled**  Flag indicating whether WU-for-Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Flag indicating whether WU-for-Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag that indicates if the WU-for-Business target version policy is enabled on the device.
+- **IsWUfBDualScanEnabled**  Flag indicating whether Windows Update for Business dual scan is enabled on the device.
+- **IsWUfBEnabled**  Flag indicating whether Windows Update for Business is enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag that indicates if the Windows Update for Business target version policy is enabled on the device.
 - **MergedUpdate**  Indicates whether an OS update and a BSP update were merged for install.
 - **ProcessName**  Process name of the caller who initiated API calls into the software distribution client.
 - **QualityUpdatePause**  Indicates whether quality OS updates are paused on the device.
@@ -6936,8 +6936,8 @@ The following fields are available:
 - **IsFinalOutcomeEvent**  Indicates whether this event signals the end of the update/upgrade process.
 - **IsFirmware**  Indicates whether an update was a firmware update.
 - **IsSuccessFailurePostReboot**  Indicates whether an initial success was then a failure after a reboot.
-- **IsWUfBDualScanEnabled**  Flag indicating whether WU-for-Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Flag indicating whether WU-for-Business is enabled on the device.
+- **IsWUfBDualScanEnabled**  Flag indicating whether Windows Update for Business dual scan is enabled on the device.
+- **IsWUfBEnabled**  Flag indicating whether Windows Update for Business is enabled on the device.
 - **MergedUpdate**  Indicates whether an OS update and a BSP update were merged for install.
 - **ProcessName**  Process name of the caller who initiated API calls into the software distribution client.
 - **QualityUpdatePause**  Indicates whether quality OS updates are paused on the device.
@@ -9570,7 +9570,7 @@ The following fields are available:
 - **UnifiedInstallerDeviceAADJoinedHresult**  The result code after checking if device is AAD joined.
 - **UnifiedInstallerDeviceInDssPolicy**  Boolean indicating whether the device is found to be in a DSS policy.
 - **UnifiedInstallerDeviceInDssPolicyHresult**  The result code for checking whether the device is found to be in a DSS policy.
-- **UnifiedInstallerDeviceIsAADJoined**  Boolean indicating whether a device is AADJ.
+- **UnifiedInstallerDeviceIsAADJoined**  Boolean indicating whether a device is Azure Active Directory-joined.
 - **UnifiedInstallerDeviceIsAdJoined**  Boolean indicating whether a device is AD joined.
 - **UnifiedInstallerDeviceIsAdJoinedHresult**  The result code for checking whether a device is AD joined.
 - **UnifiedInstallerDeviceIsEducationSku**  Boolean indicating whether a device is Education SKU.
@@ -9582,8 +9582,8 @@ The following fields are available:
 - **UnifiedInstallerDeviceIsMdmManagedHresult**  The result code from checking whether a device is MDM managed.
 - **UnifiedInstallerDeviceIsProSku**  Boolean indicating whether a device is Pro SKU.
 - **UnifiedInstallerDeviceIsProSkuHresult**  The result code from checking whether a device is Pro SKU.
-- **UnifiedInstallerDeviceIsSccmManaged**  Boolean indicating whether a device is SCCM managed.
-- **UnifiedInstallerDeviceIsSccmManagedHresult**  The result code from checking whether a device is SCCM managed.
+- **UnifiedInstallerDeviceIsSccmManaged**  Boolean indicating whether a device is managed by Configuration Manager.
+- **UnifiedInstallerDeviceIsSccmManagedHresult**  The result code from checking whether a device is managed by Configuration Manager.
 - **UnifiedInstallerDeviceWufbManaged**  Boolean indicating whether a device is Windows Update for Business managed.
 - **UnifiedInstallerDeviceWufbManagedHresult**  The result code from checking whether a device is Windows Update for Business managed.
 - **UnifiedInstallerPlatformResult**  The result code from checking what platform type the device is.

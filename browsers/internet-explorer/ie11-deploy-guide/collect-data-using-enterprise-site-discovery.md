@@ -356,14 +356,14 @@ You can collect your hardware inventory using the using the Systems Management S
     Your environment is now ready to collect your hardware inventory and review the sample reports.
 
 ## View the sample reports with your collected data
-The sample reports, **SCCM Report Sample – ActiveX.rdl** and **SCCM Report Sample – Site Discovery.rdl**, work with System Center 2012, so you can review your collected data.
+The sample reports, **Configuration Manager Report Sample – ActiveX.rdl** and **Configuration Manager Report Sample – Site Discovery.rdl**, work with System Center 2012, so you can review your collected data.
 
-### SCCM Report Sample – ActiveX.rdl
+### Configuration Manager Report Sample – ActiveX.rdl
 Gives you a list of all of the ActiveX-related sites visited by the client computer.
 
 ![ActiveX.rdl report, lists all ActiveX-related sites visited by the client computer.](images/configmgractivexreport.png)
 
-### SCCM Report Sample – Site Discovery.rdl
+### Configuration Manager Report Sample – Site Discovery.rdl
 Gives you a list of all of the sites visited by the client computer.
 
 ![Site Discovery.rdl report, lists all websites visited by the client computer.](images/ie-site-discovery-sample-report.png)
