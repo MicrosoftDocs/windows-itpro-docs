@@ -79,7 +79,7 @@ The following fields are available:
 - **PackageSpecifiers**  The map of Intelligent Delivery region specifiers present in the installing package.
 - **PlanId**  The ID of the streaming plan being used to install the content.
 - **ProductId**  The product ID of the application associated with this event.
-- **RelatedCv**  The related correlation vector. This optional value contains the correlation vector for this install if the Cv value is representing an actiuon tracked by a correlation vector.
+- **RelatedCv**  The related correlation vector. This optional value contains the correlation vector for this install if the Cv value is representing an action tracked by a correlation vector.
 - **RequestSpecifiers**  The map of Intelligent Delivery region specifiers requested by the system/user/title as a part of the install activity.
 - **SourceHardwareID**  The hardware ID of the source device, if it is external storage. Empty if not an external storage device.
 - **SourcePath**  The source path we are installing from. May be a CDN (Content Delivery Network) or a local disk drive.
@@ -488,7 +488,7 @@ The following fields are available:
 - **SdbBlockUpgradeUntilUpdate**  The file is tagged as blocking upgrade in the SDB. If the app is updated, the upgrade can proceed.
 - **SdbReinstallUpgrade**  The file is tagged as needing to be reinstalled after upgrade in the SDB. It does not block upgrade.
 - **SdbReinstallUpgradeWarn**  The file is tagged as needing to be reinstalled after upgrade with a warning in the SDB. It does not block upgrade.
-- **SoftBlock**  The file is softblocked in the SDB and has a warning.
+- **SoftBlock**  The file is soft blocked in the SDB and has a warning.
 
 
 ### Microsoft.Windows.Appraiser.General.DecisionApplicationFileRemove
@@ -1775,7 +1775,7 @@ The following fields are available:
 - **RunAppraiser**  Indicates if Appraiser was set to run at all. If this if false, it is understood that data events will not be received from this device.
 - **RunDate**  The date that the diagnostic data run was stated, expressed as a filetime.
 - **RunGeneralTel**  Indicates if the generaltel.dll component was run. Generaltel collects additional diagnostic data on an infrequent schedule and only from machines at diagnostic data levels higher than Basic.
-- **RunOnline**  Indicates if appraiser was able to connect to Windows Update and theefore is making decisions using up-to-date driver coverage information.
+- **RunOnline**  Indicates if appraiser was able to connect to Windows Update and therefore is making decisions using up-to-date driver coverage information.
 - **RunResult**  The hresult of the Appraiser diagnostic data run.
 - **ScheduledUploadDay**  The day scheduled for the upload.
 - **SendingUtc**  Indicates whether the Appraiser client is sending events during the current diagnostic data run.
@@ -1861,7 +1861,7 @@ The following fields are available:
 - **InternalBatteryCapacityCurrent**  Represents the battery's current fully charged capacity in mWh (or relative). Compare this value to DesignedCapacity  to estimate the battery's wear.
 - **InternalBatteryCapacityDesign**  Represents the theoretical capacity of the battery when new, in mWh.
 - **InternalBatteryNumberOfCharges**  Provides the number of battery charges. This is used when creating new products and validating that existing products meets targeted functionality performance.
-- **IsAlwaysOnAlwaysConnectedCapable**  Represents whether the battery enables the device to be AlwaysOnAlwaysConnected . Boolean value.
+- **IsAlwaysOnAlwaysConnectedCapable**  Represents whether the battery enables the device to be AlwaysOnAlwaysConnected. Boolean value.
 
 
 ### Census.Enterprise
@@ -1874,7 +1874,7 @@ The following fields are available:
 - **AzureOSIDPresent**  Represents the field used to identify an Azure machine.
 - **AzureVMType**  Represents whether the instance is Azure VM PAAS, Azure VM IAAS or any other VMs.
 - **CDJType**  Represents the type of cloud domain joined for the machine.
-- **CommercialId**  Represents the GUID for the commercial entity which the device is a member of.  Will be used to reflect insights back to customers.
+- **CommercialId**  Represents the GUID for the commercial entity that the device is a member of.  Will be used to reflect insights back to customers.
 - **ContainerType**  The type of container, such as process or virtual machine hosted.
 - **EnrollmentType**  Defines the type of MDM enrollment on the device.
 - **HashedDomain**  The hashed representation of the user domain used for login.
