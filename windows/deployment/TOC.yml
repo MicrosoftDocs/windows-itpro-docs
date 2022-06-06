@@ -250,7 +250,7 @@
                 href: update/update-compliance-delivery-optimization.md
               - name: Data handling and privacy in Update Compliance
                 href: update/update-compliance-privacy.md
-            - name: Schema reference (GA)
+            - name: Schema reference
               items:
               - name: Update Compliance schema reference
                 href: update/update-compliance-schema.md
