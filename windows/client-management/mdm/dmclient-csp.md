@@ -545,7 +545,7 @@ The values are : 0= none, 1= sequential, anything else=  parallel.
 
 Supported operations are Get, Add, Replace and Delete.
 
-Value type is integer. Only applicable for Windows 10 multi-session.
+Value type is integer. Only applicable for Windows Enterprise multi-session.
 
 
 <a href="" id="provider-providerid-multiplesession-numallowedconcurrentusersessionatuserlogonsync"></a>**Provider/*ProviderID*/MultipleSession/NumAllowedConcurrentUserSessionAtUserLogonSync**
@@ -557,7 +557,7 @@ The values are : 0= none, 1= sequential, anything else= parallel.
 
 Supported operations are Get, Add, Replace and Delete. 
 
-Value type is integer. Only applicable for Windows 10 multi-session. 
+Value type is integer. Only applicable for Windows Enterprise multi-session. 
 
 <a href="" id="provider-providerid-multiplesession-intervalforscheduledretriesforusersession"></a>**Provider/*ProviderID*/MultipleSession/IntervalForScheduledRetriesForUserSession**
 Optional. This node specifies the waiting time (in minutes) for the initial set of retries as specified by the number of retries in `/<ProviderID>/Poll/NumberOfScheduledRetriesForUserSession`. 
