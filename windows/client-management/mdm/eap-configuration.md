@@ -139,7 +139,7 @@ The following list describes the prerequisites for a certificate to be used with
 -   The certificate must have at least one of the following EKU properties:
 
     -   Client Authentication: As defined by RFC 5280, this property is a well-defined OID with value 1.3.6.1.5.5.7.3.2.
-    -   Any Purpose: This property is an EKU-defined one and is published by Microsoft.,It is a well-defined OID with value 1.3.6.1.4.1.311.10.12.1. The inclusion of this OID implies that the certificate can be used for any purpose. The advantage of this EKU over the All Purpose EKU is that other non-critical or custom EKUs can still be added to the certificate for effective filtering.
+    -   Any Purpose: This property is an EKU-defined one and is published by Microsoft. It is a well-defined OID with value 1.3.6.1.4.1.311.10.12.1. The inclusion of this OID implies that the certificate can be used for any purpose. The advantage of this EKU over the All Purpose EKU is that other non-critical or custom EKUs can still be added to the certificate for effective filtering.
     -   All Purpose: As defined by RFC 5280, if a CA includes EKUs to satisfy some application needs, but doesn't want to restrict usage of the key, the CA can add an EKU value of 0. A certificate with such an EKU can be used for all purposes.
     
 -   The user or the computer certificate on the client must chain to a trusted root CA.
