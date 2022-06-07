@@ -5,8 +5,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
-ms.date: 11/29/2021
+author: dansimp
 ms.reviewer: 
 manager: dansimp
 ---
@@ -245,7 +244,7 @@ Default value is true.
 Value type is bool. Supported operations are Add, Get and Replace.
 
 <a href="" id="defaultoutboundaction"></a>**/DefaultOutboundAction**
-This value is the action that the firewall does by default (and evaluates at the very end) on outbound connections. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used. DefaultOutboundAction will block all outbound traffic unless it's explicitly specified not to block.
+This value is the action that the firewall does by default (and evaluates at the very end) on outbound connections. The merge law for this option is to let the value of the GroupPolicyRSoPStore win if it's configured; otherwise, the local store value is used. DefaultOutboundAction will allow all outbound traffic unless it's explicitly specified not to allow.
 
 - 0x00000000 - allow
 - 0x00000001 - block
