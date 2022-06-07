@@ -48,7 +48,7 @@ The Windows Server 2016 or later domain controller is handling 100 percent of al
 
 ![dc-chart3.](images/plan/dc-chart3.png)
 
-Upgrading another domain controller to Windows Server 2016 or later distributes the public key trust authentication across two domain controllers - each supporting 50 percent of the load.  But it doesn't change the distribution of password and certificate trust authentication. Both Windows Server 2019 domain controllers still share 10 percent of this load. Now look at the scenario when half of the domain controllers are upgraded to Windows Server 2016 or later, but the number of WHFB clients remains the same.
+Upgrading another domain controller to Windows Server 2016 or later distributes the public key trust authentication across two domain controllers - each supporting 50 percent of the load.  But it doesn't change the distribution of password and certificate trust authentication. Both Windows Server 2019 domain controllers still share 10 percent of this load. Now look at the scenario when half of the domain controllers are upgraded to Windows Server 2016 or later, but the number of Windows Hello for Business clients remains the same.
 
 ![dc-chart4.](images/plan/dc-chart4.png)
 
