@@ -355,14 +355,14 @@ The following fields are available:
 Initialization of Explorer is complete.
 
 ## Microsoft-Windows-Security-EFS-EDPAudit-ApplicationLearning.EdpAuditLogApplicationLearning
-For a device subject to Windows Information Protection policy, learning events are generated when an app encounters a policy boundary (for example, trying to open a work document from a personal app). These events help the WIP administrator tune policy rules and prevent unnecessary user disruption.
+For a device subject to Windows Information Protection policy, learning events are generated when an app encounters a policy boundary (for example, trying to open a work document from a personal app). These events help the Windows Information Protection administrator tune policy rules and prevent unnecessary user disruption.
 
 The following fields are available:
 
 - **actiontype:** Indicates what type of resource access the app was attempting (for example, opening a local document vs. a network resource) when it encountered a policy boundary. Useful for Windows Information Protection administrators to tune policy rules.
 - **appIdType:** Based on the type of application, this field indicates what type of app rule a Windows Information Protection administrator would need to create for this app.
 - **appname:** App that triggered the event
-- **status:** Indicates whether errors occurred during WIP learning events
+- **status:** Indicates whether errors occurred during Windows Information Protection learning events
 
 ## Win32kTraceLogging.AppInteractivitySummary
 Summarizes which app windows are being used (for example, have focus) to help Microsoft improve compatibility and user experience. Also helps organizations (by using Desktop Analytics) to understand and improve application reliability on managed devices.

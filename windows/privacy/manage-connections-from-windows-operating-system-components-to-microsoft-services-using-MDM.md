@@ -84,7 +84,7 @@ For Windows 10 and Windows 11, the following MDM policies are available in the [
    1. MDM Policy: [Notifications/DisallowTileNotification](/windows/client-management/mdm/policy-csp-notifications). This policy setting turns off tile notifications. If you enable this policy setting applications and system features will not be able to update their tiles and tile badges in the Start screen.  **Integer value 1**
 
 1. **Mail synchronization**
-   1. MDM Policy: [Accounts/AllowMicrosoftAccountConnection](/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection). Specifies whether the user is allowed to use an MSA account for non-email related connection authentication and services. **Set to 0 (zero)**
+   1. MDM Policy: [Accounts/AllowMicrosoftAccountConnection](/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection). Specifies whether the user is allowed to use an Microsoft account for non-email related connection authentication and services. **Set to 0 (zero)**
 
 1. **Microsoft Account**
    1. MDM Policy: [Accounts/AllowMicrosoftAccountSignInAssistant](/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountsigninassistant). Disable the Microsoft Account Sign-In Assistant. **Set to 0 (zero)**
