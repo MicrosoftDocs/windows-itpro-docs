@@ -119,7 +119,7 @@ Collects Office metadata through UTC to compare with equivalent data collected t
 Applicable to all Win32 applications. Helps us understand the status of the update process of the office suite (Success or failure with error details).
 
 - **build:** App version
-- **channel:** Is this part of SAC or SAC-T?
+- **channel:** Is this part of GA Channel or SAC-T?
 - **errorCode:** What error occurred during the upgrade process?
 - **errorMessage:** what was the error message during the upgrade process?
 - **status:** Was the upgrade successful or not?
