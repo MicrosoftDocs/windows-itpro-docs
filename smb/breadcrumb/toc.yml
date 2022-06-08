@@ -1,10 +1,11 @@
+items:
 - name: Docs
   tocHref: /
   topicHref: /
   items:
     - name: Windows
       tocHref: /windows
-      topicHref: https://docs.microsoft.com/windows/#pivot=it-pro
+      topicHref: /windows/resources/
       items:
       - name: SMB
         tocHref: /windows/smb
