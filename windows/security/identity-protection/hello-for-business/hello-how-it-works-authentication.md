@@ -51,7 +51,7 @@ Azure Active Directory-joined devices authenticate to Azure during sign-in and c
 
 ## Azure AD join authentication to Active Directory using Azure AD Kerberos (cloud trust preview)
 
-![Azure AD join authentication to Azure Active Directory.](images/howitworks/auth-aadj-cloudtrust-kerb.png)
+![Azure Active Directory join authentication to Azure AD.](images/howitworks/auth-aadj-cloudtrust-kerb.png)
 
 | Phase  | Description  |
 | :----: | :----------- |

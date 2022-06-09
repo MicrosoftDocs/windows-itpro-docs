@@ -189,7 +189,7 @@ To configure the cloud trust policy, follow the steps below:
     - Data type: Boolean
     - Value: True
 
-    [![Intune custom device configuration policy creation](./images/hello-cloud-trust-intune.png)](./images/hello-cloud-trust-intune-large.png#lightbox)
+    [![Intune custom-device configuration policy creation](./images/hello-cloud-trust-intune.png)](./images/hello-cloud-trust-intune-large.png#lightbox)
 
 1. Select Next to navigate to **Assignments**.
 1. Under Included groups, select **Add groups**.
