@@ -340,7 +340,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Specifies whether to allow the user to delete the workplace account using the workplace control panel. If the device is Azure Active Directory joined and MDM enrolled (for example, auto-enrolled), then disabling the MDM unenrollment has no effect.
+Specifies whether to allow the user to delete the workplace account using the workplace control panel. If the device is Azure Active Directory-joined and MDM enrolled (for example, auto-enrolled), then disabling the MDM unenrollment has no effect.
 
 > [!NOTE]
 > The MDM server can always remotely delete the account.

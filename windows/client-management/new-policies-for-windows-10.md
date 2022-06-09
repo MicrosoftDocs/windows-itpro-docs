@@ -270,7 +270,7 @@ The following Group Policy settings were added in Windows 10, version 1803:
 - Windows Components\IME\Turn on Live Sticker
 - Windows Components\Remote Desktop Services\Remote Desktop Session Host\Device and Resource Redirection\Do not allow video capture redirection
 - Windows Components\Remote Desktop Services\Remote Desktop Session Host\Remote Session Environment\Use hardware graphics adapters for all Remote Desktop Services sessions
-- Windows Components\Search\Allow Cortana Page in OOBE on an AAD account
+- Windows Components\Search\Allow Cortana Page in OOBE on an Azure Active Directory account
 - Windows Components\Store\Disable all apps from Microsoft Store
 - Windows Components\Text Input\Allow Uninstallation of Language Features
 - Windows Components\Text Input\Improve inking and typing recognition
@@ -311,7 +311,7 @@ The following Group Policy settings were added in Windows 10, version 1709:
 - Windows Components\Data Collection and Preview Builds\Limit Enhanced diagnostic data to the minimum required by Windows Analytics
 - Windows Components\Handwriting\Handwriting Panel Default Mode Docked
 - Windows Components\Internet Explorer\Internet Settings\Advanced settings\Browsing\Hide the button (next to the New Tab button) that opens Microsoft Edge
-- Windows Components\MDM\Auto MDM Enrollment with AAD Token
+- Windows Components\MDM\Auto MDM Enrollment with Azure Active Directory Token
 - Windows Components\Messaging\Allow Message Service Cloud Sync
 - Windows Components\Microsoft Edge\Always show the Books Library in Microsoft Edge
 - Windows Components\Microsoft Edge\Provision Favorites

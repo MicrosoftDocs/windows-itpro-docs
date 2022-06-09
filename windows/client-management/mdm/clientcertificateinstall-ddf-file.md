@@ -931,7 +931,7 @@ Supported operation is Exec.</Description>
                     <Delete />
                     <Replace />
                   </AccessType>
-                  <Description>Optional. Specify the AAD Key Identifier List as a semicolon separated values. On Enroll, the values in this list are validated against the AAD Key present on the device. If no match is found, enrollment will fail.</Description>
+                  <Description>Optional. Specify the Azure Active Directory Key Identifier List as a semicolon separated values. On Enroll, the values in this list are validated against the Azure AD Key present on the device. If no match is found, enrollment will fail.</Description>
                   <DFFormat>
                     <chr />
                   </DFFormat>

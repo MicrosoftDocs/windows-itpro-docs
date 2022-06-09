@@ -187,7 +187,7 @@ Windows Management Instrumentation (WMI) Group Policy Service (GPSVC) has a perf
 
 #### Key-rolling and Key-rotation
 
-This release also includes two new features called Key-rolling and Key-rotation enables secure rolling of Recovery passwords on MDM-managed AAD devices on demand from Microsoft Intune/MDM tools or when a recovery password is used to unlock the BitLocker protected drive. This feature will help prevent accidental recovery password disclosure as part of manual BitLocker drive unlock by users.
+This release also includes two new features called Key-rolling and Key-rotation enables secure rolling of Recovery passwords on MDM-managed Azure Active Directory devices on demand from Microsoft Intune/MDM tools or when a recovery password is used to unlock the BitLocker protected drive. This feature will help prevent accidental recovery password disclosure as part of manual BitLocker drive unlock by users.
 
 ## Deployment
 

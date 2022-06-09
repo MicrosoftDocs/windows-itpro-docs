@@ -162,7 +162,7 @@ ADMX Info:
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 
-This value is a simple boolean value, default false, that can be set by MDM policy to allow the Cortana Page in OOBE when logged in with an AAD account.
+This value is a simple boolean value, default false, that can be set by MDM policy to allow the Cortana Page in OOBE when logged in with an Azure Active Directory account.
 
 <!--/SupportedValues-->
 

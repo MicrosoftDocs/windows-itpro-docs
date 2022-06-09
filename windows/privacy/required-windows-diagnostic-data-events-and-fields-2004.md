@@ -5771,7 +5771,7 @@ The following fields are available:
 - **CV**  The correlation vector.
 - **GlobalEventCounter**  Counts the events at the global level for telemetry.
 - **PackageVersion**  The package version for currency tools.
-- **UnifiedInstallerDeviceAADJoinedHresult**  The result code after checking if device is AAD joined.
+- **UnifiedInstallerDeviceAADJoinedHresult**  The result code after checking if device is Azure Active Directory-joined.
 - **UnifiedInstallerDeviceInDssPolicy**  Boolean indicating whether the device is found to be in a DSS policy.
 - **UnifiedInstallerDeviceInDssPolicyHresult**  The result code for checking whether the device is found to be in a DSS policy.
 - **UnifiedInstallerDeviceIsAADJoined**  Boolean indicating whether a device is AADJ.
@@ -5901,7 +5901,7 @@ The following fields are available:
 - **PackageVersion**  The package version of the label.
 - **UpdateHealthToolsDevicePolicyFileName**  The default name of the policy blob file.
 - **UpdateHealthToolsDssDeviceApiSegment**  The URI segment for reading the DSS device pointer.
-- **UpdateHealthToolsDssDeviceId**  The AAD ID of the device used to create the device ID hash.
+- **UpdateHealthToolsDssDeviceId**  The Azure Active Directory ID of the device used to create the device ID hash.
 - **UpdateHealthToolsDssDevicePolicyApiSegment**  The segment of the device policy API pointer.
 - **UpdateHealthToolsDssTenantId**  The tenant id of the device used to create the tenant id hash.
 - **UpdateHealthToolsHashedDeviceId**  The SHA256 hash of the device id.
@@ -5910,7 +5910,7 @@ The following fields are available:
 
 ### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsServiceBlockedByNoDSSJoin
 
-This event is sent when the device is not joined to AAD. The data collected with this event is used to help keep Windows up to date and secure.
+This event is sent when the device is not joined to Azure Active Directory. The data collected with this event is used to help keep Windows up to date and secure.
 
 The following fields are available:
 

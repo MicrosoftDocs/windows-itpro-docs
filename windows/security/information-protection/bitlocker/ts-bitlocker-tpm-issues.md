@@ -110,5 +110,5 @@ This issue may occur when the Windows operating system is not the owner of the T
 For more information about TPM issues, see the following articles:
 
 - [TPM fundamentals: Anti-hammering](../tpm/tpm-fundamentals.md#anti-hammering)
-- [Troubleshooting hybrid Azure Active Directory joined devices](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current)
+- [Troubleshooting hybrid Azure Active Directory-joined devices](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current)
 - [Troubleshoot the TPM](../tpm/initialize-and-configure-ownership-of-the-tpm.md)

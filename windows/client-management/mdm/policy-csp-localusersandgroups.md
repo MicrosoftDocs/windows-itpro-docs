@@ -59,7 +59,7 @@ manager: dansimp
 This policy setting allows IT admins to add, remove, or replace members of local groups on a managed device.
 
 > [!NOTE]
-> The [RestrictedGroups/ConfigureGroupMembership](./policy-csp-restrictedgroups.md#restrictedgroups-configuregroupmembership) policy setting also allows you to configure members (users or AAD groups) to a Windows 10 local group. However, it allows only for a full replace of the existing groups with the new members and does not allow selective add or remove.
+> The [RestrictedGroups/ConfigureGroupMembership](./policy-csp-restrictedgroups.md#restrictedgroups-configuregroupmembership) policy setting also allows you to configure members (users or Azure Active Directory groups) to a Windows 10 local group. However, it allows only for a full replace of the existing groups with the new members and does not allow selective add or remove.
 >
 > Starting from Windows 10, version 20H2, it is recommended to use the LocalUsersandGroups policy instead of the RestrictedGroups policy. Applying both the policies to the same device is unsupported and may yield unpredictable results. 
 
@@ -104,9 +104,9 @@ See [Use custom settings for Windows 10 devices in Intune](/mem/intune/configura
 
 **Examples**
 
-Example 1: AAD focused.
+Example 1: Azure Active Directory focused.
 
-The following example updates the built-in administrators group with AAD account "bob@contoso.com" and an Azure AD group with the SID **S-1-12-1-111111111-22222222222-3333333333-4444444444** on an AAD-joined machine. 
+The following example updates the built-in administrators group with Azure AD account "bob@contoso.com" and an Azure AD group with the SID **S-1-12-1-111111111-22222222222-3333333333-4444444444** on an AAD-joined machine. 
 
 ```xml
 <GroupConfiguration>
@@ -118,7 +118,7 @@ The following example updates the built-in administrators group with AAD account
 </GroupConfiguration>
 ```
 
-Example 2: Replace / Restrict the built-in administrators group with an AAD user account.
+Example 2: Replace / Restrict the built-in administrators group with an Azure AD user account.
 
 > [!NOTE]
 > When using ‘R’ replace option to configure the built-in ‘Administrators’ group, it is required to always specify the administrator as a member + any other custom members. This is because the built-in administrator must always be a member of the administrators group.
@@ -135,7 +135,7 @@ Example:
 ```
 Example 3: Update action for adding and removing group members on a hybrid joined machine.
 
-The following example shows how you can update a local group (**Administrators**)—add an AD domain group as a member using its name (**Contoso\ITAdmins**), add a AAD group by its SID (**S-1-12-1-111111111-22222222222-3333333333-4444444444**), and remove a local account (**Guest**) if it exists.
+The following example shows how you can update a local group (**Administrators**)—add an AD domain group as a member using its name (**Contoso\ITAdmins**), add a Azure Active Directory group by its SID (**S-1-12-1-111111111-22222222222-3333333333-4444444444**), and remove a local account (**Guest**) if it exists.
 
 ```xml
 <GroupConfiguration> 
@@ -158,7 +158,7 @@ The following example shows how you can update a local group (**Administrators**
 
 > [!NOTE]
 > 
-> When AAD group SID’s are added to local groups, during AAD account logon privileges are evaluated only for the following well-known groups on a Windows 10 device:
+> When Azure Active Directory group SID’s are added to local groups, during Azure AD account logon privileges are evaluated only for the following well-known groups on a Windows 10 device:
 > 
 > - Administrators
 > - Users

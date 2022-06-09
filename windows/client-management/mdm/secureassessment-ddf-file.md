@@ -84,7 +84,7 @@ The XML below is the current version for this CSP.
               <Delete />
               <Replace />
             </AccessType>
-            <Description>The user name of the test taking account.  To specify a domain account, use domain\user. To specify an AAD account, use username@tenant.com. To specify a local account, use the username.</Description>
+            <Description>The user name of the test taking account.  To specify a domain account, use domain\user. To specify an Azure Active Directory account, use username@tenant.com. To specify a local account, use the username.</Description>
             <DFFormat>
               <chr />
             </DFFormat>

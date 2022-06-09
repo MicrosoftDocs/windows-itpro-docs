@@ -31,8 +31,8 @@ You're ready to configure device registration for your hybrid environment. Hybri
 > [!NOTE]
 > Before proceeding, you should familiarize yourself with device registration concepts such as:
 > * Azure AD registered devices
-> * Azure AD joined devices
-> * Hybrid Azure AD joined devices
+> * Azure AD-joined devices
+> * Hybrid Azure AD-joined devices
 >
 > You can learn about this and more by reading [What is a device identity](/azure/active-directory/devices/overview)
 
@@ -40,7 +40,7 @@ You're ready to configure device registration for your hybrid environment. Hybri
 
 Begin configuring device registration to support Hybrid Windows Hello for Business by configuring device registration capabilities in Azure AD.
 
-Follow the guidance on the [How to configure hybrid Azure Active Directory joined devices](/azure/active-directory/devices/hybrid-azuread-join-plan) page. In the **Select your scenario based on your identity infrastructure** section, identify your configuration (either **Managed environment** or **Federated environment**) and perform only the steps applicable to your environment.
+Follow the guidance on the [How to configure hybrid Azure Active Directory-joined devices](/azure/active-directory/devices/hybrid-azuread-join-plan) page. In the **Select your scenario based on your identity infrastructure** section, identify your configuration (either **Managed environment** or **Federated environment**) and perform only the steps applicable to your environment.
 
 If the user principal name (UPN) in your on-premises Active Directory is different from the UPN in Azure AD, you also need to complete the following steps:
 
