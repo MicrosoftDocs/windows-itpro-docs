@@ -29,17 +29,17 @@ ms.technology: windows-sec
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
-You should now have one or more WDAC policies ready to deploy. If you haven't yet completed the steps described in the [WDAC Design Guide](windows-defender-application-control-design-guide.md), do so now before proceeding.
+You should now have one or more Windows Defender Application Control (WDAC) policies ready to deploy. If you haven't yet completed the steps described in the [WDAC Design Guide](windows-defender-application-control-design-guide.md), do so now before proceeding.
 
 ## Plan your deployment
 
-As with any significant change to your environment, implementing application control can have unintended consequences. To ensure the best chance for success, you should follow safe deployment practices and plan your deployment carefully. Decide what devices you will manage with WDAC and split them into deployment rings so you can control the scale of the deployment and respond if anything goes wrong. Define the success criteria that will determine when it's safe to continue from one ring to the next.
+As with any significant change to your environment, implementing application control can have unintended consequences. To ensure the best chance for success, you should follow safe deployment practices and plan your deployment carefully. Decide what devices you will manage with Windows Defender Application Control and split them into deployment rings so you can control the scale of the deployment and respond if anything goes wrong. Define the success criteria that will determine when it's safe to continue from one ring to the next.
 
-All WDAC policy changes should be deployed in audit mode before proceeding to enforcement. Carefully monitor events from devices where the policy has been deployed to ensure the block events you observe match your expectation before broadening the deployment to other deployment rings. If your organization uses Microsoft Defender for Endpoint, you can use the Advanced Hunting feature to centrally monitor WDAC-related events. Otherwise, we recommend using an event log forwarding solution to collect relevant events from your managed endpoints.
+All Windows Defender Application Control policy changes should be deployed in audit mode before proceeding to enforcement. Carefully monitor events from devices where the policy has been deployed to ensure the block events you observe match your expectation before broadening the deployment to other deployment rings. If your organization uses Microsoft Defender for Endpoint, you can use the Advanced Hunting feature to centrally monitor WDAC-related events. Otherwise, we recommend using an event log forwarding solution to collect relevant events from your managed endpoints.
 
 ## Choose how to deploy WDAC policies
 
-There are several options to deploy WDAC policies to managed endpoints, including:
+There are several options to deploy Windows Defender Application Control policies to managed endpoints, including:
 
 1. [Deploy using a Mobile Device Management (MDM) solution](deploy-windows-defender-application-control-policies-using-intune.md), such as Microsoft Intune
 2. [Deploy using Microsoft Endpoint Configuration Manager (MEMCM)](deployment/deploy-wdac-policies-with-memcm.md)

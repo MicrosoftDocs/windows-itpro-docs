@@ -45,7 +45,7 @@ Represents the signature level at which the code was verified.
 |---|----------|
 | 0 | Signing level has not yet been checked |
 | 1 | File is unsigned |
-| 2 | Trusted by WDAC policy |
+| 2 | Trusted by Windows Defender Application Control policy |
 | 3 | Developer signed code |
 | 4 | Authenticode signed |
 | 5 | Microsoft Store signed app PPL (Protected Process Light) |
@@ -83,7 +83,7 @@ Represents why verification failed, or if it succeeded.
 | 18 | Custom signing level not met; returned if signature fails to match CISigners in UMCI |
 | 19 | Binary is revoked by file hash |
 | 20 | SHA1 cert hash's timestamp is missing or after valid cutoff as defined by Weak Crypto Policy |
-| 21 | Failed to pass WDAC policy |
+| 21 | Failed to pass Windows Defender Application Control policy |
 | 22 | Not IUM (Isolated User Mode) signed; indicates trying to load a non-trustlet binary into a trustlet |
 | 23 | Invalid image hash |
 | 24 | Flight root not allowed; indicates trying to run flight-signed code on production OS |
@@ -119,7 +119,7 @@ The rule means trust anything signed by a certificate that chains to this root C
 | 18 | Microsoft ECC Product Root CA 2018 |
 | 19 | Microsoft ECC Devices Root CA 2017 |
 
-For well-known roots, the TBS hashes for the certificates are baked into the code for WDAC. For example, they don’t need to be listed as TBS hashes in the policy file.
+For well-known roots, the TBS hashes for the certificates are baked into the code for Windows Defender Application Control. For example, they don’t need to be listed as TBS hashes in the policy file.
 
 ## Status values
 

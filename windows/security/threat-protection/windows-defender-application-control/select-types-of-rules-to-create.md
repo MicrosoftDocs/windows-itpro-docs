@@ -31,11 +31,11 @@ ms.technology: windows-sec
 
 Windows Defender Application Control (WDAC) can control what runs on Windows 10 and Windows 11, by setting policies that specify whether a driver or application is trusted. A policy includes *policy rules* that control options such as audit mode, and *file rules* (or *file rule levels*) that specify how applications are identified and trusted.
 
-WDAC is used to restrict devices to run only approved apps, while the operating system is hardened against kernel memory attacks using [hypervisor-protected code integrity (HVCI)](/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control).
+Windows Defender Application Control is used to restrict devices to run only approved apps, while the operating system is hardened against kernel memory attacks using [hypervisor-protected code integrity (HVCI)](/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control).
 
 ## Windows Defender Application Control policy rules
 
-To modify the policy rule options of an existing WDAC policy XML, use [Set-RuleOption](/powershell/module/configci/set-ruleoption). The following examples show how to use this cmdlet to add and remove a rule option on an existing WDAC policy:
+To modify the policy rule options of an existing Windows Defender Application Control policy XML, use [Set-RuleOption](/powershell/module/configci/set-ruleoption). The following examples show how to use this cmdlet to add and remove a rule option on an existing WDAC policy:
 
 - To ensure that UMCI is enabled for a WDAC policy that was created with the `-UserPEs` (user mode) option, add rule option 0 to an existing policy, by running the following command:
 
@@ -50,7 +50,7 @@ To modify the policy rule options of an existing WDAC policy XML, use [Set-RuleO
 You can set several rule options within a WDAC policy. Table 1 describes each rule option, and whether they have supplemental policies. However, option 5 isn't implemented as it's reserved for future work, and option 7 isn't supported.
 
 > [!NOTE]
-> We recommend that you use **Enabled:Audit Mode** initially because it allows you to test new WDAC policies before you enforce them. With audit mode, no application is blocked—instead the policy logs an event whenever an application outside the policy is started. To allow these applications, you can capture the policy information from the event log, and then merge that information into the existing policy. When the **Enabled:Audit Mode** is deleted, the policy runs in enforced mode.
+> We recommend that you use **Enabled:Audit Mode** initially because it allows you to test new Windows Defender Application Control policies before you enforce them. With audit mode, no application is blocked—instead the policy logs an event whenever an application outside the policy is started. To allow these applications, you can capture the policy information from the event log, and then merge that information into the existing policy. When the **Enabled:Audit Mode** is deleted, the policy runs in enforced mode.
 
 ### Table 1. Windows Defender Application Control policy - policy rule options
 
@@ -94,7 +94,7 @@ Each file rule level has its benefit and disadvantage. Use Table 2 to select the
 | **SignedVersion** | This level combines the publisher rule with a version number. It allows anything to run from the specified publisher with a version at or above the specified version number. |
 | **Publisher** | This level combines the PcaCertificate level (typically one certificate below the root) and the common name (CN) of the leaf certificate. You can use this rule level to trust a certificate issued by a particular CA and issued to a specific company you trust (such as Intel, for device drivers). |
 | **FilePublisher** | This level combines the “FileName” attribute of the signed file, plus “Publisher” (PCA certificate with CN of leaf), plus a minimum version number. This option trusts specific files from the specified publisher, with a version at or above the specified version number. |
-| **LeafCertificate** | Adds trusted signers at the individual signing certificate level. The benefit of using this level versus the individual hash level is that new versions of the product will have different hash values but typically the same signing certificate. Using this level, no policy update would be needed to run the new version of the application. However, leaf certificates have much shorter validity periods than other certificate levels, so the WDAC policy must be updated whenever these certificates change. |
+| **LeafCertificate** | Adds trusted signers at the individual signing certificate level. The benefit of using this level versus the individual hash level is that new versions of the product will have different hash values but typically the same signing certificate. Using this level, no policy update would be needed to run the new version of the application. However, leaf certificates have much shorter validity periods than other certificate levels, so the Windows Defender Application Control policy must be updated whenever these certificates change. |
 | **PcaCertificate** | Adds the highest available certificate in the provided certificate chain to signers. This level is typically one certificate below the root certificate because the scan doesn't validate anything beyond the certificates included in the provided signature (it doesn't go online or check local root stores). |
 | **RootCertificate** | Currently unsupported. |
 | **WHQL** | Trusts binaries if they've been validated and signed by WHQL. This level is primarily for kernel binaries. |
@@ -102,7 +102,7 @@ Each file rule level has its benefit and disadvantage. Use Table 2 to select the
 | **WHQLFilePublisher** | Specifies that the binaries are validated and signed by WHQL, with a specific publisher (WHQLPublisher), and that the binary is the specified version or newer. This level is primarily for kernel binaries. |
 
 > [!NOTE]
-> When you create WDAC policies with [New-CIPolicy](/powershell/module/configci/new-cipolicy), you can specify a primary file rule level, by including the **-Level** parameter. For discovered binaries that cannot be trusted based on the primary file rule criteria, use the **-Fallback** parameter. For example, if the primary file rule level is PCACertificate, but you would like to trust the unsigned applications as well, using the Hash rule level as a fallback adds the hash values of binaries that did not have a signing certificate.
+> When you create Windows Defender Application Control policies with [New-CIPolicy](/powershell/module/configci/new-cipolicy), you can specify a primary file rule level, by including the **-Level** parameter. For discovered binaries that cannot be trusted based on the primary file rule criteria, use the **-Fallback** parameter. For example, if the primary file rule level is PCACertificate, but you would like to trust the unsigned applications as well, using the Hash rule level as a fallback adds the hash values of binaries that did not have a signing certificate.
 
 > [!NOTE]
 > - WDAC only supports signer rules for RSA certificate signing keys with a maximum of 4096 bits.
@@ -112,19 +112,19 @@ Each file rule level has its benefit and disadvantage. Use Table 2 to select the
 
 For example, consider an IT professional in a department that runs many servers. They only want to run software signed by the companies that provide their hardware, operating system, antivirus, and other important software. They know that their servers also run an internally written application that is unsigned but is rarely updated. They want to allow this application to run.
 
-To create the WDAC policy, they build a reference server on their standard hardware, and install all of the software that their servers are known to run. Then they run [New-CIPolicy](/powershell/module/configci/new-cipolicy) with **-Level Publisher** (to allow software from their software providers, the "Publishers") and **-Fallback Hash** (to allow the internal, unsigned application). They deploy the policy in auditing mode to determine the potential impact from enforcing the policy. Using the audit data, they update their WDAC policies to include any additional software they want to run. Then they enable the WDAC policy in enforced mode for their servers.
+To create the Windows Defender Application Control policy, they build a reference server on their standard hardware, and install all of the software that their servers are known to run. Then they run [New-CIPolicy](/powershell/module/configci/new-cipolicy) with **-Level Publisher** (to allow software from their software providers, the "Publishers") and **-Fallback Hash** (to allow the internal, unsigned application). They deploy the policy in auditing mode to determine the potential impact from enforcing the policy. Using the audit data, they update their WDAC policies to include any additional software they want to run. Then they enable the WDAC policy in enforced mode for their servers.
 
 As part of normal operations, they'll eventually install software updates, or perhaps add software from the same software providers. Because the "Publisher" remains the same on those updates and software, they won't need to update their WDAC policy. If the unsigned, internal application is updated, they must also update the WDAC policy to allow the new version.
 
 ## File rule precedence order
 
-WDAC has a built-in file rule conflict logic that translates to precedence order. It will first process all explicit deny rules it finds. Then, it will process all explicit allow rules. If no deny or allow rule exists, WDAC will check for [Managed Installer EA](deployment/deploy-wdac-policies-with-memcm.md). Lastly, if none of these exist, WDAC will fall back on [ISG](use-windows-defender-application-control-with-intelligent-security-graph.md).
+Windows Defender Application Control has a built-in file rule conflict logic that translates to precedence order. It will first process all explicit deny rules it finds. Then, it will process all explicit allow rules. If no deny or allow rule exists, WDAC will check for [Managed Installer EA](deployment/deploy-wdac-policies-with-memcm.md). Lastly, if none of these exist, WDAC will fall back on [ISG](use-windows-defender-application-control-with-intelligent-security-graph.md).
 
 ## More information about filepath rules
 
 Filepath rules don't provide the same security guarantees that explicit signer rules do, since they're based on mutable access permissions. Filepath rules are best suited for environments where most users are running as standard rather than admin. Path rules are best suited to allow paths that you expect will remain admin-writeable only. You may want to avoid path rules for directories where standard users can modify ACLs on the folder.
 
-By default, WDAC performs a user-writeability check at runtime that ensures that the current permissions on the specified filepath and its parent directories (recursively) don't allow standard users write access.
+By default, Windows Defender Application Control performs a user-writeability check at runtime that ensures that the current permissions on the specified filepath and its parent directories (recursively) don't allow standard users write access.
 
 There's a defined list of SIDs that WDAC recognizes as admins. If a filepath allows write permissions for any SID not in this list, the filepath is considered to be user-writeable, even if the SID is associated to a custom admin user. To handle these special cases, you can override WDAC's runtime admin-writeable check with the **Disabled:Runtime FilePath Rule Protection** option described above.
 

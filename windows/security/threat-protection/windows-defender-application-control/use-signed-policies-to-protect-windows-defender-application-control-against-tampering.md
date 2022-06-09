@@ -29,7 +29,7 @@ ms.technology: windows-sec
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
-Signed WDAC policies give organizations the highest level of malware protection available in Windows—must be signed with [PKCS #7](https://datatracker.ietf.org/doc/html/rfc5652). In addition to their enforced policy rules, signed policies cannot be modified or deleted by a user or administrator on the computer. These policies are designed to prevent administrative tampering and kernel mode exploit access. With this in mind, it is much more difficult to remove signed WDAC policies. Note that SecureBoot must be enabled in order to restrict users from updating or removing signed WDAC policies.
+Signed Windows Defender Application Control (WDAC) policies give organizations the highest level of malware protection available in Windows—must be signed with [PKCS #7](https://datatracker.ietf.org/doc/html/rfc5652). In addition to their enforced policy rules, signed policies cannot be modified or deleted by a user or administrator on the computer. These policies are designed to prevent administrative tampering and kernel mode exploit access. With this in mind, it is much more difficult to remove signed WDAC policies. Note that SecureBoot must be enabled in order to restrict users from updating or removing signed WDAC policies.
 
 Before you sign with PKCS #7 and deploy a signed WDAC policy, we recommend that you [audit the policy](audit-windows-defender-application-control-policies.md) to discover any blocked applications that should be allowed to run. 
 
@@ -38,7 +38,7 @@ If you do not currently have a code signing certificate exported in .pfx format 
 
 Before PKCS #7-signing WDAC policies for the first time, be sure to enable rule options 9 (“Advanced Boot Options Menu”) and 10 (“Boot Audit on Failure”) to leave troubleshooting options available to administrators. To ensure that a rule option is enabled, you can run a command such as `Set-RuleOption -FilePath <PathAndFilename> -Option 9`, even if you're not sure whether the option is already enabled. If so, the command has no effect. When validated and ready for enterprise deployment, you can remove these options. For more information about rule options, see [Windows Defender Application Control policy rules](select-types-of-rules-to-create.md).
 
-To sign a WDAC policy with SignTool.exe, you need the following components:
+To sign a Windows Defender Application Control policy with SignTool.exe, you need the following components:
 
 -   SignTool.exe, found in the [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) (Windows 7 or later)
 
@@ -49,7 +49,7 @@ To sign a WDAC policy with SignTool.exe, you need the following components:
 > [!NOTE]
 > All policies (base and supplemental and single-policy format) must be pkcs7 signed. [PKCS 7 Standard](https://datatracker.ietf.org/doc/html/rfc5652)
 
-If you do not have a code signing certificate, see [Optional: Create a code signing certificate for Windows Defender Application Control](create-code-signing-cert-for-windows-defender-application-control.md) for instructions on how to create one. If you use an alternate certificate or WDAC policy, be sure to update the following steps with the appropriate variables and certificate so that the commands will function properly. To sign the existing WDAC policy, copy each of the following commands into an elevated Windows PowerShell session:
+If you do not have a code signing certificate, see [Optional: Create a code signing certificate for Windows Defender Application Control](create-code-signing-cert-for-windows-defender-application-control.md) for instructions on how to create one. If you use an alternate certificate or Windows Defender Application Control (WDAC) policy, be sure to update the following steps with the appropriate variables and certificate so that the commands will function properly. To sign the existing WDAC policy, copy each of the following commands into an elevated Windows PowerShell session:
 
 1. Initialize the variables that will be used:
 
