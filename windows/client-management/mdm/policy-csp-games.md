@@ -14,8 +14,6 @@ manager: dansimp
 
 # Policy CSP - Games
 
-
-
 <hr/>
 
 <!--Policies-->
@@ -26,7 +24,6 @@ manager: dansimp
     <a href="#games-allowadvancedgamingservices">Games/AllowAdvancedGamingServices</a>
   </dd>
 </dl>
-
 
 <hr/>
 
@@ -57,7 +54,9 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1709. Specifies whether advanced gaming services can be used. These services may send data to Microsoft or publishers of games that use these services. Value type is integer.
+Added in Windows 10, version 1709. Specifies whether advanced gaming services can be used. These services may send data to Microsoft or publishers of games that use these services. 
+
+Supported value type is integer.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -73,3 +72,6 @@ The following list shows the supported values:
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

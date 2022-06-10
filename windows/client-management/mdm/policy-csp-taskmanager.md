@@ -14,7 +14,6 @@ manager: dansimp
 
 # Policy CSP - TaskManager
 
-
 <hr/>
 
 <!--Policies-->
@@ -26,13 +25,13 @@ manager: dansimp
   </dd>
 </dl>
 
-
 <hr/>
 
 <!--Policy-->
 <a href="" id="taskmanager-allowendtask"></a>**TaskManager/AllowEndTask**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -58,9 +57,11 @@ manager: dansimp
 <!--Description-->
 This setting determines whether non-administrators can use Task Manager to end tasks.
 
-Value type is integer. Supported values:  
+Supported value type is integer. 
+
+Supported values:  
 -  0 - Disabled. EndTask functionality is blocked in TaskManager.
--  1 - Enabled (default).  Users can perform EndTask in TaskManager.
+-  1 - Enabled (default). Users can perform EndTask in TaskManager.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -71,13 +72,15 @@ Value type is integer. Supported values:
 <!--/Example-->
 <!--Validation-->
 **Validation procedure:**  
-When this policy is set to 1 - users CAN execute 'End task' on processes in TaskManager 
-When the policy is set to 0 - users CANNOT execute 'End task' on processes in TaskManager
+- When this policy is set to 1 - users CAN execute 'End task' on processes in TaskManager. 
+- When the policy is set to 0 - users CANNOT execute 'End task' on processes in TaskManager.
 
 <!--/Validation-->
 <!--/Policy-->
 <hr/>
 
-
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

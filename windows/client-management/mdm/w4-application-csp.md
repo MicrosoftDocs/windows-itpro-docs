@@ -53,7 +53,6 @@ Optional. Specifies a user–readable application identity. This parameter is al
 This parameter takes a string value. The possible values to configure the NAME parameter are:
 
 -   Character string containing the name.
-
 -   no value specified
 
 > [!NOTE]
@@ -75,9 +74,7 @@ Required. Specifies the network access point identification name (NAPID) defined
 Required. Specifies the address of the MMS application server, as a string. The possible values to configure the ADDR parameter are:
 
 -   A Uniform Resource Identifier (URI)
-
 -   An IPv4 address represented in decimal format with dots as delimiters
-
 -   A fully qualified Internet domain name
 
 <a href="" id="ms"></a>**MS**
