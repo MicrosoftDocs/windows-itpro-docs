@@ -27,12 +27,12 @@ The table below shows the applicability of Windows:
 
 The EnterpriseDataProtection configuration service provider (CSP) is used to configure settings for Windows Information Protection (WIP), formerly known as Enterprise Data Protection. For more information about WIP, see [Protect your enterprise data using Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip).
 
-> [!Note]
-> To make WIP functional, the AppLocker CSP and the network isolation-specific settings must also be configured. For more information, see [AppLocker CSP](applocker-csp.md) and NetworkIsolation policies in [Policy CSP](policy-configuration-service-provider.md).
+> [!NOTE]
+> To make Windows Information Protection functional, the AppLocker CSP and the network isolation-specific settings must also be configured. For more information, see [AppLocker CSP](applocker-csp.md) and NetworkIsolation policies in [Policy CSP](policy-configuration-service-provider.md).
 
-While WIP has no hard dependency on VPN, for best results you should configure VPN profiles first before you configure the WIP policies. For VPN best practice recommendations, see [VPNv2 CSP](vpnv2-csp.md).
+While Windows Information Protection has no hard dependency on VPN, for best results you should configure VPN profiles first before you configure the WIP policies. For VPN best practice recommendations, see [VPNv2 CSP](vpnv2-csp.md).
 
-To learn more about WIP, see the following articles:
+To learn more about Windows Information Protection, see the following articles:
 
 - [Create a Windows Information Protection (WIP) policy](/windows/security/information-protection/windows-information-protection/overview-create-wip-policy)
 - [General guidance and best practices for Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/guidance-and-best-practices-wip)
@@ -63,8 +63,8 @@ The root node for the Windows Information Protection (WIP) configuration setting
 <a href="" id="settings-edpenforcementlevel"></a>**Settings/EDPEnforcementLevel**  
 Set the WIP enforcement level. 
 
-> [!Note]
-> Setting this value isn't sufficient to enable WIP on the device. Attempts to change this value will fail when the WIP cleanup is running.
+> [!NOTE]
+> Setting this value isn't sufficient to enable Windows Information Protection on the device. Attempts to change this value will fail when the WIP cleanup is running.
 
 The following list shows the supported values:
 
@@ -76,13 +76,12 @@ The following list shows the supported values:
 Supported operations are Add, Get, Replace, and Delete. Value type is integer.
 
 <a href="" id="settings-enterpriseprotecteddomainnames"></a>**Settings/EnterpriseProtectedDomainNames**  
-A list of domains used by the enterprise for its user identities separated by pipes (&quot;|&quot;). The first domain in the list must be the primary enterprise ID, that is, the one representing the managing authority for WIP. User identities from one of these domains is considered an enterprise managed account and data associated with it should be protected. For example, the domains for all email accounts owned by the enterprise would be expected to appear in this list. Attempts to change this value will fail when the WIP cleanup is running.
+A list of domains used by the enterprise for its user identities separated by pipes (&quot;|&quot;). The first domain in the list must be the primary enterprise ID, that is, the one representing the managing authority for Windows Information Protection. User identities from one of these domains is considered an enterprise managed account and data associated with it should be protected. For example, the domains for all email accounts owned by the enterprise would be expected to appear in this list. Attempts to change this value will fail when the WIP cleanup is running.
 
 Changing the primary enterprise ID isn't supported and may cause unexpected behavior on the client.
 
-> [!Note]
+> [!NOTE]
 > The client requires domain name to be canonical, otherwise the setting will be rejected by the client.
-
 
 Here are the steps to create canonical domain names:
 
@@ -242,7 +241,7 @@ For EFSCertificate KeyTag, it's expected to be a DER ENCODED binary certificate.
 Supported operations are Add, Get, Replace, and Delete. Value type is base-64 encoded certificate.
 
 <a href="" id="settings-revokeonunenroll"></a>**Settings/RevokeOnUnenroll**  
-This policy controls whether to revoke the WIP keys when a device unenrolls from the management service. If set to 0 (Don't revoke keys), the keys won't be revoked and the user will continue to have access to protected files after unenrollment. If the keys aren't revoked, there will be no revoked file cleanup, later. Prior to sending the unenroll command, when you want a device to do a selective wipe when it's unenrolled, then you should explicitly set this policy to 1.
+This policy controls whether to revoke the Windows Information Protection keys when a device unenrolls from the management service. If set to 0 (Don't revoke keys), the keys won't be revoked and the user will continue to have access to protected files after unenrollment. If the keys aren't revoked, there will be no revoked file cleanup, later. Prior to sending the unenroll command, when you want a device to do a selective wipe when it's unenrolled, then you should explicitly set this policy to 1.
 
 The following list shows the supported values:
 
@@ -252,7 +251,7 @@ The following list shows the supported values:
 Supported operations are Add, Get, Replace, and Delete. Value type is integer.
 
 <a href="" id="settings-revokeonmdmhandoff"></a>**Settings/RevokeOnMDMHandoff**  
-Added in Windows 10, version 1703. This policy controls whether to revoke the WIP keys when a device upgrades from mobile application management (MAM) to MDM. If set to 0 (Don't revoke keys), the keys won't be revoked and the user will continue to have access to protected files after upgrade. This setting is recommended if the MDM service is configured with the same WIP EnterpriseID as the MAM service.
+Added in Windows 10, version 1703. This policy controls whether to revoke the Windows Information Protection keys when a device upgrades from mobile application management (MAM) to MDM. If set to 0 (Don't revoke keys), the keys won't be revoked and the user will continue to have access to protected files after upgrade. This setting is recommended if the MDM service is configured with the same WIP EnterpriseID as the MAM service.
 
 - 0 - Don't revoke keys.
 - 1 (default) - Revoke keys.
@@ -265,7 +264,7 @@ TemplateID GUID to use for Rights Management Service (RMS) encryption. The RMS t
 Supported operations are Add, Get, Replace, and Delete. Value type is string (GUID).
 
 <a href="" id="settings-allowazurermsforedp"></a>**Settings/AllowAzureRMSForEDP**  
-Specifies whether to allow Azure RMS encryption for WIP.
+Specifies whether to allow Azure RMS encryption for Windows Information Protection.
 
 - 0 (default) – Don't use RMS.
 - 1 – Use RMS.
@@ -278,7 +277,7 @@ When this policy isn't specified, the existing auto-encryption behavior is appli
 Supported operations are Add, Get, Replace and Delete. Value type is string.
 
 <a href="" id="settings-edpshowicons"></a>**Settings/EDPShowIcons**  
-Determines whether overlays are added to icons for WIP protected files in Explorer and enterprise only app tiles on the **Start** menu. Starting in Windows 10, version 1703 this setting also configures the visibility of the WIP icon in the title bar of a WIP-protected app.
+Determines whether overlays are added to icons for WIP protected files in Explorer and enterprise only app tiles on the **Start** menu. Starting in Windows 10, version 1703 this setting also configures the visibility of the Windows Information Protection icon in the title bar of a WIP-protected app.
 The following list shows the supported values:
 
 - 0 (default) - No WIP overlays on icons or tiles.
@@ -287,7 +286,7 @@ The following list shows the supported values:
 Supported operations are Add, Get, Replace, and Delete. Value type is integer.
 
 <a href="" id="status"></a>**Status**  
-A read-only bit mask that indicates the current state of WIP on the Device. The MDM service can use this value to determine the current overall state of WIP. WIP is only on (bit 0 = 1) if WIP mandatory policies and WIP AppLocker settings are configured.
+A read-only bit mask that indicates the current state of Windows Information Protection on the Device. The MDM service can use this value to determine the current overall state of WIP. WIP is only on (bit 0 = 1) if WIP mandatory policies and WIP AppLocker settings are configured.
 
 Suggested values:
 
@@ -299,7 +298,7 @@ Bit 0 indicates whether WIP is on or off.
 
 Bit 1 indicates whether AppLocker WIP policies are set.
 
-Bit 3 indicates whether the mandatory WIP policies are configured. If one or more of the mandatory WIP policies aren't configured, the bit 3 is set to 0 (zero).
+Bit 3 indicates whether the mandatory Windows Information Protection policies are configured. If one or more of the mandatory WIP policies aren't configured, the bit 3 is set to 0 (zero).
 
 Here's the list of mandatory WIP policies:
 
