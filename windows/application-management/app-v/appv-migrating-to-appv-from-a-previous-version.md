@@ -2,16 +2,12 @@
 title: Migrating to App-V from a Previous Version (Windows 10/11)
 description: Learn how to migrate to Microsoft Application Virtualization (App-V) for Windows 10/11 from a previous version.
 author: aczechowski
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
 ---
-
 
 # Migrating to App-V from previous versions
 
@@ -119,7 +115,7 @@ There's no direct method to upgrade to a full App-V infrastructure. Use the info
 |Review prerequisites.|[App-V Server prerequisite software](appv-prerequisites.md#app-v-server-prerequisite-software)|
 |Enable the App-V client.|[Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md)|
 |Install App-V Server.|[How to Deploy the App-V Server](appv-deploy-the-appv-server.md)|
-|Migrate existing packages.|See [Converting packages created using a prior version of App-V](#converting-packages-created-using-a-prior-version-of-app-v) earlier in this topic.|
+|Migrate existing packages.|See [Converting packages created using a prior version of App-V](#converting-packages-created-using-a-prior-version-of-app-v) earlier in this article.|
 
 <br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 

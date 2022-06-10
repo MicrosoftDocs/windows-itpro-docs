@@ -14,7 +14,19 @@ ms.date: 07/19/2019
 
 # PassportForWork CSP
 
-The PassportForWork configuration service provider is used to provision Windows Hello for Business (formerly Microsoft Passport for Work). It allows you to sign in to Windows using your Active Directory or Azure Active Directory account and replace passwords, smartcards, and virtual smart cards.
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+The PassportForWork configuration service provider is used to provision Windows Hello for Business (formerly Microsoft Passport for Work). It allows you to log in to Windows using your Active Directory or Azure Active Directory account and replace passwords, smartcards, and virtual smart cards.
+
 
 > [!IMPORTANT]
 > Starting with Windows 10, version 1607 all devices only have one PIN associated with Windows Hello for Business. This means that any PIN on a device will be subject to the policies specified in the PassportForWork CSP. The values specified take precedence over any complexity rules set via Exchange ActiveSync (EAS) or the DeviceLock CSP.

@@ -1,17 +1,12 @@
 ---
 title: Planning Server Isolation Zones (Windows)
 description: Learn how to restrict access to a server to approved users by using a server isolation zone in Windows Defender Firewall with Advanced Security.
-ms.assetid: 5f63c929-589e-4b64-82ea-515d62765b7b
 ms.reviewer: 
 ms.author: dansimp
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021

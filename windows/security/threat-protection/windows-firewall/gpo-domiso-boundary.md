@@ -1,17 +1,12 @@
 ---
 title: GPO\_DOMISO\_Boundary (Windows)
 description: This example GPO supports devices that are not part of the isolated domain to access specific servers that must be available to those untrusted devices.
-ms.assetid: ead3a510-c329-4c2a-9ad2-46a3b4975cfd
 ms.reviewer: 
 ms.author: dansimp
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021
