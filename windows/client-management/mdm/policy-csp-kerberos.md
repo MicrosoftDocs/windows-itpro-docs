@@ -14,7 +14,6 @@ manager: dansimp
 
 # Policy CSP - Kerberos
 
-
 <hr/>
 
 <!--Policies-->
@@ -53,7 +52,6 @@ manager: dansimp
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 > 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
 
 <hr/>
 
@@ -140,8 +138,8 @@ This policy allows retrieving the cloud Kerberos ticket during the sign in.
 
 <!--SupportedValues-->
 Valid values:  
-0 (default) - Disabled. 
-1 - Enabled. 
+0 (default) - Disabled
+1 - Enabled
 
 <!--/SupportedValues-->
 
@@ -184,7 +182,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether a device will request claims and compound authentication for Dynamic Access Control and Kerberos armoring using Kerberos authentication with domains that support these features. 
+This policy setting controls whether a device will request claims and compound authentication for Dynamic Access Control and Kerberos armoring, using Kerberos authentication with domains that support these features. 
 If you enable this policy setting, the client computers will request claims, provide information required to create compounded authentication and armor Kerberos messages in domains that support claims and compound authentication for Dynamic Access Control and Kerberos armoring.
 
 If you disable or don't configure this policy setting, the client devices won't request claims, provide information required to create compounded authentication and armor Kerberos messages. Services hosted on the device won't be able to retrieve claims for clients using Kerberos protocol transition.
@@ -285,9 +283,10 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether a computer requires that Kerberos message exchanges be armored when communicating with a domain controller.
+This policy setting controls whether a computer requires that Kerberos message exchanges being armored when communicating with a domain controller.
 
-Warning: When a domain doesn't support Kerberos armoring by enabling "Support Dynamic Access Control and Kerberos armoring", then all authentication for all its users will fail from computers with this policy setting enabled.
+> [!WARNING]
+> When a domain doesn't support Kerberos armoring by enabling "Support Dynamic Access Control and Kerberos armoring", then all authentication for all its users will fail from computers with this policy setting enabled.
 
 If you enable this policy setting, the client computers in the domain enforce the use of Kerberos armoring in only authentication service (AS) and ticket-granting service (TGS) message exchanges with the domain controllers. 
 
@@ -341,7 +340,7 @@ This policy setting controls the Kerberos client's behavior in validating the KD
 
 If you enable this policy setting, the Kerberos client requires that the KDC's X.509 certificate contains the KDC key purpose object identifier in the Extended Key Usage (EKU) extensions, and that the KDC's X.509 certificate contains a dNSName subjectAltName (SAN) extension that matches the DNS name of the domain. If the computer is joined to a domain, the Kerberos client requires that the KDC's X.509 certificate must be signed by a Certificate Authority (CA) in the NTAuth store. If the computer isn't joined to a domain, the Kerberos client allows the root CA certificate on the smart card to be used in the path validation of the KDC's X.509 certificate.
 
-If you disable or don't configure this policy setting, the Kerberos client requires only that the KDC certificate contain the Server Authentication purpose object identifier in the EKU extensions that can be issued to any server.
+If you disable or don't configure this policy setting, the Kerberos client requires only the KDC certificate that contains the Server Authentication purpose object identifier in the EKU extensions that can be issued to any server.
 
 <!--/Description-->
 
@@ -393,7 +392,7 @@ If you enable this policy setting, the Kerberos client or server uses the config
 If you disable or don't configure this policy setting, the Kerberos client or server uses the locally configured value or the default value. 
 
 > [!NOTE]
-> This policy setting configures the existing MaxTokenSize registry value in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\Kerberos\Parameters, which was added in Windows XP and Windows Server 2003, with a default value of 12,000 bytes. Beginning with Windows 8 the default is 48,000 bytes. Due to HTTP's base64 encoding of authentication context tokens, it's not advised to set this value more than 48,000 bytes.
+> This policy setting configures the existing MaxTokenSize registry value in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\Kerberos\Parameters, which was added in Windows XP and Windows Server 2003, with a default value of 12,000 bytes. Beginning with Windows 8, the default is 48,000 bytes. Due to HTTP's base64 encoding of authentication context tokens, it's not advised to set this value more than 48,000 bytes.
 
 <!--/Description-->
 
@@ -436,9 +435,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Adds a list of domains that an Azure Active Directory joined device can attempt to contact when it can't resolve a UPN to a principal.
+Adds a list of domains that an Azure Active Directory joined device can attempt to contact, when it can't resolve a UPN to a principal.
 
-Devices joined to Azure Active Directory in a hybrid environment need to interact with Active Directory Domain Controllers, but they lack the built-in ability to find a Domain Controller that a domain-joined device has. This limitation can cause failures when such a device needs to resolve an Azure Active Directory UPN into an Active Directory Principal. You can use this policy to avoid those failures.
+Devices joined to Azure Active Directory in a hybrid environment need to interact with Active Directory Domain Controllers, but they lack the built-in ability to find a Domain Controller that a domain-joined device has. This limitation can cause failures, when such a device needs to resolve an Azure Active Directory UPN into an Active Directory Principal. You can use this policy to avoid those failures.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -455,3 +454,6 @@ Devices joined to Azure Active Directory in a hybrid environment need to interac
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)
