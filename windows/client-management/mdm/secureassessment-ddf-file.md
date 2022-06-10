@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 12/05/2017
 ---
 
@@ -184,12 +184,6 @@ The XML below is the current version for this CSP.
 </MgmtTree>
 ```
 
- 
+## Related topics
 
- 
-
-
-
-
-
-
+[SecureAssessment CSP](secureassessment-csp.md)

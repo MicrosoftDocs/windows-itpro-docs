@@ -1,5 +1,5 @@
 ---
-title: Plan for AppLocker policy management (Windows 10)
+title: Plan for AppLocker policy management (Windows)
 description: This topic for describes the decisions you need to make to establish the processes for managing and maintaining AppLocker policies.
 ms.assetid: dccc196f-6ae0-4ae4-853a-a3312b18751b
 ms.reviewer: 
@@ -15,14 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Plan for AppLocker policy management
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for describes the decisions you need to make to establish the processes for managing and maintaining AppLocker policies.
 
@@ -61,7 +66,7 @@ AppLocker can be configured to display the default message but with a custom URL
 
 The following image shows an example of the error message for a blocked app. You can use the **Set a support web link** policy setting to customize the **More information** link.
 
-![applocker blocked application error message](images/blockedappmsg.gif)
+![applocker blocked application error message.](images/blockedappmsg.gif)
 
 For steps to display a custom URL for the message, see [Display a custom URL message when users try to run a blocked app](display-a-custom-url-message-when-users-try-to-run-a-blocked-application.md).
 
@@ -74,7 +79,7 @@ AppLocker event log is located in the following path: **Applications and Service
 2.  **MSI and Script**. Contains events for all files affected by the Windows Installer and script rule collections (.msi, .msp, .ps1, .bat, .cmd, .vbs, and .js).
 3.  **Packaged app-Deployment** or **Packaged app-Execution**, contains events for all Universal Windows apps affected by the packaged app and packed app installer rule collection (.appx).
 
-Collecting these events in a central location can help you maintain your AppLocker policy and troubleshoot rule configuration problems. Event collection technologies such as those available in Windows allow administrators to subscribe to specific event channels and have the events from source computers aggregated into a forwarded event log on a Windows Server operating system collector. For more info about setting up an event subscription, see [Configure Computers to Collect and Forward Events](https://go.microsoft.com/fwlink/p/?LinkId=145012).
+Collecting these events in a central location can help you maintain your AppLocker policy and troubleshoot rule configuration problems. Event collection technologies such as those available in Windows allow administrators to subscribe to specific event channels and have the events from source computers aggregated into a forwarded event log on a Windows Server operating system collector. For more info about setting up an event subscription, see [Configure Computers to Collect and Forward Events](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc748890(v=ws.11)).
 
 ### Policy maintenance
 
@@ -82,7 +87,8 @@ As new apps are deployed or existing apps are updated by the software publisher,
 
 You can edit an AppLocker policy by adding, changing, or removing rules. However, you cannot specify a version for the policy by importing additional rules. To ensure version control when modifying an AppLocker policy, use Group Policy management software that allows you to create versions of Group Policy Objects (GPOs). An example of this type of software is the Advanced Group Policy Management feature from the Microsoft Desktop Optimization Pack. For more info about Advanced Group Policy Management, see [Advanced Group Policy Management Overview](https://go.microsoft.com/fwlink/p/?LinkId=145013) (https://go.microsoft.com/fwlink/p/?LinkId=145013).
 
->**Caution:**  You should not edit an AppLocker rule collection while it is being enforced in Group Policy. Because AppLocker controls what files are allowed to run, making changes to a live policy can create unexpected behavior.
+> [!IMPORTANT]
+> You should not edit an AppLocker rule collection while it is being enforced in Group Policy. Because AppLocker controls what files are allowed to run, making changes to a live policy can create unexpected behavior.
  
 **New version of a supported app**
 
@@ -110,7 +116,7 @@ A file could be blocked for three reasons:
 -   There may be an existing rule that was created for the file that is too restrictive.
 -   A deny rule, which cannot be overridden, is explicitly blocking the file.
 
-Before editing the rule collection, first determine what rule is preventing the file from running. You can troubleshoot the problem by using the **Test-AppLockerPolicy** Windows PowerShell cmdlet. For more info about troubleshooting an AppLocker policy, see [Testing and Updating an AppLocker Policy](https://go.microsoft.com/fwlink/p/?LinkId=160269) (https://go.microsoft.com/fwlink/p/?LinkId=160269).
+Before editing the rule collection, first determine what rule is preventing the file from running. You can troubleshoot the problem by using the **Test-AppLockerPolicy** Windows PowerShell cmdlet. For more info about troubleshooting an AppLocker policy, see [Testing and Updating an AppLocker Policy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee791793(v=ws.10)) (https://go.microsoft.com/fwlink/p/?LinkId=160269).
 
 ## Record your findings
 
@@ -138,103 +144,15 @@ The three key areas to determine for AppLocker policy management are:
 
 The following table contains the added sample data that was collected when determining how to maintain and manage AppLocker policies.
 
-<table style="width:100%;">
-<colgroup>
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Business group</th>
-<th align="left">Organizational unit</th>
-<th align="left">Implement AppLocker?</th>
-<th align="left">Apps</th>
-<th align="left">Installation path</th>
-<th align="left">Use default rule or define new rule condition</th>
-<th align="left">Allow or deny</th>
-<th align="left">GPO name</th>
-<th align="left">Support policy</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Bank Tellers</p></td>
-<td align="left"><p>Teller-East and Teller-West</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Teller Software</p></td>
-<td align="left"><p>C:\Program Files\Woodgrove\Teller.exe</p></td>
-<td align="left"><p>File is signed; create a publisher condition</p></td>
-<td align="left"><p>Allow</p></td>
-<td align="left"><p>Tellers-AppLockerTellerRules</p></td>
-<td align="left"><p>Web help</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Windows files</p>
-<p></p></td>
-<td align="left"><p>C:\Windows</p></td>
-<td align="left"><p>Create a path exception to the default rule to exclude \Windows\Temp</p></td>
-<td align="left"><p>Allow</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Help desk</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Human Resources</p></td>
-<td align="left"><p>HR-All</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Check Payout</p></td>
-<td align="left"><p>C:\Program Files\Woodgrove\HR\Checkcut.exe</p></td>
-<td align="left"><p>File is signed; create a publisher condition</p></td>
-<td align="left"><p>Allow</p></td>
-<td align="left"><p>HR-AppLockerHRRules</p></td>
-<td align="left"><p>Web help</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Time Sheet Organizer</p></td>
-<td align="left"><p>C:\Program Files\Woodgrove\HR\Timesheet.exe</p></td>
-<td align="left"><p>File is not signed; create a file hash condition</p></td>
-<td align="left"><p>Allow</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Web help</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Internet Explorer 7</p></td>
-<td align="left"><p>C:\Program Files\Internet Explorer&lt;/p&gt;</td>
-<td align="left"><p>File is signed; create a publisher condition</p></td>
-<td align="left"><p>Deny</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Web help</p>
-<p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Windows files</p></td>
-<td align="left"><p>C:\Windows</p></td>
-<td align="left"><p>Use the default rule for the Windows path</p></td>
-<td align="left"><p>Allow</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Help desk</p></td>
-</tr>
-</tbody>
-</table>
- 
+|Business group|Organizational unit|Implement AppLocker?|Apps|Installation path|Use default rule or define new rule condition|Allow or deny|GPO name|Support policy|
+|--- |--- |--- |--- |--- |--- |--- |--- |--- |
+|Bank Tellers|Teller-East and Teller-West|Yes|Teller Software|C:\Program Files\Woodgrove\Teller.exe|File is signed; create a publisher condition|Allow|Tellers-AppLockerTellerRules|Web help|
+||||Windows files|C:\Windows|Create a path exception to the default rule to exclude \Windows\Temp|Allow||Help desk|
+|Human Resources|HR-All|Yes|Check Payout|C:\Program Files\Woodgrove\HR\Checkcut.exe|File is signed; create a publisher condition|Allow|HR-AppLockerHRRules|Web help|
+||||Time Sheet Organizer|C:\Program Files\Woodgrove\HR\Timesheet.exe|File is not signed; create a file hash condition|Allow||Web help|
+||||Internet Explorer 7|C:\Program Files\Internet Explorer</p>|File is signed; create a publisher condition|Deny||Web help|
+||||Windows files|C:\Windows|Use the default rule for the Windows path|Allow||Help desk|
+
 The following two tables illustrate examples of documenting considerations to maintain and manage AppLocker policies.
 
 **Event processing policy**
@@ -243,84 +161,17 @@ One discovery method for app usage is to set the AppLocker enforcement mode to *
 
 The following table is an example of what to consider and record.
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Business group</th>
-<th align="left">AppLocker event collection location</th>
-<th align="left">Archival policy</th>
-<th align="left">Analyzed?</th>
-<th align="left">Security policy</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Bank Tellers</p></td>
-<td align="left"><p>Forwarded to: AppLocker Event Repository on srvBT093</p></td>
-<td align="left"><p>Standard</p></td>
-<td align="left"><p>None</p></td>
-<td align="left"><p>Standard</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Human Resources</p></td>
-<td align="left"><p>DO NOT FORWARD. srvHR004</p></td>
-<td align="left"><p>60 months</p></td>
-<td align="left"><p>Yes, summary reports monthly to managers</p></td>
-<td align="left"><p>Standard</p></td>
-</tr>
-</tbody>
-</table>
+|Business group|AppLocker event collection location|Archival policy|Analyzed?|Security policy|
+|--- |--- |--- |--- |--- |
+|Bank Tellers|Forwarded to: AppLocker Event Repository on srvBT093|Standard|None|Standard|
+|Human Resources|DO NOT FORWARD. srvHR004|60 months|Yes, summary reports monthly to managers|Standard|
  
 <b>Policy maintenance policy</b>
 When applications are identified and policies are created for application control, then you can begin documenting how you intend to update those policies.
 The following table is an example of what to consider and record.
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Business group</th>
-<th align="left">Rule update policy</th>
-<th align="left">Application decommission policy</th>
-<th align="left">Application version policy</th>
-<th align="left">Application deployment policy</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Bank Tellers</p></td>
-<td align="left"><p>Planned: Monthly through business office triage</p>
-<p>Emergency: Request through help desk</p></td>
-<td align="left"><p>Through business office triage</p>
-<p>30-day notice required</p></td>
-<td align="left"><p>General policy: Keep past versions for 12 months</p>
-<p>List policies for each application</p></td>
-<td align="left"><p>Coordinated through business office</p>
-<p>30-day notice required</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Human Resources</p></td>
-<td align="left"><p>Planned: Monthly through HR triage</p>
-<p>Emergency: Request through help desk</p></td>
-<td align="left"><p>Through HR triage</p>
-<p>30-day notice required</p></td>
-<td align="left"><p>General policy: Keep past versions for 60 months</p>
-<p>List policies for each application</p></td>
-<td align="left"><p>Coordinated through HR</p>
-<p>30-day notice required</p></td>
-</tr>
-</tbody>
-</table>
+
+|Business group|Rule update policy|Application decommission policy|Application version policy|Application deployment policy|
+|--- |--- |--- |--- |--- |
+|Bank Tellers|Planned: Monthly through business office triage<p>Emergency: Request through help desk|Through business office triage<p>30-day notice required|General policy: Keep past versions for 12 months<p>List policies for each application|Coordinated through business office<p>30-day notice required|
+|Human Resources|Planned: Monthly through HR triage<p>Emergency: Request through help desk|Through HR triage<p>30-day notice required|General policy: Keep past versions for 60 months<p>List policies for each application|Coordinated through HR<p>30-day notice required|
 

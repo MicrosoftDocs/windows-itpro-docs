@@ -8,23 +8,83 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 06/26/2017
 ---
 
 # UnifiedWriteFilter CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Windows SE|No|No|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 The UnifiedWriteFilter (UWF) configuration service provider enables the IT administrator to remotely manage the UWF to help protect physical storage media including any writable storage type.
 
 > **Note**  The UnifiedWriteFilter CSP is only supported in Windows 10 Enterprise and Windows 10 Education.
 
- 
-
-The following diagram shows the UWF configuration service provider in tree format.
-
-![universalwritefilter csp](images/provisioning-csp-uwf.png)
-
+The following example shows the UWF configuration service provider in tree format.
+```
+./Vendor/MSFT
+UnifiedWriteFilter
+┣━━━CurrentSession
+┃   ┣━━━FilterEnabled
+┃   ┣━━━OverlayConsumption
+┃   ┣━━━AvailableOverlaySpace
+┃   ┣━━━CriticalOverlayThreshold
+┃   ┣━━━SWAPFileSize     
+┃   ┣━━━WarningOverlayThreshold
+┃   ┣━━━OverlayType
+┃   ┣━━━OverlayFlags
+┃   ┣━━━MaximumOverlaySize
+┃   ┣━━━PersistDomainSecretKey
+┃   ┣━━━PersistTSCAL
+┃   ┣━━━RegistryExclusions
+┃   ┃   ┗━━━[ExcludedRegistry]
+┃   ┣━━━ServicingEnabled
+┃   ┣━━━Volume
+┃   ┃   ┗━━━[Volume]
+┃   ┃       ┣━━━Protected
+┃   ┃       ┣━━━BindByDriveLetter
+┃   ┃       ┣━━━DriveLetter
+┃   ┃       ┣━━━Exclusions
+┃   ┃       ┃   ┗━━━[ExclusionPath]
+┃   ┃       ┣━━━CommitFile
+┃   ┃       ┗━━━CommitFileDeletion
+┃   ┣━━━ShutdownPending
+┃   ┣━━━CommitRegistry
+┃   ┗━━━CommitRegistryDeletion
+┣━━━NextSession
+┃   ┣━━━FilterEnabled
+┃   ┣━━━HORMEnabled
+┃   ┣━━━OverlayType
+┃   ┣━━━OverlayFlags
+┃   ┣━━━MaximumOverlaySize
+┃   ┣━━━PersistDomainSecretKey
+┃   ┣━━━PersistTSCAL
+┃   ┣━━━RegistryExclusions
+┃   ┃   ┗━━━[ExcludedRegistry]
+┃   ┣━━━ResetPersistentState
+┃   ┣━━━ResetPersistentStateSavedMode
+┃   ┣━━━ServicingEnabled
+┃   ┣━━━SWAPFileSize
+┃   ┗━━━Volume
+┃       ┗━━━[Volume]
+┃           ┣━━━Protected
+┃           ┣━━━BindByDriveLetter
+┃           ┣━━━DriveLetter
+┃           ┗━━━Exclusions
+┃               ┗━━━[ExclusionPath]
+┣━━━ResetSettings
+┣━━━ShutdownSystem
+┗━━━RestartSystem
+```
 <a href="" id="currentsession"></a>**CurrentSession**  
 Required. Represents the current UWF configuration in the current session (power cycle).
 
@@ -46,7 +106,34 @@ The only supported operation is Get.
 <a href="" id="currentsession-criticaloverlaythreshold"></a>**CurrentSession/CriticalOverlayThreshold**  
 Required. The critical threshold size, in megabytes. UWF sends a critical threshold notification event when the UWF overlay size reaches or exceeds this value.
 
-Supported operations are Get and Replace.
+The only supported operation is Get.
+
+<a href="" id="currentsession-volume\<volumeid>\swapfilesize"></a>**CurrentSession/Volume\<VolumeID>\SWAPFileSize**
+
+Required. Read-only CFG_DATATYPE_INTEGER property that contains non-zero (for example, 1) value if volume has overlay file created/used on it.
+
+Future: Contains actual size of the file
+
+<a href="" id="nextsession-volume\<volumeid>\swapfilesize"></a>**NextSession/Volume\<VolumeID>\SWAPFileSize**
+
+Required. Read/Write CFG_DATATYPE_INTEGER property that contains non-zero (for example, 1) if volume has overlay created/used on it.
+
+Setting the value
+- from zero to non-zero will lead to creation of the swapfile on that volume.
+- from non-zero to zero – not supported
+
+To “move” swapfile to another volume, set the SwapfileSize property on that other volume's CSP note to non-zero.
+
+Currently SwapfileSize shouldn't be relied for determining or controlling the overlay size, 
+
+<a href="" id="currentsession-maximumoverlaysize"></a>**CurrentSession/MaximumOverlaySize** or <a href="" id="nextsession-maximumoverlaysize"></a>**NextSession/MaximumOverlaySize**
+should be used for that purpose.
+
+:::image type="content" source="images/overlaysetting.png" alt-text="The overlay setting.":::
+
+> [!NOTE]
+> Only single swapfile is supported in current implementation and creating swapfile on specific volume will disable any other swapfile created on other volumes.
+
 
 <a href="" id="currentsession-warningoverlaythreshold"></a>**CurrentSession/WarningOverlayThreshold**  
 Required. The warning threshold size, in megabytes. UWF sends a warning threshold notification event when the UWF overlay size reaches or exceeds this value.
@@ -64,12 +151,12 @@ Required. Indicates the maximum cache size, in megabytes, of the overlay in the 
 The only supported operation is Get.
 
 <a href="" id="currentsession-persisitdomainsecretkey"></a>**CurrentSession/PersisitDomainSecretKey**  
-Required. Indicates if the domain secret registry key is in the registry exclusion list. If the registry key is not in the exclusion list, changes do not persist after a restart.
+Required. Indicates if the domain secret registry key is in the registry exclusion list. If the registry key isn't in the exclusion list, changes don't persist after a restart.
 
 The only supported operation is Get.
 
 <a href="" id="currentsession-persisttscal"></a>**CurrentSession/PersistTSCAL**  
-Required. Indicates if the Terminal Server Client Access License (TSCAL) registry key is in the UWF registry exclusion list. If the registry key is not in the exclusion list, changes do not persist after a restart.
+Required. Indicates if the Terminal Server Client Access License (TSCAL) registry key is in the UWF registry exclusion list. If the registry key isn't in the exclusion list, changes don't persist after a restart.
 
 The only supported operation is Get.
 
@@ -103,7 +190,7 @@ Required. Indicates the type of binding that the volume uses in the current sess
 The only supported operation is Get.
 
 <a href="" id="currentsession-volume-volume-driveletter"></a>**CurrentSession/Volume/*Volume*/DriveLetter**  
-Required. The drive letter of the volume. If the volume does not have a drive letter, this value is NULL.
+Required. The drive letter of the volume. If the volume doesn't have a drive letter, this value is NULL.
 
 The only supported operation is Get.
 
@@ -126,7 +213,7 @@ Required. This method deletes the specified file and commits the deletion to the
 Supported operations are Get and Execute.
 
 <a href="" id="currentsession-shutdownpending"></a>**CurrentSession/ShutdownPending**  
-Required. This value is True if the system is pending on shutdown. Otherwise, it is False.
+Required. This value is True if the system is pending on shutdown. Otherwise, it's False.
 
 The only supported operation is Get.
 
@@ -166,12 +253,12 @@ Required. Indicates the maximum cache size, in megabytes, of the overlay for the
 Supported operations are Get and Replace.
 
 <a href="" id="nextsession-persisitdomainsecretkey"></a>**NextSession/PersisitDomainSecretKey**  
-Required. Indicates if the domain secret registry key is in the registry exclusion list. If the registry key is not in the exclusion list, changes do not persist after a restart.
+Required. Indicates if the domain secret registry key is in the registry exclusion list. If the registry key isn't in the exclusion list, changes don't persist after a restart.
 
 Supported operations are Get and Replace.
 
 <a href="" id="nextsession-persisttscal"></a>**NextSession/PersistTSCAL**  
-Required. Indicates if the Terminal Server Client Access License (TSCAL) registry key is in the UWF registry exclusion list. If the registry key is not in the exclusion list, changes do not persist after a restart.
+Required. Indicates if the Terminal Server Client Access License (TSCAL) registry key is in the UWF registry exclusion list. If the registry key isn't in the exclusion list, changes don't persist after a restart.
 
 Supported operations are Get and Replace.
 
@@ -209,7 +296,7 @@ Required. Indicates the type of binding that the volume uses in the next session
 Supported operations are Get and Replace.
 
 <a href="" id="nextsession-volume-volume-driveletter"></a>**NextSession/Volume/*Volume*/DriveLetter**  
-The drive letter of the volume. If the volume does not have a drive letter, this value is NULL.
+The drive letter of the volume. If the volume doesn't have a drive letter, this value is NULL.
 
 The only supported operation is Get.
 
@@ -237,7 +324,6 @@ Required. Safely restarts a system protected by UWF, even if the overlay is full
 Supported operations are Get and Execute.
 
 ## Related topics
-
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 

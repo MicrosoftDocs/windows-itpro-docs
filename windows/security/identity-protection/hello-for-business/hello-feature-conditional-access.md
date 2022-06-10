@@ -2,13 +2,13 @@
 title: Conditional Access
 description: Ensure that only approved users can access your devices, applications, and services from anywhere by enabling single sign-on with Azure Active Directory.
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, cert-trust, device, registration, unlock, conditional access
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -34,7 +34,7 @@ To improve productivity, Azure Active Directory provides your users with a broad
 > [!NOTE]
 > For more details about the way Windows Hello for Business interacts with Azure AD Multi-Factor Authentication and Conditional Access, see [this article](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/why-are-my-users-not-prompted-for-mfa-as-expected/ba-p/1449032).
 
-Read [Conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) to learn more about Conditional Access.  Afterwards, read [Getting started with conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal-get-started) to start deploying Conditional access.
+Read [Conditional access in Azure Active Directory](/azure/active-directory/active-directory-conditional-access-azure-portal) to learn more about Conditional Access.  Afterwards, read [Getting started with conditional access in Azure Active Directory](/azure/active-directory/active-directory-conditional-access-azure-portal-get-started) to start deploying Conditional access.
 
 ## Related topics
 

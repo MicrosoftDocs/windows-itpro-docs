@@ -1,15 +1,12 @@
 ---
 title: Use UE-V with custom applications
 description: Use User Experience Virtualization (UE-V) to create your own custom settings location templates with the UE-V template generator.
-author: dansimp
-ms.pagetype: mdop, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
+author: aczechowski
 ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
 
@@ -121,7 +118,7 @@ UE-V for Windows 10, version 1607 includes a new template generator. If you are 
 <img src="media/image1.png" width="537" height="394" />
 -->
 
-![Selecting UE-V features in ADK](images/uev-adk-select-uev-feature.png)
+![Selecting UE-V features in ADK.](images/uev-adk-select-uev-feature.png)
 
 3. To open the generator, select **Microsoft Application Virtualization Generator** from the **Start** menu. 
 
