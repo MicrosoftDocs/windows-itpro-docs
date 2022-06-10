@@ -14,12 +14,21 @@ ms.date: 06/26/2017
 
 # CMPolicy CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 The CMPolicy configuration service provider defines rules that the Connection Manager uses to identify the correct connection for a connection request.
 
 > [!NOTE]
 > This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
-
 
 Each policy entry identifies one or more applications in combination with a host pattern. The policy entry is assigned a list of connection details that Connection Manager uses to satisfy connection requests matching the application and host patterns. CMPolicy configuration service provider can have multiple policies
 
@@ -67,7 +76,7 @@ The following list describes the available mapping policy types:
 <a href="" id="host"></a>**Host**  
 Specifies the name of a host pattern. The host name is matched to the connection request to select the right policy to use.
 
-The host pattern can have two wild cards, "\*" and "+". The host pattern is not a URL pattern and there's no concept of transport or paths on the specific host. For example, the host pattern might be "\*.host\_name.com" to match any prefix to the host\_name.com domains. The host pattern will match "www.host\_name.com" and "mail.host\_name.com", but it will not match "host\_name.com".
+The host pattern can have two wild cards, `*` and `+`. The host pattern isn't a URL pattern and there's no concept of transport or paths on the specific host. For example, the host pattern might be `*.host_name.com` to match any prefix to the `host_name.com` domains. The host pattern will match `www.host_name.com` and `mail.host_name.com`, but it won't match `host_name.com`.
 
 <a href="" id="orderedconnections"></a>**OrderedConnections**  
 Specifies whether the list of connections is in preference order.
@@ -134,7 +143,6 @@ Specifies the type of connection being referenced. The following list describes 
 
 ## OMA client provisioning examples
 
-
 Adding an application-based mapping policy. In this example, the ConnectionId for type CMST\_CONNECTION\_NAME is set to the name of the connection (“GPRSConn1”) that is configured with the CM\_CellularEntries configuration service provider.
 
 ```xml
@@ -180,7 +188,9 @@ Adding an application-based mapping policy. In this example, the ConnectionId fo
 </wap-provisioningdoc>
 ```
 
-Adding a host-based mapping policy. In this example, the ConnectionId for type CMST\_CONNECTION\_NAME is set to the name of the connection (“GPRSConn1”) that is configured with the CM\_CellularEntries configuration service provider.
+Adding a host-based mapping policy:
+
+In this example, the ConnectionId for type CMST\_CONNECTION\_NAME is set to the name of the connection (“GPRSConn1”) that is configured with the CM\_CellularEntries configuration service provider.
 
 ```xml
 <wap-provisioningdoc>
@@ -364,7 +374,6 @@ Adding a host-based mapping policy:
 
 ## Microsoft Custom Elements
 
-
 |Element|Available|
 |--- |--- |
 |parm-query|Yes|
@@ -372,7 +381,6 @@ Adding a host-based mapping policy:
 |characteristic-query|Yes<br> <br>Recursive query: Yes<br> <br>Top-level query: Yes|
 
 ## Related topics
-
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 

@@ -60,7 +60,7 @@ Credential information is encrypted twice. The first encryption is based on the 
 
     Blank passwords are not allowed.
 
-    For more information, see [Microsoft Account Security Overview](https://www.microsoft.com/account/security/default.aspx).
+    For more information, see [How to help keep your Microsoft account safe and secure](https://support.microsoft.com/account-billing/how-to-help-keep-your-microsoft-account-safe-and-secure-628538c2-7006-33bb-5ef4-c917657362b9).
 
 -   **Secondary proof of identity is required**.
 

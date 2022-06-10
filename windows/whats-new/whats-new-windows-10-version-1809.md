@@ -2,15 +2,13 @@
 title: What's new in Windows 10, version 1809
 ms.reviewer: 
 description: Learn about features for Windows 10, version 1809, including features and fixes included in previous cumulative updates to Windows 10, version 1803.
-keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 October 2018 Update"]
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.topic: article
+ROBOTS: NOINDEX
 ---
 
 # What's new in Windows 10, version 1809 for IT Pros
@@ -157,7 +155,7 @@ A network connection is now required to set up a new device. As a result, we rem
 - [Threat analytics](/windows/security/threat-protection/windows-defender-atp/threat-analytics)<br>
 Threat Analytics is a set of interactive reports published by the Microsoft Defender for Endpoint research team as soon as emerging threats and outbreaks are identified. The reports help security operations teams assess impact on their environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.
 
-- [Custom detection](/windows/security/threat-protection/windows-defender-atp/overview-custom-detections)<br>
+- [Custom detection](/microsoft-365/security/defender/custom-detections-overview)<br>
  With custom detections, you can create custom queries to monitor events for any kind of behavior such as suspicious or emerging threats. This can be done by leveraging the power of Advanced hunting through the creation of custom detection rules. 
 
 - [Managed security service provider (MSSP) support](/windows/security/threat-protection/windows-defender-atp/mssp-support-windows-defender-advanced-threat-protection)<br>

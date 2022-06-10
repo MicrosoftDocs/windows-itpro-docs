@@ -93,7 +93,7 @@ The policy setting specifies the category of programs that appears when users op
 
 To use this setting, type the name of a category in the Category box for this setting. You must enter a category that is already defined in Add or Remove Programs. To define a category, use Software Installation.
 
-If you disable this setting or don't configure it, all programs (Category: All) are displayed when the "Add New Programs" page opens. You can use this setting to direct users to the programs they're most likely to need. 
+If you disable this setting or don't configure it, all programs (Category: All) are displayed when the "Add New Programs" page opens. You can use this setting to direct users to the programs they're most likely to need.
 
 > [!NOTE]
 > This setting is ignored if either the "Remove Add or Remove Programs" setting or the "Hide Add New Programs page" setting is enabled.
@@ -129,10 +129,11 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|||
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
-|Education|||
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -148,12 +149,12 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 
-This policy setting removes the "Add a program from CD-ROM or floppy disk" section from the Add New Programs page. This prevents users from using Add or Remove Programs to install programs from removable media.
+This policy setting removes the "Add a program from CD-ROM or floppy disk" section from the Add New Programs page. This feature removal prevents users from using Add or Remove Programs to install programs from removable media.
 
-If you disable this setting or don't configure it, the "Add a program from CD-ROM or floppy disk" option will be available to all users. This setting doesn't prevent users from using other tools and methods to add or remove program components.
+If you disable this setting or don't configure it, the "Add a program from CD-ROM or floppy disk" option is available to all users. This setting doesn't prevent users from using other tools and methods to add or remove program components.
 
 > [!NOTE]
-> If the "Hide Add New Programs page" setting is enabled, this setting is ignored. Also, if the "Prevent removable media source for any install" setting (located in User Configuration\Administrative Templates\Windows Components\Windows Installer) is enabled, users cannot add programs from removable media, regardless of this setting.
+> If the "Hide Add New Programs page" setting is enabled, this setting is ignored. Also, if the "Prevent removable media source for any install" setting (located in User Configuration\Administrative Templates\Windows Components\Windows Installer) is enabled, users can't add programs from removable media, regardless of this setting.
 
 <!--/Description-->
 
@@ -186,8 +187,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -244,8 +246,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -303,8 +306,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -324,7 +328,7 @@ ADMX Info:
 
 This policy setting removes the Add New Programs button from the Add or Remove Programs bar. As a result, users can't view or change the attached page. The Add New Programs button lets users install programs published or assigned by a system administrator.
 
-If you disable this setting or don't configure it, the Add New Programs button will be available to all users. This setting doesn't prevent users from using other tools and methods to install programs.
+If you disable this setting or don't configure it, the Add New Programs button is available to all users. This setting doesn't prevent users from using other tools and methods to install programs.
 
 <!--/Description-->
 
@@ -358,8 +362,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -413,8 +418,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -434,7 +440,7 @@ ADMX Info:
 
 This policy setting removes the Set Program Access and Defaults button from the Add or Remove Programs bar. As a result, users can't view or change the associated page. The Set Program Access and Defaults button lets administrators specify default programs for certain activities, such as Web browsing or sending e-mail, as well as which programs are accessible from the Start menu, desktop, and other locations. 
 
-If you disable this setting or don't configure it, the Set Program Access and Defaults button is available to all users. This setting doesn't prevent users from using other tools and methods to change program access or defaults. This setting doesn't prevent the Set Program Access and Defaults icon from appearing on the Start menu. See the "Remove Set Program Access and Defaults from Start menu" setting.
+If you disable this setting or don't configure it, the **Set Program Access and Defaults** button is available to all users. This setting doesn't prevent users from using other tools and methods to change program access or defaults. This setting doesn't prevent the Set Program Access and Defaults icon from appearing on the Start menu. See the "Remove Set Program Access and Defaults from Start menu" setting.
 
 
 <!--/Description-->
@@ -469,8 +475,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -524,8 +531,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -548,7 +556,7 @@ This policy setting prevents users from using Add or Remove Programs to configur
 If you disable this setting or don't configure it, "Set up services" appears only when there are unconfigured system services. If you enable this setting, "Set up services" never appears. This setting doesn't prevent users from using other methods to configure services.
 
 > [!NOTE]
-> When "Set up services" does not appear, clicking the Add/Remove Windows Components button starts the Windows Component Wizard immediately. Because the only remaining option on the Add/Remove Windows Components page starts the wizard, that option is selected automatically, and the page is bypassed. To remove "Set up services" and prevent the Windows Component Wizard from starting, enable the "Hide Add/Remove Windows Components page" setting. If the "Hide Add/Remove Windows Components page" setting is enabled, this setting is ignored.
+> When "Set up services" doesn't appear, clicking the Add/Remove Windows Components button starts the Windows Component Wizard immediately. Because the only remaining option on the Add/Remove Windows Components page starts the wizard, that option is selected automatically, and the page is bypassed. To remove "Set up services" and prevent the Windows Component Wizard from starting, enable the "Hide Add/Remove Windows Components page" setting. If the "Hide Add/Remove Windows Components page" setting is enabled, this setting is ignored.
 
 <!--/Description-->
 
@@ -582,8 +590,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -639,8 +648,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 

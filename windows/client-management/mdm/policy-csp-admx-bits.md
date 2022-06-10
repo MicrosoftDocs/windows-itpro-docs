@@ -82,8 +82,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -107,7 +108,7 @@ If you enable this policy setting, the BITS client doesn't use Windows Branch Ca
 If you disable or don't configure this policy setting, the BITS client uses Windows Branch Cache.
 
 > [!NOTE]
-> This policy setting does not affect the use of Windows Branch Cache by applications other than BITS. This policy setting does not apply to BITS transfers over SMB. This setting has no effect if the computer's administrative settings for Windows Branch Cache disable its use entirely.
+> This policy setting doesn't affect the use of Windows Branch Cache by applications other than BITS. This policy setting doesn't apply to BITS transfers over SMB. This setting has no effect if the computer's administrative settings for Windows Branch Cache disable its use entirely.
     
 <!--/Description-->
 
@@ -130,8 +131,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -179,8 +181,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -229,8 +232,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -249,7 +253,7 @@ ADMX Info:
 <!--Description-->
 This policy setting determines if the Background Intelligent Transfer Service (BITS) peer caching feature is enabled on a specific computer. By default, the files in a BITS job are downloaded only from the origin server specified by the job's owner.
 
-If BITS peer caching is enabled, BITS caches downloaded files and makes them available to other BITS peers. When transferring a download job, BITS first requests the files for the job from its peers in the same IP subnet. If none of the peers in the subnet have the requested files, BITS downloads them from the origin server.
+If BITS peer caching is enabled, BITS caches downloaded files and makes them available to other BITS peers. When a download job is being transferred, BITS first requests the files for the job from its peers in the same IP subnet. If none of the peers in the subnet have the requested files, BITS downloads them from the origin server.
 
 If you enable this policy setting, BITS downloads files from peers, caches the files, and responds to content requests from peers. Using the "Do not allow the computer to act as a BITS peer caching server" and "Do not allow the computer to act as a BITS peer caching client" policy settings, it's possible to control BITS peer caching functionality at a more detailed level. However, it should be noted that the "Allow BITS peer caching" policy setting must be enabled for the other two policy settings to have any effect.
 
@@ -278,8 +282,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -298,7 +303,7 @@ ADMX Info:
 <!--Description-->
 This policy setting limits the network bandwidth that BITS uses for peer cache transfers (this setting doesn't affect transfers from the origin server).
 
-To prevent any negative impact to a computer caused by serving other peers, by default BITS will use up to 30 percent of the bandwidth of the slowest active network interface. For example, if a computer has both a 100-Mbps network card and a 56-Kbps modem, and both are active, BITS will use a maximum of 30 percent of 56 Kbps. 
+To prevent any negative impact to a computer caused by serving other peers, by default, BITS will use up to 30 percent of the bandwidth of the slowest active network interface. For example, if a computer has both a 100-Mbps network card and a 56-Kbps modem, and both are active, BITS will use a maximum of 30 percent of 56 Kbps.
 
 You can change the default behavior of BITS, and specify a fixed maximum bandwidth that BITS will use for peer caching.
 
@@ -330,8 +335,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -381,8 +387,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -429,8 +436,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -477,8 +485,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -495,7 +504,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting limits the maximum age of files in the Background Intelligent Transfer Service (BITS) peer cache. In order to make the most efficient use of disk space, by default BITS removes any files in the peer cache that haven't been accessed in the past 90 days.
+Available in the latest Windows 10 Insider Preview Build. This policy setting limits the maximum age of files in the Background Intelligent Transfer Service (BITS) peer cache. In order to make the most efficient use of disk space, by default, BITS removes any files in the peer cache that haven't been accessed in the past 90 days.
 
 If you enable this policy setting, you can specify in days the maximum age of files in the cache. You can enter a value between 1 and 120 days.
 
@@ -525,8 +534,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -547,7 +557,7 @@ This policy setting limits the amount of time that Background Intelligent Transf
 
 The time limit applies only to the time that BITS is actively downloading files. When the cumulative download time exceeds this limit, the job is placed in the error state.
 
-By default BITS uses a maximum download time of 90 days (7,776,000 seconds).
+By default, BITS uses a maximum download time of 90 days (7,776,000 seconds).
 
 If you enable this policy setting, you can set the maximum job download time to a specified number of seconds.
 
@@ -575,8 +585,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -600,7 +611,7 @@ If you enable this policy setting, BITS will limit the maximum number of files a
 If you disable or don't configure this policy setting, BITS will use the default value of 200 for the maximum number of files a job can contain.
 
 > [!NOTE]
-> BITS Jobs created by services and the local administrator account do not count toward this limit.
+> BITS Jobs created by services and the local administrator account don't count toward this limit.
 
 <!--/Description-->
 
@@ -624,8 +635,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -649,7 +661,7 @@ If you enable this policy setting, BITS will limit the maximum number of BITS jo
 If you disable or don't configure this policy setting, BITS will use the default BITS job limit of 300 jobs.
 
 > [!NOTE]
-> BITS jobs created by services and the local administrator account do not count toward this limit.
+> BITS jobs created by services and the local administrator account don't count toward this limit.
 
 <!--/Description-->
 
@@ -673,8 +685,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -698,7 +711,7 @@ If you enable this policy setting, BITS will limit the maximum number of BITS jo
 If you disable or don't configure this policy setting, BITS will use the default user BITS job limit of 300 jobs.
 
 > [!NOTE]
-> This limit must be lower than the setting specified in the "Maximum number of BITS jobs for this computer" policy setting, or 300 if the "Maximum number of BITS jobs for this computer" policy setting is not configured. BITS jobs created by services and the local administrator account do not count toward this limit.
+> This limit must be lower than the setting specified in the "Maximum number of BITS jobs for this computer" policy setting, or 300 if the "Maximum number of BITS jobs for this computer" policy setting is not configured. BITS jobs created by services and the local administrator account don't count toward this limit.
 
 <!--/Description-->
 
@@ -722,8 +735,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -747,7 +761,7 @@ If you enable this policy setting, BITS will limit the maximum number of ranges 
 If you disable or don't configure this policy setting, BITS will limit ranges to 500 ranges per file.
 
 > [!NOTE]
-> BITS Jobs created by services and the local administrator account do not count toward this limit.
+> BITS Jobs created by services and the local administrator account don't count toward this limit.
 
 <!--/Description-->
 

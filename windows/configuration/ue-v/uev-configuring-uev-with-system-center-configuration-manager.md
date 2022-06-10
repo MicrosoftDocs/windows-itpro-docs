@@ -2,9 +2,6 @@
 title: Configuring UE-V with Microsoft Endpoint Configuration Manager
 description: Learn how to configure User Experience Virtualization (UE-V) with Microsoft Endpoint Configuration Manager. 
 author: aczechowski
-ms.pagetype: mdop, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
@@ -12,7 +9,6 @@ manager: dougeby
 ms.author: aaroncz
 ms.topic: article
 ---
-
 
 # Configuring UE-V with Microsoft Endpoint Manager 
 
@@ -188,10 +184,6 @@ To distribute a new Notepad template, you would perform these steps:
 3.  Run the command in the .bat file that you created in Step 3 in [Create the First UE-V Template Baseline](#create2).
 
 4.  Import the generated CAB file into ConfigMgr using the console or PowerShell Import-CMBaseline.
-
-## Get the UE-V Configuration Pack
-
-You can download the [System Center 2012 Configuration Pack for Microsoft User Experience Virtualization 2.0](https://www.microsoft.com/download/details.aspx?id=40913) from the Microsoft Download Center.
 
 ## Related topics
 

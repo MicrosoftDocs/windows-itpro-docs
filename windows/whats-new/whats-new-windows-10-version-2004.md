@@ -1,16 +1,13 @@
 ---
 title: What's new in Windows 10, version 2004
 description: New and updated features in Windows 10, version 2004 (also known as the Windows 10 May 2020 Update).
-keywords: ["What's new in Windows 10", "Windows 10", "May 2020 Update"]
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-audience: itpro
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.topic: article
+ROBOTS: NOINDEX
 ---
 
 # What's new in Windows 10, version 2004 for IT Pros
@@ -35,7 +32,7 @@ To download and install Windows 10, version 2004, use Windows Update (**Settings
 
 - Windows Hello PIN sign-in support is [added to Safe mode](/windows-insider/archive/new-in-20H1#windows-hello-pin-in-safe-mode-build-18995).
 
-- Windows Hello for Business now has Hybrid Azure Active Directory support and phone number sign-in (MSA). FIDO2 security key support is expanded to Azure Active Directory hybrid environments, enabling enterprises with hybrid environments to take advantage of [passwordless authentication](/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). For more information, see [Expanding Azure Active Directory support for FIDO2 preview to hybrid environments](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/expanding-azure-active-directory-support-for-fido2-preview-to/ba-p/981894).
+- Windows Hello for Business now has Hybrid Azure Active Directory support and phone number sign-in (Microsoft account). FIDO2 security key support is expanded to Azure Active Directory hybrid environments, enabling enterprises with hybrid environments to take advantage of [passwordless authentication](/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). For more information, see [Expanding Azure Active Directory support for FIDO2 preview to hybrid environments](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/expanding-azure-active-directory-support-for-fido2-preview-to/ba-p/981894).
 
 ### Windows Defender System Guard
 
@@ -263,6 +260,6 @@ For information about Desktop Analytics and this release of Windows 10, see [Wha
 - [What's New in Windows 10](./index.yml): See what's new in other versions of Windows 10.
 - [Start developing on Windows 10, version 2004 today](https://blogs.windows.com/windowsdeveloper/2020/05/12/start-developing-on-windows-10-version-2004-today/): New and updated features in Windows 10 that are of interest to developers.
 - [What's new for business in Windows 10 Insider Preview Builds](/windows-insider/Active-Dev-Branch): A preview of new features for businesses.
-- [What's new in Windows 10, version 2004 - Windows Insiders](/windows-insider/at-home/whats-new-wip-at-home-20h1): This list also includes consumer focused new features.
+- [What's new in Windows 10, version 2004 - Windows Insiders](/windows-insider/archive/new-in-20h1): This list also includes consumer focused new features.
 - [Features and functionality removed in Windows 10](/windows/deployment/planning/windows-10-removed-features): Removed features.
 - [Windows 10 features we're no longer developing](/windows/deployment/planning/windows-10-deprecated-features): Features that are not being developed.

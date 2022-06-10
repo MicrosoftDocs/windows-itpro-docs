@@ -4,13 +4,9 @@ ms.reviewer:
 manager: dougeby
 ms.author: aaroncz
 description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2015 (also known as Windows 10 Enterprise 2015 LTSB).
-keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 Enterprise LTSC 2015"]
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-audience: itpro
 author: aczechowski
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.topic: article
 ---
 
@@ -20,9 +16,6 @@ ms.topic: article
 -   Windows 10 Enterprise LTSC 2015
 
 This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2015 (LTSB). For a brief description of the LTSC servicing channel, see [Windows 10 Enterprise LTSC](index.md).
-
-> [!NOTE]
-> Features in Windows 10 Enterprise LTSC 2015 are equivalent to [Windows 10, version 1507](../whats-new-windows-10-version-1507-and-1511.md).
 
 ## Deployment
 
@@ -36,7 +29,7 @@ With Windows 10, you can create provisioning packages that let you quickly and e
 
 ### AppLocker
 
-AppLocker was available for Windows 8.1, and is improved with Windows 10. See [Requirements to use AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/requirements-to-use-applocker.md) for a list of operating system requirements.
+AppLocker was available for Windows 8.1, and is improved with Windows 10. See [Requirements to use AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/requirements-to-use-applocker) for a list of operating system requirements.
 
 Enhancements to AppLocker in Windows 10 include:
 

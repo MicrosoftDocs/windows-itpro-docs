@@ -205,6 +205,7 @@ ms.localizationpriority: medium
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -259,6 +260,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -321,6 +323,7 @@ To verify AllowAutofill is set to 0 (not allowed):
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -373,6 +376,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -435,6 +439,7 @@ To verify AllowCookies is set to 0 (not allowed):
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -487,6 +492,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -548,6 +554,7 @@ To verify AllowDoNotTrack is set to 0 (not allowed):
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -600,6 +607,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -652,6 +660,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -707,6 +716,7 @@ Most restricted value: 1
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -767,6 +777,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -819,6 +830,7 @@ Most restricted value:  0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -875,6 +887,7 @@ Most restricted value:  0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -936,6 +949,7 @@ To verify AllowPasswordManager is set to 0 (not allowed):
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -997,6 +1011,7 @@ To verify AllowPopups is set to 0 (not allowed):
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1058,6 +1073,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1118,6 +1134,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1178,6 +1195,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1236,6 +1254,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1289,6 +1308,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1349,6 +1369,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1409,6 +1430,7 @@ To verify AllowSmartScreen is set to 0 (not allowed):
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1468,6 +1490,7 @@ Most restricted value: 1
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1527,6 +1550,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1582,6 +1606,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1645,6 +1670,7 @@ To verify whether browsing data is cleared on exit (ClearBrowsingDataOnExit is s
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1703,6 +1729,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1763,6 +1790,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1827,6 +1855,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1894,6 +1923,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1956,6 +1986,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2028,6 +2059,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2089,6 +2121,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2116,7 +2149,7 @@ Most restricted value: 0
 > This policy has no effect when the Browser/HomePages policy isn't configured. 
  
 > [!IMPORTANT]
-> This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the [Microsoft browser extension policy](/legal/windows/agreements/microsoft-browser-extension-policy).
+> This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the [Microsoft browser extension policy](/legal/microsoft-edge/microsoft-browser-extension-policy).
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -2148,6 +2181,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2200,6 +2234,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2253,6 +2288,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2289,6 +2325,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2354,6 +2391,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2408,6 +2446,7 @@ Most restricted value: 1
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2460,6 +2499,7 @@ Most restricted value: 1
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2518,6 +2558,7 @@ Most restricted value: 1
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2571,6 +2612,7 @@ Most restricted value: 1
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2624,6 +2666,7 @@ Most restricted value: 1
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2675,6 +2718,7 @@ Most restricted value: 1
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2727,6 +2771,7 @@ Most restricted value: 1
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2785,6 +2830,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2837,6 +2883,7 @@ Most restricted value: 1
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2866,7 +2913,7 @@ Define a default list of favorites in Microsoft Edge. In this case, the Save a F
 To define a default list of favorites:
 1. In the upper-right corner of Microsoft Edge, click the ellipses (**...**) and select **Settings**.
 2. Click **Import from another browser**, click **Export to file** and save the file.
-3. In the **Options** section of the Group Policy Editor, provide the location that points the file with the list of favorites to provision. <p><p>Specify the URL as:<ul><li>HTTP location: "SiteList"=<http://localhost:8080/URLs.html></li><li>Local network: "SiteList"="\network\shares\URLs.html"</li><li>Local file: "SiteList"=file:///c:/Users/Documents/URLs.html</li></ul>
+3. In the **Options** section of the Group Policy Editor, provide the location that points the file with the list of favorites to provision. <p><p>Specify the URL as:<ul><li>HTTP location: "SiteList"=`<http://localhost:8080/URLs.html>`</li><li>Local network: "SiteList"="\network\shares\URLs.html"</li><li>Local file: "SiteList"=file:///c:/Users/Documents/URLs.html</li></ul>
 
 
 >[!IMPORTANT]
@@ -2898,6 +2945,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2951,6 +2999,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -2975,7 +3024,7 @@ Most restricted value: 0
 [!INCLUDE [set-default-search-engine-shortdesc](../includes/set-default-search-engine-shortdesc.md)]
 
 > [!IMPORTANT]
-> This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the [Microsoft browser extension policy](/legal/windows/agreements/microsoft-browser-extension-policy).
+> This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the [Microsoft browser extension policy](/legal/microsoft-edge/microsoft-browser-extension-policy).
 
 
 Most restricted value:  0
@@ -3012,6 +3061,7 @@ Most restricted value: 1
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -3070,6 +3120,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -3127,6 +3178,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -3179,6 +3231,7 @@ Most restricted value: 0
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -3227,6 +3280,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -3290,6 +3344,7 @@ To verify that favorites are in synchronized between Internet Explorer and Micro
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -3348,6 +3403,7 @@ Supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|

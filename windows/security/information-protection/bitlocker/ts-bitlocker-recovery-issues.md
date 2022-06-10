@@ -20,7 +20,7 @@ ms.custom: bitlocker
 
 # BitLocker recovery: known issues
 
-This article describes common issues that may prevent BitLocker from behaving as expected when you recover a drive, or that may cause BitLocker to start recovery unexpectedly. The article provides guidance to address these issues.
+This article describes common issues that may prevent BitLocker from behaving as expected when you recover a drive, or that may cause BitLocker to start recovery unexpectedly. The article also provides guidance to address these issues.
 
 > [!NOTE]
 > In this article, "recovery password" refers to the 48-digit recovery password and "recovery key" refers to 32-digit recovery key. For more information, see [BitLocker key protectors](./prepare-your-organization-for-bitlocker-planning-and-policies.md#bitlocker-key-protectors).
@@ -31,7 +31,7 @@ Windows prompts you for a BitLocker recovery password. However, you did not conf
 
 ### Resolution
 
-The BitLocker and Active Directory Domain Services (AD DS) FAQ addresses situations that may produce this symptom, and provides information about how to resolve the issue:
+The BitLocker and Active Directory Domain Services (AD DS) FAQ address situations that may produce this symptom, and provides information about the procedure to resolve the issue:
 
 - [What if BitLocker is enabled on a computer before the computer has joined the domain?](./bitlocker-and-adds-faq.yml#what-if-bitlocker-is-enabled-on-a-computer-before-the-computer-has-joined-the-domain-)
 
@@ -60,7 +60,7 @@ You can use either of the following methods to manually back up or synchronize a
 
 ## Tablet devices do not support using Manage-bde -forcerecovery to test recovery mode
 
-You have a tablet or slate device, and you try to test BitLocker Recovery by running the following command:
+You have a tablet or slate device, and you try to test BitLocker recovery by running the following command:
 
 ```console
 Manage-bde -forcerecovery
@@ -73,7 +73,7 @@ However, after you enter the recovery password, the device cannot start.
 > [!IMPORTANT]
 > Tablet devices do not support the **manage-bde -forcerecovery** command.
 
-This issue occurs because the Windows Boot Manager cannot process touch input during the pre-boot phase of startup. If Boot Manager detects that the device is a tablet, it redirects the startup process to the Windows Recovery Environment (WinRE), which can process touch input.
+This issue occurs because the Windows Boot Manager cannot process touch-input during the pre-boot phase of startup. If Boot Manager detects that the device is a tablet, it redirects the startup process to the Windows Recovery Environment (WinRE), which can process touch-input.
 
 If WindowsRE detects the TPM protector on the hard disk, it does a PCR reseal. However, the **manage-bde -forcerecovery** command deletes the TPM protectors on the hard disk. Therefore, WinRE cannot reseal the PCRs. This failure triggers an infinite BitLocker recovery cycle and prevents Windows from starting.
 
@@ -103,7 +103,7 @@ To resolve the restart loop, follow these steps:
 
 ## After you install UEFI or TPM firmware updates on Surface, BitLocker prompts for the recovery password
 
-You have a Surface device that has BitLocker Drive Encryption turned on. You update the firmware of the device TPM or install an update that changes the signature of the system firmware. For example, you install the Surface TPM (IFX) update.
+You have a Surface device that has BitLocker drive encryption turned on. You update the firmware of the device TPM or install an update that changes the signature of the system firmware. For example, you install the Surface TPM (IFX) update.
 
 You experience one or more of the following symptoms on the Surface device:
 
@@ -115,14 +115,14 @@ You experience one or more of the following symptoms on the Surface device:
 
 This issue occurs if the Surface device TPM is configured to use Platform Configuration Register (PCR) values other than the default values of PCR 7 and PCR 11. For example, the following settings can configure the TPM this way:
 
-- Secure Boot is turned off.
-- PCR values have been explicitly defined, such as by Group Policy.
+- Secure boot is turned off.
+- PCR values have been explicitly defined, such as by group policy.
 
 Devices that support Connected Standby (also known as *InstantGO* or *Always On, Always Connected PCs*), including Surface devices, must use PCR 7 of the TPM. In its default configuration on such systems, BitLocker binds to PCR 7 and PCR 11 if PCR 7 and Secure Boot are correctly configured. For more information, see "About the Platform Configuration Register (PCR)" at [BitLocker Group Policy Settings](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj679890(v=ws.11)#about-the-platform-configuration-register-pcr)).
 
 ### Resolution
 
-To verify the PCR values that are in use on a device, open and elevated Command Prompt window and run the following command:
+To verify the PCR values that are in use on a device, open an elevated Command Prompt window and run the following command:
 
 ```console
 manage-bde.exe -protectors -get <OSDriveLetter>:
@@ -170,7 +170,7 @@ To do this, follow these steps:
 1. When you are prompted, enter the BitLocker recovery password that you obtained in step 1.
 
 > [!NOTE]
-> After you disable the TPM protectors, BitLocker Drive Encryption no longer protects your device. To re-enable BitLocker Drive Encryption, select **Start**, type **Manage BitLocker**, and then press Enter. Follow the steps to encrypt your drive.
+> After you disable the TPM protectors, BitLocker drive encryption no longer protects your device. To re-enable BitLocker drive encryption, select **Start**, type **Manage BitLocker**, and then press Enter. Follow the steps to encrypt your drive.
 
 #### <a id="step-2"></a>Step 2: Use Surface BMR to recover data and reset your device
 
@@ -193,9 +193,9 @@ To recover data from your Surface device if you cannot start Windows, follow ste
 
 #### Step 3: Restore the default PCR values
 
-To prevent this issue from recurring, we strongly recommend that you restore the default configuration of Secure Boot and the PCR values.
+To prevent this issue from recurring, we strongly recommend that you restore the default configuration of secure boot and the PCR values.
 
-To enable Secure Boot on a Surface device, follow these steps:
+To enable secure boot on a Surface device, follow these steps:
 
 1. Suspend BitLocker. to do this, open an elevated Windows PowerShell window, and run the following cmdlet:
 
@@ -212,6 +212,7 @@ To enable Secure Boot on a Surface device, follow these steps:
 1. Open an elevated PowerShell window, and run the following cmdlet:  
 
    ```powershell
+
    Resume-BitLocker -MountPoint "<DriveLetter>:"
    ```
 
@@ -252,7 +253,6 @@ To suspend BitLocker while you install TPM or UEFI firmware updates:
    Suspend-BitLocker -MountPoint "<DriveLetter>:" -RebootCount 0  
 
    ```
-
    In this cmdlet <*DriveLetter*> is the letter that is assigned to your drive.
 
 1. Install the Surface device driver and firmware updates.
@@ -263,7 +263,7 @@ To suspend BitLocker while you install TPM or UEFI firmware updates:
    Resume-BitLocker -MountPoint "<DriveLetter>:"
    ```
 
-To re-enable BitLocker Drive Encryption, select **Start**, type **Manage BitLocker**, and then press Enter. Follow the steps to encrypt your drive.
+To re-enable BitLocker drive encryption, select **Start**, type **Manage BitLocker**, and then press Enter. Follow the steps to encrypt your drive.
 
 ## After you install an update to a Hyper V-enabled computer, BitLocker prompts for the recovery password and returns error 0xC0210000
 
@@ -341,5 +341,5 @@ For more information about this technology, see [Windows Defender System Guard: 
 
 To resolve this issue, do one of the following:
 
-- Remove any device that uses TPM 1.2 from any group that is subject to Group Policy Objects (GPOs) that enforce Secure Launch.
+- Remove any device that uses TPM 1.2 from any group that is subject to GPOs that enforce secure launch.
 - Edit the **Turn On Virtualization Based Security** GPO to set **Secure Launch Configuration** to **Disabled**.
