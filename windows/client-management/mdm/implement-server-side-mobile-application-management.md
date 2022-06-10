@@ -80,17 +80,17 @@ Since the [Poll](dmclient-csp.md#provider-providerid-poll) node isn’t provided
 
 MAM on Windows supports the following configuration service providers (CSPs). All other CSPs will be blocked. Note the list may change later based on customer feedback:
 
-- [AppLocker CSP](applocker-csp.md) for configuration of WIP enterprise allowed apps.
+- [AppLocker CSP](applocker-csp.md) for configuration of Windows Information Protection enterprise allowed apps.
 - [ClientCertificateInstall CSP](clientcertificateinstall-csp.md) for installing VPN and Wi-Fi certs.
 - [DeviceStatus CSP](devicestatus-csp.md) required for Conditional Access support (starting with Windows 10, version 1703).
 - [DevInfo CSP](devinfo-csp.md).
 - [DMAcc CSP](dmacc-csp.md).
 - [DMClient CSP](dmclient-csp.md) for polling schedules configuration and MDM discovery URL.
-- [EnterpriseDataProtection CSP](enterprisedataprotection-csp.md) has WIP policies.
+- [EnterpriseDataProtection CSP](enterprisedataprotection-csp.md) has Windows Information Protection policies.
 - [Health Attestation CSP](healthattestation-csp.md) required for Conditional Access support (starting with Windows 10, version 1703).
 - [PassportForWork CSP](passportforwork-csp.md) for Windows Hello for Business PIN management.
 - [Policy CSP](policy-configuration-service-provider.md) specifically for NetworkIsolation and DeviceLock areas.
-- [Reporting CSP](reporting-csp.md) for retrieving WIP logs.
+- [Reporting CSP](reporting-csp.md) for retrieving Windows Information Protection logs.
 - [RootCaTrustedCertificates CSP](rootcacertificates-csp.md).
 - [VPNv2 CSP](vpnv2-csp.md) should be omitted for deployments where IT is planning to allow access and protect cloud-only resources with MAM.
 - [WiFi CSP](wifi-csp.md) should be omitted for deployments where IT is planning to allow access and protect cloud-only resources with MAM. 
@@ -116,13 +116,13 @@ MAM policy syncs are modeled after MDM. The MAM client uses an Azure AD token to
 Windows doesn't support applying both MAM and MDM policies to the same devices. If configured by the admin, users can change their MAM enrollment to MDM.
 
 > [!NOTE]
-> When users upgrade from MAM to MDM on Windows Home edition, they lose access to WIP. On Windows Home edition, we don't recommend pushing MDM policies to enable users to upgrade.
+> When users upgrade from MAM to MDM on Windows Home edition, they lose access to Windows Information Protection. On Windows Home edition, we don't recommend pushing MDM policies to enable users to upgrade.
 
 To configure MAM device for MDM enrollment, the admin needs to configure the MDM Discovery URL in the DMClient CSP. This URL will be used for MDM enrollment.
 
-In the process of changing MAM enrollment to MDM, MAM policies will be removed from the device after MDM policies have been successfully applied. Normally when WIP policies are removed from the device, the user’s access to WIP-protected documents is revoked (selective wipe) unless EDP CSP RevokeOnUnenroll is set to false. To prevent selective wipe on enrollment change from MAM to MDM, the admin needs to ensure that:
+In the process of changing MAM enrollment to MDM, MAM policies will be removed from the device after MDM policies have been successfully applied. Normally when Windows Information Protection policies are removed from the device, the user’s access to WIP-protected documents is revoked (selective wipe) unless EDP CSP RevokeOnUnenroll is set to false. To prevent selective wipe on enrollment change from MAM to MDM, the admin needs to ensure that:
 
-- Both MAM and MDM policies for the organization support WIP.
+- Both MAM and MDM policies for the organization support Windows Information Protection.
 - EDP CSP Enterprise ID is the same for both MAM and MDM.
 - EDP CSP RevokeOnMDMHandoff is set to false.
 
