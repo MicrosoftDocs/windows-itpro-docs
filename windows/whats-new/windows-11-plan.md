@@ -1,10 +1,7 @@
 ---
 title: Plan for Windows 11
 description: Windows 11 deployment planning, IT Pro content.
-keywords: ["get started", "windows 11", "plan"]
 ms.prod: w11
-ms.mktglfcycl: deploy
-ms.sitesec: library
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
