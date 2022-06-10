@@ -4,13 +4,9 @@ ms.reviewer:
 manager: dougeby
 ms.author: aaroncz
 description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2015 (also known as Windows 10 Enterprise 2015 LTSB).
-keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 Enterprise LTSC 2015"]
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-audience: itpro
 author: aczechowski
-ms.localizationpriority: low
+ms.localizationpriority: medium
 ms.topic: article
 ---
 
@@ -20,9 +16,6 @@ ms.topic: article
 -   Windows 10 Enterprise LTSC 2015
 
 This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2015 (LTSB). For a brief description of the LTSC servicing channel, see [Windows 10 Enterprise LTSC](index.md).
-
-> [!NOTE]
-> Features in Windows 10 Enterprise LTSC 2015 are equivalent to [Windows 10, version 1507](../whats-new-windows-10-version-1507-and-1511.md).
 
 ## Deployment
 

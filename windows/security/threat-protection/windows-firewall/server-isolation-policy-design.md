@@ -1,17 +1,12 @@
 ---
 title: Server Isolation Policy Design (Windows)
 description: Learn about server isolation policy design, where you assign servers to a zone that allows access only to members of an approved network access group.
-ms.assetid: f93f65cd-b863-461e-ab5d-a620fd962c9a
 ms.reviewer: 
 ms.author: dansimp
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021

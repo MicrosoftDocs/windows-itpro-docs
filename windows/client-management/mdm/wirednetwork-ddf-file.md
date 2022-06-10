@@ -167,3 +167,7 @@ The XML below is the current version for this CSP.
       </Node>
 </MgmtTree>
 ```
+
+## Related topics
+
+[WiredNetwork CSP](wirednetwork-csp.md)

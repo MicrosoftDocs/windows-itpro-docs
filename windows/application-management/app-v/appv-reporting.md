@@ -2,9 +2,6 @@
 title: About App-V Reporting (Windows 10/11)
 description: Learn how the App-V reporting feature collects information about computers running the App-V client and virtual application package usage.
 author: aczechowski
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 04/16/2018
 ms.reviewer: 
@@ -12,6 +9,7 @@ manager: dougeby
 ms.author: aaroncz
 ms.topic: article
 ---
+
 # About App-V reporting
 
 [!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
@@ -212,7 +210,7 @@ You should also ensure that the reporting server web service’s **Maximum Concu
 
 
 
-## Related topics
+## Related articles
 
 * [Deploying the App-V server](appv-deploying-the-appv-server.md)
 * [How to install the reporting server on a standalone computer and connect it to the database](appv-install-the-reporting-server-on-a-standalone-computer.md)
