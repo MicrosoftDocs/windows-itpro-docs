@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_LeakDiagnostic
-description: Policy CSP - ADMX_LeakDiagnostic
+description: Learn about the Policy CSP - ADMX_LeakDiagnostic.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -42,8 +42,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -62,13 +63,13 @@ manager: dansimp
 <!--Description-->
 This policy setting substitutes custom alert text in the disk diagnostic message shown to users when a disk reports a S.M.A.R.T. fault.  
 
-- If you enable this policy setting, Windows displays custom alert text in the disk diagnostic message. The custom text may not exceed 512 characters.  
+If you enable this policy setting, Windows displays custom alert text in the disk diagnostic message. The custom text may not exceed 512 characters.  
 
-- If you disable or do not configure this policy setting, Windows displays the default alert text in the disk diagnostic message.  
+If you disable or don't configure this policy setting, Windows displays the default alert text in the disk diagnostic message.  
 
 No reboots or service restarts are required for this policy setting to take effect: changes take effect immediately.  
 
-This policy setting only takes effect if the Disk Diagnostic scenario policy setting  is enabled or not configured and the Diagnostic Policy Service (DPS) is in the running state. When the service is stopped or disabled, diagnostic scenarios are not executed. 
+This policy setting only takes effect if the Disk Diagnostic scenario policy setting  is enabled or not configured and the Diagnostic Policy Service (DPS) is in the running state. When the service is stopped or disabled, diagnostic scenarios aren't executed. 
 
 The DPS can be configured with the Services snap-in to the Microsoft Management Console.  
 
@@ -94,3 +95,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

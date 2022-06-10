@@ -20,6 +20,7 @@ The table below shows the applicability of Windows:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -87,7 +88,7 @@ Specifies the ending time for retrieving logs.
 - Supported operations are Get and Replace.
 
 <a href="" id="type"></a>**Type**  
-Added in Windows 10, version 1703. Specifies the type of logs to retrieve. You can use this policy to retrieve the WIP learning logs.
+Added in Windows 10, version 1703. Specifies the type of logs to retrieve. You can use this policy to retrieve the Windows Information Protection learning logs.
 
 - Value type is integer.
 - Supported operations are Get and Replace.

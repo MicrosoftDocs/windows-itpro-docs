@@ -1,14 +1,10 @@
 ---
 title: Add or remove pinned apps on the Start menu in Windows 11 | Microsoft Docs
 description: Export Start layout to LayoutModification.json with pinned apps, and add or remove pinned apps. Use the JSON text in an MDM policy to deploy a custom Start menu layout to Windows 11 devices.
-ms.assetid: 
 manager: dougeby
 ms.author: aaroncz
 ms.reviewer: ericpapa
 ms.prod: w11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: mobile
 author: aczechowski
 ms.localizationpriority: medium
 ms.collection: highpri

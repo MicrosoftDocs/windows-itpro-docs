@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_CtrlAltDel
-description: Policy CSP - ADMX_CtrlAltDel
+description: Learn about the Policy CSP - ADMX_CtrlAltDel.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -52,8 +52,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -74,7 +75,7 @@ This policy setting prevents users from changing their Windows password on deman
 
 If you enable this policy setting, the **Change Password** button on the Windows Security dialog box won't appear when you press Ctrl+Alt+Del.
 
-However, users are still able to change their password when prompted by the system. The system prompts users for a new password when an administrator requires a new password or their password is expiring.
+However, users will still be able to change their password when prompted by the system. The system prompts users for a new password when an administrator requires a new password or their password is expiring.
 
 <!--/Description-->
 
@@ -99,8 +100,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -148,8 +150,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -195,8 +198,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -215,11 +219,11 @@ ADMX Info:
 <!--Description-->
 This policy setting disables or removes all menu items and buttons that log the user off the system.
 
-If you enable this policy setting, users won't see the Log off menu item when they press Ctrl+Alt+Del. This scenario will prevent them from logging off unless they restart or shut down the computer, or clicking Log off from the Start menu.
+If you enable this policy setting, users won't see the Logoff menu item when they press Ctrl+Alt+Del. This scenario will prevent them from logging off unless they restart or shut down the computer, or clicking Log off from the Start menu.
 
 Also, see the 'Remove Logoff on the Start Menu' policy setting.
 
-If you disable or don't configure this policy setting, users can see and select the Log off menu item when they press Ctrl+Alt+Del.
+If you disable or don't configure this policy setting, users can see and select the Logoff menu item when they press Ctrl+Alt+Del.
 
 <!--/Description-->
 
@@ -237,3 +241,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

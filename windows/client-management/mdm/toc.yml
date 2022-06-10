@@ -828,12 +828,8 @@ items:
               href: policy-csp-windowssandbox.md
             - name: WirelessDisplay
               href: policy-csp-wirelessdisplay.md
-        - name: PolicyManager CSP
-          href: policymanager-csp.md
         - name: Provisioning CSP
           href: provisioning-csp.md
-        - name: PROXY CSP
-          href: proxy-csp.md
         - name: PXLOGICAL CSP
           href: pxlogical-csp.md
         - name: Reboot CSP
@@ -908,6 +904,11 @@ items:
           items: 
             - name: UnifiedWriteFilter DDF file
               href: unifiedwritefilter-ddf.md
+        - name: UniversalPrint CSP
+          href: universalprint-csp.md
+          items: 
+            - name: UniversalPrint DDF file
+              href: universalprint-ddf-file.md
         - name: Update CSP
           href: update-csp.md
           items: 

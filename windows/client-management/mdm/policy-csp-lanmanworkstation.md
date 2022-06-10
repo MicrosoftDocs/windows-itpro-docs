@@ -14,8 +14,6 @@ manager: dansimp
 
 # Policy CSP - LanmanWorkstation
 
-
-
 <hr/>
 
 <!--Policies-->
@@ -26,7 +24,6 @@ manager: dansimp
     <a href="#lanmanworkstation-enableinsecureguestlogons">LanmanWorkstation/EnableInsecureGuestLogons</a>
   </dd>
 </dl>
-
 
 <hr/>
 
@@ -39,6 +36,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -56,13 +54,13 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting determines if the SMB client will allow insecure guest sign ins to an SMB server.
+This policy setting determines, if the SMB client will allow insecure guest sign in to an SMB server.
 
-If you enable this policy setting or if you don't configure this policy setting, the SMB client will allow insecure guest sign ins.
+If you enable this policy setting or if you don't configure this policy setting, the SMB client will allow insecure guest sign in.
 
-If you disable this policy setting, the SMB client will reject insecure guest sign ins.
+If you disable this policy setting, the SMB client will reject insecure guest sign in.
 
-Insecure guest sign ins are used by file servers to allow unauthenticated access to shared folders. While uncommon in an enterprise environment, insecure guest sign ins are frequently used by consumer Network Attached Storage (NAS) appliances acting as file servers. Windows file servers require authentication and don't use insecure guest sign ins by default. Since insecure guest sign ins are unauthenticated, important security features such as SMB Signing and SMB Encryption are disabled. As a result, clients that allow insecure guest sign ins are vulnerable to various man-in-the-middle attacks that can result in data loss, data corruption, and exposure to malware. Additionally, any data written to a file server using an insecure guest sign in is potentially accessible to anyone on the network. Microsoft recommends disabling insecure guest sign ins and configuring file servers to require authenticated access.
+Insecure guest sign in are used by file servers to allow unauthenticated access to shared folders. While uncommon in an enterprise environment, insecure guest sign in are frequently used by consumer Network Attached Storage (NAS) appliances acting as file servers. Windows file servers require authentication, and don't use insecure guest sign in by default. Since insecure guest sign in are unauthenticated, important security features such as SMB Signing and SMB Encryption are disabled. As a result, clients that allow insecure guest sign in are vulnerable to various man-in-the-middle attacks that can result in data loss, data corruption, and exposure to malware. Additionally, any data written to a file server using an insecure guest sign in is potentially accessible to anyone on the network. Microsoft recommends disabling insecure guest sign in and configuring file servers to require authenticated access.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -82,3 +80,6 @@ This setting supports a range of values between 0 and 1.
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)
