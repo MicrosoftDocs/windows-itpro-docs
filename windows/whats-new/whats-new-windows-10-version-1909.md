@@ -1,16 +1,13 @@
 ---
 title: What's new in Windows 10, version 1909
 description: New and updated features in Windows 10, version 1909 (also known as the Windows 10 November 2019 Update).
-keywords: ["What's new in Windows 10", "Windows 10", "November 2019 Update"]
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-audience: itpro
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.topic: article
+ROBOTS: NOINDEX
 ---
 
 # What's new in Windows 10, version 1909 for IT Pros
