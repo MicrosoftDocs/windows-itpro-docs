@@ -14,6 +14,8 @@ ms.date: 02/23/2018
 
 # Update CSP
 
+The Update configuration service provider enables the IT administrators to manage and control the rollout of new updates.
+
 The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
@@ -25,7 +27,6 @@ The table below shows the applicability of Windows:
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
-The Update configuration service provider enables IT administrators to manage and control the rollout of new updates.
 
 > [!NOTE]
 > The Update CSP functionality of 'ApprovedUpdates' is not recommended for managing desktop devices. To manage updates to desktop devices from Windows Update, see the [Policy CSP - Updates](policy-csp-update.md) documentation for the recommended policies.
