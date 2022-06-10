@@ -210,7 +210,7 @@ This event is fired when the telemetry engine within an office application has p
 - **SessionID:** ID of the session
 
 ## Microsoft.Office.TelemetryEngine.ShutdownStart
-This event is fired when the telemetry engine within an office application been uninitialized, and the application is shutting down. Useful for understanding whether a particular crash is happening during an app-shutdown, and could potentially lead in data loss or not.
+This event is fired when the telemetry engine within an office application has been uninitialized, and the application is shutting down. Useful for understanding whether a particular crash is happening during an app-shutdown, and could potentially lead in data loss or not.
 
 - **appVersionBuild:** Third part of the version *.*.XXXXX.*
 - **appVersionMajor:** First part of the version X.*.*.*
