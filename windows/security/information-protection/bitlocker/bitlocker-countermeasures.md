@@ -50,7 +50,7 @@ Before Windows starts, you must rely on security features implemented as part of
 
 A trusted platform module (TPM) is a microchip designed to provide basic security-related functions, primarily involving encryption keys. 
 On some platforms, TPM can alternatively be implemented as a part of secure firmware. 
-BitLocker binds encryption keys with the TPM to ensure that a computer has not been tampered with while the system was offline. 
+BitLocker binds encryption keys with the TPM to ensure that a computer hasn't been tampered with while the system was offline. 
 For more info about TPM, see [Trusted Platform Module](/windows/device-security/tpm/trusted-platform-module-overview).
 
 ### UEFI and secure boot
@@ -60,8 +60,8 @@ Unified Extensible Firmware Interface (UEFI) is a programmable boot environment 
 The UEFI specification defines a firmware execution authentication process called [Secure Boot](../secure-the-windows-10-boot-process.md). 
 Secure Boot blocks untrusted firmware and bootloaders (signed or unsigned) from being able to start on the system. 
 
-By default, BitLocker provides integrity protection for secure boot by utilizing the TPM PCR[7] measurement. 
-An unauthorized EFI firmware, EFI boot application, or bootloader cannot run and acquire the BitLocker key.
+By default, BitLocker provides integrity protection for Secure Boot by utilizing the TPM PCR[7] measurement. 
+An unauthorized EFI firmware, EFI boot application, or bootloader can't run and acquire the BitLocker key.
 
 ### BitLocker and reset attacks
 
@@ -87,10 +87,10 @@ This helps mitigate DMA and memory remanence attacks.
 
 On computers with a compatible TPM, operating system drives that are BitLocker-protected can be unlocked in four ways:
 
-- **TPM-only.** Using TPM-only validation does not require any interaction with the user to unlock and provide access to the drive. If the TPM validation succeeds, the user sign-in experience is the same as a standard logon. If the TPM is missing, changed, or if BitLocker detects changes to the BIOS, UEFI code or configuration, the critical operating system startup files, or the boot configuration, BitLocker enters recovery mode, and the user must enter a recovery password to regain access to the data. This option is more convenient for sign-in but less secure than the other options which require an additional authentication factor.  
-- **TPM with startup key.** In addition to the protection that the TPM-only provides, part of the encryption key is stored on a USB flash drive, referred to as a startup key. Data on the encrypted volume cannot be accessed without the startup key.
-- **TPM with PIN.** In addition to the protection that the TPM provides, BitLocker requires that the user enter a PIN. Data on the encrypted volume cannot be accessed without entering the PIN. TPMs also have [anti-hammering protection](/windows/security/hardware-protection/tpm/tpm-fundamentals#anti-hammering) that is designed to prevent brute force attacks that attempt to determine the PIN.  
-- **TPM with startup key and PIN.** In addition to the core component protection that the TPM-only provides, part of the encryption key is stored on a USB flash drive, and a PIN is required to authenticate the user to the TPM. This configuration provides multifactor authentication so that if the USB key is lost or stolen, it cannot be used for access to the drive, because the correct PIN is also required.
+- **TPM-only.** Using TPM-only validation doesn't require any interaction with the user to unlock and provide access to the drive. If the TPM validation succeeds, the user sign-in experience is the same as a standard sign in. If the TPM is missing or changed or if BitLocker detects changes to the BIOS or UEFI code or configuration, critical operating system startup files, or the boot configuration, BitLocker enters recovery mode, and the user must enter a recovery password to regain access to the data. This option is more convenient for sign-in but less secure than the other options, which require an additional authentication factor.  
+- **TPM with startup key.** In addition to the protection that the TPM-only provides, part of the encryption key is stored on a USB flash drive, referred to as a startup key. Data on the encrypted volume can't be accessed without the startup key.
+- **TPM with PIN.** In addition to the protection that the TPM provides, BitLocker requires that the user enter a PIN. Data on the encrypted volume can't be accessed without entering the PIN. TPMs also have [anti-hammering protection](/windows/security/hardware-protection/tpm/tpm-fundamentals#anti-hammering) that is designed to prevent brute force attacks that attempt to determine the PIN.  
+- **TPM with startup key and PIN.** In addition to the core component protection that the TPM-only provides, part of the encryption key is stored on a USB flash drive, and a PIN is required to authenticate the user to the TPM. This configuration provides multifactor authentication so that if the USB key is lost or stolen, it can't be used for access to the drive, because the correct PIN is also required.
 
 In the following group policy example, TPM + PIN is required to unlock an operating system drive:
 
@@ -119,12 +119,12 @@ You can use the System Information desktop app (MSINFO32) to check if a device h
 
 If kernel DMA protection is *not* enabled, follow these steps to protect Thunderbolt™ 3-enabled ports:
 
-1. Require a password for BIOS changes.
-2. Intel Thunderbolt Security must be set to User Authorization in BIOS settings. Please refer to [Intel Thunderbolt™ 3 and Security on Microsoft Windows® 10 Operating System documentation](https://thunderbolttechnology.net/security/Thunderbolt%203%20and%20Security.pdf)
+1. Require a password for BIOS changes 
+2. Intel Thunderbolt Security must be set to User Authorization in BIOS settings. Refer to [Intel Thunderbolt™ 3 and Security on Microsoft Windows® 10 Operating System documentation](https://thunderbolttechnology.net/security/Thunderbolt%203%20and%20Security.pdf)
 3. Additional DMA security may be added by deploying policy (beginning with Windows 10 version 1607 or Windows 11):
 
     - MDM: [DataProtection/AllowDirectMemoryAccess](/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess) policy 
-    - Group Policy: [Disable new DMA devices when this computer is locked](./bitlocker-group-policy-settings.md#disable-new-dma-devices-when-this-computer-is-locked) (This setting is not configured by default.)
+    - Group Policy: [Disable new DMA devices when this computer is locked](./bitlocker-group-policy-settings.md#disable-new-dma-devices-when-this-computer-is-locked) (This setting isn't configured by default.)
 
 For Thunderbolt v1 and v2 (DisplayPort Connector), refer to the “Thunderbolt Mitigation” section in [KB 2516445](https://support.microsoft.com/help/2516445/blocking-the-sbp-2-driver-and-thunderbolt-controllers-to-reduce-1394-d).
 For SBP-2 and 1394 (a.k.a. Firewire), refer to the “SBP-2 Mitigation” section in [KB 2516445](https://support.microsoft.com/help/2516445/blocking-the-sbp-2-driver-and-thunderbolt-controllers-to-reduce-1394-d).
@@ -135,8 +135,9 @@ This section covers countermeasures for specific types of attacks.
 
 ### Bootkits and rootkits
 
-A physically present attacker might attempt to install a bootkit- or rootkit-like piece of software into the boot chain in an attempt to steal the BitLocker keys. 
-The TPM should observe this installation via PCR measurements, and the BitLocker key will not be released. 
+A physically-present attacker might attempt to install a bootkit or rootkit-like piece of software into the boot chain in an attempt to steal the BitLocker keys. 
+The TPM should observe this installation via PCR measurements, and the BitLocker key won't be released. 
+
 This is the default configuration.
 
 A BIOS password is recommended for defense-in-depth in case a BIOS exposes settings that may weaken the BitLocker security promise. 
@@ -148,7 +149,7 @@ Require TPM + PIN for anti-hammering protection.
 
 ### DMA attacks
 
-See [Protecting Thunderbolt and other DMA ports](#protecting-thunderbolt-and-other-dma-ports) earlier in this topic.
+See [Protecting Thunderbolt and other DMA ports](#protecting-thunderbolt-and-other-dma-ports) earlier in this article.
 
 ### Paging file, crash dump, and Hyberfil.sys attacks
 These files are secured on an encrypted volume by default when BitLocker is enabled on OS drives. 
@@ -165,9 +166,9 @@ The following sections cover mitigations for different types of attackers.
 
 ### Attacker without much skill or with limited physical access
 
-Physical access may be limited by a form factor that does not expose buses and memory. 
+Physical access may be limited by a form factor that doesn't expose buses and memory. 
 For example, there are no external DMA-capable ports, no exposed screws to open the chassis, and memory is soldered to the mainboard. 
-This attacker of opportunity does not use destructive methods or sophisticated forensics hardware/software. 
+This attacker of opportunity doesn't use destructive methods or sophisticated forensics hardware/software. 
 
 Mitigation: 
 - Pre-boot authentication set to TPM only (the default)
