@@ -14,6 +14,16 @@ ms.date: 06/26/2017
 
 # Win32AppInventory CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 The Win32AppInventory configuration service provider is used to provide an inventory of installed applications on a device.
 
