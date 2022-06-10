@@ -2,7 +2,7 @@
 title: Enhanced diagnostic data required by Windows Analytics (Windows 10)
 description: Use this article to learn more about the limit enhanced diagnostic data events policy used by Desktop Analytics
 keywords: privacy, diagnostic data
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,8 +13,9 @@ ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 11/9/2018
-ms.reviewer: 
+ms.date: 11/29/2021
+ms.reviewer:
+ms.technology: privacy 
 ---
 
 
@@ -26,7 +27,7 @@ ms.reviewer:
 
 > [!IMPORTANT]
 > The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Update Compliance](/windows/deployment/update/update-compliance-get-started) will continue to be supported.
-> For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/en-us/help/4521815/windows-analytics-retirement).
+> For more information, see [Windows Analytics retirement on January 31, 2020](/lifecycle/announcements/windows-analytics-retirement).
 
 Desktop Analytics reports are powered by diagnostic data not included in the Basic level.
 
@@ -118,7 +119,7 @@ Collects Office metadata through UTC to compare with equivalent data collected t
 Applicable to all Win32 applications. Helps us understand the status of the update process of the office suite (Success or failure with error details).
 
 - **build:** App version
-- **channel:** Is this part of SAC or SAC-T?
+- **channel:** Is this part of GA Channel or SAC-T?
 - **errorCode:** What error occurred during the upgrade process?
 - **errorMessage:** what was the error message during the upgrade process?
 - **status:** Was the upgrade successful or not?
@@ -354,14 +355,14 @@ The following fields are available:
 Initialization of Explorer is complete.
 
 ## Microsoft-Windows-Security-EFS-EDPAudit-ApplicationLearning.EdpAuditLogApplicationLearning
-For a device subject to Windows Information Protection policy, learning events are generated when an app encounters a policy boundary (for example, trying to open a work document from a personal app). These events help the WIP administrator tune policy rules and prevent unnecessary user disruption.
+For a device subject to Windows Information Protection policy, learning events are generated when an app encounters a policy boundary (for example, trying to open a work document from a personal app). These events help the Windows Information Protection administrator tune policy rules and prevent unnecessary user disruption.
 
 The following fields are available:
 
 - **actiontype:** Indicates what type of resource access the app was attempting (for example, opening a local document vs. a network resource) when it encountered a policy boundary. Useful for Windows Information Protection administrators to tune policy rules.
 - **appIdType:** Based on the type of application, this field indicates what type of app rule a Windows Information Protection administrator would need to create for this app.
 - **appname:** App that triggered the event
-- **status:** Indicates whether errors occurred during WIP learning events
+- **status:** Indicates whether errors occurred during Windows Information Protection learning events
 
 ## Win32kTraceLogging.AppInteractivitySummary
 Summarizes which app windows are being used (for example, have focus) to help Microsoft improve compatibility and user experience. Also helps organizations (by using Desktop Analytics) to understand and improve application reliability on managed devices.

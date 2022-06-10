@@ -2,15 +2,13 @@
 title: ConnectivityProfiles (Windows 10)
 description: This section describes the ConnectivityProfile settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-author: dansimp
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: aaroncz
 ms.topic: article
 ms.date: 04/30/2018
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # ConnectivityProfiles (Windows Configuration Designer reference)
@@ -19,14 +17,14 @@ Use to configure profiles that a user will connect with, such as an email accoun
 
 ## Applies to
 
-| Setting groups  | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [Email](#email)  | X |  X  | X |  |  |
-| [Exchange](#exchange) | X |  X  | X |  |  |
-| [KnownAccounts](#knownaccounts) | X |  X  | X |  |  |
-| [VPN](#vpn) | X |  X  | X | X |  |
-| [WiFiSense](#wifisense) | X |  X  | X |  |  |
-| [WLAN](#wlan) | X |  X  | X | X |  |
+| Setting groups  | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| [Email](#email)  | ✔️ |  ✔️ |  |  |
+| [Exchange](#exchange) | ✔️ |  ✔️ |  |  |
+| [KnownAccounts](#knownaccounts) | ✔️ |  ✔️ |  |  |
+| [VPN](#vpn) | ✔️ |  ✔️ | ✔️ |  |
+| [WiFiSense](#wifisense) | ✔️ | ✔️ |  |  |
+| [WLAN](#wlan) | ✔️ | ✔️ | ✔️ |  |
 
 ## Email
 
@@ -59,7 +57,7 @@ Specify an email account to be automatically set up on the device.
 
 ## Exchange
 
-Configure settings related to Exchange email server. These settings are related to the [ActiveSync configuration service provider (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/activesync-csp).
+Configure settings related to Exchange email server. These settings are related to the [ActiveSync configuration service provider (CSP)](/windows/client-management/mdm/activesync-csp).
 
 
 1. In **Available customizations**, select **Exchange**, enter a name for the account, and then click **Add**. A globally unique identifier (GUID) is generated for the account.
@@ -118,8 +116,8 @@ Configure settings to change the default maximum transmission unit ([MTU](#mtu))
 | --- | --- |
 | **ProfileType**  | Choose between **Native** and **Third Party**  |
 | AlwaysOn | Set to **True** to automatically connect the VPN at sign-in  |
-| ByPassForLocal | When set to **True**, requests to local resources on the same Wi-Fi neetwork as the VPN client can bypass VPN  |
-| DnsSuffix | Enter one or more comma-separated DNS suffixes. The first suffix listed is usedas the primary connection-specific DNS suffix for the VPN interface. The list is added to the SuffixSearchList.  |
+| ByPassForLocal | When set to **True**, requests to local resources on the same Wi-Fi network as the VPN client can bypass VPN  |
+| DnsSuffix | Enter one or more comma-separated DNS suffixes. The first suffix listed is used as the primary connection-specific DNS suffix for the VPN interface. The list is added to the SuffixSearchList.  |
 | LockDown | When set to **True**:</br>- Profile automatically becomes an "always on" profile</br>- VPN cannot be disconnected</br>-If the profile is not connected, the user has no network connectivity</br>- No other profiles can be connected or modified |
 | Proxy | Configure to **Automatic** or **Manual**  |
 | ProxyAutoConfigUrl  | When **Proxy** is set to **Automatic**, enter the URL to automatically retrieve the proxy settings |
@@ -132,10 +130,10 @@ When **ProfileType** is set to **Native**, the following additional settings are
 Setting | Description 
 --- | ---
 AuthenticationUserMethod | When you set **NativeProtocolType** to **IKEv2**, choose between **EAP** and **MSChapv2**.
-EAPConfiguration | When you set **AuthenticationUserMethod** to **EAP**, enter the HTML-encoded XML to configure EAP. For more information, see [EAP configuration](https://docs.microsoft.com/windows/client-management/mdm/eap-configuration).
+EAPConfiguration | When you set **AuthenticationUserMethod** to **EAP**, enter the HTML-encoded XML to configure EAP. For more information, see [EAP configuration](/windows/client-management/mdm/eap-configuration).
 NativeProtocolType | Choose between **PPTP**, **L2TP**, **IKEv2**, and **Automatic**.
 RoutingPolicyType | Choose between **SplitTunnel**, in which traffic can go over any interface as determined by the networking stack, and **ForceTunnel**, in which all IP traffic must go over the VPN interface.
-Server | Enter the public or routable IP address or DNS name for the VPN gateway. It can point to the exteranl IP of a gateway or a virtual IP for a server farm.
+Server | Enter the public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm.
 
 When **ProfileType** is set to **Third Party**, the following additional settings are available.
 
@@ -188,7 +186,7 @@ Configure settings for wireless connectivity.
 
 **To add a profile**
 
-1. Create [the wireless profile XML](https://msdn.microsoft.com/library/windows/desktop/aa369853.aspx).
+1. Create [the wireless profile XML](/windows/win32/nativewifi/wireless-profile-samples).
 2. In **WLAN > Profiles**, browse to and select the profile XML file.
 3. Click **Add**.
 
@@ -198,7 +196,7 @@ Enter a SSID, click **Add**, and then configure the following settings for the S
 
 | Settings | Description |
 | --- |  --- |
-| ProxyServerPort |  (Optional) Specify the configuration of the network proxy as **host:port**. A proxy server host and port can be specified per connection for Windows 10 for mobile devices. The host can be server name, FQDN, or SLN or IPv4 or IPv6 address. This proxy configuration is only supported in Windows 10 for mobile devices. Using this configuration in Windows 10 for desktop editions will result in failure.   |
+| ProxyServerPort |  (Optional) Don't use. Using this configuration in Windows 10 client editions will result in failure.   |
 | AutoConnect |  (Optional) Select **True** or **false** to specify whether to automatically connect to WLAN.     |
 | HiddenNetwork |  (Optional) Select **True** or **false** to specify whether the network is hidden.    |
 | SecurityType |  Choose between **Open**, **WEP**, and **WPA2-Personal**. </br></br>If you select **WEP** or **WPA2-Personal**, enter the **SecurityKey** required by the WLAN.    |

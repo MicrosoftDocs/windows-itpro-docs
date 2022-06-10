@@ -2,15 +2,13 @@
 title: Connections (Windows 10)
 description: This section describes the Connections settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-author: dansimp
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: aaroncz
 ms.topic: article
 ms.date: 04/30/2018
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # Connections (Windows Configuration Designer reference)
@@ -19,9 +17,9 @@ Use to configure settings related to various types of phone connections.
 
 ## Applies to
 
-| Setting groups  | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| All settings  | X |  X  | X |  |  |
+| Setting groups  | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: | 
+| All settings  | ✔️ | ✔️ |  |  |
 
 
 For each setting group:
@@ -30,12 +28,12 @@ For each setting group:
 
 ## Cellular
 
-See [CM_CellularEntries configuration service provider (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/cm-cellularentries-csp) for settings and values.
+See [CM_CellularEntries configuration service provider (CSP)](/windows/client-management/mdm/cm-cellularentries-csp) for settings and values.
 
 ## EnterpriseAPN
 
-See [Configure cellular settings for tablets and PCs](https://docs.microsoft.com/windows/configuration/provisioning-apn) and 
-[EnterpriseAPN CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterpriseapn-csp) for settings and values.
+See [Configure cellular settings for tablets and PCs](../provisioning-apn.md) and 
+[EnterpriseAPN CSP](/windows/client-management/mdm/enterpriseapn-csp) for settings and values.
 
 ## General
 
@@ -43,8 +41,8 @@ Use **General > DataRoam** to set the default value for the **Default roaming op
 
 ## Policies
 
-See [CMPolicy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/cmpolicy-csp) for settings and values.
+See [CMPolicy CSP](/windows/client-management/mdm/cmpolicy-csp) for settings and values.
 
 ## Proxies
 
-See [CM_ProxyEntries CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/cm-proxyentries-csp) for settings and values.
+See [CM_ProxyEntries CSP](/windows/client-management/mdm/cm-proxyentries-csp) for settings and values.

@@ -5,7 +5,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 06/28/2018
 ms.reviewer: 
 manager: dansimp
@@ -167,3 +167,7 @@ The XML below is the current version for this CSP.
       </Node>
 </MgmtTree>
 ```
+
+## Related topics
+
+[WiredNetwork CSP](wirednetwork-csp.md)

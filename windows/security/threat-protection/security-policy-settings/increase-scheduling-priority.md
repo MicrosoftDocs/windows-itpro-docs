@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 2/6/2020
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Increase scheduling priority
@@ -90,4 +90,4 @@ None. Restricting the **Increase scheduling priority** user right to members of 
 ## Related topics
 
 - [User Rights Assignment](user-rights-assignment.md)
-- [Increase scheduling priority for Windows Server 2012 and earlier](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn221960(v%3dws.11))
+- [Increase scheduling priority for Windows Server 2012 and earlier](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn221960(v%3dws.11))

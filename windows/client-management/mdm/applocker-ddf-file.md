@@ -8,12 +8,11 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: lomayor
+author: dansimp
 ms.date: 12/05/2017
 ---
 
 # AppLocker DDF file
-
 
 This topic shows the OMA DM device description framework (DDF) for the **AppLocker** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
@@ -672,15 +671,4 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
 
 ## Related topics
 
-
 [AppLocker configuration service provider](applocker-csp.md)
-
- 
-
- 
-
-
-
-
-
-

@@ -1,12 +1,13 @@
 ---
 title: Define readiness criteria
-manager: laurawi
 description: Identify important roles and figure out how to classify apps
-keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, tools
+keywords: updates, servicing, current, deployment, General Availability Channel, feature, quality, rings, insider, tools
 ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro
-author: jaimeo
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.localizationpriority: medium
 ms.audience: itpro
 ms.topic: article
@@ -14,6 +15,11 @@ ms.collection: m365initiative-coredeploy
 ---
 
 # Define readiness criteria
+
+**Applies to**
+
+-   Windows 10
+-   Windows 11
 
 ## Figure out roles and personnel
 
