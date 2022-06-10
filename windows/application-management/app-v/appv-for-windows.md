@@ -1,10 +1,7 @@
 ---
 title: Application Virtualization (App-V) (Windows 10/11)
-description: See various topics that can help you administer Application Virtualization (App-V) and its components.
+description: See various articles that can help you administer Application Virtualization (App-V) and its components.
 author: aczechowski
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 09/27/2018
 ms.reviewer: 
@@ -12,6 +9,7 @@ manager: dougeby
 ms.author: aaroncz
 ms.topic: article
 ---
+
 # Application Virtualization (App-V) for Windows client overview
 
 [!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
@@ -19,7 +17,7 @@ ms.topic: article
 > [!NOTE]
 > [!INCLUDE [Application Virtualization will be end of life in April 2026](../includes/app-v-end-life-statement.md)]
 
-The topics in this section provide information and instructions to help you administer App-V and its components. This information is for system administrators who manage large installations with many servers and clients, and for support personnel who interact directly with the computers or users.
+The articles in this section provide information and instructions to help you administer App-V and its components. This information is for system administrators who manage large installations with many servers and clients, and for support personnel who interact directly with the computers or users.
 
 [Getting started with App-V](appv-getting-started.md)  
 
