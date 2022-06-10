@@ -1,18 +1,12 @@
 ---
 title: Fine-tune Windows Information Policy (WIP) with WIP Learning
 description: How to access the WIP Learning report to monitor and apply Windows Information Protection in your company.
-ms.assetid: 53db29d2-d99d-4db6-b494-90e2b4872ca2
 ms.reviewer: 
-keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, WIP Learning
 ms.prod: m365-security
-ms.mktglfcycl:
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/26/2019

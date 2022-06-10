@@ -1,6 +1,6 @@
 ---
-title: WindowsAutoPilot DDF file
-description: Learn how without the ability to mark a device as remediation required, the device will remain in a broken state, for the WindowsAutoPilot DDF file configuration service provider (CSP) .
+title: WindowsAutopilot DDF file
+description: Learn how without the ability to mark a device as remediation required, the device will remain in a broken state, for the WindowsAutopilot DDF file configuration service provider (CSP) .
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -11,12 +11,12 @@ ms.reviewer:
 manager: dansimp
 ---
 
-# WindowsAutoPilot DDF file
+# WindowsAutopilot DDF file
 
 > [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-This topic shows the device description framework (DDF) for the **WindowsAutoPilot** configuration service provider. 
+This topic shows the device description framework (DDF) for the **WindowsAutopilot** configuration service provider. 
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
@@ -27,7 +27,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
           <AccessType>
             <Get />
           </AccessType>
-          <Description>These settings enable configuration of Windows Autopilot</Description>
+          <Description>These settings enable configuration of Windows Autopilot.</Description>
           <DFFormat>
             <node />
           </DFFormat>
@@ -74,3 +74,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
   </cspDefinition>
 </identity>
 ```
+
+## Related topics
+
+[WindowsAutopilot configuration service provider](windowsautopilot-csp.md)

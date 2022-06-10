@@ -2,8 +2,6 @@
 title: Use Cortana at work to find your upcoming meetings (Windows)
 description: A test scenario on how to use Cortana at work to find your upcoming meetings.
 ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
