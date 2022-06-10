@@ -1,17 +1,12 @@
 ---
 title: Windows threat protection
 description: Describes the security capabilities in Windows client focused on threat protection
-keywords: threat protection, Microsoft Defender Antivirus, attack surface reduction, next-generation protection, endpoint detection and response, automated investigation and response, microsoft threat experts, Microsoft Secure Score for Devices, advanced hunting, cyber threat hunting, web threat protection
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: windows-sec

@@ -14,8 +14,6 @@ manager: dansimp
 
 # Policy CSP - HumanPresence
 
-
-
 <hr/>
 
 <!--Policies-->
@@ -32,7 +30,6 @@ manager: dansimp
     <a href="#humanpresence-forcelocktimeout">HumanPresence/ForceLockTimeout</a>
   </dd>
 </dl>
-
 
 <hr/>
 
@@ -63,7 +60,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy specifies whether the device can lock when a human presence sensor detects a human.
+This policy specifies, whether the device can lock when a human presence sensor detects a human.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -80,7 +77,7 @@ The following list shows the supported values:
 - 2 = ForcedOff
 - 1 = ForcedOn
 - 0 = DefaultToUserChoice
-- Defaults to 0.
+- Defaults to 0
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -113,7 +110,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy specifies whether the device can lock when a human presence sensor detects a human.
+This policy specifies, whether the device can lock when a human presence sensor detects a human.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -130,7 +127,7 @@ The following list shows the supported values:
 - 2 = ForcedOff
 - 1 = ForcedOn
 - 0 = DefaultToUserChoice
-- Defaults to 0.
+- Defaults to 0
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -163,7 +160,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy specifies at what distance the sensor wakes up when it sees a human in seconds.
+This policy specifies, at what distance the sensor wakes up when it sees a human in seconds.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -175,7 +172,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Integer value that specifies whether the device can lock when a human presence sensor detects a human.
+Integer value that specifies, whether the device can lock when a human presence sensor detects a human.
 
 The following list shows the supported values:
 
@@ -191,3 +188,6 @@ The following list shows the supported values:
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

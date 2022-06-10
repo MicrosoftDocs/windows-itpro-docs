@@ -14,8 +14,6 @@ manager: dansimp
 
 # Policy CSP - WindowsConnectionManager
 
-
-
 <hr/>
 
 <!--Policies-->
@@ -34,6 +32,7 @@ manager: dansimp
 <a href="" id="windowsconnectionmanager-prohitconnectiontonondomainnetworkswhenconnectedtodomainauthenticatednetwork"></a>**WindowsConnectionManager/ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -61,23 +60,25 @@ This policy setting prevents computers from connecting to both a domain-based ne
 
 If this policy setting is enabled, the computer responds to automatic and manual network connection attempts based on the following circumstances:
 
-Automatic connection attempts
+Automatic connection attempts:
+
 - When the computer is already connected to a domain-based network, all automatic connection attempts to non-domain networks are blocked.
 - When the computer is already connected to a non-domain-based network, automatic connection attempts to domain-based networks are blocked.
 
-Manual connection attempts
-- When the computer is already connected to either a non-domain-based network or a domain-based network over media other than Ethernet, and a user attempts to create a manual connection to another network in violation of this policy setting, the existing network connection is disconnected and the manual connection is allowed.
-- When the computer is already connected to either a non-domain-based network or a domain-based network over Ethernet, and a user attempts to create a manual connection to another network in violation of this policy setting, the existing Ethernet connection is maintained and the manual connection attempt is blocked.
+Manual connection attempts:
+
+- When the computer is already connected to either a non-domain-based network or a domain-based network over media other than Ethernet, and a user attempts to create a manual connection to another network in violation of this policy setting, then an existing network connection is disconnected and the manual connection is allowed.
+- When the computer is already connected to either a non-domain-based network or a domain-based network over Ethernet, and a user attempts to create a manual connection to another network in violation of this policy setting, then an existing Ethernet connection is maintained and the manual connection attempt is blocked.
 
 If this policy setting isn't configured or is disabled, computers are allowed to connect simultaneously to both domain and non-domain networks.
 
 <!--/Description-->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 > 
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 > 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -90,6 +91,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

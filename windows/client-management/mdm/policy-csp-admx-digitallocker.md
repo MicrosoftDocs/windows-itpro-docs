@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_DigitalLocker
-description: Policy CSP - ADMX_DigitalLocker
+description: Learn about Policy CSP - ADMX_DigitalLocker.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -75,7 +75,6 @@ If you disable or don't configure this setting, Digital Locker can be run.
 
 <!--/Description-->
 
-
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP Friendly name: *Do not allow Digital Locker to run*
@@ -139,3 +138,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

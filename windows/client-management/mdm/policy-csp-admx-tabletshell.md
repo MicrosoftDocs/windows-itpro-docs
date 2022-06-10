@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_TabletShell
-description: Policy CSP - ADMX_TabletShell
+description: Learn about Policy CSP - ADMX_TabletShell.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -65,7 +65,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Prevents start of InkBall game.  
+This policy setting prevents start of InkBall game.  
 
 If you enable this policy, the InkBall game won't run.  
 
@@ -113,9 +113,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Prevents printing to Journal Note Writer.  
+This policy setting prevents printing to Journal Note Writer.  
 
-If you enable this policy, the Journal Note Writer printer driver won't allow printing to it. It will remain displayed in the list of available printers, but attempts to print to it will fail.  
+If you enable this policy, the Journal Note Writer printer driver won't allow printing to it. It will remain displayed in the list of available printers, but attempts to print it will fail.  
 
 If you disable this policy, you'll be able to use this feature to print to a Journal Note.  If you don't configure this policy, users will be able to use this feature to print to a Journal Note.
 
@@ -138,3 +138,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

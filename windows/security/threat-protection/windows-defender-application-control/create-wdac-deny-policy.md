@@ -14,7 +14,6 @@ author: jgeurten
 ms.reviewer: jsuther1974
 ms.author: dansimp
 manager: dansimp
-ms.date: 03/22/2022
 ms.technology: windows-sec
 ---
 
@@ -44,6 +43,9 @@ To create effective WDAC deny policies, it's crucial to understand how WDAC pars
 4. Lastly, WDAC will call the Intelligent Security Graph (ISG) to get reputation on file, if the policy has support for the ISG.
 
 5. If no rule exists for the file and it's not allowed based on ISG or MI, then the file is blocked implicitly.
+
+> [!NOTE]
+> If your WDAC policy does not have an explicit rule to allow or deny a binary to run, then WDAC will make a call to the cloud to determine whether the binary is familiar and safe. However, if your policy already authorizes or denies the binary, then WDAC will not make a call to the cloud. For more details, see [How does the integration between WDAC and the Intelligent Security Graph work?](use-windows-defender-application-control-with-intelligent-security-graph.md#how-does-the-integration-between-wdac-and-the-intelligent-security-graph-work).
 
 ## Interaction with Existing Policies
 
