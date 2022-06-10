@@ -1,27 +1,24 @@
 ---
-title: Mapping your implementation goals to a Windows Firewall with Advanced Security design (Windows 10)
-description:  Mapping your implementation goals to a Windows Firewall with Advanced Security design
-ms.assetid: 7e68c59e-ba40-49c4-8e47-5de5d6b5eb22
+title: Mapping your implementation goals to a Windows Firewall with Advanced Security design (Windows)
+description: Mapping your implementation goals to a Windows Firewall with Advanced Security design
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.prod: m365-security
 ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 09/08/2021
+ms.technology: windows-sec
 ---
 
 #  Mapping your implementation goals to a Windows Firewall with Advanced Security design
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 After you finish reviewing the existing Windows Firewall with Advanced Security implementation goals and you determine which goals are important to your specific deployment, you can map those goals to a specific Windows Firewall with Advanced Security design.
 > [!IMPORTANT]

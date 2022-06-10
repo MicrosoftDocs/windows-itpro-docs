@@ -1,18 +1,14 @@
 ---
 title: Security Considerations for UE-V
 description: Learn about accounts and groups, log files, and other security-related considerations for User Experience Virtualization (UE-V).
-author: dansimp
-ms.pagetype: mdop, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
+author: aczechowski
 ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
-
 
 # Security Considerations for UE-V
 
@@ -24,8 +20,8 @@ This topic contains a brief overview of accounts and groups, log files, and othe
 ## Security considerations for UE-V configuration
 
 
-**Important**
-When you create the settings storage share, limit the share access to users who require access.
+> [!IMPORTANT]
+> When you create the settings storage share, limit the share access to users who require access.
 
 Because settings packages might contain personal information, you should take care to protect them as well as possible. In general, do the following:
 
@@ -37,137 +33,36 @@ Because settings packages might contain personal information, you should take ca
 
 1.  Set the following share-level SMB permissions for the setting storage location folder.
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">User account</th>
-    <th align="left">Recommended permissions</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p>Everyone</p></td>
-    <td align="left"><p>No permissions</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>Security group of UE-V</p></td>
-    <td align="left"><p>Full control</p></td>
-    </tr>
-    </tbody>
-    </table>
-
+    |User account|Recommended permissions|
+    |--- |--- |
+    |Everyone|No permissions|
+    |Security group of UE-V|Full control|
 
 2.  Set the following NTFS file system permissions for the settings storage location folder.
 
-    <table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">User account</th>
-    <th align="left">Recommended permissions</th>
-    <th align="left">Folder</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p>Creator/Owner</p></td>
-    <td align="left"><p>No permissions</p></td>
-    <td align="left"><p>No permissions</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>Domain Admins</p></td>
-    <td align="left"><p>Full control</p></td>
-    <td align="left"><p>This folder, subfolders, and files</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>Security group of UE-V users</p></td>
-    <td align="left"><p>List folder/read data, create folders/append data</p></td>
-    <td align="left"><p>This folder only</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>Everyone</p></td>
-    <td align="left"><p>Remove all permissions</p></td>
-    <td align="left"><p>No permissions</p></td>
-    </tr>
-    </tbody>
-    </table>
+    |User account|Recommended permissions|Folder|
+    |--- |--- |--- |
+    |Creator/Owner|No permissions|No permissions|
+    |Domain Admins|Full control|This folder, subfolders, and files|
+    |Security group of UE-V users|List folder/read data, create folders/append data|This folder only|
+    |Everyone|Remove all permissions|No permissions|
 
 3.  Set the following share-level SMB permissions for the settings template catalog folder.
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">User account</th>
-    <th align="left">Recommend permissions</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p>Everyone</p></td>
-    <td align="left"><p>No permissions</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>Domain computers</p></td>
-    <td align="left"><p>Read permission Levels</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>Administrators</p></td>
-    <td align="left"><p>Read/write permission levels</p></td>
-    </tr>
-    </tbody>
-    </table>
-
+    |User account|Recommend permissions|
+    |--- |--- |
+    |Everyone|No permissions|
+    |Domain computers|Read permission Levels|
+    |Administrators|Read/write permission levels|
 
 4.  Set the following NTFS permissions for the settings template catalog folder.
 
-    <table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">User account</th>
-    <th align="left">Recommended permissions</th>
-    <th align="left">Apply to</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p>Creator/Owner</p></td>
-    <td align="left"><p>Full control</p></td>
-    <td align="left"><p>This folder, subfolders, and files</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>Domain Computers</p></td>
-    <td align="left"><p>List folder contents and Read permissions</p></td>
-    <td align="left"><p>This folder, subfolders, and files</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>Everyone</p></td>
-    <td align="left"><p>No permissions</p></td>
-    <td align="left"><p>No permissions</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>Administrators</p></td>
-    <td align="left"><p>Full Control</p></td>
-    <td align="left"><p>This folder, subfolders, and files</p></td>
-    </tr>
-    </tbody>
-    </table>
+    |User account|Recommended permissions|Apply to|
+    |--- |--- |--- |
+    |Creator/Owner|Full control|This folder, sub-folders, and files|
+    |Domain Computers|List folder contents and Read permissions|This folder, sub-folders, and files|
+    |Everyone|No permissions|No permissions|
+    |Administrators|Full Control|This folder, sub-folders, and files|
 
 ### Use Windows Server as of Windows Server 2003 to host redirected file shares
 
@@ -205,7 +100,8 @@ To ensure that UE-V works optimally, create only the root share on the server, a
 
 This permission configuration enables users to create folders for settings storage. The UE-V service creates and secures a settings package folder while it runs in the context of the user. Users receive full control to their settings package folder. Other users do not inherit access to this folder. You do not have to create and secure individual user directories. The UE-V service that runs in the context of the user does it automatically.
 
-> **Note**&nbsp;&nbsp;Additional security can be configured when a Windows Server is used for the settings storage share. UE-V can be configured to verify that either the local Administrators group or the current user is the owner of the folder where settings packages are stored. To enable additional security, use the following command:
+> [!NOTE]
+> Additional security can be configured when a Windows Server is used for the settings storage share. UE-V can be configured to verify that either the local Administrators group or the current user is the owner of the folder where settings packages are stored. To enable additional security, use the following command:
 
 1.  Add the REG\_DWORD registry key RepositoryOwnerCheckEnabled to `HKEY_LOCAL_MACHINE\Software\Microsoft\UEV\Agent\Configuration`.
 
@@ -233,11 +129,6 @@ If you plan to share settings location templates with anyone outside your organi
 -   **Template Author Email** – Specify a general, non-identifying template author email or exclude this data from the template.
 
 To remove the template author name or template author email, you can use the UE-V generator application. From the generator, select **Edit a Settings Location Template**. Select the settings location template to edit from the recently used templates or Browse to the settings template file. Select **Next** to continue. On the Properties page, remove the data from the Template author name or Template author email text fields. Save the settings location template.
-
-
-
-
-
 
 ## Related topics
 

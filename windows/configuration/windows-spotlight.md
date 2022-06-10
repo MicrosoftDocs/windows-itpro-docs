@@ -1,18 +1,15 @@
 ---
 title: Configure Windows Spotlight on the lock screen (Windows 10)
 description: Windows Spotlight is an option for the lock screen background that displays different background images on the lock screen.
-ms.assetid: 1AEA51FA-A647-4665-AD78-2F3FB27AD46A
 ms.reviewer: 
-manager: dansimp
-keywords: ["lockscreen"]
+manager: dougeby
 ms.prod: w10
-ms.mktglfcycl: explore
-ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: aczechowski
+ms.author: aaroncz
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 04/30/2018
+ms.collection: highpri
 ---
 
 # Configure Windows Spotlight on the lock screen
@@ -20,7 +17,7 @@ ms.date: 04/30/2018
 
 **Applies to**
 
--   Windows 10
+-   Windows 10
 
 
 Windows Spotlight is an option for the lock screen background that displays different background images and occasionally offers suggestions on the lock screen. Windows Spotlight is available in all desktop editions of Windows 10. 
@@ -31,7 +28,7 @@ For managed devices running Windows 10 Enterprise and Windows 10 Education, en
 >[!NOTE]
 >In Windows 10, version 1607, the lock screen background does not display if you disable the **Animate windows when minimizing and maximizing** setting in **This PC** > **Properties** > **Advanced system settings** > **Performance settings** > **Visual Effects**, or if you enable the Group Policy setting **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Desktop Windows Manager** > **Do not allow windows animations**.
 >
->In Windows 10, version 1703, you can use the [Personalization CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/personalization-csp) settings to set lock screen and desktop background images.
+>In Windows 10, version 1703, you can use the [Personalization CSP](/windows/client-management/mdm/personalization-csp) settings to set lock screen and desktop background images.
 
 ## What does Windows Spotlight include?
 
@@ -40,20 +37,20 @@ For managed devices running Windows 10 Enterprise and Windows 10 Education, en
 
     The Windows Spotlight displays a new image on the lock screen each day. The initial background image is included during installation. Additional images are downloaded on ongoing basis.
 
-    ![lock screen image](images/lockscreen.png)
+    ![lock screen image.](images/lockscreen.png)
 
 -   **Feature suggestions, fun facts, tips**
 
     The lock screen background will occasionally make recommendations on how to enhance your productivity and enjoyment of Microsoft products including suggesting other relevant Microsoft products and services.
     
-    ![fun facts](images/funfacts.png)
+    ![fun facts.](images/funfacts.png)
 
 ## How do you turn off Windows Spotlight locally?
 
 
 To turn off Windows Spotlight locally, go to **Settings** &gt; **Personalization** &gt; **Lock screen** &gt; **Background** &gt; **Windows spotlight** &gt; select a different lock screen background
 
-![personalization background](images/spotlight.png)
+![personalization background.](images/spotlight.png)
 
 ## How do you disable Windows Spotlight for managed devices?
 
@@ -81,7 +78,7 @@ Windows Spotlight is enabled by default. Windows 10 provides Group Policy and mo
  >If you want to use a custom lock screen image that contains text, see [Resolution for custom lock screen image](#resolution-for-custom-lock-screen-image).
 
 
-![lockscreen policy details](images/lockscreenpolicy.png)
+![lockscreen policy details.](images/lockscreenpolicy.png)
 
 Pay attention to the checkbox in **Options**. In addition to providing the path to the lock screen image, administrators can choose to allow or **Turn off fun facts, tips, tricks, and more on lock screen**. If the checkbox is not selected, users will see the lock screen image that is defined in the policy setting, and will also see occasional messages.
 
@@ -102,8 +99,3 @@ The recommendation for custom lock screen images that include text (such as a le
 
 
  
-
-
-
-
-

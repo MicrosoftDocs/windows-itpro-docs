@@ -2,22 +2,19 @@
 title: 5030(F) The Windows Firewall Service failed to start. (Windows 10)
 description: Describes security event 5030(F) The Windows Firewall Service failed to start.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: windows-sec
 ---
 
 # 5030(F): The Windows Firewall Service failed to start.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 Windows logs this event if the Windows Firewall service fails to start, or if it unexpectedly terminates. The error message indicates the cause of the service failure by including an error code in the text of the message.

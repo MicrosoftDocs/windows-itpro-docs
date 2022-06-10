@@ -1,15 +1,12 @@
 ---
 title: User Experience Virtualization (UE-V) Release Notes
 description: Read the latest information required to successfully install and use User Experience Virtualization (UE-V) that is not included in the UE-V documentation.
-author: dansimp
-ms.pagetype: mdop, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
+author: aczechowski
 ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
 
@@ -28,16 +25,16 @@ With the release of Windows 10, version 1607, the Company Settings Center was re
 
 Administrators can still define which user-customized application settings can synchronize (roam) with Group Policy or Windows PowerShell.
 
-**Note**  With the removal of the Company Settings Center, the following group policies are no longer applicable:
-
--   Contact IT Link Text
--   Contact IT URL
--   Tray Icon
-
+> [!NOTE]
+> With the removal of the Company Settings Center, the following group policies are no longer applicable:
+>
+> - Contact IT Link Text
+> - Contact IT URL
+> - Tray Icon
 
 ### Upgrading from UE-V 1.0 to the in-box version of UE-V is blocked
 
-Version 1.0 of UE-V used Offline Files (Client Side Caching) for settings synchronization and pinned the UE-V sync folder to be available when the network was offline, however, this technology was removed in UE-V 2.x. As a result, UE-V 1.0 users are blocked from upgrading to UE-V for Windows 10, version 1607.
+Version 1.0 of UE-V used Offline Files (Client-Side Caching) for settings synchronization and pinned the UE-V sync folder to be available when the network was offline, however, this technology was removed in UE-V 2.x. As a result, UE-V 1.0 users are blocked from upgrading to UE-V for Windows 10, version 1607.
 
 WORKAROUND: Remove the UE-V 1.0 sync folder from the Offline Files configuration and then upgrade to the in-box version of UE-V for Windows, version 1607 release.
 
@@ -55,13 +52,13 @@ WORKAROUND: To resolve this problem, run the application by selecting one of the
 
 ### Unpredictable results when both Office 2010 and Office 2013 are installed on the same device
 
-When a user has both Office 2010 and Office 2013 installed, any common settings between the two versions of Office are roamed by UE-V. This could cause the Office 2010 package size to be quite large or result in unpredictable conflicts with 2013, particularly if Office 365 is used.
+When a user has both Office 2010 and Office 2013 installed, any common settings between the two versions of Office are roamed by UE-V. This could cause the Office 2010 package size to be large or result in unpredictable conflicts with 2013, particularly if Office 365 is used.
 
 WORKAROUND: Install only one version of Office or limit which settings are synchronized by UE-V.
 
-### Uninstall and re-install of Windows 8 applications reverts settings to initial state
+### Uninstallation and reinstallation of Windows 8 applications reverts settings to initial state
 
-While using UE-V settings synchronization for a Windows 8 application, if the user uninstalls the application and then reinstalls the application, the application’s settings revert to their default values. This happens because the uninstall removes the local (cached) copy of the application’s settings but does not remove the local UE-V settings package. When the application is reinstalled and launched, UE-V gather the application settings that were reset to the application defaults and then uploads the default settings to the central storage location. Other computers running the application then download the default settings. This behavior is identical to the behavior of desktop applications.
+While using UE-V settings synchronization for a Windows 8 application, if the user uninstalls the application and then reinstalls the application, the application’s settings revert to their default values. This result happens because the uninstall removes the local (cached) copy of the application’s settings but does not remove the local UE-V settings package. When the application is reinstalled and launched, UE-V gathers the application settings that were reset to the application defaults and then uploads the default settings to the central storage location. Other computers running the application then download the default settings. This behavior is identical to the behavior of desktop applications.
 
 WORKAROUND: None.
 
@@ -85,7 +82,7 @@ WORKAROUND: Use folder redirection or some other technology to ensure that any f
 
 ### Long Settings Storage Paths could cause an error
 
-Keep settings storage paths as short as possible. Long paths could prevent resolution or synchronization. UE-V uses the Settings storage path as part of the calculated path to store settings. That path is calculated in the following way: settings storage path + “settingspackages” + package dir (template ID) + package name (template ID) + .pkgx. If that calculated path exceeds 260 characters, package storage will fail and generate the following error message in the UE-V operational event log:
+Keep settings storage paths as short as possible. Long paths could prevent resolution or synchronization. UE-V uses the Settings storage path as part of the calculated path to store settings. That path is calculated in the following way: settings storage path + "settingspackages" + package dir (template ID) + package name (template ID) + .pkgx. If that calculated path exceeds 260 characters, package storage will fail and generate the following error message in the UE-V operational event log:
 
 \[boost::filesystem::copy\_file: The system cannot find the path specified\]
 
@@ -95,35 +92,15 @@ WORKAROUND: None.
 
 ### Some operating system settings only roam between like operating system versions
 
-Operating system settings for Narrator and currency characters specific to the locale (i.e. language and regional settings) will only roam across like operating system versions of Windows. For example, currency characters will not roam between Windows 7 and Windows 8.
+Operating system settings for Narrator and currency characters specific to the locale (that is, language and regional settings) will only roam across like operating system versions of Windows. For example, currency characters will not roam between Windows 7 and Windows 8.
 
 WORKAROUND: None
 
-## Hotfixes and Knowledge Base articles for UE-V
-
-This section contains hotfixes and KB articles for UE-V.
-
-| KB Article | Title   | Link   |
-|------------|---------|--------|
-| 3018608    | UE-V - TemplateConsole.exe crashes when UE-V WMI classes are missing           | [support.microsoft.com/kb/3018608](https://support.microsoft.com/kb/3018608) |
-| 2903501    | UE-V: User Experience Virtualization (UE-V) compatibility with user profiles   | [support.microsoft.com/kb/2903501](https://support.microsoft.com/kb/2903501) |
-| 2770042    | UE-V Registry Settings                                                         | [support.microsoft.com/kb/2770042](https://support.microsoft.com/kb/2770042) |
-| 2847017    | Internet Explorer settings replicated by UE-V                                  | [support.microsoft.com/kb/2847017](https://support.microsoft.com/kb/2847017) |
-| 2769631    | How to repair a corrupted UE-V install                                         | [support.microsoft.com/kb/2769631](https://support.microsoft.com/kb/2769631) |
-| 2850989    | Migrating MAPI profiles with Microsoft UE-V is not supported                   | [support.microsoft.com/kb/2850989](https://support.microsoft.com/kb/2850989) |
-| 2769586    | UE-V roams empty folders and registry keys                                     | [support.microsoft.com/kb/2769586](https://support.microsoft.com/kb/2769586) |
-| 2782997    | How To Enable Debug Logging in Microsoft User Experience Virtualization (UE-V) | [support.microsoft.com/kb/2782997](https://support.microsoft.com/kb/2782997) |
-| 2769570    | UE-V does not update the theme on RDS or VDI sessions                          | [support.microsoft.com/kb/2769570](https://support.microsoft.com/kb/2769570) |
-| 2850582    | How To Use Microsoft User Experience Virtualization With App-V Applications    | [support.microsoft.com/kb/2850582](https://support.microsoft.com/kb/2850582) |
-| 3041879    | Current file versions for Microsoft User Experience Virtualization             | [support.microsoft.com/kb/3041879](https://support.microsoft.com/kb/3041879) |
-| 2843592    | Information on User Experience Virtualization and High Availability            | [support.microsoft.com/kb/2843592](https://support.microsoft.com/kb/2843592) |
-
-
-
-
-
 **Additional resources for this feature**
 
+- [UE-V Registry Settings](/troubleshoot/windows-client/ue-v/ue-v-registry-settings)
+
+- [How To Enable Debug Logging in Microsoft User Experience Virtualization (UE-V)](/troubleshoot/windows-client/ue-v/enable-debug-logging)
 
 -   [User Experience Virtualization](uev-for-windows.md)
 

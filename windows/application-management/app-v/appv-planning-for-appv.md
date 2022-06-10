@@ -1,20 +1,21 @@
 ---
-title: Planning for App-V (Windows 10)
+title: Planning for App-V (Windows 10/11)
 description: Use the information in this article to plan to deploy App-V without disrupting your existing network or user experience.
-author: lomayor
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
+author: aczechowski
 ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
+
 # Planning for App-V
 
->Applies to: Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
+
+> [!NOTE]
+> [!INCLUDE [Application Virtualization will be end of life in April 2026](../includes/app-v-end-life-statement.md)]
 
 Use the following information to plan to deploy App-V without disrupting your existing network or user experience.
 

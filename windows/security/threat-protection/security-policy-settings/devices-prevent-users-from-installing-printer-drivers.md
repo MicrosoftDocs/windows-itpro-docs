@@ -4,7 +4,7 @@ description: Describes the best practices, location, values, and security consid
 ms.assetid: ab70a122-f7f9-47e0-ad8c-541f30a27ec3
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +14,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 01/05/2022
+ms.technology: windows-sec
 ---
 
 # Devices: Prevent users from installing printer drivers
@@ -41,6 +42,9 @@ Although it might be appropriate in some organizations to allow users to install
 ### Best practices
 
 -   It is advisable to set **Devices: Prevent users from installing printer drivers** to Enabled. Only users in the Administrative, Power User, or Server Operator groups will be able to install printers on servers. If this policy setting is enabled, but the driver for a network printer already exists on the local computer, users can still add the network printer. This policy setting does not affect a user's ability to add a local printer.
+
+> [!NOTE]
+> After applying the [July 6, 2021 updates](https://support.microsoft.com/topic/kb5005010-restricting-installation-of-new-printer-drivers-after-applying-the-july-6-2021-updates-31b91c02-05bc-4ada-a7ea-183b129578a7), non-administrators, including delegated admin groups like printer operators, cannot install signed and unsigned printer drivers to a print server. By default, only administrators can install both signed and unsigned printer drivers to a print server. 
 
 ### Location
 

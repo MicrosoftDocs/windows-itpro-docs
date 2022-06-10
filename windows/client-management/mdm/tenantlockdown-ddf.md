@@ -5,7 +5,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 08/13/2018
 ms.reviewer: 
 manager: dansimp
@@ -75,3 +75,7 @@ The XML below is for Windows 10, version 1809.
       </Node>
 </MgmtTree>
 ```
+
+## Related topics
+
+[TenantLockdown CSP](tenantlockdown-csp.md)

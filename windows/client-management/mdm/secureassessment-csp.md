@@ -8,25 +8,39 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 06/26/2017
 ---
 
 # SecureAssessment CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 The SecureAssessment configuration service provider is used to provide configuration information for the secure assessment browser.
 
-The following diagram shows the SecureAssessment configuration service provider management objects in tree format as used by Open Mobile Alliance Device Management (OMA DM), OMA Client Provisioning, and Enterprise DM.
-
-![secureassessment](images/secureassessment-csp.png)
-
+The following example shows the SecureAssessment configuration service provider management objects in tree format as used by Open Mobile Alliance Device Management (OMA DM), OMA Client Provisioning, and Enterprise DM.
+```
+./Vendor/MSFT
+SecureAssessment
+----LaunchURI
+----TesterAccount
+```
 <a href="" id="--vendor-msft-secureassessment"></a>**./Vendor/MSFT/SecureAssessment**  
 The root node for the SecureAssessment configuration service provider.
 
 The supported operation is Get.
 
 <a href="" id="launchuri"></a>**LaunchURI**  
-URI Link to an assessment that's automatically loaded when the secure assessment browser is launched.
+URI link to an assessment that's automatically loaded when the secure assessment browser is launched.
 
 The supported operations are Add, Delete, Get, and Replace.
 
@@ -56,16 +70,9 @@ Supported operations are Get and Replace.
 
 ## Related topics
 
-[Set up Take a Test on multiple PCs](https://technet.microsoft.com/edu/windows/take-a-test-multiple-pcs)  
+[Set up Take a Test on multiple PCs](/education/windows/take-a-test-multiple-pcs)  
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
  
-
- 
-
-
-
-
-
 

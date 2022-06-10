@@ -4,7 +4,7 @@ description: Learn about best practices, security considerations and more for th
 ms.assetid: 4c7884e9-cc11-4402-96b6-89c77dc908f8
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.technology: windows-sec
 ---
 
 # Network security: Restrict NTLM: NTLM authentication in this domain
@@ -85,7 +85,7 @@ None. Changes to this policy become effective without a restart when saved local
 
 ### Group Policy
 
-Setting and deploying this policy using Group Policy takes precedence over the setting on the local device. If the Group Policy is set to **Not Configured**, local settings will apply.
+Setting and deploying this policy using Group Policy takes precedence over the setting on the local device. If the Group Policy is set to **Not Configured**, local settings will apply. The policy is applicable to domain controllers only.
 
 ### Auditing
 

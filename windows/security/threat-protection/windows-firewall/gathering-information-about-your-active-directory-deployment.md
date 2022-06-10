@@ -1,27 +1,24 @@
 ---
-title: Gathering Information about Your Active Directory Deployment (Windows 10)
+title: Gathering Information about Your Active Directory Deployment (Windows)
 description: Learn about gathering Active Directory information, including domain layout, organizational unit architecture, and site topology, for your firewall deployment.
-ms.assetid: b591b85b-12ac-4329-a47e-bc1b03e66eb0
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.prod: m365-security
 ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/08/2021
+ms.technology: windows-sec
 ---
 
 # Gathering Information about Your Active Directory Deployment
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 Active Directory is another important item about which you must gather information. You must understand the forest structure. This includes domain layout, organizational unit (OU) architecture, and site topology. This information makes it possible to know where devices are currently placed, their configuration, and the impact of changes to Active Directory that result from implementing Windows Defender Firewall with Advanced Security. Review the following list for information needed:
 

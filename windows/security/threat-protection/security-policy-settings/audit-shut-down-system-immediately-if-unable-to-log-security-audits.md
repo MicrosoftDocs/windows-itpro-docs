@@ -4,7 +4,7 @@ description: Best practices, security considerations, and more for the security 
 ms.assetid: 2cd23cd9-0e44-4d0b-a1f1-39fc29303826
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: windows-sec
 ---
 
 # Audit: Shut down system immediately if unable to log security audits
@@ -29,18 +30,9 @@ Describes the best practices, location, values, management practices, and securi
 The **Audit: Shut down system immediately if unable to log security audits** policy setting determines whether the system shuts down if it is unable to log security events. This policy setting is a requirement for Trusted Computer System Evaluation Criteria (TCSEC)-C2 and Common Criteria certification to prevent auditable events from occurring if the audit system is unable to log those events. Microsoft has chosen to meet this requirement by halting the system and displaying a Stop message in the case of a failure of the auditing system. Enabling this policy setting stops the system if a security audit cannot be logged for any reason. Typically, an event fails to be logged when the security audit log is full and the value of **Retention method for security log** is **Do not overwrite events (clear log manually)** or **Overwrite events by days**.
 
 With **Audit: Shut down system immediately if unable to log security audits** set to **Enabled**, if the security log is full and an existing entry cannot be overwritten, the following Stop message appears:
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>STOP: C0000244 {Audit Failed}</p>
-<p>An attempt to generate a security audit failed.</p></td>
-</tr>
-</tbody>
-</table>
- 
+
+**STOP: C0000244 {Audit Failed}**: An attempt to generate a security audit failed.
+
 To recover, you must log on, archive the log (optional), clear the log, and reset this option as desired.
 
 If the computer is unable to record events to the security log, critical evidence or important troubleshooting information might not be available for review after a security incident.
