@@ -5,9 +5,6 @@ ms.reviewer:
 ms.topic: article
 manager: dansimp
 ms.author: dansimp
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 author: dansimp
 ms.collection: M365-security-compliance
 ms.custom: intro-overview
