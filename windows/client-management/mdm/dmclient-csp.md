@@ -537,28 +537,32 @@ Supported operation is Exec only.
 
 <a href="" id="provider-providerid-multiplesession-numallowedconcurrentusersessionforbackgroundsync"></a>**Provider/*ProviderID*/MultipleSession/NumAllowedConcurrentUserSessionForBackgroundSync**
 
-Optional. This node specifies maximum number of concurrent user sync sessions in background. Default value is 25.
+Optional. This node specifies maximum number of concurrent user sync sessions in background. 
+
+The default value is dynamically decided by the client based on CPU usage.
 
 The values are : 0= none, 1= sequential, anything else=  parallel.
 
 Supported operations are Get, Add, Replace and Delete.
 
-Value type is integer. Only applicable for Windows 10 multi-session.
+Value type is integer. Only applicable for Windows Enterprise multi-session.
 
 
 <a href="" id="provider-providerid-multiplesession-numallowedconcurrentusersessionatuserlogonsync"></a>**Provider/*ProviderID*/MultipleSession/NumAllowedConcurrentUserSessionAtUserLogonSync**
-Optional. This node specifies maximum number of concurrent user sync sessions at User Login. Default value is 25.
+Optional. This node specifies maximum number of concurrent user sync sessions at User Login. 
+
+The default value is dynamically decided by the client based on CPU usage.
 
 The values are : 0= none, 1= sequential, anything else= parallel.
 
 Supported operations are Get, Add, Replace and Delete. 
 
-Value type is integer. Only applicable for Windows 10 multi-session. 
+Value type is integer. Only applicable for Windows Enterprise multi-session. 
 
 <a href="" id="provider-providerid-multiplesession-intervalforscheduledretriesforusersession"></a>**Provider/*ProviderID*/MultipleSession/IntervalForScheduledRetriesForUserSession**
 Optional. This node specifies the waiting time (in minutes) for the initial set of retries as specified by the number of retries in `/<ProviderID>/Poll/NumberOfScheduledRetriesForUserSession`. 
 
-If IntervalForScheduledRetriesForUserSession is not set, then the default value is used. The default value is 1440. If the value is set to 0, this schedule is disabled.
+If IntervalForScheduledRetriesForUserSession is not set, then the default value is used. The default value is 0. If the value is set to 0, this schedule is disabled.
 
 This configuration is only applicable for Windows Multi-session Editions.
 

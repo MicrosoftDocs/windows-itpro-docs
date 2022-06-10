@@ -18,12 +18,12 @@ ms.custom: bitlocker
 
 # BitLocker cannot encrypt a drive: known issues
 
-This article describes common issues that may prevent BitLocker from encrypting a drive. This article also provides guidance to address these issues.
+This article describes common issues that prevent BitLocker from encrypting a drive. This article also provides guidance to address these issues.
 
 > [!NOTE]
-> If you have determined that your BitLocker issue involves the Trusted Platform Module (TPM), see [BitLocker cannot encrypt a drive: known TPM issues](ts-bitlocker-cannot-encrypt-tpm-issues.md).
+> If you have determined that your BitLocker issue involves the trusted platform module (TPM), see [BitLocker cannot encrypt a drive: known TPM issues](ts-bitlocker-cannot-encrypt-tpm-issues.md).
 
-## Error 0x80310059: BitLocker Drive Encryption is already performing an operation on this drive
+## Error 0x80310059: BitLocker drive encryption is already performing an operation on this drive
 
 When you turn on BitLocker Drive Encryption on a computer that is running Windows 10 Professional or Windows 11, you receive a message that resembles the following:
 
@@ -31,7 +31,7 @@ When you turn on BitLocker Drive Encryption on a computer that is running Window
 
 ### Cause
 
-This issue may be caused by settings that are controlled by Group Policy Objects (GPOs).
+This issue may be caused by settings that are controlled by group policy objects (GPOs).
 
 ### Resolution
 
@@ -49,7 +49,7 @@ To resolve this issue, follow these steps:
    - **OSPlatformValidation\_UEFI**
    - **PlatformValidation**
 
-1. Exit Registry Editor, and turn on BitLocker Drive Encryption again.
+1. Exit registry editor, and turn on BitLocker drive encryption again.
 
 ## "Access is denied" message when you try to encrypt removable drives
 
@@ -69,7 +69,7 @@ You receive this message on any computer that runs Windows 10 version 1709 or ve
 
 ### Cause
 
-The security descriptor of the BitLocker Drive Encryption service (BDESvc) has an incorrect entry. Instead of NT AUTHORITY\Authenticated Users, the security descriptor uses NT AUTHORITY\INTERACTIVE.
+The security descriptor of the BitLocker drive encryption service (BDESvc) has an incorrect entry. Instead of NT AUTHORITY\Authenticated Users, the security descriptor uses NT AUTHORITY\INTERACTIVE.
 
 To verify that this issue has occurred, follow these steps:
 
@@ -89,7 +89,7 @@ To verify that this issue has occurred, follow these steps:
 
    ![Output of the ConvertFrom-SddlString command, showing NT AUTHORITY\\INTERACTIVE.](./images/ts-bitlocker-usb-sddl.png)
 
-   If you see NT AUTHORITY\INTERACTIVE (as highlighted), in the output of this command, this is the cause of the issue. Under typical conditions, the output should resemble the following:
+   If you see NT AUTHORITY\INTERACTIVE (as highlighted) in the output of this command, this is the cause of the issue. Under typical conditions, the output should resemble the following:
 
    ![Output of the ConvertFrom-SddlString command, showing NT AUTHORITY\\Authenticated Users.](./images/ts-bitlocker-usb-default-sddl.png)
 
