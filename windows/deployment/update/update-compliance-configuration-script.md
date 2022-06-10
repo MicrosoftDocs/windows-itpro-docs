@@ -81,7 +81,7 @@ Open `RunConfig.bat` and configure the following (assuming a first-run, with `ru
 | 51    | Unexpected exception when attempting to run Census.exe| 
 | 52    | Could not find Census.exe| 
 | 53    | There are conflicting CommercialID values.| 
-| 54    | Microsoft Account Sign In Assistant (MSA) Service disabled.| 
+| 54    | Microsoft account (MSA) Sign In Assistant Service disabled.| 
 | 55    | Failed to create new registry path for SetDeviceNameOptIn| 
 | 56    | Failed to create property for SetDeviceNameOptIn at registry path| 
 | 57    | Failed to update value for SetDeviceNameOptIn| 

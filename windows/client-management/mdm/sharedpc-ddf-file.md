@@ -14,7 +14,6 @@ ms.date: 12/05/2017
 
 # SharedPC DDF file
 
-
 This topic shows the OMA DM device description framework (DDF) for the **SharedPC** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
@@ -176,7 +175,7 @@ The XML below is the DDF for Windows 10, version 1703.
                     <Replace />
                 </AccessType>
                 <DefaultValue>300</DefaultValue>
-                <Description>The amount of time before the PC sleeps, giving in seconds. 0 means the PC never sleeps. Default is 5 minutes. This node is optional. If used, it needs to be set before the action on "EnableSharedPCMode" node is taken.</Description>
+                <Description>The amount of time before the PC sleeps, given in seconds. 0 means the PC never sleeps. Default is 5 minutes. This node is optional. If used, it needs to be set before the action on "EnableSharedPCMode" node is taken.</Description>
                 <DFFormat>
                     <int />
                 </DFFormat>
@@ -435,7 +434,6 @@ The XML below is the DDF for Windows 10, version 1703.
 ```
 
 ## Related topics
-
 
 [SharedPC configuration service provider](sharedpc-csp.md)
 

@@ -34,8 +34,6 @@ landingContent:
             url: /lifecycle/faq/internet-explorer-microsoft-edge
       - linkListType: download
         links:
-          - text: Download IE11 with Windows 10
-            url: https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise
           - text: Enterprise Mode Site List Manager (schema, v.2)
             url: https://www.microsoft.com/download/details.aspx?id=49974
           - text: Cumulative security updates for Internet Explorer 11

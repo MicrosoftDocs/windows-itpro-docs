@@ -5,7 +5,6 @@ search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/07/2021
 ms.prod: m365-security
@@ -14,7 +13,6 @@ ms.localizationpriority: medium
 ms.collection: 
 ms.custom: 
 ms.reviewer: skhadeer, raverma
-f1.keywords: NOCSH 
 ---
 
 # Cryptography and Certificate Management

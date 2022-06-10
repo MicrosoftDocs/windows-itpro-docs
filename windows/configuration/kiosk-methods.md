@@ -5,9 +5,6 @@ manager: dougeby
 ms.author: aaroncz
 description: In this article, learn about the methods for configuring kiosks and digital signs on Windows 10 or Windows 11 desktop editions.
 ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: aczechowski
 ms.topic: article

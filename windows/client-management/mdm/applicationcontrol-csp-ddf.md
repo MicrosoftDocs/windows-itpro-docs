@@ -11,12 +11,9 @@ ms.date: 07/10/2019
 
 # ApplicationControl CSP DDF
 
-
 This topic shows the OMA DM device description framework (DDF) for the **ApplicationControl** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
-
-### ApplicationControl CSP
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -32,7 +29,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
           <AccessType>
             <Get />
           </AccessType>
-          <Description>Root Node of the ApplicationControl CSP</Description>
+          <Description>Root Node of the ApplicationControl CSP.</Description>
           <DFFormat>
             <node />
           </DFFormat>
@@ -73,7 +70,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
               <AccessType>
                 <Get />
               </AccessType>
-              <Description>The GUID of the Policy</Description>
+              <Description>The GUID of the Policy.</Description>
               <DFFormat>
                 <node />
               </DFFormat>
@@ -97,7 +94,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
                   <Delete />
                   <Replace />
                 </AccessType>
-                <Description>The policy binary encoded as base64</Description>
+                <Description>The policy binary encoded as base64.</Description>
                 <DFFormat>
                   <b64 />
                 </DFFormat>
@@ -119,7 +116,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
                 <AccessType>
                   <Get />
                 </AccessType>
-                <Description>Information Describing the Policy indicated by the GUID</Description>
+                <Description>Information Describing the Policy indicated by the GUID.</Description>
                 <DFFormat>
                   <node />
                 </DFFormat>
@@ -140,7 +137,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
                   <AccessType>
                     <Get />
                   </AccessType>
-                  <Description>Version of the Policy indicated by the GUID, as a string. When parsing use a uint64 as the containing data type</Description>
+                  <Description>Version of the Policy indicated by the GUID, as a string. When parsing, use a uint64 as the containing data type.</Description>
                   <DFFormat>
                     <chr />
                   </DFFormat>
@@ -162,7 +159,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
                   <AccessType>
                     <Get />
                   </AccessType>
-                  <Description>Whether the Policy indicated by the GUID is Effective on the system (loaded by the enforcement engine and in effect)</Description>
+                  <Description>Whether the Policy indicated by the GUID is effective on the system (loaded by the enforcement engine and in effect).</Description>
                   <DFFormat>
                     <bool />
                   </DFFormat>
@@ -184,7 +181,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
                   <AccessType>
                     <Get />
                   </AccessType>
-                  <Description>Whether the Policy indicated by the GUID is deployed on the system (on the physical machine)</Description>
+                  <Description>Whether the Policy indicated by the GUID is deployed on the system (on the physical machine).</Description>
                   <DFFormat>
                     <bool />
                   </DFFormat>
@@ -206,7 +203,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
                   <AccessType>
                     <Get />
                   </AccessType>
-                  <Description>Whether the Policy indicated by the GUID is authorized to be loaded by the enforcement engine on the system </Description>
+                  <Description>Whether the Policy indicated by the GUID is authorized to be loaded by the enforcement engine on the system. </Description>
                   <DFFormat>
                     <bool />
                   </DFFormat>
@@ -228,7 +225,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
                   <AccessType>
                     <Get />
                   </AccessType>
-                  <Description>The Current Status of the Policy Indicated by the Policy GUID</Description>
+                  <Description>The Current Status of the Policy Indicated by the Policy GUID.</Description>
                   <DFFormat>
                     <int />
                   </DFFormat>
@@ -250,7 +247,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
                   <AccessType>
                     <Get />
                   </AccessType>
-                  <Description>The FriendlyName of the Policy Indicated by the Policy GUID</Description>
+                  <Description>The FriendlyName of the Policy Indicated by the Policy GUID.</Description>
                   <DFFormat>
                     <chr />
                   </DFFormat>
@@ -272,3 +269,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
       </Node>
 </MgmtTree>
 ```
+
+## Related topics
+
+[ApplicationControl configuration service provider](applicationcontrol-csp.md)
