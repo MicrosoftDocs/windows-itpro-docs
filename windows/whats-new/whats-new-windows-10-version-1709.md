@@ -1,16 +1,14 @@
 ---
 title: What's new in Windows 10, version 1709
 description: New and updated features in Windows 10, version 1709 (also known as the Fall Creators Update).
-keywords: ["What's new in Windows 10", "Windows 10", "Fall Creators Update"]
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.reviewer: 
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.topic: article
+ROBOTS: NOINDEX
 ---
 
 # What's new in Windows 10, version 1709 for IT Pros
@@ -46,9 +44,9 @@ IT Pros can use Autopilot Reset to quickly remove personal files, apps, and sett
 
 ## Update
 
-### Windows Update for Business (WUfB)
+### Windows Update for Business
 
-WUfB now has additional controls available to manage Windows Insider Program enrollment through policies. For more information, see [Manage Windows Insider Program flights](/windows/deployment/update/waas-configure-wufb#configure-when-devices-receive-windows-insider-preview-builds).
+Windows Update for Business now has additional controls available to manage Windows Insider Program enrollment through policies. For more information, see [Manage Windows Insider Program flights](/windows/deployment/update/waas-configure-wufb#configure-when-devices-receive-windows-insider-preview-builds).
 
 ### Windows Insider Program for Business
 

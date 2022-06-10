@@ -2,8 +2,6 @@
 title: Test scenario 2 - Perform a quick search with Cortana at work
 description: A test scenario about how to perform a quick search with Cortana at work.
 ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz

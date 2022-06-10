@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_CredentialProviders
-description: Policy CSP - ADMX_CredentialProviders
+description: Learn about the Policy CSP - ADMX_CredentialProviders.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -50,8 +50,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -100,8 +101,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -122,7 +124,7 @@ This policy setting allows the administrator to assign a specified credential pr
 
 If you enable this policy setting, the specified credential provider is selected on other user tile.
 
-If you disable or do not configure this policy setting, the system picks the default credential provider on other user tile.
+If you disable or don't configure this policy setting, the system picks the default credential provider on other user tile.
 
 > [!NOTE]
 > A list of registered credential providers and their GUIDs can be found in the registry at HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\Credential Providers.
@@ -149,8 +151,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -191,3 +194,7 @@ ADMX Info:
 
 
 <!--/Policies-->
+
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

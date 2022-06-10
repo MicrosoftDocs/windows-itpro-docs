@@ -4,8 +4,6 @@ description: Filter origin documentation audit log improvements
 ms.reviewer: 
 ms.author: v-bshilpa
 ms.prod: m365-security
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: normal
 author: Benny-54
 manager: dansimp

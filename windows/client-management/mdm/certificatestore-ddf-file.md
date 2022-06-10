@@ -14,7 +14,6 @@ ms.date: 12/05/2017
 
 # CertificateStore DDF file
 
-
 This topic shows the OMA DM device description framework (DDF) for the **CertificateStore** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
@@ -458,7 +457,7 @@ The XML below is the current version for this CSP.
                                 <Get />
                                 <Replace />
                             </AccessType>
-                            <Description>The base64 Encoded X.509 certificate. Note that though during MDM enrollment, enrollment server could use WAP XML format to add public part of MDM client cert via EncodedCertificate node, properly enroll a client certificate including private needs a cert enroll protocol handle it  or user installs it manually. In WP, the server cannot purely rely on CertificateStore CSP to install a client certificate including private key.</Description>
+                            <Description>The base64 Encoded X.509 certificate. Note that during MDM enrollment, enrollment server could use WAP XML format to add public part of MDM client cert via EncodedCertificate node and properly enroll a client certificate including private needs a cert enroll protocol to handle it  or user installs it manually. In WP, the server cannot purely rely on CertificateStore CSP to install a client certificate including private key.</Description>
                             <DFFormat>
                                 <b64 />
                             </DFFormat>
@@ -585,7 +584,7 @@ The XML below is the current version for this CSP.
                     <AccessType>
                         <Get />
                     </AccessType>
-                    <Description>This store holds the SCEP portion of the MY store and handle operations related to SCEP certificate enrollment.</Description>
+                    <Description>This store holds the SCEP portion of the MY store and handles operations related to SCEP certificate enrollment.</Description>
                     <DFFormat>
                         <node />
                     </DFFormat>
@@ -627,7 +626,7 @@ The XML below is the current version for this CSP.
                             <AccessType>
                                 <Get />
                             </AccessType>
-                            <Description>The group to represent the install request</Description>
+                            <Description>The group to represent the install request.</Description>
                             <DFFormat>
                                 <node />
                             </DFFormat>
@@ -1241,7 +1240,7 @@ The XML below is the current version for this CSP.
                                 <AccessType>
                                     <Get />
                                 </AccessType>
-                                <Description>If certificate renew fails, this node provide the last hresult code during renew process.</Description>
+                                <Description>If certificate renew fails, this node provides the last hresult code during renew process.</Description>
                                 <DFFormat>
                                     <int />
                                 </DFFormat>
@@ -1262,7 +1261,7 @@ The XML below is the current version for this CSP.
                                 <AccessType>
                                     <Get />
                                 </AccessType>
-                                <Description>Time of last attempted renew</Description>
+                                <Description>Time of last attempted renew.</Description>
                                 <DFFormat>
                                     <time />
                                 </DFFormat>
@@ -1283,7 +1282,7 @@ The XML below is the current version for this CSP.
                                 <AccessType>
                                     <Exec />
                                 </AccessType>
-                                <Description>Initiate a renew now</Description>
+                                <Description>Initiate a renew now.</Description>
                                 <DFFormat>
                                     <null />
                                 </DFFormat>
@@ -1305,7 +1304,7 @@ The XML below is the current version for this CSP.
                                     <Get />
                                     <Set />
                                 </AccessType>
-                                <Description>How long after the enrollment cert has expiried to keep trying to renew</Description>
+                                <Description>How long after the enrollment cert has expired to keep trying to renew.</Description>
                                 <DFFormat>
                                     <null />
                                 </DFFormat>
@@ -1372,7 +1371,7 @@ The XML below is the current version for this CSP.
                             <Get />
                             <Replace />
                         </AccessType>
-                        <Description>The base64 Encoded X.509 certificate</Description>
+                        <Description>The base64 Encoded X.509 certificate.</Description>
                         <DFFormat>
                             <b64 />
                         </DFFormat>
@@ -1667,11 +1666,6 @@ The XML below is the current version for this CSP.
 </MgmtTree>
 ```
 
- 
+## Related topics
 
- 
-
-
-
-
-
+[CertificateStore configuration service provider](certificatestore-csp.md)

@@ -1,16 +1,13 @@
 ---
 title: What's new in Windows 10, version 1909
 description: New and updated features in Windows 10, version 1909 (also known as the Windows 10 November 2019 Update).
-keywords: ["What's new in Windows 10", "Windows 10", "November 2019 Update"]
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-audience: itpro
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.topic: article
+ROBOTS: NOINDEX
 ---
 
 # What's new in Windows 10, version 1909 for IT Pros
@@ -36,9 +33,9 @@ Pre-release Windows 10 feature updates are now available to IT administrators us
 
 The Windows 10, version 1909 enablement package will be available on WSUS as [KB4517245](https://support.microsoft.com/kb/4517245), which can be deployed on existing deployments of Windows 10, version 1903. 
 
-### Windows Update for Business (WUfB)
+### Windows Update for Business
 
-If you are using WUfB, you will receive the Windows 10, version 1909 update in the same way that you have for prior feature updates, and as defined by your feature update deferral policy.
+If you are using Windows Update for Business, you will receive the Windows 10, version 1909 update in the same way that you have for prior feature updates, and as defined by your feature update deferral policy.
 
 ## Security
 

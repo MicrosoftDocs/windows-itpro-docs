@@ -14,16 +14,25 @@ ms.date: 06/26/2017
 
 # DMAcc CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 The DMAcc configuration service provider allows an OMA Device Management (DM) version 1.2 server to handle OMA DM account objects. The server can use this configuration service provider to add a new account or to manage an existing account, including an account that was bootstrapped by using the [w7 APPLICATION configuration service provider](w7-application-csp.md)
 
-> **Note**  This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_DEVICE\_MANAGEMENT\_ADMIN capabilities to be accessed from a network configuration application.
-
- 
+> [!Note]
+>This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_DEVICE\_MANAGEMENT\_ADMIN capabilities to be accessed from a network configuration application.
 
 For the DMAcc CSP, you can't use the Replace command unless the node already exists.
 
-The following example shows the DMAcc configuration service provider management object in tree format as used by OMA Device Management version 1.2. The OMA Client Provisioning protocol isn't supported by this configuration service provider.
+The following shows the DMAcc configuration service provider management object in tree format as used by OMA Device Management version 1.2. The OMA Client Provisioning protocol isn't supported by this configuration service provider.
 
 ```
 ./SyncML
@@ -237,13 +246,10 @@ Required. Specifies the role mask that the OMA DM session runs with when it comm
 
 If this parameter isn't present, the DM session is given the role mask of the OMA DM session that the server created. The following list shows the valid security role masks and their values.
 
--   4 = SECROLE\_OPERATOR
-
--   8 = SECROLE\_MANAGER
-
--   16 = SECROLE\_USER\_AUTH
-
--   128 = SECROLE\_OPERATOR\_TPS
+- 4 = SECROLE\_OPERATO
+- 8 = SECROLE\_MANAGE
+- 16 = SECROLE\_USER\_AUT
+- 128 = SECROLE\_OPERATOR\_TPS
 
 The acceptable access roles for this node can't be more than the roles assigned to the DMAcc object.
 
@@ -256,11 +262,9 @@ The default value of "FALSE" specifies that an application-specific GUID is retu
 
 A value is "TRUE" specifies that the hardware device ID will be provided for the ./DevInfo/DevID element and the Source LocURI for the OMA DM package that is sent to the server. In this case:
 
--   For GSM phones, the IMEI is returned.
-
--   For CDMA phones, the MEID is returned.
-
--   For dual SIM phones, this value is retrieved from the UICC of the primary data line.
+- For GSM phones, the IMEI is returned.
+- For CDMA phones, the MEID is returned.
+- For dual SIM phones, this value is retrieved from the UICC of the primary data line.
 
 Value type is bool. Supported operations are Add, Get, and Replace.
 
@@ -292,9 +296,8 @@ The supported names are Subject and Stores; wildcard certificate search isn't su
 
 Stores specifies which certificate stores the DM client will search to find the SSL client certificate. The valid store value is My%5CUser. The store name isn't case sensitive.
 
-> **Note**   %EF%80%80 is the UTF8-encoded character U+F000.
-
- 
+> [!Note]
+> %EF%80%80 is the UTF8-encoded character U+F000.
 
 Subject specifies the certificate to search for. For example, to specify that you want a certificate with a particular Subject attribute (“CN=Tester,O=Microsoft”), use the following schema:
 
@@ -312,15 +315,4 @@ Supported operations are Add, and Replace.
 
 ## Related topics
 
-
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-
- 
-
-
-
-
-
-
