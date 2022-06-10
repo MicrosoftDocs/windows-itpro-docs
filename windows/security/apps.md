@@ -4,9 +4,6 @@ description: Get an overview of application security in Windows 10 and Windows 1
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 author: dansimp
 ms.collection: M365-security-compliance
 ms.prod: m365-security

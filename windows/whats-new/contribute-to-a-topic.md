@@ -1,10 +1,7 @@
 ---
 title: Edit an existing topic using the Edit link
 description: Instructions about how to edit an existing topic by using the Edit link on docs.microsoft.com.
-keywords: contribute, edit a topic
 ms.prod: w10
-ms.mktglfcycl: explore
-ms.sitesec: library
 ms.date: 10/13/2017
 ms.reviewer: 
 manager: dansimp
