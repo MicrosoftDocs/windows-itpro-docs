@@ -125,7 +125,7 @@ Before you continue with the deployment, validate your deployment progress by re
 
 ## Add users to the Windows Hello for Business Users group
 
-Users must receive the Windows Hello for Business group policy settings and have the proper permission to enroll for the WHFB Authentication certificate. You can provide users with these settings and permissions by adding the group used synchronize users to the Windows Hello for Business Users group.   Users and groups that are not members of this group will not attempt to enroll for Windows Hello for Business.
+Users must receive the Windows Hello for Business group policy settings and have the proper permission to enroll for the Windows Hello for Business Authentication certificate. You can provide users with these settings and permissions by adding the group used synchronize users to the Windows Hello for Business Users group.   Users and groups that are not members of this group will not attempt to enroll for Windows Hello for Business.
 
 
 ## Follow the Windows Hello for Business on premises certificate trust deployment guide

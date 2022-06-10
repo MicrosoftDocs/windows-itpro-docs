@@ -14,7 +14,6 @@ author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 07/15/2021
 ms.technology: windows-sec
 ---
 
@@ -24,7 +23,7 @@ ms.technology: windows-sec
 
 - Windows 10
 - Windows 11
-- Windows Server 2016 and above
+- Windows Server 2019 and above
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).

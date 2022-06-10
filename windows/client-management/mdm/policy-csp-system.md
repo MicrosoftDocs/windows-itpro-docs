@@ -123,6 +123,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -176,6 +177,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -273,6 +275,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -327,6 +330,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -368,6 +372,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -414,6 +419,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -474,6 +480,7 @@ To verify if System/AllowFontProviders is set to true:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -551,6 +558,7 @@ If you disable this policy setting, devices may not appear in Microsoft Managed 
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -592,6 +600,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -662,6 +671,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -721,6 +731,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -793,6 +804,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -850,6 +862,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -905,6 +918,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -953,6 +967,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -1006,6 +1021,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -1058,6 +1074,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -1110,6 +1127,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -1151,6 +1169,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -1214,6 +1233,7 @@ To validate on Desktop, do the following steps:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -1271,6 +1291,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -1310,6 +1331,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -1359,6 +1381,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -1409,6 +1432,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -1470,6 +1494,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -1513,6 +1538,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
