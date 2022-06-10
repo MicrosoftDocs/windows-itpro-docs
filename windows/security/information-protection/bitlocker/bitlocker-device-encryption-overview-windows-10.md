@@ -29,7 +29,7 @@ ms.custom: bitlocker
 This article explains how BitLocker Device Encryption can help protect data on devices running Windows. 
 For a general overview and list of articles about BitLocker, see [BitLocker](bitlocker-overview.md). 
 
-When users travel, their organization’s confidential data goes with them. Wherever confidential data is stored, it must be protected against unauthorized access. Windows has a long history of providing at-rest data-protection solutions that guard against nefarious attackers, beginning with the Encrypting File System in the Windows 2000 operating system. More recently, BitLocker has provided encryption for full drives and portable drives. Windows consistently improves data protection by improving existing options and by providing new strategies.
+When users travel, their organization’s confidential data goes with them. Wherever confidential data is stored, it must be protected against unauthorized access. Windows has a long history of providing at-rest data-protection solutions that guard against nefarious attackers, beginning with the Encrypting File System in the Windows 2000 operating system. More recently, BitLocker has provided encryption for full drives and portable drives. Windows consistently improves data protection by improving existing options and providing new strategies.
 
 Table 2 lists specific data-protection concerns and how they're addressed in Windows 11, Windows 10, and Windows 7.
 
@@ -67,13 +67,13 @@ BitLocker is capable of encrypting entire hard drives, including both system and
 
 With earlier versions of Windows, administrators had to enable BitLocker after Windows had been installed. Although this process could be automated, BitLocker would need to encrypt the entire drive, a process that could take anywhere from several hours to more than a day depending on drive size and performance, which delayed deployment. Microsoft has improved this process through multiple features in Windows 11 and Windows 10.
 
-## BitLocker Device Encryption 
+## BitLocker device encryption 
 
 Beginning in Windows 8.1, Windows automatically enables BitLocker Device Encryption on devices that support Modern Standby. With Windows 11 and Windows 10, Microsoft offers BitLocker Device Encryption support on a much broader range of devices, including those that are Modern Standby, and devices that run Windows 10 Home edition or Windows 11.
 
-Microsoft expects that most devices in the future will pass the testing requirements, which makes BitLocker Device Encryption pervasive across modern Windows devices. BitLocker Device Encryption further protects the system by transparently implementing device-wide data encryption.
+Microsoft expects that most devices in the future will pass the testing requirements, which makes BitLocker device encryption pervasive across modern Windows devices. BitLocker device encryption further protects the system by transparently implementing device-wide data encryption.
 
-Unlike a standard BitLocker implementation, BitLocker Device Encryption is enabled automatically so that the device is always protected. The following list outlines how this happens:
+Unlike a standard BitLocker implementation, BitLocker device encryption is enabled automatically so that the device is always protected. The following list outlines how this happens:
 
 * When a clean installation of Windows 11 or Windows 10 is completed and the out-of-box experience is finished, the computer is prepared for first use. As part of this preparation, BitLocker Device Encryption is initialized on the operating system drive and fixed data drives on the computer with a clear key (this is the equivalent of standard BitLocker suspended state). In this state, the drive is shown with a warning icon in Windows Explorer.  The yellow warning icon is removed after the TPM protector is created and the recovery key is backed up, as explained in the following bullet points.
 * If the device isn't domain joined, a Microsoft account that has been granted administrative privileges on the device is required. When the administrator uses a Microsoft account to sign in, the clear key is removed, a recovery key is uploaded to the online Microsoft account, and a TPM protector is created. Should a device require the recovery key, the user will be guided to use an alternate device and navigate to a recovery key access URL to retrieve the recovery key by using his or her Microsoft account credentials.
@@ -85,7 +85,7 @@ Microsoft recommends that BitLocker Device Encryption be enabled on any systems 
 - **Value**: PreventDeviceEncryption equal to True (1)
 - **Type**: REG\_DWORD
 
-Administrators can manage domain-joined devices that have BitLocker Device Encryption enabled through Microsoft BitLocker Administration and Monitoring (MBAM). In this case, BitLocker Device Encryption automatically makes additional BitLocker options available. No conversion or encryption is required, and MBAM can manage the full BitLocker policy set if any configuration changes are required.
+Administrators can manage domain-joined devices that have BitLocker device encryption enabled through Microsoft BitLocker Administration and Monitoring (MBAM). In this case, BitLocker device encryption automatically makes additional BitLocker options available. No conversion or encryption is required, and MBAM can manage the full BitLocker policy set if any configuration changes are required.
 
 > [!NOTE]
 > BitLocker Device Encryption uses the XTS-AES 128-bit encryption method. In case you need to use a different encryption method and/or cipher strength, the device must be configured and decrypted (if already encrypted) first. After that, different BitLocker settings can be applied.
@@ -124,12 +124,12 @@ Network Unlock enables BitLocker-protected PCs to start automatically when conne
 Network Unlock requires the following infrastructure:
 
 * Client PCs that have Unified Extensible Firmware Interface (UEFI) firmware version 2.3.1 or later, which supports Dynamic Host Configuration Protocol (DHCP)
-* A server running at least Windows Server 2012 with the Windows Deployment Services role
+* A server running at least Windows Server 2012 with the Windows deployment services role
 * A server with the DHCP server role installed
 
-For more information about how to configure Network Unlock, see [BitLocker: How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md).
+For more information about how to configure Network unlock feature, see [BitLocker: How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md).
 
-## Microsoft BitLocker Administration and Monitoring
+## Microsoft BitLocker administration and monitoring
 
 Part of the Microsoft Desktop Optimization Pack, Microsoft BitLocker Administration and Monitoring (MBAM) makes it easier to manage and support BitLocker and BitLocker To Go. MBAM 2.5 with Service Pack 1, the latest version, has the following key features:
 
