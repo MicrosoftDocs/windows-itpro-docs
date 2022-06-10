@@ -5,7 +5,6 @@ search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/08/2021
 ms.prod: m365-security
@@ -13,8 +12,7 @@ ms.technology: windows-sec
 ms.localizationpriority: medium
 ms.collection: 
 ms.custom: 
-ms.reviewer: deepakm, rafals
-f1.keywords: NOCSH  
+ms.reviewer: deepakm, rafals  
 ---
 
 # Encryption and data protection in Windows client
