@@ -1,17 +1,12 @@
 ---
 title: Encryption Zone (Windows)
 description: Learn how to create an encryption zone to contain devices that host very sensitive data and require that the sensitive network traffic be encrypted.
-ms.assetid: 55a025ce-357f-4d1b-b2ae-6ee32c9abe13
 ms.reviewer: 
 ms.author: dansimp
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021

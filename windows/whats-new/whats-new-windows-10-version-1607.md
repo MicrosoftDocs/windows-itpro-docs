@@ -1,16 +1,14 @@
 ---
 title: What's new in Windows 10, version 1607 (Windows 10)
 description: What's new in Windows 10 for Windows 10 (version 1607).
-keywords: ["What's new in Windows 10", "Windows 10", "anniversary update"]
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.reviewer: 
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
 ms.topic: article
+ROBOTS: NOINDEX
 ---
 
 # What's new in Windows 10, version 1607 for IT Pros
