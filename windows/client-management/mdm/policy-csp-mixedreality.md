@@ -105,8 +105,8 @@ On a device where this policy is configured, the user specified in the policy wi
 
 > [!NOTE]
 >
- - Some events such as major OS updates may require the specified user to logon to the device again, to resume auto-logon behavior.
-> - Auto-logon is only supported for MSA and AAD users.
+> - Some events such as major OS updates may require the specified user to logon to the device again to resume auto-logon behavior.
+> - Auto-logon is only supported for Microsoft account and AAD users.
 
 <!--/SupportedSKUs-->
 <hr/>
