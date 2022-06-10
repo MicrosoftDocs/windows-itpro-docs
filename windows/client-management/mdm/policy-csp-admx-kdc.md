@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_kdc
-description: Policy CSP - ADMX_kdc
+description: Learn about the Policy CSP - ADMX_kdc.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -13,6 +13,7 @@ manager: dansimp
 ---
 
 # Policy CSP - ADMX_kdc
+
 >[!TIP]
 > These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 > 
@@ -107,7 +108,7 @@ Impact on domain controller performance when this policy setting is enabled:
 
 - Secure Kerberos domain capability discovery is required, resulting in more message exchanges.
 - Claims and compound authentication for Dynamic Access Control increase the size and complexity of the data in the message, which results in more processing time and greater Kerberos service ticket size.
-- Kerberos armoring fully encrypts Kerberos messages and signs Kerberos errors, which results in increased processing time, but doesn't change the service ticket size.
+- Kerberos armoring fully encrypts Kerberos messages and signs Kerberos errors, which result in increased processing time, but doesn't change the service ticket size.
 
 <!--/Description-->
 
@@ -378,3 +379,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

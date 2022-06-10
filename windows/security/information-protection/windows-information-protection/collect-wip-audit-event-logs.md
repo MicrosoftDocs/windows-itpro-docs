@@ -50,7 +50,7 @@ This table includes all available attributes/elements for the **Log** element. T
 |Attribute/Element |Value type |Description |
 |----------|-----------|------------|
 |ProviderType |String |This is always **EDPAudit**. |
-|LogType |String |Includes:<ul><li>**DataCopied.** Work data is copied or shared to a personal location.</li><li>**ProtectionRemoved.** WIP protection is removed from a Work-defined file.</li><li>**ApplicationGenerated.** A custom audit log provided by an app.</li></ul>|
+|LogType |String |Includes:<ul><li>**DataCopied.** Work data is copied or shared to a personal location.</li><li>**ProtectionRemoved.** Windows Information Protection is removed from a Work-defined file.</li><li>**ApplicationGenerated.** A custom audit log provided by an app.</li></ul>|
 |TimeStamp |Int |Uses the [FILETIME structure](/windows/win32/api/minwinbase/ns-minwinbase-filetime) to represent the time that the event happened. |
 |Policy |String |How the work data was shared to the personal location:<ul><li>**CopyPaste.** Work data was pasted into a personal location or app.</li><li>**ProtectionRemoved.** Work data was changed to be unprotected.</li><li>**DragDrop.** Work data was dropped into a personal location or app.</li><li>**Share.** Work data was shared with a personal location or app.</li><li>**NULL.** Any other way work data could be made personal beyond the options above. For example, when a work file is opened using a personal application (also known as, temporary access).</li></ul> |
 |Justification |String |Not implemented. This will always be either blank or NULL.<br><br>**Note**<br>Reserved for future use to collect the user justification for changing from **Work** to **Personal**. |
@@ -160,7 +160,7 @@ Here are a few examples of responses from the Reporting CSP.
 
 ## Collect WIP audit logs by using Windows Event Forwarding (for Windows desktop domain-joined devices only)
 
-Use Windows Event Forwarding to collect and aggregate your WIP audit events. You can view your audit events in the Event Viewer.
+Use Windows Event Forwarding to collect and aggregate your Windows Information Protection audit events. You can view your audit events in the Event Viewer.
 
 **To view the WIP events in the Event Viewer**
 

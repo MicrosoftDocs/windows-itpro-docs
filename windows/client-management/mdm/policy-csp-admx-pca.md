@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_pca
-description: Policy CSP - ADMX_pca
+description: Learn about Policy CSP - ADMX_pca.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -82,10 +82,11 @@ manager: dansimp
 <!--Description-->
 This policy setting configures the Program Compatibility Assistant (PCA) to diagnose failures with application and driver compatibility.  
 
-- If you enable this policy setting, the PCA is configured to detect failures during application installation, failures during application runtime, and drivers blocked due to compatibility issues. When failures are detected, the PCA will provide options to run the application in a compatibility mode or get help online through a Microsoft website.  
-- If you disable this policy setting, the PCA does not detect compatibility issues for applications and drivers.  
+If you enable this policy setting, the PCA is configured to detect failures during application installation, failures during application runtime, and drivers blocked due to compatibility issues. When failures are detected, the PCA will provide options to run the application in a compatibility mode or get help online through a Microsoft website.  
 
-If you do not configure this policy setting, the PCA is configured to detect failures during application installation, failures during application runtime, and drivers blocked due to compatibility issues.  
+If you disable this policy setting, the PCA doesn't detect compatibility issues for applications and drivers.  
+
+If you don't configure this policy setting, the PCA is configured to detect failures during application installation, failures during application runtime, and drivers blocked due to compatibility issues.  
 
 > [!NOTE]
 > This policy setting has no effect if the "Turn off Program Compatibility Assistant" policy setting is enabled. 
@@ -132,7 +133,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This setting exists only for backward compatibility, and is not valid for this version of Windows. 
+This setting exists only for backward compatibility, and isn't valid for this version of Windows. 
 
 To configure the Program Compatibility Assistant, use the 'Turn off Program Compatibility Assistant' setting under Computer Configuration\Administrative 
 Templates\Windows Components\Application Compatibility.
@@ -179,7 +180,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 
-This setting exists only for backward compatibility, and is not valid for this version of Windows. To configure the Program Compatibility Assistant, use the 'Turn off Program Compatibility Assistant' setting under Computer Configuration\Administrative Templates\Windows Components\Application Compatibility.
+This setting exists only for backward compatibility, and isn't valid for this version of Windows. To configure the Program Compatibility Assistant, use the 'Turn off Program Compatibility Assistant' setting under Computer Configuration\Administrative Templates\Windows Components\Application Compatibility.
 
 <!--/Description-->
 
@@ -221,7 +222,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 
-This setting exists only for backward compatibility, and is not valid for this version of Windows. To configure the Program Compatibility Assistant, use the 'Turn off Program Compatibility Assistant' setting under Computer Configuration\Administrative Templates\Windows Components\Application Compatibility.
+This setting exists only for backward compatibility, and isn't valid for this version of Windows. To configure the Program Compatibility Assistant, use the 'Turn off Program Compatibility Assistant' setting under Computer Configuration\Administrative Templates\Windows Components\Application Compatibility.
 
 <!--/Description-->
 
@@ -264,7 +265,8 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 
-This setting exists only for backward compatibility, and is not valid for this version of Windows. 
+This setting exists only for backward compatibility, and isn't valid for this version of Windows.
+
 To configure the Program Compatibility Assistant, use the 'Turn off Program Compatibility Assistant' setting under Computer Configuration\Administrative Templates\Windows Components\Application Compatibility.
 
 <!--/Description-->
@@ -308,7 +310,8 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 
-This setting exists only for backward compatibility, and is not valid for this version of Windows. 
+This setting exists only for backward compatibility, and isn't valid for this version of Windows.
+
 To configure the Program Compatibility Assistant, use the 'Turn off Program Compatibility Assistant' setting under Computer Configuration\Administrative Templates\Windows Components\Application Compatibility.
 
 <!--/Description-->
@@ -352,7 +355,8 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 
-This setting exists only for backward compatibility, and is not valid for this version of Windows. 
+This setting exists only for backward compatibility, and isn't valid for this version of Windows.
+
 To configure the Program Compatibility Assistant, use the 'Turn off Program Compatibility Assistant' setting under Computer Configuration\Administrative Templates\Windows Components\Application Compatibility.
 
 <!--/Description-->
@@ -371,3 +375,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
