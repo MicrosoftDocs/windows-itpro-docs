@@ -24,7 +24,7 @@ Historically, Windows Defender Application Control (WDAC) has restricted the set
 Security researchers have found that some .NET applications may be used to circumvent those controls by using .NET’s capabilities to load libraries from external sources or generate new code on the fly.
 Beginning with Windows 10, version 1803, or Windows 11, WDAC features a new capability, called *Dynamic Code Security* to verify code loaded by .NET at runtime.
 
-When the Dynamic Code Security option is enabled, WDAC policy is applied to libraries that .NET loads from external sources. 
+When the Dynamic Code Security option is enabled, WDAC policy is applied to libraries that .NET loads from external sources (any non-local sources, such as Internet or network share). 
 Additionally, it detects tampering in code generated to disk by .NET and blocks loading code that has been tampered with. 
 
 Dynamic Code Security is not enabled by default because existing policies may not account for externally loaded libraries. 
