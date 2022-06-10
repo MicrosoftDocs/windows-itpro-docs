@@ -14,6 +14,17 @@ ms.date: 02/28/2020
 
 # CertificateStore CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 The CertificateStore configuration service provider is used to add secure socket layers (SSL), intermediate, and self-signed certificates.
 
 > [!Note]
@@ -24,7 +35,7 @@ For the CertificateStore CSP, you can't use the Replace command unless the node 
 
 The following example shows the CertificateStore configuration service provider management object in tree format as used by both Open Mobile Alliance Device Management (OMA DM) and OMA Client Provisioning.
 
-```
+```console
 ./Vendor/MSFT
 CertificateStore
 ----ROOT
@@ -259,7 +270,7 @@ Optional. OID of certificate template name.
 Supported operations are Get, Add, and Delete.
 
 <a href="" id="my-scep-uniqueid-install-keylength"></a>**My/SCEP/*UniqueID*/Install/KeyLength**  
-Required for enrollment. Specify private key length (RSA). Value type is an integer. Valid values are 1024, 2048, 4096. NGC key lengths supported should be specified.
+Required for enrollment. Specifies private key length (RSA). Value type is an integer. Valid values are 1024, 2048, 4096. NGC key lengths supported should be specified.
 
 Supported operations are Get, Add, Delete, and Replace.
 
@@ -343,7 +354,7 @@ Required. Returns the URL of the SCEP server that responded to the enrollment re
 Supported operation is Get.
 
 <a href="" id="my-wstep"></a>**My/WSTEP**  
-Required for MDM enrolled device. The parent node that hosts the MDM enrollment client certificate related settings that are enrolled via WSTEP. The nodes under WSTEP are mostly for MDM client certificate renew requests. Value type is node.
+Required for MDM enrolled device. Specifies the parent node that hosts the MDM enrollment client certificate related settings that are enrolled via WSTEP. The nodes under WSTEP are mostly for MDM client certificate renew requests. Value type is node.
 
 Supported operation is Get.
 
@@ -357,8 +368,6 @@ Optional. Specifies the URL of certificate renewal server. If this node doesn't 
 
 > [!NOTE]
 > The renewal process follows the same steps as device enrollment, which means that it starts with Discovery service, followed by Enrollment policy service, and then Enrollment web service.
-
- 
 
 Supported operations are Add, Get, Delete, and Replace.
 
@@ -414,7 +423,7 @@ Optional. If certificate renewal fails, this integer value indicates the HRESULT
 Supported operation is Get.
 
 <a href="" id="my-wstep-renew-lastrenewalattempttime"></a>**My/WSTEP/Renew/LastRenewalAttemptTime**  
-Added in Windows 10, version 1607. Time of the last attempted renewal.
+Added in Windows 10, version 1607. Specifies the time of the last attempted renewal.
 
 Supported operation is Get.
 
@@ -424,7 +433,7 @@ Added in Windows 10, version 1607. Initiates a renewal now.
 Supported operation is Execute.
 
 <a href="" id="my-wstep-renew-retryafterexpiryinterval"></a>**My/WSTEP/Renew/RetryAfterExpiryInterval**  
-Added in Windows 10, version 1703. How long after the enrollment certificate has expired before trying to renew.
+Added in Windows 10, version 1703. Specifies how long after the enrollment certificate has expired before trying to renew.
 
 Supported operations are Add, Get, and Replace.
 
@@ -697,7 +706,6 @@ Configure the device to automatically renew an MDM client certificate with the s
 ```
 
 ## Related topics
-
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
