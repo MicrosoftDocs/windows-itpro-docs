@@ -14,7 +14,6 @@ manager: dansimp
 
 # Policy CSP - WindowsInkWorkspace
 
-
 <hr/>
 
 <!--Policies-->
@@ -29,13 +28,13 @@ manager: dansimp
   </dd>
 </dl>
 
-
 <hr/>
 
 <!--Policy-->
 <a href="" id="windowsinkworkspace-allowsuggestedappsinwindowsinkworkspace"></a>**WindowsInkWorkspace/AllowSuggestedAppsInWindowsInkWorkspace**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -85,6 +84,7 @@ The following list shows the supported values:
 <a href="" id="windowsinkworkspace-allowwindowsinkworkspace"></a>**WindowsInkWorkspace/AllowWindowsInkWorkspace**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -121,7 +121,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Value type is int. The following list shows the supported values:
+Supported value type is int. The following list shows the supported values:
 
 -   0 - access to ink workspace is disabled. The feature is turned off.
 -   1 - ink workspace is enabled (feature is turned on), but the user cannot access it above the lock screen.
@@ -133,3 +133,6 @@ Value type is int. The following list shows the supported values:
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)
