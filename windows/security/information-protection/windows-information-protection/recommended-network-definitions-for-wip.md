@@ -25,7 +25,7 @@ ms.reviewer:
 
 >Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/WindowsForBusiness/Compare).
 
-We recommend that you add the following URLs to the Enterprise Cloud Resources and Neutral Resources network settings when you create a WIP policy. If you are using Intune, the SharePoint entries may be added automatically. 
+We recommend that you add the following URLs to the Enterprise Cloud Resources and Neutral Resources network settings when you create a Windows Information Protection policy. If you are using Intune, the SharePoint entries may be added automatically. 
 
 ## Recommended Enterprise Cloud Resources
 

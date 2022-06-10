@@ -1,17 +1,12 @@
 ---
 title: Gathering Information about Your Active Directory Deployment (Windows)
 description: Learn about gathering Active Directory information, including domain layout, organizational unit architecture, and site topology, for your firewall deployment.
-ms.assetid: b591b85b-12ac-4329-a47e-bc1b03e66eb0
 ms.reviewer: 
 ms.author: dansimp
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021
