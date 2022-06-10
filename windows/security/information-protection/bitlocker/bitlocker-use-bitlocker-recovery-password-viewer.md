@@ -28,7 +28,7 @@ ms.custom: bitlocker
 - Windows 11
 - Windows Server 2016 and above
 
-This topic for the IT professional describes how to use the BitLocker Recovery Password Viewer.
+This topic describes how to use the BitLocker Recovery Password Viewer.
 
 The BitLocker Recovery Password Viewer tool is an optional tool included with the Remote Server Administration Tools (RSAT). It lets you locate and view BitLocker recovery passwords that are stored in Active Directory Domain Services (AD DS). You can use this tool to help recover data that is stored on a drive that has been encrypted by using BitLocker. The BitLocker Active Directory Recovery Password Viewer tool is an extension for the Active Directory Users and Computers Microsoft Management Console (MMC) snap-in. Using this tool, you can examine a computer object's **Properties** dialog box to view the corresponding BitLocker recovery passwords. Additionally you can right-click a domain container and then search for a BitLocker recovery password across all the domains in the Active Directory forest. You can also search for a password by password identifier (ID).
 
@@ -38,7 +38,7 @@ To complete the procedures in this scenario:
 
 -   You must have domain administrator credentials.
 -   Your test computers must be joined to the domain.
--   On the test computers, BitLocker must have been turned on after joining the domain.
+-   On the domain-joined test computers, BitLocker must have been turned on.
 
 The following procedures describe the most common tasks performed by using the BitLocker Recovery Password Viewer.
 

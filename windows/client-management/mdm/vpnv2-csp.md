@@ -30,7 +30,7 @@ The VPNv2 configuration service provider allows the Mobile Device Management (MD
 Here are the requirements for this CSP:
 
 - VPN configuration commands must be wrapped in an Atomic block in SyncML.
-- For best results, configure your VPN certificates first before pushing down VPN profiles to devices. If you're using Windows Information Protection (WIP) (formerly known as Enterprise Data Protection), then you should configure VPN first before you configure WIP policies.
+- For best results, configure your VPN certificates first before pushing down VPN profiles to devices. If you're using Windows Information Protection (WIP) (formerly known as Enterprise Data Protection), then you should configure VPN first before you configure Windows Information Protection policies.
 - Instead of changing individual properties, follow these steps to make any changes:
 
   - Send a Delete command for the ProfileName to delete the entire profile.
@@ -350,12 +350,7 @@ Supported operations include Get, Add, Replace, and Delete.
 App Node under the Row ID.
 
 <a href="" id="vpnv2-profilename-apptriggerlist-apptriggerrowid-app-id"></a>**VPNv2/**<em>ProfileName</em>**/AppTriggerList/**<em>appTriggerRowId</em>**/App/Id**  
-<<<<<<< HEAD
 App identity, which is either an app’s package family name or file path. The type is inferred by the ID, and therefore can't be specified in the get only App/Type field
-=======
-App identity, which is either an app’s package family name or file path. The type is inferred by the Id, and therefore can't be specified in the get only App/Type field
->>>>>>> a69c123bc2f66ed792d9bbb34e2121fb4c2e7d5d
-
 <a href="" id="vpnv2-profilename-apptriggerlist-apptriggerrowid-app-type"></a>**VPNv2/**<em>ProfileName</em>**/AppTriggerList/**<em>appTriggerRowId</em>**/App/Type**  
 Returns the type of **App/Id**. This value can be either of the following values:
 
@@ -372,20 +367,13 @@ Every computer that runs TCP/IP makes routing decisions. These decisions are con
 Adding a route here allows the networking stack to identify the traffic that needs to go over the VPN interface for split tunnel VPN. Some VPN servers can configure this during connect negotiation and don't need this information in the VPN Profile. Check with your VPN server administrator to determine whether you need this information in the VPN profile.
 
 <a href="" id="vpnv2-profilename-routelist-routerowid"></a>**VPNv2/**<em>ProfileName</em>**/RouteList/**<em>routeRowId</em>  
-<<<<<<< HEAD
-A sequential integer identifier for the RouteList. This is required if you're adding routes. Sequencing must start at 0.
-=======
+
 A sequential integer identifier for the RouteList. This value is required if you're adding routes. Sequencing must start at 0.
->>>>>>> a69c123bc2f66ed792d9bbb34e2121fb4c2e7d5d
 
 Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-routelist-routerowid-address"></a>**VPNv2/**<em>ProfileName</em>**/RouteList/**<em>routeRowId</em>**/Address**  
-<<<<<<< HEAD
-Subnet address in IPv4/v6 address format, which along with the prefix will be used to determine the destination prefix to send via the VPN Interface. This is the IP address part of the destination prefix.
-=======
 Subnet address in IPv4/v6 address format which, along with the prefix, will be used to determine the destination prefix to send via the VPN Interface. This subnet address is the IP address part of the destination prefix.
->>>>>>> a69c123bc2f66ed792d9bbb34e2121fb4c2e7d5d
 
 Supported operations include Get, Add, Replace, and Delete. Value type is chr. Example, `192.168.0.0`
 
@@ -410,11 +398,7 @@ Supported operations include Get, Add, Replace, and Delete.
 <a href="" id="vpnv2-profilename-domainnameinformationlist"></a>**VPNv2/**<em>ProfileName</em>**/DomainNameInformationList**  
 Optional node. Name Resolution Policy Table (NRPT) rules for the VPN profile.
 
-<<<<<<< HEAD
-The Name Resolution Policy Table (NRPT) is a table of namespaces and corresponding settings stored in the Windows registry that determines the DNS client behavior when issuing queries and processing responses. Each row in the NRPT represents a rule for a portion of the namespace for which the DNS client issues queries. Before issuing name resolution queries, the DNS client consults the NRPT to determine if any another flags must be set in the query. After receiving the response, the client again consults the NRPT to check for any special processing or policy requirements. In the absence of the NRPT, the client operates based on the DNS servers and suffixes set on the interface.
-=======
 The Name Resolution Policy Table (NRPT) is a table of namespaces and corresponding settings stored in the Windows registry that determines the DNS client behavior when issuing queries and processing responses. Each row in the NRPT represents a rule for a portion of the namespace for which the DNS client issues queries. Before name resolution queries are issued, the DNS client consults the NRPT to determine if any extra flags must be set in the query. After the response is received, the client again consults the NRPT to check for any special processing or policy requirements. In the absence of the NRPT, the client operates based on the DNS servers and suffixes set on the interface.
->>>>>>> a69c123bc2f66ed792d9bbb34e2121fb4c2e7d5d
 
 > [!NOTE]  
 > Only applications using the [Windows DNS API](/windows/win32/dns/dns-reference) can make use of the NRPT and therefore all settings configured within the DomainNameInformationList section. Applications using their own DNS implementation bypass the Windows DNS API. One example of applications not using the Windows DNS API is nslookup, so always use the PowerShell CmdLet [Resolve-DNSName](/powershell/module/dnsclient/resolve-dnsname) to check the functionality of the NRPT.
@@ -557,13 +541,9 @@ If no inbound filter is provided, then by default all unsolicited inbound traffi
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-edpmodeid"></a>**VPNv2/**<em>ProfileName</em>**/EdpModeId**  
-Enterprise ID, which is required for connecting this VPN profile with a WIP policy. When this ID is set, the networking stack looks for this Enterprise ID in the app token to determine if the traffic is allowed to go over the VPN. If the profile is active, it also automatically triggers the VPN to connect. We recommend having only one such profile per device.
+Enterprise ID, which is required for connecting this VPN profile with a Windows Information Protection policy. When this ID is set, the networking stack looks for this Enterprise ID in the app token to determine if the traffic is allowed to go over the VPN. If the profile is active, it also automatically triggers the VPN to connect. We recommend having only one such profile per device.
 
-<<<<<<< HEAD
-Additionally, when connecting with Windows Information Protection (WIP)(formerly known as Enterprise Data Protection). The admin does not have to specify AppTriggerList and TrafficFilterList rules separately in this profile, unless more advanced config is needed because the WIP policies and App lists automatically takes effect.
-=======
-Additionally when a connection is being established with Windows Information Protection (WIP)(formerly known as Enterprise Data Protection), the admin doesn't have to specify AppTriggerList and TrafficFilterList rules separately in this profile (unless more advanced config is needed) because the WIP policies and App lists automatically takes effect.
->>>>>>> a69c123bc2f66ed792d9bbb34e2121fb4c2e7d5d
+Additionally when a connection is being established with Windows Information Protection (WIP)(formerly known as Enterprise Data Protection), the admin doesn't have to specify AppTriggerList and TrafficFilterList rules separately in this profile (unless more advanced config is needed) because the Windows Information Protection policies and App lists automatically takes effect.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
