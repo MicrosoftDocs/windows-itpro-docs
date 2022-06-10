@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_SoundRec
-description: Policy CSP - ADMX_SoundRec
+description: Learn about Policy CSP - ADMX_SoundRec.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -65,11 +65,13 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy specifies whether Sound Recorder can run. Sound Recorder is a feature of Microsoft Windows Vista that can be used to record sound from an audio input device where the recorded sound is encoded and saved as an audio file.  
+This policy specifies whether Sound Recorder can run. 
 
-If you enable this policy setting, Sound Recorder will not run.  
+Sound Recorder is a feature of Microsoft Windows Vista that can be used to record sound from an audio input device where the recorded sound is encoded and saved as an audio file.  
 
-If you disable or do not configure this policy setting, Sound Recorder can be run.
+If you enable this policy setting, Sound Recorder won't run.  
+
+If you disable or don't configure this policy setting, Sound Recorder can run.
 
 <!--/Description-->
 
@@ -112,11 +114,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy specifies whether Sound Recorder can run. Sound Recorder is a feature of Microsoft Windows Vista that can be used to record sound from an audio input device where the recorded sound is encoded and saved as an audio file.  
+This policy specifies whether Sound Recorder can run. 
 
-If you enable this policy setting, Sound Recorder will not run.  
+Sound Recorder is a feature of Microsoft Windows Vista that can be used to record sound from an audio input device where the recorded sound is encoded and saved as an audio file.  
 
-If you disable or do not configure this policy setting, Sound Recorder can be run.
+If you enable this policy setting, Sound Recorder won't run.  
+
+If you disable or don't configure this policy setting, Sound Recorder can be run.
 
 <!--/Description-->
 
@@ -133,3 +137,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
