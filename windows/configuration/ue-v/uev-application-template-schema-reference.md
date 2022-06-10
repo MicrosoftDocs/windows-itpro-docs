@@ -2,9 +2,6 @@
 title: Application Template Schema Reference for UE-V
 description: Learn details about the XML structure of the UE-V settings location templates and learn how to edit these files.
 author: aczechowski
-ms.pagetype: mdop, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
@@ -12,7 +9,6 @@ manager: dougeby
 ms.author: aaroncz
 ms.topic: article
 ---
-
 
 # Application Template Schema Reference for UE-V
 
@@ -433,8 +429,8 @@ Application is a container for settings that apply to a particular application. 
 |LocalizedNames|An optional name displayed in the UI, localized by a language locale.|
 |LocalizedDescriptions|An optional template description localized by a language locale.|
 |Version|Identifies the version of the settings location template for administrative tracking of changes. For more information, see [Version](#version21).|
-|DeferToMSAccount|Controls whether this template is enabled in conjunction with a Microsoft account or not. If MSA syncing is enabled for a user on a machine, then this template will automatically be disabled.|
-|DeferToOffice365|Similar to MSA, this controls whether this template is enabled in conjunction with Office365. If Office 365 is being used to sync settings, this template will automatically be disabled.|
+|DeferToMSAccount|Controls whether this template is enabled in conjunction with a Microsoft account or not. If Microsoft account syncing is enabled for a user on a machine, then this template will automatically be disabled.|
+|DeferToOffice365|Similar to Microsoft account, this controls whether this template is enabled in conjunction with Office365. If Office 365 is being used to sync settings, this template will automatically be disabled.|
 |FixedProfile|Specifies that this template can only be associated with the profile specified within this element, and cannot be changed via WMI or PowerShell.|
 |Processes|A container for a collection of one or more Process elements. For more information, see [Processes](#processes21).|
 |Settings|A container for all the settings that apply to a particular template. It contains instances of the Registry, File, SystemParameter, and CustomAction settings. For more information, see **Settings** in [Data types](#data21)".|
@@ -452,8 +448,8 @@ Common is similar to an Application element, but it is always associated with tw
 |LocalizedNames|An optional name displayed in the UI, localized by a language locale.|
 |LocalizedDescriptions|An optional template description localized by a language locale.|
 |Version|Identifies the version of the settings location template for administrative tracking of changes. For more information, see [Version](#version21).|
-|DeferToMSAccount|Controls whether this template is enabled in conjunction with a Microsoft account or not. If MSA syncing is enabled for a user on a machine, then this template will automatically be disabled.|
-|DeferToOffice365|Similar to MSA, this controls whether this template is enabled in conjunction with Office365. If Office 365 is being used to sync settings, this template will automatically be disabled.|
+|DeferToMSAccount|Controls whether this template is enabled in conjunction with a Microsoft account or not. If Microsoft account syncing is enabled for a user on a machine, then this template will automatically be disabled.|
+|DeferToOffice365|Similar to Microsoft account, this controls whether this template is enabled in conjunction with Office365. If Office 365 is being used to sync settings, this template will automatically be disabled.|
 |FixedProfile|Specifies that this template can only be associated with the profile specified within this element, and cannot be changed via WMI or PowerShell.|
 |Settings|A container for all the settings that apply to a particular template. It contains instances of the Registry, File, SystemParameter, and CustomAction settings. For more information, see **Settings** in [Data types](#data21).|
 

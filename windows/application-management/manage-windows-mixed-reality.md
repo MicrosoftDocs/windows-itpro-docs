@@ -31,7 +31,7 @@ Organizations that use Windows Server Update Services (WSUS) must take action to
    1. Download the FOD .cab file:
 
         - [Windows 11, version 21H2](https://software-download.microsoft.com/download/sg/Microsoft-Windows-Holographic-Desktop-FOD-Package~31bf3856ad364e35~amd_64~~.cab)
-        - [Windows 10, version 2004](https://software-download.microsoft.com/download/pr/6cf73b63/Microsoft-Windows-Holographic-Desktop-FOD-Package~31bf3856ad364e35~amd64~~.cab)
+        - [Windows 10, version 2004](https://software-static.download.prss.microsoft.com/pr/download/6cf73b63/Microsoft-Windows-Holographic-Desktop-FOD-Package~31bf3856ad364e35~amd64~~.cab)
         - [Windows 10, version 1903 and 1909](https://software-download.microsoft.com/download/pr/Microsoft-Windows-Holographic-Desktop-FOD-Package-31bf3856ad364e35-amd64.cab)
         - [Windows 10, version 1809](https://software-download.microsoft.com/download/pr/microsoft-windows-holographic-desktop-fod-package31bf3856ad364e35amd64_1.cab)
         - [Windows 10, version 1803](https://download.microsoft.com/download/9/9/3/9934B163-FA01-4108-A38A-851B4ACD1244/Microsoft-Windows-Holographic-Desktop-FOD-Package~31bf3856ad364e35~amd64~~.cab)
