@@ -42,7 +42,6 @@ Package Full Name of the application that needs to be launched in the background
 
 ## SyncML examples
 
-
 **Set StartupAppID**
 
 ```xml

@@ -1,17 +1,12 @@
 ---
 title: Group Policy Management of Windows Firewall with Advanced Security (Windows)
 description: Group Policy Management of Windows Firewall with Advanced Security
-ms.assetid: 28afab36-8768-4938-9ff2-9d6dab702e98
 ms.reviewer: 
 ms.author: dansimp
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021
