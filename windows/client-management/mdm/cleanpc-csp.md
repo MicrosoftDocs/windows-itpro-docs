@@ -5,7 +5,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 06/26/2017
 ms.reviewer: 
 manager: dansimp
@@ -13,21 +13,41 @@ manager: dansimp
 
 # CleanPC CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Windows SE|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 The CleanPC configuration service provider (CSP) allows removal of user-installed and pre-installed applications, with the option to persist user data. This CSP was added in Windows 10, version 1703.
 
-The following diagram shows the CleanPC configuration service provider in tree format.
+The following shows the CleanPC configuration service provider in tree format.
 
-![CleanPC csp diagram](images/provisioning-csp-cleanpc.png)
+```
+./Device/Vendor/MSFT
+CleanPC
+----CleanPCWithoutRetainingUserData
+----CleanPCRetainingUserData
+```
 
 <a href="" id="--device-vendor-msft-cleanpc"></a>**./Device/Vendor/MSFT/CleanPC**  
-<p style="margin-left: 20px">The root node for the CleanPC configuration service provider.</p>
+<p>The root node for the CleanPC configuration service provider.</p>
 
 <a href="" id="cleanpcwithoutretaininguserdata"></a>**CleanPCWithoutRetainingUserData**  
-<p style="margin-left: 20px">An integer specifying a CleanPC operation without any retention of user data.
+<p>An integer specifying a CleanPC operation without any retention of user data.
 
-<p style="margin-left: 20px">The only supported operation is Execute.
+<p>The only supported operation is Execute.
 
 <a href="" id="cleanpcwithoutretaininguserdata"></a>**CleanPCRetainingUserData**  
-<p style="margin-left: 20px">An integer specifying a CleanPC operation with retention of user data. 
+<p>An integer specifying a CleanPC operation with retention of user data. 
 
-<p style="margin-left: 20px">The only supported operation is Execute.
+<p>The only supported operation is Execute.
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)

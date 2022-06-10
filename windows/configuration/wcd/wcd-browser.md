@@ -2,15 +2,13 @@
 title: Browser (Windows 10)
 description: This section describes the Browser settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-author: dansimp
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: aaroncz
 ms.topic: article
 ms.date: 10/02/2018
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # Browser (Windows Configuration Designer reference)
@@ -19,13 +17,13 @@ Use to configure browser settings that should only be set by OEMs who are part o
 
 ## Applies to
 
-| Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [AllowPrelaunch](#allowprelaunch) |  |    | X |  |  |
-| [FavoriteBarItems](#favoritebaritems) | X |    |  |  |  |
-| [Favorites](#favorites) |  |  X  |  |  |  |
-| [PartnerSearchCode](#partnersearchcode)  | X | X | X |  |  |
-| [SearchProviders](#searchproviders) |   |  X  |  |  |  |
+| Setting groups | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| [AllowPrelaunch](#allowprelaunch) |  | ✔️ |  |  |
+| [FavoriteBarItems](#favoritebaritems) | ✔️ |  |  |  |
+| [Favorites](#favorites) |  |  |  |  |
+| [PartnerSearchCode](#partnersearchcode)  | ✔️ | ✔️ |  |  |
+| [SearchProviders](#searchproviders) |   |   |  |  |
 
 
 ## AllowPrelaunch
@@ -76,9 +74,6 @@ OEMs who are part of the program only have one PartnerSearchCode and this should
 
 Contains the settings you can use to configure the default and additional search providers.
 
-Microsoft Bing is the default search provider for Windows 10 Mobile. The default search provider must be set to Bing, except for devices shipping to certain countries where a different default search provider is required as specified in the [Specific region guidance](#specific-region-guidance) section of [Default](#default).
-
-
 ### Default
 
 Use *Default* to specify a name that matches one of the search providers you enter in [SearchProviderList](#searchproviderlist). If you don't specify a default search provider, this will default to Microsoft Bing. 
@@ -103,9 +98,4 @@ Use to specify a list of additional search providers.
 For example, to specify Yandex in Russia and Commonwealth of Independent States (CIS), set the value of URL to "https://yandex.ru/search/touch/?text={searchTerm}&clid=2234144".
 
 When configured with multiple search providers, the browser can display up to ten search providers.
-
->[!IMPORTANT]
->Microsoft Bing is the default search provider for Windows 10 Mobile. The default search provider must be set to Bing, except for devices shipping to certain countries where a different default search provider is required as specified in the [Specific region guidance](#specific-region-guidance) section of [Default](#default).
-
-
 

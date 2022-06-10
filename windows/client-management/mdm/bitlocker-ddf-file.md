@@ -5,7 +5,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: lomayor
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 09/30/2019
 ms.reviewer: 
@@ -937,3 +937,7 @@ Supported Values: String form of request ID. Example format of request ID is GUI
       </Node>
 </MgmtTree>
 ```
+
+## Related topics
+
+[BitLocker configuration service provider](bitlocker-csp.md)

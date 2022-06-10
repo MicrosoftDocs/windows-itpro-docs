@@ -1,32 +1,28 @@
 ---
-title: Protect devices from unwanted network traffic (Windows 10)
+title: Protect devices from unwanted network traffic (Windows)
 description: Learn how running a host-based firewall on every device in your organization can help protect against attacks as part of a defense-in-depth security strategy.
-ms.assetid: 307d2b38-e8c4-4358-ae16-f2143af965dc
 ms.reviewer: 
 ms.author: dansimp
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
-ms.technology: mde
+ms.date: 01/18/2022
+ms.technology: windows-sec
 ---
 
 # Protect devices from unwanted network traffic 
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 Although network perimeter firewalls provide important protection to network resources from external threats, there are network threats that a perimeter firewall cannot protect against. Some attacks might successfully penetrate the perimeter firewall, and at that point what can stop it? Other attacks might originate from inside the network, such as malware that is brought in on portable media and run on a trusted device. Portable device are often taken outside the network and connected directly to the Internet, without adequate protection between the device and security threats.
 
-Reports of targeted attacks against organizations, governments, and individuals have become more widespread in recent years. For a general overview of these threats, also known as advanced persistent threats (APT), see the [Microsoft Security Intelligence Report](https://www.microsoft.com/security/sir/default.aspx).
+Reports of targeted attacks against organizations, governments, and individuals have become more widespread in recent years. For a general overview of these threats, also known as advanced persistent threats (APT), see the [Microsoft Security Intelligence Report](https://www.microsoft.com/security/business/security-intelligence-report).
 
 Running a host-based firewall on every device that your organization manages is an important layer in a "defense-in-depth" security strategy. A host-based firewall can help protect against attacks that originate from inside the network and also provide additional protection against attacks from outside the network that manage to penetrate the perimeter firewall. It also travels with a portable device to provide protection when it is away from the organization's network.
 
