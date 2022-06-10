@@ -29,7 +29,7 @@ Use Task Manager to check the context of your apps while running in Windows Info
 ## Viewing the Enterprise Context column in Task Manager
 You need to add the Enterprise Context column to the **Details** tab of the Task Manager.
 
-1. Make sure that you have an active WIP policy deployed and turned on in your organization.
+1. Make sure that you have an active Windows Information Protection policy deployed and turned on in your organization.
 
 2. Open the Task Manager (taskmgr.exe), click the **Details** tab, right-click in the column heading area, and click **Select columns**.
 
@@ -50,7 +50,7 @@ The **Enterprise Context** column shows you what each app can do with your enter
 
 - **Personal.** Shows the text, *Personal*. This app is considered non-work-related and can't touch any work data or resources.
 
-- **Exempt.** Shows the text, *Exempt*. WIP policies don't apply to these apps (such as, system components).
+- **Exempt.** Shows the text, *Exempt*. Windows Information Protection policies don't apply to these apps (such as, system components).
 
   > [!Important]
   > Enlightened apps can change between Work and Personal, depending on the data being touched. For example, Microsoft Word 2016 shows as **Personal** when an employee opens a personal letter, but changes to **Work** when that same employee opens the company financials.

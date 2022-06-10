@@ -14,7 +14,6 @@ ms.date: 12/05/2017
 
 # AllJoynManagement DDF
 
-
 This topic shows the OMA DM device description framework (DDF) for the **AllJoynManagement** configuration service provider. This CSP was added in Windows 10, version 1511.
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
@@ -238,7 +237,7 @@ It is typically implemented as a GUID.</Description>
                             <Get />
                             <Replace />
                         </AccessType>
-                        <Description>An Alphanumeric KEY value that conforms to the AllJoyn SRP KEYX Authentication Standard</Description>
+                        <Description>An Alphanumeric KEY value that conforms to the AllJoyn SRP KEYX Authentication Standard.</Description>
                         <DFFormat>
                             <chr />
                         </DFFormat>
@@ -328,15 +327,4 @@ It is typically implemented as a GUID.</Description>
 
 ## Related topics
 
-
 [AllJoynManagement configuration service provider](alljoynmanagement-csp.md)
-
- 
-
- 
-
-
-
-
-
-

@@ -192,19 +192,19 @@
       - name: Overview
         href: threat-protection/index.md
       - name: Microsoft Defender Antivirus
-        href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows
+        href: /microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows
       - name: Attack surface reduction rules
-        href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction
+        href: /microsoft-365/security/defender-endpoint/attack-surface-reduction
       - name: Tamper protection
-        href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection
+        href: /microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection
       - name: Network protection
-        href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/network-protection
+        href: /microsoft-365/security/defender-endpoint/network-protection
       - name: Controlled folder access
-        href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/controlled-folders
+        href: /microsoft-365/security/defender-endpoint/controlled-folders
       - name: Exploit protection
-        href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/exploit-protection
+        href: /microsoft-365/security/defender-endpoint/exploit-protection
       - name: Microsoft Defender for Endpoint
-        href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint
+        href: /microsoft-365/security/defender-endpoint
    - name: More Windows security
      items: 
       - name: Override Process Mitigation Options to help enforce app-related security policies
@@ -394,7 +394,7 @@
    - name: Overview
      href: cloud.md
    - name: Mobile device management
-     href: https://docs.microsoft.com/windows/client-management/mdm/
+     href: /windows/client-management/mdm/
    - name: Windows 365 Cloud PCs
      href: /windows-365/overview
    - name: Azure Virtual Desktop
