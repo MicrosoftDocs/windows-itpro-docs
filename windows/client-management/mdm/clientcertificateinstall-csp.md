@@ -1,7 +1,6 @@
 ---
 title: ClientCertificateInstall CSP
-description: Learn how the ClientCertificateInstall configuration service provider (CSP) enables the enterprise to install client certificates.
-ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
+description: The ClientCertificateInstall configuration service provider (CSP) enables the enterprise to install client certificates.
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
