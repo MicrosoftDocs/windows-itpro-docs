@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_DWM
-description: Policy CSP - ADMX_DWM
+description: Learn about Policy CSP - ADMX_DWM.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -349,3 +349,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

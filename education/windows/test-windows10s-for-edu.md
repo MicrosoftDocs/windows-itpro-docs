@@ -111,7 +111,7 @@ Back up all your data before installing Windows 10 in S mode. Only personal file
 
 Windows 10 in S mode doesn't support non-Azure Active Directory domain accounts. Before installing Windows 10 in S mode, you must have at least one of these administrator accounts:
 - Local administrator
-- Microsoft Account (MSA) administrator
+- Microsoft account administrator
 - Azure Active Directory administrator 
 
 > [!WARNING]

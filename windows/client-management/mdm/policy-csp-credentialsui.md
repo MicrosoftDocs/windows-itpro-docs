@@ -75,7 +75,7 @@ If you disable or don't configure this policy setting, the password reveal butto
 
 By default, the password reveal button is displayed after a user types a password in the password entry text box. To display the password, click the password reveal button.
 
-The policy applies to all Windows components and applications that use the Windows system controls, including Internet Explorer.
+This policy applies to all Windows components and applications that use the Windows system controls, including Internet Explorer.
 
 <!--/Description-->
 
@@ -144,3 +144,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

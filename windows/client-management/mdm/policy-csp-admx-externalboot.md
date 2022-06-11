@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_ExternalBoot
-description: Policy CSP - ADMX_ExternalBoot
+description: Learn about the Policy CSP - ADMX_ExternalBoot.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -72,9 +72,9 @@ manager: dansimp
 <!--Description-->
 This policy specifies whether the PC can use the hibernation sleep state (S4) when started from a Windows To Go workspace.  
 
-- If you enable this setting, Windows, when started from a Windows To Go workspace, can hibernate the PC.  
+If you enable this setting, Windows, when started from a Windows To Go workspace, can hibernate the PC.  
 
-- If you disable or don't configure this setting, Windows, when started from a Windows To Go workspace, and can't hibernate the PC.
+If you disable or don't configure this setting, Windows, when started from a Windows To Go workspace, and can't hibernate the PC.
 
 
 <!--/Description-->
@@ -168,9 +168,9 @@ ADMX Info:
 <!--Description-->
 This policy setting controls whether the PC will boot to Windows To Go if a USB device containing a Windows To Go workspace is connected, and controls whether users can make changes using the Windows To Go Startup Options Control Panel item.  
 
-- If you enable this setting, booting to Windows To Go when a USB device is connected will be enabled, and users won't be able to make changes using the Windows To Go Startup Options Control Panel item.  
+If you enable this setting, booting to Windows To Go when a USB device is connected will be enabled, and users won't be able to make changes using the Windows To Go Startup Options Control Panel item.  
 
-- If you disable this setting, booting to Windows To Go when a USB device is connected won't be enabled unless a user configures the option manually in the BIOS or other boot order configuration.  
+If you disable this setting, booting to Windows To Go when a USB device is connected won't be enabled unless a user configures the option manually in the BIOS or other boot order configuration.  
 
 If you don't configure this setting, users who are members of the Administrators group can make changes using the Windows To Go Startup Options Control Panel item.
 
@@ -188,3 +188,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
