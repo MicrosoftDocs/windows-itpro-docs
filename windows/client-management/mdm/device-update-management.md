@@ -858,7 +858,7 @@ Here's the list of corresponding Group Policy settings in HKLM\\Software\\Polici
 |DeferFeatureUpdates|REG_DWORD|1: defer feature updates<br><br>Other value or absent: don’t defer feature updates|
 |DeferFeatureUpdatesPeriodInDays|REG_DWORD|0-180: days to defer feature updates|
 |PauseFeatureUpdates|REG_DWORD|1: pause feature updates<br><br>Other value or absent: don’t pause feature updates|
-|ExcludeWUDriversInQualityUpdate|REG_DWORD|1: exclude WU drivers<br><br>Other value or absent: offer WU drivers|
+|ExcludeWUDriversInQualityUpdate|REG_DWORD|1: exclude Windows Update drivers<br><br>Other value or absent: offer Windows Update drivers|
 
 Here's the list of older policies that are still supported for backward compatibility. You can use these older policies for Windows 10, version 1511 devices.
 

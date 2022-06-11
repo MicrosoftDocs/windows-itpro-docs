@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_MSAPolicy
-description: Policy CSP - ADMX_MSAPolicy
+description: Learn about Policy CSP - ADMX_MSAPolicy.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -61,7 +61,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether users can provide Microsoft accounts for authentication for applications or services. If this setting is enabled, all applications and services on the device are prevented from using Microsoft accounts for authentication.
+This policy setting controls whether users can provide Microsoft accounts for authentication, applications or services. If this setting is enabled, all applications and services on the device are prevented from using Microsoft accounts for authentication.
 
 This functionality applies both to existing users of a device and new users who may be added. However, any application or service that has already authenticated a user won't be affected by enabling this setting until the authentication cache expires.
 
@@ -83,7 +83,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-
-
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

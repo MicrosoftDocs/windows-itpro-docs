@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_Desktop
-description: Policy CSP - ADMX_Desktop
+description: Learn about Policy CSP - ADMX_Desktop.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -790,7 +790,6 @@ If you disable or don't configure this policy setting, the Properties menu comma
 
 <!--/Description-->
 
-
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP Friendly name: *Remove Properties from the Documents icon context menu*
@@ -1530,3 +1529,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

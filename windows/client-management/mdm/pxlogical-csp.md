@@ -43,8 +43,8 @@ PXLOGICAL
 -------TO-NAPID
 ```
 
-
 The following example shows the PXLOGICAL configuration service provider management object in tree format as used by OMA Client Provisioning for updating the bootstrapping of the device. The OMA DM protocol isn't supported by this configuration service provider.
+
 
 ```console
 PXLOGICAL

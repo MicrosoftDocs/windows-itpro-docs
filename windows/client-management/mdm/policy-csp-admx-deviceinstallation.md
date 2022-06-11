@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_DeviceInstallation
-description: Policy CSP - ADMX_DeviceInstallation
+description: Learn about Policy CSP - ADMX_DeviceInstallation.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -277,7 +277,8 @@ If you enable this policy setting, set the number of seconds you want the system
 
 If you disable or don't configure this policy setting, the system doesn't force a reboot.
 
-Note: If no reboot is forced, the device installation restriction right won't take effect until the system is restarted.
+>[!Note]
+> If no reboot is forced, the device installation restriction right won't take effect until the system is restarted.
 
 <!--/Description-->
 
@@ -435,3 +436,7 @@ ADMX Info:
 <hr/>
 
 <!--/Policies-->
+
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
