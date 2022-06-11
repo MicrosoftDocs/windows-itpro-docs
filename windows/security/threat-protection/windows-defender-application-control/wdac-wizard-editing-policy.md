@@ -28,9 +28,9 @@ ms.technology: windows-sec
 - Windows Server 2016 and above
 
 > [!NOTE]
-> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+> Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
-The WDAC Wizard makes editing and viewing WDAC policies easier than the PowerShell cmdlets or manually. The Wizard currently supports the following editing capabilities: 
+The Windows Defender Application Control Wizard makes editing and viewing WDAC policies easier than the PowerShell cmdlets or manually. The Wizard currently supports the following editing capabilities: 
 <ul>
     <li><a href="#configuring-policy-rules">Configuring policy rules</a></li>
     <li><a href="#adding-file-rules">Adding new allow or block file rules to existing policies</a></li>
@@ -47,7 +47,7 @@ A description of the policy rule is shown at the bottom of the page when the cur
 
 ## Adding File Rules
 
-The WDAC Wizard allows users to add rules to their existing policy seamlessly. Previously, this would have involved creating a new policy with the new rules and merging it with the existing policy. 
+The Windows Defender Application Control Wizard allows users to add rules to their existing policy seamlessly. Previously, this would have involved creating a new policy with the new rules and merging it with the existing policy. 
 
 Selecting the `+ Custom Rules` button will open the Custom Rules panel. For more information on creating new policy file rules, see the guidelines provided in the [creating policy file rules section](wdac-wizard-create-base-policy.md#creating-custom-file-rules).
 
@@ -75,4 +75,4 @@ Once the policy is created, the new policy will be written to the same path as t
 
 ## Up next
 
-- [Merging WDAC policies using the Wizard](wdac-wizard-merging-policies.md)
+- [Merging Windows Defender Application Control (WDAC) policies using the Wizard](wdac-wizard-merging-policies.md)

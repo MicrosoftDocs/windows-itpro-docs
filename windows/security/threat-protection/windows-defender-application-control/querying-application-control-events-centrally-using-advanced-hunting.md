@@ -34,8 +34,8 @@ This capability is supported beginning with Windows version 1607.
 | - | - | - |
 | AppControlCodeIntegrityDriverRevoked | 3023 | The driver file under validation didn't meet the requirements to pass the application control policy. |
 | AppControlCodeIntegrityImageRevoked | 3036 | The signed file under validation is signed by a code signing certificate that has been revoked by Microsoft or the certificate issuing authority. |
-| AppControlCodeIntegrityPolicyAudited | 3076 | This event is the main WDAC block event for audit mode policies. It indicates the file would have been blocked if the WDAC policy was enforced. |
-| AppControlCodeIntegrityPolicyBlocked | 3077 | This event is the main WDAC block event for enforced policies. It indicates the file didn't pass your WDAC policy and was blocked. |
+| AppControlCodeIntegrityPolicyAudited | 3076 | This event is the main Windows Defender Application Control block event for audit mode policies. It indicates the file would have been blocked if the WDAC policy was enforced. |
+| AppControlCodeIntegrityPolicyBlocked | 3077 | This event is the main Windows Defender Application Control block event for enforced policies. It indicates the file didn't pass your WDAC policy and was blocked. |
 | AppControlExecutableAudited | 8003 | Applied only when the Audit only enforcement mode is enabled. Specifies the .exe or .dll file would be blocked if the Enforce rules enforcement mode were enabled. |
 | AppControlExecutableBlocked | 8004 | The .exe or .dll file can't run. |
 | AppControlPackagedAppAudited | 8021 | Applied only when the Audit only enforcement mode is enabled. Specifies the packaged app would be blocked if the Enforce rules enforcement mode were enabled. |
@@ -57,7 +57,7 @@ Learn more about the [Understanding Application Control event IDs (Windows)](eve
 
 Query Example 1: Query the application control action types summarized by type for past seven days
 
-Here's a simple example query that shows all the WDAC events generated in the last seven days from machines being monitored by Microsoft Defender for Endpoint:
+Here's a simple example query that shows all the Windows Defender Application Control events generated in the last seven days from machines being monitored by Microsoft Defender for Endpoint:
 
 ```
 DeviceEvents
@@ -67,7 +67,7 @@ ActionType startswith "AppControl"
 | order by Machines desc
 ```
 
-The query results can be used for several important functions related to managing WDAC including:
+The query results can be used for several important functions related to managing Windows Defender Application Control including:
 
 - Assessing the impact of deploying policies in audit mode
   Since applications still run in audit mode, it's an ideal way to see the impact and correctness of the rules included in the policy. Integrating the generated events with Advanced Hunting makes it much easier to have broad deployments of audit mode policies and see how the included rules would influence those systems in real world usage. This audit mode data will help streamline the transition to using policies in enforced mode.

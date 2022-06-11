@@ -43,7 +43,7 @@ Application control is a crucial line of defense for protecting enterprises give
 
 Windows 10 and Windows 11 include two technologies that can be used for application control depending on your organization's specific scenarios and requirements:
 
-- **Windows Defender Application Control**; and
+- **Windows Defender Application Control (WDAC)**; and
 - **AppLocker**
 
 ## In this section
