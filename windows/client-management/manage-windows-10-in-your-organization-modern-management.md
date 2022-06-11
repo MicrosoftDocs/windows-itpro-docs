@@ -1,6 +1,5 @@
 ---
 title: Manage Windows 10 in your organization - transitioning to modern management
-author: dansimp
 description: This article offers strategies for deploying and managing Windows 10, including deploying Windows 10 in a mixed environment.
 ms.prod: w10
 ms.localizationpriority: medium

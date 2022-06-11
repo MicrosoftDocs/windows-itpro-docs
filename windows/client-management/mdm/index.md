@@ -4,7 +4,6 @@ description: Windows 10 and Windows 11 provide an enterprise-level solution to m
 MS-HAID:
 - 'p\_phDeviceMgmt.provisioning\_and\_device\_management'
 - 'p\_phDeviceMgmt.mobile\_device\_management\_windows\_mdm'
-ms.author: dansimp
 ms.topic: overview
 ms.prod: w10
 ms.technology: windows
