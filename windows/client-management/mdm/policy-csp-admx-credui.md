@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_CredUI
-description: Policy CSP - ADMX_CredUI
+description: Learn about  the Policy CSP - ADMX_CredUI.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -68,7 +68,7 @@ manager: dansimp
 This policy setting requires the user to enter Microsoft Windows credentials using a trusted path, to prevent a Trojan horse or other types of malicious code from stealing the user’s Windows credentials.
 
 > [!NOTE]
-> This policy affects nonlogon authentication tasks only. As a security best practice, this policy should be enabled.
+> This policy affects non-logon authentication tasks only. As a security best practice, this policy should be enabled.
 
 If you enable this policy setting, users will be required to enter Windows credentials on the Secure Desktop through the trusted path mechanism.
 
@@ -131,3 +131,6 @@ ADMX Info:
 <
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

@@ -289,7 +289,7 @@ This policy controls whether the signed-in user should be notified if the sign-i
 
 If enabled, a notification popup will be displayed to the user when the user logs on with cached credentials.
 
-If disabled or not configured, no popup will be displayed to the user.
+If disabled or not configured, no pop up will be displayed to the user.
 
 <!--/Description-->
 
@@ -333,7 +333,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether or not software can simulate the Secure Attention Sequence (SAS).
+This policy setting controls whether the software can simulate the Secure Attention Sequence (SAS).
 
 If you enable this policy setting, you have one of four options:  
 

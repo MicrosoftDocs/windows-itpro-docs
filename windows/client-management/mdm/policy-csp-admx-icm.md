@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_ICM
-description: Policy CSP - ADMX_ICM
+description: Learn about the Policy CSP - ADMX_ICM.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -1410,3 +1410,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
