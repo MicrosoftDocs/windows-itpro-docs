@@ -95,8 +95,6 @@ We've [invested heavily in helping to protect against ransomware](https://blogs.
 
 **Endpoint detection and response** is also enhanced. New **detection** capabilities include:
 
-- [Use the threat intelligence API to create custom alerts](/windows/security/threat-protection/windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection) - Understand threat intelligence concepts, enable the threat intelligence application, and create custom threat intelligence alerts for your organization.
-
 - [Custom detection](/microsoft-365/security/defender-endpoint/overview-custom-detections). With custom detections, you can create custom queries to monitor events for any kind of behavior such as suspicious or emerging threats. You can use advanced hunting through the creation of custom detection rules.
 
 - Improvements on OS memory and kernel sensors to enable detection of attackers who are using in-memory and kernel-level attacks.
