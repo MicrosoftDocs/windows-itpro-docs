@@ -186,7 +186,7 @@ To specify that you don't want to overwrite any previous kernel or complete memo
 
 #### Automatic Memory Dump
 
-The default option. An Automatic Memory Dump contains the same information as a Kernel Memory Dump. The difference between the two is in the way that Windows sets the size of the system paging file. If the system paging file size is set to **System managed size**, and the kernel-mode crash dump is set to **Automatic Memory Dump**, then Windows can set the size of the paging file to less than the size of RAM. In this case, Windows sets the size of the paging file large enough to ensure that a kernel memory dump can be captured most of the time.
+This is the default option. An Automatic Memory Dump contains the same information as a Kernel Memory Dump. The difference between the two is in the way that Windows sets the size of the system paging file. If the system paging file size is set to **System managed size**, and the kernel-mode crash dump is set to **Automatic Memory Dump**, then Windows can set the size of the paging file to less than the size of RAM. In this case, Windows sets the size of the paging file large enough to ensure that a kernel memory dump can be captured most of the time.
 
 If the computer crashes and the paging file is not large enough to capture a kernel memory dump, Windows increases the size of the paging file to at least the size of RAM. For more details, see [Automatic Memory Dump](/windows-hardware/drivers/debugger/automatic-memory-dump).
 
