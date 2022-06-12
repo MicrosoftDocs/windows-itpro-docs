@@ -60,7 +60,7 @@ The Group Policy object contains the policy settings needed to trigger Windows H
 3. Right-click **Group Policy object** and select **New**.
 4. Type *Enable Windows Hello for Business* in the name box and click **OK**.
 5. In the content pane, right-click the **Enable Windows Hello for Business** Group Policy object and click **Edit**.
-6. In the navigation pane, expand **Policies** under **User Configuration** (this the only option for for Windows Server 2016, but for Windows Server 2019 and later this step can also be done in **Computer Configuration**).
+6. In the navigation pane, expand **Policies** under **User Configuration** (this is the only option for Windows Server 2016, but for Windows Server 2019 and later this step can also be done in **Computer Configuration**).
 7. Expand **Administrative Templates > Windows Component**, and select **Windows Hello for Business**.
 8. In the content pane, double-click **Use Windows Hello for Business**. Click **Enable** and click **OK**.
 9. Double-click **Use certificate for on-premises authentication**. Click **Enable** and click **OK**.  Close the **Group Policy Management Editor**.
