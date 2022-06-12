@@ -25,8 +25,8 @@ ms.reviewer:
 
 Dynamic lock enables you to configure Windows devices to automatically lock when Bluetooth paired device signal falls below the maximum Received Signal Strength Indicator (RSSI) value. This makes it more difficult for someone to gain access to your device if you step away from your PC and forget to lock it.
 
->[!IMPORTANT]
->The feature only locks the computer if Bluetooth signal falls and the system is idle. If the system is not idle (for example, intruder got access **before** Bluetooth signal falls below the limit), it will not be locked. Therefor, dynamic lock is an additional barrier, it does not replace the need to lock the computer by user, it only reduces the probability of someone gaining access if user forgets to lock it. 
+> [!IMPORTANT]
+> The feature only locks the computer if the Bluetooth signal falls and the system is idle. If the system is not idle (for example, the intruder got access **before** the Bluetooth signal falls below the limit), it will not be locked. Therefore, the dynamic lock feature is an additional barrier, it does not replace the need to lock the computer by the user, it only reduces the probability of someone gaining access if the user forgets to lock it. 
 
 You configure the dynamic lock policy using Group Policy.  You can locate the policy setting at **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business**.  The name of the policy is **Configure dynamic lock factors**.
 
