@@ -190,7 +190,7 @@ This is the default option. An Automatic Memory Dump contains the same informati
 
 If the computer crashes and the paging file is not large enough to capture a kernel memory dump, Windows increases the size of the paging file to at least the size of RAM. For more details, see [Automatic Memory Dump](/windows-hardware/drivers/debugger/automatic-memory-dump).
 
-To specify that you want to use a automatic memory dump file, run the following command or modify the registry value:
+To specify that you want to use an automatic memory dump file, run the following command or modify the registry value:
 
 - ```cmd
   wmic recoveros set DebugInfoType = 7
