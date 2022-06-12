@@ -70,7 +70,7 @@ The Group Policy object contains the policy settings needed to trigger Windows H
 1. Start the **Group Policy Management Console** (gpmc.msc).
 2. Expand the domain and select the **Group Policy Object** node in the navigation pane.
 3. Right-click the **Enable Windows Hello for Business** Group Policy object and click **Edit**.
-4. In the navigation pane, expand **Policies** under **User Configuration** (this the only option for for Windows Server 2016, but for Windows Server 2019 and later this step can also be done in **Computer Configuration**).
+4. In the navigation pane, expand **Policies** under **User Configuration** (this is the only option for Windows Server 2016, but for Windows Server 2019 and later this step can also be done in **Computer Configuration**).
 5. Expand **Windows Settings > Security Settings**, and click **Public Key Policies**.
 6. In the details pane, right-click **Certificate Services Client – Auto-Enrollment** and select **Properties**.
 7. Select **Enabled** from the **Configuration Model** list.
