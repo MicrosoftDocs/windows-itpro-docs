@@ -180,7 +180,7 @@ Windows Update for Business managed devices are now able to defer feature update
 
 ### Windows Insider for Business
 
-We recently added the option to download Windows 10 Insider Preview builds using your corporate credentials in Azure Active Directory (AAD). By enrolling devices in Azure AD, you increase the visibility of feedback submitted by users in your organization – especially on features that support your specific business needs. For details, see [Windows Insider Program for Business](/windows-insider/business/register).
+We recently added the option to download Windows 10 Insider Preview builds using your corporate credentials in Azure Active Directory (Azure AD). By enrolling devices in Azure AD, you increase the visibility of feedback submitted by users in your organization, especially on features that support your specific business needs. For details, see [Windows Insider Program for Business](/windows-insider/business/register).
 
 ### Optimize update delivery
 
