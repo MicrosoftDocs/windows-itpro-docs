@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_DnsClient
-description: Policy CSP - ADMX_DnsClient
+description: Learn about Policy CSP - ADMX_DnsClient.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -590,7 +590,8 @@ If you enable this policy setting, a computer will register A and PTR resource r
 
 For example, with a computer name of mycomputer, a primary DNS suffix of microsoft.com, and a connection specific DNS suffix of VPNconnection, a computer will register A and PTR resource records for mycomputer.VPNconnection and mycomputer.microsoft.com when this policy setting is enabled.
 
-Important: This policy setting is ignored on a DNS client computer if dynamic DNS registration is disabled.
+>[!Important]
+> This policy setting is ignored on a DNS client computer if dynamic DNS registration is disabled.
 
 If you disable this policy setting, or if you don't configure this policy setting, a DNS client computer won't register any A and PTR resource records using a connection-specific DNS suffix.
 <!--/Description-->
@@ -642,7 +643,7 @@ If you enable this policy setting, registration of PTR records will be determine
 
 To use this policy setting, click Enabled, and then select one of the following options from the drop-down list:
 
-- don't register: Computers won't attempt to register PTR resource records
+- Do not register: Computers won't attempt to register PTR resource records
 - Register: Computers will attempt to register PTR resource records even if registration of the corresponding A records wasn't successful.
 - Register only if A record registration succeeds: Computers will attempt to register PTR resource records only if registration of the corresponding A records was successful.
 
@@ -739,11 +740,11 @@ This policy setting specifies whether dynamic updates should overwrite existing 
 
 This policy setting is designed for computers that register address (A) resource records in DNS zones that don't use Secure Dynamic Updates. Secure Dynamic Update preserves ownership of resource records and doesn't allow a DNS client to overwrite records that are registered by other computers.
 
-During dynamic update of resource records in a zone that doesn't use Secure Dynamic Updates, an A resource record might exist that associates the client's host name with an IP address different than the one currently in use by the client. By default, the DNS client attempts to replace the existing A resource record with an A resource record that has the client's current IP address.
+During dynamic update of resource records in a zone that doesn't use Secure Dynamic Updates, an A resource record might exist that associates the client's host name with an IP address different than the one currently in use by the client. By default, the DNS client attempts to replace the existing (A) resource record with an (A) resource record that has the client's current IP address.
 
-If you enable this policy setting or if you don't configure this policy setting, DNS clients maintain their default behavior and will attempt to replace conflicting A resource records during dynamic update.
+If you enable this policy setting or if you don't configure this policy setting, DNS clients maintain their default behavior and will attempt to replace conflicting (A) resource records during dynamic update.
 
-If you disable this policy setting, existing A resource records that contain conflicting IP addresses won't be replaced during a dynamic update, and an error will be recorded in Event Viewer.
+If you disable this policy setting, existing (A) resource records that contain conflicting IP addresses won't be replaced during a dynamic update, and an error will be recorded in Event Viewer.
 
 <!--/Description-->
 
@@ -1229,3 +1230,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

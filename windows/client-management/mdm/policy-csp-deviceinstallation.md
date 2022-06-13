@@ -94,10 +94,12 @@ This policy setting allows you to specify a list of plug-and-play hardware IDs a
 > This policy setting is intended to be used only when the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting is enabled, however it may also be used with the "Prevent installation of devices not described by other policy settings" policy setting for legacy policy definitions.
 
 When this policy setting is enabled together with the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting, Windows is allowed to install or update any device whose Plug and Play hardware ID or compatible ID appears in the list you create, unless another policy setting at the same or higher layer in the hierarchy specifically prevents that installation, such as the following policy settings:
-- Prevent installation of devices that match these device IDs
-- Prevent installation of devices that match any of these device instance IDs
+
+- Prevent installation of devices that match these device IDs.
+- Prevent installation of devices that match any of these device instance IDs.
 
 If the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting isn't enabled with this policy setting, then any other policy settings specifically preventing installation will take precedence.
+
 > [!NOTE]
 > The "Prevent installation of devices not described by other policy settings" policy setting has been replaced by the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting for supported target Windows 10 versions. It's recommended that you use the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting when possible.
 
@@ -197,7 +199,8 @@ This policy setting allows you to specify a list of Plug and Play device instanc
 > This policy setting is intended to be used only when the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting is enabled, however it may also be used with the "Prevent installation of devices not described by other policy settings" policy setting for legacy policy definitions.
 
 When this policy setting is enabled together with the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting, Windows is allowed to install or update any device whose Plug and Play device instance ID appears in the list you create, unless another policy setting at the same or higher layer in the hierarchy specifically prevents that installation, such as the following policy settings:
-- Prevent installation of devices that match any of these device instance IDs
+
+- Prevent installation of devices that match any of these device instance IDs.
  
 If the "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria" policy setting isn't enabled with this policy setting, then any other policy settings specifically preventing installation will take precedence.
 
@@ -209,7 +212,6 @@ Alternatively, if this policy setting is enabled together with the "Prevent inst
 If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
 
 If you disable or don't configure this policy setting, and no other policy setting describes the device, the "Prevent installation of devices not described by other policy settings" policy setting determines whether the device can be installed.
-
 
 Peripherals can be specified by their [device instance ID](/windows-hardware/drivers/install/device-instance-ids). Test the configuration prior to rolling it out to ensure it allows the devices expected. Ideally test various instances of the hardware. For example, test multiple USB keys rather than only one.
 
@@ -408,6 +410,7 @@ This policy setting will change the evaluation order in which Allow and Prevent 
 Device instance IDs > Device IDs > Device setup class > Removable devices 
 
 **Device instance IDs**
+
 - Prevent installation of devices using drivers that match these device instance IDs.
 - Allow installation of devices using drivers that match these device instance IDs.
 
@@ -463,13 +466,13 @@ ADMX Info:
 
 To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following details are listed near the end of the log:
 
-
 ```txt
 >>>  [Device Installation Restrictions Policy Check]
 >>>  Section start 2018/11/15 12:26:41.659
 <<<  Section end 2018/11/15 12:26:41.751
 <<<  [Exit status: SUCCESS]
 ```
+
 You can also change the evaluation order of device installation policy settings by using a custom profile in Intune.
 
 :::image type="content" source="images/edit-row.png" alt-text="This image is an edit row image.":::
@@ -819,6 +822,7 @@ For example, this custom profile prevents installation of devices with matching 
 ![Custom profile.](images/custom-profile-prevent-device-instance-ids.png)
 
 To prevent installation of devices with matching device instance IDs by using custom profile in Intune:
+
 1. Locate the device instance ID.
 2. Replace `&` in the device instance IDs with `&amp;`.  
 For example:  
@@ -938,3 +942,7 @@ To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see i
 
 
 <!--/Policies-->
+
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

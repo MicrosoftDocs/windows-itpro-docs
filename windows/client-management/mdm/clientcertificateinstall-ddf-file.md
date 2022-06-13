@@ -1,7 +1,6 @@
 ---
 title: ClientCertificateInstall DDF file
 description: Learn about the OMA DM device description framework (DDF) for the ClientCertificateInstall configuration service provider.
-ms.assetid: 7F65D045-A750-4CDE-A1CE-7D152AA060CA
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -13,7 +12,6 @@ ms.date: 12/05/2017
 ---
 
 # ClientCertificateInstall DDF file
-
 
 This topic shows the OMA DM device description framework (DDF) for the **ClientCertificateInstall** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 

@@ -1,7 +1,6 @@
 ---
 title: Add an Azure AD tenant and Azure AD subscription
 description: Here's a step-by-step guide to adding an Azure Active Directory tenant, adding an Azure AD subscription, and registering your subscription.
-ms.assetid: 36D94BEC-A6D8-47D2-A547-EBD7B7D163FA
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp

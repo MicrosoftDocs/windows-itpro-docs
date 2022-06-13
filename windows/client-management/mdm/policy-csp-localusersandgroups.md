@@ -25,7 +25,6 @@ manager: dansimp
   </dd>
 </dl>
 
-
 <hr/>
 
 <!--Policy-->
@@ -41,7 +40,6 @@ manager: dansimp
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -87,7 +85,7 @@ where:
     > [!NOTE]
     > When specifying member names of the user accounts, you must use following format – AzureAD\userUPN. For example, "AzureAD\user1@contoso.com" or "AzureAD\user2@contoso.co.uk". 
 For adding Azure AD groups, you need to specify the Azure AD Group SID. Azure AD group names are not supported with this policy.
-for more information, see [LookupAccountNameA function](/windows/win32/api/winbase/nf-winbase-lookupaccountnamea).  
+For more information, see [LookupAccountNameA function](/windows/win32/api/winbase/nf-winbase-lookupaccountnamea).  
 
 See [Use custom settings for Windows 10 devices in Intune](/mem/intune/configuration/custom-settings-windows-10) for information on how to create custom profiles.
 
@@ -95,7 +93,7 @@ See [Use custom settings for Windows 10 devices in Intune](/mem/intune/configura
 > - `<add member>` and `<remove member>` can use an Azure AD SID or the user's name. For adding or removing Azure AD groups using this policy, you must use the group's SID. Azure AD group SIDs can be obtained using [Graph](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true#json-representation) API for Groups. The SID is present in the `securityIdentifier` attribute. 
 > - When specifying a SID in the `<add member>` or `<remove member>`, member SIDs are added without attempting to resolve them. Therefore, be very careful when specifying a SID to ensure it is correct.
 > - `<remove member>` is not valid for the R (Restrict) action and will be ignored if present.
-> - The list in the XML is processed in the given order except for the R actions, which get processed last to ensure they win. It also means that if a group is present multiple times with different add/remove values, all of them will be processed in the order they are present.
+> - The list in the XML is processed in the given order except for the R actions, which get processed last to ensure they win. It also means that, if a group is present multiple times with different add/remove values, all of them will be processed in the order they are present.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -121,7 +119,7 @@ The following example updates the built-in administrators group with AAD account
 Example 2: Replace / Restrict the built-in administrators group with an AAD user account.
 
 > [!NOTE]
-> When using ‘R’ replace option to configure the built-in ‘Administrators’ group, it is required to always specify the administrator as a member + any other custom members. This is because the built-in administrator must always be a member of the administrators group.
+> When using ‘R’ replace option to configure the built-in ‘Administrators’ group. It is required to always specify the administrator as a member + any other custom members. This is because the built-in administrator must always be a member of the administrators group.
 
 Example:
 ```xml
@@ -133,6 +131,7 @@ Example:
     </accessgroup>
 </GroupConfiguration>
 ```
+
 Example 3: Update action for adding and removing group members on a hybrid joined machine.
 
 The following example shows how you can update a local group (**Administrators**)—add an AD domain group as a member using its name (**Contoso\ITAdmins**), add a AAD group by its SID (**S-1-12-1-111111111-22222222222-3333333333-4444444444**), and remove a local account (**Guest**) if it exists.
@@ -148,7 +147,6 @@ The following example shows how you can update a local group (**Administrators**
 </GroupConfiguration>
 ```
 
-
 <!--/Example-->
 <!--Validation-->
 
@@ -158,7 +156,7 @@ The following example shows how you can update a local group (**Administrators**
 
 > [!NOTE]
 > 
-> When AAD group SID’s are added to local groups, during AAD account logon privileges are evaluated only for the following well-known groups on a Windows 10 device:
+> When AAD group SID’s are added to local groups, AAD account logon privileges are evaluated only for the following well-known groups on a Windows 10 device:
 > 
 > - Administrators
 > - Users
@@ -297,5 +295,8 @@ To troubleshoot Name/SID lookup APIs:
 </xs:schema>
 ```
 
-
 <!--/Policies-->
+
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

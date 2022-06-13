@@ -1,7 +1,6 @@
 ---
 title: SharedPC CSP
 description: Learn how the SharedPC configuration service provider is used to configure settings for Shared PC usage.
-ms.assetid: 31273166-1A1E-4F96-B176-CB42ECB80957
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -231,13 +230,3 @@ The default in the SharedPC provisioning package is 1024.
 ## Related topics
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-
- 
-
-
-
-
-
-

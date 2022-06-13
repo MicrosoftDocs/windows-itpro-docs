@@ -95,7 +95,6 @@ For details, see [MBR2GPT.EXE](/windows/deployment/mbr-to-gpt).
 
 New features in Microsoft Defender for Endpoint for Windows 10, version 1703 include:
 - **Detection**: Enhancements to the detection capabilities include:
-  - [Use the threat intelligence API to create custom alerts](/windows/threat-protection/windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection) - Understand threat intelligence concepts, enable the threat intel application, and create custom threat intelligence alerts for your organization.
   - Improvements on OS memory and kernel sensors to enable detection of attackers who are using in-memory and kernel-level attacks
   - Upgraded detections of ransomware and other advanced attacks
   - Historical detection capability ensures new detection rules apply to up to six months of stored data to detect previous attacks that might not have been noticed

@@ -95,8 +95,6 @@ We've [invested heavily in helping to protect against ransomware](https://blogs.
 
 **Endpoint detection and response** is also enhanced. New **detection** capabilities include:
 
-- [Use the threat intelligence API to create custom alerts](/windows/security/threat-protection/windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection) - Understand threat intelligence concepts, enable the threat intelligence application, and create custom threat intelligence alerts for your organization.
-
 - [Custom detection](/microsoft-365/security/defender-endpoint/overview-custom-detections). With custom detections, you can create custom queries to monitor events for any kind of behavior such as suspicious or emerging threats. You can use advanced hunting through the creation of custom detection rules.
 
 - Improvements on OS memory and kernel sensors to enable detection of attackers who are using in-memory and kernel-level attacks.
@@ -201,7 +199,7 @@ New features in [Windows Hello for Business](/windows/security/identity-protecti
 
 - Windows Hello is part of the account protection pillar in Windows Defender Security Center. Account Protection will encourage password users to set up Windows Hello Face, Fingerprint or PIN for faster sign-in, and will notify Dynamic lock users if Dynamic lock has stopped working because their device Bluetooth is off.
 
-- You can set up Windows Hello from lock screen for MSA accounts. We've made it easier for Microsoft account users to set up Windows Hello on their devices for faster and more secure sign-in. Previously, you had to navigate deep into Settings to find Windows Hello. Now, you can set up Windows Hello Face, Fingerprint or PIN straight from your lock screen by clicking the Windows Hello tile under Sign-in options.
+- You can set up Windows Hello from lock screen for Microsoft accounts. We’ve made it easier for Microsoft account users to set up Windows Hello on their devices for faster and more secure sign-in. Previously, you had to navigate deep into Settings to find Windows Hello. Now, you can set up Windows Hello Face, Fingerprint or PIN straight from your lock screen by clicking the Windows Hello tile under Sign-in options.
 
 - New [public API](/uwp/api/windows.security.authentication.web.core.webauthenticationcoremanager.findallaccountsasync) for secondary account SSO for a particular identity provider.
 

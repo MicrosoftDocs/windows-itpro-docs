@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_Thumbnails
-description: Policy CSP - ADMX_Thumbnails
+description: Learn about Policy CSP - ADMX_Thumbnails.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -163,7 +163,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Turns off the caching of thumbnails in hidden thumbs.db files.
+This policy setting turns off the caching of thumbnails in hidden thumbs.db files.
 
 This policy setting allows you to configure File Explorer to cache thumbnails of items residing in network folders in hidden thumbs.db files.
 
@@ -187,3 +187,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
