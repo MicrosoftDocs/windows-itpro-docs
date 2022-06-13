@@ -4,7 +4,6 @@ description: Disconnecting is initiated either locally by the user using a phone
 MS-HAID:
 - 'p\_phdevicemgmt.disconnecting\_from\_the\_management\_infrastructure\_\_unenrollment\_'
 - 'p\_phDeviceMgmt.disconnecting\_from\_mdm\_unenrollment'
-ms.assetid: 33B2B248-631B-451F-B534-5DA095C4C8E8
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -14,7 +13,6 @@ ms.technology: windows
 author: dansimp
 ms.date: 06/26/2017
 ---
-
 
 # Disconnecting from the management infrastructure (unenrollment)
 

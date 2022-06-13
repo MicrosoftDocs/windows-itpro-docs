@@ -33,14 +33,14 @@ Catalog files can be important in your deployment of Windows Defender Applicatio
 
 ## Create catalog files
 
-The creation of a catalog file simplifies the steps to run unsigned applications in the presence of a WDAC policy.
+The creation of a catalog file simplifies the steps to run unsigned applications in the presence of a Windows Defender Application Control policy.
 
 To create a catalog file, you use a tool called **Package Inspector**. You must also have a WDAC policy deployed in audit mode on the computer on which you run Package Inspector, so that Package Inspector can include any temporary installation files that are added and then removed from the computer during the installation process.
 
 > [!NOTE]
 > When you establish a naming convention it makes it easier to detect deployed catalog files in the future. In this guide, *\*-Contoso.cat* is used as the example naming convention. 
 
-1.  Be sure that a WDAC policy is currently deployed in audit mode on the computer on which you will run Package Inspector.
+1.  Be sure that a Windows Defender Application Control policy is currently deployed in audit mode on the computer on which you will run Package Inspector.
 
     Package Inspector does not always detect temporary installation files that are added and then removed from the computer during the installation process. To ensure that these binaries are also included in your catalog file, deploy a WDAC policy in audit mode. 
 
@@ -108,7 +108,7 @@ Packages can fail for the following reasons:
     - Package Inspector is completely incompatible if files in the package (temporary or otherwise) change hash each time the package is installed. You can diagnose this by looking at the hash field in the 3077 block events when the package is failing in enforcement.  If each time you attempt to run the package you get a new block event with a different hash, the package will not work with Package Inspector
 - Files with an invalid signature blob or otherwise "unhashable" files
     - This issue arises when a file that has been signed is modified post signing in a way that invalidates the PE header and renders the file unable to be hashed by the Authenticode Spec.
-    - WDAC uses Authenticode Hashes to validate files when they are running. If the file is unhashable via the authenticode SIP, there is no way to identify the file to allow it, regardless of if you attempt to add the file to the policy directly, or re-sign the file with a Package Inspector catalog (the signature is invalidated due to file being edited, file can't be allowed by hash due to authenticode hashing algorithm rejecting it)
+    - Windows Defender Application Control uses Authenticode Hashes to validate files when they are running. If the file is unhashable via the authenticode SIP, there is no way to identify the file to allow it, regardless of if you attempt to add the file to the policy directly, or re-sign the file with a Package Inspector catalog (the signature is invalidated due to file being edited, file can't be allowed by hash due to authenticode hashing algorithm rejecting it)
     - Recent versions of InstallShield packages that use custom actions can hit this. If the DLL input to the custom action was signed before being put through InstallShield, InstallShield adds tracking markers to the file (editing it post signature) which leaves the file in this "unhashable" state and renders the file unable to be allowed by Windows Defender (regardless of if you try to allow directly by policy or resign with Package Inspector)
 
 ## Catalog signing with SignTool.exe
@@ -156,7 +156,7 @@ After the catalog file is signed, add the signing certificate to a WDAC policy, 
 
 1.  If you have not already verified the catalog file digital signature, right-click the catalog file, and then click **Properties**. On the **Digital Signatures** tab, verify that your signing certificate exists with the algorithm you expect.
 
-2.  If you already have an XML policy file that you want to add the signing certificate to, skip to the next step. Otherwise, use [New-CIPolicy](/powershell/module/configci/new-cipolicy) to create a WDAC policy that you will later merge into another policy (not deploy as-is). This example creates a policy called **CatalogSignatureOnly.xml** in the location **C:\\PolicyFolder**:
+2.  If you already have an XML policy file that you want to add the signing certificate to, skip to the next step. Otherwise, use [New-CIPolicy](/powershell/module/configci/new-cipolicy) to create a Windows Defender Application Control policy that you will later merge into another policy (not deploy as-is). This example creates a policy called **CatalogSignatureOnly.xml** in the location **C:\\PolicyFolder**:
 
     `New-CIPolicy -Level PcaCertificate -FilePath C:\PolicyFolder\CatalogSignatureOnly.xml –UserPEs`
 

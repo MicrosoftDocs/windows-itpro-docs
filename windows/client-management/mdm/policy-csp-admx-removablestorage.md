@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_RemovableStorage
-description: Policy CSP - ADMX_RemovableStorage
+description: Learn about Policy CSP - ADMX_RemovableStorage.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -158,7 +158,7 @@ This policy setting configures the amount of time (in seconds) that the operatin
 
 If you enable this policy setting, you can set the number of seconds you want the system to wait until a reboot.
 
-If you disable or do not configure this setting, the operating system does not force a reboot.
+If you disable or don't configure this setting, the operating system does not force a reboot.
 
 > [!NOTE]
 > If no reboot is forced, the access right does not take effect until the operating system is restarted.
@@ -208,7 +208,7 @@ This policy setting configures the amount of time (in seconds) that the operatin
 
 If you enable this policy setting, you can set the number of seconds you want the system to wait until a reboot.
 
-If you disable or do not configure this setting, the operating system does not force a reboot
+If you disable or don't configure this setting, the operating system does not force a reboot
 
 > [!NOTE]
 > If no reboot is forced, the access right does not take effect until the operating system is restarted.
@@ -258,7 +258,7 @@ This policy setting denies execute access to the CD and DVD removable storage cl
 
 If you enable this policy setting, execute access is denied to this removable storage class.
 
-If you disable or do not configure this policy setting, execute access is allowed to this removable storage class.
+If you disable or don't configure this policy setting, execute access is allowed to this removable storage class.
 
 <!--/Description-->
 
@@ -305,7 +305,7 @@ This policy setting denies read access to the CD and DVD removable storage class
 
 If you enable this policy setting, read access is denied to this removable storage class.
 
-If you disable or do not configure this policy setting, read access is allowed to this removable storage class.
+If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
 <!--/Description-->
 
 
@@ -351,7 +351,7 @@ This policy setting denies read access to the CD and DVD removable storage class
 
 If you enable this policy setting, read access is denied to this removable storage class.
 
-If you disable or do not configure this policy setting, read access is allowed to this removable storage class.
+If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
 
 <!--/Description-->
 
@@ -398,7 +398,7 @@ This policy setting denies write access to the CD and DVD removable storage clas
 
 If you enable this policy setting, write access is denied to this removable storage class.
 
-If you disable or do not configure this policy setting, write access is allowed to this removable storage class.
+If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
 
 <!--/Description-->
 
@@ -445,7 +445,7 @@ This policy setting denies write access to the CD and DVD removable storage clas
 
 If you enable this policy setting, write access is denied to this removable storage class.
 
-If you disable or do not configure this policy setting, write access is allowed to this removable storage class.
+If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
 
 <!--/Description-->
 
@@ -492,7 +492,7 @@ This policy setting denies read access to custom removable storage classes.
 
 If you enable this policy setting, read access is denied to these removable storage classes.
 
-If you disable or do not configure this policy setting, read access is allowed to these removable storage classes.
+If you disable or don't configure this policy setting, read access is allowed to these removable storage classes.
 
 <!--/Description-->
 
@@ -539,7 +539,7 @@ This policy setting denies read access to custom removable storage classes.
 
 If you enable this policy setting, read access is denied to these removable storage classes.
 
-If you disable or do not configure this policy setting, read access is allowed to these removable storage classes.
+If you disable or don't configure this policy setting, read access is allowed to these removable storage classes.
 
 <!--/Description-->
 
@@ -586,7 +586,7 @@ This policy setting denies write access to custom removable storage classes.
 
 If you enable this policy setting, write access is denied to these removable storage classes.
 
-If you disable or do not configure this policy setting, write access is allowed to these removable storage classes.
+If you disable or don't configure this policy setting, write access is allowed to these removable storage classes.
 
 <!--/Description-->
 
@@ -632,7 +632,7 @@ This policy setting denies write access to custom removable storage classes.
 
 If you enable this policy setting, write access is denied to these removable storage classes.
 
-If you disable or do not configure this policy setting, write access is allowed to these removable storage classes.
+If you disable or don't configure this policy setting, write access is allowed to these removable storage classes.
 
 <!--/Description-->
 
@@ -678,7 +678,7 @@ This policy setting denies execute access to the Floppy Drives removable storage
 
 If you enable this policy setting, execute access is denied to this removable storage class.
 
-If you disable or do not configure this policy setting, execute access is allowed to this removable storage class.
+If you disable or don't configure this policy setting, execute access is allowed to this removable storage class.
 
 <!--/Description-->
 
@@ -724,7 +724,7 @@ This policy setting denies read access to the Floppy Drives removable storage cl
 
 If you enable this policy setting, read access is denied to this removable storage class.
 
-If you disable or do not configure this policy setting, read access is allowed to this removable storage class.
+If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
 
 <!--/Description-->
 
@@ -770,7 +770,7 @@ This policy setting denies read access to the Floppy Drives removable storage cl
 
 If you enable this policy setting, read access is denied to this removable storage class.
 
-If you disable or do not configure this policy setting, read access is allowed to this removable storage class.
+If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
 
 <!--/Description-->
 
@@ -816,7 +816,7 @@ This policy setting denies write access to the Floppy Drives removable storage c
 
 If you enable this policy setting, write access is denied to this removable storage class.
 
-If you disable or do not configure this policy setting, write access is allowed to this removable storage class.
+If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
 <!--/Description-->
 
 
@@ -861,7 +861,7 @@ This policy setting denies write access to the Floppy Drives removable storage c
 
 If you enable this policy setting, write access is denied to this removable storage class.
 
-If you disable or do not configure this policy setting, write access is allowed to this removable storage class.
+If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
 
 <!--/Description-->
 
@@ -907,7 +907,7 @@ This policy setting denies execute access to removable disks.
 
 If you enable this policy setting, execute access is denied to this removable storage class.
 
-If you disable or do not configure this policy setting, execute access is allowed to this removable storage class.
+If you disable or don't configure this policy setting, execute access is allowed to this removable storage class.
 <!--/Description-->
 
 
@@ -952,7 +952,7 @@ This policy setting denies read access to removable disks.
 
 If you enable this policy setting, read access is denied to this removable storage class.
 
-If you disable or do not configure this policy setting, read access is allowed to this removable storage class.
+If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
 
 <!--/Description-->
 
@@ -998,7 +998,7 @@ This policy setting denies read access to removable disks.
 
 If you enable this policy setting, read access is denied to this removable storage class.
 
-If you disable or do not configure this policy setting, read access is allowed to this removable storage class.
+If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
 <!--/Description-->
 
 
@@ -1043,7 +1043,7 @@ This policy setting denies write access to removable disks.
 
 If you enable this policy setting, write access is denied to this removable storage class.
 
-If you disable or do not configure this policy setting, write access is allowed to this removable storage class.
+If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
 
 > [!NOTE]
 > To require that users write data to BitLocker-protected storage, enable the policy setting "Deny write access to drives not protected by BitLocker," which is located in "Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption\Removable Data Drives."
@@ -1094,7 +1094,7 @@ This policy setting takes precedence over any individual removable storage polic
 
 If you enable this policy setting, no access is allowed to any removable storage class.
 
-If you disable or do not configure this policy setting, write and read accesses are allowed to all removable storage classes.
+If you disable or don't configure this policy setting, write and read accesses are allowed to all removable storage classes.
 
 <!--/Description-->
 
@@ -1142,7 +1142,7 @@ This policy setting takes precedence over any individual removable storage polic
 
 If you enable this policy setting, no access is allowed to any removable storage class.
 
-If you disable or do not configure this policy setting, write and read accesses are allowed to all removable storage classes.
+If you disable or don't configure this policy setting, write and read accesses are allowed to all removable storage classes.
 
 <!--/Description-->
 
@@ -1188,7 +1188,7 @@ This policy setting grants normal users direct access to removable storage devic
 
 If you enable this policy setting, remote users can open direct handles to removable storage devices in remote sessions.
 
-If you disable or do not configure this policy setting, remote users cannot open direct handles to removable storage devices in remote sessions.
+If you disable or don't configure this policy setting, remote users cannot open direct handles to removable storage devices in remote sessions.
 
 <!--/Description-->
 
@@ -1234,7 +1234,7 @@ This policy setting denies execute access to the Tape Drive removable storage cl
 
 If you enable this policy setting, execute access is denied to this removable storage class.
 
-If you disable or do not configure this policy setting, execute access is allowed to this removable storage class.
+If you disable or don't configure this policy setting, execute access is allowed to this removable storage class.
 
 <!--/Description-->
 
@@ -1280,7 +1280,7 @@ This policy setting denies read access to the Tape Drive removable storage class
 
 If you enable this policy setting, read access is denied to this removable storage class.
 
-If you disable or do not configure this policy setting, read access is allowed to this removable storage class.
+If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
 <!--/Description-->
 
 
@@ -1325,7 +1325,7 @@ This policy setting denies read access to the Tape Drive removable storage class
 
 If you enable this policy setting, read access is denied to this removable storage class.
 
-If you disable or do not configure this policy setting, read access is allowed to this removable storage class.
+If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
 
 <!--/Description-->
 
@@ -1371,7 +1371,7 @@ This policy setting denies write access to the Tape Drive removable storage clas
 
 If you enable this policy setting, write access is denied to this removable storage class.
 
-If you disable or do not configure this policy setting, write access is allowed to this removable storage class.
+If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
 <!--/Description-->
 
 
@@ -1416,7 +1416,7 @@ This policy setting denies write access to the Tape Drive removable storage clas
 
 If you enable this policy setting, write access is denied to this removable storage class.
 
-If you disable or do not configure this policy setting, write access is allowed to this removable storage class.
+If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
 
 <!--/Description-->
 
@@ -1462,7 +1462,7 @@ This policy setting denies read access to removable disks, which may include med
 
 If you enable this policy setting, read access is denied to this removable storage class.
 
-If you disable or do not configure this policy setting, read access is allowed to this removable storage class.
+If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
 
 <!--/Description-->
 
@@ -1508,7 +1508,7 @@ This policy setting denies read access to removable disks, which may include med
 
 If you enable this policy setting, read access is denied to this removable storage class.
 
-If you disable or do not configure this policy setting, read access is allowed to this removable storage class.
+If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
 <!--/Description-->
 
 
@@ -1553,7 +1553,7 @@ This policy setting denies write access to removable disks, which may include me
 
 If you enable this policy setting, write access is denied to this removable storage class.
 
-If you disable or do not configure this policy setting, write access is allowed to this removable storage class.
+If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
 
 <!--/Description-->
 
@@ -1595,11 +1595,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting denies write access to removable disks, which may include media players, cellular phones, auxiliary displays, and CE devices.
+This policy setting denies write access to removable disks that may include media players, cellular phones, auxiliary displays, and CE devices.
 
 If you enable this policy setting, write access is denied to this removable storage class.
 
-If you disable or do not configure this policy setting, write access is allowed to this removable storage class.
+If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
 
 <!--/Description-->
 
@@ -1617,3 +1617,7 @@ ADMX Info:
 
 
 <!--/Policies-->
+
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
