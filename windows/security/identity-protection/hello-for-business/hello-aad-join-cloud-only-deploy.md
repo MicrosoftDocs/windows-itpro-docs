@@ -91,9 +91,9 @@ If there's a conflicting Device policy and User policy, the User policy would ta
 
 ## Related reference documents for Azure AD join scenarios
 
-- [Azure AD joined devices](/azure/active-directory/devices/concept-azure-ad-join)
+- [Azure AD-joined devices](/azure/active-directory/devices/concept-azure-ad-join)
 - [Plan your Azure Active Directory device deployment](/azure/active-directory/devices/plan-device-deployment)
 - [How to: Plan your Azure AD join implementation](/azure/active-directory/devices/azureadjoin-plan)
-- [How to manage the local administrators group on Azure AD joined devices](/azure/active-directory/devices/assign-local-admin)
+- [How to manage the local administrators group on Azure AD-joined devices](/azure/active-directory/devices/assign-local-admin)
 - [Manage device identities using the Azure portal](/azure/active-directory/devices/device-management-azure-portal)
 - [Azure AD Join Single Sign-on Deployment](hello-hybrid-aadj-sso.md)

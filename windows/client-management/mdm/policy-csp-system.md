@@ -194,7 +194,7 @@ The table below shows the applicability of Windows:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting configures an Azure Active Directory joined device, so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the [Product Terms](https://www.microsoft.com/licensing/terms/productoffering).
+This policy setting configures an Azure Active Directory-joined device, so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the [Product Terms](https://www.microsoft.com/licensing/terms/productoffering).
 
 To enable this behavior, you must complete two steps:
 
@@ -537,7 +537,7 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 
-This policy setting configures an Azure Active Directory joined device so that Microsoft is the processor of the Windows diagnostic data.
+This policy setting configures an Azure Active Directory-joined device so that Microsoft is the processor of the Windows diagnostic data.
 
 For customers who enroll into the Microsoft Managed Desktop service, this policy will be enabled by default to allow Microsoft to process data for operational and analytic needs. For more information, see [Privacy and personal data](/microsoft-365/managed-desktop/service-description/privacy-personal-data).
 
@@ -778,7 +778,7 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 
-This policy setting configures an Azure Active Directory joined device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the [Product Terms](https://www.microsoft.com/licensing/terms/productoffering).
+This policy setting configures an Azure Active Directory-joined device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the [Product Terms](https://www.microsoft.com/licensing/terms/productoffering).
 
 To enable this behavior, you must complete three steps:
 

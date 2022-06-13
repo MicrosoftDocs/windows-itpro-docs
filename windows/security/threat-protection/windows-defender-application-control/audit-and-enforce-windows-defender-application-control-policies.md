@@ -29,7 +29,7 @@ ms.technology: windows-sec
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Application Control feature availability](feature-availability.md).
 
-Running Application Control in audit mode lets you discover applications, binaries, and scripts that are missing from your WDAC policy but should be included.
+Running Application Control in audit mode lets you discover applications, binaries, and scripts that are missing from your Windows Defender Application Control policy (WDAC) but should be included.
 
 While a WDAC policy is running in audit mode, any binary that runs but would have been denied is logged in the **Applications and Services Logs\\Microsoft\\Windows\\CodeIntegrity\\Operational** event log. Script and MSI are logged in the **Applications and Services Logs\\Microsoft\\Windows\\AppLocker\\MSI and Script** event log. These events can be used to generate a new WDAC policy that can be merged with the original Base policy or deployed as a separate Supplemental policy, if allowed.
 
@@ -81,7 +81,7 @@ To familiarize yourself with creating WDAC rules from audit events, follow these
 
 ## Convert WDAC **BASE** policy from audit to enforced
 
-As described in [common WDAC deployment scenarios](types-of-devices.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
+As described in [common Windows Defender Application Control deployment scenarios](types-of-devices.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
 
 **Alice Pena** is the IT team lead responsible for Lamna's WDAC rollout.
 

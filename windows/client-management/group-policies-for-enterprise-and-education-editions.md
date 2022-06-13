@@ -2,8 +2,6 @@
 title: Group Policy settings that apply only to Windows 10 Enterprise and Education Editions (Windows 10)
 description: Use this topic to learn about Group Policy settings that apply only to Windows 10 Enterprise and Windows 10 Education.
 ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
 author: dansimp
 ms.localizationpriority: medium
 ms.date: 09/14/2021

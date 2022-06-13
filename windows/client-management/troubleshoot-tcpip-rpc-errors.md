@@ -2,7 +2,6 @@
 title: Troubleshoot Remote Procedure Call (RPC) errors
 description: Learn how to troubleshoot Remote Procedure Call (RPC) errors when connecting to Windows Management Instrumentation (WMI), SQL Server, or during a remote connection.
 ms.prod: w10
-ms.sitesec: library
 ms.topic: troubleshooting
 author: dansimp
 ms.localizationpriority: medium

@@ -43,8 +43,8 @@ Use this three-phased approach for configuring device registration.
 > Before proceeding, you should familiarize yourself with device registration concepts such as:
 >
 > - Azure AD registered devices
-> - Azure AD joined devices
-> - Hybrid Azure AD joined devices
+> - Azure AD-joined devices
+> - Hybrid Azure AD-joined devices
 >
 > You can learn about this and more by reading [Introduction to Device Management in Azure Active Directory.](/azure/active-directory/device-management-introduction)
 
@@ -55,7 +55,7 @@ Use this three-phased approach for configuring device registration.
 
 To support hybrid Windows Hello for Business, configure hybrid Azure AD join.
 
-Follow the guidance on [How to configure hybrid Azure Active Directory joined devices](/azure/active-directory/devices/hybrid-azuread-join-plan) page. In the **Select your scenario based on your identity infrastructure** section, identify your configuration (either **Managed environment** or **Federated environment**) and perform only the steps applicable to your environment.
+Follow the guidance on [How to configure hybrid Azure Active Directory-joined devices](/azure/active-directory/devices/hybrid-azuread-join-plan) page. In the **Select your scenario based on your identity infrastructure** section, identify your configuration (either **Managed environment** or **Federated environment**) and perform only the steps applicable to your environment.
 
 If the user principal name (UPN) in your on-premises Active Directory is different from the UPN in Azure AD, you also need to complete the following steps:
 
@@ -69,11 +69,11 @@ You can learn more about this scenario by reading [Review on-premises UPN suppor
 
 ## Configure Active Directory to support Azure device synchronization
 
-Azure Active Directory is now configured for device registration. Next, you need to configure the on-premises Active Directory to support synchronizing hybrid Azure AD joined devices. Begin with upgrading the Active Directory Schema 
+Azure Active Directory is now configured for device registration. Next, you need to configure the on-premises Active Directory to support synchronizing hybrid Azure AD-joined devices. Begin with upgrading the Active Directory Schema 
 
 ### Upgrading Active Directory to the Windows Server 2016 or later Schema 
 
-To use Windows Hello for Business with Hybrid Azure AD joined devices, you must first upgrade your Active Directory schema to Windows Server 2016 or later.
+To use Windows Hello for Business with Hybrid Azure AD-joined devices, you must first upgrade your Active Directory schema to Windows Server 2016 or later.
 
 > [!IMPORTANT]
 > If you already have a Windows Server 2016 or later domain controller in your forest, you can skip **Upgrading Active Directory to the Windows Server 2016 or later Schema** (this section).

@@ -12,6 +12,7 @@ ms.reviewer:
 manager: dansimp
 ms.collection: highpri
 ---
+
 # BitLocker CSP
 
 The BitLocker configuration service provider (CSP) is used by the enterprise to manage encryption of PCs and devices. This CSP was added in Windows 10, version 1703. Starting in Windows 10, version 1809, it's also supported in Windows 10 Pro.
@@ -1178,7 +1179,7 @@ If you don't configure this policy setting, users can use BitLocker on removable
 Allows the admin to disable the warning prompt for other disk encryption on the user machines that are targeted when the RequireDeviceEncryption policy is set to 1.
 <!--/Description-->
 > [!IMPORTANT]
-> Starting in Windows 10, version 1803, the value 0 can only be set for Azure Active Directory joined devices. When RequireDeviceEncryption is set to 1 and AllowWarningForOtherDiskEncryption is set to 0, Windows will attempt to silently enable [BitLocker](/windows/device-security/bitlocker/bitlocker-overview).
+> Starting in Windows 10, version 1803, the value 0 can only be set for Azure Active Directory-joined devices. When RequireDeviceEncryption is set to 1 and AllowWarningForOtherDiskEncryption is set to 0, Windows will attempt to silently enable [BitLocker](/windows/device-security/bitlocker/bitlocker-overview).
 
 > [!Warning]
 > When you enable BitLocker on a device with third-party encryption, it may render the device unusable and require you to reinstall Windows.
@@ -1197,7 +1198,7 @@ Allows the admin to disable the warning prompt for other disk encryption on the 
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Disables the warning prompt. Starting in Windows 10, version 1803, the value 0 can only be set for Azure Active Directory joined devices.  Windows will attempt to silently enable BitLocker for value 0.
+-   0 – Disables the warning prompt. Starting in Windows 10, version 1803, the value 0 can only be set for Azure Active Directory-joined devices.  Windows will attempt to silently enable BitLocker for value 0.
 -   1 (default) – Warning prompt allowed.
 <!--/SupportedValues-->
 ```xml

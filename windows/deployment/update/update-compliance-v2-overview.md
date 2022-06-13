@@ -21,7 +21,7 @@ ms.date: 06/06/2022
 > [!Important]
 > This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
 
-Update Compliance is a cloud-based solution that provides information about the compliance of your Azure Active Directory joined devices with Windows updates. Update Compliance is offered through the [Azure portal](https://portal.azure.com), and it's included as part of the Windows 10 or Windows 11 prerequisite licenses. Update Compliance helps you:
+Update Compliance is a cloud-based solution that provides information about the compliance of your Azure Active Directory-joined devices with Windows updates. Update Compliance is offered through the [Azure portal](https://portal.azure.com), and it's included as part of the Windows 10 or Windows 11 prerequisite licenses. Update Compliance helps you:
 
 - Monitor security, quality, and feature updates for Windows 11 and Windows 10 devices
 - Report on devices with update compliance issues
@@ -53,7 +53,7 @@ Currently, the technical preview contains the following features:
 
 ## How Update Compliance works
 
-You'll set up Update Compliance by enrolling into the solution from the Azure portal. Then you'll configure your Azure AD joined devices to send Windows client diagnostic data to the solution. Update Compliance uses [Log Analytics in Azure Monitor](/azure/azure-monitor/logs/log-analytics-overview) to store the diagnostic data the clients send. You can use this data for reporting on updates for your devices. Update Compliance collects system data such as:
+You'll set up Update Compliance by enrolling into the solution from the Azure portal. Then you'll configure your Azure AD-joined devices to send Windows client diagnostic data to the solution. Update Compliance uses [Log Analytics in Azure Monitor](/azure/azure-monitor/logs/log-analytics-overview) to store the diagnostic data the clients send. You can use this data for reporting on updates for your devices. Update Compliance collects system data such as:
 
 - Update deployment progress
 - Delivery Optimization usage data
