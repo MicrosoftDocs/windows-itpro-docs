@@ -137,12 +137,6 @@ WCD supports the following scenarios for IT administrators:
 <!--  > [!NOTE] -->
 <!--  > Windows ICD in Windows 10, version 1607, also provided a wizard to create provisioning packages for school PCs. To learn more, see [Set up students' PCs to join domain](/education/windows/). -->
 
-## Learn more
-
-For more information about provisioning, watch the following video: 
-
-- [Provisioning Windows client devices with new tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
-
 ## Related articles
 
 - [How provisioning works in Windows client](provisioning-how-it-works.md)
