@@ -22,7 +22,7 @@ For a device to be eligible for Microsoft Edge updates as a part of Windows Auto
 
 - The device must be powered on and have an internet connection.  
 - There are no policy conflicts between Windows Autopatch policies and customer policies.  
-- The device must be able to access the required network endpoints to reach the Microsoft Edge update service. 
+- The device must be able to access the required network endpoints to reach the Microsoft Edge update service.
 - If Microsoft Edge is open, it must restart for the update process to complete.
 
 ## Update release schedule
