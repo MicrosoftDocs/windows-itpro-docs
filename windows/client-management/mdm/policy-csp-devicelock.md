@@ -14,8 +14,6 @@ manager: dansimp
 
 # Policy CSP - DeviceLock
 
-
-
 <hr/>
 
 <!--Policies-->
@@ -73,7 +71,7 @@ manager: dansimp
 <hr/>
 
 > [!Important]
-> The DeviceLock CSP utilizes the [Exchange ActiveSync Policy Engine](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)). When password length and complexity rules are applied, all the local user and administrator accounts are marked to change their password at the next sign in to ensure complexity requirements are met. For additional information, see [Password length and complexity supported by account types](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)#password-length-and-complexity-supported-by-account-types).
+> The DeviceLock CSP utilizes the [Exchange ActiveSync Policy Engine](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)). When password length and complexity rules are applied, all the local user and administrator accounts are marked to change their password at the next sign in to ensure complexity requirements are met. For more information, see [Password length and complexity supported by account types](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)#password-length-and-complexity-supported-by-account-types).
 
 <!--Policy-->
 <a href="" id="devicelock-allowidlereturnwithoutpassword"></a>**DeviceLock/AllowIdleReturnWithoutPassword**  
@@ -155,7 +153,6 @@ Specifies whether PINs or passwords such as "1111" or "1234" are allowed. For th
 
 > [!NOTE]
 > This policy must be wrapped in an Atomic command.
-
 
 For more information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
 
@@ -824,7 +821,7 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
-Disables the lock screen camera toggle switch in PC Settings and prevents a camera from being invoked on the lock screen.
+Disables the lock screen camera toggle-switch in PC Settings and prevents a camera from being invoked on the lock screen.
 
 By default, users can enable invocation of an available camera on the lock screen.
 
@@ -878,7 +875,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Disables the lock screen slide show settings in PC Settings and prevents a slide show from playing on the lock screen.
+Disables the lock screen slideshow settings in PC Settings and prevents a slide show from playing on the lock screen.
 
 By default, users can enable a slide show that will run after they lock the machine.
 
@@ -907,3 +904,7 @@ ADMX Info:
 
 
 <!--/Policies-->
+
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

@@ -1,7 +1,6 @@
 ---
 title: Get seats
 description: The Get seats operation retrieves the information about active seats in the Microsoft Store for Business.
-ms.assetid: 32945788-47AC-4259-B616-F359D48F4F2F
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp

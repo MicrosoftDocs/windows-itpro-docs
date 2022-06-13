@@ -11,7 +11,6 @@ ms.custom:
 - CSSTroubleshooting
 audience: ITPro
 ms.localizationpriority: medium
-keywords: event id 41, reboot, restart, stop error, bug check code
 manager: kaushika
 ms.collection: highpri
 ---

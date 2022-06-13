@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_PenTraining
-description: Policy CSP - ADMX_PenTraining
+description: Learn about Policy CSP - ADMX_PenTraining.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -66,9 +66,9 @@ manager: dansimp
 <!--Description-->
 Turns off Tablet PC Pen Training.  
 
-- If you enable this policy setting, users cannot open Tablet PC Pen Training.  
+- If you enable this policy setting, users can't open Tablet PC Pen Training.  
 
-- If you disable or do not configure this policy setting, users can open Tablet PC Pen Training.
+- If you disable or don't configure this policy setting, users can open Tablet PC Pen Training.
 
 <!--/Description-->
 
@@ -113,9 +113,9 @@ ADMX Info:
 <!--Description-->
 Turns off Tablet PC Pen Training.  
 
-- If you enable this policy setting, users cannot open Tablet PC Pen Training.  
+- If you enable this policy setting, users can't open Tablet PC Pen Training.  
 
-- If you disable or do not configure this policy setting, users can open Tablet PC Pen Training.
+- If you disable or don't configure this policy setting, users can open Tablet PC Pen Training.
 
 <!--/Description-->
 
@@ -133,3 +133,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

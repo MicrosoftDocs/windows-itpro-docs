@@ -109,7 +109,7 @@ If devices are running Windows 7 or Windows 8.1, see [New Windows 10 upgrade ben
 
 #### Multifactor authentication
 
-An issue has been identified with Hybrid Azure AD joined devices that have enabled [multifactor authentication](/azure/active-directory/authentication/howto-mfa-getstarted) (MFA). If a user signs into a device using their Active Directory account and MFA is enabled, the device will not successfully upgrade to their Windows Enterprise subscription.
+An issue has been identified with Hybrid Azure AD-joined devices that have enabled [multifactor authentication](/azure/active-directory/authentication/howto-mfa-getstarted) (MFA). If a user signs into a device using their Active Directory account and MFA is enabled, the device will not successfully upgrade to their Windows Enterprise subscription.
 
 To resolve this issue:
 
@@ -162,7 +162,7 @@ You can benefit by moving to Windows as an online service in the following ways:
 > [!NOTE]
 > The following Windows 10 examples and scenarios also apply to Windows 11.
 
-The device is AAD joined from **Settings > Accounts > Access work or school**.
+The device is Azure Active Directory-joined from **Settings > Accounts > Access work or school**.
 
 The IT administrator assigns Windows 10 Enterprise to a user. See the following figure.
 

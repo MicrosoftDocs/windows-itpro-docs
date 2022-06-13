@@ -161,7 +161,7 @@ Value type is bool.
 Supported operation is Get.
 
 <a href="" id="universaltelemetryclient-utcconfigurationdiagnosis-msaserviceenabled"></a>**UniversalTelemetryClient/UtcConfigurationDiagnosis/MsaServiceEnabled**  
-A boolean value representing whether the MSA service is enabled. This service must be enabled for UTC data to be indexed with Global Device IDs.
+A boolean value representing whether the Microsoft account service is enabled. This service must be enabled for UTC data to be indexed with Global Device IDs.
 
 Value type is bool. 
 

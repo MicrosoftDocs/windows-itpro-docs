@@ -46,7 +46,7 @@ Each of the template policies has a unique set of policy allow list rules that w
 
 *Italicized content denotes the changes in the current policy with respect to the policy prior.*
 
-More information about the Default Windows Mode and Allow Microsoft Mode policies can be accessed through the [Example WDAC base policies article](example-wdac-base-policies.md). 
+More information about the Default Windows Mode and Allow Microsoft Mode policies can be accessed through the [Example Windows Defender Application Control base policies article](example-wdac-base-policies.md). 
 
 ![Selecting a base template for the policy.](images/wdac-wizard-template-selection.png)
 
@@ -62,16 +62,16 @@ A description of each policy rule, beginning with the left-most column, is provi
 
 | Rule option | Description |
 |------------ | ----------- |
-| **Advanced Boot Options Menu** | The F8 preboot menu is disabled by default for all WDAC policies. Setting this rule option allows the F8 menu to appear to physically present users. |
+| **Advanced Boot Options Menu** | The F8 preboot menu is disabled by default for all Windows Defender Application Control policies. Setting this rule option allows the F8 menu to appear to physically present users. |
 | **Allow Supplemental Policies** | Use this option on a base policy to allow supplemental policies to expand it. |
 | **Disable Script Enforcement** | This option disables script enforcement options. Unsigned PowerShell scripts and interactive PowerShell are no longer restricted to [Constrained Language Mode](/powershell/module/microsoft.powershell.core/about/about_language_modes). NOTE: This option is required to run HTA files, and is only supported with the Windows 10 May 2019 Update (1903) and higher. Using it on earlier versions of Windows 10 is not supported and may have unintended results. |
 |**[Hypervisor-protected code integrity (HVCI)](../device-guard/enable-virtualization-based-protection-of-code-integrity.md)**| When enabled, policy enforcement uses virtualization-based security to run the code integrity service inside a secure environment. HVCI provides stronger protections against kernel malware.|
 | **Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by the Microsoft Intelligent Security Graph (ISG). |
 | **Managed Installer** | Use this option to automatically allow applications installed by a software distribution solution, such as Microsoft Endpoint Configuration Manager, that has been defined as a managed installer. |
 | **Require WHQL** | By default, legacy drivers that are not Windows Hardware Quality Labs (WHQL) signed are allowed to execute. Enabling this rule requires that every executed driver is WHQL signed and removes legacy driver support. Going forward, every new Windows–compatible driver must be WHQL certified. |
-| **Update Policy without Rebooting** | Use this option to allow future WDAC policy updates to apply without requiring a system reboot. |
+| **Update Policy without Rebooting** | Use this option to allow future Windows Defender Application Control policy updates to apply without requiring a system reboot. |
 | **Unsigned System Integrity Policy** | Allows the policy to remain unsigned. When this option is removed, the policy must be signed and have UpdatePolicySigners added to the policy to enable future policy modifications. |
-| **User Mode Code Integrity** | WDAC policies restrict both kernel-mode and user-mode binaries. By default, only kernel-mode binaries are restricted. Enabling this rule option validates user mode executables and scripts. |
+| **User Mode Code Integrity** | Windows Defender Application Control policies restrict both kernel-mode and user-mode binaries. By default, only kernel-mode binaries are restricted. Enabling this rule option validates user mode executables and scripts. |
 
 > [!div class="mx-imgBorder"]
 > ![Rule options UI for Windows Allowed mode policy.](images/wdac-wizard-rule-options-UI-advanced-collapsed.png)
@@ -82,7 +82,7 @@ Selecting the **+ Advanced Options** label will show another column of policy ru
 
 | Rule option | Description |
 |------------ | ----------- |
-| **Boot Audit on Failure** | Used when the WDAC policy is in enforcement mode. When a driver fails during startup, the WDAC policy will be placed in audit mode so that Windows will load. Administrators can validate the reason for the failure in the CodeIntegrity event log. |
+| **Boot Audit on Failure** | Used when the Windows Defender Application Control (WDAC) policy is in enforcement mode. When a driver fails during startup, the WDAC policy will be placed in audit mode so that Windows will load. Administrators can validate the reason for the failure in the CodeIntegrity event log. |
 | **Disable Flight Signing** | If enabled, WDAC policies will not trust flightroot-signed binaries. This would be used in the scenario in which organizations only want to run released binaries, not flight/preview-signed builds. |
 | **Disable Runtime FilePath Rule Protection** | Disable default FilePath rule protection (apps and executables allowed based on file path rules must come from a file path that's only writable by an administrator) for any FileRule that allows a file based on FilePath. |
 | **Dynamic Code Security** | Enables policy enforcement for .NET applications and dynamically loaded libraries (DLLs). |
@@ -92,7 +92,7 @@ Selecting the **+ Advanced Options** label will show another column of policy ru
 ![Rule options UI for Windows Allowed mode.](images/wdac-wizard-rule-options-UI.png)
 
 > [!NOTE]
-> We recommend that you **enable Audit Mode** initially because it allows you to test new WDAC policies before you enforce them. With audit mode, no application is blocked—instead the policy logs an event whenever an application outside the policy is started. For this reason, all templates have Audit Mode enabled by default. 
+> We recommend that you **enable Audit Mode** initially because it allows you to test new Windows Defender Application Control policies before you enforce them. With audit mode, no application is blocked—instead the policy logs an event whenever an application outside the policy is started. For this reason, all templates have Audit Mode enabled by default. 
 
 ## Creating custom file rules
 
@@ -100,7 +100,7 @@ Selecting the **+ Advanced Options** label will show another column of policy ru
 
 ### Publisher Rules
 
-The Publisher file rule type uses properties in the code signing certificate chain to base file rules. Once the file to base the rule off of, called the *reference file*, is selected, use the slider to indicate the specificity of the rule.  The table below shows the relationship between the slider placement, the corresponding WDAC rule level and its description. The lower the placement on the table and the UI slider, the greater the specificity of the rule. 
+The Publisher file rule type uses properties in the code signing certificate chain to base file rules. Once the file to base the rule off of, called the *reference file*, is selected, use the slider to indicate the specificity of the rule.  The table below shows the relationship between the slider placement, the corresponding Windows Defender Application Control (WDAC) rule level and its description. The lower the placement on the table and the UI slider, the greater the specificity of the rule. 
 
 | Rule Condition | WDAC Rule Level | Description |
 |------------ | ----------- | ----------- |
@@ -140,4 +140,4 @@ The policy signing rules list table on the left of the page will document the al
 
 ## Up next
 
-- [Editing a WDAC policy using the Wizard](wdac-wizard-editing-policy.md)
+- [Editing a Windows Defender Application Control (WDAC) policy using the Wizard](wdac-wizard-editing-policy.md)

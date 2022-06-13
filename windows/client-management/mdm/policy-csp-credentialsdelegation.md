@@ -64,7 +64,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Remote host allows delegation of non-exportable credentials
+Remote host allows delegation of non-exportable credentials.
 
 When credential delegation is being used, devices provide an exportable version of credentials to the remote host. This version exposes users to the risk of credential theft from attackers on the remote host.
 
@@ -90,3 +90,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

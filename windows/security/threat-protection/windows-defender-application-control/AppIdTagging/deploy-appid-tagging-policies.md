@@ -29,7 +29,7 @@ ms.technology: windows-sec
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
-Similar to WDAC Application Control policies, WDAC AppId Tagging policies can be deployed locally and to your managed endpoints several ways. Once you've created your AppId Tagging policy, use one of the following methods to deploy:
+Similar to Windows Defender Application Control (WDAC) policies, WDAC AppId Tagging policies can be deployed locally and to your managed endpoints several ways. Once you've created your AppId Tagging policy, use one of the following methods to deploy:
 
 1. [Deploy AppId Tagging Policies with MDM](#deploy-appid-tagging-policies-with-mdm)
 1. [Deploy policies with MEMCM](#deploy-appid-tagging-policies-with-memcm)
@@ -46,7 +46,7 @@ Custom AppId Tagging policies can deployed via MEMCM using the [deployment task 
 
 ### Deploy AppId Tagging Policies via Scripting
 
-Scripting hosts can be used to deploy AppId Tagging policies as well. This approach is often best suited for local deployment, but works for deployment to managed endpoints and users too. The [Deploy WDAC policies using script article](/deployment/deploy-wdac-policies-with-script.md) describes how to deploy WDAC AppId Tagging policies via scripting. Only the method for deploying to version 1903 and above is applicable for AppId Tagging policies. 
+Scripting hosts can be used to deploy AppId Tagging policies as well. This approach is often best suited for local deployment, but works for deployment to managed endpoints and users too. The [Deploy Windows Defender Application Control policies using script article](/deployment/deploy-wdac-policies-with-script.md) describes how to deploy WDAC AppId Tagging policies via scripting. Only the method for deploying to version 1903 and above is applicable for AppId Tagging policies. 
 
 ### Deploying policies via the ApplicationControl CSP
 
@@ -57,4 +57,4 @@ However, when policies are unenrolled from an MDM server, the CSP will attempt t
 For more information, see [ApplicationControl CSP](/windows/client-management/mdm/applicationcontrol-csp) to deploy multiple policies, and optionally use MEM Intune's Custom OMA-URI capability.
 
 > [!NOTE]
-> WMI and GP do not currently support multiple policies. Instead, customers who can't directly access the MDM stack should use the [ApplicationControl CSP via the MDM Bridge WMI Provider](/windows/client-management/mdm/applicationcontrol-csp#powershell-and-wmi-bridge-usage-guidance) to manage Multiple Policy Format WDAC policies.
+> WMI and GP do not currently support multiple policies. Instead, customers who can't directly access the MDM stack should use the [ApplicationControl CSP via the MDM Bridge WMI Provider](/windows/client-management/mdm/applicationcontrol-csp#powershell-and-wmi-bridge-usage-guidance) to manage Multiple Policy Format Windows Defender Application Control policies.

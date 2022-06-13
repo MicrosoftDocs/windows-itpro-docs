@@ -4,7 +4,6 @@ description: Learn about the various data structures for Microsoft Store for Bus
 MS-HAID:
 - 'p\_phdevicemgmt.business\_store\_data\_structures'
 - 'p\_phDeviceMgmt.data\_structures\_windows\_store\_for\_business'
-ms.assetid: ABE44EC8-CBE5-4775-BA8A-4564CB73531B
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp

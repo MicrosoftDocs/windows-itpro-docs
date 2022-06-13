@@ -1,7 +1,6 @@
 ---
 title: Reporting CSP
 description: The Reporting configuration service provider is used to retrieve Windows Information Protection (formerly known as Enterprise Data Protection) and security auditing logs.
-ms.assetid: 148441A6-D9E1-43D8-ADEE-FB62E85A39F7
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -88,7 +87,7 @@ Specifies the ending time for retrieving logs.
 - Supported operations are Get and Replace.
 
 <a href="" id="type"></a>**Type**  
-Added in Windows 10, version 1703. Specifies the type of logs to retrieve. You can use this policy to retrieve the WIP learning logs.
+Added in Windows 10, version 1703. Specifies the type of logs to retrieve. You can use this policy to retrieve the Windows Information Protection learning logs.
 
 - Value type is integer.
 - Supported operations are Get and Replace.

@@ -1,17 +1,11 @@
 ---
 title: MBR2GPT
 description: Use MBR2GPT.EXE to convert a disk from the Master Boot Record (MBR) to the GUID Partition Table (GPT) partition style without modifying or deleting data on the disk.
-keywords: deploy, troubleshoot, windows, 10, upgrade, partition, mbr, gpt
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: deploy
-audience: itpro
 author: aczechowski
 ms.author: aaroncz
 ms.date: 02/13/2018
 manager: dougeby
-ms.audience: itpro
 ms.localizationpriority: high
 ms.topic: article
 ms.custom: seo-marvel-apr2020

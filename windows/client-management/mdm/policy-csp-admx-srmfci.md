@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_srmfci
-description: Policy CSP - ADMX_srmfci
+description: Learn about Policy CSP - ADMX_srmfci.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -65,7 +65,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This Group Policy Setting should be set on Windows clients  to enable access-denied assistance for all file types.
+This group policy setting should be set on Windows clients to enable access-denied assistance for all file types.
 
 <!--/Description-->
 
@@ -132,3 +132,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

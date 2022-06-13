@@ -30,12 +30,12 @@ ms.technology: windows-sec
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
-This section outlines the process to create a WDAC policy for **fully managed devices** within an organization. The key difference between this scenario and [lightly managed devices](create-wdac-policy-for-lightly-managed-devices.md) is that all software deployed to a fully managed device is managed by IT and users of the device cannot install arbitrary apps. Ideally, all apps are deployed using a software distribution solution, such as Microsoft Endpoint Manager (MEM). Additionally, users on fully managed devices should ideally run as standard user and only authorized IT pros have administrative access.
+This section outlines the process to create a Windows Defender Application Control (WDAC) policy for **fully managed devices** within an organization. The key difference between this scenario and [lightly managed devices](create-wdac-policy-for-lightly-managed-devices.md) is that all software deployed to a fully managed device is managed by IT and users of the device cannot install arbitrary apps. Ideally, all apps are deployed using a software distribution solution, such as Microsoft Endpoint Manager (MEM). Additionally, users on fully managed devices should ideally run as standard user and only authorized IT pros have administrative access.
 
 > [!NOTE]
-> Some of the WDAC options described in this topic are only available on Windows 10 version 1903 and above, or Windows 11. When using this topic to plan your own organization's WDAC policies, consider whether your managed clients can use all or some of these features and assess the impact for any features that may be unavailable on your clients. You may need to adapt this guidance to meet your specific organization's needs.
+> Some of the Windows Defender Application Control options described in this topic are only available on Windows 10 version 1903 and above, or Windows 11. When using this topic to plan your own organization's WDAC policies, consider whether your managed clients can use all or some of these features and assess the impact for any features that may be unavailable on your clients. You may need to adapt this guidance to meet your specific organization's needs.
 
-As described in [common WDAC deployment scenarios](types-of-devices.md), we will use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
+As described in [common Windows Defender Application Control deployment scenarios](types-of-devices.md), we will use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
 
 **Alice Pena** is the IT team lead tasked with the rollout of WDAC.
 
@@ -79,7 +79,7 @@ Having defined the "circle-of-trust", Alice is ready to generate the initial pol
 Alice follows these steps to complete this task:
 
 > [!NOTE]
-> If you do not use MEMCM or prefer to use a different [example WDAC base policy](example-wdac-base-policies.md) for your own policy, skip to step 2 and substitute the MEMCM policy path with your preferred example base policy.
+> If you do not use MEMCM or prefer to use a different [example Windows Defender Application Control base policy](example-wdac-base-policies.md) for your own policy, skip to step 2 and substitute the MEMCM policy path with your preferred example base policy.
 
 1. [Use MEMCM to create and deploy an audit policy](/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager) to a client device running Windows 10 version 1903 or above, or Windows 11.
 
@@ -119,7 +119,7 @@ Alice follows these steps to complete this task:
 
 6. If appropriate, add additional signer or file rules to further customize the policy for your organization.
 
-7. Use [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy) to convert the WDAC policy to a binary format:
+7. Use [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy) to convert the Windows Defender Application Control policy to a binary format:
 
     > [!NOTE]
     > In the sample commands below, replace the string "{InsertPolicyID}" with the actual PolicyID GUID (including braces **{ }**) found in your policy XML file.
@@ -169,5 +169,5 @@ Alice has defined a policy for Lamna's fully managed devices that makes some tra
 
 ## Up next
 
-- [Create a WDAC policy for fixed-workload devices using a reference computer](create-initial-default-policy.md)
-- [Prepare to deploy WDAC policies](windows-defender-application-control-deployment-guide.md)
+- [Create a Windows Defender Application Control policy for fixed-workload devices using a reference computer](create-initial-default-policy.md)
+- [Prepare to deploy Windows Defender Application Control policies](windows-defender-application-control-deployment-guide.md)

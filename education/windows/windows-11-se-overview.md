@@ -82,7 +82,7 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 |Safe Exam Browser                   	|3.3.2.413	  |Win32  |Safe Exam Browser|
 |Secure Browser	                    |14.0.0	   |Win32     |Cambium Development|
 |Secure Browser	                        |4.8.3.376	  |Win32  |Questar, Inc|
-|SensoCloud	                    |2021.11.15.0	|Win32|Senso.Cloud|
+|Senso.Cloud	                    |2021.11.15.0	|Win32|Senso.Cloud|
 |SuperNova Magnifier & Screen Reader	|21.02	     |Win32   |Dolphin Computer Access|
 |Zoom	                                |5.9.1 (2581)|Win32	|Zoom|
 |ZoomText Fusion	                    |2022.2109.10|Win32	|Freedom Scientific|
