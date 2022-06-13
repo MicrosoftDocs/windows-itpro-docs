@@ -60,7 +60,7 @@ manager: dansimp
 <!--/Scope-->
 <!--Description-->
 
-This policy allows administrators to enable automatic subscription for the Microsoft Remote Desktop client. If you define this policy, the specified URL is used by the client to silently subscribe the logged on user and retrieve the remote resources assigned to them. To automatically subscribe to Azure Virtual Desktop in the Azure Public cloud, set the URL to `https://rdweb.wvd.microsoft.com/api/arm/feeddiscovery`.
+This policy allows administrators to enable automatic subscription for the Microsoft Remote Desktop client. If you define this policy, the specified URL is used by the client to subscribe the logged on user and retrieve the remote resources assigned to them. To automatically subscribe to Azure Virtual Desktop in the Azure Public cloud, set the URL to `https://rdweb.wvd.microsoft.com/api/arm/feeddiscovery`.
 
 <!--/Description-->
 
@@ -95,7 +95,7 @@ This policy allows administrators to enable automatic subscription for the Micro
 
 <!--/Scope-->
 <!--Description-->
-This policy allows the user to load the DPAPI cred key from their user profile and decrypt any previously encrypted DPAPI data in the user profile or encrypt any new DPAPI data. This policy is needed when using FSLogix user profiles from Azure AD-joined VMs.
+This policy allows the user to load the DPAPI cred key from their user profile, and decrypt any previously encrypted DPAPI data in the user profile or encrypt any new DPAPI data. This policy is needed when using FSLogix user profiles from Azure AD-joined VMs.
 
 <!--/Description-->
 
@@ -113,3 +113,7 @@ The following list shows the supported values:
 
 
 <!--/Policies-->
+
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

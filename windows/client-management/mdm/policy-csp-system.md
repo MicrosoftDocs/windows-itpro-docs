@@ -14,8 +14,6 @@ manager: dansimp
 
 # Policy CSP - System
 
-
-
 <hr/>
 
 <!--Policies-->
@@ -118,6 +116,7 @@ manager: dansimp
 <a href="" id="system-allowbuildpreview"></a>**System/AllowBuildPreview**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -172,6 +171,7 @@ The following list shows the supported values:
 <a href="" id="system-allowcommercialdatapipeline"></a>**System/AllowCommercialDataPipeline**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -194,12 +194,12 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting configures an Azure Active Directory-joined device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the [Product Terms](https://www.microsoft.com/licensing/terms/productoffering).
+This policy setting configures an Azure Active Directory-joined device, so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the [Product Terms](https://www.microsoft.com/licensing/terms/productoffering).
 
 To enable this behavior, you must complete two steps:
 
- 1. Enable this policy setting
- 2. Join an Azure Active Directory account to the device
+ 1. Enable this policy setting.
+ 2. Join an Azure Active Directory account to the device.
 
 Windows diagnostic data is collected when the Allow Telemetry policy setting is set to 1 – **Required (Basic)** or above.
 
@@ -246,11 +246,11 @@ This policy setting, in combination with the Allow Telemetry and Configure the C
 
 To enable this behavior, you must complete three steps:
 
- 1. Enable this policy setting
- 2. Set **AllowTelemetry** to 1 – **Required (Basic)** or above
- 3. Set the Configure the Commercial ID setting for your Desktop Analytics workspace
+ 1. Enable this policy setting.
+ 2. Set **AllowTelemetry** to 1 – **Required (Basic)** or above.
+ 3. Set the Configure the Commercial ID setting for your Desktop Analytics workspace.
 
-This setting has no effect on devices unless they're properly enrolled in Desktop Analytics.
+This setting has no effect on devices, unless they're properly enrolled in Desktop Analytics.
 
 When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
 
@@ -270,6 +270,7 @@ The following list shows the supported values:
 <a href="" id="system-allowdevicenameindiagnosticdata"></a>**System/AllowDeviceNameInDiagnosticData**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -292,7 +293,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy allows the device name to be sent to Microsoft as part of Windows diagnostic data.  If you disable or don't configure this policy setting, then device name won't be sent to Microsoft as part of Windows diagnostic data.
+This policy allows the device name to be sent to Microsoft as part of Windows diagnostic data. If you disable or don't configure this policy setting, then device name won't be sent to Microsoft as part of Windows diagnostic data.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -325,6 +326,7 @@ The following list shows the supported values:
 <a href="" id="system-allowembeddedmode"></a>**System/AllowEmbeddedMode**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -367,6 +369,7 @@ The following list shows the supported values:
 <a href="" id="system-allowexperimentation"></a>**System/AllowExperimentation**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -394,7 +397,6 @@ The following list shows the supported values:
 
 This policy setting determines the level that Microsoft can experiment with the product to study user preferences or device behavior.
 
-
 Most restricted value is 0.
 
 <!--/Description-->
@@ -414,6 +416,7 @@ The following list shows the supported values:
 <a href="" id="system-allowfontproviders"></a>**System/AllowFontProviders**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -457,8 +460,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 - false - No traffic to fs.microsoft.com and only locally installed fonts are available.
--   1 - true (default) - There may be network traffic to fs.microsoft.com and downloadable fonts are available to apps that support them.
+-   0 - false - No traffic to fs.microsoft.com, and only locally installed fonts are available.
+-   1 - true (default) - There may be network traffic to fs.microsoft.com, and downloadable fonts are available to apps that support them.
 
 <!--/SupportedValues-->
 <!--Validation-->
@@ -475,6 +478,7 @@ To verify if System/AllowFontProviders is set to true:
 <a href="" id="system-allowlocation"></a>**System/AllowLocation**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -498,7 +502,6 @@ To verify if System/AllowFontProviders is set to true:
 <!--/Scope-->
 <!--Description-->
 Specifies whether to allow app access to the Location service.
-
 
 Most restricted value is 0.
 
@@ -538,7 +541,7 @@ This policy setting configures an Azure Active Directory-joined device so that M
 
 For customers who enroll into the Microsoft Managed Desktop service, this policy will be enabled by default to allow Microsoft to process data for operational and analytic needs. For more information, see [Privacy and personal data](/microsoft-365/managed-desktop/service-description/privacy-personal-data).
 
-This setting has no effect on devices unless they're properly enrolled in Microsoft Managed Desktop.
+This setting has no effect on devices, unless they're properly enrolled in Microsoft Managed Desktop.
 
 When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
 
@@ -553,6 +556,7 @@ If you disable this policy setting, devices may not appear in Microsoft Managed 
 <a href="" id="system-allowstoragecard"></a>**System/AllowStorageCard**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -583,7 +587,7 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – SD card use isn't allowed and USB drives are disabled. This setting doesn't prevent programmatic access to the storage card. 
+-   0 – SD card use isn't allowed, and USB drives are disabled. This setting doesn't prevent programmatic access to the storage card. 
 -   1 (default) – Allow a storage card.
 
 <!--/SupportedValues-->
@@ -595,6 +599,7 @@ The following list shows the supported values:
 <a href="" id="system-allowtelemetry"></a>**System/AllowTelemetry**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -626,7 +631,6 @@ The following list shows the supported values for Windows 8.1:
 -   0 - Not allowed.
 -   1 – Allowed, except for Secondary Data Requests.
 -   2 (default) – Allowed.
-
 
 In Windows 10, you can configure this policy setting to decide what level of diagnostic data to send to Microsoft.
 
@@ -666,6 +670,7 @@ ADMX Info:
 <a href="" id="system-allowupdatecomplianceprocessing"></a>**System/AllowUpdateComplianceProcessing**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -693,9 +698,9 @@ This policy setting, in combination with the Allow Telemetry and Configure the C
 
 To enable this behavior, you must complete three steps:
 
- 1. Enable this policy setting
- 2. Set **AllowTelemetry** to 1 – **Required (Basic)** or above
- 3. Set the Configure the Commercial ID setting for your Update Compliance workspace
+ 1. Enable this policy setting.
+ 2. Set **AllowTelemetry** to 1 – **Required (Basic)** or above.
+ 3. Set the Configure the Commercial ID setting for your Update Compliance workspace.
 
 When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
 
@@ -726,6 +731,7 @@ The following list shows the supported values:
 <a href="" id="system-allowusertoresetphone"></a>**System/AllowUserToResetPhone**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -776,9 +782,9 @@ This policy setting configures an Azure Active Directory-joined device so that M
 
 To enable this behavior, you must complete three steps:
 
- 1. Enable this policy setting
- 2. Set **AllowTelemetry** to 1 – **Required (Basic)** or above
- 3. Join an Azure Active Directory account to the device
+ 1. Enable this policy setting.
+ 2. Set **AllowTelemetry** to 1 – **Required (Basic)** or above.
+ 3. Join an Azure Active Directory account to the device.
 
 When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
 
@@ -799,6 +805,7 @@ The following list shows the supported values:
 <a href="" id="system-bootstartdriverinitialization"></a>**System/BootStartDriverInitialization**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -827,19 +834,19 @@ This policy setting allows you to specify which boot-start drivers are initializ
 -  Bad, but required for boot: The driver has been identified as malware, but the computer can't successfully boot without loading this driver.
 -  Unknown: This driver hasn't been attested to by your malware detection application and hasn't been classified by the Early Launch Antimalware boot-start driver.
 
-If you enable this policy setting, you'll be able to choose which boot-start drivers to initialize the next time the computer is started.
+If you enable this policy setting, you'll be able to choose which boot-start drivers to initialize next time the computer is started.
 
-If you disable or don't configure this policy setting, the boot start drivers determined to be Good, Unknown or Bad but Boot Critical are initialized and the initialization of drivers determined to be Bad is skipped.
+If you disable or don't configure this policy setting, the boot start drivers determined to be Good, Unknown, or Bad, but Boot Critical are initialized and the initialization of drivers determined to be Bad is skipped.
 
 If your malware detection application doesn't include an Early Launch Antimalware boot-start driver or if your Early Launch Antimalware boot-start driver has been disabled, this setting has no effect and all boot-start drivers are initialized.
 
 <!--/Description-->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 > 
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 > 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -857,6 +864,7 @@ ADMX Info:
 <a href="" id="system-configuremicrosoft365uploadendpoint"></a>**System/ConfigureMicrosoft365UploadEndpoint**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -885,7 +893,7 @@ If your organization is participating in the program and has been instructed to 
 
 The value for this setting will be provided by Microsoft as part of the onboarding process for the program.
 
-Value type is string.
+Supported value type is string.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -913,6 +921,7 @@ ADMX Info:
 <a href="" id="system-configuretelemetryoptinchangenotification"></a>**System/ConfigureTelemetryOptInChangeNotification**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -936,8 +945,9 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 This policy setting determines whether a device shows notifications about telemetry levels to people on first sign in or when changes occur in Settings. 
-If you set this policy setting to "Disable telemetry change notifications", telemetry level notifications stop appearing.
-If you set this policy setting to "Enable telemetry change notifications" or don't configure this policy setting, telemetry notifications appear at first sign in and when changes occur in Settings.
+
+- If you set this policy setting to "Disable telemetry change notifications", telemetry level notifications stop appearing.
+- If you set this policy setting to "Enable telemetry change notifications" or don't configure this policy setting, telemetry notifications appear at first sign in and when changes occur in Settings.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -962,6 +972,7 @@ The following list shows the supported values:
 <a href="" id="system-configuretelemetryoptinsettingsux"></a>**System/ConfigureTelemetryOptInSettingsUx**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -1016,6 +1027,7 @@ The following list shows the supported values:
 <a href="" id="system-disabledevicedelete"></a>**System/DisableDeviceDelete**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -1039,8 +1051,9 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 This policy setting controls whether the Delete diagnostic data button is enabled in Diagnostic & Feedback Settings page.
-If you enable this policy setting, the Delete diagnostic data button will be disabled in Settings page, preventing the deletion of diagnostic data collected by Microsoft from the device. 
-If you disable or don't configure this policy setting, the Delete diagnostic data button will be enabled in Settings page, which allows people to erase all diagnostic data collected by Microsoft from that device.
+
+- If you enable this policy setting, the Delete diagnostic data button will be disabled in Settings page, preventing the deletion of diagnostic data collected by Microsoft from the device. 
+- If you disable or don't configure this policy setting, the Delete diagnostic data button will be enabled in Settings page, which allows people to erase all diagnostic data collected by Microsoft from that device.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1069,6 +1082,7 @@ ADMX Info:
 <a href="" id="system-disablediagnosticdataviewer"></a>**System/DisableDiagnosticDataViewer**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -1092,8 +1106,9 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 This policy setting controls whether users can enable and launch the Diagnostic Data Viewer from the Diagnostic & Feedback Settings page.
-If you enable this policy setting, the Diagnostic Data Viewer won't be enabled in Settings page, and it will prevent the viewer from showing diagnostic data collected by Microsoft from the device.  
-If you disable or don't configure this policy setting, the Diagnostic Data Viewer will be enabled in Settings page.
+
+- If you enable this policy setting, the Diagnostic Data Viewer won't be enabled in Settings page, and it will prevent the viewer from showing diagnostic data collected by Microsoft from the device.  
+- If you disable or don't configure this policy setting, the Diagnostic Data Viewer will be enabled in Settings page.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1122,6 +1137,7 @@ ADMX Info:
 <a href="" id="system-disableenterpriseauthproxy"></a>**System/DisableEnterpriseAuthProxy**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -1144,7 +1160,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting blocks the Connected User Experience and Telemetry service from automatically using an authenticated proxy to send data back to Microsoft on Windows 10. If you disable or don't configure this policy setting, the Connected User Experience and Telemetry service will automatically use an authenticated proxy to send data back to Microsoft. Enabling this policy will block the Connected User Experience and Telemetry service from automatically using an authenticated proxy.
+This policy setting blocks the Connected User Experience and Telemetry service from automatically using an authenticated proxy, to send data back to Microsoft on Windows 10. If you disable or don't configure this policy setting, the Connected User Experience and Telemetry service will automatically use an authenticated proxy, to send data back to Microsoft. Enabling this policy will block the Connected User Experience and Telemetry service from automatically using an authenticated proxy.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1164,6 +1180,7 @@ ADMX Info:
 <a href="" id="system-disableonedrivefilesync"></a>**System/DisableOneDriveFileSync**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -1228,6 +1245,7 @@ To validate on Desktop, do the following steps:
 <a href="" id="system-disablesystemrestore"></a>**System/DisableSystemRestore**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -1256,19 +1274,19 @@ This policy setting allows you to turn off System Restore.
 
 System Restore enables users, in case of a problem, to restore their computers to a previous state without losing personal data files. By default, System Restore is turned on for the boot volume.
 
-If you enable this policy setting, System Restore is turned off, and the System Restore Wizard can't be accessed. The option to configure System Restore or create a restore point through System Protection is also disabled.
+If you enable this policy setting, System Restore is turned off, then System Restore Wizard can't be accessed. The option to configure System Restore or create a restore point through System Protection is also disabled.
 
-If you disable or don't configure this policy setting, users can perform System Restore and configure System Restore settings through System Protection.
+If you disable or don't configure this policy setting, users can perform System Restore, and configure System Restore settings through System Protection.
 
 Also, see the "Turn off System Restore configuration" policy setting. If the "Turn off System Restore" policy setting is disabled or not configured, the "Turn off System Restore configuration" policy setting is used to determine whether the option to configure System Restore is available.
 
 <!--/Description-->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 > 
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 > 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -1286,6 +1304,7 @@ ADMX Info:
 <a href="" id="system-feedbackhubalwayssavediagnosticslocally"></a>**System/FeedbackHubAlwaysSaveDiagnosticsLocally**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -1326,6 +1345,7 @@ The following list shows the supported values:
 <a href="" id="system-limitdiagnosticlogcollection"></a>**System/LimitDiagnosticLogCollection**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -1348,7 +1368,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting specifies whether diagnostic log data can be collected when more information is needed to troubleshoot a problem.  It's sent only if we have permission to collect optional diagnostic data, and only if the device meets the criteria for more data collection.  
+This policy setting specifies whether diagnostic log data can be collected when more information is needed to troubleshoot a problem. It's sent only if we have permission to collect optional diagnostic data, and only if the device meets the criteria for more data collection.  
 
 If you disable or don't configure this policy setting, we may occasionally collect advanced diagnostic data if the user has opted to send optional diagnostic data.
 
@@ -1376,6 +1396,7 @@ The following list shows the supported values:
 <a href="" id="system-limitdumpcollection"></a>**System/LimitDumpCollection**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -1398,7 +1419,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting limits the type of dumps that can be collected when more information is needed to troubleshoot a problem.  These dumps aren't sent unless we have permission to collect optional diagnostic data.
+This policy setting limits the type of dumps that can be collected when more information is needed to troubleshoot a problem. These dumps aren't sent unless we have permission to collect optional diagnostic data.
 
 With this policy setting being enabled, Windows Error Reporting is limited to sending kernel mini dumps and user mode triage dumps only. 
 
@@ -1427,6 +1448,7 @@ The following list shows the supported values:
 <a href="" id="system-limitenhanceddiagnosticdatawindowsanalytics"></a>**System/LimitEnhancedDiagnosticDataWindowsAnalytics**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -1462,9 +1484,8 @@ To enable this behavior, you must complete two steps:
       > [!NOTE]
       > **Enhanced** is no longer an option for Windows Holographic, version 21H1.
 
-    - For Windows 10 version 19H1 and later: set **AllowTelemetry** to Optional (Full)
+    - For Windows 10 version 19H1 and later: set **AllowTelemetry** to Optional (Full).
 
- 
 When you configure these policy settings, a basic level of diagnostic data plus other events that are required for Windows Analytics are sent to Microsoft. These events are documented here: <a href="/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields" data-raw-source="[Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics](/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields)">Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics</a>.
  
 Enabling enhanced diagnostic data in the Allow Telemetry policy in combination with not configuring this policy will also send the required events for Windows Analytics, plus enhanced level telemetry data. This setting has no effect on computers configured to send Required (Basic) or Optional (Full) diagnostic data to Microsoft.
@@ -1489,6 +1510,7 @@ ADMX Info:
 <a href="" id="system-telemetryproxy"></a>**System/TelemetryProxy**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -1533,6 +1555,7 @@ ADMX Info:
 <a href="" id="system-turnofffilehistory"></a>**System/TurnOffFileHistory**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -1586,3 +1609,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--/Policies-->
+
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

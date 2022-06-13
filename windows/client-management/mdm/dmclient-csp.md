@@ -1,7 +1,6 @@
 ---
 title: DMClient CSP
 description: Understand how the DMClient configuration service provider (CSP) is used to specify enterprise-specific mobile device management (MDM) configuration settings.
-ms.assetid: a5cf35d9-ced0-4087-a247-225f102f2544
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp

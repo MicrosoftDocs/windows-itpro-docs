@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_msched
-description: Policy CSP - ADMX_msched
+description: Learn about Policy CSP - ADMX_msched.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -13,6 +13,7 @@ manager: dansimp
 ---
 
 # Policy CSP - ADMX_msched
+
 >[!TIP]
 > These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 > 
@@ -135,8 +136,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-
-
-
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

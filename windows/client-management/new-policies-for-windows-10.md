@@ -1,14 +1,10 @@
 ---
 title: New policies for Windows 10 (Windows 10)
 description: Learn how Windows 10 includes new policies for management, like Group Policy settings for the Windows system and components.
-ms.assetid: 1F24ABD8-A57A-45EA-BA54-2DA2238C573D
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-keywords: ["MDM", "Group Policy", "GP"]
 ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
 author: dansimp
 ms.localizationpriority: medium
 ms.date: 09/15/2021

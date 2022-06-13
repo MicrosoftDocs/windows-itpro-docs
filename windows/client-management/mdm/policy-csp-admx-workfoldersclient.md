@@ -76,6 +76,7 @@ This policy setting specifies whether Work Folders should be set up automaticall
 This folder creation prevents users from choosing not to use Work Folders on the computer; it also prevents them from manually specifying the local folder in which Work Folders stores files. Work Folders will use the settings specified in the "Specify Work Folders settings" policy setting in User Configuration\Administrative Templates\Windows Components\WorkFolders. If the "Specify Work Folders settings" policy setting doesn't apply to a user, Work Folders isn't automatically set up.
 - If you disable or don't configure this policy setting, Work Folders uses the "Force automatic setup" option of the "Specify Work Folders settings" policy setting to determine whether to automatically set up Work Folders for a given user.
 
+
 <!--/Description-->
 
 

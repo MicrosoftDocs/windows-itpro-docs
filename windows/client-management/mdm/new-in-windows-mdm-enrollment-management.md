@@ -4,7 +4,6 @@ description: Discover what's new and breaking changes in Windows 10 and Windows 
 MS-HAID:
 - 'p\_phdevicemgmt.mdm\_enrollment\_and\_management\_overview'
 - 'p\_phDeviceMgmt.new\_in\_windows\_mdm\_enrollment\_management'
-ms.assetid: 9C42064F-091C-4901-BC73-9ABE79EE4224
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp

@@ -1,7 +1,6 @@
 ---
 title: DeviceManageability CSP
 description: Learn how the DeviceManageability configuration service provider (CSP) is used to retrieve general information about MDM configuration capabilities on the device. 
-ms.assetid: FE563221-D5B5-4EFD-9B60-44FE4066B0D2
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp

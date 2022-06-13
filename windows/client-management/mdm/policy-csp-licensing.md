@@ -14,8 +14,6 @@ manager: dansimp
 
 # Policy CSP - Licensing
 
-
-
 <hr/>
 
 <!--Policies-->
@@ -29,7 +27,6 @@ manager: dansimp
     <a href="#licensing-disallowkmsclientonlineavsvalidation">Licensing/DisallowKMSClientOnlineAVSValidation</a>
   </dd>
 </dl>
-
 
 <hr/>
 
@@ -123,8 +120,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Disabled.
--   1 – Enabled.
+-   0 (default) – Disabled
+-   1 – Enabled
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -133,3 +130,6 @@ The following list shows the supported values:
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

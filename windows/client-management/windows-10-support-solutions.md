@@ -4,8 +4,6 @@ description: Learn where to find information about troubleshooting Windows 10 is
 ms.reviewer: kaushika
 manager: dansimp
 ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
 ms.author: kaushika
 author: kaushika-msft
 ms.localizationpriority: medium
