@@ -58,7 +58,7 @@ Based on the above, Alice defines the pseudo-rules for the policy:
    - WHQL (3rd party kernel drivers)
    - Windows Store signed apps
 
-2. **"MEMCM works”** rules which include signer and hash rules for Configuration Manager components to properly function
+2. **"MEMCM works”** rules which include signer and hash rules for Configuration Manager components to properly function.
 3. **Allow Managed Installer** (Configuration Manager configured as a managed installer)
 4. **Allow Intelligent Security Graph (ISG)** (reputation-based authorization)
 5. **Admin-only path rules** for the following locations:

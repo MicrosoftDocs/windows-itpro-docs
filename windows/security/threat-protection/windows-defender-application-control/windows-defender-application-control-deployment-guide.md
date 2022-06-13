@@ -42,6 +42,6 @@ All Windows Defender Application Control policy changes should be deployed in au
 There are several options to deploy Windows Defender Application Control policies to managed endpoints, including:
 
 1. [Deploy using a Mobile Device Management (MDM) solution](deploy-windows-defender-application-control-policies-using-intune.md), such as Microsoft Intune
-2. [Deploy using Microsoft Endpoint Configuration Manager (MEMCM)](deployment/deploy-wdac-policies-with-memcm.md)
+2. [Deploy using Microsoft Endpoint Configuration Manager](deployment/deploy-wdac-policies-with-memcm.md)
 3. [Deploy via script](deployment/deploy-wdac-policies-with-script.md)
 4. [Deploy via Group Policy](deploy-windows-defender-application-control-policies-using-group-policy.md)

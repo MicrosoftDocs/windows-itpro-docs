@@ -27,11 +27,11 @@ ms.localizationpriority: medium
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
-You can use Microsoft Endpoint Configuration Manager (MEMCM) to configure Windows Defender Application Control (WDAC) on client machines.
+You can use Microsoft Endpoint Configuration Manager to configure Windows Defender Application Control (WDAC) on client machines.
 
 ## Use MEMCM's built-in policies
 
-Configuration Manager includes native support for WDAC, which allows you to configure Windows 10 and Windows 11 client computers with a policy that will only allow:
+Microsoft Endpoint Configuration Manager includes native support for WDAC, which allows you to configure Windows 10 and Windows 11 client computers with a policy that will only allow:
 
 - Windows components
 - Microsoft Store apps
