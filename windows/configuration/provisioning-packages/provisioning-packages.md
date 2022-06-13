@@ -13,7 +13,6 @@ ms.collection: highpri
 
 # Provisioning packages for Windows
 
-
 **Applies to**
 
 - Windows 10
@@ -28,9 +27,6 @@ Provisioning packages are simple enough that with a short set of written instruc
 <!-- The [Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) includes the Windows Configuration Designer, a tool for configuring provisioning packages.--> 
 Windows Configuration Designer is available as an [app in the Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22). 
 
-
-
-
 <!--## New in Windows 10, version 1703-->
 
 <!-- - The tool for creating provisioning packages is renamed Windows Configuration Designer, replacing the Windows Configuration Designer (WCD) tool. The components for creating images have been removed from Windows Configuration Designer, which now provides access to runtime settings only. -->
@@ -41,9 +37,7 @@ Windows Configuration Designer is available as an [app in the Microsoft Store](h
 <!-- - Windows 10 includes PowerShell cmdlets that simplify scripted provisioning. Using these cmdlets, you can add provisioning packages, remove provisioning packages and generate log files to investigate provisioning errors.-->
 <!-- - The Provision school devices wizard is removed from Windows Configuration Designer. Instead, use the [Setup School PCs app](https://www.microsoft.com/store/p/set-up-school-pcs/9nblggh4ls40) from the Microsoft Store. -->
 
-
 ## Benefits of provisioning packages
-
 
 Provisioning packages let you:
 
@@ -76,7 +70,7 @@ The following table describes settings that you can configure using the wizards 
 | Set up device | Assign device name, enter product key to upgrade Windows, configure shared used, remove pre-installed software | ✔️ | ✔️ | ✔️ |
 | Set up network | Connect to a Wi-Fi network | ✔️ | ✔️ | ✔️ |
 | Account management | Enroll device in Active Directory, enroll device in Azure Active Directory, or create a local administrator account | ✔️ | ✔️ | ✔️ |
-| Bulk Enrollment in Azure AD | Enroll device in Azure Active Directory using Bulk Token</br></br> [Set up Azure AD join in your organization](/azure/active-directory/active-directory-azureadjoin-setup), before you use Windows Configuration Designer wizard to configure bulk Azure AD enrollment,. | ✔️ | ✔️ | ✔️ |
+| Bulk Enrollment in Azure AD | Enroll device in Azure Active Directory using Bulk Token</br></br> [Set up Azure AD join in your organization](/azure/active-directory/active-directory-azureadjoin-setup), before you use Windows Configuration Designer wizard to configure bulk Azure AD enrollment. | ✔️ | ✔️ | ✔️ |
 | Add applications | Install applications using the provisioning package.  | ✔️ | ✔️ | ❌ |
 | Add certificates | Include a certificate file in the provisioning package. | ✔️ | ✔️ | ✔️ |
 | Configure kiosk account and app | Create local account to run the kiosk mode app, specify the app to run in kiosk mode | ❌ | ✔️ | ❌ |
@@ -87,14 +81,12 @@ The following table describes settings that you can configure using the wizards 
 - [Instructions for the kiosk wizard](../kiosk-single-app.md#wizard)
 - [Instructions for the HoloLens wizard](/hololens/hololens-provisioning#wizard)
 
-
 >[!NOTE]
 >After you start a project using a Windows Configuration Designer wizard, you can switch to the advanced editor to configure additional settings in the provisioning package. 
 
 ### Configuration Designer advanced editor
 
 The following table provides some examples of settings that you can configure using the Windows Configuration Designer advanced editor to create provisioning packages.
-
 
 | Customization options |  Examples  |
 |---|---|
