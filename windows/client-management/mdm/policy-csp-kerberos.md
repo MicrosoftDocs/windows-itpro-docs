@@ -435,7 +435,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Adds a list of domains that an Azure Active Directory joined device can attempt to contact, when it can't resolve a UPN to a principal.
+Adds a list of domains that an Azure Active Directory-joined device can attempt to contact when it can't resolve a UPN to a principal.
 
 Devices joined to Azure Active Directory in a hybrid environment need to interact with Active Directory Domain Controllers, but they lack the built-in ability to find a Domain Controller that a domain-joined device has. This limitation can cause failures, when such a device needs to resolve an Azure Active Directory UPN into an Active Directory Principal. You can use this policy to avoid those failures.
 

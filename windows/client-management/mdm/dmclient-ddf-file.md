@@ -980,7 +980,7 @@ The XML below is for Windows 10, version 1803.
                   <Get />
                   <Replace />
                 </AccessType>
-                <Description>Send the device AAD token, if the user one can't be returned</Description>
+                <Description>Send the device Azure Active Directory token, if the user one can't be returned</Description>
                 <DFFormat>
                   <bool />
                 </DFFormat>

@@ -376,7 +376,7 @@ The date type format is Null, meaning this node doesn’t contain a value.
 The only supported operation is Execute.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-aadkeyidentifierlist"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/AADKeyIdentifierList**  
-Optional. Specify the Azure AD Key Identifier List as a list of semicolon separated values. On Enroll, the values in this list are validated against the Azure AD Key present on the device. If no match is found, enrollment will fail.
+Optional. Specify the Azure Active Directory Key Identifier List as a list of semicolon separated values. On Enroll, the values in this list are validated against the Azure AD Key present on the device. If no match is found, enrollment will fail.
 
 Data type is string.
 

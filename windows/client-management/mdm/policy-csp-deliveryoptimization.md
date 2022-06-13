@@ -700,7 +700,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Set this policy to restrict peer selection to a specific source. Available options are: 1 = AD Site, 2 = Authenticated domain SID, 3 = DHCP Option ID, 4 = DNS Suffix, 5 = AAD.
+Set this policy to restrict peer selection to a specific source. Available options are: 1 = Active Directory Site, 2 = Authenticated domain SID, 3 = DHCP Option ID, 4 = DNS Suffix, 5 = Azure Active Directory.
 
 When set, the Group ID will be assigned automatically from the selected source.
 
@@ -725,11 +725,11 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   1 - AD site
+-   1 - Active Directory site
 -   2 - Authenticated domain SID
 -   3 - DHCP user option
 -   4 - DNS suffix
--   5 - AAD
+-   5 - Azure Active Directory
 
 <!--/SupportedValues-->
 <!--/Policy-->

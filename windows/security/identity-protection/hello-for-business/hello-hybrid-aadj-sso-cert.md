@@ -1,6 +1,6 @@
 ---
 title: Using Certificates for AADJ On-premises Single-sign On single sign-on
-description: If you want to use certificates for on-premises single-sign on for Azure Active Directory joined devices, then follow these additional steps.
+description: If you want to use certificates for on-premises single-sign on for Azure Active Directory-joined devices, then follow these additional steps.
 keywords: identity, PIN, biometric, Hello, passport, AADJ, SSO,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -23,14 +23,14 @@ ms.reviewer:
 
 - Windows 10
 - Windows 11
-- Azure Active Directory joined
+- Azure Active Directory-joined
 - Hybrid Deployment
 - Certificate trust
 
-If you plan to use certificates for on-premises single-sign on, then follow these **additional** steps to configure the environment to enroll Windows Hello for Business certificates for Azure AD joined devices.
+If you plan to use certificates for on-premises single-sign on, then follow these **additional** steps to configure the environment to enroll Windows Hello for Business certificates for Azure AD-joined devices.
 
 > [!IMPORTANT]
-> Ensure you have performed the configurations in [Azure AD joined devices for On-premises Single-Sign On](hello-hybrid-aadj-sso-base.md) before you continue.
+> Ensure you have performed the configurations in [Azure AD-joined devices for On-premises Single-Sign On](hello-hybrid-aadj-sso-base.md) before you continue.
 
 Steps you will perform include:
 
@@ -44,7 +44,7 @@ Steps you will perform include:
 
 ## Requirements
 
-You need to install and configure additional infrastructure to provide Azure AD joined devices with on-premises single-sign on.
+You need to install and configure additional infrastructure to provide Azure AD-joined devices with on-premises single-sign on.
 
 - An existing Windows Server 2012 R2 or later Enterprise Certificate Authority
 - A Windows Server 2012 R2 domain joined server that hosts the Network Device Enrollment Services role
@@ -75,7 +75,7 @@ Most environments change the user principal name suffix to match the organizatio
 
 To include the on-premises distinguished name in the certificate's subject, Azure AD Connect must replicate the Active Directory **distinguishedName** attribute to the Azure Active Directory **onPremisesDistinguishedName** attribute.  Azure AD Connect version 1.1.819 includes the proper synchronization rules needed for these attributes.
 
-### Verify AAD Connect version
+### Verify Azure Active Directory Connect version
 
 Sign-in to computer running Azure AD Connect with access equivalent to _local administrator_.
 
@@ -471,13 +471,13 @@ Sign-in a domain controller with a minimum access equivalent to _Domain Admins_.
 
 5. Click **Add**.
 
-6. Click **Users or Computers...**  Type the name of the _NDES Server_ you use to issue Windows Hello for Business authentication certificates to Azure AD joined devices.  From the **Available services** list, select **HOST**.  Click **OK**.
+6. Click **Users or Computers...**  Type the name of the _NDES Server_ you use to issue Windows Hello for Business authentication certificates to Azure AD-joined devices.  From the **Available services** list, select **HOST**.  Click **OK**.
 
    ![NDES Service delegation to NDES host.](images/aadjcert/ndessvcdelegation-host-ndes-spn.png)
 
 7. Repeat steps 5 and 6 for each NDES server using this service account. Click **Add**.
 
-8. Click **Users or computers...**  Type the name of the issuing certificate authority this NDES service account uses to issue Windows Hello for Business authentication certificates to Azure AD joined devices.  From the **Available services** list, select **dcom**.  Hold the **CTRL** key and select **HOST**. Click **OK**.
+8. Click **Users or computers...**  Type the name of the issuing certificate authority this NDES service account uses to issue Windows Hello for Business authentication certificates to Azure AD-joined devices.  From the **Available services** list, select **dcom**.  Hold the **CTRL** key and select **HOST**. Click **OK**.
 
 9. Repeat steps 8 and 9 for each issuing certificate authority from which one or more NDES servers request certificates.
 
@@ -550,7 +550,7 @@ Sign-in to the NDES Server with _local administrator_ equivalent credentials.
 
 1. Open an elevated command prompt.
 
-2. Using the table above, decide which registry value name you will use to request Windows Hello for Business authentication certificates for Azure AD joined devices.
+2. Using the table above, decide which registry value name you will use to request Windows Hello for Business authentication certificates for Azure AD-joined devices.
 
 3. Type the following command:
 
@@ -558,7 +558,7 @@ Sign-in to the NDES Server with _local administrator_ equivalent credentials.
    reg add HKLM\Software\Microsoft\Cryptography\MSCEP /v [registryValueName] /t REG_SZ /d [certificateTemplateName]
    ```
 
-   where **registryValueName** is one of the three value names from the above table and where **certificateTemplateName** is the name of the certificate template you created for Windows Hello for Business Azure AD joined devices.  Example:
+   where **registryValueName** is one of the three value names from the above table and where **certificateTemplateName** is the name of the certificate template you created for Windows Hello for Business Azure AD-joined devices.  Example:
 
    ```console
    reg add HKLM\Software\Microsoft\Cryptography\MSCEP /v SignatureTemplate /t REG_SZ /d AADJWHFBAuthentication
@@ -573,7 +573,7 @@ Sign-in to the NDES Server with _local administrator_ equivalent credentials.
 
 ### Create a Web Application Proxy for the internal NDES URL.
 
-Certificate enrollment for Azure AD joined devices occurs over the Internet.  As a result, the internal NDES URLs must be accessible externally. You can do this easily and securely using Azure Active Directory Application Proxy.  Azure AD Application Proxy provides single sign-on and secure remote access for web applications hosted on-premises, such as Network Device Enrollment Services.
+Certificate enrollment for Azure AD-joined devices occurs over the Internet.  As a result, the internal NDES URLs must be accessible externally. You can do this easily and securely using Azure Active Directory Application Proxy.  Azure AD Application Proxy provides single sign-on and secure remote access for web applications hosted on-premises, such as Network Device Enrollment Services.
 
 Ideally, you configure your Microsoft Intune SCEP certificate profile to use multiple external NDES URLs.  This enables Microsoft Intune to round-robin load balance the certificate requests to identically configured NDES Servers (each NDES server can accommodate approximately 300 concurrent requests).  Microsoft Intune sends these requests to Azure AD Application Proxies.
 
@@ -697,7 +697,7 @@ Sign-in the NDES server with access equivalent to _local administrators_.
 
 10. Click **Enroll**
 
-11. Repeat these steps for all NDES Servers used to request Windows Hello for Business authentication certificates for Azure AD joined devices.
+11. Repeat these steps for all NDES Servers used to request Windows Hello for Business authentication certificates for Azure AD-joined devices.
 
 ### Configure the Web Server Role
 
