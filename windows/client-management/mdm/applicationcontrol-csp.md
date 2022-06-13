@@ -152,7 +152,7 @@ Value type is char.
 
 ## Microsoft Endpoint Manager (MEM) Intune Usage Guidance  
 
-For customers using Intune standalone or hybrid management with Microsoft Endpoint Manager Configuration Manager (MEMCM) to deploy custom policies via the ApplicationControl CSP, refer to [Deploy Windows Defender Application Control policies by using Microsoft Intune](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune).
+For customers using Intune standalone or hybrid management with Microsoft Endpoint Configuration Manager (MEMCM) to deploy custom policies via the ApplicationControl CSP, refer to [Deploy Windows Defender Application Control policies by using Microsoft Intune](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune).
 
 ## Generic MDM Server Usage Guidance
 
@@ -301,7 +301,7 @@ An example of Delete command is:
 
 ## PowerShell and WMI Bridge Usage Guidance
 
-The ApplicationControl CSP can also be managed locally from PowerShell or via Microsoft Endpoint Manager Configuration Manager's task sequence scripting by using the [WMI Bridge Provider](./using-powershell-scripting-with-the-wmi-bridge-provider.md).
+The ApplicationControl CSP can also be managed locally from PowerShell or via Configuration Manager's task sequence scripting by using the [WMI Bridge Provider](./using-powershell-scripting-with-the-wmi-bridge-provider.md).
 
 ### Setup for using the WMI Bridge
 

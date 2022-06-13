@@ -142,7 +142,7 @@ Before you can start to collect your data, you must run the provided PowerShell 
 -OR-
 - Collect your hardware inventory using the MOF Editor with a .MOF import file.<p>
 -OR-
-- Collect your hardware inventory using the SMS\DEF.MOF file (System Center Configuration Manager 2007 only)
+- Collect your hardware inventory using the SMS\DEF.MOF file (Configuration Manager 2007 only)
 
 ### WMI only: Running the PowerShell script to compile the .MOF file and to update security privileges
 You need to set up your computers for data collection by running the provided PowerShell script (IETelemetrySetUp.ps1) to compile the .mof file and to update security privileges for the new WMI classes.
@@ -239,7 +239,7 @@ After you’ve collected your data, you’ll need to get the local files off of 
 -OR-
 - Collect your hardware inventory using the MOF Editor with a .MOF import file.<p>
 -OR-
-- Collect your hardware inventory using the SMS\DEF.MOF file (System Center Configuration Manager 2007 only)
+- Collect your hardware inventory using the SMS\DEF.MOF file (Configuration Manager 2007 only)
 
 ### Collect your hardware inventory using the MOF Editor while connected to a client device
 You can collect your hardware inventory using the MOF Editor, while you’re connected to your client devices.
@@ -281,8 +281,8 @@ You can collect your hardware inventory using the MOF Editor and a .MOF import f
 4.  Click **OK** to close the default windows.<br>
 Your environment is now ready to collect your hardware inventory and review the sample reports.
 
-### Collect your hardware inventory using the SMS\DEF.MOF file (System Center Configuration Manager 2007 only)
-You can collect your hardware inventory using the using the Systems Management Server (SMS\DEF.MOF) file. Editing this file lets you collect your data for System Center Configuration Manager 2007. If you aren’t using this version of Configuration Manager, you won’t want to use this option.
+### Collect your hardware inventory using the SMS\DEF.MOF file (Configuration Manager 2007 only)
+You can collect your hardware inventory using the using the Systems Management Server (SMS\DEF.MOF) file. Editing this file lets you collect your data for Configuration Manager 2007. If you aren’t using this version of Configuration Manager, you won’t want to use this option.
 
 **To collect your inventory**
 

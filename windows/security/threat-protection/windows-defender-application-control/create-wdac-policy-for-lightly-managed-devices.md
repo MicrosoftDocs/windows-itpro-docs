@@ -46,12 +46,8 @@ For the majority of users and devices, Alice wants to create an initial policy t
 Alice identifies the following key factors to arrive at the "circle-of-trust" for Lamna's lightly managed devices, which currently include most end-user devices:
 
 - All clients are running Windows 10 version 1903 and above, or Windows 11;
-- All clients are managed by Microsoft Endpoint Manager (MEM) either with Configuration Manager (MEMCM) standalone or hybrid mode with Intune;
-
-    > [!NOTE]
-    > Microsoft Endpoint Configuration Manager was previously known as System Center Configuration Manager. 
-
-- Some, but not all, apps are deployed using MEMCM;
+- All clients are managed by Microsoft Endpoint Manager either with Configuration Manager or with Intune.
+- Some, but not all, apps are deployed using Configuration Manager;
 - Most users are local administrators on their devices;
 - Some teams may need additional rules to authorize specific apps that don't apply generally to all other users.
 
@@ -62,8 +58,8 @@ Based on the above, Alice defines the pseudo-rules for the policy:
    - WHQL (3rd party kernel drivers)
    - Windows Store signed apps
 
-2. **"MEMCM works”** rules which include signer and hash rules for MEMCM components to properly function
-3. **Allow Managed Installer** (MEMCM configured as a managed installer)
+2. **"MEMCM works”** rules which include signer and hash rules for Configuration Manager components to properly function
+3. **Allow Managed Installer** (Configuration Manager configured as a managed installer)
 4. **Allow Intelligent Security Graph (ISG)** (reputation-based authorization)
 5. **Admin-only path rules** for the following locations:
    - C:\Program Files\*
@@ -72,14 +68,14 @@ Based on the above, Alice defines the pseudo-rules for the policy:
 
 ## Create a custom base policy using an example WDAC base policy
 
-Having defined the "circle-of-trust", Alice is ready to generate the initial policy for Lamna's lightly managed devices. She decides to use MEMCM to create the initial base policy and then customize it to meet Lamna's needs.
+Having defined the "circle-of-trust", Alice is ready to generate the initial policy for Lamna's lightly managed devices. She decides to use Configuration Manager to create the initial base policy and then customize it to meet Lamna's needs.
 
 Alice follows these steps to complete this task:
 
 > [!NOTE]
-> If you do not use MEMCM or prefer to use a different [example Windows Defender Application Control base policy](example-wdac-base-policies.md) for your own policy, skip to step 2 and substitute the MEMCM policy path with your preferred example base policy.
+> If you do not use Configuration Manager or prefer to use a different [example Windows Defender Application Control base policy](example-wdac-base-policies.md) for your own policy, skip to step 2 and substitute the Configuration Manager policy path with your preferred example base policy.
 
-1. [Use MEMCM to create and deploy an audit policy](/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager) to a client device running Windows 10 version 1903 and above, or Windows 11.
+1. [Use Configuration Manager to create and deploy an audit policy](/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager) to a client device running Windows 10 version 1903 and above, or Windows 11.
 
 2. On the client device, run the following commands in an elevated Windows PowerShell session to initialize variables:
 
@@ -89,7 +85,7 @@ Alice follows these steps to complete this task:
       $MEMCMPolicy=$env:windir+"\CCM\DeviceGuard\MergedPolicy_Audit_ISG.xml"
       ```
 
-3. Copy the policy created by MEMCM to the desktop:
+3. Copy the policy created by Configuration Manager to the desktop:
 
       ```powershell
       cp $MEMCMPolicy $LamnaPolicy

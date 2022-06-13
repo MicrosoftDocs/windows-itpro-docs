@@ -46,13 +46,9 @@ Alice previously created a policy for the organization's lightly managed devices
 Alice identifies the following key factors to arrive at the "circle-of-trust" for Lamna's fully managed devices:
 
 - All clients are running Windows 10 version 1903 or above or Windows 11;
-- All clients are managed by Microsoft Endpoint Manager (MEM) either with Configuration Manager (MEMCM) standalone or hybrid mode with Intune;
-
-> [!NOTE]
-> Microsoft Endpoint Configuration Manager was previously known as System Center Configuration Manager. 
-
-- Most, but not all, apps are deployed using MEMCM;
-- Sometimes, IT staff install apps directly to these devices without using MEMCM;
+- All clients are managed by Microsoft Endpoint Manager either with Configuration Manager or with Intune;
+- Most, but not all, apps are deployed using Configuration Manager;
+- Sometimes, IT staff install apps directly to these devices without using Configuration Manager;
 - All users except IT are standard users on these devices.
 
 Alice's team develops a simple console application, called *LamnaITInstaller.exe*, which will become the authorized way for IT staff to install apps directly to devices. *LamnaITInstaller.exe* allows the IT pro to launch another process, such as an app installer. Alice will configure *LamnaITInstaller.exe* as an additional managed installer for WDAC and allows her to remove the need for filepath rules.
@@ -64,8 +60,8 @@ Based on the above, Alice defines the pseudo-rules for the policy:
    - WHQL (3rd party kernel drivers)
    - Windows Store signed apps
 
-2. **"MEMCM works”** rules that include signer and hash rules for MEMCM components to properly function
-3. **Allow Managed Installer** (MEMCM and *LamnaITInstaller.exe* configured as a managed installer)
+2. **"MEMCM works”** rules that include signer and hash rules for Configuration Manager components to properly function.
+3. **Allow Managed Installer** (Configuration Manager and *LamnaITInstaller.exe* configured as a managed installer)
 
 The critical differences between this set of pseudo-rules and those defined for Lamna's [lightly managed devices](create-wdac-policy-for-lightly-managed-devices.md#define-the-circle-of-trust-for-lightly-managed-devices) are:
 
@@ -74,14 +70,14 @@ The critical differences between this set of pseudo-rules and those defined for 
 
 ## Create a custom base policy using an example WDAC base policy
 
-Having defined the "circle-of-trust", Alice is ready to generate the initial policy for Lamna's fully-managed devices. She decides to use MEMCM to create the initial base policy and then customize it to meet Lamna's needs.
+Having defined the "circle-of-trust", Alice is ready to generate the initial policy for Lamna's fully-managed devices. She decides to use Configuration Manager to create the initial base policy and then customize it to meet Lamna's needs.
 
 Alice follows these steps to complete this task:
 
 > [!NOTE]
-> If you do not use MEMCM or prefer to use a different [example Windows Defender Application Control base policy](example-wdac-base-policies.md) for your own policy, skip to step 2 and substitute the MEMCM policy path with your preferred example base policy.
+> If you do not use Configuration Manager or prefer to use a different [example Windows Defender Application Control base policy](example-wdac-base-policies.md) for your own policy, skip to step 2 and substitute the Configuration Manager policy path with your preferred example base policy.
 
-1. [Use MEMCM to create and deploy an audit policy](/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager) to a client device running Windows 10 version 1903 or above, or Windows 11.
+1. [Use Configuration Manager to create and deploy an audit policy](/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager) to a client device running Windows 10 version 1903 or above, or Windows 11.
 
 2. On the client device, run the following commands in an elevated Windows PowerShell session to initialize variables:
 
@@ -91,7 +87,7 @@ Alice follows these steps to complete this task:
       $MEMCMPolicy=$env:windir+"\CCM\DeviceGuard\MergedPolicy_Audit_ISG.xml"
       ```
 
-3. Copy the policy created by MEMCM to the desktop:
+3. Copy the policy created by Configuration Manager to the desktop:
 
       ```powershell
       cp $MEMCMPolicy $LamnaPolicy
