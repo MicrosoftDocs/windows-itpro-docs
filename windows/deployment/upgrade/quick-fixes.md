@@ -4,13 +4,8 @@ ms.reviewer:
 manager: dougeby
 ms.author: aaroncz
 description: Learn how to quickly resolve many problems, which may come up during a Windows 10 upgrade.
-keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, ITPro
 ms.custom: seo-marvel-apr2020
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: deploy
-audience: itpro
 author: aczechowski
 ms.localizationpriority: medium
 ms.topic: article

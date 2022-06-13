@@ -3,10 +3,7 @@ title: Delivery Optimization reference
 ms.reviewer: 
 manager: dougeby
 description: This article provides a summary of references and descriptions for all of the Delivery Optimization settings.
-keywords: oms, operations management suite, wdav, updates, downloads, log analytics
 ms.prod: w10
-ms.mktglfcycl: deploy
-audience: itpro
 author: carmenf
 ms.localizationpriority: medium
 ms.author: carmenf
