@@ -166,7 +166,7 @@ For more than a decade, many organizations have used the domain join to their on
 - Users to sign in to their devices with their Active Directory work or school accounts. 
 Typically, organizations with an on-premises footprint rely on imaging methods to provision devices, and they often use or group policy (GP) to manage them.
 
-If your environment has an on-premises AD footprint and you also want benefit from the capabilities provided by Azure Active Directory, you can implement hybrid Azure AD joined devices. These are devices that are both, joined to your on-premises Active Directory and your Azure Active Directory.
+If your environment has an on-premises AD footprint and you also want benefit from the capabilities provided by Azure Active Directory, you can implement hybrid Azure AD-joined devices. These are devices that are both, joined to your on-premises Active Directory and your Azure Active Directory.
 
 ### Related topics
 [Azure AD Joined](#azure-ad-joined), [Azure AD Registered](#azure-ad-registered), [Hybrid Deployment](#hybrid-deployment)
@@ -252,7 +252,7 @@ The simplest way to enable authentication for on-premises directory objects in A
 ## Primary Refresh Token
 SSO relies on special tokens obtained for each of the types of applications above. These are in turn used to obtain access tokens to specific applications. In the traditional Windows Integrated authentication case using Kerberos, this token is a Kerberos TGT (ticket-granting ticket). For Azure AD and AD FS applications we call this a Primary Refresh Token (PRT). This is a [JSON Web Token](http://openid.net/specs/draft-jones-json-web-token-07.html) containing claims about both the user and the device.
 
-The PRT is initially obtained during Windows Logon (user sign-in/unlock) in a similar way the Kerberos TGT is obtained. This is true for both Azure AD joined and hybrid Azure AD joined devices. In personal devices registered with Azure AD, the PRT is initially obtained upon Add Work or School Account (in a personal device the account to unlock the device is not the work account but a consumer account e.g. hotmail.com, live.com, outlook.com, etc.).
+The PRT is initially obtained during Windows Logon (user sign-in/unlock) in a similar way the Kerberos TGT is obtained. This is true for both Azure AD joined and hybrid Azure AD-joined devices. In personal devices registered with Azure AD, the PRT is initially obtained upon Add Work or School Account (in a personal device the account to unlock the device is not the work account but a consumer account e.g. hotmail.com, live.com, outlook.com, etc.).
 
 The PRT is needed for SSO. Without it, the user will be prompted for credentials when accessing applications every time. Please also note that the PRT contains information about the device. This means that if you have any [device-based conditional access](/azure/active-directory/active-directory-conditional-access-policy-connected-applications) policy set on an application, without the PRT, access will be denied.
 

@@ -1,7 +1,6 @@
 ---
 title: Certificate authentication device enrollment
 description: This section provides an example of the mobile device enrollment protocol using certificate authentication policy.
-ms.assetid: 57DB3C9E-E4C9-4275-AAB5-01315F9D3910
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp

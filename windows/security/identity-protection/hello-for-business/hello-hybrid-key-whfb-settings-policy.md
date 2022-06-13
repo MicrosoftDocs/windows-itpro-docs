@@ -34,7 +34,7 @@ Alternatively, you can create copy the .ADMX and .ADML files from a Windows 10 C
 
 Domain controllers of Windows Hello for Business deployments need one Group Policy setting, which enables automatic certificate enrollment for the newly create domain controller authentication certificate. This policy setting ensures domain controllers (new and existing) automatically request and renew the correct domain controller certificate.  
 
-Hybrid Azure AD joined devices needs one Group Policy setting:
+Hybrid Azure AD-joined devices needs one Group Policy setting:
 * Enable Windows Hello for Business
 
 ### Configure Domain Controllers for Automatic Certificate Enrollment

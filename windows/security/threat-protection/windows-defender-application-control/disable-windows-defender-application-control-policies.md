@@ -27,22 +27,23 @@ ms.technology: windows-sec
 -   Windows Server 2016 and above
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+>Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
 This topic covers how to disable unsigned or signed WDAC policies.
 
 ## Disable unsigned Windows Defender Application Control policies
 
-There may come a time when an administrator wants to disable a WDAC policy. For unsigned WDAC policies, this process is simple. The method used to deploy the policy (such as Group Policy) must first be disabled, then simply delete the SIPolicy.p7b policy file from the following locations, and the WDAC policy will be disabled on the next computer restart:
+There may come a time when an administrator wants to disable a Windows Defender Application Control policy. For unsigned WDAC policies, this process is simple. The method used to deploy the policy (such as Group Policy) must first be disabled, then simply delete the SIPolicy.p7b policy file from the following locations, and the WDAC policy will be disabled on the next computer restart:
 
 -   &lt;EFI System Partition&gt;\\Microsoft\\Boot\\
 -   &lt;OS Volume&gt;\\Windows\\System32\\CodeIntegrity\\
 
-Note that as of the Windows 10 May 2019 Update (1903), WDAC allows multiple policies to be deployed to a device. To fully disable WDAC when multiple policies are in effect, you must first disable each method being used to deploy a policy. Then delete the {Policy GUID}.cip policy files found in the \CIPolicies\Active subfolder under each of the paths listed above in addition to any SIPolicy.p7b file found in the root directory.
+>[!NOTE]
+> As of the Windows 10 May 2019 Update (1903), Windows Defender Application Control allows multiple policies to be deployed to a device. To fully disable WDAC when multiple policies are in effect, you must first disable each method being used to deploy a policy. Then delete the {Policy GUID}.cip policy files found in the \CIPolicies\Active subfolder under each of the paths listed above in addition to any SIPolicy.p7b file found in the root directory.
 
 ## Disable signed Windows Defender Application Control policies within Windows
 
-Signed policies protect Windows from administrative manipulation as well as malware that has gained administrative-level access to the system. For this reason, signed WDAC policies are intentionally more difficult to remove than unsigned policies. They inherently protect themselves from modification or removal and therefore are difficult even for administrators to remove successfully. If the signed WDAC policy is manually enabled and copied to the CodeIntegrity folder, to remove the policy, you must complete the following steps.
+Signed policies protect Windows from administrative manipulation as well as malware that has gained administrative-level access to the system. For this reason, signed Windows Defender Application Control policies are intentionally more difficult to remove than unsigned policies. They inherently protect themselves from modification or removal and therefore are difficult even for administrators to remove successfully. If the signed WDAC policy is manually enabled and copied to the CodeIntegrity folder, to remove the policy, you must complete the following steps.
 
 > [!NOTE]
 > For reference, signed WDAC policies should be replaced and removed from the following locations:
@@ -67,7 +68,7 @@ Signed policies protect Windows from administrative manipulation as well as malw
 
 5.  Restart the client computer.
 
-If the signed WDAC policy has been deployed using by using Group Policy, you must complete the following steps:
+If the signed Windows Defender Application Control policy has been deployed using by using Group Policy, you must complete the following steps:
 
 1.  Replace the existing policy in the GPO with another signed policy that has the **6 Enabled: Unsigned System Integrity Policy** rule option enabled.
 
@@ -89,7 +90,7 @@ If the signed WDAC policy has been deployed using by using Group Policy, you mus
 
 ## Disable signed Windows Defender Application Control policies within the BIOS
 
-There may be a time when signed WDAC policies cause a boot failure. Because WDAC policies enforce kernel mode drivers, it is important that they be thoroughly tested on each software and hardware configuration before being enforced and signed. Signed WDAC policies are validated in the pre-boot sequence by using Secure Boot. When you disable the Secure Boot feature in the BIOS, and then delete the file from the following locations on the operating system disk, it allows the system to boot into Windows:
+There may be a time when signed Windows Defender Application Control policies cause a boot failure. Because WDAC policies enforce kernel mode drivers, it is important that they be thoroughly tested on each software and hardware configuration before being enforced and signed. Signed WDAC policies are validated in the pre-boot sequence by using Secure Boot. When you disable the Secure Boot feature in the BIOS, and then delete the file from the following locations on the operating system disk, it allows the system to boot into Windows:
 
 -   &lt;EFI System Partition&gt;\\Microsoft\\Boot\\
 -   &lt;OS Volume&gt;\\Windows\\System32\\CodeIntegrity\\

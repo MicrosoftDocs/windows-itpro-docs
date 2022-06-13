@@ -1,16 +1,14 @@
 ---
 title: What's new in Windows 10, version 1709
 description: New and updated features in Windows 10, version 1709 (also known as the Fall Creators Update).
-keywords: ["What's new in Windows 10", "Windows 10", "Fall Creators Update"]
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.reviewer: 
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.topic: article
+ROBOTS: NOINDEX
 ---
 
 # What's new in Windows 10, version 1709 for IT Pros
@@ -59,7 +57,7 @@ You can now register your Azure AD domains to the Windows Insider Program. For m
 
 ### Mobile Device Management (MDM)
 
-MDM has been expanded to include domain joined devices with Azure Active Directory registration. Group Policy can be used with Active Directory joined devices to trigger auto-enrollment to MDM. For more information, see [Enroll a Windows 10 device automatically using Group Policy](/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy).
+MDM has been expanded to include domain joined devices with Azure Active Directory registration. Group Policy can be used with Active Directory-joined devices to trigger auto-enrollment to MDM. For more information, see [Enroll a Windows 10 device automatically using Group Policy](/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy).
 
 Multiple new configuration items are also added. For more information, see [What's new in MDM enrollment and management](/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew1709).
 

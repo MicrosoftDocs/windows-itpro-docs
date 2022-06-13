@@ -1,17 +1,12 @@
 ---
 title: Create an Outbound Program or Service Rule (Windows)
 description: Use the Windows Defender Firewall with Advanced Security node in the Group Policy Management console to create firewall rules.
-ms.assetid: f71db4fb-0228-4df2-a95d-b9c056aa9311
 ms.reviewer: 
 ms.author: dansimp
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/07/2021

@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_Securitycenter
-description: Policy CSP - ADMX_Securitycenter
+description: Learn about Policy CSP - ADMX_Securitycenter.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -61,7 +61,9 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting specifies whether Security Center is turned on or off for computers that are joined to an Active Directory domain. When Security Center is turned on, it monitors essential security settings and notifies the user when the computer might be at risk. The Security Center Control Panel category view also contains a status section, where the user can get recommendations to help increase the computer's security. When Security Center isn't enabled on the domain, the notifications and the Security Center status section aren't displayed. 
+This policy setting specifies whether Security Center is turned on or off for computers that are joined to an Active Directory domain. When Security Center is turned on, it monitors essential security settings and notifies the user when the computer might be at risk. 
+
+The Security Center Control Panel category view also contains a status section, where the user can get recommendations to help increase the computer's security. When Security Center isn't enabled on the domain, the notifications and the Security Center status section aren't displayed. 
 
 Security Center can only be turned off for computers that are joined to a Windows domain. When a computer isn't joined to a Windows domain, the policy setting will have no effect.
 
@@ -90,3 +92,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

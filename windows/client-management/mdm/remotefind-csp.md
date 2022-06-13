@@ -1,7 +1,6 @@
 ---
 title: RemoteFind CSP
 description: The RemoteFind configuration service provider retrieves the location information for a particular device.
-ms.assetid: 2EB02824-65BF-4B40-A338-672D219AF5A0
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -190,13 +189,3 @@ Supported operation is Get.
 ## Related topics
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-
- 
-
-
-
-
-
-

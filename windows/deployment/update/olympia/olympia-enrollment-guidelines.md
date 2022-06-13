@@ -47,7 +47,7 @@ As part of Windows Insider Lab for Enterprise, you can upgrade to Windows client
 
 Choose one of the following two enrollment options:
 
-- To set up an AAD-registered device, [follow these steps](#enrollment-keep-current-edition). In this case, you log onto the device by using an existing (non-Olympia) account.
+- To set up an Azure Active Directory-registered device, [follow these steps](#enrollment-keep-current-edition). In this case, you log onto the device by using an existing (non-Olympia) account.
 
 - If you are running Windows client Pro, we recommend that you upgrade to Windows client Enterprise by following these steps to  [set up an Azure Active Directory-joined device](#enrollment-upgrade-to-enterprise). In this case, you will be able to log on to the device with your Olympia account.
 
