@@ -2,10 +2,7 @@
 title: What is Delivery Optimization?
 manager: dougeby
 description: This article provides information about Delivery Optimization, a peer-to-peer distribution method in Windows 10 and Windows 11.
-keywords: oms, operations management suite, wdav, updates, downloads, log analytics
 ms.prod: w10
-ms.mktglfcycl: deploy
-audience: itpro
 author: carmenf
 ms.localizationpriority: medium
 ms.author: carmenf

@@ -1,16 +1,11 @@
 ---
 title: Finalize operating system configuration for Windows 10 deployment
 description: This article provides a walk-through to finalize the configuration of your Windows 10 operating deployment.
-ms.assetid: 38b55fa8-e717-4689-bd43-8348751d493e
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-keywords: configure, deploy, upgrade
 ms.prod: w10
 ms.localizationpriority: medium
-ms.mktglfcycl: deploy
-ms.sitesec: library
-audience: itpro
 author: aczechowski
 ms.topic: article
 ms.custom: seo-marvel-apr2020

@@ -2,18 +2,12 @@
 title: Configure VDA for Windows 10/11 Subscription Activation
 ms.reviewer: 
 manager: dougeby
-ms.audience: itpro
 ms.author: aaroncz
 author: aczechowski
 description: Learn how to configure virtual machines (VMs) to enable Windows 10 Subscription Activation in a Windows Virtual Desktop Access (VDA) scenario.
-keywords: upgrade, update, task sequence, deploy
 ms.custom: seo-marvel-apr2020
 ms.prod: w10
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.sitesec: library
-ms.pagetype: mdt
-audience: itpro
 ms.topic: article
 ms.collection: M365-modern-desktop
 ---
