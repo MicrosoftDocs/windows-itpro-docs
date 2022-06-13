@@ -249,7 +249,7 @@ Alternatively you can use the following procedure to create an EAP Configuration
 
 After the MDM client automatically renews the WNS channel URI, the MDM client will immediately check-in with the MDM server. Henceforth, for every MDM client check-in, the MDM server should send a GET request for "ProviderID/Push/ChannelURI" to retrieve the latest channel URI and compare it with the existing channel URI; then update the channel URI if necessary.
 
-### User provisioning failure in Azure Active Directory joined Windows 10 and Windows 11 devices
+### User provisioning failure in Azure Active Directory-joined Windows 10 and Windows 11 devices
 
 In Azure AD joined Windows 10 and Windows 11, provisioning /.User resources fails when the user isn't logged in as an Azure AD user. If you attempt to join Azure AD from **Settings** &gt; **System** &gt; **About** user interface, ensure to sign out and sign in with Azure AD credentials to get your organizational configuration from your MDM server. This behavior is by design.
 
@@ -269,7 +269,7 @@ The DM agent for [push-button reset](/windows-hardware/manufacture/desktop/push-
 
 No. Only one MDM is allowed.
 
-### How do I set the maximum number of Azure Active Directory joined devices per user?
+### How do I set the maximum number of Azure Active Directory-joined devices per user?
 
 1. Sign in to the portal as tenant admin: https://portal.azure.com.
 2. Select Active Directory on the left pane.

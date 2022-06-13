@@ -31,7 +31,7 @@ Windows Autopilot self-deploying mode enables a zero touch device provisioning e
 
 This self-deploying capability removes the current need to have an end user interact by pressing the “Next” button during the deployment process. 
 
-You can utilize Windows Autopilot self-deploying mode to register the device to an AAD tenant, enroll in your organization’s MDM provider, and provision policies and applications, all with no user authentication or user interaction required. 
+You can utilize Windows Autopilot self-deploying mode to register the device to an Azure Active Directory tenant, enroll in your organization’s MDM provider, and provision policies and applications, all with no user authentication or user interaction required. 
 
 To learn more about Autopilot self-deploying mode and to see step-by-step instructions to perform such a deployment, [Windows Autopilot self-deploying mode](/windows/deployment/windows-autopilot/self-deploying). 
 
@@ -60,7 +60,7 @@ This also means you’ll see more links to other security apps within **Windows 
 
 #### Silent enforcement on fixed drives
 
-Through a Modern Device Management (MDM) policy, BitLocker can be enabled silently for standard Azure Active Directory (AAD) joined users. In Windows 10, version 1803 automatic BitLocker encryption was enabled for standard AAD users, but this still required modern hardware that passed the Hardware Security Test Interface (HSTI). This new functionality enables BitLocker via policy even on devices that don’t pass the HSTI. 
+Through a Modern Device Management (MDM) policy, BitLocker can be enabled silently for standard Azure Active Directory (AAD)-joined users. In Windows 10, version 1803 automatic BitLocker encryption was enabled for standard Azure AD users, but this still required modern hardware that passed the Hardware Security Test Interface (HSTI). This new functionality enables BitLocker via policy even on devices that don’t pass the HSTI. 
 
 This is an update to the [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp), which was introduced in Windows 10, version 1703, and leveraged by Intune and others. 
 
@@ -138,11 +138,11 @@ You can add specific rules for a WSL process in Windows Defender Firewall, just 
 
 We introduced new group policies and Modern Device Management settings to manage Microsoft Edge. The new policies include enabling and disabling full-screen mode, printing, favorites bar, and saving history; preventing certificate error overrides; configuring the Home button and startup options; setting the New Tab page and Home button URL, and managing extensions. Learn more about the [new Microsoft Edge policies](/microsoft-edge/deploy/change-history-for-microsoft-edge).
 
-### Windows Defender Credential Guard is supported by default on 10S devices that are AAD Joined
+### Windows Defender Credential Guard is supported by default on 10S devices that are Azure Active Directory-joined
 
 Windows Defender Credential Guard is a security service in Windows 10 built to protect Active Directory (AD) domain credentials so that they can't be stolen or misused by malware on a user's machine. It is designed to protect against well-known threats such as Pass-the-Hash and credential harvesting.
 
-Windows Defender Credential Guard has always been an optional feature, but Windows 10-S turns this functionality on by default when the machine has been Azure Active Directory joined. This provides an added level of security when connecting to domain resources not normally present on 10-S devices. Please note that Windows Defender Credential Guard is available only to S-Mode devices or Enterprise and Education Editions. 
+Windows Defender Credential Guard has always been an optional feature, but Windows 10-S turns this functionality on by default when the machine has been Azure Active Directory-joined. This provides an added level of security when connecting to domain resources not normally present on 10-S devices. Please note that Windows Defender Credential Guard is available only to S-Mode devices or Enterprise and Education Editions. 
 
 ### Windows 10 Pro S Mode requires a network connection
 

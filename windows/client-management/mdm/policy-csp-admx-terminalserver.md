@@ -2305,10 +2305,10 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to specify the type of Remote Desktop Services client access license (RDS CAL) that is required to connect to this RD Session Host server.  
 
-You can use this policy setting to select one of three licensing modes: Per User, Per Device, and AAD Per User.  
+You can use this policy setting to select one of three licensing modes: Per User, Per Device, and Azure Active Directory Per User.  
 - Per User licensing mode requires that each user account connecting to this RD Session Host server have an RDS Per User CAL issued from an RD Licensing server.  
 - Per Device licensing mode requires that each device connecting to this RD Session Host server have an RDS Per Device CAL issued from an RD Licensing server.  
-- AAD Per User licensing mode requires that each user account connecting to this RD Session Host server have a service plan that supports RDS licenses assigned in AAD.    
+- Azure AD Per User licensing mode requires that each user account connecting to this RD Session Host server have a service plan that supports RDS licenses assigned in Azure AD.    
 
 If you enable this policy setting, the Remote Desktop licensing mode that you specify is honored by the Remote Desktop license server and RD Session Host.  
 

@@ -658,10 +658,10 @@ Reserved for future use.
 Reserved for future use.
 
 <a href="" id="vpnv2-profilename-devicecompliance"></a>**VPNv2/**<em>ProfileName</em>**/DeviceCompliance**  
-Added in Windows 10, version 1607. Nodes under DeviceCompliance can be used to enable AAD-based Conditional Access for VPN.
+Added in Windows 10, version 1607. Nodes under DeviceCompliance can be used to enable Azure Active Directory-based Conditional Access for VPN.
 
 <a href="" id="vpnv2-profilename-devicecompliance-enabled"></a>**VPNv2/**<em>ProfileName</em>**/DeviceCompliance/Enabled**  
-Added in Windows 10, version 1607. Enables the Device Compliance flow from the client. If marked as True, the VPN Client will attempt to communicate with AAD to get a certificate to use for authentication. The VPN should be set up to use Certificate Auth and the VPN Server must trust the Server returned by Azure Active Directory (AAD).
+Added in Windows 10, version 1607. Enables the Device Compliance flow from the client. If marked as True, the VPN Client will attempt to communicate with Azure Active Directory to get a certificate to use for authentication. The VPN should be set up to use Certificate Auth and the VPN Server must trust the Server returned by Azure Active Directory (AAD).
 
 Value type is bool. Supported operations include Get, Add, Replace, and Delete.
 

@@ -211,7 +211,7 @@ For more information, see: [Windows Hello and FIDO2 Security Keys enable secure 
 
 Windows Defender Credential Guard is a security service in Windows 10 built to protect Active Directory (AD) domain credentials so that they can't be stolen or misused by malware on a user's machine. It's designed to protect against well-known threats such as Pass-the-Hash and credential harvesting.
 
-Windows Defender Credential Guard has always been an optional feature, but Windows 10 in S mode turns on this functionality by default when the machine has been Azure Active Directory joined. This feature provides an added level of security when connecting to domain resources not normally present on devices running Windows 10 in S mode.
+Windows Defender Credential Guard has always been an optional feature, but Windows 10 in S mode turns on this functionality by default when the machine has been Azure Active Directory-joined. This feature provides an added level of security when connecting to domain resources not normally present on devices running Windows 10 in S mode.
 
 > [!NOTE]
 > Windows Defender Credential Guard is available only to S mode devices or Enterprise and Education Editions.
@@ -469,7 +469,7 @@ Some of the other new CSPs are:
 
 For more information, see [What's new in mobile device enrollment and management](/windows/client-management/mdm/new-in-windows-mdm-enrollment-management).
 
-MDM has been expanded to include domain joined devices with Azure Active Directory registration. Group policy can be used with Active Directory joined devices to trigger auto-enrollment to MDM. For more information, see [Enroll a Windows 10 device automatically using Group Policy](/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy).
+MDM has been expanded to include domain joined devices with Azure Active Directory registration. Group policy can be used with Active Directory-joined devices to trigger auto-enrollment to MDM. For more information, see [Enroll a Windows 10 device automatically using Group Policy](/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy).
 
 Multiple new configuration items are also added. For more information, see [What's new in MDM enrollment and management](/windows/client-management/mdm/new-in-windows-mdm-enrollment-management).
 

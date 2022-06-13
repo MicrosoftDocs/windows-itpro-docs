@@ -22,7 +22,7 @@ ms.reviewer:
 - Windows 10
 - Windows 11
 
-Windows Hello for Business is a modern, two-factor credential that is the more secure alternative to passwords. Whether you are cloud or on-premises, Windows Hello for Business has a deployment option for you. For cloud deployments, you can use Windows Hello for Business with Azure Active Directory joined, Hybrid Azure Active Directory joined, or Azure Active Directory registered devices. Windows Hello for Business also works for domain joined devices.
+Windows Hello for Business is a modern, two-factor credential that is the more secure alternative to passwords. Whether you are cloud or on-premises, Windows Hello for Business has a deployment option for you. For cloud deployments, you can use Windows Hello for Business with Azure Active Directory-joined, Hybrid Azure Active Directory-joined, or Azure AD registered devices. Windows Hello for Business also works for domain joined devices.
 
 Watch this quick video where Pieter Wigleven gives a simple explanation of how Windows Hello for Business works and some of its supporting features.
 > [!VIDEO https://www.youtube.com/embed/G-GJuDWbBE8]

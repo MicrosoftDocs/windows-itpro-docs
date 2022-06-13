@@ -43,7 +43,7 @@ The following tables summarize various Windows 10 deployment scenarios. The scen
 |Scenario|Description|More information|
 |--- |--- |--- |
 |[Subscription Activation](#windows-10-subscription-activation)|Switch from Windows 10 Pro to Enterprise when a subscribed user signs in.|[Windows 10 Subscription Activation](/windows/deployment/windows-10-enterprise-subscription-activation)|
-|[AAD / MDM](#dynamic-provisioning)|The device is automatically joined to AAD and configured by MDM.|[Azure Active Directory integration with MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm)|
+|[AAD / MDM](#dynamic-provisioning)|The device is automatically joined to Azure Active Directory and configured by MDM.|[Azure Active Directory integration with MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm)|
 |[Provisioning packages](#dynamic-provisioning)|Using the Windows Imaging and Configuration Designer tool, create provisioning packages that can be applied to devices.|[Configure devices without MDM](/windows/configuration/configure-devices-without-mdm)|
 
 ### Traditional
