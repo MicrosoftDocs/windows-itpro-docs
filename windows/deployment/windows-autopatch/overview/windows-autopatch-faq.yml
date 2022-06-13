@@ -45,7 +45,7 @@ sections:
           Additional pre-requisites for devices managed by Configuration Manager: 
           - [Co-management](/prepare/windows-autopatch-prerequisites.md#co-management-requirements)
           - [A supported version of Configuration Manager](/mem/configmgr/core/servers/manage/updates#supported-versions)
-          - [Switch workloads for device configuration, Windows Update and Microsoft 365 Apps from Configuration Manager to Intune](/mem/configmgr/comanage/how-to-switch-workloads) (minimum Pilot Intune)
+          - [Switch workloads for device configuration, Windows Update and Microsoft 365 Apps from Configuration Manager to Intune](/mem/configmgr/comanage/how-to-switch-workloads) (minimum Pilot Intune. Pilot collection must contain the devices you want to register into Autopatch.)
       - question: What are the licensing requirements for Windows Autopatch?
         answer: |
           - Windows Autopatch is included with Window 10/11 Enterprise E3 or higher. For more information, see [More about licenses](../prepare/windows-autopatch-prerequisites.md#more-about-licenses).
