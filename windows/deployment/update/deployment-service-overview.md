@@ -3,7 +3,6 @@ title: Windows Update for Business deployment service
 description: Overview of deployment service to control approval, scheduling, and safeguarding of Windows updates
 ms.custom: seo-marvel-apr2020
 ms.prod: w10
-ms.mktglfcycl: manage
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz

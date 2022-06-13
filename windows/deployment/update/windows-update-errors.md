@@ -2,9 +2,6 @@
 title: Windows Update common errors and mitigation
 description: In this article, learn about some common issues you might experience with Windows Update, as well as steps to resolve them.
 ms.prod: w10
-ms.mktglfcycl: 
-audience: itpro
-ms.audience: itpro
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby

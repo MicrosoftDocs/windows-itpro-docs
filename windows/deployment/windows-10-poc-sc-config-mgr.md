@@ -6,7 +6,6 @@ ms.technology: windows
 ms.localizationpriority: medium
 ms.reviewer: 
 manager: dougeby
-ms.audience: itpro
 ms.author: aaroncz
 author: aczechowski
 ms.topic: tutorial

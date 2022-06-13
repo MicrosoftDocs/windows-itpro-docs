@@ -3,11 +3,9 @@ title: Windows as a service
 ms.prod: w10 
 ms.topic: landing-page
 ms.manager: dougeby
-audience: itpro
 author: aczechowski
 ms.author: aaroncz
 description: Discover the latest news articles, videos, and podcasts about Windows as a service. Find resources for using Windows as a service within your organization. 
-ms.audience: itpro
 ms.reviewer: 
 manager: dougeby
 ms.localizationpriority: high

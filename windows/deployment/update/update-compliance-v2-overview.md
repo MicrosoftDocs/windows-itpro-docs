@@ -4,9 +4,6 @@ ms.reviewer:
 manager: dougeby
 description: Overview of Update Compliance to explain what it's used for and the cloud services it relies on. 
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.pagetype: deploy
-audience: itpro
 author: mestew
 ms.author: mstewart
 ms.collection: M365-analytics

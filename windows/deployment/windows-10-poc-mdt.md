@@ -3,18 +3,12 @@ title: Step by step - Deploy Windows 10 in a test lab using MDT
 description: In this article, you'll learn how to deploy Windows 10 in a test lab using Microsoft Deployment Toolkit (MDT).
 ms.custom: seo-marvel-apr2020
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: deploy
-keywords: deployment, automate, tools, configure, mdt
 ms.localizationpriority: medium
 ms.date: 10/11/2017
 ms.reviewer: 
 manager: dougeby
-ms.audience: itpro
 ms.author: aaroncz
 author: aczechowski
-audience: itpro
 ms.topic: article
 ---
 
