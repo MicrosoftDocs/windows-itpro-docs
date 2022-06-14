@@ -47,7 +47,7 @@ The supported operations are Add, Delete, Get, and Replace.
 The user name of the test taking account.
 
 - To specify a domain account, use domain\\user.
-- To specify an AAD account, use username@tenant.com.
+- To specify an Azure Active Directory account, use username@tenant.com.
 - To specify a local account, use the username.
 
 The supported operations are Add, Delete, Get, and Replace.

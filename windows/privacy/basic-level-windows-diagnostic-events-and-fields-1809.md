@@ -9567,7 +9567,7 @@ The following fields are available:
 - **CV**  The correlation vector.
 - **GlobalEventCounter**  Counts the events at the global level for telemetry.
 - **PackageVersion**  The package version for currency tools.
-- **UnifiedInstallerDeviceAADJoinedHresult**  The result code after checking if device is AAD joined.
+- **UnifiedInstallerDeviceAADJoinedHresult**  The result code after checking if device is Azure Active Directoryjoined.
 - **UnifiedInstallerDeviceInDssPolicy**  Boolean indicating whether the device is found to be in a DSS policy.
 - **UnifiedInstallerDeviceInDssPolicyHresult**  The result code for checking whether the device is found to be in a DSS policy.
 - **UnifiedInstallerDeviceIsAADJoined**  Boolean indicating whether a device is Azure Active Directory-joined.
@@ -9652,7 +9652,7 @@ The following fields are available:
 
 ### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsServiceBlockedByNoDSSJoin
 
-This event is sent when the device is not joined to AAD. The data collected with this event is used to help keep Windows up to date and secure.
+This event is sent when the device is not joined to Azure Active Directory. The data collected with this event is used to help keep Windows up to date and secure.
 
 The following fields are available:
 

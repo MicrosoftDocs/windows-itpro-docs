@@ -4989,7 +4989,7 @@ Activity for deletion of a user account for devices set up for Shared PC mode as
 
 The following fields are available:
 
-- **accountType**  The type of account that was deleted. Example: AD, AAD, or Local
+- **accountType**  The type of account that was deleted. Example: AD, Azure Active Directory (AAD), or Local.
 - **deleteState**  Whether the attempted deletion of the user account was successful.
 - **userSid**  The security identifier of the account.
 - **wilActivity**  Windows Error Reporting data collected when there is a failure in deleting a user account with the Transient Account Manager. See [wilActivity](#wilactivity).

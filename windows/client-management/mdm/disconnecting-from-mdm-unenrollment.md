@@ -123,7 +123,7 @@ When the server initiates disconnection, all undergoing sessions for the enrollm
 <a href="" id="work-access"></a>
 ## Unenrollment from Work Access settings page
 
-If the user is enrolled into MDM using an Azure Active Directory (AAD Join or by adding a Microsoft work account), the MDM account will show up under the Work Access page. However, the **Disconnect** button is greyed out and not accessible. Users can remove that MDM account by removing the AAD association to the device.
+If the user is enrolled into MDM using an Azure Active Directory (AAD Join or by adding a Microsoft work account), the MDM account will show up under the Work Access page. However, the **Disconnect** button is greyed out and not accessible. Users can remove that MDM account by removing the Azure AD association to the device.
 
 You can only use the Work Access page to unenroll under the following conditions:
 

@@ -345,7 +345,7 @@ Value type is bool.
 <a href="" id="provider-providerid-forceaadtoken"></a>**Provider/*ProviderID*/ForceAadToken**
 The value type is integer/enum.
 
-The value is "1" and it means client should always send AAD device token during check-in/sync.
+The value is "1" and it means client should always send Azure Active Directory device token during check-in/sync.
 
 <a href="" id="provider-providerid-poll"></a>**Provider/*ProviderID*/Poll**  
 Optional. Polling schedules must use the DMClient CSP. The Registry paths previously associated with polling using the Registry CSP are now deprecated.
@@ -516,7 +516,7 @@ This node tracks the status of a Recovery request from the InitiateRecovery node
 1 - Recovery is in Process.  
 2 - Recovery has finished successfully.  
 3 - Recovery has failed to start because TPM is not available.  
-4 - Recovery has failed to start because AAD keys are not protected by the TPM.  
+4 - Recovery has failed to start because Azure Active Directory keys are not protected by the TPM.  
 5 - Recovery has failed to start because the MDM keys are already protected by the TPM.  
 6 - Recovery has failed to start because the TPM is not ready for attestation.  
 7 - Recovery has failed because the client cannot authenticate to the server.  
