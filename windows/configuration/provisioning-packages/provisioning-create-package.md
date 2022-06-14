@@ -146,8 +146,6 @@ For details on each specific setting, see [Windows Provisioning settings referen
 
 ## Learn more
 
-- Watch the video: [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
-
 - [How to bulk-enroll devices with On-premises Mobile Device Management in Microsoft Endpoint Configuration Manager](/configmgr/mdm/deploy-use/bulk-enroll-devices-on-premises-mdm)
 
 ## Related articles
