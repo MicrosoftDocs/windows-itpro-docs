@@ -78,10 +78,6 @@ On devices running Windows client, you can install [the Windows Configuration De
 
 **Next step**: [How to create a provisioning package](provisioning-create-package.md)
 
-## Learn more
-
--   Watch the video: [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
-
 ## Related articles
 
 - [Provisioning packages for Windows client](provisioning-packages.md)
