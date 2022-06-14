@@ -191,7 +191,7 @@ New features in [Windows Hello for Business](/windows/security/identity-protecti
 
 - For Windows desktops, users are able to reset a forgotten PIN through **Settings > Accounts > Sign-in options**. For more information, see [What if I forget my PIN?](/windows/security/identity-protection/hello-for-business/hello-feature-pin-reset).
 
-[Windows Hello for Business](/windows/security/identity-protection/hello-for-business/index) now supports FIDO 2.0 authentication for Azure AD Joined Windows 10 devices and has enhanced support for shared devices, as described in [Kiosk configuration](#kiosk-configuration).
+Windows Hello for Business now supports FIDO 2.0 authentication for Azure AD Joined Windows 10 devices and has enhanced support for shared devices, as described in [Kiosk configuration](#kiosk-configuration). 
 
 - Windows Hello is now password-less on S-mode.
 
