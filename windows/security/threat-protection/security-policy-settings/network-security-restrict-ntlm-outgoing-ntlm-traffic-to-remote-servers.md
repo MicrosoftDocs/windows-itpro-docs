@@ -25,6 +25,9 @@ ms.technology: windows-sec
 
 Describes the best practices, location, values, management aspects, and security considerations for the **Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers** security policy setting.
 
+
+>[!NOTE]
+>To learn more about configuring a server to be accessed remotely, check [Remote Desktop - Allow access to your PC](https://github.com/MicrosoftDocs/windowsserverdocs/edit/main/WindowsServerDocs/remote/remote-desktop-services/clients/remote-desktop-allow-access.md)
 ## Reference
 
 The **Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers** policy setting allows you to deny or audit outgoing NTLM traffic from a computer running Windows 7, Windows Server 2008, or later to any remote server running the Windows operating system.
