@@ -139,12 +139,6 @@ After you're done, click **Create**. It only takes a few seconds. When the packa
 
  **Next step**: [How to apply a provisioning package](provisioning-apply-package.md)   
 
-
-## Learn more
-
--   Watch the video: [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
-
- 
 ## Related articles
 
 - [Provisioning packages for Windows client](provisioning-packages.md)
