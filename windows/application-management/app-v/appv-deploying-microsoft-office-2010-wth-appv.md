@@ -76,26 +76,10 @@ The following table provides a full list of supported integration points for Off
 |Active X Controls:<br>- Groove.SiteClient<br>- PortalConnect.PersonalSite<br>- SharePoint.openDocuments<br>-  SharePoint.ExportDatabase<br>- SharePoint.SpreadSheetLauncher<br>- SharePoint.StssyncHander<br>- SharePoint.DragUploadCtl<br>- SharePoint.DragDownloadCtl<br>- Sharpoint.OpenXMLDocuments<br> - Sharepoint.ClipboardCtl<br>- WinProj.Activator<br>- Name.NameCtrl<br>- STSUPld.CopyCtl<br>- CommunicatorMeetingJoinAx.JoinManager<br>- LISTNET.Listnet<br>- OneDrive Pro Browser Helper|Active X Control. <br><br>For more information about ActiveX controls, see the [ActiveX Control API Reference](<https://msdn.microsoft.com/library/office/ms440037(v=office.14).aspx>).||
 |OneDrive Pro Icon Overlays|Windows explorer shell icon overlays when users look at folders OneDrive Pro folders||
 
-## Additional resources
-
-### Office 2013 App-V Packages Additional Resources
-
-* [Supported scenarios for deploying Microsoft Office as a sequenced App-V Package](https://support.microsoft.com/kb/2772509)
-
-### Office 2010 App-V Packages
-
-* [Microsoft Office 2010 Sequencing Kit for Microsoft Application Virtualization 5.0](https://www.microsoft.com/download/details.aspx?id=38399)
-* [Known issues when you create or use an App-V 5.0 Office 2010 package](https://support.microsoft.com/kb/2828619)
-* [How To Sequence Microsoft Office 2010 in Microsoft Application Virtualization 5.0](https://support.microsoft.com/kb/2830069)
-
 ### Connection Groups
 
 * [Managing Connection Groups](appv-managing-connection-groups.md)
-* [Connection groups on the App-V team blog](https://blogs.msdn.microsoft.com/gladiator/tag/connection-groups/)
 
 ### Dynamic Configuration
 
 * [About App-V Dynamic Configuration](appv-dynamic-configuration.md)
-
-
-
