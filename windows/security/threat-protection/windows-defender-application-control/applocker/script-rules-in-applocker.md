@@ -29,6 +29,7 @@ ms.technology: windows-sec
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
+
 This topic describes the file formats and available default rules for the script rule collection.
 
 AppLocker defines script rules to include only the following file formats:
@@ -46,6 +47,9 @@ The following table lists the default rules that are available for the script ru
 | Allow all users to run scripts in the Windows folder| (Default Rule) All scripts located in the Windows folder| Everyone | Path: %windir%\*| 
 | Allow all users to run scripts in the Program Files folder| (Default Rule) All scripts located in the Program Files folder|Everyone | Path: %programfiles%\*| 
  
+>[!NOTE]
+>Windows Defender Application Control cannot be used to block Powershell scripts. Applocker just forces Powershell scripts to be run in Constrained Language Mode. Also note that in cases where a PS1 script is "blocked", AppLocker generates an 8007 event - which literally states the script will be blocked. After which the script runs.
+
 ## Related topics
 
 - [Understanding AppLocker default rules](understanding-applocker-default-rules.md)
