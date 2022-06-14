@@ -3,8 +3,8 @@ title: Windows 10, version 20H2, connection endpoints for non-Enterprise edition
 description: Explains what Windows 10 endpoints are used in non-Enterprise editions. Specific to Windows 10, version 20H2.
 ms.prod: m365-security
 ms.localizationpriority: high
-author: gental-giant
-ms.author: v-hakima
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
