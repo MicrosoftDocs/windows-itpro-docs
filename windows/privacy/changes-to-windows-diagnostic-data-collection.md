@@ -81,7 +81,10 @@ The following provides information on the current configurations:
 
 ## New Windows diagnostic data processor configuration
 
-Enterprise customers have an option for controlling their Windows diagnostic data for their Azure Active Directory joined devices. This configuration option is supported on the following versions of Windows:
+> [!IMPORTANT]
+> There are some significant changes planned for the Windows diagnostic data processor configuration.  To learn more, [review this information](configure-windows-diagnostic-data-in-your-organization.md#significant-changes-coming-to-the-windows-diagnostic-data-processor-configuration).
+
+Enterprise customers have an option for controlling their Windows diagnostic data for their Azure Active Directory-joined devices. This configuration option is supported on the following versions of Windows:
 
 - Windows 11 Enterprise, Professional, and Education
 - Windows 10, Enterprise, Professional, and Education, version 1809 with at least the July 2021 update.

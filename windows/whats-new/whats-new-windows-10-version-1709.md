@@ -57,7 +57,7 @@ You can now register your Azure AD domains to the Windows Insider Program. For m
 
 ### Mobile Device Management (MDM)
 
-MDM has been expanded to include domain joined devices with Azure Active Directory registration. Group Policy can be used with Active Directory joined devices to trigger auto-enrollment to MDM. For more information, see [Enroll a Windows 10 device automatically using Group Policy](/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy).
+MDM has been expanded to include domain joined devices with Azure Active Directory registration. Group Policy can be used with Active Directory-joined devices to trigger auto-enrollment to MDM. For more information, see [Enroll a Windows 10 device automatically using Group Policy](/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy).
 
 Multiple new configuration items are also added. For more information, see [What's new in MDM enrollment and management](/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew1709).
 
@@ -93,7 +93,7 @@ Windows Defender Application Guard hardens a favorite attacker entry-point by is
 
 ### Windows Defender Exploit Guard
 
-Window Defender Exploit Guard provides intrusion prevention capabilities to reduce the attack and exploit surface of applications. Exploit Guard has many of the threat mitigations that were available in Enhanced Mitigation Experience Toolkit (EMET) toolkit, a deprecated security download. These mitigations are now built into Windows and configurable with Exploit Guard. These mitigations include [Exploit protection](/microsoft-365/security/defender-endpoint/enable-exploit-protection), [Attack surface reduction protection](/microsoft-365/security/defender-endpoint/evaluate-attack-surface-reduction), [Controlled folder access](/microsoft-365/security/defender-endpoint/evaluate-controlled-folder-access), and [Network protection](/microsoft-365/security/defender-endpoint/enable-network-protection).
+Window Defender Exploit Guard provides intrusion prevention capabilities to reduce the attack and exploit surface of applications. Exploit Guard has many of the threat mitigations that were available in Enhanced Mitigation Experience Toolkit (EMET) toolkit, a deprecated security download. These mitigations are now built into Windows and configurable with Exploit Guard. These mitigations include [Exploit protection](/microsoft-365/security/defender-endpoint/enable-exploit-protection), [Attack surface reduction protection](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction), [Controlled folder access](/microsoft-365/security/defender-endpoint/evaluate-controlled-folder-access), and [Network protection](/microsoft-365/security/defender-endpoint/enable-network-protection).
 
 
 ### Windows Defender Device Guard

@@ -150,7 +150,6 @@ Here is a list of CSPs supported on Windows 10 Enterprise:
 -   [DMClient CSP](/windows/client-management/mdm/dmclient-csp)
 -   [Email2 CSP](/windows/client-management/mdm/email2-csp)
 -   [EnterpriseAPN CSP](/windows/client-management/mdm/enterpriseapn-csp)
--   [EnterpriseAppManagement CSP](/windows/client-management/mdm/enterpriseappmanagement-csp)
 -   [EnterpriseAssignedAccess CSP](/windows/client-management/mdm/enterpriseassignedaccess-csp)
 -   [EnterpriseDesktopAppManagement CSP](/windows/client-management/mdm/enterprisedesktopappmanagement-csp)
 -   [EnterpriseExt CSP](/windows/client-management/mdm/enterpriseext-csp)

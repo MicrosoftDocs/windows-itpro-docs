@@ -189,7 +189,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Enables Dynamic Virtualization of supported shell extensions, browser helper objects, and ActiveX controls.
+This policy enables Dynamic Virtualization of supported shell extensions, browser helper objects, and ActiveX controls.
 
 <!--/Description-->
 
@@ -233,7 +233,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Enables automatic cleanup of appv packages that were added after Windows10 anniversary release.
+Enables automatic cleanup of App-v packages that were added after Windows 10 anniversary release.
 
 <!--/Description-->
 
@@ -277,7 +277,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Enables scripts defined in the package manifest of configuration files that should run.
+This policy enables scripts defined in the package manifest of configuration files that should run.
 
 <!--/Description-->
 
@@ -321,10 +321,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Enables a UX to display to the user when a publishing refresh is performed on the client.
+This policy enables a UX to display to the user when a publishing refresh is performed on the client.
 
 <!--/Description-->
-
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -367,7 +366,7 @@ ADMX Info:
 <!--Description-->
 Reporting Server URL: Displays the URL of reporting server.
 
-Reporting Time: When the client data should be reported to the server. Acceptable range is 0~23, corresponding to the 24 hours in a day. A good practice is, don't set this time to a busy hour, for example, 9AM.
+Reporting Time: When the client data should be reported to the server. Acceptable range is 0 ~ 23, corresponding to the 24 hours in a day. A good practice is, don't set this time to a busy hour, for example, 9AM.
 
 Delay reporting for the random minutes: The maximum minutes of random delay on top of the reporting time. For a busy system, the random delay will help reduce the server load.
 
@@ -419,7 +418,8 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Specifies the file paths relative to %userprofile% that don't roam with a user's profile. Example usage: /FILEEXCLUSIONLIST='desktop;my pictures'.
+
+This policy specifies the file paths relative to %userprofile% that do not roam with a user's profile. Example usage: /FILEEXCLUSIONLIST='desktop;my pictures'.
 
 <!--/Description-->
 
@@ -463,7 +463,8 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Specifies the registry paths that don't roam with a user profile. Example usage: /REGISTRYEXCLUSIONLIST=software\classes;software\clients.
+
+This policy specifies the registry paths that do not roam with a user profile. Example usage: /REGISTRYEXCLUSIONLIST=software\classes;software\clients.
 
 <!--/Description-->
 
@@ -507,7 +508,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Specifies how new packages should be loaded automatically by App-V on a specific computer.
+This policy specifies how new packages should be loaded automatically by App-V on a specific computer.
 
 <!--/Description-->
 
@@ -595,7 +596,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Specifies the location where symbolic links are created to the current version of a per-user published package. Shortcuts, file type associations, etc. are created pointing to this path. If empty, symbolic links aren't used during publishing. Example: %localappdata%\Microsoft\AppV\Client\Integration.
+
+This policy specifies the location where symbolic links are created to the current version of a per-user published package. Shortcuts, file type associations, etc. are created pointing to this path. If empty, symbolic links are not used during publishing. Example: %localappdata%\Microsoft\AppV\Client\Integration.
+
 
 <!--/Description-->
 
@@ -639,7 +642,8 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Specifies the location where symbolic links are created to the current version of a globally published package. Shortcuts, file type associations, etc. are created pointing to this path. If empty, symbolic links aren't used during publishing. Example: %allusersprofile%\Microsoft\AppV\Client\Integration.
+
+This policy specifies the location where symbolic links are created to the current version of a globally published package. Shortcuts, file type associations, etc. are created pointing to this path. If empty, symbolic links are not used during publishing. Example: %allusersprofile%\Microsoft\AppV\Client\Integration.
 
 <!--/Description-->
 
@@ -993,7 +997,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Specifies the path to a valid certificate in the certificate store.
+This policy specifies the path to a valid certificate in the certificate store.
 
 <!--/Description-->
 
@@ -1081,7 +1085,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Specifies the CLSID for a compatible implementation of the IAppvPackageLocationProvider interface.
+This policy specifies the CLSID for a compatible implementation of the AppvPackageLocationProvider interface.
 
 <!--/Description-->
 
@@ -1125,7 +1129,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Specifies directory where all new applications and updates will be installed.
+This policy specifies directory where all new applications and updates will be installed.
 
 <!--/Description-->
 
@@ -1169,7 +1173,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Overrides source location for downloading package content.
+This policy overrides source location for downloading package content.
 
 <!--/Description-->
 
@@ -1213,7 +1217,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Specifies the number of seconds between attempts to reestablish a dropped session.
+This policy specifies the number of seconds between attempts to reestablish a dropped session.
 
 <!--/Description-->
 
@@ -1257,7 +1261,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Specifies the number of times to retry a dropped session.
+This policy specifies the number of times to retry a dropped session.
 
 <!--/Description-->
 
@@ -1301,7 +1305,8 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Specifies that streamed package contents won't be saved to the local hard disk.
+
+This policy specifies that streamed package contents will be not be saved to the local hard disk.
 
 <!--/Description-->
 
@@ -1433,7 +1438,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Specifies a list of process paths (may contain wildcards) which are candidates for using virtual components (shell extensions, browser helper objects, etc.). Only processes whose full path matches one of these items can use virtual components.
+This policy specifies a list of process paths (may contain wildcards) which are candidates for using virtual components (shell extensions, browser helper objects, etc.). Only processes whose full path matches one of these items can use virtual components.
 
 <!--/Description-->
 

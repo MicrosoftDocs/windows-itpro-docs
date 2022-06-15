@@ -2,10 +2,7 @@
 title: Windows 10 - Features that have been removed
 description: In this article, learn about the features and functionality that has been removed or replaced in Windows 10.
 ms.prod: w10
-ms.mktglfcycl: plan
 ms.localizationpriority: medium
-ms.sitesec: library
-audience: itpro
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
