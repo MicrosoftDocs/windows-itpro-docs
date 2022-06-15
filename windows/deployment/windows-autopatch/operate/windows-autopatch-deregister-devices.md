@@ -1,7 +1,7 @@
 ---
 title: Deregister a device
 description:  This article explains how to deregister devices
-ms.date: 05/31/2022
+ms.date: 06/15/2022
 ms.prod: w11
 ms.technology: windows
 ms.topic: how-to
@@ -24,6 +24,9 @@ To avoid end-user disruption, device de-registration in Windows Autopatch only d
 1. In either **Ready** or **Not ready** tab, select the device(s) you want to deregister.
 1. Once a device or multiple devices are selected, select **Device actions**, then select **Deregister device**.
 
+> [!WARNING]
+> Removing devices from the Windows Autopatch Device Registration Azure AD group doesn't de-register devices from the Windows Autopatch service.
+
 ## Excluded devices
 
 When you deregister a device from the Windows Autopatch service, the device is flagged as "excluded" so Windows Autopatch doesn't try to re-register the device into the service again, since the de-registration command doesn't trigger device membership removal from the **Windows Autopatch Device Registration** Azure Active Directory group. 
@@ -35,9 +38,7 @@ If you want to re-register a device that was previously deregistered from Window
 
 ## Hiding unregistered devices
 
-You can hide unregistered devices you don't expect to be remediated anytime soon.
-
-**To hide unregistered devices:**
+You can hide unregistered devices you don't expect to be remediated anytime soon. To hide unregistered devices:
 
 1. Sign into the [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).
 1. Select **Windows Autopatch** in the left navigation menu.

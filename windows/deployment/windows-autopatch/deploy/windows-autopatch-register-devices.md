@@ -1,7 +1,7 @@
 ---
 title: Register your devices
 description:  This article details how to register devices in Autopatch
-ms.date: 05/31/2022
+ms.date: 06/15/2022
 ms.prod: w11
 ms.technology: windows
 ms.topic: how-to
@@ -27,10 +27,10 @@ Windows Autopatch can take over software update management of supported devices 
 
 ### About the use of an Azure AD group to register devices
 
-You must choose what devices to manage with Windows Autopatch by either adding them through direct membership or by nesting other Azure AD dynamic/assigned groups into the **Windows Autopatch Device Registration** Azure AD assigned group. Windows Autopatch automatically runs every hour to discover new devices added to this group. Once new devices are discovered, Windows Autopatch attempts to register these devices into its service.
+You must choose what devices to manage with Windows Autopatch by either adding them through direct membership or by nesting other Azure AD dynamic/assigned groups into the **Windows Autopatch Device Registration** Azure AD assigned group. Windows Autopatch automatically runs every hour to discover new devices added to this group. Once new devices are discovered, Windows Autopatch attempts to register these devices.
 
 > [!NOTE]
-> All devices that are intended to be managed by the Windows Autopatch service **must** be added into the **Windows Autopatch Device Registration** Azure AD assigned group. Devices can only be added to this group if they have an Azure AD device ID. Windows Autopatch scans the Azure AD group hourly to discover newly added devices to be registered.
+> Devices that are intended to be managed by the Windows Autopatch service **must** be added into the **Windows Autopatch Device Registration** Azure AD assigned group. Devices can only be added to this group if they have an Azure AD device ID. Windows Autopatch scans the Azure AD group hourly to discover newly added devices to be registered. You can also use the Discover devices button in either the Ready or Not ready tab to register devices ondemand.
 
 #### Supported scenarios when nesting other Azure AD groups
 
@@ -38,16 +38,19 @@ Windows Autopatch also supports the following Azure AD nested group scenarios:
 
 Azure AD groups synced up from:
 
-- On-premises Active Directory groups (Windows server type).
+- On-premises Active Directory groups (Windows Server AD).
 - [Configuration Manager collections](/mem/configmgr/core/clients/manage/collections/create-collections#bkmk_aadcollsync).
+
+> [!WARNING]
+> It is not recommended to sync Configuration Manager collections straight to the **Windows Autopatch Device Registration** Azure AD group. Use a different Azure AD when syncing Configuration Manager collections to Azure AD groups then you can nest this or these groups into the **Windows Autopatch Device Registration** Azure AD group.
 
 > [!IMPORTANT]
 > The **Windows Autopatch Device Registration** Azure AD group only supports one level of Azure AD nested groups.
 
 > [!TIP]
-> You can also use the **Discover Devices** button in either the Ready or Not ready tabs to discover devices from the Windows Autopatch Device Registration Azure AD group on demand.
+> You can also use the **Discover Devices** button in either the Ready or Not ready tab to discover devices from the Windows Autopatch Device Registration Azure AD group on demand.
 
-## Prerequisites
+## Prerequisites for device registration
 
 To be eligible for Windows Autopatch management, devices must meet a minimum set of required software-based prerequisites:
 
@@ -59,21 +62,20 @@ To be eligible for Windows Autopatch management, devices must meet a minimum set
             - Windows updates policies
             - Device configuration
             - Office Click-to-run
-- Last Intune device check-in completed within the last 28 days.  
+- Last Intune device check-in completed within the last 28 days.
 
-For more details on each prerequisite check, see the [Prerequisites](../prepare/windows-autopatch-prerequisites.md) article.
+See [How to switch Configuration Manager workloads to Intune](https://docs.microsoft.com/mem/configmgr/comanage/how-to-switch-workloads) for more information on how Configuration Manager workloads work.
+
+See [Prerequisites](../prepare/windows-autopatch-prerequisites.md) for more details.
 
 ## About the Ready and Not ready tabs
 
-Windows Autopatch introduces a new user interface to help IT admins manage devices and troubleshoot device readiness statuses seamlessly with actionable in-UI device readiness reports for unregistered devices or unhealthy devices.
-
-> [!IMPORTANT]
-> The **Not ready** tab will not be available during the first week of the public preview.
+Windows Autopatch introduces a new user interface to help IT admins detect and troubleshoot device readiness statuses seamlessly with actionable in-UI device readiness reports for unregistered devices or unhealthy devices.
 
 | Tab | Purpose |
 | ----- | ----- |
-| Ready tab | The purpose of the Ready tab is to show devices that were successfully registered to the Windows Autopatch service and that have met post-registration device health requirements. |
-| Not ready tab | The purpose of the Not ready tab is to show devices that didn't successfully register into the Windows Autopatch service, or didn't pass one of the post-registration health requirements. This tab is intended to help customers identify and remediate devices that don't meet either pre or post-registration device readiness checks.<p><p>Devices successfully registered and healthy don't appear in the Not ready tab. |
+| Ready | The purpose of the Ready tab is to show devices that were successfully registered to the Windows Autopatch service. |
+| Not ready | The purpose of the Not ready tab is to help you identify and remediate devices that don't meet the pre-requisite checks to register into the Windows Autopatch service. This tab only shows devices that didn't successfully register into the Windows Autopatch service. |
 
 ## Built-in roles required for device registration
 
@@ -94,7 +96,7 @@ For more information, see [Azure AD built-in roles](/azure/active-directory/role
 Registering your devices in Windows Autopatch does the following:
 
 1. Makes a record of devices in the service.
-2. Assign devices into the ring groups and other groups required for software updates management.
+2. Assign devices into the deployment ring groups and other groups required for software updates management.
 
 ## Steps to register devices
 
@@ -106,14 +108,17 @@ Registering your devices in Windows Autopatch does the following:
 4. Select the **Ready** tab, then select the **Windows Autopatch Device Registration** hyperlink. The Azure Active Directory group blade opens.
 5. Add either devices through direct membership or other Azure Active Directory dynamic or assigned groups as nested groups in the **Windows Autopatch Device Registration** group.
 
-Once devices or Azure AD groups containing devices are added to the **Windows Autopatch Device Registration** group, Windows Autopatch discovers these devices and runs device-level prerequisite checks to try to register them.
+> [!NOTE]
+> The **Windows Autopatch Device Registration** hyperlink shows up at the center of the Ready tab when there's no devices registered with the Windows Autopatch service. Once you have one or more devices registered with the Windows Autopatch service, the **Windows Autopatch Device registration** hyperlink is shown at the top of both Ready and Not ready tabs.
+
+Once devices or Azure AD groups containing devices are added to the **Windows Autopatch Device Registration** group, Windows Autopatch discovers these devices and runs software-based prerequisite checks to try to register them with its service.
 
 > [!IMPORTANT]
 > It might take up to an hour for a device to change its status from **Ready for User** to **Active** in the Ready tab during the public preview.
 
-## Other device lifecycle management scenarios
+## Additional device management lifecycle scenarios
 
-There are a few more device lifecycle management scenarios to consider when planning to register devices in Windows Autopatch.
+There's a few more device lifecycle management scenarios to consider when planning to register devices in Windows Autopatch.
 
 ### Device refresh
 
@@ -132,4 +137,4 @@ If you need to repair a device that was previously registered into the Windows A
 When one of these hardware changes occurs, Azure AD creates a new device ID record for that device, even if it's technically the same device.
 
 > [!IMPORTANT]
-> If a new Azure AD device ID is generated for a device that was previously registered into Windows Autopatch, even if it's the same device, the new Azure AD device ID must be added either through device direct membership or through nested Azure AD dynamic/assigned group into the **Windows Autopatch Device Registration** group. This process guarantees the newly generated Azure AD device ID is registered with Windows Autopatch and that the device continues to have its software updates managed by the service.
+> If a new Azure AD device ID is generated for a device that was previously registered into the Windows Autopatch service, even if it's technically same device, the new Azure AD device ID must be added either through device direct membership or through nested Azure AD dynamic/assigned group into the **Windows Autopatch Device Registration** Azure AD group. This process guarantees that the newly generated Azure AD device ID is registered with Windows Autopatch and that the device continues to have its software updates managed by the service.
