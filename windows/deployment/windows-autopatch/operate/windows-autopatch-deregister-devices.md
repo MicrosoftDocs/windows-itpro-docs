@@ -29,7 +29,7 @@ To avoid end-user disruption, device de-registration in Windows Autopatch only d
 
 ## Excluded devices
 
-When you deregister a device from the Windows Autopatch service, the device is flagged as "excluded" so Windows Autopatch doesn't try to reregister the device into the service again, since the deregistration command doesn't trigger device membership removal from the **Windows Autopatch Device Registration** Azure Active Directory group. 
+When you deregister a device from the Windows Autopatch service, the device is flagged as "excluded" so Windows Autopatch doesn't try to reregister the device into the service again, since the deregistration command doesn't trigger device membership removal from the **Windows Autopatch Device Registration** Azure Active Directory group.
 
 > [!IMPORTANT]
 > The Azure AD team doesn't recommend appending query statements to remove specific device from a dynamic query due to dynamic query performance issues.
@@ -38,7 +38,7 @@ If you want to reregister a device that was previously deregistered from Windows
 
 ## Hiding unregistered devices
 
-You can hide unregistered devices you don't expect to be remediated anytime soon. 
+You can hide unregistered devices you don't expect to be remediated anytime soon.
 
 **To hide unregistered devices:**
 
