@@ -8,7 +8,6 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
-ms.date: 11/30/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
