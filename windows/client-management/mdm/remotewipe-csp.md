@@ -35,9 +35,6 @@ RemoteWipe
 ----doWipePersistProvisionedData
 ----doWipeProtected
 ----doWipePersistUserData
-----doWipeCloud
-----doWipeCloudPersistUserData
-----doWipeCloudPersistProvisionedData
 ----AutomaticRedeployment
 --------doAutomaticRedeployment
 --------LastError
