@@ -27,6 +27,7 @@ The table below shows the applicability of Windows:
 The RemoteWipe configuration service provider can be used by mobile operators DM server or enterprise management server to remotely reset a device. The RemoteWipe configuration service provider can make the data stored in memory and hard disks difficult to recover if the device is remotely reset after being lost or stolen.
 
 The following example shows the RemoteWipe configuration service provider management object in tree format as used by both OMA DM and OMA Client Provisioning. Enterprise IT Professionals can update these settings by using the Exchange Server.
+
 ```
 ./Vendor/MSFT
 RemoteWipe
@@ -42,6 +43,7 @@ RemoteWipe
 --------LastError
 --------Status
 ```
+
 <a href="" id="dowipe"></a>**doWipe**  
 Exec on this node starts a remote reset of the device. A remote reset is equivalent to running "Reset this PC > Remove everything" from the Settings app, with **Clean Data** set to No and **Delete Files** set to Yes. The return status code indicates whether the device accepted the Exec command. If a doWipe reset is started and then interrupted, the PC will attempt to roll-back to a the pre-reset state. If the PC can't be rolled-back, the recovery environment will take no additional actions and the PC could be in an unusable state and Windows will have to be reinstalled.
 
