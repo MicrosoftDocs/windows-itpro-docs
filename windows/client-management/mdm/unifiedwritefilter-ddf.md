@@ -1,7 +1,6 @@
 ---
 title: UnifiedWriteFilter DDF File
 description: UnifiedWriteFilter DDF File
-ms.assetid: 23A7316E-A298-43F7-9407-A65155C8CEA6
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp

@@ -2,7 +2,6 @@
 title: Troubleshoot port exhaustion issues
 description: Learn how to troubleshoot port exhaustion issues. Port exhaustion occurs when all the ports on a machine are used.
 ms.prod: w10
-ms.sitesec: library
 ms.topic: troubleshooting
 author: dansimp
 ms.localizationpriority: medium

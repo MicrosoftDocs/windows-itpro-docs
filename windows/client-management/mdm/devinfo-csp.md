@@ -1,7 +1,6 @@
 ---
 title: DevInfo CSP
 description: Learn how the DevInfo configuration service provider handles the managed object that provides device information to the OMA DM server.
-ms.assetid: d3eb70db-1ce9-4c72-a13d-651137c1713c
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp

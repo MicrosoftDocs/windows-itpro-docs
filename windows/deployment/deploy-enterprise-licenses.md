@@ -1,16 +1,10 @@
 ---
 title: Deploy Windows 10/11 Enterprise licenses
 manager: dougeby
-ms.audience: itpro
 ms.author: aaroncz
 description: Steps to deploy Windows 10 Enterprise or Windows 11 Enterprise licenses for Windows 10/11 Enterprise E3 or E5 Subscription Activation, or for Windows 10/11 Enterprise E3 in CSP
-keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.sitesec: library
-ms.pagetype: mdt
-audience: itpro
 author: aczechowski
 ms.topic: article
 ms.collection: highpri
@@ -89,7 +83,7 @@ For more information about integrating on-premises AD DS domains with Azure AD, 
 
 ## Preparing for deployment: reviewing requirements
 
-Devices must be running Windows 10 Pro, version 1703, or later and be Azure Active Directory joined, or hybrid domain joined with Azure AD Connect. Customers who are federated with Azure Active Directory are also eligible. For more information, see [Review requirements on devices](#review-requirements-on-devices), later in this topic.
+Devices must be running Windows 10 Pro, version 1703, or later and be Azure Active Directory-joined, or hybrid domain joined with Azure AD Connect. Customers who are federated with Azure Active Directory are also eligible. For more information, see [Review requirements on devices](#review-requirements-on-devices), later in this topic.
 
 ## Assigning licenses to users
 
@@ -241,12 +235,12 @@ Use the following figures to help you troubleshoot when users experience these c
 
 ### Review requirements on devices
 
-Devices must be running Windows 10 Pro, version 1703 (or later), and be Azure Active Directory joined, or hybrid domain joined with Azure AD Connect. Customers who are federated with Azure Active Directory are also eligible. You can use the following procedures to review whether a particular device meets requirements.
+Devices must be running Windows 10 Pro, version 1703 (or later), and be Azure Active Directory-joined, or hybrid domain joined with Azure AD Connect. Customers who are federated with Azure Active Directory are also eligible. You can use the following procedures to review whether a particular device meets requirements.
 
-**To determine if a device is Azure Active Directory joined:**
+**To determine if a device is Azure Active Directory-joined:**
 
 1.  Open a command prompt and type **dsregcmd /status**.
-2.  Review the output under Device State. If the **AzureAdJoined** status is YES, the device is Azure Active Directory joined.
+2.  Review the output under Device State. If the **AzureAdJoined** status is YES, the device is Azure Active Directory-joined.
 
 **To determine the version of Windows 10:**
 

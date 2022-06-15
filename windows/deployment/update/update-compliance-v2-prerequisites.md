@@ -30,8 +30,8 @@ Before you begin the process of adding Update Compliance to your Azure subscript
 
 - An Azure subscription with [Azure Active Directory](/azure/active-directory/)
 - You must have either an Owner or Contributor [Azure role](/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-roles) as a minimum in order to add the Update Compliance solution.
-- Devices must be Azure Active Directory joined and meet the below OS, diagnostic, and endpoint access requirements
-  - Devices that are Workplace joined only (Azure AD registered) aren't supported with Update Compliance
+- Devices must be Azure Active Directory-joined and meet the below OS, diagnostic, and endpoint access requirements.
+- Devices that are Workplace joined only (Azure AD registered) aren't supported with Update Compliance.
 
 ### Operating systems and editions
 

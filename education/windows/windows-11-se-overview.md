@@ -41,6 +41,7 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 | Application | Supported version | App Type | Vendor |
 | --- | --- | --- | --- |
 |AirSecure	                            |8.0.0	|Win32  |AIR|
+|Remote Desktop client (MSRDC)          |1.2.3213.0 |Win32 |Microsoft| 
 |Brave Browser      	                |1.34.80|Win32	    |Brave|
 |Bulb Digital Portfolio              	|0.0.7.0|Store|Bulb|
 |Cisco Umbrella                      	|3.0.110.0	|Win32    |Cisco|
@@ -93,7 +94,7 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 | App type | Enabled |
 | --- | --- |
 | Apps that run in a browser | ✔️ Apps that run in a browser, like Progressive Web Apps (PWA) and Web apps, can run on Windows 11 SE without any changes or limitations. |
-| Apps that require installation | ❌ Apps that require an installation, including Microsoft Store apps and Win32 apps can't be installed. If students try to install these apps, the installation fails. <br/><br/>✔️ If there are specific installation-type of apps you want to enable, then work with Microsoft to get them enabled. For more information, see [Add your own apps](#add-your-own-apps) (in this article). |
+| Apps that require installation | ❌ Apps that require an installation, including Microsoft Store apps and Win32 apps can't be installed. If students try to install these apps, the installation fails. <br/><br/>✔️ If there are specific installation-type apps you want to enable, then work with Microsoft to get them enabled. For more information, see [Add your own apps](#add-your-own-apps) (in this article). |
 
 ### Add your own apps
 

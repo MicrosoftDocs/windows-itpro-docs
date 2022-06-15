@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_PeerToPeerCaching
-description: Policy CSP - ADMX_PeerToPeerCaching
+description: Learn about Policy CSP - ADMX_PeerToPeerCaching.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -13,6 +13,7 @@ manager: dansimp
 ---
 
 # Policy CSP - ADMX_PeerToPeerCaching
+
 >[!TIP]
 > These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 > 
@@ -90,9 +91,7 @@ This policy setting specifies whether BranchCache is enabled on client computers
 - Set BranchCache Hosted Cache mode
 - Configure Hosted Cache Servers
 
-Policy configuration
-
-Select one of the following options:
+For policy configuration, select one of the following options:
 
 - Not Configured: With this selection, BranchCache settings aren't applied to client computers by this policy. In the circumstance where client computers are domain members but you don't want to enable BranchCache on all client computers, you can specify Not Configured for this domain Group Policy setting, and then configure local computer policy to enable BranchCache on individual client computers. Because the domain Group Policy setting isn't configured, it won't over-write the enabled setting that you use on individual client computers where you want to enable BranchCache.
 - Enabled: With this selection, BranchCache is turned on for all client computers where the policy is applied. For example, if this policy is enabled in domain Group Policy, BranchCache is turned on for all domain member client computers to which the policy is applied.
@@ -146,9 +145,7 @@ This policy setting specifies whether BranchCache distributed cache mode is enab
 
 In distributed cache mode, client computers download content from BranchCache-enabled main office content servers, cache the content locally, and serve the content to other BranchCache distributed cache mode clients in the branch office.
 
-Policy configuration
-
-Select one of the following options:
+For policy configuration, select one of the following options:
 
 - Not Configured: With this selection, BranchCache settings aren't applied to client computers by this policy. In the circumstance where client computers are domain members but you don't want to enable BranchCache on all client computers, you can specify Not Configured for this domain Group Policy setting, and then configure local computer policy to enable BranchCache on individual client computers. Because the domain Group Policy setting isn't configured, it won't over-write the enabled setting that you use on individual client computers where you want to enable BranchCache.
 - Enabled: With this selection, BranchCache distributed cache mode is enabled for all client computers where the policy is applied. For example, if this policy is enabled in domain Group Policy, BranchCache distributed cache mode is turned on for all domain member client computers to which the policy is applied.
@@ -202,9 +199,7 @@ This policy setting specifies whether BranchCache hosted cache mode is enabled o
 
 When a client computer is configured as a hosted cache mode client, it's able to download cached content from a hosted cache server that is located at the branch office. In addition, when the hosted cache client obtains content from a content server, the client can upload the content to the hosted cache server for access by other hosted cache clients at the branch office.
 
-Policy configuration
-
-Select one of the following options:
+For policy configuration, select one of the following options:
 
 - Not Configured: With this selection, BranchCache settings aren't applied to client computers by this policy. In the circumstance where client computers are domain members but you don't want to enable BranchCache on all client computers, you can specify Not Configured for this domain Group Policy setting, and then configure local computer policy to enable BranchCache on individual client computers. Because the domain Group Policy setting isn't configured, it won't over-write the enabled setting that you use on individual client computers where you want to enable BranchCache.
 - Enabled: With this selection, BranchCache hosted cache mode is enabled for all client computers where the policy is applied. For example, if this policy is enabled in domain Group Policy, BranchCache hosted cache mode is turned on for all domain member client computers to which the policy is applied.
@@ -276,9 +271,7 @@ This policy setting can only be applied to client computers that are running at 
 
 If you disable, or don't configure this setting, a client won't attempt to discover hosted cache servers by service connection point.
 
-Policy configuration
-
-Select one of the following options:
+For policy configuration, select one of the following options:
 
 - Not Configured: With this selection, BranchCache settings aren't applied to client computers by this policy setting, and client computers don't perform hosted cache server discovery.
 - Enabled: With this selection, the policy setting is applied to client computers, which perform automatically hosted cache server discovery and which are configured as hosted cache mode clients.
@@ -329,13 +322,11 @@ This policy setting specifies whether client computers are configured to use hos
 
 If you enable this policy setting and specify valid computer names of hosted cache servers, hosted cache mode is enabled for all client computers to which the policy setting is applied. For this policy setting to take effect, you must also enable the "Turn on BranchCache" policy setting.
 
-This policy setting can only be applied to client computers that are running at least Windows 8. This policy has no effect on computers that are running Windows 7 or Windows Vista. Client computers to which this policy setting is applied, in addition to the "Set BranchCache Hosted Cache mode" policy setting, use the hosted cache servers that are specified in this policy setting and don't use the hosted cache server that is configured in the policy setting "Set BranchCache Hosted Cache Mode."
+This policy setting can only be applied to client computers that are running at least Windows 8. This policy has no effect on computers that are running Windows 7 or Windows Vista. Client computers to which this policy setting is applied, in addition to the "Set BranchCache Hosted Cache mode" policy setting, use the hosted cache servers that are specified in this policy setting and don't use the hosted cache server that is configured in the policy setting "Set BranchCache Hosted Cache Mode".
 
 If you don't configure this policy setting, or if you disable this policy setting, client computers that are configured with hosted cache mode still function correctly.
 
-Policy configuration
-
-Select one of the following options:
+For policy configuration, select one of the following options:
 
 - Not Configured: With this selection, BranchCache settings aren't applied to client computers by this policy setting.
 - Enabled: With this selection, the policy setting is applied to client computers, which are configured as hosted cache mode clients that use the hosted cache servers that you specify in "Hosted cache servers."
@@ -388,9 +379,7 @@ ADMX Info:
 <!--Description-->
 This policy setting is used only when you've deployed one or more BranchCache-enabled file servers at your main office. This policy setting specifies when client computers in branch offices start caching content from file servers based on the network latency - or delay - that occurs when the clients download content from the main office over a Wide Area Network (WAN) link. When you configure a value for this setting, which is the maximum round trip network latency allowed before caching begins, clients don't cache content until the network latency reaches the specified value; when network latency is greater than the value, clients begin caching content after they receive it from the file servers.
 
-Policy configuration
-
-Select one of the following options:
+For policy configuration, select one of the following options:
 
 - Not Configured: With this selection, BranchCache latency settings aren't applied to client computers by this policy. In the circumstance where client computers are domain members but you don't want to configure a BranchCache latency setting on all client computers, you can specify Not Configured for this domain Group Policy setting, and then configure local computer policy to enable BranchCache latency settings on individual client computers. Because the domain Group Policy setting isn't configured, it won't over-write the latency setting that you use on individual client computers.
 - Enabled: With this selection, the BranchCache maximum round trip latency setting is enabled for all client computers where the policy is applied. For example, if Configure BranchCache for network files is enabled in domain Group Policy, the BranchCache latency setting that you specify in the policy is turned on for all domain member client computers to which the policy is applied.
@@ -447,9 +436,7 @@ If you enable this policy setting, you can configure the percentage of total dis
 
 If you disable or don't configure this policy setting, the cache is set to 5 percent of the total disk space on the client computer.
 
-Policy configuration
-
-Select one of the following options:
+For policy configuration, select one of the following options:
 
 - Not Configured: With this selection, BranchCache client computer cache settings aren't applied to client computers by this policy. In the circumstance where client computers are domain members but you don't want to configure a BranchCache client computer cache setting on all client computers, you can specify Not Configured for this domain Group Policy setting, and then configure local computer policy to enable BranchCache client computer cache settings on individual client computers. Because the domain Group Policy setting isn't configured, it won't over-write the client computer cache setting that you use on individual client computers.
 - Enabled: With this selection, the BranchCache client computer cache setting is enabled for all client computers where the policy is applied. For example, if Set percentage of disk space used for client computer cache is enabled in domain Group Policy, the BranchCache client computer cache setting that you specify in the policy is turned on for all domain member client computers to which the policy is applied.
@@ -509,9 +496,7 @@ If you enable this policy setting, you can configure the age for segments in the
 
 If you disable or don't configure this policy setting, the age is set to 28 days.
 
-Policy configuration
-
-Select one of the following options:
+For policy configuration, select one of the following options:
 
 - Not Configured: With this selection, BranchCache client computer cache age settings aren't applied to client computers by this policy. In the circumstance where client computers are domain members but you don't want to configure a BranchCache client computer cache age setting on all client computers, you can specify Not Configured for this domain Group Policy setting, and then configure local computer policy to enable BranchCache client computer cache age settings on individual client computers. Because the domain Group Policy setting isn't configured, it won't over-write the client computer cache age setting that you use on individual client computers.
 - Enabled: With this selection, the BranchCache client computer cache age setting is enabled for all client computers where the policy is applied. For example, if this policy setting is enabled in domain Group Policy, the BranchCache client computer cache age that you specify in the policy is turned on for all domain member client computers to which the policy is applied.
@@ -568,9 +553,7 @@ If you enable this policy setting, all clients use the version of BranchCache th
 
 If you don't configure this setting, all clients will use the version of BranchCache that matches their operating system.
 
-Policy configuration
-
-Select one of the following options:
+For policy configuration, select one of the following options:
 
 - Not Configured: With this selection, this policy setting isn't applied to client computers, and the clients run the version of BranchCache that is included with their operating system.
 - Enabled: With this selection, this policy setting is applied to client computers based on the value of the option setting "Select from the following versions" that you specify.
@@ -600,3 +583,7 @@ ADMX Info:
 
 
 <!--/Policies-->
+
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

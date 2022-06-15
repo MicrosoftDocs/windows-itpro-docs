@@ -71,6 +71,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
+
 This policy setting allows you to manage whether Windows marks file attachments with information about their zone of origin (such as restricted, Internet, intranet, local). This feature requires NTFS in order to function correctly, and will fail without notice on FAT32. If the zone information is not preserved, Windows can't make proper risk assessments.
 
 If you enable this policy setting, Windows doesn't mark file attachments with their zone information.

@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_NCSI
-description: Policy CSP - ADMX_NCSI
+description: Learn about Policy CSP - ADMX_NCSI.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -13,6 +13,7 @@ manager: dansimp
 ---
 
 # Policy CSP - ADMX_NCSI
+
 >[!TIP]
 > These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 > 
@@ -79,10 +80,9 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting  enables you to specify the expected address of the host name used for the DNS probe. Successful resolution of the host name to this address indicates corporate connectivity.
+This policy setting enables you to specify the expected address of the host name used for the DNS probe. Successful resolution of the host name to this address indicates corporate connectivity.
 
 <!--/Description-->
-
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -165,7 +165,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting enables you to specify the list of IPv6 corporate site prefixes to monitor for corporate connectivity. Reachability of addresses with any of these prefixes indicates corporate connectivity.
+This policy setting enables you to specify the list of IPv6 corporate site prefixes to monitor for corporate connectivity. Reachability of addresses with any of the prefixes indicates corporate connectivity.
 
 <!--/Description-->
 
@@ -254,7 +254,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting enables you to specify the HTTPS URL of the corporate website that clients use to determine the current domain location (i.e. whether the computer is inside or outside the corporate network). Reachability of the URL destination indicates that the client location is inside corporate network; otherwise it is outside the network.
+This policy setting enables you to specify the HTTPS URL of the corporate website that clients use to determine the current domain location (that is, whether the computer is inside or outside the corporate network). Reachability of the URL destination indicates that the client location is inside corporate network; otherwise it is outside the network.
 
 <!--/Description-->
 
@@ -297,7 +297,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting enables you to specify DNS binding behavior. NCSI by default will restrict DNS lookups to the interface it is currently probing on. If you enable this setting, NCSI will allow the DNS lookups to happen on any interface.
+This policy setting enables you to specify DNS binding behavior. NCSI by default will restrict DNS lookups to the interface it's currently probing on. If you enable this setting, NCSI will allow the DNS lookups to happen on any interface.
 
 <!--/Description-->
 
@@ -359,3 +359,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

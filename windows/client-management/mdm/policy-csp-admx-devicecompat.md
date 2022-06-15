@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_DeviceCompat
-description: Policy CSP - ADMX_DeviceCompat
+description: Learn about Policy CSP - ADMX_DeviceCompat.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -106,7 +106,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Changes behavior of third-party drivers to work around incompatibilities introduced between OS versions.		
+Changes behavior of third-party drivers to work around incompatibilities introduced between OS versions.
 
 <!--/Description-->
 
@@ -121,3 +121,7 @@ ADMX Info:
 <!--/Policy-->
 
 <!--/Policies-->
+
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

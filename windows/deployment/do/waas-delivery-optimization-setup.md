@@ -3,10 +3,7 @@ title: Set up Delivery Optimization
 ms.reviewer: 
 manager: dougeby
 description: In this article, learn how to set up Delivery Optimization.
-keywords: oms, operations management suite, wdav, updates, downloads, log analytics
 ms.prod: w10
-ms.mktglfcycl: deploy
-audience: itpro
 author: carmenf
 ms.localizationpriority: medium
 ms.author: carmenf

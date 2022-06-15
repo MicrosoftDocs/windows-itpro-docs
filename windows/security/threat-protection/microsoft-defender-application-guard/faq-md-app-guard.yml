@@ -78,11 +78,9 @@ sections:
       - question: |
           What is the WDAGUtilityAccount local account?
         answer: |
-          WDAGUtilityAccount is part of Application Guard, beginning with Windows 10, version 1709 (Fall Creators Update). It remains disabled by default, unless Application Guard is enabled on your device. WDAGUtilityAccount is used to sign in to the Application Guard container as a standard user with a random password. It is NOT a malicious account. If *Run as a service* permissions are revoked for this account, you might see the following error:
+          WDAGUtilityAccount is part of Application Guard, beginning with Windows 10, version 1709 (Fall Creators Update). It remains disabled by default, unless Application Guard is enabled on your device. WDAGUtilityAccount is used to sign in to the Application Guard container as a standard user with a random password. It is NOT a malicious account. It requires *Logon as a service* permissions to be able to function correctly. If this permission is denied, you might see the following error:
           
           **Error: 0x80070569, Ext error: 0x00000001; RDP: Error: 0x00000000, Ext error: 0x00000000 Location: 0x00000000**
-          
-          We recommend that you don't modify this account.
           
       - question: |
           How do I trust a subdomain in my site list?

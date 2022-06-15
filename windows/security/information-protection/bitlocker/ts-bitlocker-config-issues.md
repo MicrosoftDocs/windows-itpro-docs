@@ -18,13 +18,13 @@ ms.custom: bitlocker
 
 # BitLocker configuration: known issues
 
-This article describes common issues that affect your BitLocker configuration and BitLocker's general functionality. This article also provides guidance to address these issues.
+This article describes common issues that affect your BitLocker's configuration and general functionality. This article also provides guidance to address these issues.
 
 ## BitLocker encryption is slower in Windows 10 and Windows 11
 
 In both Windows 11, Windows 10, and Windows 7, BitLocker runs in the background to encrypt drives. However, in Windows 11 and Windows 10, BitLocker is less aggressive about requesting resources. This behavior reduces the chance that BitLocker will affect the computer's performance.
 
-To compensate for these changes, BitLocker uses a new conversion model. This model, (referred to as Encrypt-On-Write), makes sure that any new disk writes on all client SKUs and any internal drives are always encrypted *as soon as you turn on BitLocker*.
+To compensate for these changes, BitLocker uses a new conversion model. This model, (referred to as Encrypt-On-Write), makes sure that any new disk writes on all client SKUs and that any internal drives are always encrypted *as soon as you turn on BitLocker*.
 
 > [!IMPORTANT]
 > To preserve backward compatibility, BitLocker uses the previous conversion model to encrypt removable drives.
@@ -41,7 +41,7 @@ After Windows 7 was released, several other areas of BitLocker were improved:
 
 - **New encryption algorithm, XTS-AES**. The new algorithm provides additional protection from a class of attacks on encrypted data that rely on manipulating cipher text to cause predictable changes in plain text.
 
-   By default, this algorithm complies with the Federal Information Processing Standards (FIPS). FIPS are United States Government standards that provide a benchmark for implementing cryptographic software.
+   By default, this algorithm complies with the Federal Information Processing Standards (FIPS). FIPS is a United States Government standard that provides a benchmark for implementing cryptographic software.
 
 - **Improved administration features**. You can manage BitLocker on PCs or other devices by using the following interfaces:
    -  BitLocker Wizard
@@ -90,12 +90,12 @@ This issue occurs regardless of any of the following variations in the environme
 - Whether the VMs are generation 1 or generation 2.
 - Whether the guest operating system is Windows Server 2019, 2016 or 2012 R2.
 
-In the domain controller Application log, the VSS event source records event ID 8229:
+In the domain controller application log, the VSS event source records event ID 8229:
 
 > ID: 8229  
 > Level: Warning  
 > ‎Source: VSS  
-> Message: A VSS writer has rejected an event with error 0x800423f4, The writer experienced a non-transient error. If the backup process is retried, the error is likely to reoccur.  
+> Message: A VSS writer has rejected an event with error 0x800423f4. The writer experienced a non-transient error. If the backup process is retried, the error is likely to reoccur.  
 >  
 > Changes that the writer made to the writer components while handling the event will not be available to the requester.  
 >  
