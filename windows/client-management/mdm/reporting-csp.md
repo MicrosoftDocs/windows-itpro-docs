@@ -1,7 +1,6 @@
 ---
 title: Reporting CSP
 description: The Reporting configuration service provider is used to retrieve Windows Information Protection (formerly known as Enterprise Data Protection) and security auditing logs.
-ms.assetid: 148441A6-D9E1-43D8-ADEE-FB62E85A39F7
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -14,6 +13,16 @@ ms.date: 06/26/2017
 
 # Reporting CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 The Reporting configuration service provider is used to retrieve Windows Information Protection (formerly known as Enterprise Data Protection) and security auditing logs. This CSP was added in Windows 10, version 1511.
 
@@ -36,7 +45,7 @@ Reporting
 ```
 
 <a href="" id="reporting"></a>**Reporting**  
-Root node.
+The root node for the reporting configuration service provider.
 
 <a href="" id="reporting-enterprisedataprotection"></a>**Reporting/EnterpriseDataProtection**  
 Interior node for retrieving the Windows Information Protection (formerly known as Enterprise Data Protection) logs.
@@ -62,37 +71,32 @@ Interior node for retrieving a specified number of logs from the StartTime. The 
 <a href="" id="logs"></a>**Logs**  
 Contains the reporting logs.
 
-Value type is XML.
-
-Supported operation is Get.
+- Value type is XML. 
+- Supported operation is Get.
 
 <a href="" id="starttime"></a>**StartTime**  
 Specifies the starting time for retrieving logs.
 
-Value type is string. Use ISO 8601 format.
-
-Supported operations are Get and Replace.
+- Value type is string. Use ISO 8601 format.
+- Supported operations are Get and Replace.
 
 <a href="" id="stoptime"></a>**StopTime**  
 Specifies the ending time for retrieving logs.
 
-Value type is string. Use ISO 8601 format.
-
-Supported operations are Get and Replace.
+- Value type is string. Use ISO 8601 format.
+- Supported operations are Get and Replace.
 
 <a href="" id="type"></a>**Type**  
-Added in Windows 10, version 1703. Specifies the type of logs to retrieve. You can use this policy to retrieve the WIP learning logs.
+Added in Windows 10, version 1703. Specifies the type of logs to retrieve. You can use this policy to retrieve the Windows Information Protection learning logs.
 
-Value type is integer.
-
-Supported operations are Get and Replace.
+- Value type is integer.
+- Supported operations are Get and Replace.
 
 <a href="" id="logcount"></a>**LogCount**  
 Specifies the number of logs to retrieve from the StartTime.
 
-Value type is int.
-
-Supported operations are Get and Replace.
+- Value type is int.
+- Supported operations are Get and Replace.
 
 ## Example
 
@@ -171,3 +175,7 @@ Retrieve a specified number of security auditing logs starting from the specifie
 </SyncML>
 ```
 -->
+
+## Related topics
+
+[Configuration service provider reference](configuration-service-provider-reference.md)

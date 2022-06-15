@@ -2,8 +2,6 @@
 title: Use Cortana to send an email to co-worker (Windows)
 description: A test scenario on how to use Cortana at work to send email to a co-worker.
 ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz

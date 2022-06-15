@@ -75,7 +75,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-Enabling this policy setting allows a user’s account on one computer to be associated with an online identity, such as Microsoft account or an Azure AD account. That account can then log on to a peer device (if the peer device is likewise configured) without the use of a Windows logon account (domain or local). This setup is not only beneficial, but required for Azure AD joined devices, where they are signed in with an online identity and are issued certificates by Azure AD. This policy may not be relevant for an *on-premises only* environment and might circumvent established security policies. However, it does not pose any threats in a hybrid environment where Azure AD is used as it relies on the user's online identity and Azure AD to authenticate. 
+Enabling this policy setting allows a user’s account on one computer to be associated with an online identity, such as Microsoft account or an Azure AD account. That account can then log on to a peer device (if the peer device is likewise configured) without the use of a Windows logon account (domain or local). This setup is not only beneficial, but required for Azure AD-joined devices, where they are signed in with an online identity and are issued certificates by Azure AD. This policy may not be relevant for an *on-premises only* environment and might circumvent established security policies. However, it does not pose any threats in a hybrid environment where Azure AD is used as it relies on the user's online identity and Azure AD to authenticate. 
 
 ### Countermeasure
 
