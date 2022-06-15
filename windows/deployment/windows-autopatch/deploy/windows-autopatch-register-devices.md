@@ -30,7 +30,7 @@ Windows Autopatch can take over software update management of supported devices 
 You must choose what devices to manage with Windows Autopatch by either adding them through direct membership or by nesting other Azure AD dynamic/assigned groups into the **Windows Autopatch Device Registration** Azure AD assigned group. Windows Autopatch automatically runs every hour to discover new devices added to this group. Once new devices are discovered, Windows Autopatch attempts to register these devices.
 
 > [!NOTE]
-> Devices that are intended to be managed by the Windows Autopatch service **must** be added into the **Windows Autopatch Device Registration** Azure AD assigned group. Devices can only be added to this group if they have an Azure AD device ID. Windows Autopatch scans the Azure AD group hourly to discover newly added devices to be registered. You can also use the Discover devices button in either the Ready or Not ready tab to register devices ondemand.
+> Devices that are intended to be managed by the Windows Autopatch service **must** be added into the **Windows Autopatch Device Registration** Azure AD assigned group. Devices can only be added to this group if they have an Azure AD device ID. Windows Autopatch scans the Azure AD group hourly to discover newly added devices to be registered. You can also use the **Discover devices** button in either the Ready or Not ready tab to register devices on demand.
 
 #### Supported scenarios when nesting other Azure AD groups
 
@@ -42,7 +42,7 @@ Azure AD groups synced up from:
 - [Configuration Manager collections](/mem/configmgr/core/clients/manage/collections/create-collections#bkmk_aadcollsync).
 
 > [!WARNING]
-> It is not recommended to sync Configuration Manager collections straight to the **Windows Autopatch Device Registration** Azure AD group. Use a different Azure AD when syncing Configuration Manager collections to Azure AD groups then you can nest this or these groups into the **Windows Autopatch Device Registration** Azure AD group.
+> It isn't recommended to sync Configuration Manager collections straight to the **Windows Autopatch Device Registration** Azure AD group. Use a different Azure AD when syncing Configuration Manager collections to Azure AD groups then you can nest this or these groups into the **Windows Autopatch Device Registration** Azure AD group.
 
 > [!IMPORTANT]
 > The **Windows Autopatch Device Registration** Azure AD group only supports one level of Azure AD nested groups.
@@ -64,7 +64,7 @@ To be eligible for Windows Autopatch management, devices must meet a minimum set
             - Office Click-to-run
 - Last Intune device check-in completed within the last 28 days.
 
-See [How to switch Configuration Manager workloads to Intune](https://docs.microsoft.com/mem/configmgr/comanage/how-to-switch-workloads) for more information on how Configuration Manager workloads work.
+For more information on how Configuration Manager workloads work, see [How to switch Configuration Manager workloads to Intune](/mem/configmgr/comanage/how-to-switch-workloads).
 
 See [Prerequisites](../prepare/windows-autopatch-prerequisites.md) for more details.
 
@@ -75,7 +75,7 @@ Windows Autopatch introduces a new user interface to help IT admins detect and t
 | Tab | Purpose |
 | ----- | ----- |
 | Ready | The purpose of the Ready tab is to show devices that were successfully registered to the Windows Autopatch service. |
-| Not ready | The purpose of the Not ready tab is to help you identify and remediate devices that don't meet the pre-requisite checks to register into the Windows Autopatch service. This tab only shows devices that didn't successfully register into the Windows Autopatch service. |
+| Not ready | The purpose of the Not ready tab is to help you identify and remediate devices that don't meet the pre-requisite checks to register into the Windows Autopatch service. This tab only shows devices that didn't successfully register into Windows Autopatch. |
 
 ## Built-in roles required for device registration
 
@@ -106,10 +106,10 @@ Registering your devices in Windows Autopatch does the following:
 2. Select **Windows Autopatch** from the left navigation menu.
 3. Select **Devices**.
 4. Select the **Ready** tab, then select the **Windows Autopatch Device Registration** hyperlink. The Azure Active Directory group blade opens.
-5. Add either devices through direct membership or other Azure Active Directory dynamic or assigned groups as nested groups in the **Windows Autopatch Device Registration** group.
+5. Add either devices through direct membership, or other Azure Active Directory dynamic or assigned groups as nested groups in the **Windows Autopatch Device Registration** group.
 
 > [!NOTE]
-> The **Windows Autopatch Device Registration** hyperlink shows up at the center of the Ready tab when there's no devices registered with the Windows Autopatch service. Once you have one or more devices registered with the Windows Autopatch service, the **Windows Autopatch Device registration** hyperlink is shown at the top of both Ready and Not ready tabs.
+> The **Windows Autopatch Device Registration** hyperlink is in the center of the Ready tab when there's no devices registered with the Windows Autopatch service. Once you have one or more devices registered with the Windows Autopatch service, the **Windows Autopatch Device registration** hyperlink is at the top of both Ready and Not ready tabs.
 
 Once devices or Azure AD groups containing devices are added to the **Windows Autopatch Device Registration** group, Windows Autopatch discovers these devices and runs software-based prerequisite checks to try to register them with its service.
 
