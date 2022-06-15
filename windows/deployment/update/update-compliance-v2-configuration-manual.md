@@ -4,9 +4,6 @@ ms.reviewer:
 manager: dougeby
 description: Manually configuring devices for Update Compliance (preview)
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.pagetype: deploy
-audience: itpro
 author: mestew
 ms.author: mstewart
 ms.localizationpriority: medium

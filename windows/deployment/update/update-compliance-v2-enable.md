@@ -4,9 +4,6 @@ ms.reviewer:
 manager: dougeby
 description: How to enable the Update Compliance through the Azure portal
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.pagetype: deploy
-audience: itpro
 author: mestew
 ms.author: mstewart
 ms.collection: M365-analytics
