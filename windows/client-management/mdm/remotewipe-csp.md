@@ -70,18 +70,6 @@ Supported operation is Exec.
 <a href="" id="doWipePersistUserData"></a>**doWipePersistUserData**  
 Added in Windows 10, version 1709. Exec on this node will perform a remote reset on the device, and persist user accounts and data. This setting is equivalent to selecting "Reset this PC > Keep my files" when manually starting a reset from the Settings app. The return status code shows whether the device accepted the Exec command.
 
-<a href="" id="doWipeCloud"></a>**DoWipeCloud**
-
-Added in Windows 11, version 22H2. Performs a DoWipe remote reset, but downloads the OS payload from Windows update instead of using the local PC’s Windows Component store. The payload downloaded from Microsoft update will be used to reset the PC to the same version of Windows as it was pre-reset.
-
-<a href="" id="doWipeCloudPersistUserData"></a>**DoWipeCloudPersistUserData**
-
-Added in Windows 11, version 22H2. Performs a DoWipe remote reset, but downloads the OS payload from Windows update instead of using the local PC’s Windows Component store. The payload downloaded from Microsoft update will be used to reset the PC to the same version of Windows as it was pre-reset.
-
-<a href="" id="doWipeCloudPersistProvisionedData"></a>**DoWipeCloudPersistProvisionedData**
-
-Added in Windows 11, version 22H2. Performs a DoWipe remote reset, but downloads the OS payload from Windows update instead of using the local PC’s Windows Component store. The payload downloaded from Microsoft update will be used to reset the PC to the same version of Windows as it was pre-reset.
-
 <a href="" id="automaticredeployment"></a>**AutomaticRedeployment**  
 Added in Windows 10, version 1809. Node for the Autopilot Reset operation.
 
