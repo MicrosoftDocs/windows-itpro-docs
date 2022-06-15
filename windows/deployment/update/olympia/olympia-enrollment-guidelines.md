@@ -5,11 +5,9 @@ ms.author: aaroncz
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-audience: itpro
 author: aczechowski
 ms.reviewer: 
 manager: dougeby
-keywords: insider, trial, enterprise, lab, corporation, test
 ms.custom: seo-marvel-apr2020
 ---
 

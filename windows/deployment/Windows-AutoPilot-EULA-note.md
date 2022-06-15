@@ -2,16 +2,11 @@
 title: Windows Autopilot EULA dismissal – important information
 description: A notice about EULA dismissal through Windows Autopilot
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: deploy
 ms.localizationpriority: medium
-ms.audience: itpro
 ms.date: 08/22/2017
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-audience: itpro
 ROBOTS: NOINDEX
 ms.topic: article
 ---

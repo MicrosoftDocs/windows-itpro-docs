@@ -4,9 +4,6 @@ ms.reviewer:
 manager: dougeby
 description: Downloading and using the Update Compliance (preview) Configuration Script
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.pagetype: deploy
-audience: itpro
 author: mestew
 ms.author: mstewart
 ms.localizationpriority: medium

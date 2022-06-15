@@ -1,16 +1,10 @@
 ---
 title: Windows 10 deployment scenarios and tools
 description: Learn about the tools you can use to deploy Windows 10 and related applications to your organization. Explore deployment scenarios.
-ms.assetid: 0d6cee1f-14c4-4b69-b29a-43b0b327b877
 manager: dougeby
-ms.audience: itpro
 ms.author: aaroncz
 author: aczechowski
-keywords: deploy, volume activation, BitLocker, recovery, install, installation, VAMT, MDT, USMT, WDS
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-audience: itpro
 ms.topic: article
 ms.collection: highpri
 ---
