@@ -43,14 +43,14 @@ RemoteWipe
 --------Status
 ```
 <a href="" id="dowipe"></a>**doWipe**  
-Specifies that a remote reset of the device should be started. A remote reset is equivalent to running "Reset this PC > Remove everything" from the Settings app, with **Clean Data** set to No and **Delete Files** set to Yes. The return status code indicates whether the device accepted the Exec command. If a doWipe reset is started and then interrupted, depending on how far the reset progressed, the PC can roll back to the pre-reset state.
+Exec on this node starts a remote reset of the device. A remote reset is equivalent to running "Reset this PC > Remove everything" from the Settings app, with **Clean Data** set to No and **Delete Files** set to Yes. The return status code indicates whether the device accepted the Exec command. If a doWipe reset is started and then interrupted, the PC will attempt to roll-back to a the pre-reset state. If the PC can't be rolled-back, the recovery environment will take no additional actions and the PC could be in an unusable state and Windows will have to be reinstalled.
 
 When used with OMA Client Provisioning, a dummy value of "1" should be included for this element.
 
 Supported operation is Exec.
 
 <a href="" id="dowipepersistprovisioneddata"></a>**doWipePersistProvisionedData**  
-Specifies that provisioning packages in the `%SystemDrive%\ProgramData\Microsoft\Provisioning` folder will be retained and then applied to the OS after the reset. 
+Exec on this node specifies that provisioning packages in the `%SystemDrive%\ProgramData\Microsoft\Provisioning` folder will be retained and then applied to the OS after the reset. 
 
 When used with OMA Client Provisioning, a dummy value of "1" should be included for this element.
 
@@ -59,7 +59,7 @@ Supported operation is Exec.
 The information that was backed up will be restored and applied to the device when it resumes. The return status code shows whether the device accepted the Exec command.
 
 <a href="" id="doWipeProtected"></a>**doWipeProtected**  
-Added in Windows 10, version 1703. Exec on this node performs a remote reset on the device and also fully cleans the internal drive. Drives that are cleaned with doWipeProtected aren't expected to meet industry or government standards for data cleaning. In some device configurations, this command may leave the device unable to boot. The return status code indicates whether the device accepted the Exec command.
+Added in Windows 10, version 1703. Exec on this node performs a remote reset on the device and also fully cleans the internal drive. Drives that are cleaned with doWipeProtected aren't expected to meet industry or government standards for data cleaning. In some device configurations, this command may leave the device unable to boot. The return status code indicates whether the device accepted the Exec command, but not whether the reset was successful.
 
 The doWipeProtected is functionally similar to doWipe. But unlike doWipe, which can be easily circumvented by simply power cycling the device, if a reset that uses doWipeProtected is interrupted, upon restart it will clean the PC's disk partitions. Because doWipeProtected will clean the partitions in case of failure or interruption, use doWipeProtected in lost/stolen device scenarios.
 
@@ -69,13 +69,13 @@ Supported operation is Exec.
 Added in Windows 10, version 1709. Exec on this node will perform a remote reset on the device, and persist user accounts and data. This setting is equivalent to selecting "Reset this PC > Keep my files" when manually starting a reset from the Settings app. The return status code shows whether the device accepted the Exec command.
 
 <a href="" id="doWipeCloud"></a>**DoWipeCloud**
-Performs a DoWipe remote reset, but downloads the OS payload from Windows Update instead of the local Windows recovery environment. 
+Added in Windows 11, version 22H2. Performs a DoWipe remote reset, but downloads the OS payload from Windows update instead of using the local PC’s Windows Component store. The payload downloaded from Microsoft update will be used to reset the PC to the same version of Windows as it was pre-reset.
 
 <a href="" id="doWipeCloudPersistUserData"></a>**DoWipeCloudPersistUserData**
-Performs a DoWipe remote reset, but downloads the OS payload from Windows Update instead of the local Windows recovery environment. 
+Added in Windows 11, version 22H2. Performs a DoWipe remote reset, but downloads the OS payload from Windows update instead of using the local PC’s Windows Component store. The payload downloaded from Microsoft update will be used to reset the PC to the same version of Windows as it was pre-reset.
 
 <a href="" id="doWipeCloudPersistProvisionedData"></a>**DoWipeCloudPersistProvisionedData**
-Performs a DoWipe remote reset, but downloads the OS payload from Windows Update instead of the local Windows recovery environment. 
+Added in Windows 11, version 22H2. Performs a DoWipe remote reset, but downloads the OS payload from Windows update instead of using the local PC’s Windows Component store. The payload downloaded from Microsoft update will be used to reset the PC to the same version of Windows as it was pre-reset.
 
 <a href="" id="automaticredeployment"></a>**AutomaticRedeployment**  
 Added in Windows 10, version 1809. Node for the Autopilot Reset operation.
