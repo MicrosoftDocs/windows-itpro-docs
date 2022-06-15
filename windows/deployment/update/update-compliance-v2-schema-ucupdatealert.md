@@ -4,9 +4,6 @@ ms.reviewer:
 manager: dougeby
 description: UCUpdateAlert schema
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.pagetype: deploy
-audience: itpro
 author: mestew
 ms.author: mstewart
 ms.collection: M365-analytics
