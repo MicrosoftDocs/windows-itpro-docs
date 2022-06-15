@@ -74,3 +74,9 @@ If we pause the release, a policy will be deployed which prevents devices from u
 
 > [!NOTE]
 > Windows Autopatch doesn't allow you to request that a release be paused or resumed during public preview.
+
+## Incidents and outages
+
+If devices in your tenant aren't meeting the [service level objective](../operate/windows-autopatch-wqu-overview.md#service-level-objective) for Windows quality updates, an incident will be raised, and the Windows Autopatch Service Engineering Team will work to bring the devices back into compliance.
+
+If you're experiencing other issues related to Windows quality updates, [submit a support request](../operate/windows-autopatch-support-request.md).

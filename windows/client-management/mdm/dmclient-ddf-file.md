@@ -1,7 +1,6 @@
 ---
 title: DMClient DDF file
 description: Learn about the OMA DM device description framework (DDF) for the DMClient configuration service provider (CSP).
-ms.assetid: A21B33AF-DB76-4059-8170-FADF2CB898A0
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -981,7 +980,7 @@ The XML below is for Windows 10, version 1803.
                   <Get />
                   <Replace />
                 </AccessType>
-                <Description>Send the device AAD token, if the user one can't be returned</Description>
+                <Description>Send the device Azure Active Directory token, if the user one can't be returned</Description>
                 <DFFormat>
                   <bool />
                 </DFFormat>

@@ -1,7 +1,6 @@
 ---
 title: PassportForWork CSP
 description: The PassportForWork configuration service provider is used to provision Windows Hello for Business (formerly Microsoft Passport for Work).
-ms.assetid: 3BAE4827-5497-41EE-B47F-5C071ADB2C51
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp

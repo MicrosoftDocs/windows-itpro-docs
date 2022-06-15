@@ -1,7 +1,6 @@
 ---
 title: Get offline license
 description: The Get offline license operation retrieves the offline license information of a product from the Microsoft Store for Business.
-ms.assetid: 08DAD813-CF4D-42D6-A783-994A03AEE051
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp

@@ -72,7 +72,7 @@ Learn more about Windows as a service and its value to your organization.
 
 [What's new in Windows 10 deployment](../deploy-whats-new.md)
 
-[How Microsoft IT deploys Windows 10](https://channel9.msdn.com/events/Ignite/2015/BRK3303)</font>
+[Windows 10 deployment scenarios](/windows/deployment/windows-10-deployment-scenarios)</font>
 
 ## Plan
 

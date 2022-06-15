@@ -14,8 +14,6 @@ manager: dansimp
 
 # Policy CSP - EnterpriseCloudPrint
 
-
-
 <hr/>
 
 <!--Policies-->
@@ -41,7 +39,6 @@ manager: dansimp
     <a href="#enterprisecloudprint-mopriadiscoveryresourceid">EnterpriseCloudPrint/MopriaDiscoveryResourceId</a>
   </dd>
 </dl>
-
 
 <hr/>
 
@@ -72,11 +69,11 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Specifies the authentication endpoint for acquiring OAuth tokens.  This policy must target ./User, otherwise it fails.
+Specifies the authentication endpoint for acquiring OAuth tokens. This policy must target ./User, otherwise it fails.
 
-The datatype is a string.
+Supported datatype is string.
 
-The default value is an empty string. Otherwise, the value should contain the URL of an endpoint. For example, "https:<span></span>//azuretenant.contoso.com/adfs".
+The default value is an empty string. Otherwise, the value should contain the URL of an endpoint. For example, ```https://azuretenant.contoso.com/adfs```.
 
 <!--/Description-->
 <!--/Policy-->
@@ -112,7 +109,7 @@ The default value is an empty string. Otherwise, the value should contain the UR
 <!--Description-->
 Specifies the GUID of a client application authorized to retrieve OAuth tokens from the OAuthAuthority. This policy must target ./User, otherwise it fails.
 
-The datatype is a string.
+Supported datatype is string.
 
 The default value is an empty string. Otherwise, the value should contain a GUID. For example, "E1CF1107-FF90-4228-93BF-26052DD2C714".
 
@@ -150,7 +147,7 @@ The default value is an empty string. Otherwise, the value should contain a GUID
 <!--Description-->
 Specifies the per-user resource URL for which access is requested by the enterprise cloud print client during OAuth authentication. This policy must target ./User, otherwise it fails.
 
-The datatype is a string. 
+Supported datatype is string. 
 
 The default value is an empty string. Otherwise, the value should contain a URL. For example, "http:<span></span>//MicrosoftEnterpriseCloudPrint/CloudPrint".
 
@@ -188,9 +185,9 @@ The default value is an empty string. Otherwise, the value should contain a URL.
 <!--Description-->
 Specifies the per-user end point for discovering cloud printers. This policy must target ./User, otherwise it fails.
 
-The datatype is a string.
+Supported datatype is string.
 
-The default value is an empty string. Otherwise, the value should contain the URL of an endpoint. For example, "https:<span></span>//cloudprinterdiscovery.contoso.com".
+The default value is an empty string. Otherwise, the value should contain the URL of an endpoint. For example, ```https://cloudprinterdiscovery.contoso.com```.
 
 <!--/Description-->
 <!--/Policy-->
@@ -226,7 +223,7 @@ The default value is an empty string. Otherwise, the value should contain the UR
 <!--Description-->
 Defines the maximum number of printers that should be queried from a discovery end point. This policy must target ./User, otherwise it fails.
 
-The datatype is an integer. 
+Supported datatype is integer. 
 
 <!--/Description-->
 <!--/Policy-->
@@ -262,9 +259,9 @@ The datatype is an integer.
 <!--Description-->
 Specifies the per-user resource URL for which access is requested by the Mopria discovery client during OAuth authentication. This policy must target ./User, otherwise it fails.
 
-The datatype is a string.
+Supported datatype is string.
 
-The default value is an empty string. Otherwise, the value should contain a URL. For example, "http:<span></span>//MopriaDiscoveryService/CloudPrint".
+The default value is an empty string. Otherwise, the value should contain a URL. For example, ```http://MopriaDiscoveryService/CloudPrint```.
 
 <!--/Description-->
 <!--/Policy-->
@@ -273,3 +270,6 @@ The default value is an empty string. Otherwise, the value should contain a URL.
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

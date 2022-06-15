@@ -95,8 +95,6 @@ We've [invested heavily in helping to protect against ransomware](https://blogs.
 
 **Endpoint detection and response** is also enhanced. New **detection** capabilities include:
 
-- [Use the threat intelligence API to create custom alerts](/windows/security/threat-protection/windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection) - Understand threat intelligence concepts, enable the threat intelligence application, and create custom threat intelligence alerts for your organization.
-
 - [Custom detection](/microsoft-365/security/defender-endpoint/overview-custom-detections). With custom detections, you can create custom queries to monitor events for any kind of behavior such as suspicious or emerging threats. You can use advanced hunting through the creation of custom detection rules.
 
 - Improvements on OS memory and kernel sensors to enable detection of attackers who are using in-memory and kernel-level attacks.
@@ -193,7 +191,7 @@ New features in [Windows Hello for Business](/windows/security/identity-protecti
 
 - For Windows desktops, users are able to reset a forgotten PIN through **Settings > Accounts > Sign-in options**. For more information, see [What if I forget my PIN?](/windows/security/identity-protection/hello-for-business/hello-feature-pin-reset).
 
-[Windows Hello for Business](/windows/security/identity-protection/hello-for-business/index) now supports FIDO 2.0 authentication for Azure AD Joined Windows 10 devices and has enhanced support for shared devices, as described in [Kiosk configuration](#kiosk-configuration).
+Windows Hello for Business now supports FIDO 2.0 authentication for Azure AD Joined Windows 10 devices and has enhanced support for shared devices, as described in [Kiosk configuration](#kiosk-configuration). 
 
 - Windows Hello is now password-less on S-mode.
 
@@ -213,7 +211,7 @@ For more information, see: [Windows Hello and FIDO2 Security Keys enable secure 
 
 Windows Defender Credential Guard is a security service in Windows 10 built to protect Active Directory (AD) domain credentials so that they can't be stolen or misused by malware on a user's machine. It's designed to protect against well-known threats such as Pass-the-Hash and credential harvesting.
 
-Windows Defender Credential Guard has always been an optional feature, but Windows 10 in S mode turns on this functionality by default when the machine has been Azure Active Directory joined. This feature provides an added level of security when connecting to domain resources not normally present on devices running Windows 10 in S mode.
+Windows Defender Credential Guard has always been an optional feature, but Windows 10 in S mode turns on this functionality by default when the machine has been Azure Active Directory-joined. This feature provides an added level of security when connecting to domain resources not normally present on devices running Windows 10 in S mode.
 
 > [!NOTE]
 > Windows Defender Credential Guard is available only to S mode devices or Enterprise and Education Editions.
@@ -471,7 +469,7 @@ Some of the other new CSPs are:
 
 For more information, see [What's new in mobile device enrollment and management](/windows/client-management/mdm/new-in-windows-mdm-enrollment-management).
 
-MDM has been expanded to include domain joined devices with Azure Active Directory registration. Group policy can be used with Active Directory joined devices to trigger auto-enrollment to MDM. For more information, see [Enroll a Windows 10 device automatically using Group Policy](/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy).
+MDM has been expanded to include domain joined devices with Azure Active Directory registration. Group policy can be used with Active Directory-joined devices to trigger auto-enrollment to MDM. For more information, see [Enroll a Windows 10 device automatically using Group Policy](/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy).
 
 Multiple new configuration items are also added. For more information, see [What's new in MDM enrollment and management](/windows/client-management/mdm/new-in-windows-mdm-enrollment-management).
 
