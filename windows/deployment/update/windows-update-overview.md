@@ -2,12 +2,9 @@
 title: Get started with Windows Update 
 description: An overview of learning resources for Windows Update, including documents on architecture, log files, and common errors.
 ms.prod: w10
-ms.mktglfcycl: 
-audience: itpro
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-ms.audience: itpro
 ms.date: 09/18/2018
 ms.topic: article
 ---

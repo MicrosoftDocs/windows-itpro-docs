@@ -3,11 +3,7 @@ title: Update Compliance Configuration Script
 ms.reviewer: 
 manager: dougeby
 description: Downloading and using the Update Compliance Configuration Script
-keywords: update compliance, oms, operations management suite, prerequisites, requirements, updates, upgrades, antivirus, antimalware, signature, log analytics, wdav
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.pagetype: deploy
-audience: itpro
 author: mestew
 ms.author: mstewart
 ms.localizationpriority: medium
