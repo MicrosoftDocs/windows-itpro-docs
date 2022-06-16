@@ -1,5 +1,5 @@
 ---
-title: Phishing sensors in Microsoft Defender SmartScreen (Windows)
+title: Phishing sensors
 description: Learn how Phishing sensors in Microsoft Defender SmartScreen helps protect Microsoft school or work passwords against phishing and unsafe usage on sites and apps.
 ms.prod: m365-security
 ms.mktglfcycl: explore
