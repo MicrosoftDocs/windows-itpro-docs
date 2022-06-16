@@ -280,7 +280,7 @@
    - name: Microsoft Defender SmartScreen overview
      href: threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md
      items:
-        - name: Phishing Sensors in Microsoft Defender SmartScreen
+        - name: Phishing sensors in Microsoft Defender SmartScreen (Windows)
         - href: threat-protection/microsoft-defender-smartscreen/brand-name-overview.md
    - name: Configure S/MIME for Windows
      href: identity-protection\configure-s-mime.md
