@@ -69,7 +69,7 @@ Take the following steps to create a configuration profile that will set require
         - **Value**: 16
     1. Add a setting to **Allow commercial data pipeline**; this policy is required for Update Compliance:
         - **Name**: Allow commercial data pipeline
-        - **Description**: onfigures Microsoft to be the processor of the Windows diagnostic data collected from an Azure Active Directory-joined device.
+        - **Description**: Configures Microsoft to be the processor of the Windows diagnostic data collected from an Azure Active Directory-joined device.
         - **OMA-URI**: `./Vendor/MSFT/Policy/Config/System/AllowCommercialDataPipeline`
         - **Data type**: Integer
         - **Value**: 1
