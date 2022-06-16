@@ -31,9 +31,3 @@ Window Autopatch deploys mobile device management (MDM) policies to configure de
 Group policy takes precedence over mobile device management (MDM) policies. For Windows quality updates, if any group policies are detected which modify the following hive in the registry, the device will be ineligible for management:
 
 `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\PolicyState`
-
-## Incidents and outages
-
-If devices in your tenant aren't meeting the [service level objective](../operate/windows-autopatch-wqu-overview.md#service-level-objective) for Windows quality updates, an incident will be raised, and the Windows Autopatch Service Engineering Team will work to bring the devices back into compliance.
-
-If you're experiencing other issues related to Windows quality updates, [submit a support request](../operate/windows-autopatch-support-request.md).

@@ -1,18 +1,13 @@
 ---
 description: Learn more about the Windows 10, version 1903 diagnostic data gathered at the basic level.
 title: Windows 10, version 1909 and Windows 10, version 1903 required diagnostic events and fields (Windows 10)
-keywords: privacy, telemetry
 ms.prod: m365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-audience: ITPro
 ms.date:
 ms.technology: privacy
 ---
@@ -80,7 +75,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Security.AppLockerCSP.CAppLockerCSP::Commit
 
-This event returns information about the Commit operation in the AppLocker Configuration Service Provider (CSP) to help keep Windows secure..
+This event returns information about the Commit operation in the AppLocker Configuration Service Provider (CSP) to help keep Windows secure.
 
 The following fields are available:
 

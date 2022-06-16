@@ -1,14 +1,10 @@
 ---
 title: Connection endpoints for Windows 11 Enterprise
 description: Explains what Windows 11 endpoints are used for, how to turn off traffic to them, and the impact. Specific to Windows 11.
-keywords: privacy, manage connections to Microsoft, Windows 11
 ms.prod: m365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
 ms.localizationpriority: high
-audience: ITPro
-author: gental-giant
-ms.author: v-hakima
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
