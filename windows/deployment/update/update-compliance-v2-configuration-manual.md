@@ -48,6 +48,7 @@ Each MDM Policy links to its documentation in the configuration service provider
 |**System/**[**ConfigureTelemetryOptInSettingsUx**](/windows/client-management/mdm/policy-csp-system#system-configuretelemetryoptinsettingsux) |Integer |1 - Disable Telemetry opt-in Settings | (in Windows 10, version 1803 and later) Determines whether users of the device can adjust diagnostic data to levels lower than the level defined by AllowTelemetry. We recommend that you disable this policy or the effective diagnostic data level on devices might not be sufficient. |
 |**System/**[**AllowDeviceNameInDiagnosticData**](/windows/client-management/mdm/policy-csp-system#system-allowdevicenameindiagnosticdata) |Integer | 1 - Allowed | Allows device name to be sent for Windows Diagnostic Data. If this policy is Not Configured or set to 0 (Disabled), Device Name will not be sent and won't be visible in Update Compliance, showing `#` instead. |
 | **System/**[**AllowUpdateComplianceProcessing**](/windows/client-management/mdm/policy-csp-system#system-allowUpdateComplianceProcessing) |Integer | 16 - Allowed | Enables data flow through Update Compliance's data processing system and indicates a device's explicit enrollment to the service. |
+| **System/**[AllowCommercialDataPipeline](/windows/client-management/mdm/policy-csp-system#system-allowcommercialdatapipeline) | Integer | 1 - Enabled | Configures Microsoft to be the processor of the Windows diagnostic data collected from an Azure Active Directory-joined device. |
 
 ### Group policies
 
@@ -60,6 +61,7 @@ All Group policies that need to be configured for Update Compliance are under **
 |**Configure telemetry opt-in setting user interface** | 1 - Disable diagnostic data opt-in Settings |(in Windows 10, version 1803 and later) Determines whether users of the device can adjust diagnostic data to levels lower than the level defined by AllowTelemetry. We recommend that you disable this policy, otherwise the effective diagnostic data level on devices might not be sufficient. |
 |**Allow device name to be sent in Windows diagnostic data** | 1 - Enabled | Allows device name to be sent for Windows Diagnostic Data. If this policy is Not Configured or Disabled, Device Name won't be sent and won't be visible in Update Compliance, showing `#` instead. |
 |**Allow Update Compliance processing** | 16 - Enabled | Enables data flow through Update Compliance's data processing system and indicates a device's explicit enrollment to the service. |
+| **Allow commercial data pipeline** | 1 - Enabled | Configures Microsoft to be the processor of the Windows diagnostic data collected from an Azure Active Directory-joined device. |
 
 ## Required endpoints
 
