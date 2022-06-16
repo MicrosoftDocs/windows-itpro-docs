@@ -1,12 +1,12 @@
 ---
-title: [Phishing sensors] overview (Windows)
-description: Learn how [Brand name] helps protect Microsoft school or work passwords against phishing and unsafe usage on sites and apps.
+title: Phishing sensors in Microsoft Defender SmartScreen (Windows)
+description: Learn how Phishing sensors in Microsoft Defender SmartScreen helps protect Microsoft school or work passwords against phishing and unsafe usage on sites and apps.
 ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: vmathavale
-ms.author: vmathavale
+author: v-mathavale
+ms.author: v-mathavale
 audience: IT Admin
 ms.localizationpriority: medium
 ms.date: 06/16/2022
@@ -16,7 +16,7 @@ ms.technology: windows-sec
 adobe-target: true
 ---
 
-# [Brand Name] 
+# Phishing Sensors in Microsoft Defender SmartScreen 
 
 **Applies to:**
 
@@ -28,7 +28,7 @@ adobe-target: true
 
 - Analyzing visited webpages and apps connecting to URLs, looking for indications of suspicious behavior, and checking the visited sites against a dynamic list of reported phishing sites. If [brand name] determines that a page the user has just typed their password into is suspicious or matches an entry in the list, it shows a warning to let the user know that the site may be malicious and offers the user the opportunity to change their password. 
 
-- Determining whether a user has reused their work or school password on a non-phishing site. If [brand name] determines a user has just reused their password, it shows a warning to let the user know that password reuse is dangerous and offers them the opportunity to change their password so that attackers cannot break into multiple accounts using one password. 
+- Determining whether a user has reused their work or school password on a non-phishing site. If [brand name] determines a user has just reused their password, it shows a warning to let the user know that password reuse is dangerous and offers them the opportunity to change their password so that attackers can't break into multiple accounts using one password. 
  
 - Observing whether a user has typed their password into a text editor app like Word, Notepad, Office apps, etc. If [brand name] determines that a user has stored their password in a text editor app, it shows a warning to let the user know it’s unsafe to store their plaintext password and recommends the users to delete their password from the file. 
 
@@ -52,41 +52,41 @@ adobe-target: true
 
 |Setting   |Description   |
 |---------|---------|
-|Administrative Templates\Windows Components\... (Service Enabled)|This policy setting determines whether [brand name] is in audit mode or off. Users do not see any notifications for any protection scenarios when [brand name] is in audit mode. When in audit mode [brand name] captures unsafe password entry events and sends telemetry through Microsoft Defender.<br><br>If you enable this policy setting or don’t configure this setting, [brand name] is enabled in audit mode and your users are unable to turn it off.<br><br> If you disable this policy setting, [brand name] is off. When off, [brand name] does not capture events, send telemetry, or notify users. Additionally, your users are unable to turn it on.|
-|Administrative Templates\Windows Components\... (Notify Malicious) |This policy setting determines whether [brand name] warns your users if they type their work or school password into one of the following malicious scenarios: into a reported phishing site, into a login URL with an invalid certificate, or into an application connecting to either a reported phishing site or a login URL with an invalid certificate.<br><br> If you enable this policy setting, [brand name] warns your users when they type their work or school password into one of the malicious scenarios described above and encourages them to change their password.<br><br> If you disable or don’t configure this policy setting, [brand name] will not warn your users if they type their work or school password into one of the malicious scenarios described above.|
-|Administrative Templates\Windows Components\... (Notify Password Reuse) | This policy setting determines whether [brand name] warns your users if they reuse their work or school password.<br><br> If you enable this policy setting, [brand name] warns users if they reuse their work or school password and encourages them to change it.<br><br> If you disable or don’t configure this policy setting, [brand name] will not warn users if they reuse their work or school password.|
-|Administrative Templates\Windows Components\... (Notify Unsafe App) |This policy setting determines whether [brand name] warns your users if they type their work or school passwords in text editor apps like OneNote, Word, Notepad, etc.<br><br> If you enable this policy setting, [brand name] warns your users if they store their password in text editor apps.<br><br> If you disable or don’t configure this policy setting, [brand name] will not warn users if they store their password in text editor apps. |
+|Administrative Templates\Windows Components\... (Service Enabled)|This policy setting determines whether [brand name] is in audit mode or off. Users don't see any notifications for any protection scenarios when [brand name] is in audit mode. When in audit mode, [brand name] captures unsafe password entry events and sends telemetry through Microsoft Defender.<br><br>If you enable this policy setting or don’t configure this setting, [brand name] is enabled in audit mode and your users are unable to turn it off.<br><br> If you disable this policy setting, [brand name] is off. When off, [brand name] doesn't capture events, send telemetry, or notify users. Additionally, your users are unable to turn it on.|
+|Administrative Templates\Windows Components\... (Notify Malicious) |This policy setting determines whether [brand name] warns your users if they type their work or school password into one of the following malicious scenarios: into a reported phishing site, into a login URL with an invalid certificate, or into an application connecting to either a reported phishing site or a sign-in URL with an invalid certificate.<br><br> If you enable this policy setting, [brand name] warns your users when they type their work or school password into one of the malicious scenarios described above and encourages them to change their password.<br><br> If you disable or don’t configure this policy setting, [brand name] won't warn your users if they type their work or school password into one of the malicious scenarios described above.|
+|Administrative Templates\Windows Components\... (Notify Password Reuse) | This policy setting determines whether [brand name] warns your users if they reuse their work or school password.<br><br> If you enable this policy setting, [brand name] warns users if they reuse their work or school password and encourages them to change it.<br><br> If you disable or don’t configure this policy setting, [brand name] won't warn users if they reuse their work or school password.|
+|Administrative Templates\Windows Components\... (Notify Unsafe App) |This policy setting determines whether [brand name] warns your users if they type their work or school passwords in text editor apps like OneNote, Word, Notepad, etc.<br><br> If you enable this policy setting, [brand name] warns your users if they store their password in text editor apps.<br><br> If you disable or don’t configure this policy setting, [brand name] won't warn users if they store their password in text editor apps. |
 
 ### MDM settings  
 If you manage your policies using Microsoft Intune, you’ll want to use these MDM policy settings. All settings support desktop computers running Windows 11, enrolled with Microsoft Intune. 
 
 |Setting   |Details   |
 |---------|---------|
-|ServiceEnabled |<li>**URI full path:** ./Vendor/MSFT/Policy/Config/… <li> **Data Type:** Integer <li> **Allowed values:**<ul><li> **0**: Turns off [brand name].<li> **1**: Turns on [brand name] in audit mode, which captures work or school password entry events and sends telemetry but does not show any notifications to your users. |
-|NotifyMalicious |<li>**URI full path:** ./Vendor/MSFT/Policy/Config/…<li> **Data type:** Integer <li>**Allowed values:**<ul><li> **0**: Turns off [brand name] notifications when users type their work or school password into one of the following malicious scenarios: a reported phishing site, a login URL with an invalid certificate, or into an application connecting to either a reported phishing site or a login URL with an invalid certificate.<li> **1**: Turns on [brand name] notifications when users type their work or school password into one of the previously described malicious scenarios and encourages them to change their password. |
+|ServiceEnabled |<li>**URI full path:** ./Vendor/MSFT/Policy/Config/… <li> **Data Type:** Integer <li> **Allowed values:**<ul><li> **0**: Turns off [brand name].<li> **1**: Turns on [brand name] in audit mode, which captures work or school password entry events and sends telemetry but doesn't show any notifications to your users. |
+|NotifyMalicious |<li>**URI full path:** ./Vendor/MSFT/Policy/Config/…<li> **Data type:** Integer <li>**Allowed values:**<ul><li> **0**: Turns off [brand name] notifications when users type their work or school password into one of the following malicious scenarios: a reported phishing site, a sign-in URL with an invalid certificate, or into an application connecting to either a reported phishing site or a sign in URL with an invalid certificate.<li> **1**: Turns on [brand name] notifications when users type their work or school password into one of the previously described malicious scenarios and encourages them to change their password. |
 |NotifyPasswordReuse  |<li> **URI full path:** ./Vendor/MSFT/Policy/Config/… <li> **Data type:** Integer <li> **Allowed values:** <ul><li> **0**: Turns off [brand name] notifications when users reuse their work or school password. <li> **1**: Turns on [brand name] notifications when users reuse their work or school password and encourages them to change their password. |
 |NotifyUnsafeApp  |<li>**URI full path:** ./Vendor/MSFT/Policy/Config/… <li> **Data type:** Integer <li> **Allowed values:** <ul><li> **0**: Turns off [brand name] notifications when users type their work or school passwords in text editor apps like OneNote, Word, Notepad, etc. <li> **1**: Turns on [brand name] notifications when users type their work or school passwords in text editor apps. |
 
 ### Recommended Group Policy and MDM settings for your organization 
-By default [brand name] is deployed on Windows 11 devices in audit mode, which means that users do not see any notifications for any protection scenarios. In audit mode, [brand name] only captures unsafe password entry events and sends telemetry through Microsoft Defender. Unfortunately, this means that users are not warned if they enter their work or school password into a phishing site, if they reuse their password, or if they unsafely store their password in apps. Because of this possibility, we strongly recommend that you set up [brand name] to warn users during all protection scenarios.  
+By default [brand name] is deployed on Windows 11 devices in audit mode, which means that users don't see any notifications for any protection scenarios. In audit mode, [brand name] only captures unsafe password entry events and sends telemetry through Microsoft Defender. Unfortunately, this means that users aren't warned if they enter their work or school password into a phishing site, if they reuse their password, or if they unsafely store their password in apps. Because of this possibility, we strongly recommend that you set up [brand name] to warn users during all protection scenarios.  
 
 To better help you protect your organization, we recommend turning on and using the following specific Microsoft Defender SmartScreen Group Policy and MDM settings:
 
 |Group Policy setting   |Recommendation  |
 |---------|---------|
 |Administrative Templates\Windows Components\... (Service Enabled) | **Enable**: [Brand name] is enabled in audit mode and your users are unable to turn it off. |
-|Administrative Templates\Windows Components\... (Notify Malicious) |**Enable**: [Brand name] warns your users if they type their work or school password into one of the following malicious scenarios and encourages them to change their password: into a reported phishing site, into a login URL with an invalid certificate, or into an application connecting to either a reported phishing site or a login URL with an invalid certificate. |
+|Administrative Templates\Windows Components\... (Notify Malicious) |**Enable**: [Brand name] warns your users if they type their work or school password into one of the following malicious scenarios and encourages them to change their password: into a reported phishing site, into a sign-in URL with an invalid certificate, or into an application connecting to either a reported phishing site or a sign-in URL with an invalid certificate. |
 |Administrative Templates\Windows Components\... (Password Reuse) |**Enable**: [Brand name] warns users if they reuse their work or school password and encourages them to change it. |
 |Administrative Templates\Windows Components\... (Notify Unsafe App) |**Enable**: [Brand name] warns your users if they store their password in text editor apps. |
   
 |MDM setting   |Recommendation   |
 |---------|---------|
-|ServiceEnabled |**1**: Turns on [brand name] in audit mode, which captures work or school password entry events and sends telemetry but does not show any notifications to your users. |
+|ServiceEnabled |**1**: Turns on [brand name] in audit mode, which captures work or school password entry events and sends telemetry but doesn't show any notifications to your users. |
 |NotifyMalicious |**1**: Turns on [brand name] notifications when users type their work or school password into one of the previously described malicious scenarios and encourages them to change their password. |
 |NotifyPasswordReuse |**1**: Turns on [brand name] notifications when users reuse their work or school password and encourages them to change their password. |
 |NotifyUnsafeApp |**1**: Turns on [brand name] notifications when users type their work or school passwords in text editor apps.|
 
-## Related topics
+## Related articles
 - [Microsoft Defender SmartScreen](microsoft-defender-smartscreen-overview.md)
 - [SmartScreen Frequently Asked Questions](https://fb.smartscreen.microsoft.com/smartscreenfaq.aspx)
 - [Threat protection](../index.md)
