@@ -5,11 +5,9 @@ ms.author: aaroncz
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-audience: itpro
 author: aczechowski
 ms.reviewer: 
 manager: dougeby
-keywords: insider, trial, enterprise, lab, corporation, test
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -55,7 +53,7 @@ Choose one of the following two enrollment options:
 
 ### Set up an Azure Active Directory-REGISTERED Windows client device
 
-This is the Bring Your Own Device (BYOD) method--your device will receive Olympia policies and features, but a new account will not be created. See [Set up Azure Active Directory registered Windows 10 devices](/azure/active-directory/device-management-azuread-registered-devices-windows10-setup) for additional information.
+This is the Bring Your Own Device (BYOD) method--your device will receive Olympia policies and features, but a new account will not be created. See [Azure AD register FAQ](/azure/active-directory/devices/faq) for additional information.
 
 1. Go to **Start > Settings > Accounts > Access work or school**. To see this setting, you need to have administrator rights to your device (see [local administrator](https://support.microsoft.com/windows/create-a-local-user-or-administrator-account-in-windows-20de74e0-ac7f-3502-a866-32915af2a34d)).
 
@@ -91,7 +89,7 @@ This is the Bring Your Own Device (BYOD) method--your device will receive Olympi
 
 ### Set up Azure Active Directory-JOINED Windows client device
 
-- This method will upgrade your Windows client Pro license to Enterprise and create a new account. See [Set up Azure Active Directory-joined devices](/azure/active-directory/device-management-azuread-joined-devices-setup) for more information.
+- This method will upgrade your Windows client Pro license to Enterprise and create a new account. See [Azure AD joined devices](/azure/active-directory/devices/concept-azure-ad-join) for more information.
 
     > [!NOTE]
     > Make sure that you save your Pro license key before upgrading to the Enterprise edition. If the device gets disconnected from Olympia, you can use the Pro key to reactivate the license manually in the unlikely event that the license fails to downgrade back to Pro automatically. To reactivate manually, see [Upgrade by manually entering a product key](../../upgrade/windows-10-edition-upgrades.md#upgrade-by-manually-entering-a-product-key).

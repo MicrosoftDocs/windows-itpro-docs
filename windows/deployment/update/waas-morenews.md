@@ -4,7 +4,6 @@ description: The latest news for Windows as a service with resources to help you
 ms.prod: w10
 ms.topic: article
 ms.manager: elizapo
-audience: itpro
 author: aczechowski
 ms.author: aaroncz
 ms.reviewer: 

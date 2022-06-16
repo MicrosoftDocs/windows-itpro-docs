@@ -2,7 +2,6 @@
 title: Deploy updates with Intune
 description: Deploy Windows client updates with Intune
 ms.prod: w10
-ms.mktglfcycl: manage
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz

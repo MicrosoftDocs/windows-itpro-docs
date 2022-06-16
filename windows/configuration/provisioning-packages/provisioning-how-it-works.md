@@ -141,12 +141,6 @@ When applying multiple provisioning packages to a device, the provisioning engin
 
 After a stand-alone provisioning package is applied to the device, the package is persisted in the `%ProgramData%\Microsoft\Provisioning` folder on the device. Provisioning packages can be removed by an administrator by using the **Add or remove a provisioning package** available under **Settings** > **Accounts** > **Access work or school**. 
 
-
-## Learn more
-
--   Watch the video: [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
-
-
 ## Related articles
 
 - [Provisioning packages for Windows client](provisioning-packages.md)
