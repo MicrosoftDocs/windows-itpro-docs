@@ -279,6 +279,9 @@
           href: threat-protection/windows-sandbox/windows-sandbox-configure-using-wsb-file.md
    - name: Microsoft Defender SmartScreen overview
      href: threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md
+     items:
+        - name: Brand name
+        - href: threat-protection/microsoft-defender-smartscreen/brand-name-overview.md
    - name: Configure S/MIME for Windows
      href: identity-protection\configure-s-mime.md
    - name: Windows Credential Theft Mitigation Guide Abstract
