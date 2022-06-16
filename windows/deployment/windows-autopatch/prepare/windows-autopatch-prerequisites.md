@@ -28,10 +28,13 @@ Getting started with Windows Autopatch has been designed to be easy. This articl
 
 Windows Autopatch is included with Window 10/11 Enterprise E3 or higher. The following are the other licenses that grant entitlement to Windows Autopatch:
 
-- Windows 10/11 Enterprise E3
-- Windows 10/11 Enterprise E5
-- Microsoft 365 E3
-- Microsoft 365 E5
+| License | ID | GUID number |
+| ----- | ----- | ------|
+| [Microsoft 365 E3](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | SPE_E3 | 05e9a617-0261-4cee-bb44-138d3ef5d965 |
+| [Microsoft 365 E5](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | SPE_E5 | 06ebc4ee-1bb5-47dd-8120-11324bc54e06 |
+| [Windows 10/11 Enterprise E3](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | WIN10_VDA_E3 | 6a0f6da5-0b87-4190-a6ae-9bb5a2b9546a |
+| [Windows 10/11 Enterprise E5](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | WIN10_VDA_E5 | 488ba24a-39a9-4473-8ee5-19291e71b002 |
+| [Windows 10/11 Enterprise VDA](/windows/deployment/deploy-enterprise-licenses#virtual-desktop-access-vda) | E3_VDA_only | d13ef257-988a-46f3-8fce-f47484dd4550 |
 
 The following Windows 64-bit editions are required for Windows Autopatch:
 

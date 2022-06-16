@@ -77,6 +77,7 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 |Pearson TestNav	                    |1.10.2.0	|Store    |Pearson|
 |Questar Secure Browser	                |4.8.3.376	|Win32    |Questar|
 |ReadAndWriteForWindows	                |12.0.60.0	 |Win32   |Texthelp Ltd.|
+|Remote Desktop client (MSRDC)          |1.2.3213.0 |Win32 |Microsoft| 
 |Remote Help	                        |3.8.0.12	 |Win32   |Microsoft|
 |Respondus Lockdown Browser         	|2.0.8.05	 |Win32   |Respondus|
 |Safe Exam Browser                   	|3.3.2.413	  |Win32  |Safe Exam Browser|
@@ -93,7 +94,7 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 | App type | Enabled |
 | --- | --- |
 | Apps that run in a browser | ✔️ Apps that run in a browser, like Progressive Web Apps (PWA) and Web apps, can run on Windows 11 SE without any changes or limitations. |
-| Apps that require installation | ❌ Apps that require an installation, including Microsoft Store apps and Win32 apps can't be installed. If students try to install these apps, the installation fails. <br/><br/>✔️ If there are specific installation-type of apps you want to enable, then work with Microsoft to get them enabled. For more information, see [Add your own apps](#add-your-own-apps) (in this article). |
+| Apps that require installation | ❌ Apps that require an installation, including Microsoft Store apps and Win32 apps can't be installed. If students try to install these apps, the installation fails. <br/><br/>✔️ If there are specific installation-type apps you want to enable, then work with Microsoft to get them enabled. For more information, see [Add your own apps](#add-your-own-apps) (in this article). |
 
 ### Add your own apps
 

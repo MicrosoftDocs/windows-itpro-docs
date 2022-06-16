@@ -93,7 +93,7 @@ Windows Defender Application Guard hardens a favorite attacker entry-point by is
 
 ### Windows Defender Exploit Guard
 
-Window Defender Exploit Guard provides intrusion prevention capabilities to reduce the attack and exploit surface of applications. Exploit Guard has many of the threat mitigations that were available in Enhanced Mitigation Experience Toolkit (EMET) toolkit, a deprecated security download. These mitigations are now built into Windows and configurable with Exploit Guard. These mitigations include [Exploit protection](/microsoft-365/security/defender-endpoint/enable-exploit-protection), [Attack surface reduction protection](/microsoft-365/security/defender-endpoint/evaluate-attack-surface-reduction), [Controlled folder access](/microsoft-365/security/defender-endpoint/evaluate-controlled-folder-access), and [Network protection](/microsoft-365/security/defender-endpoint/enable-network-protection).
+Window Defender Exploit Guard provides intrusion prevention capabilities to reduce the attack and exploit surface of applications. Exploit Guard has many of the threat mitigations that were available in Enhanced Mitigation Experience Toolkit (EMET) toolkit, a deprecated security download. These mitigations are now built into Windows and configurable with Exploit Guard. These mitigations include [Exploit protection](/microsoft-365/security/defender-endpoint/enable-exploit-protection), [Attack surface reduction protection](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction), [Controlled folder access](/microsoft-365/security/defender-endpoint/evaluate-controlled-folder-access), and [Network protection](/microsoft-365/security/defender-endpoint/enable-network-protection).
 
 
 ### Windows Defender Device Guard

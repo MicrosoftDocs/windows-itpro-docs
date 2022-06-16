@@ -3,11 +3,9 @@ title: Windows as a service
 ms.prod: w10 
 ms.topic: landing-page
 ms.manager: dougeby
-audience: itpro
 author: aczechowski
 ms.author: aaroncz
 description: Discover the latest news articles, videos, and podcasts about Windows as a service. Find resources for using Windows as a service within your organization. 
-ms.audience: itpro
 ms.reviewer: 
 manager: dougeby
 ms.localizationpriority: high
@@ -74,7 +72,7 @@ Learn more about Windows as a service and its value to your organization.
 
 [What's new in Windows 10 deployment](../deploy-whats-new.md)
 
-[How Microsoft IT deploys Windows 10](https://channel9.msdn.com/events/Ignite/2015/BRK3303)</font>
+[Windows 10 deployment scenarios](/windows/deployment/windows-10-deployment-scenarios)</font>
 
 ## Plan
 
