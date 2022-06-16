@@ -18,9 +18,6 @@ ms.topic: article
 - Windows 10
 - Windows 11
 
-> [!NOTE]
-> As of May 10, 2021, a new policy is required to use Update Compliance: "Allow Update Compliance Processing." For more details, see the Mobile Device Management policies and Group policies tables.
-
 There are a number of requirements to consider when manually configuring devices for Update Compliance. These can potentially change with newer versions of Windows client. The [Update Compliance Configuration Script](update-compliance-configuration-script.md) will be updated when any configuration requirements change so only a redeployment of the script will be required.
 
 The requirements are separated into different categories:
@@ -53,7 +50,7 @@ Each MDM Policy links to its documentation in the CSP hierarchy, providing its e
  
 ### Group policies
 
-All Group policies that need to be configured for Update Compliance are under **Computer Configuration>Administrative Templates>Windows Components\Data Collection and Preview Builds**. All of these policies must be in the *Enabled* state and set to the defined *Value* below.  
+All Group policies that need to be configured for Update Compliance are under **Computer Configuration>Policies>Administrative Templates>Windows Components\Data Collection and Preview Builds**. All of these policies must be in the *Enabled* state and set to the defined *Value* below.  
 
 | Policy | Value | Function |
 |---------------------------|-|-----------------------------------------------------------|

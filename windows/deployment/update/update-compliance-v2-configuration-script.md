@@ -17,8 +17,7 @@ ms.date: 06/16/2022
 ***(Applies to: Windows 11 & Windows 10)***
 
 > [!Important]
-> - This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
-> - A new policy is required to use Update Compliance: `AllowUpdateComplianceProcessing`. If you're already using Update Compliance and have configured your devices prior to May 10, 2021, you must rerun the script so the new policy can be configured.
+> This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
 
 The Update Compliance Configuration Script is the recommended method of configuring devices to send data to Microsoft for use with Update Compliance. The script configures the registry keys backing policies, ensures required services are running, and more. This script is a recommended complement to configuring the required policies documented in [Manually configured devices for Update Compliance](update-compliance-v2-configuration-manual.md), as it can provide feedback on whether there are any configuration issues outside of policies being configured.
 

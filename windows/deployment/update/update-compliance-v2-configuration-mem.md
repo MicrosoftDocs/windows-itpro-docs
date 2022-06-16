@@ -17,8 +17,8 @@ ms.date: 06/06/2022
 ***(Applies to: Windows 11 & Windows 10 managed by [Microsoft Endpoint Manager](/mem/endpoint-manager-overview))***
 
 > [!Important]
-> - This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
-> - As of May 10, 2021, a new policy is required to use Update Compliance: "Allow Update Compliance Processing." For more information, see the Mobile Device Management policies and Group policies tables.
+> This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
+
 
 This article is specifically targeted at configuring devices enrolled to [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) for Update Compliance, within Microsoft Endpoint Manager itself. Configuring devices for Update Compliance in Microsoft Endpoint Manager breaks down to the following steps:
 

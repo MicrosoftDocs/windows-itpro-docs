@@ -17,8 +17,7 @@ ms.date: 06/06/2022
 ***(Applies to: Windows 11 & Windows 10)***
 
 > [!Important]
-> - This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
-> - As of May 10, 2021, a new policy is required to use Update Compliance: "Allow Update Compliance Processing." For more information, see the Mobile Device Management policies and Group policies tables.
+> This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
 
 There are a number of requirements to consider when manually configuring devices for Update Compliance. These requirements can potentially change with newer versions of Windows client. The [Update Compliance configuration script](update-compliance-v2-configuration-script.md) will be updated when any configuration requirements change so only a redeployment of the script will be required.
 
