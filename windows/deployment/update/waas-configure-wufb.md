@@ -25,6 +25,8 @@ ms.topic: article
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
+> Note that Windows Server Operating System (outside of HCI) **does not** get Feature Updates from Windows Update, so only the quality update policies apply.
+ 
 You can use Group Policy or your mobile device management (MDM) service to configure Windows Update for Business settings for your devices. The sections in this topic provide the Group Policy and MDM policies for Windows 10, version 1511 and later, including Windows 11. The MDM policies use the OMA-URI setting from the [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider).  
 
 > [!IMPORTANT]
