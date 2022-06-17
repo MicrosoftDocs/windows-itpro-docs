@@ -560,6 +560,9 @@ Some properties to use in the MDT Production rules file are as follows:
 -   **USMTMigFiles(\*).** List of USMT templates (controlling what to backup and restore).
 -   **EventService.** Activates logging information to the MDT monitoring web service.
 
+>[!NOTE]
+>For more details about localization support, please check the [MDT sample guide](https://docs.microsoft.com/en-us/mem/configmgr/mdt/samples-guide#fully-automated-lti-deployment-for-a-refresh-computer-scenario). You can find a list of Language Codes [here](https://docs.microsoft.com/en-us/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a) and a list of Time Zone Index Values [here](https://docs.microsoft.com/en-us/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a).
+
 ### Optional deployment share configuration
 
 If your organization has a Microsoft Software Assurance agreement, you also can subscribe to the additional Microsoft Desktop Optimization Package (MDOP) license (at an additional cost). Included in MDOP is Microsoft Diagnostics and Recovery Toolkit (DaRT), which contains tools that can help you troubleshoot MDT deployments, as well as troubleshoot Windows itself.
