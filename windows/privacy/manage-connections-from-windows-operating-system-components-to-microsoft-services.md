@@ -4,9 +4,9 @@ description: Learn how to minimize connections from Windows to Microsoft service
 ms.reviewer:
 ms.prod: m365-security
 ms.localizationpriority: high
-author: tomlayson
-ms.author: tomlayson
-manager: riche
+author: DHB-MSFT
+ms.author: danbrown
+manager: dougeby
 ms.collection:
   - M365-security-compliance
   - highpri

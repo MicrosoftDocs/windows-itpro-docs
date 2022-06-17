@@ -3,9 +3,9 @@ title: Windows 10 diagnostic data for the Full diagnostic data level (Windows 10
 description: Use this article to learn about the types of data that is collected the Full diagnostic data level.
 ms.prod: m365-security
 ms.localizationpriority: high
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: DHB-MSFT
+ms.author: danbrown
+manager: dougeby
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 12/01/2021
