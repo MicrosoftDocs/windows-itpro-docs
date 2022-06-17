@@ -92,7 +92,10 @@ Beginning with Windows 10 version 1809, you can use the Windows Security app to 
    - Reboot system into Windows.
 
    >[!NOTE]
-   > **Hyper-V - Virtualization Enabled in Firmware** is not available when **A hypervisor has been detected. Features required for Hyper-V will not be displayed.** is displayed. This means that **Hyper-V - Virtualization Enabled in Firmware** is set to Yes and the **Hyper-V** Windows feature is enabled. Enabling Hyper-V virtualization in Firmware (IOMMU) is required to enable **Kernel DMA Protection**, even when the firmware has the flag of "ACPI Kernel DMA Protection Indicators" described in [Kernel DMA Protection (Memory Access Protection) for OEMs](/windows-hardware/design/device-experiences/oem-kernel-dma-protection).
+   > If the **Hyper-V** Windows feature is enabled, all the Hyper-V-related features will be hidden, and **A hypervisor has been detected. Features required for Hyper-V will not be displayed** entity will be shown on the bottom of the list. It means that **Hyper-V - Virtualization Enabled in Firmware** is set to YES.
+
+   >[!NOTE]
+   > Enabling Hyper-V virtualization in Firmware (IOMMU) is required to enable **Kernel DMA Protection**, even when the firmware has the flag of "ACPI Kernel DMA Protection Indicators" described in [Kernel DMA Protection (Memory Access Protection) for OEMs](/windows-hardware/design/device-experiences/oem-kernel-dma-protection).
 
 4. If the state of **Kernel DMA Protection** remains Off, then the system does not support this feature. 
 
