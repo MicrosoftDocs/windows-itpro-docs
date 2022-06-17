@@ -40,7 +40,9 @@ There are three methods you can use to edit an AppLocker policy:
 -   [Editing an AppLocker policy by using the Local Security Policy snap-in](#bkmk-editapplolnotingpo)
 
 ## <a href="" id="bkmk-editapppolinmdm"></a>Editing an AppLocker policy by using Mobile Device Management (MDM)
+If you deployed AppLocker policy using the AppLocker configuration service provider, you can edit the policies in your MDM solution by altering the content in the string value of policy node.
 
+For more information, see the [AppLocker CSP](/windows/client-management/mdm/applocker-csp).
 
 ## <a href="" id="bkmk-editapppolingpo"></a>Editing an AppLocker policy by using Group Policy
 
