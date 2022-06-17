@@ -3,9 +3,9 @@ description: Use this article to make informed decisions about how you can confi
 title: Configure Windows diagnostic data in your organization (Windows 10 and Windows 11)
 ms.prod: m365-security
 ms.localizationpriority: high
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: DHB-MSFT
+ms.author: danbrown
+manager: dougeby
 ms.collection:
   - M365-security-compliance
   - highpri
