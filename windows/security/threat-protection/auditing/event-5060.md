@@ -27,9 +27,9 @@ For more information about CNG, visit these pages:
 
 -   <https://www.microsoft.com/download/details.aspx?id=30688>
 
-This event is mainly used for CNG troubleshooting.
+This event is used for CNG troubleshooting.
 
-There is no example of this event in this document.
+There's no example of this event in this document.
 
 ***Subcategory:***&nbsp;[Audit System Integrity](audit-system-integrity.md)
 
