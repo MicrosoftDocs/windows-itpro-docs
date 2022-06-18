@@ -3,9 +3,9 @@ title: Manage connections from Windows operating system components to Microsoft 
 description: Use MDM CSPs to minimize connections from Windows to Microsoft services, or to configure particular privacy settings.
 ms.prod: m365-security
 ms.localizationpriority: high
-author: RyanHechtMSFT
-ms.author: dansimp
-manager: dansimp
+author: DHB-MSFT
+ms.author: danbrown
+manager: dougeby
 ms.date: 11/29/2021
 ms.technology: privacy
 ---
