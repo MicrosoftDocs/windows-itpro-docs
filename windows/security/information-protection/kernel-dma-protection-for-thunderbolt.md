@@ -91,7 +91,7 @@ Beginning with Windows 10 version 1809, you can use the Windows Security app to 
    - Turn on Intel Virtualization Technology for I/O (VT-d). In Windows 10 version 1803, only Intel VT-d is supported. Other platforms can use DMA attack mitigations described in [BitLocker countermeasures](bitlocker/bitlocker-countermeasures.md).
    - Reboot system into Windows.
 
-   >[!NOTE]
+   > [!NOTE]
    > If the **Hyper-V** Windows feature is enabled, all the Hyper-V-related features will be hidden, and **A hypervisor has been detected. Features required for Hyper-V will not be displayed** entity will be shown at the bottom of the list. It means that **Hyper-V - Virtualization Enabled in Firmware** is set to YES.
 
    > [!NOTE]
