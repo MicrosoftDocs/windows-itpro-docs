@@ -71,7 +71,7 @@ The following table links to each security policy setting and provides the const
 | [Manage auditing and security log](manage-auditing-and-security-log.md)| SeSecurityPrivilege| 
 | [Modify an object label](modify-an-object-label.md) | SeRelabelPrivilege| 
 | [Modify firmware environment values](modify-firmware-environment-values.md)| SeSystemEnvironmentPrivilege| 
-| [Obtain an impersonation token for another user in the same session](impersonate-a-client-after-authentication.md) | SeDelegateSessionUserImpersonatePrivilege|
+| [Obtain an impersonation token for another user in the same session](https://github.com/MicrosoftDocs/SupportArticles-docs/blob/main/support/windows-server/windows-security/seImpersonateprivilege-secreateglobalprivilege.md) | SeDelegateSessionUserImpersonatePrivilege|
 | [Perform volume maintenance tasks](perform-volume-maintenance-tasks.md) | SeManageVolumePrivilege| 
 | [Profile single process](profile-single-process.md) | SeProfileSingleProcessPrivilege| 
 | [Profile system performance](profile-system-performance.md) | SeSystemProfilePrivilege| 
