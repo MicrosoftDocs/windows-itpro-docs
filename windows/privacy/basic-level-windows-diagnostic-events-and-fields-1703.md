@@ -3,9 +3,9 @@ description: Learn more about the Windows 10, version 1703 diagnostic data gathe
 title: Windows 10, version 1703 basic diagnostic events and fields (Windows 10)
 ms.prod: m365-security
 localizationpriority: high
-author: brianlic-msft
-ms.author: brianlic
-manager: dansimp
+author: DHB-MSFT
+ms.author: danbrown
+manager: dougeby
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/29/2021

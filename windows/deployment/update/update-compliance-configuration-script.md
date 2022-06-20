@@ -9,7 +9,7 @@ ms.author: mstewart
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
-ms.date: 04/27/2022
+ms.date: 06/16/2022
 ---
 
 # Configuring devices through the Update Compliance Configuration Script
@@ -19,8 +19,6 @@ ms.date: 04/27/2022
 - Windows 10
 - Windows 11
 
-> [!NOTE]
-> A new policy is required to use Update Compliance: "AllowUpdateComplianceProcessing." If you're already using Update Compliance and have configured your devices prior to May 10, 2021, you must rerun the script so the new policy can be configured.
 
 The Update Compliance Configuration Script is the recommended method of configuring devices to send data to Microsoft for use with Update Compliance. The script configures the registry keys backing policies, ensures required services are running, and more. This script is a recommended complement to configuring the required policies documented in [Manually configured devices for Update Compliance](update-compliance-configuration-manual.md), as it can provide feedback on whether there are any configuration issues outside of policies being configured. 
 
@@ -94,6 +92,10 @@ Open `RunConfig.bat` and configure the following (assuming a first-run, with `ru
 | 92    | Failed to create property for EnableAllowUCProcessing at registry path| 
 | 93    | Failed to update value for EnableAllowUCProcessing| 
 | 94    | Unexpected exception in EnableAllowUCProcessing| 
+| 95 | Failed to create new registry path for EnableAllowCommercialDataPipeline |
+| 96 | Failed to create property for EnableAllowCommercialDataPipeline at registry path |
+| 97 | Failed to update value for EnableAllowCommercialDataPipeline |
+| 98 | Unexpected exception in EnableAllowCommercialDataPipeline |
 | 99    | Device is not Windows 10.| 
 
 

@@ -3,9 +3,9 @@ description: Learn more about the Windows 11 diagnostic data gathered at the bas
 title: Required Windows 11 diagnostic events and fields
 ms.prod: m365-security
 localizationpriority: high
-author: brianlic-msft
-ms.author: brianlic
-manager: dansimp
+author: DHB-MSFT
+ms.author: danbrown
+manager: dougeby
 ms.collection:
   - M365-security-compliance
   - highpri
