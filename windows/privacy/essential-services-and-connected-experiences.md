@@ -3,9 +3,9 @@ title: Essential services and connected experiences for Windows
 description: Explains what the essential services and connected experiences are for Windows
 ms.prod: m365-security
 ms.localizationpriority: high
-author: siosulli
-ms.author: dansimp
-manager: dansimp
+author: DHB-MSFT
+ms.author: danbrown
+manager: dougeby
 ms.technology: privacy
 ms.date: 11/24/2021
 ms.collection: highpri
