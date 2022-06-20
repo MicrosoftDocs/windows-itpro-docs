@@ -52,6 +52,9 @@ A Windows Defender Application Control (WDAC) policy logs events locally in Wind
 
 ## Diagnostic events for Intelligent Security Graph (ISG) and Managed Installer (MI)
 
+> [!NOTE]
+> When Managed Installer is enabled, customers using LogAnalytics should be aware that Managed Installer may fire many 3091 events.  Customers may need to filter out these events to avoid high LogAnalytics costs.
+
 Events 3090, 3091 and 3092 prove helpful diagnostic information when the ISG or MI option is enabled by any WDAC policy. These events can help you debug why something was allowed/denied based on managed installer or ISG. These events do not necessarily indicate a problem but should be reviewed in context with other events like 3076 or 3077 described above.
 
 | Event ID | Explanation |
