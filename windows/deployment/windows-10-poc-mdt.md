@@ -641,7 +641,7 @@ Deployment logs are available on the client computer in the following locations:
 
 You can review WDS events in Event Viewer at: **Applications and Services Logs > Microsoft > Windows > Deployment-Services-Diagnostics**. By default, only the **Admin** and **Operational** logs are enabled. To enable other logs, right-click the log and then click **Enable Log**.
 
-Tools for viewing log files, and to assist with troubleshooting are available in the [System Center 2012 R2 Configuration Manager Toolkit](https://www.microsoft.com/download/details.aspx?id=50012)
+Tools for viewing log files, and to assist with troubleshooting are available in the [Configuration Manager Toolkit](https://www.microsoft.com/download/details.aspx?id=50012)
 
 Also see [Resolve Windows 10 upgrade errors](upgrade/resolve-windows-10-upgrade-errors.md) for detailed troubleshooting information.
 
