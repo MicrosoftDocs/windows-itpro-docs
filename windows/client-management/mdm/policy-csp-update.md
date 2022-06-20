@@ -3629,7 +3629,7 @@ If you configure this policy, also configure the scan source policies for other 
 - SetPolicyDrivenUpdateSourceForDriverUpdates
 
 >[!NOTE]
->If you have not properly configured Update/UpdateServiceUrl correctly to point your WSUS server, this policy will have no effect. 
+>If you have not properly configured Update/UpdateServiceUrl correctly to point to your WSUS server, this policy will have no effect. 
 
 <!--/Description-->
 <!--ADMXMapped-->
