@@ -2,11 +2,7 @@
 title: Advice while using Windows Defender Credential Guard (Windows)
 description: Considerations and recommendations for certain scenarios when using Windows Defender Credential Guard in Windows.
 ms.prod: m365-security
-ms.mktglfcycl: explore
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp

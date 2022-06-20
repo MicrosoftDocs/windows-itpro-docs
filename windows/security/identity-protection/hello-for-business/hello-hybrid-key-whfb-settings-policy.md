@@ -1,12 +1,7 @@
 ---
 title: Configure Hybrid Azure AD joined Windows Hello for Business - Group Policy
 description: Configuring Hybrid key trust Windows Hello for Business - Group Policy
-keywords: identity, PIN, biometric, Hello, passport, WHFB, Windows Hello, key trust, key-trust
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
 author: GitPrakhar13
 ms.author: prsriva
 manager: dansimp
