@@ -14,7 +14,7 @@ author: jsuther1974
 ms.reviewer: jogeurte
 ms.author: dansimp
 manager: dansimp
-ms.date: 10/19/2021
+ms.date: 05/12/2022
 ms.technology: windows-sec
 ---
 
@@ -232,7 +232,7 @@ Below are steps to create a WDAC policy that allows Windows to boot and enables 
 
 ## Remove Managed Installer feature
 
-To remove the Managed Installer feature from the device, you will need to remove the Managed Installer AppLocker policy from the device by following the instructions at [Delete an AppLocker rule - To clear AppLocker policies on a single system or remote systems](delete-an-applocker-rule.md#to-clear-applocker-policies-on-a-single-system-or-remote-systems)
+To remove the Managed Installer feature from the device, you will need to remove the Managed Installer AppLocker policy from the device by following the instructions at [Delete an AppLocker rule: Clear AppLocker policies on a single system or remote systems](applocker/delete-an-applocker-rule.md#to-clear-applocker-policies-on-a-single-system-or-remote-systems).
 
 ## Related articles
 

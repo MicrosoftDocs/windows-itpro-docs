@@ -2,9 +2,6 @@
 title: App-V Capacity Planning (Windows 10/11)
 description: Use these recommendations as a baseline to help determine capacity planning information that is appropriate to your organization’s App-V infrastructure.
 author: aczechowski
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
@@ -192,7 +189,7 @@ Although there are many fault-tolerance strategies and technologies you can use,
 
 
 
-## Related topics
+## Related articles
 
 * [App-V supported configurations](appv-supported-configurations.md)
 * [Planning for high availability with App-V](appv-planning-for-high-availability-with-appv.md)
