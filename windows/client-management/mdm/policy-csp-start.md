@@ -14,7 +14,6 @@ manager: dansimp
 
 # Policy CSP - Start
 
-
 <hr/>
 
 <!--Policies-->
@@ -119,18 +118,19 @@ manager: dansimp
   </dd>
 </dl>
 
-
 <hr/>
 
 <!--Policy-->
 <a href="" id="start-allowpinnedfolderdocuments"></a>**Start/AllowPinnedFolderDocuments**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -156,7 +156,7 @@ The following list shows the supported values:
 
 -   0 – The shortcut is hidden and disables the setting in the Settings app.
 -   1 – The shortcut is visible and disables the setting in the Settings app.
--   65535 (default) - there's no enforced configuration and the setting can be changed by the user.
+-   65535 (default) - There's no enforced configuration, and the setting can be changed by the user.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -167,11 +167,13 @@ The following list shows the supported values:
 <a href="" id="start-allowpinnedfolderdownloads"></a>**Start/AllowPinnedFolderDownloads**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -197,7 +199,7 @@ The following list shows the supported values:
 
 -   0 – The shortcut is hidden and disables the setting in the Settings app.
 -   1 – The shortcut is visible and disables the setting in the Settings app.
--   65535 (default) - there's no enforced configuration and the setting can be changed by the user.
+-   65535 (default) - There's no enforced configuration, and the setting can be changed by the user.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -208,11 +210,13 @@ The following list shows the supported values:
 <a href="" id="start-allowpinnedfolderfileexplorer"></a>**Start/AllowPinnedFolderFileExplorer**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -238,7 +242,7 @@ The following list shows the supported values:
 
 -   0 – The shortcut is hidden and disables the setting in the Settings app.
 -   1 – The shortcut is visible and disables the setting in the Settings app.
--   65535 (default) - there's no enforced configuration and the setting can be changed by the user.
+-   65535 (default) - There's no enforced configuration, and the setting can be changed by the user.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -249,11 +253,13 @@ The following list shows the supported values:
 <a href="" id="start-allowpinnedfolderhomegroup"></a>**Start/AllowPinnedFolderHomeGroup**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -279,7 +285,7 @@ The following list shows the supported values:
 
 -   0 – The shortcut is hidden and disables the setting in the Settings app.
 -   1 – The shortcut is visible and disables the setting in the Settings app.
--   65535 (default) - there's no enforced configuration and the setting can be changed by the user.
+-   65535 (default) - There's no enforced configuration, and the setting can be changed by the user.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -290,11 +296,13 @@ The following list shows the supported values:
 <a href="" id="start-allowpinnedfoldermusic"></a>**Start/AllowPinnedFolderMusic**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -320,7 +328,7 @@ The following list shows the supported values:
 
 -   0 – The shortcut is hidden and disables the setting in the Settings app.
 -   1 – The shortcut is visible and disables the setting in the Settings app.
--   65535 (default) - there's no enforced configuration and the setting can be changed by the user.
+-   65535 (default) - There's no enforced configuration, and the setting can be changed by the user.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -331,11 +339,13 @@ The following list shows the supported values:
 <a href="" id="start-allowpinnedfoldernetwork"></a>**Start/AllowPinnedFolderNetwork**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -361,7 +371,7 @@ The following list shows the supported values:
 
 -   0 – The shortcut is hidden and disables the setting in the Settings app.
 -   1 – The shortcut is visible and disables the setting in the Settings app.
--   65535 (default) - there's no enforced configuration and the setting can be changed by the user.
+-   65535 (default) - There's no enforced configuration, and the setting can be changed by the user.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -372,11 +382,13 @@ The following list shows the supported values:
 <a href="" id="start-allowpinnedfolderpersonalfolder"></a>**Start/AllowPinnedFolderPersonalFolder**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -402,7 +414,7 @@ The following list shows the supported values:
 
 -   0 – The shortcut is hidden and disables the setting in the Settings app.
 -   1 – The shortcut is visible and disables the setting in the Settings app.
--   65535 (default) - there's no enforced configuration and the setting can be changed by the user.
+-   65535 (default) - There's no enforced configuration, and the setting can be changed by the user.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -413,11 +425,13 @@ The following list shows the supported values:
 <a href="" id="start-allowpinnedfolderpictures"></a>**Start/AllowPinnedFolderPictures**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -443,7 +457,7 @@ The following list shows the supported values:
 
 -   0 – The shortcut is hidden and disables the setting in the Settings app.
 -   1 – The shortcut is visible and disables the setting in the Settings app.
--   65535 (default) - there's no enforced configuration and the setting can be changed by the user.
+-   65535 (default) - There's no enforced configuration, and the setting can be changed by the user.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -454,11 +468,13 @@ The following list shows the supported values:
 <a href="" id="start-allowpinnedfoldersettings"></a>**Start/AllowPinnedFolderSettings**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -484,7 +500,7 @@ The following list shows the supported values:
 
 -   0 – The shortcut is hidden and disables the setting in the Settings app.
 -   1 – The shortcut is visible and disables the setting in the Settings app.
--   65535 (default) - there's no enforced configuration and the setting can be changed by the user.
+-   65535 (default) - There's no enforced configuration, and the setting can be changed by the user.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -495,11 +511,13 @@ The following list shows the supported values:
 <a href="" id="start-allowpinnedfoldervideos"></a>**Start/AllowPinnedFolderVideos**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -525,7 +543,7 @@ The following list shows the supported values:
 
 -   0 – The shortcut is hidden and disables the setting in the Settings app.
 -   1 – The shortcut is visible and disables the setting in the Settings app.
--   65535 (default) - there's no enforced configuration and the setting can be changed by the user.
+-   65535 (default) - There's no enforced configuration, and the setting can be changed by the user.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -597,11 +615,13 @@ This string policy will take a JSON file (expected name LayoutModification.json)
 <a href="" id="start-disablecontextmenus"></a>**Start/DisableContextMenus**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -652,11 +672,13 @@ The following list shows the supported values:
 <a href="" id="start-forcestartsize"></a>**Start/ForceStartSize**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -678,7 +700,6 @@ The following list shows the supported values:
 
 Forces the start screen size.
 
-
 If there's policy configuration conflict, the latest configuration request is applied to the device.
 
 <!--/Description-->
@@ -698,11 +719,13 @@ The following list shows the supported values:
 <a href="" id="start-hideapplist"></a>**Start/HideAppList**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -729,10 +752,9 @@ Allows IT Admins to configure Start by collapsing or removing the all apps list.
 > [!Note]
 > There were issues reported with the previous release of this policy and a fix was added in Windows 10, version 1709. 
 
-
 To validate on Desktop, do the following steps:
 
--   1 - Enable policy and restart explorer.exe
+-   1 - Enable policy and restart explorer.exe.
 -   2a - If set to '1': Verify that the all apps list is collapsed, and that the Settings toggle isn't grayed out.
 -   2b - If set to '2': Verify that the all apps list is collapsed, and that the Settings toggle is grayed out.
 -   2c - If set to '3': Verify that there's no way of opening the all apps list from Start, and that the Settings toggle is grayed out.
@@ -755,11 +777,13 @@ The following list shows the supported values:
 <a href="" id="start-hidechangeaccountsettings"></a>**Start/HideChangeAccountSettings**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -802,11 +826,13 @@ To validate on Desktop, do the following steps:
 <a href="" id="start-hidefrequentlyusedapps"></a>**Start/HideFrequentlyUsedApps**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -844,8 +870,8 @@ To validate on Desktop, do the following steps:
 1.   Enable "Show most used apps" in the Settings app.
 2.   Use some apps to get them into the most used group in Start.
 3.   Enable policy.
-4.   Restart explorer.exe
-5.   Check that  "Show most used apps" Settings toggle is grayed out.
+4.   Restart explorer.exe.
+5.   Check that "Show most used apps" Settings toggle is grayed out.
 6.   Check that most used apps don't appear in Start.
 
 <!--/Validation-->
@@ -857,11 +883,13 @@ To validate on Desktop, do the following steps:
 <a href="" id="start-hidehibernate"></a>**Start/HideHibernate**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -880,7 +908,6 @@ To validate on Desktop, do the following steps:
 <!--/Scope-->
 <!--Description-->
 Allows IT Admins to configure Start by hiding "Hibernate" from appearing in the Power button.
-
 
 > [!NOTE]
 > This policy can only be verified on laptops as "Hibernate" doesn't appear on regular PC's.
@@ -908,11 +935,13 @@ To validate on Laptop, do the following steps:
 <a href="" id="start-hidelock"></a>**Start/HideLock**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -955,11 +984,13 @@ To validate on Desktop, do the following steps:
 <a href="" id="start-hidepeoplebar"></a>**Start/HidePeopleBar**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -979,7 +1010,7 @@ To validate on Desktop, do the following steps:
 <!--Description-->
 Enabling this policy removes the people icon from the taskbar and the corresponding settings toggle. It also prevents users from pinning people to the taskbar.
 
-Value type is integer.
+Supported value type is integer.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1005,11 +1036,13 @@ The following list shows the supported values:
 <a href="" id="start-hidepowerbutton"></a>**Start/HidePowerButton**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1055,11 +1088,13 @@ To validate on Desktop, do the following steps:
 <a href="" id="start-hiderecentjumplists"></a>**Start/HideRecentJumplists**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1098,7 +1133,7 @@ To validate on Desktop, do the following steps:
 3.   Right click the pinned photos app and verify that a jump list of recently opened items pops up.
 4.   Toggle "Show recently opened items in Jump Lists on Start of the taskbar" in Settings to clear jump lists.
 5.   Enable policy.
-6.   Restart explorer.exe
+6.   Restart explorer.exe.
 7.   Check that Settings toggle is grayed out.
 8.   Repeat Step 2.
 9.   Right Click pinned photos app and verify that there's no jump list of recent items.
@@ -1112,11 +1147,13 @@ To validate on Desktop, do the following steps:
 <a href="" id="start-hiderecentlyaddedapps"></a>**Start/HideRecentlyAddedApps**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1162,7 +1199,7 @@ To validate on Desktop, do the following steps:
 1.   Enable "Show recently added apps" in the Settings app.
 2.   Check if there are recently added apps in Start (if not, install some).
 3.   Enable policy.
-4.   Restart explorer.exe
+4.   Restart explorer.exe.
 5.   Check that "Show recently added apps" Settings toggle is grayed out.
 6.   Check that recently added apps don't appear in Start.
 
@@ -1175,11 +1212,13 @@ To validate on Desktop, do the following steps:
 <a href="" id="start-hiderestart"></a>**Start/HideRestart**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1222,11 +1261,13 @@ To validate on Desktop, do the following steps:
 <a href="" id="start-hideshutdown"></a>**Start/HideShutDown**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1269,11 +1310,13 @@ To validate on Desktop, do the following steps:
 <a href="" id="start-hidesignout"></a>**Start/HideSignOut**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1316,11 +1359,13 @@ To validate on Desktop, do the following steps:
 <a href="" id="start-hidesleep"></a>**Start/HideSleep**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1363,11 +1408,13 @@ To validate on Desktop, do the following steps:
 <a href="" id="start-hideswitchaccount"></a>**Start/HideSwitchAccount**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1410,11 +1457,13 @@ To validate on Desktop, do the following steps:
 <a href="" id="start-hideusertile"></a>**Start/HideUserTile**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1461,11 +1510,13 @@ To validate on Desktop, do the following steps:
 <a href="" id="start-importedgeassets"></a>**Start/ImportEdgeAssets**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1497,16 +1548,16 @@ Here's more SKU support information:
 This policy imports Edge assets (for example, .png/.jpg files) for secondary tiles into its local app data path, which allows the StartLayout policy to pin Edge secondary tiles as weblink that ties to the image asset files.
 
 > [!IMPORTANT]
-> Please note that the import happens only when StartLayout policy is changed. So it is better to always change ImportEdgeAssets policy at the same time as StartLayout policy whenever there are Edge secondary tiles to be pinned from StartLayout policy.
+> Please note that the import happens only when StartLayout policy is changed. So it is better to always change ImportEdgeAssets policy at the same time as StartLayout policy, whenever there are Edge secondary tiles to be pinned from StartLayout policy.
 
-The value set for this policy is an XML string containing Edge assets.  For an example XML string, see [Add image for secondary Microsoft Edge tiles](/windows/configuration/start-secondary-tiles).
+The value set for this policy is an XML string containing Edge assets. For an example XML string, see [Add image for secondary Microsoft Edge tiles](/windows/configuration/start-secondary-tiles).
 
 <!--/Description-->
 <!--Validation-->
 To validate on Desktop, do the following steps:
 
 1.   Set policy with an XML for Edge assets.
-2.   Set StartLayout policy to anything so that it would trigger the Edge assets import.
+2.   Set StartLayout policy to anything so that would trigger the Edge assets import.
 3.   Sign out/in.
 4.   Verify that all Edge assets defined in XML show up in %LOCALAPPDATA%\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\LocalState path.
 
@@ -1519,11 +1570,13 @@ To validate on Desktop, do the following steps:
 <a href="" id="start-nopinningtotaskbar"></a>**Start/NoPinningToTaskbar**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1541,7 +1594,7 @@ To validate on Desktop, do the following steps:
 
 <!--/Scope-->
 <!--Description-->
-Allows IT Admins to configure the taskbar by disabling pinning and unpinning apps on the taskbar.
+Allows IT Admins to configure the taskbar by disabling, pinning, and unpinning apps on the taskbar.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -1564,7 +1617,6 @@ To validate on Desktop, do the following steps:
 <!--/Policy-->
 
 <hr/>
-
 
 <!--Policy-->
 <a href="" id="start-showorhidemostusedapps"></a>**Start/ShowOrHideMostUsedApps**  
@@ -1622,9 +1674,9 @@ To validate on Desktop, do the following steps:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 1 - Force showing of Most Used Apps in Start Menu, user can't change in Settings
-- 0 - Force hiding of Most Used Apps in Start Menu, user can't change in Settings
-- Not set - User can use Settings to hide or show Most Used Apps in Start Menu
+- 1 - Force showing of Most Used Apps in Start Menu, user can't change in Settings.
+- 0 - Force hiding of Most Used Apps in Start Menu, user can't change in Settings.
+- Not set - User can use Settings to hide or show Most Used Apps in Start Menu.
 
 On clean install, the user setting defaults to "hide".
 
@@ -1638,11 +1690,13 @@ On clean install, the user setting defaults to "hide".
 <a href="" id="start-startlayout"></a>**Start/StartLayout**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -1672,7 +1726,7 @@ Here's more SKU support information:
 |Windows 10, version 1607 and later |Enterprise, Education, Business |
 |Windows 10, version 1709 and later |Enterprise, Education, Business, Pro, ProEducation, S, ProWorkstation |
 
-Allows you to override the default Start layout and prevents the user from changing it. If both user and device policies are set, the user policy will be used. Apps pinned to the taskbar can also be changed with this policy
+Allows you to override the default Start layout and prevents the user from changing it. If both user and device policies are set, the user policy will be used. Apps pinned to the taskbar can also be changed with this policy.
 
 For more information on how to customize the Start layout, see [Customize and export Start layout](/windows/configuration/customize-and-export-start-layout) and [Configure Windows 10 taskbar](/windows/configuration/configure-windows-10-taskbar).
 
@@ -1689,3 +1743,7 @@ ADMX Info:
 <hr/>
 
 <!--/Policies-->
+
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

@@ -1,14 +1,11 @@
 ---
 title: Microsoft Security Compliance Toolkit 1.0 Guide
 description: This article describes how to use Security Compliance Toolkit 1.0 in your organization
-keywords: virtualization, security, malware
 ms.prod: m365-security
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/14/2022
@@ -45,7 +42,7 @@ The Security Compliance Toolkit consists of:
 
 -   Microsoft Office security baseline
     -   Office 2016 
-    -   Microsoft 365 Apps for Enterprise Version 2112
+    -   Microsoft 365 Apps for Enterprise Version 2206
     
 -   Microsoft Edge security baseline
     -   Edge version 98

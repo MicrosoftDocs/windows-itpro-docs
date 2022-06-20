@@ -1,20 +1,15 @@
 ---
 description: Learn more about the required Windows 10 diagnostic data gathered.
 title: Windows 10, version 21H2, Windows 10, version 21H1, Windows 10, version 20H2 and Windows 10, version 2004 required diagnostic events and fields (Windows 10)
-keywords: privacy, telemetry
 ms.prod: m365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 localizationpriority: high
-author: brianlic-msft
-ms.author: brianlic
-manager: dansimp
+author: DHB-MSFT
+ms.author: danbrown
+manager: dougeby
 ms.collection:
   - M365-security-compliance
   - highpri
 ms.topic: article
-audience: ITPro
 ms.date: 
 ms.technology: privacy
 ---
@@ -2305,10 +2300,10 @@ The following fields are available:
 - **UpdateServiceURLConfigured**  Retrieves if the device is managed by Windows Server Update Services (WSUS).
 - **WUDeferUpdatePeriod**  Retrieves if deferral is set for Updates.
 - **WUDeferUpgradePeriod**  Retrieves if deferral is set for Upgrades.
-- **WUDODownloadMode**  Retrieves whether DO is turned on and how to acquire/distribute updates Delivery Optimization (DO) allows users to deploy previously downloaded WU updates to other devices on the same network.
+- **WUDODownloadMode**  Retrieves whether DO is turned on and how to acquire/distribute updates Delivery Optimization (DO) allows users to deploy previously downloaded Windows Update (WU) updates to other devices on the same network.
 - **WULCUVersion**  Version of the LCU Installed on the machine.
 - **WUMachineId**  Retrieves the Windows Update (WU) Machine Identifier.
-- **WUPauseState**  Retrieves WU setting to determine if updates are paused.
+- **WUPauseState**  Retrieves Windows Update  setting to determine if updates are paused.
 - **WUServer**  Retrieves the HTTP(S) URL of the WSUS server that is used by Automatic Updates and API callers (by default).
 
 
@@ -5771,7 +5766,7 @@ The following fields are available:
 - **CV**  The correlation vector.
 - **GlobalEventCounter**  Counts the events at the global level for telemetry.
 - **PackageVersion**  The package version for currency tools.
-- **UnifiedInstallerDeviceAADJoinedHresult**  The result code after checking if device is AAD joined.
+- **UnifiedInstallerDeviceAADJoinedHresult**  The result code after checking if device is Azure Active Directory-joined.
 - **UnifiedInstallerDeviceInDssPolicy**  Boolean indicating whether the device is found to be in a DSS policy.
 - **UnifiedInstallerDeviceInDssPolicyHresult**  The result code for checking whether the device is found to be in a DSS policy.
 - **UnifiedInstallerDeviceIsAADJoined**  Boolean indicating whether a device is AADJ.
@@ -5901,7 +5896,7 @@ The following fields are available:
 - **PackageVersion**  The package version of the label.
 - **UpdateHealthToolsDevicePolicyFileName**  The default name of the policy blob file.
 - **UpdateHealthToolsDssDeviceApiSegment**  The URI segment for reading the DSS device pointer.
-- **UpdateHealthToolsDssDeviceId**  The AAD ID of the device used to create the device ID hash.
+- **UpdateHealthToolsDssDeviceId**  The Azure Active Directory ID of the device used to create the device ID hash.
 - **UpdateHealthToolsDssDevicePolicyApiSegment**  The segment of the device policy API pointer.
 - **UpdateHealthToolsDssTenantId**  The tenant id of the device used to create the tenant id hash.
 - **UpdateHealthToolsHashedDeviceId**  The SHA256 hash of the device id.
@@ -5910,7 +5905,7 @@ The following fields are available:
 
 ### Microsoft.Windows.UpdateHealthTools.UpdateHealthToolsServiceBlockedByNoDSSJoin
 
-This event is sent when the device is not joined to AAD. The data collected with this event is used to help keep Windows up to date and secure.
+This event is sent when the device is not joined to Azure Active Directory. The data collected with this event is used to help keep Windows up to date and secure.
 
 The following fields are available:
 

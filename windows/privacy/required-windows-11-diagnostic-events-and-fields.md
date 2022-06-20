@@ -1,20 +1,15 @@
 ---
 description: Learn more about the Windows 11 diagnostic data gathered at the basic level.
 title: Required Windows 11 diagnostic events and fields
-keywords: privacy, telemetry
 ms.prod: m365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 localizationpriority: high
-author: brianlic-msft
-ms.author: brianlic
-manager: dansimp
+author: DHB-MSFT
+ms.author: danbrown
+manager: dougeby
 ms.collection:
   - M365-security-compliance
   - highpri
 ms.topic: article
-audience: ITPro
 ms.date: 11/29/2021
 ms.technology: privacy
 ---
@@ -2292,10 +2287,10 @@ The following fields are available:
 - **UpdateServiceURLConfigured**  Retrieves if the device is managed by Windows Server Update Services (WSUS).
 - **WUDeferUpdatePeriod**  Retrieves if deferral is set for Updates.
 - **WUDeferUpgradePeriod**  Retrieves if deferral is set for Upgrades.
-- **WUDODownloadMode**  Retrieves whether DO is turned on and how to acquire/distribute updates Delivery Optimization (DO) allows users to deploy previously downloaded WU updates to other devices on the same network.
+- **WUDODownloadMode**  Retrieves whether DO is turned on and how to acquire/distribute updates Delivery Optimization (DO) allows users to deploy previously downloaded Windows Update (WU) updates to other devices on the same network.
 - **WULCUVersion**  Version of the LCU Installed on the machine.
 - **WUMachineId**  Retrieves the Windows Update (WU) Machine Identifier.
-- **WUPauseState**  Retrieves WU setting to determine if updates are paused.
+- **WUPauseState**  Retrieves Windows Update  setting to determine if updates are paused.
 - **WUServer**  Retrieves the HTTP(S) URL of the WSUS server that is used by Automatic Updates and API callers (by default).
 
 
@@ -6022,7 +6017,7 @@ This event sends data regarding OS Updates and Upgrades from Windows 7.X, Window
 The following fields are available:
 
 - **ClientId**  For Windows Update, this will be the Windows Update client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
-- **FlightData**  In the WU scenario, this will be the WU client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
+- **FlightData**  In the Windows Update  scenario, this will be the Windows Update  client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
 - **HostOSBuildNumber**  The build number of the previous operating system.
 - **HostOsSkuName**  The OS edition which is running the Setup360 instance (previous operating system).
 - **InstanceId**  Unique GUID that identifies each instance of setuphost.exe.
@@ -6789,7 +6784,7 @@ The following fields are available:
 - **freeDiskSpaceInMB**  Amount of free disk space.
 - **interactive**  Informs if this action is caused due to user interaction.
 - **priority**  The CPU and IO priority this action is being performed on.
-- **provider**  The provider that is being invoked to perform this action (WU, Legacy UO Provider etc.).
+- **provider**  The provider that is being invoked to perform this action (Windows Update , Legacy UO Provider etc.).
 - **update**  Update related metadata including UpdateId.
 - **uptimeMinutes**  Duration USO for up for in the current boot session.
 - **wilActivity**  Wil Activity related information.
@@ -6988,7 +6983,7 @@ The following fields are available:
 - **CommonProps**  A bitmask for future flags associated with the Windows Update client behavior. There is no value being reported in this field right now. Expected value for this field is 0.
 - **DeferralPolicySources**  Sources for any update deferral policies defined (GPO = 0x10, MDM = 0x100, Flight = 0x1000, UX = 0x10000).
 - **DeferredUpdates**  UpdateIds which are currently being deferred until a later time.
-- **DriverExclusionPolicy**  Indicates if policy for not including drivers with WU updates is enabled.
+- **DriverExclusionPolicy**  Indicates if policy for not including drivers with Windows Update (WU) updates is enabled.
 - **DriverSyncPassPerformed**  A flag indicating whether the driver sync is performed in a update scan.
 - **EventInstanceID**  A globally unique identifier for event instance.
 - **ExcludedUpdateClasses**  Update classifications being excluded via policy.
@@ -8139,7 +8134,7 @@ This event sends data specific to the FixAppXReparsePoints mitigation used for O
 
 The following fields are available:
 
-- **ClientId**  In the WU scenario, this will be the WU client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
+- **ClientId**  In the Windows Update  scenario, this will be the Windows Update  client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
 - **FlightId**  Unique identifier for each flight.
 - **InstanceId**  Unique GUID that identifies each instances of setuphost.exe.
 - **MitigationScenario**  The update scenario in which the mitigation was executed.
@@ -8161,7 +8156,7 @@ This event sends data specific to the FixupWimmountSysPath mitigation used for O
 
 The following fields are available:
 
-- **ClientId**  In the WU scenario, this will be the WU client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
+- **ClientId**  In the Windows Update  scenario, this will be the Windows Update  client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
 - **FlightId**  Unique identifier for each flight.
 - **ImagePathDefault**  Default path to wimmount.sys driver defined in the system registry.
 - **ImagePathFixedup**  Boolean indicating whether the wimmount.sys driver path was fixed by this mitigation.

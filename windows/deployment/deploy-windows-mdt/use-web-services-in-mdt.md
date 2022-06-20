@@ -1,17 +1,11 @@
 ---
 title: Use web services in MDT (Windows 10)
 description: Learn how to create a simple web service that generates computer names and then configure MDT to use that service during your Windows 10 deployment.
-ms.assetid: 8f47535e-0551-4ccb-8f02-bb97539c6522
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-keywords: deploy, web apps
 ms.prod: w10
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.pagetype: mdt
-ms.sitesec: library
-audience: itpro
 author: aczechowski
 ms.topic: article
 ---

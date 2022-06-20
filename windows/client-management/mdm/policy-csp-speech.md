@@ -14,7 +14,6 @@ manager: dansimp
 
 # Policy CSP - Speech
 
-
 <hr/>
 
 <!--Policies-->
@@ -25,7 +24,6 @@ manager: dansimp
     <a href="#speech-allowspeechmodelupdate">Speech/AllowSpeechModelUpdate</a>
   </dd>
 </dl>
-
 
 <hr/>
 
@@ -38,6 +36,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -79,3 +78,6 @@ The following list shows the supported values:
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

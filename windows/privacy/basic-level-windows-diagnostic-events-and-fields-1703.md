@@ -1,19 +1,14 @@
 ---
 description: Learn more about the Windows 10, version 1703 diagnostic data gathered at the basic level.
 title: Windows 10, version 1703 basic diagnostic events and fields (Windows 10)
-keywords: privacy, telemetry
 ms.prod: m365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 localizationpriority: high
-author: brianlic-msft
-ms.author: brianlic
-manager: dansimp
+author: DHB-MSFT
+ms.author: danbrown
+manager: dougeby
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/29/2021
-audience: ITPro
 ms.reviewer:
 ms.technology: privacy
 ---
@@ -1584,9 +1579,9 @@ The following fields are available:
 - **UpdateServiceURLConfigured**  Retrieves if the device is managed by Windows Server Update Services (WSUS).
 - **WUDeferUpdatePeriod**  Retrieves if deferral is set for Updates.
 - **WUDeferUpgradePeriod**  Retrieves if deferral is set for Upgrades.
-- **WUDODownloadMode**  Retrieves whether DO is turned on and how to acquire/distribute updates Delivery Optimization (DO) allows users to deploy previously downloaded WU updates to other devices on the same network.
+- **WUDODownloadMode**  Retrieves whether DO is turned on and how to acquire/distribute updates Delivery Optimization (DO) allows users to deploy previously downloaded Windows Update (WU) updates to other devices on the same network.
 - **WUMachineId**  Retrieves the Windows Update (WU) Machine Identifier.
-- **WUPauseState**  Retrieves WU setting to determine if updates are paused.
+- **WUPauseState**  Retrieves Windows Update setting to determine if updates are paused.
 - **WUServer**  Retrieves the HTTP(S) URL of the WSUS server that is used by Automatic Updates and API callers (by default).
 
 
@@ -4281,7 +4276,7 @@ The following fields are available:
 - **DeviceModel**  What is the device model.
 - **DeviceOEM**  What OEM does this device belong to.
 - **DownloadPriority**  The priority of the download activity.
-- **DownloadScenarioId**  A unique ID for a given download used to tie together WU and DO events.
+- **DownloadScenarioId**  A unique ID for a given download used to tie together Windows Update and DO events.
 - **DriverPingBack**  Contains information about the previous driver and system state.
 - **Edition**  Indicates the edition of Windows being used.
 - **EventInstanceID**  A globally unique identifier for event instance.

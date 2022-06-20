@@ -4,7 +4,6 @@ description: Learn how to find all the resources that you need to provide contin
 MS-HAID: 
   - 'p\_phdevicemgmt.certificate\_renewal'
   - 'p\_phDeviceMgmt.certificate\_renewal\_windows\_mdm'
-ms.assetid: F910C50C-FF67-40B0-AAB0-CA7CE02A9619
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp

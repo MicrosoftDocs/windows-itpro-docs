@@ -1,17 +1,12 @@
 ---
 title: Create Windows Firewall rules in Intune (Windows)
 description: Learn how to use Intune to create rules in Windows Defender Firewall with Advanced Security. Start by creating a profile in Device Configuration in Intune.
-ms.assetid: 47057d90-b053-48a3-b881-4f2458d3e431
 ms.reviewer: 
 ms.author: dansimp
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: windows-sec

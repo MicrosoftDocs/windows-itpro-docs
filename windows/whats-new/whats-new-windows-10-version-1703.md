@@ -1,17 +1,14 @@
 ---
 title: What's new in Windows 10, version 1703
 description: New and updated features in Windows 10, version 1703 (also known as the Creators Updated).
-keywords: ["What's new in Windows 10", "Windows 10", "creators update"]
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.localizationpriority: high
-ms.assetid: dca7c655-c4f6-45f8-aa02-64187b202617
+ms.localizationpriority: medium
 ms.reviewer: 
 author: aczechowski
 manager: dougeby
 ms.author: aaroncz
 ms.topic: article
+ROBOTS: NOINDEX
 ---
 
 # What's new in Windows 10, version 1703 for IT Pros
@@ -43,8 +40,6 @@ Both the desktop and kiosk wizards include an option to remove pre-installed sof
 ### Azure Active Directory join in bulk
 
 Using the new wizards in Windows Configuration Designer, you can [create provisioning packages to enroll devices in Azure Active Directory](/windows/configuration/provisioning-packages/provisioning-packages#configuration-designer-wizards). Azure AD join in bulk is available in the desktop, mobile, kiosk, and Surface Hub wizards.
-
-![get bulk token action in wizard.](images/bulk-token.png)
 
 
 ### Windows Spotlight
@@ -100,7 +95,6 @@ For details, see [MBR2GPT.EXE](/windows/deployment/mbr-to-gpt).
 
 New features in Microsoft Defender for Endpoint for Windows 10, version 1703 include:
 - **Detection**: Enhancements to the detection capabilities include:
-  - [Use the threat intelligence API to create custom alerts](/windows/threat-protection/windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection) - Understand threat intelligence concepts, enable the threat intel application, and create custom threat intelligence alerts for your organization.
   - Improvements on OS memory and kernel sensors to enable detection of attackers who are using in-memory and kernel-level attacks
   - Upgraded detections of ransomware and other advanced attacks
   - Historical detection capability ensures new detection rules apply to up to six months of stored data to detect previous attacks that might not have been noticed
@@ -186,11 +180,11 @@ Windows Update for Business managed devices are now able to defer feature update
 
 ### Windows Insider for Business
 
-We recently added the option to download Windows 10 Insider Preview builds using your corporate credentials in Azure Active Directory (AAD). By enrolling devices in AAD, you increase the visibility of feedback submitted by users in your organization – especially on features that support your specific business needs. For details, see [Windows Insider Program for Business](/windows-insider/business/register).
+We recently added the option to download Windows 10 Insider Preview builds using your corporate credentials in Azure Active Directory (Azure AD). By enrolling devices in Azure AD, you increase the visibility of feedback submitted by users in your organization, especially on features that support your specific business needs. For details, see [Windows Insider Program for Business](/windows-insider/business/register).
 
 ### Optimize update delivery
 
-With changes delivered in Windows 10, version 1703, [Express updates](/windows/deployment/update/waas-optimize-windows-10-updates#express-update-delivery) are now fully supported with Microsoft Endpoint Configuration Manager, starting with version 1702 of Configuration Manager, as well as with other third-party updating and management products that [implement this new functionality](/windows-server/administration/windows-server-update-services/deploy/express-update-delivery-isv-support). This is in addition to current Express support on Windows Update, Windows Update for Business and WSUS.
+With changes delivered in Windows 10, version 1703, [express updates](/windows/deployment/do/waas-optimize-windows-10-updates#express-update-delivery) are now fully supported with Microsoft Endpoint Configuration Manager, starting with version 1702 of Configuration Manager, as well as with other third-party updating and management products that [implement this new functionality](/windows-server/administration/windows-server-update-services/deploy/express-update-delivery-isv-support). This is in addition to current Express support on Windows Update, Windows Update for Business and WSUS.
 
 >[!NOTE]
 > The above changes can be made available to Windows 10, version 1607, by installing the April 2017 cumulative update.
@@ -232,7 +226,6 @@ Some of the other new CSPs are:
 
 - The [EnterpriseAppVManagement CSP](/windows/client-management/mdm/enterpriseappvmanagement-csp) is used to manage virtual applications in Windows 10 PCs (Enterprise and Education editions) and enables App-V sequenced apps to be streamed to PCs even when managed by MDM.
 
-IT pros can use the new [MDM Migration Analysis Tool (MMAT)](https://aka.ms/mmat) to determine which Group Policy settings have been configured for a user or computer and cross-reference those settings against a built-in list of supported MDM policies. MMAT can generate both XML and HTML reports indicating the level of support for each Group Policy setting and MDM equivalents.
 
 [Learn more about new MDM capabilities.](/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew10)
 

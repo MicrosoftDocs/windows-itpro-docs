@@ -1,7 +1,6 @@
 ---
 title: CustomDeviceUI CSP
 description: Learn how the CustomDeviceUI configuration service provider (CSP) allows OEMs to implement their custom foreground application.
-ms.assetid: 20ED1867-7B9E-4455-B397-53B8B15C95A3
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -41,7 +40,6 @@ List of package names of background tasks that need to be launched on device sta
 Package Full Name of the application that needs to be launched in the background. This application can contain no entry points, a single entry point, or multiple entry points. The supported operations are Add, Delete, Get, and Replace.
 
 ## SyncML examples
-
 
 **Set StartupAppID**
 
