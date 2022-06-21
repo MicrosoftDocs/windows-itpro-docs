@@ -138,7 +138,7 @@ Before you can start to collect your data, you must run the provided PowerShell 
 -OR-
 - Collect your hardware inventory using the MOF Editor with a .MOF import file.<p>
 -OR-
-- Collect your hardware inventory using the SMS\DEF.MOF file (System Center Configuration Manager 2007 only)
+- Collect your hardware inventory using the SMS\DEF.MOF file (Configuration Manager 2007 only)
 
 ### WMI only: Running the PowerShell script to compile the .MOF file and to update security privileges
 You need to set up your computers for data collection by running the provided PowerShell script (IETelemetrySetUp.ps1) to compile the .mof file and to update security privileges for the new WMI classes.
@@ -235,7 +235,7 @@ After you’ve collected your data, you’ll need to get the local files off of 
 -OR-
 - Collect your hardware inventory using the MOF Editor with a .MOF import file.<p>
 -OR-
-- Collect your hardware inventory using the SMS\DEF.MOF file (System Center Configuration Manager 2007 only)
+- Collect your hardware inventory using the SMS\DEF.MOF file (Configuration Manager 2007 only)
 
 ### Collect your hardware inventory using the MOF Editor while connected to a client device
 You can collect your hardware inventory using the MOF Editor, while you’re connected to your client devices.
@@ -277,8 +277,8 @@ You can collect your hardware inventory using the MOF Editor and a .MOF import f
 4.  Click **OK** to close the default windows.<br>
 Your environment is now ready to collect your hardware inventory and review the sample reports.
 
-### Collect your hardware inventory using the SMS\DEF.MOF file (System Center Configuration Manager 2007 only)
-You can collect your hardware inventory using the using the Systems Management Server (SMS\DEF.MOF) file. Editing this file lets you collect your data for System Center Configuration Manager 2007. If you aren’t using this version of Configuration Manager, you won’t want to use this option.
+### Collect your hardware inventory using the SMS\DEF.MOF file (Configuration Manager 2007 only)
+You can collect your hardware inventory using the using the Systems Management Server (SMS\DEF.MOF) file. Editing this file lets you collect your data for Configuration Manager 2007. If you aren’t using this version of Configuration Manager, you won’t want to use this option.
 
 **To collect your inventory**
 
@@ -352,14 +352,14 @@ You can collect your hardware inventory using the using the Systems Management S
     Your environment is now ready to collect your hardware inventory and review the sample reports.
 
 ## View the sample reports with your collected data
-The sample reports, **SCCM Report Sample – ActiveX.rdl** and **SCCM Report Sample – Site Discovery.rdl**, work with System Center 2012, so you can review your collected data.
+The sample reports, **Configuration Manager Report Sample – ActiveX.rdl** and **Configuration Manager Report Sample – Site Discovery.rdl**, work with System Center 2012, so you can review your collected data.
 
-### SCCM Report Sample – ActiveX.rdl
+### Configuration Manager Report Sample – ActiveX.rdl
 Gives you a list of all of the ActiveX-related sites visited by the client computer.
 
 ![ActiveX.rdl report, lists all ActiveX-related sites visited by the client computer.](images/configmgractivexreport.png)
 
-### SCCM Report Sample – Site Discovery.rdl
+### Configuration Manager Report Sample – Site Discovery.rdl
 Gives you a list of all of the sites visited by the client computer.
 
 ![Site Discovery.rdl report, lists all websites visited by the client computer.](images/ie-site-discovery-sample-report.png)
