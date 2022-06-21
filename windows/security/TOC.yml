@@ -280,7 +280,7 @@
    - name: Microsoft Defender SmartScreen overview
      href: threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md
      items:
-        - name: Enhanced Phishing Protection for Microsoft Defender SmartScreen
+        - name: Enhanced Phishing Protection in Microsoft Defender SmartScreen
           href: threat-protection\microsoft-defender-smartscreen\phishing-protection-microsoft-defender-smartscreen.md
    - name: Configure S/MIME for Windows
      href: identity-protection\configure-s-mime.md

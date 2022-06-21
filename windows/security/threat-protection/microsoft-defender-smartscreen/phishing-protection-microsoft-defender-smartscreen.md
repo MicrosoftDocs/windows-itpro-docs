@@ -1,6 +1,6 @@
 ---
-title: Enhanced Phishing Protection for Microsoft Defender SmartScreen 
-description: Learn how Phishing sensors in Microsoft Defender SmartScreen helps protect Microsoft school or work passwords against phishing and unsafe usage on sites and apps.
+title: Enhanced Phishing Protection in Microsoft Defender SmartScreen 
+description: Learn how Enhanced Phishing Protection for Microsoft Defender SmartScreen helps protect Microsoft school or work passwords against phishing and unsafe usage on sites and apps.
 ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -9,20 +9,20 @@ author: v-mathavale
 ms.author: v-mathavale
 audience: IT Admin
 ms.localizationpriority: medium
-ms.date: 06/16/2022
+ms.date: 06/21/2022
 ms.reviewer: 
 manager: dansimp
 ms.technology: windows-sec
 adobe-target: true
 ---
 
-# Enhanced Phishing Protection for Microsoft Defender SmartScreen  
+# Enhanced Phishing Protection in Microsoft Defender SmartScreen  
 
 **Applies to:**
 
 - Windows 11
 
-Concerned about your users accidentally typing your password into a malicious site or app pretending to be safe? Enhanced Phishing Protection for Microsoft Defender SmartScreen helps protect Microsoft school or work passwords against phishing and unsafe usage on sites and apps connecting to those sites.    
+Concerned about your users accidentally typing passwords into a malicious site or app pretending to be safe? Enhanced Phishing Protection in Microsoft Defender SmartScreen helps protect Microsoft school or work passwords against phishing and unsafe usage on sites and apps connecting to those sites.    
 
 Enhanced Phishing Protection works alongside Windows security protections and helps protect typed work or school passwords used to sign into Windows 11 in three ways:  
 
