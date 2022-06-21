@@ -27,7 +27,7 @@ Describes the best practices, location, values, management aspects, and security
 
 
 > [!NOTE]
-> To learn more about configuring a server to be accessed remotely, check [Remote Desktop - Allow access to your PC](/windows-server/remote/remote-desktop-services/clients/remote-desktop-allow-access)
+> To learn more about configuring a server to be accessed remotely, check [Remote Desktop - Allow access to your PC](/windows-server/remote/remote-desktop-services/clients/remote-desktop-allow-access).
 
 ## Reference
 
