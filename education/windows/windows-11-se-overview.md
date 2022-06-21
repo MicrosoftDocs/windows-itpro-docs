@@ -41,7 +41,6 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 | Application | Supported version | App Type | Vendor |
 | --- | --- | --- | --- |
 |AirSecure	                            |8.0.0	|Win32  |AIR|
-|Remote Desktop client (MSRDC)          |1.2.3213.0 |Win32 |Microsoft| 
 |Brave Browser      	                |1.34.80|Win32	    |Brave|
 |Bulb Digital Portfolio              	|0.0.7.0|Store|Bulb|
 |Cisco Umbrella                      	|3.0.110.0	|Win32    |Cisco|
@@ -78,6 +77,7 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 |Pearson TestNav	                    |1.10.2.0	|Store    |Pearson|
 |Questar Secure Browser	                |4.8.3.376	|Win32    |Questar|
 |ReadAndWriteForWindows	                |12.0.60.0	 |Win32   |Texthelp Ltd.|
+|Remote Desktop client (MSRDC)          |1.2.3213.0 |Win32 |Microsoft| 
 |Remote Help	                        |3.8.0.12	 |Win32   |Microsoft|
 |Respondus Lockdown Browser         	|2.0.8.05	 |Win32   |Respondus|
 |Safe Exam Browser                   	|3.3.2.413	  |Win32  |Safe Exam Browser|
