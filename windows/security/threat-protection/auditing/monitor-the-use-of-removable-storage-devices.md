@@ -69,4 +69,4 @@ After you configure the settings to monitor removable storage devices, use the f
 ### Related resource
 
 - [Using advanced security auditing options to monitor dynamic access control objects](using-advanced-security-auditing-options-to-monitor-dynamic-access-control-objects.md)
-- [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control)
+- [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control)
