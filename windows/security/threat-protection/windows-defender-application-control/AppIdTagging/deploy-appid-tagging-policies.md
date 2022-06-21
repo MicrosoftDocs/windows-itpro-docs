@@ -32,7 +32,7 @@ ms.technology: windows-sec
 Similar to Windows Defender Application Control (WDAC) policies, WDAC AppId Tagging policies can be deployed locally and to your managed endpoints several ways. Once you've created your AppId Tagging policy, use one of the following methods to deploy:
 
 1. [Deploy AppId Tagging Policies with MDM](#deploy-appid-tagging-policies-with-mdm)
-1. [Deploy policies with Configuration Manager](#deploy-appid-tagging-policies-with-configuration manager)
+1. [Deploy policies with Configuration Manager](#deploy-appid-tagging-policies-with-configuration-manager)
 1. [Deploy policies using scripting](#deploy-appid-tagging-policies-via-scripting)
 1. [Deploy using the ApplicationControl CSP](#deploying-policies-via-the-applicationcontrol-csp)
 
