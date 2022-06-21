@@ -48,7 +48,7 @@ The following table lists the default rules that are available for the script ru
 | Allow all users to run scripts in the Program Files folder| (Default Rule) All scripts located in the Program Files folder|Everyone | Path: `%programfiles%\*`| 
  
 > [!NOTE]
-> Windows Defender Application Control cannot be used to block PowerShell scripts. Applocker just forces PowerShell scripts to be run in Constrained Language Mode. Also note that in cases where a PS1 script is "blocked", AppLocker generates an 8007 event, which states that the script will be blocked, but then the script runs.
+> Windows Defender Application Control cannot be used to block PowerShell scripts. AppLocker just forces PowerShell scripts to be run in Constrained Language mode. Also note that in cases where a PS1 script is "blocked", AppLocker generates an 8007 event, which states that the script will be blocked, but then the script runs.
 
 ## Related articles
 
