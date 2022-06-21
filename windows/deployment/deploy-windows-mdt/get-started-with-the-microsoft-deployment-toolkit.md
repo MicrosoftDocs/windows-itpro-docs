@@ -157,7 +157,7 @@ Selection profiles, which are available in the Advanced Configuration node, prov
 MDT uses many log files during operating system deployments. By default the logs are client side, but by configuring the deployment settings, you can have MDT store them on the server, as well.
 
 **Note**  
-The easiest way to view log files is to use Configuration Manager Trace (CMTrace), which is included in the [System Center 2012 R2 Configuration Manager Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=734717).
+The easiest way to view log files is to use Configuration Manager Trace (CMTrace), which is included in the [Configuration Manager Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=734717).
 
 ## Monitoring
 
