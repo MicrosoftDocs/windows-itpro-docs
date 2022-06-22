@@ -826,7 +826,7 @@ Optionally (not required), you can configure the Intune connector for certificat
 
 3. In the navigation pane, right-click the name of the certificate authority and select **Properties**.
 
-4. Select the **Security** tab, then select **Add**. In the **Enter the object names to select** box, enter **NDESSvc** (or the name you gave the NDES Service account).  Select *Check Names*, then select **OK**.  Select the NDES Service account from the **Group or user names** list. Select **Allow** for the **Issue and Manage Certificates** permission.  Select **OK**.
+4. Select the **Security** tab, then select **Add**. In the **Enter the object names to select** box, enter **NDESSvc** (or the name you gave the NDES Service account). Select *Check Names*, then select **OK**. Select the NDES Service account from the **Group or user names** list. Select **Allow** for the **Issue and Manage Certificates** permission. Select **OK**.
 
    ![Configure Intune certificate revocation 02.](images/aadjcert/intuneconfigcertrevocation-02.png)
 
