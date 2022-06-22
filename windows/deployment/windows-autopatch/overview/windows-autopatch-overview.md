@@ -61,7 +61,7 @@ Microsoft remains committed to the security of your data and the [accessibility]
 
 ### Prepare
 
-The following articles describe the mandatory steps to prepare for enrollment, including:
+The following articles describe the mandatory steps to prepare and enroll your tenant into Windows Autopatch:
 
 - [Prerequisites](../prepare/windows-autopatch-prerequisites.md)
 - [Configure your network](../prepare/windows-autopatch-configure-network.md)
@@ -70,7 +70,7 @@ The following articles describe the mandatory steps to prepare for enrollment, i
 
 ### Deploy
 
-Once you're ready to enroll, this section includes the following articles:
+Once you've enrolled your tenant, this section instructs you to:
 
 - [Add and verify admin contacts](../deploy/windows-autopatch-admin-contacts.md)
 - [Register your devices](../deploy/windows-autopatch-register-devices.md)
