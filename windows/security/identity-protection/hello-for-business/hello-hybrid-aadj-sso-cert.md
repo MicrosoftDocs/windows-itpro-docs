@@ -830,7 +830,7 @@ Optionally (not required), you can configure the Intune connector for certificat
 
    ![Configure Intune certificate revocation 02.](images/aadjcert/intuneconfigcertrevocation-02.png)
 
-5. Close the **Certification Authority**
+5. Close the **Certification Authority**.
 
 ## Create and Assign a Simple Certificate Enrollment Protocol (SCEP) Certificate Profile
 
