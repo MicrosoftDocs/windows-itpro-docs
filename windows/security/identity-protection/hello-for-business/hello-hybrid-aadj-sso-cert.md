@@ -814,7 +814,7 @@ Sign-in the NDES server with access equivalent to _local administrator_.
 
 The Intune Certificate Connector application enables Microsoft Intune to enroll certificates using your on-premises PKI for users on devices managed by Microsoft Intune.
 
-To learn how to download, install and configure Intune Certificate Connector, please see [Install the Certificate Connector for Microsoft Intune](/mem/intune/protect/certificate-connector-install)
+To learn how to download, install, and configure the Intune Certificate Connector, see [Install the Certificate Connector for Microsoft Intune](/mem/intune/protect/certificate-connector-install).
 
 ### Configure the NDES Connector for certificate revocation (**Optional**)
 
