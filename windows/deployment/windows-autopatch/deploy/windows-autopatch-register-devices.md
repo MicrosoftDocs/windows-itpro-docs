@@ -57,7 +57,7 @@ To be eligible for Windows Autopatch management, devices must meet a minimum set
 - [Supported Windows 10/11 Enterprise and Professional edition versions](/windows/release-health/supported-versions-windows-client)
 - Either [Hybrid Azure AD-Joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid) or [Azure AD-joined only](/azure/active-directory/devices/concept-azure-ad-join-hybrid) (personal devices aren't supported).
 - Managed by Microsoft Endpoint Manager.
-    - [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune) or [Co-management](/prepare/windows-autopatch-prerequisites.md#co-management-requirements).
+    - [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune) or [Co-management](../prepare/windows-autopatch-prerequisites.md#co-management-requirements).
         - [Switch Microsoft Endpoint Manager-Configuration Manager Co-management workloads to Microsoft Endpoint Manager-Intune](/mem/configmgr/comanage/how-to-switch-workloads) (either set to Pilot Intune or Intune). This includes the following workloads:
             - Windows updates policies
             - Device configuration
