@@ -613,7 +613,7 @@ To use the device (or VM) for other purposes after completion of this lab, you n
 
 ### Delete (deregister) Autopilot device
 
-You need to delete (or retire, or factory reset) the device from Intune before deregistering the device from Autopilot. To delete the device from Intune (not Azure AD), log into the MEM admin center, then go to **Intune > Devices > All Devices**. Select the device you want to delete, then select the **Delete** button along the top menu.
+You need to delete (or retire, or factory reset) the device from Intune before deregistering the device from Autopilot. To delete the device from Intune (not Azure AD), log into the Microsoft Endpoint Manager admin center, then go to **Intune > Devices > All Devices**. Select the device you want to delete, then select the **Delete** button along the top menu.
 
 > [!div class="mx-imgBorder"]
 > ![Delete device step 1.](images/delete-device1.png)

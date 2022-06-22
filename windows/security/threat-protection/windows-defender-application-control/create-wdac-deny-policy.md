@@ -157,7 +157,7 @@ Policies should be thoroughly evaluated and first rolled out in audit mode befor
 
 1. Mobile Device Management (MDM): [Deploy Windows Defender Application Control (WDAC) policies using Mobile Device Management (MDM) (Windows)](deploy-windows-defender-application-control-policies-using-intune.md)
 
-2. Microsoft Endpoint Configuration Manager (MEMCM): [Deploy Windows Defender Application Control (WDAC) policies by using Microsoft Endpoint Configuration Manager (MEMCM) (Windows)](deployment/deploy-wdac-policies-with-memcm.md)
+2. Configuration Manager: [Deploy Windows Defender Application Control (WDAC) policies by using Configuration Manager (Windows)](deployment/deploy-wdac-policies-with-memcm.md)
 
 3. Scripting [Deploy Windows Defender Application Control (WDAC) policies using script (Windows)](deployment/deploy-wdac-policies-with-script.md)
 

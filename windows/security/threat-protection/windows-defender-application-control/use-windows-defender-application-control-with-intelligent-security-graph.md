@@ -43,7 +43,7 @@ If the file with good reputation is an application installer, its reputation wil
 WDAC periodically re-queries the reputation data on a file. Additionally, enterprises can specify that any cached reputation results are flushed on reboot by using the **Enabled:Invalidate EAs on Reboot** option.
 
 >[!NOTE]
->Admins should make sure there is a Windows Defender Application Control policy in place to allow the system to boot and run any other authorized applications that may not be classified as being known good by the Intelligent Security Graph, such as custom line-of-business (LOB) apps. Since the Intelligent Security Graph is powered by global prevalence data, internal LOB apps may not be recognized as being known good. Other mechanisms like managed installer and explicit rules will help cover internal applications. Both Microsoft Endpoint Manager Configuration Manager (MEMCM) and Microsoft Endpoint Manager Intune (MEM Intune) can be used to create and push a WDAC policy to your client machines.  
+>Admins should make sure there is a Windows Defender Application Control policy in place to allow the system to boot and run any other authorized applications that may not be classified as being known good by the Intelligent Security Graph, such as custom line-of-business (LOB) apps. Since the Intelligent Security Graph is powered by global prevalence data, internal LOB apps may not be recognized as being known good. Other mechanisms like managed installer and explicit rules will help cover internal applications. Both Microsoft Endpoint Configuration Manager and Microsoft Endpoint Manager Intune can be used to create and push a WDAC policy to your client machines.  
 
 ## Configuring Intelligent Security Graph authorization for Windows Defender Application Control
 
@@ -90,7 +90,7 @@ In order for the heuristics used by the ISG to function properly, a number of co
 appidtel start
 ```
 
-This step isn't required for Windows Defender Application Control policies deployed over MDM, as the CSP will enable the necessary components. This step is also not required when the ISG is configured using MEMCM's WDAC integration.
+This step isn't required for Windows Defender Application Control policies deployed over MDM, as the CSP will enable the necessary components. This step is also not required when the ISG is configured using Configuration Manager's WDAC integration.
 
 ## Security considerations with the Intelligent Security Graph
 
@@ -130,4 +130,4 @@ Packaged apps are not supported with the Microsoft Intelligent Security Graph he
 The ISG doesn't authorize kernel mode drivers. The WDAC policy must have rules that allow the necessary drivers to run.  
 
 >[!NOTE]
-> A rule that explicitly denies or allows a file will take precedence over that file's reputation data. MEM Intune's built-in Windows Defender Application Control support includes the option to trust apps with good reputation via the Microsoft Intelligent Security Graph, but it has no option to add explicit allow or deny rules. In most circumstances, customers enforcing application control need to deploy a custom WDAC policy (which can include the Microsoft Intelligent Security Graph option if desired) using [Intune's OMA-URI functionality](deploy-windows-defender-application-control-policies-using-intune.md#deploy-wdac-policies-with-custom-oma-uri).
+> A rule that explicitly denies or allows a file will take precedence over that file's reputation data. Microsoft Endpoint Manager Intune's built-in Windows Defender Application Control support includes the option to trust apps with good reputation via the Microsoft Intelligent Security Graph, but it has no option to add explicit allow or deny rules. In most circumstances, customers enforcing application control need to deploy a custom WDAC policy (which can include the Microsoft Intelligent Security Graph option if desired) using [Intune's OMA-URI functionality](deploy-windows-defender-application-control-policies-using-intune.md#deploy-wdac-policies-with-custom-oma-uri).
