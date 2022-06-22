@@ -818,7 +818,7 @@ To learn how to download, install, and configure the Intune Certificate Connecto
 
 ### Configure the NDES Connector for certificate revocation (**Optional**)
 
-Optionally (not required), you can configure the Intune connector for certificate revocation when a device is wiped, unenrolled, or when the certificate profile falls out of scope for the targeted user (users is removed, deleted, or the profile is deleted). You need to select **Certificate revocation** option during the connector configuration to enable automatic certificate revocation for certificates issued from a Microsoft Active Directory Certification Authority. Additionally, you need to  enable the NDES Service account for revocation.
+Optionally (not required), you can configure the Intune connector for certificate revocation when a device is wiped, unenrolled, or when the certificate profile falls out of scope for the targeted user (users are removed, deleted, or the profile is deleted). You need to select the **Certificate revocation** option during the connector configuration to enable automatic certificate revocation for certificates issued from a Microsoft Active Directory Certification Authority. Additionally, you need to enable the NDES Service account for revocation.
 
 1. Sign-in the certificate authority used by the NDES Connector with access equivalent to _domain administrator_.
 
