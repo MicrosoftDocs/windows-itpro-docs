@@ -31,7 +31,7 @@ The following table shows the App-V versions, methods of Office package creation
 
 ## Creating Office 2010 App-V using the sequencer
 
-Sequencing Office 2010 is one of the main methods for creating an Office 2010 package on App-V. Microsoft has provided a detailed recipe through a Knowledge Base article. For detailed instructions about how to create an Office 2010 package on App-V, see [How To Sequence Microsoft Office 2010 in Microsoft Application Virtualization 5.0](https://support.microsoft.com/kb/2830069).
+Sequencing Office 2010 is one of the main methods for creating an Office 2010 package on App-V. For more information, see [How to Sequence a New Application with App-V 5.0](s/microsoft-desktop-optimization-pack/appv-v5/how-to-sequence-a-new-application-with-app-v-50-beta-gb18030).
 
 ## Creating Office 2010 App-V packages using package accelerators
 
