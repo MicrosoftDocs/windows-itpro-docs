@@ -88,7 +88,7 @@ Each file rule level has its benefit and disadvantage. Use Table 2 to select the
 
 | Rule level | Description |
 |----------- | ----------- |
-| **Hash** | Specifies individual hash values for each discovered binary. This is the most specific level, and requires more effort to maintain the current product versions’ hash values. Each time a binary is updated, the hash value changes, therefore requiring a policy update. |
+| **Hash** | Specifies individual [Authenticode/PE image hash values](#More-information-about-hashes) for each discovered binary. This is the most specific level, and requires more effort to maintain the current product versions’ hash values. Each time a binary is updated, the hash value changes, therefore requiring a policy update. |
 | **FileName** | Specifies the original filename for each binary. Although the hash values for an application are modified when updated, the file names are typically not. This level offers less specific security than the hash level, but it doesn't typically require a policy update when any binary is modified. |
 | **FilePath** | Beginning with Windows 10 version 1903, this level allows binaries to run from specific file path locations. More information about FilePath level rules can be found below. |
 | **SignedVersion** | This level combines the publisher rule with a version number. It allows anything to run from the specified publisher with a version at or above the specified version number. |
@@ -145,6 +145,10 @@ You can also use the following macros when the exact volume may vary: `%OSDRIVE%
 > There is currently a bug where MSIs cannot be allow listed in file path rules. MSIs must be allow listed using other rule types, for example, publisher rules or file attribute rules.
 
 ## More information about hashes
+
+WDAC uses the [Authenticode/PE image hash algorithm](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/Authenticode_PE.docx) when calcuating the hash of a file. Unlike the more popular, but less secure, [flat file hash](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/get-filehash), the Authenticode hash calculation omits the file's checksum and the Certificate Table and the Attribute Certificate Table. Therefore, the Authenticode hash of a file does not change when the file is re-signed or timestamped, or the digital signature is removed from the file. By using the Authenticode hash, WDAC provides added security and less management overhead so customers do not need to revise the policy hash rules when the digital signature on the file is updated. 
+
+The Authenticode/PE image hash can be calculated for digitally-signed and unsigned files. 
 
 ### Why does scan create four hash rules per XML file?
 
