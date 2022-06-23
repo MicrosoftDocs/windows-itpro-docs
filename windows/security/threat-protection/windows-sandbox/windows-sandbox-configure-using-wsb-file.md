@@ -112,7 +112,7 @@ An array of folders, each representing a location on the host machine that will 
 
 ### Logon command
 
-Specifies a single command that will be invoked automatically after the sandbox logs on. Apps in the sandbox are run under the container user account.
+Specifies a single command that will be invoked automatically after the sandbox logs on. Apps in the sandbox are run under the container user account. The container user account should be an Administrator.
 
 ```xml
 <LogonCommand>
