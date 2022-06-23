@@ -41,7 +41,58 @@ MEMCM includes native support for WDAC, which allows you to configure Windows 10
 
 Note that MEMCM does not remove policies once deployed. To stop enforcement, you should switch the policy to audit mode, which will produce the same effect. If you want to disable WDAC altogether (including audit mode), you can deploy a script to delete the policy file from disk, and either trigger a reboot or wait for the next reboot.
 
+### Create a WDAC Policy in MEMCM
+
+1. Select **Asset and Compliance** > **Endpoint Protection** > **Windows Defender Application Control** > **Create Application Control Policy**
+
+![Create a WDAC policy in MEMCM.](../images/memcm/memcm-create-wdac-policy.jpg)
+
+2. Enter the name of the policy > **Next**
+3. Enable **Enforce a restart of devices so that this policy can be enforced for all processes**
+4. Select the mode which you want the policy to run (Enforcement enabled / Audit Only) 
+5. Click **Next**
+
+![Create an enforced WDAC policy in MEMCM.](../images/memcm/memcm-create-wdac-policy-2.jpg)
+
+6. Click **Add** to begin creating rules for trusted software
+
+![Create a WDAC path rule in MEMCM.](../images/memcm/memcm-create-wdac-rule.jpg)
+
+7. Select **File** or **Folder** to create a path rule > **Browse**
+
+![Create a WDAC path rule in MEMCM.](../images/memcm/memcm-create-wdac-rule-2.jpg)
+
+8. Select the executable or folder for your path rule > **OK**
+
+![Select the file or folder.](../images/memcm/memcm-create-wdac-rule-3.jpg)
+
+9. Select **OK** to add the rule to the table of trusted files or folder
+10. Select **Next** to navigate to the summary page > **Close**
+
+![Confirm the WDAC path rule in MEMCM.](../images/memcm/memcm-confirm-wdac-rule.jpg)
+
+### Deploy the WDAC Policy in MEMCM
+
+1. Right-click the newly created policy > **Deploy Application Control Policy**
+
+![Deploy WDAC via MEMCM.](../images/memcm/memcm-deploy-wdac.jpg)
+
+2. Select **Browse**
+
+![Deploy WDAC via MEMCM.](../images/memcm/memcm-deploy-wdac-2.jpg)
+
+3. Select the Device Collection you created earlier > **OK**
+
+![Select the device collection.](../images/memcm/memcm-deploy-wdac-3.jpg)
+
+4. Change the schedule > **OK**
+
+![Change the WDAC deployment schedule.](../images/memcm/memcm-deploy-wdac-4.jpg)
+
+
 For more information on using MEMCM's native WDAC policies, see [Windows Defender Application Control management with Configuration Manager](/mem/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager).
+
+The entire WDAC in MEMCM Lab Paper is available for download [here](../pdfs/WDAC-Deploy-WDAC-using-MEMCM.pdf).
 
 ## Deploy custom WDAC policies using Packages/Programs or Task Sequences
 

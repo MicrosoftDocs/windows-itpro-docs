@@ -41,7 +41,7 @@ All WDAC policy changes should be deployed in audit mode before proceeding to en
 
 There are several options to deploy WDAC policies to managed endpoints, including:
 
-1. [Deploy using a Mobile Device Management (MDM) solution](deploy-windows-defender-application-control-policies-using-intune.md), such as Microsoft Intune
+1. [Deploy using a Mobile Device Management (MDM) solution](deployment/deploy-windows-defender-application-control-policies-using-intune.md), such as Microsoft Intune
 2. [Deploy using Microsoft Endpoint Configuration Manager (MEMCM)](deployment/deploy-wdac-policies-with-memcm.md)
 3. [Deploy via script](deployment/deploy-wdac-policies-with-script.md)
-4. [Deploy via Group Policy](deploy-windows-defender-application-control-policies-using-group-policy.md)
+4. [Deploy via Group Policy](deployment/deploy-windows-defender-application-control-policies-using-group-policy.md)

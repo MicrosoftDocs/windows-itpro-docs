@@ -159,4 +159,4 @@ Policies should be thoroughly evaluated and first rolled out in audit mode befor
 
 3. Scripting [Deploy Windows Defender Application Control (WDAC) policies using script (Windows)](deployment/deploy-wdac-policies-with-script.md)
 
-4. Group Policy: [Deploy WDAC policies via Group Policy (Windows)](deploy-windows-defender-application-control-policies-using-group-policy.md)
+4. Group Policy: [Deploy WDAC policies via Group Policy (Windows)](deployment/deploy-windows-defender-application-control-policies-using-group-policy.md)
