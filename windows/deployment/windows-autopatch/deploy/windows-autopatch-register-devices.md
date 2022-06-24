@@ -6,8 +6,8 @@ ms.prod: w11
 ms.technology: windows
 ms.topic: how-to
 ms.localizationpriority: medium
-author: andredm7
-ms.author: andredm7
+author: tiaraquan
+ms.author: tiaraquan
 manager: dougeby
 msreviewer: andredm7
 ---
