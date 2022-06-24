@@ -1,13 +1,13 @@
 ---
 title: Register your devices
 description:  This article details how to register devices in Autopatch
-ms.date: 06/15/2022
+ms.date: 06/24/2022
 ms.prod: w11
 ms.technology: windows
 ms.topic: how-to
 ms.localizationpriority: medium
-author: tiaraquan
-ms.author: tiaraquan
+author: andredm7
+ms.author: andredm7
 manager: dougeby
 msreviewer: andredm7
 ---
@@ -50,6 +50,17 @@ Azure AD groups synced up from:
 > [!TIP]
 > You can also use the **Discover Devices** button in either the Ready or Not ready tab to discover devices from the Windows Autopatch Device Registration Azure AD group on demand.
 
+### Cleaning up dual state of Hybrid Azure AD joined and Azure registered devices in your Azure AD tenant
+
+[Azure AD dual state](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan#handling-devices-with-azure-ad-registered-state) happens when a device is initially connected to Azure AD as an [Azure AD Registered](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-register) device, but then as you enable Hybrid Azure AD join, the same device is connected twice to Azure AD but now as a [Hybrid Azure AD device](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join-hybrid).
+
+When dual state happens, you end up having two Azure AD device records with different join types for the same device. in this case, the Hybrid Azure AD device record takes precedence over the Azure AD registered device record for any type of authentication in Azure AD, which makes the Azure AD registered device record stale.
+
+It's recommended to detect and clean up stale devices in Azure AD before registering devices with Windows Autopatch, see [How To: Manage state devices in Azure AD](https://docs.microsoft.com/azure/active-directory/devices/manage-stale-devices).
+
+> [!WARNING]
+> If you don't clean up stale devices in Azure AD before registering devices with Windows Autopatch, you might end up seeing devices failing to meet the pre-requisite check **Intune or Cloud-Attached (Device must be either Intune-managed or Co-managed)** in the **Not ready** tab as it's expected that these Azure AD stale devices are not enrolled into the Intune service anymore.
+
 ## Prerequisites for device registration
 
 To be eligible for Windows Autopatch management, devices must meet a minimum set of required software-based prerequisites:
@@ -57,7 +68,7 @@ To be eligible for Windows Autopatch management, devices must meet a minimum set
 - [Supported Windows 10/11 Enterprise and Professional edition versions](/windows/release-health/supported-versions-windows-client)
 - Either [Hybrid Azure AD-Joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid) or [Azure AD-joined only](/azure/active-directory/devices/concept-azure-ad-join-hybrid) (personal devices aren't supported).
 - Managed by Microsoft Endpoint Manager.
-    - [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune) or [Co-management](../prepare/windows-autopatch-prerequisites.md#co-management-requirements).
+    - [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune) or [Configuration Manager Co-management](../prepare/windows-autopatch-prerequisites.md#co-management-requirements).
         - [Switch Microsoft Endpoint Manager-Configuration Manager Co-management workloads to Microsoft Endpoint Manager-Intune](/mem/configmgr/comanage/how-to-switch-workloads) (either set to Pilot Intune or Intune). This includes the following workloads:
             - Windows updates policies
             - Device configuration
@@ -82,7 +93,6 @@ Windows Autopatch introduces a new user interface to help IT admins detect and t
 A role defines the set of permissions granted to users assigned to that role. You can use one of the following built-in roles in Windows Autopatch to register devices:
 
 - Azure AD Global Administrator
-- Service Support Administrator
 - Intune Service Administrator
 - Modern Workplace Intune Administrator
 
