@@ -1,18 +1,12 @@
 ---
 title: Create and deploy a Windows Information Protection (WIP) policy using Microsoft Endpoint Manager (Windows 10)
 description: Use Configuration Manager to make & deploy a Windows Information Protection (WIP) policy. Choose protected apps, WIP-protection level, and find enterprise data.
-ms.assetid: 85b99c20-1319-4aa3-8635-c1a87b244529
 ms.reviewer: 
-keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, SCCM, System Center Configuration Manager, Configuration Manager, MEMCM, Microsoft Endpoint Configuration Manager
 ms.prod: m365-security
-ms.mktglfcycl: explore
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 01/09/2020

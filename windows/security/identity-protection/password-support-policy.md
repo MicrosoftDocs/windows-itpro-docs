@@ -8,13 +8,10 @@ ms.custom:
 - CSSTroubleshoot 
 ms.author: v-tappelgate
 ms.prod: m365-security
-ms.sitesec: library
-ms.pagetype: security
 author: Teresa-Motiv
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 11/20/2019
-audience: ITPro
 ---
 
 # Technical support policy for lost or forgotten passwords
