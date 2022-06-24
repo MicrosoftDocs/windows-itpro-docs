@@ -50,16 +50,16 @@ Azure AD groups synced up from:
 > [!TIP]
 > You can also use the **Discover Devices** button in either the Ready or Not ready tab to discover devices from the Windows Autopatch Device Registration Azure AD group on demand.
 
-### Cleaning up dual state of Hybrid Azure AD joined and Azure registered devices in your Azure AD tenant
+### Clean up dual state of Hybrid Azure AD joined and Azure registered devices in your Azure AD tenant
 
-[Azure AD dual state](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan#handling-devices-with-azure-ad-registered-state) happens when a device is initially connected to Azure AD as an [Azure AD Registered](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-register) device, but then as you enable Hybrid Azure AD join, the same device is connected twice to Azure AD but now as a [Hybrid Azure AD device](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join-hybrid).
+[Azure AD dual state](/azure/active-directory/devices/hybrid-azuread-join-plan#handling-devices-with-azure-ad-registered-state) happens when a device is initially connected to Azure AD as an [Azure AD Registered](/azure/active-directory/devices/concept-azure-ad-register) device. However, when you enable Hybrid Azure AD join, the same device is connected twice to Azure AD but as a [Hybrid Azure AD device](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
 
-When dual state happens, you end up having two Azure AD device records with different join types for the same device. in this case, the Hybrid Azure AD device record takes precedence over the Azure AD registered device record for any type of authentication in Azure AD, which makes the Azure AD registered device record stale.
+In dual state, you end up having two Azure AD device records with different join types for the same device. In this case, the Hybrid Azure AD device record takes precedence over the Azure AD registered device record for any type of authentication in Azure AD, which makes the Azure AD registered device record stale.
 
-It's recommended to detect and clean up stale devices in Azure AD before registering devices with Windows Autopatch, see [How To: Manage state devices in Azure AD](https://docs.microsoft.com/azure/active-directory/devices/manage-stale-devices).
+It's recommended to detect and clean up stale devices in Azure AD before registering devices with Windows Autopatch, see [How To: Manage state devices in Azure AD](/azure/active-directory/devices/manage-stale-devices).
 
 > [!WARNING]
-> If you don't clean up stale devices in Azure AD before registering devices with Windows Autopatch, you might end up seeing devices failing to meet the pre-requisite check **Intune or Cloud-Attached (Device must be either Intune-managed or Co-managed)** in the **Not ready** tab as it's expected that these Azure AD stale devices are not enrolled into the Intune service anymore.
+> If you don't clean up stale devices in Azure AD before registering devices with Windows Autopatch, you might end up seeing devices failing to meet the **Intune or Cloud-Attached (Device must be either Intune-managed or Co-managed)** pre-requisite check  in the **Not ready** tab because it's expected that these stale Azure AD devices are not enrolled into the Intune service anymore.
 
 ## Prerequisites for device registration
 
