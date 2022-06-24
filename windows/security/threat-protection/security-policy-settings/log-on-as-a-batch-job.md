@@ -27,7 +27,7 @@ This article describes the recommended practices, location, values, policy manag
 
 ## Reference
 
-This policy setting determines which accounts can log on by using a batch-queue tool such as the Task Scheduler service. When you use the Add Scheduled Task Wizard to schedule a task to run under a particular user name and password, that user is automatically assigned the **Log on as a batch job** user right. When the scheduled time arrives, the Task Scheduler service logs on the user as a batch job instead of as an interactive user, and the task runs in the user's security context.
+This policy setting determines which accounts can sign in by using a batch-queue tool such as the Task Scheduler service. When you use the Add Scheduled Task Wizard to schedule a task to run under a particular user name and password, that user is automatically assigned the **Log on as a batch job** user right. When the scheduled time arrives, the Task Scheduler service logs on the user as a batch job instead of as an interactive user, and the task runs in the user's security context.
 
 Constant: SeBatchLogonRight
 
@@ -95,7 +95,7 @@ For IIS servers, configure this policy locally instead of through domain–based
 
 ### Potential impact
 
-If you configure the **Log on as a batch job** setting by using domain-based Group Policy settings, the computer can't assign the user right to accounts that are used for scheduled jobs in the Task Scheduler. If you install optional components such as ASP.NET or IIS, you might need to assign this user right to additional accounts that those components require. For example, IIS requires assignment of this user right to the IIS\_WPG group and the IUSR\_*&lt;ComputerName&gt;*, ASPNET, and IWAM\_*&lt;ComputerName&gt;* accounts. If this user right isn't assigned to this group and these accounts, IIS can't run some COM objects that are necessary for proper functionality.
+If you configure the **Log on as a batch job** setting by using domain-based Group Policy settings, the computer can't assign the user right to accounts that are used for scheduled jobs in the Task Scheduler. If you install optional components such as ASP.NET or IIS, you might need to assign this user right to other accounts that those components require. For example, IIS requires assignment of this user right to the IIS\_WPG group and the IUSR\_*&lt;ComputerName&gt;*, ASPNET, and IWAM\_*&lt;ComputerName&gt;* accounts. If this user right isn't assigned to this group and these accounts, IIS can't run some COM objects that are necessary for proper functionality.
 
 ## Related topics
 
