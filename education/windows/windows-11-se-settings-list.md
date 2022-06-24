@@ -45,7 +45,9 @@ The following table lists and describes the settings that can be changed by admi
 | Block external extensions  | Default: Blocked<br/><br/>In Microsoft Edge, users can't install external extensions. <br/><br/>[BlockExternalExtensions](/DeployEdge/microsoft-edge-policies#blockexternalextensions)|
 | Configure new tab page  | Default: `Office.com`<br/><br/>In Microsoft Edge, the new tab page defaults to `office.com`. <br/><br/>[Configure the new tab page URL](/DeployEdge/microsoft-edge-policies#configure-the-new-tab-page-url)|
 | Configure homepage  | Default: `Office.com`<br/><br/>In Microsoft Edge, the homepage defaults to `office.com`. <br/><br/>[HomepageIsNewTabPage](/DeployEdge/microsoft-edge-policies#homepageisnewtabpage)|
-| Prevent SmartScreen prompt override  | Default: Enabled<br/><br/>In Microsoft Edge, users can't override Windows Defender SmartScreen warnings. <br/><br/>[PreventSmartScreenPromptOverride](/DeployEdge/microsoft-edge-policies#preventsmartscreenpromptoverride)|
+| Prevent SmartScreen prompt override  | Default: Enabled<br/><br/>In Microsoft Edge, users can't override Windows Defender SmartScreen warnings. <br/><br/>[PreventSmartScreenPromptOverride](/DeployEdge/microsoft-edge-policies#preventsmartscreenpromptoverride)|\
+| Wallpaper Image Customization  | Default: <br/><br/>Specify a jpg, jpeg or png image to be used as Desktop Image. This setting can take an http or https Url to a remote image to be downloaded, a file Url to a local image. <br/><br/>[DesktopImageUrl](/windows/client-management/mdm/personalization-csp)|
+| Lock Screen Image Customization  | Default: <br/><br/>Specify a jpg, jpeg or png image to be used as Lock Screen Image. This setting can take an http or https Url to a remote image to be downloaded, a file Url to a local image. <br/><br/>[LockScreenImageUrl](/windows/client-management/mdm/personalization-csp)|
 
 ## Settings that can't be changed
 
