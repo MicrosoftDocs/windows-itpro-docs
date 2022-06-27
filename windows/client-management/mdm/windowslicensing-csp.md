@@ -1,7 +1,6 @@
 ---
 title: WindowsLicensing CSP
 description: Learn how the WindowsLicensing configuration service provider (CSP) is designed for licensing related management scenarios.
-ms.assetid: E6BC6B0D-1F16-48A5-9AC4-76D69A7EDDA6
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -20,6 +19,7 @@ The table below shows the applicability of Windows:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|

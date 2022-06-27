@@ -2,11 +2,7 @@
 title: Get started with Update Compliance
 manager: dougeby
 description: Prerequisites, Azure onboarding, and configuring devices for Update Compliance 
-keywords: update compliance, oms, operations management suite, prerequisites, requirements, updates, upgrades, antivirus, antimalware, signature, log analytics, wdav
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.pagetype: deploy
-audience: itpro
 author: aczechowski
 ms.author: aaroncz
 ms.localizationpriority: medium
@@ -23,11 +19,6 @@ ms.date: 05/03/2022
 
 - Windows 10
 - Windows 11
-
-> [!IMPORTANT]
-> **A new policy is required to use Update Compliance: "AllowUpdateComplianceProcessing"**. If you're already using Update Compliance and have configured your devices prior to May 10, 2021, you must configure devices with this additional policy. You can do this by rerunning the [Update Compliance Configuration Script](update-compliance-configuration-script.md) if you configure your devices through Group Policy, or refer to [Manually configuring devices for Update Compliance](update-compliance-configuration-manual.md) for details on manually configuring the new policy for both Group Policy and MDM.
->
-> Devices must have this policy configured by January 31, 2022, to remain enrolled in Update Compliance. Devices without this policy configured, including Windows 10 releases prior to version 1809 which do not support this policy, will stop appearing in Update Compliance reports after this date.
 
 This topic introduces the high-level steps required to enroll to the Update Compliance solution and configure devices to send data to it. The following steps cover the enrollment and device configuration workflow.
 

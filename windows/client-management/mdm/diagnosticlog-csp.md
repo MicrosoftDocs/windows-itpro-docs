@@ -1,7 +1,6 @@
 ---
 title: DiagnosticLog CSP
 description: Learn about the feature areas of the DiagnosticLog configuration service provider (CSP), including the DiagnosticLog area and Policy area.
-ms.assetid: F76E0056-3ACD-48B2-BEA1-1048C96571C3
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -20,6 +19,7 @@ The table below shows the applicability of Windows:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|

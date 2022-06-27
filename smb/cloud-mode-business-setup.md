@@ -574,7 +574,7 @@ See [Add users to Office 365](/microsoft-365/admin/add-users/add-users) to learn
 To learn more about the services and tools mentioned in this walkthrough, and learn what other tasks you can do, follow these links:
 - [Set up Office 365 for business](/microsoft-365/admin/setup)
 - Common admin tasks in Office 365 including email and OneDrive in [Manage Office 365](/microsoft-365/admin/)
-- More info about managing devices, apps, data, troubleshooting, and more in the [/mem/intune/](/mem/intune/)
+- More info about managing devices, apps, data, troubleshooting, and more in the [Intune documentation](/mem/intune/)
 - Learn more about Windows client in the [Windows client documentation for IT Pros](/windows/resources/).
 - Info about distributing apps to your employees, managing apps, managing settings, and more in [Microsoft Store for Business](/microsoft-store/)
 

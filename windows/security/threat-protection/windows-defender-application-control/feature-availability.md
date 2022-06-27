@@ -1,6 +1,6 @@
 ---
 title:  Windows Defender Application Control Feature Availability
-description: Compare WDAC and AppLocker feature availability.
+description: Compare Windows Defender Application Control (WDAC) and AppLocker feature availability.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: m365-security
@@ -14,7 +14,7 @@ author: denisebmsft
 ms.reviewer: jgeurten
 ms.author: deniseb
 manager: dansimp
-ms.date: 05/09/2022
+ms.date: 06/27/2022
 ms.custom: asr
 ms.technology: windows-sec
 ---
@@ -23,14 +23,14 @@ ms.technology: windows-sec
 
 **Applies to:**
 
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
 
->[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. See below to learn more.
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. See below to learn more.
 
-| Capability  | WDAC | AppLocker   |
+| Capability  | Windows Defender Application Control | AppLocker   |
 |-------------|------|-------------|
 | Platform support    | Available on Windows 10, Windows 11, and Windows Server 2016 or later  | Available on Windows 8 or later   |
 | SKU availability     | Cmdlets are available on all SKUs on 1909+ builds.<br>For pre-1909 builds, cmdlets are only available on Enterprise but policies are effective on all SKUs.  | Policies deployed through GP are only effective on Enterprise devices.<br>Policies deployed through MDM are effective on all SKUs.  |

@@ -25,7 +25,7 @@ ms.localizationpriority: medium
 - Windows Server 2016 and above
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
+>Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic describes how to deploy Windows Defender Application Control (WDAC) policies using script. The instructions below use PowerShell but can work with any scripting host.
 
@@ -43,7 +43,7 @@ This topic describes how to deploy Windows Defender Application Control (WDAC) p
     $RefreshPolicyTool = "<Path where RefreshPolicy.exe can be found from managed endpoints>"
     ```
 
-2. Copy WDAC policy binary to the destination folder.
+2. Copy Windows Defender Application Control (WDAC) policy binary to the destination folder.
 
    ```powershell
    Copy-Item -Path $PolicyBinary -Destination $DestinationFolder -Force
@@ -66,7 +66,7 @@ This topic describes how to deploy Windows Defender Application Control (WDAC) p
     $DestinationBinary = $env:windir+"\System32\CodeIntegrity\SiPolicy.p7b"
     ```
 
-2. Copy WDAC policy binary to the destination.
+2. Copy Windows Defender Application Control (WDAC) policy binary to the destination.
 
    ```powershell
    Copy-Item  -Path $PolicyBinary -Destination $DestinationBinary -Force
@@ -80,7 +80,7 @@ This topic describes how to deploy Windows Defender Application Control (WDAC) p
 
 ## Deploying signed policies
 
-In addition to the steps outlined above, the binary policy file must also be copied to the device's EFI partition. Deploying your policy via [MEM](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune) or the Application Control CSP will handle this step automatically. 
+In addition to the steps outlined above, the binary policy file must also be copied to the device's EFI partition. Deploying your policy via [Microsoft Endpoint Manager](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune) or the Application Control CSP will handle this step automatically. 
 
 1. Mount the EFI volume and make the directory, if it does not exist, in an elevated PowerShell prompt: 
 

@@ -27,14 +27,14 @@ ms.technology: windows-sec
 -   Windows Server 2016 and above
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+>Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
 > [!NOTE]
-> Group Policy-based deployment of WDAC policies only supports single-policy format WDAC policies. To use WDAC on devices running Windows 10 1903 and greater, or Windows 11, we recommend using an alternative method for policy deployment.
+> Group Policy-based deployment of Windows Defender Application Control policies only supports single-policy format WDAC policies. To use WDAC on devices running Windows 10 1903 and greater, or Windows 11, we recommend using an alternative method for policy deployment.
 
-Single-policy format WDAC policies (pre-1903 policy schema) can be easily deployed and managed with Group Policy. The following procedure walks you through how to deploy a WDAC policy called **ContosoPolicy.bin** to a test OU called *WDAC Enabled PCs* by using a GPO called **Contoso GPO Test**.
+Single-policy format Windows Defender Application Control policies (pre-1903 policy schema) can be easily deployed and managed with Group Policy. The following procedure walks you through how to deploy a WDAC policy called **ContosoPolicy.bin** to a test OU called *WDAC Enabled PCs* by using a GPO called **Contoso GPO Test**.
 
-To deploy and manage a WDAC policy with Group Policy:
+To deploy and manage a Windows Defender Application Control policy with Group Policy:
 
 1. On a client computer on which RSAT is installed, open the GPMC by running **GPMC.MSC**
 

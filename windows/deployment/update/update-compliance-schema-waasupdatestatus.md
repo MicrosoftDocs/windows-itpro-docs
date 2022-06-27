@@ -4,9 +4,6 @@ ms.reviewer:
 manager: dougeby
 description: WaaSUpdateStatus schema
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.pagetype: deploy
-audience: itpro
 author: aczechowski
 ms.author: aaroncz
 ms.collection: M365-analytics
@@ -20,7 +17,7 @@ WaaSUpdateStatus records contain device-centric data and acts as the device reco
 |Field |Type |Example |Description |
 |--|-|----|------------------------|
 |**Computer** |[string](/azure/kusto/query/scalar-data-types/string) |`JohnPC-Contoso` |User or Organization-provided device name. If this appears as '#', then Device Name may not be sent through telemetry. To enable Device Name to be sent with telemetry, see [Enabling Device Name in Telemetry](./update-compliance-get-started.md). |
-|**ComputerID** |[string](/azure/kusto/query/scalar-data-types/string) |`g:6755412281299915` |Microsoft Global Device Identifier. This is an internal identifier used by Microsoft. A connection to the end-user Managed Service Account (MSA) service is required for this identifier to be populated; no device data will be present in Update Compliance without this identifier. |
+|**ComputerID** |[string](/azure/kusto/query/scalar-data-types/string) |`g:6755412281299915` |Microsoft Global Device Identifier. This is an internal identifier used by Microsoft. A connection to the end-user managed service account is required for this identifier to be populated; no device data will be present in Update Compliance without this identifier. |
 |**DownloadMode** |[string](/azure/kusto/query/scalar-data-types/string) |`Simple (99)` |The device's Delivery Optimization DownloadMode. To learn about possible values, see [Delivery Optimization Reference - Download mode](../do/waas-delivery-optimization-reference.md#download-mode) |
 |**FeatureDeferralDays** |[int](/azure/kusto/query/scalar-data-types/int) |`0`                        |The on-client Windows Update for Business Deferral Policy days.<br> - **<0**: A value below 0 indicates the policy is disabled. <br> - **0**: A value of 0 indicates the policy is enabled, but the deferral period is zero days.<br> - **1+**: A value of 1 and above indicates the deferral setting, in days. |
 |**FeaturePauseDays** |[int](/azure/kusto/query/scalar-data-types/int) |`0` |*Deprecated* This provides the count of days left in a pause |

@@ -31,7 +31,7 @@ ms.technology: windows-sec
 
 ## AppId Tagging Feature Overview
 
-The Application ID (AppId) Tagging Policy feature, while based off WDAC, does not control whether applications will run. AppId Tagging policies can be used to mark the processes of the running application with a customizable tag defined in the policy. Application processes that pass the AppId policy will receive the tag while failing applications won't. 
+The Application ID (AppId) Tagging Policy feature, while based off Windows Defender Application Control (WDAC), does not control whether applications will run. AppId Tagging policies can be used to mark the processes of the running application with a customizable tag defined in the policy. Application processes that pass the AppId policy will receive the tag while failing applications won't. 
 
 ## AppId Tagging Feature Availability
 

@@ -396,7 +396,7 @@ For the purposes of this demo, select **All** under the **MDM user scope** and s
 
 ## Register your VM
 
-Your VM (or device) can be registered either via Intune or Microsoft Store for Business (MSfB).  Both processes are shown here, but *only pick one* for the purposes of this lab. It's highly recommended that you use Intune rather than MSfB.
+Your VM (or device) can be registered either via Intune or Microsoft Store for Business (MSfB).  Both processes are shown here, but *only pick one* for the purposes of this lab. It's highly recommended that you use Intune rather than Microsoft Store for Business.
 
 ### Autopilot registration using Intune
 
@@ -430,7 +430,7 @@ Optional: see the following video for an overview of the process.
 
 > [!video https://www.youtube.com/embed/IpLIZU_j7Z0]
 
-First, you need a MSfB account. You can use the same one you created above for Intune, or follow [these instructions](/microsoft-store/windows-store-for-business-overview) to create a new one.
+First, you need a Microsoft Store for Business account. You can use the same one you created above for Intune, or follow [these instructions](/microsoft-store/windows-store-for-business-overview) to create a new one.
 
 Next, to sign in to [Microsoft Store for Business](https://businessstore.microsoft.com/en-us/store) with your test account,  select **Sign in** on the upper-right-corner of the main page.
 
@@ -445,16 +445,16 @@ Select the **Add devices** link to upload your CSV file. A message appears that 
 ## Create and assign a Windows Autopilot deployment profile
 
 > [!IMPORTANT]
-> Autopilot profiles can be created and assigned to your registered VM or device either through Intune or MSfB. Both processes are shown here, but only *pick one for the purposes of this lab*:
+> Autopilot profiles can be created and assigned to your registered VM or device either through Intune or Microsoft Store for Business. Both processes are shown here, but only *pick one for the purposes of this lab*:
 
 Pick one:
 - [Create profiles using Intune](#create-a-windows-autopilot-deployment-profile-using-intune)
-- [Create profiles using MSfB](#create-a-windows-autopilot-deployment-profile-using-msfb)
+- [Create profiles using Microsoft Store for Business](#create-a-windows-autopilot-deployment-profile-using-msfb)
 
 ### Create a Windows Autopilot deployment profile using Intune
 
 > [!NOTE]
-> Even if you registered your device in MSfB, it still appears in Intune. Although, you might have to **sync** and then **refresh** your device list.
+> Even if you registered your device in Microsoft Store for Business, it still appears in Intune. Although, you might have to **sync** and then **refresh** your device list.
 
 ![Devices.](images/enroll4.png)
 
@@ -533,13 +533,13 @@ Select **OK**, and then select **Create**.
 
 If you already created and assigned a profile via Intune with the steps immediately above, then skip this section.
 
-A [video](https://www.youtube.com/watch?v=IpLIZU_j7Z0) is available that covers the steps required to create and assign profiles in MSfB. These steps are also summarized below.
+A [video](https://www.youtube.com/watch?v=IpLIZU_j7Z0) is available that covers the steps required to create and assign profiles in Microsoft Store for Business. These steps are also summarized below.
 
 First, sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com/manage/dashboard) using the Intune account you initially created for this lab.
 
 Select **Manage** from the top menu, then select **Devices** from the left navigation tree.
 
-![MSfB manage.](images/msfb-manage.png)
+![Microsoft Store for Business manage.](images/msfb-manage.png)
 
 Select the **Windows Autopilot Deployment Program** link in the **Devices** tile.
 
@@ -548,17 +548,17 @@ To CREATE the profile:
 Select your device from the **Devices** list:
 
 > [!div class="mx-imgBorder"]
-> ![MSfB create step 1.](images/msfb-create1.png)
+> ![Microsoft Store for Business create step 1.](images/msfb-create1.png)
 
 On the Autopilot deployment dropdown menu, select **Create new profile**:
 
 > [!div class="mx-imgBorder"]
-> ![MSfB create step 2.](images/msfb-create2.png)
+> ![Microsoft Store for Business create step 2.](images/msfb-create2.png)
 
 Name the profile, choose your desired settings, and then select **Create**:
 
 > [!div class="mx-imgBorder"]
-> ![MSfB create step 3.](images/msfb-create3.png)
+> ![Microsoft Store for Business create step 3.](images/msfb-create3.png)
 
 The new profile is added to the Autopilot deployment list.
 
@@ -567,12 +567,12 @@ To ASSIGN the profile:
 To assign (or reassign) the profile to a device, select the checkboxes next to the device you registered for this lab. Then, select the profile you want to assign from the **Autopilot deployment** dropdown menu, as shown:
 
 > [!div class="mx-imgBorder"]
-> ![MSfB assign step 1.](images/msfb-assign1.png)
+> ![Microsoft Store for Business assign step 1.](images/msfb-assign1.png)
 
 To confirm the profile was successfully assigned to the intended device, check the contents of the **Profile** column:
 
 > [!div class="mx-imgBorder"]
-> ![MSfB assign step 2.](images/msfb-assign2.png)
+> ![Microsoft Store for Business assign step 2.](images/msfb-assign2.png)
 
 > [!IMPORTANT]
 > The new profile is only applied if the device hasn't started and gone through OOBE. Settings from a different profile can't be applied when another profile has been applied. Windows would need to be reinstalled on the device for the second profile to be applied to the device.
@@ -609,11 +609,11 @@ Windows Autopilot takes over to automatically join your device into Azure AD and
 
 ## Remove devices from Autopilot
 
-To use the device (or VM) for other purposes after completion of this lab, you need to remove (deregister) it from Autopilot via either Intune or MSfB, and then reset it.  Instructions for deregistering devices can be found at [Enroll Windows devices in Intune by using Windows Autopilot](/intune/enrollment-autopilot#create-an-autopilot-device-group), [Remove devices by using wipe, retire, or manually unenrolling the device](/intune/devices-wipe#delete-devices-from-the-azure-active-directory-portal), and below.
+To use the device (or VM) for other purposes after completion of this lab, you need to remove (deregister) it from Autopilot via either Intune or Microsoft Store for Business, and then reset it.  Instructions for deregistering devices can be found at [Enroll Windows devices in Intune by using Windows Autopilot](/intune/enrollment-autopilot#create-an-autopilot-device-group), [Remove devices by using wipe, retire, or manually unenrolling the device](/intune/devices-wipe#delete-devices-from-the-azure-active-directory-portal), and below.
 
 ### Delete (deregister) Autopilot device
 
-You need to delete (or retire, or factory reset) the device from Intune before deregistering the device from Autopilot. To delete the device from Intune (not Azure AD), log into the MEM admin center, then go to **Intune > Devices > All Devices**. Select the device you want to delete, then select the **Delete** button along the top menu.
+You need to delete (or retire, or factory reset) the device from Intune before deregistering the device from Autopilot. To delete the device from Intune (not Azure AD), log into the Microsoft Endpoint Manager admin center, then go to **Intune > Devices > All Devices**. Select the device you want to delete, then select the **Delete** button along the top menu.
 
 > [!div class="mx-imgBorder"]
 > ![Delete device step 1.](images/delete-device1.png)

@@ -1,7 +1,6 @@
 ---
 title: Diagnose MDM failures in Windows 10
 description: Learn how to collect MDM logs. Examining these logs can help diagnose enrollment or device management issues in Windows 10 devices managed by an MDM server.
-ms.assetid: 12D8263B-D839-4B19-9346-31E0CDD0CBF9
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp

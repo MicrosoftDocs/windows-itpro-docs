@@ -1,7 +1,6 @@
 ---
 title: ActiveSync CSP
 description: Learn how the ActiveSync configuration service provider is used to set up and change settings for Exchange ActiveSync. 
-ms.assetid: c65093ef-bd36-4f32-9dab-edb7bcfb3188
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -20,6 +19,7 @@ The table below shows the applicability of Windows:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|

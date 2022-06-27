@@ -1,17 +1,11 @@
 ---
 title: Deploy a Windows 10 image using MDT (Windows 10)
 description: This topic will show you how to take your reference image for Windows 10, and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT).
-ms.assetid: 1d70a3d8-1b1d-4051-b656-c0393a93f83c
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
-keywords: deployment, automate, tools, configure
 ms.prod: w10
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.sitesec: library
-ms.pagetype: mdt
-audience: itpro
 author: aczechowski
 ms.topic: article
 ---

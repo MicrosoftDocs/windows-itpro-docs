@@ -14,7 +14,6 @@ manager: dansimp
 
 # Policy CSP - Education
 
-
 <hr/>
 
 <!--Policies-->
@@ -35,7 +34,6 @@ manager: dansimp
   </dd>
 </dl>
 
-
 <hr/>
 
 <!--Policy-->
@@ -47,10 +45,10 @@ manager: dansimp
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -65,7 +63,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to control whether graphing functionality is available in the Windows Calculator app. If you disable this policy setting, graphing functionality won't be accessible in the Windows Calculator app. If you enable or don't configure this policy setting, you'll be able to access graphing functionality.
+This policy setting allows you to control, whether graphing functionality is available in the Windows Calculator app. If you disable this policy setting, graphing functionality won't be accessible in the Windows Calculator app. If you enable or don't configure this policy setting, you'll be able to access graphing functionality.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -93,10 +91,10 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -129,6 +127,7 @@ The policy value is expected to be the name (network host name) of an installed 
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -178,10 +177,10 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -205,6 +204,8 @@ The policy value is expected to be a ```&#xF000;``` separated list of printer na
 <hr/>
 
 
-
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

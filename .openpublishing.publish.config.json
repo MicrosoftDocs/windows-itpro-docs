@@ -130,22 +130,6 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "win-access-protection",
-      "build_source_folder": "windows/access-protection",
-      "build_output_subfolder": "win-access-protection",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "win-app-management",
       "build_source_folder": "windows/application-management",
       "build_output_subfolder": "win-app-management",
@@ -213,38 +197,6 @@
       "docset_name": "win-device-security",
       "build_source_folder": "windows/device-security",
       "build_output_subfolder": "win-device-security",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "windows-configure",
-      "build_source_folder": "windows/configure",
-      "build_output_subfolder": "windows-configure",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "windows-deploy",
-      "build_source_folder": "windows/deploy",
-      "build_output_subfolder": "windows-deploy",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],

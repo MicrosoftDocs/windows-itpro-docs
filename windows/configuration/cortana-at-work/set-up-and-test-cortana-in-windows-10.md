@@ -4,8 +4,6 @@ ms.reviewer:
 manager: dougeby
 description: Cortana includes powerful configuration options specifically to optimize unique small to medium-sized business and enterprise environments.
 ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
@@ -46,4 +44,4 @@ When a user enters a search query (by speech or text), Cortana evaluates if the 
 Bing Answers is enabled by default for all users. However, admins can configure and change this for specific users and user groups in their organization.
 
 ## How the Bing Answer policy configuration is applied
-Before a query is sent to Bing for a search of public results from Bing.com, the Bing Answers service checks with the Office Cloud Policy Service to see if there are any policy configurations that pertain to the user for allowing Bing Answers to respond to questions users ask Cortana. If the user is a member of an AAD group that is assigned that policy configuration, then the appropriate policy settings are applied and a check is made again in 10 minutes.
+Before a query is sent to Bing for a search of public results from Bing.com, the Bing Answers service checks with the Office Cloud Policy Service to see if there are any policy configurations that pertain to the user for allowing Bing Answers to respond to questions users ask Cortana. If the user is a member of an Azure Active Directory group that is assigned that policy configuration, then the appropriate policy settings are applied and a check is made again in 10 minutes.
