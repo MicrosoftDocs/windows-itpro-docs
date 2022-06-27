@@ -1922,10 +1922,7 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
  
-Selects the time of day that the Windows Defender quick scan should run.
-
-> [!NOTE]
-> The scan type will depends on what scan type is selected in the **Defender/ScanParameter** setting.
+Selects the time of day that the Windows Defender quick scan should run. The Windows Defender quick scan runs daily, if a time is specified.
 
  
 
