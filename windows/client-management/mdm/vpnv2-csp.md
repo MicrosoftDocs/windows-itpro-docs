@@ -1,7 +1,6 @@
 ---
 title: VPNv2 CSP
 description: Learn how the VPNv2 configuration service provider (CSP) allows the mobile device management (MDM) server to configure the VPN profile of the device.
-ms.assetid: 51ADA62E-1EE5-4F15-B2AD-52867F5B2AD2
 ms.reviewer: pesmith
 manager: dansimp
 ms.author: dansimp
@@ -20,16 +19,17 @@ The table below shows the applicability of Windows:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
-The VPNv2 configuration service provider allows the mobile device management (MDM) server to configure the VPN profile of the device.
+The VPNv2 configuration service provider allows the Mobile Device Management (MDM) server to configure the VPN profile of the device.
 
 Here are the requirements for this CSP:
 
 - VPN configuration commands must be wrapped in an Atomic block in SyncML.
-- For best results, configure your VPN certificates first before pushing down VPN profiles to devices. If you're using Windows Information Protection (WIP) (formerly known as Enterprise Data Protection), then you should configure VPN first before you configure WIP policies.
+- For best results, configure your VPN certificates first before pushing down VPN profiles to devices. If you're using Windows Information Protection (WIP) (formerly known as Enterprise Data Protection), then you should configure VPN first before you configure Windows Information Protection policies.
 - Instead of changing individual properties, follow these steps to make any changes:
 
   - Send a Delete command for the ProfileName to delete the entire profile.
@@ -346,11 +346,10 @@ A sequential integer identifier that allows the ability to specify multiple apps
 Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-apptriggerlist-apptriggerrowid-app"></a>**VPNv2/**<em>ProfileName</em>**/AppTriggerList/**<em>appTriggerRowId</em>**/App**  
-App Node under the Row Id.
+App Node under the Row ID.
 
 <a href="" id="vpnv2-profilename-apptriggerlist-apptriggerrowid-app-id"></a>**VPNv2/**<em>ProfileName</em>**/AppTriggerList/**<em>appTriggerRowId</em>**/App/Id**  
-App identity, which is either an app’s package family name or file path. The type is inferred by the Id, and therefore can't be specified in the get only App/Type field
-
+App identity, which is either an app’s package family name or file path. The type is inferred by the ID, and therefore can't be specified in the get only App/Type field
 <a href="" id="vpnv2-profilename-apptriggerlist-apptriggerrowid-app-type"></a>**VPNv2/**<em>ProfileName</em>**/AppTriggerList/**<em>appTriggerRowId</em>**/App/Type**  
 Returns the type of **App/Id**. This value can be either of the following values:
 
@@ -364,9 +363,10 @@ Optional node. List of routes to be added to the routing table for the VPN inter
 
 Every computer that runs TCP/IP makes routing decisions. These decisions are controlled by the IP routing table. Adding values under this node updates the routing table with routes for the VPN interface post connection. The values under this node represent the destination prefix of IP routes. A destination prefix consists of an IP address prefix and a prefix length.
 
-Adding a route here allows the networking stack to identify the traffic that needs to go over the VPN interface for split tunnel VPN. Some VPN servers can configure this route during connect negotiation and don't need this information in the VPN Profile. Check with your VPN server administrator to determine whether you need this information in the VPN profile.
+Adding a route here allows the networking stack to identify the traffic that needs to go over the VPN interface for split tunnel VPN. Some VPN servers can configure this during connect negotiation and don't need this information in the VPN Profile. Check with your VPN server administrator to determine whether you need this information in the VPN profile.
 
 <a href="" id="vpnv2-profilename-routelist-routerowid"></a>**VPNv2/**<em>ProfileName</em>**/RouteList/**<em>routeRowId</em>  
+
 A sequential integer identifier for the RouteList. This value is required if you're adding routes. Sequencing must start at 0.
 
 Supported operations include Get, Add, Replace, and Delete.
@@ -411,7 +411,7 @@ Supported operations include Get, Add, Replace, and Delete.
 Used to indicate the namespace to which the policy applies. When a Name query is issued, the DNS client compares the name in the query to all of the namespaces under DomainNameInformationList to find a match. This parameter can be one of the following types:
 
 - FQDN - Fully qualified domain name
-- Suffix - A domain suffix that will be appended to the shortname query for DNS resolution. To specify a suffix, prepend **.** to the DNS suffix.
+- Suffix - A domain suffix that will be appended to the shortname query for DNS resolution. To specify a suffix, prepend.**.** to the DNS suffix.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
@@ -540,9 +540,9 @@ If no inbound filter is provided, then by default all unsolicited inbound traffi
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-edpmodeid"></a>**VPNv2/**<em>ProfileName</em>**/EdpModeId**  
-Enterprise ID, which is required for connecting this VPN profile with a WIP policy. When this ID is set, the networking stack looks for this Enterprise ID in the app token to determine if the traffic is allowed to go over the VPN. If the profile is active, it also automatically triggers the VPN to connect. We recommend having only one such profile per device.
+Enterprise ID, which is required for connecting this VPN profile with a Windows Information Protection policy. When this ID is set, the networking stack looks for this Enterprise ID in the app token to determine if the traffic is allowed to go over the VPN. If the profile is active, it also automatically triggers the VPN to connect. We recommend having only one such profile per device.
 
-Additionally when a connection is being established with Windows Information Protection (WIP)(formerly known as Enterprise Data Protection), the admin doesn't have to specify AppTriggerList and TrafficFilterList rules separately in this profile (unless more advanced config is needed) because the WIP policies and App lists automatically takes effect.
+Additionally when a connection is being established with Windows Information Protection (WIP)(formerly known as Enterprise Data Protection), the admin doesn't have to specify AppTriggerList and TrafficFilterList rules separately in this profile (unless more advanced config is needed) because the Windows Information Protection policies and App lists automatically takes effect.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
@@ -658,10 +658,10 @@ Reserved for future use.
 Reserved for future use.
 
 <a href="" id="vpnv2-profilename-devicecompliance"></a>**VPNv2/**<em>ProfileName</em>**/DeviceCompliance**  
-Added in Windows 10, version 1607. Nodes under DeviceCompliance can be used to enable AAD-based Conditional Access for VPN.
+Added in Windows 10, version 1607. Nodes under DeviceCompliance can be used to enable Azure Active Directory-based Conditional Access for VPN.
 
 <a href="" id="vpnv2-profilename-devicecompliance-enabled"></a>**VPNv2/**<em>ProfileName</em>**/DeviceCompliance/Enabled**  
-Added in Windows 10, version 1607. Enables the Device Compliance flow from the client. If marked as True, the VPN Client will attempt to communicate with AAD to get a certificate to use for authentication. The VPN should be set up to use Certificate Auth and the VPN Server must trust the Server returned by Azure Active Directory.
+Added in Windows 10, version 1607. Enables the Device Compliance flow from the client. If marked as True, the VPN Client will attempt to communicate with Azure Active Directory to get a certificate to use for authentication. The VPN should be set up to use Certificate Auth and the VPN Server must trust the Server returned by Azure Active Directory (AAD).
 
 Value type is bool. Supported operations include Get, Add, Replace, and Delete.
 

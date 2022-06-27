@@ -1,7 +1,6 @@
 ---
 title: EnterpriseAPN CSP
-description: Learn how the EnterpriseAPN configuration service provider is used by the enterprise to provision an APN for the Internet.
-ms.assetid: E125F6A5-EE44-41B1-A8CC-DF295082E6B2
+description: The EnterpriseAPN configuration service provider is used by the enterprise to provision an APN for the Internet.
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -20,6 +19,7 @@ The table below shows the applicability of Windows:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|

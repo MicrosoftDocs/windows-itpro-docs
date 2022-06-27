@@ -1,7 +1,6 @@
 ---
 title: Device HealthAttestation CSP
 description: Learn how the DHA-CSP enables enterprise IT managers to assess if a device is booted to a trusted and compliant state, and take enterprise policy actions.
-ms.assetid: 6F2D783C-F6B4-4A81-B9A2-522C4661D1AC
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -20,6 +19,7 @@ The table below shows the applicability of Windows:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -138,7 +138,7 @@ Data fields:
 - rpID (Relying Party Identifier): This field contains an identifier that can be used to help determine the caller.
 - serviceEndpoint : This field contains the complete URL of the Microsoft Azure Attestation provider instance to be used for evaluation.
 - nonce: This field contains an arbitrary number that can be used only once in a cryptographic communication. It's often a random or pseudo-random number issued in an authentication protocol to ensure that old communications can't be reused in replay attacks.
-- aadToken: The AAD token to be used for authentication against the Microsoft Azure Attestation service.
+- aadToken: The Azure Active Directory token to be used for authentication against the Microsoft Azure Attestation service.
 - cv: This field contains an identifier(Correlation Vector) that will be passed in to the service call, and that can be used for diagnostics purposes.
 
 Sample Data:
@@ -407,7 +407,7 @@ calls between client and MAA and for each call the GUID is separated by semicolo
     };
     ```
 
-3. Call TriggerAttestation with your rpid, AAD token and the attestURI: Use the Attestation URL generated in step 1, and append the appropriate api version you want to hit. For more information about the api version, see [Attestation - Attest Tpm - REST API](/rest/api/attestation/attestation/attest-tpm).
+3. Call TriggerAttestation with your rpid, Azure Active Directory token and the attestURI: Use the Attestation URL generated in step 1, and append the appropriate api version you want to hit. For more information about the api version, see [Attestation - Attest Tpm - REST API](/rest/api/attestation/attestation/attest-tpm).
 
 4. Call GetAttestReport and decode and parse the report to ensure the attested report contains the required properties: GetAttestReport return the signed attestation token as a JWT. The JWT can be decoded to parse the information per the attestation policy.
 
@@ -834,9 +834,8 @@ When the MDM-Server receives the above data, it must:
 
 - Forward (HTTP Post) the XML data struct (including the nonce that was appended in the previous step) to the assigned DHA-Service that runs on:
 
-  - DHA-Cloud (Microsoft owned and operated DHA-Service) scenario: [https://has.spserv.microsoft.com/DeviceHealthAttestation/ValidateHealthCertificate/v3](https://has.spserv.microsoft.com/DeviceHealthAttestation/ValidateHealthCertificate/v3)
-  - DHA-OnPrem or DHA-EMC: [https://FullyQualifiedDomainName-FDQN/DeviceHealthAttestation/ValidateHealthCertificate/v3](https://FullyQualifiedDomainName-FDQN/DeviceHealthAttestation/ValidateHealthCertificate/v3)
-
+  - DHA-Cloud (Microsoft owned and operated DHA-Service) scenario: `https://has.spserv.microsoft.com/DeviceHealthAttestation/ValidateHealthCertificate/v3`
+  - DHA-OnPrem or DHA-EMC: `https://FullyQualifiedDomainName-FDQN/DeviceHealthAttestation/ValidateHealthCertificate/v3`
 ### <a href="" id="receive-has-response"></a>Step 7: Receive response from the DHA-service
 
 When the Microsoft Device Health Attestation Service receives a request for verification, it performs the following steps:

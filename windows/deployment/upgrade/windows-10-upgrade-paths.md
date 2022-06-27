@@ -4,11 +4,7 @@ manager: dougeby
 ms.author: aaroncz
 description: You can upgrade to Windows 10 from a previous version of Windows if the upgrade path is supported.
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.localizationpriority: medium
-ms.pagetype: mobile
-audience: itpro
 author: aczechowski
 ms.topic: article
 ms.collection: highpri
@@ -30,7 +26,7 @@ If you are also migrating to a different edition of Windows, see [Windows 10 edi
 
 - **In-place upgrade from Windows 7, Windows 8.1, or [Windows 10 General Availability Channel](/windows/release-health/release-information)** to Windows 10 LTSC is not supported. Windows 10 LTSC 2015 did not block this in-place upgrade path. This issue was corrected in the Windows 10 LTSC 2016 release, which only allows data-only and clean install options.
 
-  You can upgrade from Windows 10 LTSC to Windows 10 General Availability Channel, provided that you upgrade to the same or a newer build version. For example, Windows 10 Enterprise 2016 LTSB can be upgraded to Windows 10 Enterprise version 1607 or later. Upgrade is supported using the in-place upgrade process (using Windows setup). You will need to use the Product Key switch if you want to keep your apps. If you don't use the switch, the option **Keep personal files and apps** option is grayed out. The command line would be `setup.exe /pkey xxxxx-xxxxx-xxxxx-xxxxx-xxxxx`, using your relevant Windows 10 SAC product key. For example, if using a KMS, the command line would be `setup.exe /pkey NPPR9-FWDCX-D2C8J-H872K-2YT43`.
+  You can upgrade from Windows 10 LTSC to Windows 10 General Availability Channel, provided that you upgrade to the same or a newer build version. For example, Windows 10 Enterprise 2016 LTSB can be upgraded to Windows 10 Enterprise version 1607 or later. Upgrade is supported using the in-place upgrade process (using Windows setup). You will need to use the Product Key switch if you want to keep your apps. If you don't use the switch, the option **Keep personal files and apps** option is grayed out. The command line would be `setup.exe /pkey xxxxx-xxxxx-xxxxx-xxxxx-xxxxx`, using your relevant Windows 10 GA Channel product key. For example, if using a KMS, the command line would be `setup.exe /pkey NPPR9-FWDCX-D2C8J-H872K-2YT43`.
 
 - **Windows N/KN**: Windows "N" and "KN" SKUs (editions without media-related functionality) follow the same upgrade paths shown below. If the pre-upgrade and post-upgrade editions are not the same type (e.g. Windows 8.1 Pro N to Windows 10 Pro), personal data will be kept but applications and settings will be removed during the upgrade process.
 

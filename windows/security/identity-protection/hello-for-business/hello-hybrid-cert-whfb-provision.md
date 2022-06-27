@@ -31,7 +31,7 @@ The Windows Hello for Business provisioning begins immediately after the user ha
 
 ![Event358 from User Device Registration log showing Windows Hello for Business prerequisite check result.](images/Event358.png)
 
-The first thing to validate is the computer has processed device registration. You can view this from the User device registration logs where the check **Device is AAD joined (AADJ or DJ++): Yes** appears.  Additionally, you can validate this using the **dsregcmd /status** command from a console prompt where the value for **AzureADJoined** reads **Yes**.
+The first thing to validate is the computer has processed device registration. You can view this from the User device registration logs where the check **Device is Azure Active Directory-joined (AADJ or DJ++): Yes** appears.  Additionally, you can validate this using the **dsregcmd /status** command from a console prompt where the value for **AzureADJoined** reads **Yes**.
 
 Windows Hello for Business provisioning begins with a full screen page with the title **Setup a PIN** and button with the same name.  The user clicks **Setup a PIN**.
 
@@ -52,7 +52,7 @@ The provisioning flow has all the information it needs to complete the Windows H
 - A fresh, successful multi-factor authentication
 - A validated PIN that meets the PIN complexity requirements
 
-The remainder of the provisioning includes Windows Hello for Business requesting an asymmetric key pair for the user, preferably from the TPM (or required if explicitly set through policy). Once the key pair is acquired, Windows communicates with Azure Active Directory to register the public key.  AAD Connect synchronizes the user's key to the on-premises Active Directory.
+The remainder of the provisioning includes Windows Hello for Business requesting an asymmetric key pair for the user, preferably from the TPM (or required if explicitly set through policy). Once the key pair is acquired, Windows communicates with Azure Active Directory to register the public key.  Azure Active Directory Connect synchronizes the user's key to the on-premises Active Directory.
 
 > [!IMPORTANT]
 > The following is the enrollment behavior prior to Windows Server 2016 update [KB4088889 (14393.2155)](https://support.microsoft.com/help/4088889).

@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_tcpip
-description: Policy CSP - ADMX_tcpip
+description: Learn about Policy CSP - ADMX_tcpip.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -79,8 +79,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -124,8 +125,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -169,8 +171,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -193,11 +196,9 @@ If you disable or do not configure this policy setting, the local host setting i
 
 If you enable this policy setting, you can configure 6to4 with one of the following settings:
 
-Policy Default State: 6to4 is turned off and connectivity with 6to4 will not be available.
-
-Policy Enabled State: If a global IPv4 address is present, the host will have a 6to4 interface. If no global IPv4 address is present, the host will not have a 6to4 interface.
-
-Policy Disabled State: 6to4 is turned off and connectivity with 6to4 will not be available.
+- Policy Default State: 6to4 is turned off and connectivity with 6to4 will not be available.
+- Policy Enabled State: If a global IPv4 address is present, the host will have a 6to4 interface. If no global IPv4 address is present, the host will not have a 6to4 interface.
+- Policy Disabled State: 6to4 is turned off and connectivity with 6to4 will not be available.
 
 <!--/Description-->
 
@@ -220,8 +221,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -244,11 +246,9 @@ If you disable or do not configure this policy setting, the local host settings 
 
 If you enable this policy setting, you can specify an IP-HTTPS server URL. You will be able to configure IP-HTTPS with one of the following settings:
 
-Policy Default State: The IP-HTTPS interface is used when there are no other connectivity options.
-
-Policy Enabled State: The IP-HTTPS interface is always present, even if the host has other connectivity options.
-
-Policy Disabled State: No IP-HTTPS interfaces are present on the host.
+- Policy Default State: The IP-HTTPS interface is used when there are no other connectivity options.
+- Policy Enabled State: The IP-HTTPS interface is always present, even if the host has other connectiv-ity options.
+- Policy Disabled State: No IP-HTTPS interfaces are present on the host.
 
 <!--/Description-->
 
@@ -271,8 +271,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -316,8 +317,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -361,8 +363,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -385,11 +388,9 @@ If you disable or do not configure this policy setting, the local host setting i
 
 If you enable this policy setting, you can configure ISATAP with one of the following settings:
 
-Policy Default State: No ISATAP interfaces are present on the host.
-
-Policy Enabled State: If the ISATAP name is resolved successfully, the host will have ISATAP configured with a link-local address and an address for each prefix received from the ISATAP router through stateless address auto-configuration. If the ISATAP name is not resolved successfully, the host will have an ISATAP interface configured with a link-local address.
-
-Policy Disabled State: No ISATAP interfaces are present on the host.
+- Policy Default State: No ISATAP interfaces are present on the host.
+- Policy Enabled State: If the ISATAP name is resolved successfully, the host will have ISATAP configured with a link-local address and an address for each prefix received from the ISATAP router through stateless address auto-configuration. If the ISATAP name is not resolved successfully, the host will have an ISATAP interface configured with a link-local address.
+- Policy Disabled State: No ISATAP interfaces are present on the host.
 
 <!--/Description-->
 
@@ -412,8 +413,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -457,8 +459,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -504,8 +507,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -552,8 +556,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -597,8 +602,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -621,13 +627,10 @@ If you disable or do not configure this policy setting, the local host settings 
 
 If you enable this policy setting, you can configure Teredo with one of the following settings:
 
-Default: The default state is "Client."
-
-Disabled: No Teredo interfaces are present on the host.
-
-Client: The Teredo interface is present only when the host is not on a network that includes a domain controller.
-
-Enterprise Client: The Teredo interface is always present, even if the host is on a network that includes a domain controller.
+- Default: The default state is "Client."
+- Disabled: No Teredo interfaces are present on the host.
+- Client: The Teredo interface is present only when the host is not on a network that includes a domain controller.
+- Enterprise Client: The Teredo interface is always present, even if the host is on a network that includes a domain controller.
 
 <!--/Description-->
 
@@ -650,8 +653,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -692,3 +696,7 @@ ADMX Info:
 > 
 <!--/Policies-->
 
+
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
