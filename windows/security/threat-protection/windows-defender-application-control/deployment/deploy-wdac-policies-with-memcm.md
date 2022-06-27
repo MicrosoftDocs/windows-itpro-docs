@@ -36,8 +36,8 @@ Microsoft Endpoint Configuration Manager includes native support for WDAC, which
 - Windows components
 - Microsoft Store apps
 - Apps installed by Configuration Manager (Configuration Manager self-configured as a managed installer)
-- [Optional] Reputable apps as defined by the Intelligent Security Graph (ISG)
-- [Optional] Apps and executables already installed in admin-definable folder locations that Configuration Manager will allow through a one-time scan during policy creation on managed endpoints.
+- (Optional) Reputable apps as defined by the Intelligent Security Graph (ISG)
+- (Optional) Apps and executables already installed in admin-definable folder locations that Configuration Manager will allow through a one-time scan during policy creation on managed endpoints.
 
 Note that Configuration Manager does not remove policies once deployed. To stop enforcement, you should switch the policy to audit mode, which will produce the same effect. If you want to disable Windows Defender Application Control (WDAC) altogether (including audit mode), you can deploy a script to delete the policy file from disk, and either trigger a reboot or wait for the next reboot.
 
