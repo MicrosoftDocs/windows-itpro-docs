@@ -60,11 +60,11 @@ Note that Configuration Manager does not remove policies once deployed. To stop 
 
 7. Select **File** or **Folder** to create a path rule > **Browse**
 
-![Create a WDAC path rule in MEMCM.](../images/memcm/memcm-create-wdac-rule-2.jpg)
+![Select a file or folder to create a path rule.](../images/memcm/memcm-create-wdac-rule-2.jpg)
 
 8. Select the executable or folder for your path rule > **OK**
 
-![Select the file or folder.](../images/memcm/memcm-create-wdac-rule-3.jpg)
+![Select the executable file or folder.](../images/memcm/memcm-create-wdac-rule-3.jpg)
 
 9. Select **OK** to add the rule to the table of trusted files or folder
 10. Select **Next** to navigate to the summary page > **Close**
@@ -79,7 +79,7 @@ Note that Configuration Manager does not remove policies once deployed. To stop 
 
 2. Select **Browse**
 
-![Deploy WDAC via MEMCM.](../images/memcm/memcm-deploy-wdac-2.jpg)
+![Select Browse.](../images/memcm/memcm-deploy-wdac-2.jpg)
 
 3. Select the Device Collection you created earlier > **OK**
 
