@@ -14,7 +14,7 @@ author: dansimp
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 01/26/2022
+ms.date: 06/27/2022
 ms.technology: windows-sec
 ---
 
