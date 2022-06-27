@@ -4,14 +4,9 @@ description: Quarantine behavior is explained in detail.
 ms.author: v-bshilpa
 author: Benny-54
 manager: dansimp
-ms.assetid: 
 ms.reviewer: 
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: normal
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021

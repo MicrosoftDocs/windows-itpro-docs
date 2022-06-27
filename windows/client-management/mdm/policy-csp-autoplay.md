@@ -51,6 +51,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -76,6 +77,7 @@ If you enable this policy setting, AutoPlay isn't allowed for MTP devices like c
 
 If you disable or don't configure this policy setting, AutoPlay is enabled for non-volume devices.
 
+
 <!--/Description-->
 
 
@@ -100,6 +102,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -158,6 +161,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -191,7 +195,8 @@ This policy setting disables Autoplay on other types of drives. You can't use th
 
 If you disable or don't configure this policy setting, AutoPlay is enabled.
 
-Note: This policy setting appears in both the Computer Configuration and User Configuration folders. If the policy settings conflict, the policy setting in Computer Configuration takes precedence over the policy setting in User Configuration.
+> [!Note]
+> This policy setting appears in both the Computer Configuration and User Configuration folders. If the policy settings conflict, the policy setting in Computer Configuration takes precedence over the policy setting in User Configuration.
 
 <!--/Description-->
 

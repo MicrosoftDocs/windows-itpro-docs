@@ -27,13 +27,13 @@ ms.technology: windows-sec
 -   Windows Server 2016 and above
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+>Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
-You can use a Mobile Device Management (MDM) solution, like Microsoft Endpoint Manager (MEM) Intune, to configure Windows Defender Application Control (WDAC) on client machines. Intune includes native support for WDAC which can be a helpful starting point, but customers may find the available circle-of-trust options too limiting. To deploy a custom policy through Intune and define your own circle of trust, you can configure a profile using Custom OMA-URI. If your organization uses another MDM solution, check with your solution provider for WDAC policy deployment steps.
+You can use a Mobile Device Management (MDM) solution, like Microsoft Endpoint Manager Intune, to configure Windows Defender Application Control (WDAC) on client machines. Intune includes native support for WDAC which can be a helpful starting point, but customers may find the available circle-of-trust options too limiting. To deploy a custom policy through Intune and define your own circle of trust, you can configure a profile using Custom OMA-URI. If your organization uses another MDM solution, check with your solution provider for WDAC policy deployment steps.
 
 ## Use Intune's built-in policies
 
-Intune's built-in WDAC support allows you to configure Windows client computers to only run:
+Intune's built-in Windows Defender Application Control support allows you to configure Windows client computers to only run:
 
 - Windows components
 - 3rd party hardware and software kernel drivers
@@ -51,7 +51,7 @@ To use Intune's built-in WDAC policies, configure [Endpoint Protection for Windo
 ## Deploy WDAC policies with custom OMA-URI
 
 > [!NOTE]
-> Policies deployed through Intune custom OMA-URI are subject to a 350,000 byte limit. Customers should create WDAC policies that use signature-based rules, the Intelligent Security Graph, and managed installers where practical. Customers whose devices are running 1903+ builds of Windows are also encouraged to use [multiple policies](deploy-multiple-windows-defender-application-control-policies.md) which allow more granular policy.
+> Policies deployed through Intune custom OMA-URI are subject to a 350,000 byte limit. Customers should create Windows Defender Application Control policies that use signature-based rules, the Intelligent Security Graph, and managed installers where practical. Customers whose devices are running 1903+ builds of Windows are also encouraged to use [multiple policies](deploy-multiple-windows-defender-application-control-policies.md) which allow more granular policy.
 
 ### Deploy custom WDAC policies on Windows 10 1903+
 
@@ -78,7 +78,7 @@ The steps to use Intune's custom OMA-URI functionality are:
 
 ### Remove WDAC policies on Windows 10 1903+
 
-Upon deletion, policies deployed through Intune via the ApplicationControl CSP are removed from the system but stay in effect until the next reboot. In order to disable WDAC enforcement, first replace the existing policy with a new version of the policy that will "Allow *", like the rules in the example  policy at %windir%\schemas\CodeIntegrity\ExamplePolicies\AllowAll.xml. Once the updated policy is deployed, you can then delete the policy from the Intune portal. This will prevent anything from being blocked and fully remove the WDAC policy on the next reboot.
+Upon deletion, policies deployed through Intune via the ApplicationControl CSP are removed from the system but stay in effect until the next reboot. In order to disable Windows Defender Application Control enforcement, first replace the existing policy with a new version of the policy that will "Allow *", like the rules in the example  policy at %windir%\schemas\CodeIntegrity\ExamplePolicies\AllowAll.xml. Once the updated policy is deployed, you can then delete the policy from the Intune portal. This will prevent anything from being blocked and fully remove the WDAC policy on the next reboot.
 
 ### For pre-1903 systems
 
@@ -100,4 +100,4 @@ The steps to use Intune's Custom OMA-URI functionality to leverage the [AppLocke
 
 #### Removing policies
 
-Policies deployed through Intune via the AppLocker CSP cannot be deleted through the Intune console. In order to disable WDAC policy enforcement, either deploy an audit-mode policy or use a script to delete the existing policy.
+Policies deployed through Intune via the AppLocker CSP cannot be deleted through the Intune console. In order to disable Windows Defender Application Control policy enforcement, either deploy an audit-mode policy or use a script to delete the existing policy.

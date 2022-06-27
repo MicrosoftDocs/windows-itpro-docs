@@ -485,7 +485,7 @@ Table 9. Management systems and deployment resources
 |--- |--- |
 |Windows provisioning packages| <li> [Build and apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-create-package) <li>[Windows Imaging and Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd) <li> [Step-By-Step: Building Windows 10 Provisioning Packages](/archive/blogs/canitpro/step-by-step-building-windows-10-provisioning-packages)|
 |Group Policy|<li> [Core Network Companion Guide: Group Policy Deployment](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj899807(v=ws.11)) <li> [Deploying Group Policy](/previous-versions/windows/it-pro/windows-server-2003/cc737330(v=ws.10))"|
-|Configuration Manager| <li> [Site Administration for System Center 2012 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg681983(v=technet.10)) <li> [Deploying Clients for System Center 2012 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699391(v=technet.10))|
+|Configuration Manager| <li> [Site Administration for Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg681983(v=technet.10)) <li> [Deploying Clients for Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699391(v=technet.10))|
 |Intune| <li> [Set up and manage devices with Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=690262) <li> [System Center 2012 R2 Configuration Manager &amp;amp; Windows Intune](/learn/?l=fCzIjVKy_6404984382)|
 |MDT| <li> [Step-By-Step: Installing Windows 8.1 From A USB Key](/archive/blogs/canitpro/step-by-step-installing-windows-8-1-from-a-usb-key)|
 

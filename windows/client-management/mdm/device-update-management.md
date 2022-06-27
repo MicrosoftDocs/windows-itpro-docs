@@ -1,10 +1,8 @@
 ---
 title: Mobile device management MDM for device updates
 description: Windows 10 provides several APIs to help mobile device management (MDM) solutions manage updates. Learn how to use these APIs to implement update management.
-ms.assetid: C27BAEE7-2890-4FB7-9549-A6EACC790777
 ms.reviewer: 
 manager: dansimp
-keywords: mdm,management,administrator
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -13,7 +11,6 @@ author: dansimp
 ms.date: 11/15/2017
 ms.collection: highpri
 ---
-
 
 # Mobile device management (MDM) for device updates 
 
@@ -861,7 +858,7 @@ Here's the list of corresponding Group Policy settings in HKLM\\Software\\Polici
 |DeferFeatureUpdates|REG_DWORD|1: defer feature updates<br><br>Other value or absent: don’t defer feature updates|
 |DeferFeatureUpdatesPeriodInDays|REG_DWORD|0-180: days to defer feature updates|
 |PauseFeatureUpdates|REG_DWORD|1: pause feature updates<br><br>Other value or absent: don’t pause feature updates|
-|ExcludeWUDriversInQualityUpdate|REG_DWORD|1: exclude WU drivers<br><br>Other value or absent: offer WU drivers|
+|ExcludeWUDriversInQualityUpdate|REG_DWORD|1: exclude Windows Update drivers<br><br>Other value or absent: offer Windows Update drivers|
 
 Here's the list of older policies that are still supported for backward compatibility. You can use these older policies for Windows 10, version 1511 devices.
 

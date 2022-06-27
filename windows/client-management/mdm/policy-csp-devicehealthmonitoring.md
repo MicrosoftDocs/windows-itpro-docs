@@ -45,6 +45,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -69,8 +70,8 @@ DeviceHealthMonitoring is an opt-in health monitoring connection between the dev
 <!--SupportedValues-->
 The following list shows the supported values:  
 
-- 1—The DeviceHealthMonitoring connection is enabled.
-- 0 (default)—The DeviceHealthMonitoring connection is disabled.
+- 1 -The DeviceHealthMonitoring connection is enabled.
+- 0 - (default)—The DeviceHealthMonitoring connection is disabled.
 
 <!--/SupportedValues-->
 <!--Example-->
@@ -92,6 +93,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -138,6 +140,7 @@ IT Pros don't need to set this policy. Instead, Microsoft Intune is expected to 
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -156,9 +159,12 @@ IT Pros don't need to set this policy. Instead, Microsoft Intune is expected to 
 
 <!--/Scope-->
 <!--Description-->
-This policy is applicable only if the [AllowDeviceHealthMonitoring](#devicehealthmonitoring-allowdevicehealthmonitoring) policy has been set to 1 (Enabled) on the device. 
+This policy is applicable only if the [AllowDeviceHealthMonitoring](#devicehealthmonitoring-allowdevicehealthmonitoring) policy has been set to 1 (Enabled) on the device.
+
 The value of this policy constrains the DeviceHealthMonitoring connection to certain destinations in order to support regional and sovereign cloud scenarios.
-In most cases, an IT Pro doesn't need to define this policy. Instead, it's expected that this value is dynamically managed by Microsoft Intune to align with the region or cloud to which the device's tenant is already linked. Only configure this policy manually if explicitly instructed to do so by a Microsoft device monitoring service.
+In most cases, an IT Pro doesn't need to define this policy. Instead, it's expected that this value is dynamically managed by Microsoft Intune to align with the region or cloud to which the device's tenant is already linked. 
+
+Configure this policy manually only when explicitly instructed to do so by a Microsoft device monitoring service.
 
 
 <!--/Description-->
@@ -178,3 +184,6 @@ In most cases, an IT Pro doesn't need to define this policy. Instead, it's expec
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

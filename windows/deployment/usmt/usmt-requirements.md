@@ -1,14 +1,10 @@
 ---
 title: USMT Requirements (Windows 10)
 description: While the User State Migration Tool (USMT) doesn't have many requirements, these tips and tricks can help smooth the migration process.
-ms.assetid: 2b0cf3a3-9032-433f-9622-1f9df59d6806
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-audience: itpro
 author: aczechowski
 ms.date: 05/03/2017
 ms.topic: article

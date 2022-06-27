@@ -14,8 +14,6 @@ manager: dansimp
 
 # Policy CSP - Messaging
 
-
-
 <hr/>
 
 <!--Policies-->
@@ -26,7 +24,6 @@ manager: dansimp
     <a href="#messaging-allowmessagesync">Messaging/AllowMessageSync</a>
   </dd>
 </dl>
-
 
 <hr/>
 
@@ -39,6 +36,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -80,3 +78,6 @@ The following list shows the supported values:
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

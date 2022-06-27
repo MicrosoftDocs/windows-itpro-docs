@@ -58,11 +58,7 @@ For more information about how to configure an existing App-V installation after
 
 ## Support for System Center
 
-App-V supports System Center 2016 and System Center 2012 R2 Configuration Manager SP1. See [Planning for App-V Integration with Configuration Manager](/previous-versions/system-center/system-center-2012-R2/jj822982(v=technet.10)) to learn more about how to integrate your App-V environment with Configuration Manager.
-
-
-
-
+App-V supports System Center 2016 and Configuration Manager SP1. See [Planning for App-V Integration with Configuration Manager](/previous-versions/system-center/system-center-2012-R2/jj822982(v=technet.10)) to learn more about how to integrate your App-V environment with Configuration Manager.
 
 ## Related articles
 

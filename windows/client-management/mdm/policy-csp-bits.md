@@ -60,6 +60,7 @@ If BITS/BandwidthThrottlingStartTime or BITS/BandwidthThrottlingEndTime are NOT 
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -93,7 +94,7 @@ If you disable or don't configure this policy setting, BITS uses all available u
 > [!NOTE]
 > You should base the limit on the speed of the network link, not the computer's network interface card (NIC). This policy setting doesn't affect peer caching transfers between peer computers (it does affect transfers from the origin server); the "Limit the maximum network bandwidth used for Peercaching" policy setting should be used for that purpose.
 
-Consider using this setting to prevent BITS transfers from competing for network bandwidth when the client computer has a fast network card (10Mbs), but is connected to the network via a slow link (56Kbs).
+Consider using this setting to prevent BITS transfers from competing for network bandwidth when the client computer has a fast network card (10Mbs), but is connected to the network via a slow link (56 Kbs).
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -127,6 +128,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -159,7 +161,7 @@ If you disable or don't configure this policy setting, BITS uses all available u
 > [!NOTE]
 > You should base the limit on the speed of the network link, not the computer's network interface card (NIC). This policy setting doesn't affect peer caching transfers between peer computers (it does affect transfers from the origin server); the "Limit the maximum network bandwidth used for Peercaching" policy setting should be used for that purpose.
 
-Consider using this setting to prevent BITS transfers from competing for network bandwidth when the client computer has a fast network card (10Mbs), but is connected to the network via a slow link (56Kbs).
+Consider using this setting to prevent BITS transfers from competing for network bandwidth when the client computer has a fast network card (10Mbs), but is connected to the network via a slow link (56 Kbs).
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -193,6 +195,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -223,7 +226,8 @@ BITS, by using the three policies together (BandwidthThrottlingStartTime, Bandwi
 If you disable or don't configure this policy setting, BITS uses all available unused bandwidth.
 
 > [!NOTE]
-> You should base the limit on the speed of the network link, not the computer's network interface card (NIC). This policy setting doesn't affect peer caching transfers between peer computers (it does affect transfers from the origin server); the "Limit the maximum network bandwidth used for Peercaching" policy setting should be used for that purpose.
+
+> You should base the limit on the speed of the network link, not the computer's Network Interface Card (NIC). This policy setting does not affect peer caching transfers between peer computers (it does affect transfers from the origin server); the "Limit the maximum network bandwidth used for Peercaching" policy setting should be used for that purpose.
 
 Consider using this setting to prevent BITS transfers from competing for network bandwidth when the client computer has a fast network card (10Mbs), but is connected to the network via a slow link (56Kbs).
 
@@ -259,6 +263,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -319,6 +324,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -379,6 +385,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|

@@ -42,6 +42,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -60,7 +61,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Specifies the BitLocker Drive Encryption method and cipher strength.
+This policy specifies the BitLocker Drive Encryption method and cipher strength.
 
 > [!NOTE]
 > XTS-AES 128-bit and XTS-AES 256-bit values are supported only on Windows 10 for desktop.
