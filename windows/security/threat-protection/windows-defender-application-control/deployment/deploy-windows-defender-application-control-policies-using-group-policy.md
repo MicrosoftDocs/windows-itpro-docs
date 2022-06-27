@@ -27,7 +27,7 @@ ms.technology: windows-sec
 - Windows Server 2016 and above
 
 > [!NOTE]
-> Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+> Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 >
 > Group Policy-based deployment of Windows Defender Application Control policies only supports single-policy format WDAC policies. To use WDAC on devices running Windows 10 1903 and greater, or Windows 11, we recommend using an alternative method for policy deployment.
 
@@ -50,7 +50,7 @@ To deploy and manage a Windows Defender Application Control policy with Group Po
 
 5. In the selected GPO, navigate to Computer Configuration\\Administrative Templates\\System\\Device Guard. Right-click **Deploy Windows Defender Application Control** and then click **Edit**.
 
-    ![Edit the Group Policy for Windows Defender Application Control.](images/wdac-edit-gp.png)
+    ![Edit the Group Policy for Windows Defender Application Control.](../images/wdac-edit-gp.png)
 
 6. In the **Deploy Windows Defender Application Control** dialog box, select the **Enabled** option, and then specify the WDAC policy deployment path.
 
