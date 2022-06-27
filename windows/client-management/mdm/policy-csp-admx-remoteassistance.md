@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_RemoteAssistance
-description: Policy CSP - ADMX_RemoteAssistance
+description: Learn about Policy CSP - ADMX_RemoteAssistance.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -45,8 +45,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -69,7 +70,7 @@ If you enable this policy setting, only computers running this version (or later
 
 If you disable this policy setting, computers running this version and a previous version of the operating system can connect to this computer.
 
-If you don't configure this policy setting, users can configure the setting in System Properties in the Control Panel.
+If you don't configure this policy setting, users can configure this setting in System Properties in the Control Panel.
 
 <!--/Description-->
 
@@ -93,8 +94,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -151,3 +153,7 @@ ADMX Info:
 
 
 <!--/Policies-->
+
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

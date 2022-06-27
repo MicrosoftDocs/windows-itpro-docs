@@ -2,8 +2,6 @@
 title: Create a provisioning package (Windows 10/11)
 description: Learn how to create a provisioning package for Windows 10/11, which lets you quickly configure a device without having to install a new image.
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
 author: aczechowski
 ms.author: aaroncz
 ms.topic: article
@@ -147,8 +145,6 @@ For details on each specific setting, see [Windows Provisioning settings referen
 **Next step**: [How to apply a provisioning package](provisioning-apply-package.md)
 
 ## Learn more
-
-- Watch the video: [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
 
 - [How to bulk-enroll devices with On-premises Mobile Device Management in Microsoft Endpoint Configuration Manager](/configmgr/mdm/deploy-use/bulk-enroll-devices-on-premises-mdm)
 

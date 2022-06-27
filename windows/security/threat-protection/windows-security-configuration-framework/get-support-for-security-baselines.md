@@ -1,14 +1,11 @@
 ---
 title: Get support for security baselines
 description: Find answers to frequently asked question on how to get support for baselines, the Security Compliance Toolkit (SCT), and related topics.
-keywords: virtualization, security, malware
 ms.prod: m365-security
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/14/2022
@@ -79,7 +76,7 @@ Windows 8.1 |[9600 (April Update)](/archive/blogs/secguide/security-baselines-fo
 
 |           Name            |                                                                            Details                                                                            |                               Security Tools                                |
 |---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-|   Microsoft 365 Apps for enterprise, version 2112    | [SecGuide](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-365-apps-for-enterprise-v2112/ba-p/3038172) |     [SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319)     |
+|   Microsoft 365 Apps for enterprise, version 2206    | [SecGuide](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-365-apps-for-enterprise-v2206/ba-p/3502714) |     [SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319)     |
 |   Microsoft Edge, version 98    | [SecGuide](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-v98/ba-p/3165443) |     [SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319)     |
 
 <br />

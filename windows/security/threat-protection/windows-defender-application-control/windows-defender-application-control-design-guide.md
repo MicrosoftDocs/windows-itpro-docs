@@ -41,7 +41,7 @@ A common refrain you may hear about application control is that it is "too hard.
 -   The organization has a plan to handle potential helpdesk support requests for users who are blocked from running some apps.
 -   The organization has considered where application control can be most useful (for example, securing sensitive workloads or business functions) and also where it may be difficult to achieve (for example, developer workstations).
 
-Once these business factors are in place, you are ready to begin planning your WDAC deployment. The following topics can help guide you through your planning process.
+Once these business factors are in place, you are ready to begin planning your Windows Defender Application Control (WDAC) deployment. The following topics can help guide you through your planning process.
 
 ## In this section
 

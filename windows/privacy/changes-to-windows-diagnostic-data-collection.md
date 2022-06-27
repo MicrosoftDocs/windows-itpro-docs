@@ -1,16 +1,11 @@
 ---
 title: Changes to Windows diagnostic data collection
 description: This article provides information on changes to Windows diagnostic data collection Windows 10 and Windows 11.
-keywords: privacy, diagnostic data
 ms.prod: m365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: high
-audience: ITPro
-ms.author: siosulli
-author: dansimp
-manager: dansimp
+author: DHB-MSFT
+ms.author: danbrown
+manager: dougeby
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/29/2021
@@ -64,7 +59,7 @@ A final set of changes includes two new policies that can help you fine-tune dia
 - The **Limit dump collection** policy is a new policy that can be used to limit the types of [crash dumps](/windows/win32/dxtecharts/crash-dump-analysis) that can be sent back to Microsoft. If this policy is enabled, Windows Error Reporting will send only kernel mini dumps and user mode triage dumps.
   - Group Policy: Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Limit Dump Collection**
   - MDM policy: System/LimitDumpCollection 
-- The **Limit diagnostic log collection** policy is another new policy that limits the number of diagnostic logs that are sent back to Microsoft. If this policy is enabled, diagnostic logs are not sent back to Microsoft.
+- The **Limit diagnostic log collection** policy is another new policy that limits the number of diagnostic logs that are sent back to Microsoft. If this policy is enabled, diagnostic logs aren't sent back to Microsoft.
   - Group Policy: Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Limit Diagnostic Log Collection**
   - MDM policy: System/LimitDiagnosticLogCollection
 
@@ -81,7 +76,10 @@ The following provides information on the current configurations:
 
 ## New Windows diagnostic data processor configuration
 
-Enterprise customers have an option for controlling their Windows diagnostic data for their Azure Active Directory joined devices. This configuration option is supported on the following versions of Windows:
+> [!IMPORTANT]
+> There are some significant changes planned for the Windows diagnostic data processor configuration.  To learn more, [review this information](configure-windows-diagnostic-data-in-your-organization.md#significant-changes-coming-to-the-windows-diagnostic-data-processor-configuration).
+
+Enterprise customers have an option for controlling their Windows diagnostic data for their Azure Active Directory-joined devices. This configuration option is supported on the following versions of Windows:
 
 - Windows 11 Enterprise, Professional, and Education
 - Windows 10, Enterprise, Professional, and Education, version 1809 with at least the July 2021 update.

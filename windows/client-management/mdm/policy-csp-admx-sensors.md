@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_Sensors
-description: Policy CSP - ADMX_Sensors
+description: Learn about Policy CSP - ADMX_Sensors.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -54,8 +54,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -74,9 +75,9 @@ manager: dansimp
 <!--Description-->
 This policy setting turns off scripting for the location feature.
 
-If you enable this policy setting, scripts for the location feature will not run.
+If you enable this policy setting, scripts for the location feature won't run.
 
-If you disable or do not configure this policy setting, all location scripts will run.
+If you disable or don't configure this policy setting, all location scripts will run.
 
 <!--/Description-->
 
@@ -100,8 +101,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -122,7 +124,7 @@ This policy setting turns off scripting for the location feature.
 
 If you enable this policy setting, scripts for the location feature will not run.
 
-If you disable or do not configure this policy setting, all location scripts will run.
+If you disable or don't configure this policy setting, all location scripts will run.
 
 <!--/Description-->
 
@@ -146,8 +148,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -168,7 +171,7 @@ This policy setting turns off the location feature for this computer.
 
 If you enable this policy setting, the location feature is turned off, and all programs on this computer are prevented from using location information from the location feature.
 
-If you disable or do not configure this policy setting, all programs on this computer will not be prevented from using location information from the location feature.
+If you disable or don't configure this policy setting, all programs on this computer won't be prevented from using location information from the location feature.
 
 <!--/Description-->
 
@@ -192,8 +195,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -212,9 +216,9 @@ ADMX Info:
 <!--Description-->
 This policy setting turns off the sensor feature for this computer.
 
-If you enable this policy setting, the sensor feature is turned off, and all programs on this computer cannot use the sensor feature.
+If you enable this policy setting, the sensor feature is turned off, and all programs on this computer can't use the sensor feature.
 
-If you disable or do not configure this policy setting, all programs on this computer can use the sensor feature.
+If you disable or don't configure this policy setting, all programs on this computer can use the sensor feature.
 
 <!--/Description-->
 
@@ -238,8 +242,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -258,9 +263,9 @@ ADMX Info:
 <!--Description-->
 This policy setting turns off the sensor feature for this computer.
 
-If you enable this policy setting, the sensor feature is turned off, and all programs on this computer cannot use the sensor feature.
+If you enable this policy setting, the sensor feature is turned off, and all programs on this computer can't use the sensor feature.
 
-If you disable or do not configure this policy setting, all programs on this computer can use the sensor feature.
+If you disable or don't configure this policy setting, all programs on this computer can use the sensor feature.
 
 <!--/Description-->
 
@@ -279,3 +284,7 @@ ADMX Info:
 
 
 <!--/Policies-->
+
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

@@ -1,10 +1,7 @@
 ---
 title: eSIM Enterprise Management
 description: Learn how Mobile Device Management (MDM) Providers support the eSIM Profile Management Solution on Windows.
-keywords: eSIM enterprise management
 ms.prod: w10
-ms.mktglfcycl:
-ms.sitesec: library
 author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp

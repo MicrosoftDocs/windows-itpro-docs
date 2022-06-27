@@ -1,7 +1,6 @@
 ---
 title: WindowsAutopilot CSP
 description: Learn how without the ability to mark a device as remediation required, the device will remain in a broken state, which results in security and privacy concerns in Autopilot.
-ms.assetid: E6BC6B0D-1F16-48A5-9AC4-76D69A7EDDA6
 ms.reviewer: 
 manager: dansimp
 ms.author: v-nsatapathy
@@ -20,22 +19,26 @@ The table below shows the applicability of Windows:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|Yes|
+|Windows SE|No|Yes|
 |Business|No|Yes|
 |Enterprise|No|Yes|
 |Education|No|Yes|
 
 > [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The WindowsAutopilot CSP exposes Windows Autopilot related device information. The WindowsAutopilot CSP collects hardware information about a device and formats it into a BLOB. This BLOB is used as input for calling Windows Autopilot Service to mark a device as remediation required if the device underwent a hardware change that affects its ability to use Windows Autopilot.
 
 **./Vendor/MSFT/WindowsAutopilot**
 
-Root node. Supported operation is Get.
+Root node for the WindowsAutopilot configuration service provider. 
+Supported operation is Get.
 
 **HardwareMismatchRemediationData**
 
-Interior node. Supported operation is Get. Collects hardware information about a device and returns it as an encoded string. This string is used as input for calling Windows Autopilot Service to remediate a device if the device underwent a hardware change that affects its ability to use Windows Autopilot.
+Interior node for the HardwareMismatchRemediationData configuration service provider. Collects hardware information about a device and returns it as an encoded string. This string is used as input for calling Windows Autopilot Service to remediate a device if the device underwent a hardware change that affects its ability to use Windows Autopilot.
+
+Supported operation is Get.
 
 ## Related topics
 

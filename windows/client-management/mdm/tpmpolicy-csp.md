@@ -15,15 +15,16 @@ manager: dansimp
 
 The table below shows the applicability of Windows:
 
+The TPMPolicy Configuration Service Provider (CSP) provides a mechanism to enable zero exhaust configuration on a Windows device for TPM software components. Zero exhaust is defined as no network traffic (diagnostic data or otherwise, such as downloading background images, Windows Updates, and so on.) from Windows and inbox applications to public IP addresses unless directly intended by the user. This allows the enterprise admin to configure devices where no network communication is initiated by the system without explicit approval.
+
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-
-The TPMPolicy configuration service provider (CSP) provides a mechanism to enable zero-exhaust configuration on a Windows device for TPM software components. Zero exhaust is defined as no network traffic (diagnostic data or otherwise, such as downloading background images, Windows Updates, and so on) from Windows and inbox applications to public IP addresses, unless directly intended by the user. This definition allows the enterprise admin to configure devices where no network communication is initiated by the system without explicit approval.
 
 The TPMPolicy CSP was added in Windows 10, version 1703, and later.
 

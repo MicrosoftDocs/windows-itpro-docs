@@ -30,7 +30,7 @@ ms.technology: windows-sec
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
-Beginning in Windows 10 version 1903, WDAC supports the creation of multiple active policies on a device. One or more supplemental policies allow customers to expand a [WDAC base policy](wdac-wizard-create-base-policy.md) to increase the circle of trust of the policy. A supplemental policy can expand only one base policy, but multiple supplementals can expand the same base policy. When using supplemental policies, applications allowed by the base or its supplemental policy/policies will be allowed to execute.
+Beginning in Windows 10 version 1903, Windows Defender Application Control (WDAC) supports the creation of multiple active policies on a device. One or more supplemental policies allow customers to expand a [WDAC base policy](wdac-wizard-create-base-policy.md) to increase the circle of trust of the policy. A supplemental policy can expand only one base policy, but multiple supplementals can expand the same base policy. When using supplemental policies, applications allowed by the base or its supplemental policy/policies will be allowed to execute.
 
 Prerequisite information about application control can be accessed through the [WDAC design guide](windows-defender-application-control-design-guide.md). This page outlines the steps to create a supplemental application control policy, configure the policy options, and the signer and file rules.
 
@@ -73,7 +73,7 @@ File rules in an application control policy will specify the level at which appl
 
 ### Publisher Rules
 
-The Publisher file rule type uses properties in the code signing certificate chain to base file rules. Once the file to base the rule off of, called the *reference file*, is selected, use the slider to indicate the specificity of the rule.  The table below shows the relationship between the slider placement, the corresponding WDAC rule level, and its description. The lower the placement on the table and the UI slider, the greater the specificity of the rule. 
+The Publisher file rule type uses properties in the code signing certificate chain to base file rules. Once the file to base the rule off of, called the *reference file*, is selected, use the slider to indicate the specificity of the rule.  The table below shows the relationship between the slider placement, the corresponding Windows Defender Application Control (WDAC) rule level, and its description. The lower the placement on the table and the UI slider, the greater the specificity of the rule. 
 
 | Rule Condition | WDAC Rule Level | Description |
 |------------ | ----------- | ----------- |
@@ -114,4 +114,4 @@ The table on the left of the page will document the allow and deny rules in the 
 
 ## Up next
 
-- [Editing a WDAC policy using the Wizard](wdac-wizard-editing-policy.md)
+- [Editing a Windows Defender Application Control (WDAC) policy using the Wizard](wdac-wizard-editing-policy.md)

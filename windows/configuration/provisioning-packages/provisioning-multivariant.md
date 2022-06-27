@@ -2,8 +2,6 @@
 title: Create a provisioning package with multivariant settings (Windows 10/11)
 description: Create a provisioning package with multivariant settings to customize the provisioned settings for defined conditions.
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
 author: aczechowski
 ms.topic: article
 ms.localizationpriority: medium

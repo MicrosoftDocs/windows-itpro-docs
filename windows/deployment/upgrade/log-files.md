@@ -3,13 +3,8 @@ title: Log files and resolving upgrade errors
 manager: dougeby
 ms.author: aaroncz
 description: Learn how to interpret and analyze the log files that are generated during the Windows 10 upgrade process. 
-keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, ITPro
 ms.custom: seo-marvel-apr2020
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: deploy
-audience: itpro
 author: aczechowski
 ms.localizationpriority: medium
 ms.topic: article
@@ -42,7 +37,7 @@ The following table describes some log files and how to use them for troubleshoo
 |setupact.log|Post-upgrade (after OOBE):<br>Windows\Panther|Contains information about setup actions during the installation.|Investigate post-upgrade related issues.|
 |setuperr.log|Same as setupact.log|Contains information about setup errors during the installation.|Review all errors encountered during the installation phase.|
 |miglog.xml|Post-upgrade (after OOBE):<br>Windows\Panther|Contains information about what was migrated during the installation.|Identify post upgrade data migration issues.|
-|BlueBox.log|Down-Level:<br>Windows\Logs\Mosetup|Contains information communication between setup.exe and Windows Update.|Use during WSUS and WU down-level failures or for 0xC1900107.|
+|BlueBox.log|Down-Level:<br>Windows\Logs\Mosetup|Contains information communication between setup.exe and Windows Update.|Use during WSUS and Windows Update down-level failures or for 0xC1900107.|
 |Supplemental rollback logs:<br>Setupmem.dmp<br>setupapi.dev.log<br>Event logs (*.evtx)|$Windows.~BT\Sources\Rollback|Additional logs collected during rollback.|Setupmem.dmp: If OS bug checks during upgrade, setup will attempt to extract a mini-dump.<br>Setupapi: Device install issues - 0x30018<br>Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.|
 
 ## Log entry structure

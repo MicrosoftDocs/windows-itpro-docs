@@ -1,7 +1,6 @@
 ---
 title: AppLocker XSD
 description: View the XSD for the AppLocker CSP. The AppLocker CSP XSD provides an example of how the schema is organized.
-ms.assetid: 70CF48DD-AD7D-4BCF-854F-A41BFD95F876
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -13,7 +12,6 @@ ms.date: 06/26/2017
 ---
 
 # AppLocker XSD
-
 
 Here's the XSD for the AppLocker CSP.
 

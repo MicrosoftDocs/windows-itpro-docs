@@ -4,7 +4,6 @@ description: Manage settings and applications on devices that subscribe to the M
 MS-HAID:
 - 'p\_phdevicemgmt.wmi\_providers\_supported\_in\_windows\_10\_technical\_preview'
 - 'p\_phDeviceMgmt.wmi\_providers\_supported\_in\_windows'
-ms.assetid: 7D533044-AAD7-4B8F-B71B-9D52C15A168A
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp

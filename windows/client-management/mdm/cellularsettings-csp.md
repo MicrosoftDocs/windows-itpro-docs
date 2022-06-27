@@ -1,7 +1,6 @@
 ---
 title: CellularSettings CSP
 description: Learn how the CellularSettings configuration service provider is used to configure cellular settings on a mobile device.
-ms.assetid: ce8b6f16-37ca-4aaf-98b0-306d12e326df
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -20,6 +19,7 @@ The table below shows the applicability of Windows:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|

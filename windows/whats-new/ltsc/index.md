@@ -1,11 +1,7 @@
 ---
 title: Windows 10 Enterprise LTSC
 description: New and updated IT Pro content about new features in Windows 10, LTSC (also known as Windows 10 LTSB).
-keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 LTSC", "Windows 10 LTSB"]
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-audience: itpro
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
@@ -30,9 +26,9 @@ This topic provides links to articles with information about what's new in each 
 
 ## The Long-Term Servicing Channel (LTSC)
 
-The following table summarizes equivalent feature update versions of Windows 10 LTSC and General Availability Channel (SAC) releases.
+The following table summarizes equivalent feature update versions of Windows 10 LTSC and General Availability Channel (GA Channel) releases.
 
-| LTSC release | Equivalent SAC release | Availability date |
+| LTSC release | Equivalent GA Channel release | Availability date |
 | --- | --- | --- |
 | Windows 10 Enterprise LTSC 2015  | Windows 10, Version 1507 | 7/29/2015 |
 | Windows 10 Enterprise LTSC 2016  | Windows 10, Version 1607 | 8/2/2016 |

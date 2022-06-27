@@ -1,16 +1,11 @@
 ---
 title: Windows 10 deployment tools reference
 description: Learn about the tools available to deploy Windows 10, like Volume Activation Management Tool (VAMT) and User State Migration Tool (USMT).
-ms.assetid: 5C4B0AE3-B2D0-4628-9E73-606F3FAA17BB
 ms.reviewer: 
 manager: dougeby
-ms.audience: itpro
 ms.author: aaroncz
 author: aczechowski
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-audience: itpro
 ms.date: 07/12/2017
 ms.topic: article
 ---

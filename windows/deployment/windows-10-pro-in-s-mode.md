@@ -4,13 +4,8 @@ description: Overview of Windows 10 Pro/Enterprise in S mode. S mode switch opti
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
-keywords: Windows 10 S switch, S mode Switch, Switch in S mode, s mode switch, Windows 10 S, S-mode, system requirements, Overview, Windows 10 Pro in S mode, Windows 10 Pro in S mode
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.prod: w10
-ms.sitesec: library
-ms.pagetype: deploy
-audience: itpro
 ms.collection:
   - M365-modern-desktop
   - highpri

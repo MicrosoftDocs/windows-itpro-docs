@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_FileRecovery
-description: Policy CSP - ADMX_FileRecovery
+description: Learn about the Policy CSP - ADMX_FileRecovery.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -40,8 +40,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -74,3 +75,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
