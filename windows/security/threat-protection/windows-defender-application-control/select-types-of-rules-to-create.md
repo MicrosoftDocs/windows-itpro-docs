@@ -88,7 +88,7 @@ Each file rule level has its benefit and disadvantage. Use Table 2 to select the
 
 | Rule level | Description |
 |----------- | ----------- |
-| **Hash** | Specifies individual [Authenticode/PE image hash values](#More-information-about-hashes) for each discovered binary. This is the most specific level, and requires more effort to maintain the current product versions’ hash values. Each time a binary is updated, the hash value changes, therefore requiring a policy update. |
+| **Hash** | Specifies individual [Authenticode/PE image hash values](#more-information-about-hashes) for each discovered binary. This is the most specific level, and requires more effort to maintain the current product versions’ hash values. Each time a binary is updated, the hash value changes, therefore requiring a policy update. |
 | **FileName** | Specifies the original filename for each binary. Although the hash values for an application are modified when updated, the file names are typically not. This level offers less specific security than the hash level, but it doesn't typically require a policy update when any binary is modified. |
 | **FilePath** | Beginning with Windows 10 version 1903, this level allows binaries to run from specific file path locations. More information about FilePath level rules can be found below. |
 | **SignedVersion** | This level combines the publisher rule with a version number. It allows anything to run from the specified publisher with a version at or above the specified version number. |
