@@ -9,7 +9,7 @@ author: jsuther1974
 ms.reviewer: jogeurte
 ms.author: dansimp
 manager: dansimp
-ms.date: 05/09/2022
+ms.date: 06/27/2022
 ms.topic: reference
 ---
 
@@ -52,6 +52,9 @@ A Windows Defender Application Control policy logs events locally in Windows Eve
 | 8038 | Signing information event correlated with either an 8028 or 8029 event. One 8038 event is generated for each signature of a script file. Contains the total number of signatures on a script file and an index as to which signature it is. Unsigned script files will generate a single 8038 event with TotalSignatureCount 0. 8038 events are correlated with 8028 and 8029 events and can be matched using the `Correlation ActivityID` found in the **System** portion of the event. |
 
 ## Diagnostic events for Intelligent Security Graph (ISG) and Managed Installer (MI)
+
+> [!NOTE]
+> When Managed Installer is enabled, customers using LogAnalytics should be aware that Managed Installer may fire many 3091 events.  Customers may need to filter out these events to avoid high LogAnalytics costs.
 
 Events 3090, 3091 and 3092 prove helpful diagnostic information when the ISG or MI option is enabled by any Application Control policy. These events can help you debug why something was allowed/denied based on managed installer or ISG. These events don't necessarily indicate a problem but should be reviewed in context with other events like 3076 or 3077 described above.
 
