@@ -14,7 +14,7 @@ author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 05/03/2018
+ms.date: 06/27/2022
 ms.technology: windows-sec
 ---
 
@@ -48,6 +48,9 @@ To sign a Windows Defender Application Control policy with SignTool.exe, you nee
 
 > [!NOTE]
 > All policies (base and supplemental and single-policy format) must be pkcs7 signed. [PKCS 7 Standard](https://datatracker.ietf.org/doc/html/rfc5652)
+>
+>Certificate fields, like 'subject common name' and 'issuer common name,' cannot be UTF-8 encoded, otherwise, blue screens may occur. These strings must be encoded as PRINTABLE_STRING, IA5STRING or BMPSTRING.
+
 
 If you do not have a code signing certificate, see [Optional: Create a code signing certificate for Windows Defender Application Control](create-code-signing-cert-for-windows-defender-application-control.md) for instructions on how to create one. If you use an alternate certificate or Windows Defender Application Control (WDAC) policy, be sure to update the following steps with the appropriate variables and certificate so that the commands will function properly. To sign the existing WDAC policy, copy each of the following commands into an elevated Windows PowerShell session:
 
