@@ -102,7 +102,7 @@ Window Autopatch deploys mobile device management (MDM) policies to configure Mi
 
 ## Microsoft 365 Apps servicing profiles
 
-A service profile takes precedence over other management tools, such as Microsoft Endpoint Manager or the Office Deployment Tool. This means that the servicing profile will affect all devices that meet the [device eligibility requirements](#device-eligibility) regardless of existing management tools in your environment. So, if you're targeting a managed device with a servicing profile it will be ineligible for Microsoft 365 App update management.
+A [service profile](/deployoffice/admincenter/servicing-profile#compatibility-with-other-management-tools) takes precedence over other management tools, such as Microsoft Endpoint Manager or the Office Deployment Tool. This means that the servicing profile will affect all devices that meet the [device eligibility requirements](#device-eligibility) regardless of existing management tools in your environment. So, if you're targeting a managed device with a servicing profile it will be ineligible for Microsoft 365 App update management.
 
 However, the device may still be eligible for other managed updates. For more information about a device's eligibility for a given [update type](windows-autopatch-update-management.md#update-types), see the Device eligibility section of each respective update type.
 
