@@ -100,7 +100,9 @@ Window Autopatch deploys mobile device management (MDM) policies to configure Mi
 | Hide update notifications from users | Turned off | Users should be notified when Microsoft 365 Apps are being updated |
 | Hide the option to turn on or off automatic Office updates | Turned on | Prevents users from disabling automatic updates |
 
-## Microsoft 365 Apps servicing profiles
+## Compatibility with Servicing Profiles
+
+[Servicing profiles](/deployoffice/admincenter/servicing-profile) is a feature in the [Microsoft 365 Apps admin center](https://config.office.com/) that provides controlled update management of monthly Office updates, including controls for user and device targeting, scheduling, rollback, and reporting.
 
 A service profile takes precedence over other management tools, such as Microsoft Endpoint Manager or the Office Deployment Tool. This means that the servicing profile will affect all devices that meet the [device eligibility requirements](#device-eligibility) regardless of existing management tools in your environment. So, if you're targeting a managed device with a servicing profile it will be ineligible for Microsoft 365 App update management.
 
