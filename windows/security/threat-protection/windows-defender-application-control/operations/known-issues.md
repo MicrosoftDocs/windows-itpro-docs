@@ -31,6 +31,10 @@ ms.localizationpriority: medium
 This topic covers tips and tricks for admins as well as known issues with WDAC.
 Test this configuration in your lab before enabling it in production.
 
+## ManagedInstaller/ISG enablements may cause garrulous events
+
+These events do not indicate an issue with the policy, and we are servicing the code to turn them off by default.  This will be resolved in the September 2022 C release.
+
 ## .NET native images may generate false positive block events
 
 In some cases, the code integrity logs where WDAC errors and warnings are written will contain error events for native images generated for .NET assemblies. Typically, native image blocks are functionally benign as a blocked native image will fallback to its corresponding assembly and .NET will regenerate the native image at its next scheduled maintenance window.
