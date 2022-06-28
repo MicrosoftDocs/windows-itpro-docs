@@ -2,10 +2,7 @@
 title: Microsoft Connected Cache overview
 manager: dougeby
 description: This article provides information about Microsoft Connected Cache (MCC), a software-only caching solution.
-keywords: oms, operations management suite, wdav, updates, downloads, log analytics
 ms.prod: w10
-ms.mktglfcycl: deploy
-audience: itpro
 author: carmenf
 ms.localizationpriority: medium
 ms.author: carmenf

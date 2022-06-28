@@ -34,7 +34,7 @@ You can now give devices running Windows 10, version 2004 and later a name that'
 ### Resumed support for Windows 10, version 1903 and later   
 The previously mentioned provisioning problem was resolved, so the Set up School PCs app once again supports Windows 10, version 1903 and later. The Windows 10 settings that were removed are now back in the app. 
 
-### Device rename made optional for Azure AD joined devices  
+### Device rename made optional for Azure AD-joined devices  
 When you set up your Azure AD join devices in the app, you no longer need to rename your devices. You can keep existing device names.  
 
 ## Week of May 23, 2019   
@@ -42,7 +42,7 @@ When you set up your Azure AD join devices in the app, you no longer need to ren
 ### Suspended support for Windows 10, version 1903 and later
 Due to a provisioning problem, Set up School PCs has temporarily stopped support for Windows 10, version 1903 and later. All settings in the app that were for Windows 10, version 1903 and later have been removed. When the problem is resolved, support will resume again.  
 
-### Mandatory device rename for Azure AD joined devices
+### Mandatory device rename for Azure AD-joined devices
 If you configure Azure AD Join, you're now required to rename your devices during setup. You can't keep existing device names.    
 
 ## Week of April 15, 2019  

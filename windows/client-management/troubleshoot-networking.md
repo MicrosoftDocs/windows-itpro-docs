@@ -4,7 +4,6 @@ ms.reviewer:
 manager: dansimp
 description: Learn about the topics that are available to help you troubleshoot common problems related to Windows networking.
 ms.prod: w10
-ms.sitesec: library
 ms.topic: troubleshooting
 author: dansimp
 ms.localizationpriority: medium

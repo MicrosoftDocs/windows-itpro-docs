@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_ServerManager
-description: Policy CSP - ADMX_ServerManager
+description: Learn about Policy CSP - ADMX_ServerManager.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -52,8 +52,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -70,11 +71,11 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to turn off the automatic display of Server Manager at a sign in.  
+This policy setting allows you to turn off the automatic display of Server Manager at sign in.  
 
-- If you enable this policy setting, Server Manager isn't displayed automatically when a user signs in to the server.  
+If you enable this policy setting, Server Manager isn't displayed automatically when a user signs in to the server.  
 
-- If you disable this policy setting, Server Manager is displayed automatically when a user signs in to the server.  
+If you disable this policy setting, Server Manager is displayed automatically when a user signs in to the server.  
 
 If you don't configure this policy setting, Server Manager is displayed when a user signs in to the server. However, if the "Do not show me this console at logon" (Windows Server 2008 and Windows Server 2008 R2) or “Do not start Server Manager automatically at logon” (Windows Server 2012) option is selected, the console isn't displayed automatically at a sign in.  
 
@@ -104,8 +105,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -154,8 +156,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -174,9 +177,9 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to turn off the automatic display of the Initial Configuration Tasks window at a sign in on Windows Server 2008 and Windows Server 2008 R2.  
 
-- If you enable this policy setting, the Initial Configuration Tasks window isn't displayed when an administrator signs in to the server.  
+If you enable this policy setting, the Initial Configuration Tasks window isn't displayed when an administrator signs in to the server.  
 
-- If you disable this policy setting, the Initial Configuration Tasks window is displayed when an administrator signs in to the server.
+If you disable this policy setting, the Initial Configuration Tasks window is displayed when an administrator signs in to the server.
 
 If you don't configure this policy setting, the Initial Configuration Tasks window is displayed when an administrator signs in to the server. However, if an administrator selects the "Do not show this window at logon" option, the window isn't displayed on subsequent logons.
 
@@ -202,8 +205,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -243,3 +247,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

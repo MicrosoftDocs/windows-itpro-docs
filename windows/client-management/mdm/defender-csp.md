@@ -1,7 +1,6 @@
 ---
 title: Defender CSP
 description: Learn how the Windows Defender configuration service provider is used to configure various Windows Defender actions across the enterprise.
-ms.assetid: 481AA74F-08B2-4A32-B95D-5A3FD05B335C
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -14,6 +13,15 @@ ms.date: 02/22/2022
 ---
 
 # Defender CSP
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 > [!WARNING]
 > Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
@@ -355,7 +363,7 @@ Network Protection inspects DNS traffic that occurs over a UDP channel, to provi
 
 <a href="" id="enablenetworkprotection-disablehttpparsing"></a>**EnableNetworkProtection/DisableHttpParsing**
 
-Network Protection inspects HTTP traffic to see if a connection is being made to a malicious website, and to provide metadata to Behavior Monitoring. HTTP connections to malicious websites can also be blocked if -EnableNetworkProtection is set to enabled. HTTP inspection can be disabled by setting this value to "$true".
+Network Protection inspects HTTP traffic to see if a connection is being made to a malicious website, and to provide metadata to Behavior Monitoring. HTTP connections to malicious websites can also be blocked if Enable Network Protection is set to enabled. HTTP inspection can be disabled by setting this value to "$true".
 
 - Type: Boolean
 - Position: Named
@@ -365,7 +373,7 @@ Network Protection inspects HTTP traffic to see if a connection is being made to
 
 <a href="" id="enablenetworkprotection-disablerdpparsing"></a>**EnableNetworkProtection/DisableRdpParsing**
 
-Network Protection inspects RDP traffic so that it can block connections from known malicious hosts if -EnableNetworkProtection is set to be enabled, and to provide metadata to behavior monitoring. RDP inspection can be disabled by setting this value to "$true".
+Network Protection inspects RDP traffic so that it can block connections from known malicious hosts if Enable Network Protection is set to be enabled, and to provide metadata to behavior monitoring. RDP inspection can be disabled by setting this value to "$true".
 
 - Type: Boolean
 - Position: Named
@@ -375,7 +383,7 @@ Network Protection inspects RDP traffic so that it can block connections from kn
 
 <a href="" id="enablenetworkprotection-disablesshparsing"></a>**EnableNetworkProtection/DisableSshParsing**
 
-Network Protection inspects SSH traffic, so that it can block connections from known malicious hosts. If -EnableNetworkProtection is set to be enabled, and to provide metadata to behavior monitoring. SSH inspection can be disabled by setting this value to "$true".
+Network Protection inspects SSH traffic, so that it can block connections from known malicious hosts. If Enable Network Protection is set to be enabled, and to provide metadata to behavior monitoring. SSH inspection can be disabled by setting this value to "$true".
 
 - Type: Boolean
 - Position: Named
@@ -385,7 +393,7 @@ Network Protection inspects SSH traffic, so that it can block connections from k
 
 <a href="" id="enablenetworkprotection-disabletlsparsing"></a>**EnableNetworkProtection/DisableTlsParsing**
 
-Network Protection inspects TLS traffic (also known as HTTPS traffic) to see if a connection is being made to a malicious website, and to provide metadata to Behavior Monitoring. TLS connections to malicious websites can also be blocked if -EnableNetworkProtection is set to enabled. HTTP inspection can be disabled by setting this value to "$true".
+Network Protection inspects TLS traffic (also known as HTTPS traffic) to see if a connection is being made to a malicious website, and to provide metadata to Behavior Monitoring. TLS connections to malicious websites can also be blocked if Enable Network Protection is set to enabled. HTTP inspection can be disabled by setting this value to "$true".
 
 - Type: Boolean
 - Position: Named
@@ -594,11 +602,13 @@ An interior node to group Windows Defender configuration information.
 Supported operation is Get.
 
 <a href="" id="configuration-tamperprotection"></a>**Configuration/TamperProtection**  
+
 Tamper protection helps protect important security features from unwanted changes and interference. This protection includes real-time protection, behavior monitoring, and more. Accepts signed string to turn the feature on or off. Settings are configured with an MDM solution, such as Intune and is available in Windows 10 Enterprise E5 or equivalent subscriptions.
+
 
 Send off blob to device to reset the tamper protection state before setting this configuration to "not configured" or "unassigned" in Intune.
 
-The data type is a Signed blob.
+The data type is a Signed BLOB.
 
 Supported operations are Add, Delete, Get, Replace.
 
@@ -610,7 +620,7 @@ Intune tamper protection setting UX supports three states:
 When enabled or disabled exists on the client and admin moves the setting to not configured, it won't have any impact on the device state. To change the state to either enabled or disabled would require to be set explicitly.
 
 <a href="" id="configuration-disablelocaladminmerge"></a>**Configuration/DisableLocalAdminMerge**<br>
-This policy setting controls whether or not complex list settings configured by a local administrator are merged with managed settings. This setting applies to lists such as threats and exclusions.
+This policy setting controls whether or not complex list settings configured by a local administrator are merged with managed settings. This setting applies to lists such as threats and exclusion list.
 
 If you disable or don't configure this setting, unique items defined in preference settings configured by the local administrator will be merged into the resulting effective policy. If conflicts occur, management settings will override preference settings.
 
@@ -630,6 +640,7 @@ Valid values are:
 - 0 (default) – Disable.
 
 <a href="" id="configuration-hideexclusionsfromlocaladmins"></a>**Configuration/HideExclusionsFromLocalAdmins**<br>
+
 This policy setting controls whether or not exclusions are visible to Local Admins.  For end users (that aren't Local Admins) exclusions aren't visible, whether or not this setting is enabled.
 
 If you disable or don't configure this setting, Local Admins will be able to see exclusions in the Windows Security App, in the registry, and via PowerShell.
@@ -639,22 +650,23 @@ If you enable this setting, Local Admins will no longer be able to see the exclu
 > [!NOTE]
 > Applying this setting won't remove exclusions, it will only prevent them from being visible to Local Admins. This is reflected in **Get-MpPreference**.
 
-Supported OS versions:  Windows 10
+Supported OS versions: Windows 10
 
 The data type is integer.
 
-Supported operations are Add, Delete, Get, Replace.
+Supported operations are Add, Delete, Get, and Replace.
 
 Valid values are:  
 - 1 – Enable.
 - 0 (default) – Disable.
 
 <a href="" id="configuration-disablecputhrottleonidlescans"></a>**Configuration/DisableCpuThrottleOnIdleScans**<br>	
+
 Indicates whether the CPU will be throttled for scheduled scans while the device is idle.  This feature is enabled by default and won't throttle the CPU for scheduled scans performed when the device is otherwise idle, regardless of what ScanAvgCPULoadFactor is set to. For all other scheduled scans, this flag will have no impact and normal throttling will occur.	
 
 The data type is integer.	
 
-Supported operations are Add, Delete, Get, Replace.	
+Supported operations are Add, Delete, Get, and Replace.	
 
 Valid values are:	
 -	1 (default) – Enable.	
@@ -665,7 +677,7 @@ Allow managed devices to update through metered connections. Data charges may ap
 
 The data type is integer.
 
-Supported operations are Add, Delete, Get, Replace.
+Supported operations are Add, Delete, Get, and Replace.
 
 Valid values are:
 - 1 – Enable.
@@ -676,7 +688,7 @@ This settings controls whether Network Protection is allowed to be configured in
 
 The data type is integer.
 
-Supported operations are Add, Delete, Get, Replace.
+Supported operations are Add, Delete, Get, and Replace.
 
 Valid values are:
 - 1 – Enable.
@@ -687,7 +699,7 @@ Allows an administrator to explicitly disable network packet inspection made by 
 
 The data type is string.
 
-Supported operations are Add, Delete, Get, Replace.
+Supported operations are Add, Delete, Get, and Replace.
 
 <a href="" id="configuration-enablefilehashcomputation"></a>**Configuration/EnableFileHashComputation**  
 Enables or disables file hash computation feature.
@@ -695,7 +707,7 @@ When this feature is enabled, Windows Defender will compute hashes for files it 
 
 The data type is integer.
 
-Supported operations are Add, Delete, Get, Replace.
+Supported operations are Add, Delete, Get, and Replace.
 
 Valid values are:  
 - 1 – Enable.
@@ -706,7 +718,7 @@ The support log location setting allows the administrator to specify where the M
 
 Data type is string.
 
-Supported operations are Add, Delete, Get, Replace.
+Supported operations are Add, Delete, Get, and Replace.
 
 Intune Support log location setting UX supports three states:  
 
@@ -714,7 +726,7 @@ Intune Support log location setting UX supports three states:
 - 1 - Enabled. Enables the Support log location feature. Requires admin to set custom file path.
 - 0 - Disabled. Turns off the Support log location feature. 
 
-When enabled or disabled exists on the client and admin moves the setting to be configured not , it won't have any impact on the device state. To change the state to either enabled or disabled would require to be set explicitly.  
+When enabled or disabled exists on the client and admin moves the setting to not configured, it won't have any impact on the device state. To change the state to either enabled or disabled would require to be set explicitly.  
 
 More details:  
 
@@ -738,7 +750,7 @@ If you disable or don't configure this policy, the device will stay up to date a
 
 The data type is integer.
 
-Supported operations are Add, Delete, Get, Replace.
+Supported operations are Add, Delete, Get, and Replace.
 
 Valid values are:
 - 0: Not configured (Default)
@@ -771,7 +783,7 @@ If you disable or don't configure this policy, the device will stay up to date a
 
 The data type is integer.
 
-Supported operations are Add, Delete, Get, Replace.
+Supported operations are Add, Delete, Get, and Replace.
 
 Valid values are:
 - 0: Not configured (Default)
@@ -796,7 +808,7 @@ Current Channel (Broad): Devices will be offered updates only after the gradual 
 If you disable or don't configure this policy, the device will stay up to date automatically during the daily release cycle. Suitable for most devices.
 
 The data type is integer.
-Supported operations are Add, Delete, Get, Replace.
+Supported operations are Add, Delete, Get, and Replace.
 
 Valid Values are:
 - 0: Not configured (Default)
@@ -819,7 +831,7 @@ If you disable or don't configure this policy, the device will remain in Current
 
 The data type is integer.
 
-Supported operations are Add, Delete, Get, Replace.
+Supported operations are Add, Delete, Get, and Replace.
 
 Valid values are:
 - 1 – Enabled.

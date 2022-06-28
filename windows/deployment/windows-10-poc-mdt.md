@@ -3,18 +3,12 @@ title: Step by step - Deploy Windows 10 in a test lab using MDT
 description: In this article, you'll learn how to deploy Windows 10 in a test lab using Microsoft Deployment Toolkit (MDT).
 ms.custom: seo-marvel-apr2020
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: deploy
-keywords: deployment, automate, tools, configure, mdt
 ms.localizationpriority: medium
 ms.date: 10/11/2017
 ms.reviewer: 
 manager: dougeby
-ms.audience: itpro
 ms.author: aaroncz
 author: aczechowski
-audience: itpro
 ms.topic: article
 ---
 
@@ -647,7 +641,7 @@ Deployment logs are available on the client computer in the following locations:
 
 You can review WDS events in Event Viewer at: **Applications and Services Logs > Microsoft > Windows > Deployment-Services-Diagnostics**. By default, only the **Admin** and **Operational** logs are enabled. To enable other logs, right-click the log and then click **Enable Log**.
 
-Tools for viewing log files, and to assist with troubleshooting are available in the [System Center 2012 R2 Configuration Manager Toolkit](https://www.microsoft.com/download/details.aspx?id=50012)
+Tools for viewing log files, and to assist with troubleshooting are available in the [Configuration Manager Toolkit](https://www.microsoft.com/download/details.aspx?id=50012)
 
 Also see [Resolve Windows 10 upgrade errors](upgrade/resolve-windows-10-upgrade-errors.md) for detailed troubleshooting information.
 

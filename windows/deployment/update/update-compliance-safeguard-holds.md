@@ -4,9 +4,6 @@ ms.reviewer:
 manager: dougeby
 description: Learn how the Safeguard Holds report provides information about safeguard holds in your population.
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.pagetype: deploy
-audience: itpro
 author: aczechowski
 ms.author: aaroncz
 ms.collection: M365-analytics

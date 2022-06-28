@@ -26,7 +26,7 @@ This article discusses the Company Portal app installation options, adding organ
 
 ## Before you begin
 
-The Company Portal app is included with Microsoft Endpoint Manager (MEM). Endpoint Manager is a Mobile Device Management (MDM) and Mobile Application manager (MAM) provider. It help manages your devices, and manage apps on your devices.
+The Company Portal app is included with Microsoft Endpoint Manager. Endpoint Manager is a Mobile Device Management (MDM) and Mobile Application manager (MAM) provider. It help manages your devices, and manage apps on your devices.
 
 If you're not managing your devices using an MDM provider, the following resources may help you get started:
 

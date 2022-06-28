@@ -4,7 +4,6 @@ description: Learn about mobile device management (MDM) enrollment of Windows 10
 MS-HAID:
 - 'p\_phdevicemgmt.enrollment\_ui'
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
-ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -274,7 +273,7 @@ The deep link used for connecting your device to work will always use the follow
 
 | Parameter | Description                                                  | Supported Value for Windows 10|
 |-----------|--------------------------------------------------------------|----------------------------------------------|
-| mode      | Describes which mode will be executed in the enrollment app. Added in Windows 10, version 1607| Mobile Device Management (MDM), Adding Work Account (AWA), and Azure Active Directory Joined (AADJ).                                       |
+| mode      | Describes which mode will be executed in the enrollment app. Added in Windows 10, version 1607| Mobile Device Management (MDM), Adding Work Account (AWA), and Azure Active Directory-joined.                                       |
 |username  | Specifies the email address or UPN of the user who should be enrolled into MDM. Added in Windows 10, version 1703. | string |
 | servername | Specifies the MDM server URL that will be used to enroll the device. Added in Windows 10, version 1703. | string|
 | accesstoken | Custom parameter for MDM servers to use as they see fit. Typically, this parameter's value can be used as a token to validate the enrollment request. Added in Windows 10, version 1703. | string |
@@ -283,7 +282,7 @@ The deep link used for connecting your device to work will always use the follow
 | ownership | Custom parameter for MDM servers to use as they see fit. Typically, this parameter's value can be used to determine whether the device is BYOD or Corp Owned. Added in Windows 10, version 1703. | 1, 2, or 3. Where "1" means ownership is unknown, "2" means the device is personally owned, and "3" means the device is corporate-owned |
 
 > [!NOTE]
-> AWA and AADJ values for mode are only supported on Windows 10, version 1709 and later. 
+> AWA and Azure Active Directory-joined values for mode are only supported on Windows 10, version 1709 and later. 
 
 
 ### Connect to MDM using a deep link

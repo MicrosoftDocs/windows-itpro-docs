@@ -14,7 +14,6 @@ manager: dansimp
 
 # Policy CSP - EAP
 
-
 <hr/>
 
 <!--Policies-->
@@ -38,6 +37,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -56,7 +56,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting is added in Windows 10, version 21H1. Allow or disallow use of TLS 1.3 during EAP client authentication.
+Added in Windows 10, version 21H1. This policy setting allows or disallows use of TLS 1.3 during EAP client authentication.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -69,8 +69,8 @@ ADMX Info:
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:  
-- 0 – Use of TLS version 1.3 is not allowed for authentication.
 
+- 0 – Use of TLS version 1.3 is not allowed for authentication.
 - 1 (default) – Use of TLS version 1.3 is allowed for authentication.
 
 <!--/SupportedValues-->
@@ -81,3 +81,6 @@ The following list shows the supported values:
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

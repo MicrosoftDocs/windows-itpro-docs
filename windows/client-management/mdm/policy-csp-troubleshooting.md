@@ -12,8 +12,6 @@ ms.date: 09/27/2019
 
 # Policy CSP - Troubleshooting
 
-
-
 <hr/>
 
 <!--Policies-->
@@ -32,11 +30,13 @@ ms.date: 09/27/2019
 <a href="" id="troubleshooting-allowrecommendations"></a>**Troubleshooting/AllowRecommendations**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -54,7 +54,7 @@ ms.date: 09/27/2019
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows IT admins to configure how to apply recommended troubleshooting for known problems on the devices in their domains or IT environments.
+This policy setting allows IT admins to configure, how to apply recommended troubleshooting for known problems on the devices in their domains or IT environments.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -98,3 +98,6 @@ By default, this policy isn't configured and the SKU based defaults are used for
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

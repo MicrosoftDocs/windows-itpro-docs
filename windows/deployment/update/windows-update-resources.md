@@ -2,10 +2,7 @@
 title: Windows Update - Additional resources
 description: In this article, learn details about to troubleshooting WSUS and resetting Windows Update components manually.
 ms.prod: w10
-ms.mktglfcycl:
-audience: itpro
 ms.localizationpriority: medium
-ms.audience: itpro
 manager: dougeby
 ms.topic: article
 ms.author: aaroncz

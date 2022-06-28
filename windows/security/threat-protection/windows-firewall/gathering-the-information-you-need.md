@@ -1,17 +1,12 @@
 ---
 title: Gathering the Information You Need (Windows)
 description: Collect and analyze information about your network, directory services, and devices to prepare for Windows Defender Firewall with Advanced Security deployment.
-ms.assetid: 545fef02-5725-4b1e-b67a-a32d94c27d15
 ms.reviewer: 
 ms.author: dansimp
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021

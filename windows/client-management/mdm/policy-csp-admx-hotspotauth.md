@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_HotSpotAuth
-description: Policy CSP - ADMX_HotSpotAuth
+description: Learn about the Policy CSP - ADMX_HotSpotAuth.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -42,8 +42,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -66,9 +67,9 @@ This policy setting defines whether WLAN hotspots are probed for Wireless Intern
 
 - If authentication is successful, users will be connected automatically on subsequent attempts. Credentials can also be configured by network operators.  
 
-- If you enable this policy setting, or if you do not configure this policy setting, WLAN hotspots are automatically probed for WISPR protocol support.  
+- If you enable this policy setting, or if you don't configure this policy setting, WLAN hotspots are automatically probed for WISPR protocol support.  
 
-- If you disable this policy setting, WLAN hotspots are not probed for WISPr protocol support, and users can only authenticate with WLAN hotspots using a web browser.
+- If you disable this policy setting, WLAN hotspots aren't probed for WISPr protocol support, and users can only authenticate with WLAN hotspots using a web browser.
 
 <!--/Description-->
 
@@ -87,3 +88,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
