@@ -256,7 +256,7 @@ Use [Policy Configuration Service Provider (CSP)](/windows/client-management/mdm
 ## Enable Windows diagnostic data processor configuration
 
 > [!IMPORTANT]
-> There are some significant changes planned for diagnostic data processor configuration. To learn more, [review this information](changes-to-windows-diagnostic-data-collection.md#significant-changes-coming-to-the-windows-diagnostic-data-processor-configuration)
+> There are some significant changes planned for diagnostic data processor configuration. To learn more, [review this information](changes-to-windows-diagnostic-data-collection.md#significant-changes-coming-to-the-windows-diagnostic-data-processor-configuration).
 
 The Windows diagnostic data processor configuration enables you to be the controller, as defined by the European Union General Data Protection Regulation (GDPR), for the Windows diagnostic data collected from your Windows devices that meet the configuration requirements.
 
