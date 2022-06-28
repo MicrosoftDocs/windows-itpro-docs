@@ -147,7 +147,7 @@ An administrator can disable a user’s ability to delete their device’s diagn
 #### _2.3.7 Diagnostic data: Enabling the Windows diagnostic data processor configuration_
 
 > [!IMPORTANT]
-> There are some significant changes planned for the Windows diagnostic data processor configuration.  To learn more, [review this information]((changes-to-windows-diagnostic-data-collection.md#significant-changes-coming-to-the-windows-diagnostic-data-processor-configuration)).
+> There are some significant changes planned for the Windows diagnostic data processor configuration.  To learn more, [review this information](changes-to-windows-diagnostic-data-collection.md#significant-changes-coming-to-the-windows-diagnostic-data-processor-configuration).
 
 **Applies to:**
 
