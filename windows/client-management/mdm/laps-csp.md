@@ -14,7 +14,7 @@ manager: jsimmons
 
 # Local Administrator Password Solution CSP
 
-The Local Administrator Password Solution (LAPS) configuration service provider (CSP) is used by the enterprise to manage back up of local administrator account passwords. This CSP was added in Windows 11 as of version 25145. This CSP was added in Windows 11 as of version 25154 (tbd).
+The Local Administrator Password Solution (LAPS) configuration service provider (CSP) is used by the enterprise to manage back up of local administrator account passwords. This CSP was added in Windows 11 as of version 25145.
 
 The following example shows the LAPS CSP in tree format.
 
@@ -57,7 +57,7 @@ The LAPS CSP can be used to manage devices that are either joined to Azure AD or
 |ResetPasswordStatus|Yes|Yes|
 
 > [!IMPORTANT]
-> Windows supports a LAPS Group Policy Object that is entirely separate from the LAPS CSP. Many of the various settings are common across both the LAPS GPO and CSP. However, as long as at least one LAPS setting is configured via CSP, any GPO-configured settings will be ignored. Also see xxx reference on LAPS policy configuration.
+> Windows supports a LAPS Group Policy Object that is entirely separate from the LAPS CSP. Many of the various settings are common across both the LAPS GPO and CSP (GPO does not support any of the Action-related settings). As long as at least one LAPS setting is configured via CSP, any GPO-configured settings will be ignored. Also see the TBD reference on LAPS policy configuration.
 
 ## ./Device/Vendor/MSFT/LAPS
 
@@ -89,11 +89,11 @@ Data type is integer. Supported operations are Add, Get, Replace, and Delete.
 <!--SupportedValues-->
 The allowable settings are:
 
-0=Disabled (password won't be backed up)
-
-1=Back up the password to Azure AD only
-
-2=Back up the password to Active Directory only
+|Value|Description of setting|
+|--- |--- |
+|0|Disabled (password won't be backed up)|
+|1|Back up the password to Azure AD only|
+|2|Back up the password to Active Directory only|
 
 If not specified, this setting will default to 0 (disabled).
 <!--/SupportedValues-->
@@ -147,18 +147,18 @@ Use this setting to configure password complexity of the managed local administr
 <!--SupportedValues-->
 The allowable settings are:
 
-1=Large letters
+|Value|Description of setting|
+|--- |--- |
+|1|Large letters|
+|2|Large letters + small letters|
+|3|Large letters + small letters + numbers|
+|4|Large letters + small letters + numbers + special characters|
 
-2=Large letters + small letters
-
-3=Large letters + small letters + numbers
-
-4=Large letters + small letters + numbers + special characters
 
 If not specified, this setting will default to 4.
 
 > [!IMPORTANT]
-> Windows supports the lower password complexity settings (1, 2, and 3) only for backwards compatibility with older versions of LAPS. Microsoft recommends that this setting always configured to 4.
+> Windows supports the lower password complexity settings (1, 2, and 3) only for backwards compatibility with older versions of LAPS. Microsoft recommends that this setting always be configured to 4.
 <!--/SupportedValues-->
 
 Data type is integer.
@@ -242,7 +242,7 @@ Use this setting to configure additional enforcement of maximum password age for
 <!--/SupportedSKUs-->
 
 <!--SupportedValues-->
-When this setting is set to True, planned password expiration that would result in a password age which is greater than what is specified by the "PasswordAgeDays" policy is NOT allowed. When such expiration is detected, the password is changed immediately, and the new password expiration date is set according to policy.
+When this setting is set to True, planned password expiration that would result in a password age greater than what is specified by the "PasswordAgeDays" policy is NOT allowed. When such expiration is detected, the password is changed immediately, and the new password expiration date is set according to policy.
 
 If not specified, this setting defaults to True.
 
@@ -424,7 +424,7 @@ If not specified, this setting will default to 3.
 > The allowed post-authentication actions are intended to help limit the amount of time that a LAPS password may be used before being reset. Logging off the managed account - or rebooting the device - are options to help ensure this. Abrupt termination of logon sessions, or rebooting the device, may result in data loss.
 
 > [!IMPORTANT]
-> From a security perspective, a malicious user who acquires administrative privileges on a device using a valid LAPS password has the ability to prevent or circumvent these mechanisms.
+> From a security perspective, a malicious user who acquires administrative privileges on a device using a valid LAPS password does have the ultimate ability to prevent or circumvent these mechanisms.
 <!--/SupportedValues-->
 
 Data type is integer.
