@@ -294,6 +294,11 @@ items:
           items: 
             - name: HealthAttestation DDF
               href: healthattestation-ddf.md
+        - name: Local Administrator Password Solution CSP
+          href: laps-csp.md
+          items:
+            - name: Local Administrator Password Solution DDF
+              href: laps-ddf.md
         - name: MultiSIM CSP
           href: multisim-csp.md
           items: 
