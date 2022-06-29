@@ -53,7 +53,7 @@ When you enable this audit policy, it functions in the same way as the **Network
 
 - **Enable all**
     
-    The domain controlleron which this policy is set will log all events for incoming NTLM traffic.
+    The domain controller on which this policy is set will log all events for incoming NTLM traffic.
 
 ### Best practices
 
