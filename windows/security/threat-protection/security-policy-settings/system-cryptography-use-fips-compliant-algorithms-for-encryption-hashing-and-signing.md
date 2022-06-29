@@ -57,7 +57,7 @@ Additionally, if a data drive is password-protected, it can be accessed by a FIP
 
 ### Best practices
 
-We recommend that customers hoping to comply with FIPS 140-2 research the configuration settings of applications and protocols they may be using to ensure their solutions can be configured to utilize the FIPS 140-2 validated cryptography provided by Windows when it is operating in FIPS 140-2 approved mode.
+We recommend that customers hoping to comply with FIPS 140-2 research the configuration settings of applications and protocols they may be using to ensure their solutions can be configured to utilize the FIPS 140-2 validated cryptography provided by Windows when it's operating in FIPS 140-2 approved mode.
 
 For a complete list of Microsoft-recommended configuration settings, see [Windows security baselines](../windows-security-baselines.md). For more information about Windows and FIPS 140-2, see [FIPS 140 Validation](../fips-140-validation.md).
 
@@ -82,11 +82,11 @@ The following table lists the actual and effective default values for this polic
 
 When this setting is enabled, the Encrypting File System (EFS) service supports only the Triple DES encryption algorithm for encrypting file data. By default, the Windows Vista and the Windows Server 2003 implementation of EFS uses the Advanced Encryption Standard (AES) with a 256-bit key. The Windows XP implementation uses DESX.
 
-When this setting is enabled, BitLocker generates recovery password or recovery keys applicable to versions listed in the following:
+When this setting is enabled, BitLocker generates recovery password or recovery keys applicable to the following versions:
 
 | Operating systems | Applicability |
 | - | - |
-| Windows 10, Windows 8.1, and Windows Server 2012 R2| When created on these operating systems, the recovery password cannot be used on other systems listed in this table.| 
+| Windows 10, Windows 8.1, and Windows Server 2012 R2| When created on these operating systems, the recovery password can't be used on other systems listed in this table.| 
 | Windows Server 2012 and Windows 8 | When created on these operating systems, the recovery key can be used on other systems listed in this table as well.| 
 | Windows Server 2008 R2 and Windows 7 | When created on these operating systems, the recovery key can be used on other systems listed in this table as well.| 
 | Windows Server 2008 and Windows Vista | When created on these operating systems, the recovery key can be used on other systems listed in this table as well.| 
@@ -97,7 +97,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ### Group Policy
 
@@ -117,8 +117,8 @@ Enable the **System cryptography: Use FIPS compliant algorithms for encryption, 
 
 ### Potential impact
 
-Client devices that have this policy setting enabled cannot communicate by means of digitally encrypted or signed protocols with servers that do not support these algorithms. Network clients that do not support these algorithms cannot use servers that require them for network communications. For example, many Apache-based Web servers are not configured to support TLS. If you enable this setting, you must also configure Internet Explorer® to use TLS. This policy setting also affects the encryption level that is used for the Remote Desktop Protocol (RDP). The Remote Desktop Connection tool 
-uses the RDP protocol to communicate with servers that run Terminal Services and client computers that are configured for remote control; RDP connections fail if both devices are not configured to use the same encryption algorithms.
+Client devices that have this policy setting enabled can't communicate through digitally encrypted or signed protocols with servers that don't support these algorithms. Network clients that don't support these algorithms can't use servers that require them for network communications. For example, many Apache-based Web servers aren't configured to support TLS. If you enable this setting, you must also configure Internet Explorer® to use TLS. This policy setting also affects the encryption level that is used for the Remote Desktop Protocol (RDP). The Remote Desktop Connection tool 
+uses the RDP protocol to communicate with servers that run Terminal Services and client computers that are configured for remote control; RDP connections fail if both devices aren't configured to use the same encryption algorithms.
 
 ## Related topics
 
