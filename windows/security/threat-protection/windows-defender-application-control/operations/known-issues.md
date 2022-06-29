@@ -30,9 +30,9 @@ ms.localizationpriority: medium
 
 This topic covers tips and tricks for admins and known issues with Windows Defender Application Control (WDAC). Test this configuration in your lab before enabling it in production.
 
-## ManagedInstaller/ISG enablements may cause garrulous events
+## Managed Installer and ISG will cause garrulous events
 
-These events don't indicate an issue with the policy, and we're servicing the code to turn them off by default.  This issue will be resolved in the September 2022 C release.
+When Managed Installer and ISG are enabled, 3091 and 3092 events will be logged when a file didn't have Managed Installer or ISG authorization, regardless of whether the file was allowed. Beginning with the September 2022 C release, these events will be moved to the verbose channel since the events don't indicate an issue with the policy.
 
 ## .NET native images may generate false positive block events
 
