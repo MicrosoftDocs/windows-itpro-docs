@@ -298,7 +298,7 @@ items:
           href: laps-csp.md
           items:
             - name: Local Administrator Password Solution DDF
-              href: laps-ddf.md
+              href: laps-ddf-file.md
         - name: MultiSIM CSP
           href: multisim-csp.md
           items: 
