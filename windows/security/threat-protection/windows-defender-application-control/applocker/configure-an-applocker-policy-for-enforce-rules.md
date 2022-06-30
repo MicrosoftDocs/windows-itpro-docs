@@ -40,7 +40,7 @@ You can perform this task by using the Group Policy Management Console for an Ap
 **To enable the Enforce rules enforcement setting**
 
 1.  From the AppLocker console, right-click **AppLocker**, and then click **Properties**.
-2.  On the **Enforcement** tab of the **AppLocker Properties** dialog box, select the **Configured** check box for the rule collection that you are editing, and then verify that **Enforce rules** is selected.
+2.  On the **Enforcement** tab of the **AppLocker Properties** dialog box, select the **Configured** check box for the rule collection that you're editing, and then verify that **Enforce rules** is selected.
 3.  Click **OK**.
 
 For info about viewing the events generated from rules enforcement, see [Monitor app usage with AppLocker](monitor-application-usage-with-applocker.md).
