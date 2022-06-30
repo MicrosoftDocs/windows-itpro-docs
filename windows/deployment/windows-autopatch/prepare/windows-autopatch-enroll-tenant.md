@@ -27,7 +27,7 @@ To start using the Windows Autopatch service, ensure you meet the [Windows Autop
 > [!IMPORTANT]
 > The online Readiness assessment tool helps you check your readiness to enroll in Windows Autopatch for the first time. Once you enroll, you'll no longer be able to access the  tool again.
 
-The Readiness assessment tool checks the settings in [Microsoft Endpoint Manager](#microsoft-intune-settings) (specifically, Microsoft Intune) and [Azure Active Directory](#azure-active-directory-settings) (Azure AD) to ensure they'll work with Windows Autopatch. We aren't, however, checking the workloads in Configuration Manager necessary for Windows Autopatch. For more information about workload prerequisites, see [Co-management requirements](../prepare/windows-autopatch-prerequisites.md#co-management-requirements).
+The Readiness assessment tool checks the settings in [Microsoft Endpoint Manager](#microsoft-intune-settings) (specifically, Microsoft Intune) and [Azure Active Directory](#azure-active-directory-settings) (Azure AD) to ensure they'll work with Windows Autopatch. We aren't, however, checking the workloads in Configuration Manager necessary for Windows Autopatch. For more information about workload prerequisites, see [Configuration Manager Co-management requirements](../prepare/windows-autopatch-prerequisites.md#configuration-manager-co-management-requirements).
 
 **To access and run the Readiness assessment tool:**
 
