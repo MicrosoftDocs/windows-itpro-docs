@@ -1,7 +1,7 @@
 ---
 title: Register your devices
 description:  This article details how to register devices in Autopatch
-ms.date: 06/24/2022
+ms.date: 06/30/2022
 ms.prod: w11
 ms.technology: windows
 ms.topic: how-to
@@ -68,16 +68,17 @@ To be eligible for Windows Autopatch management, devices must meet a minimum set
 - [Supported Windows 10/11 Enterprise and Professional edition versions](/windows/release-health/supported-versions-windows-client)
 - Either [Hybrid Azure AD-Joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid) or [Azure AD-joined only](/azure/active-directory/devices/concept-azure-ad-join-hybrid) (personal devices aren't supported).
 - Managed by Microsoft Endpoint Manager.
-    - [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune) or [Configuration Manager Co-management](../prepare/windows-autopatch-prerequisites.md#co-management-requirements).
-        - [Switch Microsoft Endpoint Manager-Configuration Manager Co-management workloads to Microsoft Endpoint Manager-Intune](/mem/configmgr/comanage/how-to-switch-workloads) (either set to Pilot Intune or Intune). This includes the following workloads:
+    - [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune) and/or [Configuration Manager Co-management](/windows/deployment/windows-autopatch/prepare/windows-autopatch-prerequisites#configuration-manager-co-management-requirements).
+        - Must switch the following Microsoft Endpoint Manager-Configuration Manager [Co-management workloads](/mem/configmgr/comanage/how-to-switch-workloads) to Microsoft Endpoint Manager-Intune (either set to Pilot Intune or Intune):
             - Windows updates policies
             - Device configuration
             - Office Click-to-run
 - Last Intune device check-in completed within the last 28 days.
+- Devices must have Serial Number, Model and Manufacturer.
+	> [!NOTE]
+	> Windows Autopatch doesn't support device emulators that don't generate Serial number, Model and Manufacturer. Devices that use a non-supported device emulator fail the **Intune or Cloud-Attached** pre-requisite check. Additionally, devices with duplicated serial numbers will fail to register with Windows Autopatch.
 
-For more information on how Configuration Manager workloads work, see [How to switch Configuration Manager workloads to Intune](/mem/configmgr/comanage/how-to-switch-workloads).
-
-See [Prerequisites](../prepare/windows-autopatch-prerequisites.md) for more details.
+See [Windows Autopatch Prerequisites](../prepare/windows-autopatch-prerequisites.md) for more details.
 
 ## About the Ready and Not ready tabs
 
@@ -126,7 +127,7 @@ Once devices or Azure AD groups containing devices are added to the **Windows Au
 > [!IMPORTANT]
 > It might take up to an hour for a device to change its status from **Ready for User** to **Active** in the Ready tab during the public preview.
 
-## Additional device management lifecycle scenarios
+## Device management lifecycle scenarios
 
 There's a few more device lifecycle management scenarios to consider when planning to register devices in Windows Autopatch.
 
