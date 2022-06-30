@@ -32,7 +32,7 @@ The Windows Autopatch URL is used for anything our service runs on the customer 
 
 | Microsoft service | URLs required on allowlist |
 | ----- | ----- |
-| Windows Autopatch | <ul><li>mmdcustomer.microsoft.com</li><li>mmdls.microsoft.com</li></ul>|
+| Windows Autopatch | <ul><li>mmdcustomer.microsoft.com</li><li>mmdls.microsoft.com</li><li>logcollection.mmd.microsoft.com</li><li>support.mmd.microsoft.com</li></ul>|
 
 ### Required Microsoft product endpoints
 
