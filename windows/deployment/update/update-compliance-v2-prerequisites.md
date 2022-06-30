@@ -66,7 +66,7 @@ For more information about what's included in different diagnostic levels, see [
 > [!NOTE]
 > Enrolling into Update Compliance from the [Azure CLI](/cli/azure) or enrolling programmatically another way currently isn't supported. You must manually add Update Compliance to your Azure subscription.
 
-## Microsoft 365 admin center permissions (optional currently)
+## Microsoft 365 admin center permissions (currently optional)
 
 When you use the [Microsoft admin center software updates (preview) page](update-status-admin-center.md) with Update Compliance, the following permissions are also needed:
 
