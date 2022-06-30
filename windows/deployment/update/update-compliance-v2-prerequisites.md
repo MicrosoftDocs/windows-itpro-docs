@@ -73,7 +73,8 @@ When you use the [Microsoft admin center software updates (preview) page](update
 - To configure settings and view the **Software Updates** page: 
   - [Global Administrator role](/azure/active-directory/roles/permissions-reference#global-administrator)
   - [Intune Administrator](/azure/active-directory/roles/permissions-reference#intune-administrator)
-- To view the **Software Updates** page: [Global Reader role](/azure/active-directory/roles/permissions-reference#global-reader)
+- To view the **Software Updates** page:
+  - [Global Reader role](/azure/active-directory/roles/permissions-reference#global-reader)
 
 ## Log Analytics prerequisites
 
