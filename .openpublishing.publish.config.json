@@ -50,22 +50,6 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "keep-secure",
-      "build_source_folder": "windows/keep-secure",
-      "build_output_subfolder": "keep-secure",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "microsoft-edge",
       "build_source_folder": "browsers/edge",
       "build_output_subfolder": "microsoft-edge",
