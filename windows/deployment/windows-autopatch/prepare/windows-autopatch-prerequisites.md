@@ -42,7 +42,7 @@ The following Windows 64-bit editions are required for Windows Autopatch:
 - Windows 10/11 Enterprise
 - Windows 10/11 Pro for Workstations
 
-## Co-management requirements
+## Configuration Manager Co-management requirements
 
 Windows Autopatch fully supports co-management. The following co-management requirements apply:
 
