@@ -1,20 +1,18 @@
 ---
-title: Operations for App-V (Windows 10)
+title: Operations for App-V (Windows 10/11)
 description: Learn about the various types of App-V administration and operating tasks that are typically performed by an administrator.
-author: lomayor
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
+author: aczechowski
 ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
+
 # Operations for App-V
 
->Applies to: Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 This section of the Microsoft Application Virtualization (App-V) Administratorâ€™s Guide includes information about the various types of App-V administration and operating tasks that are typically performed by an administrator. This section also includes step-by-step procedures to help you successfully perform those tasks.
 
@@ -34,7 +32,7 @@ This section of the Microsoft Application Virtualization (App-V) Administratorâ€
     Describes how to deploy App-V packages by using an ESD.
 - [Using the App-V Client Management Console](appv-using-the-client-management-console.md)
 
-    Describes how perform client configuration tasks using the client management console.
+    Describes how to perform client configuration tasks using the client management console.
 - [Migrating to App-V from a Previous Version](appv-migrating-to-appv-from-a-previous-version.md)
 
     Provides instructions for migrating to App-V from a previous version.

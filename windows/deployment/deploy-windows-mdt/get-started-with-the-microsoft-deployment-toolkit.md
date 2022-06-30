@@ -1,18 +1,12 @@
 ---
 title: Get started with the Microsoft Deployment Toolkit (MDT) (Windows 10)
 description: This topic will help you gain a better understanding of how to use the Microsoft Deployment Toolkit (MDT), as part of a Windows operating system deployment.
-ms.assetid: a256442c-be47-4bb9-a105-c831f58ce3ee
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
-keywords: deploy, image, feature, install, tools
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.sitesec: library
-ms.pagetype: mdt
-audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ---
 
@@ -21,15 +15,18 @@ ms.topic: article
 **Applies to**
 - Windows 10
 
-This article provides an overview of the features, components, and capabilities of the [Microsoft Deployment Toolkit (MDT)](https://go.microsoft.com/fwlink/p/?LinkId=618117). When you have finished reviewing this information, see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
+This article provides an overview of the features, components, and capabilities of the [Microsoft Deployment Toolkit (MDT)](/mem/configmgr/mdt/). When you have finished reviewing this information, see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
 
 ## About MDT
 
 MDT is a unified collection of tools, processes, and guidance for automating desktop and server deployment. You can use it to create reference images or as a complete deployment solution.  MDT is one of the most important tools available to IT professionals today.
 
-In addition to reducing deployment time and standardizing desktop and server images, MDT enables you to more easily manage security and ongoing configurations. MDT builds on top of the core deployment tools in the [Windows Assessment and Deployment Kit](https://docs.microsoft.com/windows-hardware/get-started/adk-install) (Windows ADK) with additional guidance and features designed to reduce the complexity and time required for deployment in an enterprise environment.
+In addition to reducing deployment time and standardizing desktop and server images, MDT enables you to more easily manage security and ongoing configurations. MDT builds on top of the core deployment tools in the [Windows Assessment and Deployment Kit](/windows-hardware/get-started/adk-install) (Windows ADK) with additional guidance and features designed to reduce the complexity and time required for deployment in an enterprise environment.
 
-MDT supports the deployment of Windows 10, as well as Windows 7, Windows 8.1, and Windows Server. It also includes support for zero-touch installation (ZTI) with [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/).
+MDT supports the deployment of Windows 10, as well as Windows 7, Windows 8.1, and Windows Server. It also includes support for zero-touch installation (ZTI) with [Microsoft Endpoint Configuration Manager](/configmgr/).
+
+> [!IMPORTANT]
+> For more information about MDT supported platforms, see [MDT Release Notes](/mem/configmgr/mdt/release-notes#supported-platforms) and [MDT FAQ](/mem/configmgr/mdt/faq#is-this-release-only-supported-with-version--x--of-windows-client--windows-adk--or-configuration-manager-).
 
 ## Key features in MDT
 
@@ -43,7 +40,7 @@ MDT has many useful features, such as:
 - **GPT support.** Supports deployment to machines that require the new GPT partition table format. This is related to UEFI.
 - **Enhanced Windows PowerShell support.** Provides support for running PowerShell scripts.
 
-    ![figure 2](../images/mdt-05-fig02.png)
+    ![figure 2.](../images/mdt-05-fig02.png)
 
     The deployment share mounted as a standard PSDrive allows for administration using PowerShell.
 
@@ -58,7 +55,7 @@ MDT has many useful features, such as:
 - **Offline BitLocker.** Provides the capability to have BitLocker enabled during the Windows Preinstallation Environment (Windows PE) phase, thus saving hours of encryption time.
 - **USMT offline user-state migration.** Provides support for running the User State Migration Tool (USMT) capture offline, during the Windows PE phase of the deployment.
 
-    ![figure 3](../images/mdt-05-fig03.png)
+    ![figure 3.](../images/mdt-05-fig03.png)
 
     The offline USMT backup in action.
 
@@ -68,7 +65,7 @@ MDT has many useful features, such as:
 - **Support for Microsoft Office.** Provides added support for deploying Microsoft Office.
 - **Support for Modern UI app package provisioning.** Provisions applications based on the new Windows app package standard, which is used in Windows 8 and later.
 - **Extensibility.** Provides the capability to extend MDT far beyond the built-in features by adding custom scripts, web services, System Center Orchestrator runbooks, PowerShell scripts, and VBScripts.
-- **Upgrade task sequence.** Provides a new upgrade task sequence template that you can use to upgrade existing Windows 7, Windows 8, and Windows 8.1 systems directly to Windows 10, automatically preserving all data, settings, applications, and drivers. For more information about using this new upgrade task sequence, refer to the [Microsoft Deployment Toolkit resource page](https://go.microsoft.com/fwlink/p/?LinkId=618117).
+- **Upgrade task sequence.** Provides a new upgrade task sequence template that you can use to upgrade existing Windows 7, Windows 8, and Windows 8.1 systems directly to Windows 10, automatically preserving all data, settings, applications, and drivers. For more information about using this new upgrade task sequence, refer to the [Microsoft Deployment Toolkit resource page](/mem/configmgr/mdt/).
 
 ## MDT Lite Touch components
 
@@ -76,7 +73,7 @@ Many features in MDT support Lite Touch Installation (LTI) for Windows 10. An L
 
 When deploying the Windows operating system using MDT, most of the administration and configuration is done through the Deployment Workbench, but you also can perform many of the tasks using Windows PowerShell. The easiest way to find out how to use PowerShell in MDT is to use the Deployment Workbench to perform an operation and at the end of that task, click View Script. That will give you the PowerShell command.
 
-![figure 4](../images/mdt-05-fig04.png)
+![figure 4.](../images/mdt-05-fig04.png)
 
 If you click **View Script** on the right side, you will get the PowerShell code that was used to perform the task.
 
@@ -91,9 +88,9 @@ The rules (CustomSettings.ini and Bootstrap.ini) make up the brain of MDT. The r
 - Domain to join, and organizational unit (OU) in Active Directory to hold the computer object
 - Whether to enable BitLocker
 - Regional settings
-You can manage hundreds of settings in the rules. For more information, see the [Microsoft Deployment Toolkit resource center](https://go.microsoft.com/fwlink/p/?LinkId=618117).
+You can manage hundreds of settings in the rules. For more information, see the [Microsoft Deployment Toolkit resource center](/mem/configmgr/mdt/).
 
-![figure 5](../images/mdt-05-fig05.png)
+![figure 5.](../images/mdt-05-fig05.png)
 
 Example of a MDT rule. In this example, the new computer name is being calculated based on PC- plus the first seven (Left) characters from the serial number
 
@@ -160,7 +157,7 @@ Selection profiles, which are available in the Advanced Configuration node, prov
 MDT uses many log files during operating system deployments. By default the logs are client side, but by configuring the deployment settings, you can have MDT store them on the server, as well.
 
 **Note**  
-The easiest way to view log files is to use Configuration Manager Trace (CMTrace), which is included in the [System Center 2012 R2 Configuration Manager Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=734717).
+The easiest way to view log files is to use Configuration Manager Trace (CMTrace), which is included in the [Configuration Manager Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=734717).
 
 ## Monitoring
 

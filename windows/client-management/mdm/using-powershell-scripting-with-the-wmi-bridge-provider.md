@@ -1,29 +1,28 @@
 ---
 title: Using PowerShell scripting with the WMI Bridge Provider
-description: This topic covers using PowerShell Cmdlet scripts to configure per-user and per-device policy settings, as well as how to invoke methods through the WMI Bridge Provider.
-ms.assetid: 238D45AD-3FD8-46F9-B7FB-6AEE42BE4C08
+description: This topic covers using PowerShell Cmdlet scripts to configure per-user and per-device policy settings, and how to invoke methods through the WMI Bridge Provider.
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 06/26/2017
 ---
 
 # Using PowerShell scripting with the WMI Bridge Provider
 
-This topic covers using PowerShell Cmdlet scripts to configure per-user and per-device policy settings, as well as how to invoke methods through the [WMI Bridge Provider](https://msdn.microsoft.com/library/windows/desktop/dn905224.aspx).
+This topic covers using PowerShell Cmdlet scripts to configure per-user and per-device policy settings, and how to invoke methods through the [WMI Bridge Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal).
 
 
 ## Configuring per-device policy settings
 
-This section provides a PowerShell Cmdlet sample script to configure per-device settings through the [WMI Bridge Provider](https://msdn.microsoft.com/library/windows/desktop/dn905224.aspx). If a class supports device settings, there must be a class level qualifier defined for InPartition("local-system").
+This section provides a PowerShell Cmdlet sample script to configure per-device settings through the [WMI Bridge Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal). If a class supports device settings, there must be a class level qualifier defined for InPartition("local-system").
 
 For all device settings, the WMI Bridge client must be executed under local system user. To do that, download the psexec tool from <https://technet.microsoft.com/sysinternals/bb897553.aspx> and run `psexec.exe -i -s cmd.exe` from an elevated admin command prompt.
 
-The script example in this section uses the class [MDM\_Policy\_Config01\_WiFi02](https://msdn.microsoft.com/library/windows/desktop/dn905246.aspx):
+The script example in this section uses the class [MDM\_Policy\_Config01\_WiFi02](/windows/win32/dmwmibridgeprov/mdm-policy-config01-wifi02):
 
 ```ManagedCPlusPlus
 [dynamic, provider("DMWmiBridgeProv"), InPartition("local-system")]
@@ -73,7 +72,7 @@ catch [Exception]
 
 This section provides a PowerShell Cmdlet sample script to configure per-user settings through the WMI Bridge. If a class supports user settings, there must be a class level qualifier defined for InPartition("local-user").
 
-The script example in this section uses the class [MDM\_Policy\_User\_Config01\_Authentication02](https://msdn.microsoft.com/library/windows/desktop/mt146854.aspx):
+The script example in this section uses the class [MDM\_Policy\_User\_Config01\_Authentication02](/windows/win32/dmwmibridgeprov/mdm-policy-user-config01-authentication02):
 
 ```ManagedCPlusPlus
 [dynamic, provider("DMWmiBridgeProv"), InPartition("local-user")]
@@ -89,7 +88,7 @@ class MDM_Policy_User_Config01_Authentication02
 
  
 
-If accessing or modifying settings for a different user, then the PowerShell script is more complicated because the WMI Bridge expects the user SID to be set in MI Custom Context, which is not supported in native PowerShell cmdlets.
+If accessing or modifying settings for a different user, then the PowerShell script is more complicated because the WMI Bridge expects the user SID to be set in MI Custom Context, which isn't supported in native PowerShell cmdlets.
 
 > **Note**   All commands must executed under local system.
 
@@ -193,7 +192,7 @@ catch [Exception]
 
 This section provides a PowerShell Cmdlet sample script to invoke a WMI Bridge object method. The following script must be executed under local system user. To do that, download the psexec tool from <https://technet.microsoft.com/sysinternals/bb897553.aspx> and run `psexec.exe -i -s cmd.exe` from an elevated admin command prompt.
 
-The script example in this section uses the [UpgradeEditionWithProductKeyMethod](https://msdn.microsoft.com/library/windows/desktop/mt599805.aspx) method of the [MDM\_WindowsLicensing](https://msdn.microsoft.com/library/windows/desktop/dn948453.aspx) class.
+The script example in this section uses the [UpgradeEditionWithProductKeyMethod](/windows/win32/dmwmibridgeprov/mdm-windowslicensing-upgradeeditionwithproductkeymethod) method of the [MDM\_WindowsLicensing](/windows/win32/dmwmibridgeprov/mdm-windowslicensing) class.
 
 ```PowerShell
 $namespaceName = "root\cimv2\mdm\dmmap"
@@ -220,11 +219,6 @@ catch [Exception]
 
 ## Related topics
 
-[WMI Bridge Provider](https://msdn.microsoft.com/library/windows/desktop/dn905224.aspx)
+[WMI Bridge Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal)
 
  
-
-
-
-
-

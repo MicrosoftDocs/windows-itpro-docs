@@ -1,18 +1,15 @@
 ---
 title: Windows 10, version 1903, connection endpoints for non-Enterprise editions
 description: Explains what Windows 10 endpoints are used in non-Enterprise editions. Specific to Windows 10, version 1903.
-keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2016
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
+ms.prod: m365-security
 ms.localizationpriority: high
-audience: ITPro
-author: mikeedgar
-ms.author: obezeajo
-manager: robsize
+author: DHB-MSFT
+ms.author: danbrown
+manager: dougeby
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 7/22/2020
+ms.date: 12/01/2021
+ms.technology: privacy
 ---
 
 # Windows 10, version 1903, connection endpoints for non-Enterprise editions

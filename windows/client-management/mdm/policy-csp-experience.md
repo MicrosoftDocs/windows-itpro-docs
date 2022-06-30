@@ -1,11 +1,11 @@
 ---
 title: Policy CSP - Experience
-description: Learn how to use the Policy CSP - Experience setting to allow history of clipboard items to be stored in memory.
+description: Learn how to use the Policy CSP - Experience setting to allow history of clipboard items to be stored in memory.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 11/02/2020
 ms.reviewer: 
@@ -13,8 +13,6 @@ manager: dansimp
 ---
 
 # Policy CSP - Experience
-
-
 
 <hr/>
 
@@ -41,7 +39,13 @@ manager: dansimp
     <a href="#experience-allowsaveasofofficefiles">Experience/AllowSaveAsOfOfficeFiles</a>
   </dd>
   <dd>
+    <a href="#experience-allowscreencapture">Experience/AllowScreenCapture</a>
+  </dd>
+  <dd>
     <a href="#experience-allowsharingofofficefiles">Experience/AllowSharingOfOfficeFiles</a>
+  </dd>
+  <dd>
+    <a href="#experience-allowsimerrordialogpromptwhennosim">Experience/AllowSIMErrorDialogPromptWhenNoSIM</a>
   </dd>
   <dd>
     <a href="#experience-allowsyncmysettings">Experience/AllowSyncMySettings</a>
@@ -71,6 +75,9 @@ manager: dansimp
     <a href="#experience-allowwindowstips">Experience/AllowWindowsTips</a>
   </dd>
   <dd>
+    <a href="#experience-configurechaticonvisibilityonthetaskbar">Experience/ConfigureChatIcon</a>
+  </dd>
+  <dd>
     <a href="#experience-configurewindowsspotlightonlockscreen">Experience/ConfigureWindowsSpotlightOnLockScreen</a>
   </dd>
   <dd>
@@ -90,39 +97,21 @@ manager: dansimp
   </dd>
 </dl>
 
-
 <hr/>
 
 <!--Policy-->
 <a href="" id="experience-allowclipboardhistory"></a>**Experience/AllowClipboardHistory**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -139,14 +128,14 @@ manager: dansimp
 <!--Description-->
 Allows history of clipboard items to be stored in memory.
 
-Value type is integer. Supported values:
+Supported value type is integer. Supported values are:
 -  0 - Not allowed
 -  1 - Allowed (default)
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Clipboard History*
+-   GP Friendly name: *Allow Clipboard History*
 -   GP name: *AllowClipboardHistory*
 -   GP path: *System/OS Policies*
 -   GP ADMX file name: *OSPolicy.admx*
@@ -164,7 +153,7 @@ ADMX Info:
 1. Configure Experiences/AllowClipboardHistory to 0.
 1. Open Notepad (or any editor app), select a text, and copy it to the clipboard.
 1. Press Win+V to open the clipboard history UI.
-1. You should not see any clipboard item including current item you copied.
+1. You shouldn't see any clipboard item including current item you copied.
 1. The setting under Settings App->System->Clipboard should be grayed out with policy warning.
 
 <!--/Validation-->
@@ -176,32 +165,15 @@ ADMX Info:
 <a href="" id="experience-allowcortana"></a>**Experience/AllowCortana**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -223,7 +195,7 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Cortana*
+-   GP Friendly name: *Allow Cortana*
 -   GP name: *AllowCortana*
 -   GP path: *Windows Components/Search*
 -   GP ADMX file name: *Search.admx*
@@ -232,8 +204,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+-   0 – Not allowed
+-   1 (default) – Allowed
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -244,32 +216,15 @@ The following list shows the supported values:
 <a href="" id="experience-allowdevicediscovery"></a>**Experience/AllowDeviceDiscovery**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -286,7 +241,7 @@ The following list shows the supported values:
 <!--Description-->
 Allows users to turn on/off device discovery UX.
 
-When set to 0, the projection pane is disabled. The Win+P and Win+K shortcut keys will not work on.
+When set to 0, the projection pane is disabled. The Win+P and Win+K shortcut keys won't work on.
 
 Most restricted value is 0.
 
@@ -294,8 +249,8 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+-   0 – Not allowed
+-   1 (default) – Allowed
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -306,32 +261,15 @@ The following list shows the supported values:
 <a href="" id="experience-allowfindmydevice"></a>**Experience/AllowFindMyDevice**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -346,16 +284,16 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. This policy turns on Find My Device.
+This policy turns on Find My Device.
 
 When Find My Device is on, the device and its location are registered in the cloud so that the device can be located when the user initiates a Find command from account.microsoft.com. In Windows 10, version 1709 devices that are compatible with active digitizers, enabling Find My Device will also allow the user to view the last location of use of their active digitizer on their device; this location is stored locally on the user's device after each use of their active digitizer.
 
-When Find My Device is off, the device and its location are not registered and the Find My Device feature will not work. In Windows 10, version 1709 the user will not be able to view the location of the last use of their active digitizer on their device.
+When Find My Device is off, the device and its location aren't registered, and the Find My Device feature won't work. In Windows 10, version 1709 the user won't be able to view the location of the last use of their active digitizer on their device.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn On/Off Find My Device*
+-   GP Friendly name: *Turn On/Off Find My Device*
 -   GP name: *FindMy_AllowFindMyDeviceConfig*
 -   GP path: *Windows Components/Find My Device*
 -   GP ADMX file name: *FindMy.admx*
@@ -364,8 +302,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+-   0 – Not allowed
+-   1 (default) – Allowed
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -376,32 +314,15 @@ The following list shows the supported values:
 <a href="" id="experience-allowmanualmdmunenrollment"></a>**Experience/AllowManualMDMUnenrollment**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -416,11 +337,10 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Specifies whether to allow the user to delete the workplace account using the workplace control panel. If the device is Azure Active Directory joined and MDM enrolled (e.g., auto-enrolled), then disabling the MDM unenrollment has no effect.
+Specifies whether to allow the user to delete the workplace account using the workplace control panel. If the device is Azure Active Directory-joined and MDM enrolled (for example, auto-enrolled), then disabling the MDM unenrollment has no effect.
 
 > [!NOTE]
-> The MDM server can always remotely delete the account.
-
+> The MDM server can always remotely delete the account.
 
 Most restricted value is 0.
 
@@ -428,8 +348,8 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+-   0 – Not allowed
+-   1 (default) – Allowed
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -437,7 +357,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="experience-allowsaveasofofficefiles"></a>**Experience/AllowSaveAsOfOfficeFiles**  
+<a href="" id="experience-allowsaveasofofficefiles"></a><b>Experience/AllowSaveAsOfOfficeFiles</b>
 
 <hr/>
 
@@ -445,6 +365,44 @@ The following list shows the supported values:
 This policy is deprecated.
 
 <!--/Description-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="experience-allowscreencapture"></a>**Experience/AllowScreenCapture**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+
+<!--/Description-->
+<!--SupportedValues-->
+Describe what values are supported in by this policy and meaning of each value is default value.
+
+<!--/SupportedValues-->
 <!--/Policy-->
 
 <hr/>
@@ -458,38 +416,56 @@ This policy is deprecated.
 <!--/Description-->
 <!--/Policy-->
 
+<!--Policy-->
+<a href="" id="experience-allowsimerrordialogpromptwhennosim"></a>**Experience/AllowSIMErrorDialogPromptWhenNoSIM**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+<!--/Description-->
+<!--SupportedValues-->
+Describes what values are supported in by this policy and meaning of each value is default value.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
 <hr/>
 
 <!--Policy-->
 <a href="" id="experience-allowsyncmysettings"></a>**Experience/AllowSyncMySettings**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -510,7 +486,7 @@ Allows or disallows all Windows sync settings on the device. For information abo
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Sync settings are not allowed.
+-   0 – Sync settings aren't allowed.
 -   1 (default) – Sync settings allowed.
 
 <!--/SupportedValues-->
@@ -522,32 +498,15 @@ The following list shows the supported values:
 <a href="" id="experience-allowtailoredexperienceswithdiagnosticdata"></a>**Experience/AllowTailoredExperiencesWithDiagnosticData**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -562,22 +521,20 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
-Added in Windows 10, version 1703. This policy allows you to prevent Windows from using diagnostic data to provide customized experiences to the user. If you enable this policy setting, Windows will not use diagnostic data from this device to customize content shown on the lock screen, Windows tips, Microsoft consumer features, or other related features. If these features are enabled, users will still see recommendations, tips and offers, but they may be less relevant. If you disable or do not configure this policy setting, Microsoft will use diagnostic data to provide personalized recommendations, tips, and offers to tailor Windows for the user's needs and make it work better for them.
+This policy allows you to prevent Windows from using diagnostic data to provide customized experiences to the user. If you enable this policy setting, Windows won't use diagnostic data from this device to customize content shown on the lock screen, Windows tips, Microsoft consumer features, or other related features. If these features are enabled, users will still see recommendations, tips and offers, but they may be less relevant. If you disable or don't configure this policy setting, Microsoft will use diagnostic data to provide personalized recommendations, tips, and offers to tailor Windows for the user's needs and make it work better for them.
 
 Diagnostic data can include browser, app and feature usage, depending on the "Diagnostic and usage data" setting value.
 
 > [!NOTE]
-> This setting does not control Cortana cutomized experiences because there are separate policies to configure it.
+> This setting doesn't control Cortana customized experiences because there are separate policies to configure it.
 
 Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Do not use diagnostic data for tailored experiences*
+-   GP Friendly name: *Do not use diagnostic data for tailored experiences*
 -   GP name: *DisableTailoredExperiencesWithDiagnosticData*
 -   GP path: *Windows Components/Cloud Content*
 -   GP ADMX file name: *CloudContent.admx*
@@ -586,8 +543,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+-   0 – Not allowed
+-   1 (default) – Allowed
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -598,32 +555,15 @@ The following list shows the supported values:
 <a href="" id="experience-allowthirdpartysuggestionsinwindowsspotlight"></a>**Experience/AllowThirdPartySuggestionsInWindowsSpotlight**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -639,15 +579,14 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is only available for Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education.
-
+> This policy is only available for Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education.
 
 Specifies whether to allow app and content suggestions from third-party software publishers in Windows spotlight features like lock screen spotlight, suggested apps in the Start menu, and Windows tips. Users may still see suggestions for Microsoft features, apps, and services.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Do not suggest third-party content in Windows spotlight*
+-   GP Friendly name: *Do not suggest third-party content in Windows spotlight*
 -   GP name: *DisableThirdPartySuggestions*
 -   GP path: *Windows Components/Cloud Content*
 -   GP ADMX file name: *CloudContent.admx*
@@ -668,32 +607,15 @@ The following list shows the supported values:
 <a href="" id="experience-allowwindowsconsumerfeatures"></a>**Experience/AllowWindowsConsumerFeatures**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Windows SE|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -709,9 +631,7 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
-> Prior to Windows 10, version 1803, this policy had User scope.
-
+> Prior to Windows 10, version 1803, this policy had User scope.
 
 This policy allows IT admins to turn on experiences that are typically for consumers only, such as Start suggestions, Membership notifications, Post-OOBE app install and redirect tiles.
 
@@ -720,7 +640,7 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off Microsoft consumer experiences*
+-   GP Friendly name: *Turn off Microsoft consumer experiences*
 -   GP name: *DisableWindowsConsumerFeatures*
 -   GP path: *Windows Components/Cloud Content*
 -   GP ADMX file name: *CloudContent.admx*
@@ -729,8 +649,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 – Allowed.
+-   0 – Not allowed
+-   1 – Allowed
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -741,32 +661,15 @@ The following list shows the supported values:
 <a href="" id="experience-allowwindowsspotlight"></a>**Experience/AllowWindowsSpotlight**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Windows SE|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -782,17 +685,16 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is only available for Windows 10 Enterprise and Windows 10 Education.
+> This policy is only available for Windows 10 Enterprise and Windows 10 Education.
 
-
-Specifies whether to turn off all Windows spotlight features at once. If you enable this policy setting, Windows spotlight on lock screen, Windows Tips, Microsoft consumer features and other related features will be turned off. You should enable this policy setting if your goal is to minimize network traffic from target devices. If you disable or do not configure this policy setting, Windows spotlight features are allowed and may be controlled individually using their corresponding policy settings.
+Specifies whether to turn off all Windows spotlight features at once. If you enable this policy setting, Windows spotlight on lock screen, Windows Tips, Microsoft consumer features, and other related features will be turned off. You should enable this policy setting, if your goal is to minimize network traffic from target devices. If you disable or don't configure this policy setting, Windows spotlight features are allowed and may be controlled individually using their corresponding policy settings.
 
 Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off all Windows spotlight features*
+-   GP Friendly name: *Turn off all Windows spotlight features*
 -   GP name: *DisableWindowsSpotlightFeatures*
 -   GP path: *Windows Components/Cloud Content*
 -   GP ADMX file name: *CloudContent.admx*
@@ -801,8 +703,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+-   0 – Not allowed
+-   1 (default) – Allowed
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -813,32 +715,15 @@ The following list shows the supported values:
 <a href="" id="experience-allowwindowsspotlightonactioncenter"></a>**Experience/AllowWindowsSpotlightOnActionCenter**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Windows SE|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -853,17 +738,15 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
-Added in Windows 10, version 1703. This policy allows administrators to prevent Windows spotlight notifications from being displayed in the Action Center. If you enable this policy, Windows spotlight notifications will no longer be displayed in the Action Center. If you disable or do not configure this policy, Microsoft may display notifications in the Action Center that will suggest apps or features to help users be more productive on Windows.
+This policy allows administrators to prevent Windows spotlight notifications from being displayed in the Action Center. If you enable this policy, Windows spotlight notifications will no longer be displayed in the Action Center. If you disable or don't configure this policy, Microsoft may display notifications in the Action Center that will suggest apps or features to help users be more productive on Windows.
 
 Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off Windows Spotlight on Action Center*
+-   GP Friendly name: *Turn off Windows Spotlight on Action Center*
 -   GP name: *DisableWindowsSpotlightOnActionCenter*
 -   GP path: *Windows Components/Cloud Content*
 -   GP ADMX file name: *CloudContent.admx*
@@ -872,8 +755,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+-   0 – Not allowed
+-   1 (default) – Allowed
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -884,32 +767,15 @@ The following list shows the supported values:
 <a href="" id="experience-allowwindowsspotlightonsettings"></a>**Experience/AllowWindowsSpotlightOnSettings**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Windows SE|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -924,7 +790,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1803. This policy allows IT admins to turn off Suggestions in Settings app. These suggestions from Microsoft may show after each OS clean install, upgrade or an on-going basis to help users discover apps/features on Windows or across devices, to make their experience productive.
+This policy allows IT admins to turn off Suggestions in Settings app. These suggestions from Microsoft may show after each OS clean install, upgrade or an on-going basis to help users discover apps/features on Windows or across devices, to make their experience productive.
 
 -  User setting is under Settings -> Privacy -> General -> Show me suggested content in Settings app.
 -  User Setting is changeable on a per user basis.
@@ -933,7 +799,7 @@ Added in Windows 10, version 1803. This policy allows IT admins to turn off Sugg
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off Windows Spotlight on Settings*
+-   GP Friendly name: *Turn off Windows Spotlight on Settings*
 -   GP name: *DisableWindowsSpotlightOnSettings*
 -   GP path: *Windows Components/Cloud Content*
 -   GP ADMX file name: *CloudContent.admx*
@@ -942,8 +808,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 - Not allowed.
--   1 - Allowed.
+-   0 - Not allowed
+-   1 - Allowed
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -954,32 +820,15 @@ The following list shows the supported values:
 <a href="" id="experience-allowwindowsspotlightwindowswelcomeexperience"></a>**Experience/AllowWindowsSpotlightWindowsWelcomeExperience**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Windows SE|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -994,18 +843,16 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
-Added in Windows 10, version 1703. This policy setting lets you turn off the Windows spotlight Windows welcome experience feature.
-The Windows welcome experience feature introduces onboard users to Windows; for example, launching Microsoft Edge with a webpage that highlights new features. If you enable this policy, the Windows welcome experience will no longer be displayed when there are updates and changes to Windows and its apps. If you disable or do not configure this policy, the Windows welcome experience will be launched to inform onboard users about what's new, changed, and suggested.
+This policy setting lets you turn off the Windows spotlight, and Windows welcome experience feature.
+The Windows welcome experience feature introduces onboard users to Windows; for example, launching Microsoft Edge with a webpage that highlights new features. If you enable this policy, the Windows welcome experience will no longer be displayed when there are updates and changes to Windows and its apps. If you disable or don't configure this policy, the Windows welcome experience will be launched to inform onboard users about what's new, changed, and suggested.
 
 Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off the Windows Welcome Experience*
+-   GP Friendly name: *Turn off the Windows Welcome Experience*
 -   GP name: *DisableWindowsSpotlightWindowsWelcomeExperience*
 -   GP path: *Windows Components/Cloud Content*
 -   GP ADMX file name: *CloudContent.admx*
@@ -1014,8 +861,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+-   0 – Not allowed
+-   1 (default) – Allowed
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1026,32 +873,15 @@ The following list shows the supported values:
 <a href="" id="experience-allowwindowstips"></a>**Experience/AllowWindowsTips**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Windows SE|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1071,7 +901,7 @@ Enables or disables Windows Tips / soft landing.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Do not show Windows tips*
+-   GP Friendly name: *Do not show Windows tips*
 -   GP name: *DisableSoftLanding*
 -   GP path: *Windows Components/Cloud Content*
 -   GP ADMX file name: *CloudContent.admx*
@@ -1080,8 +910,52 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Disabled.
--   1 (default) – Enabled.
+-   0 – Disabled
+-   1 (default) – Enabled
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="experience-configurechaticonvisibilityonthetaskbar"></a>**Experience/ConfigureChatIcon**  
+
+<!--SupportedSKUs-->
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|Yes|
+|Pro|No|Yes|
+|Windows SE|No|Yes|
+|Business|No|No|
+|Enterprise|No|Yes|
+|Education|No|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Machine
+<hr/>
+<!--/Scope-->
+<!--Description-->
+This policy setting allows you to configure the Chat icon on the taskbar.
+
+<!--/Description-->
+<!--SupportedValues-->
+The values for this policy are 0, 1, 2, and 3. This policy defaults to 0, if not enabled.
+
+-   0 - Not Configured: The Chat icon will be configured according to the defaults for your Windows edition.
+-   1 - Show: The Chat icon will be displayed on the taskbar by default. Users can show or hide it in Settings.
+-   2 - Hide: The Chat icon will be hidden by default. Users can show or hide it in Settings.
+-   3 - Disabled: The Chat icon won't be displayed, and users can't show or hide it in Settings.
+
+> [!NOTE]
+> Option 1 (Show) and Option 2 (Hide) only work on the first sign-in attempt. Option 3 (Disabled) works on all attempts.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1092,32 +966,15 @@ The following list shows the supported values:
 <a href="" id="experience-configurewindowsspotlightonlockscreen"></a>**Experience/ConfigureWindowsSpotlightOnLockScreen**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Windows SE|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1133,15 +990,14 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is only available for Windows 10 Enterprise and Windows 10 Education.
+> This policy is only available for Windows 10 Enterprise, and Windows 10 Education.
 
-
-Allows IT admins to specify whether spotlight should be used on the user's lock screen. If your organization does not have an Enterprise spotlight content service, then this policy will behave the same as a setting of 1.
+Allows IT admins to specify, whether spotlight should be used on the user's lock screen. If your organization doesn't have an Enterprise spotlight content service, then this policy will behave the same as a setting of 1.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Windows spotlight on lock screen*
+-   GP Friendly name: *Configure Windows spotlight on lock screen*
 -   GP name: *ConfigureWindowsSpotlight*
 -   GP path: *Windows Components/Cloud Content*
 -   GP ADMX file name: *CloudContent.admx*
@@ -1161,32 +1017,15 @@ The following list shows the supported values:
 <a href="" id="experience-disablecloudoptimizedcontent"></a>**Experience/DisableCloudOptimizedContent**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1205,12 +1044,12 @@ This policy setting lets you turn off cloud optimized content in all Windows exp
 
 If you enable this policy setting, Windows experiences that use the cloud optimized content client component will present the default fallback content.
 
-If you disable or do not configure this policy setting, Windows experiences will be able to use cloud optimized content.
+If you disable or don't configure this policy setting, Windows experiences will be able to use cloud optimized content.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off cloud optimized content*
+-   GP Friendly name: *Turn off cloud optimized content*
 -   GP name: *DisableCloudOptimizedContent*
 -   GP path: *Windows Components/Cloud Content*
 -   GP ADMX file name: *CloudContent.admx*
@@ -1219,8 +1058,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Disabled.
--   1 – Enabled.
+-   0 (default) – Disabled
+-   1 – Enabled
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1231,32 +1070,15 @@ The following list shows the supported values:
 <a href="" id="experience-donotshowfeedbacknotifications"></a>**Experience/DoNotShowFeedbackNotifications**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1273,14 +1095,14 @@ The following list shows the supported values:
 <!--Description-->
 Prevents devices from showing feedback questions from Microsoft.
 
-If you enable this policy setting, users will no longer see feedback notifications through the Feedback hub app. If you disable or do not configure this policy setting, users may see notifications through the Feedback hub app asking users for feedback.
+If you enable this policy setting, users will no longer see feedback notifications through the Feedback hub app. If you disable or don't configure this policy setting, users may see notifications through the Feedback hub app asking users for feedback.
 
-If you disable or do not configure this policy setting, users can control how often they receive feedback questions.
+If you disable or don't configure this policy setting, users can control how often they receive feedback questions.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Do not show feedback notifications*
+-   GP Friendly name: *Do not show feedback notifications*
 -   GP name: *DoNotShowFeedbackNotifications*
 -   GP path: *Data Collection and Preview Builds*
 -   GP ADMX file name: *FeedbackNotifications.admx*
@@ -1289,7 +1111,7 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Feedback notifications are not disabled. The actual state of feedback notifications on the device will then depend on what GP has configured or what the user has configured locally.
+-   0 (default) – Feedback notifications aren't disabled. The actual state of feedback notifications on the device will then depend on what GP has configured or what the user has configured locally.
 -   1 – Feedback notifications are disabled.
 
 <!--/SupportedValues-->
@@ -1301,32 +1123,15 @@ The following list shows the supported values:
 <a href="" id="experience-donotsyncbrowsersetting"></a>**Experience/DoNotSyncBrowserSettings**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Windows SE|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1341,15 +1146,15 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-[!INCLUDE [do-not-sync-browser-settings-shortdesc](../../../browsers/edge/shortdesc/do-not-sync-browser-settings-shortdesc.md)]
+[!INCLUDE [do-not-sync-browser-settings-shortdesc](../includes/do-not-sync-browser-settings-shortdesc.md)]
 
 Related policy:
-   [PreventUsersFromTurningOnBrowserSyncing](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-preventusersfromturningonbrowsersyncing)
+   [PreventUsersFromTurningOnBrowserSyncing](#experience-preventusersfromturningonbrowsersyncing)
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Do not sync browser settings*
+-   GP Friendly name: *Do not sync browser settings*
 -   GP name: *DisableWebBrowserSettingSync*
 -   GP path: *Windows Components/Sync your settings*
 -   GP ADMX file name: *SettingSync.admx*
@@ -1359,8 +1164,7 @@ ADMX Info:
 Supported values:
 
 -  0 (default) - Allowed/turned on. The "browser" group synchronizes automatically between users' devices and lets users make changes.
--  2 - Prevented/turned off. The "browser" group does not use the _Sync your Settings_ option.
-
+-  2 - Prevented/turned off. The "browser" group doesn't use the _Sync your Settings_ option.
 
 _**Sync the browser settings automatically**_
 
@@ -1389,38 +1193,19 @@ _**Turn syncing off by default but don’t disable**_
 <!--/Validation-->
 <!--/Policy-->
 
-<hr/>
-
 <!--Policy-->
 <a href="" id="experience-preventusersfromturningonbrowsersyncing"></a>**Experience/PreventUsersFromTurningOnBrowserSyncing**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Windows SE|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1435,16 +1220,16 @@ _**Turn syncing off by default but don’t disable**_
 
 <!--/Scope-->
 <!--Description-->
-[!INCLUDE [prevent-users-to-turn-on-browser-syncing-shortdesc](../../../browsers/edge/shortdesc/prevent-users-to-turn-on-browser-syncing-shortdesc.md)]
+[!INCLUDE [prevent-users-to-turn-on-browser-syncing-shortdesc](../includes/prevent-users-to-turn-on-browser-syncing-shortdesc.md)]
 
 Related policy:
-   [DoNotSyncBrowserSettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-donotsyncbrowsersetting)
+   [DoNotSyncBrowserSettings](#experience-donotsyncbrowsersetting)
 
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Prevent users from turning on browser syncing*
+-   GP Friendly name: *Prevent users from turning on browser syncing*
 -   GP name: *PreventUsersFromTurningOnBrowserSyncing*
 -   GP path: *Windows Components/Sync your settings*
 -   GP ADMX file name: *SettingSync.admx*
@@ -1479,7 +1264,7 @@ _**Prevent syncing of browser settings and let users turn on syncing**_
 Validation procedure:
 
 1. Select **More > Settings**.
-1. See if the setting is enabled or disabled based on your selection.
+1. See, if the setting is enabled or disabled based on your selection.
 
 <!--/Validation-->
 <!--/Policy-->
@@ -1490,32 +1275,16 @@ Validation procedure:
 <a href="" id="experience-showlockonusertile"></a>**Experience/ShowLockOnUserTile**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Windows SE|No|No|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1536,12 +1305,12 @@ If you enable this policy setting, the lock option is shown in the User Tile men
 
 If you disable this policy setting, the lock option is never shown in the User Tile menu.
 
-If you do not configure this policy setting, the lock option is shown in the User Tile menu. Users can choose if they want to show the lock in the user tile menu from the Power Options control panel.
+If you don't configure this policy setting, the lock option is shown in the User Tile menu. Users can choose, if they want to show the lock in the user tile menu from the Power Options control panel.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Show lock in the user tile menu*
+-   GP Friendly name: *Show lock in the user tile menu*
 -   GP name: *ShowLockOption*
 -   GP path: *File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -1549,7 +1318,7 @@ ADMX Info:
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 Supported values:  
-- false - The lock option is not displayed in the User Tile menu.
+- false - The lock option isn't displayed in the User Tile menu.
 - true (default) - The lock option is displayed in the User Tile menu.
 
 <!--/SupportedValues-->
@@ -1562,17 +1331,8 @@ Supported values:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-- 9 - Available in Windows 10, version 20H2.
-
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

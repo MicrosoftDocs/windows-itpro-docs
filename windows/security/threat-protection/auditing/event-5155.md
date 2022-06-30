@@ -2,22 +2,19 @@
 title: 5155(F) The Windows Filtering Platform has blocked an application or service from listening on a port for incoming connections. (Windows 10)
 description: Describes security event 5155(F) The Windows Filtering Platform has blocked an application or service from listening on a port for incoming connections.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: windows-sec
 ---
 
 # 5155(F): The Windows Filtering Platform has blocked an application or service from listening on a port for incoming connections.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 By default Windows firewall won't prevent a port from being listened by an application. In the other word, Windows system will not generate Event 5155 by itself.
@@ -28,7 +25,7 @@ You can add your own filters using the WFP APIs to block listen to reproduce thi
 
 ***Event Description:***
 
-This event generates every time the [Windows Filtering Platform](https://docs.microsoft.com/windows/win32/fwp/windows-filtering-platform-start-page) blocks an application or service from listening on a port for incoming connections.
+This event generates every time the [Windows Filtering Platform](/windows/win32/fwp/windows-filtering-platform-start-page) blocks an application or service from listening on a port for incoming connections.
 
 <br clear="all">
 
@@ -135,7 +132,7 @@ This event generates every time the [Windows Filtering Platform](https://docs.mi
 
     <img src="images/filters-xml-file.png" alt="Filters.xml file illustration" width="840" height="176" />
 
--   **Layer Name** \[Type = UnicodeString\]: [Application Layer Enforcement](https://msdn.microsoft.com/library/windows/desktop/aa363971(v=vs.85).aspx) layer name.
+-   **Layer Name** \[Type = UnicodeString\]: [Application Layer Enforcement](/windows/win32/fwp/application-layer-enforcement--ale-) layer name.
 
 -   **Layer Run-Time ID** \[Type = UInt64\]: Windows Filtering Platform layer identifier. To find a specific Windows Filtering Platform layer ID, you need to execute the following command: **netsh wfp show state**. As result of this command, a **wfpstate.xml** file will be generated. You need to open this file and find the specific substring with the required layer ID (**&lt;layerId&gt;**), for example:
 
@@ -144,4 +141,3 @@ This event generates every time the [Windows Filtering Platform](https://docs.mi
 ## Security Monitoring Recommendations
 
 -   If you use Windows Filtering Platform APIs to block application or services from listening on a port, then you can use this event for troubleshooting and monitoring.
-

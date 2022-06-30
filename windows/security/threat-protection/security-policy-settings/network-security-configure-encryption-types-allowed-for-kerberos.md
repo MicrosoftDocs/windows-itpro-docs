@@ -4,7 +4,7 @@ description: Best practices, location, values and security considerations for th
 ms.assetid: 303d32cc-415b-44ba-96c0-133934046ece
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: windows-sec
 ---
 
 # Network security: Configure encryption types allowed for Kerberos
@@ -28,7 +29,7 @@ Describes the best practices, location, values, and security considerations for 
 
 This policy setting allows you to set the encryption types that the Kerberos protocol is allowed to use. If it isn't selected, the encryption type won't be allowed. This setting might affect compatibility with client computers or services and applications. Multiple selections are permitted.
 
-For more information, see [article 977321](https://support.microsoft.com/kb/977321) in the Microsoft Knowledge Base.
+For more information, see [article 977321](/troubleshoot/windows-server/windows-security/kdc-event-16-27-des-encryption-disabled) in the Microsoft Knowledge Base.
 
 The following table lists and explains the allowed encryption types.
 

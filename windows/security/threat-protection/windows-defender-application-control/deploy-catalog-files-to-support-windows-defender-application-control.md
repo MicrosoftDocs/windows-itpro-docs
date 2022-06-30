@@ -1,9 +1,9 @@
 ---
-title: Deploy catalog files to support Windows Defender Application Control (Windows 10)
+title: Deploy catalog files to support Windows Defender Application Control (Windows)
 description: Catalog files simplify running unsigned applications in the presence of a Windows Defender Application Control (WDAC) policy.
-keywords:  security, malware
+keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 02/28/2018
+ms.technology: windows-sec
 ---
 
 # Deploy catalog files to support Windows Defender Application Control
@@ -22,20 +23,24 @@ ms.date: 02/28/2018
 **Applies to:**
 
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
 Catalog files can be important in your deployment of Windows Defender Application Control (WDAC) if you have unsigned line-of-business (LOB) applications for which the process of signing is difficult. To prepare to create WDAC policies that allow these trusted applications but block unsigned code (most malware is unsigned), you create a *catalog file* that contains information about the trusted applications. After you sign and distribute the catalog, your trusted applications can be handled by WDAC in the same way as any other signed application. With this foundation, you can more easily block all unsigned applications, allowing only signed applications to run.
 
 ## Create catalog files
 
-The creation of a catalog file simplifies the steps to run unsigned applications in the presence of a WDAC policy.
+The creation of a catalog file simplifies the steps to run unsigned applications in the presence of a Windows Defender Application Control policy.
 
 To create a catalog file, you use a tool called **Package Inspector**. You must also have a WDAC policy deployed in audit mode on the computer on which you run Package Inspector, so that Package Inspector can include any temporary installation files that are added and then removed from the computer during the installation process.
 
 > [!NOTE]
 > When you establish a naming convention it makes it easier to detect deployed catalog files in the future. In this guide, *\*-Contoso.cat* is used as the example naming convention. 
 
-1.  Be sure that a WDAC policy is currently deployed in audit mode on the computer on which you will run Package Inspector.
+1.  Be sure that a Windows Defender Application Control policy is currently deployed in audit mode on the computer on which you will run Package Inspector.
 
     Package Inspector does not always detect temporary installation files that are added and then removed from the computer during the installation process. To ensure that these binaries are also included in your catalog file, deploy a WDAC policy in audit mode. 
 
@@ -103,7 +108,7 @@ Packages can fail for the following reasons:
     - Package Inspector is completely incompatible if files in the package (temporary or otherwise) change hash each time the package is installed. You can diagnose this by looking at the hash field in the 3077 block events when the package is failing in enforcement.  If each time you attempt to run the package you get a new block event with a different hash, the package will not work with Package Inspector
 - Files with an invalid signature blob or otherwise "unhashable" files
     - This issue arises when a file that has been signed is modified post signing in a way that invalidates the PE header and renders the file unable to be hashed by the Authenticode Spec.
-    - WDAC uses Authenticode Hashes to validate files when they are running. If the file is unhashable via the authenticode SIP, there is no way to identify the file to allow it, regardless of if you attempt to add the file to the policy directly, or re-sign the file with a Package Inspector catalog (the signature is invalidated due to file being edited, file can't be allowed by hash due to authenticode hashing algorithm rejecting it)
+    - Windows Defender Application Control uses Authenticode Hashes to validate files when they are running. If the file is unhashable via the authenticode SIP, there is no way to identify the file to allow it, regardless of if you attempt to add the file to the policy directly, or re-sign the file with a Package Inspector catalog (the signature is invalidated due to file being edited, file can't be allowed by hash due to authenticode hashing algorithm rejecting it)
     - Recent versions of InstallShield packages that use custom actions can hit this. If the DLL input to the custom action was signed before being put through InstallShield, InstallShield adds tracking markers to the file (editing it post signature) which leaves the file in this "unhashable" state and renders the file unable to be allowed by Windows Defender (regardless of if you try to allow directly by policy or resign with Package Inspector)
 
 ## Catalog signing with SignTool.exe
@@ -133,11 +138,11 @@ To sign the existing catalog file, copy each of the following commands into an e
    >[!NOTE]
    >The *&lt;Path to signtool.exe&gt;* variable should be the full path to the Signtool.exe utility. *ContosoDGSigningCert* represents the subject name of the certificate that you will use to sign the catalog file. This certificate should be imported to your personal certificate store on the computer on which you are attempting to sign the catalog file.
    > 
-   >For additional information about Signtool.exe and all additional switches, visit the [Sign Tool page](https://docs.microsoft.com/dotnet/framework/tools/signtool-exe).
+   >For additional information about Signtool.exe and all additional switches, visit the [Sign Tool page](/dotnet/framework/tools/signtool-exe).
     
 4. Verify the catalog file digital signature. Right-click the catalog file, and then click **Properties**. On the **Digital Signatures** tab, verify that your signing certificate exists with a **sha256** algorithm, as shown in Figure 1.
 
-   ![Digital Signature list in file Properties](images/dg-fig12-verifysigning.png)
+   ![Digital Signature list in file Properties.](images/dg-fig12-verifysigning.png)
 
    Figure 1. Verify that the signing certificate exists
 
@@ -151,14 +156,14 @@ After the catalog file is signed, add the signing certificate to a WDAC policy, 
 
 1.  If you have not already verified the catalog file digital signature, right-click the catalog file, and then click **Properties**. On the **Digital Signatures** tab, verify that your signing certificate exists with the algorithm you expect.
 
-2.  If you already have an XML policy file that you want to add the signing certificate to, skip to the next step. Otherwise, use [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy) to create a WDAC policy that you will later merge into another policy (not deploy as-is). This example creates a policy called **CatalogSignatureOnly.xml** in the location **C:\\PolicyFolder**:
+2.  If you already have an XML policy file that you want to add the signing certificate to, skip to the next step. Otherwise, use [New-CIPolicy](/powershell/module/configci/new-cipolicy) to create a Windows Defender Application Control policy that you will later merge into another policy (not deploy as-is). This example creates a policy called **CatalogSignatureOnly.xml** in the location **C:\\PolicyFolder**:
 
     `New-CIPolicy -Level PcaCertificate -FilePath C:\PolicyFolder\CatalogSignatureOnly.xml –UserPEs`
 
     > [!NOTE]
     > Include the **-UserPEs** parameter to ensure that the policy includes user mode code integrity.
 
-3.  Use [Add-SignerRule](https://docs.microsoft.com/powershell/module/configci/add-signerrule) to add the signing certificate to the WDAC policy, filling in the correct path and filenames for `<policypath>` and `<certpath>`:
+3.  Use [Add-SignerRule](/powershell/module/configci/add-signerrule) to add the signing certificate to the WDAC policy, filling in the correct path and filenames for `<policypath>` and `<certpath>`:
 
     `Add-SignerRule -FilePath <policypath> -CertificatePath <certpath> -User`
 
@@ -177,7 +182,7 @@ To simplify the management of catalog files, you can use Group Policy preference
    > [!NOTE]
    > You can use any OU name. Also, security group filtering is an option when you consider different ways of combining WDAC policies (or keeping them separate).
 
-   ![Group Policy Management, create a GPO](images/dg-fig13-createnewgpo.png)
+   ![Group Policy Management, create a GPO.](images/dg-fig13-createnewgpo.png)
 
    Figure 2. Create a new GPO
 
@@ -187,7 +192,7 @@ To simplify the management of catalog files, you can use Group Policy preference
 
 5. Within the selected GPO, navigate to Computer Configuration\\Preferences\\Windows Settings\\Files. Right-click **Files**, point to **New**, and then click **File**, as shown in Figure 3.
 
-   ![Group Policy Management Editor, New File](images/dg-fig14-createnewfile.png)
+   ![Group Policy Management Editor, New File.](images/dg-fig14-createnewfile.png)
 
    Figure 3. Create a new file
 
@@ -197,7 +202,7 @@ To simplify the management of catalog files, you can use Group Policy preference
 
 7. To keep versions consistent, in the **New File Properties** dialog box (Figure 4), select **Replace** from the **Action** list so that the newest version is always used.
 
-   ![File Properties, Replace option](images/dg-fig15-setnewfileprops.png)
+   ![File Properties, Replace option.](images/dg-fig15-setnewfileprops.png)
 
    Figure 4. Set the new file properties
 
@@ -230,7 +235,7 @@ As an alternative to Group Policy, you can use Configuration Manager to deploy c
 
 3.  Name the package, set your organization as the manufacturer, and select an appropriate version number.
 
-    ![Create Package and Program Wizard](images/dg-fig16-specifyinfo.png)
+    ![Create Package and Program Wizard.](images/dg-fig16-specifyinfo.png)
 
     Figure 5. Specify information about the new package
 
@@ -252,7 +257,7 @@ As an alternative to Group Policy, you can use Configuration Manager to deploy c
 
     -   From the **Drive mode** list, select **Runs with UNC name**.
 
-    ![Standard Program page of wizard](images/dg-fig17-specifyinfo.png)
+    ![Standard Program page of wizard.](images/dg-fig17-specifyinfo.png)
 
     Figure 6. Specify information about the standard program
 
@@ -280,7 +285,7 @@ After you create the deployment package, deploy it to a collection so that the c
 
     -   Select the **Commit changes at deadline or during a maintenance window (requires restarts)** check box.
 
-    ![Deploy Software Wizard, User Experience page](images/dg-fig18-specifyux.png)
+    ![Deploy Software Wizard, User Experience page.](images/dg-fig18-specifyux.png)
 
     Figure 7. Specify the user experience
 
@@ -305,13 +310,13 @@ When catalog files have been deployed to the computers within your environment, 
 
 3.  Name the new policy, and under **Select and then configure the custom settings for client devices**, select the **Software Inventory** check box, as shown in Figure 8.
 
-    ![Create Custom Client Device Settings](images/dg-fig19-customsettings.png)
+    ![Create Custom Client Device Settings.](images/dg-fig19-customsettings.png)
 
     Figure 8. Select custom settings
 
 4.  In the navigation pane, click **Software Inventory**, and then click **Set Types**, as shown in Figure 9.
 
-    ![Software Inventory settings for devices](images/dg-fig20-setsoftwareinv.png)
+    ![Software Inventory settings for devices.](images/dg-fig20-setsoftwareinv.png)
 
     Figure 9. Set the software inventory
 
@@ -324,7 +329,7 @@ When catalog files have been deployed to the computers within your environment, 
 
 7.  In the **Path Properties** dialog box, select **Variable or path name**, and then type **C:\\Windows\\System32\\catroot\\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}** in the box, as shown in Figure 10.
 
-    ![Path Properties, specifying a path](images/dg-fig21-pathproperties.png)
+    ![Path Properties, specifying a path.](images/dg-fig21-pathproperties.png)
 
     Figure 10. Set the path properties
 
@@ -352,4 +357,3 @@ At the time of the next software inventory cycle, when the targeted clients rece
 - [Windows Defender Application Control Design Guide](windows-defender-application-control-design-guide.md)
 
 - [Windows Defender Application Control Deployment Guide](windows-defender-application-control-deployment-guide.md)
-

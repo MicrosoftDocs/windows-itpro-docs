@@ -1,27 +1,24 @@
 ---
-title: Exemption List (Windows 10)
+title: Exemption List (Windows)
 description: Learn about reasons to add devices to an exemption list in Windows Defender Firewall with Advanced Security and the trade-offs of having too many exemptions.
-ms.assetid: a05e65b4-b48d-44b1-a7f1-3a8ea9c19ed8
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.prod: m365-security
 ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 09/08/2021
+ms.technology: windows-sec
 ---
 
 # Exemption List
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 When you implement a server and domain isolation security model in your organization, you are likely to find some additional challenges. Key infrastructure servers such as DNS servers and DHCP servers typically must be available to all devices on the internal network, yet secured from network attacks. However, if they must remain available to all devices on the network, not just to isolated domain members, then these servers cannot require IPsec for inbound access, nor can they use IPsec transport mode for outbound traffic.
 

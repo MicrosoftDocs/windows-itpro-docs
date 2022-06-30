@@ -1,12 +1,12 @@
 ---
 title: Policy CSP - ADMX_COM
-description: Policy CSP - ADMX_COM
+description: Learn about the Policy CSP - ADMX_COM.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 08/18/2020
 ms.reviewer: 
 manager: dansimp
@@ -14,8 +14,12 @@ manager: dansimp
 
 # Policy CSP - ADMX_COM
 
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
@@ -38,32 +42,15 @@ manager: dansimp
 <a href="" id="admx-com-appmgmt-com-searchforclsid-1"></a>**ADMX_COM/AppMgmt_COM_SearchForCLSID_1**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -78,27 +65,22 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting directs the system to search Active Directory for missing Component Object Model (COM) components that a program requires.
+This policy setting directs the system to search Active Directory for missing Component Object Model (COM) components that a program requires.
 
-Many Windows programs, such as the MMC snap-ins, use the interfaces provided by the COM components. These programs cannot perform all their functions unless Windows has internally registered the required components.
+Many Windows programs, such as the MMC snap-ins, use the interfaces provided by the COM components. These programs can't perform all their functions unless Windows has internally registered the required components.
 
-If you enable this policy setting and a component registration is missing, the system searches for it in Active Directory and, if it is found, downloads it. The resulting searches might make some programs start or run slowly.
+If you enable this policy setting and a component registration is missing, the system searches for it in Active Directory and, if it's found, downloads it. The resulting searches might make some programs start or run slowly.
 
-If you disable or do not configure this policy setting, the program continues without the registration. As a result, the program might not perform all its functions, or it might stop.
+If you disable or don't configure this policy setting, the program continues without the registration. As a result, the program might not perform all its functions, or it might stop.
 
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Download missing COM components*
+-   GP Friendly name: *Download missing COM components*
 -   GP name: *AppMgmt_COM_SearchForCLSID_1*
 -   GP path: *System*
 -   GP ADMX file name: *COM.admx*
@@ -113,32 +95,15 @@ ADMX Info:
 <a href="" id="admx-com-appmgmt-com-searchforclsid-2"></a>**ADMX_COM/AppMgmt_COM_SearchForCLSID_2**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -153,27 +118,21 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting directs the system to search Active Directory for missing Component Object Model (COM) components that a program requires.
+This policy setting directs the system to search Active Directory for missing Component Object Model (COM) components that a program requires.
 
-Many Windows programs, such as the MMC snap-ins, use the interfaces provided by the COM components. These programs cannot perform all their functions unless Windows has internally registered the required components.
+Many Windows programs, such as the MMC snap-ins, use the interfaces provided by the COM components. These programs can't perform all their functions unless Windows has internally registered the required components.
 
-If you enable this policy setting and a component registration is missing, the system searches for it in Active Directory and, if it is found, downloads it. The resulting searches might make some programs start or run slowly.
+If you enable this policy setting and a component registration is missing, the system searches for it in Active Directory and, if it's found, downloads it. The resulting searches might make some programs start or run slowly.
 
-If you disable or do not configure this policy setting, the program continues without the registration. As a result, the program might not perform all its functions, or it might stop.
+If you disable or don't configure this policy setting, the program continues without the registration. As a result, the program might not perform all its functions, or it might stop.
 
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Download missing COM components*
+-   GP Friendly name: *Download missing COM components*
 -   GP name: *AppMgmt_COM_SearchForCLSID_2*
 -   GP path: *System*
 -   GP ADMX file name: *COM.admx*
@@ -182,16 +141,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

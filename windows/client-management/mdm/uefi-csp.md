@@ -5,7 +5,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 10/02/2018
 ms.reviewer: 
 manager: dansimp
@@ -13,8 +13,19 @@ manager: dansimp
 
 # UEFI CSP
 
+The table below shows the applicability of Windows:
 
-The UEFI configuration service provider (CSP) interfaces to UEFI's Device Firmware Configuration Interface (DFCI) to make BIOS configuration changes. This CSP was added in Windows 10, version 1809.
+The UEFI Configuration Service Provider (CSP) interfaces to UEFI's Device Firmware Configuration Interface (DFCI) to make BIOS configuration changes. This CSP was added in Windows 10, version 1809.
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 > [!NOTE]
 > The UEFI CSP version published in Windows 10, version 1803 is replaced with this one (version 1809).
@@ -22,13 +33,36 @@ The UEFI configuration service provider (CSP) interfaces to UEFI's Device Firmwa
 > [!NOTE]
 > The production UEFI CSP is present in 1809, but it depends upon the [Device Firmware Configuration Interface (DFCI) and UEFI firmware](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Dfci_Feature/) to comply with this interface.
 
-The following diagram shows the UEFI CSP in tree format.
-
-![Uefi CSP diagram](images/provisioning-csp-uefi.png)
-
+The following shows the UEFI CSP in tree format.
+```
+./Vendor/MSFT
+Uefi
+----DeviceIdentifier
+----Identity
+--------Current
+--------Apply
+--------Result
+----Permissions
+--------Current
+--------Apply
+--------Result
+----Settings
+--------Current
+--------Apply
+--------Result
+----Identity2
+--------Apply
+--------Result
+----Permissions2
+--------Apply
+--------Result
+----Settings2
+--------Apply
+--------Result
+```
 The following list describes the characteristics and parameters.
 
-<a href="" id="uefi"></a>**./Vendor/MSFT/Uefi**  
+<a href="" id="uefi"></a>**./Vendor/MSFT/UEFI**  
 Root node.
 
 <a href="" id="deviceidentifier"></a>**DeviceIdentifier**  
@@ -57,7 +91,7 @@ Retrieves the binary result package of the previous Identity/Apply operation.
 Supported operation is Get.
 
 <a href="" id="permissions"></a>**Permissions**  
-Node for settings permission operations..
+Node for settings permission operations.
 
 <a href="" id="permissions-current"></a>**Permissions/Current**  
 Retrieves XML from UEFI that describes the current UEFI settings permissions.

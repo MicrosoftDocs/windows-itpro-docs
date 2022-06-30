@@ -1,8 +1,7 @@
 ---
 title: Windows Sandbox configuration
-description: 
-ms.prod: w10
-audience: ITPro
+description: Windows Sandbox configuration
+ms.prod: m365-security
 author: dansimp
 ms.author: dansimp
 manager: dansimp
@@ -11,11 +10,12 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.date: 
 ms.reviewer: 
+ms.technology: windows-sec
 ---
 
 # Windows Sandbox configuration
 
-Windows Sandbox supports simple configuration files, which provide a minimal set of customization parameters for Sandbox. This feature can be used with Windows 10 build 18342 or later. Windows Sandbox configuration files are formatted as XML and are associated with Sandbox via the `.wsb` file extension.
+Windows Sandbox supports simple configuration files, which provide a minimal set of customization parameters for Sandbox. This feature can be used with Windows 10 build 18342 or Windows 11. Windows Sandbox configuration files are formatted as XML and are associated with Sandbox via the `.wsb` file extension.
 
 A configuration file enables the user to control the following aspects of Windows Sandbox:
 

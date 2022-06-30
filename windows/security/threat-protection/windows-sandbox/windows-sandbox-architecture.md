@@ -1,8 +1,7 @@
 ---
 title: Windows Sandbox architecture
-description: 
-ms.prod: w10
-audience: ITPro
+description: Windows Sandbox architecture
+ms.prod: m365-security
 author: dansimp
 ms.author: dansimp
 manager: dansimp
@@ -11,6 +10,7 @@ ms.topic: article
 ms.localizationpriority: 
 ms.date: 
 ms.reviewer: 
+ms.technology: windows-sec
 ---
 
 # Windows Sandbox architecture
@@ -41,7 +41,7 @@ Because Windows Sandbox runs the same operating system image as the host, it has
 
 ## Integrated kernel scheduler
 
-With ordinary virtual machines, the Microsoft hypervisor controls the scheduling of the virtual processors running in the VMs. Windows Sandbox uses new technology called "integrated scheduling," which allows the host scheduler to decide when the sandbox gets CPU cycles.
+With ordinary virtual machines, the Microsoft hypervisor controls the scheduling of the virtual processors running in the VMs. Windows Sandbox uses a new technology called "integrated scheduling," which allows the host scheduler to decide when the sandbox gets CPU cycles.
 
 ![A chart compares the scheduling in Windows Sandbox versus a traditional VM.](images/4-integrated-kernal.png)
 

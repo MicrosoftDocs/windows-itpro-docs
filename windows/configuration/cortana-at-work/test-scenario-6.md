@@ -2,14 +2,12 @@
 title: Test scenario 6 - Review a reminder suggested by Cortana based on what you’ve promised in email
 description: A test scenario about how to use Cortana with the Suggested reminders feature.
 ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
-author: dansimp
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: aaroncz
 ms.date: 10/05/2017
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # Test scenario 6 - Review a reminder suggested by Cortana based on what you’ve promised in email
@@ -24,7 +22,7 @@ Cortana automatically finds patterns in your email, suggesting reminders based t
 
 ## Use Cortana to create suggested reminders for you
 
-1. Make sure that you've connected Cortana to Office 365. For the steps to connect, see [Set up and test Cortana with Office 365 in your organization](https://docs.microsoft.com/windows/configuration/cortana-at-work/cortana-at-work-o365).
+1. Make sure that you've connected Cortana to Office 365. For the steps to connect, see [Set up and test Cortana with Office 365 in your organization](./cortana-at-work-o365.md).
 
 2. Click on the **Cortana** search box in the taskbar, click the **Notebook** icon, and then click **Permissions**.
 

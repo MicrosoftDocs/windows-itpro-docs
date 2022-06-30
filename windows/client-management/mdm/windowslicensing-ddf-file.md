@@ -1,27 +1,26 @@
 ---
 title: WindowsLicensing DDF file
 description: Learn about the OMA DM device description framework (DDF) for the WindowsLicensing configuration service provider (CSP).
-ms.assetid: 2A24C922-A167-4CEE-8F74-08E7453800D2
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 07/16/2017
 ---
 
 # WindowsLicensing DDF file
 
 > [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic shows the OMA DM device description framework (DDF) for the **WindowsLicensing** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
-The XML below is for Windows 10, version 1809.
+The XML below is for Windows 10, version 1809 and later.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -104,7 +103,7 @@ The XML below is for Windows 10, version 1809.
             <AccessType>
               <Get />
             </AccessType>
-            <Description>Returns a value that maps to the Windows 10 edition running on desktop or mobile devices. Take the value, convert it into its hexadecimal equivalent and search the GetProductInfo function page on MSDN for edition information.</Description>
+            <Description>Returns a value that maps to the Windows 10 or Windows 11 edition running on devices. Take the value, convert it into its hexadecimal equivalent and search the GetProductInfo function page on MSDN for edition information.</Description>
             <DFFormat>
               <int />
             </DFFormat>
@@ -128,57 +127,9 @@ The XML below is for Windows 10, version 1809.
             <AccessType>
               <Get />
             </AccessType>
-            <Description>Returns the status of an edition upgrade on Windows 10 desktop and mobile devices.	 Status: 0 = Failed, 1 = Pending, 2 = In progress, 3 = Completed, 4 = Unknown</Description>
+            <Description>Returns the status of an edition upgrade on Windows 10 or Windows 11 client devices.	 Status: 0 = Failed, 1 = Pending, 2 = In progress, 3 = Completed, 4 = Unknown</Description>
             <DFFormat>
               <int />
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <CaseSense>
-              <CIS />
-            </CaseSense>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>UpgradeEditionWithLicense</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Exec />
-            </AccessType>
-            <Description>Provide a license for an edition upgrade of Windows 10 mobile devices. Does not require reboot.</Description>
-            <DFFormat>
-              <xml />
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <CaseSense>
-              <CIS />
-            </CaseSense>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>LicenseKeyType</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description>Returns the parameter type used by Windows 10 devices for an edition upgrade. Windows 10 desktop devices require a product key for an edition upgrade. Windows 10 mobile devices require a license for an edition upgrade.</Description>
-            <DFFormat>
-              <chr />
             </DFFormat>
             <Occurrence>
               <One />
@@ -397,3 +348,7 @@ The XML below is for Windows 10, version 1809.
       </Node>
 </MgmtTree>
 ```
+
+## Related topics
+
+[WindowsLicensing configuration service provider](windowslicensing-csp.md)

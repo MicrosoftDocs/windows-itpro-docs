@@ -1,14 +1,13 @@
 ---
 title: EnterpriseModernAppManagement DDF
 description: Learn about the OMA DM device description framework (DDF) for the EnterpriseModernAppManagement configuration service provider (CSP).
-ms.assetid: 
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 10/01/2019
 ---
 

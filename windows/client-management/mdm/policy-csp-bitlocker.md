@@ -1,28 +1,28 @@
 ---
-title: Policy CSP - Bitlocker
-description: Use the Policy configuration service provider (CSP) - Bitlocker to manage encryption of PCs and devices.
+title: Policy CSP - BitLocker
+description: Use the Policy configuration service provider (CSP) - BitLocker to manage encryption of PCs and devices.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
 manager: dansimp
 ---
 
-# Policy CSP - Bitlocker
+# Policy CSP - BitLocker
 
 
 
 > [!NOTE]
-> To manage encryption of PCs and devices, use [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp).
+> To manage encryption of PCs and devices, use [BitLocker CSP](./bitlocker-csp.md).
 
 <hr/>
 
 <!--Policies-->
-## Bitlocker policies  
+## BitLocker policies  
 
 <dl>
   <dd>
@@ -37,32 +37,16 @@ manager: dansimp
 <a href="" id="bitlocker-encryptionmethod"></a>**Bitlocker/EncryptionMethod**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -77,7 +61,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Specifies the BitLocker Drive Encryption method and cipher strength.
+This policy specifies the BitLocker Drive Encryption method and cipher strength.
 
 > [!NOTE]
 > XTS-AES 128-bit and XTS-AES 256-bit values are supported only on Windows 10 for desktop.
@@ -95,16 +79,6 @@ The following list shows the supported values:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
-

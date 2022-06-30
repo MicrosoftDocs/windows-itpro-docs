@@ -1,18 +1,14 @@
 ---
 title: Administering UE-V with Windows PowerShell and WMI
 description: Learn how User Experience Virtualization (UE-V) provides Windows PowerShell cmdlets to help administrators perform various UE-V tasks.
-author: trudyha
-ms.pagetype: mdop, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
+author: aczechowski
 ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
-
 
 # Administering UE-V with Windows PowerShell and WMI
 
@@ -21,7 +17,7 @@ ms.topic: article
 
 User Experience Virtualization (UE-V) provides Windows PowerShell cmdlets to help administrators perform various UE-V tasks. The following sections provide more information about using Windows PowerShell in UE-V.
 
-> **Note**&nbsp;&nbsp;Administering UE-V with Windows PowerShell requires PowerShell 3.0 or higher. For a complete list of UE-V cmdlets, see [User Experience Virtualization in Windows PowerShell](https://technet.microsoft.com/library/mt772286.aspx).
+> **Note**&nbsp;&nbsp;Administering UE-V with Windows PowerShell requires PowerShell 3.0 or higher. For a complete list of UE-V cmdlets, see [User Experience Virtualization in Windows PowerShell](/powershell/module/uev/).
 
 ## Managing the UE-V service and packages by using Windows PowerShell and WMI
 
@@ -44,4 +40,4 @@ After you create and deploy UE-V settings location templates, you can manage tho
 
 - [Administering UE-V](uev-administering-uev.md)
 
-- [User Experience Virtualization in Windows PowerShell](https://technet.microsoft.com/library/mt772286.aspx)
+- [User Experience Virtualization in Windows PowerShell](/powershell/module/uev/)

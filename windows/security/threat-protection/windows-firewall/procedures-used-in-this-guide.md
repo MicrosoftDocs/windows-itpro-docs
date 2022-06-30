@@ -1,27 +1,24 @@
 ---
-title: Procedures Used in This Guide (Windows 10)
+title: Procedures Used in This Guide (Windows)
 description: Refer to this summary of procedures for Windows Defender Firewall with Advanced Security from checklists in this guide.
-ms.assetid: 45c0f549-e4d8-45a3-a600-63e2a449e178
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.prod: m365-security
 ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/08/2021
+ms.technology: windows-sec
 ---
 
 # Procedures Used in This Guide
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 The procedures in this section appear in the checklists found earlier in this document. They should be used only in the context of the checklists in which they appear. They are presented here in alphabetical order.
 

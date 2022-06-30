@@ -1,27 +1,24 @@
 ---
-title: Server Isolation GPOs (Windows 10)
+title: Server Isolation GPOs (Windows)
 description: Learn about required GPOs for isolation zones and how many server isolation zones you need in Windows Defender Firewall with Advanced Security.
-ms.assetid: c97b1f2f-51d8-4596-b38a-8a3f6f706be4
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.prod: m365-security
 ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 09/08/2021
+ms.technology: windows-sec
 ---
 
 # Server Isolation GPOs
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 Each set of devices that have different users or devices accessing them require a separate server isolation zone. Each zone requires one GPO for each version of Windows running on devices in the zone. The Woodgrove Bank example has an isolation zone for their devices that run SQL Server. The server isolation zone is logically considered part of the encryption zone. Therefore, server isolation zone GPOs must also include rules for encrypting all isolated server traffic. Woodgrove Bank copied the encryption zone GPOs to serve as a starting point, and renamed them to reflect their new purpose.
 

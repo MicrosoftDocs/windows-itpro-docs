@@ -1,20 +1,18 @@
 ---
-title: Deploying Microsoft Office 2010 by Using App-V (Windows 10)
+title: Deploying Microsoft Office 2010 by Using App-V (Windows 10/11)
 description: Create Office 2010 packages for Microsoft Application Virtualization (App-V) using the App-V Sequencer or the App-V Package Accelerator.
-author: lomayor
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
+author: aczechowski
 ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
+
 # Deploying Microsoft Office 2010 by Using App-V
 
->Applies to: Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 You can create Office 2010 packages for Microsoft Application Virtualization (App-V) using one of the following methods:
 
@@ -33,11 +31,11 @@ The following table shows the App-V versions, methods of Office package creation
 
 ## Creating Office 2010 App-V using the sequencer
 
-Sequencing Office 2010 is one of the main methods for creating an Office 2010 package on App-V. Microsoft has provided a detailed recipe through a Knowledge Base article. For detailed instructions about how to create an Office 2010 package on App-V, see [How To Sequence Microsoft Office 2010 in Microsoft Application Virtualization 5.0](https://support.microsoft.com/kb/2830069).
+Sequencing Office 2010 is one of the main methods for creating an Office 2010 package on App-V. For more information, see [How to Sequence a New Application with App-V 5.0](/microsoft-desktop-optimization-pack/appv-v5/how-to-sequence-a-new-application-with-app-v-50-beta-gb18030).
 
 ## Creating Office 2010 App-V packages using package accelerators
 
-Office 2010 App-V packages can be created through package accelerators. Microsoft has provided package accelerators for creating Office 2010 on Windows 10, Windows 8, and Windows 7. The following pages will show you which package accelerator is best for creating Office 2010 App-V packages on your version of Windows:
+Office 2010 App-V packages can be created through package accelerators. Microsoft has provided package accelerators for creating Office 2010 on Windows 10/11, Windows 8, and Windows 7. The following pages will show you which package accelerator is best for creating Office 2010 App-V packages on your version of Windows:
 
 * [App-V 5.0 Package Accelerator for Office Professional Plus 2010 – Windows 8](https://gallery.technet.microsoft.com/App-V-50-Package-a29410db)
 * [App-V 5.0 Package Accelerator for Office Professional Plus 2010 – Windows 7](https://gallery.technet.microsoft.com/App-V-50-Package-e7ef536b)
@@ -78,26 +76,10 @@ The following table provides a full list of supported integration points for Off
 |Active X Controls:<br>- Groove.SiteClient<br>- PortalConnect.PersonalSite<br>- SharePoint.openDocuments<br>-  SharePoint.ExportDatabase<br>- SharePoint.SpreadSheetLauncher<br>- SharePoint.StssyncHander<br>- SharePoint.DragUploadCtl<br>- SharePoint.DragDownloadCtl<br>- Sharpoint.OpenXMLDocuments<br> - Sharepoint.ClipboardCtl<br>- WinProj.Activator<br>- Name.NameCtrl<br>- STSUPld.CopyCtl<br>- CommunicatorMeetingJoinAx.JoinManager<br>- LISTNET.Listnet<br>- OneDrive Pro Browser Helper|Active X Control. <br><br>For more information about ActiveX controls, see the [ActiveX Control API Reference](<https://msdn.microsoft.com/library/office/ms440037(v=office.14).aspx>).||
 |OneDrive Pro Icon Overlays|Windows explorer shell icon overlays when users look at folders OneDrive Pro folders||
 
-## Additional resources
-
-### Office 2013 App-V Packages Additional Resources
-
-* [Supported scenarios for deploying Microsoft Office as a sequenced App-V Package](https://support.microsoft.com/kb/2772509)
-
-### Office 2010 App-V Packages
-
-* [Microsoft Office 2010 Sequencing Kit for Microsoft Application Virtualization 5.0](https://www.microsoft.com/download/details.aspx?id=38399)
-* [Known issues when you create or use an App-V 5.0 Office 2010 package](https://support.microsoft.com/kb/2828619)
-* [How To Sequence Microsoft Office 2010 in Microsoft Application Virtualization 5.0](https://support.microsoft.com/kb/2830069)
-
 ### Connection Groups
 
 * [Managing Connection Groups](appv-managing-connection-groups.md)
-* [Connection groups on the App-V team blog](https://blogs.msdn.microsoft.com/gladiator/tag/connection-groups/)
 
 ### Dynamic Configuration
 
 * [About App-V Dynamic Configuration](appv-dynamic-configuration.md)
-
-
-

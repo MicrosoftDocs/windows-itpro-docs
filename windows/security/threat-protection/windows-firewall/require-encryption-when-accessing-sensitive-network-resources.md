@@ -1,27 +1,24 @@
 ---
-title: Require Encryption When Accessing Sensitive Network Resources (Windows 10)
+title: Require Encryption When Accessing Sensitive Network Resources (Windows)
 description: Windows Defender Firewall with Advanced Security allows you to require that all network traffic in an isolated domain be encrypted.
-ms.assetid: da980d30-a68b-4e2a-ba63-94726355ce6f
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.prod: m365-security
 ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/08/2021
+ms.technology: windows-sec
 ---
 
 # Require Encryption When Accessing Sensitive Network Resources
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 The use of authentication in the previously described goal ([Restrict Access to Only Trusted Devices](restrict-access-to-only-trusted-devices.md)) enables a device in the isolated domain to block traffic from untrusted devices. However, it does not prevent an untrusted device from eavesdropping on the network traffic shared between two trusted devices, because by default network packets are not encrypted.
 
@@ -29,7 +26,7 @@ For devices that share sensitive information over the network, Windows Defender 
 
 The following illustration shows an encryption zone in an isolated domain. The rules that implement both the isolated domain and the different zones are deployed by using Group Policy and Active Directory.
 
-![encryption zone in an isolated domain](images/wfas-domainisoencrypt.gif)
+![encryption zone in an isolated domain.](images/wfas-domainisoencrypt.gif)
 
 This goal provides the following benefits:
 

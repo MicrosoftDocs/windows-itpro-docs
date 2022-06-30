@@ -1,19 +1,17 @@
 ---
 title: RootCATrustedCertificates DDF file
 description: Learn about the OMA DM device description framework (DDF) for the RootCACertificates configuration service provider (CSP).
-ms.assetid: 06D8787B-D3E1-4D4B-8A21-8045A8F85C1C
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 03/07/2018
 ---
 
 # RootCATrustedCertificates DDF file
-
 
 This topic shows the OMA DM device description framework (DDF) for the **RootCACertificates** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
@@ -77,7 +75,7 @@ The XML below is for Windows 10, version 1803.
                 <Delete />
                 <Get />
               </AccessType>
-              <Description>Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certificate hash is specified as a hexadecimal string value</Description>
+              <Description>Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certificate hash is specified as a hexadecimal string value.</Description>
               <DFFormat>
                 <node />
               </DFFormat>
@@ -127,7 +125,7 @@ The XML below is for Windows 10, version 1803.
                 <AccessType>
                   <Get />
                 </AccessType>
-                <Description>Returns the name of the certificate issuer.  This is equivalent to the Issuer member in the CERT_INFO data structure.</Description>
+                <Description>Returns the name of the certificate issuer. This is equivalent to the Issuer member in the CERT_INFO data structure.</Description>
                 <DFFormat>
                   <chr />
                 </DFFormat>
@@ -199,7 +197,7 @@ The XML below is for Windows 10, version 1803.
                 <AccessType>
                   <Get />
                 </AccessType>
-                <Description>Returns the expiration date of the certificate. Supported operation is Get. This is equivalent to the NotAfter member in the CERT_INFO structure</Description>
+                <Description>Returns the expiration date of the certificate. Supported operation is Get. This is equivalent to the NotAfter member in the CERT_INFO structure.</Description>
                 <DFFormat>
                   <chr />
                 </DFFormat>
@@ -272,7 +270,7 @@ The XML below is for Windows 10, version 1803.
                 <Delete />
                 <Get />
               </AccessType>
-              <Description>Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certificate hash is specified as a hexadecimal string value</Description>
+              <Description>Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certificate hash is specified as a hexadecimal string value.</Description>
               <DFFormat>
                 <node />
               </DFFormat>
@@ -319,7 +317,7 @@ The XML below is for Windows 10, version 1803.
                 <AccessType>
                   <Get />
                 </AccessType>
-                <Description>Returns the name of the certificate issuer.  This is equivalent to the Issuer member in the CERT_INFO data structure.</Description>
+                <Description>Returns the name of the certificate issuer. This is equivalent to the Issuer member in the CERT_INFO data structure.</Description>
                 <DFFormat>
                   <chr />
                 </DFFormat>
@@ -382,7 +380,7 @@ The XML below is for Windows 10, version 1803.
                 <AccessType>
                   <Get />
                 </AccessType>
-                <Description>Returns the expiration date of the certificate. Supported operation is Get. This is equivalent to the NotAfter member in the CERT_INFO structure</Description>
+                <Description>Returns the expiration date of the certificate. Supported operation is Get. This is equivalent to the NotAfter member in the CERT_INFO structure.</Description>
                 <DFFormat>
                   <chr />
                 </DFFormat>
@@ -449,7 +447,7 @@ The XML below is for Windows 10, version 1803.
                 <Delete />
                 <Get />
               </AccessType>
-              <Description>Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certificate hash is specified as a hexadecimal string value</Description>
+              <Description>Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certificate hash is specified as a hexadecimal string value.</Description>
               <DFFormat>
                 <node />
               </DFFormat>
@@ -499,7 +497,7 @@ The XML below is for Windows 10, version 1803.
                 <AccessType>
                   <Get />
                 </AccessType>
-                <Description>Returns the name of the certificate issuer.  This is equivalent to the Issuer member in the CERT_INFO data structure.</Description>
+                <Description>Returns the name of the certificate issuer. This is equivalent to the Issuer member in the CERT_INFO data structure.</Description>
                 <DFFormat>
                   <chr />
                 </DFFormat>
@@ -571,7 +569,7 @@ The XML below is for Windows 10, version 1803.
                 <AccessType>
                   <Get />
                 </AccessType>
-                <Description>Returns the expiration date of the certificate. Supported operation is Get. This is equivalent to the NotAfter member in the CERT_INFO structure</Description>
+                <Description>Returns the expiration date of the certificate. Supported operation is Get. This is equivalent to the NotAfter member in the CERT_INFO structure.</Description>
                 <DFFormat>
                   <chr />
                 </DFFormat>
@@ -644,7 +642,7 @@ The XML below is for Windows 10, version 1803.
                 <Delete />
                 <Get />
               </AccessType>
-              <Description>Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certificate hash is specified as a hexadecimal string value</Description>
+              <Description>Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certificate hash is specified as a hexadecimal string value.</Description>
               <DFFormat>
                 <node />
               </DFFormat>
@@ -694,7 +692,7 @@ The XML below is for Windows 10, version 1803.
                 <AccessType>
                   <Get />
                 </AccessType>
-                <Description>Returns the name of the certificate issuer.  This is equivalent to the Issuer member in the CERT_INFO data structure.</Description>
+                <Description>Returns the name of the certificate issuer. This is equivalent to the Issuer member in the CERT_INFO data structure.</Description>
                 <DFFormat>
                   <chr />
                 </DFFormat>
@@ -766,7 +764,7 @@ The XML below is for Windows 10, version 1803.
                 <AccessType>
                   <Get />
                 </AccessType>
-                <Description>Returns the expiration date of the certificate. Supported operation is Get. This is equivalent to the NotAfter member in the CERT_INFO structure</Description>
+                <Description>Returns the expiration date of the certificate. Supported operation is Get. This is equivalent to the NotAfter member in the CERT_INFO structure.</Description>
                 <DFFormat>
                   <chr />
                 </DFFormat>
@@ -839,7 +837,7 @@ The XML below is for Windows 10, version 1803.
                 <Get />
                 <Delete />
               </AccessType>
-              <Description>Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certificate hash is specified as a hexadecimal string value</Description>
+              <Description>Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certificate hash is specified as a hexadecimal string value.</Description>
               <DFFormat>
                 <node />
               </DFFormat>
@@ -889,7 +887,7 @@ The XML below is for Windows 10, version 1803.
                 <AccessType>
                   <Get />
                 </AccessType>
-                <Description>Returns the name of the certificate issuer.  This is equivalent to the Issuer member in the CERT_INFO data structure.</Description>
+                <Description>Returns the name of the certificate issuer. This is equivalent to the Issuer member in the CERT_INFO data structure.</Description>
                 <DFFormat>
                   <chr />
                 </DFFormat>
@@ -961,7 +959,7 @@ The XML below is for Windows 10, version 1803.
                 <AccessType>
                   <Get />
                 </AccessType>
-                <Description>Returns the expiration date of the certificate. Supported operation is Get. This is equivalent to the NotAfter member in the CERT_INFO structure</Description>
+                <Description>Returns the expiration date of the certificate. Supported operation is Get. This is equivalent to the NotAfter member in the CERT_INFO structure.</Description>
                 <DFFormat>
                   <chr />
                 </DFFormat>
@@ -1055,7 +1053,7 @@ The XML below is for Windows 10, version 1803.
                 <Delete />
                 <Get />
               </AccessType>
-              <Description>Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certificate hash is specified as a hexadecimal string value</Description>
+              <Description>Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certificate hash is specified as a hexadecimal string value.</Description>
               <DFFormat>
                 <node />
               </DFFormat>
@@ -1105,7 +1103,7 @@ The XML below is for Windows 10, version 1803.
                 <AccessType>
                   <Get />
                 </AccessType>
-                <Description>Returns the name of the certificate issuer.  This is equivalent to the Issuer member in the CERT_INFO data structure.</Description>
+                <Description>Returns the name of the certificate issuer. This is equivalent to the Issuer member in the CERT_INFO data structure.</Description>
                 <DFFormat>
                   <chr />
                 </DFFormat>
@@ -1177,7 +1175,7 @@ The XML below is for Windows 10, version 1803.
                 <AccessType>
                   <Get />
                 </AccessType>
-                <Description>Returns the expiration date of the certificate. Supported operation is Get. This is equivalent to the NotAfter member in the CERT_INFO structure</Description>
+                <Description>Returns the expiration date of the certificate. Supported operation is Get. This is equivalent to the NotAfter member in the CERT_INFO structure.</Description>
                 <DFFormat>
                   <chr />
                 </DFFormat>
@@ -1250,7 +1248,7 @@ The XML below is for Windows 10, version 1803.
                 <Delete />
                 <Get />
               </AccessType>
-              <Description>Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certificate hash is specified as a hexadecimal string value</Description>
+              <Description>Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certificate hash is specified as a hexadecimal string value.</Description>
               <DFFormat>
                 <node />
               </DFFormat>
@@ -1297,7 +1295,7 @@ The XML below is for Windows 10, version 1803.
                 <AccessType>
                   <Get />
                 </AccessType>
-                <Description>Returns the name of the certificate issuer.  This is equivalent to the Issuer member in the CERT_INFO data structure.</Description>
+                <Description>Returns the name of the certificate issuer. This is equivalent to the Issuer member in the CERT_INFO data structure.</Description>
                 <DFFormat>
                   <chr />
                 </DFFormat>
@@ -1360,7 +1358,7 @@ The XML below is for Windows 10, version 1803.
                 <AccessType>
                   <Get />
                 </AccessType>
-                <Description>Returns the expiration date of the certificate. Supported operation is Get. This is equivalent to the NotAfter member in the CERT_INFO structure</Description>
+                <Description>Returns the expiration date of the certificate. Supported operation is Get. This is equivalent to the NotAfter member in the CERT_INFO structure.</Description>
                 <DFFormat>
                   <chr />
                 </DFFormat>
@@ -1427,7 +1425,7 @@ The XML below is for Windows 10, version 1803.
                 <Delete />
                 <Get />
               </AccessType>
-              <Description>Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certificate hash is specified as a hexadecimal string value</Description>
+              <Description>Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certificate hash is specified as a hexadecimal string value.</Description>
               <DFFormat>
                 <node />
               </DFFormat>
@@ -1477,7 +1475,7 @@ The XML below is for Windows 10, version 1803.
                 <AccessType>
                   <Get />
                 </AccessType>
-                <Description>Returns the name of the certificate issuer.  This is equivalent to the Issuer member in the CERT_INFO data structure.</Description>
+                <Description>Returns the name of the certificate issuer. This is equivalent to the Issuer member in the CERT_INFO data structure.</Description>
                 <DFFormat>
                   <chr />
                 </DFFormat>
@@ -1549,7 +1547,7 @@ The XML below is for Windows 10, version 1803.
                 <AccessType>
                   <Get />
                 </AccessType>
-                <Description>Returns the expiration date of the certificate. Supported operation is Get. This is equivalent to the NotAfter member in the CERT_INFO structure</Description>
+                <Description>Returns the expiration date of the certificate. Supported operation is Get. This is equivalent to the NotAfter member in the CERT_INFO structure.</Description>
                 <DFFormat>
                   <chr />
                 </DFFormat>
@@ -1622,7 +1620,7 @@ The XML below is for Windows 10, version 1803.
                 <Delete />
                 <Get />
               </AccessType>
-              <Description>Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certificate hash is specified as a hexadecimal string value</Description>
+              <Description>Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certificate hash is specified as a hexadecimal string value.</Description>
               <DFFormat>
                 <node />
               </DFFormat>
@@ -1672,7 +1670,7 @@ The XML below is for Windows 10, version 1803.
                 <AccessType>
                   <Get />
                 </AccessType>
-                <Description>Returns the name of the certificate issuer.  This is equivalent to the Issuer member in the CERT_INFO data structure.</Description>
+                <Description>Returns the name of the certificate issuer. This is equivalent to the Issuer member in the CERT_INFO data structure.</Description>
                 <DFFormat>
                   <chr />
                 </DFFormat>
@@ -1744,7 +1742,7 @@ The XML below is for Windows 10, version 1803.
                 <AccessType>
                   <Get />
                 </AccessType>
-                <Description>Returns the expiration date of the certificate. Supported operation is Get. This is equivalent to the NotAfter member in the CERT_INFO structure</Description>
+                <Description>Returns the expiration date of the certificate. Supported operation is Get. This is equivalent to the NotAfter member in the CERT_INFO structure.</Description>
                 <DFFormat>
                   <chr />
                 </DFFormat>
@@ -1817,7 +1815,7 @@ The XML below is for Windows 10, version 1803.
                 <Get />
                 <Delete />
               </AccessType>
-              <Description>Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certificate hash is specified as a hexadecimal string value</Description>
+              <Description>Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certificate hash is specified as a hexadecimal string value.</Description>
               <DFFormat>
                 <node />
               </DFFormat>
@@ -1867,7 +1865,7 @@ The XML below is for Windows 10, version 1803.
                 <AccessType>
                   <Get />
                 </AccessType>
-                <Description>Returns the name of the certificate issuer.  This is equivalent to the Issuer member in the CERT_INFO data structure.</Description>
+                <Description>Returns the name of the certificate issuer. This is equivalent to the Issuer member in the CERT_INFO data structure.</Description>
                 <DFFormat>
                   <chr />
                 </DFFormat>
@@ -1939,7 +1937,7 @@ The XML below is for Windows 10, version 1803.
                 <AccessType>
                   <Get />
                 </AccessType>
-                <Description>Returns the expiration date of the certificate. Supported operation is Get. This is equivalent to the NotAfter member in the CERT_INFO structure</Description>
+                <Description>Returns the expiration date of the certificate. Supported operation is Get. This is equivalent to the NotAfter member in the CERT_INFO structure.</Description>
                 <DFFormat>
                   <chr />
                 </DFFormat>
@@ -1986,3 +1984,7 @@ The XML below is for Windows 10, version 1803.
       </Node>
 </MgmtTree>
 ```
+
+## Related topics
+
+[RootCATrustedCertificates CSP](rootcacertificates-csp.md)

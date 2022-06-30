@@ -1,18 +1,12 @@
 ---
 title: Create a task sequence with Configuration Manager (Windows 10)
 description: Create a Configuration Manager task sequence with Microsoft Deployment Toolkit (MDT) integration using the MDT wizard.
-ms.assetid: 0b069bec-5be8-47c6-bf64-7a630f41ac98
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
-keywords: deploy, upgrade, task sequence, install
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.pagetype: mdt
-ms.sitesec: library
-audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ---
 
@@ -87,14 +81,14 @@ On **CM01**:
     >[!NOTE]
     >You also can add a Query WMI condition with the following query: SELECT \* FROM Win32\_ComputerSystem WHERE Model LIKE '%HP EliteBook 8560w%'
     
-    ![Driver package options](../images/fig27-driverpackage.png "Driver package options")
+    ![Driver package options.](../images/fig27-driverpackage.png "Driver package options")
     
     The driver package options
 
 7.  In the **State Restore / Install Applications** group, select the **Install Application** action.
 8.  Select the **Install the following applications** radio button, and add the OSD / Adobe Reader DC - OSD Install application to the list.
 
-    ![Add an application to the task sequence](../images/fig28-addapp.png "Add an application to the task sequence")
+    ![Add an application to the task sequence.](../images/fig28-addapp.png "Add an application to the task sequence")
 
     Add an application to the Configuration Manager task sequence
 

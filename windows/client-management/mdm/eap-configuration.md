@@ -1,58 +1,55 @@
 ---
 title: EAP configuration
 description: Learn how to create an Extensible Authentication Protocol (EAP) configuration XML for a VPN profile, including details about EAP certificate filtering in Windows 10.
-ms.assetid: DD3F2292-4B4C-4430-A57F-922FED2A8FAE
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 06/26/2017
 ---
 
 # EAP configuration
 
-
 This article provides a step-by-step guide for creating an Extensible Authentication Protocol (EAP) configuration XML for a VPN profile, including information about EAP certificate filtering in Windows 10.
 
 ## Create an EAP configuration XML for a VPN profile
-
 
 To get the EAP configuration from your desktop using the rasphone tool that is shipped in the box:
 
 1.  Run rasphone.exe.
 
-    ![vpnv2 rasphone](images/vpnv2-csp-rasphone.png)
+    ![vpnv2 rasphone.](images/vpnv2-csp-rasphone.png)
 
 1.  If you don't currently have a VPN connection and you see the following message, select **OK**.
 
-    ![vpnv2 eap configuration](images/vpnv2-csp-networkconnections.png)
+    ![vpnv2 csp network connections.](images/vpnv2-csp-networkconnections.png)
 
 1.  In the wizard, select **Workplace network**.
 
-    ![vpnv2 eap configuration](images/vpnv2-csp-setupnewconnection.png)
+    ![vpnv2 csp set up connection.](images/vpnv2-csp-setupnewconnection.png)
 
-1.  Enter an Internet address and connection name. These can be fake since it does not impact the authentication parameters.
+1.  Enter an Internet address and connection name. These details can be fake since it doesn't impact the authentication parameters.
 
-    ![vpnv2 eap configuration](images/vpnv2-csp-setupnewconnection2.png)
+    ![vpnv2 csp set up connection 2.](images/vpnv2-csp-setupnewconnection2.png)
 
 1.  Create a fake VPN connection. In the UI shown here, select **Properties**.
 
-    ![vpnv2 eap configuration](images/vpnv2-csp-choosenetworkconnection.png)
+    ![vpnv2 csp choose nw connection.](images/vpnv2-csp-choosenetworkconnection.png)
 
 1.  In the **Test Properties** dialog, select the **Security** tab.
 
-    ![vpnv2 eap configuration](images/vpnv2-csp-testproperties.png)
+    ![vpnv2 csp test props.](images/vpnv2-csp-testproperties.png)
 
 1.  On the **Security** tab, select **Use Extensible Authentication Protocol (EAP)**.
 
-    ![vpnv2 eap configuration](images/vpnv2-csp-testproperties2.png)
+    ![vpnv2 csp test props2.](images/vpnv2-csp-testproperties2.png)
 
 1.  From the drop-down menu, select the EAP method that you want to configure, and then select **Properties** to configure as needed.
 
-    ![vpnv2 eap configuration](images/vpnv2-csp-testproperties3.png)![vpnv2 eap configuration](images/vpnv2-csp-testproperties4.png)
+    ![vpnv2 csp test props3.](images/vpnv2-csp-testproperties3.png)![vpnv2 csp test props4](images/vpnv2-csp-testproperties4.png)
 
 1.  Switch over to PowerShell and use the following cmdlets to retrieve the EAP configuration XML.
 
@@ -60,7 +57,7 @@ To get the EAP configuration from your desktop using the rasphone tool that is s
     Get-VpnConnection -Name Test
     ```
 
-    <a href="" id="pow"></a>Here is an example output.
+    <a href="" id="pow"></a>Here's an example output.
 
     ``` syntax
     Name                  : Test
@@ -88,7 +85,7 @@ To get the EAP configuration from your desktop using the rasphone tool that is s
     $a.EapConfigXmlStream.InnerXml
     ```
 
-    Here is an example output.
+    Here's an example output.
 
     ```xml
     <EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig"><EapMethod><Type xmlns="http://www.microsoft.co
@@ -107,34 +104,32 @@ To get the EAP configuration from your desktop using the rasphone tool that is s
     ```
 
     > [!NOTE]
-    > You should check with mobile device management (MDM) vendor if you need to pass this XML in escaped format. The XSDs for all EAP methods are shipped in the box and can be found at the following locations:
-    -   C:\\Windows\\schemas\\EAPHost
-    -   C:\\Windows\\schemas\\EAPMethods
+    > You should check with Mobile Device Management (MDM) vendor, if you need to pass this XML in escaped format. The XSDs for all EAP methods are shipped in the box and can be found at the following locations:
+    > -   C:\\Windows\\schemas\\EAPHost
+    > -   C:\\Windows\\schemas\\EAPMethods
 
-     
 
 ## EAP certificate filtering
 
+In your deployment, if you have multiple certificates provisioned on the device and the Wi-Fi profile provisioned doesn't have a strict filtering criteria, you might see connection failures when connecting to Wi-Fi. The solution is to ensure that the Wi-Fi profile provisioned has strict filtering criteria so that it matches only one certificate.
 
-In your deployment, if you have multiple certificates provisioned on the device and the Wi-Fi profile provisioned does not have a strict filtering criteria, you might see connection failures when connecting to Wi-Fi. The solution is to ensure that the Wi-Fi profile provisioned has strict filtering criteria so that it matches only one certificate.
-
-Enterprises deploying certificate-based EAP authentication for VPN and Wi-Fi can encounter a situation where there are multiple certificates that meet the default criteria for authentication. This can lead to issues such as:
+Enterprises deploying certificate-based EAP authentication for VPN and Wi-Fi can encounter a situation where there are multiple certificates that meet the default criteria for authentication. This situation can lead to issues such as:
 
 -   The user might be prompted to select the certificate.
 -   The wrong certificate might be auto-selected and cause an authentication failure.
 
-A production ready deployment must have the appropriate certificate details as part of the profile being deployed. The following information explains how to create or update an EAP configuration XML such that the extraneous certificates are filtered out and the appropriate certificate can be used for the authentication.
+A production ready deployment must have appropriate certificate details as part of the profile being deployed. The following information explains how to create or update an EAP configuration XML such that the extraneous certificates are filtered out and appropriate certificate can be used for the authentication.
 
-EAP XML must be updated with relevant information for your environment. This can be done manually by editing the following XML sample, or by using the step-by-step UI guide. After the EAP XML is updated, refer to instructions from your MDM to deploy the updated configuration as follows:
+EAP XML must be updated with relevant information for your environment. This task can be done manually by editing the following XML sample or by using the step-by-step UI guide. After the EAP XML is updated, refer to instructions from your MDM to deploy the updated configuration as follows:
 
--   For Wi-Fi, look for the `<EAPConfig>` section of your current WLAN Profile XML. (This is what you specify for the WLanXml node in the Wi-Fi CSP.) Within these tags you will find the complete EAP configuration. Replace the section under `<EAPConfig>` with your updated XML and update your Wi-Fi profile. You can refer to your MDM’s guidance on how to deploy a new Wi-Fi profile.
+-   For Wi-Fi, look for the `<EAPConfig>` section of your current WLAN Profile XML. (This section is what you specify for the WLanXml node in the Wi-Fi CSP.) Within these tags, you'll find the complete EAP configuration. Replace the section under `<EAPConfig>` with your updated XML and update your Wi-Fi profile. You can refer to your MDM’s guidance on how to deploy a new Wi-Fi profile.
 -   For VPN, EAP configuration is a separate field in the MDM configuration. Work with your MDM provider to identify and update the appropriate field.
 
 For information about EAP settings, see <https://technet.microsoft.com/library/hh945104.aspx#BKMK_Cfg_cert_Selct>.
 
 For information about generating an EAP XML, see the EAP configuration article.
 
-For more information about extended key usage (EKU), see <http://tools.ietf.org/html/rfc5280#section-4.2.1.12>.
+For more information about extended key usage (EKU), see <https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.12>.
 
 For information about adding EKU to a certificate, see <https://technet.microsoft.com/library/cc731792.aspx>.
 
@@ -142,13 +137,13 @@ The following list describes the prerequisites for a certificate to be used with
 
 -   The certificate must have at least one of the following EKU properties:
 
-    -   Client Authentication. As defined by RFC 5280, this is a well-defined OID with value 1.3.6.1.5.5.7.3.2.
-    -   Any Purpose. This is an EKU defined and published by Microsoft, and is a well-defined OID with value 1.3.6.1.4.1.311.10.12.1. The inclusion of this OID implies that the certificate can be used for any purpose. The advantage of this EKU over the All Purpose EKU is that additional non-critical or custom EKUs can still be added to the certificate for effective filtering.
-    -   All Purpose. As defined by RFC 5280, if a CA includes EKUs to satisfy some application needs, but does not want to restrict usage of the key, the CA can add an EKU value of 0. A certificate with such an EKU can be used for all purposes.
+    -   Client Authentication: As defined by RFC 5280, this property is a well-defined OID with value 1.3.6.1.5.5.7.3.2.
+    -   Any Purpose: This property is an EKU-defined one and is published by Microsoft. It is a well-defined OID with value 1.3.6.1.4.1.311.10.12.1. The inclusion of this OID implies that the certificate can be used for any purpose. The advantage of this EKU over the All Purpose EKU is that other non-critical or custom EKUs can still be added to the certificate for effective filtering.
+    -   All Purpose: As defined by RFC 5280, if a CA includes EKUs to satisfy some application needs, but doesn't want to restrict usage of the key, the CA can add an EKU value of 0. A certificate with such an EKU can be used for all purposes.
     
 -   The user or the computer certificate on the client must chain to a trusted root CA.
--   The user or the computer certificate does not fail any one of the checks that are performed by the CryptoAPI certificate store, and the certificate passes requirements in the remote access policy.
--   The user or the computer certificate does not fail any one of the certificate object identifier checks that are specified in the Internet Authentication Service (IAS)/Radius Server.
+-   The user or the computer certificate doesn't fail any one of the checks that are performed by the CryptoAPI certificate store, and the certificate passes requirements in the remote access policy.
+-   The user or the computer certificate doesn't fail any one of the certificate object identifier checks that are specified in the Internet Authentication Service (IAS)/Radius Server.
 -   The Subject Alternative Name (SubjectAltName) extension in the certificate contains the user principal name (UPN) of the user.
 
 The following XML sample explains the properties for the EAP TLS XML, including certificate filtering.
@@ -157,7 +152,6 @@ The following XML sample explains the properties for the EAP TLS XML, including 
 > For PEAP or TTLS profiles, the EAP TLS XML is embedded within some PEAP-specific or TTLS-specific elements.
 
  
-
 ```xml
 <EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
  <EapMethod>
@@ -261,13 +255,12 @@ The following XML sample explains the properties for the EAP TLS XML, including 
 > The EAP TLS XSD is located at %systemdrive%\\Windows\\schemas\\EAPMethods\\eaptlsconnectionpropertiesv3.xsd.
 
  
-
 Alternatively, you can use the following procedure to create an EAP configuration XML:
 
 1.  Follow steps 1 through 7 in the EAP configuration article.
-1.  In the **Microsoft VPN SelfHost Properties** dialog box, select **Microsoft: Smart Card or other Certificate** from the drop-down menu (this selects EAP TLS).
+1.  In the **Microsoft VPN SelfHost Properties** dialog box, select **Microsoft: Smart Card or other Certificate** from the drop-down menu (this value selects EAP TLS).
 
-    ![vpn self host properties window](images/certfiltering1.png)
+    ![vpn self host properties window.](images/certfiltering1.png)
 
     > [!NOTE]
     > For PEAP or TTLS, select the appropriate method and continue following this procedure.
@@ -277,27 +270,20 @@ Alternatively, you can use the following procedure to create an EAP configuratio
 1.  Select the **Properties** button underneath the drop-down menu.
 1.  On the **Smart Card or other Certificate Properties** menu, select the **Advanced** button.
 
-    ![smart card or other certificate properties window](images/certfiltering2.png)
+    ![smart card or other certificate properties window.](images/certfiltering2.png)
 
 1.  On the **Configure Certificate Selection** menu, adjust the filters as needed.
 
-    ![configure certificate window](images/certfiltering3.png)
+    ![configure certificate window.](images/certfiltering3.png)
 
 1.  Select **OK** to close the windows and get back to the main rasphone.exe dialog box.
 1.  Close the rasphone dialog box.
 1.  Continue following the procedure in the EAP configuration article from step 9 to get an EAP TLS profile with appropriate filtering.
 
 > [!NOTE]
-> You can also set all the other applicable EAP Properties through this UI as well. A guide for what these properties mean can be found in the [Extensible Authentication Protocol (EAP) Settings for Network Access](https://technet.microsoft.com/library/hh945104.aspx) article.
-
- 
-
- 
-
- 
+> You can also set all the other applicable EAP Properties through this UI as well. A guide for what these properties mean can be found in the [Extensible Authentication Protocol (EAP) Settings for Network Access](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh945104(v=ws.11)) article.
 
 
+## Related topics
 
-
-
-
+[Configuration service provider reference](configuration-service-provider-reference.md)
