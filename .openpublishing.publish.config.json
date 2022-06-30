@@ -18,41 +18,9 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "hololens",
-      "build_source_folder": "devices/hololens",
-      "build_output_subfolder": "hololens",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "internet-explorer",
       "build_source_folder": "browsers/internet-explorer",
       "build_output_subfolder": "internet-explorer",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "keep-secure",
-      "build_source_folder": "windows/keep-secure",
-      "build_output_subfolder": "keep-secure",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
@@ -165,22 +133,6 @@
       "docset_name": "win-deployment",
       "build_source_folder": "windows/deployment",
       "build_output_subfolder": "win-deployment",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "win-device-security",
-      "build_source_folder": "windows/device-security",
-      "build_output_subfolder": "win-device-security",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
