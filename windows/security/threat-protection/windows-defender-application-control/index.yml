@@ -100,11 +100,11 @@ landingContent:
         links:
           - text: Deployment with MDM
             url: deployment/deploy-windows-defender-application-control-policies-using-intune.md
-          - text: Deployment with MEMCM
+          - text: Deployment with Configuration Manager
             url: deployment/deploy-wdac-policies-with-memcm.md
           - text: Deployment with script and refresh policy
             url: deployment/deploy-wdac-policies-with-script.md
-          - text: Deployment with Group Policy
+          - text: Deployment with group policy
             url: deployment/deploy-windows-defender-application-control-policies-using-group-policy.md
   # Card
   - title: Learn how to monitor WDAC events
