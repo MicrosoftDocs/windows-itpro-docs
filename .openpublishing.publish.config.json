@@ -274,22 +274,6 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "win-threat-protection",
-      "build_source_folder": "windows/threat-protection",
-      "build_output_subfolder": "win-threat-protection",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "win-whats-new",
       "build_source_folder": "windows/whats-new",
       "build_output_subfolder": "win-whats-new",
