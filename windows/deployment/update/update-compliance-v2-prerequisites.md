@@ -8,7 +8,7 @@ author: mestew
 ms.author: mstewart
 ms.collection: M365-analytics
 ms.topic: article
-ms.date: 06/06/2022
+ms.date: 06/30/2022
 ---
 
 # Update Compliance prerequisites
@@ -66,11 +66,15 @@ For more information about what's included in different diagnostic levels, see [
 > [!NOTE]
 > Enrolling into Update Compliance from the [Azure CLI](/cli/azure) or enrolling programmatically another way currently isn't supported. You must manually add Update Compliance to your Azure subscription.
 
-## Microsoft 365 admin center permissions (optional)
+## Microsoft 365 admin center permissions (currently optional)
 
-When you use the [Microsoft admin center software updates (preview) page](update-status-admin-center.md) with Update Compliance, the following permissions are also recommended:
-   - To configure settings for the **Software Updates** page: [Global Admin role](/microsoft-365/admin/add-users/about-admin-roles)
-   - To view the **Software Updates** page: [Global Reader role](/microsoft-365/admin/add-users/about-admin-roles)
+When you use the [Microsoft admin center software updates (preview) page](update-status-admin-center.md) with Update Compliance, the following permissions are also needed:
+
+- To configure settings and view the **Software Updates** page: 
+  - [Global Administrator role](/azure/active-directory/roles/permissions-reference#global-administrator)
+  - [Intune Administrator](/azure/active-directory/roles/permissions-reference#intune-administrator)
+- To view the **Software Updates** page:
+  - [Global Reader role](/azure/active-directory/roles/permissions-reference#global-reader)
 
 ## Log Analytics prerequisites
 
