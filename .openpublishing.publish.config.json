@@ -274,22 +274,6 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "windows-update",
-      "build_source_folder": "windows/update",
-      "build_output_subfolder": "windows-update",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "win-threat-protection",
       "build_source_folder": "windows/threat-protection",
       "build_output_subfolder": "win-threat-protection",
@@ -360,13 +344,13 @@
       "Pdf"
     ]
   },
-  "need_generate_pdf_url_template": true,
   "targets": {
     "Pdf": {
       "template_folder": "_themes.pdf"
     }
   },
   "docs_build_engine": {},
+  "need_generate_pdf_url_template": true,
   "contribution_branch_mappings": {},
   "need_generate_pdf": false,
   "need_generate_intellisense": false
