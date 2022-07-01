@@ -53,19 +53,21 @@ You can use Group Policy to enable Windows Defender Credential Guard. This will 
 
 To enforce processing of the group policy, you can run `gpupdate /force`.
 
-### Enable Windows Defender Credential Guard by using Intune
+### Enable Windows Defender Credential Guard by using Microsoft Endpoint Manager
 
-1. From **Home**, select **Microsoft Intune**.
+1. From **Microsoft Endpoint Manager admin center**, select **Devices**.
 
-1. Select **Device configuration**.
+1. Select **Configuration Profiles**.
 
-1. Select **Profiles** > **Create Profile** > **Endpoint protection** > **Windows Defender Credential Guard**.
+1. Select  **Create Profile** > **Windows 10 and later** > **Settings catalog** > **Create**.
 
-   > [!NOTE]
-   > It will enable VBS and Secure Boot and you can do it with or without UEFI Lock. If you will need to disable Credential Guard remotely, enable it without UEFI lock.
+   1. Configuration settings: In the settings picker select **Device Guard** as category and add the needed settings
+
+> [!NOTE]
+> Enable VBS and Secure Boot and you can do it with or without UEFI Lock. If you will need to disable Credential Guard remotely, enable it without UEFI lock.
 
 > [!TIP]
-> You can also configure Credential Guard by using an account protection profile in endpoint security. For more information, see [Account protection policy settings for endpoint security in Intune](/mem/intune/protect/endpoint-security-account-protection-profile-settings).
+> You can also configure Credential Guard by using an account protection profile in endpoint security. For more information, see [Account protection policy settings for endpoint security in Microsoft Endpoint Manager](/mem/intune/protect/endpoint-security-account-protection-profile-settings).
 
 ### Enable Windows Defender Credential Guard by using the registry
 
