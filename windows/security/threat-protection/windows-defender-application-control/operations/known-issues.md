@@ -10,7 +10,7 @@ ms.reviewer: jogeurte
 ms.author: jogeurte
 ms.manager: jsuther
 manager: dansimp
-ms.date: 04/14/2021
+ms.date: 07/01/2022
 ms.technology: windows-sec
 ms.topic: article
 ms.localizationpriority: medium
@@ -25,8 +25,8 @@ ms.localizationpriority: medium
 - Windows 11
 - Windows Server 2016 and above
 
->[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic covers tips and tricks for admins and known issues with Windows Defender Application Control (WDAC). Test this configuration in your lab before enabling it in production.
 
