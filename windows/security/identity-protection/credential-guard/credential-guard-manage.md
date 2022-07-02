@@ -61,7 +61,7 @@ To enforce processing of the group policy, you can run `gpupdate /force`.
 
 1. Select  **Create Profile** > **Windows 10 and later** > **Settings catalog** > **Create**.
 
-   1. Configuration settings: In the settings picker select **Device Guard** as category and add the needed settings
+   1. Configuration settings: In the settings picker select **Device Guard** as category and add the needed settings.
 
 > [!NOTE]
 > Enable VBS and Secure Boot and you can do it with or without UEFI Lock. If you will need to disable Credential Guard remotely, enable it without UEFI lock.
