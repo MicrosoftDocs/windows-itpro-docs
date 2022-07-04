@@ -33,7 +33,7 @@ Windows 10 (version 1703) introduced a new option for Windows Defender Applicati
 
 ## How does a managed installer work?
 
-Managed installer uses a special rule collection in **AppLocker** to designate binaries that are trusted by your organization as an authorized source for application installation. When one of these trusted binaries runs, Windows monitors the binary's process (and processes it launches) and watches for files being written to disk. As files are written, they are tagged as originating from a managed installer.
+Managed installer uses a special rule collection in **AppLocker** to designate binaries that are trusted by your organization as an authorized source for application installation. When one of these trusted binaries runs, Windows monitors the binary's process (and processes it launches) and watches for files being written to disk. As files are written, they're tagged as originating from a managed installer.
 
 You can then configure WDAC to trust files that are installed by a managed installer by adding the "Enabled:Managed Installer" option to your WDAC policy. When that option is set, WDAC will check for managed installer origin information when determining whether or not to allow a binary to run. As long as there are no deny rules for the binary, WDAC will allow it to run based purely on its managed installer origin.
 
@@ -45,7 +45,7 @@ Users with administrator privileges, or malware running as an administrator user
 
 If a managed installer process runs in the context of a user with standard privileges, then it's possible that standard users or malware running as standard user may be able to circumvent the intent of Windows Defender Application Control.
 
-Some application installers may automatically run the application at the end of the installation process. If this happens when the installer is run by a managed installer, then the managed installer's heuristic tracking and authorization will extend to all files that are created during the first run of the application. This could result in unintentional authorization of an executable. To avoid that, ensure that the method of application deployment that is used as a managed installer limits running applications as part of installation.
+Some application installers may automatically run the application at the end of the installation process. If this execution of the application happens when the installer is run by a managed installer, then the managed installer's heuristic tracking and authorization will extend to all files that are created during the first run of the application. This extension could result in unintentional authorization of an executable. To avoid that, ensure that the method of application deployment that is used as a managed installer limits running applications as part of installation.
 
 ## Known limitations with managed installer
 
@@ -66,11 +66,11 @@ To turn on managed installer tracking, you must:
 
 ### Create and deploy an AppLocker policy that defines your managed installer rules and enables services enforcement for executables and DLLs
 
-Currently, neither the AppLocker policy creation UI in GPO Editor nor the PowerShell cmdlets allow for directly specifying rules for the Managed Installer rule collection. However, you can use an XML or text editor to convert an EXE rule collection policy into a ManagedInstaller rule collection.
+Currently, both the AppLocker policy creation UI in GPO Editor and the PowerShell cmdlets allow for directly specifying rules for the Managed Installer rule collection. However, you can use an XML or text editor to convert an EXE rule collection policy into a ManagedInstaller rule collection.
 > [!NOTE]
 > Only EXE file types can be designated as managed installers.
 
-1. Use [New-AppLockerPolicy](/powershell/module/applocker/new-applockerpolicy?view=win10-ps&preserve-view=true) to make an EXE rule for the file you are designating as a managed installer. This example creates a rule for Microsoft's Intune Management Extension using the Publisher rule type, but any AppLocker rule type can be used. You may need to reformat the output for readability.
+1. Use [New-AppLockerPolicy](/powershell/module/applocker/new-applockerpolicy?view=win10-ps&preserve-view=true) to make an EXE rule for the file you're designating as a managed installer. This example creates a rule for Microsoft's Intune Management Extension using the Publisher rule type, but any AppLocker rule type can be used. You may need to reformat the output for readability.
 
     ```powershell
     Get-ChildItem ${env:ProgramFiles(x86)}'\Microsoft Intune Management Extension\Microsoft.Management.Services.IntuneWindowsAgent.exe' | Get-AppLockerFileInformation | New-AppLockerPolicy -RuleType Publisher -User Everyone -Xml > AppLocker_MI_PS_ISE.xml
@@ -125,7 +125,7 @@ Currently, neither the AppLocker policy creation UI in GPO Editor nor the PowerS
     </RuleCollection>
     ```
 
-4. Verify your AppLocker policy. The following example shows a complete AppLocker policy that sets Configuration Manager and Microsoft Endpoint Manager Intune as managed installers. Only those AppLocker rule collections that have actual rules defined are included in the final XML. This ensures the policy will merge successfully on devices which may already have an AppLocker policy in place.
+4. Verify your AppLocker policy. The following example shows a complete AppLocker policy that sets Configuration Manager and Microsoft Endpoint Manager Intune as managed installers. Only those AppLocker rule collections that have actual rules defined are included in the final XML. This condition-based inclusion ensures the policy will merge successfully on devices that may already have an AppLocker policy in place.
 
     ```xml
     <AppLockerPolicy Version="1">
@@ -205,7 +205,7 @@ Currently, neither the AppLocker policy creation UI in GPO Editor nor the PowerS
 ## Enable the managed installer option in WDAC policy
 
 In order to enable trust for the binaries laid down by managed installers, the "Enabled: Managed Installer" option must be specified in your WDAC policy.
-This can be done by using the [Set-RuleOption cmdlet](/powershell/module/configci/set-ruleoption) with Option 13.
+This setting can be defined by using the [Set-RuleOption cmdlet](/powershell/module/configci/set-ruleoption) with Option 13.
 
 Below are steps to create a WDAC policy that allows Windows to boot and enables the managed installer option.
 
@@ -232,7 +232,7 @@ Below are steps to create a WDAC policy that allows Windows to boot and enables 
 
 ## Remove Managed Installer feature
 
-To remove the Managed Installer feature from the device, you will need to remove the Managed Installer AppLocker policy from the device by following the instructions at [Delete an AppLocker rule: Clear AppLocker policies on a single system or remote systems](applocker/delete-an-applocker-rule.md#to-clear-applocker-policies-on-a-single-system-or-remote-systems).
+To remove the Managed Installer feature from the device, you'll need to remove the Managed Installer AppLocker policy from the device by following the instructions at [Delete an AppLocker rule: Clear AppLocker policies on a single system or remote systems](applocker/delete-an-applocker-rule.md#to-clear-applocker-policies-on-a-single-system-or-remote-systems).
 
 ## Related articles
 
