@@ -27,10 +27,10 @@ Using these APIs, developer partners and the developer community can use [Window
 
 Users of these apps or sites can use any browser that supports WebAuthn Windows 10 APIs for password-less authentication. The native Windows 10 WebAuthn APIs are currently supported by Microsoft Edge on Windows 10 1809 or later and on the latest versions of other browsers. No matter which browser they use, they'll have a familiar and consistent experience on Windows 10, no matter which browser they use.
 
-Developers of FIDO2 authentication keys should use the new Windows 10 APIs, to enable these scenarios in a consistent way for users.
- Moreover, this enables the use of all the transports available per FIDO2 specifications - USB, NFC, and BLE
- without having to deal with the interaction and management overhead. 
-This also implies browsers or apps on Windows 10 will no longer have direct access to above transports for FIDO-related messaging.
+Developers should use the new Windows 10 APIs to support FIDO2 authentication keys in a consistent way for users. Moreover, developers can use all the transports that are available per FIDO2 specifications (USB, NFC, and BLE) without having to deal with the interaction and management overhead.
+
+> [!NOTE]  
+> When these APIs are in use, Windows 10 browsers or apps don't have direct access to the FIDO2 transports for FIDO-related messaging.
 
 ## Where can developers learn more?
 
