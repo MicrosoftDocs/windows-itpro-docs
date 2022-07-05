@@ -59,10 +59,10 @@ You can find more information in the [Microsoft Product Terms](https://www.micro
 
 ## How the upgrade process works
 
-IT admins with access to the VLSC or the Microsoft 365 Admin Center, can find their MAK for Windows Education and trigger an upgrade via Mobile Device Management or manually on devices.
+IT admins with access to the VLSC or the Microsoft 365 Admin Center, can find their MAK for Windows Education and trigger an upgrade using Mobile Device Management or manually on devices.
 
 > [!WARNING]
-> The MAK key is highly sensitive and should always be protected. Only authorized staff should be given access to the key and it should never be distributed to students or broadly to your organization in documentation or emails.
+> The MAK is highly sensitive and should always be protected. Only authorized staff should be given access to the key and it should never be distributed to students or broadly to your organization in documentation or emails.
 
 ### Recommended methods for using a MAK
 
@@ -79,7 +79,7 @@ It’s critical that MAKs are protected whenever they're used. The following pro
 
 ## Downgrading, resetting, reinstalling and graduation rights
 
-After upgrading from Windows Home to Windows Education there are some considerations for what happens during downgrade, reset or re-install of the operating system.
+After upgrading from *Windows Home* to *Windows Education* there are some considerations for what happens during downgrade, reset or re-install of the operating system.
 
 The table below highlights the differences by upgrade product key type:
 
@@ -90,7 +90,7 @@ The table below highlights the differences by upgrade product key type:
 
 ### Downgrade
 
-It is not possible to downgrade to Windows Home from Windows Education without reinstalling Windows.
+It is not possible to downgrade to *Windows Home* from *Windows Education* without reinstalling Windows.
 
 ### Reset
 
@@ -114,7 +114,7 @@ These steps provide instructions on how to use Microsoft Intune to upgrade devic
 
 ### Step 1: Create a Windows Home edition filter
 
-These steps configure a filter that will only apply to devices running the Windows Home SKU. This will ensure only devices running *Windows Home edition* are upgraded. For more information about filters, see [Create filters in Microsoft Intune]/mem/intune/fundamentals/filters).
+These steps configure a filter that will only apply to devices running the *Windows Home edition*. This will ensure only devices running *Windows Home edition* are upgraded. For more information about filters, see [Create filters in Microsoft Intune](/mem/intune/fundamentals/filters).
 
 - Start in the [**Microsoft Endpoint Manager admin console**](https://endpoint.microsoft.com)
 - Go to **Tenant Administration** > **Filters**
