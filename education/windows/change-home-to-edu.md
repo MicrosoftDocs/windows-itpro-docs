@@ -40,7 +40,7 @@ Device users can disconnect device management from Settings to prevent further a
 
 ## Why upgrade personal devices from Windows Home to Windows Education?
 
-Some school institutions want to streamline student onboarding for personal devices using Mobile Device Management (MDM). Typical device management activities include installing certificates, configuring WiFi profiles and installing applications. On Windows, device management activities are performed using Configuration Service Providers (CSPs). Some CSPs aren't available on Windows Home, which can limit the management capabilities. Some of the CSPs not availble in Windows Home that can affect typical student onboarding are:
+Some school institutions want to streamline student onboarding for personal devices using Mobile Device Management (MDM). Typical device management activities include installing certificates, configuring WiFi profiles and installing applications. On Windows, device management activities are performed using Configuration Service Providers (CSPs). Some CSPs aren't available on Windows Home, which can limit the management capabilities. Some of the CSPs not available in Windows Home that can affect typical student onboarding are:
 
 - [EnterpriseDesktopAppManagement](/windows/client-management/mdm/enterprisemodernappmanagement-csp) - which enables deployment of Windows installer or Win32 applications.
 - [DeliveryOptimization](/windows/client-management/mdm/policy-csp-deliveryoptimization) - which enables configuration of Delivery Optimization.
