@@ -49,6 +49,10 @@ For communication between clients and the Delivery Optimization cloud service: *
 - *.download.windowsupdate.com
 - *.windowsupdate.com
 
+**For group peers across multiple NATs** (Teredo):
+
+- win1910.ipv6.microsoft.com
+
 ## Does Delivery Optimization use multicast?
 
 No. It relies on the cloud service for peer discovery, resulting in a list of peers and their IP addresses. Client devices then connect to their peers to obtain download files over TCP/IP.
