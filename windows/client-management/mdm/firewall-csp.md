@@ -97,6 +97,7 @@ Firewall
 ----------------Protocol
 ----------------LocalPortRanges
 ----------------RemotePortRanges
+----------------IcmpTypesAndCodes
 ----------------LocalAddressRanges
 ----------------RemoteAddressRanges
 ----------------Description
@@ -339,6 +340,13 @@ Value type is string. Supported operations are Add, Get, Replace, and Delete.
 Comma separated list of ranges, For example, 100-120,200,300-320.
 If not specified, the default is All.
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
+
+
+<a href="" id="icmptypesandcodes"></a>**FirewallRules/_FirewallRuleName_/IcmpTypesAndCodes**
+ICMP types and codes applicable to the firewall rule. To specify all ICMP types and codes, use the “*” character. For specific ICMP types and codes, use the “:” character to separate the type and code. For example, 3:4, 1:*. The “*” character can be used to represent any code. The “*” character cannot be used to specify any type, examples such as “*:4” or “*:*” are invalid.
+If not specified, the default is All. 
+Value type is string. Supported operations are Add, Get, Replace, and Delete.
+
 
 <a href="" id="localaddressranges"></a>**FirewallRules/*FirewallRuleName*/LocalAddressRanges**
 Comma-separated list of local addresses covered by the rule. The default value is "*". Valid tokens include:
