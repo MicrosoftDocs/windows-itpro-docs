@@ -131,7 +131,7 @@ These steps configure a filter that will only apply to devices running the Windo
 
     > [!NOTE]
     > Ensure you’ve selected OR as the operator in the right And/Or column
-
+    
     :::image type="content" source="images/change-home-to-edu-windows-home-edition-intune-filter.png" alt-text="Example of configuring the Windows Home filter":::
 
 - Optionally select scope tags as required
@@ -154,6 +154,9 @@ These steps create and assign a Windows edition upgrade policy. For more informa
   - Change **Edition to upgrade** to **Windows 10/11 Education**
   - In the **Product Key**, enter your *Windows 10/11 Education MAK*
   - Select **Next**
+  
+    :::image type="content" source="images/change-home-to-edu-windows-edition-upgrade-policy.png" alt-text="Example of configuring the Windows upgrade policy in Microsoft Intune":::
+    
 - Optionally select scope tags as required and select **Next**
 - On the **assignments** screen;
   - Select **Add all devices**
@@ -164,8 +167,6 @@ These steps create and assign a Windows edition upgrade policy. For more informa
   - Select the *Windows Home edition* filter you created earlier
   - Choose **Select** to save the filter selection
   - Select **Next** to progress to the next screen
-  
-  :::image type="content" source="images/change-home-to-edu-windows-edition-upgrade-policy.png" alt-text="Example of configuring the Windows upgrade policy in Microsoft Intune":::
 - Don't configure any applicability rules and select **next**
 - Review your settings and select **Create**
 
