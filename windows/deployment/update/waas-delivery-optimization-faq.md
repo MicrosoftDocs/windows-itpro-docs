@@ -37,7 +37,9 @@ For Delivery Optimization to successfully use the proxy, you should set up the p
 
 ## What hostnames should I allow through my firewall to support Delivery Optimization?
 
-For communication between clients and the Delivery Optimization cloud service: **\*.do.dsp.mp.microsoft.com**.
+**For communication between clients and the Delivery Optimization cloud service**: 
+
+- *.do.dsp.mp.microsoft.com
 
 **For Delivery Optimization metadata**:
 
@@ -49,7 +51,7 @@ For communication between clients and the Delivery Optimization cloud service: *
 - *.download.windowsupdate.com
 - *.windowsupdate.com
 
-**For group peers across multiple NATs** (Teredo):
+**For group peers across multiple NATs (Teredo)**:
 
 - win1910.ipv6.microsoft.com
 
