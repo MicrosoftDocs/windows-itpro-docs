@@ -182,7 +182,7 @@ The edition upgrade policy will now apply to all existing and new Windows Home e
 
 ### My MAK key has run out of activations, how do I request a new one?
 
-- Increases to MAK Activation quantity can be requested via Web Form and may be granted by exception. 
+- Increases to MAK Activation quantity can be requested by contacting [VLSC support](/licensing/contact-us) and may be granted by exception. 
 - To do this you must have VLSC Administrator, Key Administrator, or Key Viewer permissions and provide the following information:
   - Agreement/Enrollment Number or License ID and Authorization.
   - Product Name (includes version and edition).
