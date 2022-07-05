@@ -161,8 +161,10 @@ These steps create and assign a Windows edition upgrade policy. For more informa
 - On the **assignments** screen;
   - Select **Add all devices**
   - Next to **All devices**, select **Edit filter**
+  
       > [!NOTE]
       > You can also target other security groups that contain a smaller scope of users or devices and apply the filter rather than All devices.
+      
   - Select to **Include filtered devices in assignment**
   - Select the *Windows Home edition* filter you created earlier
   - Choose **Select** to save the filter selection
