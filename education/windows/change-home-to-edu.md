@@ -40,7 +40,7 @@ Some school institutions want to streamline student onboarding for personal devi
 - [EnterpriseDesktopAppManagement](/windows/client-management/mdm/enterprisemodernappmanagement-csp) - which enables deployment of Windows installer or Win32 applications.
 - [DeliveryOptimization](/windows/client-management/mdm/policy-csp-deliveryoptimization) - which enables configuration of Delivery Optimization.
 
-A full list is available at [Configuration service provider reference](/windows/client-management/mdm/configuration-service-provider-reference). For more information about enrolling devices into Microsoft Intune, see [Deployment guide: Enroll Windows devices in Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-windows)
+A full list is available at [Configuration service provider reference](/windows/client-management/mdm/configuration-service-provider-reference). For more information about enrolling devices into Microsoft Intune, see [Deployment guide: Enroll Windows devices in Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-windows).
 
 ## Requirements for using a MAK to upgrade from Windows Home to Windows Education
 
@@ -117,7 +117,7 @@ These steps will configure a Windows edition upgrade policy and target all Windo
 
 Filters allow you to target the all devices group but to a subset of devices using a filter. In this case the filter will be based on the operating system SKU. This will ensure we only upgrade devices that are running Windows Home edition and avoid upgrading devices that are running Windows Pro/Pro EDU edition which can upgrade using [Windows 10/11 Subscription Activation](/windows/deployment/windows-10-subscription-activation).
 
-- Start in the **Microsoft Endpoint Manager admin console**
+- Start in the [**Microsoft Endpoint Manager admin console**](https://endpoint.microsoft.com)
 - Go to **Tenant Administration** > **Filters**
 - Click **Create**
   - Create a name for the filter (for example *Windows Home edition*)
@@ -140,7 +140,7 @@ Filters allow you to target the all devices group but to a subset of devices usi
 
 ### Step 2: Create a Windows edition upgrade policy
 
-- Start in the **Microsoft Endpoint Manager admin console**
+- Start in the [**Microsoft Endpoint Manager admin console**](https://endpoint.microsoft.com)
 - Select **Devices** > **Configuration profiles**
 - Select **Create profile**
   - Select the **Platform** as **Windows 10 or later**
