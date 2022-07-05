@@ -65,6 +65,8 @@
       href: s-mode-switch-to-edu.md
     - name: Change to Windows 10 Pro Education from Windows 10 Pro
       href: change-to-pro-education.md
+    - name: Upgrade Windows Home to Windows Education on personal devices using volume licensing
+      href: change-home-to-edu.md
     - name: Chromebook migration guide
       href: chromebook-migration-guide.md
     - name: Change history for Windows 10 for Education
