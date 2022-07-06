@@ -59,9 +59,12 @@ sections:
       - question: Can Autopatch customers individually approve or deny devices?
         answer: |
           No you can't individually approve or deny devices. Once a device is registered with Windows Autopatch, updates are rolled out to the devices according to its ring assignment. Individual device level control isn't supported.
-      - question: Does Autopatch on Widows 365 Cloud PCs have any feature difference from a physical device?
+      - question: Does Autopatch on Windows 365 Cloud PCs have any feature difference from a physical device?
         answer: |
           No, Windows 365 Enterprise Cloud PC's support all features of Windows Autopatch. For more information, see [Virtual devices](/windows/deployment/windows-autopatch/deploy/windows-autopatch-register-devices#virtual-devices).
+      - question: Do my Cloud PCs appear any differently in the Windows Autopatch admin center?
+        answer: |
+          Cloud PC displays the model as the license type you have provisioned. For more information, see [Virtual devices](/windows/deployment/windows-autopatch/deploy/windows-autopatch-register-devices#virtual-devices).
       - question: Can I run Autopatch on my Windows 365 Business Workloads?
         answer: |
           No. Autopatch is only available on enterprise workloads. For more information, see [Virtual devices](/windows/deployment/windows-autopatch/deploy/windows-autopatch-register-devices#virtual-devices).
