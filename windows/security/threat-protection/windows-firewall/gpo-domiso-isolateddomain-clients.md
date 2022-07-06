@@ -1,6 +1,6 @@
 ---
 title: GPO\_DOMISO\_IsolatedDomain\_Clients (Windows)
-description: Author this GPO by using the Windows Defender Firewall with Advanced Security interface in the Group Policy editing tools.
+description: Author this GPO by using Windows Defender Firewall with Advanced Security interface in the Group Policy editing tools.
 ms.reviewer: 
 ms.author: dansimp
 ms.prod: m365-security
