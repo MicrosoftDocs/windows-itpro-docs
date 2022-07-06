@@ -94,7 +94,8 @@ You can also use Group Policy to manage access to Microsoft Store.
 4.  On the **Turn off the Store application** setting page, click **Enabled**, and then click **OK**.
 
 > [!Important]
-> Enabling **Turn off the Store application** policy turns off app updates from Microsoft Store.  
+> Enabling **Turn off the Store application** policy turns off app updates from Microsoft Store.  In order to allow for updating of store apps you need to set the group policy "Turn off automatic download and install of Updates" to disabled.  This will allow for inbox store apps to get updated while continue blocking access to the store
+
 
 ## Show private store only using Group Policy 
 
