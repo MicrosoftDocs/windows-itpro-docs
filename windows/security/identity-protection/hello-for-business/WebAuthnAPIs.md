@@ -32,10 +32,6 @@ Developers should use the new Windows 10 APIs to support FIDO2 authentication ke
 > [!NOTE]  
 > When these APIs are in use, Windows 10 browsers or apps don't have direct access to the FIDO2 transports for FIDO-related messaging.
 
-## Where can developers learn more?
-
-The new Windows 10 APIs are documented on [GitHub](https://github.com/Microsoft/webauthn)
-
 ## All about FIDO2, CTAP2 and WebAuthn
 
 To understand how FIDO2 authenticators work, review the following two specifications:
@@ -126,3 +122,7 @@ Here's an approximate layout of where the Microsoft bits go:
 - **Platform: Windows 10**. Windows 10 hosts the Win32 Platform WebAuthn APIs.
 
 - **Roaming Authenticators**. You might notice that there's no “Microsoft” roaming authenticator. That's because there's already a strong ecosystem of products that specialize in strong authentication, and every one of our customers (whether corporations or individuals) have different requirements for security, ease of use, distribution, and account recovery. To see the ever-growing list of FIDO2 certified authenticators, you can find that at [FIDO Certified Products](https://fidoalliance.org/certification/fido-certified-products/). The list includes built-in authenticators, roaming authenticators, and even chip manufacturers who have certified designs.
+
+## Where can developers learn more?
+
+The new Windows 10 WebAuthn APIs are documented in the [Microsoft/webauthn](https://github.com/Microsoft/webauthn) Github repo.

@@ -21,6 +21,8 @@
       href: hello-how-it-works-provisioning.md
     - name: Authentication
       href: hello-how-it-works-authentication.md
+    - name: WebAuthn APIs
+      href: webauthnapis.md
 - name: How-to Guides
   items:
   - name: Windows Hello for Business Deployment Overview
