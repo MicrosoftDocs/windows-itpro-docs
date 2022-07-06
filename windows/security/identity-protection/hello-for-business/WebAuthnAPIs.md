@@ -90,7 +90,7 @@ FIDO2 authenticators have already implemented and WebAuthn relying parties might
 - Keys for multiple accounts can be stored per relying party
 - Client PIN
 - Location (the authenticator returns a location)
-- [Hash-based Message Authentication Code (HMAC)-secret](./dotnet/api/system.security.cryptography.hmac.md) (enables offline scenarios)
+- [Hash-based Message Authentication Code (HMAC)-secret](/dotnet/api/system.security.cryptography.hmac) (enables offline scenarios)
 
 The following options are cool and might be useful in the future, but haven't been seen in the wild yet:
 
@@ -121,7 +121,7 @@ Here's an approximate layout of where the Microsoft bits go:
 - **WebAuthn client: Microsoft Edge**. Microsoft Edge can handle the user interface for the WebAuthn and CTAP2 features that this article describes, and also supports the AppID extension. Microsoft Edge can interact with both CTAP1 and CTAP2 authenticators, which means that it can create and use both U2F and FIDO2 credentials. However, Microsoft Edge doesn't speak the U2F protocol, so relying parties must use only the WebAuthn specification. Microsoft Edge on Android does't support WebAuthn.
 
   > [!NOTE]  
-  > For authoritative information about Microsoft Edge support for WebAuthn and CTAP, see [Legacy Microsoft Edge developer documentation](./microsoft-edge/dev-guide/windows-integration/web-authentication.md).
+  > For authoritative information about Microsoft Edge support for WebAuthn and CTAP, see [Legacy Microsoft Edge developer documentation](/microsoft-edge/dev-guide/windows-integration/web-authentication).
 
 - **Platform: Windows 10**. Windows 10 hosts the Win32 Platform WebAuthn APIs.
 
