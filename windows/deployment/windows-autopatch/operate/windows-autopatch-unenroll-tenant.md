@@ -1,6 +1,6 @@
 ---
-title: Un-enroll your tenant
-description:  This article explains what this means for your organization and what actions you must take. 
+title: Unenroll your tenant
+description:  This article explains what unenrollment means for your organization and what actions you must take. 
 ms.date: 07/11/2022
 ms.prod: w11
 ms.technology: windows
@@ -12,23 +12,23 @@ manager: dougeby
 msreviewer: hathind
 ---
 
-# Un-enroll your tenant
+# Unenroll your tenant
 
-If you're looking to unenroll your tenant from Windows Autopatch, this article details what this means for your organization and what actions you must take.
+If you're looking to unenroll your tenant from Windows Autopatch, this article details what unenrollment means for your organization and what actions you must take.
 
 > [!IMPORTANT]
-> You must be a Global Administrator to unenroll your tenant.
+> You must be a Global Administrator to un-enroll your tenant.
 
-Un-enrolling from Windows Autopatch requires manual actions from both you and from the Windows Autopatch Service Engineering Team. The Windows Autopatch Service Engineering Team will:  
+Unenrolling from Windows Autopatch requires manual actions from both you and from the Windows Autopatch Service Engineering Team. The Windows Autopatch Service Engineering Team will:  
 
 - Remove Windows Autopatch access to your tenant.
-- Deregister your devices from the Windows Autopatch service. Deregistering your devices from Windows Autopatch will not remove your devices from Intune, Azure AD or Configuration Manager. The Windows Autopatch Service Engineering Team follows the same process and principles as laid out in Deregister a device.
-- Delete all data that we have stored in the Windows Autopatch data storage.
+- Deregister your devices from the Windows Autopatch service. De-registering your devices from Windows Autopatch won't remove your devices from Intune, Azure AD or Configuration Manager. The Windows Autopatch Service Engineering Team follows the same process and principles as laid out in Deregister a device.
+- Delete all data that we've stored in the Windows Autopatch data storage.
 
 > [!NOTE]
 > We will **not** delete any of your customer or Intune data.
 
-## Microsoft's responsibilities during un-enrollment
+## Microsoft's responsibilities during unenrollment
 
 | Responsibility | Description |
 | ----- | ----- |
@@ -37,23 +37,23 @@ Un-enrolling from Windows Autopatch requires manual actions from both you and fr
 | Conditional access policy | Windows Autopatch will remove the Modern Workplace – Secure Workstation conditional access policy. |
 | Microsoft Endpoint Manager roles | Windows Autopatch will remove the Modern Workplace Intune Admin role. |
 
-## Your responsibilities after un-enrolling your tenant
+## Your responsibilities after unenrolling your tenant
 
 | Responsibility | Description |
 | ----- | ----- |
 | Licenses | You're responsible for business continuity after unenrolling from Windows Autopatch. This includes responsibility for licensing renewals and reassignment as deemed appropriate. |
-| Data | Windows Autopatch will not make changes to your data. |
-| Updates | After the Windows Autopatch service is unenrolled, we’ll no longer provide updates to your devices.  You must ensure that your devices continue to receive updates through your own policies to ensure they are secure and up to date. |
+| Data | Windows Autopatch won't make changes to your data. |
+| Updates | After the Windows Autopatch service is unenrolled, we’ll no longer provide updates to your devices.  You must ensure that your devices continue to receive updates through your own policies to ensure they're secure and up to date. |
 | Optional Windows Autopatch configuration | Windows Autopatch won’t remove the configuration policies used to enable updates on your devices.  You can take the responsibilities for these policies following tenant unenrollment.  If you don’t wish to use these policies for your devices after unenrollment, you may safely delete them. |
 
-## Un-enroll from Windows Autopatch
+## Unenroll from Windows Autopatch
 
 **To un-enroll from Windows Autopatch:**
 
 1. [Submit a support request](windows-autopatch-support-request.md) and request to unenroll from the Windows Autopatch service.
-1. The Windows Autopatch Service Engineering Team will communicate with your IT Administrator to confirm your intent to un-enroll from the service.  
-1. You will have 14 days to review and confirm the communication sent by the Windows Autopatch Service Engineering Team.
+1. The Windows Autopatch Service Engineering Team will communicate with your IT Administrator to confirm your intent to unenroll from the service.  
+1. You'll have 14 days to review and confirm the communication sent by the Windows Autopatch Service Engineering Team.
 1. The Windows Autopatch Service Engineering Team can proceed sooner than 14 days if your confirmation arrives sooner.
-1. The Windows Autopatch Service Engineering Team will proceed with the removal of all items listed under [Microsoft responsibilities during un-enrollment](#microsofts-responsibilities-during-un-enrollment).
-1. The Windows Autopatch Service Engineering Team will inform you when un-enrollment is complete.
-1. You’re responsible for the items listed under [Your responsibilities after un-enrolling your tenant](#your-responsibilities-after-un-enrolling-your-tenant).
+1. The Windows Autopatch Service Engineering Team will proceed with the removal of all items listed under [Microsoft responsibilities during unenrollment](#microsofts-responsibilities-during-un-enrollment).
+1. The Windows Autopatch Service Engineering Team will inform you when unenrollment is complete.
+1. You’re responsible for the items listed under [Your responsibilities after unenrolling your tenant](#your-responsibilities-after-un-enrolling-your-tenant).
