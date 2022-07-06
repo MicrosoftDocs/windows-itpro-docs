@@ -19,28 +19,20 @@ ms.reviewer:
 
 Passwords leave your customers vulnerable. When you use the new WebAuthn APIs in your sites and apps, your customers can use passwordless authentication.
 
-Microsoft has long been a proponent of passwordless authentication. While we work towards that goal, we'd like to introduce you to the latest Windows 10 (version 1903) W3C/FIDO2 Win32 WebAuthn platform APIs. 
+Microsoft has long been a proponent of passwordless authentication. While we work towards that goal, we'd like to introduce you to the latest Windows 10 (version 1903) W3C/FIDO2 Win32 WebAuthn platform APIs.
 
 ## What does this mean?
 
 Using these APIs, developer partners and the developer community can use [Windows Hello](./index.yml) or [FIDO2 Security Keys](./microsoft-compatible-security-key.md) to implement passwordless multi-factor authentication for their applications on Windows devices.
 
-Users of these apps or sites can use any browser that supports WebAuthn Windows 10 APIs for passwordless authentication. The native Windows 10 WebAuthn APIs are currently supported by Microsoft Edge on Windows 10 1809 or later and on the latest versions of other browsers. No matter which browser they use, they'll have a familiar and consistent experience on Windows 10, no matter which browser they use.
+Users of these apps or sites can use any browser that supports Windows 10 WebAuthn APIs for passwordless authentication. These APIs are currently supported by Microsoft Edge on Windows 10 1809 or later and on the latest versions of other browsers. Users will have a familiar and consistent experience on Windows 10, no matter which browser they use.
 
 Developers should use the new Windows 10 APIs to support FIDO2 authentication keys in a consistent way for users. Moreover, developers can use all the transports that are available per FIDO2 specifications (USB, NFC, and BLE) without having to deal with the interaction and management overhead.
 
 > [!NOTE]  
 > When these APIs are in use, Windows 10 browsers or apps don't have direct access to the FIDO2 transports for FIDO-related messaging.
 
-## All about FIDO2, CTAP2 and WebAuthn
-
-To understand how FIDO2 authenticators work, review the following two specifications:
-
-- [Web Authentication: An API for accessing Public Key Credentials](https://www.w3.org/TR/webauthn/), which is available at the W3C site. This document is known as the WebAuthn spec.
-
-- [Client to Authenticator Protocol (CTAP)](https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-client-to-authenticator-protocol-v2.0-id-20180227.html), which is available at the [FIDO Alliance](http://fidoalliance.org/) site. (where hardware and platform folks have joined to solve the problem of Fast IDentity Online).
-
-### The Big Picture
+## The Big Picture
 
 CTAP2 and WebAuthn define an abstraction layer that creates an ecosystem for strongly authenticated credentials. In this ecosystem, any interoperable client (such as a native app or browser) that runs on a given client device uses a standardized method to interact with any interoperable authenticator. Such authenticators include platform authenticators (which are built into the client device) or roaming authenticators (which connect to the client device by using USB, BLE, or NFC connections).
 
@@ -77,7 +69,7 @@ A combined WebAuthn/CTAP2 dance includes the following cast of characters:
 
 Many relying parties and clients can interact with many authenticators on a single client device. A user can install multiple browsers that support WebAuthn, and might simultaneously have access to a built-in fingerprint reader, a plugged-in security key, and a BLE-enabled mobile app.
 
-### Interoperability
+## Interoperability
 
 Before there was WebAuthn and CTAP2, there was U2F and CTAP1. U2F is the FIDO Alliance’s universal second-factor specification and there are many authenticators that speak CTAP1 and manage U2F credentials. WebAuthn was designed to be interoperable with CTAP1 Authenticators. A relying party that uses WebAuthn can still use U2F credentials, as long as the relying party doesn't require FIDO2-only functionality.
 
@@ -95,7 +87,7 @@ The following options are cool and might be useful in the future, but haven't be
 - User verification method (the authenticator returns the exact method)
 - Biometric performance bounds (the relying party can specify acceptable false acceptance and false rejection rates)
 
-### Microsoft Implementation
+## Microsoft Implementation
 
 The Microsoft FIDO2 implementation has been years in the making. Software and services are implemented independently as standards-compliant entities. As of the Windows 10 October 2018 release, all Microsoft components use the latest WebAuthn Candidate Release. It's a stable release that's not expected to normatively change before the specification is finally ratified. Because Microsoft is among the first in the world to deploy FIDO2, some combinations of popular non-Microsoft components won’t be interoperable yet.
 
@@ -125,4 +117,8 @@ Here's an approximate layout of where the Microsoft bits go:
 
 ## Where can developers learn more?
 
-The new Windows 10 WebAuthn APIs are documented in the [Microsoft/webauthn](https://github.com/Microsoft/webauthn) Github repo.
+The new Windows 10 WebAuthn APIs are documented in the [Microsoft/webauthn](https://github.com/Microsoft/webauthn) Github repo. To understand how FIDO2 authenticators work, review the following two specifications:
+
+- [Web Authentication: An API for accessing Public Key Credentials](https://www.w3.org/TR/webauthn/), which is available at the W3C site. This document is known as the WebAuthn spec.
+
+- [Client to Authenticator Protocol (CTAP)](https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-client-to-authenticator-protocol-v2.0-id-20180227.html), which is available at the [FIDO Alliance](http://fidoalliance.org/) site. (where hardware and platform folks have joined to solve the problem of Fast IDentity Online).
