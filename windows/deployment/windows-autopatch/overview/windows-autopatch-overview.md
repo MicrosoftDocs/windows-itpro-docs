@@ -1,7 +1,7 @@
 ---
-title: What is Windows Autopatch? (preview)
+title: What is Windows Autopatch?
 description:  Details what the service is and shortcuts to articles
-ms.date: 05/30/2022
+ms.date: 07/11/2022
 ms.prod: w11
 ms.technology: windows
 ms.topic: conceptual
@@ -12,10 +12,7 @@ manager: dougeby
 msreviewer: hathind
 ---
 
-# What is Windows Autopatch? (preview)
-
-> [!IMPORTANT]
-> **Windows Autopatch is in public preview**. It's actively being developed and may not be complete. You can test and use these features in production environments and [provide feedback](https://go.microsoft.com/fwlink/?linkid=2195593) or start a discussion in our [Windows Autopatch Tech Community](https://aka.ms/Community/WindowsAutopatch).
+# What is Windows Autopatch?
 
 Windows Autopatch is a cloud service that automates Windows, Microsoft 365 Apps for enterprise, Microsoft Edge, and Microsoft Teams updates to improve security and productivity across your organization.
 

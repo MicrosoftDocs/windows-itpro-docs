@@ -14,12 +14,14 @@ msreviewer: hathind
 
 # Operating with Windows Autopatch
 
-This section includes information about Windows Autopatch update management, types of updates managed by Windows Autopatch, and how to contact the Windows Autopatch Service Engineering Team:
+This section includes information about Windows Autopatch update management, types of updates managed by Windows Autopatch, how to contact the Windows Autopatch Service Engineering Team, and un-enrolling your tenant:
 
 - [Update management](windows-autopatch-update-management.md)
 - [Windows quality updates](windows-autopatch-wqu-overview.md)
+- [Windows feature updates](windows-autopatch-fu-overview.md)
 - [Microsoft 365 Apps for enterprise updates](windows-autopatch-microsoft-365-apps-enterprise.md)
 - [Microsoft Edge updates](windows-autopatch-edge.md)
 - [Microsoft Teams updates](windows-autopatch-teams.md)
 - [Deregister devices](windows-autopatch-deregister-devices.md)
 - [Submit a support request](windows-autopatch-support-request.md)
+- [Un-enroll your tenant](windows-autopatch-unenroll-tenant.md)
