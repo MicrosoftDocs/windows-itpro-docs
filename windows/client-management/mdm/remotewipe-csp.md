@@ -42,7 +42,7 @@ RemoteWipe
 ```
 
 <a href="" id="dowipe"></a>**doWipe**  
-Exec on this node starts a remote reset of the device. A remote reset is equivalent to running "Reset this PC > Remove everything" from the Settings app, with **Clean Data** set to No and **Delete Files** set to Yes. The return status code indicates whether the device accepted the Exec command. If a doWipe reset is started and then interrupted, the PC will attempt to roll-back to a the pre-reset state. If the PC can't be rolled-back, the recovery environment will take no additional actions and the PC could be in an unusable state and Windows will have to be reinstalled.
+Exec on this node starts a remote reset of the device. A remote reset is equivalent to running "Reset this PC > Remove everything" from the Settings app, with **Clean Data** set to No and **Delete Files** set to Yes. The return status code indicates whether the device accepted the Exec command. If a doWipe reset is started and then interrupted, the PC will attempt to roll-back to the pre-reset state. If the PC can't be rolled-back, the recovery environment will take no additional actions and the PC could be in an unusable state and Windows will have to be reinstalled.
 
 When used with OMA Client Provisioning, a dummy value of "1" should be included for this element.
 
