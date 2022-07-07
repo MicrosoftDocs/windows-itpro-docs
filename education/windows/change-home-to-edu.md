@@ -34,7 +34,7 @@ These methods apply to devices with *Windows Home* installed, institution-owned 
 
 ## User Notifications
 
-Users aren't notified their device has been or will be upgraded to Windows Education when using MDM. It's the responsibility of the institution to notify their users. Instituions should notify their users that MDM will initiate an upgrade to Windows Education and this will give the institution extra capabilities, such as installing applications.
+Users aren't notified their device has been or will be upgraded to Windows Education when using MDM. It's the responsibility of the institution to notify their users. Institutions should notify their users that MDM will initiate an upgrade to Windows Education and this upgrade will give the institution extra capabilities, such as installing applications.
 
 Device users can disconnect MDM in the Settings app to prevent further actions from being taken on their personal device. For instructions on disconnecting from MDM, see [Remove your Windows device from management](/mem/intune/user-help/unenroll-your-device-from-intune-windows).
 
@@ -79,18 +79,18 @@ For a full list of methods to perform a Windows edition upgrade and more details
 
 ## Downgrading, resetting, reinstalling and graduation rights
 
-After upgrading from *Windows Home* to *Windows Education* there are some considerations for what happens during downgrade, reset or re-install of the operating system.
+After upgrading from *Windows Home* to *Windows Education* there are some considerations for what happens during downgrade, reset or reinstall of the operating system.
 
 The table below highlights the differences by upgrade product key type:
 
-| Product Key Type | Downgrade (in-place) | Reset | Student re-install |
+| Product Key Type | Downgrade (in-place) | Reset | Student reinstall |
 |-|-|-|-|
 | VLSC | No | Yes | No |
 | Kivuto OnTheHub | No | Yes | Yes |
 
 ### Downgrade
 
-It is not possible to downgrade to *Windows Home* from *Windows Education* without reinstalling Windows.
+It isn't possible to downgrade to *Windows Home* from *Windows Education* without reinstalling Windows.
 
 ### Reset
 
@@ -98,7 +98,7 @@ If the computer is reset, Windows Education will be retained.
 
 ### Reinstall
 
-The Education upgrade does not apply to reinstalling Windows. Use the original Windows edition when reinstalling Windows. The original product key or [firmware-embedded product key](#what-is-a-firmware-embedded-activation-key) will be used to activate Windows.
+The Education upgrade doesn't apply to reinstalling Windows. Use the original Windows edition when reinstalling Windows. The original product key or [firmware-embedded product key](#what-is-a-firmware-embedded-activation-key) will be used to activate Windows.
 
 If students require a *Windows Pro Education* key that can work on a new install of Windows, they should use [Kivuto OnTheHub](http://onthehub.com) to request a key prior to graduation.
 
@@ -114,7 +114,7 @@ These steps provide instructions on how to use Microsoft Intune to upgrade devic
 
 ### Step 1: Create a Windows Home edition filter
 
-These steps configure a filter that will only apply to devices running the *Windows Home edition*. This will ensure only devices running *Windows Home edition* are upgraded. For more information about filters, see [Create filters in Microsoft Intune](/mem/intune/fundamentals/filters).
+These steps configure a filter that will only apply to devices running the *Windows Home edition*. This filter will ensure only devices running *Windows Home edition* are upgraded. For more information about filters, see [Create filters in Microsoft Intune](/mem/intune/fundamentals/filters).
 
 - Start in the [**Microsoft Endpoint Manager admin console**](https://endpoint.microsoft.com)
 - Go to **Tenant Administration** > **Filters**
@@ -193,13 +193,13 @@ You can check the Windows versions of managed devices in the Microsoft Endpoint 
 Increases to MAK Activation quantity can be requested by contacting [VLSC support](/licensing/contact-us) and may be granted by exception. A request can be made by accounts with the VLSC Administrator, Key Administrator, or Key Viewer permissions. The request should include the following information:
 - Agreement/Enrollment Number or License ID and Authorization.
 - Product Name (includes version and edition).
-- Last 5 characters of the product key.
+- Last five characters of the product key.
 - The number of host activations required.
 - Business Justification or Reason for Deployment.
 
 ### What is a firmware-embedded activation key?
 
-A firmware-embedded activation key is a Windows product key that is installed into the firmware of your device to allow for easy activation of Windows. To determine if the computer has a firmware-embedded activation key, type the following command at an elevated Windows PowerShell prompt:
+A firmware-embedded activation key is a Windows product key that is installed into the firmware of your device. The embedded key makes it easier to install and activate Windows. To determine if the computer has a firmware-embedded activation key, type the following command at an elevated Windows PowerShell prompt:
 
 ```powershell
 (Get-CimInstance -query 'select * from SoftwareLicensingService').OA3xOriginalProductKey
@@ -207,7 +207,7 @@ A firmware-embedded activation key is a Windows product key that is installed in
 
 If the device has a firmware-embedded activation key, it will be displayed in the output. Otherwise, the device doesn't have a firmware embedded activation key. Most OEM-provided devices designed to run Windows 8 or later will have a firmware-embedded key.
 
-A firmware embedded key is only required to upgrade using Subscription Activation, a MAK upgrade dosn't require the firmware embedded key.
+A firmware embedded key is only required to upgrade using Subscription Activation, a MAK upgrade doesn't require the firmware embedded key.
 
 ### What is a multiple activation key and how does it differ from using KMS, Active Directory based activation or Subscription Activation?
 
