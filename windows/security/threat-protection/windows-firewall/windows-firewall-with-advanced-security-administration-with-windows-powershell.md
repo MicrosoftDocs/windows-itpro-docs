@@ -32,7 +32,7 @@ Windows PowerShell and netsh command references are at the following locations.
 
 ## Scope
 
-This guide doesn't teach you the fundamentals of Windows Defender Firewall, which can be found in [Windows Defender Firewall](windows-firewall-with-advanced-security.md). It doesn't teach the fundamentals of Windows PowerShell, and it assumes that you're familiar with the Windows PowerShell language and the basic concepts of Windows PowerShell. For more info about Windows PowerShell concepts and usage, see the reference topics in the [Additional resources](#additional-resources) section of this guide.
+This guide doesn't teach you the fundamentals of Windows Defender Firewall, which can be found in [Windows Defender Firewall](windows-firewall-with-advanced-security.md). It doesn't teach the fundamentals of Windows PowerShell, and it assumes that you're familiar with the Windows PowerShell language and the basic concepts of Windows PowerShell. For more info about Windows PowerShell concepts and usage, see the reference topics in the [Additional resources](#other-resources) section of this guide.
 
 ## Audience and user requirements
 
