@@ -17,12 +17,12 @@ ms.collection: highpri
 
 ## Overview
 
-Customers with qualifying subscriptions can upgrade both student-owned and institution-owned devices from *Windows Home* to *Windows Education*, which is designed for both the classroom and remote learning. 
+Customers with qualifying subscriptions can upgrade student-owned and institution-owned devices from *Windows Home* to *Windows Education*, which is designed for both the classroom and remote learning. 
 
 > [!NOTE]
 > To be qualified for this process, customers must have a Windows Education subscription that includes the student use benefit and must have access to the Volume Licensing Service Center (VLSC) or the Microsoft 365 Admin Center.
 
-IT admins can upgrade student devices using a multiple activation key (MAK) manually or through Mobile Device Management (MDM). Alternatively, IT admins can set up a portal through [Kivuto OnTheHub](http://onthehub.com) where students can request a *Windows Pro Education* upgrade product key. The table below provides the recommended approach depending on the scenario.
+IT admins can upgrade student devices using a multiple activation key (MAK) manually or through Mobile Device Management (MDM). Alternatively, IT admins can set up a portal through [Kivuto OnTheHub](http://onthehub.com) where students can request a *Windows Pro Education* product key. The table below provides the recommended method depending on the scenario.
 
 | Method | Product key source | Device ownership | Best for |
 |-|-|-|-|
@@ -34,9 +34,9 @@ These methods apply to devices with *Windows Home* installed, institution-owned 
 
 ## User Notifications
 
-Users aren't notified their device has been or will be upgraded to Windows Education when using device management. It's the responsibility of the institution to notify their users. Instituions should notify their users that device management will initiate an upgrade to Windows Education and this will give the institution extra capabilities, such as installing applications.
+Users aren't notified their device has been or will be upgraded to Windows Education when using MDM. It's the responsibility of the institution to notify their users. Instituions should notify their users that MDM will initiate an upgrade to Windows Education and this will give the institution extra capabilities, such as installing applications.
 
-Device users can disconnect device management from Settings to prevent further actions from being taken on their personal device. For instructions on disconnecting from device management, see [Remove your Windows device from management](/mem/intune/user-help/unenroll-your-device-from-intune-windows).
+Device users can disconnect MDM in the Settings app to prevent further actions from being taken on their personal device. For instructions on disconnecting from MDM, see [Remove your Windows device from management](/mem/intune/user-help/unenroll-your-device-from-intune-windows).
 
 ## Why upgrade student-owned devices from Windows Home to Windows Education?
 
