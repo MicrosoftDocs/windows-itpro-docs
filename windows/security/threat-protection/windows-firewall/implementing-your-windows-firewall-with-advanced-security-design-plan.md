@@ -26,11 +26,11 @@ The following are important factors in the implementation of your Windows Defend
 
 -   **Perimeter firewall**. Most organizations use a perimeter firewall to help protect the devices on the network from potentially malicious network traffic from outside of the organization's network boundaries. If you plan a deployment that includes a boundary zone to enable external devices to connect to devices in that zone, then you must allow that traffic through the perimeter firewall to the devices in the boundary zone.
 
--   **Devices running operating systems other than Windows**. If your network includes devices that are not running the Windows operating system, then you must make sure that required communication with those devices is not blocked by the restrictions put in place by your design. You must do one of the following:
+-   **Devices running operating systems other than Windows**. If your network includes devices that aren't running the Windows operating system, then you must make sure that required communication with those devices isn't blocked by the restrictions put in place by your design. You must implement one of the following steps:
 
     -   Include those devices in the isolated domain or zone by adding certificate-based authentication to your design. Many other operating systems can participate in an isolated domain or isolated server scenario, as long as certificate-based authentication is used.
 
-    -   Include the device in the authentication exemption list included in your design. You can choose this option if for any reason the device cannot participate in the isolated domain design.
+    -   Include the device in the authentication exemption list included in your design. You can choose this option if for any reason the device can't participate in the isolated domain design.
 
 ## How to implement your Windows Defender Firewall with Advanced Security design using this guide
 
