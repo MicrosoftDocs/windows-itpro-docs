@@ -117,6 +117,6 @@ See [ApplicationControl CSP](/windows/client-management/mdm/applicationcontrol-c
 ### Known Issues in Multiple Policy Format
 
 * If the maximum number of policies is exceeded, the device may bluescreen referencing ci.dll with a bug check value of 0x0000003b. 
-* If policies are loaded without requiring a reboot such as `PS_UpdateAndCompareCIPolicy` will still count towards this limit. 
+* If policies are loaded without requiring a reboot such as `PS_UpdateAndCompareCIPolicy`, they will still count towards this limit. 
 * This may pose an especially large challenge if the value of `{PolicyGUID}.cip` changes between releases. This may result in a long window between a change and the resultant reboot.
 
