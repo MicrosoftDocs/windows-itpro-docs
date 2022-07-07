@@ -58,10 +58,10 @@
               href: operate/windows-autopatch-teams.md
         - name: Deregister a device
           href: operate/windows-autopatch-deregister-devices.md
-        - name: Un-enroll your tenant
-          href: operate/windows-autopatch-unenroll-tenant.md
         - name: Submit a support request
           href: operate/windows-autopatch-support-request.md
+        - name: Un-enroll your tenant
+          href: operate/windows-autopatch-unenroll-tenant.md
     - name: Reference
       href:
       items:

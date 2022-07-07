@@ -125,7 +125,7 @@ Registering your devices in Windows Autopatch does the following:
 Once devices or Azure AD groups containing devices are added to the **Windows Autopatch Device Registration** group, Windows Autopatch discovers these devices and runs software-based prerequisite checks to try to register them with its service.
 
 > [!IMPORTANT]
-> It might take up to an hour for a device to change its status from **Ready for User** to **Active** in the Ready tab during the public preview.
+> It might take up to an hour for a device to change its status from **Ready for User** to **Active** in the Ready tab.
 
 ## Device management lifecycle scenarios
 
