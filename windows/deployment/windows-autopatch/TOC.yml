@@ -56,10 +56,12 @@
               href: operate/windows-autopatch-edge.md
             - name: Microsoft Teams
               href: operate/windows-autopatch-teams.md
-        - name: Deregister a device
-          href: operate/windows-autopatch-deregister-devices.md
+        - name: Maintain the Windows Autopatch environment
+          href: operate/windows-autopatch-maintain-environment.md
         - name: Submit a support request
           href: operate/windows-autopatch-support-request.md
+        - name: Deregister a device
+          href: operate/windows-autopatch-deregister-devices.md
         - name: Un-enroll your tenant
           href: operate/windows-autopatch-unenroll-tenant.md
     - name: Reference

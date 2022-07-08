@@ -31,7 +31,7 @@ Your admin contacts will receive notifications about support request updates and
 | Area of focus | Description |
 | ----- | ----- |
 | Devices | <uL><li>Device registration</li><li>Device health</li></ul> |
-| Updates | <ul><li>Windows quality updates</li><li>Microsoft 365 Apps for enterprise</li><li>Microsoft Teams updates</li><li>Microsoft Edge</li></ul> |
+| Updates | <ul><li>Windows quality updates</li><li>Windows feature updates</li><li>Microsoft 365 Apps for enterprise updates</li><li>Microsoft Edge updates</li><li>Microsoft Teams updates</li></ul> |
 
 **To add admin contacts:**
 
