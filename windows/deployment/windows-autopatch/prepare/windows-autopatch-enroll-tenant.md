@@ -19,7 +19,7 @@ Before you enroll in Windows Autopatch, there are settings and other parameters 
 > [!IMPORTANT]
 > You must be a Global Administrator to enroll your tenant.
 
-The Readiness assessment tool, accessed through the [Windows Autopatch admin center](https://endpoint.microsoft.com/), checks management or configuration-related settings. This tool allows you to check the relevant settings and details steps to fix any settings that aren't configured properly for Windows Autopatch.  
+The Readiness assessment tool, accessed through the [Windows Autopatch admin center](https://endpoint.microsoft.com/), checks management or configuration-related settings. This tool allows you to check the relevant settings, and details steps to fix any settings that aren't configured properly for Windows Autopatch.  
 
 ## Step 1: Review all prerequisites
 
@@ -54,7 +54,7 @@ The following are the Microsoft Intune settings:
 | Check | Description |
 | ----- | ----- |
 | Update rings for Windows 10 or later | Verifies that Intune's Update rings for Windows 10 or later policy doesn't target all users or all devices. Policies of this type shouldn't target any Windows Autopatch devices. For more information, see [Configure update rings for Windows 10 and later in Intune](/mem/intune/protect/windows-10-update-rings). |
-| Unlicensed admin | Verifies that this setting is enabled to avoid a "lack of permissions" error when we interact with your Azure Active Directory (AD) organization. |
+| Unlicensed admin | Verifies that this setting is enabled to avoid a "lack of permissions" error when we interact with your Azure Active Directory (AD) organization. For more information, see [Unlicensed admins in Microsoft Intune](/mem/intune/fundamentals/unlicensed-admins). |
 
 ### Azure Active Directory settings
 
