@@ -1,7 +1,7 @@
 ---
 title: Register your devices
 description:  This article details how to register devices in Autopatch
-ms.date: 06/30/2022
+ms.date: 07/06/2022
 ms.prod: w11
 ms.technology: windows
 ms.topic: how-to
@@ -111,7 +111,9 @@ Registering your devices in Windows Autopatch does the following:
 
 ## Steps to register devices
 
-**To register devices into Windows Autopatch:**
+### Physical devices
+
+**To register physical devices into Windows Autopatch:**
 
 1. Go to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/).
 2. Select **Windows Autopatch** from the left navigation menu.
@@ -123,6 +125,40 @@ Registering your devices in Windows Autopatch does the following:
 > The **Windows Autopatch Device Registration** hyperlink is in the center of the Ready tab when there's no devices registered with the Windows Autopatch service. Once you have one or more devices registered with the Windows Autopatch service, the **Windows Autopatch Device registration** hyperlink is at the top of both Ready and Not ready tabs.
 
 Once devices or Azure AD groups containing devices are added to the **Windows Autopatch Device Registration** group, Windows Autopatch discovers these devices, and runs software-based prerequisite checks to try to register them with its service.
+
+### Virtual devices
+
+#### Windows Autopatch on Windows 365 Enterprise Workloads
+
+With Windows 365 Enterprise, you can include Windows Autopatch onboarding as part of your provision process providing a seamless experience for admins and users to ensure your Cloud PCs are always up to date.
+
+#### Deploy Windows Autopatch on a Windows 365 Provisioning Policy
+
+For general guidance, see [Create a Windows 365 Provisioning Policy](/windows-365/enterprise/create-provisioning-policy).
+
+**To deploy Windows Autopatch on a Windows 365 Provisioning Policy:**
+
+1. Go to the [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) admin center.
+1. In the left pane, select **Devices**.
+1. Navigate to Provisioning > **Windows 365**.
+1. Select Provisioning policies > **Create policy**.
+1. Provide a policy name and select **Join Type**. For more information, see [Device join types](/windows-365/enterprise/identity-authentication#device-join-types).  
+1. Select **Next**.
+1. Choose the desired image and select **Next**.
+1. Under the **Microsoft managed services** section, select **Windows Autopatch**. Then, select **Next**. If the *Windows Autopatch (preview) cannot manage your Cloud PCs until a Global Admin has finished setting it up.* message appears, you must [enroll your tenant](../prepare/windows-autopatch-enroll-tenant.md) to continue.
+1. Assign your policy accordingly and select **Next**.
+1. Select **Create**. Now your newly provisioned Windows 365 Enterprise Cloud PCs will automatically be enrolled and managed by Windows Autopatch.
+
+#### Deploy Autopatch on Windows 365 for existing Cloud PC
+
+All your existing Windows 365 Enterprise workloads can be registered into Windows Autopatch by leveraging the same method as your physical devices. For more information, see [Physical devices](#physical-devices).
+
+#### Contact support
+
+Support is available either through Windows 365, or Windows Autopatch for update related incidents.
+
+- For Windows 365 support, see [Get support](/mem/get-support).  
+- For Windows Autopatch support, see [Submit a support request](/windows/deployment/windows-autopatch/operate/windows-autopatch-support-request).  
 
 ## Device management lifecycle scenarios
 
