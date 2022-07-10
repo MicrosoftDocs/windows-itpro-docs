@@ -145,7 +145,7 @@ After you determine the ISO file location and the name of the appropriate networ
 Download an ISO file for an evaluation version of the latest release of Windows 10 Enterprise. Choose a 64-bit version.
 
 > [!NOTE]
-> The Microsoft Evaluation Center is temporarily unavailable. To access this download, see [Accessing trials and kits for Windows (Eval Center workaround)](https://techcommunity.microsoft.com/t5/windows-11/accessing-trials-and-kits-for-windows-eval-center-workaround/m-p/3361125).<!-- 6049663 -->
+> The Microsoft Evaluation Center is located here: (https://www.microsoft.com/EvalCenter).<!-- 6049663 -->
 
 After you download an ISO file, the name will be long. For example, `19042.508.200927-1902.20h2_release_svc_refresh_CLIENTENTERPRISEEVAL_OEMRET_x64FRE_en-us.iso`
 
@@ -180,7 +180,8 @@ All VM data will be created under the current path in your PowerShell prompt. Co
 
 ```powershell
 New-VMSwitch -Name AutopilotExternal -AllowManagementOS $true -NetAdapterName (Get-NetAdapter | Where-Object {$_.Status -eq "Up" -and !$_.Virtual}).Name
-New-VM -Name WindowsAutopilot -MemoryStartupBytes 2GB -BootDevice VHD -NewVHDPath .\VMs\WindowsAutopilot.vhdx -Path .\VMData -NewVHDSizeBytes 80GB -Generation 2 -Switch AutopilotExternal
+New-VM -Name WindowsAutopilot -MemoryStartupBytes 4GB -BootDevice VHD -NewVHDPath .\VMs\WindowsAutopilot.vhdx -Path .\VMData -NewVHDSizeBytes 80GB -Generation 2 -Switch AutopilotExternal
+Set-VMProcessor WindowsAutopilot -Count 2
 Add-VMDvdDrive -Path c:\iso\win10-eval.iso -VMName WindowsAutopilot
 Start-VM -VMName WindowsAutopilot
 ```
