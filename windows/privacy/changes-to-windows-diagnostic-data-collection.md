@@ -122,7 +122,7 @@ For Windows devices in the Dev Channel that aren't joined to an Azure AD tenant,
 
 For other Windows devices (not in the Dev Channel), additional details on supported versions of Windows 11 and Windows 10 will be announced at a later date. These changes will roll out no earlier than the last quarter of calendar year 2022.  
 
-To prepare for this change, ensure that you meet the [prerequisites](configure-windows-diagnostic-data-in-your-organization.md#prerequisites) for Windows diagnostic data processor configuration, join your devices to Azure AD, and keep your devices secure and up to date with quality updates. If you're outside of the EU or EFTA, sign up for any of the enterprise services.
+To prepare for this change, ensure that you meet the [prerequisites](configure-windows-diagnostic-data-in-your-organization.md#prerequisites) for Windows diagnostic data processor configuration, join your devices to Azure AD (can be a hybrid Azure AD join), and keep your devices secure and up to date with quality updates. If you're outside of the EU or EFTA, sign up for any of the enterprise services.
 
 As part of this change, the following policies will no longer be supported to configure the processor option:
  - Allow commercial data pipeline
