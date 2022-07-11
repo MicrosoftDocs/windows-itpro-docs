@@ -347,7 +347,6 @@ ICMP types and codes applicable to the firewall rule. To specify all ICMP types 
 If not specified, the default is All. 
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
-
 <a href="" id="localaddressranges"></a>**FirewallRules/*FirewallRuleName*/LocalAddressRanges**
 Comma-separated list of local addresses covered by the rule. The default value is "*". Valid tokens include:
 
