@@ -62,7 +62,7 @@
           href: operate/windows-autopatch-support-request.md
         - name: Deregister a device
           href: operate/windows-autopatch-deregister-devices.md
-        - name: Un-enroll your tenant
+        - name: Unenroll your tenant
           href: operate/windows-autopatch-unenroll-tenant.md
     - name: Reference
       href:
