@@ -2,9 +2,6 @@
 title: VPN security features (Windows 10 and Windows 11)
 description: Learn about security features for VPN, including LockDown VPN, Windows Information Protection integration with VPN, and traffic filters.
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, networking
 author: dansimp
 ms.localizationpriority: medium
 ms.date: 09/03/2021
