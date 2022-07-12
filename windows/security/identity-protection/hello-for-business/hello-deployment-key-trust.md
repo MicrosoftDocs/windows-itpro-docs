@@ -1,12 +1,7 @@
 ---
 title: Windows Hello for Business Deployment Guide - On Premises Key Deployment
 description: A guide to on premises, key trust Windows Hello for Business deployment.
-keywords: identity, PIN, biometric, Hello, passport
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
 author: GitPrakhar13
 ms.author: prsriva
 manager: dansimp

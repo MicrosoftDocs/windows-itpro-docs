@@ -1,16 +1,11 @@
 ---
 title: Manage TPM lockout (Windows)
 description: This topic for the IT professional describes how to manage the lockout feature for the Trusted Platform Module (TPM) in Windows.
-ms.assetid: bf27adbe-404c-4691-a644-29ec722a3f7b
 ms.reviewer: 
 ms.author: dansimp
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 author: dulcemontemayor
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/06/2021
