@@ -18,7 +18,7 @@ ms.topic: article
 - Windows 10
 - Windows 11
 
-This article is specifically targeted at configuring devices enrolled to [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) for Update Compliance, within MEM itself. Configuring devices for Update Compliance in MEM breaks down to the following steps:
+This article is specifically targeted at configuring devices enrolled to [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) for Update Compliance, within Microsoft Endpoint Manager itself. Configuring devices for Update Compliance in Microsoft Endpoint Manager breaks down to the following steps:
 
 1. [Create a configuration profile](#create-a-configuration-profile) for devices you want to enroll, that contains settings for all the MDM policies that must be configured.
 2. [Deploy the configuration script](#deploy-the-configuration-script) as a Win32 app to those same devices, so additional checks can be performed to ensure devices are correctly configured.

@@ -225,7 +225,7 @@ If the physical computer is still running in a frozen state, follow these steps 
 
 Pool Monitor shows you the number of allocations and outstanding bytes of allocation by type of pool and the tag that is passed into calls of ExAllocatePoolWithTag.
 
-For more information, see [How to use Memory Pool Monitor to troubleshoot kernel mode memory leaks](https://support.microsoft.com/topic/4f4a05c2-ef8a-fca4-3ae0-670b940af398).
+For more information, see [Using PoolMon to Find a Kernel-Mode Memory Leak](/windows-hardware/drivers/debugger/using-poolmon-to-find-a-kernel-mode-memory-leak) and [PoolMon Examples](/windows-hardware/drivers/devtest/poolmon-examples).
 
 ### Use memory dump to collect data for the virtual machine that's running in a frozen state
 

@@ -39,7 +39,7 @@ You can then configure WDAC to trust files that are installed by a managed insta
 
 ## Security considerations with managed installer
 
-Since managed installer is a heuristic-based mechanism, it doesn't provide the same security guarantees that explicit allow or deny rules do. The managed installer is best suited for use where each user operates as a standard user and where all software is deployed and installed by a software distribution solution, such as Microsoft Endpoint Configuration Manager (MEMCM).
+Since managed installer is a heuristic-based mechanism, it doesn't provide the same security guarantees that explicit allow or deny rules do. The managed installer is best suited for use where each user operates as a standard user and where all software is deployed and installed by a software distribution solution, such as Microsoft Endpoint Configuration Manager.
 
 Users with administrator privileges, or malware running as an administrator user on the system, may be able to circumvent the intent of Windows Defender Application Control when the managed installer option is allowed.
 
@@ -125,7 +125,7 @@ Currently, neither the AppLocker policy creation UI in GPO Editor nor the PowerS
     </RuleCollection>
     ```
 
-4. Verify your AppLocker policy. The following example shows a complete AppLocker policy that sets Microsoft Endpoint Config Manager (MEMCM)and Microsoft Endpoint Manager Intune as managed installers. Only those AppLocker rule collections that have actual rules defined are included in the final XML. This ensures the policy will merge successfully on devices which may already have an AppLocker policy in place.
+4. Verify your AppLocker policy. The following example shows a complete AppLocker policy that sets Configuration Manager and Microsoft Endpoint Manager Intune as managed installers. Only those AppLocker rule collections that have actual rules defined are included in the final XML. This ensures the policy will merge successfully on devices which may already have an AppLocker policy in place.
 
     ```xml
     <AppLockerPolicy Version="1">
