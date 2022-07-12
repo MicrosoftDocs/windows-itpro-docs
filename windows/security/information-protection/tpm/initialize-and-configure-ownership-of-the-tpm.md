@@ -1,16 +1,11 @@
 ---
 title: Troubleshoot the TPM (Windows)
 description: This article for the IT professional describes how to view status for, clear, or troubleshoot the Trusted Platform Module (TPM).
-ms.assetid: 1166efaf-7aa3-4420-9279-435d9c6ac6f8
 ms.reviewer: 
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection:
   - M365-security-compliance
   - highpri

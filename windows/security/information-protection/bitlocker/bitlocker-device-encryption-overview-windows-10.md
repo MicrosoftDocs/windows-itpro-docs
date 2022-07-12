@@ -2,14 +2,10 @@
 title: Overview of BitLocker Device Encryption in Windows
 description: This article provides an overview of how BitLocker Device Encryption can help protect data on devices running Windows.
 ms.prod: m365-security
-ms.mktglfcycl: explore
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection:
   - M365-security-compliance
   - highpri
