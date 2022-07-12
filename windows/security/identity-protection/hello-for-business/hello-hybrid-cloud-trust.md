@@ -43,6 +43,8 @@ When you enable Azure AD Kerberos in a domain, an Azure AD Kerberos Server objec
 
 More details on how Azure AD Kerberos enables access to on-premises resources are available in our documentation on [enabling passwordless security key sign-in to on-premises resources](/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). There's more information on how Azure AD Kerberos works with Windows Hello for Business cloud trust in the [Windows Hello for Business authentication technical deep dive](hello-how-it-works-authentication.md#hybrid-azure-ad-join-authentication-using-azure-ad-kerberos-cloud-trust-preview).
 
+If you're using the hybrid cloud trust deployment model, you _must_ ensure that you have adequate (one or more, depending on your authentication load) Windows Server 2016 or later read-write domain controllers in each Active Directory site where users will be authenticating for Windows Hello for Business.
+
 ## Prerequisites
 
 | Requirement | Notes |
