@@ -7,7 +7,7 @@ ms.topic: troubleshooting
 author: Deland-Han
 ms.localizationpriority: medium
 ms.author: delhan
-ms.date: 8/22/2019
+ms.date: 07/12/2022
 ms.reviewer: dcscontentpm
 manager: dansimp
 ---
@@ -188,7 +188,7 @@ To specify that you don't want to overwrite any previous kernel or complete memo
 
 This is the default option. An Automatic Memory Dump contains the same information as a Kernel Memory Dump. The difference between the two is in the way that Windows sets the size of the system paging file. If the system paging file size is set to **System managed size**, and the kernel-mode crash dump is set to **Automatic Memory Dump**, then Windows can set the size of the paging file to less than the size of RAM. In this case, Windows sets the size of the paging file large enough to ensure that a kernel memory dump can be captured most of the time.
 
-If the computer crashes and the paging file is not large enough to capture a kernel memory dump, Windows increases the size of the paging file to at least the size of RAM. For more details, see [Automatic Memory Dump](/windows-hardware/drivers/debugger/automatic-memory-dump).
+If the computer crashes and the paging file is not large enough to capture a kernel memory dump, Windows increases the size of the paging file to at least the size of RAM. For more information, see [Automatic Memory Dump](/windows-hardware/drivers/debugger/automatic-memory-dump).
 
 To specify that you want to use an automatic memory dump file, run the following command or modify the registry value:
 
@@ -218,7 +218,7 @@ To specify that you don't want to overwrite any previous kernel or complete memo
 
 An Active Memory Dump is similar to a Complete Memory Dump, but it filters out pages that are not likely to be relevant to troubleshooting problems on the host machine. Because of this filtering, it is typically significantly smaller than a Complete Memory Dump.
 
-This dump file includes any memory allocated to user-mode applications. It also includes memory allocated to the Windows kernel and hardware abstraction layer, as well as memory allocated to kernel-mode drivers and other kernel-mode programs. The dump includes active pages mapped into the kernel or user space that are useful for debugging, as well as selected Pagefile-backed Transition, Standby, and Modified pages such as the memory allocated with VirtualAlloc or page-file-backed sections. Active dumps do not include pages on the free and zeroed lists, the file cache, guest VM pages, and various other types of memory that are not likely to be useful during debugging. For more details, see [Active Memory Dump](windows-hardware/drivers/debugger/active-memory-dump).
+This dump file includes any memory allocated to user-mode applications. It also includes memory allocated to the Windows kernel and hardware abstraction layer, as well as memory allocated to kernel-mode drivers and other kernel-mode programs. The dump includes active pages mapped into the kernel or user space that are useful for debugging, as well as selected Pagefile-backed Transition, Standby, and Modified pages such as the memory allocated with VirtualAlloc or page-file-backed sections. Active dumps do not include pages on the free and zeroed lists, the file cache, guest VM pages, and various other types of memory that are not likely to be useful during debugging. For more information, see [Active Memory Dump](/windows-hardware/drivers/debugger/active-memory-dump).
 
 To specify that you want to use an active memory dump file, modify the registry value:
 
