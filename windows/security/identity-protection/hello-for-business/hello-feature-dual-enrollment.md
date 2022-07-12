@@ -1,12 +1,7 @@
 ---
 title: Dual Enrollment
 description: Learn how to configure Windows Hello for Business dual enrollment. Also, learn how to configure Active Directory to support Domain Administrator enrollment.
-keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, cert-trust, device, registration, unlock, dual enrollment,
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
 author: GitPrakhar13
 ms.author: prsriva
 manager: dansimp

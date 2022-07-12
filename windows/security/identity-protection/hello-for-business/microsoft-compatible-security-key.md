@@ -1,12 +1,7 @@
 ---
 title: Microsoft-compatible security key 
 description: Learn how a Microsoft-compatible security key for Windows is different (and better) than any other FIDO2 security key.
-keywords: FIDO2, security key, CTAP, Hello, WHFB
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
 author: GitPrakhar13
 ms.author: prsriva
 manager: dansimp
