@@ -3,9 +3,6 @@ title: Microsoft admin center software updates (preview) page
 manager: dougeby
 description: Microsoft admin center populates Update Compliance data into the software updates page.
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.pagetype: deploy
-audience: itpro
 author: mestew
 ms.author: mstewart
 ms.localizationpriority: medium
@@ -13,7 +10,7 @@ ms.collection:
   - M365-analytics
   - highpri
 ms.topic: article
-ms.date: 05/07/2022
+ms.date: 06/20/2022
 ---
 
 # Microsoft admin center software updates (preview) page
@@ -37,8 +34,12 @@ The **Software updates** page has following tabs to assist you in monitoring upd
 
 - [Update Compliance](update-compliance-v2-overview.md) needs to be enabled with clients sending data to the solution
 - An appropriate role assigned for the [Microsoft 365 admin center](https://admin.microsoft.com)
-   - To configure settings for the **Software Updates** page: [Global Admin role](/microsoft-365/admin/add-users/about-admin-roles)
-   - To view the **Software Updates** page: [Global Reader role](/microsoft-365/admin/add-users/about-admin-roles)
+   - To configure settings and view the **Software Updates** page: 
+      - [Global Administrator role](/azure/active-directory/roles/permissions-reference#global-administrator)
+      - [Intune Administrator](/azure/active-directory/roles/permissions-reference#intune-administrator)
+   - To view the **Software Updates** page: 
+      - [Global Reader role](/azure/active-directory/roles/permissions-reference#global-reader)
+
 
 ## Limitations
 

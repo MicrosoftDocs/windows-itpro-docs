@@ -72,5 +72,14 @@ If Windows Autopatch detects a [significant issue with a release](../operate/win
 
 If we pause the release, a policy will be deployed which prevents devices from updating while the issue is investigated. Once the issue is resolved, the release will be resumed.
 
-> [!NOTE]
-> Windows Autopatch doesn't allow you to request that a release be paused or resumed during public preview.
+You can pause or resume a Windows quality update from the Release management tab in Microsoft Endpoint Manager.
+
+## Rollback
+
+Windows Autopatch will rollback updates if we detect a [significant issue with a release](../operate/windows-autopatch-wqu-signals.md).
+
+## Incidents and outages
+
+If devices in your tenant aren't meeting the [service level objective](../operate/windows-autopatch-wqu-overview.md#service-level-objective) for Windows quality updates, an incident will be raised, and the Windows Autopatch Service Engineering Team will work to bring the devices back into compliance.
+
+If you're experiencing other issues related to Windows quality updates, [submit a support request](../operate/windows-autopatch-support-request.md).

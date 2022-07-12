@@ -3,10 +3,7 @@ title: Delivery Optimization Frequently Asked Questions
 ms.reviewer: 
 manager: dougeby
 description: The following is a list of frequently asked questions for Delivery Optimization.
-keywords: oms, operations management suite, wdav, updates, downloads, log analytics
 ms.prod: w10
-ms.mktglfcycl: deploy
-audience: itpro
 author: carmenf
 ms.localizationpriority: medium
 ms.author: carmenf

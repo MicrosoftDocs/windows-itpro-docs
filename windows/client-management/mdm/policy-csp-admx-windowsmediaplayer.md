@@ -300,6 +300,7 @@ If you enable this policy setting, the Privacy Options and Installation Options 
 
 This policy setting prevents the dialog boxes that allow users to select privacy, file types, and other desktop options from being displayed when the Player is first started. Some of the options can be configured by using other Windows Media Player group policies.
 
+
 If you disable or don't configure this policy setting, the dialog boxes are displayed when the user starts the Player for the first time.
 
 <!--/Description-->

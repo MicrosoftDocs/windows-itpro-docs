@@ -44,7 +44,7 @@ sections:
          To make sure the FQDNs (Fully Qualified Domain Names) for the “PAC file” and the “proxy servers the PAC file redirects to” are added as Neutral Resources in the Network Isolation policies used by Application Guard, you can:
         
          - Verify this by going to edge://application-guard-internals/#utilities and entering the FQDN for the pac/proxy in the “check url trust” field and verifying that it says “Neutral”.
-         - It must be a FQDN. A simple IP address will not work.
+         - It must be an FQDN. A simple IP address won't work.
          - Optionally, if possible, the IP addresses associated with the server hosting the above should be removed from the Enterprise IP Ranges in the Network Isolation policies used by Application Guard.
         
       - question: |
@@ -53,7 +53,7 @@ sections:
           Application Guard requires proxies to have a symbolic name, not just an IP address. IP-Literal proxy settings such as `192.168.1.4:81` can be annotated as `itproxy:81` or using a record such as `P19216810010` for a proxy with an IP address of `192.168.100.10`. This applies to Windows 10 Enterprise edition, version 1709 or higher. These would be for the proxy policies under Network Isolation in Group Policy or Intune.
           
       - question: |
-          Which Input Method Editors (IME) in 19H1 are not supported?
+          Which Input Method Editors (IME) in 19H1 aren't supported?
         answer: |
           The following Input Method Editors (IME) introduced in Windows 10, version 1903 are currently not supported in Microsoft Defender Application Guard:
           
@@ -73,16 +73,14 @@ sections:
       - question: |
           I enabled the hardware acceleration policy on my Windows 10 Enterprise, version 1803 deployment. Why are my users still only getting CPU rendering?
         answer: |
-          This feature is currently experimental only and is not functional without an additional registry key provided by Microsoft. If you would like to evaluate this feature on a deployment of Windows 10 Enterprise, version 1803, contact Microsoft and we’ll work with you to enable the feature.
+          This feature is currently experimental only and isn't functional without an additional registry key provided by Microsoft. If you would like to evaluate this feature on a deployment of Windows 10 Enterprise, version 1803, contact Microsoft and we’ll work with you to enable the feature.
 
       - question: |
           What is the WDAGUtilityAccount local account?
         answer: |
-          WDAGUtilityAccount is part of Application Guard, beginning with Windows 10, version 1709 (Fall Creators Update). It remains disabled by default, unless Application Guard is enabled on your device. WDAGUtilityAccount is used to sign in to the Application Guard container as a standard user with a random password. It is NOT a malicious account. If *Run as a service* permissions are revoked for this account, you might see the following error:
+          WDAGUtilityAccount is part of Application Guard, beginning with Windows 10, version 1709 (Fall Creators Update). It remains disabled by default, unless Application Guard is enabled on your device. WDAGUtilityAccount is used to sign in to the Application Guard container as a standard user with a random password. It is NOT a malicious account. It requires *Logon as a service* permissions to be able to function correctly. If this permission is denied, you might see the following error:
           
           **Error: 0x80070569, Ext error: 0x00000001; RDP: Error: 0x00000000, Ext error: 0x00000000 Location: 0x00000000**
-          
-          We recommend that you do not modify this account.
           
       - question: |
           How do I trust a subdomain in my site list?
@@ -92,35 +90,35 @@ sections:
       - question: |
           Are there differences between using Application Guard on Windows Pro vs Windows Enterprise?
         answer: |
-          When using Windows Pro or Windows Enterprise, you have access to using Application Guard in Standalone Mode. However, when using Enterprise you have access to Application Guard in Enterprise-Managed Mode. This mode has some extra features that the Standalone Mode does not. For more information, see [Prepare to install Microsoft Defender Application Guard](./install-md-app-guard.md).
+          When using Windows Pro or Windows Enterprise, you have access to using Application Guard in Standalone Mode. However, when using Enterprise you have access to Application Guard in Enterprise-Managed Mode. This mode has some extra features that the Standalone Mode doesn't. For more information, see [Prepare to install Microsoft Defender Application Guard](./install-md-app-guard.md).
           
       - question: |
           Is there a size limit to the domain lists that I need to configure?
         answer: |
-          Yes, both the Enterprise Resource domains that are hosted in the cloud and the domains that are categorized as both work and personal have a 1,6383 bytes limit.
+          Yes, both the Enterprise Resource domains that are hosted in the cloud and the domains that are categorized as both work and personal have a 1,6383-byte limit.
 
       - question: |
           Why does my encryption driver break Microsoft Defender Application Guard?
         answer: |
-          Microsoft Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, Application Guard does not work and results in an error message (**0x80070013 ERROR_WRITE_PROTECT**).
+          Microsoft Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, Application Guard doesn't work and results in an error message (**0x80070013 ERROR_WRITE_PROTECT**).
 
       - question: |
           Why do the Network Isolation policies in Group Policy and CSP look different?
         answer: |
-          There is not a one-to-one mapping among all the Network Isolation policies between CSP and GP. Mandatory network isolation policies to deploy Application Guard are different between CSP and GP.
+          There's not a one-to-one mapping among all the Network Isolation policies between CSP and GP. Mandatory network isolation policies to deploy Application Guard are different between CSP and GP.
           
           - Mandatory network isolation GP policy to deploy Application Guard: **DomainSubnets or CloudResources**
           
           - Mandatory network isolation CSP policy to deploy Application Guard: **EnterpriseCloudResources or (EnterpriseIpRange and EnterpriseNetworkDomainNames)**
           
-          - For EnterpriseNetworkDomainNames, there is no mapped CSP policy.
+          - For EnterpriseNetworkDomainNames, there's no mapped CSP policy.
           
-          Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, Application Guard does not work and results in an error message (**0x80070013 ERROR_WRITE_PROTECT**).
+          Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, Application Guard doesn't work and results in an error message (**0x80070013 ERROR_WRITE_PROTECT**).
           
       - question: |
           Why did Application Guard stop working after I turned off hyperthreading?
         answer: |
-          If hyperthreading is disabled (because of an update applied through a KB article or through BIOS settings), there is a possibility Application Guard no longer meets the minimum requirements.
+          If hyperthreading is disabled (because of an update applied through a KB article or through BIOS settings), there's a possibility Application Guard no longer meets the minimum requirements.
 
       - question: |
           Why am I getting the error message "ERROR_VIRTUAL_DISK_LIMITATION"?

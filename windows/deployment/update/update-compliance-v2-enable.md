@@ -4,9 +4,6 @@ ms.reviewer:
 manager: dougeby
 description: How to enable the Update Compliance through the Azure portal
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.pagetype: deploy
-audience: itpro
 author: mestew
 ms.author: mstewart
 ms.collection: M365-analytics
@@ -55,7 +52,7 @@ Update Compliance is offered as an Azure Marketplace application that's linked t
 
 1. Go to the [Update Compliance page in the Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/Microsoft.WaaSUpdateInsights?tab=Overview). You might need to sign into your Azure subscription to access this page.
 1. Select **Get it now**.
-1. Select **Continue** to agree to the [terms of use](https://azure.microsoft.com/[support/legal/) and the [privacy policy](https://privacy.microsoft.com/en-us/privacystatement) to create the app in Azure.
+1. Select **Continue** to agree to the [terms of use](https://azure.microsoft.com/support/legal/) and the [privacy policy](https://privacy.microsoft.com/en-us/privacystatement) to create the app in Azure.
 1. Sign into the [Azure portal](https://portal.azure.com) to finish creating the Update Compliance solution.
 1. Select the following settings:
    - **Subscription**: The Azure subscription to use.

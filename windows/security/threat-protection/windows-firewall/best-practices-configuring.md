@@ -141,9 +141,10 @@ See also [Checklist: Creating Inbound Firewall Rules](./checklist-creating-inbou
 ## Establish local policy merge and application rules
 
 Firewall rules can be deployed:
+
 1. Locally using the Firewall snap-in (**WF.msc**) 
 2. Locally using PowerShell 
-3. Remotely using Group Policy if the device is a member of an Active Directory Name, System  Center Configuration Manager (SCCM), or Intune (using workplace join)
+3. Remotely using Group Policy if the device is a member of an Active Directory Name, System  Center Configuration Manager, or Intune (using workplace join)
 
 Rule merging settings control how rules from different policy sources can be combined. Administrators can configure different merge behaviors for Domain, Private, and Public profiles.
 

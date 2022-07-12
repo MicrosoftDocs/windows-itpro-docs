@@ -1,7 +1,6 @@
 ---
 title: DMClient CSP
 description: Understand how the DMClient configuration service provider (CSP) is used to specify enterprise-specific mobile device management (MDM) configuration settings.
-ms.assetid: a5cf35d9-ced0-4087-a247-225f102f2544
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -346,7 +345,7 @@ Value type is bool.
 <a href="" id="provider-providerid-forceaadtoken"></a>**Provider/*ProviderID*/ForceAadToken**
 The value type is integer/enum.
 
-The value is "1" and it means client should always send AAD device token during check-in/sync.
+The value is "1" and it means client should always send Azure Active Directory device token during check-in/sync.
 
 <a href="" id="provider-providerid-poll"></a>**Provider/*ProviderID*/Poll**  
 Optional. Polling schedules must use the DMClient CSP. The Registry paths previously associated with polling using the Registry CSP are now deprecated.
@@ -473,7 +472,7 @@ Default is 1, meaning the MDM enrollment is the “winning” authority for conf
 Support operations are Get and Set.
 
 <a href="" id="provider-providerid-linkedenrollment-enroll"></a>**Provider/*ProviderID*/LinkedEnrollment/Enroll**
-This is an execution node and will trigger a silent MMP-C enrollment, using the AAD device token pulled from the AADJ’ed device. There is no user interaction needed.
+This is an execution node and will trigger a silent MMP-C enrollment, using the Azure Active Directory device token pulled from the Azure AD-joined device. There is no user interaction needed.
 
 Support operation is Exec.
 
@@ -517,7 +516,7 @@ This node tracks the status of a Recovery request from the InitiateRecovery node
 1 - Recovery is in Process.  
 2 - Recovery has finished successfully.  
 3 - Recovery has failed to start because TPM is not available.  
-4 - Recovery has failed to start because AAD keys are not protected by the TPM.  
+4 - Recovery has failed to start because Azure Active Directory keys are not protected by the TPM.  
 5 - Recovery has failed to start because the MDM keys are already protected by the TPM.  
 6 - Recovery has failed to start because the TPM is not ready for attestation.  
 7 - Recovery has failed because the client cannot authenticate to the server.  
@@ -537,28 +536,32 @@ Supported operation is Exec only.
 
 <a href="" id="provider-providerid-multiplesession-numallowedconcurrentusersessionforbackgroundsync"></a>**Provider/*ProviderID*/MultipleSession/NumAllowedConcurrentUserSessionForBackgroundSync**
 
-Optional. This node specifies maximum number of concurrent user sync sessions in background. Default value is 25.
+Optional. This node specifies maximum number of concurrent user sync sessions in background. 
+
+The default value is dynamically decided by the client based on CPU usage.
 
 The values are : 0= none, 1= sequential, anything else=  parallel.
 
 Supported operations are Get, Add, Replace and Delete.
 
-Value type is integer. Only applicable for Windows 10 multi-session.
+Value type is integer. Only applicable for Windows Enterprise multi-session.
 
 
 <a href="" id="provider-providerid-multiplesession-numallowedconcurrentusersessionatuserlogonsync"></a>**Provider/*ProviderID*/MultipleSession/NumAllowedConcurrentUserSessionAtUserLogonSync**
-Optional. This node specifies maximum number of concurrent user sync sessions at User Login. Default value is 25.
+Optional. This node specifies maximum number of concurrent user sync sessions at User Login. 
+
+The default value is dynamically decided by the client based on CPU usage.
 
 The values are : 0= none, 1= sequential, anything else= parallel.
 
 Supported operations are Get, Add, Replace and Delete. 
 
-Value type is integer. Only applicable for Windows 10 multi-session. 
+Value type is integer. Only applicable for Windows Enterprise multi-session. 
 
 <a href="" id="provider-providerid-multiplesession-intervalforscheduledretriesforusersession"></a>**Provider/*ProviderID*/MultipleSession/IntervalForScheduledRetriesForUserSession**
 Optional. This node specifies the waiting time (in minutes) for the initial set of retries as specified by the number of retries in `/<ProviderID>/Poll/NumberOfScheduledRetriesForUserSession`. 
 
-If IntervalForScheduledRetriesForUserSession is not set, then the default value is used. The default value is 1440. If the value is set to 0, this schedule is disabled.
+If IntervalForScheduledRetriesForUserSession is not set, then the default value is used. The default value is 0. If the value is set to 0, this schedule is disabled.
 
 This configuration is only applicable for Windows Multi-session Editions.
 
@@ -626,7 +629,7 @@ The status error mapping is listed below.
 |--- |--- |
 |0|Success|
 |1|Failure: invalid PFN|
-|2|Failure: invalid or expired device authentication with MSA|
+|2|Failure: invalid or expired device authentication with Microsoft account|
 |3|Failure: WNS client registration failed due to an invalid or revoked PFN|
 |4|Failure: no Channel URI assigned|
 |5|Failure: Channel URI has expired|

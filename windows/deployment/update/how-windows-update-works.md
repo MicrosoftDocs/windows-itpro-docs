@@ -2,8 +2,6 @@
 title: How Windows Update works 
 description: In this article, learn about the process Windows Update uses to download and install updates on a Windows client devices.
 ms.prod: w10
-ms.mktglfcycl: 
-audience: itpro
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
@@ -99,7 +97,7 @@ For Windows Update (WU) scans URLs that are used for update detection ([MS-WUSP]
     > [!Note]
     > For intranet WSUS update service URLs, we provide an option via Windows Update policy to select the proxy behavior.
 
-For WU URLs that _aren't_ used for update detection, such as for download or reporting:
+For Windows Update URLs that _aren't_ used for update detection, such as for download or reporting:
 - User proxy is attempted.
 - If WUA fails to reach the service due to a certain proxy, service, or authentication error code, then the system proxy is attempted.
 
@@ -116,7 +114,7 @@ For WU URLs that _aren't_ used for update detection, such as for download or rep
  
 |Service|ServiceId|
 |-------|---------| 
-|Unspecified / Default|WU, MU, or WSUS <br>00000000-0000-0000-0000-000000000000 |
+|Unspecified / Default|Windows Update, Microsoft Update, or WSUS <br>00000000-0000-0000-0000-000000000000 |
 |Windows Update|9482F4B4-E343-43B6-B170-9A65BC822C77| 
 |Microsoft Update|7971f918-a847-4430-9279-4a52d1efe18d| 
 |Store|855E8A7C-ECB4-4CA3-B045-1DFA50104289| 

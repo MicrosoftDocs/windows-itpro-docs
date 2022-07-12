@@ -1,12 +1,7 @@
 ---
 title: Configuring Hybrid Azure AD joined Windows Hello for Business - Public Key Infrastructure (PKI)
 description: Discussing the configuration of the Public Key Infrastructure (PKI) in a Hybrid deployment of Windows Hello for Business
-keywords: identity, PIN, biometric, Hello, passport, WHFB, PKI
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
 author: GitPrakhar13
 ms.author: prsriva
 manager: dansimp
@@ -38,7 +33,7 @@ This section has you configure certificate templates on your Windows Server 2012
 
 Clients need to trust domain controllers and the best way to do this is to ensure each domain controller has a Kerberos Authentication certificate.  Installing a certificate on the domain controller enables the Key Distribution Center (KDC) to prove its identity to other members of the domain.  This provides clients a root of trust external to the domain - namely the enterprise certificate authority.
 
-Domain controllers automatically request a domain controller certificate (if published) when they discover an enterprise certificate authority is added to Active Directory.  However, certificates based on the *Domain Controller* and *Domain Controller Authentication* certificate templates do not include the **KDC Authentication** object identifier (OID), which was later added to the Kerberos RFC. Inclusion of the **KDC Authentication** OID in domain controller certificate is not required for key trust authentication from Hybrid Azure AD joined devices. The OID is required for enabling authentication with Windows Hello for Business to on-premises resources by Azure AD joined devices. The steps below to *Create a Domain Controller Authentication (Kerberos) Certificate Template* and *Configure Certificate Superseding for the Domain Controller Authentication (Kerberos) Certificate Template* to include the **KDC Authentication** OID in the domain controller certificate may be skipped if you only have Hybrid Azure AD Joined devices in your environment, but we recommend completing these steps if you are considering adding Azure AD joined devices to your environment in the future.
+Domain controllers automatically request a domain controller certificate (if published) when they discover an enterprise certificate authority is added to Active Directory.  However, certificates based on the *Domain Controller* and *Domain Controller Authentication* certificate templates do not include the **KDC Authentication** object identifier (OID), which was later added to the Kerberos RFC. Inclusion of the **KDC Authentication** OID in domain controller certificate is not required for key trust authentication from Hybrid Azure AD-joined devices. The OID is required for enabling authentication with Windows Hello for Business to on-premises resources by Azure AD-joined devices. The steps below to *Create a Domain Controller Authentication (Kerberos) Certificate Template* and *Configure Certificate Superseding for the Domain Controller Authentication (Kerberos) Certificate Template* to include the **KDC Authentication** OID in the domain controller certificate may be skipped if you only have Hybrid Azure AD Joined devices in your environment, but we recommend completing these steps if you are considering adding Azure AD-joined devices to your environment in the future.
 
 By default, the Active Directory Certificate Authority provides and publishes the Kerberos Authentication certificate template. However, the cryptography configuration included in the provided template is based on older and less performant cryptography APIs. To ensure domain controllers request the proper certificate with the best available cryptography, use the **Kerberos Authentication** certificate template as a baseline to create an updated domain controller certificate template.
 

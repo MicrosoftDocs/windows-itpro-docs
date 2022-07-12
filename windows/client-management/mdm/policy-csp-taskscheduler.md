@@ -14,8 +14,6 @@ manager: dansimp
 
 # Policy CSP - TaskScheduler
 
-
-
 <hr/>
 
 <!--Policies-->
@@ -34,6 +32,7 @@ manager: dansimp
 <a href="" id="taskscheduler-enablexboxgamesavetask"></a>**TaskScheduler/EnableXboxGameSaveTask**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
@@ -65,3 +64,6 @@ This setting determines whether the specific task is enabled (1) or disabled (0)
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

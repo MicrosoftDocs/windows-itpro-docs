@@ -21,18 +21,14 @@ Sometimes, following a crash, you might be unable to successfully boot into your
 If you've entered the correct BitLocker recovery key multiple times, and are still unable to continue past the initial recovery screen, follow these steps to break out of the loop.
 
 > [!NOTE]
-> Only try these steps after you have restarted your device at least once.
+> Try these steps only after you have restarted your device at least once.
 
-1. On the initial recovery screen, don't enter your recovery key. Instead, select **Skip this drive**.
+1. On the initial recovery screen, don't enter your recovery key, instead, select **Skip this drive**.
 
-1. On the next screen, select **Troubleshoot**.
+2. Navigate to **Troubleshoot** > **Advanced options**, and select **Command prompt**.
 
-1. On the Troubleshoot screen, select **Advanced options**.
+3. From the WinRE command prompt, manually unlock your drive: `manage-bde.exe -unlock C: -rp <recovery password>`
 
-1. On the Advanced options screen, select **Command prompt**.
+4. Suspend operating system drive protection: `manage-bde.exe -protectors -disable C:`
 
-1. From the WinRE command prompt, manually unlock your drive: `manage-bde.exe -unlock C: -rp <recovery password>`
-
-1. Suspend operating system drive protection: `manage-bde.exe -protectors -disable C:`
-
-1. Once the last command is run, you can safely exit the command prompt and continue to boot into your operating system
+5. Once the last command is run, you can exit the command prompt and continue to boot into your operating system.

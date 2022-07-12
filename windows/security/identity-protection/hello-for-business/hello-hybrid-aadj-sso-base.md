@@ -1,12 +1,7 @@
 ---
-title: Configure Azure AD joined devices for On-premises Single-Sign On using Windows Hello for Business
+title: Configure Azure AD-joined devices for On-premises Single-Sign On using Windows Hello for Business
 description: Before adding Azure Active Directory (Azure AD) joined devices to your existing hybrid deployment, you need to verify the existing deployment can support them.
-keywords: identity, PIN, biometric, Hello, passport, AADJ, SSO, 
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
 author: GitPrakhar13
 ms.author: prsriva
 manager: dansimp
@@ -17,19 +12,19 @@ ms.topic: article
 localizationpriority: medium
 ms.date: 01/14/2021
 ---
-# Configure Azure AD joined devices for On-premises Single-Sign On using Windows Hello for Business
+# Configure Azure AD-joined devices for On-premises Single-Sign On using Windows Hello for Business
 
 **Applies to**
 
 - Windows 10
 - Windows 11
-- Azure Active Directory joined
+- Azure Active Directory-joined
 - Hybrid Deployment
 - Key trust model
 
 ## Prerequisites
 
-Before adding Azure Active Directory (Azure AD) joined devices to your existing hybrid deployment, you need to verify the existing deployment can support Azure AD joined devices.  Unlike hybrid Azure AD joined devices, Azure AD joined devices do not have a relationship with your Active Directory domain.  This factor changes the way in which users authenticate to Active Directory.  Validate the following configurations to ensure they support Azure AD joined devices.
+Before adding Azure Active Directory (Azure AD) joined devices to your existing hybrid deployment, you need to verify the existing deployment can support Azure AD-joined devices.  Unlike hybrid Azure AD-joined devices, Azure AD-joined devices do not have a relationship with your Active Directory domain.  This factor changes the way in which users authenticate to Active Directory.  Validate the following configurations to ensure they support Azure AD-joined devices.
 
 - Azure Active Directory Connect synchronization
 - Device Registration
@@ -56,9 +51,9 @@ Certificates issued by a certificate authority can be revoked.  When a certifica
 
 ![Domain Controller Certificate with LDAP CDP.](images/aadj/Certificate-CDP.png)
 
-The preceding domain controller certificate shows a CRL distribution path (CDP) using Active Directory.  You can determine this because the value in the URL begins with **ldap**.  Using Active Directory for domain joined devices provides a highly available CRL distribution point.  However, Azure Active Directory joined devices and users on Azure Active Directory joined devices cannot read data from Active Directory, and certificate validation does not provide an opportunity to authenticate prior to reading the certificate revocation list.  This becomes a circular problem as the user is attempting to authenticate, but must read Active Directory to complete the authentication, but the user cannot read Active Directory because they have not authenticated.
+The preceding domain controller certificate shows a CRL distribution path (CDP) using Active Directory.  You can determine this because the value in the URL begins with **ldap**.  Using Active Directory for domain joined devices provides a highly available CRL distribution point.  However, Azure Active Directory-joined devices and users on Azure Active Directory-joined devices cannot read data from Active Directory, and certificate validation does not provide an opportunity to authenticate prior to reading the certificate revocation list.  This becomes a circular problem as the user is attempting to authenticate, but must read Active Directory to complete the authentication, but the user cannot read Active Directory because they have not authenticated.
 
-To resolve this issue, the CRL distribution point must be a location that is accessible by Azure Active Directory joined devices that does not require authentication.  The easiest solution is to publish the CRL distribution point on a web server that uses HTTP (not HTTPS).
+To resolve this issue, the CRL distribution point must be a location that is accessible by Azure Active Directory-joined devices that does not require authentication.  The easiest solution is to publish the CRL distribution point on a web server that uses HTTP (not HTTPS).
 
 If your CRL distribution point does not list an HTTP distribution point, then you need to reconfigure the issuing certificate authority to include an HTTP CRL distribution point, preferably first in the list of distribution points.
 
@@ -73,7 +68,7 @@ If you are interested in configuring your environment to use the Windows Hello f
 
 ### Domain Controller Certificates
 
-Certificate authorities write CRL distribution points in certificates as they are issued.  If the distribution point changes, then previously issued certificates must be reissued for the certificate authority to include the new CRL distribution point.  The domain controller certificate is one the critical components of Azure AD joined devices authenticating to Active Directory
+Certificate authorities write CRL distribution points in certificates as they are issued.  If the distribution point changes, then previously issued certificates must be reissued for the certificate authority to include the new CRL distribution point.  The domain controller certificate is one the critical components of Azure AD-joined devices authenticating to Active Directory
 
 #### Why does Windows need to validate the domain controller certificate?
 
@@ -87,7 +82,7 @@ Windows Hello for Business enforces the strict KDC validation security feature w
 - The domain controller's certificate's signature hash algorithm is **sha256**.
 - The domain controller's certificate's public key is **RSA (2048 Bits)**.
 
-Authenticating from a Hybrid Azure AD joined device to a domain using Windows Hello for Business does not enforce that the domain controller certificate includes the **KDC Authentication** EKU. If you are adding Azure AD joined devices to an existing domain environment, make sure to verify that your domain controller certificate has been updated to include the **KDC Authentication** EKU. If you need to update your domain controller certificate to include the **KDC Authentication** EKU, follow the instructions in [Configure Hybrid Windows Hello for Business: Public Key Infrastructure](hello-hybrid-key-whfb-settings-pki.md)
+Authenticating from a Hybrid Azure AD joined device to a domain using Windows Hello for Business does not enforce that the domain controller certificate includes the **KDC Authentication** EKU. If you are adding Azure AD-joined devices to an existing domain environment, make sure to verify that your domain controller certificate has been updated to include the **KDC Authentication** EKU. If you need to update your domain controller certificate to include the **KDC Authentication** EKU, follow the instructions in [Configure Hybrid Windows Hello for Business: Public Key Infrastructure](hello-hybrid-key-whfb-settings-pki.md)
 
 > [!Tip]
 > If you are using Windows Server 2008, **Kerberos Authentication** is not the default template, so make sure to use the correct template when issuing or re-issuing the certificate.
@@ -107,7 +102,7 @@ Steps you will perform include:
 
 ### Configure Internet Information Services to host CRL distribution point
 
-You need to host your new certificate revocation list of a web server so Azure AD joined devices can easily validate certificates without authentication.  You can host these files on web servers many ways.  The following steps is just one and may be useful for those unfamiliar with adding a new CRL distribution point.
+You need to host your new certificate revocation list of a web server so Azure AD-joined devices can easily validate certificates without authentication.  You can host these files on web servers many ways.  The following steps is just one and may be useful for those unfamiliar with adding a new CRL distribution point.
 
 > [!IMPORTANT]
 > Do not configure the IIS server hosting your CRL distribution point to use https or a server authentication certificate.  Clients should access the distribution point using http. 
@@ -265,7 +260,7 @@ With the CA properly configured with a valid HTTP-based CRL distribution point, 
 
 ## Configure and Assign a Trusted Certificate Device Configuration Profile
 
-Your domain controllers have new certificate that include the new CRL distribution point.  Next, you need your enterprise root certificate so you can deploy it to Azure AD joined devices.  Deploying the enterprise root certificates to the device, ensures the device trusts any certificates issued by the certificate authority.  Without the certificate, Azure AD joined devices do not trust domain controller certificates and authentication fails. 
+Your domain controllers have new certificate that include the new CRL distribution point.  Next, you need your enterprise root certificate so you can deploy it to Azure AD-joined devices.  Deploying the enterprise root certificates to the device, ensures the device trusts any certificates issued by the certificate authority.  Without the certificate, Azure AD-joined devices do not trust domain controller certificates and authentication fails. 
 
 Steps you will perform include:
 - [Export Enterprise Root certificate](#export-enterprise-root-certificate)
@@ -288,7 +283,7 @@ Steps you will perform include:
 
 ### Create and Assign a Trust Certificate Device Configuration Profile
 
-A **Trusted Certificate** device configuration profile is how you deploy trusted certificates to Azure AD joined devices.
+A **Trusted Certificate** device configuration profile is how you deploy trusted certificates to Azure AD-joined devices.
 
 1. Sign-in to the [Microsoft Azure Portal](https://portal.azure.com) and select **Microsoft Intune**.
 2. Click **Device configuration**.  In the **Device Configuration** blade, click **Create profile**.

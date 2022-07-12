@@ -4,14 +4,11 @@ ms.reviewer:
 manager: dougeby
 description: Prerequisites for Update Compliance
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.pagetype: deploy
-audience: itpro
 author: mestew
 ms.author: mstewart
 ms.collection: M365-analytics
 ms.topic: article
-ms.date: 06/06/2022
+ms.date: 06/30/2022
 ---
 
 # Update Compliance prerequisites
@@ -30,8 +27,8 @@ Before you begin the process of adding Update Compliance to your Azure subscript
 
 - An Azure subscription with [Azure Active Directory](/azure/active-directory/)
 - You must have either an Owner or Contributor [Azure role](/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-roles) as a minimum in order to add the Update Compliance solution.
-- Devices must be Azure Active Directory joined and meet the below OS, diagnostic, and endpoint access requirements
-  - Devices that are Workplace joined only (Azure AD registered) aren't supported with Update Compliance
+- Devices must be Azure Active Directory-joined and meet the below OS, diagnostic, and endpoint access requirements.
+- Devices that are Workplace joined only (Azure AD registered) aren't supported with Update Compliance.
 
 ### Operating systems and editions
 
@@ -69,11 +66,15 @@ For more information about what's included in different diagnostic levels, see [
 > [!NOTE]
 > Enrolling into Update Compliance from the [Azure CLI](/cli/azure) or enrolling programmatically another way currently isn't supported. You must manually add Update Compliance to your Azure subscription.
 
-## Microsoft 365 admin center permissions (optional)
+## Microsoft 365 admin center permissions (currently optional)
 
-When you use the [Microsoft admin center software updates (preview) page](update-status-admin-center.md) with Update Compliance, the following permissions are also recommended:
-   - To configure settings for the **Software Updates** page: [Global Admin role](/microsoft-365/admin/add-users/about-admin-roles)
-   - To view the **Software Updates** page: [Global Reader role](/microsoft-365/admin/add-users/about-admin-roles)
+When you use the [Microsoft admin center software updates (preview) page](update-status-admin-center.md) with Update Compliance, the following permissions are also needed:
+
+- To configure settings and view the **Software Updates** page: 
+  - [Global Administrator role](/azure/active-directory/roles/permissions-reference#global-administrator)
+  - [Intune Administrator](/azure/active-directory/roles/permissions-reference#intune-administrator)
+- To view the **Software Updates** page:
+  - [Global Reader role](/azure/active-directory/roles/permissions-reference#global-reader)
 
 ## Log Analytics prerequisites
 

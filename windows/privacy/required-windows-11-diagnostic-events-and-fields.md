@@ -1,20 +1,15 @@
 ---
 description: Learn more about the Windows 11 diagnostic data gathered at the basic level.
 title: Required Windows 11 diagnostic events and fields
-keywords: privacy, telemetry
 ms.prod: m365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 localizationpriority: high
-author: brianlic-msft
-ms.author: brianlic
-manager: dansimp
+author: DHB-MSFT
+ms.author: danbrown
+manager: dougeby
 ms.collection:
   - M365-security-compliance
   - highpri
 ms.topic: article
-audience: ITPro
 ms.date: 11/29/2021
 ms.technology: privacy
 ---
@@ -79,7 +74,7 @@ The following fields are available:
 - **PackageSpecifiers**  The map of Intelligent Delivery region specifiers present in the installing package.
 - **PlanId**  The ID of the streaming plan being used to install the content.
 - **ProductId**  The product ID of the application associated with this event.
-- **RelatedCv**  The related correlation vector. This optional value contains the correlation vector for this install if the Cv value is representing an actiuon tracked by a correlation vector.
+- **RelatedCv**  The related correlation vector. This optional value contains the correlation vector for this install if the Cv value is representing an action tracked by a correlation vector.
 - **RequestSpecifiers**  The map of Intelligent Delivery region specifiers requested by the system/user/title as a part of the install activity.
 - **SourceHardwareID**  The hardware ID of the source device, if it is external storage. Empty if not an external storage device.
 - **SourcePath**  The source path we are installing from. May be a CDN (Content Delivery Network) or a local disk drive.
@@ -488,7 +483,7 @@ The following fields are available:
 - **SdbBlockUpgradeUntilUpdate**  The file is tagged as blocking upgrade in the SDB. If the app is updated, the upgrade can proceed.
 - **SdbReinstallUpgrade**  The file is tagged as needing to be reinstalled after upgrade in the SDB. It does not block upgrade.
 - **SdbReinstallUpgradeWarn**  The file is tagged as needing to be reinstalled after upgrade with a warning in the SDB. It does not block upgrade.
-- **SoftBlock**  The file is softblocked in the SDB and has a warning.
+- **SoftBlock**  The file is soft blocked in the SDB and has a warning.
 
 
 ### Microsoft.Windows.Appraiser.General.DecisionApplicationFileRemove
@@ -1775,7 +1770,7 @@ The following fields are available:
 - **RunAppraiser**  Indicates if Appraiser was set to run at all. If this if false, it is understood that data events will not be received from this device.
 - **RunDate**  The date that the diagnostic data run was stated, expressed as a filetime.
 - **RunGeneralTel**  Indicates if the generaltel.dll component was run. Generaltel collects additional diagnostic data on an infrequent schedule and only from machines at diagnostic data levels higher than Basic.
-- **RunOnline**  Indicates if appraiser was able to connect to Windows Update and theefore is making decisions using up-to-date driver coverage information.
+- **RunOnline**  Indicates if appraiser was able to connect to Windows Update and therefore is making decisions using up-to-date driver coverage information.
 - **RunResult**  The hresult of the Appraiser diagnostic data run.
 - **ScheduledUploadDay**  The day scheduled for the upload.
 - **SendingUtc**  Indicates whether the Appraiser client is sending events during the current diagnostic data run.
@@ -1861,7 +1856,7 @@ The following fields are available:
 - **InternalBatteryCapacityCurrent**  Represents the battery's current fully charged capacity in mWh (or relative). Compare this value to DesignedCapacity  to estimate the battery's wear.
 - **InternalBatteryCapacityDesign**  Represents the theoretical capacity of the battery when new, in mWh.
 - **InternalBatteryNumberOfCharges**  Provides the number of battery charges. This is used when creating new products and validating that existing products meets targeted functionality performance.
-- **IsAlwaysOnAlwaysConnectedCapable**  Represents whether the battery enables the device to be AlwaysOnAlwaysConnected . Boolean value.
+- **IsAlwaysOnAlwaysConnectedCapable**  Represents whether the battery enables the device to be AlwaysOnAlwaysConnected. Boolean value.
 
 
 ### Census.Enterprise
@@ -1874,7 +1869,7 @@ The following fields are available:
 - **AzureOSIDPresent**  Represents the field used to identify an Azure machine.
 - **AzureVMType**  Represents whether the instance is Azure VM PAAS, Azure VM IAAS or any other VMs.
 - **CDJType**  Represents the type of cloud domain joined for the machine.
-- **CommercialId**  Represents the GUID for the commercial entity which the device is a member of.  Will be used to reflect insights back to customers.
+- **CommercialId**  Represents the GUID for the commercial entity that the device is a member of.  Will be used to reflect insights back to customers.
 - **ContainerType**  The type of container, such as process or virtual machine hosted.
 - **EnrollmentType**  Defines the type of MDM enrollment on the device.
 - **HashedDomain**  The hashed representation of the user domain used for login.
@@ -1885,9 +1880,9 @@ The following fields are available:
 - **IsMDMEnrolled**  Whether the device has been MDM Enrolled or not.
 - **MDMServiceProvider**  A hash of the specific MDM authority, such as Microsoft Intune, that is managing the device.
 - **MPNId**  Returns the Partner ID/MPN ID from Regkey. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\DeployID
-- **SCCMClientId**  This ID correlate systems that send data to Compat Analytics (OMS) and other OMS based systems with systems in an Enterprise SCCM environment.
+- **SCCMClientId**  This ID correlate systems that send data to Compat Analytics (OMS) and other OMS based systems with systems in an Enterprise Configuration Manager environment.
 - **ServerFeatures**  Represents the features installed on a Windows   Server. This can be used by developers and administrators who need to automate the process of determining the features installed on a set of server computers.
-- **SystemCenterID**  The SCCM ID is an anonymized one-way hash of the Active Directory Organization identifier
+- **SystemCenterID**  The Configuration Manager ID is an anonymized one-way hash of the Active Directory Organization identifier
 
 
 ### Census.Firmware
@@ -2292,10 +2287,10 @@ The following fields are available:
 - **UpdateServiceURLConfigured**  Retrieves if the device is managed by Windows Server Update Services (WSUS).
 - **WUDeferUpdatePeriod**  Retrieves if deferral is set for Updates.
 - **WUDeferUpgradePeriod**  Retrieves if deferral is set for Upgrades.
-- **WUDODownloadMode**  Retrieves whether DO is turned on and how to acquire/distribute updates Delivery Optimization (DO) allows users to deploy previously downloaded WU updates to other devices on the same network.
+- **WUDODownloadMode**  Retrieves whether DO is turned on and how to acquire/distribute updates Delivery Optimization (DO) allows users to deploy previously downloaded Windows Update (WU) updates to other devices on the same network.
 - **WULCUVersion**  Version of the LCU Installed on the machine.
 - **WUMachineId**  Retrieves the Windows Update (WU) Machine Identifier.
-- **WUPauseState**  Retrieves WU setting to determine if updates are paused.
+- **WUPauseState**  Retrieves Windows Update  setting to determine if updates are paused.
 - **WUServer**  Retrieves the HTTP(S) URL of the WSUS server that is used by Automatic Updates and API callers (by default).
 
 
@@ -4871,7 +4866,7 @@ The following fields are available:
 - **IsWUfBDualScanEnabled**  Indicates if Windows Update for Business dual scan is enabled on the device.
 - **IsWUfBEnabled**  Indicates if Windows Update for Business is enabled on the device.
 - **IsWUfBFederatedScanDisabled**  Indicates if Windows Update for Business federated scan is disabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag that indicates if the WU-for-Business target version policy is enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag that indicates if the Windows Update for Business target version policy is enabled on the device.
 - **MetadataIntegrityMode**  The mode of the update transport metadata integrity check. 0-Unknown, 1-Ignoe, 2-Audit, 3-Enforce
 - **MSIError**  The last error that was encountered during a scan for updates.
 - **NetworkConnectivityDetected**  Indicates the type of network connectivity that was detected. 0 - IPv4, 1 - IPv6
@@ -4965,7 +4960,7 @@ The following fields are available:
 - **IPVersion**  Indicates whether the download took place over IPv4 or IPv6.
 - **IsWUfBDualScanEnabled**  Indicates if Windows Update for Business dual scan is enabled on the device.
 - **IsWUfBEnabled**  Indicates if Windows Update for Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag that indicates if the WU-for-Business target version policy is enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag that indicates if the Windows Update for Business target version policy is enabled on the device.
 - **NetworkCost**  A flag indicating the cost of the network (congested, fixed, variable, over data limit, roaming, etc.) used for downloading the update content.
 - **NetworkRestrictionStatus**  More general version of NetworkCostBitMask, specifying whether Windows considered the current network to be "metered."
 - **PackageFullName**  The package name of the content.
@@ -5075,7 +5070,7 @@ The following fields are available:
 - **IsSuccessFailurePostReboot**  Indicates whether the update succeeded and then failed after a restart.
 - **IsWUfBDualScanEnabled**  Indicates whether Windows Update for Business dual scan is enabled on the device.
 - **IsWUfBEnabled**  Indicates whether Windows Update for Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag that indicates if the WU-for-Business target version policy is enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag that indicates if the Windows Update for Business target version policy is enabled on the device.
 - **MergedUpdate**  Indicates whether the OS update and a BSP update merged for installation.
 - **MsiAction**  The stage of MSI installation where it failed.
 - **MsiProductCode**  The unique identifier of the MSI installer.
@@ -5127,9 +5122,9 @@ The following fields are available:
 - **IsFinalOutcomeEvent**  Indicates whether this event signals the end of the update/upgrade process.
 - **IsFirmware**  Indicates whether an update was a firmware update.
 - **IsSuccessFailurePostReboot**  Indicates whether an initial success was a failure after a reboot.
-- **IsWUfBDualScanEnabled**  Flag indicating whether WU-for-Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Flag indicating whether WU-for-Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag that indicates if the WU-for-Business target version policy is enabled on the device.
+- **IsWUfBDualScanEnabled**  Flag indicating whether Windows Update for Business dual scan is enabled on the device.
+- **IsWUfBEnabled**  Flag indicating whether Windows Update for Business is enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag that indicates if the Windows Update for Business target version policy is enabled on the device.
 - **MergedUpdate**  Indicates whether an OS update and a BSP update were merged for install.
 - **ProcessName**  Process name of the caller who initiated API calls into the software distribution client.
 - **QualityUpdatePause**  Indicates whether quality OS updates are paused on the device.
@@ -5192,9 +5187,9 @@ The following fields are available:
 - **IsFinalOutcomeEvent**  Indicates whether this event signals the end of the update/upgrade process.
 - **IsFirmware**  Indicates whether an update was a firmware update.
 - **IsSuccessFailurePostReboot**  Indicates whether an initial success was then a failure after a reboot.
-- **IsWUfBDualScanEnabled**  Flag indicating whether WU-for-Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Flag indicating whether WU-for-Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag that indicates if the WU-for-Business target version policy is enabled on the device.
+- **IsWUfBDualScanEnabled**  Flag indicating whether Windows Update for Business dual scan is enabled on the device.
+- **IsWUfBEnabled**  Flag indicating whether Windows Update for Business is enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag that indicates if the Windows Update for Business target version policy is enabled on the device.
 - **MergedUpdate**  Indicates whether an OS update and a BSP update were merged for install.
 - **ProcessName**  Process name of the caller who initiated API calls into the software distribution client.
 - **QualityUpdatePause**  Indicates whether quality OS updates are paused on the device.
@@ -6022,7 +6017,7 @@ This event sends data regarding OS Updates and Upgrades from Windows 7.X, Window
 The following fields are available:
 
 - **ClientId**  For Windows Update, this will be the Windows Update client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
-- **FlightData**  In the WU scenario, this will be the WU client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
+- **FlightData**  In the Windows Update  scenario, this will be the Windows Update  client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
 - **HostOSBuildNumber**  The build number of the previous operating system.
 - **HostOsSkuName**  The OS edition which is running the Setup360 instance (previous operating system).
 - **InstanceId**  Unique GUID that identifies each instance of setuphost.exe.
@@ -6789,7 +6784,7 @@ The following fields are available:
 - **freeDiskSpaceInMB**  Amount of free disk space.
 - **interactive**  Informs if this action is caused due to user interaction.
 - **priority**  The CPU and IO priority this action is being performed on.
-- **provider**  The provider that is being invoked to perform this action (WU, Legacy UO Provider etc.).
+- **provider**  The provider that is being invoked to perform this action (Windows Update , Legacy UO Provider etc.).
 - **update**  Update related metadata including UpdateId.
 - **uptimeMinutes**  Duration USO for up for in the current boot session.
 - **wilActivity**  Wil Activity related information.
@@ -6811,9 +6806,9 @@ The following fields are available:
 - **ExtendedStatusCode**  Secondary status code for certain scenarios where StatusCode was not specific enough.
 - **FeatureUpdatePause**  Indicates whether feature OS updates are paused on the device.
 - **IPVersion**  Indicates whether download took place on IPv4 or IPv6 (0-Unknown, 1-IPv4, 2-IPv6).
-- **IsWUfBDualScanEnabled**  Flag indicated is WU-for-Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Flag indicated is WU-for-Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag indicated is WU-For-Business target version is enabled on the device.
+- **IsWUfBDualScanEnabled**  Flag indicated is Windows Update for Business dual scan is enabled on the device.
+- **IsWUfBEnabled**  Flag indicated is Windows Update for Business is enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag indicated is Windows Update for Business target version is enabled on the device.
 - **MetadataIntegrityMode**  Mode of update transport metadata integrity check. 0-Unknown, 1-Ignoe, 2-Audit, 3-Enforce.
 - **NumberOfApplicationsCategoryScanEvaluated**  Number of categories (apps) for which an app update scan checked.
 - **NumberOfLoop**  Number of roundtrips the scan required.
@@ -6859,9 +6854,9 @@ The following fields are available:
 - **FeatureUpdatePause**  Indicates whether feature OS updates are paused on the device.
 - **IntentPFNs**  Intended application-set metadata for atomic update scenarios.
 - **IPVersion**  Indicates whether download took place on IPv4 or IPv6 (0-Unknown, 1-IPv4, 2-IPv6).
-- **IsWUfBDualScanEnabled**  Flag indicated is WU-for-Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Flag indicated is WU-for-Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag indicated is WU-For-Business target version is enabled on the device.
+- **IsWUfBDualScanEnabled**  Flag indicated is Windows Update for Business dual scan is enabled on the device.
+- **IsWUfBEnabled**  Flag indicated is Windows Update for Business is enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag indicated is Windows Update for Business target version is enabled on the device.
 - **MetadataIntegrityMode**  Mode of update transport metadata integrity check. 0-Unknown, 1-Ignoe, 2-Audit, 3-Enforce.
 - **MSIError**  The last error encountered during a scan for updates.
 - **NetworkConnectivityDetected**  0 when IPv4 is detected, 1 when IPv6 is detected.
@@ -6901,9 +6896,9 @@ The following fields are available:
 - **ExtendedStatusCode**  Indicates the purpose of the event - whether because scan started, succeeded, failed, etc.
 - **FeatureUpdatePause**  Failed Parse actions.
 - **IPVersion**  Indicates whether download took place on IPv4 or IPv6 (0-Unknown, 1-IPv4, 2-IPv6).
-- **IsWUfBDualScanEnabled**  Flag indicated is WU-for-Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Flag indicated is WU-for-Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag indicated is WU-for-Business targeted version is enabled on the device.
+- **IsWUfBDualScanEnabled**  Flag indicated is Windows Update for Business dual scan is enabled on the device.
+- **IsWUfBEnabled**  Flag indicated is Windows Update for Business is enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag indicated is Windows Update for Business targeted version is enabled on the device.
 - **MetadataIntegrityMode**  Mode of update transport metadata integrity check. 0-Unknown, 1-Ignoe, 2-Audit, 3-Enforce.
 - **NumberOfApplicationsCategoryScanEvaluated**  Number of categories (apps) for which an app update scan checked.
 - **NumberOfLoop**  Number of roundtrips the scan required.
@@ -6962,10 +6957,10 @@ The following fields are available:
 - **CommonProps**  A bitmask for future flags associated with the Windows Update client behavior. There is no value being reported in this field right now. Expected value for this field is 0.
 - **EventInstanceID**  A globally unique identifier for event instance.
 - **FeatureUpdatePause**  Indicates whether feature OS updates are paused on the device.
-- **IsWUfBDualScanEnabled**  Flag indicated is WU-for-Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Flag indicated is WU-for-Business is enabled on the device.
-- **IsWUfBFederatedScanDisabled**  Flag indicated is WU-for-Business FederatedScan is disabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag indicated is WU-for-Business targeted version is enabled on the device.
+- **IsWUfBDualScanEnabled**  Flag indicated is Windows Update for Business dual scan is enabled on the device.
+- **IsWUfBEnabled**  Flag indicated is Windows Update for Business is enabled on the device.
+- **IsWUfBFederatedScanDisabled**  Flag indicated is Windows Update for Business FederatedScan is disabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag indicated is Windows Update for Business targeted version is enabled on the device.
 - **ProcessName**  Process name of the caller who initiated API calls into the software distribution client.
 - **QualityUpdatePause**  Indicates whether quality OS updates are paused on the device.
 - **RelatedCV**  The previous correlation vector that was used by the client, before swapping with a new one.
@@ -6988,7 +6983,7 @@ The following fields are available:
 - **CommonProps**  A bitmask for future flags associated with the Windows Update client behavior. There is no value being reported in this field right now. Expected value for this field is 0.
 - **DeferralPolicySources**  Sources for any update deferral policies defined (GPO = 0x10, MDM = 0x100, Flight = 0x1000, UX = 0x10000).
 - **DeferredUpdates**  UpdateIds which are currently being deferred until a later time.
-- **DriverExclusionPolicy**  Indicates if policy for not including drivers with WU updates is enabled.
+- **DriverExclusionPolicy**  Indicates if policy for not including drivers with Windows Update (WU) updates is enabled.
 - **DriverSyncPassPerformed**  A flag indicating whether the driver sync is performed in a update scan.
 - **EventInstanceID**  A globally unique identifier for event instance.
 - **ExcludedUpdateClasses**  Update classifications being excluded via policy.
@@ -6999,9 +6994,9 @@ The following fields are available:
 - **FeatureUpdatePausePeriod**  Pause duration configured for feature OS updates on the device, in days.
 - **IntentPFNs**  Intended application-set metadata for atomic update scenarios.
 - **IPVersion**  Indicates whether download took place on IPv4 or IPv6 (0-Unknown, 1-IPv4, 2-IPv6).
-- **IsWUfBDualScanEnabled**  Flag indicated is WU-for-Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Flag indicated is WU-for-Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag indicated is WU-for-Business targeted version is enabled on the device.
+- **IsWUfBDualScanEnabled**  Flag indicated is Windows Update for Business dual scan is enabled on the device.
+- **IsWUfBEnabled**  Flag indicated is Windows Update for Business is enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag indicated is Windows Update for Business targeted version is enabled on the device.
 - **MetadataIntegrityMode**  Mode of update transport metadata integrity check. 0-Unknown, 1-Ignoe, 2-Audit, 3-Enforce.
 - **NumberOfApplicableUpdates**  Number of updates which were ultimately deemed applicable to the system after detection process is complete.
 - **NumberOfApplicationsCategoryScanEvaluated**  Number of categories (apps) for which an app update scan checked.
@@ -7136,9 +7131,9 @@ The following fields are available:
 - **HardwareId**  If this download was for a driver targeted to a particular device model, this ID indicates the model of the device.
 - **HostName**  Identifies the hostname.
 - **IPVersion**  Identifies the IP Connection Type version.
-- **IsWUfBDualScanEnabled**  Flag indicated is WU-for-Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Flag indicated is WU-for-Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag that indicates if the WU-for-Business target version policy is enabled on the device.
+- **IsWUfBDualScanEnabled**  Flag indicated is Windows Update for Business dual scan is enabled on the device.
+- **IsWUfBEnabled**  Flag indicated is Windows Update for Business is enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag that indicates if the Windows Update for Business target version policy is enabled on the device.
 - **NetworkCost**  Identifies the network cost.
 - **NetworkRestrictionStatus**  When download is done, identifies whether network switch happened to restricted.
 - **PackageFullName**  Package name of the content.
@@ -7192,9 +7187,9 @@ The following fields are available:
 - **HardwareId**  If this download was for a driver targeted to a particular device model, this ID indicates the model of the device.
 - **HostName**  Identifies the hostname.
 - **IPVersion**  Identifies the IP Connection Type version.
-- **IsWUfBDualScanEnabled**  Flag indicated is WU-for-Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Flag indicated is WU-for-Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag that indicates if the WU-for-Business target version policy is enabled on the device.
+- **IsWUfBDualScanEnabled**  Flag indicated is Windows Update for Business dual scan is enabled on the device.
+- **IsWUfBEnabled**  Flag indicated is Windows Update for Business is enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag that indicates if the Windows Update for Business target version policy is enabled on the device.
 - **NetworkCost**  Identifies the network cost.
 - **NetworkRestrictionStatus**  When download is done, identifies whether network switch happened to restricted.
 - **PackageFullName**  The package name of the content.
@@ -7234,9 +7229,9 @@ The following fields are available:
 - **FlightBuildNumber**  Indicates the build number of that flight.
 - **FlightId**  The specific id of the flight the device is getting.
 - **HardwareId**  If this download was for a driver targeted to a particular device model, this ID indicates the model of the device.
-- **IsWUfBDualScanEnabled**  Flag indicated is WU-for-Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Flag indicated is WU-for-Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag indicated is WU-for-Business targeted version is enabled on the device.
+- **IsWUfBDualScanEnabled**  Flag indicated is Windows Update for Business dual scan is enabled on the device.
+- **IsWUfBEnabled**  Flag indicated is Windows Update for Business is enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag indicated is Windows Update for Business targeted version is enabled on the device.
 - **PackageFullName**  The package name of the content.
 - **ProcessName**  Process name of the caller who initiated API calls into the software distribution client.
 - **QualityUpdatePause**  Indicates whether quality OS updates are paused on the device.
@@ -7269,9 +7264,9 @@ The following fields are available:
 - **FlightBuildNumber**  Indicates the build number of that flight.
 - **FlightId**  The specific id of the flight the device is getting.
 - **HardwareId**  If this download was for a driver targeted to a particular device model, this ID indicates the model of the device.
-- **IsWUfBDualScanEnabled**  Flag indicated is WU-for-Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Flag indicated is WU-for-Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag indicated is WU-for-Business targeted version is enabled on the device.
+- **IsWUfBDualScanEnabled**  Flag indicated is Windows Update for Business dual scan is enabled on the device.
+- **IsWUfBEnabled**  Flag indicated is Windows Update for Business is enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag indicated is Windows Update for Business targeted version is enabled on the device.
 - **PackageFullName**  The package name of the content.
 - **ProcessName**  Process name of the caller who initiated API calls into the software distribution client.
 - **QualityUpdatePause**  Indicates whether quality OS updates are paused on the device.
@@ -7317,9 +7312,9 @@ The following fields are available:
 - **HardwareId**  If this download was for a driver targeted to a particular device model, this ID indicates the model of the device.
 - **HostName**  The hostname URL the content is downloading from.
 - **IPVersion**  Indicates whether download took place on IPv4 or IPv6 (0-Unknown, 1-IPv4, 2-IPv6)
-- **IsWUfBDualScanEnabled**  Flag indicated is WU-for-Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Flag indicated is WU-for-Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag indicated is WU-for-Business targeted version is enabled on the device.
+- **IsWUfBDualScanEnabled**  Flag indicated is Windows Update for Business dual scan is enabled on the device.
+- **IsWUfBEnabled**  Flag indicated is Windows Update for Business is enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag indicated is Windows Update for Business targeted version is enabled on the device.
 - **NetworkCost**  A flag indicating the cost of the network being used for downloading the update content. That could be one of the following values0x0 : Unkown0x1 : Network cost is unrestricted0x2 : Network cost is fixed0x4 : Network cost is variable0x10000 : Network cost over data limit0x20000 : Network cost congested0x40000 : Network cost roaming0x80000 : Network cost approaching data limit.
 - **NetworkRestrictionStatus**  More general version of NetworkCostBitMask, specifying whether Windows considered the current network to be “metered”.
 - **PackageFullName**  The package name of the content.
@@ -7360,9 +7355,9 @@ The following fields are available:
 - **FlightBuildNumber**  Indicates the build number of that flight.
 - **FlightId**  The specific id of the flight the device is getting.
 - **HardwareId**  If this download was for a driver targeted to a particular device model, this ID indicates the model of the device.
-- **IsWUfBDualScanEnabled**  Flag indicated is WU-for-Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Flag indicated is WU-for-Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag that indicates if the WU-for-Business target version policy is enabled on the device.
+- **IsWUfBDualScanEnabled**  Flag indicated is Windows Update for Business dual scan is enabled on the device.
+- **IsWUfBEnabled**  Flag indicated is Windows Update for Business is enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag that indicates if the Windows Update for Business target version policy is enabled on the device.
 - **PackageFullName**  The package name of the content.
 - **ProcessName**  Process name of the caller who initiated API calls into the software distribution client.
 - **QualityUpdatePause**  Indicates whether quality OS updates are paused on the device.
@@ -7409,9 +7404,9 @@ The following fields are available:
 - **IsFinalOutcomeEvent**  Indicates if this event signal the end of the update/upgrade process.
 - **IsFirmware**  Indicates whether an update was a firmware update.
 - **IsSuccessFailurePostReboot**  Indicates whether an initial success was then a failure after a reboot.
-- **IsWUfBDualScanEnabled**  Flag indicated is WU-for-Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Flag indicated is WU-for-Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag that indicates if the WU-for-Business target version policy is enabled on the device.
+- **IsWUfBDualScanEnabled**  Flag indicated is Windows Update for Business dual scan is enabled on the device.
+- **IsWUfBEnabled**  Flag indicated is Windows Update for Business is enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag that indicates if the Windows Update for Business target version policy is enabled on the device.
 - **MergedUpdate**  Indicates whether an OS update and a BSP update were merged for install.
 - **MsiAction**  Stage of MSI installation where it failed.
 - **MsiProductCode**  Unique identifier of the MSI installer.
@@ -7465,9 +7460,9 @@ The following fields are available:
 - **IsFinalOutcomeEvent**  Indicates if this event signal the end of the update/upgrade process.
 - **IsFirmware**  Indicates whether an update was a firmware update.
 - **IsSuccessFailurePostReboot**  Indicates whether an initial success was then a failure after a reboot.
-- **IsWUfBDualScanEnabled**  Flag indicated is WU-for-Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Flag indicated is WU-for-Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag that indicates if the WU-for-Business target version policy is enabled on the device.
+- **IsWUfBDualScanEnabled**  Flag indicated is Windows Update for Business dual scan is enabled on the device.
+- **IsWUfBEnabled**  Flag indicated is Windows Update for Business is enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag that indicates if the Windows Update for Business target version policy is enabled on the device.
 - **MergedUpdate**  Indicates whether an OS update and a BSP update were merged for install.
 - **MsiAction**  Stage of MSI installation where it failed.
 - **MsiProductCode**  Unique identifier of the MSI installer.
@@ -7521,9 +7516,9 @@ The following fields are available:
 - **IsFinalOutcomeEvent**  Indicates if this event signal the end of the update/upgrade process.
 - **IsFirmware**  Indicates whether an update was a firmware update.
 - **IsSuccessFailurePostReboot**  Indicates whether an initial success was then a failure after a reboot.
-- **IsWUfBDualScanEnabled**  Flag indicated is WU-for-Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Flag indicated is WU-for-Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag that indicates if the WU-for-Business target version policy is enabled on the device.
+- **IsWUfBDualScanEnabled**  Flag indicated is Windows Update for Business dual scan is enabled on the device.
+- **IsWUfBEnabled**  Flag indicated is Windows Update for Business is enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag that indicates if the Windows Update for Business target version policy is enabled on the device.
 - **MergedUpdate**  Indicates whether an OS update and a BSP update were merged for install.
 - **MsiAction**  Stage of MSI installation where it failed.
 - **MsiProductCode**  Unique identifier of the MSI installer.
@@ -7577,9 +7572,9 @@ The following fields are available:
 - **IsFinalOutcomeEvent**  Indicates if this event signal the end of the update/upgrade process.
 - **IsFirmware**  Indicates whether an update was a firmware update.
 - **IsSuccessFailurePostReboot**  Indicates whether an initial success was then a failure after a reboot.
-- **IsWUfBDualScanEnabled**  Flag indicated is WU-for-Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Flag indicated is WU-for-Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag that indicates if the WU-for-Business target version policy is enabled on the device.
+- **IsWUfBDualScanEnabled**  Flag indicated is Windows Update for Business dual scan is enabled on the device.
+- **IsWUfBEnabled**  Flag indicated is Windows Update for Business is enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag that indicates if the Windows Update for Business target version policy is enabled on the device.
 - **MergedUpdate**  Indicates whether an OS update and a BSP update were merged for install.
 - **MsiAction**  Stage of MSI installation where it failed.
 - **MsiProductCode**  Unique identifier of the MSI installer.
@@ -7633,9 +7628,9 @@ The following fields are available:
 - **IsFinalOutcomeEvent**  Indicates if this event signal the end of the update/upgrade process.
 - **IsFirmware**  Indicates whether an update was a firmware update.
 - **IsSuccessFailurePostReboot**  Indicates whether an initial success was then a failure after a reboot.
-- **IsWUfBDualScanEnabled**  Flag indicated is WU-for-Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Flag indicated is WU-for-Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag that indicates if the WU-for-Business target version policy is enabled on the device.
+- **IsWUfBDualScanEnabled**  Flag indicated is Windows Update for Business dual scan is enabled on the device.
+- **IsWUfBEnabled**  Flag indicated is Windows Update for Business is enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag that indicates if the Windows Update for Business target version policy is enabled on the device.
 - **MergedUpdate**  Indicates whether an OS update and a BSP update were merged for install.
 - **MsiAction**  Stage of MSI installation where it failed.
 - **MsiProductCode**  Unique identifier of the MSI installer.
@@ -7686,9 +7681,9 @@ The following fields are available:
 - **IsFinalOutcomeEvent**  Indicates if this event signal the end of the update/upgrade process.
 - **IsFirmware**  Indicates whether an update was a firmware update.
 - **IsSuccessFailurePostReboot**  Indicates whether an initial success was then a failure after a reboot.
-- **IsWUfBDualScanEnabled**  Flag indicated is WU-for-Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Flag indicated is WU-for-Business dual scan is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag that indicates if the WU-for-Business target version policy is enabled on the device.
+- **IsWUfBDualScanEnabled**  Flag indicated is Windows Update for Business dual scan is enabled on the device.
+- **IsWUfBEnabled**  Flag indicated is Windows Update for Business dual scan is enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag that indicates if the Windows Update for Business target version policy is enabled on the device.
 - **MergedUpdate**  Indicates whether an OS update and a BSP update were merged for install.
 - **ProcessName**  Process name of the caller who initiated API calls into the software distribution client.
 - **QualityUpdatePause**  Indicates whether quality OS updates are paused on the device.
@@ -7735,9 +7730,9 @@ The following fields are available:
 - **IsFinalOutcomeEvent**  Indicates if this event signal the end of the update/upgrade process.
 - **IsFirmware**  Indicates whether an update was a firmware update.
 - **IsSuccessFailurePostReboot**  Indicates whether an initial success was then a failure after a reboot.
-- **IsWUfBDualScanEnabled**  Flag indicated is WU-for-Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Flag indicated is WU-for-Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag that indicates if the WU-for-Business target version policy is enabled on the device.
+- **IsWUfBDualScanEnabled**  Flag indicated is Windows Update for Business dual scan is enabled on the device.
+- **IsWUfBEnabled**  Flag indicated is Windows Update for Business is enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag that indicates if the Windows Update for Business target version policy is enabled on the device.
 - **MergedUpdate**  Indicates whether an OS update and a BSP update were merged for install.
 - **ProcessName**  Process name of the caller who initiated API calls into the software distribution client.
 - **QualityUpdatePause**  Indicates whether quality OS updates are paused on the device.
@@ -7784,9 +7779,9 @@ The following fields are available:
 - **IsFinalOutcomeEvent**  Indicates if this event signal the end of the update/upgrade process.
 - **IsFirmware**  Indicates whether an update was a firmware update.
 - **IsSuccessFailurePostReboot**  Indicates whether an initial success was then a failure after a reboot.
-- **IsWUfBDualScanEnabled**  Flag indicated is WU-for-Business dual scan is enabled on the device.
-- **IsWUfBEnabled**  Flag indicated is WU-for-Business is enabled on the device.
-- **IsWUfBTargetVersionEnabled**  Flag that indicates if the WU-for-Business target version policy is enabled on the device.
+- **IsWUfBDualScanEnabled**  Flag indicated is Windows Update for Business dual scan is enabled on the device.
+- **IsWUfBEnabled**  Flag indicated is Windows Update for Business is enabled on the device.
+- **IsWUfBTargetVersionEnabled**  Flag that indicates if the Windows Update for Business target version policy is enabled on the device.
 - **MergedUpdate**  Indicates whether an OS update and a BSP update were merged for install.
 - **ProcessName**  Process name of the caller who initiated API calls into the software distribution client.
 - **QualityUpdatePause**  Indicates whether quality OS updates are paused on the device.
@@ -8139,7 +8134,7 @@ This event sends data specific to the FixAppXReparsePoints mitigation used for O
 
 The following fields are available:
 
-- **ClientId**  In the WU scenario, this will be the WU client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
+- **ClientId**  In the Windows Update  scenario, this will be the Windows Update  client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
 - **FlightId**  Unique identifier for each flight.
 - **InstanceId**  Unique GUID that identifies each instances of setuphost.exe.
 - **MitigationScenario**  The update scenario in which the mitigation was executed.
@@ -8161,7 +8156,7 @@ This event sends data specific to the FixupWimmountSysPath mitigation used for O
 
 The following fields are available:
 
-- **ClientId**  In the WU scenario, this will be the WU client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
+- **ClientId**  In the Windows Update  scenario, this will be the Windows Update  client ID that is passed to Setup. In Media setup, default value is Media360, but can be overwritten by the caller to a unique value.
 - **FlightId**  Unique identifier for each flight.
 - **ImagePathDefault**  Default path to wimmount.sys driver defined in the system registry.
 - **ImagePathFixedup**  Boolean indicating whether the wimmount.sys driver path was fixed by this mitigation.

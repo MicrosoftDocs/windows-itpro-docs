@@ -42,7 +42,7 @@ The Security Compliance Toolkit consists of:
 
 -   Microsoft Office security baseline
     -   Office 2016 
-    -   Microsoft 365 Apps for Enterprise Version 2112
+    -   Microsoft 365 Apps for Enterprise Version 2206
     
 -   Microsoft Edge security baseline
     -   Edge version 98
