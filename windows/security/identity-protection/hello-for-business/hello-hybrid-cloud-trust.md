@@ -18,7 +18,7 @@ Applies to
 - Windows 10, version 21H2
 - Windows 11 and later
 
-Windows Hello for Business replaces username and password Windows sign in with strong authentication using an asymmetric key pair. The following deployment guide provides the information needed to successfully deploy Windows Hello for Business in a hybrid cloud trust scenario.
+Windows Hello for Business replaces username and password Windows sign-in with strong authentication using an asymmetric key pair. The following deployment guide provides the information needed to successfully deploy Windows Hello for Business in a hybrid cloud trust scenario.
 
 ## Introduction to Cloud Trust
 
