@@ -2,10 +2,6 @@
 title: Local Accounts (Windows 10)
 description: Learn how to secure and manage access to the resources on a standalone or member server for services or users.
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp

@@ -1,7 +1,6 @@
 ---
 title: DeviceStatus CSP
 description: Learn how the DeviceStatus configuration service provider keeps track of device inventory and queries the compliance state of devices within the enterprise.
-ms.assetid: 039B2010-9290-4A6E-B77B-B2469B482360
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -20,6 +19,7 @@ The table below shows the applicability of Windows:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|

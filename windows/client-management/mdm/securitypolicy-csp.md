@@ -1,7 +1,6 @@
 ---
 title: SecurityPolicy CSP
 description: The SecurityPolicy CSP is used to configure security policy settings for WAP push, OMA DM, Service Indication (SI), Service Loading (SL), and MMS.
-ms.assetid: 6014f8fe-f91b-49f3-a357-bdf625545bc9
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -20,6 +19,7 @@ The table below shows the applicability of Windows:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|

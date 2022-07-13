@@ -14,8 +14,6 @@ manager: dansimp
 
 # Policy CSP - NewsAndInterests
 
-
-
 <hr/>
 
 <!--Policies-->
@@ -25,8 +23,6 @@ manager: dansimp
   <dd>
     <a href="#newsandinterests-allownewsandinterests">NewsAndInterests/AllowNewsAndInterests</a>
   </dd>
-
-
 
 <hr/>
 
@@ -38,10 +34,11 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+|Pro|No|Yes|
+|Windows SE|No|Yes|
+|Business|No|Yes|
+|Enterprise|No|Yes|
+|Education|No|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -65,7 +62,7 @@ This policy specifies whether to allow the entire widgets experience, including 
 
 The following are the supported values:
 
-- 1 - Default - Allowed
+- 1 - Default - Allowed.
 - 0 - Not allowed.
 
 <!--/SupportedValues-->
@@ -82,5 +79,8 @@ ADMX Info:
 
 <hr/>
 
-
 <!--/Policies-->
+
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

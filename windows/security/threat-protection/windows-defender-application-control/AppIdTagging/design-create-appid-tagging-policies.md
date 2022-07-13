@@ -27,11 +27,11 @@ ms.technology: windows-sec
 -   Windows Server 2016 and above
 
 > [!NOTE]
-> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
+> Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
 ## Create the policy using the WDAC Wizard
 
-You can use the WDAC Wizard and the PowerShell commands to create an application control policy and convert it to an AppIdTagging policy. The WDAC Wizard is available for download at the [WDAC Wizard Installer site](https://aka.ms/wdacwizard). These PowerShell commands are only available on the supported platforms listed in [AppId Tagging Guide](./windows-defender-application-control-appid-tagging-guide.md).
+You can use the Windows Defender Application Control (WDAC) Wizard and the PowerShell commands to create an application control policy and convert it to an AppIdTagging policy. The WDAC Wizard is available for download at the [WDAC Wizard Installer site](https://aka.ms/wdacwizard). These PowerShell commands are only available on the supported platforms listed in [AppId Tagging Guide](./windows-defender-application-control-appid-tagging-guide.md).
 
 1. Create a new base policy using the templates:
 

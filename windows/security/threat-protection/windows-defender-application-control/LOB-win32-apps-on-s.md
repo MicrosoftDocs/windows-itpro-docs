@@ -1,6 +1,6 @@
 ---
 title: Allow LOB Win32 Apps on Intune-Managed S Mode Devices (Windows)
-description: Using WDAC supplemental policies, you can expand the S mode base policy on your Intune-managed devices.
+description: Using Windows Defender Application Control (WDAC) supplemental policies, you can expand the S mode base policy on your Intune-managed devices.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: m365-security
@@ -26,7 +26,7 @@ ms.technology: windows-sec
 -   Windows 11
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+>Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
 Beginning with the Windows 10 November 2019 update (build 18363), Microsoft Intune enables customers to deploy and run business critical Win32 applications and Windows components that are normally blocked in S mode (ex. PowerShell.exe) on their Intune-managed Windows in S mode devices.
 
@@ -39,7 +39,7 @@ Refer to the below video for an overview and brief demo.
 ![Policy Authorization.](images/wdac-intune-policy-authorization.png)
 The general steps for expanding the S mode base policy on your Intune-managed devices are to generate a supplemental policy, sign that policy, and then upload the signed policy to Intune and assign it to user or device groups. Because you need access to WDAC PowerShell cmdlets to generate your supplemental policy, you should create and manage your policies on a non-S mode device. Once the policy has been uploaded to Intune, we recommend assigning it to a single test S-mode device to verify expected functioning before deploying the policy more broadly.
 
-1. Generate a supplemental policy with WDAC tooling
+1. Generate a supplemental policy with Windows Defender Application Control tooling
 
     This policy will expand the S mode base policy to authorize additional applications. Anything authorized by either the S mode base policy or your supplemental policy will be allowed to run. Your supplemental policies can specify filepath rules, trusted publishers, and more. 
     
@@ -63,7 +63,7 @@ The general steps for expanding the S mode base policy on your Intune-managed de
         Set-RuleOption -FilePath "<path>\SupplementalPolicy.xml>" -Option 3 –Delete
         ```
         This deletes the 'audit mode' qualifier.
-    -  Since you'll be signing your policy, you must authorize the signing certificate you will use to sign the policy and optionally one or more additional signers that can be used to sign updates to the policy in the future. For more information, refer to Section 2, Sign policy. Use Add-SignerRule to add the signing certificate to the WDAC policy: 
+    -  Since you'll be signing your policy, you must authorize the signing certificate you will use to sign the policy and optionally one or more additional signers that can be used to sign updates to the policy in the future. For more information, refer to Section 2, Sign policy. Use Add-SignerRule to add the signing certificate to the Windows Defender Application Control policy: 
        
         ```powershell
         Add-SignerRule -FilePath <policypath> -CertificatePath <certpath> -User -Update
@@ -76,7 +76,7 @@ The general steps for expanding the S mode base policy on your Intune-managed de
 
 2. Sign policy
     
-    Supplemental S mode policies must be digitally signed. To sign your policy, you can choose to use the Device Guard Signing Service (DGSS) or your organization's custom Public Key Infrastructure (PKI). Refer to [Use the Device Guard Signing Portal in the Microsoft Store for Business](use-device-guard-signing-portal-in-microsoft-store-for-business.md) for guidance on using DGSS and [Create a code signing cert for WDAC](create-code-signing-cert-for-windows-defender-application-control.md) for guidance on signing using an internal CA.
+    Supplemental S mode policies must be digitally signed. To sign your policy, you can choose to use the Device Guard Signing Service (DGSS) or your organization's custom Public Key Infrastructure (PKI). Refer to [Use the Device Guard Signing Portal in the Microsoft Store for Business](use-device-guard-signing-portal-in-microsoft-store-for-business.md) for guidance on using DGSS and [Create a code signing cert for Windows Defender Application Control](create-code-signing-cert-for-windows-defender-application-control.md) for guidance on signing using an internal CA.
 
     Rename your policy to "{PolicyID}.p7b" after you've signed it. PolicyID can be found by inspecting the Supplemental Policy XML.
 

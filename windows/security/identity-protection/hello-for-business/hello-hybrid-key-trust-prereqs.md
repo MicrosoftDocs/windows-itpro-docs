@@ -1,12 +1,7 @@
 ---
 title: Hybrid Azure AD joined Key trust Windows Hello for Business Prerequisites (Windows Hello for Business)
 description: Learn about the prerequisites for hybrid Windows Hello for Business deployments using key trust and what the next steps are in the deployment process.
-keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, key-trust
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
 author: mapalko
 ms.author: prsriva
 manager: dansimp
@@ -83,7 +78,7 @@ The minimum required Enterprise certificate authority that can be used with Wind
 > [!IMPORTANT]
 > For Azure AD joined device to authenticate to and use on-premises resources, ensure you:
 > * Install the root certificate authority certificate for your organization in the user's trusted root certificate store.
-> * Publish your certificate revocation list to a location that is available to Azure AD joined devices, such as a web-based url.
+> * Publish your certificate revocation list to a location that is available to Azure AD-joined devices, such as a web-based url.
 
 ### Section Review
 > [!div class="checklist"]  

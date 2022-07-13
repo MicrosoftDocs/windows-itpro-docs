@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_UserProfiles
-description: Policy CSP - ADMX_UserProfiles
+description: Learn about Policy CSP - ADMX_UserProfiles.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -63,8 +63,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -111,8 +112,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -159,8 +161,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -209,8 +212,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -260,8 +264,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -309,8 +314,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -358,8 +364,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -412,8 +419,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -435,7 +443,6 @@ This setting prevents users from managing the ability to allow apps to access th
 If you enable this policy setting, sharing of user name, picture and domain information may be controlled by setting one of the following options:
 
 - "Always on" - users won't be able to change this setting and the user's name and account picture will be shared with apps (not desktop apps). In addition apps (not desktop apps) that have the enterprise authentication capability will also be able to retrieve the user's UPN, SIP/URI, and DNS.
-
 - "Always off" - users won't be able to change this setting and the user's name and account picture won't be shared with apps (not desktop apps). In addition apps (not desktop apps) that have the enterprise authentication capability won't be able to retrieve the user's UPN, SIP/URI, and DNS. Selecting this option may have a negative impact on certain enterprise software and/or line of business apps that depend on the domain information protected by this setting to connect with network resources.
 
 If you don't configure or disable this policy the user will have full control over this setting and can turn it off and on. Selecting this option may have a negative impact on certain enterprise software and/or line of business apps that depend on the domain information protected by this setting to connect with network resources if users choose to turn off the setting.
@@ -455,3 +462,7 @@ ADMX Info:
 <hr/>
 
 <!--/Policies-->
+
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

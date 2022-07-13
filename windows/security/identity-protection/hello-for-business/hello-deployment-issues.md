@@ -1,13 +1,8 @@
 ---
 title: Windows Hello for Business Deployment Known Issues
 description: A Troubleshooting Guide for Known Windows Hello for Business Deployment Issues
-keywords: identity, PIN, biometric, Hello, passport
 params: siblings_only
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
 author: GitPrakhar13
 ms.author: prsriva
 manager: dansimp
@@ -29,7 +24,7 @@ Applies to:
 - Windows 10, version 1803 and later
 - Windows 11
 
-PIN reset on Azure AD joined devices uses a flow called web sign-in to authenticate the user above lock. Web sign in only allows navigation to specific domains. If it attempts to navigate to a domain that is not allowed it will show a page with the error message "We can't open that page right now".
+PIN reset on Azure AD-joined devices uses a flow called web sign-in to authenticate the user above lock. Web sign in only allows navigation to specific domains. If it attempts to navigate to a domain that is not allowed it will show a page with the error message "We can't open that page right now".
 
 ### Identifying Azure AD joined PIN Reset Allowed Domains Issue
 
@@ -124,7 +119,7 @@ Domain controllers running early versions of Windows Server 2019 have an issue t
 
 On the client, authentication with Windows Hello for Business will fail with the error message, *"That option is temporarily unavailable. For now, please use a different method to sign in."*
 
-This error is usually presented on hybrid Azure AD joined devices in key trust deployments after Windows Hello for Business has been provisioned but before a user's key has synced from Azure AD to AD. If a user's key has been synced from Azure AD and the msDS-keycredentiallink attribute on the user object in AD has been populated for NGC, then it is possible that this error case is occurring.
+This error is usually presented on hybrid Azure AD-joined devices in key trust deployments after Windows Hello for Business has been provisioned but before a user's key has synced from Azure AD to AD. If a user's key has been synced from Azure AD and the msDS-keycredentiallink attribute on the user object in AD has been populated for NGC, then it is possible that this error case is occurring.
 
 The other indicator of this failure case can be identified using network traces. If network traces are captured for a key trust sign-in event, the traces will show kerberos failing with the error KDC_ERR_CLIENT_NAME_MISMATCH.
 
@@ -158,8 +153,8 @@ User:          <User SID>
 Computer:      <Computer name>
 Description:
 Windows Hello for Business provisioning will not be launched.
-Device is AAD joined ( AADJ or DJ++ ): Yes
-User has logged on with AAD credentials: Yes
+Device is Azure Active Directory-joined ( AADJ or DJ++ ): Yes
+User has logged on with Azure Active Directory credentials: Yes
 Windows Hello for Business policy is enabled: Yes
 Windows Hello for Business post-logon provisioning is enabled: Yes
 Local computer meets Windows hello for business hardware requirements: Yes

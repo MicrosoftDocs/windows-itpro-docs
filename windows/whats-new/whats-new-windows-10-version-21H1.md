@@ -1,11 +1,7 @@
 ---
 title: What's new in Windows 10, version 21H1
 description: New and updated features in Windows 10, version 21H1 (also known as the Windows 10 May 2021 Update).
-keywords: ["What's new in Windows 10", "Windows 10", "May 2021 Update"]
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-audience: itpro
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby

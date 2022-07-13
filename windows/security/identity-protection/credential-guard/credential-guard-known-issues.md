@@ -2,11 +2,7 @@
 title: Windows Defender Credential Guard - Known issues (Windows)
 description: Windows Defender Credential Guard - Known issues in Windows Enterprise
 ms.prod: m365-security
-ms.mktglfcycl: explore
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp

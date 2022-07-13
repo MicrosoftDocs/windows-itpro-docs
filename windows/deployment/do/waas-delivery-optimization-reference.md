@@ -3,10 +3,7 @@ title: Delivery Optimization reference
 ms.reviewer: 
 manager: dougeby
 description: This article provides a summary of references and descriptions for all of the Delivery Optimization settings.
-keywords: oms, operations management suite, wdav, updates, downloads, log analytics
 ms.prod: w10
-ms.mktglfcycl: deploy
-audience: itpro
 author: carmenf
 ms.localizationpriority: medium
 ms.author: carmenf
@@ -124,7 +121,7 @@ Download mode dictates which download sources clients are allowed to use when do
 > Starting in Windows 11, the Bypass option of Download Mode is no longer used.
 >
 > [!NOTE]
-> When you use AAD tenant, AD Site, or AD Domain as the source of group IDs, the association of devices participating in the group should not be relied on for an authentication of identity of those devices.
+> When you use Azure Active Directory tenant, AD Site, or AD Domain as the source of group IDs, the association of devices participating in the group should not be relied on for an authentication of identity of those devices.
 
 ### Group ID
 

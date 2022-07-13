@@ -1,7 +1,6 @@
 ---
 title: CertificateStore CSP
 description: Use the CertificateStore configuration service provider (CSP) to add secure socket layers (SSL), intermediate, and self-signed certificates.
-ms.assetid: 0fe28629-3cc3-42a0-91b3-3624c8462fd3
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -20,6 +19,7 @@ The table below shows the applicability of Windows:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|

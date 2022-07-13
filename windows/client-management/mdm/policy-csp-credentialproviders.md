@@ -51,6 +51,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -104,6 +105,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -128,7 +130,8 @@ If you enable this policy setting, a domain user can't set up or sign in with a 
 
 If you disable or don't configure this policy setting, a domain user can set up and use a picture password.
 
-Note that the user's domain password will be cached in the system vault when using this feature.
+> [!NOTE]
+> The user's domain password will be cached in the system vault when using this feature.
 
 <!--/Description-->
 
@@ -154,6 +157,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -180,8 +184,8 @@ The Autopilot Reset feature allows admin to reset devices to a known good manage
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 - Enable the visibility of the credentials for Autopilot Reset
-- 1 - Disable visibility of the credentials for Autopilot Reset
+0 - Enable the visibility of the credentials for Autopilot Reset
+1 - Disable visibility of the credentials for Autopilot Reset
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -191,3 +195,6 @@ The following list shows the supported values:
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

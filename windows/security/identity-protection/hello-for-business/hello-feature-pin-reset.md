@@ -1,12 +1,7 @@
 ---
 title: Pin Reset
 description: Learn how Microsoft PIN reset services enables you to help users recover who have forgotten their PIN.
-keywords: identity, PIN, Hello, passport, WHFB, hybrid, cert-trust, device, reset
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
 author: GitPrakhar13
 ms.author: prsriva
 manager: dansimp
@@ -39,7 +34,7 @@ There are two forms of PIN reset called destructive and non-destructive. Destruc
 Destructive and non-destructive PIN reset use the same entry points for initiating a PIN reset. If a user has forgotten their PIN, but has an alternate logon method, they can navigate to Sign-in options in Settings and initiate a PIN reset from the PIN options. If they do not have an alternate way to sign into their device, PIN reset can also be initiated from above the lock screen in the PIN credential provider.
 
 >[!IMPORTANT]
->For hybrid Azure AD joined devices, users must have corporate network connectivity to domain controllers to complete destructive PIN reset. If AD FS is being used for certificate trust or for on-premises only deployments, users must also have corporate network connectivity to federation services to reset their PIN.
+>For hybrid Azure AD-joined devices, users must have corporate network connectivity to domain controllers to complete destructive PIN reset. If AD FS is being used for certificate trust or for on-premises only deployments, users must also have corporate network connectivity to federation services to reset their PIN.
 
 ### Reset PIN from Settings
 
@@ -49,7 +44,7 @@ Destructive and non-destructive PIN reset use the same entry points for initiati
 
 ### Reset PIN above the Lock Screen
 
-For Azure AD joined devices:
+For Azure AD-joined devices:
 
 1. If the PIN credential provider is not selected, expand the **Sign-in options** link, and select the PIN pad icon.
 1. Click **I forgot my PIN** from the PIN credential provider.
@@ -57,7 +52,7 @@ For Azure AD joined devices:
 1. Follow the instructions provided by the provisioning process.
 1. When finished, unlock your desktop using your newly created PIN.
 
-For Hybrid Azure AD joined devices:
+For Hybrid Azure AD-joined devices:
 
 1. If the PIN credential provider is not selected, expand the **Sign-in options** link, and select the PIN pad icon.
 1. Click **I forgot my PIN** from the PIN credential provider.
@@ -66,7 +61,7 @@ For Hybrid Azure AD joined devices:
 1. When finished, unlock your desktop using your newly created PIN.
 
 > [!NOTE]
-> Key trust on hybrid Azure AD joined devices does not support destructive PIN reset from above the Lock Screen. This is due to the sync delay between when a user provisions their Windows Hello for Business credential and being able to use it for sign-in. For this deployment model, you must deploy non-destructive PIN reset for above lock PIN reset to work.
+> Key trust on hybrid Azure AD-joined devices does not support destructive PIN reset from above the Lock Screen. This is due to the sync delay between when a user provisions their Windows Hello for Business credential and being able to use it for sign-in. For this deployment model, you must deploy non-destructive PIN reset for above lock PIN reset to work.
 
 You may find that PIN reset from settings only works post login, and that the "lock screen" PIN reset function will not work if you have any matching limitation of SSPR password reset from the lock screen. For more information, see [Enable Azure Active Directory self-service password reset at the Windows sign-in screen - General ](/azure/active-directory/authentication/howto-sspr-windows#general-limitations).
 
@@ -193,7 +188,7 @@ The PIN reset configuration for a user can be viewed by running [**dsregcmd /sta
 - Windows 11
 - Azure AD joined
 
-The [ConfigureWebSignInAllowedUrls](/windows/client-management/mdm/policy-csp-authentication#authentication-configurewebsigninallowedurls) policy allows you to specify a list of domains that are allowed to be navigated to during PIN reset flows on Azure AD joined devices. If you have a federated environment and authentication is handled using AD FS or a third-party identity provider, this policy should be set to ensure that authentication pages from that identity provider can be used during Azure AD joined PIN reset.
+The [ConfigureWebSignInAllowedUrls](/windows/client-management/mdm/policy-csp-authentication#authentication-configurewebsigninallowedurls) policy allows you to specify a list of domains that are allowed to be navigated to during PIN reset flows on Azure AD-joined devices. If you have a federated environment and authentication is handled using AD FS or a third-party identity provider, this policy should be set to ensure that authentication pages from that identity provider can be used during Azure AD joined PIN reset.
 
 ### Configuring Policy Using Intune
 

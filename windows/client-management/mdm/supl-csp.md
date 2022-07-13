@@ -1,7 +1,6 @@
 ---
 title: SUPL CSP
 description: Learn how the SUPL configuration service provider (CSP) is used to configure the location client.
-ms.assetid: afad0120-1126-4fc5-8e7a-64b9f2a5eae1
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -14,10 +13,13 @@ ms.date: 09/12/2019
 
 # SUPL CSP
 
+The SUPL configuration service provider is used to configure the location client, as shown in the following:
+
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -40,7 +42,7 @@ The SUPL configuration service provider is used to configure the location client
     - Address of the server—a mobile positioning center for non-trusted mode.
     - The positioning method used by the MPC for non-trusted mode.
 
-The SUPL or V2 UPL connection will be reconfigured every time the device is rebooted, a new UICC is inserted, or new settings are provisioned by using OMA Client Provisioning, OMA DM, or test tools. When the device is in roaming mode, it reverts to Mobile Station Standalone mode, in which only the built–in Microsoft location components are used.
+The SUPL or V2 UPL connection will be reconfigured every time the device is rebooted. A new UICC is inserted, or new settings are provisioned by using OMA Client Provisioning, OMA DM, or test tools. When the device is in roaming mode, it reverts to Mobile Station Standalone mode, in which only the built–in Microsoft location components are used.
 
 The following example shows the SUPL configuration service provider management object in tree format as used by OMA DM and OMA Client Provisioning.
 
@@ -91,7 +93,7 @@ Optional. Specifies the address of the Home SUPL Location Platform (H-SLP) serve
 
 If this value isn't specified, the device infers the H-SLP address from the IMSI as defined in the SUPL standard. To use automatic generation of the H-SLP address based on the IMSI, the MNC length must be set correctly on the UICC. Generally, this value is 2 or 3.
 
-For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
+For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned. But the configuration service provider will continue processing the rest of the parameters.
 
 <a href="" id="version"></a>**Version**  
 Optional. Determines the major version of the SUPL protocol to use. For SUPL 1.0.0, set this value to 1. For SUPL 2.0.0, set this value to 2. The default is 1. Refer to FullVersion to define the minor version and the service indicator.
@@ -104,7 +106,7 @@ Required. List all of the MCC and MNC pairs owned by the mobile operator. This l
 
 This value is a string with the format `(X1, Y1)(X2, Y2)…(Xn, Yn)`, in which `X` is an MCC and `Y` is an MNC.
 
-For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
+For OMA DM, if the format for this node is incorrect then an entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
 
 <a href="" id="highaccpositioningmethod"></a>**HighAccPositioningMethod**  
 Optional. Specifies the positioning method that the SUPL client will use for mobile originated position requests. The value can be one of the following integers:
@@ -118,14 +120,12 @@ Optional. Specifies the positioning method that the SUPL client will use for mob
 |4|OTDOA|
 |5|AFLT|
 
-
 The default is 0. The default method in Windows devices provides high-quality assisted GNSS positioning for mobile originated position requests without loading the mobile operator’s network or location services.
 
 > [!IMPORTANT]
 > The Mobile Station Assisted, OTDOA, and AFLT positioning methods must only be configured for test purposes.
 
- 
-For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
+For OMA DM, if the format for this node is incorrect then an entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
 
 <a href="" id="locmasterswitchdependencynii"></a>**LocMasterSwitchDependencyNII**  
 Optional. Boolean. Specifies whether the location toggle on the **location** screen in **Settings** is also used to manage SUPL network-initiated (NI) requests for location. If the value is set to 0, the NI behavior is independent from the current location toggle setting. If the value is set to 1, the NI behavior follows the current location toggle setting. The default value is 1.
@@ -153,12 +153,12 @@ However, if `privacyOverride` is set in the message, the location will be return
 
 When the location toggle is set to Off and this value is set to 0, the location toggle doesn't prevent SUPL network-initiated requests from working.
 
-For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
+For OMA DM, if the format for this node is incorrect then an entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
 
 <a href="" id="nidefaulttimeout"></a>**NIDefaultTimeout**  
-Optional. Time in seconds that the network-initiated location request is displayed to the user, while awaiting a response and before doing the default action. The default is 30 seconds. A value between 20 and 60 seconds is recommended.
+Optional. Time in seconds. It defines that the network-initiated location request is displayed to the user, while awaiting a response and before doing the default action. The default is 30 seconds. A value between 20 and 60 seconds is recommended.
 
-This value manages the settings for both SUPL and v2 UPL. If a device is configured for both SUPL and V2 UPL and these values differ, the SUPL setting will always be used.
+This value manages the settings for SUPL and v2 UPL. If a device is configured for both SUPL and V2 UPL, then these values will differ, and the SUPL setting will always be used.
 
 <a href="" id="serveraccessinterval"></a>**ServerAccessInterval**  
 Optional. Integer. Defines the minimum interval of time in seconds between mobile originated requests sent to the server to prevent overloading the mobile operator's network. The default value is 60.
@@ -221,10 +221,10 @@ Added in Windows 10, version 1809. The base 64 encoded blob of the H-SLP root ce
 Required for V2 UPL for CDMA. Specifies the account settings for user plane location and IS-801 for CDMA. Only one account is supported at a given time.
 
 <a href="" id="mpc"></a>**MPC**  
-Optional. The address of the mobile positioning center (MPC), in the format *ipAddress*: *portNumber*. For non-trusted mode of operation, this parameter is mandatory and the PDE parameter must be empty.
+Optional. Specifies the address of the mobile positioning center (MPC), in the format *ipAddress*: *portNumber*. For non-trusted mode of operation, this parameter is mandatory and the PDE parameter must be empty.
 
 <a href="" id="pde"></a>**PDE**  
-Optional. The address of the Position Determination Entity (PDE), in the format *ipAddress*: *portNumber*. For non-trusted mode of operation, this parameter must be empty.
+Optional. Specifies the address of the Position Determination Entity (PDE), in the format *ipAddress*: *portNumber*. For non-trusted mode of operation, this parameter must be empty.
 
 <a href="" id="positioningmethod-mr"></a>**PositioningMethod\_MR**  
 Optional. Specifies the positioning method that the SUPL client will use for mobile originated position requests. The value can be one of the following integers:
@@ -243,12 +243,12 @@ The default is 0. The default method provides high-quality assisted GNSS positio
 > The Mobile Station Assisted and AFLT positioning methods must only be configured for test purposes.
 
  
-For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
+For OMA DM, if the format for this node is incorrect then an entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
 
 <a href="" id="locmasterswitchdependencynii"></a>**LocMasterSwitchDependencyNII**  
 Optional. Boolean. Specifies whether the location toggle on the **location** screen in **Settings** is also used to manage network-initiated requests for location. If the value is set to 0, the NI behavior is independent from the current location toggle setting. If the value is set to 1, the NI behavior follows the current location toggle setting. For CDMA devices, this value must be set to 1. The default value is 1.
 
-This value manages the settings for both SUPL and v2 UPL. If a device is configured for both SUPL and V2 UPL and these values differ, the SUPL setting will always be used.
+This value manages the settings for both SUPL and v2 UPL. If a device is configured for both SUPL and V2 UPL, then these values will differ, and the SUPL setting will always be used.
 
 |Location toggle setting|LocMasterSwitchDependencyNII setting|NI request processing allowed|
 |--- |--- |--- |
@@ -271,21 +271,20 @@ However, if `privacyOverride` is set in the message, the location will be return
 
 When the location toggle is set to Off and this value is set to 0, the location toggle doesn't prevent SUPL network-initiated requests from working.
 
-For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
+For OMA DM, if the format for this node is incorrect then an entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
 
 <a href="" id="applicationtypeindicator-mr"></a>**ApplicationTypeIndicator\_MR**  
 Required. This value must always be set to `00000011`.
 
 <a href="" id="nidefaulttimeout"></a>**NIDefaultTimeout**  
-Optional. Time in seconds that the network-initiated location request is displayed to the user, while awaiting a response and before doing the default action. The default is 30 seconds. A value between 20 and 60 seconds is recommended.
+Optional. Time in seconds. It defines that the network-initiated location request is displayed to the user, while awaiting a response and before doing the default action. The default is 30 seconds. A value between 20 and 60 seconds is recommended.
 
-This value manages the settings for both SUPL and v2 UPL. If a device is configured for both SUPL and V2 UPL and these values differ, the SUPL setting will always be used.
+This value manages the settings for both SUPL and v2 UPL. If a device is configured for both SUPL and V2 UPL, then these values will differ, and the SUPL setting will always be used.
 
 <a href="" id="serveraccessinterval"></a>**ServerAccessInterval**  
 Optional. Integer. Defines the minimum interval of time in seconds between mobile originated requests sent to the server to prevent overloading the mobile operator's network. The default value is 60.
 
 ## Unsupported Nodes
-
 
 The following optional nodes aren't supported on Windows devices.
 

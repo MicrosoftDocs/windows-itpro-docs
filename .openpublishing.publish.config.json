@@ -18,22 +18,6 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "hololens",
-      "build_source_folder": "devices/hololens",
-      "build_output_subfolder": "hololens",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "internet-explorer",
       "build_source_folder": "browsers/internet-explorer",
       "build_output_subfolder": "internet-explorer",
@@ -50,41 +34,9 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "keep-secure",
-      "build_source_folder": "windows/keep-secure",
-      "build_output_subfolder": "keep-secure",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "microsoft-edge",
       "build_source_folder": "browsers/edge",
       "build_output_subfolder": "microsoft-edge",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "release-information",
-      "build_source_folder": "windows/release-information",
-      "build_output_subfolder": "release-information",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
@@ -121,22 +73,6 @@
       "monikers": [],
       "moniker_ranges": [],
       "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "win-access-protection",
-      "build_source_folder": "windows/access-protection",
-      "build_output_subfolder": "win-access-protection",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -210,73 +146,9 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "win-device-security",
-      "build_source_folder": "windows/device-security",
-      "build_output_subfolder": "win-device-security",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "windows-configure",
-      "build_source_folder": "windows/configure",
-      "build_output_subfolder": "windows-configure",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "windows-deploy",
-      "build_source_folder": "windows/deploy",
-      "build_output_subfolder": "windows-deploy",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "windows-hub",
       "build_source_folder": "windows/hub",
       "build_output_subfolder": "windows-hub",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "windows-plan",
-      "build_source_folder": "windows/plan",
-      "build_output_subfolder": "windows-plan",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
@@ -309,38 +181,6 @@
       "docset_name": "windows-security",
       "build_source_folder": "windows/security",
       "build_output_subfolder": "windows-security",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "windows-update",
-      "build_source_folder": "windows/update",
-      "build_output_subfolder": "windows-update",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "win-threat-protection",
-      "build_source_folder": "windows/threat-protection",
-      "build_output_subfolder": "win-threat-protection",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
@@ -408,13 +248,13 @@
       "Pdf"
     ]
   },
-  "need_generate_pdf_url_template": true,
   "targets": {
     "Pdf": {
       "template_folder": "_themes.pdf"
     }
   },
   "docs_build_engine": {},
+  "need_generate_pdf_url_template": true,
   "contribution_branch_mappings": {},
   "need_generate_pdf": false,
   "need_generate_intellisense": false

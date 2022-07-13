@@ -4,8 +4,6 @@ ms.reviewer:
 manager: dougeby
 description: Learn how the Security Update Status section provides information about security updates across all devices.
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.pagetype: deploy
 author: aczechowski
 ms.author: aaroncz
 ms.collection: M365-analytics

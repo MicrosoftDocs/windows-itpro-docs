@@ -1,7 +1,6 @@
 ---
 title: Reboot CSP
 description: Learn how the Reboot configuration service provider (CSP) is used to configure reboot settings.
-ms.assetid: 4E3F1225-BBAD-40F5-A1AB-FF221B6BAF48
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -20,6 +19,7 @@ The table below shows the applicability of Windows:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|

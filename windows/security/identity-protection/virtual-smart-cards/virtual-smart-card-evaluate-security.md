@@ -2,10 +2,6 @@
 title: Evaluate Virtual Smart Card Security (Windows 10)
 description: This topic for the IT professional describes security characteristics and considerations when deploying TPM virtual smart cards.
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp

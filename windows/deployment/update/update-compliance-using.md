@@ -3,11 +3,7 @@ title: Using Update Compliance
 ms.reviewer: 
 manager: dougeby
 description: Learn how to use Update Compliance to monitor your device's Windows updates.
-keywords: oms, operations management suite, wdav, updates, upgrades, antivirus, antimalware, signature, log analytics
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.pagetype: deploy
-audience: itpro
 author: aczechowski
 ms.author: aaroncz
 ms.localizationpriority: medium
@@ -20,7 +16,7 @@ ms.custom: seo-marvel-apr2020
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 - Windows 11
 
 In this section you'll learn how to use Update Compliance to monitor your device's Windows updates and Microsoft Defender Antivirus status. To configure your environment for use with Update Compliance, refer to [Get started with Update Compliance](update-compliance-get-started.md).
@@ -53,7 +49,7 @@ When you select this tile, you will be redirected to the Update Compliance works
 
 ![The Overview blade.](images/uc-workspace-overview-blade.png)
 
-Update Compliance's overview blade summarizes all the data Update Compliance provides. It functions as a hub from which you can navigate to different sections. The total number of devices detected by Update Compliance is reported in the title of this blade. What follows is a distribution for all devices as to whether they are up to date on the following items:
+Update Compliance's overview blade summarizes all the data Update Compliance provides. It functions as a hub from which you can navigate to different sections. The total number of devices detected by Update Compliance is reported in the title of this blade. Update Compliance displays distribution for all devices to help you determine if they are up to date on the following items:
 * Security updates: A device is up to date on quality updates whenever it has the latest applicable quality update installed. Quality updates are monthly cumulative updates that are specific to a version of Windows client.
 * Feature updates: A device is up to date on feature updates whenever it has the latest applicable feature update installed. Update Compliance considers [Servicing Channel](waas-overview.md#servicing-channels) when determining update applicability. 
 
@@ -68,7 +64,7 @@ The following is a breakdown of the different sections available in Update Compl
 ## Update Compliance data latency
 Update Compliance uses Windows client diagnostic data as its data source. After you add Update Compliance and appropriately configure your devices, it could take 48-72 hours before they first appear.
 
-The data powering Update Compliance is refreshed every 24 hours, and refreshes with the latest data from all devices part of your organization that have been seen in the past 28 days. The entire set of data is refreshed in each daily snapshot, which means that the same data can be re-ingested even if no new data actually arrived from the device since the last snapshot. Snapshot time can be determined by the TimeGenerated field for each record, while LastScan can be used to roughly determine the freshness of each record's data.  
+The data powering Update Compliance is refreshed every 24 hours. The last 28 days worth of data from all devices in your organization are refreshed. The entire set of data is refreshed in each daily snapshot, which means that the same data can be re-ingested even if no new data actually arrived from the device since the last snapshot. Snapshot time can be determined by the TimeGenerated field for each record, while LastScan can be used to roughly determine the freshness of each record's data.  
 
 | Data Type | Data upload rate from device | Data Latency |
 |--|--|--|

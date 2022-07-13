@@ -3,9 +3,6 @@ title: What's new in Windows 10, version 21H2 for IT pros
 description: Learn more about what's new in Windows 10 version 21H2, including servicing updates, Windows Subsystem for Linux, the latest CSPs, and more.
 manager: dougeby
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: mobile
 ms.author: aaroncz
 author: aczechowski
 ms.localizationpriority: medium

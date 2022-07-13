@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_Sharing
-description: Policy CSP - ADMX_Sharing
+description: Learn about Policy CSP - ADMX_Sharing.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -41,8 +41,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -82,3 +83,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

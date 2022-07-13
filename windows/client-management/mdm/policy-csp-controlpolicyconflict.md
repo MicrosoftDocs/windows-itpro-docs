@@ -46,6 +46,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -66,7 +67,11 @@ manager: dansimp
 <!--Description-->
 This policy allows the IT admin to control which policy will be used whenever both the MDM policy and its equivalent Group Policy (GP) are set on the device.
 
-This policy is used to ensure that MDM policy wins over GP when policy is configured on MDM channel. The default value is 0. The MDM policies in Policy CSP will behave as described if this policy value is set 1.
+> [!NOTE]
+> MDMWinsOverGP only applies to policies in Policy CSP. MDM policies win over Group Policies where applicable; not all Group Policies are available via MDM or CSP. It does not apply to other MDM settings with equivalent GP settings that are defined in other CSPs.
+
+This policy is used to ensure that MDM policy wins over GP when policy is configured on MDM channel. 
+The default value is 0. The MDM policies in Policy CSP will behave as described if this policy value is set 1.
 
 > [!NOTE]
 > This policy doesn't support the Delete command and doesn’t support setting the value to 0 again after it was previously set to 1. Windows 10 version 1809 will support using the Delete command to set the value to 0 again, if it was previously set to 1.
@@ -76,7 +81,8 @@ The following list shows the supported values:
 - 0 (default)
 - 1 - The MDM policy is used and the GP policy is blocked.
 
-The policy should be set at every sync to ensure the device removes any settings that conflict with MDM just as it does on the first set of the policy. This activation ensures that:
+The policy should be set at every sync to ensure the device removes any settings that conflict with MDM just as it does on the very first set of the policy. 
+This ensures that:
 
 -  GP settings that correspond to MDM applied settings aren't conflicting 
 -  The current Policy Manager policies are refreshed from what MDM has set 

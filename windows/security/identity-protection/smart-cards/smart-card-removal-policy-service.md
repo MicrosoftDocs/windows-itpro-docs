@@ -2,10 +2,6 @@
 title: Smart Card Removal Policy Service (Windows)
 description: This topic for the IT professional describes the role of the removal policy service (ScPolicySvc) in smart card implementation.
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp

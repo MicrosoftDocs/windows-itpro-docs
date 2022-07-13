@@ -1,12 +1,7 @@
 ---
 title: Hybrid Azure AD joined Windows Hello for Business Prerequisites
 description: Learn these prerequisites for hybrid Windows Hello for Business deployments using certificate trust.
-keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, certificate-trust
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
 author: GitPrakhar13
 ms.author: prsriva
 manager: dansimp

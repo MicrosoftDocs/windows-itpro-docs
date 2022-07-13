@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_Globalization
-description: Policy CSP - ADMX_Globalization
+description: Learn about the Policy CSP - ADMX_Globalization.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -112,8 +112,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -134,9 +135,9 @@ This policy prevents automatic copying of user input methods to the system accou
 
 This confinement doesn't affect the availability of user input methods on the lock screen or with the UAC prompt.
 
-If the policy is Enabled, then the user will get input methods enabled for the system account on the sign-in page.
+If the policy is enabled, then the user will get input methods enabled for the system account on the sign-in page.
 
-If the policy is Disabled or Not Configured, then the user will be able to use input methods enabled for their user account on the sign-in page.
+If the policy is disabled or not configured, then the user will be able to use input methods enabled for their user account on the sign-in page.
 
 <!--/Description-->
 
@@ -160,8 +161,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -213,8 +215,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -266,8 +269,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -319,8 +323,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -369,8 +374,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -418,8 +424,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -465,8 +472,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -490,7 +498,7 @@ Automatic learning enables the collection and storage of text and ink written by
 > [!NOTE]
 > Automatic learning of both text and ink might not be available for all languages, even when handwriting personalization is available. For more information, see Tablet PC Help.
 
-If you enable this policy setting, automatic learning stops and any stored data is deleted. Users can't configure this setting in Control Panel.
+If you enable this policy setting, automatic learning stops and any stored data are deleted. Users can't configure this setting in Control Panel.
 
 If you disable this policy setting, automatic learning is turned on. Users can't configure this policy setting in Control Panel. Collected data is only used for handwriting recognition, if handwriting personalization is turned on.
 
@@ -524,8 +532,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -549,7 +558,7 @@ Automatic learning enables the collection and storage of text and ink written by
 > [!NOTE]
 > Automatic learning of both text and ink might not be available for all languages, even when handwriting personalization is available. For more information, see Tablet PC Help.
 
-If you enable this policy setting, automatic learning stops and any stored data is deleted. Users can't configure this setting in Control Panel.
+If you enable this policy setting, automatic learning stops and any stored data are deleted. Users can't configure this setting in Control Panel.
 
 If you disable this policy setting, automatic learning is turned on. Users can't configure this policy setting in Control Panel. Collected data is only used for handwriting recognition, if handwriting personalization is turned on.
 
@@ -583,8 +592,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -630,8 +640,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -679,8 +690,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -730,8 +742,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -777,8 +790,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -826,8 +840,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -875,8 +890,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -924,8 +940,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -977,8 +994,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -1030,8 +1048,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -1077,8 +1096,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -1099,9 +1119,9 @@ This policy turns off the autocorrect misspelled words option. This turn off doe
 
 The autocorrect misspelled words option controls whether or not errors in typed text will be automatically corrected.
 
-If the policy is Enabled, then the option will be locked to not autocorrect misspelled words.
+If the policy is enabled, then the option will be locked to not autocorrect misspelled words.
 
-If the policy is Disabled or Not Configured, then the user will be free to change the setting according to their preference.
+If the policy is disabled or not configured, then the user will be free to change the setting according to their preference.
 
 The availability and function of this setting is dependent on supported languages being enabled.
 <!--/Description-->
@@ -1125,8 +1145,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -1147,9 +1168,9 @@ This policy turns off the highlight misspelled words option. This turn off doesn
 
 The highlight misspelled words option controls whether or next spelling errors in typed text will be highlighted.
 
-If the policy is Enabled, then the option will be locked to not highlight misspelled words.
+If the policy is enabled, then the option will be locked to not highlight misspelled words.
 
-If the policy is Disabled or Not Configured, then the user will be free to change the setting according to their preference.
+If the policy is disabled or not configured, then the user will be free to change the setting according to their preference.
 
 The availability and function of this setting is dependent on supported languages being enabled.
 
@@ -1174,8 +1195,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -1196,9 +1218,9 @@ This policy turns off the insert a space after selecting a text prediction optio
 
 The insert a space after selecting a text prediction option controls whether or not a space will be inserted after the user selects a text prediction candidate when using the on-screen keyboard.
 
-If the policy is Enabled, then the option will be locked to not insert a space after selecting a text prediction.
+If the policy is enabled, then the option will be locked to not insert a space after selecting a text prediction.
 
-If the policy is Disabled or Not Configured, then the user will be free to change the setting according to their preference.
+If the policy is disabled or not configured, then the user will be free to change the setting according to their preference.
 
 The availability and function of this setting is dependent on supported languages being enabled.
 <!--/Description-->
@@ -1222,8 +1244,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -1244,9 +1267,9 @@ This policy turns off the offer text predictions as I type option. This turn off
 
 The offer text predictions as I type option controls whether or not text prediction suggestions will be presented to the user on the on-screen keyboard.
 
-If the policy is Enabled, then the option will be locked to not offer text predictions.
+If the policy is enabled, then the option will be locked to not offer text predictions.
 
-If the policy is Disabled or Not Configured, then the user will be free to change the setting according to their preference.
+If the policy is disabled or not configured, then the user will be free to change the setting according to their preference.
 
 The availability and function of this setting is dependent on supported languages being enabled.
 
@@ -1271,8 +1294,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -1313,3 +1337,7 @@ ADMX Info:
 <hr/>
 
 <!--/Policies-->
+
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)
