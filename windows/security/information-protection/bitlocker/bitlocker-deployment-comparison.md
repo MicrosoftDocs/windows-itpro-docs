@@ -2,14 +2,10 @@
 title: BitLocker deployment comparison (Windows 10)
 description: This article shows the BitLocker deployment comparison chart.
 ms.prod: m365-security
-ms.mktglfcycl: explore
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: lovina-saldanha
 ms.author: v-lsaldanha
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/20/2021

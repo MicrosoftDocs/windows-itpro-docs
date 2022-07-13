@@ -1,14 +1,9 @@
 ---
 title: Protect derived domain credentials with Windows Defender Credential Guard (Windows)
 description: Windows Defender Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them.
-ms.assetid: 4F1FE390-A166-4A24-8530-EA3369FEB4B1
 ms.reviewer: 
 ms.prod: m365-security
-ms.mktglfcycl: explore
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp

@@ -3,10 +3,6 @@ title: Special Identities (Windows 10)
 description: Special Identities
 ms.prod: m365-security
 ms.technology: windows-sec
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp

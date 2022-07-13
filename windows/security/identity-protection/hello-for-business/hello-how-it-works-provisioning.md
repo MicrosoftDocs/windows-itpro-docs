@@ -2,10 +2,6 @@
 title: How Windows Hello for Business works - Provisioning
 description: Explore the provisioning flows for Windows Hello for Business, from within a variety of environments.
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
 author: GitPrakhar13
 ms.author: prsriva
 manager: dansimp

@@ -34,7 +34,7 @@ You can also manage your App-V environment using an electronic software distribu
 * **Standalone model**—The standalone model allows virtual applications to be Windows Installer-enabled for distribution without streaming. App-V in Standalone mode only needs the sequencer and the client; no extra components are required. Applications are prepared for virtualization using a process called sequencing. For more information, see [Planning for the App-V Sequencer and Client deployment](appv-planning-for-sequencer-and-client-deployment.md). The standalone model is recommended for the following scenarios:
 
     * When there are disconnected remote users who can't connect to the App-V infrastructure.
-    * When you're running a software management system, such as System Center 2012 Configuration Manager.
+    * When you're running a software management system, such as Configuration Manager.
     * When network bandwidth limitations inhibit electronic software distribution.
 * **Full infrastructure model**—The full infrastructure model provides for software distribution, management, and reporting capabilities; it also includes the streaming of applications across the network. The App-V full infrastructure model consists of one or more App-V management servers that can be used to publish applications to all clients. Publishing places the virtual application icons and shortcuts on the target computer. It can also stream applications to local users. For more information about how to install the management server, see [Planning for App-V Server deployment](appv-planning-for-appv-server-deployment.md). The full infrastructure model is recommended for the following scenarios:
 

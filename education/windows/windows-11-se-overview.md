@@ -56,11 +56,11 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 |FortiClient	                        |7.0.1.0083	|Win32    |Fortinet|
 |Free NaturalReader	                    |16.1.2	    |Win32    |Natural Soft|
 |GoGuardian	                            |1.4.4	   |Win32     |GoGuardian|
-|Google Chrome	                        |100.0.4896.127|Win32	|Google|
+|Google Chrome	                        |102.0.5005.115|Win32	|Google|
 |Illuminate Lockdown Browser	        |2.0.5	    |Win32    |Illuminate Education|
 |Immunet	                            |7.5.0.20795 |Win32   |Immunet|
 |JAWS for Windows	                    |2022.2112.24 |Win32  |Freedom Scientific|
-|Kite Student Portal	                |8.0.1	    |Win32    |Dynamic Learning Maps|
+|Kite Student Portal	                |8.0.3.0	    |Win32    |Dynamic Learning Maps|
 |Kortext	                            |2.3.433.0  |Store	    |Kortext|
 |Kurzweil 3000 Assistive Learning	    |20.13.0000	|Win32    |Kurzweil Educational Systems|
 |LanSchool	                            |9.1.0.46	|Win32    |Stoneware|
@@ -83,7 +83,7 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 |Safe Exam Browser                   	|3.3.2.413	  |Win32  |Safe Exam Browser|
 |Secure Browser	                    |14.0.0	   |Win32     |Cambium Development|
 |Secure Browser	                        |4.8.3.376	  |Win32  |Questar, Inc|
-|Senso.Cloud	                    |2021.11.15.0	|Win32|Senso.Cloud|
+|Senso.Cloud	                    |2021.11.15.0 |Win32|Senso.Cloud|
 |SuperNova Magnifier & Screen Reader	|21.02	     |Win32   |Dolphin Computer Access|
 |Zoom	                                |5.9.1 (2581)|Win32	|Zoom|
 |ZoomText Fusion	                    |2022.2109.10|Win32	|Freedom Scientific|
