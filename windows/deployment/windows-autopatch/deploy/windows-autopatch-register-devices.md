@@ -73,7 +73,7 @@ To be eligible for Windows Autopatch management, devices must meet a minimum set
             - Windows updates policies
             - Device configuration
             - Office Click-to-run
-- Last Intune device check-in completed within the last 28 days.
+- Last Intune device check in completed within the last 28 days.
 - Devices must have Serial Number, Model and Manufacturer.
 	> [!NOTE]
 	> Windows Autopatch doesn't support device emulators that don't generate Serial number, Model and Manufacturer. Devices that use a non-supported device emulator fail the **Intune or Cloud-Attached** pre-requisite check. Additionally, devices with duplicated serial numbers will fail to register with Windows Autopatch.
@@ -97,7 +97,7 @@ A role defines the set of permissions granted to users assigned to that role. Yo
 - Intune Service Administrator
 - Modern Workplace Intune Administrator
 
-For more information, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference) and  [Role-based access control (RBAC) with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
+For more information, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference) and [Role-based access control (RBAC) with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 
 > [!NOTE]
 > The Modern Workplace Intune Admin role is a custom created role during the Windows Autopatch tenant enrollment process. This role can assign administrators to Endpoint Manager roles, and allows you to create and configure custom Endpoint Manager roles.
@@ -124,10 +124,7 @@ Registering your devices in Windows Autopatch does the following:
 > [!NOTE]
 > The **Windows Autopatch Device Registration** hyperlink is in the center of the Ready tab when there's no devices registered with the Windows Autopatch service. Once you have one or more devices registered with the Windows Autopatch service, the **Windows Autopatch Device registration** hyperlink is at the top of both Ready and Not ready tabs.
 
-Once devices or Azure AD groups containing devices are added to the **Windows Autopatch Device Registration** group, Windows Autopatch discovers these devices and runs software-based prerequisite checks to try to register them with its service.
-
-> [!IMPORTANT]
-> It might take up to an hour for a device to change its status from **Ready for User** to **Active** in the Ready tab during the public preview.
+Once devices or Azure AD groups containing devices are added to the **Windows Autopatch Device Registration** group, Windows Autopatch discovers these devices, and runs software-based prerequisite checks to try to register them with its service.
 
 ### Virtual devices
 

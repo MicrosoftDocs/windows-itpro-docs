@@ -1,12 +1,7 @@
 ---
 title: Windows Hello for Business Videos
 description: View several informative videos describing features and experiences in Windows Hello for Business in Windows 10 and Windows 11.
-keywords: identity, PIN, biometric, Hello, passport, video, watch, passwordless
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
 author: GitPrakhar13
 ms.author: prsriva
 manager: dansimp

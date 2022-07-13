@@ -1,5 +1,5 @@
 ---
-title: End user experience
+title: Windows quality update end user experience
 description:  This article explains the Windows quality update end user experience
 ms.date: 05/30/2022
 ms.prod: w11
@@ -12,7 +12,7 @@ manager: dougeby
 msreviewer: hathind
 ---
 
-# End user experience
+# Windows quality update end user experience
 
 Windows Autopatch aims to deploy updates predictably while minimizing the effect to end users by preventing reboots during business hours.
 

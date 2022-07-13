@@ -2,10 +2,6 @@
 title: Certificate Requirements and Enumeration (Windows)
 description: This topic for the IT professional and smart card developers describes how certificates are managed and used for smart card sign-in.
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp
