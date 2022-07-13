@@ -1,6 +1,6 @@
 ---
 title: Delivery Optimization Frequently Asked Questions
-ms.reviewer: 
+ms.reviewer: aaroncz
 manager: dougeby
 description: The following is a list of frequently asked questions for Delivery Optimization.
 ms.prod: w10
@@ -39,21 +39,21 @@ For Delivery Optimization to successfully use the proxy, you should set up the p
 
 **For communication between clients and the Delivery Optimization cloud service**: 
 
-- *.do.dsp.mp.microsoft.com
+- `*.do.dsp.mp.microsoft.com`
 
 **For Delivery Optimization metadata**:
 
-- *.dl.delivery.mp.microsoft.com
-- *.emdl.ws.microsoft.com
+- `*.dl.delivery.mp.microsoft.com`
+- `*.emdl.ws.microsoft.com`
 
 **For the payloads (optional)**:
 
-- *.download.windowsupdate.com
-- *.windowsupdate.com
+- `*.download.windowsupdate.com`
+- `*.windowsupdate.com`
 
 **For group peers across multiple NATs (Teredo)**:
 
-- win1910.ipv6.microsoft.com
+- `win1910.ipv6.microsoft.com`
 
 ## Does Delivery Optimization use multicast?
 
