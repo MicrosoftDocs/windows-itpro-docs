@@ -155,10 +155,10 @@ Merge-CIPolicy -PolicyPaths $DenyPolicy, $AllowAllPolicy -OutputFilePath $DenyPo
 
 Policies should be thoroughly evaluated and first rolled out in audit mode before strict enforcement. Policies can be deployed via multiple options:
 
-1. Mobile Device Management (MDM): [Deploy Windows Defender Application Control (WDAC) policies using Mobile Device Management (MDM) (Windows)](deploy-windows-defender-application-control-policies-using-intune.md)
+1. Mobile Device Management (MDM): [Deploy WDAC policies using Mobile Device Management (MDM)](deployment/deploy-windows-defender-application-control-policies-using-intune.md)
 
 2. Configuration Manager: [Deploy Windows Defender Application Control (WDAC) policies by using Configuration Manager (Windows)](deployment/deploy-wdac-policies-with-memcm.md)
 
 3. Scripting [Deploy Windows Defender Application Control (WDAC) policies using script (Windows)](deployment/deploy-wdac-policies-with-script.md)
 
-4. Group Policy: [Deploy WDAC policies via Group Policy (Windows)](deploy-windows-defender-application-control-policies-using-group-policy.md)
+4. Group Policy: [Deploy WDAC policies via Group Policy (Windows)](deployment/deploy-windows-defender-application-control-policies-using-group-policy.md)

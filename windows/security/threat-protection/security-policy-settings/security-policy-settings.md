@@ -45,7 +45,7 @@ For more info about managing security configurations, see [Administer security p
 
 The Security Settings extension of the Local Group Policy Editor includes the following types of security policies:
 
-- **Account Policies.** These polices are defined on devices; they affect how user accounts can interact with the computer or domain. Account policies include the following types of policies:
+- **Account Policies.** These policies are defined on devices; they affect how user accounts can interact with the computer or domain. Account policies include the following types of policies:
 
   - **Password Policy.** These policies determine settings for passwords, such as enforcement and lifetimes. Password policies are used for domain accounts.
   - **Account Lockout Policy.** These policies determine the conditions and length of time that an account will be locked out of the system. Account lockout policies are used for domain or local user accounts.
@@ -120,7 +120,7 @@ For devices that are members of a Windows Server 2008 or later domain, securit
 
 - **Local Security Authority (LSA)**
 
-  A protected subsystem that authenticates and logs users onto the local system. LSA also maintains information about all aspects of local security on a system, collectively known as the Local Security Policy of the system.
+  A protected subsystem that authenticates and logs on users to the local system. LSA also maintains information about all aspects of local security on a system, collectively known as the Local Security Policy of the system.
 
 - **Windows Management Instrumentation (WMI)**
 
@@ -297,7 +297,7 @@ Group Policy settings are processed in the following order:
 
 1. **Domain.**
 
-   Processing of multiple domain-linked Group Policy Objects is synchronous and in an order you speciy.
+   Processing of multiple domain-linked Group Policy Objects is synchronous and in an order you specify.
 
 1. **Organizational units.**
 
