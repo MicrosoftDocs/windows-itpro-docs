@@ -147,15 +147,19 @@ S = Supported; Not considered a downgrade or an upgrade
 
 **Destination Edition: (Starting)**
 
-|Edition|Home|Pro|Pro for Workstations|Pro Education|Education|Enterprise LTSC|Enterprise|
-|--- |--- |--- |--- |--- |--- |--- |--- |
-|Home||||||||
-|Pro||||||||
-|Pro for Workstations||||||||
-|Pro Education||||||||
-|Education||✔|✔|✔|||S|
-|Enterprise LTSC||||||||
-|Enterprise||✔|✔|✔|S|||
+![Supported downgrade path.](../images/check_grn.png) (green checkmark) = Supported downgrade path</br>
+![Supported; Not considered a downgrade or an upgrade.](../images/check_blu.png) (blue checkmark) = Not considered a downgrade or an upgrade<br>
+![not supported.](../images/x_blk.png) (X) = not supported or not a downgrade</br>
+
+| **Edition** | **Home** | **Pro** | **Pro for Workstations** | **Pro Education** | **Education** | **Enterprise LTSC** | **Enterprise** |
+|-----------------| ------------------------------------ | --------------------------- | ------------------------- | -------------------------------------- | ----------------------------------- | --------------------------------------------- |--------------------------------------------- |
+| **Home** | ![Supported; Not considered a downgrade or an upgrade.](../images/check_blu.png) | ![not supported.](../images/x_blk.png) | ![not supported.](../images/x_blk.png) | ![not supported.](../images/x_blk.png) | ![not supported.](../images/x_blk.png) | ![not supported.](../images/x_blk.png) | ![not supported.](../images/x_blk.png) |
+| **Pro** | ![not supported.](../images/x_blk.png) | ![Supported; Not considered a downgrade or an upgrade.](../images/check_blu.png) | ![not supported.](../images/x_blk.png) | ![not supported.](../images/x_blk.png) | ![not supported.](../images/x_blk.png) | ![not supported.](../images/x_blk.png) | ![not supported.](../images/x_blk.png) |
+| **Pro for Workstations** | ![not supported.](../images/x_blk.png) | ![not supported.](../images/x_blk.png) | ![Supported; Not considered a downgrade or an upgrade.](../images/check_blu.png) | ![not supported.](../images/x_blk.png) | ![not supported.](../images/x_blk.png) | ![not supported.](../images/x_blk.png) | ![not supported.](../images/x_blk.png) |
+| **Pro Education** | ![not supported.](../images/x_blk.png) | ![not supported.](../images/x_blk.png) | ![not supported.](../images/x_blk.png) | ![Supported; Not considered a downgrade or an upgrade.](../images/check_blu.png) | ![not supported.](../images/x_blk.png) | ![not supported.](../images/x_blk.png) | ![not supported.](../images/x_blk.png) |
+| **Education** | ![not supported.](../images/x_blk.png) | ![Supported downgrade path.](../images/check_grn.png) | ![Supported downgrade path.](../images/check_grn.png) | ![Supported downgrade path.](../images/check_grn.png) | ![Supported; Not considered a downgrade or an upgrade.](../images/check_blu.png) | ![not supported.](../images/x_blk.png) | ![Supported; Not considered a downgrade or an upgrade.](../images/check_blu.png) |
+| **Enterprise LTSC** | ![not supported.](../images/x_blk.png) | ![not supported.](../images/x_blk.png) | ![not supported.](../images/x_blk.png) | ![not supported.](../images/x_blk.png) | ![not supported.](../images/x_blk.png) | ![Supported; Not considered a downgrade or an upgrade.](../images/check_blu.png) | ![not supported.](../images/x_blk.png) |
+| **Enterprise** | ![not supported.](../images/x_blk.png) | ![Supported downgrade path.](../images/check_grn.png) | ![Supported downgrade path.](../images/check_grn.png) | ![Supported downgrade path.](../images/check_grn.png) | ![Supported; Not considered a downgrade or an upgrade.](../images/check_blu.png) | ![not supported.](../images/x_blk.png) | ![Supported; Not considered a downgrade or an upgrade.](../images/check_blu.png) |
 
 > **Windows N/KN**: Windows "N" and "KN" SKUs follow the same rules shown above.
 
