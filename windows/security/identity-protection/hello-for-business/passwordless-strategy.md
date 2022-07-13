@@ -251,7 +251,7 @@ You can use Group Policy to deploy an administrative template policy setting to 
 
 :::image type="content" source="images/passwordless/gpmc-exclude-credential-providers.png" alt-text="The Group Policy Management Editor displaying the location of 'Logon' node and the policy setting 'Exclude credential providers'.":::
 
-The name of the policy setting is **Exclude credential providers**. The value to enter in the policy to hide the password credential provider is `60b78e88-ead8-445c-9cfd-0b87f74ea6cd`.
+The name of the policy setting is **Exclude credential providers**. The value to enter in the policy to hide the password credential provider is `{60b78e88-ead8-445c-9cfd-0b87f74ea6cd}`.
 
 :::image type="content" source="images/passwordless/exclude-credential-providers-properties.png" alt-text="Properties of the policy setting 'Exclude credential providers'.":::
 

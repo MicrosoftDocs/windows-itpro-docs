@@ -34,11 +34,11 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|Yes|Yes|
+|Pro|No|Yes|
 |Windows SE|No|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+|Business|No|Yes|
+|Enterprise|No|Yes|
+|Education|No|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
