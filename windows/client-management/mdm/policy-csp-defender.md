@@ -1483,7 +1483,7 @@ This policy setting allows you to enable or disable low CPU priority for schedul
 
 If you enable this setting, low CPU priority will be used during scheduled scans.
 
-If you disable or don't configure this setting, not changes will be made to CPU priority for scheduled scans.
+If you disable or don't configure this setting, no changes will be made to CPU priority for scheduled scans.
 
 Supported values:
 
