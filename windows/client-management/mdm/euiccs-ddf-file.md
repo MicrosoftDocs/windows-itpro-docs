@@ -1,7 +1,6 @@
 ---
 title: eUICCs DDF file
 description: Learn about the OMA DM device description framework (DDF) for the eUICCs configuration service provider (CSP).
-ms.assetid: c4cd4816-ad8f-45b2-9b81-8abb18254096
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -13,7 +12,6 @@ ms.date: 03/02/2018
 ---
 
 # eUICCs DDF file
-
 
 This topic shows the OMA DM device description framework (DDF) for the **eUICCs** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 

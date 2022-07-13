@@ -4,7 +4,6 @@ description: Discover what's new and breaking changes in Windows 10 and Windows 
 MS-HAID:
 - 'p\_phdevicemgmt.mdm\_enrollment\_and\_management\_overview'
 - 'p\_phDeviceMgmt.new\_in\_windows\_mdm\_enrollment\_management'
-ms.assetid: 9C42064F-091C-4901-BC73-9ABE79EE4224
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -89,7 +88,7 @@ For information about EAP Settings, see <https://technet.microsoft.com/library/h
 
 For information about generating an EAP XML, see [EAP configuration](eap-configuration.md).
 
-For more information about extended key usage, see <http://tools.ietf.org/html/rfc5280#section-4.2.1.12>.
+For more information about extended key usage, see <https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.12>.
 
 For information about adding extended key usage (EKU) to a certificate, see <https://technet.microsoft.com/library/cc731792.aspx>.
 
@@ -250,7 +249,7 @@ Alternatively you can use the following procedure to create an EAP Configuration
 
 After the MDM client automatically renews the WNS channel URI, the MDM client will immediately check-in with the MDM server. Henceforth, for every MDM client check-in, the MDM server should send a GET request for "ProviderID/Push/ChannelURI" to retrieve the latest channel URI and compare it with the existing channel URI; then update the channel URI if necessary.
 
-### User provisioning failure in Azure Active Directory joined Windows 10 and Windows 11 devices
+### User provisioning failure in Azure Active Directory-joined Windows 10 and Windows 11 devices
 
 In Azure AD joined Windows 10 and Windows 11, provisioning /.User resources fails when the user isn't logged in as an Azure AD user. If you attempt to join Azure AD from **Settings** &gt; **System** &gt; **About** user interface, ensure to sign out and sign in with Azure AD credentials to get your organizational configuration from your MDM server. This behavior is by design.
 
@@ -270,7 +269,7 @@ The DM agent for [push-button reset](/windows-hardware/manufacture/desktop/push-
 
 No. Only one MDM is allowed.
 
-### How do I set the maximum number of Azure Active Directory joined devices per user?
+### How do I set the maximum number of Azure Active Directory-joined devices per user?
 
 1. Sign in to the portal as tenant admin: https://portal.azure.com.
 2. Select Active Directory on the left pane.

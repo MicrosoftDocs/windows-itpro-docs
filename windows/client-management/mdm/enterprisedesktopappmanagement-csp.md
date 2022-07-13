@@ -376,7 +376,7 @@ For Intune standalone environment, the MSI package will determine the MSI execut
 |User|Install the MSI per-user<br>LocURI contains a User prefix, such as ./User|Install the MSI per-device<br>LocURI contains a Device prefix, such as ./Device|Install the MSI per-user<br>LocURI contains a User prefix, such as ./User|
 |System|Install the MSI per-user<br>LocURI contains a User prefix, such as ./User|Install the MSI per-device<br>LocURI contains a Device prefix, such as ./Device|Install the MSI per-user<br>LocURI contains a User prefix, such as ./User|
 
-The following table applies to SCCM hybrid environment.
+The following table applies to Configuration Manager hybrid environment:
 
 |Target|Per-user MSI|Per-machine MSI|Dual mode MSI|
 |--- |--- |--- |--- |

@@ -57,9 +57,12 @@ Updates are required by your system admin are blocked by one or more apps. Offic
 
 Alternatively, users can select **Update now** to apply the updates. The user is then prompted to close all open Office programs. After the updates are applied, the message disappears.
 
-If the deadline arrives and the updates still aren't applied, users see a dialog box that warns them that they have 15 minutes before the updates are applied.
+When the deadline arrives and the updates still aren't applied, users will:
 
-This warning gives users 15 minutes to save and close any work. When the countdown reaches 00∶00, any open Office programs are closed, and the updates are applied.
+1. See a dialog box that warns them that they have 15 minutes before the updates are applied.
+1. Have 15 minutes to save and close any work.
+
+When the countdown reaches 00∶00, any open Office programs are closed, and the updates are applied.
 
 ### Office client app configuration
 
@@ -77,29 +80,15 @@ Windows Autopatch will either:
 > [!NOTE]
 > Windows Autopatch doesn't currently allow customers to force their devices to stay on a previous version or rollback to a previous version.
 
-Since Windows quality updates are bundled together into a single release in the [Monthly Enterprise Channel](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview), we can't roll back only a portion of the update for Microsoft 365 Apps for enterprise.  
+Since quality updates are bundled together into a single release in the [Monthly Enterprise Channel](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview), we can't roll back only a portion of the update for Microsoft 365 Apps for enterprise.  
 
-## Conflicting and unsupported policies
+## Compatibility with Servicing Profiles
 
-Deploying any of the following policies to a managed device will make that device ineligible for management since the device will prevent us from delivering the service as designed.
+[Servicing profiles](/deployoffice/admincenter/servicing-profile) is a feature in the [Microsoft 365 Apps admin center](https://config.office.com/) that provides controlled update management of monthly Office updates, including controls for user and device targeting, scheduling, rollback, and reporting.
 
-### Update policies
+A [service profile](/deployoffice/admincenter/servicing-profile#compatibility-with-other-management-tools) takes precedence over other management tools, such as Microsoft Endpoint Manager or the Office Deployment Tool. This means that the servicing profile will affect all devices that meet the [device eligibility requirements](#device-eligibility) regardless of existing management tools in your environment. So, if you're targeting a managed device with a servicing profile it will be ineligible for Microsoft 365 App update management.
 
-Window Autopatch deploys mobile device management (MDM) policies to configure Microsoft 365 Apps and requires a specific configuration. If any [Microsoft 365 Apps update settings](/deployoffice/configure-update-settings-microsoft-365-apps) are deployed which conflict with our policies, then the device won't be eligible for management.
-
-| Update setting | Value | Usage reason |
-| ----- | ----- | ----- |
-| Set updates to occur automatically | Enabled | Enable automatic updates |
-| Specify a location to look for updates | Blank | Don't use this setting since it overwrites the update branch |
-| Update branch | Monthly Enterprise | Supported branch for Windows Autopatch |
-| Specify the version of Microsoft 365 Apps to update to | Variable | Used to roll back to a previous version if an error occurs |
-| Set a deadline by when updates must be applied | 3 | Update deadline |
-| Hide update notifications from users | Turned off | Users should be notified when Microsoft 365 Apps are being updated |
-| Hide the option to turn on or off automatic Office updates | Turned on | Prevents users from disabling automatic updates |
-
-## Microsoft 365 Apps servicing profiles
-
-A service profile takes precedence over other management tools, such as Microsoft Endpoint Manager or the Office Deployment Tool. This means that the servicing profile will affect all devices that meet the above requirements regardless of existing management tools in your environment. So, if you're targeting a managed device with a servicing profile it will be ineligible for Microsoft 365 App update management.
+However, the device may still be eligible for other managed updates. For more information about a device's eligibility for a given [update type](windows-autopatch-update-management.md#update-types), see the Device eligibility section of each respective update type.
 
 ## Incidents and outages
 

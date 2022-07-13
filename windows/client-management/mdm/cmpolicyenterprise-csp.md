@@ -1,7 +1,6 @@
 ---
 title: CMPolicyEnterprise CSP
 description: Learn how the CMPolicyEnterprise CSP is used to define rules that the Connection Manager uses to identify the correct connection for a connection request.
-ms.assetid: A0BE3458-ABED-4F80-B467-F842157B94BF
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp

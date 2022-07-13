@@ -1,14 +1,10 @@
 ---
 title: Identify File Types, Files, and Folders (Windows 10)
 description: Learn how to identify the file types, files, folders, and settings that you want to migrate when you're planning your migration.
-ms.assetid: 93bb2a33-c126-4f7a-a961-6c89686d54e0
 ms.reviewer: 
 manager: dougeby
 ms.author: aaroncz
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-audience: itpro
 author: aczechowski
 ms.date: 04/19/2017
 ms.topic: article

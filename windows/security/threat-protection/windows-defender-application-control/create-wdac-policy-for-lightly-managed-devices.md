@@ -30,10 +30,10 @@ ms.technology: windows-sec
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
-This section outlines the process to create a WDAC policy for **lightly managed devices** within an organization. Typically, organizations that are new to application control will be most successful if they start with a permissive policy like the one described in this topic. Organizations can choose to harden the policy over time to achieve a stronger overall security posture on their WDAC-managed devices as described in later topics.
+This section outlines the process to create a Windows Defender Application Control (WDAC) policy for **lightly managed devices** within an organization. Typically, organizations that are new to application control will be most successful if they start with a permissive policy like the one described in this topic. Organizations can choose to harden the policy over time to achieve a stronger overall security posture on their WDAC-managed devices as described in later topics.
 
 > [!NOTE]
-> Some of the WDAC options described in this topic are only available on Windows 10 version 1903 and above, or Windows 11. When using this topic to plan your own organization's WDAC policies, consider whether your managed clients can use all or some of these features and assess the impact for any features that may be unavailable on your clients. You may need to adapt this guidance to meet your specific organization's needs.
+> Some of the Windows Defender Application Control options described in this topic are only available on Windows 10 version 1903 and above, or Windows 11. When using this topic to plan your own organization's WDAC policies, consider whether your managed clients can use all or some of these features and assess the impact for any features that may be unavailable on your clients. You may need to adapt this guidance to meet your specific organization's needs.
 
 As in the [previous topic](types-of-devices.md), we will use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
 
@@ -46,12 +46,8 @@ For the majority of users and devices, Alice wants to create an initial policy t
 Alice identifies the following key factors to arrive at the "circle-of-trust" for Lamna's lightly managed devices, which currently include most end-user devices:
 
 - All clients are running Windows 10 version 1903 and above, or Windows 11;
-- All clients are managed by Microsoft Endpoint Manager (MEM) either with Configuration Manager (MEMCM) standalone or hybrid mode with Intune;
-
-    > [!NOTE]
-    > Microsoft Endpoint Configuration Manager was previously known as System Center Configuration Manager (SCCM). 
-
-- Some, but not all, apps are deployed using MEMCM;
+- All clients are managed by Microsoft Endpoint Manager either with Configuration Manager or with Intune.
+- Some, but not all, apps are deployed using Configuration Manager;
 - Most users are local administrators on their devices;
 - Some teams may need additional rules to authorize specific apps that don't apply generally to all other users.
 
@@ -62,8 +58,8 @@ Based on the above, Alice defines the pseudo-rules for the policy:
    - WHQL (3rd party kernel drivers)
    - Windows Store signed apps
 
-2. **"MEMCM works”** rules which include signer and hash rules for MEMCM components to properly function
-3. **Allow Managed Installer** (MEMCM configured as a managed installer)
+2. **"MEMCM works”** rules which include signer and hash rules for Configuration Manager components to properly function.
+3. **Allow Managed Installer** (Configuration Manager configured as a managed installer)
 4. **Allow Intelligent Security Graph (ISG)** (reputation-based authorization)
 5. **Admin-only path rules** for the following locations:
    - C:\Program Files\*
@@ -72,14 +68,14 @@ Based on the above, Alice defines the pseudo-rules for the policy:
 
 ## Create a custom base policy using an example WDAC base policy
 
-Having defined the "circle-of-trust", Alice is ready to generate the initial policy for Lamna's lightly managed devices. She decides to use MEMCM to create the initial base policy and then customize it to meet Lamna's needs.
+Having defined the "circle-of-trust", Alice is ready to generate the initial policy for Lamna's lightly managed devices. She decides to use Configuration Manager to create the initial base policy and then customize it to meet Lamna's needs.
 
 Alice follows these steps to complete this task:
 
 > [!NOTE]
-> If you do not use MEMCM or prefer to use a different [example WDAC base policy](example-wdac-base-policies.md) for your own policy, skip to step 2 and substitute the MEMCM policy path with your preferred example base policy.
+> If you do not use Configuration Manager or prefer to use a different [example Windows Defender Application Control base policy](example-wdac-base-policies.md) for your own policy, skip to step 2 and substitute the Configuration Manager policy path with your preferred example base policy.
 
-1. [Use MEMCM to create and deploy an audit policy](/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager) to a client device running Windows 10 version 1903 and above, or Windows 11.
+1. [Use Configuration Manager to create and deploy an audit policy](/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager) to a client device running Windows 10 version 1903 and above, or Windows 11.
 
 2. On the client device, run the following commands in an elevated Windows PowerShell session to initialize variables:
 
@@ -89,7 +85,7 @@ Alice follows these steps to complete this task:
       $MEMCMPolicy=$env:windir+"\CCM\DeviceGuard\MergedPolicy_Audit_ISG.xml"
       ```
 
-3. Copy the policy created by MEMCM to the desktop:
+3. Copy the policy created by Configuration Manager to the desktop:
 
       ```powershell
       cp $MEMCMPolicy $LamnaPolicy
@@ -185,5 +181,5 @@ In order to minimize user productivity impact, Alice has defined a policy that m
 
 ## Up next
 
-- [Create a WDAC policy for fully managed devices](create-wdac-policy-for-fully-managed-devices.md)
-- [Prepare to deploy WDAC policies](windows-defender-application-control-deployment-guide.md)
+- [Create a Windows Defender Application Control policy for fully managed devices](create-wdac-policy-for-fully-managed-devices.md)
+- [Prepare to deploy Windows Defender Application Control policies](windows-defender-application-control-deployment-guide.md)

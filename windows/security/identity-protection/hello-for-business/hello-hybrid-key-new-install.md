@@ -1,12 +1,7 @@
 ---
 title: Windows Hello for Business Hybrid Azure AD joined Key Trust New Installation
 description: Learn how to configure a hybrid key trust deployment of Windows Hello for Business for systems with no previous installations.
-keywords: identity, PIN, biometric, Hello, passport, WHFB
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
 author: GitPrakhar13
 ms.author: prsriva
 manager: dansimp
@@ -85,7 +80,7 @@ If you do not have an existing public key infrastructure, please review [Certifi
 > [!IMPORTANT]
 > For Azure AD joined device to authenticate to and use on-premises resources, ensure you:
 > * Install the root certificate authority certificate for your organization in the user's trusted root certificate store.
-> * Publish your certificate revocation list to a location that is available to Azure AD joined devices, such as a web-based URL.
+> * Publish your certificate revocation list to a location that is available to Azure AD-joined devices, such as a web-based URL.
 
 ### Section Review
 

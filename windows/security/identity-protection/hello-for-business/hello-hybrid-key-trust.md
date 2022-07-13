@@ -1,12 +1,7 @@
 ---
 title: Hybrid Key Trust Deployment (Windows Hello for Business)
 description: Review this deployment guide to successfully deploy Windows Hello for Business in a hybrid key trust scenario.
-keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, key-trust
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
 author: GitPrakhar13
 ms.author: prsriva
 manager: dansimp

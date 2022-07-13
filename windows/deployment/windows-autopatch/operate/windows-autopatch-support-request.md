@@ -26,8 +26,8 @@ Support requests are triaged and responded to as they're received.
 **To submit a new support request:**
 
 1. Sign into [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) and navigate to the **Tenant administration** menu.
-1. In the **Windows Autopatch** section, select **Service requests**.
-1. In the **Service requests** section, select **+ New support request**.
+1. In the **Windows Autopatch** section, select **Support requests**.
+1. In the **Support requests** section, select **+ New support request**.
 1. Enter your question(s) and/or a description of the problem.
 1. Review all the information you provided for accuracy.
 1. When you're ready, select **Create**.
@@ -43,7 +43,7 @@ You can see the summary status of all your support requests. At any time, you ca
 **To view all your active support requests:**
 
 1. Sign into [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) and navigate to the **Tenant Administration** menu.
-1. In the **Windows Autopatch** section, select **Service request**.
+1. In the **Windows Autopatch** section, select **Support request**.
 1. From this view, you can export the summary view or select any case to view the details.
 
 ## Edit support request details
@@ -53,8 +53,8 @@ You can edit support request details, for example, updating the primary case con
 **To edit support request details:**
 
 1. Sign into [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) and navigate to the **Tenant Administration** menu.
-1. In the **Windows Autopatch** section, select **Service request**.
-1. In the **Service requests** section, use the search bar or filters to find the case you want to edit.
+1. In the **Windows Autopatch** section, select **Support request**.
+1. In the **Support requests** section, use the search bar or filters to find the case you want to edit.
 1. Select the case to open the request's details.
 1. Scroll to the bottom of the request details and select **Edit**.
 1. Update the editable information, add attachments to the case, or add a note for the Windows Autopatch Service Engineering Team.
@@ -64,8 +64,8 @@ Once a support request is mitigated, it can no longer be edited. If a request ha
 
 ## Microsoft FastTrack
 
-[Microsoft FastTrack](https://www.microsoft.com/en-us/fasttrack) offers Microsoft 365 deployment guidance for customers with 150 or more licenses of an eligible subscription at no additional cost. FastTrack Specialists can help customers work through the Windows Autopatch technical prerequisites described in the [FAQ](../overview/windows-autopatch-faq.md). For more information, visit the [FastTrack website](https://www.microsoft.com/en-ca/fasttrack?rtc=1).
+[Microsoft FastTrack](https://www.microsoft.com/fasttrack) offers Microsoft 365 deployment guidance for customers with 150 or more licenses of an eligible subscription at no additional cost. FastTrack Specialists can help customers work through the Windows Autopatch technical prerequisites described in the [FAQ](../overview/windows-autopatch-faq.yml). For more information, visit the [Microsoft FastTrack website](https://www.microsoft.com/fasttrack?rtc=1).
 
-Customers who need help with Microsoft 365 workloads can sign in to https://fasttrack.microsoft.com/ with a valid Azure ID and submit a Request for Assistance.
+Customers who need help with Microsoft 365 workloads can sign in to [Microsoft FastTrack](https://fasttrack.microsoft.com/) with a valid Azure ID and submit a Request for Assistance.
 
  Contact your Microsoft account team if you need additional assistance.

@@ -61,7 +61,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Allows or disallows the Federal Information Processing Standard (FIPS) policy.
+This policy setting allows or disallows the Federal Information Processing Standard (FIPS) policy.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -73,8 +73,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Not allowed.
--   1– Allowed.
+0 (default) – Not allowed.
+1– Allowed.
 <!--/SupportedValues-->
 <!--Example-->
 
@@ -114,7 +114,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Lists the Cryptographic Cipher Algorithms allowed for SSL connections. Format is a semicolon delimited list. Last write win.
+This policy setting lists the Cryptographic Cipher Algorithms allowed for SSL connections. Format is a semicolon delimited list. Last write win.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -136,3 +136,6 @@ Lists the Cryptographic Cipher Algorithms allowed for SSL connections. Format is
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

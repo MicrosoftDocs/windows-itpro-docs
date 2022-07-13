@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_IIS
-description: Policy CSP - ADMX_IIS
+description: Learn about the Policy CSP - ADMX_IIS.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -63,11 +63,11 @@ manager: dansimp
 <!--Description-->
 This policy setting prevents installation of Internet Information Services (IIS) on this computer. 
 
-- If you enable this policy setting, Internet Information Services (IIS) can't be installed, and you'll not be able to install Windows components or applications that require IIS. Users installing Windows components or applications that require IIS might not receive a warning that IIS can't be installed because of this Group Policy setting. 
+If you enable this policy setting, Internet Information Services (IIS) can't be installed, and you'll not be able to install Windows components or applications that require IIS. Users installing Windows components or applications that require IIS might not receive a warning that IIS can't be installed because of this Group Policy setting. 
 
-Enabling this setting won't have any effect on IIS if IIS is already installed on the computer. 
+Enabling this setting won't have any effect on IIS, if IIS is already installed on the computer. 
 
-- If you disable or don't configure this policy setting, IIS can be installed, and all the programs and applications that require IIS to run."
+If you disable or don't configure this policy setting, IIS can be installed, and all the programs and applications that require IIS to run."
 
 <!--/Description-->
 
@@ -87,3 +87,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

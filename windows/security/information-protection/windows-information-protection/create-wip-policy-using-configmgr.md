@@ -1,18 +1,12 @@
 ---
 title: Create and deploy a Windows Information Protection (WIP) policy using Microsoft Endpoint Manager (Windows 10)
 description: Use Configuration Manager to make & deploy a Windows Information Protection (WIP) policy. Choose protected apps, WIP-protection level, and find enterprise data.
-ms.assetid: 85b99c20-1319-4aa3-8635-c1a87b244529
 ms.reviewer: 
-keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, SCCM, System Center Configuration Manager, Configuration Manager, MEMCM, Microsoft Endpoint Configuration Manager
 ms.prod: m365-security
-ms.mktglfcycl: explore
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 01/09/2020
@@ -65,12 +59,12 @@ The **Configure Windows Information Protection settings** page appears, where yo
 
 ## Add app rules to your policy
 
-During the policy-creation process in Configuration Manager, you can choose the apps you want to give access to your enterprise data through WIP. Apps included in this list can protect data on behalf of the enterprise and are restricted from copying or moving enterprise data to unprotected apps.
+During the policy-creation process in Configuration Manager, you can choose the apps you want to give access to your enterprise data through Windows Information Protection. Apps included in this list can protect data on behalf of the enterprise and are restricted from copying or moving enterprise data to unprotected apps.
 
 The steps to add your app rules are based on the type of rule template being applied. You can add a store app (also known as a Universal Windows Platform (UWP) app), a signed Windows desktop app, or an AppLocker policy file.
 
 >[!IMPORTANT]
->Enlightened apps are expected to prevent enterprise data from going to unprotected network locations and to avoid encrypting personal data. On the other hand, WIP-unaware apps might not respect the corporate network boundary, and WIP-unaware apps will encrypt all files they create or modify. This means that they could encrypt personal data and cause data loss during the revocation process.<p>Care must be taken to get a support statement from the software provider that their app is safe with WIP before adding it to your **App rules** list. If you don't get this statement, it's possible that you could experience app compat issues due to an app losing the ability to access a necessary file after revocation.
+>Enlightened apps are expected to prevent enterprise data from going to unprotected network locations and to avoid encrypting personal data. On the other hand, WIP-unaware apps might not respect the corporate network boundary, and WIP-unaware apps will encrypt all files they create or modify. This means that they could encrypt personal data and cause data loss during the revocation process.<p>Care must be taken to get a support statement from the software provider that their app is safe with Windows Information Protection before adding it to your **App rules** list. If you don't get this statement, it's possible that you could experience app compat issues due to an app losing the ability to access a necessary file after revocation.
 
 ### Add a store app rule to your policy
 For this example, we're going to add Microsoft OneNote, a store app, to the **App Rules** list.
@@ -278,7 +272,7 @@ For this example, we're going to add an AppLocker XML file to the **App Rules** 
     The file is imported and the apps are added to your **App Rules** list.
 
 ### Exempt apps from WIP restrictions
-If you're running into compatibility issues where your app is incompatible with WIP, but still needs to be used with enterprise data, you can exempt the app from the WIP restrictions. This means that your apps won't include auto-encryption or tagging and won't honor your network restrictions. It also means that your exempted apps might leak.
+If you're running into compatibility issues where your app is incompatible with Windows Information Protection (WIP), but still needs to be used with enterprise data, you can exempt the app from the WIP restrictions. This means that your apps won't include auto-encryption or tagging and won't honor your network restrictions. It also means that your exempted apps might leak.
 
 **To exempt a store app, a desktop app, or an AppLocker policy file app rule**
 

@@ -4,9 +4,6 @@ ms.reviewer:
 manager: dougeby
 description: an overview of the Feature Update Status report
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.pagetype: deploy
-audience: itpro
 author: aczechowski
 ms.author: aaroncz
 ms.collection: M365-analytics

@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_OfflineFiles
-description: Policy CSP - ADMX_OfflineFiles
+description: Learn about Policy CSP - ADMX_OfflineFiles.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -13,6 +13,7 @@ manager: dansimp
 ---
 
 # Policy CSP - ADMX_OfflineFiles
+
 >[!TIP]
 > These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 > 
@@ -249,7 +250,7 @@ This policy setting lists network files and folders that are always available fo
 
 If you enable this policy setting, the files you enter are always available offline to users of the computer. To specify a file or folder, click Show. In the Show Contents dialog box in the Value Name column, type the fully qualified UNC path to the file or folder. Leave the Value column field blank.
 
-If you disable this policy setting, the list of files or folders made always available offline (including those files or folders inherited from lower precedence GPOs) is deleted and no files or folders are made available for offline use by Group Policy (though users can still specify their own files and folders for offline use).
+If you disable this policy setting, the list of files or folders made always available offline (including those files or folders inherited from lower precedence GPOs) is deleted. And, no files or folders are made available for offline use by Group Policy (though users can still specify their own files and folders for offline use).
 
 If you don't configure this policy setting, no files or folders are made available for offline use by Group Policy.
 
@@ -301,7 +302,7 @@ This policy setting lists network files and folders that are always available fo
 
 If you enable this policy setting, the files you enter are always available offline to users of the computer. To specify a file or folder, click Show. In the Show Contents dialog box in the Value Name column, type the fully qualified UNC path to the file or folder. Leave the Value column field blank.
 
-If you disable this policy setting, the list of files or folders made always available offline (including those files or folders inherited from lower precedence GPOs) is deleted and no files or folders are made available for offline use by Group Policy (though users can still specify their own files and folders for offline use).
+If you disable this policy setting, the list of files or folders made always available offline (including those files or folders inherited from lower precedence GPOs) is deleted. And, no files or folders are made available for offline use by Group Policy (though users can still specify their own files and folders for offline use).
 
 If you don't configure this policy setting, no files or folders are made available for offline use by Group Policy.
 
@@ -464,7 +465,6 @@ This setting also disables the "When a network connection is lost" option on the
 If you enable this setting, you can use the "Action" box to specify how computers in the group respond.
 
 - "Work offline" indicates that the computer can use local copies of network files while the server is inaccessible.
-
 - "Never go offline" indicates that network files aren't available while the server is inaccessible.
 
 If you disable this setting or select the "Work offline" option, users can work offline if disconnected.
@@ -525,8 +525,7 @@ This setting also disables the "When a network connection is lost" option on the
 
 If you enable this setting, you can use the "Action" box to specify how computers in the group respond.
 
-- "Work offline" indicates that the computer can use local copies of network files while the server is inaccessible.
-
+- "Work offline" indicates that the computer can use local copies of network files while the server is inaccessible. 
 - "Never go offline" indicates that network files aren't available while the server is inaccessible.
 
 If you disable this setting or select the "Work offline" option, users can work offline if disconnected.
@@ -704,7 +703,7 @@ If you don't configure this policy setting, encryption of the Offline Files cach
 > [!NOTE]
 > By default, this cache is protected on NTFS partitions by ACLs.
 
-This setting is applied at user sign in. If this setting is changed after user sign in, then user sign out and sign in is required for this setting to take effect.
+This setting is applied at user sign-in. If this setting is changed after user sign-in, then user sign-out and sign-in is required for this setting to take effect.
 <!--/Description-->
 
 
@@ -748,7 +747,7 @@ ADMX Info:
 <!--Description-->
 This policy setting determines which events the Offline Files feature records in the event log.
 
-Offline Files records events in the Application log in Event Viewer when it detects errors. By default, Offline Files records an event only when the offline files storage cache is corrupted. However, you can use this setting to specify the other events you want Offline Files to record.
+Offline Files records events in the Application login Event Viewer when it detects errors. By default, Offline Files records an event only when the offline files storage cache is corrupted. However, you can use this setting to specify the other events you want Offline Files to record.
 
 To use this setting, in the "Enter" box, select the number corresponding to the events you want the system to log. The levels are cumulative; that is, each level includes the events in all preceding levels.
 
@@ -806,16 +805,13 @@ ADMX Info:
 <!--Description-->
 This policy setting determines which events the Offline Files feature records in the event log.
 
-Offline Files records events in the Application log in Event Viewer when it detects errors. By default, Offline Files records an event only when the offline files storage cache is corrupted. However, you can use this setting to specify the other events you want Offline Files to record.
+Offline Files records events in the Application login Event Viewer when it detects errors. By default, Offline Files records an event only when the offline files storage cache is corrupted. However, you can use this setting to specify the other events you want Offline Files to record.
 
 To use this setting, in the "Enter" box, select the number corresponding to the events you want the system to log. The levels are cumulative; that is, each level includes the events in all preceding levels.
 
-- "0" records an error when the offline storage cache is corrupted.
-
+- "0" records an error when the offline storage cache is corrupted. 
 - "1" also records an event when the server hosting the offline file is disconnected from the network.
-
 - "2" also records events when the local computer is connected and disconnected from the network.
-
 - "3" also records an event when the server hosting the offline file is reconnected to the network.
 
 > [!NOTE]
@@ -911,7 +907,7 @@ ADMX Info:
 <!--Description-->
 Lists types of files that can't be used offline.
 
-This setting lets you exclude certain types of files from automatic and manual caching for offline use. The system doesn't cache files of the type specified in this setting even when they reside on a network share configured for automatic caching. Also, if users try to make a file of this type available offline, the operation will fail and the following message will be displayed in the Synchronization Manager progress dialog box: "Files of this type cannot be made available offline."
+This setting lets you exclude certain types of files from automatic and manual caching for offline use. The system doesn't cache files of the type specified in this setting even when they reside on a network share configured for automatic caching. Also, if users try to make a file of this type available offline, the operation will fail and the following message will be displayed in the Synchronization Manager progress dialog box: "Files of this type can't be made available offline."
 
 This setting is designed to protect files that can't be separated, such as database components.
 
@@ -1773,7 +1769,7 @@ ADMX Info:
 <!--Description-->
 This policy setting allows you to turn on economical application of administratively assigned Offline Files.
 
-If you enable or don't configure this policy setting, only new files and folders in administratively assigned folders are synchronized at sign in. Files and folders that are already available offline are skipped and are synchronized later.
+If you enable or don't configure this policy setting, only new files and folders in administratively assigned folders are synchronized at sign-in. Files and folders that are already available offline are skipped and are synchronized later.
 
 If you disable this policy setting, all administratively assigned folders are synchronized at logon.
 
@@ -2334,7 +2330,7 @@ This policy setting determines whether offline files are fully synchronized when
 
 This setting also disables the "Synchronize all offline files before logging on" option on the Offline Files tab. This disablement prevents users from trying to change the option while a setting controls it.
 
-If you enable this setting, offline files are fully synchronized at sign in. Full synchronization ensures that offline files are complete and current. Enabling this setting automatically enables logon synchronization in Synchronization Manager.
+If you enable this setting, offline files are fully synchronized at sign-in. Full synchronization ensures that offline files are complete and current. Enabling this setting automatically enables logon synchronization in Synchronization Manager.
 
 If this setting is disabled and Synchronization Manager is configured for logon synchronization, the system performs only a quick synchronization. Quick synchronization ensures that files are complete but doesn't ensure that they're current.
 
@@ -2392,11 +2388,11 @@ This policy setting determines whether offline files are fully synchronized when
 
 This setting also disables the "Synchronize all offline files before logging on" option on the Offline Files tab. This disablement prevents users from trying to change the option while a setting controls it.
 
-If you enable this setting, offline files are fully synchronized at sign in. Full synchronization ensures that offline files are complete and current. Enabling this setting automatically enables logon synchronization in Synchronization Manager.
+If you enable this setting, offline files are fully synchronized at sign-in. Full synchronization ensures that offline files are complete and current. Enabling this setting automatically enables logon synchronization in Synchronization Manager.
 
 If this setting is disabled and Synchronization Manager is configured for logon synchronization, the system performs only a quick synchronization. Quick synchronization ensures that files are complete but doesn't ensure that they're current.
 
-If you don't configure this setting and Synchronization Manager is configured for logon synchronization, the system performs a quick synchronization by default, but users can change this option.
+If you don't configure this setting and Synchronization Manager is configured for logon synchronization, the system performs a quick synchronization by default. However, users can change this option.
 
 This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
 
@@ -2662,3 +2658,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

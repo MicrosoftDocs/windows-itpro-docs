@@ -4,8 +4,6 @@ ms.reviewer:
 manager: dougeby
 description: This section describes the changes to settings in Windows Configuration Designer in Windows 10, version 1809.
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz

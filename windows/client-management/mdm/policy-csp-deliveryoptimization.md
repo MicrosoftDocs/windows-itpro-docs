@@ -21,8 +21,6 @@ manager: dansimp
 > 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-
-
 <hr/>
 
 <!--Policies-->
@@ -702,7 +700,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Set this policy to restrict peer selection to a specific source. Available options are: 1 = AD Site, 2 = Authenticated domain SID, 3 = DHCP Option ID, 4 = DNS Suffix, 5 = AAD.
+Set this policy to restrict peer selection to a specific source. Available options are: 1 = Active Directory Site, 2 = Authenticated domain SID, 3 = DHCP Option ID, 4 = DNS Suffix, 5 = Azure Active Directory.
 
 When set, the Group ID will be assigned automatically from the selected source.
 
@@ -727,11 +725,11 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   1 - AD site
+-   1 - Active Directory site
 -   2 - Authenticated domain SID
 -   3 - DHCP user option
 -   4 - DNS suffix
--   5 - AAD
+-   5 - Azure Active Directory
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -817,7 +815,7 @@ ADMX Info:
 
 Specifies the maximum time in seconds that each file is held in the Delivery Optimization cache after downloading successfully. The value 0 (zero) means "unlimited"; Delivery Optimization will hold the files in the cache longer and make the files available for uploads to other devices, as long as the cache size hasn't exceeded. The value 0 is new in Windows 10, version 1607.
 
-The default value is 259200 seconds (3 days).
+The default value is 259200 seconds (three days).
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1590,4 +1588,8 @@ This policy allows an IT Admin to define the following details:
 
 
 <!--/Policies-->
+
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)
 

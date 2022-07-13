@@ -2577,12 +2577,12 @@
     },
     {
       "source_path": "windows/threat-protection/windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/manage-indicators",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/security/threat-protection/windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/microsoft-365/security/defender-endpoint/use-custom-ti",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/manage-indicators",
       "redirect_document_id": false
     },
     {
@@ -13342,7 +13342,7 @@
     },
     {
       "source_path": "windows/keep-secure/use-custom-ti-windows-defender-advanced-threat-protection.md",
-      "redirect_url": "/windows/threat-protection/windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/manage-indicators",
       "redirect_document_id": false
     },
     {
@@ -19549,6 +19549,21 @@
       "source_path": "windows/client-management/mdm/proxy-csp.md",
       "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
       "redirect_document_id": false
-     }      
+     },
+     {
+      "source_path": "windows/client-management/img-boot-sequence.md",
+      "redirect_url": "/windows/client-management/advanced-troubleshooting-boot-problems#boot-sequence",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "windows/deployment/deploy-windows-mdt/deploy-a-windows-11-image-using-mdt.md",
+      "redirect_url": "/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "education/windows/get-minecraft-device-promotion.md",
+      "redirect_url": "/education/windows/get-minecraft-for-education",
+      "redirect_document_id": false
+     }
   ]
 }

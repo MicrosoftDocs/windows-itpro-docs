@@ -14,7 +14,6 @@ manager: dansimp
 
 # Policy CSP - LockDown
 
-
 <hr/>
 
 <!--Policies-->
@@ -25,7 +24,6 @@ manager: dansimp
     <a href="#lockdown-allowedgeswipe">LockDown/AllowEdgeSwipe</a>
   </dd>
 </dl>
-
 
 <hr/>
 
@@ -58,7 +56,7 @@ manager: dansimp
 <!--Description-->
 Allows the user to invoke any system user interface by swiping in from any screen edge using touch.
 
-The easiest way to verify the policy is to restart the explorer process or to reboot after the policy is applied. And then try to swipe from the right edge of the screen. The desired result is for Action Center to not be invoked by the swipe. You can also enter tablet mode and attempt to swipe from the top of the screen to rearrange. That will also be disabled.
+The easiest way to verify the policy is to restart the explorer process or to reboot after the policy is applied, and then try to swipe from the right edge of the screen. The desired result is for Action Center to not be invoked by the swipe. You can also enter tablet mode and attempt to swipe from the top of the screen to rearrange, that will also be disabled.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -81,3 +79,6 @@ The following list shows the supported values:
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

@@ -1,7 +1,6 @@
 ---
 title: DMClient DDF file
 description: Learn about the OMA DM device description framework (DDF) for the DMClient configuration service provider (CSP).
-ms.assetid: A21B33AF-DB76-4059-8170-FADF2CB898A0
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -981,7 +980,7 @@ The XML below is for Windows 10, version 1803.
                   <Get />
                   <Replace />
                 </AccessType>
-                <Description>Send the device AAD token, if the user one can't be returned</Description>
+                <Description>Send the device Azure Active Directory token, if the user one can't be returned</Description>
                 <DFFormat>
                   <bool />
                 </DFFormat>
@@ -1661,7 +1660,7 @@ The XML below is for Windows 10, version 1803.
                     <Replace />
                   </AccessType>
                   <DefaultValue>0</DefaultValue>
-                  <Description>Device Only.  This node determines whether or not the MDM progress page is blocking in the AADJ or DJ++ case, as well as which remediation options are available.</Description>
+                  <Description>Device Only.  This node determines whether or not the MDM progress page is blocking in the Azure Active Directory-joined or DJ++ case, as well as which remediation options are available.</Description>
                   <DFFormat>
                     <int />
                   </DFFormat>
@@ -1740,7 +1739,7 @@ The XML below is for Windows 10, version 1803.
                     <Replace />
                   </AccessType>
                   <DefaultValue>true</DefaultValue>
-                  <Description>Device only.  This node decides wheter or not the MDM device progress page skips after AADJ or Hybrid AADJ in OOBE.</Description>
+                  <Description>Device only.  This node decides whether or not the MDM device progress page skips after Azure Active Directory-joined or Hybrid Azure AD-joined in OOBE.</Description>
                   <DFFormat>
                     <bool />
                   </DFFormat>
@@ -1766,7 +1765,7 @@ The XML below is for Windows 10, version 1803.
                     <Replace />
                   </AccessType>
                   <DefaultValue>false</DefaultValue>
-                  <Description>Device only.  This node decides wheter or not the MDM user progress page skips after AADJ or DJ++ after user login.</Description>
+                  <Description>Device only.  This node decides wheter or not the MDM user progress page skips after Azure Active Directory-joined or DJ++ after user login.</Description>
                   <DFFormat>
                     <bool />
                   </DFFormat>
