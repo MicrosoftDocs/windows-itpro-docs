@@ -561,7 +561,10 @@ Some properties to use in the MDT Production rules file are as follows:
 -   **EventService.** Activates logging information to the MDT monitoring web service.
 
 > [!NOTE]
-> For more details about localization support, see the [MDT sample guide](/mem/configmgr/mdt/samples-guide#fully-automated-lti-deployment-for-a-refresh-computer-scenario). You can find a list of Language Codes [here](/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a) and a list of Time Zone Index Values [here](/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a).
+> For more information about localization support, see the following articles:
+>
+> - [MDT sample guide](/mem/configmgr/mdt/samples-guide#fully-automated-lti-deployment-for-a-refresh-computer-scenario)
+> - [LCID (Locale ID) codes](/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a)
 
 ### Optional deployment share configuration
 
