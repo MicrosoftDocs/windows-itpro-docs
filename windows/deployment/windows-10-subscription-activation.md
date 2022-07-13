@@ -13,7 +13,7 @@ ms.collection:
 search.appverid:
 - MET150
 ms.topic: article
-ms.date: 06/16/2022
+ms.date: 07/12/2022
 ---
 
 # Windows 10/11 Subscription Activation
@@ -26,9 +26,11 @@ Windows 10 Pro supports the Subscription Activation feature, enabling users to "
 
 With Windows 10, version 1903 and later, the Subscription Activation feature also supports the ability to step-up from Windows 10 Pro Education or Windows 11 Pro Education to the Enterprise grade editions for educational institutions—**Windows 10 Education** or **Windows 11 Education**.
 
+If you have devices that are licensed for Windows 7, 8, and 8.1 Professional, Microsoft 365 Business Premium provides an upgrade to Windows 10 Pro, which is the prerequisite for deploying [Windows 10 Business](/microsoft-365/business-premium/microsoft-365-business-faqs#what-is-windows-10-business).
+
 The Subscription Activation feature eliminates the need to manually deploy Enterprise or Education edition images on each target device, then later standing up on-premises key management services such as KMS or MAK based activation, entering Generic Volume License Keys (GVLKs), and subsequently rebooting client devices.  
 
-See the following articles:
+For more information, see the following articles:
 
 - [Subscription Activation](#subscription-activation-for-windows-1011-enterprise): An introduction to Subscription Activation for Windows 10/11 Enterprise.
 - [Subscription Activation for Education](#subscription-activation-for-windows-1011-enterprise): Information about Subscription Activation for Windows 10/11 Education.
