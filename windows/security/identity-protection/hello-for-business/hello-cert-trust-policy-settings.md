@@ -1,12 +1,7 @@
 ---
 title: Configure Windows Hello for Business Policy settings - certificate trust
 description: Configure Windows Hello for Business Policy settings for Windows Hello for Business. Certificate-based deployments need three group policy settings.
-keywords: identity, PIN, biometric, Hello, passport
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
 author: GitPrakhar13
 ms.author: prsriva
 manager: dansimp
@@ -60,7 +55,7 @@ The Group Policy object contains the policy settings needed to trigger Windows H
 3. Right-click **Group Policy object** and select **New**.
 4. Type *Enable Windows Hello for Business* in the name box and click **OK**.
 5. In the content pane, right-click the **Enable Windows Hello for Business** Group Policy object and click **Edit**.
-6. In the navigation pane, expand **Policies** under **User Configuration**.
+6. In the navigation pane, expand **Policies** under **User Configuration** (this is the only option for Windows Server 2016, but for Windows Server 2019 and later this step can also be done in **Computer Configuration**).
 7. Expand **Administrative Templates > Windows Component**, and select **Windows Hello for Business**.
 8. In the content pane, double-click **Use Windows Hello for Business**. Click **Enable** and click **OK**.
 9. Double-click **Use certificate for on-premises authentication**. Click **Enable** and click **OK**.  Close the **Group Policy Management Editor**.
@@ -70,7 +65,7 @@ The Group Policy object contains the policy settings needed to trigger Windows H
 1. Start the **Group Policy Management Console** (gpmc.msc).
 2. Expand the domain and select the **Group Policy Object** node in the navigation pane.
 3. Right-click the **Enable Windows Hello for Business** Group Policy object and click **Edit**.
-4. In the navigation pane, expand **Policies** under **User Configuration**.
+4. In the navigation pane, expand **Policies** under **User Configuration** (this is the only option for Windows Server 2016, but for Windows Server 2019 and later this step can also be done in **Computer Configuration**).
 5. Expand **Windows Settings > Security Settings**, and click **Public Key Policies**.
 6. In the details pane, right-click **Certificate Services Client – Auto-Enrollment** and select **Properties**.
 7. Select **Enabled** from the **Configuration Model** list.

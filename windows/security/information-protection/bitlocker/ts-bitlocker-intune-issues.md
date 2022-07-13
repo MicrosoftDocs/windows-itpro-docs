@@ -4,12 +4,10 @@ description: provides assistance for issues that you may see if you use Microsof
 ms.reviewer: kaushika
 ms.technology: windows-sec
 ms.prod: m365-security
-ms.sitesec: library
 ms.localizationpriority: medium
 author: Teresa-Motiv
 ms.author: v-tappelgate
 manager: kaushika
-audience: ITPro
 ms.collection:
   - Windows Security Technologies\BitLocker
   - highpri

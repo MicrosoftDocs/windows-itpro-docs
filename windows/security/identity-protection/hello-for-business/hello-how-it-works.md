@@ -2,10 +2,6 @@
 title: How Windows Hello for Business works
 description: Learn how Windows Hello for Business works, and how it can help your users authenticate to services.
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
 author: GitPrakhar13
 ms.author: prsriva
 manager: dansimp

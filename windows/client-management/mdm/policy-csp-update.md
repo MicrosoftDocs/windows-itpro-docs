@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 03/18/2022
+ms.date: 06/15/2022
 ms.reviewer: 
 manager: dansimp
 ms.collection: highpri
@@ -3478,7 +3478,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-setpolicydrivenupdatesourcefordriver"></a>**Update/SetPolicyDrivenUpdateSourceForDriver**  
+<a href="" id="update-setpolicydrivenupdatesourcefordriver"></a>**Update/SetPolicyDrivenUpdateSourceForDriverUpdates**  
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -3508,12 +3508,12 @@ The table below shows the applicability of Windows:
 Configure this policy to specify whether to receive Windows Driver Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
 
 If you configure this policy, also configure the scan source policies for other update types:
-- SetPolicyDrivenUpdateSourceForFeature
-- SetPolicyDrivenUpdateSourceForQuality
-- SetPolicyDrivenUpdateSourceForOther
+- SetPolicyDrivenUpdateSourceForFeatureUpdates
+- SetPolicyDrivenUpdateSourceForQualityUpdates
+- SetPolicyDrivenUpdateSourceForOtherUpdates
 
 >[!NOTE]
->If you have not properly configured Update/UpdateServiceUrl correctly to point  your WSUS server, this policy will have no effect. 
+>If you have not properly configured Update/UpdateServiceUrl correctly to point to your WSUS server, this policy will have no effect. 
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -3536,7 +3536,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-setpolicydrivenupdatesourceforfeature"></a>**Update/SetPolicyDrivenUpdateSourceForFeature**  
+<a href="" id="update-setpolicydrivenupdatesourceforfeature"></a>**Update/SetPolicyDrivenUpdateSourceForFeatureUpdates**  
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -3566,12 +3566,12 @@ The table below shows the applicability of Windows:
 Configure this policy to specify whether to receive Windows Driver Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
 
 If you configure this policy, also configure the scan source policies for other update types:
-- SetPolicyDrivenUpdateSourceForQuality
-- SetPolicyDrivenUpdateSourceForDriver
-- SetPolicyDrivenUpdateSourceForOther
+- SetPolicyDrivenUpdateSourceForQualityUpdates
+- SetPolicyDrivenUpdateSourceForDriverUpdates
+- SetPolicyDrivenUpdateSourceForOtherUpdates
 
 >[!NOTE]
->If you have not properly configured Update/UpdateServiceUrl correctly to point  your WSUS server, this policy will have no effect. 
+>If you have not properly configured Update/UpdateServiceUrl correctly to point to your WSUS server, this policy will have no effect. 
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -3594,7 +3594,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-setpolicydrivenupdatesourceforother"></a>**Update/SetPolicyDrivenUpdateSourceForOther**  
+<a href="" id="update-setpolicydrivenupdatesourceforother"></a>**Update/SetPolicyDrivenUpdateSourceForOtherUpdates**  
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -3624,12 +3624,12 @@ The table below shows the applicability of Windows:
 Configure this policy to specify whether to receive Windows Driver Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
 
 If you configure this policy, also configure the scan source policies for other update types:
-- SetPolicyDrivenUpdateSourceForFeature
-- SetPolicyDrivenUpdateSourceForQuality
-- SetPolicyDrivenUpdateSourceForDriver
+- SetPolicyDrivenUpdateSourceForFeatureUpdates
+- SetPolicyDrivenUpdateSourceForQualityUpdates
+- SetPolicyDrivenUpdateSourceForDriverUpdates
 
 >[!NOTE]
->If you have not properly configured Update/UpdateServiceUrl correctly to point your WSUS server, this policy will have no effect. 
+>If you have not properly configured Update/UpdateServiceUrl correctly to point to your WSUS server, this policy will have no effect. 
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -3652,7 +3652,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-setpolicydrivenupdatesourceforquality"></a>**Update/SetPolicyDrivenUpdateSourceForQuality**  
+<a href="" id="update-setpolicydrivenupdatesourceforquality"></a>**Update/SetPolicyDrivenUpdateSourceForQualityUpdates**  
 
 <!--SupportedSKUs-->
 The table below shows the applicability of Windows:
@@ -3682,12 +3682,12 @@ The table below shows the applicability of Windows:
 Configure this policy to specify whether to receive Windows Driver Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
 
 If you configure this policy, also configure the scan source policies for other update types:
-- SetPolicyDrivenUpdateSourceForFeature
-- SetPolicyDrivenUpdateSourceForDriver
-- SetPolicyDrivenUpdateSourceForOther
+- SetPolicyDrivenUpdateSourceForFeatureUpdates
+- SetPolicyDrivenUpdateSourceForDriverUpdates
+- SetPolicyDrivenUpdateSourceForOtherUpdates
 
 >[!NOTE]
->If you have not properly configured Update/UpdateServiceUrl correctly to point your WSUS server, this policy will have no effect. 
+>If you have not properly configured Update/UpdateServiceUrl correctly to point to your WSUS server, this policy will have no effect. 
 
 <!--/Description-->
 <!--ADMXMapped-->

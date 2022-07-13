@@ -2,10 +2,6 @@
 title: Identity and access management (Windows 10)
 description: Learn more about identity and access protection technologies in Windows.
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp
