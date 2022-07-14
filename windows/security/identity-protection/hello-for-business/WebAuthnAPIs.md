@@ -23,14 +23,14 @@ Using these APIs, developer partners and the developer community can use [Window
 
 Users of these apps or sites can use any browser that supports Windows 10 WebAuthn APIs for passwordless authentication. These APIs are currently supported by Microsoft Edge on Windows 10 1809 or later and on the latest versions of other browsers. Users will have a familiar and consistent experience on Windows 10, no matter which browser they use.
 
-Developers should use the new Windows 10 APIs to support FIDO2 authentication keys in a consistent way for users. Moreover, developers can use all the transports that are available per FIDO2 specifications (USB, NFC, and BLE) without having to deal with the interaction and management overhead.
+Developers should use the new Windows 10 APIs to support Fast IDentity Online 2 (FIDO2) authentication keys in a consistent way for users. Moreover, developers can use all the transports that are available per FIDO2 specifications (USB, NFC, and BLE) without having to deal with the interaction and management overhead.
 
 > [!NOTE]  
 > When these APIs are in use, Windows 10 browsers or apps don't have direct access to the FIDO2 transports for FIDO-related messaging.
 
 ## The Big Picture
 
-CTAP2 and WebAuthn define an abstraction layer that creates an ecosystem for strongly authenticated credentials. In this ecosystem, any interoperable client (such as a native app or browser) that runs on a given client device uses a standardized method to interact with any interoperable authenticator. Such authenticators include platform authenticators (which are built into the client device) or roaming authenticators (which connect to the client device by using USB, BLE, or NFC connections).
+Client to Authenticator Protocol 2 (CTAP2) and WebAuthn define an abstraction layer that creates an ecosystem for strongly authenticated credentials. In this ecosystem, any interoperable client (such as a native app or browser) that runs on a given client device uses a standardized method to interact with any interoperable authenticator. Such authenticators include platform authenticators (which are built into the client device) or roaming authenticators (which connect to the client device by using USB, BLE, or NFC connections).
 
 The authentication process starts when the user performs a specific user gesture that indicates consent for the operation. At the request of the client, the authenticator securely creates strong cryptographic keys and locally stores them.
 
@@ -113,8 +113,8 @@ Here's an approximate layout of where the Microsoft bits go:
 
 ## Where can developers learn more?
 
-The new Windows 10 WebAuthn APIs are documented in the [Microsoft/webauthn](https://github.com/Microsoft/webauthn) Github repo. To understand how FIDO2 authenticators work, review the following two specifications:
+The new Windows 10 WebAuthn APIs are documented in the [Microsoft/webauthn](https://github.com/Microsoft/webauthn) GitHub repo. To understand how FIDO2 authenticators work, review the following two specifications:
 
 - [Web Authentication: An API for accessing Public Key Credentials](https://www.w3.org/TR/webauthn/), which is available at the W3C site. This document is known as the WebAuthn spec.
 
-- [Client to Authenticator Protocol (CTAP)](https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-client-to-authenticator-protocol-v2.0-id-20180227.html), which is available at the [FIDO Alliance](http://fidoalliance.org/) site. (where hardware and platform folks have joined to solve the problem of Fast IDentity Online).
+- [Client to Authenticator Protocol (CTAP)](https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-client-to-authenticator-protocol-v2.0-id-20180227.html), which is available at the [FIDO Alliance](http://fidoalliance.org/) site. (where hardware and platform folks have joined to solve the problem of FIDO authentication).
