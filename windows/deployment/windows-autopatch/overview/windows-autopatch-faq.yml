@@ -34,6 +34,9 @@ sections:
       - question: Will Windows Autopatch be available for state and local government customers?
         answer: |
           Windows Autopatch is available for all Windows E3 customers using Azure commercial cloud. However, Autopatch isn't currently supported for government cloud (GCC) customers.
+      - question: What if I enrolled into Windows Autopatch using the promo code? Will I still have access to the service?
+        answer: |
+          Yes. For those who used the promo code to access Windows Autopatch during public preview, you'll continue to have access to Windows Autopatch even when the promo code expires. There is no additional action you have to take to continue using Windows Autopatch.
   - name: Requirements
     questions:
       - question: What are the prerequisites for Windows Autopatch?
