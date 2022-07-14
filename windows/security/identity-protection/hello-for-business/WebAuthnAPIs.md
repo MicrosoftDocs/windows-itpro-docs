@@ -15,7 +15,7 @@ ms.reviewer:
 
 Passwords leave your customers vulnerable. When you use the new WebAuthn APIs in your sites and apps, your customers can use passwordless authentication.
 
-Microsoft has long been a proponent of passwordless authentication. While we work towards that goal, we'd like to introduce you to the latest Windows 10 (version 1903) W3C/FIDO2 Win32 WebAuthn platform APIs.
+Microsoft has long been a proponent of passwordless authentication. While we work towards that goal, we'd like to introduce you to the latest Windows 10 (version 1903) W3C/Fast IDentity Online 2 (FIDO2) Win32 WebAuthn platform APIs.
 
 ## What does this mean?
 
@@ -23,7 +23,7 @@ Using these APIs, developer partners and the developer community can use [Window
 
 Users of these apps or sites can use any browser that supports Windows 10 WebAuthn APIs for passwordless authentication. These APIs are currently supported by Microsoft Edge on Windows 10 1809 or later and on the latest versions of other browsers. Users will have a familiar and consistent experience on Windows 10, no matter which browser they use.
 
-Developers should use the new Windows 10 APIs to support Fast IDentity Online 2 (FIDO2) authentication keys in a consistent way for users. Moreover, developers can use all the transports that are available per FIDO2 specifications (USB, NFC, and BLE) without having to deal with the interaction and management overhead.
+Developers should use the new Windows 10 APIs to support FIDO2 authentication keys in a consistent way for users. Moreover, developers can use all the transports that are available per FIDO2 specifications (USB, NFC, and BLE) without having to deal with the interaction and management overhead.
 
 > [!NOTE]  
 > When these APIs are in use, Windows 10 browsers or apps don't have direct access to the FIDO2 transports for FIDO-related messaging.
