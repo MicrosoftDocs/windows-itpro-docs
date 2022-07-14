@@ -25,7 +25,7 @@ sections:
       - question: Is Windows 365 for Enterprise supported with Windows Autopatch?
         answer: |
           Windows Autopatch supports Windows 365 for Enterprise. Windows 365 for Business isn't supported.
-      - question: Does Windows Autopatch support Windows Education (A3) or Windows Front Line Worker (F3) licensing?
+      - question: Does Windows Autopatch support Windows Education (A3/A5) or Windows Front Line Worker (F3) licensing?
         answer: |
           Autopatch isn't available for 'A' or 'F' series licensing.
       - question: Will Windows Autopatch support local domain join Windows 10?
