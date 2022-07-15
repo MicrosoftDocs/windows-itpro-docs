@@ -167,7 +167,7 @@ sections:
       
       - question: What about any diagnostic data coming out when WHFB is enabled?
         answer: |
-          To help us keep things working properly, to help detect and prevent fraud, and to continue improving Windows Hello, we collect diagnostic data about how people use Windows Hello. For example, data about whether people sign in with their face, iris, fingerprint, or PIN; the number of times they use it; and whether it works or not is all valuable information that helps us build a better product. The data is pseudonymized, does not include biometric information, and is encrypted before it is transmitted to Microsoft. You can choose to stop sending diagnostic data to Microsoft at any time. Learn more about https://support.microsoft.com/en-us/windows/diagnostics-feedback-and-privacy-in-windows-28808a2b-a31b-dd73-dcd3-4559a5199319. 
+          To help us keep things working properly, to help detect and prevent fraud, and to continue improving Windows Hello, we collect diagnostic data about how people use Windows Hello. For example, data about whether people sign in with their face, iris, fingerprint, or PIN; the number of times they use it; and whether it works or not is all valuable information that helps us build a better product. The data is pseudonymized, does not include biometric information, and is encrypted before it is transmitted to Microsoft. You can choose to stop sending diagnostic data to Microsoft at any time. Learn more about [Learn more about diagnostic data in Windows](https://support.microsoft.com/en-us/windows/diagnostics-feedback-and-privacy-in-windows-28808a2b-a31b-dd73-dcd3-4559a5199319. 
      
       - question: What are the biometric requirements for Windows Hello for Business?
         answer: |
