@@ -1,5 +1,5 @@
 <!-- 
-Fill out the information below to help us review this pull request. 
+Fill out the following information to help us review this pull request. 
 You can delete these comments once you are done.
 -->
 <!-- 
@@ -13,10 +13,10 @@ If your changes are extensive:
 ## Why
 
 <!--
-- Briefly describe **why** you made this PR.
-- If this PR relates to an issue, provide the issue number or link.
-- If this PR closes an issue, use a keyword (`Closes #123`).
-  - Using a keyword will ensure the issue is automatically closed once this PR is merged.
+- Briefly describe _why_ you made this pull request.
+- If this pull request relates to an issue, provide the issue number or link.
+- If this pull request closes an issue, use a keyword (`Closes #123`).
+  - Using a keyword will ensure the issue is automatically closed once this pull request is merged.
   - For more information, see [Linking a pull request to an issue using a keyword](https://docs.github.com/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).
 -->
 
@@ -25,7 +25,7 @@ If your changes are extensive:
 ## Changes
 
 <!--
-- Briefly describe or list **what** this PR changes.
+- Briefly describe or list _what_ this PR changes.
 - Share any important highlights regarding your changes, such as screenshots, code snippets, or formatting.
 -->
 
