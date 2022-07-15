@@ -1,22 +1,26 @@
 ---
-title: Make & verify an EFS Data Recovery Agent certificate (Windows 10)
+title: Create an EFS Data Recovery Agent certificate
 description: Follow these steps to create, verify, and perform a quick recovery by using a Encrypting File System (EFS) Data Recovery Agent (DRA) certificate.
 ms.prod: m365-security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.reviewer: rafals
 ms.collection: M365-security-compliance
-ms.topic: conceptual
-ms.date: 03/05/2019
-ms.reviewer: 
+ms.topic: how-to
+ms.date: 07/15/2022
 ---
 
 # Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate
 
-**Applies to:**
+[!INCLUDE [Deprecate Windows Information Protection](includes/wip-deprecation.md)]
+<!-- 6010051 -->
 
-- Windows 10, version 1607 and later
+_Applies to:_
+
+- Windows 10
+- Windows 11
 
 If you don't already have an EFS DRA certificate, you'll need to create and extract one from your system before you can use Windows Information Protection (WIP), formerly known as enterprise data protection (EDP), in your organization. For the purposes of this section, we'll use the file name EFSDRA; however, this name can be replaced with anything that makes sense to you.
 
@@ -159,7 +163,3 @@ After signing in, the necessary WIP key info is automatically downloaded and emp
 - [Create a Windows Information Protection (WIP) policy using Microsoft Endpoint Configuration Manager](create-wip-policy-using-configmgr.md)
 
 - [Creating a Domain-Based Recovery Agent](/previous-versions/tn-archive/cc875821(v=technet.10)#EJAA)
-
-
->[!Note]
->Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to this article](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).
