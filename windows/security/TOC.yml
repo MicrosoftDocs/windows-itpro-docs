@@ -219,25 +219,25 @@
          - name: Create a WIP policy using Microsoft Intune
            href: information-protection/windows-information-protection/overview-create-wip-policy.md
            items: 
-            - name: Create a WIP policy with MDM using the Azure portal for Microsoft Intune
+            - name: Create a WIP policy in Microsoft Intune
               href: information-protection/windows-information-protection/create-wip-policy-using-intune-azure.md
               items: 
-                - name: Deploy your WIP policy using the Azure portal for Microsoft Intune
+                - name: Deploy your WIP policy in Microsoft Intune
                   href: information-protection/windows-information-protection/deploy-wip-policy-using-intune-azure.md
-                - name: Associate and deploy a VPN policy for WIP using the Azure portal for Microsoft Intune
+                - name: Associate and deploy a VPN policy for WIP in Microsoft Intune
                   href: information-protection/windows-information-protection/create-vpn-and-wip-policy-using-intune-azure.md
             - name: Create and verify an EFS Data Recovery Agent (DRA) certificate
               href: information-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate.md
-            - name: Determine the Enterprise Context of an app running in WIP
+            - name: Determine the enterprise context of an app running in WIP
               href: information-protection/windows-information-protection/wip-app-enterprise-context.md
          - name: Create a WIP policy using Microsoft Endpoint Configuration Manager
            href: information-protection/windows-information-protection/overview-create-wip-policy-configmgr.md
            items: 
-            - name: Create and deploy a WIP policy using Microsoft Endpoint Configuration Manager
+            - name: Create and deploy a WIP policy in Configuration Manager
               href: information-protection/windows-information-protection/create-wip-policy-using-configmgr.md
             - name: Create and verify an EFS Data Recovery Agent (DRA) certificate
               href: information-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate.md
-            - name: Determine the Enterprise Context of an app running in WIP
+            - name: Determine the enterprise context of an app running in WIP
               href: information-protection/windows-information-protection/wip-app-enterprise-context.md
          - name: Mandatory tasks and settings required to turn on WIP
            href: information-protection/windows-information-protection/mandatory-settings-for-wip.md
