@@ -1,13 +1,8 @@
 ---
 title: Windows Credential Theft Mitigation Guide Abstract
 description: Provides a summary of the Windows credential theft mitigation guide.
-ms.assetid: 821ddc1a-f401-4732-82a7-40d1fff5a78a
 ms.reviewer: 
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp
