@@ -75,7 +75,7 @@ The following table lists the MDM policy settings that you can configure for Win
 |UsePassportForWork|Device or user|True|<p>True: Windows Hello for Business will be provisioned for all users on the device.<p>False: Users will not be able to provision Windows Hello for Business. <div class="alert"> **Note:** If Windows Hello for Business is enabled, and then the policy is changed to False, users who previously set up Windows Hello for Business can continue to use it, but will not be able to set up Windows Hello for Business on other devices</div>|
 |RequireSecurityDevice|Device or user|False|<p>True: Windows Hello for Business will only be provisioned using TPM.<p>False: Windows Hello for Business will be provisioned using TPM if available, and will be provisioned using software if TPM is not available.|
 |ExcludeSecurityDevice<p>TPM12|Device|False|Added in Windows 10, version 1703<p>True: TPM revision 1.2 modules will be disallowed from being used with Windows Hello for Business.<p>False: TPM revision 1.2 modules will be allowed to be used with Windows Hello for Business.|
-|EnablePinRecovery|Device or use|False|<p>Added in Windows 10, version 1703<p>True: Windows Hello for Business uses the Azure-based PIN recovery service for PIN reset.<p>False: Windows Hello for Business does not create or store a PIN recovery secret. PIN reset does not use the Azure-based PIN recovery service.For more information about using the PIN recovery service for PIN reset see [Windows Hello for Business PIN Reset](hello-feature-pin-reset.md).|
+|EnablePinRecovery|Device or use|False|<p>Added in Windows 10, version 1703<p>True: Windows Hello for Business uses the Azure-based PIN recovery service for PIN reset.<p>False: Windows Hello for Business does not create or store a PIN recovery secret. PIN reset does not use the Azure-based PIN recovery service. For more information about using the PIN recovery service for PIN reset see [Windows Hello for Business PIN Reset](hello-feature-pin-reset.md).|
 
 ### Biometrics
 
@@ -114,7 +114,7 @@ Policies for Windows Hello for Business are enforced using the following hierarc
 
 Feature enablement policy and certificate trust policy are grouped together and enforced from the same source (either GP or MDM), based on the rule above. The Use Passport for Work policy is used to determine the winning policy source.
 
-All PIN complexity policies, are grouped separately from feature enablement and are enforced from a single policy source. Use a hardware security device and RequireSecurityDevice enforcement are also grouped together with PIN complexity policy. Conflict resolution for other Windows Hello for Business policies are enforced on a per policy basis.  
+All PIN complexity policies are grouped separately from feature enablement and are enforced from a single policy source. Use a hardware security device and RequireSecurityDevice enforcement are also grouped together with PIN complexity policy. Conflict resolution for other Windows Hello for Business policies are enforced on a per policy basis.  
 
 >[!NOTE]
 > Windows Hello for Business policy conflict resolution logic does not respect the ControlPolicyConflict/MDMWinsOverGP policy in the Policy CSP.
