@@ -4,7 +4,7 @@ description: Describes several known issues that you may encounter while using n
 ms.technology: windows-sec
 ms.prod: m365-security
 ms.localizationpriority: medium
-author: Teresa-Motiv
+author: v-tappelgate
 ms.author: v-tappelgate
 manager: kaushika
 ms.reviewer: kaushika

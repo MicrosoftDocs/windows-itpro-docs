@@ -1,12 +1,7 @@
 ---
 title: Configure Hybrid Azure AD joined Windows Hello for Business - Active Directory (AD)
 description: Discussing the configuration of Active Directory (AD) in a Hybrid deployment of Windows Hello for Business
-keywords: identity, PIN, biometric, Hello, passport, WHFB, ad
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
 author: GitPrakhar13
 ms.author: prsriva
 manager: dansimp

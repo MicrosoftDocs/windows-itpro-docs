@@ -2,10 +2,6 @@
 title: Smart Cards for Windows Service (Windows)
 description: This topic for the IT professional and smart card developers describes how the Smart Cards for Windows service manages readers and application interactions.
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp

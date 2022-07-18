@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 06/15/2022
 ms.technology: windows-sec
 ---
 
@@ -24,6 +24,10 @@ ms.technology: windows-sec
 -   Windows 10
 
 Describes the best practices, location, values, management aspects, and security considerations for the **Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers** security policy setting.
+
+
+> [!NOTE]
+> For more information about configuring a server to be accessed remotely, see [Remote Desktop - Allow access to your PC](/windows-server/remote/remote-desktop-services/clients/remote-desktop-allow-access).
 
 ## Reference
 

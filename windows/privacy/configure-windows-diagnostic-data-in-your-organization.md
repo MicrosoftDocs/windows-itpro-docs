@@ -267,7 +267,7 @@ The Windows diagnostic data processor configuration enables you to be the contro
   - Enterprise
   - Professional
   - Education
-- The device must be joined to Azure Active Directory.
+- The device must be joined to Azure Active Directory (can be a hybrid Azure AD join).
 
 For the best experience, use the most current build of any operating system specified above. Configuration functionality and availability may vary on older systems. See [Lifecycle Policy](/lifecycle/products/windows-10-enterprise-and-education)
 

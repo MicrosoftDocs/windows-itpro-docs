@@ -1,12 +1,7 @@
 ---
 title: Prepare and Deploy Windows AD FS certificate trust (Windows Hello for Business)
 description: Learn how to Prepare and Deploy Windows Server 2016 Active Directory Federation Services (AD FS) for Windows Hello for Business, using certificate trust.
-keywords: identity, PIN, biometric, Hello, passport
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
 author: GitPrakhar13
 ms.author: prsriva
 manager: dansimp
