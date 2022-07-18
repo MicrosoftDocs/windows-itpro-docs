@@ -1,12 +1,7 @@
 ---
 title: Hybrid Azure AD joined Windows Hello for Business - Directory Synchronization
 description: How to configure Hybrid key trust Windows Hello for Business - Directory Synchronization
-keywords: identity, PIN, biometric, Hello, passport, WHFB, dirsync, connect, Windows Hello, AD Connect, key trust, key-trust
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
 author: GitPrakhar13
 ms.author: prsriva
 manager: dansimp

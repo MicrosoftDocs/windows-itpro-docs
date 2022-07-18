@@ -4,12 +4,10 @@ description: Describes approaches for investigating BitLocker issues, including 
 ms.reviewer: kaushika
 ms.technology: windows-sec
 ms.prod: m365-security
-ms.sitesec: library
 ms.localizationpriority: medium
 author: Teresa-Motiv
 ms.author: v-tappelgate
 manager: kaushika
-audience: ITPro
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
 ms.date: 10/17/2019
