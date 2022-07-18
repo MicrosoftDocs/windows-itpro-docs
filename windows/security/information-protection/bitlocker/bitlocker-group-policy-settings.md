@@ -1,17 +1,12 @@
 ---
 title: BitLocker Group Policy settings (Windows 10)
 description: This article for IT professionals describes the function, location, and effect of each Group Policy setting that is used to manage BitLocker Drive Encryption.
-ms.assetid: 4904e336-29fe-4cef-bb6c-3950541864af
 ms.reviewer: 
 ms.prod: m365-security
-ms.mktglfcycl: explore
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection:
   - M365-security-compliance
   - highpri

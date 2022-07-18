@@ -2,9 +2,6 @@
 title: How to configure Diffie Hellman protocol over IKEv2 VPN connections (Windows 10 and Windows 11)
 description: Learn how to update the Diffie Hellman configuration of VPN servers and clients by running VPN cmdlets to secure connections.
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, networking
 author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium

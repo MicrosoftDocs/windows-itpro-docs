@@ -73,13 +73,13 @@
       href: windows-defender-application-control-deployment-guide.md
       items: 
         - name: Deploy WDAC policies with MDM
-          href: deploy-windows-defender-application-control-policies-using-intune.md
-        - name: Deploy WDAC policies with MEMCM
+          href: deployment/deploy-windows-defender-application-control-policies-using-intune.md
+        - name: Deploy WDAC policies with Configuration Manager
           href: deployment/deploy-wdac-policies-with-memcm.md
         - name: Deploy WDAC policies with script
           href: deployment/deploy-wdac-policies-with-script.md
-        - name: Deploy WDAC policies with Group Policy
-          href: deploy-windows-defender-application-control-policies-using-group-policy.md
+        - name: Deploy WDAC policies with group policy
+          href: deployment/deploy-windows-defender-application-control-policies-using-group-policy.md
         - name: Audit WDAC policies
           href: audit-windows-defender-application-control-policies.md
         - name: Merge WDAC policies
