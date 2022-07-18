@@ -139,8 +139,8 @@ When you configure your MDT Build Lab deployment share, you can also add applica
 
 On **MDT01**:
 
-1. Download the Enterprise distribution version of [Adobe Acrobat Reader DC](https://get.adobe.com/reader/enterprise/) (AcroRdrDC2200120117_en_US.exe) to **D:\\setup\\adobe** on MDT01.
-2. Extract the .exe file that you downloaded to an .msi (ex: .\AcroRdrDC2200120117_en_US.exe -sfx_o"d:\setup\adobe\install\" -sfx_ne).
+1. Download the Enterprise distribution version of [Adobe Acrobat Reader DC](https://get.adobe.com/reader/enterprise/) (AcroRdrDC2200120142_en_US.exe) to **D:\\setup\\adobe** on MDT01.
+2. Extract the .exe file that you downloaded to an .msi (ex: .\AcroRdrDC2200120142_en_US.exe -sfx_o"d:\setup\adobe\install\" -sfx_ne).
 3. In the Deployment Workbench, expand the **MDT Production** node and navigate to the **Applications** node.
 4. Right-click the **Applications** node, and create a new folder named **Adobe**.
 
@@ -559,6 +559,12 @@ Some properties to use in the MDT Production rules file are as follows:
 -   **ScanStateArgs.** Arguments for the User State Migration Tool (USMT) ScanState command.
 -   **USMTMigFiles(\*).** List of USMT templates (controlling what to backup and restore).
 -   **EventService.** Activates logging information to the MDT monitoring web service.
+
+> [!NOTE]
+> For more information about localization support, see the following articles:
+>
+> - [MDT sample guide](/mem/configmgr/mdt/samples-guide#fully-automated-lti-deployment-for-a-refresh-computer-scenario)
+> - [LCID (Locale ID) codes](/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a)
 
 ### Optional deployment share configuration
 

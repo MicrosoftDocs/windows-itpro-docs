@@ -2,10 +2,6 @@
 title: Security Principals (Windows 10)
 description: Security Principals
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp

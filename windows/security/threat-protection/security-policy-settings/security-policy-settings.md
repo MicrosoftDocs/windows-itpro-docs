@@ -23,6 +23,7 @@ ms.technology: windows-sec
 **Applies to**
 
 - Windows 10
+- Windows 11
 
 This reference topic describes the common scenarios, architecture, and processes for security settings.
 
