@@ -14,7 +14,7 @@ msreviewer: andredm7
 
 # Deregister a device
 
-To avoid end-user disruption, device de-registration in Windows Autopatch only deletes the Windows Autopatch device record itself. Device deregistration can't delete Microsoft Intune and/or the Azure Active Directory device records. Microsoft assumes you'll keep managing those devices yourself in some capacity.
+To avoid end-user disruption, device deregistration in Windows Autopatch only deletes the Windows Autopatch device record itself. Device deregistration can't delete Microsoft Intune and/or the Azure Active Directory device records. Microsoft assumes you'll keep managing those devices yourself in some capacity.
 
 **To deregister a device:**
 

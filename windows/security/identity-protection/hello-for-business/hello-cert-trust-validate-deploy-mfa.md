@@ -1,12 +1,7 @@
 ---
 title: Validate and Deploy MFA for Windows Hello for Business with certificate trust
 description: How to Validate and Deploy Multi-factor Authentication (MFA) Services for Windows Hello for Business with certificate trust
-keywords: identity, PIN, biometric, Hello, passport
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
 author: GitPrakhar13
 ms.author: prsriva
 manager: dansimp
