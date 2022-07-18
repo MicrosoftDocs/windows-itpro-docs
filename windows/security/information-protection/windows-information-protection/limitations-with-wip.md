@@ -1,15 +1,10 @@
 ---
 title: Limitations while using Windows Information Protection (WIP) (Windows 10)
 description: This section includes info about the common problems you might encounter while using Windows Information Protection (WIP).
-keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection
 ms.prod: m365-security
-ms.mktglfcycl: explore
-ms.sitesec: library
-ms.pagetype: security
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/05/2019

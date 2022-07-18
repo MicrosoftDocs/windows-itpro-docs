@@ -1,14 +1,9 @@
 ---
 title: Protect derived domain credentials with Windows Defender Credential Guard (Windows)
 description: Windows Defender Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them.
-ms.assetid: 4F1FE390-A166-4A24-8530-EA3369FEB4B1
 ms.reviewer: 
 ms.prod: m365-security
-ms.mktglfcycl: explore
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp
@@ -43,3 +38,8 @@ By enabling Windows Defender Credential Guard, the following features and soluti
 - [What's New in Kerberos Authentication for Windows Server 2012](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831747(v=ws.11))
 - [Authentication Mechanism Assurance for AD DS in Windows Server 2008 R2 Step-by-Step Guide](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd378897(v=ws.10))
 - [Trusted Platform Module](/windows/device-security/tpm/trusted-platform-module-overview)
+- [Mitigating Credential Theft using the Windows 10 Isolated User Mode](/shows/seth-juarez/mitigating-credential-theft-using-windows-10-isolated-user-mode)
+- [Isolated User Mode Processes and Features in Windows 10 with Logan Gabriel](/shows/seth-juarez/isolated-user-mode-processes-features-in-windows-10-logan-gabriel)
+- [More on Processes and Features in Windows 10 Isolated User Mode with Dave Probert](/shows/seth-juarez/more-on-processes-features-in-windows-10-isolated-user-mode-dave-probert)
+- [Isolated User Mode in Windows 10 with Dave Probert](/shows/seth-juarez/isolated-user-mode-in-windows-10-dave-probert)
+- [Windows 10 Virtual Secure Mode with David Hepkin](/shows/seth-juarez/windows-10-virtual-secure-mode-david-hepkin)

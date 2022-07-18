@@ -1483,7 +1483,7 @@ This policy setting allows you to enable or disable low CPU priority for schedul
 
 If you enable this setting, low CPU priority will be used during scheduled scans.
 
-If you disable or don't configure this setting, not changes will be made to CPU priority for scheduled scans.
+If you disable or don't configure this setting, no changes will be made to CPU priority for scheduled scans.
 
 Supported values:
 
@@ -1922,10 +1922,7 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
  
-Selects the time of day that the Windows Defender quick scan should run.
-
-> [!NOTE]
-> The scan type will depends on what scan type is selected in the **Defender/ScanParameter** setting.
+Selects the time of day that the Windows Defender quick scan should run. The Windows Defender quick scan runs daily if a time is specified.
 
  
 
