@@ -261,7 +261,7 @@
          - name: Fine-tune WIP Learning
            href: information-protection/windows-information-protection/wip-learning.md
          - name: Disable WIP
-           href: information-protection/windows-information-protection/disable-wip.md
+           href: information-protection/windows-information-protection/how-to-disable-wip.md
 - name: Application security
   items:
    - name: Overview
