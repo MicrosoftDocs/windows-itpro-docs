@@ -93,7 +93,7 @@ The following table lists the MDM policy settings that you can configure for Win
 |Special characters|Device or user|2|<p>0: Special characters are allowed. <p>1: At least one special character is required. <p>2: Special characters are not allowed.|
 |Uppercase letters|Device or user|2|<p>0: Uppercase letters are allowed. <p>1: At least one uppercase letter is required.<p>2: Uppercase letters are not allowed.|
 |Maximum PIN length |Device or user|127 |<p>Maximum length that can be set is 127. Maximum length cannot be less than minimum setting.|
-|Minimum PIN length|Device or user|4|<p>Minimum length that can be set is 4. Minimum length cannot be greater than maximum setting.|
+|Minimum PIN length|Device or user|6|<p>Minimum length that can be set is 6. Minimum length cannot be greater than maximum setting.|
 |Expiration |Device or user|0|<p>Integer value specifies the period of time (in days) that a PIN can be used before the system requires the user to change it. The largest number you can configure for this policy setting is 730. The lowest number you can configure for this policy setting is 0. If this policy is set to 0, then the user's PIN will never expire.|
 |History|Device or user|0|<p>Integer value that specifies the number of past PINs that can be associated to a user account that can't be reused. The largest number you can configure for this policy setting is 50. The lowest number you can configure for this policy setting is 0. If this policy is set to 0, then storage of previous PINs is not required.|
 
