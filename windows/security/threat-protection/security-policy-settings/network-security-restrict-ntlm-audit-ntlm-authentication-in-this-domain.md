@@ -47,9 +47,13 @@ When you enable this audit policy, it functions in the same way as the **Network
 
     The domain controller will log events for NTLM authentication sign-in attempts that use domain accounts when NTLM authentication would be denied because the **Network security: Restrict NTLM: NTLM authentication in this domain** policy setting is set to **Deny for domain accounts**.
 
--   Not defined
+- **Enable for domain servers**
 
-    This state of not being defined is the same as **Disable** and results in no auditing of NTLM traffic.
+    The domain controller will log events for NTLM authentication requests to all servers in the domain when NTLM authentication would be denied because the **Network security: Restrict NTLM: NTLM authentication in this domain** policy setting is set to **Deny for domain servers**.
+
+- **Enable all**
+    
+    The domain controller on which this policy is set will log all events for incoming NTLM traffic.
 
 ### Best practices
 

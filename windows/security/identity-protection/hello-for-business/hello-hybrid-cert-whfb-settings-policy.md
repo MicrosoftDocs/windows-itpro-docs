@@ -1,12 +1,7 @@
 ---
 title: Configuring Hybrid Azure AD joined Windows Hello for Business - Group Policy
 description: Discussing the configuration of Group Policy in a Hybrid deployment of Windows Hello for Business
-keywords: identity, PIN, biometric, Hello, passport, WHFB
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
 author: GitPrakhar13
 ms.author: prsriva
 manager: dansimp

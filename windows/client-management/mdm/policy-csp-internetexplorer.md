@@ -4415,7 +4415,7 @@ The following list shows the supported values:
 <!--/SupportedValues-->
 <!--ADMXBacked-->
 ADMX Info:  
--   GP Friendly name: *Allows enterprises to provide their users with a single-browser experience*
+-   GP Friendly name: *Enable extended hot keys in Internet Explorer mode*
 -   GP name: *EnableExtendedIEModeHotkeys*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Add-on Management*
 -   GP ADMX file name: *inetres.admx*

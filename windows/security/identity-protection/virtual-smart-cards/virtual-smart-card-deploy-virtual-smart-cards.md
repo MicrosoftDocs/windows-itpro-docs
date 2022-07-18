@@ -2,10 +2,6 @@
 title: Deploy Virtual Smart Cards (Windows 10)
 description: This topic for the IT professional discusses the factors to consider when you deploy a virtual smart card authentication solution.
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp

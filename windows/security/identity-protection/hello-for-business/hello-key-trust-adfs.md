@@ -1,12 +1,7 @@
 ---
 title: Prepare & Deploy Windows Active Directory Federation Services with key trust (Windows Hello for Business)
 description: How to Prepare and Deploy Windows Server 2016 Active Directory Federation Services for Windows Hello for Business using key trust.
-keywords: identity, PIN, biometric, Hello, passport
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
 author: GitPrakhar13
 ms.author: prsriva
 manager: dansimp
