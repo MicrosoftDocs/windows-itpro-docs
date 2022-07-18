@@ -834,9 +834,8 @@ When the MDM-Server receives the above data, it must:
 
 - Forward (HTTP Post) the XML data struct (including the nonce that was appended in the previous step) to the assigned DHA-Service that runs on:
 
-  - DHA-Cloud (Microsoft owned and operated DHA-Service) scenario: [https://has.spserv.microsoft.com/DeviceHealthAttestation/ValidateHealthCertificate/v3](https://has.spserv.microsoft.com/DeviceHealthAttestation/ValidateHealthCertificate/v3)
-  - DHA-OnPrem or DHA-EMC: [https://FullyQualifiedDomainName-FDQN/DeviceHealthAttestation/ValidateHealthCertificate/v3](https://FullyQualifiedDomainName-FDQN/DeviceHealthAttestation/ValidateHealthCertificate/v3)
-
+  - DHA-Cloud (Microsoft owned and operated DHA-Service) scenario: `https://has.spserv.microsoft.com/DeviceHealthAttestation/ValidateHealthCertificate/v3`
+  - DHA-OnPrem or DHA-EMC: `https://FullyQualifiedDomainName-FDQN/DeviceHealthAttestation/ValidateHealthCertificate/v3`
 ### <a href="" id="receive-has-response"></a>Step 7: Receive response from the DHA-service
 
 When the Microsoft Device Health Attestation Service receives a request for verification, it performs the following steps:

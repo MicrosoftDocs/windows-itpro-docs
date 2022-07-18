@@ -223,7 +223,7 @@ Value | Description
 **4.** | If present, Secure Memory Overwrite is available.
 **5.** | If present, NX protections are available.
 **6.** | If present, SMM mitigations are available.
-**7.** | If present, Mode Based Execution Control is available.
+**7.** | If present, MBEC/GMET is available.
 **8.** | If present, APIC virtualization is available.
 
 #### InstanceIdentifier
@@ -243,7 +243,7 @@ Value | Description
 **4.** | If present, Secure Memory Overwrite is needed.
 **5.** | If present, NX protections are needed.
 **6.** | If present, SMM mitigations are needed.
-**7.** | If present, Mode Based Execution Control is needed.
+**7.** | If present, MBEC/GMET is needed.
 
 #### SecurityServicesConfigured
 
