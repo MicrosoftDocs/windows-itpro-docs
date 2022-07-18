@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.localizationpriority: medium
 author: scottbreenmsft
 ms.author: scbree
-ms.reviewer: 
+ms.reviewer: paoloma
 manager: jeffbu
 ms.collection: highpri
 ---
@@ -36,11 +36,11 @@ These methods apply to devices with *Windows Home* installed, institution-owned 
 
 Users aren't notified their device has been or will be upgraded to Windows Education when using MDM. It's the responsibility of the institution to notify their users. Institutions should notify their users that MDM will initiate an upgrade to Windows Education and this upgrade will give the institution extra capabilities, such as installing applications.
 
-Device users can disconnect MDM in the Settings app to prevent further actions from being taken on their personal device. For instructions on disconnecting from MDM, see [Remove your Windows device from management](/mem/intune/user-help/unenroll-your-device-from-intune-windows).
+Device users can disconnect from MDM in the Settings app, to prevent further actions from being taken on their personal device. For instructions on disconnecting from MDM, see [Remove your Windows device from management](/mem/intune/user-help/unenroll-your-device-from-intune-windows).
 
 ## Why upgrade student-owned devices from Windows Home to Windows Education?
 
-Some school institutions want to streamline student onboarding for student-owned devices using MDM. Typical MDM requirements include installing certificates, configuring WiFi profiles and installing applications. On Windows, MDM users Configuration Service Providers (CSPs) to configure settings. Some CSPs aren't available on Windows Home, which can limit the capabilities. Some of the CSPs not available in Windows Home that can affect typical student onboarding are:
+Some school institutions want to streamline student onboarding for student-owned devices using MDM. Typical MDM requirements include installing certificates, configuring WiFi profiles and installing applications. On Windows, MDM uses Configuration Service Providers (CSPs) to configure settings. Some CSPs aren't available on Windows Home, which can limit the capabilities. Some of the CSPs not available in Windows Home that can affect typical student onboarding are:
 
 - [EnterpriseDesktopAppManagement](/windows/client-management/mdm/enterprisemodernappmanagement-csp) - which enables deployment of Windows installer or Win32 applications.
 - [DeliveryOptimization](/windows/client-management/mdm/policy-csp-deliveryoptimization) - which enables configuration of Delivery Optimization.
@@ -66,7 +66,7 @@ IT admins with access to the VLSC or the Microsoft 365 Admin Center, can find th
 
 ### Recommended methods for using a MAK
 
-It’s critical that MAKs are protected whenever they're used. The following processes provide the best protection for a MAK being applied to a device:
+It's critical that MAKs are protected whenever they're used. The following processes provide the best protection for a MAK being applied to a device:
 
 - Provisioning package by institution approved staff;
 - Manual entry by institution approved staff (don't distribute the key via email);
@@ -117,9 +117,9 @@ These steps provide instructions on how to use Microsoft Intune to upgrade devic
 These steps configure a filter that will only apply to devices running the *Windows Home edition*. This filter will ensure only devices running *Windows Home edition* are upgraded. For more information about filters, see [Create filters in Microsoft Intune](/mem/intune/fundamentals/filters).
 
 - Start in the [**Microsoft Endpoint Manager admin console**](https://endpoint.microsoft.com)
-- Go to **Tenant Administration** > **Filters**
+- Select **Tenant administration** > **Filters**
 - Select **Create**
-  - Create a name for the filter (for example *Windows Home edition*)
+  - Specify a name for the filter (for example *Windows Home edition*)
   - Select the **platform** as **Windows 10 and later**
   - Select **Next**
 - On the **Rules** screen, configure the following rules:
@@ -130,7 +130,7 @@ These steps configure a filter that will only apply to devices running the *Wind
   - **operatingSystemSKU** equals **CoreSingleLanguage (Windows 10/11 Home single language (100))**
 
     > [!NOTE]
-    > Ensure you’ve selected OR as the operator in the right And/Or column
+    > Ensure you've selected OR as the operator in the right And/Or column
     
     :::image type="content" source="images/change-home-to-edu-windows-home-edition-intune-filter.png" alt-text="Example of configuring the Windows Home filter":::
 
@@ -148,7 +148,7 @@ These steps create and assign a Windows edition upgrade policy. For more informa
   - Select the **Profile type** as **Templates**
   - Select the **Template** as **Edition upgrade and mode switch**
   - Select **Create**
-- Create a name for the filter (for example *Windows Education edition upgrade*), select **Next**
+- Specify a name for the policy (for example *Windows Education edition upgrade*), select **Next**
 - On the **Configuration settings** screen
   - Expand **Edition Upgrade**
   - Change **Edition to upgrade** to **Windows 10/11 Education**
@@ -156,7 +156,7 @@ These steps create and assign a Windows edition upgrade policy. For more informa
   - Select **Next**
   
     :::image type="content" source="images/change-home-to-edu-windows-edition-upgrade-policy.png" alt-text="Example of configuring the Windows upgrade policy in Microsoft Intune":::
-    
+
 - Optionally select scope tags as required and select **Next**
 - On the **assignments** screen;
   - Select **Add all devices**
@@ -164,7 +164,7 @@ These steps create and assign a Windows edition upgrade policy. For more informa
   
       > [!NOTE]
       > You can also target other security groups that contain a smaller scope of users or devices and apply the filter rather than All devices.
-      
+
   - Select to **Include filtered devices in assignment**
   - Select the *Windows Home edition* filter you created earlier
   - Choose **Select** to save the filter selection
@@ -191,6 +191,7 @@ You can check the Windows versions of managed devices in the Microsoft Endpoint 
 ### My MAK key has run out of activations, how do I request a new one?
 
 Increases to MAK Activation quantity can be requested by contacting [VLSC support](/licensing/contact-us) and may be granted by exception. A request can be made by accounts with the VLSC Administrator, Key Administrator, or Key Viewer permissions. The request should include the following information:
+
 - Agreement/Enrollment Number or License ID and Authorization.
 - Product Name (includes version and edition).
 - Last five characters of the product key.
@@ -216,13 +217,13 @@ A multiple activation key activates either individual computers or a group of co
 | Scenario | Ownership | MAK | KMS | AD based activation | Subscription Activation |
 |-|-|:-:|:-:|:-:|:-:|
 | **Workplace join (add work or school account)** | Personal (or student-owned) | X | | | |
-| **Azure Active Directory Join** | Organization | X | X | | X |
+| **Azure AD Join** | Organization | X | X | | X |
 | **Hybrid Azure AD Join** | Organization | X | X | X | X |
 
 ## Related links
 
 - [Windows 10 edition upgrade (Windows 10)](/windows/deployment/upgrade/windows-10-edition-upgrades)
 - [Windows 10/11 Subscription Activation](/windows/deployment/windows-10-subscription-activation)
-- [Equip Your Students with Windows 11 Education – Kivuto](https://kivuto.com/windows-11-student-use-benefit/)
+- [Equip Your Students with Windows 11 Education - Kivuto](https://kivuto.com/windows-11-student-use-benefit/)
 - [Upgrade Windows Home to Windows Pro (microsoft.com)](https://support.microsoft.com/windows/upgrade-windows-home-to-windows-pro-ef34d520-e73f-3198-c525-d1a218cc2818)
 - [Partner Center: Upgrade Education customers from Windows 10 Home to Windows 10 Education](/partner-center/upgrade-windows-to-education)
