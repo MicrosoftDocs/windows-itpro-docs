@@ -85,7 +85,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-The **Log on as a batch job** user right presents a low-risk vulnerability. For most organizations, the default settings are sufficient. Members of the local Administrators group have this right by default.
+The **Log on as a batch job** user right presents a low-risk vulnerability that allows non-administrators to perform administrator-like functions.  If not assessed, understood, and restricted accordingly, attackers can easily exploit this potential attack vector to compromise systems, credentials, and data. For most organizations, the default settings are sufficient. Members of the local Administrators group have this right by default.
 
 ### Countermeasure
 

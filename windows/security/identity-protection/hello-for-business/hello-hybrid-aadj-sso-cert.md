@@ -1,12 +1,7 @@
 ---
 title: Using Certificates for AADJ On-premises Single-sign On single sign-on
 description: If you want to use certificates for on-premises single-sign on for Azure Active Directory-joined devices, then follow these additional steps.
-keywords: identity, PIN, biometric, Hello, passport, AADJ, SSO,
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
 author: GitPrakhar13
 ms.author: prsriva
 manager: dansimp
@@ -98,7 +93,7 @@ The easiest way to verify that the onPremisesDistingushedNamne attribute is sync
 
 3. Select **Modify permissions (Preview)**. Scroll down and locate **User.Read.All** (or any other required permission) and select **Consent**. You will now be prompted for delegated permissions consent.
 
-4. In the Graph Explorer URL, enter https://graph.microsoft.com/v1.0/users/[userid]?$select=displayName,userPrincipalName,onPremisesDistinguishedName, where **[userid]** is the user principal name of a user in Azure Active Directory.  Select **Run query**.
+4. In the Graph Explorer URL, enter `https://graph.microsoft.com/v1.0/users/[userid]?$select=displayName,userPrincipalName,onPremisesDistinguishedName`, where **[userid]** is the user principal name of a user in Azure Active Directory.  Select **Run query**.
 
 > [!NOTE]
 > Because the v1.0 endpoint of the Graph API only provides a limited set of parameters, we will use the $select [Optional OData query parameter](/graph/api/user-get?). For convenience, it is possible to switch the API version selector from **v1.0** to **beta** before performing the query. This will provide all available user information, but remember, **beta** endpoint queries should not be used in production scenarios.
@@ -814,143 +809,23 @@ Sign-in the NDES server with access equivalent to _local administrator_.
 
 The Intune Certificate Connector application enables Microsoft Intune to enroll certificates using your on-premises PKI for users on devices managed by Microsoft Intune.
 
-### Download Intune Certificate Connector
-
-Sign-in a workstation with access equivalent to a _domain user_.
-
-1. Sign-in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/).
-
-2. Select **Tenant administration** > **Connectors and tokens** > **Certificate connectors** > **Add**.
-
-3. Click **Download the certificate connector software** under the **Install Certificate Connectors** section.
-
-   ![Intune Certificate Authority.](images/aadjcert/profile01.png)
-
-4. Save the downloaded file (NDESConnectorSetup.exe) to a location accessible from the NDES server.
-
-5. Sign-out of the Microsoft Endpoint Manager admin center.
-
-### Install the Intune Certificate Connector
-
-Sign-in the NDES server with access equivalent to _domain administrator_.
-
-1. Copy the Intune Certificate Connector Setup (NDESConnectorSetup.exe) downloaded in the previous task locally to the NDES server.
-
-2. Run **NDESConnectorSetup.exe** as an administrator. If the setup shows a dialog that reads **Microsoft Intune NDES Connector requires HTTP Activation**, ensure you started the application as an administrator, then check HTTP Activation is enabled on the NDES server.
-
-3. On the **Microsoft Intune** page, click **Next**.
-
-   ![Intune Connector Install 01.](images/aadjcert/intunecertconnectorinstall-01.png)
-
-4. Read the **End User License Agreement**.  Click **Next** to accept the agreement and to proceed with the installation.
-
-5. On the **Destination Folder** page, click **Next**.
-
-6. On the **Installation Options** page, select **SCEP and PFX Profile Distribution** and click **Next**.
-
-   ![Intune Connector Install 03.](images/aadjcert/intunecertconnectorinstall-03.png)
-
-7. On the **Client certificate for Microsoft Intune** page, Click **Select**.  Select the certificate previously enrolled for the NDES server. Click **Next**.
-
-   ![Intune Connector Install 05.](images/aadjcert/intunecertconnectorinstall-05.png)
-
-   > [!NOTE]
-   > The **Client certificate for Microsoft Intune** page does not update after selecting the client authentication certificate.  However, the application rembers the selection and shows it in the next page.
-
-8. On the **Client certificate for the NDES Policy Module** page, verify the certificate information and then click **Next**.
-
-9. ON the **Ready to install Microsoft Intune Connector** page. Click **Install**.
-
-   ![Intune Connector Install 06.](images/aadjcert/intunecertconnectorinstall-06.png)
-
-   > [!NOTE]
-   > You can review the results of the install using the **SetupMsi.log** file located in the **C:\\NDESConnectorSetupMsi** folder.
-
-10. When the installation completes, select **Launch Intune Connector** and click Finish. Proceed to the Configure the Intune Certificate Connector task.
-
-    ![Intune Connector install 07.](images/aadjcert/intunecertconnectorinstall-07.png)
-
-### Configure the Intune Certificate Connector
-
-Sign-in the NDES server with access equivalent to _domain administrator_.
-
-1. The **NDES Connector** user interface should be open from the last task.
-
-   > [!NOTE]
-   > If the **NDES Connector** user interface is not open, you can start it from **\<install_Path>\NDESConnectorUI\NDESConnectorUI.exe**.
-
-2. If your organization uses a proxy server and the proxy is needed for the NDES server to access the Internet, select **Use proxy server**, and then enter the proxy server name, port, and credentials to connect.  Click **Apply**
-
-   ![Intune Certificate Connector Configuration 01.](images/aadjcert/intunecertconnectorconfig-01.png)
-
-3. Click **Sign-in**.  Type credentials for your Intune administrator, or tenant administrator that has the **Global Administrator** directory role.
-
-   ![Intune Certificate Connector Configuration 02.](images/aadjcert/intunecertconnectorconfig-02.png)
-
-   > [!IMPORTANT]
-   > The user account must have a valid Intune license assigned.  If the user account does not have a valid Intune license, the sign-in fails.
-
-4. Optionally, you can configure the NDES Connector for certificate revocation. If you want to do this, continue to the next task. Otherwise, Click **Close**, restart the **Intune Connector Service** and the **World Wide Web Publishing Service**, and skip the next task.
-
+To learn how to download, install, and configure the Intune Certificate Connector, see [Install the Certificate Connector for Microsoft Intune](/mem/intune/protect/certificate-connector-install).
 
 ### Configure the NDES Connector for certificate revocation (**Optional**)
 
-Optionally (not required), you can configure the Intune connector for certificate revocation when a device is wiped, unenrolled, or when the certificate profile falls out of scope for the targeted user (users is removed, deleted, or the profile is deleted).
+Optionally (not required), you can configure the Intune connector for certificate revocation when a device is wiped, unenrolled, or when the certificate profile falls out of scope for the targeted user (users are removed, deleted, or the profile is deleted). You need to select the **Certificate revocation** option during the connector configuration to enable automatic certificate revocation for certificates issued from a Microsoft Active Directory Certification Authority. Additionally, you need to enable the NDES Service account for revocation.
 
-#### Enabling the NDES Service account for revocation
+1. Sign in the certificate authority used by the NDES Connector with access equivalent to _domain administrator_.
 
-Sign-in the certificate authority used by the NDES Connector with access equivalent to _domain administrator_.
+2. Start the **Certification Authority** management console.
 
-1. Start the **Certification Authority** management console.
+3. In the navigation pane, right-click the name of the certificate authority and select **Properties**.
 
-2. In the navigation pane, right-click the name of the certificate authority and select **Properties**.
-
-3. Click the **Security** tab.  Click **Add**. In **Enter the object names to select** box, type **NDESSvc** (or the name you gave the NDES Service account).  Click *Check Names*. Click **OK**.  Select the NDES Service account from the **Group or user names** list. Select **Allow** for the **Issue and Manage Certificates** permission.  Click **OK**.
+4. Select the **Security** tab, then select **Add**. In the **Enter the object names to select** box, enter **NDESSvc** (or the name you gave the NDES Service account). Select *Check Names*, then select **OK**. Select the NDES Service account from the **Group or user names** list. Select **Allow** for the **Issue and Manage Certificates** permission. Select **OK**.
 
    ![Configure Intune certificate revocation 02.](images/aadjcert/intuneconfigcertrevocation-02.png)
 
-4. Close the **Certification Authority**
-
-#### Enable the NDES Connector for certificate revocation
-
-Sign-in the NDES server with access equivalent to _domain administrator_.
-
-1. Open the **NDES Connector** user interface (**\<install_Path>\NDESConnectorUI\NDESConnectorUI.exe**).
-
-2. Click the **Advanced** tab.  Select **Specify a different account username and password**.  Type the NDES service account username and password.  Click **Apply**.  Click **OK** to close the confirmation dialog box.  Click **Close**.
-
-   ![Intune Connector cert revocation configuration 04.](images/aadjcert/intunecertconnectorconfig-04.png)
-
-3. Restart the **Intune Connector Service** and the **World Wide Web Publishing Service**.
-
-### Test the NDES Connector
-
-Sign-in the NDES server with access equivalent to _domain admin_.
-
-1. Open a command prompt.
-
-2. Type the following command to confirm the NDES Connector's last connection time is current.
-
-   ```console
-   reg query hklm\software\Microsoft\MicrosoftIntune\NDESConnector\ConnectionStatus
-   ```
-
-3. Close the command prompt.
-
-4. Open **Internet Explorer**.
-
-5. In the navigation bar, type:
-
-   ```console
-   https://[fqdnHostName]/certsrv/mscep/mscep.dll
-   ```
-
-   where **[fqdnHostName]** is the fully qualified internal DNS host name of the NDES server.
-   A web page showing a 403 error (similar to the following) should appear in your web browser.  If you do not see a similar page, or you get a **503 Service unavailable** message, ensure the NDES Service account has the proper user rights.  You can also review the application event log for events with the **NetworkDeviceEnrollmentSerice** source.
-
-   ![NDES web site test after Intune Certificate Connector.](images/aadjcert/ndes-https-website-test-after-intune-connector.png)
-
-6. Using **Server Manager**, enable **Internet Explorer Enhanced Security Configuration**.
+5. Close the **Certification Authority**.
 
 ## Create and Assign a Simple Certificate Enrollment Protocol (SCEP) Certificate Profile
 

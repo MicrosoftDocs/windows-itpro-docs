@@ -1,12 +1,7 @@
 ---
 title: Update Active Directory schema for cert-trust deployment (Windows Hello for Business)
 description: How to Validate Active Directory prerequisites for Windows Hello for Business when deploying with the certificate trust model.
-keywords: identity, PIN, biometric, Hello, passport
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
 author: GitPrakhar13
 ms.author: prsriva
 manager: dansimp
@@ -25,7 +20,10 @@ ms.reviewer:
 - On-premises deployment
 - Certificate trust
 
-The key registration process for the On-premises deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory or later schema.  The key-trust model receives the schema extension when the first Windows Server 2016 or later domain controller is added to the forest.  The certificate trust model requires manually updating the current schema to the Windows Server 2016 or later schema. If you already have a Windows Server 2016 or later domain controller in your forest, you can skip the **Updating the Schema** and **Create the KeyCredential Admins Security Global Group** steps.
+The key registration process for the on-premises deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory or later schema. The key-trust model receives the schema extension when the first Windows Server 2016 or later domain controller is added to the forest. The certificate trust model requires manually updating the current schema to the Windows Server 2016 or later schema. 
+
+> [!NOTE]
+> If you already have a Windows Server 2016 or later domain controller in your forest, you can skip the "Updating the Schema" and "Create the KeyCredential Admins Security Global Group" steps that follow.
 
 Manually updating Active Directory uses the command-line utility **adprep.exe** located at **\<drive>:\support\adprep** on the Windows Server 2016 or later DVD or ISO.  Before running adprep.exe, you must identify the domain controller hosting the schema master role.
 

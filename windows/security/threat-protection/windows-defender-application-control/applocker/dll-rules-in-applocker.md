@@ -40,12 +40,9 @@ The following table lists the default rules that are available for the DLL rule 
 
 | Purpose | Name | User | Rule condition type |
 | - | - | - | - |
-| Allows members of the local Administrators group to run all DLLs | (Default Rule) All DLLs| 
-| BUILTIN\Administrators | Path: *| 
-| Allow all users to run DLLs in the Windows folder| (Default Rule) Microsoft Windows DLLs | 
-| Everyone | Path: %windir%\*| 
-| Allow all users to run DLLs in the Program Files folder | (Default Rule) All DLLs located in the Program Files folder| 
-| Everyone | Path: %programfiles%\*| 
+| Allows members of the local Administrators group to run all DLLs | (Default Rule) All DLLs| BUILTIN\Administrators | Path: *| 
+| Allow all users to run DLLs in the Windows folder| (Default Rule) Microsoft Windows DLLs | Everyone | Path: %windir%\*| 
+| Allow all users to run DLLs in the Program Files folder | (Default Rule) All DLLs located in the Program Files folder| Everyone | Path: %programfiles%\*| 
  
 > [!IMPORTANT]
 > If you use DLL rules, a DLL allow rule has to be created for each DLL that is used by all of the allowed apps
