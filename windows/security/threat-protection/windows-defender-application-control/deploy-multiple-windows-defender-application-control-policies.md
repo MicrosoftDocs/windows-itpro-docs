@@ -113,3 +113,10 @@ For more information on deploying multiple policies, optionally using Microsoft 
 
 > [!NOTE]
 > WMI and GP do not currently support multiple policies. Instead, customers who cannot directly access the MDM stack should use the [ApplicationControl CSP via the MDM Bridge WMI Provider](/windows/client-management/mdm/applicationcontrol-csp#powershell-and-wmi-bridge-usage-guidance) to manage Multiple Policy Format Windows Defender Application Control policies.
+
+### Known Issues in Multiple Policy Format
+
+* If the maximum number of policies is exceeded, the device may bluescreen referencing ci.dll with a bug check value of 0x0000003b. 
+* If policies are loaded without requiring a reboot such as `PS_UpdateAndCompareCIPolicy`, they will still count towards this limit. 
+* This may pose an especially large challenge if the value of `{PolicyGUID}.cip` changes between releases. It may result in a long window between a change and the resultant reboot.
+

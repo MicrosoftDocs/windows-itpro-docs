@@ -14,7 +14,7 @@ author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 04/29/2020
+ms.date: 06/27/2022
 ms.technology: windows-sec
 ---
 
@@ -22,12 +22,12 @@ ms.technology: windows-sec
 
 **Applies to:**
 
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
 
->[!NOTE]
->Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
 You can use a Mobile Device Management (MDM) solution, like Microsoft Endpoint Manager Intune, to configure Windows Defender Application Control (WDAC) on client machines. Intune includes native support for WDAC, which can be a helpful starting point, but customers may find the available circle-of-trust options too limiting. To deploy a custom policy through Intune and define your own circle of trust, you can configure a profile using Custom OMA-URI. If your organization uses another MDM solution, check with your solution provider for WDAC policy deployment steps.
 
@@ -51,7 +51,7 @@ To use Intune's built-in WDAC policies, configure [Endpoint Protection for Windo
 ## Deploy WDAC policies with custom OMA-URI
 
 > [!NOTE]
-> Policies deployed through Intune custom OMA-URI are subject to a 350,000 byte limit. Customers should create Windows Defender Application Control policies that use signature-based rules, the Intelligent Security Graph, and managed installers where practical. Customers whose devices are running 1903+ builds of Windows are also encouraged to use [multiple policies](deploy-multiple-windows-defender-application-control-policies.md) which allow more granular policy.
+> Policies deployed through Intune custom OMA-URI are subject to a 350,000 byte limit. Customers should create Windows Defender Application Control policies that use signature-based rules, the Intelligent Security Graph, and managed installers where practical. Customers whose devices are running 1903+ builds of Windows are also encouraged to use [multiple policies](../deploy-multiple-windows-defender-application-control-policies.md) which allow more granular policy.
 
 ### Deploy custom WDAC policies on Windows 10 1903+
 
@@ -71,7 +71,7 @@ The steps to use Intune's custom OMA-URI functionality are:
     - **Certificate file**: upload your binary format policy file. You don't need to upload a Base64 file, as Intune will convert the uploaded .bin file to Base64 on your behalf.
 
     > [!div class="mx-imgBorder"]
-    > ![Configure custom WDAC.](images/wdac-intune-custom-oma-uri.png)
+    > ![Configure custom WDAC.](../images/wdac-intune-custom-oma-uri.png)
 
 > [!NOTE]
 > For the _Policy GUID_ value, do not include the curly brackets.

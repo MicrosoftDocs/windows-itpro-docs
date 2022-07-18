@@ -162,7 +162,7 @@ Select the correct version of each .dll for the Windows release you plan to supp
     <Deny ID="ID_DENY_FSI" FriendlyName="fsi.exe" FileName="fsi.exe" MinimumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_FSI_ANYCPU" FriendlyName="fsiAnyCpu.exe" FileName="fsiAnyCpu.exe" MinimumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_INFINSTALL" FriendlyName="infdefaultinstall.exe" FileName="infdefaultinstall.exe" MinimumFileVersion="65535.65535.65535.65535" />
-	<Deny ID="ID_DENY_INSTALLUTIL" FriendlyName="Microsoft InstallUtil" FileName="InstallUtil.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_INSTALLUTIL" FriendlyName="Microsoft InstallUtil" FileName="InstallUtil.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_KD" FriendlyName="kd.exe" FileName="kd.Exe" MinimumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_KD_KMCI" FriendlyName="kd.exe" FileName="kd.Exe" MinimumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_KILL" FriendlyName="kill.exe" FileName="kill.exe" MinimumFileVersion="65535.65535.65535.65535" />
@@ -877,7 +877,7 @@ Select the correct version of each .dll for the Windows release you plan to supp
           <FileRuleRef RuleID="ID_DENY_FSI" />
           <FileRuleRef RuleID="ID_DENY_FSI_ANYCPU" />
           <FileRuleRef RuleID="ID_DENY_INFINSTALL" />
-		  <FileRuleRef RuleID="ID_DENY_INSTALLUTIL" />
+          <FileRuleRef RuleID="ID_DENY_INSTALLUTIL" />
           <FileRuleRef RuleID="ID_DENY_KD" />
           <FileRuleRef RuleID="ID_DENY_KILL" />
           <FileRuleRef RuleID="ID_DENY_LXSS" />
@@ -905,10 +905,10 @@ Select the correct version of each .dll for the Windows release you plan to supp
           <FileRuleRef RuleID="ID_DENY_WSLCONFIG" />
           <FileRuleRef RuleID="ID_DENY_WSLHOST" />
           <!-- uncomment the relevant line(s) below if you have uncommented them in the rule definitions above
-		  <FileRuleRef RuleID="ID_DENY_MSXML3" /> 
-		  <FileRuleRef RuleID="ID_DENY_MSXML6" /> 
-		  <FileRuleRef RuleID="ID_DENY_JSCRIPT9" />
-		  -->
+          <FileRuleRef RuleID="ID_DENY_MSXML3" /> 
+          <FileRuleRef RuleID="ID_DENY_MSXML6" /> 
+          <FileRuleRef RuleID="ID_DENY_JSCRIPT9" />
+          -->
           <FileRuleRef RuleID="ID_DENY_D_1" />
           <FileRuleRef RuleID="ID_DENY_D_2" />
           <FileRuleRef RuleID="ID_DENY_D_3" />
