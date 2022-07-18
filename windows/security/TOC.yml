@@ -260,6 +260,8 @@
               href: information-protection/windows-information-protection/using-owa-with-wip.md
          - name: Fine-tune WIP Learning
            href: information-protection/windows-information-protection/wip-learning.md
+         - name: Disable WIP
+           href: information-protection/windows-information-protection/disable-wip.md
 - name: Application security
   items:
    - name: Overview
