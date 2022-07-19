@@ -329,10 +329,10 @@ You should see MCC, edgeAgent, and edgeHub running. If you see edgeAgent or edge
 
 #### Verify server side
 
-For a validation of properly functioning MCC, execute the following command in the EFLOW VM or any device in the network. Replace \<CacheServerIP\> with the IP address of the cache server.
+For a validation of properly functioning MCC, execute the following command in the EFLOW VM or any device in the network. Replace <CacheServerIP> with the IP address of the cache server.
 
 ```powershell
-wget [http://\<CacheServerIP\>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com]()
+wget [http://<CacheServerIP>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com]
 ```
 
 A successful test result will look like this:
