@@ -26,7 +26,7 @@ _Applies to:_
 
 To disable Windows Information Protection (WIP) using Intune, you have the following options:
 
-#### Option 1 - Remove the WIP Policy (Unassign) - preferred
+### Option 1 - Unassign the WIP policy (preferred)
 
 Removing an existing enable policy will remove the intent to deploy WIP from those devices. When that intent is removed, a device will remove protection for files and the configuration for WIP.
 
