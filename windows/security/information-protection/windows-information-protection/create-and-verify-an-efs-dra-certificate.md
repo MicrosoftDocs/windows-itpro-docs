@@ -1,6 +1,6 @@
 ---
 title: Create an EFS Data Recovery Agent certificate
-description: Follow these steps to create, verify, and perform a quick recovery by using a Encrypting File System (EFS) Data Recovery Agent (DRA) certificate.
+description: Follow these steps to create, verify, and perform a quick recovery by using an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate.
 ms.prod: m365-security
 ms.localizationpriority: medium
 author: aczechowski
