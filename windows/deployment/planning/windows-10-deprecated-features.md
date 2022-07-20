@@ -1,6 +1,7 @@
 ---
 title: Deprecated features in Windows client
 description: Review the list of features that Microsoft is no longer developing in Windows 10 and Windows 11.
+ms.date: 07/21/2022
 ms.prod: w10
 ms.technology: windows
 ms.localizationpriority: medium
@@ -34,7 +35,7 @@ The features in this article are no longer being actively developed, and might b
 
 |Feature    |  Details and mitigation  | Deprecation announced |
 | ----------- | --------------------- | ---- |
-| Windows Information Protection <!-- 6010051 --> | [Windows Information Protection](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) will no longer be developed in future versions of Windows. For more information on this deprecation announcement, see [Why we deprecated WIP blog](). <!-- QUESTION --> **_TBD link to blog post from Rafal_**<br> <br>Migrate to [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection). For more information on moving to Purview, see [Microsoft Purview Information Protection and Data Loss Prevention for a modern data protection strategy](https://aka.ms/MigrateToMIP). | July 2022 |
+| Windows Information Protection <!-- 6010051 --> | [Windows Information Protection](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) will no longer be developed in future versions of Windows. For more information, see [Announcing sunset of Windows Information Protection (WIP)](https://go.microsoft.com/fwlink/?linkid=2202124).<br> <br>For your data protection needs, Microsoft recommends that you use [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) and [Microsoft Purview Data Loss Prevention](/microsoft-365/compliance/dlp-learn-about-dlp). | July 2022 |
 | BitLocker To Go Reader | **Note: BitLocker to Go as a feature is still supported.**<br>Reading of BitLocker-protected removable drives ([BitLocker To Go](/windows/security/information-protection/bitlocker/bitlocker-to-go-faq)) from Windows XP or Windows Vista in later operating systems is deprecated and might be removed in a future release of Windows client.<br>The following items might not be available in a future release of Windows client:<br>- ADMX policy: **Allow access to BitLocker-protected removable data drives from earlier versions of Windows**<br>- Command line parameter: [`manage-bde -DiscoveryVolumeType`](/windows-server/administration/windows-commands/manage-bde-on) (-dv)<br>- Catalog file: **c:\windows\BitLockerDiscoveryVolumeContents**<br>- BitLocker 2 Go Reader app: **bitlockertogo.exe** and associated files  | 21H1 |
 | Personalization roaming | Roaming of Personalization settings (including wallpaper, slideshow, accent colors, and lock screen images) is no longer being developed and might be removed in a future release. | 21H1 |
 | Windows Management Instrumentation Command line (WMIC) tool. | The WMIC tool is deprecated in Windows 10, version 21H1 and the 21H1 General Availability Channel release of Windows Server. This tool is superseded by [Windows PowerShell for WMI](/powershell/scripting/learn/ps101/07-working-with-wmi). Note: This deprecation only applies to the [command-line management tool](/windows/win32/wmisdk/wmic). WMI itself isn't affected. | 21H1 |
