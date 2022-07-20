@@ -119,9 +119,9 @@ For information about creating or locating your subscription ID, see [Steps to o
 
 The MCC Azure management portal is used to create and manage MCC nodes. An Azure Subscription ID is used to grant access to the preview and to create the MCC resource in Azure and Cache nodes. 
 
-Once you take the survey above and the MCC team adds your subscription id to the allow list, you will be given a link to the Azure portal where you can create the resource described below. 
+Once you take the survey above and the MCC team adds your subscription ID to the allow list, you will be given a link to the Azure portal where you can create the resource described below. 
 
-1.  On the Azure Portal home page, choose **Create a resource**:  
+1.  On the Azure portal home page, choose **Create a resource**:  
     ![eMCC img02](images/emcc02.png)
 
 2.  Type **Microsoft Connected Cache** into the search box, and hit **Enter** to show search results.
@@ -291,7 +291,7 @@ Files contained in the mccinstaller.zip file:
 
 6.  Choose where you would like to download, install, and store the virtual hard disk for EFLOW. You'll also be asked how much memory, storage, and cores you would like to allocate for the VM. In this example, we chose the default values for all prompts.
 
-7.  Follow the Azure Device Login link and sign into the Azure Portal.
+7.  Follow the Azure Device Login link and sign into the Azure portal.
 
     ![eMCC img17](images/emcc17.png)
 
@@ -329,10 +329,10 @@ You should see MCC, edgeAgent, and edgeHub running. If you see edgeAgent or edge
 
 #### Verify server side
 
-For a validation of properly functioning MCC, execute the following command in the EFLOW VM or any device in the network. Replace \<CacheServerIP\> with the IP address of the cache server.
+For a validation of properly functioning MCC, execute the following command in the EFLOW VM or any device in the network. Replace <CacheServerIP> with the IP address of the cache server.
 
 ```powershell
-wget [http://\<CacheServerIP\>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com]()
+wget [http://<CacheServerIP>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com]
 ```
 
 A successful test result will look like this:
@@ -382,7 +382,7 @@ sudo iotedge list​
 
 ![eMCC img24](images/emcc24.png)
 
-If edgeAgent and edgeHub containers are listed, but not “MCC”, you may view the status of the IoTEdge security manager using the command:
+If edgeAgent and edgeHub containers are listed, but not “MCC”, you may view the status of the IoT Edge security manager using the command:
 
 ```bash
 sudo journalctl -u iotedge -f
