@@ -17,6 +17,14 @@ manager: dansimp
 # What's new in Set up School PCs
 Learn what’s new with the Set up School PCs app each week. Find out about new app features and functionality, see updated screenshots, and find information about past releases.   
 
+## Week of July 25, 2022
+
+### Reimagine option for Windows 11 SE  
+Set up School PCs has added an option to reimage your SE devices to Windows 11 SE during the create provisioning package flow. Previously, the process to reimage a device was specific to the OEM and required technical knowledge. The new reimaging feature in SUSPC provides a unified way for all OEMs using a simple and easy flow. Now you are able to plug in your USB with a Windows 11 SE image and a provisioning package on it, and your device will be reimaged before the provisioning package is installed on that device.  
+
+Note: If after you have reimaged the device, you notice there are missing drivers, the IT admin should manually add those drivers to the image. The SUSPC reimaging tool has been tested on Surface SE devices, but since there are a variety of SE devices, the SUSPC reimage tool has not been tested on all SE devices. Contact your OEM to learn more about the necessary drivers.  
+
+The option to reimage by getting the image from an OEM is still viable. 
 
 ## Week of August 24, 2020
 
