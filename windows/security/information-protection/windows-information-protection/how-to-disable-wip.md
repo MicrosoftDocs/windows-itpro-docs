@@ -49,7 +49,7 @@ If you're currently deploying a WIP policy for enrolled or unenrolled devices, y
 Determine whether to revoke a user's local encryption keys from a device when it's unenrolled from Windows Information Protection. If the encryption keys are revoked, a user no longer has access to encrypted corporate data. The options are:
 
 - Yes, or not configured. Revokes local encryption keys from a device during unenrollment.
-- No (recommended). Stop local encryption keys from being revoked from a device during unenrollment. For example, if you're migrating between Mobile Device Management (MDM) solutions.
+- No (recommended). Stop local encryption keys from being revoked from a device during unenrollment.
 
 ## Use Configuration Manager to disable WIP
 
