@@ -94,12 +94,10 @@ Set the Windows Information Protection mode to Off.
 
 Corporate identity must match the string in the original policy.
 
-    ![Create Configuration Item wizard, Add the primary Internet domain for your enterprise identity.](images/wip-configmgr-corp-identity.png)
+![Create Configuration Item wizard, Add the primary Internet domain for your enterprise identity.](images/wip-configmgr-corp-identity.png)
 
 ### Choose where apps can access enterprise data
 After you've added a protection mode to your apps, you'll need to decide where those apps can access enterprise data on your network.
-
-**To define where your protected apps can find and send enterprise data on you network**
 
 Add additional network locations your apps can access by selecting **Add**.
 The **Add or edit corporate network definition** box appears. Add the required fields.
