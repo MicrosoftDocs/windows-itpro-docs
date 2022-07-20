@@ -176,7 +176,7 @@ To add **Desktop apps**, complete the following fields, based on what results yo
 |Publisher, Name, File, and Max version only|If you only fill out these fields, you'll get the specified version or older releases of the named file or package for the specified product, signed by the named publisher.|
 |All fields completed|If you fill out all fields, you'll get the specified version of the named file or package for the specified product, signed by the named publisher.|
 
-To add another Desktop app, select the ellipsis **…**. After you've entered the info into the fields, select **OK**.
+To add another Desktop app, select the ellipsis (**…**). After you've entered the info into the fields, select **OK**.
 
 ![Microsoft Intune management console: Adding Desktop app info.](images/wip-azure-add-desktop-apps.png)
  
