@@ -127,7 +127,7 @@ Starting with Windows 10, version 1709, WIP includes a data recovery feature tha
 
 To help make sure employees can always access files, WIP creates an auto-recovery key that's backed up to their Azure Active Directory (Azure AD) identity.
 
-The employee experience is based on sign in with an Azure AD work account. The employee can either:
+The employee experience is based on signing in with an Azure AD work account. The employee can either:
 
 - Add a work account through the **Windows Settings > Accounts > Access work or school > Connect** menu.
 
