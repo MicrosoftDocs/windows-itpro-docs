@@ -17,6 +17,13 @@ ms.author: dansimp
 - Windows 11
 
 
+## Hyper-V based Containers and VPN
+
+Windows supports different kinds of Hyper-V based containers, which includes but not limited to, Microsoft Defender Application Guard and Windows Sandbox. When 3rd party VPN solutions are being used, these Hyper-V based containers may not be able to seamlessly connect to the internet. Additional configurational changes might be needed to resolve connectivity issues. 
+
+Here's an example of a workaround for Cisco AnyConnect VPN: https://www.cisco.com/c/en/us/td/docs/security/vpn_client/anyconnect/anyconnect410/administration/guide/b-anyconnect-admin-guide-4-10/troubleshoot-anyconnect.html#Cisco_Task_in_List_GUI.dita_3a9a8101-f034-4e9b-b24a-486ee47b5e9f
+
+
 ## Windows Information Protection (WIP) integration with VPN
 
 Windows Information Protection provides capabilities allowing the separation and protection of enterprise data against disclosure across both company and personally owned devices, without requiring additional changes to the environments or the apps themselves. Additionally, when used with Rights Management Services (RMS), WIP can help to protect enterprise data locally.
