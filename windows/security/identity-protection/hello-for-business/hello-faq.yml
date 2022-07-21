@@ -28,11 +28,11 @@ sections:
     questions:
       - question: What is Windows Hello for Business cloud trust?
         answer: |
-          Windows Hello for Business cloud trust is a new trust model that is planned to be introduced in early 2022. This trust model will enable Windows Hello for Business deployment using the infrastructure introduced for supporting [security key sign-in on Hybrid Azure AD joined devices and on-premises resource access on Azure AD Joined devices](/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). More information will be available on Windows Hello for Business cloud trust once it is generally available.
+          Windows Hello for Business cloud trust is a new trust model that is planned to be introduced in early 2022. This trust model will enable Windows Hello for Business deployment using the infrastructure introduced for supporting [security key sign-in on Hybrid Azure AD joined devices and on-premises resource access on Azure AD Joined devices](/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). More information will be available on Windows Hello for Business cloud trust once it's generally available.
       
       - question: What about virtual smart cards?
         answer: |
-          Windows Hello for Business is the modern, two-factor credential for Windows 10. Microsoft will be deprecating virtual smart cards in the future, but no date is set at this time. Customers using Windows 10 and virtual smart cards should move to Windows Hello for Business.  Microsoft will publish the date early to ensure customers have adequate lead time to move to Windows Hello for Business. Microsoft recommends that new Windows 10 deployments use Windows Hello for Business. Virtual smart card remain supported for Windows 7 and Windows 8.
+          Windows Hello for Business is the modern, two-factor credential for Windows 10. Microsoft will be deprecating virtual smart cards in the future, but no date is set at this time. Customers using Windows 10 and virtual smart cards should move to Windows Hello for Business.  Microsoft will publish the date early to ensure customers have adequate lead time to move to Windows Hello for Business. Microsoft recommends that new Windows 10 deployments use Windows Hello for Business. Virtual smart cards remain supported for Windows 7 and Windows 8.
 
       - question: What about convenience PIN?
         answer: |
@@ -40,7 +40,7 @@ sections:
 
       - question: Can I use Windows Hello for Business key trust and RDP?
         answer: |
-          Remote Desktop Protocol (RDP) does not currently support using key-based authentication and self-signed certificates as supplied credentials. RDP with supplied credentials is currently only supported with certificate-based deployments. Windows Hello for Business key trust can be used with [Windows Defender Remote Credential Guard](../remote-credential-guard.md).
+          Remote Desktop Protocol (RDP) doesn't currently support using key-based authentication and self-signed certificates as supplied credentials. RDP with supplied credentials is currently only supported with certificate-based deployments. Windows Hello for Business key trust can be used with [Windows Defender Remote Credential Guard](../remote-credential-guard.md).
           
       - question: Can I deploy Windows Hello for Business by using Microsoft Endpoint Configuration Manager?
         answer: |
@@ -48,11 +48,11 @@ sections:
           
       - question: How many users can enroll for Windows Hello for Business on a single Windows 10 computer?
         answer: |
-          The maximum number of supported enrollments on a single Windows 10 computer is 10. This lets 10 users each enroll their face and up to 10 fingerprints. While we support 10 enrollments, we will strongly encourage the use of Windows Hello security keys for the shared computer scenario when they become available.
+          The maximum number of supported enrollments on a single Windows 10 computer is 10. This lets 10 users each enroll their face and up to 10 fingerprints. While we support 10 enrollments, we'll strongly encourage the use of Windows Hello security keys for the shared computer scenario when they become available.
 
       - question: How can a PIN be more secure than a password?
         answer: |
-          When using Windows Hello for Business, the PIN is not a symmetric key, whereas the password is a symmetric key.  With passwords, there's a server that has some representation of the password. With Windows Hello for Business, the PIN is user-provided entropy used to load the private key in the Trusted Platform Module (TPM). The server does not have a copy of the PIN. For that matter, the Windows client does not have a copy of the current PIN either. The user must provide the entropy, the TPM-protected key, and the TPM that generated that key in order to successfully access the private key.
+          When using Windows Hello for Business, the PIN isn't a symmetric key, whereas the password is a symmetric key.  With passwords, there's a server that has some representation of the password. With Windows Hello for Business, the PIN is user-provided entropy used to load the private key in the Trusted Platform Module (TPM). The server doesn't have a copy of the PIN. For that matter, the Windows client doesn't have a copy of the current PIN either. The user must provide the entropy, the TPM-protected key, and the TPM that generated that key in order to successfully access the private key.
           
           The statement "PIN is stronger than Password" is not directed at the strength of the entropy used by the PIN. It's about the difference between providing entropy versus continuing the use of a symmetric key (the password). The TPM has anti-hammering features that thwart brute-force PIN attacks (an attacker's continuous attempt to try all combination of PINs). Some organizations may worry about shoulder surfing. For those organizations, rather than increase the complexity of the PIN, implement the [Multifactor Unlock](feature-multifactor-unlock.md) feature.
           
@@ -163,7 +163,7 @@ sections:
 
       - question: When is Windows Hello biometrics database file deleted? How can a user be unenrolled from Windows Hello face or fingerprint authentication?
         answer: |
-          To remove Windows Hello and any associated biometric identification data from the device, user can go to **Start** > **Settings** > **Accounts** > **Sign-in options**. Select the Windows Hello biometrics authentication method you want to remove, and then select **Remove**. This will unenroll the user from Windows Hello biometrics auth and will also delete the associated biometrics template database file. For more details see Windows sign-in options and account protection (microsoft.com).
+            To remove Windows Hello and any associated biometric identification data from the device, user can go to **Start** > **Settings** > **Accounts** > **Sign-in options**. Select the Windows Hello biometrics authentication method you want to remove, and then select **Remove**. This will unenroll the user from Windows Hello biometrics auth and will also delete the associated biometrics template database file. For more details see [Windows sign-in options and account protection (microsoft.com)](https://support.microsoft.com/en-us/windows/windows-sign-in-options-and-account-protection-7b34d4cf-794f-f6bd-ddcc-e73cdf1a6fbf#bkmk_helloandprivacy).
       
       - question: What about any diagnostic data coming out when WHFB is enabled?
         answer: |
@@ -223,13 +223,13 @@ sections:
 
       - question: How are keys protected?
         answer: |
-          Wherever possible, Windows Hello for Business takes advantage of Trusted Platform Module (TPM) 2.0 hardware to generate and protect keys. However, Windows Hello and Windows Hello for Business do not require a TPM. Administrators can choose to allow key operations in software.
+          Wherever possible, Windows Hello for Business takes advantage of Trusted Platform Module (TPM) 2.0 hardware to generate and protect keys. However, Windows Hello and Windows Hello for Business don't require a TPM. Administrators can choose to allow key operations in software.
           
-          Whenever possible, Microsoft strongly recommends the use of TPM hardware. The TPM protects against a variety of known and potential attacks, including PIN brute-force attacks. The TPM provides an additional layer of protection after an account lockout, too. When the TPM has locked the key material, the user will need to reset the PIN (which means they'll need to use MFA to re-authenticate to the IDP before the IDP allows them to re-register).
+          Whenever possible, Microsoft strongly recommends the use of TPM hardware. The TPM protects against various known and potential attacks, including PIN brute-force attacks. The TPM provides an additional layer of protection after an account lockout, too. When the TPM has locked the key material, the user will need to reset the PIN (which means they'll need to use MFA to reauthenticate to the IDP before the IDP allows them to re-register).
           
       - question: Can Windows Hello for Business work in air-gapped environments?
         answer: |
-          Yes. You can use the on-premises Windows Hello for Business deployment and combine it with a third-party MFA provider that does not require internet connectivity to achieve an air-gapped Windows Hello for Business deployment.
+          Yes. You can use the on-premises Windows Hello for Business deployment and combine it with a third-party MFA provider that doesn't require internet connectivity to achieve an air-gapped Windows Hello for Business deployment.
 
       - question: Can I use third-party authentication providers with Windows Hello for Business?
         answer: |
@@ -242,16 +242,16 @@ sections:
           | Protocol | Description |
           | :---: | :--- |
           | [[MS-KPP]: Key Provisioning Protocol](/openspecs/windows_protocols/ms-kpp/25ff7bd8-50e3-4769-af23-bcfd0b4d4567) | Specifies the Key Provisioning Protocol, which defines a mechanism for a client to register a set of cryptographic keys on a user and device pair. |
-          | [[MS-OAPX]: OAuth 2.0 Protocol Extensions](/openspecs/windows_protocols/ms-oapx/7612efd4-f4c8-43c3-aed6-f5c5ce359da2)| Specifies the OAuth 2.0 Protocol Extensions, which are used to extend the OAuth 2.0 Authorization Framework. These extensions enable authorization features such as resource specification, request identifiers, and login hints. |  
+          | [[MS-OAPX]: OAuth 2.0 Protocol Extensions](/openspecs/windows_protocols/ms-oapx/7612efd4-f4c8-43c3-aed6-f5c5ce359da2)| Specifies the OAuth 2.0 Protocol Extensions, which are used to extend the OAuth 2.0 Authorization Framework. These extensions enable authorization features such as resource specification, request identifiers, and log in hints. |  
           | [[MS-OAPXBC]: OAuth 2.0 Protocol Extensions for Broker Clients](/openspecs/windows_protocols/ms-oapxbc/2f7d8875-0383-4058-956d-2fb216b44706) | Specifies the OAuth 2.0 Protocol Extensions for Broker Clients, extensions to RFC6749 (the OAuth 2.0 Authorization Framework) that allow a broker client to obtain access tokens on behalf of calling clients. |
-          | [[MS-OIDCE]: OpenID Connect 1.0 Protocol Extensions](/openspecs/windows_protocols/ms-oidce/718379cf-8bc1-487e-962d-208aeb8e70ee) | Specifies the OpenID Connect 1.0 Protocol Extensions. These extensions define additional claims to carry information about the user, including the user principal name, a locally unique identifier, a time for password expiration, and a URL for password change. These extensions also define additional provider meta-data that enables the discovery of the issuer of access tokens and gives additional information about provider capabilities. |
+          | [[MS-OIDCE]: OpenID Connect 1.0 Protocol Extensions](/openspecs/windows_protocols/ms-oidce/718379cf-8bc1-487e-962d-208aeb8e70ee) | Specifies the OpenID Connect 1.0 Protocol Extensions. These extensions define other claims to carry information about the user, including the user principal name, a locally unique identifier, a time for password expiration, and a URL for password change. These extensions also define more provider meta-data that enables the discovery of the issuer of access tokens and gives additional information about provider capabilities. |
           
       - question: Does Windows Hello for Business work with Mac and Linux clients?
         answer: |
-          Windows Hello for Business is a feature of Windows 10. At this time, Microsoft is not developing clients for other platforms. However, Microsoft is open to third-parties who are interested in moving these platforms away from passwords. Interested third-parties can get more information by emailing [whfbfeedback@microsoft.com](mailto:whfbfeedback@microsoft.com?subject=collaboration).
-          Windows Hello for Business is a feature of the Windows platform. At this time, Microsoft is not developing clients for other platforms.
+          Windows Hello for Business is a feature of Windows 10. At this time, Microsoft isn't developing clients for other platforms. However, Microsoft is open to third-parties who are interested in moving these platforms away from passwords. Interested third-parties can get more information by emailing [whfbfeedback@microsoft.com](mailto:whfbfeedback@microsoft.com?subject=collaboration).
+          Windows Hello for Business is a feature of the Windows platform. At this time, Microsoft isn't developing clients for other platforms.
           
       - question: Does Windows Hello for Business work with Azure Active Directory Domain Services (Azure AD DS) clients?
         answer: | 
-          No, Azure AD DS is a separately managed environment in Azure, and hybrid device registration with cloud Azure AD is not available for it via Azure AD Connect. Hence, Windows Hello for Business does not work with Azure AD.
+          No, Azure AD DS is a separately managed environment in Azure, and hybrid device registration with cloud Azure AD isn't available for it via Azure AD Connect. Hence, Windows Hello for Business doesn't work with Azure AD.
 
