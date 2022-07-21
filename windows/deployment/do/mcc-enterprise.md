@@ -351,7 +351,7 @@ If the test fails, see the common issues section for more information.
 
 ### Intune (or other management software) configuration for MCC
 
-Example of setting the cache host policy to the MCC’s IP address / FQDN:
+For an Intune deployment, create a Configuration Profile and include the Cache Host eFlow IP Address or FQDN:
 
 ![eMCC img23](images/emcc23.png)
 
