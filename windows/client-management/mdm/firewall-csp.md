@@ -112,6 +112,13 @@ Firewall
 ----------------FriendlyName
 ----------------Status
 ----------------Name
+----------------RemoteAddressDynamicKeywords
+--------DynamicKeywords
+----------------Addresses
+-------------------------Id
+---------------------------------Keyword
+---------------------------------Addresses
+---------------------------------AutoResolve
 ```
 
 <a href="" id="--vendor-msft-applocker"></a>**./Vendor/MSFT/Firewall**
@@ -444,6 +451,42 @@ Value type is string. Supported operation is Get.
 <a href="" id="name"></a>**FirewallRules/_FirewallRuleName_/Name**
 Name of the rule.
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
+
+<a href="" id="remoteaddressdynamickeywords"></a>**FirewallRules/_FirewallRuleName_/RemoteAddressDynamicKeywords**
+Comma separated list of Dynamic Keyword Address Ids (GUID strings) specifying the remote addresses covered by the rule. 
+Value type is string. Supported operations are Add, Get, Replace, and Delete.
+
+
+<a href="" id="dynamickeywords"></a>**MdmStore/DynamicKeywords**
+Interior node. 
+Supported operation is Get.
+
+<a href="" id="addresses"></a>**MdmStore/DynamicKeywords/Addresses**
+Interior node. 
+Supported operation is Get.
+
+<a href="" id="id"></a>**MdmStore/DynamicKeywords/Addresses/Id**
+A unique GUID string identifier for this dynamic keyword address.
+Value type is string. Supported operations are Add, Delete, and Get.
+
+<a href="" id="keyword"></a>**MdmStore/DynamicKeywords/Addresses/Id/Keyword**
+A String representing a keyword. If the AutoResolve value is true, this should be a Fully Qualified Domain name (wildcards accepted, for example "contoso.com" or "*.contoso.com").
+Value type is string. Supported operations are Add, Delete, and Get.
+
+<a href="" id="addresses"></a>**MdmStore/DynamicKeywords/Addresses/Id/Addresses**
+Consists of one or more comma-delimited tokens specifying the addresses covered by this keyword. This value should not be set if AutoResolve is true.
+
+Valid tokens include:
+ - A subnet specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255.
+- A valid IPv6 address.
+- An IPv4 address range in the format of "start address-end address" with no spaces included.
+- An IPv6 address range in the format of "start address-end address" with no spaces included.
+Supported operations are Add, Delete, Replace, and Get.
+
+<a href="" id="autoresolve"></a>**MdmStore/DynamicKeywords/Addresses/Id/AutoResolve**
+Boolean value. If this flag is set to TRUE, then the 'keyword' field of this object is expected to be a fully qualified domain name, and the addresses will be automatically resolved. This flag should only be set if the Microsoft Defender Advanced Threat Protection Service is present. 
+Value type is string. Supported operations are Add, Delete, and Get.
+
 
 ## Related topics
 
