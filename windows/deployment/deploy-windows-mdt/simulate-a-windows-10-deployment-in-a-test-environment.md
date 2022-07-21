@@ -1,18 +1,12 @@
 ---
 title: Simulate a Windows 10 deployment in a test environment (Windows 10)
 description: This topic will walk you through the process of creating a simulated environment on which to test your Windows 10 deployment using MDT.
-ms.assetid: 2de86c55-ced9-4078-b280-35e0329aea9c
 ms.reviewer: 
 manager: dougeby
-ms.author: greglin
-keywords: deploy, script
+ms.author: aaroncz
 ms.prod: w10
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.sitesec: library
-ms.pagetype: mdt
-audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ---
 
@@ -51,7 +45,7 @@ On **PC0001**:
     & "C:\MDT\CMTrace" C:\MININT\SMSOSD\OSDLOGS\ZTIGather.log
     ```
 
-3. Download and install the free [Microsoft System Center 2012 R2 Configuration Manager Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=734717) on PC0001 so that you have access to the Configuration Manager Trace (cmtrace.exe) tool.
+3. Download and install the free [Configuration Manager Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=734717) on PC0001 so that you have access to the Configuration Manager Trace (cmtrace.exe) tool.
 4. Using Local Users and Groups (lusrmgr.msc), add the **contoso\\MDT\_BA** user account to the local **Administrators** group.
 5. Sign off, and then sign on to PC0001 as **contoso\\MDT\_BA**.
 6. Open the **\\\\MDT01\\MDTProduction$\\Scripts** folder and copy the following files to **C:\\MDT**:

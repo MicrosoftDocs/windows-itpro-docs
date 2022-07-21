@@ -1,13 +1,8 @@
 ---
 title: How User Account Control works (Windows)
 description: User Account Control (UAC) is a fundamental component of Microsoft's overall security vision. UAC helps mitigate the impact of malware.
-ms.assetid: 9f921779-0fd3-4206-b0e4-05a19883ee59
 ms.reviewer: 
 ms.prod: m365-security
-ms.mktglfcycl: operate
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp
@@ -60,7 +55,7 @@ With UAC enabled, Windows 10 or Windows 11 prompts for consent or prompts for 
 
 The consent prompt is presented when a user attempts to perform a task that requires a user's administrative access token. The following is an example of the UAC consent prompt.
 
-![uac consent prompt.](images/uacconsentprompt.gif)
+:::image type="content" source="images/uacconsentprompt.png" alt-text="UAC consent prompt.":::
 
 **The credential prompt**
 
@@ -68,7 +63,7 @@ The credential prompt is presented when a standard user attempts to perform a ta
 
 The following is an example of the UAC credential prompt.
 
-![uac credential prompt.](images/uaccredentialprompt.gif)
+:::image type="content" source="images/uaccredentialprompt.png" alt-text="UAC credential prompt.":::
 
 **UAC elevation prompts**
 
@@ -85,7 +80,7 @@ The elevation prompt color-coding is as follows:
 
 Some Control Panel items, such as **Date and Time Properties**, contain a combination of administrator and standard user operations. Standard users can view the clock and change the time zone, but a full administrator access token is required to change the local system time. The following is a screen shot of the **Date and Time Properties** Control Panel item.
 
-![uac shield icon.](images/uacshieldicon.png)
+:::image type="content" source="images/uacshieldicon.png" alt-text="UAC Shield Icon in Date and Time Properties":::
 
 The shield icon on the **Change date and time** button indicates that the process requires a full administrator access token and will display a UAC elevation prompt.
 

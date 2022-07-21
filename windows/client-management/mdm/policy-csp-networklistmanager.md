@@ -14,7 +14,6 @@ manager: dansimp
 
 # Policy CSP - NetworkListManager
 
-
 <hr/>
 
 <!--Policies-->
@@ -29,7 +28,6 @@ manager: dansimp
   </dd>
 </dl>
 
-
 <hr/>
 
 <!--Policy-->
@@ -41,6 +39,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -70,7 +69,7 @@ When entering a list of TLS endpoints in Microsoft Endpoint Manager, you must fo
 
 - The client must trust the server certificate. So the CA certificate that the HTTPS server certificate chains to must be present in the client machine's root certificate store.
 
-- A certificate should not be a public certificate.
+- A certificate shouldn't be a public certificate.
 
 
 <hr/>
@@ -84,6 +83,7 @@ When entering a list of TLS endpoints in Microsoft Endpoint Manager, you must fo
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -107,3 +107,6 @@ This policy setting provides the string that is to be used to name a network. Th
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

@@ -4,11 +4,8 @@ ms.reviewer:
 manager: dougeby
 description: Use the Windows PowerShell Get-AppxProvisionedPackage command to get a list off the provisioned apps installed in Windows OS. See a list of some common provisioned apps installed a Windows Enterprise client computer or device, including Windows 10/11.
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: mobile
-ms.author: mandia
-author: MandiOhlinger
+ms.author: aaroncz
+author: aczechowski
 ms.localizationpriority: medium
 ms.topic: article
 ---

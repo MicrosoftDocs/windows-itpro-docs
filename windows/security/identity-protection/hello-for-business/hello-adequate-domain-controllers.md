@@ -1,14 +1,9 @@
 ---
 title: Having enough Domain Controllers for Windows Hello for Business deployments
 description: Guide for planning to have an adequate number of Windows Server 2016 or later Domain Controllers for Windows Hello for Business deployments
-keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, key-trust
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -48,7 +43,7 @@ The Windows Server 2016 or later domain controller is handling 100 percent of al
 
 ![dc-chart3.](images/plan/dc-chart3.png)
 
-Upgrading another domain controller to Windows Server 2016 or later distributes the public key trust authentication across two domain controllers - each supporting 50 percent of the load.  But it doesn't change the distribution of password and certificate trust authentication. Both Windows Server 2019 domain controllers still share 10 percent of this load. Now look at the scenario when half of the domain controllers are upgraded to Windows Server 2016 or later, but the number of WHFB clients remains the same.
+Upgrading another domain controller to Windows Server 2016 or later distributes the public key trust authentication across two domain controllers - each supporting 50 percent of the load.  But it doesn't change the distribution of password and certificate trust authentication. Both Windows Server 2019 domain controllers still share 10 percent of this load. Now look at the scenario when half of the domain controllers are upgraded to Windows Server 2016 or later, but the number of Windows Hello for Business clients remains the same.
 
 ![dc-chart4.](images/plan/dc-chart4.png)
 

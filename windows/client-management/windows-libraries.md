@@ -1,5 +1,4 @@
 ---
-ms.assetid: e68cd672-9dea-4ff8-b725-a915f33d8fd2
 ms.reviewer: 
 manager: dansimp
 title: Windows Libraries
@@ -12,6 +11,7 @@ author: dansimp
 description: All about Windows Libraries, which are containers for users' content, such as Documents and Pictures.
 ms.date: 09/15/2021
 ---
+
 # Windows libraries
 
 > Applies to: Windows 10, Windows 11, Windows 8.1, Windows 7, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2

@@ -1,16 +1,13 @@
 ---
 title: What's new in Windows 10, version 1903
 description: New and updated features in Windows 10, version 1903 (also known as the Windows 10 May 2019 Update).
-keywords: ["What's new in Windows 10", "Windows 10", "May 2019 Update"]
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-audience: itpro
-author: greg-lindsay
-ms.author: greglin
-manager: laurawi
-ms.localizationpriority: high
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.localizationpriority: medium
 ms.topic: article
+ROBOTS: NOINDEX
 ---
 
 # What's new in Windows 10, version 1903 for IT Pros
@@ -105,11 +102,11 @@ The draft release of the [security configuration baseline settings](/archive/blo
 
   - WDAG allows dynamic navigation: Application Guard now allows users to navigate back to their default host browser from the WDAG Microsoft Edge. Previously, users browsing in WDAG Edge would see an error page when they try to go to a trusted site within the container browser. With this new feature, users will automatically be redirected to their host default browser when they enter or click on a trusted site in WDAG Edge. This feature is also available in Windows 10, version 1803 or later with the latest updates.
 
-- [Windows Defender Application Control (WDAC)](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control): In Windows 10, version 1903 WDAC has a number of new features that light up key scenarios and provide feature parity with AppLocker.
-    - [Multiple Policies](/windows/security/threat-protection/windows-defender-application-control/deploy-multiple-windows-defender-application-control-policies): WDAC now supports multiple simultaneous code integrity policies for one device in order to enable the following scenarios: 1) enforce and audit side-by-side, 2) simpler targeting for policies with different scope/intent, 3) expanding a policy using a new ‘supplemental’ policy.
-    - [Path-Based Rules](/windows/security/threat-protection/windows-defender-application-control/create-path-based-rules): The path condition identifies an app by its location in the file system of the computer or on the network instead of a signer or hash identifier. Additionally, WDAC has an option that allows admins to enforce at runtime that only code from paths that are not user-writeable is executed. When code tries to execute at runtime, the directory is scanned and files will be checked for write permissions for non-known admins. If a file is found to be user writeable, the executable is blocked from running unless it is authorized by something other than a path rule like a signer or hash rule.<br>
-    This brings WDAC to functionality parity with AppLocker in terms of support for file path rules. WDAC improves upon the security of policies based on file path rules with the availability of the user-writability permission checks at runtime time, which is a capability that is not available with AppLocker.
-    - [Allow COM Object Registration](/windows/security/threat-protection/windows-defender-application-control/allow-com-object-registration-in-windows-defender-application-control-policy): Previously, WDAC enforced a built-in allow list for COM object registration. While this mechanism works for most common application usage scenarios, customers have provided feedback that there are cases where additional COM objects need to be allowed. The 1903 update to Windows 10 introduces the ability to specify allowed COM objects via their GUID in the WDAC policy.
+- [Windows Defender Application Control (WDAC)](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control): In Windows 10, version 1903, Windows Defender Application Control has a number of new features that light up key scenarios and provide feature parity with AppLocker.
+    - [Multiple Policies](/windows/security/threat-protection/windows-defender-application-control/deploy-multiple-windows-defender-application-control-policies): Windows Defender Application Control now supports multiple simultaneous code integrity policies for one device in order to enable the following scenarios: 1) enforce and audit side-by-side, 2) simpler targeting for policies with different scope/intent, 3) expanding a policy using a new ‘supplemental’ policy.
+    - [Path-Based Rules](/windows/security/threat-protection/windows-defender-application-control/create-path-based-rules): The path condition identifies an app by its location in the file system of the computer or on the network instead of a signer or hash identifier. Additionally, Windows Defender Application Control has an option that allows admins to enforce at runtime that only code from paths that are not user-writeable is executed. When code tries to execute at runtime, the directory is scanned and files will be checked for write permissions for non-known admins. If a file is found to be user writeable, the executable is blocked from running unless it is authorized by something other than a path rule like a signer or hash rule.<br>
+    This brings Windows Defender Application Control (WDAC) to functionality parity with AppLocker in terms of support for file path rules. WDAC improves upon the security of policies based on file path rules with the availability of the user-writability permission checks at runtime time, which is a capability that is not available with AppLocker.
+    - [Allow COM Object Registration](/windows/security/threat-protection/windows-defender-application-control/allow-com-object-registration-in-windows-defender-application-control-policy): Previously, Windows Defender Application Control enforced a built-in allow list for COM object registration. While this mechanism works for most common application usage scenarios, customers have provided feedback that there are cases where additional COM objects need to be allowed. The 1903 update to Windows 10 introduces the ability to specify allowed COM objects via their GUID in the WDAC policy.
 
 #### System Guard
 
@@ -138,7 +135,7 @@ Several new features are coming in the next version of Edge. See the [news from 
 
 ## See Also
 
-[What's New in Windows Server, version 1903](/windows-server/get-started/whats-new-in-windows-server-1903): New and updated features in Windows Server.<br>
+[What's New in Windows Server, version 1903](/windows-server/get-started/whats-new-in-windows-server-1903-1909): New and updated features in Windows Server.<br>
 [Windows 10 Features](https://www.microsoft.com/windows/features): Review general information about Windows 10 features.<br>
 [What's New in Windows 10](./index.yml): See what’s new in other versions of Windows 10.<br>
 [What's new in Windows 10](/windows-hardware/get-started/what-s-new-in-windows): See what’s new in Windows 10 hardware.<br>

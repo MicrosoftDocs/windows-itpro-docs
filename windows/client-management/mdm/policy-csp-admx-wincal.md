@@ -45,8 +45,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -65,9 +66,8 @@ manager: dansimp
 <!--Description-->
 Windows Calendar is a feature that allows users to manage appointments and tasks by creating personal calendars, publishing them, and subscribing to other users calendars.
 
-If you enable this setting, Windows Calendar will be turned off.
-
-If you disable or do not configure this setting, Windows Calendar will be turned on.
+- If you enable this setting, Windows Calendar will be turned off.
+- If you disable or do not configure this setting, Windows Calendar will be turned on.
 
 The default is for Windows Calendar to be turned on.
 
@@ -94,8 +94,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -114,9 +115,8 @@ ADMX Info:
 <!--Description-->
 Windows Calendar is a feature that allows users to manage appointments and tasks by creating personal calendars, publishing them, and subscribing to other users calendars.
 
-If you enable this setting, Windows Calendar will be turned off.
-
-If you disable or do not configure this setting, Windows Calendar will be turned on.
+- If you enable this setting, Windows Calendar will be turned off.
+- If you disable or do not configure this setting, Windows Calendar will be turned on.
 
 The default is for Windows Calendar to be turned on.
 

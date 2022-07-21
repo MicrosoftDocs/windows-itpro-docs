@@ -1,14 +1,8 @@
 ---
 title: Configure S/MIME for Windows
 description: S/MIME lets users encrypt outgoing messages and attachments so that only intended recipients with a digital ID, also known as a certificate, can read them.
-ms.assetid: 7F9C2A99-42EB-4BCC-BB53-41C04FBBBF05
 ms.reviewer: 
-keywords: encrypt, digital signature
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp
@@ -43,7 +37,7 @@ A digitally signed message reassures the recipient that the message hasn't been 
 -   Valid Personal Information Exchange (PFX) certificates are installed on the device.
 
     -   [How to Create PFX Certificate Profiles in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/mt131410(v=technet.10))
-    -   [Enable access to company resources using certificate profiles with Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=718216)
+    -   [Enable access to company resources using certificate profiles with Microsoft Intune](/mem/intune/protect/certificates-configure)
 
 ## Choose S/MIME settings
 

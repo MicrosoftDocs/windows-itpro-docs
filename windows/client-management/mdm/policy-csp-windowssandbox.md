@@ -39,7 +39,6 @@ ms.date: 10/14/2020
   </dd>
 </dl>
 
-
 <hr/>
 
 <!--Policy-->
@@ -48,11 +47,13 @@ ms.date: 10/14/2020
 Available in the latest Windows 10 insider preview build.
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -75,9 +76,9 @@ This policy setting allows the IT admin to enable or disable audio input to the 
 > [!NOTE]
 > There may be security implications of exposing host audio input to the container.
 
-If this policy is not configured, end-users get the default behavior (audio input enabled). 
+If this policy isn't configured, end-users get the default behavior (audio input enabled). 
 
-If audio input is disabled, a user will not be able to enable audio input from their own configuration file. 
+If audio input is disabled, a user won't be able to enable audio input from their own configuration file. 
 
 If audio input is enabled, a user will be able to disable audio input from their own configuration file to make the device more secure.
 
@@ -118,11 +119,13 @@ The following are the supported values:
 Available in the latest Windows 10 insider preview build.
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -142,9 +145,9 @@ Available in the latest Windows 10 insider preview build.
 <!--Description-->
 This policy setting allows the IT admin to enable or disable sharing of the host clipboard with the sandbox.
 
-If this policy is not configured, end-users get the default behavior (clipboard redirection enabled. 
+If this policy isn't configured, end-users get the default behavior (clipboard redirection enabled). 
 
-If clipboard sharing is disabled, a user will not be able to enable clipboard sharing from their own configuration file. 
+If clipboard sharing is disabled, a user won't be able to enable clipboard sharing from their own configuration file. 
 
 If clipboard sharing is enabled, a user will be able to disable clipboard sharing from their own configuration file to make the device more secure.
 
@@ -185,11 +188,13 @@ The following are the supported values:
 Available in the latest Windows 10 insider preview build.
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -209,9 +214,9 @@ Available in the latest Windows 10 insider preview build.
 <!--Description-->
 This policy setting allows the IT admin to enable or disable networking in Windows Sandbox. Disabling network access can decrease the attack surface exposed by the Sandbox. Enabling networking can expose untrusted applications to the internal network.
 
-If this policy is not configured, end-users get the default behavior (networking enabled).
+If this policy isn't configured, end-users get the default behavior (networking enabled).
 
-If networking is disabled, a user will not be able to enable networking from their own configuration file.
+If networking is disabled, a user won't be able to enable networking from their own configuration file.
 
 If networking is enabled, a user will be able to disable networking from their own configuration file to make the device more secure.
 
@@ -250,11 +255,13 @@ The following are the supported values:
 Available in the latest Windows 10 insider preview build.
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -272,11 +279,11 @@ Available in the latest Windows 10 insider preview build.
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows the IT admin to enable or disable printer sharing from the host into the Sandbox. 
+This policy setting allows the IT admin to enable or disable printer sharing from the host into the Sandbox.
 
-If this policy is not configured, end-users get the default behavior (printer sharing disabled). 
+If this policy isn't configured, end-users get the default behavior (printer sharing disabled). 
 
-If printer sharing is disabled, a user will not be able to enable printer sharing from their own configuration file. 
+If printer sharing is disabled, a user won't be able to enable printer sharing from their own configuration file. 
 
 If printer sharing is enabled, a user will be able to disable printer sharing from their own configuration file to make the device more secure.
 
@@ -316,11 +323,13 @@ The following are the supported values:
 Available in the latest Windows 10 insider preview build.
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -343,9 +352,9 @@ This policy setting allows the IT admin to enable or disable virtualized GPU for
 > [!NOTE]
 > Enabling virtualized GPU can potentially increase the attack surface of Windows Sandbox. 
 
-If this policy is not configured, end-users get the default behavior (vGPU is disabled). 
+If this policy isn't configured, end-users get the default behavior (vGPU is disabled). 
 
-If vGPU is disabled, a user will not be able to enable vGPU support from their own configuration file. 
+If vGPU is disabled, a user won't be able to enable vGPU support from their own configuration file. 
 
 If vGPU is enabled, a user will be able to disable vGPU support from their own configuration file to make the device more secure.
 
@@ -385,11 +394,13 @@ The following are the supported values:
 Available in the latest Windows 10 insider preview build.
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -412,9 +423,9 @@ This policy setting allows the IT admin to enable or disable video input to the 
 > [!NOTE]
 > There may be security implications of exposing host video input to the container.
 
-If this policy is not configured, users get the default behavior (video input disabled). 
+If this policy isn't configured, users get the default behavior (video input disabled). 
 
-If video input is disabled, users will not be able to enable video input from their own configuration file. 
+If video input is disabled, users won't be able to enable video input from their own configuration file. 
 
 If video input is enabled, users will be able to disable video input from their own configuration file to make the device more secure.
 
@@ -448,3 +459,7 @@ The following are the supported values:
 <hr/>
 
 <!--/Policies-->
+
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

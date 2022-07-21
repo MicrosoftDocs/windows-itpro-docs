@@ -1,14 +1,9 @@
 ---
 title: Deploying Certificates to Key Trust Users to Enable RDP
 description: Learn how to deploy certificates to a Key Trust user to enable remote desktop with supplied credentials
-keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, cert-trust, device, registration, unlock, remote desktop, RDP
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -34,7 +29,7 @@ Three approaches are documented here:
 
 1. Deploying a certificate to hybrid joined devices using an on-premises Active Directory certificate enrollment policy.
 
-1. Deploying a certificate to hybrid or Azure AD joined devices using Simple Certificate Enrollment Protocol (SCEP) and Intune.
+1. Deploying a certificate to hybrid or Azure AD-joined devices using Simple Certificate Enrollment Protocol (SCEP) and Intune.
 
 1. Working with non-Microsoft enterprise certificate authorities.
 
@@ -191,7 +186,7 @@ Once the configuration profile has been created, targeted clients will receive t
 1. In the right-hand pane of the MMC, check for the new certificate
 
 > [!NOTE]
-> This infrastructure may also deploy the same certificates to co-managed or modern-managed Hybrid AAD-Joined devices using Intune Policies.
+> This infrastructure may also deploy the same certificates to co-managed or modern-managed Hybrid Azure Active Directory-Joined devices using Intune Policies.
 
 ## Using non-Microsoft Enterprise Certificate Authorities
 
@@ -205,6 +200,6 @@ The Generate-CertificateRequest commandlet will generate an .inf file for a pre-
 
 After adding the certificate using an approach from any of the previous sections, you should be able to RDP to any Windows device or server in the same Forest as the user’s on-premises Active Directory account, provided the PKI certificate chain for the issuing certificate authority is deployed to that target server.
 
-1. Open the Remote Desktop Client (%windir%\system32\mstsc.exe) on the Hybrid AAD-Joined client where the authentication certificate has been deployed.
+1. Open the Remote Desktop Client (%windir%\system32\mstsc.exe) on the Hybrid Azure Active Directory-Joined client where the authentication certificate has been deployed.
 1. Attempt an RDP session to a target server.
 1. Use the certificate credential protected by your Windows Hello for Business gesture.

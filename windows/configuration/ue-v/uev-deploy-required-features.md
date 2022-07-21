@@ -1,15 +1,12 @@
 ---
 title: Deploy required UE-V features
 description: Learn how to install and configure User Experience Virtualization (UE-V) features, for example a network share that stores and retrieves user settings.
-author: greg-lindsay
-ms.pagetype: mdop, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
+author: aczechowski
 ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
 
@@ -52,7 +49,7 @@ The settings storage location is defined by setting the SettingsStoragePath conf
 
 -   Through [Group Policy](uev-configuring-uev-with-group-policy-objects.md) settings
 
--   With the [System Center Configuration Pack](uev-configuring-uev-with-system-center-configuration-manager.md) for UE-V
+-   With the [Configuration Manager Pack](uev-configuring-uev-with-system-center-configuration-manager.md) for UE-V
 
 -   With [Windows PowerShell or Windows Management Instrumentation (WMI)](uev-administering-uev-with-windows-powershell-and-wmi.md)
 

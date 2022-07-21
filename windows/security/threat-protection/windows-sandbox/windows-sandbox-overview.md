@@ -2,7 +2,6 @@
 title: Windows Sandbox
 description: Windows Sandbox overview
 ms.prod: m365-security
-audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp
@@ -18,7 +17,7 @@ ms.technology: windows-sec
 
 Windows Sandbox provides a lightweight desktop environment to safely run applications in isolation. Software installed inside the Windows Sandbox environment remains "sandboxed" and runs separately from the host machine.
 
-A sandbox is temporary. When it's closed, all the software and files and the state are deleted. You get a brand-new instance of the sandbox every time you open the application.
+A sandbox is temporary. When it's closed, all the software and files and the state are deleted. You get a brand-new instance of the sandbox every time you open the application. Note, however, that as of [Windows 11 Build 22509](https://blogs.windows.com/windows-insider/2021/12/01/announcing-windows-11-insider-preview-build-22509/), your data will persist through a restart initiated from inside the virtualized environment—useful for installing applications that require the OS to reboot.
 
 Software and applications installed on the host aren't directly available in the sandbox. If you need specific applications available inside the Windows Sandbox environment, they must be explicitly installed within the environment.
 
@@ -29,6 +28,9 @@ Windows Sandbox has the following properties:
 - **Secure**: Uses hardware-based virtualization for kernel isolation. It relies on the Microsoft hypervisor to run a separate kernel that isolates Windows Sandbox from the host.
 - **Efficient:** Uses the integrated kernel scheduler, smart memory management, and virtual GPU.
 
+   > [!IMPORTANT]
+   > Windows Sandbox enables network connection by default. It can be disabled using the [Windows Sandbox configuration file](/windows/security/threat-protection/windows-sandbox/windows-sandbox-configure-using-wsb-file#networking).
+
 The following video provides an overview of Windows Sandbox.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rFAo]
@@ -37,7 +39,7 @@ The following video provides an overview of Windows Sandbox.
 ## Prerequisites
  
 - Windows 10 Pro, Enterprise or Education build 18305 or Windows 11 (*Windows Sandbox is currently not supported on Windows Home edition*)
-- AMD64 architecture
+- AMD64 or (as of [Windows 11 Build 22483](https://blogs.windows.com/windows-insider/2021/10/20/announcing-windows-11-insider-preview-build-22483/)) ARM64 architecture
 - Virtualization capabilities enabled in BIOS
 - At least 4 GB of RAM (8 GB recommended)
 - At least 1 GB of free disk space (SSD recommended)
@@ -56,7 +58,7 @@ The following video provides an overview of Windows Sandbox.
      Set-VMProcessor -VMName \<VMName> -ExposeVirtualizationExtensions $true
      ```
 
-3. Use the search bar on the task bar and type **Turn Windows Features on and off** to access the Windows Optional Features tool. Select **Windows Sandbox** and then **OK**. Restart the computer if you're prompted.
+3. Use the search bar on the task bar and type **Turn Windows Features on or off** to access the Windows Optional Features tool. Select **Windows Sandbox** and then **OK**. Restart the computer if you're prompted.
 
    If the **Windows Sandbox** option is unavailable, your computer doesn't meet the requirements to run Windows Sandbox. If you think this is incorrect, review the prerequisite list as well as steps 1 and 2.
 

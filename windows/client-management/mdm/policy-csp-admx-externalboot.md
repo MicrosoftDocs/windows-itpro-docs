@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_ExternalBoot
-description: Policy CSP - ADMX_ExternalBoot
+description: Learn about the Policy CSP - ADMX_ExternalBoot.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -51,8 +51,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -71,9 +72,9 @@ manager: dansimp
 <!--Description-->
 This policy specifies whether the PC can use the hibernation sleep state (S4) when started from a Windows To Go workspace.  
 
-- If you enable this setting, Windows, when started from a Windows To Go workspace, can hibernate the PC.  
+If you enable this setting, Windows, when started from a Windows To Go workspace, can hibernate the PC.  
 
-- If you disable or do not configure this setting, Windows, when started from a Windows To Go workspace, and cannot hibernate the PC.
+If you disable or don't configure this setting, Windows, when started from a Windows To Go workspace, and can't hibernate the PC.
 
 
 <!--/Description-->
@@ -99,8 +100,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -119,9 +121,9 @@ ADMX Info:
 <!--Description-->
 This policy specifies whether the PC can use standby sleep states (S1-S3) when starting from a Windows To Go workspace.  
 
-If you enable this setting, Windows, when started from a Windows To Go workspace, cannot use standby states to make the PC sleep.  
+If you enable this setting, Windows, when started from a Windows To Go workspace, can't use standby states to make the PC sleep.  
 
-If you disable or do not configure this setting, Windows, when started from a Windows To Go workspace, can use standby states to make the PC sleep.
+If you disable or don't configure this setting, Windows, when started from a Windows To Go workspace, can use standby states to make the PC sleep.
 
 <!--/Description-->
 
@@ -145,8 +147,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -165,11 +168,11 @@ ADMX Info:
 <!--Description-->
 This policy setting controls whether the PC will boot to Windows To Go if a USB device containing a Windows To Go workspace is connected, and controls whether users can make changes using the Windows To Go Startup Options Control Panel item.  
 
-- If you enable this setting, booting to Windows To Go when a USB device is connected will be enabled, and users will not be able to make changes using the Windows To Go Startup Options Control Panel item.  
+If you enable this setting, booting to Windows To Go when a USB device is connected will be enabled, and users won't be able to make changes using the Windows To Go Startup Options Control Panel item.  
 
-- If you disable this setting, booting to Windows To Go when a USB device is connected will not be enabled unless a user configures the option manually in the BIOS or other boot order configuration.  
+If you disable this setting, booting to Windows To Go when a USB device is connected won't be enabled unless a user configures the option manually in the BIOS or other boot order configuration.  
 
-If you do not configure this setting, users who are members of the Administrators group can make changes using the Windows To Go Startup Options Control Panel item.
+If you don't configure this setting, users who are members of the Administrators group can make changes using the Windows To Go Startup Options Control Panel item.
 
 <!--/Description-->
 
@@ -185,3 +188,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_FileSys
-description: Policy CSP - ADMX_FileSys
+description: Learn about the Policy CSP - ADMX_FileSys.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -62,8 +62,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -99,12 +100,12 @@ ADMX Info:
 <!--Policy-->
 <a href="" id="admx-filesys-disabledeletenotification"></a>**ADMX_FileSys/DisableDeleteNotification**  
 
-
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -146,8 +147,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -164,8 +166,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Encryption can add to the processing overhead of filesystem operations. Enabling this setting will prevent access to and creation of encrypted files.
+Encryption can add to the processing overhead of filesystem operations. 
 
+Enabling this setting will prevent access to and creation of encrypted files.
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -184,8 +187,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -202,7 +206,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Encrypting the page file prevents malicious users from reading data that has been paged to disk, but also adds processing overhead for filesystem operations. Enabling this setting will cause the page files to be encrypted.
+Encrypting the page file prevents malicious users from reading data that has been paged to disk, but also adds processing overhead for filesystem operations. 
+
+Enabling this setting will cause the page files to be encrypted.
 
 <!--/Description-->
 
@@ -223,8 +229,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -241,7 +248,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Enabling Win32 long paths will allow manifested win32 applications and Windows Store applications to access paths beyond the normal 260 character limit per node on file systems that support it. Enabling this setting will cause the long paths to be accessible within the process.
+Enabling Win32 long paths will allow manifested win32 applications and Windows Store applications to access paths beyond the normal 260 character limit per node on file systems that support it. 
+
+Enabling this setting will cause the long paths to be accessible within the process.
 
 <!--/Description-->
 
@@ -262,8 +271,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -282,7 +292,9 @@ ADMX Info:
 <!--Description-->
 This policy setting provides control over whether or not short names are generated during file creation. Some applications require short names for compatibility, but short names have a negative performance impact on the system.
 
-If you enable short names on all volumes then short names will always be generated. If you disable them on all volumes then they will never be generated. If you set short name creation to be configurable on a per volume basis then an on-disk flag will determine whether or not short names are created on a given volume. If you disable short name creation on all data volumes then short names will only be generated for files created on the system volume.
+If you enable short names on all volumes, then short names will always be generated. If you disable them on all volumes, then they'll never be generated. If you set short name creation to be configurable on a per volume basis, then an on-disk flag will determine whether or not short names are created on a given volume. 
+
+If you disable short name creation on all data volumes, then short names will only be generated for files created on the system volume.
 
 <!--/Description-->
 
@@ -304,8 +316,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -329,7 +342,7 @@ Symbolic links can introduce vulnerabilities in certain applications. To mitigat
 - Remote Link to Remote Target
 - Remote Link to Local Target
 
-For more information, refer to the Windows Help section.
+For more information, see the Windows Help section.
 
 > [!NOTE]
 > If this policy is disabled or not configured, local administrators may select the types of symbolic links to be evaluated.
@@ -353,8 +366,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -390,3 +404,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

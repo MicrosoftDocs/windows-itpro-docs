@@ -14,8 +14,6 @@ manager: dansimp
 
 # Policy CSP - Handwriting
 
-
-
 <hr/>
 
 <!--Policies-->
@@ -26,7 +24,6 @@ manager: dansimp
     <a href="#handwriting-paneldefaultmodedocked">Handwriting/PanelDefaultModeDocked</a>
   </dd>
 </dl>
-
 
 <hr/>
 
@@ -39,6 +36,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -58,11 +56,11 @@ manager: dansimp
 <!--Description-->
 This policy allows an enterprise to configure the default mode for the handwriting panel.
 
-The handwriting panel has 2 modes - floats near the text box, or docked to the bottom of the screen. The default configuration to is floating near text box. If you want the panel to be fixed or docked, use this policy to fix it to the bottom of the screen.
+The handwriting panel has two modes - floats near the text box, or docked to the bottom of the screen. The default configuration is the one floating near text box. If you want the panel to be fixed or docked, use this policy to fix it to the bottom of the screen.
 
-In floating mode, the content is hidden behind a flying-in panel and results in end-user dissatisfaction. The end-user will need to drag the flying-in panel to see the rest of the content. In the fixed mode, the flying-in panel is fixed to the bottom of the screen and does not require any user interaction.
+In floating mode, the content is hidden behind a flying-in panel and results in end-user dissatisfaction. The end-user will need to drag the flying-in panel, to see the rest of the content. In the fixed mode, the flying-in panel is fixed to the bottom of the screen and doesn't require any user interaction.
 
-The docked mode is especially useful in Kiosk mode where you do not expect the end-user to drag the flying-in panel out of the way.
+The docked mode is especially useful in Kiosk mode, where you don't expect the end-user to drag the flying-in panel out of the way.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -85,3 +83,7 @@ The following list shows the supported values:
 
 <!--/Policies-->
 
+
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

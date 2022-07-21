@@ -1,10 +1,7 @@
 ---
 title: What version of Windows am I running?
 description: Discover which version of Windows you are running to determine whether or not your device is enrolled in the Long-Term Servicing Channel or General Availability Channel.
-keywords: Long-Term Servicing Channel, LTSC, LTSB, General Availability Channel, GAC, Windows, version, OS Build
 ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.date: 04/30/2018
@@ -15,7 +12,7 @@ ms.topic: troubleshooting
 
 # What version of Windows am I running?
 
-To determine if your device is enrolled in the [Long-Term Servicing Channel](/windows/deployment/update/waas-overview#servicing-channels) (LTSC, formerly LTSB) or the [General Availability Channel](/windows/deployment/update/waas-overview#servicing-channels) (SAC) you'll need to know what version of Windows 10 you're running. There are a few ways to figure this out. Each method provides a different set of details, so it’s useful to learn about all of them. 
+To determine if your device is enrolled in the [Long-Term Servicing Channel](/windows/deployment/update/waas-overview#servicing-channels) (LTSC, formerly LTSB) or the [General Availability Channel](/windows/deployment/update/waas-overview#servicing-channels) (GA Channel) you'll need to know what version of Windows 10 you're running. There are a few ways to figure this out. Each method provides a different set of details, so it’s useful to learn about all of them. 
 
 ## System Properties
 Click **Start** > **Settings** > **System** > click **About** from the bottom of the left-hand menu

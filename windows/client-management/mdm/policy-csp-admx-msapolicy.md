@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_MSAPolicy
-description: Policy CSP - ADMX_MSAPolicy
+description: Learn about Policy CSP - ADMX_MSAPolicy.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -42,8 +42,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -60,13 +61,13 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether users can provide Microsoft accounts for authentication for applications or services. If this setting is enabled, all applications and services on the device are prevented from using Microsoft accounts for authentication.
+This policy setting controls whether users can provide Microsoft accounts for authentication, applications or services. If this setting is enabled, all applications and services on the device are prevented from using Microsoft accounts for authentication.
 
-This applies both to existing users of a device and new users who may be added. However, any application or service that has already authenticated a user will not be affected by enabling this setting until the authentication cache expires.
+This functionality applies both to existing users of a device and new users who may be added. However, any application or service that has already authenticated a user won't be affected by enabling this setting until the authentication cache expires.
 
-It is recommended to enable this setting before any user signs in to a device to prevent cached tokens from being present. If this setting is disabled or not configured, applications and services can use Microsoft accounts for authentication.
+It's recommended to enable this setting before any user signs in to a device to prevent cached tokens from being present. If this setting is disabled or not configured, applications and services can use Microsoft accounts for authentication.
 
-By default, this setting is Disabled. This setting does not affect whether users can sign in to devices by using Microsoft accounts, or the ability for users to provide Microsoft accounts via the browser for authentication with web-based applications.
+By default, this setting is Disabled. This setting doesn't affect whether users can sign in to devices by using Microsoft accounts, or the ability for users to provide Microsoft accounts via the browser for authentication with web-based applications.
 
 <!--/Description-->
 
@@ -82,7 +83,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-
-
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

@@ -1,16 +1,14 @@
 ---
 title: What's new in Windows 10, version 1803
 description: New and updated features in Windows 10, version 1803 (also known as the Windows 10 April 2018 Update).
-keywords: ["What's new in Windows 10", "Windows 10", "April 2018 Update"]
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.reviewer: 
-author: greg-lindsay
-manager: laurawi
-ms.author: greglin
-ms.localizationpriority: high
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
+ms.localizationpriority: medium
 ms.topic: article
+ROBOTS: NOINDEX
 ---
 
 # What's new in Windows 10, version 1803 for IT Pros
@@ -120,7 +118,7 @@ For more information, see [Windows Setup Command-Line Options](/windows-hardware
 
 SetupDiag works by searching Windows Setup log files. When searching log files, SetupDiag uses a set of rules to match known issues. In the current version of SetupDiag there are 26 rules contained in the rules.xml file, which is extracted when SetupDiag is run. The rules.xml file will be updated as new versions of SetupDiag are made available. 
 
-### Windows Update for Business (WUfB)
+### Windows Update for Business
 
 Windows Update for Business now provides greater control over updates, with the ability to pause and uninstall problematic updates using Intune.  For more information, see [Manage software updates in Intune](/intune/windows-update-for-business-configure).
 
@@ -147,7 +145,7 @@ The OS uninstall period is a length of time that users are given when they can o
 - Windows Hello is now [password-less on S-mode](https://www.windowslatest.com/2018/02/12/microsoft-make-windows-10-password-less-platform/).
 - Support for S/MIME with Windows Hello for Business and APIs for non-Microsoft identity lifecycle management solutions.
 - Windows Hello is part of the account protection pillar in Windows Defender Security Center. Account Protection will encourage password users to set up Windows Hello Face, Fingerprint or PIN for faster sign in, and will notify Dynamic lock users if Dynamic lock has stopped working because their phone or device Bluetooth is off.
-- You can set up Windows Hello from lock screen for MSA accounts. We’ve made it easier for Microsoft account users to set up Windows Hello on their devices for faster and more secure sign-in. Previously, you had to navigate deep into Settings to find Windows Hello. Now, you can set up Windows Hello Face, Fingerprint or PIN straight from your lock screen by clicking the Windows Hello tile under Sign-in options.
+- You can set up Windows Hello from lock screen for Microsoft accounts. We’ve made it easier for Microsoft account users to set up Windows Hello on their devices for faster and more secure sign-in. Previously, you had to navigate deep into Settings to find Windows Hello. Now, you can set up Windows Hello Face, Fingerprint or PIN straight from your lock screen by clicking the Windows Hello tile under Sign-in options.
 - New [public API](/uwp/api/windows.security.authentication.web.core.webauthenticationcoremanager.findallaccountsasync#Windows_Security_Authentication_Web_Core_WebAuthenticationCoreManager_FindAllAccountsAsync_Windows_Security_Credentials_WebAccountProvider_) for secondary account SSO for a particular identity provider.
 - It is easier to set up Dynamic lock, and WD SC actionable alerts have been added when Dynamic lock stops working (ex: phone Bluetooth is off).
  

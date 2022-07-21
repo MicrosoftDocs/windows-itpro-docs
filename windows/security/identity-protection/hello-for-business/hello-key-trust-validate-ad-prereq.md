@@ -1,14 +1,9 @@
 ---
 title: Key registration for on-premises deployment of Windows Hello for Business
 description: How to Validate Active Directory prerequisites for Windows Hello for Business when deploying with the key trust model.
-keywords: identity, PIN, biometric, Hello, passport
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-author: dansimp
-audience: ITPro
-ms.author: dansimp
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -19,11 +14,11 @@ ms.reviewer:
 # Validate Active Directory prerequisites - Key Trust
 
 **Applies to**
--   Windows 10, version 1703 or later
--   Windows 11
--   On-premises deployment
--   Key trust
 
+- Windows 10, version 1703 or later
+- Windows 11
+- On-premises deployment
+- Key trust
 
 Key trust deployments need an adequate number of 2016 or later domain controllers to ensure successful user authentication with Windows Hello for Business.  To learn more about domain controller planning for key trust deployments, read the [Windows Hello for Business planning guide](hello-planning-guide.md), the [Planning an adequate number of Windows Server 2016 or later Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) section.
 

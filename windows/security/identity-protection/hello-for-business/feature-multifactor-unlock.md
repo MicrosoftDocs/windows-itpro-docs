@@ -1,14 +1,9 @@
 ---
 title: Multi-factor Unlock
 description: Learn how Windows 10 and Windows 11 offer multi-factor device unlock by extending Windows Hello with trusted signals. 
-keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, cert-trust, device, registration, unlock, multi, factor, multifactor, multi-factor
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -24,7 +19,7 @@ ms.reviewer:
 - Windows 11
 
 **Requirements:**
-* Windows Hello for Business deployment (Hybrid or On-premises)
+* Windows Hello for Business deployment (Cloud, Hybrid or On-premises)
 * Azure AD, Hybrid Azure AD, or Domain Joined (Cloud, Hybrid, or On-Premises deployments)
 * Windows 10, version 1709 or newer, or Windows 11
 * Bluetooth, Bluetooth capable phone - optional

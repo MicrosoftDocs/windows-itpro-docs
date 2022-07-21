@@ -3,12 +3,11 @@ title: Windows Update for Business deployment service
 description: Overview of deployment service to control approval, scheduling, and safeguarding of Windows updates
 ms.custom: seo-marvel-apr2020
 ms.prod: w10
-ms.mktglfcycl: manage
-author: jaimeo
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: aaroncz
 ms.reviewer:
-manager: laurawi
+manager: dougeby
 ms.topic: article
 ---
 
@@ -134,14 +133,14 @@ Deployment scheduling controls are always available, but to take advantage of th
 
 To enroll devices in Windows Update for Business cloud processing, set the **AllowWUfBCloudProcessing** policy using mobile device management (MDM) policy or Group Policy.
 
-| Policy                                                                                                       | Sets registry key under **HKLM\\Software**                                |
-|--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| GPO for Windows 10, version 1809 or later: Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Allow WUfB Cloud Processing** | \\Policies\\Microsoft\\Windows\\DataCollection\\AllowWUfBCloudProcessing |
-| MDM for Windows 10, version 1809 or later: ../Vendor/MSFT/ Policy/Config/System/**AllowWUfBCloudProcessing** | \\Microsoft\\PolicyManager\\default\\System\\AllowWUfBCloudProcessing |
+| Policy| Sets registry key under `HKLM\Software`|
+|--|--|
+| GPO for Windows 10, version 1809 or later: Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Allow WUfB Cloud Processing** | `\Policies\Microsoft\Windows\DataCollection\AllowWUfBCloudProcessing` |
+| MDM for Windows 10, version 1809 or later: ../Vendor/MSFT/ Policy/Config/System/**AllowWUfBCloudProcessing** | `\Microsoft\PolicyManager\current\device\System\AllowWUfBCloudProcessing` |
 
 Following is an example of setting the policy using Microsoft Endpoint Manager:
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/).
 
 2. Select **Devices** > **Configuration profiles** > **Create profile**.
 
@@ -162,7 +161,7 @@ Following is an example of setting the policy using Microsoft Endpoint Manager:
 
 8. (Optional) To verify that the policy reached the client, check the value of the following registry entry: 
 
-   **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PolicyManager \\default\\System\\AllowWUfBCloudProcessing**
+   `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\System\AllowWUfBCloudProcessing`
 
 ## Best practices
 Follow these suggestions for the best results with the service.

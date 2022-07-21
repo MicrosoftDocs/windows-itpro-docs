@@ -2,10 +2,6 @@
 title: Security identifiers (Windows 10)
 description: Security identifiers
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp
@@ -21,7 +17,9 @@ ms.date: 04/19/2017
 
 **Applies to**
 -   Windows 10
+-   Windows 11
 -   Windows Server 2016
+-   Windows Server 2019
 
 This topic for the IT professional describes security identifiers and how they work in regards to accounts and groups in the Windows operating system.
 
@@ -208,7 +206,7 @@ The SECURITY\_NT\_AUTHORITY (S-1-5) predefined identifier authority produces SID
 | S-1-5-13 | Terminal Server User| A group that includes all users who sign in to a server with Remote Desktop Services enabled.|
 | S-1-5-14 | Remote Interactive Logon| A group that includes all users who log on to the computer by using a remote desktop connection. This group is a subset of the Interactive group. Access tokens that contain the Remote Interactive Logon SID also contain the Interactive SID.|
 | S-1-5-15| This Organization| A group that includes all users from the same organization. Only included with Active Directory accounts and only added by a domain controller.|
-| S-1-5-17 | IIS_USRS| An account that is used by the default Internet Information Services (IIS) user.|
+| S-1-5-17 | IUSR| An account that is used by the default Internet Information Services (IIS) user.|
 | S-1-5-18 | System (or LocalSystem)| An identity that is used locally by the operating system and by services that are configured to sign in as LocalSystem.<br/>System is a hidden member of Administrators. That is, any process running as System has the SID for the built-in Administrators group in its access token.<br/>When a process that is running locally as System accesses network resources, it does so by using the computer's domain identity. Its access token on the remote computer includes the SID for the local computer's domain account plus SIDs for security groups that the computer is a member of, such as Domain Computers and Authenticated Users.|
 | S-1-5-19 | NT Authority (LocalService)| An identity that is used by services that are local to the computer, have no need for extensive local access, and do not need authenticated network access. Services that run as LocalService access local resources as ordinary users, and they access network resources as anonymous users. As a result, a service that runs as LocalService has significantly less authority than a service that runs as LocalSystem locally and on the network.|
 | S-1-5-20 | Network Service| An identity that is used by services that have no need for extensive local access but do need authenticated network access. Services running as NetworkService access local resources as ordinary users and access network resources by using the computer's identity. As a result, a service that runs as NetworkService has the same network access as a service that runs as LocalSystem, but it has significantly reduced local access.|
@@ -243,6 +241,7 @@ The SECURITY\_NT\_AUTHORITY (S-1-5) predefined identifier authority produces SID
 |S-1-5-32-560|Builtin\Windows Authorization Access Group|An alias. Members of this group have access to the computed tokenGroupsGlobalAndUniversal attribute on User objects.|
 |S-1-5-32-561|Builtin\Terminal Server License Servers|An alias. A group for Terminal Server License Servers. When Windows Server 2003 Service Pack 1 is installed, a new local group is created.|
 |S-1-5-32-562|Builtin\Distributed COM Users|An alias. A group for COM to provide computer-wide access controls that govern access to all call, activation, or launch requests on the computer.|
+|S-1-5-32-568|Builtin\IIS_IUSRS|An alias. A built-in group account for IIS users.|
 |S-1-5-32-569|Builtin\Cryptographic Operators|A built-in local group. Members are authorized to perform cryptographic operations.|
 |S-1-5-32-573|Builtin\Event Log Readers|A built-in local group. Members of this group can read event logs from local computer.|
 |S-1-5-32-574|Builtin\Certificate Service DCOM Access|A built-in local group. Members of this group are allowed to connect to Certification Authorities in the enterprise.|
@@ -302,6 +301,19 @@ Capability Security Identifiers (SIDs) are used to uniquely and immutably identi
 All Capability SIDs that the operating system is aware of are stored in the Windows Registry in the path `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities'. Any Capability SID added to Windows by first or third-party applications will be added to this location.
 
 ## Examples of registry keys taken from Windows 10, version 1909, 64-bit Enterprise edition
+
+You may see the following registry keys under AllCachedCapabilities:
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities\capabilityClass_DevUnlock
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities\capabilityClass_DevUnlock_Internal
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities\capabilityClass_Enterprise
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities\capabilityClass_General
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities\capabilityClass_Restricted
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities\capabilityClass_Windows
+
+All Capability SIDs are prefixed by S-1-15-3
+
+## Examples of registry keys taken from Windows 11, version 21H2, 64-bit Enterprise edition
 
 You may see the following registry keys under AllCachedCapabilities:
 

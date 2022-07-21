@@ -1,17 +1,11 @@
 ---
 title: Windows 10 deployment scenarios (Windows 10)
 description: Understand the different ways Windows 10 operating system can be deployed in your organization. Explore several Windows 10 deployment scenarios.
-ms.assetid: 7A29D546-52CC-482C-8870-8123C7DC04B5
 manager: dougeby
-ms.audience: itpro
-ms.author: greglin
-author: greg-lindsay
-keywords: upgrade, in-place, configuration, deploy
+ms.author: aaroncz
+author: aczechowski
 ms.prod: w10
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.sitesec: library
-audience: itpro
 ms.topic: article
 ms.collection: highpri
 ---
@@ -49,7 +43,7 @@ The following tables summarize various Windows 10 deployment scenarios. The scen
 |Scenario|Description|More information|
 |--- |--- |--- |
 |[Subscription Activation](#windows-10-subscription-activation)|Switch from Windows 10 Pro to Enterprise when a subscribed user signs in.|[Windows 10 Subscription Activation](/windows/deployment/windows-10-enterprise-subscription-activation)|
-|[AAD / MDM](#dynamic-provisioning)|The device is automatically joined to AAD and configured by MDM.|[Azure Active Directory integration with MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm)|
+|[AAD / MDM](#dynamic-provisioning)|The device is automatically joined to Azure Active Directory and configured by MDM.|[Azure Active Directory integration with MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm)|
 |[Provisioning packages](#dynamic-provisioning)|Using the Windows Imaging and Configuration Designer tool, create provisioning packages that can be applied to devices.|[Configure devices without MDM](/windows/configuration/configure-devices-without-mdm)|
 
 ### Traditional
@@ -191,7 +185,7 @@ The deployment process for the replace scenario is as follows:
 
 - [Upgrade to Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md)
 - [Upgrade to Windows 10 with Microsoft Endpoint Configuration Manager](./deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager.md)
-- [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=620230)
+- [Deploy Windows 10 using PXE and Configuration Manager](deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager.md)
 - [Deploy Windows 10 with the Microsoft Deployment Toolkit](./deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md)
 - [Windows setup technical reference](/windows-hardware/manufacture/desktop/windows-setup-technical-reference)
 - [Windows Imaging and Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd)

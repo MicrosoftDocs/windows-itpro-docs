@@ -1,15 +1,12 @@
 ---
 title: Working with Custom UE-V Templates and the UE-V Template Generator
 description: Create your own custom settings location templates by working with Custom User Experience Virtualization (UE-V) Templates and the UE-V Template Generator.
-author: greg-lindsay
-ms.pagetype: mdop, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
+author: aczechowski
 ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
 

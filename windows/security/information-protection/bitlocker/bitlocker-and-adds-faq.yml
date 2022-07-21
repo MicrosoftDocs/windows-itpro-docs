@@ -16,10 +16,9 @@ metadata:
   ms.collection:
     - M365-security-compliance
     - highpri
-  ms.topic: conceptual
+  ms.topic: faq
   ms.date: 02/28/2019
   ms.custom: bitlocker
-    
 title: BitLocker and Active Directory Domain Services (AD DS) FAQ
 summary: |
   **Applies to**

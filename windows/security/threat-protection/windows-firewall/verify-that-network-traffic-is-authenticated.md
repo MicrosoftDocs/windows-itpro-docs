@@ -1,17 +1,12 @@
 ---
 title: Verify That Network Traffic Is Authenticated (Windows)
 description: Learn how to confirm that network traffic is being protected by IPsec authentication after you configure your domain isolation rule to require authentication.
-ms.assetid: cc1fb973-aedf-4074-ad4a-7376b24f03d2
 ms.reviewer: 
 ms.author: dansimp
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021
@@ -35,7 +30,8 @@ In these procedures, you confirm that the rules you deployed are working correct
 
 -   **Encryption zone.** Similar to the main isolation zone, after you confirm that the network traffic to zone members is properly authenticated and encrypted, you must convert your zone rules from request mode to require mode.
 
->**Note:**  In addition to the steps shown in this procedure, you can also use network traffic capture tools such as Microsoft Network Monitor, which can be downloaded from <https://go.microsoft.com/fwlink/?linkid=94770>. Network Monitor and similar tools allow you to capture, parse, and display the network packets received by the network adapter on your device. Current versions of these tools include full support for IPsec. They can identify encrypted network packets, but they cannot decrypt them.
+> [!NOTE]
+> In addition to the steps shown in this procedure, you can also use network traffic capture tools such as [Microsoft Network Monitor](https://www.microsoft.com/download/4865). Network Monitor and similar tools allow you to capture, parse, and display the network packets received by the network adapter on your device. Current versions of these tools include full support for IPsec. They can identify encrypted network packets, but they cannot decrypt them.
 
 **Administrative credentials**
 

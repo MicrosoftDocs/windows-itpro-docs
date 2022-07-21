@@ -2,13 +2,9 @@
 title: Create a Windows Information Protection (WIP) policy with MDM using the Azure portal for Microsoft Intune (Windows 10)
 description: Learn how to use the Azure portal for Microsoft Intune to create and deploy your Windows Information Protection (WIP) policy to protect data on your network.
 ms.prod: m365-security
-ms.mktglfcycl: explore
-ms.sitesec: library
-ms.pagetype: security
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/13/2019
@@ -569,7 +565,7 @@ After you've decided where your protected apps can access enterprise data on you
         
 - **Off, or not configured (recommended).** Stops the Windows Information Protection icon overlay from appearing on corporate files or unenlightened, but protected apps. Not configured is the default option. 
         
-**Use Azure RMS for WIP.** Determines whether WIP uses [Microsoft Azure Rights Management](https://products.office.com/business/microsoft-azure-rights-management) to apply EFS encryption to files that are copied from Windows 10 to USB or other removable drives so they can be securely shared with employees. In other words, WIP uses Azure Rights Management "machinery" to apply EFS encryption to files when they're copied to removable drives. You must already have Azure Rights Management set up. The EFS file encryption key is protected by the RMS template’s license. Only users with permission to that template can read it from the removable drive. WIP can also integrate with Azure RMS by using the **AllowAzureRMSForEDP** and the **RMSTemplateIDForEDP** MDM settings in the [EnterpriseDataProtection CSP](/windows/client-management/mdm/enterprisedataprotection-csp). 
+**Use Azure RMS for WIP.** Determines whether WIP uses [Microsoft Azure Rights Management](/azure/information-protection/what-is-azure-rms) to apply EFS encryption to files that are copied from Windows 10 to USB or other removable drives so they can be securely shared with employees. In other words, WIP uses Azure Rights Management "machinery" to apply EFS encryption to files when they're copied to removable drives. You must already have Azure Rights Management set up. The EFS file encryption key is protected by the RMS template’s license. Only users with permission to that template can read it from the removable drive. WIP can also integrate with Azure RMS by using the **AllowAzureRMSForEDP** and the **RMSTemplateIDForEDP** MDM settings in the [EnterpriseDataProtection CSP](/windows/client-management/mdm/enterprisedataprotection-csp). 
     
 - **On.** Protects files that are copied to a removable drive. You can enter a TemplateID GUID to specify who can access the Azure Rights Management protected files, and for how long. The RMS template is only applied to the files on removable media, and is only used for access control—it doesn’t actually apply Azure Information Protection to the files. 
         

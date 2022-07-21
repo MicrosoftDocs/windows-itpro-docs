@@ -1,7 +1,6 @@
 ---
 title: SharedPC CSP
 description: Learn how the SharedPC configuration service provider is used to configure settings for Shared PC usage.
-ms.assetid: 31273166-1A1E-4F96-B176-CB42ECB80957
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -14,10 +13,20 @@ ms.date: 01/16/2019
 
 # SharedPC CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 The SharedPC configuration service provider is used to configure settings for Shared PC usage.
 
-The following shows the SharedPC configuration service provider management objects in tree format as used by Open Mobile Alliance Device Management (OMA DM), OMA Client Provisioning, and Enterprise DM.
+The following example shows the SharedPC configuration service provider management objects in tree format as used by Open Mobile Alliance Device Management (OMA DM), OMA Client Provisioning, and Enterprise DM.
 ```
 ./Vendor/MSFT
 SharedPC
@@ -57,7 +66,9 @@ A boolean value that specifies whether the policies for education environment ar
 
 The supported operations are Add, Get, Replace, and Delete.
 
-The default value changed to false in Windows 10, version 1703. The default value is Not Configured and this node needs to be configured independent of EnableSharedPCMode. In Windows 10, version 1607, the value is set to True and the education environment is automatically configured when SharedPC mode is configured.
+The default value changed to false in Windows 10, version 1703. The default value is Not Configured and this node needs to be configured independent of EnableSharedPCMode. 
+
+In Windows 10, version 1607, the value is set to True and the education environment is automatically configured when SharedPC mode is configured.
 
 <a href="" id="setpowerpolicies"></a>**SetPowerPolicies**  
 Optional. A boolean value that specifies that the power policies should be set when configuring SharedPC mode.
@@ -133,16 +144,16 @@ Configures when accounts are deleted.
 
 The supported operations are Add, Get, Replace, and Delete.
 
-For Windows 10, version 1607, here is the list shows the supported values:
+For Windows 10, version 1607, here's the list shows the supported values:
 
 -   0 - Delete immediately.
 -   1 (default) - Delete at disk space threshold.
 
-For Windows 10, version 1703, here is the list of supported values:  
+For Windows 10, version 1703, here's the list of supported values:  
 
-- 0 - Delete immediately
-- 1 - Delete at disk space threshold
-- 2 - Delete at disk space threshold and inactive threshold
+- 0 - Delete immediately.
+- 1 - Delete at disk space threshold.
+- 2 - Delete at disk space threshold and inactive threshold.
 
 The default value is Not Configured. Its value in the SharedPC provisioning package is 1 or 2.
 
@@ -154,7 +165,7 @@ Sets the percentage of disk space remaining on a PC before cached accounts will 
 
 The default value is Not Configured. Its default value in the SharedPC provisioning package is 25.
 
-For example, if the **DiskLevelCaching** number is set to 50 and the **DiskLevelDeletion** number is set to 25 (both default values). Accounts will be cached while the free disk space is above 25%. When the free disk space is less than 25% (the deletion number) during a daily maintenance period, accounts will be deleted (oldest last used first) when the system is idle until the free disk space is above 50% (the caching number). Accounts will be deleted immediately at sign off of an account if free space is under half of the deletion threshold and disk space is very low, regardless of whether the PC is actively in use or not.
+For example, if the **DiskLevelCaching** number is set to 50 and the **DiskLevelDeletion** number is set to 25 (both default values). Accounts will be cached while the free disk space is above 25%. When the free disk space is less than 25% (the deletion number) during a daily maintenance period, accounts will be deleted (oldest last used first) when the system is idle until the free disk space is above 50% (the caching number). Accounts will be deleted immediately on signing out from an account if free space is under half of the deletion threshold and disk space is low, regardless of whether the PC is actively in use or not.
 
 The supported operations are Add, Get, Replace, and Delete.
 
@@ -166,7 +177,7 @@ Sets the percentage of available disk space a PC should have before it stops del
 
 The default value is Not Configured. The default value in the SharedPC provisioning package is 25.
 
-For example, if the **DiskLevelCaching** number is set to 50 and the **DiskLevelDeletion** number is set to 25 (both default values). Accounts will be cached while the free disk space is above 25%. When the free disk space is less than 25% (the deletion number) during a maintenance period, accounts will be deleted (oldest last used first) until the free disk space is above 50% (the caching number). Accounts will be deleted immediately at sign off of an account if free space is under the deletion threshold and disk space is very low, regardless whether the PC is actively in use or not.
+For example, if the **DiskLevelCaching** number is set to 50 and the **DiskLevelDeletion** number is set to 25 (both default values). Accounts will be cached while the free disk space is above 25%. When the free disk space is less than 25% (the deletion number) during a maintenance period, accounts will be deleted (oldest last used first) until the free disk space is above 50% (the caching number). Accounts will be deleted immediately on signing out from an account if free space is under the deletion threshold and disk space is low, regardless whether the PC is actively in use or not.
 
 The supported operations are Add, Get, Replace, and Delete.
 
@@ -181,13 +192,14 @@ The default value is Not Configured and behavior is no such restriction applied.
 <a href="" id="kioskmodeaumid"></a>**KioskModeAUMID**  
 Added in Windows 10, version 1703. Specifies the AUMID of the app to use with assigned access. This node is optional. 
 
-Value type is string. Supported operations are Add, Get, Replace, and Delete.  
+- Value type is string. 
+- Supported operations are Add, Get, Replace, and Delete.  
 
 > [!NOTE]
 > If used, this value must set before the action on the **EnableSharedPCMode** node is taken.
 
 <a href="" id="kioskmodeusertiledisplaytext"></a>**KioskModeUserTileDisplayText**  
-Added in Windows 10, version 1703. Specifies the display text for the account shown on the sign-in screen which launches the app specified by KioskModeAUMID. This node is optional. 
+Added in Windows 10, version 1703. Specifies the display text for the account shown on the sign-in screen that launches the app specified by KioskModeAUMID. This node is optional. 
 
 Value type is string. Supported operations are Add, Get, Replace, and Delete. 
 
@@ -195,33 +207,26 @@ Value type is string. Supported operations are Add, Get, Replace, and Delete.
 > If used, this value must set before the action on the **EnableSharedPCMode** node is taken.
 
 <a href="" id="inactivethreshold"></a>**InactiveThreshold**  
-Added in Windows 10, version 1703. Accounts will start being deleted when they have not been logged on during the specified period, given as number of days.
+Added in Windows 10, version 1703. Accounts will start being deleted when they haven't been logged on during the specified period, given as number of days.
 
-The default value is Not Configured. Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+- The default value is Not Configured. 
+- Value type is integer. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 The default in the SharedPC provisioning package is 30.
 
 <a href="" id="maxpagefilesizemb"></a>**MaxPageFileSizeMB**  
-Added in Windows 10, version 1703. Maximum size of the paging file in MB. Applies only to systems with less than 32 GB storage and at least 3 GB of RAM. This node is optional. 
+Added in Windows 10, version 1703. Maximum size of the paging file in MB. Applies only to systems with less than 32-GB storage and at least 3 GB of RAM. This node is optional. 
 
 > [!NOTE]
 > If used, this value must set before the action on the **EnableSharedPCMode** node is taken.
 
-Default value is Not Configured. Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+- Default value is Not Configured. 
+- Value type is integer. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 The default in the SharedPC provisioning package is 1024.
 
 ## Related topics
 
-
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-
- 
-
-
-
-
-
-

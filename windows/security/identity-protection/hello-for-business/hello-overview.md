@@ -2,14 +2,9 @@
 title: Windows Hello for Business Overview (Windows)
 ms.reviewer: An overview of Windows Hello for Business
 description: Learn how Windows Hello for Business replaces passwords with strong two-factor authentication on PCs and mobile devices in Windows 10 and Windows 11.
-keywords: identity, PIN, biometric, Hello, passport
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection:
   - M365-identity-device-management
@@ -35,7 +30,7 @@ Windows Hello addresses the following problems with passwords:
 - Strong passwords can be difficult to remember, and users often reuse passwords on multiple sites.
 - Server breaches can expose symmetric network credentials (passwords).
 - Passwords are subject to [replay attacks](/previous-versions/dotnet/netframework-4.0/aa738652(v=vs.100)).
-- Users can inadvertently expose their passwords due to [phishing attacks](https://go.microsoft.com/fwlink/p/?LinkId=615674).
+- Users can inadvertently expose their passwords due to phishing attacks.
 
 Windows Hello lets users authenticate to:
 
@@ -119,7 +114,6 @@ Windows Hello for Business with a key, including cloud trust, does not support s
 [Windows 10: Disrupting the Revolution of Cyber-Threats with Revolutionary Security!](https://go.microsoft.com/fwlink/p/?LinkId=533890)
 
 [Windows 10: The End Game for Passwords and Credential Theft?](https://go.microsoft.com/fwlink/p/?LinkId=533891)
-
 
 ## Related topics
 

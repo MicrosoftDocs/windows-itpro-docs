@@ -7,14 +7,12 @@ ms.prod: w10
 ms.technology: windows
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 09/27/2019
+ms.date: 03/03/2022
 ms.reviewer: 
 manager: dansimp
 ---
 
 # Policy CSP - TextInput
-
-
 
 <hr/>
 
@@ -137,11 +135,13 @@ Placeholder only. Do not use in production environment.
 <a href="" id="textinput-allowimelogging"></a>**TextInput/AllowIMELogging**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -162,8 +162,7 @@ Placeholder only. Do not use in production environment.
 > [!NOTE]
 > The policy is only enforced in Windows 10 for desktop.
 
-
-Allows the user to turn on and off the logging for incorrect conversion and saving auto-tuning result to a file and history-based predictive input.
+Allows the user to turn on and off the logging for incorrect conversion, and saving auto-tuning result to a file and history-based predictive input.
 
 Most restricted value is 0.
 
@@ -171,8 +170,8 @@ Most restricted value is 0.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+- 0 – Not allowed.
+- 1 (default) – Allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -183,11 +182,13 @@ The following list shows the supported values:
 <a href="" id="textinput-allowimenetworkaccess"></a>**TextInput/AllowIMENetworkAccess**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -227,11 +228,13 @@ The following list shows the supported values:
 <a href="" id="textinput-allowinputpanel"></a>**TextInput/AllowInputPanel**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -251,7 +254,6 @@ The following list shows the supported values:
 <!--Description-->
 > [!NOTE]
 > The policy is only enforced in Windows 10 for desktop.
-
 
 Allows the IT admin to disable the touch/handwriting keyboard on Windows.
 
@@ -273,11 +275,13 @@ The following list shows the supported values:
 <a href="" id="textinput-allowjapaneseimesurrogatepaircharacters"></a>**TextInput/AllowJapaneseIMESurrogatePairCharacters**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -298,9 +302,7 @@ The following list shows the supported values:
 > [!NOTE]
 > The policy is only enforced in Windows 10 for desktop.
 
-
 Allows the Japanese IME surrogate pair characters.
-
 
 Most restricted value is 0.
 
@@ -320,11 +322,13 @@ The following list shows the supported values:
 <a href="" id="textinput-allowjapaneseivscharacters"></a>**TextInput/AllowJapaneseIVSCharacters**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -344,7 +348,6 @@ The following list shows the supported values:
 <!--Description-->
 > [!NOTE]
 > The policy is only enforced in Windows 10 for desktop.
-
 
 Allows Japanese Ideographic Variation Sequence (IVS) characters.
 
@@ -366,11 +369,13 @@ The following list shows the supported values:
 <a href="" id="textinput-allowjapanesenonpublishingstandardglyph"></a>**TextInput/AllowJapaneseNonPublishingStandardGlyph**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -390,7 +395,6 @@ The following list shows the supported values:
 <!--Description-->
 > [!NOTE]
 > The policy is only enforced in Windows 10 for desktop.
-
 
 Allows the Japanese non-publishing standard glyph.
 
@@ -412,11 +416,13 @@ The following list shows the supported values:
 <a href="" id="textinput-allowjapaneseuserdictionary"></a>**TextInput/AllowJapaneseUserDictionary**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -436,7 +442,6 @@ The following list shows the supported values:
 <!--Description-->
 > [!NOTE]
 > The policy is only enforced in Windows 10 for desktop.
-
 
 Allows the Japanese user dictionary.
 
@@ -458,11 +463,13 @@ The following list shows the supported values:
 <a href="" id="textinput-allowkeyboardtextsuggestions"></a>**TextInput/AllowKeyboardTextSuggestions**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -524,11 +531,13 @@ This policy has been deprecated.
 <a href="" id="textinput-allowlanguagefeaturesuninstall"></a>**TextInput/AllowLanguageFeaturesUninstall**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -549,8 +558,7 @@ This policy has been deprecated.
 > [!NOTE]
 > The policy is only enforced in Windows 10 for desktop.
 
-
-Allows the uninstall of language features, such as spell checkers, on a device.
+Allows the uninstall of language features, such as spell checkers on a device.
 
 Most restricted value is 0.
 
@@ -578,11 +586,13 @@ The following list shows the supported values:
 <a href="" id="textinput-allowlinguisticdatacollection"></a>**TextInput/AllowLinguisticDataCollection**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -623,11 +633,13 @@ This setting supports a range of values between 0 and 1.
 <a href="" id="textinput-allowtextinputsuggestionupdate"></a>**TextInput/AllowTextInputSuggestionUpdate**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -668,11 +680,13 @@ The following list shows the supported values:
 <a href="" id="textinput-configurejapaneseimeversion"></a>**TextInput/ConfigureJapaneseIMEVersion**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -713,11 +727,13 @@ The following list shows the supported values:
 <a href="" id="textinput-configuresimplifiedchineseimeversion"></a>**TextInput/ConfigureSimplifiedChineseIMEVersion**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -758,11 +774,13 @@ The following list shows the supported values:
 <a href="" id="textinput-configuretraditionalchineseimeversion"></a>**TextInput/ConfigureTraditionalChineseIMEVersion**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -783,6 +801,7 @@ The following list shows the supported values:
 > [!NOTE]
 > - This policy is enforced only in Windows 10 for desktop.  
 > - This policy requires reboot to take effect.
+
 Allows IT admins to configure Microsoft Traditional Chinese IME version in the desktop.
 
 <!--/Description-->
@@ -802,11 +821,13 @@ The following list shows the supported values:
 <a href="" id="textinput-enabletouchkeyboardautoinvokeindesktopmode"></a>**TextInput/EnableTouchKeyboardAutoInvokeInDesktopMode**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -848,11 +869,13 @@ The following list shows the supported values:
 <a href="" id="textinput-excludejapaneseimeexceptjis0208"></a>**TextInput/ExcludeJapaneseIMEExceptJIS0208**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -872,7 +895,6 @@ The following list shows the supported values:
 <!--Description-->
 > [!NOTE]
 > The policy is only enforced in Windows 10 for desktop.
-
 
 Allows the users to restrict character code range of conversion by setting the character filter.
 
@@ -892,11 +914,13 @@ The following list shows the supported values:
 <a href="" id="textinput-excludejapaneseimeexceptjis0208andeudc"></a>**TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -916,7 +940,6 @@ The following list shows the supported values:
 <!--Description-->
 > [!NOTE]
 > The policy is only enforced in Windows 10 for desktop.
-
 
 Allows the users to restrict character code range of conversion by setting the character filter.
 
@@ -936,11 +959,13 @@ The following list shows the supported values:
 <a href="" id="textinput-excludejapaneseimeexceptshiftjis"></a>**TextInput/ExcludeJapaneseIMEExceptShiftJIS**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -961,7 +986,6 @@ The following list shows the supported values:
 > [!NOTE]
 > The policy is only enforced in Windows 10 for desktop.
 
-
 Allows the users to restrict character code range of conversion by setting the character filter.
 
 <!--/Description-->
@@ -980,11 +1004,13 @@ The following list shows the supported values:
 <a href="" id="textinput-forcetouchkeyboarddockedstate"></a>**TextInput/ForceTouchKeyboardDockedState**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1021,11 +1047,13 @@ The following list shows the supported values:
 <a href="" id="textinput-touchkeyboarddictationbuttonavailability"></a>**TextInput/TouchKeyboardDictationButtonAvailability**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1062,11 +1090,13 @@ The following list shows the supported values:
 <a href="" id="textinput-touchkeyboardemojibuttonavailability"></a>**TextInput/TouchKeyboardEmojiButtonAvailability**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1084,15 +1114,15 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Specifies whether the emoji button is enabled or disabled for the touch keyboard. When this policy is set to disabled, the emoji button on touch keyboard is disabled.
+Specifies whether the emoji, GIF (only in Windows 11), and kaomoji (only in Windows 11) buttons are available or unavailable for the touch keyboard. When this policy is set to disabled, the buttons are hidden and unavailable.
 
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) - The OS determines when it's most appropriate to be available.
--   1 - Emoji button on keyboard is always available.
--   2 - Emoji button on keyboard is always disabled.
+- 0 (default) - The OS determines when buttons are most appropriate to be available.
+- 1 - Emoji, GIF, and Kaomoji buttons on the touch keyboard are always available.
+- 2 - Emoji, GIF, and Kaomoji buttons on the touch keyboard are always unavailable.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1103,11 +1133,13 @@ The following list shows the supported values:
 <a href="" id="textinput-touchkeyboardfullmodeavailability"></a>**TextInput/TouchKeyboardFullModeAvailability**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1131,7 +1163,7 @@ Specifies whether the full keyboard mode is enabled or disabled for the touch ke
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) - The OS determines when it's most appropriate to be available.
+-   0 (default) - The OS determines, when it's most appropriate to be available.
 -   1 - Full keyboard is always available.
 -   2 - Full keyboard is always disabled.
 
@@ -1144,11 +1176,13 @@ The following list shows the supported values:
 <a href="" id="textinput-touchkeyboardhandwritingmodeavailability"></a>**TextInput/TouchKeyboardHandwritingModeAvailability**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1172,7 +1206,7 @@ Specifies whether the handwriting input panel is enabled or disabled. When this 
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) - The OS determines when it's most appropriate to be available.
+-   0 (default) - The OS determines, when it's most appropriate to be available.
 -   1 - Handwriting input panel is always available.
 -   2 - Handwriting input panel is always disabled.
 
@@ -1185,11 +1219,13 @@ The following list shows the supported values:
 <a href="" id="textinput-touchkeyboardnarrowmodeavailability"></a>**TextInput/TouchKeyboardNarrowModeAvailability**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1213,7 +1249,7 @@ Specifies whether the narrow keyboard mode is enabled or disabled for the touch 
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) - The OS determines when it's most appropriate to be available.
+-   0 (default) - The OS determines, when it's most appropriate to be available.
 -   1 - Narrow keyboard is always available.
 -   2 - Narrow keyboard is always disabled.
 
@@ -1226,11 +1262,13 @@ The following list shows the supported values:
 <a href="" id="textinput-touchkeyboardsplitmodeavailability"></a>**TextInput/TouchKeyboardSplitModeAvailability**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1254,7 +1292,7 @@ Specifies whether the split keyboard mode is enabled or disabled for the touch k
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) - The OS determines when it's most appropriate to be available.
+-   0 (default) - The OS determines, when it's most appropriate to be available.
 -   1 - Split keyboard is always available.
 -   2 - Split keyboard is always disabled.
 
@@ -1267,11 +1305,13 @@ The following list shows the supported values:
 <a href="" id="textinput-touchkeyboardwidemodeavailability"></a>**TextInput/TouchKeyboardWideModeAvailability**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1295,7 +1335,7 @@ Specifies whether the wide keyboard mode is enabled or disabled for the touch ke
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) - The OS determines when it's most appropriate to be available.
+-   0 (default) - The OS determines, when it's most appropriate to be available.
 -   1 - Wide keyboard is always available.
 -   2 - Wide keyboard is always disabled.
 
@@ -1305,3 +1345,6 @@ The following list shows the supported values:
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

@@ -1,17 +1,12 @@
 ---
 title: Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager
 description: In this topic, you will learn how to replacing a Windows 7 SP1 computer using Microsoft Endpoint Configuration Manager.
-ms.assetid: 3c8a2d53-8f08-475f-923a-bca79ca8ac36
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
-keywords: upgrade, install, installation, replace computer, setup
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.sitesec: library
-audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
