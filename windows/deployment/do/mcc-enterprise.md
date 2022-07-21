@@ -164,7 +164,7 @@ Once you take the survey above and the MCC team adds your subscription ID to the
 
 ### Create an MCC node in Azure
 
-Creating a MCC node is a multi-step process and the first step is to access the MCC private preview management portal.
+Creating an MCC node is a multi-step process and the first step is to access the MCC private preview management portal.
 
 1.  After the successful resource creation click on the **Go to resource**.
 2.  Under **Cache Node Management** section on the leftmost panel, click on **Cache Nodes**.
