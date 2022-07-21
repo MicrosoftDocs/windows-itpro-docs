@@ -53,12 +53,12 @@ Determine whether to revoke a user's local encryption keys from a device when it
 
 ## Use Configuration Manager to disable WIP
 
-To remove Windows Information Protection (WIP) using Configuration Manager
+To disable Windows Information Protection (WIP) using Configuration Manager, create a new configuration item that turns off WIP. Configure that new object for your environment to match the existing policy, except for disabling WIP. Then deploy the new policy, and move devices into the new collection.
 
->[!WARNING]
->Don't just delete your existing WIP policy. For Configuration Manager there's only one option to create a new policy that turns WIP mode off. Otherwise the devices will remove the Configuration Manager policy but not change the WIP mode.
+> [!WARNING]
+> Don't just delete your existing WIP policy. If you delete the old policy, Configuration Manager stops sending further WIP policy updates, but also leaves WIP enforced on the devices. To remove WIP from your managed devices, follow the steps in this section to create a new policy to turn off WIP.
 
-### Add a WIP policy
+### Create a WIP policy
 
 To disable WIP for your organization, first create a configuration item.
 
@@ -77,42 +77,42 @@ To disable WIP for your organization, first create a configuration item.
 
 6. On the **Device Settings** screen, select **Windows Information Protection**, and then select **Next**.
 
-The **Configure Windows Information Protection settings** page appears, where you'll configure your policy for your organization.
+The **Configure Windows Information Protection settings** page appears, where you'll configure your policy for your organization. The following sections provide details on the required settings on this page.
 
-### Manage the WIP-protection level for your enterprise data
+> [!TIP]
+> For more information on filling out the required fields, see [Create and deploy a Windows Information Protection (WIP) policy using Microsoft Endpoint Configuration Manager](/windows/security/information-protection/windows-information-protection/create-wip-policy-using-configmgr).
 
-Set the Windows Information Protection mode to Off.
+#### Turn off WIP
+
+Of the four options to specify the restriction mode, select **Off** to turn off Windows Information Protection.
 
 :::image type="content" alt-text="Create Configuration Item wizard, choose your WIP-protection level." source="images/wip-configmgr-disable-wip.png":::
 
-### Define your enterprise-managed identity domains
+#### Specify the corporate identity
 
- > [!TIP]
-   > For more information on filling out the required fields, see [Create and deploy a Windows Information Protection (WIP) policy using Microsoft Endpoint Configuration Manager](/windows/security/information-protection/windows-information-protection/create-wip-policy-using-configmgr).
-
-#### Add your corporate identity
-
-Type the name of your corporate identity into the **Corporate identity** field. For example, `contoso.com` or `contoso.com|newcontoso.com`.
+Paste the value of your corporate identity into the **Corporate identity** field. For example, `contoso.com` or `contoso.com|newcontoso.com`.
 
 ![Create Configuration Item wizard, Add the primary Internet domain for your enterprise identity.](images/wip-configmgr-corp-identity.png)
 
 > [!IMPORTANT]
-> Corporate identity must match the string in the original policy.
+> This corporate identity value must match the string in the original policy. Copy and paste the string from your original policy that enables WIP.
 
-### Choose where apps can access enterprise data
+#### Specify the corporate network definition
 
-After you've added a protection mode to your apps, you'll need to decide where those apps can access enterprise data on your network.
+For the **Corporate network definition**, select **Add** to specify the necessary network locations. The **Add or edit corporate network definition** box appears. Add the required fields.
 
-Add other network locations your apps can access by selecting **Add**.
-The **Add or edit corporate network definition** box appears. Add the required fields.
+> [!IMPORTANT]
+> These corporate network definitions must match the original policy. Copy and paste the strings from your original policy that enables WIP.
 
-In the required **Upload a Data Recovery Agent (DRA) certificate to allow recovery of encrypted data** box, select **Browse** to add a data recovery certificate for your policy.
+#### Specify the data recovery agent certificate
 
-   ![Create Configuration Item wizard, Add a data recovery agent (DRA) certificate.](images/wip-configmgr-dra.png)
+In the required **Upload a Data Recovery Agent (DRA) certificate to allow recovery of encrypted data** box, select **Browse** to add a data recovery certificate for your policy. This certificate should be the same as the original policy that enables WIP.
+
+![Create Configuration Item wizard, Add a data recovery agent (DRA) certificate.](images/wip-configmgr-dra.png)
 
 ### Deploy the WIP policy
 
-After you've created your WIP policy, deploy it to your organization's devices. For more information about deployment options, see the following articles:
+After you've created the new policy to turn off WIP, deploy it to your organization's devices. For more information about deployment options, see the following articles:
 
 - [Create a configuration baseline that includes the new configuration item](/mem/configmgr/compliance/deploy-use/create-configuration-baselines).
 
