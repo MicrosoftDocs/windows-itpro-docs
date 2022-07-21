@@ -1,10 +1,10 @@
 ---
-title: VPN security features (Windows 10 and Windows 11)
+title: VPN security features
 description: Learn about security features for VPN, including LockDown VPN, Windows Information Protection integration with VPN, and traffic filters.
 ms.prod: m365-security
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 09/03/2021
+ms.date: 07/21/2022
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -17,12 +17,11 @@ ms.author: dansimp
 - Windows 11
 
 
-## Hyper-V based Containers and VPN
+## Hyper-V based containers and VPN
 
-Windows supports different kinds of Hyper-V based containers, which includes but not limited to, Microsoft Defender Application Guard and Windows Sandbox. When 3rd party VPN solutions are being used, these Hyper-V based containers may not be able to seamlessly connect to the internet. Additional configurational changes might be needed to resolve connectivity issues. 
+Windows supports different kinds of Hyper-V based containers. This support includes, but isn't limited to, Microsoft Defender Application Guard and Windows Sandbox. When you use 3rd party VPN solutions, these Hyper-V based containers may not be able to seamlessly connect to the internet. Additional configurational changes might be needed to resolve connectivity issues.
 
-Here's an example of a workaround for Cisco AnyConnect VPN: https://www.cisco.com/c/en/us/td/docs/security/vpn_client/anyconnect/anyconnect410/administration/guide/b-anyconnect-admin-guide-4-10/troubleshoot-anyconnect.html#Cisco_Task_in_List_GUI.dita_3a9a8101-f034-4e9b-b24a-486ee47b5e9f
-
+For example, for more information on a workaround for Cisco AnyConnect VPN, see [Cisco AnyConnect Secure Mobility Client Administrator Guide: Connectivity issues with VM-based subsystems](https://www.cisco.com/c/en/us/td/docs/security/vpn_client/anyconnect/anyconnect410/administration/guide/b-anyconnect-admin-guide-4-10/troubleshoot-anyconnect.html#Cisco_Task_in_List_GUI.dita_3a9a8101-f034-4e9b-b24a-486ee47b5e9f).
 
 ## Windows Information Protection (WIP) integration with VPN
 
