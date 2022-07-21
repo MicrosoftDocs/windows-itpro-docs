@@ -503,13 +503,13 @@ There are multiple methods that can be used to apply a policy to PCs that should
 You can either set your MCC IP address or FQDN using:
 
 1.  Registry Key in 1709 and higher -  
-    [HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\DeliveryOptimization]<br>
+    [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization]<br>
     "DOCacheHost"=" "  
     
   From an elevated command prompt:
 
   ```
-  reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\DeliveryOptimization" /v DOCacheHost /t REG_SZ /d "10.137.187.38" /f
+  reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization" /v DOCacheHost /t REG_SZ /d "10.137.187.38" /f
   ```
 
 2.  MDM Path in 1809 or higher:
