@@ -7,14 +7,12 @@ ms.prod: w10
 ms.technology: windows
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 09/27/2019
+ms.date: 05/16/2022
 ms.reviewer: 
 manager: dansimp
 ---
 
 # Policy CSP - DeviceLock
-
-
 
 <hr/>
 
@@ -72,6 +70,9 @@ manager: dansimp
 
 <hr/>
 
+> [!Important]
+> The DeviceLock CSP utilizes the [Exchange ActiveSync Policy Engine](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)). When password length and complexity rules are applied, all the local user and administrator accounts are marked to change their password at the next sign in to ensure complexity requirements are met. For more information, see [Password length and complexity supported by account types](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)#password-length-and-complexity-supported-by-account-types).
+
 <!--Policy-->
 <a href="" id="devicelock-allowidlereturnwithoutpassword"></a>**DeviceLock/AllowIdleReturnWithoutPassword**  
 
@@ -81,6 +82,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|No|No|
 |Education|No|No|
@@ -128,6 +130,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -151,8 +154,7 @@ Specifies whether PINs or passwords such as "1111" or "1234" are allowed. For th
 > [!NOTE]
 > This policy must be wrapped in an Atomic command.
 
-
-For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
+For more information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -175,6 +177,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -216,6 +219,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -270,6 +274,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -352,6 +357,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -377,16 +383,16 @@ Specifies when the password expires (in days).
 
 
 
-If all policy values = 0 then 0; otherwise, Min policy value is the most secure value.
+If all policy values = 0, then 0; otherwise, Min policy value is the most secure value.
 
-For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
+For more information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
 
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
 -   An integer X where 0 &lt;= X &lt;= 730.
--   0 (default) - Passwords do not expire.
+-   0 (default) - Passwords don't expire.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -402,6 +408,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -425,11 +432,11 @@ Specifies how many passwords can be stored in the history that can’t be used.
 > [!NOTE]
 > This policy must be wrapped in an Atomic command.
 
-The value includes the user's current password. This means that with a setting of 1 the user cannot reuse their current password when choosing a new password, while a setting of 5 means that a user cannot set their new password to their current password or any of their previous four passwords.
+The value includes the user's current password. This value denotes that with a setting of 1, the user can't reuse their current password when choosing a new password, while a setting of 5 means that a user can't set their new password to their current password or any of their previous four passwords.
 
 Max policy value is the most restricted.
 
-For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
+For more information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -452,6 +459,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -470,7 +478,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Specifies the default lock screen and logon image shown when no user is signed in. It also sets the specified image for all users, which replaces the default image. The same image is used for both the lock and logon screens. Users will not be able to change this image.
+Specifies the default lock screen and sign-in image shown when no user is signed in. It also sets the specified image for all users, which replaces the default image. The same image is used for both the lock and sign-in screens. Users won't be able to change this image.
 
 > [!NOTE]
 > This policy is only enforced in Windows 10 Enterprise and Education editions and not supported in Windows 10 Home and Pro.
@@ -492,6 +500,7 @@ Value type is a string, which is the full image filepath and filename.
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -516,14 +525,14 @@ The number of authentication failures allowed before the device will be wiped. A
 > This policy must be wrapped in an Atomic command.
 
 
-On a client device, when the user reaches the value set by this policy, it is not wiped. Instead, the desktop is put on BitLocker recovery mode, which makes the data inaccessible but recoverable. If BitLocker is not enabled, then the policy cannot be enforced.
+On a client device, when the user reaches the value set by this policy, it isn't wiped. Instead, the desktop is put on BitLocker recovery mode, which makes the data inaccessible but recoverable. If BitLocker isn't enabled, then the policy can't be enforced.
 
   Prior to reaching the failed attempts limit, the user is sent to the lock screen and warned that more failed attempts will lock their computer. When the user reaches the limit, the device automatically reboots and shows the BitLocker recovery page. This page prompts the user for the BitLocker recovery key.
 
 
 Most secure value is 0 if all policy values = 0; otherwise, Min policy value is the most secure value.
 
-For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
+For more information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -546,6 +555,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -573,7 +583,7 @@ On HoloLens, this timeout is controlled by the device's system sleep timeout, re
 
 
 
-For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
+For more information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -596,6 +606,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -651,9 +662,9 @@ Enforced values for Local and Microsoft Accounts:
         -   Base 10 digits (0 through 9)
         -   Special characters (!, $, \#, %, etc.)
 
-The enforcement of policies for Microsoft accounts happen on the server, and the server requires a password length of 8 and a complexity of 2. A complexity value of 3 or 4 is unsupported and setting this value on the server makes Microsoft accounts non-compliant.
+The enforcement of policies for Microsoft accounts happens on the server, and the server requires a password length of 8 and a complexity of 2. A complexity value of 3 or 4 is unsupported and setting this value on the server makes Microsoft accounts non-compliant.
 
-For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)) and [KB article](https://support.office.com/article/This-device-doesn-t-meet-the-security-requirements-set-by-your-email-administrator-87132fc7-2c7f-4a71-9de0-779ff81c86ca).
+For more information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)) and [KB article](https://support.office.com/article/This-device-doesn-t-meet-the-security-requirements-set-by-your-email-administrator-87132fc7-2c7f-4a71-9de0-779ff81c86ca).
 
 <!--/Description-->
 <!--/Policy-->
@@ -669,6 +680,7 @@ For additional information about this policy, see [Exchange ActiveSync Policy En
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -698,7 +710,7 @@ Specifies the minimum number or characters required in the PIN or password.
 
 Max policy value is the most restricted.
 
-For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)) and [KB article](https://support.office.com/article/This-device-doesn-t-meet-the-security-requirements-set-by-your-email-administrator-87132fc7-2c7f-4a71-9de0-779ff81c86ca).
+For more information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)) and [KB article](https://support.office.com/article/This-device-doesn-t-meet-the-security-requirements-set-by-your-email-administrator-87132fc7-2c7f-4a71-9de0-779ff81c86ca).
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -745,6 +757,7 @@ The following example shows how to set the minimum password length to 4 characte
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -767,7 +780,7 @@ This security setting determines the period of time (in days) that a password mu
 
 The minimum password age must be less than the Maximum password age, unless the maximum password age is set to 0, indicating that passwords will never expire. If the maximum password age is set to 0, the minimum password age can be set to any value between 0 and 998.
 
-Configure the minimum password age to be more than 0 if you want Enforce password history to be effective. Without a minimum password age, users can cycle through passwords repeatedly until they get to an old favorite. The default setting does not follow this recommendation, so that an administrator can specify a password for a user and then require the user to change the administrator-defined password when the user logs on. If the password history is set to 0, the user does not have to choose a new password. For this reason, Enforce password history is set to 1 by default.
+Configure the minimum password age to be more than 0 if you want Enforce password history to be effective. Without a minimum password age, users can cycle through passwords repeatedly until they get to an old favorite. The default setting doesn't follow this recommendation, so that an administrator can specify a password for a user and then require the user to change the administrator-defined password when the user logs on. If the password history is set to 0, the user doesn't have to choose a new password. For this reason, Enforce password history is set to 1 by default.
 
 <!--/Description-->
 <!--DbMapped-->
@@ -789,6 +802,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -807,11 +821,11 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
-Disables the lock screen camera toggle switch in PC Settings and prevents a camera from being invoked on the lock screen.
+Disables the lock screen camera toggle-switch in PC Settings and prevents a camera from being invoked on the lock screen.
 
 By default, users can enable invocation of an available camera on the lock screen.
 
-If you enable this setting, users will no longer be able to enable or disable lock screen camera access in PC Settings, and the camera cannot be invoked on the lock screen.
+If you enable this setting, users will no longer be able to enable or disable lock screen camera access in PC Settings, and the camera can't be invoked on the lock screen.
 
 <!--/Description-->
 > [!TIP]
@@ -842,6 +856,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|Yes|Yes|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -860,7 +875,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Disables the lock screen slide show settings in PC Settings and prevents a slide show from playing on the lock screen.
+Disables the lock screen slideshow settings in PC Settings and prevents a slide show from playing on the lock screen.
 
 By default, users can enable a slide show that will run after they lock the machine.
 
@@ -889,3 +904,7 @@ ADMX Info:
 
 
 <!--/Policies-->
+
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

@@ -3,18 +3,12 @@ title: Step by step - Deploy Windows 10 in a test lab using MDT
 description: In this article, you'll learn how to deploy Windows 10 in a test lab using Microsoft Deployment Toolkit (MDT).
 ms.custom: seo-marvel-apr2020
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: deploy
-keywords: deployment, automate, tools, configure, mdt
 ms.localizationpriority: medium
 ms.date: 10/11/2017
 ms.reviewer: 
-manager: laurawi
-ms.audience: itpro
-ms.author: greglin
-author: greg-lindsay
-audience: itpro
+manager: dougeby
+ms.author: aaroncz
+author: aczechowski
 ms.topic: article
 ---
 
@@ -394,7 +388,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
 2. On the **Monitoring** tab, select the **Enable monitoring for this deployment share** checkbox, and then click **OK**.
 
-3. Verify the monitoring service is working as expected by opening the following link on SRV1 in Internet Explorer: [http://localhost:9800/MDTMonitorEvent/](http://localhost:9800/MDTMonitorEvent/). If you do not see "**You have created a service**" at the top of the page, see [Troubleshooting MDT 2012 Monitoring](/archive/blogs/mniehaus/troubleshooting-mdt-2012-monitoring).
+3. Verify the monitoring service is working as expected by opening the following link on SRV1: `http://localhost:9800/MDTMonitorEvent/`. If you do not see "**You have created a service**" at the top of the page, see [Troubleshooting MDT 2012 Monitoring](/archive/blogs/mniehaus/troubleshooting-mdt-2012-monitoring).
 
 4. Close Internet Explorer.
 
@@ -647,7 +641,7 @@ Deployment logs are available on the client computer in the following locations:
 
 You can review WDS events in Event Viewer at: **Applications and Services Logs > Microsoft > Windows > Deployment-Services-Diagnostics**. By default, only the **Admin** and **Operational** logs are enabled. To enable other logs, right-click the log and then click **Enable Log**.
 
-Tools for viewing log files, and to assist with troubleshooting are available in the [System Center 2012 R2 Configuration Manager Toolkit](https://www.microsoft.com/download/details.aspx?id=50012)
+Tools for viewing log files, and to assist with troubleshooting are available in the [Configuration Manager Toolkit](https://www.microsoft.com/download/details.aspx?id=50012)
 
 Also see [Resolve Windows 10 upgrade errors](upgrade/resolve-windows-10-upgrade-errors.md) for detailed troubleshooting information.
 

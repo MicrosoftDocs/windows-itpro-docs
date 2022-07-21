@@ -3,10 +3,6 @@ title: Special Identities (Windows 10)
 description: Special Identities
 ms.prod: m365-security
 ms.technology: windows-sec
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp
@@ -485,8 +481,8 @@ Any user accessing the system through Terminal Services has the Terminal Server 
 
 | Attribute | Value |
 |  :--: | :--: | 
-| Well-Known SID/RID | |
-|Object Class| |
+| Well-Known SID/RID | S-1-5-90 |
+|Object Class|  Foreign Security Principal|
 |Default Location in Active Directory |cn=WellKnown Security Principals, cn=Configuration, dc=\<forestRootDomain\>|
 |Default User Rights| [Bypass traverse checking](/windows/device-security/security-policy-settings/bypass-traverse-checking): SeChangeNotifyPrivilege<br> [Increase a process working set](/windows/device-security/security-policy-settings/increase-a-process-working-set): SeIncreaseWorkingSetPrivilege<br>|
 

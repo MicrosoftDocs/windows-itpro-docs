@@ -1,15 +1,9 @@
 ---
 title: Windows Hello errors during PIN creation (Windows)
 description: When you set up Windows Hello in Windows 10/11, you may get an error during the Create a work PIN step.
-ms.assetid: DFEFE22C-4FEF-4FD9-BFC4-9B419C339502
-keywords: PIN, error, create a work PIN
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection:
   - M365-identity-device-management
@@ -72,7 +66,7 @@ If the error occurs again, check the error code against the following table to s
 | 0x801C03ED | Multi-factor authentication is required for a 'ProvisionKey' operation, but was not performed. <br><br> -or- <br><br> Token was not found in the Authorization header. <br><br> -or- <br><br> Failed to read one or more objects. <br><br> -or- <br><br> The request sent to the server was invalid. <br><br> -or- <br><br> User does not have permissions to join to Azure AD. | Sign out and then sign in again. If that doesn't resolve the issue, unjoin the device from Azure  AD and rejoin. <br> Allow user(s) to join to Azure AD under Azure AD Device settings.
 | 0x801C03EE | Attestation failed.                                                | Sign out and then sign in again. |
 | 0x801C03EF | The AIK certificate is no longer valid.                            | Sign out and then sign in again. |
-| 0x801C03F2 | Windows Hello key registration failed.                             | ERROR\_BAD\_DIRECTORY\_REQUEST. Another object with the same value for property proxyAddresses already exists. To resolve the issue, refer to [Duplicate Attributes Prevent Dirsync](/office365/troubleshoot/administration/duplicate-attributes-prevent-dirsync). Also, if no sync conflict exists, please verify that the "Mail/Email address" in AAD and the Primary SMTP address are the same in the proxy address.
+| 0x801C03F2 | Windows Hello key registration failed.                             | ERROR\_BAD\_DIRECTORY\_REQUEST. Another object with the same value for property proxyAddresses already exists. To resolve the issue, refer to [Duplicate Attributes Prevent Dirsync](/office365/troubleshoot/administration/duplicate-attributes-prevent-dirsync). Also, if no sync conflict exists, please verify that the "Mail/Email address" in Azure Active Directory and the Primary SMTP address are the same in the proxy address.
 | 0x801C044D | Authorization token does not contain device ID.                    | Unjoin the device from Azure AD and rejoin. |
 |            | Unable to obtain user token.                                       | Sign out and then sign in again. Check network and credentials. |
 | 0x801C044E | Failed to receive user credentials input.                          | Sign out and then sign in again. |
@@ -84,8 +78,9 @@ For errors listed in this table, contact Microsoft Support for assistance.
 
 | Hex         | Cause   |
 |-------------|---------|
-| 0X80072F0C  | Unknown |
 | 0x80070057  | Invalid parameter or argument is passed. |
+| 0X80072F0C  | Unknown |
+| 0x80072F8F  | A mismatch happens between the system's clock and the activation server's clock when attempting to activate Windows.|
 | 0x80090010  | NTE_PERM |
 | 0x80090020  | NTE\_FAIL |
 | 0x80090027  | Caller provided a wrong parameter. If third-party code receives this error, they must change their code. |
@@ -103,8 +98,7 @@ For errors listed in this table, contact Microsoft Support for assistance.
 | 0x801C03F0  | ​There is no key registered for the user. |
 | 0x801C03F1  | ​There is no UPN in the token. |
 | ​0x801C044C  | There is no core window for the current thread. |
-| 0x801c004D  | DSREG_NO_DEFAULT_ACCOUNT: NGC provisioning is unable to find the default WAM account to use to request AAD token for provisioning. Unable to enroll a device to use a PIN for login. |
-
+| 0x801c004D  | DSREG_NO_DEFAULT_ACCOUNT: NGC provisioning is unable to find the default WAM account to use to request Azure Active Directory token for provisioning. Unable to enroll a device to use a PIN for login. |
 
 ## Related topics
 

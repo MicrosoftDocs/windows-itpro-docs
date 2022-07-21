@@ -1,15 +1,12 @@
 ---
 title: Administering App-V Virtual Applications by using the Management Console (Windows 10/11)
 description: Administering App-V Virtual Applications by using the Management Console
-author: greg-lindsay
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
+author: aczechowski
 ms.prod: w10
 ms.date: 06/08/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
 ---
 # Administering App-V Virtual Applications by using the Management Console

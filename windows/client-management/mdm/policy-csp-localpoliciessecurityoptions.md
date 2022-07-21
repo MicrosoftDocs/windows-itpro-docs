@@ -182,6 +182,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -201,13 +202,15 @@ manager: dansimp
 <!--Description-->
 This policy setting prevents users from adding new Microsoft accounts on this computer.
 
-If you select the "Users cannot add Microsoft accounts" option, users will not be able to create new Microsoft accounts on this computer, switch a local account to a Microsoft account, or connect a domain account to a Microsoft account. This is the preferred option if you need to limit the use of Microsoft accounts in your enterprise.
+If you select the "Users cannot add Microsoft accounts" option, users won't be able to create new Microsoft accounts on this computer. Switch a local account to a Microsoft account, or connect a domain account to a Microsoft account. This option is the preferred option if you need to limit the use of Microsoft accounts in your enterprise.
 
-If you select the "Users cannot add or log on with Microsoft accounts" option, existing Microsoft account users will not be able to log on to Windows. Selecting this option might make it impossible for an existing administrator on this computer to log on and manage the system.
+If you select the "Users cannot add or log on with Microsoft accounts" option, existing Microsoft account users won't be able to sign in to Windows. Selecting this option might make it impossible for an existing administrator on this computer to sign in and manage the system.
 
-If you disable or do not configure this policy (recommended), users will be able to use Microsoft accounts with Windows.
+If you disable or don't configure this policy (recommended), users will be able to use Microsoft accounts with Windows.
 
-Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+This policy supports the following:
+- Supported value type is integer. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -220,7 +223,7 @@ GP Info:
 The following list shows the supported values:
 
 -   0 - disabled (users will be able to use Microsoft accounts with Windows).
--   1 - enabled (users cannot add Microsoft accounts).
+-   1 - enabled (users can't add Microsoft accounts).
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -236,6 +239,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -255,7 +259,9 @@ The following list shows the supported values:
 <!--Description-->
 This setting allows the administrator to enable the local Administrator account.
 
-Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+This policy supports the following:
+- Supported value type is integer. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -283,6 +289,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -302,7 +309,9 @@ The following list shows the supported values:
 <!--Description-->
 This setting allows the administrator to enable the guest Administrator account.
 
-Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+This policy supports the following:
+- Supported value type is integer. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -331,6 +340,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -350,18 +360,21 @@ The following list shows the supported values:
 <!--Description-->
 Accounts: Limit local account use of blank passwords to console logon only
 
-This security setting determines whether local accounts that are not password protected can be used to log on from locations other than the physical computer console. If enabled, local accounts that are not password protected will only be able to log on at the computer's keyboard.
+This security setting determines whether local accounts that aren't password protected can be used to sign in from locations other than the physical computer console. If enabled, local accounts that aren't password protected will only be able to sign in at the computer's keyboard.
 
-Default: Enabled.
+Default: Enabled
 
 > [!WARNING]
-> Computers that are not in physically secure locations should always enforce strong password policies for all local user accounts. Otherwise, anyone with physical access to the computer can log on by using a user account that does not have a password. This is especially important for portable computers.
-If you apply this security policy to the Everyone group, no one will be able to log on through Remote Desktop Services.
+> Computers that aren't in physically secure locations should always enforce strong password policies for all local user accounts. Otherwise, anyone with physical access to the computer can sign in by using a user account that doesn't have a password. This is especially important for portable computers.
+>
+> If you apply this security policy to the Everyone group, no one will be able to sign in through Remote Desktop Services.
 
-This setting does not affect logons that use domain accounts.
-It is possible for applications that use remote interactive logons to bypass this setting.
+This setting doesn't affect sign in that use domain accounts.
+It's possible for applications that use remote interactive sign in to bypass this setting.
 
-Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+This policy supports the following:
+- Supported value type is integer. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -372,8 +385,8 @@ GP Info:
 <!--/RegistryMapped-->
 <!--SupportedValues-->
 Valid values:  
-- 0 -  disabled - local accounts that are not password protected can be used to log on from locations other than the physical computer console
-- 1 -  enabled - local accounts that are not password protected will only be able to log on at the computer's keyboard
+- 0 -  disabled - local accounts that aren't password protected can be used to sign in from locations other than the physical computer console.
+- 1 -  enabled - local accounts that aren't password protected will only be able to sign in at the computer's keyboard.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -389,6 +402,7 @@ Valid values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -410,9 +424,11 @@ Accounts: Rename administrator account
 
 This security setting determines whether a different account name is associated with the security identifier (SID) for the account Administrator. Renaming the well-known Administrator account makes it slightly more difficult for unauthorized persons to guess this privileged user name and password combination.
 
-Default: Administrator.
+Default: Administrator
 
-Value type is string. Supported operations are Add, Get, Replace, and Delete.
+This policy supports the following:
+- Supported value type is string. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--DbMapped-->
@@ -434,6 +450,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -455,9 +472,11 @@ Accounts: Rename guest account
 
 This security setting determines whether a different account name is associated with the security identifier (SID) for the account "Guest." Renaming the well-known Guest account makes it slightly more difficult for unauthorized persons to guess this user name and password combination.
 
-Default: Guest.
+Default: Guest
 
-Value type is string. Supported operations are Add, Get, Replace, and Delete.
+This policy supports the following:
+- Supported value type is string. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--DbMapped-->
@@ -479,6 +498,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -496,10 +516,11 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
-Devices: Allow undock without having to log on. 
+Devices: Allow undock without having to sign in
 
-This security setting determines whether a portable computer can be undocked without having to log on. If this policy is enabled, logon is not required and an external hardware eject button can be used to undock the computer. If disabled, a user must log on and have the Remove computer from docking station privilege to undock the computer.
-Default: Enabled.
+This security setting determines whether a portable computer can be undocked without having to sign in. If this policy is enabled, sign in isn't required and an external hardware eject button can be used to undock the computer. If disabled, a user must sign in and have the Remove computer from docking station privilege to undock the computer.
+
+Default: Enabled
 
 > [!CAUTION]
 > Disabling this policy may tempt users to try and physically remove the laptop from its docking station using methods other than the external hardware eject button. Since this may cause damage to the hardware, this setting, in general, should only be disabled on laptop configurations that are physically securable.
@@ -524,6 +545,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -545,10 +567,10 @@ Devices: Allowed to format and eject removable media
 
 This security setting determines who is allowed to format and eject removable NTFS media. This capability can be given to:
 
-- Administrators
-- Administrators and Interactive Users
+- Administrators.
+- Administrators and Interactive Users.
 
-Default: This policy is not defined and only Administrators have this ability.
+Default: This policy isn't defined, and only Administrators have this ability.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -570,6 +592,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -591,11 +614,11 @@ Devices: Prevent users from installing printer drivers when connecting to shared
 
 For a computer to print to a shared printer, the driver for that shared printer must be installed on the local computer. This security setting determines who is allowed to install a printer driver as part of connecting to a shared printer. If this setting is enabled, only Administrators can install a printer driver as part of connecting to a shared printer. If this setting is disabled, any user can install a printer driver as part of connecting to a shared printer.
 
-Default on servers: Enabled.
+Default on servers: Enabled
 Default on workstations: Disabled
 
 >[!NOTE]
->This setting does not affect the ability to add a local printer. This setting does not affect Administrators.
+>This setting doesn't affect the ability to add a local printer. This setting doesn't affect Administrators.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -617,6 +640,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -640,7 +664,7 @@ This security setting determines whether a CD-ROM is accessible to both local an
 
 If this policy is enabled, it allows only the interactively logged-on user to access removable CD-ROM media. If this policy is enabled and no one is logged on interactively, the CD-ROM can be accessed over the network.
 
-Default: This policy is not defined and CD-ROM access is not restricted to the locally logged-on user.
+Default: This policy isn't defined and CD-ROM access isn't restricted to the locally logged-on user.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -662,6 +686,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -679,10 +704,11 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
-Interactive Logon:Display user information when the session is locked  
+Interactive Logon: Display user information when the session is locked
 
-
-Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+This policy supports the following:
+- Supported value type is integer. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -693,9 +719,9 @@ GP Info:
 <!--/RegistryMapped-->
 <!--SupportedValues-->
 Valid values:
-- 1 - User display name, domain and user names
-- 2 - User display name only
-- 3 - Do not display user information
+- 1 - User display name, domain and user names.
+- 2 - User display name only.
+- 3 - Don't display user information.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -711,6 +737,7 @@ Valid values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -731,13 +758,16 @@ Valid values:
 Interactive logon: Don't display last signed-in
 
 This security setting determines whether the Windows sign-in screen will show the username of the last person who signed in on this PC.
-If this policy is enabled, the username will not be shown.
+
+If this policy is enabled, the username won't be shown.
 
 If this policy is disabled, the username will be shown.
 
-Default: Disabled.
+Default: Disabled
 
-Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+This policy supports the following:
+- Supported value type is integer. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -748,8 +778,8 @@ GP Info:
 <!--/RegistryMapped-->
 <!--SupportedValues-->
 Valid values:  
-- 0 - disabled (username will be shown)
-- 1 - enabled (username will not be shown)
+- 0 - disabled (username will be shown).
+- 1 - enabled (username won't be shown).
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -765,6 +795,7 @@ Valid values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -786,13 +817,15 @@ Interactive logon: Don't display username at sign-in
 
 This security setting determines whether the username of the person signing in to this PC appears at Windows sign-in, after credentials are entered, and before the PC desktop is shown.
 
-If this policy is enabled, the username will not be shown.
+If this policy is enabled, the username won't be shown.
 
 If this policy is disabled, the username will be shown.
 
-Default: Disabled.
+Default: Disabled
 
-Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+This policy supports the following:
+- Supported value type is integer. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -803,8 +836,8 @@ GP Info:
 <!--/RegistryMapped-->
 <!--SupportedValues-->
 Valid values:  
-- 0 - disabled (username will be shown)
-- 1 - enabled (username will not be shown)
+- 0 - disabled (username will be shown).
+- 1 - enabled (username won't be shown).
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -820,6 +853,7 @@ Valid values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -837,18 +871,20 @@ Valid values:
 
 <!--/Scope-->
 <!--Description-->
-Interactive logon: Do not require CTRL+ALT+DEL
+Interactive logon: Don't require CTRL+ALT+DEL
 
-This security setting determines whether pressing CTRL+ALT+DEL is required before a user can log on.
+This security setting determines whether pressing CTRL+ALT+DEL is required before a user can sign in.
 
-If this policy is enabled on a computer, a user is not required to press CTRL+ALT+DEL to log on. Not having to press CTRL+ALT+DEL leaves users susceptible to attacks that attempt to intercept the users' passwords. Requiring CTRL+ALT+DEL before users log on ensures that users are communicating by means of a trusted path when entering their passwords.
+If this policy is enabled on a computer, a user isn't required to press CTRL+ALT+DEL to sign in. Not having to press CTRL+ALT+DEL leaves users susceptible to attacks that attempt to intercept the users' passwords. Requiring CTRL+ALT+DEL before users sign in ensures that users are communicating through a trusted path when entering their passwords.
 
 If this policy is disabled, any user is required to press CTRL+ALT+DEL before logging on to Windows.
 
-Default on domain-computers: Enabled: At least Windows  8/Disabled: Windows 7 or earlier.
-Default on stand-alone computers: Enabled.
+Default on domain-computers: Enabled: At least Windows 8 / Disabled: Windows 7 or earlier.
+Default on stand-alone computers: Enabled
 
-Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+This policy supports the following:
+- Supported value type is integer. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -859,8 +895,8 @@ GP Info:
 <!--/RegistryMapped-->
 <!--SupportedValues-->
 Valid values:  
-- 0 - disabled
-- 1 - enabled (a user is not required to press CTRL+ALT+DEL to log on)
+- 0 - disabled.
+- 1 - enabled (a user isn't required to press CTRL+ALT+DEL to sign in).
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -876,6 +912,7 @@ Valid values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -893,13 +930,15 @@ Valid values:
 
 <!--/Scope-->
 <!--Description-->
-Interactive logon: Machine inactivity limit.
+Interactive logon: Machine inactivity limit
 
-Windows notices inactivity of a logon session, and if the amount of inactive time exceeds the inactivity limit, then the screen saver will run, locking the session.
+Windows notices inactivity of a sign-in session, and if the amount of inactive time exceeds the inactivity limit, then the screen saver will run, locking the session.
 
-Default: not enforced.
+Default: Not enforced
 
-Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+This policy supports the following:
+- Supported value type is integer. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -909,7 +948,7 @@ GP Info:
 
 <!--/RegistryMapped-->
 <!--SupportedValues-->
-Valid values: From 0 to 599940, where the value is the amount of inactivity time (in seconds) after which the session will be locked. If it is set to zero (0), the setting is disabled.
+Valid values: From 0 to 599940, where the value is the amount of inactivity time (in seconds) after which the session will be locked. If it's set to zero (0), the setting is disabled.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -925,6 +964,7 @@ Valid values: From 0 to 599940, where the value is the amount of inactivity time
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -942,15 +982,17 @@ Valid values: From 0 to 599940, where the value is the amount of inactivity time
 
 <!--/Scope-->
 <!--Description-->
-Interactive logon: Message text for users attempting to log on
+Interactive logon: Message text for users attempting to sign in
 
-This security setting specifies a text message that is displayed to users when they log on.
+This security setting specifies a text message that is displayed to users when they sign in.
 
-This text is often used for legal reasons, for example, to warn users about the ramifications of misusing company information or to warn them that their actions may be audited.
+This text is often used for legal reasons. For example, to warn users about the ramifications of misusing company information or to warn them that their actions may be audited.
 
-Default: No message.
+Default: No message
 
-Value type is string. Supported operations are Add, Get, Replace, and Delete.
+This policy supports the following:
+- Supported value type is string. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -972,6 +1014,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -989,13 +1032,15 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
-Interactive logon: Message title for users attempting to log on
+Interactive logon: Message title for users attempting to sign in
 
-This security setting allows the specification of a title to appear in the title bar of the window that contains the Interactive logon: Message text for users attempting to log on.
+This security setting allows the specification of a title to appear in the title bar of the window that contains the Interactive logon: Message text for users attempting to sign in.
 
-Default: No message.
+Default: No message
 
-Value type is string. Supported operations are Add, Get, Replace, and Delete.
+This policy supports the following:
+- Supported value type is string. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -1017,6 +1062,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1040,21 +1086,21 @@ This security setting determines what happens when the smart card for a logged-o
 
 The options are:
 
- No Action
- Lock Workstation
- Force Logoff
- Disconnect if a Remote Desktop Services session 
+- No Action
+- Lock Workstation
+- Force Logoff
+- Disconnect if a Remote Desktop Services session 
 
 If you click Lock Workstation in the Properties dialog box for this policy, the workstation is locked when the smart card is removed, allowing users to leave the area, take their smart card with them, and still maintain a protected session.
 
-If you click Force Logoff in the Properties dialog box for this policy, the user is automatically logged off when the smart card is removed.
+If you click Force Logoff in the Properties dialog box for this policy, the user is automatically signed off when the smart card is removed.
 
-If you click Disconnect if a Remote Desktop Services session, removal of the smart card disconnects the session without logging the user off. This allows the user to insert the smart card and resume the session later, or at another smart card reader-equipped computer, without having to log on again. If the session is local, this policy functions identically to Lock Workstation.
+If you click Disconnect on a Remote Desktop Services session, removal of the smart card disconnects the session without logging off the user. This policy allows the user to insert the smart card and resume the session later, or at another smart card reader-equipped computer, without having to sign in again. If the session is local, this policy functions identically to Lock Workstation.
 
 > [!NOTE]
 > Remote Desktop Services was called Terminal Services in previous versions of Windows Server.
 
-Default: This policy is not defined, which means that the system treats it as No action.
+Default: This policy isn't defined, which means that the system treats it as No action.
 
 On Windows Vista and above: For this setting to work, the Smart Card Removal Policy service must be started.
 
@@ -1077,6 +1123,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1096,14 +1143,14 @@ GP Info:
 <!--Description-->
 Microsoft network client: Digitally sign communications (always)
 
-This security setting determines whether packet signing is required by the SMB client component.  The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether SMB packet signing must be negotiated before further communication with an SMB server is permitted.  
+This security setting determines whether packet signing is required by the SMB client component. The server message block (SMB) protocol provides the basis for Microsoft file, print sharing, and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether SMB packet signing must be negotiated before further communication with an SMB server is permitted.  
 
-If this setting is enabled, the Microsoft network client will not communicate with a Microsoft network server unless that server agrees to perform SMB packet signing. If this policy is disabled, SMB packet signing is negotiated between the client and server. 
+If this setting is enabled, the Microsoft network client won't communicate with a Microsoft network server unless that server agrees to perform SMB packet signing. If this policy is disabled, SMB packet signing is negotiated between the client and server. 
  
-Default: Disabled.   
+Default: Disabled
 
 > [!Note] 
-> All Windows operating systems support both a client-side SMB component and a server-side SMB component.Enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings:
+> All Windows operating systems support both a client-side SMB component and a server-side SMB component. Enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings:
 > - Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing. 
 > - Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled.
 > - Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing. 
@@ -1131,6 +1178,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1152,11 +1200,11 @@ Microsoft network client: Digitally sign communications (if server agrees)
 
 This security setting determines whether the SMB client attempts to negotiate SMB packet signing.
 
-The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether the SMB client component attempts to negotiate SMB packet signing when it connects to an SMB server.
+The server message block (SMB) protocol provides the basis for Microsoft file, print sharing, and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether the SMB client component attempts to negotiate SMB packet signing when it connects to an SMB server.
 
 If this setting is enabled, the Microsoft network client will ask the server to perform SMB packet signing upon session setup. If packet signing has been enabled on the server, packet signing will be negotiated. If this policy is disabled, the SMB client will never negotiate SMB packet signing.
 
-Default: Enabled.
+Default: Enabled
 
 > [!Note]
 > All Windows operating systems support both a client-side SMB component and a server-side SMB component. Enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings:
@@ -1189,6 +1237,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1208,11 +1257,11 @@ GP Info:
 <!--Description-->
 Microsoft network client: Send unencrypted password to connect to third-party SMB servers
 
-If this security setting is enabled, the Server Message Block (SMB) redirector is allowed to send plaintext passwords to non-Microsoft SMB servers that do not support password encryption during authentication.
+If this security setting is enabled, the Server Message Block (SMB) redirector is allowed to send plaintext passwords to non-Microsoft SMB servers that don't support password encryption during authentication.
 
 Sending unencrypted passwords is a security risk.
 
-Default: Disabled.
+Default: Disabled
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -1234,6 +1283,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1263,7 +1313,7 @@ Administrators can use this policy to control when a computer suspends an inacti
 
 For this policy setting, a value of 0 means to disconnect an idle session as quickly as is reasonably possible. The maximum value is 99999, which is 208 days; in effect, this value disables the policy.
 
-Default:This policy is not defined, which means that the system treats it as 15 minutes for servers and undefined for workstations.
+Default: This policy isn't defined, which means that the system treats it as 15 minutes for servers and undefined for workstations.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -1294,6 +1344,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1315,9 +1366,9 @@ Microsoft network server: Digitally sign communications (always)
 
 This security setting determines whether packet signing is required by the SMB server component.
 
-The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether SMB packet signing must be negotiated before further communication with an SMB client is permitted.
+The server message block (SMB) protocol provides the basis for Microsoft file, print sharing, and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether SMB packet signing must be negotiated before further communication with an SMB client is permitted.
 
-If this setting is enabled, the Microsoft network server will not communicate with a Microsoft network client unless that client agrees to perform SMB packet signing. If this setting is disabled, SMB packet signing is negotiated between the client and server.
+If this setting is enabled, the Microsoft network server won't communicate with a Microsoft network client, unless that client agrees to perform SMB packet signing. If this setting is disabled, SMB packet signing is negotiated between the client and server.
 
 Default: Disabled for member servers. Enabled for domain controllers.
 
@@ -1328,7 +1379,7 @@ Default: Disabled for member servers. Enabled for domain controllers.
 > - Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing.
 > - Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled.
 >
-> Similarly, if client-side SMB signing is required, that client will not be able to establish a session with servers that do not have packet signing enabled. By default, server-side SMB signing is enabled only on domain controllers.
+> Similarly, if client-side SMB signing is required, that client won't be able to establish a session with servers that don't have packet signing enabled. By default, server-side SMB signing is enabled only on domain controllers.
 > If server-side SMB signing is enabled, SMB packet signing will be negotiated with clients that have client-side SMB signing enabled.
 > SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. For more information, reference: [Reduced performance after SMB Encryption or SMB Signing is enabled - Windows Server | Microsoft Docs](/troubleshoot/windows-server/networking/reduced-performance-after-smb-encryption-signing).
 
@@ -1352,6 +1403,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1373,7 +1425,7 @@ Microsoft network server: Digitally sign communications (if client agrees)
 
 This security setting determines whether the SMB server will negotiate SMB packet signing with clients that request it.
 
-The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether the SMB server will negotiate SMB packet signing when an SMB client requests it.
+The server message block (SMB) protocol provides the basis for Microsoft file, print sharing, and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether the SMB server will negotiate SMB packet signing when an SMB client requests it.
 
 If this setting is enabled, the Microsoft network server will negotiate SMB packet signing as requested by the client. That is, if packet signing has been enabled on the client, packet signing will be negotiated. If this policy is disabled, the SMB client will never negotiate SMB packet signing.
 
@@ -1410,6 +1462,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1427,19 +1480,19 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
-Network access: Do not allow anonymous enumeration of SAM accounts
+Network access: Don't allow anonymous enumeration of SAM accounts
 
-This security setting determines what additional permissions will be granted for anonymous connections to the computer.
+This security setting determines what other permissions will be granted for anonymous connections to the computer.
 
-Windows allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares. This is convenient, for example, when an administrator wants to grant access to users in a trusted domain that does not maintain a reciprocal trust.
+Windows allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares. This feature is convenient, for example, when an administrator wants to grant access to users in a trusted domain that doesn't maintain a reciprocal trust.
 
-This security option allows additional restrictions to be placed on anonymous connections as follows:
+This security option allows more restrictions to be placed on anonymous connections as follows:
 
-Enabled: Do not allow enumeration of SAM accounts. This option replaces Everyone with Authenticated Users in the security permissions for resources.
-Disabled: No additional restrictions. Rely on default permissions.
+Enabled: Don't allow enumeration of SAM accounts. This option replaces Everyone with Authenticated Users in the security permissions for resources.
+Disabled: No extra restrictions. Rely on default permissions.
 
-Default on workstations: Enabled.
-Default on server:Enabled.
+Default on workstations: Enabled
+Default on server: Enabled
 
 > [!IMPORTANT]
 > This policy has no impact on domain controllers.
@@ -1464,6 +1517,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1481,13 +1535,13 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
-Network access: Do not allow anonymous enumeration of SAM accounts and shares
+Network access: Don't allow anonymous enumeration of SAM accounts and shares
 
 This security setting determines whether anonymous enumeration of SAM accounts and shares is allowed.
 
-Windows allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares. This is convenient, for example, when an administrator wants to grant access to users in a trusted domain that does not maintain a reciprocal trust. If you do not want to allow anonymous enumeration of SAM accounts and shares, then enable this policy.
+Windows allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares. This feature is convenient, for example, when an administrator wants to grant access to users in a trusted domain that doesn't maintain a reciprocal trust. If you don't want to allow anonymous enumeration of SAM accounts and shares, then enable this policy.
 
-Default: Disabled.
+Default: Disabled
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -1509,6 +1563,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1530,9 +1585,9 @@ Network access: Restrict anonymous access to Named Pipes and Shares
 
 When enabled, this security setting restricts anonymous access to shares and pipes to the settings for:
 
-Network access: Named pipes that can be accessed anonymously
-Network access: Shares that can be accessed anonymously
-Default: Enabled.
+- Network access: Named pipes that can be accessed anonymously.
+- Network access: Shares that can be accessed anonymously.
+- Default: Enabled.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -1554,6 +1609,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1599,6 +1655,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1631,8 +1688,8 @@ GP Info:
 <!--/RegistryMapped-->
 <!--SupportedValues-->
 Valid values:  
-- 0 - Disabled
-- 1 - Enabled (Allow Local System to use computer identity for NTLM.)
+- 0 - Disabled.
+- 1 - Enabled (Allow Local System to use computer identity for NTLM).
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1648,6 +1705,7 @@ Valid values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1667,10 +1725,11 @@ Valid values:
 <!--Description-->
 Network security: Allow PKU2U authentication requests to this computer to use online identities.
 
-This policy will be turned off by default on domain joined machines. This would prevent online identities from authenticating to the domain joined machine.
+This policy will be turned off by default on domain joined machines. This disablement would prevent online identities from authenticating to the domain joined machine.
 
-
-Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+This policy supports the following:
+- Supported value type is integer. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -1681,8 +1740,8 @@ GP Info:
 <!--/RegistryMapped-->
 <!--SupportedValues-->
 Valid values:  
-- 0 - disabled
-- 1 - enabled (allow PKU2U authentication requests to this computer to use online identities.)
+- 0 - disabled.
+- 1 - enabled (allow PKU2U authentication requests to this computer to use online identities).
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1698,6 +1757,7 @@ Valid values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1715,13 +1775,12 @@ Valid values:
 
 <!--/Scope-->
 <!--Description-->
-Network security: Do not store LAN Manager hash value on next password change
+Network security: Don't store LAN Manager hash value on next password change
 
-This security setting determines if, at the next password change, the LAN Manager (LM) hash value for the new password is stored. The LM hash is relatively weak and prone to attack, as compared with the cryptographically stronger Windows NT hash. Since the LM hash is stored on the local computer in the security database the passwords can be compromised if the security database is attacked.
+This security setting determines if, at the next password change, the LAN Manager (LM) hash value for the new password is stored. The LM hash is relatively weak and prone to attack, as compared with the cryptographically stronger Windows NT hash. Since the LM hash is stored on the local computer in the security database, the passwords can be compromised if the security database is attacked.
 
-
-Default on Windows Vista and above: Enabled
-Default on Windows XP: Disabled.
+- Default on Windows Vista and above: Enabled
+- Default on Windows XP: Disabled
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -1743,6 +1802,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1762,27 +1822,27 @@ GP Info:
 <!--Description-->
 Network security LAN Manager authentication level
 
-This security setting determines which challenge/response authentication protocol is used for network logons. This choice affects the level of authentication protocol used by clients, the level of session security negotiated, and the level of authentication accepted by servers as follows:
+This security setting determines which challenge/response authentication protocol is used for network logon. This choice affects the level of authentication protocol used by clients, the level of session security negotiated, and the level of authentication accepted by servers as follows:
 
-Send LM and NTLM responses: Clients use LM and NTLM authentication and never use NTLMv2 session security; domain controllers accept LM, NTLM, and NTLMv2 authentication.
+- Send LM and NTLM responses: Clients use LM and NTLM authentication and never use NTLMv2 session security; domain controllers accept LM, NTLM, and NTLMv2 authentication.
 
-Send LM and NTLM - use NTLMv2 session security if negotiated: Clients use LM and NTLM authentication and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication.
+- Send LM and NTLM - use NTLMv2 session security if negotiated: Clients use LM and NTLM authentication and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication.
 
-Send NTLM response only: Clients use NTLM authentication only and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication.
+- Send NTLM response only: Clients use NTLM authentication only and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication.
 
-Send NTLMv2 response only: Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication.
+- Send NTLMv2 response only: Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication.
 
-Send NTLMv2 response only\refuse LM: Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers refuse LM (accept only NTLM and NTLMv2 authentication).
+- Send NTLMv2 response only\refuse LM: Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers refuse LM (accept only NTLM and NTLMv2 authentication).
 
-Send NTLMv2 response only\refuse LM and NTLM: Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers refuse LM and NTLM (accept only NTLMv2 authentication).
+- Send NTLMv2 response only\refuse LM and NTLM: Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers refuse LM and NTLM (accept only NTLMv2 authentication).
 
-Default:
+- Default:
 
-windows XP: send LM and NTLM responses
+- windows XP: send LM and NTLM responses.
 
-Windows Server 2003: Send NTLM response only
+- Windows Server 2003: Send NTLM response only.
 
-Windows Vista, Windows Server 2008, Windows 7, and Windows Server 2008 R2: Send NTLMv2 response only
+Windows Vista, Windows Server 2008, Windows 7, and Windows Server 2008 R2: Send NTLMv2 response only.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -1804,6 +1864,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1825,14 +1886,14 @@ Network security: Minimum session security for NTLM SSP based (including secure 
 
 This security setting allows a client device to require the negotiation of 128-bit encryption and/or NTLMv2 session security. These values are dependent on the LAN Manager Authentication Level security setting value. The options are:
 
-- Require NTLMv2 session security: The connection will fail if message integrity is not negotiated.
-- Require 128-bit encryption: The connection will fail if strong encryption (128-bit) is not negotiated.
+- Require NTLMv2 session security: The connection will fail if message integrity isn't negotiated.
+- Require 128-bit encryption: The connection will fail if strong encryption (128-bit) isn't negotiated.
 
-Default:
+- Default:
 
-Windows XP, Windows Vista, Windows Server 2003, and Windows Server 2008: No requirements.
+- Windows XP, Windows Vista, Windows Server 2003, and Windows Server 2008: No requirements.
 
-Windows 7 and Windows Server 2008 R2: Require 128-bit encryption.
+- Windows 7 and Windows Server 2008 R2: Require 128-bit encryption.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -1854,6 +1915,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1875,14 +1937,15 @@ Network security: Minimum session security for NTLM SSP based (including secure 
 
 This security setting allows a server to require the negotiation of 128-bit encryption and/or NTLMv2 session security. These values are dependent on the LAN Manager Authentication Level security setting value. The options are:
 
-Require NTLMv2 session security: The connection will fail if message integrity is not negotiated.
-Require 128-bit encryption. The connection will fail if strong encryption (128-bit) is not negotiated.
+- Require NTLMv2 session security: The connection will fail if message integrity isn't negotiated.
 
-Default:
+- Require 128-bit encryption. The connection will fail if strong encryption (128-bit) isn't negotiated.
 
-Windows XP, Windows Vista, Windows Server 2003, and Windows Server 2008: No requirements.
+- Default:
 
-Windows 7 and Windows Server 2008 R2: Require 128-bit encryption
+- Windows XP, Windows Vista, Windows Server 2003, and Windows Server 2008: No requirements.
+
+- Windows 7 and Windows Server 2008 R2: Require 128-bit encryption.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -1904,6 +1967,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1923,13 +1987,13 @@ GP Info:
 <!--Description-->
 Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication
 
-This policy setting allows you to create an exception list of remote servers to which clients are allowed to use NTLM authentication if the  "Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers" policy setting is configured.
+This policy setting allows you to create an exception list of remote servers to which clients are allowed to use NTLM authentication, if the "Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers" policy setting is configured.
 
 If you configure this policy setting, you can define a list of remote servers to which clients are allowed to use NTLM authentication.
 
-If you do not configure this policy setting, no exceptions will be applied.
+If you don't configure this policy setting, no exceptions will be applied.
 
-The naming format for servers on this exception list is the fully qualified domain name (FQDN) or NetBIOS server name used by the application, listed one per line. To ensure exceptions the name used by all applications needs to be in the list, and to ensure an exception is accurate, the server name should be listed in both naming formats . A single asterisk (*) can be used anywhere in the string as a wildcard character.
+The naming format for servers on this exception list is the fully qualified domain name (FQDN) or NetBIOS server name used by the application, listed one per line. To ensure exceptions, the name used by all applications needs to be in the list, and to ensure an exception is accurate, the server name should be listed in both naming formats. A single asterisk (*) can be used anywhere in the string as a wildcard character.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -1960,6 +2024,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -1981,7 +2046,7 @@ Network security: Restrict NTLM: Audit Incoming NTLM Traffic
 
 This policy setting allows you to audit incoming NTLM traffic.
 
-If you select "Disable", or do not configure this policy setting, the server will not log events for incoming NTLM traffic.
+If you select "Disable", or don't configure this policy setting, the server won't log events for incoming NTLM traffic.
 
 If you select "Enable auditing for domain accounts", the server will log events for NTLM pass-through authentication requests that would be blocked when the "Network Security: Restrict NTLM: Incoming NTLM traffic" policy setting is set to the "Deny all domain accounts" option.
 
@@ -2021,6 +2086,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -2042,9 +2108,9 @@ Network security: Restrict NTLM: Incoming NTLM traffic
 
 This policy setting allows you to deny or allow incoming NTLM traffic.
 
-If you select "Allow all" or do not configure this policy setting, the server will allow all NTLM authentication requests.
+If you select "Allow all" or don't configure this policy setting, the server will allow all NTLM authentication requests.
 
-If you select "Deny all domain accounts," the server will deny NTLM authentication requests for domain logon and display an NTLM blocked error, but allow local account logon.
+If you select "Deny all domain accounts," the server will deny NTLM authentication requests for domain sign in and display an NTLM blocked error, but allow local account sign in.
 
 If you select "Deny all accounts," the server will deny NTLM authentication requests from incoming traffic and display an NTLM blocked error.
 
@@ -2082,6 +2148,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -2103,11 +2170,11 @@ Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers
 
 This policy setting allows you to deny or audit outgoing NTLM traffic from this Windows 7 or this Windows Server 2008 R2 computer to any Windows remote server.
 
-If you select "Allow all" or do not configure this policy setting, the client computer can authenticate identities to a remote server by using NTLM authentication.
+If you select "Allow all" or don't configure this policy setting, the client computer can authenticate identities to a remote server by using NTLM authentication.
 
-If you select "Audit all," the client computer logs an event for each NTLM authentication request to a remote server. This allows you to identify those servers receiving NTLM authentication requests from the client computer.
+If you select "Audit all," the client computer logs an event for each NTLM authentication request to a remote server. This logging allows you to identify those servers receiving NTLM authentication requests from the client computer.
 
-If you select "Deny all," the client computer cannot authenticate identities to a remote server by using NTLM authentication. You can use the "Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication" policy setting to define a list of remote servers to which clients are allowed to use NTLM authentication.
+If you select "Deny all," the client computer can't authenticate identities to a remote server by using NTLM authentication. You can use the "Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication" policy setting to define a list of remote servers to which clients are allowed to use NTLM authentication.
 
 This policy is supported on at least Windows 7 or Windows Server 2008 R2.
 
@@ -2143,6 +2210,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -2160,18 +2228,20 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
-Shutdown: Allow system to be shut down without having to log on
+Shutdown: Allow system to be shut down without having to sign in
 
-This security setting determines whether a computer can be shut down without having to log on to Windows.
+This security setting determines whether a computer can be shut down without having to sign in to Windows.
 
 When this policy is enabled, the Shut Down command is available on the Windows logon screen.
 
-When this policy is disabled, the option to shut down the computer does not appear on the Windows logon screen. In this case, users must be able to log on to the computer successfully and have the Shut down the system user right before they can perform a system shutdown.
+When this policy is disabled, the option to shut down the computer doesn't appear on the Windows logon screen. In this case, users must be able to sign in to the computer successfully and have the Shut down the system user right before they can perform a system shutdown.
 
-Default on workstations: Enabled.
-Default on servers: Disabled.
+- Default on workstations: Enabled.
+- Default on servers: Disabled.
 
-Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+This policy supports the following:
+- Supported value type is integer. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -2182,8 +2252,8 @@ GP Info:
 <!--/RegistryMapped-->
 <!--SupportedValues-->
 Valid values:  
-- 0 - disabled
-- 1 - enabled (allow system to be shut down without having to log on)
+- 0 - disabled.
+- 1 - enabled (allow system to be shut down without having to sign in).
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -2199,6 +2269,7 @@ Valid values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -2220,11 +2291,11 @@ Shutdown: Clear virtual memory pagefile
 
 This security setting determines whether the virtual memory pagefile is cleared when the system is shut down.
 
-Virtual memory support uses a system pagefile to swap pages of memory to disk when they are not used. On a running system, this pagefile is opened exclusively by the operating system, and it is well protected. However, systems that are configured to allow booting to other operating systems might have to make sure that the system pagefile is wiped clean when this system shuts down. This ensures that sensitive information from process memory that might go into the pagefile is not available to an unauthorized user who manages to directly access the pagefile.
+Virtual memory support uses a system pagefile to swap pages of memory to disk when they aren't used. On a running system, this pagefile is opened exclusively by the operating system, and it's well protected. However, systems that are configured to allow booting to other operating systems might have to ensure that the system pagefile is wiped clean when this system shuts down. This cleaning ensures that sensitive information from process memory that might go into the pagefile isn't available to an unauthorized user who manages to directly access the pagefile.
 
 When this policy is enabled, it causes the system pagefile to be cleared upon clean shutdown. If you enable this security option, the hibernation file (hiberfil.sys) is also zeroed out when hibernation is disabled.
 
-Default: Disabled.
+Default: Disabled
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -2246,6 +2317,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -2267,13 +2339,15 @@ User Account Control: Allow UIAccess applications to prompt for elevation withou
 
 This policy setting controls whether User Interface Accessibility (UIAccess or UIA) programs can automatically disable the secure desktop for elevation prompts used by a standard user.
 
-Enabled: UIA programs, including Windows Remote Assistance, automatically disable the secure desktop for elevation prompts. If you do not disable the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting, the prompts appear on the interactive user's desktop instead of the secure desktop.
+Enabled: UIA programs, including Windows Remote Assistance, automatically disable the secure desktop for elevation prompts. If you don't disable the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting, the prompts appear on the interactive user's desktop instead of the secure desktop.
 
 Disabled: (Default)  
 
 The secure desktop can be disabled only by the user of the interactive desktop or by disabling the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting.
 
-Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+This policy supports the following:
+- Supported value type is integer. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -2284,8 +2358,8 @@ GP Info:
 <!--/RegistryMapped-->
 <!--SupportedValues-->
 Valid values:  
-- 0 - disabled
-- 1 - enabled (allow UIAccess applications to prompt for elevation without using the secure desktop)
+- 0 - disabled.
+- 1 - enabled (allow UIAccess applications to prompt for elevation without using the secure desktop).
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -2301,6 +2375,7 @@ Valid values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -2340,7 +2415,9 @@ The options are:
 
 - 5 - Prompt for consent for non-Windows binaries: (Default) When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.
 
-Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+This policy supports the following:
+- Supported value type is integer. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -2362,6 +2439,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -2380,9 +2458,12 @@ GP Info:
 <!--/Scope-->
 <!--Description-->
 User Account Control: Behavior of the elevation prompt for standard users
+
 This policy setting controls the behavior of the elevation prompt for standard users.
 
-Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+This policy supports the following:
+- Supported value type is integer. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -2394,9 +2475,9 @@ GP Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 - Automatically deny elevation requests: When an operation requires elevation of privilege, a configurable access denied error message is displayed. An enterprise that is running desktops as standard user may choose this setting to reduce help desk calls.
+-   0 - Automatically deny elevation requests: When an operation requires elevation of privilege, a configurable access denied error message is displayed. An enterprise that is running desktops as standard user, may choose this setting to reduce help desk calls.
 -   1 - Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a different user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
--   3 (Default) - Prompt for credentials:  When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
+-   3 (Default) - Prompt for credentials: When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -2412,6 +2493,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -2435,9 +2517,9 @@ This policy setting controls the behavior of application installation detection 
 
 The options are:
 
-Enabled: (Default) When an application installation package is detected that requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
+- Enabled: (Default) When an application installation package is detected that requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
 
-Disabled: Application installation packages are not detected and prompted for elevation. Enterprises that are running standard user desktops and use delegated installation technologies such as Group Policy Software Installation or Systems Management Server (SMS) should disable this policy setting. In this case, installer detection is unnecessary.
+- Disabled: Application installation packages aren't detected and prompted for elevation. Enterprises that are running standard user desktops and use delegated installation technologies such as Group Policy Software Installation or Systems Management Server (SMS) should disable this policy setting. In this case, installer detection is unnecessary.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -2459,6 +2541,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -2478,13 +2561,15 @@ GP Info:
 <!--Description-->
 User Account Control: Only elevate executable files that are signed and validated
 
-This policy setting enforces public key infrastructure (PKI) signature checks for any interactive applications that request elevation of privilege. Enterprise administrators can control which applications are allowed to run by adding certificates to the Trusted Publishers certificate store on local computers.
+This policy setting enforces public key infrastructure (PKI) signature checks for any interactive applications that request elevation of privilege. Enterprise administrators can control which applications are allowed to run, by adding certificates to the Trusted Publishers certificate store on local computers.
 
 The options are:
-- 0 - Disabled: (Default) Does not enforce PKI certification path validation before a given executable file is permitted to run.
-- 1 - Enabled: Enforces the PKI certification path validation for a given executable file before it is permitted to run.
+- 0 - Disabled: (Default) Doesn't enforce PKI certification path validation before a given executable file is permitted to run.
+- 1 - Enabled: Enforces the PKI certification path validation for a given executable file before it's permitted to run.
 
-Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+This policy supports the following:
+- Supported value type is integer. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -2506,6 +2591,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -2525,7 +2611,7 @@ GP Info:
 <!--Description-->
 User Account Control: Only elevate UIAccess applications that are installed in secure locations
 
-This policy setting controls whether applications that request to run with a User Interface Accessibility (UIAccess) integrity level must reside in a secure location in the file system. Secure locations are limited to the following:
+This policy setting controls, whether applications that request to run with a User Interface Accessibility (UIAccess) integrity level must reside in a secure location in the file system. Secure locations are limited to the following locations:
 
 - .\Program Files\, including subfolders
 - .\Windows\system32\
@@ -2535,10 +2621,12 @@ This policy setting controls whether applications that request to run with a Use
 > Windows enforces a public key infrastructure (PKI) signature check on any interactive application that requests to run with a UIAccess integrity level regardless of the state of this security setting.
 
 The options are:  
-- 0 - Disabled: An application runs with UIAccess integrity even if it does not reside in a secure location in the file system.
+- 0 - Disabled: An application runs with UIAccess integrity even if it doesn't reside in a secure location in the file system.
 - 1 - Enabled: (Default) If an application resides in a secure location in the file system, it runs only with UIAccess integrity.
 
-Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+This policy supports the following:
+- Supported value type is integer. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -2560,6 +2648,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -2587,10 +2676,11 @@ The options are:
   > [!NOTE]
   > If this policy setting is disabled, Windows Security notifies you that the overall security of the operating system has been reduced.
 
-- 1 - Enabled: (Default) Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must also be set appropriately to allow the built-in Administrator account and all other users who are members of the Administrators group to run in Admin Approval Mode. 
+- 1 - Enabled: (Default) Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must also be set appropriately, to allow the built-in Administrator account and all other users who are members of the Administrators group to run in Admin Approval Mode. 
 
-
-Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+This policy supports the following:
+- Supported value type is integer. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -2612,6 +2702,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -2637,7 +2728,9 @@ The options are:
 - 0 - Disabled: All elevation requests go to the interactive user's desktop. Prompt behavior policy settings for administrators and standard users are used.
 - 1 - Enabled: (Default) All elevation requests go to the secure desktop regardless of prompt behavior policy settings for administrators and standard users.
 
-Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+This policy supports the following:
+- Supported value type is integer. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -2659,6 +2752,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -2706,6 +2800,7 @@ GP Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -2727,7 +2822,9 @@ User Account Control: Virtualize file and registry write failures to per-user lo
 
 This policy setting controls whether application write failures are redirected to defined registry and file system locations. This policy setting mitigates applications that run as administrator and write run-time application data to %ProgramFiles%, %Windir%, %Windir%\system32, or HKLM\Software.
 
-Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+This policy supports the following:
+- Supported value type is integer. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -2746,5 +2843,8 @@ The following list shows the supported values:
 <!--/Policy-->
 <hr/>
 
-
 <!--/Policies-->
+
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

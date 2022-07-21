@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_CredUI
-description: Policy CSP - ADMX_CredUI
+description: Learn about  the Policy CSP - ADMX_CredUI.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -46,8 +46,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -67,11 +68,11 @@ manager: dansimp
 This policy setting requires the user to enter Microsoft Windows credentials using a trusted path, to prevent a Trojan horse or other types of malicious code from stealing the user’s Windows credentials.
 
 > [!NOTE]
-> This policy affects nonlogon authentication tasks only. As a security best practice, this policy should be enabled.
+> This policy affects non-logon authentication tasks only. As a security best practice, this policy should be enabled.
 
-If you enable this policy setting, users will be required to enter Windows credentials on the Secure Desktop by means of the trusted path mechanism.
+If you enable this policy setting, users will be required to enter Windows credentials on the Secure Desktop through the trusted path mechanism.
 
-If you disable or do not configure this policy setting, users will enter Windows credentials within the user’s desktop session, potentially allowing malicious code access to the user’s Windows credentials.
+If you disable or don't configure this policy setting, users will enter Windows credentials within the user’s desktop session, potentially allowing malicious code access to the user’s Windows credentials.
 
 <!--/Description-->
 
@@ -94,8 +95,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -112,7 +114,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. If you turn this policy setting on, local users won’t be able to set up and use security questions to reset their passwords.
+Available in the latest Windows 10 Insider Preview Build. If you turn on this policy setting, local users won’t be able to set up and use security questions to reset their passwords.
 
 <!--/Description-->
 
@@ -129,3 +131,6 @@ ADMX Info:
 <
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

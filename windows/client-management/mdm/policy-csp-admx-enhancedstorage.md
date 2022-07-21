@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_EnhancedStorage
-description: Policy CSP - ADMX_EnhancedStorage
+description: Learn about the Policy CSP - ADMX_EnhancedStorage.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -58,8 +58,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -76,11 +77,11 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to configure a list of Enhanced Storage devices by manufacturer and product ID that are usable on your computer.
+This policy setting allows you to configure a list of Enhanced Storage devices that contain a manufacturer and product ID that are usable on your computer.
 
 If you enable this policy setting, only Enhanced Storage devices that contain a manufacturer and product ID specified in this policy are usable on your computer.
 
-If you disable or do not configure this policy setting, all Enhanced Storage devices are usable on your computer.
+If you disable or don't configure this policy setting, all Enhanced Storage devices are usable on your computer.
 
 <!--/Description-->
 
@@ -103,8 +104,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -121,11 +123,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to create a list of IEEE 1667 silos, compliant with the Institute of Electrical and Electronics Engineers, Inc. (IEEE) 1667 specification, that are usable on your computer.
+This policy setting allows you to create a list of IEEE 1667 silos, compliant with the Institute of Electrical and Electronics Engineers, Inc. (IEEE) 1667 specification, that is usable on your computer.
 
 If you enable this policy setting, only IEEE 1667 silos that match a silo type identifier specified in this policy are usable on your computer.
 
-If you disable or do not configure this policy setting, all IEEE 1667 silos on Enhanced Storage devices are usable on your computer.
+If you disable or don't configure this policy setting, all IEEE 1667 silos on Enhanced Storage devices are usable on your computer.
 
 <!--/Description-->
 
@@ -148,8 +150,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -168,9 +171,9 @@ ADMX Info:
 <!--Description-->
 This policy setting configures whether or not a password can be used to unlock an Enhanced Storage device.
 
-If you enable this policy setting, a password cannot be used to unlock an Enhanced Storage device.
+If you enable this policy setting, a password can't be used to unlock an Enhanced Storage device.
 
-If you disable or do not configure this policy setting, a password can be used to unlock an Enhanced Storage device.
+If you disable or don't configure this policy setting, a password can be used to unlock an Enhanced Storage device.
 
 <!--/Description-->
 
@@ -193,8 +196,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -213,9 +217,9 @@ ADMX Info:
 <!--Description-->
 This policy setting configures whether or not non-Enhanced Storage removable devices are allowed on your computer.
 
-If you enable this policy setting, non-Enhanced Storage removable devices are not allowed on your computer.
+If you enable this policy setting, non-Enhanced Storage removable devices aren't allowed on your computer.
 
-If you disable or do not configure this policy setting, non-Enhanced Storage removable devices are allowed on your computer.
+If you disable or don't configure this policy setting, non-Enhanced Storage removable devices are allowed on your computer.
 
 <!--/Description-->
 
@@ -238,8 +242,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -258,11 +263,12 @@ ADMX Info:
 <!--Description-->
 This policy setting locks Enhanced Storage devices when the computer is locked.
 
-This policy setting is supported in Windows Server SKUs only.
+>[!Note]
+>This policy setting is supported in Windows Server SKUs only.
 
 If you enable this policy setting, the Enhanced Storage device remains locked when the computer is locked.
 
-If you disable or do not configure this policy setting, the Enhanced Storage device state is not changed when the computer is locked.
+If you disable or don't configure this policy setting, the Enhanced Storage device state isn't changed when the computer is locked.
 
 <!--/Description-->
 
@@ -285,8 +291,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -307,7 +314,7 @@ This policy setting configures whether or not only USB root hub connected Enhanc
 
 If you enable this policy setting, only USB root hub connected Enhanced Storage devices are allowed.
 
-If you disable or do not configure this policy setting, USB Enhanced Storage devices connected to both USB root hubs and non-root hubs will be allowed.
+If you disable or don't configure this policy setting, USB Enhanced Storage devices connected to both USB root hubs and non-root hubs will be allowed.
 
 <!--/Description-->
 
@@ -324,3 +331,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

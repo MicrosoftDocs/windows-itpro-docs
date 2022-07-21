@@ -46,8 +46,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -67,7 +68,9 @@ manager: dansimp
 <!--Description-->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) service accepts Kerberos credentials over the network.
 
-If you enable this policy setting, the WinRM service does not accept Kerberos credentials over the network.  If you disable or do not configure this policy setting, the WinRM service accepts Kerberos authentication from a remote client.
+If you enable this policy setting, the WinRM service does not accept Kerberos credentials over the network.  
+
+If you disable or do not configure this policy setting, the WinRM service accepts Kerberos authentication from a remote client.
 
 <!--/Description-->
 
@@ -92,8 +95,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 

@@ -4,8 +4,6 @@ description: Firewall settings lost on upgrade
 ms.reviewer: 
 ms.author: v-bshilpa
 ms.prod: m365-security
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: Benny-54
 manager: dansimp

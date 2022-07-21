@@ -24,7 +24,7 @@ Windows 10 includes a set of hardware and OS technologies that, when configured 
 
 WDAC policies and HVCI are powerful protections that can be used separately. However, when these two technologies are configured to work together, they present a strong protection capability for Windows 10 devices.  
 
-Using WDAC to restrict devices to only authorized apps has these advantages over other solutions:
+Using Windows Defender Application Control to restrict devices to only authorized apps has these advantages over other solutions:
 
 1. WDAC policy is enforced by the Windows kernel itself, and the policy takes effect early in the boot sequence before nearly all other OS code and before traditional antivirus solutions run.
 2. WDAC lets you set application control policy for code that runs in user mode, kernel mode hardware and software drivers, and even code that runs as part of Windows.
@@ -37,7 +37,7 @@ When we originally promoted Device Guard, we did so with a specific security pro
 
 WDAC has no specific hardware or software requirements other than running Windows 10, which means customers were denied the benefits of this powerful application control capability due to Device Guard confusion.
 
-Since the initial release of Windows 10, the world has witnessed numerous hacking and malware attacks where application control alone could have prevented the attack altogether. With this in mind, we now discuss and document WDAC as an independent technology within our security stack and gave it a name of its own: [Windows Defender Application Control](../windows-defender-application-control/windows-defender-application-control.md).
+Since the initial release of Windows 10, the world has witnessed numerous hacking and malware attacks where application control alone could have prevented the attack altogether. With this in mind, we now discuss and document Windows Defender Application Control as an independent technology within our security stack and gave it a name of its own: [Windows Defender Application Control](../windows-defender-application-control/windows-defender-application-control.md).
 We hope this change will help us better communicate options for adopting application control within your organizations.
 
 ## Related articles

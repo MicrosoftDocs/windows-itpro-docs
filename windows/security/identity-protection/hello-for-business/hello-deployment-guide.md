@@ -1,14 +1,9 @@
 ---
 title: Windows Hello for Business Deployment Overview
 description: Use this deployment guide to successfully deploy Windows Hello for Business in an existing environment. 
-keywords: identity, PIN, biometric, Hello, passport
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection:
   - M365-identity-device-management

@@ -29,7 +29,7 @@ ms.technology: windows-sec
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
-This section outlines the process to create a WDAC policy for fixed-workload devices within an organization. Fixed-workload devices tend to be dedicated to a specific functional purpose and share common configuration attributes with other devices servicing the same functional role. Examples of fixed-workload devices may include Active Directory Domain Controllers, Secure Admin Workstations, pharmaceutical drug-mixing equipment, manufacturing devices, cash registers, ATMs, etc.
+This section outlines the process to create a Windows Defender Application Control (WDAC) policy for fixed-workload devices within an organization. Fixed-workload devices tend to be dedicated to a specific functional purpose and share common configuration attributes with other devices servicing the same functional role. Examples of fixed-workload devices may include Active Directory Domain Controllers, Secure Admin Workstations, pharmaceutical drug-mixing equipment, manufacturing devices, cash registers, ATMs, etc.
 
 For this example, you must initiate variables to be used during the creation process or use the full file paths in the command.
 Then create the WDAC policy by scanning the system for installed applications.
@@ -37,7 +37,7 @@ The policy file is converted to binary format when it gets created so that Windo
 
 ## Overview of the process of creating Windows Defender Application Control policies
 
-A common system imaging practice in today’s IT organization is to establish a “golden” image as a reference for what an ideal system should look like, and then use that image to clone additional company assets. WDAC policies follow a similar methodology, that begins with the establishment of a golden computer. As with imaging, you can have multiple golden computers based on model, department, application set, and so on. Although the thought process around the creation of WDAC policies is similar to imaging, these policies should be maintained independently. Assess the necessity of additional WDAC policies based on what should be allowed to be installed and run and for whom. For more details on doing this assessment, see the [WDAC Design Guide](windows-defender-application-control-design-guide.md).
+A common system imaging practice in today’s IT organization is to establish a “golden” image as a reference for what an ideal system should look like, and then use that image to clone additional company assets. Windows Defender Application Control policies follow a similar methodology, that begins with the establishment of a golden computer. As with imaging, you can have multiple golden computers based on model, department, application set, and so on. Although the thought process around the creation of WDAC policies is similar to imaging, these policies should be maintained independently. Assess the necessity of additional WDAC policies based on what should be allowed to be installed and run and for whom. For more details on doing this assessment, see the [WDAC Design Guide](windows-defender-application-control-design-guide.md).
 
 Optionally, WDAC can align with your software catalog and any IT department–approved applications. One straightforward method to implement WDAC is to use existing images to create one master WDAC policy. You do so by creating a WDAC policy from each image, and then by merging the policies. This way, what is installed on all of those images will be allowed to run, if the applications are installed on a computer based on a different image. Alternatively, you may choose to create a base applications policy and add policies based on the computer’s role or department. Organizations have a choice of how their policies are created, merged, or serviced, and managed.
 
@@ -51,9 +51,7 @@ We recommend that you review the reference computer for software that can load a
 Examples include software aimed at development or scripting such as msbuild.exe (part of Visual Studio and the .NET Framework) which can be removed if you do not want to run scripts.
 You can remove or disable such software on the reference computer.
 
-
-
-To create a WDAC policy, copy each of the following commands into an elevated Windows PowerShell session, in order:
+To create a Windows Defender Application Control policy, copy each of the following commands into an elevated Windows PowerShell session, in order:
 
 1. Initialize variables that you will use.
 

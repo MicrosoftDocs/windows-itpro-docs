@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ADMX_EventViewer
-description: Policy CSP - ADMX_EventViewer
+description: Learn about the Policy CSP - ADMX_EventViewer.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -49,8 +49,9 @@ manager: dansimp
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -67,7 +68,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This is the program that will be invoked when the user clicks the `events.asp` link.
+This program is the one that will be invoked when the user clicks the `events.asp` link.
 
 <!--/Description-->
  
@@ -91,8 +92,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -109,7 +111,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This specifies the command line parameters that will be passed to the `events.asp` program.
+This program specifies the command line parameters that will be passed to the `events.asp` program.
 
 <!--/Description-->
 
@@ -132,8 +134,9 @@ ADMX Info:
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
-|Pro|No|No|
-|Business|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
 
@@ -150,9 +153,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This is the URL that will be passed to the Description area in the Event Properties dialog box. 
-Change this value if you want to use a different Web server to handle event information requests.
+This URL is the one that will be passed to the Description area in the Event Properties dialog box.
 
+Change this value if you want to use a different Web server to handle event information requests.
 
 <!--/Description--> 
 
@@ -170,3 +173,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[ADMX-backed policies in Policy CSP](./policies-in-policy-csp-admx-backed.md)

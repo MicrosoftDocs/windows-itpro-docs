@@ -31,8 +31,7 @@
       "audience": "windows-education",
       "ms.topic": "article",
       "ms.technology": "windows",
-      "manager": "laurawi",
-      "audience": "ITPro",
+      "manager": "dansimp",
       "breadcrumb_path": "/education/breadcrumb/toc.json",
       "ms.date": "05/09/2017",
       "feedback_system": "None",
@@ -51,6 +50,9 @@
         "Kellylorenebaker",
         "jborsecnik",
         "tiburd",
+        "AngelaMotherofDragons",
+        "dstrome",
+        "v-dihans",
         "garycentric"
       ]
     },

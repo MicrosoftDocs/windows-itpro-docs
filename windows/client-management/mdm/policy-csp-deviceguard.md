@@ -47,6 +47,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -107,6 +108,7 @@ ADMX Info:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -125,7 +127,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Turns on virtualization based security(VBS) at the next reboot. virtualization based security uses the Windows Hypervisor to provide support for security services. Value type is integer.
+Turns on virtualization based security(VBS) at the next reboot. Virtualization based security uses the Windows Hypervisor to provide support for security services. Value type is integer.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -156,6 +158,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -207,6 +210,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|No|No|
+|Windows SE|No|No|
 |Business|No|No|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -224,7 +228,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Specifies the platform security level at the next reboot. Value type is integer.
+This setting specifies the platform security level at the next reboot. Value type is integer.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -249,3 +253,7 @@ The following list shows the supported values:
 
 
 <!--/Policies-->
+
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

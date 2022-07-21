@@ -5,9 +5,6 @@ ms.reviewer:
 ms.topic: article
 manager: dansimp
 ms.author: dansimp
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 author: dansimp
 ms.collection: M365-security-compliance
 ms.custom: intro-overview
@@ -53,7 +50,7 @@ A summary of the steps involved in attestation and Zero Trust on the device side
 
 3. The TPM is verified by using the keys/cryptographic material available on the chipset with an [Azure Certificate Service](/windows-server/identity/ad-ds/manage/component-updates/tpm-key-attestation).
 
-4. This information is then sent to the attestation service in the cloud to verify that the device is safe. Microsoft Endpoint Manger (MEM) integrates with Microsoft Azure Attestation to review device health comprehensively and connect this information with AAD conditional access. This integration is key for Zero Trust solutions that help bind trust to an untrusted device.
+4. This information is then sent to the attestation service in the cloud to verify that the device is safe. Microsoft Endpoint Manger integrates with Microsoft Azure Attestation to review device health comprehensively and connect this information with Azure Active Directory conditional access. This integration is key for Zero Trust solutions that help bind trust to an untrusted device.
 
 5. The attestation service does the following:
 
@@ -63,7 +60,7 @@ A summary of the steps involved in attestation and Zero Trust on the device side
 
 6. The attestation service returns an attestation report that contains information about the security features based on the policy configured in the attestation service.
 
-7. The device then sends the report to the MEM cloud to assess the trustworthiness of the platform according to the admin-configured device compliance rules.
+7. The device then sends the report to the Microsoft Endpoint Manager cloud to assess the trustworthiness of the platform according to the admin-configured device compliance rules.
 
 8. Conditional access, along with device-compliance state then decides to allow or deny access.
 

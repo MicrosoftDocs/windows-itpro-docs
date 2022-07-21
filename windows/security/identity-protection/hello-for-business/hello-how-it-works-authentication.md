@@ -2,12 +2,8 @@
 title: How Windows Hello for Business works - Authentication
 description: Learn about the authentication flow for  Windows Hello for Business.
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
-author: mapalko
-ms.author: mapalko
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -24,7 +20,7 @@ ms.reviewer:
 
 Windows Hello for Business authentication is passwordless, two-factor authentication.  Authenticating with Windows Hello for Business provides a convenient sign-in experience that authenticates the user to both Azure Active Directory and Active Directory resources.
 
-Azure Active Directory joined devices authenticate to Azure during sign-in and can optionally authenticate to Active Directory. Hybrid Azure Active Directory joined devices authenticate to Active Directory during sign-in, and authenticate to Azure Active Directory in the background.
+Azure Active Directory-joined devices authenticate to Azure during sign-in and can optionally authenticate to Active Directory. Hybrid Azure Active Directory-joined devices authenticate to Active Directory during sign-in, and authenticate to Azure Active Directory in the background.
 
 - [Azure AD join authentication to Azure Active Directory](#azure-ad-join-authentication-to-azure-active-directory)
 - [Azure AD join authentication to Active Directory using Azure AD Kerberos (cloud trust preview)](#azure-ad-join-authentication-to-active-directory-using-azure-ad-kerberos-cloud-trust-preview)
@@ -39,7 +35,7 @@ Azure Active Directory joined devices authenticate to Azure during sign-in and c
 ![Azure AD join authentication to Azure Active Directory.](images/howitworks/auth-aadj-cloud.png)
 
 > [!NOTE]
-> All Azure AD joined devices authenticate with Windows Hello for Business to Azure AD the same way. The Windows Hello for Business trust type only impacts how the device authenticates to on-premises AD.
+> All Azure AD-joined devices authenticate with Windows Hello for Business to Azure AD the same way. The Windows Hello for Business trust type only impacts how the device authenticates to on-premises AD.
 
 | Phase  | Description  |
 | :----: | :----------- |
@@ -51,7 +47,7 @@ Azure Active Directory joined devices authenticate to Azure during sign-in and c
 
 ## Azure AD join authentication to Active Directory using Azure AD Kerberos (cloud trust preview)
 
-![Azure AD join authentication to Azure Active Directory.](images/howitworks/auth-aadj-cloudtrust-kerb.png)
+![Azure Active Directory join authentication to Azure AD.](images/howitworks/auth-aadj-cloudtrust-kerb.png)
 
 | Phase  | Description  |
 | :----: | :----------- |

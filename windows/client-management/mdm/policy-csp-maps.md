@@ -14,8 +14,6 @@ manager: dansimp
 
 # Policy CSP - Maps
 
-
-
 <hr/>
 
 <!--Policies-->
@@ -30,7 +28,6 @@ manager: dansimp
   </dd>
 </dl>
 
-
 <hr/>
 
 <!--Policy-->
@@ -42,6 +39,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -85,6 +83,7 @@ The following list shows the supported values:
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -128,3 +127,6 @@ The following list shows the supported values:
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

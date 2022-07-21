@@ -2,11 +2,9 @@
 title: Manage additional Windows Update settings
 description: In this article, learn about additional settings to control the behavior of Windows Update.
 ms.prod: w10
-ms.mktglfcycl: deploy
-audience: itpro
 ms.localizationpriority: medium
-ms.audience: itpro
-author: jaimeo
+author: aczechowski
+ms.author: aaroncz
 manager: dougeby
 ms.topic: article
 ms.custom: seo-marvel-apr2020

@@ -75,9 +75,10 @@ Set the following registry keys to enable HVCI. This provides exactly the same s
 <!--This comment ensures that the Important above and the Warning below don't merge together. -->
 
 > [!IMPORTANT]
+>
 > - Among the commands that follow, you can choose settings for **Secure Boot** and **Secure Boot with DMA**. In most situations, we recommend that you choose **Secure Boot**. This option provides Secure Boot with as much protection as is supported by a given computer’s hardware. A computer with input/output memory management units (IOMMUs) will have Secure Boot with DMA protection. A computer without IOMMUs will simply have Secure Boot enabled.
 >
->   In contrast, with **Secure Boot with DMA**, the setting will enable Secure Boot—and VBS itself—only on a computer that supports DMA, that is, a computer with IOMMUs. With this setting, any computer without IOMMUs will not have VBS or HVCI protection, although it can still have WDAC enabled.
+> - In contrast, with **Secure Boot with DMA**, the setting will enable Secure Boot—and VBS itself—only on a computer that supports DMA, that is, a computer with IOMMUs. With this setting, any computer without IOMMUs will not have VBS or HVCI protection, although it can still have Windows Defender Application Control enabled.
 >
 > - All drivers on the system must be compatible with virtualization-based protection of code integrity; otherwise, your system may fail. We recommend that you enable these features on a group of test computers before you enable them on users' computers.
 
@@ -222,7 +223,7 @@ Value | Description
 **4.** | If present, Secure Memory Overwrite is available.
 **5.** | If present, NX protections are available.
 **6.** | If present, SMM mitigations are available.
-**7.** | If present, Mode Based Execution Control is available.
+**7.** | If present, MBEC/GMET is available.
 **8.** | If present, APIC virtualization is available.
 
 #### InstanceIdentifier
@@ -242,7 +243,7 @@ Value | Description
 **4.** | If present, Secure Memory Overwrite is needed.
 **5.** | If present, NX protections are needed.
 **6.** | If present, SMM mitigations are needed.
-**7.** | If present, Mode Based Execution Control is needed.
+**7.** | If present, MBEC/GMET is needed.
 
 #### SecurityServicesConfigured
 
@@ -312,7 +313,7 @@ C. If you experience a critical error during boot or your system is unstable aft
 
 ## HVCI deployment in virtual machines
 
-HVCI can protect a Hyper-V virtual machine, just as it would a physical machine. The steps to enable WDAC are the same from within the virtual machine.
+HVCI can protect a Hyper-V virtual machine, just as it would a physical machine. The steps to enable Windows Defender Application Control are the same from within the virtual machine.
 
 WDAC protects against malware running in the guest virtual machine. It does not provide additional protection from the host administrator. From the host, you can disable WDAC for a virtual machine:
 

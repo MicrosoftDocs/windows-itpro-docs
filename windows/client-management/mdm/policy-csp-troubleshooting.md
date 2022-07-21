@@ -12,8 +12,6 @@ ms.date: 09/27/2019
 
 # Policy CSP - Troubleshooting
 
-
-
 <hr/>
 
 <!--Policies-->
@@ -32,11 +30,13 @@ ms.date: 09/27/2019
 <a href="" id="troubleshooting-allowrecommendations"></a>**Troubleshooting/AllowRecommendations**  
 
 <!--SupportedSKUs-->
+The table below shows the applicability of Windows:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|Yes|
+|Windows SE|No|Yes|
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
@@ -54,7 +54,7 @@ ms.date: 09/27/2019
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows IT admins to configure how to apply recommended troubleshooting for known problems on the devices in their domains or IT environments.
+This policy setting allows IT admins to configure, how to apply recommended troubleshooting for known problems on the devices in their domains or IT environments.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -66,17 +66,17 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-This is a numeric policy setting with merge algorithm (lowest value is the most secure) that uses the most restrictive settings for complex manageability scenarios.
+This setting is a numeric policy setting with merge algorithm (lowest value is the most secure) that uses the most restrictive settings for complex manageability scenarios.
 
 Supported values:  
--   0 (default) - Turn this feature off.
--   1 - Turn this feature off but still apply critical troubleshooting.
+-   0 (default) - Turn off this feature.
+-   1 - Turn off this feature but still apply critical troubleshooting.
 -   2 - Notify users when recommended troubleshooting is available, then allow the user to run or ignore it.
 -   3 - Run recommended troubleshooting automatically and notify the user after it ran successfully.
 -   4 - Run recommended troubleshooting automatically without notifying the user.
 -   5 - Allow the user to choose their own recommended troubleshooting settings.
 
-By default, this policy is not configured and the SKU based defaults are used for managed devices. Current policy values for SKU's are as follows:
+By default, this policy isn't configured and the SKU based defaults are used for managed devices. Current policy values for SKUs are as follows:
 
 |SKU|Unmanaged Default|Managed Default|
 |--- |--- |--- |
@@ -98,3 +98,6 @@ By default, this policy is not configured and the SKU based defaults are used fo
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

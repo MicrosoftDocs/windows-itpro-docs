@@ -4,7 +4,6 @@ description: The Get Inventory operation retrieves information from the Microsof
 MS-HAID:
 - 'p\_phdevicemgmt.get\_seatblock'
 - 'p\_phDeviceMgmt.get\_inventory'
-ms.assetid: C5485722-FC49-4358-A097-74169B204E74
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp

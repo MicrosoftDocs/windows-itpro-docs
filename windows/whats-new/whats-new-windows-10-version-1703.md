@@ -1,17 +1,14 @@
 ---
 title: What's new in Windows 10, version 1703
 description: New and updated features in Windows 10, version 1703 (also known as the Creators Updated).
-keywords: ["What's new in Windows 10", "Windows 10", "creators update"]
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.localizationpriority: high
-ms.assetid: dca7c655-c4f6-45f8-aa02-64187b202617
+ms.localizationpriority: medium
 ms.reviewer: 
-author: greg-lindsay
-manager: laurawi
-ms.author: greglin
+author: aczechowski
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
+ROBOTS: NOINDEX
 ---
 
 # What's new in Windows 10, version 1703 for IT Pros
@@ -43,8 +40,6 @@ Both the desktop and kiosk wizards include an option to remove pre-installed sof
 ### Azure Active Directory join in bulk
 
 Using the new wizards in Windows Configuration Designer, you can [create provisioning packages to enroll devices in Azure Active Directory](/windows/configuration/provisioning-packages/provisioning-packages#configuration-designer-wizards). Azure AD join in bulk is available in the desktop, mobile, kiosk, and Surface Hub wizards.
-
-![get bulk token action in wizard.](images/bulk-token.png)
 
 
 ### Windows Spotlight
@@ -100,7 +95,6 @@ For details, see [MBR2GPT.EXE](/windows/deployment/mbr-to-gpt).
 
 New features in Microsoft Defender for Endpoint for Windows 10, version 1703 include:
 - **Detection**: Enhancements to the detection capabilities include:
-  - [Use the threat intelligence API to create custom alerts](/windows/threat-protection/windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection) - Understand threat intelligence concepts, enable the threat intel application, and create custom threat intelligence alerts for your organization.
   - Improvements on OS memory and kernel sensors to enable detection of attackers who are using in-memory and kernel-level attacks
   - Upgraded detections of ransomware and other advanced attacks
   - Historical detection capability ensures new detection rules apply to up to six months of stored data to detect previous attacks that might not have been noticed
@@ -125,27 +119,27 @@ You can read more about ransomware mitigations and detection capability in Micro
 Get a quick, but in-depth overview of Microsoft Defender for Endpoint for Windows 10 and the new capabilities in Windows 10, version 1703 see [Microsoft Defender for Endpoint for Windows 10 Creators Update](/windows/deployment/deploy-whats-new).
 
 ### Microsoft Defender Antivirus
-Windows Defender is now called Microsoft Defender Antivirus, and we've [increased the breadth of the documentation library for enterprise security admins](/windows/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10).
+Windows Defender is now called Microsoft Defender Antivirus, and we've [increased the breadth of the documentation library for enterprise security admins](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows).
 
 The new library includes information on:
-- [Deploying and enabling AV protection](/windows/threat-protection/microsoft-defender-antivirus/deploy-microsoft-defender-antivirus)
-- [Managing updates](/windows/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus)
-- [Reporting](/windows/threat-protection/microsoft-defender-antivirus/report-monitor-microsoft-defender-antivirus)
-- [Configuring features](/windows/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features)
-- [Troubleshooting](/windows/threat-protection/microsoft-defender-antivirus/troubleshoot-microsoft-defender-antivirus)
+- [Deploying and enabling AV protection](/microsoft-365/security/defender-endpoint/deploy-microsoft-defender-antivirus)
+- [Managing updates](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus)
+- [Reporting](/microsoft-365/security/defender-endpoint/report-monitor-microsoft-defender-antivirus)
+- [Configuring features](/microsoft-365/security/defender-endpoint/configure-microsoft-defender-antivirus-features)
+- [Troubleshooting](/microsoft-365/security/defender-endpoint/troubleshoot-microsoft-defender-antivirus)
 
 Some of the highlights of the new library include:
-- [Evaluation guide for Microsoft Defender AV](/windows/threat-protection/microsoft-defender-antivirus//evaluate-microsoft-defender-antivirus)
-- [Deployment guide for Microsoft Defender AV in a virtual desktop infrastructure environment](/windows/threat-protection/microsoft-defender-antivirus/deployment-vdi-microsoft-defender-antivirus)
+- [Evaluation guide for Microsoft Defender AV](/microsoft-365/security/defender-endpoint/evaluate-microsoft-defender-antivirus)
+- [Deployment guide for Microsoft Defender AV in a virtual desktop infrastructure environment](/microsoft-365/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus)
 
 New features for Microsoft Defender AV in Windows 10, version 1703 include:
 
-- [Updates to how the Block at First Sight feature can be configured](/windows/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
-- [The ability to specify the level of cloud-protection](/windows/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus)
-- [Microsoft Defender Antivirus protection in the Windows Defender Security Center app](/windows/threat-protection/microsoft-defender-antivirus/windows-defender-security-center-antivirus)
+- [Updates to how the Block at First Sight feature can be configured](/microsoft-365/security/defender-endpoint/configure-block-at-first-sight-microsoft-defender-antivirus)
+- [The ability to specify the level of cloud-protection](/microsoft-365/security/defender-endpoint/specify-cloud-protection-level-microsoft-defender-antivirus)
+- [Microsoft Defender Antivirus protection in the Windows Defender Security Center app](/microsoft-365/security/defender-endpoint/microsoft-defender-security-center-antivirus)
 
 
-In Windows 10, version 1607, we [invested heavily in helping to protect against ransomware](https://blogs.windows.com/business/2016/11/11/defending-against-ransomware-with-windows-10-anniversary-update/#UJlHc6SZ2Zm44jCt.97), and we continue that investment in version 1703 with [updated behavior monitoring and always-on real-time protection](/windows/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus).
+In Windows 10, version 1607, we [invested heavily in helping to protect against ransomware](https://blogs.windows.com/business/2016/11/11/defending-against-ransomware-with-windows-10-anniversary-update/#UJlHc6SZ2Zm44jCt.97), and we continue that investment in version 1703 with [updated behavior monitoring and always-on real-time protection](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus).
 
 You can read more about ransomware mitigations and detection capability in Microsoft Defender AV in the [Microsoft Malware Protection Center blog](https://blogs.technet.microsoft.com/mmpc/category/research/ransomware/).
 
@@ -167,7 +161,7 @@ You can now reset a forgotten PIN without deleting company managed data or apps 
 
 For Windows desktops, users are able to reset a forgotten PIN through **Settings > Accounts > Sign-in options**.
 
-For more details, check out [What if I forget my PIN?](/windows/security/identity-protection/hello-for-business/hello-features#pin-reset).
+For more details, check out [What if I forget my PIN?](/windows/security/identity-protection/hello-for-business/hello-feature-pin-reset).
 
 ### Windows Information Protection (WIP) and Azure Active Directory (Azure AD)
 Microsoft Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your allowed apps, your WIP-protection level, and how to find enterprise data on the network. For more info, see [Create a Windows Information Protection (WIP) policy using Microsoft Intune](/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune) and [Associate and deploy your Windows Information Protection (WIP) and VPN policies by using Microsoft Intune](/windows/threat-protection/windows-information-protection/create-vpn-and-wip-policy-using-intune).
@@ -186,11 +180,11 @@ Windows Update for Business managed devices are now able to defer feature update
 
 ### Windows Insider for Business
 
-We recently added the option to download Windows 10 Insider Preview builds using your corporate credentials in Azure Active Directory (AAD). By enrolling devices in AAD, you increase the visibility of feedback submitted by users in your organization – especially on features that support your specific business needs. For details, see [Windows Insider Program for Business](/windows/deployment/update/waas-windows-insider-for-business).
+We recently added the option to download Windows 10 Insider Preview builds using your corporate credentials in Azure Active Directory (Azure AD). By enrolling devices in Azure AD, you increase the visibility of feedback submitted by users in your organization, especially on features that support your specific business needs. For details, see [Windows Insider Program for Business](/windows-insider/business/register).
 
 ### Optimize update delivery
 
-With changes delivered in Windows 10, version 1703, [Express updates](/windows/deployment/update/waas-optimize-windows-10-updates#express-update-delivery) are now fully supported with Microsoft Endpoint Configuration Manager, starting with version 1702 of Configuration Manager, as well as with other third-party updating and management products that [implement this new functionality](/windows-server/administration/windows-server-update-services/deploy/express-update-delivery-isv-support). This is in addition to current Express support on Windows Update, Windows Update for Business and WSUS.
+With changes delivered in Windows 10, version 1703, [express updates](/windows/deployment/do/waas-optimize-windows-10-updates#express-update-delivery) are now fully supported with Microsoft Endpoint Configuration Manager, starting with version 1702 of Configuration Manager, as well as with other third-party updating and management products that [implement this new functionality](/windows-server/administration/windows-server-update-services/deploy/express-update-delivery-isv-support). This is in addition to current Express support on Windows Update, Windows Update for Business and WSUS.
 
 >[!NOTE]
 > The above changes can be made available to Windows 10, version 1607, by installing the April 2017 cumulative update.
@@ -232,7 +226,6 @@ Some of the other new CSPs are:
 
 - The [EnterpriseAppVManagement CSP](/windows/client-management/mdm/enterpriseappvmanagement-csp) is used to manage virtual applications in Windows 10 PCs (Enterprise and Education editions) and enables App-V sequenced apps to be streamed to PCs even when managed by MDM.
 
-IT pros can use the new [MDM Migration Analysis Tool (MMAT)](https://aka.ms/mmat) to determine which Group Policy settings have been configured for a user or computer and cross-reference those settings against a built-in list of supported MDM policies. MMAT can generate both XML and HTML reports indicating the level of support for each Group Policy setting and MDM equivalents.
 
 [Learn more about new MDM capabilities.](/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew10)
 
@@ -244,7 +237,7 @@ For more info, see [Implement server-side support for mobile application managem
 
 ### MDM diagnostics
 
-In Windows 10, version 1703, we continue our work to improve the diagnostic experience for modern management. By introducing auto-logging for mobile devices, Windows will automatically collect logs when encountering an error in MDM, eliminating the need to have always-on logging for memory-constrained devices. Additionally, we are introducing [Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226) as an additional tool to help Support personnel quickly reduce issues to their root cause, while saving time and cost.
+In Windows 10, version 1703, we continue our work to improve the diagnostic experience for modern management. By introducing auto-logging for mobile devices, Windows will automatically collect logs when encountering an error in MDM, eliminating the need to have always-on logging for memory-constrained devices. Additionally, we are introducing [Microsoft Message Analyzer](/message-analyzer/microsoft-message-analyzer-operating-guide) as an additional tool to help Support personnel quickly reduce issues to their root cause, while saving time and cost.
 
 ### Application Virtualization for Windows (App-V)
 Previous versions of the Microsoft Application Virtualization Sequencer (App-V Sequencer) have required you to manually create your sequencing environment. Windows 10, version 1703 introduces two new PowerShell cmdlets, New-AppVSequencerVM and Connect-AppvSequencerVM, which automatically create your sequencing environment for you, including provisioning your virtual machine. Additionally, the App-V Sequencer has been updated to let you sequence or update multiple apps at the same time, while automatically capturing and storing your customizations as an App-V project template (.appvt) file, and letting you use PowerShell or Group Policy settings to automatically clean up your unpublished packages after a device restart.

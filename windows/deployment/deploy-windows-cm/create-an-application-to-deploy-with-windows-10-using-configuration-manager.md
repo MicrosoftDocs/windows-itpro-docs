@@ -1,17 +1,12 @@
 ---
 title: Create an app to deploy with Windows 10 using Configuration Manager
 description: Microsoft Microsoft Endpoint Manager supports deploying applications as part of the Windows 10 deployment process.
-ms.assetid: 2dfb2f39-1597-4999-b4ec-b063e8a8c90c
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
-keywords: deployment, task sequence, custom, customize
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.localizationpriority: medium
-ms.mktglfcycl: deploy
-ms.sitesec: library
-audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Structure of OMA DM provisioning files
 description: Learn about the structure of OMA DM provisioning files, for example how each message is composed of a header, specified by the SyncHdr element, and a message body.
-ms.assetid: 7bd3ef57-c76c-459b-b63f-c5a333ddc2bc
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -29,7 +28,7 @@ The following table shows the OMA DM versions that are supported.
 
 ## File format
 
-The following example shows the general structure of the XML document sent by the server using OMA DM version 1.2.1 for demonstration purposes only. The initial XML packages exchanged between client and server could contain additional XML tags. For a detailed description and samples for those packages, see the [OMA Device Management Protocol 1.2.1](https://go.microsoft.com/fwlink/p/?LinkId=526902) specification.
+The following example shows the general structure of the XML document sent by the server using OMA DM version 1.2.1 for demonstration purposes only. The initial XML packages exchanged between client and server could contain additional XML tags. For a detailed description and samples for those packages, see the [OMA Device Management Protocol 1.2.1](https://www.openmobilealliance.org/release/DM/V1_2_1-20080617-A/OMA-TS-DM_Protocol-V1_2_1-20080617-A.pdf) specification.
 
 ```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
@@ -107,7 +106,7 @@ SyncBody contains one or more DM commands. The SyncBody can contain multiple DM 
 
 **Code example**
 
-The following example shows the body component of a DM message. In this example, SyncBody contains only one command, Get. This is indicated by the &lt;Final /&gt; tag that occurs immediately after the terminating tag for the Get command.
+The following example shows the body component of a DM message. In this example, SyncBody contains only one command, Get. This command is indicated by the &lt;Final /&gt; tag that occurs immediately after the terminating tag for the Get command.
 
 ```xml
 <SyncBody>
@@ -124,7 +123,7 @@ The following example shows the body component of a DM message. In this example,
 </SyncBody>
 ```
 
-When using SyncML for OMA DM provisioning, a LocURI in SyncBody can have a "." as a valid segment name only in the first segment. However, a "." is not a valid segment name for the other segments. For example, the following LocURI is not valid because the segment name of the seventh segment is a ".".
+When SyncML for OMA DM provisioning is being used, a LocURI in SyncBody can have a "." as a valid segment name only in the first segment. However, a "." isn't a valid segment name for the other segments. For example, the following LocURI isn't valid because the segment name of the seventh segment is a ".".
 
 ```xml
 <LocURI>./Vendor/MSFT/Registry/HKLM/Security/./Test</LocURI>

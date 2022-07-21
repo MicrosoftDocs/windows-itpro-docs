@@ -2,7 +2,6 @@
 title: Introduction to the page file
 description: Learn about the page files in Windows. A page file is an optional, hidden system file on a hard disk.
 ms.prod: w10
-ms.sitesec: library
 ms.topic: troubleshooting
 author: Deland-Han
 ms.localizationpriority: medium
@@ -35,7 +34,7 @@ For example, the following Windows servers require page files:
 - Certificate servers
 - ADAM/LDS servers
 
-This is because the algorithm of the database cache for Extensible Storage Engine (ESENT, or ESE for Microsoft Exchange Server) depends on the "\Memory\Transition Pages RePurposed/sec" performance monitor counter. A page file is required to make sure that the database cache can release memory if other services or applications request memory.
+This requirement is because the algorithm of the database cache for Extensible Storage Engine (ESENT, or ESE for Microsoft Exchange Server) depends on the "\Memory\Transition Pages RePurposed/sec" performance monitor counter. A page file is required to ensure that the database cache can release memory if other services or applications request memory.
 
 For Windows Server 2012 Hyper-V and Windows Server 2012 R2 Hyper-V, the page file of the management OS (commonly called the host OS) should be left at the default of setting of "System Managed".
 
