@@ -13,6 +13,9 @@ manager: dougeby
 
 # How to disable Windows Information Protection (WIP)
 
+[!INCLUDE [wip-deprecation](includes/wip-deprecation.md)]
+<!-- 6010051 -->
+
 _Applies to:_
 
 - Windows 10
