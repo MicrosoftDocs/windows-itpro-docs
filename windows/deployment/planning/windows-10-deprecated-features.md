@@ -1,6 +1,7 @@
 ---
-title: Windows 10 features we're no longer developing
-description: Review the list of features that are no longer being developed in Windows 10.
+title: Deprecated features in Windows client
+description: Review the list of features that Microsoft is no longer developing in Windows 10 and Windows 11.
+ms.date: 07/21/2022
 ms.prod: w10
 ms.technology: windows
 ms.localizationpriority: medium
@@ -12,27 +13,30 @@ ms.topic: article
 ms.collection: highpri
 ---
 
-# Windows 10 features we're no longer developing
+# Deprecated features for Windows client
 
 _Applies to:_
 
 - Windows 10
+- Windows 11
 
-Each version of Windows 10 adds new features and functionality; occasionally we also remove features and functionality, often because we've added a better option. Below are the details about the features and functionalities that are no longer being developed in Windows 10. For information about features that have been removed, see [Features we removed](windows-10-removed-features.md).
+Each version of Windows client adds new features and functionality. Occasionally, new versions also remove features and functionality, often because they've added a newer option. This article provides details about the features and functionalities that are no longer being developed in Windows client. For more information about features that have been removed, see [Windows features removed](windows-10-removed-features.md).
 
-For information about features in Windows 11, see [Feature deprecations and removals](https://www.microsoft.com/windows/windows-11-specifications#table3).
+For more information about features in Windows 11, see [Feature deprecations and removals](https://www.microsoft.com/windows/windows-11-specifications#table3).
 
-The features described below are no longer being actively developed, and might be removed in a future update. Some features have been replaced with other features or functionality and some are now available from other sources.
+To understand the distinction between _deprecation_ and _removal_, see [Windows client features lifecycle](features-lifecycle.md).
+
+The features in this article are no longer being actively developed, and might be removed in a future update. Some features have been replaced with other features or functionality and some are now available from other sources.
 
 **The following list is subject to change and might not include every affected feature or functionality.**
 
 > [!NOTE]
 > If you have feedback about the proposed replacement of any of these features, you can use the [Feedback Hub app](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app).
 
-|Feature    |  Details and mitigation  | Announced in version |
+|Feature    |  Details and mitigation  | Deprecation announced |
 | ----------- | --------------------- | ---- |
-| BitLocker To Go Reader | **Note: BitLocker to Go as a feature is still supported.**<br>Reading of BitLocker-protected removable drives ([BitLocker To Go](/windows/security/information-protection/bitlocker/bitlocker-to-go-faq)) from Windows XP or Windows Vista in later operating systems is deprecated and might be removed in a future release of Windows 10/11.<br>The following items might not be available in a future release of Windows client:<br>- ADMX policy: **Allow access to BitLocker-protected removable data drives from earlier versions of Windows**<br>- Command line parameter: [`manage-bde -DiscoveryVolumeType`](/windows-server/administration/windows-commands/manage-bde-on) (-dv)<br>- Catalog file: **c:\windows\BitLockerDiscoveryVolumeContents**<br>- BitLocker 2 Go Reader app: **bitlockertogo.exe** and associated files  | 21H1 |
-| Internet Explorer (IE) 11 | The IE11 desktop application will end support for certain operating systems starting June 15, 2022. For more information, see [Internet Explorer 11](/lifecycle/products/internet-explorer-11). | 21H1 |
+| Windows Information Protection <!-- 6010051 --> | [Windows Information Protection](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) will no longer be developed in future versions of Windows. For more information, see [Announcing sunset of Windows Information Protection (WIP)](https://go.microsoft.com/fwlink/?linkid=2202124).<br> <br>For your data protection needs, Microsoft recommends that you use [Microsoft Purview Information Protection](/microsoft-365/compliance/information-protection) and [Microsoft Purview Data Loss Prevention](/microsoft-365/compliance/dlp-learn-about-dlp). | July 2022 |
+| BitLocker To Go Reader | **Note: BitLocker to Go as a feature is still supported.**<br>Reading of BitLocker-protected removable drives ([BitLocker To Go](/windows/security/information-protection/bitlocker/bitlocker-to-go-faq)) from Windows XP or Windows Vista in later operating systems is deprecated and might be removed in a future release of Windows client.<br>The following items might not be available in a future release of Windows client:<br>- ADMX policy: **Allow access to BitLocker-protected removable data drives from earlier versions of Windows**<br>- Command line parameter: [`manage-bde -DiscoveryVolumeType`](/windows-server/administration/windows-commands/manage-bde-on) (-dv)<br>- Catalog file: **c:\windows\BitLockerDiscoveryVolumeContents**<br>- BitLocker 2 Go Reader app: **bitlockertogo.exe** and associated files  | 21H1 |
 | Personalization roaming | Roaming of Personalization settings (including wallpaper, slideshow, accent colors, and lock screen images) is no longer being developed and might be removed in a future release. | 21H1 |
 | Windows Management Instrumentation Command line (WMIC) tool. | The WMIC tool is deprecated in Windows 10, version 21H1 and the 21H1 General Availability Channel release of Windows Server. This tool is superseded by [Windows PowerShell for WMI](/powershell/scripting/learn/ps101/07-working-with-wmi). Note: This deprecation only applies to the [command-line management tool](/windows/win32/wmisdk/wmic). WMI itself isn't affected. | 21H1 |
 | Timeline | Starting in July 2021, if you have your activity history synced across your devices through your Microsoft account (MSA), you can't upload new activity in Timeline. For more information, see [Get help with timeline](https://support.microsoft.com/windows/get-help-with-timeline-febc28db-034c-d2b0-3bbe-79aa0c501039).| 20H2 |
