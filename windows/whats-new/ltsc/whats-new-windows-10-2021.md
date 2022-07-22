@@ -143,7 +143,7 @@ Windows Hello enhancements include:
 - Windows Hello for Business now has Hybrid Azure Active Directory support and phone number sign-in (Microsoft account). FIDO2 security key support is expanded to Azure Active Directory hybrid environments, enabling enterprises with hybrid environments to take advantage of [passwordless authentication](/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). For more information, see [Expanding Azure Active Directory support for FIDO2 preview to hybrid environments](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/expanding-azure-active-directory-support-for-fido2-preview-to/ba-p/981894).
 - With specialized hardware and software components available on devices shipping with Windows 10, version 20H2 configured out of factory, Windows Hello now offers added support for virtualization-based security with supporting fingerprint and face sensors. This feature isolates and secures a user's biometric authentication data.
 - Windows Hello multi-camera support is added, allowing users to choose an external camera priority when both external and internal Windows Hello-capable cameras are present.
-- [Windows Hello FIDO2 certification](https://fidoalliance.org/microsoft-achieves-fido2-certification-for-windows-hello/): Windows Hello is now a FIDO2 Certified authenticator and enables password-less sign in for websites supporting FIDO2 authentication, such as Microsoft account and Azure AD.
+- [Windows Hello FIDO2 certification](https://fidoalliance.org/microsoft-achieves-fido2-certification-for-windows-hello/): Windows Hello is now a FIDO2 Certified authenticator and enables password-less sign-in for websites supporting FIDO2 authentication, such as Microsoft account and Azure AD.
 - [Streamlined Windows Hello PIN reset experience](/windows/security/identity-protection/hello-for-business/hello-videos#windows-hello-for-business-forgotten-pin-user-experience): Microsoft account users have a revamped Windows Hello PIN reset experience with the same look and feel as signing in on the web.
 - [Remote Desktop with Biometrics](/windows/security/identity-protection/hello-for-business/hello-feature-remote-desktop#remote-desktop-with-biometrics): Azure Active Directory and Active Directory users using Windows Hello for Business can use biometrics to authenticate to a remote desktop session.
 
@@ -189,7 +189,6 @@ Windows Management Instrumentation (WMI) Group Policy Service (GPSVC) has a perf
 #### Key-rolling and Key-rotation
 
 This release also includes two new features called Key-rolling and Key-rotation enables secure rolling of Recovery passwords on MDM-managed Azure Active Directory devices on demand from Microsoft Intune/MDM tools or when a recovery password is used to unlock the BitLocker protected drive. This feature will help prevent accidental recovery password disclosure as part of manual BitLocker drive unlock by users.
-s
 ## Deployment
 
 ### SetupDiag

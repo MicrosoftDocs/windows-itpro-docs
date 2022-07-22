@@ -57,7 +57,7 @@ With Windows 10, you can create provisioning packages that let you quickly and e
 
 -   **Encrypt and recover your device with Azure Active Directory**. In addition to using a Microsoft Account, automatic [Device Encryption](/windows/security/threat-protection/overview-of-threat-mitigations-in-windows-10#device-encryption) can now encrypt your devices that are joined to an Azure Active Directory domain. When the device is encrypted, the BitLocker recovery key is automatically escrowed to Azure Active Directory. This escrow will make it easier to recover your BitLocker key online.
 -   **DMA port protection**. You can use the [DataProtection/AllowDirectMemoryAccess](/windows/client-management/mdm/policy-configuration-service-provider#dataprotection-allowdirectmemoryaccess) MDM policy to block DMA ports when the device is starting up. Also, when a device is locked, all unused DMA ports are turned off, but any devices that are already plugged into a DMA port will continue to work. When the device is unlocked, all DMA ports are turned back on.
--   **New Group Policy for configuring pre-boot recovery**. You can now configure the pre-boot recovery message and recover URL that is shown on the pre-boot recovery screen. For more info, see the [Configure pre-boot recovery message and URL](/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings#bkmk-configurepreboot) section in "BitLocker Group Policy settings".
+-   **New Group Policy for configuring pre-boot recovery**. You can now configure the pre-boot recovery message and recover URL that is shown on the pre-boot recovery screen. For more info, see the [Configure pre-boot recovery message and URL](/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings#bkmk-configurepreboot) section in "BitLocker Group Policy settings."
 
 [Learn how to deploy and manage BitLocker within your organization](/windows/device-security/bitlocker/bitlocker-overview).
 
@@ -101,7 +101,7 @@ In Windows 10, security auditing has added some improvements:
 
 In Windows 10, two new audit subcategories were added to the Advanced Audit Policy Configuration to provide greater granularity in audit events:
 -   [Audit Group Membership](/windows/device-security/auditing/audit-group-membership) Found in the Logon/Logoff audit category, the Audit Group Membership subcategory allows you to audit the group membership information in a user's sign-in token. Events in this subcategory are generated when group memberships are enumerated or queried on the PC where the sign-in session was created. For an interactive logon, the security audit event is generated on the PC that the user logged on to. For a network logon, such as accessing a shared folder on the network, the security audit event is generated on the PC hosting the resource.
-    When this setting is configured, one or more security audit events are generated for each successful sign in. You must also enable the **Audit Logon** setting under **Advanced Audit Policy Configuration\\System Audit Policies\\Logon/Logoff**. Multiple events are generated if the group membership information can't fit in a single security audit event.
+    When this setting is configured, one or more security audit events are generated for each successful sign-in. You must also enable the **Audit Logon** setting under **Advanced Audit Policy Configuration\\System Audit Policies\\Logon/Logoff**. Multiple events are generated if the group membership information can't fit in a single security audit event.
 -   [Audit PNP Activity](/windows/security/threat-protection/auditing/audit-pnp-activity) Found in the Detailed Tracking category, the Audit PNP Activity subcategory allows you to audit when plug and play detects an external device.
     Only Success audits are recorded for this category. If you don't configure this policy setting, no audit event is generated when an external device is detected by plug and play.
     A PnP audit event can be used to track down changes in system hardware and will be logged on the PC where the change took place. A list of hardware vendor IDs are included in the event.
@@ -132,7 +132,7 @@ The sign-in event ID 4624 has been updated to include more verbose information t
 1.  **MachineLogon** String: yes or no
     If the account that logged into the PC is a computer account, this field will be yes. Otherwise, the field is no.
 2.  **ElevatedToken** String: yes or no
-    If an account signed in to the PC through the "administrative sign in" method, this field will be yes. Otherwise, the field is no. Additionally, if this field is part of a split token, the linked sign-in ID (LSAP\_LOGON\_SESSION) will also be shown.
+    If an account signed in to the PC through the "administrative sign in"-method, this field will be yes. Otherwise, the field is no. Additionally, if this field is part of a split token, the linked sign-in ID (LSAP\_LOGON\_SESSION) will also be shown.
 3.  **TargetOutboundUserName** String
     **TargetOutboundUserDomain** String
     The username and domain of the identity that was created by the LogonUser method for outbound traffic.

@@ -245,7 +245,7 @@ Do you have shared devices deployed in your work place? **Fast sign-in** enables
 >[!IMPORTANT]
 >This is a private preview feature and therefore not meant or recommended for production purposes. This setting is not currently supported at this time.
 
-Until now, Windows sign in only supported the use of identities federated to ADFS or other providers that support the WS-Fed protocol. We're introducing **web sign-in**, a new way of signing into your Windows PC. Web sign-in enables Windows sign-in support for credentials not available on Windows. Web sign-in is restricted to only support Azure AD temporary access pass.
+Until now, Windows sign-in only supported the use of identities federated to ADFS or other providers that support the WS-Fed protocol. We're introducing **web sign-in**, a new way of signing into your Windows PC. Web sign-in enables Windows sign-in support for credentials not available on Windows. Web sign-in is restricted to only support Azure AD temporary access pass.
 
 **To try out web sign-in:**
 1. Azure AD Join your Windows 10 PC. (Web sign-in is only supported on Azure AD Joined PCs).
@@ -268,8 +268,7 @@ Android phone users, you can finally stop emailing yourself photos. With Your Ph
 
 For iPhone users, **Your Phone** app also helps you to link your phone to your PC. Surf the web on your phone, then send the webpage instantly to your computer to continue what you’re doing-read, watch, or browse-with all the benefits of a bigger screen. 
 
-> [!div class="mx-imgBorder"]
-> ![your phone.](images/your-phone.png "your phone")
+:::image type="content" source="images/your-phone.png" alt-text="Your phone.":::
 
 The desktop pin takes you directly to the **Your Phone** app for quicker access to your phone’s content. You can also go through the all apps list in Start, or use the Windows key and search for **Your Phone**. 
 
