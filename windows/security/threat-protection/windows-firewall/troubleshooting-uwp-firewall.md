@@ -1022,8 +1022,7 @@ these commands in an admin command prompt
 net events. **Netsh wfp show state** creates wfpstate.xml, which contains
 the current filters present on the machine.
 
-Unfortunately, collecting traces after the UWP network connectivity issue isn't
-always reliable.
+Unfortunately, collecting traces after the UWP network connectivity issue isn't always reliable.
 
 NetEvents on the device are stored in a buffer. Once that buffer has reached
 maximum capacity, the buffer will overwrite older net events. Due to the buffer
