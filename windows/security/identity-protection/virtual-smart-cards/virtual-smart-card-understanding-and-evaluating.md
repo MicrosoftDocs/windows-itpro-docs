@@ -2,10 +2,6 @@
 title: Understanding and Evaluating Virtual Smart Cards (Windows 10)
 description: Learn how smart card technology can fit into your authentication design. Find links to additional topics about virtual smart cards.
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp

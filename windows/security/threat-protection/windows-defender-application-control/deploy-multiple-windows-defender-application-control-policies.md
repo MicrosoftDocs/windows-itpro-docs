@@ -91,7 +91,7 @@ When merging, the policy type and ID of the leftmost/first policy specified is u
 
 ## Deploying multiple policies
 
-In order to deploy multiple Windows Defender Application Control policies, you must either deploy them locally by copying the `*.cip` policy files into the proper folder or by using the ApplicationControl CSP, which is supported by MEM Intune's Custom OMA-URI feature.
+In order to deploy multiple Windows Defender Application Control policies, you must either deploy them locally by copying the `*.cip` policy files into the proper folder or by using the ApplicationControl CSP, which is supported by Microsoft Endpoint Manager Intune's Custom OMA-URI feature.
 
 ### Deploying multiple policies locally
 
@@ -109,7 +109,14 @@ Multiple Windows Defender Application Control policies can be managed from an MD
 
 However, when policies are un-enrolled from an MDM server, the CSP will attempt to remove every policy from devices, not just the policies added by the CSP. The reason for this is that the ApplicationControl CSP doesn't track enrollment sources for individual policies, even though it will query all policies on a device, regardless if they were deployed by the CSP.
 
-See [ApplicationControl CSP](/windows/client-management/mdm/applicationcontrol-csp) for more information on deploying multiple policies, optionally using MEM Intune's Custom OMA-URI capability.
+See [ApplicationControl CSP](/windows/client-management/mdm/applicationcontrol-csp) for more information on deploying multiple policies, optionally using Microsoft Endpoint Manager Intune's Custom OMA-URI capability.
 
 > [!NOTE]
 > WMI and GP do not currently support multiple policies. Instead, customers who cannot directly access the MDM stack should use the [ApplicationControl CSP via the MDM Bridge WMI Provider](/windows/client-management/mdm/applicationcontrol-csp#powershell-and-wmi-bridge-usage-guidance) to manage Multiple Policy Format Windows Defender Application Control policies.
+
+### Known Issues in Multiple Policy Format
+
+* If the maximum number of policies is exceeded, the device may bluescreen referencing ci.dll with a bug check value of 0x0000003b. 
+* If policies are loaded without requiring a reboot such as `PS_UpdateAndCompareCIPolicy`, they will still count towards this limit. 
+* This may pose an especially large challenge if the value of `{PolicyGUID}.cip` changes between releases. It may result in a long window between a change and the resultant reboot.
+

@@ -31,7 +31,7 @@ You can configure the sync method in these ways:
 
 -   Through [Group Policy](uev-configuring-uev-with-group-policy-objects.md) settings
 
--   With the [System Center Configuration Pack](uev-configuring-uev-with-system-center-configuration-manager.md) for UE-V
+-   With the [Configuration Manager Pack](uev-configuring-uev-with-system-center-configuration-manager.md) for UE-V
 
 -   With [Windows PowerShell or Windows Management Instrumentation (WMI)](uev-administering-uev-with-windows-powershell-and-wmi.md)
 

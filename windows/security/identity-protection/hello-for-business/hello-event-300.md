@@ -1,14 +1,8 @@
 ---
 title: Event ID 300 - Windows Hello successfully created (Windows)
 description: This event is created when a Windows Hello for Business is successfully created and registered with Azure Active Directory (Azure AD).
-ms.assetid: 0DD59E75-1C5F-4CC6-BB0E-71C83884FF04
 ms.reviewer: 
-keywords: ngc
 ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
 author: GitPrakhar13
 ms.author: prsriva
 manager: dansimp

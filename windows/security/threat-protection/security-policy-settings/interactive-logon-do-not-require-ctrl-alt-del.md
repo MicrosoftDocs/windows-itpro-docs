@@ -36,6 +36,9 @@ Microsoft developed this feature to make it easier for users with certain types 
 
 A malicious user might install malware that looks like the standard logon dialog box for the Windows operating system, and capture a user's password. The attacker can then log on to the compromised account with whatever level of user rights that user has.
 
+> [!NOTE]
+> When the policy is defined, registry value **DisableCAD** located in **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System** is created. To revert the changes made by this policy, it is not enough to set its value to **Not defined**, this registry value needs to be removed as well.
+
 ### Possible values
 
 - Enabled

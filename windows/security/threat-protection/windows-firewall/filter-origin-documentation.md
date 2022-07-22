@@ -48,7 +48,7 @@ The blocking filters can be categorized under these filter origins:
     
     g.	Windows Service Hardening (WSH) default
 
-The next section describes the improvements made to audits 5157 and 5152, and how the above filter origins are used in these events. These improvements were added in Iron release.
+The next section describes the improvements made to audits 5157 and 5152, and how the above filter origins are used in these events. These improvements were added in the Windows Server 2022 and Windows 11 releases.
  
  ## Improved firewall audit 
  

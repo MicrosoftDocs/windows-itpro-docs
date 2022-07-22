@@ -11,7 +11,7 @@ ms.collection:
   - M365-modern-desktop
   - highpri
 ms.topic: tutorial
-ms.date: 05/12/2022
+ms.date: 07/12/2022
 ---
 
 # Demonstrate Autopilot deployment
@@ -42,13 +42,10 @@ You'll need the following components to complete this lab:
 
 | Component | Description |
 |:---|:---|
-|**Windows 10 installation media**|Windows 10 Professional or Enterprise ISO file for a supported version of Windows 10, general availability channel. If you don't already have an ISO to use,  download an evaluation version of Windows 10 Enterprise.|
+|**Windows 10 installation media**|Windows 10 Enterprise ISO file for a supported version of Windows 10, general availability channel. If you don't already have an ISO to use, download an [evaluation version of Windows 10 Enterprise](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).|
 |**Internet access**|If you're behind a firewall, see the detailed [networking requirements](/mem/autopilot/software-requirements#networking-requirements). Otherwise, just make sure that you have a connection to the internet.|
 |**Hyper-V or a physical device running Windows 10**|The guide assumes that you'll use a Hyper-V VM, and provides instructions to install and configure Hyper-V if needed. To use a physical device, skip the steps to install and configure Hyper-V.|
 |**An account with Azure Active Directory (Azure AD) Premium license**|This guide will describe how to get a free 30-day trial Azure AD Premium subscription that can be used to complete the lab.|
-
-> [!NOTE]
-> The Microsoft Evaluation Center is temporarily unavailable. To access Windows client evaluation media, see [Accessing trials and kits for Windows (Eval Center workaround)](https://techcommunity.microsoft.com/t5/windows-11/accessing-trials-and-kits-for-windows-eval-center-workaround/m-p/3361125).<!-- 6049663 -->
 
 ## Procedures
 
@@ -142,10 +139,7 @@ After you determine the ISO file location and the name of the appropriate networ
 
 ### Set ISO file location
 
-Download an ISO file for an evaluation version of the latest release of Windows 10 Enterprise. Choose a 64-bit version.
-
-> [!NOTE]
-> The Microsoft Evaluation Center is temporarily unavailable. To access this download, see [Accessing trials and kits for Windows (Eval Center workaround)](https://techcommunity.microsoft.com/t5/windows-11/accessing-trials-and-kits-for-windows-eval-center-workaround/m-p/3361125).<!-- 6049663 -->
+Download an ISO file for an evaluation version of the latest release of Windows 10 Enterprise from the [Evaluation Center](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise). Choose a 64-bit version.
 
 After you download an ISO file, the name will be long. For example, `19042.508.200927-1902.20h2_release_svc_refresh_CLIENTENTERPRISEEVAL_OEMRET_x64FRE_en-us.iso`
 
@@ -180,7 +174,8 @@ All VM data will be created under the current path in your PowerShell prompt. Co
 
 ```powershell
 New-VMSwitch -Name AutopilotExternal -AllowManagementOS $true -NetAdapterName (Get-NetAdapter | Where-Object {$_.Status -eq "Up" -and !$_.Virtual}).Name
-New-VM -Name WindowsAutopilot -MemoryStartupBytes 2GB -BootDevice VHD -NewVHDPath .\VMs\WindowsAutopilot.vhdx -Path .\VMData -NewVHDSizeBytes 80GB -Generation 2 -Switch AutopilotExternal
+New-VM -Name WindowsAutopilot -MemoryStartupBytes 4GB -BootDevice VHD -NewVHDPath .\VMs\WindowsAutopilot.vhdx -Path .\VMData -NewVHDSizeBytes 80GB -Generation 2 -Switch AutopilotExternal
+Set-VMProcessor WindowsAutopilot -Count 2
 Add-VMDvdDrive -Path c:\iso\win10-eval.iso -VMName WindowsAutopilot
 Start-VM -VMName WindowsAutopilot
 ```
@@ -613,7 +608,7 @@ To use the device (or VM) for other purposes after completion of this lab, you n
 
 ### Delete (deregister) Autopilot device
 
-You need to delete (or retire, or factory reset) the device from Intune before deregistering the device from Autopilot. To delete the device from Intune (not Azure AD), log into the MEM admin center, then go to **Intune > Devices > All Devices**. Select the device you want to delete, then select the **Delete** button along the top menu.
+You need to delete (or retire, or factory reset) the device from Intune before deregistering the device from Autopilot. To delete the device from Intune (not Azure AD), log into the Microsoft Endpoint Manager admin center, then go to **Intune > Devices > All Devices**. Select the device you want to delete, then select the **Delete** button along the top menu.
 
 > [!div class="mx-imgBorder"]
 > ![Delete device step 1.](images/delete-device1.png)
