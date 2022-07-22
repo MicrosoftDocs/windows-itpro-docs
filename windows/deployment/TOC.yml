@@ -65,11 +65,11 @@
               href: planning/features-lifecycle.md
             - name: Features we're no longer developing
               items:
-                - name: Windows 10 deprecated features
+                - name: Windows deprecated features
                   href: planning/windows-10-deprecated-features.md
             - name: Features we removed
               items:
-                - name: Windows 10 features removed
+                - name: Windows features removed
                   href: planning/windows-10-removed-features.md       
 
     - name: Prepare
