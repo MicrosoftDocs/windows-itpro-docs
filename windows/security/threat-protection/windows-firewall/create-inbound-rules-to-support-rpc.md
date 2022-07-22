@@ -20,7 +20,7 @@ ms.technology: windows-sec
 -   Windows 11
 -   Windows Server 2016 and above
 
-To allow inbound remote procedure call (RPC) network traffic, use the Windows Defender Firewall with Advanced Security node in the Group Policy Management console to create two firewall rules. The first rule allows incoming network packets on TCP port 135 to the RPC Endpoint Mapper service. The incoming traffic consists of requests to communicate with a specified network service. The RPC Endpoint Mapper replies with a dynamically-assigned port number that the client must use to communicate with the service. The second rule allows the network traffic that is sent to the dynamically-assigned port number. Using the two rules configured as described in this topic helps to protect your device by allowing network traffic only from devices that have received RPC dynamic port redirection and to only those TCP port numbers assigned by the RPC Endpoint Mapper.
+To allow inbound remote procedure call (RPC) network traffic, use the Windows Defender Firewall with Advanced Security node in the Group Policy Management console to create two firewall rules. The first rule allows incoming network packets on TCP port 135 to the RPC Endpoint Mapper service. The incoming traffic consists of requests to communicate with a specified network service. The RPC Endpoint Mapper replies with a dynamically assigned port number that the client must use to communicate with the service. The second rule allows the network traffic that is sent to the dynamically assigned port number. Using the two rules configured as described in this topic helps to protect your device by allowing network traffic only from devices that have received RPC dynamic port redirection and to only those TCP port numbers assigned by the RPC Endpoint Mapper.
 
 **Administrative credentials**
 
@@ -77,7 +77,7 @@ In this topic:
 
 3.  On the **Program** page, click **This Program Path**, and then type the path to the executable file that hosts the network service. Click **Customize**.
 
-4.  In the **Customize Service Settings** dialog box, click **Apply to this service**, and then select the service that you want to allow. If the service does not appear in the list, then click **Apply to service with this service short name**, and then type the short name of the service in the text box.
+4.  In the **Customize Service Settings** dialog box, click **Apply to this service**, and then select the service that you want to allow. If the service doesn't appear in the list, then click **Apply to service with this service short name**, and then type the short name of the service in the text box.
 
 5.  Click **OK**, and then click **Next**.
 
