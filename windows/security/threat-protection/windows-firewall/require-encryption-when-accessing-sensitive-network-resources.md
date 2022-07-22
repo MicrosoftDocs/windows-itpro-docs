@@ -25,7 +25,7 @@ The use of authentication in the previously described goal ([Restrict Access to 
 For devices that share sensitive information over the network, Windows Defender Firewall with Advanced Security allows you to require that all such network traffic be encrypted. Using encryption can help you comply with regulatory and legislative requirements such as those found in the Federal Information Security Management Act of 2002 (FISMA), the Sarbanes-Oxley Act of 2002, the Health Insurance Portability and Accountability Act of 1996 (HIPAA), and other government and industry regulations. By creating connection security rules that apply to devices that host and exchange sensitive data, you can help protect the confidentiality of that data by encrypting it.
 
 The following illustration shows an encryption zone in an isolated domain. The rules that implement both the isolated domain and the different zones are deployed by using Group Policy and Active Directory.
-s
+
 ![encryption zone in an isolated domain.](images/wfas-domainisoencrypt.gif)
 
 This goal provides the following benefits:
