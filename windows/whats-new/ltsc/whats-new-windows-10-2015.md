@@ -68,7 +68,7 @@ In Windows 10, security auditing has added some improvements:
 
 In Windows 10, two new audit subcategories were added to the Advanced Audit Policy Configuration to provide greater granularity in audit events:
 -   [Audit Group Membership](/windows/device-security/auditing/audit-group-membership) Found in the Logon/Logoff audit category, the Audit Group Membership subcategory allows you to audit the group membership information in a user's logon token. Events in this subcategory are generated when group memberships are enumerated or queried on the PC where the sign-in session was created. For an interactive logon, the security audit event is generated on the PC that the user logged on to. For a network logon, such as accessing a shared folder on the network, the security audit event is generated on the PC hosting the resource.
-    When this setting is configured, one or more security audit events are generated for each successful sign in. You must also enable the **Audit Logon** setting under **Advanced Audit Policy Configuration\\System Audit Policies\\Logon/Logoff**. Multiple events are generated if the group membership information can't fit in a single security audit event.
+    When this setting is configured, one or more security audit events are generated for each successful sign-in. You must also enable the **Audit Logon** setting under **Advanced Audit Policy Configuration\\System Audit Policies\\Logon/Logoff**. Multiple events are generated if the group membership information can't fit in a single security audit event.
 -   [Audit PNP Activity](/windows/security/threat-protection/auditing/audit-pnp-activity) Found in the Detailed Tracking category, the Audit PNP Activity subcategory allows you to audit when plug and play detects an external device.
     Only Success audits are recorded for this category. If you don't configure this policy setting, no audit event is generated when an external device is detected by plug and play.
     A PnP audit event can be used to track down changes in system hardware and will be logged on the PC where the change took place. A list of hardware vendor IDs is included in the event.
@@ -90,7 +90,7 @@ In previous releases, the kernel depended on the Local Security Authority (LSA) 
 
 #### <a href="" id="bkmk-lsass"></a>Added a default process SACL to LSASS.exe
 
-In Windows 10, a default process SACL was added to LSASS.exe to log processes attempting to access LSASS.exe. The SACL is L"S:(AU;SAFA;0x0010;;;WD)". You can enable this process under **Advanced Audit Policy Configuration\\Object Access\\Audit Kernel Object**.
+In Windows 10, a default process SACL was added to LSASS.exe to log processes attempting to access LSASS.exe. The SACL is `L"S:(AU;SAFA;0x0010;;;WD)"`. You can enable this process under **Advanced Audit Policy Configuration\\Object Access\\Audit Kernel Object**.
 This process-when enabled-can help identify attacks that steal credentials from the memory of a process.
 
 #### <a href="" id="bkmk-logon"></a>New fields in the sign-in event
@@ -99,7 +99,7 @@ The sign-in event ID 4624 has been updated to include more verbose information t
 1.  **MachineLogon** String: yes or no
     If the account that signed in to the PC is a computer account, this field will be yes. Otherwise, the field is no.
 2.  **ElevatedToken** String: yes or no
-    If an account has signed in to the PC through the "administrative sign in" method, this field will be yes. Otherwise, the field is no. Additionally, if this field is part of a split token, the linked sign-in ID (LSAP\_LOGON\_SESSION) will also be shown.
+    If an account has signed in to the PC through the "administrative sign-in" method, this field will be yes. Otherwise, the field is no. Additionally, if this field is part of a split token, the linked sign-in ID (LSAP\_LOGON\_SESSION) will also be shown.
 3.  **TargetOutboundUserName** String
     **TargetOutboundUserDomain** String
     The username and domain of the identity that was created by the LogonUser method for outbound traffic.
