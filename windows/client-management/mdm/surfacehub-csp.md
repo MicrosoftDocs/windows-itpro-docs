@@ -508,7 +508,7 @@ If this setting is true, the device account will be used for proxy authenticatio
 
 <a href="" id="properties-proxyservers"></a>**Properties/ProxyServers**
 
-Added in <a href="https://support.microsoft.com/help/4499162" data-raw-source="[KB4499162](https://support.microsoft.com/help/4499162)">KB4499162</a> for Windows 10, version 1703. Specifies FQDNs of proxy servers to provide device account credentials to before any user interaction (if AllowAutoProxyAuth is enabled). This FQDN is a semi-colon separated list of server names, without any extra prefixes (for example, https://).
+Added in <a href="https://support.microsoft.com/help/4499162" data-raw-source="[KB4499162](https://support.microsoft.com/help/4499162)">KB4499162</a> for Windows 10, version 1703. Specifies hostnames of proxy servers to automatically provide device account credentials to before any user interaction (if AllowAutoProxyAuth is enabled). This is a semi-colon separated list of server names (FQDN), without any extra prefixes (for example, https://).
 
 - The data type is string. 
 - Supported operation is Get and Replace.
