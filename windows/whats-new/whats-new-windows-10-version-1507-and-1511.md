@@ -123,7 +123,7 @@ In previous releases, the kernel depended on the Local Security Authority (LSA) 
 
 ##### <a href="" id="bkmk-lsass"></a>Added a default process SACL to LSASS.exe
 
-In Windows 10, a default process SACL was added to LSASS.exe to log processes attempting to access LSASS.exe. The SACL is L"S:(AU;SAFA;0x0010;;;WD)". You can enable this process under **Advanced Audit Policy Configuration\\Object Access\\Audit Kernel Object**.
+In Windows 10, a default process SACL was added to LSASS.exe to log processes attempting to access LSASS.exe. The SACL is `L"S:(AU;SAFA;0x0010;;;WD)"`. You can enable this process under **Advanced Audit Policy Configuration\\Object Access\\Audit Kernel Object**.
 This process can help identify attacks that steal credentials from the memory of a process.
 
 ##### <a href="" id="bkmk-logon"></a>New fields in the sign-in event
@@ -132,7 +132,7 @@ The sign-in event ID 4624 has been updated to include more verbose information t
 1.  **MachineLogon** String: yes or no
     If the account that logged into the PC is a computer account, this field will be yes. Otherwise, the field is no.
 2.  **ElevatedToken** String: yes or no
-    If an account signed in to the PC through the "administrative sign in"-method, this field will be yes. Otherwise, the field is no. Additionally, if this field is part of a split token, the linked sign-in ID (LSAP\_LOGON\_SESSION) will also be shown.
+    If an account signed in to the PC through the "administrative sign-in" method, this field will be yes. Otherwise, the field is no. Additionally, if this field is part of a split token, the linked sign-in ID (LSAP\_LOGON\_SESSION) will also be shown.
 3.  **TargetOutboundUserName** String
     **TargetOutboundUserDomain** String
     The username and domain of the identity that was created by the LogonUser method for outbound traffic.
