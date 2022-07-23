@@ -88,6 +88,8 @@ Configuration Manager doesn't remove policies once deployed. To stop enforcement
 
 For more information on using Configuration Manager's native WDAC policies, see [Windows Defender Application Control management with Configuration Manager](/mem/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager).
 
+The entire WDAC in MEMCM Lab Paper is available for download [here](https://download.microsoft.com/download/c/f/d/cfd6227c-8ec4-442d-8c50-825550d412f6/WDAC-Deploy-WDAC-using-MEMCM.pdf).
+
 ## Deploy custom WDAC policies using Packages/Programs or Task Sequences
 
 Using Configuration Manager's built-in policies can be a helpful starting point, but customers may find the circle-of-trust options available in Configuration Manager too limiting. To define your own circle-of-trust, you can use Configuration Manager to deploy custom WDAC policies using [script-based deployment](deploy-wdac-policies-with-script.md) via Software Distribution Packages and Programs or Operating System Deployment Task Sequences.
