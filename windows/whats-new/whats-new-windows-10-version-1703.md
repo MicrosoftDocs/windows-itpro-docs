@@ -65,9 +65,6 @@ Previously, the customized taskbar could only be deployed using Group Policy or 
 - Settings for Power: [**Start/HidePowerButton**](/windows/client-management/mdm/policy-configuration-service-provider#start-hidepowerbutton), [**Start/HideHibernate**](/windows/client-management/mdm/policy-configuration-service-provider#start-hidehibernate), [**Start/HideRestart**](/windows/client-management/mdm/policy-configuration-service-provider#start-hiderestart), [**Start/HideShutDown**](/windows/client-management/mdm/policy-configuration-service-provider#start-hideshutdown), and [**Start/HideSleep**](/windows/client-management/mdm/policy-configuration-service-provider#start-hidesleep)
 - Other new settings: [**Start/HideFrequentlyUsedApps**](/windows/client-management/mdm/policy-configuration-service-provider#start-hidefrequentlyusedapps), [**Start/HideRecentlyAddedApps**](/windows/client-management/mdm/policy-configuration-service-provider#start-hiderecentlyaddedapps), **AllowPinnedFolder**, **ImportEdgeAssets**, [**Start/HideRecentJumplists**](/windows/client-management/mdm/policy-configuration-service-provider#start-hiderecentjumplists), [**Start/NoPinningToTaskbar**](/windows/client-management/mdm/policy-configuration-service-provider#start-nopinningtotaskbar), [**Settings/PageVisibilityList**](/windows/client-management/mdm/policy-configuration-service-provider#settings-pagevisibilitylist), and [**Start/HideAppsList**](/windows/client-management/mdm/policy-configuration-service-provider#start-hideapplist).
 
-
-
-
 ### Cortana at work
 
 Cortana is Microsoft’s personal digital assistant, who helps busy people get things done, even while at work. Cortana has powerful configuration options, optimized for your business. When your employees sign in with an Azure Active Directory (Azure AD) account, they can give Cortana access to their enterprise/work identity, while getting all the functionality Cortana provides to them outside of work.
@@ -273,7 +270,6 @@ Miracast over Infrastructure offers many benefits:
 - No changes to current wireless drivers or PC hardware are required.
 - It works well with older wireless hardware that isn't optimized for Miracast over Wi-Fi Direct.
 - It uses an existing connection that reduces the time to connect and provides a stable stream.
-
 
 ### How it works
 

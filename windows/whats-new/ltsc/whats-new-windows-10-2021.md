@@ -115,7 +115,7 @@ Windows Defender Firewall also now supports [Windows Subsystem for Linux (WSL)](
   **Dynamic navigation**: Application Guard now allows users to navigate back to their default host browser from the Application Guard Microsoft Edge. Previously, users browsing in Application Guard Edge would see an error page when they try to go to a trusted site within the container browser. With this new feature, users will automatically be redirected to their host default browser when they enter or click on a trusted site in Application Guard Edge. This feature is also available in Windows 10, version 1803 or later with the latest updates.
 
 Application Guard performance is improved with optimized document opening times:
-- An issue is fixed that could cause a one-minute-or more delay when you open a Microsoft Defender Application Guard (Application Guard) Office document. This issue can occur when you try to open a file using a Universal Naming Convention (UNC) path or Server Message Block (SMB) share link.
+- An issue is fixed that could cause a one-minute-or-more delay when you open a Microsoft Defender Application Guard (Application Guard) Office document. This issue can occur when you try to open a file using a Universal Naming Convention (UNC) path or Server Message Block (SMB) share link.
 - A memory issue is fixed that could cause an Application Guard container to use almost 1 GB of working set memory when the container is idle.
 - The performance of Robocopy is improved when copying files over 400 MB in size.
 
