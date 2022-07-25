@@ -45,7 +45,7 @@ Users with administrator privileges, or malware running as an administrator user
 
 If a managed installer process runs in the context of a user with standard privileges, then it's possible that standard users or malware running as standard user may be able to circumvent the intent of Windows Defender Application Control.
 
-Some application installers may automatically run the application at the end of the installation process. If the application runs, and the installer was run by a managed installer, then the managed installer's heuristic tracking and authorization will extend to all files that are created during the first run of the application. This extension could result in unintentional authorization of an executable. To avoid that, ensure that the method of application deployment that is used as a managed installer limits running applications as part of installation.
+Some application installers may automatically run the application at the end of the installation process. If the application runs automatically, and the installer was run by a managed installer, then the managed installer's heuristic tracking and authorization will extend to all files that are created during the first run of the application. This extension could result in unintentional authorization of an executable. To avoid that, ensure that the method of application deployment that is used as a managed installer limits running applications as part of installation.
 
 ## Known limitations with managed installer
 
