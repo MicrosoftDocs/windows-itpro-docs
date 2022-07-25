@@ -23,8 +23,7 @@ This reference topic for the IT professional describes the special identity grou
 
 Special identity groups are similar to Active Directory security groups as listed in the users and built-in containers. Special identity groups can provide an efficient way to assign access to resources in your network. By using special identity groups, you can:
 
-- Assign user rights to security groups in Active Directory.
-
+- Assign user rights to security groups in Active Directory.
 - Assign permissions to security groups for the purpose of accessing resources.
 
 Servers that are running the supported Windows Server operating systems designated in the **Applies To** list at the beginning of this topic include several special identity groups. These special identity groups do not have specific memberships that can be modified, but they can represent different users at different times, depending on the circumstances.
