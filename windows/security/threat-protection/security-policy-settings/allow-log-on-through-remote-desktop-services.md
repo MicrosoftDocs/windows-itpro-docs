@@ -1,5 +1,5 @@
 ---
-title: Allow a sign in through Remote Desktop Services (Windows 10)
+title: Allow log on through Remote Desktop Services (Windows 10)
 description: Best practices, location, values, policy management, and security considerations for the security policy setting, Allow a sign in through Remote Desktop Services.
 ms.assetid: 6267c376-8199-4f2b-ae56-9c5424e76798
 ms.reviewer: 
@@ -18,7 +18,7 @@ ms.date: 04/19/2017
 ms.technology: windows-sec
 ---
 
-# Allow sign in through Remote Desktop Services
+# Allow log on through Remote Desktop Services
 
 **Applies to**
 -   Windows 10

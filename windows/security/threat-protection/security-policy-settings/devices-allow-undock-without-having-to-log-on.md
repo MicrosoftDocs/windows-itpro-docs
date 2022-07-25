@@ -1,5 +1,5 @@
 ---
-title: Devices Allow undock without having to sign in (Windows 10)
+title: Devices Allow undock without having to log on (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Devices Allow undock without having to sign in security policy setting.
 ms.assetid: 1d403f5d-ad41-4bb4-9f4a-0779c1c14b8c
 ms.reviewer: 
@@ -18,7 +18,7 @@ ms.date: 04/19/2017
 ms.technology: windows-sec
 ---
 
-# Devices: Allow undock without having to sign in
+# Devices: Allow undock without having to log on
 
 **Applies to**
 -   Windows 10
@@ -79,6 +79,7 @@ If this policy setting is enabled, anyone with physical access to portable compu
 ### Countermeasure
 
 Disable the **Devices: Allow undock without having to log on** setting.
+
 ### Potential impact
 
 Users who have docked their device must sign in to the local console before they can undock their computers. For devices that don't have docking stations, this policy setting has no impact.
