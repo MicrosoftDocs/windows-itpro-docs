@@ -93,7 +93,7 @@ Membership in the local **Administrators** group, or equivalent, is the minimum 
 
 **To view events in the AppLocker log by using Event Viewer**
 
-1.  To open Event Viewer, go to the **Start**, type **eventvwr.msc**, and then select ENTER.
+1.  To open Event Viewer, go to the **Start** menu, type **eventvwr.msc**, and then select ENTER.
 2.  In the console tree under **Application and Services Logs\\Microsoft\\Windows**, double-click **AppLocker**.
 
 AppLocker events are listed in either the **EXE and DLL** log, the **MSI and Script** log, or the **Packaged app-Deployment** or **Packaged app-Execution** log. Event information includes the enforcement setting, file name, date and time, and user name. The logs can be exported to other file 
