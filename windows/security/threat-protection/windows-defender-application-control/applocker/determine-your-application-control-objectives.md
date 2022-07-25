@@ -39,7 +39,7 @@ Use the following table to develop your own objectives and determine which appli
 
 |Application control function|SRP|AppLocker|
 |--- |--- |--- |
-|Scope|SRP policies can be applied to all Windows operating systems beginning with Windows XP and Windows Server 2003.|AppLocker policies apply only to the support versions of Windows listed in[Requirements to use AppLocker](requirements-to-use-applocker.md).|
+|Scope|SRP policies can be applied to all Windows operating systems beginning with Windows XP and Windows Server 2003.|AppLocker policies apply only to the support versions of Windows listed in [Requirements to use AppLocker](requirements-to-use-applocker.md).|
 |Policy creation|SRP policies are maintained through Group Policy and only the administrator of the GPO can update the SRP policy. The administrator on the local computer can modify the SRP policies defined in the local GPO.|AppLocker policies are maintained through Group Policy and only the administrator of the GPO can update the policy. The administrator on the local computer can modify the AppLocker policies defined in the local GPO.<br/><br/>AppLocker permits customization of error messages to direct users to a Web page for help.|
 |Policy maintenance|SRP policies must be updated by using the Local Security Policy snap-in (if the policies are created locally) or the Group Policy Management Console (GPMC).|AppLocker policies can be updated by using the Local Security Policy snap-in, if the policies are created locally, or the GPMC, or the Windows PowerShell AppLocker cmdlets.|
 |Policy application|SRP policies are distributed through Group Policy.|AppLocker policies are distributed through Group Policy.|
