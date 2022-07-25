@@ -30,7 +30,7 @@ IT admins can upgrade student devices using a multiple activation key (MAK) manu
 | Kivuto | Kivuto | Personal (student-owned) | Initiated on device by student, parent or guardian |
 | Provisioning package | VLSC | Personal (student-owned) or Corporate (institution-owned) | IT admin initiated at first boot |
 
-These methods apply to devices with *Windows Home* installed, institution-owned devices can be upgraded from *Windows Professional* or *Windows Pro Edu* to *Windows Education* or *Windows Enterprise* using [Windows 10/11 Subscription Activation](/windows/deployment/windows-10-subscription-activation).
+These methods apply to devices with *Windows Home* installed; institution-owned devices can be upgraded from *Windows Professional* or *Windows Pro Edu* to *Windows Education* or *Windows Enterprise* using [Windows 10/11 Subscription Activation](/windows/deployment/windows-10-subscription-activation).
 
 ## User Notifications
 
