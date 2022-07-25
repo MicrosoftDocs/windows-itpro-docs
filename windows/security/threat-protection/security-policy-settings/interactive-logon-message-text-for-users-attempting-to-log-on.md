@@ -30,11 +30,10 @@ Describes the best practices, location, values, management, and security conside
 
 The **Interactive logon: Message text for users attempting to log on** and [Interactive logon: Message title for users attempting to log on](interactive-logon-message-title-for-users-attempting-to-log-on.md) policy settings are closely related.
 
-**Interactive logon: Message text for users attempting to log on** specifies a text message to be displayed to users when they log on.
+- **Interactive logon: Message text for users attempting to log on** specifies a text message to be displayed to users when they log on.
+- **Interactive logon: Message title for users attempting to log on** specifies a title to appear in the title bar of the window that contains the text message.
 
-**Interactive logon: Message title for users attempting to log on** specifies a title to appear in the title bar of the window that contains the text message. This text is often used for legal reasons, for example, to warn users about the ramifications of misusing company information or to warn them that their actions may be audited.
-
-When these policy settings are configured, users will see a dialog box before they can log on to the server console.
+This text is often used for legal reasons, for example, to warn users about the ramifications of misusing company information or to warn them that their actions may be audited. When these policy settings are configured, users will see a dialog box before they can log on to the server console.
 
 ### Possible values
 
