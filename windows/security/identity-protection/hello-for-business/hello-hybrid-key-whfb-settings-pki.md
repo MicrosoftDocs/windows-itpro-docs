@@ -21,7 +21,7 @@ ms.reviewer:
 - Hybrid Deployment
 - Key trust
 
-Windows Hello for Business deployments rely on certificates.  Hybrid deployments uses publicly issued server authentication certificates to validate the name of the server to which they are connecting and to encrypt the data that flows them and the client computer.
+Windows Hello for Business deployments rely on certificates. Hybrid deployments use publicly issued server authentication certificates to validate the name of the server to which they are connecting and to encrypt the data that flows them and the client computer.
 
 All deployments use enterprise issued certificates for domain controllers as a root of trust.
 
