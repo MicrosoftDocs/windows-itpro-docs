@@ -3,9 +3,9 @@ title: Windows Privacy Compliance Guide
 description: This article provides information to help IT and compliance professionals understand the personal data policies as related to Windows.
 ms.prod: m365-security
 ms.localizationpriority: high
-author: brianlic-msft
-ms.author: brianlic
-manager: dansimp
+author: DHB-MSFT
+ms.author: danbrown
+manager: dougeby
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 12/01/2021
@@ -147,7 +147,7 @@ An administrator can disable a user’s ability to delete their device’s diagn
 #### _2.3.7 Diagnostic data: Enabling the Windows diagnostic data processor configuration_
 
 > [!IMPORTANT]
-> There are some significant changes planned for the Windows diagnostic data processor configuration.  To learn more, [review this information](configure-windows-diagnostic-data-in-your-organization.md#significant-changes-coming-to-the-windows-diagnostic-data-processor-configuration).
+> There are some significant changes planned for the Windows diagnostic data processor configuration.  To learn more, [review this information](changes-to-windows-diagnostic-data-collection.md#significant-changes-coming-to-the-windows-diagnostic-data-processor-configuration).
 
 **Applies to:**
 

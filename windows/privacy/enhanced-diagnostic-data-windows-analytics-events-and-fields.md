@@ -3,9 +3,9 @@ title: Enhanced diagnostic data required by Windows Analytics (Windows 10)
 description: Use this article to learn more about the limit enhanced diagnostic data events policy used by Desktop Analytics
 ms.prod: m365-security
 ms.localizationpriority: high
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: DHB-MSFT
+ms.author: danbrown
+manager: dougeby
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/29/2021
@@ -114,7 +114,7 @@ Collects Office metadata through UTC to compare with equivalent data collected t
 Applicable to all Win32 applications. Helps us understand the status of the update process of the office suite (Success or failure with error details).
 
 - **build:** App version
-- **channel:** Is this part of GA Channel or SAC-T?
+- **channel:** Is this part of GA Channel?
 - **errorCode:** What error occurred during the upgrade process?
 - **errorMessage:** what was the error message during the upgrade process?
 - **status:** Was the upgrade successful or not?
@@ -205,7 +205,7 @@ This event is fired when the telemetry engine within an office application has p
 - **SessionID:** ID of the session
 
 ## Microsoft.Office.TelemetryEngine.ShutdownStart
-This event is fired when the telemetry engine within an office application been uninitialized, and the application is shutting down. Useful for understanding whether a particular crash is happening during an app-shutdown, and could potentially lead in data loss or not.
+This event is fired when the telemetry engine within an office application has been uninitialized, and the application is shutting down. Useful for understanding whether a particular crash is happening during an app-shutdown, and could potentially lead in data loss or not.
 
 - **appVersionBuild:** Third part of the version *.*.XXXXX.*
 - **appVersionMajor:** First part of the version X.*.*.*

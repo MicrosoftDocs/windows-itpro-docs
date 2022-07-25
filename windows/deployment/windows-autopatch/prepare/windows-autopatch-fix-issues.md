@@ -14,13 +14,17 @@ msreviewer: hathind
 
 # Fix issues found by the Readiness assessment tool
 
+Seeing issues with your tenant? This article details how to remediate issues found with your tenant.
+
+## Check results
+
 For each check, the tool will report one of four possible results:
 
 | Result | Meaning |
 | ----- | ----- |
 | Ready | No action is required before completing enrollment. |
 | Advisory | Follow the steps in the tool or this article for the best experience with enrollment and for users.<p><p>You can complete enrollment, but you must fix these issues before you deploy your first device. |
-| Not ready | Enrollment will fail if you don't fix these issues. Follow the steps in the tool or this article to resolve them. |
+| Not ready | You must fix these issues before enrollment. You won’t be able to enroll into Windows Autopatch if you don't fix these issues. Follow the steps in the tool or this article to resolve them.  |
 | Error | The Azure Active Directory (AD) role you're using doesn't have sufficient permissions to run this check. |
 
 > [!NOTE]
@@ -44,8 +48,8 @@ Your "Windows 10 update ring" policy in Intune must not target any Windows Autop
 
 | Result | Meaning |
 | ----- | ----- |
-| Not ready | You have an "update ring" policy that targets all devices, all users, or both. Change the policy to use an assignment that targets a specific Azure Active Directory (AD) group that doesn't include any Windows Autopatch devices.<p><p>After enrolling into Autopatch, make sure that any update ring policies you have exclude the **Modern Workplace Devices - All** Azure Active Directory (AD) group.</p><p>For more information, see [Manage Windows 10 software updates in Intune](/mem/intune/protect/windows-update-for-business-configure).</p>|
-| Advisory | Both the **Modern Workplace Devices - All** and **Modern Workplace - All** Azure AD groups are groups that we create after you enroll in Windows Autopatch. This advisory is flagging an action you should take after enrolling into the service:<ol><li>Make sure that any update ring policies you have exclude the **Modern Workplace Devices - All** Azure Active Directory (AD) group.</li><li>If you have assigned Azure AD user groups to these policies, make sure that any update ring policies you have also exclude the **Modern Workplace - All** Azure AD group that you add your Windows Autopatch users to (or an equivalent group).</li></ol><br>For more information, see [Manage Windows 10 software updates in Intune](/mem/intune/protect/windows-update-for-business-configure). |
+| Not ready | You have an "update ring" policy that targets all devices, all users, or both.<p>To resolve, change the policy to use an assignment that targets a specific Azure Active Directory (AD) group that doesn't include any Windows Autopatch devices.</p><p>For more information, see [Manage Windows 10 software updates in Intune](/mem/intune/protect/windows-update-for-business-configure).</p> |
+| Advisory | Both the **Modern Workplace Devices - All** and **Modern Workplace - All** Azure AD groups are groups that we create after you enroll in Windows Autopatch.<p>You can continue with enrollment. However, you must resolve the advisory prior to deploying your first device. To resolve the advisory, see [Maintain the Windows Autopatch environment](../operate/windows-autopatch-maintain-environment.md).</p>|
 
 ## Azure Active Directory settings
 
@@ -68,13 +72,13 @@ Windows Autopatch requires the following licenses:
 | ----- | ----- |
 | Not ready | Windows Autopatch requires Windows 10/11 Enterprise E3 (or higher) to be assigned to your users. Additionally, Azure Active Directory Premium, and Microsoft Intune are required. For more information, see [more about licenses](../prepare/windows-autopatch-prerequisites.md#more-about-licenses). |
 
-### Windows Autopatch service accounts
+### Windows Autopatch cloud service accounts
 
 Certain account names could conflict with account names created  by Windows Autopatch.
 
 | Result | Meaning |
 | ----- | ----- |
-| Not ready | You have at least one account name that will conflict with account names created by Windows Autopatch. Work with your Microsoft account representative to exclude these account names. We don't list the account names publicly to minimize security risk. |
+| Not ready | You have at least one account name that will conflict with account names created by Windows Autopatch. The cloud service accounts are:<ul><li>MsAdmin</li><li>MsAdminInt</li><li>MsTest</li></ul><p>You must either rename or remove conflicting accounts to move forward with enrolling to the Windows Autopatch service as we'll create these accounts as part of running our service. For more information, see [Tenant Access](../references/windows-autopatch-privacy.md#tenant-access).</p> |
 
 ### Security defaults
 
