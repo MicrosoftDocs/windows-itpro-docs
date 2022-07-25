@@ -60,7 +60,7 @@ The following video provides an overview of Windows Sandbox.
 
 3. Use the search bar on the task bar and type **Turn Windows Features on or off** to access the Windows Optional Features tool. Select **Windows Sandbox** and then **OK**. Restart the computer if you're prompted.
 
-   If the **Windows Sandbox** option is unavailable, your computer doesn't meet the requirements to run Windows Sandbox. If you think this is incorrect, review the prerequisite list as well as steps 1 and 2.
+   If the **Windows Sandbox** option is unavailable, your computer doesn't meet the requirements to run Windows Sandbox. If you think this analysis is incorrect, review the prerequisite list and steps 1 and 2.
 
    > [!NOTE]
    > To enable Sandbox using PowerShell, open PowerShell as Administrator and run **Enable-WindowsOptionalFeature -FeatureName "Containers-DisposableClientVM" -All -Online**.

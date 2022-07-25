@@ -20,7 +20,7 @@ ms.technology: windows-sec
 
 # Windows Defender Application Control and .NET hardening 
 
-Historically, Windows Defender Application Control (WDAC) has restricted the set of applications, libraries, and scripts that are allowed to run to those approved by an organization. 
+Historically, Windows Defender Application Control (WDAC) has restricted the set of applications, libraries, and scripts that are allowed to run to those sets approved by an organization. 
 Security researchers have found that some .NET applications may be used to circumvent those controls by using .NET’s capabilities to load libraries from external sources or generate new code on the fly.
 Beginning with Windows 10, version 1803, or Windows 11, Windows Defender Application Control features a new capability, called *Dynamic Code Security* to verify code loaded by .NET at runtime.
 
@@ -28,8 +28,8 @@ When the Dynamic Code Security option is enabled, Application Control policy is 
 
 Additionally, it detects tampering in code generated to disk by .NET and blocks loading code that has been tampered with. 
 
-Dynamic Code Security is not enabled by default because existing policies may not account for externally loaded libraries. 
-Additionally, a few .NET loading features, including loading unsigned assemblies built with System.Reflection.Emit, are not currently supported with Dynamic Code Security enabled. 
+Dynamic Code Security isn't enabled by default because existing policies may not account for externally loaded libraries. 
+Additionally, a few .NET loading features, including loading unsigned assemblies built with System.Reflection.Emit, aren't currently supported with Dynamic Code Security enabled. 
 Microsoft recommends testing Dynamic Code Security in audit mode before enforcing it to discover whether any new libraries should be included in the policy. 
 
 Additionally, customers can precompile for deployment only to prevent an allowed executable from being terminated because it tries to load unsigned dynamically generated code. See the "Precompiling for Deployment Only" section in the [ASP.NET Precompilation Overview](/aspnet/web-forms/overview/older-versions-getting-started/deploying-web-site-projects/precompiling-your-website-cs) document for how to fix that.

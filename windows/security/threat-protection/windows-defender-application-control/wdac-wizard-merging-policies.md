@@ -21,7 +21,7 @@ ms.technology: windows-sec
 
 # Merging existing policies with the WDAC Wizard
 
-Beginning in Windows 10 version 1903, Windows Defender Application Control (WDAC)supports multiple policies. Before version 1903, however, Windows 10 could only have one WDAC policy. Consequently, users were required to merge multiple WDAC policies into one. The WDAC Wizard has a simple to use user interface to allow users to merge multiple WDAC policies. The Wizard can support up to 15 policy files as input during the merge workflow.  
+Beginning in Windows 10 version 1903, Windows Defender Application Control (WDAC) supports multiple policies. Before version 1903, however, Windows 10 could only have one WDAC policy. So, users were required to merge multiple WDAC policies into one. The WDAC Wizard has a simple to use user interface to allow users to merge multiple WDAC policies. The Wizard can support up to 15 policy files as input during the merge workflow.  
 
 Select the policies you wish to merge into one policy using the `+ Add Policy` button under the table. Once added, policies will be enumerated within the table. To remove a policy from the table, if accidentally added, highlight the policy row and select the `- Remove Policy` button. Confirmation will be required before the policy is withdrawn from the table. 
 
