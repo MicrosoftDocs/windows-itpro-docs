@@ -1,6 +1,6 @@
 ---
 title: Planning Domain Isolation Zones (Windows)
-description: Learn how to use information you have gathered to make decisions about isolation zones for your environment in Windows Defender Firewall with Advanced Security.
+description: Learn how to use information you've gathered to make decisions about isolation zones for your environment in Windows Defender Firewall with Advanced Security.
 ms.reviewer: 
 ms.author: dansimp
 ms.prod: m365-security
@@ -24,7 +24,7 @@ After you have the required information about your network, Active Directory, an
 
 The bulk of the work in planning server and domain isolation is determining which devices to assign to each isolation zone. Correctly choosing the zone for each device is important to providing the correct level of security without compromising performance or the ability for a device to send or receive required network traffic.
 
-The zones described in this guide include the following:
+The zones described in this guide include:
 
 -   [Exemption List](exemption-list.md)
 

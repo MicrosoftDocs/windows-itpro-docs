@@ -24,7 +24,7 @@ All of the devices in the isolated domain are added to the group CG\_DOMISO\_Iso
 
 Each GPO has a security group filter that prevents the GPO from applying to members of the group GP\_DOMISO\_No\_IPsec. A WMI filter is attached to each GPO to ensure that the GPO is applied to only the specified version of Windows. For more information, see the [Planning GPO Deployment](planning-gpo-deployment.md) section.
 
-The GPOs created for the Woodgrove Bank isolated domain include the following:
+The GPOs created for the Woodgrove Bank isolated domain include:
 
 -   [GPO\_DOMISO\_IsolatedDomain\_Clients](gpo-domiso-isolateddomain-clients.md)
 
