@@ -38,7 +38,7 @@ For info about testing an AppLocker policy to see what rules affect which files 
 You can perform this task by using the Group Policy Management Console for an AppLocker policy in a Group Policy Object (GPO) or by using the Local Security Policy snap-in for an AppLocker policy on a local computer or in a security template. For info how to use these MMC snap-ins to administer 
 AppLocker, see [Administer AppLocker](administer-applocker.md#bkmk-using-snapins).
 
-These steps apply only for locally managed devices. If the device has AppLocker policies applied by using MDM or a GPO, the local policy will not override those settings.
+These steps apply only for locally managed devices. If the device has AppLocker policies applied by using MDM or a GPO, the local policy won't override those settings.
 
 ## To delete a rule in an AppLocker policy
 
@@ -72,13 +72,13 @@ To use the Set-AppLockerPolicy cmdlet, first import the AppLocker modules:
 PS C:\Users\Administrator> import-module AppLocker
 ```
 
-We will create a file (for example, clear.xml), place it in the same directory where we are executing our cmdlet, and add the preceding XML contents. Then run the following command:
+We'll create a file (for example, clear.xml), place it in the same directory where we're executing our cmdlet, and add the preceding XML contents. Then run the following command:
 
 ```powershell
 C:\Users\Administrator> Set-AppLockerPolicy -XMLPolicy .\clear.xml
 ```
 
-This will remove all AppLocker Policies on a machine and could be potentially scripted to use on multiple machines using remote execution tools with accounts with proper access.
+This command will remove all AppLocker Policies on a machine and could be potentially scripted to use on multiple machines using remote execution tools with accounts with proper access.
 
 The following PowerShell commands must also be run to stop the AppLocker services and the effects of the former AppLocker policy.
 
