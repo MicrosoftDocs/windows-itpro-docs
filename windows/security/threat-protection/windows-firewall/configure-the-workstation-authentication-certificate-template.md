@@ -52,4 +52,4 @@ To complete these procedures, you must be a member of both the Domain Admins gro
 
 10. In the Certification Authority MMC snap-in, in the left pane, right-click **Certificate Templates**, click **New**, and then click **Certificate Template to Issue**.
 
-11. In the **Enable Certificate Templates** dialog box, click the name of the certificate template you just configured, and then click **OK**.
+11. In the **Enable Certificate Templates** dialog box, click the name of the certificate template you configured, and then click **OK**.
