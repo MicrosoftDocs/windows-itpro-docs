@@ -14,7 +14,7 @@ ms.author: dansimp
 ms.technology: windows-sec
 ---
 
-# 4958(F): Windows Firewall didn't apply the following rule because the rule referred to items not configured on this computer.
+# 4958(F): Windows Firewall did not apply the following rule because the rule referred to items not configured on this computer.
 
 
 Windows Firewall with Advanced Security processed a rule that contains parameters that can't be resolved on the local computer. The rule is therefore not enforceable on the computer and so is excluded from the runtime state of the firewall. This exclusion isn't necessarily an error. Examine the rule for applicability on the computers to which it was applied.

@@ -14,7 +14,7 @@ ms.author: dansimp
 ms.technology: windows-sec
 ---
 
-# 5038(F): Code integrity determined that the image hash of a file isn't valid. The file could be corrupt due to unauthorized modification or the invalid hash could indicate a potential disk device error.
+# 5038(F): Code integrity determined that the image hash of a file is not valid. The file could be corrupt due to unauthorized modification or the invalid hash could indicate a potential disk device error.
 
 
 The file could be corrupt due to unauthorized modification or the invalid hash could indicate a potential disk device error.

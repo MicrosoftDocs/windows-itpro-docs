@@ -14,7 +14,7 @@ ms.author: dansimp
 ms.technology: windows-sec
 ---
 
-# 4957(F): Windows Firewall didn't apply the following rule.
+# 4957(F): Windows Firewall did not apply the following rule.
 
 
 <img src="images/event-4957.png" alt="Event 4957 illustration" width="449" height="365" hspace="10" align="left" />
@@ -83,7 +83,7 @@ This event generates when Windows Firewall starts or apply new rule, and the rul
 
 ## Security Monitoring Recommendations
 
-For 4957(F): Windows Firewall didn't apply the following rule.
+For 4957(F): Windows Firewall did not apply the following rule.
 
 -   This event can be a sign of software issues, Windows Firewall registry errors or corruption, or Group Policy setting misconfigurations. We recommend monitoring this event and investigating the reason for the condition. Typically this event indicates configuration issues, not security issues.
 
