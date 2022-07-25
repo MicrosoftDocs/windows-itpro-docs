@@ -202,7 +202,9 @@
             - name: Use Update Compliance (preview)
               items: 
               - name: Use Update Compliance 
-                href: update/update-compliance-v2-use.md                         
+                href: update/update-compliance-v2-use.md 
+              - name: Update Compliance workbook
+                href: update/update-compliance-v2-workbook.md                                         
               - name: Software updates in the Microsoft admin center (preview)
                 href: update/update-status-admin-center.md                               
             - name: Update Compliance schema reference (preview)

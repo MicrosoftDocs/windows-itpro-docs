@@ -8,7 +8,7 @@ author: mestew
 ms.author: mstewart
 ms.collection: M365-analytics
 ms.topic: article
-ms.date: 06/06/2022
+ms.date: 08/09/2022
 ---
 
 # Update Compliance overview
@@ -34,7 +34,8 @@ The new version of Update Compliance is in technical preview. Some of the benefi
 
 Currently, the technical preview contains the following features:
 
-- Access to the following new Update Compliance tables:
+- [Update Compliance workbook](update-compliance-v2-workbook.md)
+- Access to the following new [Update Compliance tables](update-compliance-v2-schema.md):
     - UCClient
     - UCClientReadinessStatus
     - UCClientUpdateStatus
