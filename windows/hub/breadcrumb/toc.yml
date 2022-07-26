@@ -56,5 +56,5 @@ items:
                 tocHref: /windows/security/threat-protection/windows-firewall/
                 topicHref: /windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security
               - name: User security
-                tocHref: /windows-server/security/credentials-protection-and-management/
+                tocHref: /windows/client-management/mdm/
                 topicHref: /windows/security/identity
