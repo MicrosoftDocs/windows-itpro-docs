@@ -55,3 +55,6 @@ items:
               - name: Windows Defender Firewall
                 tocHref: /windows/security/threat-protection/windows-firewall/
                 topicHref: /windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security
+              - name: User security
+                tocHref: /windows/security/identity/
+                topicHref: /windows/security/identity

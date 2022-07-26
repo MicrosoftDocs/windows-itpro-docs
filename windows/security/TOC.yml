@@ -316,6 +316,8 @@
           href: identity-protection/credential-guard/credential-guard-known-issues.md
     - name: Protect Remote Desktop credentials with Remote Credential Guard
       href: identity-protection/remote-credential-guard.md
+    - name: Configuring LSA Protection
+      href: /windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection
     - name: Technical support policy for lost or forgotten passwords
       href: identity-protection/password-support-policy.md
     - name: Access Control Overview
