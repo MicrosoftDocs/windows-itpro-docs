@@ -101,13 +101,9 @@ sections:
         answer: |
           The user experience for Windows Hello for Business occurs after the user signs in, after you deploy Windows Hello for Business policy settings to your environment.
           
-          [Windows Hello for Business user enrollment experience](hello-videos.md#windows-hello-for-business-user-enrollment-experience)
-          
       - question: What happens when a user forgets their PIN?
         answer: |
           If the user can sign in with a password, they can reset their PIN by selecting the "I forgot my PIN" link in Settings. Beginning with Windows 10 1709, users can reset their PIN above the lock screen by selecting the "I forgot my PIN" link on the PIN credential provider.
-          
-          [Windows Hello for Business forgotten PIN user experience](hello-videos.md#windows-hello-for-business-forgotten-pin-user-experience)
           
           For on-premises deployments, devices must be well-connected to their on-premises network (domain controllers and/or certificate authority) to reset their PINs. Hybrid customers can onboard their Azure tenant to use the Windows Hello for Business PIN reset service to reset their PINs. Non-destructive PIN reset works without access to the corporate network. Destructive PIN reset requires access to the corporate network. For more details about destructive and non-destructive PIN reset, see [PIN reset](/windows/security/identity-protection/hello-for-business/hello-feature-pin-reset).
         
