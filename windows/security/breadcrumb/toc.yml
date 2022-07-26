@@ -1,0 +1,12 @@
+items:
+  - name: Docs
+    tocHref: /
+    topicHref: /
+    items:
+      - name: Windows
+        tocHref: /windows/
+        topicHref: /windows/resources/
+        items:            
+          - name: User security
+            tocHref: /windows/client-management/mdm/
+            topicHref: /windows/security/identity
