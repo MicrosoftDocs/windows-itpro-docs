@@ -7,6 +7,6 @@ items:
         tocHref: /windows/
         topicHref: /windows/resources/
         items:            
-          - name: User security
+          - name: User security2
             tocHref: /windows/client-management/mdm/
             topicHref: /windows/security/identity
