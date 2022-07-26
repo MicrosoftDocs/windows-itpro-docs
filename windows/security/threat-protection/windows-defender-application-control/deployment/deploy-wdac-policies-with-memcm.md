@@ -88,7 +88,7 @@ Configuration Manager doesn't remove policies once deployed. To stop enforcement
 
 For more information on using Configuration Manager's native WDAC policies, see [Windows Defender Application Control management with Configuration Manager](/mem/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager).
 
-The entire WDAC in Configuration Manager Lab Paper is available for download [here](https://download.microsoft.com/download/c/f/d/cfd6227c-8ec4-442d-8c50-825550d412f6/WDAC-Deploy-WDAC-using-MEMCM.pdf).
+Download the entire [WDAC in Configuration Manager lab paper](https://download.microsoft.com/download/c/f/d/cfd6227c-8ec4-442d-8c50-825550d412f6/WDAC-Deploy-WDAC-using-MEMCM.pdf).
 
 ## Deploy custom WDAC policies using Packages/Programs or Task Sequences
 
