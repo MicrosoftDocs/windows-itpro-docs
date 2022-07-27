@@ -65,8 +65,6 @@ For Hybrid Azure AD-joined devices:
 
 You may find that PIN reset from settings only works post login, and that the "lock screen" PIN reset function will not work if you have any matching limitation of SSPR password reset from the lock screen. For more information, see [Enable Azure Active Directory self-service password reset at the Windows sign-in screen - General ](/azure/active-directory/authentication/howto-sspr-windows#general-limitations).
 
-Visit the [Windows Hello for Business Videos](./hello-videos.md) page and watch [Windows Hello for Business forgotten PIN user experience](./hello-videos.md#windows-hello-for-business-forgotten-pin-user-experience).
-
 ## Non-Destructive PIN reset
 
 **Requirements:**
