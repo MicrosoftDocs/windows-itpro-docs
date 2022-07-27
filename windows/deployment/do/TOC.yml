@@ -8,14 +8,14 @@
         - name: What's new
           href: whats-new-do.md
 
-
-     
     - name: Configure Delivery Optimization
       items:
         - name: Configure Windows Clients
           items:
             - name: Windows Delivery Optimization settings
               href: waas-delivery-optimization-setup.md#recommended-delivery-optimization-settings
+            - name: Windows Delivery Optimization Frequently Asked Questions
+              href: url: waas-delivery-optimization-faq.md
         - name: Configure Microsoft Endpoint Manager
           items:
             - name: Delivery Optimization settings in Microsoft Intune

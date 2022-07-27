@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 
-title: Delivery Optimization for Windows client # < 60 chars
+title: Delivery Optimization # < 60 chars
 summary: Set up peer to peer downloads for Windows Updates and learn about Microsoft Connected Cache.  # < 160 chars
 
 metadata:
@@ -97,4 +97,6 @@ landingContent:
             url: delivery-optimization-workflow.md
           - text: Using a proxy with Delivery Optimization
             url: delivery-optimization-proxy.md
+          - text: Content endpoints for Delivery Optimization / Microsoft Connected Cache
+            url: delivery-optimization-endpoints.md
 

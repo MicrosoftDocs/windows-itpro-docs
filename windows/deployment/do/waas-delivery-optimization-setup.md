@@ -31,6 +31,12 @@ Starting with Microsoft Intune version 1902, you can set many Delivery Optimizat
 
 **Starting with Windows 10, version 1903**, you can use the Azure Active Directory (Azure AD) Tenant ID as a means to define groups. To do this set the value for DOGroupIdSource to its new maximum value of 5.
 
+## Allow content endpoints
+
+When using a firewall, it is important that the content endpoints are allowed and associated ports are open. 
+
+[Learn more](delivery-optimization-endpoints.md) about the complete list for fully qualified domains, ports for all Delivery Optimization and Microsoft Connected Cache content types.
+
 ## Recommended Delivery Optimization settings
 
 Delivery Optimization offers a great many settings to fine-tune its behavior (see [Delivery Optimization reference](waas-delivery-optimization-reference.md) for a comprehensive list), but for the most efficient performance, there are just a few key parameters that will have the greatest impact if particular situations exist in your deployment. If you just need an overview of Delivery Optimization, see [Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md).
