@@ -1,6 +1,6 @@
 ---
 title: Pin Reset
-description: Learn how Microsoft PIN reset services enables you to help users recover who have forgotten their PIN.
+description: Learn how Microsoft PIN reset services enable you to help users recover who have forgotten their PIN.
 ms.prod: m365-security
 author: GitPrakhar13
 ms.author: prsriva
@@ -22,16 +22,16 @@ ms.date: 5/3/2021
 
 Windows Hello for Business provides the capability for users to reset forgotten PINs using the "I forgot my PIN link" from the Sign-in options page in Settings or from above the lock screen. User's are required to authenticate and complete multifactor authentication to reset their PIN.
 
-There are two forms of PIN reset called destructive and non-destructive. Destructive PIN reset is the default and does not require configuration. During a destructive PIN reset, the user's existing PIN and underlying credentials, including any keys or certificates added to their Windows Hello container, will be deleted from the client and a new logon key and PIN are provisioned. For non-destructive PIN reset, you must deploy the Microsoft PIN reset service and client policy to enable the PIN recovery feature. During a non-destructive PIN reset, the user's Windows Hello for Business container and keys are preserved, but the user's PIN that they use to authorize key usage is changed.
+There are two forms of PIN reset called destructive and non-destructive. Destructive PIN reset is the default and doesn't require configuration. During a destructive PIN reset, the user's existing PIN and underlying credentials, including any keys or certificates added to their Windows Hello container, will be deleted from the client and a new logon key and PIN are provisioned. For non-destructive PIN reset, you must deploy the Microsoft PIN reset service and client policy to enable the PIN recovery feature. During a non-destructive PIN reset, the user's Windows Hello for Business container and keys are preserved, but the user's PIN that they use to authorize key usage is changed.
 
 ## Using PIN Reset
 
 **Requirements**
 
-- Reset from settings - Windows 10, version 1703
-- Reset above Lock - Windows 10, version 1709
+- Reset from settings - Windows 10, version 1703 or later, Windows 11
+- Reset above Lock - Windows 10, version 1709 or later, Windows 11
 
-Destructive and non-destructive PIN reset use the same entry points for initiating a PIN reset. If a user has forgotten their PIN, but has an alternate logon method, they can navigate to Sign-in options in Settings and initiate a PIN reset from the PIN options. If they do not have an alternate way to sign into their device, PIN reset can also be initiated from above the lock screen in the PIN credential provider.
+Destructive and non-destructive PIN reset use the same entry points for initiating a PIN reset. If a user has forgotten their PIN, but has an alternate logon method, they can navigate to Sign-in options in Settings and initiate a PIN reset from the PIN options. If they don't have an alternate way to sign into their device, PIN reset can also be initiated from above the lock screen in the PIN credential provider.
 
 >[!IMPORTANT]
 >For hybrid Azure AD-joined devices, users must have corporate network connectivity to domain controllers to complete destructive PIN reset. If AD FS is being used for certificate trust or for on-premises only deployments, users must also have corporate network connectivity to federation services to reset their PIN.
@@ -39,14 +39,14 @@ Destructive and non-destructive PIN reset use the same entry points for initiati
 ### Reset PIN from Settings
 
 1. Sign-in to Windows 10, version 1703 or later using an alternate credential.
-2. Open **Settings**, click **Accounts**, click **Sign-in options**.
+2. Open **Settings**, click **Accounts**, select **Sign-in options**.
 3. Under **PIN**, click **I forgot my PIN** and follow the instructions.
 
 ### Reset PIN above the Lock Screen
 
 For Azure AD-joined devices:
 
-1. If the PIN credential provider is not selected, expand the **Sign-in options** link, and select the PIN pad icon.
+1. If the PIN credential provider isn't selected, expand the **Sign-in options** link, and select the PIN pad icon.
 1. Click **I forgot my PIN** from the PIN credential provider.
 1. Select an authentication option from the list of presented options. This list will be based on the different authentication methods enabled in your tenant (i.e., Password, PIN, Security key).
 1. Follow the instructions provided by the provisioning process.
@@ -72,8 +72,8 @@ Visit the [Windows Hello for Business Videos](./hello-videos.md) page and watch 
 **Requirements:**
 
 - Azure Active Directory
-- Hybrid Windows Hello for Business deployment
-- Azure AD registered, Azure AD joined, and Hybrid Azure AD joined
+- Hybrid Azure Active Directory joined Windows Hello for Business deployment
+- Azure Active Directory AD registered, Azure Active Directory joined Azure AD joined, and Hybrid Azure Active Directory AD joined
 - Windows 10, version 1709 to 1809, **Enterprise Edition**. There is no licensing requirement for this feature since version 1903.
 
 When non-destructive PIN reset is enabled on a client, a 256-bit AES key is generated locally and added to a user's Windows Hello for Business container and keys as the PIN reset protector. This PIN reset protector is encrypted using a public key retrieved from the Microsoft PIN reset service and then stored on the client for later use during PIN reset. After a user initiates a PIN reset, completes authentication to Azure, and completes multifactor authentication, the encrypted PIN reset protector is sent to the Microsoft PIN reset service, decrypted, and returned to the client. The decrypted PIN reset protector is used to change the PIN used to authorize Windows Hello for Business keys and it is then cleared from memory.
@@ -81,8 +81,20 @@ When non-destructive PIN reset is enabled on a client, a 256-bit AES key is gene
 Using Group Policy, Microsoft Intune or a compatible MDM, you can configure Windows devices to securely use the Microsoft PIN reset service that enables users to reset their forgotten PIN through settings or above the lock screen without requiring re-enrollment.
 
 >[!IMPORTANT]
-> The Microsoft PIN Reset service only works with **Enterprise Edition** for Windows 10, version 1709 to 1809.  The feature works with **Enterprise Edition** and **Pro** edition with Windows 10, version 1903 and newer.
+> The Microsoft PIN Reset service only works with **Enterprise Edition** for Windows 10, version 1709 to 1809 and later, and Windows 11. The feature works with **Enterprise Edition** and **Pro** edition with Windows 10, version 1903 and later, Windows 11.
 > The Microsoft PIN Reset service is not currently available in Azure Government.
+
+### Summary
+
+|Category|Destructive PIN Reset|Non-Destructive PIN Reset|
+|--- |--- |--- |
+|**Functionality**|The user's existing PIN and underlying credentials, including any keys or certificates added to their Windows Hello container, will be deleted from the client and a new logon key and PIN are provisioned.|You must deploy the Microsoft PIN reset service and client policy to enable the PIN recovery feature. For more information on how to deploy the Microsoft PIN reset service and client policy, see [Connect Azure Active Directory with the PIN reset service](hello-feature-pin-reset.md). During a non-destructive PIN reset, the user's Windows Hello for Business container and keys are preserved, but the user's PIN that they use to authorize key usage is changed.|
+|**Windows editions and versions**|Reset from settings - Windows 10, version 1703 or later, Windows 11. Reset above Lock - Windows 10, version 1709 or later, Windows 11.|Windows 10, version 1709 to 1809, Enterprise Edition. There is no licensing requirement for this feature since version 1903. Enterprise Edition and Pro edition with Windows 10, version 1903 and newer Windows 11.|
+|**Azure Active Directory Joined**|Cert Trust, Key Trust, and Cloud Trust|Cert Trust, Key Trust, and Cloud Trust|
+|**Hybrid Azure Active Directory Joined**|Cert Trust and Cloud Trust for both settings and above the lock support destructive PIN reset. Key Trust doesn't support this from above the lock screen. This is due to the sync delay between when a user provisions their Windows Hello for Business credential and being able to use it for sign-in. It does support from the settings page and the users must have a corporate network connectivity to the DC. |Cert Trust, Key Trust, and Cloud Trust for both settings and above the lock support non-destructive PIN reset. No network connection is required for the DC.|
+|**On Premises**|If ADFS is being used for on premises deployments, users must have a corporate network connectivity to federation services. |The PIN reset service relies on Azure Active Directory identities, so it is only available for Hybrid Azure Active Directory Joined and Azure Active Directory Joined devices.|
+|**Additional Configuration required**|Supported by default and doesn't require configuration|Deploy the Microsoft PIN reset service and client policy to enable the PIN recovery feature On-board the Microsoft PIN reset service to respective Azure Active Directory tenant Configure Windows devices to use PIN reset using Group *Policy\MDM*.|
+|**MSA/Enterprise**|MSA and Enterprise|Enterprise only.|
 
 ### Onboarding the Microsoft PIN reset service to your Intune tenant
 
@@ -210,11 +222,11 @@ The [ConfigureWebSignInAllowedUrls](/windows/client-management/mdm/policy-csp-au
 
     :::image type="content" alt-text="Custom Configuration for ConfigureWebSignInAllowedUrls policy." source="images/pinreset/allowlist.png" lightbox="images/pinreset/allowlist.png":::
 
-1. Click the Save button to save the custom configuration.
+1. Click the **Save** button to save the custom configuration.
 
 1. On the Assignments page, use the Included groups and Excluded groups sections to define the groups of users or devices that should receive this policy. Once you have completed configuring groups click the Next button.
 
-1. On the Applicability rules page, click Next.
+1. On the Applicability rules page, click **Next**.
 
 1. Review the configuration that is shown on the Review + create page to make sure that it is accurate. Click create to save the profile and apply it to the configured groups.
 
