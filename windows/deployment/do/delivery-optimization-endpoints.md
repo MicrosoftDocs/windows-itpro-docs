@@ -15,7 +15,7 @@ ms.collection: # optional
 - # openauth - the article is owned by PM or community for open authoring
 ---
 
-## Delivery Optimization and Microsoft Connected Cache content type endpoints
+# Delivery Optimization and Microsoft Connected Cache content type endpoints
 
 _Applies to:_
 
@@ -25,7 +25,7 @@ _Applies to:_
 > [!NOTE]
 > All ports are outbound.
 
-To ensure connect delivered via Delivery Optimization and Microsoft Connected Cache is properly configured, the following list of endpoints need to be allowed through the firewall. Use the table below to reference any particular content types supported by Delivery Optimization and Microsoft Connected Cache.
+To ensure content delivered via Delivery Optimization and Microsoft Connected Cache is properly configured, the following list of endpoints need to be allowed through the firewall. Use the table below to reference any particular content types supported by Delivery Optimization and Microsoft Connected Cache.
 
 |Domain Name  |Protocol/Port(s)  | Content Type | Additional Information | Version |
 |---------|---------|---------------|-------------------|-----------------|
