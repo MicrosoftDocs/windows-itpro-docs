@@ -246,10 +246,11 @@ For more information about UAC, see [User Account Control](/windows/access-prote
 
 The following table shows the Group Policy and registry settings that are used to enforce local account restrictions for remote access.
 
+<!-- MicrosoftDocs/windows-itpro-docs/issues/7146 start line 254-->
+
 |No.|Setting|Detailed Description|
 |--- |--- |--- |
 ||Policy location|Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options|
-<!-- MicrosoftDocs/windows-itpro-docs/issues/7146 -->
 |1|Policy name|[User Account Control: Admin Approval Mode for the Built-in Administrator account](/windows/security/threat-protection/security-policy-settings/user-account-control-admin-approval-mode-for-the-built-in-administrator-account)|
 ||Policy setting|Enabled|
 |2|Policy location|Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options|
@@ -263,7 +264,6 @@ The following table shows the Group Policy and registry settings that are used t
 > [!NOTE]
 > You can also enforce the default for LocalAccountTokenFilterPolicy by using the custom ADMX in Security Templates. 
  
-
 #### To enforce local account restrictions for remote access
 
 1.  Start the **Group Policy Management** Console (GPMC).

@@ -80,8 +80,6 @@ sections:
           - Microsoft Edge: Windows Autopatch configures eligible devices to benefit from Microsoft Edge's progressive rollouts on the Stable channel and will provide support for issues with Microsoft Edge updates.
           - Microsoft Teams: Windows Autopatch allows eligible devices to benefit from the standard automatic update channels and will provide support for issues with Teams updates.
       - question: What does Windows Autopatch do to ensure updates are done successfully?
-        answer: For information about the Microsoft Admin Center, see [Manage third-party app subscriptions for your organization](/microsoft-365/commerce/manage-saas-apps).
-      - question: What does Windows Autopatch do to ensure updates are done successfully?
         answer: |
           For Windows quality updates, updates are applied to device in the Test ring first. The devices are evaluated, and then rolled out to the First, Fast then Broad rings. There's an evaluation period at each progression. This process is dependent on customer testing and verification of all updates during these rollout stages. The outcome is to ensure that registered devices are always up to date and disruption to business operations is minimized to free up your IT department from that ongoing task.
       - question: What happens if there's an issue with an update?
