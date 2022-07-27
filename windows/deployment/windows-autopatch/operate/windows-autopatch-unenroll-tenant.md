@@ -22,7 +22,7 @@ If you're looking to unenroll your tenant from Windows Autopatch, this article d
 Unenrolling from Windows Autopatch requires manual actions from both you and from the Windows Autopatch Service Engineering Team. The Windows Autopatch Service Engineering Team will:  
 
 - Remove Windows Autopatch access to your tenant.
-- Deregister your devices from the Windows Autopatch service. Deregistering your devices from Windows Autopatch won't remove your devices from Intune, Azure AD or Configuration Manager. The Windows Autopatch Service Engineering Team follows the same process and principles as laid out in [Deregister a device](windows-autopatch-deregister-devices.md)
+- Deregister your devices from the Windows Autopatch service. Deregistering your devices from Windows Autopatch won't remove your devices from Intune, Azure AD or Configuration Manager. The Windows Autopatch Service Engineering Team follows the same process and principles as laid out in [Deregister a device](/windows/deployment/windows-autopatch/operate/windows-autopatch-deregister-devices).
 - Delete all data that we've stored in the Windows Autopatch data storage.
 
 > [!NOTE]
