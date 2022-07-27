@@ -22,7 +22,7 @@ If you're looking to unenroll your tenant from Windows Autopatch, this article d
 Unenrolling from Windows Autopatch requires manual actions from both you and from the Windows Autopatch Service Engineering Team. The Windows Autopatch Service Engineering Team will:  
 
 - Remove Windows Autopatch access to your tenant.
-- Deregister your devices from the Windows Autopatch service. Deregistering your devices from Windows Autopatch won't remove your devices from Intune, Azure AD or Configuration Manager. The Windows Autopatch Service Engineering Team follows the same process and principles as laid out in Deregister a device.
+- Deregister your devices from the Windows Autopatch service. Deregistering your devices from Windows Autopatch won't remove your devices from Intune, Azure AD or Configuration Manager. The Windows Autopatch Service Engineering Team follows the same process and principles as laid out in [Deregister a device](windows-autopatch-deregister-devices.md)
 - Delete all data that we've stored in the Windows Autopatch data storage.
 
 > [!NOTE]
@@ -33,9 +33,7 @@ Unenrolling from Windows Autopatch requires manual actions from both you and fro
 | Responsibility | Description |
 | ----- | ----- |
 | Windows Autopatch data | Windows Autopatch will delete user data that is within the Windows Autopatch service. We won’t make changes to any other data. For more information about how data is used in Windows Autopatch, see [Privacy](../references/windows-autopatch-privacy.md). |
-| Windows Autopatch cloud service accounts | Windows Autopatch will remove the cloud service accounts created during the enrollment process. The accounts are:<ul><li>MsAdmin</li><li>MsAdminInt</li><li>MsTest</li></ul> |
-| Conditional access policy | Windows Autopatch will remove the Modern Workplace – Secure Workstation conditional access policy. |
-| Microsoft Endpoint Manager roles | Windows Autopatch will remove the Modern Workplace Intune Admin role. |
+| Deregistering devices | Windows Autopatch will deregister all devices previously registered with the service. Only the Windows Autopatch device record will be deleted, we will not delete Microsoft Intune and/or Azure Active Directory device records, see [Deregister a device](windows-autopatch-deregister-devices.md)
 
 ## Your responsibilities after unenrolling your tenant
 
@@ -43,6 +41,9 @@ Unenrolling from Windows Autopatch requires manual actions from both you and fro
 | ----- | ----- |
 | Updates | After the Windows Autopatch service is unenrolled, we’ll no longer provide updates to your devices.  You must ensure that your devices continue to receive updates through your own policies to ensure they're secure and up to date. |
 | Optional Windows Autopatch configuration | Windows Autopatch won’t remove the configuration policies or groups used to enable updates on your devices. You're responsible for these policies following tenant unenrollment. If you don’t wish to use these policies for your devices after unenrollment, you may safely delete them. |
+| Windows Autopatch cloud service accounts | After unenrollment, you may safely remove the cloud service accounts created during the enrollment process. The accounts are:<ul><li>MsAdmin</li><li>MsAdminInt</li><li>MsTest</li></ul> |
+| Conditional access policy | After unenrollment, you may safely remove the Modern Workplace – Secure Workstation conditional access policy. |
+| Microsoft Endpoint Manager roles | After unenrollment, you may safely remove the Modern Workplace Intune Admin role. |
 
 ## Unenroll from Windows Autopatch
 
