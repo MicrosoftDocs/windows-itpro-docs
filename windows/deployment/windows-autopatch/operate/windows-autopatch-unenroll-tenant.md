@@ -33,7 +33,7 @@ Unenrolling from Windows Autopatch requires manual actions from both you and fro
 | Responsibility | Description |
 | ----- | ----- |
 | Windows Autopatch data | Windows Autopatch will delete user data that is within the Windows Autopatch service. We won’t make changes to any other data. For more information about how data is used in Windows Autopatch, see [Privacy](../references/windows-autopatch-privacy.md). |
-| Deregistering devices | Windows Autopatch will deregister all devices previously registered with the service. Only the Windows Autopatch device record will be deleted, we will not delete Microsoft Intune and/or Azure Active Directory device records, see [Deregister a device](windows-autopatch-deregister-devices.md)
+| Deregistering devices | Windows Autopatch will deregister all devices previously registered with the service. Only the Windows Autopatch device record will be deleted. We will not delete Microsoft Intune and/or Azure Active Directory device records. For more information, see [Deregister a device](/windows/deployment/windows-autopatch/operate/windows-autopatch-deregister-devices). |
 
 ## Your responsibilities after unenrolling your tenant
 
