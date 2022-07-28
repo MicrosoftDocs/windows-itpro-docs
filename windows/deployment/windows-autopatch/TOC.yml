@@ -25,8 +25,13 @@
       items:
         - name: Add and verify admin contacts
           href: deploy/windows-autopatch-admin-contacts.md
-        - name: Register your devices
-          href: deploy/windows-autopatch-register-devices.md
+        - name: Device registration
+          href:
+          items:
+            - name: Device registration overview
+              href: deploy/windows-autopatch-device-registration-overview.md
+            - name: Register your devices
+              href: deploy/windows-autopatch-register-devices.md
     - name: Operate
       href: operate/index.md
       items:
