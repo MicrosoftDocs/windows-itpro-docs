@@ -18,20 +18,20 @@ ms.date: 08/09/2022
 > [!IMPORTANT]
 > This information relates to a preview feature that's available for early testing and use in a production environment. This feature is fully supported but it's still in active development and may receive substantial changes until it becomes generally available.
 
-Update Compliance uses [Azure Workbooks](/azure/azure-monitor/visualize/workbooks-getting-started) to give you a visual representation of your compliance data. <!-- The Update Compliance workbook presents common information .... uses charts and tables to present the most common information -->  The workbook is broken down into three sections:
+[Update Compliance](update-compliance-v2-overview.md) presents information commonly needed by updates administrators in an easy to use format. Update Compliance uses [Azure Workbooks](/azure/azure-monitor/visualize/workbooks-getting-started) to give you a visual representation of your compliance data. The workbook is broken down into three tab sections:
 
-- Summary
-- Quality updates
-- Feature updates
-
-
-## Prerequisites
-
-[Update Compliance](update-compliance-v2-overview.md) needs to be enabled with clients sending data to the solution
+- [Summary](#summary-tab)
+- [Quality updates](#quality-updates-tab)
+- [Feature updates](#feature-updates-tab)
 
 ## Open the Update Compliance workbook
 
+To access the Update Compliance workbook:
 
+1. In the [Azure portal](https://portal.azure.com), select **Monitor** > **Workbooks** from the menu bar.
+   - You can also type **Monitor** in the search bar. As you begin typing, the list filters based on your input.
+
+2. When the gallery opens, select the **Update Compliance** workbook. You can also filter workbooks by name in the gallery.
 
 ## Summary tab
 
@@ -40,6 +40,6 @@ Update Compliance uses [Azure Workbooks](/azure/azure-monitor/visualize/workbook
 ## Quality updates tab
 
 
-## Feature updates 
+## Feature updates tab
 
 ## Next steps
