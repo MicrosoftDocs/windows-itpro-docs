@@ -57,7 +57,7 @@ Activities are grouped into the following phases: **Plan** > **Prepare** > **Dep
 - Ensure that [users are ready](/windows/deployment/update/prepare-deploy-windows) for updates
 
 **Deploy** and manage Windows 10 strategically in your organization:
-- Use [Windows Autopilot](/mem/autopilot/windows-autopilot) to streamline the set up, configuration, and delivery of new devices
+- Use [Windows Autopilot](/mem/autopilot/windows-autopilot) to streamline the setup, configuration, and delivery of new devices
 - Use [Configuration Manager](/windows/deployment/deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager) or [MDT](/windows/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt) to deploy new devices and update existing devices
 - Use [Windows Update for Business](/windows/deployment/update/waas-configure-wufb) with Group Policy to [customize update settings](/windows/deployment/update/waas-wufb-group-policy) for your devices
 - [Deploy Windows updates](/windows/deployment/update/waas-manage-updates-wsus) with Windows Server Update Services (WSUS)
@@ -73,7 +73,7 @@ Enhancements to Windows Autopilot since the last release of Windows 10 include:
 
 ### Windows Assessment and Deployment Toolkit (ADK)
 
-There is no new ADK for Windows 10, version 20H2. The ADK for Windows 10, version 2004 will also work with Windows 10, version 20H2.  For more information, see [Download and install the Windows ADK](/windows-hardware/get-started/adk-install).
+There's no new ADK for Windows 10, version 20H2. The ADK for Windows 10, version 2004 will also work with Windows 10, version 20H2.  For more information, see [Download and install the Windows ADK](/windows-hardware/get-started/adk-install).
 
 ## Device management
 
@@ -146,4 +146,4 @@ For information about Desktop Analytics and this release of Windows 10, see [Wha
 [What's New in Windows 10](./index.yml): See what’s new in other versions of Windows 10.<br>
 [Announcing more ways we’re making app development easier on Windows](https://blogs.windows.com/windowsdeveloper/2020/09/22/kevin-gallo-microsoft-ignite-2020/): Simplifying app development in Windows.<br>
 [Features and functionality removed in Windows 10](/windows/deployment/planning/windows-10-removed-features): Removed features.<br>
-[Windows 10 features we’re no longer developing](/windows/deployment/planning/windows-10-deprecated-features): Features that are not being developed.<br>
+[Windows 10 features we’re no longer developing](/windows/deployment/planning/windows-10-deprecated-features): Features that aren't being developed.<br>

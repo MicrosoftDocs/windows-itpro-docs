@@ -91,7 +91,7 @@ reg add hklm\system\currentcontrolset\control\ci -v TestFlags -t REG_DWORD -d 0x
 
 ## Event ID 3099 Options
 
-The Application Control policy rule-option values can be derived from the "Options" field in the Details section of the Code integrity 3099 event. To parse the values, first convert the hex value to binary. To derive and parse these values, follow the below workflow.
+The Application Control policy rule option values can be derived from the "Options" field in the Details section of the Code integrity 3099 event. To parse the values, first convert the hex value to binary. To derive and parse these values, follow the below workflow.
 
 - Access Event Viewer.
 - Access the Code integrity 3099 event.

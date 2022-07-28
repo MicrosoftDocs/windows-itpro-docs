@@ -34,7 +34,7 @@ This topic for IT professionals describes concepts and lists procedures to help 
 ## Understanding Packaged Apps and Packaged App Installers
 
 Packaged apps, also known as Universal Windows apps, are based on a model that ensures all the files within an app package share the same identity. With classic Windows apps, each file within the app could have a unique identity. 
-With packaged apps, it is possible to control the entire app by using a single Windows Defender Application Control rule.
+With packaged apps, it's possible to control the entire app by using a single Windows Defender Application Control rule.
  
 Typically, an app consists of multiple components: the installer that is used to install the app, and one or more exes, dlls, or scripts. With classic Windows apps, these components don't always share common attributes such as the software’s publisher name, product name, and product version. Therefore, Windows Defender Application Control controls each of these components separately through different rule collections, such as exe, dll, script, and Windows Installer rules. In contrast, all the components of a packaged app share the same publisher name, package name, and package version attributes. Therefore, you can control an entire app with a single rule.
 
@@ -43,8 +43,8 @@ Typically, an app consists of multiple components: the installer that is used to
 Windows Defender Application Control policies for packaged apps can only be applied to apps installed on computers running at least Windows Server 2012 or Windows 8, but classic Windows apps can be controlled on devices running at least Windows Server 
 2008 R2 or Windows 7. The rules for classic Windows apps and packaged apps can be enforced in tandem. The differences between packaged apps and classic Windows apps that you should consider include:
 
--   **Installing the apps**   All packaged apps can be installed by a standard user, whereas a number of classic Windows apps require administrative privileges to install. In an environment where most of the users are standard users, you might not have numerous exe rules (because classic Windows apps require administrative privileges to install), but you might want to have more explicit policies for packaged apps.
--   **Changing the system state**   Classic Windows apps can be written to change the system state if they are run with administrative privileges. Most packaged apps cannot change the system state because they run with limited privileges. When you design your Windows Defender Application Control policies, it is important to understand whether an app that you are allowing can make system-wide changes.
+-   **Installing the apps**   All packaged apps can be installed by a standard user, whereas many classic Windows apps require administrative privileges to install. In an environment where most of the users are standard users, you might not have numerous exe rules (because classic Windows apps require administrative privileges to install), but you might want to have more explicit policies for packaged apps.
+-   **Changing the system state**   Classic Windows apps can be written to change the system state if they're run with administrative privileges. Most packaged apps can't change the system state because they run with limited privileges. When you design your Windows Defender Application Control policies, it's important to understand whether an app that you're allowing can make system-wide changes.
 -   **Acquiring the apps**   Packaged apps can be acquired through the Store, or by loading using Windows PowerShell cmdlets (which requires a special enterprise license). Classic Windows apps can be acquired through traditional means.
 
 Windows Defender Application Control uses different rule collections to control packaged apps and classic Windows apps. You have the choice to control one type, the other type, or both.
@@ -57,7 +57,7 @@ Just as there are differences in managing each rule collection, you need to mana
 
 2.  Create WDAC rules for specific packaged apps based on your policy strategies. For more information, see [Deploy Windows Defender Application Control policy (WDAC) rules and file rules](select-types-of-rules-to-create.md).
 
-3.  Continue to update the WDAC policies as new package apps are introduced into your environment. To do this, see [Merge WDAC policies](merge-windows-defender-application-control-policies.md).
+3.  Continue to update the WDAC policies as new package apps are introduced into your environment. For information on how to do this update, see [Merge WDAC policies](merge-windows-defender-application-control-policies.md).
 
 ## Blocking Packaged Apps
 
@@ -65,7 +65,7 @@ You can now use `New-CIPolicyRule -Package $Package -Deny` to block packaged app
 
 ### Blocking Packaged Apps Which Are Installed on the System
 
-Below are the list of steps you can follow to block one or more packaged apps in the case that the apps are on the system you are using the WDAC PowerShell cmdlets on:
+Below are the list of steps you can follow to block one or more packaged apps in the case that the apps are on the system you're using the WDAC PowerShell cmdlets on:
 
 1. Get the app identifier for an installed package
 
@@ -116,9 +116,9 @@ Below are the list of steps you can follow to block one or more packaged apps in
    ```powershell
    Invoke-CimMethod -Namespace root\Microsoft\Windows\CI -ClassName PS_UpdateAndCompareCIPolicy -MethodName Update -Arguments @{FilePath = "C:\compiledpolicy.bin"}
    ```
-   ### Blocking Packaged Apps Which Are Not Installed on the System
+   ### Blocking Packaged Apps Which Aren't Installed on the System
 
-If the app you intend to block is not installed on the system you are using the WDAC PowerShell cmdlets on, then follow the steps below:
+If the app you intend to block isn't installed on the system you're using the WDAC PowerShell cmdlets on, then follow the steps below:
 
 1. Create a dummy rule using Steps 1-5 in the Blocking Packaged Apps Which Are Installed on the System section above
 
@@ -148,4 +148,4 @@ The method for allowing specific packaged apps is similar to the method outlined
 $Rule = New-CIPolicyRule -Package $package -allow
 ```
 
-Since a lot of system apps are packaged apps, it is generally advised that customers rely on the sample policies in `C:\Windows\schemas\CodeIntegrity\ExamplePolicies` to help allow all inbox apps by the Store signature already included in the policies and control apps with deny rules. 
+Since many system apps are packaged apps, it's recommended that customers rely on the sample policies in `C:\Windows\schemas\CodeIntegrity\ExamplePolicies` to help allow all inbox apps by the Store signature already included in the policies and control apps with deny rules. 

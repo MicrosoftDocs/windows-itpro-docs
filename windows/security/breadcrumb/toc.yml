@@ -1,0 +1,16 @@
+items:
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+  - name: Windows
+    tocHref: /windows/
+    topicHref: /windows/resources/
+    items:
+    - name: Security
+      tocHref: /windows/security/
+      topicHref: /windows/security/
+      items:
+      - name: User security
+        tocHref: /windows-server/security/credentials-protection-and-management/
+        topicHref: /windows/security/identity

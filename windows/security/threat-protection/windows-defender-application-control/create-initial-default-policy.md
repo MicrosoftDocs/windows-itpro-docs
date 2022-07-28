@@ -37,7 +37,7 @@ The policy file is converted to binary format when it gets created so that Windo
 
 ## Overview of the process of creating Windows Defender Application Control policies
 
-A common system imaging practice in today’s IT organization is to establish a “golden” image as a reference for what an ideal system should look like, and then use that image to clone additional company assets. Windows Defender Application Control policies follow a similar methodology, that begins with the establishment of a golden computer. As with imaging, you can have multiple golden computers based on model, department, application set, and so on. Although the thought process around the creation of WDAC policies is similar to imaging, these policies should be maintained independently. Assess the necessity of additional WDAC policies based on what should be allowed to be installed and run and for whom. For more details on doing this assessment, see the [WDAC Design Guide](windows-defender-application-control-design-guide.md).
+A common system imaging practice in today’s IT organization is to establish a “golden” image as a reference for what an ideal system should look like, and then use that image to clone more company assets. Windows Defender Application Control policies follow a similar methodology that begins with the establishment of a golden computer. As with imaging, you can have multiple golden computers based on model, department, application set, and so on. Although the thought process around the creation of WDAC policies is similar to imaging, these policies should be maintained independently. Assess the necessity of more WDAC policies based on what should be allowed to be installed and run and for whom. For more information on doing this assessment, see the [WDAC Design Guide](windows-defender-application-control-design-guide.md).
 
 Optionally, WDAC can align with your software catalog and any IT department–approved applications. One straightforward method to implement WDAC is to use existing images to create one master WDAC policy. You do so by creating a WDAC policy from each image, and then by merging the policies. This way, what is installed on all of those images will be allowed to run, if the applications are installed on a computer based on a different image. Alternatively, you may choose to create a base applications policy and add policies based on the computer’s role or department. Organizations have a choice of how their policies are created, merged, or serviced, and managed.
 
@@ -48,12 +48,12 @@ If you plan to use an internal CA to sign catalog files or WDAC policies, see th
 
 Each installed software application should be validated as trustworthy before you create a policy.
 We recommend that you review the reference computer for software that can load arbitrary DLLs and run code or scripts that could render the PC more vulnerable.
-Examples include software aimed at development or scripting such as msbuild.exe (part of Visual Studio and the .NET Framework) which can be removed if you do not want to run scripts.
+Examples include software aimed at development or scripting such as msbuild.exe (part of Visual Studio and the .NET Framework) which can be removed if you don't want to run scripts.
 You can remove or disable such software on the reference computer.
 
 To create a Windows Defender Application Control policy, copy each of the following commands into an elevated Windows PowerShell session, in order:
 
-1. Initialize variables that you will use.
+1. Initialize variables that you'll use.
 
    ```powershell
    $PolicyPath=$env:userprofile+"\Desktop\"
@@ -83,7 +83,7 @@ To create a Windows Defender Application Control policy, copy each of the follow
    ConvertFrom-CIPolicy $WDACPolicy $WDACPolicyBin
    ```
 
-After you complete these steps, the WDAC binary file ($WDACPolicyBin) and original .xml file ($WDACPolicy) will be available on your desktop. You can use the binary file as a WDAC policy or sign it for additional security.
+After you complete these steps, the WDAC binary file ($WDACPolicyBin) and original .xml file ($WDACPolicy) will be available on your desktop. You can use the binary file as a WDAC policy or sign it for more security.
 
 > [!NOTE]
 > We recommend that you keep the original .xml file of the policy for use when you need to merge the WDAC policy with another policy or update its rule options. Alternatively, you would have to create a new policy from a new scan for servicing. For more information about how to merge WDAC policies, see [Merge Windows Defender Application Control policies](merge-windows-defender-application-control-policies.md).
