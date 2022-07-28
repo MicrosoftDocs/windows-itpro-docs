@@ -72,7 +72,7 @@ See the following detailed workflow diagram. The diagram covers the Windows Auto
         3. **Pro Workstation**
     5. If the device meets the operating system requirements, Windows Autopatch checks whether the device is either:
         1. **Only managed by Intune**
-            1. If the device is only managed by Intune, the device is marked as **passed all prerequisites**.
+            1. If the device is only managed by Intune, the device is marked as **Passed all prerequisites**.
         2. **Co-managed by both Configuration Manager and Intune**
             1. If the device is co-managed by both Configuration Manager and Intune, an additional prerequisite check is evaluated to determine if the device satisfies the co-management-enabled workloads required by Windows Autopatch to manage devices in a co-managed state.
                 1. The required co-management workloads evaluated in this step are:
@@ -93,7 +93,7 @@ See the following detailed workflow diagram. The diagram covers the Windows Auto
         1. This group has all devices managed by Windows Autopatch.
     2. **Modern Workplace Devices Dynamic - Windows 10**
         1. This group has all devices managed by Windows Autopatch and that have Windows 10 installed.
-    3. M**odern Workplace Devices Dynamic - Windows 11**
+    3. **Modern Workplace Devices Dynamic - Windows 11**
         1. This group has all devices managed by Windows Autopatch and that have Windows 11 installed.
     4. **Modern Workplace Devices - Virtual Machine**
         1. This group has all virtual devices managed by Windows Autopatch.
@@ -103,8 +103,8 @@ See the following detailed workflow diagram. The diagram covers the Windows Auto
     3. The Azure AD device ID of the device successfully registered is added into the Microsoft Cloud Managed Desktop Extension’s allowlist. Windows Autopatch installs the Microsoft Cloud Managed Desktop Extension agent once devices are registered, so the agent can communicate back to the Microsoft Cloud Managed Desktop Extension service.
         1. The agent is the **Modern Workplace - Autopatch Client setup** PowerShell script that was created during the Windows Autopatch tenant enrollment process. The script is executed once devices are successfully registered into the Windows Autopatch service.
 9. IT admins review the device registration status in both the **Ready** and **Not ready** tabs.
-    1. If the device was successfully registered, it shows up in the **Ready** tab.
-    2. If not, in the **Not ready** tab.
+    1. If the device was successfully registered, the device shows up in the **Ready** tab.
+    2. If not, the device shows up in the **Not ready** tab.
 10. This is the end of the Windows Autopatch device registration workflow.
 
 ## Detailed prerequisite check workflow diagram
