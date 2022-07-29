@@ -3253,10 +3253,7 @@ The table below shows the applicability of Windows:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education.
-
-Enables the IT admin to schedule the time of the update installation.
+Enables the IT admin to schedule the time of the update installation. Noting that there is a +/- 30 minute window to allow for higher success rates of installation.
 
 The supported data type is an integer.
 
