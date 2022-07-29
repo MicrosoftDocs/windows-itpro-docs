@@ -1,25 +1,22 @@
 ---
 title: Customize and manage the Windows 10 Start and taskbar layout  (Windows 10) | Microsoft Docs
 description: On Windows devices, customize the start menu layout and taskbar using XML, group policy, provisioning package, or MDM policy. You can add pinned folders, add a start menu size, pin apps to the taskbar, and more.
-ms.assetid: 2E94743B-6A49-463C-9448-B7DD19D9CD6A
 ms.reviewer: 
-manager: dansimp
-keywords: ["start screen", "start menu"]
+manager: dougeby
 ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
-author: greg-lindsay
-ms.author: greglin
+author: aczechowski
+ms.author: aaroncz
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 08/05/2021
+ms.collection: highpri
 ---
 
 # Customize the Start menu and taskbar layout on Windows 10 and later devices
 
 **Applies to**:
 
-- Windows 10 version 1607 and later
+- Windows 10 version 1607 and later
 - Windows Server 2016 with Desktop Experience
 - Windows Server 2019 with Desktop Experience
 
@@ -71,7 +68,7 @@ For more information, see [Use MDM to customize Windows 10 Start and taskbar](cu
 
 ## Start menu policy settings
 
-![start layout sections](images/startannotated.png)
+![start layout sections.](images/startannotated.png)
 
 The following list includes the different Start options, and any policy or local settings. The settings in the list can also be used in a provisioning package. If you use a provisioning package, see the [Windows Configuration Designer reference](./wcd/wcd-policies.md#start).
 
@@ -180,7 +177,7 @@ The following example shows how apps are pinned. In OS configured to use a right
 - Apps pinned by the user in the center (orange triangle)
 - Apps that you pin using XML to the right (green square)
 
-![Windows left, user center, enterprise to the right](images/taskbar-generic.png)
+![Windows left, user center, enterprise to the right.](images/taskbar-generic.png)
 
 If you apply the taskbar configuration to a clean install or an update, users can still:
 

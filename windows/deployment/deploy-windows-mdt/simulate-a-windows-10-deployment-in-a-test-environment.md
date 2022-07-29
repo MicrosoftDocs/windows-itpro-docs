@@ -1,18 +1,12 @@
 ---
 title: Simulate a Windows 10 deployment in a test environment (Windows 10)
 description: This topic will walk you through the process of creating a simulated environment on which to test your Windows 10 deployment using MDT.
-ms.assetid: 2de86c55-ced9-4078-b280-35e0329aea9c
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
-keywords: deploy, script
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.sitesec: library
-ms.pagetype: mdt
-audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ---
 
@@ -33,8 +27,25 @@ This topic will walk you through the process of creating a simulated environment
 On **PC0001**:
 
 1. Sign as **contoso\\Administrator**.
-2. Download the [sample Gather.ps1 script](/samples/browse/?redirectedfrom=TechNet-Gallery) from the TechNet gallery and copy it to a directory named **C:\MDT** on PC0001.
-3. Download and install the free [Microsoft System Center 2012 R2 Configuration Manager Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=734717) on PC0001 so that you have access to the Configuration Manager Trace (cmtrace.exe) tool.
+2. Copy the following to a PowerShell script named gather.ps1 and copy it to a directory named **C:\MDT** on PC0001.
+
+    ```powershell
+    # Check for elevation
+    If (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole(`
+        [Security.Principal.WindowsBuiltInRole] "Administrator"))
+    {
+        Write-Warning "Oupps, you need to run this script from an elevated PowerShell prompt!`nPlease start the PowerShell prompt as an Administrator and re-run the script."
+        Write-Warning "Aborting script..."
+        Break
+    }
+    cls
+    if (Test-Path -Path "C:\MININT") {Write-Host "C:\MININT exists, deleting...";Remove-Item C:\MININT -Recurse}
+    cscript.exe ZTIGather.wsf /debug:true
+    # Optional, comment out if you want the script to open the log in CMTrace
+    & "C:\MDT\CMTrace" C:\MININT\SMSOSD\OSDLOGS\ZTIGather.log
+    ```
+
+3. Download and install the free [Configuration Manager Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=734717) on PC0001 so that you have access to the Configuration Manager Trace (cmtrace.exe) tool.
 4. Using Local Users and Groups (lusrmgr.msc), add the **contoso\\MDT\_BA** user account to the local **Administrators** group.
 5. Sign off, and then sign on to PC0001 as **contoso\\MDT\_BA**.
 6. Open the **\\\\MDT01\\MDTProduction$\\Scripts** folder and copy the following files to **C:\\MDT**:
@@ -46,7 +57,7 @@ On **PC0001**:
 8. In the **C:\\MDT** folder, create a subfolder named **X64**.
 9. From the **\\\\MDT01\\MDTProduction$\\Tools\\X64** folder, copy the Microsoft.BDD.Utility.dll file to **C:\\MDT\\X64**.
 
-   ![files](../images/mdt-09-fig06.png)
+   ![files.](../images/mdt-09-fig06.png)
 
    The C:\\MDT folder with the files added for the simulation environment.
 
@@ -62,7 +73,7 @@ On **PC0001**:
     **Note**  
     Warnings or errors with regard to the Wizard.hta are expected. If the log file looks okay, you are ready to try a real deployment.
  
-   ![ztigather](../images/mdt-09-fig07.png)
+   ![ztigather.](../images/mdt-09-fig07.png)
 
    The ZTIGather.log file from PC0001.
 

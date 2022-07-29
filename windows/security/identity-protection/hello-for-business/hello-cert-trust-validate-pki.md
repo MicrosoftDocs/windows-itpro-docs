@@ -1,14 +1,9 @@
 ---
 title: Validate Public Key Infrastructure - certificate trust model (Windows Hello for Business)
 description: How to Validate Public Key Infrastructure for Windows Hello for Business, under a certificate trust model.
-keywords: identity, PIN, biometric, Hello, passport
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
-author: mapalko
-ms.author: mapalko
+ms.prod: m365-security
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -16,12 +11,14 @@ localizationpriority: medium
 ms.date: 08/19/2018
 ms.reviewer: 
 ---
-# Validate and Configure Public Key Infrastructure
+# Validate and Configure Public Key Infrastructure - Certificate Trust Model
 
 **Applies to**
--   Windows 10, version 1703 or later
--   On-premises deployment
--   Certificate trust
+
+- Windows 10, version 1703 or later
+- Windows 11
+- On-premises deployment
+- Certificate trust
 
 
 Windows Hello for Business must have a public key infrastructure regardless of the deployment or trust model.  All trust models depend on the domain controllers having a certificate.  The certificate serves as a root of trust for clients to ensure they are not communicating with a rogue domain controller.  The certificate trust model extends certificate issuance to client computers.  During Windows Hello for Business provisioning, the user receives a sign-in certificate.
@@ -94,7 +91,7 @@ The certificate template is configured to supersede all the certificate template
 
 ### Configure an Internal Web Server Certificate template
 
-Windows 10 clients use the https protocol when communicating with Active Directory Federation Services.  To meet this need, you must issue a server authentication certificate to all the nodes in the Active Directory Federation Services farm.  On-premises deployments can use a server authentication certificate issued by their enterprise PKI.  You must configure a server authentication certificate template so the host running the Active Directory Federation Service can request the certificate. 
+Windows 10 or Windows 11 clients use the https protocol when communicating with Active Directory Federation Services.  To meet this need, you must issue a server authentication certificate to all the nodes in the Active Directory Federation Services farm.  On-premises deployments can use a server authentication certificate issued by their enterprise PKI.  You must configure a server authentication certificate template so the host running the Active Directory Federation Service can request the certificate.
 
 Sign-in to a certificate authority or management workstations with _Domain Admin_ equivalent credentials.
 1. Open the **Certificate Authority** management console.

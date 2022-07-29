@@ -51,7 +51,7 @@ invoice and descriptions for each term.
 
 The **Invoice Summary** is on the top of the first page and shows information about your billing profile and how you pay.
 
-![Invoice summary section](images/invoicesummary.png)
+![Invoice summary section.](images/invoicesummary.png)
 
 
 | Term | Description |
@@ -68,7 +68,7 @@ The **Invoice Summary** is on the top of the first page and shows information ab
 The **Billing Summary**  shows the charges against the billing profile since the previous billing period, any credits that were applied, tax, and the total amount due.
 
 
-![Billing summary section](images/billingsummary.png)
+![Billing summary section.](images/billingsummary.png)
 
 | Term | Description |
 | --- | --- |
@@ -91,7 +91,7 @@ The total amount due for each service family is calculated by subtracting Azure 
 
 `Total = Charges/Credits - Azure Credit + Tax`
 
-![Details by invoice section](images/invoicesectiondetails.png)
+![Details by invoice section.](images/invoicesectiondetails.png)
 
 | Term |Description |
 | --- | --- |
@@ -110,7 +110,7 @@ At the bottom of the invoice, there are instructions for paying your bill. You c
 If you have third-party services in your bill, the name and address of each publisher is listed at the bottom of your invoice.
 
 ## Next steps
-If there are Azure charges on your invoice that you would like more details on, see [Understand the Azure charges on your Microsoft Customer Agreement invoice](/azure/billing/billing-understand-your-invoice-mca).
+If there are Azure charges on your invoice that you would like more details on, see [Understand the Azure charges on your Microsoft Customer Agreement invoice](/azure/cost-management-billing/understand/mca-understand-your-invoice).
 
 ## Need help? Contact us.
 

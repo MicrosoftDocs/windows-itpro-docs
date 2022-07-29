@@ -7,18 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 5157(F): The Windows Filtering Platform has blocked a connection.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-5157.png" alt="Event 5157 illustration" width="491" height="503" hspace="10" align="left" />
@@ -113,7 +109,7 @@ This event generates when [Windows Filtering Platform](/windows/win32/fwp/window
 
     -   0.0.0.0 - all IP addresses in IPv4 format
 
-    -   127.0.0.1 , ::1 - localhost
+    -   127.0.0.1, ::1 - localhost
 
 -   **Source Port** \[Type = UnicodeString\]**:** port number on which application received the connection.
 
@@ -127,7 +123,7 @@ This event generates when [Windows Filtering Platform](/windows/win32/fwp/window
 
     -   0.0.0.0 - all IP addresses in IPv4 format
 
-    -   127.0.0.1 , ::1 - localhost
+    -   127.0.0.1, ::1 - localhost
 
 -   **Destination Port** \[Type = UnicodeString\]**:** port number that was used from remote machine to initiate connection.
 
@@ -171,20 +167,20 @@ For 5157(F): The Windows Filtering Platform has blocked a connection.
 
 -   If you have a predefined application that should be used to perform the operation that was reported by this event, monitor events with “**Application**” not equal to your defined application.
 
--   You can monitor to see if “**Application**” is not in a standard folder (for example, not in **System32** or **Program Files**) or is in a restricted folder (for example, **Temporary Internet Files**).
+-   You can monitor to see if “**Application**” isn't in a standard folder (for example, not in **System32** or **Program Files**) or is in a restricted folder (for example, **Temporary Internet Files**).
 
 -   If you have a pre-defined list of restricted substrings or words in application names (for example, “**mimikatz**” or “**cain.exe**”), check for these substrings in “**Application**.”
 
 -   Check that “**Source Address”** is one of the addresses assigned to the computer.
 
--   If the\` computer or device should not have access to the Internet, or contains only applications that don’t connect to the Internet, monitor for [5157](event-5157.md) events where “**Destination Address”** is an IP address from the Internet (not from private IP ranges).
+-   If the\` computer or device shouldn't have access to the Internet, or contains only applications that don’t connect to the Internet, monitor for [5157](event-5157.md) events where “**Destination Address”** is an IP address from the Internet (not from private IP ranges).
 
 -   If you know that the computer should never contact or should never be contacted by certain network IP addresses, monitor for these addresses in “**Destination Address**.**”**
 
--   If you have an allow list of IP addresses that the computer or device is expected to contact or to be contacted by, monitor for IP addresses in “**Destination Address”** that are not in the allow list.
+-   If you've an allowlist of IP addresses that the computer or device is expected to contact or to be contacted by, monitor for IP addresses in “**Destination Address”** that aren't in the allowlist.
 
 -   If you need to monitor all inbound connections to a specific local port, monitor for [5157](event-5157.md) events with that “**Source Port**.**”**
 
--   Monitor for all connections with a “**Protocol Number”** that is not typical for this device or computer, for example, anything other than 1, 6, or 17.
+-   Monitor for all connections with a “**Protocol Number”** that isn't typical for this device or computer, for example, anything other than 1, 6, or 17.
 
 -   If the computer’s communication with “**Destination Address”** should always use a specific “**Destination Port**,**”** monitor for any other “**Destination Port**.”

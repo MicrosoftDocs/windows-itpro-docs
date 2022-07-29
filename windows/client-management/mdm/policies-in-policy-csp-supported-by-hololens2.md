@@ -1,15 +1,15 @@
 ---
 title: Policies in Policy CSP supported by HoloLens 2
-description: Policies in Policy CSP supported by HoloLens 2
+description: Learn about the policies in Policy CSP supported by HoloLens 2.
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
-ms.date: 10/08/2020
+ms.date: 06/06/2022
 ---
 
 # Policies in Policy CSP supported by HoloLens 2
@@ -50,10 +50,15 @@ ms.date: 10/08/2020
 - [DeviceLock/MinDevicePasswordLength](policy-csp-devicelock.md#devicelock-mindevicepasswordlength)
 - [Experience/AllowCortana](policy-csp-experience.md#experience-allowcortana)
 - [Experience/AllowManualMDMUnenrollment](policy-csp-experience.md#experience-allowmanualmdmunenrollment)
+- [MixedReality/AADGroupMembershipCacheValidityInDays](policy-csp-mixedreality.md#mixedreality-aadgroupmembershipcachevalidityindays)
 - [MixedReality/AADGroupMembershipCacheValidityInDays](./policy-csp-mixedreality.md#mixedreality-aadgroupmembershipcachevalidityindays) <sup>9</sup>
+- [MixedReality/AutoLogonUser](./policy-csp-mixedreality.md#mixedreality-autologonuser) <sup>11</sup>
 - [MixedReality/BrightnessButtonDisabled](./policy-csp-mixedreality.md#mixedreality-brightnessbuttondisabled) <sup>9</sup>
+- [MixedReality/ConfigureMovingPlatform](policy-csp-mixedreality.md#mixedreality-configuremovingplatform) <sup>*[Feb. 2022 Servicing release](/hololens/hololens-release-notes#windows-holographic-version-21h2---february-2022-update)</sup>
 - [MixedReality/FallbackDiagnostics](./policy-csp-mixedreality.md#mixedreality-fallbackdiagnostics) <sup>9</sup>
+- [MixedReality/HeadTrackingMode](policy-csp-mixedreality.md#mixedreality-headtrackingmode) <sup>9</sup>
 - [MixedReality/MicrophoneDisabled](./policy-csp-mixedreality.md#mixedreality-microphonedisabled) <sup>9</sup>
+- [MixedReality/VisitorAutoLogon](policy-csp-mixedreality.md#mixedreality-visitorautologon) <sup>10</sup>
 - [MixedReality/VolumeButtonDisabled](./policy-csp-mixedreality.md#mixedreality-volumebuttondisabled) <sup>9</sup>
 - [Power/DisplayOffTimeoutOnBattery](./policy-csp-power.md#power-displayofftimeoutonbattery) <sup>9</sup>
 - [Power/DisplayOffTimeoutPluggedIn](./policy-csp-power.md#power-displayofftimeoutpluggedin) <sup>9</sup>
@@ -101,7 +106,13 @@ ms.date: 10/08/2020
 - [Update/ActiveHoursStart](./policy-csp-update.md#update-activehoursstart) <sup>9</sup>
 - [Update/AllowAutoUpdate](policy-csp-update.md#update-allowautoupdate)
 - [Update/AllowUpdateService](policy-csp-update.md#update-allowupdateservice)
+- [Update/AutoRestartNotificationSchedule](policy-csp-update.md#update-autorestartnotificationschedule) <sup>11</sup>
+- [Update/AutoRestartRequiredNotificationDismissal](policy-csp-update.md#update-autorestartrequirednotificationdismissal) <sup>11</sup>
 - [Update/BranchReadinessLevel](policy-csp-update.md#update-branchreadinesslevel)
+- [Update/ConfigureDeadlineForFeatureUpdates](policy-csp-update.md#update-configuredeadlineforfeatureupdates) <sup>11</sup>
+- [Update/ConfigureDeadlineForQualityUpdates](policy-csp-update.md#update-configuredeadlineforqualityupdates) <sup>11</sup>
+- [Update/ConfigureDeadlineGracePeriod](policy-csp-update.md#update-configuredeadlinegraceperiod) <sup>11</sup>
+- [Update/ConfigureDeadlineNoAutoReboot](policy-csp-update.md#update-configuredeadlinenoautoreboot) <sup>11</sup>
 - [Update/DeferFeatureUpdatesPeriodInDays](policy-csp-update.md#update-deferfeatureupdatesperiodindays)
 - [Update/DeferQualityUpdatesPeriodInDays](policy-csp-update.md#update-deferqualityupdatesperiodindays)
 - [Update/ManagePreviewBuilds](policy-csp-update.md#update-managepreviewbuilds)
@@ -109,8 +120,10 @@ ms.date: 10/08/2020
 - [Update/PauseQualityUpdates](policy-csp-update.md#update-pausequalityupdates)
 - [Update/ScheduledInstallDay](policy-csp-update.md#update-scheduledinstallday)
 - [Update/ScheduledInstallTime](policy-csp-update.md#update-scheduledinstalltime)
+- [Update/ScheduleImminentRestartWarning](policy-csp-update.md#update-scheduleimminentrestartwarning) <sup>11</sup>
+- [Update/ScheduleRestartWarning](policy-csp-update.md#update-schedulerestartwarning) <sup>11</sup>
 - [Update/SetDisablePauseUXAccess](policy-csp-update.md#update-setdisablepauseuxaccess)
-- [Update/UpdateServiceUrl](policy-csp-update.md#update-updateserviceurl)
+- [Update/UpdateNotificationLevel](policy-csp-update.md#update-updatenotificationlevel) <sup>11</sup>
 - [Wifi/AllowManualWiFiConfiguration](policy-csp-wifi.md#wifi-allowmanualwificonfiguration)
 - [Wifi/AllowWiFi](policy-csp-wifi.md#wifi-allowwifi) <sup>8</sup>
 
@@ -124,7 +137,9 @@ Footnotes:
 - 6 - Available in Windows 10, version 1903.
 - 7 - Available in Windows 10, version 1909.
 - 8 - Available in Windows 10, version 2004.
-- 9 - Available in [Windows Holographic, version 20H2](/hololens/hololens-release-notes#windows-holographic-version-20h2)
+- 9 - Available in [Windows Holographic, version 20H2](/hololens/hololens-release-notes-2004#windows-holographic-version-20h2)
+- 10 - Available in [Windows Holographic, version 21H1](/hololens/hololens-release-notes#windows-holographic-version-21h1)
+- 11 - Available in [Windows Holographic, version 21H2](/hololens/hololens-release-notes#windows-holographic-version-21h2)
 
 ## Related topics
 

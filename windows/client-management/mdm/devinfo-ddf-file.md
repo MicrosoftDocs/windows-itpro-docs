@@ -1,19 +1,17 @@
 ---
 title: DevInfo DDF file
 description: Learn about the OMA DM device description framework (DDF) for the DevInfo configuration service provider (CSP).
-ms.assetid: beb07cc6-4133-4c0f-aa05-64db2b4a004f
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 12/05/2017
 ---
 
 # DevInfo DDF file
-
 
 This topic shows the OMA DM device description framework (DDF) for the **DevInfo** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 

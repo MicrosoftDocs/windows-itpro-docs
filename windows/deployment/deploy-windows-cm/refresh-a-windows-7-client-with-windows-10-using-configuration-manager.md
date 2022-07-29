@@ -1,17 +1,12 @@
 ---
 title: Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager
 description: Learn how to use Configuration Manager and Microsoft Deployment Toolkit (MDT) to refresh a Windows 7 SP1 client with Windows 10.
-ms.assetid: 57c81667-1019-4711-b3de-15ae9c5387c7
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
-keywords: upgrade, install, installation, computer refresh
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.sitesec: library
-audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
@@ -60,7 +55,7 @@ On **PC0003**:
 2. On the **Site** tab, click **Configure Settings**, then click **Find Site**.
 3. Verify that Configuration Manager has successfully found a site to manage this client is displayed. See the following example.
 
-![Found a site to manage this client](../images/pc0003a.png)
+![Found a site to manage this client.](../images/pc0003a.png)
 
 ## Create a device collection and add the PC0003 computer
 
@@ -124,16 +119,16 @@ On **PC0003**:
 2.  In the **Software Center** warning dialog box, click **Install Operating System**. 
 3. The client computer will run the Configuration Manager task sequence, boot into Windows PE, and install the new OS and applications. See the following examples:
 
-![Task sequence example 1](../images/pc0003b.png)<br>
-![Task sequence example 2](../images/pc0003c.png)<br>
-![Task sequence example 3](../images/pc0003d.png)<br>
-![Task sequence example 4](../images/pc0003e.png)<br>
-![Task sequence example 5](../images/pc0003f.png)<br>
-![Task sequence example 6](../images/pc0003g.png)<br>
-![Task sequence example 7](../images/pc0003h.png)<br>
-![Task sequence example 8](../images/pc0003i.png)<br>
-![Task sequence example 9](../images/pc0003j.png)<br>
-![Task sequence example 10](../images/pc0003k.png)
+![Task sequence example 1.](../images/pc0003b.png)<br>
+![Task sequence example 2.](../images/pc0003c.png)<br>
+![Task sequence example 3.](../images/pc0003d.png)<br>
+![Task sequence example 4.](../images/pc0003e.png)<br>
+![Task sequence example 5.](../images/pc0003f.png)<br>
+![Task sequence example 6.](../images/pc0003g.png)<br>
+![Task sequence example 7.](../images/pc0003h.png)<br>
+![Task sequence example 8.](../images/pc0003i.png)<br>
+![Task sequence example 9.](../images/pc0003j.png)<br>
+![Task sequence example 10.](../images/pc0003k.png)
 
 Next, see [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](replace-a-windows-7-client-with-windows-10-using-configuration-manager.md).
 

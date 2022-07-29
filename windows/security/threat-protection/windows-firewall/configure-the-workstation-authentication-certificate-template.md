@@ -1,5 +1,5 @@
 ---
-title: Configure the Workstation Authentication Template (Windows 10)
+title: Configure the Workstation Authentication Template (Windows)
 description: Learn how to configure a workstation authentication certificate template, which is used for device certificates that are enrolled and deployed to workstations.
 ms.assetid: c3ac9960-6efc-47c1-bd69-d9d4bf84f7a6
 ms.reviewer: 
@@ -11,15 +11,16 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
-ms.date: 07/30/2018
-ms.technology: mde
+ms.date: 09/07/2021
+ms.technology: windows-sec
 ---
 
 # Configure the Workstation Authentication Certificate Template
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 This procedure describes how to configure a certificate template that Active Directory Certification Services (AD CS) uses as the starting point for device certificates that are automatically enrolled and deployed to workstations in the domain. It shows how to create a copy of a template, and then configure the template according to your design requirements.
 
@@ -51,4 +52,4 @@ To complete these procedures, you must be a member of both the Domain Admins gro
 
 10. In the Certification Authority MMC snap-in, in the left pane, right-click **Certificate Templates**, click **New**, and then click **Certificate Template to Issue**.
 
-11. In the **Enable Certificate Templates** dialog box, click the name of the certificate template you just configured, and then click **OK**.
+11. In the **Enable Certificate Templates** dialog box, click the name of the certificate template you configured, and then click **OK**.

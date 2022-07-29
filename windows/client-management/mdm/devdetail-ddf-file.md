@@ -1,14 +1,13 @@
 ---
 title: DevDetail DDF file
 description: Learn about the OMA DM device description framework (DDF) for the DevDetail configuration service provider.
-ms.assetid: 645fc2b5-2d2c-43b1-9058-26bedbe9f00d
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 06/03/2020
 ---
 

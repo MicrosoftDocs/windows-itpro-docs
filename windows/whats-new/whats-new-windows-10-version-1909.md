@@ -1,16 +1,13 @@
 ---
 title: What's new in Windows 10, version 1909
 description: New and updated features in Windows 10, version 1909 (also known as the Windows 10 November 2019 Update).
-keywords: ["What's new in Windows 10", "Windows 10", "November 2019 Update"]
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-audience: itpro
-author: greg-lindsay
-ms.author: greglin
-manager: laurawi
-ms.localizationpriority: high
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
+ms.localizationpriority: medium
 ms.topic: article
+ROBOTS: NOINDEX
 ---
 
 # What's new in Windows 10, version 1909 for IT Pros
@@ -24,11 +21,11 @@ This article lists new and updated features and content that are of interest to 
 
 Windows 10, version 1909 is a scoped set of features for select performance improvements, enterprise features and quality enhancements.
 
-To deliver these updates in an optimal fashion, we are providing this feature update in a new way: using servicing technology. Users that are already running Windows 10, version 1903 (the May 2019 Update) will receive this update similar to how they receive monthly updates. If you are running version 1903, then updating to the new release will have a much faster update experience because the update will install like a monthly update.
+To deliver these updates in an optimal fashion, we're providing this feature update in a new way: using servicing technology. Users that are already running Windows 10, version 1903 (the May 2019 Update) will receive this update similar to how they receive monthly updates. If you're running version 1903, then updating to the new release will have a much faster update experience because the update will install like a monthly update.
 
-If you are updating from an older version of Windows 10 (version 1809 or earlier), the process of updating to the current version will be the same as it has been for previous Windows 10 feature updates. For more information, see [Evolving Windows 10 servicing and quality: the next steps](https://blogs.windows.com/windowsexperience/2019/07/01/evolving-windows-10-servicing-and-quality-the-next-steps/#rl2G5ETPhkhMvDeX.97).
+If you're updating from an older version of Windows 10 (version 1809 or earlier), the process of updating to the current version will be the same as it has been for previous Windows 10 feature updates. For more information, see [Evolving Windows 10 servicing and quality: the next steps](https://blogs.windows.com/windowsexperience/2019/07/01/evolving-windows-10-servicing-and-quality-the-next-steps/#rl2G5ETPhkhMvDeX.97).
 
-**Note**: Devices running the Enterprise, IoT Enterprise, or Education editions of Windows 10, version 1909 receive 30 months of support. For more information about the Windows servicing lifecycle, please see the [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
+**Note**: Devices running the Enterprise, IoT Enterprise, or Education editions of Windows 10, version 1909 receive 30 months of support. For more information about the Windows servicing lifecycle, see the [Windows lifecycle fact sheet](/lifecycle/faq/windows).
 
 ### Windows Server Update Services (WSUS)
 
@@ -36,15 +33,15 @@ Pre-release Windows 10 feature updates are now available to IT administrators us
 
 The Windows 10, version 1909 enablement package will be available on WSUS as [KB4517245](https://support.microsoft.com/kb/4517245), which can be deployed on existing deployments of Windows 10, version 1903. 
 
-### Windows Update for Business (WUfB)
+### Windows Update for Business
 
-If you are using WUfB, you will receive the Windows 10, version 1909 update in the same way that you have for prior feature updates, and as defined by your feature update deferral policy.
+If you're using Windows Update for Business, you'll receive the Windows 10, version 1909 update in the same way that you have for prior feature updates, and as defined by your feature update deferral policy.
 
 ## Security
 
 ### Windows Defender Credential Guard
 
-[Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard) is now available for ARM64 devices, for additional protection against credential theft for enterprises deploying ARM64 devices in their organizations, such as Surface Pro X.
+[Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard) is now available for ARM64 devices, for extra protection against credential theft for enterprises deploying ARM64 devices in their organizations, such as Surface Pro X.
 
 ### Microsoft BitLocker
 
@@ -52,11 +49,11 @@ BitLocker and Mobile Device Management (MDM) with Azure Active Directory work to
 
 ### Key-rolling and Key-rotation
 
-Windows 10, version 1909 also includes two new features called **Key-rolling** and **Key-rotation** enables secure rolling of Recovery passwords on MDM managed AAD devices on demand from Microsoft Intune/MDM tools or when a recovery password is used to unlock the BitLocker protected drive. This feature will help prevent accidental recovery password disclosure as part of manual BitLocker drive unlock by users.
+Windows 10, version 1909 also includes two new features called **Key-rolling** and **Key-rotation** enables secure rolling of Recovery passwords on MDM managed Azure Active Directory devices on demand from Microsoft Intune/MDM tools or when a recovery password is used to unlock the BitLocker protected drive. This feature will help prevent accidental recovery password disclosure as part of manual BitLocker drive unlock by users.
 
 ### Transport Layer Security (TLS)
 
-An experimental implementation of TLS 1.3 is included in Windows 10, version 1909. TLS 1.3 disabled by default system wide. If you enable TLS 1.3 on a device for testing, then it can also be enabled in Internet Explorer 11.0 and Microsoft Edge by using Internet Options. For beta versions of Microsoft Edge on Chromium, TLS 1.3 is not built on the Windows TLS stack, and is instead configured independently, using the **Edge://flags** dialog. Also see [Microsoft Edge platform status](https://developer.microsoft.com/microsoft-edge/platform/status/tls13/).
+An experimental implementation of TLS 1.3 is included in Windows 10, version 1909. TLS 1.3 disabled by default system wide. If you enable TLS 1.3 on a device for testing, then it can also be enabled in Internet Explorer 11.0 and Microsoft Edge by using Internet Options. For beta versions of Microsoft Edge on Chromium, TLS 1.3 isn't built on the Windows TLS stack, and is instead configured independently, using the **Edge://flags** dialog. Also see [Microsoft Edge platform status](https://developer.microsoft.com/microsoft-edge/status/tls13/)
 
 ## Virtualization
 
@@ -68,7 +65,7 @@ An experimental implementation of TLS 1.3 is included in Windows 10, version 190
 
 [Windows Virtual Desktop](/azure/virtual-desktop/overview) (WVD) is now generally available globally!
 
-Windows Virtual Desktop is a comprehensive desktop and app virtualization service running in the cloud. It’s the only virtual desktop infrastructure (VDI) that delivers simplified management, multi-session Windows 10, optimizations for Microsoft 365 Apps for enterprise, and support for Remote Desktop Services (RDS) environments. Deploy and scale your Windows desktops and apps on Azure in minutes, and get built-in security and compliance features. Windows Virtual Desktop requires a Microsoft E3 or E5 license, or a Microsoft 365 E3 or E5 license, as well as an Azure tenant.
+Windows Virtual Desktop is a comprehensive desktop and app virtualization service running in the cloud. It’s the only virtual desktop infrastructure (VDI) that delivers simplified management, multi-session Windows 10, optimizations for Microsoft 365 Apps for enterprise, and support for Remote Desktop Services (RDS) environments. Deploy and scale your Windows desktops and apps on Azure in minutes, and get built-in security and compliance features. Windows Virtual Desktop requires a Microsoft E3 or E5 license, or a Microsoft 365 E3 or E5 license, and an Azure tenant.
 
 ## Deployment
 
@@ -84,7 +81,7 @@ Configuration Manager, Intune, Desktop Analytics, Co-Management, and Device Mana
 
 [SetupDiag](/windows/deployment/upgrade/setupdiag) version 1.6.0.42 is available.
 
-SetupDiag is a command-line tool that can help diagnose why a Windows 10 update failed. SetupDiag works by searching Windows Setup log files. When searching log files, SetupDiag uses a set of rules to match known issues. In the current version of SetupDiag there are 53 rules contained in the rules.xml file, which is extracted when SetupDiag is run. The rules.xml file will be updated as new versions of SetupDiag are made available.        .
+SetupDiag is a command-line tool that can help diagnose why a Windows 10 update failed. SetupDiag works by searching Windows Setup log files. When log files are being searched, SetupDiag uses a set of rules to match known issues. In the current version of SetupDiag there are 53 rules contained in the rules.xml file, which is extracted when SetupDiag is run. The rules.xml file will be updated as new versions of SetupDiag are made available.
 
 ### Windows Assessment and Deployment Toolkit (ADK)
 
@@ -118,7 +115,7 @@ With Intel Turbo Boost Max Technology 3.0, an operating system will use informat
 
 ### Debugging
 
-Additional debugging capabilities for newer Intel processors have been added in this release. This is only relevant for hardware manufacturers.
+More debugging capabilities for newer Intel processors have been added in this release. These newly added capabilities are only relevant for hardware manufacturers.
 
 ### Efficiency
 
@@ -131,7 +128,7 @@ General battery life and power efficiency improvements for PCs with certain proc
 [What's New in Windows 10](./index.yml): See what’s new in other versions of Windows 10.<br>
 [What Windows 10, version 1909 Means for Developers](https://blogs.windows.com/windowsdeveloper/2019/10/16/what-windows-10-version-1909-means-for-developers/): New and updated features in Windows 10 that are of interest to developers.<br>
 [Features and functionality removed in Windows 10](/windows/deployment/planning/windows-10-removed-features): Removed features.<br>
-[Windows 10 features we’re no longer developing](/windows/deployment/planning/windows-10-deprecated-features): Features that are not being developed.<br>
+[Windows 10 features we’re no longer developing](/windows/deployment/planning/windows-10-deprecated-features): Features that aren't being developed.<br>
 [How to get the Windows 10 November 2019 Update](https://aka.ms/how-to-get-1909): John Cable blog.<br>
 [How to get Windows 10, Version 1909: Enablement Mechanics](https://aka.ms/1909mechanics): Mechanics blog.<br>
 [What’s new for IT pros in Windows 10, version 1909](https://aka.ms/whats-new-in-1909): Windows IT Pro blog.<br>

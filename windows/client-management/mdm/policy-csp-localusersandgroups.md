@@ -5,7 +5,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 10/14/2020
 ms.reviewer: 
@@ -25,39 +25,21 @@ manager: dansimp
   </dd>
 </dl>
 
-
 <hr/>
 
 <!--Policy-->
 <a href="" id="localusersandgroups-configure"></a>**LocalUsersAndGroups/Configure**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -72,10 +54,10 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10, version 20H2. This policy setting allows IT admins to add, remove, or replace members of local groups on a managed device.
+This policy setting allows IT admins to add, remove, or replace members of local groups on a managed device.
 
 > [!NOTE]
-> The [RestrictedGroups/ConfigureGroupMembership](./policy-csp-restrictedgroups.md#restrictedgroups-configuregroupmembership) policy setting also allows you to configure members (users or AAD groups) to a Windows 10 local group. However, it allows only for a full replace of the existing groups with the new members and does not allow selective add or remove.
+> The [RestrictedGroups/ConfigureGroupMembership](./policy-csp-restrictedgroups.md#restrictedgroups-configuregroupmembership) policy setting also allows you to configure members (users or Azure Active Directory groups) to a Windows 10 local group. However, it allows only for a full replace of the existing groups with the new members and does not allow selective add or remove.
 >
 > Starting from Windows 10, version 20H2, it is recommended to use the LocalUsersandGroups policy instead of the RestrictedGroups policy. Applying both the policies to the same device is unsupported and may yield unpredictable results. 
 
@@ -103,7 +85,7 @@ where:
     > [!NOTE]
     > When specifying member names of the user accounts, you must use following format – AzureAD\userUPN. For example, "AzureAD\user1@contoso.com" or "AzureAD\user2@contoso.co.uk". 
 For adding Azure AD groups, you need to specify the Azure AD Group SID. Azure AD group names are not supported with this policy.
-for more information, see [LookupAccountNameA function](/windows/win32/api/winbase/nf-winbase-lookupaccountnamea).  
+For more information, see [LookupAccountNameA function](/windows/win32/api/winbase/nf-winbase-lookupaccountnamea).  
 
 See [Use custom settings for Windows 10 devices in Intune](/mem/intune/configuration/custom-settings-windows-10) for information on how to create custom profiles.
 
@@ -111,7 +93,7 @@ See [Use custom settings for Windows 10 devices in Intune](/mem/intune/configura
 > - `<add member>` and `<remove member>` can use an Azure AD SID or the user's name. For adding or removing Azure AD groups using this policy, you must use the group's SID. Azure AD group SIDs can be obtained using [Graph](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true#json-representation) API for Groups. The SID is present in the `securityIdentifier` attribute. 
 > - When specifying a SID in the `<add member>` or `<remove member>`, member SIDs are added without attempting to resolve them. Therefore, be very careful when specifying a SID to ensure it is correct.
 > - `<remove member>` is not valid for the R (Restrict) action and will be ignored if present.
-> - The list in the XML is processed in the given order except for the R actions, which get processed last to ensure they win. It also means that if a group is present multiple times with different add/remove values, all of them will be processed in the order they are present.
+> - The list in the XML is processed in the given order except for the R actions, which get processed last to ensure they win. It also means that, if a group is present multiple times with different add/remove values, all of them will be processed in the order they are present.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -120,9 +102,9 @@ See [Use custom settings for Windows 10 devices in Intune](/mem/intune/configura
 
 **Examples**
 
-Example 1: AAD focused.
+Example 1: Azure Active Directory focused.
 
-The following example updates the built-in administrators group with AAD account "bob@contoso.com" and an Azure AD group with the SID **S-1-12-1-111111111-22222222222-3333333333-4444444444** on an AAD-joined machine. 
+The following example updates the built-in administrators group with Azure AD account "bob@contoso.com" and an Azure AD group with the SID **S-1-12-1-111111111-22222222222-3333333333-4444444444** on an AAD-joined machine. 
 
 ```xml
 <GroupConfiguration>
@@ -134,10 +116,10 @@ The following example updates the built-in administrators group with AAD account
 </GroupConfiguration>
 ```
 
-Example 2: Replace / Restrict the built-in administrators group with an AAD user account.
+Example 2: Replace / Restrict the built-in administrators group with an Azure AD user account.
 
 > [!NOTE]
-> When using ‘R’ replace option to configure the built-in ‘Administrators’ group, it is required to always specify the administrator as a member + any other custom members. This is because the built-in administrator must always be a member of the administrators group.
+> When using ‘R’ replace option to configure the built-in ‘Administrators’ group. It is required to always specify the administrator as a member + any other custom members. This is because the built-in administrator must always be a member of the administrators group.
 
 Example:
 ```xml
@@ -149,9 +131,10 @@ Example:
     </accessgroup>
 </GroupConfiguration>
 ```
+
 Example 3: Update action for adding and removing group members on a hybrid joined machine.
 
-The following example shows how you can update a local group (**Administrators**)—add an AD domain group as a member using its name (**Contoso\ITAdmins**), add a AAD group by its SID (**S-1-12-1-111111111-22222222222-3333333333-4444444444**), and remove a local account (**Guest**) if it exists.
+The following example shows how you can update a local group (**Administrators**)—add an AD domain group as a member using its name (**Contoso\ITAdmins**), add a Azure Active Directory group by its SID (**S-1-12-1-111111111-22222222222-3333333333-4444444444**), and remove a local account (**Guest**) if it exists.
 
 ```xml
 <GroupConfiguration> 
@@ -164,7 +147,6 @@ The following example shows how you can update a local group (**Administrators**
 </GroupConfiguration>
 ```
 
-
 <!--/Example-->
 <!--Validation-->
 
@@ -174,7 +156,7 @@ The following example shows how you can update a local group (**Administrators**
 
 > [!NOTE]
 > 
-> When AAD group SID’s are added to local groups, during AAD account logon privileges are evaluated only for the following well-known groups on a Windows 10 device:
+> When Azure Active Directory group SID’s are added to local groups, Azure AD account logon privileges are evaluated only for the following well-known groups on a Windows 10 device:
 > 
 > - Administrators
 > - Users
@@ -254,67 +236,67 @@ To troubleshoot Name/SID lookup APIs:
 
 ```xml
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">
-                          <xs:simpleType name="name">
-                            <xs:restriction base="xs:string">
-                              <xs:maxLength value="255" />
-                            </xs:restriction>
-                          </xs:simpleType>
-                          <xs:element name="accessgroup">
-                            <xs:complexType>
-                                <xs:sequence>
-                                    <xs:element name="group" minOccurs="1" maxOccurs="1">
-                                      <xs:annotation>
-                                        <xs:documentation>Group Configuration Action</xs:documentation>
-                                      </xs:annotation>
-                                      <xs:complexType>
-                                        <xs:attribute name="action" type="name" use="required"/>
-                                      </xs:complexType>
-                                    </xs:element>
-                                    <xs:element name="add" minOccurs="0" maxOccurs="unbounded">
-                                      <xs:annotation>
-                                        <xs:documentation>Group Member to Add</xs:documentation>
-                                      </xs:annotation>
-                                      <xs:complexType>
-                                        <xs:attribute name="member" type="name" use="required"/>
-                                      </xs:complexType>
-                                    </xs:element>
-                                    <xs:element name="remove" minOccurs="0" maxOccurs="unbounded">
-                                      <xs:annotation>
-                                        <xs:documentation>Group Member to Remove</xs:documentation>
-                                      </xs:annotation>
-                                      <xs:complexType>
-                                        <xs:attribute name="member" type="name" use="required"/>
-                                      </xs:complexType>
-                                    </xs:element>
-                                    <xs:element name="property" minOccurs="0" maxOccurs="unbounded">
-                                      <xs:annotation>
-                                        <xs:documentation>Group property to configure</xs:documentation>
-                                      </xs:annotation>
-                                      <xs:complexType>
-                                        <xs:attribute name="desc" type="name" use="required"/>
-                                        <xs:attribute name="value" type="name" use="required"/>
-                                      </xs:complexType>
-                                    </xs:element>
-                                  </xs:sequence>
-                              <xs:attribute name="desc" type="name" use="required"/>
-                            </xs:complexType>
-                          </xs:element>
-                          <xs:element name="GroupConfiguration">
-                            <xs:complexType>
-                              <xs:sequence>
-                                <xs:element name="accessgroup" minOccurs="0" maxOccurs="unbounded">
-                                  <xs:annotation>
-                              <xs:documentation>Local Group Configuration</xs:documentation>
-                            </xs:annotation>
-                                </xs:element>
-                              </xs:sequence>
-                            </xs:complexType>
-                          </xs:element>
-                      </xs:schema>
+  <xs:simpleType name="name">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="255" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="accessgroup">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="group" minOccurs="1" maxOccurs="1">
+              <xs:annotation>
+                <xs:documentation>Group Configuration Action</xs:documentation>
+              </xs:annotation>
+              <xs:complexType>
+                <xs:attribute name="action" type="name" use="required"/>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="add" minOccurs="0" maxOccurs="unbounded">
+              <xs:annotation>
+                <xs:documentation>Group Member to Add</xs:documentation>
+              </xs:annotation>
+              <xs:complexType>
+                <xs:attribute name="member" type="name" use="required"/>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="remove" minOccurs="0" maxOccurs="unbounded">
+              <xs:annotation>
+                <xs:documentation>Group Member to Remove</xs:documentation>
+              </xs:annotation>
+              <xs:complexType>
+                <xs:attribute name="member" type="name" use="required"/>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="property" minOccurs="0" maxOccurs="unbounded">
+              <xs:annotation>
+                <xs:documentation>Group property to configure</xs:documentation>
+              </xs:annotation>
+              <xs:complexType>
+                <xs:attribute name="desc" type="name" use="required"/>
+                <xs:attribute name="value" type="name" use="required"/>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+      <xs:attribute name="desc" type="name" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GroupConfiguration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="accessgroup" minOccurs="0" maxOccurs="unbounded">
+          <xs:annotation>
+      <xs:documentation>Local Group Configuration</xs:documentation>
+    </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
 ```
 
-Footnotes:
-
-Available in Windows 10, version 20H2
-
 <!--/Policies-->
+
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

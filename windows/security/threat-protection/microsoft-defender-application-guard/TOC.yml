@@ -3,13 +3,16 @@
   items: 
     - name: System requirements
       href: reqs-md-app-guard.md
-    - name: Install WDAG
+    - name: Install Application Guard
       href: install-md-app-guard.md
-    - name: Configure WDAG policies
+    - name: Configure Application Guard policies
       href: configure-md-app-guard.md
     - name: Test scenarios
       href: test-scenarios-md-app-guard.md
     - name: Microsoft Defender Application Guard Extension
       href: md-app-guard-browser-extension.md
-    - name: FAQ
+    - name: Application Guard FAQ
       href: faq-md-app-guard.yml
+- name: Windows security
+  href: /windows/security/
+

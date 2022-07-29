@@ -1,14 +1,13 @@
 ---
 title: VPNv2 DDF file
 description: This topic shows the OMA DM device description framework (DDF) for the VPNv2 configuration service provider.
-ms.assetid: 4E2F36B7-D2EE-4F48-AD1A-6BDE7E72CC94
 ms.reviewer: pesmith
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 10/30/2020
 ---
 
@@ -1403,7 +1402,7 @@ The XML below is for Windows 10, version 2004.
                         <Add />
                         <Get />
                     </AccessType>
-                    <Description>Nodes under DeviceCompliance can be used to enable AAD based Conditional Access for VPN</Description>
+                    <Description>Nodes under DeviceCompliance can be used to enable Azure Active Directory based Conditional Access for VPN</Description>
                     <DFFormat>
                         <node />
                     </DFFormat>
@@ -1426,7 +1425,7 @@ The XML below is for Windows 10, version 2004.
                             <Get />
                             <Replace />
                         </AccessType>
-                        <Description>Enables the Device Compliance flow from the client. If marked as True, the VPN Client will attempt to communicate with AAD to get a certificate to use for authentication. The VPN should be set up to use Certificate Auth and the VPN Server must trust the Server returned by Azure Active Directory</Description>
+                        <Description>Enables the Device Compliance flow from the client. If marked as True, the VPN Client will attempt to communicate with Azure Active Directory to get a certificate to use for authentication. The VPN should be set up to use Certificate Auth and the VPN Server must trust the Server returned by Azure Active Directory</Description>
                         <DFFormat>
                             <bool />
                         </DFFormat>
@@ -3593,7 +3592,7 @@ The XML below is for Windows 10, version 2004.
                         <Add />
                         <Get />
                     </AccessType>
-                    <Description>Nodes under DeviceCompliance can be used to enable AAD based Conditional Access for VPN</Description>
+                    <Description>Nodes under DeviceCompliance can be used to enable Azure Active Directory based Conditional Access for VPN</Description>
                     <DFFormat>
                         <node />
                     </DFFormat>
@@ -3616,7 +3615,7 @@ The XML below is for Windows 10, version 2004.
                             <Get />
                             <Replace />
                         </AccessType>
-                        <Description>Enables the Device Compliance flow from the client. If marked as True, the VPN Client will attempt to communicate with AAD to get a certificate to use for authentication. The VPN should be set up to use Certificate Auth and the VPN Server must trust the Server returned by Azure Active Directory</Description>
+                        <Description>Enables the Device Compliance flow from the client. If marked as True, the VPN Client will attempt to communicate with Azure Active Directory to get a certificate to use for authentication. The VPN should be set up to use Certificate Auth and the VPN Server must trust the Server returned by Azure Active Directory</Description>
                         <DFFormat>
                             <bool />
                         </DFFormat>

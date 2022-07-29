@@ -1,23 +1,32 @@
 ---
 title: RemoteFind CSP
 description: The RemoteFind configuration service provider retrieves the location information for a particular device.
-ms.assetid: 2EB02824-65BF-4B40-A338-672D219AF5A0
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 06/26/2017
 ---
 
 # RemoteFind CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 The RemoteFind configuration service provider retrieves the location information for a particular device.
 
-The following shows the RemoteFind configuration service provider management object in tree format as used by OMA Client Provisioning.
+The following example shows the RemoteFind configuration service provider management object in tree format as used by OMA Client Provisioning.
 ```
 ./Vendor/MSFT
 RemoteFind
@@ -35,26 +44,29 @@ RemoteFind
 <a href="" id="desiredaccuracy"></a>**DesiredAccuracy**  
 Optional. The node accepts the requested radius value in meters. Valid values for accuracy are any value between 1 and 1000 meters.
 
-The default value is 50. Replacing this value only replaces it for the current session. The value is not retained.
+The default value is 50. Replacing this value only replaces it for the current session. The value isn't retained.
 
-Supported operations are Replace and Get. The Add command is not supported.
+- Supported operations are Replace and Get. 
+- The Add command isn't supported.
 
 <a href="" id="timeout"></a>**Timeout**  
 Optional. Value is DWORD in seconds.
 
-The default value is 7, and the range is 0 to 1800 seconds. Replacing this value only replaces it for the current session. The value is not retained.
+The default value is 7, and the range is 0 to 1800 seconds. Replacing this value only replaces it for the current session. The value isn't retained.
 
-Supported operations are Replace and Get. The Add command is not supported.
+- Supported operations are Replace and Get. 
+- The Add command isn't supported.
 
 <a href="" id="maximumage"></a>**MaximumAge**  
 Optional. The value represents the desired time window in minutes that the server will accept a successful location retrieval. The node enables the server to set the requested age value in 100 nanoseconds. Valid values for accuracy include any integer value between 0 and 1440 minutes.
 
-The default value is 60. Replacing this value only replaces it for the current session. The value is not retained.
+The default value is 60. Replacing this value only replaces it for the current session. The value isn't retained.
 
-Supported operations are Replace and Get. The Add command is not supported.
+- Supported operations are Replace and Get. 
+- The Add command isn't supported.
 
 <a href="" id="location"></a>**Location**  
-Required. Nodes under this path must be queried atomically in order to succeed. This is to prevent servers from querying incomplete sets of data.
+Required. Nodes under this path must be queried atomically in order to succeed. This condition is to prevent servers from querying incomplete sets of data.
 
 <a href="" id="latitude"></a>**Latitude**  
 Required. Provides the latitude of the last successful remote find.
@@ -102,7 +114,7 @@ The default value is 0.
 Supported operation is Get.
 
 <a href="" id="age"></a>**Age**  
-Required. Provides the age in 100 nanoseconds for current location data.
+Required. Provides the age in 100 nanoseconds for the current location data.
 
 The value returned is an integer.
 
@@ -176,15 +188,4 @@ Supported operation is Get.
 
 ## Related topics
 
-
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-
- 
-
-
-
-
-
-

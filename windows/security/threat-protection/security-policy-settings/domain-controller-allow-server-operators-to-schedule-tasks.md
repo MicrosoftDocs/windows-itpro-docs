@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Domain controller: Allow server operators to schedule tasks
@@ -27,7 +27,7 @@ Describes the best practices, location, values, and security considerations for 
 
 ## Reference
 
-This policy setting determines whether server operators can use the**at** command to submit jobs. If you enable this policy setting, jobs that are created by server operators by means of the **at** command run in the context of the account that runs the Task Scheduler service. By default, that is the Local System account.
+This policy setting determines whether server operators can use the **at** command to submit jobs. If you enable this policy setting, jobs that are created by server operators by means of the **at** command run in the context of the account that runs the Task Scheduler service. By default, that account is the Local System account.
 
 >**Note:**  This security option setting affects only the scheduler tool for the **at** command. It does not affect the Task Scheduler tool.
  

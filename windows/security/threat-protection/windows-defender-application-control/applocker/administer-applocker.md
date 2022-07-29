@@ -1,5 +1,5 @@
 ---
-title: Administer AppLocker (Windows 10)
+title: Administer AppLocker (Windows)
 description: This topic for IT professionals provides links to specific procedures to use when administering AppLocker policies.
 ms.assetid: 511a3b6a-175f-4d6d-a6e0-c1780c02e818
 ms.reviewer: 
@@ -15,14 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/28/2019
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Administer AppLocker
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for IT professionals provides links to specific procedures to use when administering AppLocker policies.
 

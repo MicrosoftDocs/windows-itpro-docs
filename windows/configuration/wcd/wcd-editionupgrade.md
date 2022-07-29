@@ -2,15 +2,13 @@
 title: EditionUpgrade (Windows 10)
 description: This section describes the EditionUpgrade settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.topic: article
 ms.date: 04/30/2018
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # EditionUpgrade (Windows Configuration Designer reference)
@@ -19,11 +17,11 @@ Use to upgrade the edition of Windows 10 on the device. [Learn about Windows 10 
 
 ## Applies to
 
-| Setting  | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [ChangeProductKey](#changeproductkey) | X  | X |  |  |  |
-| [UpgradeEditionWithLicense](#upgradeeditionwithlicense) | X  | X |  | X |  |
-| [UpgradeEditionWithProductKey](#upgradeeditionwithproductkey) | X  | X |  |  |  |
+| Setting  | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| [ChangeProductKey](#changeproductkey) | ✔️  |  |  |  |
+| [UpgradeEditionWithLicense](#upgradeeditionwithlicense) | ✔️  |  | ✔️ |  |
+| [UpgradeEditionWithProductKey](#upgradeeditionwithproductkey) | ✔️  |  |  |  |
 
 
 ## ChangeProductKey

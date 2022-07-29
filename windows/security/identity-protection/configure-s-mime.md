@@ -1,14 +1,8 @@
 ---
-title: Configure S/MIME for Windows 10
+title: Configure S/MIME for Windows
 description: S/MIME lets users encrypt outgoing messages and attachments so that only intended recipients with a digital ID, also known as a certificate, can read them.
-ms.assetid: 7F9C2A99-42EB-4BCC-BB53-41C04FBBBF05
 ms.reviewer: 
-keywords: encrypt, digital signature
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
+ms.prod: m365-security
 author: dansimp
 ms.author: dansimp
 manager: dansimp
@@ -19,16 +13,17 @@ ms.date: 07/27/2017
 ---
 
 
-# Configure S/MIME for Windows 10
+# Configure S/MIME for Windows
 
 **Applies to**
--   Windows 10
+- Windows 10
+- Windows 11
 
-S/MIME stands for Secure/Multipurpose Internet Mail Extensions, and provides an added layer of security for email sent to and from an Exchange ActiveSync (EAS) account. In Windows 10, S/MIME lets users encrypt outgoing messages and attachments so that only intended recipients who have a digital identification (ID), also known as a certificate, can read them. Users can digitally sign a message, which provides the recipients with a way to verify the identity of the sender and that the message hasn't been tampered with.
+S/MIME stands for Secure/Multipurpose Internet Mail Extensions, and provides an added layer of security for email sent to and from an Exchange ActiveSync (EAS) account. S/MIME lets users encrypt outgoing messages and attachments so that only intended recipients who have a digital identification (ID), also known as a certificate, can read them. Users can digitally sign a message, which provides the recipients with a way to verify the identity of the sender and that the message hasn't been tampered with.
 
 ## About message encryption
 
-Users can send encrypted message to people in their organization and people outside their organization if they have their encryption certificates. However, users using Windows 10 Mail app can only read encrypted messages if the message is received on their Exchange account and they have corresponding decryption keys.
+Users can send encrypted message to people in their organization and people outside their organization if they have their encryption certificates. However, users using Windows Mail app can only read encrypted messages if the message is received on their Exchange account and they have corresponding decryption keys.
 
 Encrypted messages can be read only by recipients who have a certificate. If you try to send an encrypted message to recipient(s) whose encryption certificate are not available, the app will prompt you to remove these recipients before sending the email.
 
@@ -42,21 +37,21 @@ A digitally signed message reassures the recipient that the message hasn't been 
 -   Valid Personal Information Exchange (PFX) certificates are installed on the device.
 
     -   [How to Create PFX Certificate Profiles in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/mt131410(v=technet.10))
-    -   [Enable access to company resources using certificate profiles with Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=718216)
+    -   [Enable access to company resources using certificate profiles with Microsoft Intune](/mem/intune/protect/certificates-configure)
 
 ## Choose S/MIME settings
 
 On the device, perform the following steps: (add select certificate)
 
-1.  Open the Mail app. (In Windows 10 Mobile, the app is Outlook Mail.)
+1.  Open the Mail app.
 
 2.  Open **Settings** by tapping the gear icon on a PC, or the ellipsis (...) and then the gear icon on a phone.
 
-	:::image type="content" alt-text="settings icon in mail app" source="images/mailsettings.png":::
+	:::image type="content" alt-text="settings icon in mail app." source="images/mailsettings.png":::
 
 3.  Tap **Email security**.
 
-	:::image type="content" alt-text="email security settings" source="images/emailsecurity.png":::
+	:::image type="content" alt-text="email security settings." source="images/emailsecurity.png":::
 
 4.  In **Select an account**, select the account for which you want to configure S/MIME options.
 
@@ -77,7 +72,7 @@ On the device, perform the following steps: (add select certificate)
 
 2.  Use **Sign** and **Encrypt** icons to turn on digital signature and encryption for this message.
 
-	:::image type="content" alt-text="sign or encrypt message" source="images/signencrypt.png":::
+	:::image type="content" alt-text="sign or encrypt message." source="images/signencrypt.png":::
 
 ## Read signed or encrypted messages
 
@@ -93,5 +88,5 @@ When you receive a signed email, the app provide feature to install correspondin
 
 3.  Tap **Install.**
 
-	:::image type="content" alt-text="message security information" source="images/installcert.png":::
+	:::image type="content" alt-text="message security information." source="images/installcert.png":::
  

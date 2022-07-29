@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 # Interactive logon: Do not require CTRL+ALT+DEL
 
@@ -35,6 +35,9 @@ If this policy is disabled, any user is required to press CTRL+ALT+DEL before lo
 Microsoft developed this feature to make it easier for users with certain types of physical impairments to log on to device running the Windows operating system; however, not having to press the CTRL+ALT+DELETE key combination leaves users susceptible to attacks that attempt to intercept their passwords. Requiring CTRL+ALT+DELETE before users log on ensures that users are communicating by means of a trusted path when entering their passwords.
 
 A malicious user might install malware that looks like the standard logon dialog box for the Windows operating system, and capture a user's password. The attacker can then log on to the compromised account with whatever level of user rights that user has.
+
+> [!NOTE]
+> When the policy is defined, registry value **DisableCAD** located in **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System** is created. To revert the changes made by this policy, it is not enough to set its value to **Not defined**, this registry value needs to be removed as well.
 
 ### Possible values
 

@@ -1,22 +1,19 @@
 ---
 title: Get support
 description: Frequently asked question about how to get support for Windows baselines, the Security Compliance Toolkit (SCT), and related topics in your organization.
-keywords: virtualization, security, malware
 ms.prod: m365-security
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: dansimp
 author: dulcemontemayor
 manager: dansimp
-audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 06/25/2018
 ms.reviewer: 
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
-# Get Support
+# Get Support for Windows baselines
 
 **What is the Microsoft Security Compliance Manager (SCM)?**
 

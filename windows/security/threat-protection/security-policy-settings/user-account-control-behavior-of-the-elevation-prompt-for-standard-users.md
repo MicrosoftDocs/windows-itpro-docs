@@ -14,8 +14,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
-ms.technology: mde
+ms.date: 10/11/2021
+ms.technology: windows-sec
 ---
 
 # User Account Control: Behavior of the elevation prompt for standard users
@@ -37,7 +37,7 @@ This policy setting determines the behavior of the elevation prompt for standard
 
 -   **Prompt for credentials on the secure desktop**
 
-    This is the default. When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a different user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
+    This prompt for credentials is the default. When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a different user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
 
 -   **Prompt for credentials**
 
@@ -45,8 +45,8 @@ This policy setting determines the behavior of the elevation prompt for standard
 
 ### Best practices
 
-1.  Configure the **User Account Control: Behavior of the elevation prompt for standard users** to **Automatically deny elevation requests**. This setting requires the user to log on with an administrative account to run programs that require elevation of privilege.
-2.  As a security best practice, standard users should not have knowledge of administrative passwords. However, if your users have both standard and administrator-level accounts, set **Prompt for credentials** so that the users do not choose to always log on with their administrator accounts, and they shift their behavior to use the standard user account.
+1.  Configure the **User Account Control: Behavior of the elevation prompt for standard users** to **Automatically deny elevation requests**. This setting requires the user to sign in with an administrative account to run programs that require elevation of privilege.
+2.  As a security best practice, standard users shouldn't have knowledge of administrative passwords. However, if your users have both standard and administrator-level accounts, set **Prompt for credentials on the secure desktop** so that the users don't choose to always sign in with their administrator accounts, and they shift their behavior to use the standard user account.
 
 ### Location
 
@@ -71,7 +71,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a computer restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a computer restart when they're saved locally or distributed through Group Policy.
 
 ### Group Policy
 
@@ -87,11 +87,11 @@ One of the risks that the UAC feature tries to mitigate is that of malicious pro
 
 ### Countermeasure
 
-Configure the **User Account Control: Behavior of the elevation prompt for standard users** to **Automatically deny elevation requests**. This setting requires the user to log on with an administrative account to run programs that require elevation of privilege. As a security best practice, standard users should not have knowledge of administrative passwords. However, if your users have both standard and administrator-level accounts, we recommend setting **Prompt for credentials** so that the users do not choose to always log on with their administrator accounts, and they shift their behavior to use the standard user account.
+Configure the **User Account Control: Behavior of the elevation prompt for standard users** to **Automatically deny elevation requests**. This setting requires the user to sign in with an administrative account to run programs that require elevation of privilege. As a security best practice, standard users shouldn't have knowledge of administrative passwords. However, if your users have both standard and administrator-level accounts, we recommend setting **Prompt for credentials** so that the users don't choose to always sign in with their administrator accounts, and they shift their behavior to use the standard user account.
 
 ### Potential impact
 
-Users must provide administrative passwords to run programs with elevated privileges. This could cause an increased load on IT staff while the programs that are affected are identified and standard operating procedures are modified to support least privilege operations.
+Users must provide administrative passwords to run programs with elevated privileges. This impact could cause an increased load on IT staff while the programs that are affected are identified and standard operating procedures are modified to support least privilege operations.
 
 ## Related topics
 

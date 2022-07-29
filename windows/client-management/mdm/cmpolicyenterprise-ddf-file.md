@@ -1,19 +1,17 @@
 ---
 title: CMPolicyEnterprise DDF file
 description: Learn about the OMA DM device description framework (DDF) for the CMPolicyEnterprise configuration service provider.
-ms.assetid: 065EF07A-0CF3-4EE5-B620-3464A75B7EED
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 12/05/2017
 ---
 
 # CMPolicyEnterprise DDF file
-
 
 This topic shows the OMA DM device description framework (DDF) for the **CMPolicyEnterprise** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 

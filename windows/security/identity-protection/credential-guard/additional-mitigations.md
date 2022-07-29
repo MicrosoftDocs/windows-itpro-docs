@@ -1,12 +1,8 @@
 ---
 title: Additional mitigations
 description: Advice and sample code for making your domain environment more secure and robust with Windows Defender Credential Guard.
-ms.prod: w10
-ms.mktglfcycl: explore
-ms.sitesec: library
-ms.pagetype: security
+ms.prod: m365-security
 ms.localizationpriority: medium
-audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp
@@ -43,7 +39,7 @@ Domain-joined device certificate authentication has the following requirements:
 -   All domain controllers in those domains have KDC certificates which satisfy strict KDC validation certificate requirements:
     -   KDC EKU present
     -   DNS domain name matches the DNSName field of the SubjectAltName (SAN) extension
--   Windows 10 devices have the CA issuing the domain controller certificates in the enterprise store.
+-   Windows devices have the CA issuing the domain controller certificates in the enterprise store.
 -   A process is established to ensure the identity and trustworthiness of the device in a similar manner as you would establish the identity and trustworthiness of a user before issuing them a smartcard.
 
 #### Deploying domain-joined device certificates

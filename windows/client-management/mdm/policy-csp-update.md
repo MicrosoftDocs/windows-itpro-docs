@@ -5,11 +5,12 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
-ms.date: 11/03/2020
+ms.date: 06/15/2022
 ms.reviewer: 
 manager: dansimp
+ms.collection: highpri
 ---
 
 # Policy CSP - Update
@@ -73,6 +74,9 @@ manager: dansimp
     <a href="#update-configuredeadlinegraceperiod">Update/ConfigureDeadlineGracePeriod</a>
   </dd>
   <dd>
+    <a href="#update-configuredeadlinegraceperiodforfeatureupdates">Update/ConfigureDeadlineGracePeriodForFeatureUpdates</a>
+  </dd>
+  <dd>
     <a href="#update-configuredeadlinenoautoreboot">Update/ConfigureDeadlineNoAutoReboot</a>
   </dd>
   <dd>
@@ -98,6 +102,9 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#update-disablewufbsafeguards">Update/DisableWUfBSafeguards</a>
+  </dd>
+  <dd>
+    <a href="#update-donotenforceenterprisetlscertpinningforupdatedetection">Update/DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection</a>
   </dd>
   <dd>
     <a href="#update-engagedrestartdeadline">Update/EngagedRestartDeadline</a>
@@ -196,7 +203,22 @@ manager: dansimp
     <a href="#update-setedurestart">Update/SetEDURestart</a>
   </dd>
   <dd>
+    <a href="#update-setpolicydrivenupdatesourcefordriver">Update/SetPolicyDrivenUpdateSourceForDriver</a>
+  </dd>
+  <dd>
+    <a href="#update-setpolicydrivenupdatesourceforfeature">Update/SetPolicyDrivenUpdateSourceForFeature</a>
+  </dd>
+  <dd>
+    <a href="#update-setpolicydrivenupdatesourceforother">Update/SetPolicyDrivenUpdateSourceForOther</a>
+  </dd>
+  <dd>
+    <a href="#update-setpolicydrivenupdatesourceforquality">Update/SetPolicyDrivenUpdateSourceForQuality</a>
+  </dd>
+  <dd>
     <a href="#update-setproxybehaviorforupdatedetection">Update/SetProxyBehaviorForUpdateDetection</a>
+  </dd>
+  <dd> 
+    <a href="#update-productversion">Update/ProductVersion</a> 
   </dd>
   <dd> 
     <a href="#update-targetreleaseversion">Update/TargetReleaseVersion</a> 
@@ -219,32 +241,16 @@ manager: dansimp
 <a href="" id="update-activehoursend"></a>**Update/ActiveHoursEnd**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -259,10 +265,10 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1607. Allows the IT admin (when used with **Update/ActiveHoursStart**) to manage a range of active hours where update reboots are not scheduled. This value sets the end time. There is a 12 hour maximum from start time.
+Allows the IT admin (when used with **Update/ActiveHoursStart**) to manage a range of active hours where update reboots aren't scheduled. This value sets the end time. There's a 12-hour maximum from start time.
 
 > [!NOTE]
-> The default maximum difference from start time has been increased to 18 in Windows 10, version 1703. In this version of Windows 10, the maximum range of active hours can now be configured.  See **Update/ActiveHoursMaxRange** below for more information.
+> The default maximum difference from start time has been increased to 18 in Windows 10, version 1703. In this version of Windows 10, the maximum range of active hours can now be configured. See **Update/ActiveHoursMaxRange** below for more information.
 
 Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc.
 
@@ -271,11 +277,11 @@ The default is 17 (5 PM).
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off auto-restart for updates during active hours*
--   GP name: *ActiveHours*
--   GP element: *ActiveHoursEndTime*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Turn off auto-restart for updates during active hours*
+- GP name: *ActiveHours*
+- GP element: *ActiveHoursEndTime*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -286,32 +292,16 @@ ADMX Info:
 <a href="" id="update-activehoursmaxrange"></a>**Update/ActiveHoursMaxRange**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -326,7 +316,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Allows the IT admin to specify the max active hours range. This value sets max number of active hours from start time.
+Allows the IT admin to specify the max active hours range. This value sets max number of active hours from start time.
 
 Supported values are 8-18.
 
@@ -335,11 +325,11 @@ The default value is 18 (hours).
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify active hours range for auto-restarts*
--   GP name: *ActiveHoursMaxRange*
--   GP element: *ActiveHoursMaxRange*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Specify active hours range for auto-restarts*
+- GP name: *ActiveHoursMaxRange*
+- GP element: *ActiveHoursMaxRange*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -350,32 +340,16 @@ ADMX Info:
 <a href="" id="update-activehoursstart"></a>**Update/ActiveHoursStart**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -390,10 +364,10 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1607. Allows the IT admin (when used with **Update/ActiveHoursEnd**) to manage a range of hours where update reboots are not scheduled. This value sets the start time. There is a 12 hour maximum from end time.
+Allows the IT admin (when used with **Update/ActiveHoursEnd**) to manage a range of hours where update reboots aren't scheduled. This value sets the start time. There's a 12-hour maximum from end time.
 
 > [!NOTE]
-> The default maximum difference from end time has been increased to 18 in Windows 10, version 1703. In this version of Windows 10, the maximum range of active hours can now be configured.  See **Update/ActiveHoursMaxRange** above for more information.
+> The default maximum difference from end time has been increased to 18 in Windows 10, version 1703. In this version of Windows 10, the maximum range of active hours can now be configured. See **Update/ActiveHoursMaxRange** above for more information.
 
 Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc.
 
@@ -402,11 +376,11 @@ The default value is 8 (8 AM).
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off auto-restart for updates during active hours*
--   GP name: *ActiveHours*
--   GP element: *ActiveHoursStartTime*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Turn off auto-restart for updates during active hours*
+- GP name: *ActiveHours*
+- GP element: *ActiveHoursStartTime*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -417,32 +391,16 @@ ADMX Info:
 <a href="" id="update-allowautoupdate"></a>**Update/AllowAutoUpdate**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -461,32 +419,31 @@ Enables the IT admin to manage automatic update behavior to scan, download, and 
 
 Supported operations are Get and Replace.
 
-If the policy is not configured, end-users get the default behavior (Auto install and restart).
+If the policy isn't configured, end-users get the default behavior (Auto download and install).
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Automatic Updates*
--   GP name: *AutoUpdateCfg*
--   GP element: *AutoUpdateMode*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Configure Automatic Updates*
+- GP name: *AutoUpdateCfg*
+- GP element: *AutoUpdateMode*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Notify the user before downloading the update. This policy is used by the enterprise who wants to enable the end-users to manage data usage. With this option users are notified when there are updates that apply to the device and are ready for download. Users can download and install the updates from the Windows Update control panel.
--   1 – Auto install the update and then notify the user to schedule a device restart. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device is not in use and is not running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates immediately. If the installation requires a restart, the end-user is prompted to schedule the restart time. The end-user has up to seven days to schedule the restart and after that, a restart of the device is forced. Enabling the end-user to control the start time reduces the risk of accidental data loss caused by applications that do not shutdown properly on restart.
--   2 (default) – Auto install and restart. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device is not in use and is not running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates right away. If a restart is required, then the device is automatically restarted when the device is not actively being used. This is the default behavior for unmanaged devices. Devices are updated quickly, but it increases the risk of accidental data loss caused by an application that does not shutdown properly on restart.
--   3 – Auto install and restart at a specified time. The IT specifies the installation day and time. If no day and time are specified, the default is 3 AM daily. Automatic installation happens at this time and device restart happens after a 15-minute countdown. If the user is logged in when Windows is ready to restart, the user can interrupt the 15-minute countdown to delay the restart.
--   4 – Auto install and restart without end-user control. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device is not in use and is not running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates right away. If a restart is required, then the device is automatically restarted when the device is not actively being used. This setting option also sets the end-user control panel to read-only.
--   5 – Turn off automatic updates.
-
+- 0: Notify the user before downloading the update. This policy is used by the enterprise who wants to enable the end users to manage data usage. With this option, users are notified when there are updates that apply to the device and are ready for download. Users can download and install the updates from the Windows Update control panel.
+- 1: Auto install the update and then notify the user to schedule a device restart. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device isn't in use and isn't running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates immediately. If the installation requires a restart, the end user is prompted to schedule the restart. The end user has up to seven days to schedule the restart and after that, a restart of the device is forced. Enabling the end user to control the start time reduces the risk of accidental data loss caused by applications that don't shut down properly on restart. For more information, see [Automatic maintenance](/windows/win32/taskschd/task-maintenence).
+- 2: Auto install and restart. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device isn't in use and isn't running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update installs updates right away. If a restart is required, then the device is automatically restarted when the device isn't actively being used. This behavior is the default for unmanaged devices. Devices are updated quickly, but it increases the risk of accidental data loss caused by an application that doesn't shut down properly on restart. For more information, see [Automatic maintenance](/windows/win32/taskschd/task-maintenence).
+- 3: Auto install and restart at a specified time. You specify the installation day and time. If no day and time is specified, the default is 3 AM daily. Automatic installation happens at this time and device restart happens after a 15-minute countdown. If the user is signed in when Windows is ready to restart, the user can interrupt the 15-minute countdown to delay the restart.
+- 4: Auto install and restart at a specified time. You specify the installation day and time. If no day and time is specified, the default is 3 AM daily. Automatic installation happens at this time and device restart happens after a 15-minute countdown. If the user is signed in when Windows is ready to restart, the user can interrupt the 15-minute countdown to delay the restart. This option is the same as `3`, but restricts end user controls on the settings page.
+- 5: Turn off automatic updates.
+- 6 (default): Updates automatically download and install at an optimal time determined by the device. Restart occurs outside of active hours until the deadline is reached, if configured.
 
 > [!IMPORTANT]
-> This option should be used only for systems under regulatory compliance, as you will not get security updates as well.
-
+> This option should be used only for systems under regulatory compliance, as you won't get security updates as well.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -497,32 +454,16 @@ The following list shows the supported values:
 <a href="" id="update-allowautowindowsupdatedownloadovermeterednetwork"></a>**Update/AllowAutoWindowsUpdateDownloadOverMeteredNetwork**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -537,19 +478,19 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1709. Option to download updates automatically over metered connections (off by default). Value type is integer.
+Option to download updates automatically over metered connections (off by default). The supported value type is integer.
 
-A significant number of devices primarily use cellular data and do not have Wi-Fi access, which leads to a lower number of devices getting updates. Since a large number of devices have large data plans or unlimited data, this policy can unblock devices from getting updates.
+A significant number of devices primarily use cellular data and don't have Wi-Fi access, which leads to a lower number of devices getting updates. Since a large number of devices have large data plans or unlimited data, this policy can unblock devices from getting updates.
 
 This policy is accessible through the Update setting in the user interface or Group Policy.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow updates to be downloaded automatically over metered connections*
--   GP name: *AllowAutoWindowsUpdateDownloadOverMeteredNetwork*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Allow updates to be downloaded automatically over metered connections*
+- GP name: *AllowAutoWindowsUpdateDownloadOverMeteredNetwork*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
@@ -567,32 +508,16 @@ The following list shows the supported values:
 <a href="" id="update-allowmuupdateservice"></a>**Update/AllowMUUpdateService**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -607,23 +532,31 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1607. Allows the IT admin to manage whether to scan for app updates from Microsoft Update.
+Allows the IT admin to manage whether to scan for app updates from Microsoft Update.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Automatic Updates*
--   GP name: *AutoUpdateCfg*
--   GP element: *AllowMUUpdateServiceId*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Configure Automatic Updates*
+- GP name: *AutoUpdateCfg*
+- GP element: *AllowMUUpdateServiceId*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed or not configured.
--   1 – Allowed. Accepts updates received through Microsoft Update.
+- 0 - Not configured.
+- 1 - Allowed. Accepts updates received through Microsoft Update.
+
+> [!NOTE]
+> Setting this policy back to **0** or **Not configured** doesn't revert the configuration to receive updates from Microsoft Update automatically. In order to revert the configuration, you can run the PowerShell commands that are listed below to remove the Microsoft Update service:.
+
+```
+$MUSM = New-Object -ComObject "Microsoft.Update.ServiceManager"
+$MUSM.RemoveService("7971f918-a847-4430-9279-4a52d1efe18d")
+```
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -634,32 +567,16 @@ The following list shows the supported values:
 <a href="" id="update-allownonmicrosoftsignedupdate"></a>**Update/AllowNonMicrosoftSignedUpdate**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -674,18 +591,18 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Allows the IT admin to manage whether Automatic Updates accepts updates signed by entities other than Microsoft when the update is found at the UpdateServiceUrl location. This policy supports using WSUS for 3rd party software and patch distribution.
+Allows the IT admin to manage whether Automatic Updates accepts updates signed by entities other than Microsoft when the update is found at the UpdateServiceUrl location. This policy supports using WSUS for third-party software and patch distribution.
 
 Supported operations are Get and Replace.
 
-This policy is specific to desktop and local publishing via WSUS for 3rd party updates (binaries and updates not hosted on Microsoft Update) and allows IT to manage whether Automatic Updates accepts updates signed by entities other than Microsoft when the update is found on an intranet Microsoft update service location.
+This policy is specific to desktop and local publishing via WSUS for third-party updates (binaries and updates not hosted on Microsoft Update). This policy allows IT to manage whether Automatic Updates accepts updates signed by entities other than Microsoft, when the update is found on an intranet Microsoft update service location.
 
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed or not configured. Updates from an intranet Microsoft update service location must be signed by Microsoft.
--   1 – Allowed. Accepts updates received through an intranet Microsoft update service location, if they are signed by a certificate found in the "Trusted Publishers" certificate store of the local computer.
+- 0 - Not allowed or not configured. Updates from an intranet Microsoft update service location must be signed by Microsoft.
+- 1 - Allowed. Accepts updates received through an intranet Microsoft update service location, if they're signed by a certificate found in the "Trusted Publishers" certificate store of the local computer.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -696,32 +613,16 @@ The following list shows the supported values:
 <a href="" id="update-allowupdateservice"></a>**Update/AllowUpdateService**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -738,27 +639,27 @@ The following list shows the supported values:
 <!--Description-->
 Specifies whether the device could use Microsoft Update, Windows Server Update Services (WSUS), or Microsoft Store.
 
-Even when Windows Update is configured to receive updates from an intranet update service, it will periodically retrieve information from the public Windows Update service to enable future connections to Windows Update, and other services like Microsoft Update or the Microsoft Store
+Even when Windows Update is configured to receive updates from an intranet update service. It will periodically retrieve information from the public Windows Update service to enable future connections to Windows Update, and other services like Microsoft Update or the Microsoft Store.
 
 Enabling this policy will disable that functionality, and may cause connection to public services such as the Microsoft Store to stop working.
 
 > [!NOTE]
-> This policy applies only when the desktop or device is configured to connect to an intranet update service using the "Specify intranet Microsoft update service location" policy.
+> This policy applies only when the desktop or device is configured to connect to an intranet update service using the "Specify intranet Microsoft update service location" policy.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify intranet Microsoft update service location*
--   GP name: *CorpWuURL*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Specify intranet Microsoft update service location*
+- GP name: *CorpWuURL*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Update service is not allowed.
--   1 (default) – Update service is allowed.
+- 0 - Update service isn't allowed.
+- 1 (default) - Update service is allowed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -769,32 +670,16 @@ The following list shows the supported values:
 <a href="" id="update-autorestartdeadlineperiodindays"></a>**Update/AutoRestartDeadlinePeriodInDays**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -811,30 +696,31 @@ The following list shows the supported values:
 <!--Description-->
 For Quality Updates, this policy specifies the deadline in days before automatically executing a scheduled restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart is scheduled.
 
-The system will reboot on or after the specified deadline. The reboot is prioritized over any configured Active Hours and any existing system and user busy checks.
+The system will reboot on or after the specified deadline. The reboot is prioritized over any configured Active Hours and any existing system, and user busy checks.
 
-Value type is integer. Default is 7 days. 
+Supported value type is integer. Default is seven days. 
 
 Supported values range: 2-30.
 
-Note that the PC must restart for certain updates to take effect.
+The PC must restart for certain updates to take effect.
 
 If you enable this policy, a restart will automatically occur the specified number of days after the restart was scheduled.
 
-If you disable or do not configure this policy, the PC will restart according to the default schedule.
+If you disable or don't configure this policy, the PC will restart according to the default schedule.
 
 If any of the following two policies are enabled, this policy has no effect:
-1. No auto-restart with logged on users for scheduled automatic updates installations.
+
+1. No autorestart with signed-in users for the scheduled automatic updates installations.
 2. Always automatically restart at scheduled time.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify deadline before auto-restart for update installation*
--   GP name: *AutoRestartDeadline*
--   GP element: *AutoRestartDeadline*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Specify deadline before auto-restart for update installation*
+- GP name: *AutoRestartDeadline*
+- GP element: *AutoRestartDeadline*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -845,32 +731,16 @@ ADMX Info:
 <a href="" id="update-autorestartdeadlineperiodindaysforfeatureupdates"></a>**Update/AutoRestartDeadlinePeriodInDaysForFeatureUpdates**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -887,30 +757,31 @@ ADMX Info:
 <!--Description-->
 For Feature Updates, this policy specifies the deadline in days before automatically executing a scheduled restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart is scheduled.
 
-The system will reboot on or after the specified deadline. The reboot is prioritized over any configured Active Hours and any existing system and user busy checks.
+The system will reboot on or after the specified deadline. The reboot is prioritized over any configured Active Hours and any existing system, and user busy checks.
 
-Value type is integer. Default is 7 days. 
+Supported value type is integer. Default is 7 days. 
 
 Supported values range: 2-30.
 
-Note that the PC must restart for certain updates to take effect.
+The PC must restart for certain updates to take effect.
 
 If you enable this policy, a restart will automatically occur the specified number of days after the restart was scheduled.
 
-If you disable or do not configure this policy, the PC will restart according to the default schedule.
+If you disable or don't configure this policy, the PC will restart according to the default schedule.
 
 If any of the following two policies are enabled, this policy has no effect:
-1. No auto-restart with logged on users for scheduled automatic updates installations.
+
+1. No autorestart with logged on users for the scheduled automatic updates installations.
 2. Always automatically restart at scheduled time.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify deadline before auto-restart for update installation*
--   GP name: *AutoRestartDeadline*
--   GP element: *AutoRestartDeadlineForFeatureUpdates*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Specify deadline before auto-restart for update installation*
+- GP name: *AutoRestartDeadline*
+- GP element: *AutoRestartDeadlineForFeatureUpdates*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -921,32 +792,16 @@ ADMX Info:
 <a href="" id="update-autorestartnotificationschedule"></a>**Update/AutoRestartNotificationSchedule**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -961,18 +816,18 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Allows the IT Admin to specify the period for auto-restart reminder notifications.
+Allows the IT Admin to specify the period for autorestart reminder notifications.
 
 The default value is 15 (minutes).
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure auto-restart reminder notifications for updates*
--   GP name: *AutoRestartNotificationConfig*
--   GP element: *AutoRestartNotificationSchd*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Configure auto-restart reminder notifications for updates*
+- GP name: *AutoRestartNotificationConfig*
+- GP element: *AutoRestartNotificationSchd*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
@@ -987,32 +842,16 @@ Supported values are 15, 30, 60, 120, and 240 (minutes).
 <a href="" id="update-autorestartrequirednotificationdismissal"></a>**Update/AutoRestartRequiredNotificationDismissal**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1027,23 +866,23 @@ Supported values are 15, 30, 60, 120, and 240 (minutes).
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Allows the IT Admin to specify the method by which the auto-restart required notification is dismissed.
+Allows the IT Admin to specify the method by which the autorestart required notification is dismissed.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure auto-restart required notification for updates*
--   GP name: *AutoRestartRequiredNotificationDismissal*
--   GP element: *AutoRestartRequiredNotificationDismissal*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Configure auto-restart required notification for updates*
+- GP name: *AutoRestartRequiredNotificationDismissal*
+- GP element: *AutoRestartRequiredNotificationDismissal*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   1 (default) – Auto Dismissal.
--   2 – User Dismissal.
+- 1 (default) - Auto Dismissal.
+- 2 - User Dismissal.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1054,32 +893,16 @@ The following list shows the supported values:
 <a href="" id="update-automaticmaintenancewakeup"></a>**Update/AutomaticMaintenanceWakeUp**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1099,22 +922,23 @@ This policy setting allows you to configure if Automatic Maintenance should make
 > [!Note]
 > If the OS power wake policy is explicitly disabled, then this setting has no effect.
 
-If you enable this policy setting, Automatic Maintenance attempts to set OS wake policy and make a wake request for the daily scheduled time, if required.
+If you enable this policy setting, Automatic Maintenance attempts to set OS wake policy and make a wake request for the daily scheduled time, if necessary.
 
-If you disable or do not configure this policy setting, the wake setting as specified in Security and Maintenance/Automatic Maintenance Control Panel applies.
+If you disable or don't configure this policy setting, the wake setting as specified in Security and Maintenance/Automatic Maintenance Control Panel applies.
+
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Automatic Maintenance WakeUp Policy*
--   GP name: *WakeUpPolicy*
--   GP path: *Windows Components/Maintenance Scheduler*
--   GP ADMX file name: *msched.admx*
+- GP Friendly name: *Automatic Maintenance WakeUp Policy*
+- GP name: *WakeUpPolicy*
+- GP path: *Windows Components/Maintenance Scheduler*
+- GP ADMX file name: *msched.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 Supported values:  
--   0  - Disable
--   1  - Enable (Default)
+- 0  - Disable
+- 1  - Enable (Default)
 <!--/SupportedValues-->
 <!--Example-->
 
@@ -1130,32 +954,16 @@ Supported values:
 <a href="" id="update-branchreadinesslevel"></a>**Update/BranchReadinessLevel**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1170,16 +978,16 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1607. Allows the IT admin to set which branch a device receives their updates from. As of 1903, the branch readiness levels of Semi-Annual Channel (Targeted) and Semi-Annual Channel have been combined into one Semi-Annual Channel set with a value of 16. For devices on 1903 and later releases, the value of 32 is not a supported value.
+Allows the IT admin to set which branch a device receives their updates from. As of 1903, the branch readiness levels of General Availability Channel (Targeted) and General Availability Channel have been combined into one General Availability Channel set with a value of 16. For devices on 1903 and later releases, the value of 32 isn't a supported value.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select when Preview Builds and Feature Updates are received*
--   GP name: *DeferFeatureUpdates*
--   GP element: *BranchReadinessLevelId*
--   GP path: *Windows Components/Windows Update/Windows Update for Business*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Select when Preview Builds and Feature Updates are received*
+- GP name: *DeferFeatureUpdates*
+- GP element: *BranchReadinessLevelId*
+- GP path: *Windows Components/Windows Update/Windows Update for Business*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
@@ -1188,8 +996,8 @@ The following list shows the supported values:
 -  2  {0x2}  - Windows Insider build - Fast (added in Windows 10, version 1709)
 -  4  {0x4}  - Windows Insider build - Slow (added in Windows 10, version 1709)
 -  8  {0x8}  - Release Windows Insider build (added in Windows 10, version 1709)
--  16 {0x10} - (default) Semi-annual Channel (Targeted). Device gets all applicable feature updates from Semi-annual Channel (Targeted). 
--  32 {0x20} - Semi-annual Channel. Device gets feature updates from Semi-annual Channel. (*Only applicable to releases prior to 1903, for all releases 1903 and after the Semi-annual Channel and Semi-annual Channel (Targeted) into a single Semi-annual Channel with a value of 16)
+-  16 {0x10} - (default) General Availability Channel (Targeted). Device gets all applicable feature updates from General Availability Channel (Targeted)
+-  32 {0x20} - General Availability Channel. Device gets feature updates from General Availability Channel. (*Only applicable to releases prior to 1903, for all releases 1903 and after the General Availability Channel and General Availability Channel (Targeted) into a single General Availability Channel with a value of 16)
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1200,32 +1008,16 @@ The following list shows the supported values:
 <a href="" id="update-configuredeadlineforfeatureupdates"></a>**Update/ConfigureDeadlineForFeatureUpdates**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1240,20 +1032,19 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-
-Added in Windows 10, version 1903. Also available in Windows 10, versions 1809, 1803, and 1709. Allows IT admins to specify the number of days a user has before feature updates are installed on their devices automatically. Updates and restarts will occur regardless of active hours and the user will not be able to reschedule.
+Allows admins to specify the number of days before feature updates are installed on the device automatically. Before the deadline, restarts can be scheduled by users or automatically scheduled outside of active hours, according to [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot). After the deadline passes, restarts will occur regardless of active hours and users won't be able to reschedule.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify deadlines for automatic updates and restarts*
--   GP name: *ConfigureDeadlineForFeatureUpdates*
--   GP element: *ConfigureDeadlineForFeatureUpdates*
--   GP path: *Administrative Templates\Windows Components\WindowsUpdate*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Specify deadlines for automatic updates and restarts*
+- GP name: *ConfigureDeadlineForFeatureUpdates*
+- GP element: *ConfigureDeadlineForFeatureUpdates*
+- GP path: *Administrative Templates\Windows Components\WindowsUpdate*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Supports a numeric value from 2 - 30, which indicates the number of days a device will wait until performing an aggressive installation of a required feature update.
+Supports a numeric value from 0-30 (2-30 in Windows 10, versions 1803 and 1709), which indicates the number of days a device will wait until performing an aggressive installation of a required feature update. When set to 0, the update will download and install immediately upon offering, but might not finish within the day due to device availability and network connectivity.
 
 Default value is 7.
 <!--/SupportedValues-->
@@ -1271,32 +1062,16 @@ Default value is 7.
 <a href="" id="update-configuredeadlineforqualityupdates"></a>**Update/ConfigureDeadlineForQualityUpdates**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1311,20 +1086,19 @@ Default value is 7.
 
 <!--/Scope-->
 <!--Description-->
-
-Added in Windows 10, version 1903. Also available in Windows 10, versions 1809, 1803, and 1709. Allows IT admins to specify the number of days a user has before quality updates are installed on their devices automatically. Updates and restarts will occur regardless of active hours and the user will not be able to reschedule.
+Allows admins to specify the number of days before quality updates are installed on a device automatically. Before the deadline, restarts can be scheduled by users or automatically scheduled outside of active hours, according to [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot). After deadline passes, restarts will occur regardless of active hours and users won't be able to reschedule.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify deadlines for automatic updates and restarts*
--   GP name: *ConfigureDeadlineForQualityUpdates*
--   GP element: *ConfigureDeadlineForQualityUpdates*
--   GP path: *Administrative Templates\Windows Components\WindowsUpdate*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Specify deadlines for automatic updates and restarts*
+- GP name: *ConfigureDeadlineForQualityUpdates*
+- GP element: *ConfigureDeadlineForQualityUpdates*
+- GP path: *Administrative Templates\Windows Components\WindowsUpdate*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Supports a numeric value from 2 - 30, which indicates the number of days a device will wait until performing an aggressive installation of a required quality update.
+Supports a numeric value from 0-30 (2-30 in Windows 10, versions 1803 and 1709), which indicates the number of days a device will wait until performing an aggressive installation of a required feature update. When set to 0, the update will download and install immediately upon offering, but might not finish within the day due to device availability and network connectivity.
 
 Default value is 7.
 <!--/SupportedValues-->
@@ -1342,32 +1116,71 @@ Default value is 7.
 <a href="" id="update-configuredeadlinegraceperiod"></a>**Update/ConfigureDeadlineGracePeriod**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+When used with [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates) allows the admin to specify a minimum number of days until restarts occur automatically for quality updates. Setting the grace period might extend the effective deadline set by the deadline policy. If [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates) is configured but this policy isn't, then the default value of 2 will be used.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+- GP Friendly name: *Specify deadlines for automatic updates and restarts*
+- GP name: *ConfigureDeadlineGracePeriod*
+- GP element: *ConfigureDeadlineGracePeriod*
+- GP path: *Administrative Templates\Windows Components\WindowsUpdate*
+- GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Supports a numeric value from 0-7, which indicates the minimum number of days a device will wait before it restarts automatically, after installing a required quality update.
+
+Default value is 2.
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-configuredeadlinegraceperiodforfeatureupdates"></a>**Update/ConfigureDeadlineGracePeriodForFeatureUpdates**  
+
+<!--SupportedSKUs-->
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1383,20 +1196,20 @@ Default value is 7.
 <!--/Scope-->
 <!--Description-->
 
-Added in Windows 10, version 1903. Also available in Windows 10, versions 1809, 1803, and 1709. Allows the IT admin (when used with [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates) or [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)) to specify a minimum number of days until restarts occur automatically. Setting the grace period may extend the effective deadline set by the deadline policies.
+When used with [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates) allows the admin to specify a minimum number of days until restarts occur automatically for feature updates. Setting the grace period may extend the effective deadline set by the deadline policy. If [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates) is configured but this policy isn't, then the value from [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod) will be used; if that policy is also not configured, then the default value of 2 will be used.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify deadlines for automatic updates and restarts*
--   GP name: *ConfigureDeadlineGracePeriod*
--   GP element: *ConfigureDeadlineGracePeriod*
--   GP path: *Administrative Templates\Windows Components\WindowsUpdate*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Specify deadlines for automatic updates and restarts*
+- GP name: *ConfigureDeadlineGracePeriodForFeatureUpdates*
+- GP element: *ConfigureDeadlineGracePeriodForFeatureUpdates*
+- GP path: *Administrative Templates\Windows Components\WindowsUpdate*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Supports a numeric value from 0 - 7, which indicates the minimum number of days a device will wait until performing an aggressive installation of a required update once deadline has been reached.
+Supports a numeric value from 0-7, which indicates the minimum number of days a device will wait before it restarts automatically, after installing a required feature update.
 
 Default value is 2.
 <!--/SupportedValues-->
@@ -1414,32 +1227,16 @@ Default value is 2.
 <a href="" id="update-configuredeadlinenoautoreboot"></a>**Update/ConfigureDeadlineNoAutoReboot**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1454,24 +1251,25 @@ Default value is 2.
 
 <!--/Scope-->
 <!--Description-->
+When used with [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates) or [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates), devices will delay automatically restarting until both the deadline and grace period have expired, even if applicable updates are already installed and pending a restart.
 
-Added in Windows 10, version 1903. Also available in Windows 10, versions 1809, 1803, and 1709. If enabled (when used with [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates) or [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)), devices will not automatically restart outside of active hours until the deadline is reached, even if applicable updates are already installed and pending a restart.
+When disabled, if the device has installed updates and is outside of active hours, it might attempt an automatic restart before the deadline.
 
-When disabled, if the device has installed the required updates and is outside of active hours, it may attempt an automatic restart before the deadline.
+<!---same ADMX info and rest of description>
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify deadlines for automatic updates and restarts*
--   GP name: *ConfigureDeadlineNoAutoReboot*
--   GP element: *ConfigureDeadlineNoAutoReboot*
--   GP path: *Administrative Templates\Windows Components\WindowsUpdate*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Specify deadlines for automatic updates and restarts*
+- GP name: *ConfigureDeadlineNoAutoReboot*
+- GP element: *ConfigureDeadlineNoAutoReboot*
+- GP path: *Administrative Templates\Windows Components\WindowsUpdate*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 Supported values:  
--   1 - Enabled
--   0 (default) - Disabled
+- 1 - Enabled
+- 0 (default) - Disabled
 <!--/SupportedValues-->
 <!--Example-->
 
@@ -1487,32 +1285,16 @@ Supported values:
 <a href="" id="update-configurefeatureupdateuninstallperiod"></a>**Update/ConfigureFeatureUpdateUninstallPeriod**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1527,7 +1309,11 @@ Supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1803. Enable IT admin to configure feature update uninstall period. Values range 2 - 60 days. Default is 10 days.
+Enable IT admin to configure feature update uninstall period. 
+
+Values range 2 - 60 days. 
+
+Default is 10 days.
 
 <!--/Description-->
 <!--/Policy-->
@@ -1538,32 +1324,16 @@ Added in Windows 10, version 1803. Enable IT admin to configure feature update u
 <a href="" id="update-deferfeatureupdatesperiodindays"></a>**Update/DeferFeatureUpdatesPeriodInDays**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1578,23 +1348,22 @@ Added in Windows 10, version 1803. Enable IT admin to configure feature update u
 
 <!--/Scope-->
 <!--Description-->
-Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
 
-Added in Windows 10, version 1607. Defers Feature Updates for the specified number of days.
+Defers Feature Updates for the specified number of days.
 
 Supported values are 0-365 days.
 
 > [!IMPORTANT]
-> The default maximum number of days to defer an update has been increased from 180 (Windows 10, version 1607) to 365 in Windows 10, version 1703.
+> The default maximum number of days to defer an update has been increased from 180 (Windows 10, version 1607) to 365 in Windows 10, version 1703.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select when Preview Builds and Feature Updates are received*
--   GP name: *DeferFeatureUpdates*
--   GP element: *DeferFeatureUpdatesPeriodId*
--   GP path: *Windows Components/Windows Update/Windows Update for Business*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Select when Preview Builds and Feature Updates are received*
+- GP name: *DeferFeatureUpdates*
+- GP element: *DeferFeatureUpdatesPeriodId*
+- GP path: *Windows Components/Windows Update/Windows Update for Business*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -1605,32 +1374,16 @@ ADMX Info:
 <a href="" id="update-deferqualityupdatesperiodindays"></a>**Update/DeferQualityUpdatesPeriodInDays**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1645,18 +1398,18 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1607. Defers Quality Updates for the specified number of days.
+Defers Quality Updates for the specified number of days.
 
 Supported values are 0-30.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select when Quality Updates are received*
--   GP name: *DeferQualityUpdates*
--   GP element: *DeferQualityUpdatesPeriodId*
--   GP path: *Windows Components/Windows Update/Windows Update for Business*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Select when Quality Updates are received*
+- GP name: *DeferQualityUpdates*
+- GP element: *DeferQualityUpdatesPeriodId*
+- GP path: *Windows Components/Windows Update/Windows Update for Business*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -1667,32 +1420,16 @@ ADMX Info:
 <a href="" id="update-deferupdateperiod"></a>**Update/DeferUpdatePeriod**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1708,10 +1445,9 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use DeferUpdatePeriod for Windows 10, version 1511 devices.
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use DeferUpdatePeriod for Windows 10, version 1511 devices.
 
-
-Allows IT Admins to specify update delays for up to 4 weeks.
+Allows IT Admins to specify update delays for up to four weeks.
 
 Supported values are 0-4, which refers to the number of weeks to defer updates.
 
@@ -1720,14 +1456,14 @@ If the "Specify intranet Microsoft update service location" policy is enabled, t
 If the Allow Telemetry policy is enabled and the Options value is set to 0, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
 
 OS upgrade:
-- Maximum deferral: 8 months
-- Deferral increment: 1 month
+- Maximum deferral: Eight months
+- Deferral increment: One month
 - Update type/notes:
   - Upgrade - 3689BDC8-B205-4AF4-8D4A-A63924C5E9D5
 
 Update:
-- Maximum deferral: 1 month
-- Deferral increment: 1 week
+- Maximum deferral: One month
+- Deferral increment: One week
 - Update type/notes: If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic:
   
   - Security Update - 0FA1201D-4330-4FA8-8AE9-B877473B6441
@@ -1739,71 +1475,20 @@ Update:
   - Update - CD5FFD1E-E932-4E3A-BF74-18BF0B1BBD83
   - Driver - EBFC1FC5-71A4-4F7B-9ACA-3B9A503104A0
 
-Other/cannot defer:
+Other/can't defer:
 
 - Maximum deferral: No deferral
 - Deferral increment: No deferral
 - Update type/notes:
-  Any update category not specifically enumerated above falls into this category.
+  Any update category not enumerated above falls into this category.
       - Definition Update - E0789628-CE08-4437-BE74-2495B842F43B
-
-<!--<table style="margin-left: 20px">
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Update category</th>
-<th>Maximum deferral</th>
-<th>Deferral increment</th>
-<th>Update type/notes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="vertical-align:top"><p>OS upgrade</p></td>
-<td style="vertical-align:top"><p>8 months</p></td>
-<td style="vertical-align:top"><p>1 month</p></td>
-<td style="vertical-align:top"><p>Upgrade - 3689BDC8-B205-4AF4-8D4A-A63924C5E9D5</p></td>
-</tr>
-<tr class="even">
-<td style="vertical-align:top"><p>Update</p></td>
-<td style="vertical-align:top"><p>1 month</p></td>
-<td style="vertical-align:top"><p>1 week</p></td>
-<td style="vertical-align:top"><div class="alert">
-<strong>Note</strong>
-If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic.
-</div>
-<ul>
-<li>Security Update - 0FA1201D-4330-4FA8-8AE9-B877473B6441</li>
-<li>Critical Update - E6CF1350-C01B-414D-A61F-263D14D133B4</li>
-<li>Update Rollup - 28BC880E-0592-4CBF-8F95-C79B17911D5F</li>
-<li>Service Pack - 68C5B0A3-D1A6-4553-AE49-01D3A7827828</li>
-<li>Tools - B4832BD8-E735-4761-8DAF-37F882276DAB</li>
-<li>Feature Pack - B54E7D24-7ADD-428F-8B75-90A396FA584F</li>
-<li>Update - CD5FFD1E-E932-4E3A-BF74-18BF0B1BBD83</li>
-<li>Driver - EBFC1FC5-71A4-4F7B-9ACA-3B9A503104A0</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td style="vertical-align:top"><p>Other/cannot defer</p></td>
-<td style="vertical-align:top"><p>No deferral</p></td>
-<td style="vertical-align:top"><p>No deferral</p></td>
-<td style="vertical-align:top"><p>Any update category not specifically enumerated above falls into this category.</p>
-<p>Definition Update - E0789628-CE08-4437-BE74-2495B842F43B</p></td>
-</tr>
-</tbody>
-</table>-->
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP name: *DeferUpgrade*
--   GP element: *DeferUpdatePeriodId*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP name: *DeferUpgrade*
+- GP element: *DeferUpdatePeriodId*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -1814,32 +1499,16 @@ ADMX Info:
 <a href="" id="update-deferupgradeperiod"></a>**Update/DeferUpgradePeriod**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1855,12 +1524,9 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
->
-> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use DeferUpgradePeriod for Windows 10, version 1511 devices.
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use DeferUpgradePeriod for Windows 10, version 1511 devices.
 
-
-Allows IT Admins to specify additional upgrade delays for up to 8 months.
+Allows IT Admins to specify other upgrade delays for up to eight months.
 
 Supported values are 0-8, which refers to the number of months to defer upgrades.
 
@@ -1871,9 +1537,9 @@ If the "Allow Telemetry" policy is enabled and the Options value is set to 0, th
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP name: *DeferUpgrade*
--   GP element: *DeferUpgradePeriodId*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP name: *DeferUpgrade*
+- GP element: *DeferUpgradePeriodId*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -1884,32 +1550,16 @@ ADMX Info:
 <a href="" id="update-detectionfrequency"></a>**Update/DetectionFrequency**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1924,16 +1574,16 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Specifies the scan frequency from every 1 - 22 hours with a random variant of 0 - 4 hours. Default is 22 hours. This policy should only be enabled when Update/UpdateServiceUrl is configured to point the device at a WSUS server rather than Microsoft Update. 
+Specifies the scan frequency from every 1 - 22 hours with a random variant of 0 - 4 hours. Default is 22 hours. This policy should be enabled only when Update/UpdateServiceUrl is configured to point the device at a WSUS server rather than Microsoft Update. 
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Automatic Updates detection frequency*
--   GP name: *DetectionFrequency_Title*
--   GP element: *DetectionFrequency_Hour2*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Automatic Updates detection frequency*
+- GP name: *DetectionFrequency_Title*
+- GP element: *DetectionFrequency_Hour2*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -1944,32 +1594,16 @@ ADMX Info:
 <a href="" id="update-disabledualscan"></a>**Update/DisableDualScan**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1984,28 +1618,29 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1709, but was added to 1607 and 1703 service releases. Do not allow update deferral policies to cause scans against Windows Update. If this policy is not enabled, then configuring deferral policies will result in the client unexpectedly scanning Windows update.  With the policy enabled, those scans are prevented, and users can configure deferral policies as much as they like.
+Don't allow update deferral policies to cause scans against Windows Update. If this policy isn't enabled, then configuring deferral policies will result in the client unexpectedly scanning Windows update. With the policy enabled, those scans are prevented, and users can configure deferral policies as much as they like.
 
 For more information about dual scan, see [Demystifying "Dual Scan"](/archive/blogs/wsus/demystifying-dual-scan) and [Improving Dual Scan on 1607](/archive/blogs/wsus/improving-dual-scan-on-1607).
 
-This is the same as the Group Policy in Windows Components > Window Update "Do not allow update deferral policies to cause scans against Windows Update."
+This setting is the same as the Group Policy in **Windows Components** > **Windows Update**: "Do not allow update deferral policies to cause scans against Windows Update."
 
-Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+- Supported value type is integer. 
+- Supported operations are Add, Get, Replace, and Delete.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Do not allow update deferral policies to cause scans against Windows Update*
--   GP name: *DisableDualScan*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Do not allow update deferral policies to cause scans against Windows Update*
+- GP name: *DisableDualScan*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 - allow scan against Windows Update
-- 1 - do not allow update deferral policies to cause scans against Windows Update
+- 0 - Allow scan against Windows Update
+- 1 - Don't allow update deferral policies to cause scans against Windows Update
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -2016,32 +1651,16 @@ The following list shows the supported values:
 <a href="" id="update-disablewufbsafeguards"></a>**Update/DisableWUfBSafeguards**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2056,35 +1675,87 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows Update for Business (WUfB) devices running Windows 10, version 1809 and above and installed with October 2020 security update. This policy setting specifies that a WUfB device should skip safeguards.
+Available in Windows Update for Business devices running Windows 10, version 1809 and above and installed with October 2020 security update. This policy setting specifies that a Windows Update for Business device should skip safeguards.
 
 Safeguard holds prevent a device with a known compatibility issue from being offered a new OS version. The offering will proceed once a fix is issued and is verified on a held device. The aim of safeguards is to protect the device and user from a failed or poor upgrade experience.
 
 The safeguard holds protection is provided by default to all the devices trying to update to a new Windows 10 Feature Update version via Windows Update.
 
-IT admins can, if necessary, opt devices out of safeguard protections using this policy setting or via the “Disable safeguards for Feature Updates” Group Policy. 
+IT admins can, if necessary, opt devices out of safeguard protections using this policy setting or via the "Disable safeguards for Feature Updates" Group Policy. 
 
 > [!NOTE]
 > Opting out of the safeguards can put devices at risk from known performance issues. We recommend opting out only in an IT environment for validation purposes. Further, you can leverage the Windows Insider Program for Business Release Preview Channel in order to validate the upcoming Windows 10 Feature Update version without the safeguards being applied.
 >
-> The disable safeguards policy will revert to “Not Configured” on a device after moving to a new Windows 10 version, even if previously enabled. This ensures the admin is consciously disabling Microsoft’s default protection from known issues for each new feature update. 
+> The disable safeguards policy will revert to "Not Configured" on a device after moving to a new Windows 10 version, even if previously enabled. This ensures the admin is consciously disabling Microsoft's default protection from known issues for each new feature update. 
 >
-> Disabling safeguards does not guarantee your device will be able to successfully update. The update may still fail on the device and will likely result in a bad experience post upgrade as you are bypassing the protection given by Microsoft pertaining to known issues.
+> Disabling safeguards doesn't guarantee your device will be able to successfully update. The update may still fail on the device and will likely result in a bad experience post upgrade, as you're bypassing the protection given by Microsoft pertaining to known issues.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Disable safeguards for Feature Updates*
--   GP name: *DisableWUfBSafeguards*
--   GP path: *Windows Components/Windows Update/Windows Update for Business*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Disable safeguards for Feature Updates*
+- GP name: *DisableWUfBSafeguards*
+- GP path: *Windows Components/Windows Update/Windows Update for Business*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
 - 0 (default) - Safeguards are enabled and devices may be blocked for upgrades until the safeguard is cleared.
-- 1 - Safeguards are not enabled and upgrades will be deployed without blocking on safeguards.
+- 1 - Safeguards aren't enabled and upgrades will be deployed without blocking on safeguards.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-donotenforceenterprisetlscertpinningforupdatedetection"></a>**Update/DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection**  
+
+<!--SupportedSKUs-->
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+To ensure the highest levels of security, we recommended using WSUS TLS certificate pinning on all devices. 
+
+By default, certificate pinning for Windows Update client isn't enforced. 
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+- GP Friendly name: *Allow user proxy to be used as a fallback if detection using system proxy fails*
+- GP name: *Allow user proxy to be used as a fallback if detection using system proxy fails*
+- GP path: *Windows Update\SpecifyintranetMicrosoftupdateserviceLocation*
+- GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0 (default) - Enforce certificate pinning.
+- 1 - Don't enforce certificate pinning.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -2095,32 +1766,16 @@ The following list shows the supported values:
 <a href="" id="update-engagedrestartdeadline"></a>**Update/EngagedRestartDeadline**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2135,34 +1790,36 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-For Quality Updates, this policy specifies the deadline in days before automatically scheduling and executing a pending restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period.
+For Quality Updates, this policy specifies the deadline in days before automatically scheduling and executing a pending restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Autorestart to Engaged restart (pending user schedule) to be executed automatically, within the specified period.
 
-The system will reboot on or after the specified deadline. The reboot is prioritized over any configured Active Hours and any existing system and user busy checks.
+The system will reboot on or after the specified deadline. The reboot is prioritized over any configured Active Hours and any existing system, and user busy checks.
 
 > [!NOTE]
-> If Update/EngagedDeadline is the only policy set (Update/EngagedRestartTransitionSchedule and Update/EngagedRestartSnoozeSchedule are not set), the behavior goes from reboot required -> engaged behavior -> forced reboot after deadline is reached with a 3-day snooze period.
+> If Update/EngagedDeadline is the only policy set (Update/EngagedRestartTransitionSchedule and Update/EngagedRestartSnoozeSchedule aren't set), the behavior goes from reboot required -> engaged behavior -> forced reboot after deadline is reached with a 3-day snooze period.
 
-Value type is integer. Default is 14.
+Supporting value type is integer. 
+
+Default is 14.
 
 Supported value range: 2 - 30.
 
-If no deadline is specified or deadline is set to 0, the restart will not be automatically executed and will remain Engaged restart (e.g. pending user scheduling).
+If no deadline is specified or deadline is set to 0, the restart won't be automatically executed, and will remain Engaged restart (for example, pending user scheduling).
 
-If you disable or do not configure this policy, the default behaviors will be used.
+If you disable or don't configure this policy, the default behaviors will be used.
 
 If any of the following policies are configured, this policy has no effect:
-1. No auto-restart with logged on users for scheduled automatic updates installations
-2. Always automatically restart at scheduled time
-3. Specify deadline before auto-restart for update installation
+1. No autorestart with logged on users for scheduled automatic updates installations.
+2. Always automatically restart at scheduled time.
+3. Specify deadline before autorestart for update installation.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify Engaged restart transition and notification schedule for updates*
--   GP name: *EngagedRestartTransitionSchedule*
--   GP element: *EngagedRestartDeadline*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Specify Engaged restart transition and notification schedule for updates*
+- GP name: *EngagedRestartTransitionSchedule*
+- GP element: *EngagedRestartDeadline*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -2173,32 +1830,16 @@ ADMX Info:
 <a href="" id="update-engagedrestartdeadlineforfeatureupdates"></a>**Update/EngagedRestartDeadlineForFeatureUpdates**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2213,29 +1854,31 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-For Feature Updates, this policy specifies the deadline in days before automatically scheduling and executing a pending restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period.
+For Feature Updates, this policy specifies the deadline in days before automatically scheduling and executing a pending restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to be executed automatically, within the specified period.
 
-Value type is integer. Default is 14.
+Supported value type is integer. 
 
-Supported value range: 2 - 30.
+Default is 14.
 
-If no deadline is specified or deadline is set to 0, the restart will not be automatically executed and will remain Engaged restart (e.g. pending user scheduling).
+Supported value range: 2-30.
 
-If you disable or do not configure this policy, the default behaviors will be used.
+If no deadline is specified or deadline is set to 0, the restart won't be automatically executed and will remain Engaged restart (for example, pending user scheduling).
+
+If you disable or don't configure this policy, the default behaviors will be used.
 
 If any of the following policies are configured, this policy has no effect:
-1. No auto-restart with logged on users for scheduled automatic updates installations
-2. Always automatically restart at scheduled time
-3. Specify deadline before auto-restart for update installation
+1. No autorestart with logged on users for scheduled automatic updates installations.
+2. Always automatically restart at scheduled time.
+3. Specify deadline before autorestart for update installation.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify Engaged restart transition and notification schedule for updates*
--   GP name: *EngagedRestartTransitionSchedule*
--   GP element: *EngagedRestartDeadlineForFeatureUpdates*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Specify Engaged restart transition and notification schedule for updates*
+- GP name: *EngagedRestartTransitionSchedule*
+- GP element: *EngagedRestartDeadlineForFeatureUpdates*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -2246,32 +1889,16 @@ ADMX Info:
 <a href="" id="update-engagedrestartsnoozeschedule"></a>**Update/EngagedRestartSnoozeSchedule**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2286,27 +1913,29 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-For Quality Updates, this policy specifies the number of days a user can snooze Engaged restart reminder notifications. The snooze period can be set between 1 and 3 days.
+For Quality Updates, this policy specifies the number of days a user can snooze Engaged restart reminder notifications. The snooze period can be set between 1-3 days.
 
-Value type is integer. Default is 3 days.
+Supported value type is integer. 
 
-Supported value range: 1 - 3.
+Default is three days.
 
-If you disable or do not configure this policy, the default behaviors will be used.
+Supported value range: 1-3.
+
+If you disable or don't configure this policy, the default behaviors will be used.
 
 If any of the following policies are configured, this policy has no effect:
-1. No auto-restart with logged on users for scheduled automatic updates installations
-2. Always automatically restart at scheduled time
-3. Specify deadline before auto-restart for update installation
+1. No autorestart with logged on users for scheduled automatic updates installations.
+2. Always automatically restart at scheduled time.
+3. Specify deadline before autorestart for update installation.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify Engaged restart transition and notification schedule for updates*
--   GP name: *EngagedRestartTransitionSchedule*
--   GP element: *EngagedRestartSnoozeSchedule*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Specify Engaged restart transition and notification schedule for updates*
+- GP name: *EngagedRestartTransitionSchedule*
+- GP element: *EngagedRestartSnoozeSchedule*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -2317,32 +1946,16 @@ ADMX Info:
 <a href="" id="update-engagedrestartsnoozescheduleforfeatureupdates"></a>**Update/EngagedRestartSnoozeScheduleForFeatureUpdates**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2357,27 +1970,29 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-For Feature Updates, this policy specifies the number of days a user can snooze Engaged restart reminder notifications. The snooze period can be set between 1 and 3 days.
+For Feature Updates, this policy specifies the number of days a user can snooze Engaged restart reminder notifications. The snooze period can be set between 1-3 days.
 
-Value type is integer. Default is 3 days.
+Supported value type is integer. 
 
-Supported value range: 1 - 3.
+Default is three days.
 
-If you disable or do not configure this policy, the default behaviors will be used.
+Supported value range: 1-3.
+
+If you disable or don't configure this policy, the default behaviors will be used.
 
 If any of the following policies are configured, this policy has no effect:
-1. No auto-restart with logged on users for scheduled automatic updates installations
-2. Always automatically restart at scheduled time
-3. Specify deadline before auto-restart for update installation
+1. No autorestart with logged on users for scheduled automatic updates installations.
+2. Always automatically restart at scheduled time.
+3. Specify deadline before autorestart for update installation.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify Engaged restart transition and notification schedule for updates*
--   GP name: *EngagedRestartTransitionSchedule*
--   GP element: *EngagedRestartSnoozeScheduleForFeatureUpdates*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Specify Engaged restart transition and notification schedule for updates*
+- GP name: *EngagedRestartTransitionSchedule*
+- GP element: *EngagedRestartSnoozeScheduleForFeatureUpdates*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -2388,32 +2003,16 @@ ADMX Info:
 <a href="" id="update-engagedrestarttransitionschedule"></a>**Update/EngagedRestartTransitionSchedule**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2430,25 +2029,27 @@ ADMX Info:
 <!--Description-->
 For Quality Updates, this policy specifies the timing before transitioning from Auto restarts scheduled outside of active hours to Engaged restart, which requires the user to schedule. The period can be set between 2 and 30 days from the time the restart becomes pending.
 
-Value type is integer. Default value is 7 days.
+Supported value type is integer. 
+
+Default value is 7 days.
 
 Supported value range: 2 - 30. 
 
-If you disable or do not configure this policy, the default behaviors will be used.
+If you disable or don't configure this policy, the default behaviors will be used.
 
 If any of the following policies are configured, this policy has no effect:
-1. No auto-restart with logged on users for scheduled automatic updates installations
-2. Always automatically restart at scheduled time
-3. Specify deadline before auto-restart for update installation
+1. No autorestart with logged on users for scheduled automatic updates installations.
+2. Always automatically restart at scheduled time.
+3. Specify deadline before autorestart for update installation.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify Engaged restart transition and notification schedule for updates*
--   GP name: *EngagedRestartTransitionSchedule*
--   GP element: *EngagedRestartTransitionSchedule*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Specify Engaged restart transition and notification schedule for updates*
+- GP name: *EngagedRestartTransitionSchedule*
+- GP element: *EngagedRestartTransitionSchedule*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -2459,32 +2060,16 @@ ADMX Info:
 <a href="" id="update-engagedrestarttransitionscheduleforfeatureupdates"></a>**Update/EngagedRestartTransitionScheduleForFeatureUpdates**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2501,25 +2086,27 @@ ADMX Info:
 <!--Description-->
 For Feature Updates, this policy specifies the timing before transitioning from Auto restarts scheduled_outside of active hours to Engaged restart, which requires the user to schedule. The period can be set between 2 and 30 days from the time the restart becomes pending.
 
-Value type is integer. Default value is 7 days.
+Supported value type is integer. 
 
-Supported value range: 2 - 30.
+Default value is seven days.
 
-If you disable or do not configure this policy, the default behaviors will be used.
+Supported value range: 2-30.
+
+If you disable or don't configure this policy, the default behaviors will be used.
 
 If any of the following policies are configured, this policy has no effect:
-1. No auto-restart with logged on users for scheduled automatic updates installations
-2. Always automatically restart at scheduled time
-3. Specify deadline before auto-restart for update installation
+1. No autorestart with logged on users for scheduled automatic updates installations.
+2. Always automatically restart at scheduled time.
+3. Specify deadline before autorestart for update installation.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify Engaged restart transition and notification schedule for updates*
--   GP name: *EngagedRestartTransitionSchedule*
--   GP element: *EngagedRestartTransitionScheduleForFeatureUpdates*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Specify Engaged restart transition and notification schedule for updates*
+- GP name: *EngagedRestartTransitionSchedule*
+- GP element: *EngagedRestartTransitionScheduleForFeatureUpdates*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -2530,32 +2117,16 @@ ADMX Info:
 <a href="" id="update-excludewudriversinqualityupdate"></a>**Update/ExcludeWUDriversInQualityUpdate**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2570,25 +2141,23 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
 
-Added in Windows 10, version 1607. Allows IT Admins to exclude Windows Update (WU) drivers during updates.
+Allows IT Admins to exclude Windows Update (WU) drivers during updates.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Do not include drivers with Windows Updates*
--   GP name: *ExcludeWUDriversInQualityUpdate*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Do not include drivers with Windows Updates*
+- GP name: *ExcludeWUDriversInQualityUpdate*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Allow Windows Update drivers.
--   1 – Exclude Windows Update drivers.
+- 0 (default) - Allow Windows Update drivers.
+- 1 - Exclude Windows Update drivers.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -2599,32 +2168,16 @@ The following list shows the supported values:
 <a href="" id="update-fillemptycontenturls"></a>**Update/FillEmptyContentUrls**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2639,26 +2192,26 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in the April service release of Windows 10, version 1607. Allows Windows Update Agent to determine the download URL when it is missing from the metadata.  This scenario will occur when intranet update service stores the metadata files but the download contents are stored in the ISV file cache (specified as the <a href="#update-updateserviceurlalternate">alternate download URL</a>).
+Allows Windows Update Agent to determine the download URL when it's missing from the metadata. This scenario will occur when intranet update service stores the metadata files but the download contents are stored in the ISV file cache (specified as the <a href="#update-updateserviceurlalternate">alternate download URL</a>).
 
 > [!NOTE]
-> This setting should only be used in combination with an alternate download URL and configured to use ISV file cache.  This setting is used when the intranet update service does not provide download URLs in the update metadata for files which are available on the alternate download server.
+> This setting should only be used in combination with an alternate download URL and configured to use ISV file cache. This setting is used when the intranet update service doesn't provide download URLs in the update metadata for files which are available on the alternate download server.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify intranet Microsoft update service location*
--   GP name: *CorpWuURL*
--   GP element: *CorpWUFillEmptyContentUrls*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Specify intranet Microsoft update service location*
+- GP name: *CorpWuURL*
+- GP element: *CorpWUFillEmptyContentUrls*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Disabled.
--   1 – Enabled.
+- 0 (default) - Disabled.
+- 1 - Enabled.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -2669,32 +2222,16 @@ The following list shows the supported values:
 <a href="" id="update-ignoremoappdownloadlimit"></a>**Update/IgnoreMOAppDownloadLimit**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2709,7 +2246,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Specifies whether to ignore the MO download limit (allow unlimited downloading) over a cellular network for apps and their updates. If lower-level limits (for example, mobile caps) are required, those limits are controlled by external policies. 
+Specifies whether to ignore the MO download limit (allow unlimited downloading) over a cellular network for apps and their updates. If lower-level limits (for example, mobile caps) are required, those limits are controlled by external policies. 
 
 > [!WARNING]
 > Setting this policy might cause devices to incur costs from MO operators.
@@ -2718,15 +2255,15 @@ Added in Windows 10, version 1703. Specifies whether to ignore the MO download 
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Do not ignore MO download limit for apps and their updates.
--   1 – Ignore MO download limit (allow unlimited downloading) for apps and their updates.
+- 0 (default) - Don't ignore MO download limit for apps and their updates.
+- 1 - Ignore MO download limit (allow unlimited downloading) for apps and their updates.
 
 <!--/SupportedValues-->
 <!--Validation-->
 To validate this policy:
 
 1.  Enable the policy and ensure the device is on a cellular network.
-2.  Run the scheduled task on your device to check for app updates in the background. For example, on a mobile device, run the following commands in TShell: 
+2.  Run the scheduled task on your device to check for app updates in the background. For example, on a device, run the following commands in TShell: 
     ```TShell
        exec-device schtasks.exe -arguments '/run /tn "\Microsoft\Windows\WindowsUpdate\Automatic App Update" /I'
     ```
@@ -2740,32 +2277,16 @@ To validate this policy:
 <a href="" id="update-ignoremoupdatedownloadlimit"></a>**Update/IgnoreMOUpdateDownloadLimit**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2780,7 +2301,7 @@ To validate this policy:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Specifies whether to ignore the MO download limit (allow unlimited downloading) over a cellular network for OS updates. If lower-level limits (for example, mobile caps) are required, those limits are controlled by external policies. 
+Specifies whether to ignore the MO download limit (allow unlimited downloading) over a cellular network for OS updates. If lower-level limits (for example, mobile caps) are required, those limits are controlled by external policies. 
 
 > [!WARNING]
 > Setting this policy might cause devices to incur costs from MO operators.
@@ -2789,15 +2310,15 @@ Added in Windows 10, version 1703. Specifies whether to ignore the MO download 
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Do not ignore MO download limit for OS updates.
--   1 – Ignore MO download limit (allow unlimited downloading) for OS updates.
+- 0 (default) - Don't ignore MO download limit for OS updates.
+- 1 - Ignore MO download limit (allow unlimited downloading) for OS updates.
 
 <!--/SupportedValues-->
 <!--Validation-->
 To validate this policy:
 
 1.  Enable the policy and ensure the device is on a cellular network.
-2.  Run the scheduled task on your device to check for app updates in the background. For example, on a mobile device, run the following commands in TShell: 
+2.  Run the scheduled task on your device to check for app updates in the background. For example, on a device, run the following commands in TShell: 
     ```TShell
        exec-device schtasks.exe -arguments '/run /tn "\Microsoft\Windows\WindowsUpdate\Automatic App Update" /I'
     ```
@@ -2811,32 +2332,16 @@ To validate this policy:
 <a href="" id="update-managepreviewbuilds"></a>**Update/ManagePreviewBuilds**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2851,24 +2356,26 @@ To validate this policy:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1709. Used to manage Windows 10 Insider Preview builds. Value type is integer.
+Used to manage Windows 10 Insider Preview builds. 
+
+Supported value type is integer.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Manage preview builds*
--   GP name: *ManagePreviewBuilds*
--   GP element: *ManagePreviewBuildsId*
--   GP path: *Windows Components/Windows Update/Windows Update for Business*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Manage preview builds*
+- GP name: *ManagePreviewBuilds*
+- GP element: *ManagePreviewBuildsId*
+- GP path: *Windows Components/Windows Update/Windows Update for Business*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 - Disable Preview builds
--   1 - Disable Preview builds once the next release is public
--   2 - Enable Preview builds
+- 0 - Disable Preview builds.
+- 1 - Disable Preview builds once the next release is public.
+- 2 - Enable Preview builds.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -2879,32 +2386,16 @@ The following list shows the supported values:
 <a href="" id="update-pausedeferrals"></a>**Update/PauseDeferrals**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2920,11 +2411,9 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use PauseDeferrals for Windows 10, version 1511 devices.
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use PauseDeferrals for Windows 10, version 1511 devices.
 
-
-Allows IT Admins to pause updates and upgrades for up to 5 weeks. Paused deferrals will be reset after 5 weeks.
-
+Allows IT Admins to pause updates and upgrades for up to five weeks. Paused deferrals will be reset after five weeks.
 
 If the "Specify intranet Microsoft update service location" policy is enabled, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
 
@@ -2933,16 +2422,16 @@ If the "Allow Telemetry" policy is enabled and the Options value is set to 0, th
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP name: *DeferUpgrade*
--   GP element: *PauseDeferralsId*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP name: *DeferUpgrade*
+- GP element: *PauseDeferralsId*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Deferrals are not paused.
--   1 – Deferrals are paused.
+- 0 (default) - Deferrals aren't paused.
+- 1 - Deferrals are paused.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -2953,32 +2442,16 @@ The following list shows the supported values:
 <a href="" id="update-pausefeatureupdates"></a>**Update/PauseFeatureUpdates**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2993,26 +2466,24 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
 
-
-Added in Windows 10, version 1607. Allows IT Admins to pause feature updates for up to 35 days. We recomment that you use the *Update/PauseFeatureUpdatesStartTime* policy if you are running Windows 10, version 1703 or later.
+Allows IT Admins to pause feature updates for up to 35 days. We recommend that you use the *Update/PauseFeatureUpdatesStartTime* policy, if you're running Windows 10, version 1703 or later.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select when Preview Builds and Feature Updates are received*
--   GP name: *DeferFeatureUpdates*
--   GP element: *PauseFeatureUpdatesId*
--   GP path: *Windows Components/Windows Update/Windows Update for Business*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Select when Preview Builds and Feature Updates are received*
+- GP name: *DeferFeatureUpdates*
+- GP element: *PauseFeatureUpdatesId*
+- GP path: *Windows Components/Windows Update/Windows Update for Business*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Feature Updates are not paused.
--   1 – Feature Updates are paused for 35 days or until value set to back to 0, whichever is sooner.
+- 0 (default) - Feature Updates aren't paused.
+- 1 - Feature Updates are paused for 35 days or until value set to back to 0, whichever is sooner.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -3023,32 +2494,16 @@ The following list shows the supported values:
 <a href="" id="update-pausefeatureupdatesstarttime"></a>**Update/PauseFeatureUpdatesStartTime**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3063,18 +2518,19 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Feature Updates. When this policy is configured, Feature Updates will be paused for 35 days from the specified start date. 
+Specifies the date and time when the IT admin wants to start pausing the Feature Updates. When this policy is configured, Feature Updates will be paused for 35 days from the specified start date. 
 
-Value type is string (yyyy-mm-dd, ex. 2018-10-28). Supported operations are Add, Get, Delete, and Replace.
+- Supported value type is string (yyyy-mm-dd, ex. 2018-10-28). 
+- Supported operations are Add, Get, Delete, and Replace.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select when Preview Builds and Feature Updates are received*
--   GP name: *DeferFeatureUpdates*
--   GP element: *PauseFeatureUpdatesStartId*
--   GP path: *Windows Components/Windows Update/Windows Update for Business*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Select when Preview Builds and Feature Updates are received*
+- GP name: *DeferFeatureUpdates*
+- GP element: *PauseFeatureUpdatesStartId*
+- GP path: *Windows Components/Windows Update/Windows Update for Business*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -3085,32 +2541,16 @@ ADMX Info:
 <a href="" id="update-pausequalityupdates"></a>**Update/PauseQualityUpdates**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3125,23 +2565,23 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1607. Allows IT Admins to pause quality updates. For those running Windows 10, version 1703 or later, we recommend that you use *Update/PauseQualityUpdatesStartTime* instead.
+Allows IT Admins to pause quality updates. For those running Windows 10, version 1703 or later, we recommend that you use *Update/PauseQualityUpdatesStartTime* instead.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select when Quality Updates are received*
--   GP name: *DeferQualityUpdates*
--   GP element: *PauseQualityUpdatesId*
--   GP path: *Windows Components/Windows Update/Windows Update for Business*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Select when Quality Updates are received*
+- GP name: *DeferQualityUpdates*
+- GP element: *PauseQualityUpdatesId*
+- GP path: *Windows Components/Windows Update/Windows Update for Business*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Quality Updates are not paused.
--   1 – Quality Updates are paused for 35 days or until value set back to 0, whichever is sooner.
+- 0 (default) - Quality Updates aren't paused.
+- 1 - Quality Updates are paused for 35 days or until value set back to 0, whichever is sooner.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -3152,32 +2592,16 @@ The following list shows the supported values:
 <a href="" id="update-pausequalityupdatesstarttime"></a>**Update/PauseQualityUpdatesStartTime**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3192,18 +2616,19 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Quality Updates. When this policy is configured, Quality Updates will be paused for 35 days from the specified start date. 
+Specifies the date and time when the IT admin wants to start pausing the Quality Updates. When this policy is configured, Quality Updates will be paused for 35 days from the specified start date. 
 
-Value type is string (yyyy-mm-dd, ex. 2018-10-28). Supported operations are Add, Get, Delete, and Replace.
+- Supported value type is string (yyyy-mm-dd, ex. 2018-10-28). 
+- Supported operations are Add, Get, Delete, and Replace.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select when Quality Updates are received*
--   GP name: *DeferQualityUpdates*
--   GP element: *PauseQualityUpdatesStartId*
--   GP path: *Windows Components/Windows Update/Windows Update for Business*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Select when Quality Updates are received*
+- GP name: *DeferQualityUpdates*
+- GP element: *PauseQualityUpdatesStartId*
+- GP path: *Windows Components/Windows Update/Windows Update for Business*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -3222,35 +2647,79 @@ This policy is deprecated. Use [Update/RequireUpdateApproval](#update-requireupd
 <hr/>
 
 <!--Policy-->
+<a href="" id="update-productversion"></a>**Update/ProductVersion**  
+
+<!--SupportedSKUs-->
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10, version 2004 and later. Enables IT administrators to specify which product they would like their device(s) to move to and/or stay on until they reach end of service or reconfigure the policy to target a new product. 
+
+If no product is specified, the device will continue receiving newer versions of the Windows product it's currently on. For details about different Windows 10 versions, see [release information](/windows/release-health/release-information).
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+- GP Friendly name: *Select the target Feature Update version*
+- GP name: *TargetReleaseVersion*
+- GP element: *ProductVersion*
+- GP path: *Windows Components/Windows Update/Windows Update for Business*
+- GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Supported value type is a string containing a Windows product. For example, "Windows 11" or "11" or "Windows 10".
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+By using this Windows Update for Business policy to upgrade devices to a new product (for example, Windows 11) you're agreeing that when applying this operating system to a device, either:
+
+1. The applicable Windows license was purchased through volume licensing, or
+
+2. You're authorized to bind your organization and are accepting on its behalf the relevant Microsoft Software License Terms to be found here: (https://www.microsoft.com/Useterms).
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="update-requiredeferupgrade"></a>**Update/RequireDeferUpgrade**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Windows SE|No|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3266,24 +2735,23 @@ This policy is deprecated. Use [Update/RequireUpdateApproval](#update-requireupd
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use RequireDeferUpgrade for Windows 10, version 1511 devices.
+> Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use RequireDeferUpgrade for Windows 10, version 1511 devices.
 
-
-Allows the IT admin to set a device to Semi-Annual Channel train.
+Allows the IT admin to set a device to General Availability Channel train.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP name: *DeferUpgrade*
--   GP element: *DeferUpgradePeriodId*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP name: *DeferUpgrade*
+- GP element: *DeferUpgradePeriodId*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – User gets upgrades from Semi-Annual Channel (Targeted).
--   1 – User gets upgrades from Semi-Annual Channel.
+- 0 (default) - User gets upgrades from General Availability Channel (Targeted).
+- 1 - User gets upgrades from General Availability Channel.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -3294,32 +2762,16 @@ The following list shows the supported values:
 <a href="" id="update-requireupdateapproval"></a>**Update/RequireUpdateApproval**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|No|
+|Windows SE|No|No|
+|Business|Yes|No|
+|Enterprise|Yes|No|
+|Education|Yes|No|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3335,10 +2787,9 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is *only* recommended for managing mobile devices. If you previously used the **Update/PhoneUpdateRestrictions** policy in previous versions of Windows, it has been deprecated. Please use this policy instead. 
+> If you previously used the **Update/PhoneUpdateRestrictions** policy in previous versions of Windows, it has been deprecated. Please use this policy instead. 
 
-
-Allows the IT admin to restrict the updates that are installed on a device to only those on an update approval list. It enables IT to accept the End User License Agreement (EULA) associated with the approved update on behalf of the end-user. EULAs are approved once an update is approved.
+Allows the IT admin to restrict the updates that are installed on a device to only those on an update approval list. It enables IT to accept the End User License Agreement (EULA) associated with the approved update on behalf of the end user. EULAs are approved once an update is approved.
 
 Supported operations are Get and Replace.
 
@@ -3346,8 +2797,8 @@ Supported operations are Get and Replace.
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not configured. The device installs all applicable updates.
--   1 – The device only installs updates that are both applicable and on the Approved Updates list. Set this policy to 1 if IT wants to control the deployment of updates on devices, such as when testing is required prior to deployment.
+- 0 - Not configured. The device installs all applicable updates.
+- 1 - The device only installs updates that are both applicable and on the Approved Updates list. Set this policy to 1 if IT wants to control the deployment of updates on devices, such as when testing is required prior to deployment.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -3358,32 +2809,16 @@ The following list shows the supported values:
 <a href="" id="update-scheduleimminentrestartwarning"></a>**Update/ScheduleImminentRestartWarning**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3398,18 +2833,18 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Allows the IT Admin to specify the period for auto-restart imminent warning notifications.
+Allows the IT Admin to specify the period for autorestart imminent warning notifications.
 
 The default value is 15 (minutes).
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure auto-restart warning notifications schedule for updates*
--   GP name: *RestartWarnRemind*
--   GP element: *RestartWarn*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Configure auto-restart warning notifications schedule for updates*
+- GP name: *RestartWarnRemind*
+- GP element: *RestartWarn*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
@@ -3424,32 +2859,16 @@ Supported values are 15, 30, or 60 (minutes).
 <a href="" id="update-schedulerestartwarning"></a>**Update/ScheduleRestartWarning**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3465,21 +2884,20 @@ Supported values are 15, 30, or 60 (minutes).
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education.
 
-
-Added in Windows 10, version 1703. Allows the IT Admin to specify the period for auto-restart warning reminder notifications.
+Allows the IT Admin to specify the period for autorestart warning reminder notifications.
 
 The default value is 4 (hours).
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure auto-restart warning notifications schedule for updates*
--   GP name: *RestartWarnRemind*
--   GP element: *RestartWarnRemind*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Configure auto-restart warning notifications schedule for updates*
+- GP name: *RestartWarnRemind*
+- GP element: *RestartWarnRemind*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
@@ -3494,32 +2912,16 @@ Supported values are 2, 4, 8, 12, or 24 (hours).
 <a href="" id="update-scheduledinstallday"></a>**Update/ScheduledInstallDay**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3536,31 +2938,31 @@ Supported values are 2, 4, 8, 12, or 24 (hours).
 <!--Description-->
 Enables the IT admin to schedule the day of the update installation.
 
-The data type is a integer.
+Supported data type is an integer.
 
 Supported operations are Add, Delete, Get, and Replace.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Automatic Updates*
--   GP name: *AutoUpdateCfg*
--   GP element: *AutoUpdateSchDay*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Configure Automatic Updates*
+- GP name: *AutoUpdateCfg*
+- GP element: *AutoUpdateSchDay*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Every day
--   1 – Sunday
--   2 – Monday
--   3 – Tuesday
--   4 – Wednesday
--   5 – Thursday
--   6 – Friday
--   7 – Saturday
+- 0 (default) - Every day
+- 1 - Sunday
+- 2 - Monday
+- 3 - Tuesday
+- 4 - Wednesday
+- 5 - Thursday
+- 6 - Friday
+- 7 - Saturday
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -3571,32 +2973,16 @@ The following list shows the supported values:
 <a href="" id="update-scheduledinstalleveryweek"></a>**Update/ScheduledInstallEveryWeek**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3611,20 +2997,23 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1709. Enables the IT admin to schedule the update installation on the every week. Value type is integer. Supported values:
-<ul>
-<li>0 - no update in the schedule</li>
-<li>1 - update is scheduled every week</li>
-</ul>
+Enables the IT admin to schedule the update installation on every week. 
+
+Supported Value type is integer. 
+
+Supported values:
+- 0 - no update in the schedule.
+- 1 - update is scheduled every week.
+
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Automatic Updates*
--   GP name: *AutoUpdateCfg*
--   GP element: *AutoUpdateSchEveryWeek*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Configure Automatic Updates*
+- GP name: *AutoUpdateCfg*
+- GP element: *AutoUpdateSchEveryWeek*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -3635,32 +3024,16 @@ ADMX Info:
 <a href="" id="update-scheduledinstallfirstweek"></a>**Update/ScheduledInstallFirstWeek**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3675,20 +3048,23 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1709. Enables the IT admin to schedule the update installation on the first week of the month. Value type is integer. Supported values:
-<ul>
-<li>0 - no update in the schedule</li>
-<li>1 - update is scheduled every first week of the month</li>
-</ul>
+Enables the IT admin to schedule the update installation on the first week of the month. 
+
+Supported value type is integer. 
+
+Supported values:
+- 0 - no update in the schedule.
+- 1 - update is scheduled every first week of the month.
+
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Automatic Updates*
--   GP name: *AutoUpdateCfg*
--   GP element: *AutoUpdateSchFirstWeek*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Configure Automatic Updates*
+- GP name: *AutoUpdateCfg*
+- GP element: *AutoUpdateSchFirstWeek*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -3699,32 +3075,16 @@ ADMX Info:
 <a href="" id="update-scheduledinstallfourthweek"></a>**Update/ScheduledInstallFourthWeek**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3739,20 +3099,23 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1709. Enables the IT admin to schedule the update installation on the fourth week of the month. Value type is integer. Supported values:
-<ul>
-<li>0 - no update in the schedule</li>
-<li>1 - update is scheduled every fourth week of the month</li>
-</ul>
+Enables the IT admin to schedule the update installation on the fourth week of the month. 
+
+Supported value type is integer. 
+
+Supported values:
+- 0 - no update in the schedule.
+- 1 - update is scheduled every fourth week of the month.
+
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Automatic Updates*
--   GP name: *AutoUpdateCfg*
--   GP element: *ScheduledInstallFourthWeek*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Configure Automatic Updates*
+- GP name: *AutoUpdateCfg*
+- GP element: *ScheduledInstallFourthWeek*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -3763,32 +3126,16 @@ ADMX Info:
 <a href="" id="update-scheduledinstallsecondweek"></a>**Update/ScheduledInstallSecondWeek**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3803,20 +3150,24 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1709. Enables the IT admin to schedule the update installation on the second week of the month. Value type is integer. Supported values:
-<ul>
-<li>0 - no update in the schedule</li>
-<li>1 - update is scheduled every second week of the month</li>
-</ul>
+Enables the IT admin to schedule the update installation on the second week of the month. 
+
+Supported vlue type is integer. 
+
+Supported values:
+
+- 0 - no update in the schedule.
+- 1 - update is scheduled every second week of the month.
+
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Automatic Updates*
--   GP name: *AutoUpdateCfg*
--   GP element: *ScheduledInstallSecondWeek*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Configure Automatic Updates*
+- GP name: *AutoUpdateCfg*
+- GP element: *ScheduledInstallSecondWeek*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -3827,32 +3178,16 @@ ADMX Info:
 <a href="" id="update-scheduledinstallthirdweek"></a>**Update/ScheduledInstallThirdWeek**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3867,20 +3202,23 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1709. Enables the IT admin to schedule the update installation on the third week of the month. Value type is integer. Supported values:
-<ul>
-<li>0 - no update in the schedule</li>
-<li>1 - update is scheduled every third week of the month</li>
-</ul>
+Enables the IT admin to schedule the update installation on the third week of the month. 
+
+Supported value type is integer. 
+
+Supported values:
+- 0 - no update in the schedule.
+- 1 - update is scheduled every third week of the month.
+
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Automatic Updates*
--   GP name: *AutoUpdateCfg*
--   GP element: *ScheduledInstallThirdWeek*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Configure Automatic Updates*
+- GP name: *AutoUpdateCfg*
+- GP element: *ScheduledInstallThirdWeek*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -3891,32 +3229,16 @@ ADMX Info:
 <a href="" id="update-scheduledinstalltime"></a>**Update/ScheduledInstallTime**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3931,13 +3253,9 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
+Enables the IT admin to schedule the time of the update installation. Note that there is a window of approximately 30 minutes to allow for higher success rates of installation.
 
-
-Enables the IT admin to schedule the time of the update installation.
-
-The data type is a integer.
+The supported data type is an integer.
 
 Supported operations are Add, Delete, Get, and Replace.
 
@@ -3948,11 +3266,11 @@ The default value is 3.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Automatic Updates*
--   GP name: *AutoUpdateCfg*
--   GP element: *AutoUpdateSchTime*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Configure Automatic Updates*
+- GP name: *AutoUpdateCfg*
+- GP element: *AutoUpdateSchTime*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -3963,32 +3281,16 @@ ADMX Info:
 <a href="" id="update-setautorestartnotificationdisable"></a>**Update/SetAutoRestartNotificationDisable**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -4003,23 +3305,23 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Allows the IT Admin to disable auto-restart notifications for update installations.
+Allows the IT Admin to disable autorestart notifications for update installations.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off auto-restart notifications for update installations*
--   GP name: *AutoRestartNotificationDisable*
--   GP element: *AutoRestartNotificationSchd*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Turn off auto-restart notifications for update installations*
+- GP name: *AutoRestartNotificationDisable*
+- GP element: *AutoRestartNotificationSchd*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Enabled
--   1 – Disabled
+- 0 (default) - Enabled
+- 1 - Disabled
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -4030,32 +3332,16 @@ The following list shows the supported values:
 <a href="" id="update-setdisablepauseuxaccess"></a>**Update/SetDisablePauseUXAccess**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -4070,15 +3356,19 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy allows the IT admin to disable the "Pause Updates" feature. When this policy is enabled, the user cannot access the "Pause updates" feature.
+This policy allows the IT admin to disable the "Pause Updates" feature. When this policy is enabled, the user can't access the "Pause updates" feature.
 
-Value type is integer. Default is 0. Supported values 0, 1.
+Supported value type is integer. 
+
+Default is 0. 
+
+Supported values 0, 1.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP name: *SetDisablePauseUXAccess*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP name: *SetDisablePauseUXAccess*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -4089,32 +3379,16 @@ ADMX Info:
 <a href="" id="update-setdisableuxwuaccess"></a>**Update/SetDisableUXWUAccess**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -4129,15 +3403,19 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy allows the IT admin to remove access to scan Windows Update. When this policy is enabled, the user cannot access the Windows Update scan, download, and install features.
+This policy allows the IT admin to remove access to scan Windows Update. When this policy is enabled, the user can't access the Windows Update scan, download, and install features.
 
-Value type is integer. Default is 0. Supported values 0, 1.
+Supported value type is integer. 
+
+Default is 0. 
+
+Supported values 0, 1.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP name: *SetDisableUXWUAccess*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP name: *SetDisableUXWUAccess*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
@@ -4148,32 +3426,16 @@ ADMX Info:
 <a href="" id="update-setedurestart"></a>**Update/SetEDURestart**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -4188,17 +3450,17 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. For devices in a cart, this policy skips all restart checks to ensure that the reboot will happen at ScheduledInstallTime.
+For devices in a cart, this policy skips all restart checks to ensure that the reboot will happen at ScheduledInstallTime.
 
-When you set this policy along with Update/ActiveHoursStart, Update/ActiveHoursEnd, and ShareCartPC, it will defer all the update processes (scan, download, install, and reboot) to a time after Active Hours. After a buffer period after ActiveHoursEnd, the device will wake up several times to complete the processes. All processes are blocked before ActiveHoursStart.
+When you set this policy along with Update/ActiveHoursStart, Update/ActiveHoursEnd, and ShareCartPC, it will defer all the update processes (scan, download, install, and reboot) to a time after Active Hours. After a buffer period, after ActiveHoursEnd, the device will wake up several times to complete the processes. All processes are blocked before ActiveHoursStart.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Update Power Policy for Cart Restarts*
--   GP name: *SetEDURestart*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Update Power Policy for Cart Restarts*
+- GP name: *SetEDURestart*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
@@ -4212,37 +3474,20 @@ The following list shows the supported values:
 
 <hr/>
 
-
 <!--Policy-->
-<a href="" id="update-setproxybehaviorforupdatedetection"></a>**Update/SetProxyBehaviorForUpdateDetection**  
+<a href="" id="update-setpolicydrivenupdatesourcefordriver"></a>**Update/SetPolicyDrivenUpdateSourceForDriverUpdates**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -4257,18 +3502,250 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10, version 1607 and later. By default, HTTP WSUS servers scan only if system proxy is configured. This policy setting allows you to configure user proxy as a fallback for detecting updates while using an HTTP based intranet server despite the vulnerabilities it presents.
+Configure this policy to specify whether to receive Windows Driver Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
 
-This policy setting does not impact those customers who have, per Microsoft recommendation, secured their WSUS server with TLS/SSL protocol, thereby using HTTPS based intranet servers to keep systems secure. That said, if a proxy is required, we recommend configuring a system proxy to ensure the highest level of security.
+If you configure this policy, also configure the scan source policies for other update types:
+- SetPolicyDrivenUpdateSourceForFeatureUpdates
+- SetPolicyDrivenUpdateSourceForQualityUpdates
+- SetPolicyDrivenUpdateSourceForOtherUpdates
+
+>[!NOTE]
+>If you have not properly configured Update/UpdateServiceUrl correctly to point to your WSUS server, this policy will have no effect. 
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select the proxy behavior for Windows Update client for detecting updates with non-TLS (HTTP) based service*
--   GP name: *Select the proxy behavior*
--   GP element: *Select the proxy behavior*
--   GP path: *Windows Components/Windows Update/Specify intranet Microsoft update service location*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Specify source service for specific classes of Windows Updates*
+- GP name: *SetPolicyDrivenUpdateSourceForDriver*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0: (Default) Detect, download, and deploy Driver from Windows Update. 
+- 1: Enabled, Detect, download, and deploy Driver from Windows Server Update Server (WSUS). 
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-setpolicydrivenupdatesourceforfeature"></a>**Update/SetPolicyDrivenUpdateSourceForFeatureUpdates**  
+
+<!--SupportedSKUs-->
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Configure this policy to specify whether to receive Windows Driver Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
+
+If you configure this policy, also configure the scan source policies for other update types:
+- SetPolicyDrivenUpdateSourceForQualityUpdates
+- SetPolicyDrivenUpdateSourceForDriverUpdates
+- SetPolicyDrivenUpdateSourceForOtherUpdates
+
+>[!NOTE]
+>If you have not properly configured Update/UpdateServiceUrl correctly to point to your WSUS server, this policy will have no effect. 
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+- GP Friendly name: *Specify source service for specific classes of Windows Updates*
+- GP name: *SetPolicyDrivenUpdateSourceForFeature*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0: (Default) Detect, download, and deploy Feature from Windows Update. 
+- 1: Enabled, Detect, download, and deploy Feature from Windows Server Update Server (WSUS). 
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-setpolicydrivenupdatesourceforother"></a>**Update/SetPolicyDrivenUpdateSourceForOtherUpdates**  
+
+<!--SupportedSKUs-->
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Configure this policy to specify whether to receive Windows Driver Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
+
+If you configure this policy, also configure the scan source policies for other update types:
+- SetPolicyDrivenUpdateSourceForFeatureUpdates
+- SetPolicyDrivenUpdateSourceForQualityUpdates
+- SetPolicyDrivenUpdateSourceForDriverUpdates
+
+>[!NOTE]
+>If you have not properly configured Update/UpdateServiceUrl correctly to point to your WSUS server, this policy will have no effect. 
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+- GP Friendly name: *Specify source service for specific classes of Windows Updates*
+- GP name: *SetPolicyDrivenUpdateSourceForOther*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0: (Default) Detect, download, and deploy Other from Windows Update.
+- 1: Enabled, Detect, download, and deploy Other from Windows Server Update Server (WSUS). 
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-setpolicydrivenupdatesourceforquality"></a>**Update/SetPolicyDrivenUpdateSourceForQualityUpdates**  
+
+<!--SupportedSKUs-->
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Configure this policy to specify whether to receive Windows Driver Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
+
+If you configure this policy, also configure the scan source policies for other update types:
+- SetPolicyDrivenUpdateSourceForFeatureUpdates
+- SetPolicyDrivenUpdateSourceForDriverUpdates
+- SetPolicyDrivenUpdateSourceForOtherUpdates
+
+>[!NOTE]
+>If you have not properly configured Update/UpdateServiceUrl correctly to point to your WSUS server, this policy will have no effect. 
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+- GP Friendly name: *Specify source service for specific classes of Windows Updates*
+- GP name: *SetPolicyDrivenUpdateSourceForQuality*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0: (Default) Detect, download, and deploy Quality from Windows Update. 
+- 1: Enabled, Detect, download, and deploy Quality from Windows Server Update Server (WSUS). 
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-setproxybehaviorforupdatedetection"></a>**Update/SetProxyBehaviorForUpdateDetection**  
+
+<!--SupportedSKUs-->
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10, version 1607 and later. By default, HTTP WSUS servers scan only if system proxy is configured. This policy setting allows you to configure user proxy as a fallback for detecting updates while using an HTTP-based intranet server despite the vulnerabilities it presents.
+
+This policy setting doesn't impact those customers who have, per Microsoft recommendation, secured their WSUS server with TLS/SSL protocol, thereby using HTTPS-based intranet servers to keep systems secure. That said, if a proxy is required, we recommend configuring a system proxy to ensure the highest level of security.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+- GP Friendly name: *Select the proxy behavior for Windows Update client for detecting updates with non-TLS (HTTP) based service*
+- GP name: *Select the proxy behavior*
+- GP element: *Select the proxy behavior*
+- GP path: *Windows Components/Windows Update/Specify intranet Microsoft update service location*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
@@ -4276,6 +3753,7 @@ The following list shows the supported values:
 
 - 0 (default) - Allow system proxy only for HTTP scans.
 - 1 - Allow user proxy to be used as a fallback if detection using system proxy fails. 
+
 > [!NOTE]
 > Configuring this policy setting to 1 exposes your environment to potential security risk and makes scans unsecure.
 
@@ -4288,32 +3766,16 @@ The following list shows the supported values:
 <a href="" id="update-targetreleaseversion"></a>**Update/TargetReleaseVersion**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -4329,18 +3791,19 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 Available in Windows 10, version 1803 and later. Enables IT administrators to specify which version they would like their device(s) to move to and/or stay on until they reach end of service or reconfigure the policy. For details about different Windows 10 versions, see [Windows 10 release information](/windows/release-health/release-information/).
+
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select the target Feature Update version*
--   GP name: *TargetReleaseVersion*
--   GP element: *TargetReleaseVersionId*
--   GP path: *Windows Components/Windows Update/Windows Update for Business*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Select the target Feature Update version*
+- GP name: *TargetReleaseVersion*
+- GP element: *TargetReleaseVersionInfo*
+- GP path: *Windows Components/Windows Update/Windows Update for Business*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Value type is a string containing Windows 10 version number. For example, 1809, 1903.
+Supported value type is a string containing Windows 10 version number. For example, 1809, 1903.
 <!--/SupportedValues-->
 <!--Example-->
 
@@ -4356,32 +3819,16 @@ Value type is a string containing Windows 10 version number. For example, 1809, 
 <a href="" id="update-updatenotificationlevel"></a>**Update/UpdateNotificationLevel**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -4400,9 +3847,9 @@ Display options for update notifications. This policy allows you to define what 
 
 Options: 
 
--  0 (default) – Use the default Windows Update notifications
--  1 – Turn off all notifications, excluding restart warnings
--  2 – Turn off all notifications, including restart warnings
+-  0 (default) - Use the default Windows Update notifications.
+-  1 - Turn off all notifications, excluding restart warnings.
+-  2 - Turn off all notifications, including restart warnings.
 
 > [!IMPORTANT]
 > If you choose not to get update notifications and also define other Group policies so that devices aren't automatically getting updates, neither you nor device users will be aware of critical security, quality, or feature updates, and your devices may be at risk.
@@ -4410,10 +3857,10 @@ Options:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Display options for update notifications*
--   GP name: *UpdateNotificationLevel*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Display options for update notifications*
+- GP name: *UpdateNotificationLevel*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
@@ -4433,32 +3880,16 @@ ADMX Info:
 <a href="" id="update-updateserviceurl"></a>**Update/UpdateServiceUrl**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -4474,27 +3905,27 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 > [!IMPORTANT]
-> Starting in Windows 10, version 1703 this policy is not supported in IoT Mobile.
+> Starting in Windows 10, version 1703 this policy isn't supported in IoT Mobile.
 
-Allows the device to check for updates from a WSUS server instead of Microsoft Update. This is useful for on-premises MDMs that need to update devices that cannot connect to the Internet.
+Allows the device to check for updates from a WSUS server instead of Microsoft Update. This setting is useful for on-premises MDMs that need to update devices that can't connect to the Internet.
 
 Supported operations are Get and Replace.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify intranet Microsoft update service location*
--   GP name: *CorpWuURL*
--   GP element: *CorpWUURL_Name*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Specify intranet Microsoft update service location*
+- GP name: *CorpWuURL*
+- GP element: *CorpWUURL_Name*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   Not configured. The device checks for updates from Microsoft Update.
--   Set to a URL, such as `http://abcd-srv:8530`. The device checks for updates from the WSUS server at the specified URL.
+- Not configured. The device checks for updates from Microsoft Update.
+- Set to a URL, such as `http://abcd-srv:8530`. The device checks for updates from the WSUS server at the specified URL.
 
 <!--/SupportedValues-->
 <!--Example-->
@@ -4525,32 +3956,16 @@ Example
 <a href="" id="update-updateserviceurlalternate"></a>**Update/UpdateServiceUrlAlternate**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -4565,41 +3980,34 @@ Example
 
 <!--/Scope-->
 <!--Description-->
-Added in the January service release of Windows 10, version 1607. Specifies an alternate intranet server to host updates from Microsoft Update. You can then use this update service to automatically update computers on your network.
+Specifies an alternate intranet server to host updates from Microsoft Update. You can then use this update service to automatically update computers on your network.
 
 This setting lets you specify a server on your network to function as an internal update service. The Automatic Updates client will search this service for updates that apply to the computers on your network.
 
-To use this setting, you must set two server name values: the server from which the Automatic Updates client detects and downloads updates, and the server to which updated workstations upload statistics. You can set both values to be the same server.  An optional server name value can be specified to configure Windows Update agent, and download updates from an alternate download server instead of WSUS Server.
+To use this setting, you must set two server name values: the server from which the Automatic Updates client detects and downloads updates, and the server to which updated workstations upload statistics. You can set both values to be the same server. An optional server name value can be specified to configure Windows Update agent, and download updates from an alternate download server instead of WSUS Server.
 
-Value type is string and the default value is an empty string, "". If the setting is not configured, and if Automatic Updates is not disabled by policy or user preference, the Automatic Updates client connects directly to the Windows Update site on the Internet.
+Supported value type is string and the default value is an empty string, "". If the setting isn't configured, and if Automatic Updates isn't disabled by policy or user preference, the Automatic Updates client connects directly to the Windows Update site on the Internet.
 
 > [!NOTE]
 > If the "Configure Automatic Updates" Group Policy is disabled, then this policy has no effect.  
-> If the "Alternate Download Server" Group Policy is not set, it will use the WSUS server by default to download updates.  
-> This policy is not supported on Windows RT. Setting this policy will not have any effect on Windows RT PCs.
+> If the "Alternate Download Server" Group Policy isn't set, it will use the WSUS server by default to download updates.  
+> This policy isn't supported on Windows RT. Setting this policy won't have any effect on Windows RT PCs.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify intranet Microsoft update service location*
--   GP name: *CorpWuURL*
--   GP element: *CorpWUContentHost_Name*
--   GP path: *Windows Components/Windows Update*
--   GP ADMX file name: *WindowsUpdate.admx*
+- GP Friendly name: *Specify intranet Microsoft update service location*
+- GP name: *CorpWuURL*
+- GP element: *CorpWUContentHost_Name*
+- GP path: *Windows Components/Windows Update*
+- GP ADMX file name: *WindowsUpdate.admx*
 
 <!--/ADMXMapped-->
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-
 <!--/Policies-->
+
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

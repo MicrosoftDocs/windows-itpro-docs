@@ -1,17 +1,12 @@
 ---
 title: Create an app to deploy with Windows 10 using Configuration Manager
 description: Microsoft Microsoft Endpoint Manager supports deploying applications as part of the Windows 10 deployment process.
-ms.assetid: 2dfb2f39-1597-4999-b4ec-b063e8a8c90c
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
-keywords: deployment, task sequence, custom, customize
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
 ms.localizationpriority: medium
-ms.mktglfcycl: deploy
-ms.sitesec: library
-audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ---
 
@@ -54,7 +49,7 @@ On **CM01**:
     * Type: Windows Installer (\*.msi file)
     * Location: \\\\CM01\\Sources$\\Software\\Adobe\\AcroRead.msi
 
-    ![The Create Application Wizard](../images/mdt-06-fig20.png "The Create Application Wizard")
+    ![The Create Application Wizard.](../images/mdt-06-fig20.png "The Create Application Wizard")
 
     The Create Application Wizard
 
@@ -65,7 +60,7 @@ On **CM01**:
   >[!NOTE]
   >Because it is not possible to reference an application deployment type in the task sequence, you should have a single deployment type for applications deployed by the task sequence. If you are deploying applications via both the task sequence and normal application deployment, and you have multiple deployment types, you should have two applications of the same software. In this section, you add the "OSD Install" suffix to applications that are deployed via the task sequence. If using packages, you can still reference both package and program in the task sequence.
   
-  ![Add the OSD Install suffix to the application name](../images/mdt-06-fig21.png "Add the OSD Install suffix to the application name")
+  ![Add the OSD Install suffix to the application name.](../images/mdt-06-fig21.png "Add the OSD Install suffix to the application name")
   
   Add the "OSD Install" suffix to the application name
 

@@ -1,18 +1,14 @@
 ---
 title: Switch to Windows 10 Pro/Enterprise from S mode
-ms.reviewer: 
-manager: laurawi
-ms.audience: itpro
-author: greg-lindsay
 description: Overview of Windows 10 Pro/Enterprise in S mode. S mode switch options are also outlined in this document. Switching out of S mode is optional.
-keywords: Windows 10 S switch, S mode Switch, Switch in S mode, s mode switch, Windows 10 S, S-mode, system requirements, Overview, Windows 10 Pro in S mode, Windows 10 Pro in S mode
-ms.mktglfcycl: deploy
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.localizationpriority: medium
 ms.prod: w10
-ms.sitesec: library
-ms.pagetype: deploy
-audience: itpro
-ms.collection: M365-modern-desktop
+ms.collection:
+  - M365-modern-desktop
+  - highpri
 ms.topic: article
 ---
 
@@ -26,7 +22,7 @@ A number of other transformations are possible depending on which version and ed
 
 
 
-| If a device is running this version of Windows 10 | and this edition of Windows 10       | then you can switch or convert it to this edition of Windows 10 by these methods: |                               |                                            |
+| If a device is running this version of Windows 10 | and this edition of Windows 10       | then you can switch or convert it to this edition of Windows 10 by these methods: |             &nbsp;                         | &nbsp;|
 |-------------|---------------------|-----------------------------------|-------------------------------|--------------------------------------------|
 |             |                     | **Store for Education** (switch/convert all devices in your tenant)           | **Microsoft Store** (switch/convert one device at a time)          | **Intune** (switch/convert any number of devices selected by admin)                                |
 | **Windows 10, version 1709**     | Pro in S mode | Pro EDU                           | Pro                           | Not by this method                                        |

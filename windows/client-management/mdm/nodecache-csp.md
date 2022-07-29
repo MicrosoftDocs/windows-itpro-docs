@@ -1,19 +1,28 @@
 ---
 title: NodeCache CSP
 description: Use the NodeCache configuration service provider (CSP) to synchronize, monitor, and manage the client cache.
-ms.assetid: b4dd2b0d-79ef-42ac-ab5b-ee07b3097876
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 06/26/2017
 ---
 
 # NodeCache CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 The NodeCache configuration service provider is used to manage the client cache. This configuration service provider is to be used only by enterprise management servers. It provides a level of abstraction that decouples the management of the node list from a specific backing store. It synchronizes the client cache with the server side cache. It also provides an API for monitoring device-side cache changes.
 
@@ -25,9 +34,9 @@ application/x-nodemon-sha256
 </type>
 ```
 
-NodeCache will hash the values and compare with a hash value that was sent down by the server. This supports checking a parent node and its children recursively.
+NodeCache will hash the values and compare with a hash value that was sent down by the server. This process supports checking a parent node and its children recursively.
 
-The following shows the NodeCache configuration service provider in tree format.
+The following example shows the NodeCache configuration service provider in tree format.
 ```
 ./User/Vendor/MSFT
 NodeCache
@@ -69,10 +78,10 @@ NodeCache
 ----------------AutoSetExpectedValue
 ```
 <a href="" id="--device-vendor-msft"></a>**./Device/Vendor/MSFT and ./User/Vendor/MSFT**  
-Required. The root node for the NodeCache object. Supported operation is Get. This configuration service provider is used for enterprise device management only. This is a predefined MIME type to identify this managed object in OMA DM syntax.
+Required. The root node for the NodeCache object. Supported operation is Get. This configuration service provider is used for enterprise device management only. This parameter's value is a predefined MIME type to identify this managed object in OMA DM syntax.
 
 <a href="" id="providerid"></a>***ProviderID***  
-Optional. Group settings per DM server. Each group of settings is distinguished by the server’s Provider ID. It should be the same DM server **PROVIDER-ID** value that was supplied through the [w7 APPLICATION configuration service provider](w7-application-csp.md) XML during the enrollment process. Only one enterprise management server is supported. That is, there should be only one *ProviderID* node under **NodeCache**. Scope is dynamic.
+Optional. Group settings per DM server. Each group of settings is distinguished by the server’s Provider ID. It should be the same DM server **PROVIDER-ID** value that was supplied through the [w7 APPLICATION configuration service provider](w7-application-csp.md) XML during the enrollment process. Only one enterprise management server is supported. That is, there should be only one **ProviderID** node under **NodeCache**. Scope is dynamic.
 
 Supported operations are Get, Add, and Delete.
 
@@ -82,14 +91,14 @@ Optional. Character string representing the cache version set by the server. Sco
 Data type is string. Supported operations are Get, Add, and Replace.
 
 <a href="" id="providerid-changednodes"></a>***ProviderID*/ChangedNodes**  
-Optional. List of nodes whose values do not match their expected values as specified in **/*NodeID*/ExpectedValue**. Scope is dynamic.
+Optional. List of nodes whose values don't match their expected values as specified in **/*NodeID*/ExpectedValue**. Scope is dynamic.
 
 Data type is string. Supported operation is Get.
 
 <a href="" id="providerid-changednodesdata"></a>***ProviderID*/ChangedNodesData**  
-Added in Windows 10, version 1703. Optional. XML containing nodes whose values do not match their expected values as specified in /NodeID/ExpectedValue.
+Added in Windows 10, version 1703. Optional. XML containing nodes whose values don't match their expected values as specified in /NodeID/ExpectedValue.
 
-Suppported operation is Get.
+Supported operation is Get.
 
 <a href="" id="providerid-nodes"></a>***ProviderID*/Nodes**  
 Required. Root node for cached nodes. Scope is dynamic.
@@ -107,7 +116,7 @@ Required. This node's value is a complete OMA DM node URI. It can specify either
 Data type is string. Supported operations are Get, Add, and Delete.
 
 <a href="" id="-nodeid-expectedvalue"></a>**/*NodeID*/ExpectedValue**  
-Required. This is the value that the server expects to be on the device. When the configuration service provider initiates a session, it checks the expected value against the node's actual value. Scope is dynamic. Supported values are string and x-nodemon-nonexistent.
+Required. The server expects this value to be on the device. When the configuration service provider initiates a session, it checks the expected value against the node's actual value. Scope is dynamic. Supported values are string and x-nodemon-nonexistent.
 
 Supported operations are Get, Add, and Delete.
 
@@ -129,7 +138,7 @@ Here's an example for setting the ExpectedValue to nonexistent.
 ```
 
 <a href="" id="-nodeid-autosetexpectedvalue"></a>**/*NodeID*/AutoSetExpectedValue**  
-Added in Windows 10, version 1703. Required. This automatically sets the value on the device to match the actual value of the node. The node is specified in NodeURI.
+Added in Windows 10, version 1703. Required. This parameter's value automatically sets the value on the device to match the actual value of the node. The node is specified in NodeURI.
 
 Supported operations are Add, Get, and Delete.
 
@@ -166,7 +175,7 @@ Supported operations are Add, Get, and Delete.
 
     1.  If a value already exists in the server-side cache, retrieve the value from the server-side cache instead of going to the device.
 
-    2.  If a value does not exist in the server-side cache, do the following:
+    2.  If a value doesn't exist in the server-side cache, do the following tasks:
 
         1.  Create a new entry with a unique *NodeID* in the server-side cache.
 
@@ -370,12 +379,12 @@ For AutoSetExpectedValue, a Replace operation with empty data will query the ./D
 
 A Get operation on ./Vendor/MSFT/NodeCache/MDM%20SyncML%20Server/Nodes/20/ExpectedValue returns what the Device Name was when the AutoSet was called.
 
-A Get operation on the ChangedNodesData returns an encoded XML. Here is example:
+A Get operation on the ChangedNodesData returns an encoded XML. Here's an example:
 
 ```xml
 <Nodes><Node Id="10" Uri=""></Node><Node Id="20" Uri="./DevDetail/Ext/Microsoft/DeviceName">U09NRU5FV1ZBTFVF</Node></Nodes>
 ```
-It represents this:
+It represents this example:
 
 ```xml
 <Nodes>
@@ -383,10 +392,11 @@ It represents this:
     <Node Id="20" Uri="./DevDetail/Ext/Microsoft/DeviceName">U09NRU5FV1ZBTFVF</Node>
 </Nodes>
 ```
-Id is the node ID that was added by the MDM server, and Uri is the path that the node is tracking.
-If a Uri is not set, the node will always be reported as changed, as in Node id 10.
 
-The value inside of the node tag is the actual value returned by the Uri, which means that for Node Id 20 the DeviceName did not match what was previously expected, and the device name is now U09NRU5FV1ZBTFVF instead of what it was previously.
+Id is the node ID that was added by the MDM server, and Uri is the path that the node is tracking.
+If a Uri is not set, the node will always be reported as changed, as in Node ID 10.
+
+The value inside of the node tag is the actual value returned by the Uri, which means that for Node ID 20 the DeviceName did not match what was previously expected, and the device name is now U09NRU5FV1ZBTFVF instead of what it was previously.
 
 
 ## Related topics

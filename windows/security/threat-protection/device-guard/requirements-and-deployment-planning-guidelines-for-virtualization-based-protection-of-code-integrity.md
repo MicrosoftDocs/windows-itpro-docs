@@ -1,6 +1,6 @@
 ---
 title: Deployment guidelines for Windows Defender Device Guard (Windows 10)
-description: Plan your deployment of Windows Defender Device Guard. Learn about hardware requirements, deployment approaches, code signing and code integrity policies.
+description: Plan your deployment of Hypervisor-Protected Code Integrity (aka Memory Integrity). Learn about hardware requirements, deployment approaches, code signing and code integrity policies.
 keywords: virtualization, security, malware
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -13,7 +13,7 @@ ms.topic: conceptual
 ms.date: 10/20/2017
 ms.reviewer: 
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Baseline protections and additional qualifications for virtualization-based protection of code integrity
@@ -21,14 +21,14 @@ ms.technology: mde
 **Applies to** 
 - Windows 10
 
-Computers must meet certain hardware, firmware, and software requirements in order to take advantage of all of the virtualization-based security (VBS) features in [Windows Defender Device Guard](../device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md). Computers lacking these requirements can still be protected by Windows Defender Application Control (WDAC) policies—the difference is that those computers will not be as hardened against certain threats.
+Computers must meet certain hardware, firmware, and software requirements in order to take advantage of Hypervisor-Protected Code Integrity (HVCI), a  virtualization-based security (VBS) feature in Windows. HVCI is referred to as Memory Integrity under the Core Isolation section of the Windows security settings. Computers lacking these requirements can still be protected by Windows Defender Application Control (WDAC) policies—the difference is that those computers will not be as hardened against certain threats.
 
 For example, hardware that includes CPU virtualization extensions and SLAT will be hardened against malware that attempts to gain access to the kernel, but without protected BIOS options such as “Boot only from internal hard drive,” the computer could be booted (by a malicious person who has physical access) into an operating system on bootable media.
 
 > [!WARNING]
 >  Virtualization-based protection of code integrity may be incompatible with some devices and applications. We strongly recommend testing this configuration in your lab before enabling virtualization-based protection of code integrity on production systems. Failure to do so may result in unexpected failures up to and including data loss or a blue screen error (also called a stop error).
 
-The following tables provide more information about the hardware, firmware, and software required for deployment of various Windows Defender Device Guard features. The tables describe baseline protections, plus protections for improved security that are associated with hardware and firmware options available in 2015, 2016, and 2017.
+The following tables provide more information about the hardware, firmware, and software required for deployment of WDAC and HVCI. The tables describe baseline protections, plus protections for improved security that are associated with hardware and firmware options available in 2015, 2016, and 2017.
 
 > [!NOTE]
 > Beginning with Windows 10, version 1607, Trusted Platform Module (TPM 2.0) must be enabled by default on new computers.
@@ -42,9 +42,9 @@ The following tables provide more information about the hardware, firmware, and 
 | Firmware: **UEFI firmware version 2.3.1.c or higher with UEFI Secure Boot** | See the System.Fundamentals.Firmware.UEFISecureBoot requirement in the [Windows Hardware Compatibility Specifications for Windows 10, version 1809 and Windows Server 2019 - Systems download](https://go.microsoft.com/fwlink/?linkid=2027110). You can find previous versions of the Windows Hardware Compatibility Program Specifications and Policies [here](/windows-hardware/design/compatibility/whcp-specifications-policies). | UEFI Secure Boot helps ensure that the device boots only authorized code. This can prevent boot kits and root kits from installing and persisting across reboots.  |
 | Firmware: **Secure firmware update process**      | UEFI firmware must support secure firmware update found under the System.Fundamentals.Firmware.UEFISecureBoot requirement in the [Windows Hardware Compatibility Specifications for Windows 10, version 1809 and Windows Server 2019 - Systems download](https://go.microsoft.com/fwlink/?linkid=2027110). You can find previous versions of the Windows Hardware Compatibility Program Specifications and Policies [here](/windows-hardware/design/compatibility/whcp-specifications-policies).  | UEFI firmware just like software can have security vulnerabilities that, when found, need to be patched through firmware updates. Patching helps prevent root kits from getting installed. |
 | Software: **HVCI compatible drivers**       | See the Filter.Driver.DeviceGuard.DriverCompatibility requirement in the [Windows Hardware Compatibility Specifications for Windows 10, version 1809 and Windows Server 2019 - Filter driver download](https://go.microsoft.com/fwlink/?linkid=2027110). You can find previous versions of the Windows Hardware Compatibility Program Specifications and Policies [here](/windows-hardware/design/compatibility/whcp-specifications-policies). | [HVCI Compatible](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10/) drivers help ensure that VBS can maintain appropriate memory permissions. This increases resistance to bypassing vulnerable kernel drivers and helps ensure that malware cannot run in kernel. Only code verified through code integrity can run in kernel mode.  |
-| Software: Qualified **Windows operating system**  | Windows 10 Enterprise, Windows 10 Pro, Windows 10 Education, Windows Server 2016, or Windows 10 IoT Enterprise<br><blockquote><p><b>Important:</b><br> Windows Server 2016 running as a domain controller does not support Windows Defender Credential Guard. Only virtualization-based protection of code integrity is supported in this configuration.</p></blockquote> | Support for VBS and for management features that simplify configuration of Windows Defender Device Guard. |
+| Software: Qualified **Windows operating system**  | Windows 10 Enterprise, Windows 10 Pro, Windows 10 Education, Windows Server 2016, or Windows 10 IoT Enterprise<br><blockquote><p><b>Important:</b><br> Windows Server 2016 running as a domain controller does not support Windows Defender Credential Guard. Only virtualization-based protection of code integrity is supported in this configuration.</p></blockquote> | Support for VBS and for management features. |
 
-> **Important**&nbsp;&nbsp;The following tables list additional qualifications for improved security. You can use Windows Defender Device Guard with hardware, firmware, and software that support baseline protections, even if they do not support protections for improved security. However, we strongly recommend meeting these additional qualifications to significantly strengthen the level of security that Windows Defender Device Guard can provide.
+> **Important**&nbsp;&nbsp;The following tables list additional qualifications for improved security. You can use WDAC and HVCI with hardware, firmware, and software that support baseline protections, even if they do not support protections for improved security. However, we strongly recommend meeting these additional qualifications to significantly strengthen the level of security that WDAC and HVCI can provide.
 
 ## Additional qualifications for improved security
 

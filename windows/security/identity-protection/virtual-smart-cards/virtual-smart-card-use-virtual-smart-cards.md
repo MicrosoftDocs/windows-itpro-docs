@@ -1,11 +1,7 @@
 ---
 title: Use Virtual Smart Cards (Windows 10)
 description: This topic for the IT professional describes requirements for virtual smart cards and provides information about how to use and manage them.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
+ms.prod: m365-security
 author: dansimp
 ms.author: dansimp
 manager: dansimp
@@ -74,7 +70,7 @@ For more information about these Windows APIs, see:
 
 To help users visually distinguish a Trusted Platform Module (TPM)-based virtual smart card from physical smart cards, the virtual smart card has a different icon. The following icon is displayed during sign in, and on other screens that require the user to enter the PIN for a virtual smart card.
 
-![Icon for a virtual smart card](images/vsc-virtual-smart-card-icon.png)
+![Icon for a virtual smart card.](images/vsc-virtual-smart-card-icon.png)
 
 A TPM-based virtual smart card is labeled **Security Device** in the user interface.
 

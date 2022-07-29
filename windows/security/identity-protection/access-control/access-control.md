@@ -1,19 +1,16 @@
 ---
 title: Access Control Overview (Windows 10)
 description: Access Control Overview
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
+ms.prod: m365-security
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-ms.collection: M365-identity-device-management
+ms.collection:
+  - M365-identity-device-management
+  - highpri
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/18/2017
-ms.reviewer: 
 ---
 
 # Access Control Overview
@@ -130,7 +127,7 @@ For more information about user rights, see [User Rights Assignment](/windows/de
 
 With administrator's rights, you can audit users' successful or failed access to objects. You can select which object access to audit by using the access control user interface, but first you must enable the audit policy by selecting **Audit object access** under **Local Policies** in **Local Security Settings**. You can then view these security-related events in the Security log in Event Viewer.
 
-For more information about auditing, see [Security Auditing Overview](/windows/device-security/auditing/security-auditing-overview).
+For more information about auditing, see [Security Auditing Overview](../../threat-protection/auditing/security-auditing-overview.md).
 
 ## See also
 

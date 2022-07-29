@@ -17,6 +17,14 @@ manager: dansimp
 # What's new in Set up School PCs
 Learn what’s new with the Set up School PCs app each week. Find out about new app features and functionality, see updated screenshots, and find information about past releases.   
 
+## Week of July 25, 2022
+
+### Reimage option for Windows 11 SE  
+Set up School PCs has added an option to reimage your Windows SE devices during the creation of a provisioning package. Previously, the process to reimage a device was specific to the OEM and required technical knowledge. The new reimaging feature in SUSPCs provides a unified way for all OEMs, using a simple and easy solution. Now you can plug in your USB stick with a Windows 11 SE image and a provisioning package on it, and your device will be reimaged before the provisioning package is installed on that device.  
+
+Note: If after you have reimaged the device, you notice there are missing drivers, the IT admin should manually add those drivers to the image. The SUSPC reimaging tool has been tested on Surface SE devices, but since there are a variety of SE devices, the SUSPC reimage tool has not been tested on all SE devices. Contact your OEM to learn more about the necessary drivers.  
+
+The option to reimage by getting the image from an OEM is still viable. 
 
 ## Week of August 24, 2020
 
@@ -34,7 +42,7 @@ You can now give devices running Windows 10, version 2004 and later a name that'
 ### Resumed support for Windows 10, version 1903 and later   
 The previously mentioned provisioning problem was resolved, so the Set up School PCs app once again supports Windows 10, version 1903 and later. The Windows 10 settings that were removed are now back in the app. 
 
-### Device rename made optional for Azure AD joined devices  
+### Device rename made optional for Azure AD-joined devices  
 When you set up your Azure AD join devices in the app, you no longer need to rename your devices. You can keep existing device names.  
 
 ## Week of May 23, 2019   
@@ -42,7 +50,7 @@ When you set up your Azure AD join devices in the app, you no longer need to ren
 ### Suspended support for Windows 10, version 1903 and later
 Due to a provisioning problem, Set up School PCs has temporarily stopped support for Windows 10, version 1903 and later. All settings in the app that were for Windows 10, version 1903 and later have been removed. When the problem is resolved, support will resume again.  
 
-### Mandatory device rename for Azure AD joined devices
+### Mandatory device rename for Azure AD-joined devices
 If you configure Azure AD Join, you're now required to rename your devices during setup. You can't keep existing device names.    
 
 ## Week of April 15, 2019  

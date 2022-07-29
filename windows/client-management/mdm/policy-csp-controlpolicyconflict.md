@@ -32,33 +32,25 @@ manager: dansimp
 <!--Policy-->
 <a href="" id="controlpolicyconflict-mdmwinsovergp"></a>**ControlPolicyConflict/MDMWinsOverGP**  
 
+> [!NOTE]
+> This setting doesn't apply to the following types of group policies:
+>
+> - If they don't map to an MDM policy. For example, firewall policies and account lockout policies.
+> - If they aren't defined by an ADMX. For example, Password policy - minimum password age.
+> - If they're in the Windows Update category.
+> - If they have list entries. For example, the Microsoft Edge CookiesAllowedForUrls policy.
+
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -73,12 +65,13 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1803. This policy allows the IT admin to control which policy will be used whenever both the MDM policy and its equivalent Group Policy (GP) are set on the device.
+This policy allows the IT admin to control which policy will be used whenever both the MDM policy and its equivalent Group Policy (GP) are set on the device.
 
 > [!NOTE]
 > MDMWinsOverGP only applies to policies in Policy CSP. MDM policies win over Group Policies where applicable; not all Group Policies are available via MDM or CSP. It does not apply to other MDM settings with equivalent GP settings that are defined in other CSPs.
 
-This policy is used to ensure that MDM policy wins over GP when policy is configured on MDM channel. The default value is 0. The MDM policies in Policy CSP will behave as described if this policy value is set 1.
+This policy is used to ensure that MDM policy wins over GP when policy is configured on MDM channel. 
+The default value is 0. The MDM policies in Policy CSP will behave as described if this policy value is set 1.
 
 > [!NOTE]
 > This policy doesn't support the Delete command and doesn’t support setting the value to 0 again after it was previously set to 1. Windows 10 version 1809 will support using the Delete command to set the value to 0 again, if it was previously set to 1.
@@ -88,9 +81,10 @@ The following list shows the supported values:
 - 0 (default)
 - 1 - The MDM policy is used and the GP policy is blocked.
 
-The policy should be set at every sync to ensure the device removes any settings that conflict with MDM just as it does on the very first set of the policy. This ensures that:
+The policy should be set at every sync to ensure the device removes any settings that conflict with MDM just as it does on the very first set of the policy. 
+This ensures that:
 
--  GP settings that correspond to MDM applied settings are not conflicting 
+-  GP settings that correspond to MDM applied settings aren't conflicting 
 -  The current Policy Manager policies are refreshed from what MDM has set 
 -  Any values set by scripts/user outside of GP that conflict with MDM are removed
 
@@ -117,15 +111,6 @@ The following list shows the supported values:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->

@@ -14,14 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
-ms.technology: mde
+ms.date: 09/09/2021
+ms.technology: windows-sec
 ---
 
 # Security auditing
 
-**Applies to**
--   Windows 10
 
 Topics in this section are for IT professionals and describes the security auditing features in Windows and how your organization can benefit from using these technologies to enhance the security and manageability of your network.
 

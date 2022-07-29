@@ -1,13 +1,12 @@
 ---
-title: Deploy Windows 10 updates with Configuration Manager (Windows 10)
-description: Deploy Windows 10 updates with Configuration Manager
+title: Deploy Windows client updates with Configuration Manager
+description: Deploy Windows client updates with Configuration Manager
 ms.prod: w10
-ms.mktglfcycl: manage
-author: jaimeo
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: aaroncz
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.topic: article
 ---
 
@@ -16,5 +15,6 @@ ms.topic: article
 **Applies to**
 
 - Windows 10
+- Windows 11
 
 See the Microsoft Endpoint Manager [documentation](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service) for details about using Configuration Manager to deploy and manage Windows 10 updates.

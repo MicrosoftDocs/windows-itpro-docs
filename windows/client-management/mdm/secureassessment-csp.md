@@ -1,22 +1,32 @@
 ---
 title: SecureAssessment CSP
 description: Learn how the SecureAssessment configuration service provider (CSP) is used to provide configuration information for the secure assessment browser.
-ms.assetid: 6808BE4B-961E-4638-BF15-FD7841D1C00A
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 06/26/2017
 ---
 
 # SecureAssessment CSP
 
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 The SecureAssessment configuration service provider is used to provide configuration information for the secure assessment browser.
 
-The following shows the SecureAssessment configuration service provider management objects in tree format as used by Open Mobile Alliance Device Management (OMA DM), OMA Client Provisioning, and Enterprise DM.
+The following example shows the SecureAssessment configuration service provider management objects in tree format as used by Open Mobile Alliance Device Management (OMA DM), OMA Client Provisioning, and Enterprise DM.
 ```
 ./Vendor/MSFT
 SecureAssessment
@@ -29,7 +39,7 @@ The root node for the SecureAssessment configuration service provider.
 The supported operation is Get.
 
 <a href="" id="launchuri"></a>**LaunchURI**  
-URI Link to an assessment that's automatically loaded when the secure assessment browser is launched.
+URI link to an assessment that's automatically loaded when the secure assessment browser is launched.
 
 The supported operations are Add, Delete, Get, and Replace.
 
@@ -37,7 +47,7 @@ The supported operations are Add, Delete, Get, and Replace.
 The user name of the test taking account.
 
 - To specify a domain account, use domain\\user.
-- To specify an AAD account, use username@tenant.com.
+- To specify an Azure Active Directory account, use username@tenant.com.
 - To specify a local account, use the username.
 
 The supported operations are Add, Delete, Get, and Replace.

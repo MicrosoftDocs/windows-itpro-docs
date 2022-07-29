@@ -1,24 +1,20 @@
 ---
-title: Smart Card Events (Windows 10)
+title: Smart Card Events (Windows)
 description: This topic for the IT professional and smart card developer describes events that are related to smart card deployment and development.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
+ms.prod: m365-security
 author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 04/19/2017
+ms.date: 09/24/2021
 ms.reviewer: 
 ---
 
 # Smart Card Events
 
-Applies To: Windows 10, Windows Server 2016
+Applies To: Windows 10, Windows 11, Windows Server 2016 and above
 
 This topic for the IT professional and smart card developer describes events that are related to smart card deployment and development.
 

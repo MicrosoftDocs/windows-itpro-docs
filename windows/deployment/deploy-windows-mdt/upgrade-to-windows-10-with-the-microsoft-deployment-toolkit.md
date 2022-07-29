@@ -1,18 +1,12 @@
 ---
 title: Perform an in-place upgrade to Windows 10 with MDT (Windows 10)
 description: The simplest path to upgrade PCs that are currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade.
-ms.assetid: B8993151-3C1E-4F22-93F4-2C5F2771A460
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
-keywords: upgrade, update, task sequence, deploy
+manager: dougeby
+ms.author: aaroncz
 ms.prod: w10
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.sitesec: library
-ms.pagetype: mdt
-audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ---
 
@@ -34,7 +28,7 @@ Three computers are used in this topic: DC01, MDT01, and PC0002.
 - MDT01 is a domain member server 
 - PC0002 is a domain member computer running Windows 7 SP1, targeted for the Windows 10 upgrade
 
- ![computers](../images/mdt-upgrade.png)
+ ![computers.](../images/mdt-upgrade.png)
 
  The computers used in this topic.
 
@@ -96,15 +90,15 @@ On **PC0002**:
 4. On the **Ready** tab, click **Begin** to start the task sequence.
    When the task sequence begins, it automatically initiates the in-place upgrade process by invoking the Windows setup program (Setup.exe) with the necessary command-line parameters to perform an automated upgrade, which preserves all data, settings, apps, and drivers.
 
-![upgrade1](../images/upgrademdt-fig5-winupgrade.png)
+![upgrade1.](../images/upgrademdt-fig5-winupgrade.png)
 
 <br>
 
-![upgrade2](../images/mdt-upgrade-proc.png)
+![upgrade2.](../images/mdt-upgrade-proc.png)
 
 <br>
 
-![upgrade3](../images/mdt-post-upg.png)
+![upgrade3.](../images/mdt-post-upg.png)
 
 After the task sequence completes, the computer will be fully upgraded to Windows 10.
 

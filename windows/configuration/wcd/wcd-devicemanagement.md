@@ -2,15 +2,13 @@
 title: DeviceManagement (Windows 10)
 description: This section describes the DeviceManagement setting that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.topic: article
 ms.date: 04/30/2018
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ---
 
 # DeviceManagement (Windows Configuration Designer reference)
@@ -19,12 +17,12 @@ Use to configure device management settings.
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [Accounts](#accounts) | X  | X | X |  |  |
-| [PGList](#pglist) | X  | X | X |  |  |
-| [Policies](#policies) | X  | X | X |  |  |
-| [TrustedProvisioningSource](#trustedprovisioningsource) | X  | X | X |  |  |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| [Accounts](#accounts) | ✔️  | ✔️ |  |  |
+| [PGList](#pglist) | ✔️  | ✔️ |  |  |
+| [Policies](#policies) | ✔️  | ✔️ |  |  |
+| [TrustedProvisioningSource](#trustedprovisioningsource) | ✔️  | ✔️ |  |  |
 
 ## Accounts
 
@@ -45,7 +43,7 @@ Use to configure device management settings.
 | DisableOnRoaming | Specify whether the client will connect while cellular roaming |
 | InitialBackOffTime | Specify the initial amount of time (in milliseconds) that the DM client waits before attempting a connection retry  |
 | InitiateSession | Specify whether a session should be started with the MDM server when the account is provisioned |
-| MaxBackOffTime | Specify the maximum number of milliseconds to wait before attemption a connection retry |
+| MaxBackOffTime | Specify the maximum number of milliseconds to wait before attempting a connection retry |
 | Name | Enter a display name for the management server  |
 | Port | Enter the OMA DM server port |
 | PrefConRef | Enter a URI to NAP management object or a connection GUID used by the device Connection Manager |

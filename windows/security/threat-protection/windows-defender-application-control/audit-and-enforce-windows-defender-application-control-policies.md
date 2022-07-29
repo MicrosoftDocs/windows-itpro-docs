@@ -1,5 +1,5 @@
 ---
-title: Use audit events to create then enforce WDAC policy rules (Windows 10)
+title: Use audit events to create then enforce WDAC policy rules (Windows)
 description: Learn how audits allow admins to discover apps, binaries, and scripts that should be added to a WDAC policy, then learn how to switch that WDAC policy from audit to enforced mode.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -15,17 +15,21 @@ ms.reviewer: jogeurte
 ms.author: dansimp
 manager: dansimp
 ms.date: 05/03/2021
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Use audit events to create WDAC policy rules and Convert **base** policy from audits to enforced
 
 **Applies to:**
 
-- Windows 10
-- Windows Server 2016 and above
+-   Windows 10
+-   Windows 11
+-   Windows Server 2016 and above
 
-Running Application Control in audit mode lets you discover applications, binaries, and scripts that are missing from your WDAC policy but should be included.
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Application Control feature availability](feature-availability.md).
+
+Running Application Control in audit mode lets you discover applications, binaries, and scripts that are missing from your Windows Defender Application Control policy (WDAC) but should be included.
 
 While a WDAC policy is running in audit mode, any binary that runs but would have been denied is logged in the **Applications and Services Logs\\Microsoft\\Windows\\CodeIntegrity\\Operational** event log. Script and MSI are logged in the **Applications and Services Logs\\Microsoft\\Windows\\AppLocker\\MSI and Script** event log. These events can be used to generate a new WDAC policy that can be merged with the original Base policy or deployed as a separate Supplemental policy, if allowed.
 
@@ -42,7 +46,7 @@ To familiarize yourself with creating WDAC rules from audit events, follow these
 
    **Figure 1. Exceptions to the deployed WDAC policy** <br>
 
-   ![Event showing exception to WDAC policy](images/dg-fig23-exceptionstocode.png)
+   ![Event showing exception to WDAC policy.](images/dg-fig23-exceptionstocode.png)
 
 3. In an elevated PowerShell session, run the following commands to initialize variables used by this procedure. This procedure builds upon the **Lamna_FullyManagedClients_Audit.xml** policy introduced in [Create a WDAC policy for fully managed devices](create-wdac-policy-for-fully-managed-devices.md) and will produce a new policy called **EventsPolicy.xml**.
 
@@ -77,7 +81,7 @@ To familiarize yourself with creating WDAC rules from audit events, follow these
 
 ## Convert WDAC **BASE** policy from audit to enforced
 
-As described in [common WDAC deployment scenarios](types-of-devices.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
+As described in [common Windows Defender Application Control deployment scenarios](types-of-devices.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
 
 **Alice Pena** is the IT team lead responsible for Lamna's WDAC rollout.
 

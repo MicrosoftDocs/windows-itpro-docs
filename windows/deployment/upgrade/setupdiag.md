@@ -1,38 +1,33 @@
 ---
 title: SetupDiag
-ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 description: SetupDiag works by examining Windows Setup log files. This article shows how to use the SetupDiag tool to diagnose Windows Setup errors.
-keywords: deploy, troubleshoot, windows, 10, upgrade, update, setup, diagnose
 ms.custom: seo-marvel-apr2020
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: deploy
-audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
 ms.topic: article
+ms.collection: highpri
 ---
 
 # SetupDiag
 
 **Applies to**
--   Windows 10
+-   Windows 10
 
 >[!NOTE]
 >This is a 300 level topic (moderate advanced).<br>
 >See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.<br>
 
-&nbsp;[![Download SetupDiag](../images/download.png)](https://go.microsoft.com/fwlink/?linkid=870142)
+&nbsp;[![Download SetupDiag.](../images/download.png)](https://go.microsoft.com/fwlink/?linkid=870142)
 
 ## About SetupDiag
 
-<I>Current downloadable version of SetupDiag: 1.6.2107.27002</I>
->Always be sure to run the most recent version of SetupDiag, so that can access new functionality and fixes to known issues.
+<I>Current downloadable version of SetupDiag: 1.6.2107.27002.</I> 
+> Always be sure to run the most recent version of SetupDiag, so that can access new functionality and fixes to known issues.
 
-SetupDiag is a standalone diagnostic tool that can be used to obtain details about why a Windows 10 upgrade was unsuccessful. 
+SetupDiag is a diagnostic tool that can be used to obtain details about why a Windows 10 upgrade was unsuccessful. 
 
 SetupDiag works by examining Windows Setup log files. It attempts to parse these log files to determine the root cause of a failure to update or upgrade the computer to Windows 10. SetupDiag can be run on the computer that failed to update, or you can export logs from the computer to another location and run SetupDiag in offline mode.
 
@@ -298,7 +293,7 @@ Each rule name and its associated unique rule identifier are listed with a descr
 39. WimApplyExtractFailure – 746879E9-C9C5-488C-8D4B-0C811FF3A9A8
     - Matches a wim apply failure during wim extraction phases of setup.  Will output the extension, path and error code.
 40. UpdateAgentExpanderFailure – 66E496B3-7D19-47FA-B19B-4040B9FD17E2
-    - Matches DPX expander failures in the down-level phase of update from WU.  Will output the package name, function, expression and error code.
+    - Matches DPX expander failures in the down-level phase of update from Windows Update.  Will output the package name, function, expression and error code.
 41. FindFatalPluginFailure – E48E3F1C-26F6-4AFB-859B-BF637DA49636
     - Matches any plug-in failure that setupplatform decides is fatal to setup.  Will output the plugin name, operation and error code.
 42. AdvancedInstallerFailed - 77D36C96-32BE-42A2-BB9C-AAFFE64FCADC
@@ -343,6 +338,10 @@ Each rule name and its associated unique rule identifier are listed with a descr
     - Detects when a file or other object causes the migration or creation of a user profile to fail during the update.
 
 ## Release notes
+
+07/27/2021 - SetupDiag v1.6.2107.27002 is released with 61 rules, as a standalone tool available in the Download Center.
+- This version contains compliance updates and minor bug fixes.
+- With this release and subsequent releases, the version number of the downloadable SetupDiag tool is different from the one included with Windows Setup.
 
 05/06/2021 - SetupDiag v1.6.1.0 is released with 61 rules, as a standalone tool available in the Download Center.  
 - This version of SetupDiag is included with Windows 10, version 21H1.
@@ -563,7 +562,7 @@ Refer to "https://docs.microsoft.com/windows/desktop/Debug/system-error-codes" f
 
 ## Sample registry key
 
-![Example of Addreg](./../images/addreg.png)
+![Example of Addreg.](./../images/addreg.png)
 
 ## Related topics
 

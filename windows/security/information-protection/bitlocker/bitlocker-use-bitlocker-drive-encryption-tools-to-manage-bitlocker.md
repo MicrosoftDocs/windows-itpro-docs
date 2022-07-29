@@ -1,18 +1,15 @@
 ---
 title: BitLocker Use BitLocker Drive Encryption Tools to manage BitLocker (Windows 10)
 description: This article for the IT professional describes how to use tools to manage BitLocker.
-ms.assetid: e869db9c-e906-437b-8c70-741dd61b5ea6
 ms.reviewer: 
-ms.prod: w10
-ms.mktglfcycl: explore
-ms.sitesec: library
-ms.pagetype: security
+ms.prod: m365-security
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+  - M365-security-compliance
+  - highpri
 ms.topic: conceptual
 ms.date: 02/28/2019
 ms.custom: bitlocker
@@ -21,7 +18,10 @@ ms.custom: bitlocker
 # BitLocker: Use BitLocker Drive Encryption Tools to manage BitLocker
 
 **Applies to**
--   Windows 10
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
 
 This article for the IT professional describes how to use tools to manage BitLocker.
 
@@ -50,9 +50,10 @@ A good practice when using manage-bde is to determine the volume status on the t
 ```powershell
 manage-bde -status
 ```
+
 This command returns the volumes on the target, current encryption status, encryption method, and volume type (operating system or data) for each volume:
 
-![Using manage-bde to check encryption status](images/manage-bde-status.png)
+![Using manage-bde to check encryption status.](images/manage-bde-status.png)
 
 The following example illustrates enabling BitLocker on a computer without a TPM chip. Before beginning the encryption process, you must create the startup key needed for BitLocker and save it to the USB drive. When BitLocker is enabled for the operating system volume, the BitLocker will need to access the USB flash drive to obtain the encryption key (in this example, the drive letter E represents the USB drive). You will be prompted to reboot to complete the encryption process.
 
@@ -61,7 +62,8 @@ manage-bde –protectors -add C: -startupkey E:
 manage-bde -on C:
 ```
 
->**Note:**  After the encryption is completed, the USB startup key must be inserted before the operating system can be started.
+> [!NOTE]
+> After the encryption is completed, the USB startup key must be inserted before the operating system can be started.
  
 An alternative to the startup key protector on non-TPM hardware is to use a password and an **ADaccountorgroup** protector to protect the operating system volume. In this scenario, you would add the protectors first. To add them, use this command:
 
@@ -99,7 +101,8 @@ You may experience a problem that damages an area of a hard disk on which BitLoc
 
 The BitLocker Repair Tool (Repair-bde) can be used to access encrypted data on a severely damaged hard disk if the drive was encrypted by using BitLocker. Repair-bde can reconstruct critical parts of the drive and salvage recoverable data as long as a valid recovery password or recovery key is used to decrypt the data. If the BitLocker metadata data on the drive has become corrupt, you must be able to supply a backup key package in addition to the recovery password or recovery key. This key package is backed up in Active Directory Domain Services (AD DS) if you used the default setting for AD DS backup. With this key package and either the recovery password or recovery key, you can decrypt portions of a BitLocker-protected drive if the disk is corrupted. Each key package will work only for a drive that has the corresponding drive identifier. You can use the BitLocker Recovery Password Viewer to obtain this key package from AD DS.
 
->**Tip:**  If you are not backing up recovery information to AD DS or if you want to save key packages alternatively, you can use the command `manage-bde -KeyPackage` to generate a key package for a volume.
+> [!TIP]
+> If you are not backing up recovery information to AD DS or if you want to save key packages alternatively, you can use the command `manage-bde -KeyPackage` to generate a key package for a volume.
  
 The Repair-bde command-line tool is intended for use when the operating system does not start or when you cannot start the BitLocker Recovery Console. Use Repair-bde if the following conditions are true:
 
@@ -107,7 +110,8 @@ The Repair-bde command-line tool is intended for use when the operating system d
 - Windows does not start, or you cannot start the BitLocker recovery console.
 - You do not have a copy of the data that is contained on the encrypted drive.
 
->**Note:**  Damage to the drive may not be related to BitLocker. Therefore, we recommend that you try other tools to help diagnose and resolve the problem with the drive before you use the BitLocker Repair Tool. The Windows Recovery Environment (Windows RE) provides additional options to repair computers.
+> [!NOTE]
+> Damage to the drive may not be related to BitLocker. Therefore, we recommend that you try other tools to help diagnose and resolve the problem with the drive before you use the BitLocker Repair Tool. The Windows Recovery Environment (Windows RE) provides additional options to repair computers.
  
 The following limitations exist for Repair-bde:
 
@@ -120,138 +124,29 @@ For more information about using repair-bde, see [Repair-bde](/previous-versions
 
 Windows PowerShell cmdlets provide a new way for administrators to use when working with BitLocker. Using Windows PowerShell's scripting capabilities, administrators can integrate BitLocker options into existing scripts with ease. The list below displays the available BitLocker cmdlets.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><b>Name</b></p></td>
-<td align="left"><p><b>Parameters</b></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><b>Add-BitLockerKeyProtector</b></p></td>
-<td align="left"><p>-ADAccountOrGroup</p>
-<p>-ADAccountOrGroupProtector</p>
-<p>-Confirm</p>
-<p>-MountPoint</p>
-<p>-Password</p>
-<p>-PasswordProtector</p>
-<p>-Pin</p>
-<p>-RecoveryKeyPath</p>
-<p>-RecoveryKeyProtector</p>
-<p>-RecoveryPassword</p>
-<p>-RecoveryPasswordProtector</p>
-<p>-Service</p>
-<p>-StartupKeyPath</p>
-<p>-StartupKeyProtector</p>
-<p>-TpmAndPinAndStartupKeyProtector</p>
-<p>-TpmAndPinProtector</p>
-<p>-TpmAndStartupKeyProtector</p>
-<p>-TpmProtector</p>
-<p>-WhatIf</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><b>Backup-BitLockerKeyProtector</b></p></td>
-<td align="left"><p>-Confirm</p>
-<p>-KeyProtectorId</p>
-<p>-MountPoint</p>
-<p>-WhatIf</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><b>Disable-BitLocker</b></p></td>
-<td align="left"><p>-Confirm</p>
-<p>-MountPoint</p>
-<p>-WhatIf</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><b>Disable-BitLockerAutoUnlock</b></p></td>
-<td align="left"><p>-Confirm</p>
-<p>-MountPoint</p>
-<p>-WhatIf</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><b>Enable-BitLocker</b></p></td>
-<td align="left"><p>-AdAccountOrGroup</p>
-<p>-AdAccountOrGroupProtector</p>
-<p>-Confirm</p>
-<p>-EncryptionMethod</p>
-<p>-HardwareEncryption</p>
-<p>-Password</p>
-<p>-PasswordProtector</p>
-<p>-Pin</p>
-<p>-RecoveryKeyPath</p>
-<p>-RecoveryKeyProtector</p>
-<p>-RecoveryPassword</p>
-<p>-RecoveryPasswordProtector</p>
-<p>-Service</p>
-<p>-SkipHardwareTest</p>
-<p>-StartupKeyPath</p>
-<p>-StartupKeyProtector</p>
-<p>-TpmAndPinAndStartupKeyProtector</p>
-<p>-TpmAndPinProtector</p>
-<p>-TpmAndStartupKeyProtector</p>
-<p>-TpmProtector</p>
-<p>-UsedSpaceOnly</p>
-<p>-WhatIf</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><b>Enable-BitLockerAutoUnlock</b></p></td>
-<td align="left"><p>-Confirm</p>
-<p>-MountPoint</p>
-<p>-WhatIf</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><b>Get-BitLockerVolume</b></p></td>
-<td align="left"><p>-MountPoint</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><b>Lock-BitLocker</b></p></td>
-<td align="left"><p>-Confirm</p>
-<p>-ForceDismount</p>
-<p>-MountPoint</p>
-<p>-WhatIf</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><b>Remove-BitLockerKeyProtector</b></p></td>
-<td align="left"><p>-Confirm</p>
-<p>-KeyProtectorId</p>
-<p>-MountPoint</p>
-<p>-WhatIf</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><b>Resume-BitLocker</b></p></td>
-<td align="left"><p>-Confirm</p>
-<p>-MountPoint</p>
-<p>-WhatIf</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><b>Suspend-BitLocker</b></p></td>
-<td align="left"><p>-Confirm</p>
-<p>-MountPoint</p>
-<p>-RebootCount</p>
-<p>-WhatIf</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><b>Unlock-BitLocker</b></p></td>
-<td align="left"><p>-AdAccountOrGroup</p>
-<p>-Confirm</p>
-<p>-MountPoint</p>
-<p>-Password</p>
-<p>-RecoveryKeyPath</p>
-<p>-RecoveryPassword</p>
-<p>-RecoveryPassword</p>
-<p>-WhatIf</p></td>
-</tr>
-</tbody>
-</table>
+|Name|Parameters|
+|--- |--- |
+|**Add-BitLockerKeyProtector**|<li>ADAccountOrGroup<li>ADAccountOrGroupProtector<li>Confirm<li>MountPoint<li>Password<li>PasswordProtector<li>Pin<li>RecoveryKeyPath<li>RecoveryKeyProtector<li>RecoveryPassword<li>RecoveryPasswordProtector<li>Service<li>StartupKeyPath<li>StartupKeyProtector<li>TpmAndPinAndStartupKeyProtector<li>TpmAndPinProtector<li>TpmAndStartupKeyProtector<li>TpmProtector<li>WhatIf|
+|**Backup-BitLockerKeyProtector**|<li>Confirm<li>KeyProtectorId<li>MountPoint<li>WhatIf|
+|**Disable-BitLocker**|<li>Confirm<li>MountPoint<li>WhatIf|
+|**Disable-BitLockerAutoUnlock**|<li>Confirm<li>MountPoint<li>WhatIf|
+|**Enable-BitLocker**|<li>AdAccountOrGroup<li>AdAccountOrGroupProtector<li>Confirm<li>EncryptionMethod<li>HardwareEncryption<li>Password<li>PasswordProtector<li>Pin<li>RecoveryKeyPath<li>RecoveryKeyProtector<li>RecoveryPassword<li>RecoveryPasswordProtector<li>Service<li>SkipHardwareTest<li>StartupKeyPath<li>StartupKeyProtector<li>TpmAndPinAndStartupKeyProtector<li>TpmAndPinProtector<li>TpmAndStartupKeyProtector<li>TpmProtector<li>UsedSpaceOnly<li>WhatIf|
+|**Enable-BitLockerAutoUnlock**|<li>Confirm<li>MountPoint<li>WhatIf|
+|**Get-BitLockerVolume**|<li>MountPoint|
+|**Lock-BitLocker**|<li>Confirm<li>ForceDismount<li>MountPoint<li>WhatIf|
+|**Remove-BitLockerKeyProtector**|<li>Confirm<li>KeyProtectorId<li>MountPoint<li>WhatIf|
+|**Resume-BitLocker**|<li>Confirm<li>MountPoint<li>WhatIf|
+|**Suspend-BitLocker**|<li>Confirm<li>MountPoint<li>RebootCount<li>WhatIf|
+|**Unlock-BitLocker**|<li>AdAccountOrGroup<li>Confirm<li>MountPoint<li>Password<li>RecoveryKeyPath<li>RecoveryPassword<li>RecoveryPassword<li>WhatIf|
  
 Similar to manage-bde, the Windows PowerShell cmdlets allow configuration beyond the options offered in the control panel. As with manage-bde, users need to consider the specific needs of the volume they are encrypting prior to running Windows PowerShell cmdlets.
+
 A good initial step is to determine the current state of the volume(s) on the computer. You can do this using the <code>Get-BitLockerVolume</code> cmdlet.
+
 The <code>Get-BitLockerVolume</code> cmdlet output gives information on the volume type, protectors, protection status, and other details.
 
->**Tip:**  Occasionally, all protectors may not be shown when using `Get-BitLockerVolume` due to lack of space in the output display. If you do not see all of the protectors for a volume, you can use the Windows PowerShell pipe command (|) to format a full listing of the protectors.
+> [!TIP]
+> Occasionally, all protectors may not be shown when using `Get-BitLockerVolume` due to lack of space in the output display. If you do not see all of the protectors for a volume, you can use the Windows PowerShell pipe command (|) to format a full listing of the protectors.
 `Get-BitLockerVolume C: | fl`
  
 If you want to remove the existing protectors prior to provisioning BitLocker on the volume, you could use the `Remove-BitLockerKeyProtector` cmdlet. Accomplishing this requires the GUID associated with the protector to be removed.
@@ -271,7 +166,8 @@ By using this information, you can then remove the key protector for a specific 
 Remove-BitLockerKeyProtector <volume>: -KeyProtectorID "{GUID}"
 ```
 
->**Note:**  The BitLocker cmdlet requires the key protector GUID enclosed in quotation marks to execute. Ensure the entire GUID, with braces, is included in the command.
+> [!NOTE]
+> The BitLocker cmdlet requires the key protector GUID enclosed in quotation marks to execute. Ensure the entire GUID, with braces, is included in the command.
  
 ### Using the BitLocker Windows PowerShell cmdlets with operating system volumes
 
@@ -299,11 +195,13 @@ $pw = Read-Host -AsSecureString
 <user inputs password>
 Enable-BitLockerKeyProtector E: -PasswordProtector -Password $pw
 ```
+
 ### Using an AD Account or Group protector in Windows PowerShell
 
 The **ADAccountOrGroup** protector, introduced in Windows 8 and Windows Server 2012, is an Active Directory SID-based protector. This protector can be added to both operating system and data volumes, although it does not unlock operating system volumes in the pre-boot environment. The protector requires the SID for the domain account or group to link with the protector. BitLocker can protect a cluster-aware disk by adding a SID-based protector for the Cluster Name Object (CNO) that lets the disk properly fail over to and be unlocked by any member computer of the cluster.
 
->**Warning:**  The **ADAccountOrGroup** protector requires the use of an additional protector for use (such as TPM, PIN, or recovery key) when used on operating system volumes
+> [!WARNING]
+> The **ADAccountOrGroup** protector requires the use of an additional protector for use (such as TPM, PIN, or recovery key) when used on operating system volumes
  
 To add an **ADAccountOrGroup** protector to a volume, use either the actual domain SID or the group name preceded by the domain and a backslash. In the example below, the CONTOSO\\Administrator account is added as a protector to the data volume G.
 
@@ -313,13 +211,15 @@ Enable-BitLocker G: -AdAccountOrGroupProtector -AdAccountOrGroup CONTOSO\Adminis
 
 For users who wish to use the SID for the account or group, the first step is to determine the SID associated with the account. To get the specific SID for a user account in Windows PowerShell, use the following command:
 
->**Note:**  Use of this command requires the RSAT-AD-PowerShell feature.
+> [!NOTE]
+> Use of this command requires the RSAT-AD-PowerShell feature.
  
 ```powershell
 get-aduser -filter {samaccountname -eq "administrator"}
 ```
 
->**Tip:**  In addition to the PowerShell command above, information about the locally logged on user and group membership can be found using: WHOAMI /ALL. This does not require the use of additional features.
+> [!TIP]
+> In addition to the PowerShell command above, information about the locally logged on user and group membership can be found using: WHOAMI /ALL. This does not require the use of additional features.
  
 The following example adds an **ADAccountOrGroup** protector to the previously encrypted operating system volume using the SID of the account:
 
@@ -327,7 +227,8 @@ The following example adds an **ADAccountOrGroup** protector to the previously e
 Add-BitLockerKeyProtector C: -ADAccountOrGroupProtector -ADAccountOrGroup S-1-5-21-3651336348-8937238915-291003330-500
 ```
 
->**Note:**  Active Directory-based protectors are normally used to unlock Failover Cluster enabled volumes.
+> [!NOTE]
+> Active Directory-based protectors are normally used to unlock Failover Cluster enabled volumes.
  
 ## More information
 

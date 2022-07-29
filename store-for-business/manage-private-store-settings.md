@@ -20,7 +20,6 @@ ms.localizationpriority: medium
 **Applies to**
 
 -   Windows 10
--   Windows 10 Mobile
 
 > [!IMPORTANT]
 > Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
@@ -51,10 +50,11 @@ You can create collections of apps within your private store. Collections allow 
 You can add a collection to your private store from the private store, or from the details page for an app.
 
 **From private store**
+
 1. Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com).
 2. Click your private store.</br>
 
-    ![Image showing private store name on MSfB store UI.](images/msfb-click-private-store.png)
+    ![Image showing private store name on Microsoft Store for Business store UI.](images/msfb-click-private-store.png)
 3. Click **Add a Collection**.</br>
 
     ![Image showing Add a Collection.](images/msfb-add-collection.png)
@@ -66,6 +66,7 @@ You can add a collection to your private store from the private store, or from t
 > New collections require at least one app, or they will not be created.
 
 **From app details page**
+
 1. Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com).
 2. Click **Manage**, and then click **Products & services**.
 3. Under **Apps & software**, choose an app you want to include in a new collection.
@@ -85,12 +86,13 @@ If you've already added a Collection to your private store, you can easily add a
 1. Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com).
 2. Click your private store.</br>
 
-    ![Image showing private store name on MSfB store UI.](images/msfb-click-private-store.png)
+    ![Image showing private store name on Microsoft Store for Business store UI.](images/msfb-click-private-store.png)
 
 3. Click the ellipses next to the collection name, and click **Edit collection**.
 4. Add or remove products from the collection, and then click **Done**.
 
 You can also add an app to a collection from the app details page.
+
 1. Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com).
 2. Click **Manage**, and then click **Products & services**.
 3. Under **Apps & software**, choose an app you want to include in a new collection.

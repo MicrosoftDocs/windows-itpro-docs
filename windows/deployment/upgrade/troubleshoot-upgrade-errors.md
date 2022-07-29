@@ -1,16 +1,10 @@
 ---
 title: Troubleshoot Windows 10 upgrade errors - Windows IT Pro
-ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 description: Understanding the Windows 10 upgrade process can help you troubleshoot errors when something goes wrong. Find out more with this guide.
-keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, ITPro
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: deploy
-audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
 ms.topic: article
 ---
@@ -18,13 +12,16 @@ ms.topic: article
 # Troubleshooting upgrade errors
 
 **Applies to**
--   Windows 10
+-   Windows 10
 
->[!NOTE]
->This is a 300 level topic (moderately advanced).<br>
->See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.
+> [!NOTE]
+> This is a 300 level topic (moderately advanced).<br>
+> See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.
 
 If a Windows 10 upgrade is not successful, it can be very helpful to understand *when* an error occurred in the upgrade process. 
+
+> [!IMPORTANT]
+> Use the [SetupDiag](setupdiag.md) tool before you begin manually troubleshooting an upgrade error. SetupDiag automates log file analysis, detecting and reporting details on many different types of known upgrade issues.
 
 Briefly, the upgrade process consists of four phases that are controlled by [Windows Setup](/windows-hardware/manufacture/desktop/windows-setup-technical-reference): **Downlevel**, **SafeOS**, **First boot**, and **Second boot**. The computer will reboot once between each phase. Note: Progress is tracked in the registry during the upgrade process using the following key: **HKLM\System\Setup\mosetup\volatile\SetupProgress**. This key is volatile and only present during the upgrade process; it contains a binary value in the range 0-100.
 
@@ -59,31 +56,31 @@ When performing an operating system upgrade, Windows Setup uses phases described
 
 1. **Downlevel phase**: The downlevel phase is run within the previous operating system. Windows files are copied and installation components are gathered.
 
-    ![downlevel phase](../images/downlevel.png)  
+    ![downlevel phase.](../images/downlevel.png)  
 
 2. **Safe OS phase**: A recovery partition is configured, Windows files are expanded, and updates are installed. An OS rollback is prepared if needed. Example error codes: 0x2000C, 0x20017.
 
-    ![safeOS phase](../images/safeos.png) 
+    ![safeOS phase.](../images/safeos.png) 
 
 3. **First boot phase**: Initial settings are applied. Example error codes: 0x30018, 0x3000D.
 
-    ![first boot phase](../images/firstboot.png) 
+    ![first boot phase.](../images/firstboot.png) 
 
 4. **Second boot phase**: Final settings are applied. This is also called the **OOBE boot phase**. Example error codes: 0x4000D, 0x40017. 
 
     At the end of the second boot phase, the **Welcome to Windows 10** screen is displayed, preferences are configured, and the Windows 10 sign-in prompt is displayed.
 
-    ![second boot phase](../images/secondboot.png) 
+    ![second boot phase 1](../images/secondboot.png) 
 
-    ![second boot phase](../images/secondboot2.png) 
+    ![second boot phase 2](../images/secondboot2.png) 
 
-    ![second boot phase](../images/secondboot3.png) 
+    ![second boot phase 3](../images/secondboot3.png) 
 
 5. **Uninstall phase**: This phase occurs if upgrade is unsuccessful (image not shown). Example error codes: 0x50000, 0x50015.
 
 **Figure 1**: Phases of a successful Windows 10 upgrade (uninstall is not shown):
 
-![Upgrade process](../images/upgrade-process.png)
+:::image type="content" alt-text="Upgrade process." source="../images/upgrade-process.png" lightbox="../images/upgrade-process.png":::
 
 DU = Driver/device updates.<br>
 OOBE = Out of box experience.<br>
@@ -93,6 +90,6 @@ WIM = Windows image (Microsoft)
 
 [Windows 10 FAQ for IT professionals](../planning/windows-10-enterprise-faq-itpro.yml)
 <br>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)
-<br>[Windows 10 Specifications](https://www.microsoft.com/windows/Windows-/ifications)
+<br>[Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications)
 <br>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)
-<br>[Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)
+<br>[Fix Windows Update errors by using the DISM or System Update Readiness tool](/troubleshoot/windows-server/deployment/fix-windows-update-errors)

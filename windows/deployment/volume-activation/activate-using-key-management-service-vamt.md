@@ -1,20 +1,14 @@
 ---
 title: Activate using Key Management Service (Windows 10)
-ms.assetid: f2417bfe-7d25-4e82-bc07-de316caa8dac
-ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 description: How to activate using Key Management Service in Windows 10.
-keywords: vamt, volume activation, activation, windows activation
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: activation
-audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.localizationpriority: medium
 ms.date: 10/16/2017
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Activate using Key Management Service
@@ -80,39 +74,39 @@ This scenario is commonly used in larger organizations that do not find the over
 2. Launch Server Manager.
 3. Add the Volume Activation Services role, as shown in Figure 4.
 
-   ![Adding the Volume Activation Services role in Server Manager](../images/volumeactivationforwindows81-04.jpg)
+   ![Adding the Volume Activation Services role in Server Manager.](../images/volumeactivationforwindows81-04.jpg)
 
    **Figure 4**. Adding the Volume Activation Services role in Server Manager
 
 4. When the role installation is complete, click the link to launch the Volume Activation Tools (Figure 5).
 
-   ![Launching the Volume Activation Tools](../images/volumeactivationforwindows81-05.jpg)
+   ![Launching the Volume Activation Tools.](../images/volumeactivationforwindows81-05.jpg)
 
    **Figure 5**. Launching the Volume Activation Tools
 
 5. Select the **Key Management Service (KMS)** option, and specify the computer that will act as the KMS host (Figure 6).
       This can be the same computer on which you installed the role or another computer. For example, it can be a client computer running Windows 10.
 
-   ![Configuring the computer as a KMS host](../images/volumeactivationforwindows81-06.jpg)
+   ![Configuring the computer as a KMS host.](../images/volumeactivationforwindows81-06.jpg)
 
    **Figure 6**. Configuring the computer as a KMS host
 
 6. Install your KMS host key by typing it in the text box, and then click **Commit** (Figure 7).
 
-   ![Installing your KMS host key](../images/volumeactivationforwindows81-07.jpg)
+   ![Installing your KMS host key.](../images/volumeactivationforwindows81-07.jpg)
 
    **Figure 7**. Installing your KMS host key
 
 7. If asked to confirm replacement of an existing key, click **Yes**.
 8. After the product key is installed, you must activate it. Click **Next** (Figure 8).
 
-   ![Activating the software](../images/volumeactivationforwindows81-08.jpg)
+   ![Activating the software.](../images/volumeactivationforwindows81-08.jpg)
 
    **Figure 8**. Activating the software
 
    The KMS key can be activated online or by phone. See Figure 9.
 
-   ![Choosing to activate online](../images/volumeactivationforwindows81-09.jpg)
+   ![Choosing to activate online.](../images/volumeactivationforwindows81-09.jpg)
 
    **Figure 9**. Choosing to activate online
 

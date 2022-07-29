@@ -1,18 +1,12 @@
 ---
 title: Set up MDT for BitLocker (Windows 10)
-ms.assetid: 386e6713-5c20-4d2a-a220-a38d94671a38
 ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 description: Learn how to configure your environment for BitLocker, the disk volume encryption built into Windows 10 Enterprise and Windows 10 Pro, using MDT.
-keywords: disk, encryption, TPM, configure, secure, script
 ms.prod: w10
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.sitesec: library
-ms.pagetype: mdt
-audience: itpro
-author: greg-lindsay
+author: aczechowski
 ms.topic: article
 ms.custom: seo-marvel-mar2020
 ---
@@ -38,9 +32,6 @@ If you have access to Microsoft BitLocker Administration and Monitoring (MBAM), 
 > [!NOTE]
 > Backing up TPM to Active Directory was supported only on Windows 10 version 1507 and 1511.
 
->[!NOTE]
->Even though it is not a BitLocker requirement, we recommend configuring BitLocker to store the recovery key and TPM owner information in Active Directory. For more information about these features, see [Backing Up BitLocker and TPM Recovery Information to AD DS](/previous-versions/windows/it-pro/windows-7/dd875529(v=ws.10)). If you have access to Microsoft BitLocker Administration and Monitoring (MBAM), which is part of Microsoft Desktop Optimization Pack (MDOP), you have additional management features for BitLocker.
-
 For the purposes of this topic, we will use DC01, a domain controller that is a member of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, see [Deploy Windows 10 with the Microsoft Deployment Toolkit](./prepare-for-windows-deployment-with-mdt.md).
 
 ## Configure Active Directory for BitLocker
@@ -52,7 +43,7 @@ To enable BitLocker to store the recovery key and TPM information in Active Dire
 
 In Windows Server version from 2008 R2 and later, you have access to the BitLocker Drive Encryption Administration Utilities features, which will help you manage BitLocker. When you install the features, the BitLocker Active Directory Recovery Password Viewer is included, and it extends Active Directory Users and Computers with BitLocker Recovery information.
 
-![figure 2](../images/mdt-09-fig02.png)
+![figure 2.](../images/mdt-09-fig02.png)
 
 The BitLocker Recovery information on a computer object in the contoso.com domain.
 
@@ -71,7 +62,7 @@ The BitLocker Drive Encryption Administration Utilities are added as features vi
     3. BitLocker Recovery Password Viewer
 7. On the **Confirm installation selections** page, click **Install**, and then click **Close**.
 
-![figure 3](../images/mdt-09-fig03.png)
+![figure 3.](../images/mdt-09-fig03.png)
 
 Selecting the BitLocker Drive Encryption Administration Utilities.
 
@@ -104,7 +95,7 @@ In addition to the Group Policy created previously, you need to configure permis
     cscript C:\Setup\Scripts\Add-TPMSelfWriteACE.vbs
     ```
 
-![figure 4](../images/mdt-09-fig04.png)
+![figure 4.](../images/mdt-09-fig04.png)
 
 Running the Add-TPMSelfWriteACE.vbs script on DC01.
 

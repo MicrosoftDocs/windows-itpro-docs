@@ -1,26 +1,23 @@
 ---
 title: Planning a Windows Hello for Business Deployment
 description: Learn about the role of each component within Windows Hello for Business and how certain deployment decisions affect other aspects of your infrastructure.
-keywords: identity, PIN, biometric, Hello, passport
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
-author: mapalko
-ms.author: mapalko
+ms.prod: m365-security
+author: GitPrakhar13
+ms.author: prsriva
 manager: dansimp
-ms.collection: M365-identity-device-management
+ms.collection:
+  - M365-identity-device-management
+  - highpri
 ms.topic: article
 localizationpriority: conceptual
 ms.date: 09/16/2020
-ms.reviewer: 
 ---
 # Planning a Windows Hello for Business Deployment
 
 **Applies to**
 
-- Windows 10
+- Windows 10
+- Windows 11
 
 Congratulations! You are taking the first step forward in helping move your organizations away from password to a two-factor, convenience authentication for Windows — Windows Hello for Business. This planning guide helps you understand the different topologies, architectures, and components that encompass a Windows Hello for Business infrastructure.
 
@@ -73,26 +70,31 @@ The hybrid deployment model is for organizations that:
 - Use applications hosted in Azure Active Directory, and want a single sign-in user experience for both on-premises and Azure Active Directory resources
 
 > [!Important]
-> Hybrid deployments support non-destructive PIN reset that works with both the certificate trust and key trust models.</br>
-> **Requirements:**</br>
-> Microsoft PIN Reset Service - Windows 10, versions 1709 to 1809, Enterprise Edition. There is no licensing requirement for this service since version 1903</br>
-> Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
+> Hybrid deployments support non-destructive PIN reset that works with both the certificate trust and key trust models.
+>
+> **Requirements:**
+> - Microsoft PIN Reset Service - Windows 10, versions 1709 to 1809, Enterprise Edition. There is no licensing requirement for this service since version 1903
+> - Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
 
 ##### On-premises
 The on-premises deployment model is for organizations that do not have cloud identities or use applications hosted in Azure Active Directory.
 
 > [!Important]
-> On-premises deployments support destructive PIN reset that works with both the certificate trust and the key trust models.</br>
-> **Requirements:**</br>
-> Reset from settings - Windows 10, version 1703, Professional</br>
-> Reset above lock screen - Windows 10, version 1709, Professional</br>
-> Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
+> On-premises deployments support destructive PIN reset that works with both the certificate trust and the key trust models.
+>
+> **Requirements:**
+> - Reset from settings - Windows 10, version 1703, Professional
+> - Reset above lock screen - Windows 10, version 1709, Professional
+> - Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
 
 It's fundamentally important to understand which deployment model to use for a successful deployment.  Some aspects of the deployment may have already been decided for you based on your current infrastructure.
 
 #### Trust types
 
 A deployment's trust type defines how each Windows Hello for Business client authenticates to the on-premises Active Directory.  There are two trust types: key trust and certificate trust.
+
+> [!NOTE]
+> Windows Hello for Business is introducing a new trust model called cloud trust in early 2022. This trust model will enable deployment of Windows Hello for Business using the infrastructure introduced for supporting [security key sign-in on Hybrid Azure AD-joined devices and on-premises resource access on Azure AD Joined devices](/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). More information will be available on Windows Hello for Business cloud trust once it is generally available.
 
 The key trust type does not require issuing authentication certificates to end users. Users authenticate using a hardware-bound key created during the built-in provisioning experience. This requires an adequate distribution of Windows Server 2016 or later domain controllers relative to your existing authentication and the number of users included in your Windows Hello for Business deployment. Read the [Planning an adequate number of Windows Server 2016 or later Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
 
@@ -145,9 +147,9 @@ Modern management is an emerging device management paradigm that leverages the c
 
 ### Client
 
-Windows Hello for Business is an exclusive Windows 10 feature.  As part of the Windows as a Service strategy, Microsoft has improved the deployment, management, and user experience with each new release of Windows 10 and introduced support for new scenarios.
+Windows Hello for Business is an exclusive Windows 10 and Windows 11 feature. As part of the Windows as a Service strategy, Microsoft has improved the deployment, management, and user experience with each new release of Windows and introduced support for new scenarios.
 
-Most deployment scenarios require a minimum of Windows 10, version 1511, also known as the November Update.  The client requirement may change based on different components in your existing infrastructure, or other infrastructure choices made later in planning your deployment.  Those components and choices may require a minimum client running Windows 10, version 1703, also known as the Creators Update.
+Most deployment scenarios require a minimum of Windows 10, version 1511, also known as the November Update.  The client requirement may change based on different components in your existing infrastructure, or other infrastructure choices made later in planning your deployment. Those components and choices may require a minimum client running Windows 10, version 1703, also known as the Creators Update.
 
 
 ### Active Directory
@@ -156,7 +158,7 @@ Hybrid and on-premises deployments include Active Directory as part of their inf
 
 ### Public Key Infrastructure
 
-The Windows Hello for Business deployment depends on an enterprise public key infrastructure as a trust anchor for authentication. Domain controllers for hybrid and on-premises deployments need a certificate in order for Windows 10 devices to trust the domain controller as legitimate. Deployments using the certificate trust type need an enterprise public key infrastructure and a certificate registration authority to issue authentication certificates to users.  Hybrid deployments may need to issue VPN certificates to users to enable connectivity on-premises resources.
+The Windows Hello for Business deployment depends on an enterprise public key infrastructure as a trust anchor for authentication. Domain controllers for hybrid and on-premises deployments need a certificate in order for Windows devices to trust the domain controller as legitimate. Deployments using the certificate trust type need an enterprise public key infrastructure and a certificate registration authority to issue authentication certificates to users.  Hybrid deployments may need to issue VPN certificates to users to enable connectivity on-premises resources.
 
 ### Cloud
 
@@ -184,7 +186,7 @@ If your organization does not have cloud resources, write **On-Premises** in box
 
 ### Trust type
 
-Hybrid Azure AD joined devices managed by Group Policy need the Windows Server 2016 AD FS role to issue certificates.  Hybrid Azure AD joined devices and Azure AD joined devices managed by Intune or a compatible MDM need the Windows Server NDES server role to issue certificates.
+Hybrid Azure AD-joined devices managed by Group Policy need the Windows Server 2016 AD FS role to issue certificates.  Hybrid Azure AD-joined devices and Azure AD-joined devices managed by Intune or a compatible MDM need the Windows Server NDES server role to issue certificates.
 
 Choose a trust type that is best suited for your organizations.  Remember, the trust type determines two things. Whether you issue authentication certificates to your users and if your deployment needs Windows Server 2016 domain controllers.
 
@@ -252,10 +254,10 @@ If you choose to use AD FS with the Azure MFA server adapter, write **AD FS with
 
 Windows Hello for Business provides organizations with many policy settings and granular control on how these settings may be applied to both computers and users.  The type of policy management you can use depends on your selected deployment and trust models.
 
-If box **1a** on your planning worksheet reads **cloud only**, write **N/A** in box **2a** on your planning worksheet.  You have the option to manage non-domain joined devices.  If you choose to manage Azure Active Directory joined devices, write **modern management** in box **2b** on your planning worksheet.  Otherwise, write** N/A** in box **2b**.
+If box **1a** on your planning worksheet reads **cloud only**, write **N/A** in box **2a** on your planning worksheet.  You have the option to manage non-domain joined devices.  If you choose to manage Azure Active Directory-joined devices, write **modern management** in box **2b** on your planning worksheet.  Otherwise, write** N/A** in box **2b**.
 
 > [!NOTE]
-> Azure Active Directory joined devices without modern management automatically enroll in Windows Hello for Business using the default policy settings.  Use modern management to adjust policy settings to match the business needs of your organization.
+> Azure Active Directory-joined devices without modern management automatically enroll in Windows Hello for Business using the default policy settings.  Use modern management to adjust policy settings to match the business needs of your organization.
 
 If box **1a** on your planning worksheet reads **on-prem**, write **GP** in box **2a** on your planning worksheet. Write **N/A** in box **2b** on your worksheet.
 
@@ -267,11 +269,11 @@ If you use modern management for both domain and non-domain joined devices, writ
 
 ### Client
 
-Windows Hello for Business is a feature exclusive to Windows 10.   Some deployments and features are available using earlier versions of Windows 10.  Others need the latest versions.
+Windows Hello for Business is a feature exclusive to Windows 10 and Windows 11. Some deployments and features are available using earlier versions of Windows 10. Others need the latest versions.
 
 If box **1a** on your planning worksheet reads **cloud only**, write **N/A** in box **3a** on your planning worksheet.  Optionally, you may write **1511 or later** in box **3b** on your planning worksheet if you plan to manage non-domain joined devices.
 > [!NOTE]
-> Azure Active Directory joined devices without modern management automatically enroll in Windows Hello for Business using the default policy settings.  Use modern management to adjust policy settings to match the business needs of your organization.
+> Azure Active Directory-joined devices without modern management automatically enroll in Windows Hello for Business using the default policy settings.  Use modern management to adjust policy settings to match the business needs of your organization.
 
 Write **1511 or later** in box **3a** on your planning worksheet if any of the following are true. 
 * Box **2a** on your planning worksheet read **modern management**. 
@@ -299,7 +301,7 @@ If box **1a** on your planning worksheet reads **cloud only**, ignore the public
 
 If box **1b** on your planning worksheet reads **key trust**, write **N/A** in box **5b** on your planning worksheet. Key trust doesn't require any change in public key infrastructure, skip this part and go to **Cloud** section.
 
-The registration authority only relates to certificate trust deployments and the management used for domain and non-domain joined devices.  Hybrid Azure AD joined devices managed by Group Policy need the Windows Server 2016 AD FS role to issue certificates.  Hybrid Azure AD joined devices and Azure AD joined devices managed by Intune or a compatible MDM need the Windows Server NDES server role to issue certificates. 
+The registration authority only relates to certificate trust deployments and the management used for domain and non-domain joined devices.  Hybrid Azure AD-joined devices managed by Group Policy need the Windows Server 2016 AD FS role to issue certificates.  Hybrid Azure AD-joined devices and Azure AD-joined devices managed by Intune or a compatible MDM need the Windows Server NDES server role to issue certificates. 
 
 If box **2a** reads **GP** and box **2b** reads **modern management**, write **AD FS RA and NDES** in box **5b** on your planning worksheet.  In box **5c**, write the following certificate templates names and issuances:
 

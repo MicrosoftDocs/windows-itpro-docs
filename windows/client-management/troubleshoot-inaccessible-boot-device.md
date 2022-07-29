@@ -2,8 +2,6 @@
 title: Advanced advice for Stop error 7B, Inaccessible_Boot_Device
 description: Learn how to troubleshoot Stop error 7B or Inaccessible_Boot_Device. This error might occur after some changes are made to the computer,
 ms.prod: w10
-ms.mktglfcycl:
-ms.sitesec: library
 ms.topic: troubleshooting
 author: dansimp
 ms.localizationpriority: medium
@@ -37,11 +35,11 @@ Any one of the following factors might cause the stop error:
 
 * Corrupted files in the **Boot** partition (for example, corruption in the volume that's labeled **SYSTEM** when you run the `diskpart` > `list vol` command)
 
-* If there is a blank GPT entry before the entry of the **Boot** partition
+* If there's a blank GPT entry before the entry of the **Boot** partition
 
 ## Troubleshoot this error
 
-Start the computer in [Windows Recovery Mode (WinRE)](/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference#span-identrypointsintowinrespanspan-identrypointsintowinrespanspan-identrypointsintowinrespanentry-points-into-winre). To do this, follow these steps.
+Start the computer in [Windows Recovery Mode (WinRE)](/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference#span-identrypointsintowinrespanspan-identrypointsintowinrespanspan-identrypointsintowinrespanentry-points-into-winre) by following these steps.
 
 1. Start the system by using [the installation media for the installed version of Windows](https://support.microsoft.com/help/15088).
 
@@ -92,7 +90,7 @@ If the `list disk` command lists the OS disks correctly, run the `list vol` comm
 
 ### Verify the integrity of Boot Configuration Database
 
-Check whether the Boot Configuration Database (BCD) has all the correct entries. To do this, run `bcdedit` at the WinRE command prompt.
+Check whether the Boot Configuration Database (BCD) has all the correct entries. To do this step, run `bcdedit` at the WinRE command prompt.
 
 To verify the BCD entries:
 
@@ -119,7 +117,7 @@ To verify the BCD entries:
    > [!NOTE]
    > If the computer is UEFI-based, the file path value that's specified in the **path** parameter of **{bootmgr}** and **{default}** contains an **.efi** extension.
 
-   ![bcdedit](images/screenshot1.png)
+   ![bcdedit.](images/screenshot1.png)
 
 If any of the information is wrong or missing, we recommend that you create a backup of the BCD store. To do this, run `bcdedit /export C:\temp\bcdbackup`. This command creates a backup in **C:\\temp\\** that's named **bcdbackup**. To restore the backup, run `bcdedit /import C:\temp\bcdbackup`. This command overwrites all BCD settings by using the settings in **bcdbackup**.
 
@@ -150,7 +148,7 @@ If the files are missing, and you want to rebuild the boot files, follow these s
    Bcdboot <**OSDrive* >:\windows /s <**SYSTEMdrive* >: /f ALL
    ```
 
-   For example, if we assign the `<System Drive>` (WinRE drive) the letter R and the `<OSdrive>` is the letter D, the following is the command that we would use:
+   For example, if we assign the `<System Drive>` (WinRE drive) the letter R and the `<OSdrive>` is the letter D, we would use the following command:
 
    ```console
    Bcdboot D:\windows /s R: /f ALL
@@ -159,7 +157,7 @@ If the files are missing, and you want to rebuild the boot files, follow these s
    >[!NOTE]
    >The **ALL** part of the **bcdboot** command writes all the boot files (both UEFI and BIOS) to their respective locations.
 
-If you don't have a Windows 10 ISO, format the partition and copy **bootmgr** from another working computer that has a similar Windows build. To do this, follow these steps:
+If you don't have a Windows 10 ISO, format the partition and copy **bootmgr** from another working computer that has a similar Windows build. To do the formatting and copying, follow these steps:
 
 1. Start **Notepad**.
 
@@ -179,11 +177,11 @@ Dism /Image:<Specify the OS drive>: /Get-packages
 
 After you run this command, you'll see the **Install pending** and **Uninstall Pending** packages:
 
-![Dism output pending update](images/pendingupdate.png)
+![Dism output pending update.](images/pendingupdate.png)
 
 1. Run the `dism /Image:C:\ /Cleanup-Image /RevertPendingActions` command. Replace **C:** with the system partition for your computer.
 
-    ![Dism output revert pending](images/revertpending.png)
+    ![Dism output revert pending.](images/revertpending.png)
 
 2. Navigate to ***OSdriveLetter*:\Windows\WinSxS**, and then check whether the **pending.xml** file exists. If it does, rename it to **pending.xml.old**.
 
@@ -193,14 +191,14 @@ After you run this command, you'll see the **Install pending** and **Uninstall P
 
 5. Navigate to ***OSdriveLetter*:\Windows\System32\config**, select the file that's named **COMPONENT** (with no extension), and then select **Open**. When you're prompted, enter the name **OfflineComponentHive** for the new hive.
     
-    ![Load Hive](images/loadhive.png)
+    ![Load Hive.](images/loadhive.png)
 
 6. Expand **HKEY_LOCAL_MACHINE\OfflineComponentHive**, and check whether the **PendingXmlIdentifier** key exists. Create a backup of the **OfflineComponentHive** key, and then delete the **PendingXmlIdentifier** key.
 
-7. Unload the hive. To do this, highlight **OfflineComponentHive**, and then select **File** > **Unload hive**.
+7. Unload the hive. To do this unloading, highlight **OfflineComponentHive**, and then select **File** > **Unload hive**.
 
    > [!div class="mx-imgBorder"]
-   > ![Unload Hive](images/unloadhive.png)![Unload Hive](images/unloadhive1.png)
+   > ![Unload Hive.](images/unloadhive.png)![Unload Hive](images/unloadhive1.png)
 
 8. Select **HKEY_LOCAL_MACHINE**, go to **File** > **Load Hive**, navigate to ***OSdriveLetter*:\Windows\System32\config**, select the file that's named **SYSTEM** (with no extension), and then select **Open**. When you're prompted, enter the name **OfflineSystemHive** for the new hive.
 
@@ -229,7 +227,7 @@ After you run this command, you'll see the **Install pending** and **Uninstall P
 
    If these keys exist, check each one to make sure that it has a value that's named **Start**, and that it's set to **0**. If it's not, set the value to **0**.
 
-   If any of these keys don't exist, you can try to replace the current registry hive by using the hive from **RegBack**. To do this, run the following commands:
+   If any of these keys don't exist, you can try to replace the current registry hive by using the hive from **RegBack**. To do this step, run the following commands:
 
    ```console
    cd OSdrive:\Windows\System32\config
@@ -256,7 +254,7 @@ Check whether there are any non-Microsoft upper and lower filter drivers on the 
    \Control\Class\\{71A27CDD-812A-11D0-BEC7-08002BE2092F}
 
    > [!div class="mx-imgBorder"]
-   > ![Registry](images/controlset.png) 
+   > ![Registry.](images/controlset.png) 
 
    If an **UpperFilters**  or **LowerFilters**  entry is non-standard (for example, it's not a Windows default filter driver, such as PartMgr), remove the entry. To remove it, double-click it in the right pane, and then delete only that value.
 
@@ -270,12 +268,12 @@ Check whether there are any non-Microsoft upper and lower filter drivers on the 
 
 ### Running SFC and Chkdsk
 
- If the computer still doesn't start, you can try to run a **chkdisk**  process on the system drive, and then also run System File Checker. To do this, run the following commands at a WinRE command prompt:
+ If the computer still doesn't start, you can try to run a **chkdisk**  process on the system drive, and then also run System File Checker. Do these steps by running the following commands at a WinRE command prompt:
 
 *	`chkdsk /f /r OsDrive:`
 
-    ![Check disk](images/check-disk.png)
+    ![Check disk.](images/check-disk.png)
 
 *	`sfc /scannow /offbootdir=OsDrive:\ /offwindir=OsDrive:\Windows`
 
-    ![SFC scannow](images/sfc-scannow.png)
+    ![SFC scannow.](images/sfc-scannow.png)

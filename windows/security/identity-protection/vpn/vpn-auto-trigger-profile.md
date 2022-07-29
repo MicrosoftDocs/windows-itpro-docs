@@ -1,13 +1,10 @@
 ---
-title: VPN auto-triggered profile options (Windows 10)
-description: Learn about the types of auto-trigger rules for VPNs in Windows 10, which start a VPN when it is needed to access a resource.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, networking
+title: VPN auto-triggered profile options (Windows 10 and Windows 11)
+description: Learn about the types of auto-trigger rules for VPNs in Windows, which start a VPN when it is needed to access a resource.
+ms.prod: m365-security
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 07/27/2017
+ms.date: 09/23/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -17,9 +14,9 @@ ms.author: dansimp
 
 **Applies to**
 -   Windows 10
--   Windows 10 Mobile
+-   Windows 11
 
-In Windows 10, a number of features were added to auto-trigger VPN so users won’t have to manually connect when VPN is needed to access necessary resources. There are three different types of auto-trigger rules: 
+In Windows 10 and Windows 11, a number of features have been added to auto-trigger VPN so users won’t have to manually connect when VPN is needed to access necessary resources. There are three different types of auto-trigger rules: 
 
 - App trigger
 - Name-based trigger
@@ -31,12 +28,11 @@ In Windows 10, a number of features were added to auto-trigger VPN so users won�
 
 ## App trigger
 
-VPN profiles in Windows 10 can be configured to connect automatically on the launch of a specified set of applications. You can configure desktop or Universal Windows Platform (UWP) apps to trigger a VPN connection. You can also configure per-app VPN and specify traffic rules for each app. See [Traffic filters](vpn-security-features.md#traffic-filters) for more details.
+VPN profiles in Windows 10 or Windows 11 can be configured to connect automatically on the launch of a specified set of applications. You can configure desktop or Universal Windows Platform (UWP) apps to trigger a VPN connection. You can also configure per-app VPN and specify traffic rules for each app. See [Traffic filters](vpn-security-features.md#traffic-filters) for more details.
 
 The app identifier for a desktop app is a file path. The app identifier for a UWP app is a package family name.
 
-[Find a package family name (PFN) for per-app VPN configuration](/intune/deploy-use/find-a-pfn-for-per-app-vpn)
-
+[Find a package family name (PFN) for per-app VPN configuration](/mem/configmgr/protect/deploy-use/find-a-pfn-for-per-app-vpn)
 
 ## Name-based trigger
 
@@ -54,7 +50,7 @@ There are four types of name-based triggers:
 
 ## Always On
 
-Always On is a feature in Windows 10 which enables the active VPN profile to connect automatically on the following triggers: 
+Always On is a feature in Windows 10 and Windows 11 which enables the active VPN profile to connect automatically on the following triggers: 
 
 - User sign-in 
 - Network change 
@@ -78,7 +74,7 @@ Should a management tool remove or add the same profile name back and set **Alwa
 
 ## Trusted network detection
 
-This feature configures the VPN such that it would not get triggered if a user is on a trusted corporate network. The value of this setting is a list of DNS suffices. The VPN stack will look at the DNS suffix on the physical interface and if it matches any in the configured list and the network is private or provisioned by MDM, then VPN will not get triggered.
+This feature configures the VPN such that it would not get triggered if a user is on a trusted corporate network. The value of this setting is a list of DNS suffixes. The VPN stack will look at the network name of the physical interface connection profile and if it matches any in the configured list and the network is private or provisioned by MDM, then VPN will not get triggered.
 
 Trusted network detection can be configured using the VPNv2/*ProfileName*/TrustedNetworkDetection setting in the [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp).
 
@@ -89,11 +85,11 @@ See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](/windows/clien
 
 The following image shows associating an app to a VPN connection in a VPN Profile configuration policy using Microsoft Intune.
 
-![Add an app for the VPN connection](images/vpn-app-trigger.png)
+![Add an app for the VPN connection.](images/vpn-app-trigger.png)
 
 After you add an associated app, if you select the **Only these apps can use this VPN connection (per-app VPN)** checkbox, the app becomes available in **Corporate Boundaries**, where you can configure rules for the app. See [Traffic filters](vpn-security-features.md#traffic-filters) for more details. 
 
-![Configure rules for the app](images/vpn-app-rules.png)
+![Configure rules for the app.](images/vpn-app-rules.png)
 
 ## Related topics
 

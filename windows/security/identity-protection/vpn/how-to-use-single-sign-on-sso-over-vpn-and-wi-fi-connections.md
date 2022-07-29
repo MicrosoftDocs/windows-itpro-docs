@@ -1,12 +1,9 @@
 ---
-title: How to use Single Sign-On (SSO) over VPN and Wi-Fi connections (Windows 10)
+title: How to use Single Sign-On (SSO) over VPN and Wi-Fi connections (Windows 10 and Windows 11)
 description: Explains requirements to enable Single Sign-On (SSO) to on-premises domain resources over WiFi or VPN connections.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.prod: m365-security
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 03/22/2022
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -28,6 +25,9 @@ The credentials that are used for the connection authentication are placed in Cr
 The credentials are placed in Credential Manager as a "\*Session" credential.
 A "\*Session" credential implies that it is valid for the current user session.
 The credentials are also cleaned up when the WiFi or VPN connection is disconnected.
+
+> [!NOTE]
+> In Windows 10, version 21h2 and later, the "\*Session" credential is not visible in Credential Manager.
 
 For example, if someone using Microsoft Edge tries to access a domain resource, Microsoft Edge has the right Enterprise Authentication capability. This allows [WinInet](/windows/win32/wininet/wininet-reference) to release the credentials that it gets from the Credential Manager to the SSP that is requesting it.
 For more information about the Enterprise Authentication capability, see [App capability declarations](/windows/uwp/packaging/app-capability-declarations).
@@ -77,7 +77,7 @@ If the credentials are certificate-based, then the elements in the following tab
 | SubjectName | The user’s distinguished name (DN) where the domain components of the distinguished name reflect the internal DNS namespace when the SubjectAlternativeName does not have the fully qualified UPN required to find the domain controller. </br>This requirement is relevant in multi-forest environments as it ensures a domain controller can be located. |
 | SubjectAlternativeName | The user’s fully qualified UPN where a domain name component of the user’s UPN matches the organizations internal domain’s DNS namespace. </br>This requirement is relevant in multi-forest environments as it ensures a domain controller can be located when the SubjectName does not have the DN required to find the domain controller. |
 | Key Storage Provider (KSP) | If the device is joined to Azure AD, a discrete SSO certificate is used. |
-| EnhancedKeyUsage | One or more of the following EKUs is required: </br>- Client Authentication (for the VPN) </br>- EAP Filtering OID (for Windows Hello for Business)</br>- SmartCardLogon (for Azure AD joined devices) </br>If the domain controllers require smart card EKU either:</br>- SmartCardLogon</br>- id-pkinit-KPClientAuth (1.3.6.1.5.2.3.4) <br>Otherwise:</br>- TLS/SSL Client Authentication (1.3.6.1.5.5.7.3.2) |
+| EnhancedKeyUsage | One or more of the following EKUs is required: </br>- Client Authentication (for the VPN) </br>- EAP Filtering OID (for Windows Hello for Business)</br>- SmartCardLogon (for Azure AD-joined devices) </br>If the domain controllers require smart card EKU either:</br>- SmartCardLogon</br>- id-pkinit-KPClientAuth (1.3.6.1.5.2.3.4) <br>Otherwise:</br>- TLS/SSL Client Authentication (1.3.6.1.5.5.7.3.2) |
 
 ## NDES server configuration
 
