@@ -9,8 +9,4 @@ items:
     items:
     - name: Security
       tocHref: /windows/security/
-      topicHref: /windows/security/
-      items:
-      - name: User security
-        tocHref: /windows-server/security/credentials-protection-and-management/
-        topicHref: /windows/security/identity
+      topicHref: /windows/security/      

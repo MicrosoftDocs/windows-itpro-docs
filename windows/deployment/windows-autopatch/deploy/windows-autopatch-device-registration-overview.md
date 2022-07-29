@@ -59,7 +59,7 @@ See the following detailed workflow diagram. The diagram covers the Windows Auto
             2. If **not**, it means the device isn't enrolled into Intune, hence it can't be managed by the Windows Autopatch service.
         2. **If the device is not managed by Intune**, the Windows Autopatch service can't gather device attributes such as operating system version, Intune enrollment date, device name and other attributes. When this happens, the Windows Autopatch service uses the Azure AD device attributes gathered and saved to its memory in **step 3a**.
             1. Once it has the device attributes gathered from Azure AD in **step 3a**, the device is flagged with the **Prerequisite failed** status, then added to the **Not ready** tab so the IT admin can review the reason(s) the device wasn't registered into Windows Autopatch. The IT admin will remediate these devices. In this case, the IT admin should check why the device wasn’t enrolled into Intune.
-            2. A common reason is when the Azure AD device ID is stale, it doesn’t have an Intune device ID associated with anymore. To remediate, [clean up any stale Azure AD device records from your tenant](/windows/deployment/windows-autopatch/deploy/windows-autopatch-register-devices#clean-up-dual-state-of-hybrid-azure-ad-joined-and-azure-registered-devices-in-your-azure-ad-tenant).
+            2. A common reason is when the Azure AD device ID is stale, it doesn’t have an Intune device ID associated with it anymore. To remediate, [clean up any stale Azure AD device records from your tenant](/windows/deployment/windows-autopatch/deploy/windows-autopatch-register-devices#clean-up-dual-state-of-hybrid-azure-ad-joined-and-azure-registered-devices-in-your-azure-ad-tenant).
         3. **If the device is managed by Intune**, the Windows Autopatch prerequisite check function continues to the next prerequisite check, which evaluates whether the device has checked into Intune in the last 28 days.
     3. **If the device is a Windows device or not**.
         1. If it’s a Windows device, Windows Autopatch evaluates the following requirements:
@@ -85,17 +85,17 @@ See the following detailed workflow diagram. The diagram covers the Windows Auto
     2. If the Windows Autopatch tenant’s existing managed device size is **>200**, the deployment ring assignment will be **First (1%)**, **Fast (9%)**, remaining devices go to the **Broad ring (90%)**.
 6. Once the deployment ring calculation is done, Windows Autopatch assigns devices to one of the following deployment ring groups:
     1. **Modern Workplace Devices-Windows Autopatch-First**
-        1. The Windows Autopatch device registration process doesn’t automatically assign devices to the Test ring represented by the Azure AD group (Modern Workplace Devices-Windows Autopatch-First). It’s important that you assign devices to the Test ring to validate the update deployments before the updates are deployed to a broader population of devices.
+        1. The Windows Autopatch device registration process doesn’t automatically assign devices to the Test ring represented by the Azure AD group (Modern Workplace Devices-Windows Autopatch-Test). It’s important that you assign devices to the Test ring to validate the update deployments before the updates are deployed to a broader population of devices.
     2. **Modern Workplace Devices-Windows Autopatch-Fast**
     3. **Modern Workplace Devices-Windows Autopatch-Broad**
-7. Windows Autopatch also assigns devices to the following Azure AD groups:
+7. Windows Autopatch also assigns devices to the following Azure AD groups when certain conditions apply:
     1. **Modern Workplace Devices - All**
         1. This group has all devices managed by Windows Autopatch.
-    2. **Modern Workplace Devices Dynamic - Windows 10**
+    2. When registering Windows 10 devices, use **Modern Workplace Devices Dynamic - Windows 10**
         1. This group has all devices managed by Windows Autopatch and that have Windows 10 installed.
-    3. **Modern Workplace Devices Dynamic - Windows 11**
+    3. When registering Windows 11 devices, use **Modern Workplace Devices Dynamic - Windows 11**
         1. This group has all devices managed by Windows Autopatch and that have Windows 11 installed.
-    4. **Modern Workplace Devices - Virtual Machine**
+    4. When registering virtual devices, use **Modern Workplace Devices - Virtual Machine**
         1. This group has all virtual devices managed by Windows Autopatch.
 8. In post-device registration, three actions occur:
     1. Windows Autopatch adds devices to its managed database.
