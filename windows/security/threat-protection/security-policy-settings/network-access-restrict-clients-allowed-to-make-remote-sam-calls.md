@@ -103,14 +103,15 @@ Audit-only mode configures the SAMRPC protocol to do the access check against th
 |Setting|RestrictRemoteSamAuditOnlyMode|
 |Data Type|REG_DWORD|
 |Value|1|
-|Notes|This setting can't be added or removed by using predefined Group Policy settings. <br> Administrators may create a custom policy to set the registry value if needed. <br> SAM responds dynamically to changes in this registry value without a reboot.|
+|Notes|This setting can't be added or removed by using predefined Group Policy settings. Administrators may create a custom policy to set the registry value if needed. SAM responds dynamically to changes in this registry value without a reboot. |
 
 ### Related events
 
 There are corresponding events that indicate when remote calls to the SAM are restricted, what accounts attempted to read from the SAM database, and more. The following workflow is recommended to identify applications that may be affected by restricting remote calls to SAM:
 
 1. Dump event logs to a common share.
-1. Review Event IDs 16962 to 16969, as listed in the following table, in the System log with event source Directory-Service-SAM.
+1. Right click the System log, select **Filter Current Log**, and specify `16962-16969` in the Event IDs field.
+1. Review Event IDs 16962 to 16969, as listed in the following table, with event source **Directory-Service-SAM**.
 1. Identify which security contexts are enumerating users or groups in the SAM database.
 1. Prioritize the callers, determine if they should be allowed or not, then include the allowed callers in the SDDL string.
 
