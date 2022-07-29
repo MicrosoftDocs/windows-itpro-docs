@@ -39,11 +39,12 @@ Windows Autopatch is included with Window 10/11 Enterprise E3 or higher. The fol
 | [Windows 10/11 Enterprise E5](/azure/active-directory/enterprise-users/licensing-service-plan-reference) | WIN10_VDA_E5 | 488ba24a-39a9-4473-8ee5-19291e71b002 |
 | [Windows 10/11 Enterprise VDA](/windows/deployment/deploy-enterprise-licenses#virtual-desktop-access-vda) | E3_VDA_only | d13ef257-988a-46f3-8fce-f47484dd4550 |
 
-The following Windows 64-bit editions are required for Windows Autopatch:
+The following Windows OS editions, builds and architecture are supported in Windows Autopatch:
 
-- Windows 10/11 Pro
-- Windows 10/11 Enterprise
-- Windows 10/11 Pro for Workstations
+- x64 architecture
+- Windows 10 (1809+)/11 Pro
+- Windows 10 (1809+)/11 Enterprise
+- Windows 10 (1809+)/11 Pro for Workstations
 
 ## Configuration Manager Co-management requirements
 
