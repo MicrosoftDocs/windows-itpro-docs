@@ -91,11 +91,11 @@ See the following detailed workflow diagram. The diagram covers the Windows Auto
 7. Windows Autopatch also assigns devices to the following Azure AD groups when certain conditions apply:
     1. **Modern Workplace Devices - All**
         1. This group has all devices managed by Windows Autopatch.
-    2. When registering Windows 10 devices - **Modern Workplace Devices Dynamic - Windows 10**
+    2. When registering Windows 10 devices, use **Modern Workplace Devices Dynamic - Windows 10**
         1. This group has all devices managed by Windows Autopatch and that have Windows 10 installed.
-    3. When registering Windows 11 devices - **Modern Workplace Devices Dynamic - Windows 11**
+    3. When registering Windows 11 devices, use **Modern Workplace Devices Dynamic - Windows 11**
         1. This group has all devices managed by Windows Autopatch and that have Windows 11 installed.
-    4. When registering virtual devices - **Modern Workplace Devices - Virtual Machine**
+    4. When registering virtual devices, use **Modern Workplace Devices - Virtual Machine**
         1. This group has all virtual devices managed by Windows Autopatch.
 8. In post-device registration, three actions occur:
     1. Windows Autopatch adds devices to its managed database.
