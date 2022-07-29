@@ -58,6 +58,12 @@ The **Overall security update status** chart is displayed in the **Summary** tab
 
 ## Quality updates tab
 
+The **Quality updates** tab contains tiles for the following information:
+
+- **Devices count**: Count of devices that have determined at least one of the latest security updates is or was applicable, regardless of of installation state of the update
+- **Latest security update**:
+- **Security update status**: 
+- **Total alerts**: 
 
 ## Feature updates tab
 
