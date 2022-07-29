@@ -3253,7 +3253,7 @@ The table below shows the applicability of Windows:
 
 <!--/Scope-->
 <!--Description-->
-Enables the IT admin to schedule the time of the update installation. Noting that there is a +/- 30 minute window to allow for higher success rates of installation.
+Enables the IT admin to schedule the time of the update installation. Note that there is a window of approximately 30 minutes to allow for higher success rates of installation.
 
 The supported data type is an integer.
 
