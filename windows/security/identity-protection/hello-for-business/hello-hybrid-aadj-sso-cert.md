@@ -336,7 +336,7 @@ The certificate authority may only issue certificates for certificate templates 
 > [!Important]
 > Ensure you publish the **AADJ WHFB Authentication** certificate templates to the certificate authority that Microsoft Intune uses by way of the NDES servers. The NDES configuration asks you to choose a certificate authority from which it requests certificates.  You need to publish that certificate templates to that issuing certificate authority.  The **NDES-Intune Authentication** certificate is directly enrolled and can be published to any certificate authority.
 
-Sign-in to the certificate authority or management workstations with an _Enterprise Admin_ equivalent credentials.
+Sign in to the certificate authority or management workstations with an _enterprise admin_ -equivalent credential.
 
 1. Open the **Certificate Authority** management console.
 
@@ -851,7 +851,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
    ![Azure AD new group creation.](images/aadjcert/azureadcreatewhfbcertgroup.png)
 
-8. Click **Members**.  Use the  **Select members** pane to add members to this group. When finished click **Select**.
+8. Click **Members**.  Use the  **Select members** pane to add members to this group. When finished, click **Select**.
 
 9. Click **Create**.
 
