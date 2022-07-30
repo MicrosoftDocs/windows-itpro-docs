@@ -39,12 +39,8 @@ sections:
       - question: |
           Can I evaluate Windows 10 Enterprise?
         answer: |
-          Yes, a 90-day evaluation of Windows 10 Enterprise is available. The evaluation is available in Chinese (Simplified), Chinese (Traditional), English, French, German, Italian, Japanese, Korean, Portuguese (Brazil), and Spanish (Spain, International Sort). We highly recommend that organizations make use of the Windows 10 Enterprise 90-day evaluation to try out deployment and management scenarios, test compatibility with hardware and applications, and to get hands on experience with Windows 10 Enterprise features.
+          Yes, a 90-day evaluation of Windows 10 Enterprise is available through the [Evaluation Center](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise). The evaluation is available in Chinese (Simplified), Chinese (Traditional), English, French, German, Italian, Japanese, Korean, Portuguese (Brazil), and Spanish (Spain, International Sort). We highly recommend that organizations make use of the Windows 10 Enterprise 90-day Evaluation to try out deployment and management scenarios, test compatibility with hardware and applications, and to get hands on experience with Windows 10 Enterprise features.
 
-          > [!NOTE]
-          > The Microsoft Evaluation Center is temporarily unavailable. To access this download, see [Accessing trials and kits for Windows (Eval Center workaround)](https://techcommunity.microsoft.com/t5/windows-11/accessing-trials-and-kits-for-windows-eval-center-workaround/m-p/3361125).<!-- 6049663 -->
-
-          
   - name: Drivers and compatibility
     questions:
       - question: |
@@ -74,12 +70,9 @@ sections:
       - question: |
           Which deployment tools support Windows 10?
         answer: |
-          Updated versions of Microsoft deployment tools, including Microsoft Endpoint Configuration Manager, MDT, and the Windows Assessment and Deployment Kit (Windows ADK) have been released to support Windows 10.
+          Updated versions of Microsoft deployment tools, including Microsoft Endpoint Configuration Manager, MDT, and the Windows Assessment and Deployment Kit (Windows ADK) support Windows 10.
 
-          - [Microsoft Endpoint Configuration Manager](/mem/configmgr) simplifies the deployment and management of Windows 10. If you aren't currently using Configuration Manager, download a free 180-day trial.
-
-              > [!NOTE]
-              > The Microsoft Evaluation Center is temporarily unavailable. To access this download, see [Accessing trials and kits for Windows (Eval Center workaround)](https://techcommunity.microsoft.com/t5/windows-11/accessing-trials-and-kits-for-windows-eval-center-workaround/m-p/3361125).<!-- 6049663 -->
+          - [Microsoft Endpoint Configuration Manager](/mem/configmgr) simplifies the deployment and management of Windows 10. If you aren't currently using it, download a free 180-day trial of [Microsoft Endpoint Configuration Manager (current branch)](https://www.microsoft.com/evalcenter/evaluate-microsoft-endpoint-configuration-manager).
 
           - [MDT](/mem/configmgr/mdt) is a collection of tools, processes, and guidance for automating desktop and server deployment.
 
