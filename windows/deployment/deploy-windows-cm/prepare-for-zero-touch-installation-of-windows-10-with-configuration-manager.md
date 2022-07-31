@@ -7,49 +7,52 @@ ms.author: aaroncz
 ms.prod: w10
 ms.localizationpriority: medium
 author: aczechowski
-ms.topic: article
-ms.custom: seo-marvel-apr2020
+ms.topic: how-to
 ---
 
 # Prepare for Zero Touch Installation of Windows 10 with Configuration Manager
 
 **Applies to**
 
--   Windows 10
+- Windows 10
 
-This topic will walk you through the Zero Touch Installation process of Windows 10 operating system deployment (OSD) using Microsoft Endpoint Manager (ConfigMgr) [integrated](#why-integrate-mdt-with-configuration-manager) with Microsoft Deployment Toolkit (MDT). 
+This article walks you through the Zero Touch Installation (ZTI) process of Windows 10 OS deployment using Microsoft Endpoint Configuration Manager [integrated](#why-integrate-mdt-with-configuration-manager) with Microsoft Deployment Toolkit (MDT).
 
 ## Prerequisites
 
-In this topic, you will use [components](#components-of-configuration-manager-operating-system-deployment) of an existing Configuration Manager infrastructure to prepare for Windows 10 OSD. In addition to the base setup, the following configurations should be made in the Configuration Manager environment:
+In this article, you'll use [components](#components-of-configuration-manager-operating-system-deployment) of an existing Configuration Manager infrastructure to prepare for Windows 10 OSD. In addition to the base setup, the following configurations should be made in the Configuration Manager environment:
 
 - Configuration Manager current branch + all security and critical updates are installed.
-  - Note: Procedures in this guide use ConfigMgr 1910. For information about the version of Windows 10 supported by ConfigMgr, see [Support for Windows 10](/configmgr/core/plan-design/configs/support-for-windows-10).
-- The [Active Directory Schema has been extended](/configmgr/core/plan-design/network/extend-the-active-directory-schema) and System Management container created.
-- Active Directory Forest Discovery and Active Directory System Discovery are [enabled](/configmgr/core/servers/deploy/configure/configure-discovery-methods).
-- IP range [boundaries and a boundary group](/configmgr/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups) for content and site assignment have been created.
-- The Configuration Manager [reporting services](/configmgr/core/servers/manage/configuring-reporting) point role has been added and configured.
+
+    > [!NOTE]
+    > Procedures in this guide use Configuration Manager version 1910. For more information about the versions of Windows 10 supported by  Configuration Manager, see [Support for Windows 10](/mem/configmgr/core/plan-design/configs/support-for-windows-10).
+- The [Active Directory Schema has been extended](/mem/configmgr/core/plan-design/network/extend-the-active-directory-schema) and System Management container created.
+- Active Directory Forest Discovery and Active Directory System Discovery are [enabled](/mem/configmgr/core/servers/deploy/configure/configure-discovery-methods).
+- IP range [boundaries and a boundary group](/mem/configmgr/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups) for content and site assignment have been created.
+- The Configuration Manager [reporting services](/mem/configmgr/core/servers/manage/configuring-reporting) point role has been added and configured.
 - A file system folder structure and Configuration Manager console folder structure for packages has been created. Steps to verify or create this folder structure are [provided below](#review-the-sources-folder-structure).
 - The [Windows ADK](/windows-hardware/get-started/adk-install) (including USMT) version 1903, Windows PE add-on, WSIM 1903 update, [MDT](https://www.microsoft.com/download/details.aspx?id=54259) version 8456, and DaRT 10 (part of [MDOP 2015](https://my.visualstudio.com/Downloads?q=Desktop%20Optimization%20Pack%202015)) are installed.
-- The [CMTrace tool](/configmgr/core/support/cmtrace) (cmtrace.exe) is installed on the distribution point.
-  - Note: CMTrace is automatically installed with the current branch of Configuration Manager at **Program Files\Microsoft Configuration Manager\tools\cmtrace.exe**. In previous releases of ConfigMgr it was necessary to install the [Configuration Manager Toolkit](https://www.microsoft.com/download/details.aspx?id=50012) separately to get the CMTrace tool, but this is no longer needed.  Configuraton Manager version 1910 installs version 5.0.8913.1000 of the CMTrace tool.
+- The [CMTrace tool](/mem/configmgr/core/support/cmtrace) (cmtrace.exe) is installed on the distribution point.
 
-For the purposes of this guide, we will use three server computers: DC01, CM01 and HV01. 
+    > [!NOTE]
+    > CMTrace is automatically installed with the current branch of Configuration Manager.
+
+For the purposes of this guide, we'll use three server computers: DC01, CM01 and HV01. 
 - DC01 is a domain controller and DNS server for the contoso.com domain. DHCP services are also available and optionally installed on DC01 or another server.
 - CM01 is a domain member server and Configuration Manager software distribution point. In this guide CM01 is a standalone primary site server.
-- HV01 is a Hyper-V host computer that is used to build a Windows 10 reference image. This computer does not need to be a domain member.
+- HV01 is a Hyper-V host computer that is used to build a Windows 10 reference image. This computer doesn't need to be a domain member.
 
 All servers are running Windows Server 2019. However, an earlier, supported version of Windows Server can also be used. 
 
-All server and client computers referenced in this guide are on the same subnet. This is not required, but each server and client computer must be able to connect to each other to share files, and to resolve all DNS names and Active Directory information for the contoso.com domain. Internet connectivity is also required to download OS and application updates.
+All server and client computers referenced in this guide are on the same subnet. This configuration isn't required, but each server and client computer must be able to connect to each other to share files, and to resolve all DNS names and Active Directory information for the contoso.com domain. Internet connectivity is also required to download OS and application updates.
 
 ### Domain credentials
 
 The following generic credentials are used in this guide. You should replace these credentials as they appear in each procedure with your credentials.
 
-**Active Directory domain name**: contoso.com<br>
-**Domain administrator username**: administrator<br>
-**Domain administrator password**: pass@word1
+- **Active Directory domain name**: `contoso.com`
+- **Domain administrator username**: `administrator`
+-**Domain administrator password**: `pass@word1`
 
 ## Create the OU structure
 
@@ -60,7 +63,7 @@ On **DC01**:
 
 To create the OU structure, you can use the Active Directory Users and Computers console (dsa.msc), or you can use Windows PowerShell. The procedure below uses Windows PowerShell.
 
-To use Windows PowerShell, copy the following commands into a text file and save it as <b>C:\Setup\Scripts\ou.ps1</b>. Be sure that you are viewing file extensions and that you save the file with the .ps1 extension.
+To use Windows PowerShell, copy the following commands into a text file and save it as **C:\Setup\Scripts\ou.ps1**. Be sure that you're viewing file extensions and that you save the file with the `.ps1` extension.
 
 ```powershell
 $oulist = Import-csv -Path c:\oulist.txt
@@ -106,10 +109,10 @@ On **DC01**:
 2.  Select the Service Accounts OU and create the CM\_JD account using the following settings:
 
     * Name: CM\_JD
-    * User logon name: CM\_JD
-    * Password: pass@word1
+    * User sign-in name: CM\_JD
+    * Password: `pass@word1`
     * User must change password at next logon: Clear
-    * User cannot change password: Selected
+    * User can't change password: Selected
     * Password never expires: Selected
 
 3.  Repeat the step, but for the CM\_NAA account.
@@ -120,13 +123,13 @@ On **DC01**:
 
 ## Configure Active Directory permissions
 
-In order for the Configuration Manager Join Domain Account (CM\_JD) to join machines into the contoso.com domain you need to configure permissions in Active Directory. These steps assume you have downloaded the sample [Set-OUPermissions.ps1 script](https://go.microsoft.com/fwlink/p/?LinkId=619362) and copied it to C:\\Setup\\Scripts on DC01.
+In order for the Configuration Manager Join Domain Account (CM\_JD) to join machines into the contoso.com domain you need to configure permissions in Active Directory. These steps assume you've downloaded the sample [Set-OUPermissions.ps1 script](https://github.com/DeploymentArtist/SWP1/tree/master/Scripts) and copied it to C:\\Setup\\Scripts on DC01.
 
 On **DC01**:
 
 1. Sign in as contoso\administrator and enter the following at an elevated Windows PowerShell prompt:
 
-   ``` 
+   ```powershell
    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force
    Set-Location C:\Setup\Scripts
    .\Set-OUPermissions.ps1 -Account CM_JD -TargetOU "OU=Workstations,OU=Computers,OU=Contoso"
@@ -199,7 +202,7 @@ On **CM01**:
 
 1. Sign in as contoso\administrator.
 2. Ensure the Configuration Manager Console is closed before continuing.
-5. Click Start, type **Configure ConfigManager Integration**, and run the application the following settings:
+5. Select Start, type **Configure ConfigManager Integration**, and run the application the following settings:
 
    * Site Server Name: CM01.contoso.com
    * Site code: PS1
@@ -214,9 +217,9 @@ Most organizations want to display their name during deployment. In this section
 
 On **CM01**:
 
-1.  Open the Configuration Manager Console, select the Administration workspace, then click **Client Settings**.
-2.  In the right pane, right-click **Default Client Settings** and then click **Properties**.
-3.  In the **Computer Agent** node, in the **Organization name displayed in Software Center** text box, type in **Contoso** and click **OK**.
+1.  Open the Configuration Manager Console, select the Administration workspace, then select **Client Settings**.
+2.  In the right pane, right-click **Default Client Settings** and then select **Properties**.
+3.  In the **Computer Agent** node, in the **Organization name displayed in Software Center** text box, type in **Contoso** and select **OK**.
 
 ![figure 9.](../images/mdt-06-fig10.png)
 
@@ -261,7 +264,7 @@ On **CM01**:
     Configure the CM01 distribution point for PXE.
 
     >[!NOTE]
-    >If you select **Enable a PXE responder without Windows Deployment Service**, then WDS will not be installed, or if it is already installed it will be suspended, and the **ConfigMgr PXE Responder Service** (SccmPxe) will be used instead of WDS. The ConfigMgr PXE Responder does not support multicast. For more information, see [Install and configure distribution points](/configmgr/core/servers/deploy/configure/install-and-configure-distribution-points#bkmk_config-pxe).
+    >If you select **Enable a PXE responder without Windows Deployment Service**, then WDS will not be installed, or if it is already installed it will be suspended, and the **ConfigMgr PXE Responder Service** (SccmPxe) will be used instead of WDS. The ConfigMgr PXE Responder does not support multicast. For more information, see [Install and configure distribution points](/mem/configmgr/core/servers/deploy/configure/install-and-configure-distribution-points#bkmk_config-pxe).
 
 4.  Using the CMTrace tool, review the C:\\Program Files\\Microsoft Configuration Manager\\Logs\\distmgr.log file. Look for ConfigurePXE and CcmInstallPXE lines.
 
@@ -275,13 +278,13 @@ On **CM01**:
 
     The contents of the D:\\RemoteInstall\\SMSBoot\\x64 folder after you enable PXE.
 
-    **Note**: These files are used by WDS. They are not used by the ConfigMgr PXE Responder. This article does not use the ConfigMgr PXE Responder.
+    **Note**: These files are used by WDS. They aren't used by the ConfigMgr PXE Responder. This article doesn't use the ConfigMgr PXE Responder.
 
 Next, see [Create a custom Windows PE boot image with Configuration Manager](create-a-custom-windows-pe-boot-image-with-configuration-manager.md).
 
 ## Components of Configuration Manager operating system deployment
 
-Operating system deployment with Configuration Manager is part of the normal software distribution infrastructure, but there are additional components. For example, operating system deployment in Configuration Manager may use the State Migration Point role, which is not used by normal application deployment in Configuration Manager. This section describes the Configuration Manager components involved with the deployment of an operating system, such as Windows 10.
+Operating system deployment with Configuration Manager is part of the normal software distribution infrastructure, but there are other components. For example, operating system deployment in Configuration Manager may use the State Migration Point role, which isn't used by normal application deployment in Configuration Manager. This section describes the Configuration Manager components involved with the deployment of an operating system, such as Windows 10.
 
 -   **State migration point (SMP).** The state migration point is used to store user state migration data during computer replace scenarios.
 -   **Distribution point (DP).** The distribution point is used to store all packages in Configuration Manager, including the operating system deployment-related packages.
@@ -291,26 +294,22 @@ Operating system deployment with Configuration Manager is part of the normal sof
 -   **Operating system images.** The operating system image package contains only one file, the custom .wim image. This is typically the production deployment image.
 -   **Operating system installers.** The operating system installers were originally added to create reference images using Configuration Manager. Instead, we recommend that you use MDT Lite Touch to create your reference images. For more information on how to create a reference image, see [Create a Windows 10 reference image](../deploy-windows-mdt/create-a-windows-10-reference-image.md).
 -   **Drivers.** Like MDT Lite Touch, Configuration Manager also provides a repository (catalog) of managed device drivers.
--   **Task sequences.** The task sequences in Configuration Manager look and feel pretty much like the sequences in MDT Lite Touch, and they are used for the same purpose. However, in Configuration Manager the task sequence is delivered to the clients as a policy via the Management Point (MP). MDT provides additional task sequence templates to Configuration Manager.
+-   **Task sequences.** The task sequences in Configuration Manager look and feel much like the sequences in MDT Lite Touch, and they're used for the same purpose. However, in Configuration Manager the task sequence is delivered to the clients as a policy via the Management Point (MP). MDT provides extra task sequence templates to Configuration Manager.
 
-    **Note**  The Windows Assessment and Deployment Kit (ADK) for Windows 10 is also required to support management and deployment of Windows 10.
+    > [!NOTE]
+    > The Windows Assessment and Deployment Kit (ADK) for Windows 10 is also required to support management and deployment of Windows 10.
 
 ## Why integrate MDT with Configuration Manager
 
-As noted above, MDT adds many enhancements to Configuration Manager. While these enhancements are called Zero Touch, that name does not reflect how deployment is conducted. The following sections provide a few samples of the 280 enhancements that MDT adds to Configuration Manager.
-
->[!NOTE]
->MDT installation requires the following:
->-   The Windows ADK for Windows 10 (installed in the previous procedure)
->-   Windows PowerShell ([version 5.1](https://www.microsoft.com/download/details.aspx?id=54616) is recommended; type **$host** to check)
->-   Microsoft .NET Framework
+As noted above, MDT adds many enhancements to Configuration Manager. While these enhancements are called Zero Touch, that name doesn't reflect how deployment is conducted. The following sections provide a few samples of the 280 enhancements that MDT adds to Configuration Manager.
 
 ### MDT enables dynamic deployment
 
-When MDT is integrated with Configuration Manager, the task sequence takes additional instructions from the MDT rules. In its most simple form, these settings are stored in a text file, the CustomSettings.ini file, but you can store the settings in Microsoft SQL Server databases, or have Microsoft Visual Basic Scripting Edition (VBScripts) or web services provide the settings used.
+When MDT is integrated with Configuration Manager, the task sequence takes other instructions from the MDT rules. In its most simple form, these settings are stored in a text file, the CustomSettings.ini file, but you can store the settings in Microsoft SQL Server databases, or have a script or web services provide the settings used.
 
 The task sequence uses instructions that allow you to reduce the number of task sequences in Configuration Manager and instead store settings outside the task sequence. Here are a few examples:
--   The following settings instruct the task sequence to install the HP Hotkeys package, but only if the hardware is a HP EliteBook 8570w. Note that you don't have to add the package to the task sequence.
+
+-   The following settings instruct the task sequence to install the HP Hotkeys package, but only if the hardware is an HP EliteBook 8570w. You don't have to add the package to the task sequence.
 
     ``` syntax
     [Settings] 
@@ -342,7 +341,7 @@ The Gather action in the task sequence is reading the rules.
 
 ### MDT adds an operating system deployment simulation environment
 
-When testing a deployment, it is important to be able to quickly test any changes you make to the deployment without needing to run through an entire deployment. MDT rules can be tested very quickly, saving significant testing time in a deployment project. For more information, see [Configure MDT settings](../deploy-windows-mdt/configure-mdt-settings.md).
+When testing a deployment, it's important to be able to quickly test any changes you make to the deployment without needing to run through an entire deployment. MDT rules can be tested quickly, saving significant testing time in a deployment project. For more information, see [Configure MDT settings](../deploy-windows-mdt/configure-mdt-settings.md).
 
 ![figure 3.](../images/mdt-06-fig03.png)
 
@@ -362,26 +361,34 @@ For some deployment scenarios, you may need to prompt the user for information d
 
 ![figure 5.](../images/mdt-06-fig05.png)
 
-The optional UDI wizard open in the UDI Wizard Designer.
+The optional UDI wizard opens in the UDI Wizard Designer.
 
 MDT Zero Touch simply extends Configuration Manager with many useful built-in operating system deployment components. By providing well-established, supported solutions, MDT reduces the complexity of deployment in Configuration Manager.
 
 ### Why use MDT Lite Touch to create reference images
 
 You can create reference images for Configuration Manager in Configuration Manager, but in general we recommend creating them in MDT Lite Touch for the following reasons:
+
 -   You can use the same image for every type of operating system deployment - Microsoft Virtual Desktop Infrastructure (VDI), Microsoft System Center Virtual Machine Manager (VMM), MDT, Configuration Manager, Windows Deployment Services (WDS), and more.
--   Configuration Manager performs deployment in the LocalSystem context. This means that you cannot configure the Administrator account with all of the settings that you would like to be included in the image. MDT runs in the context of the Local Administrator, which means you can configure the look and feel of the configuration and then use the CopyProfile functionality to copy these changes to the default user during deployment.
--   The Configuration Manager task sequence does not suppress user interface interaction.
--   MDT Lite Touch supports a Suspend action that allows for reboots, which is useful when you need to perform a manual installation or check the reference image before it is automatically captured.
--   MDT Lite Touch does not require any infrastructure and is easy to delegate.
+-   Configuration Manager performs deployment in the LocalSystem context. This means that you can't configure the Administrator account with all of the settings that you would like to be included in the image. MDT runs in the context of the Local Administrator, which means you can configure the look and feel of the configuration and then use the CopyProfile functionality to copy these changes to the default user during deployment.
+-   The Configuration Manager task sequence doesn't suppress user interface interaction.
+-   MDT Lite Touch supports a Suspend action that allows for reboots, which is useful when you need to perform a manual installation or check the reference image before it's automatically captured.
+-   MDT Lite Touch doesn't require any infrastructure and is easy to delegate.
 
-## Related topics
+## Related articles
 
-[Create a custom Windows PE boot image with Configuration Manager](create-a-custom-windows-pe-boot-image-with-configuration-manager.md)<br>
-[Add a Windows 10 operating system image using Configuration Manager](add-a-windows-10-operating-system-image-using-configuration-manager.md)<br>
-[Create an application to deploy with Windows 10 using Configuration Manager](create-an-application-to-deploy-with-windows-10-using-configuration-manager.md)<br>
-[Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager](add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager.md)<br>
-[Create a task sequence with Configuration Manager and MDT](./create-a-task-sequence-with-configuration-manager-and-mdt.md)<br>
-[Deploy Windows 10 using PXE and Configuration Manager](deploy-windows-10-using-pxe-and-configuration-manager.md)<br>
-[Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md)<br>
+[Create a custom Windows PE boot image with Configuration Manager](create-a-custom-windows-pe-boot-image-with-configuration-manager.md)
+
+[Add a Windows 10 operating system image using Configuration Manager](add-a-windows-10-operating-system-image-using-configuration-manager.md)
+
+[Create an application to deploy with Windows 10 using Configuration Manager](create-an-application-to-deploy-with-windows-10-using-configuration-manager.md)
+
+[Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager](add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager.md)
+
+[Create a task sequence with Configuration Manager and MDT](./create-a-task-sequence-with-configuration-manager-and-mdt.md)
+
+[Deploy Windows 10 using PXE and Configuration Manager](deploy-windows-10-using-pxe-and-configuration-manager.md)
+
+[Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md)
+
 [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](replace-a-windows-7-client-with-windows-10-using-configuration-manager.md)
