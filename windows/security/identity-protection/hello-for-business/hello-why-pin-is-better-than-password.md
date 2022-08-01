@@ -83,6 +83,14 @@ Windows Hello enables biometric sign-in for Windows 10: fingerprint, iris, or f
 
 If you only had a biometric sign-in configured and, for any reason, were unable to use that method to sign in, you would have to sign in using your account and password, which doesn't provide you the same level of protection as Hello.
 
+## Explanation of GPO related to Interactive logon: Do not require CNTL+ALT+Delete 
+
+There is a vulnerability explained in the below article it applicable to Pasword login. 
+- [Interactive logon Do not require CTRL+ALT+DEL (Windows 10) - Windows security | Microsoft Docs ](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/interactive-logon-do-not-require-ctrl-alt-del)
+       
+           
+However, with WHFB setup this vulnerability no longer applicable due to WHFB credentials are not equal to Password as explained above in this article.   
+
 ## Related topics
 
 - [Windows Hello for Business](hello-identity-verification.md)
