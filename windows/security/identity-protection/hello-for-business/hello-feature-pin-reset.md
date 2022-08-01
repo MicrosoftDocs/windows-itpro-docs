@@ -78,6 +78,7 @@ Using Group Policy, Microsoft Intune or a compatible MDM solution, you can confi
 ### Enable the Microsoft PIN Reset Service in your Azure AD tenant
 
 Before you can remotely reset PINs, you must register two applications in your Azure Active Directory tenant:
+
 - PIN Reset Service
 - PIN Reset Client
 
@@ -94,12 +95,14 @@ Before you can remotely reset PINs, you must register two applications in your A
    ![PIN reset client application in Azure.](images/pinreset/pin-reset-client-prompt.png)
 
 #### Confirm that the two PIN Reset service principals are registered in your tenant
+
 1. Sign in to the [Microsoft Entra Manager admin center](https://entra.microsoft.com)
 1. Select **Azure Active Directory** > **Applications** > **Enterprise applications**
 1. Search by application name "Microsoft PIN" and both **Microsoft Pin Reset Service Production** and **Microsoft Pin Reset Client Production** will show up in the list
    :::image type="content" alt-text="PIN reset service permissions page." source="images/pinreset/pin-reset-applications.png" lightbox="images/pinreset/pin-reset-applications-expanded.png":::
 
 ### Enable PIN Recovery on your devices
+
 Before you can remotely reset PINs, your devices must be configured to enable PIN Recovery. Follow the instructions below to configure your devices using either Microsoft Intune, Group Policy Objects (GPO), or Configuration Service Providers (CSP).
 
 #### [Intune](#tab/intune)
@@ -128,8 +131,10 @@ You can configure Windows devices to use the **Microsoft PIN Reset Service** usi
 
 >[!NOTE]
 > You can also configure PIN recovery from the **Endpoint security** blade:
+
 > 1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431)
 > 1. Select **Endpoint security** > **Account protection** > **Create Policy**
+
 #### [GPO](#tab/gpo)
 
 You can configure Windows devices to use the **Microsoft PIN Reset Service** using a Group Policy Object (GPO).
@@ -149,7 +154,9 @@ You can configure Windows devices to use the **Microsoft PIN Reset Service** usi
 
 >[!NOTE]
 > You must replace `TenantId` with the identifier of your Azure Active Directory tenant.
+
 ---
+
 #### Confirm that PIN Recovery policy is enforced on the devices
 
 The _PIN reset_ configuration can be viewed by running [**dsregcmd /status**](/azure/active-directory/devices/troubleshoot-device-dsregcmd) from the command line. This state can be found under the output in the user state section as the **CanReset** line item. If **CanReset** reports as DestructiveOnly, then only destructive PIN reset is enabled. If **CanReset** reports DestructiveAndNonDestructive, then non-destructive PIN reset is enabled.
