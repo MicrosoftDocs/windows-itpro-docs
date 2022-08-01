@@ -33,9 +33,9 @@ Destructive and non-destructive PIN reset use the same steps for initiating a PI
 
 ### Reset PIN from Settings
 
-1. Sign-in to Windows 10 using an alternate credential
-1. Open **Settings**, select **Accounts** > **Sign-in options**
-1. Select **PIN (Windows Hello)** > **I forgot my PIN** and follow the instructions
+- Sign-in to Windows 10 using an alternate credential
+- Open **Settings**, select **Accounts** > **Sign-in options**
+- Select **PIN (Windows Hello)** > **I forgot my PIN** and follow the instructions
 
 ### Reset PIN above the Lock Screen
 
