@@ -15,13 +15,13 @@ ms.topic: article
 **Applies to**
 -   Windows 10, version 1607
 
-Before you deploy User Experience Virtualization (UE-V), review this topic for important information about the type of deployment you’re planning and for preparations you can make beforehand so that your deployment is successful. If you leave this page, be sure to come back and read through the planning information in this topic.
+Before you deploy User Experience Virtualization (UE-V), review this topic for important information about the type of deployment you're planning and for preparations you can make beforehand so that your deployment is successful. If you leave this page, be sure to come back and read through the planning information in this topic.
 
 ## Plan your UE-V deployment
 
 With UE-V, you can synchronize user-defined application and operating system settings across all the devices that a user works from. Use UE-V to synchronize settings for Windows applications and custom applications, such as third-party and line-of-business applications. 
 
-Whether you want to synchronize settings for only default Windows applications or for both Windows and custom applications, you’ll need to first deploy the features required to use UE-V.  
+Whether you want to synchronize settings for only default Windows applications or for both Windows and custom applications, you'll need to first deploy the features required to use UE-V.  
 
 [Deploy required UE-V features](uev-deploy-required-features.md)
 
@@ -29,7 +29,7 @@ Whether you want to synchronize settings for only default Windows applications o
 
 -   [Enable the UE-V service](uev-deploy-required-features.md#enable-the-ue-v-service) on user computers
 
-If you want to use UE-V to synchronize user-defined settings for custom applications (third-party or line-of-business), you’ll need to install and configure these optional additional UE-V features:
+If you want to use UE-V to synchronize user-defined settings for custom applications (third-party or line-of-business), you'll need to install and configure these optional additional UE-V features:
 
 [Deploy UE-V for custom applications](uev-deploy-uev-for-custom-applications.md)
 
@@ -49,11 +49,11 @@ The workflow diagram below illustrates a typical UE-V deployment and the decisio
 
 ### Planning a UE-V deployment 
 
-Review the following topics to determine which UE-V components you’ll be deploying.
+Review the following topics to determine which UE-V components you'll be deploying.
 
 -   [Decide whether to synchronize settings for custom applications](#decide-whether-to-synchronize-settings-for-custom-applications)
 
-    If you want to synchronize settings for custom applications, you’ll need to install the UE-V template generator. Use the generator to create custom settings location templates, which involves the following tasks:
+    If you want to synchronize settings for custom applications, you'll need to install the UE-V template generator. Use the generator to create custom settings location templates, which involves the following tasks:
 
     -   Review the [settings that are synchronized automatically in a UE-V deployment](#settings-automatically-synchronized-in-a-ue-v-deployment).
 
@@ -79,11 +79,7 @@ This section explains which settings are synchronized by default in UE-V, includ
 
 -   A statement of support for Windows applications setting synchronization
 
-For downloadable UE-V templates, see:
-
-- [Microsoft Authored Office 2016 UE-V Templates](https://gallery.technet.microsoft.com/Authored-Office-2016-32-0dc05cd8)
-
-- [User Experience Virtualization (UE-V) settings templates for Microsoft Office](https://www.microsoft.com/download/details.aspx?id=46367) (for Office 2013 and Office 2010) 
+For downloadable UE-V templates, see: [User Experience Virtualization (UE-V) settings templates for Microsoft Office](https://www.microsoft.com/download/details.aspx?id=46367)
 
 ### Desktop applications synchronized by default in UE-V
 
@@ -91,7 +87,7 @@ When you enable the UE-V service on user devices, it registers a default group o
 
 | Application category | Description |
 |-----------------------------|-------------------|
-| Microsoft Office 2016 applications<br>[Download a list of all settings synced](https://gallery.technet.microsoft.com/Authored-Office-2016-32-0dc05cd8) | Microsoft Access 2016<br>Microsoft Lync 2016<br>Microsoft Excel 2016<br>Microsoft OneNote 2016<br>Microsoft Outlook 2016<br>Microsoft PowerPoint 2016<br>Microsoft Project 2016<br>Microsoft Publisher 2016<br>Microsoft SharePoint Designer 2013 (not updated for 2016)<br>Microsoft Visio 2016<br>Microsoft Word 2016<br>Microsoft Office Upload Manager<br>Microsoft Infopath has been removed (deprecated) from the Office 2016 suite |
+| Microsoft Office 2016 applications | Microsoft Access 2016<br>Microsoft Lync 2016<br>Microsoft Excel 2016<br>Microsoft OneNote 2016<br>Microsoft Outlook 2016<br>Microsoft PowerPoint 2016<br>Microsoft Project 2016<br>Microsoft Publisher 2016<br>Microsoft SharePoint Designer 2013 (not updated for 2016)<br>Microsoft Visio 2016<br>Microsoft Word 2016<br>Microsoft Office Upload Manager<br>Microsoft Infopath has been removed (deprecated) from the Office 2016 suite |
 | Microsoft Office 2013 applications<br>[Download a list of all settings synced](https://www.microsoft.com/download/details.aspx?id=46367) | Microsoft Word 2013<br>Microsoft Excel 2013<br>Microsoft Outlook 2013<br>Microsoft Access 2013<br>Microsoft Project 2013<br>Microsoft PowerPoint 2013<br>Microsoft Publisher 2013<br>Microsoft Visio 2013<br>Microsoft InfoPath 2013<br>Microsoft Lync 2013<br>Microsoft OneNote 2013<br>Microsoft SharePoint Designer 2013<br>Microsoft Office 2013 Upload Center<br>Microsoft OneDrive for Business 2013
 | Microsoft Office 2010 applications<br>[Download a list of all settings synced](https://www.microsoft.com/download/details.aspx?id=46367) | Microsoft Word 2010<br>Microsoft Excel 2010<br>Microsoft Outlook 2010<br>Microsoft Access 2010<br>Microsoft Project 2010<br>Microsoft PowerPoint 2010<br>Microsoft Publisher 2010<br>Microsoft Visio 2010<br>Microsoft SharePoint Workspace 2010<br>Microsoft InfoPath 2010<br>Microsoft Lync 2010<br>Microsoft OneNote 2010<br>Microsoft SharePoint Designer 2010  |
 | Browser options: Internet Explorer 11 and 10 | Synchronize favorites, home page, tabs, and toolbars.<br>**Note**<br>UE-V does not roam settings for Internet Explorer cookies. |
@@ -120,7 +116,7 @@ UE-V includes settings location templates that capture settings values for these
 | **Application Settings** | Windows applications   | Close application<br>Windows application settings change event | Start the UE-V App Monitor at startup<br>Open app<br>Windows application settings change event<br>Arrival of a settings package     |
 |           | Desktop applications   | Application closes | Application opens and closes        |
 | **Desktop settings**     | Desktop background     | Lock or log off | Log on, unlock, remote connect, notification of new package arrival, or scheduled task runs |
-|           | Ease of Access (Common – Accessibility, Narrator, Magnifier, On-Screen-Keyboard) | Lock or Log off | Log on        |
+|           | Ease of Access (Common - Accessibility, Narrator, Magnifier, On-Screen-Keyboard) | Lock or Log off | Log on        |
 |           | Ease of Access (Shell - Audio, Accessibility, Keyboard, Mouse)    | Lock or log off | Log on, unlock, remote connect, notification of new package arrival, or scheduled task runs  |
 |           | Desktop settings       | Lock or log off | Log on        |
 
@@ -150,7 +146,7 @@ Printer roaming in UE-V requires one of these scenarios:
 
 ### Determine whether you need settings synchronized for other applications
 
-After you have reviewed the settings that are synchronized automatically in a UE-V deployment, you’ll need to decide whether to synchronize settings for other applications as your decision will determine how you deploy UE-V throughout your enterprise.
+After you have reviewed the settings that are synchronized automatically in a UE-V deployment, you'll need to decide whether to synchronize settings for other applications as your decision will determine how you deploy UE-V throughout your enterprise.
 
 As an administrator, when you consider which desktop applications to include in your UE-V solution, consider which settings can be customized by users, and how and where the application stores its settings. Not all desktop applications have settings that can be customized or that are routinely customized by users. In addition, not all desktop applications settings can be synchronized safely across multiple devices or environments.
 
@@ -164,7 +160,7 @@ In general, you can synchronize settings that meet the following criteria:
 
 ### Checklist for evaluating custom applications
 
-If you’ve decided that you need to synchronize settings for custom applications, use this checklist to determine which applications you’ll include.
+If you've decided that you need to synchronize settings for custom applications, use this checklist to determine which applications you'll include.
 
 | &nbsp;   | Description |
 |-------|--------------------------|
@@ -266,7 +262,7 @@ For more information, see the [Windows Application List](uev-managing-settings-l
 
 ### Custom UE-V settings location templates
 
-If you are deploying UE-V to synchronize settings for custom applications, you’ll use the UE-V template generator to create custom settings location templates for those desktop applications. After you create and test a custom settings location template in a test environment, you can deploy the settings location templates to user devices.
+If you are deploying UE-V to synchronize settings for custom applications, you'll use the UE-V template generator to create custom settings location templates for those desktop applications. After you create and test a custom settings location template in a test environment, you can deploy the settings location templates to user devices.
 
 Custom settings location templates must be deployed with an existing deployment infrastructure, such as an enterprise software distribution method, including Microsoft Endpoint Configuration Manager, with preferences, or by configuring a UE-V settings template catalog. Templates that are deployed with Configuration Manager or Group Policy must be registered using UE-V WMI or Windows PowerShell.
 
@@ -298,7 +294,7 @@ Specify your requirements for UE-V with standard disk capacity and network healt
 
 UE-V uses a Server Message Block (SMB) share for the storage of settings packages. The size of settings packages varies depending on the settings information for each application. While most settings packages are small, the synchronization of potentially large files, such as desktop images, can result in poor performance, particularly on slower networks.
 
-To reduce problems with network latency, create settings storage locations on the same local networks where the users’ computers reside. We recommend 20 MB of disk space per user for the settings storage location.
+To reduce problems with network latency, create settings storage locations on the same local networks where the users' computers reside. We recommend 20 MB of disk space per user for the settings storage location.
 
 By default, UE-V synchronization times out after 2 seconds to prevent excessive lag due to a large settings package. You can configure the SyncMethod=SyncProvider setting by using [Group Policy objects](uev-configuring-uev-with-group-policy-objects.md).
 
@@ -339,7 +335,7 @@ Before you proceed, ensure that your environment meets these requirements for us
 > [!NOTE]
 > - Windows Server 2012 operating systems come with .NET Framework 4.5 installed. The Windows 10 operating system comes with .NET Framework 4.6 installed.
 > 
-> - The “Delete Roaming Cache” policy for mandatory profiles is not supported with UE-V and should not be used.
+> - The "Delete Roaming Cache" policy for mandatory profiles is not supported with UE-V and should not be used.
 
 There are no special random access memory (RAM) requirements specific to UE-V.
 

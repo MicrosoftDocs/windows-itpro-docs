@@ -1,6 +1,6 @@
 ---
 title: Working with Custom UE-V Templates and the UE-V Template Generator
-description: Create your own custom settings location templates by working with Custom User Experience Virtualization (UE-V) Templates and the UE-V Template Generator.
+description: Create your own custom settings location templates by working with Custom User Experience Virtualization (UE-V) Templates and the UE-V Template Generator.
 author: aczechowski
 ms.prod: w10
 ms.date: 04/19/2017
@@ -14,7 +14,7 @@ ms.topic: article
 # Working with custom UE-V templates and the UE-V template generator
 
 **Applies to**
--   Windows 10, version 1607
+-   Windows 10
 
 User Experience Virtualization (UE-V) uses XML files called ***settings location templates*** to monitor and synchronize application settings and Windows settings between user devices. By default, some settings location templates are included in UE-V. However, if you want to synchronize settings for desktop applications other than those included in the default templates, you can create your own custom settings location templates with the UE-V template generator. You can also edit or validate custom settings location templates with the UE-V template generator.
 
@@ -33,9 +33,9 @@ Discovered settings are grouped into two categories: **Standard** and **Non-stan
 
 The UE-V template generator opens the application as part of the discovery process. The generator can capture settings in the following locations:
 
--   **Registry Settings** – Registry locations under **HKEY\_CURRENT\_USER**
+-   **Registry Settings** - Registry locations under **HKEY\_CURRENT\_USER**
 
--   **Application Settings Files** – Files that are stored under \\ **Users** \\ \[User name\] \\ **AppData** \\ **Roaming**
+-   **Application Settings Files** - Files that are stored under \\ **Users** \\ \[User name\] \\ **AppData** \\ **Roaming**
 
 The UE-V template generator excludes locations, which commonly store application software files, but do not synchronize well between user computers or environments. The UE-V template generator excludes these locations. Excluded locations are as follows:
 
@@ -57,7 +57,7 @@ If registry keys and files that are stored in these locations are required to sy
 
 Use the UE-V template generator to edit settings location templates. When the revised settings are added to the templates with the UE-V template generator, the version information within the template is automatically updated to ensure that any existing templates that are deployed in the enterprise are updated correctly.
 
-**To edit a UE-V settings location template with the UE-V template generator**
+### To edit a UE-V settings location template with the UE-V template generator
 
 1.  Open the **Start** menu and navigate to **Windows Kits** > **Microsoft User Experience Virtualization (UE-V) Template Generator** to open the template generator.
 
@@ -91,7 +91,7 @@ Use the UE-V template generator to edit settings location templates. When the re
 
     After you edit the settings location template for an application, you should test the template. Deploy the revised settings location template in a lab environment before you put it into production in the enterprise.
 
-**How to manually edit a settings location template**
+### How to manually edit a settings location template
 
 1.  Create a local copy of the settings location template .xml file. UE-V settings location templates are .xml files that identify the locations where application store settings values.
 
@@ -108,14 +108,14 @@ Use the UE-V template generator to edit settings location templates. When the re
 
 6.  Validate the modified settings location template file by using the UE-V template generator.
 
-7.  You must register the edited UE-V settings location template before it can synchronize settings between client computers. To register a template, open Windows PowerShell, and then run the following cmdlet: `update-uevtemplate [templatefilename]`. You can then copy the file to the settings storage catalog. The UE-V Agent on users’ computers should then update as scheduled in the scheduled task.
+7.  You must register the edited UE-V settings location template before it can synchronize settings between client computers. To register a template, open Windows PowerShell, and then run the following cmdlet: `update-uevtemplate [templatefilename]`. You can then copy the file to the settings storage catalog. The UE-V Agent on users' computers should then update as scheduled in the scheduled task.
 
 ## <a href="" id="validate"></a>Validate settings location templates with the UE-V template generator
 
 
 It is possible to create or edit settings location templates in an XML editor without using the UE-V template generator. If you do, you can use the UE-V template generator to validate that the new or revised XML matches the schema that has been defined for the template.
 
-**To validate a UE-V settings location template with the UE-V template generator**
+To validate a UE-V settings location template with the UE-V template generator:
 
 1.  Open the **Start** menu and navigate to **Windows Kits** > **Microsoft User Experience Virtualization (UE-V) Template Generator** to open the template generator.
 
@@ -129,35 +129,8 @@ It is possible to create or edit settings location templates in an XML editor wi
 
     After you validate the settings location template for an application, you should test the template. Deploy the template in a lab environment before you put it into a production environment in enterprise.
 
-## <a href="" id="share"></a>Share settings location templates with the Template Gallery
-
-The [User Experience Virtualization Template Gallery](https://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=RootCategory&f%5B0%5D.Value=UE-V&f%5B0%5D.Text=UE-V) enables administrators to share their UE-V settings location templates. Upload your settings location templates to the gallery for other users to use, and download templates that other users have created.
-
-Before you share a settings location template on the UE-V template gallery, ensure it does not contain any personal or company information. You can use any XML viewer to open and view the contents of a settings location template file. The following template values should be reviewed before you share a template with anyone outside your company.
-
--   Template Author Name – Specify a general, non-identifying name for the template author name or exclude this data from the template.
-
--   Template Author Email – Specify a general, non-identifying template author email or exclude this data from the template.
-
-Before you deploy any settings location template that you have downloaded from the UE-V gallery, you should first test the template to ensure that the application settings synchronize settings correctly in a test environment.
-
-
-
-
-
-
-## Related topics
-
+## Next steps
 
 [Administering UE-V](uev-administering-uev.md)
 
 [Use UE-V with custom applications](uev-deploy-uev-for-custom-applications.md)
-
- 
-
- 
-
-
-
-
-
