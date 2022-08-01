@@ -83,14 +83,14 @@ Before you can remotely reset PINs, you must register two applications in your A
 
 #### Connect Azure Active Directory with the PIN Reset Service
 
-1. Go to the [Microsoft PIN Reset Service Production website](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=b8456c59-1230-44c7-a4a2-99b085333e84&resource=https%3A%2F%2Fgraph.windows.net&redirect_uri=https%3A%2F%2Fcred.microsoft.com&state=e9191523-6c2f-4f1d-a4f9-c36f26f89df0&prompt=admin_consent), and sign in using a Global Administrator account you use to manage your Azure Active Directory tenant.
-1. After you have logged in, select **Accept** to give consent to the **PIN Reset Service** to access your organization.
+1. Go to the [Microsoft PIN Reset Service Production website](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=b8456c59-1230-44c7-a4a2-99b085333e84&resource=https%3A%2F%2Fgraph.windows.net&redirect_uri=https%3A%2F%2Fcred.microsoft.com&state=e9191523-6c2f-4f1d-a4f9-c36f26f89df0&prompt=admin_consent), and sign in using a Global Administrator account you use to manage your Azure Active Directory tenant
+1. After you have logged in, select **Accept** to give consent to the **PIN Reset Service** to access your organization
    ![PIN reset service application in Azure.](images/pinreset/pin-reset-service-prompt.png)
 
 #### Connect Azure Active Directory with the PIN Reset Client
 
-1. Go to the [Microsoft PIN Reset Client Production website](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent), and sign in using a Global Administrator account you use to manage your Azure Active Directory tenant.
-1. After you have logged in, select **Accept** to give consent for the **PIN Reset Client** to access your organization.
+1. Go to the [Microsoft PIN Reset Client Production website](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent), and sign in using a Global Administrator account you use to manage your Azure Active Directory tenant
+1. After you have logged in, select **Accept** to give consent for the **PIN Reset Client** to access your organization
    ![PIN reset client application in Azure.](images/pinreset/pin-reset-client-prompt.png)
 
 #### Confirm that the two PIN Reset service principals are registered in your tenant
