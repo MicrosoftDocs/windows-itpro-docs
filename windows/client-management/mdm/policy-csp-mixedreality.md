@@ -23,6 +23,9 @@ manager: dansimp
     <a href="#mixedreality-aadgroupmembershipcachevalidityindays">MixedReality/AADGroupMembershipCacheValidityInDays</a>
   </dd>
   <dd>
+    <a href="#mixedreality-allowcaptiveportalpeforesignin">MixedReality/AllowCaptivePortalBeforeSignIn</a>
+  </dd>
+  <dd>
     <a href="#mixedreality-autologonuser">MixedReality/AutoLogonUser</a>
   </dd>
   <dd>
@@ -32,6 +35,9 @@ manager: dansimp
     <a href="#mixedreality-configuremovingplatform">MixedReality/ConfigureMovingPlatform</a>
   </dd>
   <dd>
+    <a href="#mixedreality-disablencispassivepolling">MixedReality/DisableNCSIPassivePolling</a>
+  </dd>
+  <dd>
     <a href="#mixedreality-fallbackdiagnostics">MixedReality/FallbackDiagnostics</a>
   </dd>
   <dd>
@@ -39,6 +45,12 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#mixedreality-microphonedisabled">MixedReality/MicrophoneDisabled</a>
+  </dd>
+  <dd>
+    <a href="#mixedreality-skipcalibrationduringfirstexperience">MixedReality/SkipCalibrationDuringFirstExperience</a>
+  </dd>
+  <dd>
+    <a href="#mixedreality-skiptrainingduringfirstexperience">MixedReality/SkipTrainingDuringFirstExperience</a>
   </dd>
   <dd>
     <a href="#mixedreality-visitorautologon">MixedReality/VisitorAutoLogon</a>
@@ -77,6 +89,33 @@ Steps to use this policy correctly:
 
 <!--/SupportedSKUs-->
 <hr/>
+
+<!--Policy-->
+<a href="" id="mixedreality-allowcaptiveportalpeforesignin"></a>**MixedReality/AllowCaptivePortalBeforeSignIn**  
+
+<!--SupportedSKUs-->
+
+|Windows Edition|Supported|
+|--- |--- |
+|HoloLens (first gen) Development Edition|No|
+|HoloLens (first gen) Commercial Suite|No|
+|HoloLens 2|Yes|
+
+> [!NOTE]
+> This feature is currently only available in [HoloLens Insider](/hololens/hololens-insider) builds.
+
+<!--Description-->
+This new feature is an opt-in policy that IT Admins can enable to help with the setup of new devices in new areas or new users. When this policy is turned on it allows a captive portal on the sign-in screen, which allows a user to enter credentials to connect to the Wi-Fi access point. If enabled, sign in will implement similar logic as OOBE to display captive portal if necessary.
+
+MixedReality/AllowCaptivePortalBeforeSignIn
+
+The OMA-URI of new policy: ./Device/Vendor/MSFT/Policy/Config/MixedReality/AllowCaptivePortalBeforeSignIn
+
+Bool value
+
+<!--/Description-->
+
+<!--/SupportedSKUs-->
 
 <!--Policy-->
 <a href="" id="mixedreality-autologonuser"></a>**MixedReality/AutoLogonUser**  
@@ -204,7 +243,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy controls the behavior of moving platform feature on Hololens 2, that is, whether it's turned off / on, or it can be toggled by a user. It should only be used by customers who intend to use Hololens 2 in moving environments with low dynamic motion. For background information, see [HoloLens 2 Moving Platform Mode | Microsoft Docs](/hololens/hololens2-moving-platform#:~:text=Why%20Moving%20Platform%20Mode%20is%20Necessary%20HoloLens%20needs%2csimilar%20pieces%20of%20information%20from%20two%20separate%20sources:).
+This policy controls the behavior of moving platform feature on HoloLens 2, that is, whether it's turned off / on, or it can be toggled by a user. It should only be used by customers who intend to use HoloLens 2 in moving environments with low dynamic motion. For background information, see [HoloLens 2 Moving Platform Mode | Microsoft Docs](/hololens/hololens2-moving-platform#:~:text=Why%20Moving%20Platform%20Mode%20is%20Necessary%20HoloLens%20needs%2csimilar%20pieces%20of%20information%20from%20two%20separate%20sources:).
 
 <!--/Description-->
 
@@ -219,6 +258,34 @@ Supported value is Integer.
 - 2 Force on - Moving platform is enabled and can't be changed by user.
 
 <!--/SupportedValues-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="mixedreality-disablencispassivepolling"></a>**MixedReality/DisableNCSIPassivePolling**  
+
+<!--SupportedSKUs-->
+
+|Windows Edition|Supported|
+|--- |--- |
+|HoloLens (first gen) Development Edition|No|
+|HoloLens (first gen) Commercial Suite|No|
+|HoloLens 2|Yes|
+
+<!--/SupportedSKUs-->
+
+> [!NOTE]
+> This feature is currently only available in [HoloLens Insider](/hololens/hololens-insider) builds.
+
+<!--Description-->
+Wi-Fi auto recovery is enabled on HoloLens 2 by default. In some cases you may want your devices to not automatically reconnect. This may be because you have a preferred network you want to keep your devices on, you find yourself reconnecting to an access point that doesn't have internet, or you want to keep those devices offline in specific areas. For those cases we've enabled a new policy that you can opt to use to keep your devices from automatically reconnecting back to your access points.
+
+The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/DisableNCSIPassivePolling`
+
+- Bool value
+
+<!--/Description-->
+
 <!--/Policy-->
 <hr/>
 
@@ -349,6 +416,62 @@ The following list shows the supported values:
 - 1 - True
 
 <!--/SupportedValues-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="mixedreality-skipcalibrationduringfirstexperience"></a>**MixedReality/SkipCalibrationDuringFirstExperience**  
+
+<!--SupportedSKUs-->
+
+|Windows Edition|Supported|
+|--- |--- |
+|HoloLens (first gen) Development Edition|No|
+|HoloLens (first gen) Commercial Suite|No|
+|HoloLens 2|Yes|
+
+<!--/SupportedSKUs-->
+
+> [!NOTE]
+> This feature is currently only available in [HoloLens Insider](/hololens/hololens-insider) builds.
+
+<!--Description-->
+Skips the calibration experience on HoloLens 2 devices when setting up a new user in the Out of Box Experience (OOBE) or when adding a new user to the device. The user will still be able to calibrate their device from the Settings app.
+
+The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipCalibrationDuringFirstExperience`
+
+- Bool value
+
+<!--/Description-->
+
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="mixedreality-skiptrainingduringfirstexperience"></a>**MixedReality/SkipTrainingDuringFirstExperience**  
+
+<!--SupportedSKUs-->
+
+|Windows Edition|Supported|
+|--- |--- |
+|HoloLens (first gen) Development Edition|No|
+|HoloLens (first gen) Commercial Suite|No|
+|HoloLens 2|Yes|
+
+<!--/SupportedSKUs-->
+
+> [!NOTE]
+> This feature is currently only available in [HoloLens Insider](/hololens/hololens-insider) builds.
+
+<!--Description-->
+On HoloLens 2 devices, skips the training experience of interactions with the humming bird and start menu training when setting up a new user in the Out of Box Experience (OOBE) or when adding a new user to the device. The user will still be able to learn these movement controls from the Tips app.
+
+The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipTrainingDuringFirstExperience`
+
+- Bool value
+
+<!--/Description-->
+
 <!--/Policy-->
 <hr/>
 
