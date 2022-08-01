@@ -21,7 +21,7 @@ ms.technology: windows-sec
 
 Correctly identifying your Windows Defender Firewall with Advanced Security implementation goals is essential for the success of your Windows Defender Firewall design project. Form a project team that can clearly articulate deployment issues in a vision statement. When you write your vision statement, identify, clarify, and refine your implementation goals. Prioritize and, if possible, combine your implementation goals so that you can design and deploy Windows Defender Firewall by using an iterative approach. You can take advantage of the predefined Windows Defender Firewall implementation goals presented in this guide that are relevant to your scenarios.
 
-The following table lists the three main tasks for articulating, refining, and subsequently documenting your Windows Defender Firewall implementation goals:
+The following table lists the three main tasks for articulating, refining, and later documenting your Windows Defender Firewall implementation goals:
 
 
 |                                                                                            Deployment goal tasks                                                                                             |                                                                                                                                                                                                                                                                  Reference links                                                                                                                                                                                                                                                                   |

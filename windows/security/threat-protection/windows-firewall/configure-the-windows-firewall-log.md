@@ -43,11 +43,11 @@ To complete these procedures, you must be a member of the Domain Administrators 
 
     2.  Under **Logging**, click **Customize**.
 
-    3.  The default path for the log is **%windir%\\system32\\logfiles\\firewall\\pfirewall.log**. If you want to change this, clear the **Not configured** check box and type the path to the new location, or click **Browse** to select a file location.
+    3.  The default path for the log is **%windir%\\system32\\logfiles\\firewall\\pfirewall.log**. If you want to change this path, clear the **Not configured** check box and type the path to the new location, or click **Browse** to select a file location.
 
         >**Important:**  The location you specify must have permissions assigned that permit the Windows Defender Firewall service to write to the log file.
 
-    4.  The default maximum file size for the log is 4,096 kilobytes (KB). If you want to change this, clear the **Not configured** check box, and type in the new size in KB, or use the up and down arrows to select a size. The file will not grow beyond this size; when the limit is reached, old log entries are deleted to make room for the newly created ones.
+    4.  The default maximum file size for the log is 4,096 kilobytes (KB). If you want to change this size, clear the **Not configured** check box, and type in the new size in KB, or use the up and down arrows to select a size. The file won't grow beyond this size; when the limit is reached, old log entries are deleted to make room for the newly created ones.
 
     5.  No logging occurs until you set one of following two options:
 
@@ -58,4 +58,4 @@ To complete these procedures, you must be a member of the Domain Administrators 
     6.  Click **OK** twice.
 
 ### Troubleshooting Slow Log Ingestion
-If logs are slow to appear in Sentinel, you can turn down the log file size. Just beware that this will result in more resource usage due to the increased resource usage for log rotation. 
+If logs are slow to appear in Sentinel, you can turn down the log file size. Just beware that this downsizing will result in more resource usage due to the increased resource usage for log rotation. 

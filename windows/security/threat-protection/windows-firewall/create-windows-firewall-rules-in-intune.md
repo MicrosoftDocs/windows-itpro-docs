@@ -45,7 +45,7 @@ Package family names can be retrieved by running the Get-AppxPackage command fro
 [Learn more](https://aka.ms/intunefirewallPackageNameFromPowerShell) 
 
 Windows service short names are used in cases when a service, not an application, is sending or receiving traffic. 
-Default ia All. 
+Default is All. 
 
 [Learn more](/windows/client-management/mdm/firewall-csp#servicename)
 
@@ -67,9 +67,9 @@ Comma separated list of ranges. For example, *100-120,200,300-320*. Default is A
 [Learn more](/windows/client-management/mdm/firewall-csp#remoteportranges)
 
 ## Local addresses
-Comma separated list of local addresses covered by the rule. Valid tokens include:
-- \* indicates any local address. If present, this must be the only token included. 
-- A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask nor a network prefix is specified, the subnet mask default is  255.255.255.255. 
+Comma-separated list of local addresses covered by the rule. Valid tokens include:
+- \* indicates any local address. If present, this token must be the only one included. 
+- A subnet can be specified using either the subnet mask or network prefix notation. If a subnet mask or a network prefix isn't specified, the subnet mask default is 255.255.255.255. 
 - A valid IPv6 address. 
 - An IPv4 address range in the format of "start address-end address" with no spaces included. 
 - An IPv6 address range in the format of "start address-end address" with no spaces included. Default is Any address. 
@@ -78,7 +78,7 @@ Comma separated list of local addresses covered by the rule. Valid tokens includ
 
 ## Remote addresses
 List of comma separated tokens specifying the remote addresses covered by the rule. Tokens are case insensitive. Valid tokens include:
-- \* indicates any remote address. If present, this must be the only token included. 
+- \* indicates any remote address. If present, this token must be the only one included. 
 - Defaultgateway 
 - DHCP 
 - DNS 
@@ -103,7 +103,7 @@ Indicates whether edge traversal is enabled or disabled for this rule. The EdgeT
 [Learn more](/windows/client-management/mdm/firewall-csp#edgetraversal)
 
 ## Authorized users
-Specifies the list of authorized local users for this rule. A list of authorized users cannot be specified if the rule being authored is targeting a Windows service. Default is all users. 
+Specifies the list of authorized local users for this rule. A list of authorized users can't be specified if the rule being authored is targeting a Windows service. Default is all users. 
 
 [Learn more](/windows/client-management/mdm/firewall-csp#localuserauthorizedlist)
 

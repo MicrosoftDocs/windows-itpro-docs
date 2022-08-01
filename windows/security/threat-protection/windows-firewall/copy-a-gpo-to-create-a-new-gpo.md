@@ -49,7 +49,7 @@ To complete this procedure, you must be a member of the Domain Administrators gr
 
 8. Type the new name, and then press ENTER.
 
-9. You must change the security filters to apply the policy to the correct group of devices. To do this, click the **Scope** tab, and in the **Security Filtering** section, select the group that grants permissions to all members of the isolated domain, for example **CG\_DOMISO\_IsolatedDomain**, and then click **Remove**.
+9. You must change the security filters to apply the policy to the correct group of devices. To change the security filters, click the **Scope** tab, and in the **Security Filtering** section, select the group that grants permissions to all members of the isolated domain, for example **CG\_DOMISO\_IsolatedDomain**, and then click **Remove**.
 
 10. In the confirmation dialog box, click **OK**.
 
@@ -57,4 +57,4 @@ To complete this procedure, you must be a member of the Domain Administrators gr
 
 12. Type the name of the group that contains members of the boundary zone, for example **CG\_DOMISO\_Boundary**, and then click **OK**.
 
-13. If required, change the WMI filter to one appropriate for the new GPO. For example, if the original GPO is for client devices running Windows 10 or Windows 11, and the new boundary zone GPO is for devices running Windows Server 2016, then select a WMI filter that allows only those devices to read and apply the GPO.
+13. If necessary, change the WMI filter to one appropriate for the new GPO. For example, if the original GPO is for client devices running Windows 10 or Windows 11, and the new boundary zone GPO is for devices running Windows Server 2016, then select a WMI filter that allows only those devices to read and apply the GPO.
