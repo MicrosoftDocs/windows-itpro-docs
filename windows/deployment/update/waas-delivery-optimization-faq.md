@@ -55,7 +55,7 @@ For Delivery Optimization to successfully use the proxy, you should set up the p
 
 - `win1910.ipv6.microsoft.com`
 
-[Complete list](delivery-optimization-endpoints.md) of all content endpoints used for Delivery Optimization and Microsoft Connected Cache.
+For more information, see [Endpoints for Delivery Optimization and Microsoft Connected Cache](../do/delivery-optimization-endpoints.md) for a list of all content endpoints needed.
 
 ## Does Delivery Optimization use multicast?
 

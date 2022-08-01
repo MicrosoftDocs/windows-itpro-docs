@@ -12,7 +12,7 @@ ms.topic: article
 
 # Using a proxy with Delivery Optimization
 
-_Applies to:_
+**Applies to:**
 
 - Windows 11
 - Windows 10
@@ -76,4 +76,4 @@ However, you can set the Connected Cache server to use an unauthenticated proxy.
 
 - [How can I configure Proxy AutoConfigURL Setting using Group Policy Preference (GPP)?](/archive/blogs/askie/how-can-i-configure-proxy-autoconfigurl-setting-using-group-policy-preference-gpp)
 - [How to use GPP Registry to uncheck automatically detect settings?](/archive/blogs/askie/how-to-use-gpp-registry-to-uncheck-automatically-detect-settings)
-- [How to configure a proxy server URL and Port using GPP Registry?](/archive/blogs/askie/how-to-configure-a-proxy-server-url-and-port-using-gpp-registry) 
+- [How to configure a proxy server URL and Port using GPP Registry?](/archive/blogs/askie/how-to-configure-a-proxy-server-url-and-port-using-gpp-registry)
