@@ -109,7 +109,7 @@ Before you can remotely reset PINs, your devices must be configured to enable PI
 
 You can configure Windows devices to use the **Microsoft PIN Reset Service** using Microsoft Intune.
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431)
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com)
 1. Select **Devices** > **Configuration profiles** > **Create profile**
 1. Enter the following properties:
     - **Platform**: Select **Windows 10 and later**
@@ -131,7 +131,7 @@ You can configure Windows devices to use the **Microsoft PIN Reset Service** usi
 
 >[!NOTE]
 > You can also configure PIN recovery from the **Endpoint security** blade:
-> 1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431)
+> 1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com)
 > 1. Select **Endpoint security** > **Account protection** > **Create Policy**
 
 #### [✅ **GPO**](#tab/gpo)
