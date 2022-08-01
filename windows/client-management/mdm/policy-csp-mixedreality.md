@@ -104,6 +104,14 @@ Steps to use this policy correctly:
 > [!NOTE]
 > This feature is currently only available in [HoloLens Insider](/hololens/hololens-insider) builds.
 
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
 <!--Description-->
 This new feature is an opt-in policy that IT Admins can enable to help with the setup of new devices in new areas or new users. When this policy is turned on it allows a captive portal on the sign-in screen, which allows a user to enter credentials to connect to the Wi-Fi access point. If enabled, sign in will implement similar logic as OOBE to display captive portal if necessary.
 
@@ -277,6 +285,14 @@ Supported value is Integer.
 > [!NOTE]
 > This feature is currently only available in [HoloLens Insider](/hololens/hololens-insider) builds.
 
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
 <!--Description-->
 Wi-Fi auto recovery is enabled on HoloLens 2 by default. In some cases you may want your devices to not automatically reconnect. This may be because you have a preferred network you want to keep your devices on, you find yourself reconnecting to an access point that doesn't have internet, or you want to keep those devices offline in specific areas. For those cases we've enabled a new policy that you can opt to use to keep your devices from automatically reconnecting back to your access points.
 
@@ -435,6 +451,14 @@ The following list shows the supported values:
 > [!NOTE]
 > This feature is currently only available in [HoloLens Insider](/hololens/hololens-insider) builds.
 
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
 <!--Description-->
 Skips the calibration experience on HoloLens 2 devices when setting up a new user in the Out of Box Experience (OOBE) or when adding a new user to the device. The user will still be able to calibrate their device from the Settings app.
 
@@ -462,6 +486,14 @@ The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/Skip
 
 > [!NOTE]
 > This feature is currently only available in [HoloLens Insider](/hololens/hololens-insider) builds.
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
 
 <!--Description-->
 On HoloLens 2 devices, skips the training experience of interactions with the humming bird and start menu training when setting up a new user in the Out of Box Experience (OOBE) or when adding a new user to the device. The user will still be able to learn these movement controls from the Tips app.
