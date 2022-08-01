@@ -86,9 +86,9 @@ If you only had a biometric sign-in configured and, for any reason, were unable 
 ## Explanation of GPO related to Interactive logon: Do not require CNTL+ALT+Delete 
 
 There is a vulnerability explained in the below article it applicable to Pasword login. 
+
 - [Interactive logon Do not require CTRL+ALT+DEL (Windows 10) - Windows security | Microsoft Docs ](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/interactive-logon-do-not-require-ctrl-alt-del)
-       
-           
+     
 However, with WHFB setup this vulnerability no longer applicable due to WHFB credentials are not equal to Password as explained above in this article.   
 
 ## Related topics
