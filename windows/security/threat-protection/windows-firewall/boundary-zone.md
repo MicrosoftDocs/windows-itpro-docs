@@ -31,20 +31,20 @@ Devices in the boundary zone are trusted devices that can accept communication r
 
 The GPOs you build for the boundary zone include IPsec or connection security rules that request authentication for both inbound and outbound network connections, but don't require it.
 
-These boundary zone devices might receive unsolicited inbound communications from untrusted devices that use plaintext and must be carefully managed and secured in other ways. Mitigating this extra risk is an important part of deciding whether to add a device to the boundary zone. For example, completing a formal business justification process before adding each device to the boundary zone minimizes the additional risk. The following illustration shows a sample process that can help make such a decision.
+These boundary zone devices might receive unsolicited inbound communications from untrusted devices that use plaintext and must be carefully managed and secured in other ways. Mitigating this extra risk is an important part of deciding whether to add a device to the boundary zone. For example, completing a formal business justification process before adding each device to the boundary zone minimizes the extra risk. The following illustration shows a sample process that can help make such a decision.
 
 ![design flowchart.](images/wfas-designflowchart1.gif)
 
-The goal of this process is to determine whether the risk of adding a device to a boundary zone can be mitigated to a level that makes it acceptable to the organization. Ultimately, if the risk cannot be mitigated, membership must be denied.
+The goal of this process is to determine whether the risk of adding a device to a boundary zone can be mitigated to a level that makes it acceptable to the organization. Ultimately, if the risk can't be mitigated, membership must be denied.
 
-You must create a group in Active Directory to contain the members of the boundary zones. The settings and rules for the boundary zone are typically very similar to those for the isolated domain, and you can save time and effort by copying those GPOs to serve as a starting point. The primary difference is that the authentication connection security rule must be set to request authentication for both inbound and outbound traffic, instead of requiring inbound authentication and requesting outbound authentication as used by the isolated domain.
+You must create a group in Active Directory to contain the members of the boundary zones. The settings and rules for the boundary zone are typically similar to those settings and rules for the isolated domain, and you can save time and effort by copying those GPOs to serve as a starting point. The primary difference is that the authentication connection security rule must be set to request authentication for both inbound and outbound traffic, instead of requiring inbound authentication and requesting outbound authentication as used by the isolated domain.
 
  [Planning Group Policy Deployment for Your Isolation Zones](planning-group-policy-deployment-for-your-isolation-zones.md) section discusses creation of the group and how to link it to the GPOs that apply the rules to members of the group.
 
 ## GPO settings for boundary zone servers running at least Windows Server 2008
 
 
-The boundary zone GPO for devices running at least Windows Server 2008 should include the following:
+The boundary zone GPO for devices running at least Windows Server 2008 should include the following components:
 
 -   IPsec default settings that specify the following options:
 

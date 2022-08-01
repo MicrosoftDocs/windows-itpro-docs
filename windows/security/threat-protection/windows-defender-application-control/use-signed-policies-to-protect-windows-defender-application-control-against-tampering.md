@@ -29,20 +29,20 @@ ms.technology: windows-sec
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
-Signed Windows Defender Application Control (WDAC) policies give organizations the highest level of malware protection available in Windows—must be signed with [PKCS #7](https://datatracker.ietf.org/doc/html/rfc5652). In addition to their enforced policy rules, signed policies cannot be modified or deleted by a user or administrator on the computer. These policies are designed to prevent administrative tampering and kernel mode exploit access. With this in mind, it is much more difficult to remove signed WDAC policies. Note that SecureBoot must be enabled in order to restrict users from updating or removing signed WDAC policies.
+Signed Windows Defender Application Control (WDAC) policies give organizations the highest level of malware protection available in Windows—must be signed with [PKCS #7](https://datatracker.ietf.org/doc/html/rfc5652). In addition to their enforced policy rules, signed policies can't be modified or deleted by a user or administrator on the computer. These policies are designed to prevent administrative tampering and kernel mode exploit access. With this idea of the policies in mind, it's much more difficult to remove signed WDAC policies. SecureBoot must be enabled in order to restrict users from updating or removing signed WDAC policies.
 
 Before you sign with PKCS #7 and deploy a signed WDAC policy, we recommend that you [audit the policy](audit-windows-defender-application-control-policies.md) to discover any blocked applications that should be allowed to run. 
 
 Signing WDAC policies by using an on-premises CA-generated certificate or a purchased code signing certificate is straightforward. 
-If you do not currently have a code signing certificate exported in .pfx format (containing private keys, extensions, and root certificates), see [Optional: Create a code signing certificate for Windows Defender Application Control](create-code-signing-cert-for-windows-defender-application-control.md) to create one with your on-premises CA. 
+If you don't currently have a code signing certificate exported in .pfx format (containing private keys, extensions, and root certificates), see [Optional: Create a code signing certificate for Windows Defender Application Control](create-code-signing-cert-for-windows-defender-application-control.md) to create one with your on-premises CA. 
 
-Before PKCS #7-signing WDAC policies for the first time, be sure to enable rule options 9 (“Advanced Boot Options Menu”) and 10 (“Boot Audit on Failure”) to leave troubleshooting options available to administrators. To ensure that a rule option is enabled, you can run a command such as `Set-RuleOption -FilePath <PathAndFilename> -Option 9`, even if you're not sure whether the option is already enabled. If so, the command has no effect. When validated and ready for enterprise deployment, you can remove these options. For more information about rule options, see [Windows Defender Application Control policy rules](select-types-of-rules-to-create.md).
+Before PKCS #7-signing WDAC policies for the first time, ensure you enable rule options 9 (“Advanced Boot Options Menu”) and 10 (“Boot Audit on Failure”) to leave troubleshooting options available to administrators. To ensure that a rule option is enabled, you can run a command such as `Set-RuleOption -FilePath <PathAndFilename> -Option 9`, even if you're not sure whether the option is already enabled. If so, the command has no effect. When validated and ready for enterprise deployment, you can remove these options. For more information about rule options, see [Windows Defender Application Control policy rules](select-types-of-rules-to-create.md).
 
 To sign a Windows Defender Application Control policy with SignTool.exe, you need the following components:
 
 -   SignTool.exe, found in the [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) (Windows 7 or later)
 
--   The binary format of the WDAC policy that you generated in [Create a Windows Defender Application Control policy from a reference computer](create-initial-default-policy.md) or another WDAC policy that you have created
+-   The binary format of the WDAC policy that you generated in [Create a Windows Defender Application Control policy from a reference computer](create-initial-default-policy.md) or another WDAC policy that you've created
 
 -   An internal CA code signing certificate or a purchased code signing certificate
 
@@ -52,7 +52,7 @@ To sign a Windows Defender Application Control policy with SignTool.exe, you nee
 >Certificate fields, like 'subject common name' and 'issuer common name,' cannot be UTF-8 encoded, otherwise, blue screens may occur. These strings must be encoded as PRINTABLE_STRING, IA5STRING or BMPSTRING.
 
 
-If you do not have a code signing certificate, see [Optional: Create a code signing certificate for Windows Defender Application Control](create-code-signing-cert-for-windows-defender-application-control.md) for instructions on how to create one. If you use an alternate certificate or Windows Defender Application Control (WDAC) policy, be sure to update the following steps with the appropriate variables and certificate so that the commands will function properly. To sign the existing WDAC policy, copy each of the following commands into an elevated Windows PowerShell session:
+If you don't have a code signing certificate, see [Optional: Create a code signing certificate for Windows Defender Application Control](create-code-signing-cert-for-windows-defender-application-control.md) for instructions on how to create one. If you use an alternate certificate or Windows Defender Application Control (WDAC) policy, ensure you update the following steps with the appropriate variables and certificate so that the commands will function properly. To sign the existing WDAC policy, copy each of the following commands into an elevated Windows PowerShell session:
 
 1. Initialize the variables that will be used:
 
@@ -64,7 +64,7 @@ If you do not have a code signing certificate, see [Optional: Create a code sign
    > [!NOTE]
    > This example uses the WDAC policy that you created in the [Create a Windows Defender Application Control policy from a reference computer](create-initial-default-policy.md) section. If you are signing another policy, be sure to update the **$CIPolicyPath** variable with the correct information.
 
-2. Import the .pfx code signing certificate. Import the code signing certificate that you will use to sign the WDAC policy into the signing user’s personal store on the computer that will be doing the signing. In this example, you use the certificate that was created in [Optional: Create a code signing certificate for Windows Defender Application Control](create-code-signing-cert-for-windows-defender-application-control.md).
+2. Import the .pfx code signing certificate. Import the code signing certificate that you'll use to sign the WDAC policy into the signing user’s personal store on the computer that will be doing the signing. In this example, you use the certificate that was created in [Optional: Create a code signing certificate for Windows Defender Application Control](create-code-signing-cert-for-windows-defender-application-control.md).
 
 3. Export the .cer code signing certificate. After the code signing certificate has been imported, export the .cer version to your desktop. This version will be added to the policy so that it can be updated later.
 

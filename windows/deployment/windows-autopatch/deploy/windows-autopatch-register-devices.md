@@ -65,7 +65,7 @@ It's recommended to detect and clean up stale devices in Azure AD before registe
 
 To be eligible for Windows Autopatch management, devices must meet a minimum set of required software-based prerequisites:
 
-- [Supported Windows 10/11 Enterprise and Professional edition versions](/windows/release-health/supported-versions-windows-client)
+- Windows 10 (1809+)/11 Enterprise and Professional edition versions (only x64 architecture).
 - Either [Hybrid Azure AD-Joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid) or [Azure AD-joined only](/azure/active-directory/devices/concept-azure-ad-join-hybrid) (personal devices aren't supported).
 - Managed by Microsoft Endpoint Manager.
     - [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune) and/or [Configuration Manager Co-management](/windows/deployment/windows-autopatch/prepare/windows-autopatch-prerequisites#configuration-manager-co-management-requirements).

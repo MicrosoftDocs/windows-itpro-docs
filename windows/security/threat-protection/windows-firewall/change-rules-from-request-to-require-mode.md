@@ -25,7 +25,7 @@ ms.technology: windows-sec
 -   Windows 11
 -   Windows Server 2016 and above
 
-After you confirm that network traffic is being correctly protected by using IPsec, you can change the rules for the domain isolation and encryption zones to require, instead of request, authentication. Do not change the rules for the boundary zone; they must stay in request mode so that devices in the boundary zone can continue to accept connections from devices that are not part of the isolated domain.
+After you confirm that network traffic is being correctly protected by using IPsec, you can change the rules for the domain isolation and encryption zones to require, instead of request, authentication. Don't change the rules for the boundary zone; they must stay in request mode so that devices in the boundary zone can continue to accept connections from devices that aren't part of the isolated domain.
 
 **Administrative credentials**
 
