@@ -101,11 +101,11 @@ ms.date: 08/01/2022
 - [Settings/AllowVPN](policy-csp-settings.md#settings-allowvpn)
 - [Settings/PageVisibilityList](./policy-csp-settings.md#settings-pagevisibilitylist) <sup>9</sup>
 - [Speech/AllowSpeechModelUpdate](policy-csp-speech.md#speech-allowspeechmodelupdate)
-- [Storage/AllowStorageSenseGlobal](.policy-csp-storage.md#storage-allowstoragesenseglobal) <sup>Insider</sup>
-- [Storage/AllowStorageSenseTemporaryFilesCleanup](.policy-csp-storage.md#storage-allowstoragesensetemporaryfilescleanup) <sup>Insider</sup>
-- [Storage/ConfigStorageSenseCloudContentDehydrationThreshold](.policy-csp-storage.md#storage-configstoragesensecloudcontentdehydrationthreshold) <sup>Insider</sup>
-- [Storage/ConfigStorageSenseDownloadsCleanupThreshold](.policy-csp-storage.md#storage-configstoragesensedownloadscleanupthreshold) <sup>Insider</sup>
-- [Storage/ConfigStorageSenseGlobalCadence](.policy-csp-storage.md#storage-configstoragesenseglobalcadence) <sup>Insider</sup>
+- [Storage/AllowStorageSenseGlobal](policy-csp-storage.md#storage-allowstoragesenseglobal) <sup>Insider</sup>
+- [Storage/AllowStorageSenseTemporaryFilesCleanup](policy-csp-storage.md#storage-allowstoragesensetemporaryfilescleanup) <sup>Insider</sup>
+- [Storage/ConfigStorageSenseCloudContentDehydrationThreshold](policy-csp-storage.md#storage-configstoragesensecloudcontentdehydrationthreshold) <sup>Insider</sup>
+- [Storage/ConfigStorageSenseDownloadsCleanupThreshold](policy-csp-storage.md#storage-configstoragesensedownloadscleanupthreshold) <sup>Insider</sup>
+- [Storage/ConfigStorageSenseGlobalCadence](policy-csp-storage.md#storage-configstoragesenseglobalcadence) <sup>Insider</sup>
 - [System/AllowCommercialDataPipeline](policy-csp-system.md#system-allowcommercialdatapipeline)
 - [System/AllowLocation](policy-csp-system.md#system-allowlocation)
 - [System/AllowStorageCard](policy-csp-system.md#system-allowstoragecard)
