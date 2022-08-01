@@ -1,9 +1,7 @@
 ---
-title: Windows Defender Application Control and virtualization-based code integrity (Windows 10)
+title: Windows Defender Application Control and virtualization-based code integrity
 description: Hardware and software system integrity-hardening capabilities that can be deployed separately or in combination with Windows Defender Application Control (WDAC).
-keywords: virtualization, security, malware, device guard
 ms.prod: m365-security
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
@@ -28,12 +26,12 @@ Using Windows Defender Application Control to restrict devices to only authorize
 
 1. WDAC policy is enforced by the Windows kernel itself, and the policy takes effect early in the boot sequence before nearly all other OS code and before traditional antivirus solutions run.
 2. WDAC lets you set application control policy for code that runs in user mode, kernel mode hardware and software drivers, and even code that runs as part of Windows.
-3. Customers can protect the WDAC policy even from local administrator tampering by digitally signing the policy. To change signed policy requires both administrative privilege and access to the organization’s digital signing process. This makes it difficult for an attacker, including one who has managed to gain administrative privilege, to tamper with WDAC policy.
+3. Customers can protect the WDAC policy even from local administrator tampering by digitally signing the policy. To change signed policy requires both administrative privilege and access to the organization's digital signing process. This makes it difficult for an attacker, including one who has managed to gain administrative privilege, to tamper with WDAC policy.
 4. You can protect the entire WDAC enforcement mechanism with HVCI. Even if a vulnerability exists in kernel mode code, HVCI greatly reduces the likelihood that an attacker could successfully exploit it. This is important because an attacker that compromises the kernel could normally disable most system defenses, including those enforced by WDAC or any other application control solution.
 
 ## Why we no longer use the Device Guard brand
 
-When we originally promoted Device Guard, we did so with a specific security promise in mind. Although there were no direct dependencies between WDAC and HVCI, we intentionally focused our discussion around the lockdown state achieved when using them together. However, since HVCI relies on Windows virtualization-based security, it has hardware, firmware, and kernel driver compatibility requirements that some older systems can’t meet. This misled many people to assume that if systems couldn't use HVCI, they couldn’t use WDAC either.
+When we originally promoted Device Guard, we did so with a specific security promise in mind. Although there were no direct dependencies between WDAC and HVCI, we intentionally focused our discussion around the lockdown state achieved when using them together. However, since HVCI relies on Windows virtualization-based security, it has hardware, firmware, and kernel driver compatibility requirements that some older systems can't meet. This misled many people to assume that if systems couldn't use HVCI, they couldn't use WDAC either.
 
 WDAC has no specific hardware or software requirements other than running Windows 10, which means customers were denied the benefits of this powerful application control capability due to Device Guard confusion.
 
@@ -43,6 +41,5 @@ We hope this change will help us better communicate options for adopting applica
 ## Related articles
 
 - [Windows Defender Application Control](../windows-defender-application-control/windows-defender-application-control.md)
-- [Dropping the Hammer Down on Malware Threats with Windows 10’s Windows Defender](https://channel9.msdn.com/Events/Ignite/2015/BRK2336)
-- [Driver compatibility with Windows Defender in Windows 10](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10)
+- [Driver compatibility with Device Guard in Windows 10](https://techcommunity.microsoft.com/t5/windows-hardware-certification/driver-compatibility-with-device-guard-in-windows-10/ba-p/364865)
 - [Code integrity](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd348642(v=ws.10))

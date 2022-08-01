@@ -1,7 +1,6 @@
 ---
 title: Step by step - Deploy Windows 10 in a test lab using MDT
 description: In this article, you'll learn how to deploy Windows 10 in a test lab using Microsoft Deployment Toolkit (MDT).
-ms.custom: seo-marvel-apr2020
 ms.prod: w10
 ms.localizationpriority: medium
 ms.date: 10/11/2017
@@ -9,15 +8,14 @@ ms.reviewer:
 manager: dougeby
 ms.author: aaroncz
 author: aczechowski
-ms.topic: article
+ms.topic: how-to
 ---
-
 
 # Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit
 
 **Applies to**
 
--   Windows 10
+-   Windows 10
 
 > [!IMPORTANT]
 > This guide leverages the proof of concept (PoC) environment configured using procedures in the following guide: 
@@ -62,18 +60,18 @@ MDT performs deployments by using the Lite Touch Installation (LTI), Zero Touch 
 
     ```powershell
     $AdminKey = "HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}"
-    Set-ItemProperty -Path $AdminKey -Name “IsInstalled” -Value 0
+    Set-ItemProperty -Path $AdminKey -Name "IsInstalled" -Value 0
     Stop-Process -Name Explorer
     ```
 
-2. Download and install the 64-bit version of [Microsoft Deployment Toolkit (MDT)](https://www.microsoft.com/download/details.aspx?id=54259) on SRV1 using the default options. As of the writing of this guide, the latest version of MDT was 8443.
+1. Download and install the 64-bit version of [Microsoft Deployment Toolkit (MDT)](https://www.microsoft.com/download/details.aspx?id=54259) on SRV1 using the default options.
 
-3. Download and install the latest [Windows Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) on SRV1 using the default installation settings. The current version is the ADK for Windows 10, version 1703. Installation might require several minutes to acquire all components.
+1. Download and install the latest [Windows Assessment and Deployment Kit (ADK)](/windows-hardware/get-started/adk-install) on SRV1 using the default installation settings. Installation might require several minutes to acquire all components.
 
-3. If desired, re-enable IE Enhanced Security Configuration:
+1. If desired, re-enable IE Enhanced Security Configuration:
 
     ```powershell
-    Set-ItemProperty -Path $AdminKey -Name “IsInstalled” -Value 1
+    Set-ItemProperty -Path $AdminKey -Name "IsInstalled" -Value 1
     Stop-Process -Name Explorer
     ```
 
@@ -345,7 +343,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
     In this example a **MachineObjectOU** entry is not provided. Normally this entry describes the specific OU where new client computer objects are created in Active Directory. However, for the purposes of this test lab clients are added to the default computers OU, which requires that this parameter be unspecified.
 
     If desired, edit the follow line to include or exclude other users when migrating settings. Currently, the command is set to user exclude (ue) all users except for CONTOSO users specified by the user include option (ui):
-    
+
     ```console
     ScanStateArgs=/ue:*\* /ui:CONTOSO\*
     ```
@@ -354,9 +352,9 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
     ```console
     ScanStateArgs=/all
-    ```   
+    ```
 
-    For more information, see [ScanState Syntax](/previous-versions/windows/it-pro/windows-vista/cc749015(v=ws.10)).
+    For more information, see [ScanState Syntax](/windows/deployment/usmt/usmt-scanstate-syntax).
 
 4. Click **Edit Bootstap.ini** and replace text in the file with the following text:
 
@@ -641,12 +639,10 @@ Deployment logs are available on the client computer in the following locations:
 
 You can review WDS events in Event Viewer at: **Applications and Services Logs > Microsoft > Windows > Deployment-Services-Diagnostics**. By default, only the **Admin** and **Operational** logs are enabled. To enable other logs, right-click the log and then click **Enable Log**.
 
-Tools for viewing log files, and to assist with troubleshooting are available in the [Configuration Manager Toolkit](https://www.microsoft.com/download/details.aspx?id=50012)
-
 Also see [Resolve Windows 10 upgrade errors](upgrade/resolve-windows-10-upgrade-errors.md) for detailed troubleshooting information.
 
 ## Related Topics
 
-[Microsoft Deployment Toolkit](/mem/configmgr/mdt/)<BR>
-[Prepare for deployment with MDT](deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md)
+[Microsoft Deployment Toolkit](/mem/configmgr/mdt/)
 
+[Prepare for deployment with MDT](deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md)

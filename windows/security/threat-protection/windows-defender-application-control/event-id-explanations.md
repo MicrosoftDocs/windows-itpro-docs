@@ -1,5 +1,5 @@
 ---
-title: Understanding Application Control event IDs (Windows)
+title: Understanding Application Control event IDs
 description: Learn what different Windows Defender Application Control event IDs signify.
 ms.prod: m365-security
 ms.technology: windows-sec
@@ -47,7 +47,7 @@ A Windows Defender Application Control policy logs events locally in Windows Eve
 | Event ID | Explanation |
 |--------|-----------|
 | 8028 | This event indicates that a script host, such as PowerShell, queried Application Control about a file the script host was about to run. Since the policy was in audit mode, the script or MSI file should have run. Some script hosts may have additional information in their logs. Note: Most third-party script hosts don't integrate with Application Control. Consider the risks from unverified scripts when choosing which script hosts you allow to run. |
-| 8029 | This event is the enforcement mode equivalent of event 8028 described above. Note: While this event says that a script was blocked, the actual script enforcement behavior is implemented by the script host. The script host may allow the file to run with restrictions and not block the file outright. For example, PowerShell will allow a script to run but only in [Constrained Language Mode](/powershell/module/microsoft.powershell.core/about/about_language_modes.md). |
+| 8029 | This event is the enforcement mode equivalent of event 8028 described above. Note: While this event says that a script was blocked, the actual script enforcement behavior is implemented by the script host. The script host may allow the file to run with restrictions and not block the file outright. For example, PowerShell will allow a script to run but only in [Constrained Language Mode](/powershell/module/microsoft.powershell.core/about/about_language_modes). |
 | 8036| COM object was blocked. To learn more about COM object authorization, see [Allow COM object registration in a Windows Defender Application Control policy](allow-com-object-registration-in-windows-defender-application-control-policy.md). |
 | 8038 | Signing information event correlated with either an 8028 or 8029 event. One 8038 event is generated for each signature of a script file. Contains the total number of signatures on a script file and an index as to which signature it is. Unsigned script files will generate a single 8038 event with TotalSignatureCount 0. 8038 events are correlated with 8028 and 8029 events and can be matched using the `Correlation ActivityID` found in the **System** portion of the event. |
 
