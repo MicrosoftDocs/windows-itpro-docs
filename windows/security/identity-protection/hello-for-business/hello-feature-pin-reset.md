@@ -12,8 +12,8 @@ ms.topic: article
 localizationpriority: medium
 ms.date: 07/29/2022
 appliesto:
-- ✔️ <b>Windows 10</b>
-- ✔️ <b>Windows 11</b>
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
 ---
 
 # PIN reset
@@ -131,7 +131,6 @@ You can configure Windows devices to use the **Microsoft PIN Reset Service** usi
 
 >[!NOTE]
 > You can also configure PIN recovery from the **Endpoint security** blade:
-
 > 1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431)
 > 1. Select **Endpoint security** > **Account protection** > **Create Policy**
 
