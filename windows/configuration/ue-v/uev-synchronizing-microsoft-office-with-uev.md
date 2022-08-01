@@ -17,14 +17,11 @@ ms.topic: article
 
 Microsoft User Experience Virtualization (UE-V) supports the synchronization of Microsoft Office application settings. The combination of UE-V and App-V  support for Office enables the same experience on virtualized instances of Office from any UE-V-enabled device or virtualized desktop.
 
-To synchronize Office applications settings, you can download Office templates from the [User Experience Virtualization (UE-V) Template Gallery](https://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=RootCategory&f%5B0%5D.Value=UE-V&f%5B0%5D.Text=UE-V). This resource provides Microsoft-authored UE-V settings location templates as well as community-developed settings location templates.
-
-
 ## Microsoft Office support in UE-V
 
 UE-V includes settings location templates for Microsoft Office 2016, 2013, and 2010. In previous versions of UE-V, settings location templates for Office 2013 and Office 2010 were distributed and registered when you installed the UE-V agent. Now that UE-V is a feature in Windows 10, version 1607, settings location templates are installed when you install or upgrade to the new operating system.  
 
-These templates help synchronize users’ Office experience between devices. Microsoft Office 2016 settings roamed by Office 365 experience are not included in these settings. For a list of Office 365-specific settings, see [Overview of user and roaming settings for Office](/previous-versions/office/office-2013-resource-kit/jj733593(v=office.15)).
+These templates help synchronize users' Office experience between devices. Microsoft Office 2016 settings roamed by Office 365 experience are not included in these settings. For a list of Office 365-specific settings, see [Overview of user and roaming settings for Office](/previous-versions/office/office-2013-resource-kit/jj733593(v=office.15)).
 
 ## Synchronized Office Settings
 
@@ -56,6 +53,6 @@ You can deploy UE-V settings location template with the following methods:
 
     For more information about using UE-V and Windows PowerShell, see [Managing UE-V settings location templates using Windows PowerShell and WMI](uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md).
 
--   **Registering template with Template Catalog Path**. If you use the Settings Template Catalog Path to manage templates on users’ computers, copy the Office template into the folder defined in the UE-V service. The next time the Template Auto Update (ApplySettingsCatalog.exe) scheduled task runs, the settings location template will be registered on the device. For more information, see [Deploy a settings template catalog](uev-deploy-uev-for-custom-applications.md).
+-   **Registering template with Template Catalog Path**. If you use the Settings Template Catalog Path to manage templates on users' computers, copy the Office template into the folder defined in the UE-V service. The next time the Template Auto Update (ApplySettingsCatalog.exe) scheduled task runs, the settings location template will be registered on the device. For more information, see [Deploy a settings template catalog](uev-deploy-uev-for-custom-applications.md).
 
 -   **Registering template with Configuration Manager**. If you use Configuration Manager to manage your UE-V settings storage templates, recreate the Template Baseline CAB, import it into Configuration Manager, and then deploy the baseline to user devices.

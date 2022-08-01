@@ -27,7 +27,7 @@ This article describes the best practices, location, values, policy management a
 
 ## Reference
 
-This policy setting determines the behavior of all User Account Control (UAC) policies for the entire system. This is the setting that turns UAC on or off.
+This policy setting determines the behavior of all User Account Control (UAC) policies for the entire system. This setting is the one that turns on or off the UAC.
 
 ### Possible values
 

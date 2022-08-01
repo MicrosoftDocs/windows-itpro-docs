@@ -22,7 +22,7 @@ ms.technology: windows-sec
 
 **Applies to:**
 
-- Windows 10
+- Windows 10
 
 Describes the best practices, location, values, management, and security considerations for the **Interactive logon: Message text for users attempting to log on** security policy setting.
 

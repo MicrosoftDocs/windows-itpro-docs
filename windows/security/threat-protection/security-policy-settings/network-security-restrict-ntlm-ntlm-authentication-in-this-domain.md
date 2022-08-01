@@ -26,7 +26,7 @@ Describes the best practices, location, values, management aspects, and security
 
 ## Reference
 
-The **Network Security: Restrict NTLM: NTLM authentication in this domain** policy setting allows you to deny or allow NTLM authentication within a domain from this domain controller. This policy setting does not affect interactive logon to this domain controller.
+The **Network Security: Restrict NTLM: NTLM authentication in this domain** policy setting allows you to deny or allow NTLM authentication within a domain from this domain controller. This policy setting doesn't affect interactive logon to this domain controller.
 
 ### Possible values
 
@@ -36,17 +36,17 @@ The **Network Security: Restrict NTLM: NTLM authentication in this domain** poli
 
 -   **Deny for domain accounts to domain servers**
 
-    The domain controller will deny all NTLM authentication logon attempts using accounts from this domain to all servers in the domain. The NTLM authentication attempts will be blocked and will return an NTLM blocked error unless the server name is on the exception list in the **Network security: Restrict NTLM: Add server exceptions in this domain** policy setting.
+    The domain controller will deny all NTLM authentication sign-in attempts using accounts from this domain to all servers in the domain. The NTLM authentication attempts will be blocked and will return an NTLM blocked error unless the server name is on the exception list in the **Network security: Restrict NTLM: Add server exceptions in this domain** policy setting.
 
-    NTLM can be used if the users are connecting to other domains. This depends on if any Restrict NTLM policies have been set on those domains.
+    NTLM can be used if the users are connecting to other domains, depending on whether any Restrict NTLM policies have been set on those domains.
 
 -   **Deny for domain accounts**
 
-    Only the domain controller will deny all NTLM authentication logon attempts from domain accounts and will return an NTLM blocked error unless the server name is on the exception list in the **Network security: Restrict NTLM: Add server exceptions in this domain** policy setting.
+    Only the domain controller will deny all NTLM authentication sign-in attempts from domain accounts and will return an NTLM blocked error unless the server name is on the exception list in the **Network security: Restrict NTLM: Add server exceptions in this domain** policy setting.
 
 -   **Deny for domain servers**
 
-    The domain controller will deny NTLM authentication requests to all servers in the domain and will return an NTLM blocked error unless the server name is on the exception list in the **Network security: Restrict NTLM: Add server exceptions in this domain** policy setting. Servers that are not joined to the domain will not be affected if this policy setting is configured.
+    The domain controller will deny NTLM authentication requests to all servers in the domain and will return an NTLM blocked error unless the server name is on the exception list in the **Network security: Restrict NTLM: Add server exceptions in this domain** policy setting. Servers that aren't joined to the domain won't be affected if this policy setting is configured.
 
 -   **Deny all**
 
@@ -97,7 +97,7 @@ There are no security audit event policies that can be configured to view output
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
-NTLM and NTLMv2 authentication is vulnerable to a variety of malicious attacks, including SMB replay, man-in-the-middle attacks, and brute force attacks. Reducing and eliminating NTLM authentication from your environment forces the Windows operating system to use more secure protocols, such as the Kerberos version 5 protocol, or different authentication mechanisms, such as smart cards.
+NTLM and NTLMv2 authentication is vulnerable to various malicious attacks, including SMB replay, man-in-the-middle attacks, and brute force attacks. Reducing and eliminating NTLM authentication from your environment forces the Windows operating system to use more secure protocols, such as the Kerberos version 5 protocol, or different authentication mechanisms, such as smart cards.
 
 ### Vulnerability
 
@@ -105,7 +105,7 @@ Malicious attacks on NTLM authentication traffic resulting in a compromised serv
 
 ### Countermeasure
 
-When it has been determined that the NTLM authentication protocol should not be used within a network because you are required to use a more secure protocol such as the Kerberos protocol, then you can select one of several options that this security policy setting offers to restrict NTLM usage 
+When it has been determined that the NTLM authentication protocol shouldn't be used within a network because you're required to use a more secure protocol such as the Kerberos protocol, then you can select one of several options that this security policy setting offers to restrict NTLM usage 
 within the domain.
 
 ### Potential impact

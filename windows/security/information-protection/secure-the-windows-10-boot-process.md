@@ -85,7 +85,23 @@ These requirements help protect you from rootkits while allowing you to run any 
 
 To prevent malware from abusing these options, the user must manually configure the UEFI firmware to trust a non-certified bootloader or to turn off Secure Boot. Software can't change the Secure Boot settings.
 
-Like most mobile devices, ARM-based Certified For Windows RT devices, such as the Microsoft Surface RT device, are designed to run only Windows 8.1. Therefore, Secure Boot can't be turned off, and you can't load a different OS. Fortunately, there's a large market of ARM processor devices designed to run other operating systems.
+The default state of Secure Boot has a wide circle of trust which can result in customers trusting boot components they may not need. Since the Microsoft 3rd Party UEFI CA certificate signs the bootloaders for all Linux distributions, trusting the Microsoft 3rd Party UEFI CA signature in the UEFI database  increase  s the attack surface of systems. A customer who intended to only trust and boot a single Linux distribution will trust all distributions – much more than their desired configuration. A vulnerability in any of the bootloaders exposes the system and places the customer at risk of exploit for a bootloader they never intended to use, as seen in recent vulnerabilities, for example [with the GRUB bootloader](https://msrc.microsoft.com/security-guidance/advisory/ADV200011) or [firmware-level rootkit]( https://www.darkreading.com/threat-intelligence/researchers-uncover-dangerous-new-firmware-level-rootkit) affecting boot components. [Secured-core PCs](/windows-hardware/design/device-experiences/OEM-highly-secure-11) require Secure Boot to be enabled and configured to distrust the Microsoft 3rd Party UEFI CA signature, by default, to provide customers with the most secure configuration of their PCs possible. 
+
+To trust and boot operating systems, like Linux, and components signed by the UEFI signature, Secured-core PCs can be configured in the BIOS menu to add the signature in the UEFI database by following these steps:
+
+1. Open the firmware menu, either: 
+  
+  - Boot the PC, and press the manufacturer’s key to open the menus. Common keys used: Esc, Delete, F1, F2, F10, F11, or F12. On tablets, common buttons are Volume up or Volume down. During startup, there’s often a screen that mentions the key. If there’s not one, or if the screen goes by too fast to see it, check your manufacturer’s site.
+
+  - Or, if Windows is already installed, from either the Sign on screen or the Start menu, select Power ( ) > hold Shift while selecting Restart. Select Troubleshoot > Advanced options > UEFI Firmware settings.
+  
+2.	From the firmware menu navigate to Security > Secure Boot and select the option to trust the “3rd Party CA”. 
+
+3.	Save changes and exit. 
+ 
+Microsoft continues to collaborate with Linux and IHV ecosystem partners to design least privileged features to help you stay secure and opt-in trust for only the publishers and components you trust. 
+
+Like most mobile devices, Arm-based devices, such as the Microsoft Surface RT device, are designed to run only Windows 8.1. Therefore, Secure Boot can't be turned off, and you can't load a different OS. Fortunately, there's a large market of ARM processor devices designed to run other operating systems.
 
 ## Trusted Boot
 
