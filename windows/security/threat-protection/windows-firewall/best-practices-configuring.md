@@ -43,7 +43,7 @@ When you open the Windows Defender Firewall for the first time, you can see the 
 
 *Figure 1: Windows Defender Firewall*
 
-1.  **Domain profile**: Used for networks where there is a system of account authentication against a domain controller (DC), such as an Azure Active Directory DC
+1.  **Domain profile**: Used for networks where there's a system of account authentication against a domain controller (DC), such as an Azure Active Directory DC
 
 2.  **Private profile**: Designed for and best used
     in private networks such as a home network
@@ -69,7 +69,7 @@ For more on configuring basic firewall settings, see [Turn on Windows Firewall a
 
 In many cases, a next step for administrators will be to customize these profiles using rules (sometimes called filters) so that they can work with user apps or other types of software. For example, an administrator or user may choose to add a rule to accommodate a program, open a port or protocol, or allow a predefined type of traffic.
 
-This can be accomplished by right-clicking either **Inbound Rules** or **Outbound Rules**, and selecting **New Rule**. The interface for adding a new rule looks like this:
+This rule-adding task can be accomplished by right-clicking either **Inbound Rules** or **Outbound Rules**, and selecting **New Rule**. The interface for adding a new rule looks like this:
 
 ![Rule creation wizard.](images/fw02-createrule.png)
 
@@ -89,11 +89,11 @@ allowing these inbound exceptions.
 
 2.  Explicit block rules will take precedence over any conflicting allow rules.
 
-3.  More specific rules will take precedence over less specific rules, except in the case of explicit block rules as mentioned in 2. (For example, if the parameters of rule 1 includes an IP address range, while the parameters of rule 2 include a single IP host address, rule 2 will take precedence.)
+3.  More specific rules will take precedence over less specific rules, except if there are explicit block rules as mentioned in 2. (For example, if the parameters of rule 1 include an IP address range, while the parameters of rule 2 include a single IP host address, rule 2 will take precedence.)
 
-Because of 1 and 2, it is important that, when designing a set of policies, you make sure that there are no other explicit block rules in place that could inadvertently overlap, thus preventing the traffic flow you wish to allow.
+Because of 1 and 2, it's important that, when designing a set of policies, you make sure that there are no other explicit block rules in place that could inadvertently overlap, thus preventing the traffic flow you wish to allow.
 
-A general security best practice when creating inbound rules is to be as specific as possible. However, when new rules must be made that use ports or IP addresses, consider using consecutive ranges or subnets instead of individual addresses or ports where possible. This avoids creation of multiple filters under the hood, reduces complexity, and helps to avoid performance degradation.
+A general security best practice when creating inbound rules is to be as specific as possible. However, when new rules must be made that use ports or IP addresses, consider using consecutive ranges or subnets instead of individual addresses or ports where possible. This approach avoids creation of multiple filters under the hood, reduces complexity, and helps to avoid performance degradation.
 
 > [!NOTE] 
 > Windows Defender Firewall does not support traditional weighted, administrator-assigned rule ordering. An effective policy set with expected behaviors can be created by keeping in mind the few, consistent, and logical rule behaviors described above. 
@@ -102,13 +102,13 @@ A general security best practice when creating inbound rules is to be as specifi
 
 ### Inbound allow rules
 
-When first installed, networked applications and services issue a listen call specifying the protocol/port information required for them to function properly. As there is a default block action in Windows Defender Firewall, it is necessary to create inbound exception rules to allow this traffic. It is common for the app or the app installer itself to add this firewall rule. Otherwise, the user (or firewall admin on behalf of the user) needs to manually create a rule.
+When first installed, networked applications and services issue a listen call specifying the protocol/port information required for them to function properly. As there's a default block action in Windows Defender Firewall, it's necessary to create inbound exception rules to allow this traffic. It's common for the app or the app installer itself to add this firewall rule. Otherwise, the user (or firewall admin on behalf of the user) needs to manually create a rule.
 
-If there are no active application or administrator-defined allow rule(s), a dialog box will prompt the user to either allow or block an application's packets the first time the app is launched or tries to communicate in the network.
+If there's no active application or administrator-defined allow rule(s), a dialog box will prompt the user to either allow or block an application's packets the first time the app is launched or tries to communicate in the network.
 
-- If the user has admin permissions, they will be prompted. If they respond *No* or cancel the prompt, block rules will be created. Two rules are typically created, one each for TCP and UDP traffic.
+- If the user has admin permissions, they'll be prompted. If they respond *No* or cancel the prompt, block rules will be created. Two rules are typically created, one each for TCP and UDP traffic.
 
-- If the user is not a local admin, they will not be prompted. In most cases, block rules will be created.
+- If the user isn't a local admin, they won't be prompted. In most cases, block rules will be created.
 
 In either of the scenarios above, once these rules are added they must be deleted in order to generate the prompt again. If not, the traffic will continue to be blocked.
 
@@ -118,11 +118,11 @@ In either of the scenarios above, once these rules are added they must be delete
 
 ### Known issues with automatic rule creation
 
-When designing a set of firewall policies for your network, it is a best practice to configure allow rules for any networked applications deployed on the host. Having these rules in place before the user first launches the application will help ensure a seamless experience.
+When designing a set of firewall policies for your network, it's a best practice to configure allow rules for any networked applications deployed on the host. Having these rules in place before the user first launches the application will help ensure a seamless experience.
 
-The absence of these staged rules does not necessarily mean that in the end an application will be unable to communicate on the network. However, the behaviors involved in the automatic creation of application rules at runtime require user interaction and administrative privilege. If the device is expected to be used by non-administrative users, you should follow best practices and provide these rules before the application's first launch to avoid unexpected networking issues.
+The absence of these staged rules doesn't necessarily mean that in the end an application will be unable to communicate on the network. However, the behaviors involved in the automatic creation of application rules at runtime require user interaction and administrative privilege. If the device is expected to be used by non-administrative users, you should follow best practices and provide these rules before the application's first launch to avoid unexpected networking issues.
 
-To determine why some applications are blocked from communicating in the network, check for the following:
+To determine why some applications are blocked from communicating in the network, check for the following instances:
 
 1.  A user with sufficient privileges receives a query notification advising them that the application needs to make a change to the firewall policy. Not fully understanding the prompt, the user cancels or dismisses the prompt.
 
@@ -148,7 +148,7 @@ Firewall rules can be deployed:
 
 Rule merging settings control how rules from different policy sources can be combined. Administrators can configure different merge behaviors for Domain, Private, and Public profiles.
 
-The rule merging settings either allow or prevent local admins from creating their own firewall rules in addition to those obtained from Group Policy.
+The rule-merging settings either allow or prevent local administrators from creating their own firewall rules in addition to those rules obtained from Group Policy.
 
 ![Customize settings.](images/fw05-rulemerge.png)
 
@@ -160,12 +160,12 @@ equivalent setting is *AllowLocalPolicyMerge*. This setting can be found under e
 
 If merging of local policies is disabled, centralized deployment of rules is required for any app that needs inbound connectivity.
 
-Admins may disable *LocalPolicyMerge* in high security environments to maintain tighter control over endpoints. This can impact some apps and services that automatically generate a local firewall policy upon installation as discussed above. For these types of apps and services to work, admins should push rules centrally via group policy (GP), Mobile Device
+Administrators may disable *LocalPolicyMerge* in high-security environments to maintain tighter control over endpoints. This setting can impact some applications and services that automatically generate a local firewall policy upon installation as discussed above. For these types of apps and services to work, admins should push rules centrally via group policy (GP), Mobile Device
 Management (MDM), or both (for hybrid or co-management environments).
 
 [Firewall CSP](/windows/client-management/mdm/firewall-csp) and [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider) also have settings that can affect rule merging.
 
-As a best practice, it is important to list and log such apps, including the network ports used for communications. Typically, you can find what ports must be open for a given service on the app's website. For more complex or customer application deployments, a more thorough analysis may be needed using network packet capture tools. 
+As a best practice, it's important to list and log such apps, including the network ports used for communications. Typically, you can find what ports must be open for a given service on the app's website. For more complex or customer application deployments, a more thorough analysis may be needed using network packet capture tools. 
 
 In general, to maintain maximum security, admins should only push firewall exceptions for apps and services determined to serve legitimate purposes.
 
@@ -177,7 +177,7 @@ supported in application rules. We currently only support rules created using th
 
 ## Know how to use "shields up" mode for active attacks
 
-An important firewall feature you can use to mitigate damage during an active attack is the "shields up" mode. It is an informal term referring to an easy method a firewall administrator can use to temporarily increase security in the face of an active attack.
+An important firewall feature you can use to mitigate damage during an active attack is the "shields up" mode. It's an informal term referring to an easy method a firewall administrator can use to temporarily increase security in the face of an active attack.
 
 Shields up can be achieved by checking **Block all
 incoming connections, including those in the list of allowed apps** setting found in either the Windows Settings app or the legacy file *firewall.cpl*.
@@ -190,9 +190,9 @@ incoming connections, including those in the list of allowed apps** setting foun
 
 *Figure 7: Legacy firewall.cpl*
 
-By default, the Windows Defender Firewall will block everything unless there is an exception rule created. This setting overrides the exceptions. 
+By default, the Windows Defender Firewall will block everything unless there's an exception rule created. This setting overrides the exceptions. 
 
-For example, the Remote Desktop feature automatically creates firewall rules when enabled. However, if there is an active exploit using multiple ports and services on a host, you can, instead of disabling individual rules, use the shields up mode to block all inbound connections, overriding previous exceptions, including the rules for Remote Desktop. The Remote Desktop rules remain intact but remote access will not work as long as shields up is activated.
+For example, the Remote Desktop feature automatically creates firewall rules when enabled. However, if there's an active exploit using multiple ports and services on a host, you can, instead of disabling individual rules, use the shields up mode to block all inbound connections, overriding previous exceptions, including the rules for Remote Desktop. The Remote Desktop rules remain intact but remote access won't work as long as shields up is activated.
 
 Once the emergency is over, uncheck the setting to restore regular network traffic.
 
@@ -203,7 +203,7 @@ What follows are a few general guidelines for configuring outbound rules.
 - The default configuration of Blocked for Outbound rules can be
     considered for certain highly secure environments. However, the Inbound rule configuration should never be changed in a way that Allows traffic by default.
 
-- It is recommended to Allow Outbound by default for most deployments for the sake of simplification around app deployments, unless the enterprise prefers tight security controls over ease-of-use.
+- It's recommended to Allow Outbound by default for most deployments for the sake of simplification around app deployments, unless the enterprise prefers tight security controls over ease-of-use.
 
 - In high security environments, an inventory of all enterprise-spanning apps must be taken and logged by the administrator or administrators. Records must include whether an app used requires network connectivity. Administrators will need to create new rules specific to each app that needs network connectivity and push those rules centrally, via group policy (GP), Mobile Device Management (MDM), or both (for hybrid or co-management environments).
 

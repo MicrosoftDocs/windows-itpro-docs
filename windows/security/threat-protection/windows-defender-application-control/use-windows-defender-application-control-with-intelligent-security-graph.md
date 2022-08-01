@@ -36,7 +36,7 @@ Beginning with Windows 10, version 1709, you can set an option to automatically 
 
 The ISG uses the same vast security intelligence and machine learning analytics that power Microsoft Defender SmartScreen and Microsoft Defender Antivirus to help classify applications as having "known good," "known bad," or "unknown" reputation. When a binary runs on a system, with Windows Defender Application Control (WDAC) enabled with the ISG option, WDAC checks the file's reputation, by sending its hash and signing information to the cloud. If the ISG reports that the file has a "known good" reputation, the $KERNEL.SMARTLOCKER.ORIGINCLAIM kernel Extended Attribute (EA) is written to the file.
 
-If your WDAC policy does not have an explicit rule to allow or deny a binary to run, then WDAC will make a call to the cloud to determine whether the binary is familiar and safe. However, if your policy already authorizes or denies the binary, then WDAC will not make a call to the cloud.
+If your WDAC policy doesn't have an explicit rule to allow or deny a binary to run, then WDAC will make a call to the cloud to determine whether the binary is familiar and safe. However, if your policy already authorizes or denies the binary, then WDAC won't make a call to the cloud.
 
 If the file with good reputation is an application installer, its reputation will pass along to any files that it writes to disk. This way, all the files needed to install and run an app inherit the positive reputation data from the installer.
 
@@ -54,7 +54,7 @@ Setting up the ISG is easy using any management solution you wish. Configuring t
 
 ### Ensure that the Intelligent Security Graph option is enabled in the WDAC policy XML
 
-To allow apps and binaries based on the Microsoft Intelligent Security Graph, the **Enabled:Intelligent Security Graph authorization** option must be specified in the Windows Defender Application Control policy. This step can be done with the Set-RuleOption cmdlet. You should also enable the **Enabled:Invalidate EAs on Reboot** option so that ISG results are verified again after each reboot. The ISG option is not recommended for devices that don't have regular access to the internet. The following example shows both options being set.
+To allow apps and binaries based on the Microsoft Intelligent Security Graph, the **Enabled:Intelligent Security Graph authorization** option must be specified in the Windows Defender Application Control policy. This step can be done with the Set-RuleOption cmdlet. You should also enable the **Enabled:Invalidate EAs on Reboot** option so that ISG results are verified again after each reboot. The ISG option isn't recommended for devices that don't have regular access to the internet. The following example shows both options being set.
 
 ```xml
 <Rules> 
@@ -84,7 +84,7 @@ To allow apps and binaries based on the Microsoft Intelligent Security Graph, th
 
 ### Enable the necessary services to allow WDAC to use the ISG correctly on the client
 
-In order for the heuristics used by the ISG to function properly, a number of components in Windows must be enabled. You can configure these components by running the appidtel executable in `c:\windows\system32`.
+In order for the heuristics used by the ISG to function properly, many components in Windows must be enabled. You can configure these components by running the appidtel executable in `c:\windows\system32`.
 
 ```console
 appidtel start
@@ -99,7 +99,7 @@ Since the Microsoft Intelligent Security Graph is a heuristic-based mechanism, i
 Processes running with kernel privileges can circumvent WDAC by setting the ISG extended file attribute to make a binary appear to have known good reputation. Also, since the ISG option passes along reputation from application installers to the binaries they write to disk, it can over-authorize files in some cases where the installer launches the application upon completion.
 
 ## Using fsutil to query SmartLocker EA
-Customers using Windows Defender Application Control (WDAC) with Managed Installer (MI) or Intelligent Security Graph enabled can use fsutil to determine whether a file was allowed to run by one of these features. This can be achieved by querying the EAs on a file using fsutil and looking for the KERNEL.SMARTLOCKER.ORIGINCLAIM EA. The presence of this EA indicates that either MI or ISG allowed the file to run. This can be used in conjunction with enabling the MI and ISG logging events.
+Customers using Windows Defender Application Control (WDAC) with Managed Installer (MI) or Intelligent Security Graph enabled can use fsutil to determine whether a file was allowed to run by one of these features. This verification can be done by querying the EAs on a file using fsutil and looking for the KERNEL.SMARTLOCKER.ORIGINCLAIM EA. The presence of this EA indicates that either MI or ISG allowed the file to run. This EA's presence can be used in conjunction with enabling the MI and ISG logging events.
 
 #### Example
 
@@ -123,9 +123,9 @@ Ea Value Length: 7e
 
 ## Known limitations with using the Intelligent Security Graph
 
-Since the ISG only allows binaries that are known good, there are cases where legitimate software may be unknown to the ISG and will be blocked by Windows Defender Application Control (WDAC). In this case, you need to allow the software with a rule in your WDAC policy, deploy a catalog signed by a certificate trusted in the WDAC policy, or install the software from a WDAC managed installer. Installers or applications that dynamically create binaries at runtime, as well as self-updating applications, may exhibit this symptom.
+Since the ISG only allows binaries that are known good, there are cases where legitimate software may be unknown to the ISG and will be blocked by Windows Defender Application Control (WDAC). In this case, you need to allow the software with a rule in your WDAC policy, deploy a catalog signed by a certificate trusted in the WDAC policy, or install the software from a WDAC managed installer. Installers or applications that dynamically create binaries at runtime, and self-updating applications, may exhibit this symptom.
 
-Packaged apps are not supported with the Microsoft Intelligent Security Graph heuristics and will need to be separately authorized in your WDAC policy. Since packaged apps have a strong app identity and must be signed, it is straightforward to authorize these apps with your WDAC policy.
+Packaged apps aren't supported with the Microsoft Intelligent Security Graph heuristics and will need to be separately authorized in your WDAC policy. Since packaged apps have a strong app identity and must be signed, it's straightforward to authorize these apps with your WDAC policy.
 
 The ISG doesn't authorize kernel mode drivers. The WDAC policy must have rules that allow the necessary drivers to run.  
 
