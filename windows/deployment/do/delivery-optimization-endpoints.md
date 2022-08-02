@@ -3,7 +3,7 @@ title: Delivery Optimization and Microsoft Connected Cache content endpoints
 description: List of fully qualified domain names, ports, and associated content types to use Delivery Optimization and Microsoft Connected Cache.
 ms.date: 07/26/2022
 ms.prod: w10
-ms.technology: Windows 10
+ms.technology: windows
 ms.topic: reference
 ms.localizationpriority: medium 
 author: cmknox
