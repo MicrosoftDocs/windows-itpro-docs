@@ -47,10 +47,10 @@ manager: dansimp
     <a href="#mixedreality-microphonedisabled">MixedReality/MicrophoneDisabled</a>
   </dd>
   <dd>
-    <a href="#mixedreality-skipcalibrationduringfirstexperience">MixedReality/SkipCalibrationDuringFirstExperience</a>
+    <a href="#mixedreality-skipcalibrationduringsetup">MixedReality/SkipCalibrationDuringSetup</a>
   </dd>
   <dd>
-    <a href="#mixedreality-skiptrainingduringfirstexperience">MixedReality/SkipTrainingDuringFirstExperience</a>
+    <a href="#mixedreality-skiptrainingduringsetup">MixedReality/SkipTrainingDuringSetup</a>
   </dd>
   <dd>
     <a href="#mixedreality-visitorautologon">MixedReality/VisitorAutoLogon</a>
@@ -436,7 +436,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="mixedreality-skipcalibrationduringfirstexperience"></a>**MixedReality/SkipCalibrationDuringFirstExperience**  
+<a href="" id="mixedreality-skipcalibrationduringsetup"></a>**MixedReality/SkipCalibrationDuringSetup**  
 
 <!--SupportedSKUs-->
 
@@ -462,7 +462,7 @@ The following list shows the supported values:
 <!--Description-->
 Skips the calibration experience on HoloLens 2 devices when setting up a new user in the Out of Box Experience (OOBE) or when adding a new user to the device. The user will still be able to calibrate their device from the Settings app.
 
-The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipCalibrationDuringFirstExperience`
+The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipCalibrationDuringSetup`
 
 - Bool value
 
@@ -472,7 +472,7 @@ The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/Skip
 <hr/>
 
 <!--Policy-->
-<a href="" id="mixedreality-skiptrainingduringfirstexperience"></a>**MixedReality/SkipTrainingDuringFirstExperience**  
+<a href="" id="mixedreality-skiptrainingduringsetup"></a>**MixedReality/SkipTrainingDuringSetup**  
 
 <!--SupportedSKUs-->
 
@@ -498,7 +498,7 @@ The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/Skip
 <!--Description-->
 On HoloLens 2 devices, skips the training experience of interactions with the humming bird and start menu training when setting up a new user in the Out of Box Experience (OOBE) or when adding a new user to the device. The user will still be able to learn these movement controls from the Tips app.
 
-The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipTrainingDuringFirstExperience`
+The OMA-URI of new policy: `./Device/Vendor/MSFT/Policy/Config/MixedReality/SkipTrainingDuringSetup`
 
 - Bool value
 

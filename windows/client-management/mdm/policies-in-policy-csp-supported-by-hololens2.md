@@ -60,8 +60,8 @@ ms.date: 08/01/2022
 - [MixedReality/FallbackDiagnostics](./policy-csp-mixedreality.md#mixedreality-fallbackdiagnostics) <sup>9</sup>
 - [MixedReality/HeadTrackingMode](policy-csp-mixedreality.md#mixedreality-headtrackingmode) <sup>9</sup>
 - [MixedReality/MicrophoneDisabled](./policy-csp-mixedreality.md#mixedreality-microphonedisabled) <sup>9</sup>
-- [MixedReality/SkipCalibrationDuringFirstExperience](./policy-csp-mixedreality.md#mixedreality-skipcalibrationduringfirstexperience) <sup>Insider</sup>
-- [MixedReality/SkipTrainingDuringFirstExperience](./policy-csp-mixedreality.md#mixedreality-skiptrainingduringfirstexperience) <sup>Insider</sup>
+- [MixedReality/SkipCalibrationDuringSetup](./policy-csp-mixedreality.md#mixedreality-skipcalibrationduringsetup) <sup>Insider</sup>
+- [MixedReality/SkipTrainingDuringSetup](./policy-csp-mixedreality.md#mixedreality-skiptrainingduringsetup) <sup>Insider</sup>
 - [MixedReality/VisitorAutoLogon](policy-csp-mixedreality.md#mixedreality-visitorautologon) <sup>10</sup>
 - [MixedReality/VolumeButtonDisabled](./policy-csp-mixedreality.md#mixedreality-volumebuttondisabled) <sup>9</sup>
 - [Power/DisplayOffTimeoutOnBattery](./policy-csp-power.md#power-displayofftimeoutonbattery) <sup>9</sup>
