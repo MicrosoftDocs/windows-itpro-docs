@@ -51,8 +51,6 @@ Some application installers may automatically run the application at the end of 
 
 - Application control, based on managed installer, doesn't support applications that self-update. If an application that was deployed by a managed installer later updates itself, the updated application files won't include the origin information from the managed installer, and they might not be able to run. When you rely on managed installers, you must deploy and install all application updates by using a managed installer, or include rules to authorize the app in the WDAC policy. In some cases, it may be possible to also designate an application binary that performs self-updates as a managed installer. Proper review for functionality and security should be performed for the application before using this method.
 
-- [Packaged apps (MSIX)](/windows/msix/) deployed through a managed installer aren't tracked by the managed installer heuristic and will need to be separately authorized in your WDAC policy. See [Manage packaged apps with WDAC](manage-packaged-apps-with-windows-defender-application-control.md).
-
 - Some applications or installers may extract, download, or generate binaries and immediately attempt to run them. Files run by such a process may not be allowed by the managed installer heuristic. In some cases, it may be possible to also designate an application binary that performs such an operation as a managed installer. Proper review for functionality and security should be performed for the application before using this method.
 
 - The managed installer heuristic doesn't authorize kernel drivers. The WDAC policy must have rules that allow the necessary drivers to run.
