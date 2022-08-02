@@ -359,6 +359,7 @@ Comma-separated list of local addresses covered by the rule. The default value i
 
 - "*" indicates any local address. If present, the local address must be the only token included.
 - A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask nor a network prefix is specified, the subnet mask defaults to 255.255.255.255.
+- A valid IPv4 address.
 - A valid IPv6 address.
 - An IPv4 address range in the format of &quot;start address - end address&quot; with no spaces included.
 - An IPv6 address range in the format of &quot;start address - end address&quot; with no spaces included.
