@@ -484,7 +484,8 @@ Valid tokens include:
 Supported operations are Add, Delete, Replace, and Get.
 
 <a href="" id="autoresolve"></a>**MdmStore/DynamicKeywords/Addresses/Id/AutoResolve**
-Boolean value. If this flag is set to TRUE, then the 'keyword' field of this object is expected to be a fully qualified domain name, and the addresses will be automatically resolved. This flag should only be set if the Microsoft Defender Advanced Threat Protection Service is present. 
+Boolean value. If this flag is set to TRUE, then the 'keyword' field of this object is expected to be a Fully Qualified Domain Name, and the addresses will be automatically resolved. This flag should only be set if the Microsoft Defender Advanced Threat Protection Service is present. 
+Value type is string. Supported operations are Add, Delete, and Get.
 Value type is string. Supported operations are Add, Delete, and Get.
 
 
