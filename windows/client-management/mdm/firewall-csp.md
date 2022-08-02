@@ -477,7 +477,7 @@ Value type is string. Supported operations are Add, Delete, and Get.
 Consists of one or more comma-delimited tokens specifying the addresses covered by this keyword. This value should not be set if AutoResolve is true.
 
 Valid tokens include:
- - A subnet specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255.
+- A subnet specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255.
 - A valid IPv6 address.
 - An IPv4 address range in the format of "start address-end address" with no spaces included.
 - An IPv6 address range in the format of "start address-end address" with no spaces included.
