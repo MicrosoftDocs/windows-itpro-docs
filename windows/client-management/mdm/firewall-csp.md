@@ -470,7 +470,7 @@ A unique GUID string identifier for this dynamic keyword address.
 Value type is string. Supported operations are Add, Delete, and Get.
 
 <a href="" id="keyword"></a>**MdmStore/DynamicKeywords/Addresses/Id/Keyword**
-A String representing a keyword. If the AutoResolve value is true, this should be a Fully Qualified Domain name (wildcards accepted, for example "contoso.com" or "*.contoso.com").
+A String representing a keyword. If the AutoResolve value is true, this should be a Fully Qualified Domain Name (wildcards accepted, for example "contoso.com" or "*.contoso.com").
 Value type is string. Supported operations are Add, Delete, and Get.
 
 <a href="" id="addresses"></a>**MdmStore/DynamicKeywords/Addresses/Id/Addresses**
