@@ -8,5 +8,5 @@ items:
     topicHref: /windows/resources/
     items:
     - name: Security
-      tocHref: /windows/security/
-      topicHref: /windows/security/      
+      tocHref: /windows-server/security/credentials-protection-and-management/
+      topicHref: /windows/security/
