@@ -381,6 +381,7 @@ List of comma separated tokens specifying the remote addresses covered by the ru
 - &quot;Ply2Renders&quot;
 - &quot;LocalSubnet&quot; indicates any local address on the local subnet. This token isn't case-sensitive.
 - A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask nor a network prefix is specified, the subnet mask defaults to 255.255.255.255.
+- A valid IPv4 address.
 - A valid IPv6 address.
 - An IPv4 address range in the format of &quot;start address - end address&quot; with no spaces included.
 - An IPv6 address range in the format of &quot;start address - end address&quot; with no spaces included.
@@ -479,6 +480,7 @@ Consists of one or more comma-delimited tokens specifying the addresses covered 
 
 Valid tokens include:
 - A subnet specified using either the subnet mask or network prefix notation. If neither a subnet mask nor a network prefix is specified, the subnet mask defaults to 255.255.255.255.
+- A valid IPv4 address.
 - A valid IPv6 address.
 - An IPv4 address range in the format of "start address-end address" with no spaces included.
 - An IPv6 address range in the format of "start address-end address" with no spaces included.
