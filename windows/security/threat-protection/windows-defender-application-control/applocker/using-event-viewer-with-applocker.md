@@ -72,7 +72,7 @@ The following table contains information about the events that you can use to de
 | 8029 | Error | * was prevented from running due to Config CI policy.| Added in Windows Server 2016 and Windows 10.|
 | 8030 | Information | ManagedInstaller check SUCCEEDED during Appid verification of * | Added in Windows Server 2016 and Windows 10.|
 | 8031 | Information | SmartlockerFilter detected file * being written by process * | Added in Windows Server 2016 and Windows 10.|
-| 8032 | Esrror | ManagedInstaller check FAILED during Appid verification of * | Added in Windows Server 2016 and Windows 10.|
+| 8032 | Error | ManagedInstaller check FAILED during Appid verification of * | Added in Windows Server 2016 and Windows 10.|
 | 8033 | Warning | ManagedInstaller check FAILED during Appid verification of * . Allowed to run due to Audit AppLocker Policy. | Added in Windows Server 2016 and Windows 10.|
 | 8034 | Information | ManagedInstaller Script check FAILED during Appid verification of * | Added in Windows Server 2016 and Windows 10.|
 | 8035 | Error | ManagedInstaller Script check SUCCEEDED during Appid verification of * | Added in Windows Server 2016 and Windows 10.|
