@@ -6,8 +6,6 @@ items:
     href: new-in-windows-mdm-enrollment-management.md
   - name: Change history for MDM documentation
     href: change-history-for-mdm-documentation.md
-  - name: Support for mobile application management on Windows
-    href: implement-server-side-mobile-application-management.md
 - name: Mobile device enrollment
   href: mobile-device-enrollment.md
   items:
@@ -88,6 +86,8 @@ items:
     href: certificate-renewal-windows-mdm.md
 - name: Push notification support for device management
   href: push-notification-windows-mdm.md
+- name: Support for mobile application management on Windows
+  href: implement-server-side-mobile-application-management.md
 - name: Using PowerShell scripting with the WMI Bridge Provider
   href: using-powershell-scripting-with-the-wmi-bridge-provider.md
 - name: WMI providers supported in Windows 10
