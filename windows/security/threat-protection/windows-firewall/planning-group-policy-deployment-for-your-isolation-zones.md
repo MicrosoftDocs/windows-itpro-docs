@@ -20,9 +20,9 @@ ms.technology: windows-sec
 -   Windows 11
 -   Windows Server 2016 and above
 
-After you have decided on the best logical design of your isolation environment for the network and device security requirements, you can start the implementation plan.
+After you've decided on the best logical design of your isolation environment for the network and device security requirements, you can start the implementation plan.
 
-You have a list of isolation zones with the security requirements of each. For implementation, you must plan the groups that will hold the device accounts in each zone, the network access groups that will be used to determine who can access an isolated server, and the GPOs with the connection security and firewall rules to apply to corresponding groups. Finally you must determine how you will ensure that the policies will only apply to the correct devices within each group.
+You have a list of isolation zones with the security requirements of each. For implementation, you must plan the groups that will hold the device accounts in each zone, the network access groups that will be used to determine who can access an isolated server, and the GPOs with the connection security and firewall rules to apply to corresponding groups. Finally you must determine how you'll ensure that the policies will only apply to the correct devices within each group.
 
 -   [Planning Isolation Groups for the Zones](planning-isolation-groups-for-the-zones.md)
 

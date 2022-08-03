@@ -36,7 +36,7 @@ This policy setting determines which shared folders can be accessed by anonymous
 
 ### Best practices
 
--   Set this policy to a null value. There should be little impact because this is the default value. All users will have to be authenticated before they can access shared resources on the server.
+-   Set this policy to a null value. There should be little impact because this null value is the default one. All users will have to be authenticated before they can access shared resources on the server.
 
 ### Location
 
@@ -61,7 +61,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ## Security considerations
 
@@ -77,7 +77,7 @@ Configure the **Network access: Shares that can be accessed anonymously** settin
 
 ### Potential impact
 
-There should be little impact because this is the default configuration. Only authenticated users have access to shared resources on the server.
+There should be little impact because this state is the default configuration. Only authenticated users have access to shared resources on the server.
 
 ## Related topics
 

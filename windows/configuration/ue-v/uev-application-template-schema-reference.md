@@ -66,9 +66,11 @@ The XML declaration must specify the XML version 1.0 attribute (&lt;?xml version
 
 **Type: String**
 
-UE-V uses the ```https://schemas.microsoft.com/UserExperienceVirtualization/2012/SettingsLocationTemplate``` namespace for all applications. SettingsLocationTemplate is the root element and contains all other elements. Reference SettingsLocationTemplate in all templates using this tag:
+UE-V uses the `https://schemas.microsoft.com/UserExperienceVirtualization/2012/SettingsLocationTemplate` namespace for all applications. SettingsLocationTemplate is the root element and contains all other elements. Reference SettingsLocationTemplate in all templates using this tag:
 
-`<SettingsLocationTemplate xmlns='https://schemas.microsoft.com/UserExperienceVirtualization/2012/SettingsLocationTemplate'>`
+```xml
+<SettingsLocationTemplate xmlns='https://schemas.microsoft.com/UserExperienceVirtualization/2012/SettingsLocationTemplate'>
+```
 
 ### <a href="" id="data21"></a>Data types
 
@@ -102,7 +104,7 @@ ProcessVersion defines a type with four child elements: **Major**, **Minor**, **
 Architecture enumerates two possible values: **Win32** and **Win64**. These values are used to specify process architecture.
 
 <a href="" id="process"></a>**Process**
-The Process data type is a container used to describe processes to be monitored by UE-V. It contains six child elements: **Filename**, **Architecture**, **ProductName**, **FileDescription**, **ProductVersion**, and **FileVersion**. This table details each element’s respective data type:
+The Process data type is a container used to describe processes to be monitored by UE-V. It contains six child elements: **Filename**, **Architecture**, **ProductName**, **FileDescription**, **ProductVersion**, and **FileVersion**. This table details each element's respective data type:
 
 |Element|Data Type|Mandatory|
 |--- |--- |--- |
@@ -117,11 +119,11 @@ The Process data type is a container used to describe processes to be monitored 
 The Processes data type represents a container for a collection of one or more Process elements. Two child elements are supported in the Processes sequence type: **Process** and **ShellProcess**. Process is an element of type Process and ShellProcess is of data type Empty. At least one item must be identified in the sequence.
 
 <a href="" id="path"></a>**Path**
-Path is consumed by RegistrySetting and FileSetting to refer to registry and file paths. This element supports two optional attributes: **Recursive** and **DeleteIfNotFound**. Both values are set to default=”False”.
+Path is consumed by RegistrySetting and FileSetting to refer to registry and file paths. This element supports two optional attributes: **Recursive** and **DeleteIfNotFound**. Both values are set to default="False".
 
 Recursive indicates that the path and all subfolders are included for file settings or that all child registry keys are included for registry settings. In both cases, all items at the current level are included in the data captured. For a FileSettings object, all files within the specified folder are included in the data captured by UE-V but folders are not included. For registry paths, all values in the current path are captured but child registry keys are not captured. In both cases, care should be taken to avoid capturing large data sets or large numbers of items.
 
-The DeleteIfNotFound attribute removes the setting from the user’s settings storage path data. This may be desirable in cases where removing these settings from the package will save a large amount of disk space on the settings storage path file server.
+The DeleteIfNotFound attribute removes the setting from the user's settings storage path data. This may be desirable in cases where removing these settings from the package will save a large amount of disk space on the settings storage path file server.
 
 <a href="" id="filemask"></a>**FileMask**
 FileMask specifies only certain file types for the folder that is defined by Path. For example, Path might be `C:\users\username\files` and FileMask could be `*.txt` to include only text files.
@@ -138,7 +140,7 @@ Settings is a container for all the settings that apply to a particular template
 |Element|Description|
 |--- |--- |
 |Asynchronous|Asynchronous settings packages are applied without blocking the application startup so that the application start proceeds while the settings are still being applied. This is useful for settings that can be applied asynchronously, such as those get/set through an API, like SystemParameterSetting.|
-|PreventOverlappingSynchronization|By default, UE-V only saves settings for an application when the last instance of an application using the template is closed. When this element is set to ‘false’, UE-V exports the settings even if other instances of an application are running. Suited templates – those that include a Common element section– that are shipped with UE-V use this flag to enable shared settings to always export on application close, while preventing application-specific settings from exporting until the last instance is closed.|
+|PreventOverlappingSynchronization|By default, UE-V only saves settings for an application when the last instance of an application using the template is closed. When this element is set to 'false', UE-V exports the settings even if other instances of an application are running. Suited templates - those that include a Common element section- that are shipped with UE-V use this flag to enable shared settings to always export on application close, while preventing application-specific settings from exporting until the last instance is closed.|
 |AlwaysApplySettings|This parameter forces an imported settings package to be applied even if there are no differences between the package and the current state of the application. This parameter should be used only in special cases since it can slow down settings import.|
 
 ### <a href="" id="name21"></a>Name Element
@@ -208,7 +210,7 @@ Version identifies the version of the settings location template for administrat
 
 **Type: String**
 
-Author identifies the creator of the settings location template. Two optional child elements are supported: **Name** and **Email**. Both attributes are optional, but, if the Email child element is specified, it must be accompanied by the Name element. Author refers to the full name of the contact for the settings location template, and email should refer to an email address for the author. We recommend that you include this information in templates published publicly, for example, on the [UE-V Template Gallery](https://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=RootCategory&f%5B0%5D.Value=UE-V).
+Author identifies the creator of the settings location template. Two optional child elements are supported: **Name** and **Email**. Both attributes are optional, but, if the Email child element is specified, it must be accompanied by the Name element. Author refers to the full name of the contact for the settings location template, and email should refer to an email address for the author. We recommend that you include this information in templates published publicly.
 
 ### <a href="" id="processes21"></a>Processes and Process Element
 
@@ -250,7 +252,7 @@ Filename refers to the actual file name of the executable as it appears in the f
 Valid filenames must not match the regular expression \[^\\\\\\?\\\*\\|&lt;&gt;/:\]+, that is, they may not contain backslash characters, asterisk or question mark wild-card characters, the pipe character, the greater than or less than sign, forward slash, or colon (the \\ ? \* | &lt; &gt; / or : characters.).
 
 > [!TIP]
-> To test a string against this regex, use a PowerShell command window and substitute your executable’s name for **YourFileName**:
+> To test a string against this regex, use a PowerShell command window and substitute your executable's name for **YourFileName**:
 
 `"YourFileName.exe" -match  "[\\\?\*\|<>/:]+"`
 
@@ -269,7 +271,7 @@ A value of **True** indicates that the string contains illegal characters. Here 
 
  
 
-In rare circumstances, the FileName value will not necessarily include the .exe extension, but it should be specified as part of the value. For example, `<Filename>MyApplication.exe</Filename>` should be specified instead of `<Filename>MyApplication</Filename>`. The second example will not apply the template to the process if the actual name of the executable file is “MyApplication.exe”.
+In rare circumstances, the FileName value will not necessarily include the .exe extension, but it should be specified as part of the value. For example, `<Filename>MyApplication.exe</Filename>` should be specified instead of `<Filename>MyApplication</Filename>`. The second example will not apply the template to the process if the actual name of the executable file is "MyApplication.exe".
 
 ### Architecture
 
@@ -279,7 +281,7 @@ In rare circumstances, the FileName value will not necessarily include the .exe 
 
 Architecture refers to the processor architecture for which the target executable was compiled. Valid values are Win32 for 32-bit applications or Win64 for 64-bit applications. If present, this tag limits the applicability of the settings location template to a particular application architecture. For an example of this, compare the %ProgramFiles%\\Microsoft User Experience Virtualization\\templates\\ MicrosoftOffice2016Win32.xml and MicrosoftOffice2016Win64.xml files included with UE-V. This is useful when relative paths change between different versions of an executable or if settings have been added or removed when moving from one processor architecture to another.
 
-If this element is absent, the settings location template ignores the process’ architecture and applies to both 32 and 64-bit processes if the file name and other attributes apply.
+If this element is absent, the settings location template ignores the process' architecture and applies to both 32 and 64-bit processes if the file name and other attributes apply.
 
 > [!NOTE]
 > UE-V does not support ARM processors in this version.
@@ -342,7 +344,7 @@ For example, in a suited application, it might be useful to provide reminders ab
 
 ProductVersion refers to the major and minor product versions of a file, as well as a build and patch level. ProductVersion is an optional element, but if specified, it must contain at least the Major child element. The value must express a range in the form Minimum="X" Maximum="Y" where X and Y are integers. The Minimum and Maximum values can be identical.
 
-The product and file version elements may be left unspecified. Doing so makes the template “version agnostic”, meaning that the template will apply to all versions of the specified executable.
+The product and file version elements may be left unspecified. Doing so makes the template "version agnostic", meaning that the template will apply to all versions of the specified executable.
 
 **Example 1:**
 
@@ -368,7 +370,7 @@ File version: 5.0.2.1000 specified in the UE-V template generator produces the f
 </FileVersion>
 ```
 
-**Incorrect Example 1 – incomplete range:**
+**Incorrect Example 1 - incomplete range:**
 
 Only the Minimum attribute is present. Maximum must be included in a range as well.
 
@@ -378,7 +380,7 @@ Only the Minimum attribute is present. Maximum must be included in a range as we
 </ProductVersion>
 ```
 
-**Incorrect Example 2 – Minor specified without Major element:**
+**Incorrect Example 2 - Minor specified without Major element:**
 
 Only the Minor element is present. Major must be included as well.
 

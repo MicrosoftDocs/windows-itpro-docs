@@ -32,17 +32,17 @@ The information that you gather will help you answer the following questions. Th
 
 -   What traffic must always be blocked? Does your organization have policies that prohibit the use of specific programs? If so, what are the characteristics of the network traffic generated and consumed by the prohibited programs?
 
--   What traffic on the network cannot be protected by IPsec because the devices or devices sending or receiving the traffic do not support IPsec?
+-   What traffic on the network can't be protected by IPsec because the devices or devices sending or receiving the traffic don't support IPsec?
 
 -   For each type of network traffic, does the default configuration of the firewall (block all unsolicited inbound network traffic, allow all outbound traffic) allow or block the traffic as required?
 
--   Do you have an Active Directory domain (or forest of trusted domains) to which all your devices are joined? If you do not, then you cannot use Group Policy for easy mass deployment of your firewall and connection security rules. You also cannot easily take advantage of Kerberos V5 authentication that all domain clients can use.
+-   Do you have an Active Directory domain (or forest of trusted domains) to which all your devices are joined? If you don't, then you can't use Group Policy for easy mass deployment of your firewall and connection security rules. You also can't easily take advantage of Kerberos V5 authentication that all domain clients can use.
 
--   Which devices must be able to accept unsolicited inbound connections from devices that are not part of the domain?
+-   Which devices must be able to accept unsolicited inbound connections from devices that aren't part of the domain?
 
 -   Which devices contain data that must be encrypted when exchanged with another computer?
 
--   Which devices contain sensitive data to which access must be restricted to specifically authorized users and devices?
+-   Which devices contain sensitive data to which access must be restricted to authorized users and devices?
 
 -   Does your organization have specific network troubleshooting devices or devices (such as protocol analyzers) that must be granted unlimited access to the devices on the network, essentially bypassing the firewall?
 

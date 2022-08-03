@@ -26,7 +26,7 @@ Minimize the number of NAGs to limit the complexity of the solution. You need on
 
 The NAGs that you create and populate become active by referencing them in the **Users and Computers** tab of the firewall rules in the GPO assigned to the isolated servers. The GPO must also contain connection security rules that require authentication to supply the credentials checked for NAG membership.
 
-For the Woodgrove Bank scenario, access to the devices running SQL Server that support the WGBank application are restricted to the WGBank front-end servers and to approved administrative users logged on to specific authorized administrative devices. They are also only accessed by the approved admin users and the service account that is used to the run the WGBank front end service.
+For the Woodgrove Bank scenario, access to the devices running SQL Server which support the WGBank application are restricted to the WGBank front-end servers and to approved administrative users logged on to specific authorized administrative devices. They're also only accessed by the approved admin users and the service account that is used to the run the WGBank front end service.
 
 | NAG Name | NAG Member Users, Computers, or Groups | Description |
 | - | - | - |

@@ -24,7 +24,7 @@ ms.topic: article
 
 Microsoft Connected Cache (MCC) preview is a software-only caching solution that delivers Microsoft content within Enterprise networks. MCC can be deployed to as many physical servers or VMs as needed, and is managed from a cloud portal. Cache nodes are created in the cloud portal and are configured by applying a client policy using your management tool, such as [Intune](/mem/intune/).
 
-MCC is a hybrid (a mix of on-prem and cloud resources) SaaS solution built as an Azure IoT Edge module; it's a Docker compatible Linux container that is deployed to your Windows devices. IoT Edge for Linux on Windows (EFLOW) was chosen because it's a secure, reliable container management infrastructure. EFLOW is a Linux virtual machine, based on Microsoft's first party CBL-Mariner operating system. It’s built with the IoT Edge runtime and validated as a tier 1 supported environment for IoT Edge workloads. MCC will be a Linux IoT Edge module running on the Windows Host OS.
+MCC is a hybrid (a mix of on-premises and cloud resources) SaaS solution built as an Azure IoT Edge module; it's a Docker compatible Linux container that is deployed to your Windows devices. IoT Edge for Linux on Windows (EFLOW) was chosen because it's a secure, reliable container management infrastructure. EFLOW is a Linux virtual machine, based on Microsoft's first party CBL-Mariner operating system. It’s built with the IoT Edge runtime and validated as a tier 1 supported environment for IoT Edge workloads. MCC will be a Linux IoT Edge module running on the Windows Host OS.
 
 Even though your MCC scenario isn't related to IoT, Azure IoT Edge is used as a more generic Linux container, deployment, and management infrastructure. The Azure IoT Edge runtime sits on your designated MCC device and performs management and communication operations. The runtime performs the following important functions to manage MCC on your edge device: 
 
@@ -111,7 +111,7 @@ For questions regarding these instructions contact [msconnectedcache@microsoft.c
 As part of the MCC preview onboarding process an Azure subscription ID must be provided to Microsoft. 
 
 > [!IMPORTANT]
-> [Take this survey](https://aka.ms/MSConnectedCacheSignup) and provide your Azure subscription ID and contact information to be added to the allow list for this preview. You will not be able to proceed if you skip this step.
+> [Take this survey](https://aka.ms/MSConnectedCacheSignup) and provide your Azure subscription ID and contact information to be added to the allowlist for this preview. You will not be able to proceed if you skip this step.
 
 For information about creating or locating your subscription ID, see [Steps to obtain an Azure Subscription ID](#steps-to-obtain-an-azure-subscription-id).
 
@@ -119,7 +119,7 @@ For information about creating or locating your subscription ID, see [Steps to o
 
 The MCC Azure management portal is used to create and manage MCC nodes. An Azure Subscription ID is used to grant access to the preview and to create the MCC resource in Azure and Cache nodes. 
 
-Once you take the survey above and the MCC team adds your subscription ID to the allow list, you will be given a link to the Azure portal where you can create the resource described below. 
+Once you take the survey above and the MCC team adds your subscription ID to the allowlist, you will be given a link to the Azure portal where you can create the resource described below. 
 
 1.  On the Azure portal home page, choose **Create a resource**:  
     ![eMCC img02](images/emcc02.png)
@@ -164,7 +164,7 @@ Once you take the survey above and the MCC team adds your subscription ID to the
 
 ### Create an MCC node in Azure
 
-Creating a MCC node is a multi-step process and the first step is to access the MCC private preview management portal.
+Creating an MCC node is a multi-step process and the first step is to access the MCC private preview management portal.
 
 1.  After the successful resource creation click on the **Go to resource**.
 2.  Under **Cache Node Management** section on the leftmost panel, click on **Cache Nodes**.
@@ -329,7 +329,7 @@ You should see MCC, edgeAgent, and edgeHub running. If you see edgeAgent or edge
 
 #### Verify server side
 
-For a validation of properly functioning MCC, execute the following command in the EFLOW VM or any device in the network. Replace <CacheServerIP> with the IP address of the cache server.
+For a validation of properly functioning MCC, execute the following command in the EFLOW VM or any device in the network. Replace <CacheServerIP\> with the IP address of the cache server.
 
 ```powershell
 wget [http://<CacheServerIP>/mscomtest/wuidt.gif?cacheHostOrigin=au.download.windowsupdate.com]
@@ -351,7 +351,7 @@ If the test fails, see the common issues section for more information.
 
 ### Intune (or other management software) configuration for MCC
 
-Example of setting the cache host policy to the MCC’s IP address / FQDN:
+For an Intune deployment, create a Configuration Profile and include the Cache Host eFlow IP Address or FQDN:
 
 ![eMCC img23](images/emcc23.png)
 
@@ -503,13 +503,13 @@ There are multiple methods that can be used to apply a policy to PCs that should
 You can either set your MCC IP address or FQDN using:
 
 1.  Registry Key in 1709 and higher -  
-    [HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\DeliveryOptimization]<br>
+    [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization]<br>
     "DOCacheHost"=" "  
     
   From an elevated command prompt:
 
   ```
-  reg add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\DeliveryOptimization" /v DOCacheHost /t REG_SZ /d "10.137.187.38" /f
+  reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization" /v DOCacheHost /t REG_SZ /d "10.137.187.38" /f
   ```
 
 2.  MDM Path in 1809 or higher:

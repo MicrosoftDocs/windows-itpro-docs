@@ -19574,6 +19574,21 @@
       "source_path": "windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune.md",
       "redirect_url": "/windows/security/threat-protection/windows-defender-application-control/deployment/deploy-windows-defender-application-control-policies-using-intune",
       "redirect_document_id": false
+     },
+     {
+      "source_path": "smb/cloud-mode-business-setup.md",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/bg-p/Microsoft365BusinessBlog",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "smb/index.md",
+      "redirect_url": "https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/bg-p/Microsoft365BusinessBlog",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "windows/whats-new/contribute-to-a-topic.md",
+      "redirect_url": "https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/CONTRIBUTING.md#editing-windows-it-professional-documentation",
+      "redirect_document_id": false
      }
   ]
 }
