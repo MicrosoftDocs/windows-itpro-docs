@@ -90,7 +90,11 @@ There is a vulnerability explained in the below article it applicable to Pasword
 - [Interactive logon Do not require CTRL+ALT+DEL (Windows 10) - Windows security | Microsoft Docs ](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/interactive-logon-do-not-require-ctrl-alt-del)
 
 However, with WHFB setup this vulnerability no longer applicable due to WHFB credentials are not equal to Password as explained above in this article.   
-After WHFB credentials provisioned, users can have the options to choose Password and the vulnerability mentioned in the doc remains. Hence you can have a way to secure the cloud resource access with Password+MFA or Phone sign-in for the user if they don't use WHFB/FIDO2 credentials available in windows machine.
+After WHFB credentials provisioned, from next sign-in users are defaulted to WHFB credentials PIN/Bio always. 
+However user still can manually choose the options to sign-in with Password and the vulnerability mentioned in the doc remains. either you as admin can secure the cloud resource access with MFA requirement or you could block the user by removing the Password as credntial provider via GPO later as mentioned in Passwordless stragy document below to prevent the users using password. 
+
+- [Password-less strategy - Windows security | Microsoft Docs](https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/windows/security/identity-protection/hello-for-business/passwordless-strategy.md)
+
 
 ## Related topics
 
