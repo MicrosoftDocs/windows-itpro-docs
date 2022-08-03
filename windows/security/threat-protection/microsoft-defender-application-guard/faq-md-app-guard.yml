@@ -43,7 +43,7 @@ sections:
          
          To ensure the FQDNs (Fully Qualified Domain Names) for the “PAC file” and the “proxy servers the PAC file redirects to” are added as Neutral Resources in the Network Isolation policies used by Application Guard, you can:
         
-         - Verify this addition by going to edge://application-guard-internals/#utilities and entering the FQDN for the pac/proxy in the “check url trust” field and verifying that it says “Neutral”.
+         - Verify this addition by going to edge://application-guard-internals/#utilities and entering the FQDN for the pac/proxy in the “check url trust” field and verifying that it says “Neutral.”
          - It must be an FQDN. A simple IP address won't work.
          - Optionally, if possible, the IP addresses associated with the server hosting the above should be removed from the Enterprise IP Ranges in the Network Isolation policies used by Application Guard.
         
