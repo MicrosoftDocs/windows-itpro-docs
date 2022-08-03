@@ -84,16 +84,16 @@ items:
     href: config-lock.md
   - name: Certificate renewal
     href: certificate-renewal-windows-mdm.md
-- name: Push notification support for device management
-  href: push-notification-windows-mdm.md
-- name: Support for mobile application management on Windows
-  href: implement-server-side-mobile-application-management.md
 - name: Using PowerShell scripting with the WMI Bridge Provider
   href: using-powershell-scripting-with-the-wmi-bridge-provider.md
 - name: WMI providers supported in Windows 10
   href: wmi-providers-supported-in-windows.md
 - name: Diagnose MDM failures in Windows 10
   href: diagnose-mdm-failures-in-windows-10.md
+- name: Push notification support for device management
+  href: push-notification-windows-mdm.md
+- name: MAM support for device management
+  href: implement-server-side-mobile-application-management.md
 - name: OMA DM protocol support
   href: oma-dm-protocol-support.md
   items:
