@@ -5,6 +5,8 @@ items:
       - name: Overview
         href: mdm-overview.md
         items:
+          - name: MDM overview
+            href: mdm-overview.md
           - name: What's new in MDM enrollment and management
             href: new-in-windows-mdm-enrollment-management.md
           - name: Change history for MDM documentation
