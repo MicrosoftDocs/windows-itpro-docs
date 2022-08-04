@@ -49,7 +49,7 @@ landingContent:
           - text: Troubleshoot Delivery Optimization
             url: waas-delivery-optimization-setup.md#troubleshooting
           - text: Delivery Optimization Frequently Asked Questions
-            url: ../update/waas-delivery-optimization-faq.md
+            url: ../do/waas-delivery-optimization-faq.yml
           - text: Submit feedback
             url: https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332
 
