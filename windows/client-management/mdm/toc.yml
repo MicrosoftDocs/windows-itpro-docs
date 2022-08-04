@@ -3,7 +3,6 @@ items:
     href: index.yml
     items:
       - name: Overview
-        href: mdm-overview.md
         items:
           - name: MDM overview
             href: mdm-overview.md
