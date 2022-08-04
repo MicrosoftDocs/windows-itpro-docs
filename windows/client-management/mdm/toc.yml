@@ -2,11 +2,11 @@ items:
   - name: Mobile Device Management
     href: index.yml
     items:
-      - name: MDM overview
+      - name: Overview
         href: mdm-overview.md
-      - name: What's new in MDM enrollment and management
-        href: new-in-windows-mdm-enrollment-management.md
         items:
+          - name: What's new in MDM enrollment and management
+            href: new-in-windows-mdm-enrollment-management.md
           - name: Change history for MDM documentation
             href: change-history-for-mdm-documentation.md
       - name: Device enrollment
