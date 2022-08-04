@@ -97,7 +97,7 @@ function listAumids( $userAccount ) {
 }
 ```
 
-The following Windows PowerShell commands demonstrate how you can call the listAumids function after you have created it.
+The following Windows PowerShell commands demonstrate how you can call the listAumids function after you've created it.
 
 ```powershell
 # Get a list of AUMIDs for the current account:
