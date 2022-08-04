@@ -138,7 +138,7 @@ The following table gives examples for blocked URLs.
 |         `*:8080`         |                       Blocks all requests to port 8080.                       |
 |   `contoso.com/stuff`    |         Blocks all requests to contoso.com/stuff and its subdomains.          |
 |      `192.168.1.2`       |                        Blocks requests to 192.168.1.2.                        |
-| `youtube.com/watch?v=V1` |                       Blocks Youtube video with id V1.                        |
+| `youtube.com/watch?v=V1` |                       Blocks YouTube video with id V1.                        |
 
 ### Other browsers
 
