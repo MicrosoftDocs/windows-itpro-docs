@@ -6507,8 +6507,8 @@
     },
     {
       "source_path": "windows/access-protection/access-control/dynamic-access-control.md",
-      "redirect_url": "/windows/security/identity-protection/access-control/dynamic-access-control",
-      "redirect_document_id": false
+      "redirect_url": "/windows-server/identity/solution-guides/dynamic-access-control-overview",
+      "redirect_document_id": true
     },
     {
       "source_path": "windows/access-protection/access-control/local-accounts.md",
@@ -19589,6 +19589,46 @@
       "source_path": "windows/whats-new/contribute-to-a-topic.md",
       "redirect_url": "https://github.com/MicrosoftDocs/windows-itpro-docs/blob/public/CONTRIBUTING.md#editing-windows-it-professional-documentation",
       "redirect_document_id": false
+     },
+     {
+      "source_path": "windows/security/identity-protection/access-control/security-identifiers.md",
+      "redirect_url": "/windows-server/identity/ad-ds/manage/understand-security-identifiers",
+      "redirect_document_id": true
+     },
+     {
+      "source_path": "windows/security/identity-protection/access-control/security-principals.md",
+      "redirect_url": "/windows-server/identity/ad-ds/manage/understand-security-principals",
+      "redirect_document_id": true
+     },
+     {
+      "source_path": "windows/security/identity-protection/access-control/active-directory-accounts.md",
+      "redirect_url": "/windows-server/identity/ad-ds/manage/understand-default-user-accounts",
+      "redirect_document_id": true
+     },
+     {
+      "source_path": "windows/security/identity-protection/access-control/microsoft-accounts.md",
+      "redirect_url": "/windows-server/identity/ad-ds/manage/understand-microsoft-accounts",
+      "redirect_document_id": true
+     },
+     {
+      "source_path": "windows/security/identity-protection/access-control/service-accounts.md",
+      "redirect_url": "/windows-server/identity/ad-ds/manage/understand-service-accounts",
+      "redirect_document_id": true
+     },
+     {
+      "source_path": "windows/security/identity-protection/access-control/active-directory-security-groups.md",
+      "redirect_url": "/windows-server/identity/ad-ds/manage/understand-security-groups",
+      "redirect_document_id": true
+     },
+     {
+      "source_path": "windows/security/identity-protection/access-control/special-identities.md",
+      "redirect_url": "/windows-server/identity/ad-ds/manage/understand-special-identities-groups",
+      "redirect_document_id": true
+     },
+     {
+     "source_path": "windows/security/identity-protection/access-control/dynamic-access-control.md",
+     "redirect_url": "/windows-server/identity/solution-guides/dynamic-access-control-overview",
+     "redirect_document_id": true
      }
   ]
 }
