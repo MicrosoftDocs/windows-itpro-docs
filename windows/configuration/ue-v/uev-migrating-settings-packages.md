@@ -21,7 +21,7 @@ In the lifecycle of a User Experience Virtualization (UE-V) deployment, you migh
 
 -   Migration of a settings storage location share from a test server to a production server
 
-Simply copying the files and folders does not preserve the security settings and permissions. The following steps describe how to correctly copy the settings package along with their NTFS file system permissions to a new share.
+Simply copying the files and folders doesn't preserve the security settings and permissions. The following steps describe how to correctly copy the settings package along with their NTFS file system permissions to a new share.
 
 **To preserve UE-V settings packages when you migrate to a new server**
 
