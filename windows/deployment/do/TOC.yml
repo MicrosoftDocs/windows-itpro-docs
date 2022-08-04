@@ -7,7 +7,9 @@
           href: waas-delivery-optimization.md
         - name: What's new
           href: whats-new-do.md
-
+        - name: Delivery Optimization Frequently Asked Questions
+          href: waas-delivery-optimization-faq.yml
+          
 
      
     - name: Configure Delivery Optimization
