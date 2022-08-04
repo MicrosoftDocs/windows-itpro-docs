@@ -9,22 +9,13 @@ ms.pagetype: edu
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-ms.date: 08/31/2020
-ms.reviewer: 
+ms.date: 08/04/2022
+ms.reviewer: paoloma
 manager: dansimp
 ---  
 
 # What's new in Set up School PCs
-Learn what’s new with the Set up School PCs app each week. Find out about new app features and functionality, see updated screenshots, and find information about past releases.   
-
-## Week of July 25, 2022
-
-### Reimage option for Windows 11 SE  
-Set up School PCs has added an option to reimage your Windows SE devices during the creation of a provisioning package. Previously, the process to reimage a device was specific to the OEM and required technical knowledge. The new reimaging feature in SUSPCs provides a unified way for all OEMs, using a simple and easy solution. Now you can plug in your USB stick with a Windows 11 SE image and a provisioning package on it, and your device will be reimaged before the provisioning package is installed on that device.  
-
-Note: If after you have reimaged the device, you notice there are missing drivers, the IT admin should manually add those drivers to the image. The SUSPC reimaging tool has been tested on Surface SE devices, but since there are a variety of SE devices, the SUSPC reimage tool has not been tested on all SE devices. Contact your OEM to learn more about the necessary drivers.  
-
-The option to reimage by getting the image from an OEM is still viable. 
+Learn what's new with the Set up School PCs app each week. Find out about new app features and functionality, see updated screenshots, and find information about past releases.
 
 ## Week of August 24, 2020
 
@@ -34,8 +25,7 @@ You can now give devices running Windows 10, version 2004 and later a name that'
 ## Week of September 23, 2019  
 
 ### Easier way to deploy Office 365 to your classroom devices 
- Microsoft Office now appears as an option on the **Apps** screen. Select the app to add it to your provisioning package. Devices install Microsoft 365 Apps for enterprise. This version includes the cloud-connected and most current versions of apps such as Word, PowerPoint, Excel, and Teams.   
-
+ Microsoft Office now appears as an option on the **Apps** screen. Select the app to add it to your provisioning package. Devices install Microsoft 365 Apps for enterprise. This version includes the cloud-connected and most current versions of apps such as Word, PowerPoint, Excel, and Teams.
 
 ## Week of June 24, 2019  
 
@@ -108,15 +98,10 @@ The Skype and Messaging apps are part of a selection of apps that are, by defaul
 
 
 ## Next steps    
-Learn how to create provisioning packages and set up devices in the app.   
+Learn how to create provisioning packages and set up devices in the app.
 * [What's in my provisioning package?](set-up-school-pcs-provisioning-package.md)
 * [Shared PC mode for schools](set-up-school-pcs-shared-pc-mode.md)
 * [Set up School PCs technical reference](set-up-school-pcs-technical.md)
-* [Set up Windows 10 devices for education](set-up-windows-10.md) 
+* [Set up Windows 10 devices for education](set-up-windows-10.md)
 
 When you're ready to create and apply your provisioning package, see [Use Set up School PCs app](use-set-up-school-pcs-app.md).
-
-
-
-
-
