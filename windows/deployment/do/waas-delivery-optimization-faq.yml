@@ -33,11 +33,12 @@ sections:
         answer: Yes. Devices will obtain the update payloads from the WSUS server, but must also have an internet connection as they communicate with the Delivery Optimization cloud service for coordination.
           
       - question: Which ports does Delivery Optimization use?
-        answer: Delivery Optimization listens on port 7680 for requests from other peers by using TCP/IP. The service will register and open this port on the device. The port must be set to accept inbound traffic through your firewall. If you don't allow inbound traffic over port 7680, you can't use the peer-to-peer functionality of Delivery Optimization. However, devices can still successfully download by using HTTP or HTTPS traffic over port 80 (such as for default Windows Update data).
+        answer: | 
+          Delivery Optimization listens on port 7680 for requests from other peers by using TCP/IP. The service will register and open this port on the device. The port must be set to accept inbound traffic through your firewall. If you don't allow inbound traffic over port 7680, you can't use the peer-to-peer functionality of Delivery Optimization. However, devices can still successfully download by using HTTP or HTTPS traffic over port 80 (such as for default Windows Update data).
 
-                Delivery Optimization will use Teredo to create peer groups, which include devices across NATs (or any form of internal subnet that uses gateways or firewalls between subnets). For this to work, you must allow inbound TCP/IP traffic over port 3544. Look for a "NAT traversal" setting in your firewall to set this up.
+          Delivery Optimization will use Teredo to create peer groups, which include devices across NATs (or any form of internal subnet that uses gateways or firewalls between subnets). For this to work, you must allow inbound TCP/IP traffic over port 3544. Look for a "NAT traversal" setting in your firewall to set this up.
 
-                Delivery Optimization also communicates with its cloud service by using HTTP/HTTPS over port 80.
+          Delivery Optimization also communicates with its cloud service by using HTTP/HTTPS over port 80.
 
       - question: What are the requirements if I use a proxy?
         answer: For Delivery Optimization to successfully use the proxy, you should set up the proxy by using Windows proxy settings or Internet Explorer proxy settings. For details see [Using a proxy with Delivery Optimization](../do/delivery-optimization-proxy.md). Most content downloaded with Delivery Optimization uses byte range requests. Make sure your proxy allows byte range requests. For more information, see [Proxy requirements for Windows Update](/windows/deployment/update/windows-update-troubleshooting).
@@ -61,6 +62,8 @@ sections:
           **For group peers across multiple NATs (Teredo)**:
 
           - `win1910.ipv6.microsoft.com`
+
+          For more information, see [Endpoints for Delivery Optimization and Microsoft Connected Cache](../do/delivery-optimization-endpoints.md) for a list of all content endpoints needed.
 
       - question: Does Delivery Optimization use multicast?
         answer: No. It relies on the cloud service for peer discovery, resulting in a list of peers and their IP addresses. Client devices then connect to their peers to obtain download files over TCP/IP.
