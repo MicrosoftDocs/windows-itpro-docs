@@ -47,23 +47,28 @@ Each of these tiles contains an option to **View details**. When **View details*
 | Tile name | Description | View details description |
 |---|---|------|
 | **Enrolled devices** | Total number of devices that are enrolled into Update Compliance | Displays multiple charts about the operating systems (OS) for enrolled clients: </br> **OS Version** </br> **OS Edition** </br> **OS Servicing Channel** </br> **OS Architecture**|
-|**Active alerts** | Total number of active alerts on enrolled devices | Displays the top three active alert subtypes and the count of devices in each. </br> </br> Select the device count to display a table of the devices. You can also export the list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial). </br> </br> Select an **AlertSubtype** to display a list containing: </br> - Each **Error Code** in the alert subtype </br>- A **Description** of the error code </br> - A **Recommendation** to help you remediate the error code </br> - A count of **Devices** with the specific error code |
+|**Active alerts** | Total number of active alerts on enrolled devices | Displays the top three active alert subtypes and the count of devices in each. </br> </br> Select the count of **Devices** to display a table of the devices. This table is limited to the first 250 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial). </br> </br> Select an **AlertSubtype** to display a list containing: </br> - Each **Error Code** in the alert subtype </br>- A **Description** of the error code </br> - A **Recommendation** to help you remediate the error code </br> - A count of **Devices** with the specific error code |
 |  **Windows 11 eligibility** | Percentage of devices that are capable of running Windows 11 | Displays the following items: </br> - **Windows 11 Readiness Status** chart </br> - **Readiness Reason(s) Breakdown** chart that displays  Windows 11 requirements that aren't met. </br> - A table for **Readiness reason**. Select a reason to display a list of devices that don't meet a specific requirement for Windows 11. |
 
-### Summary tab chart
+### Summary tab charts
 
-The **Overall security update status** chart is displayed in the **Summary** tab. This chart gives you a general idea of the current update compliance state of your enrolled devices. For instance, if the chart shows a large number of devices are missing multiple security updates, it may indicate an issue in the software update process.
+The charts displayed in the **Summary** tab give you a general idea of the overall status of your devices. The two charts displayed include:
+
+- **Overall security update status**: Gives you general insight into of the current update compliance state of your enrolled devices. For instance, if the chart shows a large number of devices are missing multiple security updates, it may indicate an issue in the software update process.
+
+- **Feature update status**: Gives you a general understanding of how many devices are eligible for feature updates based on the operating system lifecycle.
   
-:::image type="content" source="media/33771278-overall-security-update-status.png" alt-text="Screenshot of the Overall security update status chart in the workbook's summary tab":::
+:::image type="content" source="media/33771278-overall-security-update-status.png" alt-text="Screenshot of the charts in the workbook's summary tab":::
 
 ## Quality updates tab
 
 The **Quality updates** tab contains tiles for the following information:
 
-- **Devices count**: Count of devices that have determined at least one of the latest security updates is or was applicable in the past 30 days, regardless of of installation state of the update
+- **Devices count**: Count of devices that have reported at least one of the latest security updates is or was applicable in the past 30 days, regardless of installation state of the update
 - **Latest security update**:
 - **Security update status**: 
 - **Total alerts**: 
+
 
 ## Feature updates tab
 
