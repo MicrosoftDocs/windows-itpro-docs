@@ -16,7 +16,7 @@ Cortana can help employees in regions outside the US search for quick answers li
 
 1. Select the  **Cortana**  icon in the taskbar.
 
-2. Select the **…** menu, then select **Settings**, **Language**, then select **Español (España)**. You will be prompted to restart the app.
+2. Select the **…** menu, then select **Settings**, **Language**, then select **Español (España)**. You'll be prompted to restart the app.
 
 3. Once the app has restarted, type or say **Convierte 100 Euros a Dólares**.
 
