@@ -30,10 +30,13 @@ Describes the best practices, location, values, management, and security conside
 
 The **Interactive logon: Message text for users attempting to log on** and [Interactive logon: Message title for users attempting to log on](interactive-logon-message-title-for-users-attempting-to-log-on.md) policy settings are closely related.
 
-- **Interactive logon: Message text for users attempting to log on** specifies a text message to be displayed to users when they log on.
-- **Interactive logon: Message title for users attempting to log on** specifies a title to appear in the title bar of the window that contains the text message.
+**Interactive logon: Message text for users attempting to log on** specifies a text message to be displayed to users when they sign in.
 
-This text is often used for legal reasons, for example, to warn users about the ramifications of misusing company information or to warn them that their actions may be audited. When these policy settings are configured, users will see a dialog box before they can log on to the server console.
+**Interactive logon: Message title for users attempting to log on** specifies a title to appear in the title bar of the window that contains the text message. This text is often used for legal reasons—for example, to warn users about the ramifications of misusing company information, or to warn them that their actions might be audited.
+
+Not using this warning-message policy setting leaves your organization legally vulnerable to trespassers who unlawfully penetrate your network. Legal precedents have established that organizations that display warnings to users who connect to their servers over a network have a higher rate of successfully prosecuting trespassers.
+
+When these policy settings are configured, users will see a dialog box before they can sign in to the server console.
 
 ### Possible values
 
@@ -44,15 +47,12 @@ The possible values for this setting are:
 
 ### Best practices
 
-It is advisable to set **Interactive logon: Message text for users attempting to log on** to a value similar to one of the following:
+- It's advisable to set **Interactive logon: Message text for users attempting to log on** to a value similar to one of the following:
 
-```text
-1. IT IS AN OFFENSE TO CONTINUE WITHOUT PROPER AUTHORIZATION.
-2. This system is restricted to authorized users. Individuals who attempt unauthorized access will be prosecuted. If you are unauthorized, terminate access now. Click OK to indicate your acceptance of this information.
-```
-
-> [!NOTE]
-> Any warning that you display in the title or text should be approved by representatives from your organization's legal and human resources departments.
+  1. IT IS AN OFFENSE TO CONTINUE WITHOUT PROPER AUTHORIZATION.
+  2. This system is restricted to authorized users. Individuals who attempt unauthorized access will be prosecuted. If you're unauthorized, terminate access now. Click OK to indicate your acceptance of this information.
+    > [!IMPORTANT]
+    > Any warning that you display in the title or text should be approved by representatives from your organization's legal and human resources departments.
 
 ### Location
 
@@ -77,22 +77,22 @@ This section describes different requirements to help you manage this policy.
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ## Security considerations
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
-There are two policy settings that relate to logon displays:
+There are two policy settings that relate to sign-in displays:
 
 - **Interactive logon: Message text for users attempting to log on**
 - [Interactive logon: Message title for users attempting to log on](interactive-logon-message-title-for-users-attempting-to-log-on.md)
 
-The first policy setting specifies a text message that displays to users when they log on, and the second policy setting specifies a title for the title bar of the text message window. Many organizations use this text for legal purposes; for example, to warn users about the ramifications of misuse of company information, or to warn them that their actions may be audited.
+The first policy setting specifies a text message that displays to users when they sign in, and the second policy setting specifies a title for the title bar of the text message window. Many organizations use this text for legal purposes; for example, to warn users about the ramifications of misuse of company information, or to warn them that their actions may be audited.
 
 ### Vulnerability
 
-Users often do not understand the importance of security practices. However, the display of a warning message before logon may help prevent an attack by warning malicious or uninformed users about the consequences of their misconduct before it happens. It may also help reinforce corporate policies by notifying employees of appropriate policies during the logon process.
+Users often don't understand the importance of security practices. However, the display of a warning message before signing in may help prevent an attack by warning malicious or uninformed users about the consequences of their misconduct before it happens. It may also help reinforce corporate policies by notifying employees of appropriate policies during the sign-in process.
 
 ### Countermeasure
 
@@ -100,7 +100,7 @@ Configure the **Interactive logon: Message text for users attempting to log on**
 
 ### Potential impact
 
-Users see a message in a dialog box before they can log on to the server console.
+Users see a message in a dialog box before they can sign in to the server console.
 
 ## Related topics
 

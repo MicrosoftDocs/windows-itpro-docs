@@ -288,11 +288,13 @@ Sign-in to the issuing certificate authority or management workstations with _Do
 
 7. On the **Security** tab, click **Add**.
 
-8. Type **NDES server** in the **Enter the object names to select** text box and click **OK**.
+8. Select **Object Types**, then, in the window that appears, choose **Computers** and click **OK**.
 
-9. Select **NDES server** from the **Group or users names** list. In the **Permissions for** section, select the **Allow** check box for the **Enroll** permission. Clear the **Allow** check box for the **Enroll** and **Autoenroll** permissions for all other items in the **Group or users names** list if the check boxes are not already cleared. Click **OK**.
+9. Type **NDES server** in the **Enter the object names to select** text box and click **OK**.
 
-10. Click on the **Apply** to save changes and close the console.
+10. Select **NDES server** from the **Group or users names** list. In the **Permissions for** section, select the **Allow** check box for the **Enroll** permission. Clear the **Allow** check box for the **Enroll** and **Autoenroll** permissions for all other items in the **Group or users names** list if the check boxes are not already cleared. Click **OK**.
+
+11. Click on the **Apply** to save changes and close the console.
 
 ### Create an Azure AD joined Windows Hello for Business authentication certificate template
 
@@ -334,7 +336,7 @@ The certificate authority may only issue certificates for certificate templates 
 > [!Important]
 > Ensure you publish the **AADJ WHFB Authentication** certificate templates to the certificate authority that Microsoft Intune uses by way of the NDES servers. The NDES configuration asks you to choose a certificate authority from which it requests certificates.  You need to publish that certificate templates to that issuing certificate authority.  The **NDES-Intune Authentication** certificate is directly enrolled and can be published to any certificate authority.
 
-Sign-in to the certificate authority or management workstations with an _Enterprise Admin_ equivalent credentials.
+Sign in to the certificate authority or management workstations with an _enterprise admin_ -equivalent credential.
 
 1. Open the **Certificate Authority** management console.
 
@@ -849,7 +851,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
    ![Azure AD new group creation.](images/aadjcert/azureadcreatewhfbcertgroup.png)
 
-8. Click **Members**.  Use the  **Select members** pane to add members to this group. When finished click **Select**.
+8. Click **Members**.  Use the  **Select members** pane to add members to this group. When finished, click **Select**.
 
 9. Click **Create**.
 

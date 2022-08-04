@@ -43,7 +43,7 @@ Local Security policy snap-in, you must be a member of the local **Administrator
 
 The [Get-AppLockerFileInformation](/powershell/module/applocker/get-applockerfileinformation) cmdlet retrieves the AppLocker file information from a list of files or from an event log. File information that is retrieved can include publisher information, file hash information, and file path information.
 
-File information from an event log may not contain all of these fields. Files that are not signed do not have any publisher information.
+File information from an event log may not contain all of these fields. Files that aren't signed don't have any publisher information.
 
 ### Set AppLocker policy
 
@@ -62,6 +62,6 @@ list of file information.
 
 The [Test-AppLockerPolicy](/powershell/module/applocker/test-applockerpolicy) cmdlet uses the specified AppLocker policy to test whether a specified list of files are allowed to run or not on the local device for a specific user.
 
-## Additional resources
+## Other resources
 
 -   For steps to perform other AppLocker policy tasks, see [Administer AppLocker](administer-applocker.md).
