@@ -706,19 +706,6 @@ The following table shows the scenarios supported by this customization.
 >- MultivariantProvisionedSPN means the value that you set for the MultivariantProvisionedSPN setting.
 >- SIM 1 or SIM 2 is the default friendly name for the SIM in slot 1 or slot 2.
 
-<<<<<<< HEAD
-|Multivariant setting set?|SPN provisioned?|MSISDN (last 4 digits: 1234, for example) provisioned?|Default SIM name|
-|:---|:---|:---|:---|
-|Yes|Yes|Yes|*MultivariantProvisionedSPN*1234 or *MultivariantProvisionedSPN*" "1234|
-|Yes|No|No|*MultivariantProvisionedSPN* (up to 16 characters)|
-|Yes|Yes|No|*MultivariantProvisionedSPN* (up to 16 characters)|
-|Yes|No|Yes|*MultivariantProvisionedSPN*1234 or *MultivariantProvisionedSPN*" "1234|
-|No|Yes|Yes|If SPN string >= 12: *SPN*1234</br></br>If SPN string < 12: *SPN*" "1234|
-|No|No|No|*SIM 1* or *SIM 2*|
-|No|Yes|No|SPN (up to 16 characters)|
-|No|No|Yes|*SIM 1* or *SIM 2*|
-=======
-
 Multivariant setting set?|SPN provisioned?|MSISDN (last four digits: 1234, for example) provisioned?|Default SIM name
 --- | --- | --- | ---
 Yes|Yes|Yes|*MultivariantProvisionedSPN*1234 or *MultivariantProvisionedSPN*" "1234
@@ -729,4 +716,4 @@ No|Yes|Yes|If SPN string >= 12: *SPN*1234</br></br>If SPN string < 12: *SPN*" "1
 No|No|No|*SIM 1* or *SIM 2*
 No|Yes|No|SPN (up to 16 characters)
 No|No|Yes|*SIM 1* or *SIM 2*
->>>>>>> c5dd9e14c2... Acrolinx enhancement
+

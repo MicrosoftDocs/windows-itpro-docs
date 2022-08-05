@@ -55,7 +55,7 @@ Microsoft 365 is a new offering from Microsoft that combines
 - Office 365
 - Enterprise Mobility and Security (EMS).
 
-See [Deploy Windows 10 with Microsoft 365](deploy-m365.md) for an overview, which now includes a link to download a nifty [Microsoft 365 Enterprise poster](deploy-m365.md#m365-enterprise-poster).
+See [Deploy Windows 10 with Microsoft 365](deploy-m365.md) for an overview, which now includes a link to download a nifty [Microsoft 365 Enterprise poster](deploy-m365.md#microsoft-365-enterprise-poster).
 
 ## Windows 10 servicing and support
 
