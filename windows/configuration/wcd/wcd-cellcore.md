@@ -47,21 +47,12 @@ Use to configure settings for cellular data.
 ### CellConfigurations
 
 1. In **CellConfiguration** > **PropertyGroups**, enter a name for the property group. 
-<<<<<<< HEAD
-2. Select the **PropertyGroups** you just created in the **Available customizations** pane and then enter a **PropertyName**.
-3. Select the **PropertyName** you just created in the **Available customizations** pane, and then select one of the following data types for the property:
-   - Binary
-   - Boolean
-   - Integer
-   - String
-=======
 2. Select the **PropertyGroups** you created in the **Available customizations** pane and then enter a **PropertyName**.
 3. Select the **PropertyName** you created in the **Available customizations** pane, and then select one of the following data types for the property:
     - Binary
     - Boolean
     - Integer
     - String
->>>>>>> c5dd9e14c2... Acrolinx enhancement
 4. The data type that you selected is added in **Available customizations**. Select it to enter a value for the property.
 
 ### CellData
