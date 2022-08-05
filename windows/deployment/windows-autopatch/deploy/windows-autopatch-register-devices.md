@@ -107,7 +107,7 @@ Registering your devices with Windows Autopatch does the following:
 1. Makes a record of devices in the service.
 2. Assign devices to the [deployment rings](../operate/windows-autopatch-update-management.md) and other groups required for software updates management.
 
-See [Device Registration Overview](../deploy/windows-autopatch-device-registration-overview.md) for more details.
+For more information, see [Device registration overview](../deploy/windows-autopatch-device-registration-overview.md).
 
 ## Steps to register devices
 
@@ -119,11 +119,11 @@ Since existing Windows 365 Cloud PCs already have an existing Azure AD device ID
 1. Go to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/).
 2. Select **Windows Autopatch** from the left navigation menu.
 3. Select **Devices**.
-4. Select either the **Ready** or the **Not ready** tab, then click on the **Windows Autopatch Device Registration** hyperlink. The Azure Active Directory group blade opens.
+4. Select either the **Ready** or the **Not ready** tab, then select the **Windows Autopatch Device Registration** hyperlink. The Azure Active Directory group blade opens.
 5. Add either devices through direct membership, or other Azure AD dynamic or assigned groups as nested groups in the **Windows Autopatch Device Registration** group.
 
 > [!NOTE]
-> The **Windows Autopatch Device Registration** hyperlink is in the center of the Ready tab when there's no devices registered with the Windows Autopatch service. Once you have one or more devices registered with the Windows Autopatch service, the **Windows Autopatch Device registration** hyperlink is at the top of both Ready and Not ready tabs.
+> The **Windows Autopatch Device Registration** hyperlink is in the center of the Ready tab when there's no devices registered with the Windows Autopatch service. Once you have one or more devices registered with the Windows Autopatch service, the **Windows Autopatch Device registration** hyperlink is at the top of both **Ready** and **Not ready** tabs.
 
 Once devices or other Azure AD groups (either dynamic or assigned) containing devices are added to the **Windows Autopatch Device Registration** group, Windows Autopatch's device discovery hourly function discovers these devices, and runs software-based prerequisite checks to try to register them with its service.
 
