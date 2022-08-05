@@ -47,7 +47,8 @@ With the release of Windows 10, version 1607, the Company Settings Center was re
 
 Administrators can still define which user-customized application settings can synchronize (roam) with Group Policy or Windows PowerShell.  
 
-**Note** With the removal of the Company Settings Center, the following group policies are no longer applicable:
+>[!Note]
+>With the removal of the Company Settings Center, the following group policies are no longer applicable:
 
 -   Contact IT Link Text
 -   Contact IT URL
@@ -97,13 +98,15 @@ Printer roaming in UE-V requires one of these scenarios:
 
 -   The printer driver can be imported from Windows Update.
 
-> **Note**&nbsp;&nbsp;The UE-V printer roaming feature doesn't roam printer settings or preferences, such as printing double-sided.
+> [!Note
+> The UE-V printer roaming feature doesn't roam printer settings or preferences, such as printing double-sided.
 
 ## Office 2016 Settings Location Template
 
 UE-V for Windows 10, version 1607 includes the Microsoft Office 2016 settings location template with improved Outlook signature support. We've added synchronization of default signature settings for new, reply, and forwarded emails. Users no longer have to choose the default signature settings.
 
-> **Note**&nbsp;&nbsp;An Outlook profile must be created on any device on which a user wants to synchronize their Outlook signature. If the profile is not already created, the user can create one and then restart Outlook on that device to enable signature synchronization.
+> [!Note]
+> An Outlook profile must be created on any device on which a user wants to synchronize their Outlook signature. If the profile is not already created, the user can create one and then restart Outlook on that device to enable signature synchronization.
 
 UE-V works with Office 365 to determine whether Office 2016 settings are roamed by Office 365. If settings are roamed by Office 365, they aren't roamed by UE-V. For more information, see [Overview of user and roaming settings for Microsoft Office](/previous-versions/office/office-2013-resource-kit/jj733593(v=office.15)).
 
