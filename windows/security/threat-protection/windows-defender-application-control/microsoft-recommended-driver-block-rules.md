@@ -60,7 +60,7 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
 <details>
   <summary>Expand this section to see the blocklist policy XML</summary>
 
-:::code language="xml" source="samples/recommended-driver-block.xml":::
+:::code language="xml" source="samples/recommended-driver-block.xml" range="2-24,26":::
 
 </details>
 
