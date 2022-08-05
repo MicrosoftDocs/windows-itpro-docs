@@ -79,7 +79,7 @@ The **Update status** group for quality updates contains the following items:
    - Installed
    - Installing
    - Offering
-   - Cancelled
+   - Canceled
 - **Update states for the latest security releases**: Chart containing the number of clients in a specific state for the most recent security update.
 - **Update alerts for all security releases**: Chart containing the count of active errors and warnings for security updates.
 
@@ -103,6 +103,15 @@ The **Device status** group for quality updates contains the following items:
 
 ## Feature updates tab
 
+The **Feature updates** tab displays generalized data at the top by using tiles. The feature update data becomes more specific as you navigate lower in this tab. The top of the **Feature updates** tab contains tiles with the following information:
+
+- **Devices count**: Count of devices that have reported a feature update is or was applicable in the past 30 days, regardless of installation state of the update.
+- **Feature update status**: Count of the devices that installed an applicable feature update in the past 30 days.
+- **End Of Service**: Count of devices running an operating system version that no longer receives feature updates. For more information, see the [Windows lifecycle FAQ](/lifecycle/faq/windows).
+- **Nearing EOS** Count of devices that are within 18 months of their end of service date.
+- **Total alerts**: Count of active alerts that are for feature updates.
+
+Just like the [**Quality updates** tab](##quality-updates-tab), the **Feature updates** tab is also subdivided into **Update status** and **Device status** groups below the tiles.
 
 ### <a name="bkmk_update-group-feature"></a> Update status group for feature updates
 
