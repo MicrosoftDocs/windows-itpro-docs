@@ -105,7 +105,7 @@ For more information, see [Azure AD built-in roles](/azure/active-directory/role
 Registering your devices with Windows Autopatch does the following:
 
 1. Makes a record of devices in the service.
-2. Assign devices to the [deployment rings](../operate/windows-autopatch-update-management.md) and other groups required for software updates management.
+2. Assign devices to the [deployment rings](../operate/windows-autopatch-update-management.md) and other groups required for software update management.
 
 For more information, see [Device registration overview](../deploy/windows-autopatch-device-registration-overview.md).
 
