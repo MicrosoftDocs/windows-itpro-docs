@@ -18,7 +18,7 @@ Before Microsoft can manage your devices in Windows Autopatch, you must have dev
 
 ## Before you begin
 
-Windows Autopatch can take over software update management control of devices that meet software-based pre-requisittes as soon as an IT admin decides to have their tenant managed by the service. The Windows Autopatch software update management scope includes the following software update workloads:
+Windows Autopatch can take over software update management control of devices that meet software-based prerequisites as soon as an IT admin decides to have their tenant managed by the service. The Windows Autopatch software update management scope includes the following software update workloads:
 
 - [Windows quality updates](../operate/windows-autopatch-wqu-overview.md)
 - [Windows feature updates](../operate/windows-autopatch-fu-overview.md)
