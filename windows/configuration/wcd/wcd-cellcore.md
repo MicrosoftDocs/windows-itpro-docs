@@ -321,7 +321,6 @@ SuggestGlobalModeTimeout | To specify the number of seconds to wait for network 
 
 ### SMS
 
-<<<<<<< HEAD
 |Setting |Description|
 |:--|:--|
 |AckExpirySeconds |Set the value, in seconds, for how long to wait for a client ACK before trying to deliver. |
@@ -378,8 +377,6 @@ SIM1ToUIM1 | Used to show UIM1 as an alternate string instead of SIM1 for the fi
 SIMToSIMUIM | Partners can change the string "SIM" to "SIM/UIM" to accommodate scenarios such as Dual Mode cards of SIM cards on the phone. This scenario can provide a better experience for users in some markets. Enabling this customization changes all "SIM" strings to "SIM/UIM".
 
 
->>>>>>> c5dd9e14c2... Acrolinx enhancement
-
 ### UTK
 
 |Setting |Description|
@@ -390,7 +387,7 @@ SIMToSIMUIM | Partners can change the string "SIM" to "SIM/UIM" to accommodate s
 ## PerIMSI
 
 Enter an IMSI, click **Add**, and then select the IMSI that you added to configure the following settings. 
-<<<<<<< HEAD
+
 ### <a name="celldata2"></a> CellData
 
 |Setting |Description|
@@ -597,7 +594,7 @@ SuppressDePersoUI | Suppress DePerso UI to unlock Perso.  (Removed in Windows 10
 
 
 <span id="general2" />
-### General
+###General
 
 |                Setting                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -652,7 +649,7 @@ See descriptions in Windows Configuration Designer.
 | Type3GPP2 > ErrorHandling > UseReservedAsPermanent |                                                                                                                                                                                                                                                                                                                                                                                                                           Set the 3GPP2 permanent error type.                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
 <span id="utk2" />
-### UTK
+###UTK
 
 Setting | Description
 --- | ---
@@ -660,7 +657,7 @@ UIDefaultDuration | Specifies the default time, in milliseconds, that the DISPLA
 UIGetInputDuration | Specifies the default time, in milliseconds, that the GET INPUT dialog should be displayed. The default value is 120000 milliseconds (120 seconds). The valid value range is 1-120000.
 
 
-### VoLTE
+###VoLTE
 
 |Setting | Description|
 |:---|:---|
