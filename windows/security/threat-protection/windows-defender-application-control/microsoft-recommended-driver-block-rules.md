@@ -36,22 +36,21 @@ Microsoft has strict requirements for code running in kernel. So, malicious acto
 Drivers can be submitted to Microsoft for security analysis at the [Microsoft Security Intelligence Driver Submission page](https://www.microsoft.com/en-us/wdsi/driversubmission). For more information about driver submission, see [Improve kernel security with the new Microsoft Vulnerable and Malicious Driver Reporting Center
 ](https://www.microsoft.com/security/blog/2021/12/08/improve-kernel-security-with-the-new-microsoft-vulnerable-and-malicious-driver-reporting-center/). To report an issue or request a change to the vulnerable driver blocklist, including updating a block rule once a driver vulnerability has been patched, visit the [Microsoft Security Intelligence portal](https://www.microsoft.com/wdsi) or submit feedback on this article.
 
-> [!IMPORTANT]
-> Microsoft vulnerable driver blocklist can be enabled using [Windows Security](https://support.microsoft.com/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963) or Windows Defender Application Control (WDAC). Additionally, you can enable Attack Surface Reduction (ASR) rule [**Block abuse of exploited vulnerable signed drivers**](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers) to prevent an application from writing a vulnerable signed driver to disk. The ASR rule doesn't block a driver already existing on the system from being loaded, however enabling Microsoft vulnerable driver blocklist prevents the existing driver from being loaded.
-
 ## Microsoft vulnerable driver blocklist
 
-Microsoft adds the vulnerable versions of the drivers to our ecosystem block policy, which is automatically enabled on the following sets of devices when any of the listed conditions are met:
+Microsoft adds the vulnerable versions of the drivers to our vulnerable driver blocklist, which is automatically enabled on devices when any of the listed conditions are met:
 
 | Condition | Windows 10 or 11 | Windows 11 22H2 or later |
 |--|:--:|:--:|
-| [Hypervisor-protected code integrity (HVCI)](../device-guard/enable-virtualization-based-protection-of-code-integrity.md) enabled | :heavy_check_mark: | :heavy_check_mark: |
-| [S mode](https://support.microsoft.com/windows/windows-10-and-windows-11-in-s-mode-faq-851057d6-1ee9-b9e5-c30b-93baebeebc85#WindowsVersion=Windows_11) | :heavy_check_mark: | :heavy_check_mark: |
-| [Smart App Control](https://support.microsoft.com/topic/what-is-smart-app-control-285ea03d-fa88-4d56-882e-6698afdb7003) enabled | :x: | :heavy_check_mark: |
+| Device has [Hypervisor-protected code integrity (HVCI)](../device-guard/enable-virtualization-based-protection-of-code-integrity.md) enabled | :heavy_check_mark: | :heavy_check_mark: |
+| Device is in [S mode](https://support.microsoft.com/windows/windows-10-and-windows-11-in-s-mode-faq-851057d6-1ee9-b9e5-c30b-93baebeebc85#WindowsVersion=Windows_11) | :heavy_check_mark: | :heavy_check_mark: |
+| Device has [Smart App Control](https://support.microsoft.com/topic/what-is-smart-app-control-285ea03d-fa88-4d56-882e-6698afdb7003) enabled | :x: | :heavy_check_mark: |
 | Clean install of Windows | :x: | :heavy_check_mark: |
 
+Microsoft vulnerable driver blocklist can also be enabled using [Windows Security](https://support.microsoft.com/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963) or Windows Defender Application Control (WDAC). Additionally, you can enable Attack Surface Reduction (ASR) rule [**Block abuse of exploited vulnerable signed drivers**](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers) to prevent an application from writing a vulnerable signed driver to disk. The ASR rule doesn't block a driver already existing on the system from being loaded, however enabling Microsoft vulnerable driver blocklist prevents the existing driver from being loaded.
+
 > [!NOTE]
-> The option to disable Microsoft vulnerable driver blocklist in **Windows Security** is disabled when HVCI or Smart App Control is enabled, or when the device is in S mode. You must disable HVCI or Smart App Control, or switch the device out of S mode before you can disable Microsoft vulnerable driver blocklist.
+> The option to disable Microsoft vulnerable driver blocklist in **Windows Security** is grayed out when HVCI or Smart App Control is enabled, or when the device is in S mode. You must disable HVCI or Smart App Control, or switch the device out of S mode before you can disable Microsoft vulnerable driver blocklist.
 
 ## Blocking vulnerable drivers using WDAC
 
