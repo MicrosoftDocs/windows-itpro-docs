@@ -98,7 +98,7 @@ Printer roaming in UE-V requires one of these scenarios:
 
 -   The printer driver can be imported from Windows Update.
 
-> [!Note
+> [!Note]
 > The UE-V printer roaming feature doesn't roam printer settings or preferences, such as printing double-sided.
 
 ## Office 2016 Settings Location Template
