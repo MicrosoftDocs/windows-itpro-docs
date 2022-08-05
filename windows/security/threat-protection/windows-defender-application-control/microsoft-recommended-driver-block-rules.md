@@ -36,12 +36,7 @@ Microsoft has strict requirements for code running in kernel. So, malicious acto
 Drivers can be submitted to Microsoft for security analysis at the [Microsoft Security Intelligence Driver Submission page](https://www.microsoft.com/en-us/wdsi/driversubmission). For more information about driver submission, see [Improve kernel security with the new Microsoft Vulnerable and Malicious Driver Reporting Center
 ](https://www.microsoft.com/security/blog/2021/12/08/improve-kernel-security-with-the-new-microsoft-vulnerable-and-malicious-driver-reporting-center/). To report an issue or request a change to the vulnerable driver blocklist, including updating a block rule once a driver vulnerability has been patched, visit the [Microsoft Security Intelligence portal](https://www.microsoft.com/wdsi) or submit feedback on this article.
 
-Microsoft adds the vulnerable versions of the drivers to our ecosystem block policy, which is automatically enabled on the following sets of devices:
-
-- Windows 10 or Windows 11 devices with [Hypervisor-protected code integrity (HVCI)](../device-guard/enable-virtualization-based-protection-of-code-integrity.md) enabled
-- Windows 10 or Windows 11 devices in [S mode](https://support.microsoft.com/windows/windows-10-and-windows-11-in-s-mode-faq-851057d6-1ee9-b9e5-c30b-93baebeebc85#WindowsVersion=Windows_11)
-- Windows 11 22H2 or later devices with [Smart App Control](https://support.microsoft.com/topic/what-is-smart-app-control-285ea03d-fa88-4d56-882e-6698afdb7003) enabled
-- Clean install of Windows 11 22H2 or later devices
+Microsoft adds the vulnerable versions of the drivers to our ecosystem block policy, which is automatically enabled on the following sets of devices if any of the listed conditions are met:
 
 | Condition | Windows 10 or 11 | Windows 11 22H2 or later |
 |--|:--:|:--:|
@@ -51,6 +46,9 @@ Microsoft adds the vulnerable versions of the drivers to our ecosystem block pol
 | Clean install of Windows | :x: | :heavy_check_mark: |
 
 Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) or S mode to protect your devices against security threats. If this setting isn't possible, Microsoft recommends blocking this list of drivers within your existing Windows Defender Application Control policy. Blocking kernel drivers without sufficient testing can result in devices or software to malfunction, and in rare cases, blue screen. It's recommended to first validate this policy in [audit mode](audit-windows-defender-application-control-policies.md) and review the audit block events.
+
+<details>
+  <summary>Click to expand the blocklist XML</summary>
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -1208,6 +1206,8 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
   </Settings>
 </SiPolicy>
 ```
+
+</details>
 
 ## More information
 
