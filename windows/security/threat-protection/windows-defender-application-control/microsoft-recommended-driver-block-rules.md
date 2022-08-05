@@ -37,11 +37,11 @@ Drivers can be submitted to Microsoft for security analysis at the [Microsoft Se
 ](https://www.microsoft.com/security/blog/2021/12/08/improve-kernel-security-with-the-new-microsoft-vulnerable-and-malicious-driver-reporting-center/). To report an issue or request a change to the vulnerable driver blocklist, including updating a block rule once a driver vulnerability has been patched, visit the [Microsoft Security Intelligence portal](https://www.microsoft.com/wdsi) or submit feedback on this article.
 
 > [!IMPORTANT]
-> Vulnerable drivers can be blocked using Windows Defender Application Control (WDAC) and Attack Surface Reduction (ASR) rules. ASR rule doesn't block a driver already existing on the system from being loaded, however enabling Microsoft vulnerable driver blocklist prevents these drivers from being loaded. To learn more about the ASR rule, see [Block abuse of exploited vulnerable signed drivers](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference?view=o365-worldwide#block-abuse-of-exploited-vulnerable-signed-drivers).
+> Microsoft vulnerable driver blocklist can be enabled using [Windows Security](https://support.microsoft.com/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963) or Windows Defender Application Control (WDAC). Additionally, you can enable Attack Surface Reduction (ASR) rule [**Block abuse of exploited vulnerable signed drivers**](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers) to prevent an application from writing a vulnerable signed driver to disk. The ASR rule doesn't block a driver already existing on the system from being loaded, however enabling Microsoft vulnerable driver blocklist prevents the existing driver from being loaded.
 
 ## Microsoft vulnerable driver blocklist
 
-Microsoft adds the vulnerable versions of the drivers to our ecosystem block policy, which is automatically enabled on the following sets of devices if any of the listed conditions are met:
+Microsoft adds the vulnerable versions of the drivers to our ecosystem block policy, which is automatically enabled on the following sets of devices when any of the listed conditions are met:
 
 | Condition | Windows 10 or 11 | Windows 11 22H2 or later |
 |--|:--:|:--:|
@@ -50,10 +50,10 @@ Microsoft adds the vulnerable versions of the drivers to our ecosystem block pol
 | [Smart App Control](https://support.microsoft.com/topic/what-is-smart-app-control-285ea03d-fa88-4d56-882e-6698afdb7003) enabled | :x: | :heavy_check_mark: |
 | Clean install of Windows | :x: | :heavy_check_mark: |
 
-To enable **Microsoft vulnerable driver blocklist** manually, see [Device protection in Windows Security
-](https://support.microsoft.com/windows/device-protection-in-windows-security-afa11526-de57-b1c5-599f-3a4c6a61c5e2).
+> [!NOTE]
+> The option to disable Microsoft vulnerable driver blocklist in **Windows Security** is disabled when HVCI or Smart App Control is enabled, or when the device is in S mode. You must disable HVCI or Smart App Control, or switch the device out of S mode before you can disable Microsoft vulnerable driver blocklist.
 
-## Blocking drivers using WDAC
+## Blocking vulnerable drivers using WDAC
 
 Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) or S mode to protect your devices against security threats. If this setting isn't possible, Microsoft recommends blocking this list of drivers within your existing Windows Defender Application Control policy. Blocking kernel drivers without sufficient testing can result in devices or software to malfunction, and in rare cases, blue screen. It's recommended to first validate this policy in [audit mode](audit-windows-defender-application-control-policies.md) and review the audit block events.
 
