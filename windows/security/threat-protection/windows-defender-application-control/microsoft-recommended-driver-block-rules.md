@@ -48,13 +48,14 @@ Microsoft adds the vulnerable versions of the drivers to our vulnerable driver b
 | Clean install of Windows | :x: | :heavy_check_mark: |
 
 > [!NOTE]
-> Microsoft vulnerable driver blocklist can also be enabled using [Windows Security](https://support.microsoft.com/windows/device-protection-in-windows-security-afa11526-de57-b1c5-599f-3a4c6a61c5e2), but the option to disable Microsoft vulnerable driver blocklist in **Windows Security** is grayed out when HVCI or Smart App Control is enabled, or when the device is in S mode. You must disable HVCI or Smart App Control, or switch the device out of S mode before you can disable Microsoft vulnerable driver blocklist.
+> Microsoft vulnerable driver blocklist can also be enabled using [Windows Security](https://support.microsoft.com/windows/device-protection-in-windows-security-afa11526-de57-b1c5-599f-3a4c6a61c5e2), but the option to disable it is grayed out when HVCI or Smart App Control is enabled, or when the device is in S mode. You must disable HVCI or Smart App Control, or switch the device out of S mode before you can disable Microsoft vulnerable driver blocklist.
 
 ## Blocking vulnerable drivers using WDAC
 
 Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) or S mode to protect your devices against security threats. If this setting isn't possible, Microsoft recommends blocking this list of drivers within your existing Windows Defender Application Control policy. Blocking kernel drivers without sufficient testing can result in devices or software to malfunction, and in rare cases, blue screen. It's recommended to first validate this policy in [audit mode](audit-windows-defender-application-control-policies.md) and review the audit block events.
 
-Additionally, you can enable Attack Surface Reduction (ASR) rule [**Block abuse of exploited vulnerable signed drivers**](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers) to prevent an application from writing a vulnerable signed driver to disk. The ASR rule doesn't block a driver already existing on the system from being loaded, however enabling **Microsoft vulnerable driver blocklist** or applying this WDAC policy prevents the existing driver from being loaded.
+> [!IMPORTANT]
+> Microsoft also recommends enabling Attack Surface Reduction (ASR) rule [**Block abuse of exploited vulnerable signed drivers**](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-abuse-of-exploited-vulnerable-signed-drivers) to prevent an application from writing a vulnerable signed driver to disk. The ASR rule doesn't block a driver already existing on the system from being loaded, however enabling **Microsoft vulnerable driver blocklist** or applying this WDAC policy prevents the existing driver from being loaded.
 
 <br>
 <details>
