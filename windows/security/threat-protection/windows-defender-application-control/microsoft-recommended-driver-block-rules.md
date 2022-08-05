@@ -1,6 +1,6 @@
 ---
 title: Microsoft recommended driver block rules (Windows)
-description: View a list of recommended block rules to block vulnerable third-party drivers discovered by Microsoft and the security research community.  
+description: View a list of recommended block rules to block vulnerable third-party drivers discovered by Microsoft and the security research community.
 keywords:  security, malware, kernel mode, driver
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: m365-security
@@ -20,25 +20,32 @@ manager: dansimp
 
 **Applies to:**
 
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
-Microsoft has strict requirements for code running in kernel. So, malicious actors are turning to exploit vulnerabilities in legitimate and signed kernel drivers to run malware in kernel. One of the many strengths of the Windows platform is our strong collaboration with independent hardware vendors (IHVs) and OEMs. Microsoft works closely with our IHVs and security community to ensure the highest level of driver security for our customers and when vulnerabilities in drivers do arise, that they're quickly patched and rolled out to the ecosystem. Microsoft then adds the vulnerable versions of the drivers to our ecosystem block policy, which is applied to the following sets of devices:
-
-- Hypervisor-protected code integrity (HVCI) enabled devices
-- Windows 10 in S mode (S mode) devices
-
-The vulnerable driver blocklist is designed to help harden systems against third party-developed drivers across the Windows ecosystem with any of the following attributes: 
+Microsoft has strict requirements for code running in kernel. So, malicious actors are turning to exploit vulnerabilities in legitimate and signed kernel drivers to run malware in kernel. One of the many strengths of the Windows platform is our strong collaboration with independent hardware vendors (IHVs) and OEMs. Microsoft works closely with our IHVs and security community to ensure the highest level of driver security for our customers and when vulnerabilities in drivers do arise, that they're quickly patched and rolled out to the ecosystem. The vulnerable driver blocklist is designed to help harden systems against third party-developed drivers across the Windows ecosystem with any of the following attributes:
 
 - Known security vulnerabilities that can be exploited by attackers to elevate privileges in the Windows kernel
 - Malicious behaviors (malware) or certificates used to sign malware
 - Behaviors that aren't malicious but circumvent the Windows Security Model and can be exploited by attackers to elevate privileges in the Windows kernel
 
-Drivers can be submitted to Microsoft for security analysis at the [Microsoft Security Intelligence Driver Submission page](https://www.microsoft.com/en-us/wdsi/driversubmission). To report an issue or request a change to the vulnerable driver blocklist, including updating a block rule once a driver vulnerability has been patched, visit the [Microsoft Security Intelligence portal](https://www.microsoft.com/wdsi) or submit feedback on this article. 
+Drivers can be submitted to Microsoft for security analysis at the [Microsoft Security Intelligence Driver Submission page](https://www.microsoft.com/en-us/wdsi/driversubmission). For more information about driver submission, see [Improve kernel security with the new Microsoft Vulnerable and Malicious Driver Reporting Center
+](https://www.microsoft.com/security/blog/2021/12/08/improve-kernel-security-with-the-new-microsoft-vulnerable-and-malicious-driver-reporting-center/). To report an issue or request a change to the vulnerable driver blocklist, including updating a block rule once a driver vulnerability has been patched, visit the [Microsoft Security Intelligence portal](https://www.microsoft.com/wdsi) or submit feedback on this article.
+
+Microsoft adds the vulnerable versions of the drivers to our ecosystem block policy, which is enabled on the following sets of devices:
+
+- Windows 10 or Windows 11 devices with [Hypervisor-protected code integrity (HVCI)](../device-guard/enable-virtualization-based-protection-of-code-integrity.md) enabled
+- Windows 10 or Windows 11 devices in [S mode](https://support.microsoft.com/windows/windows-10-and-windows-11-in-s-mode-faq-851057d6-1ee9-b9e5-c30b-93baebeebc85#WindowsVersion=Windows_11)
+- Windows 11 22H2 or later devices with [Smart App Control](https://support.microsoft.com/topic/what-is-smart-app-control-285ea03d-fa88-4d56-882e-6698afdb7003) enabled
+- Clean install of Windows 11 22H2 or later devices
+
+Test 1 :heavy_check_mark:
+Test 2 ::heavy_check_mark
+Test 3 ✔️
 
 Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) or S mode to protect your devices against security threats. If this setting isn't possible, Microsoft recommends blocking this list of drivers within your existing Windows Defender Application Control policy. Blocking kernel drivers without sufficient testing can result in devices or software to malfunction, and in rare cases, blue screen. It's recommended to first validate this policy in [audit mode](audit-windows-defender-application-control-policies.md) and review the audit block events.
 
@@ -780,8 +787,8 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
 		  <DeniedSigner SignerId="ID_SIGNER_AGNITUM_2010_1" />
           <DeniedSigner SignerId="ID_SIGNER_AMDPP" />
           <DeniedSigner SignerId="ID_SIGNER_CAPCOM" />
-          <DeniedSigner SignerId="ID_SIGNER_CHEAT_ENGINE" /> 
-          <DeniedSigner SignerId="ID_SIGNER_COMODO_IQVW" /> 
+          <DeniedSigner SignerId="ID_SIGNER_CHEAT_ENGINE" />
+          <DeniedSigner SignerId="ID_SIGNER_COMODO_IQVW" />
           <DeniedSigner SignerId="ID_SIGNER_ELBY" />
           <DeniedSigner SignerId="ID_SIGNER_ENE" />
           <DeniedSigner SignerId="ID_SIGNER_DIGICERT_EV" />
@@ -798,7 +805,7 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
 		  <DeniedSigner SignerId="ID_SIGNER_HERMETICWIPER_2" />
 		  <DeniedSigner SignerId="ID_SIGNER_HERMETICWIPER_3" />
 		  <DeniedSigner SignerId="ID_SIGNER_HERMETICWIPER_4" />
-          <DeniedSigner SignerId="ID_SIGNER_HP" /> 
+          <DeniedSigner SignerId="ID_SIGNER_HP" />
           <DeniedSigner SignerId="ID_SIGNER_INTEL_IQVW" />
           <DeniedSigner SignerId="ID_SIGNER_JEROMIN_CODY_ERIC" />
           <DeniedSigner SignerId="ID_SIGNER_MIMIKATZ_KERNEL" />
@@ -824,7 +831,7 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
           <DeniedSigner SignerId="ID_SIGNER_VERISIGN_2004_BIOSTAR" />
           <DeniedSigner SignerId="ID_SIGNER_VERISIGN_2009" />
           <DeniedSigner SignerId="ID_SIGNER_VERISIGN_2009_BIOSTAR" />
-          <DeniedSigner SignerId="ID_SIGNER_VERISIGN_2009_REALTEK" /> 
+          <DeniedSigner SignerId="ID_SIGNER_VERISIGN_2009_REALTEK" />
           <DeniedSigner SignerId="ID_SIGNER_VERISIGN_2010" />
           <DeniedSigner SignerId="ID_SIGNER_VERISIGN_2010_2" />
           <DeniedSigner SignerId="ID_SIGNER_VERISIGN_2010_BIOSTAR" />
@@ -988,17 +995,17 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
           <FileRuleRef RuleID="ID_DENY_DIRECTIO_3A" />
           <FileRuleRef RuleID="ID_DENY_DIRECTIO_3B" />
           <FileRuleRef RuleID="ID_DENY_MSIO_SHA1_1" />
-          <FileRuleRef RuleID="ID_DENY_MSIO_SHA256_1" /> 		
-          <FileRuleRef RuleID="ID_DENY_MSIO_SHA1_PAGE_1" /> 	
-          <FileRuleRef RuleID="ID_DENY_MSIO_SHA256_PAGE_1" />	
+          <FileRuleRef RuleID="ID_DENY_MSIO_SHA256_1" />
+          <FileRuleRef RuleID="ID_DENY_MSIO_SHA1_PAGE_1" />
+          <FileRuleRef RuleID="ID_DENY_MSIO_SHA256_PAGE_1" />
           <FileRuleRef RuleID="ID_DENY_MSIO_SHA1_2" />
-          <FileRuleRef RuleID="ID_DENY_MSIO_SHA256_2" />		
-          <FileRuleRef RuleID="ID_DENY_MSIO_SHA1_PAGE_2" /> 	
-          <FileRuleRef RuleID="ID_DENY_MSIO_SHA256_PAGE_2" />	
+          <FileRuleRef RuleID="ID_DENY_MSIO_SHA256_2" />
+          <FileRuleRef RuleID="ID_DENY_MSIO_SHA1_PAGE_2" />
+          <FileRuleRef RuleID="ID_DENY_MSIO_SHA256_PAGE_2" />
           <FileRuleRef RuleID="ID_DENY_MSIO_SHA1_3" />
-          <FileRuleRef RuleID="ID_DENY_MSIO_SHA256_3" />		
-          <FileRuleRef RuleID="ID_DENY_MSIO_SHA1_4" />	
-          <FileRuleRef RuleID="ID_DENY_MSIO_SHA256_4" />		
+          <FileRuleRef RuleID="ID_DENY_MSIO_SHA256_3" />
+          <FileRuleRef RuleID="ID_DENY_MSIO_SHA1_4" />
+          <FileRuleRef RuleID="ID_DENY_MSIO_SHA256_4" />
           <FileRuleRef RuleID="ID_DENY_PIDDRV_SHA1" />
           <FileRuleRef RuleID="ID_DENY_PIDDRV_SHA256" />
           <FileRuleRef RuleID="ID_DENY_PIDDRV_SHA1_PAGE" />
@@ -1166,7 +1173,7 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
           <FileRuleRef RuleID="ID_DENY_PROCESSHACKER"/>
           <FileRuleRef RuleID="ID_DENY_AMP"/>
           <FileRuleRef RuleID="ID_DENY_ASMMAP"/>
-          <FileRuleRef RuleID="ID_DENY_ASMMAP_64"/> 
+          <FileRuleRef RuleID="ID_DENY_ASMMAP_64"/>
           <FileRuleRef RuleID="ID_DENY_PHYMEMX_64"/>
           <FileRuleRef RuleID="ID_DENY_DBK_32"/>
           <FileRuleRef RuleID="ID_DENY_DBK_64"/>
@@ -1198,8 +1205,6 @@ Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-
   </Settings>
 </SiPolicy>
 ```
-<br />
-
 
 ## More information
 
