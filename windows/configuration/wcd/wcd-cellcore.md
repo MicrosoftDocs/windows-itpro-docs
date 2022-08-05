@@ -312,14 +312,14 @@ SuggestDataRoamingARD | Use to show the data roaming suggestion dialog when roam
 SuggestGlobalModeARD | Define whether Global Mode is suggested on a C+G dual SIM phone.
 SuggestGlobalModeTimeout | To specify the number of seconds to wait for network registration before suggesting global mode, set SuggestGlobalModeTimeout to a value between 1 and 600, inclusive. For example, to set the timeout to 60 seconds, set the value to 60 (decimal) or 0x3C (hexadecimal).
 
-### RCS
+###RCS
 
 |Setting | Description|
 |:---|:---|
 |SystemEnabled | Select **Yes** to specify that the system is RCS-enabled.|
 |UserEnabled | Select **Yes** to show the user setting if RCS is enabled on the device.|
 
-### SMS
+###SMS
 
 |Setting |Description|
 |:--|:--|
