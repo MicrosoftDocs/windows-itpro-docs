@@ -1,7 +1,7 @@
 ---
 title: Changes made at tenant enrollment
 description:  This reference article details the changes made to your tenant when enrolling into Windows Autopatch
-ms.date: 08/04/2022
+ms.date: 08/08/2022
 ms.prod: w11
 ms.technology: windows
 ms.topic: reference
