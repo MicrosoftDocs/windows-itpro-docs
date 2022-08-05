@@ -18,7 +18,7 @@ ms.date: 07/21/2021
 # Add unsigned app to code integrity policy
 
 > [!IMPORTANT]
-> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
+> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Endpoint Manager integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
 
 > [!IMPORTANT]
 > We are introducing a new version of the Device Guard Signing Service (DGSS) to be more automation friendly. The new version of the service (DGSS v2) is now available. As announced earlier, you will have until June 9, 2021 to transition to DGSS v2. On June 9, 2021, the existing web-based mechanisms for the current version of the DGSS service will be retired and will no longer be available for use. Please make plans to migrate to the new version of the service by June 9, 2021.
@@ -26,7 +26,7 @@ ms.date: 07/21/2021
 > Following are the major changes we are making to the service: 
 > - The method for consuming the service will change to a more automation-friendly method based on PowerShell cmdlets. These cmdlets are available as a NuGet download at [https://www.nuget.org/packages/Microsoft.Acs.Dgss.Client/](https://www.nuget.org/packages/Microsoft.Acs.Dgss.Client/).
 > - In order to achieve desired isolation, you will be required to get a new CI policy from DGSS v2 (and optionally sign it). 
-> -	DGSS v2 will not have support for downloading leaf certificates used to sign your files (however, the root certificate will still be available to download).  Note that the certificate used to sign a file can be easily extracted from the signed file itself.  As a result, after DGSS v1 is retired, you will no longer be able to download the leaf certificates used to sign your files.
+> -    DGSS v2 will not have support for downloading leaf certificates used to sign your files (however, the root certificate will still be available to download).  Note that the certificate used to sign a file can be easily extracted from the signed file itself.  As a result, after DGSS v1 is retired, you will no longer be able to download the leaf certificates used to sign your files.
 >
 > The following functionality will be available via these PowerShell cmdlets:
 > - Get a CI policy
@@ -45,9 +45,11 @@ ms.date: 07/21/2021
 When you want to add an unsigned app to a code integrity policy, you need to start with a code integrity policy created from a reference device. Then, create the catalog files for your unsigned app, sign the catalog files, and then merge the default policy that includes your signing certificate with existing code integrity policies.
 
 ## In this section
-- [Create a code integrity policy based on a reference device](#create-ci-policy)
-- [Create catalog files for your unsigned app](#create-catalog-files)
-- [Catalog signing with Device Guard signing portal](#catalog-signing-device-guard-portal)
+- [Add unsigned app to code integrity policy](#add-unsigned-app-to-code-integrity-policy)
+  - [In this section](#in-this-section)
+  - [<a href="" id="create-ci-policy"></a>Create a code integrity policy based on a reference device](#create-a-code-integrity-policy-based-on-a-reference-device)
+  - [<a href="" id="create-catalog-files"></a>Create catalog files for your unsigned app](#create-catalog-files-for-your-unsigned-app)
+  - [<a href="" id="catalog-signing-device-guard-portal"></a>Catalog signing with Device Guard signing portal](#catalog-signing-with-device-guard-signing-portal)
 
 ## <a href="" id="create-ci-policy"></a>Create a code integrity policy based on a reference device
 To add an unsigned app to a code integrity policy, your code integrity policy must be created from golden image machine. For more information, see [Create a Device Guard code integrity policy based on a reference device](/windows/device-security/device-guard/device-guard-deployment-guide).
