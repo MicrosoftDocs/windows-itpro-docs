@@ -75,27 +75,42 @@ Below the tiles, the **Quality updates** tab is subdivided into **Update status*
 
 The **Update status** group for quality updates contains the following items:
 
-- **Update states for all security releases**: Chart containing a count of clients in a specific state for security updates. Possible states include:
+- **Update states for all security releases**: Chart containing the number of clients in a specific state for security updates. Possible states include:
    - Installed
    - Installing
    - Offering
    - Cancelled
-- **Update states for the latest security releases**: Chart containing a count of clients in a specific state for the most recent security update.
+- **Update states for the latest security releases**: Chart containing the number of clients in a specific state for the most recent security update.
 - **Update alerts for all security releases**: Chart containing the count of active errors and warnings for security updates.
 
 
-The **Update deployment status** table displays the quality updates for each operating system version that were released within the last 60 days. For each update, 
+The **Update deployment status** table displays the quality updates for each operating system version that were released within the last 60 days. For each update, drill-in further by selecting a value from the following columns:
 
-### <a name="bkmk_device-group-quality"></a>Device status group for quality updates
+| Column name | Description | Drill-in description |
+|---|---|---|
+|**Alerts**| Number of different error codes encountered by clients for the update. | Selecting this number lists the alert name for each error code and a count of devices with the error. Select the device count to display a list of devices that have an active alert for the error code.  
+| **KB Number** | KB number for the update |  Selecting the KB number will open the support information webpage for the update.|
+| **Total devices** | Number of devices that are installing for have installed the update. | Selecting the device count opens a device list table. This table is limited to the first 250 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).  |
 
+### <a name="bkmk_device-group-quality"></a> Device status group for quality updates
 
+The **Device status** group for quality updates contains the following items:
 
+- **OS build number**: Chart containing how many clients getting security updates by OS build.
+- **Target version**: Chart containing how many clients are getting security updates by operating system version.
+- **Device compliance status**: Table containing a list of devices getting security updates and update installation information including active alerts for the devices.
+  - This table is limited to the first 250 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
 
 ## Feature updates tab
 
+
 ### <a name="bkmk_update-group-feature"></a> Update status group for feature updates
 
+
+
 ### <a name="bkmk_device-group-feature"></a>Device status group for feature updates
+
+
 
 ## Customize the workbook
 
