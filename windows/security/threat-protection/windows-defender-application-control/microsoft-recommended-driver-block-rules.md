@@ -43,9 +43,11 @@ Microsoft adds the vulnerable versions of the drivers to our ecosystem block pol
 - Windows 11 22H2 or later devices with [Smart App Control](https://support.microsoft.com/topic/what-is-smart-app-control-285ea03d-fa88-4d56-882e-6698afdb7003) enabled
 - Clean install of Windows 11 22H2 or later devices
 
-Test 1 :heavy_check_mark:
-Test 2 ::heavy_check_mark
-Test 3 ✔️
+| Test Text | Supported |
+|--|--|
+| Test 1 | :heavy_check_mark: |
+| Test 2 | ✔️ |
+
 
 Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) or S mode to protect your devices against security threats. If this setting isn't possible, Microsoft recommends blocking this list of drivers within your existing Windows Defender Application Control policy. Blocking kernel drivers without sufficient testing can result in devices or software to malfunction, and in rare cases, blue screen. It's recommended to first validate this policy in [audit mode](audit-windows-defender-application-control-policies.md) and review the audit block events.
 
