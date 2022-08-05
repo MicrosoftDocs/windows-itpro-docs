@@ -121,7 +121,7 @@ The **Update status** group for feature updates contains the following items:
 - **Safeguard holds**: Chart containing count of clients per operating system version that are under a safeguard hold for a feature update
 - **Update alerts**: Chart containing the count of active errors and warnings for feature updates.
 
-**Update deployment status** table for feature updates displays the installation status by operating system version. For each operating system version targeted with 
+**Update deployment status** table for feature updates displays the installation status by operating system version. For each operating system version targeted 
 
 <!-- The **Update deployment status** table displays the quality updates for each operating system version that were released within the last 60 days. For each update, drill-in further by selecting a value from the following columns:
 
