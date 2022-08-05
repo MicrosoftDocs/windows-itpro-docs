@@ -8,7 +8,7 @@ author: mestew
 ms.author: mstewart
 ms.collection: M365-analytics
 ms.topic: article
-ms.date: 08/09/2022
+ms.date: 08/10/2022
 ---
 
 # Update Compliance (preview) workbook
@@ -62,16 +62,42 @@ The charts displayed in the **Summary** tab give you a general idea of the overa
 
 ## Quality updates tab
 
-The **Quality updates** tab contains tiles for the following information:
+The **Quality updates** tab displays generalized data at the top by using tiles. The quality update data becomes more specific as you navigate lower in this tab. The top of the **Quality updates** tab contains tiles with the following information:
 
-- **Devices count**: Count of devices that have reported at least one of the latest security updates is or was applicable in the past 30 days, regardless of installation state of the update
-- **Latest security update**:
-- **Security update status**: 
-- **Total alerts**: 
+- **Devices count**: Count of devices that have reported at least one of the latest security updates is or was applicable in the past 30 days, regardless of installation state of the update.
+- **Latest security update**: Count of devices that have installed the latest security update.
+- **Security update status**: Count of devices that haven't installed a security update released within the last 60 days.
+- **Total alerts**: Count of active alerts that are for quality updates.
+
+Below the tiles, the **Quality updates** tab is subdivided into **Update status** and **Device status** groups. These different chart groups allow you to easily discover trends in compliance data. For instance, you may remember that about third of your devices were in the installing state yesterday, but this number didn't change as much as you were expecting. That unexpected trend may cause you to investigate and resolve a potential issue before end-users are impacted.
+
+### <a name="bkmk_update-group-quality"></a> Update status group for quality updates
+
+The **Update status** group for quality updates contains the following items:
+
+- **Update states for all security releases**: Chart containing a count of clients in a specific state for security updates. Possible states include:
+   - Installed
+   - Installing
+   - Offering
+   - Cancelled
+- **Update states for the latest security releases**: Chart containing a count of clients in a specific state for the most recent security update.
+- **Update alerts for all security releases**: Chart containing the count of active errors and warnings for security updates.
+
+
+The **Update deployment status** table displays the quality updates for each operating system version that were released within the last 60 days. For each update, 
+
+### <a name="bkmk_device-group-quality"></a>Device status group for quality updates
+
+
 
 
 ## Feature updates tab
 
+### <a name="bkmk_update-group-feature"></a> Update status group for feature updates
+
+### <a name="bkmk_device-group-feature"></a>Device status group for feature updates
+
+## Customize the workbook
 
 
 ## Next steps
