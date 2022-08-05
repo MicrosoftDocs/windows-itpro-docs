@@ -28,7 +28,7 @@ Windows Autopatch can take over software update management of supported devices 
 
 ### About the use of an Azure AD group to register devices
 
-You must choose what devices to manage with Windows Autopatch by either adding them through direct membership or by nesting other Azure AD dynamic/assigned groups into the **Windows Autopatch Device Registration** Azure AD assigned group. Windows Autopatch automatically runs every hour to discover new devices added to this group. Once new devices are discovered, Windows Autopatch attempts to register these devices.
+You must choose what devices to manage with Windows Autopatch by either adding them through direct membership or by nesting other Azure AD dynamic/assigned groups into the **Windows Autopatch Device Registration** Azure AD assigned group. Windows Autopatch automatically runs every hour its discover devices function to discover new devices added to this group. Once new devices are discovered, Windows Autopatch attempts to register these devices.
 
 > [!NOTE]
 > Devices that are intended to be managed by the Windows Autopatch service **must** be added into the **Windows Autopatch Device Registration** Azure AD assigned group. Devices can only be added to this group if they have an Azure AD device ID. Windows Autopatch scans the Azure AD group hourly to discover newly added devices to be registered. You can also use the **Discover devices** button in either the Ready or Not ready tab to register devices on demand.
@@ -49,7 +49,7 @@ Azure AD groups synced up from:
 > The **Windows Autopatch Device Registration** Azure AD group only supports one level of Azure AD nested groups.
 
 > [!TIP]
-> You can also use the **Discover Devices** button in either the Ready or Not ready tab to discover devices from the Windows Autopatch Device Registration Azure AD group on demand.
+> You can also use the **Discover Devices** button in either the Ready or Not ready tab to discover devices from the **Windows Autopatch Device Registration** Azure AD group on demand.
 
 ### Clean up dual state of Hybrid Azure AD joined and Azure registered devices in your Azure AD tenant
 
@@ -112,9 +112,7 @@ Registering your devices in Windows Autopatch does the following:
 
 ## Steps to register devices
 
-### Physical devices
-
-Any device (either physical or virtual) that contains an Azure AD device ID can be added into the Windows Autopatch Device Registration Azure AD group to be registered with Windows Autopatch.
+Any device (either physical or virtual) that contains an Azure AD device ID can be added into the **Windows Autopatch Device Registration** Azure AD group to be registered with Windows Autopatch.
 
 **To register physical devices into Windows Autopatch:**
 
@@ -131,7 +129,7 @@ Once devices or Azure AD groups containing devices are added to the **Windows Au
 
 ### Windows Autopatch on Windows 365 Enterprise Workloads
 
-With Windows 365 Enterprise, IT admins are given the option to register devices with the Windows Autopatch service as part of the Windows 365 provisioning policy creation. This option provides a seamless experience for admins and users to ensure your Cloud PCs are always up to date. When IT admins decide to manage their Windows 365 Cloud PCs with Windows Autopatch, the Windows 365 provisioning policy process calls the Windows Autopatch device registration APIs to register devices on behalf of the IT admin.
+With Windows 365 Enterprise, IT admins are given the option to register devices with the Windows Autopatch service as part of the Windows 365 provisioning policy creation. This option provides a seamless experience for admins and users to ensure your Cloud PCs are always up to date. When IT admins decide to manage their Windows 365 Cloud PCs with Windows Autopatch, the Windows 365 provisioning policy creation process calls Windows Autopatch device registration APIs to register devices on behalf of the IT admin.
 
 **To deploy Windows Autopatch on a Windows 365 Provisioning Policy:**
 
@@ -152,9 +150,9 @@ For general guidance, see [Create a Windows 365 Provisioning Policy](/windows-36
 
 All your existing Windows 365 Enterprise workloads can be registered into Windows Autopatch by leveraging the same method for any other physical or virtual device. See [steps to register devices](#steps-to-register-devices) for more details.
 
-### Contact support
+### Contact support for device registration-related incidents
 
-Support is available either through Windows 365, or Windows Autopatch for update related incidents.
+Support is available either through Windows 365, or the Windows Autopatch Service Engineering team for device registration-related incidents.
 
 - For Windows 365 support, see [Get support](/mem/get-support).  
 - For Windows Autopatch support, see [Submit a support request](/windows/deployment/windows-autopatch/operate/windows-autopatch-support-request).  
