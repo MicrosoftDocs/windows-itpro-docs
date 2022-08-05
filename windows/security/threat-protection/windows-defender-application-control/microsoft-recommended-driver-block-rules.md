@@ -38,6 +38,8 @@ Drivers can be submitted to Microsoft for security analysis at the [Microsoft Se
 
 ## Microsoft vulnerable driver blocklist
 
+<!-- MAXADO-6286432 -->
+
 Microsoft adds the vulnerable versions of the drivers to our vulnerable driver blocklist, which is automatically enabled on devices when any of the listed conditions are met:
 
 | Condition | Windows 10 or 11 | Windows 11 22H2 or later |
