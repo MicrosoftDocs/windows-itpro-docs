@@ -111,7 +111,7 @@ For more information, see [Device registration overview](../deploy/windows-autop
 
 ## Steps to register devices
 
-Any device (either physical or virtual) that contains an Azure AD device ID can be added into the **Windows Autopatch Device Registration** Azure AD group through either direct membership or by being part of another Azure AD group (either dynamic or assigned) that's nested to this group, so it can be registered with Windows Autopatch. The only exception is new Windows 365 Cloud PCs, as these virtual devices must be registered with Windows Autopatch from the Windows 365 provisioning policy. See [Windows Autopatch on WIndows 365 Enterprise Workloads](#windows-autopatch-on-windows-365-enterprise-workloads) for details.
+Any device (either physical or virtual) that contains an Azure AD device ID can be added into the **Windows Autopatch Device Registration** Azure AD group through either direct membership or by being part of another Azure AD group (either dynamic or assigned) that's nested to this group, so it can be registered with Windows Autopatch. The only exception is new Windows 365 Cloud PCs, as these virtual devices must be registered with Windows Autopatch from the Windows 365 provisioning policy. For more information, see [Windows Autopatch on WIndows 365 Enterprise Workloads](#windows-autopatch-on-windows-365-enterprise-workloads).
 Since existing Windows 365 Cloud PCs already have an existing Azure AD device ID, these devices can be added into the **Windows Autopatch Device Registration** Azure group through either direct membership or by being part of another Azure AD group (either dynamic or assigned) that's nested to this group.
 
 **To register devices with Windows Autopatch:**
@@ -147,8 +147,7 @@ Windows 365 Enterprise gives IT admins the option to register devices with the W
 1. Assign your policy accordingly and select **Next**.
 1. Select **Create**. Now your newly provisioned Windows 365 Enterprise Cloud PCs will automatically be enrolled and managed by Windows Autopatch.
 
-See [Create a Windows 365 Provisioning Policy](/windows-365/enterprise/create-provisioning-policy) for more information.
-
+For more information, see [Create a Windows 365 Provisioning Policy](/windows-365/enterprise/create-provisioning-policy).
 ### Contact support for device registration-related incidents
 
 Support is available either through Windows 365, or the Windows Autopatch Service Engineering team for device registration-related incidents.
