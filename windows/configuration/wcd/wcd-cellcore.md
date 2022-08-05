@@ -191,8 +191,6 @@ SlotSelectionSim1Name | Enter text for the name of SIM 1 in slot selection UI.
 SlotSelectionSim2Name | Enter text for the name of SIM 2 in slot selection UI.
 SuppressDePersoUI | Select **Yes** to hide the Perso unlock UI.
 
->>>>>>> c5dd9e14c2... Acrolinx enhancement
-
 ### CGDual
 
 Use **CGDual** > **RestrictToGlobalMode** to configure settings for global mode on C+G Dual SIM phones. When the device registration changes, if the value for this setting is set, the OS changes the preferred system type to the default preferred system type for world mode. If the phone isn't camped on any network, the OS assumes the phone is on the home network and changes the network registration preference to default mode. 
@@ -209,7 +207,6 @@ Configure **FwUpdate** > **AllowedAppIdList** to list apps that are allowed to u
 
 ### External
 
-<<<<<<< HEAD
 |Setting |Description|
 |:--- |:---|
 |CallSupplementaryService > OTASPNonStandardDialString | Enter a list of all desired non-standard OTASP dial strings.|
@@ -266,7 +263,7 @@ Configure **FwUpdate** > **AllowedAppIdList** to list apps that are allowed to u
 |SuggestDataRoamingARD | Use to show the data roaming suggestion dialog when roaming and the data roaming setting is set to no roaming.|
 |SuggestGlobalModeARD | Define whether Global Mode is suggested on a C+G dual SIM phone.|
 |SuggestGlobalModeTimeout | To specify the number of seconds to wait for network registration before suggesting global mode, set SuggestGlobalModeTimeout to a value between 1 and 600, inclusive. For example, to set the timeout to 60 seconds, set the value to 60 (decimal) or 0x3C (hexadecimal).|
-=======
+
 Setting | Description
 --- | ---
 CallSupplementaryService > OTASPNonStandardDialString | Enter a list of all desired non-standard OTASP dial strings.
@@ -291,8 +288,6 @@ ImageOnly > MTU > RoamingMTUDataSize | Customize the TCP maximum segment size (M
 ImageOnly > SuppressNwPSDetach | Configure whether to suppress reporting of network-initiated PS detach (appear attached to OS) until deregistered.
 SignalBarMapping Table | You can modify the percentage values used for the signal strength in the status bar per filter. For details, see [Custom percentages for signal strength bars](/windows-hardware/customize/mobile/mcsf/custom-percentages-for-signal-strength-bars).
 SRVCCAutoToggleWmRil | Configure whether to link SRVCC to VOLTE on/off.
-
-
 
 ### General
 
@@ -325,7 +320,6 @@ Slot2ExcludedSystemTypes | Exclude specified system types from SIM cards inserte
 SuggestDataRoamingARD | Use to show the data roaming suggestion dialog when roaming and the data roaming setting is set to no roaming.
 SuggestGlobalModeARD | Define whether Global Mode is suggested on a C+G dual SIM phone.
 SuggestGlobalModeTimeout | To specify the number of seconds to wait for network registration before suggesting global mode, set SuggestGlobalModeTimeout to a value between 1 and 600, inclusive. For example, to set the timeout to 60 seconds, set the value to 60 (decimal) or 0x3C (hexadecimal).
->>>>>>> c5dd9e14c2... Acrolinx enhancement
 
 ### RCS
 
@@ -360,7 +354,7 @@ SuggestGlobalModeTimeout | To specify the number of seconds to wait for network 
 |Type 3GPP > SmsUse16BitReferenceNumbers |Configure whether to use 8-bit or 16-bit message ID (reference number) in the UDH.|
 |Type3GPP2 > ErrorHandling > FriendlyErrorClass |Enter a name for ERRORCODE3GPP2, and click **Add**. Configure the error class that you added as **generic error**, **invalid recipient address**, or **network connectivity trouble**.|
 |Type3GPP2 > ErrorHandling > UseReservedAsPermanent |Set the 3GPP2 permanent error type.|
-=======
+
 |                      Setting                       |                                                                                                                                                                                                                                                                                                                                                                                                                                       Description                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                  AckExpirySeconds                  |                                                                                                                                                                                                                                                                                                                                                                                               Set the value, in seconds, for how long to wait for a client ACK before trying to deliver.                                                                                                                                                                                                                                                                                                                                                                                                |
@@ -384,17 +378,11 @@ SuggestGlobalModeTimeout | To specify the number of seconds to wait for network 
 |      Type 3GPP > SmsUse16BitReferenceNumbers       |                                                                                                                                                                                                                                                                                                                                                                                                   Configure whether to use 8-bit or 16-bit message ID (reference number) in the UDH.                                                                                                                                                                                                                                                                                                                                                                                                    |
 |   Type3GPP2 > ErrorHandling > FriendlyErrorClass   |                                                                                                                                                                                                                                                                                                                                                 Enter a name for ERRORCODE3GPP2, and click **Add**. Configure the error class that you added as **generic error**, **invalid recipient address**, or **network connectivity trouble**.                                                                                                                                                                                                                                                                                                                                                  |
 | Type3GPP2 > ErrorHandling > UseReservedAsPermanent |                                                                                                                                                                                                                                                                                                                                                                                                                           Set the 3GPP2 permanent error type.                                                                                                                                                                                                                                                                                                                                                                                                                           |
->>>>>>> c5dd9e14c2... Acrolinx enhancement
 
 ### UIX
 
 Setting | Description
-<<<<<<< HEAD
 |:-|:--|
-|SIM1ToUIM1 |Used to show UIM1 as an alternate string instead of SIM1 for the first SIM on C+G dual SIM phones.|
-|SIMToSIMUIM |Partners can change the string "SIM" to "SIM/UIM" to accommodate scenarios such as Dual Mode cards of SIM cards on the phone. This can provide a better user experience for users in some markets. Enabling this customization changes all "SIM" strings to "SIM/UIM".|
-=======
---- | ---
 SIM1ToUIM1 | Used to show UIM1 as an alternate string instead of SIM1 for the first SIM on C+G dual SIM phones.
 SIMToSIMUIM | Partners can change the string "SIM" to "SIM/UIM" to accommodate scenarios such as Dual Mode cards of SIM cards on the phone. This scenario can provide a better experience for users in some markets. Enabling this customization changes all "SIM" strings to "SIM/UIM".
 
@@ -539,9 +527,9 @@ See descriptions in Windows Configuration Designer.
 |:---|:---|
 |UIDefaultDuration | Specifies the default time, in milliseconds, that the DISPLAY TEXT, GET INKEY, PLAY TONE, or SELECT ITEM dialog should be displayed. The default value is 60000 milliseconds (60 seconds). The valid value range is 1-120000. |
 |UIGetInputDuration |Specifies the default time, in milliseconds, that the GET INPUT dialog should be displayed. The default value is 120000 milliseconds (120 seconds). The valid value range is 1-120000.|
-=======
 
 <span id="celldata2" />
+
 ### CellData
 
 Setting | Description
@@ -550,6 +538,7 @@ MaxNumberOfPDPContexts | OEMs can set a maximum value for the number of simultan
 
 
 <span id="cellux2" />
+
 ### CellUX
 
 Setting | Description
@@ -616,8 +605,6 @@ SlotSelectionSim2Name | Enter text for the name of SIM 2 in slot selection UI.  
 SuppressDePersoUI | Suppress DePerso UI to unlock Perso.  (Removed in Windows 10, version 1803.)
 
 
-
-
 <span id="general2" />
 ### General
 
@@ -681,7 +668,6 @@ Setting | Description
 UIDefaultDuration | Specifies the default time, in milliseconds, that the DISPLAY TEXT, GET INKEY, PLAY TONE, or SELECT ITEM dialog should be displayed. The default value is 60000 milliseconds (60 seconds). The valid value range is 1-120000. 
 UIGetInputDuration | Specifies the default time, in milliseconds, that the GET INPUT dialog should be displayed. The default value is 120000 milliseconds (120 seconds). The valid value range is 1-120000.
 
->>>>>>> c5dd9e14c2... Acrolinx enhancement
 
 ### VoLTE
 
@@ -698,9 +684,8 @@ UIGetInputDuration | Specifies the default time, in milliseconds, that the GET I
 |3 (The SIM card fails authentication or one of the identity check procedures. This can also happen due to a duplication of the TMSI across different MSCs.) |Can't verify SIM MM#3 |Invalid SIM|
 |6 (The device has been put on a block list, such as when the phone has been stolen or the IMEI is restricted.) | Phone not allowed MM#6 | No service|
 
-<<<<<<< HEAD
 ## <a name="spn"></a> Values for MultivariantProvisionedSPN
-=======
+
 Reject code | Extended error message | Short error message
 --- | --- | ---
 2 (The SIM card hasn't been activated or has been deactivated) | SIM not set up MM#2 | Invalid SIM
@@ -709,7 +694,6 @@ Reject code | Extended error message | Short error message
 
 <span id="spn" />
 ## Values for MultivariantProvisionedSPN
->>>>>>> c5dd9e14c2... Acrolinx enhancement
 
 Set the MultivariantProvisionedSPN value to the name of the SPN or mobile operator.
 
