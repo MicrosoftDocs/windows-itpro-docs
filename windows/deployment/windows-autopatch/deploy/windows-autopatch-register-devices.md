@@ -1,7 +1,7 @@
 ---
 title: Register your devices
 description:  This article details how to register devices in Autopatch
-ms.date: 08/05/2022
+ms.date: 08/08/2022
 ms.prod: w11
 ms.technology: windows
 ms.topic: how-to
