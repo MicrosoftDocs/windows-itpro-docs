@@ -42,7 +42,22 @@ Use the product feedback option to offer suggestions for new features and functi
 
 ## Open a Microsoft support case
 
+You can open support requests directly from the Azure portal. If  the **Help + Support** page doesn't display, verify you have access to open support requests. For more information about role-based access controls for support requests, see [Create an Azure support request](/azure/azure-portal/supportability/how-to-create-azure-support-request). To create a new support request for Update Compliance:
 
+1. Open the **Help + Support** page from the following locations: 
+  - In the [Send product feedback](#send-product-feedback) flyout, select the **contact support** link.
+  - From the Azure portal, select **New support request** under the **Support + Troubleshooting** heading.
+1. Select **Create a support request** which opens the new support request page. 
+1. On the **Problem description** tab, provide information about the issue. The below items in ***bold italics*** should be used to help ensure an Update Compliance engineer receives your support request: 
+   - **Summary** - Brief description of the issue
+   - **Issue type** - ***Technical***
+   - **Subscription** - Select the subscription used for Update Compliance
+   - **Service** - ***My services***
+   - **Service type** - ***Log Analytics***
+   - **Problem type** - ***Solutions or Insights***
+   - **Problem subtype** - ***Update Compliance***
+1. Based on the information you provided, you'll be shown some **Recommended solutions** you can use to try to resolve the problem.
+1. Complete the **Additional details** tab and then create the request on the **Review + create** tab.
 
 ## Documentation feedback
 
@@ -74,5 +89,21 @@ To share feedback on the fundamental docs.microsoft.com platform, see [Docs feed
 
 ## Troubleshooting tips
 
+Use the troubleshooting tips below to resolve commonly encountered problems when using Update Compliance:
+
 ### Verify client configuration
 
+<!--Using include for verifying device configuration-->
+[!INCLUDE [Endpoints for Update Compliance](./includes/update-compliance-verify-device-configuration.md)]
+
+### Ensuring devices are configured correctly to send data
+
+The first step in troubleshooting Update Compliance is ensuring that devices are configured. Review [Manually configuring devices for Update Compliance](update-compliance-v2-configuration-manual.md) for the settings. We recommend using the [Update Compliance configuration script](update-compliance-v2-configuration-script.md) for troubleshooting and configuring devices.
+
+### Devices have been correctly configured but aren't showing up in Update Compliance
+
+It takes some time for data to appear in Update Compliance for the first time or if a `Commercial ID`, has recently changed for a device. To learn more about data latencies for Update Compliance, review [Update Compliance data latency](update-compliance-v2-use.md#update-compliance-data-latency).
+
+### Devices are appearing, but without a device name
+
+Device Name is  an opt-in via policy starting in Windows 10 version 1803. Review the required policies for enabling device name in the [Manually configuring devices for Update Compliance](update-compliance-v2-configuration-manual.md) article.
