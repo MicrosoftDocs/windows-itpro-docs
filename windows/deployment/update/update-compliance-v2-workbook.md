@@ -131,9 +131,18 @@ The **Update status** group for feature updates contains the following items:
 
 ### <a name="bkmk_device-group-feature"></a>Device status group for feature updates
 
+The **Device status** group for feature updates contains the following items:
 
+- **Windows 11 readiness status**: Chart containing how many devices that have a status of capable, not capable, or unknown for Windows 11 readiness.
+- **Device alerts**: Count of active alerts for feature updates in each alert classification.
+- **Device compliance status**: Table containing a list of devices getting a feature update and installation information including active alerts for the devices.
+  - This table is limited to the first 250 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
 
 ## Customize the workbook
 
+Since the Update Compliance workbook is an [Azure Workbook templates](/azure/azure-monitor/visualize/workbooks-templates) it can be customized to suit your needs. If you open a template, make some adjustments, and save it, the template is saved as a workbook. This workbook appears in green. The original template is left untouched. For more information about workbooks, see [Get started with Azure Workbooks](/azure/azure-monitor/visualize/workbooks-getting-started).
+
 
 ## Next steps
+
+Explore the [Update Compliance (preview) schema](update-compliance-v2-schema.md)
