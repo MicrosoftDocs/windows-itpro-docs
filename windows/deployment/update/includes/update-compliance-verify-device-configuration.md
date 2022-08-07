@@ -39,4 +39,4 @@ In some cases, you may need to manually verify the device configuration has the 
    - The **MSP** field value under **protocol** should be either `16` or `18`.
    - If you need to send this data to Microsoft Support, select **Export data**.  
 
-   :::image type="content" alt-text="Screenshot of the Diagnostic Data Viewer displaying the data from SoftwareUpdateClientTelemetry. The export data option and the fields for MSP and EnrolledTenantID are outlined in red." source="../media/update-compliance-diagnostic-data-viewer.png" lightbox="./media/update-compliance-diagnostic-data-viewer.png":::
+   :::image type="content" alt-text="Screenshot of the Diagnostic Data Viewer displaying the data from SoftwareUpdateClientTelemetry. The export data option and the fields for MSP and EnrolledTenantID are outlined in red." source="../media/update-compliance-diagnostic-data-viewer.png" lightbox="../media/update-compliance-diagnostic-data-viewer.png"::: 
