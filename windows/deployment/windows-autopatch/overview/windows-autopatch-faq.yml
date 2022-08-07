@@ -96,9 +96,9 @@ sections:
       - question: Can you customize the scheduling of an update rollout to only install on certain days and times?
         answer: |
           No, you can't customize update scheduling. However, you can specify [active hours](../operate/windows-autopatch-wqu-end-user-exp.md#servicing-window) to prevent users from updating during business hours.
-      - question: Does Autopatch support include and exclude groups, or dynamic groups to define ring membership?
+      - question: Does Autopatch support include and exclude groups, or dynamic groups to define deployment ring membership?
         answer: |
-          Windows autopatch doesn't support managing update ring membership using your Azure AD groups. For more information, see [Move devices between rings](../operate/windows-autopatch-update-management.md#moving-devices-between-rings).
+          Windows autopatch doesn't support managing update deployment ring membership using your Azure AD groups. For more information, see [Moving devices in between deployment rings](../operate/windows-autopatch-update-management.md#moving-devices-in-between-rings).
       - question: Does Autopatch have two release cadences per update or are there two release cadences per-ring?
         answer: |
           The release cadences are defined based on the update type. For example, a [regular cadence](../operate/windows-autopatch-wqu-overview.md#windows-quality-update-releases) (for a Windows quality update would be a gradual rollout from the Test ring to the Broad ring over 14 days whereas an [expedited release](../operate/windows-autopatch-wqu-overview.md#expedited-releases) would roll out more rapidly.
