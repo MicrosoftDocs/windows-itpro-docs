@@ -21,11 +21,11 @@ ms.date: 08/10/2022
 
 There are several resources that you can use to find help with Update Compliance. Whether you're just getting started or an experienced administrator, use the following resources when you need help with Update Compliance:
 
-- Send [product feedback about Update Compliance](#give-product-feedback)
+- Send [product feedback about Update Compliance](#send-product-feedback)
 - Open a [Microsoft support case](#open-a-microsoft-support-case)
 
 - [Documentation feedback](#documentation-feedback)
-- [Troubleshooting tips](#troubleshooting) for Update Compliance
+- [Troubleshooting tips](#troubleshooting-tips) for Update Compliance
 - Follow the [Windows IT Pro blog](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows10Blog) to learn about upcoming changes to Update Compliance
 - Use Microsoft Q&A to [ask product questions](/answers/products/)
 
