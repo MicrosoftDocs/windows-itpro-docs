@@ -206,7 +206,9 @@
               - name: Update Compliance workbook
                 href: update/update-compliance-v2-workbook.md                                         
               - name: Software updates in the Microsoft admin center (preview)
-                href: update/update-status-admin-center.md                               
+                href: update/update-status-admin-center.md
+              - name: Feedback, support and troubleshooting 
+                href: update/update-compliance-v2-help.md                                               
             - name: Update Compliance schema reference (preview)
               items:
               - name: Update Compliance schema reference
