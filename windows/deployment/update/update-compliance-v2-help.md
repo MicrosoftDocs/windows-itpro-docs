@@ -81,7 +81,7 @@ Use GitHub Issues to submit the following types of feedback:
 
 If you create an issue for something not related to documentation, Microsoft will close the issue and redirect you to a better feedback channel. For example:
 
-- [Product feedback](#give-product-feedback) for Update Compliance
+- [Product feedback](#send-product-feedback) for Update Compliance
 - [Product questions (using Microsoft Q&A)](/answers/products/)
 - [Support requests](#open-a-microsoft-support-case) for Update Compliance
 
