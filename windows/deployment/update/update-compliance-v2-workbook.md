@@ -111,17 +111,23 @@ The **Feature updates** tab displays generalized data at the top by using tiles.
 - **Nearing EOS** Count of devices that are within 18 months of their end of service date.
 - **Total alerts**: Count of active alerts that are for feature updates.
 
-Just like the [**Quality updates** tab](##quality-updates-tab), the **Feature updates** tab is also subdivided into **Update status** and **Device status** groups below the tiles.
+Just like the [**Quality updates** tab](#quality-updates-tab), the **Feature updates** tab is also subdivided into **Update status** and **Device status** groups below the tiles.
 
 ### <a name="bkmk_update-group-feature"></a> Update status group for feature updates
 
 The **Update status** group for feature updates contains the following items:
 
-- **Target version**: Chart containing count of clients per operating system version that are getting a feature update
+- **Target version**: Chart containing count of clients per targeted operating system version.
 - **Safeguard holds**: Chart containing count of clients per operating system version that are under a safeguard hold for a feature update
 - **Update alerts**: Chart containing the count of active errors and warnings for feature updates.
 
-**Update deployment status** table for feature updates displays the installation status by operating system version. For each operating system version targeted 
+**Update deployment status** table for feature updates displays the installation status by targeted operating system version. For each operating system version targeted the following columns are available: 
+
+| Column name | Description | Drill-in description |
+|---|---|---|
+| **Total progress** | Percentage of clients that installed the targeted operating system version feature update within the last 30 days. | Bar graph included in column. Use the **Total devices** drill-in for additional information |
+|**Alerts**| Number of different error codes encountered by clients for the update. | Selecting this number lists the alert name for each error code and a count of devices with the error. Select the device count to display a list of devices that have an active alert for the error code.  |
+| **Total Devices** | Count of clients for each targeted operating system version | 
 
 <!-- The **Update deployment status** table displays the quality updates for each operating system version that were released within the last 60 days. For each update, drill-in further by selecting a value from the following columns:
 
