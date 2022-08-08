@@ -323,24 +323,8 @@
     - name: Access Control Overview
       href: identity-protection/access-control/access-control.md
       items: 
-        - name: Dynamic Access Control Overview
-          href: identity-protection/access-control/dynamic-access-control.md
-        - name: Security identifiers
-          href: identity-protection/access-control/security-identifiers.md
-        - name: Security Principals
-          href: identity-protection/access-control/security-principals.md
         - name: Local Accounts
           href: identity-protection/access-control/local-accounts.md
-        - name: Active Directory Accounts
-          href: identity-protection/access-control/active-directory-accounts.md
-        - name: Microsoft Accounts
-          href: identity-protection/access-control/microsoft-accounts.md
-        - name: Service Accounts
-          href: identity-protection/access-control/service-accounts.md
-        - name: Active Directory Security Groups
-          href: identity-protection/access-control/active-directory-security-groups.md
-        - name: Special Identities
-          href: identity-protection/access-control/special-identities.md
         - name: User Account Control
           href: identity-protection/user-account-control/user-account-control-overview.md
           items: 
