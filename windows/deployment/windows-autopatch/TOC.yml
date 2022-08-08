@@ -35,7 +35,7 @@
     - name: Operate
       href: operate/index.md
       items:
-        - name: Update management
+        - name: Software update management
           href: operate/windows-autopatch-update-management.md
           items:
             - name: Windows updates

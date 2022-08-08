@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Apps for enterprise
 description:  This article explains how Microsoft 365 Apps for enterprise updates are managed in Windows Autopatch
-ms.date: 05/30/2022
+ms.date: 08/08/2022
 ms.prod: w11
 ms.technology: windows
 ms.topic: conceptual
@@ -88,7 +88,7 @@ Since quality updates are bundled together into a single release in the [Monthly
 
 A [service profile](/deployoffice/admincenter/servicing-profile#compatibility-with-other-management-tools) takes precedence over other management tools, such as Microsoft Endpoint Manager or the Office Deployment Tool. This means that the servicing profile will affect all devices that meet the [device eligibility requirements](#device-eligibility) regardless of existing management tools in your environment. So, if you're targeting a managed device with a servicing profile it will be ineligible for Microsoft 365 App update management.
 
-However, the device may still be eligible for other managed updates. For more information about a device's eligibility for a given [update type](windows-autopatch-update-management.md#update-types), see the Device eligibility section of each respective update type.
+However, the device may still be eligible for other managed updates. For more information about a device's eligibility for a given [software update workload](windows-autopatch-update-management.md#software-update-workloads), see the Device eligibility section of each respective software update workload.
 
 ## Incidents and outages
 
