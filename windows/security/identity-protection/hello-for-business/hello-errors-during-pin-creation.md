@@ -70,7 +70,7 @@ If the error occurs again, check the error code against the following table to s
 | 0x801C044D | Authorization token does not contain device ID.                    | Unjoin the device from Azure AD and rejoin. |
 |            | Unable to obtain user token.                                       | Sign out and then sign in again. Check network and credentials. |
 | 0x801C044E | Failed to receive user credentials input.                          | Sign out and then sign in again. |
-| 0xC00000BB | Something went wrong and you PIN isn’t available. Or That option is temporarily unavailable. For now, please use a different method to sign in.                          | Destination domain controller doesn't support the login, most likely KDC service dont have proper certificate to support the login.|
+| 0xC00000BB | Your PIN or this option is temporarily unavailable.| The destination domain controller doesn't support the login method. Most often the KDC service doesn't have the proper certificate to support the login. Use a different login method.|
 
 
 
