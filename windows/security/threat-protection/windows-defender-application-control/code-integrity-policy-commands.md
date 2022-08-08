@@ -15,53 +15,53 @@ Generates Policy Commands, Token Commands, and Miscellaneous Commands for user m
 
 # Policy Commands
 
-| Command:| --update-policy /Path/To/Policy/File |
+| Command:|--update-policy /Path/To/Policy/File |
 | Description: | Add or update a policy on the current system |
 | Alias: | -up | 
 
-| Command:| --remove-policy PolicyGUID |
+| Command:|--remove-policy PolicyGUID |
 | Description: | Remove a policy indicated by PolicyGUID from the system |
 | Alias: | -rp | 
 
-| Command:| --list-policies |
+| Command:|--list-policies |
 | Description: | Dump information about all policies on the system, whether they be active or not |
 | Alias: | -lp | 
 
 # Token Commands
 
-| Command:| --add-token Path/To/Token/File [--token-id ID] |
+| Command:|--add-token Path/To/Token/File [--token-id ID] |
 | Description: | Deploy a token onto the current system, with an optional specific ID.   |
 | Alias: | -at | 
 >[!NOTE] If [ID] is specified, a pre-existing token with [ID] should not exist.
 
-| Command:| --remove-token ID |
+| Command:|--remove-token ID |
 | Description: | Remove a Token indicated by ID from the system. |
 | Alias: | -rt | 
 
-| Command:| --list-tokens |
+| Command:|--list-tokens |
 | Description: | Dump information about all tokens on the system |
 | Alias: | -lt | 
 
 # Miscellaneous Commands
 
-| Command:| --device-id |
+| Command:|--device-id |
 | Description: | Dump the Code Integrity Device Id |
 | Alias: | -id | 
 
-| Command:| --refresh |
+| Command:|--refresh |
 | Description: | Attempt to Refresh CI Policies |
 | Alias: | -r | 
 
-| Command:| --help |
+| Command:|--help |
 | Description: | Display help |
 | Alias: | -h | 
 
 #Examples
 
 #Example 1: Update Policy/Deploy
-Extract BF61FE40-8929-4FDF-9EC2-F7A767717F0B.cip into C:\windows\system32
+Extract policy file to C:\windows\system32
 ```powershell
-PS C:\Users\[USER] cd \windows\system32
+PS C:\Users\<USER> cd \windows\system32
 PS C:\windows\system32> .\BF61FE40-8929-4FDF-9EC2-F7A767717F0B.cip -up
 
 C:\Windows\System32>.\CITool.exe -update-policy \windows\system32\BF61FE40-8929-4FDF-9EC2-F7A767717F0B.cip
