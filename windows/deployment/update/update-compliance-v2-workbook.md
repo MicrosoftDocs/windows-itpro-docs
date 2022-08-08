@@ -24,7 +24,7 @@ ms.date: 08/10/2022
 - [Quality updates](#quality-updates-tab)
 - [Feature updates](#feature-updates-tab)
 
-:::image type="content" source="media/33771278-update-compliance-workbook-summary.png" alt-text="Screenshot of the summary tab in the Update Compliance workbook":::
+:::image type="content" source="media/33771278-update-compliance-workbook-summary.png" alt-text="Screenshot of the summary tab in the Update Compliance workbook with the three tabbed sections outlined in red." lightbox="media/33771278-update-compliance-workbook-summary.png":::
 
 ## Open the Update Compliance workbook
 
@@ -60,7 +60,7 @@ The charts displayed in the **Summary** tab give you a general idea of the overa
 
 - **Feature update status**: Gives you a general understanding of how many devices are eligible for feature updates based on the operating system lifecycle.
   
-:::image type="content" source="media/33771278-overall-security-update-status.png" alt-text="Screenshot of the charts in the workbook's summary tab":::
+:::image type="content" source="media/33771278-overall-security-update-status.png" alt-text="Screenshot of the charts in the workbook's summary tab" lightbox="media/33771278-overall-security-update-status.png":::
 
 ## Quality updates tab
 
@@ -81,6 +81,7 @@ The **Update status** group for quality updates contains the following items:
 - **Update states for the latest security releases**: Chart containing the number of devices in a specific state for the most recent security update.
 - **Update alerts for all security releases**: Chart containing the count of active errors and warnings for security updates.
 
+:::image type="content" source="media/33771278-update-deployment-status-table.png" alt-text="Screenshot of the charts in the workbook's summary tab" lightbox="media/33771278-update-deployment-status-table.png":::
 
 The **Update deployment status** table displays the quality updates for each operating system version that were released within the last 60 days. For each update, drill-in further by selecting a value from the following columns:
 
@@ -143,4 +144,5 @@ Since the Update Compliance workbook is an [Azure Workbook templates](/azure/azu
 
 ## Next steps
 
-Explore the [Update Compliance (preview) schema](update-compliance-v2-schema.md)
+- Explore the [Update Compliance (preview) schema](update-compliance-v2-schema.md)
+- Review [Feedback, support, and troubleshooting](update-compliance-v2-help.md) information for Update Compliance
