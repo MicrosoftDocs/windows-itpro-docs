@@ -29,7 +29,8 @@ Generates Policy Commands, Token Commands, and Miscellaneous Commands for user m
 | --remove-token ID | Remove a Token indicated by ID from the system. | -rt |
 | --list-tokens | Dump information about all tokens on the system | -lt |
 
->[!NOTE] Regarding --add-token, if <[ID]> is specified, a pre-existing token with <[ID]> should not exist.
+>[!NOTE]
+>Regarding --add-token, if <[ID]> is specified, a pre-existing token with <[ID]> should not exist.
 
 ## Miscellaneous Commands
 
