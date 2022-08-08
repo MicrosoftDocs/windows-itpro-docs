@@ -3,7 +3,7 @@ title: CI Policy, Token, and Miscellaneous Commands
 description: Learn how to use Policy Commands, Token Commands, and Miscellaneous Commands.
 author: valemieux
 ms.author: v-alemieux
-ms.service: WDAC
+ms.service: security
 ms.topic: how-to
 ms.date: 08/07/2022
 ms.custom: template-how-to
@@ -15,46 +15,32 @@ Generates Policy Commands, Token Commands, and Miscellaneous Commands for user m
 
 ## Policy Commands
 
-| Command:|--update-policy /Path/To/Policy/File |
-| Description: | Add or update a policy on the current system |
-| Alias: | -up | 
-
-| Command:|--remove-policy PolicyGUID |
-| Description: | Remove a policy indicated by PolicyGUID from the system |
-| Alias: | -rp | 
-
-| Command:|--list-policies |
-| Description: | Dump information about all policies on the system, whether they be active or not |
-| Alias: | -lp | 
+| Command | Description | Alias |
+| | | |
+|--------|---------|---------|
+|--update-policy /Path/To/Policy/File | Add or update a policy on the current system | -up |
+| --remove-policy PolicyGUID | Remove a policy indicated by PolicyGUID from the system | -rp |
+| --list-policies | Dump information about all policies on the system, whether they be active or not | -lp |
 
 ## Token Commands
 
-| Command:|--add-token Path/To/Token/File [--token-id ID] |
-| Description: | Deploy a token onto the current system, with an optional specific ID.   |
-| Alias: | -at | 
->[!NOTE] If [ID] is specified, a pre-existing token with [ID] should not exist.
+| Command | Description | Alias |
+| | | |
+|--------|---------|---------|
+|--add-token Path/To/Token/File [--token-id ID] | Deploy a token onto the current system, with an optional specific ID. | -at |
+|--remove-token ID | Remove a Token indicated by ID from the system. | -rt |
+|--list-tokens | Dump information about all tokens on the system | -lt |
 
-| Command:|--remove-token ID |
-| Description: | Remove a Token indicated by ID from the system. |
-| Alias: | -rt | 
-
-| Command:|--list-tokens |
-| Description: | Dump information about all tokens on the system |
-| Alias: | -lt | 
+>[!NOTE] Regarding --add-token, if <[ID]> is specified, a pre-existing token with [ID] should not exist.
 
 ## Miscellaneous Commands
 
-| Command:|--device-id |
-| Description: | Dump the Code Integrity Device Id |
-| Alias: | -id | 
-
-| Command:|--refresh |
-| Description: | Attempt to Refresh CI Policies |
-| Alias: | -r | 
-
-| Command:|--help |
-| Description: | Display help |
-| Alias: | -h | 
+| Command | Description | Alias |
+| | | |
+|--------|---------|---------|
+|--device-id | Dump the Code Integrity Device ID | -id |
+|--refresh | Attempt to Refresh CI Policies | -r |
+|--help | Display help | -h |
 
 ## Examples
 
