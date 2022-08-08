@@ -16,7 +16,6 @@ Generates Policy Commands, Token Commands, and Miscellaneous Commands for user m
 ## Policy Commands
 
 | Command | Description | Alias |
-| | | |
 |--------|---------|---------|
 | --update-policy /Path/To/Policy/File | Add or update a policy on the current system | -up |
 | --remove-policy PolicyGUID | Remove a policy indicated by PolicyGUID from the system | -rp |
@@ -25,18 +24,16 @@ Generates Policy Commands, Token Commands, and Miscellaneous Commands for user m
 ## Token Commands
 
 | Command | Description | Alias |
-| | | |
 |--------|---------|---------|
 | --add-token Path/To/Token/File [--token-id ID] | Deploy a token onto the current system, with an optional specific ID. | -at |
 | --remove-token ID | Remove a Token indicated by ID from the system. | -rt |
 | --list-tokens | Dump information about all tokens on the system | -lt |
 
->[!NOTE] Regarding --add-token, if <[ID]> is specified, a pre-existing token with [ID] should not exist.
+>[!NOTE] Regarding --add-token, if <[ID]> is specified, a pre-existing token with <[ID]> should not exist.
 
 ## Miscellaneous Commands
 
 | Command | Description | Alias |
-| | | |
 |--------|---------|---------|
 | --device-id | Dump the Code Integrity Device ID | -id |
 | --refresh | Attempt to Refresh CI Policies | -r |
