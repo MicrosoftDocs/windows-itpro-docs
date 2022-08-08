@@ -50,7 +50,7 @@ Microsoft adds the vulnerable versions of the drivers to our vulnerable driver b
 | Clean install of Windows | :x: | :heavy_check_mark: |
 
 > [!NOTE]
-> Microsoft vulnerable driver blocklist can also be enabled using [Windows Security](https://support.microsoft.com/windows/device-protection-in-windows-security-afa11526-de57-b1c5-599f-3a4c6a61c5e2), but the option to disable it is grayed out when HVCI or Smart App Control is enabled, or when the device is in S mode. You must disable HVCI or Smart App Control, or switch the device out of S mode before you can disable Microsoft vulnerable driver blocklist.
+> Microsoft vulnerable driver blocklist can also be enabled using [Windows Security](https://support.microsoft.com/windows/device-protection-in-windows-security-afa11526-de57-b1c5-599f-3a4c6a61c5e2), but the option to disable it is grayed out when HVCI or Smart App Control is enabled, or when the device is in S mode. You must disable HVCI or Smart App Control, or switch the device out of S mode, and restart the device before you can disable Microsoft vulnerable driver blocklist.
 
 ## Blocking vulnerable drivers using WDAC
 
