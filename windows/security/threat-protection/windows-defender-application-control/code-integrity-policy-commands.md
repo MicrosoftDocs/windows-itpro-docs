@@ -18,7 +18,7 @@ Generates Policy Commands, Token Commands, and Miscellaneous Commands for user m
 | Command | Description | Alias |
 | | | |
 |--------|---------|---------|
-|--update-policy /Path/To/Policy/File | Add or update a policy on the current system | -up |
+| --update-policy /Path/To/Policy/File | Add or update a policy on the current system | -up |
 | --remove-policy PolicyGUID | Remove a policy indicated by PolicyGUID from the system | -rp |
 | --list-policies | Dump information about all policies on the system, whether they be active or not | -lp |
 
@@ -27,9 +27,9 @@ Generates Policy Commands, Token Commands, and Miscellaneous Commands for user m
 | Command | Description | Alias |
 | | | |
 |--------|---------|---------|
-|--add-token Path/To/Token/File [--token-id ID] | Deploy a token onto the current system, with an optional specific ID. | -at |
-|--remove-token ID | Remove a Token indicated by ID from the system. | -rt |
-|--list-tokens | Dump information about all tokens on the system | -lt |
+| --add-token Path/To/Token/File [--token-id ID] | Deploy a token onto the current system, with an optional specific ID. | -at |
+| --remove-token ID | Remove a Token indicated by ID from the system. | -rt |
+| --list-tokens | Dump information about all tokens on the system | -lt |
 
 >[!NOTE] Regarding --add-token, if <[ID]> is specified, a pre-existing token with [ID] should not exist.
 
@@ -38,9 +38,9 @@ Generates Policy Commands, Token Commands, and Miscellaneous Commands for user m
 | Command | Description | Alias |
 | | | |
 |--------|---------|---------|
-|--device-id | Dump the Code Integrity Device ID | -id |
-|--refresh | Attempt to Refresh CI Policies | -r |
-|--help | Display help | -h |
+| --device-id | Dump the Code Integrity Device ID | -id |
+| --refresh | Attempt to Refresh CI Policies | -r |
+| --help | Display help | -h |
 
 ## Examples
 
