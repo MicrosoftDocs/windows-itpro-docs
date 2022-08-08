@@ -44,6 +44,8 @@ The **Summary** tab gives you a brief high-level overview of the devices that yo
 
 Each of these tiles contains an option to **View details**. When **View details** is selected for a tile, a flyout appears with additional information.
 
+:::image type="content" source="media/33771278-workbook-summary-tab-tiles.png" alt-text="Screenshot of the summary tab tiles in the Update Compliance workbook":::
+
 | Tile name | Description | View details description |
 |---|---|------|
 | **Enrolled devices** | Total number of devices that are enrolled into Update Compliance | Displays multiple charts about the operating systems (OS) for enrolled devices: </br> **OS Version** </br> **OS Edition** </br> **OS Servicing Channel** </br> **OS Architecture**|
@@ -75,11 +77,7 @@ Below the tiles, the **Quality updates** tab is subdivided into **Update status*
 
 The **Update status** group for quality updates contains the following items:
 
-- **Update states for all security releases**: Chart containing the number of devices in a specific state for security updates. Possible states include:
-   - Installed
-   - Installing
-   - Offering
-   - Canceled
+- **Update states for all security releases**: Chart containing the number of devices in a specific state, such as installing, for security updates.
 - **Update states for the latest security releases**: Chart containing the number of devices in a specific state for the most recent security update.
 - **Update alerts for all security releases**: Chart containing the count of active errors and warnings for security updates.
 
