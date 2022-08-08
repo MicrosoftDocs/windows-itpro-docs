@@ -60,7 +60,7 @@ Generates Policy Commands, Token Commands, and Miscellaneous Commands for user m
 
 #Example 1: Update Policy/Deploy
 Extract BF61FE40-8929-4FDF-9EC2-F7A767717F0B.cip into C:\windows\system32
-```powershell```
+```powershell
 PS C:\Users\[USER] cd \windows\system32
 PS C:\windows\system32> .\BF61FE40-8929-4FDF-9EC2-F7A767717F0B.cip -up
 
@@ -104,14 +104,14 @@ Commands:
 ```
 
 #Example 2: Refresh the policy
-```powershell```
+```powershell
 PS C:\Users\[USER] cd \windows\system32
 PS C:\Windows\System32>.\CITool.exe --refresh
 Operation Successful
 ```
 
 #Example 3: Remove the policy
-```powershell```
+```powershell
 PS C:\Users\[USER] cd \windows\system32
 PS C:\Windows\System32>.\CITool.exe --remove-policy {BF61FE40-8929-4FDF-9EC2-F7A767717F0B}
 Usage: CiTool.exe COMMAND <Command-Options> [-json]
@@ -154,7 +154,7 @@ Press Enter to Exit
 ```
 
 #Example 4: Display help
-```powershell```
+```powershell
 PS C:\Users\[USER] cd \windows\system32
 PS C:\windows\system32> .\CITool.exe -h
 
