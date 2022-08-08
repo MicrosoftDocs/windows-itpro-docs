@@ -1348,6 +1348,13 @@ Value type is string.
 
 Supported operation is Execute. Request ID is expected as a parameter.
 
+> [!NOTE]
+> Key rotation is supported only on these enrollment types:
+>   - windowsAzureADJoin 
+>   - windowsBulkAzureDomainJoin 
+>   - windowsAzureADJoinUsingDeviceAuth 
+>   - windowsCoManagement 
+
 > [!TIP]
 > Key rotation feature will only work when:
 >
