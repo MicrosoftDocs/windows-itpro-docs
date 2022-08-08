@@ -38,7 +38,7 @@ Use the product feedback option to offer suggestions for new features and functi
 1. In the text box, describe what you did or didn't like. When providing feedback about a problem, be sure to include enough detail in your description so it can be properly identified by the product group.
 1. Choose if you'd like to allow Microsoft to email you about your feedback.
 1. Select **Submit feedback** when you've completed the feedback form.
-:::image type="content" source="media/33771278-update-compliance-feedback.png" alt-text="Screenshot of the Azure portal showing the product feedback option flyout.":::
+:::image type="content" source="media/33771278-update-compliance-feedback.png" alt-text="Screenshot of the Azure portal showing the product feedback option flyout." lightbox="media/33771278-update-compliance-feedback.png":::
 
 ## Open a Microsoft support case
 
