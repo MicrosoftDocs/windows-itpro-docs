@@ -139,7 +139,7 @@ The **Device status** group for feature updates contains the following items:
 
 ## Customize the workbook
 
-Since the Update Compliance workbook is an [Azure Workbook templates](/azure/azure-monitor/visualize/workbooks-templates) it can be customized to suit your needs. If you open a template, make some adjustments, and save it, the template is saved as a workbook. This workbook appears in green. The original template is left untouched. For more information about workbooks, see [Get started with Azure Workbooks](/azure/azure-monitor/visualize/workbooks-getting-started).
+Since the Update Compliance workbook is an [Azure Workbook template](/azure/azure-monitor/visualize/workbooks-templates), it can be customized to suit your needs. If you open a template, make some adjustments, and save it, the template is saved as a workbook. This workbook appears in green. The original template is left untouched. For more information about workbooks, see [Get started with Azure Workbooks](/azure/azure-monitor/visualize/workbooks-getting-started).
 
 
 ## Next steps
