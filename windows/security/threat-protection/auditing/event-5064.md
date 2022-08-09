@@ -17,7 +17,7 @@ ms.technology: windows-sec
 # 5064(S, F): A cryptographic context operation was attempted.
 
 
-This event generates in [BCryptCreateContext](/windows/win32/api/bcrypt/nf-bcrypt-bcryptcreatecontext)() and [BCryptDeleteContext](/windows/win32/api/bcrypt/nf-bcrypt-bcryptdeletecontext)() functions. These are Cryptographic Next Generation (CNG) functions.
+This event generates in [BCryptCreateContext](/windows/win32/api/bcrypt/nf-bcrypt-bcryptcreatecontext)() and [BCryptDeleteContext](/windows/win32/api/bcrypt/nf-bcrypt-bcryptdeletecontext)() functions. These functions are Cryptographic Next Generation (CNG) functions.
 
 This event generates when cryptographic context was created or deleted.
 
@@ -27,9 +27,9 @@ For more information about Cryptographic Next Generation (CNG) visit these pages
 
 -   <https://www.microsoft.com/download/details.aspx?id=30688>
 
-This event is mainly used for Cryptographic Next Generation (CNG) troubleshooting.
+This event is used for Cryptographic Next Generation (CNG) troubleshooting.
 
-There is no example of this event in this document.
+There's no example of this event in this document.
 
 ***Subcategory:***&nbsp;[Audit Other Policy Change Events](audit-other-policy-change-events.md)
 

@@ -31,9 +31,9 @@ This policy setting determines whether server operators can use the **at** comma
 
 >**Note:**  This security option setting affects only the scheduler tool for the **at** command. It does not affect the Task Scheduler tool.
  
-Enabling this policy setting means jobs that are created by server operators through the **at** command will be executed in the context of the account that is running that service—by default, that is the Local System account. This means that server operators can perform tasks that the Local System account is able to do, but server operators would normally not be able to do, such as add their account to the local Administrators group.
+Enabling this policy setting means jobs that are created by server operators through the **at** command will be executed in the context of the account that is running that service—by default, that is, the Local System account. This synchronization with the local account means that server operators can perform tasks that the Local System account is able to do, but server operators would normally not be able to do, such as add their account to the local Administrators group.
 
-The impact of enabling this policy setting should be small for most organizations. Users, including those in the Server Operators group, will still be able to create jobs by using the Task Scheduler Wizard, but those jobs will run in the context of the account that the user authenticates with when setting up the job.
+The impact of enabling this policy setting should be small for most organizations. Users, including those users in the Server Operators group, will still be able to create jobs by using the Task Scheduler Wizard, but those jobs will run in the context of the account that the user authenticates with when setting up the job.
 
 ### Possible values
 
@@ -68,7 +68,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ### Command-line tools
 
@@ -88,7 +88,7 @@ Disable the **Domain controller: Allow server operators to schedule tasks** sett
 
 ### Potential impact
 
-The impact should be small for most organizations. Users (including those in the Server Operators group) can still create jobs by means of the Task Scheduler snap-in. However, those jobs run in the context of the account that the user authenticates with when setting up the job.
+The impact should be small for most organizations. Users (including those users in the Server Operators group) can still create jobs through the Task Scheduler snap-in. However, those jobs run in the context of the account that the user authenticates with when setting up the job.
 
 ## Related topics
 
