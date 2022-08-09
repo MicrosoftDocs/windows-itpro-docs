@@ -14,13 +14,14 @@ ms.date: 01/30/2019
 ms.reviewer: 
 manager: dansimp
 ms.topic: conceptual
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- :white_check_mark: <b>Windows 11 SE</b>
+- :no_entry: <b>Windows 11 SE</b>
 ---
 
 # For IT administrators - get Minecraft: Education Edition
-
-**Applies to:**
-
-- Windows 10  
 
 When you sign up for a [Minecraft: Education Edition](https://education.minecraft.net) trial, or purchase a [Minecraft: Education Edition](https://education.minecraft.net) subscription. Minecraft will be added to the inventory in your Microsoft Store for Education which is associated with your Azure Active Directory (Azure AD) tenant. Your Microsoft Store for Education is only displayed to members of your organization.
 

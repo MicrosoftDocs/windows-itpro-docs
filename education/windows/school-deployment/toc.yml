@@ -9,7 +9,7 @@ items:
         href: school-deployment/identity.md
       - name: Set up device management
         href: school-deployment/device-management.md
-  - name: Enroll devices
+  - name: Enroll devices in Intune
     items: 
       - name: Overview
         href: school-deployment/enrollment-overview.md
@@ -21,7 +21,7 @@ items:
         href: school-deployment/enrollment-wcd.md
       - name: Enroll devices manually
         href: school-deployment/enrollment-oobe.md
-  - name: Manage devices
+  - name: Manage devices with Intune
     items: 
       - name: Overview
         href: school-deployment/management-overview.md
