@@ -44,6 +44,8 @@ Currently, the technical preview contains the following features:
     - UCUpdateAlert
 - Client data collection to populate the new Update Compliance tables
 
+Currently, these new tables are available to all Updates Compliance users. They will be displayed along with the original Updates Compliance tables. 
+
 :::image type="content" source="media/update-compliance-v2-query-table.png" alt-text="Screenshot of using a custom Kusto (KQL) query on Update Compliance data in Log Analytics." lightbox="media/update-compliance-v2-query-table.png":::
 
 > [!IMPORTANT]
@@ -69,6 +71,9 @@ Since the data from your clients is stored in a Log Analytics workspace, you can
    - [Operations Management Suite](/azure/azure-monitor/agents/om-agents)
    - [Power BI](/azure/azure-monitor/logs/log-powerbi)
    - Other tools for [querying the data](/azure/azure-monitor/logs/log-query-overview)
+
+
+## 
 
 ## Next steps
 

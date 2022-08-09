@@ -35,7 +35,7 @@ Use the product feedback option to offer suggestions for new features and functi
 
 1. In the upper right corner of the Azure portal, select the feedback icon.
 1. Select either the smile or the frown to rate your satisfaction with your experience.
-1. In the text box, describe what you did or didn't like. When providing feedback about a problem, be sure to include enough detail in your description so it can be properly identified by the product group.
+1. In the text box, describe what you did or didn't like. When providinlg feedback about a problem, be sure to include enough detail in your description so it can be properly identified by the product group.
 1. Choose if you'd like to allow Microsoft to email you about your feedback.
 1. Select **Submit feedback** when you've completed the feedback form.
 :::image type="content" source="media/33771278-update-compliance-feedback.png" alt-text="Screenshot of the Azure portal showing the product feedback option flyout." lightbox="media/33771278-update-compliance-feedback.png":::
@@ -102,7 +102,7 @@ The first step in troubleshooting Update Compliance is ensuring that devices are
 
 ### Devices have been correctly configured but aren't showing up in Update Compliance
 
-It takes some time for data to appear in Update Compliance for the first time or if a `Commercial ID`, has recently changed for a device. To learn more about data latencies for Update Compliance, review [Update Compliance data latency](update-compliance-v2-use.md#update-compliance-data-latency).
+It takes some time for data to appear in Update Compliance for the first time or if you moved to a new Log Analytics workspace. To learn more about data latencies for Update Compliance, review [Update  Compliance data latency](update-compliance-v2-use.md#update-compliance-data-latency).
 
 ### Devices are appearing, but without a device name
 
