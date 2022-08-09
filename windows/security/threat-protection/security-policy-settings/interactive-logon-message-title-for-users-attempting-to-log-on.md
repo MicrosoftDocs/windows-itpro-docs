@@ -2,7 +2,7 @@
 title: Interactive logon Message title for users attempting to log on (Windows 10)
 description: Best practices, security considerations, and more for the security policy setting, Interactive logon Message title for users attempting to log on.
 ms.assetid: f2596470-4cc0-4ef1-849c-bef9dc3533c6
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -30,9 +30,7 @@ Describes the best practices, location, values, policy management and security c
 
 This security setting allows you to specify a title that appears in the title bar of the window that contains the **Interactive logon: Message title for users attempting to log on**. This text is often used for legal reasons—for example, to warn users about the ramifications of misusing company information, or to warn them that their actions might be audited.
 
-The **Interactive logon: Message title for users attempting to log on** and [Interactive logon: Message text for users attempting to log on](interactive-logon-message-text-for-users-attempting-to-log-on.md) policy settings are closely related. **Interactive logon: Message title for users attempting to log on** specifies a message title to be displayed to users when they log on.
-
-Not using this warning-message policy setting leaves your organization legally vulnerable to trespassers who unlawfully penetrate your network. Legal precedents have established that organizations that display warnings to users who connect to their servers over a network have a higher rate of successfully prosecuting trespassers.
+The **Interactive logon: Message title for users attempting to log on** and [Interactive logon: Message text for users attempting to log on](interactive-logon-message-text-for-users-attempting-to-log-on.md) policy settings are closely related. **Interactive logon: Message title for users attempting to log on** specifies a message title to be displayed to users when they log on. This text is often used for legal reasons, for example, to warn users about the ramifications of misusing company information or to warn them that their actions may be audited.
 
 When these policy settings are configured, users will see a dialog box before they can sign in the server console.
 
@@ -43,7 +41,7 @@ When these policy settings are configured, users will see a dialog box before th
 
 ### Best practices
 
-1.  It's advisable to set **Interactive logon: Message title for users attempting to log on** to a value similar to one of the following values:
+1. It is advisable to set **Interactive logon: Message title for users attempting to log on** to a value similar to one the following:
 
    - RESTRICTED SYSTEM
 
