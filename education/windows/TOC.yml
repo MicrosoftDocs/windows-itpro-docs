@@ -9,9 +9,9 @@
     - name: Windows 11 SE cookbook
       items: 
         - name: Introduction
-          href: windows-se-cookbook-intro.md
+          href: windows-se-cookbook/intro.md
         - name: Microsoft Education
-          href: windows-se-cookbook-microsoft-education.md
+          href: windows-se-cookbook/microsoft-education.md
         - name: Get started
           items: 
             - name: Set up identity management
