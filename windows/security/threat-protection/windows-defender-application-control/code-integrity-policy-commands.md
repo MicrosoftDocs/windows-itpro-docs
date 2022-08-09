@@ -30,7 +30,7 @@ Generates Policy Commands, Token Commands, and Miscellaneous Commands for user m
 | --list-tokens | Dump information about all tokens on the system | -lt |
 
 >[!NOTE]
->Regarding --add-token, if <[ID]> is specified, a pre-existing token with <[ID]> should not exist.
+>Regarding --add-token, if [ID] is specified, a pre-existing token with [ID] should not exist.
 
 ## Miscellaneous Commands
 
@@ -42,8 +42,11 @@ Generates Policy Commands, Token Commands, and Miscellaneous Commands for user m
 
 ## Examples
 
-1. Update Policy/Deploy
-Extract policy file to C:\windows\system32
+>[!NOTE]
+>The following examples assume you have extracted the policy file {BF61FE40-8929-4FDF-9EC2-F7A767717F0B}.cip to C:\windows\system32
+
+1. Update Policy
+
 ```powershell
 PS C:\Users\<USER> cd \windows\system32
 PS C:\windows\system32> .\BF61FE40-8929-4FDF-9EC2-F7A767717F0B.cip -up
