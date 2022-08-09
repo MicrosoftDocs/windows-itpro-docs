@@ -17,12 +17,26 @@ ms.topic: conceptual
 appliesto:
 - ✅ <b>Windows 10</b>
 - ✅ <b>Windows 11</b>
-- `:white_check_mark:` <b>Windows 11 SE</b>
+- `:white_check_mark`: <b>Windows 11 SE</b>
 ---
 
 # For IT administrators - get Minecraft: Education Edition
 
 When you sign up for a [Minecraft: Education Edition](https://education.minecraft.net) trial, or purchase a [Minecraft: Education Edition](https://education.minecraft.net) subscription. Minecraft will be added to the inventory in your Microsoft Store for Education which is associated with your Azure Active Directory (Azure AD) tenant. Your Microsoft Store for Education is only displayed to members of your organization.
+
+# [✅ Intune](#tab/intune)
+
+<your  Intune steps here>
+
+# [:white_check_mark: Group Policy](#tab/gpo)
+
+<your  mmc/gpo steps here>
+
+# [CSP](#tab/csp)
+
+<your  OMA-URI strings here>
+
+---
 
 >[!Note]
 >If you don't have an Azure AD or Office 365 tenant, you can set up a free Office 365 Education subscription when you request Minecraft: Education Edition. For more information, see [Office 365 Education plans and pricing](https://products.office.com/academic/compare-office-365-education-plans).
