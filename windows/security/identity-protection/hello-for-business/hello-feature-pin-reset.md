@@ -42,29 +42,29 @@ Destructive and non-destructive PIN reset use the same steps for initiating a PI
 
 ### Reset PIN from Settings
 
-1. Sign-in to Windows 10 using an alternate credential
-1. Open **Settings**, select **Accounts** > **Sign-in options**
-1. Select **PIN (Windows Hello)** > **I forgot my PIN** and follow the instructions
+1. Sign-in to Windows 10 using an alternate credential.
+1. Open **Settings**, select **Accounts** > **Sign-in options**.
+1. Select **PIN (Windows Hello)** > **I forgot my PIN** and follow the instructions.
 
 
 ### Reset PIN above the Lock Screen
 
 For Azure AD-joined devices:
 
-1. If the PIN credential provider is not selected, expand the **Sign-in options** link, and select the PIN pad icon
-1. Select **I forgot my PIN** from the PIN credential provider
-1. Select an authentication option from the list of presented options. This list will be based on the different authentication methods enabled in your tenant (e.g., Password, PIN, Security key)
-1. Follow the instructions provided by the provisioning process
-1. When finished, unlock your desktop using your newly created PIN
+1. If the PIN credential provider is not selected, expand the **Sign-in options** link, and select the PIN pad icon.
+1. Select **I forgot my PIN** from the PIN credential provider.
+1. Select an authentication option from the list of presented options. This list will be based on the different authentication methods enabled in your tenant (e.g., Password, PIN, Security key).
+1. Follow the instructions provided by the provisioning process.
+1. When finished, unlock your desktop using your newly created PIN.
 
 
 For Hybrid Azure AD-joined devices:
 
-1. If the PIN credential provider is not selected, expand the **Sign-in options** link, and select the PIN pad icon
-1. Select **I forgot my PIN** from the PIN credential provider
-1. Enter your password and press enter
-1. Follow the instructions provided by the provisioning process
-1. When finished, unlock your desktop using your newly created PIN
+1. If the PIN credential provider is not selected, expand the **Sign-in options** link, and select the PIN pad icon.
+1. Select **I forgot my PIN** from the PIN credential provider.
+1. Enter your password and press enter.
+1. Follow the instructions provided by the provisioning process.
+1. When finished, unlock your desktop using your newly created PIN.
 
 > [!NOTE]
 > Key trust on hybrid Azure AD-joined devices does not support destructive PIN reset from above the Lock Screen. This is due to the sync delay between when a user provisions their Windows Hello for Business credential and being able to use it for sign-in. For this deployment model, you must deploy non-destructive PIN reset for above lock PIN reset to work.
@@ -115,21 +115,21 @@ Before you can remotely reset PINs, you must register two applications in your A
 
 #### Connect Azure Active Directory with the PIN Reset Service
 
-1. Go to the [Microsoft PIN Reset Service Production website](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=b8456c59-1230-44c7-a4a2-99b085333e84&resource=https%3A%2F%2Fgraph.windows.net&redirect_uri=https%3A%2F%2Fcred.microsoft.com&state=e9191523-6c2f-4f1d-a4f9-c36f26f89df0&prompt=admin_consent), and sign in using a Global Administrator account you use to manage your Azure Active Directory tenant
-1. After you have logged in, select **Accept** to give consent to the **PIN Reset Service** to access your organization
+1. Go to the [Microsoft PIN Reset Service Production website](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=b8456c59-1230-44c7-a4a2-99b085333e84&resource=https%3A%2F%2Fgraph.windows.net&redirect_uri=https%3A%2F%2Fcred.microsoft.com&state=e9191523-6c2f-4f1d-a4f9-c36f26f89df0&prompt=admin_consent), and sign in using a Global Administrator account you use to manage your Azure Active Directory tenant.
+1. After you have logged in, select **Accept** to give consent to the **PIN Reset Service** to access your organization.
    ![PIN reset service application in Azure.](images/pinreset/pin-reset-service-prompt.png)
 
 #### Connect Azure Active Directory with the PIN Reset Client
 
-1. Go to the [Microsoft PIN Reset Client Production website](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent), and sign in using a Global Administrator account you use to manage your Azure Active Directory tenant
-1. After you have logged in, select **Accept** to give consent for the **PIN Reset Client** to access your organization
+1. Go to the [Microsoft PIN Reset Client Production website](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent), and sign in using a Global Administrator account you use to manage your Azure Active Directory tenant.
+1. After you have logged in, select **Accept** to give consent for the **PIN Reset Client** to access your organization.
    ![PIN reset client application in Azure.](images/pinreset/pin-reset-client-prompt.png)
 
 #### Confirm that the two PIN Reset service principals are registered in your tenant
 
-1. Sign in to the [Microsoft Entra Manager admin center](https://entra.microsoft.com)
-1. Select **Azure Active Directory** > **Applications** > **Enterprise applications**
-1. Search by application name "Microsoft PIN" and both **Microsoft Pin Reset Service Production** and **Microsoft Pin Reset Client Production** will show up in the list
+1. Sign in to the [Microsoft Entra Manager admin center](https://entra.microsoft.com).
+1. Select **Azure Active Directory** > **Applications** > **Enterprise applications**.
+1. Search by application name "Microsoft PIN" and both **Microsoft Pin Reset Service Production** and **Microsoft Pin Reset Client Production** will show up in the list.
    :::image type="content" alt-text="PIN reset service permissions page." source="images/pinreset/pin-reset-applications.png" lightbox="images/pinreset/pin-reset-applications-expanded.png":::
 
 ### Enable PIN Recovery on your devices
@@ -140,39 +140,39 @@ Before you can remotely reset PINs, your devices must be configured to enable PI
 
 You can configure Windows devices to use the **Microsoft PIN Reset Service** using Microsoft Intune.
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com)
-1. Select **Devices** > **Configuration profiles** > **Create profile**
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com).
+1. Select **Devices** > **Configuration profiles** > **Create profile**.
 1. Enter the following properties:
-    - **Platform**: Select **Windows 10 and later**
-    - **Profile type**: Select **Settings catalog**
-1. Select **Create**
+    - **Platform**: Select **Windows 10 and later**.
+    - **Profile type**: Select **Settings catalog**.
+1. Select **Create**.
 1. In **Basics**, enter the following properties:
-    - **Name**: Enter a descriptive name for the profile
-    - **Description**: Enter a description for the profile. This setting is optional, but recommended
-1. Select **Next**
-1. In **Configuration settings**, select **Add settings**
-1. In the settings picker, select **Windows Hello For Business** > **Enable Pin Recovery**
-1. Configure **Enable Pin Recovery** to **true**
-1. Select **Next**
-1. In **Scope tags**, assign any applicable tags (optional)
-1. Select **Next**
-1. In **Assignments**, select the security groups that will receive the policy
-1. Select **Next**
-1. In **Review + create**, review your settings and select **Create**
+    - **Name**: Enter a descriptive name for the profile.
+    - **Description**: Enter a description for the profile. This setting is optional, but recommended.
+1. Select **Next**.
+1. In **Configuration settings**, select **Add settings**.
+1. In the settings picker, select **Windows Hello For Business** > **Enable Pin Recovery**.
+1. Configure **Enable Pin Recovery** to **true**.
+1. Select **Next**.
+1. In **Scope tags**, assign any applicable tags (optional).
+1. Select **Next**.
+1. In **Assignments**, select the security groups that will receive the policy.
+1. Select **Next**.
+1. In **Review + create**, review your settings and select **Create**.
 
 >[!NOTE]
 > You can also configure PIN recovery from the **Endpoint security** blade:
-> 1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com)
-> 1. Select **Endpoint security** > **Account protection** > **Create Policy**
+> 1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com).
+> 1. Select **Endpoint security** > **Account protection** > **Create Policy**.
 
 #### [✅ **GPO**](#tab/gpo)
 
 You can configure Windows devices to use the **Microsoft PIN Reset Service** using a Group Policy Object (GPO).
 
-1. Using the Group Policy Management Console (GPMC), scope a domain-based Group Policy to computer accounts in Active Directory
-1. Edit the Group Policy object from Step 1
-1. Enable the **Use PIN Recovery** policy setting located under **Computer Configuration > Administrative Templates > Windows Components > Windows Hello for Business**
-1. Close the Group Policy Management Editor to save the Group Policy object
+1. Using the Group Policy Management Console (GPMC), scope a domain-based Group Policy to computer accounts in Active Directory.
+1. Edit the Group Policy object from Step 1.
+1. Enable the **Use PIN Recovery** policy setting located under **Computer Configuration > Administrative Templates > Windows Components > Windows Hello for Business**.
+1. Close the Group Policy Management Editor to save the Group Policy object.
 
 #### [✅ **CSP**](#tab/csp)
 
@@ -249,7 +249,7 @@ The [ConfigureWebSignInAllowedUrls](/windows/client-management/mdm/policy-csp-au
 
 1. In the **Name** field type **Web Sign In Allowed URLs** and optionally provide a description for the configuration. Click Next.
 
-1. On the Configuration settings page, click **Add** to add a custom OMA-URI setting. Provide the following information for the custom settings
+1. On the Configuration settings page, click **Add** to add a custom OMA-URI setting. Provide the following information for the custom settings:
 
     - **Name:** Web Sign In Allowed URLs
     - **Description:** (Optional) List of domains that are allowed during PIN reset flows.
@@ -274,28 +274,28 @@ The [ConfigureWebSignInAllowedUrls](/windows/client-management/mdm/policy-csp-au
 
 #### Configure Web Sign-in Allowed URLs using Microsoft Intune
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431)
-1. Select **Devices** > **Configuration profiles** > **Create profile**
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Select **Devices** > **Configuration profiles** > **Create profile**.
 1. Enter the following properties:
-    - **Platform**: Select **Windows 10 and later**
-    - **Profile type**: Select **Templates**
-    - In the list of templates that is loaded, select **Custom** > **Create**
+    - **Platform**: Select **Windows 10 and later**.
+    - **Profile type**: Select **Templates**.
+    - In the list of templates that is loaded, select **Custom** > **Create**.
 1. In **Basics**, enter the following properties:
-    - **Name**: Enter a descriptive name for the profile
-    - **Description**: Enter a description for the profile. This setting is optional, but recommended
-1. Select **Next**
+    - **Name**: Enter a descriptive name for the profile.
+    - **Description**: Enter a description for the profile. This setting is optional, but recommended.
+1. Select **Next**.
 1. In **Configuration settings**, select **Add** and enter the following settings:
     - Name: **Web Sign In Allowed URLs**
     - Description: **(Optional) List of domains that are allowed during PIN reset flows**
     - OMA-URI: `./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebSignInAllowedUrls`
     - Data type: **String**
-    - Value: Provide a semicolon delimited list of domains needed for authentication during the PIN reset scenario. An example value would be **signin.contoso.com;portal.contoso.com** (without quotation marks)
+    - Value: Provide a semicolon delimited list of domains needed for authentication during the PIN reset scenario. An example value would be **signin.contoso.com;portal.contoso.com** (without quotation marks).
     :::image type="content" alt-text="Custom Configuration for ConfigureWebSignInAllowedUrls policy." source="images/pinreset/allowlist.png" lightbox="images/pinreset/allowlist-expanded.png":::
-1. Select **Save** > **Next**
-1. In **Assignments**, select the security groups that will receive the policy
-1. Select **Next**
-1. In **Applicability Rules**, select **Next**
-1. In **Review + create**, review your settings and select **Create**
+1. Select **Save** > **Next**.
+1. In **Assignments**, select the security groups that will receive the policy.
+1. Select **Next**.
+1. In **Applicability Rules**, select **Next**.
+1. In **Review + create**, review your settings and select **Create**.
 
 
 > [!NOTE]
