@@ -1,6 +1,6 @@
 items: 
   - name: Introduction
-    href: school-deployment/intro.md
+    href: school-deployment/index.md
   - name: Microsoft Education
     href: school-deployment/microsoft-education.md
   - name: Get started
