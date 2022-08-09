@@ -157,7 +157,7 @@ sections:
       
       - question: What is the format used to store Windows Hello biometrics data on the device?
         answer: |
-          Windows Hello biometrics data is stored on the device as an encrypted template database. The data from the biometrics sensor (e.g., face camera or fingerprint reader) creates a data representation—or graph—that is then encrypted before it’s stored on the device. Each biometrics sensor on the device which is used by Windows Hello (face or fingerprint) will have its own biometric database file where template data is stored. Each biometrics database file is encrypted with unique, randomly generated key that is encrypted to the system using AES encryption producing a SHA256 hash. 
+          Windows Hello biometrics data is stored on the device as an encrypted template database. The data from the biometrics sensor (e.g., face camera or fingerprint reader) creates a data representation—or graph—that is then encrypted before it’s stored on the device. Each biometrics sensor on the device which is used by Windows Hello (face or fingerprint) will have its own biometric database file where template data is stored. Each biometrics database file is encrypted with unique, randomly generated key that is encrypted to the system using AES encryption producing an SHA256 hash. 
       
       - question: Who has access on Windows Hello biometrics data? 
         answer: |
