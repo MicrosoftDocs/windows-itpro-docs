@@ -82,8 +82,9 @@ Alice follows these steps to complete this task:
 2. On the client device, run the following commands in an elevated Windows PowerShell session to initialize variables:
 
       ```powershell
+      $PolicyPath=$env:userprofile+"\Desktop\"
       $PolicyName= "Lamna_FullyManagedClients_Audit"
-      $LamnaPolicy=$env:userprofile+"\Desktop\"+$PolicyName+".xml"
+      $LamnaPolicy=$PolicyPath+$PolicyName+".xml"
       $MEMCMPolicy=$env:windir+"\CCM\DeviceGuard\MergedPolicy_Audit_ISG.xml"
       ```
 
@@ -121,7 +122,9 @@ Alice follows these steps to complete this task:
     > In the sample commands below, replace the string "{InsertPolicyID}" with the actual PolicyID GUID (including braces **{ }**) found in your policy XML file.
 
    ```powershell
-   $WDACPolicyBin=$env:userprofile+"\Desktop\"+$PolicyName+"_{InsertPolicyID}.bin"
+   [xml]$LamnaPolicyXML = Get-Content $LamnaPolicy
+   $PolicyId = $LamnaPolicyXML.SiPolicy.PolicyId
+   $LamnaPolicyBin = $PolicyPath+$PolicyId+".cip"
    ConvertFrom-CIPolicy $LamnaPolicy $WDACPolicyBin
    ```
 
