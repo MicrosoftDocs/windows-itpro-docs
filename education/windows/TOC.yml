@@ -7,7 +7,7 @@
     - name: Settings and CSP list
       href: windows-11-se-settings-list.md
     - name: Windows 11 SE cookbook
-      href: windows-se-cookbook/toc.yml
+      href: school-deployment/toc.yml
 - name: Windows 10 for Education
   items: 
     - name: Windows 10 editions for education customers
