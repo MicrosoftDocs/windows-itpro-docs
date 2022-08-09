@@ -18,7 +18,6 @@ appliesto:
 - ✅ <b>Windows 10</b>
 - ✅ <b>Windows 11</b>
 - `:white_check_mark:` <b>Windows 11 SE</b>
-- `:no_entry`: <b>Windows 11 SE</b>
 ---
 
 # For IT administrators - get Minecraft: Education Edition
