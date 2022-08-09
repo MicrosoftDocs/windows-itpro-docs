@@ -22,14 +22,12 @@ Windows Hello for Business provides the capability for users to reset forgotten 
 
 There are two forms of PIN reset:
 
-- **Destructive PIN reset**: with this option, the user's existing PIN and underlying credentials, including any keys or certificates added to their Windows Hello container, are deleted from the client and a new log in key and PIN are provisioned. Destructive PIN reset is the default option, and doesn't require configuration.
+- **Destructive PIN reset**: with this option, the user's existing PIN and underlying credentials, including any keys or certificates added to their Windows Hello container, are deleted from the client and a new login key and PIN are provisioned. Destructive PIN reset is the default option, and doesn't require configuration.
 - **Non-destructive PIN reset**: with this option, the user's Windows Hello for Business container and keys are preserved, but the user's PIN that they use to authorize key usage is changed. For non-destructive PIN reset, you must deploy the **Microsoft PIN Reset Service** and configure your clients' policy to enable the **PIN Recovery** feature.
 ## Using PIN reset
 
 
 There are two forms of PIN reset called destructive and non-destructive. Destructive PIN reset is the default and doesn't require configuration. During a destructive PIN reset, the user's existing PIN and underlying credentials, including any keys or certificates added to their Windows Hello container, will be deleted from the client and a new logon key and PIN are provisioned. For non-destructive PIN reset, you must deploy the Microsoft PIN reset service and client policy to enable the PIN recovery feature. During a non-destructive PIN reset, the user's Windows Hello for Business container and keys are preserved, but the user's PIN that they use to authorize key usage is changed.
-
-## Using PIN Reset
 
 **Requirements**
 
@@ -88,7 +86,6 @@ When non-destructive PIN reset is enabled on a client, a 256-bit AES key is gene
 Using Group Policy, Microsoft Intune or a compatible MDM solution, you can configure Windows devices to securely use the **Microsoft PIN Reset Service** which enables users to reset their forgotten PIN without requiring re-enrollment.
 
 >[!IMPORTANT]
-
 > The Microsoft PIN Reset service only works with **Enterprise Edition** for Windows 10, version 1709 to 1809 and later, and Windows 11. The feature works with **Enterprise Edition** and **Pro** edition with Windows 10, version 1903 and later, Windows 11.
 > The Microsoft PIN Reset service is not currently available in Azure Government.
 
