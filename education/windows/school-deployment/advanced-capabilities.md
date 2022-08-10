@@ -120,6 +120,21 @@ To see the device’s warranty information, select **Device warranty and coverag
 
 5. To see support requests and their status, select **Support requests**.
 
+## Autopilot motherboard replacement
+
+Repairing Autopilot-enrolled devices can be complex, as OEM requirements must be balanced with Autopilot requirements. If a motherboard replacement is needed on an Autopilot device, we recommend the following process:
+
+1. [Deregister the device](https://docs.microsoft.com/en-us/mem/autopilot/autopilot-mbr) from Autopilot.
+1. [Replace the motherboard](https://docs.microsoft.com/en-us/mem/autopilot/autopilot-mbr).
+1. [Capture a new device ID (4K HH)](https://docs.microsoft.com/en-us/mem/autopilot/autopilot-mbr).
+1. [Reregister the device](https://docs.microsoft.com/en-us/mem/autopilot/autopilot-mbr) with Autopilot. **NOTE:** For DFCI management, the device must be reregistered by a partner or OEM. Self-registration of devices is not supported with DFCI management.
+1. [Reset the device](https://docs.microsoft.com/en-us/mem/autopilot/autopilot-mbr).
+1. [Return the device](https://docs.microsoft.com/en-us/mem/autopilot/autopilot-mbr).
+
+For more information, see [Autopilot motherboard replacement scenario guidance](https://docs.microsoft.com/en-us/mem/autopilot/autopilot-mbr).
+
+**UP NEXT:** By this point in the cookbook, you have reviewed the basic steps for full device lifecycle management. In the next section, we'll look at some advanced Intune capabilities that can help support your device management needs today and into the future.
+
 ## How to contact Microsoft Support
 
 Microsoft provides global technical, pre-sales, billing, and subscription support for cloud-based device management services. This support includes Microsoft Intune, Configuration Manager, Windows 365, and Microsoft Managed Desktop.
