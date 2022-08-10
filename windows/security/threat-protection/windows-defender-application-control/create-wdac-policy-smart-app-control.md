@@ -60,7 +60,7 @@ Alice previously created a policy for the organization's fully managed end-user 
     Set-RuleOption -FilePath $LamnaPolicy -Option 3 # Audit Mode
     ```
 
-1. If appropriate, add more signer or file rules to further customize the policy for your organization or use [Merge-CIPolicy](/powershell/module/configci/merge-cipolicy) to merge this policy with your existing WDAC policy.
+1. If appropriate, add more signer or file rules to further customize the policy for your organization, or use [Merge-CIPolicy](/powershell/module/configci/merge-cipolicy) to merge this policy with your existing WDAC policy.
 
 1. Use [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy) to convert the Windows Defender Application Control policy to a binary format:
 
@@ -72,11 +72,11 @@ Alice previously created a policy for the organization's fully managed end-user 
 
 1. Upload your base policy XML and the associated binary to a source control solution such as [GitHub](https://github.com/) or a document management solution such as [Office 365 SharePoint](https://products.office.com/sharepoint/collaboration).
 
-At this point, Alice now has an initial policy that is ready to deploy in audit mode to the managed clients within Lamna.
+At this point, Alice now has a policy that is ready to deploy in audit mode to the managed clients within Lamna.
 
 ## Turn off Smart App Control
 
-Smart App Control is only available on clean installs of Windows 11 version 22H2 or later, and starts in evaluation mode. For managed devices, Windows automatically turns off Smart App Control but if you want to enforce this behavior, you can disable Smart App Control by setting **VerifiedAndReputablePolicyState** (DWORD) registry value in `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CI\Policy`, and either restart the device or run [RefreshPolicy.exe](https://www.microsoft.com/download/details.aspx?id=102925).
+Smart App Control is only available on clean installation of Windows 11 version 22H2 or later, and starts in evaluation mode. For managed devices, Windows automatically turns off Smart App Control but if you want to enforce this behavior, you can set the **VerifiedAndReputablePolicyState** (DWORD) registry value in `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CI\Policy` to one of the values listed below, and either restart the device or run [RefreshPolicy.exe](https://www.microsoft.com/download/details.aspx?id=102925). Once you turn Smart App Control off, it can't be turned on without resetting or reinstalling Windows.
 
 | Value | Description |
 |-------|-------------|
@@ -85,7 +85,11 @@ Smart App Control is only available on clean installs of Windows 11 version 22H2
 | 2     | Evaluation  |
 
 ```powershell
-Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\CI\Policy" -Name VerifiedAndReputablePolicyState -Value 0 -Type DWORD -Force
+Set-ItemProperty `
+    -Path "HKLM:\SYSTEM\CurrentControlSet\Control\CI\Policy" `
+    -Name VerifiedAndReputablePolicyState `
+    -Value 0 `
+    -Type DWORD -Force
 ```
 
 > [!IMPORTANT]
