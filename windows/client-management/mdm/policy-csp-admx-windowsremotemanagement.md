@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - ADMX_WindowsRemoteManagement
 description: Policy CSP - ADMX_WindowsRemoteManagement
-ms.author: dansimp
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 12/16/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_WindowsRemoteManagement

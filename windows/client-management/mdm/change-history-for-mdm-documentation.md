@@ -1,10 +1,10 @@
 ---
 title: Change history for MDM documentation
 description: This article lists new and updated articles for Mobile Device Management.
-author: aczechowski
-ms.author: aaroncz
-ms.reviewer:
-manager: dougeby
+author: vinaypamnani-msft
+ms.author: vinpa
+ms.reviewer: 
+manager: aaroncz
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

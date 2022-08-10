@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - RestrictedGroups
 description: Learn how the Policy CSP - RestrictedGroups setting allows an administrator to define the members that are part of a security-sensitive (restricted) group.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 04/07/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - RestrictedGroups
