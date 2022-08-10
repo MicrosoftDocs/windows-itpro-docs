@@ -23,6 +23,8 @@ items:
           href: set-up-windows-10.md
         - name: Use the Set up School PCs app
           href: use-set-up-school-pcs-app.md
+        - name: Shared PC mode for school devices
+          href: set-up-school-pcs-shared-pc-mode.md
         - name: Azure AD join for school PCs
           href: set-up-school-pcs-azure-ad-join.md
         - name: Active Directory join for school PCs
@@ -57,8 +59,6 @@ items:
   items: 
     - name: Technical reference for the Set up School PCs app
       href: set-up-school-pcs-technical.md
-    - name: Shared PC mode for school devices
-      href: set-up-school-pcs-shared-pc-mode.md
     - name: Provisioning package settings
       href: set-up-school-pcs-provisioning-package.md
     - name: What's new in Set up School PCs
