@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - HumanPresence
 description: Use the Policy CSP - HumanPresence setting allows wake on approach and lock on leave that can be managed from MDM.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - HumanPresence

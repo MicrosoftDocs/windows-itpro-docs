@@ -2,10 +2,10 @@
 title: New policies for Windows 10 (Windows 10)
 description: Learn how Windows 10 includes new policies for management, like Group Policy settings for the Windows system and components.
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.prod: w10
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/15/2021
 ms.topic: reference

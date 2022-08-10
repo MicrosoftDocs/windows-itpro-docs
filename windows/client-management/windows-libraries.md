@@ -1,13 +1,13 @@
 ---
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 title: Windows Libraries
 ms.prod: windows-server-threshold
-ms.author: dansimp
+ms.author: vinpa
 ms.manager: dongill
 ms.technology: storage
 ms.topic: article
-author: dansimp
+author: vinaypamnani-msft
 description: All about Windows Libraries, which are containers for users' content, such as Documents and Pictures.
 ms.date: 09/15/2021
 ---

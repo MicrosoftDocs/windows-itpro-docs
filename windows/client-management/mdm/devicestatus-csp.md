@@ -2,12 +2,12 @@
 title: DeviceStatus CSP
 description: Learn how the DeviceStatus configuration service provider keeps track of device inventory and queries the compliance state of devices within the enterprise.
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 06/25/2021
 ---
 
