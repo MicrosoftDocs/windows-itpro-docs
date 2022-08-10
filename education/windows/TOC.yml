@@ -1,6 +1,8 @@
 items:
 - name: Windows for Education
   href: index.md
+- name: Windows Hello for Business Overview
+  href: /windows/security/identity-protection/hello-for-business/hello-overview?toc=%2Feducation%2Fwindows%2Ftoc.json&bc=%2Feducation%2Fbreadcrumb%2Ftoc.json
 - name: Deploy and manage Windows 11 SE devices in a school
   href: school-deployment/toc.yml
 - name: Deploy and manage Windows devices in a school
