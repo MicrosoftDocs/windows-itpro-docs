@@ -5,19 +5,17 @@ keywords: Windows 10 deployment, recommendations, privacy settings, school
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.date: 10/13/2017
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-manager: dansimp
-ms.prod: w10
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
 ---
 
 # Deployment recommendations for school IT administrators
-**Applies to:**
-
--   Windows 10
-
 
 Your privacy is important to us, so we want to provide you with ways to customize the OS privacy settings, and some of the apps, so that you can choose what information is shared with Microsoft. To learn more about Microsoft’s commitment to privacy, see [Windows 10 and privacy](https://go.microsoft.com/fwlink/?LinkId=809305). The following sections provide some best practices and specific privacy settings we’d like you to be aware of. For more information about ways to customize the OS diagnostic data, consumer experiences, Cortana, and search, see [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md).
 

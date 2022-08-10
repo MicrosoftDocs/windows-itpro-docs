@@ -2,26 +2,24 @@
 title: Get Minecraft Education Edition
 description: Learn how to get and distribute Minecraft Education Edition.
 keywords: school, Minecraft, education edition
-ms.prod: w10
+ms.prod: windows
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.localizationpriority: medium
 author: dansimp
 searchScope: 
   - Store
-ms.author: dansimp
-ms.date: 01/29/2019
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-manager: dansimp
-ms.topic: conceptual
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
 ---
 
 # Get Minecraft: Education Edition
-
-**Applies to:**
-
--   Windows 10  
-
 
 [Minecraft: Education Edition](https://education.minecraft.net/) is built for learning. Watch this video to learn more about Minecraft.
 

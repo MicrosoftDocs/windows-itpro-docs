@@ -2,25 +2,24 @@
 title: For teachers get Minecraft Education Edition
 description: Learn how teachers can get and distribute Minecraft.
 keywords: school, Minecraft, Education Edition, educators, teachers, acquire, distribute
-ms.prod: w10
+ms.prod: windows
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.localizationpriority: medium
 author: dansimp
 searchScope: 
   - Store
-ms.author: dansimp
-ms.date: 01/05/2018
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-manager: dansimp
-ms.topic: conceptual
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
 ---
 
 # For teachers - get Minecraft: Education Edition
-
-**Applies to:**
-
--   Windows 10 
 
 The following article describes how teachers can get and distribute Minecraft: Education Edition. 
 Minecraft: Education Edition is available for anyone to trial, and subscriptions can be purchased by qualified educational institutions directly in the Microsoft Store for Education, via volume licensing agreements and through partner resellers.

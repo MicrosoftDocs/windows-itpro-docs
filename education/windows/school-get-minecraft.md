@@ -2,25 +2,25 @@
 title: For IT administrators get Minecraft Education Edition
 description: Learn how IT admins can get and distribute Minecraft in their schools.
 keywords: Minecraft, Education Edition, IT admins, acquire
-ms.prod: w10
+ms.prod: windows
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.localizationpriority: medium
 author: dansimp
 searchScope: 
   - Store
-ms.author: dansimp
-ms.date: 01/30/2019
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
 ms.topic: conceptual
 ---
 
 # For IT administrators - get Minecraft: Education Edition
-
-**Applies to:**
-
-- Windows 10  
 
 When you sign up for a [Minecraft: Education Edition](https://education.minecraft.net) trial, or purchase a [Minecraft: Education Edition](https://education.minecraft.net) subscription. Minecraft will be added to the inventory in your Microsoft Store for Education which is associated with your Azure Active Directory (Azure AD) tenant. Your Microsoft Store for Education is only displayed to members of your organization.
 
