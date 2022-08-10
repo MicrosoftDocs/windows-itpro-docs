@@ -1,19 +1,19 @@
 ---
 title: Test Windows 10 in S mode on existing Windows 10 education devices
 description: Provides guidance on downloading and testing Windows 10 in S mode for existing Windows 10 education devices.
-ms.prod: w10
+ms.prod: windows
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.date: 07/30/2019
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
 ---
 
 # Test Windows 10 in S mode on existing Windows 10 education devices
-
-**Applies to:**
-- Devices running Windows 10, version 1709: Windows 10 Pro, Windows 10 Pro Education, Windows 10 Education, Windows 10 Enterprise
 
 The Windows 10 in S mode self-installer will allow you to test Windows 10 in S mode on various individual Windows 10 devices (except Windows 10 Home) with a genuine, activated license<sup>[1](#footnote1)</sup>. Test Windows 10 in S mode on various devices in your school and share your feedback with us.
 

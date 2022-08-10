@@ -1,20 +1,18 @@
 ---
 title: Provision student PCs with apps
 description: Learn how to use Configuration Designer to easily provision student devices to join Active Directory.
-ms.prod: w10
+ms.prod: windows
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.date: 10/13/2017
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
 ---
-
 # Provision student PCs with apps
-
-**Applies to:**
-
-- Windows 10
 
 To create and apply a provisioning package that contains apps to a device running all desktop editions of Windows 10 except Windows 10 Home, follow the steps in [Provision PCs with apps](/windows/configuration/provisioning-packages/provision-pcs-with-apps).
 
