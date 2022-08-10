@@ -14,5 +14,5 @@ items:
         tocHref: /education/windows
         topicHref: /education/windows/index
       - name: Windows
-        tocHref: /windows/
+        tocHref: /windows/security/
         topicHref: /education/windows/index
