@@ -4,7 +4,6 @@ items:
 - name: Deploy and manage Windows 11 SE devices in a school
   href: school-deployment/toc.yml
 - name: Deploy and manage Windows devices in a school
-  expanded: true
   items: 
     - name: Deploy Windows 10 in a school
       href: deploy-windows-10-in-a-school.md

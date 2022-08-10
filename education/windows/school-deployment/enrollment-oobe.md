@@ -18,4 +18,19 @@ appliesto:
 - ✅ <b>Windows 11</b>
 ---
 
-# Microsoft Endpoint Manager support
+# Manual OOBE
+
+If you are setting up a Windows 11 SE device individually and network bandwidth is not an issue, you can use the out-of-the-box, first-run setup experience to configure the device, join it to your school’s Azure Active Directory account, and enroll it in Intune.
+
+### Configure, join, and enroll devices
+
+When using OOBE, no advance preparation is needed:
+
+1. Follow the on-screen prompts for region selection, keyboard selection, and network connection. 
+1. Wait for updates. If any updates are available, they will be installed at this time. 
+
+:::image type="content" source="./image14.png" alt-text="Surface Laptop SE loading page" border="true":::
+
+3. When prompted, select **Work or School Account**. This will deploy Windows 11 SE to the device within a few minutes.
+
+:::image type="content" source="./image15.png" alt-text="User sign-in page on Surface Laptop SE" border="true":::

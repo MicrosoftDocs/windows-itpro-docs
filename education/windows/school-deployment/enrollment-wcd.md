@@ -18,4 +18,8 @@ appliesto:
 - ✅ <b>Windows 11</b>
 ---
 
-# Microsoft Endpoint Manager support
+# Windows Configuration Designer
+
+Windows Configuration Designer is especially useful in scenarios where a school needs to provision packages for both bring-you-own devices and school-owned devices. Ideal for small-to-medium schools that manage up to a few hundred devices, Windows Configuration Designer lets you configure devices without imaging. For more information, see [Install Windows Configuration Designer](https://docs.microsoft.com/en-us/windows/configuration/provisioning-packages/provisioning-install-icd), which provides details about the app, its provisioning process, and considerations for its use. 
+
+![Set up device page in Windows Configuration Designer](./image13.png)
