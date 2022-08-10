@@ -1,35 +1,35 @@
 items: 
   - name: Introduction
-    href: school-deployment/index.md
+    href: index.md
   - name: Microsoft Education
-    href: school-deployment/microsoft-education.md
+    href: microsoft-education.md
   - name: Get started
     items: 
       - name: Set up identity management
-        href: school-deployment/identity.md
+        href: identity.md
       - name: Set up device management
-        href: school-deployment/device-management.md
+        href: device-management.md
   - name: Enroll devices in Intune
     items: 
       - name: Overview
-        href: school-deployment/enrollment-overview.md
+        href: enrollment-overview.md
       - name: Enroll devices with Windows Autopilot
-        href: school-deployment/enrollment-autopilot.md
+        href: enrollment-autopilot.md
       - name: Enroll devices with Set up School PCs
-        href: school-deployment/enrollment-suspcs.md
+        href: enrollment-suspcs.md
       - name: Enroll devices with Windows Configuration Designer
-        href: school-deployment/enrollment-wcd.md
+        href: enrollment-wcd.md
       - name: Enroll devices manually
-        href: school-deployment/enrollment-oobe.md
+        href: enrollment-oobe.md
   - name: Manage devices with Intune
     items: 
       - name: Overview
-        href: school-deployment/management-overview.md
+        href: management-overview.md
       - name: Remote actions
-        href: school-deployment/management-remote-actions.md
+        href: management-remote-actions.md
       - name: Device inventory and reporting
-        href: school-deployment/management-inventory-reporting.md
+        href: management-inventory-reporting.md
   - name: Reset and wipe devices
-    href: school-deployment/reset-wipe.md
+    href: reset-wipe.md
   - name: Advanced capabilities
-    href: school-deployment/advanced-capabilities.md
+    href: advanced-capabilities.md
