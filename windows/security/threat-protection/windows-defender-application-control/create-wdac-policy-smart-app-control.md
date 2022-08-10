@@ -76,7 +76,7 @@ At this point, Alice now has a policy that is ready to deploy in audit mode to t
 
 ## Turn off Smart App Control
 
-Smart App Control is only available on clean installation of Windows 11 version 22H2 or later, and starts in evaluation mode. For managed devices, Windows automatically turns off Smart App Control but if you want to enforce this behavior, you can set the **VerifiedAndReputablePolicyState** (DWORD) registry value in `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CI\Policy` to one of the values listed below, and either restart the device or run [RefreshPolicy.exe](https://www.microsoft.com/download/details.aspx?id=102925). Once you turn Smart App Control off, it can't be turned on without resetting or reinstalling Windows.
+Smart App Control is only available on clean installation of Windows 11 version 22H2 or later, and starts in evaluation mode. For managed devices, Windows automatically turns off Smart App Control but if you want to enforce this behavior, you can set the **VerifiedAndReputablePolicyState** (DWORD) registry value under `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CI\Policy` to 0, then either restart the device or run [RefreshPolicy.exe](https://www.microsoft.com/download/details.aspx?id=102925). Once you turn Smart App Control off, it can't be turned on without resetting or reinstalling Windows.
 
 | Value | Description |
 |-------|-------------|
@@ -97,5 +97,5 @@ Set-ItemProperty `
 
 ## More information
 
-- [Prepare to deploy Windows Defender Application Control policies](windows-defender-application-control-deployment-guide.md)
 - [Merge Windows Defender Application Control policies](merge-windows-defender-application-control-policies.md)
+- [Prepare to deploy Windows Defender Application Control policies](windows-defender-application-control-deployment-guide.md)
