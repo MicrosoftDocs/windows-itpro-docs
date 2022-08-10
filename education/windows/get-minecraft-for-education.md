@@ -6,7 +6,6 @@ ms.prod: windows
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.localizationpriority: medium
-author: dansimp
 searchScope: 
   - Store
 ms.collection: education
