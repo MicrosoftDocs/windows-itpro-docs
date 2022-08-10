@@ -13,7 +13,7 @@ ms.date: 08/10/2022
 ms.reviewer: 
 manager: aaroncz
 appliesto:
-- ✅ <b>Windows 10</b>
+- ✅Windows 10
 ---
 # Change history for Windows 10 for Education
 
