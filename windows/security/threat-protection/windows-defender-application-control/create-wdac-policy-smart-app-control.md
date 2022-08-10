@@ -9,6 +9,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 ms.author: vinpa
 manager: aaroncz
+ms.reviewer: jogeurte
 ms.collection: highpri
 ---
 
@@ -27,7 +28,7 @@ As described in [common Windows Defender Application Control deployment scenario
 
 **Alice Pena** is the IT team lead tasked with the rollout of WDAC.
 
-## Create a custom policy using an example WDAC base policy
+## Create a custom policy using an example WDAC policy
 
 Alice previously created a policy for the organization's fully managed end-user devices. She now wants to use WDAC to implement Smart App Control. Alice follows these steps to create an Audit policy:
 
@@ -59,7 +60,7 @@ Alice previously created a policy for the organization's fully managed end-user 
     Set-RuleOption -FilePath $LamnaPolicy -Option 3 # Audit Mode
     ```
 
-1. If appropriate, add more signer or file rules to further customize the policy for your organization or use [Merge-CIPolicy](/powershell/module/configci/merge-cipolicy) to merge this policy with your existing WDC policy.
+1. If appropriate, add more signer or file rules to further customize the policy for your organization or use [Merge-CIPolicy](/powershell/module/configci/merge-cipolicy) to merge this policy with your existing WDAC policy.
 
 1. Use [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy) to convert the Windows Defender Application Control policy to a binary format:
 
