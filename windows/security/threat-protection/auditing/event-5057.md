@@ -17,7 +17,7 @@ ms.technology: windows-sec
 # 5057(F): A cryptographic primitive operation failed.
 
 
-This event generates in case of CNG primitive operation failure.
+This event generates if there's a CNG primitive operation failure.
 
 For more information about Cryptographic Next Generation (CNG) visit these pages:
 
@@ -27,9 +27,9 @@ For more information about Cryptographic Next Generation (CNG) visit these pages
 
 -   <https://www.microsoft.com/download/details.aspx?id=30688>
 
-This event is mainly used for Cryptographic Next Generation (CNG) troubleshooting.
+This event is used for Cryptographic Next Generation (CNG) troubleshooting.
 
-There is no example of this event in this document.
+There's no example of this event in this document.
 
 ***Subcategory:***&nbsp;[Audit System Integrity](audit-system-integrity.md)
 

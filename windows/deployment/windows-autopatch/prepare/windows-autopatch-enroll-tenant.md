@@ -99,6 +99,9 @@ Within the Readiness assessment tool, you'll now see the **Enroll** button. By s
 
 Once these actions are complete, you've now successfully enrolled your tenant.
 
+> [!NOTE]
+> For more information about changes made to your tenant, see [Changes made at tenant enrollment](../references/windows-autopatch-changes-to-tenant.md).
+
 ### Delete data collected from the Readiness assessment tool
 
 You can choose to delete the data we collect directly within the Readiness assessment tool.

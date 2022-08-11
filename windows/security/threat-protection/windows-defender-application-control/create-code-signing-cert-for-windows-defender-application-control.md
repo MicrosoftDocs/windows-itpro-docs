@@ -1,6 +1,6 @@
 ---
 title: Create a code signing cert for Windows Defender Application Control (Windows)
-description: Learn how to set up a publicly-issued code signing certificate, so you can sign catalog files or WDAC policies internally.
+description: Learn how to set up a publicly issued code signing certificate, so you can sign catalog files or WDAC policies internally.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: m365-security
@@ -29,11 +29,11 @@ ms.technology: windows-sec
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
-As you deploy Windows Defender Application Control (WDAC), you might need to sign catalog files or WDAC policies internally. To do this, you will either need a publicly issued code signing certificate or an internal CA. If you have purchased a code signing certificate, you can skip this topic and instead follow other topics listed in the [Windows Defender Application Control Deployment Guide](windows-defender-application-control-deployment-guide.md). 
+As you deploy Windows Defender Application Control (WDAC), you might need to sign catalog files or WDAC policies internally. To do this signature, you'll either need a publicly issued code signing certificate or an internal CA. If you've purchased a code-signing certificate, you can skip this topic and instead follow other topics listed in the [Windows Defender Application Control Deployment Guide](windows-defender-application-control-deployment-guide.md). 
 
 If you have an internal CA, complete these steps to create a code signing certificate. 
 Only RSA algorithm is supported for the code signing certificate, and signatures must be PKCS 1.5 padded. 
-ECDSA is not supported.
+ECDSA isn't supported.
 
 1.  Open the Certification Authority Microsoft Management Console (MMC) snap-in, and then select your issuing CA.
 
@@ -75,7 +75,7 @@ When this certificate template has been created, you must publish it to the CA p
 
     Figure 3. Select the new certificate template to issue
 
-    A list of available templates to issue appears, including the template you just created.
+    A list of available templates to issue appears, including the template you created.
 
 2.  Select the WDAC Catalog signing certificate, and then click **OK**.
 
@@ -100,7 +100,7 @@ Now that the template is available to be issued, you must request one from the c
 >[!NOTE]
 >If a certificate manager is required to approve any issued certificates and you selected to require management approval on the template, the request will need to be approved in the CA before it will be issued to the client.
 
-This certificate must be installed in the user's personal store on the computer that will be signing the catalog files and code integrity policies. If the signing is going to be taking place on the computer on which you just requested the certificate, exporting the certificate to a .pfx file will not be required because it already exists in your personal store. If you are signing on another computer, you will need to export the .pfx certificate with the necessary keys and properties. To do so, complete the following steps:
+This certificate must be installed in the user's personal store on the computer that will be signing the catalog files and code integrity policies. If the signing is going to be taking place on the computer on which you just requested the certificate, exporting the certificate to a .pfx file won't be required because it already exists in your personal store. If you're signing on another computer, you'll need to export the .pfx certificate with the necessary keys and properties. To do so, complete the following steps:
 
 1.  Right-click the certificate, point to **All Tasks**, and then click **Export**.
 

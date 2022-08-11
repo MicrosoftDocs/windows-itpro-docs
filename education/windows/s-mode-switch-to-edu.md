@@ -4,14 +4,17 @@ description: Switching out of Windows 10 Pro in S mode to Windows 10 Pro Educati
 keywords: Windows 10 S switch, S mode Switch, switch in S mode, Switch S mode, Windows 10 Pro Education in S mode, S mode, system requirements, Overview, Windows 10 Pro in S mode, Education, EDU
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.prod: w10
+ms.prod: windows
 ms.sitesec: library
 ms.pagetype: edu
-ms.date: 12/03/2018
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-author: dansimp
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
 ---
 
 # Switch to Windows 10 Pro Education in S mode from Windows 10 Pro in S mode

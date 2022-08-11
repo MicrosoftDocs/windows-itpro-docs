@@ -38,11 +38,11 @@ The design team's strategy for determining how WMI and security group filters at
 
 ### Configure communication between members and devices
 
-Decide what communication is to be allowed between members of each of the zones in the isolated domain and devices that are not part of the isolated domain or members of the isolated domain's exemption list.
+Decide what communication is to be allowed between members of each of the zones in the isolated domain and devices that aren't part of the isolated domain or members of the isolated domain's exemption list.
 
 ### Exempt domain controllers from IPsec authentication requirements
 
-It is recommended that domain controllers are exempt from IPsec authentication requirements. If they are not exempt and authentication fails, then domain clients might not be able to receive Group Policy updates to the IPsec connection security rules from the domain controllers.
+It's recommended that domain controllers are exempt from IPsec authentication requirements. If they aren't exempt and authentication fails, then domain clients might not be able to receive Group Policy updates to the IPsec connection security rules from the domain controllers.
 
 ### Configure IPsec authentication rules
 
@@ -58,7 +58,7 @@ For all devices to communicate with each other, they must share a common set of:
 
 -   Quick mode data integrity algorithms
 
-If at least one set of each does not match between two devices, then the devices cannot successfully communicate.
+If at least one set of each doesn't match between two devices, then the devices can't successfully communicate.
 
 ## Deploy your Windows Firewall Design Plan
 

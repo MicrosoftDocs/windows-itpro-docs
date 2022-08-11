@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - Update
 description: The Policy CSP - Update allows the IT admin, when used with Update/ActiveHoursStart, to manage a range of active hours where update reboots aren't scheduled.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 06/15/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ms.collection: highpri
 ---
 
@@ -3253,10 +3253,7 @@ The table below shows the applicability of Windows:
 
 <!--/Scope-->
 <!--Description-->
-> [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education.
-
-Enables the IT admin to schedule the time of the update installation.
+Enables the IT admin to schedule the time of the update installation. Note that there is a window of approximately 30 minutes to allow for higher success rates of installation.
 
 The supported data type is an integer.
 

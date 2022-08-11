@@ -2,12 +2,12 @@
 title: WindowsAutopilot CSP
 description: Learn how without the ability to mark a device as remediation required, the device will remain in a broken state, which results in security and privacy concerns in Autopilot.
 ms.reviewer: 
-manager: dansimp
-ms.author: v-nsatapathy
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 05/09/2022
 ---
 

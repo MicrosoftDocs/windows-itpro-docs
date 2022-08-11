@@ -45,13 +45,13 @@ To create an outbound port rule
 
 5.  On the **Program** page, click **All programs**, and then click **Next**.
 
-6.  On the **Protocol and Ports** page, select the protocol type that you want to block. To restrict the rule to a specified port number, you must select either **TCP** or **UDP**. Because this is an outbound rule, you typically configure only the remote port number.
+6.  On the **Protocol and Ports** page, select the protocol type that you want to block. To restrict the rule to a specified port number, you must select either **TCP** or **UDP**. Because this rule is an outbound rule, you typically configure only the remote port number.
 
-    If you select another protocol, then only packets whose protocol field in the IP header match this rule are blocked by Windows Defender Firewall. Network traffic for protocols is allowed as long as other rules that match do not block it.
+    If you select another protocol, then only packets whose protocol field in the IP header matches this rule are blocked by Windows Defender Firewall. Network traffic for protocols is allowed as long as other rules that match don't block it.
 
     To select a protocol by its number, select **Custom** from the list, and then type the number in the **Protocol number** box.
 
-    When you have configured the protocols and ports, click **Next**.
+    When you've configured the protocols and ports, click **Next**.
 
 7.  On the **Scope** page, you can specify that the rule applies only to network traffic to or from the IP addresses entered on this page. Configure as appropriate for your design, and then click **Next**.
 
