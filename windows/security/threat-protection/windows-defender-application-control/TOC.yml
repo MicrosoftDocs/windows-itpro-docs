@@ -54,8 +54,6 @@
                   href: create-initial-default-policy.md
                 - name: Create a WDAC deny list policy
                   href: create-wdac-deny-policy.md
-                - name: Create a WDAC policy for Smart App Control
-                  href: create-wdac-policy-smart-app-control.md
                 - name: Microsoft recommended block rules
                   href: microsoft-recommended-block-rules.md
                 - name: Microsoft recommended driver block rules

@@ -46,15 +46,27 @@ Windows 10 and Windows 11 include two technologies that can be used for applicat
 - **Windows Defender Application Control (WDAC)**; and
 - **AppLocker**
 
-## In this section
+## WDAC and Smart App Control
 
-| Article | Description |
-| --- | --- |
-| [WDAC and AppLocker Overview](wdac-and-applocker-overview.md) | This article describes the decisions you need to make to establish the processes for managing and maintaining WDAC policies. |
-| [WDAC and AppLocker Feature Availability](feature-availability.md) | This article lists the design questions, possible answers, and ramifications of the decisions when you plan a deployment of application control policies. |
+Starting in Windows 11 version 22H2, [Smart App Control](https://support.microsoft.com/topic/what-is-smart-app-control-285ea03d-fa88-4d56-882e-6698afdb7003) provides application control for consumers. Smart App Control is based on WDAC, allowing enterprise customers to create a policy that offers the same security and compatibility with the ability to customize it to run line-of-business (LOB) apps. To make it easier to implement this policy, an [example policy](example-wdac-base-policies.md) is provided, which can be used as a starting point for [creating your own policy](create-wdac-policy-for-lightly-managed-devices.md).
+
+> [!NOTE]
+> The example policy includes some settings that aren't supported for WDAC enterprise policies. These settings can be identified by searching for `WindowsLockdownPolicySettings` in `SmartAppControl.xml`.
+
+Smart App Control is only available on clean installation of Windows 11 version 22H2 or later, and starts in evaluation mode. Smart App Control will automatically turn off for enterprise managed devices unless the user has turned it on first. To turn Smart App Control on or off across your organization's endpoints, you can set the **VerifiedAndReputablePolicyState** (DWORD) registry value under `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CI\Policy` to one of the values listed below. After you change the registry value, you must either restart the device or run [RefreshPolicy.exe](https://www.microsoft.com/download/details.aspx?id=102925) for the change to take effect.
+
+| Value | Description |
+|-------|-------------|
+| 0     | Off         |
+| 1     | Enforce     |
+| 2     | Evaluation  |
+
+> [!IMPORTANT]
+> Once you turn Smart App Control off, it can't be turned on without resetting or reinstalling Windows.
 
 ## Related articles
 
 - [WDAC design guide](windows-defender-application-control-design-guide.md)
 - [WDAC deployment guide](windows-defender-application-control-deployment-guide.md)
+- [WDAC operational guide](windows-defender-application-control-operational-guide.md)
 - [AppLocker overview](applocker/applocker-overview.md)
