@@ -2,19 +2,22 @@
 title: Smart Card Architecture (Windows)
 description: This topic for the IT professional describes the system architecture that supports smart cards in the Windows operating system.
 ms.prod: m365-security
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 09/24/2021
-ms.reviewer: 
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Smart Card Architecture
-
-Applies To: Windows 10, Windows 11, Windows Server 2016 and above
 
 This topic for the IT professional describes the system architecture that supports smart cards in the Windows operating system, including credential provider architecture and the smart card subsystem architecture.
 

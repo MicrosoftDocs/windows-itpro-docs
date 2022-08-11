@@ -3,17 +3,15 @@ title: Scripts for Certificate Issuance Policies in Windows Defender Credential 
 description:  Obtain issuance policies from the certificate authority for Windows Defender Credential Guard on Windows.
 ms.prod: m365-security
 ms.localizationpriority: medium
-author: dulcemontemayor
-ms.author: dansimp
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.date: 08/17/2017
-ms.reviewer: 
 ---
 
 # Windows Defender Credential Guard: Scripts for Certificate Authority Issuance Policies
-
 
 Here is a list of scripts mentioned in this topic.
 

@@ -3,22 +3,21 @@ title: Windows Defender Credential Guard protection limits & mitigations (Window
 description: Scenarios not protected by Windows Defender Credential Guard in Windows, and additional mitigations you can use.
 ms.prod: m365-security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.date: 08/17/2017
-ms.reviewer: 
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Windows Defender Credential Guard protection limits and mitigations
-
-**Applies to**
-- Windows 10
-- Windows 11
-- Windows Server 2016
-- Windows Server 2019
 
 Prefer video? See [Credentials protected by Windows Defender Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=pdc37LJyC_1204300474)
 in the Deep Dive into Windows Defender Credential Guard video series.

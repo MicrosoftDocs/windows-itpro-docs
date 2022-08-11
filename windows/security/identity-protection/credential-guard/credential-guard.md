@@ -1,28 +1,27 @@
 ---
 title: Protect derived domain credentials with Windows Defender Credential Guard (Windows)
 description: Windows Defender Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them.
-ms.reviewer: 
 ms.prod: m365-security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
 ms.collection:
   - M365-identity-device-management
   - highpri
 ms.topic: article
 ms.date: 03/10/2022
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Protect derived domain credentials with Windows Defender Credential Guard
 
-**Applies to**
-- Windows 10
-- Windows 11
-- Windows Server 2016
-- Windows Server 2019
-
-Introduced in Windows 10 Enterprise and Windows Server 2016, Windows Defender Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. Unauthorized access to these secrets can lead to credential theft attacks, such as Pass-the-Hash or Pass-The-Ticket. Windows Defender Credential Guard prevents these attacks by protecting NTLM password hashes, Kerberos Ticket Granting Tickets, and credentials stored by applications as domain credentials.
+Windows Defender Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. Unauthorized access to these secrets can lead to credential theft attacks, such as Pass-the-Hash or Pass-The-Ticket. Windows Defender Credential Guard prevents these attacks by protecting NTLM password hashes, Kerberos Ticket Granting Tickets, and credentials stored by applications as domain credentials.
 
 By enabling Windows Defender Credential Guard, the following features and solutions are provided:
 

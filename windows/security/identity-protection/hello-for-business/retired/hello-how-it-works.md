@@ -2,12 +2,11 @@
 title: How Windows Hello for Business works (Windows)
 description: Learn about registration, authentication, key material, and infrastructure for Windows Hello for Business.
 ms.prod: m365-security
-author: mapalko
 ms.localizationpriority: high
-ms.author: mapalko
+author: paolomatarazzo
+ms.author: paoloma
 ms.date: 10/16/2017
-ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ms.topic: article
 appliesto:
 - ✅ <b>Windows 10</b>

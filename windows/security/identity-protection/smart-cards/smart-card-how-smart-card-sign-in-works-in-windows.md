@@ -2,20 +2,24 @@
 title: How Smart Card Sign-in Works in Windows
 description: This topic for IT professional provides links to resources about the implementation of smart card technologies in the Windows operating system.
 ms.prod: m365-security
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
 ms.collection:
   - M365-identity-device-management
   - highpri
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 09/24/2021
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # How Smart Card Sign-in Works in Windows
-
-Applies To: Windows 10, Windows 11, Windows Server 2016 and above
 
 This topic for IT professional provides links to resources about the implementation of smart card technologies in the Windows operating system. It includes the following resources about the architecture, certificate management, and services that are related to smart card use:
 

@@ -1,26 +1,25 @@
 ---
 title: User Account Control security policy settings (Windows)
 description: You can use security policies to configure how User Account Control works in your organization.
-ms.reviewer: 
 ms.prod: m365-security
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
 ms.collection:
   - M365-identity-device-management
   - highpri
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 09/24/2021
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # User Account Control security policy settings
-
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
-    
 
 You can use security policies to configure how User Account Control works in your organization. They can be configured locally by using the Local Security Policy snap-in (secpol.msc) or configured for the domain, OU, or specific groups by Group Policy.
 
