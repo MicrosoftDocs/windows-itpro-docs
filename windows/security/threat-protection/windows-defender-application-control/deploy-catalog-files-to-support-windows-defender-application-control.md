@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
-ms.reviewer: isbrahm
+ms.reviewer: jgeurten
 ms.author: dansimp
 manager: dansimp
 ms.date: 02/28/2018
@@ -49,7 +49,9 @@ To create a catalog file, you use a tool called **Package Inspector**. You must 
 
 2.  Start Package Inspector, and then start scanning a local drive, for example, drive C:
 
-    `PackageInspector.exe Start C:`
+    ```powershell
+    PackageInspector.exe Start C:
+    ```
 
     > [!NOTE]
     > Package inspector can monitor installations on any local drive. Specify the appropriate drive on the local computer.
@@ -77,13 +79,12 @@ To create a catalog file, you use a tool called **Package Inspector**. You must 
 
     For the last command, which stops Package Inspector, be sure to type the drive letter of the drive you have been scanning, for example, C:.  
 
-    `$ExamplePath=$env:userprofile+"\Desktop"`
-
-    `$CatFileName=$ExamplePath+"\LOBApp-Contoso.cat"`
-
-    `$CatDefName=$ExamplePath+"\LOBApp.cdf"`
-
-    `PackageInspector.exe Stop C: -Name $CatFileName -cdfpath $CatDefName`
+    ```powershell
+    $ExamplePath=$env:userprofile+"\Desktop"
+    $CatFileName=$ExamplePath+"\LOBApp-Contoso.cat"
+    $CatDefName=$ExamplePath+"\LOBApp.cdf"
+    PackageInspector.exe Stop C: -Name $CatFileName -cdfpath $CatDefName
+    ```
 
 >[!NOTE]
 >Package Inspector catalogs the hash values for each discovered binary file. If the applications that were scanned are updated, complete this process again to trust the new binaries' hash values.
@@ -125,15 +126,18 @@ To sign the existing catalog file, copy each of the following commands into an e
 
 1. Initialize the variables that will be used. Replace the *$ExamplePath* and *$CatFileName* variables as needed:
 
-   `$ExamplePath=$env:userprofile+"\Desktop"`
-    
-   `$CatFileName=$ExamplePath+"\LOBApp-Contoso.cat"`
+   ```powershell
+    $ExamplePath=$env:userprofile+"\Desktop"
+    $CatFileName=$ExamplePath+"\LOBApp-Contoso.cat"
+    ```
 
 2. Import the code signing certificate that will be used to sign the catalog file. Import it to the signing user's personal store. 
 
 3. Sign the catalog file with Signtool.exe:
 
-   `<path to signtool.exe> sign /n "ContosoDGSigningCert" /fd sha256 /v $CatFileName`
+   ```powershell
+    <path to signtool.exe> sign /n "ContosoDGSigningCert" /fd sha256 /v $CatFileName
+    ```
 
    >[!NOTE]
    >The *&lt;Path to signtool.exe&gt;* variable should be the full path to the Signtool.exe utility. *ContosoDGSigningCert* represents the subject name of the certificate that you will use to sign the catalog file. This certificate should be imported to your personal certificate store on the computer on which you are attempting to sign the catalog file.
@@ -156,16 +160,20 @@ After the catalog file is signed, add the signing certificate to a WDAC policy, 
 
 1.  If you have not already verified the catalog file digital signature, right-click the catalog file, and then click **Properties**. On the **Digital Signatures** tab, verify that your signing certificate exists with the algorithm you expect.
 
-2.  If you already have an XML policy file that you want to add the signing certificate to, skip to the next step. Otherwise, use [New-CIPolicy](/powershell/module/configci/new-cipolicy) to create a Windows Defender Application Control policy that you will later merge into another policy (not deploy as-is). This example creates a policy called **CatalogSignatureOnly.xml** in the location **C:\\PolicyFolder**:
+2.  If you already have an XML policy file that you want to add the signing certificate to, skip to the next step. Otherwise, use [New-CIPolicy](/powershell/module/configci/new-cipolicy) to create a Windows Defender Application Control policy that you will later merge into another policy (not deploy as-is). This example creates a policy called **CatalogSignatureOnly.xml** in the location **C:\\PolicyFolder** by scanning the system and allowlisting by signer and original filename:
 
-    `New-CIPolicy -Level PcaCertificate -FilePath C:\PolicyFolder\CatalogSignatureOnly.xml –UserPEs`
+    ```powershell
+    New-CIPolicy -Level FilePublisher -FilePath C:\PolicyFolder\CatalogSignatureOnly.xml –UserPEs -MultiplePolicyFormat -Fallback SignedVersion,Publisher,Hash
+    ```
 
     > [!NOTE]
     > Include the **-UserPEs** parameter to ensure that the policy includes user mode code integrity.
 
-3.  Use [Add-SignerRule](/powershell/module/configci/add-signerrule) to add the signing certificate to the WDAC policy, filling in the correct path and filenames for `<policypath>` and `<certpath>`:
+3.  Use [Add-SignerRule](/powershell/module/configci/add-signerrule) to add the signing certificate to the WDAC policy, filling in the correct path and filenames for `<policypath>` and `<certificate_path>`:
 
-    `Add-SignerRule -FilePath <policypath> -CertificatePath <certpath> -User`
+    ```powershell
+    Add-SignerRule -FilePath <policypath> -CertificatePath <certificate_path> -User
+    ```
 
 If you used step 2 to create a new WDAC policy, and want information about merging policies together, see [Merge Windows Defender Application Control policies](merge-windows-defender-application-control-policies.md).  
 
