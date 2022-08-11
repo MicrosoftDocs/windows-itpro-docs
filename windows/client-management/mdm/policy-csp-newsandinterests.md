@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - NewsAndInterests
 description: Learn how Policy CSP - NewsandInterests contains a list of news and interests.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - NewsAndInterests

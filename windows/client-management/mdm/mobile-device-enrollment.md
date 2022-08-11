@@ -2,12 +2,12 @@
 title: Mobile device enrollment
 description: Learn how  mobile device enrollment verifies that only authenticated and authorized devices can be managed by their enterprise.
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 08/11/2017
 ms.collection: highpri
 ---

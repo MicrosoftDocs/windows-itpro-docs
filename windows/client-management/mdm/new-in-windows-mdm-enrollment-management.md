@@ -1,16 +1,16 @@
 ---
 title: What's new in MDM enrollment and management
 description: Discover what's new and breaking changes in Windows 10 and Windows 11 mobile device management (MDM) enrollment and management experience across all Windows 10 devices.
-MS-HAID:
-- 'p\_phdevicemgmt.mdm\_enrollment\_and\_management\_overview'
-- 'p\_phDeviceMgmt.new\_in\_windows\_mdm\_enrollment\_management'
+MS-HAID: 
+  - 'p\_phdevicemgmt.mdm\_enrollment\_and\_management\_overview'
+  - 'p\_phDeviceMgmt.new\_in\_windows\_mdm\_enrollment\_management'
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 10/20/2020
 ---

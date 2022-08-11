@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - Connectivity
 description: Learn how to use the Policy CSP - Connectivity setting to allow the user to enable Bluetooth or restrict access.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer:
-manager: dansimp
+ms.reviewer: 
+manager: aaroncz
 ---
 
 # Policy CSP - Connectivity
