@@ -3,7 +3,7 @@ title: Create a provisioning package (Windows 10/11)
 description: Learn how to create a provisioning package for Windows 10/11, which lets you quickly configure a device without having to install a new image.
 ms.prod: w10
 author: aczechowski
-ms.author: aaroncz
+ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: gkomatsu

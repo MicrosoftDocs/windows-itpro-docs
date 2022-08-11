@@ -1,12 +1,12 @@
 ---
 title: Configure Windows 10 taskbar (Windows 10)
-description: Administrators can pin more apps to the taskbar and remove default pinned apps from the taskbar by adding a section to a layout modification XML file. 
-keywords: ["taskbar layout","pin apps"]
+description: Administrators can pin more apps to the taskbar and remove default pinned apps from the taskbar by adding a section to a layout modification XML file.
+keywords: [taskbar layout, pin apps]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: aczechowski
-ms.author: aaroncz
+ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 01/18/2018

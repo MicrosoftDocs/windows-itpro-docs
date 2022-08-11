@@ -1,9 +1,9 @@
 ---
 title: Provision PCs with apps and certificates (Windows 10)
-description: Create a provisioning package to apply settings to a PC running Windows 10. 
+description: Create a provisioning package to apply settings to a PC running Windows 10.
 ms.prod: w10
 author: aczechowski
-ms.author: aaroncz
+ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/27/2017

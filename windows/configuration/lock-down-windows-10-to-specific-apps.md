@@ -4,7 +4,7 @@ description: Learn how to configure a kiosk device running Windows 10 so that us
 ms.prod: w10
 ms.technology: windows
 author: aczechowski
-ms.author: aaroncz
+ms.author: lizlong
 manager: dougeby
 ms.reviewer: sybruckm
 ms.localizationpriority: medium

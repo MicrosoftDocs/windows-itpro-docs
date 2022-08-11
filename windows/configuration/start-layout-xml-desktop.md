@@ -3,7 +3,7 @@ title: Start layout XML for desktop editions of Windows 10 (Windows 10)
 description: This article describes the options for customizing Start layout in LayoutModification.xml for Windows 10 desktop editions.
 ms.prod: w10
 author: aczechowski
-ms.author: aaroncz
+ms.author: lizlong
 ms.topic: article
 ms.date: 10/02/2018
 ms.reviewer: 

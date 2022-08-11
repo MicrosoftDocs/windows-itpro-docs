@@ -2,7 +2,7 @@
 title: Supported CSP policies to customize the Taskbar on Windows 11 | Microsoft Docs
 description: See a list of the Policy CSP - Start items that are supported on Windows 11 to customize the Taskbar.
 manager: dougeby
-ms.author: aaroncz
+ms.author: lizlong
 ms.reviewer: chataylo
 ms.prod: w11
 author: aczechowski

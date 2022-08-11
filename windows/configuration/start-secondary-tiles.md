@@ -4,7 +4,7 @@ description: Add app tiles on Windows 10 that's a secondary tile.
 ms.prod: w10
 ms.localizationpriority: medium
 author: aczechowski
-ms.author: aaroncz
+ms.author: lizlong
 ms.topic: article
 ms.reviewer: 
 manager: dougeby

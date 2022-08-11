@@ -6,7 +6,7 @@ manager: dougeby
 ms.prod: w10
 author: aczechowski
 ms.localizationpriority: medium
-ms.author: aaroncz
+ms.author: lizlong
 ms.topic: article
 ms.collection: highpri
 ---

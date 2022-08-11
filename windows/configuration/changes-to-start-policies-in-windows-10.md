@@ -5,7 +5,7 @@ ms.reviewer:
 manager: dougeby
 ms.prod: w10
 author: aczechowski
-ms.author: aaroncz
+ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 11/28/2017

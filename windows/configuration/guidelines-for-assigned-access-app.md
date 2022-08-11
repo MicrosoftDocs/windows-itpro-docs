@@ -1,13 +1,13 @@
 ---
 title: Guidelines for choosing an app for assigned access (Windows 10/11)
 description: The following guidelines may help you choose an appropriate Windows app for your assigned access experience.
-keywords: ["kiosk", "lockdown", "assigned access"]
+keywords: [kiosk, lockdown, assigned access]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: aczechowski
 ms.localizationpriority: medium
-ms.author: aaroncz
+ms.author: lizlong
 ms.topic: article
 ms.reviewer: sybruckm
 manager: dougeby

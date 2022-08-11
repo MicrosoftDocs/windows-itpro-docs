@@ -7,7 +7,7 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: gkomatsu
 manager: dougeby
-ms.author: aaroncz
+ms.author: lizlong
 ---
 
 # Create a provisioning package with multivariant settings
