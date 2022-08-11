@@ -2,23 +2,21 @@
 title: Windows Hello for Business Deployment Guide - On Premises Certificate Trust Deployment
 description: A guide to on premises, certificate trust Windows Hello for Business deployment.
 ms.prod: m365-security
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
-ms.reviewer: 
+author: paolomatarazzo
+ms.author: paoloma
+ms.reviewer: prsriva
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>On-premises deployments</b>
+- ✅ <b>Certificate trust/b>
 ---
 # On Premises Certificate Trust Deployment
-
-**Applies to**
-
-- Windows 10, version 1703 or later
-- Windows 11
-- On-premises deployment
-- Certificate trust
 
 Windows Hello for Business replaces username and password sign-in to Windows with authentication using an asymmetric key pair. This deployment guide provides the information you'll need to successfully deploy Windows Hello for Business in an existing environment.  
 

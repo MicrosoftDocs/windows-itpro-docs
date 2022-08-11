@@ -8,9 +8,10 @@ metadata:
   ms.sitesec: library
   ms.pagetype: security, mobile
   audience: ITPro
-  author: GitPrakhar13
-  ms.author: prsriva
-  manager: dansimp
+  author: paolomatarazzo
+  ms.author: paoloma
+  manager: aaroncz
+  ms.reviewer: prsriva
   ms.collection:
     - M365-identity-device-management
     - highpri

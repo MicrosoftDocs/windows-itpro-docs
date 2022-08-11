@@ -3,22 +3,20 @@ title: Windows Hello for Business Overview (Windows)
 ms.reviewer: An overview of Windows Hello for Business
 description: Learn how Windows Hello for Business replaces passwords with strong two-factor authentication on PCs and mobile devices in Windows 10 and Windows 11.
 ms.prod: m365-security
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
+ms.reviewer: prsriva
 ms.collection:
   - M365-identity-device-management
   - highpri
 ms.topic: conceptual
 localizationpriority: medium
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
 ---
-
 # Windows Hello for Business Overview
-
-**Applies to**
-
-- Windows 10
-- Windows 11
 
 In Windows 10, Windows Hello for Business replaces passwords with strong two-factor authentication on devices. This authentication consists of a new type of user credential that is tied to a device and uses a biometric or PIN.
 

@@ -9,13 +9,11 @@ ms.date: 10/16/2017
 ms.reviewer: 
 manager: dansimp
 ms.topic: article
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b> 
 ---
 # How Windows Hello for Business works in Windows devices
-
-**Applies to**
-
-- Windows 10
-- Windows 11
 
 Windows Hello for Business requires a registered device. When the device is set up, its user can use the device to authenticate to services. This topic explains how device registration works, what happens when a user requests authentication, how key material is stored and processed, and which servers and infrastructure components are involved in different parts of this process.
 
