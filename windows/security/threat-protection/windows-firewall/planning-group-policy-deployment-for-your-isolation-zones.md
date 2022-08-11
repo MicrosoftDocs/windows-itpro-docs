@@ -1,24 +1,26 @@
 ---
 title: Planning Group Policy Deployment for Your Isolation Zones (Windows)
 description: Learn how to plan a group policy deployment for your isolation zones after you determine the best logical design for your isolation environment.
-ms.reviewer: 
-ms.author: dansimp
+ms.reviewer: jekrynit
+ms.author: paoloma
 ms.prod: m365-security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: paolomatarazzo
+manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021
 ms.technology: windows-sec
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Planning Group Policy Deployment for Your Isolation Zones
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 After you've decided on the best logical design of your isolation environment for the network and device security requirements, you can start the implementation plan.
 

@@ -1,24 +1,26 @@
 ---
 title: Determining the Trusted State of Your Devices (Windows)
 description: Learn how to define the trusted state of devices in your enterprise to help design your strategy for using Windows Defender Firewall with Advanced Security.
-ms.reviewer: 
-ms.author: dansimp
+ms.reviewer: jekrynit
+ms.author: paoloma
 ms.prod: m365-security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: paolomatarazzo
+manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/07/2021
 ms.technology: windows-sec
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Determining the Trusted State of Your Devices
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 After obtaining information about the devices that are currently part of the IT infrastructure, you must determine at what point a device is considered trusted. The term *trusted* can mean different things to different people. Therefore, you must communicate a firm definition for it to all stakeholders in the project. Failure to do this communication can lead to problems with the security of the trusted environment, because the overall security can't exceed the level of security set by the least secure client that achieves trusted status.
 

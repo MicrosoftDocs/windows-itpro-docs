@@ -1,24 +1,26 @@
 ---
 title: Planning Certificate-based Authentication (Windows)
 description: Learn how a device unable to join an Active Directory domain can still participate in an isolated domain by using certificate-based authentication.
-ms.reviewer: 
-ms.author: dansimp
+ms.reviewer: jekrynit
+ms.author: paoloma
 ms.prod: m365-security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: paolomatarazzo
+manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021
 ms.technology: windows-sec
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Planning Certificate-based Authentication
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 Sometimes a device can't join an Active Directory domain, and therefore can't use Kerberos V5 authentication with domain credentials. However, the device can still participate in the isolated domain by using certificate-based authentication.
 
