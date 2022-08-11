@@ -35,7 +35,7 @@ Surface Laptop SE with Windows 11 SE can be managed with Intune for Education, e
 From enrollment, through configuration and protection, to resetting, Intune for Education helps school IT administrators manage and optimize the devices across school settings:
 
 - **Enroll.** To enable remote device management as the IT administrator, you need to enroll devices through an account in your tenant. Some methods require you to initiate enrollment, while others require students to complete the initial device setup process. This cookbook discusses the facets of various device enrollment methods.
-- ![The device lifecycle for Surface Laptop SE devices](./image2.png)
+![The device lifecycle for Surface Laptop SE devices](./images/device-lifecycle.png)
 - **Protect.** In addition to its configuration capabilities, Intune for Education helps protect managed devices from unauthorized access or malicious attacks. For example, adding an extra layer of authentication with Windows Hello can make devices more secure. Policies are available that let you control settings for Windows Firewall, Endpoint Protection, and software updates.
 - **Reset.** When it’s time to repurpose a device, Intune for Education offers several methods, including resetting the device, removing it from management, and wiping it of school data. In this cookbook, we cover these and other device return and exchange scenarios. 
 

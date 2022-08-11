@@ -2,22 +2,21 @@
 title: Set up Take a Test on a single PC
 description: Learn how to set up and use the Take a Test app on a single PC.
 keywords: take a test, test taking, school, set up on single PC
-ms.prod: w10
+ms.prod: windows
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.date: 11/08/2017
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
 ---
-
 # Set up Take a Test on a single PC
-**Applies to:**
-
--   Windows 10  
 
 To configure [Take a Test](take-tests-in-windows-10.md) on a single PC, follow the guidance in this topic.
 

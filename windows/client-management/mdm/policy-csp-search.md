@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - Search
 description: Learn how the Policy CSP - Search setting allows search and Cortana to search cloud sources like OneDrive and SharePoint.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 02/12/2021
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - Search

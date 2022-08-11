@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - Licensing
 description: Use the Policy CSP - Licensing setting to enable or disable Windows license reactivation on managed devices.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - Licensing

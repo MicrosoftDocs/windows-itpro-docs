@@ -2,12 +2,12 @@
 title: Get seat
 description: The Get seat operation retrieves the information about an active seat for a specified user in the Microsoft Store for Business.
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 09/18/2017
 ---
 

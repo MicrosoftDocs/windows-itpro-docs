@@ -5,11 +5,11 @@ keywords: Long-Term Servicing Channel, LTSC, LTSB, General Availability Channel,
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: vinaypamnani-msft
+ms.author: vinpa
 ms.date: 04/30/2018
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ms.topic: troubleshooting
 ---
 

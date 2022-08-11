@@ -6,13 +6,14 @@ ms.prod: windows
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.localizationpriority: medium
-author: dansimp
 searchScope: 
   - Store
-ms.author: dansimp
-ms.date: 01/30/2019
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ms.topic: conceptual
 appliesto:
 - ✅ <b>Windows 10</b>
@@ -21,7 +22,11 @@ appliesto:
 
 # For IT administrators - get Minecraft: Education Edition
 
+<<<<<<< HEAD
 When you sign up for a [Minecraft: Education Edition](https://education.minecraft.net) trial, or purchase a [Minecraft: Education Edition](https://education.minecraft.net) subscription, Minecraft will be added to the inventory in your Microsoft Store for Education.
+=======
+When you sign up for a [Minecraft: Education Edition](https://education.minecraft.net) trial, or purchase a [Minecraft: Education Edition](https://education.minecraft.net) subscription. Minecraft will be added to the inventory in your Microsoft Store for Education which is associated with your Azure Active Directory (Azure AD) tenant. Your Microsoft Store for Education is only displayed to members of your organization.
+>>>>>>> 7384d73079b6660831304d152c5fa4ab460dc00f
 
 >[!Note]
 >If you don't have an Azure AD tenant, you can set up a free Office 365 Education subscription when you request Minecraft: Education Edition. For more information, see [Office 365 Education plans and pricing](https://products.office.com/academic/compare-office-365-education-plans).

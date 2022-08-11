@@ -5,12 +5,12 @@ MS-HAID:
   - 'p\_phdevicemgmt.certificate\_renewal'
   - 'p\_phDeviceMgmt.certificate\_renewal\_windows\_mdm'
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
 

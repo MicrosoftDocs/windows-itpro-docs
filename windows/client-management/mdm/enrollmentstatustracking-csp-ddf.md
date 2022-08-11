@@ -1,11 +1,11 @@
 ---
 title: EnrollmentStatusTracking DDF
 description: View the OMA DM DDF for the EnrollmentStatusTracking configuration service provider. DDF files are used only with OMA DM provisioning XML.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 05/17/2019
 ---
 
