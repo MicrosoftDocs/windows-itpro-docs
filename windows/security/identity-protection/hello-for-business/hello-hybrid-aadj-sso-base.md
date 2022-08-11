@@ -17,7 +17,7 @@ appliesto:
 - ✅ <b>Windows 11</b>
 - ✅ <b>Azure Active Directory-join</b>
 - ✅ <b>Hybrid Deployment</b>
-- ✅ <b>Key trust model</b>
+- ✅ <b>Key trust</b>
 ---
 # Configure Azure AD-joined devices for On-premises Single-Sign On using Windows Hello for Business
 ## Prerequisites

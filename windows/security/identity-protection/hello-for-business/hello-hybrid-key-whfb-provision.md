@@ -10,15 +10,13 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 4/30/2021
----
-# Hybrid Azure AD joined Windows Hello for Business Key Trust Provisioning
 appliesto:
 - ✅ <b>Windows 10</b>
 - ✅ <b>Windows 11</b>
 - ✅ <b>Hybrid deployment</b>
 - ✅ <b>Key trust</b>
-
-
+---
+# Hybrid Azure AD joined Windows Hello for Business Key Trust Provisioning
 ## Provisioning
 
 The Windows Hello for Business provisioning begins immediately after the user has signed in, after the user profile is loaded, but before the user receives their desktop.  Windows only launches the provisioning experience if all the prerequisite checks pass. You can determine the status of the prerequisite checks by viewing the **User Device Registration** in the **Event Viewer** under **Applications and Services Logs\Microsoft\Windows**.

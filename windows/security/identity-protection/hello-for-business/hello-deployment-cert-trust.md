@@ -14,7 +14,7 @@ appliesto:
 - ✅ <b>Windows 10</b>
 - ✅ <b>Windows 11</b>
 - ✅ <b>On-premises deployments</b>
-- ✅ <b>Certificate trust/b>
+- ✅ <b>Certificate trust</b>
 ---
 # On Premises Certificate Trust Deployment
 

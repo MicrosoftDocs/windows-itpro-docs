@@ -10,6 +10,9 @@ ms.collection: M365-identity-device-management
 ms.topic: conceptual
 localizationpriority: medium
 ms.date: 05/24/2022
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
 ---
 
 # Password-less strategy

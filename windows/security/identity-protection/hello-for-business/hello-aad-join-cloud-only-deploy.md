@@ -10,6 +10,9 @@ author: paolomatarazzo
 ms.author: paoloma
 ms.reviewer: prsriva
 manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
 ---
 # Azure Active Directory join cloud only deployment
 

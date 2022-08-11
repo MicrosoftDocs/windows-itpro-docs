@@ -14,7 +14,7 @@ appliesto:
 - ✅ <b>Windows 10</b>
 - ✅ <b>Windows 11</b>
 - ✅ <b>On-premises deployments</b>
-- ✅ <b>Certificate trust/b>
+- ✅ <b>Certificate trust</b>
 ---
 # Validate and Configure Public Key Infrastructure - Certificate Trust Model
 

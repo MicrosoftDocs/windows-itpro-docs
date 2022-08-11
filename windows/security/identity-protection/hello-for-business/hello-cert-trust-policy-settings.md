@@ -16,7 +16,7 @@ appliesto:
 - ✅ <b>Windows 10</b>
 - ✅ <b>Windows 11</b>
 - ✅ <b>On-premises deployments</b>
-- ✅ <b>Certificate trust/b>
+- ✅ <b>Certificate trust</b>
 ---
 # Configure Windows Hello for Business Policy settings - Certificate Trust
 

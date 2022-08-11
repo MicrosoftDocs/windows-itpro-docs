@@ -14,7 +14,7 @@ appliesto:
 - ✅ <b>Windows 10</b>
 - ✅ <b>Windows 11</b>
 - ✅ <b>On-premises deployments</b>
-- ✅ <b>Certificate trust/b>
+- ✅ <b>Certificate trust</b>
 ---
 # Prepare and Deploy Windows Server 2016 Active Directory Federation Services - Certificate Trust
 

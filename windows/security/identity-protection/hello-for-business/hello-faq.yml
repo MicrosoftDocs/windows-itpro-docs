@@ -18,11 +18,12 @@ metadata:
   ms.topic: faq
   localizationpriority: medium
   ms.date: 02/21/2022
+  appliesto:
+  - ✅ <b>Windows 10</b>
+  - ✅ <b>Windows 11</b>
 
 title: Windows Hello for Business Frequently Asked Questions (FAQ)
 summary: |
-  Applies to: Windows 10
-  
 
 sections:
   - name: Ignored

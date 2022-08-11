@@ -15,7 +15,7 @@ appliesto:
 - ✅ <b>Windows 11</b>
 - ✅ <b>Azure AD-join</b>
 - ✅ <b>Hybrid Deployment</b>
-- ✅ <b>Certificate trust model</b>
+- ✅ <b>Certificate trust</b>
 ---
 
 # Using Certificates for AADJ On-premises Single-sign On
