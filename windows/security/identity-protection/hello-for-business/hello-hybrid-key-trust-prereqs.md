@@ -9,16 +9,13 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 4/30/2021
-ms.reviewer: 
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Hybrid deployment</b>
+- ✅ <b>Key trust</b>
 ---
 # Hybrid Azure AD joined Key trust Windows Hello for Business Prerequisites
-
-**Applies to**
-
-- Windows 10, version 1703 or later
-- Windows 11
-- Hybrid deployment
-- Key trust
 
 Hybrid environments are distributed systems that enable organizations to use on-premises and Azure-based identities and resources. Windows Hello for Business uses the existing distributed system as a foundation on which organizations can provide two-factor authentication that provides a single sign-in like experience to modern resources.
 

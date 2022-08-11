@@ -2,12 +2,12 @@
 title: Language Pack Management CSP
 description: Language Pack Management CSP allows a direct way to provision language packs remotely in Windows 10.
 ms.reviewer: 
-manager: dansimp
-ms.author: v-nsatapathy
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nimishasatapathy
+author: vinaypamnani-msft
 ms.date: 06/22/2021
 ---
 

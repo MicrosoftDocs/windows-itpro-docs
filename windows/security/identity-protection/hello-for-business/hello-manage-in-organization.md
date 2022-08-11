@@ -2,23 +2,22 @@
 title: Manage Windows Hello in your organization (Windows)
 description: You can create a Group Policy or mobile device management (MDM) policy that will implement Windows Hello for Business on devices running Windows 10.
 ms.prod: m365-security
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
+ms.reviewer: prsriva
 ms.collection:
   - M365-identity-device-management
   - highpri
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 2/15/2022
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
 ---
 
 # Manage Windows Hello for Business in your organization
-
-**Applies to**
-
-- Windows 10
-- Windows 11
 
 You can create a Group Policy or mobile device management (MDM) policy that will implement Windows Hello on devices running Windows 10.
 

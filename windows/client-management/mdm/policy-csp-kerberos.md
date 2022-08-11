@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - Kerberos
 description: Define the list of trusting forests that the Kerberos client searches when attempting to resolve two-part service principal names (SPNs).
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - Kerberos

@@ -1,16 +1,16 @@
 ---
 title: Enterprise settings, policies, and app management
 description: The DM client manages the interaction between a device and a server. Learn more about the client-server management workflow.
-MS-HAID:
-- 'p\_phdevicemgmt.enterprise\_settings\_\_policies\_\_and\_app\_management'
-- 'p\_phDeviceMgmt.windows\_mdm\_enterprise\_settings'
+MS-HAID: 
+  - 'p\_phdevicemgmt.enterprise\_settings\_\_policies\_\_and\_app\_management'
+  - 'p\_phDeviceMgmt.windows\_mdm\_enterprise\_settings'
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
 

@@ -2,24 +2,21 @@
 title: Configure Windows Hello for Business Policy settings - key trust
 description: Configure Windows Hello for Business Policy settings for Windows Hello for Business
 ms.prod: m365-security
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
+ms.reviewer: prsriva
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
-ms.reviewer: 
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>On-premises deployment</b>
+- ✅ <b>Key trust</b>
 ---
 # Configure Windows Hello for Business Policy settings - Key Trust
-
-**Applies to**
-
-- Windows 10, version 1703 or later
-- Windows 11
-- On-premises deployment
-- Key trust
-
 
 You need at least a Windows 10, version 1703 workstation to run the Group Policy Management Console, which provides the latest Windows Hello for Business and PIN Complexity Group Policy settings.  To run the Group Policy Management Console, you need to install the Remote Server Administration Tools for Windows. You can download these tools from [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=45520).
 Install the Remote Server Administration Tools for Windows on a computer running Windows 10, version 1703 or later.
