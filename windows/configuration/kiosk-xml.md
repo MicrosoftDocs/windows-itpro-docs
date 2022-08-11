@@ -2,7 +2,7 @@
 title: Assigned Access configuration kiosk XML reference (Windows 10/11)
 description: Learn about the assigned access configuration (kiosk) for XML and XSD for kiosk device configuration in Windows 10/11.
 ms.reviewer: sybruckm
-manager: dougeby
+manager: aaroncz
 ms.prod: w10
 author: aczechowski
 ms.localizationpriority: medium

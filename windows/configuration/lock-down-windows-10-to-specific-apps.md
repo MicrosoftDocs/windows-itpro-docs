@@ -5,7 +5,7 @@ ms.prod: w10
 ms.technology: windows
 author: aczechowski
 ms.author: lizlong
-manager: dougeby
+manager: aaroncz
 ms.reviewer: sybruckm
 ms.localizationpriority: medium
 ms.topic: how-to

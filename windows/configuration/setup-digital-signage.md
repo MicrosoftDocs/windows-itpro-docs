@@ -2,7 +2,7 @@
 title: Set up digital signs on Windows 10/11
 description: A single-use device such as a digital sign is easy to set up in Windows 10 and Windows 11 (Pro, Enterprise, and Education).
 ms.reviewer: sybruckm
-manager: dougeby
+manager: aaroncz
 ms.author: lizlong
 ms.prod: w10
 author: aczechowski

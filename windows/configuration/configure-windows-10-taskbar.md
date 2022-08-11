@@ -11,7 +11,7 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.date: 01/18/2018
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.collection: highpri
 ---
 # Configure Windows 10 taskbar

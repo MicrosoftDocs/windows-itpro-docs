@@ -7,7 +7,7 @@ ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: gkomatsu
-manager: dougeby
+manager: aaroncz
 ms.collection: highpri
 ---
 

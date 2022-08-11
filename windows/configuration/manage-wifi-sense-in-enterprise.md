@@ -2,7 +2,7 @@
 title: Manage Wi-Fi Sense in your company (Windows 10)
 description: Wi-Fi Sense automatically connects you to Wi-Fi, so you can get online quickly in more places.
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.author: lizlong
 ms.prod: w10
 author: aczechowski

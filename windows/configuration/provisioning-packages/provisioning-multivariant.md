@@ -6,7 +6,7 @@ author: aczechowski
 ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: gkomatsu
-manager: dougeby
+manager: aaroncz
 ms.author: lizlong
 ---
 

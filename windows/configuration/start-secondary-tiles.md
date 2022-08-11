@@ -7,7 +7,7 @@ author: aczechowski
 ms.author: lizlong
 ms.topic: article
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ---
 
 # Add image for secondary Microsoft Edge tiles 

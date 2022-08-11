@@ -7,7 +7,7 @@ ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: gkomatsu
-manager: dougeby
+manager: aaroncz
 ---
 
 # Windows Configuration Designer command-line interface (reference)

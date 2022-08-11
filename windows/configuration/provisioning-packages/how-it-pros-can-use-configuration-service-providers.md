@@ -2,7 +2,7 @@
 title: Configuration service providers for IT pros (Windows 10/11)
 description: Describes how IT pros and system administrators can use configuration service providers (CSPs) to configure devices.
 ms.reviewer: gkomatsu
-manager: dougeby
+manager: aaroncz
 ms.prod: w10
 author: aczechowski
 ms.author: lizlong

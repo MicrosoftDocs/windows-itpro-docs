@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.author: lizlong
 ms.topic: article
 ms.reviewer: sybruckm
-manager: dougeby
+manager: aaroncz
 ms.collection: highpri
 ---
 

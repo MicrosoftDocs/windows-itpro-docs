@@ -6,7 +6,7 @@ ms.author: lizlong
 author: aczechowski
 ms.localizationpriority: medium
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.topic: troubleshooting
 ms.collection: highpri
 ---

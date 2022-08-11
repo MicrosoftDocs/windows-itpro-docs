@@ -1,7 +1,7 @@
 ---
 title: Supported CSP policies to customize Start menu on Windows 11 | Microsoft Docs
 description: See a list of the Policy CSP - Start items that are supported on Windows 11 to customize the Start menu.
-manager: dougeby
+manager: aaroncz
 ms.author: lizlong
 ms.reviewer: ericpapa
 ms.prod: w11

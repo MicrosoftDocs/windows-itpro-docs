@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 ms.author: lizlong
 ms.topic: article
 ms.reviewer: gkomatsu
-manager: dougeby
+manager: aaroncz
 ---
 
 # Provision PCs with apps 

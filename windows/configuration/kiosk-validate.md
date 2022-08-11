@@ -2,7 +2,7 @@
 title: Validate kiosk configuration (Windows 10/11)
 description: In this article, learn what to expect on a multi-app kiosk in Windows 10/11 Pro, Enterprise, and Education.
 ms.reviewer: sybruckm
-manager: dougeby
+manager: aaroncz
 ms.author: lizlong
 ms.prod: w10
 author: aczechowski

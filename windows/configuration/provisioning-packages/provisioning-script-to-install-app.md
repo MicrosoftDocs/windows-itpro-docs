@@ -7,7 +7,7 @@ ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: gkomatsu
-manager: dougeby
+manager: aaroncz
 ---
 
 # Use a script to install a desktop app in provisioning packages

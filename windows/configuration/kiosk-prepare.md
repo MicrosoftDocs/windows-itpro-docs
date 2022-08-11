@@ -2,7 +2,7 @@
 title: Prepare a device for kiosk configuration on Windows 10/11 | Microsoft Docs
 description: Learn how to prepare a device for kiosk configuration. Also, learn about the recommended kiosk configuration changes.
 ms.reviewer: sybruckm
-manager: dougeby
+manager: aaroncz
 ms.author: lizlong
 ms.prod: w10
 author: aczechowski
