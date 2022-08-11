@@ -5,7 +5,7 @@ ms.prod: m365-security
 author: paolomatarazzo
 ms.date: 03/22/2022
 manager: aaroncz
-ms.author: paolomatarazzo
+ms.author: paoloma
 appliesto:
 - ✅ <b>Windows 10</b>
 - ✅ <b>Windows 11</b>

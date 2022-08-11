@@ -6,7 +6,7 @@ author: paolomatarazzo
 ms.localizationpriority: medium
 ms.date: 08/23/2021
 manager: aaroncz
-ms.author: paolomatarazzo
+ms.author: paoloma
 appliesto:
 - ✅ <b>Windows 10</b>
 - ✅ <b>Windows 11</b>
