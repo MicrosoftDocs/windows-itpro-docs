@@ -2,11 +2,11 @@
 title: Enable or block Windows Mixed Reality apps in the enterprise (Windows 10/11)
 description: Learn how to enable Windows Mixed Reality apps in WSUS or block the Windows Mixed Reality portal in enterprises.
 ms.reviewer: 
-manager: dougeby
+author: nicholasswhite
+ms.author: nwhite
+manager: aaroncz
 ms.prod: w10
 ms.localizationpriority: medium
-author: aczechowski
-ms.author: aaroncz
 ms.topic: article
 ---
 
@@ -58,7 +58,7 @@ IT admins can also create [Side by side feature store (shared folder)](/previous
 
 You can use the [AppLocker configuration service provider (CSP)](/windows/client-management/mdm/applocker-csp) to block the Mixed Reality software.
 
-In the following example, the **Id** can be any generated GUID and the **Name** can be any name you choose. Note that `BinaryName="*"` allows you to block any app executable in the Mixed Reality Portal package. **Binary/VersionRange**, as shown in the example, will block all versions of the Mixed Reality Portal app.
+In the following example, the **Id** can be any generated GUID and the **Name** can be any name you choose. `BinaryName="*"` allows you to block any app executable in the Mixed Reality Portal package. **Binary/VersionRange**, as shown in the example, will block all versions of the Mixed Reality Portal app.
 
 ```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
