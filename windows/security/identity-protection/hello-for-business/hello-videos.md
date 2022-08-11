@@ -10,7 +10,6 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 07/26/2022
-ms.reviewer: paoloma
 appliesto:
 - ✅ <b>Windows 10</b>
 - ✅ <b>Windows 11</b>
