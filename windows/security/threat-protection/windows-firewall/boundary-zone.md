@@ -2,28 +2,30 @@
 title: Boundary Zone (Windows)
 description: Learn how a boundary zone supports devices that must receive traffic from beyond an isolated domain in Windows Defender Firewall with Advanced Security.
 ms.assetid: ed98b680-fd24-44bd-a7dd-26c522e45a20
-ms.reviewer: 
-ms.author: dansimp
+ms.reviewer: jekrynit
+ms.author: paoloma
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: paolomatarazzo
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/07/2021
 ms.technology: windows-sec
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Boundary Zone
-
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above 
+ 
 
 In most organizations, some devices can receive network traffic from devices that aren't part of the isolated domain, and therefore can't authenticate. To accept communications from untrusted devices, create a boundary zone within your isolated domain.
 

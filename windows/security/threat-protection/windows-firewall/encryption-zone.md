@@ -1,24 +1,26 @@
 ---
 title: Encryption Zone (Windows)
 description: Learn how to create an encryption zone to contain devices that host sensitive data and require that the sensitive network traffic be encrypted.
-ms.reviewer: 
-ms.author: dansimp
+ms.reviewer: jekrynit
+ms.author: paoloma
 ms.prod: m365-security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: paolomatarazzo
+manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021
 ms.technology: windows-sec
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Encryption Zone
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 Some servers in the organization host data that's sensitive, including medical, financial, or other personal data. Government or industry regulations might require that this sensitive information must be encrypted when it's transferred between devices.
 
