@@ -1,16 +1,16 @@
 ---
 title: Disconnecting from the management infrastructure (unenrollment)
 description: Disconnecting is initiated either locally by the user using a phone or remotely by the IT admin using management server.
-MS-HAID:
-- 'p\_phdevicemgmt.disconnecting\_from\_the\_management\_infrastructure\_\_unenrollment\_'
-- 'p\_phDeviceMgmt.disconnecting\_from\_mdm\_unenrollment'
+MS-HAID: 
+  - 'p\_phdevicemgmt.disconnecting\_from\_the\_management\_infrastructure\_\_unenrollment\_'
+  - 'p\_phDeviceMgmt.disconnecting\_from\_mdm\_unenrollment'
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
 

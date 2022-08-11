@@ -2,12 +2,12 @@
 title: RootCATrustedCertificates CSP
 description: Learn how the RootCATrustedCertificates configuration service provider (CSP) enables the enterprise to set the Root Certificate Authority (CA) certificates.
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 03/06/2018
 ---
 

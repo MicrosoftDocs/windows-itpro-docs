@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - ADMX_ExternalBoot
 description: Learn about the Policy CSP - ADMX_ExternalBoot.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nimishasatapathy
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/13/2021
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_ExternalBoot

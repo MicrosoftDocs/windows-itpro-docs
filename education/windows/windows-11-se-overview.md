@@ -1,24 +1,21 @@
 ---
 title: What is Windows 11 SE
 description: Learn more about Windows 11 SE, and the apps that are included with the operating system. Read about the features IT professionals and administrators should know about Windows 11 SE. Add and deploy your apps using Microsoft Intune for Education.
-ms.prod: w10
+ms.prod: windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-ms.localizationpriority: medium
-ms.topic: article
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 11 SE</b>
 ---
 
 # Windows 11 SE for Education
-
-**Applies to**:
-
-- Windows 11 SE
-- Microsoft Intune for Education
 
 Windows 11 SE is a new edition of Windows that's designed for education. It runs on web-first devices that use essential education apps. Microsoft Office 365 is preinstalled (subscription sold separately).
 

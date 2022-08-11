@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - ADMX_StartMenu
 description: Learn about Policy CSP - ADMX_StartMenu.
-ms.author: dansimp
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 10/20/2020
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_StartMenu

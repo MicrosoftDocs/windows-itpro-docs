@@ -2,17 +2,19 @@
 title: Change history for Windows 10 for Education (Windows 10)
 description: New and changed topics in Windows 10 for Education
 keywords: Windows 10 education documentation, change history
-ms.prod: w10
+ms.prod: windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
-author: dansimp
-ms.author: dansimp
-ms.date: 05/21/2019
+ms.collection: education
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/10/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
 ---
-
 # Change history for Windows 10 for Education
 
 This topic lists new and updated topics in the [Windows 10 for Education](index.md) documentation.

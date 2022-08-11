@@ -2,12 +2,12 @@
 title: DevDetail CSP
 description: Learn how the DevDetail configuration service provider handles the management object. This CSP provides device-specific parameters to the OMA DM server.
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 03/27/2020
 ---
 
