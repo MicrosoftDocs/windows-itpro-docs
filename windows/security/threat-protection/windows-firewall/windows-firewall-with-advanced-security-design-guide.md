@@ -1,24 +1,26 @@
 ---
 title: Windows Defender Firewall with Advanced Security design guide (Windows)
 description: Learn about common goals for using Windows Defender Firewall with Advanced Security to choose or create a design for deploying the firewall in your enterprise.
-ms.reviewer: 
-ms.author: dansimp
+ms.reviewer: jekrynit
+ms.author: paoloma
 ms.prod: m365-security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: paolomatarazzo
+manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021
 ms.technology: windows-sec
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Windows Defender Firewall with Advanced Security design guide
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 Windows Defender Firewall with Advanced Security is a host firewall that helps secure the device in two ways. First, it can filter the network traffic permitted to enter the device from the network, and also control what network traffic the device is allowed to send to the network. Second, Windows Defender Firewall supports IPsec, which enables you to require authentication from any device that is attempting to communicate with your device. When authentication is required, devices that can't authenticate can't communicate with your device. By using IPsec, you can also require that specific network traffic be encrypted to prevent it from being read or intercepted while in transit between devices.
 
