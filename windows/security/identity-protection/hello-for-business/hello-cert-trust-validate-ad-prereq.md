@@ -2,23 +2,21 @@
 title: Update Active Directory schema for cert-trust deployment (Windows Hello for Business)
 description: How to Validate Active Directory prerequisites for Windows Hello for Business when deploying with the certificate trust model.
 ms.prod: m365-security
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
-ms.reviewer: 
+author: paolomatarazzo
+ms.author: paoloma
+ms.reviewer: prsriva
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>On-premises deployments</b>
+- ✅ <b>Certificate trust</b>
 ---
 # Validate Active Directory prerequisites for cert-trust deployment
-
-**Applies to**
-
-- Windows 10, version 1703 or later
-- Windows 11
-- On-premises deployment
-- Certificate trust
 
 The key registration process for the on-premises deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory or later schema. The key-trust model receives the schema extension when the first Windows Server 2016 or later domain controller is added to the forest. The certificate trust model requires manually updating the current schema to the Windows Server 2016 or later schema. 
 

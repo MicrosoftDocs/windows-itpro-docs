@@ -2,14 +2,14 @@
 title: Microsoft-compatible security key 
 description: Learn how a Microsoft-compatible security key for Windows is different (and better) than any other FIDO2 security key.
 ms.prod: m365-security
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
+ms.reviewer: prsriva
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 11/14/2018
-ms.reviewer: 
 ---
 # What is a Microsoft-compatible security key?
 

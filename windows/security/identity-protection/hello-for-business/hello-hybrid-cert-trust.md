@@ -2,23 +2,21 @@
 title: Hybrid Certificate Trust Deployment (Windows Hello for Business)
 description: Learn the information you need to successfully deploy Windows Hello for Business in a hybrid certificate trust scenario.
 ms.prod: m365-security
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
+ms.reviewer: prsriva
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 09/08/2017
-ms.reviewer: 
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Hybrid deployment</b>
+- ✅ <b>Certificate trust</b>
 ---
 # Hybrid Azure AD joined Certificate Trust Deployment
-
-**Applies to**
-
-- Windows 10, version 1703 or later
-- Windows 11
-- Hybrid deployment
-- Certificate trust
 
 Windows Hello for Business replaces username and password sign-in to Windows with strong user authentication based on asymmetric key pair. The following deployment guide provides the information needed to successfully deploy Windows Hello for Business in a hybrid certificate trust scenario.
 
