@@ -3,9 +3,9 @@ title: Set up a multi-app kiosk on Windows 10
 description: Learn how to configure a kiosk device running Windows 10 so that users can only run a few specific apps.
 ms.prod: w10
 ms.technology: windows
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
+author: lizgt2000
+ms.author: lizlong
+manager: aaroncz
 ms.reviewer: sybruckm
 ms.localizationpriority: medium
 ms.topic: how-to
