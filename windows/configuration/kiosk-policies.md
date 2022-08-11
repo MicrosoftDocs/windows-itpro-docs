@@ -2,11 +2,11 @@
 title: Policies enforced on kiosk devices (Windows 10/11)
 description: Learn about the policies enforced on a device when you configure it as a kiosk.
 ms.reviewer: sybruckm
-manager: dougeby
+manager: aaroncz
 ms.prod: w10
-author: aczechowski
+author: lizgt2000
 ms.localizationpriority: medium
-ms.author: aaroncz
+ms.author: lizlong
 ms.topic: article
 ---
 

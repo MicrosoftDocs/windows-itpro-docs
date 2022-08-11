@@ -2,7 +2,7 @@
 title: Interactive Logon Message text (Windows 10)
 description: Learn about best practices, security considerations and more for the security policy setting, Interactive logon Message text for users attempting to log on.
 ms.assetid: fcfe8a6d-ca65-4403-b9e6-2fa017a31c2e
-ms.reviewer: 
+ms.reviewer:
 ms.author: dansimp
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -32,9 +32,7 @@ The **Interactive logon: Message text for users attempting to log on** and [Inte
 
 **Interactive logon: Message text for users attempting to log on** specifies a text message to be displayed to users when they sign in.
 
-**Interactive logon: Message title for users attempting to log on** specifies a title to appear in the title bar of the window that contains the text message. This text is often used for legal reasons—for example, to warn users about the ramifications of misusing company information, or to warn them that their actions might be audited.
-
-Not using this warning-message policy setting leaves your organization legally vulnerable to trespassers who unlawfully penetrate your network. Legal precedents have established that organizations that display warnings to users who connect to their servers over a network have a higher rate of successfully prosecuting trespassers.
+**Interactive logon: Message title for users attempting to log on** specifies a title to appear in the title bar of the window that contains the text message. This text is often used for legal reasons, for example, to warn users about the ramifications of misusing company information or to warn them that their actions may be audited.
 
 When these policy settings are configured, users will see a dialog box before they can sign in to the server console.
 

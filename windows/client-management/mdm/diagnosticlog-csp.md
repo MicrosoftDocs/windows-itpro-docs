@@ -2,12 +2,12 @@
 title: DiagnosticLog CSP
 description: Learn about the feature areas of the DiagnosticLog configuration service provider (CSP), including the DiagnosticLog area and Policy area.
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 11/19/2019
 ---
 

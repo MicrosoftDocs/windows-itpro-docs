@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - ADMX_DiskDiagnostic
 description: Learn about Policy CSP - ADMX_DiskDiagnostic.
-ms.author: dansimp
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nimishasatapathy
+author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_DiskDiagnostic

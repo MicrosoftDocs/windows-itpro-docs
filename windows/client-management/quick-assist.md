@@ -5,9 +5,9 @@ ms.prod: w10
 ms.topic: article
 ms.technology: windows
 ms.localizationpriority: medium
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
+author: vinaypamnani-msft
+ms.author: vinpa
+manager: aaroncz
 ms.reviewer: pmadrigal
 ms.collection: highpri
 ---

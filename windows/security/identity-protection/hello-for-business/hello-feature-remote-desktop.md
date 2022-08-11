@@ -2,14 +2,14 @@
 title: Remote Desktop
 description: Learn how Windows Hello for Business supports using biometrics with remote desktop
 ms.prod: m365-security
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
+ms.reviewer: prsriva
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 02/24/2021
-ms.reviewer: 
 ---
 
 # Remote Desktop

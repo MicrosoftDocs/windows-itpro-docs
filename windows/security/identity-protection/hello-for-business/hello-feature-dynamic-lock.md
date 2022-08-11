@@ -2,21 +2,20 @@
 title: Dynamic lock
 description: Learn how to set Dynamic lock on Windows 10 and Windows 11 devices, by configuring group policies. This feature locks a device when a Bluetooth signal falls below a set value.
 ms.prod: m365-security
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
+ms.reviewer: prsriva
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 07/12/2022
-ms.reviewer: 
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
 ---
 
 # Dynamic lock
-
-**Requirements:**
-
-* Windows 10, version 1703 or later
 
 Dynamic lock enables you to configure Windows devices to automatically lock when Bluetooth paired device signal falls below the maximum Received Signal Strength Indicator (RSSI) value. This makes it more difficult for someone to gain access to your device if you step away from your PC and forget to lock it.
 

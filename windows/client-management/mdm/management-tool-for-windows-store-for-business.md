@@ -1,16 +1,16 @@
 ---
 title: Management tool for the Microsoft Store for Business
 description: The Microsoft Store for Business has a new web service designed for the enterprise to acquire, manage, and distribute applications in bulk.
-MS-HAID:
-- 'p\_phdevicemgmt.business\_store\_portal\_management\_tool'
-- 'p\_phDeviceMgmt.management\_tool\_for\_windows\_store\_for\_business'
+MS-HAID: 
+  - 'p\_phdevicemgmt.business\_store\_portal\_management\_tool'
+  - 'p\_phDeviceMgmt.management\_tool\_for\_windows\_store\_for\_business'
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 10/27/2017
 ---
 

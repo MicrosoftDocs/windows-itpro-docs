@@ -3,12 +3,12 @@ title: EnterpriseDataProtection CSP
 description: Learn how the EnterpriseDataProtection configuration service provider (CSP) configures Windows Information Protection (formerly, Enterprise Data Protection) settings.
 ms.assetid: E2D4467F-A154-4C00-9208-7798EF3E25B3
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 08/09/2017
 ---
 

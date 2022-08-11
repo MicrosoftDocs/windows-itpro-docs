@@ -2,12 +2,12 @@
 title: DMAcc CSP
 description: Learn how the DMAcc configuration service provider (CSP) allows an OMA Device Management (DM) version 1.2 server to handle OMA DM account objects.
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
 

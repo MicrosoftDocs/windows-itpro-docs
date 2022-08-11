@@ -2,10 +2,10 @@
 title: Changes to Group Policy settings for Windows 10 Start menu (Windows 10)
 description: Learn about changes to Group Policy settings for the Windows 10 Start menu. Also, learn about the new Windows 10 Start experience.
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.prod: w10
-author: aczechowski
-ms.author: aaroncz
+author: lizgt2000
+ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 11/28/2017

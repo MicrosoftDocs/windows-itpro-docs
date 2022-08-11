@@ -2,24 +2,21 @@
 title: Validate Public Key Infrastructure - certificate trust model (Windows Hello for Business)
 description: How to Validate Public Key Infrastructure for Windows Hello for Business, under a certificate trust model.
 ms.prod: m365-security
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
-ms.reviewer: 
+author: paolomatarazzo
+ms.author: paoloma
+ms.reviewer: prsriva
+manager: aaroncz
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>On-premises deployments</b>
+- ✅ <b>Certificate trust</b>
 ---
 # Validate and Configure Public Key Infrastructure - Certificate Trust Model
-
-**Applies to**
-
-- Windows 10, version 1703 or later
-- Windows 11
-- On-premises deployment
-- Certificate trust
-
 
 Windows Hello for Business must have a public key infrastructure regardless of the deployment or trust model.  All trust models depend on the domain controllers having a certificate.  The certificate serves as a root of trust for clients to ensure they are not communicating with a rogue domain controller.  The certificate trust model extends certificate issuance to client computers.  During Windows Hello for Business provisioning, the user receives a sign-in certificate.
 
