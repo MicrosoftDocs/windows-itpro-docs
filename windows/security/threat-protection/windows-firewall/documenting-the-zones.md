@@ -1,24 +1,26 @@
 ---
 title: Documenting the Zones (Windows)
 description: Learn how to document the zone placement of devices in your design for Windows Defender Firewall with Advanced Security.
-ms.reviewer: 
-ms.author: dansimp
+ms.reviewer: jekrynit
+ms.author: paoloma
 ms.prod: m365-security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: paolomatarazzo
+manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/07/2021
 ms.technology: windows-sec
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Documenting the Zones
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 Generally, the task of determining zone membership isn't complex, but it can be time-consuming. Use the information generated during the [Designing a Windows Defender Firewall with Advanced Security Strategy](designing-a-windows-firewall-with-advanced-security-strategy.md) section of this guide to determine the zone in which to put each host. You can document this zone placement by adding a Group column to the inventory table shown in the Designing a Windows Defender Firewall with Advanced Security Strategy section. A sample is shown here:
 
