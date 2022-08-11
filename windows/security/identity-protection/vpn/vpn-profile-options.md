@@ -5,6 +5,7 @@ manager: aaroncz
 ms.prod: m365-security
 author: paolomatarazzo
 ms.author: paoloma
+ms.reviewer: pesmith
 ms.localizationpriority: medium
 ms.date: 05/17/2018
 appliesto:

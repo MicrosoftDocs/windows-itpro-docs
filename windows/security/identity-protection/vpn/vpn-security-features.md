@@ -7,6 +7,7 @@ ms.localizationpriority: medium
 ms.date: 07/21/2022
 manager: aaroncz
 ms.author: paoloma
+ms.reviewer: pesmith
 appliesto:
 - ✅ <b>Windows 10</b>
 - ✅ <b>Windows 11</b>

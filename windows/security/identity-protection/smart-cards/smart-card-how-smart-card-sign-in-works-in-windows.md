@@ -4,6 +4,7 @@ description: This topic for IT professional provides links to resources about th
 ms.prod: m365-security
 author: paolomatarazzo
 ms.author: paoloma
+ms.reviewer: ardenw
 manager: aaroncz
 ms.collection:
   - M365-identity-device-management

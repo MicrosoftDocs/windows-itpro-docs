@@ -8,6 +8,7 @@ ms.date: 09/23/2021
 author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz
+ms.reviewer: pesmith
 appliesto:
 - ✅ <b>Windows 10</b>
 - ✅ <b>Windows 11</b>

@@ -4,6 +4,7 @@ description: Discover the Group Policy, registry key, local security policy, and
 ms.prod: m365-security
 author: paolomatarazzo
 ms.author: paoloma
+ms.reviewer: ardenw
 manager: aaroncz
 ms.collection: M365-identity-device-management
 ms.topic: article

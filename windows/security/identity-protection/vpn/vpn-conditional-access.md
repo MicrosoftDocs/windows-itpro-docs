@@ -4,6 +4,7 @@ description: Learn how to integrate the VPN client with the Conditional Access P
 ms.prod: m365-security
 author: paolomatarazzo
 ms.author: paoloma
+ms.reviewer: pesmith
 manager: aaroncz
 ms.localizationpriority: medium
 ms.date: 09/23/2021

@@ -4,6 +4,7 @@ description: User Account Control (UAC) is a fundamental component of Microsoft'
 ms.prod: m365-security
 author: paolomatarazzo
 ms.author: paoloma
+ms.reviewer: sulahiri
 manager: aaroncz
 ms.collection:
   - M365-identity-device-management

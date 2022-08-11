@@ -6,6 +6,7 @@ author: paolomatarazzo
 ms.date: 03/22/2022
 manager: aaroncz
 ms.author: paoloma
+ms.reviewer: pesmith
 appliesto:
 - ✅ <b>Windows 10</b>
 - ✅ <b>Windows 11</b>

@@ -4,6 +4,7 @@ description: Learn about the Windows smart card infrastructure for physical smar
 ms.prod: m365-security
 author: paolomatarazzo
 ms.author: paoloma
+ms.reviewer: ardenw
 manager: aaroncz
 ms.collection: M365-identity-device-management
 ms.topic: article

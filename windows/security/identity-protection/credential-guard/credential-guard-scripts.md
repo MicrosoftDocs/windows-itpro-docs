@@ -5,6 +5,7 @@ ms.prod: m365-security
 ms.localizationpriority: medium
 author: paolomatarazzo
 ms.author: paoloma
+ms.reviewer: erikdau
 manager: aaroncz
 ms.collection: M365-identity-device-management
 ms.topic: article

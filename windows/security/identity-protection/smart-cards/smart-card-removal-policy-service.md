@@ -4,6 +4,7 @@ description: This topic for the IT professional describes the role of the remova
 ms.prod: m365-security
 author: paolomatarazzo
 ms.author: paoloma
+ms.reviewer: ardenw
 manager: aaroncz
 ms.collection: M365-identity-device-management
 ms.topic: article

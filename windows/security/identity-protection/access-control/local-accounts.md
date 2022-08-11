@@ -4,6 +4,7 @@ description: Learn how to secure and manage access to the resources on a standal
 ms.prod: m365-security
 author: paolomatarazzo
 ms.author: paoloma
+ms.reviewer: sulahiri
 manager: aaroncz
 ms.collection:
   - M365-identity-device-management

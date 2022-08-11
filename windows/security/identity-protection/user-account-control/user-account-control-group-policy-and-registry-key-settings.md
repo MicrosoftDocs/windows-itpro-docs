@@ -4,6 +4,7 @@ description: Here's a list of UAC  Group Policy and registry key settings that y
 ms.prod: m365-security
 author: paolomatarazzo
 ms.author: paoloma
+ms.reviewer: sulahiri
 manager: aaroncz
 ms.collection:
   - M365-identity-device-management

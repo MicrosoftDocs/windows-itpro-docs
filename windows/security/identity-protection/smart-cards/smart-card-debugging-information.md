@@ -4,6 +4,7 @@ description: Describes the tools and services that smart card developers can use
 ms.prod: m365-security
 author: paolomatarazzo
 ms.author: paoloma
+ms.reviewer: ardenw
 manager: aaroncz
 ms.collection:
   - M365-identity-device-management
