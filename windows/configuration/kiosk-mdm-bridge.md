@@ -2,10 +2,10 @@
 title: Use MDM Bridge WMI Provider to create a Windows 10/11 kiosk (Windows 10/11)
 description: Environments that use Windows Management Instrumentation (WMI) can use the MDM Bridge WMI Provider to configure the MDM_AssignedAccess class.
 ms.reviewer: sybruckm
-manager: dougeby
-ms.author: aaroncz
+manager: aaroncz
+ms.author: lizlong
 ms.prod: w10
-author: aczechowski
+author: lizgt2000
 ms.localizationpriority: medium
 ms.topic: article
 ---
