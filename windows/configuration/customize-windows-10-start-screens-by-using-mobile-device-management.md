@@ -4,7 +4,7 @@ description: In Windows 10, you can use a mobile device management (MDM) policy
 ms.reviewer: 
 manager: aaroncz
 ms.prod: w10
-author: aczechowski
+author: lizgt2000
 ms.topic: article
 ms.author: lizlong
 ms.localizationpriority: medium

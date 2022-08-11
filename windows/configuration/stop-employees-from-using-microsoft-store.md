@@ -4,7 +4,7 @@ description: Learn how to configure access to Microsoft Store for client compute
 ms.reviewer: 
 manager: aaroncz
 ms.prod: w10
-author: aczechowski
+author: lizgt2000
 ms.author: lizlong
 ms.topic: conceptual
 ms.localizationpriority: medium

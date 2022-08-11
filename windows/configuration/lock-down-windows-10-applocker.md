@@ -4,7 +4,7 @@ description: Learn how to use AppLocker to configure a kiosk device running Wind
 ms.reviewer: sybruckm
 manager: aaroncz
 ms.prod: w10
-author: aczechowski
+author: lizgt2000
 ms.localizationpriority: medium
 ms.date: 07/30/2018
 ms.author: lizlong

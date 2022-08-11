@@ -4,7 +4,7 @@ description: With Windows 10 and Windows 11, you can create provisioning package
 ms.reviewer: gkomatsu
 manager: aaroncz
 ms.prod: w10
-author: aczechowski
+author: lizgt2000
 ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium

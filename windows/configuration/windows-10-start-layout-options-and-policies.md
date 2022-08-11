@@ -4,7 +4,7 @@ description: On Windows devices, customize the start menu layout and taskbar usi
 ms.reviewer: 
 manager: aaroncz
 ms.prod: w10
-author: aczechowski
+author: lizgt2000
 ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium

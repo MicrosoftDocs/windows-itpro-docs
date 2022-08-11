@@ -4,7 +4,7 @@ description: In Windows 10, you can use a provisioning package to deploy a cust
 ms.reviewer: 
 manager: aaroncz
 ms.prod: w10
-author: aczechowski
+author: lizgt2000
 ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium

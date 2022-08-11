@@ -4,7 +4,7 @@ description: Enterprises can provision cellular settings for tablets and PC with
 ms.reviewer: 
 manager: aaroncz
 ms.prod: w10
-author: aczechowski
+author: lizgt2000
 ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium

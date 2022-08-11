@@ -4,7 +4,7 @@ description: Many of the lockdown features available in Windows Embedded 8.1 Ind
 ms.reviewer: 
 manager: aaroncz
 ms.prod: w10
-author: aczechowski
+author: lizgt2000
 ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium

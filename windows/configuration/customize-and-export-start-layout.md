@@ -4,7 +4,7 @@ description: The easiest method for creating a customized Start layout is to set
 ms.reviewer: 
 manager: aaroncz
 ms.prod: w10
-author: aczechowski
+author: lizgt2000
 ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium

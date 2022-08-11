@@ -4,7 +4,7 @@ description: Lists the various accessibility features available in Windows 10 wi
 keywords: accessibility, settings, vision, hearing, physical, cognition, assistive
 ms.prod: w10
 ms.author: lizlong
-author: aczechowski
+author: lizgt2000
 ms.localizationpriority: medium
 ms.date: 01/12/2018
 ms.reviewer: 

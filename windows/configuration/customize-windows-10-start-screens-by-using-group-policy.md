@@ -4,7 +4,7 @@ description: In Windows 10, you can use a Group Policy Object (GPO) to deploy a 
 ms.reviewer: 
 manager: aaroncz
 ms.prod: w10
-author: aczechowski
+author: lizgt2000
 ms.localizationpriority: medium
 ms.author: lizlong
 ms.topic: article

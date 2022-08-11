@@ -2,7 +2,7 @@
 title: Apply a provisioning package (Windows 10/11)
 description: Provisioning packages can be applied to a device during initial setup (OOBE) and after (runtime).
 ms.prod: w10
-author: aczechowski
+author: lizgt2000
 ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium

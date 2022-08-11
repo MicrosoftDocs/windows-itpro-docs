@@ -5,7 +5,7 @@ keywords: [kiosk, lockdown, assigned access]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: aczechowski
+author: lizgt2000
 ms.localizationpriority: medium
 ms.author: lizlong
 ms.topic: article

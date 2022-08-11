@@ -5,7 +5,7 @@ ms.reviewer: sybruckm
 manager: aaroncz
 ms.author: lizlong
 ms.prod: w10
-author: aczechowski
+author: lizgt2000
 ms.localizationpriority: medium
 ms.date: 09/20/2021
 ms.topic: article

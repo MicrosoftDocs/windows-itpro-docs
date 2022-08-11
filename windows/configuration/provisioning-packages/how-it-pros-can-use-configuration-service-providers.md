@@ -4,7 +4,7 @@ description: Describes how IT pros and system administrators can use configurati
 ms.reviewer: gkomatsu
 manager: aaroncz
 ms.prod: w10
-author: aczechowski
+author: lizgt2000
 ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium

@@ -4,7 +4,7 @@ description: Learn about changes to Group Policy settings for the Windows 10 Sta
 ms.reviewer: 
 manager: aaroncz
 ms.prod: w10
-author: aczechowski
+author: lizgt2000
 ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium

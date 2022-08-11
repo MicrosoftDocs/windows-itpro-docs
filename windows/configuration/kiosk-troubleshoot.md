@@ -4,7 +4,7 @@ description: Learn how to troubleshoot single-app and multi-app kiosk configurat
 ms.reviewer: sybruckm
 manager: aaroncz
 ms.prod: w10
-author: aczechowski
+author: lizgt2000
 ms.localizationpriority: medium
 ms.author: lizlong
 ms.topic: article

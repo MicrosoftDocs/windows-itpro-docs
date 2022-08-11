@@ -5,7 +5,7 @@ ms.reviewer:
 manager: aaroncz
 ms.author: lizlong
 ms.prod: w10
-author: aczechowski
+author: lizgt2000
 ms.localizationpriority: medium
 ms.topic: article
 ---

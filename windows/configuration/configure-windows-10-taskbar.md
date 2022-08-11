@@ -5,7 +5,7 @@ keywords: [taskbar layout, pin apps]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: aczechowski
+author: lizgt2000
 ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
