@@ -1,16 +1,22 @@
 ---
 title: GPO\_DOMISO\_Encryption\_WS2008 (Windows)
 description: This example GPO supports the ability for servers that contain sensitive data to require encryption for all connection requests.
-ms.reviewer: 
-ms.author: dansimp
-author: dansimp
-manager: dansimp
+ms.reviewer: jekrynit
+ms.author: paoloma
+author: paolomatarazzo
+manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.prod: m365-security
 ms.localizationpriority: medium
 ms.date: 09/08/2021
 ms.technology: windows-sec
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # GPO\_DOMISO\_Encryption\_WS2008

@@ -1,24 +1,26 @@
 ---
 title: Enable Predefined Inbound Rules (Windows)
 description: Learn the rules for Windows Defender Firewall with Advanced Security for common networking roles and functions.
-ms.reviewer: 
-ms.author: dansimp
+ms.reviewer: jekrynit
+ms.author: paoloma
 ms.prod: m365-security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: paolomatarazzo
+manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/07/2021
 ms.technology: windows-sec
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Enable Predefined Inbound Rules
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 Windows Defender Firewall with Advanced Security includes many predefined rules for common networking roles and functions. When you install a new server role on a device or enable a network feature on a client device, the installer typically enables the rules required for that role instead of creating new ones. When deploying firewall rules to the devices on the network, you can take advantage of these predefined rules instead of creating new ones. Using this advantage helps to ensure consistency and accuracy, because the rules have been thoroughly tested and are ready for use.
 

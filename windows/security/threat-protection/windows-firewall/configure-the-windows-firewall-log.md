@@ -2,28 +2,30 @@
 title: Configure the Windows Defender Firewall Log (Windows)
 description: Learn how to configure Windows Defender Firewall with Advanced Security to log dropped packets or successful connections by using Group Policy Management MMC.
 ms.assetid: f037113d-506b-44d3-b9c0-0b79d03e7d18
-ms.reviewer: 
-ms.author: dansimp
+ms.reviewer: jekrynit
+ms.author: paoloma
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: paolomatarazzo
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/07/2021
 ms.technology: windows-sec
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Configure the Windows Defender Firewall with Advanced Security Log
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 To configure Windows Defender Firewall with Advanced Security to log dropped packets or successful connections, use the Windows Defender Firewall with Advanced Security node in the Group Policy Management MMC snap-in.
 
