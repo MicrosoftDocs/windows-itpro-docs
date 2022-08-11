@@ -1,18 +1,21 @@
 ---
 title: Policy CSP - ADMX_DeviceGuard
 description: Learn about Policy CSP - ADMX_DeviceGuard.
-ms.author: dansimp
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - ADMX_DeviceGuard
+
+> [!WARNING]
+> Group Policy-based deployment of Windows Defender Application Control policies only supports single-policy format WDAC policies. To use WDAC on devices running Windows 10 1903 and greater, or Windows 11, we recommend using an alternative method for [policy deployment](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide.md).
 
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).

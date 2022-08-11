@@ -2,12 +2,12 @@
 title: Register your free Azure Active Directory subscription
 description: Paid subscribers to Office 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite, or other Microsoft services, have a free subscription to Azure AD.
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
 

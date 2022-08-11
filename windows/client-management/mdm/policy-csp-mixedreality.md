@@ -1,14 +1,14 @@
 ---
 title: Policy CSP - MixedReality
 description: Policy CSP - MixedReality
-ms.author: dansimp
+ms.author: vinpa
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - MixedReality
