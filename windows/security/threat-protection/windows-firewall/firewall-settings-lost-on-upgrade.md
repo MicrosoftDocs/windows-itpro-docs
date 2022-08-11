@@ -1,17 +1,23 @@
 ---
 title: Troubleshooting Windows Firewall settings after a Windows upgrade
 description: Firewall settings lost on upgrade
-ms.reviewer: 
-ms.author: v-bshilpa
+ms.reviewer: jekrynit
+ms.author: paoloma
 ms.prod: m365-security
 ms.localizationpriority: medium
-author: Benny-54
-manager: dansimp
+author: paolomatarazzo
+manager: aaroncz
 ms.collection: 
   - m365-security-compliance
   - m365-initiative-windows-security
 ms.topic: troubleshooting
 ms.technology: windows-sec
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Troubleshooting Windows Firewall settings after a Windows upgrade
