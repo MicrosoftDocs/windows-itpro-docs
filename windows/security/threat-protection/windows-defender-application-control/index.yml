@@ -9,7 +9,7 @@ metadata:
 # ms.subservice: Application-Control
 # ms.topic: landing-page
 # author: Kim Klein
-# ms.author: Jordan Geurten 
+# ms.author: Jordan Geurten
 # manager: Jeffrey Sutherland
 # ms.update: 04/30/2021
 # linkListType: overview | how-to-guide | tutorial | video
@@ -21,13 +21,15 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
+          - text: What is Application Control?
+            url: windows-defender-application-control.md
           - text: What is Windows Defender Application Control (WDAC)?
             url: wdac-and-applocker-overview.md
           - text: What is AppLocker?
             url: applocker\applocker-overview.md
           - text: WDAC and AppLocker feature availability
-            url: feature-availability.md  
-  # Card               
+            url: feature-availability.md
+  # Card
   - title: Learn about Policy Design
     linkLists:
       - linkListType: overview
