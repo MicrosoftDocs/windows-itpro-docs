@@ -63,7 +63,7 @@ When smart card-enabled single sign-in (SSO) is used for Remote Desktop Services
 
 ### Remote Desktop Services and smart card sign-in
 
-Remote Desktop Services enable users to sign in with a smart card by entering a PIN on the RDC client computer and sending it to the RD Session Host server in a manner similar to authentication that is based on user name and password.
+Remote Desktop Services enables users to sign in with a smart card by entering a PIN on the RDC client computer and sending it to the RD Session Host server in a manner similar to authentication that is based on user name and password.
 
 In addition, Group Policy settings that are specific to Remote Desktop Services need to be enabled for smart card-based sign-in.
 
