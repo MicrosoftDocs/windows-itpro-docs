@@ -83,6 +83,9 @@ The table below lists the supported configurations for remotely connecting to an
 > [!NOTE]
 > If the RDP client is running Windows Server 2016 or Windows Server 2019, to be able to connect to Azure Active Directory-joined PCs, it must [allow Public Key Cryptography Based User-to-User (PKU2U) authentication requests to use online identities](/windows/security/threat-protection/security-policy-settings/network-security-allow-pku2u-authentication-requests-to-this-computer-to-use-online-identities).
 
+> [!NOTE]
+> When an Azure Active Directory group is added to the Remote Desktop Users group on a Windows device, it isn't honoured when the user that belongs to the Azure AD group logs in through Remote Desktop Protocol (they can't sign in using Remote Desktop Connection). If the Network Level Authentication is disabled, then the connection works.
+
 ## Related topics
 
 [How to use Remote Desktop](https://support.microsoft.com/windows/how-to-use-remote-desktop-5fe128d5-8fb1-7a23-3b8a-41e636865e8c)
