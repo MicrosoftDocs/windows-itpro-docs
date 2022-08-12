@@ -2,24 +2,25 @@
 title: Local Accounts (Windows 10)
 description: Learn how to secure and manage access to the resources on a standalone or member server for services or users.
 ms.prod: m365-security
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+ms.reviewer: sulahiri
+manager: aaroncz
 ms.collection:
   - M365-identity-device-management
   - highpri
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 06/17/2022
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Local Accounts
-
-**Applies to**
--   Windows 11
--   Windows 10
--   Windows Server 2019
--   Windows Server 2016
 
 This reference article for IT professionals describes the default local user accounts for servers, including how to manage these built-in accounts on a member or standalone server. 
 
