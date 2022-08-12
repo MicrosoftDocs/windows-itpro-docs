@@ -24,6 +24,7 @@ Historically, school IT administrators and educators have struggled to find an e
 
 Microsoft 365 Education provides tools and services that enable simplified management of all devices through Microsoft Endpoint Manager (MEM). With MEM, IT administrators have the flexibility to support diverse scenarios, including both school-owned devices and bring-your-own devices.
 Microsoft Endpoint Manager services include:
+
 - [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)
 - [Microsoft Intune for Education](/intune-education/what-is-intune-for-education)
 - Configuration Manager
@@ -39,8 +40,9 @@ Surface Laptop SE with Windows 11 SE can be managed with Intune for Education, e
 
 From enrollment, through configuration and protection, to resetting, Intune for Education helps school IT administrators manage and optimize the devices throughout their lifecycle:
 
+:::image type="content" source="./images/device-lifecycle.png" alt-text="The device lifecycle for Intune-managed devices" border="false":::
+
 - **Enroll:** to enable remote device management, devices must be enrolled in Intune with an account in your Azure AD tenant. Some enrollment methods require an IT administrator to initiate enrollment, while others require students to complete the initial device setup process. This document discusses the facets of various device enrollment methodologies
-![The device lifecycle for Intune-managed devices](./images/device-lifecycle.png)
 - **Configure:** once the devices are enrolled in Intune, applications and settings will be applied, as defined by the IT administrator
 - **Protect and manage:** in addition to its configuration capabilities, Intune for Education helps protect devices from unauthorized access or malicious attacks. For example, adding an extra layer of authentication with Windows Hello can make devices more secure. Policies are available that let you control settings for Windows Firewall, Endpoint Protection, and software updates
 - **Retire:** when it's time to repurpose a device, Intune for Education offers several options, including resetting the device, removing it from management, or wiping school data. In this document, we cover different device return and exchange scenarios
