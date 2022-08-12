@@ -1,24 +1,26 @@
 ---
 title: Enable Predefined Outbound Rules (Windows)
 description: Learn to deploy predefined firewall rules that block outbound network traffic for common network functions in Windows Defender Firewall with Advanced Security.
-ms.reviewer: 
-ms.author: dansimp
+ms.reviewer: jekrynit
+ms.author: paoloma
 ms.prod: m365-security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: paolomatarazzo
+manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/07/2021
 ms.technology: windows-sec
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Enable Predefined Outbound Rules
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 By default, Windows Defender Firewall with Advanced Security allows all outbound network traffic unless it matches a rule that prohibits the traffic. Windows Defender Firewall includes many predefined outbound rules that can be used to block network traffic for common networking roles and functions. When you install a new server role on a computer or enable a network feature on a client computer, the installer can install, but typically doesn't enable, outbound block rules for that role. When deploying firewall rules to the computers on the network, you can take advantage of these predefined rules instead of creating new ones. Using this advantage helps to ensure consistency and accuracy, because the rules have been thoroughly tested and are ready for use.
 
