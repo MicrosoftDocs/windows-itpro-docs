@@ -10,9 +10,7 @@ author: paolomatarazzo
 ms.author: paoloma
 #ms.reviewer: 
 manager: aaroncz
-ms.collection: # education
-# highpri - high priority, strategic, important, current, etc. articles
-# openauth - the article is owned by PM or community for open authoring
+ms.collection: education
 appliesto:
 - ✅ <b>Windows 10</b>
 - ✅ <b>Windows 11</b>
