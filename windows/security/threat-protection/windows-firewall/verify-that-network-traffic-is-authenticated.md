@@ -1,24 +1,26 @@
 ---
 title: Verify That Network Traffic Is Authenticated (Windows)
 description: Learn how to confirm that network traffic is being protected by IPsec authentication after you configure your domain isolation rule to require authentication.
-ms.reviewer: 
-ms.author: dansimp
+ms.reviewer: jekrynit
+ms.author: paoloma
 ms.prod: m365-security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: paolomatarazzo
+manager: aaroncz
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021
 ms.technology: windows-sec
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Verify That Network Traffic Is Authenticated
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 After you've configured your domain isolation rule to request, rather than require, authentication, you must confirm that the network traffic sent by the devices on the network is being protected by IPsec authentication as expected. If you switch your rules to require authentication before all of the devices have received and applied the correct GPOs, or if there are any errors in your rules, then communications on the network can fail. By first setting the rules to request authentication, any network connections that fail authentication can continue in clear text while you diagnose and troubleshoot.
 

@@ -2,19 +2,19 @@
 title: Understanding and Evaluating Virtual Smart Cards (Windows 10)
 description: Learn how smart card technology can fit into your authentication design. Find links to additional topics about virtual smart cards.
 ms.prod: m365-security
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 04/19/2017
-ms.reviewer: 
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows Server 2016</b>
 ---
 
 # Understanding and Evaluating Virtual Smart Cards
-
-Applies To: Windows 10, Windows Server 2016
 
 This topic for the IT professional describes the virtual smart card technology that was developed by Microsoft; suggests how it can fit into your authentication design; and provides links to additional resources that you can use to design, deploy, and troubleshoot virtual smart cards.
 

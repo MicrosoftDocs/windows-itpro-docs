@@ -3,10 +3,10 @@ title: Microsoft Defender for Endpoint API URIs for US Government
 description: Microsoft Defender for Endpoint API URIs for US Government
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
-ms.author: macapara
-author: mjcaparas
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
 ms.localizationpriority: medium
-manager: dansimp
 ms.collection: M365-security-compliance 
 ms.topic: article
 ---
