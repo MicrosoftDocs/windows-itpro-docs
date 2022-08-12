@@ -29,6 +29,7 @@ This guide introduces the tools and services available from Microsoft for deploy
 This guide provides a comprehensive path for schools to deploy and manage new Windows devices with Microsoft Intune. It includes step-by-step information on the deployment, management, and resetting of Surface Laptop SE and Windows 11 SE operating system.
 
 > [!NOTE]
+
 > - Depending on your school setup scenario, you may not need to implement all steps
 > - Unless otherwise indicated in the *Applies to* section of each document, the guidance applies to Windows 10, Windows 11 and Windows 11 SE
 
