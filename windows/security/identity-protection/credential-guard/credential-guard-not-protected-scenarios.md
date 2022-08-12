@@ -123,13 +123,13 @@ Beginning with the Windows Server 2008 R2 domain functional level, domain contro
     .\set-IssuancePolicyToGroupLink.ps1 –IssuancePolicyName:"<name of issuance policy>" –groupOU:"<Name of OU to create>" –groupName:”<name of Universal security group to create>"
     ```
 
-#### Restricting user sign on
+#### Restricting user sign-on
 
 So we now have completed the following:
 
 -   Created a special certificate issuance policy to identify devices that meet the deployment criteria required for the user to be able to sign on
 -   Mapped that policy to a universal security group or claim
--   Provided a way for domain controllers to get the device authorization data during user sign on using Kerberos armoring. Now what is left to do is to configure the access check on the domain controllers. This is done using authentication policies.
+-   Provided a way for domain controllers to get the device authorization data during user sign-on using Kerberos armoring. Now what is left to do is to configure the access check on the domain controllers. This is done using authentication policies.
 
 Authentication policies have the following requirements:
 -   User accounts are in a Windows Server 2012 domain functional level or higher domain.

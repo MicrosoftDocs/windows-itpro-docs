@@ -27,7 +27,7 @@ S/MIME stands for Secure/Multipurpose Internet Mail Extensions, and provides an 
 
 Users can send encrypted message to people in their organization and people outside their organization if they have their encryption certificates. However, users using Windows Mail app can only read encrypted messages if the message is received on their Exchange account and they have corresponding decryption keys.
 
-Encrypted messages can be read only by recipients who have a certificate. If you try to send an encrypted message to recipient(s) whose encryption certificate are not available, the app will prompt you to remove these recipients before sending the email.
+Encrypted messages can be read only by recipients who have a certificate. If you try to send an encrypted message to recipients whose encryption certificate are not available, the app will prompt you to remove these recipients before sending the email.
 
 ## About digital signatures
 
