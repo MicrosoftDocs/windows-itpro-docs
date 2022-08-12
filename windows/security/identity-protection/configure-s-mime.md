@@ -82,7 +82,7 @@ When you receive an encrypted message, the mail app will check whether there is 
 
 ## Install certificates from a received message
 
-When you receive a signed email, the app provide feature to install corresponding encryption certificate on your device if the certificate is available. This certificate can then be used to send encrypted email to this person.
+When you receive a signed email, the app provides a feature to install corresponding encryption certificate on your device if the certificate is available. This certificate can then be used to send encrypted email to this person.
 
 1.  Open a signed email.
 
