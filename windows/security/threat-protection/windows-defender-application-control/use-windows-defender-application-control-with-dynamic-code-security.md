@@ -24,13 +24,13 @@ ms.technology: windows-sec
 
 The EA set on the NI file only applies to the currently active WDAC policies. If one of the active WDAC policies is updated or a new policy is applied, the EA on the NI file is invalidated. The next time the app runs, WDAC will block the NI file. .NET handles the block gracefully and will fall back to the original IL code. If the IL still passes the latest WDAC policies, then the app runs without any functional impact. Since the IL is now being compiled at runtime, you may notice a slight impact to performance of the app. When .NET must fall back to IL, .NET will also schedule a process to run at the next maintenance window to regenerate all NI files, thus reestablishing the WDAC EA for all code that passes the latest WDAC policies.
 
-In some cases, if an NI file is blocked, you may see a "false positive" block event in the *CodeIntegrity - Operational* event log as described in [WDAC Admin Tips & Known Issues](/windows/security/threat-protection/windows-defender-application-control/operations/known-issues.md#net-native-images-may-generate-false-positive-block-events).
+In some cases, if an NI file is blocked, you may see a "false positive" block event in the *CodeIntegrity - Operational* event log as described in [WDAC Admin Tips & Known Issues](/windows/security/threat-protection/windows-defender-application-control/operations/known-issues#net-native-images-may-generate-false-positive-block-events).
 
 To mitigate any performance impact caused when the WDAC EA isn't valid or missing, use any of the following strategies:
 
 1. Work with the app developer to pre-compile their NI and digitally sign it. Then, ensure your WDAC policies allow that signature;
 2. Run *ngen.exe update* to force .NET to regenerate all NI files immediately after applying changes to your WDAC policies;
-3. [Create and sign a catalog file](/windows/security/threat-protection/windows-defender-application-control/deploy-catalog-files-to-support-windows-defender-application-control.md) for the native images
+3. [Create and sign a catalog file](/windows/security/threat-protection/windows-defender-application-control/deploy-catalog-files-to-support-windows-defender-application-control) for the native images
 
 ## WDAC and .NET hardening
 
