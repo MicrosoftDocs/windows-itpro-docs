@@ -11,8 +11,7 @@ ms.author: paoloma
 #ms.reviewer: 
 manager: aaroncz
 ms.collection: education
-appliesto:
-- ✅ <b>Windows 11 SE</b>
+#appliesto:
 ---
 # The powerful simplicity of Microsoft education technology
 

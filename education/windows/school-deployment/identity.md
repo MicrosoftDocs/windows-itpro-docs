@@ -11,10 +11,7 @@ ms.author: paoloma
 #ms.reviewer: 
 manager: aaroncz
 ms.collection: education
-appliesto:
-- ✅ <b>Windows 10</b>
-- ✅ <b>Windows 11</b>
-- ✅ <b>Windows 11 SE</b>
+#appliesto:
 ---
 
 # Set up identity management
@@ -28,10 +25,12 @@ Microsoft 365 Education leverages Azure Active Directory (Azure AD), Microsoft's
 In this section, you will create and configure a Microsoft 365 tenant and explore the Microsoft 365 admin center.
 ### Create a Microsoft 365 tenant
 
-If you don't already have a Microsoft 365 tenant, you will need to create one. For more information, see [Create your Office 365 tenant account](/microsoft-365/education/deploy/create-your-office-365-tenant). Once created, return to this document to continue with the steps below.
-### Configure the tenant
+If you don't already have a Microsoft 365 tenant, you will need to create one.
 
-To configure the Microsoft 365 tenant for your school, follow [this interactive demo](https://www.microsoft.com/en-us/education/interactive-demos/set-up-Microsoft-365). Then, return to this document to continue with the steps below.
+For more information, see [Create your Office 365 tenant account](/microsoft-365/education/deploy/create-your-office-365-tenant).
+
+> [!TIP]
+> To learn more, and practice how to configure the Microsoft 365 tenant for your school, follow [**this interactive demo**](https://www.microsoft.com/en-us/education/interactive-demos/set-up-Microsoft-365).
 ### Explore the Microsoft 365 admin center
 
 The **Microsoft 365 admin center** is the hub for all administrative consoles for the Microsoft 365 cloud. To access the Microsoft 365 admin center:
@@ -43,49 +42,51 @@ As shown below, form the Microsoft 365 admin center you can access different adm
 
 :::image type="content" source="./images/m365-admin-center.png" alt-text="*All admin centers* page in *Microsoft 365 admin center*" border="true":::
 
-**NOTE:** Setting up your school's basic cloud infrastructure does not require you to complete the rest of the Microsoft 365 setup. For this reason, we will skip directly to adding students and teachers as users in the Microsoft 365 tenant.
+> [!NOTE]
+> Setting up your school's basic cloud infrastructure does not require you to complete the rest of the Microsoft 365 setup. For this reason, we will skip directly to adding students and teachers as users in the Microsoft 365 tenant.
 
 ## Adding users, creating groups, and assigning licenses
 
 With the Microsoft 365 tenant in place, it's time to add users, create groups, and assign licenses. All students and teachers need a user account before they can sign in and access the different Microsoft 365 services. There are multiple ways to do this, including using School Data Sync (SDS), synchronizing an on-premises Active Directory, manually, or a combination of the above.
 
-**NOTE:** Synchronizing your Student Information System (SIS) with School Data Sync is the preferred way to create students and teachers as users in a Microsoft 365 Education tenant. However, if you want to integrate an on-premises directory and synchronize accounts to the cloud, skip to [Azure Active Directory sync](#azure-active-directory-sync) below.
+> [!NOTE]
+> Synchronizing your Student Information System (SIS) with School Data Sync is the preferred way to create students and teachers as users in a Microsoft 365 Education tenant. However, if you want to integrate an on-premises directory and synchronize accounts to the cloud, skip to [**Azure Active Directory sync**](#azure-active-directory-sync) below.
 
 ### School Data Sync
 
-School Data Sync imports and synchronizes SIS data to create classes in Microsoft 365, such as Microsoft 365 groups and class teams in Microsoft Teams. SDS can be used to create new, cloud-only identities or to evolve existing identities. Existing users evolve into *students* and *teachers* and are associated with a *grade*, *school*, and other education-specific attributes and associations. For more information, see [Overview of School Data Sync](/schooldatasync/overview-of-school-data-sync).
+School Data Sync imports and synchronizes SIS data to create classes in Microsoft 365, such as Microsoft 365 groups and class teams in Microsoft Teams. SDS can be used to create new, cloud-only identities or to evolve existing identities. Existing users evolve into *students* and *teachers* and are associated with a *grade*, *school*, and other education-specific attributes and associations.
 
-#### Configure and deploy School Data Sync
+For more information, see [*Overview of School Data Sync*](/schooldatasync/overview-of-school-data-sync).
 
-To get started with School Data Sync, follow the [Microsoft School Data Sync demo](https://interactiveguides-schooldatasync.azurewebsites.net/), which provides detailed steps to access, configure, and deploy School Data Sync in your Microsoft 365 Education tenant. For additional deployment guidance, see [Choose a deployment method](/schooldatasync/overview-of-school-data-sync). Then, return to this document to continue with the steps below.
+> [!TIP]
+> To learn more and practice with School Data Sync, follow the [**Microsoft School Data Sync demo**](https://interactiveguides-schooldatasync.azurewebsites.net/), which provides detailed steps to access, configure, and deploy School Data Sync in your Microsoft 365 Education tenant.
 
-**NOTE:** You can perform a test deployment by cloning or downloading sample SDS CSV school data from the [O365-EDU-Tools GitHub site](https://github.com/OfficeDev/O365-EDU-Tools). Remember that you should typically deploy test SDS data (users, groups, and so on) in a separate test tenant, not your school production environment.
+> [!NOTE]
+> You can perform a test deployment by cloning or downloading sample SDS CSV school data from the [O365-EDU-Tools GitHub site](https://github.com/OfficeDev/O365-EDU-Tools).
+>
+> Remember that you should typically deploy test SDS data (users, groups, and so on) in a separate test tenant, not your school production environment.
 
 ### Azure Active Directory sync
 
 To integrate an on-premises directory with Azure Active Directory, you can use **Microsoft Azure Active Directory Connect** to synchronize users, groups, and other objects. Azure AD Connect lets you configure the authentication method appropriate for your school, including [password hash synchronization](/azure/active-directory/hybrid/whatis-phs), [pass-through authentication](/azure/active-directory/hybrid/how-to-connect-pta), or [federation integration](/azure/active-directory/hybrid/how-to-connect-fed-whatis) with Active Directory Federation Services (AD FS) or a non-Microsoft SAML identity provider. For more information, see [Set up directory synchronization for Microsoft 365](/office365/enterprise/set-up-directory-synchronization), and then return to this document to continue with the steps below.
 
-### Manual assignment
+### Create users manually
 
 In addition to the above methods, you can manually add users and groups, and assign licenses through the Microsoft 365 admin center.
 
-#### Add users manually
+There are two options for adding users manually, either individually or in bulk:
 
-There are two options for adding users manually, either individually or in multiples:
+1. To add students and teachers as users in Microsoft 365 Education individually:
+    - Go to [admin.microsoft.com](https://admin.microsoft.com/) to access the Microsoft 365 admin center
+    - Select **Users** > **Active users** > **Add a user**
+    
+    For more information, see [Add users and assign licenses at the same time](/microsoft-365/admin/add-users/add-users)
+1. To add *multiple* users to Microsoft 365 Education:
+    - In the Microsoft 365 admin center, select **Users** > **Active users** > **Add multiple users**
+    - Follow the **Import multiple users** panel to assign accounts
+    For more information, see [Add multiple users in the Microsoft 365 admin center](/microsoft-365/enterprise/add-several-users-at-the-same-time).
 
-**(Option 1)** To add students and teachers as users in Microsoft 365 Education individually:
-
-- Go to [admin.microsoft.com](https://admin.microsoft.com/) to access the Microsoft 365 admin center
-- Select **Users** > **Active users** > **Add a user**
-- For more information, see [Add users and assign licenses at the same time](/microsoft-365/admin/add-users/add-users)
-
-**(Option 2)** To add *multiple* users to Microsoft 365 Education:
-
-- In the Microsoft 365 admin center, select **Users** > **Active users** > **Add multiple users**
-- Follow the **Import multiple users** panel to assign accounts
-- For more information, see [Add multiple users in the Microsoft 365 admin center](/microsoft-365/enterprise/add-several-users-at-the-same-time)
-
-### **Create groups**
+### Create groups
 
 Creating groups is important to simplify multiple tasks, like assigning licenses, delegating administration, deploy settings, applications or to distribute assignments to students. To create groups:
 
@@ -98,37 +99,50 @@ Complete the task by following the instruction [Create a group in the Microsoft 
 
 ### Assign licenses
 
-The recommended way to assign licenses is through group-based licensing. With this method, Azure AD ensures that licenses are assigned to all members of the group. Any new members who join the group are assigned the appropriate licenses, and when members leave, their licenses are removed. To assign a license to each user account: 
+The recommended way to assign licenses is through group-based licensing. With this method, Azure AD ensures that licenses are assigned to all members of the group. Any new members who join the group are assigned the appropriate licenses, and when members leave, their licenses are removed.
 
-Go to [portal.azure.com](../Working%20files/PreFinal/portal.azure.com).
+To assign a license to a group:
 
-Select **Azure Active Directory** → **Licenses**.
+1. Sign in to the [Microsoft Entra Manager admin center](https://entra.microsoft.com).
+1. Select **Azure Active Directory** > **Show More** > **Billing** > **Licenses**
+1. Select the required products that you want to assign licenses for > **Assign**
+1. Add the groups to which the licenses should be assigned
 
-Under **All products**, select the required licensing, and then select **Assign**. 
+   :::image type="content" alt-text="Assign licenses from Microsoft Entra admin center." source="images/entra-assign-licenses.png":::
 
-Add the group to which the licenses should be assigned. 
+For more information, see [Group-based licensing using Azure AD admin center](/azure/active-directory/enterprise-users/licensing-groups-assign).
 
-For more information, see [Assign a license to a group in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/license-users-groups).
+## Configure school branding
 
-**NOTE:** You can also use the Azure Active Directory admin center for group-based licensing. For more information, see [Group-based licensing using Azure AD admin center](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/licensing-groups-assign). 
+Configuring your school branding helps customize the look and feel of the Windows Autopilot process, which makes the experience more familiar to students and teachers. For your school branding to appear during the Windows out-of-box experience (OOBE), you need to configure it in Azure Active Directory.
 
-**UP NEXT:** With users and groups created, assigned, and licensed for Microsoft 365 Education, we are ready to set up and manage students’ and teachers’ devices. To do this, we need to configure Microsoft Intune for Education. 
+To configure your school's branding:
 
+1. Sign in to the [Microsoft Entra Manager admin center](https://entra.microsoft.com).
+1. Select **Azure Active Directory** > **Show More** > **User experiences** > **Company branding**
+1. You can specify brand settings like background image, logo, username hint and a sign-in page text
 
-#### Configure school branding
+    :::image type="content" alt-text="Configure Azure AD branding from Microsoft Entra admin center." source="images/entra-branding.png":::
 
-Configuring your school branding helps customize the look and feel of the Autopilot process, which makes the experience more familiar to students and teachers. For your school branding to appear during OOBE, you need to configure it in Azure Active Directory. For more information, see [Add branding to your directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding). 
+1. To adjust the school tenant's name displayed during OOBE, select **Azure Active Directory** > **Overview** > **Properties**
+1. In the **Name** field, enter the school district or organization's name, and then select **Save**
 
-To configure your school branding:
+    :::image type="content" alt-text="Configure Azure AD tenant name from Microsoft Entra admin center." source="images/entra-tenant-name.png":::
 
-1. In the Azure Active Directory admin center, select **Azure Active Directory** → **Company branding** →  **Configure**. You can specify brand settings like background image, banner logo, square logo, and square logo dark. 
+For more information, see [Add branding to your directory](/azure/active-directory/fundamentals/customize-branding).
 
-:::image type="content" source="./image10.png" alt-text="Configure company branding page in Azure Active Directory admin center" border="true":::
+## Enable bulk enrollment
+If you decide to enroll Windows devices using provisioning packages instead of Windows Autopilot, you must ensure that the provisioning packages can join Windows devices to the Azure AD tenant.
 
-2. To adjust the school tenant’s name displayed during OOBE, select **Azure Active Directory** → **Properties**.
-1. In the **Name** field, enter the tenant’s name, and then select **Save**.
+To allow provisioning packages to complete the Azure AD Join process:
+1. Sign in to the [Microsoft Entra Manager admin center](https://entra.microsoft.com).
+1. Select **Azure Active Directory** > **Devices** > **Device Settings**
+1. Under **Users may join devices to Azure AD**, either select **All** or **Selected** while specifying the Admin account that will create provisioning packages
+1. Select Save
 
-![Company properties page in Azure Active Directory](./image11.png)
+:::image type="content" alt-text="Configure device settings from Microsoft Entra admin center." source="images/entra-device-settings.png":::
+## Next steps
 
-
-## Devices-Settings-”All” required for PPKG or make sure the user creating the PPKG is member of the allowed
+With users and groups created, assigned, and licensed for Microsoft 365 Education, we are ready to set up and manage students' and teachers' devices. To do this, we need to configure Microsoft Intune.
+> [!div class="nextstepaction"]
+> [Configure Intune](device-management.md)
