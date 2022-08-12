@@ -30,7 +30,7 @@ The smart card removal policy service is applicable when a user has signed in wi
 
 The numbers in the previous figure represent the following actions:
 
-1.  Winlogon is not directly involved in monitoring for smart card removal events. The sequence of steps that are involved when a smart card is removed begins with the smart card credential provider in the sign-in UI process. When a user successfully signs in with a smart card, the smart card credential provider captures the reader name. This information is then stored in the registry with the session identifier where the sign in was initiated.
+1.  Winlogon is not directly involved in monitoring for smart card removal events. The sequence of steps that are involved when a smart card is removed begins with the smart card credential provider in the sign-in UI process. When a user successfully signs in with a smart card, the smart card credential provider captures the reader name. This information is then stored in the registry with the session identifier where the sign-in was initiated.
 
 2.  The smart card resource manager service notifies the smart card removal policy service that a sign-in has occurred.
 

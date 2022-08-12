@@ -80,8 +80,8 @@ Domain user sign-in on a domain-joined device after clearing a TPM for as long a
 |Credential Type | Windows version | Behavior
 |---|---|---|
 | Certificate (smart card or Windows Hello for Business) | All | All data protected with user DPAPI is unusable and user DPAPI doesn't work at all. |
-| Password | Windows 10 v1709 or later | If the user signed-in with a certificate or password prior to clearing the TPM, then they can sign-in with password and user DPAPI is unaffected.
-| Password | Windows 10 v1703 | If the user signed-in with a password prior to clearing the TPM, then they can sign-in with that password and are unaffected.
+| Password | Windows 10 v1709 or later | If the user signed in with a certificate or password prior to clearing the TPM, then they can sign-in with password and user DPAPI is unaffected.
+| Password | Windows 10 v1703 | If the user signed in with a password prior to clearing the TPM, then they can sign-in with that password and are unaffected.
 | Password | Windows 10 v1607 or earlier | Existing user DPAPI protected data is unusable. User DPAPI is able to protect new data.
 
 Once the device has connectivity to the domain controllers, DPAPI recovers the user's key and data protected prior to clearing the TPM can be decrypted.
