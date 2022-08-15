@@ -77,6 +77,6 @@ To delete devices that are enrolled in Intune:
 1. Delete the device from Azure Active Directory: 
 1. From the Azure portal, sign in to Azure Active Directory.
 1. Select **Devices** → **Azure AD devices**. 
-1. Follow the steps outlined in [Delete devices from the Azure Active Directory portal](https://docs.microsoft.com/en-us/mem/intune/remote-actions/devices-wipe).
+1. Follow the steps outlined in [Delete devices from the Azure Active Directory portal](/mem/intune/remote-actions/devices-wipe).
 
 :::image type="content" source="./image19.png" alt-text="Device and account deletion page in Azure Active Directory admin center" border="true":::

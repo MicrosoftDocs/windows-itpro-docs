@@ -18,7 +18,7 @@ appliesto:
 
 # Set up School PCs
 
-The Set Up School PCs app is especially useful in scenarios where large numbers of school-owned devices need to be enrolled. The app helps you configure Surface Laptop SE devices with the features students need, remove those they do not need, and enroll the devices into Intune for Education. With the Set Up School PCs app, you create a provisioning package to enroll devices using a USB drive. For more information on prerequisites, configuration, and recommendations, see [Use the Set Up School PCs app](https://docs.microsoft.com/en-us/education/windows/use-set-up-school-pcs-app). Then, return to this document to continue with the steps below. 
+The Set Up School PCs app is especially useful in scenarios where large numbers of school-owned devices need to be enrolled. The app helps you configure Surface Laptop SE devices with the features students need, remove those they do not need, and enroll the devices into Intune for Education. With the Set Up School PCs app, you create a provisioning package to enroll devices using a USB drive. For more information on prerequisites, configuration, and recommendations, see [Use the Set Up School PCs app](/education/windows/use-set-up-school-pcs-app).
 
 ### Create the provisioning package
 
@@ -32,4 +32,4 @@ The devices will be joined to Azure Active Directory and automatically enrolled 
 
 ### Provision devices with USB
 
-To provision Surface Laptop SE devices with USB, insert the provisioning package saved to USB during manual OOBE. For more information, see [Run package - Install package on PC](https://docs.microsoft.com/en-us/education/windows/use-set-up-school-pcs-app), which steps through running and installing the provisioning package. 
+To provision Surface Laptop SE devices with USB, insert the provisioning package saved to USB during manual OOBE. For more information, see [Run package - Install package on PC](/education/windows/use-set-up-school-pcs-app), which steps through running and installing the provisioning package. 

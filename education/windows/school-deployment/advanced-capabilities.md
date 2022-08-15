@@ -29,23 +29,23 @@ Intune for Education helps protect devices and school data with tools like secur
 To create security policies in Intune for Education:
 
 1. In the [Microsoft Endpoint Manager admin center](https://intuneeducation.portal.azure.com/), select the **Endpoint security** node. 
-1. Under **Manage**, choose the policies you want to set from the included list. For more information, see [Antivirus](https://docs.microsoft.com/en-us/mem/intune/protect/endpoint-security-antivirus-policy), [Disk encryption](https://docs.microsoft.com/en-us/mem/intune/protect/endpoint-security-disk-encryption-policy), [Firewall](https://docs.microsoft.com/en-us/mem/intune/protect/endpoint-security-firewall-policy), [Endpoint detection and response](https://docs.microsoft.com/en-us/mem/intune/protect/endpoint-security-edr-policy), [Attack surface reduction](https://docs.microsoft.com/en-us/mem/intune/protect/endpoint-security-asr-policy), and [Account protection](https://docs.microsoft.com/en-us/mem/intune/protect/endpoint-security-account-protection-policy).
-1. Select **Create policy**. For more information, see [Creating an endpoint security policy](https://docs.microsoft.com/en-us/mem/intune/protect/endpoint-security-policy).
+1. Under **Manage**, choose the policies you want to set from the included list. For more information, see [Antivirus](/mem/intune/protect/endpoint-security-antivirus-policy), [Disk encryption](/mem/intune/protect/endpoint-security-disk-encryption-policy), [Firewall](/mem/intune/protect/endpoint-security-firewall-policy), [Endpoint detection and response](/mem/intune/protect/endpoint-security-edr-policy), [Attack surface reduction](/mem/intune/protect/endpoint-security-asr-policy), and [Account protection](/mem/intune/protect/endpoint-security-account-protection-policy).
+1. Select **Create policy**. For more information, see [Creating an endpoint security policy](/mem/intune/protect/endpoint-security-policy).
 
 ![Endpoint security overview page in Microsoft Endpoint Manager](./image22.png)
 
 
 ## Manage device firmware for Surface devices
 
-Managing devices from the cloud has dramatically simplified IT deployment and provisioning. Surface devices are designed to use a unique Unified Extensible Firmware Interface (UEFI) setting that provides the ability to enable or disable built-in devices and components, protect UEFI settings from being changed, and adjust device boot settings. With [Device Firmware Configuration Interface profiles built into Intune](https://docs.microsoft.com/en-us/intune/configuration/device-firmware-configuration-interface-windows), Surface UEFI management extends the modern management stack down to the UEFI hardware level. DFCI enables Windows to pass management commands from Intune to UEFI for Autopilot-deployed devices. DFCI also supports zero-touch provisioning, eliminates BIOS passwords, and provides control of security settings for boot options, cameras and microphones, built-in peripherals, and more. For more information, see [Manage DFCI with Windows Autopilot](https://docs.microsoft.com/en-us/mem/autopilot/dfci-management) and [Manage DFCI on Surface devices](https://docs.microsoft.com/en-us/surface/surface-manage-dfci-guide). Then, return to this document to continue with the steps below. 
+Managing devices from the cloud has dramatically simplified IT deployment and provisioning. Surface devices are designed to use a unique Unified Extensible Firmware Interface (UEFI) setting that provides the ability to enable or disable built-in devices and components, protect UEFI settings from being changed, and adjust device boot settings. With [Device Firmware Configuration Interface profiles built into Intune](/intune/configuration/device-firmware-configuration-interface-windows), Surface UEFI management extends the modern management stack down to the UEFI hardware level. DFCI enables Windows to pass management commands from Intune to UEFI for Autopilot-deployed devices. DFCI also supports zero-touch provisioning, eliminates BIOS passwords, and provides control of security settings for boot options, cameras and microphones, built-in peripherals, and more. For more information, see [Manage DFCI with Windows Autopilot](/mem/autopilot/dfci-management) and [Manage DFCI on Surface devices](/surface/surface-manage-dfci-guide). Then, return to this document to continue with the steps below. 
 
 ### Prerequisites
 
 The following prerequisites are required to manage DFCI with Intune:
 
-- The device must be managed with Intune, as DFCI management is not supported with Set Up School PCs (provisioning package) enrollments. For more information, see [DFCI Management](https://docs.microsoft.com/en-us/mem/autopilot/dfci-management). 
+- The device must be managed with Intune, as DFCI management is not supported with Set Up School PCs (provisioning package) enrollments. For more information, see [DFCI Management](/mem/autopilot/dfci-management). 
 - The device should be registered through Windows Autopilot in Intune. The device must be registered for Windows Autopilot by a [Microsoft CSP partner](https://partner.microsoft.com/membership/cloud-solution-provider) or registered directly by the OEM. **NOTE:** Devices manually registered for Autopilot (such as by importing a CSV file) are not allowed to use DFCI. By design, DFCI management requires external attestation of the device’s commercial acquisition through an OEM or a Microsoft CSP partner registration to Windows Autopilot.
-- The device manufacturer must have DFCI added to their UEFI firmware in the manufacturing process or as a firmware update that you install. Work with your device vendors to determine the [manufacturers that support DFCI](https://docs.microsoft.com/en-us/mem/autopilot/dfci-management). 
+- The device manufacturer must have DFCI added to their UEFI firmware in the manufacturing process or as a firmware update that you install. Work with your device vendors to determine the [manufacturers that support DFCI](/mem/autopilot/dfci-management). 
 
 ### Manage DFCI profiles with Autopilot
 
@@ -60,7 +60,7 @@ The DFCI environment requires creating a DFCI profile that contains settings and
 
 #### Create a DFCI profile
 
-Create a [DFCI profile](https://docs.microsoft.com/en-us/surface/surface-manage-dfci-guide), and then assign it to the Azure AD security group that contains your targeted Surface devices: 
+Create a [DFCI profile](/surface/surface-manage-dfci-guide), and then assign it to the Azure AD security group that contains your targeted Surface devices: 
 
 1. In Microsoft Endpoint Manager, select **Devices** → **Configuration profiles** → **Create profile**. 
 1. In the **Create a profile** pane:
@@ -83,11 +83,11 @@ To create an Autopilot profile:
 1. In Microsoft Endpoint Manager, choose **Select devices** → **Windows enrollment**. 
 1. Scroll to **Deployment profiles**, and then follow the on-screen prompts.
 
-For more information, see [How to create Autopilot Profile](https://docs.microsoft.com/en-us/surface/surface-manage-dfci-guide). Then, return to this document to continue with the steps below. 
+For more information, see [How to create Autopilot Profile](/surface/surface-manage-dfci-guide). Then, return to this document to continue with the steps below. 
 
 #### Create an enrollment status profile
 
-To ensure devices apply the DFCI configuration during OOBE before users sign in, you must configure enrollment status. For more information, see [Set up an enrollment status page](https://docs.microsoft.com/en-us/intune/enrollment/windows-enrollment-status), and then return to this document to continue with the steps below. 
+To ensure devices apply the DFCI configuration during OOBE before users sign in, you must configure enrollment status. For more information, see [Set up an enrollment status page](/intune/enrollment/windows-enrollment-status), and then return to this document to continue with the steps below. 
 
 #### Configure DFCI settings on Surface devices
 
@@ -98,7 +98,7 @@ You can configure DFCI policy settings by editing the DFCI profile from Microsof
 
 :::image type="content" source="./image25.png" alt-text="Device Firmware Configuration Interface page in Microsoft Endpoint Manager admin center" border="true":::
 
-For more information, see [Configuring the DFCI environment and managing UEFI configuration settings for targeted Surface devices](https://docs.microsoft.com/en-us/surface/surface-manage-dfci-guide). 
+For more information, see [Configuring the DFCI environment and managing UEFI configuration settings for targeted Surface devices](/surface/surface-manage-dfci-guide). 
 
 
 ## Microsoft Surface Management Portal
@@ -122,14 +122,14 @@ To see the device’s warranty information, select **Device warranty and coverag
 
 Repairing Autopilot-enrolled devices can be complex, as OEM requirements must be balanced with Autopilot requirements. If a motherboard replacement is needed on an Autopilot device, we recommend the following process:
 
-1. [Deregister the device](https://docs.microsoft.com/en-us/mem/autopilot/autopilot-mbr) from Autopilot.
-1. [Replace the motherboard](https://docs.microsoft.com/en-us/mem/autopilot/autopilot-mbr).
-1. [Capture a new device ID (4K HH)](https://docs.microsoft.com/en-us/mem/autopilot/autopilot-mbr).
-1. [Reregister the device](https://docs.microsoft.com/en-us/mem/autopilot/autopilot-mbr) with Autopilot. **NOTE:** For DFCI management, the device must be reregistered by a partner or OEM. Self-registration of devices is not supported with DFCI management.
-1. [Reset the device](https://docs.microsoft.com/en-us/mem/autopilot/autopilot-mbr).
-1. [Return the device](https://docs.microsoft.com/en-us/mem/autopilot/autopilot-mbr).
+1. [Deregister the device](/mem/autopilot/autopilot-mbr) from Autopilot.
+1. [Replace the motherboard](/mem/autopilot/autopilot-mbr).
+1. [Capture a new device ID (4K HH)](/mem/autopilot/autopilot-mbr).
+1. [Reregister the device](/mem/autopilot/autopilot-mbr) with Autopilot. **NOTE:** For DFCI management, the device must be reregistered by a partner or OEM. Self-registration of devices is not supported with DFCI management.
+1. [Reset the device](/mem/autopilot/autopilot-mbr).
+1. [Return the device](/mem/autopilot/autopilot-mbr).
 
-For more information, see [Autopilot motherboard replacement scenario guidance](https://docs.microsoft.com/en-us/mem/autopilot/autopilot-mbr).
+For more information, see [Autopilot motherboard replacement scenario guidance](/mem/autopilot/autopilot-mbr).
 
 **UP NEXT:** By this point in the cookbook, you have reviewed the basic steps for full device lifecycle management. In the next section, we'll look at some advanced Intune capabilities that can help support your device management needs today and into the future.
 

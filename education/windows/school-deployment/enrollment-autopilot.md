@@ -28,10 +28,10 @@ A cloud-based provisioning technology, Windows Autopilot can be used to set up a
 
 Before setting up Windows Autopilot, consider these prerequisites:
 
-- **Software requirements. Ensure your school and devices meet the** [**software, networking, licensing, and configuration requirements**](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/windows-autopilot-requirements)** for Windows Autopilot.**
+- **Software requirements. Ensure your school and devices meet the** [**software, networking, licensing, and configuration requirements**](/windows/deployment/windows-autopilot/windows-autopilot-requirements)** for Windows Autopilot.**
 - **Devices ordered and registered.** Ensure your school IT administrator or Microsoft partner has ordered the devices from an original equipment manufacturer (OEM) and registered them for the Autopilot deployment service. We recommend that you connect with a partner through the [Microsoft Partner Center](https://partner.microsoft.com/) and work with them to register your devices.
 - **Intune for Education tenant. Ensure your tenant for Intune for Education is set up. We recommend configuring your tenant with** [**School Data Sync**](#)**, as this method automatically creates Student and Teacher groups for each school, as well as a combined Teacher and Student group. It also creates tenant-wide All Teachers and All Student groups.**
-- **Networking requirements.** Ensure students know to connect to the school network during OOBE setup. For more information on managing devices behind firewalls and proxy servers, see [Network endpoints for Microsoft Intune](https://docs.microsoft.com/en-us/mem/intune/fundamentals/intune-endpoints). 
+- **Networking requirements.** Ensure students know to connect to the school network during OOBE setup. For more information on managing devices behind firewalls and proxy servers, see [Network endpoints for Microsoft Intune](/mem/intune/fundamentals/intune-endpoints). 
 
 **NOTE:** Where not explicitly specified, both HTTPS (443) and HTTP (80) must be accessible. If you are auto-enrolling your devices into Microsoft Intune or deploying Microsoft Office, follow the networking guidelines for [Microsoft Intune](https://docs.microsoft.com/intune/network-bandwidth-use) and [Microsoft 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).
 
@@ -39,12 +39,12 @@ Before setting up Windows Autopilot, consider these prerequisites:
 
 Before deployment, devices must be registered with the Windows Autopilot deployment service. Each device’s unique hardware identity (known as a *hardware hash*) is captured and uploaded to the Autopilot service, and the device is associated with an Azure tenant ID. There are three main ways to register devices to Autopilot:
 
-- **Complete the OEM registration process.** When you purchase devices from an OEM, that company can automatically register them with Windows Autopilot. Before an OEM can register devices, your school must grant permission. The OEM begins this process with approval granted by an Azure AD global administrator from the school. For Microsoft Surface registration, collect the details shown in this [documentation table](https://docs.microsoft.com/en-us/surface/surface-autopilot-registration-support) before submitting the request to Microsoft Support. You can make requests using the [Microsoft Devices Autopilot Support](https://prod.support.services.microsoft.com/supportrequestform/0d8bf192-cab7-6d39-143d-5a17840b9f5f) form.
-- **Manually register devices with Windows Autopilot.** To manually register a device, you must first capture its hardware hash. Once this process has been completed, the hardware hash can be uploaded to the Windows Autopilot service using [Microsoft Intune](https://docs.microsoft.com/en-us/mem/autopilot/add-devices), [Partner Center](https://msdn.microsoft.com/partner-center/autopilot), [Microsoft 365 Business & Office 365 Admin](https://support.office.com/article/Create-and-edit-AutoPilot-profiles-5cf7139e-cfa1-4765-8aad-001af1c74faa), or the [Microsoft Store](https://apps.microsoft.com/store/apps).
+- **Complete the OEM registration process.** When you purchase devices from an OEM, that company can automatically register them with Windows Autopilot. Before an OEM can register devices, your school must grant permission. The OEM begins this process with approval granted by an Azure AD global administrator from the school. For Microsoft Surface registration, collect the details shown in this [documentation table](/surface/surface-autopilot-registration-support) before submitting the request to Microsoft Support. You can make requests using the [Microsoft Devices Autopilot Support](https://prod.support.services.microsoft.com/supportrequestform/0d8bf192-cab7-6d39-143d-5a17840b9f5f) form.
+- **Manually register devices with Windows Autopilot.** To manually register a device, you must first capture its hardware hash. Once this process has been completed, the hardware hash can be uploaded to the Windows Autopilot service using [Microsoft Intune](/mem/autopilot/add-devices), [Partner Center](https://msdn.microsoft.com/partner-center/autopilot), [Microsoft 365 Business & Office 365 Admin](https://support.office.com/article/Create-and-edit-AutoPilot-profiles-5cf7139e-cfa1-4765-8aad-001af1c74faa), or the [Microsoft Store](https://apps.microsoft.com/store/apps).
 
-**NOTE:** Windows 11 SE devices do not support the use of Windows PowerShell or Microsoft Configuration Manager to capture hardware hashes. Hardware hashes can only be captured manually. We recommend working with an OEM, partner, or device reseller to register devices. For more information, see [Set up devices with Autopilot](https://docs.microsoft.com/en-us/intune-education/windows-autopilot-setup). 
+**NOTE:** Windows 11 SE devices do not support the use of Windows PowerShell or Microsoft Configuration Manager to capture hardware hashes. Hardware hashes can only be captured manually. We recommend working with an OEM, partner, or device reseller to register devices. For more information, see [Set up devices with Autopilot](/intune-education/windows-autopilot-setup). 
 
-- **Allow a Cloud Solution Provider (CSP) to register devices.** Surface devices can be registered by device resellers (with active CSP partner status) as part of the ordering process. As with OEMs, CSP partners must be granted permission to register devices for a school. For more information, see this [Microsoft Partner Center clickable demo](https://cloudpartners.transform.microsoft.com/resources/autopilot-in-edu-setup-english). Then, return to this document to continue with the steps below.
+- **Allow a Cloud Solution Provider (CSP) to register devices.** Surface devices can be registered by device resellers (with active CSP partner status) as part of the ordering process. As with OEMs, CSP partners must be granted permission to register devices for a school. For more information, see this [Microsoft Partner Center clickable demo](https://cloudpartners.transform.microsoft.com/resources/autopilot-in-edu-setup-english).
 
 ### Set up the devices
 
@@ -60,8 +60,8 @@ The steps for creating a dynamic device group are completed in Microsoft Endpoin
 1. Configure the following properties:
 1. **Group type**: Select **Security**.
 1. **Group name/Group description**: Enter a valid name and description for your group.
-1. **Azure AD roles can be assigned to the group**: Select **Yes**. This allows Azure AD roles to be assigned to the group you are creating. Once set, the group is permanent and always allowed to be assigned Azure AD roles. For more information, see [Use Azure AD groups to manage role assignments](https://docs.microsoft.com/en-us/azure/active-directory/roles/groups-concept).
-1. **Membership type**: Select **Dynamic Device**. This property allows you to choose how devices become members of this group. For more information, see [Add groups to organize users and devices](https://docs.microsoft.com/en-us/mem/intune/fundamentals/groups-add).
+1. **Azure AD roles can be assigned to the group**: Select **Yes**. This allows Azure AD roles to be assigned to the group you are creating. Once set, the group is permanent and always allowed to be assigned Azure AD roles. For more information, see [Use Azure AD groups to manage role assignments](/azure/active-directory/roles/groups-concept).
+1. **Membership type**: Select **Dynamic Device**. This property allows you to choose how devices become members of this group. For more information, see [Add groups to organize users and devices](/mem/intune/fundamentals/groups-add).
 1. **Owners**: Select users who own this group. Owners can also delete the group.
 1. **Dynamic device members**: Select **Add dynamic query** → **Add expression**.
 
@@ -106,7 +106,7 @@ Once the dynamic device group is created, it can be used for assigning Windows A
 
 12. On the **Review + create** page, select **Create** to generate the profile.
 
-For more information, see [Configure Autopilot profiles](https://docs.microsoft.com/en-us/mem/autopilot/profiles), and then return to this document to continue with the steps below.
+For more information, see [Configure Autopilot profiles](/mem/autopilot/profiles).
 
 ### Enrollment Status Page reference here
 ## branding reference here
