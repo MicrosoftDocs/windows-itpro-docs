@@ -1,5 +1,5 @@
 ---
-title: Set up identity management
+title: Set up your tenant
 description: # How to obtain Microsoft support from Microsoft Endpoint Manager admin center.
 ms.date: 08/31/2022
 ms.prod: windows
@@ -14,7 +14,7 @@ ms.collection: education
 #appliesto:
 ---
 
-# Set up identity management
+# Set up your tenant
 
 The Microsoft platform for education simplifies the management of Windows devices with Intune for Education and Microsoft 365 Education. The first, fundamental step, is to configure the identity infrastructure to manage user access and permissions for your school.
 
@@ -69,9 +69,9 @@ For more information, see [Overview of School Data Sync](/schooldatasync/overvie
 
 To integrate an on-premises directory with Azure Active Directory, you can use **Microsoft Azure Active Directory Connect** to synchronize users, groups, and other objects. Azure AD Connect lets you configure the authentication method appropriate for your school, including:
 
-- [password hash synchronization](/azure/active-directory/hybrid/whatis-phs)
-- [pass-through authentication](/azure/active-directory/hybrid/how-to-connect-pta)
-- [federated authentication](/azure/active-directory/hybrid/how-to-connect-fed-whatis)
+- [Password hash synchronization](/azure/active-directory/hybrid/whatis-phs)
+- [Pass-through authentication](/azure/active-directory/hybrid/how-to-connect-pta)
+- [Federated authentication](/azure/active-directory/hybrid/how-to-connect-fed-whatis)
 
 For more information, see [Set up directory synchronization for Microsoft 365](/office365/enterprise/set-up-directory-synchronization).
 
@@ -126,12 +126,9 @@ To configure your school's branding:
 1. Sign in to the <a href="https://entra.microsoft.com" target="_blank"><b>Microsoft Entra admin center</b></a>
 1. Select **Azure Active Directory** > **Show More** > **User experiences** > **Company branding**
 1. You can specify brand settings like background image, logo, username hint and a sign-in page text
-
     :::image type="content" alt-text="Configure Azure AD branding from Microsoft Entra admin center." source="images/entra-branding.png":::
-
 1. To adjust the school tenant's name displayed during OOBE, select **Azure Active Directory** > **Overview** > **Properties**
 1. In the **Name** field, enter the school district or organization's name > **Save**
-
     :::image type="content" alt-text="Configure Azure AD tenant name from Microsoft Entra admin center." source="images/entra-tenant-name.png":::
 
 For more information, see [Add branding to your directory](/azure/active-directory/fundamentals/customize-branding).
@@ -153,6 +150,6 @@ To allow provisioning packages to complete the Azure AD Join process:
 
 ## Next steps
 
-With users and groups created, assigned, and licensed for Microsoft 365 Education, we are ready to set up and manage students' and teachers' devices. To do this, we need to configure Microsoft Intune.
+With users and groups created, assigned, and licensed for Microsoft 365 Education, you're ready to set up and manage students' and teachers' devices. To do this, you need to configure Microsoft Intune.
 > [!div class="nextstepaction"]
-> [Configure Intune](device-management.md)
+> [Set up Microsoft Intune](set-up-microsoft-intune.md)
