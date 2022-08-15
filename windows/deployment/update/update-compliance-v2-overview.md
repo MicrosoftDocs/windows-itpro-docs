@@ -73,7 +73,6 @@ Since the data from your clients is stored in a Log Analytics workspace, you can
    - Other tools for [querying the data](/azure/azure-monitor/logs/log-query-overview)
 
 
-## 
 
 ## Next steps
 
