@@ -35,15 +35,10 @@ Windows Autopilot and the Set up School PCs app are usually the most efficient o
 Select one of the following options to learn more about the enrollment method you chose:
 
 > [!div class="nextstepaction"]
-> - [Enroll devices with Windows Autopilot     >](enrollment-autopilot.md)
+> [Enroll devices with Windows Autopilot        >](enrollment-autopilot.md)
 
 > [!div class="nextstepaction"]
-> - [Enroll devices with provisioning packages >](enrollment-package.md)
+> [Enroll devices with provisioning packages    >](enrollment-package.md)
 
 > [!div class="nextstepaction"]
-> - [Enroll devices via Azure AD join          >](enrollment-aadj.md)
-
-> [!div class="nextstepaction"]
-> - [Enroll devices with Windows Autopilot     >](enrollment-autopilot.md)
-> - [Enroll devices with provisioning packages >](enrollment-package.md)
-> - [Enroll devices via Azure AD join          >](enrollment-aadj.md)
+> [Enroll devices via Azure AD join            >](enrollment-aadj.md)
