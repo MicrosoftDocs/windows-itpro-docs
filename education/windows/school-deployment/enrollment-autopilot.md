@@ -33,7 +33,7 @@ Before setting up Windows Autopilot, consider these prerequisites:
 - **Intune for Education tenant. Ensure your tenant for Intune for Education is set up. We recommend configuring your tenant with** [**School Data Sync**](#)**, as this method automatically creates Student and Teacher groups for each school, as well as a combined Teacher and Student group. It also creates tenant-wide All Teachers and All Student groups.**
 - **Networking requirements.** Ensure students know to connect to the school network during OOBE setup. For more information on managing devices behind firewalls and proxy servers, see [Network endpoints for Microsoft Intune](/mem/intune/fundamentals/intune-endpoints). 
 
-**NOTE:** Where not explicitly specified, both HTTPS (443) and HTTP (80) must be accessible. If you are auto-enrolling your devices into Microsoft Intune or deploying Microsoft Office, follow the networking guidelines for [Microsoft Intune](https://docs.microsoft.com/intune/network-bandwidth-use) and [Microsoft 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).
+**NOTE:** Where not explicitly specified, both HTTPS (443) and HTTP (80) must be accessible. If you are auto-enrolling your devices into Microsoft Intune or deploying Microsoft Office, follow the networking guidelines for [Microsoft Intune](/intune/network-bandwidth-use) and [Microsoft 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).
 
 ### Register devices to Windows Autopilot
 

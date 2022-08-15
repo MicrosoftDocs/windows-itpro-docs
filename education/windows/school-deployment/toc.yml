@@ -15,10 +15,8 @@ items:
         href: enrollment-overview.md
       - name: Enroll devices with Windows Autopilot
         href: enrollment-autopilot.md
-      - name: Enroll devices with Set up School PCs
-        href: enrollment-suspcs.md
-      - name: Enroll devices with Windows Configuration Designer
-        href: enrollment-wcd.md
+      - name: Enroll devices with provisioning packages and SUSPCs
+        href: enrollment-package.md
       - name: Enroll devices manually
         href: enrollment-oobe.md
   - name: Manage devices with Intune

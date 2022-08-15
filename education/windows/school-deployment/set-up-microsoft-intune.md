@@ -21,11 +21,11 @@ appliesto:
 
 Without the proper tools and resources, managing hundreds or thousands of devices in a school environment can be a complex and time-consuming task. Microsoft Endpoint Manager provides a collection of services that simplifies the management of devices at scale.
 
-Microsoft Intune is one of the services provided by Microsoft Endpoint Manager. The Microsoft Intune service can be managed in different ways, and one of them is **Intune for Education**, a web portal specifically designed for education environments.
+Microsoft Intune is one of the services provided by Microsoft Endpoint Manager. The Microsoft Intune service can be managed in different ways, and one of them is **Intune for Education**, a web portal designed for education environments.
 
 :::image type="content" source="./images/intune-education-portal.png" alt-text="Intune for Education dashboard" border="true":::
 
-Intune for Education supports the entire device lifecycle, from the enrollment phase through retirement. IT administrators can start managing classroom devices with bulk enrollment options and a streamlined deployment. At the end of the school year, IT admins can reset or wipe devices, ensuring they are ready for the next year.
+Intune for Education supports the entire device lifecycle, from the enrollment phase through retirement. IT administrators can start managing classroom devices with bulk enrollment options and a streamlined deployment. At the end of the school year, IT admins can reset or wipe devices, ensuring they're ready for the next year.
 
 For more information, see [Intune for Education documentation](/intune-education/what-is-intune-for-education).
 
@@ -51,7 +51,7 @@ The Intune service can be configured in different ways, depending on the needs o
 
 With enrollment restrictions, you can prevent certain types of devices from being enrolled and therefore managed by Intune. For example, you can prevent the enrollment of devices that are not owned by the school.
 
-To block personally-owned Windows devices from enrolling:
+To block personally owned Windows devices from enrolling:
 
 1. Sign in to the <a href="https://endpoint.microsoft.com/" target="_blank"><b>Microsoft Endpoint Manager admin center</b></a>
 1. Select **Devices** > **Enroll devices** > **Enrollment device platform restrictions**
@@ -80,7 +80,7 @@ For more information, see [Set up the Enrollment Status Page](/mem/intune/enroll
 ### Disable Windows Hello for Business
 
 Windows Hello for Business is a biometric authentication feature that allows users to sign in to their devices using a PIN, password, or fingerprint. Windows Hello for Business is enabled by default on Windows devices, and to set it up, users must perform for multi-factor authentication (MFA). As a result, this feature may not be ideal for students, who may not have MFA enabled.
-It is suggested to disable Windows Hello for Business on Windows devices at the tenant level, and enabling it only for devices that need it, for example for teachers and staff devices.
+It's suggested to disable Windows Hello for Business on Windows devices at the tenant level, and enabling it only for devices that need it, for example for teachers and staff devices.
 To disable Windows Hello for Business at the tenant level:
 
 1. Sign in to the <a href="https://endpoint.microsoft.com/" target="_blank"><b>Microsoft Endpoint Manager admin center</b></a>
@@ -97,7 +97,7 @@ For more information how to enable Windows Hello for Business on specific device
 
 With Intune for Education, you can configure settings for users and devices in the school. Settings can be assigned to groups:
 
-- If you target settings to a **group of users**, those settings will apply, regardless of what managed devices the targeted users log in to
+- If you target settings to a **group of users**, those settings will apply, regardless of what managed devices the targeted users sign in to
 - If you target settings to a **group of devices**, those settings will apply regardless of who is using the devices
 
 There are two ways to manage settings in Intune for Education:
@@ -110,7 +110,7 @@ There are two ways to manage settings in Intune for Education:
 
 ### Configure settings with Express Configuration
 
-With Express Configuration, you can get Intune for Education up and running in just a few steps. You can select a group of devices or users, pick applications that you want to distribute, and choose key settings from those most commonly used in schools.
+With Express Configuration, you can get Intune for Education up and running in just a few steps. You can select a group of devices or users, select applications to distribute, and choose settings from the most commonly used in schools.
 
 For more information, see [Express Configuration in Intune for Education](/intune-education/express-configuration-intune-edu).
 
@@ -165,5 +165,5 @@ ________________________________________________________
 
 With the Intune service configured, you can start enrolling and managing students' and teachers' devices.
 > [!div class="nextstepaction"]
-> [< Set up your tenant](set-up-your-tenant.md)
-> [Enroll devices >](enrollment-overview.md)
+> [< Set up your tenant <](set-up-your-tenant.md)
+> [> Enroll devices >](enrollment-overview.md)
