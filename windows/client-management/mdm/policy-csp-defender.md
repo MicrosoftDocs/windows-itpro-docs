@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - Defender
 description: Learn how to use the Policy CSP - Defender setting so you can allow or disallow scanning of archives.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 05/12/2022
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ms.collection: highpri
 ---
 

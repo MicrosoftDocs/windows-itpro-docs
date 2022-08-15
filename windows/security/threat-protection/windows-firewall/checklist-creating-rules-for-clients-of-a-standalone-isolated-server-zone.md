@@ -2,28 +2,30 @@
 title: Create Rules for Standalone Isolated Server Zone Clients (Windows)
 description: Checklist for when creating rules for clients of a Standalone Isolated Server Zone
 ms.assetid: 6a5e6478-add3-47e3-8221-972549e013f6
-ms.reviewer: 
-ms.author: dansimp
+ms.reviewer: jekrynit
+ms.author: paoloma
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: paolomatarazzo
+manager: aaroncz
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/07/2021
 ms.technology: windows-sec
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Windows Server 2016</b>
+- ✅ <b>Windows Server 2019</b>
+- ✅ <b>Windows Server 2022</b>
 ---
 
 # Checklist: Creating Rules for Clients of a Standalone Isolated Server Zone
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 This checklist includes tasks for configuring connection security rules and IPsec settings in the GPOs for client devices that must connect to servers in an isolated server zone.
 

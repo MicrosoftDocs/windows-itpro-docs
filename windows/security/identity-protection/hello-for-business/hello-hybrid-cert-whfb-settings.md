@@ -2,23 +2,21 @@
 title: Configure Hybrid Windows Hello for Business Settings (Windows Hello for Business)
 description: Learn how to configure Windows Hello for Business settings in hybrid certificate trust deployment.
 ms.prod: m365-security
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
+ms.reviewer: prsriva
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 4/30/2021
-ms.reviewer: 
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
+- ✅ <b>Hybrid deployment</b>
+- ✅ <b>Certificate trust</b>
 ---
 # Configure Hybrid Azure AD joined Windows Hello for Business
-
-**Applies to**
-
-- Windows 10, version 1703 or later
-- Windows 11
-- Hybrid deployment
-- Certificate trust
 
 Your environment is federated and you are ready to configure your hybrid environment for Windows Hello for business using the certificate trust model.  
 > [!IMPORTANT]

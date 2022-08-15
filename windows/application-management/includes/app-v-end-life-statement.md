@@ -1,9 +1,9 @@
 ---
-author: aczechowski
-ms.author: aaroncz
+author: nicholasswhite
+ms.author: nwhite
+manager: aaroncz
 ms.date: 09/20/2021
 ms.reviewer: 
-manager: dougeby
 ms.prod: w10
 ms.topic: include
 ---

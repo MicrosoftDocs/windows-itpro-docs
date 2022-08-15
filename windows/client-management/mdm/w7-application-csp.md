@@ -2,12 +2,12 @@
 title: w7 APPLICATION CSP
 description: Learn that the APPLICATION configuration service provider (CSP) that has an APPID of w7 is used for bootstrapping a device with an OMA DM account.
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
 

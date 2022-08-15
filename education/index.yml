@@ -10,9 +10,11 @@ metadata:
   description: Learn about product documentation and resources available for school IT administrators, teachers, students, and education app developers.
   ms.service: help
   ms.topic: hub-page
-  author: LaurenMoynihan
-  ms.author: v-lamoyn
-  ms.date: 10/24/2019
+  ms.collection: education
+  author: paolomatarazzo
+  ms.author: paoloma
+  ms.date: 08/10/2022
+  manager: aaroncz
 
 productDirectory:
   title: For IT admins

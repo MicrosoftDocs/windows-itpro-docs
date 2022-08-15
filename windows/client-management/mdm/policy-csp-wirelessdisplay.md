@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - WirelessDisplay
 description: Use the Policy CSP - WirelessDisplay setting to turn off the Wireless Display multicast DNS service advertisement from a Wireless Display receiver.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - WirelessDisplay
