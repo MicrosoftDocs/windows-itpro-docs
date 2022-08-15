@@ -256,4 +256,4 @@ Windows Hello for Business cloud trust cannot be used as a supplied credential w
 
 ### Do all my Domain Controllers need to be fully patched as per the Prerequisites for me to use Windows Hello for Business cloud trust?
 
-No, only the amount necessary to handle the load from all Cloud Trust devices.
+No, only the number necessary to handle the load from all cloud trust devices.
