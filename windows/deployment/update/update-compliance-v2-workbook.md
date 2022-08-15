@@ -81,7 +81,7 @@ The **Update status** group for quality updates contains the following items:
 - **Update states for the latest security releases**: Chart containing the number of devices in a specific state for the most recent security update.
 - **Update alerts for all security releases**: Chart containing the count of active errors and warnings for security updates.
 
-:::image type="content" source="media/33771278-update-deployment-status-table.png" alt-text="Screenshot of the charts in the workbook's summary tab" lightbox="media/33771278-update-deployment-status-table.png":::
+:::image type="content" source="media/33771278-update-deployment-status-table.png" alt-text="Screenshot of the charts and table in the workbook's quality updates tab" lightbox="media/33771278-update-deployment-status-table.png":::
 
 The **Update deployment status** table displays the quality updates for each operating system version that were released within the last 60 days. For each update, drill-in further by selecting a value from the following columns:
 
