@@ -14,6 +14,7 @@ ms.collection: education
 appliesto:
 - ✅ <b>Windows 10</b>
 - ✅ <b>Windows 11</b>
+- ✅ <b>Windows 11 SE</b>
 ---
 
 # Set up School PCs
@@ -45,3 +46,11 @@ To provision Surface Laptop SE devices with USB, insert the provisioning package
 Windows Configuration Designer is especially useful in scenarios where a school needs to provision packages for both bring-you-own devices and school-owned devices. Ideal for small-to-medium schools that manage up to a few hundred devices, Windows Configuration Designer lets you configure devices without imaging. For more information, see [Install Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd), which provides details about the app, its provisioning process, and considerations for its use. 
 
 ![Set up device page in Windows Configuration Designer](./image13.png)
+
+
+________________________________________________________
+## Section review and next steps
+
+> [!div class="nextstepaction"]
+> [< Enroll devices](enrollment-overview.md)
+> [Manage devices >](management-overview.md)

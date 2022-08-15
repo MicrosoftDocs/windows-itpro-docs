@@ -122,4 +122,11 @@ When a Windows 11 SE device is turned on for the first time, the end-user experi
 1. Wait for detection. Windows will detect that the device has an Autopilot profile assigned and belongs to your school.
 1. Enter the email address and password associated with your school account.
 1. Apply updates. Once connected, the Windows 11 SE device will look for and apply required updates.
-1. Sign in on the school-branded welcome screen. Users need only their school account credentials. No local administrator permissions are required. 
+1. Sign in on the school-branded welcome screen. Users need only their school account credentials. No local administrator permissions are required.
+
+________________________________________________________
+## Section review and next steps
+
+> [!div class="nextstepaction"]
+> [< Enroll devices](enrollment-overview.md)
+> [Manage devices >](management-overview.md)

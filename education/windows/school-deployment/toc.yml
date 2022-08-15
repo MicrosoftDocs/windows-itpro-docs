@@ -18,7 +18,7 @@ items:
       - name: Enroll devices with provisioning packages and SUSPCs
         href: enrollment-package.md
       - name: Enroll devices manually
-        href: enrollment-oobe.md
+        href: enrollment-aadj.md
   - name: Manage devices with Intune
     items: 
       - name: Overview
