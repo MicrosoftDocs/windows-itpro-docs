@@ -77,10 +77,10 @@ Having defined the "circle-of-trust", Alice is ready to generate the initial pol
 
 Alice follows these steps to complete this task:
 
-> [!NOTE]
-> `SmartAppControl.xml` is available on Windows 11 version 22H2 and later. This policy includes a rule that is unsupported for enterprise WDAC policies and must be removed (step 3). For more information, see [WDAC and Smart App Control](windows-defender-application-control.md#wdac-and-smart-app-control)
-
 1. On a client device, run the following commands in an elevated Windows PowerShell session to initialize variables:
+
+    > [!NOTE]
+    > If you prefer to use a different [example Windows Defender Application Control base policy](example-wdac-base-policies.md), substitute the example policy path with your preferred base policy in this step.
 
     ```powershell
     $PolicyPath = $env:userprofile+"\Desktop\"
@@ -89,16 +89,16 @@ Alice follows these steps to complete this task:
     $ExamplePolicy=$env:windir+"\schemas\CodeIntegrity\ExamplePolicies\SmartAppControl.xml"
     ```
 
-    > [!NOTE]
-    > If you prefer to use a different [example Windows Defender Application Control base policy](example-wdac-base-policies.md), substitute the example policy path with your preferred base policy in this step.
-
 1. Copy the example policy to the desktop:
 
     ```powershell
     Copy-Item $ExamplePolicy $LamnaPolicy
     ```
 
-1. Modify the policy to remove **Enabled:Conditional Windows Lockdown Policy** rule, which is unsupported for enterprise WDAC policies:
+1. Modify the policy to remove unsupported rule:
+
+    > [!NOTE]
+    > `SmartAppControl.xml` is available on Windows 11 version 22H2 and later. This policy includes "Enabled:Conditional Windows Lockdown Policy" rule that is unsupported for enterprise WDAC policies and must be removed. For more information, see [WDAC and Smart App Control](windows-defender-application-control.md#wdac-and-smart-app-control). If you are using an example policy other than `SmartAppControl.xml`, skip this step.
 
     ```powershell
     [xml]$xml = Get-Content $LamnaPolicy
@@ -109,9 +109,6 @@ Alice follows these steps to complete this task:
     $xml.Save($LamnaPolicy)
     ```
 
-    > [!NOTE]
-    > If you are using an example policy other than `SmartAppControl.xml`, skip this step.
-
 1. Give the new policy a unique ID, descriptive name, and initial version number:
 
     ```powershell
@@ -121,14 +118,14 @@ Alice follows these steps to complete this task:
 
 1. [Use Configuration Manager to create and deploy an audit policy](/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager) to the client device running Windows 10 version 1903 and above, or Windows 11. Merge the Configuration Manager policy with the example policy.
 
+    > [!NOTE]
+    > If you do not use Configuration Manager, skip this step.
+
     ```powershell
     $MEMCMPolicy=$env:windir+"\CCM\DeviceGuard\MergedPolicy_Audit_ISG.xml"
     Merge-CIPolicy -OutputFilePath $LamnaPolicy -PolicyPaths $LamnaPolicy,$MEMCMPolicy
     Set-RuleOption -FilePath $LamnaPolicy -Option 13 # Managed Installer
     ```
-
-    > [!NOTE]
-    > If you do not use Configuration Manager, skip this step.
 
 1. Modify the policy to set additional policy rules:
 
