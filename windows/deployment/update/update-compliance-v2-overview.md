@@ -8,7 +8,7 @@ author: mestew
 ms.author: mstewart
 ms.collection: M365-analytics
 ms.topic: article
-ms.date: 06/06/2022
+ms.date: 08/09/2022
 ---
 
 # Update Compliance overview
@@ -34,7 +34,8 @@ The new version of Update Compliance is in technical preview. Some of the benefi
 
 Currently, the technical preview contains the following features:
 
-- Access to the following new Update Compliance tables:
+- [Update Compliance workbook](update-compliance-v2-workbook.md)
+- Access to the following new [Update Compliance tables](update-compliance-v2-schema.md):
     - UCClient
     - UCClientReadinessStatus
     - UCClientUpdateStatus
@@ -42,6 +43,8 @@ Currently, the technical preview contains the following features:
     - UCServiceUpdateStatus
     - UCUpdateAlert
 - Client data collection to populate the new Update Compliance tables
+
+Currently, these new tables are available to all Updates Compliance users. They will be displayed along with the original Updates Compliance tables.
 
 :::image type="content" source="media/update-compliance-v2-query-table.png" alt-text="Screenshot of using a custom Kusto (KQL) query on Update Compliance data in Log Analytics." lightbox="media/update-compliance-v2-query-table.png":::
 
@@ -68,6 +71,8 @@ Since the data from your clients is stored in a Log Analytics workspace, you can
    - [Operations Management Suite](/azure/azure-monitor/agents/om-agents)
    - [Power BI](/azure/azure-monitor/logs/log-powerbi)
    - Other tools for [querying the data](/azure/azure-monitor/logs/log-query-overview)
+
+
 
 ## Next steps
 
