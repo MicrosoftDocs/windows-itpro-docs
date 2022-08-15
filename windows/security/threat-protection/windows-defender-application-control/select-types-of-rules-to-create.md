@@ -112,7 +112,7 @@ Each file rule level has its benefit and disadvantage. Use Table 2 to select the
 > [!NOTE]
 > When applicable, minimum and maximum version numbers in a file rule are referenced as MinimumFileVersion and MaximumFileVersion respectively in the policy XML.
 >
-> - MinimumFileVersion and MaximumFileVersion specified: For Allow rules, file with version **greater than or equal** to MinimumFileVersion and **less than or equal** to MaximumFileVersion are allowed. For Deny rules, file with version **greater than or equal** to MinimumFileVersion and **less than or equal** to MaximumFileVersion are denied.
+> - Both MinimumFileVersion and MaximumFileVersion specified: For Allow rules, file with version **greater than or equal** to MinimumFileVersion and **less than or equal** to MaximumFileVersion are allowed. For Deny rules, file with version **greater than or equal** to MinimumFileVersion and **less than or equal** to MaximumFileVersion are denied.
 > - MinimumFileVersion specified without MaximumFileVersion: For Allow rules, file with version **greater than or equal** to the specified version are allowed to run. For Deny rules, file with version **less than or equal** to the specified version are blocked.
 > - MaximumFileVersion specified without MinimumFileVersion: For Allow rules, file with version **less than or equal** to the specified version are allowed to run. For Deny rules, file with version **greater than or equal** to the specified version are blocked.
 

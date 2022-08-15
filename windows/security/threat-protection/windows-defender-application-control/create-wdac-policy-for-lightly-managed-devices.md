@@ -64,6 +64,8 @@ Based on the above, Alice defines the pseudo-rules for the policy:
 
 1. **Allow Intelligent Security Graph (ISG)** (reputation-based authorization)
 
+1. **Signed apps** using a certificate issued by a Windows Trusted Root Program certificate authority
+
 1. **Admin-only path rules** for the following locations:
    - C:\Program Files\*
    - C:\Program Files (x86)\*
@@ -76,10 +78,7 @@ Having defined the "circle-of-trust", Alice is ready to generate the initial pol
 Alice follows these steps to complete this task:
 
 > [!NOTE]
->
-> - `SmartAppControl.xml` is available on Windows 11 version 22H2 and later. This policy does not allow modifying some settings. For more information, see [WDAC and Smart App Control](windows-defender-application-control.md#wdac-and-smart-app-control)
-> - If you prefer to use a different [example Windows Defender Application Control base policy](example-wdac-base-policies.md), substitute the example policy path with your preferred base policy in step 1.
-> - If you do not use Configuration Manager, skip step 4.
+> `SmartAppControl.xml` is available on Windows 11 version 22H2 and later. This policy includes a rule that is unsupported for enterprise WDAC policies and must be removed (step 3). For more information, see [WDAC and Smart App Control](windows-defender-application-control.md#wdac-and-smart-app-control)
 
 1. On a client device, run the following commands in an elevated Windows PowerShell session to initialize variables:
 
@@ -90,11 +89,28 @@ Alice follows these steps to complete this task:
     $ExamplePolicy=$env:windir+"\schemas\CodeIntegrity\ExamplePolicies\SmartAppControl.xml"
     ```
 
+    > [!NOTE]
+    > If you prefer to use a different [example Windows Defender Application Control base policy](example-wdac-base-policies.md), substitute the example policy path with your preferred base policy in this step.
+
 1. Copy the example policy to the desktop:
 
     ```powershell
-    cp $ExamplePolicy $LamnaPolicy
+    Copy-Item $ExamplePolicy $LamnaPolicy
     ```
+
+1. Modify the policy to remove **Enabled:Conditional Windows Lockdown Policy** rule, which is unsupported for enterprise WDAC policies:
+
+    ```powershell
+    [xml]$xml = Get-Content $LamnaPolicy
+    $ns = New-Object System.Xml.XmlNamespaceManager($xml.NameTable)
+    $ns.AddNamespace("ns", $xml.DocumentElement.NamespaceURI)
+    $node = $xml.SelectSingleNode("//ns:Rules/ns:Rule[ns:Option[.='Enabled:Conditional Windows Lockdown Policy']]", $ns)
+    $node.ParentNode.RemoveChild($node)
+    $xml.Save($LamnaPolicy)
+    ```
+
+    > [!NOTE]
+    > If you are using an example policy other than `SmartAppControl.xml`, skip this step.
 
 1. Give the new policy a unique ID, descriptive name, and initial version number:
 
@@ -110,6 +126,9 @@ Alice follows these steps to complete this task:
     Merge-CIPolicy -OutputFilePath $LamnaPolicy -PolicyPaths $LamnaPolicy,$MEMCMPolicy
     Set-RuleOption -FilePath $LamnaPolicy -Option 13 # Managed Installer
     ```
+
+    > [!NOTE]
+    > If you do not use Configuration Manager, skip this step.
 
 1. Modify the policy to set additional policy rules:
 
@@ -200,6 +219,14 @@ In order to minimize user productivity impact, Alice has defined a policy that m
 
   - Limit who can elevate to administrator on the device.
   - Migrate from filepath rules to managed installer or signature-based rules.
+
+- **Signed files**
+
+  Although files that are code-signed verify the author's identity and ensures that the code has not been altered by anyone other than the author, it does not guarantee that the signed code is safe.
+
+  Possible mitigations:
+
+  - Use a reputable antimalware or antivirus software with real-time protection, such as Microsoft Defender, to protect your devices from malicious files, adware, and other threats.
 
 ## Up next
 
