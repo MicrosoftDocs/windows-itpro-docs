@@ -18,11 +18,11 @@ appliesto:
 ---
 # Automatic Intune enrollment via Azure AD join
 
-If you are setting up a Windows device individually, you can use the out-of-box experience to join it to your school's Azure Active Directory tenant, and automatically enroll it in Intune.
+If you're setting up a Windows device individually, you can use the out-of-box experience to join it to your school's Azure Active Directory tenant, and automatically enroll it in Intune.
 With this process, no advance preparation is needed:
 
 1. Follow the on-screen prompts for region selection, keyboard selection, and network connection
-1. Wait for updates. If any updates are available, they will be installed at this time
+1. Wait for updates. If any updates are available, they'll be installed at this time
   :::image type="content" source="./images/win11-oobe-updates.png" alt-text="Windows 11 OOBE - updates page" border="true":::
 1. When prompted, select **Set up for work or school** and authenticate using your school's Azure Active Directory account
   :::image type="content" source="./images/win11-oobe-auth.png" alt-text="Windows 11 OOBE - authentication page" border="true":::

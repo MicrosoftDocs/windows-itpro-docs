@@ -154,7 +154,6 @@ You can prepare and add an app to Microsoft Intune as a Win32 app from the [appr
 > If the applications you need aren't included in the list, anyone in your school district can submit an application request at <a href="https://edusupport.microsoft.com/support?product_id=win11se" target="_blank"><b>Microsoft Education Support</b></a>.
 
 ________________________________________________________
-
 ## Section review and next steps
 
 > [!div class="checklist"]
