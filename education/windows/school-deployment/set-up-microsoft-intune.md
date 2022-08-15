@@ -153,8 +153,17 @@ You can prepare and add an app to Microsoft Intune as a Win32 app from the [appr
 > [!NOTE]
 > If the applications you need aren't included in the list, anyone in your school district can submit an application request at <a href="https://edusupport.microsoft.com/support?product_id=win11se" target="_blank"><b>Microsoft Education Support</b></a>.
 
-## Next steps
+________________________________________________________
+
+## Section review and next steps
+
+> [!div class="checklist"]
+> * Prerequisites
+> * Configure the Intune service for education devices
+> * Configure device settings
+> * Configure applications
 
 With the Intune service configured, you can start enrolling and managing students' and teachers' devices.
 > [!div class="nextstepaction"]
-> [Enroll devices](set-up-microsoft-intune.md)
+> [< Set up your tenant](set-up-your-tenant.md)
+> [Enroll devices >](enrollment-overview.md)

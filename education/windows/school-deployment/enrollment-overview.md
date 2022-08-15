@@ -1,10 +1,10 @@
 ---
-title: # Microsoft Endpoint Manager support
-description: # How to obtain Microsoft support from Microsoft Endpoint Manager admin center.
+title: Device enrollment overview
+description: Options to enroll Windows devices in Microsoft Intune
 ms.date: 08/31/2022
 ms.prod: windows
 ms.technology: windows
-ms.topic: conceptual #reference troubleshooting how-to end-user-help overview (more in contrib guide)
+ms.topic: conceptual
 ms.localizationpriority: medium
 author: paolomatarazzo
 ms.author: paoloma
@@ -14,6 +14,7 @@ ms.collection: education
 appliesto:
 - ✅ <b>Windows 10</b>
 - ✅ <b>Windows 11</b>
+- ✅ <b>Windows 11 SE</b>
 ---
 
 # Device enrollment overview
@@ -30,4 +31,15 @@ Enrolling large numbers of Windows 11 SE devices to Azure Active Directory and I
 
 ## Choosing the best method
 
-In this section of the cookbook, we review four methods for device enrollment. While all will work, Windows Autopilot and the Set Up School PCs app are usually easier, faster, and more efficient for school environments. There are various points to consider when choosing between Windows Autopilot and the Set Up School PCs app. This [table](/intune-education/add-devices-windows) describes the ideal scenarios for using either method. We recommend reviewing the table when making your enrollment and deployment plan. Also, note that DFCI management is not supported with Set Up School PCs enrollment.
+ Also, note that DFCI management is not supported with Set Up School PCs enrollment.
+
+________________________________________________________
+## Section review and next steps
+
+In this section, we reviewed four methods for device enrollment. Windows Autopilot and the Set up School PCs app are usually the most efficient options for school environments. There are various elements to take under consideration when choosing between Windows Autopilot and the Set up School PCs app. This [table](/intune-education/add-devices-windows) describes the ideal scenarios for using either method. It is recommended to review the table when making your enrollment and deployment plan.
+
+> [!div class="nextstepaction"]
+> [< Set up Microsoft Intune](set-up-microsoft-intune.md)
+> [Windows Autopilot >](enrollment-oobe.md)
+> [Provisioning Package>](enrollment-oobe.md)
+> [Manual >](enrollment-oobe.md)

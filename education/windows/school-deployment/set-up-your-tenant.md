@@ -148,8 +148,16 @@ To allow provisioning packages to complete the Azure AD Join process:
 
 :::image type="content" alt-text="Configure device settings from Microsoft Entra admin center." source="images/entra-device-settings.png":::
 
-## Next steps
+________________________________________________________
+
+## Section review and next steps
+
+> [!div class="checklist"]
+> * Set up a Microsoft 365 Education tenant
+> * Add users, create groups, and assign licenses
+> * Configure school branding
+> * Enable bulk enrollment
 
 With users and groups created, assigned, and licensed for Microsoft 365 Education, you're ready to set up and manage students' and teachers' devices. To do this, you need to configure Microsoft Intune.
 > [!div class="nextstepaction"]
-> [Set up Microsoft Intune](set-up-microsoft-intune.md)
+> [Set up Microsoft Intune >](set-up-microsoft-intune.md)

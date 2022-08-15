@@ -6,7 +6,7 @@ items:
   - name: Get started
     items: 
       - name: Set up your tenant
-        href: set-up-your-tanant.md
+        href: set-up-your-tenant.md
       - name: Set up Microsoft Intune
         href: set-up-microsoft-intune.md
   - name: Enroll devices in Intune
