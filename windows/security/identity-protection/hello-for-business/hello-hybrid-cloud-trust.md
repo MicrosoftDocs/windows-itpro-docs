@@ -254,6 +254,6 @@ Windows Hello for Business cloud trust requires line of sight to a domain contro
 
 Windows Hello for Business cloud trust cannot be used as a supplied credential with RDP/VDI. Similar to key trust, cloud trust can be used for RDP with [remote credential guard](/windows/security/identity-protection/remote-credential-guard) or if a [certificate is enrolled into Windows Hello for Business](hello-deployment-rdp-certs.md) for this purpose.
 
-### Do all my Domain Controllers need to be fully patched as per the Prerequisites for me to use Windows Hello for Business cloud trust?
+### Do all my domain controllers need to be fully patched as per the prerequisites for me to use Windows Hello for Business cloud trust?
 
 No, only the number necessary to handle the load from all cloud trust devices.
