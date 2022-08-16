@@ -60,9 +60,9 @@ If you’ve been approved and are part of the Enrollment for Education Solutions
 
 5. Select the quantity of licenses you would like to purchase and select **Place Order**. 
 
-6. After you’ve purchased licenses, you’ll need to [assign them to users in the Admin Center](https://docs.microsoft.com/en-us/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide)
+6. After you’ve purchased licenses, you’ll need to [assign them to users in the Admin Center](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)
 
-If you need additional licenses for **Minecraft: Education Edition**, see [Buy or remove subscription licenses](https://docs.microsoft.com/en-us/microsoft-365/commerce/licenses/buy-licenses?view=o365-worldwide).
+If you need additional licenses for **Minecraft: Education Edition**, see [Buy or remove subscription licenses](https://docs.microsoft.com/microsoft-365/commerce/licenses/buy-licenses).
 
 ### <a href="" id="volume-license"></a>Minecraft: Education Edition - volume licensing
 
@@ -96,14 +96,14 @@ Invoices are now a supported payment method for Minecraft: Education Edition. Th
 
     ![Invoice Details page showing items that need to be completed for an invoice. PO number is highlighted.](images/mcee-invoice-info.png)
 
-For more info on invoices and how to pay by invoice, see [How to pay for your subscription](https://docs.microsoft.com/en-us/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription?view=o365-worldwide).  
+For more info on invoices and how to pay by invoice, see [How to pay for your subscription](https://docs.microsoft.com/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription?).  
 
 ## Distribute Minecraft
-After Minecraft: Education Edition is added to your Microsoft Admin Center inventory, you can [assign these licenses to your users](https://docs.microsoft.com/en-us/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide) or [download the app](https://aka.ms/downloadmee).  
+After Minecraft: Education Edition is added to your Microsoft Admin Center inventory, you can [assign these licenses to your users](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users) or [download the app](https://aka.ms/downloadmee).  
 
 
 ## Learn more
-[Aout Intune Admin roles in the Microsoft 365 admin center](https://docs.microsoft.com/en-us/microsoft-365/business-premium/m365bp-intune-admin-roles-in-the-mac?view=o365-worldwide)
+[Aout Intune Admin roles in the Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/business-premium/m365bp-intune-admin-roles-in-the-mac)
 
 ## Related topics
 [Get Minecraft: Education Edition](get-minecraft-for-education.md)
