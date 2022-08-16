@@ -26,28 +26,30 @@ appliesto:
 
 The Set Up School PCs app is especially useful in scenarios where large numbers of school-owned devices need to be enrolled. The app helps you configure Surface Laptop SE devices with the features students need, remove those they do not need, and enroll the devices into Intune for Education. With the Set Up School PCs app, you create a provisioning package to enroll devices using a USB drive.
 
-For more information on prerequisites, configuration, and recommendations, see [Use the Set Up School PCs app][1].
 
-### Create the provisioning package
 
-The Set Up School PCs app guides you through configuration choices for school-owned devices. Review the [Set Up School PCs demo]() to step through how to create provisioning packages and save them to USB. 
+### Create a provisioning package
+
+The Set Up School PCs app guides you through configuration choices for school-owned devices.
 
 ![Configure device settings in Set Up School PCs app](./image12.png)
 
 **NOTE:** Importantly, for **Configure device settings** → **OS version**, you must select **Windows 11 SE**.
 
-The devices will be joined to Azure Active Directory and automatically enrolled in Intune. Note that the Set Up School PCs app will configure many settings, allowing you to optimize devices for shared use and other scenarios. 
+The devices will be joined to Azure Active Directory and automatically enrolled in Intune. Note that the Set Up School PCs app will configure many settings, allowing you to optimize devices for shared use and other scenarios.
+
+For more information on prerequisites, configuration, and recommendations, see [Use the Set Up School PCs app][1].
+
+
+
+### Enroll devices with the provisioning package
+
+To provision Windows devices with provisioning packages, insert the USB stick containing the package during the out-of-box experience. The devices will read the content of the package, join Azure AD and enroll automatically in Intune.
+
+For more information, see [Run package - Install package on PC][1].
 
 > [!TIP]
-> To learn more and practice with Set up School PCs, try the <a href=[3] target="_blank"><b>Set Up School PCs demo</b></a>, which provides detailed steps to create a provisioning package and deploy a device.
-
-### Provision devices with USB
-
-To provision Surface Laptop SE devices with USB, insert the provisioning package saved to USB during manual OOBE. For more information, see [Run package - Install package on PC][1], which steps through running and installing the provisioning package. 
-
-
-
-
+> To learn more and practice with Set up School PCs, try the <a href="https://www.microsoft.com/en-us/education/interactive-demos/enroll-devices-at-scale" target="_blank"><b>Set Up School PCs demo</b></a>, which provides detailed steps to create a provisioning package and deploy a device.
 
 # Windows Configuration Designer
 
@@ -67,6 +69,3 @@ ________________________________________________________
 
 [1]: /education/windows/use-set-up-school-pcs-app
 [2]: /windows/configuration/provisioning-packages/provisioning-install-icd
-
-<!-- Interactive demos links -->
-[3]: https://www.microsoft.com/en-us/education/interactive-demos/enroll-devices-at-scale
