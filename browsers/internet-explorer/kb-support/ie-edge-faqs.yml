@@ -103,7 +103,7 @@ sections:
           ```
           
           > [!NOTE]
-          > The previous PAC always returns the `proxyserver:portnumber`` proxy.
+          > The previous PAC always returns the `proxyserver:portnumber` proxy.
           
           For more information about how to write a PAC file and about the different functions in a PAC file, see [the FindProxyForURL website](https://findproxyforurl.com/).
           
