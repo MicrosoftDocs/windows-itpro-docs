@@ -1,21 +1,20 @@
 ---
 title: Windows Credential Theft Mitigation Guide Abstract
 description: Provides a summary of the Windows credential theft mitigation guide.
-ms.reviewer: 
 ms.prod: m365-security
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 04/19/2017
+appliesto:
+- ✅ <b>Windows 10</b>
+- ✅ <b>Windows 11</b>
 ---
 
 # Windows Credential Theft Mitigation Guide Abstract
-
-**Applies to**
--   Windows 10
 
 This topic provides a summary of the Windows credential theft mitigation guide, which can be downloaded from the [Microsoft Download Center](https://download.microsoft.com/download/C/1/4/C14579CA-E564-4743-8B51-61C0882662AC/Windows%2010%20credential%20theft%20mitigation%20guide.docx).
 This guide explains how credential theft attacks occur and the strategies and countermeasures you can implement to mitigate them, following these security stages:

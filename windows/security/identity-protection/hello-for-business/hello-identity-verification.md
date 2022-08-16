@@ -2,9 +2,10 @@
 title: Windows Hello for Business Deployment Prerequisite Overview
 description: Overview of all the different infrastructure requirements for Windows Hello for Business deployment models
 ms.prod: m365-security
-author: GitPrakhar13
-ms.author: prsriva
-manager: dansimp
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
+ms.reviewer: prsriva
 ms.collection:
   - M365-identity-device-management
   - highpri

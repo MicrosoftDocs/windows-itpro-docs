@@ -1,14 +1,14 @@
 ---
 title: Windows 10 accessibility information for IT Pros (Windows 10)
-description:  Lists the various accessibility features available in Windows 10 with links to detailed guidance on how to set them
+description: Lists the various accessibility features available in Windows 10 with links to detailed guidance on how to set them
 keywords: accessibility, settings, vision, hearing, physical, cognition, assistive
 ms.prod: w10
-ms.author: aaroncz
-author: aczechowski
+ms.author: lizlong
+author: lizgt2000
 ms.localizationpriority: medium
 ms.date: 01/12/2018
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.topic: reference
 ---
 

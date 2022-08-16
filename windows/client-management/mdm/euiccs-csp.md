@@ -1,14 +1,14 @@
 ---
 title: eUICCs CSP
 description: Learn how the eUICCs CSP is used to support eUICC enterprise use cases and enables the IT admin to manage (assign, reassign, remove) subscriptions to employees.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.date: 03/02/2018
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # eUICCs CSP

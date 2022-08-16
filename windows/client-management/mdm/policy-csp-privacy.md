@@ -1,15 +1,15 @@
 ---
 title: Policy CSP - Privacy
 description: Learn how the Policy CSP - Privacy setting allows or disallows the automatic acceptance of the pairing and privacy user consent dialog when launching apps.
-ms.author: dansimp
+ms.author: vinpa
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ---
 
 # Policy CSP - Privacy

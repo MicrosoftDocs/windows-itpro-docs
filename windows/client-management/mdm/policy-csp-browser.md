@@ -4,11 +4,11 @@ description: Learn how to use the Policy CSP - Browser settings so you can confi
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
-ms.author: dansimp
+author: vinaypamnani-msft
+ms.author: vinpa
 ms.date: 09/27/2019
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
 ms.localizationpriority: medium
 ---
 
