@@ -55,7 +55,7 @@ With the Microsoft 365 tenant in place, it's time to add users, create groups, a
 
 School Data Sync (SDS) imports and synchronizes SIS data to create classes in Microsoft 365, such as Microsoft 365 groups and class teams in Microsoft Teams. SDS can be used to create new, cloud-only, identities or to evolve existing identities. Users evolve into *students* or *teachers* and are associated with a *grade*, *school*, and other education-specific attributes.
 
-For more information, see [Overview of School Data Sync][SDS1].
+For more information, see [Overview of School Data Sync][SDS-1].
 
 > [!TIP]
 > To learn more and practice with School Data Sync, follow the <a href="https://interactiveguides-schooldatasync.azurewebsites.net/" target="_blank"><b>Microsoft School Data Sync demo</b></a>, which provides detailed steps to access, configure, and deploy School Data Sync in your Microsoft 365 Education tenant.
