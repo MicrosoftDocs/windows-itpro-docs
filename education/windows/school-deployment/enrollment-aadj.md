@@ -29,7 +29,7 @@ With this process, no advance preparation is needed:
 1. The device will join Azure AD and automatically enroll in Intune. All settings defined in Intune will be applied to the device
 
 > [!IMPORTANT]
-> If you configured enrollment restrictions in Intune, blocking personal Windows devices, this process will not complete. You will need to use a different enrollment method, or ensure that the device is registered in Autopilot.
+> If you configured enrollment restrictions in Intune blocking personal Windows devices, this process will not complete. You will need to use a different enrollment method, or ensure that the devices are registered in Autopilot.
 ________________________________________________________
 ## Section review and next steps
 
