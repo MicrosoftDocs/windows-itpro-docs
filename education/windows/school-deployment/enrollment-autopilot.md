@@ -16,6 +16,9 @@ appliesto:
 - ✅ <b>Windows 11</b>
 ---
 
+For more information, see [Overview of Windows Autopilot][MEM-1].
+  > [!NOTE]
+  > There are some limitations to Windows Autopilot in Windows 11 SE. For more information, see [**this article**][INT-1].
 ## Windows Autopilot
 
 Windows Autopilot is especially useful in scenarios where devices are handed out to users without the need to build, maintain, and apply custom operating system images. These devices will be enrolled as school-owned devices. 
