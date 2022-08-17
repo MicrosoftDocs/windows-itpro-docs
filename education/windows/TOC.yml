@@ -88,8 +88,8 @@ items:
           href: chromebook-migration-guide.md
 - name: Reference
   items:
-    name: Set up School PCs technical reference
-    items:
+    - name: Set up School PCs technical reference
+      items:
       - name: Technical reference for the Set up School PCs app
         href: set-up-school-pcs-technical.md
       - name: Provisioning package settings
