@@ -47,11 +47,11 @@ landingContent:
   # Card (optional)
   - title: Configure devices
     linkLists:
-      - linkListType: Take a test
+      - linkListType: concept
         links:
-        - text: Overview
+        - text: Take a test
           url: overview.md
-      - linkListType: Change Windows editions
+      - linkListType: concept
         links:
-        - text: System security
+        - text: Change Windows editions
           url: overview.md
