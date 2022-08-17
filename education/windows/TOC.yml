@@ -6,6 +6,7 @@ items:
 - name: Tutorials
   items:
   - name: Deploy and manage Windows devices in a school
+    expanded: true
     href: school-deployment/toc.yml
   - name: (OLD) Deploy and manage Windows devices in a school
     items: 
