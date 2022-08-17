@@ -58,7 +58,6 @@ Open `RunConfig.bat` and configure the following (assuming a first-run, with `ru
 [!INCLUDE [Update Compliance script error codes](./includes/update-compliance-script-error-codes.md)]
 
 
-
 ## Next steps
 
 [Use Update Compliance](update-compliance-v2-use.md)

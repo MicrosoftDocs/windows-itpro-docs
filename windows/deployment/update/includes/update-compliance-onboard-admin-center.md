@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/) and sign in.
 1. Expand **Health**, then select **Software Updates**. You may need to use the **Show all** option to display **Health** in the navigation menu.
 1. In the **Software Updates** page, select the **Windows** tab.
-1. When you select the **Windows** tab for the first time, you'll be asked to **Configure Settings**. This tab is populated by data from [Update Compliance](update-compliance-v2-overview.md). Verify or supply the following information about the settings for Update Compliance:
+1. When you select the **Windows** tab for the first time, you'll be asked to **Configure Settings**. This tab is populated by data from [Update Compliance](../update-compliance-v2-overview.md). Verify or supply the following information about the settings for Update Compliance:
 
     - The Azure subscription
     - The Log Analytics workspace

@@ -35,7 +35,7 @@ In some cases, you may need to manually verify the device configuration has the 
    1. Go to **Start**, select **Settings** > **Privacy** > **Diagnostics & feedback**.
    1. Under **View diagnostic data**, select **Open Diagnostic Data Viewer**.
 1. When the Diagnostic Data Viewer opens, type `SoftwareUpdateClientTelemetry` in the search field. Verify the following items:
-   - The **EnrolledTenantID** field under **m365a** should equal the [CommercialID](../update-compliance-v2-enable.md#bkmk_id) of your Log Analytics workspace for Update Compliance.
+   - The **EnrolledTenantID** field under **m365a** should equal the `CommercialID` of your Log Analytics workspace for Update Compliance. `CommercialID` is no longer required for the [preview version of Updates Compliance](../update-compliance-v2-overview.md), but the value may still be listed in this field. 
    - The **MSP** field value under **protocol** should be either `16` or `18`.
    - If you need to send this data to Microsoft Support, select **Export data**.  
 

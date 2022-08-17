@@ -30,15 +30,9 @@ The **Software updates** page has following tabs to assist you in monitoring upd
 
 :::image type="content" source="media/37063317-admin-center-software-updates.png" alt-text="Screenshot of the Microsoft 365 admin center displaying the software updates page with the Windows tab selected." lightbox="media/37063317-admin-center-software-updates.png":::
 
-## Prerequisites
-
-- [Update Compliance](update-compliance-v2-overview.md) needs to be enabled with clients sending data to the solution
-- An appropriate role assigned the [Microsoft 365 admin center](https://admin.microsoft.com)
-   - To configure settings and view the **Windows** tab in the **Software Updates** page: 
-      - [Global Administrator role](/azure/active-directory/roles/permissions-reference#global-administrator)
-      - [Intune Administrator](/azure/active-directory/roles/permissions-reference#intune-administrator)
-   - To view the **Windows** tab in the **Software Updates** page: 
-      - [Global Reader role](/azure/active-directory/roles/permissions-reference#global-reader)
+## Permissions
+<!--Using include Microsoft 365 admin center permissions-->
+[!INCLUDE [Update Compliance script error codes](./includes/update-compliance-admin-center-permissions.md)]
 
 
 ## Limitations

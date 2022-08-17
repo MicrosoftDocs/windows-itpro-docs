@@ -42,7 +42,6 @@ Each MDM Policy links to its documentation in the configuration service provider
 
 | Policy | Data type | Value | Function |
 |--------------------------|-|-|------------------------------------------------------------|
-|**Provider/*ProviderID*/**[**CommercialID**](/windows/client-management/mdm/dmclient-csp#provider-providerid-commercialid) |String |[Your CommercialID](update-compliance-v2-enable.md#bkmk_id) |Identifies the device as belonging to your organization. |
 |**System/**[**AllowTelemetry**](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) |Integer | 1 - Basic |Configures the maximum allowed diagnostic data to be sent to Microsoft. Individual users can still set this value lower than what the policy defines. For more information, see the following policy. |
 |**System/**[**ConfigureTelemetryOptInSettingsUx**](/windows/client-management/mdm/policy-csp-system#system-configuretelemetryoptinsettingsux) |Integer |1 - Disable Telemetry opt-in Settings | (in Windows 10, version 1803 and later) Determines whether users of the device can adjust diagnostic data to levels lower than the level defined by AllowTelemetry. We recommend that you disable this policy or the effective diagnostic data level on devices might not be sufficient. |
 |**System/**[**AllowDeviceNameInDiagnosticData**](/windows/client-management/mdm/policy-csp-system#system-allowdevicenameindiagnosticdata) |Integer | 1 - Allowed | Allows device name to be sent for Windows Diagnostic Data. If this policy is Not Configured or set to 0 (Disabled), Device Name will not be sent and won't be visible in Update Compliance, showing `#` instead. |
@@ -55,7 +54,6 @@ All Group policies that need to be configured for Update Compliance are under **
 
 | Policy | Value | Function |
 |---------------------------|-|-----------------------------------------------------------|
-|**Configure the Commercial ID** |[Your CommercialID](update-compliance-v2-enable.md#bkmk_id) | Identifies the device as belonging to your organization. |
 |**Allow Telemetry** | 1 - Basic |Configures the maximum allowed diagnostic data to be sent to Microsoft. Individual users can still set this value lower than what the policy defines. For more information, see the **Configure telemetry opt-in setting user interface**. |
 |**Configure telemetry opt-in setting user interface** | 1 - Disable diagnostic data opt-in Settings |(in Windows 10, version 1803 and later) Determines whether users of the device can adjust diagnostic data to levels lower than the level defined by AllowTelemetry. We recommend that you disable this policy, otherwise the effective diagnostic data level on devices might not be sufficient. |
 |**Allow device name to be sent in Windows diagnostic data** | 1 - Enabled | Allows device name to be sent for Windows Diagnostic Data. If this policy is Not Configured or Disabled, Device Name won't be sent and won't be visible in Update Compliance, showing `#` instead. |

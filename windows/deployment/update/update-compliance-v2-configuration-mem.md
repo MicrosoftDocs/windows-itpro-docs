@@ -36,13 +36,7 @@ Take the following steps to create a configuration profile that will set require
 1. For **Template name**, select **Custom**, and then press **Create**.
 1. You're now on the Configuration profile creation screen. On the **Basics** tab, give a **Name** and **Description**.
 1. On the **Configuration settings** page, you'll be adding multiple OMA-URI Settings that correspond to the policies described in [Manually configuring devices for Update Compliance](update-compliance-v2-configuration-manual.md).
-    1. If you don't already have it, get your Commercial ID. For steps, see [Get your CommmercialID](update-compliance-v2-enable.md#bkmk_id).
-    1. Add a setting for **Commercial ID** with the following values:
-        - **Name**: Commercial ID
-        - **Description**: Sets the Commercial ID that corresponds to the Update Compliance Log Analytics workspace.
-        - **OMA-URI**: `./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID`
-        - **Data type**: String
-        - **Value**: *Set this value to your Commercial ID*
+ 
     1. Add a setting configuring the **Windows Diagnostic Data level** for devices:
         - **Name**: Allow Telemetry
         - **Description**: Sets the maximum allowed diagnostic data to be sent to Microsoft, required for Update Compliance.
