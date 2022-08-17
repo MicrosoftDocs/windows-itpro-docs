@@ -17,14 +17,10 @@ items:
         items: 
           - name: Overview
             href: set-up-windows-10.md
-          - name: Use the Set up School PCs app
-            href: use-set-up-school-pcs-app.md
           - name: Azure AD join for school PCs
             href: set-up-school-pcs-azure-ad-join.md
           - name: Active Directory join for school PCs
             href: set-up-students-pcs-to-join-domain.md
-          - name: Windows 10 configuration recommendations for education customers
-            href: configure-windows-for-education.md
           - name: Provision student PCs with apps
             href: set-up-students-pcs-with-apps.md
       - name: Reset devices with Autopilot Reset
@@ -33,6 +29,8 @@ items:
         href: change-history-edu.md
 - name: How-to-guides
   items:
+    - name: Use the Set up School PCs app
+      href: use-set-up-school-pcs-app.md
     - name: Take tests and assessments in Windows
       items: 
         - name: Overview
@@ -92,3 +90,5 @@ items:
         href: enable-s-mode-on-surface-go-devices.md
     - name: Shared PC mode for school devices
       href: set-up-school-pcs-shared-pc-mode.md
+    - name: Windows 10 configuration recommendations for education customers
+      href: configure-windows-for-education.md
